@@ -1,0 +1,44 @@
+---
+title: 时间轴中的活动流
+description: '本文介绍如何在时间轴上显示资产的活动日志。 '
+contentOwner: AG
+translation-type: tm+mt
+source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+
+---
+
+
+# 时间轴中的活动流 {#activity-stream-in-timeline}
+
+这项功能可将资产的活动日志显示在时间轴上。如果您在Adobe Experience Manager(AEM)资产中执行下列任何与资产相关的操作，“活动流”功能会更新时间轴以反映该活动。
+
+以下操作记录在活动流中：
+
+* 创建
+* 删除
+* 下载（包括再现）
+* 发布
+* 取消发布
+* 批准
+* 拒绝
+* 移动
+
+时间轴中显示的活动日志是从 CRX 中的 `/var/audit/com.day.cq.dam/content/dam` 位置获取的，日志文件就存储在该位置。
+
+此外，当上传新资产或通过 [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [AEM 桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html)修改现有资产并签入 AEM 时，会记录时间轴活动。
+
+>[!NOTE]
+>
+>临时工作流不会显示在时间轴中，因为不会保存这些工作流的历史记录信息。
+
+要查看活动流，请对资产执行一个或多个操作，选择资产，然后从GlobalNav列表中选 **[!UICONTROL 择Timeline]** 。
+
+![timeline-3](assets/timeline-3.png)
+
+时间轴显示您对资产执行的操作的活动流。
+
+![activity_stream](assets/activity_stream.png)
+
+>[!NOTE]
+>
+>**发布**&#x200B;和&#x200B;**取消发布**&#x200B;任务的默认日志存储位置为 `/var/audit/com.day.cq.replication/content`。对于&#x200B;**移动**&#x200B;任务，默认位置为 `/var/audit/com.day.cq.wcm.core.page`。

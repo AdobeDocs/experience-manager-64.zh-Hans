@@ -1,0 +1,69 @@
+---
+title: 导出到 CSV
+seo-title: 导出到 CSV
+description: 将页面的相关信息导出到本地系统上的 CSV 文件
+seo-description: 将页面的相关信息导出到本地系统上的 CSV 文件
+uuid: aa03adac-bbfb-4566-a153-25fe6f6843dd
+contentOwner: Chris Bohnert
+products: SG_EXPERIENCEMANAGER/6.4/SITES
+topic-tags: page-authoring
+content-type: reference
+discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
+translation-type: tm+mt
+source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+
+---
+
+
+# 导出到 CSV{#export-to-csv}
+
+**创建 CSV 导出**&#x200B;允许您将页面的相关信息导出到本地系统上的 CSV 文件。
+
+* 所下载的文件名为 `export.csv`
+* 其内容取决于您选择的属性。
+* 您可以定义导出的路径以及深度。
+
+>[!NOTE]
+>
+>系统将使用您浏览器的下载功能及默认目标位置。
+
+通过创建 CSV 导出向导，您可以选择以下内容：
+
+* 要导出的属性
+
+   * 元数据
+
+      * 修改时间
+      * 发布时间
+   * 分析
+
+      * 页面查看次数
+      * 独特访客
+      * 页面停留时间
+
+
+* 深度
+
+   * 父级路径
+   * 仅直接子项
+   * 其他级别的子项
+   * 级别
+
+生成的 `export.csv` 文件可以用 Excel 或任何其他兼容的应用程序打开。
+
+![chlimage_1-58](assets/chlimage_1-58.png)
+
+The create **CSV Export** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
+
+![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
+
+要创建 CSV 导出，请执行以下操作：
+
+1. 打开&#x200B;**站点**&#x200B;控制台，根据需要导航到所需的位置。
+1. From the toolbar, select **Create** then **CSV Export** to open the wizard:
+
+   ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
+
+1. 选择需要导出的属性。
+1. 选择&#x200B;**创建**。
+

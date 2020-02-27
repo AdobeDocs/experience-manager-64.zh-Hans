@@ -139,7 +139,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 **引用书签XML文档**
 
-要组合包含新书签的PDF，必须引用书签XML文档。 书签XML文档将传递给Map集合对象中的Assembler服务。 （有关示例，请参阅本节前面显示的书签XML文档。）
+要组合包含新书签的PDF，必须引用书签XML文档。 书签XML文档将传递到Map集合对象中的Assembler服务。 （有关示例，请参阅本节前面显示的书签XML文档。）
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 **保存包含书签的PDF文档**
 
-您必须从返回的映射对象中提取结果并保存相应的PDF文档。 (请参阅以编程方式组合PDF文档 [中的“提取结果](/help/forms/developing/programmatically-assembling-pdf-documents.md)”。)
+必须从返回的映射对象中提取结果并保存相应的PDF文档。 (请参阅以编程方式组合PDF文档 [中的“提取结果](/help/forms/developing/programmatically-assembling-pdf-documents.md)”。)
 
 **另请参阅**
 

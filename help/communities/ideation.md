@@ -17,7 +17,7 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 # Ideation Essentials {#ideation-essentials}
 
-本页提供了使用构思功能的基本信息，该功能与论坛类似，但能保存为草稿，并具有更协作的感觉。
+本页提供了使用构思功能的基本信息，该功能与论坛类似，但能够另存为草稿，并具有更协作的感觉。
 
 ## 客户端必备工具 {#essentials-for-client-side}
 

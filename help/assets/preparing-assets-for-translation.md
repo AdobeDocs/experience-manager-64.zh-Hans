@@ -34,7 +34,7 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 执行以下步骤以准备要翻译的资产：
 
-1. 创建语言母版的语言根。 例如，示例文件夹层次结构中英语副本的语言根目录为 `/content/dam/en`。 确保根据创建语言根目录中的信息正确配置 [了语言根目录](preparing-assets-for-translation.md#creating-a-language-root)。
+1. 创建语言母版的语言根。 例如，示例文件夹层次结构中英语副本的语言根目录为 `/content/dam/en`。 确保根据“创建语言根”中的信息正确配置 [了语言根](preparing-assets-for-translation.md#creating-a-language-root)。
 
 1. 将资源添加到您的语言母版。
 1. 创建您需要语言副本的每个目标语言的语言根。

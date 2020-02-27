@@ -82,7 +82,7 @@ Forms服务将表单渲染为HTML以响应来自Web浏览器的HTTP请求。 将
 
 您可以通过调用和方法设计在页面（面板）之间移动 `xfa.host.pageUp` 的表 `xfa.host.pageDown` 单。 此脚本被放置在按钮的事 `Click` 件中，并且 `runAt` 属性设置为 `Both`。 您选择的原因 `Both` 是，Adobe Reader或Acrobat（对于呈现为PDF的表单）可以更改页面而不转到服务器，而HTML表单可以通过往返将数据转到服务器来更改页面。 即，表单将发送到表单服务，并且表单将呈现为HTML并显示新页面。
 
-建议不要为脚本变量和表单字段提供与项目等名称相同的名称。 某些Web浏览器（如Internet Explorer）可能无法初始化与表单字段同名的变量，该变量会导致脚本错误。 最好为表单字段和脚本变量指定不同的名称。
+建议不要为脚本变量和表单字段提供与项目等名称相同的名称。 某些Web浏览器（如Internet Explorer）可能无法初始化与表单字段同名的变量，这会导致脚本错误。 最好为表单字段和脚本变量指定不同的名称。
 
 在呈现同时包含页面导航功能和表单脚本的HTML表单时（例如，假设每次呈现表单时脚本都从数据库检索字段数据），请确保表单脚本位于form:calculate事件中，而不是form:readyevent中。
 
@@ -93,7 +93,7 @@ Forms服务将表单渲染为HTML以响应来自Web浏览器的HTTP请求。 将
 
 您可以在提交表单之前调用自定义脚本。 此功能适用于所有可用的浏览器。 但是，仅当用户呈现其属性设置为的HTML表单时，才 `Output Type` 能使用它 `Form Body`。 当是时，它将不起 `Output Type` 作用 `Full HTML`。 有关配置此功能的步骤，请参阅管理帮助中的配置表单。
 
-必须首先定义在提交表单之前调用的回调函数，其中函数的名称为 `_user_onsubmit`。 假定该函数不会引发任何异常，或者如果引发异常，则会忽略该异常。 建议将JavaScript函数放在html的head部分；但是，您可以在包含脚本标签的末尾之前的任何地方声明它 `xfasubset.js`。
+必须首先定义在提交表单之前调用的回调函数，其中函数的名称为 `_user_onsubmit`。 假定该函数不会引发任何异常，或如果它引发异常，则将忽略该异常。 建议将JavaScript函数放在html的head部分；但是，您可以在包含脚本标签的末尾之前的任何地方声明它 `xfasubset.js`。
 
 当formserver呈现包含下拉列表的XDP时，除了创建下拉列表外，它还会创建两个隐藏的文本字段。 这些文本字段存储下拉列表的数据（一个存储选项的显示名称，另一个存储选项的值）。 因此，每次用户提交表单时，都会提交下拉列表的整个数据。 如果您不希望每次提交这么多数据，您可以编写自定义脚本来禁用它。 例如：下拉列表的名称为， `drpOrderedByStateProv` 并且包含在子表单标题下。 HTML输入元素的名称将为 `header[0].drpOrderedByStateProv[0]`。 存储和提交下拉列表数据的隐藏字段的名称具有以下名称： `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 

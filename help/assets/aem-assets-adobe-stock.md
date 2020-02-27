@@ -3,7 +3,7 @@ title: 在AEM资产中使用Adobe Stock资产
 description: 在AEM中搜索、提取、许可和管理Adobe Stock资产。 将许可资产视为任何其他AEM资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: ff098a599f1c5230ce12a9c5cdbd1b118030a5f8
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Stock 服务为设计师和企业提供了数百万种可用于所有创�
 
 ## 前提条件 {#prerequisites}
 
-该集成需要 [企业Adobe Stock计划](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) 和AEM 6.4，并且至少部署了Service Pack 2。 有关AEM 6.4 Service Pack的详细信息，请参阅这些 [发行说明](/help/release-notes/sp-release-notes.md)。
+该集成需要 [企业Adobe Stock计划](https://stockenterprise.adobe.com/) 和AEM 6.4，并且至少部署了Service Pack 2。 有关AEM 6.4 Service Pack的详细信息，请参阅这些 [发行说明](/help/release-notes/sp-release-notes.md)。
 
 ## 集成AEM和Adobe Stock {#integrate-aem-and-adobe-stock}
 

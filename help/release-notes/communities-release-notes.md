@@ -67,7 +67,7 @@ To obtain the latest release, see the [Deploying Communities](/help/communities/
 
 ## 选择功能 {#select-features}
 
-专家评分(*由Sensei提供支持*)用于启用游戏化，这是鼓励和奖励宝贵社区行为的有效方式。 它还可用于为推荐或营销目的确定专家。
+专家评分(*由Sensei提供支持*)用于启用游戏化，这是鼓励和奖励宝贵社区行为的有效方式。 它还可用于为推荐或营销目的识别专家。
 
 ## 演示 {#demonstrations}
 

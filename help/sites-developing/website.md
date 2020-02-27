@@ -486,7 +486,7 @@ static.css文件和图像示例
 
 1. Sling确定要使用的资源路径 `/content/mwebysite/en/products.png.`
 1. Sling将此路径与节点匹 `/content/mywebsite/en/products` 配。
-1. Sling确定 `sling:resourceType` 此节点为 `mywebsite/components/contentpage`。
+1. Sling确定 `sling:resourceType` 此节点的值 `mywebsite/components/contentpage`。
 
 1. Sling在此组件中查找最匹配URL选择器( `navimage`)和文件扩展名( `png`)的脚本。
 

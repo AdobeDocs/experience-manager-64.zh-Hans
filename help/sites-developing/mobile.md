@@ -522,7 +522,7 @@ request.setAttribute("browsermap.enabled", false);
 %>
 ```
 
-这将使脚本 `/libs/wcm/core/browsermap/browsermap.jsp` 向页面添加元标记，使其不 `BrowserMap` 执行任何检测：
+这将使脚本 `/libs/wcm/core/browsermap/browsermap.jsp` 向页面添加元标签，使其不 `BrowserMap` 执行任何检测：
 
 ```xml
 <meta name="browsermap.enabled" content="false">
@@ -542,7 +542,7 @@ request.setAttribute("browsermap.enabled", false);
 
 过渡的设备值存储在cookie中，因此您无需为每个设备添加参数即可浏览 `device` 您的网站 `URL`。
 
-因此，您需要调用设置为 `URL` 的同 `device` 一调用 `browser` ，才能返回桌面版网站。
+因此，您需要调用设置为 `URL` 的同 `device` 一调用 `browser` ，才能返回到桌面版网站。
 
 >[!NOTE]
 >
@@ -574,7 +574,7 @@ AEM将处理由属于触控设备组的移动设备发出的请求，如下所�
 要查看统计信息，请执行以下操作：
 
 1. 转到“工 **具** ”控制台。
-1. 打开“工 **具** ”>“移动设备 **”下** 的“设备统 **计信息”页**&#x200B;面。
+1. 打开“工 **具** ”>“移动设备 **”下** 的“设备统 **计数据”页**。
 
 1. 单击链接可查看特定年份、月份或日的统计数据。
 

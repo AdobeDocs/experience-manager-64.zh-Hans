@@ -111,7 +111,7 @@ source-git-commit: 7a5fb38ada7e7ad76525449e35f64b133aa5e39f
 * 在原始自适应表单上配置的提交操作将保留在嵌入式表单中。
 * 自适应表单规则在嵌入的表单中保留并完全可用。
 * 在原始自适应表单中配置的体验定位和A/B测试在嵌入式表单中不起作用。
-* 如果在原始表单上配置了Adobe Analytics，则Adobe Analytics服务器会捕获分析数据。 但是，表单分析报告中不提供该功能。
+* 如果在原始表单上配置了Adobe Analytics，则Adobe Analytics服务器会捕获分析数据。 但是，表单分析报告中不提供此功能。
 
 ## 设置反向代理 {#reveseproxy}
 

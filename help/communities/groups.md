@@ -103,7 +103,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 可以选择与父站点的主题不同的主题。
 
-发布社区站点后，可以编辑属 [性](#modifying-group-properties) ，并选择其他主题。
+发布社区站点后，可以编辑属性 [并选择其](#modifying-group-properties) 他主题。
 
 #### COMMUNITY GROUP BRANDING {#community-group-branding}
 

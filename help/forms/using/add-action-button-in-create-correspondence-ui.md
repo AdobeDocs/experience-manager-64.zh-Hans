@@ -142,7 +142,7 @@ ACMExtensionsMessages.properties文件包含“创建对应”用户界面中各
 
    `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
 
-1. 右键单击以下路 **[!UICONTROL 径的区域设置]** ，然后选择“粘 **[!UICONTROL 贴”]**:
+1. 右键单击以下路 **[!UICONTROL 径的]** locale文件夹，然后选择 **[!UICONTROL 粘贴]**:
 
    `/apps/fd/cm/config/defaultApp/locale/`
 
@@ -219,7 +219,7 @@ ACMExtensionsMessages.properties文件包含“创建对应”用户界面中各
 
       将文件命名为ccrcustomization.js。
 
-   1. 双击ccrcustomization.js文件以在CRX中打开它。
+   1. 双击ccrcustomization.js文件以在CRX中将其打开。
    1. 在文件中，粘贴以下代码，然后单击“全 **[!UICONTROL 部保存”]**:
 
       ```

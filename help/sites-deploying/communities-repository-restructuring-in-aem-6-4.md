@@ -307,7 +307,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
      <li>将“上一位置”中的现有配置迁移到“新位置”。
       <ol> 
        <li>通过AEM创作UI在“工具”&gt;“云服务”&gt;“Twitter社交登录配置” <strong>中手动重新创建新的Twitter社交登录配置</strong>。<br /> 或 <br /> </li> 
-       <li>将任何新Twitter云配置从上一位置复制到相应的新位置下 <code>/conf/global or /conf/&lt;tenant&gt;</code>。</li> 
+       <li>将任何新Twitter云配置从上一位置复制到相应的新位置，位于 <code>/conf/global or /conf/&lt;tenant&gt;</code>。</li> 
       </ol> </li> 
      <li>通过将属性设置为“新位置”中的绝对路径，更新任何AEM Communities站点根目录以引 <code>[cq:Page]/jcr:content@cq:conf</code> 用新的Twitter社交登录配置。</li> 
      <li>将旧版Twitter Connect cloud服务与任何更新为引用新位置的AEM Communities站点根取消关联。</li> 

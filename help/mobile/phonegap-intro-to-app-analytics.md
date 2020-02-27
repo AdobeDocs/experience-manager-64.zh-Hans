@@ -31,7 +31,7 @@ source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
 
 通过Adobe Mobile Services，您可以通过跟踪使用情况、应用程序崩溃、设备详细信息以及许多其他关键的移动应用程序指标，了解用户如何使用您的移动应用程序。
 
-Adobe Experience Manager mobile可直接从AEM Mobile Application Dashboard中概述移动分析的详细信息。 控制 **板中的Mobile Metrics Tile** （移动量度拼贴）为您的移动应用程序提供实时分析，使开发人员、作者和管理员能够快速了解移动应用程序的运行状况。 Adobe Mobile Analytics SDK是支持分析的 [主要功能](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) 。 Adobe Mobile Analytics SDK可以本机插入您的应用程序，也可以通过PhoneGap桥接插件进行Web查看。 在设备连接之前，会在设备上收集和缓存度量，然后在连接时将数据推送到Adobe Mobile Services cloud进行报告和分析。
+Adobe Experience Manager mobile可直接从AEM Mobile Application Dashboard中概述移动分析的详细信息。 控制 **板中的Mobile Metrics Tile** （移动量度拼贴）为您的移动应用程序提供实时分析，使开发人员、作者和管理员能够快速了解移动应用程序的运行状况。 Adobe Mobile Analytics SDK是支持分析的 [主要功能](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) 。 Adobe Mobile Analytics SDK可以本机或通过PhoneGap桥接插件插入您的应用程序进行Web查看。 在设备连接之前，会在设备上收集和缓存度量，然后在连接时将数据推送到Adobe Mobile Services cloud进行报告和分析。
 
 Adobe Mobile Analytics SDK提供以下功能：
 

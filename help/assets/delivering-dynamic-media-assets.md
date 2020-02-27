@@ -17,7 +17,7 @@ source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
 
 # 传送 Dynamic Media 资产 {#delivering-dynamic-media-assets}
 
-您如何交付动态媒体资产（视频和图像）取决于网站的实施方式。
+您如何投放动态媒体资产（视频和图像）取决于网站的实施方式。
 
 通过 Dynamic Media，您可以选择以下方式：
 

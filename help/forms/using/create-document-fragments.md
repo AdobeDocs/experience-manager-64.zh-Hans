@@ -267,12 +267,12 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 选择“数 **据模型对象** ”选项卡。
 1. 将光标放在“呼叫费 **用** ”字段旁边，并双击“ **帐单** >呼叫 **费用** ”属性。
 1. 将光标放在“电话会议 **费用”字段旁** ，并双击“帐单 **** > **confcallcarges** ”属性。
-1. 将光标放在“ **SMS Carges** ( **SMS费用** )”字段旁，然后双击“ **bills** > smscarges（帐单）”属性。
+1. 将光标放在“ **SMS Carges** ( **SMS费用** )”字段旁，然后双击“ **bills** > smscarges（帐单>smscarges）”属性。
 1. 将光标放在“ **Mobile Internet Charges** ”字段旁边，并双击“Bills **** > **internetcharges** ”属性。
 1. 将光标放在“国家漫游 **费用** ”字段旁边，双击“帐单 **** ” **>“国** 家财产”。
 1. 将光标放在“国际漫游 **费用** ”字段旁边，双击“帐单 **** > Roamingintnl **** ”属性。
 1. 将光标放在“增值服 **务费用”字段旁边** ，然后双击“ **帐单** > **vas** ”属性。
-1. 将光标放在“总费 **用** ”字段旁边，然后双击“帐单 **** > **Usagecharges** ”属性。
+1. 将光标放在“总费 **用** ”字段旁边，并双击“帐单 **** > **Usagecharges** ”属性。
 1. 将光标放在“ **TOTAL PAYABLE** ”字段旁，然后双击“ **Bills** > **Usagecharges** ”属性。
 
    ![summary_charges_static_fdm](assets/summary_charges_static_fdm.png)

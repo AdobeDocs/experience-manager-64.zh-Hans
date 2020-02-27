@@ -73,7 +73,7 @@ AEM Command Center Metrics拼贴
 
    >[!NOTE]
    >
-   >设置云配置后，您可以在应用程序功能板中 **查看分析指标** “拼贴”。
+   >在设置云配置后，您可以在应用程序功能板中 **查看分析指标** “拼贴”。
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 

@@ -18,7 +18,7 @@ Adobe建议对以下项目使用PDF栅格化器库：
 * 未开箱即用生成缩览图的AI或PDF文件。
 * 具有Pantone Matching System(PMS)颜色的AI文件。
 
-与开箱即用输出相比，使用PDF栅格化器生成的缩览图和预览的质量更高，因此，可以跨设备提供一致的查看体验。 Adobe PDF Rasterizer库不支持任何色彩空间转换。 它始终输出为RGB，而与源文件的色彩空间无关。
+与开箱即用输出相比，使用PDF栅格化器生成的缩览图和预览的质量更高，因此，可跨设备提供一致的查看体验。 Adobe PDF Rasterizer库不支持任何色彩空间转换。 它始终输出为RGB，而与源文件的色彩空间无关。
 
 1. 从“包共享”在AEM实例上安装PDF栅格 [化器包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)。
 

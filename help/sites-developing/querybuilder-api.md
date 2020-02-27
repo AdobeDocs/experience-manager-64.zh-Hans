@@ -35,7 +35,7 @@ REST API通过HTTP提供对完全相同功能的访问，响应以JSON形式发�
 
 ## Gem会议 {#gem-session}
 
-[AEM Gems是](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) Adobe专家提供的一系列深入探讨Adobe Experience manager的技术知识。 此专门用于查询构建器的会话对于概述和使用该工具非常有用。
+[AEM Gems是Adobe专家提供的](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) Adobe Experience manager的一系列深入技术介绍。 此专门用于查询构建器的会话对于概述和使用该工具非常有用。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ REST API通过HTTP提供对完全相同功能的访问，响应以JSON形式发�
 
 ## 示例查询 {#sample-queries}
 
-这些范例以Java属性样式表示法提供。 要将它们与Java API一起使用，请使用Java, `HashMap` 如下面的API示例中所示。
+这些范例以Java属性样式表示法提供。 要将它们与Java API一起使用，请使用Java, `HashMap` 如下面的API范例中所示。
 
 对于 `QueryBuilder` JSON Servlet，每个示例都包含一个指向本地CQ安装的链接(位于默认位置 `http://localhost:4502`)。 请注意，您必须先登录到CQ实例，然后才能使用这些链接。
 

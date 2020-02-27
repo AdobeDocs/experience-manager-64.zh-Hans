@@ -19,7 +19,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 AEM表单包含两种类型的服务：
 
-* 控制AEM表单应用程序服务器和数据库的服务。
+* 控制AEM Forms应用程序服务器和数据库的服务。
 * 控制AEM表单模块的服务
 
 ## 启动或停止与AEM表单模块关联的服务 {#start-or-stop-the-services-associated-with-aem-forms-modules}

@@ -3,7 +3,7 @@ title: 批量编辑多个资产和集合的元数据
 description: 了解如何同时编辑许多资产和集合的元数据以快速传播常见的元数据更改。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Enterprise Manager(AEM)资产允许您同时编辑多个资产的元数据
 >
 >批量编辑方法适用于文件夹或集合中的可用资产。 对于跨文件夹可用或符合通用标准的资产，可以从资产搜索结果中批量更新元数据。
 
-## Editing metadata properties of multiple assets {#editing-metadata-properties-of-multiple-assets}
+## 编辑多个资产的元数据属性 {#editing-metadata-properties-of-multiple-assets}
 
 1. 在“资产”用户界面中，导航到要编辑的资产所在的位置。
 1. 选择要编辑其通用属性的资产。
@@ -52,26 +52,6 @@ Adobe Enterprise Manager(AEM)资产允许您同时编辑多个资产的元数据
    >
    >对于单值字段，即使选择&#x200B;**[!UICONTROL 追加模式]**，新元数据也不会追加到字段中的现有值中。
 
-## 编辑多个集合的元数据属性 {#editing-metadata-properties-of-multiple-collections}
-
-1. 从收藏集控制台中，选择要编辑的收藏集。
-1. 在工具栏中，点按／单击 **[!UICONTROL 属性]** 图标以打开选定集合的属性页面。
-1. 修改各个选项卡下选定集合的元数据属性。
-
-   >[!NOTE]
-   >
-   >您为所选集合添加的元数据将覆盖这些集合的以前元数据，但标记除外。 您在“标记”字段中添 **[!UICONTROL 加的任何标记]** ，都会附加到元数据中的现有标记列表中。
-
-1. 要查看特定集合的元数据属性，请取消选择集合列表中的其余集合。 元数据编辑器字段会填充特定集合的元数据。
-
-   >[!NOTE]
-   >
-   >* 在收藏集属性页面中，可以通过取消选择收藏集从收藏集列表中删除收藏集。 集合列表默认选中所有集合。 您删除的集合的元数据不会更新。
-   >* At the top of the list, select the check box near **Title** to toggle between selecting the collections and clearing the list.
-
-
-1. 保存更改。
-
 ## 配置批量元数据更新限制 {#configure-limit-for-bulk-metadata-update}
 
 为防止出现类似DOS的情况，AEM限制了Sling请求中支持的参数数。 在一次性更新许多资产的元数据时，您可能会达到限制，并且不会更新更多资产的元数据。 AEM在日志中生成以下警告：
@@ -79,3 +59,7 @@ Adobe Enterprise Manager(AEM)资产允许您同时编辑多个资产的元数据
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
 To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+
+>[!MORELIKETHIS]
+>
+>* [批量编辑多个集合的元数据](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)

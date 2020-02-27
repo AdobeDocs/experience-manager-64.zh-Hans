@@ -35,7 +35,7 @@ AEM的内部重新索引过程会收集存储库数据并将其存储在Oak索�
 
 1. 对于这两个MBean，检查 **Done** timestamp和 **LastIndexTime** timestamp是否距当前时间不到45分钟。
 
-1. 对于任一MBean，如果时间值(**Done** or **LastIndexedTime**)从当前时间开始大于45分钟，则索引作业将失败或耗时过长。 这会导致异步索引失效。
+1. 对于任一MBean，如果时间值(**Done** or **LastIndexedTime**)从当前时间开始大于45分钟，则索引作业将失败或过长。 这会导致异步索引失效。
 
 ## 在强制关闭后暂停索引 {#indexing-is-paused-after-a-forced-shutdown}
 

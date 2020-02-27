@@ -25,6 +25,6 @@ Enablement Assignments组件允许当前登录的社区成员（学员）访问�
 
 ## 附加信息 {#additional-information}
 
-有关详细信息，请参阅面向开发 [人员的Assignments](essentials-assignments.md) Essentials页面。
+有关详细信息，请参阅面向开 [发人员的](essentials-assignments.md) Assignments Essentials页面。
 
 在创 [建社区站点时](functions.md#assignments-function) ，任务功能 [可用](sites-console.md)。

@@ -1235,7 +1235,7 @@ Endpoint Registry服务提供了以编程方式管理端点的能力。 例如�
 1. 创建ConnectorRegistry客户端对象。
 
    * 创建包 `ServiceClientFactory` 含连接属性的对象。
-   * 使用对 `ConnectorRegistryClient` 象的构造函数并传递该对象来创建 `ServiceClientFactory` 对象。
+   * 使用对 `ConnectorRegistryClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。
 
 1. 指定连接器类型。
 

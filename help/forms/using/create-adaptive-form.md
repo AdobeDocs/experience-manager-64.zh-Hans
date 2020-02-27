@@ -176,7 +176,7 @@ AEM Forms提供许多组件，用于显示自适应表单上的信息。 页眉�
    | 电子邮件模板 | 您 `${customer_Name}`好，以下地址已添加为您帐户的送货地址： <br>`${customer_Name}`, `${customer_Shipping_Address}``${customer_State}`，此致， `${customer_ZIPCode}`<br> We.Retail |
    | 包括附件 | 启用 |
 
-   您的表单已准备好。 现在，您可以预览表单并测试功能。 如果您使用了教程中提到的名称并访问运行AEM Forms服务器的计算机上的表单，则表单位于http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html [上](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)。
+   您的表单已准备好。 现在，您可以预览表单并测试功能。 如果您使用了教程中提到的名称并访问运行AEM Forms服务器的计算机上的表单，则表单可在http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html [访问](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)。
 
 ## 第5步：预览并提交自适应表单 {#step-preview-and-submit-the-adaptive-form}
 

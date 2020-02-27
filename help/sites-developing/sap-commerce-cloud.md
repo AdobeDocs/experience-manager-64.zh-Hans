@@ -651,7 +651,7 @@ public interface ImportHandler {
 }
 ```
 
-要让导入程序识别您的自定义处理函数，它必须指 `service.ranking`定值大于0的属性；例如：
+要使导入程序识别您的自定义处理程序，它必须指 `service.ranking`定值大于0的属性；例如：
 
 ```java
 @Component

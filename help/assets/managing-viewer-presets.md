@@ -309,7 +309,7 @@ When you create or edit an interactive video viewer preset, you access **[!UICON
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Viewer Presets]**.
 1. 在“查 **[!UICONTROL 看器预设]** ”页面的“状态”列标题 **[!UICONTROL 下]** ，点按切换以激活或取消激活查看器预设。
 
-   激活的查看器预设在右侧显示蓝色框；已停用的查看器预设可在灰色浅框内左侧显示切换。
+   已激活的查看器预设在右侧显示一个蓝色框；已停用的查看器预设可在灰色浅框内左侧显示切换。
 
 ## Publishing Dynamic Media viewer presets {#publishing-viewer-presets}
 

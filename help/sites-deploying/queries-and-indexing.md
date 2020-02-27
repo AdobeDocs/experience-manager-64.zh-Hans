@@ -292,7 +292,7 @@ AEM中的集成在存储库级别进行，因此Solr是可在Oak中使用的索�
 
 AEM可与可通过Web控制台配置的嵌入式Solr服务器一起使用。 在这种情况下，Solr服务器将在与其嵌入到的AEM实例相同的JVM中运行。
 
-可以通过以下方式配置嵌入式Solr服务器：
+您可以通过以下方式配置嵌入式Solr服务器：
 
 1. 转到Web控制台，网址为 `https://serveraddress:4502/system/console/configMgr`
 1. 搜索“**Oak Solr服务器提供商**”。
@@ -345,7 +345,7 @@ AEM还可配置为与远程Solr服务器实例一起使用：
    >
    >有关Solr和ZooKeeper配置的详细信息，请参阅 [Solr配置文档](https://wiki.apache.org/solr/ConfiguringSolr) 和 [ZooKeeper入门指南](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html)。
 
-1. 转到并运行以下命令，以借助ZooKeeper支持启动 `aemsolr1\node1` 第一个共享区：
+1. 转到并运行以下命令，即可启动支持ZooKeeper `aemsolr1\node1` 的第一个共享区：
 
    ```xml
    java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar

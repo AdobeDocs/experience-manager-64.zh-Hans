@@ -951,7 +951,7 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 ## 特定于Windows的安全建议 {#windows-specific-security-recommendations}
 
-此部分包含特定于Windows的安全建议，当用于在JEE上运行AEM Forms时，这些建议是特定的。
+此部分包含特定于Windows的安全建议，当用于在JEE上运行AEM Forms时。
 
 ### JBoss服务帐户 {#jboss-service-accounts}
 
@@ -973,7 +973,7 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
    * 拒绝本地登录
    * 以服务身份登录（应已设置）
 
-1. 为JEE web内容目录上的AEM Forms赋予新的用户帐户“读取和执行”、“列出文件夹内容”和“读取”权限。
+1. 为JEE web内容目录上的AEM Forms赋予新的用户帐户“读取并执行”、“列出文件夹内容”和“读取”权限。
 1. 启动应用程序服务器服务。
 
 ### 文件系统安全性 {#file-system-security}

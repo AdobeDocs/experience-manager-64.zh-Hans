@@ -110,7 +110,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 1. 在要重复的面板的父项上，点按 ![cmppr](assets/cmppr.png)。 您可以在提要栏中查看属性。 在“布 **局** ”下拉框中，选择 **Accordion**。
 1. 在要重复的面板上，点按 ![cmppr](assets/cmppr.png)。 您可以在提要栏中看到面板属性。 启用“ **使面板可重复********** ”选项卡，并指定“最大值”和“最小值”字段的值。
 
-   现在，您可以使用加号(+)和删除( ![delete-panel](assets/delete-panel.png))按钮添加和删除面板。
+   现在，您可以使用加号(+)和删除( ![delete-panel](assets/delete-panel.png))按钮来添加和删除面板。
 
 ## 使用表单模板中的重复子表单(XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 

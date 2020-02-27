@@ -115,7 +115,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ### “排序设置”选项卡 {#sort-settings-tab}
 
-在“排 **[!UICONTROL 序设置]** ”选项卡下，指定显示已发布注释时的排序方式。
+在“排序 **[!UICONTROL 设置”选项卡下]** ，指定显示已发布注释时的排序方式。
 
 * **[!UICONTROL 排序依据]**&#x200B;检查所有允许的排序选择： `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Default is `Newest, Oldest, Last Updated`.
 

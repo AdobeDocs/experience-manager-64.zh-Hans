@@ -135,7 +135,7 @@ REST(REpresentational State Transfer)是指World Wide web所基于的软件体�
 
 **ExtJS构件** - AEM中的大多数用户界面元素都使用ExtJS,ExtJS是使用JavaScript编写的第三方构件库。 ExtJS具有高性能、可自定义的UI构件和设计良好且可扩展的组件模型。
 
-**JCR,Java内容存储库** - Java内容存储库规范(JSR-283)提供抽象数据模型和应用程序编程接口，用于实现一个可大规模扩展的NoSQL数据存储库，该数据存储库结合了文件系统和对象数据库的功能。 虽然您不需要详尽地了解JSR-283，但您应该花时间熟悉JCR的基本功能及其基础数据模型，因为JCR使AEM的“一切尽在内容”理念成为可能。
+**JCR,Java内容存储库** - Java内容存储库规范(JSR-283)提供抽象数据模型和应用程序编程接口，用于实现一个可大规模扩展的NoSQL数据存储库，该数据存储库结合了文件系统和对象数据库的功能。 虽然您不需要详尽地了解JSR-283，但您应该花时间熟悉JCR的基本功能及其基础数据模型，因为JCR使AEM的“一切尽在内容”哲学成为可能。
 
 本质上，JCR是一个节点和属性的系统，节点可以继承其他节点，所有内容都作为属性值进 *行存储*。 请注意，除了普通继承外，JCR还允许“mixin”节点的概念，这允许对多个继承进行建模。
 
@@ -173,7 +173,7 @@ java -jar <quickstartfilename>.jar -help
 
 **Sidekick** - Sidekick是一个类似调色板的浮动窗口，它显示在可编辑页面上，从中可以拖动新组件并执行应用于页面的操作。
 
-**Site Catalyst** - SiteCatalyst为营销人员提供了一个位置，用于测量、分析和优化跨多个营销渠道的所有在线计划的集成数据。 您可以使用Adobe SiteCatalyst分析AEM网站中的数据。
+**Site Catalyst** - SiteCatalyst为营销人员提供了一个位置来测量、分析和优化跨多个营销渠道的所有在线计划的集成数据。 您可以使用Adobe SiteCatalyst分析AEM网站中的数据。
 
 **Tar Storage(TarMK)** - TarMK是AEM中的默认持久系统。 虽然可以将AEM配置为使用不同的持久系统（如MongoDB），但TarMK具有某些优势，即它针对典型JCR用例进行了性能优化（因此速度非常快），使用行业标准数据格式，并且可以快速、轻松地备份。
 

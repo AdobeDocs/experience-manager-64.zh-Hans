@@ -79,7 +79,7 @@ Web应用程序使用的XML数据文件已从“数据”文件夹移至 `C:\Ado
 
 ### 创建Web项目 {#creating-a-web-project}
 
-创建包含Java servlet的Web应用程序（可调用Forms服务）的第一步是创建新的Web项目。 此文档所基于的Java IDE是Eclipse 3.3。使用Eclipse IDE，创建一个Web项目并将所需的JAR文件添加到您的项目。 最后，将名为 *index.html* 的HTML页和Java servlet添加到项目。
+创建包含Java servlet的Web应用程序（可调用Forms服务）的第一步是创建新的Web项目。 此文档所基于的Java IDE是Eclipse 3.3。使用Eclipse IDE，创建一个Web项目并将所需的JAR文件添加到您的项目。 最后，将名为 *index.html* 的HTML页和Java servlet添加到项目中。
 
 以下列表指定了必须添加到Web项目的JAR文件：
 
@@ -303,7 +303,7 @@ Web应用程序使用的XML数据文件已从“数据”文件夹移至 `C:\Ado
 
 ### 创建网页 {#creating-the-web-page}
 
-index.html网页提供Java servlet的入口点并调用Forms服务。 此网页是一个基本的HTML表单，其中包含两个单选按钮和一个提交按钮。 单选按钮的名称是单选按钮。 当用户单击提交按钮时，表单数据将发布到 `RenderFormFragment` Java servlet。
+index.html网页提供Java servlet的入口点，并调用Forms服务。 此网页是一个基本的HTML表单，其中包含两个单选按钮和一个提交按钮。 单选按钮的名称是单选按钮。 当用户单击提交按钮时，表单数据将发布到 `RenderFormFragment` Java servlet。
 
 Java servlet通过使用以下Java代码捕获从HTML页发布的数据：
 

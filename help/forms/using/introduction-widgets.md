@@ -1,7 +1,7 @@
 ---
 title: 自适应表单和HTML5表单的外观框架
 seo-title: 自适应表单和HTML5表单的外观框架
-description: 'Mobile Forms将表单模板渲染为HTML5表单。 这些表单使用jQuery、Backbone.js和下划线。js文件来显示和启用脚本。 '
+description: 'Mobile Forms将表单模板渲染为HTML5表单。 这些表单使用jQuery、Backbone.js和Onderrowse.js文件来显示和启用脚本。 '
 seo-description: 'Mobile Forms将表单模板渲染为HTML5表单。 这些表单使用jQuery、Backbone.js和Onderrowse.js文件来显示和启用脚本。 '
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference

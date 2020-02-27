@@ -40,7 +40,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
        });
    ```
 
-1. 在/content下按名称和类型创 `sampleApplication` 建节点 `nt:unstructured`。 在此节点的属性中，添加 `sling:resourceType` 类型String和value `sampleApplication`。 在此节点的“访问控制列表”中，添加一个允许jcr: `PERM_WORKSPACE_USER` read权限的条目。 此外，在“访问控制列表”中，添 `/apps/sampleApplication` 加一个允许jcr:read权 `PERM_WORKSPACE_USER` 限的条目。
+1. 在/content下按名称和类型创 `sampleApplication` 建节点 `nt:unstructured`。 在此节点的属性中，添加 `sling:resourceType` 类型String和value `sampleApplication`。 在此节点的“访问控制列表”中，添加一个允许jcr: `PERM_WORKSPACE_USER` read权限的条目。 此外，在“访问控制列表”中，添 `/apps/sampleApplication` 加允许jcr:read权 `PERM_WORKSPACE_USER` 限的条目。
 1. 在更 `/apps/sampleApplication/wscomponents/js/registry.js` 新从到的模板 `/lc/libs/ws/` 值 `/lc/apps/sampleApplication/wscomponents/` 路径中。
 1. 在您的门户主页JSP文件( `/apps/sampleApplication/GET.jsp`)中，添加以下代码，以在门户中包含所需的组件。
 

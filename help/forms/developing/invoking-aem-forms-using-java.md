@@ -972,7 +972,7 @@ c:/temp/input.pdf文件必须位于客户端计算机（而非服务器计算机
 1. 在Java项目的类路径中包含客户端JAR文件，如adobe-repository-client.jar。 有关这些文件的位置的信息，请参 [阅包括AEM Forms java库文件](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 1. 设置调用服务所需的连接属性。
 1. 通过调 `ServiceClientFactory` 用对象的静态方 `ServiceClientFactory` 法并传递包含连接属性 `createInstance` 的对 `java.util.Properties` 象来创建对象。
-1. 使用对 `ResourceRepositoryClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。 使用该对 `ResourceRepositoryClient` 象调用存储库服务操作。
+1. 使用对 `ResourceRepositoryClient` 象的构造函数并传递该对象来创建 `ServiceClientFactory` 对象。 使用该对 `ResourceRepositoryClient` 象调用存储库服务操作。
 1. 使用对 `RepositoryInfomodelFactoryBean` 象的构造函数和传递创建对象 `null`。 通过此对象，您可以创 `Resource` 建一个对象，它表示已添加到存储库的内容。
 1. 通过调 `Resource` 用对象的方法并 `RepositoryInfomodelFactoryBean` 传递以 `newImage` 下值来创建对象：
 

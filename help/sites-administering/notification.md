@@ -133,7 +133,7 @@ This is an automatically generated message. Please do not reply.
  footer=<text_4>
 ```
 
-其中，&lt;text_x>可以是静态文本和动态字符串变量的混合。 可在页面通知的电子邮件模板中使用以下变量：
+其中，&lt;text_x>可以是静态文本和动态字符串变量的混合。 以下变量可在电子邮件模板中用于页面通知：
 
 * `${time}`、活动日期和时间。
 

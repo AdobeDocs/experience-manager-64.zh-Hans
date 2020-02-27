@@ -705,7 +705,7 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Web服务API
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. 通过使用对象的构造函数创建对 `MyApplication/EncryptDocument` 象，检索要发送 `java.io.FileInputStream` 到该进程的PDF文档。 传递指定PDF文档位置的字符串值。
+1. 通过使用对象的构造函数创建对 `MyApplication/EncryptDocument` 象，检索要发送到 `java.io.FileInputStream` 该进程的PDF文档。 传递指定PDF文档位置的字符串值。
 1. 创建一个字节数组，并用对象的内容填充该 `java.io.FileInputStream` 数组。
 1. 使用对 `BLOB` 象的构造函数创建对象。
 1. 通过调 `BLOB` 用对象的方法并传 `setBinaryData` 递字节数组来填充对象。 对 `BLOB` 象是使 `setBinaryData` 用Base64编码时要调用的方法。 请参阅在服务请求中提供BLOB对象。
@@ -899,7 +899,7 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Web服务API
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. 通过使用对象的构造函数创建对 `MyApplication/EncryptDocument` 象，检索要发送到 `java.io.File` 该进程的PDF文档。 传递指定PDF文档位置的字符串值。
+1. 通过使用对象的构造函数创建对 `MyApplication/EncryptDocument` 象，检索要发送 `java.io.File` 到该进程的PDF文档。 传递指定PDF文档位置的字符串值。
 1. 使用构 `javax.activation.DataSource` 造函数创建对 `FileDataSource` 象。 传递对 `java.io.File` 象。
 1. 使用对 `javax.activation.DataHandler` 象的构造函数并传递该对象来创建 `javax.activation.DataSource` 对象。
 1. 使用对 `BLOB` 象的构造函数创建对象。
@@ -919,7 +919,7 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Web服务API
 
 ## 通过HTTP使用BLOB数据调用AEM表单 {#invoking-aem-forms-using-blob-data-over-http}
 
-您可以使用Web服务调用AEM Forms服务，并通过HTTP传递BLOB数据。 通过HTTP传递BLOB数据是替代技术，而不是使用base64编码、DIME或MIME。 例如，可以在使用Web服务增强3.0（不支持DIME或MIME）的Microsoft .NET项目中通过HTTP传递数据。 通过HTTP使用BLOB数据时，输入数据在调用AEM Forms服务之前上传。
+您可以使用Web服务调用AEM Forms服务，并通过HTTP传递BLOB数据。 通过HTTP传递BLOB数据是替代技术，而不是使用base64编码、DIME或MIME。 例如，可以在使用Web服务增强3.0（不支持DIME或MIME）的Microsoft .NET项目中通过HTTP传递数据。 通过HTTP使用BLOB数据时，在调用AEM Forms服务之前上传输入数据。
 
 “通过HTTP使用BLOB数据调用AEM表单”讨论调用以下通过HTTP传递BLOB数据命名的AEM表单 `MyApplication/EncryptDocument` 短时进程。
 
@@ -1156,7 +1156,7 @@ Apache Axis WSDL2Java工具生成JAVA文件，其中包含用于向服务发送S
 1. 通过 `java.io.FileStream` 调用对象的方 `javax.activation.DataHandler` 法获取对 `getInputStream` 象。
 1. 创建一个字节数组，并将该字节数组传递 `java.io.FileStream` 给对象的方 `read` 法。 此方法使用表示加密的PDF文档的数据流填充字节数组。
 1. 使用对 `java.io.File` 象的构造函数创建对象。 此对象表示加密的PDF文档。
-1. 使用对 `java.io.FileOutputStream` 象的构造函数并传递该对象来创建 `java.io.File` 对象。
+1. 使用对 `java.io.FileOutputStream` 象的构造函数并传递该对 `java.io.File` 象。
 1. 调用对 `java.io.FileOutputStream` 象的方 `write` 法并传递包含表示加密PDF文档的数据流的字节数组。
 
 **另请参阅**

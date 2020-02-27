@@ -55,7 +55,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 传递给进程的XML数据必须与进程中使用的表单中的字段相匹配。 否则，数据不会显示在表单中。 调用该进程的所 `FirstAppSolution/PreLoanProcess` 有应用程序都必须传递此XML数据源。 在调用以人为 *中心的长寿命进程中创建的应用程序* ，根据用户在Web客户端中输入的值动态创建XML数据源。
 
-使用客户端应用程序，您可以发送*FirstAppSolution/PreLoanProcess *进程所需的XML数据。 长期进程返回调用标识符值作为其返回值。 下图显示了调用FirstAppSolution/* PreLoanProcess *长期流程的客户端应用程序。 客户端应用程序发送XML数据并返回表示调用标识符值的字符串值。
+使用客户端应用程序，您可以发送*FirstAppSolution/PreLoanProcess *进程所需的XML数据。 长期进程返回调用标识符值作为其返回值。 下图显示了调用FirstAppSolution/PreLoanProcess**长期流程的客户端应用程序。 客户端应用程序发送XML数据并返回表示调用标识符值的字符串值。
 
 **另请参阅**
 
@@ -95,7 +95,7 @@ Java servlet执行以下任务：
 
 ### 创建Web项目 {#create-a-web-project}
 
-创建Web应用程序的第一步是创建Web项目。 此文档所基于的Java IDE是Eclipse 3.3。使用Eclipse IDE，创建一个Web项目并将所需的JAR文件添加到您的项目。 将名为*index.html *的HTML页和Java servlet添加到您的项目。
+创建Web应用程序的第一步是创建Web项目。 此文档所基于的Java IDE是Eclipse 3.3。使用Eclipse IDE，创建一个Web项目并将所需的JAR文件添加到您的项目。 将名为*index.html *的HTML页面和Java servlet添加到您的项目。
 
 以下列表指定要包含在Web项目中的JAR文件：
 
@@ -161,7 +161,7 @@ Java servlet执行以下任务：
 1. 在Java项目的类路径中包含客户端JAR文件，如adobe-livecycle-client.jar。 有关这些文件的位置的信息，请参 [阅包括AEM Forms java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 1. 检索从HTML页面提交的名称、电话和金额值。 使用这些值动态创建发送到进程的XML数据 `FirstAppSolution/PreLoanProcess` 源。 可以使用 `org.w3c.dom` 类创建XML数据源（此应用程序逻辑如下面的代码示例所示）。
 1. 创建包 `ServiceClientFactory` 含连接属性的对象。 (请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。)
-1. 使用对 `ServiceClient` 象的构造函数并传递该对象来创建 `ServiceClientFactory` 对象。 对象 `ServiceClient` 允许您调用服务操作。 它处理查找、调度和路由调用请求等任务。
+1. 使用对 `ServiceClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。 对象 `ServiceClient` 允许您调用服务操作。 它处理查找、调度和路由调用请求等任务。
 1. 使用对 `java.util.HashMap` 象的构造函数创建对象。
 1. 为每个输 `java.util.HashMap` 入参数调 `put` 用对象的方法，以传递到长寿命进程。 确保指定进程输入参数的名称。 由于该 `FirstAppSolution/PreLoanProcess` 进程需要一个类型(名 `XML` 称)的输入 `formData`参数，因此您只需调用一次 `put` 方法。
 

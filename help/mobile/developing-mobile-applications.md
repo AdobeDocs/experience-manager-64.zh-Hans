@@ -1,5 +1,5 @@
 ---
-title: 在AEM中开发Mobile应用程序
+title: 在AEM中开发移动应用程序
 seo-title: 在AEM中开发Mobile应用程序
 description: 可查看本页，以开始使用Adobe phoneGap Enterprise在AEM中开发移动应用程序。
 seo-description: 可查看本页，以开始使用Adobe phoneGap Enterprise在AEM中开发移动应用程序。
@@ -73,7 +73,7 @@ IOS开发人员应注意到在iOS 9上运行的Cordova应用程序存在一个�
 >
 >有关“App Transport Security”的详细信息，请参阅 [Apple的iOS9预发行文档的下一节](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) ，以及此“堆栈溢 [出”讨论](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/)。
 
-## 在AEM中开发Mobile应用程序 {#developing-mobile-applications-in-aem-1}
+## 在AEM中开发移动应用程序 {#developing-mobile-applications-in-aem-1}
 
 * [启动AEM phoneGap](/help/mobile/starting-aem-phonegap-app.md)
 * [构建移动应用程序](/help/mobile/building-app-mobile-phonegap.md)

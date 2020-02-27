@@ -143,7 +143,7 @@ ReportConfiguration服务由Process Reporting用于配置进程报表查询服�
 
    在存储库上运行查询时，结果可能包含大量记录。 如果结果集较大，则查询执行可能会占用服务器资源。
 
-   要处理大的结果集，ReportConfiguration服务会将查询处理拆分为多批记录。 这样可减轻系统负载。
+   要处理大的结果集，ReportConfiguration服务会将查询处理拆分为多批记录。 这可以减少系统负载。
 
    `Default`: `1000`
 

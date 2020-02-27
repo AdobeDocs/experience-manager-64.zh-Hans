@@ -1212,7 +1212,7 @@ ResourceRepositoryClient
 1. 引用XML数据源。
 
    * 创建一 `java.io.FileInputStream` 个对象，它表示使用其构造函数填充文档的XML数据源，并传递一个指定XML文件位置的字符串值。
-   * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对象来创建 `java.io.FileInputStream` 对象。
+   * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对 `java.io.FileInputStream` 象。
 
 1. 设置打印到文件所需的打印运行时选项。
 
@@ -1789,7 +1789,7 @@ ResourceRepositoryClient
 1. 引用XML数据源
 
    * 创建一 `java.io.FileInputStream` 个对象，它使用XML数据源的构造函数并传递一个指定XML文件位置的字符串值来表示包含多个记录的XML数据源。
-   * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对象来创建 `java.io.FileInputStream` 对象。
+   * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对 `java.io.FileInputStream` 象。
 
 1. 设置PDF运行时选项
 
@@ -1868,7 +1868,7 @@ ResourceRepositoryClient
    * 使用对 `PDFOutputOptionsSpec` 象的构造函数创建对象。
    * 通过为对象的数据成员分配一个布尔值来 `OutputOptionsSpec` 设置“多 `generateManyFiles` 个文件”选项。 例如，为此数据成员指 `true` 定值，以指示输出服务为XML数据源中的每条记录创建单独的PDF文件。 (如果您为此数 `false` 据成员分配，则输出服务将生成一个包含所有记录的PDF。)
    * 通过指定一个字符串值来设置文件URI选项，该字符串值指定输出服务生成的文件到对象数据成 `OutputOptionsSpec` 员的位 `fileURI` 置。 “文件URI”选项是相对于承载AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
-   * 通过指定一个字符串值来设置记录名称选项，该字符串值指定数据源中的XML元素名称，该名称将数据记录分 `OutputOptionsSpec` 隔到对象的数 `recordName` 据成员。
+   * 通过指定一个字符串值来设置记录名称选项，该字符串值指定数据源中的XML元素名称，该名称将数据记录分 `OutputOptionsSpec` 隔为对象的数 `recordName` 据成员。
    * 通过指定一个整数值来设置副本选项，该整数值指定输出服务为对象的数据成员生 `OutputOptionsSpec` 成的副 `copies` 本数。
 
 1. 设置渲染运行时选项。
@@ -1954,7 +1954,7 @@ ResourceRepositoryClient
 
 **定义搜索规则**
 
-要定义搜索规则，您需要定义一个或多个文本模式，输出服务将在输入数据中搜索这些模式。 对于您定义的每个文本模式，您指定在找到文本模式时使用的相应表单设计。 如果找到文本模式，则输出服务将使用相应的表单设计来生成输出。 文本模式的一个示例是按 *揭*。
+要定义搜索规则，您需要定义一个或多个文本模式，输出服务在输入数据中搜索这些模式。 对于您定义的每个文本模式，您指定在找到文本模式时使用的相应表单设计。 如果找到文本模式，则输出服务将使用相应的表单设计来生成输出。 文本模式的一个示例是按 *揭*。
 
 >[!NOTE]
 >

@@ -130,7 +130,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
    1. 选中“ **在表中包含标题行** ”复选框。
    1. 选项卡 **确定**。
 
-1. 点按 **+** (在表 **1旁边的左窗格中)，右键单击“单元格** 1”，然后在“重命名日期”中选 ************&#x200B;择“对象”以重命名日期。
+1. 点按 **+** (在表 **1旁边的左窗格中)，右键单击“Cell1** ”，然后在“Cell1”中选 **择Object** ，以重命名 ******** DateRename。
 
    同样，将 **Cell2**、 **Cell3**、Cell3 **、** Cell4和 **Cell Time重命名为TimeCell、Number、CellNumber、CellDember、CellCarges和****************** CellCarges5分别重命名为Cell4、TimellCellCellCellD。
 

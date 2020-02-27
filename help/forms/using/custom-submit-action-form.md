@@ -124,7 +124,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
    * **guideDataModel** ，类型 **为String** , value **xfa, xsd, basic**
    * **jcr:Description** of type **String** and value **Store and Email Action**
 
-1. 打开任何自适应表单。 单击“开 **始** ”旁边的“编辑”按钮，以打开自适应表 **单容器的“编辑****** ”对话框。 新操作将显示在“提交操 **作** ”选项卡中。 选择“存 **储”和“电子邮件操作** ”会显示在对话框节点中添加的配置。
+1. 打开任何自适应表单。 单击“开 **始** ”旁边的“编辑”按钮，以打开自适应表 **单容器的“编辑****** ”对话框。 新操作将显示在“提交操 **作”选项卡中** 。 选择“存 **储”和“电子邮件操作** ”会显示在对话框节点中添加的配置。
 
    ![“提交操作配置”对话框](assets/store_and_email_submit_action_dialog.jpg)
 

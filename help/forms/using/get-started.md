@@ -1,8 +1,8 @@
 ---
 title: HTML5表单快速入门
 seo-title: HTML5表单快速入门
-description: 要开始使用，请部署AEM Forms Add-on包，并将现有HTML5表单导入AEM。
-seo-description: 要开始使用，请部署AEM Forms Add-on包，并将现有HTML5表单导入AEM。
+description: 要开始，请部署AEM Forms Add-on包，并将现有HTML5表单导入AEM。
+seo-description: 要开始，请部署AEM Forms Add-on包，并将现有HTML5表单导入AEM。
 uuid: e85e57ab-fe32-4b6f-819e-322047ae3240
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

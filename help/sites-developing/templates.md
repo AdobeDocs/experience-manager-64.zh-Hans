@@ -22,7 +22,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 * When [creating a page you need to select a template](#templates-pages); this will be used as the base for the new page. The template defines the structure of the resultant page, any initial content and the [components](/help/sites-authoring/default-components.md) that can be used (design properties).
 
-* 创 [建内容片段时，您还需要选择模板](#templates-content-fragments)。 此模板定义结构、初始元素和变量。
+* 创建 [内容片段时，您还需要选择模板](#templates-content-fragments)。 此模板定义结构、初始元素和变量。
 
 详细介绍了以下模板：
 
@@ -104,7 +104,7 @@ AEM现在提供两种用于创建页面的基本模板类型：
 
 以下属性确定是否允 `T` 许将模板用于要作为页面子项放置的新页面 `P`。 这些属性中的每个都是一个包含零个或多个正则表达式的多值字符串，这些正则表达式用于与路径匹配：
 
-* 子节 `cq:allowedTemplates` 点或 `jcr:content` 的祖代的属性 `P``P`。
+* 子 `cq:allowedTemplates` 节点或 `jcr:content` 的祖 `P` 代的属性 `P`。
 
 * 属 `allowedPaths` 性 `T`。
 

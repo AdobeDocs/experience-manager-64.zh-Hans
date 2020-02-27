@@ -42,7 +42,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
    * **元素名称**:指定组件的名称。
    * **** 标题：指定组件的唯一标题。
-   * **** 模板消息：指定加载签名PDF时要显示的消息。 Adobe sign服务需要一些时间来准备和加载签名PDF。
+   * **** 模板消息：指定加载签名PDF时要显示的消息。 Adobe Sign服务需要一些时间来准备和加载签名PDF。
    * **** 签名服务：选择“涂 **写签名** ”选项。
    * **CSS类**:指定客户端库的CSS类（如果有）。 建议使用主 [题](/help/forms/using/themes.md)[和内联样](/help/forms/using/inline-style-adaptive-forms.md) 式，而不是CSS类。
    点按完 ![成aem_6_3_forms_save图标](assets/aem_6_3_forms_save.png) ，以保存更改。 签名配置成功。

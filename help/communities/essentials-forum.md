@@ -62,7 +62,7 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ### 论坛功能 {#forum-function}
 
-包含论坛功能的社区站 [点结构](functions.md#forum-function)，包括已配置的组 `forum` 件以及影响协调、标记和翻译的设置。
+包含论坛功能的社区站点结 [构](functions.md#forum-function)，包括已配置的组件 `forum` 以及影响协调、标记和翻译的设置。
 
 ### 访问论坛帖子(UGC) {#accessing-forum-posts-ugc}
 

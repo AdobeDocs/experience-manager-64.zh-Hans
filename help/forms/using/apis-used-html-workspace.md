@@ -378,7 +378,7 @@ AEM Forms工作区中使用了以下API。
    <td>getUserImageUrl</td> 
    <td>ProcessManagementClientSessionService</td> 
    <td>getUserImageUrl</td> 
-   <td>它获取指定用户的用户图像URL。</td> 
+   <td>它获取指定用户的用户图像url。</td> 
   </tr>
   <tr>
    <td>uploadNote</td> 

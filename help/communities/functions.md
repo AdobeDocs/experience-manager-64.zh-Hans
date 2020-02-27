@@ -79,7 +79,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 * **[!UICONTROL 显示“所有活动”视图]**&#x200B;如果选中此选项，“活动”页面将包含一个选项卡，其中包含当前成员有权访问的社区中生成的所有活动。 选中默认值。
 
-* **[!UICONTROL 显示“新闻源”视图]**&#x200B;如果选中此选项，“活动”页面将包含一个选项卡，该选项卡会根据当前成员所跟踪的活动筛选活动。 选中默认值。
+* **[!UICONTROL 显示“新闻源”视图]**&#x200B;如果选中此选项，“活动”页面将包含一个选项卡，该选项卡会根据当前成员所跟踪的活动过滤活动。 选中默认值。
 
 ### 指定任务功能 {#assignments-function}
 
@@ -129,7 +129,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 目录功能使Enablement Community成员能 [够浏览未分配给他们的Enablement](overview.md#enablement-community) Resources。 请参 [阅为开发人员添加标签](tag-resources.md) Enablement Resources [和Catalog Essentials](catalog-developer-essentials.md) 。
 
-如果社区站点的属性设置为true，则所有目录中将显示社区站点的所有支持资源 ` [Show in Catalog](resources.md)`和学习路径。 要明确包含资源和学习路径，必须对目录应 [用预过滤](catalog-developer-essentials.md#pre-filters) 。
+如果社区站点的属性设置为true，则所有目录中将显示该社区站点的所有支持资源 ` [Show in Catalog](resources.md)`和学习路径。 要明确包含资源和学习路径，必须对目录应 [用预过滤](catalog-developer-essentials.md#pre-filters) 。
 
 添加到模板后，该配置允许指定用于配置向站点访问者显示的标记过滤器的标记命名空间：
 
@@ -274,7 +274,7 @@ QnA函数是一个页面，其中配置了 [QnA组件](working-with-qna.md) ，�
 
 ## 创建社区功能 {#create-community-function}
 
-通过选择位于“社区功能”控制台顶部 `Create Community Function` 的图标，可以创建社区功能。 可以创建基于同一AEM Blueprint的多个函数，然后通过在创作编辑模式下打开来唯一地自定义这些函数。
+通过选择位于“社区功能”控制台顶部 `Create Community Function` 的图标，可以创建社区功能。 可以创建基于同一AEM Blueprint的多个函数，然后通过在创作编辑模式下打开来唯一自定义这些函数。
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 

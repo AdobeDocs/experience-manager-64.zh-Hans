@@ -77,7 +77,7 @@ AEM Dynamic media是直接在AEM平台内统一Dynamic Media Classic功能。
 要同时使用Dynamic media和Dynamic Media Classic，请执行以下操作：
 
 1. 在云 [服务中配置Dynamic Media](#creating-a-cloud-configuration-for-scene) Classic。
-1. 按照您的用例中特定的说明操作：
+1. 按照您的用例中特有的说明操作：
 
    <table> 
     <tbody> 
@@ -496,7 +496,7 @@ Dynamic Media Classic资源通过安全预览保持可用。 仅当在AEM中发�
 1. 点按 **[!UICONTROL 云服务>添加服务> Dynamic Media Classic]**。
 1. 在 **[!UICONTROL Adobe Dynamic Media Classic下拉列表中]** ，选择所需的配置并点按 **[!UICONTROL 确定]**。
 
-   根据Dynamic Media Classic的配置提供的视频预设可在AEM中与该页面和子页面上的Dynamic Media Classic视频组件一起使用。
+   根据Dynamic Media Classic配置提供的视频预设可在AEM中与该页面和子页面上的Dynamic Media Classic视频组件一起使用。
 
 ### 配置默认配置 {#configuring-a-default-configuration}
 

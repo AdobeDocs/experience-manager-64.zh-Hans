@@ -409,7 +409,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >  | `'.'yyyy-MM-dd` | 每天午夜轮流。 |
    >  | `'.'yyyy-MM-dd-a` | 每天午夜和中午轮流。 |
    >  | `'.'yyyy-MM-dd-HH` | 每小时最上方的旋转。 |
-   >  | `'.'yyyy-MM-dd-HH-mm` | 每分钟开始时旋转。 |
+   >  | `'.'yyyy-MM-dd-HH-mm` | 每分钟开始的旋转。 |
    >
    >  注意：指定时间／日期时：
    >

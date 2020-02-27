@@ -362,7 +362,7 @@ group.2_group.type=dam:Asset
 
 * **操作**
 
-   “ `equals`”表示精确匹配（默认）,“ `unequals`”表示不相等比较，“ `like`”表示使用xpath函数（可选）,“ `jcr:like``not`”表示不匹配(例如 xpath中 `not(@prop)`的“ ”，值参数将被忽略)或“ `exists`”用于存在性检查(value can be true - properties must exist, default - or false - as &quot; `not`&quot;)
+   “ `equals`”表示精确匹配（默认）,“ `unequals`”表示不相等比较，“ `like`”表示使用xpath函数（可选）,“ `jcr:like``not`”表示不匹配(例如 xpath中 `not(@prop)`的“ ”，值参数将被忽略)或“ `exists`”用于存在性检查(value can be true - property mest, default - or false - as &quot; `not`&quot;)
 
 * **深度**
 

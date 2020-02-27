@@ -55,7 +55,7 @@ AEM mobile只是构成完整AEM平台的一个支柱。
 
 ## 面向管理员的QuickLinks {#quicklinks-for-administrators}
 
-请参 [阅使用AEM管理Adobe phoneGap Enterprise的内容](/help/mobile/administer-phonegap.md) ，以设置和管理移动应用程序。
+请参 [阅使用AEM管理Adobe phoneGap Enterprise的内容](/help/mobile/administer-phonegap.md) ，以设置和管理您的移动应用程序。
 
 >[!NOTE]
 >

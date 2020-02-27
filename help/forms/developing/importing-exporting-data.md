@@ -321,7 +321,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 创建表单数据集成服务客户端。
 
    * 创建包 `ServiceClientFactory` 含连接属性的对象。
-   * 使用对 `FormDataIntegrationClient` 象的构造函数并传递该对象来创建 `ServiceClientFactory` 对象。
+   * 使用对 `FormDataIntegrationClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。
 
 1. 引用PDF表单。
 

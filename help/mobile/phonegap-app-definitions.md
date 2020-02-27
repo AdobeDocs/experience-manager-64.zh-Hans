@@ -44,7 +44,7 @@ source-git-commit: c58437f791daa11669198d916f0756ff4830677c
 熟悉应用程序定义后，请进一步了解以下创作资源：
 
 * [导入现有混合应用程序](/help/mobile/phonegap-adding-content-to-imported-app.md)
-* [使用“创建应用程序向导”创建新应用程序](/help/mobile/phonegap-create-new-app.md)
+* [使用创建应用程序向导创建新应用程序](/help/mobile/phonegap-create-new-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)
 
 ## 其他资源 {#additional-resources}

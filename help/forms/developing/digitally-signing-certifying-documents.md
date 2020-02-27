@@ -271,7 +271,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 1. 创建签名客户端
 
    * 创建包 `ServiceClientFactory` 含连接属性的对象。
-   * 使用对 `SignatureServiceClient` 象的构造函数并传递该对象来创建 `ServiceClientFactory` 对象。
+   * 使用对 `SignatureServiceClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。
 
 1. 获取包含签名字段的PDF文档
 
@@ -439,7 +439,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 1. 创建签名客户端
 
    * 创建包 `ServiceClientFactory` 含连接属性的对象。
-   * 使用对 `SignatureServiceClient` 象的构造函数并传递该对象来创建 `ServiceClientFactory` 对象。
+   * 使用对 `SignatureServiceClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。
 
 1. 获取包含要修改的签名字段的PDF文档
 
@@ -694,7 +694,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 1. 创建签名客户端
 
    * 创建包 `ServiceClientFactory` 含连接属性的对象。
-   * 使用对 `SignatureServiceClient` 象的构造函数并传递该对象来创建 `ServiceClientFactory` 对象。
+   * 使用对 `SignatureServiceClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。
 
 1. 获取要签名的PDF文档
 
@@ -897,13 +897,13 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 1. 创建表单和签名客户端
 
    * 创建包 `ServiceClientFactory` 含连接属性的对象。
-   * 使用对 `SignatureServiceClient` 象的构造函数并传递该对象来创建 `ServiceClientFactory` 对象。
+   * 使用对 `SignatureServiceClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。
    * 使用对 `FormsServiceClient` 象的构造函数并传递该对象来创建 `ServiceClientFactory` 对象。
 
 1. 使用Forms服务获取交互式表单
 
    * 创建一 `java.io.FileInputStream` 个对象，它表示要通过使用其构造函数传递到Forms服务的PDF文档。 传递指定PDF文档位置的字符串值。
-   * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对 `java.io.FileInputStream` 象。
+   * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对象来创建 `java.io.FileInputStream` 对象。
    * 创建一 `java.io.FileInputStream` 个对象，它表示包含表单数据的XML文档，以便通过使用其构造函数传递到Forms服务。 传递一个指定XML文件位置的字符串值。
    * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对象来创建 `java.io.FileInputStream` 对象。
    * 创建 `PDFFormRenderSpec` 用于设置运行时选项的对象。 调用对 `PDFFormRenderSpec` 象的方 `setGenerateServerAppearance` 法并传递 `true`。
@@ -1115,7 +1115,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 * **签署方的位置**:由凭证指定的签署方的位置。
 * **联系信息**:签署方的联系信息，如地址和电话号码。
 * **权限信息**:控制最终用户在文档上可以执行的操作而不会导致认证签名无效的权限。 例如，您可以设置权限，以便对PDF文档进行任何更改都会导致认证的签名无效。
-* **法律解释**:文档经过认证后，会自动扫描其是否有特定类型的内容，这些内容可能会使文档的内容含糊或具有误导性。 例如，注释可能会模糊页面上的某些文本，这些文本对于了解正在验证的内容很重要。 扫描过程生成关于这些类型的内容的警告。 此值提供了可能生成警告的内容的附加说明。
+* **法律解释**:文档经过认证后，会自动扫描其是否有特定类型的内容，这些内容可能会使文档的内容有歧义或具有误导性。 例如，注释可能会模糊页面上的某些文本，这些文本对于了解正在验证的内容很重要。 扫描过程生成关于这些类型的内容的警告。 此值提供了可能生成警告的内容的附加说明。
 * **外观选项**:控制认证签名外观的选项。 例如，认证签名可显示日期信息。
 * **撤销检查**:此值指定是否对签署方的证书执行吊销检查。 默认设置表 `false` 示不执行吊销检查。
 * **OCSP设置**:“联机证书状态协议(OCSP)”支持的设置，提供有关用于认证PDF文档的凭证状态的信息。 例如，您可以指定服务器的URL，该URL提供有关您用于登录PDF文档的凭证的信息。
@@ -1771,16 +1771,16 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 1. 创建签名客户端。
 
    * 创建包 `ServiceClientFactory` 含连接属性的对象。
-   * 使用对 `SignatureServiceClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。
+   * 使用对 `SignatureServiceClient` 象的构造函数并传递该对象来创建 `ServiceClientFactory` 对象。
 
 1. 获取包含要删除的签名的PDF文档
 
    * 创建一 `java.io.FileInputStream` 个对象，它表示包含要删除的签名的PDF文档，方法是使用其构造函数并传递一个指定PDF文档位置的字符串值。
-   * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对 `java.io.FileInputStream` 象。
+   * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对象来创建 `java.io.FileInputStream` 对象。
 
 1. 从签名字段中删除数字签名
 
-   通过调用对象的方法并传递以下值，从 `SignatureServiceClient` 签名字 `clearSignatureField` 段中删除数字签名：
+   通过调用对象的方法并传递以下值， `SignatureServiceClient` 从签名 `clearSignatureField` 字段中删除数字签名：
 
    * 表示 `com.adobe.idp.Document` 包含要删除的签名的PDF文档的对象。
    * 一个字符串值，它指定包含数字签名的签名字段的名称。

@@ -152,7 +152,7 @@ Forms服务可以呈现对其应用了使用权限的表单。 使用权限与Ac
 
    * 使用对 `ReaderExtensionSpec` 象的构造函数创建对象。
    * 通过调用对象的方法指定凭据的 `ReaderExtensionSpec` 别名，并 `setReCredentialAlias` 指定表示别名值的字符串值。
-   * 通过调用属于该对象的相应方法来设置每个使用 `ReaderExtensionSpec` 权限。 但是，只有在引用的凭证允许您设置使用权限时，才可以设置此权限。 也就是说，如果凭证不允许您设置使用权限，则不能设置此权限。 要设置使用户能够填写表单字段并保存表单的使用权限，请调用对 `ReaderExtensionSpec` 象的方法并 `setReFillIn` 传递 `true`。
+   * 通过调用属于对象的相应方法来设置每个使用 `ReaderExtensionSpec` 权限。 但是，只有在引用的凭证允许您设置使用权限时，才可以设置此权限。 也就是说，如果凭证不允许您设置使用权限，则不能设置此权限。 要设置使用户能够填写表单字段并保存表单的使用权限，请调用对 `ReaderExtensionSpec` 象的方法并 `setReFillIn` 传递 `true`。
 
 1. 渲染启用了权限的表单
 

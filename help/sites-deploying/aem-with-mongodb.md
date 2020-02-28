@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 3c59ec8f-b72f-48dd-bac8-9817005ae210
 translation-type: tm+mt
-source-git-commit: f9a147ee60d3088bb9245258146323d52c747642
+source-git-commit: 77997d6d8744cf1498add91a0aa2dab4e29f8e3d
 
 ---
 
@@ -40,7 +40,7 @@ MongoDB通常用于支持满足以下条件之一的AEM作者部署：
 
 ### AEM的最小MongoDB部署 {#minimal-mongodb-deployment-for-aem}
 
-以下是MongoDB上AEM的最低部署。 为简单起见，SSL终止和HTTP代理组件已被推广。 它由一个MongoBD复制集组成，具有一个主副本和两个副本。
+以下是MongoDB上AEM的最低部署。 为简单起见，SSL终止和HTTP代理组件已被推广。 它由一个MongoDB复制集组成，具有一个主副本和两个副本。
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -665,7 +665,7 @@ Header setifempty Content-Type application/javascript env=jsonp_request
 
 默认调度程序设置允许打开的内容安全策略，也称为CSP。 这允许页面从受浏览器沙箱默认策略约束的所有域加载资源。
 
-最好限制可从哪些位置加载资源，以避免从不受信任的或未经验证的外部服务器将代码加载到javascript引擎中。
+最好限制资源可从哪里加载，以避免从不受信任的或未经验证的外部服务器将代码加载到javascript引擎中。
 
 CSP允许对策略进行微调。 但是，在复杂的应用中，CSP头需要谨慎地开发，因为过于限制的策略可能会破坏用户界面的部分部分。
 

@@ -3,7 +3,7 @@ title: 在AEM资产中使用Adobe Stock资产
 description: 在AEM中搜索、提取、许可和管理Adobe Stock资产。 将许可资产视为任何其他AEM资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ff098a599f1c5230ce12a9c5cdbd1b118030a5f8
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -52,7 +52,9 @@ Adobe Stock 服务为设计师和企业提供了数百万种可用于所有创�
 
 在AEM中许可Adobe Stock资产后，就可以像典型资产一样使用和管理它。 在AEM中，用户可以搜索和预览资产；复制和发布资产；在Brand Portal上共享资产；通过AEM桌面应用程序访问和使用资产；等等。
 
-![搜索Adobe Stock资源并过滤AEM工作区中的结果](assets/adobe-stock-search-results-workspace.png)*图：搜索Adobe Stock资产并从AEM工作区过滤结果*
+![搜索Adobe Stock资产并从AEM工作区过滤结果](assets/adobe-stock-search-results-workspace.png)
+
+*图：搜索Adobe Stock资产并从AEM工作区过滤结果*
 
 **A.** 搜索与提供 Adobe Stock ID 的资产类似的资产。**B.** 搜索与您选择的形状或方向匹配的资产。**C.** 搜索一种或多种受支持的资产类型 **D.** 打开或折叠过滤器窗格 **E.** 在 AEM 中授权并保存选定的资产 **F.** 在 AEM 中保存带水印的资产 **G.** 在 Adobe Stock 网站上浏览与选定资产类似的资产 **H.** 在 Adobe Stock 网站上查看选定资产 **I.** 搜索结果中的选定资产数 **J.** 在卡片视图和列表视图之间切换
 
@@ -70,7 +72,9 @@ Adobe Stock 服务为设计师和企业提供了数百万种可用于所有创�
 >
 >从Adobe Stock搜索的资产刚刚在AEM中显示。 只有在用户保存资产或许可资产后，才会获取Adobe Stock资产并将其 [存储在AEM存](aem-assets-adobe-stock.md#saveassets) 储 [库中](aem-assets-adobe-stock.md#licenseassets)。 为便于引用和访问，将显示和高亮显示已存储在AEM中的资产。 此外，这些资产会与一些其他元数据一起保存，以将源指示为Adobe Stock。
 
-![在AEM中搜索筛选器并在搜索结果中高亮显示Adobe Stock资产](assets/aem-search-filters2.jpg)*图：在AEM中搜索筛选器并在搜索结果中高亮显示Adobe Stock资产*
+![在AEM中搜索筛选器并在搜索结果中高亮显示Adobe Stock资产](assets/aem-search-filters2.jpg)
+
+*图：在AEM中搜索筛选器并在搜索结果中高亮显示Adobe Stock资产*
 
 ### 保存并查看所需的资产 {#saveassets}
 
@@ -86,7 +90,9 @@ Adobe Stock 服务为设计师和企业提供了数百万种可用于所有创�
 
 用户可以使用Adobe Stock企业计划的配额许可Adobe Stock资源。 在您为资产授权时，该资产会保存，但不会带有水印，并且可在AEM资产中搜索和使用。
 
-![用于在AEM资产中许可和保存Adobe Stock资产的对话框](assets/aem-stock_licenseandsave.jpg)*图：用于在AEM资产中许可和保存Adobe Stock资产的对话框*
+![用于在AEM资产中许可和保存Adobe Stock资产的对话框](assets/aem-stock_licenseandsave.jpg)
+
+*图：用于在AEM资产中许可和保存Adobe Stock资产的对话框*
 
 ### 访问元数据和资产属性 {#access-metadata-and-asset-properties}
 
@@ -96,7 +102,7 @@ Adobe Stock 服务为设计师和企业提供了数百万种可用于所有创�
 
 ![查看和访问已保存资产的元数据和许可证引用](assets/metadata_properties.jpg)
 
-**** 图：查 *看和访问已保存资产的元数据和许可证引用*
+*图：查看和访问已保存资产的元数据和许可证引用*
 
 ## 已知限制 {#known-limitations}
 

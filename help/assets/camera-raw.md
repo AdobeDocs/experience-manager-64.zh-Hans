@@ -3,7 +3,7 @@ title: Camera raw支持
 description: 了解如何在Adobe Experience Manager Assets中启用Camera raw支持。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2404241676daeb5e4b53149c03a23d5ee2f2667
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -55,9 +55,13 @@ source-git-commit: a2404241676daeb5e4b53149c03a23d5ee2f2667
 
 您现在可以将相机原始数据文件导入AEM资产。 安装Camera RAW包并配置所需的工作流程后，侧窗格列表中会 **[!UICONTROL 显示“图像调整]** ”选项。
 
-![chlimage_1-337图](assets/chlimage_1-337.png)*:侧窗格中的选项。*
+![chlimage_1-337](assets/chlimage_1-337.png)
 
-![chlimage_1-338图](assets/chlimage_1-338.png)*:使用选项对图像进行轻量级编辑。*
+*图：侧窗格中的选项。*
+
+![chlimage_1-338](assets/chlimage_1-338.png)
+
+*图：使用选项对图像进行轻量级编辑。*
 
 将编辑保存到Camera raw图像后，将为该图像生 `AdjustedPreview.jpg` 成新的再现。 对于除Camera raw之外的其他图像类型，更改会反映在所有再现中。
 

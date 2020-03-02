@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: c703f4af30c2093d9600d0771dc1034cd6465c8c
+source-git-commit: 1d02401f6b1946062eb238baa2fb70bbd47881a6
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: c703f4af30c2093d9600d0771dc1034cd6465c8c
 | 版本 | 6.4.7.0 |
 | 类型 | Service Pack 版本 |
 | 日期 | 2019 年 12 月 12 日 |
-| 下载 URL | AEM 6.4.7.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.7.0), [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aem.html#package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.7.zip) |
+| 下载 URL | AEM 6.4.7.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.7.0) |
 
 ## AEM 6.4.7.0 包含哪些内容 {#what-s-included-in-aem}
 
@@ -371,7 +371,7 @@ AEM 6.4.6.0的一些关键亮点是：
 **PDFG 服务**
 
 * 在Windows Server 2016上尝试将Word文档转换为PDF时发生连接错误。 NPR-30597：适用于 CQ-4275652 的修补程序
-* 尝试通过“phantomjs”库使用HTML到PDF后端服务时，权限被拒绝例外。 NPR-30456：适用于 CQ-4258077 的修补程序
+* 尝试通过“phantomjs”库使用HTML到PDF后端服务时，权限被拒绝异常。 NPR-30456：适用于 CQ-4258077 的修补程序
 * JBoss管理控制台中不显示HTML到PDF服务的maxReuseCount。 NPR-30303、NPR-30135：适用于 CQ-4273763 的修补程序
 
 #### AEM 6.4.5.0 {#experience-manager-6450}
@@ -2138,7 +2138,7 @@ AEM 6.4.7.0 中包含的内容包列表
 * [AEM 产品页面](https://www.adobe.com/solutions/web-experience-management.html)
 * [AEM 开发人员支持](https://docs.adobe.com/content/ddc/en.html)
 * [AEM 6.4 文档](https://helpx.adobe.com/support/experience-manager/6-4.html)
-* Subscribe to [Adobe Priority Product Updates](https://www.adobe.com/subscription/priority-product-update.html)
+* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### 受限的网站 {#restricted-sites-new}
 

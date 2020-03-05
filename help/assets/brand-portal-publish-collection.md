@@ -3,20 +3,20 @@ title: 将集合发布到Brand Portal
 description: 了解如何将集合发布和取消发布到Brand Portal。
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
 # Publish collections to Brand Portal {#publish-collections-to-brand-portal}
 
-作为Adobe Experience Manager(AEM)资产管理员，您可以将集合发布到您组织的AEM Assets Brand Portal实例。 但是，您必须先将AEM资产与Brand Portal集成。 有关详细信息，请参 [阅配置AEM资产与Brand Portal的集成](brand-portal-configuring-integration.md)。
+作为Adobe Experience Manager(AEM)资产管理员，您可以将集合发布到您组织的AEM Assets Brand Portal实例。 但是，您必须先将AEM资产与Brand Portal集成。 有关详细信息，请 [参阅配置AEM资产与Brand Portal](configure-aem-assets-with-brand-portal.md)。
 
 如果您在AEM资产中对原始集合进行后续修改，则在您再次发布集合之前，这些更改不会反映在Brand Portal中。 此特性可确保在品牌门户中不提供进行中的更改。 只有管理员发布的已批准更改才可在Brand Portal中使用。
 
 >[!NOTE]
 >
->内容片段无法发布到Brand Portal。 因此，如果您在AEM作者上选择内容片段，则“发 **[布到品牌门户]** ”操作将不可用。
+>内容片段无法发布到Brand Portal。 因此，如果您在AEM作者上选择内容片段，则“发布 **[到品牌门户]** ”操作将不可用。
 >
 >如果包含内容片段的集合从AEM作者发布到Brand Portal，则文件夹中除内容片段之外的所有内容都将被复制到Brand Portal界面。
 

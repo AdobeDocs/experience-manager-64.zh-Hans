@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 discoiquuid: 920e9702-82f7-4495-a84e-22a1c8b0d559
 translation-type: tm+mt
-source-git-commit: 5f613cbae9dccbc277287e5e58c8f0648c4f3bed
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -43,11 +43,7 @@ AEM Screens是一款功能强大的基于Web的解决方案，它允许您创建
 
 ## 启动新AEM Screens项目 {#starting-a-new-aem-screens-project}
 
-启动新的数字标牌体验需要在准备好消费之前整合角色。 以下角色为创建新Screens项目提供了一个起点：
-
-* [创作](authoring-screens.md)
-* [开发人员](developing-screens.md)
-* [系统管理员／技术员](administering-screens.md)
+启动新的数字标牌体验需要在准备好消费之前整合角色。
 
 下图定义了AEM Screens的角色及其角色。
 
@@ -55,7 +51,7 @@ AEM Screens是一款功能强大的基于Web的解决方案，它允许您创建
 
 >[!NOTE]
 >
->*此外，要根据角色查看不同的责任，请单击上述角色。*
+>*此外，要根据角色查看不同的职责，请单击上述角色。*
 
 ## 先决条件知识 {#prerequisite-knowledge}
 
@@ -63,7 +59,7 @@ AEM Screens是一款功能强大的基于Web的解决方案，它允许您创建
 
 要了解Adobe Experience Manager 6.4和6.5，请参阅以下教程和资源：
 
-* **[Adobe Experience Manager快速入门](https://helpx.adobe.com/experience-manager/get-started.html)**:了解Adobe Experience manager的入门文章和视频教程。
+* **[Adobe Experience Manager快速入门](https://helpx.adobe.com/experience-manager/get-started.html)**:了解Adobe Experience Manager的入门文章和视频教程。
 * **[AEM 6.5教程和视频](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)**:AEM 6.5版本中的一组教程和视频，其中突出了AEM Sites、Assets、Forms、Screens和Foundation的新增功能和更新的功能。
 * **[AEM核心概念](https://docs.adobe.com/content/help/en/experience-manager-64/developing/introduction/the-basics.html)**:概述了AEM的结构化方式以及如何在其上进行开发的核心概念，包括了解JCR、Sling、OSGi、调度程序、工作流和MSM。
 

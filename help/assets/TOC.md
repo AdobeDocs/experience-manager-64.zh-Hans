@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 
 ---
 
@@ -98,7 +98,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [AEM Assets 与 AEM MediaLibrary](medialibrary.md)
    + [使用PDF栅格化器](aem-pdf-rasterizer.md)
    + [配置资产上传限制](configuring-asset-upload-restrictions.md)
-   + [AEM与Creative cloud集成的最佳实践](aem-cc-integration-best-practices.md)
+   + [AEM与Creative Cloud集成的最佳实践](aem-cc-integration-best-practices.md)
    + [将AEM资产与InDesign服务器集成](indesign.md)
    + [元数据配置文件](metadata-profiles.md)
    + [资产中的数字版权管理](drm.md)
@@ -115,11 +115,12 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [添加水印](watermarking.md)
    + [批量元数据导入和导出](metadata-import-export.md)
    + [资产模板](asset-templates.md)
-   + [AEM到Creative cloud文件夹共享最佳实践](aem-cc-folder-sharing-best-practices.md)
+   + [AEM到Creative Cloud文件夹共享最佳实践](aem-cc-folder-sharing-best-practices.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
    + [管理智能标记](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [配置AEM资产与Brand Portal的集成](brand-portal-configuring-integration.md)
+   + [使用Brand Portal配置AEM资产](configure-aem-assets-with-brand-portal.md)
+   + [将资产发布到Brand Portal](brand-portal-publish-assets.md)
    + [将集合发布到Brand Portal](brand-portal-publish-collection.md)
    + [将文件夹发布到Brand Portal](brand-portal-publish-folder.md)
 + 内容片段 {#fragments}
@@ -140,7 +141,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [在资产中签入和签出文件](check-out-and-submit-assets.md)
    + [使用智能内容服务配置资产标记](config-smart-tagging.md)
    + [启用重复项检测](duplicate-detection.md)
-   + [AEM中资产的增强排序](enhance-sort.md)
+   + [增强了AEM中资产的排序](enhance-sort.md)
    + [组织数字资产](organize-assets.md)
    + [管理视频资产](managing-video-assets.md)
    + [创建翻译项目](translation-projects.md)

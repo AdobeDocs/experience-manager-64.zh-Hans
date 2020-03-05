@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -112,10 +112,6 @@ You can close the global navigation panel by clicking or tapping **Close** to re
   <tr>
    <td>项目</td> 
    <td><a href="/help/sites-authoring/touch-ui-managing-projects.md">“项目”控制台让您可以直接访问项目</a>。项目是虚拟的功能板。可以使用这些功能板来构建团队，然后赋予该团队访问资源、工作流和任务的权限，让大家为着同一个目标一起工作。<br /> </td> 
-  </tr>
-  <tr>
-   <td>屏幕</td> 
-   <td><a href="/help/screens/authoring-screens.md">屏幕</a>让您可以管理所有面向客户的屏幕，包括任何尺寸、任何位置的屏幕。</td> 
   </tr>
   <tr>
    <td>站点</td> 
@@ -320,13 +316,13 @@ How you [select a resource](/help/sites-authoring/basic-handling.md#viewing-and-
    <td>卡片视图<br /> </td> 
    <td>
     <ul> 
-     <li><br /> 桌面：鼠标悬停，然后使用复选标记快速操作</li> 
+     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
      <li>移动设备：<br />按住卡片不动</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li><br /> 桌面：单击卡</li> 
-     <li><br /> 移动设备：点击卡</li> 
+     <li>Desktop:<br /> Click the card</li> 
+     <li>Mobile device:<br /> Tap the card</li> 
     </ul> </td> 
   </tr>
   <tr>

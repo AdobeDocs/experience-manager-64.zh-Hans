@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -36,21 +36,21 @@ AEM通过Sling还支持开发和部署自定义sling渲染器以完全控制渲�
 
 使 **用&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][。&lt;EXPORT-CONFIG].json** ，用于请求JSON。
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>资源</td> 
-   <td>/content/entities下的实体资源<br /> ，或 <br /> /content下的内容资源</td> 
-  </tr> 
-  <tr> 
-   <td>EXPORT-CONFIG</td> 
-   <td><p><strong>可选</strong><br /> </p> <p>在/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG下找到的导出配置如果忽略<br /><br /> ，将应用默认的导出配置 </p> </td> 
-  </tr> 
-  <tr> 
-   <td>DEPTH-INT</td> 
-   <td><strong>可选</strong><br /> SLING <br /> 渲染中用于渲染子项的深度递归</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td>资源</td>
+   <td>/content/entities下的实体资源<br /> ，或 <br /> /content下的内容资源</td>
+  </tr>
+  <tr>
+   <td>EXPORT-CONFIG</td>
+   <td><p><strong>可选</strong><br /> </p> <p>在/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG下找到的导出配置如果忽略<br /><br /> ，将应用默认的导出配置 </p> </td>
+  </tr>
+  <tr>
+   <td>DEPTH-INT</td>
+   <td><strong>可选</strong><br /> SLING <br /> 渲染中用于渲染子项的深度递归</td>
+  </tr>
+ </tbody>
 </table>
 
 ## 创建导出配置 {#creating-export-configs}
@@ -65,72 +65,72 @@ AEM通过Sling还支持开发和部署自定义sling渲染器以完全控制渲�
 
 下表显示了“导出配置”的属性：
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>名称</strong></td> 
-   <td><strong>类型</strong></td> 
-   <td><strong>默认值(if, not set)</strong></td> 
-   <td><strong>值</strong></td> 
-   <td><strong>描述</strong></td> 
-  </tr> 
-  <tr> 
-   <td>includeComponents</td> 
-   <td>String[]</td> 
-   <td>包含所有内容</td> 
-   <td>sling:resourceType</td> 
-   <td>从JSON导出中排除具有指定sling:resourceType的节点的详细信息</td> 
-  </tr> 
-  <tr> 
-   <td>excludeComponents</td> 
-   <td>String[]</td> 
-   <td>排除任何内容</td> 
-   <td>sling:resourceType</td> 
-   <td>仅包含具有指定sling:resourceType（从JSON导出）的节点的详细信息</td> 
-  </tr> 
-  <tr> 
-   <td>excludePropertyPrefixes</td> 
-   <td>String[]</td> 
-   <td>排除任何内容</td> 
-   <td>属性前缀</td> 
-   <td>从JSON导出中排除以指定前缀开头的属性</td> 
-  </tr> 
-  <tr> 
-   <td>excludeProperties</td> 
-   <td>String[]</td> 
-   <td>排除任何内容</td> 
-   <td>属性名称</td> 
-   <td>从JSON导出中排除指定属性</td> 
-  </tr> 
-  <tr> 
-   <td>includeProperties</td> 
-   <td>String[]</td> 
-   <td>包含所有内容</td> 
-   <td>属性名称</td> 
-   <td><p>如果excludePropertyPrefixs设置<br /> ，则这包括指定属性，尽管与被排除的前缀匹配，</p> <p>else（排除忽略的属性）仅包括这些属性</p> </td> 
-  </tr> 
-  <tr> 
-   <td>includeChildren</td> 
-   <td>String[]</td> 
-   <td>包含所有内容</td> 
-   <td>子名</td> 
-   <td>从JSON导出中排除指定的子项</td> 
-  </tr> 
-  <tr> 
-   <td>excludeChildren</td> 
-   <td>String[]<br /> <br /> </td> 
-   <td>排除任何内容</td> 
-   <td>子名</td> 
-   <td>从JSON导出仅包含指定的子项，排除其他子项</td> 
-  </tr> 
-  <tr> 
-   <td>renameProperties</td> 
-   <td>String[]<br /> <br /> </td> 
-   <td>重命名</td> 
-   <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td> 
-   <td>使用替换项重命名属性</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>名称</strong></td>
+   <td><strong>类型</strong></td>
+   <td><strong>默认值(if, not set)</strong></td>
+   <td><strong>值</strong></td>
+   <td><strong>描述</strong></td>
+  </tr>
+  <tr>
+   <td>includeComponents</td>
+   <td>String[]</td>
+   <td>包含所有内容</td>
+   <td>sling:resourceType</td>
+   <td>从JSON导出中排除具有指定sling:resourceType的节点的详细信息</td>
+  </tr>
+  <tr>
+   <td>excludeComponents</td>
+   <td>String[]</td>
+   <td>排除任何内容</td>
+   <td>sling:resourceType</td>
+   <td>仅包含具有指定sling:resourceType（从JSON导出）的节点的详细信息</td>
+  </tr>
+  <tr>
+   <td>excludePropertyPrefixes</td>
+   <td>String[]</td>
+   <td>排除任何内容</td>
+   <td>属性前缀</td>
+   <td>从JSON导出中排除以指定前缀开头的属性</td>
+  </tr>
+  <tr>
+   <td>excludeProperties</td>
+   <td>String[]</td>
+   <td>排除任何内容</td>
+   <td>属性名称</td>
+   <td>从JSON导出中排除指定属性</td>
+  </tr>
+  <tr>
+   <td>includeProperties</td>
+   <td>String[]</td>
+   <td>包含所有内容</td>
+   <td>属性名称</td>
+   <td><p>如果excludePropertyPrefixs设置<br /> ，则这包括指定属性，尽管与被排除的前缀匹配，</p> <p>else（排除忽略的属性）仅包括这些属性</p> </td>
+  </tr>
+  <tr>
+   <td>includeChildren</td>
+   <td>String[]</td>
+   <td>包含所有内容</td>
+   <td>子名</td>
+   <td>从JSON导出中排除指定的子项</td>
+  </tr>
+  <tr>
+   <td>excludeChildren</td>
+   <td>String[]<br /> <br /> </td>
+   <td>排除任何内容</td>
+   <td>子名</td>
+   <td>从JSON导出仅包含指定的子项，排除其他子项</td>
+  </tr>
+  <tr>
+   <td>renameProperties</td>
+   <td>String[]<br /> <br /> </td>
+   <td>重命名</td>
+   <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
+   <td>使用替换项重命名属性</td>
+  </tr>
+ </tbody>
 </table>
 
 ### 资源类型导出优先选项 {#resource-type-export-overrides}
@@ -143,26 +143,26 @@ AEM通过Sling还支持开发和部署自定义sling渲染器以完全控制渲�
 
 下表显示了属性：
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>名称</strong></td> 
-   <td><strong>类型</strong></td> 
-   <td><strong>默认值(if, not set)</strong></td> 
-   <td><strong>值</strong></td> 
-   <td><strong>描述</strong></td> 
-  </tr> 
-  <tr> 
-   <td>&lt;SELECTOR_TO_INC&gt;</td> 
-   <td>String[] </td> 
-   <td>-</td> 
-   <td>sling:resourceType</td> 
-   <td>对于以下sling资源类型，不要返回默认的CaaSjson导出。<br /><br /> 通过将资源呈现为，返回客户json导出；&lt;RESOURCE&gt;。&lt;SELECTOR_TO_INC&gt;.json </td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>名称</strong></td>
+   <td><strong>类型</strong></td>
+   <td><strong>默认值(if, not set)</strong></td>
+   <td><strong>值</strong></td>
+   <td><strong>描述</strong></td>
+  </tr>
+  <tr>
+   <td>&lt;SELECTOR_TO_INC&gt;</td>
+   <td>String[] </td>
+   <td>-</td>
+   <td>sling:resourceType</td>
+   <td>对于以下sling资源类型，不要返回默认的CaaSjson导出。<br /> 通过将资源呈现为，返回客户json导出；<br /> &lt;RESOURCE&gt;。&lt;SELECTOR_TO_INC&gt;.json </td>
+  </tr>
+ </tbody>
 </table>
 
-### 现有Content services导出配置 {#existing-content-services-export-configs}
+### 现有Content Services导出配置 {#existing-content-services-export-configs}
 
 内容服务包括两种导出配置：
 
@@ -175,45 +175,45 @@ AEM通过Sling还支持开发和部署自定义sling渲染器以完全控制渲�
 
 &lt;RESOURCE>.caas[。&lt;DEPTH-INT>].json
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>名称</strong></td> 
-   <td><strong>值</strong></td> 
-  </tr> 
-  <tr> 
-   <td>excludeProperties</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>excludePropertyPrefixes</td> 
-   <td>jcr:,sling:,cq:,oak:,pge-</td> 
-  </tr> 
-  <tr> 
-   <td>includeProperties</td> 
-   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td> 
-  </tr> 
-  <tr> 
-   <td>includeComponents</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>excludeComponents</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>includeChildren</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>excludeChildren</td> 
-   <td> </td> 
-  </tr> 
-  <tr> 
-   <td>Sling JSON覆盖</td> 
-   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReference<br /> mobileapps/caas/components/data/assetlist</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>名称</strong></td>
+   <td><strong>值</strong></td>
+  </tr>
+  <tr>
+   <td>excludeProperties</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>excludePropertyPrefixes</td>
+   <td>jcr:,sling:,cq:,oak:,pge-</td>
+  </tr>
+  <tr>
+   <td>includeProperties</td>
+   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
+  </tr>
+  <tr>
+   <td>includeComponents</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>excludeComponents</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>includeChildren</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>excludeChildren</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td>Sling JSON覆盖</td>
+   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReference<br /> mobileapps/caas/components/data/assetlist</td>
+  </tr>
+ </tbody>
 </table>
 
 #### 页面导出配置 {#page-export-configuration}
@@ -226,7 +226,7 @@ AEM通过Sling还支持开发和部署自定义sling渲染器以完全控制渲�
 
 请参阅以下资源，了解内容服务中的其他主题：
 
-* [开发模型](/help/mobile/models-in-repository.md)
+* [开发模型](/help/mobile/administer-mobile-apps.md)
 * [创作内容服务](/help/mobile/develop-content-as-a-service.md)
 * [管理内容服务](/help/mobile/developing-content-services.md)
 

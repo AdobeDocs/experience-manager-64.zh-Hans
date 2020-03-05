@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -49,7 +49,7 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
 * [启用社交登录](social-login.md#adobe-granite-oauth-authentication-handler)
 * [配置Adobe Analytics](analytics.md)
 * 设置默认 [电子邮件服务](email.md)
-* 确定共享UGC存 [储](working-with-srp.md) (**SRP**)的选择
+* 确定共享UGC [存储](working-with-srp.md) (**SRP**)的选择
 
    * 如果MongoDB SRP( [MSRP)](msrp.md)
 
@@ -132,7 +132,7 @@ AEM 6.4 Communities GA随Communities包一起提供。 要了解AEM 6.4 [Communi
 
 1. 对所有作者实例和发布实例重复步骤3和4
 
-有关安装捆绑包的更多信息，请参阅 [Web控制台页](../../help/sites-deploying/configuring-web-console.md#bundles) 。
+有关安装捆绑包的更多信息，请参阅 [Web控制台页](/help/sites-deploying/web-console.md#bundles) 。
 
 #### 示例：已安装的MySQL连接器包 {#example-installed-mysql-connector-bundle}
 
@@ -202,7 +202,7 @@ AEM Communities SCORM引擎是启用功能的必 [需](overview.md#enablement-co
 
 ### 关于包共享的链接 {#about-links-to-package-share}
 
-**Adobe AEM cloud中可见的包**
+**Adobe AEM Cloud中可见的包**
 
 此页面上指向包的链接不需要AEM的正在运行实例，因为它们要在上进行包共享 `adobeaemcloud.com`。 当可查看包时，该按 `Install`钮用于将包安装到Adobe托管站点中。 如果打算安装在本地AEM实例上，选择 `Install`将导致错误。
 

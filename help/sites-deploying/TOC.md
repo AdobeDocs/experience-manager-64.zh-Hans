@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Deploying Guide
 translation-type: tm+mt
-source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
+source-git-commit: d9a2b00fa0ed9b9660aaf5b17d1790747f339e91
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    + [如何使用TarMK Cold Standby运行AEM](tarmk-cold-standby.md)
    + [AEM 6.4中的RDBMS支持](rdbms-support-in-aem.md)
    + [Oak查询和索引](queries-and-indexing.md)
-   + [通过Oak-run jar构建索引](indexing-via-the-oak-run-jar.md)
+   + [通过Oak-run Jar构建索引](indexing-via-the-oak-run-jar.md)
    + [Oak-run.jar索引使用案例](oak-run-indexing-usecases.md)
    + [Oak索引疑难解答](troubleshooting-oak-indexes.md)
    + [选择汇总的使用统计信息收集](opt-in-aggregated-usage-statistics.md)
@@ -57,6 +57,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    + [资产性能指南](assets-performance-sizing.md)
    + [配置操作方法文章](ht-deploy.md)
    + [删除Geometrixx站点](removing-the-geometrixx-sites.md)
+   + [配置Web控制台](configuring-web-console.md)
 + Upgrading to AEM 6.4 {#upgrading}
    + [升级到AEM 6.4](upgrade.md)
    + [计划升级](upgrade-planning.md)

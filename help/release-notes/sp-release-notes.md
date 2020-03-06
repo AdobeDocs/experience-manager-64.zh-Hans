@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
+source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
 | 版本 | 6.4.8.0 |
 | 类型 | Service Pack 版本 |
 | 日期 | 2020年3月5日 |
-| 下载 URL | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0) |
+| 下载 URL | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), [Software Distribution(Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## AEM 6.4.8.0 包含哪些内容 {#what-s-included-in-aem}
 
@@ -51,6 +51,9 @@ AEM 6.4.8.0是一个重要更新，其中包括自2018年4月AEM 6.4通用发布
 
 ### 站点 {#sites}
 
+* 当AEM Sites页面的URL包含冒号或百分比符号时，基础浏览器停止响应，CPU周期显示尖峰(NPR-32368、NPR-31917)。
+* 当打开AEM站点页面进行编辑并复制组件时，粘贴操作对于某些占位符将保持不可用(NPR-32328)。
+* 激活工作流的请求不包括引用的资产(NPR-32304)。
 * 创建Blueprint时，如果记录数大于80，则仅显示前80条记录。 Blueprint显示其余记录的空行(NPR-32058)。
 * 允许用户保存内容片段，而无需在必填字段中提供任何信息(NPR-31988)。
 * 自动导航不适用于在核心体验片段组件中配置的路径(NPR-31921)。
@@ -58,7 +61,6 @@ AEM 6.4.8.0是一个重要更新，其中包括自2018年4月AEM 6.4通用发布
    `Error: No common ancestor found, cannot continue` (NPR-31916)。
 * 当内容在同一文件夹中移动时，页面移动选项被禁用(NPR-31841)。
 * 增加了使用BUNSETSU方法划分日语句子的支持，并在适当的位置添加了换行(NPR-31836)。
-* 当以或结尾的URL `/_jcr_content/.html` 被访 `/jcr:content/.html` 问时，CPU尖峰和AEM停止响应(NPR-31755)。
 * 在富文本编辑器(RTE)中编辑超链接时，不会保存新选择的路径(NPR-31659)。
 * 当您删除多字段组件并撤消删除操作时，该组件会恢复但数据不会恢复(NPR-31617)。
 
@@ -109,10 +111,6 @@ AEM 6.4.8.0是一个重要更新，其中包括自2018年4月AEM 6.4通用发布
 ### 翻译 {#translation-6480}
 
 * 为多语言创建翻译项目只会为某些语言而不是所有语言生成项目，并且日志中会出现错误（资源解析程序已关闭）(NPR-32212)。
-
-### WCM模板编辑器 {#wcm-template-editor-6480}
-
-* 当访问以或结尾的URL时，CPU高峰和Experience Manager会 `/_jcr_content/.html` 变 `/jcr:content/.html` 得无响应(CQ-4280770)。
 
 ### WCM-MSM {#wcm-msm-6480}
 
@@ -1772,7 +1770,7 @@ AEM 6.4.1.0可安装在AEM 6.4 GA上。 服务包的一些关键亮点是：
 * 在旧模式下，msft配置下拉列表显示的配置来自/libs（6.4配置），而不是来自/etc（6.3配置）。 适用于 CQ-4243475 的修补程序
 * 自动提升和删除翻译项目中的翻译启动项。 适用于 CQ-4243474 的修补程序
 * 站点内的内容片段未翻译。 适用于 CQ-4243482、CQ-4243483、CQ-4245687 的修补程序
-* 打开翻译作业搜索筛选器时发生服务器错误。 适用于 CQ-4236813 的修补程序
+* 打开翻译作业搜索筛选器时出现服务器错误。 适用于 CQ-4236813 的修补程序
 * 即使在/conf/we-retail中存在凭据配置下拉列表，它也为空。 适用于 CQ-4236315 的修补程序
 * 打开项目KPI:创建更多项目时性能会降低。 NPR-23840：适用于 CQ-4238392 的修补程序
 * Workflow Starter不能接受String的TypeHint值。 NPR-23863：适用于 CQ-4238356 的修补程序
@@ -1820,7 +1818,7 @@ AEM 6.4.1.0可安装在AEM 6.4 GA上。 服务包的一些关键亮点是：
 * 在旧模式下，msft配置下拉列表显示的配置来自/libs（6.4配置），而不是来自/etc（6.3配置）。 适用于 CQ-4243475 的修补程序
 * 自动提升和删除翻译项目中的翻译启动项。 适用于 CQ-4243474 的修补程序
 * 站点内的内容片段未翻译。 适用于 CQ-4243482、CQ-4243483、CQ-4245687 的修补程序
-* 打开翻译作业搜索筛选器时出现服务器错误。 适用于 CQ-4236813 的修补程序
+* 打开翻译作业搜索筛选器时发生服务器错误。 适用于 CQ-4236813 的修补程序
 * 即使在/conf/we-retail中存在凭据配置下拉列表，它也为空。 适用于 CQ-4236315 的修补程序
 
 **内容片段管理**

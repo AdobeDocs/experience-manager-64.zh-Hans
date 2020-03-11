@@ -1,17 +1,9 @@
 ---
 title: 配置富文本编辑器插件
-seo-title: 配置富文本编辑器插件
 description: 了解如何配置AEM富文本编辑器插件以启用各个功能。
-seo-description: 了解如何配置AEM富文本编辑器插件以启用各个功能。
-uuid: d6a029fb-e431-4f12-9002-7d794e4beb0d
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: e0328f9c-26c6-4c40-8594-3190c38cebd8
-noindex: true
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -81,7 +73,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
   <tr> 
    <td><strong>类型</strong></td> 
    <td>字符串</td> 
-   <td>String[](多字符串；在CRXDE lite中，将“类型”设置为“字符串”并单击“多”)</td> 
+   <td>String[](多字符串；在CRXDE Lite中，将“类型”设置为“字符串”并单击“多”)</td> 
    <td>字符串</td> 
   </tr> 
   <tr> 
@@ -107,7 +99,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 * **纯文本模式**:将剪贴板内容粘贴为纯文本。 在AEM组件中插入之前，它将删除复制内容中的所有样式和格式元素。
 
-* **MS word模式**:从MS Word复制时，粘贴带有格式的文本（包括表）。 不支持从其他源（如网页或MS Excel）复制和粘贴文本，并仅保留部分格式。
+* **MS Word模式**:从MS Word复制时，粘贴带有格式的文本（包括表）。 不支持从其他源（如网页或MS Excel）复制和粘贴文本，并仅保留部分格式。
 
 ### 配置RTE工具栏上可用的粘贴选项 {#configure-paste-options-available-on-the-rte-toolbar}
 
@@ -117,7 +109,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 * **[!UICONTROL 粘贴为文本]**:提供纯文本模式功能。
 
-* **[!UICONTROL 从Word粘贴]**:提供MS word模式功能。
+* **[!UICONTROL 从Word粘贴]**:提供MS Word模式功能。
 
 要配置RTE以显示所需的图标，请执行以下步骤。
 
@@ -206,7 +198,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
   <tr> 
    <td>fallbackBlockTag</td> 
    <td>字符串</td> 
-   <td><p>定义块标签，该标签用于任何块，这些块具有未包含在allowBlockTags中的块标签。</p> <p> 在大多数情况下都足够。</p> </td> 
+   <td><p>定义块标签，该标签用于任何块，这些块具有未包含在allowBlockTags中的块标签。</p> <p> 在大多数情况下就足够了。</p> </td> 
   </tr> 
   <tr> 
    <td>表</td> 

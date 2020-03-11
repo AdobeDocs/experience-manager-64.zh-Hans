@@ -3,7 +3,7 @@ title: 资产中的数字版权管理
 description: 了解如何在AEM中管理授权资产的资产到期状态和信息。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -11,6 +11,8 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 # Digital Rights Management in Assets {#digital-rights-management-in-assets}
 
 数字资产通常与许可证相关联，许可证会指定其使用条款和持续时间。 由于Adobe Experience Manager(AEM)资产已与AEM平台完全集成，因此您可以有效管理资产到期信息和资产状态。 您还可以将许可信息与资产关联。
+
+<!-- TBD see if adding more UICONTROL tags is needed -->
 
 ## 资产过期 {#asset-expiration}
 

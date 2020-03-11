@@ -1,16 +1,9 @@
 ---
 title: 配置富文本编辑器
-seo-title: 配置富文本编辑器
 description: 了解如何配置AEM富文本编辑器。
-seo-description: 了解如何配置AEM富文本编辑器。
-uuid: 82d2fe41-676a-4a49-939f-13374b9d869f
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: 9248d09c-b749-4aca-9167-1707c1dd8a53
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 01a748a6f6f92c752fc6a14005f236fee304c2eb
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -25,7 +18,7 @@ RTE可配置为启用、禁用和扩展创作组件中的可用功能。 要了�
 
 ![配置富文本编辑器的典型工作流程](assets/rte_workflow_v1.png)
 
-**** 图：配置 *富文本编辑器的典型工作流程*
+*图：配置富文本编辑器的典型工作流程*
 
 ## 了解触屏优化UI和经典UI {#understand-touch-enabled-ui-and-classic-ui}
 
@@ -33,18 +26,19 @@ RTE可配置为启用、禁用和扩展创作组件中的可用功能。 要了�
 
 ![触屏优化UI中的富文本编辑器工具栏](assets/chlimage_1-404.png)
 
-**** 图：触屏 *优化UI中的富文本编辑器工具栏*
+*图：触屏优化UI中的富文本编辑器工具栏*
 
 ![经典UI中的富文本编辑器工具栏](assets/rtedefault.png)
 
-**** 图：经典UI *中的富文本编辑器工具栏*
+*图：经典UI中的富文本编辑器工具栏*
 
-**另请参阅**:
+>[!MORELIKETHIS]
+>
+>* [UI建议](/help/sites-deploying/ui-recommendations.md)
+>* 关于弃用经典UI，请参阅 [AEM 6.4发行说明](/help/release-notes/deprecated-removed-features.md)
+>* 有关UI之间的差异，请参 [阅触屏UI和经典UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
+>* 要详细了解触屏优化UI，请参阅AEM触 [屏优化UI的概念](/help/sites-developing/touch-ui-concepts.md)
 
-* [UI建议](/help/sites-deploying/ui-recommendations.md)
-* 关于弃用经典UI，请参阅 [AEM 6.4发行说明](/help/release-notes/deprecated-removed-features.md)
-* 有关UI之间的差异，请参 [阅触屏UI和经典UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
-* 要详细了解触屏优化UI，请参阅AEM触 [屏优化UI的概念](/help/sites-developing/touch-ui-concepts.md)
 
 ## 各种编辑模式 {#editingmodes}
 
@@ -100,11 +94,11 @@ RTE可配置为启用、禁用和扩展创作组件中的可用功能。 要了�
 
 ![在触屏优化UI中使用基本工具栏进行内联编辑](assets/chlimage_1-405.png)
 
-**** 图：在触 *屏优化UI中使用基本工具栏进行内联编辑*
+*图：在触屏优化UI中使用基本工具栏进行内联编辑*
 
 在经典UI中，慢速双击组件可进行内联编辑，橙色轮廓可高亮显示内容。 如果内容查找器处于打开状态，则窗口顶部将显示一个包含可用RTE格式选项的工具栏。 如果内容查找器未打开，则不显示格式选项，您只能进行基本的文本编辑。
 
-### 全屏编辑 {#full-screen-editing}
+### Full screen editing {#full-screen-editing}
 
 AEM组件可以在全屏视图中打开，从而隐藏页面内容并占据可用屏幕。 考虑对内联编辑的详细版本进行全屏编辑，因为它提供的编辑选项最多。 使用内联编辑模式时，可 ![以从紧凑工具栏中单击rte_fullscreen](assets/rte_fullscreen.png)，打开它。
 
@@ -112,19 +106,19 @@ AEM组件可以在全屏视图中打开，从而隐藏页面内容并占据可�
 
 ![在触屏优化UI中以全屏模式进行编辑时的详细RTE工具栏](assets/chlimage_1-406.png)
 
-**** 图：在 *触屏优化UI中以全屏模式进行编辑时的详细RTE工具栏*
+*图：在触屏优化UI中以全屏模式进行编辑时的详细RTE工具栏*
 
 ### 对话框编辑 {#dialog-editing}
 
-在经典UI中双击组件时，将打开一个用于编辑内容的对话框。 该对话框在现有页面的顶部打开。 在某些特定情况下，对话框会以弹出窗口的形式打开。 例如，当文本组件是多列页面布局中某列的一部分，并且该对话框的可用区域较少时。
+在经典UI中双击组件时，将打开一个用于编辑内容的对话框。 该对话框将在现有页面的顶部打开。 在某些特定情况下，对话框会以弹出窗口的形式打开。 例如，当文本组件是多列页面布局中某列的一部分，并且该对话框的可用区域较少时。
 
 ![触屏优化UI中的对话框编辑模式](assets/dialog_editing_modetouchui.png)
 
-**** 图：触屏 *优化UI中的对话框编辑模式*
+*图：触屏优化UI中的对话框编辑模式*
 
 ![经典UI中包含用于编辑的详细工具栏的对话框](assets/chlimage_1-407.png)
 
-**** 图：经典UI *中包含用于编辑的详细工具栏的对话框*
+*图：经典UI中包含用于编辑的详细工具栏的对话框*
 
 ## 关于RTE插件和相关功能 {#aboutplugins}
 

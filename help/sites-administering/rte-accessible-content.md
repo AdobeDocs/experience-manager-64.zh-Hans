@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -24,12 +24,8 @@ AEM支持以下两种方式：
 
 >[!NOTE]
 >
->另请参阅:
->
->* 我们的 [WCAG 2.0 快速指南](/help/managing/qg-wcag.md)，以进一步了解详细信息
+>* [WCAG 2.0快速指南](/help/managing/qg-wcag.md)
 >* [创建可访问内容（WCAG 2.0符合性）](/help/sites-authoring/creating-accessible-content.md)
->
-
 
 
 内容作者可以使用RTE的功能在向页面添加内容时提供辅助功能信息。 这可以包括通过标题和段落元素添加结构性信息。
@@ -67,7 +63,7 @@ AEM **中的** “文本”组件可用于触屏优化UI和经典UI。 以下图
 * [激活插件并配置功能属性](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [配置RTE的其他功能](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-通过在CRXDE Lite中相应的子 `rtePlugins` 分支中配置插件（请参阅下图），您可以激活该插件的全部或特定功能。
+通过在CRXDE Lite的相应子分支 `rtePlugins` 中配置插件（请参阅下图），您可以激活该插件的所有功能或特定功能。
 
 ![CRXDE Lite，显示示例rtePlugin。](assets/chlimage_1-208.png)
 
@@ -115,7 +111,7 @@ AEM通过段落格式选项在RTE中提供结构元素，为可访问内容的�
 ### 分步说明 {#step-by-step-instructions}
 
 1. 启动CRXDE Lite。 例如： [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
-1. 复制:
+1. 复制：
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
 
@@ -127,7 +123,7 @@ AEM通过段落格式选项在RTE中提供结构元素，为可访问内容的�
    >
    >如果中间文件夹尚不存在，则可能需要创建中间文件夹。
 
-1. 复制:
+1. 复制：
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
@@ -196,7 +192,7 @@ AEM通过段落格式选项在RTE中提供结构元素，为可访问内容的�
    }
    ```
 
-1. 使用“全部保 **存……”保存更改**
+1. 使用“全部保存”保 **存更改**
 
 >[!NOTE]
 >
@@ -206,5 +202,4 @@ AEM通过段落格式选项在RTE中提供结构元素，为可访问内容的�
 >
 >* 每 `itemId` 个对应字段的属性被设置为相应DOM属性(`TablePropertiesDialog`)的名称。
 >* 该属性在DOM元素上显式设置和／或删除(`Table`)。
-
 

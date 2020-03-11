@@ -1,22 +1,22 @@
 ---
-title: Camera raw支持
-description: 了解如何在Adobe Experience Manager Assets中启用Camera raw支持。
+title: Camera Raw支持
+description: 了解如何在Adobe Experience Manager Assets中启用Camera Raw支持。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
 
 # 支持使用Camera Raw处理图像 {#camera-raw-support}
 
-您可以启用Camera raw支持来处理CR2、NEF和RAF等原始文件格式，并以JPEG格式渲染图像。 Adobe Experience Manager资产中使用通过包共享提供的 [Camera raw包支持](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 此功能。
+您可以启用Camera Raw支持来处理CR2、NEF和RAF等原始文件格式，并以JPEG格式渲染图像。 Adobe Experience Manager资产中使用通过包共享提供的 [Camera Raw包支持](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 此功能。
 
 >[!NOTE]
 >
 >该功能仅支持JPEG再现。 Windows 64位、Mac OS和RHEL 7.x支持此功能。
 
-要在Adobe Experience Manager资产中启用Camera raw支持，请执行以下步骤：
+要在Adobe Experience Manager资产中启用Camera Raw支持，请执行以下步骤：
 
 1. 从包共 [享中下载Camera Raw包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 。
 
@@ -55,15 +55,15 @@ source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 您现在可以将相机原始数据文件导入AEM资产。 安装Camera RAW包并配置所需的工作流程后，侧窗格列表中会 **[!UICONTROL 显示“图像调整]** ”选项。
 
-![chlimage_1-337](assets/chlimage_1-337.png)
+![chlimage_1-338](assets/chlimage_1-337.png)
 
-*图：侧窗格中的选项。*
+*图：侧窗格中的选项*
 
 ![chlimage_1-338](assets/chlimage_1-338.png)
 
-*图：使用选项对图像进行轻量级编辑。*
+*图：使用选项对图像进行轻量级编辑*
 
-将编辑保存到Camera raw图像后，将为该图像生 `AdjustedPreview.jpg` 成新的再现。 对于除Camera raw之外的其他图像类型，更改会反映在所有再现中。
+将编辑保存到Camera Raw图像后，将为该图像生 `AdjustedPreview.jpg` 成新的再现。 对于除Camera Raw之外的其他图像类型，更改会反映在所有再现中。
 
 ## 最佳实践、已知问题和限制 {#best-practices}
 
@@ -71,4 +71,4 @@ source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 * 该功能仅支持JPEG再现。 Windows 64位、Mac OS和RHEL 7.x支持此功能。
 * RAW和DNG格式不支持元数据写回。
-* Camera raw库在每次可处理的像素总数方面存在限制。 目前，它最多可以处理文件长边的65000像素，或者处理先遇到的条件为512 MP。
+* Camera Raw库在每次可处理的像素总数方面存在限制。 目前，它最多可以处理文件长边的65000像素，或者处理先遇到的条件为512 MP。

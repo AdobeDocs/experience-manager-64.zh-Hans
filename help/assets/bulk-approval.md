@@ -3,7 +3,7 @@ title: 审核文件夹资产和收藏集
 description: 为文件夹或集合中的资产设置审阅工作流程，并与审阅者或创意合作伙伴共享它以寻求反馈。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -108,4 +108,3 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
    **列表视图**
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
-

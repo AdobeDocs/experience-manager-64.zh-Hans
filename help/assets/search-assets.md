@@ -3,7 +3,7 @@ title: 在AEM中搜索资产
 description: 了解如何使用“筛选器”面板在AEM中查找所需的资产，以及如何使用在搜索中显示的资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -26,6 +26,8 @@ source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
 * 方向
 * 样式
 * 分析
+
+<!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
 您可以自定义“筛选器”面板，并使用搜索彩块化添加／删 [除搜索谓词](search-facets.md)。 要显示“滤镜”面板，请执行以下步骤：
 
@@ -88,7 +90,7 @@ source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
 
 ## 根据洞察数据搜索 {#search-based-on-insights-data}
 
-使用“ **洞察** ”谓词，根据从各种Creative应用程序获取的资产使用情况统计数据搜索资产。 使用数据按以下类别分组：
+使用“ **分析** ”谓词，根据从各种创意应用程序获取的资产使用情况统计数据搜索资产。 使用数据按以下类别分组：
 
 * 使用分数
 * 展示次数

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
+source-git-commit: 6684e78caf43b49660de3c1a90e2cccd9a204420
 
 ---
 
@@ -1077,7 +1077,7 @@ AEM 6.4.3.0的一些关键亮点是：
 
 **DAM - Brand Portal**
 
-* 将元数据架构表单发布到Brand Portal时，不会发布标记谓词。 适用于 CQ-4256218 的修补程序
+* 将元数据架构表单发布到Brand Portal时，标记谓词不会发布。 适用于 CQ-4256218 的修补程序
 * 从AEM将第三级文件夹发布到Brand Portal时，如果不发布父级文件夹，则文件夹名称会更改。 适用于 CQ-4255423 的修补程序
 * 路径浏览器谓词已按预期从AEM资产发布到Brand Portal。 但是，BP的已发布路径仍保留/content/dam，必须更新它。 适用于 CQ-4256240 的修补程序
 
@@ -1770,7 +1770,7 @@ AEM 6.4.1.0可安装在AEM 6.4 GA上。 服务包的一些关键亮点是：
 * 在旧模式下，msft配置下拉列表显示的配置来自/libs（6.4配置），而不是来自/etc（6.3配置）。 适用于 CQ-4243475 的修补程序
 * 自动提升和删除翻译项目中的翻译启动项。 适用于 CQ-4243474 的修补程序
 * 站点内的内容片段未翻译。 适用于 CQ-4243482、CQ-4243483、CQ-4245687 的修补程序
-* 打开翻译作业搜索筛选器时出现服务器错误。 适用于 CQ-4236813 的修补程序
+* 打开翻译作业搜索筛选器时发生服务器错误。 适用于 CQ-4236813 的修补程序
 * 即使在/conf/we-retail中存在凭据配置下拉列表，它也为空。 适用于 CQ-4236315 的修补程序
 * 打开项目KPI:创建更多项目时性能会降低。 NPR-23840：适用于 CQ-4238392 的修补程序
 * Workflow Starter不能接受String的TypeHint值。 NPR-23863：适用于 CQ-4238356 的修补程序
@@ -2206,7 +2206,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 <dependency>
       <code>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.4.8.0</version>
+      <version>6.4.8</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>

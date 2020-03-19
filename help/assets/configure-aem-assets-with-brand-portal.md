@@ -3,7 +3,7 @@ title: 使用Brand Portal配置AEM资产
 description: '了解如何配置带有Brand Portal的AEM资产，以将资产和集合发布到Brand Portal。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
+source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
 
 ---
 
@@ -195,7 +195,6 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 >
 >确保配置正常。 如果配置不健康，请删除该配置并创建一个新的健康配置。
 
-<br/> <br/>
 
 ### 配置云服务 {#configure-the-cloud-service}
 

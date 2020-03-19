@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: c255e32f1a90df0b97a89b49f74468d4f7c0be34
+source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
 
 ---
 
@@ -27,7 +27,7 @@ OSGi“提&#x200B;*供了标准化的基元，这些基元允许从小的、可�
 
 >[!CAUTION]
 >
->该列表旨在作为准则，并非详尽无遗。 并非列出所有捆绑包，也不列出某些捆绑包的所有参数。
+>该列表旨在作为准则，并非详尽无遗。 并不列出所有捆绑包，也不列出某些捆绑包的所有参数。
 >
 >所需的配置因项目而异。
 >
@@ -35,7 +35,7 @@ OSGi“提&#x200B;*供了标准化的基元，这些基元允许从小的、可�
 
 >[!NOTE]
 >
->可 [以使用AEM OSGi配置详细信息](https://www.aemstuff.com/osgi.html) (AEM OSGi Config Details)工具列出默认OSGi配置。
+>OSGi配置差异工具是 [AEM工具的一部分](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)，可用于列出默认OSGi配置。
 
 >[!NOTE]
 >
@@ -61,13 +61,13 @@ OSGi“提&#x200B;*供了标准化的基元，这些基元允许从小的、可�
 
 **Apache Felix OSGi Management Console** Configure:
 
-* **插件**，主导航项（控制台插件），可在 **** Apache Felix web管理控制台中作为顶级菜单项提供。 禁用您不需要的任何内容，因为每个组件都需要空间和资源。
+* **插件**，主导航项（控制台插件），可在 **** Apache Felix Web管理控制台中作为顶级菜单项提供。 禁用您不需要的任何内容，因为每个内容都需要空间和资源。
 
 >[!CAUTION]
 >
 >请务必配置以下各项：
 >
->**用户名** 和 **密码**，用于访问Apache Felix web管理控制台本身的凭据。\
+>**用户名** 和 **密码**，用于访问Apache Felix Web管理控制台本身的凭据。\
 >初始安装后必须更改密码，以确保实 [例的安](/help/sites-administering/security-checklist.md) 全性。
 
 >[!NOTE]
@@ -146,7 +146,7 @@ OSGi“提&#x200B;*供了标准化的基元，这些基元允许从小的、可�
 
 * **日志级别** 和日 **志文件**，用于定义中央日志配置(error.log)的位置和日志级别。 级别可以设置为、、 `DEBUG`、 `INFO`和 `WARN`之 `ERROR` 一 `FATAL`。
 
-* **用于定义日志文件的大** 小和版本旋转的日志文件数和日志文件阈值 **** 。
+* **用于定义日志文件的大** 小和版本旋转的“日志文件数”和“日志文件阈值” **** 。
 
 * **消息模式** ，定义日志消息的格式。
 
@@ -184,7 +184,7 @@ OSGi“提&#x200B;*供了标准化的基元，这些基元允许从小的、可�
 
 * **MIME类型** ，可将项目所需的类型添加到系统。 这允许对文 `GET` 件发出请求，以设置用于链接文件类型和应用程序的正确内容类型标题。
 
-**Apache Sling引用过滤器** ：要解决CRX webDAV和Apache Sling中跨站点请求伪造(CSRF)的已知安全问题，您需要配置引用过滤器。
+**Apache Sling引用过滤器** ：要解决CRX WebDAV和Apache Sling中跨站点请求伪造(CSRF)的已知安全问题，您需要配置引用过滤器。
 
 引用过滤器服务是允许您配置的OSGi服务：
 
@@ -229,7 +229,7 @@ OSGi“提&#x200B;*供了标准化的基元，这些基元允许从小的、可�
 >
 >否则，使用Felix控 **制台对URL映射所做的更改** ，可能会在下次启动时被AEM覆盖。
 
-**Apache Sling Servlet/Script Resolver和错误处理程序** Sling servlet和脚本解析程序有多个任务：
+**Apache Sling Servlet/Script Resolver和错误处理程序** Sling Servlet和脚本解析程序有多个任务：
 
 1. 它用作选择 `ServletResolver` 要调用的Servlet或Script来处理请求。
 
@@ -259,7 +259,7 @@ OSGi“提&#x200B;*供了标准化的基元，这些基元允许从小的、可�
 
 >[!NOTE]
 >
->在AEM 6.0及早期版本中，代理是在Day Commons HTTP client中配置的。 自AEM 6.1和更高版本起，代理配置已移至“Apache HTTP Components Proxy Configuration”（Apache HTTP组件代理配置），而非“Day Commons HTTP Client”（日公域HTTP客户端）配置。
+>在AEM 6.0及早期版本中，代理是在Day Commons HTTP Client中配置的。 自AEM 6.1和更高版本起，代理配置已移至“Apache HTTP Components Proxy Configuration”（Apache HTTP组件代理配置），而非“Day Commons HTTP Client”（日公域HTTP客户端）配置。
 
 **Day CQ Antispam** 配置使用的防垃圾邮件服务(Akismet)。 这要求您注册：
 
@@ -362,7 +362,7 @@ AEM中 [有两个](/help/sites-authoring/select-ui.md) UI可用：
 
 * **格式**&#x200B;指示提供用户ID的格式。 用法:
 
-   * `Basic` 如果用户ID以HTTP Basic Authentication格式进行编码
+   * `Basic` 如果用户ID采用HTTP Basic Authentication格式进行编码
    * `AsIs` 如果用户ID以纯文本形式提供，或者应按原样使用应用的任何正则表达式值，或者使用任何正则表达式
 
 **Day CQ WCM调试过滤器** ：在开发时，此功能很有用，因为它允许在访问页面时使用后缀，如？debug=layout。 例如，http://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout将提供开发人员可能感兴趣的布局信息。

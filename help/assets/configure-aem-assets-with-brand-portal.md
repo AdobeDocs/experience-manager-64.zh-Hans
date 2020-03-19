@@ -3,7 +3,7 @@ title: 使用Brand Portal配置AEM资产
 description: '了解如何配置带有Brand Portal的AEM资产，以将资产和集合发布到Brand Portal。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 16ed5bc3a06976d2cd616da9987cb7e70f87210f
+source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
 
 ---
 
@@ -183,17 +183,19 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 
    ![IMS帐户配置](assets/create-new-integration6.png)
 
-   >[!CAUTION]
-   >
-   >仅创建一个IMS配置。 请勿创建多个IMS配置。
-
 1. 选择IMS配置，然后单击“检 **[!UICONTROL 查运行状况”]**。 将显示一个对话框。
 
    单击 **[!UICONTROL 检查]**。 成功连接时，将显示 *已成功检索的令牌* 消息。
 
    ![](assets/create-new-integration5.png)
 
-   <br/> <br/>
+>[!CAUTION]
+>
+>仅创建一个有效的IMS配置。 请勿创建多个IMS配置。
+>
+>确保配置正常。 如果配置不健康，请删除该配置并创建一个新的健康配置。
+
+<br/> <br/>
 
 ### 配置云服务 {#configure-the-cloud-service}
 
@@ -216,7 +218,7 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 
    ![](assets/create-cloud-service.png)
 
-1. 单击 **[!UICONTROL 保存并关闭]**。 云配置已创建。 您的AEM资产作者实例现在已与Brand Portal租户集成。
+1. Click **[!UICONTROL Save and Close]**. 云配置已创建。 您的AEM资产作者实例现在已与Brand Portal租户集成。
 
 ### Test configuration {#test-integration}
 

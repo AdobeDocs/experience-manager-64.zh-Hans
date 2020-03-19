@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## Sling分发 {#sling-distribution}
 
-用户数据及其 [ACL](/help/sites-administering/security.md)，存储在 [Oak Core](/help/sites-deploying/platform.md)（Oak JCR下的层）中，并使用 [Oak API访问](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/oak/api/package-tree.html)。 由于更新不频繁，因此使用 [Sling Content Distribution](https://github.com/apache/sling/blob/trunk/contrib/extensions/distribution/README.md) (Sling Distribution)将用户数据与其他发布实例同步是合理的。
+用户数据及其 [ACL](/help/sites-administering/security.md)，存储在 [Oak Core中，即Oak JCR下的层，并使用](/help/sites-deploying/platform.md)Oak API [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/oak/api/package-tree.html)。 由于更新不频繁，因此使用 [Sling Content Distribution](https://github.com/apache/sling/blob/trunk/contrib/extensions/distribution/README.md) (Sling Distribution)将用户数据与其他发布实例同步是合理的。
 
 与传统复制相比，使用Sling分发进行用户同步的好处有：
 
@@ -350,7 +350,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 要验证所有Sling ID值是否不同，请在每个发布实例上：
 
-1. 浏览 [到https://*主机：port*/system/console/status-slingsettings](http://localhost:4503/system/console/status-slingsettings)
+1. 浏览至 `http://<host>:<port>/system/console/status-slingsettings`
 1. 检查 **Sling ID的值**
 
 ![chlimage_1-395](assets/chlimage_1-395.png)
@@ -358,7 +358,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 如果发布实例的Sling ID与任何其他发布实例的Sling ID匹配，则：
 
 1. 停止一个具有匹配Sling ID的发布实例
-1. crx-quickstart/launchpad/felix目录
+1. crx-quickstart/launchpad/felix目录中
 
    * 搜索并删除名为sling.id.file的文 *件*
 
@@ -562,7 +562,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * [导入包](/help/sites-administering/package-manager.md#installing-packages)
 
-要配置或启用用户同步，请转到步骤1: [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory)
+要配置或启用用户同步，请转到步骤1:Apache [Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory)
 
 ### 当发布者变得不可用时 {#when-a-publisher-becomes-unavailable}
 

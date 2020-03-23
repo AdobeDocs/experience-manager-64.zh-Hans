@@ -3,7 +3,7 @@ title: AEM资产中支持的文件格式
 description: AEM资产支持的文件格式和MIME类型列表以及每种格式支持的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71ae585919f3745d36bcbce4eebe49f4477e840
+source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
 
 ---
 
@@ -18,7 +18,7 @@ AEM资产支持各种文件格式，并且每种功能都对不同MIME类型提�
 
 | 支持级别 | 描述 |
 |:---:|---|
-| ✓ | 受支持 |
+| ✓ | 支持 |
 | * | 受支持，但需要附加功能 |
 | - | 不适用 |
 
@@ -37,12 +37,14 @@ AEM资产支持各种文件格式，并且每种功能都对不同MIME类型提�
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD* | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-Dynamic media功能支持的栅格图像格式如下：
+**¹合并后的图像从PSD文件中提取。** 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。
+
+Dynamic Media功能支持的栅格图像格式如下：
 
 | 格式 | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -55,12 +57,12 @@ Dynamic media功能支持的栅格图像格式如下：
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD* | ✓ |  |  |  |  |
+| PSD **¹** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-&amp;ast;合并的图像从PSD文件中提取。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。
+**¹合并后的图像从PSD文件中提取。** 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。
 
 除了上述信息外，请考虑以下事项：
 
@@ -68,13 +70,13 @@ Dynamic media功能支持的栅格图像格式如下：
 
 * 将元数据写回添加到处理函数时，它适用于PSB文件格 `NComm` 式。
 
-* 要使用Dynamic media预览和生成EPS文件的动态演绎版，请参阅 [Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media预览和生成EPS文件的动态演绎版，请参阅 [Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * 对于EPS文件，PostScript文档结构约定(PS-Adobe)版本3.0或更高版本支持元数据写回。
 
 ## PDF栅格化器库 {#supported-pdf-rasterizer-library}
 
-Adobe PDF Rasterizer库可为大型和内容密集型Adobe Illustrator和PDF文件生成高质量的缩览图和预览。 Adobe建议对以下项目使用PDF栅格化器库：
+Adobe PDF Rasterizer库可为大型和内容密集型Adobe Illustrator和PDF文件生成高质量的缩览图和预览。 Adobe建议对以下内容使用PDF栅格化器库：
 
 * 需要大量处理的内容密集型AI/PDF文件。
 * AI/PDF文件，默认情况下不生成缩略图。
@@ -84,7 +86,7 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## 图像转码库 {#supported-image-transcoding-library}
 
-Adobe Imaging Tronding library是一款图像处理解决方案，可执行核心图像处理功能，如编码、转码、重新取样和调整大小。
+Adobe Imaging Tronding Library是一款图像处理解决方案，可执行核心图像处理功能，如编码、转码、重新取样和调整大小。
 
 成像转码库支持JPG/JPEG、PNG（8位和16位）、GIF、BMP、TIFF/压缩TIFF（除32位TIFF文件和PTIFF文件外）、ICO和ICN MIME类型。
 
@@ -92,7 +94,7 @@ Adobe Imaging Tronding library是一款图像处理解决方案，可执行核�
 
 ## Camera Raw {#supported-camera-raw}
 
-Adobe Camera raw库使AEM资产能够摄取原始图像。 See [Camera Raw Support](camera-raw.md).
+Adobe Camera Raw库使AEM资产能够摄取原始图像。 See [Camera Raw Support](camera-raw.md).
 
 ## 文档格式 {#supported-document-formats}
 
@@ -119,7 +121,7 @@ Adobe Camera raw库使AEM资产能够摄取原始图像。 See [Camera Raw Suppo
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-Dynamic media功能支持的文档格式如下：
+Dynamic Media功能支持的文档格式如下：
 
 | 格式 | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -144,11 +146,11 @@ Dynamic media功能支持的文档格式如下：
 
 除了上述功能外，还要考虑以下几点：
 
-* 要使用Dynamic media为PDF文件生成动态演绎版，请参阅 [Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media为PDF文件生成动态演绎版，请参阅 [Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 要使用Dynamic media预览和生成AI文件的动态演绎版，请参阅 [Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media预览和生成AI文件的动态演绎版，请参阅 [Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 要使用Dynamic media为INDD文件生成动态演绎版，请参阅 [InDesign(INDD)文件格式](../assets/managing-image-presets.md#indesign-indd-file-format)。
+* 要使用Dynamic Media为INDD文件生成动态演绎版，请参阅 [InDesign(INDD)文件格式](../assets/managing-image-presets.md#indesign-indd-file-format)。
 
 ## 多媒体格式 {#supported-multimedia-formats}
 
@@ -204,9 +206,9 @@ Dynamic media功能支持的文档格式如下：
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP* | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**** &amp;ast;使用算法创建的ZIP存 `Deflate64` 档在AEM中的支持有限。 不支持存档和取消存档操作。 但是，支持上传、浏览和下载等操作。
+**²** 从PSD文件中提取合并图像。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。 使用算法创建的ZIP存 `Deflate64` 档在AEM中的支持有限。 不支持存档和取消存档操作。 但是，支持上传、浏览和下载等操作。
 
 ## Other supported formats {#other-supported-formats}
 
@@ -214,14 +216,14 @@ Dynamic media功能支持的文档格式如下：
 
 | 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 动态媒体交付 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript（当配置有自己的交付域时） |  |  |  |  |  | ✓ |
 
-**** &amp;ast;DAM中支持其他格式，用于存储、版本控制、ACL、工作流、发布和元数据管理。
+***** DAM中支持其他格式，用于存储、版本控制、ACL、工作流、发布和元数据管理。
 
 ## Supported MIME types {#supported-mime-types}
 

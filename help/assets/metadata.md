@@ -1,16 +1,16 @@
 ---
 title: 管理数字资产的元数据
-description: 了解元数据的类型以及AEM资产如何帮助管理资产的元数据，从而更轻松地对资产进行分类和组织。 AEM资产能够保留和管理资产中的任意元数据，因此可以根据资产的元数据自动组织和处理资产。
+description: 了解元数据的类型以及Adobe Experience Manager资产如何帮助管理资产的元数据，从而更轻松地对资产进行分类和组织。 Adobe Experience Manager Assets能够保留和管理资产中的任意元数据，因此，可以根据资产的元数据自动组织和处理资产。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a57c8d08a9c4063b27eac240eb939b287fecc755
+source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
 
 ---
 
 
 # 管理数字资产的元数据 {#managing-metadata-for-digital-assets}
 
-Adobe Experience Manager(AEM)资产可保留每个资产的元数据。 这使您可以更加方便地分类和组织资产，并且还有助于用户查找特定的资产。元数据管理能够从上传到AEM资产的文件中提取元数据，从而与创意工作流程相集成。 AEM资产能够保留和管理资产中的任意元数据，因此可以根据资产的元数据自动组织和处理资产。
+Adobe Experience Manager资产可保留每个资产的元数据。 这使得资产分类和组织更轻松，并且有助于寻找特定资产的人员。 元数据管理能够从上传到Experience Manager资产的文件中提取元数据，从而与创意工作流程相集成。 借助Experience Manager保留和管理资产中的元数据的功能，您可以根据元数据自动组织和处理资产。
 
 * [XMP 元数据](xmp.md)
 * [如何编辑或添加元数据](meta-edit.md)
@@ -18,74 +18,67 @@ Adobe Experience Manager(AEM)资产可保留每个资产的元数据。 这使�
 
 ## 为何需要元数据 {#why-we-need-metadata}
 
-元数据是指关于数据的数据。在这方面，数据是指您处理的资产，例如图像。元数据很重要，因为它使用户可以更高效地管理资产。
+元数据是指关于数据的数据。在这方面，数据是指您的数字资产，例如图像。 元数据对于有效管理资产至关重要。
 
-元数据是此图像可用的所有数据的集合，但该数据不一定包含在该图像中，例如：
+元数据是资产可用的所有数据的集合，但不一定包含在该图像中。 一些元数据示例包括：
 
-* 资产的名称
-* 资产的上次修改日期和时间
-* 图像在存储库中的存储大小
-* 资产所在的文件夹名称
-* 相关图像或已应用的标记
+* 资产的名称。
+* 上次修改的时间和日期。
+* 资产存储在存储库中时的大小。
+* 包含在其中的文件夹的名称。
+* 相关资产或已应用的标记。
 
-这些是AEM可以为资产管理的基本元数据属性，通过这些属性，用户可以查看所有资产（例如，按资产的上次修改日期排序）-在尝试发现最近添加到存储库的资产时非常有用。
+这些是Experience Manager可为资产管理的基本元数据属性，通过这些属性，用户可以查看所有资产（例如，按上次修改日期排序）-在尝试发现最近添加到存储库的资产时非常有用。
 
 您可以向数字资产中添加更多高级别的数据，例如：
 
-* 资产的类型（它是图像、视频、音频剪辑，还是文档？）
-* 资产的所有者
-* 资产的标题
-* 资产的描述
-* 为资产分配的标记
+* 资产类型（是图像、视频、音频剪辑还是文档？）。
+* 资产的所有者。
+* 资产的标题。
+* 资产的说明。
+* 为资产分配的标记。
 
-较多的元数据可以帮助您进一步对资产分类，随着数字信息量的增多，元数据会非常有用。尽管一位用户可以只根据文件名管理数百个文件的列表，但当参与文件管理的用户数和所管理资产的数量增多时，这种方法便不尽如人意了。
+较多的元数据可以帮助您进一步对资产分类，随着数字信息量的增多，元数据会非常有用。仅根据文件名管理数百个文件是可能的。 但是，这种方法不可扩展，并且当所涉人员数量和受管理资产数量增加时，该方法会很快出现问题。
 
-向资产中添加元数据后，资产会变得更有价值，因为资产会在以下方面得到改进
+向资产中添加元数据后，资产会变得更有价值，因为资产会在以下方面得到改进,
 
-* 更易于访问 - 用户可以更轻松地查找资产
-* 更易于管理 - 您可以更轻松地查找具有相同属性集的资产，并对它们应用更改
-* 更复杂 - 向资产中添加的元数据越多，元数据管理就会变得越重要
+* 更易于访问 - 用户可以更轻松地查找资产.
+* 更易于管理 - 您可以更轻松地查找具有相同属性集的资产，并对它们应用更改.
+* 更复杂 - 向资产中添加的元数据越多，元数据管理就会变得越重要.
 
-鉴于这些原因，AEM 资产为您提供了用于创建、管理和交换数字资产元数据的正确方法。
+由于这些原因，Experience Manager资产为您提供了为数字资产创建、管理和交换元数据的正确方法。
 
 ## 元数据的类型 {#types-of-metadata}
 
-有两种基本类型的元数据：
+两种基本类型的元数据是技术元数据和描述性元数据。
 
-* 技术性元数据
-* 描述性元数据
+技术性元数据对于处理数字资产的软件应用程序而言非常有用，因此不应该手动维护。Experience Manager资产和其他软件会自动确定技术元数据，并且在资产被修改时，元数据可能会发生更改。 资产的可用技术性元数据主要取决于资产的文件类型。技术元数据的一些示例包括：
 
-### 技术性元数据 {#technical-metadata}
-
-技术性元数据对于处理数字资产的软件应用程序而言非常有用，因此不应该手动维护。技术性元数据可以由 AEM 资产和其他软件自动确定，并且可以在修改资产时进行更改。资产的可用技术性元数据主要取决于资产的文件类型。技术性元数据的示例如下：
-
-* 文件的大小
-* 图像的尺寸（高和宽）
+* 文件大小
+* 图像的尺寸（高度和宽度）
 * 音频或视频文件的比特率
 * 图像的分辨率（细节级别）
 
-### 描述性元数据 {#descriptive-metadata}
-
-描述性元数据是与应用程序域相关的元数据，例如，资产所来自的业务。描述性元数据无法自动确定。它必须以手动或半自动方式创建。例如，启用了 GPS 的照相机可以自动跟踪拍摄图像时所处的经度和纬度，并将此信息添加到图像的元数据。
+描述性元数据是与应用程序域相关的元数据，例如，资产所来自的业务。描述性元数据无法自动确定。它是手动或半自动创建的。 例如，启用GPS的相机可以自动跟踪纬度和经度并添加图像地理标记。
 
 由于创建描述性元数据信息需要手动操作，人工成本较高，因此人们建立了相关标准，以便于在软件系统和组织之间交换元数据。
 
-AEM 资产支持元数据管理方面的所有相关标准。
+Experience Manager Assets支持元数据管理的所有相关标准。
 
 鉴于元数据的重要性，以及创建元数据需要很大的手动工作量，人们建立了相关标准，以便于简化元数据交换。
 
 ## Encoding standards {#encoding-standards}
 
-向文件中嵌入元数据的方法有很多种。支持一系列编码标准选项：
+在文件中嵌入元数据有多种方法。 支持一系列编码标准选项：
 
-* XMP：由 AEM 资产用来在存储库中存储提取的元数据。
+* XMP:Experience Manager资产用来在存储库中存储提取的元数据。
 * ID3：适用于音频和视频文件。
-* EXIF：适用于图像文件。
-* 其他／旧版：Microsoft Word、PowerPoint、Excel等。
+* Exif:图标。
+* 其他／旧版：从Microsoft Word、PowerPoint、Excel等中。
 
 ### XMP {#xmp}
 
-XMP是指可扩展元数据平台，是AEM资产用于所有元数据管理的元数据标准。除了提供可嵌入到所有文件格式的通用元数据编码外，XMP还提供丰富的内容模型，并且受Adobe和其他公司的支持，因此XMP用户与AEM Assets的结合具有强大的构建平台。
+可扩展元数据平台(XMP)是一个开放标准，Experience Manager Assets使用它管理所有元数据。 该标准提供可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司支持XMP标准，因为它提供了丰富的内容模型。 XMP标准和Experience Manager Assets的用户拥有一个强大的平台，可以在此基础上继续构建。 有关详细信息，请参 [阅XMP](https://www.adobe.com/products/xmp.html)。
 
 ### ID3 {#id}
 
@@ -93,28 +86,19 @@ XMP是指可扩展元数据平台，是AEM资产用于所有元数据管理的�
 
 ID3 标记是专为 MP3 文件格式而设计。有关各种格式的其他信息如下：
 
-* ID3 标记适用于 MP3 和 MP3pro 文件。
+* ID3标记适用于MP3和mp3PRO文件。
 * WAV 无标记。
-* WMA 使用专有标记，不允许开源实现。
+* WMA具有不允许开放源代码实现的专有标签。
 * Ogg Vorbis 使用嵌入在 Ogg 容器中的 Xiph 注释。
 * AAC 使用专有标记格式。
 
-### EXIF {#exif}
+### Exif {#exif}
 
-EXIF 是指可交换图像文件格式，它是数字摄影领域最常用的元数据格式。通过 EXIF，可以在多种文件格式中嵌入固定的元数据属性词汇，例如：
+可交换图像文件格式(Exif)是数字摄影中最常用的元数据格式。 它提供了一种将固定的元数据属性词汇嵌入许多文件格式（如JPEG、TIFF、RIFF和WAV）的方法。 Exif将元数据存储为元数据名称和元数据值的对。 这些元数据名称——值对也称为标记，不要与Experience Manager中的标记相混淆。 由于Exif是由现代数码相机自动创建并通过现代图形软件提供支持的，因此它可被视为元数据管理的最低标准。
 
-* JPEG
-* TIFF
-* RIFF
-* WAV
+Exif的一个主要限制是一些常用的图像文件格式（如BMP、GIF或PNG）不支持它。
 
-EXIF 的主要局限性在于，其他一些常用的图像文件格式（例如，BMP、GIF 或 PNG）不支持这种编码标准。
-
-EXIF 将元数据存储为元数据名称和元数据值对。这些元数据名称-值对也称为标记，但切勿将其与 AEM 中的标记混淆。
-
-由于 EXIF 是由现代数码相机自动创建，并通过现代图形软件来支持，因此它在元数据管理中可被视为最不常用的标准。
-
-由 EXIF 定义的大多数元数据字段都具有很强的技术性，并且在描述性元数据管理方面的作用比较有限。For this reason, AEM Assets offers mapping of EXIF properties into [common metadata schemata](metadata-schemas.md) and into [XMP](xmp-writeback.md), the powerful metadata format AEM Assets uses for metadata management.
+通常由Exif定义的元数据字段具有技术性质，在描述性元数据管理中的使用有限。 因此，Experience Manager Assets提供了将Exif属性映射到常见元数 [据架构](metadata-schemas.md) 和 [XMP的功能](xmp-writeback.md)。
 
 ### Other metadata {#other-metadata}
 
@@ -122,38 +106,34 @@ EXIF 将元数据存储为元数据名称和元数据值对。这些元数据名
 
 ## Metadata schemata {#metadata-schemata}
 
-元数据架构是指预定义的元数据属性定义集，可用在很多种应用程序中。属性始终与资产相关联，也就是说属性是“关于”资源的数据。
+元数据架构是可用于各种应用程序的预定义元数据属性定义集。 属性始终与资产相关联，也就是说属性是“关于”资源的数据。
 
-如果不存在能满足您需求的元数据架构，您也可以自行设计元数据架构（但是，请注意避免创建与已有架构重复的内容）。在组织内部对架构予以划分，可简化各组织之间的元数据共享。
+如果不存在满足您需求的元数据架构，您还可以设计自己的元数据架构。 请勿复制现有信息。 在组织内部，将架构分开使元数据共享更容易。 Experience Manager为您提供了最受欢迎的元数据架构的默认列表。 该列表可帮助您快速启动元数据战略并快速选择所需的元数据属性。
 
-AEM为您提供了最流行的元数据架构的现成列表，允许您快速启动元数据策略并从已定义的架构中选择所需的元数据属性。
-
-下一节列出了支持的元数据架构。
+支持的元数据架构如下所列。
 
 ### Standard metadata {#standard-metadata}
 
-* dc - 都柏林核心 - 最重要、应用最广泛的元数据集
-* DICOM - 医学数字成像和通信
-* Iptc4xmpCore和iptc4xmpExt - International Press Communications Standard —— 许多特定于主题的元数据
-* rdf - 资源描述框架 - 适用于通用语义 Web 元数据
-* xmp - 可扩展元数据平台
-* xmpBJ - 基本工单
+* dc - 都柏林核心 - 最重要、应用最广泛的元数据集.
+* DICOM - 医学数字成像和通信.
+* Iptc4xmpCore和iptc4xmpExt - International Press Communications Standard —— 许多特定于主题的元数据。
+* rdf - 资源描述框架 - 适用于通用语义 Web 元数据.
+* xmp - 可扩展元数据平台.
+* xmpBJ - 基本工单.
 
 ### Application-specific metadata {#application-specific-metadata}
 
->[!NOTE]
->
->特定于应用程序的元数据包括技术性元数据和描述性元数据。如果您使用这类元数据，其他应用程序将无法使用这些元数据。例如，如果您的某个资产使用 Adobe Photoshop 元数据，则当其他图像渲染应用程序尝试访问该资产的元数据时，便无法访问这些元数据。如果您发现您的资产中有很多特定于应用程序的元数据，您可以创建一个工作流步骤，将特定于应用程序的属性更改为标准属性。
+特定于应用程序的元数据包括技术和描述性元数据。 如果您使用这类元数据，其他应用程序将无法使用这些元数据。例如，如果您有一个资产包含Adobe Photoshop元数据，而另一个图像渲染应用程序则尝试访问该元数据，它可能无法访问该元数据。 如果您发现资产中有许多特定于应用程序的元数据，则可以创建一个将特定于应用程序的属性更改为标准属性的工作流步骤。
 
-* acdsee - metadata managed by the ACDSee program [www.acdsee.com/](https://www.acdsee.com/)
-* album - Adobe Photoshop Album
-* cq —— 由AEM资产使用
-* dam - 由 AEM 资产使用
-* dex - Optima SC Description Explorer
-* crs - Adobe Photoshop Camera Raw
-* lr - Adobe Lightroom
-* mediapro - IView MediaPro
-* MicrosoftPhoto 和 MP - Microsoft Photo
+* acdsee - metadata managed by the ACDSee program [www.acdsee.com/](https://www.acdsee.com/).
+* album - Adobe Photoshop Album.
+* cq —— 由Experience Manager Assets使用。
+* dam —— 由Experience Manager资产使用。
+* dex - Optima SC Description Explorer.
+* crs - Adobe Photoshop Camera Raw.
+* lr - Adobe Lightroom.
+* mediapro - IView MediaPro.
+* MicrosoftPhoto 和 MP - Microsoft Photo.
 * pdf 和 pdfx
 * photoshop 和 psAux - Adobe Photoshop
 

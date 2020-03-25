@@ -3,7 +3,7 @@ title: 关于AEM资产
 description: 了解数字资产管理、其使用案例以及Adobe的AEM Asset产品。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
 
 ---
 
@@ -52,7 +52,7 @@ AEM资产与CQ WCM完全集成，且功能可通过DAM图标使用：
 
 ## What are digital assets? {#what-are-digital-assets}
 
-资产是指可以有多个演绎版且可以具有子资产（例如，Photoshop文件中的图层、PowerPoint文件中的幻灯片、pdf中的页面、ZIP中的文件）的数字文档、图像、视频或音频（或其一部分）。
+资产是数字文档、图像、视频或音频（或其一部分），可以具有多个演绎版，并可以具有子资产（例如，photoshop文件中的图层、PowerPoint文件中的幻灯片、pdf中的页面、ZIP中的文件）。
 
 资产本质上是一个具有元数据、演绎版和子资产的二进制文件。有关详细信息，请参阅 [DAM 性能指南](/help/sites-deploying/assets-performance-sizing.md)。
 
@@ -64,27 +64,27 @@ AEM资产与CQ WCM完全集成，且功能可通过DAM图标使用：
 
 在 AEM 中使用数字资产时，您需要了解以下术语：
 
-* **** 集合：资产集合，基于实际位置（文件夹）、常用属性（保存的搜索文件夹）或用户选择（Lightbox文件夹）。
+* **集合：** 资产集合，基于实际位置（文件夹）、常用属性（保存的搜索文件夹）或用户选择（Lightbox文件夹）。
 
-* **** 元数据：资产包含元数据；例如，作者、到期日、DRM信息（数字权限管理）等。 元数据受访问控制。AEM Assets 支持以下各种常见的现成元数据架构：
+* **元数据：** 资产包含元数据；例如，作者、到期日、DRM信息（数字权限管理）等。 元数据受访问控制。AEM Assets 支持以下各种常见的现成元数据架构：
 
    * **都柏林核心**:包括作者、描述、日期、主题等。
    * **IPTC**:包括事件、模型、位置等。
    * **WCM**:包括页面属性、开启时间和结束时间等。
 
-* **** 标记：资产可以标记和分类。 请参阅使用标记和管理标记。
+* **标记：** 资产可以标记和分类。 请参阅使用标记和管理标记。
 
-* **** 再现：演绎版是资产的二进制表示形式。 资产始终采用主要表示形式，即已上传文件的表示形式。它们可以采用创建的任何数量的其他表示形式，例如定制工作流程步骤或资产上传时创建的表示形式。演绎版可能大小不同、分辨率不同、添加了水印，或者更改了其他一些特性。
+* **再现：** 演绎版是资产的二进制表示形式。 资产始终采用主要表示形式，即已上传文件的表示形式。它们可以采用创建的任何数量的其他表示形式，例如定制工作流程步骤或资产上传时创建的表示形式。演绎版可能大小不同、分辨率不同、添加了水印，或者更改了其他一些特性。
 
-* **** 版本：版本控制可创建数字资产在特定时间点的快照。 您可以将资产恢复至以前的版本。请参阅 AEM Assets 中的版本控制。
+* **版本：** 版本控制可创建数字资产在特定时间点的快照。 您可以将资产恢复至以前的版本。See [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **** 子资产：子资产是组成资产的资产，例如，Adobe Photoshop文件中的图层或PDF文件中的页面。 在 AEM Assets 中，您可以像管理资产一样管理子资产。
+* **子资产：** 子资产是组成资产的资产，例如，Adobe Photoshop文件中的图层或PDF文件中的页面。 在 AEM Assets 中，您可以像管理资产一样管理子资产。
 
 ### 如何使用资产 {#how-to-work-with-assets}
 
 您可以对资产或收藏集执行操作。这些操作包括创建或修改资产、收藏集和演绎版。您对资产执行的许多基本操作（上传、删除、更新、保存子资产）会触发预先配置的工作流。这些工作流将在 AEM Assets 中自动开启，AEM Assets 媒体处理程序中对这些工作流进行了详细介绍。
 
-您可以使用这些预配置的工作流执行的任务：
+您可以通过以下预配置的任务执行工作流:
 
 * 将资产保存到存储库中或从存储库中删除资产。
 * 提取并保存资产的元数据；单个元数据项将保存为XMP。
@@ -93,6 +93,6 @@ AEM资产与CQ WCM完全集成，且功能可通过DAM图标使用：
 
 当然，您也可以手动应用工作流。请参阅 [AEM Assets 媒体处理程序](media-handlers.md)，以获取默认工作流的列表。
 
-## AEM DAM和AEM mediaLibrary {#cq-dam-vs-cq-medialibrary}
+## AEM DAM和AEM MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
 See [AEM DAM and AEM MediaLibrary](medialibrary.md) for information on the differences.

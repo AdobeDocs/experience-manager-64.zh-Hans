@@ -3,7 +3,7 @@ title: 资产性能调整指南
 description: 围绕AEM配置、对硬件、软件和网络组件进行的更改的重点介绍，以消除瓶颈并优化AEM资产的性能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Experience Manager(AEM)资产设置包含许多硬件、软件和网络组
 
 AEM资产性能不佳可能会影响用户在交互性能、资产处理、下载速度等方面的体验。
 
-事实上，性能优化是您在为任何项目建立目标指标之前执行的一项基本任务。
+事实上，性能优化是您在为任何项目建立任务指标之前执行的基本目标。
 
 以下是某些关键重点领域，您可以围绕这些领域发现和修复性能问题，然后才会对用户产生影响。
 
@@ -39,7 +39,7 @@ mkfs -q /dev/ram1 800000
 
 在Windows操作系统中，您必须使用第三方驱动程序来创建RAM驱动器，或只使用高性能存储（如SSD）。
 
-高性能临时卷准备就绪后，请设置JVM参数-Djava.io.tmpdir。 例如，您可以将以下JVM参数添加到AEM的bin/start脚本中的CQ_JVM_OPTS变量：
+高性能临时卷准备就绪后，请设置JVM参数-Djava.io.tmpdir。 例如，您可以将以下JVM参数添加到AEM的bin/开始脚本中的CQ_JVM_OPTS变量：
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -67,9 +67,9 @@ mkfs -q /dev/ram1 800000
 
 ### 配置缓冲的图像缓存的最大大小 {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-在将大量资产上传到Adobe Experience Manager时，为了允许意外的内存消耗高峰，并防止JVM在OutOfMemoryErrors中失败，请减小已缓冲映像缓存的已配置最大大小。 例如，您有一个系统，其最大堆(- `Xmx`param)为5 GB,Oak BlobCache设置为1 GB，文档缓存设置为2 GB。 在这种情况下，缓冲的缓存将最大需要1.25 GB内存，这将仅为意外尖峰保留0.75 GB内存。
+在将大量资产上传到Adobe Experience Manager时，为了允许意外的内存消耗高峰，并防止JVM在OutOfMemoryErrors中失败，请减小已缓冲映像缓存的已配置最大大小。 例如，您有一个系统，其最大堆(- `Xmx`param)为5 GB,Oak BlobCache设置为1 GB,文档缓存设置为2 GB。 在这种情况下，缓冲的缓存将最大需要1.25 GB内存，这将仅为意外尖峰保留0.75 GB内存。
 
-在OSGi web控制台中配置缓冲的缓存大小。 在 `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`，设置属性(以字 `cq.dam.image.cache.max.memory` 节为单位)。 例如，1073741824为1 GB(1024 x 1024 x 1024 = 1 GB)。
+在OSGi Web控制台中配置缓冲的缓存大小。 在 `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`，设置属性(以字 `cq.dam.image.cache.max.memory` 节为单位)。 例如，1073741824为1 GB(1024 x 1024 x 1024 = 1 GB)。
 
 从AEM 6.1 SP1中，如果您使用节点来配 `sling:osgiConfig` 置此属性，请确保将数据类型设置为“长”。 有关详细信息，请参 [阅CQBufferedImageCache在资产上传期间消耗堆](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)。
 
@@ -117,7 +117,7 @@ Adobe建议启用HTTPS，因为许多公司都有防火墙来监听HTTP通信，
 
 ### 临时工作流 {#transient-workflows}
 
-尽可能将DAM更新资产工作流设置为“临时”。 该设置大大减少了处理工作流所需的开销，因为在这种情况下，工作流无需通过常规的跟踪和存档流程。
+尽可能将DAM更新资产工作流设置为“临时”。 该设置显着减少了处理工作流所需的开销，因为在这种情况下，工作流无需通过正常的跟踪和存档过程。
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Adobe建议启用HTTPS，因为许多公司都有防火墙来监听HTTP通信，
 1. 在 `http://localhost:4502/miscadmin` 要配置的AEM实例上打开。
 
 1. 在导航树中，展开&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL dam]**。
-1. 双击“ **[!UICONTROL DAM更新资产”]**。
+1. 多次单击 **[!UICONTROL DAM更新资产]**。
 1. 从浮动工具面板中，切换到“页 **[!UICONTROL 面]** ”选项卡，然后单击“页 **[!UICONTROL 面属性”]**。
 1. 选择“ **[!UICONTROL 临时工作流]** ”，单 **[!UICONTROL 击“确定”]**。
 
@@ -136,9 +136,9 @@ Adobe建议启用HTTPS，因为许多公司都有防火墙来监听HTTP通信，
 
    如果无法使用临时工作流，请定期运行工作流清除以删除存档的DAM更新资产工作流，以确保系统性能不会降低。
 
-   通常，您应每周运行清除工作流。 但是，在资源密集型场景中（如在大规模资产摄取期间），您可以更频繁地运行它。
+   通常，您应每周运行一次清除工作流。 但是，在资源密集型场景中（如在大规模资产摄取期间），您可以更频繁地运行它。
 
-   要配置工作流清除，请通过OSGi控制台添加新的Adobe Granite工作流清除配置。 接下来，在每周维护窗口中配置并计划工作流。
+   要配置工作流清除，请通过OSGi控制台添加新的Adobe Granite工作流清除配置。 接下来，在每周维护窗口中配置和计划工作流。
 
    如果清除时间过长，就会超时。 因此，您应确保清除作业完成，以避免由于工作流数量过多而无法完成清除工作流的情况。
 
@@ -152,27 +152,27 @@ Adobe建议启用HTTPS，因为许多公司都有防火墙来监听HTTP通信，
 1. 在与您的实施相关的每个工作流队列上单击“编辑”，例如“Granite临时工作流队列”。
 1. 更改“最大并行作业数”的值，然后单击“保存”。
 
-将队列设置到一半的可用处理器是一个可行的解决方案。 但是，您可能必须增加或减少此数量，才能获得最大吞吐量并按环境调整它。 对于临时和非临时工作流以及其他进程（如外部工作流），有单独的队列。 如果将多个队列设置为50%的处理器同时处于活动状态，则系统可以快速过载。 大量使用的队列在用户实现中差别很大。 因此，您可能必须仔细配置它们以获得最高效率，同时不牺牲服务器稳定性。
+将队列设置到一半的可用处理器是与之开始的可行解决方案。 但是，您可能必须增加或减少此数量才能实现最大吞吐量并按环境调整它。 对于瞬态和非瞬态工作流以及诸如外部工作流等其他过程，存在单独的队列。 如果将多个队列设置为50%的处理器同时处于活动状态，则系统可以快速过载。 大量使用的队列在用户实现中差别很大。 因此，您可能必须仔细配置它们以获得最高效率，同时不牺牲服务器稳定性。
 
 ### 卸载 {#offloading}
 
-对于大量占用大量资源的工作流或工作流（如视频转码），您可以将DAM更新资产工作流卸载到第二个作者实例。 通常，卸载的问题是，卸载工作流处理后保存的任何负载都会被实例之间来回复制内容的成本所抵消。
+对于大量资源密集型工作流或工作流（如视频转码），您可以将DAM更新资产工作流卸载到第二个作者实例。 通常，卸载的问题是，卸载工作流处理后保存的任何负载都会被实例之间来回复制内容的成本所抵消。
 
-从AEM 6.2开始，使用AEM 6.1的功能包，您可以使用无二进制复制执行卸载。 在此模型中，作者实例共享一个公用数据存储库，并且只通过转发复制来回发送元数据。 虽然此方法适用于共享文件数据存储，但S3数据存储可能存在问题。 由于后台写入线程可能会导致延迟，因此在卸载作业开始之前，资产可能尚未写入数据存储。
+从AEM 6.2开始，使用AEM 6.1的功能包，您可以使用无二进制复制执行卸载。 在此模型中，作者实例共享一个公用数据存储库，并且只通过转发复制来回发送元数据。 虽然此方法适用于共享文件数据存储，但S3数据存储可能存在问题。 由于后台写入线程可能会导致延迟，因此在卸载作业开始之前，资产可能没有写入数据存储。
 
 ### DAM更新资产配置 {#dam-update-asset-configuration}
 
-DAM更新资产工作流包含为任务（如Scene7 PTIFF生成和InDesign server集成）配置的完整步骤套件。 但是，大多数用户可能不需要执行以下几个步骤。 Adobe建议您创建DAM更新资产工作流模型的自定义副本，并删除任何不必要的步骤。 在这种情况下，请更新DAM更新资产的启动器，以指向新模型。
+DAM更新资产工作流包含为任务配置的全套步骤，如Scene7 PTIFF生成和InDesign Server集成。 但是，大多数用户可能不需要执行以下几个步骤。 Adobe建议您创建DAM更新资产工作流模型的自定义副本，并删除任何不必要的步骤。 在这种情况下，请更新DAM更新资产的启动器，以指向新模型。
 
 >[!NOTE]
 >
->集中运行DAM更新资产工作流可以大幅增加文件数据存储的大小。 Adobe进行的试验表明，如果在8小时内执行约5500个工作流，则数据存储大小可以增加约400 GB。
+>集中运行DAM更新资产工作流可以大幅增加文件数据存储的大小。 Adobe进行的试验结果表明，如果在8小时内执行约5500次工作流，则数据存储大小可以增加约400 GB。
 >
 >这是临时增加，在您运行数据存储垃圾收集任务后，数据存储将恢复为其原始大小。
 >
->通常，数据存储垃圾收集任务每周运行，并执行其他计划的维护任务。
+>通常，数据存储垃圾收集任务与其他计划维护任务一起每周运行。
 >
->如果磁盘空间有限，并集中运行DAM更新资产工作流，请考虑更频繁地安排垃圾收集任务。
+>如果磁盘空间有限，并且集中运行DAM更新资产工作流，请考虑更频繁地安排垃圾收集任务。
 
 #### 运行时再现生成 {#runtime-rendition-generation}
 
@@ -201,7 +201,7 @@ DAM更新资产工作流包含为任务（如Scene7 PTIFF生成和InDesign serve
 </policymap>
 ```
 
-此外，将 *configure.xml文件(或通过设置环境变量*`MAGIC_TEMPORARY_PATH`)中ImageMagick的临时文件夹的路径设置为具有足够空间和IOPS的磁盘分区。
+此外，将 **`MAGIC_TEMPORARY_PATH`configure.xml文件(或通过设置环境变量)中ImageMagick的临时文件夹的路径设置为具有足够空间和IOPS的磁盘分区。
 
 >[!CAUTION]
 >
@@ -242,31 +242,33 @@ To disable Page Extraction:
 1. Click **[!UICONTROL OK]**
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model 
 
---># Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
+-->
 
-在资产上传过程中，AEM的工作流会为PDF和Office文档中的每个页面创建单独的资产。 这些页面中的每个页面本身都是一个资产，它占用了额外的磁盘空间，需要版本控制和额外的工作流处理。 如果您不需要单独的页面，请禁用子资产生成和页面提取。
+<!--
+# Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
 
-要禁用子资产生成，请执行以下操作：
+During asset uploads, AEM's workflow creates a separate asset for each page in PDF and Office documents. Each of these pages is an asset by itself, which consumes additional disk space, requires versioning and additional workflow processing. If you do not require separate pages, disable Sub Asset Generation and Page Extraction.
 
-1. 转到/libs/cq/workflow/content/console.html，打 **[!UICONTROL 开“工作流控制台]** ”工 *具*
+To disable Sub Asset generation, do the following:
+
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Models]** tab
-1. 双击 **[!UICONTROL DAM更新资产工作流模型]** 。
-1. 从“ **[!UICONTROL DAM更新资产]** ”工作流模 **[!UICONTROL 型中删除流程子资产步骤]** 。
+1. Double click the **[!UICONTROL DAM Update Asset]** workflow model
+1. Delete **[!UICONTROL Process Sub Asset]** step from **[!UICONTROL DAM Update Asset]** workflow model.
 
-1. 单击“保 **[!UICONTROL 存”]**
+1. Click on **[!UICONTROL Save]**
 
-要禁用页面提取，请执行以下操作：
+To disable Page Extraction:
 
-1. 转到/libs/cq/workflow/content/console.html，打 **[!UICONTROL 开“工作流控制台]** ”工 *具*
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
 1. Select the **[!UICONTROL Launchers]** tab
-1. 选择启动 **[!UICONTROL DAM Parse Word Documents工作流模型的启动程序]** 。
+1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model.
 1. Click **[!UICONTROL Edit]**
-1. 选择禁 **[!UICONTROL 用]**
+1. Select **[!UICONTROL Disable]**
 1. Click **[!UICONTROL OK]**
-1. 对于使用**DAM解析Word文档**工作流模型的其他启动器项目重复步骤3-6
-
+1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
 ### XMP writeback {#xmp-writeback}
@@ -299,7 +301,7 @@ To disable Page Extraction:
 
 确保实施最新的服务包和与性能相关的修补程序，因为它们通常包括对系统索引的更新。 请参阅 [性能调整提示| 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) ，根据AEM版本的不同，可应用某些索引优化。
 
-为经常运行的查询创建自定义索引。 有关详细信息，请参 [阅用于分析慢速查询和创建自定](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) 义索 [引的方法](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的更多洞察，请参 [阅查询和索引的最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
+为您经常运行的查询创建自定义索引。 有关详细信息，请参 [阅分析慢速查询和制作自定](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) 义索 [引的方法](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的更多洞察，请参 [阅查询和索引的最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 
 ### Lucene索引配置 {#lucene-index-configurations}
 
@@ -345,7 +347,7 @@ To disable Page Extraction:
 
    type=&quot;String&quot;
 
-1. 在/oak:index/ntBaseLucene节点上，设置属 *性reindex=true*
+1. 在/oak:index/ntBaseLucene节点上，设置属性 `reindex=true`
 1. 单击“ **[!UICONTROL 全部保存”]**
 1. 监视error.log以查看何时完成索引：
 
@@ -359,9 +361,9 @@ To disable Page Extraction:
 
 1. 单击“ **[!UICONTROL 全部保存”]**
 
-禁用Lucene文本提取：
+禁用Lucene文本提取:
 
-如果用户无需搜索资产内容（例如，搜索PDF文档中包含的文本），则可以通过禁用此功能来提高索引性能。
+如果用户无需搜索资产内容(例如，搜索PDF文档中包含的文本)，则可以通过禁用此功能来提高索引性能。
 
 1. 转到AEM包管理器/crx/packmgr/index.jsp
 1. 上传并安装以下包
@@ -370,7 +372,7 @@ To disable Page Extraction:
 
 ### 猜测总数 {#guess-total}
 
-创建生成大结果集的查询时，请使用该 `guessTotal` 参数以避免在运行这些查询时占用大量内存。
+创建生成大结果集的查询时，请使用该 `guessTotal` 参数以避免在运行这些结果集时占用大量内存。
 
 ## 已知问题 {#known-issues}
 
@@ -386,7 +388,7 @@ To disable Page Extraction:
 
 ### 网络测试 {#network-testing}
 
-对于客户关心的所有网络性能问题，请执行以下任务：
+对于客户关心的所有网络性能问题，请执行以下任务:
 
 * 从客户网络中测试网络性能
 * 从Adobe网络中测试网络性能。 对于AMS客户，请与CSE协作，在Adobe网络中进行测试。
@@ -403,17 +405,17 @@ To disable Page Extraction:
 
 ## AEM Assets性能核对清单 {#aem-assets-performance-checklist}
 
-* 使HTTPS能够绕过任何企业HTTP流量侦听器
-* 使用有线连接上传大量资产
-* 部署到Java 8。
-* 设置最佳JVM参数
-* 配置文件系统数据存储或S3数据存储
-* 启用临时工作流
-* 调整Granite工作流队列以限制并发作业
-* 配置ImageMagick以限制资源消耗
-* 从DAM更新资产工作流中删除不必要的步骤
-* 配置工作流和版本清除
-* 在6.2之前的版本中优化Lucene索引配置
+* 使HTTPS能够绕过任何企业HTTP流量侦听器。
+* 使用有线连接进行重资产上传。
+* 设置最佳JVM参数。
+* 配置文件系统数据存储或S3 DataStore。
+* 禁用子资产生成。 如果启用此功能，AEM的工作流将为多页资产中的每个页面创建单独的资产。 这些页面中的每个页面都是单个资产，它占用额外的磁盘空间，需要版本控制，并且需要额外的工作流处理。 如果不需要单独的页面，请禁用子资产生成和页面提取活动。
+* 启用临时工作流。
+* 调整Granite工作流队列以限制并发作业。
+* 配置ImageMagick以限制资源消耗。
+* 从DAM更新资产工作流中删除不必要的步骤。
+* 配置工作流和版本清除。
+* 优化Lucene索引配置。
 * 使用最新的服务包和修补程序优化索引。 请咨询Adobe支持部门，了解是否有其他可用的索引优化。
 * 使用 `guessTotal` 优化查询性能。
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.

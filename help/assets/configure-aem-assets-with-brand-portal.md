@@ -3,7 +3,7 @@ title: 使用Brand Portal配置AEM资产
 description: '了解如何配置带有Brand Portal的AEM资产，以将资产和集合发布到Brand Portal。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
+source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
 
 ---
 
@@ -16,13 +16,15 @@ Adobe Experience Manager(AEM)资产通过Adobe I/O配置了Brand Portal,Adobe I/
 >
 >AEM 6.4.8.0及更高版本支持通过Adobe I/O在Brand Portal中配置AEM资产。
 >
->以前，Brand Portal是通过旧版OAuth网关在经典UI中配置的，该网关使用JWT令牌交换获取IMS访问令牌以进行授权。
+>以前，Brand Portal是通过旧版OAuth网关在经典UI中配置的，该网关使用JWT令牌交换获得IMS访问令牌进行授权。
+
+
+>[!TIP]
 >
->如果您是现有Brand Portal用户，并且在旧版OAuth网关上配置，建议删除现有配置并在Adobe I/O上创建新配置。
+>***仅适用于现有客户***
 >
->如果您是现有Brand Portal用户，并且在旧版OAuth网关上配置，建议删除现有配置并在Adobe I/O上创建新配置。
->
->但是，如果您不修改配置，则现有配置将继续工作。
+>建议继续使用现有的传统OAuth网关配置。 如果您遇到旧版OAuth网关配置问题，请删除现有配置并通过Adobe I/O创建新配置。
+
 
 本帮助描述了以下两个用例：
 * [新配置](#configure-new-integration-64):如果您是新的Brand Portal用户，并且希望使用Brand Portal配置AEM Assets作者实例，则可以在Adobe I/O上创建新配置。
@@ -53,7 +55,7 @@ Adobe Experience Manager(AEM)资产通过Adobe I/O配置了Brand Portal,Adobe I/
 
 * 如果您是现有AEM客户，请从 [Adobe授权许可网站下载AEM 6.4](http://licensing.adobe.com)。
 
-* 如果您是Adobe合作伙伴，请使 [用Adobe合作伙伴培训计划](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) ，请求AEM 6.4。
+* 如果您是Adobe合作伙伴，请使用 [Adobe合作伙伴培训项目](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) ，请求AEM 6.4。
 
 下载AEM后，有关设置AEM作者实例的说明，请参阅部署 [和维护](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall)。
 
@@ -85,7 +87,7 @@ IMS配置包括两个步骤：
 
 ### 获取公共证书 {#public-certificate}
 
-公共证书允许您在Adobe I/O上验证您的配置文件。
+公共证书允许您在Adobe I/O上验证用户档案。
 
 1. 登录AEM资产作者实例默认URL:http://本地主机：4502/aem/start.html
 1. 从“工 **具**![”面板中，导航至“安全](assets/tools.png) ” **[!UICONTROL >]** >“ **** Adobe IMS配置”。
@@ -144,11 +146,11 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 
 1. 指定集成的名称和说明。 单击 **[!UICONTROL 从计算机中选择文件]** ，然后上传在“获取公 `AEM-Adobe-IMS.crt` 共证书”部分下 [载的文件](#public-certificate) 。
 
-1. 选择您组织的配置文件。
+1. 选择您的组织的用户档案。
 
-   或者，选择默认配置文件 **[!UICONTROL Assets Brand Portal]** ，然后单 **[!UICONTROL 击创建集成]**。 将创建集成。
+   或者，选择默认的用户档案资 **[!UICONTROL 产Brand Portal]** ，然后单 **[!UICONTROL 击创建集成]**。 将创建集成。
 
-1. 单击 **[!UICONTROL 继续以查看集成详细信息]** ，以查看集成信息。
+1. 单击 **[!UICONTROL 继续以视图集成详细信息]** ，以便集成信息。
 
    复制 **[!UICONTROL API密钥]**
 

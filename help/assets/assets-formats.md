@@ -1,9 +1,9 @@
 ---
 title: AEM资产中支持的文件格式
-description: AEM资产支持的文件格式和MIME类型列表以及每种格式支持的功能。
+description: 列表AEM资产支持的文件格式和MIME类型以及每种格式支持的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
+source-git-commit: 171186251e675094e716931b64c77e7897c03ca7
 
 ---
 
@@ -20,7 +20,7 @@ AEM资产支持各种文件格式，并且每种功能都对不同MIME类型提�
 |:---:|---|
 | ✓ | 支持 |
 | * | 受支持，但需要附加功能 |
-| - | 不适用 |
+| − | 不适用 |
 
 ## 栅格图像格式 {#supported-raster-image-formats}
 
@@ -37,12 +37,12 @@ AEM资产支持各种文件格式，并且每种功能都对不同MIME类型提�
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**¹合并后的图像从PSD文件中提取。** 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。
+**‡** 合并的图像是从PSD文件中提取的。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。
 
 Dynamic Media功能支持的栅格图像格式如下：
 
@@ -57,12 +57,12 @@ Dynamic Media功能支持的栅格图像格式如下：
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **¹** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**¹合并后的图像从PSD文件中提取。** 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。
+**‡** 合并的图像是从PSD文件中提取的。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。
 
 除了上述信息外，请考虑以下事项：
 
@@ -76,7 +76,7 @@ Dynamic Media功能支持的栅格图像格式如下：
 
 ## PDF栅格化器库 {#supported-pdf-rasterizer-library}
 
-Adobe PDF Rasterizer库可为大型和内容密集型Adobe Illustrator和PDF文件生成高质量的缩览图和预览。 Adobe建议对以下内容使用PDF栅格化器库：
+Adobe PDF Rasterizer库为大型和内容密集型Adobe Illustrator和PDF文件生成高质量的缩览图和预览。 Adobe建议对以下内容使用PDF栅格化器库：
 
 * 需要大量处理的内容密集型AI/PDF文件。
 * AI/PDF文件，默认情况下不生成缩略图。
@@ -100,7 +100,7 @@ Adobe Camera Raw库使AEM资产能够摄取原始图像。 See [Camera Raw Suppo
 
 资产管理功能支持的文档格式如下：
 
-| 格式 | 存储 | Metadata<br> management | Fulltext<br> extraction | Metadata<br> extraction | Thumbnail<br> generation | 子资产提取<br> | Metadata<br> writeback |
+| 格式 | 存储 | Metadata<br> management | Fulltext<br> extraction | Metadata<br> extraction | Thumbnail<br> generation | 子资产<br> 提取 | Metadata<br> writeback |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -156,16 +156,16 @@ Dynamic Media功能支持的文档格式如下：
 
 | 格式 | 存储 | 元数据管理 | 元数据提取 | 缩略图生成 | FFMPEG转码 |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | * |
-| MIDI | ✓ | ✓ |  | - | * |
-| 3GP | ✓ | ✓ |  | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ |  | - | * |
-| OGA | ✓ | ✓ |  | - | * |
-| OGG | ✓ | ✓ |  | - | * |
-| RA | ✓ | ✓ |  | - | * |
-| WAV | ✓ | ✓ |  | - | * |
-| WMA | ✓ | ✓ |  | - | * |
+| AAC | ✓ | ✓ |  | − | * |
+| MIDI | ✓ | ✓ |  | − | * |
+| 3GP | ✓ | ✓ |  | − | * |
+| MP3 | ✓ | ✓ | ✓ | − | * |
+| MPG | ✓ | ✓ |  | − | * |
+| OGA | ✓ | ✓ |  | − | * |
+| OGG | ✓ | ✓ |  | − | * |
+| RA | ✓ | ✓ |  | − | * |
+| WAV | ✓ | ✓ |  | − | * |
+| WMA | ✓ | ✓ |  | − | * |
 | DVI | ✓ | ✓ |  | * | * |
 | FLV | ✓ | ✓ |  | * | * |
 | M4V | ✓ | ✓ |  | * | * |
@@ -200,42 +200,42 @@ Dynamic Media功能支持的文档格式如下：
 
 下表介绍了支持的存档格式和常见DAM工作流的适用性。
 
-| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 动态媒体交付 |
+| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | Dynamic Media投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**²** 从PSD文件中提取合并图像。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。 使用算法创建的ZIP存 `Deflate64` 档在AEM中的支持有限。 不支持存档和取消存档操作。 但是，支持上传、浏览和下载等操作。
+**†合** 并的图像是从PSD文件中提取的。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。 使用算法创建的ZIP存 `Deflate64` 档在AEM中的支持有限。 Archive and un-archive operations are not supported. 但是，支持上传、浏览和下载等操作。
 
 ## Other supported formats {#other-supported-formats}
 
-下表介绍了几种其他文件格式的通用DAM工作流的适用性。
+下表介绍了几种其他文件格式的常见DAM工作流的适用性。
 
-| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 动态媒体交付 |
+| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | Dynamic Media投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript（当配置有自己的交付域时） |  |  |  |  |  | ✓ |
+| JavaScript(当配置有自己的投放域时) |  |  |  |  |  | ✓ |
 
-***** DAM中支持其他格式，用于存储、版本控制、ACL、工作流、发布和元数据管理。
+**#** DAM中支持其他格式，用于存储、版本控制、ACL、工作流、发布和元数据管理。
 
 ## Supported MIME types {#supported-mime-types}
 
 默认情况下，AEM会使用文件扩展名检测文件类型。 AEM可以从文件内容中检测到它。 对于后者，在AEM Web [!UICONTROL 控制台的Day CQ DAM Mime类型服务中] ，选 [!UICONTROL 择“从内容检测MIME] ”选项。
 
-在CRXDE Lite中，提供了支持的MIME类型列表 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`。
+在CRXDE Lite中，有一列表受支持的MIME类型 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`。
 
-请参 [阅配置基于MIME类型的上传作业参数支持](config-dynamic.md)。
+See [Configure MIME type-based for upload job parameters support](config-dynamic.md).
 
 另请参 [阅启用基于MIME类型的资产/Scene7上传作业参数支持](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
 
-| 文件扩展名 | MIME类型/Internet媒体类型 | 默认jobParam值 | 允许的jobParam值 |
+| 文件扩展名 | MIME类型/Internet媒体类型 | Default jobParam value | 允许的jobParam值 |
 |---|---|---|---|
 | 图像 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 默认jobParam适用于所有图像mime类型资产。<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[usmarpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
 | 3G2 | video/3gpp2 |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |

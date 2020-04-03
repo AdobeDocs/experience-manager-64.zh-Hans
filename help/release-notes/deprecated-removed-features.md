@@ -10,14 +10,14 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 1ce49a86e954f48a7cd213558da93861794cfd33
+source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
 
 ---
 
 
 # 已弃用和已删除的功能 {#deprecated-and-removed-features}
 
-Adobe不断评估产品功能，以不断地用更现代的替代方法来重新开发或替换旧功能，以提高整体客户价值，同时要谨慎考虑向后兼容性。
+Adobe 不断评估产品功能，以便随着时间的推移，使用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终谨慎考虑功能的向后兼容性。
 
 为了传达即将删除/替换 AEM 功能，以下规则适用：
 
@@ -96,7 +96,7 @@ Adobe不断评估产品功能，以不断地用更现代的替代方法来重新
   </tr>
   <tr>
    <td>门户控制器</td> 
-   <td><p>门户控制器是一组功能，它允许通过第三方服务器中的Portlet托管AEM内容。</p> <p>Adobe不打算在以下列出的位置进一步增强门户管理员功能。 AEM 6.4包含Portal Director，从早期版本升级的客户可以按原样继续使用它。 请注意，弃用Portal direct时仍完全受支持。</p> 
+   <td><p>门户控制器是一组功能，它允许通过第三方服务器中的Portlet托管AEM内容。</p> <p>Adobe不打算在以下列出的位置进一步增强门户管理员功能。 AEM 6.4包含Portal Director，从早期版本升级的客户可以按原样继续使用它。 请注意，弃用Portal Direct时仍完全受支持。</p> 
     <ul> 
      <li>/libs/portal/director</li> 
     </ul> </td> 
@@ -109,7 +109,7 @@ Adobe不断评估产品功能，以不断地用更现代的替代方法来重新
   </tr>
   <tr>
    <td>表单</td> 
-   <td><p>由于不再支持Adobe central产品，因此已弃用对Adobe Central Migration bridge服务的支持。</p> </td> 
+   <td><p>由于不再支持Adobe Central产品，因此已弃用对Adobe Central Migration Bridge服务的支持。</p> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -122,7 +122,7 @@ Adobe不断评估产品功能，以不断地用更现代的替代方法来重新
 
 ## 已删除功能 {#removed-features}
 
-本部分列出了已从 AEM 6.4 中删除的特性和功能。之前的发行版已将这些功能标记为弃用。
+本节列表了已从AEM 6.4中删除的特性和功能。先前发行版具有标记为已弃用的这些功能。
 
 <table> 
  <tbody>
@@ -184,7 +184,42 @@ Adobe不断评估产品功能，以不断地用更现代的替代方法来重新
   <tr>
    <td>表单</td> 
    <td>已删除对文档片段内图像的支持。 </td> 
-   <td>交互式通信提供了直接在印刷和Web渠道中使用图像的功能。<br /> </td> 
+   <td>交互式通信提供了在印刷和Web渠道中直接使用图像的功能。<br /> </td> 
+  </tr>
+    <tr>
+   <td>表单</td> 
+   <td> 现场升级 </td> 
+   <td>不提供异地升级支持 <br/> </td> 
+  </tr>
+  <tr>
+   <td>表单</td> 
+   <td> TarMK到DocumentMK迁移的侧传 </td> 
+   <td> 您可以从旧系统中导出数据，然后导入到新安装的系统中。 有关详细说明，请参阅JEE上的AEM Forms升级文档 <br/> </td> 
+  </tr>
+    <tr>
+   <td>表单</td> 
+ <td>JEE 32位安装程序上的AEM Forms不可用。</td> 
+   <td>Adobe已停止在JEE 32位安装程序上提供AEM Forms。 您可以继续使用64位安装程序在JEE上安装AEM Forms。 </td>  
+  </tr>
+    <tr>
+    <td>表单</td> 
+    <td>删除了在文档片段组件中使用DAM图像的支持。</td> 
+    <td> 您可以在交互式通信的打印渠道中使用图像和图表组件。 如果您在自适应表单中使用自适应文档的文档片段组件，则在升级到AEM 6.4表单后，它将停止工作。 </td>  
+  </tr>
+  <tr>
+   <td>表单</td> 
+   <td> 删除了自适应文档功能</td> 
+   <td> 您可以使用交互式通信功能创建基于Web的印刷通信。 <br/> </td> 
+  </tr>
+    <tr>
+    <td>表单</td> 
+    <td>删除了JEE特定登陆页上的AEM Forms。</td> 
+    <td>JEE登陆页上的AEM Forms将替换为AEM登陆页(/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>表单</td> 
+   <td>删除了对默认Captcha的支持</td> 
+   <td>使用Google提供的reCAPTCHA服务。</td> 
   </tr>
   <tr>
    <td>社区</td> 

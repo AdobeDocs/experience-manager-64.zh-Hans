@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
+source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
 
 ---
 
@@ -619,7 +619,7 @@ AEM 6.4.5.0的一些关键亮点是：
 **翻译**
 
 * 在导航中没有翻译功能访问权限的用户应无法访问其子页面。 NPR-29644：适用于 CQ-4269979 的修补程序
-* 不支持用户权限，因为向导允许在只读位置创建翻译副本。 NPR-29375：适用于 CQ-4265877 的修补程序
+* 未支持用户权限，因为向导允许在只读位置创建翻译副本。 NPR-29375：适用于 CQ-4265877 的修补程序
 
 **UI - Foundation**
 
@@ -1534,7 +1534,7 @@ AEM 6.4.2.0的一些关键亮点是：
 
 * 捆绑SymbolicName中的Typo导致重复捆绑。 适用于 Granite-22155 的修补程序
 * CUGConfiguration不能选取CugExclude。 适用于 Granite-21109 的修补程序
-* 重新启动Adobe Granite Workflow Core可从中间重新运行工作流步骤以创建不必要的工作流。 NPR-25057：适用于 Granite-22218 的修补程序
+* 重新启动Adobe Granite Workflow Core会从中间重新运行工作流步骤，从而创建不必要的工作流。 NPR-25057：适用于 Granite-22218 的修补程序
 * JcrResourceBundle不正确支持多个基名。 NPR-25245：适用于 Granite-22317 的修补程序
 * 在安装内容包时，ACL按主体分组，因此会破坏权限模型。 NPR-24583：适用于 Granite-21591 的修补程序
 * 将Jetty更新到9.4.11以修复漏洞。 NPR-25030：适用于 Granite-22120 的修补程序
@@ -1694,6 +1694,7 @@ AEM 6.4.1.0可安装在AEM 6.4 GA上。 服务包的一些关键亮点是：
 * 为Print和PrintDialog添加了ARIA支持。
 * 增加了电子邮件验证ARIA支持。
 * 针对platform.clientlibs修复的主动式支持。
+* 在没有输入显式dataType时防止脚本自动执行。
 
 **资产**
 

@@ -11,23 +11,23 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 58f85b8d21b615597f74efd5cbff2aa8c0229733
+source-git-commit: db6fbf28dc899c58d73334e2d5a694a228a53f80
 
 ---
 
 
 # 计算表单数据 {#calculating-form-data}
 
-Forms服务可以计算用户在表单中输入的值并显示结果。 要计算表单数据，您必须执行两项任务。 首先，创建用于计算表单数据的表单设计脚本。 表单设计支持三种类型的脚本。 一种脚本类型在客户端上运行，另一种脚本类型在服务器上运行，第三种类型在服务器和客户端上运行。 本主题中讨论的脚本类型在服务器上运行。 HTML、PDF和表单指南（已弃用）转换支持服务器端计算。
+Forms服务可以计算用户在表单中输入的值并显示结果。 要计算表单数据，您必须执行两个任务。 首先，创建用于计算表单数据的表单设计脚本。 表单设计支持三种类型的脚本。 一种脚本类型在客户端上运行，另一种脚本类型在服务器上运行，第三种类型在服务器和客户端上运行。 本主题中讨论的脚本类型在服务器上运行。 HTML、PDF和表单指南（已弃用）转换支持服务器端计算。
 
 在表单设计过程中，您可以利用计算和脚本来提供更丰富的用户体验。 计算和脚本可以添加到大多数表单字段和对象。 必须创建表单设计脚本，以对用户输入到交互式表单中的数据执行计算操作。
 
-用户在表单中输入值，然后单击“计算”按钮以查看结果。 以下过程描述了一个允许用户计算数据的示例应用程序：
+用户在表单中输入值，然后单击“计算”按钮以视图结果。 以下过程描述了一个允许用户计算数据的示例应用程序：
 
-* 用户访问名为StartLoan.html的HTML页面，该页面用作Web应用程序的起始页。 此页调用名为的Java Servlet `GetLoanForm`。
+* 用户访问名为StartLoan.html的HTML页面，该页面用作Web应用程序的开始页面。 此页调用名为的Java Servlet `GetLoanForm`。
 * Servlet `GetLoanForm` 可呈现贷款表。 此表单包含一个脚本、交互字段、一个计算按钮和一个提交按钮。
 * 用户在表单的字段中输入值，然后单击“计算”按钮。 表单将发送到执行脚本的 `CalculateData` Java Servlet。 表单将发送回用户，并且计算结果显示在表单中。
-* 用户继续输入和计算值直到显示满意的结果。 当用户满意后，单击“提交”按钮以处理表单。 表单将发送到另一个名为的Java Servlet, `ProcessForm` 该Servlet负责检索提交的数据。 (请参阅 [处理提交的表单](/help/forms/developing/rendering-forms.md#handling-submitted-forms)。)
+* 用户继续输入和计算值直到显示满意的结果。 当用户满意后，单击“提交”按钮以处理表单。 表单将发送到另一个名为Java Servlet，该Java Servlet `ProcessForm` 负责检索提交的数据。 (请参阅 [处理提交的表单](/help/forms/developing/rendering-forms.md#handling-submitted-forms)。)
 
 下图显示了应用程序的逻辑流程。
 
@@ -45,7 +45,7 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
  <tbody>
   <tr> 
    <td><p>1</p></td> 
-   <td><p>从 <code>GetLoanForm</code> HTML开始页调用Java Servlet。 </p></td> 
+   <td><p>从 <code>GetLoanForm</code> HTML开始页面调用Java Servlet。 </p></td> 
   </tr> 
   <tr> 
    <td><p>2</p></td> 
@@ -53,7 +53,7 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
   </tr> 
   <tr> 
    <td><p>3</p></td> 
-   <td><p>用户将数据输入到交互式字段中并单击“计算”按钮。 表单将发送到执行脚本 <code>CalculateData</code> 的Java Servlet。 </p></td> 
+   <td><p>用户将数据输入到交互式字段中并单击“计算”按钮。 表单将发送到执行脚本的 <code>CalculateData</code> Java Servlet。 </p></td> 
   </tr> 
   <tr> 
    <td><p>4</p></td> 
@@ -72,7 +72,7 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-******答：名为NumericField1** B的字段。名为NumericField2 **C.** A field the field 3
+**答：** 名为NumericField1 **B的字段。** 名为NumericField2 **C.** A field the field 3
 
 位于此表单设计中的脚本的语法如下：
 
@@ -80,7 +80,7 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
      NumericField3 = NumericField2 + NumericField1
 ```
 
-在此表单设计中，“计算”按钮是一个命令按钮，脚本位于此按钮的事 `Click` 件中。 当用户在前两个字段（NumericField1和NumericField2）中输入值并单击“计算”按钮时，表单将发送到执行脚本的Forms服务。 Forms服务将表单呈现回客户端设备，计算结果显示在NumericField3字段中。
+在此表单设计中，“计算”按钮是一个命令按钮，脚本位于此按钮的事件 `Click` 中。 当用户在前两个字段（NumericField1和NumericField2）中输入值并单击“计算”按钮时，表单将发送到执行脚本的Forms服务。 Forms服务将表单呈现回客户端设备，计算结果显示在NumericField3字段中。
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
 
 ## 步骤摘要 {#summary-of-steps}
 
-要计算表单数据，请执行以下任务：
+要计算表单数据，请执行以下任务:
 
 1. 包括项目文件。
 1. 创建Forms Client API对象。
@@ -105,11 +105,11 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
 
 **创建Forms Client API对象**
 
-在以编程方式执行Forms服务客户端API操作之前，必须先创建Forms服务客户端。 如果您使用Java API，请创建一个对 `FormsServiceClient` 象。 如果您使用的是Forms web服务API，请创建一个对 `FormsServiceService` 象。
+在以编程方式执行Forms服务客户端API操作之前，必须先创建Forms服务客户端。 如果您使用Java API，请创建一个对 `FormsServiceClient` 象。 如果您使用的是Forms Web服务API，请创建一个对 `FormsServiceService` 象。
 
 **检索包含计算脚本的表单**
 
-使用Forms服务客户端API创建应用程序逻辑，该逻辑处理包含配置为在服务器上运行的脚本的表单。 该过程类似于处理提交的表单。 (请参 [阅处理提交的表单](/help/forms/developing/rendering-forms-rendering-forms handling-submitted-forms-handling-submitted.md#handling-submitted-forms)。)
+使用Forms服务客户端API创建应用程序逻辑，该逻辑处理包含配置为在服务器上运行的脚本的表单。 该过程类似于处理提交的表单。 (请参阅 [处理提交的表单](/help/forms/developing/handling-submitted-forms.md)。)
 
 验证与提交的表单关联的处理状态是否为 `1``(Calculate)`，这表示Forms服务正在对表单数据执行计算操作，并且结果必须写回给用户。 在这种情况下，将自动执行配置为在服务器上运行的脚本。
 
@@ -119,15 +119,15 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
 
 **另请参阅**
 
-[包括AEM Forms java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms Service API快速入门](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Forms Service API快速开始](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [渲染交互式PDF表单](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[创建呈现表单的Web应用程序](/help/forms/developing/creating-web-applications-renders-forms.md)
+[创建呈现表单的Web 应用程序](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## 使用Java API计算表单数据 {#calculate-form-data-using-the-java-api}
 
@@ -148,7 +148,7 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
    * 调用对 `FormsServiceClient` 象的方 `processFormSubmission` 法并传递以下值：
 
       * 包 `com.adobe.idp.Document` 含表单数据的对象。
-      * 一个字符串值，它指定包括所有相关HTTP头的环境变量。 必须通过为环境变量指定一个或多个值来指定要处理的内 `CONTENT_TYPE` 容类型。 例如，要处理XML和PDF数据，请为此参数指定以下字符串值： `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * 一个字符串值，它指定包括所有相关HTTP头的环境变量。 必须通过为环境变量指定一个或多个值来指定要处理的内容 `CONTENT_TYPE` 类型。 例如，要处理XML和PDF数据，请为此参数指定以下字符串值： `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * 指定标题值的字 `HTTP_USER_AGENT` 符串值；例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
       * 存 `RenderOptionsSpec` 储运行时选项的对象。
       该方 `processFormSubmission` 法返回一个 `FormsResult` 包含表单提交结果的对象。
@@ -166,7 +166,7 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
 
 **另请参阅**
 
-[包括AEM Forms java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -185,7 +185,7 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
 
 1. 检索包含计算脚本的表单
 
-   * 要检索发布到Java servlet的表单数据，请使用其构 `BLOB` 造函数创建一个对象。
+   * 要检索发布到Java Servlet的表单数据，请使用其构 `BLOB` 造函数创建一个对象。
    * 使用 `java.io.InputStream` 对象的方法 `javax.servlet.http.HttpServletResponse` 创建对 `getInputStream` 象。
    * 使用 `java.io.ByteArrayOutputStream` 对象的构造函数并传递对象的长 `java.io.InputStream` 度。
    * 将对象的内 `java.io.InputStream` 容复制到对 `java.io.ByteArrayOutputStream` 象中。
@@ -214,7 +214,7 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
 
    * 创建一 `javax.servlet.ServletOutputStream` 个对象，用于将表单数据流发送到客户端Web浏览器。
    * 通过调 `BLOB` 用对象的方法创建包含表 `FormsResult` 单数据的对 `getOutputContent` 象。
-   * 创建一个字节数组，并通过调用对象的 `BLOB` 方法填充该 `getBinaryData` 数组。 此任务将对象的内 `FormsResult` 容分配给字节数组。
+   * 创建一个字节数组，并通过调用对象的 `BLOB` 方法填充该 `getBinaryData` 数组。 此任务将对象的内 `FormsResult` 容指定给字节数组。
    * 调用对 `javax.servlet.http.HttpServletResponse` 象的方 `write` 法，将表单数据流发送到客户端Web浏览器。 将字节数组传递给该 `write` 方法。
 
 **另请参阅**

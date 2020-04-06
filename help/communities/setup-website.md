@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
 
 ---
 
@@ -38,9 +38,9 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 >* 节点名称可能包含空格，但在URI中使用时，必须将空格编码为“%20”或“+”
 >* 节点名称可能包含连字符和下划线，但是当在Java文件中作为包名称引用时，必须对它们进行编码。 连字符和下划线都以下划线转义，后跟它们的Unicode值：
    >
-   >  
-* 连字符变为&#39;_002d&#39;
->  * 下划线变为&#39;_005f&#39;
+   >   
+   * 连字符变为&#39;_002d&#39;
+   >   * 下划线变为&#39;_005f&#39;
 
 
 ## 设置应用程序目录(/apps) {#setup-the-application-directory-apps}
@@ -54,8 +54,8 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
    使用 **[!UICONTROL CRXDE Lite]**，在资源管理器窗格中
 
    1. 选择文件 `/apps` 夹
-   1. **[!UICONTROL 右键单击]**&#x200B;创建&#x200B;**[!UICONTROL ...或下拉“创]**&#x200B;建……”菜单
-   1. **[!UICONTROL 选择]**&#x200B;创建文件夹…….
+   1. 右键单击 **[!UICONTROL 创建]**...或下拉“创 **[!UICONTROL 建……”]** 菜单
+   1. 选择 **[!UICONTROL 创建文件夹……]** .
    1. 在“创建 **[!UICONTROL 文件夹]** ”对话框中，输入 `an-scf-sandbox`
    1. Click **[!UICONTROL OK]**
 
@@ -86,7 +86,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 1. 要在经典UI中使用设计器工具，请浏 [览至https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin)。
 
-   注意：如果使用CRXDE lite创建类型为“节点”的节点， `cq:Page`则“访问控制”和“复制”不会设置为页面的默认设置。
+   注意：如果使用CRXDE Lite创建类型为“节点”的 `cq:Page`访问控制和复制不会设置为页面的默认设置。
 
 1. 在资源管理器窗格中，选择“ **[!UICONTROL Designs]** ”文件夹，然后单 **[!UICONTROL 击“New”（新建）> “New Page]**”（新建页面）。
 
@@ -103,7 +103,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 1. 返回CRXDE Lite(http:// localhost:4502/crx/de)并展开/etc/designs以查看名为“an-scf-sandbox”的节点。
 
-   在CRXDE的右侧下方窗格中，您可以查看“属性”选项卡、“访问控制”选项卡和“复制”选项卡，以查看使用“设计页面模板”定义的内容。
+   在CRXDE的右下窗格中，您可以视图“属性”选项卡、“访问控制”选项卡和“复制”选项卡，以查看使用“设计页面模板”定义的内容。
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 

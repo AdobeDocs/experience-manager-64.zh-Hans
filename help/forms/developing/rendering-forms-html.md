@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: fd7c589eed2977f3d06f07086008450e2e85a940
+source-git-commit: 340c267fc4e142a67ae5be3f1ab11f063417962e
 
 ---
 
@@ -22,17 +22,17 @@ Forms服务将表单渲染为HTML以响应来自Web浏览器的HTTP请求。 将
 
 要将表单渲染为HTML，必须将表单设计另存为XDP文件。 保存为PDF文件的表单设计无法呈现为HTML。 在设计器中开发将呈现为HTML的表单设计时，请考虑以下条件：
 
-* 请勿使用对象的边框属性在表单上绘制线条、框或网格。 某些浏览器可能无法像预览中那样排列边框。 对象可能显示为分层，也可能将其他对象推离其预期位置。
+* 请勿使用对象的边框属性在表单上绘制线条、框或网格。 某些浏览器可能无法像在预览中那样排列边框。 对象可能显示为分层，也可能将其他对象推离其预期位置。
 * 可以使用线条、矩形和圆形定义背景。
 * 绘制的文本略大于容纳文本所需的文本。 某些Web浏览器无法清晰显示文本。
 
 >[!NOTE]
 >
->当使用对象和方法渲染包含TIFF图 `FormServiceClient` 像的表单时， `(Deprecated) renderHTMLForm``renderHTMLForm2` 在Internet explorer或Mozilla Firefox浏览器中显示的渲染后的HTML表单中不显示TIFF图像。 这些浏览器不提供对TIFF图像的本机支持。
+>当使用对象和方法渲染包含TIFF图 `FormServiceClient` 像的表单时， `(Deprecated) renderHTMLForm``renderHTMLForm2` 在Internet Explorer或Mozilla Firefox浏览器中显示的渲染后的HTML表单中不显示TIFF图像。 这些浏览器不提供对TIFF图像的本机支持。
 
 ## HTML页面 {#html-pages}
 
-当表单设计呈现为HTML表单时，每个二级子表单都呈现为HTML页面（面板）。 您可以在Designer中查看子表单的层次结构。 属于根子表单的子子表单（根子表单的默认名称是form1）是面板子表单。 以下示例展示了表单设计的子表单。
+当表单设计呈现为HTML表单时，每个二级子表单都呈现为HTML页面（面板）。 您可以在Designer中视图子表单的层次结构。 属于根子表单的子子表单（根子表单的默认名称是form1）是面板子表单。 以下示例展示了表单设计的子表单。
 
 ```as3
      form1 
@@ -76,17 +76,17 @@ Forms服务将表单渲染为HTML以响应来自Web浏览器的HTTP请求。 将
 
 ## 运行脚本 {#running-scripts}
 
-表单作者指定脚本是在服务器上还是在客户端上执行。 Forms服务创建用于执行表单智能的分布式事件处理环境，该表单智能可以通过使用属性在客户端和服务器之间分 `runAt` 发。 有关此属性或在表单设计中创建脚本的信息，请参阅 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
+表单作者指定脚本是在服务器上还是在客户端上执行。 Forms服务创建用于执行表单智能的分布式事件处理环境，该智能可以通过使用属性在客户端和服务器之间分 `runAt` 发。 有关此属性或在表单设计中创建脚本的信息，请参阅 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-在呈现表单时，Forms服务可以执行脚本。 因此，您可以通过连接到数据库或客户端上可能不可用的Web服务，用数据预填充表单。 您还可以设置一个按钮事 `Click` 件以在服务器上运行，以便客户端将数据往返到服务器。 这允许客户端在用户与表单交互时运行可能需要服务器资源（如企业数据库）的脚本。 对于HTML表单，只能在服务器上执行表单计算脚本。 因此，您必须标记这些脚本才能在或 `server` 运行 `both`。
+在呈现表单时，Forms服务可以执行脚本。 因此，您可以通过连接到数据库或客户端上可能不可用的Web服务，用数据预填充表单。 您还可以设置按钮的事件以在服 `Click` 务器上运行，以便客户端将数据往返到服务器。 这允许客户端在用户与表单交互时运行可能需要服务器资源（如企业数据库）的脚本。 对于HTML表单，只能在服务器上执行表单计算脚本。 因此，您必须标记这些脚本才能在或 `server` 运行 `both`。
 
-您可以通过调用和方法设计在页面（面板）之间移动 `xfa.host.pageUp` 的表 `xfa.host.pageDown` 单。 此脚本被放置在按钮的事 `Click` 件中，并且 `runAt` 属性设置为 `Both`。 您选择的原因 `Both` 是，Adobe Reader或Acrobat（对于呈现为PDF的表单）可以更改页面而不转到服务器，而HTML表单可以通过往返将数据转到服务器来更改页面。 即，表单将发送到表单服务，并且表单将呈现为HTML并显示新页面。
+您可以通过调用和方法设计在页面（面板）之间移动 `xfa.host.pageUp` 的表 `xfa.host.pageDown` 单。 此脚本位于按钮的事件 `Click` 中，并且 `runAt` 属性设置为 `Both`。 您选择的原因 `Both` 是，Adobe Reader或Acrobat（对于呈现为PDF的表单）可以更改页面而不转到服务器，而HTML表单可以通过往返将数据转到服务器来更改页面。 即，表单将发送到表单服务，并且表单将呈现为HTML并显示新页面。
 
-建议不要为脚本变量和表单字段提供与项目等名称相同的名称。 某些Web浏览器（如Internet Explorer）可能无法初始化与表单字段同名的变量，这会导致脚本错误。 最好为表单字段和脚本变量指定不同的名称。
+建议不要为脚本变量和表单字段提供与项目等名称相同的名称。 某些Web浏览器（如Internet Explorer）可能无法初始化与表单字段同名的变量，该变量会导致脚本错误。 最好为表单字段和脚本变量指定不同的名称。
 
-在呈现同时包含页面导航功能和表单脚本的HTML表单时（例如，假设每次呈现表单时脚本都从数据库检索字段数据），请确保表单脚本位于form:calculate事件中，而不是form:readyevent中。
+在呈现同时包含页面导航功能和表单脚本的HTML表单时（例如，假设每次呈现表单时脚本都从数据库检索字段数据），请确保表单脚本位于表单：calculate事件中，而不是表单：readyevent中。
 
-位于form:ready事件中的表单脚本在表单的初始渲染期间仅执行一次，而不会对后续页面检索执行。 相反，对于呈现表单的每个页面导航，将执行表单：计算事件。
+位于表单：ready事件中的表单脚本在表单的初始渲染期间只执行一次，而不会对后续页面检索执行。 相反，对于呈现表单的每个页面导航，将执行表单：计算事件。
 
 >[!NOTE]
 在多页表单上，如果移到其他页面，则JavaScript对页面所做的更改不会保留。
@@ -95,7 +95,7 @@ Forms服务将表单渲染为HTML以响应来自Web浏览器的HTTP请求。 将
 
 必须首先定义在提交表单之前调用的回调函数，其中函数的名称为 `_user_onsubmit`。 假定该函数不会引发任何异常，或如果它引发异常，则将忽略该异常。 建议将JavaScript函数放在html的head部分；但是，您可以在包含脚本标签的末尾之前的任何地方声明它 `xfasubset.js`。
 
-当formserver呈现包含下拉列表的XDP时，除了创建下拉列表外，它还会创建两个隐藏的文本字段。 这些文本字段存储下拉列表的数据（一个存储选项的显示名称，另一个存储选项的值）。 因此，每次用户提交表单时，都会提交下拉列表的整个数据。 如果您不希望每次提交这么多数据，您可以编写自定义脚本来禁用它。 例如：下拉列表的名称为， `drpOrderedByStateProv` 并且包含在子表单标题下。 HTML输入元素的名称将为 `header[0].drpOrderedByStateProv[0]`。 存储和提交下拉列表数据的隐藏字段的名称具有以下名称： `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+当formserver呈现包含下拉列表的XDP时，除了创建下拉列表外，它还会创建两个隐藏的文本字段。 这些文本字段存储下拉列表的数据（一个存储选项的显示名称，另一个存储选项的值）。 因此，每次用户提交表单时，都会提交下拉列表的整个数据。 如果您不希望每次提交这么多数据，您可以编写自定义脚本来禁用它。 例如：下拉列表的名称将包 `drpOrderedByStateProv` 含在子表单标题下。 HTML输入元素的名称将为 `header[0].drpOrderedByStateProv[0]`。 存储和提交下拉列表数据的隐藏字段的名称具有以下名称： `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
 如果不希望发布数据，可以通过以下方式禁用这些输入元素。 `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
@@ -121,15 +121,15 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 在客户端运行脚本时，只有当前显示的面板才能使用脚本；例如，当显示面板B时，您无法针对位于面板A中的字段编写脚本。 在服务器上运行脚本时，可以访问所有面板。
 
-在客户端上运行的脚本中使用脚本对象模型(SOM)表达式时，您还必须小心。 客户端上运行的脚本只支持简化的SOM表达式子集。
+在客户端上运行的脚本中使用脚本对象模型(SOM)表达式时，您还必须小心。 在客户端上运行的脚本只支持SOM表达式的简化子集。
 
-## 事件计时 {#event-timing}
+## 事件时间 {#event-timing}
 
-XFA子集定义映射到HTML事件的XFA事件。 在计算和验证事件的定时上，行为略有不同。 在Web浏览器中，当您退出字段时，将执行一个完全计算事件。 当您对字段值进行更改时，不会自动执行计算事件。 可以通过调用方法强制执行计算事 `xfa.form.execCalculate` 件。
+XFA子集定义映射到HTML事件的XFA事件。 在计算和验证事件的定时上，行为略有差异。 在Web浏览器中，当您退出字段时，将执行完全计算事件。 当您更改字段值时，不会自动执行计算事件。 可以通过调用方法强制执行计算 `xfa.form.execCalculate` 事件。
 
-在Web浏览器中，仅当退出字段或提交表单时，才执行验证事件。 可以使用方法强制执行validate事 `xfa.form.execValidate` 件。
+在Web浏览器中，仅当退出字段或提交表单时，才执行验证事件。 您可以使用该方法强制执行验证事件 `xfa.form.execValidate` 。
 
-在Web浏览器中显示的表单（与Adobe reader或Acrobat相对）符合必填字段的XFA空值测试（错误或警告）。
+在Web浏览器中显示的表单（与Adobe Reader或Acrobat相对）符合必填字段的XFA空值测试（错误或警告）。
 
 * 如果空测试生成错误，而您退出字段而没有指定值，则会显示一个消息框，单击“确定”后，您将重新定位到该字段。
 * 如果空测试生成警告，而您退出字段时未指定值，则系统会提示您单击“确定”或“取消”，这样您就可以选择继续操作而不指定值，或者返回字段以输入值。
@@ -138,21 +138,21 @@ XFA子集定义映射到HTML事件的XFA事件。 在计算和验证事件的定
 
 ## 表单按钮 {#form-buttons}
 
-单击提交按钮会将表单数据发送到Forms服务并表示表单处理结束。 该 `preSubmit` 事件可以设置为在客户端或服务器上运行。 如果 `preSubmit` 将事件配置为在客户端运行，则该事件会在表单提交之前运行。 否则，在 `preSubmit` 提交表单期间，该事件在服务器上运行。 有关活动的详细信 `preSubmit` 息，请参 [阅Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)。
+单击提交按钮会将表单数据发送到Forms服务并表示表单处理结束。 该 `preSubmit` 事件可以设置为在客户端或服务器上运行。 如果 `preSubmit` 将事件配置为在客户端上运行，则该表单会在提交表单之前运行。 否则， `preSubmit` 事件在提交表单期间在服务器上运行。 有关事件的详细信 `preSubmit` 息，请参 [阅Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)。
 
 如果按钮没有与其关联的客户端脚本，则数据会提交到服务器，计算会在服务器上执行，并重新生成HTML表单。 如果按钮包含客户端脚本，则数据不会发送到服务器，客户端脚本在Web浏览器中执行。
 
-## HTML 4.0 web浏览器 {#html-4-0-web-browser}
+## HTML 4.0 Web浏览器 {#html-4-0-web-browser}
 
-仅支持HTML 4.0的Web浏览器不支持XFA子集客户端脚本模型。 创建表单设计以在HTML 4.0和MSDHTML或CSS2HTML中工作时，标记为在客户端运行的脚本将实际在服务器上运行。 例如，假定用户单击位于HTML 4.0 web浏览器中显示的表单上的按钮。 在这种情况下，表单数据将发送到执行客户端脚本的服务器。
+仅支持HTML 4.0的Web浏览器不支持XFA子集客户端脚本模型。 创建表单设计以在HTML 4.0和MSDHTML或CSS2HTML中工作时，标记为在客户端运行的脚本将实际在服务器上运行。 例如，假定用户单击位于HTML 4.0 Web浏览器中显示的表单上的按钮。 在这种情况下，表单数据将发送到执行客户端脚本的服务器。
 
-建议将表单逻辑放在计算事件中，这些事件在HTML 4.0中的服务器上运行，在MSDHTML或CSS2HTML的客户端上运行。
+建议将表单逻辑放在计算事件中，计算逻辑在HTML 4.0中的服务器上运行，在MSDHTML或CSS2HTML的客户端上运行。
 
 ## 维护演示文稿更改 {#maintaining-presentation-changes}
 
-在HTML页面（面板）之间移动时，只保留数据的状态。 不保留背景颜色或必填字段设置等设置（如果不同于初始设置）。 要保持演示文稿状态，必须创建表示字段演示文稿状态的字段（通常为隐藏字段）。 如果向某个字段的事件中添加了一个脚本，该脚本会根据隐藏字段值更改演示文稿，则在HTML页面（面板）之间来回移动时，您可以保留演示文稿状态。 `Calculate`
+在HTML页面（面板）之间移动时，只保留数据的状态。 不保留背景颜色或必填字段设置等设置（如果不同于初始设置）。 要保持演示文稿状态，必须创建表示字段演示文稿状态的字段（通常为隐藏字段）。 如果向字段的事件中添加了一个脚本，该脚本会根据隐藏字段值更改演示文稿，则在HTML页面（面板）之间来回移动时，您可以保留演示文稿状态。 `Calculate`
 
-以下脚本根据 `fillColor` 的值维护字段的值 `hiddenField`。 假定此脚本位于字段的事 `Calculate` 件中。
+以下脚本根据 `fillColor` 的值维护字段的值 `hiddenField`。 假定此脚本位于字段的 `Calculate` 事件。
 
 ```as3
      If (hiddenField.rawValue == 1) 
@@ -173,7 +173,7 @@ XFA子集定义映射到HTML事件的XFA事件。 在计算和验证事件的定
 * StaticHTML
 * NoScriptXHTML
 
-有关对文档进行数字签名的信息，请参 [阅对文档进行数字签名](/help/forms/developing/digitally-signing-certifying-documents.md)
+有关对文档进行数字签名的信息，请参阅 [数字签名和认证文档](/help/forms/developing/digitally-signing-certifying-documents.md)
 
 ## 渲染符合辅助功能准则的XHTML表单 {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
 
@@ -214,15 +214,15 @@ XFA子集定义映射到HTML事件的XFA事件。 在计算和验证事件的定
 
 当HTML表单上显示HTML工具栏时，用户最多可以选择要提交的十个文件以及表单数据。 提交文件后，Forms服务可以检索文件。
 
-在将表单呈现为HTML时，可以指定用户代理值。 用户代理值提供浏览器和系统信息。 这是一个可选值，您可以传递空字符串值。 使用Java API快速入门渲染HTML表单演示如何获取用户代理值并使用它将表单渲染为HTML。
+在将表单呈现为HTML时，可以指定用户代理值。 用户代理值提供浏览器和系统信息。 这是一个可选值，您可以传递空字符串值。 使用Java API快速开始渲染HTML表单演示如何获取用户代理值并使用它将表单渲染为HTML。
 
-可以使用Forms Service Client API设置目标URL来指定发布表单数据的HTTP URL，也可以在XDP表单设计中包含的“提交”按钮中指定。 如果在表单设计中指定了目标URL，则不要使用Forms Service Client API设置值。
+可以通过使用Forms Service Client API设置目标URL来指定向其发布表单数据的HTTP URL，也可以在XDP表单设计中包含的“提交”按钮中指定。 如果在表单设计中指定了目标URL，则不要使用Forms Service Client API设置值。
 
 >[!NOTE]
 使用工具栏渲染HTML表单是可选的。
 
 >[!NOTE]
-如果您渲染AHTML表单，建议不要向表单添加工具栏。
+如果渲染AHTML表单，建议不要向表单添加工具栏。
 
 **渲染HTML表单**
 
@@ -240,17 +240,17 @@ XFA子集定义映射到HTML事件的XFA事件。 在计算和验证事件的定
 
 [使用Web服务API将表单渲染为HTML](#render-a-form-as-html-using-the-web-service-api)
 
-[包括AEM Forms java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms Service API快速入门](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Forms Service API快速开始](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [渲染交互式PDF表单](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [使用自定义工具栏渲染HTML表单](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
 
-[创建呈现表单的Web应用程序](/help/forms/developing/creating-web-applications-renders-forms.md)
+[创建呈现表单的Web 应用程序](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## 使用Java API将表单渲染为HTML {#render-a-form-as-html-using-the-java-api}
 
@@ -301,9 +301,9 @@ XFA子集定义映射到HTML事件的XFA事件。 在计算和验证事件的定
 
 [将表单渲染为HTML](#rendering-forms-as-html)
 
-[快速入门（SOAP模式）:使用Java API渲染HTML表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[快速开始（SOAP模式）:使用Java API渲染HTML表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
-[包括AEM Forms java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -335,7 +335,7 @@ XFA子集定义映射到HTML事件的XFA事件。 在计算和验证事件的定
 
    * 一个字符串值，它指定表单设计名称，包括文件扩展名。 如果引用的表单设计是表单应用程序的一部分，请确保指定完整路径，如 `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
    * 指定 `TransformTo` HTML首选项类型的enum值。 例如，要渲染与Internet Explorer 5.0或更高版本的动态HTML兼容的HTML表单，请指定 `TransformTo.MSDHTML`。
-   * 包含 `BLOB` 要与表单合并的数据的对象。 如果您不想合并数据，请传递 `null`。 (请参 [阅使用可流动布局](/help/forms/developing/rendering-forms-rendering-forms-prepluing-forms-frendering-forms prepluing-forms-ablouts-prepluing.md#preprepluing-forms-with-flable-layouts)预填充表单。)
+   * 包含 `BLOB` 要与表单合并的数据的对象。 如果您不想合并数据，请传递 `null`。 (请参阅 [使用可流式布局预填充表单](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)。)
    * 存 `HTMLRenderSpec` 储HTML运行时选项的对象。
    * 指定标题值的字 `HTTP_USER_AGENT` 符串值；例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。 如果不想设置此值，可以传递空字符串。
    * 存储 `URLSpec` 呈现HTML表单所需的URI值的对象。 (请参 [阅指定URI值](/help/forms/developing/rendering-interactive-pdf-forms.md)。)
@@ -355,7 +355,7 @@ XFA子集定义映射到HTML事件的XFA事件。 在计算和验证事件的定
    * 通过调用对象的方 `BLOB` 法获取对象的内容 `getContentType` 类型。
    * 通过调 `javax.servlet.http.HttpServletResponse` 用对象的方法并传递对象的 `setContentType` 内容类型来设置对象的内容 `BLOB` 类型。
    * 创建一 `javax.servlet.ServletOutputStream` 个对象，该对象通过调用该对象的方法将表单数据流写入客户端Web `javax.servlet.http.HttpServletResponse` 浏览器 `getOutputStream` 中。
-   * 创建一个字节数组，并通过调用对象的 `BLOB` 方法填充该 `getBinaryData` 数组。 此任务将对象的内 `FormsResult` 容分配给字节数组。
+   * 创建一个字节数组，并通过调用对象的 `BLOB` 方法填充该 `getBinaryData` 数组。 此任务将对象的内 `FormsResult` 容指定给字节数组。
    * 调用对 `javax.servlet.http.HttpServletResponse` 象的方 `write` 法，将表单数据流发送到客户端Web浏览器。 将字节数组传递给该 `write` 方法。
 
 **另请参阅**

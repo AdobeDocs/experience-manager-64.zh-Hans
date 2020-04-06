@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
 
 ---
 
@@ -67,7 +67,7 @@ AEM Communities评分和徽章功能提供了识别和奖励社区成员的能�
 
 如果为true，则isAssigned指示为角色分配了徽章，并且该徽章应显示为文本。
 
-如果为false，则“已分配”表示标记已通过获得的得分获得，并且该标记应显示为图像。
+如果为false，则“已分配”表示标记已通过获得的得分获得，并且标记应显示为图像。
 
 对此行为所做的任何更改都应在自定义脚本中进行（覆盖或叠加）。 请参 [阅客户端自定义](client-customize.md)。
 
@@ -116,11 +116,11 @@ AEM Communities评分和徽章功能提供了识别和奖励社区成员的能�
 
 ## UGC用于评分和徽章 {#ugc-for-scoring-and-badging}
 
-当所选SRP是JSRP或MSRP，但不是ASRP时，可以查看与评分和徽章相关的UGC。 (如果不熟悉这些术语，请参 [阅社区内容存储](working-with-srp.md) 和存 [储资源提供者概述](srp.md)。)
+当所选SRP是JSRP或MSRP，但不是ASRP时，可以视图与评分和徽章相关的UGC。 (如果不熟悉这些术语，请参阅社 [区内容存储](working-with-srp.md) 和 [存储资源提供商概述](srp.md)。)
 
 访问评分和标记数据的描述使用JSRP，因为UGC可使用 [CRXDE Lite轻松访问](../../help/sites-developing/developing-with-crxde-lite.md)。
 
-**作者JSRP**:在创作环境中进行试验会生成仅在创作环境中可见的UGC。
+**作者JSRP**:在作者环境中进行试验，结果为UGC，该结果仅在作者环境中可见。
 
 **发布时的JSRP**:同样，如果在发布环境上进行测试，则必须对发布实例具有管理权限访问CRXDE Lite。 如果发布实例在生产模 [式](../../help/sites-administering/production-ready.md) （nosamplecontent运行模式）中运行 [，则需要启用](../../help/sites-administering/enabling-crxde-lite.md)CRXDE Lite。
 
@@ -149,8 +149,10 @@ Adobe存储库中的开发人员可 [以使用](deploy-communities.md#LatestRele
       * `/content/sites/engage/en/forum/jcr:content`
    * 添加评分和徽章属性
 
-      * scoringRules = [/etc/community/scorning/rules/comments-scoring,/etc/community/scorning/rules/forums-scoring]
-      * badgingRules =[/etc/community/badging/rules/comments-scorning,/etc/community/badging/rules/forums-scorning]
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
+/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
+/etc/community/badging/rules/forums-scoring]`
    * 找到论坛组件节点
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -253,9 +255,9 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 * /content/usergenerated/asi/jcr
 
-后跟用户配置文件的路径，以标记文件夹结尾，如
+后跟用户用户档案的路径，以标记文件夹结尾，如
 
-* /home/users/community/w271Oup2Z4DjnOQrviv/profile/badges
+* /home/users/community/w271OOup2Z4DjnOQrviv/用户档案/badges
 
 #### 奖章 {#awarded-badge}
 
@@ -267,7 +269,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 ## 附加信息 {#additional-information}
 
-要根据点显示已排序的成员列表，请执行以下操作：
+要根据点显示成员的排序列表，请执行以下操作：
 
 * [用于包含在社区站点](functions.md#leaderboard-function) 或组模板中的排行榜功能。
 * [排行榜组件](enabling-leaderboard.md)，即“排行榜”功能的特色组件，用于页面创作。

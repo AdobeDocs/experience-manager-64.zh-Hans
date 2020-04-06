@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: 5a185a50dc9e413953be91444d5c8e76bdae0a69
 
 ---
 
@@ -20,11 +20,11 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 您可以使用Assembler Service API将多个PDF文档组合到一个PDF文档中。 下图显示了三个PDF文档被合并到一个PDF文档中。
 
-![pa_pa_document_assembly](assets/pa_pa_document_assembly.png)
+![pa_pa_文档_assembly](assets/pa_pa_document_assembly.png)
 
-要将两个或多个PDF文档合并到一个PDF文档中，您需要一个DDX文档。 DDX文档描述Assembler服务生成的PDF文档。 即，DDX文档指示Assembler服务要执行的操作。
+要将两个或多个PDF文档组合到一个PDF文档中，您需要DDX文档。 DDX文档描述汇编程序服务生成的PDF文档。 即，DDX文档指示Assembler服务要执行的操作。
 
-在本讨论中，请假定使用以下DDX文档。
+在本讨论中，假定使用以下DDX文档。
 
 ```as3
  <?xml version="1.0" encoding="UTF-8"?> 
@@ -36,11 +36,11 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
  </DDX>
 ```
 
-此DDX文档将两个名为 *map.pdf和*** directions.pdf的PDF文档合并为一个PDF文档。
+此DDX文档将两个名为 *map.pdf* 和 ** directions.pdf的PDF文档合并为一个PDF文档。
 
 >[!NOTE]
 >
->要查看拆分PDF文档的DDX文档，请参阅以编程 [方式拆分PDF文档](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)。
+>要查看分解PDF文档的DDX文档，请参阅以编程 [方式分解PDF文档](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)。
 
 >[!NOTE]
 >
@@ -48,11 +48,11 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 >[!NOTE]
 >
->有关DDX文档的详细信息，请参 [阅Assembler service和DDX Reference](https://www.adobe.com/go/learn_aemforms_ddx_63)。
+>有关DDX文档的详细信息，请参 [阅Assembler Service和DDX Reference](https://www.adobe.com/go/learn_aemforms_ddx_63)。
 
 ## 使用Web服务调用Assembler服务时的注意事项 {#considerations-when-invoking-assembler-service-using-web-services}
 
-在组装大型文档期间添加页眉和页脚时，可能会遇 `OutOfMemory` 到错误，文件将不会组合。 要减少出现此问题的可能性，请向DDX `DDXProcessorSetting` 文档中添加元素，如以下示例所示。
+在组装大型文档时添加页眉和页脚时，可能会遇 `OutOfMemory` 到错误，文件将不会组合。 要减少出现此问题的可能性，请向DDX `DDXProcessorSetting` 文档添加一个元素，如下例所示。
 
 `<DDXProcessorSetting name="checkpoint" value="2000" />`
 
@@ -60,7 +60,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 ## 步骤摘要 {#summary-of-steps}
 
-要从多个PDF文档组合一个PDF文档，请执行以下任务：
+要从多个PDF文档组合一个PDF文档，请执行以下任务:
 
 1. 包括项目文件。
 1. 创建PDF Assembler客户端。
@@ -94,13 +94,13 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 **参考输入PDF文档**
 
-引用要传递给Assembler服务的输入PDF文档。 例如，如果要传递两个名为“地图和方向”的输入PDF文档，则必须传递相应的PDF文件。
+引用要传递给Assembler服务的输入PDF文档。 例如，如果要传递两个名为“映射和方向”的输入PDF文档，则必须传递相应的PDF文件。
 
-map.pdf文件和directions.pdf文件必须都放置在集合对象中。 键的名称必须与DDX文档中PDF源属性的值相匹配。 如果DDX文档中的键和源属性匹配，则PDF文件的名称不重要。
+map.pdf文件和directions.pdf文件必须都放置在集合对象中。 键的名称必须与DDX文档中PDF源属性的值匹配。 如果DDX文档中的键和源属性匹配，则PDF文件的名称不重要。
 
 >[!NOTE]
 >
->如 `*AssemblerResult*` 果调用操作，将返回一个包含集合对象的对 `*invokeDDX*` 象。 将两个或多个输入的PDF文档传递给Assembler服务时，将使用此操作。 但是，如果只将一个输入PDF传递给Assembler服务并且只希望有一个返回文档，请调用该操 `*invokeOneDocument*` 作。 调用此操作时，将返回一个文档。 有关使用此操作的信息，请参阅 [Massigning Encrypted PDF Documents](/help/forms/developing/compasting-encrypted-pdf-documents-massigning-encrypted-pdf-documents-massigning.md#massigning-encrypted-pdf-documents-commesting.md#compasing-encrypted-pdf-documents)。
+>如 `*AssemblerResult*` 果调用操作，将返回一个包含集合对象的对 `*invokeDDX*` 象。 将两个或两个以上输入的PDF文档传递给Assembler服务时，将使用此操作。 但是，如果只将一个输入PDF传递给Assembler服务并且只希望有一个返回文档，请调用该操 `*invokeOneDocument*` 作。 调用此操作时，将返回一个文档。 有关使用此操作的信息，请参阅组 [合加密的PDF文档](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents)。
 
 **设置运行时选项**
 
@@ -108,7 +108,7 @@ map.pdf文件和directions.pdf文件必须都放置在集合对象中。 键的�
 
 **组合输入的PDF文档**
 
-在创建服务客户端、引用DDX文件、创建存储输入PDF文档的集合对象并设置运行时选项后，您可以调用DDX操作。 使用本节中指定的DDX文档时，map.pdf和direction.pdf文件将合并到一个PDF文档中。
+在创建服务客户端、引用DDX文件、创建存储输入PDF文档的集合对象并设置运行时选项后，可以调用DDX操作。 使用本节中指定的DDX文档时，map.pdf和direction.pdf文件将合并为一个PDF文档。
 
 **提取结果**
 
@@ -145,7 +145,7 @@ Assembler服务返回一个对 `java.util.Map` 象，该对象可以从该对象
 
 **另请参阅**
 
-[包括AEM Forms java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -153,7 +153,7 @@ Assembler服务返回一个对 `java.util.Map` 象，该对象可以从该对象
 
 ## 使用Java API组合PDF文档 {#assemble-pdf-documents-using-the-java-api}
 
-使用Assembler Service API(Java)组合PDF文档：
+使用Assembler Service API(Java)汇编PDF文档:
 
 1. 包括项目文件。
 
@@ -166,18 +166,18 @@ Assembler服务返回一个对 `java.util.Map` 象，该对象可以从该对象
 
 1. 引用现有DDX文档。
 
-   * 使用 `java.io.FileInputStream` DDX文档的构造函数并传递一个指定DDX文件位置的字符串值，创建一个表示该文档的对象。
+   * 通过 `java.io.FileInputStream` 使用DDX文档的构造函数并传递一个指定DDX文件位置的字符串值，创建一个表示该DDX域的对象。
    * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对象来创建 `java.io.FileInputStream` 对象。
 
 1. 参考输入PDF文档。
 
-   * 使用构 `java.util.Map` 造函数创建用于存储输入PDF文档的对 `HashMap` 象。
-   * 对于每个输入的PDF文档，使用其构 `java.io.FileInputStream` 造函数创建一个对象，并传递输入的PDF文档的位置。
-   * 对于每个输入的PDF文档，创建一 `com.adobe.idp.Document` 个对象并传递包 `java.io.FileInputStream` 含该PDF文档的对象。
-   * 对于每个输入文档，通过调用对象的方 `java.util.Map` 法并传递以下参 `put` 数，向对象添加一个条目：
+   * 创建一 `java.util.Map` 个对象，它使用构造函数存储输入的PDF文档 `HashMap` 。
+   * 对于每个输入PDF文档，使用其构造 `java.io.FileInputStream` 函数并传递输入PDF文档的位置来创建一个对象。
+   * 对于每个输入的PDF文档，创 `com.adobe.idp.Document` 建一个对象并传递 `java.io.FileInputStream` 包含PDF文档的对象。
+   * 对于每个输入文档，通过调用对象的方 `java.util.Map` 法并传递以下参数 `put` 向对象添加一个条目：
 
-      * 表示键名的字符串值。 此值必须与DDX文档中指定的PDF源元素的值匹配。
-      * 包 `com.adobe.idp.Document` 含源PDF文档 `java.util.List` 的对象（或指定多个文档的对象）。
+      * 表示键名的字符串值。 此值必须与在DDX文档中指定的PDF源元素的值匹配。
+      * 包 `com.adobe.idp.Document` 含源PDF文档 `java.util.List` 的对象(或指定多个文档的对象)。
 
 1. 设置运行时选项。
 
@@ -198,7 +198,7 @@ Assembler服务返回一个对 `java.util.Map` 象，该对象可以从该对象
    要获取新创建的PDF文档，请执行以下操作：
 
    * 调用 `AssemblerResult` 对象的方 `getDocuments` 法。 这将返回一个 `java.util.Map` 对象。
-   * 遍历对象， `java.util.Map` 直到找到生成的对 `com.adobe.idp.Document` 象。 （可以使用在DDX文档中指定的PDF结果元素获取文档。）
+   * 遍历对象， `java.util.Map` 直到找到生成的对 `com.adobe.idp.Document` 象。 (可以使用在DDX文档中指定的PDF结果元素获取文档。)
    * 调用对 `com.adobe.idp.Document` 象的方 `copyToFile` 法以提取PDF文档。
    >[!NOTE]
    >
@@ -206,15 +206,15 @@ Assembler服务返回一个对 `java.util.Map` 象，该对象可以从该对象
 
 **另请参阅**
 
-[快速入门（SOAP模式）:使用Java API汇编PDF文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
+[快速开始（SOAP模式）:使用Java API汇编PDF文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
-[包括AEM Forms java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## 使用Web服务API组合PDF文档 {#assemble-pdf-documents-using-the-web-service-api}
 
-使用Assembler Service API（Web服务）组合PDF文档：
+使用Assembler Service API（Web服务）汇编PDF文档:
 
 1. 包括项目文件。
 
@@ -230,7 +230,7 @@ Assembler服务返回一个对 `java.util.Map` 象，该对象可以从该对象
    * 使用构 `AssemblerServiceClient.Endpoint.Address` 造函数创建对 `System.ServiceModel.EndpointAddress` 象。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/AssemblerService?blob=mtom`)。 您无需使用该属 `lc_version` 性。 在创建服务引用时，会使用此属性。
    * 通过 `System.ServiceModel.BasicHttpBinding` 获取字段的值创建对 `AssemblerServiceClient.Endpoint.Binding` 象。 将返回值转换为 `BasicHttpBinding`。
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
-   * 通过执行以下任务启用基本HTTP身份验证：
+   * 通过执行以下任务，启用基本HTTP身份验证：
 
       * 将AEM表单用户名分配给字段 `AssemblerServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `AssemblerServiceClient.ClientCredentials.UserName.Password`。
@@ -253,10 +253,10 @@ Assembler服务返回一个对 `java.util.Map` 象，该对象可以从该对象
    * 通过调用对象的方法，用流数据 `System.IO.FileStream` 填充字节数 `Read` 组。 传递要读取的字节数组、开始位置和流长度。
    * 通过 `BLOB` 为对象的字段指定 `MTOM` 字节数组的内容来填充该对象。
    * 创建对 `MyMapOf_xsd_string_To_xsd_anyType` 象。 此集合对象用于存储输入的PDF文档。
-   * 对于每个输入的PDF文档，创建一个 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象。 例如，如果使用两个输入的PDF文档，则创建两个对 `MyMapOf_xsd_string_To_xsd_anyType_Item` 象。
-   * 为对象的字段指定表示键名 `MyMapOf_xsd_string_To_xsd_anyType_Item` 的字符串 `key` 值。 此值必须与DDX文档中指定的PDF源元素的值匹配。 （对每个输入的PDF文档执行此任务。）
-   * 将存 `BLOB` 储PDF文档的对象指定到该对 `MyMapOf_xsd_string_To_xsd_anyType_Item` 象的字 `value` 段。 （对每个输入的PDF文档执行此任务。）
-   * 将对 `MyMapOf_xsd_string_To_xsd_anyType_Item` 象添加到对 `MyMapOf_xsd_string_To_xsd_anyType` 象。 调用 `MyMapOf_xsd_string_To_xsd_anyType` 对象的方 `Add` 法并传递对 `MyMapOf_xsd_string_To_xsd_anyType` 象。 （对每个输入的PDF文档执行此任务。）
+   * 对于每个输入PDF文档，创建一个 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象。 例如，如果使用两个输入的PDF文档，则创建两个对 `MyMapOf_xsd_string_To_xsd_anyType_Item` 象。
+   * 为对象的字段指定表示键名 `MyMapOf_xsd_string_To_xsd_anyType_Item` 的字符串 `key` 值。 此值必须与在DDX文档中指定的PDF源元素的值匹配。 (对每个输入的PDF任务执行此文档。)
+   * 将存 `BLOB` 储PDF文档的对象指定到该对 `MyMapOf_xsd_string_To_xsd_anyType_Item` 象的字 `value` 段。 (对每个输入的PDF任务执行此文档。)
+   * 将对 `MyMapOf_xsd_string_To_xsd_anyType_Item` 象添加到对 `MyMapOf_xsd_string_To_xsd_anyType` 象。 调用 `MyMapOf_xsd_string_To_xsd_anyType` 对象的方 `Add` 法并传递对 `MyMapOf_xsd_string_To_xsd_anyType` 象。 (对每个输入的PDF任务执行此文档。)
 
 1. 设置运行时选项。
 
@@ -267,7 +267,7 @@ Assembler服务返回一个对 `java.util.Map` 象，该对象可以从该对象
 
    调用对 `AssemblerServiceClient` 象的方 `invoke` 法并传递以下值：
 
-   * 表示 `BLOB` DDX文档的对象。
+   * 表 `BLOB` 示DDX文档的对象。
    * 包 `mapItem` 含输入PDF文档的数组。 其键必须与PDF源文件的名称匹配，并且其值必须是与这 `BLOB` 些文件相对应的对象。
    * 指定 `AssemblerOptionSpec` 运行时选项的对象。
    该方 `invoke` 法返回一个对 `AssemblerResult` 象，该对象包含作业的结果以及可能发生的任何例外。
@@ -276,9 +276,9 @@ Assembler服务返回一个对 `java.util.Map` 象，该对象可以从该对象
 
    要获取新创建的PDF文档，请执行以下操作：
 
-   * 访问对 `AssemblerResult` 象的字 `documents` 段，该字段是包含结果PDF `Map` 文档的对象。
+   * 访问对 `AssemblerResult` 象的字 `documents` 段，该字段是包含 `Map` 结果PDF文档的对象。
    * 遍历对 `Map` 象，直到找到与生成文档的名称匹配的键。 然后将该阵列成员转 `value` 换为 `BLOB`。
-   * 通过访问PDF文档对象的属性提取表示该PDF文 `BLOB` 档的二进制数 `MTOM` 据。 这将返回可写入PDF文件的字节数组。
+   * 通过访问PDF文档的对象属性提取表示PDF `BLOB` 的二进制数 `MTOM` 据。 这将返回可写入PDF文件的字节数组。
    >[!NOTE]
    >
    >如果 `LOG_LEVEL` 设置为生成日志，则可以通过获取对象数据成员的值来提取 `AssemblerResult` 该日 `jobLog` 志。

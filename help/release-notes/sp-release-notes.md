@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
+source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
 
 ---
 
@@ -302,7 +302,7 @@ AEM 6.4.7.0的一些关键亮点是：
 
 ##### 社区 {#communities-6470}
 
-* 在某些情况下，即使在通知设置中启用电子邮件消息传递，电子邮件功能也无法正常工作，系统在NotificationsActivityStreamProvider中会引发异常(NPR-31521)。
+* 在某些情况下，即使在通知设置中启用电子邮件消息传递，电子邮件功能也无法正常工作，系统会在NotificationsActivityStreamProvider(NPR-31521)中引发异常。
 * 无法创建新成员，在AEM作者实例的“创建成员”屏幕上显示空白屏幕(NPR-30951)。
 * 用户无法在Internet Explorer 11的博客上发表评论(NPR-30927)。
 * 受限组的管理员无法视图组卡，无法在AEM作者实例(NPR-30810)中执行任何快速链接操作（编辑／发布／删除组）。
@@ -619,7 +619,7 @@ AEM 6.4.5.0的一些关键亮点是：
 **翻译**
 
 * 在导航中没有翻译功能访问权限的用户应无法访问其子页面。 NPR-29644：适用于 CQ-4269979 的修补程序
-* 未支持用户权限，因为向导允许在只读位置创建翻译副本。 NPR-29375：适用于 CQ-4265877 的修补程序
+* 不支持用户权限，因为向导允许在只读位置创建翻译副本。 NPR-29375：适用于 CQ-4265877 的修补程序
 
 **UI - Foundation**
 
@@ -1534,7 +1534,7 @@ AEM 6.4.2.0的一些关键亮点是：
 
 * 捆绑SymbolicName中的Typo导致重复捆绑。 适用于 Granite-22155 的修补程序
 * CUGConfiguration不能选取CugExclude。 适用于 Granite-21109 的修补程序
-* 重新启动Adobe Granite Workflow Core会从中间重新运行工作流步骤，从而创建不必要的工作流。 NPR-25057：适用于 Granite-22218 的修补程序
+* 重新启动Adobe Granite Workflow Core可从中间重新运行工作流步骤以创建不必要的工作流。 NPR-25057：适用于 Granite-22218 的修补程序
 * JcrResourceBundle不正确支持多个基名。 NPR-25245：适用于 Granite-22317 的修补程序
 * 在安装内容包时，ACL按主体分组，因此会破坏权限模型。 NPR-24583：适用于 Granite-21591 的修补程序
 * 将Jetty更新到9.4.11以修复漏洞。 NPR-25030：适用于 Granite-22120 的修补程序
@@ -1694,7 +1694,7 @@ AEM 6.4.1.0可安装在AEM 6.4 GA上。 服务包的一些关键亮点是：
 * 为Print和PrintDialog添加了ARIA支持。
 * 增加了电子邮件验证ARIA支持。
 * 针对platform.clientlibs修复的主动式支持。
-* 在没有输入显式dataType时防止脚本自动执行。
+* 在没有输入显式dataType时防止脚本自动执行（解决CVE-2015-9251）。
 
 **资产**
 
@@ -1821,7 +1821,7 @@ AEM 6.4.1.0可安装在AEM 6.4 GA上。 服务包的一些关键亮点是：
 * 在旧模式下，msft配置下拉列表显示的配置来自/libs（6.4配置），而不是来自/etc（6.3配置）。 适用于 CQ-4243475 的修补程序
 * 自动提升和删除翻译项目中的翻译启动项。 适用于 CQ-4243474 的修补程序
 * 站点内的内容片段未翻译。 适用于 CQ-4243482、CQ-4243483、CQ-4245687 的修补程序
-* 打开翻译作业搜索筛选器时出现服务器错误。 适用于 CQ-4236813 的修补程序
+* 打开翻译作业搜索筛选器时发生服务器错误。 适用于 CQ-4236813 的修补程序
 * 即使在/conf/we-retail中存在凭据配置下拉列表，它也为空。 适用于 CQ-4236315 的修补程序
 
 **内容片段管理**
@@ -2128,7 +2128,7 @@ AEM 6.4.1.0 中包含的内容包列表
 
 答：将包放入……*/crx-quickstart/install* 文件夹中。包会自动进行安装。
 
-B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) - make sure you use `cmd=install&recursive=true` - so the nested package are installed.
+B. Use the [HTTP API from Package Manager](https://helpx.adobe.com/cn/experience-manager/aem-previous-versions.html) - make sure you use `cmd=install&recursive=true` - so the nested package are installed.
 
 >[!NOTE]
 >
@@ -2166,7 +2166,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 >AEM 6.4.8.0 包含 [AEM Forms 兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT)的新版本。如果您使用的是旧版AEM Forms兼容性包并更新到AEM 6.4.8.0，请在安装Forms Add-On包后安装最新版本的AEM Forms兼容性包。
 
 1. 确保您已安装了 AEM Service Pack。
-1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) for your operating system.
 1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage).
 
 ### Install AEM Forms JEE installer {#install-aem-forms-jee-installer}
@@ -2175,7 +2175,7 @@ B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/e
 >
 >如果您未在 JEE 上使用 AEM Forms，请跳过。AEM Forms JEE 中的修复通过单独的安装程序来交付。
 
-For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see [AEM Forms JEE Patch Installer 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
+For information about installing the cumulative installer for AEM Forms JEE and post-deployment configuration, see [AEM Forms JEE Patch Installer 0015](https://helpx.adobe.com/cn/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
 
 #### NPR-21268 所需的配置设置 {#configuration-settings-required-for-npr}
 
@@ -2264,7 +2264,7 @@ AEM 6.4.8.0 中包含的内容包列表
 
 * [AEM 6.4 发行说明](../release-notes/release-notes.md)
 * [AEM 产品页面](https://www.adobe.com/solutions/web-experience-management.html)
-* [AEM 6.4 文档](https://helpx.adobe.com/support/experience-manager/6-4.html)
+* [AEM 6.4 文档](https://helpx.adobe.com/cn/support/experience-manager/6-4.html)
 * Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### 受限的网站 {#restricted-sites-new}

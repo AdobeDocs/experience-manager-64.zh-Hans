@@ -31,13 +31,19 @@ comment.hbs脚本负责为每个注释创建整体HTML。
 1. 打开叠加 `comment.hbs`
    * 双击中的节 `comment.hbs`点 `/apps/social/commons/components/hbs/comments/comment folder`
 1. 查找以下行，然后删除或注释这些行：
-   `xml <aside class="scf-comment-author">
-<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>`
+
+```xml
+<aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
 
 删除这些行，或用&#39;&lt;!—&#39;和&#39;—>&#39;来注释掉它们。 此外，字符“xxx”正被添加为头像所在位置的可视指示符。
-`xml <!-- do not display avatar with comment
-<aside class="scf-comment-author">
-<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>`
+
+```xml
+<!-- do not display avatar with comment
+    <aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
 
 ## 复制叠加 {#replicate-the-overlay}
 

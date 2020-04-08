@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: da3891d3-fa07-4c88-b4ac-077926b3a674
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1ae2d7f99286e0b958d343778159e2d35095510e
 
 ---
 
@@ -29,13 +29,13 @@ comment.hbs脚本负责为每个注释创建整体HTML。
    1. 选择 `/apps/social/commons/components/hbs/comments/comment`
    1. 选择粘 **[!UICONTROL 贴]**
 1. 打开叠加 `comment.hbs`
-   * 双击中的节 `comment.hbs`点 `/apps/social/commons/components/hbs/comments/comment folder`
+   * 多次-单击中的节 `comment.hbs`点 `/apps/social/commons/components/hbs/comments/comment folder`
 1. 查找以下行，然后删除或注释这些行：
 
-```xml
-<aside class="scf-comment-author">
-        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-```
+   ```xml
+   <aside class="scf-comment-author">
+           <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+   ```
 
 删除这些行，或用&#39;&lt;!—&#39;和&#39;—>&#39;来注释掉它们。 此外，字符“xxx”正被添加为头像所在位置的可视指示符。
 
@@ -55,11 +55,11 @@ comment.hbs脚本负责为每个注释创建整体HTML。
 
 在全局导航中，选择工 **[!UICONTROL 具>部署>复制]** ，然后 **[!UICONTROL 选择激活树]**。
 
-对于“开始路径”，输入 `/apps/social/commons` 并选择“ **[!UICONTROL 激活”]**。
+对于开始路径，请输入并 `/apps/social/commons` 选择“ **[!UICONTROL 激活”]**。
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-## 查看结果 {#view-results}
+## 视图结果 {#view-results}
 
 如果您以管理员(例如，以管理员／管理员身份http://localhost:4503/crx/de)的身份登录到发布实例，则可以验证覆盖的组件是否在此处。
 

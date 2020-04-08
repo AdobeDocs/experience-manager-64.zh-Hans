@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
+source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
 
 ---
 
@@ -96,7 +96,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
   </tr>
   <tr>
    <td>门户控制器</td> 
-   <td><p>门户控制器是一组功能，它允许通过第三方服务器中的Portlet托管AEM内容。</p> <p>Adobe不打算在以下列出的位置进一步增强门户管理员功能。 AEM 6.4包含Portal Director，从早期版本升级的客户可以按原样继续使用它。 请注意，弃用Portal Direct时仍完全受支持。</p> 
+   <td><p>门户控制器是一组功能，它允许通过第三方服务器中的Portlet托管AEM内容。</p> <p>Adobe不打算在以下列出的位置进一步增强门户控制器功能。 AEM 6.4包含Portal Director，从早期版本升级的客户可以按原样继续使用它。 请注意，弃用Portal Direct时仍完全受支持。</p> 
     <ul> 
      <li>/libs/portal/director</li> 
     </ul> </td> 
@@ -110,7 +110,14 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
   <tr>
    <td>表单</td> 
    <td><p>由于不再支持Adobe Central产品，因此已弃用对Adobe Central Migration Bridge服务的支持。</p> </td> 
-   <td> </td> 
+   <td>无替换项 </td> 
+  </tr>
+    <tr>
+   <td>表单</td> 
+   <td><p>已弃用在查询和OperationOptions中使用JSONObject。 已弃用以下API:
+   <ul><li>setArguments（JSONObject参数）</li><li>JSONObject getArguments()</li><li>OperationOptions（String operationId, JSONObject参数）</li><li>JSONObject getArguments()</li><li>void setArguments（JSONObject参数）</li></ul>
+   </p> </td> 
+   <td>使用IValueMap API </td> 
   </tr>
   <tr>
    <td>资产</td> 
@@ -134,7 +141,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
   <tr>
    <td>分析活动图</td> 
    <td>AEM中包含的活动图版本。</td> 
-   <td>由于 Adobe Analytics API 中的安全性更改，因此无法再使用 AEM 中包含的 Activity Map 版本。<br><br>现 <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">在应使用Adobe Analytics提供的</a> ActivityMap插件。</td> 
+   <td>由于 Adobe Analytics API 中的安全性更改，因此无法再使用 AEM 中包含的 Activity Map 版本。<br><br>现 <a href="https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">在应使用Adobe Analytics提供的</a> ActivityMap插件。</td> 
   </tr>
   <tr>
    <td>组件</td> 
@@ -209,12 +216,17 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
   <tr>
    <td>表单</td> 
    <td> 删除了自适应文档功能</td> 
-   <td> 您可以使用交互式通信功能创建基于Web的印刷通信。 <br/> </td> 
+   <td> 您可以使用交互式通信功能创建基于Web的印刷通信。 如果您使用自适应文档，请安装兼容性包以继续使用现有的自适应文档<br/> </td> 
   </tr>
     <tr>
     <td>表单</td> 
     <td>删除了JEE特定登陆页上的AEM Forms。</td> 
     <td>JEE登陆页上的AEM Forms将替换为AEM登陆页(/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>表单</td> 
+   <td>删除了对默认Captcha的支持</td> 
+   <td>使用Google提供的reCAPTCHA服务。</td> 
   </tr>
    <tr>
    <td>表单</td> 

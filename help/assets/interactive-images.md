@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 43a28b0d9552cfde74850dfd1a1d63d04f7e4540
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 ## 观看如何创建交互式图像横幅 {#watch-how-interactive-image-banners-are-created}
 
-Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner). 您还将学习如何预览、编辑和交付交互式图像横幅。
+Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). 您还将学习如何预览、编辑和交付交互式图像横幅。
 
 ## Quick Start: Interactive Images {#quick-start-interactive-images}
 
@@ -43,7 +43,7 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 **交互式图像工作流**:
 
-1. **（可选）识别热点变量** -如果您使用AEM资产和Dynamic media独立版本，请首先识别现有Quickview实施中使用的动态变量，以便在创建交互式图像时输入热点数据。 See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
+1. **（可选）识别热点变量** -如果您使用AEM资产和Dynamic Media独立版本，可通过识别现有Quickview实施中使用的动态变量进行开始，以便在创建交互式图像时输入热点数据。 See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
 
    但是，如果您使用AEM Sites或AEM eCommerce，或两者，则不需要执行此步骤。
 
@@ -67,25 +67,25 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 1. **在AEM中将交互式图像添加到您的网站或您的网站**
 
-   * 如果您使用AEM Sites或AEM eCommerce，或二者兼用，则可以通过将交互式媒体组件拖动到页面上，将交互式图像直接添加到AEM中的网页。 See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
-   * 如果您使用AEM资产和Dynamic media独立版本，则必须在您的网站上复制嵌入代码，然后将其与现有概览相集成。 See [Integrating an interactive image with your website](#integrating-an-interactive-image-with-your-website).
+   * 如果您使用AEM Sites或AEM eCommerce，或二者兼用，则可以通过将交互式媒体组件拖动到页面上，将交互式图像直接添加到AEM中的网页。 See [Adding Dynamic Media Assets to Pages](adding-dynamic-media-assets-to-pages.md).
+   * 如果您使用AEM资产和Dynamic Media独立版本，则必须在您的网站上复制嵌入代码，然后将其与现有概览相集成。 See [Integrating an interactive image with your website](#integrating-an-interactive-image-with-your-website).
    * 如果您使用的是第三方WCM（Web内容管理器），则必须将新的交互式视频与您网站上使用的现有概览实施相集成。 请参 [阅将交互式图像与现有Quickview集成](#integrating-an-interactive-image-with-an-existing-quickview)。
 
 ## （可选）识别热点变量 {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
->仅当满足以下条件时，才需要执行此任务：
+>仅当满足以下条件时，才需要此任务:
 >
 >* 您希望通过触发Quickviews向图像添加交互性。
 >* 您对AEM的实施不使 *用* eCommerce integration framework从任何电子商务解决方案（如IBM Websphere Commerce、Elastic Path、hybris或Intershop）将产品数据提取到AEM。 请参 [阅AEM资产中的电子商务概念](/help/sites-administering/concepts.md)。
 >
 >
-如果您的AEM实施使用电子商务，您可以跳过此任务并继续执行下一个任务。
+如果您的AEM实施使用电子商务，则可以跳过此任务并继续执行下一个任务。
 
-首先，识别现有Quickview实施所使用的动态变量，以便输入热点数据以创建交互式图像。
+开始，通过识别现有Quickview实现所使用的动态变量，以便输入热点数据以创建交互式图像。
 
-在AEM资产中向横幅图像添加热点时，您需要分配SKU(库存单位；您提供的每个不同产品或服务的唯一标识符)以及每个热点的可选附加变量。 以后会使用这些热点变量将热点与概览内容相匹配。
+在AEM资产中向横幅图像添加热点时，您需要分配SKU(库存单位；您所优惠的每个不同产品或服务的唯一标识符)以及每个热点的可选附加变量。 以后会使用这些热点变量将热点与概览内容相匹配。
 
 必须准确地识别要与热点数据相关联的变量数量及类型，这一点很重要。而且，添加到横幅图像的每个热点都必须附带足够的信息，以便能够在现有的后端系统中明确地识别产品。
 
@@ -114,9 +114,9 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 在浏览器中打开网络监视时，在页面上触发概览。
 
-现在，在网络日志中查找Quickview Ajax URL，并复制录制的URL供将来分析。 在大多数情况下，触发概览时，会向服务器发出大量请求。 通常，Quickview Ajax URL是列表中第一个URL。 It has either a complex query string portion or path, and its response MIME type is either `text/html`, `text/xml`, or `text/javascript`.
+现在，在网络日志中查找Quickview Ajax URL，并复制录制的URL以供将来分析。 在大多数情况下，触发概览时，会向服务器发出大量请求。 通常，Quickview Ajax URL是列表中第一个URL。 It has either a complex query string portion or path, and its response MIME type is either `text/html`, `text/xml`, or `text/javascript`.
 
-在此过程中，访问网站中具有不同产品类别和类型的不同区域非常重要。 原因是Quickview URL可能具有特定网站类别的通用部分，但仅在您访问网站的其他区域时更改。
+在此过程中，访问网站的不同区域非常重要，其中包含不同的产品类别和类型。 原因是Quickview URL可能具有特定网站类别的通用部分，但仅当您访问网站的其他区域时才会更改。
 
 在最简单的情况下，Quickview URL中唯一的变量部分是产品SKU。 在这种情况下，SKU 值就是您将热点添加到横幅图像时唯一需要提供的数据。
 
@@ -160,16 +160,16 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
 
-The demo web page has several product thumbnails, each having a Quickview button labeled **[!UICONTROL See More]**. 在Web浏览器的调试工具仍处于激活状态的情况下，单击每个按钮并记下录制的Quickview URL。 在激活页面上所有四个可用的产品概览后，您将拥有向后端发出的概览请求的以下列表：
+The demo web page has several product thumbnails, each having a Quickview button labeled **[!UICONTROL See More]**. 在Web浏览器的调试工具仍处于激活状态的情况下，单击每个按钮并记下录制的Quickview URL。 在激活页面上所有四个可用的产品概览后，您将向后端发出以下概览请求列表:
 
 * `/datafeed/Men-Windbreaker.json`
 * `/datafeed/Men-SimpleHenley.json`
 * `/datafeed/Men-CamoPullover.json`
 * `/datafeed/Women-QuiltedDownJacket.json`
 
-查看这些服务器调用，您会发现特定于产品的信息仅存在于请求路径中。 您还注意到查询字符串根本不被使用，并且涉及两种不同类型的数据段：
+查看这些服务器调用，您会发现产品特定信息仅存在于请求路径中。 您还注意到，查询字符串根本不被使用，并且涉及两种不同类型的数据段：
 
-* 第一类是“男人”或“女人”。 您可以将此称为“产品类别”。
+* 第一类是“男人”或“女人”。 您可以称之为“产品类别”。
 * 第二种类型是产品名称，如CamoPullover。 您可以假设这是产品SKU。
 
 根据此信息，整个Quickview URL具有以下模式：
@@ -186,7 +186,7 @@ You can choose to use the default, out-of-the-box Interactive Image viewer prese
 
 在创建自定义交互式图像查看器预设时，您可以确定图像横幅上热点的外观。 在创建查看器预设的过程中，您可以选择使用预定义图像库中提供的热点图形。
 
-After you save the viewer preset, it is automatically activated (turned on) on the **[!UICONTROL Viewer Preset]** list page in AEM Assets. 此功能意味着无论您何时查看资产，都可以在交互式媒体组件中看到它。 但是，要 *传送包含此查看器预设的交互式横幅* ，您还必须发布查看器预设 ** （对于自定义或现成查看器预设，这一点适用）。
+After you save the viewer preset, it is automatically activated (turned on) on the **[!UICONTROL Viewer Preset]** list page in AEM Assets. 此功能意味着无论您何时视图资产，都可以在交互式媒体组件中看到该内容。 但是，要 *传送包含此查看器预设的交互式横幅* ，您还必须发布查看器预设 ** （对于自定义或现成查看器预设，这一点适用）。
 
 **要创建交互式图像查看器预设，请执行以下操作**:
 
@@ -222,7 +222,7 @@ If you have already uploaded the images that you want to use, advance to the nex
    请参阅[上传资产](managing-assets-touch-ui.md#uploading-assets)。
 
 
-   您现在可以向图像横幅添加热点；请参阅下一个任务。
+   您现在可以向图像横幅添加热点；请参阅下面的下一个任务。
 
 ## 将热点添加到图像横幅 {#adding-hotspots-to-an-image-banner}
 
@@ -314,7 +314,7 @@ b.在图像上，点按您希望热点出现的位置。 如有必要，可拖�
 
 ### (Optional) Previewing interactive images {#optional-previewing-interactive-images}
 
-您可以使用预览来查看交互式图像对客户的呈现效果，并测试图像的热点，以确保它们的行为符合预期。
+您可以使用预览来查看交互式图像对客户的呈现效果，并测试图像的热点以确保它们的行为符合预期。
 
 当您对交互式图像满意时，可以发布它。\
 请参阅[在网页上嵌入视频查看器或图像查看器](embed-code.md)。\
@@ -323,9 +323,9 @@ See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages
 
 **要预览交互式图像**:
 
-1. 在“资产”视图中，导航到您已创建的现有交互式图像，然后点按以在预览中打开它。
-1. 在“预览”页面的左上角附近，在“内容 **** ”下拉列表中，点按查看 **[!UICONTROL 器]**。
-1. 在“查 **[!UICONTROL 看器]** ”列表中，点按 **[!UICONTROL Shoppable_Banner]** ，或点按您创建的交互式图像查看器预设的名称。
+1. 在“资产”视图中，导航到您创建的现有交互式图像，然后点按以在预览中打开它。
+1. 在预览页面的左上角附近，在“内容 **** ”下拉列表中，点按查看 **[!UICONTROL 器]**。
+1. 在“查 **[!UICONTROL 看器]** ”列表中，点按 **[!UICONTROL Shoppable_Banner]** ，或您创建的交互式图像查看器预设的名称。
 1. 点按图像上的热点以测试其关联的操作。
 
 ## 发布交互式图像资源 {#publishing-interactive-image-assets}
@@ -404,7 +404,7 @@ To apply a crop to a shoppable interactive image for a responsive environment, y
 * 根据热点数据构造概览URL。
 * 触发从后端加载概览并在屏幕上显示概览的过程。
 
-AEM资产返回的嵌入代码已经有一个已注释掉的就绪事件处理函数，如下面高亮显示的代码片断所示：
+AEM资产返回的嵌入代码已经有一个现成的事件处理程序被注释掉，如下面高亮显示的代码片断所示：
 
 ```xml
         var s7interactiveimageviewer = new s7viewers.InteractiveImage({

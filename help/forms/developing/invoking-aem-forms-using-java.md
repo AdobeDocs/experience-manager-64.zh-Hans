@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: c74b951194fd2fd723056679784ac2186f37a3e2
+source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
 
 ---
 
@@ -64,7 +64,9 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Java API调�
 * 要调用的AEM Forms服务。 客户端应用程序可以调用一个或多个服务。
 * 要调用AEM Forms服务的模式。 可以使用EJB或SOAP模式。 (请参阅 [设置连接属性](invoking-aem-forms-using-java.md#setting-connection-properties)。)
 
->[!NOTE] （仅限统包）用命令开始AEM Forms服务器，以 `standalone.bat -b <Server IP> -c lc_turnkey.xml` 指定EJB的服务器IP
+>[!NOTE]
+>
+>（仅限统包）使用命令开始AEM Forms服 `standalone.bat -b <Server IP> -c lc_turnkey.xml` 务器以指定EJB的服务器IP。
 
 * 部署了AEM Forms的J2EE应用程序服务器。
 
@@ -72,329 +74,329 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Java API调�
 
 下表列表了调用AEM Forms服务所需的JAR文件。
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>文件</p></th> 
-   <th><p>描述</p></th> 
-   <th><p>位置</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>文件</p></th>
+   <th><p>描述</p></th>
+   <th><p>位置</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>adobe-livecycle-client.jar</p></td> 
-   <td><p>必须始终包含在Java客户端应用程序的类路径中。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-usermanager-client.jar</p></td> 
-   <td><p>必须始终包含在Java客户端应用程序的类路径中。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-utilities.jar</p></td> 
-   <td><p>必须始终包含在Java客户端应用程序的类路径中。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk//client-libs/&lt;app server&gt;</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-applicationmanager-client-sdk.jar</p></td> 
-   <td><p>调用Application Manager服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-assembler-client.jar</p></td> 
-   <td><p>调用Assembler服务时必需。 </p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-backup-restore-client-sdk.jar</p></td> 
-   <td><p>调用备份和还原服务API时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-barcodedforms-client.jar</p></td> 
-   <td><p>调用条形码表单服务时必需。 </p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-convertpdf-client.jar</p></td> 
-   <td><p>调用“转换PDF”服务时需要。 </p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-distiller-client.jar</p></td> 
-   <td><p>调用Distiller服务时必需。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-docconverter-client.jar</p></td> 
-   <td><p>调用DocConverter服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-contentservices-client.jar</p></td> 
-   <td><p>调用文档管理服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-encryption-client.jar</p></td> 
-   <td><p>调用加密服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-forms-client.jar</p></td> 
-   <td><p>调用表单服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-formdataintegration-client.jar</p></td> 
-   <td><p>调用表单数据集成服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-generatepdf-client.jar</p></td> 
-   <td><p>调用“生成PDF”服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-generate3dpdf-client.jar</p></td> 
-   <td><p>调用“生成3D PDF”服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-jobmanager-client-sdk.jar</p></td> 
-   <td><p>调用作业管理器服务时需要。 </p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-output-client.jar</p></td> 
-   <td><p>调用输出服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-pdfutility-client.jar</p></td> 
-   <td><p>调用PDF实用程序或XMP实用程序服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-reader-extensions-client.jar</p></td> 
-   <td><p>调用Acrobat Reader DC扩展服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td> 
-   <td><p>调用存储库服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>install directory</i>&gt;/sdk/client-libs\thirdparty</p></td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li><p>adobe-rightsmanagement-client.jar</p></li> 
-     <li><p>命名空间.jar</p></li> 
-     <li><p>jaxb-api.jar</p></li> 
-     <li><p>jaxb-impl.jar</p></li> 
-     <li><p>jaxb-libs.jar</p></li> 
-     <li><p>jaxb-xjc.jar</p></li> 
-     <li><p>lexangDatatype.jar</p></li> 
-     <li><p>xsdlib.jar</p></li> 
-    </ul></td> 
-   <td><p>调用Rights Management服务时需要。</p><p>如果AEM Forms部署在JBoss上，请包括所有这些文件。 </p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p><p>特定于JBoss的lib目录</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-signatures-client.jar</p></td> 
-   <td><p>调用签名服务时需要。</p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-taskmanager-client-sdk.jar</p></td> 
-   <td><p>调用任务管理器服务时必需。 </p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-truststore-client.jar</p></td> 
-   <td><p>调用信任存储服务时需要。 </p></td> 
-   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>adobe-livecycle-client.jar</p></td>
+   <td><p>必须始终包含在Java客户端应用程序的类路径中。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-usermanager-client.jar</p></td>
+   <td><p>必须始终包含在Java客户端应用程序的类路径中。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-utilities.jar</p></td>
+   <td><p>必须始终包含在Java客户端应用程序的类路径中。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk//client-libs/&lt;app server&gt;</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
+   <td><p>调用Application Manager服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-assembler-client.jar</p></td>
+   <td><p>调用Assembler服务时必需。 </p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-backup-restore-client-sdk.jar</p></td>
+   <td><p>调用备份和还原服务API时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-barcodedforms-client.jar</p></td>
+   <td><p>调用条形码表单服务时必需。 </p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-convertpdf-client.jar</p></td>
+   <td><p>调用“转换PDF”服务时需要。 </p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-distiller-client.jar</p></td>
+   <td><p>调用Distiller服务时必需。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-docconverter-client.jar</p></td>
+   <td><p>调用DocConverter服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-contentservices-client.jar</p></td>
+   <td><p>调用文档管理服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-encryption-client.jar</p></td>
+   <td><p>调用加密服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-forms-client.jar</p></td>
+   <td><p>调用表单服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-formdataintegration-client.jar</p></td>
+   <td><p>调用表单数据集成服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-generatepdf-client.jar</p></td>
+   <td><p>调用“生成PDF”服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-generate3dpdf-client.jar</p></td>
+   <td><p>调用“生成3D PDF”服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-jobmanager-client-sdk.jar</p></td>
+   <td><p>调用作业管理器服务时需要。 </p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-output-client.jar</p></td>
+   <td><p>调用输出服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-pdfutility-client.jar</p></td>
+   <td><p>调用PDF实用程序或XMP实用程序服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-reader-extensions-client.jar</p></td>
+   <td><p>调用Acrobat Reader DC扩展服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
+   <td><p>调用存储库服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>install directory</i>&gt;/sdk/client-libs\thirdparty</p></td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li><p>adobe-rightsmanagement-client.jar</p></li>
+     <li><p>namespace.jar</p></li>
+     <li><p>jaxb-api.jar</p></li>
+     <li><p>jaxb-impl.jar</p></li>
+     <li><p>jaxb-libs.jar</p></li>
+     <li><p>jaxb-xjc.jar</p></li>
+     <li><p>relaxngDatatype.jar</p></li>
+     <li><p>xsdlib.jar</p></li>
+    </ul></td>
+   <td><p>调用Rights Management服务时需要。</p><p>如果AEM Forms部署在JBoss上，请包括所有这些文件。 </p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p><p>特定于JBoss的lib目录</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-signatures-client.jar</p></td>
+   <td><p>调用签名服务时需要。</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-taskmanager-client-sdk.jar</p></td>
+   <td><p>调用任务管理器服务时必需。 </p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-truststore-client.jar</p></td>
+   <td><p>调用信任存储服务时需要。 </p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ### 连接模式和J2EE应用程序JAR文件 {#connection-mode-and-j2ee-application-jar-files}
 
 下表列表了依赖于连接模式和部署了AEM Forms的J2EE应用程序服务器的JAR文件。
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>文件</p> </th> 
-   <th><p>描述</p> </th> 
-   <th><p>位置</p> </th> 
-  </tr> 
- &lt;/thead align="left"&gt; 
- <tbody> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li><p>激活.jar</p> </li> 
-     <li><p>axis.jar</p> </li> 
-     <li><p>commons-codec-1.3.jar</p> </li> 
-     <li><p>commons-collections-3.1.jar</p> </li> 
-     <li><p>commons-discovery.jar</p> </li> 
-     <li><p>commons-logging.jar</p> </li> 
-     <li><p>dom3-xml-apis-2.5.0.jar</p> </li> 
-     <li><p>jaxen-1.1 beta-9.jar</p> </li> 
-     <li><p>jaxrpc.jar</p> </li> 
-     <li><p>log4j.jar</p> </li> 
-     <li><p>mail.jar</p> </li> 
-     <li><p>saaj.jar</p> </li> 
-     <li><p>wsdl4j.jar</p> </li> 
-     <li><p>xalan.jar</p> </li> 
-     <li><p>xbean.jar</p> </li> 
-    </ul> 
-    <ul> 
-     <li>xercesImpl.jar<br /> </li> 
-     <li>commons-httpclient-3.1.jar</li> 
-    </ul> <p> </p> </td> 
-   <td><p>如果使用SOAP模式调用AEM表单，请包括这些JAR文件。</p> </td> 
-   <td><p>&lt;<em>install directory</em>&gt;/sdk/client-libs/thirdparty</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p> jboss-client.jar</p> </td> 
-   <td><p>如果AEM Forms部署在JBoss Application Server上，请包含此JAR文件。</p> <p>如果jboss-client.jar和引用的jar未共同位置，则classloader将找不到必需的类。</p> </td> 
-   <td><p>JBoss客户端库目录</p> <p>如果在同一J2EE应用程序服务器上部署客户端应用程序，则无需包含此文件。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>wlclient.jar</p> </td> 
-   <td><p>如果AEM Forms部署在BEA WebLogic Server®上，则包括此JAR文件。</p> </td> 
-   <td><p>特定于WebLogic的lib目录</p> <p>如果在同一J2EE应用程序服务器上部署客户端应用程序，则无需包含此文件。</p> </td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li><p>com.ibm.ws.admin.client_6.1.0.jar</p> </li> 
-     <li><p>com.ibm.ws.webservices.thinclient_6.1.0.jar</p> </li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li><p>如果AEM Forms部署在WebSphere Application Server上，请包括这些JAR文件。</p> </li> 
-     <li><p>(com.ibm.ws.webservices.thinclient_6.1.0.jar是Web服务调用的必需项)。</p> </li> 
-    </ul> </td> 
-   <td><p>特定于WebSphere的lib目<em>录([WAS_HOME]</em>/运行时)</p> <p>如果在同一J2EE应用程序服务器上部署客户端应用程序，则不必包括这些文件。</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <thead>
+  <tr>
+   <th><p>文件</p> </th>
+   <th><p>描述</p> </th>
+   <th><p>位置</p> </th>
+  </tr>
+ &lt;/thead align="left"&gt;
+ <tbody>
+  <tr>
+   <td>
+    <ul>
+     <li><p>activation.jar</p> </li>
+     <li><p>axis.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
+     <li><p>commons-collections-3.1.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
+     <li><p>commons-logging.jar</p> </li>
+     <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
+     <li><p>jaxen-1.1 beta-9.jar</p> </li>
+     <li><p>jaxrpc.jar</p> </li>
+     <li><p>log4j.jar</p> </li>
+     <li><p>mail.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
+     <li><p>wsdl4j.jar</p> </li>
+     <li><p>xalan.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
+    </ul>
+    <ul>
+     <li>xercesImpl.jar<br /> </li>
+     <li>commons-httpclient-3.1.jar</li>
+    </ul> <p> </p> </td>
+   <td><p>如果使用SOAP模式调用AEM表单，请包括这些JAR文件。</p> </td>
+   <td><p>&lt;<em>install directory</em>&gt;/sdk/client-libs/thirdparty</p> </td>
+  </tr>
+  <tr>
+   <td><p> jboss-client.jar</p> </td>
+   <td><p>如果AEM Forms部署在JBoss Application Server上，请包含此JAR文件。</p> <p>如果jboss-client.jar和引用的jar未共同位置，则classloader将找不到必需的类。</p> </td>
+   <td><p>JBoss客户端库目录</p> <p>如果在同一J2EE应用程序服务器上部署客户端应用程序，则无需包含此文件。</p> </td>
+  </tr>
+  <tr>
+   <td><p>wlclient.jar</p> </td>
+   <td><p>如果AEM Forms部署在BEA WebLogic Server®上，则包括此JAR文件。</p> </td>
+   <td><p>特定于WebLogic的lib目录</p> <p>如果在同一J2EE应用程序服务器上部署客户端应用程序，则无需包含此文件。</p> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li><p>com.ibm.ws.admin.client_6.1.0.jar</p> </li>
+     <li><p>com.ibm.ws.webservices.thinclient_6.1.0.jar</p> </li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li><p>如果AEM Forms部署在WebSphere Application Server上，请包括这些JAR文件。</p> </li>
+     <li><p>(com.ibm.ws.webservices.thinclient_6.1.0.jar是Web服务调用的必需项)。</p> </li>
+    </ul> </td>
+   <td><p>特定于WebSphere的lib目<em>录([WAS_HOME]</em>/运行时)</p> <p>如果在同一J2EE应用程序服务器上部署客户端应用程序，则不必包括这些文件。</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### 调用方案 {#invoking-scenarios}
 
 下表指定调用方案并列表所需的JAR文件以成功调用AEM Forms。
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>服务</p> </th> 
-   <th><p>调用模式</p> </th> 
-   <th><p>J2EE应用程序服务器</p> </th> 
-   <th><p>所需的JAR文件</p> </th> 
-  </tr> 
- &lt;/thead align="left"&gt; 
- <tbody> 
-  <tr> 
-   <td><p>表单服务</p> </td> 
-   <td><p>EJB</p> </td> 
-   <td><p>JBoss</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-    </ul> 
-    <ul> 
-     <li>jboss-client.jar</li> 
-    </ul> 
-    <ul> 
-     <li>adobe-forms-client.jar<br /> </li> 
-     <li>commons-httpclient-3.1.jar</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>表单服务</p> <p>Acrobat Reader DC扩展服务</p> <p>签名服务</p> </td> 
-   <td><p>EJB</p> </td> 
-   <td><p>JBoss</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-    </ul> 
-    <ul> 
-     <li>jboss-client.jar<br /> </li> 
-     <li>commons-httpclient-3.1.jar</li> 
-    </ul> 
-    <ul> 
-     <li><p>adobe-forms-client.jar</p> </li> 
-     <li><p>adobe-reader-extensions-client.jar</p> </li> 
-     <li><p>adobe-signatures-client.jar</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>表单服务</p> </td> 
-   <td><p>SOAP</p> </td> 
-   <td><p>WebLogic</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-     <li><p>wlclient.jar</p> </li> 
-     <li><p>激活.jar</p> </li> 
-     <li><p>axis.jar</p> </li> 
-     <li><p>commons-codec-1.3.jar</p> </li> 
-     <li><p>commons-collections-3.1.jar</p> </li> 
-     <li><p>commons-discovery.jar</p> </li> 
-     <li><p>commons-logging.jar</p> </li> 
-     <li><p>dom3-xml-apis-2.5.0.jar</p> </li> 
-     <li><p>jai_imageio.jar</p> </li> 
-     <li><p>jaxen-1.1 beta-9.jar</p> </li> 
-     <li><p>jaxrpc.jar</p> </li> 
-     <li><p>log4j.jar</p> </li> 
-     <li><p>mail.jar</p> </li> 
-     <li><p>saaj.jar</p> </li> 
-     <li><p>wsdl4j.jar</p> </li> 
-     <li><p>xalan.jar</p> </li> 
-     <li><p>xbean.jar</p> </li> 
-     <li><p>xercesImpl.jar</p> </li> 
-     <li><p>adobe-forms-client.jar</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>表单服务</p> <p>Acrobat Reader DC扩展服务</p> <p>签名服务</p> </td> 
-   <td><p>SOAP</p> </td> 
-   <td><p>WebLogic</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-     <li><p>wlclient.jar</p> </li> 
-     <li><p>激活.jar</p> </li> 
-     <li><p>axis.jar</p> </li> 
-     <li><p>commons-codec-1.3.jar</p> </li> 
-     <li><p>commons-collections-3.1.jar</p> </li> 
-     <li><p>commons-discovery.jar</p> </li> 
-     <li><p>commons-logging.jar</p> </li> 
-     <li><p>dom3-xml-apis-2.5.0.jar</p> </li> 
-     <li><p>jai_imageio.jar</p> </li> 
-     <li><p>jaxen-1.1 beta-9.jar</p> </li> 
-     <li><p>jaxrpc.jar</p> </li> 
-     <li><p>log4j.jar</p> </li> 
-     <li><p>mail.jar</p> </li> 
-     <li><p>saaj.jar</p> </li> 
-     <li><p>wsdl4j.jar</p> </li> 
-     <li><p>xalan.jar</p> </li> 
-     <li><p>xbean.jar</p> </li> 
-     <li><p>xercesImpl.jar</p> </li> 
-     <li><p>adobe-forms-client.jar</p> </li> 
-     <li><p>adobe-reader-extensions-client.jar</p> </li> 
-     <li><p>adobe-signatures-client.jar</p> </li> 
-    </ul> </td> 
+<table>
+ <thead>
+  <tr>
+   <th><p>服务</p> </th>
+   <th><p>调用模式</p> </th>
+   <th><p>J2EE应用程序服务器</p> </th>
+   <th><p>所需的JAR文件</p> </th>
+  </tr>
+ &lt;/thead align="left"&gt;
+ <tbody>
+  <tr>
+   <td><p>表单服务</p> </td>
+   <td><p>EJB</p> </td>
+   <td><p>JBoss</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+    </ul>
+    <ul>
+     <li>jboss-client.jar</li>
+    </ul>
+    <ul>
+     <li>adobe-forms-client.jar<br /> </li>
+     <li>commons-httpclient-3.1.jar</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>表单服务</p> <p>Acrobat Reader DC扩展服务</p> <p>签名服务</p> </td>
+   <td><p>EJB</p> </td>
+   <td><p>JBoss</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+    </ul>
+    <ul>
+     <li>jboss-client.jar<br /> </li>
+     <li>commons-httpclient-3.1.jar</li>
+    </ul>
+    <ul>
+     <li><p>adobe-forms-client.jar</p> </li>
+     <li><p>adobe-reader-extensions-client.jar</p> </li>
+     <li><p>adobe-signatures-client.jar</p> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>表单服务</p> </td>
+   <td><p>SOAP</p> </td>
+   <td><p>WebLogic</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+     <li><p>wlclient.jar</p> </li>
+     <li><p>activation.jar</p> </li>
+     <li><p>axis.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
+     <li><p>commons-collections-3.1.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
+     <li><p>commons-logging.jar</p> </li>
+     <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
+     <li><p>jai_imageio.jar</p> </li>
+     <li><p>jaxen-1.1 beta-9.jar</p> </li>
+     <li><p>jaxrpc.jar</p> </li>
+     <li><p>log4j.jar</p> </li>
+     <li><p>mail.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
+     <li><p>wsdl4j.jar</p> </li>
+     <li><p>xalan.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
+     <li><p>xercesImpl.jar</p> </li>
+     <li><p>adobe-forms-client.jar</p> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>表单服务</p> <p>Acrobat Reader DC扩展服务</p> <p>签名服务</p> </td>
+   <td><p>SOAP</p> </td>
+   <td><p>WebLogic</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+     <li><p>wlclient.jar</p> </li>
+     <li><p>activation.jar</p> </li>
+     <li><p>axis.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
+     <li><p>commons-collections-3.1.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
+     <li><p>commons-logging.jar</p> </li>
+     <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
+     <li><p>jai_imageio.jar</p> </li>
+     <li><p>jaxen-1.1 beta-9.jar</p> </li>
+     <li><p>jaxrpc.jar</p> </li>
+     <li><p>log4j.jar</p> </li>
+     <li><p>mail.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
+     <li><p>wsdl4j.jar</p> </li>
+     <li><p>xalan.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
+     <li><p>xercesImpl.jar</p> </li>
+     <li><p>adobe-forms-client.jar</p> </li>
+     <li><p>adobe-reader-extensions-client.jar</p> </li>
+     <li><p>adobe-signatures-client.jar</p> </li>
+    </ul> </td>
   </tr> xmp-uti
- </tbody> 
+ </tbody>
 </table>
 
 ### 升级JAR文件 {#upgrading-jar-files}
@@ -489,11 +491,11 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Java API调�
 以下Java代码示例设置连接属性以调用在JBoss上部署的AEM Forms，并使用EJB连接模式。
 
 ```java
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "https://<hostname>:8080"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "https://<hostname>:8080");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DOCUMENT_HTTP_ENDPOINT,"https://<hostname>:8080");
 ```
@@ -503,11 +505,11 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Java API调�
 以下Java代码示例设置连接属性以调用在WebLogic上部署的AEM Forms，并使用EJB连接模式。
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "t3://localhost:7001"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebLogic"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "t3://localhost:7001");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebLogic");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
@@ -516,11 +518,11 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Java API调�
 以下Java代码示例设置连接属性以调用在WebSphere上部署的AEM Forms，并使用EJB连接模式。
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "iiop://localhost:2809"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebSphere"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "iiop://localhost:2809");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebSphere");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
@@ -529,11 +531,11 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Java API调�
 以下Java代码示例在SOAP模式中设置连接属性以调用在JBoss上部署的AEM Forms。
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
@@ -546,9 +548,9 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Java API调�
 以下Java代码示例设置调用在JBoss Application Server上部署的AEM Forms以及禁用服务安全性时所需的连接属性。
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://localhost:1099"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://localhost:1099");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
 ```
 
@@ -559,12 +561,12 @@ Adobe开发人员网站包含以下文章，其中讨论如何使用Java API调�
 **使用自定义请求超时限制设置SOAP连接模式**
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, "1800000"); // Request timeout limit 30 Minutes
 ```
 
@@ -575,7 +577,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 该方 `authenticate` 法返回一 `AuthResult` 个包含验证结果的对象。 可以通过调用 `com.adobe.idp.Context` 对象的构造函数来创建对象。 然后调用 `com.adobe.idp.Context` 对象的方 `initPrincipal` 法并传递 `AuthResult` 对象，如以下代码所示：
 
 ```as3
- Context myCtx = new Context();  
+ Context myCtx = new Context();
  myCtx.initPrincipal(authResult);
 ```
 
@@ -584,30 +586,30 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 下面的代码示例演示如何在用 `com.adobe.idp.Context` 于创建对象的连接设置中使用对 `EncryptionServiceClient` 象。
 
 ```as3
- //Authenticate a user and use the Context object within connection settings 
- // Authenticate the user 
- String username = "wblue"; 
- String password = "password"; 
- AuthResult authResult = authClient.authenticate(username, password.getBytes()); 
-  
- //Set a Content object that represents the authenticated user 
- //Use the Context object to invoke the Encryption service 
- Context myCtx = new Context();  
- myCtx.initPrincipal(authResult); 
-  
- //Set connection settings 
- Properties connectionProps = new Properties(); 
- connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://<server>:1099"); 
- connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_EJB_PROTOCOL); 
- connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE); 
+ //Authenticate a user and use the Context object within connection settings
+ // Authenticate the user
+ String username = "wblue";
+ String password = "password";
+ AuthResult authResult = authClient.authenticate(username, password.getBytes());
+ 
+ //Set a Content object that represents the authenticated user
+ //Use the Context object to invoke the Encryption service
+ Context myCtx = new Context();
+ myCtx.initPrincipal(authResult);
+ 
+ //Set connection settings
+ Properties connectionProps = new Properties();
+ connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://<server>:1099");
+ connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE);
  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DOCUMENT_HTTP_ENDPOINT,"jnp://<server>:1099");
 
-                          
- //Create a ServiceClientFactory object 
- ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps); 
- myFactory.setContext(myCtx); 
-                          
- //Create an EncryptionServiceClient object 
+ 
+ //Create a ServiceClientFactory object
+ ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps);
+ myFactory.setContext(myCtx);
+ 
+ //Create an EncryptionServiceClient object
  EncryptionServiceClient encryptClient  = new EncryptionServiceClient(myFactory);
 ```
 
@@ -647,8 +649,8 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 以下示例显示了用于连接到在WebSphere上部署的AEM Forms的jndi.properties文件的内容。
 
 ```as3
- java.naming.factory.initial=com.ibm.websphere.naming. 
- WsnInitialContextFactory 
+ java.naming.factory.initial=com.ibm.websphere.naming.
+ WsnInitialContextFactory
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
@@ -657,7 +659,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 以下示例显示了用于连接到在WebLogic上部署的AEM Forms的jndi.properties文件的内容。
 
 ```as3
- java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory 
+ java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
@@ -666,8 +668,8 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 以下示例显示了用于连接到JBoss上部署的AEM Forms的jndi.properties文件的内容。
 
 ```as3
- java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory 
- java.naming.provider.url= jnp://appserver1:1099, appserver2:1099, 
+ java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory
+ java.naming.provider.url= jnp://appserver1:1099, appserver2:1099,
  appserver3:1099
 ```
 
@@ -703,42 +705,42 @@ AEM Forms服务不接受PDF文档作为其他数据类型，如对 `java.io.Inpu
 
 >[!NOTE]
 >
->为了在使用对象时防止WebLogic中的内存泄漏， `com.adobe.idp.Document` 请以2048字节或更少的块读取文档信息。 例如，以下代码读取2048字节的块中的文档信息：
+>为了在使用对象时防止WebLogic中的内存泄漏， `com.adobe.idp.Document` 请以2048字节或更少的块读取文档信息。 例如，以下代码以2048字节的块为单位读取文档信息：
 
 ```as3
-        // Set up the chunk size to prevent a potential memory leak 
-        int buffSize = 2048; 
-  
-        // Determine the total number of bytes to read 
-        int docLength = (int) inDoc.length(); 
-        byte [] byteDoc = new byte[docLength]; 
-  
-        // Set up the reading position 
-        int pos = 0; 
-  
-        // Loop through the document information, 2048 bytes at a time 
-        while (docLength > 0) { 
-      // Read the next chunk of information 
-            int toRead = Math.min(buffSize, docLength); 
-            int bytesRead = inDoc.read(pos, byteDoc, pos, toRead); 
-  
-            // Handle the exception in case data retrieval failed 
-            if (bytesRead == -1) { 
-  
-                inDoc.doneReading(); 
-                inDoc.dispose(); 
-                throw new RuntimeException("Data retrieval failed!"); 
-  
-            } 
-  
-             // Update the reading position and number of bytes remaining 
-             pos += bytesRead; 
-             docLength -= bytesRead; 
-  
-        } 
-  
-        // The document information has been successfully read 
-        inDoc.doneReading(); 
+        // Set up the chunk size to prevent a potential memory leak
+        int buffSize = 2048;
+ 
+        // Determine the total number of bytes to read
+        int docLength = (int) inDoc.length();
+        byte [] byteDoc = new byte[docLength];
+ 
+        // Set up the reading position
+        int pos = 0;
+ 
+        // Loop through the document information, 2048 bytes at a time
+        while (docLength > 0) {
+      // Read the next chunk of information
+            int toRead = Math.min(buffSize, docLength);
+            int bytesRead = inDoc.read(pos, byteDoc, pos, toRead);
+ 
+            // Handle the exception in case data retrieval failed
+            if (bytesRead == -1) {
+ 
+                inDoc.doneReading();
+                inDoc.dispose();
+                throw new RuntimeException("Data retrieval failed!");
+ 
+            }
+ 
+             // Update the reading position and number of bytes remaining
+             pos += bytesRead;
+             docLength -= bytesRead;
+ 
+        }
+ 
+        // The document information has been successfully read
+        inDoc.doneReading();
         inDoc.dispose();
 ```
 
@@ -775,17 +777,17 @@ AEM Forms服务不接受PDF文档作为其他数据类型，如对 `java.io.Inpu
 **创建基于其他文档的文档对象**
 
 ```as3
- //Create a Document object based on a byte array 
- InputStream is = new FileInputStream("C:\\Map.pdf"); 
- int len = is.available(); 
- byte [] myByteArray = new byte[len]; 
- int i = 0; 
- while (i < len) { 
-       i += is.read(myByteArray, i, len); 
- } 
- Document myPDFDocument = new Document(myByteArray); 
-  
- //Create another Document object 
+ //Create a Document object based on a byte array
+ InputStream is = new FileInputStream("C:\\Map.pdf");
+ int len = is.available();
+ byte [] myByteArray = new byte[len];
+ int i = 0;
+ while (i < len) {
+       i += is.read(myByteArray, i, len);
+ }
+ Document myPDFDocument = new Document(myByteArray);
+ 
+ //Create another Document object
  Document anotherDocument = new Document(myPDFDocument);
 ```
 
@@ -800,8 +802,8 @@ AEM Forms服务不接受PDF文档作为其他数据类型，如对 `java.io.Inpu
 **创建基于PDF文件的文档对象**
 
 ```as3
- //Create a Document object based on the map.pdf source file 
- File mySourceMap = new File("C:\\map.pdf"); 
+ //Create a Document object based on the map.pdf source file
+ File mySourceMap = new File("C:\\map.pdf");
  Document myPDFDocument = new Document(mySourceMap,true);
 ```
 
@@ -812,8 +814,8 @@ AEM Forms服务不接受PDF文档作为其他数据类型，如对 `java.io.Inpu
 **创建基于InputStream对象的文档**
 
 ```as3
- //Create a Document object based on an InputStream object 
- InputStream is = new FileInputStream("C:\\Map.pdf"); 
+ //Create a Document object based on an InputStream object
+ InputStream is = new FileInputStream("C:\\Map.pdf");
  Document myPDFDocument = new Document(is);
 ```
 
@@ -832,10 +834,10 @@ c:/temp/input.pdf文件必须位于客户端计算机（而非服务器计算机
 **根据可从URL访问的内容创建文档**
 
 ```as3
- //Create a Document object based on a java.net.URL object 
- URL myURL = new URL("http", "localhost", 8080,"/WebApp/map.pdf");  
-          
- //Create another Document object 
+ //Create a Document object based on a java.net.URL object
+ URL myURL = new URL("http", "localhost", 8080,"/WebApp/map.pdf");
+ 
+ //Create another Document object
  Document myPDFDocument = new Document(myURL);
 ```
 
@@ -869,7 +871,7 @@ c:/temp/input.pdf文件必须位于客户端计算机（而非服务器计算机
 **将文档对象的内容复制到文件**
 
 ```as3
- File outFile = new File("C:\\AnotherMap.pdf"); 
+ File outFile = new File("C:\\AnotherMap.pdf");
  myDocument.copyToFile (outFile);
 ```
 
@@ -883,47 +885,47 @@ c:/temp/input.pdf文件必须位于客户端计算机（而非服务器计算机
 
 通过调用对象的方 `com.adobe.idp.Document` 法确定对 `com.adobe.idp.Document` 象的MIME类 `getContentType` 型。 此方法返回一个字符串值，它指定对象的内容类 `com.adobe.idp.Document` 型。 下表介绍了AEM Forms返回的不同内容类型。
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>MIME类型</p></th> 
-   <th><p>描述</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>MIME类型</p></th>
+   <th><p>描述</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p><code>application/pdf</code></p></td> 
-   <td><p>PDF文档</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/vnd.adobe.xdp+xml</code></p></td> 
-   <td><p>XML数据打包(XDP)，用于导出的XML表单体系结构(XFA)表单</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>text/xml</code></p></td> 
-   <td><p>书签、附件或其他XML文档</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/vnd.fdf</code></p></td> 
-   <td><p>表单数据格式(FDF)，用于导出的Acrobat表单</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/vnd.adobe.xfdf</code></p></td> 
-   <td><p>XML表单数据格式(XFDF)，用于导出的Acrobat表单</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/rdf+xml</code></p></td> 
-   <td><p>丰富数据格式和XML</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/octet-stream</code></p></td> 
-   <td><p>通用数据格式</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>NULL</code></p></td> 
-   <td><p>未指定MIME类型</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p><code>application/pdf</code></p></td>
+   <td><p>PDF文档</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/vnd.adobe.xdp+xml</code></p></td>
+   <td><p>XML数据打包(XDP)，用于导出的XML表单体系结构(XFA)表单</p></td>
+  </tr>
+  <tr>
+   <td><p><code>text/xml</code></p></td>
+   <td><p>书签、附件或其他XML文档</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/vnd.fdf</code></p></td>
+   <td><p>表单数据格式(FDF)，用于导出的Acrobat表单</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/vnd.adobe.xfdf</code></p></td>
+   <td><p>XML表单数据格式(XFDF)，用于导出的Acrobat表单</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/rdf+xml</code></p></td>
+   <td><p>丰富数据格式和XML</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/octet-stream</code></p></td>
+   <td><p>通用数据格式</p></td>
+  </tr>
+  <tr>
+   <td><p><code>NULL</code></p></td>
+   <td><p>未指定MIME类型</p></td>
+  </tr>
+ </tbody>
 </table>
 
 以下代码示例确定对象的内容类 `com.adobe.idp.Document` 型。
@@ -931,8 +933,8 @@ c:/temp/input.pdf文件必须位于客户端计算机（而非服务器计算机
 **确定文档对象的内容类型**
 
 ```as3
- //Determine the content type of the Document object 
- String ct = myDocument.getContentType(); 
+ //Determine the content type of the Document object
+ String ct = myDocument.getContentType();
  System.out.println("The content type of the Document object is " +ct);
 ```
 
@@ -1033,10 +1035,10 @@ c:/temp/input.pdf文件必须位于客户端计算机（而非服务器计算机
 1. 为每个输 `java.util.HashMap` 入参数调 `put` 用对象的方法，以传递到长寿命进程。 由于短 `MyApplication/EncryptDocument` 期进程需要一个类型的输入参数 `Document`，您只需调用一次方法， `put` 如下例所示。
 
    ```as3
-    //Create a Map object to store the parameter value for inDoc 
-    Map params = new HashMap(); 
-    InputStream inFile = new FileInputStream("C:\\Adobe\Loan.pdf"); 
-    Document inDoc = new Document(inFile); 
+    //Create a Map object to store the parameter value for inDoc
+    Map params = new HashMap();
+    InputStream inFile = new FileInputStream("C:\\Adobe\Loan.pdf");
+    Document inDoc = new Document(inFile);
     params.put("inDoc", inDoc);
    ```
 
@@ -1056,7 +1058,7 @@ c:/temp/input.pdf文件必须位于客户端计算机（而非服务器计算机
 1. 通过调用对象的方法并传递指定输 `InvocationReponse` 出参数名 `getOutputParameter` 称的字符串值，检索进程的返回值。 在这种情况下， `outDoc` 请指 `outDoc` 定(进程的输出参数的名 `MyApplication/EncryptDocument` 称)。 将返回值转 `Document`换为，如下例所示。
 
    ```as3
-    InvocationResponse response = myServiceClient.invoke(request); 
+    InvocationResponse response = myServiceClient.invoke(request);
     Document encryptDoc = (Document) response.getOutputParameter("outDoc");
    ```
 

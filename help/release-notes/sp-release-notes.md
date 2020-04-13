@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
+source-git-commit: b46378657b8a173986a669beaa56468886b23266
 
 ---
 
@@ -99,6 +99,8 @@ AEM 6.4.8.0是一个重要更新，其中包括自2018年4月AEM 6.4通用发布
 * 在Experience Manager **云服务中配置Adobe Analytics时** ，选择“公司源 ******** ”后，“报告”和“报告包”下拉菜单便会隐藏。(NPR-31729)
 
 * Adobe Campaign属性不会在创建链接到Adobe Campaign的新闻稿的语言副本时清除，而在复制或粘贴链接到Adobe Campaign的新闻稿时清除(NPR-32540)。
+
+* ReportSuitesServlet易受SSRF(NPR-32161)的攻击。
 
 ### Sling {#sling-6480}
 
@@ -1773,7 +1775,7 @@ AEM 6.4.1.0可安装在AEM 6.4 GA上。 服务包的一些关键亮点是：
 * 在旧模式下，msft配置下拉列表显示的配置来自/libs（6.4配置），而不是来自/etc（6.3配置）。 适用于 CQ-4243475 的修补程序
 * 自动提升和删除翻译项目中的翻译启动项。 适用于 CQ-4243474 的修补程序
 * 站点内的内容片段未翻译。 适用于 CQ-4243482、CQ-4243483、CQ-4245687 的修补程序
-* 打开翻译作业搜索筛选器时出现服务器错误。 适用于 CQ-4236813 的修补程序
+* 打开翻译作业搜索筛选器时发生服务器错误。 适用于 CQ-4236813 的修补程序
 * 即使在/conf/we-retail中存在凭据配置下拉列表，它也为空。 适用于 CQ-4236315 的修补程序
 * 打开项目KPI:创建更多项目时性能会降低。 NPR-23840：适用于 CQ-4238392 的修补程序
 * Workflow Starter不能接受String的TypeHint值。 NPR-23863：适用于 CQ-4238356 的修补程序

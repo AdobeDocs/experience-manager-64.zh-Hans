@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Assets User Guide
+user-guide-title: AEM 6.4资产用户指南
 translation-type: tm+mt
-source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [在AEM资产中使用Adobe Stock资产](aem-assets-adobe-stock.md)
    + [审核文件夹资产和收藏集](bulk-approval.md)
    + [时间轴中的活动流](activity-stream.md)
-   + [将工作流应用于资产](assets-workflow.md)
+   + [处理资产](assets-workflow.md)
    + [添加图像映射](image-maps.md)
    + [使用MSM重用资源](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
@@ -69,7 +69,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [使用选择器](working-with-selectors.md)
 + 扩展资产 {#extending}
    + [自定义和扩展资产](extending-assets.md)
-   + [使用媒体处理程序和工作流处理资产](media-handlers.md)
+   + [使用媒体处理函数和工作流处理资产](media-handlers.md)
    + [扩展资产搜索](searchx.md)
    + [安装和配置ImageMagick以与AEM Assets一起使用](best-practices-for-imagemagick.md)
    + [将资产与活动流集成](extending-activity-stream.md)
@@ -84,7 +84,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [资产链接共享](link-sharing.md)
    + [资产报表](asset-reports.md)
    + [增强的智能标记](enhanced-smart-tags.md)
-   + [用于处理元数据、图像和视频的配置文件](processing-profiles.md)
+   + [用于处理元数据、图像和视频的用户档案](processing-profiles.md)
    + [串联元数据](cascading-metadata.md)
    + [创建和配置资产编辑器页面](assets-finder-editor.md)
    + [资产大小调整指南](assets-sizing-guide.md)
@@ -140,7 +140,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [管理收藏集](managing-collections-touch-ui.md)
    + [在资产中签入和签出文件](check-out-and-submit-assets.md)
    + [使用智能内容服务配置资产标记](config-smart-tagging.md)
-   + [启用重复项检测](duplicate-detection.md)
+   + [启用重复检测](duplicate-detection.md)
    + [增强了AEM中资产的排序](enhance-sort.md)
    + [组织数字资产](organize-assets.md)
    + [管理视频资产](managing-video-assets.md)

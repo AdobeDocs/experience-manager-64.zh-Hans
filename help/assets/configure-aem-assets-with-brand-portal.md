@@ -3,7 +3,7 @@ title: 使用Brand Portal配置AEM资产
 description: '了解如何配置带有Brand Portal的AEM资产，以将资产和集合发布到Brand Portal。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
+source-git-commit: 608280909877d522fc69ed9723ff615dfaa0a50a
 
 ---
 
@@ -63,7 +63,7 @@ Adobe Experience Manager(AEM)资产通过Adobe I/O配置了Brand Portal,Adobe I/
 
 有关详细说明，请参阅
 
-* [AEM 6.4 Service Pack 发行说明](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [AEM 6.4 Service Pack 发行说明](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 **如果找不到最新的AEM包或Service Pack，请与支持部门联系。**
 
@@ -193,7 +193,7 @@ Adobe I/O集成生成API密钥、客户端机密和有效负荷(JWT)，这是设
 
 >[!CAUTION]
 >
->仅创建一个有效的IMS配置。 请勿创建多个IMS配置。
+>仅创建一个有效的IMS配置。
 >
 >确保配置正常。 如果配置不健康，请删除该配置并创建一个新的健康配置。
 
@@ -278,7 +278,7 @@ Brand Portal已成功配置AEM Assets作者实例。 您现在可以：
 * [将资产从AEM资产发布到Brand Portal](../assets/brand-portal-publish-assets.md)
 * [将文件夹从AEM资产发布到Brand Portal](../assets/brand-portal-publish-folder.md)
 * [将集合从AEM资产发布到Brand Portal](../assets/brand-portal-publish-collection.md)
-* [配置资产来源补充](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) ，使Brand Portal用户能够将资产贡献和发布到AEM资产。
+* [配置资产来源补充](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) ，使Brand Portal用户能够将资产贡献和发布到AEM资产。
 
 ## 升级配置 {#upgrade-integration-64}
 

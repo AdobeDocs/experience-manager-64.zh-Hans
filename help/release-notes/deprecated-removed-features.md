@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
+source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
 
 ---
 
@@ -144,7 +144,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
    <td>由于 Adobe Analytics API 中的安全性更改，因此无法再使用 AEM 中包含的 Activity Map 版本。<br><br>现 <a href="https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">在应使用Adobe Analytics提供的</a> ActivityMap插件。</td> 
   </tr>
   <tr>
-   <td>组件</td> 
+   <td>组件——表单</td> 
    <td>表单Captcha<br /> (foundation/components/form/captcha)</td> 
    <td>请改用Google的ReCaptcha组件</td> 
   </tr>
@@ -185,11 +185,6 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
   </tr>
   <tr>
    <td>表单</td> 
-   <td>已删除自适应表单中对默认AEM Captcha服务的支持。 </td> 
-   <td>请改用Google提供的ReCaptcha。</td> 
-  </tr>
-  <tr>
-   <td>表单</td> 
    <td>已删除对文档片段内图像的支持。 </td> 
    <td>交互式通信提供了在印刷和Web渠道中直接使用图像的功能。<br /> </td> 
   </tr>
@@ -222,11 +217,6 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
     <td>表单</td> 
     <td>删除了JEE特定登陆页上的AEM Forms。</td> 
     <td>JEE登陆页上的AEM Forms将替换为AEM登陆页(/aem/start.html) </td>  
-  </tr>
-   <tr>
-   <td>表单</td> 
-   <td>删除了对默认Captcha的支持</td> 
-   <td>使用Google提供的reCAPTCHA服务。</td> 
   </tr>
    <tr>
    <td>表单</td> 

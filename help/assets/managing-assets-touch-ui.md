@@ -4,7 +4,7 @@ description: 了解各种资产管理和编辑任务，这些管理和编辑区�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
 
 ---
 
@@ -315,8 +315,6 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 ## 预览资产 {#previewing-assets}
 
-另请参阅[预览 Dynamic Media 资产](previewing-assets.md)。
-
 **要预览资产**:
 
 1. 在资产UI中，导航到要预览的资产所在的位置。
@@ -331,6 +329,12 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
    Tap the **[!UICONTROL Reset]** button to reset the view to the original size.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
+
+>[!MORELIKETHIS]
+>
+>* [预览Dynamic Media资产](/help/assets/previewing-assets.md)。
+>* [视图子资产](managing-linked-subassets.md#viewing-subassets)。
+
 
 ## 编辑属性 {#editing-properties}
 

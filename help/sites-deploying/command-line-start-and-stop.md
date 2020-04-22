@@ -1,8 +1,8 @@
 ---
 title: 命令行启动和停止
 seo-title: 命令行启动和停止
-description: 通过命令行了解如何启动和停止AEM。
-seo-description: 通过命令行了解如何启动和停止AEM。
+description: 了解如何从命令行开始和停止AEM。
+seo-description: 了解如何从命令行开始和停止AEM。
 uuid: 585f071c-2286-4a2c-af07-404bf298cba8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 从命令行启动Adobe Experience Manager {#starting-adobe-experience-manager-from-the-command-line}
 
-该 `start` 脚本位于&lt;cq- *installation>/bin目录下* 。 提供Unix和Windows版本。 脚本启动在&lt;cq-installation>目 *录中安装的实例* 。
+该 `start` 脚本位于&lt;cq- *installation>/bin目录下* 。 提供Unix和Windows版本。 该脚本将开始安装在 *&lt;cq-installation>目录中的实例* 。
 
-这两个版本支持一个可用于启动和调整AEM实例的环境变量列表。
+这两个版本支持列表的环境变量，这些变量可用于开始和调整AEM实例。
 
 <table> 
  <tbody> 
@@ -68,13 +68,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >请注意，某些运行模式（包括创作和发布）需要在首次启动AEM之前设置，之后无法更改。 在设置应用于生产的AEM实例之前，请参阅运行模 [式文档](/help/sites-deploying/configure-runmodes.md) 。
 
-### Windows平台start.bat脚本示例 {#windows-platform-start-bat-script-example}
+### Windows平台开始.bat脚本示例 {#windows-platform-start-bat-script-example}
 
 ```shell
 SET CQ_PORT=1234 & ./start.bat
 ```
 
-### Unix平台启动脚本示例 {#unix-platform-start-script-example}
+### Unix平台开始脚本示例 {#unix-platform-start-script-example}
 
 ```shell
 CQ_PORT=1234 ./start
@@ -82,7 +82,7 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->启动脚本将启动&lt;cq-installation>/app *文件夹下安装的AEM Quickstart* 。
+>开始脚本将启动&lt;cq-installation>/app *文件夹下安装的AEM快速启动* 。
 
 ## Stopping Adobe Experience Manager {#stopping-adobe-experience-manager}
 
@@ -91,9 +91,9 @@ CQ_PORT=1234 ./start
 * 具体取决于您所使用的平台：
 
    * 如果从脚本或命令行启动AEM，请按 **Ctrl+C** ，关闭服务器。
-   * 如果已在UNIX上使用启动脚本，则必须使用停止脚本来停止AEM。
+   * 如果已在UNIX上使用开始脚本，则必须使用停止脚本停止AEM。
 
-* 如果通过双击jar文件启动AEM，请单击启动窗口上的 **On** （开始）按钮(按钮，然后更改为 **Off**)以关闭服务器。
+* 如果通过多次单击jar文件启动AEM，请单击启动窗口上的 **On** （开始）按钮(按钮，然后更改为 **Off**)以关闭服务器。
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -122,4 +122,3 @@ CQ_PORT=1234 ./start
 * 创建 `bootstrap.properties` 和定义 `repository.config`
 
 同样，在开始实际安装之前。
-

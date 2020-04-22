@@ -3,7 +3,7 @@ title: 配置富文本编辑器插件
 description: 了解如何配置AEM富文本编辑器插件以启用各个功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1a1dc18f768d814c63082ed40687862235a76cf
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -200,7 +200,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
   <tr> 
    <td>fallbackBlockTag</td> 
    <td>字符串</td> 
-   <td><p>定义块标签，该标签用于任何块，这些块具有未包含在allowBlockTags中的块标签。</p> <p> 在大多数情况下都足够。</p> </td> 
+   <td><p>定义块标签，该标签用于任何块，这些块具有未包含在allowBlockTags中的块标签。</p> <p> 在大多数情况下就足够了。</p> </td> 
   </tr> 
   <tr> 
    <td>表</td> 
@@ -456,7 +456,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 ![在CRXDE中，添加一个字符以便在RTE工具栏中使用](assets/chlimage_1-412.png)
 
-在CRXDE中，添加一个字符以在RTE工具栏中使用
+在CRXDE中，添加一个字符以便在RTE工具栏中使用
 
 ### 定义字符范围 {#definerangechar}
 
@@ -572,20 +572,18 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 激活拼写检查插件后，RTE会为每种相应的语言使用词典。 然后根据网站的语言选择这些语言，即采用子树的语言属性或从URL中提取语言；例如， 分支 `/en/` 被选为英语，分支被选 `/de/` 为德语。
 
 >[!NOTE]
-消息“拼写检查失败”。 is seen if a check is treed for a language that is not installed.
+如果 `Spell checking failed` 对未安装的语言尝试检查，则会看到消息。 标准词典与相应的自 `/libs/cq/spellchecker/dictionaries`述文件一起位于。 请勿修改文件。
 
-标准AEM安装包括以下字典：
+标准AEM安装包括美国英语(`en_us`)和英语(`en_gb`)词典。 要添加更多词典，请按照以下步骤操作。
 
-* 美国英语(en_us)
-* 英语(en_gb)
+1. 导航到页 [面https://extensions.openoffice.org/](https://extensions.openoffice.org/)。
 
->[!NOTE]
-标准词典与相应的自 `/libs/cq/spellchecker/dictionaries`述文件一起位于。 请勿修改文件。
+1. 执行下列操作之一以查找您选择的语言的词典：
 
-如需添加更多词典，请按照以下步骤操作。
+   * 搜索您选择的语言的词典。 在词典页面上，找到指向原始源或作者网页的链接。 在此页面上找到v2.x的字典文件。
+   * 在https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries上搜索v2.x词典文 [件](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries)。
 
-1. 导航到页 [面http://download.services.openoffice.org/contrib/dictionaries/](http://download.services.openoffice.org/contrib/dictionaries/)。
-1. 选择所需的语言并下载包含拼写定义的ZIP文件。 解压文件系统中的存档内容。
+1. 下载包含拼写定义的存档。 解压文件系统中的存档内容。
 
    >[!CAUTION]
    仅支持OpenOffice. `MySpell` org v2.0.1或更早版本格式的词典。 由于词典现在是存档文件，建议您在下载后验证存档。
@@ -594,9 +592,8 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 1. 加载存储库中的。aff和。dic文件，网址为 `/apps/cq/spellchecker/dictionaries`。
 
 >[!NOTE]
-RTE拼写检查器可按需使用。 它不会在您开始键入文本时自动运行。
-要运行拼写检查器，请点按／单击工具栏中的“拼写检查器”按钮。 RTE检查单词拼写并突出显示拼写错误的单词。
-如果合并拼写检查器建议的任何更改，则文本更改的状态和拼写错误的单词将不再高亮显示。 要运行拼写检查器，请再次点按／单击“拼写检查器”按钮。
+RTE拼写检查器可按需使用。 它不会在您开始键入文本时自动运行。 要运行拼写检查器，请单击工具 [!UICONTROL 栏中的] “拼写检查器”。 RTE检查单词的拼写并突出显示拼写错误的单词。
+如果您加入拼写检查器建议的任何更改，则文本的状态将不再高亮显示更改和拼写错误的单词。 要运行拼写检查器，请再次点按／单击“拼写检查器”按钮。
 
 ## 为撤消和重做操作配置历史记录大小 {#undohistory}
 

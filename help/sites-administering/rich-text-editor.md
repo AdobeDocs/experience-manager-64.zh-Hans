@@ -3,7 +3,7 @@ title: 配置富文本编辑器
 description: 了解如何配置AEM富文本编辑器。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -12,9 +12,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 富文本编辑器(RTE)为作者提供了编辑其文本内容的各种功能。 提供了图标、选择框、工具栏和菜单，以实现所见即所得的文本编辑体验。
 
-RTE可配置为启用、禁用和扩展创作组件中的可用功能。 要了解如何使用RTE功能进行创作，请参阅 [使用富文本编辑器进行创作](/help/sites-authoring/rich-text-editor.md)。
-
-以下工作流说明了完成RTE配置任务的建议顺序。
+要了解如何使用RTE功能进行创作，请参阅 [使用富文本编辑器进行创作](/help/sites-authoring/rich-text-editor.md)。 RTE可配置为启用、禁用和扩展创作组件中的可用功能。 以下工作流说明了在Experience Manager中完成RTE配置任务的建议顺序。
 
 ![配置富文本编辑器的典型工作流程](assets/rte_workflow_v1.png)
 
@@ -22,7 +20,7 @@ RTE可配置为启用、禁用和扩展创作组件中的可用功能。 要了�
 
 ## 了解触屏优化UI和经典UI {#understand-touch-enabled-ui-and-classic-ui}
 
-触屏优化UI是AEM的标准UI。 Adobe在版本5.6中为创 [作环境引入](/help/sites-authoring/responsive-layout.md) 了触控UI，并提供了响应式设计。触屏UI专为触控和桌面设备设计。 UI与原始经典UI差别很大。
+触屏优化UI是AEM的标准UI。 Adobe在版本5.6中为创作 [环境引入](/help/sites-authoring/responsive-layout.md) 了触屏UI，并提供响应式设计。触屏UI专为触控和桌面设备设计。 UI与原始经典UI差别很大。
 
 ![触屏优化UI中的富文本编辑器工具栏](assets/chlimage_1-404.png)
 
@@ -44,45 +42,12 @@ RTE可配置为启用、禁用和扩展创作组件中的可用功能。 要了�
 
 作者可以使用不同的组件模式在AEM中创建和编辑文本内容。 用于创作内容和设置内容格式的工具栏选项以及不同编辑模式下启用RTE的组件的用户体验因RTE配置而异。
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>编辑模式</th> 
-   <th>编辑区域</th> 
-   <th>建议启用的功能<br /> </th> 
-   <th>触控UI</th> 
-   <th>经典 UI</th> 
-  </tr> 
-  <tr> 
-   <td>内嵌</td> 
-   <td>就地编辑，以便快速进行小编辑；不打开对话框即可设置格式</td> 
-   <td>最低限度的RTE功能</td> 
-   <td>Y</td> 
-   <td>Y</td> 
-  </tr> 
-  <tr> 
-   <td>RTE全屏</td> 
-   <td>覆盖整个页面<br /> </td> 
-   <td>所有必需的RTE功能<br /> </td> 
-   <td>Y</td> 
-   <td>N<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>对话框</td> 
-   <td>对话框，但不覆盖整个页面</td> 
-   <td>经典UI中所需的所有RTE功能；审慎地启用触控UI中的功能<br /> </td> 
-   <td>Y</td> 
-   <td>Y</td> 
-  </tr> 
-  <tr> 
-   <td>全屏对话框<br /> </td> 
-   <td>与全屏模式相同；包含对话框的字段，同时包含RTE<br /> </td> 
-   <td>所有必需的RTE功能</td> 
-   <td>Y</td> 
-   <td>N</td> 
-  </tr> 
- </tbody> 
-</table>
+| 编辑模式 | 编辑区域 | 建议启用的功能 | 触控UI | 经典 UI |
+|--- |--- |--- |--- |--- |
+| 内嵌 | 就地编辑，以便快速进行小编辑；不打开对话框即可设置格式 | 最低限度的RTE功能 | Y | Y |
+| RTE全屏 | 覆盖整个页面 | 所有必需的RTE功能 | Y | N |
+| 对话框 | 对话框，但不覆盖整个页面 | 经典UI中所需的所有RTE功能；审慎地启用触控UI中的功能 | Y | Y |
+| 全屏对话框 | 与全屏模式相同；包含对话框的字段，同时包含RTE | 所有必需的RTE功能 | Y | N |
 
 >[!NOTE]
 >
@@ -90,17 +55,17 @@ RTE可配置为启用、禁用和扩展创作组件中的可用功能。 要了�
 
 ### 内联编辑 {#inline-editing}
 
-打开（慢速双击／单击）后，可在页面内编辑内容。 给出了一个包含基本选项的紧凑工具栏。
+打开(慢速多次点按／单击)后，可在页面内编辑内容。 给出了一个包含基本选项的紧凑工具栏。
 
 ![在触屏优化UI中使用基本工具栏进行内联编辑](assets/chlimage_1-405.png)
 
 *图：在触屏优化UI中使用基本工具栏进行内联编辑*
 
-在经典UI中，慢速双击组件可进行内联编辑，橙色轮廓可高亮显示内容。 如果内容查找器处于打开状态，则窗口顶部将显示一个包含可用RTE格式选项的工具栏。 如果内容查找器未打开，则不显示格式选项，您只能进行基本的文本编辑。
+在经典UI中，慢速多次单击组件可进行内联编辑，橙色轮廓可高亮显示内容。 如果内容查找器处于打开状态，则窗口顶部将显示一个包含可用RTE格式选项的工具栏。 如果内容查找器未打开，则不显示格式选项，您只能进行基本的文本编辑。
 
 ### Full screen editing {#full-screen-editing}
 
-AEM组件可以在全屏视图中打开，从而隐藏页面内容并占据可用屏幕。 考虑对内联编辑的详细版本进行全屏编辑，因为它提供的编辑选项最多。 使用内联编辑模式时，可 ![以从紧凑工具栏中单击rte_fullscreen](assets/rte_fullscreen.png)，打开它。
+AEM组件可以以全屏视图打开，从而隐藏页面内容并占据可用屏幕。 考虑对内联编辑的详细版本进行全屏编辑，因为它优惠的编辑选项最多。 使用内联编辑模式时，可 ![以从紧凑工具栏中单击rte_fullscreen](assets/rte_fullscreen.png)，打开它。
 
 对话框全屏模式提供详细的RTE工具栏以及对话框模式下可用的选项和组件。 它仅适用于包含RTE和其他组件的对话框。
 
@@ -110,7 +75,7 @@ AEM组件可以在全屏视图中打开，从而隐藏页面内容并占据可�
 
 ### 对话框编辑 {#dialog-editing}
 
-在经典UI中双击组件时，将打开一个用于编辑内容的对话框。 该对话框将在现有页面的顶部打开。 在某些特定情况下，对话框会以弹出窗口的形式打开。 例如，当文本组件是多列页面布局中某列的一部分，并且该对话框的可用区域较少时。
+当在经典UI中多次单击组件时，将打开一个用于编辑内容的对话框。 该对话框将在现有页面的顶部打开。 在某些特定情况下，对话框会以弹出窗口的形式打开。 例如，当文本组件是多列页面布局中某列的一部分，并且该对话框的可用区域较少时。
 
 ![触屏优化UI中的对话框编辑模式](assets/dialog_editing_modetouchui.png)
 
@@ -133,96 +98,29 @@ AEM组件可以在全屏视图中打开，从而隐藏页面内容并占据可�
 
 RTE的基本功能是通过特定于相应插件的节点上的 `features` 属性值来激活或取消激活的。
 
-下表列出了当前插件，其中显示：
+下表列表了当前插件，如下所示：
 
 * 带有指向API文档的链接的插件ID。 激活插件时，ID [用作节点名](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)。
 * 属性的允许 `features` 值。
 * 插件提供的功能说明。
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p>插件ID<br /><br /> </p> </td> 
-   <td><p>features<br /> <br /> </p> </td> 
-   <td><p>描述<br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>编辑</p> </td> 
-   <td><p>cut<br /> copy<br /> paste-default<br /> paste-plaintext<br /> paste-wordhtml</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">剪切、复制和三种粘贴模式</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin">findreplace</a></p> </td> 
-   <td><p>find<br /> replace</p> </td> 
-   <td><p>查找并替换。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin">format</a></p> </td> 
-   <td><p>粗斜体<br /> 下划线<br /></p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">基本文本格式</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">图像</a></p> </td> 
-   <td><p>图像</p> </td> 
-   <td><p>设置一些图像属性，如对齐和替换文本。 从内容查找器中拖放图像的基本支持在没有此插件的情况下正常工作。</p> <p><em>注意</em>:创作行为可能因浏览器而异。 例如，Mozilla Firefox提供了重新调整大小功能，但Google Chrome不提供。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">按键</a></p> </td> 
-   <td><p> </p> </td> 
-   <td><p>要定义此值，请参阅制 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize" target="_blank">表符大小</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin">两端对齐</a></p> </td> 
-   <td><p>justifyleft<br /> justifycenter<br /> justifyright</p> </td> 
-   <td><p>段落对齐。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin">链接</a></p> </td> 
-   <td><p>modifylink<br /> unlink锚<br /></p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles" target="_blank">超链接和锚点</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin">列表</a></p> </td> 
-   <td><p>有序<br /> ，无序<br /> ，缩进<br /> 。</p> </td> 
-   <td><p>此插件同时控制缩 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin" target="_blank">进和列表</a>;包括嵌套列表。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin">错误工具</a></p> </td> 
-   <td><p>specialchars<br /> sourceedit</p> </td> 
-   <td>其他工具允许作者输入 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar" target="_blank">特殊字符</a> ，或编辑HTML源。 此外，如果要定义自己 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar" target="_blank">的列表</a> ，还可以添加一整套特殊字符。</td> 
-  </tr> 
-  <tr> 
-   <td><p>Paraformat</p> </td> 
-   <td><p>paraformat</p> </td> 
-   <td>默认段落格式为段落、标题1、标题2和标题3（&lt;p&gt;、&lt;h1&gt;、&lt;h2&gt;和&lt;h3&gt;）。 您可以添 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats" target="_blank">加更多段落格式</a> ，或扩展列表。</td> 
-  </tr> 
-  <tr> 
-   <td><p>拼写检查</p> </td> 
-   <td><p>checktext</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict" target="_blank">语言感知型拼写检查器</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>样式</p> </td> 
-   <td><p>样式</p> </td> 
-   <td>支持使用CSS类进行样式设置。 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="-blank">如果要添加</a> （或扩展）您自己的样式范围以用于文本，请添加新的文本样式。</td> 
-  </tr> 
-  <tr> 
-   <td><p>上标</p> </td> 
-   <td><p>下标<br /> superscript</p> </td> 
-   <td><p>基本格式的扩展，添加子和超脚本。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>表</p> </td> 
-   <td><p>table<br /> remove<br /> insertrow<br /> removerow<br /> column<br /> removecolumn<br /> props mergecells<br /><br /><br /><br /> cells splittroolw selectrocolumnsw</p> </td> 
-   <td>如果 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles" target="_blank">要为整个表或单个单元格添加自己的样式</a>，请参阅配置表样式。</td> 
-  </tr> 
-  <tr> 
-   <td><p>撤消</p> </td> 
-   <td><p>undo<br /> redo</p> </td> 
-   <td>撤消和重做操 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory" target="_blank">作的历史记录大小</a> 。</td> 
-  </tr> 
- </tbody> 
-</table>
+| 插件ID | 功能 | 描述 |
+|--- |--- |--- |
+| 编辑 | 剪切复制粘贴——默认粘贴——纯文本粘贴-wordhtml | [剪切、复制和三种粘贴模式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)。 |
+| [findreplace](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | 查找替换 | 查找并替换。 |
+| [format](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | 粗体下划线 | [基本文本格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)。 |
+| [图像](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | 图像 | 基本图像支持（从内容或内容查找器中拖动）。 根据浏览器的不同，支持对作者具有不同的行为 |
+| [按键](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | 要定义此值，请参阅制 [表符大小](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)。 |
+| [两端对齐](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justiffelft justifycenter justifyright | 段落对齐。 |
+| [链接](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink unlink ancor | [超链接和锚点](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles)。 |
+| [列表](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 有序无序缩进 | 该插件同时控制缩 [进和列表](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin);包括嵌套列表。 |
+| [错误工具](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specifars sourceedit | 其他工具允许作者输入 [特殊字符](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) ，或编辑HTML源。 此外，如果要定义自己 [的列表](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) ，还可以添加一整套特殊字符。 |
+| Paraformat | paraformat | 默认段落格式为段落、标题1、标题2和标题3(`<p>`、 `<h1>`、 `<h2>`和 `<h3>`)。 您可以添 [加更多段落格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) ，或扩展列表。 |
+| 拼写检查 | checktext | [语言感知型拼写检查器](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict)。 |
+| 样式 | 样式 | 支持使用CSS类进行样式设置。 [如果要添加](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) （或扩展）您自己的样式范围以用于文本，请添加新的文本样式。 |
+| 上标 | 下标上标 | 基本格式的扩展，添加子和超脚本。 |
+| 表 | 表可移去的可插入的REMOVERW可移去的列可移去的列PROPS可移去的SPLITCELL选择列 | 如果 [要为整个表或单个单元格添加自己的样式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)，请参阅配置表样式。 |
+| 撤消 | 撤消重做 | 撤消和重做操 [作的历史记录大小](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) 。 |
 
 >[!NOTE]
 >
@@ -244,12 +142,8 @@ RTE的基本功能是通过特定于相应插件的节点上的 `features` 属�
 >请勿将节点命名为 `cq:inplaceEditing` as `config`。 在节 `cq:inplaceEditing` 点上，定义以下属性：
 >
 >* **名称**: `configPath`
-   >
-   >
-* **类型**: `String`
-   >
-   >
-* **值**:包含实际配置的节点的路径
+>* **类型**: `String`
+>* **值**:包含实际配置的节点的路径
 >
 >
 请勿将RTE配置节点命名为 `config`。 否则，RTE配置仅对管理员有效，对组中的用户无效 `content-author`。
@@ -260,11 +154,11 @@ RTE的基本功能是通过特定于相应插件的节点上的 `features` 属�
 
    当此属性为true时，默认情况下，Richtext编辑是从“foundation-contentloaded”事件开始的。
 
-   要防止这种情况发生，请 `customStart` 将属 `True`性设置为并触发“rte-start”事件以开始RTE编辑。 当此属性为“true”时，默认行为（单击时启动rte）不起作用。
+   要避免这种情况，请将属性设 `customStart` 置为 `True`并触发“rte-开始”事件以开始RTE编辑。 当此属性为“true”时，默认行为(单击时的rte开始)不起作用。
 
-* `customStart`:将在RTE节点上定义的此Boolean属性设置为 `True`，以通过触发事件来控制何时启动RTE `rte-start`。
+* `customStart`:将在RTE节点上定义的此Boolean属性设置为 `True`，以通过触发开始来控制何时事件RTE `rte-start`。
 
-* `rte-start`:在RTE开始编 `contenteditable-div` 辑RTE时触发此事件。 仅当设置为 `customStart` true时，此选项才有效。
+* `rte-start`:在RTE事件编辑RTE `contenteditable-div` 时触发此开始。 仅当设置为 `customStart` true时，此选项才有效。
 
 在触屏启用对话框中使用RTE时，必须将属性设 `useFixedInlineToolbar` 置为true以避免出现问题。
 
@@ -273,7 +167,6 @@ RTE的基本功能是通过特定于相应插件的节点上的 `features` 属�
 RTE功能通过一系列插件提供，每个插件都具有features属性。 您可以配置features属性以启用或禁用每个插件的各种功能。
 
 有关RTE插件的详细配置，请参 [阅如何激活和配置RTE插件](/help/sites-administering/configure-rich-text-editor-plug-ins.md)。
-
 
 下载此示例配置以了解如何配置RTE。 在此包中，所有功能均已启用。
 
@@ -343,7 +236,7 @@ AEM允许您针对不同的编辑模式以不同方式为富文本编辑器配�
 
 内联模式和全屏模式使用不同的UI设置。 工具栏属性用于指定工具栏的按钮。 例如，如果按钮本身是功能(例如， `Bold`)，则它被指定为 `PluginName#FeatureName` (例如， `links#modifylink`)。 如果按钮是弹出窗口（包含插件的某些功能），则将其指定为( `#PluginName` 例如， `#format`)。 分隔符(|)可以使用“-”指定一组按钮之间的值。
 
-内嵌模式或全屏模式下的弹出节点包含正在使用的浏览器列表。 节点下的每个 `popovers` 子节点都以插件命名(例如， `format`)。 它有一个 `items` 包含插件功能列表的属性(例如， `format#bold`)。
+内嵌模式或全屏模式下的弹出节点包含使用的浏览器的列表。 节点下的每个 `popovers` 子节点都以插件命名(例如， `format`)。 它有一个 `items` 包含插件功能列表的属性(例如， `format#bold`)。
 
 ## RTE用户界面设置和内容策略 {#rtecontentpolicies}
 
@@ -404,7 +297,7 @@ AEM允许您针对不同的编辑模式以不同方式为富文本编辑器配�
 
 1. 叠加节 `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` 点 `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` 和 `/apps`下。
 
-   从中删 `cq.authoring.dialog` 除类 `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` 别并将其添加到 `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`。
+   将类别 `cq.authoring.dialog` 从 `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` 中删除并添加到 `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`。
 
 1. 将页面中包含的任何其他依赖关系从更改为 `rte.coralui3` 其他 `rte.coralui2`。 例如，在覆盖下的节点 `/libs/mcm/campaign/components/touch-ui/clientlibs/rte` 后， `/apps`将对它的任何依赖关系从更 `rte.coralui3` 改为 `rte.coralui2`。
 
@@ -423,20 +316,20 @@ AEM允许您针对不同的编辑模式以不同方式为富文本编辑器配�
 * [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) CQ.form.RichText组件提供了一个用于编辑样式文本信息（富文本）的表单字段。 要了解富文本表单的所有可用参数，请参阅配置选项。
 * RichText组件使用 [CQ.form.rte.plugins.Plugin下列出的插件提供各种功能](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)。 对于每个插件：
 
-   * 有关可启用（或禁用）的功能的详细信息，请参阅功能
-   * 有关相应插件的详细配置，请参阅所有可用参数的配置选项
+   * 有关可启用（或禁用）的功能的详细信息，请参阅功能。
+   * 有关相应插件的详细配置，请参阅所有可用参数的配置选项。
 
 * 还提供有关链接的HTML规则的更多信息。
 
-以上选项可用于扩展和自定义您自己的RTE。 例如，要在创建链接时列出页面中可用的锚点，您可以提供您自己的锚点实现 `LinkPlugin`。
+以上选项可用于扩展和自定义您自己的RTE。 例如，要在创建链接时列表页面中可用的锚点，您可以提供您自己的实施 `LinkPlugin`。
 
 ## 已知限制 {#known-limitations}
 
 AEM RTE功能有以下限制：
 
-* RTE功能仅在AEM组件对话框中受支持。 触屏优化UI上的页面属性和基架等向 [导或基础表单](../sites-developing/page-properties-views.md)[不支持RTE](../sites-authoring/scaffolding.md) 。
+* RTE功能仅在AEM组件对话框中受支持。 触屏优化UI上的页面属性和基架等向 [导或基础表单](/help/sites-developing/page-properties-views.md)[不支持RTE](/help/sites-authoring/scaffolding.md) 。
 
-* AEM在混合设备 [上不工作](../release-notes/known-issues.md)。
+* AEM在混合设备 [上不工作](/help/release-notes/known-issues.md)。
 
 * 请勿命名RTE配置节点 `config`。 否则，RTE配置仅对管理员有效，对组中的用户无效 `content-author`。
 

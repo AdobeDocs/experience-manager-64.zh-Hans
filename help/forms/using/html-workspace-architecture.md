@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -21,9 +21,9 @@ AEM Forms工作区是一个托管在CRX™上的Web应用程序。 在浏览器�
 
 应用程序访问REST端点上的AEM Forms服务器以执行以下操作：
 
-* 获取用户任务、进程起始点、进程历史记录和用户信息
+* 获取用户任务、进程起点、进程历史记录和用户信息
 * 对任务执行操作
-* 数据库中的查询任务
+* 查询数据库任务
 * 更新用户首选项等
 
 AEM Forms服务器通过JDBC访问AEM Forms数据库。 数据库保留任务、进程及其实例、用户和相关信息。
@@ -34,5 +34,3 @@ AEM Forms工作区设计为模块化的JavaScript™组件，可单独自定义�
 
 * `adobe-lc-workspace-pkg-<version>.zip`:它是CRX包，即，可以使用包管理器在CRX中部署它。
 * `adobe-lc-workspace-<version>-src.zip`:它是一个存档，包含AEM Forms工作区的完整代码和用于创建部署包的脚本——发运、调试和开发包。
-
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

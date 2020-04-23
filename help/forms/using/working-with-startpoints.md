@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -20,31 +20,29 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 >[!NOTE]
 >
->在提及此概念时，术语起始点、开始过程和表单可交互使用。
+>术语起点、开始过程和表单在提及此概念时可互换使用。
 
 要从AEM Forms应用程序启动进程，您需要在进程中具有 **Workspace** 类型的起点。 此外，您还需要为起点选 **[!UICONTROL 择“在Mobile Workspace中查看]** ”选项。
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
-**要启动在工作台中定义的流程，请执行以下操作：**
+**要开始在工作台中定义的流程，请执行以下操作：**
 
-1. 要查看AEM Forms应用程序中可用的起点，请转到“主 [页”屏幕](/help/forms/using/home-screen.md)。
+1. 要视图AEM Forms应用程序中可用的起点，请转到主 [屏幕](/help/forms/using/home-screen.md)。
 1. 默认情 **[!UICONTROL 况下]** ，在“主页”屏幕上 **[!UICONTROL 显示“所有表单]** ”列表。
 
-   起始点与表单关联。 点按列表中关联的起始点表单以将其打开。
+   起始点与表单关联。 点按列表中关联的起点表单以将其打开。
 
    将打开与起始点关联的表单。
 
 1. 在“起点”表单中输 **[!UICONTROL 入详细信息]** 。
 
-   您可以使用附件按钮向此任务添加 [注释](/help/forms/using/add-attachments.md) 。
+   您可以使用附件按钮向此任务添 [加注释](/help/forms/using/add-attachments.md) 。
 
 1. 填写表单后，点按“提 **交** ”按钮。
 
 如果应用程序处于脱机状态，则表单及其数据将保存在“发件箱”文件夹中。
 
-如果应用程序处于联机状态，则任务将与AEM Forms服务器同步，并分配给进程中指定的用户。
+如果应用程序处于联机状态，则任务将与AEM Forms服务器同步，并分配给在进程中指定的用户。
 
-要处理任务列表中的任务，请参阅打 [开任务](/help/forms/using/open-task.md)。
-
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**
+要在任务列表中使用任务，请参阅 [打开任务](/help/forms/using/open-task.md)。

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -22,7 +22,7 @@ HTML5表单服务代理是为提交服务注册代理的配置。 要配置服�
 
 服务代理消除了以下问题：
 
-* HTML5表单工作流程要求为HTML5表单用户打开提交服务“/content/xfaforms/submission/default”。 它使AEM服务器面向更广泛的意外受众。
+* HTML5表单工作流程要求为HTML5表单用户打开提交服务“/content/xfaforms/submission/default”。 它使AEM服务器面临更广泛的意外受众。
 * 服务URL嵌入到表单的运行时模型中。 无法更改服务URL路径。
 * 提交过程分为两步。 要提交表单数据，提交至少需要两次到服务器的旅程。 因此，增加了服务器上的负载。
 * HTML5表单以POST请求（而非PDF请求）发送数据。 对于同时包含PDF和HTML5表单的工作流程，需要两种不同的处理提交的方法。
@@ -31,7 +31,7 @@ HTML5表单服务代理是为提交服务注册代理的配置。 要配置服�
 
 HTML5表单可以使用以下拓扑连接到AEM服务器。
 
-* AEM server或HTML5表单通过POST将数据发送到服务器的拓扑。
+* AEM Server或HTML5表单通过POST将数据发送到服务器的拓扑。
 * 代理服务器向服务器发送POST数据的拓扑。
 
 ![HTML5表单服务代理拓扑](assets/topology.png)
@@ -42,7 +42,7 @@ HTML5表单连接到AEM服务器以运行服务器端脚本、Web服务和提交
 
 ### 执行服务器端脚本和Web服务 {#execute-server-sided-scripts-and-web-services}
 
-标记为在服务器上运行的脚本称为服务器端脚本。 下表列出了服务器端脚本和Web服务中使用的所有参数。
+标记为在服务器上运行的脚本称为服务器端脚本。 下表列表了服务器端脚本和Web服务中使用的所有参数。
 
 <table> 
  <tbody> 
@@ -87,7 +87,7 @@ HTML5表单连接到AEM服务器以运行服务器端脚本、Web服务和提交
 
 ### 提交数据 {#submit-data}
 
-单击“提交”按钮后，HTML5表单会向服务器发送数据。 下表列出了HTML5表单发送到服务器的所有参数。
+单击“提交”按钮后，HTML5表单会向服务器发送数据。 下表列表了HTML5表单发送到服务器的所有参数。
 
 <table> 
  <tbody> 
@@ -133,4 +133,3 @@ HTML5表单连接到AEM服务器以运行服务器端脚本、Web服务和提交
 
 * 在向服务器发送数据（POST请求）之前，HTML5表单会验证服务器的连接性和可用性。 为验证连接性和可用性，HTML表单向服务器发送空头请求。 如果服务器可用，HTML5表单会向服务器发送数据（POST请求）。 如果服务器不可用，则显示一条错 *误消息“无法连接到服务器* ”。 提前检测可以防止用户重新填写表单的麻烦。 代理servlet处理head请求且不引发异常。
 
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

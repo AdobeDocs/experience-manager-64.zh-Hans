@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -74,8 +74,6 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 1. 重新启动工作区并清除浏览器缓存，以使更改可见。
 
-![](assets/change_font_before.png) change_font_before图&#x200B;****&#x200B;中：字 *体自定义前的顶部导航栏*
+![change_font_before图](assets/change_font_before.png)**中：** 字 *体自定义前的顶部导航栏*
 
-![](assets/change_font_after.png) change_font_after ****&#x200B;图：自定义 *第一个选项卡的字体后的顶部导航栏*
-
-[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)
+![change_font_after](assets/change_font_after.png)**图：** 自定义 *第一个选项卡的字体后的顶部导航栏*

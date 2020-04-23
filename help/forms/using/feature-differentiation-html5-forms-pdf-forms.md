@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
   <tr>
    <td>条码<br /> </td> 
    <td>在用户界面级别不可用。 </td> 
-   <td>受支持</td> 
+   <td>支持</td> 
   </tr>
   <tr>
    <td>签名字段<br /> </td> 
@@ -38,8 +38,8 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
   </tr>
   <tr>
    <td>数据合并</td> 
-   <td>受支持</td> 
-   <td>受支持</td> 
+   <td>支持</td> 
+   <td>支持</td> 
   </tr>
   <tr>
    <td>图像</td> 
@@ -48,13 +48,13 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
   </tr>
   <tr>
    <td>分页<br /> </td> 
-   <td><p>HTML5表单被分成多个面板和框，以使其具有与PDF表单相似的外观。 页面大小会动态计算。 如果HTML5表单中页面的所有内容被删除或标记为隐藏，则空白页面将被隐藏，空白页面上方和下方的页面之间不显示空白（空白）。</p> <p>如果数据合并或脚本向页面添加内容，则页面的长度会扩展以容纳新添加的内容。 表单中不会添加新页面以容纳新添加的内容。 </p> <p><strong></strong> 注意：当HTML5表单中页面的所有内容被删除或标记为隐藏时，空白页面（空白）在第1页和第2页之间保持可见，但在任何其他页面之间不可见。</p> </td> 
+   <td><p>HTML5表单被分成多个面板和框，以使其具有与PDF表单相似的外观。 页面大小会动态计算。 如果HTML5表单中页面的所有内容被删除或标记为隐藏，则空白页面将被隐藏，空白页面上方和下方的页面之间不显示空白（空白）。</p> <p>如果数据合并或脚本向页面添加内容，则页面的长度会扩展以容纳新添加的内容。 表单中不会添加新页面以容纳新添加的内容。 </p> <p><strong>注意：</strong> 当HTML5表单中页面的所有内容被删除或标记为隐藏时，空白页面（空白）在第1页和第2页之间保持可见，但在任何其他页面之间不可见。</p> </td> 
    <td>PDF中的分页取决于合并的数据内容或用户内容，并且页面数量会据此增加／减少。</td> 
   </tr>
   <tr>
    <td>页眉／页脚 </td> 
-   <td>受支持. <br /> 由 <br /> 于HTML5移动表单不支持分页，因此页眉和页脚只显示一次。 但是，您可以在布局中设置它们，使其显示在移动表单预览的多个位置。<br /> </td> 
-   <td>受支持.</td> 
+   <td>支持. <br /> 由 <br /> 于HTML5移动表单不支持分页，因此页眉和页脚只显示一次。 但是，您可以在布局中设置它们，使其显示在移动表单预览的多个位置。<br /> </td> 
+   <td>支持.</td> 
   </tr>
   <tr>
    <td>自定义构件</td> 
@@ -73,12 +73,11 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
   </tr>
   <tr>
    <td>支持从右至左语言 </td> 
-   <td>受支持</td> 
-   <td>受支持</td> 
+   <td>支持</td> 
+   <td>支持</td> 
   </tr>
  </tbody>
 </table>
 
 按照最佳实践为HTML5再现启用表单模板，并确保HTML5表单和基于XFA的PDF的行为和外观一致。 有关最佳实践的详细列表，请参 [阅设计HTML5表单的最佳实践。](/help/forms/using/best-practices-for-html5-forms.md)
 
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

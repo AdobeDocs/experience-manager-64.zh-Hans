@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -92,5 +92,3 @@ AEM Forms管理员可自定义工作区以创建两个不同的URL，并使两�
 1. 在的属 `ws2`性中，将值更 `sling:redirect` 改为 `content/ws2`。
 
 1. 将值更 `sling:match` 改为 `^[^/\||]/[^/\||]/ws2$`。
-
-[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)

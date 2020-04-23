@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -40,9 +40,9 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
        });
    ```
 
-1. 在/content下按名称和类型创 `sampleApplication` 建节点 `nt:unstructured`。 在此节点的属性中，添加 `sling:resourceType` 类型String和value `sampleApplication`。 在此节点的“访问控制列表”中，添加一个允许jcr: `PERM_WORKSPACE_USER` read权限的条目。 此外，在“访问控制列表”中，添 `/apps/sampleApplication` 加允许jcr:read权 `PERM_WORKSPACE_USER` 限的条目。
+1. 在/content下按名称和类型创 `sampleApplication` 建节点 `nt:unstructured`。 在此节点的属性中，添加 `sling:resourceType` 类型String和value `sampleApplication`。 在此节点的访问控制列表中，添加一个允许jcr:read权 `PERM_WORKSPACE_USER` 限的条目。 此外，在访问控制列表中，添 `/apps/sampleApplication` 加允许jcr:read权 `PERM_WORKSPACE_USER` 限的条目。
 1. 在更 `/apps/sampleApplication/wscomponents/js/registry.js` 新从到的模板 `/lc/libs/ws/` 值 `/lc/apps/sampleApplication/wscomponents/` 路径中。
-1. 在您的门户主页JSP文件( `/apps/sampleApplication/GET.jsp`)中，添加以下代码，以在门户中包含所需的组件。
+1. 在您的门户主页JSP文件( `/apps/sampleApplication/GET.jsp`)中，添加以下代码以在门户中包含所需的组件。
 
    ```as3
    <script data-main="/lc/apps/sampleApplication/wscomponents/js/demomain" src="/lc/apps/sampleApplication/wscomponents/js/libs/require/require.js"></script>
@@ -57,7 +57,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
    >
    >呈现时，每个组件都会添加到组件标签（具有类组件）。 确保您的主页包含这些标记。 请参阅AEM `html.jsp` Forms工作区的文件，进一步了解这些基本控件标签。
 
-1. 要自定义组件，您可以按如下方式扩展所需组件的现有视图：
+1. 要自定义组件，您可以按如下方式扩展所需组件的现有视图:
 
    ```as3
    define([ 
@@ -79,7 +79,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
    });
    ```
 
-1. 修改门户CSS以配置门户上所需组件的布局、位置和样式。 例如，您希望此门户将背景颜色保留为黑色，以便能够很好地查看userInfo组件。 通过按如下方式更改背景颜色可以 `/apps/sampleApplication/wscomponents/css/style.css` 实现此目的：
+1. 修改门户CSS以配置门户上所需组件的布局、位置和样式。 例如，您希望将此门户的背景颜色保留为黑色，以便很好地视图userInfo组件。 通过按如下方式更改背景颜色可以 `/apps/sampleApplication/wscomponents/css/style.css` 实现此目的：
 
    ```as3
    body {
@@ -89,5 +89,3 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
        margin: 0 auto;
    }
    ```
-
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ AEM Forms工作区组件是使用Backbone在MVC架构上设计的。 每个组�
 
 **型号** ，包含骨干型号。
 
-**视图** “包含骨干视图”。
+**视图** ，包含骨干视图。
 
 **模板** 仅包含组件的HTML模板。
 
@@ -37,4 +37,3 @@ AEM Forms工作区组件是使用Backbone在MVC架构上设计的。 每个组�
 
 **util** 包含可由多个组件使用的通用实用程序。
 
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

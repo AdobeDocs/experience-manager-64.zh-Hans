@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -21,8 +21,8 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
 1. 通过访问，登录到CRXDE Lite `https://[server]:[port]/lc/crx/de/index.jsp`。
 1. 如果文件夹不 `ws`存在 `/apps`，请创建名为的文件夹。 单击“ **[!UICONTROL 全部保存]**”。
-1. 浏览至 `/apps/ws`，然后导航到“访问控 **[!UICONTROL 制”选项卡]** 。
-1. 在“访 **[!UICONTROL 问控制]** ”列表中，单击 **[!UICONTROL +]** 以添加新条目。 再次 **[!UICONTROL 单击]** +。
+1. 浏览至 `/apps/ws`访问控制，然后导航至 **** 。
+1. 在 **[!UICONTROL 访问控制列表]** ，单击 **[!UICONTROL +]** 以添加新条目。 再次 **[!UICONTROL 单击]** +。
 1. 搜索并选择 **[!UICONTROL PERM_WORKSPACE_USER]** Principal。
 
    ![选择PERM_WORKSPACE_USER主体作为自定义HTML工作区的常规步骤的一部分](assets/perm_workspace_user.png)
@@ -90,4 +90,3 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
    访问URL, `https://[server]:[port]/lc/ws` 然后使用管理员／密码凭据登录。 浏览器将重定向到 `https://[server]:[port]/lc/apps/ws/index.html`。
 
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

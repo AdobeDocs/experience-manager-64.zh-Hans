@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -25,8 +25,8 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 下图注释了默认“主页”屏幕上对基本组件的调用。
 ![Forms应用程序主屏幕](assets/home-screen-1.png)[单击可放大](assets/home-screen-1-1.png)
 
-1. **菜单按钮**:点按**菜单**按钮，导航到任务、表单、发件箱和设置。 如果您的AEM Forms应用程序已连接到AEM Forms JEE服务器，则可以看到任务选项。 “任务”选项还存储从进程中的任务创建的草稿。 对于AEM Forms OSGi服务器，“任务”选项处于隐藏状态。 发件箱存储保存的表单和草稿，然后再与服务器同步。 当应用程序与服务器同步时，输出框中保存的所有表单和草稿将上传到AEM [表单服务器](/help/forms/using/sync-app.md)。 有关设置的信息，请参阅更 [新常规设置](/help/forms/using/update-general-settings.md)。
-1. **任务或表单**:点按列出的要处理的任务或表单。
+1. **菜单按钮**:点按**菜单**按钮可导航到任务、表单、发件箱和设置。 如果您的AEM Forms应用程序已连接到AEM Forms JEE服务器，则可以看到任务选项。 任务选项还存储从进程中的任务创建的草稿。 对于AEM Forms OSGi服务器，任务选项处于隐藏状态。 发件箱存储保存的表单和草稿，然后再与服务器同步。 当应用程序与服务器同步时，输出框中保存的所有表单和草稿将上传到AEM [表单服务器](/help/forms/using/sync-app.md)。 有关设置的信息，请参阅更 [新常规设置](/help/forms/using/update-general-settings.md)。
+1. **任务或表单**:点按列出的任务或要处理的表单。
 1. **水平省略号**:表示可对表单执行操作。 点击省略号会显示作者提供的操作和描述。 点 **击省略号时** ，将显 **** 示“删除草稿和完成”选项。
 1. **刷新图标**:点按刷新图标以将应用程序与AEM Forms服务器同步。
 
@@ -40,4 +40,3 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 但是，在HTML Workspace中所做的更改会影响所有登录到AEM Forms服务器的AEM Forms应用程序用户。
 
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

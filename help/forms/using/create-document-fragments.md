@@ -1,21 +1,21 @@
 ---
 title: “教程：创建文档片段”
-seo-title: 为交互通信创建文档片段
-description: 为交互通信创建文档片段
-seo-description: 为交互通信创建文档片段
+seo-title: 为交互式通信创建文档片段
+description: 为交互式通信创建文档片段
+seo-description: 为交互式通信创建文档片段
 uuid: 215d09a6-949c-45ef-b2b0-88cd0cb4b99c
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
 
 # 教程：创建文档片段 {#tutorial-create-document-fragments}
 
-为交互通信创建文档片段
+为交互式通信创建文档片段
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -24,27 +24,27 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 文档片段是用于构成交互式通信的通信的可重用组件。 文档片段有以下类型：
 
 * 文本——文本资产是由一个或多个文本段落组成的一段内容。 段落可以是静态的或动态的。
-* 列表——列表是一组文档片段，包括文本、列表、条件和图像。
+* 列表-列表是一组文档片段，包括文本、列表、条件和图像。
 * 条件——条件允许您根据从表单数据模型接收的数据定义交互通信中包含的内容。
 
-本教程将指导您逐步根据“规划交互式通信”部分中提供的剖析结构创建 [多个文本文档片段](/help/forms/using/planning-interactive-communications.md) 。 在本教程的结尾，您将能够：
+本教程将指导您逐步根据“规划交互式通信”部分中提供的解剖结构创建 [多个文本文档片段](/help/forms/using/planning-interactive-communications.md) 。 在本教程的结尾，您将能够：
 
 * 创建文档片段
 * 创建变量
 * 创建和应用规则
 
-![text_document_fragments](assets/text_document_fragments.gif)
+![text_文档_fragments](assets/text_document_fragments.gif)
 
-以下是本教程中创建的文档片段列表：
+以下是本教程中创建的文档片段的列表:
 
 * [帐单详细信息](/help/forms/using/create-document-fragments.md#step-create-bill-details-text-document-fragment)
 * [客户详细信息](/help/forms/using/create-document-fragments.md#step-create-customer-details-text-document-fragment)
 * [帐单摘要](/help/forms/using/create-document-fragments.md#step-create-bill-summary-text-document-fragment)
 * [费用汇总](/help/forms/using/create-document-fragments.md#step-create-summary-of-charges-text-document-fragment)
 
-每个文档片段都包括带有静态文本的字段、从表单数据模型接收的数据以及使用代理UI输入的数据。 “计划交互式通信”部分中描 [述了所有这些字段](/help/forms/using/planning-interactive-communications.md) 。
+每个文档片段包括带有静态文本的字段、从表单数据模型接收的数据以及使用代理UI输入的数据。 “计划交互式通信”部分中描 [述了所有这些字段](/help/forms/using/planning-interactive-communications.md) 。
 
-在本教程中创建文档片段时，会为使用代理UI接收数据的字段创建变量。
+在本教程中创建文档片段时，将为使用代理UI接收数据的字段创建变量。
 
 如 **Create form data model(创建表单数据模型**[](/help/forms/using/create-form-data-model0.md) )部分中所述，使用FDM_Create_First_IC作为表单数据模型以在本教程中创建文档片段。
 
@@ -61,7 +61,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 执行以下步骤，为以Agent UI为数据源的字段创建变量，创建静态文本，并在文档片段中使用表单数据模型元素：
 
-1. 选择“ **表单** ”>“ **文档片段”**。
+1. 选择“ **[!UICONTROL 表单]** ”>“ **[!UICONTROL 文档片段”]**。
 
 1. 选择 **创建** > **文本**。
 1. 指定以下信息：
@@ -93,11 +93,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 您的计划
    ![variable_bill_details_static_text](assets/variable_bill_details_static_text.png)
 
-1. 将光标放在“发票 **否********** ”字段旁边，然后双击左窗格“变量”标签中的“发票编号”变量。
-1. 将光标放在“帐单期间”字 **段旁边** ，然后双击“帐单期间” **变量** 。
-1. 将光标放在“帐单日期”字 **段旁** ，然后双击“帐单日 **期”变量** 。
-1. 选择左 **窗格中的“数据模型对象** ”选项卡。
-1. 将光标放在“您的计 **划** ”字段旁，然后双击 **customer** > **customerplan** 属性。
+1. 将光标放在“发票否”字 **段旁边** ，并在左窗格的“变量”标签中按住 **InvoiceNumber** （发票编号） **** 变量。
+1. 将光标放在“帐单期间”字 **段旁边** ，然后按住多次单 **击“帐单期间** ”变量。
+1. 将光标放在“帐单日期”字 **段旁边** ，然后按住多次单 **击“帐单日期** ”变量。
+1. 选择左 **窗格中的** “数据模型对象”选项卡。
+1. 将光标放在“您的计 **划** ”字段旁边，并按住多次 **单击** customer **>** customerplan属性。
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
@@ -120,7 +120,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 执行以下步骤，为以Agent UI为数据源的字段创建变量，创建静态文本，并在文档片段中使用表单数据模型元素：
 
-1. 选择“ **表单** ”>“ **文档片段”**。
+1. 选择“ **[!UICONTROL 表单]** ”>“ **[!UICONTROL 文档片段”]**。
 1. 选择 **创建** > **文本**。
 1. 指定以下信息：
 
@@ -141,8 +141,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 数字连接：数字类型
 
 
-1. 选择“ **数据模型对象** ”选项卡，将光标放在右侧窗格中，然后双击 **customer** > **name** 属性。
-1. 按Enter将光标移到下一行，然后双击 **customer** > **address** 属性。
+1. 选择“ **数据模型对象** ”选项卡，将光标放在右侧窗格中，然后多次单击 **customer** > **name** 属性。
+1. 按Enter将光标移到下一行，然后多次并单击 **customer** > **address** 属性。
 1. 使用右侧窗格为以下字段创建静态文本：
 
    * 移动号码
@@ -153,12 +153,12 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 连接数
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
-1. 将光标放在“ **Mobile Number** ”字段旁边，然后双击 **customer** > **mobilenum** 属性。
-1. 将光标放在“替 **代联系人号码** ”字段旁，双击** customer** > **alternatemobilenumber属性** 。
-1. 将光标放在“关系编 **号** ”字段旁边，并双击 **customer** > **relationshipnumber属性** 。
-1. 选择“ **变量** ”选项卡，将光标放在“供应地点”字 **段旁边，然后双击“** Placesupply **** ”变量。
-1. 将光标放在“状 **态代码** ”字段旁，并双击 **Statecode变量** 。
-1. 将光标放在“连接 **数”字段旁** ，然后双击“ **Numberconnections** ”变量。
+1. 将光标放在“ **Mobile Number** ”字段旁边，并按住多次 **单击customer** > **mobilenum** 属性。
+1. 将光标放在“替代联系 **人号码** ”字段旁边，并按住多次单击** customer** > **alternatemobilenumber属性** 。
+1. 将光标放在“关系编号” **字段旁边** ，并按住多次键 **单击customer** > **relationshipnumber属性** 。
+1. 选择“ **变量** ”选项卡，将光标放在“供应地点”字 **段旁边，然后按住多次单击“** Placesupply **** ”变量。
+1. 将光标放在“状态代码”字 **段旁边** ，并多次单击“状态 **代码”变量** 。
+1. 将光标放在“连接数 **”字段旁边** ，并按多次单击“ **Numberconnections** ”变量。
 
    ![customer_details_df2](assets/customer_details_df2.png)
 
@@ -166,7 +166,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 第3步：创建帐单汇总文本文档片段 {#step-create-bill-summary-text-document-fragment}
 
-“清单汇总”单据片段包含以下字段：
+“清单汇总”文档片段包括以下字段：
 
 | 字段 | 数据源 |
 |---|---|
@@ -179,7 +179,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 执行以下步骤，为以Agent UI为数据源的字段创建变量，创建静态文本，并在文档片段中使用表单数据模型元素：
 
-1. 选择“ **表单** ”>“ **文档片段”**。
+1. 选择“ **[!UICONTROL 表单]** ”>“ **[!UICONTROL 文档片段”]**。
 1. 选择 **创建** > **文本**。
 1. 指定以下信息：
 
@@ -213,20 +213,20 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 到期日后的延迟付款费用为20美元
    ![bill_summary_static](assets/bill_summary_static.png)
 
-1. 将光标放在“上一平 **衡** ”字段旁边，并双击“ **Previousbalance** ”变量。
-1. 将光标放在“付款”字 **段旁** ，然后双击“付款” **变量** 。
-1. 将光标放在“调整 **”字段旁** ，然后双击“调 **整** ”变量。
-1. 将光标放在“到期 **金额** ”字段旁，并双击“ **Amountdue** ”变量。
-1. 将光标放在“到期日 **期** ”字段旁边，并双击 **Duedate** 变量。
-1. 选择“数 **据模型对象** ”选项卡，将光标放在右侧窗格中“费用”当前开单期 **，然后双击清单** > ******** Usagecharges属性。
+1. 将光标放在“上一平衡”字 **段旁边** ，并按住多次单击“ **上一平衡** ”变量。
+1. 将光标放在“付款”字 **段旁** ，然后多次单击“付款” **变量** 。
+1. 将光标放在“调整”字 **段旁** ，然后多次单击“调 **整** ”变量。
+1. 将光标放在“到期 **金额** ”字段旁边，并按住多次单 **击“Amountdue** ”变量。
+1. 将光标放在“到期日 **期** ”字段旁边，并按住多次单 **击Duedate** 变量。
+1. 选择“数 **据模型对象** ”选项卡，将光标放在右侧窗格中的“ **Charges current bill period****”（当前开单期间收费）字段旁，并按住“多次”单击“Bills** > **UsagechargesProperty”(清单** > UsagechargesProperty)。
 
    ![bill_summary_static_variables](assets/bill_summary_static_variables.png)
 
 1. 单击 **保存** ，以创建Customer Details（客户详细信息）文本文档片段。
 
-## 第4步：创建费用文本文档片段的摘要 {#step-create-summary-of-charges-text-document-fragment}
+## 第4步：创建费用汇总文本文档片段 {#step-create-summary-of-charges-text-document-fragment}
 
-费用文档片段的汇总包括以下字段：
+“费用汇总”文档片段包括以下字段：
 
 | 字段 | 数据源 |
 |---|---|
@@ -242,7 +242,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 执行以下步骤以创建静态文本并在文档片段中使用表单数据模型元素：
 
-1. 选择“ **表单** ”>“ **文档片段”**。
+1. 选择“ **[!UICONTROL 表单]** ”>“ **[!UICONTROL 文档片段”]**。
 1. 选择 **创建** > **文本**。
 1. 指定以下信息：
 
@@ -265,15 +265,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    ![summary_carges_static](assets/summary_charges_static.png)
 
 1. 选择“数 **据模型对象** ”选项卡。
-1. 将光标放在“呼叫费 **用** ”字段旁边，并双击“ **帐单** >呼叫 **费用** ”属性。
-1. 将光标放在“电话会议 **费用”字段旁** ，并双击“帐单 **** > **confcallcarges** ”属性。
-1. 将光标放在“ **SMS Carges** ( **SMS费用** )”字段旁，然后双击“ **bills** > smscarges（帐单>smscarges）”属性。
-1. 将光标放在“ **Mobile Internet Charges** ”字段旁边，并双击“Bills **** > **internetcharges** ”属性。
-1. 将光标放在“国家漫游 **费用** ”字段旁边，双击“帐单 **** ” **>“国** 家财产”。
-1. 将光标放在“国际漫游 **费用** ”字段旁边，双击“帐单 **** > Roamingintnl **** ”属性。
-1. 将光标放在“增值服 **务费用”字段旁边** ，然后双击“ **帐单** > **vas** ”属性。
-1. 将光标放在“总费 **用** ”字段旁边，并双击“帐单 **** > **Usagecharges** ”属性。
-1. 将光标放在“ **TOTAL PAYABLE** ”字段旁，然后双击“ **Bills** > **Usagecharges** ”属性。
+1. 将光标放在“呼叫费 **用** ”字段旁边，并按住多次键 **单击“帐单** > **呼叫费用** ”属性。
+1. 将光标放在“电话会议费 **用”字段旁** ，并按住多次单击“ **帐单** > **confcallcarges** ”属性。
+1. 将光标放在“ **SMS Carges** ( **SMS费用** )”字段旁边，并按住多次单击“ **bills** > smscarges（帐单）”属性。
+1. 将光标放在“ **Mobile Internet Charges** ”字段旁边，并按住多次键 **单击“bills** > **internetcharges** ”属性。
+1. 将光标放在“国家漫游 **费用** ”字段旁边，并多次键 **击帐单** > **Roaming国家财产** 。
+1. 将光标放在“国际漫游 **费用** ”字段旁边，并按住多次 **单击“帐单** ” **>** “漫游”属性。
+1. 将光标放在“增值服 **务费用”字段旁** ，并按住多次单 **击“帐单** > **vas** ”属性。
+1. 将光标放在“总费用”字 **段旁边** ，并按住多次键 **单击“帐单** ” **>** Usagecharges属性。
+1. 将光标放在“ **TOTAL PAYABLE** ”字段旁边，并按住多次单 **击Bills** > **Usagecharges** 属性。
 
    ![summary_charges_static_fdm](assets/summary_charges_static_fdm.png)
 

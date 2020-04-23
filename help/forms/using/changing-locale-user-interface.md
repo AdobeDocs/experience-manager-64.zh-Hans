@@ -1,8 +1,8 @@
 ---
 title: 更改AEM Forms工作区用户界面的区域设置
 seo-title: 更改AEM Forms工作区用户界面的区域设置
-description: 如何修改AEM Forms工作区以本地化界面上的文本、折叠的类别、队列和进程以及日期选取器。
-seo-description: 如何修改AEM Forms工作区以本地化界面上的文本、折叠的类别、队列和进程以及日期选取器。
+description: 如何修改AEM Forms工作区以本地化文本、折叠的类别、队列和进程，以及界面上的日期选取器。
+seo-description: 如何修改AEM Forms工作区以本地化文本、折叠的类别、队列和进程，以及界面上的日期选取器。
 uuid: f8e7d399-98d9-4655-b51f-0346a5713f06
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
 
 ---
 
@@ -37,7 +37,7 @@ AEM Forms工作区提供针对英语、法语、德语和日语的开箱即用�
 
 1. 登录到CRXDE Lite。
 
-   CRXDE lite的默认URL为 `https://[server]:[port]/lc/crx/de/index.jsp`。
+   CRXDE Lite的默认URL为 `https://[server]:[port]/lc/crx/de/index.jsp`。
 
 1. 导览至该位置并 `apps/ws/locales` 创建新文件夹 `nw.`
 1. 将文件从 `translation.json`位置复 `/apps/ws/locales/en-US` 制到位置 `/apps/ws/locales/nw`。
@@ -51,7 +51,7 @@ AEM Forms工作区提供针对英语、法语、德语和日语的开箱即用�
 
 AEM Forms工作区使用图像显示类别、队列和进程的标题。 您需要开发包来本地化这些标题。 有关创建开发包的详细信息，请参 [阅构建AEM Forms工作区代码。](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
 
-在以下步骤中，假定新的本地化图像文件为 *Categories_nw.png*、 *Queue_nw.png*&#x200B;和 *Processes_nw.png*。 建议的图像宽度为19px。
+在以下步骤中，假定新的本地化图像文件是 *类别_nw.png*、 *Queue_nw.png*&#x200B;和 *Processes_nw.png*。 建议的图像宽度为19px。
 
 >[!NOTE]
 >
@@ -178,18 +178,18 @@ AEM Forms工作区使用图像显示类别、队列和进程的标题。 您需�
    }
    ```
 
-   ```
-   if (locale === 'ja-JP') {
-       $.datepicker.setDefaults($.datepicker.regional.ja);
-   } else if (locale === 'de-DE') {
-       $.datepicker.setDefaults($.datepicker.regional.de);
-   } else if (locale === 'fr-FR') {
-       $.datepicker.setDefaults($.datepicker.regional.fr);
-   } else if (locale === 'nw') {
-       $.datepicker.setDefaults($.datepicker.regional.nw);
-   } else {
-       $.datepicker.setDefaults($.datepicker.regional['']);
-   }
-   ```
+到
 
-[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)
+```
+if (locale === 'ja-JP') {
+    $.datepicker.setDefaults($.datepicker.regional.ja);
+} else if (locale === 'de-DE') {
+    $.datepicker.setDefaults($.datepicker.regional.de);
+} else if (locale === 'fr-FR') {
+    $.datepicker.setDefaults($.datepicker.regional.fr);
+} else if (locale === 'nw') {
+    $.datepicker.setDefaults($.datepicker.regional.nw);
+} else {
+    $.datepicker.setDefaults($.datepicker.regional['']);
+}
+```

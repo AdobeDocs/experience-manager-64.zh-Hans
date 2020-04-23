@@ -1,8 +1,8 @@
 ---
 title: 在HTML5表单中使用涂抹签名
 seo-title: 在HTML5表单中使用涂抹签名
-description: 'HTML5表单在触控设备上的使用越来越多，一个常见要求是支持签名。 在移动设备上对文档进行签名正成为在移动设备上对表单进行签名的一种公认方式。 '
-seo-description: 'HTML5表单在触控设备上的使用越来越多，一个常见要求是支持签名。 在移动设备上对文档进行签名正成为在移动设备上对表单进行签名的一种公认方式。 '
+description: 'HTML5表单在触控设备上的使用越来越多，一个常见要求是支持签名。 在移动设备上签署文档正成为在移动设备上签署表单的一种可接受方式。 '
+seo-description: 'HTML5表单在触控设备上的使用越来越多，一个常见要求是支持签名。 在移动设备上签署文档正成为在移动设备上签署表单的一种可接受方式。 '
 uuid: afac2d37-ef0d-428b-aed7-64a00d62792d
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -62,7 +62,7 @@ HTML5表单在触控设备上的使用越来越多，一个常见要求是支持
 
 ![地理位置](assets/geolocation.png)
 
-******** 答：画笔 **B。橡皮**&#x200B;擦C.**地理位**&#x200B;置D。地理位置信息
+**答：** 画笔 **B。** 橡皮 **擦C.** 地理位 **置D。** 地理位置信息
 
 ### 地理标记 {#geo-tagging}
 
@@ -80,7 +80,7 @@ HTML5表单在触控设备上的使用越来越多，一个常见要求是支持
 
 ### 清除签名 {#clearing-a-signature}
 
-使用此功能时，用户可以单击“橡皮擦 **** ”图标以清除字段，然后重新开始。 如果添加了地理位置信息，则也会清除该信息。
+使用此功能时，用户可以单击“橡皮擦 **** ”图标以清除字段并开始。 如果添加了地理位置信息，则也会清除该信息。
 
 ### 保存签名 {#saving-a-signature}
 
@@ -92,7 +92,7 @@ HTML5表单在触控设备上的使用越来越多，一个常见要求是支持
 
 ### 选择钢笔大小 {#selecting-pen-size}
 
-单击“ **画笔** ”图标以显示可用笔大小列表。 单击或点按钢笔大小以使用相应的钢笔。
+单击“ **画笔** ”图标以显示可用笔大小的列表。 单击或点按钢笔大小以使用相应的钢笔。
 
 ### 从表单中删除签名 {#delete-signatures-from-the-form}
 
@@ -100,5 +100,3 @@ HTML5表单在触控设备上的使用越来越多，一个常见要求是支持
 
 * （移动设备）长按签名字段，然后在确认对话框中点按 **是**。
 * （桌面）将指针悬停在签名字段上，单击“取 **消** ”图标，然后在确认对话框中，单击“ **是”**。
-
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

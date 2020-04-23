@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 2dec23f7-6cca-4cc9-a78a-acd23ae7da5f
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -74,14 +74,14 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 源包含用于构建�
 1. 解压缩目录中的存 `[*User_Home*]/Projects/[your-project]`档。
 1. 导航到您 ` [*User_Home*]/Projects/ `[的项目目录]`/adobe-lc-mobileworkspace-src-[version]/ios` 。
 1. 在Xcode中 `AEM Forms.xcodeproj` 打开项目。
-1. 单击 **AEM Forms**，在 **TARGETS下**，选择 **AEM Forms**。 选择“ **构建设置** ”选项卡，找到“代码签 **名授权** ”部分，在“调试”和“发行”字段中，执行下列操作之一：
+1. 单击 **AEM Forms**，在“目标” **下**，选 **择“AEM Forms**”。 选择“ **构建设置** ”选项卡，找到“代码签 **名授权** ”部分，在“调试”和“发行”字段中，执行下列操作之一：
 
    * 不指定字段以构建标准Mobile Workspace应用程序
    * 如构建适用于iOS的安全AEM Forms应用 [程序以构建安全AEM Forms应用程序中所述](/help/forms/using/building-secure-mobile-workspace-app.md) ，指定要构建的字段。
 
 1. 在“构建 **设置** ”选项卡中，单 **击“全部** ” **，然后单击“**&#x200B;组合”。
 1. 从“设置 **”列表** ，展开“代 **码签名”**。
-1. 对于“ **代码签名标识**”，请选择相应的签名。 有关创建新签名的详细信息，请参阅创 [建和下载开发供应配置文件](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)。
+1. 对于“ **代码签名标识**”，请选择相应的签名。 有关创建新签名的详细信息，请参阅创 [建和下载开发供应用户档案](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)。
 1. 确保为 **Debug**、 **Release**&#x200B;和 **Any iOS SDK选择同**&#x200B;一签名。
 1. 在文件中替换以下代 `AEM Forms-info.plist` 码：
 
@@ -121,7 +121,7 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 源包含用于构建�
 
    >[!NOTE]
    >
-   >仅当AEM Forms应用程序需要连接到不遵循App Transport security要求的服务器时，才需要执行此步骤。
+   >仅当AEM Forms应用程序需要连接到不遵循App Transport Security要求的服务器时，才需要执行此步骤。
 
 1. 在“ **项目**”下，选择“ **AEM Forms** ”并确保为“ **Code Identity Identity**”、“ **Debug Identity”、“RELEASE Signing And********** Any iSDK”选择适当的签名。
 1. 将配置的iPad连接到Mac计算机。
@@ -138,7 +138,7 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 源包含用于构建�
 
 您需要存档Xcode项目以构建安装程序（.ipa文件）和属性列表（.plist文件）文件。 属性列表文件包含托管的内部应用程序的配置信息，如应用程序的名称和托管位置。 有关属性列表文件的详细信息，请参 [阅关于信息属性列表文件](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)。
 
-1. 将配置的iPad连接到Mac计算机。 有关设置iPad的详细信息，请参阅创建和 [下载开发供应配置文件](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
+1. 将配置的iPad连接到Mac计算机。 有关设置iPad的详细信息，请参阅创建和 [下载开发配置用户档案](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
 1. 为 **AEM Forms项目选择已配置的设备** 。
 
    ![ipad-1](assets/ipad-1.png)
@@ -161,5 +161,3 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 源包含用于构建�
 1. 在编辑 `AEM Forms-info.plist` 器中打开文件。
 1. 将。ipa文件URL中的所有空格替换为%20。
 1. 保存并关闭 `AEM Forms-info.plist` 文件。
-
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

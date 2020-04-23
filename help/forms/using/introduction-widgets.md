@@ -1,15 +1,15 @@
 ---
 title: 自适应表单和HTML5表单的外观框架
 seo-title: 自适应表单和HTML5表单的外观框架
-description: 'Mobile Forms将表单模板渲染为HTML5表单。 这些表单使用jQuery、Backbone.js和Onderrowse.js文件来显示和启用脚本。 '
-seo-description: 'Mobile Forms将表单模板渲染为HTML5表单。 这些表单使用jQuery、Backbone.js和Onderrowse.js文件来显示和启用脚本。 '
+description: 'Mobile Forms将表单模板渲染为HTML5表单。 这些表单使用jQuery、Backbone.js和下划线。js文件来显示和启用脚本。 '
+seo-description: 'Mobile Forms将表单模板渲染为HTML5表单。 这些表单使用jQuery、Backbone.js和下划线。js文件来显示和启用脚本。 '
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -22,8 +22,8 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 外观框架依赖各种选项、事件（触发器）和函数来捕获用户与表单的交互，并响应模型更改以通知最终用户。 此外：
 
-* 该框架为字段的外观提供了一组选项。 这些选项是键值对，分为两个类别：常用选项和字段类型特定选项。
-* 外观作为合同的一部分会触发一组事件，如进入和退出。
+* 该框架为字段的外观提供了一组选项。 这些选项是键值对，分为两个类别:常用选项和字段类型特定选项。
+* 外观作为合同的一部分，会触发一组事件，如进入和退出。
 * 实现一组函数需要外观。 有些函数是通用的，而有些函数是特定于字段类型函数的。
 
 ## 常用选项 {#common-options}
@@ -87,9 +87,9 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 ### 与表单框架的交互 {#interaction-with-forms-framework}
 
-要与表单框架交互，构件会触发一些事件以使表单脚本能够工作。 如果构件不抛出这些事件，则在该字段的表单中编写的某些脚本将不起作用。
+要与表单框架交互，构件会触发一些事件，以使表单脚本能够工作。 如果构件不抛出这些事件，则在该字段的表单中编写的某些脚本将不起作用。
 
-#### 由构件触发的事件 {#events-triggered-by-widget}
+#### 事件由构件触发 {#events-triggered-by-widget}
 
 <table> 
  <tbody>
@@ -98,20 +98,20 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
    <th>描述</th> 
   </tr>
   <tr>
-   <td>XFA_ENTER_EVENT</td> 
-   <td>只要字段处于焦点，就会触发此事件。 它允许“enter”脚本在字段上运行。 触发事件的语法是<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td> 
+   <td>XFA_ENTER_事件</td> 
+   <td>只要字段处于焦点，就会触发此事件。 它允许“enter”脚本在字段上运行。 触发事件的语法是<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_事件)<br /> </td> 
   </tr>
   <tr>
-   <td>XFA_EXIT_EVENT</td> 
-   <td>每当用户离开字段时都会触发此事件。 它允许引擎设置字段的值并运行其“退出”脚本。 触发事件的语法是<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td> 
+   <td>XFA_EXIT_事件</td> 
+   <td>只要用户离开字段，就会触发此事件。 它允许引擎设置字段的值并运行其“退出”脚本。 触发事件的语法是<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_事件)<br /> </td> 
   </tr>
   <tr>
-   <td>XFA_CHANGE_EVENT</td> 
-   <td>触发此事件后，引擎将运行写入字段的“change”脚本。 触发事件的语法是<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td> 
+   <td>XFA_CHANGE_事件</td> 
+   <td>触发此事件后，引擎可运行写入字段的“change”脚本。 触发事件的语法是<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_事件)<br /> </td> 
   </tr>
   <tr>
-   <td>XFA_CLICK_EVENT</td> 
-   <td>单击字段时将触发此事件。 它允许引擎运行写在字段上的“单击”脚本。 触发事件的语法是<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td> 
+   <td>XFA_CLICK_事件</td> 
+   <td>单击字段时将触发此事件。 它允许引擎运行写在字段上的“单击”脚本。 触发事件的语法是<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_事件)<br /> </td> 
   </tr>
  </tbody>
 </table>
@@ -132,10 +132,10 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
   </tr>
   <tr>
    <td>单击：function()</td> 
-   <td>将焦点放在字段上并调用XFA_CLICK_EVENT。</td> 
+   <td>将焦点放在字段上并调用XFA_CLICK_事件。</td> 
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /><em>errMessage:表示 </em>error<br /> <em>errorType的字符串：字符串("warning"/"error")</em></p> <p><strong>注意</strong>:仅适用于HTML5表单。</p> </td> 
+   <td><p>markError:function(errorMessage, errorType)<br /> errorMessage <br /><em>:表示 </em>error<br /> <em>errorType的字符串：字符串("warning"/"error")</em></p> <p><strong>注意</strong>:仅适用于HTML5表单。</p> </td> 
    <td>向构件发送错误消息和错误类型。 该构件显示错误。</td> 
   </tr>
   <tr>
@@ -154,7 +154,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 <table> 
  <tbody>
   <tr>
-   <th>Option</th> 
+   <th>选项</th> 
    <th>描述</th> 
   </tr>
   <tr>
@@ -177,7 +177,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 <table> 
  <tbody>
   <tr>
-   <th>Option</th> 
+   <th>选项</th> 
    <th>描述</th> 
   </tr>
   <tr>
@@ -186,7 +186,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
   </tr>
   <tr>
    <td>项目<br /> </td> 
-   <td>要显示为选项的对象数组。 <br /> 每个对象都包含两个属性-<br /> save:要保存的值，显示：值。 <br /> </td> 
+   <td>要显示为选项的对象数组。 每个对象都包含两个属性-<br /> save:要保存的值，显示：值。<br /> <br /> </td> 
   </tr>
   <tr>
    <td><p>可编辑</p> <p><strong>注意</strong>:仅适用于HTML5表单。<br /> </p> </td> 
@@ -212,16 +212,16 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
    <th>描述</th> 
   </tr>
   <tr>
-   <td><p><em> addItem:function(itemValues)<br /> itemValues:包含display的对象并保存值 <br /> {sDisplayVal:&lt;displayValue&gt;, sSaveVal:&lt;save Value&gt;}</em></p> </td> 
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues:包含display的对象并保存值 <br /> {sDisplayVal:&lt;displayValue&gt;, sSaveVal:&lt;save Value&gt;}</em></p> </td> 
    <td>向列表添加项目。</td> 
   </tr>
   <tr>
-   <td>deleteItem<em>:function(nIndex)<br /> nIndex:要从列表中删除的项目的索引<br /></em><br /><br /> </td> 
+   <td>deleteItem<em>:function(nIndex)<br /> nIndex:要从列表中删除的项的索引<br /></em><br /><br /> </td> 
    <td>从列表中删除选项。</td> 
   </tr>
   <tr>
    <td>clearItems:<code> function()</code></td> 
-   <td>清除列表中的所有选项。</td> 
+   <td>从列表中清除所有选项。</td> 
   </tr>
  </tbody>
 </table>
@@ -261,11 +261,10 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 ### DateTimeEdit:(DateField) {#datetimeedit-datefield}
 
-| Option | 描述 |
+| 选项 | 描述 |
 |---|---|
 | 天 | 该字段的本地化天数名称。 |
 | 个月 | 该字段的本地化月份名称。 |
 | 零 | 数字0的本地化文本。 |
 | clearText | 清除按钮的本地化文本。 |
 
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

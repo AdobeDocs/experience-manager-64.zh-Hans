@@ -10,22 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # 在HTML5表单中创建自定义外观 {#create-custom-appearances-in-html-forms}
 
-可将自定义构件插入到移动表单中。 您可以扩展现有的jQuery构件，或使用外观框架开发您自己的自定义构件。 XFA引擎使用各种构件，有关详细 [信息，请参阅自适应表单和HTML5表单的外观框架](/help/forms/using/introduction-widgets.md) 。
+可将自定义构件插入到移动表单中。 您可以扩展现有的jQuery Widget，或使用外观框架开发您自己的自定义构件。 XFA引擎使用各种构件，有关详细 [信息，请参阅自适应表单和HTML5表单的外观框架](/help/forms/using/introduction-widgets.md) 。
 
-![](assets/custom-widgets.jpg) 默认构件和自定义构件的示例&#x200B;****&#x200B;图：默 *认和自定义构件的示例*
+![默认构件和自定义构件的示例](assets/custom-widgets.jpg)**图：** 默 *认和自定义构件的示例*
 
 ## 将自定义构件与HTML5表单集成 {#integrating-custom-widgets-with-html-forms}
 
-### 创建配置文件 {#create-a-profile-nbsp}
+### 创建用户档案 {#create-a-profile-nbsp}
 
-您可以创建配置文件或选择现有配置文件以添加自定义构件。 有关创建配置文件的详细信息，请参阅 [创建自定义配置文件](/help/forms/using/custom-profile.md)。
+您可以创建用户档案或选择现有用户档案来添加自定义构件。 有关创建用户档案的详细信息，请参阅 [创建自定义用户档案](/help/forms/using/custom-profile.md)。
 
 ### 创建构件 {#create-a-widget}
 
@@ -43,7 +43,7 @@ HTML5表单提供了构件框架的实现，该框架可以扩展以创建新构
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>返回将HTML事件转换为XFA事件的映射。 <br /> {模糊<br /> :XFA_EXIT_EVENT,<br /><br /> }此示例说明模糊是HTML事件，XFA_EXIT_EVENT是相应的XFA事件。 </td> 
+   <td>返回将HTML事件转换为XFA事件的映射。 <br /> {模糊<br /> :XFA_EXIT_事件,<br /><br /> }此示例说明模糊是HTML事件,XFA_EXIT_事件是相应的XFA事件。 </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -51,20 +51,20 @@ HTML5表单提供了构件框架的实现，该框架可以扩展以创建新构
   </tr> 
   <tr> 
    <td>getCommitValue</td> 
-   <td>只要将构件的值保存在XFAModel中（例如，在textField的exit事件上），构件框架就会加载该函数。 实施应返回保存在构件中的值。 该处理函数提供了选项的新值。</td> 
+   <td>只要将构件的值保存在XFAModel中(例如，在textField的退出事件上)，构件框架就会加载该函数。 实施应返回保存在构件中的值。 该处理函数提供了选项的新值。</td> 
   </tr> 
   <tr> 
    <td>showValue</td> 
-   <td>默认情况下，在XFA中，输入事件时，将显示字段的rawValue。 调用此函数向用户显示rawValue。 </td> 
+   <td>默认情况下，在XFA中输入事件时，将显示字段的rawValue。 调用此函数向用户显示rawValue。 </td> 
   </tr> 
   <tr> 
    <td>showDisplayValue</td> 
-   <td>默认情况下，在XFA退出事件中，将显示字段的formattedValue。 调用此函数向用户显示formattedValue。 </td> 
+   <td>默认情况下，在退出事件的XFA中，将显示字段的formattedValue。 调用此函数向用户显示formattedValue。 </td> 
   </tr> 
  </tbody> 
 </table>
 
-要创建您自己的构件，请在上面创建的配置文件中包括对JavaScript文件的引用，该文件包含被覆盖的函数和新添加的函数。 例如，sliderNumericFieldWidget *是数字字段的构件* 。 要在标题部分的配置文件中使用构件，请包括以下行：
+要创建您自己的构件，请在上面创建的用户档案中包括对JavaScript文件的引用，该文件包含被覆盖的函数和新添加的函数。 例如，sliderNumericFieldWidget *是数字字段的构件* 。 要在标题部分的用户档案中使用构件，请包括以下行：
 
 ```
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -93,12 +93,10 @@ window.formBridge.registerConfig("widgetConfig",
 ..\
 }*
 
-其中，“identifier”是表示特定字段、特定类型的字段集或所有字段的jQuery CSS选择器。 下面列出了不同情况下标识符的值：
+其中，“identifier”是表示特定字段、特定类型的字段集或所有字段的jQuery CSS选择器。 以下列表了不同情况下标识符的值：
 
 | 标识符类型 | 标识符 | 描述 |
 |---|---|---|
 | 具有名称字段名称的特定字段 | 标识符：&quot;div.fieldname&quot; | 名称为“fieldname”的所有字段均使用构件呈现。 |
 | 类型为“type”的所有字段（其中类型为NumericField、DateField等。）:  | 标识符：“div.type” | 对于Timefield和DateTimeField，类型为文本字段，因为不支持这些字段。 |
 | 所有字段 | 标识符：“div.field” |  |
-
-[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # 主题自定义 {#theme-customization}
 
-您可以自定义HTML代码和CSS文件，为AEM Forms应用程序提供独特的组织特定外观。 例如，您可以更改任务或起点的背景颜色和高度。 以下示例提供了更改说明：
+您可以自定义HTML代码和CSS文件，为AEM Forms应用程序提供独特的组织特定外观。 例如，可以更改任务或起点的背景颜色和高度。 以下示例提供了更改说明：
 
 * 显示说明代替说明
 * 显示路由数
@@ -35,7 +35,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
    * 在Xcode中，导航到“捕 **捉”>“www”>“wsmobile”>“js”>“运行时”>“模板** ”文件夹。
    * 在Eclipse中，导航到资产> www > wsmobile > js > runtime > templates文 **件夹** 。
-   * 在Visual studio中，导航到 **MWSWindows > www > wsmobile > js > runtime > templates文件夹** 。
+   * 在Visual Studio中，导航到 **MWSWindows > www > wsmobile > js > runtime > templates文件夹** 。
 
 1. Open the `template.html` file for editing.
 1. 找到以下字符串：
@@ -74,7 +74,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
    * 在Xcode中，导航到 **Capture > www > wsmobile > css**。
    * 在Eclipse中，导航到资 **源> www > wsmobile > css**。
-   * 在Visual studio中，导航到 **MWSWindows > www > wsmobile > css**。
+   * 在Visual Studio中，导航到 **MWSWindows > www > wsmobile > css**。
 
 1. Open the `_style.css` file for editing.
 1. 对于背景图像，请更 `#323232` 改为 `#fff`。
@@ -83,4 +83,3 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
    AEM Forms应用程序现在显示说明而非说明。
 
-[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)

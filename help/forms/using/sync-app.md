@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 ## 同步应用程序 {#synchronizing-the-app-1}
 
-应用程序中的表单将从AEM Forms服务器下载。 表单将下载在“任务”和“表单”选项卡下。 从表单创建的草稿下载到草稿选项卡中，从任务创建的草稿下载到任务选项卡中。 对于OSGi服务器上的独立表单，表单和草稿分别以“表单”和“草稿”选项卡下载。
+应用程序中的表单将从AEM Forms服务器下载。 表单下载在任务和表单选项卡下。 从表单创建的草稿将下载到草稿选项卡中，从任务创建的草稿将下载到任务选项卡中。 对于OSGi服务器上的独立表单，表单和草稿分别以“表单”和“草稿”选项卡下载。
 
 完成并提交表单后，如果应用程序处于联机状态，则表单将立即上传回AEM Forms服务器。 同步应用程序时，将从服务器获取表单。 但是，如果应用程序处于联机状态，草稿会立即与服务器同步。
 
@@ -42,8 +42,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 ### 技术规范 {#technical-specifications}
 
 * 将脱机应用程序数据提交到AEM Forms服务器的主逻辑包含在runtime/offline/util/offline.js中。
-* 在。js中，对processOfflineSubmittedSavedTasks(...)函数的调用将保存的／已提交的任务发送到服务器。 它还处理同步过程中的任何错误或冲突。 如果任务提交失败，则应用程序上的任务将标记为失败。 此外，任务仍保留在发件箱中。
-* syncSubmittedTask()和syncSavedTask()函数对单个任务执行操作。
-* 在用户选择将脱机状态同步到服务器或通过后台线程自动同步后，任务列表组件将启动对processOfflineSubmittedSavedTasks()函数的调用。
+* 在。js中，对processOfflineSubmittedSavedTasks(...)函数的调用将保存的／已提交的任务发送到服务器。 它还处理同步过程中的任何错误或冲突。 如果提交任务失败，则应用程序上的任务将标记为失败。 此外，任务仍保留在Outbox中。
+* syncSubmittedTask()和syncSavedTask()函数对各个任务执行操作。
+* 当用户选择将脱机状态同步到服务器或通过后台线程自动同步后，对processOfflineSubmittedSavedTasks()函数的调用由任务列表组件启动。
 
-[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)

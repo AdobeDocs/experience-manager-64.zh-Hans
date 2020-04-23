@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -68,7 +68,7 @@ source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
 1. 在启动的“备注”用户界面中，捕获徒手涂鸦。
 
    ![涂抹界面](assets/scribble-ui.png)
-   **** 图：涂 *鸦*
+   **图：** 涂 *鸦*
 
    您可以在“涂写”界面中使用以下选项：
 
@@ -84,6 +84,4 @@ source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
 
 从AEM Forms OSGi服务器加载到应用程序中的自适应表单不支持表单级别附件。 要附加图像或文本附注，请在创作表单时启用表单中的字段级附件。 将文件附件组件从组件浏览器拖放到字段上。
 
-如果是自适应表单，则可以查看记录文档(DoR)中的附加文件。 请参 [阅为非XFA自适应表单生成记录文档](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)。
-
-[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)
+对于自适应表单，您可以在记录文档(DoR)中视图附加的文件。 请参 [阅为非XFA自适应表单生成记录文档](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)。

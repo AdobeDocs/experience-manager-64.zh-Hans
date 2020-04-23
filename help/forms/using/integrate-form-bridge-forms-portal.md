@@ -1,6 +1,6 @@
 ---
-title: 将Form bridge与HTML5表单的自定义门户集成
-seo-title: 将Form bridge与HTML5表单的自定义门户集成
+title: 将Form Bridge与HTML5表单的自定义门户集成
+seo-title: 将Form Bridge与HTML5表单的自定义门户集成
 description: 您可以使用FormBridge API从HTML页面获取或设置表单字段的值并提交表单。
 seo-description: 您可以使用FormBridge API从HTML页面获取或设置表单字段的值并提交表单。
 uuid: 09f2189f-d584-4b84-895e-22833b6b17e3
@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e0608649-bd49-4f40-bc1b-821c9b208883
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
-# 将Form bridge与HTML5表单的自定义门户集成 {#integrating-form-bridge-with-custom-portal-for-html-forms}
+# 将Form Bridge与HTML5表单的自定义门户集成 {#integrating-form-bridge-with-custom-portal-for-html-forms}
 
 FormBridge是一个HTML5表单桥接器API，它允许您与表单交互。 有关FormBridge API参考，请参 [阅FormBridge API参考](/help/forms/using/form-bridge-apis.md)。
 
@@ -24,17 +24,17 @@ FormBridge是一个HTML5表单桥接器API，它允许您与表单交互。 有�
 
 ## 将HTML5表单集成到网页 {#integrating-html-forms-to-a-web-page}
 
-1. **选择配置文件或创建配置文件**
+1. **选择用户档案或创建用户档案**
 
    1. 在CRX DE界面中，导航到： `https://[server]:[port]/crx/de`.
    1. 使用管理员凭据登录。
-   1. 创建配置文件或选择现有配置文件。
+   1. 创建用户档案或选择现有用户档案。
 
-      有关如何创建配置文件的详细信息，请参 [阅创建新配置文件](/help/forms/using/custom-profile.md)。
+      有关如何创建用户档案的详细信息，请参 [阅创建新用户档案](/help/forms/using/custom-profile.md)。
 
-1. **修改HTML配置文件**
+1. **修改HTML用户档案**
 
-   将XFA运行时、XFA区域设置库和XFA表单HTML代码片断包含在配置文件渲染器中，设计网页并将表单放在网页内。
+   将XFA运行时、XFA区域设置库和XFA表单HTML代码片断包含在用户档案渲染器中，设计网页并将表单放在网页内。
 
    例如，使用以下代码片断创建一个应用程序，该应用程序包含两个输入字段和一个表单，用于演示表单与外部应用程序之间的交互。
 
@@ -75,7 +75,7 @@ FormBridge是一个HTML5表单桥接器API，它允许您与表单交互。 有�
    >第9 **行**，包含用于设计页面的CSS样式和JavaScript文件的其他JSP参考。
    >
    >第18行上的&lt;div id=&quot;rightdiv&quot;>标 **签包含** XFA表单的HTML片段。
-   页面设置为两个容器： **左****右**。 正确的容器具有表单。 左侧容器有两个输入字段，外部HTML页面的一部分。
+   页面的样式设置为两个容器: **左****右**。 正确的容器具有表单。 左容器有两个输入字段，外部HTML页面的一部分。
    以下屏幕快照显示了表单在浏览器中的显示方式。
 
    ![门户](assets/portal.jpg)
@@ -101,4 +101,3 @@ FormBridge是一个HTML5表单桥接器API，它允许您与表单交互。 有�
            });
    ```
 
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

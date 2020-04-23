@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
    >
    >有关 [包的更多详细信息，请参阅自定义AEM Forms工作区的介绍](/help/forms/using/introduction-customizing-html-workspace.md) 。
 
-1. 更新位于 `main.js` client-html/src/main/webapp/js下的路径，以获取已添加／更新的模型／视图。
+1. 更新位于 `main.js` client-html/src/main/webapp/js下的路径，用于添加／更新的型号/视图。
 
    例如，添加了新的Sharequeue模型（如mySharequeue），请更改：
 
@@ -72,5 +72,3 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 >[!NOTE]
 >
 >如果您是小型的，则升级会受到影响。
-
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

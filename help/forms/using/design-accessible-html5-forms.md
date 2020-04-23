@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: ccc59dd5-c0cf-415a-b71a-5bc0cf452ede
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -30,5 +30,3 @@ AEM Forms Designer包括许多可传递给屏幕阅读器的“讲话文本”�
 ![辅助功能](assets/accessibility.png)
 
 当多个选项（如工具提示、屏幕阅读器文本和题注）在表单控件上可用时，屏幕阅读器只使用这些属性中的一个。 默认顺序为“自定义屏幕阅读器文本”、“工具提示”、“题注”和“名称”。 您可以使用“辅助功能”调板中的“屏幕阅读器优 **先级** ”选项覆盖默认顺序。
-
-[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)

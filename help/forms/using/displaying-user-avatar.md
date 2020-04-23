@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # 显示用户头像 {#displaying-the-user-avatar}
 
-已登录用户的头像显示在AEM Forms工作区的右上角。 此外，组织层次结构中直接报告的化身会显示在“管理者视图”中。 您可以配置AEM Forms工作区，从数据库（例如LDAP服务器）中选取用户图像。
+已登录用户的头像显示在AEM Forms工作区的右上角。 此外，组织层次结构中直接报表的化身会显示在管理者视图中。 您可以配置AEM Forms工作区，从数据库（例如LDAP服务器）中选取用户图像。
 
 >[!NOTE]
 >
@@ -83,5 +83,3 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 1. 通过Workbench部署DSC。 重新启动 `ProcessManagementClientSessionService` 服务。
 1. 您可能必须刷新浏览器或再次注销／登录用户。
-
-[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)

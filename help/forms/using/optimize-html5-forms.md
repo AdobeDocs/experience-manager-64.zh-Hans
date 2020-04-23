@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -22,11 +22,11 @@ HTML5表单以HTML5格式呈现表单。 根据表单大小和表单中的图像
 
 *注意：以下说明不适用于除Apache Web Server 2.0 32位之外的服务器。*
 
-获取适用于您的操作系统的Apache web服务器软件：
+获取适用于您的操作系统的Apache Web服务器软件：
 
-* 对于Windows，从Apache HTTP server项目站点下载Apache web服务器。
-* 对于Solaris 64位，请从Sunfreeware for Solaris网站下载Apache web服务器。
-* 对于Linux,Apache web服务器预安装在Linux系统上。
+* 对于Windows，从Apache HTTP Server项目站点下载Apache Web服务器。
+* 对于Solaris 64位，请从Sunfreeware for Solaris网站下载Apache Web服务器。
+* 对于Linux,Apache Web服务器预安装在Linux系统上。
 
 Apache可以使用HTTP或AJP协议与JBoss通信。
 
@@ -56,7 +56,7 @@ Apache可以使用HTTP或AJP协议与JBoss通信。
    >使用代理时，需要进行以下配置更改：
    > 
    >* 访问：https://&lt;server>:&lt;port>/system/console/configMgr **
-   * 编辑Apache Sling引用过滤器的配置
+   * 编辑Apache Sling推荐人过滤器的配置
    * 在“允许主机”中，为代理服务器添加条目
 
 
@@ -82,4 +82,3 @@ Apache可以使用HTTP或AJP协议与JBoss通信。
 
 1. 要访问AEM服务器，请使用https://[Apache_server]:80。
 
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

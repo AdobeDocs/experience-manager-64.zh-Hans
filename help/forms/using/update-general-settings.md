@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 ## 更新应用程序中的“常规”设置 {#working-with-the-form}
 
-当您将应用程序与AEM Forms服务器同步时，所有表单和定义的任务都将下载到您的移动设备。
+当您将应用程序与AEM Forms服务器同步时，所有表单和定义的任务都将下载到您的移动设备上。
 
 现成的AEM Forms应用程序解决方案在同步应用程序时不会下载与每个表单关联的附件。
 
@@ -45,7 +45,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 * **脱机模式**:启用或禁用AEM Forms应用程序的脱机服务。 有关详 [细信息，请参阅在脱机模式下](/help/forms/using/work-offline-mode.md) 。
 
-* **登陆屏幕**:设置应用程序的开始位[置(主屏幕](/help/forms/using/home-screen.md))。
+* **登陆屏幕**:为应用程序设置开始位[置(主屏幕](/help/forms/using/home-screen.md))。
 
    可用选项：
 
@@ -53,7 +53,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
    * 任务
    * 收藏夹
 
-* **默认类别**:允许您选择要在主屏幕中显示的表单类别。 选择“全部”后，您可以在主屏幕中看到所有表单。 类别将根据应用程序中加载的表单进行填充。 根据在AEM Forms服务器中指定的表单设置，在应用程序中提供表单。
+* **默认类别**:允许您选择要在主屏幕中显示的表单类别。 选择“全部”后，您可以在主屏幕中看到所有表单。 类别会根据应用程序中加载的表单进行填充。 根据在AEM Forms服务器中指定的表单设置，在应用程序中提供表单。
 
 * **自动保存频率**:设置移动应用程序在本地保 [存表单数据的频率](/help/forms/using/autosave-data-app.md) 。
 
@@ -66,5 +66,3 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 >清除缓存会立即将您从应用程序中注销。
 >
 >但是，系统会提示您确认清除缓存操作。
-
-[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -1,15 +1,15 @@
 ---
 title: HTML5表单的屏幕阅读器
 seo-title: HTML5表单的屏幕阅读器
-description: 列出HTML5表单支持的屏幕阅读器。
-seo-description: 列出HTML5表单支持的屏幕阅读器。
+description: 列表HTML5表单支持的屏幕阅读器。
+seo-description: 列表HTML5表单支持的屏幕阅读器。
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ HTML5表单符合第508条有关辅助功能的规定，但有已知例外。 �
 ## HTML5表单的认证屏幕阅读器 {#certified-screen-readers-for-html-forms}
 
 * JAWS 14.0 on Microsoft Windows
-* Mac OS x和iPad上的VoiceOver
+* Mac OS X和iPad上的VoiceOver
 
 ### JAWS {#jaws}
 
@@ -43,5 +43,3 @@ HTML5表单支持Voice over的所有默认按键和手势。 有关设置和使�
 * **（仅限Internal Explorer 9）** HTML5表单中的“日期选取器”控件无法通过键盘完全访问。 在“日期选取器”控件中，如果多次按上／下键，则“日期选取器”控件将关闭，焦点将移至下一个／最后一个字段。
 
 * VoiceOver在iPad safari上检测不到日期构件上的箭头键。
-
-**[联系支持](https://www.adobe.com/account/sign-in.supportportal.html)**

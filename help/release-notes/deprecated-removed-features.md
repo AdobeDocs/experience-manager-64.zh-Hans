@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
+source-git-commit: 45849a1a22f99d149369cd91781de4de0260c8e3
 
 ---
 
@@ -21,14 +21,14 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 为了传达即将删除/替换 AEM 功能，以下规则适用：
 
-1. 首先宣布弃用。虽然已弃用，但功能仍可用，只是不会进一步增强。
+1. 首先宣布弃用。虽然已弃用，但功能仍然可用，但不会进一步增强。
 1. 最早将在以下主要发行版中删除已弃用的功能。将宣布实际删除目标的日期。
 
 在实际删除之前，此过程将为客户提供至少一个发行周期时间，使其实施适应已弃用功能的新版本或后续版本。
 
 ## 已弃用功能 {#deprecated-features}
 
-本部分列出了 AEM 6.4 中已标记为弃用的特性和功能。通常，计划在未来发行版中删除的特性将首先设置为弃用，并提供备用方案。
+下表列出了AEM 6.4中已标记为已弃用的列表特性和功能。通常，计划在未来版本中删除的功能会首先设置为已弃用，并提供替代功能。
 
 建议客户检查其当前部署中是否使用了此类特性/功能，然后制定相应的计划以将其实施更改为使用提供的备选方案。
 
@@ -120,6 +120,11 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
    <td>使用IValueMap API </td> 
   </tr>
   <tr>
+   <td>表单</td> 
+   <td><p>已弃用的Central Migration Bridge服务</p> </td> 
+   <td> 无替换项 </td> 
+  </tr>
+  <tr>
    <td>资产</td> 
    <td><p>从AEM 6.4开始，已弃用资产卸载功能</p> </td> 
    <td> </td> 
@@ -129,7 +134,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 ## 已删除功能 {#removed-features}
 
-本节列表了已从AEM 6.4中删除的特性和功能。先前发行版具有标记为已弃用的这些功能。
+下表列表了已从AEM 6.4中删除的功能和特性。先前版本的这些功能标记为已弃用。
 
 <table> 
  <tbody>
@@ -215,13 +220,18 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
   </tr>
     <tr>
     <td>表单</td> 
-    <td>删除了JEE特定登陆页上的AEM Forms。</td> 
+    <td>删除了特定于JEE的登陆页上的AEM Forms。</td> 
     <td>JEE登陆页上的AEM Forms将替换为AEM登陆页(/aem/start.html) </td>  
   </tr>
    <tr>
    <td>表单</td> 
    <td>删除了对默认Captcha的支持</td> 
    <td>使用Google提供的reCAPTCHA服务。</td> 
+  </tr>
+  <tr>
+   <td>表单</td> 
+   <td>删除了对AEM Designer中Flash字段的支持。 AEM Designer不允许编辑表单中使用的Flash字段。</td> 
+   <td>您可以使用为先前版本发布的AEM Designer来编辑此类表单。</td> 
   </tr>
   <tr>
    <td>社区</td> 
@@ -233,14 +243,15 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 ## 针对下一个发行版的预先宣布 {#pre-announcement-for-next-release}
 
-此部分用于预先宣布未来发行版中的更改，这些更改未弃用，但会影响客户。以下内容为规划目的而提供。
+
+下表提供了未来版本的更改列表，这些更改尚未弃用，但可能会影响客户。 以下内容为规划目的而提供。
 
 <table> 
  <tbody>
   <tr>
    <td>区域<br /> </td> 
    <td>功能<br /> </td> 
-   <td>宣布</td> 
+   <td>公告</td> 
   </tr>
   <tr>
    <td>浏览器支持</td> 

@@ -3,7 +3,7 @@ title: 资产性能调整指南
 description: 围绕AEM配置、对硬件、软件和网络组件进行的更改的重点介绍，以消除瓶颈并优化AEM资产的性能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -209,11 +209,9 @@ DAM更新资产工作流包含为任务配置的全套步骤，如Scene7 PTIFF�
 
 >[!NOTE]
 >
->ImageMagick policy.xml和configure.xml文件位于/usr/lib64/ImageMagick-&amp;ast;/config/下，而不是/etc/ImageMagick/下。 有关配置文件 [位置的详细信息](https://www.imagemagick.org/script/resources.php) ，请参阅ImageMagick文档。
+>ImageMagick和文 `policy.xml` 件可 `configure.xml` 以在下面而不是 `/usr/lib64/ImageMagick-*/config/` 下面找到 `/etc/ImageMagick/`。 有关配 [置文件位置的详细信息](https://www.imagemagick.org/script/resources.php) ，请参阅ImageMagick文档。
 
->[!NOTE]
->
->如果您在Adobe Managed Services(AMS)上使用AEM，则如果您计划处理大量大型PSD或PSB文件，请联系Adobe支持部门。
+如果您在Adobe Managed Services(AMS)上使用AEM，则如果您计划处理大量大型PSD或PSB文件，请联系Adobe客户关怀团队。 Experience Manager可能无法处理超过30000 x 23000像素的高分辨率PSB文件。
 
 <!-- 
 

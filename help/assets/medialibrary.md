@@ -3,7 +3,7 @@ title: 比较AEM资产和AEM媒体库中的可用功能
 description: 有关AEM资产和AEM媒体库的常见问题解答，包括差异。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
+source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
 
 ---
 

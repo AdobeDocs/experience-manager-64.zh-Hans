@@ -3,7 +3,7 @@ title: XMP 写回到演绎版
 description: 了解XMP写回功能如何将资产的元数据更改传播到资产的所有或特定演绎版。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
+source-git-commit: eb135e5898fe521498eecae7109b39f54d274cce
 
 ---
 
@@ -73,7 +73,7 @@ XMP元数据的白名单过滤功能可通过允许您定义要导入的XMP属�
 
 >[!NOTE]
 >
->筛选仅适用于从资产二进制文件中的XMP源派生的属性。 对于从非XMP源（如EXIF和IPTC格式）派生的属性，过滤不起作用。 例如，资产创建日期存储在以EXIF TIFF命名的 `CreateDate` 属性中。 AEM在名为的元数据字段中讲述此值 `exif:DateTimeOriginal`。 由于源是非XMP源，因此过滤不适用于此属性。
+>筛选仅适用于从资产二进制文件中的XMP源派生的属性。 对于从非XMP源（如EXIF和IPTC格式）派生的属性，过滤不起作用。 例如，资产创建日期存储在以EXIF TIFF命名的 `CreateDate` 属性中。 AEM将此值存储在名为的元数据字段中 `exif:DateTimeOriginal`。 由于源是非XMP源，因此过滤不适用于此属性。
 
 1. 从中打开配置管理 `https://[aem_server]:[port]/system/console/configMgr`器。
 1. 打开 **[!UICONTROL Adobe CQ DAM XmpFilter配置]** 。

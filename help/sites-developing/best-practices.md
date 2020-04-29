@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
-source-git-commit: 82e065a7faefe6d91f23e2b54dd045fd240fafbb
+source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 
 ---
 
@@ -30,6 +30,7 @@ Adobe工程和咨询团队为AEM开发人员开发了一整套最佳做法。 Ad
 * [代码缺陷](/help/sites-developing/code-pitfalls.md)
 * [JCR交互](/help/sites-developing/jcr-integration.md)
 * [OSGi捆绑套件](/help/sites-developing/osgi-bundles.md)
+* [Java API最佳实践](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### 其他最佳实践信息 {#additional-best-practices-information}
 
@@ -61,7 +62,7 @@ Adobe工程和咨询团队为AEM开发人员开发了一整套最佳做法。 Ad
   <tr>
    <td>触屏优化UI:自定义控制台 </td> 
    <td><a href="/help/sites-developing/customizing-consoles-touch.md">自定义触屏优化UI控制台</a></td> 
-   <td>本文档介绍了扩展触屏优化UI控制台的最佳方式。</td> 
+   <td>此文档描述了扩展触屏优化UI控制台的最佳方式。</td> 
   </tr>
   <tr>
    <td>触屏优化UI:自定义页面创作</td> 
@@ -71,7 +72,7 @@ Adobe工程和咨询团队为AEM开发人员开发了一整套最佳做法。 Ad
   <tr>
    <td>工作流</td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md">开发和扩展工作流</a></td> 
-   <td><p>工作流使您能够自动执行Adobe Experience Manager(AEM)活动，并可以代表在AEM环境中发生的大量处理，因此强烈建议仔细计划您的工作流实施。</p> </td> 
+   <td><p>工作流使您能够自动化Adobe Experience Manager(AEM)活动，并可以代表AEM环境中发生的大量处理，因此强烈建议仔细计划您的工作流实施。</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -93,7 +94,7 @@ HTML模板语言(HTL)是AEM 6.0中引入的一个新的HTML模板系统。它取
 
 |  |  |  |
 |---|---|---|
-| HTL概述 | [HTL概述和语法](https://helpx.adobe.com/experience-manager/htl/user-guide.html) | 本文档描述什么是HTL，如何移到HTL，示例项目、语法、表达式和语句 |
+| HTL概述 | [HTL概述和语法](https://helpx.adobe.com/experience-manager/htl/user-guide.html) | 本文档介绍HTL是什么，如何移到HTL，示例项目、语法、表达式和语句 |
 | 在Java中使用API | [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | HTL Java Use-API使HTL文件能够访问自定义Java类中的帮助程序方法。 |
 
 >[!NOTE]

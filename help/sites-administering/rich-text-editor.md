@@ -3,7 +3,7 @@ title: 配置富文本编辑器
 description: 了解如何配置AEM富文本编辑器。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
 
 ---
 
@@ -161,6 +161,15 @@ RTE的基本功能是通过特定于相应插件的节点上的 `features` 属�
 * `rte-start`:在RTE事件编辑RTE `contenteditable-div` 时触发此开始。 仅当设置为 `customStart` true时，此选项才有效。
 
 在触屏启用对话框中使用RTE时，必须将属性设 `useFixedInlineToolbar` 置为true以避免出现问题。
+
+## 就地自定义编辑 {#customizing-in-place-editing}
+
+您可以通过配置以下属性来定义文本编辑器开始的HTML选择器：
+
+* **`editElementQuery`** -在上定 `cq:InplaceEditingConfig`义，此属性用于指定HTML元素的选择器，在该选择器上将启动文本组件的内联编辑。 如果未指定，则直接在文本组件HTML上启动内联编辑。
+* **`textPropertyName`** -在上定 `cq:InplaceEditingConfig`义，此属性用于指定将保存在内容节点上的属性名称，在内联编辑后，文本组件的HTML值将保留在该节点上。
+
+对话框模式的相应属性为 `name`。
 
 ## 通过激活插件启用RTE功能 {#enable-rte-functionalities-by-activating-plug-ins}
 

@@ -1,16 +1,16 @@
 ---
-title: AEM资产中支持的文件格式
+title: AEM资产支持的文件格式
 description: 列表AEM资产支持的文件格式和MIME类型以及每种格式支持的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
 
 ---
 
 
-# AEM资产中支持的文件格式 {#assets-supported-formats}
+# AEM资产支持的文件格式 {#assets-supported-formats}
 
-AEM资产支持各种文件格式，并且每种功能都对不同MIME类型提供不同的支持。
+AEM资产支持各种文件格式，每种功能都对不同MIME类型提供不同的支持。
 
 要将AEM资产与其他符合标准的数字资产管理(DAM)解决方案和桌面软件相集成，请使用Adobe的可扩展元数据平台(XMP)。
 
@@ -64,21 +64,32 @@ Dynamic Media功能支持的栅格图像格式如下：
 
 **‡** 合并的图像是从PSD文件中提取的。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。
 
-除了上述信息外，请考虑以下事项：
+除上述信息外，请考虑以下事项：
 
-* 对EPS文件的支持仅适用于栅格图像。 例如，默认不支持为 EPS 矢量图像生成缩略图。要添加支持，请 [配置ImageMagick](best-practices-for-imagemagick.md)。 要集成第三方工具以启用其他功能，请参阅基 [于命令行的媒体处理程序](media-handlers.md#command-line-based-media-handler)。
+* 对EPS文件的支持仅适用于栅格图像。 例如，默认不支持为 EPS 矢量图像生成缩略图。要添加支持，请 [配置ImageMagick](best-practices-for-imagemagick.md)。 要集成第三方工具以启用其他功能，请参 [阅基于命令行的媒体处理程序](media-handlers.md#command-line-based-media-handler)。
 
-* 将元数据写回添加到处理函数时，它适用于PSB文件格 `NComm` 式。
+* 元数据写回在添加到处理函数时适用于PSB文件 `NComm` 格式。
 
-* 要使用Dynamic Media预览和生成EPS文件的动态演绎版，请参阅 [Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media预览EPS文件并生成动态演绎版，请 [参阅Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * 对于EPS文件，PostScript文档结构约定(PS-Adobe)版本3.0或更高版本支持元数据写回。
 
-## PDF栅格化器库 {#supported-pdf-rasterizer-library}
+## Dynamic Media中不支持的栅格图像格式(#unsupported-image-formats-dynamic-media)
 
-Adobe PDF Rasterizer库为大型和内容密集型Adobe Illustrator和PDF文件生成高质量的缩览图和预览。 Adobe建议对以下内容使用PDF栅格化器库：
+以下列表描述了Dynamic Media不支持的栅格图像文件 *格式* 的子类型。
 
-* 需要大量处理的内容密集型AI/PDF文件。
+* IDAT区块大小大于100 MB的PNG文件。
+* PSB文件。
+* 不支持色彩空间不是CMYK、RGB、灰度或位图的PSD文件。 不支持DuoTone、Lab和索引色彩空间。
+* 位深度大于16的PSD文件。
+* 具有浮点数据的TIFF文件。
+* 具有Lab色彩空间的TIFF文件。
+
+## PDF光栅器库 {#supported-pdf-rasterizer-library}
+
+Adobe PDF Rasterizer库为大型和内容密集型Adobe Illustrator和PDF文件生成高质量的缩览图和预览。 Adobe建议对以下对象使用PDF光栅器库：
+
+* 需要大量处理的资源的内容密集型AI/PDF文件。
 * AI/PDF文件，默认情况下不生成缩略图。
 * 具有Pantone Matching System(PMS)颜色的AI文件。
 
@@ -86,7 +97,7 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## 图像转码库 {#supported-image-transcoding-library}
 
-Adobe Imaging Tronding Library是一款图像处理解决方案，可执行核心图像处理功能，如编码、转码、重新取样和调整大小。
+Adobe成像转码库是一款图像处理解决方案，可执行核心图像处理功能，如编码、转码、重新取样和调整大小。
 
 成像转码库支持JPG/JPEG、PNG（8位和16位）、GIF、BMP、TIFF/压缩TIFF（除32位TIFF文件和PTIFF文件外）、ICO和ICN MIME类型。
 
@@ -144,13 +155,13 @@ Dynamic Media功能支持的文档格式如下：
 | QXP |  |  |  |  |  |
 | EPUB |  |  |  |  |  |
 
-除了上述功能外，还要考虑以下几点：
+除了上述功能之外，还要考虑以下事项：
 
-* 要使用Dynamic Media为PDF文件生成动态演绎版，请参阅 [Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media为PDF文件生成动态演绎版，请 [参阅Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 要使用Dynamic Media预览和生成AI文件的动态演绎版，请参阅 [Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media预览AI文件并生成动态演绎版，请参 [阅Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 要使用Dynamic Media为INDD文件生成动态演绎版，请参阅 [InDesign(INDD)文件格式](../assets/managing-image-presets.md#indesign-indd-file-format)。
+* 要使用Dynamic Media为INDD文件生成动态演绎版，请参 [阅InDesign(INDD)文件格式](../assets/managing-image-presets.md#indesign-indd-file-format)。
 
 ## 多媒体格式 {#supported-multimedia-formats}
 
@@ -208,11 +219,11 @@ Dynamic Media功能支持的文档格式如下：
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**†合** 并的图像是从PSD文件中提取的。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。 使用算法创建的ZIP存 `Deflate64` 档在AEM中的支持有限。 不支持存档和取消存档操作。 但是，支持上传、浏览和下载等操作。
+**†** 合并图像是从PSD文件中提取的。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。 使用算法创建的ZIP `Deflate64` 存档在AEM中的支持有限。 不支持存档和取消存档操作。 但是，支持上传、浏览和下载等操作。
 
 ## Other supported formats {#other-supported-formats}
 
-下表介绍了几种其他文件格式的常见DAM工作流的适用性。
+下表介绍了几种其他文件格式的通用DAM工作流的适用性。
 
 | 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | Dynamic Media投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -227,13 +238,13 @@ Dynamic Media功能支持的文档格式如下：
 
 ## Supported MIME types {#supported-mime-types}
 
-默认情况下，AEM会使用文件扩展名检测文件类型。 AEM可以从文件内容中检测到它。 对于后者，在AEM Web [!UICONTROL 控制台的Day CQ DAM Mime类型服务中] ，选 [!UICONTROL 择“从内容检测MIME] ”选项。
+默认情况下，AEM会使用文件扩展名检测文件类型。 AEM可以从文件内容中检测到它。 对于后者，在 [!UICONTROL AEM Web Console] 的Day CQ DAM [!UICONTROL MIME类型服务中选择“从内容检测MIME] ”选项。
 
-在CRXDE Lite中，有一列表受支持的MIME类型 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`。
+在CRXDE Lite中，有一列表支持的MIME类型 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`。
 
-| 文件扩展名 | MIME类型/Internet媒体类型 | 默认jobParam值 | 允许的jobParam值 |
+| 文件扩展名 | MIME类型/ Internet媒体类型 | 默认jobParam值 | 允许的jobParam值 |
 |---|---|---|---|
-| 图像 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 默认jobParam适用于所有图像mime类型资产。<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[usmarpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
+| 图像 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 默认jobParam适用于所有图像mime类型资产。<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[usmsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
 | 3G2 | video/3gpp2 |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
 | 3GP | video/3gpp |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_exclude_master_video_from_avs) |
 | AAC | audio/x-aac |  |  |
@@ -291,6 +302,6 @@ Dynamic Media功能支持的文档格式如下：
 
 >[!MORELIKETHIS]
 >
->* [支持基于MIME类型的资产/Scene7上传作业参数](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
+>* [启用基于MIME类型的资产/Scene7上传作业参数支持](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
 >* [配置基于MIME类型的上传作业参数支持](config-dynamic.md)。
 

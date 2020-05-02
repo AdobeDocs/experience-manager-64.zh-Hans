@@ -3,7 +3,7 @@ title: AEM资产支持的文件格式
 description: 列表AEM资产支持的文件格式和MIME类型以及每种格式支持的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
+source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
 
 ---
 
@@ -74,7 +74,7 @@ Dynamic Media功能支持的栅格图像格式如下：
 
 * 对于EPS文件，PostScript文档结构约定(PS-Adobe)版本3.0或更高版本支持元数据写回。
 
-## Dynamic Media中不支持的栅格图像格式(#unsupported-image-formats-dynamic-media)
+## Dynamic Media中不支持的栅格图像格式 {#unsupported-image-formats-dynamic-media}
 
 以下列表描述了Dynamic Media不支持的栅格图像文件 *格式* 的子类型。
 

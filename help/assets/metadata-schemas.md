@@ -3,10 +3,10 @@ title: 元数据架构
 description: '元数据模式定义属性页面的布局以及为资产显示的元数据属性。 了解如何创建自定义元数据模式、编辑元数据模式，以及如何将元数据模式应用于资产。  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: baecd478801154048e8be7fc27a3fbd7d8a72f6d
+source-git-commit: b774b23028f642436b9a17f94da61f8e40bdae9a
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 20%
+source-wordcount: '2511'
+ht-degree: 19%
 
 ---
 
@@ -31,38 +31,22 @@ ht-degree: 20%
 
    要修改资产的MIME类型，请使用自定义元数据模式表单或修改现有表单。 有关详 [细信息，请参阅编辑元模式](metadata-schemas.md#editing-metadata-schema-forms) “表单”。 如果您修改某些MIME类型的元数据模式，则将修改当前MIME类型和所有资产子类型的资产的属性页面布局。 例如，修改下 `jpeg` 的模式 `default/image` 只会修改MIME类型资产的元数据布局（资产属性） `IMAGE/JPEG`。 但是，如果您编辑默认模式，则所做的更改将修改所有类型资产的元数据布局。
 
-1. 要查看表单/模板列表，请单击 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > Assets > 元数据架构]**。
+## 元数据架构表单 {#default-metadata-schema-forms}
 
-   ![chlimage_1-37](assets/chlimage_1-173.png)
-
-## 元数据模式表单默认可用 {#available-metadata-schema-templates}
+要视图表单／模板的列表，请在界面 [!DNL Experience Manager] 中导航到 **[!UICONTROL 工具]** >资 **[!UICONTROL 产]** >元数 **[!UICONTROL 据模式]**。
 
 [!DNL Experience Manager] 提供以下元数据模式表单模板：
 
-### 默认 {#default-template}
-
-默 [!UICONTROL 认值] 是资产的基本元数据模式表单。 以下子表单继承默认表单的属性：
-
-* **image** 是MIME类型为“image”的资产的模式表单。 例如 `image/jpeg`, `image/png`、等等。 “图像”表单具有以下子表单模板：
-   * **jpeg** 是子类型资产的模式表 `jpeg`单。
-
-   * **tiff** 是子类型资产的模式表 `tiff`单。
-
-* **application** 是MIME类型资产的模式表 `application`单。 例如 `application/pdf`, `application/zip`、等等。 **pdf** 是子类型资产的模式表 `pdf`单。
-
-* **video** 是MIME类型资产的模式 `video`表单， `video/avi`如、 `video/mp4`等等。
-
-### 收藏集 {#collection-template}
-
-集 [!UICONTROL 合是集] 合的模式表单。
-
-### contentfragment {#contentfragment-template}
-
-内容 [!UICONTROL 片段] 是内容片段的模式表单。
-
-### forms {#forms-template}
-
-The [!UICONTROL forms] schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md).
+| 模板 |  | 描述 |
+|---|---|---|
+| [!UICONTROL 默认] |  | 资产的基本元数据模式表单。 |
+|  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
+|  | <ul><li> [!UICONTROL 图像]</li></ul> | 模式表单，用于MIME类型为“image”（例如image/jpeg、image/png等）的资产。 <br> 图 [!UICONTROL 像表单] 具有以下子表单模板： <ul><li> [!UICONTROL jpeg]: 模式子类型为jpeg的资产 [!UICONTROL 表单]。</li> <li>[!UICONTROL tiff]: 模式子类型为tiff的资产的 [!UICONTROL 表单]。</li></ul> |
+|  | <ul><li> [!UICONTROL 应用]</li></ul> | 模式表单，用于MIME类型为“application”（例如application/pdf、application/zip等）的资产。 <br>[!UICONTROL pdf]: 模式子类型为pdf的资产的表单。 |
+|  | <ul><li>[!UICONTROL 视频]</li></ul> | 模式表单，用于MIME类型为“”（如video/avi、video/mp4等）的资产。 |
+| [!UICONTROL 收藏集] |  | 集合的模式表单。 |
+| [!UICONTROL contentfragment] |  | 模式内容片段表单。 |
+| [!UICONTROL 表单] |  | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >
@@ -279,7 +263,7 @@ AEM资产允许您定义元数据模式的变体，并将其应用到特定文�
 
 ## 定义必填元数据 {#defining-mandatory-metadata}
 
-您可以在文件夹级别定义必填字段，这将强制执行于上传到该文件夹的资产。 如果您上传的资产上传之前定义的必填字段缺少元数据，则卡视图的资产上会显示缺少元数据的可视指示。
+您可以在文件夹级别定义必填字段，该字段将强制应用于上传到该文件夹的资产。 如果您上传的资产上传之前定义的必填字段缺少元数据，则卡视图的资产上会显示缺少元数据的可视指示。
 
 >[!NOTE]
 >

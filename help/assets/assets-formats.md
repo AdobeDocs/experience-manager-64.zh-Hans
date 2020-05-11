@@ -3,7 +3,10 @@ title: AEM资产支持的文件格式
 description: 列表AEM资产支持的文件格式和MIME类型以及每种格式支持的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
+source-git-commit: 1f93b2b0c8b1a4e55a67c11937b9c5ce4076ee2a
+workflow-type: tm+mt
+source-wordcount: '1878'
+ht-degree: 20%
 
 ---
 
@@ -77,6 +80,8 @@ Dynamic Media功能支持的栅格图像格式如下：
 ## Dynamic Media中不支持的栅格图像格式 {#unsupported-image-formats-dynamic-media}
 
 以下列表描述了Dynamic Media不支持的栅格图像文件 *格式* 的子类型。
+
+另请参 [阅检测不支持的Dynamic Media文件格式](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)。
 
 * IDAT区块大小大于100 MB的PNG文件。
 * PSB文件。

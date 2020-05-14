@@ -3,9 +3,9 @@ title: 元数据架构
 description: '元数据模式定义属性页面的布局以及为资产显示的元数据属性。 了解如何创建自定义元数据模式、编辑元数据模式，以及如何将元数据模式应用于资产。  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
+source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2528'
 ht-degree: 19%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 19%
 
 # 元数据架构 {#metadata-schemas}
 
-在中 [!DNL Experience Manager Assets]，元数据模式定义属性页面的布局以及为使用特定模式的资产显示的元数据属性。 元数据属性包括标题、描述、MIME类型、标记等。
+在中 [!DNL Experience Manager Assets]，元数据模式定义属性页面的布局以及为使用特定模式的资产显示的元数据属性。 元数据属性包括标题、描述、MIME类型、标记等。 您可以使用元数据模式表单编辑器修改现有模式或添加自定义元数据模式。
 
-您可以使用元数据模式表单编辑器修改现有模式或添加自定义元数据模式。 要视图和编辑资产的属性页面，请执行以下步骤：
+要视图和编辑资产的属性页面，请执行以下步骤：
 
 1. 单击或点按卡 **[!UICONTROL 片视图中]** ，资产拼贴上快速操作中的视图属性。
 
@@ -25,7 +25,7 @@ ht-degree: 19%
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. 您可以编辑可用选项卡下的可编辑元数据属性。 但是，您无法在属性页 [!UICONTROL 面的] “基本 [!UICONTROL ”选项] 卡中修改资产类型。
+1. 您可以编辑可用选项卡下的各种可编辑元数据属性。 但是，您无法在属性页 [!UICONTROL 面的] “基本 [!UICONTROL ”选项] 卡中修改资产类型。
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -164,7 +164,7 @@ To edit the properties of a metadata component on the form, click the component 
 
 通过架构编辑器，可以添加或删除选项卡。默认架构表单包括&#x200B;**[!UICONTROL 基本]**、**[!UICONTROL 高级]**、**[!UICONTROL IPTC]** 和 **[!UICONTROL IPTC 扩展]**&#x200B;选项卡（默认情况下）。
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 Click `+` to add a new tab on a schema form. By default, the new tab has the name `Unnamed-1`. You can modify the name from the **[!UICONTROL Settings]** tab. Click `X` to delete a tab.
 

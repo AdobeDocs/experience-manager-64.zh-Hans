@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 9b19484596948e9e166f5310622b7e6eacd78f93
+source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2865'
 ht-degree: 33%
 
 ---
@@ -45,12 +45,13 @@ To add the dynamic media functionality to assets you use on your websites, you c
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. 将要使用的Dynamic Media组件拖动到页面的所需位置。
-1. 单击组件周围的蓝框，然后点按 **[!UICONTROL 配置]** （扳手）图标。
+1. 将鼠标指针直接悬停在组件上。 当组件被蓝色框包围时，点按一次以显示组件的工具栏。 点按配 **[!UICONTROL 置]** （扳手）图标。
 1. [根据需要编辑组件](#dynamic-media-components) ，然后单击复选标记以保存更改。
+1. 
 
 ### 启用Dynamic Media组件 {#enabling-dynamic-media-components}
 
-如果没有可添加到页面的Dynamic Media组件，则可能意味着您需要启用这些组件。
+如果没有可添加到页面的Dynamic Media组件，则可能意味着您需要首先启用要使用的组件。
 
 1. 在 AEM 中，打开您要添加 Dynamic Media 组件的页面。
 1. 在工具栏左侧，点按页面顶部附近的页面信息图标，然后点 **[!UICONTROL 按下拉列表]** 中的编辑模板。
@@ -59,17 +60,17 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 1. 在工具栏右侧页面顶部附近的下拉列表中，点按结 **[!UICONTROL 构]**。
 
-![策略](/help/assets/assets-dm/structure-mode.png)
+   ![策略](/help/assets/assets-dm/structure-mode.png)
 
 1. 在页面底部附近，点按布 **[!UICONTROL 局容器]** ，打开其工具栏，然后点按策略图标。
 1. 在“布 **[!UICONTROL 局容器]** ”页面的“属 **[!UICONTROL 性”标题下]** ，确保 **[!UICONTROL 选中“允许的组件]** ”选项卡。
 
-![允许的组件](/help/assets/assets-dm/allowed-components.png)
+   ![允许的组件](/help/assets/assets-dm/allowed-components.png)
 
 1. 滚动直到您看到 **[!UICONTROL Dynamic Media]**。
 1. 点按Dynamic Media左侧的> **[!UICONTROL 图标]** ，展开列表，选择要启用的Dynamic Media组件。
 
-![Dynamic Media组件列表](/help/assets/assets-dm/dm-components-select.png)
+   ![Dynamic Media组件列表](/help/assets/assets-dm/dm-components-select.png)
 
 1. 在布局容器页面的右上 **[!UICONTROL 角附近]** ，点按完成（复选标记）图标。
 

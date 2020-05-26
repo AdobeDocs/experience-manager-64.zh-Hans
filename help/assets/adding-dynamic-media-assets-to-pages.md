@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
+source-git-commit: fbf38e7e41ef33bca5867c7b6eb1f6806ca70a08
 workflow-type: tm+mt
 source-wordcount: '2865'
 ht-degree: 33%
@@ -47,7 +47,6 @@ To add the dynamic media functionality to assets you use on your websites, you c
 1. 将要使用的Dynamic Media组件拖动到页面的所需位置。
 1. 将鼠标指针直接悬停在组件上。 当组件被蓝色框包围时，点按一次以显示组件的工具栏。 点按配 **[!UICONTROL 置]** （扳手）图标。
 1. [根据需要编辑组件](#dynamic-media-components) ，然后单击复选标记以保存更改。
-1. 
 
 ### 启用Dynamic Media组件 {#enabling-dynamic-media-components}
 
@@ -92,7 +91,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 ## Dynamic Media components {#dynamic-media-components}
 
-Dynamic Media和交互式媒体位于组件中 [!UICONTROL 的Dynamic] Media选 [!UICONTROL 项卡下]。 您可以将交互式媒体]组件用于任何交互式资产，如交互式视频、交互式图像或传送集。 对于所有其他 Dynamic Media 资产，请使用 Dynamic Media 组件。
+Dynamic Media和交互式媒体位于组件中 [!UICONTROL 的Dynamic Media] 选项 [!UICONTROL 卡下]。 您可以将交互式媒体]组件用于任何交互式资产，如交互式视频、交互式图像或传送集。 对于所有其他 Dynamic Media 资产，请使用 Dynamic Media 组件。
 
 >[!NOTE]
 >

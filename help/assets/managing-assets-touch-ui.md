@@ -4,9 +4,9 @@ description: 了解各种资产管理和编辑任务，这些管理和编辑操�
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9813'
 ht-degree: 6%
 
 ---
@@ -142,7 +142,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 
 >[!NOTE]
 >
->要在Dynamic Media中通过FTP上传资产——在AEM作者上安装Scene7模式安装功能包(FP)18912。 请与Adobe支持部门联系以访问FP-18912并完成FTP帐户的设置。 请参 [阅安装功能包18912以实现批量资产迁移](/help/assets/bulk-ingest-migrate.md)。
+>要在Dynamic Media中通过FTP上传资产——在AEM作者上安装Scene7模式安装功能包(FP)18912。 联系Adobe客户服务中心获取FP-18912并完成FTP帐户的设置。 请参 [阅安装功能包18912以实现批量资产迁移](/help/assets/bulk-ingest-migrate.md)。
 如果您使用FTP上传资产，则会忽略在AEM中指定的上传设置。 而是使用在Dynamic Media Classic中定义的文件处理规则。
 
 **使用FTP上传资产**

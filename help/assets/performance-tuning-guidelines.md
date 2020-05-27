@@ -3,9 +3,9 @@ title: 资产性能调整指南
 description: 围绕AEM配置、对硬件、软件和网络组件进行更改的重点领域，可消除瓶颈并优化AEM资产的性能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '3201'
+source-wordcount: '3202'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ mkfs -q /dev/ram1 800000
 
 ### Java版本 {#java-version}
 
-由于Oracle从2015年4月起已停止发布Java 7更新，Adobe建议在Java 8上部署AEM资产。 在某些情况下，它显示性能得到改进。
+由于Oracle从2015年4月起已停止发布Java 7的更新，Adobe建议在Java 8上部署AEM资产。 在某些情况下，它显示性能得到改进。
 
 ### JVM参数 {#jvm-parameters}
 
@@ -417,6 +417,6 @@ To disable Page Extraction:
 * 从DAM更新资产工作流中删除不必要的步骤。
 * 配置工作流和版本清除。
 * 优化Lucene索引配置。
-* 使用最新的服务包和修补程序优化索引。 请咨询Adobe支持，了解是否有其他可用的索引优化。
+* 使用最新的服务包和修补程序优化索引。 请咨询Adobe客户关怀部门，了解可能提供的任何其他索引优化。
 * 使用 `guessTotal` 优化查询性能。
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.

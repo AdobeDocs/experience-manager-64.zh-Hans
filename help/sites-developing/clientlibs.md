@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 263e66f6a24a68e1fd64e1b35bf4830f4cba3a44
+source-git-commit: 50d57997496e6809361277f7025f3858857e14af
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 0%
@@ -134,7 +134,7 @@ Web客户端必须具有访问节点的 `cq:ClientLibraryFolder` 权限。 您�
 
 >[!NOTE]
 >
->客户端库文件夹下的静态资源必须位于名为resources的文 *件夹中*。 如果文件夹资源下没有静态资源（如图像），则 *不能*&#x200B;在发布实例上引用它。 以下是一个示例： http://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>客户端库文件夹下的静态资源必须位于名为resources的文 *件夹中*。 如果文件夹资源下没有静态资源（如图像），则 *不能*&#x200B;在发布实例上引用它。 以下是一个示例： http://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >

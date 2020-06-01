@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media图像用户档案
 seo-title: Dynamic Media图像用户档案
-description: 创建包含USM锐化设置、智能裁剪设置、智能色板设置、智能色板设置和／或智能色板设置的图像用户档案，然后将该用户档案应用到图像资产的文件夹。
-seo-description: 创建包含USM锐化设置、智能裁剪设置、智能色板设置、智能色板设置和／或智能色板设置的图像用户档案，然后将该用户档案应用到图像资产的文件夹。
+description: 创建包含USM锐化设置、智能裁剪或智能色板设置（或同时创建这两个设置）的图像用户档案，然后将该用户档案应用到图像资产的文件夹。
+seo-description: 创建包含USM锐化设置、智能裁剪或智能色板设置（或同时创建这两个设置）的图像用户档案，然后将该用户档案应用到图像资产的文件夹。
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 036bb0f6fc00a089e282145cbfde2d48a098ede9
+source-git-commit: 3a9b145395b5a251071129b0cee5ad57ca32fff6
 workflow-type: tm+mt
-source-wordcount: '2626'
-ht-degree: 21%
+source-wordcount: '2627'
+ht-degree: 20%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 21%
 
 ## Crop options {#crop-options}
 
-您有两个图像裁剪选项可供选择，还有一个用于自动创建颜色和图像样本的选项。
+<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
 
->[!IMPORTANT]
->
->请注意您创建的每个智能裁剪生成都需要额外的处理。 例如，添加五个以上的智能裁剪长宽比可能会导致资产摄取速度变慢。 它还可能增加系统的负载。 由于您可以在文件夹级别应用智能裁剪，因此Adobe建议您仅在需要智能裁剪的 *位置* 将其用于文件夹。
+请注意，您创建的每个智能裁剪生成都需要额外的处理。 例如，添加五个以上的智能裁剪长宽比可能会导致资产摄取速度变慢。 它还可能增加系统的负载。 由于您可以在文件夹级别应用智能裁剪，因此Adobe建议您仅在需要智能裁剪的 *位置* 将其用于文件夹。
+
+您有两个图像裁剪选项可供您选择。 您还可以选择自动创建颜色和图像色板。
 
 <table> 
  <tbody> 
@@ -51,7 +51,7 @@ ht-degree: 21%
      <li>裁剪起点： 左为X，上为Y</li> 
      <li>水平计算： 原始图像的水平像素尺寸减去“左”，然后减去“右”。</li> 
      <li>垂直计算： 垂直像素高度减去“顶部”，然后减去“底部”。</li> 
-    </ul> <p>例如，假定您的图像为4000 x 3000像素。 您使用以下值： Top=250; 底部=500; 左=300; 右=700。</p> <p>从左上角(300,250)，使用（4000-300-700、3000-250-500或3000,2250）的填充空间进行裁剪。</p> </td> 
+    </ul> <p>例如，假定您的图像为4000 x 3000像素。 您使用以下值： 顶部=250，底部=500，左侧=300，右侧=700。</p> <p>从左上角(300,250)，使用（4000-300-700、3000-250-500或3000,2250）的填充空间进行裁剪。</p> </td> 
   </tr> 
   <tr> 
    <td>智能裁剪</td> 
@@ -74,7 +74,7 @@ You use **Unsharp Mask** to fine-tune a sharpening filter effect on the final do
 
 >[!NOTE]
 >
->USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩小再现。 这意味着ptiff中最大的演绎版不受USM锐化的影响，而缩略图等较小的演绎版则会发生更改（并将显示USM锐化）。
+>USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩小再现。 这意味着PTIFF中最大的演绎版不受USM锐化的影响，而缩略图等较小的演绎版则会发生更改（并将显示USM锐化）。
 
 In **Unsharp Mask**, you have the following filtering options:
 
@@ -248,7 +248,7 @@ In **Unsharp Mask**, you have the following filtering options:
    * 移动智能裁剪框。 执行下列任一操作：
 
       * 如果图像仅具有智能裁剪或智能色板，则在图像上将裁剪框拖到新位置。
-      * 如果图像同时具有智能裁剪和智能色板，请在图像上将智能裁剪框拖到新位置。 或者，点按或单击图像下方的智能色板（色板为静态），然后将智能色板裁剪框拖到新位置。
+      * 如果图像同时具有智能裁剪和智能色板，请在图像上将智能裁剪框拖到新位置。 或者，点按图像下方的智能色板（色板为静态），然后将智能色板裁剪框拖到新位置。
       ![edit_smart_crobs_move](assets/edit_smart_crops-move.png)
 
    * 撤消所有编辑并恢复原始智能裁剪或智能色板（仅适用于当前编辑会话）。
@@ -280,6 +280,6 @@ In **Unsharp Mask**, you have the following filtering options:
 1. 点按AEM徽标，导 **[!UICONTROL 航资]** 产，然后导航到您要从中删除图像用户档案的文件夹。
 1. 在文件夹中，点按复选标记以选择它，然后点按 **[!UICONTROL 属性]**。
 1. Select the **[!UICONTROL Image Profiles]** tab.
-1. 从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 无]**，然后点按&#x200B;**[!UICONTROL 保存并关闭]**。
+1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
 
    如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。

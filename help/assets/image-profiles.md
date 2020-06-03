@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 3a9b145395b5a251071129b0cee5ad57ca32fff6
+source-git-commit: dbe1feef05cebed7c7bcadbe6a1b4af242cb9d3c
 workflow-type: tm+mt
-source-wordcount: '2627'
-ht-degree: 20%
+source-wordcount: '2708'
+ht-degree: 19%
 
 ---
 
@@ -26,9 +26,15 @@ ht-degree: 20%
 >
 >智能裁剪仅在Dynamic Media - Scene7模式下可用。
 
+>[!IMPORTANT]
+>
+>图像用户档案不适用于PDF文件。
+
 ## Crop options {#crop-options}
 
-<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
+<!-- CQDOC-16069 for paragraph directly below -->
+
+智能裁剪坐标取决于长宽比。 即，对于图像用户档案中的各种智能裁剪设置，如果长宽比对于图像用户档案中添加的尺寸是相同的，则会将相同的长宽比发送到Dynamic Media。 因此，Adobe建议您使用相同的裁剪区域。 这样做将确保不会影响图像用户档案中使用的不同尺寸。
 
 请注意，您创建的每个智能裁剪生成都需要额外的处理。 例如，添加五个以上的智能裁剪长宽比可能会导致资产摄取速度变慢。 它还可能增加系统的负载。 由于您可以在文件夹级别应用智能裁剪，因此Adobe建议您仅在需要智能裁剪的 *位置* 将其用于文件夹。
 

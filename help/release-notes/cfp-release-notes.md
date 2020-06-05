@@ -4,9 +4,9 @@ description: 特定于Adobe Experience Manager 6.4累积修复包的发行说明
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2aa3037b63f745d158eb87c5156808237277990d
+source-git-commit: b1deed95174e271bbd91814ef4aa6d4fa578cc45
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2152'
 ht-degree: 22%
 
 ---
@@ -237,7 +237,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 
 ## 已知问题 {#known-issues}
 
-* 更新版 [!DNL chrome] 本83导致在构建包时出现问题。 使用其他可用的浏览器(如 [!DNL Internet Explorer] 和 [!DNL Firefox]或其他AEM标准包安装选项)来解决此问题。
+* 安装AEM 6.4.8.1时，更新版 [!DNL Chrome] 本83会导致在构建包时出现问题。 使用其他可用的浏览器(如 [!DNL Internet Explorer] 和 [!DNL Firefox]或其他AEM标准包安装选项)来解决此问题。 安装AEM 6.4.8.1后，问题就得到解决。
 
 * 无法使用AEM默认邮件发送器将电子邮件发送到远程SMTP服务器，因为它仅允许使用TLS v1.2进行通信。请从 `javax.mail:mail:1.5.0-b01` 包 `system/console` 中删除包并刷新包以解决此问题。
 

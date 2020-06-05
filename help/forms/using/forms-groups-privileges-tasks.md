@@ -1,8 +1,8 @@
 ---
 title: OSGi组和权限上的AEM Forms
 seo-title: OSGi组和权限上的AEM Forms
-description: 将用户分配到组以管理OSGi上的AEM Forms
-seo-description: 将用户分配到组以管理OSGi上的AEM Forms
+description: 将用户分配到组以在OSGi上管理AEM Forms
+seo-description: 将用户分配到组以在OSGi上管理AEM Forms
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,18 +10,21 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 17f5041c16996ec3f230650451a816c08170837c
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 1%
 
 ---
 
 
 # OSGi组和权限上的AEM Forms {#aem-forms-on-osgi-groups-and-privileges}
 
-将用户分配到组以管理OSGi上的AEM Forms
+将用户分配到组以在OSGi上管理AEM Forms
 
-您可以 [在AEM中](/help/sites-administering/user-group-ac-admin.md#group-administration) ，创建用 [户组](/help/sites-administering/user-group-ac-admin.md#user-administration) ，并将策略和用户分配到用户组。 这些策略控制属于组的用户的权限。
+您可以 [在AEM中](/help/sites-administering/user-group-ac-admin.md#group-administration) 创建组 [，并将策](/help/sites-administering/user-group-ac-admin.md#user-administration) 略和用户分配到这些组。 这些策略控制属于组的用户的权限。
 
-安装 [AEM Forms Add-on包后](/help/forms/using/installing-configuring-aem-forms-osgi.md)，本文中提及的组（如forms-user和forms-power-user）将自动可用于分配。 下表列出了用户可根据组分配对OSGi上的AEM Forms执行的任务：
+安装AEM [Forms Add-on包后](/help/forms/using/installing-configuring-aem-forms-osgi.md)，本文中提到的组（如forms-user和forms-power-user）将自动可用于分配。 下表列表了用户根据组分配可对OSGi上的AEM Forms执行的任务:
 
 <table> 
  <tbody>
@@ -52,10 +55,10 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
     </ul> </td> 
   </tr>
   <tr>
-   <td>表单提交审阅者</td> 
+   <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
-     <li>审查提交内容</li> 
+     <li>审查提交</li> 
      <li>批准或拒绝提交</li> 
     </ul> </td> 
   </tr>
@@ -64,14 +67,6 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
    <td>
     <ul> 
      <li>创建和预览自适应表单或交互式通信模板</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
-   <td>模板——用户</td> 
-   <td>
-    <ul> 
-     <li>创建和预览自适应表单或交互式通信模板</li> 
-     <li>使用代码编辑器为自适应表单或交互式通信模板创建脚本</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -97,7 +92,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
     </ul> </td> 
   </tr>
   <tr>
-   <td>工作流——用户</td> 
+   <td>工作流用户</td> 
    <td>
     <ul> 
      <li>使用AEM收件箱应用程序</li> 

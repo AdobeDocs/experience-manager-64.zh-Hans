@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: cad8b5cb9a0e2c602d12e5d529b037b3ebcbcfbe
+source-git-commit: 774f0e8b631f6f8328e7bd9d4172498df58459bc
 workflow-type: tm+mt
-source-wordcount: '21556'
+source-wordcount: '21555'
 ht-degree: 24%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 24%
 | 版本 | 6.4.8.0 |
 | 类型 | Service Pack 版本 |
 | 日期 | 2020年3月5日 |
-| 下载 URL | AEM 6.4.8.0 on PackageShare, [软件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0)[分发（测试版）](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| 下载 URL | AEM 6.4.8.0 on PackageShare, [软件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0)[分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## AEM 6.4.8.0 包含哪些内容 {#what-s-included-in-aem}
 
@@ -245,7 +245,7 @@ AEM 6.4.7.0的一些主要亮点是：
 
 * 当具有重复名的资产在Scene 7中已存在时，AEM中的资产重命名无法同步到Scene 7(CQ-4276763)。
 
-* 当具有“读取”权限的用户尝试打开通过电子邮件发送的用于资产下载的Zip文件时，该文件无法解压缩(CQ-4277925)。
+* 当具有“读取”权限的用户尝试打开通过电子邮件发送的用于资产下载的Zip文件时，它无法解压缩(CQ-4277925)。
 
 * PPT再现工作流无法生成已上传PPT文件的再现，因为AEM 6.4无法更新到com.adobe.granite.poi版本2.0.28(CQ-4279059)。
 
@@ -458,7 +458,7 @@ AEM 6.4.6.0的一些主要亮点是：
 
 * 在基础API中的跟踪事件中增加了对跟踪动态UI状态的支持。 NPR-30742、GRANITE-26322: GRANITE-26036的修补程序
 
-**Forms**
+**表单**
 
 >[!NOTE]
 >
@@ -678,7 +678,7 @@ AEM 6.4.5.0的一些主要亮点是：
 
 * 使用无效选择器时导致反射型跨站点脚本攻击 (XSS)。适用于 CQ-4270397 的修补程序
 
-**Forms**
+**表单**
 
 AEM 6.4.5.0 Forms 的重要功能亮点包括：
 
@@ -934,7 +934,7 @@ AEM 6.4.4.0的一些主要亮点是：
 * 当我们打开包含“标记”(Tag)字段的工作流通知中的完整工作项对话框时，单击“交叉标记”(Cross mark)会向其添加“标记”(Tag)属性。 NPR-28304：适用于 CQ-4261321 的修补程序
 * “重新分配任务”对话框中的“用户选择切换按钮”不起作用。 NPR-28963：适用于 CQ-4264206 的修补程序
 
-**Forms**
+**表单**
 
 AEM 6.4.4.0 Forms 的重要功能亮点包括：
 
@@ -1075,7 +1075,7 @@ AEM 6.4.3.0的一些主要亮点是：
 * 当将子规则从作者实例激活到发布实例时，发布实例将停止工作。 NPR-26601：适用于 CQ-4253588 的修补程序
 * 将富文本编辑器与多个字段组合使用时，出现未捕获的类型错误：fieldAPI.getName 在 foundation.js 中不是函数。NPR-27146：适用于 CQ-4253155 的修补程序
 * Salesforce集成无法使用代理配置。 NPR-27244：适用于 CQ-4245300 的修补程序
-* 在以后使用“管理发布”选项计划页面进行激活时，切换到列表视图，将缺少日历图标。 NPR-26974：适用于 CQ-4239206 的修补程序
+* 在以后使用“管理发布”选项计划页面进行激活并切换到列表视图时，缺少日历图标。 NPR-26974：适用于 CQ-4239206 的修补程序
 * 用户无法编辑页面属性中已关闭的用户组权限。 NPR-27138: CQ-4256089的修补程序无法通过标记编辑标记。 NPR-26957：适用于 CQ-4254858 的修补程序
 * 当从结构化内容片段模型引用的标记被移动时，内容片段中对标记的现有引用不会更新。 这在内容片段模型的编辑屏幕中发生。 NPR-26776：适用于 CQ-4251805 的修补程序
 * 在创建和提升包含多个页面的启动项时，会为每个页面创建多个版本。 NPR-26917：适用于 CQ-4254663 的修补程序
@@ -1199,7 +1199,7 @@ AEM 6.4.3.0的一些主要亮点是：
 
 * 在第一次编辑时，将禁用组件的编辑工具栏。 适用于 CQ-4253270 的修补程序
 
-**Forms**
+**表单**
 
 AEM 6.4.3.0 Forms 的重要功能亮点包括：
 
@@ -1548,7 +1548,7 @@ AEM 6.4.2.0的一些主要亮点是：
 * 在安装内容包时，ACL按主体分组，因此会破坏权限模型。 NPR-24583：适用于 Granite-21591 的修补程序
 * 将Jetty更新为9.4.11以修复漏洞。 NPR-25030：适用于 Granite-22120 的修补程序
 
-**Forms**
+**表单**
 
 AEM 6.4.2.0 Forms 的重要功能亮点包括：
 
@@ -1905,7 +1905,7 @@ AEM 6.4.1.0可安装在AEM 6.4 GA上。 Service Pack的一些主要亮点是：
 
 * 引入了增强的智能标签。 NPR-21951
 
-**Forms**
+**表单**
 
 AEM Forms 修补程序通过随发行版一起提供的附加组件包和其他补丁安装程序进行交付。有关详细信息，请参阅 AEM Forms 发行版。
 

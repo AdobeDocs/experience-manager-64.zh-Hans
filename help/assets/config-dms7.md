@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 48f7e9ca8038ab0217af251be31b4b0e98f75912
+source-git-commit: 05595377d4a5f24e4f311e5c34f10e6dc964d35e
 workflow-type: tm+mt
 source-wordcount: '5552'
 ht-degree: 4%
@@ -107,7 +107,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
-1. 要在发布Dynamic Media内容之前安全地预览它，您需要将AEM作者实例“列入白名单”才能连接到Dynamic Media:
+1. 要在发布Dynamic Media内容之前安全地预览它，您需要“允许列出”AEM作者实例才能连接到Dynamic Media:
 
    * 登录您的Dynamic Media Classic帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。 您的凭据和登录是在配置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
    * 在页面右上方的导航栏上，点按设置>应 **[!UICONTROL 用程序设置>发布设置>图像服务器]**。
@@ -164,7 +164,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 要打开“应 [!UICONTROL 用程序常规设置] ”页，请在Dynamic Media Classic全局导航栏中，点 **[!UICONTROL 按设置>应用程序设置>常规设置]**。
 
-**[!UICONTROL 服务器]** -在帐户配置时，Dynamic Media会自动为您的公司提供已分配的服务器。 这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非AEM支持明确指示，否则不要更改任何服务器名称。
+**[!UICONTROL 服务器]** -在帐户配置时，Dynamic Media会自动为您的公司提供分配的服务器。 这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非AEM支持明确指示，否则不要更改任何服务器名称。
 
 **[!UICONTROL 覆盖图像]** - Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定了如何上传替换资产： 是替换原件还是成为重复。 重复资产使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
 

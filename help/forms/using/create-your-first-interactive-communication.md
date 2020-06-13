@@ -9,18 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 0%
 
 ---
 
 
-# 教程：创建您的第一个交互式通信 {#tutorial-create-your-first-interactive-communication}
+# 教程： 创建您的第一个交互式通信 {#tutorial-create-your-first-interactive-communication}
 
 了解如何创建您的第一个交互式通信。
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
-Interactive Communications集中化和管理安全、个性化和交互式通信（如业务通信、文档、声明、营销邮件、帐单和欢迎套件）的创建、汇编和交付。 交互式通信可通过两个渠道交付：印刷和Web。 打印渠道用于创建PDF和纸张通信，而Web渠道用于提供在线体验。
+交互式通信集中化和管理安全、个性化和交互式通信(如业务通信、文档、声明、营销邮件、帐单和欢迎套件)的创建、组合和投放。 交互式通信可以使用两种渠道交付： 印刷和Web。 打印渠道用于创建PDF和纸张通信，而Web渠道用于提供在线体验。
 
 本教程提供了用于创建交互式通信的端到端框架。 本教程分为一个用例和多个指南。 每个指南都可以帮助您创建用作构件块的功能，以创建交互式通信。
 
@@ -30,18 +33,18 @@ Interactive Communications集中化和管理安全、个性化和交互式通信
 
 在本教程的结尾，您将能够：
 
-* 创建构建块（表单数据模型、文档片段和模板）
+* 创建构建块(表单数据模型、文档片段和模板)
 * 创建交互式通信
 * 测试和发布交互式通信
 
 ## Use case {#use-case}
 
-旅程始于学习使用案例：
+旅程开始了如何学习使用案例：
 
-电信运营商通过电子邮件向客户发送月度账单。 账单是一份交互通信。 电子邮件包括：
+电信运营商通过电子邮件向客户发送月度账单。 帐单是交互式通信。 电子邮件包括：
 
-* 受密码保护的PDF，在本教程中称为“打印”通道。 它包括客户详细信息、帐单详细信息、费用汇总、支付帐单的便捷模式和使用详细信息。
-* 指向Web版本帐单的链接，在本教程中称为Web渠道。 除PDF版本中介绍的详细信息外，Web版本还以图形形式显示了使用详细信息以及基于Adobe Target的个性化优惠。 Web版本还包含在线支付表单。 它有助于在线支付，而无需离开IC。
+* 受密码保护的PDF，在本教程中称为“打印渠道”。 它包括客户详细信息、帐单详细信息、费用汇总、支付帐单的便捷方式和使用详细信息。
+* 指向Web版本的帐单的链接，在本教程中称为Web渠道。 除了PDF版中介绍的详细信息外，Web版本还以图形形式呈现了使用详细信息，并基于Adobe Target提供了个性化优惠。 Web版本还包含在线支付表单。 无需离开IC即可进行在线支付。
 * 指向增值服务的链接，如在线存储、音乐订阅和点播视频订阅。
 
 ## 前提条件 {#prerequisites}
@@ -49,17 +52,17 @@ Interactive Communications集中化和管理安全、个性化和交互式通信
 * 设置AEM作者实例。
 * 在作 [者实例上安装](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms Add-on
 * 设置MYSQL数据库
-* 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于MySQL数据库，并使用Oracle的 [MySQL JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html)。
+* 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于MySQL数据库，并使用Oracle的MySQL [JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
-## 第1步：规划交互式通信 {#step-plan-the-interactive-communication}
+## 第1步： 规划交互式通信 {#step-plan-the-interactive-communication}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-规划交互式通信的第一步是最终确定交互式通信的内容。 内容完成后，您必须对其进行分析以识别创建交互式通信所需的各种资产类型。
+规划交互式通信的第一步是最终确定交互式通信的内容。 内容完成后，您必须对其进行分析，以确定创建交互式通信所需的各种资产类型。
 
 **目标：**
 
-要使用以下数据输入模式为交互式通信创建解剖结构，请执行以下操作：
+使用以下数据输入模式为交互式通信创建解剖结构：
 
 * 静态文本
 * 表单数据模型
@@ -73,7 +76,7 @@ Interactive Communications集中化和管理安全、个性化和交互式通信
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-表单数据模型允许您将交互式通信连接到不同的数据源。 例如，AEM用户配置文件、RESTful web服务、基于SOAP的Web服务、OData服务和关系数据库。 表单数据模型是业务实体和在连接数据源中可用服务的统一数据表示模式。 您可以将表单数据模型与交互式通信结合使用以从连接的数据源检索数据。 有关表单数据模型的详细信息，请参 [阅AEM表单数据集成](/help/forms/using/data-integration.md)。
+表单数据模型允许您将交互式通信连接到不同的数据源。 例如，AEM用户用户档案、REST风格的Web服务、基于SOAP的Web服务、OData服务和关系型数据库。 表单模式模型是业务实体和在连接数据源中可用服务的统一数据表示。 您可以将表单数据模型与交互式通信结合使用，从连接的数据源检索数据。 有关表单数据模型的更多信息，请 [参阅AEM表单数据集成](/help/forms/using/data-integration.md)。
 
 **目标：**
 
@@ -82,17 +85,17 @@ Interactive Communications集中化和管理安全、个性化和交互式通信
 * 将数据模型对象添加到表单数据模型
 * 为表单数据模型配置读写服务
 * 在数据模型对象之间创建关联
-* 查看自动生成的样本数据
-* 编辑范例数据
-* 测试表单数据模型和配置有测试数据的服务
+* 视图自动生成的样本数据
+* 编辑示例数据
+* 测试表单数据模型和配置的服务以及测试数据
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
+   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model-tutorial.md)
 
-## 第3步：创建文档片段 {#step-create-document-fragments}
+## 第3步： 创建文档片段 {#step-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-文档片段是用于构成交互式通信的通信的可重用组件。 文档片段的类型有：文本、列表和条件。
+文档片段是用于组成交互通信的通信的可重用组件。 文档片段的类型有： 文本、列表和条件。
 
 **目标：**
 
@@ -102,48 +105,48 @@ Interactive Communications集中化和管理安全、个性化和交互式通信
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
-## 第4步：创建模板 {#step-create-templates}
+## 第4步： 创建模板 {#step-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-要创建交互式通信，您必须在AEM服务器上提供用于打印和Web渠道的模板。
+要创建交互式通信，您必须在AEM服务器上提供适用于打印和Web渠道的模板。
 
-打印渠道的模板在Adobe Forms Designer中创建并上传到AEM服务器。 然后，这些模板可在创建交互式通信时使用。
+打印渠道的模板在Adobe Forms Designer中创建并上传到AEM服务器。 然后，这些模板便可在创建交互式通信时使用。
 
-将在AEM中创建Web渠道的模板。 模板作者和管理员可以创建、编辑和启用Web模板。 创建并启用这些模板后，即可在创建交互式通信时使用。
+Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建、编辑和启用Web模板。 创建并启用这些模板后，即可在创建交互式通信时使用。
 
 **目标：**
 
-* 使用Adobe Forms Designer为打印渠道创建XDP模板
+* 使用Adobe Forms Designer创建用于打印渠道的XDP模板
 * 将XDP模板上传到AEM Forms Server
-* 创建和启用Web渠道的模板
+* 创建并启用Web渠道的模板
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
-## 第5步：创建交互式通信 {#step-create-an-interactive-communication}
+## 第5步： 创建交互式通信 {#step-create-an-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
-创建所有构建块（如表单数据模型、文档片段和Web版本的模板）后，即可开始创建交互式通信。
+为Web版本创建表单数据模型、文档片段和模板等所有构建基块后，您就可以开始创建交互式通信。
 
-交互式通信可通过两个渠道提供：印刷和Web。 您还可以创建以打印渠道为主渠道的交互式通信。 Web渠道的打印为主选项可确保Web渠道的内容、继承和数据绑定从打印渠道派生。
+交互式通信可通过两种渠道提供： 印刷和Web。 您还可以创建以打印渠道为主的交互式通信。 Web渠道的打印为主选项可确保Web渠道的内容、继承和数据绑定是从打印渠道派生的。
 
 **目标：**
 
 * 为打印渠道创建交互式通信
 * 为Web渠道创建交互式通信
 * 以“打印为主”创建印刷和Web交互式通信
-* 在Web版本的交互通信中创建动态表
-* 在Web版本的交互式通信中创建图表
+* 在Web版交互通信中创建动态表
+* 在Web版本的交互通信中创建图表
 * 在Web版交互通信中创建超链接
 
-   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
+   [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-interactive-communication-tutorial.md)
 
-## 第6步：测试交互式通信 {#step-test-your-interactive-communication}
+## 第6步： 测试交互式通信 {#step-test-your-interactive-communication}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
-创建交互式通信后，务必测试您在其中所做的每项更改。 测试交互式通信的每个字段都很繁琐。 AEM Forms提供SDK(Calvin SDK)以在Web浏览器中自动测试交互式通信。
+创建交互式通信后，务必测试您在其中所做的每项更改。 测试交互式通信的每个字段都很繁琐。 AEM Forms提供一个SDK(Calvin SDK)，可在Web浏览器中自动测试交互式通信。
 
 **目标：**
 
@@ -151,15 +154,15 @@ Interactive Communications集中化和管理安全、个性化和交互式通信
 * 创建测试用例
 * 运行测试用例
 
-## 第7步：发布您的交互式通信 {#step-publish-your-interactive-communication}
+## 第7步： 发布交互通信 {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-使用打印和Web渠道创建和测试交互式通信后，您便可以发布这些资产。 本教程中介绍的用例重点介绍将这些资产与电子邮件客户端集成。 电子邮件客户端充当将交互式通信发送到多个电子邮件地址的桥梁。
+使用打印和Web渠道创建和测试交互式通信后，即可发布这些资源。 本教程中介绍的用例侧重于将这些资产与电子邮件客户端集成。 电子邮件客户端充当将交互式通信发送到多个电子邮件地址的桥梁。
 
 **目标：**
 
 * 将交互式通信与电子邮件客户端集成，以便能够向客户发送通信
-* 将PDF文档作为附件包含（在打印渠道中创建的交互式通信）
-* 包括指向Web版本的交互式通信的链接
+* 将PDF文档作为附件包含(在打印渠道中创建的交互式通信)
+* 包括指向Web版交互通信的链接
 

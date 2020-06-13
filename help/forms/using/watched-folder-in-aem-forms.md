@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+source-git-commit: 3cc4e08b3a69851e5d4e79eb8159ee00e8f333a0
 workflow-type: tm+mt
-source-wordcount: '7663'
+source-wordcount: '7662'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM Forms中的监视文件夹 {#watched-folder-in-aem-forms}
 
-管理员可以配置网络文件夹（称为“监视文件夹”），当用户将文件（如PDF文件）放在“监视文件夹”中时，会启动预先配置的工作流、服务或脚本操作以处理添加的文件。 服务执行指定操作后，会将结果文件保存到指定的输出文件夹中。 有关工作流、服务和脚本的详细信息，请参 [阅各种文件处理方法](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-4)。
+管理员可以配置网络文件夹（称为“监视文件夹”），当用户将文件（如PDF文件）放在“监视文件夹”中时，会启动预先配置的工作流、服务或脚本操作以处理添加的文件。 服务执行指定操作后，会将结果文件保存到指定的输出文件夹中。 有关工作流、服务和脚本的详细信息，请参 [阅各种文件处理方法](#variousmethodsforprocessingfiles)。
 
 ## 创建监视文件夹 {#create-a-watched-folder}
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
    文 `MyWatchedFolder`件夹不存在，AEM Forms会尝试在指定路径下创建该文件夹。
 
-* 在配置监视文件夹端点之前在文件系统上创建一个文件夹，然后在folderPath属性中提供完整路径。 有关folderPath属性的详细信息，请参阅 [监视文件夹属性](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)。
+* 在配置监视文件夹端点之前在文件系统上创建一个文件夹，然后在folderPath属性中提供完整路径。 有关folderPath属性的详细信息，请参阅 [监视文件夹属性](#watchedfolderproperties)。
 
 >[!NOTE]
 >
@@ -53,7 +53,8 @@ ht-degree: 0%
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   有关受支持属性的完整列表，请参 [阅监视文件夹属性](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)。
+
+   有关受支持属性的完整列表，请参 [阅监视文件夹属性](#watchedfolderproperties)。
 
 1. 单击“ **全部保存**”。 创建节点并保存属性后。 、、 `input`、 `result`和文 `failure`件 `preserve`夹是在属性中指定的路径 `stage``folderPath` 创建的。
 
@@ -80,12 +81,13 @@ ht-degree: 0%
    * 作者，发布
 
    * 发布，创作
-
-**注意**: *如果承载监视文件夹的服务器没有任何指定的运行模式，则无论服务器上的运行模式如何，监视文件夹都始终激活。*
+   >[!NOTE]
+   >
+   >如果承载监视文件夹的服务器没有任何指定的运行模式，则无论服务器上的运行模式如何，监视文件夹都始终激活。
 
 * **outputFilePattern（字符串）**: 输出文件的模式。 可以指定文件夹或文件模式。 如果指定了文件夹模式，则输出文件的名称如工作流中所述。 如果指定了文件模式，则输出文件具有文件模式中所述的名称。 [文件和文件夹模式](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) ，还可以为输出文件指定目录结构。 它是强制属性。
 
-* **stageFileExpirationDuration（长，默认-1）**: 在已被拾取以进行处理的输入文件／文件夹之前等待的秒数应视为超时并标记为失败。 仅当此属性的值为正数时，此过期机制才激活。
+* **stageFileExpirationDuration（长，默认-1）**: 在已被拾取用于处理的输入文件／文件夹之前等待的秒数应视为已超时并标记为失败。 仅当此属性的值为正数时，此过期机制才激活。
 
    **注意：** *即使当输入使用此机制被标记为已超时时，它仍可能在后台处理，但只是比预期花费更多时间。 如果在超时机制启动之前消耗了输入内容，则处理甚至可能在以后继续完成，并将输出转储到结果文件夹中。 如果超时之前未消耗内容，则以后尝试消耗内容时处理很可能会出错，并且对于同一输入，此错误也会记录在失败文件夹中。 另一方面，如果由于间歇性作业／工作流失火（这是失效机制要解决的情况）而未激活对输入的处理，那么当然，这两种可能性都不会发生。 因此，对于因超时而标记为失败的失败文件夹中的任何条目(查找“文件在相当长时间后未处理，标记为失败！”格式的消息 在失败日志中)，建议扫描结果文件夹（以及针对同一输入扫描失败文件夹本身以查找另一个条目），以检查之前描述的任何可能性是否实际发生。*
 
@@ -139,6 +141,7 @@ ht-degree: 0%
    * %l =毫秒
    * %R =随机数（介于0和9之间）
    * %P =进程或作业ID
+
    例如，如果2009年7月17日晚上8点，并且您指定C:/Test/WF0/failure/%Y/%M/%D/%H/，则结果文件夹为C:/Test/WF0/failure/2009/07/17/20
 
    如果路径不是绝对的，而是相对的，则在“监视文件夹”中创建该文件夹。 默认值为result/%Y/%M/%D/，它是监视文件夹内的Result文件夹。 有关文件模式的详细信息，请参 [阅关于文件模式](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
@@ -534,6 +537,7 @@ log.info("Exiting workflow script!")
 
    * 将“监视文件夹”的includeFilePattern属性更改为与任何新输入文件不匹配的内容（例如，输入NOMATCH）。
    * 暂停创建新输入文件的进程。
+
    等到AEM Forms恢复并处理所有文件。 大多数文件都应该恢复，并且所有新的输入文件都应正确处理。 等待监视文件夹恢复和处理文件的时间长短取决于要调用的操作长度和要恢复的文件数。
 
 1. 确定无法处理哪些文件。 如果您等了适当的时间并完成了上一步，并且舞台文件夹中仍保留未处理的文件，请转到下一步。
@@ -669,7 +673,7 @@ ECMAScript将使用PDF Generator的createPDF API将Microsoft Word(.docx)文档�
    * inputProcessorId（字符串）: inputProcessorId属性的行为基于为inputProcessorType属性指定的值。 在此示例中，inputProcessorType属性的值为workflow。 因此，对于inputProcessorId属性，指定PDFG工作流的以下路径： /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern（字符串）: 输出文件的模式。 可以指定文件夹或文件模式。 如果指定了文件夹模式，则输出文件的名称如工作流中所述。 如果指定了文件模式，则输出文件具有文件模式中所述的名称。
-   除了上述必选属性之外，“监视文件夹”还支持一些可选属性。 有关可选属性的完整列表和说明，请参阅 [监视文件夹属性](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)。
+   除了上述必选属性之外，“监视文件夹”还支持一些可选属性。 有关可选属性的完整列表和说明，请参阅 [监视文件夹属性](#watchedfolderproperties)。
 
 ## 将中央迁移桥（已弃用）与监视的文件夹一起使用 {#using-central-migration-bridge-deprecated-with-a-watched-folder}
 
@@ -750,4 +754,4 @@ ECMAScript将使用PDF Generator的createPDF API将Microsoft Word(.docx)文档�
 
    * **outputFilePattern（字符串）**: 输出文件的模式。 可以指定文件夹或文件模式。 如果指定了文件夹模式，则输出文件的名称如工作流中所述。 如果指定了文件模式，则输出文件具有文件模式中所述的名称。
 
-除了上述必选属性之外，“监视文件夹”还支持一些可选属性。 有关可选属性的完整列表和说明，请参 [阅监视文件夹属性](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)。
+除了上述必选属性之外，“监视文件夹”还支持一些可选属性。 有关可选属性的完整列表和说明，请参 [阅监视文件夹属性](#watchedfolderproperties)。

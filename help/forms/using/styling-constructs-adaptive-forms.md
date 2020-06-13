@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
 translation-type: tm+mt
-source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '2184'
+ht-degree: 3%
 
 ---
 
@@ -17,28 +20,28 @@ source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
 
 ## 前提条件 {#prerequisites}
 
-CSS和LESS框架的知识。
+了解CSS和LESS框架。
 
 ## 可自定义的内容 {#what-can-be-customized}
 
-文章列出了可公开使用的自适应表单的css类。 您可以利用这些类来设计自适应表单的各个组件的样式。 创作组件的样式（如显示警告的对话框和状态栏）超出了本文的范围。 仅当无法使用主题编辑器设置组件样式时，才使用这些样式构造创建样式(使用CSS或 [更少)](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)。
+文章列表公开的自适应表单的css类。 您可以利用这些类来设计自适应表单的各个组件的样式。 创作组件的样式（如显示警告的对话框和状态栏）超出本文的范围。 仅当无法使用主题编辑器设置组件样式时，才使用这些样式构造创建样式(使用CSS或 [更少)](themes.md)。
 
-## 自定义自适应表单中的样式 {#customizing-styles-in-adaptive-forms}
+## 在自适应表单中自定义样式 {#customizing-styles-in-adaptive-forms}
 
-LESS框架简化了自适应表单中的样式自定义用例。 该框架允许您使用一组变量和函数（混合）定义样式。 LESS框架有助于减小捆绑代码的大小并增加其可重用性。
+LESS框架简化了自适应表单样式的使用案例。 该框架允许您使用一组变量和函数（混合）定义样式。 LESS框架有助于减小捆绑代码的大小并增加其可重用性。
 
 可以通过以下方式自定义自适应表单样式：
 
 * 更改主题
-* 更改组件的样式
+* 更改组件样式
 
 ## 更改主题 {#changing-theme}
 
 您可以更改自适应表单的主题以确保其外观与嵌入自适应表单的网页保持一致。
 
-使用CSS属性对自适应表单的整体外观进行的更改通常是主题更改的一部分。 对“自适应表单的确定和感觉”的主要更改（如组件布局和位置的更改）不视为主题更改。
+使用CSS属性对自适应表单的整体外观进行更改通常是主题更改的一部分。 对“自适应表单的确定和感觉”这个选项所做的重大更改（如组件布局和位置的更改）不会被视为主题更改。
 
-根据引导，以下一组CSS属性定义网页的主题：
+根据引导，以下CSS属性集定义网页的主题：
 
 * 背景颜色
 * 边框（类型、颜色、粗细）
@@ -48,17 +51,17 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 * 字体大小
 * LineHeight
 
-目前，LESS变量仅针对自适应表单中各个元素的这些属性进行定义。
+目前，LESS变量仅为自适应表单中各个元素的这些属性定义。
 
 ## 更改组件样式 {#changing-component-style}
 
-您可以更改元素的外观、布局、位置和可见性。 要完成此任务，请创建或更新自定义。css文件以包含本文中列出的样式构造。
+您可以更改元素的外观、布局、位置和可见性。 要实现此任务，请创建或更新自定义。css文件，以包含本文中列出的样式构造。
 
-要将样式应用于自适应表单，请在中打开自适应表单以进行编辑，打开自适应表单容器的属性，在基本选项卡中指定自定义CSS文件的路径。 自适应表单的默认样式构造并由自定义。css文件中列出的构造覆盖。
+要将样式应用于自适应表单，请在中打开自适应表单进行编辑，打开自适应表单容器的属性，在基本选项卡中指定自定义CSS文件的路径。 自适应表单的默认样式构造，并由自定义。css文件中列出的构造覆盖。
 
 ## 组件 {#components}
 
-本文讨论的组件具有其预定义的CSS类。 您可以编辑变量以修改CSS类中的样式。 或者，您也可以重写整个类。 本节介绍组件和样式中的类，您可以使用变量修改这些类。
+本文中讨论的组件有其预定义的CSS类。 您可以编辑变量以修改CSS类中的样式。 或者，也可以重写整个类。 本节介绍组件和样式中的类，您可以使用变量修改这些类。
 
 ## 容器样式 {#container-styling}
 
@@ -89,7 +92,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>container-margin</code></p> </td> 
-   <td><p>容器的边距</p> </td> 
+   <td><p>容器边距</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>container-fontColor</code></p> </td> 
@@ -100,9 +103,9 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 
 ## 字段样式 {#field-styling}
 
-自适应表单包括各种类型的字段。 每个字段都有唯一的类名，即字段的名称。 该字段还有一个公用类名 `guideFieldNode`。
+自适应表单包括各种类型的字段。 每个字段都有一个唯一的类名，即字段的名称。 该字段还具有通用类名 `guideFieldNode`。
 
-字段包括标签、构件、帮助说明（“长”和“短”说明）和“字段帮助”图标（问号）。
+字段包括标签、构件、帮助说明（长说明和短说明）和字段帮助图标（问号）。
 
 <table> 
  <tbody> 
@@ -136,7 +139,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 
 ## 标签样式 {#label-styling}
 
-用于字段 **的HTML元素标签** ，包括left **类或top类，具体取决于标签是位于顶部还是** 左侧 **** 。
+用于字段 **的** HTML元素标签包含左 **侧****或** 顶部的类，具体取决于标签在顶部还是左侧。
 
 <table> 
  <tbody> 
@@ -167,7 +170,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>label-font-weight</code></p> </td> 
-   <td>字段标签的CSS字体粗细属性 </td> 
+   <td>字段标签的CSS字体权重属性 </td> 
   </tr> 
   <tr> 
    <td><p><code>label-margin</code></p> </td> 
@@ -176,11 +179,11 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
  </tbody> 
 </table>
 
-标签的CSS规则使用guideFieldLabel标签 **进行应用** 。 如果您是作者，请覆盖此规则以使您的自定义更改可见。
+标签的CSS规则使用guideFieldLabel标 **签进行应** 用。 如果您是作者，请覆盖此规则以使自定义更改可见。
 
 ## 构件样式 {#widgets-styling}
 
-构件还包含类，具体取决于其类型。 通常，构件包括 `guideFieldWidget` 类。 随HTML一起提供的构件通常使用标准HTML元素输入和选择。 样式设置也相应地进行。 不能通过更改变量来设置自定义构件的样式。
+构件还包含类，具体取决于其类型。 通常，构件包括 `guideFieldWidget` 类。 随HTML一起提供的构件通常使用标准HTML元素输入和选择。 样式将相应地进行。 无法通过更改变量来设置自定义构件的样式。
 
 <table> 
  <tbody> 
@@ -199,7 +202,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>widgets-bg-color</code></p> </td> 
-   <td>构件的背景颜色（不适用于复选框和单选按钮）</td> 
+   <td>构件的背景颜色（对复选框和单选按钮不起作用）</td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-border-color</code></p> </td> 
@@ -247,7 +250,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>widgets-mandatory-border-color</code></p> </td> 
-   <td><p>必填字段的构件边框颜色</p> </td> 
+   <td><p>必填字段的构件的边框颜色</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-mandatory-bg-color</code></p> </td> 
@@ -267,7 +270,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>widget-height</code></p> </td> 
-   <td>构件的高度（对于复选框和单选按钮无效）</td> 
+   <td>构件的高度（复选框和单选按钮不工作）</td> 
   </tr> 
   <tr> 
    <td><p><code>checkbutton-height</code></p> </td> 
@@ -282,11 +285,11 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 
 ### 构件样式限制 {#limitations-in-widget-styling}
 
-焦点、必填和禁用字段的样式使用变量进行限制。 但是，可以通过覆盖样式来更改它。 使用变量的限制主要是为了保持变量的数量受到限制。 如果字段的外观发生显着变化，则可以放松该限制，因为它位于前面讨论的任何状态中。
+焦点、必填和禁用字段的样式使用变量进行限制。 但是，可以通过覆盖样式来更改它。 使用变量的限制主要是为了保持变量的数量受到限制。 当场的外观发生显着变化时，该限制可以放松，因为它位于前面讨论的任何状态中。
 
 ## 帮助说明 {#help-description}
 
-作者可以使用简短和详细说明组件在字段中指定帮助内容。 根据描述的类型，这两 `.guideHelpDescription` 个组件都有一个 `.long`公 `.short`共类和另一个类/。 “帮助”内容包含在段落元素中以覆盖描述的样式。 帮助说明（长和短）使用以widgetshelp开头的变量进行修改，如下表所述：
+作者可以使用简短和详细说明组件在字段中指定帮助内容。 这两个组件都有一个 `.guideHelpDescription` 公用类和 `.long`另一个 `.short`类/，具体取决于描述的类型。 “帮助”内容会包含在段落元素中以覆盖描述的样式。 帮助说明（长和短）使用以widgetshelp开头的变量进行修改，如下表所述：
 
 <table> 
  <tbody> 
@@ -296,7 +299,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>widgets-help-long-bg-color</code></p> </td> 
-   <td><p>构件的长帮助的背景颜色</p> </td> 
+   <td><p>构件的背景颜色长帮助</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-long-border-color</code></p> </td> 
@@ -304,11 +307,11 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>widgets-help-long-border-indicator-color</code></p> </td> 
-   <td><p>构件的左侧指示器边框颜色的长帮助</p> </td> 
+   <td><p>构件的左指示器边框颜色的长帮助</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-short-bg-color</code></p> </td> 
-   <td><p>构件的简短帮助的背景颜色</p> </td> 
+   <td><p>构件的背景颜色简短帮助</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-short-color</code></p> </td> 
@@ -327,7 +330,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 
 ## 条款和条件 {#terms-and-conditions}
 
-条款与条件(TnC `` ``)构件允许您指定条款和条件。 您可以使用下表中描述的变量自定义构件。
+条款与条件(TnC) `` ``构件允许您指定条款和条件。 您可以使用下表中描述的变量自定义构件。
 
 <table> 
  <tbody> 
@@ -348,9 +351,9 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 
 ## 按钮 {#button}
 
-按钮也是构件。 但是，其样式与构件略有不同。 在自适应表单中，以下任一选项都构成一个按钮：
+按钮也是构件。 但是，其样式与构件略有不同。 在自适应表单中，以下任一项构成按钮：
 
-* 输[入类型=文本]
+* [输入类型=文本]
 * 按钮
 * 元素与类。button
 
@@ -421,7 +424,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>button-large-padding</code></p> </td> 
-   <td><p>大按钮的填充（类为。buttonlarge的按钮）</p> </td> 
+   <td><p>大按钮的边距（类为。buttonlarge的按钮）</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-large-font-size</code></p> </td> 
@@ -429,7 +432,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>button-small-padding</code></p> </td> 
-   <td><p>小按钮的填充（类为。buttonsmall的按钮）</p> </td> 
+   <td><p>小按钮的边距（类为。buttonsmall的按钮）</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-small-font-size</code></p> </td> 
@@ -445,11 +448,11 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>button-info-border-color</code></p> </td> 
-   <td><p>信息性按钮的边框颜色</p> </td> 
+   <td><p>用于信息性按钮的边框颜色</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-warning-background-color</code></p> </td> 
-   <td><p>警告样式按钮的背景色（类为。buttonwarning的按钮）</p> </td> 
+   <td><p>警告样式按钮的背景颜色（类为。buttonwarning的按钮）</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-warning-font-color</code></p> </td> 
@@ -461,7 +464,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>button-alert-background-color</code></p> </td> 
-   <td><p>警报按钮的背景颜色（具有。buttonalert类的按钮）</p> </td> 
+   <td><p>警报按钮的背景颜色（具有类。buttonalert的按钮）</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-alert-font-color</code></p> </td> 
@@ -476,7 +479,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 
 ## Question mark {#question-mark}
 
-对于构件，当作者在“帮助”内容中添加详细说明时，将显示问号。 使用引导中提供的默认图标。 要使用自定义图标，您可以自定义引导图标。
+对于构件，当作者在“帮助”内容中添加详细说明时，将显示questionMark。 使用引导中提供的默认图标。 要使用自定义图标，可以自定义引导图标。
 
 <table> 
  <tbody> 
@@ -531,7 +534,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 
 ## 文件附件 {#file-attachment}
 
-利用自适应表单的文件附件构件可上传文件。 您还可以使用变量自定义构件。
+自适应表单的文件附件构件允许您上传文件。 您还可以使用变量自定义构件。
 
 <table> 
  <tbody> 
@@ -541,7 +544,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>fileItemPadding</code></p> </td> 
-   <td><p>构件中显示的文件的填充</p> </td> 
+   <td><p>构件中显示的文件的边距</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>fileItemBackground</code></p> </td> 
@@ -557,7 +560,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>filePreviewIconColor</code></p> </td> 
-   <td><p>构件中“预览”图标（“引导”图标）的颜色</p> </td> 
+   <td><p>构件中预览图标的颜色（引导图标）</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>fileItemCommentHeight</code></p> </td> 
@@ -568,7 +571,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 
 ## 导航器样式 {#navigator-styles}
 
-有四种类型的导航器选项卡。 这些选项卡包括向导和折叠面板中左侧、顶部的选项卡。 每个导航器都有不同的类。
+有四种类型的导航器选项卡。 这些选项卡包括向导和折叠面板左侧、顶部的选项卡。 每个导航器都有不同的类。
 
 <table> 
  <tbody> 
@@ -590,7 +593,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>Wizard</code></p> </td> 
-   <td><p>.wizard-navigators</p> </td> 
+   <td><p>.向导——导航器</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -637,7 +640,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 
 `</div>`
 
-您可以使用CSS规则更改导航器的样式，这些规则使用子代选择器选择 **元素** 。 例如，要向锚点标签添加文本装饰样式，请执行以下操作：
+您可以使用CSS规则更改导航器的样式，这些规则使用子代选择器选择 **元素** 。 例如，要向锚点标签添加文本装饰样式：
 
 顶部的选项卡导航器：
 
@@ -685,7 +688,7 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
 
 `}`
 
-此外，还有类用于根据选项卡导航器是否具有嵌套／子/子导航器来设置选项卡导航器的样式（左侧和顶部）。
+此外，还根据选项卡导航器是否具有嵌套／子/子导航器，提供样式选项卡导航器（左侧和顶部）的类。
 
 <table> 
  <tbody> 
@@ -695,16 +698,16 @@ LESS框架简化了自适应表单中的样式自定义用例。 该框架允许
   </tr> 
   <tr> 
    <td><p><code>nested_true</code></p> </td> 
-   <td><p>具有嵌套／子/子导航器的选项卡导航器（左上图）</p> </td> 
+   <td><p>具有嵌套／子/子导航器的选项卡导航器（左侧和顶部）</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>nested_false</code></p> </td> 
-   <td><p>没有嵌套／子/子导航器的选项卡导航器（左上图）</p> </td> 
+   <td><p>没有嵌套／子/子导航器的选项卡导航器（左侧和顶部）</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默认图标。
+guideNavIcon类提供一个默认图标，用于标记导航器（左上）和向导导航器。
 
 <table> 
  <tbody> 
@@ -717,7 +720,7 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
 
 >[!NOTE]
 >
->通过在创作过程中在面板上提供CSS类（表单示例&lt;CLASS_NAME>），可以更改特定导航器的图标。 可为导 **航器的图标添加&lt;CLASS_NAME>** _nav。
+>在创作过程中，通过在面板上提供CSS类（表单示例&lt;CLASS_NAME>），可以更改特定导航器的图标。 您为导 **航器的图标添加** &lt;CLASS_NAME>_nav。
 
 <table> 
  <tbody> 
@@ -751,7 +754,7 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
   </tr> 
   <tr> 
    <td><p><code>tabs-active-bg-color</code></p> </td> 
-   <td><p>当面板处于焦点时的背景颜色（活动）</p> </td> 
+   <td><p>面板处于焦点时的背景颜色（活动）</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-active-font-color</code></p> </td> 
@@ -759,19 +762,19 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
   </tr> 
   <tr> 
    <td><p><code>tabs-completed-bg-color</code></p> </td> 
-   <td><p>当面板的完成表达式返回true时的背景颜色</p> </td> 
+   <td><p>面板的完成表达式返回true时的背景颜色</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-completed-font-color</code></p> </td> 
-   <td><p>当面板的完成表达式返回true时的字体颜色</p> </td> 
+   <td><p>面板的完成表达式返回true时的字体颜色</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-stepped-bg-color</code></p> </td> 
-   <td>当面板已聚焦一次但完成表达式返回false时的背景颜色 </td> 
+   <td>当面板聚焦一次但完成表达式返回false时的背景颜色 </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-stepped-font-color</code></p> </td> 
-   <td>当面板聚焦一次但完成表达式返回false时的字体颜色 </td> 
+   <td>当面板已聚焦一次但完成表达式返回false时的字体颜色 </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-border-color</code></p> </td> 
@@ -823,7 +826,7 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-active-bg-color</code></p> </td> 
-   <td><p>当面板处于焦点时的背景颜色（活动）</p> </td> 
+   <td><p>面板处于焦点时的背景颜色（活动）</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-active-font-color</code></p> </td> 
@@ -831,11 +834,11 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-completed-bg-color</code></p> </td> 
-   <td><p>当面板的完成表达式返回true时的背景颜色</p> </td> 
+   <td><p>面板的完成表达式返回true时的背景颜色</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-completed-font-color</code></p> </td> 
-   <td><p>当面板的完成表达式返回true时的字体颜色</p> </td> 
+   <td><p>面板的完成表达式返回true时的字体颜色</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-stepped-bg-color</code></p> </td> 
@@ -843,7 +846,7 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-stepped-font-color</code></p> </td> 
-   <td><p>当面板聚焦一次但完成表达式返回false时的字体颜色</p> </td> 
+   <td><p>面板聚焦一次但完成表达式返回false时的字体颜色</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-border-color</code></p> </td> 
@@ -871,10 +874,10 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
   </tr> 
   <tr> 
    <td><p><code>wizard-progress-color</code></p> </td> 
-   <td><p>进度栏的填充颜色</p> </td> 
+   <td><p>进度条的填充颜色</p> </td> 
   </tr> 
   <tr> 
-   <td><p><strong>折叠式导航器</strong></p> </td> 
+   <td><p><strong>折叠导航器</strong></p> </td> 
    <td><p> </p> </td> 
   </tr> 
   <tr> 
@@ -917,7 +920,7 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
   </tr> 
   <tr> 
    <td><p><code>panel-padding</code></p> </td> 
-   <td><p>面板内边距</p> </td> 
+   <td><p>面板内填充</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>panel-description-font-size</code></p> </td> 
@@ -938,15 +941,15 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
  </tbody> 
 </table>
 
-面板节点被分为导航器和内容。 内容 `` `` 没有单独的样式组件。 描述的变量适用于导航器和内容。
+面板节点被分为导航器和内容。 内 `` `` 容没有单独的样式组件。 描述的变量应用于导航器和内容。
 
-&amp;ast；最上面的面板(RootPanel)没有此类。
+&amp;ast；最顶部的面板(RootPanel)没有此类。
 
 ## 移动样式 {#mobile-styling}
 
 ## Header bar {#header-bar}
 
-这些变量会影响在移动设备或小屏幕设备上可见的标题栏，这些设备包含面板标题以及下一个和后面的导航器。
+这些变量会影响在移动设备或小屏幕设备上可见的标题栏，这些设备包含面板标题以及后面和后面的导航器。
 
 <table> 
  <tbody> 
@@ -980,7 +983,7 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
 
 ## 滚动指示符 {#scroll-indicator}
 
-这些变量会影响滚动指示符，该指示符是在移动设备或小屏幕设备上显示的橙色箭头。 “滚动”指示符指示屏幕的可见部分之外还有内容。 您可以向下滚动以查看它。 当您点击内容结尾时，箭头消失。
+这些变量影响滚动指示器，该指示器是在移动设备或小屏幕设备上显示的橙色箭头。 “滚动”指示符指示屏幕的可见部分之外有内容。 您可以向下滚动以查看它。 点击内容结尾时，箭头消失。
 
 <table> 
  <tbody> 
@@ -999,11 +1002,11 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
   </tr> 
   <tr> 
    <td><p><code>scrollIndicatorBottom</code></p> </td> 
-   <td><p>从底部开始的滚动器的固定位置</p> </td> 
+   <td><p>从底部固定滚动条的位置</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>scrollIndicatorRight</code></p> </td> 
-   <td><p>从右侧滚动器的固定位置</p> </td> 
+   <td><p>从右侧固定滚动条的位置</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>scrollIndicatorWidth</code></p> </td> 
@@ -1045,7 +1048,7 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
   </tr> 
   <tr> 
    <td><p><code>mobileToolbarLeft</code></p> </td> 
-   <td><p>固定工具栏在移动设备上的左侧位置</p> </td> 
+   <td><p>在移动设备上从左侧修复工具栏的位置</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>mobileToolbarRight</code></p> </td> 
@@ -1053,7 +1056,7 @@ guideNavIcon类为选项卡导航器（左上图）和向导导航器提供默�
   </tr> 
   <tr> 
    <td><p><code>mobileButtonIconTopMargin</code></p> </td> 
-   <td><p>修复了工具栏按钮图标的顶部位置</p> </td> 
+   <td><p>从顶部修复工具栏按钮图标的位置</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>mobileButtonIconWidth</code></p> </td> 

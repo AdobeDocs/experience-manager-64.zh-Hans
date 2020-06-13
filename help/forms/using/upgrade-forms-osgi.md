@@ -10,12 +10,15 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: d2657bc364b7a814fac9228afdec60f96faaf175
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 3%
 
 ---
 
 
-# 升级到OSGi上的AEM 6.4 Forms {#upgrade-to-aem-forms-osgi}
+# 在OSGi上升级到AEM 6.4 Forms {#upgrade-to-aem-forms-osgi}
 
 根据您的环境，使用以下升级路径之一。
 
@@ -23,57 +26,57 @@ source-git-commit: d2657bc364b7a814fac9228afdec60f96faaf175
 
 您可以从AEM 6.2 Forms或AEM 6.3 Forms直接升级到AEM 6.4 Forms。 执行以下操作：
 
-1. 将现有AEM实例升级到AEM 6.4。以下步骤列出：
+1. 将现有AEM实例升级到AEM 6.4。下面列出了这些步骤：
 
-   1. 安装AEM 6.2 Forms或AEM 6.3 Forms的最新Service pack和修补程序。 有关详细信息，请参阅：
+   1. 安装AEM 6.2 Forms或AEM 6.3 Forms的最新Service Pack和修补程序。 有关详细信息，请参阅：
 
-      * [AEM 6.2 发行说明](https://helpx.adobe.com/experience-manager/6-2/release-notes.html)
-      * [AEM 6.3 发行说明](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
-      * [AEM Sustement Hub](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)
-   1. 为升级准备源实例。 有关详细步骤，请 [参阅升级到AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance)。
+      * [AEM 6.2 发行说明](https://helpx.adobe.com/cn/experience-manager/6-2/release-notes.html)
+      * [AEM 6.3 发行说明](https://helpx.adobe.com/cn/experience-manager/6-3/release-notes.html)
+      * [AEM Suspentation Hub](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html)
+   1. 准备源实例以进行升级。 有关详细步骤，请 [参阅升级到AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance)。
    1. 下载 [AEM 6.4快速入门](/help/sites-deploying/deploy.md#getting%20the%20software)。
-   1. **（仅限基于Unix/Linux的安装）** ，如果您使用UNIX或Linux作为基础操作系统，请打开终端窗口，导览至包含crx-quickstart的文件夹，然后运行以下命令：
+   1. **(仅限基于Unix/Linux的安装** )如果您使用UNIX或Linux作为基础操作系统，请打开终端窗口，导览至包含crx-quickstart的文件夹，然后运行以下命令：
 
       `chmod -R 755 ../crx-quickstart`
 
    1. 将AEM实例升级到AEM 6.3。有关分步说明，请参 [阅升级到AEM 6.4](/help/sites-deploying/upgrade.md)。
 
-      在继续执行下一步之前，请等到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止显示在&lt;crx-repository>/error.log文件中。
+      在继续执行后续步骤之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止显示在&lt;crx-repository>/error.log文件中。
 
       >[!NOTE]
       >
       >服务器启动并运行后，一些AEM Forms捆绑包仍处于安装状态。 每个安装的捆绑包数量可能不同。 您可以安全地忽略这些包的状态。 这些包列在 `https://[server]:[port]/system/console/`。
 
 
-1. 安装AEM Forms加载项包。 以下步骤列出：
+1. 安装AEM Forms加载项包。 这些步骤如下所示：
 
-   1. 以管理员身份登录到AEM服务器，然后打开包共享。 包共享的默认URL为 `https://[server]:[port]/crx/packageshare`。
-   1. 在包共享中，搜索 **[!UICONTROL AEM 6.4 Forms加载项包]**，单击适用于您的操作系统的包，然后单击“下 **[!UICONTROL 载”]**。 阅读并接受许可协议，然后单击“确 **[!UICONTROL 定”]**。 下载开始。 下载后，包旁 **[!UICONTROL 会显示]** “已下载”一词。
+   1. 以管理员身份登录到AEM服务器并打开包共享。 包共享的默认URL为 `https://[server]:[port]/crx/packageshare`。
+   1. 在包共享中， **[!UICONTROL 搜索AEM 6.4 Forms Add-on包]**，单击适用于您的操作系统的包，然后单击 **[!UICONTROL 下载]**。 阅读并接受许可协议，然后单击 **[!UICONTROL 确定]**。 下载开始。 下载后，包旁 **[!UICONTROL 会显]** 示“已下载”一词。
 
-      或者，您也可以使用 [AEM Forms发行版中列出的超链接](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) ，手动下载包。
+      或者，您也可以使用AEM Forms版本中列 [出的超链接](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) ，手动下载包。
 
-   1. 下载完成后，单击“已下 **[!UICONTROL 载”]**。 您将被重定向到包管理器。 在包管理器中，搜索下载的包，然后单击“安 **[!UICONTROL 装”]**。
+   1. 下载完成后，单击“已 **[!UICONTROL 下载]**”。 您被重定向到包管理器。 在包管理器中，搜索下载的包，然后单击“安 **[!UICONTROL 装”]**。
 
-      如果您使用 [AEM Forms版本中列出的直接链接手动下载包](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)，请打开AEM包管理器，单击“上传包” ****，选择下载的包，然后单击“上传”。 上传包后，单击包名称，然后单击“安 **[!UICONTROL 装”]**。
+      如果您使用AEM Forms版本中列出的直接链接手 [动下载包](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)，请打开AEM包管理器，单 **[!UICONTROL 击上传包]**，选择下载的包，然后单击上传。 上载包后，单击包名称，然后单击“安 **[!UICONTROL 装”]**。
 
       >[!NOTE]
       >
-      >安装包后，系统会提示您重新启动AEM实例。 **请勿立即停止服务器。** 在停止AEM Forms服务器之前，请等到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止显示在&lt;crx-repository>/error.log文件中，且日志是稳定的。 另请注意，一些包可以保留为已安装状态。 您可以安全地忽略这些包的状态。
+      >安装包后，系统会提示您重新启动AEM实例。 **不要立即停止服务器。** 在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止显示在&lt;crx-repository>/error.log文件中，并且日志是稳定的。 另请注意，一些包可以保持安装状态。 您可以安全地忽略这些包的状态。
 
    1. 停止AEM实例并删除以下文件：
 
       * `[AEM_Installation_Directory]\[crx-quickstart]\launchpad\ext\bcmail-jdk15-1.35`
       * `[AEM_Installation_Directory]\[crx-quickstart]\launchpad\ext\bcprov-jdk15-1.35`
-   1. 启动AEM实例。
+   1. 开始AEM实例。
 
 
 1. 执行安装后活动。
 
    * **运行迁移实用程序**
 
-      迁移实用程序使早期版本的自适应表单和对应管理资源与AEM 6.4表单兼容。 您可以从AEM包共享下载该实用程序。 有关配置和使用迁移实用程序的分步信息，请参阅迁 [移实用程序](/help/forms/using/migration-utility.md)。
+      迁移实用程序使早期版本的自适应表单和对应管理资产与AEM 6.4表单兼容。 您可以从AEM包共享下载该实用程序。 有关配置和使用迁移实用程序的分步信息，请参阅迁 [移实用程序](/help/forms/using/migration-utility.md)。
 
-      如果您使用示 [例将草稿和提交组件与数据库集成](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) ，并从先前版本升级，则在执行升级后运行以下SQL查询：
+      如果您使用示 [例将草稿和提交组件与查询库集成](integrate-draft-submission-database.md) ，并从先前版本升级，则在执行升级后运行以下SQL:
 
       ```
       UPDATE metadata m, additionalmetadatatable am
@@ -89,24 +92,25 @@ source-git-commit: d2657bc364b7a814fac9228afdec60f96faaf175
 
    * **（如果仅从AEM 6.2表单或先前版本升级）重新配置Adobe Sign**
 
-      如果您在AEM Forms的先前版本中配置了Adobe Sign，则从AEM cloud服务重新配置Adobe Sign。 有关详细信息，请参 [阅将Adobe sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md)。
+      如果您在AEM Forms的先前版本中配置了Adobe Sign，请从AEM Cloud服务重新配置Adobe Sign。 有关详细信息，请 [参阅将Adobe Sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md)。
 
    * **（如果仅从AEM 6.2表单或先前版本升级）重新配置分析和报告**
 
-      在AEM 6.4 Forms中，不提供源的流量变量和印象的成功事件。 因此，当您从AEM 6.2 Forms或先前版本升级时，AEM Forms将停止向Adobe Analytics服务器发送数据，并且自适应表单的分析报告不可用。 此外，AEM 6.4 Forms还为表单分析版本和成功事件引入了流量变量，用于指定字段所用时间。 因此，请为AEM Forms环境重新配置分析和报告。 有关详细步骤，请参 [阅配置分析和报告](/help/forms/using/configure-analytics-forms-documents.md)。
+      在AEM 6.4 Forms中，不提供源的流量变量和印象的成功事件。 因此，当您从AEM 6.2 Forms或先前版本升级时，AEM Forms将停止向Adobe Analytics服务器发送数据，并且自适应表单的分析报告不可用。 此外，AEM 6.4 Forms还为表单分析版本引入了流量变量，并为在字段上花费的时间引入了成功事件。 因此，请为您的AEM Forms环境重新配置分析和报告。 有关详细步骤，请参 [阅配置分析和报告](/help/forms/using/configure-analytics-forms-documents.md)。
 
-1. 验证服务器是否成功升级，所有数据是否也成功迁移，并且它可以正常运行。
+1. 验证服务器是否升级成功，所有数据是否也成功迁移，并且它可以正常运行。
 
-   * **** 验证包的状态：确保所有捆绑包都处于活动状态。
-   * **** 验证复制和反向复制：发布、填写和提交一些迁移的表单。 同时验证提交的数据。
-   * **** 验证对管理员和开发人员用户界面的访问权限：从管理员帐户登录到AEM实例，并验证您是否有权访问以下URL:
+   * **验证捆绑包的状态：** 确保所有捆绑包都处于活动状态。
+   * **验证复制和反向复制：** 发布、填写和提交几个迁移的表单。 同时验证提交的数据。
+   * **验证对管理员和开发人员用户界面的访问权限：** 从管理员帐户登录到AEM实例，并验证您是否有权访问以下URL:
 
       * `https://[server]:[port]/crx/packmgr`
       * `https://[server]:[port]/crx/de`
       * `https://[server]:[port]/aem/forms.html/content/dam/formsanddocuments`
+
    >[!NOTE]
-   在AEM 6.4 Forms中，crx-repository的结构已更改。 升级到AEM 6.4表单后，请使用更改后的路径重新创建自定义。 有关更改的路径的完整列表，请参 [阅AEM 6.4中的表单存储库重组](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)。
+   在AEM 6.4 Forms中，crx-repository的结构已更改。 升级到AEM 6.4表单后，请使用您重新创建的更改的路径进行自定义。 有关更改路径的完整列表，请参 [阅AEM 6.4中的Forms Repository Restruct](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)。
 
 ## AEM 6.0 Forms和AEM 6.1 Forms > AEM 6.4 Forms {#upgrade-aem-forms-60-61-to-64}
 
-不提供从 **AEM 6.0 Forms** and **** AEM 6.1 Forms到AEM 6.4 Forms的直接升级路径。 执行到 [AEM 6.2 Forms](/help/forms/using/upgrade.md) 或 [AEM 6.3 Forms的中间升级，然后从AEM 6.2 Forms或AEM 6.3 Forms升级到AEM 6.4 Forms](/help/forms/using/upgrade.md) 。
+无法从AEM 6. **0 Forms和****AEM 6.1 Forms直接升级到AEM 6** .4 Forms。 执行到AEM [6.2 Forms](/help/forms/using/upgrade.md)[的中间升级或升级到AEM 6.3 Forms](/help/forms/using/upgrade.md) ，然后从AEM 6.2 Forms或AEM 6.3 Forms升级到AEM 6.4 Forms。

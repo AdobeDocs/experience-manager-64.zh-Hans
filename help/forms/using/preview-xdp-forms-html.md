@@ -30,9 +30,9 @@ ht-degree: 0%
 
 ### 配置Apache Sling Authentication Service {#configure-apache-sling-authentication-service}
 
-1. 转到https://[*服务器*]:[*在OSGi或Adobe Forms上运行的AEM*] Forms上
+1. Go to `https://[server]:[port]/system/console/configMgr` on AEM Forms running on OSGi or  
 
-   https://[*Forms*](在&#x200B;[*JEE上运行)上的AEM Forms上的Port*]/lc/system/console/configMgr。
+   `https://[server]:[port]/lc/system/console/configMgr` on AEM Forms running on JEE.
 
 1. 找到并单击 **Apache Sling Authentication Service** （Apache Sling身份验证服务）配置，以在编辑模式下打开它。
 
@@ -59,8 +59,8 @@ ht-degree: 0%
 
 1. 以管理员身份登录到AEM Web Console。
 
-   * OSGi上AEM Forms的URL是[https://]server[]:port/system/console/configMgr
-   * JEE上的AEM Forms的URL是&#x200B;[*https://*] server [**]:port/lc/system/console/configMgr
+   * OSGi上AEM Forms的URL是 https://[server]:[port]/system/console/configMgr
+   * JEE上的AEM Forms的URL是 https://[server]:[port]/lc/system/console/configMgr
 
 1. 打开 **[!UICONTROL 移动表单配置]** ，进行编辑。
 1. 取消选择“ **[!UICONTROL 保护模式]** ”选项，然后单 **[!UICONTROL 击“保存]**”。

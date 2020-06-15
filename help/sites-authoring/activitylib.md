@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
+workflow-type: tm+mt
+source-wordcount: '2023'
+ht-degree: 85%
 
 ---
 
@@ -80,7 +83,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 * **定位引擎：**&#x200B;将 [AEM](/help/sites-authoring/personalization.md#aem) 或 [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) 作为目标内容的引擎。
 
 * **选择 Target 配置：**（仅限 Adobe Target）此活动连接到 Adobe Target 的云配置。只有为定位引擎选择了 Adobe Target 时，才会显示此选项。
-* **** 活动类型：活动类型- A/B测试或体验定位
+* **活动类型：** 活动类型- A/B测试或体验定位
 * **目标：**（可选）活动描述。
 * **体验：**&#x200B;受众名称和您定位的营销区段之间的映射。
 * **流量百分比：**&#x200B;如果选择 A/B 测试，则可以更改每个体验的流量（百分比）。
@@ -108,7 +111,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 1. 向活动添加一个或多个体验。 单击或点按 **添加体验**。
 1. 如果您使用的是 AEM 定位或 Adobe Target 体验定位，请执行以下操作：
 
-   1. 单击或点按**选择受众**，然后选择您的体验所定位的区段。
+   1. 单击或点按**选择受众**，然后选择您的体验目标的区段。
    1. 单击或点按&#x200B;**添加体验**，键入名称，然后单击或点按&#x200B;**确定**。
    1. 单击或点按&#x200B;**下一步**。
    如果您使用的是 Adobe Target A/B 测试，请执行以下操作：
@@ -143,7 +146,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 
 >[!NOTE]
 >
->取消发布活动时，
+>取消发布活动时，除非刷新页面，否则活动的状态不会更改。
 
 要发布或取消发布活动，请执行以下操作：
 
@@ -165,7 +168,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 
 您可以查看任何 Adobe Target 活动（XT 或 A/B）的业绩。如果您使用的是 A/B 测试，则还可以转换入选体验，入选体验随后会成为默认体验。
 
-要查看活动效果并转换成功体验，请执行以下操作：
+要视图活动性能并转换成功体验，请执行以下操作：
 
 1. In **Personalization**, click or tap **Activities** to navigate to the **Activities** console.
 1. 单击或点按要查看其活动的品牌。
@@ -177,7 +180,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 
    如果转换入选方，则会：
 
-   * 它禁用当前活动
+   * 禁用当前活动
    * 修改所有页面，并将目标内容替换为入选体验的实际内容。The content of the winning experience becomes part of the normal page **without** targeting.
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -224,7 +227,7 @@ When AEM synchronizes an activity with Adobe Target, AEM includes a property of 
 
 >[!NOTE]
 >
->When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. 在 Adobe Target 中删除营销活动时，不会删除 `thirdPartyId`。您不能为不同类型（AB、XT）的营销活动重复使用 `thirdPartyId`，也不能手动删除此属性。为避免出现此问题，请为每个营销活动命名一个唯一的名称；因此，不能在不同的营销活动类型中重复使用营销活动名称。
+>When you create a campaign in Adobe Target, it assigns a property called `thirdPartyId t`o each campaign. 在 Adobe Target 中删除营销活动时，不会删除 `thirdPartyId`。您不能为不同类型（AB、XT）的营销活动重复使用 `thirdPartyId`，也不能手动删除此属性。要避免此问题，请为每个活动命名一个唯一的名称； 因此，活动名称不能在不同的活动类型中重新使用。
 >
 >如果在同一种营销活动类型中使用相同的名称，则会覆盖现有的营销活动。
 >

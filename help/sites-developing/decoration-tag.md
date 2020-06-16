@@ -2,7 +2,7 @@
 title: 装饰标签
 description: 呈现网页中的组件时，可以生成HTML元素，将呈现的组件包装在它自身中。 对于开发人员，AEM优惠清晰、简单的逻辑控制包含组件的装饰标签。
 translation-type: tm+mt
-source-git-commit: 440a514fa1b0b5d685fe7717caf40400e5288e02
+source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 装饰标签{#decoration-tag}
+# 装饰标签 {#decoration-tag}
 
 呈现网页中的组件时，可以生成HTML元素，将呈现的组件包装在它自身中。 这主要用于两个目的：
 
@@ -38,9 +38,7 @@ ht-degree: 0%
 以下属性和节点可以应用于组件以控制其装饰标签的行为：
 
 * **`cq:noDecoration {boolean}`:**此属性可以添加到组件，而且，如果值为true，则强制AEM不在组件上生成任何包装器元素。
-
 * **`cq:htmlTag`节点：**此节点可以添加到组件下，并可以具有以下属性：
-
    * **`cq:tagName {String}`:**这可用于指定用于封装组件而不是默认DIV元素的自定义HTML标记。
    * **`class {String}`:**这可用于指定要添加到包装器的css类名称。
    * 其他属性名称将添加为HTML属性，其String值与提供的相同。

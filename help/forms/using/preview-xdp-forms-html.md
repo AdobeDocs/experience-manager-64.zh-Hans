@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 生成XDP表单的HTML5预览 {#generate-html-preview-of-an-xdp-form}
 
-在AEM Forms Designer中设计表单时，除了预览表单的PDF再现外，您还可以预览表单的HTML5再现。 您可以使用“ **预览** ”HTML选项卡预览表单，就像在浏览器中一样。
+在AEM Forms设计器中设计表单时，除了预览表单的PDF再现外，您还可以预览表单的HTML5再现。 您可以使用“ **预览** ”HTML选项卡预览表单，就像在浏览器中一样。
 
 ## 在设计器中为XDP表单启用HTML预览 {#html-preview-of-forms-in-forms-designer}
 
@@ -30,19 +30,19 @@ ht-degree: 0%
 
 ### 配置Apache Sling Authentication Service {#configure-apache-sling-authentication-service}
 
-1. Go to `https://[server]:[port]/system/console/configMgr` on AEM Forms running on OSGi or  
+1. 转到 `https://[server]:[port]/system/console/configMgr` OSGi或
 
-   `https://[server]:[port]/lc/system/console/configMgr` on AEM Forms running on JEE.
+   `https://[server]:[port]/lc/system/console/configMgr` 在JEE上运行的AEM Forms。
 
-1. 找到并单击 **Apache Sling Authentication Service** （Apache Sling身份验证服务）配置，以在编辑模式下打开它。
+1. 找到并单 **击Apache Sling Authentication Service** （Apache Sling身份验证服务）配置，以在编辑模式下打开它。
 
 1. 根据您是在OSGi还是JEE上运行AEM Forms，在“身份验证要求”字 **段中添加** :
 
-   * JEE上的AEM Forms
+   * JEEAEM Forms
 
       * -/content/xfaforms
       * -/etc/clientlibs
-   * OSGi上的AEM Forms
+   * AEM FormsOSGi
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
@@ -59,8 +59,8 @@ ht-degree: 0%
 
 1. 以管理员身份登录到AEM Web Console。
 
-   * OSGi上AEM Forms的URL是 https://[server]:[port]/system/console/configMgr
-   * JEE上的AEM Forms的URL是 https://[server]:[port]/lc/system/console/configMgr
+   * OSGi上的AEM Forms的URL `https://[server]:[port]/system/console/configMgr`
+   * JEE上的AEM Forms的URL是 `https://[server]:[port]/lc/system/console/configMgr`
 
 1. 打开 **[!UICONTROL 移动表单配置]** ，进行编辑。
 1. 取消选择“ **[!UICONTROL 保护模式]** ”选项，然后单 **[!UICONTROL 击“保存]**”。
@@ -74,17 +74,17 @@ ht-degree: 0%
    * **HTTP端口号**: AEM服务器端口。 默认值为 4502。
    * **HTML预览上下文：** 呈现XFA表单的用户档案路径。 以下默认用户档案用于在设计器中预览表单。 但是，您也可以指定自定义用户档案的路径。
 
-      * `/content/xfaforms/profiles/default.html` （OSGi上的AEM Forms）
-      * `/lc/content/xfaforms/profiles/default.html` （JEE上的AEM Forms）
+      * `/content/xfaforms/profiles/default.html` (OSGi上的AEM Forms)
+      * `/lc/content/xfaforms/profiles/default.html` (JEE上的AEM Forms)
    * **Forms Manager上下文：** 部署Forms Manager UI的上下文路径。 默认值为：
 
-      * `/aem/forms` （OSGi上的AEM Forms）
-      * `/lc/forms` （JEE上的AEM Forms）
+      * `/aem/forms` (OSGi上的AEM Forms)
+      * `/lc/forms` (JEE上的AEM Forms)
    **注意：** *确保AEM Forms服务器已启动并正在运行。 HTML预览连接到CRX服务器以*&#x200B;生成&#x200B;*预览。*
 
-   ![AEM Forms Designer选项 ](assets/server_options.png)
+   ![AEM Forms设计器选项 ](assets/server_options.png)
 
-   AEM Forms Designer选项
+   AEM Forms设计器选项
 
 1. 要预览HTML中的表单，请单击“ **预览HTML** ”选项卡。
 

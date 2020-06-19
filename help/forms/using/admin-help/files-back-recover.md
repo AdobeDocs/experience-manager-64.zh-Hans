@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '2206'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 考虑以下有关备份和恢复的要点：
 
 * 应在GDS和AEM存储库之前备份数据库。
-* 如果需要关闭群集环境中的节点进行备份，请确保在主节点之前关闭从节点。 否则，可能会导致群集或服务器中出现不一致。 此外，主节点应在任何从节点之前变为活动节点。
+* 如果需要关闭群集环境中的节点进行备份，请确保在主节点之前关闭辅助节点。 否则，可能会导致群集或服务器中出现不一致。 此外，主节点应在任何辅助节点之前处于活动状态。
 * 对于群集的还原操作，应停止群集中每个节点的应用程序服务器。
 
 ## 全局文档存储目录 {#global-document-storage-directory}
@@ -61,7 +61,7 @@ GDS的位置是在AEM表单安装过程中或稍后使用管理控制台确定�
 
 ## AEM存储库 {#aem-repository}
 
-如果在安装AEM表单时配置了crx-repository，则会创建AEM存储库(crx-repository)。 crx-repository目录的位置在AEM表单安装过程中确定。 需要AEM存储库备份和还原以及数据库和GDS，才能在AEM表单中实现一致的AEM表单数据。 AEM存储库包含Corresponce Management Solution、Forms Manager和AEM Forms Workspace的数据。
+如果在安装AEM表单时配置了crx-repository，则会创建AEM存储库(crx-repository)。 crx-repository目录的位置在AEM表单安装过程中确定。 需要AEM存储库备份和还原以及数据库和GDS，才能在AEM表单中实现一致的AEM表单数据。 AEM存储库包含Corressong Management Solution、Forms Manager和AEM FormsWorkspace的数据。
 
 ### 通信管理解决方案 {#correspondence-management-solution}
 
@@ -73,15 +73,15 @@ GDS的位置是在AEM表单安装过程中或稍后使用管理控制台确定�
 
 表单管理器简化了更新、管理和报废表单的过程。
 
-### AEM Forms Workspace {#html-workspace}
+### AEM Forms工作区 {#html-workspace}
 
-AEM Forms Workspace与（JEE上的AEM表单已弃用）Flex Workspace的功能相匹配，并添加了扩展和集成Workspace的新功能，使其更易用。
+AEM Forms工作区与（JEE上的AEM表单已弃用）Flex Workspace的功能相匹配，并添加了扩展和集成Workspace的新功能，使其更加用户友好。
 
 >[!NOTE]
 >
 >AEM表单发行版中已弃用Flex工作空间。
 
-它允许在没有Flash Player和Adobe Reader的客户端上进行任务管理。 除PDF表单和Flex表单外，它还简化了HTML表单的再现。
+它允许在没有Flash Player和Adobe Reader的客户端上进行任务管理。 除了PDF forms和Flex表单，它还简化了HTML表单的再现。
 
 ## AEM表单数据库 {#aem-forms-database}
 

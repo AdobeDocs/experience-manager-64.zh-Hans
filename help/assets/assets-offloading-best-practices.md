@@ -1,9 +1,9 @@
 ---
 title: 资产卸载最佳实践
-description: 在AEM资产中卸载资产摄取和复制工作流的推荐使用案例和最佳实践。
+description: 推荐在AEM Assets中卸载资产摄取和复制工作流的使用案例和最佳实践。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 0%
@@ -17,13 +17,13 @@ ht-degree: 0%
 >
 >此功能已从AEM 6.4开始弃用，并在AEM 6.5中删除。请相应地进行计划。
 
-在Adobe Experience Manager(AEM)资产中处理大文件和运行工作流会占用大量CPU、内存和I/O资源。 特别是，资产的大小、工作流、用户数和资产摄取频率都会影响系统的整体性能。 资源密集型操作包括AEM资产摄取和复制工作流。 在单个AEM创作实例上大量使用这些工作流可能会对创作效率产生不利影响。
+在Adobe Experience Manager(AEM)资产中处理大文件和运行工作流可能会占用大量CPU、内存和I/O资源。 特别是，资产的大小、工作流、用户数和资产摄取频率都会影响系统的整体性能。 资源密集型操作包括AEM资产摄取和复制工作流。 在单个AEM创作实例上大量使用这些工作流可能会对创作效率产生不利影响。
 
 将这些任务卸载到专用工作器实例可以降低CPU、内存和IO开销。 通常，卸载的想法是将消耗大量CPU/内存/IO资源的任务分发到专用工作器实例。 以下部分包括资产卸载的推荐使用案例。
 
 ## AEM Assets卸载 {#aem-assets-offloading}
 
-AEM资产实现了特定于资产的本机工作流扩展，以便卸载。 它构建于卸载框架提供的通用工作流扩展之上，但在实施中包含其他特定于资产的功能。 资产卸载的目标是对上传的资产高效运行DAM更新资产工作流。 资产卸载使您能够更好地控制摄取工作流。
+AEM Assets实现了特定于资产的本机工作流扩展以卸载。 它构建于卸载框架提供的通用工作流扩展之上，但在实施中包含其他特定于资产的功能。 资产卸载的目标是对上传的资产高效运行DAM更新资产工作流。 资产卸载使您能够更好地控制摄取工作流。
 
 ## AEM Assets卸载组件 {#aem-assets-offloading-components}
 
@@ -112,6 +112,7 @@ Adobe建议您关闭自动代理管理，因为它不支持无二进制复制，
 1. 将属性的值 `default.transport.agent-to-master.prefix` 从 `offloading_reverse` 更改为 `offloading`。
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
 ### 在作者和工作者之间使用共享数据存储和无二进制复制  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}

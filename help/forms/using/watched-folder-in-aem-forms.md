@@ -1,6 +1,6 @@
 ---
-title: AEM Forms中的监视文件夹
-seo-title: AEM Forms中的监视文件夹
+title: 以AEM Forms形式监视文件夹
+seo-title: 以AEM Forms形式监视文件夹
 description: 管理员可以将文件夹置于监视中，并在文件置于监视的文件夹中时开始工作流、服务或脚本操作。
 seo-description: 管理员可以将文件夹置于监视中，并在文件置于监视的文件夹中时开始工作流、服务或脚本操作。
 uuid: a525fb20-7b36-48b8-8663-afd640f75017
@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 3cc4e08b3a69851e5d4e79eb8159ee00e8f333a0
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '7662'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms中的监视文件夹 {#watched-folder-in-aem-forms}
+# 以AEM Forms形式监视文件夹 {#watched-folder-in-aem-forms}
 
 管理员可以配置网络文件夹（称为“监视文件夹”），当用户将文件（如PDF文件）放在“监视文件夹”中时，会启动预先配置的工作流、服务或脚本操作以处理添加的文件。 服务执行指定操作后，会将结果文件保存到指定的输出文件夹中。 有关工作流、服务和脚本的详细信息，请参 [阅各种文件处理方法](#variousmethodsforprocessingfiles)。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * 配置“监视文件夹”配置节点的属性时，在folderPath属性中键入父目录的完整路径，并附加要创建的监视文件夹的名称，如下例所示： `C:/MyPDFs/MyWatchedFolder`
 
-   文 `MyWatchedFolder`件夹不存在，AEM Forms会尝试在指定路径下创建该文件夹。
+   文 `MyWatchedFolder`件夹不存在，AEM Forms会尝试在指定路径下创建文件夹。
 
 * 在配置监视文件夹端点之前在文件系统上创建一个文件夹，然后在folderPath属性中提供完整路径。 有关folderPath属性的详细信息，请参阅 [监视文件夹属性](#watchedfolderproperties)。
 
@@ -53,7 +53,6 @@ ht-degree: 0%
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-
    有关受支持属性的完整列表，请参 [阅监视文件夹属性](#watchedfolderproperties)。
 
 1. 单击“ **全部保存**”。 创建节点并保存属性后。 、、 `input`、 `result`和文 `failure`件 `preserve`夹是在属性中指定的路径 `stage``folderPath` 创建的。
@@ -141,7 +140,6 @@ ht-degree: 0%
    * %l =毫秒
    * %R =随机数（介于0和9之间）
    * %P =进程或作业ID
-
    例如，如果2009年7月17日晚上8点，并且您指定C:/Test/WF0/failure/%Y/%M/%D/%H/，则结果文件夹为C:/Test/WF0/failure/2009/07/17/20
 
    如果路径不是绝对的，而是相对的，则在“监视文件夹”中创建该文件夹。 默认值为result/%Y/%M/%D/，它是监视文件夹内的Result文件夹。 有关文件模式的详细信息，请参 [阅关于文件模式](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
@@ -164,7 +162,7 @@ ht-degree: 0%
 
 * **overwriteDuplicateFilename(Boolean)**: 设置为“True”时，结果文件夹和保留文件夹中的文件将被覆盖。 设置为“False”时，名称将使用带数字索引后缀的文件和文件夹。 默认值为False。
 * **preserveOnFailure（布尔值）**: 在无法对服务执行操作的情况下保留输入文件。 默认值为true。
-* **inputFilePattern（字符串）**: 指定监视文件夹的输入文件的模式。 创建文件的白名单。
+* **inputFilePattern（字符串）**: 指定监视文件夹的输入文件的模式。 创建文件的允许列表。
 * **asynch（布尔值）**: 将调用类型标识为异步或同步。 默认值为true（异步）。 文件处理是一种资源消耗任务，将异步标志的值保持为真以防止阻塞扫描作业的主线程。 在群集环境中，务必使标志保持为true，以便为在可用服务器上处理的文件实现负载平衡。 如果标志为false，则扫描作业将尝试按顺序对其自己的线程中的每个顶级文件／文件夹执行处理。 如果没有特定原因（如单服务器设置上基于工作流的处理），请勿将标记设置为false。
 
 >[!NOTE]
@@ -297,7 +295,7 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 
 ### 使用工作流处理监视文件夹的文件 {#using-a-workflow-to-process-files-of-a-watched-folder}
 
-工作流使您能够自动执行Experience Manager活动。 工作流由一系列按特定顺序执行的步骤组成。 每个步骤都会执行不同的活动，如激活页面或发送电子邮件。 工作流可以与存储库、用户帐户和Experience Manager服务中的资产进行交互。 因此，工作流可以协调复杂。
+工作流使您能够自动Experience Manager活动。 工作流由一系列按特定顺序执行的步骤组成。 每个步骤都会执行不同的活动，如激活页面或发送电子邮件。 工作流可以与存储库中的资产、用户帐户和Experience Manager服务进行交互。 因此，工作流可以协调复杂。
 
 * 在创建工作流之前，请考虑以下几点：
 * 步骤的输出必须可用于所有后续步骤。
@@ -394,7 +392,7 @@ log.info("Exiting workflow script!")
 
 在创建监视的文件夹时，它会在被监视的文件夹中创建文件夹结构。 文件夹结构具有阶段、结果、保留、输入和失败文件夹。 文件夹结构可用作工作流的输入有效负荷，并接受工作流的输出。 它还可以列表故障点（如果有）。
 
-如果有效负荷的结构与监视文件夹的结构不同，您可以编写自定义脚本将监视文件夹的结构映射到有效负荷。 这种脚本称为负载映射器过滤器。 现成的AEM Forms提供有效负荷映射器过滤器，可将已监视文件夹的结构映射到有效负荷。
+如果有效负荷的结构与监视文件夹的结构不同，您可以编写自定义脚本将监视文件夹的结构映射到有效负荷。 这种脚本称为负载映射器过滤器。 现成AEM Forms提供有效负荷映射器过滤器，以将已监视文件夹的结构映射到有效负荷。
 
 #### 创建自定义有效负荷映射器过滤器 {#creating-a-custom-payload-mapper-filter}
 
@@ -492,7 +490,7 @@ log.info("Exiting workflow script!")
 
 >[!NOTE]
 >
->确保应用程序服务器已删除对监视文件夹中文件的访问权限。 如果AEM Forms在扫描文件后无法从输入文件夹删除这些文件，则关联的进程将无限期启动。
+>确保应用程序服务器已删除对监视文件夹中文件的访问权限。 如果AEM Forms在扫描文件后无法从输入文件夹删除文件，则关联的进程将无限期地启动。
 
 ## 有关监视文件夹的其他信息 {#additional-information-about-the-watched-folders}
 
@@ -511,12 +509,12 @@ log.info("Exiting workflow script!")
 限制可防止监视文件夹在以前的作业未完成时调用新作业。 监视文件夹检测正在进行的作业，并根据批处理大小减正在进行的作业处理新作业。 例如，在第二次调用中，如果完成的作业数仅为3，而一个作业仍在进行，则“监视文件夹”仅再调用3个作业。
 
 * “监视文件夹”依赖舞台文件夹中存在的文件数来确定正在进行的作业数。 如果文件在舞台文件夹中仍未处理，“监视文件夹”将不再调用任何其他作业。 例如，如果批量大小为4，并且停止了3个作业，则“监视文件夹”在后续调用中只调用一个作业。 存在多种情况，这些情况会导致文件在阶段文件夹中保持未处理状态。 安装作业后，管理员可以终止“进程管理”管理页面上的进程，以便“监视文件夹”将文件移出舞台文件夹。
-* 如果AEM Forms服务器在监视文件夹调用作业之前关闭，则管理员可以将文件移出舞台文件夹。 有关信息，请参 [阅故障点和恢复](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
-* 如果AEM Forms服务器正在运行，但当作业管理器服务回调时(即服务未按顺序开始时)，监视文件夹未运行，则管理员可以将文件移出舞台文件夹。 有关信息，请参 [阅故障点和恢复](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
+* 如果AEM Forms服务器在“监视文件夹”调用作业之前关闭，则管理员可以将文件移出舞台文件夹。 有关信息，请参 [阅故障点和恢复](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
+* 如果AEM Forms服务器正在运行，但当作业管理器服务回调时监视文件夹未运行(在服务未按顺序开始时发生)，则管理员可以将文件移出舞台文件夹。 有关信息，请参 [阅故障点和恢复](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
 
 ### 故障点和恢复故障点和恢复 {#failure-points-and-recoveryfailure-points-and-recovery}
 
-在每个投票事件下，“监视文件夹”锁定输入文件夹，将与包含文件模式匹配的文件移动到舞台文件夹，然后解锁输入文件夹。 需要锁定，这样两个线程就不会选取同一组文件并处理它们两次。 发生这种情况的几率会随着pollInterval和大批量而增加。 将文件移到舞台文件夹后，将解锁输入文件夹，以便其他线程可以扫描该文件夹。 此步骤有助于提供高吞吐量，因为在一个线程处理文件时，其他线程可以进行扫描。
+在每个投票事件下，“监视文件夹”锁定输入文件夹，将与包含文件模式匹配的文件移动到舞台文件夹，然后解锁输入文件夹。 需要锁定，这样两个线程就不会选取同一组文件并处理它们两次。 发生这种情况的几率会随着pollInterval和大批量而增加。 将文件移到舞台文件夹后，将解锁输入文件夹，以便其他线程可以扫描文件夹。 此步骤有助于提供高吞吐量，因为在一个线程处理文件时，其他线程可以进行扫描。
 
 将文件移到舞台文件夹后，将为每个文件创建调用请求并调用目标服务。 有时监视文件夹无法恢复舞台文件夹中的文件：
 
@@ -537,8 +535,7 @@ log.info("Exiting workflow script!")
 
    * 将“监视文件夹”的includeFilePattern属性更改为与任何新输入文件不匹配的内容（例如，输入NOMATCH）。
    * 暂停创建新输入文件的进程。
-
-   等到AEM Forms恢复并处理所有文件。 大多数文件都应该恢复，并且所有新的输入文件都应正确处理。 等待监视文件夹恢复和处理文件的时间长短取决于要调用的操作长度和要恢复的文件数。
+   等待AEM Forms恢复并处理所有文件。 大多数文件都应该恢复，并且所有新的输入文件都应正确处理。 等待监视文件夹恢复和处理文件的时间长短取决于要调用的操作长度和要恢复的文件数。
 
 1. 确定无法处理哪些文件。 如果您等了适当的时间并完成了上一步，并且舞台文件夹中仍保留未处理的文件，请转到下一步。
 

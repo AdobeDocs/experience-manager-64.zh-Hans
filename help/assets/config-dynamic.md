@@ -1,43 +1,43 @@
 ---
-title: 配置Dynamic Media —— 混合模式
-seo-title: 配置Dynamic Media —— 混合模式
-description: 了解如何配置Dynamic Media —— 混合模式。
-seo-description: 了解如何配置Dynamic Media —— 混合模式。
+title: 配置Dynamic Media-混合模式
+seo-title: 配置Dynamic Media-混合模式
+description: 了解如何配置Dynamic Media-混合模式。
+seo-description: 了解如何配置Dynamic Media-混合模式。
 uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
 workflow-type: tm+mt
-source-wordcount: '8013'
+source-wordcount: '7873'
 ht-degree: 1%
 
 ---
 
 
-# 配置Dynamic Media —— 混合模式 {#configuring-dynamic-media-hybrid-mode}
+# 配置Dynamic Media-混合模式 {#configuring-dynamic-media-hybrid-mode}
 
-Dynamic Media —— 需要启用并配置混合功能以供使用。 根据您的用例，Dynamic Media具有多种受支 [持的配置](#supported-dynamic-media-configurations)。
+Dynamic Media-需要启用并配置混合功能以供使用。 根据您的用例，Dynamic Media具有多种受 [支持的配置](#supported-dynamic-media-configurations)。
 
 >[!NOTE]
 >
->如果要在Scene7运行模式下配置和运行Dynamic Media，请参 [阅配置Dynamic Media - Scene7模式](config-dms7.md)。
+>如果要在Scene7运行模式下配置和运行Dynamic Media，请参 [阅配置Dynamic Media- Scene7模式](config-dms7.md)。
 >
 >如果要在混合运行模式下配置和运行Dynamic Media，请按照本页中的说明操作。
 
-了解有关在Dynamic Media中处 [理视](video.md) 频的更多信息。
+进一步了解如何在 [Dynamic Media](video.md) 中使用视频。
 
-如果您使用为不同环境（如用于开发的Adobe Experience Manager、用于暂存的Adobe Experience Manager和用于实时生产的Adobe Experience Manager）进行设置，则需要为每个环境配置Dynamic Media Cloud Services。
+如果您使用为不同环境设置的Adobe Experience Manager，例如一个用于开发，一个用于暂存，另一个用于实时生产，您需要为这些环境中的每个配置Dynamic MediaCloud Service。
 
-如果您对Dynamic Media配置有任何问题，一个重要的查找位置是特定于Dynamic Media的日志文件。 在启用Dynamic Media时，这些组件会自动安装：
+如果您的Dynamic Media配置有问题，一个重要的查找位置是特定于Dynamic Media的日志文件。 在启用Dynamic Media时，这些组件会自动安装：
 
 * `s7access.log`
 * `ImageServing.log`
 
 它们在监视 [和维护AEM实例中有说明](/help/sites-deploying/monitoring-and-maintaining.md)。
 
-混合发布和投放是Adobe Experience Manager之外的Dynamic Media的一个核心功能。 混合发布允许您从云而不是AEM发布节点传送Dynamic Media资产，如图像、集和视频。
+混合出版和投放是Adobe Experience Manager之外的Dynamic Media的核心功能。 混合发布允许您从云而不是AEM发布节点传送Dynamic Media资产，如图像、集和视频。
 
 AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内容等其他内容。
 
@@ -55,13 +55,13 @@ AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内�
 
 遵循的配置任务引用了以下术语：
 
-| **术语** | **已启用Dynamic Media** | **描述** |
+| **术语** | **Dynamic Media已启用** | **描述** |
 |---|---|---|
 | AEM作者节点 | 绿色圆圈中的白色复选标记 | 您部署到内部部署或通过Managed Services部署的作者节点。 |
 | AEM发布节点 | 红方的白色“X”。 | 您部署到内部部署或通过Managed Services部署的发布节点。 |
 | 图像服务发布节点 | 绿色圆圈中的白色复选标记。 | 您在由Adobe管理的数据中心上运行的发布节点。 引用图像服务URL。 |
 
-您可以选择仅为成像、视频或成像和视频实施Dynamic Media。 要确定为特定方案配置Dynamic Media的步骤，请参阅下表。
+您可以选择仅针对成像、仅针对视频或针对成像和视频实施Dynamic Media。 要确定为特定方案配置Dynamic Media的步骤，请参阅下表。
 
 <table> 
  <tbody> 
@@ -76,12 +76,12 @@ AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内�
    <td> 
     <ol> 
      <li>在AEM作者 <strong>节点上</strong> ，启 <a href="#enabling-dynamic-media">用Dynamic Media</a>。</li> 
-     <li>在Dynamic Media Cloud <a href="#configuring-dynamic-media-cloud-services">Services中配置映像</a>。</li> 
+     <li>在Dynamic Media <a href="#configuring-dynamic-media-cloud-services">Cloud Service中配置映像</a>。</li> 
      <li><a href="#configuring-image-replication">配置映像复制</a>。</li> 
      <li><a href="#replicating-catalog-settings">复制目录设置</a>。</li> 
      <li><a href="#replicating-viewer-presets">复制查看器预设</a>。</li> 
      <li><a href="#using-default-asset-filters-for-replication">使用默认资产过滤器进行复制</a>。</li> 
-     <li><a href="#configuring-dynamic-media-image-server-settings">配置Dynamic Media Image Server设置</a>。</li> 
+     <li><a href="#configuring-dynamic-media-image-server-settings">配置Dynamic Media图像服务器设置</a>。</li> 
      <li><a href="#delivering-assets">交付资产</a>。</li> 
     </ol> </td> 
   </tr> 
@@ -94,7 +94,7 @@ AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内�
      <li>在AEM发 <strong>布节点上</strong> ，启 <a href="#enabling-dynamic-media">用Dynamic Media</a>。</li> 
      <li><a href="#replicating-viewer-presets">复制查看器预设</a>。</li> 
      <li>为非生 <a href="#setting-up-asset-filters-for-imaging-in-non-production-deployments">产图像设置资产筛选器</a>。</li> 
-     <li><a href="#configuring-dynamic-media-image-server-settings">配置Dynamic Media Image Server设置。</a></li> 
+     <li><a href="#configuring-dynamic-media-image-server-settings">配置Dynamic Media图像服务器设置。</a></li> 
      <li><a href="#delivering-assets">交付资产。</a></li> 
     </ol> </td> 
   </tr> 
@@ -105,7 +105,7 @@ AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内�
     <ol> 
      <li>在AEM作者 <strong>节点上</strong> ，启 <a href="#enabling-dynamic-media">用Dynamic Media</a>。</li> 
      <li>在AEM发 <strong>布节点</strong> ，启 <a href="#enabling-dynamic-media">用Dynamic Media</a> （发布实例提供视频海报图像并提供视频回放的元数据）。</li> 
-     <li>在Dynamic Media Cloud <a href="#configuring-dynamic-media-cloud-services">Services中配置视频。</a></li> 
+     <li>在Dynamic Media <a href="#configuring-dynamic-media-cloud-services">Cloud Service中配置视频。</a></li> 
      <li><a href="#replicating-viewer-presets">复制查看器预设</a>。</li> 
      <li>为仅视 <a href="#setting-up-asset-filters-for-video-only-deployments">频设置资产筛选器</a>。</li> 
      <li><a href="#delivering-assets">交付资产。</a></li> 
@@ -117,13 +117,13 @@ AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内�
    <td> 
     <ol> 
      <li>在AEM作者 <strong>节点上</strong> ，启 <a href="#enabling-dynamic-media">用Dynamic Media</a>。</li> 
-     <li>在Dynamic Media Cloud <a href="#configuring-dynamic-media-cloud-services">Services中配置视频。</a></li> 
-     <li>在Dynamic Media Cloud <a href="#configuring-dynamic-media-cloud-services">Services中配置映像。</a></li> 
+     <li>在Dynamic Media <a href="#configuring-dynamic-media-cloud-services">Cloud Service中配置视频。</a></li> 
+     <li>在Dynamic MediaCloud Service <a href="#configuring-dynamic-media-cloud-services">中配置映像。</a></li> 
      <li><a href="#configuring-image-replication">配置映像复制</a>。</li> 
      <li><a href="#replicating-catalog-settings">复制目录设置</a>。</li> 
      <li><a href="#replicating-viewer-presets">复制查看器预设</a>。</li> 
      <li><a href="#using-default-asset-filters-for-replication">使用默认资产过滤器进行复制。</a></li> 
-     <li><a href="#configuring-dynamic-media-image-server-settings">配置Dynamic Media Image Server设置。</a></li> 
+     <li><a href="#configuring-dynamic-media-image-server-settings">配置Dynamic Media图像服务器设置。</a></li> 
      <li><a href="#delivering-assets">交付资产。</a></li> 
     </ol> </td> 
   </tr> 
@@ -140,7 +140,7 @@ AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内�
 
 通过启用Dynamic Media,Dynamic Media功能将在UI中可用，并且每个上传的图像资产都会收到一个用于快速 `cqdam.pyramid.tiff` 投放动态图像演绎版的演绎版。 这些PTIFF具有显着优势，包括(1)仅管理单个主图像并动态生成无限再现而无需任何附加存储，以及(2)使用交互式可视化（如缩放、平移、旋转等）的能力。
 
-如果要在AEM中使用Dynamic Media Classic(Scene7)，则不应启用Dynamic Media，除非您使用的是特 [定方案](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)。 除非通过运行模式启用Dynamic Media，否则Dynamic Media将处于禁用状态。
+如果要在AEM中使用Dynamic Media经典(Scene7)，则不应启用Dynamic Media，除非您使用的是特 [定方案](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)。 Dynamic Media被禁用，除非您通过runmode启用dynamic media。
 
 要启用Dynamic Media，必须从命令行或快速启动文件名中启用Dynamic Media运行模式。
 
@@ -166,17 +166,17 @@ AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内�
 
    >[!NOTE]
    >
-   >要对Dynamic Media的问题进行疑难解答，请参阅crx-quickstart/logs/ **[!UICONTROL directory中的以下日志]** :
+   >要对Dynamic Media问题进行疑难解答，请在crx-quickstart/logs/ **[!UICONTROL directory中查看以下日志]** :
    >
-   >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log - ImageServer日志提供用于分析内部ImageServer进程行为的统计信息和分析信息。
+   >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log - ImageServer日志提供用于分析内部ImageServer进程行为的统计和分析信息。
 
       图像服务器日志文件名的示例： `ImageServer-57346-2019-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access日志记录通过和向Dynamic Media发出的每个 `/is/image` 请求 `/is/content`。
-   这些日志仅在启用Dynamic Media时才使用。 它们不包含在从 **system/console** /status-Bundlelist页 **[!UICONTROL 面生成的“下载完整包]** ”中； 如果您遇到Dynamic Media问题，请致电客户支持，将这两个日志附加到该问题。
+   仅当启用Dynamic Media时，才使用这些日志。 它们不包含在从 **system/console** /status-Bundlelist页 **[!UICONTROL 面生成的“下载完整包]** ”中； 如果您遇到Dynamic Media问题，请在致电客户支持时，将这两个日志附加到该问题。
 
 ### 如果将AEM安装到其他端口或上下文路径…… {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-如果要将AEM部 [署到应用程序服务器](/help/sites-deploying/application-server-install.md) ，并启用Dynamic Media，则需要在externalizer中 **配置** self域。 否则，Dynamic Media资产的资产缩略图生成将无法正常工作。
+如果要将AEM部 [署到应用程序服务器](/help/sites-deploying/application-server-install.md) ，并启用Dynamic Media **，则需要在externalizer中配置** self domain。 否则，Dynamic Media资产的资产缩略图生成将无法正常工作。
 
 此外，如果在其他端口或上下文路径上运行快速启动，则还必须更改 **自定义** 域。
 
@@ -198,7 +198,7 @@ AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内�
 
 要在启用Dynamic Media后禁用它，请删除 **[!UICONTROL -r dynamicmedia]** 运行模式标志。
 
-**要在Dynamic Media启用后禁用它**:
+**要在启用Dynamic Media后禁用它**:
 
 1. 在命令行上，启动快速启动时，可以执行下列操作之一：
 
@@ -211,12 +211,12 @@ AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内�
 1. Request `http://localhost:4502/is/image`. 您会收到一条消息，指示Dynamic Media已禁用。
 
    >[!NOTE]
-   禁用Dynamic Media运行模式后，将自动跳过生成再现 `qdam.pyramid.tiff` 的工作流步骤。 这也会禁用动态演绎版支持和其他Dynamic Media功能。
+   禁用Dynamic Media运行模式后，将自动跳过生成再现 `qdam.pyramid.tiff` 的工作流步骤。 这也会禁用动态再现支持和其他Dynamic Media功能。
    另请注意，在配置AEM服务器后，当Dynamic Media运行模式被禁用时，在该运行模式下上传的所有资产现在都无效。
 
 ## （可选）将Dynamic Media预设和配置从6.3迁移到6.4零停机时间 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-如果您要将AEM Dynamic Media从6.3升级到6.4(现在包括零停机时间（也称为“选择加入”）部署)，则需要运行以下curl命令，以将所有预设和配置从CRXDE Lite迁移 `/etc` 到 `/conf` CRXDE Lite。
+如果您要将AEMDynamic Media从6.3升级到6.4(现在包括零停机时间（也称为“选择加入”）部署)，您需要运行以下curl命令，以将所有预设和配置从CRXDE Lite迁移 `/etc` 到 `/conf` CRXDE Lite。
 
 **注意**: 如果在兼容性模式（即安装了兼容性打包）下运行AEM实例，则无需运行这些命令。
 
@@ -230,14 +230,14 @@ AEM发布节点将继续提供Dynamic Media查看器、站点页面和静态内�
 
 ## 配置映像复制 {#configuring-image-replication}
 
-Dynamic Media图像投放的工作方式是从AEM作者发布图像资产（包括视频缩略图）并将其复制到Adobe的点播复制服务（复制服务URL）。 然后，资产会通过按需图像投放服务（图像服务URL）交付。
+Dynamic Media图像投放的工作方式是：将图像资产（包括视频缩略图）从AEM Author发布并复制到Adobe的点播复制服务（复制服务URL）。 然后，资产会通过按需图像投放服务（图像服务URL）交付。
 
 您必须执行以下操作：
 
 1. [设置身份验证](#setting-up-authentication)。
 1. [配置复制代理](#configuring-the-replication-agent)。
 
-复制代理发布Dynamic Media资产（如图像、视频元数据）并将其设置到由Adobe托管的图像服务。 默认情况下，复制代理未启用。
+复制代理将发布Dynamic Media资产（如图像、视频元数据）并将其集合到由Adobe托管的图像服务。 默认情况下，复制代理未启用。
 
 配置复制代理后，您需要验 [证并测试它是否已成功设置](#validating-the-replication-agent-for-dynamic-media)。 本节介绍这些过程。
 
@@ -376,7 +376,7 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 
 #### 问题： InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
-此问题由AEM作者实例中的配置错误引起。 作者上的java进程未获得正确的结果 `javax.net.ssl.trustStore`。 复制日志中显示此错误：
+此问题是由AEM Author实例中的配置错误引起的。 作者上的java进程未获得正确的结果 `javax.net.ssl.trustStore`。 复制日志中显示此错误：
 
 ```shell
 14.04.2016 09:37:43 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1460651862089, userId='admin', revision='null'}. java.io.IOException: Failed to execute request 'https://<localhost>:8580/is-publish/publish-receiver?Cmd=Test&RootId=rbrough-osx2': java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
@@ -392,7 +392,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**解决方案**: 确保AEM作者上的java进程将系统属 **性-Djavax.net.ssl.trustStore=** 设置为有效的truststore。
+**解决方案**: 确保AEM Author上的java进程将系统属 **性-Djavax.net.ssl.trustStore** =设置为有效的truststore。
 
 #### 问题： KeyStore未设置或未初始化 {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
@@ -464,7 +464,7 @@ Adobe建议您对配置执行端对端测试。
 在开始此测试之前，请确保您已经执行了以下操作：
 
 * 添加的图像预设。
-* 在 **云服务下配置Dynamic Media配置(6.3** 之 **[!UICONTROL 前版本)]**。 此测试需要图像服务URL
+* 在 **Dynamic Media下配置Cloud Service配置(6.3** 之 **[!UICONTROL 前)]**。 此测试需要图像服务URL
 
 测试配置：
 
@@ -483,37 +483,37 @@ Adobe建议您对配置执行端对端测试。
 
 ## Configuring Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
-Dynamic Media Cloud服务提供对云服务的支持，如混合发布和投放图像和视频、视频分析和视频编码等。
+Dynamic Media云服务提供云服务支持，例如混合发布和图像和视频投放、视频分析和视频编码等。
 
 在配置中，您需要输入注册ID、视频服务URL、图像服务URL、复制服务URL并设置身份验证。 您应该已经在帐户设置过程中收到了所有这些信息。 如果您未收到此信息，请与Adobe Experience Manager管理员或Adobe技术支持联系以获取该信息。
 
 >[!NOTE]
-在设置Dynamic Media Cloud服务之前，请确保设置发布实例。 配置Dynamic Media Cloud Services之前，还必须设置复制。
+在设置Dynamic MediaCloud Service之前，请确保设置发布实例。 在配置Dynamic MediaCloud Service之前，还必须设置复制。
 
 **要配置Dynamic Media云服务**:
 
-1. 在AEM中，点按AEM徽标以访问全局导航控制台，然 **[!UICONTROL 后点按工具>云服务> Dynamic Media配置（6.3之前版本）]**。
-1. 在Dynamic Media **[!UICONTROL 配置浏览器页]** 面的左侧窗格中，选 **[!UICONTROL 择全局]**，然后 **[!UICONTROL 点按创建]**。
+1. 在AEM中，点按AEM徽标以访问全局导航控制台，然后点 **[!UICONTROL 按工具>Cloud Service>Dynamic Media配置（6.3之前版本）]**。
+1. 在“Dynamic Media **[!UICONTROL 配置浏览器]** ”页面的左窗格中，选择 **[!UICONTROL 全局]**，然后点 **[!UICONTROL 按创建]**。
 1. 在“创 **[!UICONTROL 建Dynamic Media配置]** ”对话框的“标 **[!UICONTROL 题]** ”字段中，键入标题。
 1. 如果要为视频配置Dynamic Media,
 
    * 在“注 **[!UICONTROL 册ID]** ”字段中，键入注册ID。
-   * 在“视 **[!UICONTROL 频服务URL]** ”字段中，输入Dynamic Media Gateway的视频服务URL。
+   * 在“视 **[!UICONTROL 频服务URL]** ”字段中，输入Dynamic Media网关的视频服务URL。
 
-1. 如果要配置Dynamic Media进行成像，请在“图 **[!UICONTROL 像服务URL]** ”字段中，输入Dynamic Media Gateway的图像服务URL。
-1. 点按 **[!UICONTROL 保存]** ，以返回到Dynamic Media配置浏览器页面。
+1. 如果要配置Dynamic Media以进行成像，请在 **[!UICONTROL 图像服务URL]** 字段中，输入Dynamic Media网关的图像服务URL。
+1. 点按 **[!UICONTROL 保存]** ，返回“Dynamic Media配置浏览器”页。
 1. 点按AEM徽标以访问全局导航控制台。
 
 ## 配置视频报告 {#configuring-video-reporting}
 
-您可以使用Dynamic Media —— 混合模式在AEM的多个安装中配置视频报告。
+您可以使用“报告-混合模式”在AEM的多个安装中配置视频Dynamic Media。
 
-**何时使用：** 配置Dynamic Media配 **[!UICONTROL 置（6.3之前版本）时]**，会启动包括视频报告在内的众多功能。 该配置在区域Analytics公司中创建报表包。 如果配置多个作者节点，则为每个节点创建一个单独的报表包。 因此，报告数据在安装之间不一致。 此外，如果每个作者节点引用同一混合发布服务器，则上次作者安装会更改所有视频报告的目标报表包。 此问题会使Analytics系统的报表包过多。
+**何时使用：** 在配置Dynamic Media配 **[!UICONTROL 置（6.3之前版本）时]**，将启动包括视频报告在内的许多功能。 该配置在区域Analytics公司中创建报表包。 如果配置多个作者节点，则为每个节点创建一个单独的报表包。 因此，报告数据在安装之间不一致。 此外，如果每个作者节点引用同一混合发布服务器，则上次作者安装会更改所有视频报告的目标报表包。 此问题使Analytics系统的报表包过多。
 
 **开始：** 通过完成以下三个报告配置视频任务。
 
-1. 在第一个 [!DNL Video Analytics] 作者节点上 **[!UICONTROL 配置Dynamic Media配置(6.3之前版本]** )后，创建预设包。 此初始任务很重要，因为它允许新配置继续使用同一报表包。
-1. 在配置 [!DNL Video Analytics] Dynamic Media Configuration( ***前6.3版)之*** 前，将预设 ***包安装到任*** 何新的作者节点。
+1. 在第一个 [!DNL Video Analytics] 作者节点上 **[!UICONTROL 配置Dynamic Media配置(6.3之前版本]** )后，创建一个预设包。 此初始任务很重要，因为它允许新配置继续使用同一报表包。
+1. 在配置 [!DNL Video Analytics] Dynamic Media配置 ***(6.3*** 之前 ***)，将预设包*** 安装到任何新的作者节点。
 
 1. 验证并调试包安装。
 
@@ -521,7 +521,7 @@ Dynamic Media Cloud服务提供对云服务的支持，如混合发布和投放�
 
 完成此任务后，您将拥有一个包含预设的包文 [!DNL Video Analytics] 件。 这些预设包含报表包、跟踪服务器、跟踪命名空间和Marketing Cloud组织ID（如果可用）。
 
-1. 如果尚未配置，请配 **[!UICONTROL 置Dynamic Media配置（6.3之前版本）]**。
+1. 如果尚未配置，请配 **[!UICONTROL 置Dynamic Media配置（6.3之前）]**。
 1. （可选）视图并复 **[!UICONTROL 制报告包ID]** （您必须有权访问JCR）。 虽然不需 **[!UICONTROL 要使用报表包]** ID，但它使验证更简单。
 1. 使用包管理器 **[!UICONTROL 创建包]**。
 1. 编辑包以包含过滤器。
@@ -533,7 +533,7 @@ Dynamic Media Cloud服务提供对云服务的支持，如混合发布和投放�
 
 ### 在配置其 [!DNL Video Analytics] 他“作者”节点之前安装预设包 {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
-请确保在配置Dynamic Media _配置_ ( **[!UICONTROL 6.3之前版本)之前完成此任务]**。 否则，将创建另一个未使用的报表包。 此外，即使视频报告仍能正常工作，数据收集也未得到优化。
+请确保在配置任务 _配置_ ( **[!UICONTROL 6.3之前)之]**&#x200B;前完成此Dynamic Media。 否则，将创建另一个未使用的报表包。 此外，即使视频报告仍能正常工作，数据收集也未得到优化。
 
 确保可在新的 [!DNL Video Analytics] “作者”节点上访问来自第一个“作者”节点的预设包。
 
@@ -585,17 +585,17 @@ Dynamic Media Cloud服务提供对云服务的支持，如混合发布和投放�
 
    ![screen_shot_2018-05-23at52612pm](assets/screen_shot_2018-05-23at52612pm.png)
 
-   如果在配置Dynamic Media Configuration(Pre 6.3)服务之前运行 **[!UICONTROL 了视频报告，则也会显示此错误]** 。
+   如果在配置报告配置（6.3以前版本）服务之前运 **[!UICONTROL 行了视频Dynamic Media，则还会显示]** 此错误。
 
 ### 视频报告配置疑难解答 {#troubleshooting-the-video-reporting-configuration}
 
-* 在安装过程中，有时与Analytics API服务器的连接会超时。 安装重试连接20次，但仍然失败。 出现这种情况时，日志文件会记录多个错误。 搜索 `SiteCatalystReportService`.
+* 在安装过程中，有时与AnalyticsAPI服务器的连接会超时。 安装重试连接20次，但仍然失败。 出现这种情况时，日志文件会记录多个错误。 搜索 `SiteCatalystReportService`.
 * 不首先安 [!DNL Video Analytics] 装预设包可能会创建新报表包。
-* 从AEM 6.3升级到AEM 6.4或AEM 6.4.1，然后配置 **[!UICONTROL Dynamic Media配置（6.3之前版本）]**，仍然会创建报告包。 此问题已知并将在AEM 6.4.2中修复。
+* 从AEM 6.3升级到AEM 6.4或AEM 6.4.1，然后配置 **[!UICONTROL Dynamic Media配置(6.3之前版本]**)仍会创建报表包。 此问题已知并将在AEM 6.4.2中修复。
 
 ### 关于预 [!DNL Video Analytics] 设 {#about-the-video-analytics-preset}
 
-预 [!DNL Video Analytics] 设（有时也称为分析预设）存储在Dynamic Media的查看器预设旁边。 它基本上与查看器预设相同，但包含用于配置AppMeasurement和视频心跳报告的信息。
+预 [!DNL Video Analytics] 设（有时也称为分析预设）存储在查看器预设的Dynamic Media中。 它基本上与查看器预设相同，但包含用于配置AppMeasurement和视频心跳报告的信息。
 
 预设的属性如下所示：
 
@@ -630,7 +630,7 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
 
 ## 筛选要复制的资产 {#filtering-assets-for-replication}
 
-在非Dynamic Media部署中，您可 _以将_ 所有资产（图像和视频）从AEM创作环境复制到AEM发布节点。 此工作流是必需的，因为AEM发布服务器也会传送资产。
+在非Dynamic Media部署中，您可 _以将_ 所有资产（包括图像和视频）从AEM作者环境复制到AEM发布节点。 此工作流是必需的，因为AEM发布服务器也会传送资产。
 
 但是，在Dynamic Media部署中，由于资产是通过云传送的，因此无需将这些资产复制到AEM发布节点。 这种“混合发布”工作流程可避免复制资产的额外存储成本和更长的处理时间。 AEM发布节点继续提供Dynamic Media查看器、站点页面和静态内容等其他内容。
 
@@ -644,7 +644,7 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
 
 ### 使用默认资产过滤器进行复制 {#using-default-asset-filters-for-replication}
 
-如果您使用Dynamic Media进行1)制作成 _像_ ，或2)成像和视频，则您可以使用我们按原样提供的默认过滤器。 默认情况下，以下过滤器处于活动状态：
+如果您使用的Dynamic Media是1)在生产中 _成像_ ，或2)图像和视频，则您可以使用我们按原样提供的默认过滤器。 默认情况下，以下过滤器处于活动状态：
 
 <table> 
  <tbody> 
@@ -665,7 +665,7 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>动态媒体视频投放</td> 
+   <td>Dynamic Media视频投放</td> 
    <td>过滤视频</td> 
    <td>开始 <strong>视频/</strong></td> 
    <td>现成的“过滤器——视频”将： 
@@ -675,13 +675,13 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dynamic Media Classic(Scene7)集成</td> 
+   <td>Dynamic Media经典(Scene7)集成</td> 
    <td><p>滤镜图像</p> <p>过滤器集</p> <p>过滤视频</p> </td> 
    <td><p>开始 <strong>/图像</strong></p> <p>包 <strong>含应用</strong> 程序／以 <strong>集结尾</strong>。</p> <p>开始 <strong>视频/</strong></p> </td> 
-   <td><p>您配置传输URI以指向AEM发布服务器，而不是Adobe Dynamic Media Cloud复制服务URL。 设置此过滤器将允许Dynamic Media Classic传送资产，而不是AEM发布实例。</p> <p>现成的“filter-images”、“filter-sets”和“filter-video”将：</p> 
+   <td><p>您配置传输URI以指向您的AEM发布服务器，而不是AdobeDynamic Media云复制服务URL。 设置此过滤器将允许Dynamic Media经典传送资产，而不是AEM发布实例。</p> <p>现成的“filter-images”、“filter-sets”和“filter-video”将：</p> 
     <ul> 
-     <li>包括PTIFF图像、代理视频演绎版和用于复制的元数据。 但是，由于JCR中不存在这些AEM - Dynamic Media Classic集成，因此它们无效。</li> 
-     <li>从复制中排除原始图像、静态图像演绎版、原始视频和静态缩略图演绎版。 相反，Dynamic Media Classic将提供图像和视频资产。</li> 
+     <li>包括PTIFF图像、代理视频演绎版和用于复制的元数据。 但是，由于JCR中不存在这些AEM -Dynamic Media经典集成，因此它们无效。</li> 
+     <li>从复制中排除原始图像、静态图像演绎版、原始视频和静态缩略图演绎版。 相反，Dynamic Media经典将提供图像和视频资产。</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -692,7 +692,7 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
 
 ### 为纯视频部署设置资产过滤器 {#setting-up-asset-filters-for-video-only-deployments}
 
-如果您使用Dynamic Media仅用于视频，请按照以下步骤设置要复制的资产过滤器:
+如果您正在将Dynamic Media用于仅视频，请按照以下步骤设置要复制的资产过滤器:
 
 1. 在AEM中，点按AEM徽标以访问全局导航控制台，然后点按工 **[!UICONTROL 具>部署>复制>创作代理]**。
 1. 在创作页面上，点按默 **[!UICONTROL 认代理（发布）]**。
@@ -705,11 +705,11 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
 1. 在左侧文件夹树中，导航到 `/etc/replication/agents.author/publish`
 1. 找到 [!UICONTROL jcr:content]，右键单击它并选择“粘 **[!UICONTROL 贴”]**。
 
-这将设置AEM发布实例，以传送视频海报图像以及回放所需的视频元数据，而视频本身则由Dynamic Media云服务传送。 过滤器还将从复制中排除原始视频和静态缩略图再现，这在发布实例中是不需要的。
+这将设置AEM发布实例以传送视频海报图像以及回放所需的视频元数据，而视频本身则由Dynamic Media云服务传送。 过滤器还将从复制中排除原始视频和静态缩略图再现，这在发布实例中是不需要的。
 
 ### 在非生产部署中为映像设置资产过滤器 {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
 
-如果您正在非生产部署中使用Dynamic Media进行映像，请按照以下步骤设置资产过滤器进行复制：
+如果您在非生产部署中使用映像Dynamic Media，请按照以下步骤设置要复制的资产过滤器:
 
 1. 在AEM中，点按AEM徽标以访问全局导航控制台，然后点按工 **[!UICONTROL 具>部署>复制>创作代理]**。
 1. 在创作页面上，点按默 **[!UICONTROL 认代理（发布）]**。
@@ -753,7 +753,7 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
 
    请注意， `dc:format` 资产的 `Fiji Red.jpg` 属性 `image/jpeg`是
 
-   要使此滤镜应用于所有图像（无论其格式如何），请将值设 `image/*` 置 `*` 为应用于任何格式的所有图像的常规表达式。
+   要使此滤镜应用于所有图像（无论其格式如何），请将值设 `image/*` 置为 `*` 应用于任何格式的所有图像的常规表达式。
 
    要使滤镜仅应用于JPEG类型的图像，请输入值 `image/jpeg`。
 
@@ -792,21 +792,21 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
 
 如果您只想复制原件，则输入 `+original`。
 
-## 配置Dynamic Media Image Server设置 {#configuring-dynamic-media-image-server-settings}
+## 配置Dynamic Media图像服务器设置 {#configuring-dynamic-media-image-server-settings}
 
-配置Dynamic Media Image Server涉及编辑Adobe CQ Scene7 ImageServer捆绑和Adobe CQ Scene7 PlatformServer捆绑。
+配置Dynamic Media图像服务器涉及编辑Adobe CQ Scene7 ImageServer捆绑和Adobe CQ Scene7 PlatformServer捆绑。
 
 >[!NOTE]
-Dynamic Media在启用后即 [可使用](#enabling-dynamic-media)。 但是，您可以选择通过配置Dynamic Media Image Server以满足某些规范或要求来优化安装。
+Dynamic Media在启用后即 [可使用](#enabling-dynamic-media)。 但是，您可以选择通过配置Dynamic Media图像服务器来优化安装，以满足某些规范或要求。
 
-**入门项目**: _在配_ 置Dynamic Media Image Server之前，请确保Windows虚拟机包括Microsoft Visual C++库的安装。 运行Dynamic Media Image Server时必须使用这些库。 您可 [以在此处下载Microsoft Visual C++ 2010 Redistributable Package(x64)](https://www.microsoft.com/en-us/download/details.aspx?id=14632)。
+**入门项目**: _在配_ 置Dynamic Media映像服务器之前，请确保Windows虚拟机包括Microsoft Visual C++库的安装。 运行Dynamic Media图像服务器时必须使用这些库。 您可 [以在此处下载Microsoft Visual C++ 2010 Redistributable Package(x64)](https://www.microsoft.com/en-us/download/details.aspx?id=14632)。
 
-**要配置Dynamic Media Image Server设置**:
+**要配置Dynamic Media图像服务器设置**:
 
-1. 在AEM的左上角，点按Adobe **[!UICONTROL Experience Manager]** ，访问全局导航控制台，然后点 **[!UICONTROL 按工具>操作> Web Console]**。
-1. 在Adobe Experience **[!UICONTROL Manager Web Console配置页]** ，点 **** 按OSGi >配置以列表AEM中当前运行的所有捆绑包。
+1. 在AEM的左上角，点按 **[!UICONTROL Adobe Experience Manager]** 以访问全局导航控制台，然后点 **[!UICONTROL 按工具>操作> Web Console]**。
+1. 在“ **[!UICONTROL Adobe Experience ManagerWeb控制台]** ：配置”页 **[!UICONTROL 面，点按OSGi >]** 配置，列表AEM中当前运行的所有捆绑包。
 
-   Dynamic Media投放服务器位于列表的以下名称下：
+   Dynamic Media投放服务器位于列表中的以下名称下：
 
    * **[!UICONTROL Adobe CQ Scene7 ImageServer]**
    * **[!UICONTROL Adobe CQ Scene7 PlatformServer]**
@@ -862,7 +862,7 @@ Dynamic Media在启用后即 [可使用](#enabling-dynamic-media)。 但是，�
 1. 在Adobe **[!UICONTROL CQ Scene7 PlatformServer对话框中]** ，设置以下默认值选项：
 
    >[!NOTE]
-   Dynamic Media Image Server使用其自己的磁盘缓存缓存响应。 AEM HTTP缓存和Dispacher不能用于从Dynamic Media Image Server缓存响应。
+   Dynamic Media图像服务器使用其自己的磁盘缓存缓存响应。 AEM HTTP缓存和Dispacher不能用于缓存来自Dynamic Media图像服务器的响应。
 
    | **属性** | **默认值** | **描述** |
    |---|---|---|
@@ -901,42 +901,42 @@ Dynamic Media在启用后即 [可使用](#enabling-dynamic-media)。 但是，�
   <tr> 
    <td>bkgcolor</td> 
    <td>FFFFFF</td> 
-   <td><p>默认背景颜色。 用于填充返回图像中不包含实际图像数据的任何区域的RGB值。</p> <p>另请参 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_bkgcolor.html">阅图像</a> 服务API中的BkgColor。</p> </td> 
+   <td><p>默认背景颜色。 用于填充返回图像中不包含实际图像数据的任何区域的RGB值。</p> <p>另请参 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html">阅图像</a> 服务API中的BkgColor。</p> </td> 
   </tr> 
   <tr> 
    <td>defaultpix</td> 
    <td>300,300</td> 
-   <td><p>默认视图大小。 如果请求未使用wid=、hei=或scl=显式指定视图大小，则服务器将限制返回图像不大于此宽度和高度。</p> <p>指定为两个整数，0或更大，以逗号分隔。 宽度和高度（以像素为单位）。 可以将任一或两个值设置为0以保持它们不受约束。 不适用于嵌套／嵌入的请求。</p> <p>另请 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultpix.html">参阅</a> Image Serving API中的DefaultPix。</p> <p>但是，您通常使用查看器预设或图像预设来传送资产。 Defaultpix仅适用于未使用查看器预设或图像预设的资产。</p> </td> 
+   <td><p>默认视图大小。 如果请求未使用wid=、hei=或scl=显式指定视图大小，则服务器将限制返回图像不大于此宽度和高度。</p> <p>指定为两个整数，0或更大，以逗号分隔。 宽度和高度（以像素为单位）。 可以将任一或两个值设置为0以保持它们不受约束。 不适用于嵌套／嵌入的请求。</p> <p>另请 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html">参阅</a> Image Serving API中的DefaultPix。</p> <p>但是，您通常使用查看器预设或图像预设来传送资产。 Defaultpix仅适用于未使用查看器预设或图像预设的资产。</p> </td> 
   </tr> 
   <tr> 
    <td>defaulthumbpix</td> 
    <td>100,100</td> 
-   <td><p>默认缩略图大小。 用于缩略图请求(req=tmb)，而非属性：:DefaultPix。</p> <p>如果缩略图请求(req=tmb)未明确指定大小，则服务器将限制返回图像不大于此宽度和高度，而不使用wid=、hei=或scl=显式指定视图大小。</p> <p>指定为两个整数，0或更大，以逗号分隔。 宽度和高度（以像素为单位）。 可以将任一或两个值设置为0以保持它们不受约束。 </p> <p>不适用于嵌套／嵌入的请求。</p> <p>另请参 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">阅图像</a> 服务API中的DefaultThumbPix。 </p> </td> 
+   <td><p>默认缩略图大小。 用于缩略图请求(req=tmb)，而非属性：:DefaultPix。</p> <p>如果缩略图请求(req=tmb)未明确指定大小，则服务器将限制返回图像不大于此宽度和高度，而不使用wid=、hei=或scl=显式指定视图大小。</p> <p>指定为两个整数，0或更大，以逗号分隔。 宽度和高度（以像素为单位）。 可以将任一或两个值设置为0以保持它们不受约束。 </p> <p>不适用于嵌套／嵌入的请求。</p> <p>另请参 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html">阅图像</a> 服务API中的DefaultThumbPix。 </p> </td> 
   </tr> 
   <tr> 
    <td>过期</td> 
    <td>36000000</td> 
-   <td><p>默认客户端的存储时间。 提供默认的过期时间间隔，以防特定目录记录不包含有效的目录：:Expiration值。</p> <p>实数，0或更大。 自生成回复数据后，到期的毫秒数。 设置为0以始终立即使回复图像过期，这会有效地禁用客户端缓存。 默认情况下，此值设置为10小时，这意味着如果发布了新图像，则旧图像离开用户缓存需要10小时。 如果您需要更早清除缓存，请与客户关怀联系。</p> <p>另请参 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_expiration.html">阅</a> “图像服务API”中的“过期”。</p> </td> 
+   <td><p>默认客户端的存储时间。 提供默认的过期时间间隔，以防特定目录记录不包含有效的目录：:Expiration值。</p> <p>实数，0或更大。 自生成回复数据后，到期的毫秒数。 设置为0以始终立即使回复图像过期，这会有效地禁用客户端缓存。 默认情况下，此值设置为10小时，这意味着如果发布了新图像，则旧图像离开用户缓存需要10小时。 如果您需要更早清除缓存，请与客户关怀联系。</p> <p>另请参 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">阅</a> “图像服务API”中的“过期”。</p> </td> 
   </tr> 
   <tr> 
    <td>jpegquality</td> 
    <td>80</td> 
-   <td><p>默认JPEG编码属性。 指定JPEG回复图像的默认属性。</p> <p>整数数和标记，以逗号分隔。 第一个值在1.100范围内，它定义质量。 对于正常行为，第二个值可为0，或者为1以禁用JPEG编码器通常采用的RGB色度缩减采样。</p> <p>另请参 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_jpegquality.html">阅</a> Image Serving API中的JpegQuality。</p> </td> 
+   <td><p>默认JPEG编码属性。 指定JPEG回复图像的默认属性。</p> <p>整数数和标记，以逗号分隔。 第一个值在1.100范围内，它定义质量。 对于正常行为，第二个值可为0，或者为1以禁用JPEG编码器通常采用的RGB色度缩减采样。</p> <p>另请参 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">阅</a> Image Serving API中的JpegQuality。</p> </td> 
   </tr> 
   <tr> 
    <td>maxpix</td> 
    <td>2000,2000</td> 
-   <td><p>回复图像大小限制。 返回给客户端的最大返回图像宽度和高度。</p> <p>如果请求导致返回图像的宽度或高度大于属性：:MaxPix，则服务器返回错误。</p> <p>另请 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_maxpix.html">参阅</a> “图像服务API”中的MaxPix。</p> </td> 
+   <td><p>回复图像大小限制。 返回给客户端的最大返回图像宽度和高度。</p> <p>如果请求导致返回图像的宽度或高度大于属性：:MaxPix，则服务器返回错误。</p> <p>另请 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html">参阅</a> “图像服务API”中的MaxPix。</p> </td> 
   </tr> 
   <tr> 
    <td>resmode</td> 
    <td>SHARP2</td> 
-   <td><p>默认重新取样模式。 指定用于缩放图像数据的默认重新取样属性和插值属性。</p> <p>在请求中未指定resMode=时使用。</p> <p>允许的值包括BILIN、BICUB或SHARP2。</p> <p>枚举。 对于bilin，设置为2；对于bicub，设置为3；对于sharp2插值模式，设置为4。 使用sharp2可获得最佳效果。</p> <p>另请参 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_is_cat_resmode.html">阅图</a> 像服务API中的ResMode。</p> </td> 
+   <td><p>默认重新取样模式。 指定用于缩放图像数据的默认重新取样属性和插值属性。</p> <p>在请求中未指定resMode=时使用。</p> <p>允许的值包括BILIN、BICUB或SHARP2。</p> <p>枚举。 对于bilin，设置为2；对于bicub，设置为3；对于sharp2插值模式，设置为4。 使用sharp2可获得最佳效果。</p> <p>另请参 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html">阅图</a> 像服务API中的ResMode。</p> </td> 
   </tr> 
   <tr> 
    <td>分辨率</td> 
    <td>72</td> 
-   <td><p>默认对象分辨率。 提供默认对象分辨率，以防特定目录记录不包含有效的目录：:Resolution值。</p> <p>实数，大于0。 通常以每英寸的像素数表示，但也可以以其他单位表示，如每米的像素数。</p> <p>另请参 <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_resolution.html">阅图</a> 像服务API中的分辨率。</p> </td> 
+   <td><p>默认对象分辨率。 提供默认对象分辨率，以防特定目录记录不包含有效的目录：:Resolution值。</p> <p>实数，大于0。 通常以每英寸的像素数表示，但也可以以其他单位表示，如每米的像素数。</p> <p>另请参 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html">阅图</a> 像服务API中的分辨率。</p> </td> 
   </tr> 
   <tr> 
    <td>thumbnaitime</td> 
@@ -958,9 +958,9 @@ Adobe颜色管理使用ICC用户档案，这是国际颜色协会(ICC)定义的�
 
 高级用例可以使用手动 **[!UICONTROL 配置icc=]** modifier来显式选择输出颜色用户档案:
 
-* **[!UICONTROL icc]** - [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_icc.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_icc.html)
+* **[!UICONTROL icc]** —— 输 [出颜色用户档案。](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
 
-* **[!UICONTROL iccEmbed]** - [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html)
+* **[!UICONTROL iccEmbed]** —— 嵌 [入颜色用户档案。](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
 只有在安装了“包共享”中的功 [能包12445或“软件分发](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) ”中 [的功能包12445时，Adobe颜色用户档案](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 标准集才可用。 所有功能包和服务包均可通过包 [共享和软件](https://www.adobeaemcloud.com/content/packageshare.html)[分发获得](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。 功能包12445提供Adobe颜色用户档案。
@@ -1006,55 +1006,55 @@ Adobe颜色管理使用ICC用户档案，这是国际颜色协会(ICC)定义的�
       <td><strong>描述</strong></td> 
       </tr> 
       <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilergb.html">iccprofilergb</a></td> 
+      <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td> 
       <td>字符串</td> 
       <td>&lt;empty&gt;</td> 
       <td>默认RGB颜色用户档案的名称。</td> 
       </tr> 
       <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilecmyk.html">iccprofilemyk</a></td> 
+      <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilemyk</a></td> 
       <td>字符串</td> 
       <td>&lt;empty&gt;</td> 
       <td>默认CMYK颜色用户档案的名称。</td> 
       </tr> 
       <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilegray.html">iccprofilegray</a></td> 
+      <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td> 
       <td>字符串</td> 
       <td>&lt;empty&gt;</td> 
       <td>默认灰色用户档案的名称。</td> 
       </tr> 
       <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrcrgb.html">iccprofireservercrgb</a></td> 
+      <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofireservercrgb</a></td> 
       <td>字符串</td> 
       <td>&lt;empty&gt;</td> 
       <td>用于未嵌入颜色用户档案的RGB图像的默认RGB颜色用户档案的名称</td> 
       </tr> 
       <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrccmyk.html">iccprofilesrcmyk</a></td> 
+      <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrcmyk</a></td> 
       <td>字符串</td> 
       <td>&lt;empty&gt;</td> 
       <td>用于未嵌入颜色用户档案的CMYK图像的默认CMYK颜色用户档案的名称。</td> 
       </tr> 
       <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccprofilesrcgray.html">iccprofilesrcgray</a></td> 
+      <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td> 
       <td>字符串</td> 
       <td>&lt;empty&gt;</td> 
       <td>用于未嵌入颜色用户档案的CMYK图像的默认灰色用户档案的名称。</td> 
       </tr> 
       <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccblackpointcompensation.html">iccblackpoint补偿</a></td> 
+      <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpoint补偿</a></td> 
       <td>布尔型</td> 
       <td>True</td> 
       <td>指定是否应在颜色校正期间执行黑点补偿。 Adobe建议启用此选项。</td> 
       </tr> 
       <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccdither.html">icdhiter</a></td> 
+      <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">icdhiter</a></td> 
       <td>布尔型</td> 
       <td>False</td> 
       <td>指定是否应在颜色校正期间进行仿色。</td> 
       </tr> 
       <tr> 
-      <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccrenderintent.html">iccrenderintent</a></td> 
+      <td><a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td> 
       <td>字符串</td> 
       <td>相对</td> 
       <td><p>指定渲染方法。 可接受的值为： <strong>感知、相对、饱和度、绝对。 </strong><i></i>Adobe建议 <strong>将 </strong><i></i>相对值作为默认值。</p> </td> 
@@ -1251,7 +1251,7 @@ Adobe颜色管理使用ICC用户档案，这是国际颜色协会(ICC)定义的�
 
 ## 传送资产 {#delivering-assets}
 
-完成上述所有任务后，图像或视频服务会提供已激活的Dynamic Media资产。 在AEM中，此功能显示在“复 **[!UICONTROL 制图像URL]**”、“ **[!UICONTROL 复制查看器URL]**”、“ **[!UICONTROL 嵌入查看器代码]**”和“WCM”中。
+完成上述所有任务后，会从图像或视频服务中提供已激活的Dynamic Media资产。 在AEM中，此功能显示在“复 **[!UICONTROL 制图像URL]**”、“ **[!UICONTROL 复制查看器URL]**”、“ **[!UICONTROL 嵌入查看器代码]**”和“WCM”中。
 
 See [Delivering Dynamic Media Assets](delivering-dynamic-media-assets.md).
 
@@ -1294,6 +1294,6 @@ See [Delivering Dynamic Media Assets](delivering-dynamic-media-assets.md).
  </tbody> 
 </table>
 
-### WCM Dynamic Media和交互式媒体组件 {#wcm-dynamic-media-and-interactive-media-components}
+### WCMDynamic Media和交互式媒体组件 {#wcm-dynamic-media-and-interactive-media-components}
 
-引用Dynamic Media和Interactive Media组件的WCM页面引用投放服务。
+引用Dynamic Media和交互式媒体组件的WCM页面引用投放服务。

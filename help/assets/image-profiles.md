@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: dbe1feef05cebed7c7bcadbe6a1b4af242cb9d3c
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
 workflow-type: tm+mt
 source-wordcount: '2708'
 ht-degree: 19%
@@ -24,7 +24,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->智能裁剪仅在Dynamic Media - Scene7模式下可用。
+>智能裁剪仅在Dynamic Media- Scene7模式下可用。
 
 >[!IMPORTANT]
 >
@@ -67,7 +67,7 @@ ht-degree: 19%
   <tr> 
    <td>颜色和图像样本</td> 
    <td>批量为每个图像生成一个图像样本。</td> 
-   <td><p><strong>注意</strong>: Dynamic Media Classic不支持智能色板。</p> <p>从显示颜色或纹理的产品图像自动定位和生成高质量样本。</p> <p>要使用颜色和图像色板， <strong>请从</strong> “裁剪选项”下拉列表中选择“智能裁剪”，然后在“颜色和图像色板”的右侧，启用（打开）该功能。 在“宽度”和“高度”文本框中输入像素值。</p> <p>虽然所有图像裁剪都可从演绎版边栏中使用，但只能通过复制URL功能使用色板。 请注意，必须使用您自己的查看组件在站点上呈现色板。 (这种情况的例外是传送横幅。 Dynamic Media为传送横幅中使用的色板提供查看组件。)</p> <p><strong>使用图像色板</strong></p> <p>图像样本的URL非常简单。 即：</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>其中， <code>:Swatch</code> 资产请求会附加到该资产请求。</p> <p><strong>使用色板</strong></p> <p>要使用色板，您需要 <code>req=userdata</code> 使用以下项：</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>例如，以下是Dynamic Media Classic(Scene7)中的样本资产：</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>下面是样本资产的相应 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>答 <code>req=userdata</code> 复如下：</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>注意</strong>: Dynamic Media经典中不支持智能色板。</p> <p>从显示颜色或纹理的产品图像自动定位和生成高质量样本。</p> <p>要使用颜色和图像色板， <strong>请从</strong> “裁剪选项”下拉列表中选择“智能裁剪”，然后在“颜色和图像色板”的右侧，启用（打开）该功能。 在“宽度”和“高度”文本框中输入像素值。</p> <p>虽然所有图像裁剪都可从演绎版边栏中使用，但只能通过复制URL功能使用色板。 请注意，必须使用您自己的查看组件在站点上呈现色板。 (这种情况的例外是传送横幅。 Dynamic Media为传送横幅中使用的色板提供查看组件。)</p> <p><strong>使用图像色板</strong></p> <p>图像样本的URL非常简单。 即：</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>其中， <code>:Swatch</code> 资产请求会附加到该资产请求。</p> <p><strong>使用色板</strong></p> <p>要使用色板，您需要 <code>req=userdata</code> 使用以下项：</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>例如，以下是Dynamic Media经典(Scene7)中的样本资产：</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>下面是样本资产的相应 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>答 <code>req=userdata</code> 复如下：</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -111,7 +111,7 @@ In **Unsharp Mask**, you have the following filtering options:
 
 要为其他资产类型定义高级处理参数，请参 [阅配置资产处理](config-dms7.md#configuring-asset-processing)。
 
-**要创建Dynamic Media图像用户档案，请执行以下操作**:
+**要创建Dynamic Media图像用户档案**:
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. 点按 **[!UICONTROL 创建]** ，以添加新的图像用户档案。
@@ -161,7 +161,7 @@ In **Unsharp Mask**, you have the following filtering options:
 
 1. Tap **[!UICONTROL Apply Processing Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **[!UICONTROL Apply]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-#### 从属性将Dynamic Media图像用户档案应用到文件夹 {#applying-image-profiles-to-folders-from-properties}
+#### 从“属性”将Dynamic Media图像用户档案应用到文件夹 {#applying-image-profiles-to-folders-from-properties}
 
 1. 点按AEM徽标，导航到 **[!UICONTROL 资产]** ，然后导航到要应用图像用户档案的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按 **[!UICONTROL 属性]**。
@@ -191,7 +191,7 @@ In **Unsharp Mask**, you have the following filtering options:
 
 >[!NOTE]
 >
->智能裁剪仅在Dynamic Media - Scene7模式下可用。
+>智能裁剪仅在Dynamic Media- Scene7模式下可用。
 
 您可以手动重新对齐图像的智能裁剪窗口或调整其大小以进一步调整其焦点。
 
@@ -249,12 +249,14 @@ In **Unsharp Mask**, you have the following filtering options:
 
       * 如果图像仅包含智能裁剪或智能色板，请在图像上拖动裁剪框的角手柄以调整裁剪的可查看区域的大小。
       * 如果图像同时具有智能裁剪和智能色板，请在图像上拖动裁剪框的角手柄以调整裁剪的可查看区域的大小。 或者，点按或单击图像下方的智能色板（色板为静态），然后拖动裁剪框的角手柄以调整色板可查看区域的大小。
+
       ![调整图像的智能裁剪大小。](assets/edit_smart_crops-resize.png)
 
    * 移动智能裁剪框。 执行下列任一操作：
 
       * 如果图像仅具有智能裁剪或智能色板，则在图像上将裁剪框拖到新位置。
       * 如果图像同时具有智能裁剪和智能色板，请在图像上将智能裁剪框拖到新位置。 或者，点按图像下方的智能色板（色板为静态），然后将智能色板裁剪框拖到新位置。
+
       ![edit_smart_crobs_move](assets/edit_smart_crops-move.png)
 
    * 撤消所有编辑并恢复原始智能裁剪或智能色板（仅适用于当前编辑会话）。
@@ -273,7 +275,7 @@ In **Unsharp Mask**, you have the following filtering options:
 
 您可以从“工具”菜单中的文件夹删除图像配置文件；如果您在 **[!UICONTROL 文件夹中]** ，也可以从“属性”中 **[!UICONTROL 删除]**。 本节将介绍这两种将图像配置文件从文件夹删除的方法。
 
-### 通过用户档案用户界面将Dynamic Media图像用户档案从文件夹删除 {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### 通过Dynamic Media用户界面将用户档案图像用户档案从文件夹删除 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Tap the AEM logo and navigate to **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. 选择您要从一个或多个文件夹删除的图像配置文件。

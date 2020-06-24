@@ -3,9 +3,9 @@ title: 有关数字资产使用情况和共享的报告。
 description: 有关您的资产的 [!DNL Adobe Experience Manager Assets] 报告，有助于您了解数字资产的使用、活动和共享。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a5e9b38cd7ed7a513c2ca6b6c0c3b5d0830dfdab
+source-git-commit: 6faa69ee1d38ad16add95263c53f18ea0a413fd2
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1061'
 ht-degree: 8%
 
 ---
@@ -59,11 +59,11 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >默认情况下，内容片段和链接共享包含在已下载的资产报告中。 选择相应的选项以创建链接共享报告或从下载报告中排除内容片段。
+   >By default, the Content Fragments and link shares are included in the asset [!UICONTROL Downloaded report]. 选择相应的选项以创建链接共享报告或从下载报告中排除内容片段。
 
    >[!NOTE]
    >
-   >“下 [!UICONTROL 载] ”报告仅显示单独选择和下载的资产的详细信息。 但是，它不包含下载文件夹内的资产详细信息。
+   >“下 [!UICONTROL 载] ”报告仅显示单独选择、使用快速操作下载或下载的资产的详细信息。 但是，它不包含下载文件夹内的资产详细信息。
 
 1. 在存储报告的CRX存储库中配置报告详细信息，如标题、描述、缩略图和文件夹路径。 默认情况下，文件夹路径为 `/content/dam`。 可以指定其他路径。
 

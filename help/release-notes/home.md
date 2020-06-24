@@ -4,7 +4,7 @@ seo-title: AEM 6.4 发行说明
 description: AEM发行说明涵盖有关AEM最新版本的重要信息，包括新增的、受支持的平台、已弃用和已删除的功能以及已知问题。
 seo-description: AEM发行说明涵盖有关AEM最新版本的重要信息，包括新增的、受支持的平台、已弃用和已删除的功能以及已知问题。
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 19%
@@ -37,7 +37,7 @@ AEM发行说明涵盖有关AEM最新版本的重要信息，包括新增的、�
 | [开发用户指南](/help/sites-developing/home.md) | 了解如何构建AEM实例。 |
 | [管理用户指南](/help/managing/home.md) | 本指南介绍如何成功管理AEM项目。 |
 | [移动用户指南](/help/mobile/home.md) | 本指南介绍如何为移动应用程序创建和管理内容。 |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | 本指南向您展示如何与Livefyre共享用户生成的内容。 |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | 本指南向您展示如何与Livefyre共享用户生成的内容。 |
 
 ## 关键AEM资源
 

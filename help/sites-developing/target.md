@@ -10,7 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3350bb2d-78a7-45e2-9816-0277a40d3986
 translation-type: tm+mt
-source-git-commit: 6b38a85f8c6b7dd2f344d977cb24df9a80560d32
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '1222'
+ht-degree: 0%
 
 ---
 
@@ -20,15 +23,15 @@ source-git-commit: 6b38a85f8c6b7dd2f344d977cb24df9a80560d32
 本节介绍有关开发组件以用于内容定位的主题。
 
 * 有关连接Adobe Target的信息，请参 [阅与Adobe Target集成](/help/sites-administering/target.md)。
-* 有关创作目标内容的信息，请参阅使 [用定位模式创作目标内容](/help/sites-authoring/content-targeting-touch.md)。
+* 有关创作目标内容的信息，请参阅 [使用定位模式创作目标内容](/help/sites-authoring/content-targeting-touch.md)。
 
 >[!NOTE]
 >
->在AEM作者中定位组件时，该组件会向Adobe Target发出一系列服务器端调用，以注册营销活动、设置选件和检索Adobe Target区段（如果已配置）。 不会从AEM发布到Adobe Target进行服务器端调用。
+>在AEM作者中目标组件时，该组件会向Adobe Target发出一系列服务器端调用，以注册活动、设置优惠和检索Adobe Target段（如果已配置）。 AEM发布到Adobe Target时不会进行任何服务器端调用。
 
-## 在页面上通过Adobe Target启用定位 {#enabling-targeting-with-adobe-target-on-your-pages}
+## 在页面上启用Adobe Target定位 {#enabling-targeting-with-adobe-target-on-your-pages}
 
-要在页面中使用与Adobe Target交互的目标组件，请在元素中包含特定的客户端代 `<head>` 码。
+要在页面中使用与Adobe Target交互的目标组件，请在元素中包含特定的客户端 `<head>` 代码。
 
 ### 头部部分 {#the-head-section}
 
@@ -43,9 +46,9 @@ source-git-commit: 6b38a85f8c6b7dd2f344d977cb24df9a80560d32
 <cq:include script="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp"/>
 ```
 
-此代码添加所需的分析javascript对象并加载与网站关联的云服务库。 对于Target服务，将通过 `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
+此代码添加所需的分析javascript对象并加载与网站关联的云服务库。 对于目标服务，库通过 `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
 
-加载的库集取决于Target配置上使用的目标客户端库（mbox.js或at.js）的类型：
+加载的库集取决于目标配置上使用的目标客户端库（mbox.js或at.js）的类型：
 
 **对于默认mbox.js**
 
@@ -67,7 +70,7 @@ source-git-commit: 6b38a85f8c6b7dd2f344d977cb24df9a80560d32
  <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/init.js"></script>
 ```
 
-**对于at.js**
+**for at.js**
 
 ```
 <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/parameters.js"></script>
@@ -77,7 +80,7 @@ source-git-commit: 6b38a85f8c6b7dd2f344d977cb24df9a80560d32
 
 >[!NOTE]
 >
->仅支持随产 `at.js` 品提供的版本。 通过查 `at.js` 看所在位置的文件，可以获取随产品一 `at.js` 起提供的版本 `/etc/clientlibs/foundation/testandtarget/atjs/source/at.js`。
+>仅支持随产 `at.js` 品一起提供的版本。 通过查 `at.js` 看所在位置的文件，可以获取随产品 `at.js` 一起提供的版本 `/etc/clientlibs/foundation/testandtarget/atjs/source/at.js`。
 
 **对于自定义at.js**
 
@@ -87,7 +90,7 @@ source-git-commit: 6b38a85f8c6b7dd2f344d977cb24df9a80560d32
  <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/atjs-integration.js"></script>
 ```
 
-客户端上的Target功能由对象管 `CQ_Analytics.TestTarget` 理。 因此，该页面将包含一些init代码，如以下示例中所示：
+客户端上的目标功能由对象管 `CQ_Analytics.TestTarget` 理。 因此，该页面将包含一些init代码，如以下示例中所示：
 
 ```
 <script type="text/javascript">
@@ -121,7 +124,7 @@ source-git-commit: 6b38a85f8c6b7dd2f344d977cb24df9a80560d32
  </div>
 ```
 
-JSP会添加所需的分析javascript对象和对客户端javascript库的引用。 该文 `testandtarget.js` 件包含这些 `mbox.js` 函数。 脚本生成的HTML与以下示例类似：
+JSP会添加所需的分析javascript对象和对客户端javascript库的引用。 文 `testandtarget.js` 件包含 `mbox.js` 函数。 脚本生成的HTML与以下示例类似：
 
 ```xml
 <script type="text/javascript">
@@ -138,9 +141,9 @@ JSP会添加所需的分析javascript对象和对客户端javascript库的引用
 <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/init.js"></script>
 ```
 
-#### 正文部分（开始） {#the-body-section-start}
+#### 正文部分(开始) {#the-body-section-start}
 
-在紧靠标记后添加以 `<body>` 下代码，将Client Context功能添加到页面：
+在标记后面添加以 `<body>` 下代码，将Client Context功能添加到页面：
 
 ```xml
 <cq:include path="clientcontext" resourceType="cq/personalization/components/clientcontext"/>
@@ -154,7 +157,7 @@ JSP会添加所需的分析javascript对象和对客户端javascript库的引用
 <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
 ```
 
-此组件的JSP脚本生成对Target javascript API的调用并实现其他必需配置。 脚本生成的HTML与以下示例类似：
+此组件的JSP脚本生成对目标javascript API的调用并实现其他必需配置。 脚本生成的HTML与以下示例类似：
 
 ```xml
 <div class="servicecomponents cloudservices">
@@ -186,35 +189,35 @@ JSP会添加所需的分析javascript对象和对客户端javascript库的引用
 
 >[!NOTE]
 >
->如果您没有使用DTM或其他目标营销系统，则可以使用自定义目标库文件。
+>如果您未使用DTM或其他目标营销系统，则可以使用自定义目标库文件。
 
 >[!NOTE]
 >
->默认情况下，mbox是隐藏的- mboxDefault类决定此行为。 隐藏mbox可确保访客在交换默认内容之前不会看到该内容；但是，隐藏mbox会影响感知到的性能。
+>默认情况下，mbox是隐藏的- mboxDefault类决定此行为。 隐藏mbox可确保访客在交换默认内容之前不会看到该内容； 但是，隐藏mbox会影响感知到的性能。
 
-用于创建mbox的默认mbox.js文件位于 `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`。 要使用客户mbox.js文件，请将该文件添加到Target云配置。 要添加文件，文件 `mbox.js` 系统上必须提供该文件。
+用于创建mbox的默认mbox.js文件位于 `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`。 要使用客户mbox.js文件，请将该文件添加到目标云配置。 要添加文件，文 `mbox.js` 件系统中必须有该文件。
 
-例如，如果要使用 [Marketing Cloud ID服务](https://marketing.adobe.com/resources/help/en_US/mcvid/) ，您需要下载mbox.js，以便它包含基于租户的变量的正确值 `imsOrgID` 。 此变量是与Marketing Cloud ID服务集成所必需的。 有关信息，请参 [阅将Adobe Analytics作为Adobe Target的报告源](https://marketing.adobe.com/resources/help/en_US/target/a4t/a4t.html) ，并在 [实施之前查看](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_before_implement.html)。
+例如，如果要使用Marketing Cloud [ID服务](https://docs.adobe.com/content/help/en/id-service/using/home.html) ，您需要下载mbox.js，以便它包含基于租户的变量 `imsOrgID` 的正确值。 此变量是与Marketing Cloud ID服务集成时必需的。 有关信息，请 [参阅AdobeAnalytics作为Adobe Target的](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) 报告来源 [,](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html)然后再进行实施。
 
 >[!NOTE]
 >
->如果在Target配置中定义了自定义mbox，则每个人都必须对发布服务器上的 **/etc/cloudservices具有读访问权限** 。 如果没有此访问权限，在发布网站上加载mbox.js文件将导致404错误。
+>如果在目标配置中定义了自定义mbox，则每个人都必须对发布服务器上的 **/etc/cloudservices** 具有读取访问权限。 如果没有此访问权限，则在发布网站上加载mbox.js文件将导致404错误。
 
-1. 转到“CQ工 **具** ”页面并选 **择云服务**。 ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-1. 在树中，选择Adobe Target，然后在配置列表中双击您的Target配置。
+1. 转到“CQ工 **具** ”页面并选 **择Cloud Service**。 ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. 在树中，选择Adobe Target，在配置列表中，多次单击您的目标配置。
 1. 在配置页面上，单击编辑。
 1. 对于“自定义mbox.js”属性，单击“浏览”并选择文件。
-1. 要应用更改，请输入Adobe target帐户的口令，单击“重新连接到目标”，然后在连接成功时单击“确定”。 然后，在“编辑组件”对话框上单击“确定”。
+1. 要应用更改，请输入Adobe Target帐户的口令，单击“重新连接到目标”，然后在连接成功时单击“确定”。 然后，在“编辑组件”对话框中单击“确定”。
 
-您的Target配置包括自定义mbox.js文件，页面 [](/help/sites-developing/target.md#the-head-section) head部分中所需的代码会将该文件添加到客户端库框架，而不是对testandtarget.js库的引用。
+您的目标配置包含一个自定义mbox.js [文件，页面标题部分中所需的代码会将该文件添加到客户端库框架](/help/sites-developing/target.md#the-head-section) ，而不是对testandtarget.js库的引用。
 
 ## 禁用组件的目标命令 {#disabling-the-target-command-for-components}
 
-大多数组件都可以使用上下文菜单上的“目标”命令转换为目标组件。
+大多数组件都可以使用上下文菜单上的目标命令转换为目标组件。
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
-要从上下文菜单中删除Target命令，请将以下属性添加到组件的cq:editConfig节点：
+要从上下文菜单中删除目标命令，请将以下属性添加到组件的cq:editConfig节点：
 
 * 名称: `cq:disableTargeting`
 * 类型: `Boolean`
@@ -224,17 +227,17 @@ JSP会添加所需的分析javascript对象和对客户端javascript库的引用
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
-## 将订单确认信息发送到Adobe Target {#sending-order-confirmation-information-to-adobe-target}
+## 向Adobe Target发送订单确认信息 {#sending-order-confirmation-information-to-adobe-target}
 
 >[!NOTE]
 >
->如果您未使用DTM，请向Adobe Target发送订单确认。
+>如果您未使用DTM，则向Adobe Target发送订单确认。
 
-要跟踪网站的性能，请将订单确认页面中的购买信息发送到Adobe Target。 (请参 [阅Adobe Target文档中的创建orderConfirmPage](https://marketing.adobe.com/resources/help/en_US/dtm/target/order-confirmation-mbox.html) Mbox。)当您的MBox名称为并使用以下特定参数名称时，Adobe target会将mbox数据识别 `orderConfirmPage` 为订单确认数据：
+要跟踪网站性能，请从订单确认页面向Adobe Target发送采购信息。 (请参 [阅Adobe Target文档中](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) ，创建orderConfirmPage Mbox。) Adobe Target在MBox名称为时将mbox数据识别为订单确认数 `orderConfirmPage` 据，并使用以下特定参数名称：
 
-* productPurchasedId:标识所购买产品的ID列表。
-* orderId:订单的ID。
-* orderTotal:购买的总额。
+* productPurchasedId: 标识所购买产品的列表ID。
+* orderId: 订单的ID。
+* orderTotal: 购买的总额。
 
 呈现的HTML页面上用于创建mbox的代码与以下示例类似：
 
@@ -247,11 +250,11 @@ JSP会添加所需的分析javascript对象和对客户端javascript库的引用
 </script>
 ```
 
-每个顺序的每个参数的值都不同。 因此，您需要一个组件，该组件根据购买的属性生成代码。 CQ [eCommerce Integration Framework](/help/sites-administering/ecommerce.md) （CQ电子商务集成框架）允许您与产品目录集成并实施购物车和结帐页面。
+每个顺序的每个参数的值都不同。 因此，您需要一个组件，它根据购买的属性生成代码。 CQ eCommerce [Integration Framework](/help/sites-administering/ecommerce.md) 使您能够与产品目录集成并实施购物车和结帐页面。
 
-当访客购买产品时，Geometrixx Outdoors示例显示以下确认页面：
+访客购买产品时，Geometrixx Outdoors示例显示以下确认页：
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![chlimage_1-174](assets/chlimage_1-175.png)
 
 组件的JSP脚本的以下代码访问购物车的属性，然后打印创建mbox的代码。
 
@@ -298,7 +301,7 @@ String orderID = session.getOrderId();
 </script>
 ```
 
-当组件包含在上一个示例的结帐页面中时，页面源包括创建mbox的以下脚本：
+当组件包含在上一个示例的结帐页中时，页面源包括创建mbox的以下脚本：
 
 ```
 <div class="mboxDefault"></div>
@@ -314,12 +317,12 @@ String orderID = session.getOrderId();
 
 ## 了解目标组件 {#understanding-the-target-component}
 
-Target组件使作者能够从CQ内容组件创建动态mbox。 (请参阅 [内容定位](/help/sites-authoring/content-targeting-touch.md)。)Target组件位于/libs/cq/personalization/components/target。
+目标组件使作者能够从CQ内容组件创建动态mbox。 (请参阅 [内容定位](/help/sites-authoring/content-targeting-touch.md)。) 目标组件位于/libs/cq/personalization/components/目标。
 
-target.jsp脚本访问页面属性以确定要用于组件的定位引擎，然后执行相应的脚本：
+目标.jsp脚本访问页面属性以确定要用于该组件的定位引擎，然后执行相应的脚本：
 
 * Adobe Target: `/libs/cq/personalization/components/target/engine_tnt.jsp`
-* [Adobe Target with AT.JS](/help/sites-administering/target.md): `/libs/cq/personalization/components/target/engine_atjs.jsp`
+* [Adobe TargetAT.JS](/help/sites-administering/target.md): `/libs/cq/personalization/components/target/engine_atjs.jsp`
 * [Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md): `/libs/cq/personalization/components/target/engine_cq_campaign.jsp`
 * 客户端规则/ContextHub: `/libs/cq/personalization/components/target/engine_cq.jsp`
 
@@ -327,23 +330,23 @@ target.jsp脚本访问页面属性以确定要用于组件的定位引擎，然�
 
 >[!NOTE]
 >
->默认情况下，mbox是隐藏的- mboxDefault类决定此行为。 隐藏mbox可确保访客在交换默认内容之前不会看到该内容；但是，隐藏mbox会影响感知到的性能。
+>默认情况下，mbox是隐藏的- mboxDefault类决定此行为。 隐藏mbox可确保访客在交换默认内容之前不会看到该内容； 但是，隐藏mbox会影响感知到的性能。
 
-当Adobe target驱动内容定位时，engine_tnt.jsp脚本将创建包含目标体验内容的mbox:
+当Adobe Target驱动内容定位时，engine_tnt.jsp脚本将创建包含目标体验内容的mbox:
 
-* 根据 `div` Adobe Target API的要求，添加 `mboxDefault`一个包含类的元素。
+* 根据 `div` Adobe TargetAPI的 `mboxDefault`要求，添加类的元素。
 
 * 在元素中添加mbox内容（目标体验的内容）。 `div`
 
-在 `mboxDefault` div元素之后，将插入创建mbox的javascript:
+在div元 `mboxDefault` 素之后，将插入创建mbox的javascript:
 
 * mbox名称、ID和位置基于组件的存储库路径。
-* 该脚本获取Client Context参数名称和值。
-* 调用mbox.js和其他客户端库定义的用于创建mbox的函数。
+* 脚本获取Client Context参数名称和值。
+* 将调用mbox.js和其他客户端库定义的用于创建mbox的函数。
 
 ### 用于内容定位的客户端库 {#client-libraries-for-content-targeting}
 
-以下是可用的clientlib类别：
+以下是可用的clientlib类别:
 
 * `testandtarget.mbox`
 * `testandtarget.init`

@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '2792'
+source-wordcount: '2787'
 ht-degree: 3%
 
 ---
@@ -88,16 +88,16 @@ AdobeAnalytics和Adobe Experience Manager(AEM)都是Adobe Marketing Cloud解决�
 
 ## AdobeAnalytics视频报告套件报告 {#adobe-analytics-report-suite-for-video-reporting}
 
-使用Adobe Marketing Cloud的 [报告包管理器](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)，可以配置Analytics报告包，以便允许社区站点提供社区功能的报告。
+使用Adobe Marketing Cloud的 [报告包管理器](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)，可以配置Analytics报告包，以便允许社区站点提供社区功能的报告。
 
-通过使用 [Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) 、 [公司名和用户名登录](analytics.md#prerequisites)，可以配置新的或现有的报表包：
+通过使用 [Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) 、 [公司名和用户名登录](analytics.md#prerequisites)，可以配置新的或现有的报表包：
 
-* [11转换变量](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) (evar)
+* [11转换变量](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (evar)
 
    * **`evar1`** 启用 **`evar11`**
    * 可以重用（重命名）现有evar或创建新evar以用于社区功能
 
-* [7成功事件](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) (事件)
+* [7成功事件](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) (事件)
 
    * **`event1`** 启用 **`event7`**
    * 类型 **`Counter`**
@@ -106,7 +106,7 @@ AdobeAnalytics和Adobe Experience Manager(AEM)都是Adobe Marketing Cloud解决�
    * 可以重用（重命名）现有事件或创建新的社区功能
 
 
-* [视频管理](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html)
+* [视频管理](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
    * 视频报告控制台
 
@@ -128,6 +128,7 @@ AdobeAnalytics和Adobe Experience Manager(AEM)都是Adobe Marketing Cloud解决�
 >
 >* **`evar1`** 至 **`evar11`**
 >* **`event1`** 至 **`event7`**
+
 >
 >
 **然后，在发布社区站点之前** ，通过移动在为社区站点启用Analytics变量时自动映射到的AEM变量来恢复先前存在的映射非常重要。
@@ -456,6 +457,7 @@ Analytics自动用于多个社区功能。
 >
 >* **`evar1`** 至 **`evar11`**
 >* **`event1`** 至 **`event7`**
+
 >
 >
 **然后，在发布社区站点之前** ，务必恢复先前已存在的映射并将自动映射的社区AEM变量(当为社区站点启用Analytics时)移动到其他Analytics变量。 此重新映射应在所有社区组件之间保持一致。
@@ -545,11 +547,11 @@ AdobeAnalytics凭据已加密。 要在作者和发布者之间简化加密分�
 
 ## 管理Analytics的用户数据 {#manage-user-data-in-analytics}
 
-AdobeAnalytics提供的API允许您访问、导出和删除用户数据。 有关详细信息，请参 [阅提交访问和删除请求](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html)。
+AdobeAnalytics提供的API允许您访问、导出和删除用户数据。 有关详细信息，请参 [阅提交访问和删除请求](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)。
 
 ## 资源 {#resources}
 
-* Adobe Marketing Cloud: [Analytics帮助与参考](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud: [Analytics帮助与参考](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integrating with Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics与外部提供商](../../help/sites-administering/external-providers.md)
 

@@ -3,7 +3,7 @@ title: 图像转码库
 description: 了解如何配置和使用Adobe的图像转码库，它是一款可以执行核心图像处理功能的图像处理解决方案，包括编码、转码、图像重新取样和图像大小调整。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 65f45bdb34279f5834c0466457101ca2f309d5f1
 workflow-type: tm+mt
 source-wordcount: '960'
 ht-degree: 1%
@@ -77,7 +77,7 @@ Adobe的成像转码库是一种专有的图像处理解决方案，可以执行
 
 要配置库，请创建一个。conf文件，使用以下步骤指示库。 您需要管理员或根权限。
 
-1. 从“软件分发”下载Imaging Transcoding Library [包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) ，然后使用包管理器进行安装。 该包与AEM 6.5兼容。
+1. 从“软件 [分发”下载Imaging Cronding Library包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) ，然后使用包管理器安装它。 该包与AEM 6.5兼容。
 
 1. 要了解捆绑ID，请 `com.day.cq.dam.cq-dam-switchengine`登录到Web控制台，然后点 **[!UICONTROL 按OSGi >捆绑]**。 或者，要打开捆绑包控制台，请访 `https://[aem_server:[port]/system/console/bundles/` 问URL。 找到 `com.day.cq.dam.cq-dam-switchengine` 捆绑包及其ID。
 

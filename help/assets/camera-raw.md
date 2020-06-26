@@ -3,9 +3,9 @@ title: Camera Raw支持
 description: 了解如何在Adobe Experience Manager资产中启用Camera Raw支持。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 53db84e56fa972824b90719c3c2b45b20109d45e
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '404'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用Camera Raw处理图像 {#camera-raw-support}
 
-您可以启用Camera Raw支持处理CR2、NEF和RAF等原始文件格式，并以JPEG格式渲染图像。 在Adobe Experience Manager资产中，使用通过包共享或 [软件分发提供](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 的Camera Raw包支持 [该功能](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)。
+您可以启用Camera Raw支持处理CR2、NEF和RAF等原始文件格式，并以JPEG格式渲染图像。 Adobe Experience Manager资产中使用软件分发中提供 [的Camera Raw包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) ，支持此功能。
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 要在Adobe Experience Manager资产中启用Camera Raw支持，请执行以下步骤：
 
-1. 从“包 [共享](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) ”或“软件分发”下载 [Camera Raw包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)。
+1. 从“软 [件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) ”下载Camera Raw包。
 
 1. 访问 `https://[aem_server]:[port]/workflow`. 打开DAM **[!UICONTROL 更新资产工作流]** 。
 
@@ -31,6 +31,7 @@ ht-degree: 1%
 
    * **[!UICONTROL 缩略图]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL 跳过 MIME 类型]**: `skip:image/dng, skip:image/x-raw-(.*)`
+
    ![石](assets/chlimage_1-334.png)
 
 1. 在“启 **[!UICONTROL 用Web的图像]** ”选项卡中， **[!UICONTROL 在“跳过列表]** ”字段中指 `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`定。
@@ -48,6 +49,7 @@ ht-degree: 1%
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
+
    ![chlimage_1-336](assets/chlimage_1-336.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。

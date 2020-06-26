@@ -1,25 +1,25 @@
 ---
 title: Camera Raw支持
-description: 了解如何在Adobe Experience Manager Assets中启用Camera Raw支持。
+description: 了解如何在Adobe Experience Manager资产中启用Camera Raw支持。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: 53db84e56fa972824b90719c3c2b45b20109d45e
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '443'
 ht-degree: 1%
 
 ---
 
 
-# 支持使用Camera Raw处理图像 {#camera-raw-support}
+# 使用Camera Raw处理图像 {#camera-raw-support}
 
-您可以启用Camera Raw支持处理CR2、NEF和RAF等原始文件格式，并以JPEG格式渲染图像。 Adobe Experience Manager资产中使用通过包共享或软件分 [发提供的Camera](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) Raw包支持 [该功能](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)。
+您可以启用Camera Raw支持处理CR2、NEF和RAF等原始文件格式，并以JPEG格式渲染图像。 在Adobe Experience Manager资产中，使用通过包共享或 [软件分发提供](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 的Camera Raw包支持 [该功能](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)。
 
 >[!NOTE]
 >
 >该功能仅支持JPEG再现。 Windows 64位、Mac OS和RHEL 7.x支持此功能。
 
-要在Adobe Experience Manager资产中启用Camera Raw支持，请按照以下步骤操作：
+要在Adobe Experience Manager资产中启用Camera Raw支持，请执行以下步骤：
 
 1. 从“包 [共享](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) ”或“软件分发”下载 [Camera Raw包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)。
 
@@ -31,7 +31,6 @@ ht-degree: 1%
 
    * **[!UICONTROL 缩略图]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL 跳过 MIME 类型]**: `skip:image/dng, skip:image/x-raw-(.*)`
-
    ![石](assets/chlimage_1-334.png)
 
 1. 在“启 **[!UICONTROL 用Web的图像]** ”选项卡中， **[!UICONTROL 在“跳过列表]** ”字段中指 `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`定。
@@ -49,7 +48,6 @@ ht-degree: 1%
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
-
    ![chlimage_1-336](assets/chlimage_1-336.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
@@ -58,7 +56,7 @@ ht-degree: 1%
 >
 >确保以上配置与使用Camera RAW和DNG **[!UICONTROL 处理步骤配置的示例DAM更新资产相同]** 。
 
-您现在可以将相机原始数据文件导入AEM资产。 安装Camera RAW包并配置所需的工作流程后，“图 **[!UICONTROL 像调整]** ”选项会显示在侧窗格的列表中。
+您现在可以将相机原始数据文件导入AEM Assets。 安装Camera RAW包并配置所需的工作流程后，“图 **[!UICONTROL 像调整]** ”选项会显示在侧窗格的列表中。
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 

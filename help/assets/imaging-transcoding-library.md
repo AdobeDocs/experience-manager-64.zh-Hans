@@ -3,9 +3,9 @@ title: 图像转码库
 description: 了解如何配置和使用Adobe的图像转码库，它是一款可以执行核心图像处理功能的图像处理解决方案，包括编码、转码、图像重新取样和图像大小调整。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ Adobe的成像转码库是一种专有的图像处理解决方案，可以执行
 
 要配置库，请创建一个。conf文件，使用以下步骤指示库。 您需要管理员或根权限。
 
-1. 从Packase Share或Software Distribution下载 [Imaging Cronding Library](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) package, [然后使用Package Manager](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) （包管理器）安装它。 该包与AEM 6.5兼容。
+1. 从“软件分发”下载Imaging Transcoding Library [包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) ，然后使用包管理器进行安装。 该包与AEM 6.5兼容。
 
 1. 要了解捆绑ID，请 `com.day.cq.dam.cq-dam-switchengine`登录到Web控制台，然后点 **[!UICONTROL 按OSGi >捆绑]**。 或者，要打开捆绑包控制台，请访 `https://[aem_server:[port]/system/console/bundles/` 问URL。 找到 `com.day.cq.dam.cq-dam-switchengine` 捆绑包及其ID。
 
@@ -129,7 +129,6 @@ Adobe的成像转码库是一种专有的图像处理解决方案，可以执行
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
-
    ![石](assets/chlimage_1-199.png)
 
 1. （可选）使用单个命令从中间再现生成缩略图。 中间再现用作源，以生成静态和Web再现。 这种方法比以前的方法快。 但是，不能使用此方法将自定义参数应用于缩略图。

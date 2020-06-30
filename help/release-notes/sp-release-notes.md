@@ -1,15 +1,15 @@
 ---
 title: AEM 6.4 Service Pack 发行说明
 seo-title: AEM 6.4 Service Pack 发行说明
-description: 特定于Adobe Experience Manager 6.4 Service Pack的发行说明。
-seo-description: 特定于Adobe Experience Manager 6.4 Service Pack的发行说明。
+description: 特定于Adobe Experience Manager6.4 Service Pack的发行说明。
+seo-description: 特定于Adobe Experience Manager6.4 Service Pack的发行说明。
 uuid: 49a710a8-7cd5-47de-9a96-7af7f3c00dfc
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 774f0e8b631f6f8328e7bd9d4172498df58459bc
+source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
 workflow-type: tm+mt
 source-wordcount: '21555'
 ht-degree: 24%
@@ -48,16 +48,16 @@ AEM 6.4.8.0是一项重要更新，包含新功能、关键客户请求的增强
 
 * 使用SOAP Web服务的表单数据模型集成现在支持元素上的选择组或属性。
 
-* AEM资产现已通过Adobe I/O通过Brand Portal进行配置。
+* AEM Assets现在可通过Adobe I/O使用Brand Portal进行配置。
 
-* 已将捆绑在ContextHub中的jQuery版本更新为3.4.1。
+* 已将捆绑在ContextHub中的jQuery版本更新为3.2.1。
 
 ## 更改列表 {#list-of-changes}
 
 ### 站点 {#sites}
 
 * 当AEM Sites页面的URL包含冒号或百分比符号时，基础浏览器停止响应，CPU周期显示尖峰(NPR-32368、NPR-31917)。
-* 当打开AEM站点页面进行编辑并复制组件时，粘贴操作对于某些占位符仍然不可用(NPR-32328)。
+* 当打开AEM Sites页面进行编辑并复制组件时，粘贴操作对于某些占位符仍然不可用(NPR-32328)。
 * 激活工作流请求不包括引用的资产(NPR-32304)。
 * 创建Blueprint时，如果记录数超过80，则只显示前80个记录。 Blueprint显示其余记录的空行(NPR-32058)。
 * 允许用户保存内容片段，而无需在必填字段中提供任何信息(NPR-31988)。
@@ -71,9 +71,9 @@ AEM 6.4.8.0是一项重要更新，包含新功能、关键客户请求的增强
 
 ### 资产 {#assets}
 
-* 在使用Dynamic Media Scene7配置的Experience Manager中，将资产从一个文件夹移到另一个文件夹时，将在SPS(Scene7 Publishing System)中创建一个无名称的文件夹(NPR-32440)。
+* 在SPS(Scene7 Publishing System)中创建一个无名称的文件夹，同时使用Dynamic MediaScene7配置将资源从一个文件夹移到另一个文件夹(NPR-32440)。
 
-* PDF文件的“资产详细信息”页面在Dynamic Media Scene7模式下运行的Experience Manager中不显示操作按钮(NPR-32316)。
+* PDF文件的“资产详细信息”页面在Experience ManagerScene7模式下运行时不显示操作按钮(NPR-32316)。
 
 * 无法删除资产和视频演绎版(NPR-32213)。
 
@@ -81,25 +81,25 @@ AEM 6.4.8.0是一项重要更新，包含新功能、关键客户请求的增强
 
 * 当资产与多个资产相关时，使用“其他”(NPR-32196)会覆盖资产关系。
 
-* 当用户未在Dynamic Media Client中对“设置编辑器”进行任何更改时，“保存”按钮不会导入“远程设置”(NPR-32178)。
+* 当用户未在Dynamic Media客户端中对集编辑器进行任何更改时，保存按钮不导入远程集(NPR-32178)。
 
-* PSD资产摄取导致CPU尖峰和Experience Manager作者实例无响应(NPR-32165)。
+* PSD资产摄取导致CPU尖峰和Experience Manager作者不响应实例(NPR-32165)。
 
-* 在Experience Manager DAM中上传大型ZIP文件时，出现内存不足异常(NPR-32155)。
+* 在Experience ManagerDAM中上传大型ZIP文件时，出现内存不足异常(NPR-32155)。
 
 * 版本历史记录URL显示在资产属性页面的“引用者”字段下(NPR-31889)。
 
 * 在“管理发布”页面上，从Brand Portal中取消发布会失败，因为已发布文件夹的子文件夹(NPR-31835)。
 
-* 将Scene7云配置置于专用文件夹（而非NPR-31779）中时，动态媒 `/conf` 体视频编 `/conf/global` 码无法上传。
+* Dynamic Media视频编码在将Scene7云配置放置到专用文件夹(而 `/conf` 非NPR- `/conf/global` 31779)时无法上传。
 
-* 添加注释后，在Dynamic Media Scene7运行模式下运行的Experience Manager上，时间轴上看不到图像(NPR-31754)。
+* 添加注释后，在Experience ManagerScene7运行模式下运行的Dynamic Media上，时间轴上看不到图像(NPR-31754)。
 
 * 无法使用WinZip打开从DAM下载的ZIP文件(NPR-31745)。
 
 ### 集成 {#integrations-6480}
 
-* 在 **Experience Manager** cloud服务中 **配置Adobe Analytics时，一旦选** 择了“公司源 **** ”,报告和报告包下拉菜单就会被隐藏(NPR-31729)。
+* 在 **Experience Manager** 云服务中配置Adobe **Analytics时，选择****** 报告源后，公司和报告包下拉菜单将处于隐藏状态(NPR-31729)。
 
 * Adobe Campaign属性不会在创建链接到Adobe Campaign的新闻稿的语言副本时清除，而在复制或粘贴链接到Adobe Campaign的新闻稿时清除(NPR-32540)。
 
@@ -137,7 +137,7 @@ AEM 6.4.8.0是一项重要更新，包含新功能、关键客户请求的增强
 
 ### Brand Portal {#brand-portal}
 
-* 在AEM资产中取消发布元数据模式会填充错误消息，但后端会删除模式(CQ-4286871)。
+* 在AEM Assets中取消发布元数据模式会填充错误消息，但在后端删除模式(CQ-4286871)。
 
 ### 基础UI {#foundations-ui-6480}
 
@@ -147,7 +147,7 @@ AEM 6.4.8.0是一项重要更新，包含新功能、关键客户请求的增强
 
 >[!NOTE]
 >
->AEM Service Pack 不包含对 AEM Forms 的修复。它们是通过单独的 Forms 附加组件包交付的。此外，还会发布一个包含AEM Forms在JEE上的修复的累积安装程序。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>AEM Service Pack 不包含对 AEM Forms 的修复。它们是通过单独的 Forms 附加组件包交付的。此外，还发布了一个累积安装程序，其中包含针对JEEAEM Forms的修复。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * 设计人员： 如果启用标记选项，子表单边框将消失在生成的PDF输出中(NPR-32546、NPR-32322)。
 
@@ -163,7 +163,7 @@ AEM 6.4.8.0是一项重要更新，包含新功能、关键客户请求的增强
 
 * 文档服务： 将XDP文件汇编并转换为PDF文件时显示错误消息(NPR-31821)。
 
-* 在“站点”页面上提交或放弃表单时，分析不会显示适当的结果(NPR-31359)。
+* Analytics在站点页面上提交或放弃表单时不显示适当结果(NPR-31359)。
 
 ### 以前 Service Pack 中包含的修补程序和功能包 {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
@@ -179,7 +179,7 @@ AEM 6.4.7.0的一些主要亮点是：
 * 添加了在删除站点页面时设置其版本的支持。
 * 已在DAM列表视图中添加新列（可排序），在 **列表视图中** ，在资产搜索 **结果中添** 加(NPR-31311)。
 * 已允许在 **列表** 视图中基于名称 **列进行** 资产排序。
-* 现在，可在Dynamic Media的UI中配置重新处理和批量上传的批处理大小和工作流步骤超时。
+* 现在可以通过Dynamic Media的UI配置重新处理和批量上传的批处理大小和工作流步骤超时。
 * 在 `pdfBrochure` Scene 7云配置中，已将该设置为false，以在IPS中保存内存。
 
 ##### 资产 {#assets-6470}
@@ -203,13 +203,13 @@ AEM 6.4.7.0的一些主要亮点是：
 
 * 电子邮件模板的主题行中出现的特殊字符显示不正确(NPR-30547)。
 
-* 在运行于Dynamic Media Scene 7运行模式的AEM中，将资产从一个文件夹移至另一个文件夹时，资产名称将更改为小写(NPR-31631)。
+* 在运行于Dynamic MediaScene 7运行模式的AEM中，将资产从一个文件夹移到另一个文件夹时，资产名称将更改为小写字母(NPR-31631)。
 
 * 在创建图像集（或mediaset）并在DAM中使用适当的命名约定进行命名时，图像集的名称在Scene 7中会更改为小写字母(NPR-31576)。
 
-* Dynamic Media编码视频工作流无法为从Scene 7迁移到Dynamic Media - Scene 7运行模式的视频生成缩略图(NPR-31523)。
+* Dynamic Media编码视频工作流无法为从Scene 7迁移到Dynamic Media的视频生成缩略图- Scene 7运行模式(NPR-31523)。
 
-* 在运行于Dynamic Media - Scene 7运行模式的AEM中，使用过滤器搜索集时会观察到内部服务器错误(NPR-31388)。
+* 在运行于Dynamic Media的AEM - Scene 7运行模式(NPR-31388)中，使用过滤器搜索集时会观察到内部服务器错误。
 
 * 编辑远程图像集时，对于与Scene 7公司名称相同的文件夹中的图像，会出现错误(NPR-31347)。
 
@@ -217,11 +217,11 @@ AEM 6.4.7.0的一些主要亮点是：
 
 * 为 Dynamic Media 混合模式配置的到期时间（客户端缓存有效时间）值没有复制到 Dynamic Media 交付环境 (NPR-31126)。
 
-* 从AEM Dynamic Media上传- Scene 7运行模式到Scene 7的运行时间过长，无法完成(NPR-30926)。
+* 从AEMDynamic Media上传- Scene 7运行模式到Scene 7的时间过长，无法完成(NPR-30926)。
 
-* 在发布具有Dynamic Media组件的页面时，从在Dynamic Media - Scene 7运行模式上运行的作者实例创建该页面后，将提示用户发布dmscene7配置(NPR-30880)。
+* 在创建具有Dynamic Media组件的页面并发布该页面时，从在Dynamic Media- Scene 7运行模式上运行的作者实例中，系统会提示用户发布dmscene7配置(NPR-30880)。
 
-* 在Dynamic Media - Scene 7中更改“移动后标题”和“移动后名称”字段中的值后，查看器嵌入代码中“asset”参数的值保持不变- Scene 7(NPR-30745)。
+* 在Dynamic Media- Scene 7(NPR-30745)上更改“移动后标题”和“移动后名称”字段中的值后，查看器嵌入代码中“asset”参数的值保持不变。
 
 * 触屏UI搜索（通过Omnisearch完成）结果页自动向上滚动并丢失用户的滚动位置(NPR-31306)。
 
@@ -229,7 +229,7 @@ AEM 6.4.7.0的一些主要亮点是：
 
 * 资产标题和名称更改在移动操作到目标文件夹后不会持续，该文件夹在选择时会触发无限滚动(NPR-30647)。
 
-* 当在从Adobe Asset Link访问的AEM资产中应用任何筛选器时，集合会从视图中删除(CQ-4280534)。
+* 在从Adobe Asset Link访问的视图中应用任何筛选器时，集合会从该AEM Assets中删除(CQ-4280534)。
 
 * 无法在UI中配置重新处理和批量上传的批处理大小和工作流步骤超时，需要在CRXDE中设置，并且工作流需要同步两次(CQ-4281254)。
 
@@ -245,7 +245,7 @@ AEM 6.4.7.0的一些主要亮点是：
 
 * 当具有重复名的资产在Scene 7中已存在时，AEM中的资产重命名无法同步到Scene 7(CQ-4276763)。
 
-* 当具有“读取”权限的用户尝试打开通过电子邮件发送的用于资产下载的Zip文件时，它无法解压缩(CQ-4277925)。
+* 当具有“读取”权限的用户尝试打开通过电子邮件发送的用于资产下载的Zip文件时，该文件无法解压缩(CQ-4277925)。
 
 * PPT再现工作流无法生成已上传PPT文件的再现，因为AEM 6.4无法更新到com.adobe.granite.poi版本2.0.28(CQ-4279059)。
 
@@ -255,13 +255,13 @@ AEM 6.4.7.0的一些主要亮点是：
 
 * 当使用仅提升已修改页面提升启动项和使用已修改页面提升启动项时，仅显示要提升已修改页面。 此外，当要提升的列表正确时，未修改的页面仍显示在列表的底部(NPR-31314)。
 
-* 当AEM站点页面移动到其他位置时，其属性不会相应地更新以反映其新位置(NPR-31265)。
+* 当AEM Sites页面移至其他位置时，其属性不会相应地更新以反映其新位置(NPR-31265)。
 
 * 对于新的Blueprint，如果记录数超过40，则只显示前40个记录。 Blueprint显示其余记录的空行(NPR-31182)。
 
 * 当LiveCopy数量较大时，LiveCopy概述渲染预览需要很长时间(NPR-30945)。
 
-* 添加了在删除页面时设置页面版本的支持。 如果已删除页面禁用版本控制，则AEM Sites无法恢复此类页面(NPR-30891)。
+* 添加了在删除页面时设置页面版本的支持。 如果已删除页面禁用版本控制，AEM Sites将无法恢复此类页面(NPR-30891)。
 
 * 当用户在菜单的描述属性中添加日语或韩语字符时，该菜单显示日语和韩语文本的扭曲字符(NPR-31331)。
 
@@ -321,7 +321,7 @@ AEM 6.4.7.0的一些主要亮点是：
 
 >[!NOTE]
 >
->AEM Service Pack 不包含对 AEM Forms 的修复。它们是通过单独的 Forms 附加组件包交付的。此外，还会发布一个包含AEM Forms在JEE上的修复的累积安装程序。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>AEM Service Pack 不包含对 AEM Forms 的修复。它们是通过单独的 Forms 附加组件包交付的。此外，还发布了一个累积安装程序，其中包含针对JEEAEM Forms的修复。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 **Forms 附加组件包**
 
@@ -462,7 +462,7 @@ AEM 6.4.6.0的一些主要亮点是：
 
 >[!NOTE]
 >
->AEM Service Pack 不包含对 AEM Forms 的修复。它们是通过单独的 Forms 附加组件包交付的。此外，还会发布一个包含AEM Forms在JEE上的修复的累积安装程序。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>AEM Service Pack 不包含对 AEM Forms 的修复。它们是通过单独的 Forms 附加组件包交付的。此外，还发布了一个累积安装程序，其中包含针对JEEAEM Forms的修复。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 **Forms 附加组件包**
 
@@ -528,7 +528,7 @@ AEM 6.4.5.0的一些主要亮点是：
 
 * 文件名中带有撇号的资产不会同步到Dynamic Media。 NPR-29538：适用于 CQ-4270592 的修补程序
 * 针对 S3 多部分支持更新了 DAM DMGateway 接口。NPR-29740：适用于 CQ-4226303 的修补程序
-* 在Dynamic Media中下载视频的演绎版时，资产下载对话框显示的文件大小不正确。 NPR-29642：适用于 CQ-4246202 的修补程序
+* 以Dynamic Media形式下载视频的演绎版时，资产下载对话框显示的文件大小不正确。 NPR-29642：适用于 CQ-4246202 的修补程序
 * 在Day CQ DAM MIME类型服务应用m3u8文本后，资产将变得不可用。 NPR-29276：适用于 CQ-4264052 的修补程序
 * 如果任何已移动／重命名的资产是Sling资源集合的一部分，则资产引用调整将无法保存会话。 NPR-29143: /CQ-4252605的修补程序
 * 无法通过搜索元数据值来跟踪或查找资产。 NPR-29141：适用于 CQ-4260215 的修补程序
@@ -559,7 +559,7 @@ AEM 6.4.5.0的一些主要亮点是：
 * 创建或编辑MixedMediaSet时不加载示例视频。 适用于 CQ-4244889 的修补程序
 * 禁用在AEM端删除内容的权限会阻止用户发布到品牌门户。 适用于 CQ-4270426 的修补程序
 * 查询限制与资产报表在升级到AEM 6.4.3后的相关问题。NPR-28588: CQ-4262022、CQ-4260697的修补程序
-* 下载功能通过资产下载servlet利用AEM资产，允许匿名用户下载所有资产。 NPR-27315,CQ-4254732的修补程序
+* 下载功能通过资产下载servlet利用AEM Assets，允许匿名用户下载所有资产。 NPR-27315,CQ-4254732的修补程序
 
 **站点**
 
@@ -577,7 +577,7 @@ AEM 6.4.5.0的一些主要亮点是：
 * 活动页上的跨站点脚本(XSS)。 NPR-29614：适用于 CQ-4269322 的修补程序
 * 在源代码编辑模式下，将富文本编辑器从全屏最小化会导致内容丢失。NPR-29574：适用于 CQ-4260584 的修补程序
 * （经典UI）当存在大量标记时，并不总是可以导航到最后一个选项卡。 NPR-29544：适用于 CQ-4264548 的修补程序
-* （经典UI）管理控制台导航菜单消失，页面未完全加载。 NPR-29571：适用于 CQ-4264585 的修补程序
+* （经典UI）Admin Console导航菜单消失，页面未完全加载。 NPR-29571：适用于 CQ-4264585 的修补程序
 * 如果在实例上启用缩小功能，则将组件添加到 WCM 页面时会生成错误警报。NPR-29396：适用于 CQ-4266196 的修补程序
 * 样式系统节点从父节点继承的问题。 NPR-29296：适用于 CQ-4266041 的修补程序
 * 使用时间扭曲恢复的页面在版本控制时应该引用正确的图片。NPR-29431：适用于 CQ-4262638 的修补程序
@@ -641,7 +641,7 @@ AEM 6.4.5.0的一些主要亮点是：
 
 * 尝试编辑和保存AEM启动配置时会显示异常消息。 NPR-29086：适用于 CQ-4266153 的修补程序
 * BrightEdge 凭证失败，出现连接错误。NPR-29167：适用于 CQ-4265872 的修补程序
-* 应删除云服务配置中根级别显示的“继承自”复选框。 NPR-27856：适用于 CQ-4259676 的修补程序
+* 应删除Cloud Service配置中根级别显示的“继承自”复选框。 NPR-27856：适用于 CQ-4259676 的修补程序
 
 **Sling**
 
@@ -691,8 +691,8 @@ AEM 6.4.5.0 Forms 的重要功能亮点包括：
 **表单 - 后端集成**
 
 * 为 Microsoft Dynamics 内部部署集成启用了对 Active Directory 联合身份验证服务 (ADFS) v3.0 的支持。NPR-30003、NPR-29484：适用于 CQ-4270586 的修补程序
-* 预填服务因AEM Forms Data Integration模块的长周转时间而失败。 NPR-28997：适用于 CQ-4265988 的修补程序
-* SOAP Web服务请求在AEM Forms中格式不正确。 NPR-29013：适用于 CQ-4265443 的修补程序
+* 预填服务因AEM Forms数据集成模块的长周转时间而失败。 NPR-28997：适用于 CQ-4265988 的修补程序
+* SOAP Web服务请求在AEM Forms中格式错误。 NPR-29013：适用于 CQ-4265443 的修补程序
 * 测试SOAP服务时，如果日期值不正确，则不显示错误消息。 适用于 CQ-4265445 的修补程序
 
 **表单——交互式通信和表单——通信管理**
@@ -709,8 +709,8 @@ AEM 6.4.5.0 Forms 的重要功能亮点包括：
 
 **Forms - Foundation JEE**
 
-* AEM Forms Workbench中的Web服务组件无法调用Web服务，这需要双向SSL身份验证。 NPR-29485：适用于 CQ-4246794 的修补程序
-* AEM Forms JEE配置管理器不能处理多个NIC卡。 NPR-29236：适用于 CQ-4268598 的修补程序
+* AEM Forms工作台中的Web服务组件无法调用Web服务，这需要双向SSL身份验证。 NPR-29485：适用于 CQ-4246794 的修补程序
+* AEM FormsJEE配置管理器不能处理多个NIC卡。 NPR-29236：适用于 CQ-4268598 的修补程序
 * 来自GemFire的AEM启动错误： java.lang.IllegalStateException: 一次只能建立一个AdminDistributedSystem连接。 NPR-29524：适用于 CQ-4266295 的修补程序
 * NoClassDefFoundError，因为jar版本不匹配。 NPR-28834：适用于 NPR-28834 的修补程序
 
@@ -781,7 +781,7 @@ AEM 6.4.4.0的一些主要亮点是：
 * 过多的资产会被处理到智能内容服务，因此需要大量时间来完成定期标记过程。 NPR-28640：适用于 CQ-4262661、CQ-4262644、CQ-4263234 的修补程序
 * 桌面操作不适用于页面中的全搜索 `aem/start.html` 结果。 NPR-27242：适用于 CQ-4248176 的修补程序
 * 资产API不允许上传文件> 2 GB，从而导致上传失败。 NPR-27629：适用于 Granite-23590 的修补程序
-* 在实例上启用Dynamic Media的情况下，首次尝试时，元数据不会保存在已下载的资产中。 NPR-28233：适用于 CQ-4260759 的修补程序
+* 在实例启用Dynamic Media时，首次尝试时，元数据不会保存到已下载的资产中。 NPR-28233：适用于 CQ-4260759 的修补程序
 * 在SiteCatalyst配置中，服务解析程序未关闭。 NPR-28015：适用于 CQ-4259397 的修补程序
 * 在DAM中移动资产不会在Scene7上导致类似的移动（p2p配置）。 NPR-28313：适用于 CQ-4261091 的修补程序
 
@@ -839,7 +839,7 @@ AEM 6.4.4.0的一些主要亮点是：
 
 **DAM - Creative Cloud**
 
-* 支持HTTP API从AEM资产中查找类似图像。 适用于 CQ-4254091 的修补程序
+* 支持HTTP API从AEM Assets中查找类似图像。 适用于 CQ-4254091 的修补程序
 * 增强ACP API，允许将查询的结果限制到集合的成员。 适用于 CQ-4258708 的修补程序
 
 **DAM —— 格式**
@@ -876,7 +876,7 @@ AEM 6.4.4.0的一些主要亮点是：
 * 将易受攻击的引导程序升级到3.4，将ckeditor库升级到4.5.11。NPR-28490: CQ-4257511的修补程序
 * 取消编辑模式不会恢复已删除的附件。 NPR-27902：适用于 CQ-4255150 的修补程序
 * 仅特权成员可以看到代表框的起草。 NPR-27900：适用于 CQ-4251235 的修补程序
-* 在发布实例上，在AEM Communities用户同步监听器的可忽略节点中添加rep:cache。 NPR-27842：适用于 CQ-4247234 的修补程序
+* 在发布实例上，在AEM Communities用户同步监听器处将rep:cache添加到可忽略节点。 NPR-27842：适用于 CQ-4247234 的修补程序
 * 搜索框在UI级别显示转义字符。 NPR-27838：适用于 CQ-4259757 的修补程序
 * 搜索特殊字符（如， +,?）时生成错误 在快速搜索中。 NPR-28213：适用于 CQ-4260969 的修补程序
 * 创建“社区特定管理员”组，让用户能够编辑和创作相关社区站点。 NPR-27731
@@ -911,7 +911,7 @@ AEM 6.4.4.0的一些主要亮点是：
 * `com.day.cq.personalization.impl.TeaserResourceEventHandler` 陷入无限循环，并导致对发布实例上的节点进行更新。NPR-28561：适用于 CQ-4263096 的修补程序
 * cq:actions不会考虑目标组件。 NPR-27616：适用于 CQ-4257497 的修补程序
 * LiveCopy继承取消在目标容器上无法正常工作。 NPR-28129：适用于 CQ-4259813 的修补程序
-* （云服务配置）应删除根级别显示的“继承自”复选框。 NPR-27856：适用于 CQ-4259676 的修补程序
+* (Cloud Service配置)应删除在根级别显示的“继承自”复选框。 NPR-27856：适用于 CQ-4259676 的修补程序
 
 **Sling**
 
@@ -953,11 +953,11 @@ AEM 6.4.4.0 Forms 的重要功能亮点包括：
 * 当使用空模板创建自适应表单时，客户无法将面板子级设置到表单的根面板。 NPR-28758：适用于 CQ-4264157 的修补程序
 * 无法在自适应表单的延迟加载片段字段之间设置值。 NPR-27758：适用于 CQ-4259703 的修补程序
 * 自适应表单不使用富文本编辑器，而是加载其库。  NPR-27759：适用于 CQ-4259193 的修补程序
-* 重定向至“URL在嵌入在AEM站点页面中的自适应表单中无效”诊断树。 NPR-27620：适用于 CQ-4239287 的修补程序
+* 重定向至“URL无法用于嵌入在AEM Sites页面中的自适应表单”诊断树。 NPR-27620：适用于 CQ-4239287 的修补程序
 * 无法在自适应表单的延迟加载片段字段之间设置值。 NPR-28320：适用于 CQ-4262345 的修补程序
 * 自适应表单不使用富文本编辑器，而是加载其库。  NPR-28001：适用于 CQ-4259703/CQ-4259193 的修补程序
-* 在Apple iOS 12.1上运行的AEM Forms应用程序无法使用涂写签名。NPR-28497: CQ-4261765的修补程序
-* 在6.4中使用“表单工作流”经典创作问题提交操作。CQ-4252740的修补程序
+* 在Apple iOS 12.1上运行的AEM Forms应用程序无法使用涂抹签名。NPR-28497: CQ-4261765的修补程序
+* 使用6.4中的“表单工作流”经典创作问题提交操作。CQ-4252740的修补程序
 * 错误处理块和临时存储删除。 NPR-28806：适用于 CQ-4264441 的修补程序
 
 **Forms - 通信管理**
@@ -973,7 +973,7 @@ AEM 6.4.4.0 Forms 的重要功能亮点包括：
 **表单管理**
 
 添加了在Forms Manager的开始检查向导和移动资产向导中用下划线替换handlebars客户端库的支持。 NPR-27643：适用于 CQ-4246536 的修补程序.
-在release/640分支上安装Forms Management包后，一个包仍处于安装状态。 CQ-4265410的修补程序提交的表单中带有附件，但在提交操作“调用AEM表单工作流”并选中启用门户提交后，这些表单不会显示在工作流中。 适用于 CQ-4263110 的修补程序
+在release/640分支上安装Forms Management包后，一个包仍处于安装状态。 CQ-4265410的修补程序在提交操作为“调用AEM Forms工作流”并选中启用门户提交时，在工作流中不显示带有附件的已提交表单。 适用于 CQ-4263110 的修补程序
 
 **表单 - 后端集成**
 
@@ -988,7 +988,7 @@ AEM 6.4.4.0 Forms 的重要功能亮点包括：
 
 **Forms - Foundation JEE**
 
-* 在IBM WebSphere上安装AEM表单时，创建基于SOAP的表单数据模型将失败。 NPR-27923：适用于 CQ-4251134 的修补程序
+* 在IBM WebSphere上安装AEM Forms时，创建基于SOAP的表单数据模型将失败。 NPR-27923：适用于 CQ-4251134 的修补程序
 * PDF Generator的SRT工具无法检测到Adobe Acrobat的已安装版本。 NPR-27971
 
 **Forms - Designer**
@@ -1002,7 +1002,7 @@ AEM 6.4.4.0 Forms 的重要功能亮点包括：
 **表单 - 工作流**
 
 * 在JBoss 7上，在an.lca中具有默认提交流程的HTML5表单不工作。 NPR-28675：适用于 CQ-4243928 的修补程序
-* 无法在HTML工作区中提交PDF表单。 NPR-28058：适用于 CQ-4260373 的修补程序
+* 无法在HTML工作区中提交PDF forms。 NPR-28058：适用于 CQ-4260373 的修补程序
 * 使用调用FDM服务表单工作流在信息日志中打印客户数据。 适用于 CQ-4260385 的修补程序
 
 **包含的功能包**
@@ -1045,7 +1045,7 @@ AEM 6.4.3.0的一些主要亮点是：
 * 改进了FormData处理。
 * 改进了多字段内项命名的处理。
 * 改进了在选择期间对占位符项目(卡视图和列表视图)的处理。
-* 添加了对Managed Services的Adobe IMS身份验证和Admin Console支持。
+* 增加了对Managed Services的Adobe IMS身份验证和Admin Console支持。
 
 **资产**
 
@@ -1059,7 +1059,7 @@ AEM 6.4.3.0的一些主要亮点是：
 * 如果用户在DMS7云配置中为“公司根文件夹”设置非默认值，则查看器预设将无法按预期工作。 NPR-26360; CQ-4249505的修补程序
 * 资产报告对于具有大量资产的实例失败。 NPR-27278; CQ-4256748的修补程序
 * 子文件夹不继承父文件夹的SmartCrop图像用户档案。 NPR-27197; CQ-4256273的修补程序
-* 启用Dynamic Media集成后，资产的某些元数据属性会被修改。 不显示宽度、高度和位置属性。 NPR-27203; CQ-4256258的修补程序
+* 启用Dynamic Media集成后，会修改资产的某些元数据属性。 不显示宽度、高度和位置属性。 NPR-27203; CQ-4256258的修补程序
 * Dynamic Media不为某些类型的资产使用已配置的代理。 NPR-25211; CQ-4244871的修补程序
 * “元数据编辑器”页包含无效项参数的空指针异常。 NPR-26169; CQ-4241368的修补程序。
 * 如果下拉框应用了选择规则和必需规则，则元数据编辑器中无法满足必需规则。 NPR-27479; CQ-4251428的修补程序
@@ -1075,7 +1075,7 @@ AEM 6.4.3.0的一些主要亮点是：
 * 当将子规则从作者实例激活到发布实例时，发布实例将停止工作。 NPR-26601：适用于 CQ-4253588 的修补程序
 * 将富文本编辑器与多个字段组合使用时，出现未捕获的类型错误：fieldAPI.getName 在 foundation.js 中不是函数。NPR-27146：适用于 CQ-4253155 的修补程序
 * Salesforce集成无法使用代理配置。 NPR-27244：适用于 CQ-4245300 的修补程序
-* 在以后使用“管理发布”选项计划页面进行激活并切换到列表视图时，缺少日历图标。 NPR-26974：适用于 CQ-4239206 的修补程序
+* 在以后使用“管理发布”选项计划页面进行激活时，切换到列表视图，将缺少日历图标。 NPR-26974：适用于 CQ-4239206 的修补程序
 * 用户无法编辑页面属性中已关闭的用户组权限。 NPR-27138: CQ-4256089的修补程序无法通过标记编辑标记。 NPR-26957：适用于 CQ-4254858 的修补程序
 * 当从结构化内容片段模型引用的标记被移动时，内容片段中对标记的现有引用不会更新。 这在内容片段模型的编辑屏幕中发生。 NPR-26776：适用于 CQ-4251805 的修补程序
 * 在创建和提升包含多个页面的启动项时，会为每个页面创建多个版本。 NPR-26917：适用于 CQ-4254663 的修补程序
@@ -1090,7 +1090,7 @@ AEM 6.4.3.0的一些主要亮点是：
 
 * 将元数据模式表单发布到Brand Portal时，标记谓词不会发布。 适用于 CQ-4256218 的修补程序
 * 将第三级文件夹从AEM发布到Brand Portal时，如果不发布父级文件夹，则文件夹名称会更改。 适用于 CQ-4255423 的修补程序
-* 路径浏览器谓词已按预期从AEM资产发布到品牌门户。 但是，BP的已发布路径仍为/content/dam，必须更新该路径。 适用于 CQ-4256240 的修补程序
+* 路径浏览器谓词已按预期从AEM Assets发布到Brand Portal。 但是，BP的已发布路径仍为/content/dam，必须更新该路径。 适用于 CQ-4256240 的修补程序
 
 **DAM - Creative Cloud**
 
@@ -1151,14 +1151,14 @@ AEM 6.4.3.0的一些主要亮点是：
 * 标记搜索不适用于本地化的搜索词。 NPR-26171：适用于 CQ-4249926 的修补程序
 * “返回”按钮将跳过论坛搜索中的页面。 NPR-26950：适用于 CQ-4254804 的修补程序
 * 在默认Http端口(80)上运行的AEM实例无法到达imsmanifest.xml。 NPR-27173：适用于 CQ-4252211 的修补程序
-* 如果AEM Communities设置为DSRP，则取消将注释标记为问题与答案将不起作用。 NPR-26247：适用于 CQ-4252232 的修补程序
+* 如果用DSRP设置AEM Communities，则取消将注释标记为问题与答案将不起作用。 NPR-26247：适用于 CQ-4252232 的修补程序
 * 无法调用Adobe存储: 414错误——当用户搜索/content/community-components/en/search.html并选择作者字段作为该搜索词的过滤器之一时，观察到长GET URI。 NPR-26643：适用于 CQ-4251303 的修补程序
 * ASRP配置中的DataCentreURL的下拉值从Dallas更改为Virginia（对于VA6）。 NPR-26936：适用于 CQ-4254434 的修补程序
 * 论坛搜索中的特殊字符返回错误或没有结果。 NPR-26930：适用于 CQ-4247744 的修补程序
 * 论坛搜索中显示的“结果数”数字对英语和德语区域设置使用不正确的分隔符。 NPR-27050：适用于 CQ-4248939 的修补程序
 * 未读通知不会超过21个。 NPR-26946、NPR-27480：适用于 CQ-4252829、CQ-4256939 的修补程序
 * 任何组件的注释部分中的分页使用户在到达页面时向上滚动以查看页面内容。 NPR-27032：适用于 CQ-4251228 的修补程序
-* 在AEM作者实例上从管理控制台查看时，社区站点文件夹在缩略图上不可单击。 NPR-26986：适用于 CQ-4254036 的修补程序
+* 从AEM Author实例的管理控制台查看时，社区站点文件夹在缩略图上不可单击。 NPR-26986：适用于 CQ-4254036 的修补程序
 * “标记所有已读”选项仅将前10条通知标记为已读，而其他通知则在页面刷新前仍为未读。 NPR-27037：适用于 CQ-4254058 的修补程序
 * 除非重新加载主题（或回复），否则不会为构思触发分页，主题列表（或回复）的时间也会更长。 NPR-26193：适用于 CQ-4252104 的修补程序
 * 使用审查方凭据登录并在审查方的活动URL末尾添加“#social-活动”或“#tabs-2”时，其他用户的用户档案和删除的UGC可见。 适用于 CQ-4251355 的修补程序
@@ -1207,7 +1207,7 @@ AEM 6.4.3.0 Forms 的重要功能亮点包括：
 * 为数字签名、Reader扩展、CryptoProvider和TrustStore中的Reader扩展工作流启用FIPS规范。
 * 为使用设计器或输出服务生成的XFA表单添加了PDF/UA支持。
 * 支持自适应表单模板上的allowedPaths属性。
-* 添加了对AEM Forms 6.4的JBoss 7.1.4支持。
+* 增加了对AEM Forms6.4的JBoss 7.1.4支持。
 
 **Forms 附加组件包**
 
@@ -1242,11 +1242,11 @@ AEM 6.4.3.0 Forms 的重要功能亮点包括：
 **表单 - 工作流**
 
 * 如果在执行表单工作流时任务名称中包含大括号，则日志中会显示异常。 适用于 CQ-4256626 的修补程序
-* 无法在AEM Forms工作区中打开搜索模板。 适用于 CQ-4255651 的修补程序
+* 无法在“AEM Forms”工作区中打开“搜索”模板。 适用于 CQ-4255651 的修补程序
 
 **移动表单**
 
-* 在AEM Forms中以HTML形式呈现的AEM Explorer或Chrome中退出日期字段时，不显示退出通知。 NPR-26483：适用于 CQ-4239352 的修补程序
+* 在Internet Explorer或Chrome中以HTML形式呈现的AEM Forms中退出日期字段时，不显示退出通知。 NPR-26483：适用于 CQ-4239352 的修补程序
 * 处理开始时XML中包含的日期会导致用户尝试离开表单时表单引发验证错误。 NPR-26787：适用于 CQ-4251211 的修补程序
 
 **Forms JEE 安装程序**
@@ -1266,7 +1266,7 @@ AEM 6.4.3.0 Forms 的重要功能亮点包括：
 
 **Forms - Foundation JEE**
 
-* 增加了对AEM Forms 6.4的JBoss 7.1.4支持。NPR-27331; CQ-4255601的修补程序
+* 增加了对AEM Forms6.4的JBoss 7.1.4支持。 CQ-4255601的修补程序
 
 **包含的功能包**
 
@@ -1294,7 +1294,7 @@ AEM 6.4.2.0的一些主要亮点是：
 * 增加了对MongoDB Enterprise 3.6的支持。
 * 站点页面编辑器添加了对上下文编辑和合成的支持，这些组件在React或Angular中与AEM的SPA编辑器JS SDK <a href="../sites-developing/spa-walkthrough.md">一起构建，包含客户端组件</a>。
 * 内容片段增强： 添加了在文本字段中添加注释和并排比较版本的功能。
-* 添加 [了与Adobe Stock的集成](/help/assets/aem-assets-adobe-stock.md) ，以便用户可以直接从AEM用户界面搜索、预览、保存Adobe Stock资源并为其授予许可。 有关详细信息，请参 [阅将Adobe Stock资产与AEM资产结合使用](https://helpx.adobe.com/experience-manager/kt/assets/stock-assets-feature-video-use.md)。
+* 添加 [了与Adobe Stock的集成](/help/assets/aem-assets-adobe-stock.md) ，以便用户可以直接从AEM用户界面搜索、预览、保存Adobe Stock资源并为其授予许可。 有关详细信息，请参 [阅将Adobe Stock资源与AEM Assets一起使用](https://helpx.adobe.com/experience-manager/kt/assets/stock-assets-feature-video-use.md)。
 * Assets添加了对动态条件元模式的支持，并且能够为资产文件夹设置元数据模式。
 * 在每个组件中添加了配置以启用／禁用文件夹缩略图创建／更新功能。
 * 页面创作时的图像编辑器增强功能。
@@ -1322,13 +1322,13 @@ AEM 6.4.2.0的一些主要亮点是：
 * 当语言首选项设置为“英语”以外的选项时，子资产页面中的滑块无法正常工作。 NPR-25274：适用于 CQ-4248489 的修补程序
 * 在具有欧洲数字格式的计算机上打开元数据导出csv文件时出现问题。 NPR-26009：适用于 CQ-4250677 的修补程序
 * 在没有“删除”权限的资产文件夹选择中，“创建”按钮不可用。 NPR-25788：适用于 CQ-4250140 的修补程序
-* （支持）辅助功能增强： 重复ID: id属性值必须唯一，标签： 表单元素必须具有标签和链接名称： 链接必须有可辨别的文本。 NPR-24252：适用于 CQ-4250905、CQ-4250906、CQ-4250907 的修补程序
+* （支持）辅助功能增强： 重复ID: id属性值必须唯一，标签： 表单元素必须具有标签和链接名称： 链接必须具有可辨别的文本。 NPR-24252：适用于 CQ-4250905、CQ-4250906、CQ-4250907 的修补程序
 * 对于欧洲国家／地区，上传带有以“,”分隔的字段的csv失败。 NPR-25549：适用于 CQ-4249931 的修补程序
 * （品牌门户）发布资产时，多页pdf文件的子资产不会发布。 NPR-25991：适用于 CQ-4245162 的修补程序
 * 稍后将AEM功能发布到Brand Portal复制。 NPR-25911：适用于 CQ-109139 的修补程序
 * 由非管理员用户发布和取消发布私有集合会导致NPE。 NPR-25906：适用于 CQ-4250594 的修补程序
 * 禁用将内容片段和表单模式发布到Brand Portal。 NPR-24176、NPR-26004：适用于 CQ-4251592、CQ-4252026 的修补程序
-* (Dynamic Media)将DM查看器更新为5.10.1版本，可在“图像预设”页面上检查重复名称。 请参阅更新Dynamic Media查看器(5.10.1)。 NPR-24403：适用于 CQ-4247554 的修补程序
+* (Dynamic Media)将DM查看器更新为5.10.1版本，允许在“图像预设”页面上检查重复名称。 请参阅更新Dynamic Media查看器(5.10.1)。 NPR-24403：适用于 CQ-4247554 的修补程序
 * 在选择资产或文件夹时，列视图下浏览器控制台中出现Javascript错误。 NPR-25939：适用于 CQ-4250228 的修补程序
 * (列视图符)无法识别任务符，因为密钥文件显示为空白条目。 NPR-25903：适用于 CQ-4246307 的修补程序
 
@@ -1418,7 +1418,7 @@ AEM 6.4.2.0的一些主要亮点是：
 * 覆盖社区组成员列表组件时返回null。 NPR-25228：适用于 CQ-4248523 的修补程序
 * (Communities Calendar)在保存带有新封面图像的事件时生成ClassCastException。 NPR-25167：适用于 CQ-4248662 的修补程序
 * （社区）消息被截断。 NPR-25326
-* （AEM发布）Scorm资源在上下文路径下失败，显示空白屏幕。 NPR-26155：适用于 CQ-4251942 的修补程序
+* (AEM Publish)Scorm资源在上下文路径下失败并显示空白屏幕。 NPR-26155：适用于 CQ-4251942 的修补程序
 * (MSRP)新创建的日历将部分在错误日志中引发NPE。 NPR-26071：适用于 CQ-4250531 的修补程序
 * 论坛／主题分页仅在刷新页面时更新。 NPR-26070、NPR-25965：适用于 CQ-4249509 的修补程序
 * （问题与答案论坛）在打开指向评论的直接链接时无法导航到上一页。 NPR-26069：适用于 CQ-4251699 的修补程序
@@ -1494,7 +1494,7 @@ AEM 6.4.2.0的一些主要亮点是：
 * 执行资产更新工作流时，资产语言副本及其缩略图将变为空白。 适用于 CQ-4250641 的修补程序
 * 重复ID: id属性值必须唯一。 适用于 CQ-4250905 的修补程序
 * 标签： 表单元素必须具有标签。 适用于 CQ-4250906 的修补程序
-* 链接名称： 链接必须有可辨别的文本。 适用于 CQ-4250907 的修补程序
+* 链接名称： 链接必须具有可辨别的文本。 适用于 CQ-4250907 的修补程序
 * 端口文件夹元数据模板迁移JMX和ServiceUserMapping。 适用于 CQ-4252947 的修补程序
 * WebdriverIO测试未在CQ/dam的release/640分支中运行。 适用于 CQ-4252749 的修补程序
 * 如果链接已发布，则不会重构指向已移动资产的链接。 适用于 CQ-4245756 的修补程序
@@ -1526,7 +1526,7 @@ AEM 6.4.2.0的一些主要亮点是：
 * 资产选择器（或资产选取器）不会显示可用文件夹中的所有资产。 适用于 CQ-4218414 的修补程序
 * 没有高度的图像预设显示大小不正确的图像。 适用于 CQ-4246546 的修补程序
 * （多页资产）单击注释时，UI会断开。 适用于 CQ-4251434 的修补程序
-* 从6.3升级到6.4及更高版本的Analytics预设，将创建一个新的报表包和分析预设，丢失用户的旧报告数据。 适用于 CQ-4244529 的修补程序
+* 从6.3升级到6.4及更高版本的Analytics预设，将创建一个新的报表包和分析预设，丢失用户较早的报告数据。 适用于 CQ-4244529 的修补程序
 * （管理发布向导）在尝试发布或取消发布时，资产的列表显示为空。 适用于 CQ-4251881 的修补程序
 * 在查看设置成员后选择查看器时，AVS视频无法播放。 适用于 CQ-4205308 的修补程序
 * 预升级的视频处理预设不能添加新的视频编码预设，也不能编辑现有的编码预设。 适用于 CQ-4240407 的修补程序
@@ -1537,7 +1537,7 @@ AEM 6.4.2.0的一些主要亮点是：
 
 **DAM - DMServices**
 
-* 无法为EPS文件生成Dynamic Media演绎版。 适用于 CQ-4243688 的修补程序
+* Dynamic Media无法为EPS文件生成再现。 适用于 CQ-4243688 的修补程序
 
 **Granite**
 
@@ -1652,7 +1652,7 @@ AEM 6.4.2.0 Forms 的重要功能亮点包括：
 **Forms - Foundation JEE**
 
 * 间歇性地作为系统上下文帐户运行的进程。 NPR-25289、NPR-25313：适用于 CQ-4249331 的修补程序
-* AEM Forms JEE受Apache Struts和Jackson数据绑定安全警报影响。 NPR-25628：适用于 CQ-4242891 的修补程序
+* AEM FormsJEE受Apache Struts和Jackson数据绑定安全警报的影响。 NPR-25628：适用于 CQ-4242891 的修补程序
 * 电子邮件开始点流程不起作用。 NPR-25253：适用于 CQ-4248518 的修补程序
 
 **包含的功能包**
@@ -1769,11 +1769,11 @@ AEM 6.4.1.0可安装在AEM 6.4 GA上。 Service Pack的一些主要亮点是：
 
 * （经典UI）（触屏UI）当尝试通过资产搜索模式中的标记谓词浏览标记时，标记选取器不显示并引发异常。 NPR-23049：适用于 CQ-4239371 的修补程序
 * （经典UI）使用xtype=tags的组件返回null，无法从标记的任何列表中选择。 NPR-23050：适用于 CQ-4239937 的修补程序
-* （品牌）“选择加入”对话框提到Adobe Marketing Cloud，而不是Adobe Experience Cloud。 NPR-23210：适用于 CQ-4237799 的修补程序
+* （品牌）选择加入对话框提到Adobe Marketing Cloud，而不是Adobe Experience Cloud。 NPR-23210：适用于 CQ-4237799 的修补程序
 * 筛选器选项使AEM在从6.3升级到6.4后变慢。NPR-23260: CQ-4239847的修补程序（待检查）
 * 针对granite.omnisearch.core修复的主动支持。 NPR-23536
 * 针对platform.clientlibs修复的主动式支持。 NPR-23569
-* 在编辑其他页面属性时，云服务配置继承中断。 NPR-23216：适用于 CQ-4239782 的修补程序
+* Cloud Service配置继承在编辑其他页面属性时断开。 NPR-23216：适用于 CQ-4239782 的修补程序
 * 在Day CQ邮件服务中启用STARTLS支持。 NPR-23941：适用于 CQ-4240397 的修补程序
 
 **项目**
@@ -1858,7 +1858,7 @@ AEM 6.4.1.0可安装在AEM 6.4 GA上。 Service Pack的一些主要亮点是：
 **DAM - DM 客户端**
 
 * 升级到6.4将删除之前创建的视频编码用户档案。 适用于 CQ-4244067 的修补程序
-* Dynamic Media组件中的替代文本属性已断开。 适用于 CQ-4244081 的修补程序
+* 替换文本属性在Dynamic Media组件中断开。 适用于 CQ-4244081 的修补程序
 * (DMS7)在Scene7中不会覆盖在AEM中编辑远程集。 适用于 CQ-4243430 的修补程序
 * 6.4 SP1在DM混合型上的验证。 适用于 CQ-4244623 的修补程序
 * (DMS7-UA)当单击已发布视频资产的“嵌入”按钮时，不会发生任何情况。 嵌入对话框应显示HTML代码。 适用于 CQ-4245237 的修补程序
@@ -1911,7 +1911,7 @@ AEM Forms 修补程序通过随发行版一起提供的附加组件包和其他�
 
 AEM Forms 的主要功能亮点包括：
 
-* AEM Forms引入了 [事务报表功能](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html) ，可跟踪和记录已提交表单、已处理文档和在AEM Forms部署中呈现的文档等事务。 它提供有关产品使用情况的洞察，并帮助商业用户了解数字处理量。
+* AEM Forms引 [入了事务报表功能](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html) ，可跟踪和记录提交的表单、已处理的文档和在AEM Forms部署中呈现的文档等事务。 它提供有关产品使用情况的洞察，并帮助商业用户了解数字处理量。
 * 支持对XML表单的PDF/UA支持。
 * 为Clientlib aemfd.ccm. **渠道.contentpage添加了allowProxy = true**
 * 更新代码，使高级标题搜索按包含而非相等进行。
@@ -2070,7 +2070,7 @@ AEM Forms 的主要功能亮点包括：
 **资产**
 
 * 添加了增强智能标记功能。 有关详细信息，请参 [阅增强的智能标记](https://helpx.adobe.com/experience-manager/6-4/assets/using/enhanced-smart-tags.html)。 NPR-21951：适用于 CQ-4234883 的修补程序
-* 在InDesign中引入了AEM资产引用。 有关详细信息，请 [参阅InDesign中的AEM资产引用](/help/assets/managing-linked-subassets.md)。 NPR-23386
+* InDesign中引入的AEM Assets参考。 有关详细信息，请参 [阅InDesign中的AEM Assets参考](/help/assets/managing-linked-subassets.md)。 NPR-23386
 
 **站点**
 
@@ -2145,18 +2145,18 @@ B. Use the [HTTP API from Package Manager](https://helpx.adobe.com/cn/experience
 
 ### 验证安装 {#validate-install}
 
-1. “产品信息”页(*/system/console/productinfo *)现在应在“已安装产品”下显示更新的版本字符串“Adobe Experience Manager, Version 6.4.8.0”。
+1. “产品信息”页面(*/system/console/productinfo *)现在应在“已安装产品”下显示更新的版本字符串“Adobe Experience Manager，版本6.4.8.0”。
 1. 所有 OSGi 包在 OSGi 控制台中均为“活动”或“片段”（使用 Web 控制台：/system/console/bundles）。
 1. OSGI捆绑包org.apache.jackrabbit.oak-core在版本1.8.17或更高版本上(使用Web控制台： /system/console/bundles)。
 
-要确定与此版本的AEM Sites和Assets一起运行的认证平台，请参阅技 [术要求](../sites-deploying/technical-requirements.md)。
+要确定与此版本的AEM Sites和资产一起运行的认证平台，请参 [阅技术要求](../sites-deploying/technical-requirements.md)。
 
 >[!Note]
 >On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### 更新Dynamic Media查看器(5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.0包含新版Dynamic Media查看器(5.10.1)，该查看器支持在“图像预设”页面上检查重复名称。 建议Dynamic Media客户运行以下命令，将包装盒查看器预设调出为最新状态。
+<p id="Dynamic">AEM 6.4.8.0包含新版本的Dynamic Media查看器(5.10.1)，该查看器支持在“图像预设”页面上检查重复名称。 建议Dynamic Media客户运行以下命令，将框查看器预设调出为最新状态。
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 

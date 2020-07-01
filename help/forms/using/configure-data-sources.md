@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ AEM Forms数据集成允许您配置和连接到不同的数据源。 现成支�
 * 基于SOAP的Web服务
 * OData服务
 
-数据集成支持OAuth2.0、基本身份验证和API密钥现成身份验证类型，并允许为访问Web服务实现自定义身份验证。 在AEM Cloud Services中配置RESTful、基于SOAP和OData服务时，在AEM Web控制台中配置关系用户档案库的JDBC和AEM用户的连接器。
+数据集成支持OAuth2.0、基本身份验证和API密钥现成身份验证类型，并允许为访问Web服务实现自定义身份验证。 在AEM cloud services中配置RESTful、基于SOAP和OData服务时，在AEM Web控制台中配置关系用户档案库的JDBC和AEM用户的连接器。
 
 ## 配置关系数据库 {#configure-relational-database}
 
@@ -108,11 +108,11 @@ AEM中的所有云服务配置都整合在AEM存储 `/conf` 库的文件夹中�
 
 ## 配置REST风格的Web服务 {#configure-restful-web-services}
 
-REST风格的Web服务可在Swagger定 [义文件中使用](https://swagger.io/specification/) JSON格式的Swagger规范或YAML格式进行描述。 要在AEM云服务中配置RESTful Web服务，请确保文件系统上有Swagger文件或文件托管的URL。
+REST风格的Web服务可在Swagger定 [义文件中使用](https://swagger.io/specification/) JSON格式的Swagger规范或YAML格式进行描述。 要在AEM cloud services中配置REST风格的Web服务，请确保文件系统上有Swagger文件或文件托管的URL。
 
 执行以下操作以配置RESTful服务：
 
-1. 转至“ **[!UICONTROL 工具”>“云服务”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
+1. 转至“工 **[!UICONTROL 具”>“Cloud Service”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
 
    有关 [创建和配置云服务配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder) ，请参阅配置云服务配置的文件夹。
 
@@ -126,9 +126,9 @@ REST风格的Web服务可在Swagger定 [义文件中使用](https://swagger.io/s
 
 ## 配置SOAP Web服务 {#configure-soap-web-services}
 
-使用Web服务描述语言(WSDL) [规范描述基于SOAP的Web服务](https://www.w3.org/TR/wsdl)。 要在AEM云服务中配置基于SOAP的Web服务，请确保您具有Web服务的WSDL URL，并执行以下操作：
+使用Web服务描述语言(WSDL) [规范描述基于SOAP的Web服务](https://www.w3.org/TR/wsdl)。 要在AEM cloud services中配置基于SOAP的Web服务，请确保您具有Web服务的WSDL URL，并执行以下操作：
 
-1. 转至“ **[!UICONTROL 工具”>“云服务”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
+1. 转至“工 **[!UICONTROL 具”>“Cloud Service”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
 
    有关 [创建和配置云服务配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder) ，请参阅配置云服务配置的文件夹。
 
@@ -136,19 +136,23 @@ REST风格的Web服务可在Swagger定 [义文件中使用](https://swagger.io/s
 1. 为SOAP Web服务指定以下内容：
 
    * Web服务的WSDL URL。
-   * 选择身份验证类型（无、OAuth2.0、基本身份验证或自定义身份验证）以访问SOAP服务，并相应地提供身份验证的详细信息。
+   * 服务端点. 在此字段中指定一个值以覆盖WSDL中提及的服务端点。
+   * 选择身份验证类型（无、OAuth2.0、基本身份验证、自定义身份验证或X509令牌）以访问SOAP服务，并相应地提供身份验证的详细信息。
+
+      如果选择X509令牌作为身份验证类型，请配置X509证书。 有关详细信息，请参 [阅设置证书](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)。
+在“密钥别名”字段中指定X509证书的 **[!UICONTROL KeyStore别名]** 。 在“Time To Live（到实时时间）”字段中指定身份验证请求保持有效 **[!UICONTROL 之前的时间(秒]** )。 （可选）选择对邮件正文或时间戳标题进行签名，或者同时对两者进行签名。
 
 1. 点 **[!UICONTROL 按创建]** ，为SOAP Web服务创建云配置。
 
 ## 配置OData服务 {#config-odata}
 
-OData服务由其服务根URL标识。 要在AEM云服务中配置OData服务，请确保您具有该服务的服务根URL，并执行以下操作：
+OData服务由其服务根URL标识。 要在AEM cloud services中配置OData服务，请确保您具有该服务的服务根URL，并执行以下操作：
 
 >[!NOTE]
 >
 >有关配置Microsoft Dynamics 365的分步指南（联机或内部），请参 [阅Microsoft Dynamics OData配置](/help/forms/using/ms-dynamics-odata-configuration.md)。
 
-1. 转至“ **[!UICONTROL 工具”>“云服务”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
+1. 转至“工 **[!UICONTROL 具”>“Cloud Service”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
 
    有关 [创建和配置云服务配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder) ，请参阅配置云服务配置的文件夹。
 

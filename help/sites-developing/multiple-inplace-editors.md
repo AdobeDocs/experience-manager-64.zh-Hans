@@ -3,9 +3,9 @@ title: 为多个就地编辑器配置RTE。
 description: 通过配置富文本编辑器，在Adobe Experience Manager中创建多个就地编辑器。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a7d9ea37d26c2eb51d136de630e737616e7cf5b
+source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '445'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # 配置多个就地编辑器 {#configure-multiple-in-place-editors}
 
-您可以在Adobe Experience Manager中配置富文本编辑器，使其具有多个就地编辑器。 配置后，您可以选择适当的内容并打开相应的编辑器。 例如：
+您可以在Adobe Experience Manager中配置富文本编辑器，使其具有多个就地编辑器。 配置后，您可以选择适当的内容并打开相应的编辑器。
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![特定就地编辑器](assets/rte-inplace-editor.png)
 
 ## 配置多个编辑器 {#configure-multiple-editors}
 
@@ -42,7 +42,7 @@ ht-degree: 2%
 
     /**
       * Configures one child editor for a sub-component. The name of the this node is
-      * be used as DD ID.
+      * used as DD ID.
       *
       * @prop type type of the inline editor. For example, ["image"].
       * @prop title Title of the inline editor.

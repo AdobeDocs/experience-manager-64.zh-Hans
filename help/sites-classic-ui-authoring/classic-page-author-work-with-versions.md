@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1379'
+ht-degree: 90%
 
 ---
 
@@ -62,7 +65,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. 选择**恢复版本……**列出当前文件夹中的文档版本。即使页面已被删除，也会列出最后一个版本：
+1. 选择**恢复版本……**列表当前文件夹中的文档版本。 即使页面已被删除，也会列出最后一个版本：
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -95,6 +98,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 删除的文本为红色并带有删划线。
    * 添加的文本为绿色并突出显示。
    * 添加或删除的图像会带有绿色边框。
+
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. 在 Sidekick 中，选择&#x200B;**恢复版本**&#x200B;子选项卡，然后单击 **&lt;&lt; 返回**&#x200B;按钮以显示当前版本。
@@ -140,12 +144,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    >[!NOTE]
    >
-   >您无法删除页面的旧版本。它仅供于查看。如果要恢复旧版本，则必须使用[恢复](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick)功能手动恢复。
+   >您无法删除页面的旧版本。旧版本仅供查看。如果要恢复旧版本，则必须使用[恢复](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick)功能手动恢复。
 
 1. 当您查看完此页面时，请单击：
 
    * “**退出时间扭曲**”可以退出并返回到当前的创作页面。
    * [显示时间轴](#using-the-timewarp-timeline)可查看时间轴。
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
 ### 使用时间扭曲时间线 {#using-the-timewarp-timeline}
@@ -179,14 +184,14 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ### 时间扭曲限制
 
-时间扭曲会尽力在选定的时间点重制页面。 但是，由于AEM中内容的连续创作非常复杂，这并不总是可能。 使用时间扭曲时，应牢记这些限制。
+时间扭曲会尽量在选定的时刻重现页面。但是，由于在 AEM 中连续创作内容的过程非常复杂，并非总能实现这一点。在使用时间扭曲时，应牢记以下限制。
 
-* **时间扭曲基于已发布的页面工作** -时间扭曲仅在您之前已发布页面时才会完全正常工作。 如果没有，时间扭曲将在创作环境显示当前页面。
-* **时间扭曲使用页面版本** -如果您导航到已从存储库删除的页面，则如果该页面的旧版本仍在存储库中可用，则该页面将正确呈现。
-* **删除的版本影响时间扭曲** -如果从存储库中删除版本，则时间扭曲无法显示正确的视图。
-* **时间扭曲是只读的** -您无法编辑页面的旧版本。 旧版本仅供查看。如果要恢复旧版本，则必须使用恢复功能手动恢复。
-* **时间扭曲仅基于页面内容** -如果用于呈现网站的元素（如代码、css、资源／图像等）已发生更改，则视图将与其原来的样子不同，因为这些项目不在存储库中进行版本控制。
+* **时间扭曲基于已发布的页面工作** - 仅当您之前已发布页面时，时间扭曲才会完全正常工作。如果没有，时间扭曲将在创作环境显示当前页面。
+* **时间扭曲使用页面版本** - 当您浏览到的页面已从存储库删除时，如果该页面的旧版本仍然位于存储库中，则该页面将会正常呈现。
+* **已删除的版本会影响时间扭曲** - 如果从存储库从删除了版本，那么时间扭曲无法显示正确的视图。
+* **时间扭曲为只读** - 您无法编辑页面的旧版本。旧版本仅供查看。如果要恢复旧版本，则必须使用恢复功能手动恢复。
+* **时间扭曲仅基于页面内容** - 如果呈现网站的元素（如代码、css、资产/图像等）发生更改，则视图将与它原来的样子不同，因为这些项目不在存储库中进行版本控制。
 
 >[!CAUTION]
 >
-> 时间扭曲设计为一种工具，可帮助作者理解和创建其内容。 它不用作审计日志或用于法律目的。
+>时间扭曲是一种工具，可帮助作者理解和创建其内容。 而不是用作审查日志或用于法律目的。

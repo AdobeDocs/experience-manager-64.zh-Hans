@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: eebb765465c90c0ede5957c8bf79a028e1b4f6ce
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -184,6 +184,7 @@ TagID由命名空间 [和](#tag-namespace) 本地TagID组成。 [容器标](#con
    >
    >
 * 资产( `cq:Asset`)节点始 `jcr:content/metadata` 终具有混合的 `cq:Taggable` 位置。
+
 >
 
 
@@ -259,14 +260,17 @@ AEM中包含的节点类型的基本定义如下：
 
 ## 标记迁移 {#tags-migration}
 
-从Experience Manager 6.4开始，标记存储在 `/content/cq:tags`下面，之前存储在下面 `/etc/tags`。 但是，在Adobe Experience Manager从先前版本升级的情况下，旧位置下仍会显示标记 `/etc/tags`。 在升级的系统中，需要在下迁移标记 `/content/cq:tags`。
+Experience Manager6.4之后的标签存储在 `/content/cq:tags`下面，之前存储在下面 `/etc/tags`。 但是，在Adobe Experience Manager已从先前版本升级的情况下，标签仍在旧位置下 `/etc/tags`。 在升级的系统中，需要在下迁移标记 `/content/cq:tags`。
 
-> [!NOTE]
-> 在标记页面的“页面属性”中，建议使用标记ID(例 `geometrixx-outdoors:activity/biking`如)，而不是对标记基本路径进行硬编码(例如 `/etc/tags/geometrixx-outdoors/activity/biking`)。
-> 要列表标 `com.day.cq.tagging.servlets.TagListServlet` 记，可使用。
+>[!NOTE]
+>
+>在标记页面的“页面属性”中，建议使用标记ID(例 `geometrixx-outdoors:activity/biking`如)，而不是对标记基本路径进行硬编码(例如 `/etc/tags/geometrixx-outdoors/activity/biking`)。
+>
+>要列表标 `com.day.cq.tagging.servlets.TagListServlet` 记，可使用。
 
-> [!NOTE]
-> 建议将标签管理器API用作资源。
+>[!NOTE]
+>
+>建议将标签管理器API用作资源。
 
 **如果升级的AEM实例支持TagManager API**
 
@@ -332,9 +336,9 @@ println "---------------------------------Success-------------------------------
 
 **如果升级的AEM实例在经典UI上运行**
 
-> [!NOTE]
-> 经典UI不符合零停机时间要求，并且不支持新的标签基础路径。 如果要使用经典UI，则需 `/etc/tags` 要创建经典UI，然后重新启 `cq-tagging` 动组件。
-
+>[!NOTE]
+>
+>经典UI不符合零停机时间要求，并且不支持新的标签基础路径。 如果要使用经典UI，则需 `/etc/tags` 要创建经典UI，然后重新启 `cq-tagging` 动组件。
 
 如果TagManager API支持并在经典UI中运行的已升级AEM实例：
 

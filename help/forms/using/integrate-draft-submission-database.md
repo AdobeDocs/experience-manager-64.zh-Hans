@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ## 示例概述 {#sample-overview}
 
-AEM Forms Portal草稿和提交组件允许用户将表单另存为草稿并稍后从任何设备提交。 此外，用户还可以在门户上视图其提交的表单。 要启用此功能，AEM Forms提供数据和元数据服务，以存储用户在表单中填写的数据以及与草稿和提交表单关联的表单元数据。 默认情况下，此数据存储在CRX存储库中。 但是，当用户通过AEM发布实例与表单交互时（通常在企业防火墙之外），组织可能希望自定义数据存储，以使其更加安全可靠。
+AEM Forms门户草稿和提交组件允许用户将表单另存为草稿并稍后从任何设备提交。 此外，用户还可以在门户上视图其提交的表单。 要启用此功能，AEM Forms提供数据和元数据服务，以存储用户在表单中填写的数据以及与草稿和已提交表单关联的表单元数据。 默认情况下，此数据存储在CRX存储库中。 但是，当用户通过AEM发布实例与表单交互时（通常在企业防火墙之外），组织可能希望自定义数据存储，以使其更加安全可靠。
 
 本文档讨论的示例是自定义数据和元数据服务的参考实现，以将草稿和提交组件与数据库集成。 示例实现中使用的数 **据库为MySQL 5.6.24**。 但是，您可以将草稿和提交组件与您选择的任何数据库相集成。
 
 >[!NOTE]
 >
 >* 本文档中说明的示例和配置符合MySQL 5.6.24的要求，您必须将其相应替换为数据库系统。
->* 确保您已安装最新版AEM Forms加载项包。 有关可用包的列表，请参阅 [AEM Forms发布文章](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 。
-> * 示例包只能用于自适应表单提交操作。
+>* 确保已安装最新版AEM Forms加载项包。 有关可用包的列表，请参阅 [AEM Forms发布文章](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 。
+>* 示例包只能用于自适应表单提交操作。
 
 
 ## 设置和配置示例 {#set-up-and-configure-the-sample}

@@ -5,7 +5,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '3158'
 ht-degree: 9%
@@ -221,7 +221,7 @@ Live Copy是创建时原始源的副本。 Live Copy的元数据值是从源继�
 
 ## 删除实时关系 {#remove-live-relationship}
 
-您可以使用分离操作完全删除源与Live Copy之间的关系。 Live Copy分离后将成为独立的资产或文件夹。 它在分离后立即在AEM界面中显示为新资产。 要从Live Copy的源中分离Live Copy，请按照以下步骤操作。
+您可以使用分离操作完全删除源与Live Copy之间的关系。 Live Copy分离后将成为独立的资产或文件夹。 它在分离后立即在AEM界面中显示为新资产。 要从Live Copy的源中分离Live Copy，请执行以下步骤。
 
 1. 选择Live Copy资产或文件夹。 Click **[!UICONTROL Properties]** from the toolbar. 或者，也可以使用键盘快捷键p。
 1. Click **[!UICONTROL Live Copy]**. 单击工 **[!UICONTROL 具栏中]** 的“分离”。 在显示的 **[!UICONTROL 对话框]** 中单击“分离”。
@@ -253,9 +253,9 @@ AEM允许您使用MSM Java API扩展功能。 对于“资产”，扩展的工�
 
 >[!NOTE]
 >
-> * MSM for Site中的Blueprint在MSM for Assets中称为Live Copy源。
-> * MSM for Assets不支持删除创建站点向导中的章节步骤。
-> * 对于资产，MSM不支持在页面属性（触屏优化UI）上配置MSM锁。
+>* MSM for Site中的Blueprint在MSM for Assets中称为Live Copy源。
+>* MSM for Assets不支持删除创建站点向导中的章节步骤。
+>* 对于资产，MSM不支持在页面属性（触屏优化UI）上配置MSM锁。
 
 
 ## 资产管理任务对Live Copy的影响 {#impact-of-asset-management-tasks-on-live-copies}
@@ -273,7 +273,7 @@ Live Copy和源是可以作为数字资产在一定程度上进行管理的资�
 
 在更多情况下，“资产”为MSM与“站点”功能的MSM行为相匹配。 需要注意的主要区别是：
 
-* 在站点中，您可以比较蓝图及其Live Copy，但是资产中无法将源与其Live Copy进行比较。
+* 在站点中，您可以比较蓝图及其Live Copy，但是在资产中无法将源与其Live Copy进行比较。
 * 网站通常有子项，但资产则没有。 创建单个资产的Live Copy时，不提供包含或排除子项的选项。
 * MSM for Assets不支持删除创建站点向导中的章节步骤。
 * 对于资产，MSM不支持在页面属性（触屏优化UI）上配置MSM锁。

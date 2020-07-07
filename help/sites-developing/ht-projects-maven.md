@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 377922cc2ccf40a02467b17910a8750420202b61
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Apache Maven是一个开放源码工具，用于通过自动化构建和提供�
 * 轻松导入IDE; 例如，Eclipse和／或IntelliJ
 * 与连续集成系统轻松集成
 
-## Experience Manager API依赖项 {#experience-manager-api-dependencies}
+## Experience ManagerAPI依赖关系 {#experience-manager-api-dependencies}
 
 ### 什么是UberJar? {#what-is-the-uberjar}
 
@@ -100,7 +100,7 @@ GITHUB上的代码
 
 ### UberJar怎么办？ {#what-can-t-i-do-with-the-uberjar}
 
-由于UberJar仅 **包含** API，因此它不可执行，无法用 **于运** 行Adobe Experience Manager。 要运行AEM，您需要AEM快速入门(独立或Web 应用程序存档(WAR)表单)。
+由于UberJar仅 **包含** API，因此它不可执行，无法用于运 **行Adobe Experience Manager** 。 要运行AEM，您需要AEM快速入门(独立或Web 应用程序存档(WAR)表单)。
 
 ### 您提到了设备测试的限制。 请进一步说明。 {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -388,7 +388,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 
 要实现此目的，您可以提供一个文件 `src/main/content/META-INF/vault/filter-vlt.xml`。 如果此文件存在，则它将由VLT工具使用，例如，执行和 `vlt up` 时 `vlt ci`或设置时 `vlt sync` 使用。 content-package-maven-plugin在创建包时将继续 `src/main/content/META-INF/vault/filter.xml` 使用文件。
 
-例如，要使本地 `/libs/foundation` 可用进行开发，但只包含 `/apps/myproject` 在包中，请使用以下两个文件。
+例如，要使本地 `/libs/foundation` 可用进行开发，但只包 `/apps/myproject` 含在包中，请使用以下两个文件。
 
 #### src/main/content/META-INF/vault/filter.xml {#src-main-content-meta-inf-vault-filter-xml-1}
 
@@ -552,6 +552,7 @@ Maven JspC插件的结果也可以作为OSGi Bundle的一部分进行捆绑和�
 >根据您是否确实在中使 `/libs` 用JSP代码（即从中包括JSP），您需要优化要复制哪些JSP进行编译。
 >
 >例如，如果您包括 `/libs/foundation/global.jsp`，则可以对以下配置而 `maven-resources-plugin` 不是完全跳过上面的配置进行配置 `/libs`。
+>
 >
 ```
 > <resource>  

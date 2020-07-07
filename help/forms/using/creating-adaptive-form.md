@@ -1,17 +1,17 @@
 ---
 title: 创建自适应表单
 seo-title: 创建自适应表单
-description: 如何使用AEM表单创建自适应表单。 自适应表单是响应式HTML5表单，可简化信息收集和处理。
-seo-description: 如何使用AEM表单创建自适应表单。 自适应表单是响应式HTML5表单，可简化信息收集和处理。
+description: 如何使用AEM Forms创建自适应表单。 自适应表单是响应式HTML5表单，可简化信息收集和处理。
+seo-description: 如何使用AEM Forms创建自适应表单。 自适应表单是响应式HTML5表单，可简化信息收集和处理。
 uuid: 444f461a-9e88-4385-b5ee-e985067ab7bc
 content-type: reference
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 按照以下步骤创建自适应表单。
 
-1. 在访问AEM Forms作者实例 `https://[server]:[port]/<custom-context-if-any>.`
+1. 访问AEM Forms作者实例： `https://[server]:[port]/<custom-context-if-any>.`
 
    ```
    
@@ -67,13 +67,13 @@ ht-degree: 0%
 
    有关自适应表单创作界面和可用组件的信息，请参 [阅自适应表单创作简介](/help/forms/using/introduction-forms-authoring.md)。
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >允许浏览器中的弹出窗口在新选项卡中打开新创建的表单。
 
 ## 根据表单数据模型创建自适应表单 {#fdm}
 
-[AEM Forms数据集成](/help/forms/using/data-integration.md) ，允许您集成多个数据源并将其实体和服务整合在一起，以创建表单数据模型。 它是JSON模式的扩展。 您可以使用表单数据模型创建自适应表单。 在表单数据模型中配置的实体或数据模型对象可用作表单创作的数据模型对象。 它们绑定到各个数据源，用于预填表单并将提交的数据写回各个数据源。 您还可以使用自适应表单规则调用在表单数据模型中配置的服务。
+[AEM Forms数据集](/help/forms/using/data-integration.md) 成允许您集成多个数据源，并将其实体和服务整合在一起，以创建表单数据模型。 它是JSON模式的扩展。 您可以使用表单数据模型创建自适应表单。 在表单数据模型中配置的实体或数据模型对象可用作表单创作的数据模型对象。 它们绑定到各个数据源，用于预填表单并将提交的数据写回各个数据源。 您还可以使用自适应表单规则调用在表单数据模型中配置的服务。
 
 要使用表单数据模型创建自适应表单，请执行以下操作：
 
@@ -97,12 +97,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[在开始创建基于表单模板的自适应表单](/help/forms/using/get-xdp-pdf-documents-aem.md) 之前，请先将XFA表单模板上传到AEM表单。
+>[在开始创建基于表单模板的自适应表单](/help/forms/using/get-xdp-pdf-documents-aem.md) 之前，请先将XFA表单模板上传到AEM Forms。
 
 执行以下操作以将XFA表单模板用作自适应表单的表单模型：
 
 1. 在“添 **[!UICONTROL 加属性]** ”页面上，打开 **[!UICONTROL “表单模型]** ”选项卡。
-1. 在表单模型选项卡的下拉列表中，选择表单 **[!UICONTROL 模板]**。 将列出通过AEM Forms UI上传到存储库的所有表单模板供您选择。 从列表中选择模板。
+1. 在表单模型选项卡的下拉列表中，选择表单 **[!UICONTROL 模板]**。 将列出通过AEM FormsUI上传到存储库的所有表单模板供选择。 从列表中选择模板。
 
    ![将XFA表单模板与自适应表单关联](assets/form_model_xfa_associate.png)
    **图：** *选择表单模板*
@@ -130,7 +130,7 @@ XML和JSON模式表示组织中的后端系统生成或使用数据的结构。 
    * **[!UICONTROL 从磁盘上传]** -选择此选项，然后点按上传模式定义，以从文件系统浏览和上传XML模式或JSON模式。 上传的模式文件驻留在表单中，其他自适应表单无法访问。
    * **[!UICONTROL 在存储库中搜索]** -选择此选项可从存储库中可用的模式定义文件列表中进行选择。 选择XML或JSON模式文件作为表单模型。 所选模式将按引用与表单关联，并可供其他自适应表单使用。
 
-   >[!CAUTION] {grayBox=&quot;true&quot;}
+   >[!CAUTION]
    >
    >确保JSON模式文件名以。 **模式.json结尾**。 例如： mySchema.模式.json
 
@@ -148,7 +148,7 @@ XML和JSON模式表示组织中的后端系统生成或使用数据的结构。 
 
 ## 自适应表单模板 {#adaptive-form-templates}
 
-模板提供基本结构并定义自适应表单的外观（布局和样式）。 它具有预格式化的组件，这些组件包含某些属性和内容结构。 AEM Forms现成提供一些自适应表单模板。 要获取包含高级模板的完整模板包，您需要安装AEM Forms加载项包。 有关详细信息，请 [参阅安装AEM Forms加载项包](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
+模板提供基本结构并定义自适应表单的外观（布局和样式）。 它具有预格式化的组件，这些组件包含某些属性和内容结构。 开箱即用，AEM Forms提供一些自适应表单模板。 要获得包含高级模板的完整模板包，您需要安装AEM Forms加载项包。 有关详细信息，请 [参阅安装AEM Forms加载项包](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
 
 此外，您可以使用模板编辑器创建您自己的模板。 有关使用模板的更多信息，请参阅自 [适应表单模板](/help/forms/using/template-editor.md)。
 

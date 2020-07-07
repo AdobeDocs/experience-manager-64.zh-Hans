@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >在继续之前，请确保在AEM中上 **传了可** 播放的视频。
-> 
+>
 >要确保您的视频在页面上播放，请参 **[阅本教程](/help/sites-authoring/default-components-foundation.md#video)**，了解如何在AEM中转码视频文件。
 
 请按照以下过程使用每种方法设置视频跟踪框架。

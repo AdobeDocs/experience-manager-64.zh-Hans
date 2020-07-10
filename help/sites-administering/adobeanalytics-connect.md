@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1556'
 ht-degree: 8%
 
 ---
@@ -44,11 +44,11 @@ AdobeAnalytics帐户需要：
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-在继续操作之前，请确保凭据允许您登录AdobeAnalytics。 通过以下任一方式：
+在继续操作之前，请确保凭据允许您使用以下任一方法登录AdobeAnalytics:
 
-* [https://marketing.adobe.com](https://marketing.adobe.com)
+* [Adobe Experience Cloud登录](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+* [AdobeAnalytics登录](https://sc.omniture.com/login/)
 
 ### 将AEM配置为使用AdobeAnalytics数据中心 {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
@@ -213,7 +213,7 @@ AdobeAnalytics [数据中心](https://developer.omniture.com/en_US/content_page/
 
 与创建AdobeAnalytics配置或框架时一样，导航到（传统） **Cloud Service屏** 。 选 **择显示**&#x200B;配置，然后单击指向要更新的特定配置的链接。
 
-在编辑AdobeAnalytics配置时，您还需要在配置页 **面本身** 上按“编辑”按钮，才能打开“编 **辑组件** ”对话框。
+编辑AdobeAnalytics配置时，您还需要在配置页 **面本身** 上按“编辑”按钮，才能打开“编 **辑组件** ”对话框。
 
 ## 删除AdobeAnalytics框架 {#deleting-adobe-analytics-frameworks}
 

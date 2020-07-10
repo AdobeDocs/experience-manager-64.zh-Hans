@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
 source-wordcount: '4247'
 ht-degree: 21%
@@ -102,7 +102,7 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 下表列出了Dynamic Media附带的所有预定义现成查看器预设。
 
-另请参阅 <!-- [SAVE THIS REFERENCE Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)。
+另请参 [阅实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)。
 
 有关查看器支持的Web浏览器和操作系统版本的信息，您可以查看查看器发行说明。
 

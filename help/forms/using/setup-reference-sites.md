@@ -1,29 +1,29 @@
 ---
-title: 设置和配置AEM Forms引用站点
-seo-title: 设置和配置AEM Forms引用站点
-description: AEM Forms参考站点展示了如何使用AEM Forms在组织中实施端对端工作流。
-seo-description: AEM Forms参考站点展示了如何使用AEM Forms在组织中实施端对端工作流。
+title: 设置和配置AEM Forms参考站点
+seo-title: 设置和配置AEM Forms参考站点
+description: AEM Forms参考站点展示了如何使用AEM Forms在组织中实现端对端工作流。
+seo-description: AEM Forms参考站点展示了如何使用AEM Forms在组织中实现端对端工作流。
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2922'
 ht-degree: 0%
 
 ---
 
 
-# 设置和配置AEM Forms引用站点 {#set-up-and-configure-aem-forms-reference-sites}
+# 设置和配置AEM Forms参考站点 {#set-up-and-configure-aem-forms-reference-sites}
 
-AEM Forms提供参考站点实施，以演示AEM Forms如何帮助金融服务行业和政府组织将其复杂的交易转变为随时随地在任何设备上的简单、引人入胜的数字体验。
+AEM Forms提供参考站点实施，以展示AEM Forms如何帮助金融服务行业和政府组织随时随地在任何设备上将复杂的交易转化为简单、引人入胜的数字体验。
 
 We.Finance和We.Gov参考站点利用真实案例与现有和潜在客户互动，从初次接触开始，以个性化和经济有效的方式管理通信和交易。
 
-通过参考站点，您可以浏览和展示AEM Forms的以下主要功能。
+通过参考站点，您可以探索和展示AEM Forms的以下主要功能。
 
 * 引人入胜的响应式自适应表单和交互式通信的简化创作体验。
 * 交互式通信，创建可适应设备设置和布局的交互式、个性化和响应式客户通信。
@@ -31,8 +31,8 @@ We.Finance和We.Gov参考站点利用真实案例与现有和潜在客户互动�
 * 可自动处理业务流程和工作流的表单工作流程。
 * 高级用户数据管理和处理功能。
 * 与Adobe Sign集成，安全地签署和提交自适应表单。
-* 与Adobe Target集成，提供有针对性的建议并执行A/B测试，从表单实现最大投资回报。
-* 与Adobe Analytics集成，衡量表单或活动的表现并做出明智的决策。
+* 与Adobe Target集成，提供有针对性的建议并执行A/B测试，从表单中最大化ROI。
+* 与AdobeAnalytics集成，衡量表单或活动的表现并做出明智的决策。
 * 增强的表单填写体验。
 
 参考站点提供可重复使用的资产，您可以将这些资产用作模板来创建自己的资产。
@@ -47,7 +47,7 @@ We.Finance和We.Gov参考站点利用真实案例与现有和潜在客户互动�
 
 * **AEM Essentials**
 
-   AEM QuickStart、AEM Forms加载项包和参考站点包。 有关 [附加和引用站点](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 包的详细信息，请参阅AEM Forms版本。
+   AEM QuickStart、AEM Forms加载项包和参考站点包。 有关 [附加和参考](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 站点包的详细信息，请参阅AEM Forms版本。
 
 * **SMTP服务**&#x200B;可使用任何SMTP服务。
 
@@ -55,8 +55,8 @@ We.Finance和We.Gov参考站点利用真实案例与现有和潜在客户互动�
 
    要使用数字签名功能，需要Adobe Sign开发人员帐户。 请参 [阅Adobe Sign](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)。
 
-* 要与AEM Forms集成的Microsoft Dynamics 365的正在运行实例。 要运行引用站点，可将示例数据导入Microsoft Dynamics实例，以预填引用站点中使用的交互式通信。
-* AEM 6.4的正在运行的实例（带有Forms加载项包）。 有关详细信息，请 [参阅安装和配置AEM Forms](installing-configuring-aem-forms-osgi.md)。
+* 要与AEM Forms集成的Microsoft Dynamics 365正在运行的实例。 要运行引用站点，可将示例数据导入Microsoft Dynamics实例，以预填引用站点中使用的交互式通信。
+* AEM 6.4的正在运行的实例（带有Forms加载项包）。 有关详细信息，请参 [阅安装和配置AEM Forms](installing-configuring-aem-forms-osgi.md)。
 
 按照建议的顺序执行以下步骤来设置和配置引用站点。
 
@@ -74,12 +74,12 @@ We.Finance和We.Gov参考站点利用真实案例与现有和潜在客户互动�
   </tr> 
   <tr> 
    <td><a href="#ssl">配置SSL</a></td> 
-   <td>创作和发布<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td>启用HTTP over SSL，与Adobe Sign进行安全通信。</td> 
   </tr> 
   <tr> 
    <td><p><a href="#externalizer">配置Day CQ链接外部器配置</a></p> </td> 
-   <td>创作和发布<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td><p>参考站点使用案例针对不同的交易发送电子邮件。 此设置是通过电子邮件投放新闻稿时必需的。 它确保URL和图像指向发布实例。 </p> </td> 
   </tr> 
   <tr> 
@@ -114,12 +114,12 @@ We.Finance和We.Gov参考站点利用真实案例与现有和潜在客户互动�
   </tr> 
   <tr> 
    <td><a href="#scheduler">配置Adobe Sign调度程序</a></td> 
-   <td>创作和发布<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td>更改调度程序配置，每两分钟检查一次状态。</td> 
   </tr> 
   <tr> 
-   <td><a href="#sign-service">配置参考站点Adobe Sign云服务</a></td> 
-   <td>创作和发布<br /> </td> 
+   <td><a href="#sign-service">配置参考站点Adobe SignCloud Service</a></td> 
+   <td>Author and Publish<br /> </td> 
    <td>引用站点包附带的配置，需要使用有效凭据进行重新配置。</td> 
   </tr> 
   <tr> 
@@ -129,7 +129,7 @@ We.Finance和We.Gov参考站点利用真实案例与现有和潜在客户互动�
   </tr> 
   <tr> 
    <td><a href="#fdm">修改表单数据模型的Rest Service Swagger文件</a></td> 
-   <td>创作和发布<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td>修改环境的服务。</td> 
   </tr> 
  </tbody> 
@@ -137,7 +137,7 @@ We.Finance和We.Gov参考站点利用真实案例与现有和潜在客户互动�
 
 ## 安装和配置AEM Forms {#install-and-configure-aem-forms}
 
-按照在OSGi上安装和配置AEM [表单中的说明安装和部署AEM表单](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
+按照在OSGi上安装和配置 [AEM Forms中的说明安装和部署AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
 
 >[!NOTE]
 >
@@ -215,16 +215,16 @@ We.Finance参考站点的电子邮件模板包含电子邮件中的个性化链�
 
 >[!CAUTION]
 >
->如果要为 `/lc` AEM Forms OSGi配置处理服务器URL，请勿将其放入。
+>如果要为 `/lc` AEM FormsOSGi配置处理服务器URL，请勿将其放入。
 
 ## 部署参考站点包 {#refsite}
 
-使用包共享安装以下参考站点包。
+使用“软件分发”安装以下参考站点包。
 
 * [AEM-FORMS-6.4-FSI-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-FSI-REF-SITE)
 * [AEM-FORMS-6.4-GOV-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-GOV-REF-SITE)
 
-要进一步了解如何使用包和包共享，请参 [阅如何使用包](/help/sites-administering/package-manager.md)。
+要进一步了解如何使用包，请参 [阅如何使用包](/help/sites-administering/package-manager.md)。
 
 安装包并启动创作和发布实例后，请在浏览器中访问以下URL:
 
@@ -264,12 +264,12 @@ We.Finance参考站点的电子邮件模板包含电子邮件中的个性化链�
 
 ## 为Microsoft Dynamics配置OAuth云服务 {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
-在AEM Forms中配置OAuth云服务，以启用AEM Forms与Microsoft Dynamics之间的通信。 执行以下步骤以在AEM作者和发布实例上配置OAuth云服务：
+在AEM Forms中配置OAuth云服务，以启用AEM Forms与Microsoft Dynamics之间的通信。 执行以下步骤以在AEM作者和发布实例上配置OAuthCloud Service:
 
-1. 在AEM作者实例中，转 **[!UICONTROL 到工具>云服务>数据源>全局]**。 点按 **[!UICONTROL Refsite Dynamics Integration图]** 标，然后点 **[!UICONTROL 按属性]**。
+1. 在AEM作者实例中，转到 **[!UICONTROL 工具>Cloud Service>数据源>全局]**。 点按 **[!UICONTROL Refsite Dynamics Integration图]** 标，然后点 **[!UICONTROL 按属性]**。
 1. 转到Microsoft Azure Active Directory帐户。 将复制的云服务配置URL添加到已注 **[!UICONTROL 册应用程]** 序的回复URL设置中。 保存配置。
 1. 在“身份验证设置”选 **[!UICONTROL 项卡中]**，为 **[!UICONTROL 您的Microsoft]** Dynamics实例指 **[!UICONTROL 定服务根、]**&#x200B;客户端Id、 **[!UICONTROL 客户端机密和]** 资源URL。 单击 **[!UICONTROL “连接到]** OAuth”，它将重定向到Microsoft Dynamics登录页。
-1. 提供登录凭据。 登录后，您将被重定向到AEM Forms云服务配置页面。 Click **[!UICONTROL Save &amp; Close]**. 云服务配置已保存。
+1. 提供登录凭据。 登录后，您将被重定向到“AEM Forms云服务配置”页。 Click **[!UICONTROL Save &amp; Close]**. 云服务配置已保存。
 1. 转到“ **[!UICONTROL 表单”>“数据集成”>“We.Finance]**”。 选择自动保险（动态），然后单击编辑。 Microsoft Dynamics实体列在“数据源”选项卡下。 请等待，直到从Microsoft Dynamics获取所有实体并列在数据源选项卡下。
 1. 选择AutoInsuranceRenewal **[!UICONTROL 实体]** ，然后单 **[!UICONTROL 击“测试模型对象”]**。 在输入请求部分，将客户ID的值指定为“900001”，然后单击“ **[!UICONTROL 测试]**”。 “输出”部分显示从Microsoft Dynamics为客户ID 900001获取的记录。
 1. 在输入请求部分，将客户ID的值指定为“900001”，然后单击“ **[!UICONTROL 测试]**”。 “输出”部分显示从Microsoft Dynamics为客户ID 900001获取的记录。
@@ -293,7 +293,7 @@ We.Finance参考站点的电子邮件模板包含电子邮件中的个性化链�
 
 对创作和发布实例执行以下操作：
 
-1. 转到“ **[!UICONTROL 工具”>“云服务”>“Adobe Sign”>“全局”]**。 选择 **[!UICONTROL AEM Forms Reference Site Sign]** ，然后点 **[!UICONTROL 按属性]**。
+1. 转到“ **[!UICONTROL 工具”>“Cloud Service”>“Adobe Sign”>“全局”]**。 选择 **[!UICONTROL AEM Forms引用站点签名]** ，然后点 **[!UICONTROL 按属性]**。
 
    >[!CAUTION]
    >
@@ -320,37 +320,38 @@ We.Finance参考站点的电子邮件模板包含电子邮件中的个性化链�
 1. 导航到 **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** ，然后打开swagger文件。
 1. 根据您的环境更新主机和端口设置。
 1. 保存设置。
-1. (仅&#x200B;**限作者实例**)转到“工 **[!UICONTROL 具]** ”>“云 **[!UICONTROL 服务”]** >“数据源 **[!UICONTROL ”]******>“全局”>“全局”。 选 **[!UICONTROL 择roi-rest]** ，然后点 **[!UICONTROL 按属性]**。 点按 **[!UICONTROL 身份验证设]** 置，并将身 **[!UICONTROL 份验证类型]** 设置为 **[!UICONTROL 基本身份验证]**。 指 `admin`定/ `admin`作为用户名／口令访问服务。 点按 **[!UICONTROL 保存并关闭]**。
+1. (仅&#x200B;**限作者实例**)转到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Sources]******> Global Data 。 选 **[!UICONTROL 择roi-rest]** ，然后点 **[!UICONTROL 按属性]**。 点按 **[!UICONTROL 身份验证设]** 置，并将身 **[!UICONTROL 份验证类型]** 设置为 **[!UICONTROL 基本身份验证]**。 指 `admin`定/ `admin`作为用户名／口令访问服务。 点按 **[!UICONTROL 保存并关闭]**。
 
 ## 与Marketing Cloud集成 {#integrate-with-marketing-cloud}
 
-您可以将AEM Forms与Adobe Analytics和Adobe Target集成。 Adobe Analytics可以帮助您生成报告并分析自适应表单的性能，而Adobe Target则可以帮助您提供个性化体验并对自适应表单执行A/B测试。
+您可以将AEM Forms与AdobeAnalytics和Adobe Target集成。 AdobeAnalytics可以帮助您生成报告并分析自适应表单的性能，而Adobe Target则可以帮助您提供个性化体验并执行自适应表单的A/B测试。
 
-执行以下操作以在AEM Forms中配置Adobe Analytics和Adobe Target。
+执行以下操作以在AEM Forms中配置AdobeAnalytics和Adobe Target。
 
-### 配置Adobe Analytics {#configure-adobe-analytics}
+### 配置AdobeAnalytics {#configure-adobe-analytics}
 
-AEM Forms与Adobe Analytics集成后，您可以监控和分析客户与表单和文档的交互方式。 它有助于您识别和修复问题区域并采取行动增加转化率。
+AEM Forms与AdobeAnalytics的集成使您能够监控和分析客户如何与您的表单和文档互动。 它有助于您识别和修复问题区域并采取行动增加转化率。
 
-要在参考站点中体验此功能，请按照配置分析和报告中的 [说明配置您的Analytics帐户](/help/forms/using/configure-analytics-forms-documents.md)。
+要在参考站点中体验此功能，请按照配置分析和报告中的说明配 [置您的Analytics帐户](/help/forms/using/configure-analytics-forms-documents.md)。
 
 要生成报告，种子数据会与引用站点绑定。 在使用种子数据之前，请执行以下操作：
 
-1. 确保AEM云服务中提供We.Finance和We.Gov分析配置。 您可以通过以下方式之一查找云服务：
+1. 确保AEM cloud services中提供We.Finance和We.Gov分析配置。 您可以通过以下方式之一查找云服务：
 
-   * 导航到 **[!UICONTROL 工具>云服务>旧版云服务]** ，或浏览到https://&lt;host>:&lt;port>/libs/cq/core/content/tools/cloudservices.html。
-   * 在云服 **[!UICONTROL 务页面]** 、Adobe Analytics **[!UICONTROL 部分下，]** 单击 `Show Configurations`。 您可以看到We.Finance和We.Gov配置。 单击以打开配置。 在配置页面中，单击 **[!UICONTROL 编辑]**。 提供有效公司、用户名、共享机密（密码）和数据中心，然后单 **[!UICONTROL 击“连接到分析”]**。 连接成功对话框后，单击 **[!UICONTROL 配置]** 对话框中的确定。 在Analytics配置下配置框架，如配置分析和 [报告中所述](/help/forms/using/configure-analytics-forms-documents.md)。
+   * 导航到“ **[!UICONTROL 工具”>“Cloud Service]** ”>“旧Cloud Service”或浏览到https://&lt;host>:&lt;port>/libs/cq/core/content/tools/cloudservices.html。
+   * 在Cloud Service **[!UICONTROL 页面]** 的Adobe **[!UICONTROL Analytics部]** 分下 `Show Configurations`，单击。 您可以看到We.Finance和We.Gov配置。 单击以打开配置。 在配置页面中，单击 **[!UICONTROL 编辑]**。 提供有效公司、用户名、共享机密（密码）和数据中心，然后单 **[!UICONTROL 击连接到Analytics]**。 连接成功对话框后，单击 **[!UICONTROL 配置]** 对话框中的确定。 在Analytics配置下配置框架，如配置Analytics [和报告中所述](/help/forms/using/configure-analytics-forms-documents.md)。
 
 1. 导航到https://&lt;*host*>:&lt;*port*>/system/console/configMgr并执行以下操作：
 
-   * 在“Web控 **[!UICONTROL 制台配置]** ”页中，找到并单 **[!UICONTROL 击“AEM Forms分析配置”]**。
-   * 在AEM Forms **** Analytics配置对话框的SiteCatalyst Framework字段中，选择we-finance(we-finance)或we-gov(we-gov)。
+   * 在“Web控 **[!UICONTROL 制台配置]** ”页中，找到并单 **[!UICONTROL 击AEM FormsAnalytics配置]**。
+   * 在“AEM Forms **[!UICONTROL Analytics配置]** ”对话框的“SiteCatalyst框架”字段中，选择we-finance(we-finance)或we-gov(we-gov)。
    * 单击 **[!UICONTROL 保存]** ，然后让页面刷新。
 
 1. 导航到位于https://&lt;host>:&lt;port>/aem/forms的表单管理器，然后执行以下操作：
 
    * 打开We.Finance或We.Gov文件夹，选择要查看其报告的表单。
-   * 单击操作工具栏中的启用分析。 为表单启用分析后，单击分析报告。 您可以看到生成的空白报告。 生成空白报告后，您必须提供refsite包附带的种子数据，以生成分析报告以用于演示。
+   * 单击“操作”工具栏中的“启用Analytics”。 为表单启用分析后，单击“Analytics报告”。 您可以看到生成的空白报告。 生成空白报告后，您必须提供refsite包附带的种子数据，以生成分析报告以用于演示。
+
    参考站点为分析报告提供信用卡、家庭抵押和儿童支持使用案例的种子数据。 有关种子数据的配置，请 [参阅We.Finance参考站点演练](/help/forms/using/finance-reference-site-walkthrough.md)[和We.Gov参考站点演练](/help/forms/using/gov-reference-site-walkthrough.md)。
 
 ### 配置目标 {#configure-target}
@@ -367,7 +368,7 @@ AEM Forms与Adobe Analytics集成后，您可以监控和分析客户与表单�
 
 1. 访问https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html。
 
-1. 在Adobe **[!UICONTROL Target部分]** ，单击显 **[!UICONTROL 示配置]**。 您可以看到可用的We.Finance目标配置。 单击以打开配置。 在配置页面中，单击 **[!UICONTROL 编辑]**。 此时 **[!UICONTROL 将打开配]** 置的编辑组件对话框。
+1. 在Adobe Target **[!UICONTROL 部分]** ，单击显 **[!UICONTROL 示配置]**。 您可以看到可用的We.Finance目标配置。 单击以打开配置。 在配置页面中，单击 **[!UICONTROL 编辑]**。 此时 **[!UICONTROL 将打开配]** 置的编辑组件对话框。
 
 1. 指定与您的目标帐户关联的客户代码、电子邮件和密码。 选择API类型 **[!UICONTROL 为REST]**。
 1. Click **[!UICONTROL Connect to Adobe target]**. 成功配置目标帐户后，单击“ **[!UICONTROL 确定]**”。 您可以看到打包配置有一个目标框架。
@@ -376,7 +377,7 @@ AEM Forms与Adobe Analytics集成后，您可以监控和分析客户与表单�
 
 1. 单击 **[!UICONTROL AEM Forms目标配置]**。
 1. 选择目标框架。
-1. 在“ **[!UICONTROL 目标]** URL”字段中，指定AEM表单的URL。 例如： https://&lt;*hostname*>:&lt;*port*>。
+1. 在目标 **[!UICONTROL URL]** 字段中，指定AEM Forms的URL。 例如： https://&lt;*hostname*>:&lt;*port*>。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 

@@ -10,9 +10,9 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '849'
 ht-degree: 3%
 
 ---
@@ -45,23 +45,25 @@ ht-degree: 3%
 
       >[!NOTE]
       >
-      >服务器启动并运行后，一些AEM Forms捆绑包仍处于安装状态。 每个安装的捆绑包数量可能不同。 您可以安全地忽略这些包的状态。 这些包列在 `https://[server]:[port]/system/console/`。
+      >服务器启动并运行后，一些AEM Forms包仍处于安装状态。 每个安装的捆绑包数量可能不同。 您可以安全地忽略这些包的状态。 这些包列在 `https://[server]:[port]/system/console/`。
 
 
 1. 安装AEM Forms加载项包。 这些步骤如下所示：
 
-   1. 以管理员身份登录到AEM服务器并打开包共享。 包共享的默认URL为 `https://[server]:[port]/crx/packageshare`。
-   1. 在包共享中， **[!UICONTROL 搜索AEM 6.4 Forms Add-on包]**，单击适用于您的操作系统的包，然后单击 **[!UICONTROL 下载]**。 阅读并接受许可协议，然后单击 **[!UICONTROL 确定]**。 下载开始。 下载后，包旁 **[!UICONTROL 会显]** 示“已下载”一词。
+   1. 开放 [软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID登录软件分发。
+   1. 点按 **[!UICONTROL 标题]** 菜单中可用的Adobe Experience Manager。
+   1. 在过滤器 **[!UICONTROL 部分]** :
+      1. 从“ **[!UICONTROL 解决方]** 案 **[!UICONTROL ”下]** 拉列表中选择“表单”。
+      1. 选择包的版本和类型。 您还可以使用“搜 **[!UICONTROL 索下载]** ”选项筛选结果。
+   1. 点按适用于您的操作系统的包名称，选择“ **[!UICONTROL 接受EULA条款]**”，然后点 **[!UICONTROL 按下载]**。
+   1. 打开 [包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) ，然后单 **[!UICONTROL 击“上传包]** ”以上传包。
+   1. Select the package and click **[!UICONTROL Install]**.
 
-      或者，您也可以使用AEM Forms版本中列 [出的超链接](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) ，手动下载包。
-
-   1. 下载完成后，单击“已 **[!UICONTROL 下载]**”。 您被重定向到包管理器。 在包管理器中，搜索下载的包，然后单击“安 **[!UICONTROL 装”]**。
-
-      如果您使用AEM Forms版本中列出的直接链接手 [动下载包](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)，请打开AEM包管理器，单 **[!UICONTROL 击上传包]**，选择下载的包，然后单击上传。 上载包后，单击包名称，然后单击“安 **[!UICONTROL 装”]**。
+      您还可以使用AEM Forms版本文章中列出的直接链接 [下载包](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 。
 
       >[!NOTE]
       >
-      >安装包后，系统会提示您重新启动AEM实例。 **不要立即停止服务器。** 在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止显示在&lt;crx-repository>/error.log文件中，并且日志是稳定的。 另请注意，一些包可以保持安装状态。 您可以安全地忽略这些包的状态。
+      >安装包后，系统会提示您重新启动AEM实例。 **不要立即停止服务器。** 在停止AEM Forms服务器之前，请等到ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止显示在&lt;crx-repository>/error.log文件中，并且日志是稳定的。 另请注意，一些包可以保持安装状态。 您可以安全地忽略这些包的状态。
 
    1. 停止AEM实例并删除以下文件：
 
@@ -74,7 +76,7 @@ ht-degree: 3%
 
    * **运行迁移实用程序**
 
-      迁移实用程序使早期版本的自适应表单和对应管理资产与AEM 6.4表单兼容。 您可以从AEM包共享下载该实用程序。 有关配置和使用迁移实用程序的分步信息，请参阅迁 [移实用程序](/help/forms/using/migration-utility.md)。
+      迁移实用程序使早期版本的自适应表单和对应管理资产与AEM 6.4表单兼容。 您可以从AEM软件分发下载该实用程序。 有关配置和使用迁移实用程序的分步信息，请参阅迁 [移实用程序](/help/forms/using/migration-utility.md)。
 
       如果您使用示 [例将草稿和提交组件与查询库集成](integrate-draft-submission-database.md) ，并从先前版本升级，则在执行升级后运行以下SQL:
 
@@ -92,11 +94,11 @@ ht-degree: 3%
 
    * **（如果仅从AEM 6.2表单或先前版本升级）重新配置Adobe Sign**
 
-      如果您在AEM Forms的先前版本中配置了Adobe Sign，请从AEM Cloud服务重新配置Adobe Sign。 有关详细信息，请 [参阅将Adobe Sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md)。
+      如果您在AEM Forms的先前版本中配置了Adobe Sign，请从AEM cloud services重新配置Adobe Sign。 有关详细信息，请参 [阅将Adobe Sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md)。
 
    * **（如果仅从AEM 6.2表单或先前版本升级）重新配置分析和报告**
 
-      在AEM 6.4 Forms中，不提供源的流量变量和印象的成功事件。 因此，当您从AEM 6.2 Forms或先前版本升级时，AEM Forms将停止向Adobe Analytics服务器发送数据，并且自适应表单的分析报告不可用。 此外，AEM 6.4 Forms还为表单分析版本引入了流量变量，并为在字段上花费的时间引入了成功事件。 因此，请为您的AEM Forms环境重新配置分析和报告。 有关详细步骤，请参 [阅配置分析和报告](/help/forms/using/configure-analytics-forms-documents.md)。
+      在AEM 6.4 Forms中，不提供源的流量变量和印象的成功事件。 因此，当您从AEM 6.2 Forms或先前版本升级时，AEM Forms将停止向AdobeAnalytics服务器发送数据，并且自适应表单的分析报告不可用。 此外，AEM 6.4 Forms还为表单分析版本引入了流量变量，并为在字段上花费的时间引入了成功事件。 因此，请为您的AEM Forms环境重新配置分析和报告。 有关详细步骤，请参 [阅配置分析和报告](/help/forms/using/configure-analytics-forms-documents.md)。
 
 1. 验证服务器是否升级成功，所有数据是否也成功迁移，并且它可以正常运行。
 

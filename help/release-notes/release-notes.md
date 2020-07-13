@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 28%
 
 ---
@@ -290,7 +290,7 @@ AEM 6.4 Forms 中引入了一些新增功能和增强功能。主要功能包括
 
 您可以将 Livefyre 与 AEM 6.4 实例集成。有关如何将 Livefyre 与 AEM 集成的信息位于此处：
 
-* [集成 Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [集成 Livefyre](https://helpx.adobe.com/cn/experience-manager/6-4/sites/administering/using/livefyre.html)
 
 ### 利用以客户为中心的开发 {#leverage-customer-focused-development}
 

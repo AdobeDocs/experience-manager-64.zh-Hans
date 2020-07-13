@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 0%
+source-wordcount: '1559'
+ht-degree: 2%
 
 ---
 
@@ -30,9 +30,9 @@ AEM Livefyre包提供开箱即用的实施，而传统集成则提供创建自�
 
 ### AEM集成 {#aem-integration}
 
-LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 SP1。 不支持AEM 5.x和6.0。 有关详细说明，请参 [阅与Livefyre集成](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)。
+LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 SP1。 不支持AEM 5.x和6.0。 有关详细说明，请参 [阅与Livefyre集成](https://helpx.adobe.com/cn/experience-manager/6-4/sites/administering/using/livefyre.html)。
 
-要了解支持哪些Livefyre应用程序，请参 [阅Livefyre应用程序的AEM支持列表](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)。
+要了解支持哪些Livefyre应用程序，请参 [阅Livefyre应用程序的AEM支持列表](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)。
 
 ### 传统实施（针对自定义AEM组件） {#traditional-implementation-for-customized-aem-components}
 
@@ -65,7 +65,7 @@ LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 S
 
 有关需要身份验证的媒体墙集成，请参阅：
 
-* [为AEMIdentity Management自定义](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) “单点登录集成”
+* [为AEMIdentity Management自定义](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) “单点登录集成”
 * [第三方身份验证](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 平台的身份集成
 
 ### 用例概述 {#use-case-overview}
@@ -74,9 +74,9 @@ LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 S
 
 实施步骤：
 
-1. [入门](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [将AEM配置为使用Livefyre](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [将AEM媒体墙组件拖放到您的页面上](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
+1. [入门](https://helpx.adobe.com/cn/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [将AEM配置为使用Livefyre](https://helpx.adobe.com/cn/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [将AEM媒体墙组件拖放到您的页面上](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
 1. [配置流并添加规则，以创建UGC并在媒体墙组件上显示](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)
 
 有关流式UGC的培训视频，请参 [阅在LivefyreAdobe Experience Manager中创建自动内容流和搜索社交内容](https://helpx.adobe.com/experience-manager/tutorials.html)。
@@ -97,7 +97,7 @@ LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 S
 
 ### AEM集成 {#aem-integration-1}
 
-LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 SP1。 不支持AEM 5.x和6.0。 有关详细说明，请参 [阅与Livefyre集成](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)。
+LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 SP1。 不支持AEM 5.x和6.0。 有关详细说明，请参 [阅与Livefyre集成](https://helpx.adobe.com/cn/experience-manager/6-4/sites/administering/using/livefyre.html)。
 
 ### 传统实施（针对自定义AEM组件） {#traditional-implementation-for-customized-aem-components-1}
 
@@ -129,7 +129,7 @@ LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 S
 
 ### 注释应用程序身份验证集成 {#comments-app-authentication-integration}
 
-* [为AEMIdentity Management自定义](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) “单点登录集成”
+* [为AEMIdentity Management自定义](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) “单点登录集成”
 * [第三方身份验证](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 平台的身份集成
 
 ### 客户示例 {#customer-examples-1}
@@ -152,9 +152,9 @@ LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 S
 
 **AEM设置(用于将UGC导入AEM Assets):**
 
-1. [入门](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
-1. [将AEM配置为使用Livefyre](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
-1. [将Livefyre策划的UGC导入AEM Assets](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
+1. [入门](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
+1. [将AEM配置为使用Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
+1. [将Livefyre策划的UGC导入AEM Assets](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
 
 * [澳大利亚旅游局](https://www.australia.com/en-us)
 
@@ -162,9 +162,9 @@ LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 S
 
 ### AEM集成 {#aem-integration-2}
 
-LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 SP1。 不支持AEM 5.x和6.0。 有关详细说明，请参 [阅与Livefyre集成](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)。
+LivefyreAdobe Experience Manager包可用于AEM 6.1、6.2SP1、6.3、6.4和6.4 SP1。 不支持AEM 5.x和6.0。 有关详细说明，请参 [阅与Livefyre集成](https://helpx.adobe.com/cn/experience-manager/6-4/sites/administering/using/livefyre.html)。
 
-AEM 6.1不支持“审阅组件”。请检查所有Livefyre [应用程序的AEM支持列表](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)。
+AEM 6.1不支持“审阅组件”。请检查所有Livefyre [应用程序的AEM支持列表](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)。
 
 ### 传统实施（针对自定义AEM组件） {#traditional-implementation-for-customized-aem-components-2}
 
@@ -191,7 +191,7 @@ AEM 6.1不支持“审阅组件”。请检查所有Livefyre [应用程序的AEM
 
 ### 注释应用程序身份验证集成 {#comments-app-authentication-integration-1}
 
-* [为AEMIdentity Management自定义](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) “单点登录集成”
+* [为AEMIdentity Management自定义](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) “单点登录集成”
 * [第三方身份验证](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 平台的身份集成
 
 ### 客户示例 {#customer-examples-2}

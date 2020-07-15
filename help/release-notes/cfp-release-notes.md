@@ -1,13 +1,13 @@
 ---
 title: AEM 6.4 Cumulative Fix Pack发行说明
-description: 特定于Adobe Experience Manager 6.4累积修复包的发行说明。
+description: 特定于Adobe Experience Manager6.4累积修复包的发行说明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1deed95174e271bbd91814ef4aa6d4fa578cc45
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 22%
+source-wordcount: '2119'
+ht-degree: 21%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 22%
 | 类型 | 累积修补程序包 |
 | 日期 | 2020年6月4日 |
 | 先决条件 | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
-| 下载 URL | AEM 6.4.8.1关于包共享 [、软件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1)[分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
+| 下载 URL | 有关软件分发的AEM 6.4. [8.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
 ## AEM 6.4.8.1 包含哪些内容 {#what-s-included-in-aem}
 
@@ -39,7 +39,7 @@ For information on CFP and other types of releases, see [AEM Update Release Vehi
 
 ## 更改列表 {#list-of-changes}
 
-Adobe Experience Manager 6.4.8.1修复了以下问题。
+Adobe Experience Manager6.4.8.1修复了以下问题。
 
 ### 站点 {#sites-6481}
 
@@ -48,13 +48,13 @@ Adobe Experience Manager 6.4.8.1修复了以下问题。
 * 当Coral.Select选项设置emptyOption=true或包含值为“”的默认项时，dropdownshowhide.js文件会遇到错误： 未捕获的TypeError: component.getValue不是函数(NPR-33163)。
 * 当组件包含另一个组件作为容器资源时，父组件占位符将替换为内部组件占位符(NPR-33119)。
 * 当您将内容片段基于模式并且它包含强制文本区域或路径字段时，内容片段无法保存(NPR-33007)
-* 当您使用现成的体验片段组件创建自定义组件并在AEM站点页面中使用它时，AEM不显示自定义组件的引用（用法）(NPR-32852)。
-* 当AEM站点页面是包含多个Live Copy的大型内容集的一部分时，无法加载页面版本历史记录预览(NPR-32772)。
+* 当您使用现成的体验片段组件创建自定义组件并在AEM Sites页面中使用它时，AEM不显示自定义组件的引用（用法）(NPR-32852)。
+* 当AEM Sites页面是包含多个Live-Copy的大型内容集的一部分时，无法加载页面版本历史预览(NPR-32772)。
 * 提升启动项时，会向启动项中添加的每个组件添加“cq:LiveRelation”混合。 它影响所有启动项，无论是否在创建启动项时选择——继承源页面实时数据——选项(NPR-32664)。
 * 分页开始时，体验片段选取器不加载所有项目(NPR-32605)。
-* 无法为AEM站点页面创建启动项。 启动项创建会导致错误(NPR-32544)。
+* 无法为AEM Sites页面创建启动项。 启动项创建会导致错误(NPR-32544)。
 * 管理发布在激活工作流请求中不包括引用的资产(NPR-32463)。
-* 调度程序运行状况 `Invalid cookie header` 检查在日志文件中显示警告消息(NPR-33630)。
+* Dispatcher运行状况 `Invalid cookie header` 检查在日志文件中显示警告消息(NPR-33630)。
 
 ### 资产 {#assets-6481}
 
@@ -106,13 +106,13 @@ Adobe Experience Manager 6.4.8.1修复了以下问题。
 
 >[!NOTE]
 >
->AEM累积修复包不包含AEM表单的修复。 它们是通过单独的 Forms 附加组件包交付的。此外，还会发布一个包含AEM Forms在JEE上的修复的累积安装程序。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>AEM累积修复包不包含针对AEM Forms的修复。 它们是通过单独的 Forms 附加组件包交付的。此外，还发布了一个累积安装程序，其中包含针对JEEAEM Forms的修复。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * 通信管理： 当用户粘贴来自文档的 [!DNL Word] 内容时，文本文档片段不保留格式(NPR-33213)。
 * 自适应表单： 自适应表单词典中字符串的新行将字 `&#xa;` 符添加到词典(NPR-33265)。
 * 自适应表单： 用户无法保存具有多个附件的自适应表单(NPR-33214)。
 * 自适应表单： `AddInstance` 和 `RemoveInstance` 实例管理器类的方法不会为上的延迟加载片段添加动态 [!DNL Internet Explorer 11] 实例数(NPR-33201)。
-* 自适应表单： 对嵌入到页面中的自适应表单启 [!DNL Sites] 用的分析不会记录提交和放弃事件的数据(NPR-31359)。
+* 自适应表单： Analytics在嵌入到页面中的自适应表 [!DNL Sites] 单上启用时，不会为提交和放弃事件记录数据(NPR-31359)。
 * 自适应表单： 当用户将文档中的内容粘贴 [!DNL Word] 到自适应表单并提交时，提交的自适应表单包含Unicode字符。 此外，PDF到PDF/A的转换由于Unicode字符而失败(NPR-33348)。
 * 后端集成： 表单数据模型请求失败，因为由于不正确的非活动状态，刷新令牌过期(NPR-33168)。
 * 文档服务： 由于服务器上缺少Gibson Jar，转换PDF服务 [!DNL WebLogic] 无法 [!DNL Linux] 将PDF文档转换为PostScript(NPR-33515、CQ-4292239)。
@@ -149,11 +149,11 @@ Adobe Experience Manager 6.4.8.1修复了以下问题。
 
 执行以下步骤以在现有 AEM 6.4.8.0 实例上安装累积修补程序包：
 
-1. 单击“ [包共享](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1) ”或“ [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) ”链接以下载包。
+1. 单击“ [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) （软件分发）”链接以下载包。
 
-1. 打开 [包管理器](http://localhost:4502/crx/packmgr/index.jsp) ，然后单 **击“上传包** ”以上传包。
+1. 打开 [包管理器](http://localhost:4502/crx/packmgr/index.jsp) ，然后单 **[!UICONTROL 击“上传包]** ”以上传包。
 
-1. 选择包名称，然后单击“ **安装**”。
+1. 选择包名称，然后单击“ **[!UICONTROL 安装]**”。
 
 >[!NOTE]
 >
@@ -175,18 +175,18 @@ B. Use the [HTTP API from Package Manager](https://helpx.adobe.com/cn/experience
 
 ### 验证安装 {#validate-install}
 
-1. “产品信息”页(*/system/console/productinfo *)现在应在“已安装产品”下显示更新的版本字符串“Adobe Experience Manager, Version 6.4.8.1”。
+1. “产品信息”页面(*/system/console/productinfo *)现在应在“已安装产品”下显示更新的版本字符串“Adobe Experience Manager，版本6.4.8.1”。
 1. 所有 OSGi 包在 OSGi 控制台中均为“活动”或“片段”（使用 Web 控制台：/system/console/bundles）。
 1. OSGI捆绑包org.apache.jackrabbit.oak-core在版本1.8.17或更高版本上(使用Web控制台： /system/console/bundles)。
 
-要确定与此版本的AEM Sites和Assets一起运行的认证平台，请参阅技 [术要求](../sites-deploying/technical-requirements.md)。
+要确定与此版本的AEM Sites和资产一起运行的认证平台，请参 [阅技术要求](../sites-deploying/technical-requirements.md)。
 
 >[!Note]
 >On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### 更新Dynamic Media查看器(5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.1包含新版Dynamic Media查看器(5.10.1)，该查看器支持在“图像预设”页面上检查重复名称。 建议Dynamic Media客户运行以下命令，将包装盒查看器预设调出为最新状态。
+<p id="Dynamic">AEM 6.4.8.1包含新版本的Dynamic Media查看器(5.10.1)，该查看器支持在“图像预设”页面上检查重复名称。 建议Dynamic Media客户运行以下命令，将框查看器预设调出为最新状态。
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 

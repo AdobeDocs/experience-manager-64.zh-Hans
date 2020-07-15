@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
+source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
 workflow-type: tm+mt
-source-wordcount: '21555'
-ht-degree: 24%
+source-wordcount: '21534'
+ht-degree: 23%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 24%
 | 版本 | 6.4.8.0 |
 | 类型 | Service Pack 版本 |
 | 日期 | 2020年3月5日 |
-| 下载 URL | AEM 6.4.8.0 on PackageShare, [软件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0)[分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| 下载 URL | 有关软件分发的AEM 6.4. [8.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## AEM 6.4.8.0 包含哪些内容 {#what-s-included-in-aem}
 
@@ -788,7 +788,7 @@ AEM 6.4.4.0的一些主要亮点是：
 **站点**
 
 * （经典UI）Live Copy的一部分显示在转出列表中。 NPR-28598、NPR-28574：适用于 CQ-4263410 的修补程序
-* 当cq:master为空或无效时，LiveRelationshipManagerImpl将引发异常。 NPR-28590：适用于 CQ-4263115 的修补程序
+* 当cq:主控为空或无效时，LiveRelationshipManagerImpl将引发异常。 NPR-28590：适用于 CQ-4263115 的修补程序
 * 现成的“请求删除”工作流无法正确删除页面。 NPR-28668：适用于 CQ-4263195 的修补程序
 * 关系状态UI不显示相关coral-datepicker字段的正确年份值或时间戳值。 NPR-28666：适用于 CQ-4263661 的修补程序
 * 6.4 的 SuggestionHandler 中存在跨站点脚本 (XSS) 漏洞。NPR-28693：适用于 CQ-4253821 的修补程序
@@ -957,7 +957,7 @@ AEM 6.4.4.0 Forms 的重要功能亮点包括：
 * 无法在自适应表单的延迟加载片段字段之间设置值。 NPR-28320：适用于 CQ-4262345 的修补程序
 * 自适应表单不使用富文本编辑器，而是加载其库。  NPR-28001：适用于 CQ-4259703/CQ-4259193 的修补程序
 * 在Apple iOS 12.1上运行的AEM Forms应用程序无法使用涂抹签名。NPR-28497: CQ-4261765的修补程序
-* 使用6.4中的“表单工作流”经典创作问题提交操作。CQ-4252740的修补程序
+* 在6.4中使用“表单工作流”经典创作问题提交操作。CQ-4252740的修补程序
 * 错误处理块和临时存储删除。 NPR-28806：适用于 CQ-4264441 的修补程序
 
 **Forms - 通信管理**
@@ -1322,7 +1322,7 @@ AEM 6.4.2.0的一些主要亮点是：
 * 当语言首选项设置为“英语”以外的选项时，子资产页面中的滑块无法正常工作。 NPR-25274：适用于 CQ-4248489 的修补程序
 * 在具有欧洲数字格式的计算机上打开元数据导出csv文件时出现问题。 NPR-26009：适用于 CQ-4250677 的修补程序
 * 在没有“删除”权限的资产文件夹选择中，“创建”按钮不可用。 NPR-25788：适用于 CQ-4250140 的修补程序
-* （支持）辅助功能增强： 重复ID: id属性值必须唯一，标签： 表单元素必须具有标签和链接名称： 链接必须具有可辨别的文本。 NPR-24252：适用于 CQ-4250905、CQ-4250906、CQ-4250907 的修补程序
+* （支持）辅助功能增强： 重复ID: id属性值必须唯一，标签： 表单元素必须具有标签和链接名称： 链接必须有可辨别的文本。 NPR-24252：适用于 CQ-4250905、CQ-4250906、CQ-4250907 的修补程序
 * 对于欧洲国家／地区，上传带有以“,”分隔的字段的csv失败。 NPR-25549：适用于 CQ-4249931 的修补程序
 * （品牌门户）发布资产时，多页pdf文件的子资产不会发布。 NPR-25991：适用于 CQ-4245162 的修补程序
 * 稍后将AEM功能发布到Brand Portal复制。 NPR-25911：适用于 CQ-109139 的修补程序
@@ -1347,7 +1347,7 @@ AEM 6.4.2.0的一些主要亮点是：
 * （页面组件）向Parsys添加组件会从右侧裁剪掉设备框架宽度。 NPR-25536：适用于 CQ-4238224 的修补程序
 * 纯文本编辑器发送未裁切的数据并添加额外空格。 NPR-25312：适用于 CQ-4249006 的修补程序
 * 使用内嵌模式打开组件时，以前加载的插件在第二次时不可见。 NPR-24610：适用于 CQ-4236850 的修补程序
-* 通过复制／粘贴在编辑器视图中加载XF不会自动加载主变量。 NPR-24841：适用于 CQ-4248037 的修补程序
+* 通过复制／粘贴在编辑器视图中加载XF不会自动加载主控变量。 NPR-24841：适用于 CQ-4248037 的修补程序
 * 站点管理／管理员中的HTML结构错误会中断IE11。 NPR-24686：适用于 CQ-4246363/CQ-4248402 的修补程序
 * （管理发布向导）激活日期的日历（在“范围”步骤中执行一些操作后）未打开。 NPR-25681：适用于 CQ-4250205 的修补程序
 * 由于已弃用，经典 UI 无法用于编辑 CUG。NPR-25075：适用于 4241823 的修补程序
@@ -1494,7 +1494,7 @@ AEM 6.4.2.0的一些主要亮点是：
 * 执行资产更新工作流时，资产语言副本及其缩略图将变为空白。 适用于 CQ-4250641 的修补程序
 * 重复ID: id属性值必须唯一。 适用于 CQ-4250905 的修补程序
 * 标签： 表单元素必须具有标签。 适用于 CQ-4250906 的修补程序
-* 链接名称： 链接必须具有可辨别的文本。 适用于 CQ-4250907 的修补程序
+* 链接名称： 链接必须有可辨别的文本。 适用于 CQ-4250907 的修补程序
 * 端口文件夹元数据模板迁移JMX和ServiceUserMapping。 适用于 CQ-4252947 的修补程序
 * WebdriverIO测试未在CQ/dam的release/640分支中运行。 适用于 CQ-4252749 的修补程序
 * 如果链接已发布，则不会重构指向已移动资产的链接。 适用于 CQ-4245756 的修补程序
@@ -1600,7 +1600,7 @@ AEM 6.4.2.0 Forms 的重要功能亮点包括：
 * (CCR)由于XML解析，草稿重装失败。 适用于 CQ-4250950 的修补程序
 * （IC编辑器）“编辑片段”按钮应更易被发现。 适用于 CQ-4244694 的修补程序
 * (XDP)在新创建的子表单中添加布局片段时将显示空白屏幕。 适用于 CQ-4248810 的修补程序
-* DocumentFragment-master-DeployWithServerSideTests测试失败。 适用于 CQ-4245496 的修补程序
+* DocumentFragment-主控-DeployWithServerSideTests测试失败。 适用于 CQ-4245496 的修补程序
 * 文本模块变量“条件”模块中复制的实例。 适用于 CQ-4252128 的修补程序
 * PDF预览URL在发布时不显示事务报告。 适用于 CQ-4246158 的修补程序
 * IC同步与打印渠道到Web渠道同步相关的问题。 适用于 CQ-4251505 的修补程序
@@ -2106,8 +2106,8 @@ AEM 6.4.1.0 中包含的内容包列表
 >
 >对于在AEM 6.4上安装了功能包的客户。Adobe提供的可选功能包依赖于发行版和服务包。 如果您安装了任何功能包，请与AEM客户关怀团队联系以验证这些功能包与此AEM 6.4服务包的兼容性。
 
-* AEM 6.4.8.0 requires AEM 6.4. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
-* 可在 Adobe Package Share 中下载 Service Pack，您可以通过 AEM 6.4 实例直接访问 Adobe Package Share。
+* AEM 6.4.8.0需要AEM 6.4。有关详细信息，请参阅 [升级文档](../sites-deploying/upgrade.md)。
+* 可在软件分发门户上下 [载Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 。
 * 在具有 MongoDB 和多个实例的部署中，使用包管理器在其中一个 Author 实例上安装 AEM 6.4.8.0。
 * 在安装 Service Pack 之前，请确保具有 AEM 实例的快照或全新备份。
 * 安装之前请重新启动该实例。尽管仅当实例仍处于更新模式时（这种情况下是从早期版本更新实例时）才需要此设置，但通常建议实例在较长的时间内运行。
@@ -2116,14 +2116,13 @@ AEM 6.4.1.0 中包含的内容包列表
 >
 >Adobe 建议不要移除或卸载 AEM 6.4.8.0 包。
 
-### 通过 Package Share 安装 Service Pack {#install-the-service-pack-via-package-share}
+### Install the Service Pack via Package Manager {#install-the-service-pack-via-package-share}
 
 执行以下步骤以在现有 AEM 6.4 实例上安装 Service Pack：
 
-1. 在 AEM 中登录到 Package Share，或直接从您的浏览器登录，然后下载 AEM 6.4.8.0 包。
+1. 从“软件分发”下载软件包。
 
-   （搜索“AEM-6.4.8.0”进行查找）
-1. 使用包管理器安装下载的包。
+1. 在AEM中，登录到包管理器并添加下载的AEM 6.4.8.0包。 选择已上载的包，然后单击“ **[!UICONTROL 安装]**”。
 
 >[!NOTE]
 >

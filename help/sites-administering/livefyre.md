@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 # 与Livefyre集成{#integrating-with-livefyre}
 
-Learn how to integrate Livefyre&#39;s industry-leading curation capabilities with your AEM 6.4 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
+了解如何将Livefyre行业领先的特选功能与AEM 6.4实例集成，使您能够在几分钟内将宝贵的用户生成内容(UGC)从社交网络发布到您的站点。
 
 ## 入门 {#getting-started}
 
-### Install Livefyre Package for AEM {#install-livefyre-package-for-aem}
+### 安装AEM的Livefyre包 {#install-livefyre-package-for-aem}
 
 AEM 6.4附带预安装的Livefyre功能包1.2.6。 此包仅包括与AEM Sites的有限Livefyre集成，在安装更新的包之前必须卸载它。 通过最新的包，您可以体验到Livefyre与AEM的完全集成，包括站点、资产和商务。
 
@@ -34,35 +34,26 @@ AEM 6.4附带预安装的Livefyre功能包1.2.6。 此包仅包括与AEM Sites�
 
 1. 在AEM主页上，单击左 **边栏** 上的工具图标。
 1. 导航到 **部署>包**。
-1. In the Package Manager, scroll until you see the pre-installed Livefyre feature package, then click the package title **cq-social-livefyre-pkg-1.2.6.zip** to expand the options.
+1. 在“包管理器”中，滚动直到您看到预安装的Livefyre功能包，然后单击包 **标题cq-social-livefyre-pkg-1.2.6.zip** 以展开选项。
 1. 单击“ **更多”>“卸载**”。
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. 返回AEM主页，单击工具，然后导航到 **部署>包共享**。
+1. 从“软件分发”下 [载Livefyre包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。
 
-   显示一列表可供下载的功能包和修补程序。
-
-1. 在关键字搜索中，搜索“Livefyre”，然后选择与AEM版本对应的Livefyre功能包。
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. 在功能包信息页面上，单击“ **下载**”，然后阅读“包许可协议”并单 **击“接受**”。
-1. 返回至“包管理器”，找到新下载的包，然后单击“安 **装”**。
+1. 从包管理器中，安装下载的包。 有关在AEM中使用软件分发和包的说明，请参 [阅如何使用包](/help/sites-administering/package-manager.md)。
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    您的Livefyre-AEM包现已安装。 在开始使用集成功能之前，必须先配置AEM才能使用Livefyre。
 
-   有关包的详细信息，请参 [阅如何使用包](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html)。
-
    有关功能包的更多信息和发行说明，请参 [阅功能包](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html)。
 
 ### 将AEM配置为使用Livefyre: 创建配置文件夹 {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
-1. 在AEM主页上，单击左边 **栏中** 的工具图标，然后导航到 **常规>配置浏览器**。
+1. 在AEM主页上，单击左边 **栏中的** “工具”图标，然后导航到“常 **规”>“配置浏览器”**。
 1. 单击 **创建** ，打开创建配置对话框。
-1. Name your configuration and check the **Cloud Configurations** checkbox.
+1. 命名您的配置并选中“云 **配置”复选** 框。
 
    这将在工具>部署> Livefyre **配置下创建一个文件夹** ，并使用提供的名称。
 

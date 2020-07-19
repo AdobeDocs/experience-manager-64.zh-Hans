@@ -3,9 +3,9 @@ title: 元数据架构
 description: '元数据模式定义属性页面的布局以及为资产显示的元数据属性。 了解如何创建自定义元数据模式、编辑元数据模式，以及如何将元数据模式应用于资产。  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
+source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
 workflow-type: tm+mt
-source-wordcount: '2528'
+source-wordcount: '2536'
 ht-degree: 19%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 19%
 |---|---|---|
 | [!UICONTROL 默认] |  | 资产的基本元数据模式表单。 |
 |  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
+|  | [!UICONTROL dm_video] | 模式表单，用于Dynamic Media视频。 |
 |  | <ul><li> [!UICONTROL 图像]</li></ul> | 模式表单，用于MIME类型为“image”（例如image/jpeg、image/png等）的资产。 <br> 图 [!UICONTROL 像表单] 具有以下子表单模板： <ul><li> [!UICONTROL jpeg]: 模式子类型为jpeg的资产 [!UICONTROL 表单]。</li> <li>[!UICONTROL tiff]: 模式子类型为tiff的资产的 [!UICONTROL 表单]。</li></ul> |
 |  | <ul><li> [!UICONTROL 应用]</li></ul> | 模式表单，用于MIME类型为“application”（例如application/pdf、application/zip等）的资产。 <br>[!UICONTROL pdf]: 模式子类型为pdf的资产的表单。 |
 |  | <ul><li>[!UICONTROL 视频]</li></ul> | 模式表单，用于MIME类型为“”（如video/avi、video/mp4等）的资产。 |
@@ -62,7 +63,7 @@ ht-degree: 19%
 
 1. In the dialog, enter the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
-   ![chlimage_1-175](assets/chlimage_1-174.png)
+   ![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## 编辑元数据模式表单 {#editing-metadata-schema-forms}
 
@@ -182,11 +183,11 @@ AEM允许您仅删除自定义模式表单。 您无法删除默认的架构表�
 
 >[!NOTE]
 >
->您无法删除AEM资产中开箱即用的元数据模式表单。
+>您无法删除模式中开箱即用的元数据AEM Assets表单。
 
 ## Schema forms for MIME types {#schema-forms-for-mime-types}
 
-AEM资产为各种现成MIME类型提供默认表单。 但是，您可以为各种MIME类型的资产添加自定义表单。
+AEM Assets为各种现成MIME类型提供默认表单。 但是，您可以为各种MIME类型的资产添加自定义表单。
 
 ### Add new forms for MIME types {#adding-new-forms-for-mime-types}
 
@@ -225,7 +226,7 @@ AEM 资产映射以下 MIME 类型和架构表单：
 
 ## 应用特定于文件夹的元数据 {#applying-folder-specific-metadata}
 
-AEM资产允许您定义元数据模式的变体，并将其应用到特定文件夹。
+AEM Assets允许您定义元数据模式的变体，并将其应用到特定文件夹。
 
 例如，您可以定义默认元数据模式的变体并将其应用到文件夹。 应用修改后的模式时，该模式将覆盖应用于文件夹内资产的原始默认元数据区域。
 
@@ -263,7 +264,7 @@ AEM资产允许您定义元数据模式的变体，并将其应用到特定文�
 
 ## 定义必填元数据 {#defining-mandatory-metadata}
 
-您可以在文件夹级别定义必填字段，这将强制执行于上传到该文件夹的资产。 如果您上传的资产上传之前定义的必填字段缺少元数据，则卡视图的资产上会显示缺少元数据的可视指示。
+您可以在文件夹级别定义必填字段，该字段将强制应用于上传到该文件夹的资产。 如果您上传的资产上传之前定义的必填字段缺少元数据，则卡视图的资产上会显示缺少元数据的可视指示。
 
 >[!NOTE]
 >

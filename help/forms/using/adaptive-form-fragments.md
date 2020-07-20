@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ### 从头开始创建片段 {#create-fragment-from-scratch}
 
-1. 登录AEM Forms作者实例，网址为https://[*hostname*]:[*port*]/aem/forms.html。
+1. 登录AEM Forms作者实例&#x200B;[*https://*] hostname [*:*] port /aem/forms.html。
 1. Click **[!UICONTROL Create > Adaptive Form Fragment]**.
 1. 指定片段的标题、名称、说明和标记。
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 ### 配置片段外观 {#configure-fragment-appearance}
 
-插入自适应表单的任何片段都显示为占位符图像。 占位符在片段中最多显示十个子面板的标题。 您可以配置AEM表单以显示完整片段而非占位符图像。
+插入自适应表单的任何片段都显示为占位符图像。 占位符在片段中最多显示十个子面板的标题。 您可以配置AEM Forms以显示完整片段而非占位符图像。
 
 请执行以下步骤以在表单中显示完整片段：
 
@@ -162,11 +162,11 @@ ht-degree: 0%
 
 ## 管理片段 {#manage-fragments}
 
-您可以使用AEM表单UI对自适应表单片段执行多个操作。
+您可以使用AEM FormsUI对自适应表单片段执行多个操作。
 
 1. 转到 `https://[hostname]:[port]/aem/forms.html`.
 
-1. 单击 **[!UICONTROL AEM]** Forms UI工具栏中的选择，然后选择自适应表单片段。 工具栏显示您可以对所选的自适应表单片段执行的以下操作。
+1. 单击 **[!UICONTROL AEM Forms]** UI工具栏中的选择，然后选择自适应表单片段。 工具栏显示您可以对所选的自适应表单片段执行的以下操作。
 
 <table> 
  <tbody> 

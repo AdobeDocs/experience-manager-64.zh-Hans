@@ -48,52 +48,69 @@ AEM Communities [消息传递操作服务](http://localhost:4502/system/console/
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL 消息字段允]**&#x200B;许列表指定合成消息组件的属性，用户可以编辑和保留这些属性。 如果添加了新的表单元素，则需要添加元素ID（如果需要）才能存储在SRP中。 默认为两个条目： ****
+* **[!UICONTROL 消息字允许列表段]**&#x200B;指定用户可以编辑和保留的合成消息组件的属性。 如果添加了新的表单元素，则需要添加元素ID（如果需要）才能存储在SRP中。 默认为两个条目： 
+*主题* 和 *内容*。
 
-* *主题* 和 *内容*。**
+* **[!UICONTROL 消息框大小限]**&#x200B;制每个用户消息框中的最大字节数。 默认为 
+*1073741824* (1 GB)。
 
-* **[!UICONTROL 消息框大小限]**&#x200B;制每个用户消息框中的最大字节数。 默认为 **
+* **[!UICONTROL 消息计数]**&#x200B;限制每个用户允许的消息总数。 值为-1表示允许不限数量的消息，但需遵守消息框大小限制。 默认为 
+*10000* (10k)。
 
-* *1073741824* (1 GB)。]****
+* **[!UICONTROL 通知投放失败]**&#x200B;如果选中，则在消息投放失败到某些收件人时通知发送方。 默认为 
+*已选中*.
 
-* **[!UICONTROL 消息计数]**&#x200B;限制每个用户允许的消息总数。 值为-1表示允许不限数量的消息，但需遵守消息框大小限制。 默认为 **
+* **[!UICONTROL 失败投放发送]**&#x200B;者ID投放失败消息中显示的发送者名称。 默认为 
+*failure通告程序*。
 
-* *10000* (10k)。]****
+* **[!UICONTROL 失败消息模板]**&#x200B;路径投放失败消息模板根的绝对路径。 默认为 
+*/etc/notification/messaging/default*。
 
-* **[!UICONTROL 通知投放失败]**&#x200B;如果选中，则在消息投放失败到某些收件人时通知发送方。 默认为 **
+* **[!UICONTROL maxRetries.name]**&#x200B;尝试重新发送失败消息的次数。 默认为 
+*3*.
 
-* *已选中*.]**
+* **[!UICONTROL minWaitBetweenRetries.name在]**&#x200B;尝试重新发送邮件失败后等待的秒数。 默认值为*100 *（秒）。
 
-* **[!UICONTROL 失败投放发送]**&#x200B;者ID投放失败消息中显示的发送者名称。 默认为 **
+* **[!UICONTROL 计数更新池大小]**&#x200B;用于计数更新的并发线程数。 默认为 
+*10*.
 
-* *failure通告程序*。]********`inbox`****
+* **[!UICONTROL inbox.path.name]**(
+*必需*)用于文件夹的路径(相对于用户节点&#x200B;*(*/home/users/ **`inbox`** username))。 路径不能以尾随正斜杠“/”结束。 默认为 */mail/inbox* 。
 
-* **[!UICONTROL 失败消息模板]**&#x200B;路径投放失败消息模板根的绝对路径。 默认为 ******`senditems`****
+* **[!UICONTROL sentitems.path.name]**(
+*必需*)用于文件夹的路径(相对于用户节点&#x200B;*(*/home/users/ **`senditems`** username))。 路径不能以尾随正斜杠“/”结束。 默认为 */mail/sentitems* 。
 
-* */etc/notification/messaging/default*。]****
+* **[!UICONTROL supportAttachments.name]**&#x200B;如果选中，用户可以向邮件中添加附件。 默认为 
+*已选中*.
 
-* **[!UICONTROL maxRetries.name]**&#x200B;尝试重新发送失败消息的次数。 默认为 **
+* **[!UICONTROL batchSize.name]**&#x200B;发送到大量收件人时要一起发送的消息数。 默认为 
+*100*.
 
-* *3*.]****
+* **[!UICONTROL maxTotalAttachmentSize.name如果选]**&#x200B;中supportAttachments，此值将指定所有附件所允许的最大总大小（以字节为单位）。 默认为 
+*104857600* (100 MB)。
 
-* **[!UICONTROL minWaitBetweenRetries.name在]**&#x200B;尝试重新发送邮件失败后等待的秒数。 默认值为*100 *（秒）。**************
+* **[!UICONTROL attachmentTypeBlocklist.name]**&#x200B;文阻止列表件扩展名的，前缀为“
+**。**&#x200B;被制度拒绝。 如果未列入阻止列表，则允许扩展。 可以使用“+”和“-**”**&#x200B;图标添加&#x200B;**或删除扩**&#x200B;展。 默认值 *为DEFAULT*。
 
-* **[!UICONTROL 计数更新池大小]**&#x200B;用于计数更新的并发线程数。 默认为    *10*.*******
+* **[!UICONTROL allowedAttachmentTypes.name]**
 
-* **[!UICONTROL inbox.path.name]**(****[`Apache Sling Servlet/Script Resolver and Error Handler`-ERR:REF-NOT-FOUND-`/bin/``/apps/``/services/`**`Service selector`**`Message List and Compose Message components`[](configure-messaging.md)**
+   **(*需要*操作** )文允许列表件扩展名的，与阻止列表相反。 要允许除文件外的所有文件扩展列入阻止列表名，请使&#x200B;**用“**-”图标删除单个空条目。
 
-* 
+* **[!UICONTROL serviceSelector.name]**(*必需*)从中调用服务的绝对路径（端点）（虚拟资源）。 所选路径的根必须是OSGi配置的“执 *行路径* ”配置设置中的一个 [ 根， `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)如、、 `/bin/`和 `/apps/``/services/`等。 要为站点的消息功能选择此配置，此端点将作为站点 **`Service selector`** 的值提供 `Message List and Compose Message components` (请参 [阅消息功能](configure-messaging.md))。 默认值 *为/bin/messaging* 。
 
+* **[!UICONTROL fieldAllowlist.name]** Use 
+**消息字段允许列表**。
+
+>[!CAUTION]
 >
+>每次打开 `Messaging Operations Service` 配置进行编辑时，如果 `allowedAttachmentTypes.name` 已删除，则会重新添加一个空条目以配置属性。 单个空条目会有效禁用文件附件。
 >
->
->
->
+>要允许除文件外的所有文件扩展列入阻止列表名，请使用“-**”**&#x200B;图标（再次）删除单个空条目，然后单击“保 **[!UICONTROL 存”]**。
 
-## 
+## 疑难解答 {#troubleshooting}
 
+解决问题的一种方法是启用日 [志中的调试消息。](../../help/sites-administering/troubleshooting.md)
 
+另请参 [阅记录员和作者个人服务](../../help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services)。
 
-
-
-
+要监视的包是 `com.adobe.cq.social.messaging`。

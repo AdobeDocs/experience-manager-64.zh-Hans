@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 57%
 
 ---
 
@@ -40,15 +43,15 @@ Search＆Promote 服务器上配置了一些 facet，这也是每个组件提供
   </tr> 
   <tr> 
    <td>痕迹导航</td> 
-   <td>显示搜索关键字以及用户已应用于搜索结果的筛选器序列。</td> 
+   <td>显示搜索关键字以及用户已应用于搜索结果的过滤器序列。</td> 
   </tr> 
   <tr> 
    <td>复选框列表彩块化</td> 
-   <td>用于选择facet以筛选搜索结果的复选框列表。</td> 
+   <td>用于选择彩块化以筛选搜索结果的一列表复选框。</td> 
   </tr> 
   <tr> 
    <td>下拉列表彩块化</td> 
-   <td>用于筛选搜索结果的facet下拉列表。</td> 
+   <td>用于筛选搜索结果的facet的下拉列表。</td> 
   </tr> 
   <tr> 
    <td>链接列表彩块化</td> 
@@ -79,34 +82,34 @@ Search＆Promote 服务器上配置了一些 facet，这也是每个组件提供
 
 **[!UICONTROL 分页]**&#x200B;组件使用户能够浏览搜索结果的多个页面。用户可以查看页数、移到下一页或上一页、选择要打开的页面，或将所有结果合并到一个页面。
 
-![schpageination](assets/srchpagination.png)
+![srpageing](assets/srchpagination.png)
 
 You can configure the following component properties in [!UICONTROL Edit] mode to control runtime behavior:
 
 * **[!UICONTROL 隐藏单个结果页]** -选择此选项可在搜索返回单个结果页时隐藏页面导航控件。
 * **[!UICONTROL 隐藏第一页／最后一页]** -选择此选项可防止用户跳转至结果的第一页或最后一页。
 * **[!UICONTROL 隐藏上一页／下一页]** -确定用户是否可以相对于当前页面导航结果页面。
-* **[!UICONTROL 隐藏全部查看]** -确定用户是否可以将所有搜索结果合并到单个页面。 通常，提供分页数据可以更有效地使用服务器资源。选择此选项可阻止在一个响应消息中传输较大数据集。
+* **[!UICONTROL 全部隐藏视图]** -确定用户是否可以将所有搜索结果合并到单个页面。 通常，提供分页数据可以更有效地使用服务器资源。选择此选项可阻止在一个响应消息中传输较大数据集。
 
 ## 允许按 facet 筛选结果 {#enabling-the-filtering-of-results-by-facets}
 
 您可以允许用户按 facet 筛选搜索结果。The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. 使用这些组件时，您还应包含&#x200B;**[!UICONTROL 痕迹导航]**&#x200B;组件。痕迹导航可指示当前使用的筛选器。
 
-The **[!UICONTROL Checkbox List Facet**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
 
-* **[!UICONTROL Facet Name]** —用于筛选器的facet的名称。
+* **[!UICONTROL Facet Name]** —— 用于过滤器的facet的名称。
 
 **[!UICONTROL 复选框列表 Facet]** 组件会显示包含附带复选框的 facet 列表。使用&#x200B;**[!UICONTROL 复选框列表 Facet]**，用户可以查看包含多个 facet 项目的结果子集。例如，可以使用“品牌”facet，因为多个品牌可提供相同类型的产品。
 
 每个与搜索结果关联的 facet 都会显示一个复选框。当用户选择某个复选框时，页面将重新加载以显示更新的结果集。所有复选框均会保留在页面上，以便客户可以随时在筛选器中添加或删除 facet：
 
-![sandcheckboxcomp](assets/sandpcheckboxcomp.png)
+![sandpcheckboxcomp](assets/sandpcheckboxcomp.png)
 
 **[!UICONTROL 下拉列表 Facet]** 组件使客户能够从下拉列表中选择一个 facet 项目。当您希望客户一次只关注一个 facet 项目时，此组件非常有用。例如，“专栏”facet 有助于客户能够按性别缩小产品搜索范围。John 要搜索“牛仔裤”**，然后在男士专栏中进行筛选。
 
 下拉列表中填充了与所有搜索结果关联的 facet。在下拉列表中选择一个项目后，页面将重新加载以显示更新的结果集。下拉列表中的项目不会发生更改，以便客户可以随时切换 facet。
 
-![sanddropdowndepartment](assets/sandpdropdowndepartment.png)
+![沙滴管](assets/sandpdropdowndepartment.png)
 
 **[!UICONTROL 链接列表 Facet]** 组件使客户能够将焦点逐步缩小到归类为多个 facet 成员或 facet 的项目。
 
@@ -123,7 +126,7 @@ The links in the list also changes when a filter is applied from a different typ
 您可以在编辑模式下配置痕迹导航的以下属性，以便自定义该组件的外观：
 
 * **[!UICONTROL 分隔符]** -定义要充当每个痕迹导航之间分隔符的字符或字符串。 分隔符字段接受任何字符串作为输入。 默认设置为“>”（不带引号）
-* **[!UICONTROL 尾部分隔符]** -定义要在痕迹导航末尾显示的字符或字符串。 “结尾分隔符”字段接受任何字符串作为输入。 此字段的默认设置为“blank”（即痕迹导航行末尾不显示任何内容）
+* **[!UICONTROL 尾部分隔符]** -定义要在痕迹导航末尾显示的字符或字符串。 “结尾分隔符”字段接受任何字符串作为输入。 此字段的默认设置为“空白”（即痕迹导航行末尾不显示任何内容）
 
 ## 添加搜索框 {#adding-search-boxes}
 
@@ -132,7 +135,7 @@ The **[!UICONTROL Search]** component enables customers to perform keyword searc
 Configure the following properties in **[!UICONTROL Edit]** mode to control runtime behavior:
 
 * **[!UICONTROL 结果页面路径]** -显示搜索结果的页面的路径。
-* **[!UICONTROL 启用自动完成]** -选择此选项可在客户开始在搜索框中键入内容时显示建议的搜索关键字。
+* **[!UICONTROL 启用自动完成]** -选择此项可在客户开始在搜索框中键入内容时显示建议的搜索关键字。
 
 ![sandsearchcomp](assets/sandpsearchcomp.png)
 
@@ -146,5 +149,5 @@ The **[!UICONTROL Banners]** component provides one configurable property named 
 
 此图显示了在页面中添加的用于创建以下功能齐全的 Search&amp;Promote 结果页面的组件。
 
-![1328213789109](assets/1328213789109.png)![沙盒示例](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![sandpageexample](assets/sandppageexample.png)
 

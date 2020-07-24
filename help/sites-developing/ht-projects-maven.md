@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 0%
@@ -360,10 +360,6 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/myproject"/>
-    <filter root="/etc/msm/rolloutconfigs/myrolloutconfig"/>
-    <filter root="/etc/blueprints/mysite/globalsite"/>
-    <filter root="/etc/workflow/models/myproject"/>
-    <filter root="/etc/designs/myproject"/>
     <filter root="/content/myproject/sample-content"/>
 </workspaceFilter>
 ```
@@ -388,7 +384,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 
 要实现此目的，您可以提供一个文件 `src/main/content/META-INF/vault/filter-vlt.xml`。 如果此文件存在，则它将由VLT工具使用，例如，执行和 `vlt up` 时 `vlt ci`或设置时 `vlt sync` 使用。 content-package-maven-plugin在创建包时将继续 `src/main/content/META-INF/vault/filter.xml` 使用文件。
 
-例如，要使本地 `/libs/foundation` 可用进行开发，但只包 `/apps/myproject` 含在包中，请使用以下两个文件。
+例如，要使本地 `/libs/foundation` 可用进行开发，但只包含 `/apps/myproject` 在包中，请使用以下两个文件。
 
 #### src/main/content/META-INF/vault/filter.xml {#src-main-content-meta-inf-vault-filter-xml-1}
 

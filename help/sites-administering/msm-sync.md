@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 8cf319b54e1a2afa1385f9bea1e946eaad0e60f7
+source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 75%
+source-wordcount: '2671'
+ht-degree: 74%
 
 ---
 
@@ -187,7 +187,7 @@ ht-degree: 75%
   </tr> 
   <tr> 
    <td>workflow</td> 
-   <td><p>启动由 Target 属性定义的工作流（仅适用于页面），并将 Live Copy 作为有效负荷。</p> <p>目标路径是模型节点的路径，例如，/etc/workflow/models/request_for_activation/jcr:content/model</p> </td> 
+   <td><p>启动由 Target 属性定义的工作流（仅适用于页面），并将 Live Copy 作为有效负荷。</p> <p>目标路径是模型节点的路径。</p> </td> 
    <td>target：（字符串）工作流模型的路径。<br /> </td> 
   </tr> 
   <tr> 
@@ -408,11 +408,12 @@ MSM 允许您指定一般使用的转出配置集，并在需要时可以覆盖�
 
 指定要用作系统默认值的转出配置。要指定默认值，请配置 OSGi 服务：
 
-* **Day CQ WCM Live Relationship Manager** 服务 PID 为 `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Day CQ WCM Live Relationship Manager** 服务 PID 为 
+`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)[](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)
+Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
-* Configure the service using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [repository node](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
-* 在 Web 控制台中，要配置的属性名称是默认转出配置。`liverelationshipmgr.relationsconfig.default`
+* 在 Web 控制台中，要配置的属性名称是默认转出配置。
+* Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.
 
-Using a repository node, the name of the property to configure is `liverelationshipmgr.relationsconfig.default`.****
+将此属性值设置为要用作系统默认值的转出配置的路径。The default value is `/libs/msm/wcm/rolloutconfigs/default`, which is the **Standard Rollout Config**.

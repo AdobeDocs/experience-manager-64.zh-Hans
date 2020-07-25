@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Managing User Guide
+user-guide-title: AEM 6.4管理用户指南
+user-guide-description: Learn how to manage an AEM project.
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '63'
+ht-degree: 44%
 
 ---
 
@@ -12,14 +16,14 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
 # AEM 6.4管理用户指南 {#managing}
 
 + [管理用户指南](home.md)
-+ 管理——最佳实践清单 {#managing-best-practices-checklist}
-   + [管理项目——最佳实践清单](best-practices.md)
++ 管理——最佳实践核对清单 {#managing-best-practices-checklist}
+   + [管理项目——最佳实践核对清单](best-practices.md)
    + [清单](best-practices-checklist.md)
    + [术语表](best-practices-glossary.md)
    + [清单——进一步参考](best-practices-further-reference.md)
 + 管理——进一步参考 {#managing-further-reference}
    + [硬件大小调整规范](hardware-sizing-guidelines.md)
-   + [企业开发运营](enterprise-devops.md)
+   + [企业 DevOps](enterprise-devops.md)
    + [SEO 和 URL 管理最佳实践](seo-and-url-management.md)
 + 辅助功能 {#accessibility}
    + [AEM 和 Web 辅助功能规范](web-accessibility.md)

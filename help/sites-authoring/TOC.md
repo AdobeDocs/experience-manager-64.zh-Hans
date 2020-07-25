@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Authoring User Guide
+user-guide-title: AEM 6.4创作用户指南
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 88%
 
 ---
 
@@ -47,7 +51,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [组件控制台](default-components-console.md)
    + [响应式布局](responsive-layout.md)
    + [内容分析](content-insights.md)
-   + [创建辅助内容（WCAG 2.0 符合性）](creating-accessible-content.md)
+   + [创建无障碍内容（WCAG 2.0 合规性）](creating-accessible-content.md)
    + [基架](scaffolding.md)
    + [在设计模式中配置组件](default-components-designmode.md)
    + [基础组件](default-components-foundation.md)
@@ -83,7 +87,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [管理受众](managing-audiences.md)
    + [创建和管理选件](offerlib.md)
    + [了解分段](segmentation-overview.md)
-+ AEM和Adobe Campaign {aem-adobe-campaign}
++ AEM和Adobe Campaign{aem-adobe-活动}
    + [使用 Adobe Campaign](adobe-campaign.md)
    + [使用 Adobe Campaign Classic 和 Adobe Campaign Standard](campaign.md)
    + [定位您的 Adobe Campaign](target-adobe-campaign.md)

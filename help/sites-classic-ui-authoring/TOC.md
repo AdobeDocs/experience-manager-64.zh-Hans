@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Classic UI Authoring User Guide
+user-guide-title: AEM 6.4经典UI创作用户指南
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 91%
 
 ---
 
@@ -12,7 +16,7 @@ source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
 # AEM 6.4 Classic UI Authoring User Guide {#classic-ui}
 
 + [经典UI创作指南概述](home.md)
-+ 经典UI创作简介 {#introduction}
++ 经典UI创作介绍 {#introduction}
    + [创作的首要步骤](classic-page-author-first-steps.md)
    + [在经典 UI 中进行创作](classicui.md)
    + [使用创作环境](author-env.md)
@@ -32,7 +36,7 @@ source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
    + [编辑页面属性](classic-page-author-edit-page-properties.md)
    + [编辑页面时添加注释](classic-page-author-annotations.md)
    + [解决 AEM 中有关创作方面的问题](classic-page-author-troubleshooting.md)
-   + [创建辅助内容（WCAG 2.0 符合性）](classic-page-author-accessible-content.md)
+   + [创建无障碍内容（WCAG 2.0 合规性）](classic-page-author-accessible-content.md)
    + [创作适用于移动设备的页面](classic-feature-mobile.md)
    + [用于创作页面的组件](classic-page-author-edit-mode.md)
    + [编辑页面时的键盘快捷键](classic-page-author-keyboard-shortcuts.md)

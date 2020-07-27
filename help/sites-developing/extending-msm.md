@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 3309352520878fd5b2bff91ce4d18d5b1a90b97d
+source-git-commit: 6d0bd714548e62dcb63298e3d26c84c1a3d37bc9
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2597'
 ht-degree: 2%
 
 ---
@@ -85,7 +85,7 @@ A( `Blueprint` 如在 [Blueprint配置中](/help/sites-administering/msm.md#sour
 
    * 首次设置Live Copy时还会使用RolloutConfig（它触发LiveActions）。
 
-### 创建新同步操作 {#creating-a-new-synchronization-action}
+## 创建新同步操作 {#creating-a-new-synchronization-action}
 
 创建要用于转出配置的自定义同步操作。 当安装的操作不满足您的 [特定应用程序要](/help/sites-administering/msm-sync.md#installed-synchronization-actions) 求时，创建同步操作。 为此，请创建两个类：
 
@@ -105,7 +105,7 @@ A( `Blueprint` 如在 [Blueprint配置中](/help/sites-administering/msm.md#sour
    * `createAction`: 创建实例 `LiveAction`。 可选参 `Resource` 数可用于提供配置信息。
    * `createsAction`: 返回关联的名称 `LiveAction`。
 
-#### 访问LiveAction配置节点 {#accessing-the-liveaction-configuration-node}
+### 访问LiveAction配置节点 {#accessing-the-liveaction-configuration-node}
 
 使用存 `LiveAction` 储库中的配置节点存储影响实例运行时行为的 `LiveAction` 信息。 存储配置的存储库中的节 `LiveAction` 点在运行时可供对 `LiveActionFactory` 象使用。 因此，您可以根据需要向配置节点添加属性并在实施 `LiveActionFactory` 中使用它们。
 
@@ -125,7 +125,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-#### 访问目标节点、源节点和LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### 访问目标节点、源节点和LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 以下对象作为对象方法 `execute` 的参数提 `LiveAction` 供：
 
@@ -150,7 +150,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >参 `Resource` 数可以是 `null` 或不适应 `Resources` 对象（如对象）的 `Node`[`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 对象。
 
-### Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
+## Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
 
 当安装的转出配置不符合您的应用程序要求时，创建转出配置：
 
@@ -163,7 +163,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >另请参阅自 [定义转出的最佳实践](/help/sites-administering/msm-best-practices.md#customizing-rollouts)。
 
-#### Create the Rollout Configuration {#create-the-rollout-configuration}
+### Create the Rollout Configuration {#create-the-rollout-configuration}
 
 要创建新转出配置，请执行以下操作：
 
@@ -212,7 +212,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 单击“ **全部保存**”。
 
-#### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
+### Add Synchronization Actions to the Rollout Configuration {#add-synchronization-actions-to-the-rollout-configuration}
 
 转出配置存储在您在 [节点下创建](#create-the-rollout-configuration) 的转出配置节点 `/apps/msm/<your-project>/rolloutconfigs` 下。
 
@@ -233,7 +233,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 单击“ **全部保存**”。
 
-### 创建和使用简单的LiveActionFactory类 {#creating-and-using-a-simple-liveactionfactory-class}
+## 创建和使用简单的LiveActionFactory类 {#creating-and-using-a-simple-liveactionfactory-class}
 
 按照本节中的步骤开发并 `LiveActionFactory` 在转出配置中使用它。 这些过程使用Maven和Eclipse开发和部署 `LiveActionFactory`:
 
@@ -252,7 +252,7 @@ GITHUB上的代码
 * [在GitHub上打开experiencemanager-java-msmrollout项目](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * 以ZIP文件的 [形式下载项目](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
-#### 创建Maven项目 {#create-the-maven-project}
+### 创建Maven项目 {#create-the-maven-project}
 
 以下过程要求您已将adobe-public用户档案添加到Maven设置文件。
 
@@ -278,7 +278,7 @@ GITHUB上的代码
 
 1. 开始Eclipse并 [导入Maven项目](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse)。
 
-#### 向POM文件添加依赖项 {#add-dependencies-to-the-pom-file}
+### 向POM文件添加依赖项 {#add-dependencies-to-the-pom-file}
 
 添加依赖关系，以便Eclipse编译器可以引用代码中使用的 `LiveActionFactory` 类。
 
@@ -368,7 +368,7 @@ GITHUB上的代码
     </dependency>
    ```
 
-#### 实施LiveActionFactory {#implement-liveactionfactory}
+### 实施LiveActionFactory {#implement-liveactionfactory}
 
 以下类 `LiveActionFactory` 实现一个 `LiveAction` 类，它记录有关源和目标页的消息，并将属性 `cq:lastModifiedBy` 从源节点复制到目标节点。 实时操作的名称为 `exampleLiveAction`。
 
@@ -534,7 +534,7 @@ GITHUB上的代码
    13.08.2013 14:34:55.454 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle com.adobe.example.msm.MyLiveActionFactory-bundle [316]
    ```
 
-#### Create the Example Rollout Configuration {#create-the-example-rollout-configuration}
+### Create the Example Rollout Configuration {#create-the-example-rollout-configuration}
 
 创建使用您创建的MSM转 `LiveActionFactory` 出配置：
 
@@ -544,7 +544,7 @@ GITHUB上的代码
    * **名称**: examplerolloutconfig
    * **cq:trigger**: `publish`
 
-#### 将Live Action添加到示例转出配置 {#add-the-live-action-to-the-example-rollout-configuration}
+### 将Live Action添加到示例转出配置 {#add-the-live-action-to-the-example-rollout-configuration}
 
 配置您在上一个过程中创建的转出配置，以便它使用 `ExampleLiveActionFactory` 类。
 
@@ -565,7 +565,7 @@ GITHUB上的代码
 
 1. 单击“ **全部保存**”。
 
-#### 创建Live Copy {#create-the-live-copy}
+### 创建Live Copy {#create-the-live-copy}
 
 [使用转出配置](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) ，创建We.Retail Reference Site的English/Products分支的Live Copy:
 
@@ -581,7 +581,7 @@ GITHUB上的代码
 ```
 
 <!--
-### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
+## Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
 In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
 
@@ -600,7 +600,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
 -->
 
-### 更改语言名称和默认国家／地区 {#changing-language-names-and-default-countries}
+## 更改语言名称和默认国家／地区 {#changing-language-names-and-default-countries}
 
 AEM使用一组默认的语言和国家／地区代码。
 
@@ -630,9 +630,7 @@ MSM使用语言和国家代码的存储列表来确定与页面语言版本名�
 
    命名新文件夹 `wcm`。
 
-1. 重复上一步，创建文 `/apps/wcm/core` 件夹树。 在名为的核心中创 `sling:Folder` 建类型节点 `resources`。
-
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+1. 重复上一步，创建文 `/apps/wcm/core` 件夹树。 在名为的核心中创 `sling:Folder` 建类型节点 `resources`。 <!-- ![chlimage_1-39](assets/chlimage_1-39.png) -->
 
 1. 右键单击该节 `/libs/wcm/core/resources/languages` 点，然后单 **击复制**。
 1. 右键单击文件夹 `/apps/wcm/core/resources` ，然后单击“ **粘贴”**。 根据需要修改子节点。
@@ -642,7 +640,7 @@ MSM使用语言和国家代码的存储列表来确定与页面语言版本名�
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-### 在页面属性上配置MSM锁（触屏优化UI） {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
+## 在页面属性上配置MSM锁（触屏优化UI） {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
 创建自定义页面属性时，您可能需要考虑新属性是否有资格转出到任何Live Copy。
 

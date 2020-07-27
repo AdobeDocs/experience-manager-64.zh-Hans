@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
+source-git-commit: 42238ab0c76fbe114ae1646c9f69311df45d8722
 workflow-type: tm+mt
-source-wordcount: '21534'
+source-wordcount: '21532'
 ht-degree: 23%
 
 ---
@@ -99,7 +99,7 @@ AEM 6.4.8.0是一项重要更新，包含新功能、关键客户请求的增强
 
 ### 集成 {#integrations-6480}
 
-* 在 **Experience Manager** 云服务中配置Adobe **Analytics时，选择****** 报告源后，公司和报告包下拉菜单将处于隐藏状态(NPR-31729)。
+* 在 **公司****云服务中配置Adobe** Analytics时，一旦选择了报告源 **** ,Experience Manager和报告包下拉菜单就会被隐藏(NPR-31729)。
 
 * Adobe Campaign属性不会在创建链接到Adobe Campaign的新闻稿的语言副本时清除，而在复制或粘贴链接到Adobe Campaign的新闻稿时清除(NPR-32540)。
 
@@ -163,7 +163,7 @@ AEM 6.4.8.0是一项重要更新，包含新功能、关键客户请求的增强
 
 * 文档服务： 将XDP文件汇编并转换为PDF文件时显示错误消息(NPR-31821)。
 
-* Analytics在站点页面上提交或放弃表单时不显示适当结果(NPR-31359)。
+* Analytics在“站点”页面上提交或放弃表单时不显示适当结果(NPR-31359)。
 
 ### 以前 Service Pack 中包含的修补程序和功能包 {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
@@ -995,10 +995,6 @@ AEM 6.4.4.0 Forms 的重要功能亮点包括：
 
 * XDP模板中的某些JPEG图像无法正常呈现。  NPR-26702：适用于 LC-3917457 的修补程序
 
-**表单——过时**
-
-* 处理TIFF文件时，纸质文件捕获服务崩溃。 NPR-28079：适用于 CQ-4240649 的修补程序
-
 **表单 - 工作流**
 
 * 在JBoss 7上，在an.lca中具有默认提交流程的HTML5表单不工作。 NPR-28675：适用于 CQ-4243928 的修补程序
@@ -1255,6 +1251,7 @@ AEM 6.4.3.0 Forms 的重要功能亮点包括：
 
 * 无法显示PDF Generator的“标准”报告和“规范”设置。 NPR-26715：适用于 CQ-4253384 的修补程序
 * AIX Forms加载项包中缺少convertpdf二进制文件，这在调用PDFA服务时会导致失败。 适用于 CQ-4257873 的修补程序
+* 处理TIFF文件时，纸质文件捕获服务崩溃。 NPR-28079：适用于 CQ-4240649 的修补程序
 
 **文档服务**
 
@@ -1494,7 +1491,7 @@ AEM 6.4.2.0的一些主要亮点是：
 * 执行资产更新工作流时，资产语言副本及其缩略图将变为空白。 适用于 CQ-4250641 的修补程序
 * 重复ID: id属性值必须唯一。 适用于 CQ-4250905 的修补程序
 * 标签： 表单元素必须具有标签。 适用于 CQ-4250906 的修补程序
-* 链接名称： 链接必须有可辨别的文本。 适用于 CQ-4250907 的修补程序
+* 链接名称： 链接必须具有可辨别的文本。 适用于 CQ-4250907 的修补程序
 * 端口文件夹元数据模板迁移JMX和ServiceUserMapping。 适用于 CQ-4252947 的修补程序
 * WebdriverIO测试未在CQ/dam的release/640分支中运行。 适用于 CQ-4252749 的修补程序
 * 如果链接已发布，则不会重构指向已移动资产的链接。 适用于 CQ-4245756 的修补程序

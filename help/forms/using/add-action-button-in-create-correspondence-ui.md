@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1896'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-Correndection Management解决方案允许您向Create Correndections用户界面添加自定义操作。
+Corrensementing Management解决方案允许您向Create Correndections用户界面添加自定义操作。
 
 本文档中的情景说明了如何在“创建对应用户界面”中创建按钮，将信件共享为附加到电子邮件的审阅PDF。
 
@@ -30,7 +30,7 @@ Correndection Management解决方案允许您向Create Correndections用户界�
 要完成此方案，您需要：
 
 * CRX和JavaScript知识
-* LiveCycle Server
+* LiveCycle服务器
 
 ## 方案： 在“创建对应用户界面”中创建按钮，以发送信件以供审阅 {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
@@ -38,7 +38,7 @@ Correndection Management解决方案允许您向Create Correndections用户界�
 
 1. 将按钮添加到“创建对应的用户界面”
 1. 向按钮添加操作处理
-1. 添加LiveCycle进程以启用操作“处理”
+1. 添加LiveCycle流程以启用操作“处理”
 
 ### 将按钮添加到“创建对应”用户界面 {#add-the-button-to-the-create-correspondence-user-interface}
 
@@ -92,7 +92,7 @@ Correndection Management解决方案允许您向Create Correndections用户界�
    </extensionsConfig> 
    ```
 
-1. 要通过电子邮件发送信件，您可以使用LiveCycle Forms Workflow。 在acmExtensionsConfig.xml中的modelExtension标签下添加customAction标签，如下所示：
+1. 要发送电子邮件，您可以使用LiveCycleForms Workflow。 在acmExtensionsConfig.xml中的modelExtension标签下添加customAction标签，如下所示：
 
    ```xml
     <customAction name="Letter Review" label="Letter Review" tooltip="Letter Review" styleName="" permissionName="forms-users" actionHandler="CM.domain.CCRCustomActionHandler">
@@ -117,7 +117,7 @@ Correndection Management解决方案允许您向Create Correndections用户界�
 
    | **名称** | **描述** |
    |---|---|
-   | serviceName | 如果customAction包含名为serviceName的子标记，则单击相关按钮／链接后，将调用由serviceName标记表示的名称的进程。 确保此过程具有与Letter PostProcess相同的签名。 在服务名称中添加“Forms Workflow ->”前缀。 |
+   | serviceName | 如果customAction包含名为serviceName的子标记，则单击相关按钮／链接后，将调用由serviceName标记表示的名称的进程。 确保此过程具有与Letter PostProcess相同的签名。 在服务名称中添加“Forms Workflow->”前缀。 |
    | 标记名称中包含cm_前缀的参数 | 如果customAction包含以cm_开头的子标签，则在后期处理（无论是字母后期处理还是serviceName标签所表示的特殊进程）中，这些参数在删除cm_前缀的相关标签下的输入XML代码中可用。 |
    | actionName | 只要发布过程需要单击，提交的XML就会在标记下包含一个带有用户操作名称的特殊标记。 |
 
@@ -161,9 +161,9 @@ ACMExtensionsMessages.properties文件包含“创建对应”用户界面中各
 
 1. 单击“ **[!UICONTROL 全部保存]**”。
 
-#### 重新启动Adobe Asset Composer构建块捆绑 {#restart-the-adobe-asset-composer-building-block-bundle}
+#### 重新启动Adobe资产书写器构建块捆绑 {#restart-the-adobe-asset-composer-building-block-bundle}
 
-在进行每个服务器端更改后，请重新启动Adobe Asset Composer构建块捆绑。 在此方案中，服务器端的acmExtensionsConfig.xml和ACMExtensionsMessages.properties文件将进行编辑，因此Adobe Asset Composer构建块捆绑需要重新启动。
+在进行每个服务器端更改后，重新启动Adobe资产书写器构建块捆绑。 在此方案中，服务器端的acmExtensionsConfig.xml和ACMExtensionsMessages.properties文件将进行编辑，因此Adobe资产书写器构建块捆绑需要重新启动。
 
 >[!NOTE]
 >
@@ -171,11 +171,11 @@ ACMExtensionsMessages.properties文件包含“创建对应”用户界面中各
 
 1. 转到 `https://[host]:[port]/system/console/bundles`. 如有必要，请以管理员身份登录。
 
-1. 找到Adobe Asset Composer构建块捆绑。 重新启动捆绑包： 单击“停止”，然后单击“开始”。
+1. 找到Adobe资产书写器构建块捆绑。 重新启动捆绑包： 单击“停止”，然后单击“开始”。
 
-   ![Adobe Asset Composer构建块](assets/6_assetcomposerbuildingblockbundle.png)
+   ![Adobe资产书写器构建块](assets/6_assetcomposerbuildingblockbundle.png)
 
-重新启动Adobe Asset Composer构建块捆绑后，自定义按钮将显示在“创建对应用户界面”中。 您可以在“创建对应用户界面”中打开一个字母以预览自定义按钮。
+重新启动Adobe资产书写器构建块捆绑后，自定义按钮将显示在创建对应用户界面中。 您可以在“创建对应用户界面”中打开一个字母以预览自定义按钮。
 
 ### 向按钮添加操作处理 {#add-action-handling-to-the-button}
 
@@ -322,19 +322,18 @@ ACMExtensionsMessages.properties文件包含“创建对应”用户界面中各
       '</div>';
       ```
 
-### 添加LiveCycle进程以启用操作处 <span class="acrolinxCursorMarker"></span>理 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### 添加LiveCycle流程以启用操作处 <span class="acrolinxCursorMarker"></span>理 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 在此方案中，启用以下组件，它们是附加的components.zip文件的一部分：
 
-* DSC组件jar(DSCSample.jar)
-* 发送信函以供审阅流程LCA(SendLetterForReview.lca)
+* DSC组件罐(`DSCSample.jar`)
+* 发送信函以供审阅流程LCA(`SendLetterForReview.lca`)
 
-下载并解压缩components.zip文件，获取DSCSample.jar和SendLetterForReview.lca文件。 按照以下过程中的指定使用这些文件。\
-components.zip
+下载并解压 `components.zip` 文件以获取 `DSCSample.jar` 和 `SendLetterForReview.lca` 文件。 按照以下过程中的指定使用这些文件。
 
 [获取文件](assets/components.zip)
 
-#### 配置LiveCycle Server以运行LCA进程 {#configure-the-livecycle-server-to-run-the-lca-process}
+#### 配置LiveCycle服务器以运行LCA进程 {#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
@@ -343,7 +342,7 @@ components.zip
 LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据。
 
 1. 转到并 `https://[server]:[port]/system/console/configMgr` 以管理员身份登录。
-1. 找到Adobe LiveCycle Client SDK配置，然后单 **[!UICONTROL 击编]** 辑（编辑图标）。 此时将打开“配置”面板。
+1. 找到AdobeLiveCycle客户端SDK配置，然后单 **[!UICONTROL 击编辑]** （编辑图标）。 此时将打开“配置”面板。
 
 1. 输入以下详细信息，然后单击 **[!UICONTROL 保存]**:
 
@@ -351,9 +350,9 @@ LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据�
    * **[!UICONTROL 用户名]**: LC服务器的管理员用户名
    * **[!UICONTROL 密码]**: 管理员用户名的口令
 
-   ![Adobe LiveCycle Client SDK配置](assets/3_clientsdkconfiguration.png)
+   ![AdobeLiveCycle客户端SDK配置](assets/3_clientsdkconfiguration.png)
 
-#### 安装LiveCycle Archive(LCA) {#install-livecycle-archive-lca}
+#### 安装LiveCycle存档(LCA) {#install-livecycle-archive-lca}
 
 启用电子邮件服务流程所需的LiveCycle流程。
 
@@ -381,20 +380,20 @@ LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据�
 
 1. 单击&#x200B;**[!UICONTROL 导入]**。
 
-#### 将ServiceName添加到AllowListed服务列表 {#adding-servicename-to-the-allowlisted-service-list}
+#### 将ServiceName添加到已列入允许列表服务列表 {#adding-servicename-to-the-allowlisted-service-list}
 
 在AEM服务器中提到要访问AEM服务器的LiveCycle服务。
 
 1. 以管理员身份登录 `https:/[host]/:[port]/system/console/configMgr`。
 
-1. 找到并单 **[!UICONTROL 击“Adobe LiveCycle Client SDK Configuration”]**。 出现“Adobe LiveCycle Client SDK Configuration”（Adobe LiveCycle客户端SDK配置）面板。
+1. 找到并单击 **[!UICONTROL AdobeLiveCycle客户端SDK配置]**。 出现“AdobeLiveCycle客户端SDK配置”面板。
 1. 在“服务名称”列表中，单击+图标，并添加一 **[!UICONTROL 个serviceName SendLetterForReview/SendLetterForReviewProcess]**。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
 #### 配置电子邮件服务 {#configure-the-email-service}
 
-在此方案中，要使Corresponce Management能够发送电子邮件，请在LiveCycle服务器中配置电子邮件服务。
+在此方案中，要使通信管理能够发送电子邮件，请在LiveCycle服务器中配置电子邮件服务。
 
 1. 使用管理员凭据登录到Livecycle Server adminui `https:/[lc server]:[lc port]/adminui`。
 
@@ -408,37 +407,37 @@ LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据�
 
 #### 配置DSC服务 {#configure-the-dsc-service}
 
-要使用Corresponce Management API，请下载DSCSample.jar(作为components.zip的一部分附加在此文档中)并将其上传到LiveCycle服务器。 将DSCSample.jar文件上传到LiveCycle服务器后，AEM服务器将使用DSCSample.jar文件访问renderLetter API。
+要使用Corressing Management API，请下载( `DSCSample.jar` 作为其一部分附加在此文档中)并 `components.zip`将其上传到LiveCycle服务器。 将文 `DSCSample.jar` 件上传到LiveCycle服务器后，AEM服务器 `DSCSample.jar` 使用该文件访问renderLetter API。
 
-有关详细信息，请参 [阅使用Adobe LiveCycle连接AEM Forms](/help/forms/using/aem-livecycle-connector.md)。
+有关详细信息，请参 [阅将AEM Forms与AdobeLiveCycle连接](/help/forms/using/aem-livecycle-connector.md)。
 
-1. 更新DSCSample.jar中cmsa.properties中的AEM服务器URL，该AEM服务器位于以下位置：
+1. 更新cmsa.properties中的AEM服务器 `DSCSample.jar`URL，它位于以下位置：
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. 在配置文件中提供以下参数：
 
-   * **crx.serverUrl**=https:/[host]/:[port]/context path[]/[AEM URL]
+   * **crx.serverUrl**=https:/[host]/:[port]/context path[][/AEM URL]
    * **crx.username**= AEM用户名
    * **crx.password**= AEM密码
    * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
-   >每次在服务器端进行任何更改时，请重新启动LiveCycle Server。 有关创建自己的LiveCycle组件的信息，请参 [阅通过自定义DSC开发扩展LiveCycle ES](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)。
+   >每次在服务器端进行任何更改时，请重新启动LiveCycle服务器。 有关创建您自己的LiveCycle组件的信息，请参 [阅通过自定义DSC开发扩展LiveCycleES软件](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)。
 
-   DSCSample.jar文件使用renderLetter API。 有关renderLetter API的详细信息，请参 [阅接口LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
+   文 `DSCSample.jar` 件使用 `renderLetter` API。 有关renderLetter API的详细信息，请参 [阅接口LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
 
 #### 将DSC导入LiveCyle {#import-dsc-to-livecyle}
 
-DSCSample.jar文件使用renderLetter API从C作为输入的XML数据将字母渲染为PDF字节。 有关renderLetter和其他API的详细信息，请参 [阅Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
+`DSCSample.jar` 文件使用 `renderLetter` API从C作为输入的XML数据中将字母表示为PDF字节。 有关renderLetter和其他API的详细信息，请参 [阅Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
 
 1. 开始工作台和登录。
 1. 选择 **[!UICONTROL 窗口>显示视图>组件]**。 组件视图将添加到Workbench ES2。
 
 1. 右键单击“组 **[!UICONTROL 件]** ”，然后选择 **[!UICONTROL “安装组件”]**。
 
-1. 通过文 **[!UICONTROL 件浏览器选择]** DSCSample.jar文件，然后单击“ **[!UICONTROL 打开”]**。
+1. 通过文 `DSCSample.jar` 件浏览器选择文件，然后单击“ **[!UICONTROL 打开]**”。
 1. 右键单击 **[!UICONTROL RenderWrapper]** ，然后选择 **[!UICONTROL 开始组件]**。 如果组件开始，则组件名称旁边将显示一个绿色箭头。
 
 ## 发送信函供审阅 {#send-letter-for-review}

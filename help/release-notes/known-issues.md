@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 4%
@@ -27,11 +27,13 @@ ht-degree: 4%
 不支持混合设备。 使用此类设备时可能会遇到各种问题。 以下建议的过程有助于解决许多问题：
 
 如果您使用Google Chrome作为浏览器：
+
 * 在地 `chrome://flags/` 址栏中键入，然后按Enter。
 * 单击“启用触控事件”>“禁用”。
 * 重新启动浏览器（所有选项卡和窗口）。
 
 如果您将Mozilla Firefox用作浏览器：
+
 * 在地 `about:config` 址栏中键入，然后按Enter。
 * 筛选设置 `dom.w3c`。
 * 确保设置为 `0` 和 `false`。
@@ -132,12 +134,12 @@ ht-degree: 4%
 
 (CQ-4238462)
 
-### Adobe Sign集成
+### Adobe Sign整合
 
-* Adobe Sign调度程序间歇性地停止工作，因此待处理的表单不会移至提交。 要解决此问题，请从AEM Web控制 **台(位于https:// Server** :[*port*]/system/console/bundles)重新启动Apache Sling调度程序支持&#x200B;[**] Bundle。
+* Adobe Sign调度程序间歇性地停止工作，因此待签名的表单不会移至提交。 要解决此问题，请从AEM **Web控制台(** https:// server:port [*/system*]/console/bundles)重新启&#x200B;[**]&#x200B;动Apache Sling调度程序支持包。
 
-### 自适应表单创作
+### 自适应Forms创作
 
 * 自适应表单中的图表组件占用的空间比通常占用的空间要多。
-* 在Forms Manager UI中保存自适应表单、自适应表单片段或交互式通信的属性时，会返回异常。
+* 在Forms管理器UI中保存自适应表单、自适应表单片段或交互式通信的属性时，会返回异常。
 * 在 Android 6.0 Samsung 设备上不接受为自适应表单文本框指定的最大字符数。(Ref# CQ-4235205)

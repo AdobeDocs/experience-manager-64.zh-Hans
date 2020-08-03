@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 5cf67e97775b39d6ec78ea0db46b5bc4a4476b78
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 26%
+source-wordcount: '2844'
+ht-degree: 25%
 
 ---
 
@@ -22,30 +22,12 @@ ht-degree: 26%
 
 ## 发行信息 {#release-information}
 
-<table> 
- <tbody>
-  <tr>
-   <th>产品</th> 
-   <td>Adobe Experience Manager<br /> </td> 
-  </tr>
-  <tr>
-   <th>版本</th> 
-   <td>6.4</td> 
-  </tr>
-  <tr>
-   <th>类型</th> 
-   <td>主要版本</td> 
-  </tr>
-  <tr>
-   <th>公开发行日期</th> 
-   <td>April 4, 2018<br /> </td> 
-  </tr>
-  <tr>
-   <th>推荐更新</th> 
-   <td>See <a href="https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html">AEM releases and updates</a></td> 
-  </tr>
- </tbody>
-</table>
+| 产品 | Adobe Experience Manager |
+|---|---|
+| 版本 | 6.4 |
+| 类型 | 主要版本 |
+| 公开发行日期 | 2018年4月4日 |
+| 推荐更新 | See [AEM releases and updates](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html) |
 
 ### 相关事项 {#trivia}
 
@@ -90,7 +72,7 @@ Adobe Experience Manager 6.4 的平台建立在基于 OSGi 的框架（Apache Sl
 
 #### 内容存储库 {#content-repository}
 
-* 通过在线修订清理更快、更高效地压缩。 内部测试显示，与AEM 6.3相比，新的尾部压缩速度提高了10倍，并可以以更少的IOPS回收更多磁盘空间。这会在运行在线修订清理时降低性能影响。 有关详细信息，请参 [阅文档页面](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes)。
+* 通过在线修订清理更快、更高效地压缩。 内部测试显示，新的尾部压缩比AEM 6.3快10倍，与6.3相比，它可以以更少的IOPS回收更多磁盘空间。这会在运行在线修订清理时降低性能影响。 有关详细信息，请参 [阅文档页面](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes)。
 
 * MongoMK的连续修订清理取代了计划清理维护
 * 提高了文档节点修订清理的效率
@@ -101,7 +83,7 @@ Adobe Experience Manager 6.4 的平台建立在基于 OSGi 的框架（Apache Sl
 
    * 索引一致性检查
    * 索引统计
-   * 索引配置Im/Export
+   * 索引配置导入或导出
    * 重新索引
 
 * 降低了与Lucene相关的存储库的增长，从而整体提高了系统性能
@@ -110,7 +92,7 @@ Adobe Experience Manager 6.4 的平台建立在基于 OSGi 的框架（Apache Sl
 
 #### 监测 {#monitoring}
 
-* 新的系 [统概述](/help/sites-administering/operations-dashboard.md#system-overview) ，提供有关所有与性能相关的系统状态和活动的快照视图
+* 新的系 [统概述](/help/sites-administering/operations-dashboard.md#system-overview) ，提供与性能相关的所有系统状态和活动的快照视图。
 * 围绕索引、 [查询](/help/sites-administering/operations-dashboard.md#health-checks) 和维护的一组新运行状况检查
 
 #### 项目和工作流 {#projects-and-workflows}
@@ -136,7 +118,7 @@ Full list of changes in [AEM Sites and Add-ons](sites.md).
 
 **[内容片段](/help/assets/content-fragments.md)**
 
-6.4中新增了可视内 [容模型编](/help/assets/content-fragments-models.md) 辑器和新 [的可配置组件](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) ，可提供灵活的HTML输出和JSON以包含在内容服务中。
+6.4中新增了可视内 [容模型编](/help/assets/content-fragments-models.md) 辑器和新 [的可配置组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html) ，可提供灵活的HTML输出和JSON以包含在内容服务中。
 
 **体验片段**
 
@@ -148,19 +130,19 @@ Sling Model Exporter和核心组件的各种增强功能包括在内，可提供
 
 #### 加快网站构建 {#gettings-sites-built-quicker}
 
-AEM 6.4完成对下一代组件模型的转换。 AEM 6.3中引入的核心组件概念现在已与样式系统相结合，它提供了一种构建新站点和扩展现有站点的高效方法。
+AEM 6.4完成对下一代组件模型的转换。 AEM 6.3中引入的核心组件概念现在与样式系统相结合，为构建新站点和扩展现有站点提供了一种有效的方法。
 
-建议的教程，用于了解如何最好地利用新的组件模型： [AEM Sites入门- WKND教程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+建议的教程，用于了解如何最好地利用新的组件模型： [AEM Sites入门- WKND教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 #### Screens 加载项 {#screens-add-on}
 
-在所有营销渠道（包括数字标牌和自助终端网络）中提供一致的信息是AEM Screens的代表。 AEM 6.4添加了在Microsoft Windows和Google Chrome OS硬件上运行Siggane Player的支持。 此外，还提供了对远程设备管理和计划(渠道组)的增强。
+在所有营销渠道（包括数字标牌和自助终端网络）中提供一致的信息是AEM Screens的代表。 AEM 6.4增加了在Microsoft Windows和Google Chrome OS硬件上运行Signage Player的支持。 此外，还提供了对远程设备管理和计划(渠道组)的增强。
 
 有关Screens更新的详细信息，请参阅 [AEM Screens用户指南](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)。
 
 ### Experience Manager Communities {#experience-manager-communities}
 
-AEM 6.4为Communities添加了许多新增功能和增强功能。 更改的完整列表在AEM Communities [中可用](communities-release-notes.md)。 此版本的亮点包括：
+AEM 6.4为Communities添加了许多新功能和增强功能。 更改的完整列表在AEM Communities [中可用](communities-release-notes.md)。 此版本的亮点包括：
 
 #### 对协调的增强 {#enhancements-to-moderation}
 
@@ -202,23 +184,23 @@ AEM 6.4 Communities提供 [现成的API](/help/communities/user-ugc-management-s
 
 ### Experience Manager Assets {#experience-manager-assets}
 
-AEM 6.4为资产引入了多项新功能和增强功能，包括经过改进的新CreativeCloud集成、关键人工智能创新、经过改进的元数据管理、报告增强和整体用户体验改进。 AEM Assets中可用更改的完整 [列表](assets.md)。 此版本的亮点是：
+AEM 6.4为资产引入了多项新功能和增强功能，包括新的、经过改进的CreativeCloud集成、关键的人工智能创新、经过改进的元数据管理、报告增强和整体用户体验改进。 AEM Assets中可用更改的完整 [列表](assets.md)。 此版本的亮点是：
 
 **Adobe Asset Link**
 
-适用于企业的Creative Cloud中的Adobe Asset Link简化了内容创建过程中创意人员和营销人员之间的协作。 它是Creative Cloud企业版中新增的本机功能，可将Photoshop CC、Illustrator CC和InDesign CC连接到AEM，创意人员无需离开自己的选择工具。
+Adobe企业Creative Cloud中的资产链接简化了内容创建过程中创意人员与营销人员之间的协作。 它是企业Creative Cloud中新增的本机功能，可将PhotoshopCC、IllustratorCC和InDesignCC连接到AEM，而无需创意人员选择工具。
 
-要进一步了解此功能、先决条件以及如何访问它，请参 [阅Adobe资产链接](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)。
+要进一步了解此功能、先决条件以及如何访问它，请参阅 [Adobe资产链接](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)。
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
 **AEM 桌面应用程序**
 
-AEM桌面应用程序已更新至版本1.8，该版本与AEM 6.4兼容。AEM桌面应用程序更改的完整列表在专用的AEM桌面应用程序发 [行说明文档中提供](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) 。
+AEM桌面应用程序已更新至版本1.8，与AEM 6.4兼容。AEM桌面应用程序的完整更改列表在专用的AEM桌面应用程序发行说明 [文档中提供](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/release-notes.html) 。
 
-自AEM 6.3版本发布以来引入的改进功能包括在后台上传分层文件夹的功能、用于监视资产后台操作的新UI、增强的缓存、联网和登录，以及总体稳定性改进。 文档还包含最佳 [实践指南](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)。
+自AEM 6.3版本发布以来引入的改进功能包括在后台上传分层文件夹的功能、监视资产后台操作的新UI、增强的缓存、联网和登录，以及总体稳定性改进。 文档还包含最佳 [实践指南](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)。
 
-**Adobe Sensei Services**
+**Adobe Sensei服务**
 
 新增功能包括增强的智能标记（具有学习客户业务分类学的能力）、使用客户特定标记自动标记数字资产以及智能翻译搜索（通过即时翻译搜索词提高多语言可发现性）。 要进一步了解此功能，请参阅增 [强的智能标记](/help/assets/enhanced-smart-tags.md)。
 
@@ -230,7 +212,7 @@ AEM桌面应用程序已更新至版本1.8，该版本与AEM 6.4兼容。AEM桌�
 
 **报告**
 
-资产报告在AEM 6.4中进行了大修，新的报告框架、用户体验和更多针对客户使用情况的OOTB报告。 要了解如何生成各种报表，请参阅资 [产报表](/help/assets/asset-reports.md)。
+资产报告在AEM 6.4中进行了大修，新的报告框架、用户体验和更多针对客户使用案例的OOTB报告。 要了解如何生成各种报表，请参阅资 [产报表](/help/assets/asset-reports.md)。
 
 **用户体验**
 
@@ -238,7 +220,7 @@ AEM桌面应用程序已更新至版本1.8，该版本与AEM 6.4兼容。AEM桌�
 
 **Brand Portal**
 
-在元数据、报告、数字权限、登录体验和资产分发发布性能等方面进行了各种增强。 要了解新增增强和功能，请参 [阅AEM Assets品牌门户的新增功能](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html)。
+在元数据、报告、数字权限、登录体验和资产分发发布性能等方面进行了各种增强。 要了解新增增强和功能，请参 [阅AEM Assets品牌门户的新增功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
 #### Dynamic Media Add-on {#dynamic-media-add-on}
 
@@ -246,7 +228,7 @@ AEM 6.4包含许多新增功能和对Dynamic Media的增强。 完整列表在AE
 
 **智能裁剪**
 
-Smart Crop由Adobe Sensei提供支持，可自动提供图像的无损裁剪功能，从而保留响应式设计的兴趣点。 您可以预览裁剪后的图像建议并根据需要手动调整它们。 此功能还支持为产品图像生成自动色板。
+Smart Crop由Adobe Sensei提供支持，可自动提供图像的无损裁剪，从而保留响应式设计的兴趣点。 您可以预览裁剪后的图像建议并根据需要手动调整它们。 此功能还支持为产品图像生成自动色板。
 
 请参 [阅图像用户档案](/help/assets/image-profiles.md) 文档，进一步了解如何使用智能裁剪。
 
@@ -254,7 +236,7 @@ Smart Crop由Adobe Sensei提供支持，可自动提供图像的无损裁剪功�
 
 **智能图像处理**
 
-智能图像处理利用每个用户独特的查看特性自动提供为其体验优化的图像，从而提高性能和参与度。
+智能图像处理利用每个用户独特的查看特性自动提供为其体验优化的图像，从而获得更好的性能和参与度。
 
 请参 [阅智能成像](/help/assets/imaging-faq.md) 文档以了解更多信息。
 
@@ -268,7 +250,7 @@ Smart Crop由Adobe Sensei提供支持，可自动提供图像的无损裁剪功�
 
 **3D资产**
 
-与Adobe Dimension CC [的全新集成](https://www.adobe.com/products/dimension.html),Adobe Dimension CC是用于创作3D体验的Creative Cloud应用程序。
+与Adobe Dimension CC( [用于创作](https://www.adobe.com/products/dimension.html)3D体验的Creative Cloud应用程序)的新集成。
 
 请参 [阅使用3D资产文档](/help/assets/assets-3d.md) ，了解更多信息。
 
@@ -282,7 +264,7 @@ AEM 6.4 Forms 中引入了一些新增功能和增强功能。主要功能包括
 * 从业务应用程序预填交互通信
 * 工作流程现代化和移动工作人员支持
 * 延迟加载片段
-* 从LiveCycle单跳升级到Experience ManagerForms 6.4
+* 单跳升级从LiveCycle升级到Experience ManagerForms6.4
 
 有关AEM Forms发 [行说明](forms.md) 页的更多详细信息。 Also, see the [Summary of new features and enhancements in AEM 6.4 Forms](/help/forms/using/whats-new.md) for information about new and improved features and documentation resources.
 
@@ -290,13 +272,13 @@ AEM 6.4 Forms 中引入了一些新增功能和增强功能。主要功能包括
 
 您可以将 Livefyre 与 AEM 6.4 实例集成。有关如何将 Livefyre 与 AEM 集成的信息位于此处：
 
-* [集成 Livefyre](https://helpx.adobe.com/cn/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [集成 Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
 
 ### 利用以客户为中心的开发 {#leverage-customer-focused-development}
 
 Adobe 正在使用以客户为中心的开发模型，借助该模型，客户可以在规范、开发和测试期间对开发流程的所有阶段做出贡献。我们衷心感谢在这一流程中做出贡献的所有客户和合作伙伴。
 
-Adobe 实施了多种规程和流程来对以客户为中心的错误解决方案和增强请求开发进行收集、优先级排序和跟踪。The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. 在可能的情况下，客户关怀可以识别并解决客户问题。升级到 R&amp;D 时，将捕获所有客户信息，并将这些信息用于确定优先级和报告。在开发过程中，优先考虑付费支持和保修问题以及付费客户增强。
+Adobe 实施了多种规程和流程来对以客户为中心的错误解决方案和增强请求开发进行收集、优先级排序和跟踪。The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html) is integrated with the Adobe Enhancement &amp; Defect Tracking System. 在可能的情况下，客户关怀可以识别并解决客户问题。升级到 R&amp;D 时，将捕获所有客户信息，并将这些信息用于确定优先级和报告。在开发过程中，优先考虑付费支持和保修问题以及付费客户增强。
 
 这一确定优先级的流程已经产生了 500 多个以客户为中心的更改，并已在 AEM 6.4 中进行了修复。
 
@@ -306,11 +288,11 @@ Adobe 实施了多种规程和流程来对以客户为中心的错误解决方�
 
 * 独立的快速入门：cq-quickstart-6.4.0.jar
 * 应用程序服务器快速启动： cq-quickstart-6.4.0.war
-* Dispatcher 4.3.1 or newer for various web servers and platforms ([download link](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html))
-* 用于 Eclipse IDE 的插件（[了解更多并下载](/help/sites-developing/aem-eclipse.md)）
+* Dispatcher4.3.1或更高版本，适用于各种Web服务器和平台。 请参阅 [下载链接](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html)。
+* Plug-in for Eclipse IDE. [Read more and download](/help/sites-developing/aem-eclipse.md).
 
-* 用于 Brackets 代码编辑器的扩展（[了解更多并下载](/help/sites-developing/aem-brackets.md)）
-* Maven/Gradle 依赖（[下载链接](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/)）
+* Extension for Brackets Code Editor. [Read more and download](/help/sites-developing/aem-brackets.md).
+* Maven/Gradle依赖关系。 请参阅 [下载链接](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/)。
 
 **站点**
 
@@ -329,7 +311,7 @@ Adobe 实施了多种规程和流程来对以客户为中心的错误解决方�
 
 **资产**
 
-* Adobe Experience Manager桌面应用[程序](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) (阅 [读更多](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
+* Adobe Experience Manager桌面应用[程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) (阅 [读更多](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/release-notes.html))
 
 * Package to add enhanced PDF Rasterizer ([read more](/help/assets/aem-pdf-rasterizer.md) and [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
@@ -370,7 +352,7 @@ Experience Manager 6.4 已通过 GB18030-2005 CITS 认证，可使用中文编�
 
 ## 支持的平台 {#supported-platforms}
 
-请在 [AEM 6.4 技术要求](/help/sites-deploying/technical-requirements.md)中查找支持平台的完整矩阵，包括支持级别。
+请在 Support-Level on [AEM 6.4 Technical Requirements](/help/sites-deploying/technical-requirements.md).
 
 >[!NOTE]
 >
@@ -392,7 +374,7 @@ Adobe 不断评估产品中的功能，以便随着时间的推移，计划使�
 
 [AEM Forms](forms.md)
 
-[AEM Foundation](wcm-platform.md)
+[AEM基础](wcm-platform.md)
 
 ## 已知问题 {#known-issues}
 
@@ -402,7 +384,6 @@ Adobe 不断评估产品中的功能，以便随着时间的推移，计划使�
 
 这些网站仅适用于客户。如果您是客户并且需要访问，请联系您的 Adobe 客户经理。
 
-* [](https://daycare.day.com) [产品下载：licensing.adobe.com](https://licensing.adobe.com/)
-
-* [客户支持：daycare.day.com](https://daycare.day.com)
-
+* [产品下载：licensing.adobe.com](https://licensing.adobe.com/).
+* 有关软件分发的其他功能的产品更新、修补程序 [和软件包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。
+* [通过Admin Console提供客户支持](https://adminconsole.adobe.com/)。 有关详细信息，请参 [阅新Adobe客户支持体验](https://docs.adobe.com/content/help/en/customer-one/using/home.html)。

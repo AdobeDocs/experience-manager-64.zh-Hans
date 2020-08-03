@@ -1,16 +1,11 @@
 ---
 title: 已弃用和已删除的功能
-seo-title: 已弃用和已删除的功能
 description: 以下发行说明特定于 Adobe Experience Manager 6.4 中已弃用和已删除功能。
-seo-description: 以下发行说明特定于 Adobe Experience Manager 6.4 中已弃用和已删除功能。
-uuid: 2619039b-72b4-4c6c-a813-90eed622b423
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4
-topic-tags: release-notes
-content-type: reference
-discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 45849a1a22f99d149369cd91781de4de0260c8e3
+source-git-commit: 543f66c760d7b25681a79d5df3d8ab6e8c0b2f47
+workflow-type: tm+mt
+source-wordcount: '1234'
+ht-degree: 25%
 
 ---
 
@@ -21,43 +16,59 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 为了传达即将删除/替换 AEM 功能，以下规则适用：
 
-1. 首先宣布弃用。虽然已弃用，但功能仍然可用，但不会进一步增强。
+1. 首先宣布弃用。虽然已弃用，但功能仍可用，但不会进一步增强。
 1. 最早将在以下主要发行版中删除已弃用的功能。将宣布实际删除目标的日期。
 
 在实际删除之前，此过程将为客户提供至少一个发行周期时间，使其实施适应已弃用功能的新版本或后续版本。
 
 ## 已弃用功能 {#deprecated-features}
 
-下表列出了AEM 6.4中已标记为已弃用的列表特性和功能。通常，计划在未来版本中删除的功能会首先设置为已弃用，并提供替代功能。
+下表中的列表特性和功能已标记为AEM 6.4已弃用。通常，计划在将来版本中删除的功能将首先设置为已弃用，并提供替代功能。
 
 建议客户检查其当前部署中是否使用了此类特性/功能，然后制定相应的计划以将其实施更改为使用提供的备选方案。
+
+<!-- TBD: This MD table is a replacement of the HTML table below. However, it generates validation error hence commenting and replacing with inline text. Restore if required. -->
+
+| 区域 | 功能 | 替换 |
+|---|---|---|
+| UI | Adobe 不打算进一步增强经典 UI。AEM 6.4 包含经典 UI，从早期发行版升级的客户可以继续按原样使用它。请注意，经典 UI 在弃用期间仍完全受支持。 <ul> <li>`/libs/cq/core/content/welcome.html` </li> <li> `/siteadmin` </li> <li> `/damadmin` </li> <li> `/mcmadmin` </li> <li> `/inbox` </li> <li> `/tagging` </li> <li> `/cf#` (页面编辑器) </li><li> `/libs/launches/content/admin.html` </li> <li> `/libs/cq/workflow/content/console.html` </li> </ul> | 建议客户切换使用新的AEM UI。 |
+| 组件 | Adobe不打算进一步增强下面列出的基础组件。 AEM 6.4包含基础组件，从早期版本升级的客户可以按原样继续使用它们。 请注意，已弃用的基础组件仍完全受支持。 <ul> <li> foundation/components/account/accountname </li> <li> foundation/components/account/actions </li> <li> foundation/components/account/passwordreset </li> <li> foundation/components/account/requestconfirmation </li> <li> foundation/components/adaptiveimage </li> <li> foundation/components/assetsharepage </li> <li> foundation/components/breadcrumb </li> <li> foundation/components/form/creditcard </li> <li> foundation/components/listchildren </li> <li> foundation/components/login </li> <li> foundation/components/logo </li> <li> foundation/components/mobilefooter </li> <li> foundation/components/mobileimage </li> <li> foundation/components/mobilelist </li> <li> foundation/components/mobilelogo </li> <li> foundation/components/mobilereference </li> <li> foundation/components/mobiletextimage </li> <li> foundation/components/mobiletopnav </li> <li> foundation/components/search </li> <li> foundation/components/sitemap </li> <li> foundation/components/table </li> <li> foundation/components/toolbar </li> <li> foundation/components/topnav </li> <li> foundation/components/userinfo </li> </ul> | 建议客户在未来的项目中使用核心组件。无需更改现有站点。 |
+| 组件 | Adobe不打算进一步增强下面列出的基础组件。 AEM 6.4包含基础组件，从早期版本升级的客户可以按原样继续使用它们。 请注意，已弃用的基础组件仍完全受支持。 <ul><li>基础／组件／时间</li></ul> | Adobe不打算提供替换。 |
+| 门户Director | 门户Director是一组功能，它允许在第三方服务器中通过Portlet托管AEM内容。 Adobe不打算进一步增强下列位置下的门户网站Director功能。 AEM 6.4包含门户Director，从早期版本升级的客户可以按原样继续使用它。 请注意，在弃用Portal Direct时，仍完全受支持。 <ul><li>/libs/portal/director</li></ul> | Adobe不打算提供替换。 |
+| Portlet组件 | /foundation/components/portlet下的Portlet组件支持在AEM中作为组件托管JSR Portlet。 Adobe不打算进一步增强Portlet组件功能。 AEM 6.4包含Portlet组件，从早期版本升级的客户可以按原样继续使用它。 请注意，Portlet组件在弃用时仍完全受支持。 | Adobe不打算提供替换。 |
+| 表单 | 由于不再支持Adobe中心产品，因此已弃用对Adobe中心迁移桥服务的支持。 | 无替换项 |
+| 表单 | 已弃用在查询和OperationOptions中使用JSONObject。 已弃用以下API: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | 使用 `IValueMap` API |
+| 表单 | 已弃用的中央迁移桥服务。 | 不提供任何替换。 |
+| 资产 | 从AEM 6.4开始，已弃用资产卸载。 |  |
+
+<!-- Original HTML table that came from helpx during migration.
 
 <table> 
  <tbody>
   <tr>
-   <td>区域</td> 
-   <td>功能</td> 
-   <td>替换</td> 
+   <td>Area</td> 
+   <td>Feature</td> 
+   <td>Replacement</td> 
   </tr>
   <tr>
    <td>UI</td> 
-   <td><p>Adobe 不打算进一步增强经典 UI。AEM 6.4 包含经典 UI，从早期发行版升级的客户可以继续按原样使用它。请注意，经典 UI 在弃用期间仍完全受支持。 </p> 
+   <td><p>Adobe does not plan to make further enhancements to the Classic UI. AEM 6.4 has the Classic UI included, and customers upgrading from earlier releases can keep using it as is. Note that Classic UI remains fully supported while being deprecated. </p> 
     <ul> 
      <li>/libs/cq/core/content/welcome.html</li> 
      <li>/siteadmin</li> 
      <li>/damadmin</li> 
      <li>/mcmadmin</li> 
      <li>/inbox</li> 
-     <li>/标记</li> 
-     <li>/cf#（页面编辑器）</li> 
+     <li>/tagging</li> 
+     <li>/cf# (Page Editor)</li> 
      <li>/libs/launches/content/admin.html</li> 
      <li>/libs/cq/workflow/content/console.html</li> 
     </ul> </td> 
-   <td><p>建议客户切换使用新的AEM UI。</p> <p> </p> </td> 
+   <td><p>Customers are advised to switch to use the new AEM UI.</p> <p> </p> </td> 
   </tr>
   <tr>
-   <td>组件</td> 
-   <td><p>Adobe不计划对下面列出的基础组件进行进一步的增强。 AEM 6.4包含基础组件，从早期版本升级的客户可以按原样继续使用它们。 请注意，在弃用时，基础组件仍完全受支持。 </p> 
+   <td>Components</td> 
+   <td><p>Adobe does not plan to make further enhancements to the Foundation Components listed below. AEM 6.4 has the Foundation Components included, and customers upgrading from earlier releases can keep using them as is. Note that Foundation Components remain fully supported while being deprecated. </p> 
     <ul> 
      <li>foundation/components/account/accountname</li> 
      <li>foundation/components/account/actions</li> 
@@ -84,184 +95,86 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
      <li>foundation/components/topnav</li> 
      <li>foundation/components/userinfo</li> 
     </ul> </td> 
-   <td>建议客户在未来的项目中使用核心组件。无需更改现有站点。</td> 
+   <td>Customers are advised to use the Core Components for future projects. Existing sites do not need to be changed.</td> 
   </tr>
   <tr>
-   <td>组件</td> 
-   <td><p>Adobe不计划对下面列出的基础组件进行进一步的增强。 AEM 6.4包含基础组件，从早期版本升级的客户可以按原样继续使用它们。 请注意，在弃用时，基础组件仍完全受支持。</p> 
+   <td>Components</td> 
+   <td><p>Adobe does not plan to make further enhancements to the Foundation Components listed below. AEM 6.4 has the Foundation Components included, and customers upgrading from earlier releases can keep using them as is. Note that Foundation Components remain fully supported while being deprecated.</p> 
     <ul> 
-     <li>基础／组件／时间</li> 
+     <li>foundation/components/timing</li> 
     </ul> </td> 
-   <td>在编写时，它并不打算提供替代。</td> 
+   <td>At the point of writing, it's not planned to provide a replacement.</td> 
   </tr>
   <tr>
-   <td>门户控制器</td> 
-   <td><p>门户控制器是一组功能，它允许通过第三方服务器中的Portlet托管AEM内容。</p> <p>Adobe不打算在以下列出的位置进一步增强门户控制器功能。 AEM 6.4包含Portal Director，从早期版本升级的客户可以按原样继续使用它。 请注意，弃用Portal Direct时仍完全受支持。</p> 
+   <td>Portal Director</td> 
+   <td><p>The Portal Director is a set of features, that enables the hosting of AEM content via Portlet in 3rd party servers.</p> <p>Adobe does not plan to make further enhancements to the Portal Director feature under the location listed below. AEM 6.4 has the Portal Director included, and customers upgrading from earlier releases can keep using it as is. Note that Portal Direct remains fully supported while being deprecated.</p> 
     <ul> 
      <li>/libs/portal/director</li> 
     </ul> </td> 
-   <td>在编写时，它并不打算提供替代。</td> 
+   <td>At the point of writing, it's not planned to provide a replacement.</td> 
   </tr>
   <tr>
-   <td>Portlet组件</td> 
-   <td><p>/foundation/components/portlet下的Portlet组件支持将AEM中的JSR Portlet作为组件进行托管。</p> <p>Adobe不打算进一步增强Portlet组件功能。 AEM 6.4包含Portlet组件，从早期版本升级的客户可以按原样继续使用它。 请注意，Portlet组件在被弃用时仍完全受支持。</p> </td> 
-   <td>在编写时，它并不打算提供替代。</td> 
+   <td>Portlet Component</td> 
+   <td><p>Portlet Components under /foundation/components/portlet enables the hosting of JSR Portlets in AEM as components.</p> <p>Adobe does not plan to make further enhancements to the Portlet Component feature. AEM 6.4 has the Portlet Component included, and customers upgrading from earlier releases can keep using it as is. Note that Portlet Component remains fully supported while being deprecated.</p> </td> 
+   <td>At the point of writing, it's not planned to provide a replacement.</td> 
   </tr>
   <tr>
-   <td>表单</td> 
-   <td><p>由于不再支持Adobe Central产品，因此已弃用对Adobe Central Migration Bridge服务的支持。</p> </td> 
-   <td>无替换项 </td> 
+   <td>Forms</td> 
+   <td><p>Support for Adobe Central Migration Bridge service has been deprecated as Adobe Central product is no longer supported.</p> </td> 
+   <td>No replacement </td> 
   </tr>
     <tr>
-   <td>表单</td> 
-   <td><p>已弃用在查询和OperationOptions中使用JSONObject。 已弃用以下API:
-   <ul><li>setArguments（JSONObject参数）</li><li>JSONObject getArguments()</li><li>OperationOptions（String operationId, JSONObject参数）</li><li>JSONObject getArguments()</li><li>void setArguments（JSONObject参数）</li></ul>
+   <td>Forms</td> 
+   <td><p>Deprecated use of JSONObject in Query and OperationOptions. The following APIs are deprecated:
+   <ul><li>setArguments(JSONObject arguments)</li><li>JSONObject getArguments()</li><li>OperationOptions(String operationId, JSONObject arguments</li><li>JSONObject getArguments()</li><li>void setArguments(JSONObject arguments)</li></ul>
    </p> </td> 
-   <td>使用IValueMap API </td> 
+   <td>Use the IValueMap API </td> 
   </tr>
   <tr>
-   <td>表单</td> 
-   <td><p>已弃用的Central Migration Bridge服务</p> </td> 
-   <td> 无替换项 </td> 
+   <td>Forms</td> 
+   <td><p>Deprecated Central Migration Bridge service</p> </td> 
+   <td> No replacement </td> 
   </tr>
   <tr>
-   <td>资产</td> 
-   <td><p>从AEM 6.4开始，已弃用资产卸载功能</p> </td> 
+   <td>Assets</td> 
+   <td><p>Assets Offloading has been deprecated starting with AEM 6.4</p> </td> 
    <td> </td> 
   </tr>
  </tbody>
 </table>
+-->
 
 ## 已删除功能 {#removed-features}
 
-下表列表了已从AEM 6.4中删除的功能和特性。先前版本的这些功能标记为已弃用。
+下表列出了已从AEM 6.4中删除的列表特性和功能。以前的版本将这些功能标记为已弃用。
 
-<table> 
- <tbody>
-  <tr>
-   <td><strong>区域</strong></td> 
-   <td><strong>功能</strong></td> 
-   <td><strong>替换</strong></td> 
-  </tr>
-  <tr>
-   <td>分析活动图</td> 
-   <td>AEM中包含的活动图版本。</td> 
-   <td>由于 Adobe Analytics API 中的安全性更改，因此无法再使用 AEM 中包含的 Activity Map 版本。<br><br>现 <a href="https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">在应使用Adobe Analytics提供的</a> ActivityMap插件。</td> 
-  </tr>
-  <tr>
-   <td>组件——表单</td> 
-   <td>表单Captcha<br /> (foundation/components/form/captcha)</td> 
-   <td>请改用Google的ReCaptcha组件</td> 
-  </tr>
-  <tr>
-   <td>组件</td> 
-   <td>幻灯片放映<br /> （基础／组件／幻灯片放映）</td> 
-   <td>无替换项</td> 
-  </tr>
-  <tr>
-   <td>组件</td> 
-   <td>Flash<br /> (foundation/components/flash)</td> 
-   <td>无替换项</td> 
-  </tr>
-  <tr>
-   <td>组件</td> 
-   <td>删除了对在视频组件(foundation/components<br /> /video)中回放SWF文件的支持</td> 
-   <td>使用无Flash视频格式。</td> 
-  </tr>
-  <tr>
-   <td>组件</td> 
-   <td>产品表<br /> (commerce/components/product_table)</td> 
-   <td>无替换项</td> 
-  </tr>
-  <tr>
-   <td>任务管理</td> 
-   <td>经典UI任务管理<br /> (/libs/cq/taskmanagement/content/taskmanager.html)</td> 
-   <td>自6.0起已弃用。使用与工作流UI结合的新任务管理。</td> 
-  </tr>
-  <tr>
-   <td>工作流</td> 
-   <td>在5.6-6.2之间使用的通知UI<br /> (/libs/cq/workflow/content/notifications.html)</td> 
-   <td>工作流收件箱/aem/inbox</td> 
-  </tr>
-  <tr>
-   <td>表单</td> 
-   <td>已删除使用PDF生成器将PDF导出为PDF/E-1格式。</td> 
-   <td>PDF Generator继续支持将PDF导出为PDF/A-1a/b、PDF/A-2a/b和PDF/A-3a/b格式。</td> 
-  </tr>
-  <tr>
-   <td>表单</td> 
-   <td>已删除对文档片段内图像的支持。 </td> 
-   <td>交互式通信提供了在印刷和Web渠道中直接使用图像的功能。<br /> </td> 
-  </tr>
-    <tr>
-   <td>表单</td> 
-   <td> 现场升级 </td> 
-   <td>不提供异地升级支持 <br/> </td> 
-  </tr>
-  <tr>
-   <td>表单</td> 
-   <td> TarMK到DocumentMK迁移的侧传 </td> 
-   <td> 您可以从旧系统中导出数据，然后导入到新安装的系统中。 有关详细说明，请参阅JEE上的AEM Forms升级文档 <br/> </td> 
-  </tr>
-    <tr>
-   <td>表单</td> 
- <td>JEE 32位安装程序上的AEM Forms不可用。</td> 
-   <td>Adobe已停止在JEE 32位安装程序上提供AEM Forms。 您可以继续使用64位安装程序在JEE上安装AEM Forms。 </td>  
-  </tr>
-    <tr>
-    <td>表单</td> 
-    <td>删除了在文档片段组件中使用DAM图像的支持。</td> 
-    <td> 您可以在交互式通信的打印渠道中使用图像和图表组件。 如果您在自适应表单中使用自适应文档的文档片段组件，则在升级到AEM 6.4表单后，它将停止工作。 </td>  
-  </tr>
-  <tr>
-   <td>表单</td> 
-   <td> 删除了自适应文档功能</td> 
-   <td> 您可以使用交互式通信功能创建基于Web的印刷通信。 如果您使用自适应文档，请安装兼容性包以继续使用现有的自适应文档<br/> </td> 
-  </tr>
-    <tr>
-    <td>表单</td> 
-    <td>删除了特定于JEE的登陆页上的AEM Forms。</td> 
-    <td>JEE登陆页上的AEM Forms将替换为AEM登陆页(/aem/start.html) </td>  
-  </tr>
-   <tr>
-   <td>表单</td> 
-   <td>删除了对默认Captcha的支持</td> 
-   <td>使用Google提供的reCAPTCHA服务。</td> 
-  </tr>
-  <tr>
-   <td>表单</td> 
-   <td>删除了对AEM Designer中Flash字段的支持。 AEM Designer不允许编辑表单中使用的Flash字段。</td> 
-   <td>您可以使用为先前版本发布的AEM Designer来编辑此类表单。</td> 
-  </tr>
-  <tr>
-   <td>社区</td> 
-   <td>已取消对Captcha验证的支持。</td> 
-   <td>使用自定义captcha集成（如Google的reCAPTCHA）进行验证。</td> 
-  </tr>
- </tbody>
-</table>
+| 区域 | 功能 | 替换 |
+|---|---|---|
+| Analytics Activity Map | AEM 中包含的 Activity Map 的版本。 | 由于 Adobe Analytics API 中的安全性更改，因此无法再使用 AEM 中包含的 Activity Map 版本。The [ActivityMap plug-in provided by Adobe Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used. |
+| 元件-Forms | 表单Captcha(foundation/components/form/captcha) | 请改用Google组件的ReCaptcha |
+| 组件 | 幻灯片放映（基础／组件／幻灯片放映） | 无替换项 |
+| 组件 | Flash(foundation/components/flash) | 无替换项 |
+| 组件 | 删除了对在视频组件(foundation/components/video)中回放SWF文件的支持 | 使用无Flash视频格式。 |
+| 组件 | 产品表(commerce/components/product_table) | 无替换项 |
+| 任务管理 | 经典UI任务管理(/libs/cq/taskmanagement/content/taskmanager.html) | 自6.0起已弃用。请使用与工作流UI结合的新任务管理。 |
+| 工作流 | 5.6 - 6.2 之间使用的通知 UI  (/libs/cq/workflow/content/notifications.html) | 工作流收件箱 /aem/inbox |
+| 表单 | 已删除使用PDF生成器Export PDF为PDF/E-1格式的内容。 | PDF Generator继续支持将PDF导出为PDF/A-1a/b、PDF/A-2a/b和PDF/A-3a/b格式。 |
+| 表单 | 已删除对文档片段内图像的支持。 | 交互式通信提供直接在印刷和Web渠道中使用图像的功能。 |
+| 表单 | 异地升级 | 不提供异地升级支持 |
+| 表单 | TarMK到DocumentMK迁移的侧传 | 您可以从旧系统导出数据，然后导入到新安装的系统中。 有关详细说明，请参阅JEE升级文档AEM Forms |
+| 表单 | JEE 32位安装程序上的AEM Forms不可用。 | Adobe已停止提供JEE 32位安装程序上的AEM Forms。 您可以继续使用64位安装程序在JEE上安装AEM Forms。 |
+| 表单 | 删除了在文档片段组件中使用DAM图像的支持。 | 您可以在交互通信的打印渠道中使用图像和图表组件。 如果您以自适应表单使用自适应文档的文档片段组件，则在升级到AEM 6.4Forms后，它将停止工作。 |
+| 表单 | 删除了自适应文档功能 | 您可以使用交互式通信功能创建基于印刷和Web的通信。 如果您使用自适应文档，请安装兼容性包以继续使用现有的自适应文档 |
+| 表单 | 删除了JEE特定AEM Forms的登陆页。 | JEE登陆页上的AEM Forms替换为AEM登陆页(/aem/start.html) |
+| 表单 | 删除了对默认Captcha的支持 | 使用Google提供的reCAPTCHA服务。 |
+| 表单 | 删除了AEM Designer中对flash字段的支持。 AEM Designer不允许编辑表单中使用的flash字段。 | 您可以使用为先前版本发布的AEM Designer来编辑此类表单。 |
+| 社区 | 已取消对Captcha验证的支持。 | 使用自定义captcha集成（如Google的reCAPTCHA）进行验证。 |
 
 ## 针对下一个发行版的预先宣布 {#pre-announcement-for-next-release}
 
-
 下表提供了未来版本的更改列表，这些更改尚未弃用，但可能会影响客户。 以下内容为规划目的而提供。
 
-<table> 
- <tbody>
-  <tr>
-   <td>区域<br /> </td> 
-   <td>功能<br /> </td> 
-   <td>公告</td> 
-  </tr>
-  <tr>
-   <td>浏览器支持</td> 
-   <td>Microsoft Internet Explorer</td> 
-   <td>AEM 6.4是支持Microsoft Internet Explorer 11的最后一个版本。</td> 
-  </tr>
-  <tr>
-   <td>Foundation</td> 
-   <td>UI 框架</td> 
-   <td>Adobe在2019年弃用了Coral UI 2组件。 AEM 6.4完全基于Coral UI 3（随AEM 6.2一起引入）。 Adobe建议其已使用Coral 2构建自定义UI的客户和合作伙伴将这些UI重构到Coral 3。 Adobe offers a tool to convert Coral 2 dialogs to Coral 3 - <a href="/help/sites-developing/dialog-conversion.md">Read more</a>.</td> 
-  </tr>
- </tbody>
-</table>
+| 区域 | 功能 | 发布 |
+|---|---|---|
+| 浏览器支持 | Microsoft Internet Explorer | AEM 6.4是支持Microsoft Internet Explorer 11的最后一个版本。 |
+| Foundation | UI 框架 | Adobe在2019年弃用了Coral UI 2组件。 AEM 6.4完全基于Coral UI 3(随AEM 6.2一起推出)。 Adobe建议已使用Coral 2构建自定义UI的客户和合作伙伴将这些UI重构到Coral 3。 Adobe offers a tool to convert Coral 2 dialogs to Coral 3 - [Read more](/help/sites-developing/dialog-conversion.md). |

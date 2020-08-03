@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 translation-type: tm+mt
-source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 4%
+source-wordcount: '657'
+ht-degree: 1%
 
 ---
 
@@ -20,42 +20,18 @@ ht-degree: 4%
 
 ## 发行信息 {#release-information}
 
-<table> 
- <tbody>
-  <tr>
-   <td>产品</td> 
-   <td>Livefyre功能包2.0.6</td> 
-  </tr>
-  <tr>
-   <td>版本</td> 
-   <td>2.0.6</td> 
-  </tr>
-  <tr>
-   <td>类型</td> 
-   <td>功能版本</td> 
-  </tr>
-  <tr>
-   <td>日期</td> 
-   <td>2018年8月31日</td> 
-  </tr>
-  <tr>
-   <td>下载 URL<br /> </td> 
-   <td>与管理员联系</td> 
-  </tr>
-  <tr>
-   <td>兼容性 (*)</td> 
-   <td>AEM 6.4 SP1、6.4、6.3 GA和6.2 SP1</td> 
-  </tr>
-  <tr>
-   <td>描述</td> 
-   <td>此软件包允许您将Livefyre行业领先的特选功能与AEM实例集成，使您能够在几分钟内将宝贵的用户生成内容(UGC)从社交网络发布到您的站点。</td> 
-  </tr>
- </tbody>
-</table>
+| 产品 | Livefyre功能包2.0.6 |
+|--- |--- |
+| 版本 | 2.0.6 |
+| 类型 | 功能版本 |
+| 日期 | 2018年8月31日 |
+| 下载 URL | 与管理员联系 |
+| 兼容性 (*) | AEM 6.4 SP1、6.4、6.3 GA和6.2 SP1 |
+| 描述 | 此软件包允许您将Livefyre行业领先的特选功能与AEM实例相集成，使您能够在几分钟内将宝贵的用户生成内容(UGC)从社交网络发布到您的站点。 |
 
 ## Livefyre功能包2.0.6包含的内容 {#what-is-included-in-livefyre-feature-pack}
 
-此软件包将Livefyre行业领先的特选功能与您的AEM实例相集成，使您能够在几分钟内将宝贵的用户生成内容(UGC)从社交网络发布到您的站点。 此包有三个不同的组件：
+此软件包将Livefyre行业领先的特选功能与AEM实例相集成，使您能够在几分钟内将宝贵的用户生成内容(UGC)从社交网络发布到您的站点。 此包有三个不同的组件：
 
 **将UGC内容导入AEM Assets**
 
@@ -74,7 +50,7 @@ ht-degree: 4%
 * 将您现有的产品目录无缝集成到Livefyre中，以推动用户在您的站点中的参与和转化，并提供可购物的UGC体验。
 * 编辑或删除AEM Commerce产品目录中的项目，并自动更新Livefyre中的更改。
 
-有关安装的帮助，请参 [阅与Livefyre集成](https://helpx.adobe.com/cn/experience-manager/6-4/sites/administering/using/livefyre.html)。
+有关安装的帮助，请参 [阅与Livefyre集成](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)。
 
 ### 其他发行信息 {#additional-release-information}
 
@@ -87,15 +63,15 @@ ht-degree: 4%
 #### 新增功能或改进 {#new-feature-or-improvement}
 
 * 添加了在Livefyre中设置权限请求社交帐户之前搜索UGC的功能。 您必须设置社交帐户以请求权限，或者如果您拥有内容，则覆盖权限请求。
-* Instagram和Twitter UGC [权限请求工作流已更新](https://helpx.adobe.com/cn/experience-manager/6-4/sites/administering/using/livefyre.html) ，以符合最新的API。
+* Instagram和Twitter UGC [权限请求工作流已更新](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) ，以符合最新的API。
 * 权限状态和相应的操作现在显示在权限请求屏幕上。
 
 #### 错误修复 {#bug-fixes}
 
-* 修复了在Livefyre Studio中删除用于权限请求的社交帐户时，在AEM中加载UGC库时出错的问题。
-* 修复了Livefyre Studio中的资产计数与AEM UGC库中的资产计数不匹配的问题。
+* 修复了在AEM中加载UGC库时，在Livefyre Studio中删除用于权限请求的社交帐户会导致错误的问题。
+* 修复了Livefyre studio中的资产计数与AEM UGC库中的资产计数不匹配的问题。
 * 修复了UGC库中在重置筛选器选项后显示筛选结果的问题。
-* 修复了AEM Commerce中的一个问题，该问题导致行动动员按钮将用户重定向到错误的URL。
+* 修复了AEM Commerce中行动动员按钮将用户重定向到错误URL的问题。
 * 修复了将多个组件拖放到parsys占位符中导致其消失的AEM Sites中的问题。
 * 修复了在发送权限请求时，禁用的社交帐户可供选择的问题。
 * 修复了将UGC从资产拖放到站点时会出错的问题。
@@ -108,4 +84,3 @@ ht-degree: 4%
 * 修复了触屏UI功能和内联编辑的问题。
 * 修复了导入某些Instagram图像资源时导致错误的问题。
 * 修复了AEM中的Livefyre HTTP客户端不支持代理配置的问题。
-

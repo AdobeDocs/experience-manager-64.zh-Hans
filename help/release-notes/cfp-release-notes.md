@@ -4,9 +4,9 @@ description: 特定于Adobe Experience Manager6.4累积修复包的发行说明�
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2125'
 ht-degree: 21%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 21%
 | 类型 | 累积修补程序包 |
 | 日期 | 2020年6月4日 |
 | 先决条件 | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
-| 下载 URL | 有关软件分发的AEM 6.4. [8.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
+| 下载 URL | AEM 6.4.8.1软件分 [发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
 ## AEM 6.4.8.1 包含哪些内容 {#what-s-included-in-aem}
 
-AEM Cumulative Fix Pack 6.4.8.1是自2020年3月AEM 6.4 Service Pack 8(6.4.8.0)正式发布以来，一项重要更新，包含若干内部和客户修复。
+AEM Cumulative Fix Pack 6.4.8.1是自2020年3月AEM 6.4 Service Pack 8(6.4.8.0)正式上市以来，包含若干内部和客户修复的重要更新。
 
-AEM Cumulative Fix Pack 6.4.8.1取决于AEM 6.4 Service Pack 8。 因此，在安装AEM 6.4 Service Pack 8后，必须安装AEM Cumulative Fix Pack 6.4.8.1包。
+AEM Cumulative Fix Pack 6.4.8.1取决于AEM 6.4 Service Pack 8。 因此，在安装AEM 6.4 Service Pack 8之后，必须安装AEM Cumulative Fix Pack 6.4.8.1包。
 
 AEM 6.4.8.1的一些主要亮点是：
 
@@ -109,11 +109,11 @@ Adobe Experience Manager6.4.8.1修复了以下问题。
 >AEM累积修复包不包含针对AEM Forms的修复。 它们是通过单独的 Forms 附加组件包交付的。此外，还发布了一个累积安装程序，其中包含针对JEEAEM Forms的修复。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * 通信管理： 当用户粘贴来自文档的 [!DNL Word] 内容时，文本文档片段不保留格式(NPR-33213)。
-* 自适应表单： 自适应表单词典中字符串的新行将字 `&#xa;` 符添加到词典(NPR-33265)。
-* 自适应表单： 用户无法保存具有多个附件的自适应表单(NPR-33214)。
-* 自适应表单： `AddInstance` 和 `RemoveInstance` 实例管理器类的方法不会为上的延迟加载片段添加动态 [!DNL Internet Explorer 11] 实例数(NPR-33201)。
-* 自适应表单： Analytics在嵌入到页面中的自适应表 [!DNL Sites] 单上启用时，不会为提交和放弃事件记录数据(NPR-31359)。
-* 自适应表单： 当用户将文档中的内容粘贴 [!DNL Word] 到自适应表单并提交时，提交的自适应表单包含Unicode字符。 此外，PDF到PDF/A的转换由于Unicode字符而失败(NPR-33348)。
+* 适应性Forms: 自适应表单词典中字符串的新行将字 `&#xa;` 符添加到词典(NPR-33265)。
+* 适应性Forms: 用户无法保存具有多个附件的自适应表单(NPR-33214)。
+* 适应性Forms: `AddInstance` 和 `RemoveInstance` 实例管理器类的方法不会为上的延迟加载片段添加动态 [!DNL Internet Explorer 11] 实例数(NPR-33201)。
+* 适应性Forms: 在嵌入到页面中的自适应表单上启 [!DNL Sites] 用的Analytics不会为“提交”和“放弃”事件记录数据(NPR-31359)。
+* 适应性Forms: 当用户将文档中的内容粘贴 [!DNL Word] 到自适应表单并提交时，提交的自适应表单包含Unicode字符。 此外，PDF到PDF/A的转换由于Unicode字符而失败(NPR-33348)。
 * 后端集成： 表单数据模型请求失败，因为由于不正确的非活动状态，刷新令牌过期(NPR-33168)。
 * 文档服务： 由于服务器上缺少Gibson Jar，转换PDF服务 [!DNL WebLogic] 无法 [!DNL Linux] 将PDF文档转换为PostScript(NPR-33515、CQ-4292239)。
 * 文档服务： 当用户将文本文件转换为PDF时，日文字符无法正确呈现(NPR-33239)。
@@ -134,7 +134,7 @@ Adobe Experience Manager6.4.8.1修复了以下问题。
 
 >[!CAUTION]
 >
->适用于在AEM 6.4上安装了功能包的客户。Adobe提供的可选功能包依赖于发行版和服务包。 如果您安装了任何功能包，请与AEM客户关怀团队联系，以验证这些功能包与此适用于AEM 6.4的累积修复包的兼容性。
+>对于安装在AEM 6.4上的功能包的客户。Adobe提供的可选功能包与发行版和服务包有依赖关系。 如果您安装了任何功能包，请与AEM客户关怀团队联系，以验证这些功能包与AEM 6.4的此累积修复包的兼容性。
 
 * AEM 6.4.8.1 requires AEM 6.4.8.0. Please visit [upgrade documentation](../sites-deploying/upgrade.md) for detailed instructions.
 * 在具有 MongoDB 和多个实例的部署中，使用包管理器在其中一个 Author 实例上安装 AEM 6.4.8.1。
@@ -175,18 +175,18 @@ B. Use the [HTTP API from Package Manager](https://helpx.adobe.com/cn/experience
 
 ### 验证安装 {#validate-install}
 
-1. “产品信息”页面(*/system/console/productinfo *)现在应在“已安装产品”下显示更新的版本字符串“Adobe Experience Manager，版本6.4.8.1”。
+1. “产品信息”页&#x200B;*面(/system/console*/productinfo)现在应在“已安装产品”下显示更新的版本字符串“Adobe Experience Manager，版本6.4.8.1”。
 1. 所有 OSGi 包在 OSGi 控制台中均为“活动”或“片段”（使用 Web 控制台：/system/console/bundles）。
 1. OSGI捆绑包org.apache.jackrabbit.oak-core在版本1.8.17或更高版本上(使用Web控制台： /system/console/bundles)。
 
 要确定与此版本的AEM Sites和资产一起运行的认证平台，请参 [阅技术要求](../sites-deploying/technical-requirements.md)。
 
 >[!Note]
->On successful installation of the package, an >informational message appears indicating that the content >package has installed successfully,  such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
+>On successful installation of the package, an informational message appears indicating that the content package has installed successfully, such as **&quot;Content Package AEM-6.4-Service-Pack-7 installed successfully.&quot;**
 
 ### 更新Dynamic Media查看器(5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.1包含新版本的Dynamic Media查看器(5.10.1)，该查看器支持在“图像预设”页面上检查重复名称。 建议Dynamic Media客户运行以下命令，将框查看器预设调出为最新状态。
+AEM 6.4.8.1包含新版本的Dynamic Media查看器(5.10.1)，该查看器支持在“图像预设”页面上检查重复名称。 建议Dynamic Media客户运行以下命令，将框查看器预设调出为最新状态。
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -200,7 +200,7 @@ B. Use the [HTTP API from Package Manager](https://helpx.adobe.com/cn/experience
 
 1. 确保已安装AEM Cumulative Fix Pack。
 1. Download the corresponding forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) for your operating system.
-1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage).
+1. Install the forms add-on package as described in [Installing AEM forms add-on packages](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### Install AEM Forms JEE installer {#install-aem-forms-jee-installer}
 
@@ -233,15 +233,15 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 | 区域 | 功能 | 替换 | 版本 |
 |---|---|---|---|
 | 资产 | 管理子资产的标记操作 | 无替换项 | AEM 6.4.2.0 |
-| 资产和 Creative Cloud 集成 | [AEM 6.2中引入了](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) “AEM到Creative Cloud文件夹共享”功能，以便让创意用户能够从AEM访问资产。 在 Creative Cloud 应用程序中发布的新功能“Adobe 资产链接”提供了更佳的用户体验，能够直接从 Photoshop、InDesign 和 Illustrator 中轻松访问 AEM 资产。Adobe 不会再进一步增强文件夹共享功能。虽然AEM中包含该功能，但强烈建议客户使用该替换。 | Adobe Asset Link或桌面应用程序。 有关更多信息，请参阅 [AEM Creative Cloud 集成](/help/assets/aem-cc-integration-best-practices.md)一文。 | AEM 6.4.4.0 |
+| 资产和 Creative Cloud 集成 | [AEM到Creative Cloud文件夹共享](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) ，在AEM 6.2中引入了，作为一种让创意用户能够访问AEM中的资产的方式。 在 Creative Cloud 应用程序中发布的新功能“Adobe 资产链接”提供了更佳的用户体验，能够直接从 Photoshop、InDesign 和 Illustrator 中轻松访问 AEM 资产。Adobe 不会再进一步增强文件夹共享功能。尽管AEM中包含该功能，但会强烈建议客户使用该替换。 | Adobe资产链接或桌面应用程序。 有关更多信息，请参阅 [AEM Creative Cloud 集成](/help/assets/aem-cc-integration-best-practices.md)一文。 | AEM 6.4.4.0 |
 
 ## 已知问题 {#known-issues}
 
-* 安装AEM 6.4.8.1时，更新版 [!DNL Chrome] 本83会导致在构建包时出现问题。 使用其他可用的浏览器(如 [!DNL Internet Explorer] 和 [!DNL Firefox]或其他AEM标准包安装选项)来解决此问题。 安装AEM 6.4.8.1后，问题就得到解决。
+* 安装AEM 6.4.8.1时，更新版 [!DNL Chrome] 本83会导致构建包时出现问题。 使用其他可用的浏览器(如 [!DNL Internet Explorer] 和 [!DNL Firefox]或其他AEM标准包安装选项)来解决问题。 安装AEM 6.4.8.1后，问题就得到解决。
 
-* 无法使用AEM默认邮件发送器将电子邮件发送到远程SMTP服务器，因为它仅允许使用TLS v1.2进行通信。请从 `javax.mail:mail:1.5.0-b01` 包 `system/console` 中删除包并刷新包以解决此问题。
+* 无法使用AEM默认邮件发送器向远程SMTP服务器发送电子邮件，因为它仅允许使用TLS v1.2进行通信。请从中删除捆绑包 `javax.mail:mail:1.5.0-b01` , `system/console` 并刷新捆绑包以解决此问题。
 
-有关AEM 6.4.8.0 Service Pack已知问题的信息，请 [参阅AEM 6.4.8.0 Service Pack发行说明](sp-release-notes.md)。
+有关AEM 6.4.8.0 Service Pack已知问题的信息，请参 [阅《AEM 6.4.8.0 Service Pack发行说明》](sp-release-notes.md)。
 
 ## 包含的 OSGi 包和内容包 {#osgi-bundles-and-content-packages-included}
 

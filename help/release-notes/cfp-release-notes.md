@@ -4,10 +4,10 @@ description: 特定于Adobe Experience Manager6.4累积修复包的发行说明�
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 21%
+source-wordcount: '2159'
+ht-degree: 20%
 
 ---
 
@@ -55,6 +55,8 @@ Adobe Experience Manager6.4.8.1修复了以下问题。
 * 无法为AEM Sites页面创建启动项。 启动项创建会导致错误(NPR-32544)。
 * 管理发布在激活工作流请求中不包括引用的资产(NPR-32463)。
 * Dispatcher运行状况 `Invalid cookie header` 检查在日志文件中显示警告消息(NPR-33630)。
+* Salesforce集成易受SSRF(NPR-32671)的影响。
+* PreferencesServlet中反射的XSS(NPR-33439)。
 
 ### 资产 {#assets-6481}
 
@@ -74,6 +76,8 @@ Adobe Experience Manager6.4.8.1修复了以下问题。
 
 * 批量上传时的资产处理会卡住(CQ-4293916)。
 
+* Experience Manager中的SSRF漏洞(NPR-33437)。
+
 ### 平台 {#platform-6481}
 
 * 如果 [!DNL Sling] 在(NPR-33308) `sling:match` 下创建映射条目， `/etc/maps` 则不调用该过滤器。
@@ -89,12 +93,17 @@ Adobe Experience Manager6.4.8.1修复了以下问题。
 
 * 运 `NullPointerException` 行转换作业的日志中显示错误(NPR-32220)。
 
+### 集成 {#integrations-6481}
+
+* JSON的跨站点脚本(NPR-32745)。
+
 ### 社区 {#communities-6481}
 
 * 创建新组后，作者不会被重定向到 [!UICONTROL 第11号] “社区 [!DNL Internet Explorer] 组”部分(NPR-33202)。
 * 访问活动流页 [!UICONTROL 面时出错] (NPR-33152)。
 * 编辑 [!DNL Communities] 组和更改缩略图图像不会更新组缩略图图像(NPR-32603)。
 * 在创建通知版本和用户生成内容订阅(UGC)时，会存储源页面的错误ID(CQ-4289703)。
+* 跨站点脚本问题(NPR-33212)。
 
 ### 工作流 {#workflow-6481}
 
@@ -117,6 +126,8 @@ Adobe Experience Manager6.4.8.1修复了以下问题。
 * 后端集成： 表单数据模型请求失败，因为由于不正确的非活动状态，刷新令牌过期(NPR-33168)。
 * 文档服务： 由于服务器上缺少Gibson Jar，转换PDF服务 [!DNL WebLogic] 无法 [!DNL Linux] 将PDF文档转换为PostScript(NPR-33515、CQ-4292239)。
 * 文档服务： 当用户将文本文件转换为PDF时，日文字符无法正确呈现(NPR-33239)。
+* 使用GuideSOMProviderServlet存储XSS(NPR-32701)。
+
 
 ## Install 6.4.8.1 {#install}
 
@@ -186,7 +197,7 @@ B. Use the [HTTP API from Package Manager](https://helpx.adobe.com/cn/experience
 
 ### 更新Dynamic Media查看器(5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.1包含新版本的Dynamic Media查看器(5.10.1)，该查看器支持在“图像预设”页面上检查重复名称。 建议Dynamic Media客户运行以下命令，将框查看器预设调出为最新状态。
+AEM 6.4.8.1包含新版本的Dynamic Media查看器(5.10.1)，它允许在“图像预设”页面上检查重复名称。 建议Dynamic Media客户运行以下命令，将框查看器预设调出为最新状态。
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 

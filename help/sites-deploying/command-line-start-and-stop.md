@@ -11,17 +11,20 @@ topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
 source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 4%
 
 ---
 
 
 # 命令行启动和停止{#command-line-start-and-stop}
 
-## 从命令行启动Adobe Experience Manager {#starting-adobe-experience-manager-from-the-command-line}
+## 从指挥线启动Adobe Experience Manager {#starting-adobe-experience-manager-from-the-command-line}
 
-该 `start` 脚本位于&lt;cq- *installation>/bin目录下* 。 提供Unix和Windows版本。 该脚本将开始安装在 *&lt;cq-installation>目录中的实例* 。
+该 `start` 脚本位于 *&lt;cq-installation>/bin目录下* 。 提供Unix和Windows版本。 脚本将开始安装在&lt;cq *-installation>目录中的实* 例。
 
-这两个版本支持列表的环境变量，这些变量可用于开始和调整AEM实例。
+这两个版本支持列表环境变量，这些变量可用于开始和调整AEM实例。
 
 <table> 
  <tbody> 
@@ -51,7 +54,7 @@ source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
   </tr> 
   <tr> 
    <td>CQ_USE_JAAS</td> 
-   <td>使用JAAS（如果为true）<br /> </td> 
+   <td>使用JAAS（如果为真）<br /> </td> 
   </tr> 
   <tr> 
    <td>CQ_JAAS_CONFIG</td> 
@@ -66,7 +69,7 @@ source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
 
 >[!CAUTION]
 >
->请注意，某些运行模式（包括创作和发布）需要在首次启动AEM之前设置，之后无法更改。 在设置应用于生产的AEM实例之前，请参阅运行模 [式文档](/help/sites-deploying/configure-runmodes.md) 。
+>请注意，有些运行模式（包括创作和发布）需要在首先启动AEM之前进行设置，之后无法更改。 在设置应用于生产的AEM实例之前，请参阅运行模 [式文档了解详](/help/sites-deploying/configure-runmodes.md) 细信息。
 
 ### Windows平台开始.bat脚本示例 {#windows-platform-start-bat-script-example}
 
@@ -82,7 +85,7 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->开始脚本将启动&lt;cq-installation>/app *文件夹下安装的AEM快速启动* 。
+>开始脚本将启动安装在&lt;cq- *installation>/app文件夹下的AEM* Quickstart。
 
 ## Stopping Adobe Experience Manager {#stopping-adobe-experience-manager}
 
@@ -90,16 +93,16 @@ CQ_PORT=1234 ./start
 
 * 具体取决于您所使用的平台：
 
-   * 如果从脚本或命令行启动AEM，请按 **Ctrl+C** ，关闭服务器。
-   * 如果已在UNIX上使用开始脚本，则必须使用停止脚本停止AEM。
+   * 如果从脚本或命令行启动AEM, **按Ctrl** +C可关闭服务器。
+   * 如果已在UNIX上使用开始脚本，则必须使用停止脚本来停止AEM。
 
-* 如果通过多次单击jar文件启动AEM，请单击启动窗口上的 **On** （开始）按钮(按钮，然后更改为 **Off**)以关闭服务器。
+* 如果通过多次单击jar文件启动AEM，请单击启 **动窗** 口上的“开”按钮(按钮随后变为 **关闭**)以关闭服务器。
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
-## 从命令行停止Adobe Experience Manager {#stopping-adobe-experience-manager-from-the-command-line}
+## 阻止Adobe Experience Manager进入指挥线 {#stopping-adobe-experience-manager-from-the-command-line}
 
-该 `stop` 脚本位于&lt;cq- *installation>/bin目录下* 。 提供Unix和Windows版本。 脚本将停止在&lt;cq-installation>目录中安 *装的正在运行的实例* 。
+该 `stop` 脚本位于 *&lt;cq-installation>/bin目录下* 。 提供Unix和Windows版本。 脚本停止在&lt;cq-installation>目 *录中安装的正在运行的实* 例。
 
 ### Unix平台停止脚本示例 {#unix-platform-stop-script-example}
 

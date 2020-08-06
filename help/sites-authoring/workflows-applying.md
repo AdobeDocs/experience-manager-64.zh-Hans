@@ -11,13 +11,16 @@ topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 84%
 
 ---
 
 
 # 将工作流应用于页面{#applying-workflows-to-pages}
 
-在创作时，您可以调用工作流以对页面执行操作；还可以应用多个工作流。
+创作时，您可以调用工作流以在页面上执行操作； 还可以应用多个工作流。
 
 在应用工作流时，您需要指定以下信息：
 
@@ -35,10 +38,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->另请参阅:
+>另请参阅：
 >
 >* [如何将工作流应用于 DAM 资产](/help/assets/assets-workflow.md)。
 >* [使用项目工作流](/help/sites-authoring/projects-with-workflows.md)。
+
 >
 
 
@@ -74,7 +78,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 您可以从&#x200B;**时间轴**&#x200B;中启动要应用于所选资源的工作流。
 
-1. [选择资源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) ，然后打 [开时间轴](/help/sites-authoring/basic-handling.md#timeline) （或打开时间轴，然后选择资源）。
+1. [选择资源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) ，然后打 [开时间](/help/sites-authoring/basic-handling.md#timeline) 轴（或打开时间轴，然后选择资源）。
 1. 可以使用评论字段中的箭头显示&#x200B;**启动工作流**：
 
    ![wf-51](assets/wf-51.png)
@@ -98,6 +102,7 @@ You can start a workflow from the toolbar of the **Sites** console:
    * **工作流标题**
 
       * 您可以指定此实例的标题，以帮助您在以后对其进行识别。
+
    根据工作流模型，还可以使用以下选项。这些选项允许在工作流完成后保留创建为有效负荷的包。
 
    * **保留工作流包**
@@ -114,7 +119,7 @@ You can start a workflow from the toolbar of the **Sites** console:
 
 1. 在&#x200B;**范围**&#x200B;步骤中，您可以选择：
 
-   * **添加内容** ，打开路径浏 [览器](/help/sites-authoring/author-environment-tools.md#path-browser) ，并选择其他资源；在浏览器中时，单击／点按 **选择** ，以将内容添加到工作流实例。
+   * **添加内容** ，打开路 [径浏览器](/help/sites-authoring/author-environment-tools.md#path-browser) ，并选择其他资源； 在浏览器中时，单击／点按 **选择** ，以将内容添加到工作流实例。
    * 现有资源以查看其他操作：
 
       * **包括子项**，指定将该资源的子项包含在工作流中。
@@ -124,9 +129,11 @@ You can start a workflow from the toolbar of the **Sites** console:
          * 仅包括下级子项。
          * 仅包括已修改的页面。
          * 仅包括已发布的页面。
+
          指定的任何子项都会添加到将应用工作流的资源列表中。
 
       * **删除选择**，从工作流中删除该资源。
+
    ![wf-53](assets/wf-53.png)
 
    >[!NOTE]

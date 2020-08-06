@@ -1,8 +1,8 @@
 ---
-title: 强化您对JEEAEM Forms的环境
-seo-title: 强化您对JEEAEM Forms的环境
-description: 了解各种安全强化设置，以增强在公司内部网中运行的JEE上AEM Forms的安全性。
-seo-description: 了解各种安全强化设置，以增强在公司内部网中运行的JEE上AEM Forms的安全性。
+title: 强化你的AEM Forms对JEE环境的支持
+seo-title: 强化你的AEM Forms对JEE环境的支持
+description: 了解各种安全强化设置，以增强AEM Forms在公司内部网中运行的JEE上的安全性。
+seo-description: 了解各种安全强化设置，以增强AEM Forms在公司内部网中运行的JEE上的安全性。
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -17,19 +17,19 @@ ht-degree: 1%
 ---
 
 
-# 强化您对JEEAEM Forms的环境 {#hardening-your-aem-forms-on-jee-environment}
+# 强化你的AEM Forms对JEE环境的支持 {#hardening-your-aem-forms-on-jee-environment}
 
-了解各种安全强化设置，以增强在公司内部网中运行的JEE上AEM Forms的安全性。
+了解各种安全强化设置，以增强AEM Forms在公司内部网中运行的JEE上的安全性。
 
-本文描述了保护在JEE上运行AEM Forms的服务器的建议和最佳实践。 这对于您的操作系统和应用程序服务器来说不是一个全面的主机强化文档。 相反，本文描述了您应实施的各种安全强化设置，以增强在公司内部网中运行的JEE上AEM Forms的安全性。 但是，为确保JEE应用程序服务器上的AEM Forms保持安全，您还应实施安全监控、检测和响应过程。
+本文描述了保护在JEE上运行AEM Forms的服务器的建议和最佳实践。 这对于您的操作系统和应用程序服务器来说不是一个全面的主机强化文档。 相反，本文描述了您应实施的各种安全强化设置，以增强在公司内部网内运行的JEE上AEM Forms的安全性。 但是，为确保JEE应用程序服务器上的AEM Forms保持安全，您还应实施安全监控、检测和响应程序。
 
 本文描述了在安装和配置生命周期的以下阶段应用的强化技术：
 
 * **预安装：** 在JEE上安装AEM Forms之前，请使用这些技术。
-* **安装：** 在JEE安装过程的AEM Forms中使用这些技术。
+* **安装：** 在AEM Forms的JEE安装过程中使用这些技术。
 * **安装后：** 安装后使用这些技术，然后定期使用。
 
-JEE上的AEM Forms可以高度自定义，并可以在许多不同的环境中工作。 某些建议可能不符合您组织的需求。
+AEM Forms·JEE专业的JEE是高度可定制的，可以在许多不同的环境中工作。 某些建议可能不符合您组织的需求。
 
 ## 预安装 {#preinstallation}
 
@@ -41,7 +41,7 @@ JEE上的AEM Forms可以高度自定义，并可以在许多不同的环境中�
 
 **在Windows上安装和配置**
 
-如果要在JBoss上的JEE上使用统包方法安装AEM Forms，或者要安装PDF生成器，则应以管理员身份在Windows上进行安装。 此外，在具有本机应用程序支持的Windows上安装PDF Generator时，必须以安装Microsoft Office的同一Windows用户身份运行安装。 有关安装权限的详细信息，请参阅*在JEE上安装和部署AEM Forms*文档，该适用于您的应用程序服务器。
+如果要在JBoss上的JEE上使用整套方法安装AEM Forms，或者您要安装PDF生成器，则应以管理员身份在Windows上进行安装。 此外，在具有本机应用程序支持的Windows上安装PDF Generator时，必须以安装Microsoft Office的同一Windows用户身份运行安装。 有关安装权限的详细信息，请参阅*在JEE上安装和部署AEM Forms*文档，该适用于您的应用程序服务器。
 
 ### 网络层安全 {#network-layer-security}
 
@@ -59,11 +59,11 @@ JEE上的AEM Forms可以高度自定义，并可以在许多不同的环境中�
  <tbody>
   <tr> 
    <td><p>非军事区(DMZ)</p> </td> 
-   <td><p>在非军事区(DMZ)中部署表单服务器。 分段至少应存在于两个级别中，应用程序服务器用于在位于内部防火墙后的JEE上运行AEM Forms。 将外部网络与包含Web服务器的DMZ分离，而Web服务器又必须与内部网络分离。 使用防火墙实现分层。 对通过每个网络层的流量进行分类和控制，以确保仅允许所需数据的绝对最小值。</p> </td> 
+   <td><p>在非军事区(DMZ)中部署表单服务器。 分段至少应存在于两个级别中，应用程序服务器用于在JEE上运行位于内部防火墙后的AEM Forms。 将外部网络与包含Web服务器的DMZ分离，而Web服务器又必须与内部网络分离。 使用防火墙实现分层。 对通过每个网络层的流量进行分类和控制，以确保仅允许所需数据的绝对最小值。</p> </td> 
   </tr> 
   <tr> 
    <td><p>专用IP地址</p> </td> 
-   <td><p>将网络地址转换(NAT)与AEM Forms应用程序服务器上的RFC 1918专用IP地址结合使用。 指定专用IP地址(10.0.0.0/8、172.16.0.0/12和192.168.0.0/16)，使攻击者更难通过Internet将通信路由到NAT内部主机和从NAT内部主机发送通信。</p> </td> 
+   <td><p>在AEM Forms应用程序服务器上将网络地址转换(NAT)与RFC 1918专用IP地址结合使用。 指定专用IP地址(10.0.0.0/8、172.16.0.0/12和192.168.0.0/16)，使攻击者更难通过Internet将通信路由到NAT内部主机和从NAT内部主机发送通信。</p> </td> 
   </tr> 
   <tr> 
    <td><p>防火墙</p> </td> 
@@ -76,7 +76,7 @@ JEE上的AEM Forms可以高度自定义，并可以在许多不同的环境中�
   </tr> 
   <tr> 
    <td><p>数据库端口</p> </td> 
-   <td><p>请勿对数据库使用默认监听端口(MySQL - 3306、Oracle - 1521、MS SQL - 1433)。 有关更改数据库端口的信息，请参阅数据库文档。</p> <p>使用不同的AEM Forms库端口会影响JEE配置的整体数据。 如果更改默认端口，则必须在配置的其他区域进行相应的修改，如JEE上的AEM Forms的数据源。</p> <p>有关在JEE上的AEM Forms中配置数据源的信息，请参阅《AEM Forms用户指南》中的“在JEE上安装并升级AEM Forms”或“升级到JEE上的AEM Forms”(针对您的应用 <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">程序服务器)</a>。</p> </td> 
+   <td><p>请勿对数据库使用默认监听端口(MySQL - 3306、Oracle - 1521、MS SQL - 1433)。 有关更改数据库端口的信息，请参阅数据库文档。</p> <p>使用不同的数据库端口会影响JEE配置上的整个AEM Forms。 如果更改默认端口，则必须在配置的其他区域进行相应的修改，如JEE上的AEM Forms数据源。</p> <p>有关在JEE上的AEM Forms配置数据源的信息，请参阅《AEM Forms用户指南》中的“在JEE上安装并升级AEM Forms”或在JEE上升级到AEM Forms”(针对您的应用 <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">服务器)</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -128,11 +128,11 @@ JEE上的AEM Forms可以高度自定义，并可以在许多不同的环境中�
   </tr> 
   <tr> 
    <td><p>软件源</p> </td> 
-   <td><p>请勿从不受信任的来源下载或运行JEE上的AEM Forms。</p> <p>恶意项目可能包含以多种方式违反安全性的代码，包括数据盗窃、修改和删除以及拒绝服务。 在JEE上从Adobe DVD或仅从可信源安装AEM Forms。</p> </td> 
+   <td><p>请勿从不受信任的来源在JEE上下载或运行AEM Forms。</p> <p>恶意项目可能包含以多种方式违反安全性的代码，包括数据盗窃、修改和删除以及拒绝服务。 在JEE上从AdobeDVD或仅从可信来源安装AEM Forms。</p> </td> 
   </tr> 
   <tr> 
    <td><p>磁盘分区</p> </td> 
-   <td><p>将AEM Forms放在JEE上的专用磁盘分区上。 磁盘分段是一个过程，它将服务器上的特定数据保留在单独的物理磁盘上，以增加安全性。 这样安排数据可以降低目录遍历攻击的风险。 计划创建与系统分区分开的分区，您可以在该分区上安装JEE内容目录上的AEM Forms。 （在Windows上，系统分区包含system32目录或引导分区。）</p> </td> 
+   <td><p>将AEM Forms放在JEE上的专用磁盘分区上。 磁盘分段是一个过程，它将服务器上的特定数据保留在单独的物理磁盘上，以增加安全性。 这样安排数据可以降低目录遍历攻击的风险。 计划创建与系统分区分开的分区，您可以在其上将AEM Forms安装到JEE内容目录中。 （在Windows上，系统分区包含system32目录或引导分区。）</p> </td> 
   </tr> 
   <tr> 
    <td><p>组件</p> </td> 
@@ -151,23 +151,23 @@ JEE上的AEM Forms可以高度自定义，并可以在许多不同的环境中�
 
 ## 安装后步骤 {#post-installation-steps}
 
-在JEE上成功安装AEM Forms后，必须从安全角度定期维护环境。
+在JEE上成功安装AEM Forms后，从安全角度定期维护环境非常重要。
 
 以下部分详细描述了建议保护已部署的表单服务器的不同任务。
 
 ### AEM Forms安全 {#aem-forms-security}
 
-以下推荐设置适用于JEE服务器上非管理Web应用程序的AEM Forms。 要降低服务器的安全风险，请在JEE上安装AEM Forms后立即应用这些设置。
+以下推荐设置适用于JEE服务器上除管理Web应用程序外的AEM Forms。 要降低服务器的安全风险，请在JEE上安装AEM Forms后立即应用这些设置。
 
 **安全修补程序**
 
-如果供应商安全修补程序和升级不能及时应用，则未授权用户可能获得对应用程序服务器的访问权限的风险增加。 在将安全修补程序应用到生产服务器之前，先测试它们，以确保应用程序的兼容性和可用性。 此外，还可以创建定期检查和安装修补程序的策略和程序。 JEE更新的AEM Forms可以访问企业产品下载站点。
+如果供应商安全修补程序和升级不能及时应用，则未授权用户可能获得对应用程序服务器的访问权限的风险增加。 在将安全修补程序应用到生产服务器之前，先测试它们，以确保应用程序的兼容性和可用性。 此外，还可以创建定期检查和安装修补程序的策略和程序。 AEM Forms的JEE更新位于企业产品下载站点。
 
 **服务帐户（仅限Windows上的JBoss turnkey）**
 
-JEE上的AEM Forms默认情况下使用LocalSystem帐户安装服务。 内置的LocalSystem用户帐户具有高级别的可访问性； 它是管理员组的一部分。 如果工作进程标识作为LocalSystem用户帐户运行，则该工作进程对整个系统具有完全访问权限。
+AEM Forms在JEE上默认使用LocalSystem帐户安装服务。 内置的LocalSystem用户帐户具有高级别的可访问性； 它是管理员组的一部分。 如果工作进程标识作为LocalSystem用户帐户运行，则该工作进程对整个系统具有完全访问权限。
 
-要使用特定的非管理帐户运行部署JEE上的AEM Forms的应用程序服务器，请按照以下说明操作：
+要使用特定的非管理帐户运行部署了JEE上的AEM Forms的应用程序服务器，请按照以下说明操作：
 
 1. 在Microsoft管理控制台(MMC)中，为表单服务器服务创建一个本地用户以登录：
 
@@ -179,7 +179,7 @@ JEE上的AEM Forms默认情况下使用LocalSystem帐户安装服务。 内置�
    >无法更改PDF生成器的此设置。
 
 1. 选择 **开始** >设 **置** >管 **理工具** > **** Services。
-1. 多次-单击JEE上的AEM Forms的JBoss并停止该服务。
+1. 多次在JEE上单击JBoss forAEM Forms并停止服务。
 1. 在“登 **录** ”选项卡上，选 **择“此帐户**”，浏览您创建的用户帐户，然后输入帐户的口令。
 1. 在MMC中，打开“ **本地安全设置** ”，然 **后选择“本地策略** ”>“ **用户权限分配”**。
 1. 为运行表单服务器的用户帐户分配以下权限：
@@ -188,12 +188,12 @@ JEE上的AEM Forms默认情况下使用LocalSystem帐户安装服务。 内置�
    * 拒绝本地登录
    * 以服务身份登录（应已设置）
 
-1. 为新用户帐户授予对JEE Web内容目录项上的列表的“读取并执行”、“AEM Forms文件夹内容”和“读取”权限。
+1. 为新用户帐户授予AEM Forms对JEE Web内容目录项的“读取并执行”、“列表文件夹内容”和“读取”权限。
 1. 开始应用程序服务器。
 
 **禁用Configuration Manager引导servlet**
 
-配置管理器使用部署在应用程序服务器上的servlet执行JEEAEM Forms库上的引导。 由于配置管理器在配置完成前访问此servlet，因此对其的访问尚未得到授权用户的保护，并且在您成功使用配置管理器配置JEE上的AEM Forms后，应禁用它。
+配置管理器使用部署在应用程序服务器上的servlet在JEE数据库上执行AEM Forms的引导。 由于配置管理器在配置完成前访问此servlet，因此对其的访问尚未得到授权用户的保护，并且在您成功使用配置管理器在JEE上配置AEM Forms后，应禁用它。
 
 1. 解压缩adobe-livecycle-[appserver].ear文件。
 1. 打开META-INF/application.xml文件。
@@ -257,7 +257,7 @@ Configuration Manager允许您将Acrobat Reader DC扩展凭据上传到JEE信任
 
 #### 更改默认管理员密码 {#change-the-default-administrator-password}
 
-安装JEE上的AEM Forms后，将为用户Super Administrator/login-id Administrator配置一个默认用户帐户，默认密码为 *密码*。 您应立即使用配置管理器更改此密码。
+安装JEE上的AEM Forms时，将为用户Super Administrator/login-id Administrator配置一个默认用户帐户，默认密码为 *密码*。 您应立即使用配置管理器更改此密码。
 
 1. 在Web浏览器中键入以下URL:
 
@@ -303,7 +303,7 @@ Web服务定义语言(WSDL)生成应仅对开发环境启用，开发者使用WS
 
 ### 应用程序服务器安全性 {#application-server-security}
 
-下表介绍了在安装JEE应用程序上的AEM Forms后保护应用程序服务器的一些技术。
+下表介绍了在安装JEE上的AEM Forms应用程序后保护应用程序服务器的一些技术。
 
 <table> 
  <thead> 
@@ -330,9 +330,9 @@ Web服务定义语言(WSDL)生成应仅对开发环境启用，开发者使用WS
 
 ### 数据库安全 {#database-security}
 
-在保护数据库时，应执行数据库供应商描述的度量。 您应当为AEM Forms分配具有允许在JEE上使用的最低数据库权限的数据库用户。 例如，请勿使用具有数据库管理员权限的帐户。
+在保护数据库时，应执行数据库供应商描述的度量。 您应分配具有授予AEM Forms在JEE上使用的最低数据库权限的数据库用户。 例如，请勿使用具有数据库管理员权限的帐户。
 
-在Oracle上，您使用的视图库帐户只需要CONNECT、RESOURCE和CREATE权限。 有关其他AEM Forms库的类似要求， [请参阅准备在JEE（单台服务器）上安装](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)。
+在Oracle上，您使用的CONNECT库帐户只需要视图、RESOURCE和CREATE数据权限。 有关其他数据库的类似要求，请 [参阅准备在JEE（单台服务器）上安装AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)。
 
 #### 在Windows上为JBoss配置SQL Server的集成安全性 {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -356,9 +356,9 @@ Web服务定义语言(WSDL)生成应仅对开发环境启用，开发者使用WS
 
 1. 在“更改中心”下，单 **击“锁定并编辑”**。
 1. 在“域结构”下，单 *[击“基域]* ” > **Services** > **JDBC** > **Data Sources** ，并在右侧窗 ****&#x200B;格中单击IDP ，再单击IDP。
-1. 在下一个屏幕的“配 **置** ”选项卡上，单 **击“连接池** ”选项卡，在“属 **性** ”框中键入 `integratedSecurity=true`。
+1. 在下一个屏幕的“配 **置** ”选项卡上，单 **击“连接池** ”选项卡，在“属 **性”框中** ，键入 `integratedSecurity=true`。
 1. 在“域结构”下，单 **[击“基域]** ” > **Services** > **JDBC** > **Data Sources** ，然后在右 ****&#x200B;窗格中单击DS RM。
-1. 在下一个屏幕的“配 **置** ”选项卡上，单 **击“连接池** ”选项卡，在“属 **性** ”框中键入 `integratedSecurity=true`。
+1. 在下一个屏幕的“配 **置** ”选项卡上，单 **击“连接池** ”选项卡，在“属 **性”框中** ，键入 `integratedSecurity=true`。
 1. 将sqljdbc_auth.dll文件添加到运行应用程序服务器的计算机上的Windows系统路径。 sqljdbc_auth.dll文件位于Microsoft SQL JDBC 6.2.1.0驱动程序安装中。
 1. 将SQL Server的安全性从混 **合模式** 设置 **为仅Windows身份验证**。
 
@@ -374,14 +374,14 @@ Web服务定义语言(WSDL)生成应仅对开发环境启用，开发者使用WS
 1. 在右侧窗格的“其他属性”下，单击“自 **定义属性**”，然后单击“ **新建”**。
 1. 在“名 **称** ”框中，键 `integratedSecurity` 入并在“值” **框中** 键入 `true`。
 1. 在安装WebSphere的计算机上，将sqljdbc_auth.dll文件添加到Windows系统路径(C:\Windows)。 sqljdbc_auth.dll文件与Microsoft SQL JDBC 1.2驱动程序安装位置相同(默 *[认为]* InstallDir/sqljdbc_1.2/enu/auth/x86)。
-1. 选择 **“开始** ” **>“控制面板** ”>“服务”，右键单击WebSphere的Windows服务(IBM WebSphere Application Server &lt;version> - &lt;node>)，然后选择 ******** Properties。
+1. 选择 **开始** > **控制面板** > **服务，右键单击WebSphere的Windows服务（IBM WebSphere Application Server &lt;version> - &lt;节点>）并选择******。
 1. 在“属性”对话框中，单击“登 **录”选** 项卡。
 1. 选 **择此帐户** ，并提供设置要使用的登录帐户所需的信息。
 1. 将SQL Server上的安全性从混 **合模式** 设置 **为仅Windows身份验证**。
 
 ### 保护对数据库中敏感内容的访问 {#protecting-access-to-sensitive-content-in-the-database}
 
-AEM Forms模式库包含有关系统配置和业务流程的敏感信息，应隐藏在防火墙后。 应将数据库考虑在与表单服务器相同的信任边界内。 要防止信息泄露和业务数据失窃，必须由数据库管理员(DBA)配置数据库以仅允许授权管理员访问。
+AEM Forms数据库模式包含有关系统配置和业务流程的敏感信息，应隐藏在防火墙后。 应将数据库考虑在与表单服务器相同的信任边界内。 要防止信息泄露和业务数据失窃，必须由数据库管理员(DBA)配置数据库以仅允许授权管理员访问。
 
 为了增加预防措施，您应考虑使用数据库供应商特定工具来加密表中包含以下数据的列：
 
@@ -393,13 +393,13 @@ AEM Forms模式库包含有关系统配置和业务流程的敏感信息，应�
 
 ### LDAP安全性 {#ldap-security}
 
-轻量级目录访问协议(LDAP)目录通常由JEE上的AEM Forms用作企业用户和组信息的源以及执行口令身份验证的方法。 您应确保将LDAP目录配置为使用安全套接字层(SSL)，并将JEE上的AEM Forms配置为使用其SSL端口访问LDAP目录。
+轻量级目录访问协议(LDAP)目录通常由JEE上的AEM Forms用作企业用户和组信息的源以及执行密码身份验证的方法。 您应确保将LDAP目录配置为使用安全套接字层(SSL)，并将JEE上的AEM Forms配置为使用其SSL端口访问LDAP目录。
 
 #### LDAP拒绝服务 {#ldap-denial-of-service}
 
 使用LDAP的常见攻击涉及攻击者故意多次无法进行身份验证。 这会强制LDAP目录服务器将用户从所有依赖LDAP的服务中锁定。
 
-您可以设置AEM Forms在用户反复无法向AEM Forms进行身份验证时执行的失败尝试次数和随后的锁定时间。 在管理控制台中，选择低值。 在选择失败尝试次数时，请务必了解，在进行所有尝试后，AEM Forms会在LDAP目录服务器尝试之前锁定用户。
+您可以设置当用户多次无法向AEM Forms进行身份验证时，AEM Forms执行的失败尝试次数和随后的锁定时间。 在管理控制台中，选择低值。 在选择失败尝试次数时，请务必了解，在进行所有尝试后，AEM Forms会在LDAP目录服务器尝试之前锁定用户。
 
 #### 设置自动帐户锁定 {#set-automatic-account-locking}
 
@@ -430,7 +430,7 @@ AEM Forms模式库包含有关系统配置和业务流程的敏感信息，应�
  <tbody>
   <tr> 
    <td><p>日志文件ACL</p> </td> 
-   <td><p>为JEE日志文件访问控制列表(ACL)设置适当的AEM Forms。</p> <p>设置适当的凭据有助于防止攻击者删除文件。</p> <p>日志文件目录上的安全权限应为管理员和系统组的完全控制权。 AEM Forms用户帐户应仅具有“读取”和“写入”权限。</p> </td> 
+   <td><p>在JEE日志文件访问控制列表(ACL)中设置适当的AEM Forms。</p> <p>设置适当的凭据有助于防止攻击者删除文件。</p> <p>日志文件目录上的安全权限应为管理员和系统组的完全控制权。 AEM Forms用户帐户应仅具有“读取”和“写入”权限。</p> </td> 
   </tr> 
   <tr> 
    <td><p>日志文件冗余</p> </td> 
@@ -439,15 +439,15 @@ AEM Forms模式库包含有关系统配置和业务流程的敏感信息，应�
  </tbody> 
 </table>
 
-## 在JEE上配置AEM Forms，以便在企业之外进行访问 {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
+## 在JEE上配置AEM Forms以在企业之外进行访问 {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
-在JEE上成功安装AEM Forms后，务必定期维护环境的安全。 本节介绍建议哪些任务可以维护JEE生产服务器上AEM Forms的安全性。
+在JEE上成功安装AEM Forms后，务必定期维护环境的安全。 本节介绍建议在JEE生产服务器上维护AEM Forms的安全的任务。
 
 ### 为Web访问设置反向代理 {#setting-up-a-reverse-proxy-for-web-access}
 
-反向 *代理* ，可用于确保外部和内部用户均可使用JEE Web应用程序上AEM Forms的一组URL。 此配置比允许用户直接连接到JEE上AEM Forms正在运行的应用程序服务器更安全。 反向代理对正在JEE上运行AEM Forms的应用程序服务器执行所有HTTP请求。 用户只能通过网络访问反向代理，并且只能尝试反向代理支持的URL连接。
+反 *向代理* ，可用于确保外部和内部用户都可使用JEE Web应用程序上的AEM Forms的一组URL。 此配置比允许用户直接连接到JEE上的AEM Forms正在运行的应用程序服务器更加安全。 反向代理为在JEE上运行AEM Forms的应用程序服务器执行所有HTTP请求。 用户只能通过网络访问反向代理，并且只能尝试反向代理支持的URL连接。
 
-**JEE根URL上的AEM Forms与反向代理服务器一起使用**
+**AEM Forms在JEE根URL上与反向代理服务器一起使用**
 
 JEE Web应用程序上每个AEM Forms的以下应用程序根URL。 您应配置反向代理，仅向最终用户提供Web应用程序功能的URL。
 
@@ -477,7 +477,7 @@ JEE Web应用程序上每个AEM Forms的以下应用程序根URL。 您应配置
   </tr> 
   <tr> 
    <td><p>/edcws/*</p> </td> 
-   <td><p>Web服务URL，用于权限管理</p> </td> 
+   <td><p>Rights Management的Web服务URL</p> </td> 
    <td><p>否</p> </td> 
    <td><p>是</p> </td> 
   </tr> 
@@ -537,7 +537,7 @@ JEE Web应用程序上每个AEM Forms的以下应用程序根URL。 您应配置
   </tr> 
   <tr> 
    <td><p>/FormsIVS/*</p> </td> 
-   <td><p>用于测试和调试表单渲染的Forms IVS应用程序</p> </td> 
+   <td><p>FormsIVS应用程序用于测试和调试表单渲染</p> </td> 
    <td><p>是</p> </td> 
    <td><p>否</p> </td> 
   </tr> 
@@ -549,7 +549,7 @@ JEE Web应用程序上每个AEM Forms的以下应用程序根URL。 您应配置
   </tr> 
   <tr> 
    <td><p>/rmws/*</p> </td> 
-   <td><p>用于权限管理的REST URL</p> </td> 
+   <td><p>Rights Management的REST URL</p> </td> 
    <td><p>否</p> </td> 
    <td><p>是</p> </td> 
   </tr> 
@@ -561,7 +561,7 @@ JEE Web应用程序上每个AEM Forms的以下应用程序根URL。 您应配置
   </tr> 
   <tr> 
    <td><p>/FormServer/*</p> </td> 
-   <td><p>表单Web应用程序文件</p> </td> 
+   <td><p>FormsWeb应用程序文件</p> </td> 
    <td><p>是</p> </td> 
    <td><p>否</p> </td> 
   </tr> 
@@ -573,7 +573,7 @@ JEE Web应用程序上每个AEM Forms的以下应用程序根URL。 您应配置
   </tr> 
   <tr> 
    <td><p>/FormServerAdmin/*</p> </td> 
-   <td><p>表单管理页面</p> </td> 
+   <td><p>Forms行政页面</p> </td> 
    <td><p>是</p> </td> 
    <td><p>否</p> </td> 
   </tr> 
@@ -603,7 +603,7 @@ JEE Web应用程序上每个AEM Forms的以下应用程序根URL。 您应配置
   </tr> 
   <tr> 
    <td><p>/CoreSystemConfig/*</p> </td> 
-   <td><p>“JEE核心配置设置”页上的AEM Forms</p> </td> 
+   <td><p>AEM Forms在JEE核心配置设置页面</p> </td> 
    <td><p>是</p> </td> 
    <td><p>否</p> </td> 
   </tr> 
@@ -641,7 +641,7 @@ CSRF共有以下特征：
 * 诱骗用户的浏览器向目标站点发送HTTP请求。
 * 涉及具有副作用的HTTP请求。
 
-JEE上的AEM Forms使用推荐人过滤器功能来阻止CSRF攻击。 本节中使用以下术语来描述推荐人过滤机制：
+AEM Forms的JEE使用推荐人过滤器功能来阻止CSRF攻击。 本节中使用以下术语来描述推荐人过滤机制：
 
 * **允许的推荐人:** 推荐人是向服务器发送请求的源页面的地址。 对于JSP页或表单，推荐人通常是浏览历史记录中的上一页。 图像的推荐人通常是显示图像的页面。 您可以通过将服务器资源添加到允许的推荐人列表来标识允许访问的推荐人。
 * **允许的推荐人例外：** 您可能希望在允许的推荐人列表中限制特定推荐人的访问范围。 要强制实施此限制，您可以将该推荐人的单个路径添加到允许的推荐人例外列表。 禁止从允许推荐人异常列表中的路径发出的请求调用表单服务器上的任何资源。 您可以为特定应用程序定义允许的推荐人例外，还可以使用适用于所有应用程序的例外的全局列表。
@@ -655,12 +655,12 @@ JEE上的AEM Forms使用推荐人过滤器功能来阻止CSRF攻击。 本节中
 1. 表单服务器检查用于调用的HTTP方法：
 
    1. 如果是POST，表单服务器将执行推荐人头检查。
-   1. 如果它为GET，则表单服务器将绕过推荐人检查，除非 *将CSRF_CHECK_GETS* 设置为true，在这种情况下，它将执行推荐人头检查。 *CSRF_CHECK_GETS在* web.xml文 *件中为应用程* 序指定。
+   1. 如果是GET，则表单服务器将绕过推荐人检查，除非 *将CSRF_CHECK_GETS* 设置为true，在这种情况下，它将执行推荐人头检查。 *CSRF_CHECK_GETS在* web.xml文 *件中为应用程* 序指定。
 
-1. 表单服务器检查是否允许列出请求的URI:
+1. 表单服务器检查请求的URI是否列入允许列表被：
 
-   1. 如果允许列出URI，则服务器接受该请求。
-   1. 如果未允许列出请求的URI，则服务器检索请求的推荐人。
+   1. 如果URI被列入允许列表，则服务器接受该请求。
+   1. 如果未请求列入允许列表的URI，则服务器检索请求的推荐人。
 
 1. 如果请求中有推荐人，服务器将检查它是否为允许推荐人。 如果允许，服务器将检查推荐人异常：
 
@@ -674,9 +674,9 @@ JEE上的AEM Forms使用推荐人过滤器功能来阻止CSRF攻击。 本节中
 
 ### 管理推荐人过滤 {#managing-referer-filtering}
 
-JEE上的AEM Forms提供推荐人过滤器以指定允许访问服务器资源的推荐人。 默认情况下，推荐人过滤器不过滤使用安全HTTP方法（如GET）的请求，除非 *将CSRF_CHECK_GETS* 设置为true。 如果允许的推荐人项的端口号设置为0，则JEE上的AEM Forms将允许来自该主机的所有具有推荐人的请求，而不管端口号。 如果未指定端口号，则仅允许来自默认端口80(HTTP)或端口443(HTTPS)的请求。 如果“允许的推荐人”列表中的所有条目都被删除，则“推荐人过滤”将被禁用。
+AEM Forms在JEE上提供了一个推荐人过滤器，用于指定允许访问您的服务器资源的推荐人。 默认情况下，推荐人过滤器不过滤使用安全HTTP方法(如GET)的请求，除非 *将CSRF_CHECK_GETS* 设置为true。 如果允许的推荐人项的端口号设置为0，则JEE上的AEM Forms将允许来自该主机的所有具有推荐人的请求，而不管端口号。 如果未指定端口号，则仅允许来自默认端口80(HTTP)或端口443(HTTPS)的请求。 如果“允许的推荐人”列表中的所有条目都被删除，则“推荐人过滤”将被禁用。
 
-首次安装文档服务时，允许的推荐人列表将更新为安装文档服务的服务器的地址。 服务器的条目包括服务器名称、IPv4地址、启用IPv6时的IPv6地址、环回地址和localhost条目。 添加到允许的推荐人列表的名称由主机操作系统返回。 例如，IP地址为10.40.54.187的服务器将包括以下条目： `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. 对于由主机操作系统重新调整的任何非限定名称（没有IPv4地址、IPv6地址或限定域名的名称），不更新allowlist。 修改允许的推荐人列表以适合您的业务环境。 请勿在生产环境中使用默认的允许推荐人列表部署表单服务器。 修改任何允许的推荐人、推荐人例外或URI后，请确保重新启动服务器以使更改生效。
+首次安装文档服务时，允许的推荐人列表将更新为安装文档服务的服务器的地址。 服务器的条目包括服务器名称、IPv4地址、启用IPv6时的IPv6地址、环回地址和localhost条目。 添加到允许的推荐人列表的名称由主机操作系统返回。 例如，IP地址为10.40.54.187的服务器将包括以下条目： `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. 对于由主机操作系统重新调整的任何非限定名称（没有IPv4地址、IPv6地址或限定域名的名称）允许列表将不更新。 修改允许的推荐人列表以适合您的业务环境。 请勿在生产环境中使用默认的允许推荐人列表部署表单服务器。 修改任何允许的推荐人、推荐人例外或URI后，请确保重新启动服务器以使更改生效。
 
 **管理允许的推荐人列表**
 
@@ -684,7 +684,7 @@ JEE上的AEM Forms提供推荐人过滤器以指定允许访问服务器资源�
 
 **管理允许的推荐人异常和允许的URI列表**
 
-JEE上的AEM Forms提供API来管理允许的推荐人异常列表和允许的URI列表。 您可以使用这些API检索、创建、编辑或删除列表。 以下是可用API的列表:
+AEM FormsJEE提供API来管理允许的推荐人异常列表和允许的URI列表。 您可以使用这些API检索、创建、编辑或删除列表。 以下是可用API的列表:
 
 * createAllowedURIsList
 * getAllowedURIsList
@@ -695,7 +695,7 @@ JEE上的AEM Forms提供API来管理允许的推荐人异常列表和允许的UR
 * updateAllowedRefererExceptions
 * deleteAllowedRefererExceptions
 
-有关API的更多信息，请参阅* JEE API参考AEM Forms*。
+有关API的更多信息，请参阅*AEM FormsJEE API参考*。
 
 在全局 ***级别对允许的推荐人异常使用LC_GLOBAL_ALLOWED_REFERER*** _EXCEPTION列表，即定义适用于所有应用程序的异常。 此列表只包含具有绝对路径(例如， `/index.html`)或相对路径(例如， `/sample/`)。 您还可以在相对URI的末尾附加一个常规表达式，例如， `/sample/(.)*`.
 
@@ -715,9 +715,9 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 **自定义WAR文件的推荐人过滤**
 
-您可能已创建自定义WAR文件以与JEE上的AEM Forms协作，以满足您的业务要求。 要为自定义WAR文件启用推荐人过滤，请 ***在WAR的类路径中包含adobe-usermanager-client*** .jar，并在* web.xml*文件中包含一个包含以下参数的过滤器条目：
+您可能已创建自定义WAR文件以在JEE上与AEM Forms协作，以满足您的业务要求。 要为自定义WAR文件启用推荐人过滤，请 ***在WAR的类路径中包含adobe-usermanager-client*** .jar，并在* web.xml*文件中包含一个包含以下参数的过滤器条目：
 
-**CSRF_CHECK_GETS控制** GET请求的推荐人检查。 如果未定义此参数，则默认值将设置为false。 仅当要过滤GET请求时，才包含此参数。
+**CSRF_CHECK_GETS控制推荐人** ，以检查GET请求。 如果未定义此参数，则默认值将设置为false。 仅当要过滤GET请求时，才包含此参数。
 
 **CSRF_ALLOWED_REFERER_EXCEPTIONS是“允许的推荐人例外”列表的ID。** 推荐人筛选器可阻止来自推荐人ID所标识列表中的列表的请求在表单服务器上调用任何资源。
 
@@ -777,7 +777,7 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 ## 安全网络配置 {#secure-network-configuration}
 
-本节介绍JEEAEM Forms所需的协议和端口，并为在安全网络配置中部署JEEAEM Forms提供建议。
+本节介绍AEM Forms在JEE上所需的协议和端口，并为在JEE上部署AEM Forms在安全网络配置中提供建议。
 
 ### AEM Forms在JEE上使用的网络协议 {#network-protocols-used-by-aem-forms-on-jee}
 
@@ -804,15 +804,15 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
    <td> 
     <ul> 
      <li><p>Web服务客户端应用程序，如。NET应用程序</p> </li> 
-     <li><p>Adobe Reader®将SOAP用于JEE服务器Web服务上的AEM Forms</p> </li> 
-     <li><p>Adobe Flash®应用程序使用SOAP提供表单服务器Web服务</p> </li> 
-     <li><p>AEM Forms在SOAP模式下使用时JEE SDK调用</p> </li> 
+     <li><p>Adobe Reader®在JEE服务器Web服务上使用AEM Forms的SOAP</p> </li> 
+     <li><p>AdobeFlash®应用程序使用SOAP表单服务器Web服务</p> </li> 
+     <li><p>AEM Forms在SOAP模式下使用时启用JEE SDK调用</p> </li> 
      <li><p>工作台设计环境</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>RMI</p> </td> 
-   <td><p>在Enterprise JavaBeans(EJB)模式中使用时JEE SDK调用的AEM Forms</p> </td> 
+   <td><p>AEM Forms在企业JavaBeans(EJB)模式中使用时的JEE SDK调用</p> </td> 
   </tr> 
   <tr> 
    <td><p>IMAP / POP3</p> </td> 
@@ -824,7 +824,7 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
   </tr> 
   <tr> 
    <td><p>UNC文件IO</p> </td> 
-   <td><p>AEM FormsJEE监视已监视文件夹以输入服务（已监视文件夹端点）</p> </td> 
+   <td><p>AEM Forms:JEE监视监视已监视文件夹以输入服务（已监视文件夹端点）</p> </td> 
   </tr> 
   <tr> 
    <td><p>LDAP</p> </td> 
@@ -848,18 +848,18 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
   </tr> 
   <tr> 
    <td><p>AMF</p> </td> 
-   <td><p>Adobe Flash应用程序，其中JEE服务器服务上的AEM Forms配置了远程处理端点</p> </td> 
+   <td><p>AdobeFlash应用程序，其中JEE服务器服务上的AEM Forms配置了远程处理端点</p> </td> 
   </tr> 
   <tr> 
    <td><p>JMX</p> </td> 
-   <td><p>JEE上的AEM Forms显示MBean以使用JMX进行监视</p> </td> 
+   <td><p>AEM FormsJEE公开MBean以使用JMX进行监视</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 应用程序服务器的端口 {#ports-for-application-servers}
 
-本节介绍支持的每种类型的应用程序服务器的默认端口（和备用配置范围）。 必须在内部防火墙上启用或禁用这些端口，具体取决于您希望允许连接到运行JEEAEM Forms的应用程序服务器的客户端的网络功能。
+本节介绍支持的每种类型的应用程序服务器的默认端口（和备用配置范围）。 必须在内部防火墙上启用或禁用这些端口，具体取决于您希望允许连接到运行JEE上的AEM Forms的应用程序服务器的客户端的网络功能。
 
 >[!NOTE]
 >
@@ -919,11 +919,11 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 **WebSphere端口**
 
-有关JEE上AEM Forms需要的WebSphere端口的信息，请转到WebSphere应用程序服务器UI中的端口号设置。
+有关JEE上的AEM Forms需要的WebSphere端口的信息，请转到WebSphere应用程序服务器UI中的端口号设置。
 
 ### 配置SSL {#configuring-ssl}
 
-有关JEE物理架构的部分AEM Forms中 [描述的物理架构](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)，您应为计划使用的所有连接配置SSL。 具体而言，所有SOAP连接都必须通过SSL进行，以防止用户凭据暴露在网络上。
+有关JEE物理架构的AEM Forms一节中 [介绍的物理架构](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)，您应为计划使用的所有连接配置SSL。 具体而言，所有SOAP连接都必须通过SSL进行，以防止用户凭据暴露在网络上。
 
 有关如何在JBoss、WebLogic和WebSphere上配置SSL的说明，请参阅管理帮助中的“配置 [SSL”](https://www.adobe.com/go/learn_aemforms_admin_64)。
 
@@ -959,7 +959,7 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 ### JBoss服务帐户 {#jboss-service-accounts}
 
-JEE统包安装的AEM Forms默认使用本地系统帐户设置服务帐户。 内置的本地系统用户帐户具有高度的可访问性； 它是管理员组的一部分。 如果工作进程标识作为本地系统用户帐户运行，则该工作进程对整个系统具有完全访问权限。
+AEM Forms的JEE统包安装默认使用本地系统帐户设置服务帐户。 内置的本地系统用户帐户具有高度的可访问性； 它是管理员组的一部分。 如果工作进程标识作为本地系统用户帐户运行，则该工作进程对整个系统具有完全访问权限。
 
 #### 使用非管理帐户运行应用程序服务器 {#run-the-application-server-using-a-non-administrative-account}
 
@@ -977,12 +977,12 @@ JEE统包安装的AEM Forms默认使用本地系统帐户设置服务帐户。 �
    * 拒绝本地登录
    * 以服务身份登录（应已设置）
 
-1. 为JEE Web内容目录上的AEM Forms赋予新的用户帐户“读取并执行”、“列表文件夹内容”和“读取”权限。
+1. 为AEM Forms在JEE Web内容目录上的新用户帐户授予“读取并执行”、“列表文件夹内容”和“读取”权限。
 1. 开始应用程序服务器服务。
 
 ### 文件系统安全性 {#file-system-security}
 
-JEE上的AEM Forms通过以下方式使用文件系统：
+AEM Forms在JEE上使用文件系统的方式如下：
 
 * 存储处理文档输入和输出时使用的临时文件
 * 将文件存储在全局存档存储中，这些存储用于支持已安装的解决方案组件
@@ -996,7 +996,7 @@ JEE上的AEM Forms通过以下方式使用文件系统：
 
 ### 禁用JBoss管理控制台和JMX控制台 {#disable-jboss-management-console-and-jmx-console}
 
-在JBoss上的JEE上使用统包安装方法安装AEM Forms时，已配置对JBoss管理控制台和JMX控制台的访问（禁用JMX监视）。 如果您使用自己的JBoss Application Server，请确保对JBoss管理控制台和JMX监控控制台的访问是安全的。 在名为jmx-invoker-service.xml的JBoss配置文件中设置对JMX监视控制台的访问权限。
+在JBoss上的JEE上使用整套安装方法安装AEM Forms时，已配置对JBoss管理控制台和JMX控制台的访问（JMX监视功能被禁用）。 如果您使用自己的JBoss Application Server，请确保对JBoss管理控制台和JMX监控控制台的访问是安全的。 在名为jmx-invoker-service.xml的JBoss配置文件中设置对JMX监视控制台的访问权限。
 
 ### 禁用目录浏览 {#disable-directory-browsing}
 
@@ -1028,7 +1028,7 @@ https://<servername>:8080/um/
 
 ## 特定于WebSphere的安全建议 {#websphere-specific-security-recommendations}
 
-本节包含用于保护在JEE上运行AEM Forms的WebSphere的应用程序服务器配置建议。
+本节包含保护在JEE上运行AEM Forms的WebSphere的应用程序服务器配置建议。
 
 ### 禁用目录浏览 {#disable_directory_browsing-2}
 
@@ -1041,5 +1041,5 @@ https://<servername>:8080/um/
 1. 选择 **启用管理安全**。
 1. 取消选择“ **启用应用程序安** 全 **性”和“使用Java 2安全性”**。
 1. 单击 **确定** 或 **应用**。
-1. 在“消 **息** ”框中，单 **击“直接保存到主配置”**。
+1. 在“消 **息** ”框中，单 **击“直接保存至主控配置”**。
 

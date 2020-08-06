@@ -28,14 +28,14 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 * SOAP
 * 监视文件夹
 * 电子邮件
-* （AEM表单已弃用）远程处理
+* (AEM表单已弃用)远程处理
 * 任务管理器
 
    >[!NOTE]
    >
-   >SOAP、EJB和（JEE上的AEM表单已弃用）会为每个已激活的服务自动创建远程处理端点。 SOAP和EJB端点为所有服务操作启用SOAP和EJB。
+   >SOAP、EJB和(JEE上的AEM表单已弃用)为每个已激活的服务自动创建远程处理端点。 SOAP和EJB端点为所有服务操作启用SOAP和EJB。
 
-   远程处理端点使Flex客户端能够调用将端点添加到的AEM Forms服务上的操作。 创建与端点同名的Flex目标，Flex客户端可以创建指向该目标的RemoteObject，以调用相关服务上的操作。
+   远程处理端点使Flex客户端能够调用该端点添加到的AEM Forms服务上的操作。 创建与端点同名的Flex目标，Flex客户端可以创建指向此目标的RemoteObjects，以调用相关服务上的操作。
 
    电子邮件、任务管理器和监视文件夹端点仅显示服务的特定操作。 添加这些端点需要第二个配置步骤来选择调用、设置配置参数以及指定输入和输出参数映射的方法。
 
@@ -55,7 +55,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 ## 添加EJB端点 {#adding-ejb-endpoints}
 
-可以使用AEM Forms Java API以编程方式将EJB端点添加到服务。 通过向服务添加EJB端点，您可以启用客户端应用程序，通过使用EJB模式调用服务。 即，在设置调用AEM表单所需的连接属性时，可以选择EJB模式。 (请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。)
+可以使用AEM FormsJava API以编程方式将EJB端点添加到服务。 通过向服务添加EJB端点，您可以启用客户端应用程序，通过使用EJB模式调用服务。 即，在设置调用AEM Forms所需的连接属性时，可以选择EJB模式。 (请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。)
 
 >[!NOTE]
 >
@@ -81,10 +81,10 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建EndpointRegistry客户端对象**
 
@@ -112,7 +112,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [使用Java API添加EJB端点](programmatically-endpoints.md#adding-an-ejb-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -152,13 +152,13 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [快速入门： 使用Java API添加EJB端点](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## 添加SOAP端点 {#adding-soap-endpoints}
 
-您可以使用AEM Forms Java API以编程方式向服务添加SOAP端点。 通过添加SOAP端点，您使客户端应用程序能够使用SOAP模式调用服务。 即，在设置调用AEM表单所需的连接属性时，可以选择SOAP模式。
+您可以使用AEM FormsJava API以编程方式向服务添加SOAP端点。 通过添加SOAP端点，您使客户端应用程序能够使用SOAP模式调用服务。 即，在设置调用AEM Forms所需的连接属性时，可以选择SOAP模式。
 
 >[!NOTE]
 >
@@ -186,10 +186,10 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
-创建SOAP端点时需要这些JAR文件。 但是，如果使用SOAP端点调用服务，则需要添加JAR文件。 有关AEM Forms JAR文件的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+创建SOAP端点时需要这些JAR文件。 但是，如果使用SOAP端点调用服务，则需要添加JAR文件。 有关AEM FormsJAR文件的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建EndpointRegistry客户端对象**
 
@@ -217,7 +217,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [使用Java API添加SOAP端点](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -257,15 +257,15 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [快速入门： 使用Java API添加SOAP端点](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## 添加监视的文件夹端点 {#adding-watched-folder-endpoints}
 
-您可以使用AEM Forms Java API以编程方式将监视文件夹端点添加到服务。 通过添加“监视的文件夹”端点，用户可以将文件（如PDF文件）放在文件夹中。 将文件放在文件夹中后，将调用已配置的服务并处理文件。 服务执行指定操作后，会将修改后的文件保存到指定的输出文件夹中。 已将监视的文件夹配置为以固定速率间隔或使用cron计划（如每周一、周三和星期五中午）进行扫描。
+您可以使用AEM FormsJava API以编程方式向服务添加监视文件夹端点。 通过添加“监视的文件夹”端点，用户可以将文件（如PDF文件）放在文件夹中。 将文件放在文件夹中后，将调用已配置的服务并处理文件。 服务执行指定操作后，会将修改后的文件保存到指定的输出文件夹中。 已将监视的文件夹配置为以固定速率间隔或使用cron计划（如每周一、周三和星期五中午）进行扫描。
 
-为了以编程方式向服务添加监视文件夹端点，请考虑以下名为EncryptDocument的短时 *过程*。 (请参 [阅了解AEM表单流程](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)。)
+为了以编程方式向服务添加监视文件夹端点，请考虑以下名为EncryptDocument的短时 *过程*。 (请参阅 [了解AEM Forms进程](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)。)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
@@ -296,10 +296,10 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建EndpointRegistry客户端对象**
 
@@ -385,13 +385,13 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [使用Java API添加监视文件夹端点](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### 使用Java API添加监视文件夹端点 {#add-a-watched-folder-endpoint-using-the-java-api}
 
-使用AEM Forms Java API添加监视文件夹端点：
+使用AEM FormsJava API添加监视文件夹端点：
 
 1. 包括项目文件。
 
@@ -457,7 +457,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [快速入门： 使用Java API添加监视文件夹端点](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -496,9 +496,9 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 ## 添加电子邮件端点 {#adding-email-endpoints}
 
-您可以使用AEM Forms Java API以编程方式向服务添加电子邮件端点。 通过添加电子邮件端点，用户可以向指定的电子邮件帐户发送包含一个或多个文件附件的电子邮件。 然后调用配置服务操作并处理文件。 服务执行指定操作后，会向发送者发送一封电子邮件，其中已修改的文件作为文件附件。
+您可以使用AEM FormsJava API以编程方式向服务添加电子邮件端点。 通过添加电子邮件端点，用户可以向指定的电子邮件帐户发送包含一个或多个文件附件的电子邮件。 然后调用配置服务操作并处理文件。 服务执行指定操作后，会向发送者发送一封电子邮件，其中已修改的文件作为文件附件。
 
-为了以编程方式向服务添加电子邮件端点，请考虑以下名为MyApplication\EncryptDocument的短 *时过程*。 有关短期流程的信息，请参 [阅了解AEM Forms流程](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)。
+为了以编程方式向服务添加电子邮件端点，请考虑以下名为MyApplication\EncryptDocument的短 *时过程*。 有关短期流程的信息，请参阅了解 [AEM Forms流程](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)。
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
@@ -529,10 +529,10 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建EndpointRegistry客户端对象**
 
@@ -591,7 +591,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 要定义电子邮件端点所需的输入参数值，请指定以下值：
 
-**输入参数名称**: 输入参数的名称。 输入值的名称在Workbench中为流程指定。 如果输入值属于服务操作（不是在Workbench中创建的进程的Forms服务），则输入名称在component.xml文件中指定。 例如，本节介绍的进程的输入参数名称为 `InDoc`。
+**输入参数名称**: 输入参数的名称。 输入值的名称在Workbench中为流程指定。 如果输入值属于服务操作(不是在Workbench中创建的进程的Forms服务)，则输入名称在component.xml文件中指定。 例如，本节介绍的进程的输入参数名称为 `InDoc`。
 
 **映射类型**: 用于配置调用服务操作所需的输入值。 映射类型有两种：
 
@@ -630,7 +630,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [使用Java API添加电子邮件端点](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -702,7 +702,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [快速入门： 使用Java API添加监视文件夹端点](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -750,9 +750,9 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 >[!NOTE]
 >
->LiveCycle Remoting API已在JEE上的AEM表单中弃用。
+>LiveCycle RemotingAPI已在JEE上为AEM表单弃用。
 
-您可以使用AEM Forms Java API以编程方式将远程处理端点添加到服务。 通过添加远程处理端点，您使Flex应用程序能够通过使用远程处理调用服务。 (请参 [阅使用（AEM表单已弃用）调用AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。)
+您可以使用AEM FormsJava API以编程方式向服务添加远程处理端点。 通过添加远程处理端点，您使Flex应用程序能够使用远程处理调用服务。 (请参 [阅调用AEM Forms(AEM表单已弃用)AEM Forms远程](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。)
 
 为了以编程方式向服务添加远程处理端点，请考虑以下名为EncryptDocument的短时 *进程*。
 
@@ -784,10 +784,10 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建EndpointRegistry客户端对象**
 
@@ -809,13 +809,13 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 **启用端点**
 
-创建新端点后，必须启用它。 启用远程处理端点后，Flex客户端将调用该服务。
+创建新端点后，必须启用它。 启用远程处理端点后，它使Flex客户端能够调用该服务。
 
 **另请参阅**
 
 [使用Java API添加远程处理端点](programmatically-endpoints.md#add-a-remoting-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -855,13 +855,13 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [快速入门： 使用Java API添加远程处理端点](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## 添加TaskManager端点 {#adding-taskmanager-endpoints}
 
-您可以使用AEM Forms Java API以编程方式将TaskManager端点添加到服务。 通过向服务添加TaskManager端点，可启用Workspace用户调用服务。 即，在Workspace中工作的用户可以调用具有相应TaskManager端点的进程。
+您可以使用AEM FormsJava API以编程方式向服务添加TaskManager端点。 通过向服务添加TaskManager端点，可启用Workspace用户调用服务。 即，在Workspace中工作的用户可以调用具有相应TaskManager端点的进程。
 
 >[!NOTE]
 >
@@ -886,10 +886,10 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建EndpointRegistry客户端对象**
 
@@ -926,7 +926,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [使用Java API添加TaskManager端点](programmatically-endpoints.md#add-a-taskmanager-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -976,13 +976,13 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [快速入门： 使用Java API添加TaskManager端点](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## 修改端点 {#modifying-endpoints}
 
-您可以使用AEM Forms Java API以编程方式修改现有端点。 通过修改端点，可以更改端点的行为。 例如，考虑一个指定用作监视文件夹的文件夹的监视文件夹端点。 您可以通过编程方式修改属于监视文件夹端点的配置值，从而使另一个文件夹能够充当监视文件夹。 有关属于监视文件夹端点的配置值的信息，请参阅添 [加监视文件夹端点](programmatically-endpoints.md#adding-watched-folder-endpoints)。
+您可以使用AEM FormsJava API以编程方式修改现有端点。 通过修改端点，可以更改端点的行为。 例如，考虑一个指定用作监视文件夹的文件夹的监视文件夹端点。 您可以通过编程方式修改属于监视文件夹端点的配置值，从而使另一个文件夹能够充当监视文件夹。 有关属于监视文件夹端点的配置值的信息，请参阅添 [加监视文件夹端点](programmatically-endpoints.md#adding-watched-folder-endpoints)。
 
 要演示如何修改终结点，本节将通过更改与监视文件夹一样的文件夹来修改监视文件夹终结点。
 
@@ -1007,10 +1007,10 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建EndpointRegistry客户端对象**
 
@@ -1032,13 +1032,13 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 >[!NOTE]
 >
->不能修改端点调用的服务。 如果尝试修改服务，则会引发异常。 要修改与给定端点关联的服务，请删除该端点并创建新端点。 (请参阅 [删除端点](programmatically-endpoints.md#removing-endpoints)。)
+>不能修改端点调用的服务。 如果尝试修改服务，将引发异常。 要修改与给定端点关联的服务，请删除该端点并创建新端点。 (请参阅 [删除端点](programmatically-endpoints.md#removing-endpoints)。)
 
 **另请参阅**
 
 [使用Java API修改端点](programmatically-endpoints.md#modifying-an-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1057,7 +1057,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 1. 检索要修改的端点。
 
-   * 通过调用对象的方法并传递用作筛选器的对象，检索当前用户(在连接属性 `EndpointRegistryClient` 中指定)可 `getEndpoints` 访问的所 `PagingFilter` 有端点的列表。 您可以传递一个 `(PagingFilter)null` 值以返回所有端点。 此方法返回一个 `java.util.List` 对象，其中每个元素都是 `Endpoint` 一个对象。 有关对象的 `PagingFilter` 信息，请参 [阅AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+   * 通过调用对象的方法并传递用作筛选器的对象，检索当前用户(在连接属性 `EndpointRegistryClient` 中指定)可 `getEndpoints` 访问的所 `PagingFilter` 有端点的列表。 您可以传递一个 `(PagingFilter)null` 值以返回所有端点。 此方法返回一个 `java.util.List` 对象，其中每个元素都是 `Endpoint` 一个对象。 有关对象的 `PagingFilter` 信息，请参 [阅AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
    * 对对象进 `java.util.List` 行迭代以确定它是否具有端点。 如果存在端点，则每个元素都是一个 `EndPoint` 实例。
    * 通过调用对象的方法确定与端点 `EndPoint` 对应的 `getServiceId` 服务。 此方法返回一个指定服务名称的字符串值。
    * 通过调用对象的方法确 `EndPoint` 定端点的类 `getConnectorId` 型。 此方法返回一个指定端点类型的字符串值。 例如，如果终结点是“监视文件夹”端点，则此方法返回 `WatchedFolder`。
@@ -1078,13 +1078,13 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [快速入门： 使用Java API修改端点](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## 删除端点 {#removing-endpoints}
 
-您可以使用AEM Forms Java API以编程方式从服务中删除端点。 删除终结点后，无法使用启用该终结点的调用方法调用该服务。 例如，如果从服务中删除SOAP端点，则无法通过使用SOAP模式调用服务。
+您可以使用AEM FormsJava API以编程方式从服务中删除端点。 删除终结点后，无法使用启用该终结点的调用方法调用该服务。 例如，如果从服务中删除SOAP端点，则无法通过使用SOAP模式调用服务。
 
 要演示如何从服务中删除端点，本节将从名为EncryptDocument的服务中删除EJB端 *点*。
 
@@ -1109,10 +1109,10 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建EndpointRegistry客户端对象**
 
@@ -1132,7 +1132,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [使用Java API删除端点](programmatically-endpoints.md#removing-an-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1166,13 +1166,13 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [快速入门： 使用Java API删除端点](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## 检索端点连接器信息 {#retrieving-endpoint-connector-information}
 
-您可以使用AEM Forms API以编程方式检索有关端点连接器的信息。 连接器使端点能够使用各种调用方法调用服务。 例如，监视文件夹连接器使端点能够使用监视文件夹调用服务。 通过以编程方式检索有关端点连接器的信息，您可以检索与连接器相关的配置值，如需要哪些配置值以及哪些配置值是可选的。
+您可以使用AEM FormsAPI以编程方式检索有关端点连接器的信息。 连接器使端点能够使用各种调用方法调用服务。 例如，监视文件夹连接器使端点能够使用监视文件夹调用服务。 通过以编程方式检索有关端点连接器的信息，您可以检索与连接器相关的配置值，如需要哪些配置值以及哪些配置值是可选的。
 
 要演示如何检索有关端点连接器的信息，本节将检索有关监视文件夹连接器的信息。 (请参阅 [添加监视的文件夹端点](programmatically-endpoints.md#adding-watched-folder-endpoints)。)
 
@@ -1182,7 +1182,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 >[!NOTE]
 >
->本主题使用API `ConnectorRegistryClient` 检索有关端点连接器的信息。 (请参 [阅AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。)
+>本主题使用API `ConnectorRegistryClient` 检索有关端点连接器的信息。 (请参 [阅AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。)
 
 ### 步骤摘要 {#summary_of_steps-8}
 
@@ -1201,10 +1201,10 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
-如果AEM Forms部署在非JBoss的受支持J2EE应用程序服务器上，则将adobe-utilities.jar和jbossall-client.jar替换为特定于部署AEM Forms的J2EE应用程序服务器的JAR文件。 有关所有AEM Forms JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+如果AEM Forms部署在非JBoss的受支持J2EE应用程序服务器上，则将adobe-utilities.jar和jbossall-client.jar替换为特定于部署了AEM Forms的J2EE应用程序服务器的JAR文件。 有关所有AEM FormsJAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建ConnectorRegistry客户端对象**
 
@@ -1229,7 +1229,7 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [使用Java API检索端点连接器信息](programmatically-endpoints.md#retrieve-endpoint-connector-information-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1261,6 +1261,6 @@ Endpoint Registry服务提供以编程方式管理端点的功能。 例如，�
 
 [快速入门： 使用Java API检索端点连接器信息](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)

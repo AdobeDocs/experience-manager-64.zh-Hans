@@ -1,8 +1,8 @@
 ---
 title: 在自适应表单中使用CAPTCHA
 seo-title: 在自适应表单中使用CAPTCHA
-description: 了解如何在自适应表单中配置AEM CAPTCHA或Google reCAPTCHA服务。
-seo-description: 了解如何在自适应表单中配置AEM CAPTCHA或Google reCAPTCHA服务。
+description: 了解如何以自适应表单配置AEM CAPTCHA或Google reCAPTCHA服务。
+seo-description: 了解如何以自适应表单配置AEM CAPTCHA或Google reCAPTCHA服务。
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)是在线交易中常用的项目，用于区分人和自动项目或机器人程序。 它提出了挑战并评估用户响应，以确定它是人还是机器人与站点交互。 它可防止用户在测试失败时继续操作，并防止蠕虫程序发布垃圾邮件或恶意用途，从而确保在线交易的安全。
 
-AEM Forms支持自适应表单中的CAPTCHA。 您可以使用Google的reCAPTCHA服务来实施CAPTCHA。
+AEM Forms以自适应形式支持CAPTCHA。 您可以使用Google的reCAPTCHA服务来实施CAPTCHA。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ AEM Forms支持自适应表单中的CAPTCHA。 您可以使用Google的reCAPTCHA
 
 ![recaptcha](assets/recaptcha.png)
 
-要在AEM Forms中实施reCAPTCHA服务：
+要在AEM Forms实施reCAPTCHA服务，请执行以下操作：
 
 1. 从 [Google获取reCAPTCHA API密钥](https://www.google.com/recaptcha/admin) 对。 它包括一个站点密钥和一个秘密。
 1. 创建云服务的配置容器。
@@ -53,10 +53,11 @@ AEM Forms支持自适应表单中的CAPTCHA。 您可以使用Google的reCAPTCHA
 
 1. 为reCAPTCHA配置云服务。
 
-   1. 在AEM作者实例中，转到“工 ![具](assets/tools.png) ”> **Cloud Service**。
+   1. 在AEM创作实例中，转到 ![工具](assets/tools.png) > **Cloud Services**。
    1. 点击 **[!UICONTROL reCAPTCHA]**。 此时将打开“配置”页。 选择在上一步中创建的配置容器，然后点 **[!UICONTROL 按创建]**。
    1. 为reCAPTCHA服务指定名称、站点密钥和密钥，然后点 **[!UICONTROL 按创建]** ，以创建云服务配置。
    1. 在编辑组件对话框中，指定在步骤1中获取的站点和密钥。 点按 **[!UICONTROL 保存设置]** ，然后点 **[!UICONTROL 按确]** 定以完成配置。
+
    配置reCAPTCHA服务后，即可在自适应表单中使用。 有关详细信息，请参 [阅在自适应表单中使用CAPTCHA](#using-captcha)。
 
 ## 在自适应表单中使用CAPTCHA {#using-captcha}
@@ -85,7 +86,7 @@ AEM Forms支持自适应表单中的CAPTCHA。 您可以使用Google的reCAPTCHA
 
    >[!NOTE]
    >
-   >不要从Captcha **[!UICONTROL 服务]** 下拉菜单中选择默认，因为默认的AEM CAPTCHA服务已弃用。
+   >不要从Captcha **[!UICONTROL 服务]** 下拉列表中选择Default，因为默认的AEM CAPTCHA服务已弃用。
 
 1. 保存属性。
 

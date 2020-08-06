@@ -48,7 +48,7 @@ Adding the [!UICONTROL Dynamic Media] or [!UICONTROL Interactive Media] componen
 
 ## Dynamic Media 组件 {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] 和 [!UICONTROL 交互式媒体] ，在Sidekick中的 [!UICONTROL Dynamic Media] 下 **[!UICONTROL 可]**&#x200B;用。 对于任何交互式资产（例如交互式视频、交互式图像或传送集），请使用&#x200B;**[!UICONTROL 交互式媒体]**&#x200B;组件。对于所有其他 Dynamic Media 资产，请使用 **[!UICONTROL Dynamic Media]** 组件。
+[!UICONTROL Dynamic Media] 和 [!UICONTROL Interactive Media] 位于Sidekick的 [!UICONTROL Dynamic Media下] ，可 **[!UICONTROL 用于Dynamic Media]**。 对于任何交互式资产（例如交互式视频、交互式图像或传送集），请使用&#x200B;**[!UICONTROL 交互式媒体]**&#x200B;组件。对于所有其他 Dynamic Media 资产，请使用 **[!UICONTROL Dynamic Media]** 组件。
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 

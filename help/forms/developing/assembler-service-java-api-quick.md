@@ -40,7 +40,7 @@ Java API快速开始(SOAP)可用于Assembler服务
 
 [快速开始（SOAP模式）: 使用Java API动态创建DDX文档](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[快速开始（SOAP模式）: 使用Java API组合PDF包](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[快速开始（SOAP模式）: 使用Java API汇编PDFPortfolio](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [快速开始（SOAP模式）: 使用Java API组合多个XDP片段](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
@@ -48,7 +48,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->使用AEM Forms编程中的快速开始基于JBoss Application Server和Microsoft Windows操作系统上部署的Forms Server。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>“使用AEM Forms进行编程”中的快速开始基于部署在JBoss Application Server和Microsoft Windows操作系统上的Forms服务器。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速开始（SOAP模式）: 使用Java API汇编PDF文档 {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -886,7 +886,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）: 使用Java API验证DDX文档 {#quick-start-soap-mode-validating-ddx-documents-using-the-java-api}
 
-以下Java代码示例基于名为bookmarkDDX.xml的文件验 *证DDX文档*。 (请参 [阅验证DDX文档](/help/forms/developing/assembling-pdf-documents.md#validating-ddx-documents)。)
+以下Java代码示例基于名为bookmarkDDX.xml的文件验证 *DDX文档*。 (请参 [阅验证DDX文档](/help/forms/developing/assembling-pdf-documents.md#validating-ddx-documents)。)
 
 ```as3
  /* 
@@ -1381,9 +1381,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## 快速开始（SOAP模式）: 使用Java API组合PDF包 {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## 快速开始（SOAP模式）: 使用Java API汇编PDFPortfolio {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-以下Java代码示例创建PDF包。 PDF包将保存为名为AssemblerResultPortfolio.pdf *的PDF文件*。 (请参 [阅汇编PDF包](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)。)
+以下Java代码示例创建PDF包。 PDF包将保存为名为AssemblerResultPortfolio.pdf *的PDF文件*。 (请参 [阅汇编PDFPortfolio](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios)。)
 
 ```as3
  /* 

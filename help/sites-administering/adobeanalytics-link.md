@@ -1,8 +1,8 @@
 ---
-title: 为Adobe Adobe配置链接跟踪Analytics
-seo-title: 为Adobe Adobe配置链接跟踪Analytics
-description: 了解如何为SiteCatalyst配置链接跟踪。
-seo-description: 了解如何为SiteCatalyst配置链接跟踪。
+title: 为Adobe Analytics配置链接跟踪
+seo-title: 为Adobe Analytics配置链接跟踪
+description: 了解如何配置链接跟踪以进行SiteCatalyst。
+seo-description: 了解如何配置链接跟踪以进行SiteCatalyst。
 uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,22 +18,22 @@ ht-degree: 0%
 ---
 
 
-# 为Adobe Adobe配置链接跟踪Analytics{#configuring-link-tracking-for-adobe-analytics}
+# 为Adobe Analytics配置链接跟踪{#configuring-link-tracking-for-adobe-analytics}
 
-当用户单击网站页面上的链接时，您可以在AdobeAnalytics捕获相关信息。 例如，使用链接跟踪来了解用户如何与您的站点交互、跟踪文件下载和跟踪退出链接。
+当用户单击您网站页面上的链接时，您可以在Adobe Analytics捕获相关信息。 例如，使用链接跟踪来了解用户如何与您的站点交互、跟踪文件下载和跟踪退出链接。
 
-## 为AdobeAnalytics框架配置链接跟踪 {#configuring-link-tracking-for-an-adobe-analytics-framework}
+## 为Adobe Analytics框架配置链接跟踪 {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. 使用 **导航**，通过部 **署**、Cloud Service访 **问Adobe** Deployment **部分的** Adobe Deployment 。
+1. 使用 **导航**，通过部 **署**、Cloud Services **到** Adobe Analytics **** 区域进行导航。
 
-1. 使用 **显示配置**，打开所需的AdobeAnalytics框架。
+1. 使用 **显示配置**，打开所需的Adobe Analytics框架。
 1. 展开“链 **接跟踪配置** ”部分，并根据需要进行配置（此页提供更多详细信息）:
 
    ![aa-08](assets/aa-08.png)
 
 ## 跟踪文件下载 {#tracking-file-downloads}
 
-配置AdobeAnalytics框架，以便从关联页面下载的文件作为下载在AdobeAnalytics自动跟踪。 启用下载跟踪时，只会跟踪您指定的文件类型。
+配置Adobe Analytics框架，以便从关联页面下载的文件作为下载在Adobe Analytics自动跟踪。 启用下载跟踪时，只会跟踪您指定的文件类型。
 
 默认情况下，跟踪以下文件类型的下载：
 
@@ -58,9 +58,9 @@ s.trackDownloadLinks= true;
 s.linkDownloadFileTypes= 'exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls';
 ```
 
-要启用AdobeAnalytics框架的下载跟踪，请执行以下操作：
+要为您的Adobe Analytics框架启用下载跟踪，请执行以下操作：
 
-1. [打开AdobeAnalytics框架并展开“链接跟踪配置”部分](#configuring-link-tracking-for-an-adobe-analytics-framework)。
+1. [打开Adobe Analytics框架并展开“链接跟踪配置”部分](#configuring-link-tracking-for-an-adobe-analytics-framework)。
 1. 启用 **跟踪下载**。
 1. 在“下 **载文件类型** ”框中，键入要跟踪的文件类型的文件扩展名。
 
@@ -68,9 +68,9 @@ s.linkDownloadFileTypes= 'exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls';
 
 您可以跟踪页面上外部链接（退出链接）的单击情况。
 
-要跟踪AdobeAnalytics框架的外部链接，请执行以下操作：
+要跟踪Adobe Analytics框架的外部链接：
 
-1. [打开AdobeAnalytics框架并展开“链 **接跟踪配置** ”部分](#configuring-link-tracking-for-an-adobe-analytics-framework)。
+1. [打开Adobe Analytics框架并展开“链 **接跟踪配置** ”部分](#configuring-link-tracking-for-an-adobe-analytics-framework)。
 1. 根据您的要求配置以下属性。
 
 用于跟踪何时单击外部链接的属性：
@@ -106,24 +106,24 @@ s.linkLeaveQueryString= false;
 
 ## 通过单击链接发送变量数据 {#sending-variable-data-with-link-clicks}
 
-您可以配置AEM，以在用户单击链接时向AdobeAnalytics发送事件和变量数据。 链接 **跟踪配置** “属性”允许您指定AdobeAnalytics事件和变量，以跟踪链接单击的发生时间。
+您可以配置AEM以在用户单击链接时向Adobe Analytics发送事件和变量数据。 链接 **跟踪配置** “属性”允许您指定要跟踪的Adobe Analytics事件和变量，以便在链接单击发生时进行跟踪。
 
-框架映射确定事件和变量值。 您可以将AdobeAnalytics变量映射到内容组件的变量，这些变量存储您在单击链接时要跟踪的数据。
+框架映射确定事件和变量值。 您可以将Adobe Analytics变量映射到内容组件的变量，这些变量存储您在单击链接时要跟踪的数据。
 
 要通过单击链接发送变量数据，请执行以下操作：
 
-1. [打开AdobeAnalytics框架并展开“链接跟踪配置”部分](#configuring-link-tracking-for-an-adobe-analytics-framework)。
+1. [打开Adobe Analytics框架并展开“链接跟踪配置”部分](#configuring-link-tracking-for-an-adobe-analytics-framework)。
 1. 根据您的要求配置以下属性。
 
 通过链接点击发送变量数据的属性：
 
-* **链接跟踪事件**&#x200B;输入要用于计算链接点击次数的AdobeAnalytics事件变量。
+* **链接跟踪事件**&#x200B;输入要用于计算链接点击次数的Adobe Analytics事件变量。
 
    用逗号分隔多个变量名称。
 
    默认值不会 `None` 导致事件跟踪。
 
-* **链接跟踪**&#x200B;变量输入您要在单击链接时发送到Adobe AdobeAnalytics的Adobe Analytics变量。 用逗号分隔多个变量名称。
+* **链接跟踪**&#x200B;变量输入单击链接时要发送到Adobe Analytics的Adobe Analytics变量。 用逗号分隔多个变量名称。
 
    默认值 `None` 不会发送变量数据。
 
@@ -136,7 +136,7 @@ s.linkTrackVars= 'prop4';
 
 ## 链接跟踪配置示例 {#example-link-tracking-configuration}
 
-请执行以下步骤来了解AdobeAnalytics集成的链接跟踪行为。 该过程显示来自Adobe [Experience Cloud调试器的结果](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)。
+请执行以下过程来了解Adobe Analytics集成的链接跟踪行为。 该过程显示来自Adobe Experience Cloud调 [试器的结果](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)。
 
 ### General configuration {#general-configuration}
 
@@ -158,11 +158,11 @@ s.linkTrackVars= 'prop4';
   <tr> 
    <th>CQ Variable<br /> </th> 
    <th>变量浏览器中的条目<br /> </th> 
-   <th>AdobeAnalytics变量</th> 
+   <th>Adobe Analytics变量</th> 
   </tr> 
   <tr> 
    <td>pagedata.title</td> 
-   <td>自定义eVar 1(eVar1)</td> 
+   <td>自定义eVar1(eVar1)</td> 
    <td>eVar1</td> 
   </tr> 
   <tr> 
@@ -180,16 +180,16 @@ s.linkTrackVars= 'prop4';
   <tr> 
    <th>CQ Variable<br /> </th> 
    <th>变量浏览器中的条目</th> 
-   <th>AdobeAnalytics变量</th> 
+   <th>Adobe Analytics变量</th> 
   </tr> 
   <tr> 
    <td>eventdata.keyword</td> 
-   <td>自定义eVar 2(eVar2)</td> 
+   <td>自定义eVar2(eVar2)</td> 
    <td>eVar2</td> 
   </tr> 
   <tr> 
    <td>eventdata.results</td> 
-   <td>自定义eVar 3(eVar3)</td> 
+   <td>自定义eVar3(eVar3)</td> 
    <td>eVar3</td> 
   </tr> 
   <tr> 
@@ -229,7 +229,7 @@ s.linkTrackVars= 'prop4';
 
 1. 切换到 **预览模** 式并单击链接。
 
-通过Adobe Marketing Cloud调试器查看时，所发出的调用将如下：
+通过Adobe Marketing Cloud调试程序查看时，所发出的调用将如下所示：
 
 ![aa-leavequerysearch-blank](assets/aa-leavequerysearch-blank.png)
 
@@ -260,14 +260,14 @@ s.linkTrackVars= 'prop4';
 要启用点对点链接跟踪，您需要：
 
 * [将包含文本组件的 **页面** 与框架相关联](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework)。
-* [配置AdobeAnalytics框架以启用点对点链接跟踪](#enabling-ad-hoc-link-tracking)。
+* [配置Adobe Analytics框架以启用点对点链接跟踪](#enabling-ad-hoc-link-tracking)。
 * [为文本组件配置链接跟踪](#configuring-link-tracking-for-a-text-component)。
 
 ### 启用点对点链接跟踪 {#enabling-ad-hoc-link-tracking}
 
-配置AdobeAnalytics框架以启用点对点链接跟踪。
+配置您的Adobe Analytics框架以启用点对点链接跟踪。
 
-1. 打开AdobeAnalytics框架并展开“链 **接跟踪配置** ”部分。
+1. 打开Adobe Analytics框架并展开“链 **接跟踪配置** ”部分。
 
 1. 启 **用点对点链接跟踪**。
 
@@ -309,7 +309,7 @@ s.linkTrackVars= 'prop4';
 
 在为文本组件本身配置点对点链 **接跟** 踪之前，必须已实施以下配置：
 
-* Adobe [Analytics框架配置为启用点对点链接跟踪](#enabling-ad-hoc-link-tracking)。
+* 该 [Adobe Analytics框架配置为启用点对点链接跟踪](#enabling-ad-hoc-link-tracking)。
 * 包 [含文本组 **件的页** 面与框架相关联](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework)。
 
 请按照以下过程为文本组件配置链 **接跟** 踪：
@@ -324,19 +324,19 @@ s.linkTrackVars= 'prop4';
 
    >[!NOTE]
    >
-   >自定义链接跟踪可以作为单独的操作显示，在链接／取消链接操作(Analytics图标)旁边。
+   >自定义链接跟踪可以作为单独的操作显示，在链接／取消链接操作（分析图标）旁边。
    >
    >只有在RTE中选择了有效的链接后，才会启用该链接。
 
    ![aa-17](assets/aa-17.png)
 
-1. 启 **用自定义链接** ，以覆盖AdobeAnalytics框架的链接跟踪配置，并启用当前链接的链接跟踪。
+1. 启 **用自定义链接** ，以覆盖Adobe Analytics框架的链接跟踪配置，并启用当前链接的链接跟踪。
 
-1. （可选）要通过链接单击跟踪事件，请在“包括AdobeAnalytics变量”字段中 **添加AdobeAnalytics事件名** 。 用逗号分隔多个事件名，例如
+1. （可选）要通过单击链接跟踪事件，请在“包括Adobe Analytics变量”字段中添 **加Adobe Analytics事件名** 。 用逗号分隔多个事件名，例如
 
    `event1, event22`。
 
-1. （可选）要通过单击链接跟踪变量数据，请在“包括AdobeAnalytics变量”字 **段中添加AdobeAnalytics变量** 。 使用以下格式之一：
+1. （可选）要通过单击链接跟踪变量数据，请在“包括Adobe Analytics变量”字 **段中添加Adobe Analytics变** 量。 使用以下格式之一：
 
    * `*<Variable-name>*: *<Dynamic Value>*`
    * `*<Variable-name>*: *‘CONSTANT’*`

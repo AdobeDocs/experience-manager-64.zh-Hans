@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 translation-type: tm+mt
 source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+workflow-type: tm+mt
+source-wordcount: '596'
+ht-degree: 95%
 
 ---
 
@@ -53,7 +56,7 @@ source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
 
 #### 任务详细信息 {#task-details}
 
-有关特定任务的详细信息，请在任务列表中点按／单击任务，然后**任务详细信息**打开。
+有关特定任务的详细信息，请在任务列表中点按／单击任务，然后打开**任务详细信息**。
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
@@ -61,7 +64,7 @@ source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
 
 在任务详细信息中，您可以编辑或添加评论。此外，项目中的所有评论都会显示在“评论”区域。
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+![chlimage_1-181](assets/chlimage_1-101.png)
 
 ### 添加任务 {#adding-tasks}
 

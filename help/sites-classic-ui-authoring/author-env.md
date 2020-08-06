@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 在创作环境中，您可以执行与以下各项相关的任务：
 
-* [创作](/help/sites-authoring/author.md) (包括页 [面创作](/help/sites-authoring/qg-page-authoring.md) 和 [管理资产](/help/assets/assets.md))
+* [创作](/help/sites-authoring/author.md) (包括 [页面创作](/help/sites-authoring/qg-page-authoring.md) 和 [资产管理](/help/assets/assets.md))
 
 * 在网站上生成和维护内容时所需的[管理](/help/sites-administering/administer-best-practices.md)任务
 
@@ -36,6 +39,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 专为在桌面设备上使用而设计。
    * 不再进行维护。
    * 以下文档重点介绍此经典 UI。有关在新式触屏优化 UI 中进行创作的信息，请参阅[标准创作文档](/help/sites-authoring/author.md)。
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. 触屏优化 UI
@@ -46,8 +50,10 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * See the [standard Authoring documentation](/help/sites-authoring/author.md) for further details on how to author using the touch-based UI. 以下文档重点介绍经典 UI。
 
    * 桌面设备：
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * 平板电脑设备（或不到 1024 像素宽的台式机）：
+
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 

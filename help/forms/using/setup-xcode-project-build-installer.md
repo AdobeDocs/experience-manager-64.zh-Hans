@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # 设置Xcode项目并构建iOS应用程序 {#set-up-the-xcode-project-and-build-the-ios-app}
 
-AEM Forms提供AEM Forms应用程序的完整源代码。 源包含构建自定义AEM Forms应用程序的所有组件。 源代码存档是 `adobe-lc-mobileworkspace-src-<version>.zip` 软件分发软件包 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 的一部分。
+AEM Forms提供AEM Forms应用的完整源代码。 该源包含构建自定义AEM Forms应用程序的所有组件。 源代码存档是 `adobe-lc-mobileworkspace-src-<version>.zip` 软件分发软件包 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 的一部分。
 
 要获取AEM Forms应用程序源，请执行以下步骤：
 
-1. 开放 [软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID登录软件分发。
-1. 点按 **[!UICONTROL 标题]** 菜单中可用的Adobe Experience Manager。
+1. 开放 [软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID才能登录软件分发。
+1. 点按 **[!UICONTROL 标题]** 菜单中提供的Adobe Experience Manager。
 1. 在过滤器 **[!UICONTROL 部分]** :
-   1. 从“ **[!UICONTROL 解决方]** 案 **[!UICONTROL ”下]** 拉列表中选择“表单”。
+   1. 从“ **[!UICONTROL 解决方]** 案 **[!UICONTROL ”下拉]** 列表中选择Forms。
    2. 选择包的版本和类型。 您还可以使用“搜 **[!UICONTROL 索下载]** ”选项筛选结果。
 1. 点按适用于您的操作系统的包名称，选择“ **[!UICONTROL 接受EULA条款]**”，然后点 **[!UICONTROL 按下载]**。
 1. 打开 [包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) ，然后单 **[!UICONTROL 击“上传包]** ”以上传包。
@@ -58,7 +58,7 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 源包含构建自定�
   </tr> 
   <tr> 
    <td><p><code>AEM Forms.xcodeproj</code></p> </td> 
-   <td><p>适用于AEM Forms应用程序的Xcode项目</p> </td> 
+   <td><p>AEM Forms应用程序的Xcode项目</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>www</code></p> </td> 
@@ -82,7 +82,7 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 源包含构建自定�
 1. 单击 **AEM Forms**，在 **目标下**，选 **择AEM Forms**。 选择“ **构建设置** ”选项卡，找到“代 **码签名授权** ”部分，在“调试”和“发行”字段中执行下列操作之一：
 
    * 未指定字段以构建标准Mobile Workspace应用程序
-   * 如构建iOS的安全AEM Forms应 [用程序以构建安全AEM Forms应用程序](/help/forms/using/building-secure-mobile-workspace-app.md) ，请指定相应的字段。
+   * 指定字段，如构建适用于iOS的安 [全AEM Forms应用程序以构建安全AEM Forms应](/help/forms/using/building-secure-mobile-workspace-app.md) 用程序中所述。
 
 1. 在“构 **建设置** ”选项卡中， **单击“全部** ” **，然后单**&#x200B;击“组合”。
 1. 从“设置 **”列表** ，展开“ **代码签名”**。
@@ -128,9 +128,9 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 源包含构建自定�
    >
    >仅当AEM Forms应用程序需要连接到不符合应用程序传输安全要求的服务器时，才需要执行此步骤。
 
-1. 在“项 **目**”下，选择 **AEM Forms** ，并确保为“代码签名身份”、“ **调试”、“发**&#x200B;行版”和“任何i SDK ************ SDK”选择适当的签名。
+1. 在“ **项目**”下，选择 **AEM Forms** ，并确保为“代码签名身份”、“ **调试”、“发**&#x200B;布”、和 ************&#x200B;任何iSDK i选择适当的签名。
 1. 将置备的iPad连接到Mac计算机。
-1. 为AEM Forms项目选择预 **配的** 设备。
+1. 为AEM Forms项目选择预 **配设** 备。
 
    ![ipad](assets/ipad.png)
 
@@ -144,7 +144,7 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 源包含构建自定�
 您需要存档Xcode项目以构建安装程序（.ipa文件）和属性列表（.plist文件）文件。 属性列表文件包含托管的内部应用程序的配置信息，如应用程序的名称和托管位置。 有关属性列表文件的详细信息，请参 [阅关于信息属性列表文件](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)。
 
 1. 将置备的iPad连接到Mac计算机。 有关设置iPad的详细信息，请参阅创 [建和下载开发设置用户档案](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
-1. 为AEM Forms项目选择预 **配的** 设备。
+1. 为AEM Forms项目选择预 **配设** 备。
 
    ![ipad-1](assets/ipad-1.png)
 
@@ -158,7 +158,7 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 源包含构建自定�
 1. 选择相应的代 **码签名标识** ，然后单 **击下一步**。 单击 **“允** ”以应用签名。
 1. 提供应用程序的名称，然后选择“ **保存为企业分发所用格式”**。
 1. 提供应 **用程序** 的应用程序URL。 例如，要在CRX服务器上承载应用程序，请提供URL `https://[*LC_host*]:[*port*]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`。
-1. 在“标 **题** ”字段中指定AEM Forms。
+1. 在“标 **题** ”字段中，指定AEM Forms。
 1. Click **Save** and close Xcode.
 
    将在指定位 `AEM Forms.ipa`置创建安装程序文 `AEM Forms-info.plist`件、属性列表文件。

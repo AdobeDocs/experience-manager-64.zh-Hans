@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 58%
 
 ---
 
@@ -91,13 +94,13 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 
 **基本**&#x200B;选项卡提供对以下配置条目的访问权：
 
-**标题** 功能板上显示的标题。
+**标题** 仪表板上显示的标题。
 
-**请求类型** ：请求数据的方式。
+**请求类型** 数据的请求方式。
 
-**SiteCatalyst配置（可选）** ：要用于连接SiteCatalyst的配置。 如果未提供，则认为该配置是在功能板页面上进行配置的（通过页面属性）。
+**SiteCatalyst配置** （可选）要用于连接到SiteCatalyst的配置。 如果未提供，则认为该配置是在功能板页面上进行配置的（通过页面属性）。
 
-**报表包ID（可选）** ，要用于生成图形的SiteCatalyst报表包。
+**报表包ID(可选** )要用于生成图形的SiteCatalyst报表包。
 
 #### 报表配置 {#report-configuration}
 
@@ -107,7 +110,7 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 >
 >若设置一个较大的日期范围，会降低功能板的响应能力。
 
-**日期从** “绝对”或从中获取数据的相对日期。
+**日期从** 绝对或从中获取数据的相对日期。
 
 **日期至** 获取数据的绝对或相对日期。
 
@@ -119,9 +122,9 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 
 **日期粒度** X轴的时间单位（例如，日、小时）。
 
-**量度** 要显示的事件列表。
+**指标** 要显示的事件的列表。
 
-**元素** 分类图中度量数据的元素列表。
+**元素** 将图形中的度量数据分解的元素的列表。
 
 #### 排名列表报表 {#ranked-list-report}
 
@@ -129,15 +132,15 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 
 **元素** 分解图形中度量数据的元素。
 
-**量度** ：要显示的事件。
+**指标** 要显示的事件。
 
-**否. of top items** Number of the report displayed by the items.
+**否. of top items** 报告显示的项目数。
 
 #### 排名报表 {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-**量度** ：要显示的事件。
+**指标** 要显示的事件。
 
 **元素** 分解图形中度量数据的元素。
 
@@ -147,7 +150,7 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
-**否. 排名最前的项目** ，报告中显示的章节数。
+**否. of top items** Number of section displayed by in the report.
 
 #### 趋势报表 {#trended-report}
 
@@ -155,7 +158,7 @@ AEM ships with a set of components that render multiple metrics of your [SiteCat
 
 **日期粒度** X轴的时间单位（例如，日、小时）。
 
-**量度** ：要显示的事件。
+**指标** 要显示的事件。
 
 **元素** 分解图形中度量数据的元素。
 
@@ -193,7 +196,7 @@ The top author components is stored in the repository at `/apps/geometrixx-outdo
 
 The following Javascript file is defined in the `geout.reporting.topauthors` [Client Library](/help/sites-developing/clientlibs.md) as a child of the component itself.
 
-QueryBuilder [用于查询存储库以读取节](/help/sites-developing/querybuilder-api.md)`cq:AuditEvent` 点。 查询结果是一个可从其中提取作者投稿的 JSON 对象。
+QueryBuilder [用于](/help/sites-developing/querybuilder-api.md) 查询存储库以读取节 `cq:AuditEvent` 点。 查询结果是一个可从其中提取作者投稿的 JSON 对象。
 
 #### top_authors.js {#top-authors-js}
 
@@ -240,7 +243,7 @@ $.ajax({
 });  
 ```
 
-其中 `JSP` 包括 `global.jsp` 和 `clientlib`。
+它包 `JSP` 括 `global.jsp` 和 `clientlib`。
 
 #### top_authors.jsp {#top-authors-jsp}
 

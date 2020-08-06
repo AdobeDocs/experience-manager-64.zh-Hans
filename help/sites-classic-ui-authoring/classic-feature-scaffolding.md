@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1507'
+ht-degree: 75%
 
 ---
 
@@ -52,12 +55,12 @@ The scaffold consists of a form with a field for each piece of content that will
 
 * **标题**：这是要创建页面的名称。每个基架都具有此字段。
 * **文本**：此字段对应生成页面上的文本组件。
-* **图像**:此字段对应于生成页面上的图像组件。
+* **图像**: 此字段与生成页面上的图像组件相对应。
 * **图像/高级**：**标题**：图像的标题。
 
 * **图像/高级**：**替代文本**：图像的替代文本。
 
-* **图像／高级**:说 **明**:图像的描述。
+* **图像／高级**: **描述**: 图像的描述。
 
 * **图像/高级**：**尺寸**：图像的尺寸。
 
@@ -67,9 +70,9 @@ The scaffold consists of a form with a field for each piece of content that will
 
 To create a new scaffold go to the **Tools** console, then **Default Page Scaffolding** and create a new page. A single page template type will be available, the *Scaffolding Template.*
 
-*转到新页面的&#x200B;**页面属性**，并设置标题文本、模板文本*、*Template*、Target Traget路径和&#x200B;*****Target Path，如上所述。*
+*转到新页&#x200B;**面的页面属性**，并设置标题文本、说明、*&#x200B;目标模&#x200B;*板*&#x200B;和路径(*如上所述)****、目标模板和路径。*
 
-*接下来，您必须定义此scaffold将创建的页面结构。 为此，请进入scaffold页面的设计模式。 随即显示一个链接，允许您在&#x200B;**对话框编辑器**&#x200B;中编辑 scaffold。
+*接下来，您必须定义此scaffold将创建的页面的结构。 为此，请进入scaffold页面的设计模式。 随即显示一个链接，允许您在&#x200B;**对话框编辑器**&#x200B;中编辑 scaffold。
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -89,7 +92,7 @@ Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
 
 此字段的属性列表将显示在对话框编辑器的右侧，如下所示：
 
-![list_of_properties](assets/list_of_properties.png)
+![列表属性](assets/list_of_properties.png)
 
 注意此字段的 name 属性。它具有值
 
@@ -110,7 +113,7 @@ Now, click on the dialog field **Dialog > Tab Panel > Text > Text**, like this:
 
 此隐藏字段的属性如下所示：
 
-![hidden_list_props](assets/hidden_list_props.png)
+![hidden_列表_props](assets/hidden_list_props.png)
 
 此隐藏字段的 name 属性为
 
@@ -130,7 +133,7 @@ This is a boolean property used to interpret the text string stored at `./jcr:co
 
 此隐藏字段的属性如下所示：
 
-![hidden_list_props2](assets/hidden_list_props2.png)
+![hidden_列表_props2](assets/hidden_list_props2.png)
 
 此隐藏字段的 name 属性为
 
@@ -151,7 +154,7 @@ This is a boolean property used to interpret the text string stored at `./jcr:co
 * 锁符号（对于大多数组件；例如文本和标题）
 * 包含文本&#x200B;**单击以取消继承**&#x200B;的蒙版（对于图像组件）
 
-这表明，在继承被取消之前，无法编辑组件。
+这表明，在取消继承之前，无法编辑组件。
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 

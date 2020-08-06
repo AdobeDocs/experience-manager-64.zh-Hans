@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cbcfbe88-e60c-446c-bbfe-2509831d6c22
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 78%
 
 ---
 
@@ -25,5 +28,5 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 舞台的文件格式决定了您可以对该舞台使用的渲染器。For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. 如果您打算只使用默认的 Rapid Refine™ 渲染器，则任何支持的舞台文件格式均可接受。
 
-在上传到AEM之前，AEM 3D中的所有渲染设置（输出图像类型和大小除外）都必须预先配置并保存到舞台文件中。
+在上传到AEM之前，AEM 3D中除输出图像类型和大小外的所有渲染设置都必须经过预配置并保存到舞台文件中。
 

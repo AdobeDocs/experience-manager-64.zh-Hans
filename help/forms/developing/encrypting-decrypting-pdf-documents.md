@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **关于加密服务**
 
-加密服务允许您加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对内容的访问。 如果PDF文档是使用密码加密的，则用户必须先指定打开密码，然后才能在Adobe Reader或Adobe Acrobat中查看文档。 同样，如果PDF文档用证书加密，则用户必须使用与用于加密PDF文档的证书（私钥）对应的公钥对PDF文档进行解密。
+加密服务允许您加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对内容的访问。 如果PDF文档是使用口令加密的，则用户必须指定打开口令，才能在Adobe Reader或Adobe Acrobat查看文档。 同样，如果PDF文档用证书加密，则用户必须使用与用于加密PDF文档的证书（私钥）对应的公钥对PDF文档进行解密。
 
 您可以使用加密服务完成以下任务:
 
@@ -35,11 +35,11 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关加密服务的详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+   >有关加密服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 使用口令加密PDF文档 {#encrypting-pdf-documents-with-a-password}
 
-当您使用口令加密PDF文档时，用户必须指定口令才能在Adobe Reader或Acrobat中打开PDF文档。 此外，在对PDF文档进行数字签名等其他AEM Forms操作之前，必须先对文档执行密码加密的PDF文档。
+当您使用口令加密PDF文档时，用户必须指定口令才能在Adobe Reader或Acrobat打开PDF文档。 此外，在对AEM Forms执行另一项文档操作(如对PDF文档进行数字签名)之前，必须解锁密码加密的PDF文档。
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关加密服务的详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关加密服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -69,8 +69,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
 **创建加密客户端API对象**
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 **设置加密运行时选项**
 
-要使用口令加密PDF文档，您指定四个值，包括两个口令值。 第一个口令值用于加密PDF文档，在打开PDF文档时必须指定。 第二个口令值（名为主口令值）用于从PDF文档中删除加密。 密码值区分大小写，这两个密码值不能相同。
+要使用口令加密PDF文档，您指定四个值，包括两个口令值。 第一个口令值用于加密PDF文档，在打开PDF文档时必须指定。 第二个密码值(名为主控密码值)用于从PDF文档中删除加密。 密码值区分大小写，这两个密码值不能相同。
 
 必须指定要加密的PDF文档资源。 您可以加密整个PDF文档，除文档元数据外的所有内容，或仅加密文档的附件。 如果仅加密文档的附件，则当用户尝试访问文件附件时，系统会提示用户输入口令。
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 [使用Web服务API加密PDF文档](encrypting-decrypting-pdf-documents.md#encrypting-a-pdf-document-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -141,9 +141,9 @@ ht-degree: 0%
    * 通过调用对象的方法并传递指定要加 `PasswordEncryptionOptionSpec` 密的文档 `setEncryptOption` 资源的 `PasswordEncryptionOption` 明细列表值，指定要加密的文档资源。 例如，要加密整个PDF文档，包括其元数据及其附件，请指定 `PasswordEncryptionOption.ALL`。
    * 使用构 `java.util.List` 造函数创建存储加密权限的 `ArrayList` 对象。
    * 通过调用对象“s `java.util.List` 方法” `add` 并传递与要设置的权限对应的明细列表值来指定权限。 例如，要设置允许用户复制PDF文档中的数据的权限，请指定 `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`。 （对要设置的每个权限重复此步骤）。
-   * 通过调用对象的方法并传 `PasswordEncryptionOptionSpec` 递指定 `setCompatability` Acrobat兼容性级别的明细列表值，指定Acrobat兼容性选项。 For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
+   * 通过调用对象的方法并传递指定 `PasswordEncryptionOptionSpec` Acrobat兼容 `setCompatability` 性级别的明细列表值，指定Acrobat兼容性选项。 For example, you can specify `PasswordEncryptionCompatability.ACRO_7`.
    * 指定允许用户通过调用对象的方法并传递表示打开密码的字符串值 `PasswordEncryptionOptionSpec` 来打开已 `setDocumentOpenPassword` 加密的PDF文档的口令值。
-   * 指定主口令值，允许用户通过调用对象的方法并传递表示主口令的 `PasswordEncryptionOptionSpec` 字符串值 `setPermissionPassword` 从PDF文档中删除加密。
+   * 指定主控密码值，允许用户通过调用对象的方法并传递表示主控密 `PasswordEncryptionOptionSpec` 码的字符串 `setPermissionPassword` 值，从PDF文档中删除加密。
 
 1. 添加密码。
 
@@ -165,7 +165,7 @@ ht-degree: 0%
 
 [快速开始（SOAP模式）: 使用Java API加密PDF文档](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -179,7 +179,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Encryption Client API对象。
 
@@ -189,7 +189,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -206,9 +206,9 @@ ht-degree: 0%
 
    * 使用对 `PasswordEncryptionOptionSpec` 象的构造函数创建对象。
    * 指定要加密的PDF文档资源，方法是 `PasswordEncryptionOption` 为对象的明细列表成 `PasswordEncryptionOptionSpec` 员分配 `encryptOption` 一个值。 要加密整个PDF，包括其元数据及其附件，请 `PasswordEncryptionOption.ALL` 分配给此数据成员。
-   * 通过为对象的明细列表成员 `PasswordEncryptionCompatability` 分配值 `PasswordEncryptionOptionSpec` 来指定Acrobat `compatability` 兼容性选项。 例如，分配 `PasswordEncryptionCompatability.ACRO_7` 给此数据成员。
+   * 通过为对象的数据成员 `PasswordEncryptionCompatability` 分配明细列表值来指 `PasswordEncryptionOptionSpec` 定Acrobat兼容 `compatability` 性选项。 例如，分配 `PasswordEncryptionCompatability.ACRO_7` 给此数据成员。
    * 指定密码值，允许用户通过为对象的文档成员分配一个表示打开密码的字符串值来打 `PasswordEncryptionOptionSpec` 开加密的PDF `documentOpenPassword` 。
-   * 指定口令值，允许用户通过为对象的文档成员指定表示主口令的字符串值，从PDF `PasswordEncryptionOptionSpec` 中删除 `permissionPassword` 加密。
+   * 指定密码值，允许用户通过为对象的文档成员指定表示主控密码的字符串值，从PDF `PasswordEncryptionOptionSpec` 中删除 `permissionPassword` 加密。
 
 1. 添加密码。
 
@@ -232,7 +232,7 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 使用证书加密PDF文档 {#encrypting-pdf-documents-with-certificates}
 
@@ -255,7 +255,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关加密服务的详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关加密服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -278,8 +278,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
 **创建加密客户端API对象**
 
@@ -313,7 +313,7 @@ ht-degree: 0%
 
 [使用Web服务API使用证书加密PDF文档](encrypting-decrypting-pdf-documents.md#encrypt-a-pdf-document-with-a-certificate-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -357,7 +357,7 @@ ht-degree: 0%
 
    * 通过调 `CertificateEncryptionOptionSpec` 用对象的构造函数创建对象。
    * 通过调用对象的方法并传递指定要加 `CertificateEncryptionOptionSpec` 密的文档 `setOption` 资源的 `CertificateEncryptionOption` 明细列表值，指定要加密的文档资源。 例如，要加密整个PDF文档，包括其元数据及其附件，请指定 `CertificateEncryptionOption.ALL`。
-   * 通过调用对象的方法并传 `CertificateEncryptionOptionSpec` 递指定Acrobat兼 `setCompat` 容性级别的 `CertificateEncryptionCompatibility` 明细列表值，指定Acrobat兼容性选项。 For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
+   * 通过调用对象的方法并传递指定 `CertificateEncryptionOptionSpec` Acrobat兼容 `setCompat` 性级别的 `CertificateEncryptionCompatibility` 明细列表值，指定Acrobat兼容性选项。 For example, you can specify `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. 创建证书加密的PDF文档。
 
@@ -380,7 +380,7 @@ ht-degree: 0%
 
 [快速开始（SOAP模式）: 使用Java API使用证书加密PDF文档](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -394,7 +394,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Encryption Client API对象。
 
@@ -404,7 +404,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -434,7 +434,7 @@ ht-degree: 0%
 
    * 使用对 `CertificateEncryptionOptionSpec` 象的构造函数创建对象。
    * 指定要加密的PDF文档资源，方法是 `CertificateEncryptionOption` 为对象的明细列表成 `CertificateEncryptionOptionSpec` 员分配 `option` 一个值。 要加密整个PDF文档，包括其元数据及其附件，请为 `CertificateEncryptionOption.ALL` 此数据成员分配。
-   * 通过为对象的明细列表成员 `CertificateEncryptionCompatibility` 分配值 `CertificateEncryptionOptionSpec` 来指定Acrobat `compat` 兼容性选项。 例如，分配 `CertificateEncryptionCompatibility.ACRO_7` 给此数据成员。
+   * 通过为对象的数据成员 `CertificateEncryptionCompatibility` 分配明细列表值来指 `CertificateEncryptionOptionSpec` 定Acrobat兼容 `compat` 性选项。 例如，分配 `CertificateEncryptionCompatibility.ACRO_7` 给此数据成员。
 
 1. 创建证书加密的PDF文档。
 
@@ -449,7 +449,7 @@ ht-degree: 0%
 1. 将加密的PDF文档另存为PDF文件。
 
    * 通过调 `System.IO.FileStream` 用其构造函数并传递一个字符串值来创建对象，该字符串值表示受保护PDF文档的文件位置。
-   * 创建一个字节数组，它存储由方 `BLOB` 法返回的对象的数据 `encryptPDFUsingCertificates` 内容。 通过获取对象数据成员的 `BLOB` 值填充字 `binaryData` 节数组。
+   * 创建一个字节数组，它存储由方 `BLOB` 法返回的对象的数据 `encryptPDFUsingCertificates` 内容。 通过获取对象数据成员的值 `BLOB` 填充字节 `binaryData` 数组。
    * 通过调 `System.IO.BinaryWriter` 用对象的构造函数并传递该对 `System.IO.FileStream` 象来创建。
    * 通过调用对象的方法并传递字节数组，将字 `System.IO.BinaryWriter` 节数组的 `Write` 内容写入PDF文件。
 
@@ -459,15 +459,15 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 删除基于证书的加密 {#removing-certificate-based-encryption}
 
-可以从PDF文档中删除基于证书的加密，以便用户可以在Adobe Reader或Acrobat中打开PDF文档。 要从使用证书加密的PDF文档中删除加密，必须引用公钥。 从PDF文档删除加密后，它不再安全。
+可以从PDF文档中删除基于证书的加密，以便用户可以在Adobe Reader或Acrobat打开PDF文档。 要从使用证书加密的PDF文档中删除加密，必须引用公钥。 从PDF文档删除加密后，它不再安全。
 
 >[!NOTE]
 >
->有关加密服务的详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关加密服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-2}
 
@@ -488,8 +488,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
 **创建加密服务客户端**
 
@@ -505,11 +505,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->私钥存储在AEM Forms信任存储中。 将证书放在该位置时，将指定别名值。
+>私钥存储在AEM Forms信任商店。 将证书放在该位置时，将指定别名值。
 
 **保存PDF文档**
 
-从加密的PDF文档中删除基于证书的加密后，您可以将PDF文档另存为PDF文件。 用户可以在Adobe Reader或Acrobat中打开PDF文档。
+从加密的PDF文档中删除基于证书的加密后，您可以将PDF文档另存为PDF文件。 用户可以在Adobe Reader或Acrobat打开PDF文档。
 
 **另请参阅**
 
@@ -517,7 +517,7 @@ ht-degree: 0%
 
 [使用Web服务API删除基于证书的加密](encrypting-decrypting-pdf-documents.md#remove-certificate-based-encryption-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -561,7 +561,7 @@ ht-degree: 0%
 
 [快速开始（SOAP模式）: 使用Java API删除基于证书的加密](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -575,7 +575,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建加密服务客户端。
 
@@ -585,7 +585,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -620,15 +620,15 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 删除密码加密 {#removing-password-encryption}
 
-可以从PDF文档中删除基于口令的加密，这样用户无需指定口令即可在Adobe Reader或Acrobat中打开PDF文档。 从PDF文档删除基于密码的加密后，文档不再安全。
+可以从PDF文档中删除基于密码的加密，这样用户无需指定密码即可在Adobe Reader或Acrobat打开PDF文档。 从PDF文档删除基于密码的加密后，文档不再安全。
 
 >[!NOTE]
 >
->有关加密服务的详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关加密服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-3}
 
@@ -649,8 +649,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
 **创建加密服务客户端**
 
@@ -662,15 +662,15 @@ ht-degree: 0%
 
 **删除密码**
 
-要从加密的PDF文档中删除基于密码的加密，您需要加密的PDF文档和用于从PDF文档中删除加密的主密码值。 用于打开密码加密的PDF文档的密码不能用于删除加密。 当PDF文档用密码加密时，将指定主密码。 (请参 [阅使用口令加密PDF文档](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)。)
+要从加密的PDF文档中删除基于密码的加密，您需要加密的PDF文档和用于从PDF文档中删除加密的主控密码值。 用于打开密码加密的PDF文档的密码不能用于删除加密。 当用密码加密PDF文档时，将指定主控密码。 (请参 [阅使用口令加密PDF文档](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)。)
 
 **保存PDF文档**
 
-在Encryption服务从PDF文档删除基于密码的加密后，您可以将PDF文档另存为PDF文件。 用户无需指定口令即可在Adobe Reader或Acrobat中打开PDF文档。
+在Encryption服务从PDF文档删除基于密码的加密后，您可以将PDF文档另存为PDF文件。 用户无需指定口令即可在Adobe Reader或Acrobat打开PDF文档。
 
 **另请参阅**
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -701,7 +701,7 @@ ht-degree: 0%
    通过调用对象的方法并传递以下值，从PDF文档 `EncryptionServiceClient` 中删除基 `removePDFPasswordSecurity` 于口令的加密：
 
    * 包 `com.adobe.idp.Document` 含加密PDF文档的对象。
-   * 一个字符串值，它指定用于从PDF文档中删除加密的主密码值。
+   * 一个字符串值，它指定用于从PDF文档中删除加密的主控密码值。
 
    该方 `removePDFPasswordSecurity` 法返回一 `com.adobe.idp.Document` 个对象，它包含一个不安全的PDF文档。
 
@@ -724,7 +724,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建加密服务客户端。
 
@@ -734,7 +734,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -759,7 +759,7 @@ ht-degree: 0%
 1. 保存PDF文档。
 
    * 通过调 `System.IO.FileStream` 用对象的构造函数并传递一个字符串值来创建对象，该字符串值表示不安全PDF文档的文件位置。
-   * 创建一个字节数组，用于存储方 `BLOB` 法返回的对象的内 `removePDFPasswordSecurity` 容。 通过获取对象数据成员的 `BLOB` 值填充字 `MTOM` 节数组。
+   * 创建一个字节数组，用于存储方 `BLOB` 法返回的对象的内 `removePDFPasswordSecurity` 容。 通过获取对象数据成员的值 `BLOB` 填充字节 `MTOM` 数组。
    * 通过调 `System.IO.BinaryWriter` 用对象的构造函数并传递该对 `System.IO.FileStream` 象来创建。
    * 通过调用对象的方法并传递字节数组，将字 `System.IO.BinaryWriter` 节数组的 `Write` 内容写入PDF文件。
 
@@ -767,15 +767,15 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 解锁加密的PDF文档 {#unlocking-encrypted-pdf-documents}
 
-必须先解锁密码加密或证书加密的PDF文档，然后才能对其执行其他AEM Forms操作。 如果尝试对加密的PDF文档执行操作，将生成异常。 解锁加密的PDF文档后，可以对其执行一个或多个操作。 这些操作可能属于其他服务，如Acrobat Reader DC扩展服务。
+必须先解锁密码加密或证书加密的PDF文档，然后才能对其执行其他AEM Forms操作。 如果尝试对加密的PDF文档执行操作，将生成异常。 解锁加密的PDF文档后，可以对其执行一个或多个操作。 这些业务可以属于其他服务，如Acrobat Reader DC扩展服务。
 
 >[!NOTE]
 >
->有关加密服务的详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关加密服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-4}
 
@@ -796,8 +796,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
 **创建加密服务客户端**
 
@@ -823,7 +823,7 @@ ht-degree: 0%
 
 [使用Web服务API解锁加密的PDF文档](encrypting-decrypting-pdf-documents.md#unlock-an-encrypted-pdf-document-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -861,7 +861,7 @@ ht-degree: 0%
    * 包 `com.adobe.idp.Document` 含证书加密的PDF文档的对象。
    * 一个字符串值，它指定与用于加密PDF文档的私钥对应的公钥的别名。
 
-   该 `unlockPDFUsingPassword` 和方 `unlockPDFUsingCredential` 法都会返回您传递 `com.adobe.idp.Document` 给另一个AEM Forms Java方法以执行操作的对象。
+   该 `unlockPDFUsingPassword` 和方 `unlockPDFUsingCredential` 法都会返回您传递 `com.adobe.idp.Document` 给另一个AEM FormsJava方法以执行操作的对象。
 
 1. 执行AEM Forms操作。
 
@@ -875,7 +875,7 @@ ht-degree: 0%
 
 [将使用权限应用于PDF文档](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -889,7 +889,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建加密服务客户端。
 
@@ -899,7 +899,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -909,7 +909,7 @@ ht-degree: 0%
    * 使用对 `BLOB` 象的构造函数创建对象。
    * 通过调 `System.IO.FileStream` 用其构造函数并传递一个字符串值来创建对象，该字符串值表示加密PDF文档的文件位置以及打开文件的模式。
    * 创建存储对象内容的字节数 `System.IO.FileStream` 组。 您可以通过获取对象的属性来确定字 `System.IO.FileStream` 节数组的大 `Length` 小。
-   * 通过调用对象的方法并传递要读取的 `System.IO.FileStream` 字节数 `Read` 组、开始位置和流长度，用流数据填充字节数组。
+   * 通过调用对象的方法并传递要读取 `System.IO.FileStream` 的字节数 `Read` 组、开始位置和流长度，用流数据填充字节数组。
    * 将字 `BLOB` 节数组的内容分配给对象的数 `BLOB` 据成员，以 `MTOM` 填充对象。
 
 1. 解锁文档。
@@ -926,7 +926,7 @@ ht-degree: 0%
    * 包 `BLOB` 含证书加密的PDF文档的对象。
    * 一个字符串值，它指定与用于加密PDf文档的私钥对应的公钥的别名。
 
-   该 `unlockPDFUsingPassword` 和方 `unlockPDFUsingCredential` 法都会返回您传递 `com.adobe.idp.Document` 给其他AEM Forms方法以执行操作的对象。
+   和 `unlockPDFUsingPassword` 方 `unlockPDFUsingCredential` 法都会返回您传递 `com.adobe.idp.Document` 给另一个AEM Forms方法以执行操作的对象。
 
 1. 执行AEM Forms操作。
 
@@ -938,11 +938,11 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 确定加密类型 {#determining-encryption-type}
 
-您可以使用Java Encryption Service API或Web服务Encryption Service API以编程方式确定保护PDF文档的加密类型。 有时，需要动态确定PDF文档是否已加密，如果是，则需要动态确定加密类型。 例如，您可以确定PDF文档是使用基于口令的加密还是使用Rights Management策略进行保护。
+您可以使用Java Encryption Service API或Web服务Encryption Service API以编程方式确定保护PDF文档的加密类型。 有时，需要动态确定PDF文档是否已加密，如果是，则需要动态确定加密类型。 例如，您可以确定PDF文档是使用基于口令的加密还是Rights Management策略进行保护。
 
 PDF文档可以受以下加密类型的保护：
 
@@ -953,7 +953,7 @@ PDF文档可以受以下加密类型的保护：
 
 >[!NOTE]
 >
->有关加密服务的详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关加密服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-5}
 
@@ -973,8 +973,8 @@ PDF文档可以受以下加密类型的保护：
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（在JBoss Application Server上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，则为必需)
 
 **创建服务客户端**
 
@@ -994,7 +994,7 @@ PDF文档可以受以下加密类型的保护：
 
 [使用Web服务API确定加密类型](encrypting-decrypting-pdf-documents.md#determine-the-encryption-type-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1031,7 +1031,7 @@ PDF文档可以受以下加密类型的保护：
 
 [快速开始（SOAP模式）: 使用Java API确定加密类型](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1045,7 +1045,7 @@ PDF文档可以受以下加密类型的保护：
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建服务客户端。
 
@@ -1055,7 +1055,7 @@ PDF文档可以受以下加密类型的保护：
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -1079,4 +1079,4 @@ PDF文档可以受以下加密类型的保护：
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

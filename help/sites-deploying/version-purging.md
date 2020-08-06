@@ -30,11 +30,11 @@ ht-degree: 1%
 
 这些版本从不被清除，因此存储库大小会随着时间的推移而增大，因此需要进行管理。
 
-AEM随附各种机制，可帮助您管理存储库：
+AEM附带各种机制，可帮助您管理存储库：
 
 * 版 [本管理器](#version-manager)
 
-   此配置可用于在创建新版本时清除旧版本。
+   This can be configured to purge old versions when new versions are created.
 
 * 清除 [版本工具](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
 
@@ -72,17 +72,17 @@ AEM随附各种机制，可帮助您管理存储库：
 
    创建版本，除非将复制代理配置为禁止创建版本（由版本管理器承担）
 
-   只有在版本管理器。ivPaths中包含的路径上发生激活时，才会创建版本（请参阅下文）。
+   A version is only created if the activation happens on a paths that is contained in versionmanager.ivPaths (see below).
 
 * `versionmanager.ivPaths` (字符串[]，默认值： {&quot;/&quot;}
 
    如果versionmanager.createVersionOnActivation为true，则在激活上隐式创建版本的路径。
 
-* `versionmanager.purgingEnabled` (布尔值，默认值： false)
+* `versionmanager.purgingEnabled` (Boolean, default: false)
 
    是否在创建新版本时启用清除
 
-* `versionmanager.purgePaths` (字符串[]，默认值： {&quot;/content&quot;})
+* `versionmanager.purgePaths` (String[], default: {&quot;/content&quot;})
 
    创建新版本时要清除版本的路径。
 
@@ -100,7 +100,7 @@ AEM随附各种机制，可帮助您管理存储库：
 
 >[!NOTE]
 >
->建议不要在存储库中保留大量版本。 因此，在配置版本清除操作时，请注意不要从清除中排除太多版本，否则存储库大小将无法正确优化。 如果您因业务需要而保留大量版本，请与Adobe支持联系以找到优化存储库大小的其他方法。
+>建议不要在存储库中保留大量版本。 因此，在配置版本清除操作时，请注意不要从清除中排除太多版本，否则存储库大小将无法正确优化。 如果您因业务需要而保留大量版本，请与Adobe支持联系，以找到优化存储库大小的替代方法。
 
 ### 组合保留选项 {#combining-retention-options}
 

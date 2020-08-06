@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +49,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       选择特定的区段将打开区段定义页面。
 
    * [报告](/help/sites-administering/reporting.md)\
-      AEM提供了不同的报告，可帮助您分析和监视实例的状态。 此 MCM 窗格列出了相应报表。
+      AEM提供不同的报告，帮助您分析和监视实例的状态。 此 MCM 窗格列出了相应报表。
 
       选择报表将打开报表页面。
 
@@ -72,7 +75,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 功能板显示了四个窗格，分别为您提供了有关（潜在客户）列表、区段、报表和营销活动的概述。可以在此处访问这些内容的基本功能。
 
-![mcm_dashboard](assets/mcm_dashboard.png)
+![mcm_仪表板](assets/mcm_dashboard.png)
 
 ## 潜在客户 {#leads}
 
@@ -183,7 +186,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    您可以在此处：
 
-   * **创建**&#x200B;新……体验；例如，Adobe Target选件、Teaser和Newsletter。
+   * Create a **New...** experience; for example, Adobe Target offers, teasers and newsletters.
    * **编辑**&#x200B;特定的 Teaser 页面或新闻稿的详细信息（也可以使用双击）。
    * 为特定的 Teaser 页面或新闻稿定义&#x200B;**属性...**。
    * **模拟**&#x200B;体验（teaser 页面或 newsletter）的外观。
@@ -207,5 +210,5 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 在 MCM 中，单击&#x200B;**营销活动**。确保列表视图处于激活状态，然后选择所需的营销活动体验，并选择&#x200B;**分析...**。将会显示一段时间内的页面展示图。
 
-![mcm_campaignalyze](assets/mcm_campaignanalyze.png)
+![mcm_campaignanyze](assets/mcm_campaignanalyze.png)
 

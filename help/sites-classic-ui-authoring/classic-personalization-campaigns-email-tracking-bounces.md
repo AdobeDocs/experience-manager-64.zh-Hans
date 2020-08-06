@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 83%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe不计划进一步增强对AEM SMTP服务发送的已打开／弹回电子邮件的跟踪。
+>Adobe不打算进一步增强对AEM SMTP服务发送的打开／弹回电子邮件的跟踪。
 >
->建议利用Adobe [Campaign及其AEM集成](/help/sites-administering/campaign.md)。
+>建议是利 [用Adobe Campaign和AEM集成](/help/sites-administering/campaign.md)。
 
 您向多位用户发送新闻稿时，列表中通常会存在一些无效的电子邮件地址。发送到这些地址的新闻稿会弹回。AEM 能够管理这些弹回的邮件，并可在超出配置的弹回计数后停止向这些地址发送新闻稿。默认情况下，弹回率设置为 3，但您可对其进行配置。
 
@@ -52,7 +55,7 @@ Feed Importer 允许您将外部源的内容多次导入到您的存储库中。
 
    **POP3 配置属性：**
 
-   `pop3.leave.on.server`:定义是否将消息保留在服务器上。 设置为 true 会将邮件保留在服务器上，设置为 false 则不会保留。默认设置为 true。
+   `pop3.leave.on.server`: 定义是否在服务器上保留消息。 设置为 true 会将邮件保留在服务器上，设置为 false 则不会保留。默认设置为 true。
 
    **POP3 示例：**
 
@@ -83,7 +86,7 @@ Feed Importer 允许您将外部源的内容多次导入到您的存储库中。
 
 配置新闻稿服务：
 
-1. 在OSGi控制台中， `<host>:<port>/system/console/configMgr` 并导航到 **MCM新闻稿**。
+1. 在OSGi控制台中， `<host>:<port>/system/console/configMgr` 导航到 **MCM Newsletter**。
 
 1. 配置服务并在结束时保存更改。
 

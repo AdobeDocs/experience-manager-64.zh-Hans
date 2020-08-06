@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14754023-e7c4-4dc5-a9d8-408b81861d95
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 55%
 
 ---
 
@@ -42,6 +45,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
       1. 请注意缺少的路径和文件名。
       1. 在属性页面的右上角附近，点按&#x200B;**[!UICONTROL 关闭]**。
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. 新上传的资产现在将正确列为引用的资产。
 
    * **[!UICONTROL 忽略依赖关系]**。

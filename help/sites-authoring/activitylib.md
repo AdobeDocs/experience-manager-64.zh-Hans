@@ -114,6 +114,7 @@ When you create a brand using the Activities console, it also appears in the [Of
    1. 单击或点按**选择受众**，然后选择您的体验目标的区段。
    1. 单击或点按&#x200B;**添加体验**，键入名称，然后单击或点按&#x200B;**确定**。
    1. 单击或点按&#x200B;**下一步**。
+
    如果您使用的是 Adobe Target A/B 测试，请执行以下操作：
 
    1. 单击或点按受众对话框中的铅笔图标，以选择受众。
@@ -182,6 +183,7 @@ When you create a brand using the Activities console, it also appears in the [Of
 
    * 禁用当前活动
    * 修改所有页面，并将目标内容替换为入选体验的实际内容。The content of the winning experience becomes part of the normal page **without** targeting.
+
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
    入选体验是在报表中生成较高提升度（基于转化率）的体验。

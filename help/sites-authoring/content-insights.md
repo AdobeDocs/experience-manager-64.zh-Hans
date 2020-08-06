@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 91%
 
 ---
 
@@ -85,7 +88,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## “&lt;营销活动名称> 活动”报表{#the-campaign-activity-report}
 
-对于页面处于激活状态的每个营销活动，均会显示一个名为“*&lt;营销活动名称>* 活动”的报表。此报告显示提供选件的每个区段的页面印象和转化率。
+对于页面处于激活状态的每个营销活动，均会显示一个名为“*&lt;营销活动名称>* 活动”的报表。该报表显示提供优惠的每个区段的页面展示次数和转换率。
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 

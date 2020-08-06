@@ -48,7 +48,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->AEM表单编程中的快速开始基于Forms Server操作系统。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>AEM表单编程中的快速开始基于Forms服务器操作系统。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 
 ## 快速开始（SOAP模式）: 使用Java API创建PDF文档 {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
@@ -171,11 +171,11 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）: 使用Java API基于应用程序XDP文件创建PDF文档 {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
 
-以下Java代码示例创建一个名为Loan. *pdf的PDF文档*。 此PDF文档基于名为Loan.xdp的 *表单设计* 和名为Loan.xml的XML *数据文件*。 XDP文件将作为名为的AEM Forms应用程序的一部分进行部署 `Applications/FormsApplication`。 请注意，URI路径为 `repository:///Applications/FormsApplication/1.0/FormsFolder/`。 Loan. *pdf将写入* C:\Adobe folder located on the J2EE application server hosting AEM Forms文件夹，而不是写入客户端计算机。 (请参 [阅创建PDF文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。)
+以下Java代码示例创建一个名为Loan. *pdf的PDF文档*。 此PDF文档基于名为Loan.xdp的 *表单设计* 和名为Loan.xml的XML *数据文件*。 XDP文件作为名为的AEM Forms应用程序的一部分进行部署 `Applications/FormsApplication`。 请注意，URI路径为 `repository:///Applications/FormsApplication/1.0/FormsFolder/`。 Loan. *pdf将写入* C:\Adobe folder located on the J2EE application server hosting AEM Forms文件夹，而不是写入客户端计算机。 (请参 [阅创建PDF文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。)
 
 >[!NOTE]
 >
->运行此快速开始之前，请确保创建名为Applications/FormsApplication的AEM Forms应用程序。 在名为FormsFolder的应用程序中创建一个文件夹，并将XDP文件放在该文件夹中。 有关详细信息，请 [参阅生成PDF文档](/help/forms/developing/creating-document-output-streams.md)*。*
+>运行此快速开始之前，请确保创建一个名为Applications/FormsApplication的AEM Forms应用程序。 在名为FormsFolder的应用程序中创建一个文件夹，并将XDP文件放在该文件夹中。 有关详细信息，请 [参阅生成PDF文档](/help/forms/developing/creating-document-output-streams.md)*。*
 
 ```as3
  /* 
@@ -294,7 +294,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）: 使用Java API将位于存储库中的文档传递到输出服务 {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
 
-以下Java代码从存储库检索XDP文件，并将其传递到实例中的Output服 `com.adobe.idp.Document` 务。 XDP文件将作为名为的AEM Forms应用程序的一部分进行部署 `Applications/FormsApplication`。 请注意，URI路径为 `repository:///Applications/FormsApplication/1.0/FormsFolder/`。
+以下Java代码从存储库检索XDP文件，并将其传递到实例中的Output服 `com.adobe.idp.Document` 务。 XDP文件作为名为的AEM Forms应用程序的一部分进行部署 `Applications/FormsApplication`。 请注意，URI路径为 `repository:///Applications/FormsApplication/1.0/FormsFolder/`。
 
 >[!NOTE]
 >
@@ -310,7 +310,7 @@ Loan. *pdf将写入* C:\Adobe folder located on the J2EE application server host
 
 >[!NOTE]
 >
->运行此快速开始之前，请确保创建名为Applications/FormsApplication的AEM Forms应用程序。 在名为FormsFolder的应用程序中创建一个文件夹，并将XDP文件放在该文件夹中。
+>运行此快速开始之前，请确保创建一个名为Applications/FormsApplication的AEM Forms应用程序。 在名为FormsFolder的应用程序中创建一个文件夹，并将XDP文件放在该文件夹中。
 
 ```as3
  /* 
@@ -674,7 +674,7 @@ Loan. *pdf将写入* C:\Adobe folder located on the J2EE application server host
 
 ## 快速开始（SOAP模式）: 使用Java API将文档传递到输出服务 {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
-以下Java快速开始从Content Services *中检索文件* Loan.xdp。 此XDP文件位于 `space /Company Home/Form Designs`。 在实例中返回XDP文 `com.adobe.idp.Document` 件。 实 `com.adobe.idp.Document` 例将传递给输出服务。 非交互式表单将作为名为*Loan.pdf *的PDF文件保存在客户端计算机上。 由于设置了“文件URI”选项，因此PDF文件*Loan.pdf *也保存在承载AEM Forms的J2EE应用程序服务器上。 (请参 [阅将位于Content Services ES2中的文档传递到输出服务](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)。)
+以下Java快速开始从Content Services *中检索文件* Loan.xdp。 此XDP文件位于 `space /Company Home/Form Designs`。 在实例中返回XDP文 `com.adobe.idp.Document` 件。 实 `com.adobe.idp.Document` 例将传递给输出服务。 非交互式表单将作为名为*Loan.pdf *的PDF文件保存在客户端计算机上。 由于“文件URI”选项已设置，因此PDF文件*Loan.pdf *也会保存在承载AEM Forms的J2EE应用程序服务器上。 (请参 [阅将位于Content Services ES2中的文档传递到输出服务](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)。)
 
 ```as3
  /* 

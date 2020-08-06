@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 33%
 
 ---
 
@@ -42,6 +45,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
       1. 请注意缺少的路径和文件名。
       1. 在属性页面的右上角附近，点按&#x200B;**[!UICONTROL 关闭]**。
+
    After the files are uploaded return to **[!UICONTROL View Properties > Dependencies]** page. 新上传的资产现在将正确列为引用的资产。
 
    * **忽略依赖关系**。

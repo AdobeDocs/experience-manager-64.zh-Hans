@@ -89,7 +89,7 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
 
 **返回类型**: 单击表达式不返回任何值。 如果任何表达式返回值，则忽略该值。
 
-**示例**: 要用值AEM Forms **填充按钮的单击操作时的文本框** 1 **，该按钮的单击**&#x200B;表达式为 `textbox1.value="AEM Forms"` “
+**示例**: 要在按钮的单 **击操作** 中填充文本框1，其值 **为** AEM Forms `textbox1.value="AEM Forms"` ，则按钮的单击表达式为“
 
 ### 初始化脚本 {#initialization-script}
 
@@ -166,7 +166,7 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
 
 >[!NOTE]
 >
->以编程方式更改字段值时，可以禁用执行值提交脚本。 要这样做，请转到 `https://[server]:[port]/system/console/configMgr and change` Adaptive Forms Version **Forms Compatibility** to **AEM Forms 6.1**。 此后，仅当用户从UI更改字段值时，才执行值提交脚本。
+>以编程方式更改字段值时，可以禁用执行值提交脚本。 要这样做，请转到 `https://[server]:[port]/system/console/configMgr and change` Adaptive Meginal **Version for Compatibility** **to** AEM Forms 6.1。 此后，仅当用户从UI更改字段值时，才执行值提交脚本。
 
 ### 可见性表达式 {#visibility-expression}
 
@@ -255,7 +255,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->在AEM中，最好将代码写入clientLib并将其包含在页面（页面的header.jsp或footer.jsp）中
+>在AEM中，最好在clientLib中编写代码并将其包含在页面（页面的header.jsp或footer.jsp）中
 
 要在初始化表单后使用GuideBridge( `bridgeInitializeComplete` 调度事件)，请使用获取GuideBridge实例 `window.guideBridge`。 您可以使用API检查GuideBridge初始化 `guideBride.isConnected` 状态。
 
@@ -279,11 +279,11 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 请执行以下步骤，为特定字段类型创建自定义模式，并将其重复用于相同类型的其他字段：
 
-1. 在创作实例上导航到CRXDE Lite。
+1. 导航到创作实例上的CRXDE Lite。
 1. 创建一个文件夹以维护您的自定义模式。 在/apps目录下，创建sling:folder类型的节点。 例如，创建一个名为的节点 `customPatterns`。 在此节点下，创建其他类型的节 `nt:unstructed` 点并命名它 `textboxpatterns`。 此节点包含要添加的各种自定义模式。
 1. 打开创建的节点的“属性”选项卡。 例如，打开的“属性”选项卡 `textboxpatterns`。 将属 `guideComponentType` 性添加到此节点并将其 *值设置为fd/af/components/formatter/guideTextBox*。
 1. 此属性的值因要定义模式的字段而异。 对于数字字段，属 `guideComponentType` 性的 *值为fd/af/components/formatter/guideNumericBox*。 “日期选取器”(Datepicker)字段 *的值为fd/af/components/formatter/guideDatepicker*。
-1. 可以通过为节点分配属性来添加自定义 `textboxpatterns` 模式。 添加一个具有名称的属性( `pattern1`例如)，并将其值设置为要添加的模式。 例如，添加一个 `pattern1` 值为Fax=text{99-999-99999}的属性。 该模式可用于在自适应表单中使用的所有文本框。
+1. 可以通过为节点分配属性来添加自定义 `textboxpatterns` 模式。 添加一个具有名称的属性( `pattern1`例如)，并将其值设置为要添加的模式。 例如，添加一个 `pattern1` 值为Fax=text{99-999-99999}的属性。 该模式适用于您在自适应Forms中使用的所有文本框。
 
    ![为CrxDe中的字段创建自定义模式](assets/creating-custom-patterns.png)
    **图：** *创建自定义图案*

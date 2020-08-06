@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 translation-type: tm+mt
 source-git-commit: d8398575c28f571a7c2173f5d13471873089efdb
+workflow-type: tm+mt
+source-wordcount: '3013'
+ht-degree: 66%
 
 ---
 
 
 # 创意项目和 PIM 集成{#creative-project-and-pim-integration}
 
-如果您是营销人员或创意专业人士，则可以使用Adobe Experience Manager(AEM)中的创意项目工具管理组织内与电子商务相关的产品摄影和关联的创意流程。
+如果您是营销人员或创意专业人士，您可以使用Adobe Experience Manager(AEM)的创意项目工具管理您组织内与电子商务相关的产品摄影和相关的创意流程。
 
 特别是，您可以使用“创意项目”来简化照片拍摄工作流中的以下任务：
 
@@ -73,7 +76,7 @@ source-git-commit: d8398575c28f571a7c2173f5d13471873089efdb
 
 使用产品照片拍摄（商务集成）工作流可将图像资产与 AEM 中的产品进行映射。此工作流利用商务集成将已批准的图像关联到以下位置的现有产品数据：*/etc/commerce*。
 
-产品照片拍摄（商务集成）工作流包含以下任务：
+产品照片拍摄（商务集成）工作流包含以下任务:
 
 * 创建拍摄列表
 * 上传照片拍摄
@@ -153,6 +156,7 @@ source-git-commit: d8398575c28f571a7c2173f5d13471873089efdb
    * 修饰照片拍摄
    * 照片拍摄审核
    * 移到生产
+
    Perform a similar procedure to configure the tasks in the **Product Photo Shoot (Commerce Integration) workflow**.
 
 此部分介绍如何将产品信息管理与创意项目进行集成。
@@ -219,6 +223,7 @@ source-git-commit: d8398575c28f571a7c2173f5d13471873089efdb
    * 在与工作流标题同名的文件夹中创建与产品层次结构对应的资产。
    * 可使用“资产”控制台来编辑资产的元数据，即使摄影师还未提供图像。
    * 创建一个照片拍摄文件夹，用于存储摄影师提供的图像。该照片拍摄文件夹中包含一些子文件夹，分别对应拍摄列表中的各个产品条目。
+
    在产品照片拍摄（无商务集成）工作流中，上传拍摄列表是首要任务。点按/单击&#x200B;**上传拍摄列表**&#x200B;可上传 **shotlist.csv** 文件。该 CSV 文件应包含产品 ID。其他字段为选填字段。您可以使用这些信息将资产映射到产品。
 
 ### “上传拍摄列表”任务 {#upload-shot-list-task}
@@ -245,7 +250,7 @@ source-git-commit: d8398575c28f571a7c2173f5d13471873089efdb
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
 1. Tap/click the **Upload Shot List** button to upload the CSV file with filename shotlist.csv. 工作流会将此文件识别为用于为下一任务提取产品数据的源文件。
-1. 以正确的格式上传包含产品信息的 CSV 文件。上传CSV文件后，卡片下方会显示“查看已上传的资产”**链接。
+1. 以正确的格式上传包含产品信息的 CSV 文件。上传CSV文件后，卡下即会显示“**视图已上传资产**”链接。
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -338,7 +343,7 @@ The name of images to be uploaded should begin with **&quot;&lt;productId>_&quot
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-   Tap/click **Move to Production**. 关闭确认消息。 资产随即会移到指定的路径，并且系统会根据文件夹层次结构自动为每个产品的已批准资产创建旋转集。
+   Tap/click **Move to Production**. 关闭确认消息。资产随即会移到指定的路径，并且系统会根据文件夹层次结构自动为每个产品的已批准资产创建旋转集。
 
 1. 点按/单击工具栏中的&#x200B;**完成**&#x200B;图标。最后一个步骤标记为完成后，工作流即已完成。
 

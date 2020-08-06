@@ -1,20 +1,23 @@
 ---
 title: 在AEM中搜索资产
-description: 了解如何使用“筛选器”面板在AEM中查找所需的资产，以及如何使用在搜索中显示的资产。
+description: 了解如何使用“过滤器”面板在AEM中查找所需的资产，以及如何使用在搜索中显示的资产。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 1%
 
 ---
 
 
 # 在AEM中搜索资产 {#search-assets-in-aem}
 
-了解如何使用“筛选器”面板在AEM中查找所需的资产，以及如何使用在搜索中显示的资产。
+了解如何使用“过滤器”面板在AEM中查找所需的资产，以及如何使用在搜索中显示的资产。
 
-使用“筛选器”面板可搜索资产、文件夹、标记和元数据。 可以使用通配符星号搜索字符串的部分。
+使用“过滤器”面板可搜索资产、文件夹、标记和元数据。 可以使用通配符星号搜索字符串的部分。
 
-“筛选器”面板提供了多种选项，可以通过多种方式而不是按常规分类顺序搜索资产和文件夹。
+“过滤器”面板提供了多种选项，可以通过多种方式（而非通用分类顺序）搜索资产和文件夹。
 
 您可以根据以下选项（谓词）进行搜索：
 
@@ -29,14 +32,14 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 <!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
-您可以自定义“筛选器”面板，并使用搜索彩块化添加／删 [除搜索谓词](search-facets.md)。 要显示“滤镜”面板，请执行以下步骤：
+您可以自定义过滤器面板，并使用搜索彩块化添加／删 [除搜索谓词](search-facets.md)。 要显示“过滤器”面板，请执行以下步骤：
 
-1. 在资产用户界面中，点按／单击工 ![具栏中的search_icon](assets/search_icon.png) ，以显示Omnisearch框。
-1. 输入您的搜索词并按Enter。 或者，只需按Enter键，无需输入任何搜索词。 请勿输入任何前导空格，否则搜索将不起作用。
+1. 在资产用户界面中，点按／单 ![击工具栏中](assets/search_icon.png) 的search_icon以显示“搜索”框。
+1. 输入您的搜索词并按Enter。 或者，只需按Enter键，无需输入任何搜索词。 请勿输入任何前导空格，否则搜索无效。
 
-1. 点按／单击GlobalNav图标。 此时将显示“滤镜”面板。
+1. 点按／单击GlobalNav图标。 将显示过滤器面板。
 
-   ![filters_panel-1](assets/filters_panel-1.png)
+   ![过滤器面板1](assets/filters_panel-1.png)
 
    根据您搜索的项目类型，搜索结果顶部会指示匹配项数。
 
@@ -44,13 +47,13 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ## 搜索文件类型 {#search-for-file-types}
 
-“筛选器”面板有助于为您的搜索体验添加更多粒度，并使搜索功能更具通用性。 您可以轻松向下展开到所需的详细程度。
+“过滤器”面板有助于为搜索体验添加更多粒度，并使搜索功能更具通用性。 您可以轻松展开到所需的详细级别。
 
-例如，如果要查找图像，请使用“文件类 **[!UICONTROL 型]** ”谓词选择是要位图图像还是矢量图像。
+例如，如果要查找图像，请使用“文 **[!UICONTROL 件类型]** ”谓词选择是要位图图像还是矢量图像。
 
 ![image_type](assets/image_type.png)
 
-您可以通过为图像指定MIME类型进一步缩小搜索范围。
+您可以通过指定图像的MIME类型进一步缩小搜索范围。
 
 ![mime_type](assets/mime_type.png)
 
@@ -60,13 +63,13 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ## 根据文件大小进行搜索 {#search-based-on-file-size}
 
-使用“ **文件大小** ”谓词可根据资产的大小搜索资产。 您可以指定大小范围的下限和上限以缩小搜索范围。 您还可以指定度量单位，例如千字节、兆字节等。
+使用“ **文件大小** ”谓词，根据资产的大小搜索资产。 您可以指定大小范围的下限和上限以缩小搜索范围。 您还可以指定度量单位，如千字节、兆字节等。
 
 ![unit_of_measure](assets/unit_of_measure.png)
 
 ## 根据上次修改资产的时间进行搜索 {#search-based-on-when-assets-are-last-modified}
 
-如果您管理的是进行中的资产或监视审核工作流，则可以根据准确的时间戳搜索上次修改资产的时间。 例如，指定修改资产的前后日期。
+如果您管理进行中的资产或监视审核工作流，则可以根据准确的时间戳搜索资产的上次修改时间。 例如，指定修改资产的前后日期。
 
 ![last_modified_dates](assets/last_modified_dates.png)
 
@@ -74,9 +77,9 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ![时间戳](assets/timestamp.png)
 
-## 基于状态搜索 {#search-based-on-status}
+## 根据状态进行搜索 {#search-based-on-status}
 
-使用状 **态谓词** ，可根据各种类型的状态（如发布、批准、结帐和到期）搜索资产。
+使用状 **态** 谓词可根据各种类型的状态（如发布、批准、结帐和过期）搜索资产。
 
 ![状态](assets/status.png)
 
@@ -84,15 +87,15 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ![发布](assets/publish.png)
 
-在监视资产的审核状态时，请使用相应的选项来查找已批准的资产或待批准的资产。
+在监视资产的审核状态时，请使用适当的选项来查找已批准的资产或待批准的资产。
 
 ![批准](assets/approval.png)
 
-## 根据洞察数据搜索 {#search-based-on-insights-data}
+## 根据洞察数据进行搜索 {#search-based-on-insights-data}
 
-使用“ **分析** ”谓词，根据从各种创意应用程序获取的资产使用情况统计数据搜索资产。 使用数据按以下类别分组：
+使用“ **洞察** ”谓词，根据从各种Creative应用程序获取的资产使用情况统计信息搜索资产。 使用数据按以下类别进行分组：
 
-* 使用分数
+* 使用情况得分
 * 展示次数
 * 点击量
 * 显示资产的媒体渠道

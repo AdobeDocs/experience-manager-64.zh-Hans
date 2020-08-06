@@ -11,25 +11,28 @@ content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
 
 # Tag Essentials {#tag-essentials}
 
-在配置AEM Communities组件并启用标记后，社区成员可以标记他们在发布环境中发布的内容。
+当AEM Communities组件配置为启用标记时，社区成员能够标记他们在发布环境中发布的内容。
 
-发布环境中应用的标记的基础结构与创作环境中应用于内容的标记（如页面和资产）的基础结构相同：
+发布环境中应用的标记的基础结构与在创作环境中应用于内容的标记的基础结构相同，如页面和资产：
 
-* 有关创 [建和管理标记](../../help/sites-administering/tags.md) ，请参 [阅管理标记和标记用户生成的内容](tag-ugc.md) (UGC)。
+* 有关创 [建和管](../../help/sites-administering/tags.md) 理标 [记的信息，请参阅管理标](tag-ugc.md) 记和标记用户生成的内容(UGC)。
 
 * See [Tagging for Developers](../../help/sites-developing/tags.md) for information about the [tagging framework](../../help/sites-developing/framework.md) as well as including and extending tags in [custom applications](../../help/sites-developing/building.md).
 
-* 有关如 [何向页面添加组件以突出显示在发布环境中应用于UGC的标记的信息，请参阅使](tagcloud.md)`social tag cloud` 用社交标记云。
+* 有关 [如何向页面添加组件以在发布环境](tagcloud.md)`social tag cloud` 中突出显示应用于UGC的标记的作者信息，请参阅使用社交标记云。
 
-* 有关目 [录的标记资源](tag-resources.md) ，请参阅标记启用资源。
+* 有关 [目录的标记资源](tag-resources.md) ，请参阅标记启用资源。
 
-在配置社区站点或以下功能之一时 [可启用](sites-console.md#tagging) UGC标记：
+配置社区站点或以下功能之 [一时](sites-console.md#tagging) ，可启用UGC标记：
 
 * [博客](blog-feature.md)
 * [日历](calendar.md)
@@ -74,7 +77,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 ## 服务器端必备工具 {#essentials-for-server-side}
 
-* [Social Tag Cloud API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [社交标记云API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
 * [社交标签管理器](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
@@ -84,4 +87,4 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 从功 [能包1](deploy-communities.md#latestfeaturepack) (FP1)开始，使用标签标题执行标 [签搜索](../../help/sites-developing/framework.md#tag-characteristics)。
 
-在FP1之前，使用标签id执行 [搜索](../../help/sites-developing/framework.md#tagid)。
+在FP1之前，使用标记id执 [行搜索](../../help/sites-developing/framework.md#tagid)。

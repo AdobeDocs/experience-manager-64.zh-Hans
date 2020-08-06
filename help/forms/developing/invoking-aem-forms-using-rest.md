@@ -1,6 +1,6 @@
 ---
-title: 使用REST请求调用AEM表单
-seo-title: 使用REST请求调用AEM表单
+title: 使用REST请求调用AEM Forms
+seo-title: 使用REST请求调用AEM Forms
 description: 'null'
 seo-description: 'null'
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
@@ -18,25 +18,25 @@ ht-degree: 0%
 ---
 
 
-# 使用REST请求调用AEM表单 {#invoking-aem-forms-using-rest-requests}
+# 使用REST请求调用AEM Forms {#invoking-aem-forms-using-rest-requests}
 
-可以配置在Workbench中创建的流程，以便通过代表性状态转移(REST)请求调用它们。 REST请求从HTML页发送。 即，您可以使用REST请求直接从网页调用表单进程。 例如，可以打开网页的新实例。 然后，您可以调用表单进程，并加载呈现的PDF文档，其中包含以HTTP POST请求发送的数据。
+可以配置在Workbench中创建的流程，以便通过代表性状态转移(REST)请求调用它们。 REST请求从HTML页发送。 即，您可以使用REST请求从网页直接调用Forms进程。 例如，可以打开网页的新实例。 然后，您可以调用Forms进程，并加载呈现的PDF文档，其中包含在HTTPPOST请求中发送的数据。
 
-存在两种类型的HTML客户端。 第一个HTML客户端是用JavaScript编写的AJAX客户端。 第二个客户端是包含提交按钮的HTML表单。 基于HTML的客户端应用程序并非唯一可能的REST客户端。 任何支持HTTP请求的客户端应用程序都可以使用REST调用调用服务。 例如，您可以通过从PDF表单调用REST来调用服务。 (请参 [阅从Acrobat调用MyApplication/EncryptDocument进程](#rest-invocation-examples)。)
+存在两种类型的HTML客户端。 第一个HTML客户端是使用JavaScript编写的AJAX客户端。 第二个客户端是包含提交按钮的HTML表单。 基于HTML的客户端应用程序并非唯一可能的REST客户端。 任何支持HTTP请求的客户端应用程序都可以使用REST调用调用服务。 例如，您可以通过从PDF表单调用REST来调用服务。 (请参 [阅从Acrobat调用MyApplication/EncryptDocument进程](#rest-invocation-examples)。)
 
-使用REST请求时，建议您不要直接调用表单服务。 而是调用在Workbench中创建的进程。 创建用于调用REST的流程时，请使用程序化开始点。 在这种情况下，将自动添加REST端点。 有关在Workbench中创建流程的信息，请参 [阅使用Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)。
+使用REST请求时，建议您不要直接调用Forms服务。 而是调用在Workbench中创建的进程。 创建用于调用REST的流程时，请使用程序化开始点。 在这种情况下，将自动添加REST端点。 有关在Workbench中创建流程的信息，请参 [阅使用Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)。
 
-使用REST调用服务时，将提示您输入AEM表单用户名和密码。 但是，如果不想指定用户名和密码，可以禁用服务安全。
+使用REST调用服务时，系统会提示您输入AEM表单用户名和密码。 但是，如果不想指定用户名和密码，可以禁用服务安全。
 
-要使用REST调用Forms服务（当激活进程时，进程将变为服务），请配置REST端点。 (请参阅管理帮助中的“管 [理端点](https://www.adobe.com/go/learn_aemforms_admin_63)”。)
+要使用REST调用Forms服务（当激活进程时进程将成为服务），请配置REST端点。 (请参阅管理帮助中的“管 [理端点](https://www.adobe.com/go/learn_aemforms_admin_63)”。)
 
-配置REST端点后，可以使用HTTP GET方法或POST方法调用Forms服务。
+配置REST端点后，可以使用HTTPGET方法或POST方法调用Forms服务。
 
 ```as3
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
 ```
 
-必需 `ServiceName` 值是要调用的表单服务的名称。 可选 `OperationName` 值是服务操作的名称。 如果未指定此值，则此名称默认为 `invoke`，它是开始进程的操作名称。 可选 `ServiceVersion` 值是以X.Y格式编码的版本。 如果未指定此值，则使用最新版本。 该 `enctype` 值也可以是 `application/x-www-form-urlencoded`。
+强制 `ServiceName` 值是要调用的Forms服务的名称。 可选 `OperationName` 值是服务操作的名称。 如果未指定此值，则此名称默认为 `invoke`，它是开始进程的操作名称。 可选 `ServiceVersion` 值是以X.Y格式编码的版本。 如果未指定此值，则使用最新版本。 该 `enctype` 值也可以是 `application/x-www-form-urlencoded`。
 
 ## 支持的数据类型 {#supported-data-types}
 
@@ -49,20 +49,20 @@ ht-degree: 0%
 
    这些数据类型通常被接受为在Workbench中创建的流程的输入值。
 
-   如果使用HTTP POST方法调用Froms服务，则参数会在HTTP请求主体中传递。 如果AEM Forms服务的签名具有字符串输入参数，则请求主体可包含输入参数的文本值。 如果服务的签名定义了多个字符串参数，则请求可以按照HTTP的记 `application/x-www-form-urlencoded` 号使用参数的名称作为表单的字段名称。
+   如果使用HTTPPOST方法调用Froms服务，则参数会在HTTP请求主体中传递。 如果AEM Forms服务的签名具有字符串输入参数，则请求主体可包含输入参数的文本值。 如果服务的签名定义了多个字符串参数，则请求可以按照HTTP的记 `application/x-www-form-urlencoded` 号使用参数的名称作为表单的字段名称。
 
-   如果Forms服务返回字符串参数，则结果为输出参数的文本表示形式。 如果服务返回多个字符串参数，则结果是以下格式对输出参数进行编码的XML文档:
+   如果Forms服务返回字符串参数，则结果是输出参数的文本表示。 如果服务返回多个字符串参数，则结果是以下格式对输出参数进行编码的XML文档:
    ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
    >[!NOTE]
    >
    >该 `output-paramater1` 值表示输出参数名称。
 
-   如果Forms服务需要 `com.adobe.idp.Document` 参数，则只能使用HTTP POST方法调用该服务。 如果服务需要一 `com.adobe.idp.Document` 个参数，则HTTP请求主体将成为输入文档对象的内容。
+   如果Forms服务需 `com.adobe.idp.Document` 要参数，则只能使用HTTPPOST方法调用该服务。 如果服务需要一 `com.adobe.idp.Document` 个参数，则HTTP请求主体将成为输入文档对象的内容。
 
-   如果AEM Forms服务需要多个输入参数，则HTTP请求主体必须是RFC 1867定义的多部分MIME消息。 （RFC 1867是Web浏览器用于将文件上传到网站的标准。） 每个输入参数必须作为多部分消息的单独部分发送并以格式进行 `multipart/form-data` 编码。 每个部件的名称必须与参数的名称匹配。
+   如果AEM Forms服务需要多个输入参数，则HTTP请求主体必须是RFC 1867定义的多部分MIME消息。 （RFC 1867是Web浏览器将文件上传到网站时使用的标准。） 每个输入参数必须作为多部分消息的单独部分发送并以格式进行 `multipart/form-data` 编码。 每个部件的名称必须与参数的名称匹配。
 
-   列表和映射还用作在Workbench中创建的AEM Forms流程的输入值。 因此，在使用REST请求时，您可以使用这些数据类型。 不支持Java数组，因为它们不用作AEM Forms进程的输入值。
+   列表和映射还用作在Workbench中创建的AEM Forms进程的输入值。 因此，在使用REST请求时，您可以使用这些数据类型。 不支持Java数组，因为它们不用作AEM Forms进程的输入值。
 
    如果输入参数是列表,REST客户端可以多次指定该参数(对于列表中的每个项目一次)来发送该参数。 例如，如果A是列表，则输入必须是多部件消息，由多个名为A的部件组成。在这种情况下，每个名为A的部件都成为输入列表中的项。 如果B是字符串的列表，则输入可以是 `application/x-www-form-urlencoded` 一条消息，包含多个名为B的字段。在这种情况下，每个名为B的表单字段都成为输入列表中的一个项。
 
@@ -89,9 +89,9 @@ ht-degree: 0%
 
 ## 异步调用 {#asynchronous-invocations}
 
-某些AEM Forms服务（如以人为中心的长寿命流程）需要很长的时间才能完成。 可以以非阻塞方式异步调用这些服务。 (请参 [阅调用以人为中心的长寿命流程](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)。)
+一些AEM Forms服务，如以人为中心的长寿命服务，需要很长的时间才能完成。 可以以非阻塞方式异步调用这些服务。 (请参 [阅调用以人为中心的长寿命流程](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)。)
 
-可通过替换调用URL中的AEM Forms服务 `services` 来 `async_invoke` 异步调用，如以下示例所示。
+可以通过替换调用URL中的 `services` URL `async_invoke` 来异步调用AEM Forms服务，如以下示例所示。
 
 ```as3
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
@@ -145,13 +145,13 @@ ht-degree: 0%
 
 ## 安全性和身份验证 {#security-and-authentication}
 
-要为REST调用提供安全传输，AEM Forms管理员可以在承载AEM Forms的J2EE应用程序服务器上启用HTTPS协议。 此配置特定于J2EE应用程序服务器； 它不是表单服务器配置的一部分。
+要为REST调用提供安全传输，AEM表单管理员可以在承载AEM Forms的J2EE应用程序服务器上启用HTTPS协议。 此配置特定于J2EE应用程序服务器； 它不是表单服务器配置的一部分。
 
 >[!NOTE]
 >
 >作为希望通过REST端点展示您的流程的Workbench开发人员，请牢记XSS漏洞问题。 XSS漏洞可用于窃取或操作Cookie、修改内容演示以及泄露机密信息。 如果存在XSS漏洞，建议使用附加的输入和输出数据验证规则扩展流程逻辑。
 
-## 支持REST调用的AEM Forms服务 {#aem-forms-services-that-support-rest-invocation}
+## AEM Forms支持援引REST的服务 {#aem-forms-services-that-support-rest-invocation}
 
 尽管建议您调用使用Workbench创建的进程而不是直接调用服务，但有一些AEM Forms服务确实支持REST调用。 建议您直接调用进程而不是直接调用服务的原因在于调用进程更加有效。 请考虑以下情况。 假定您要从REST客户端创建策略。 即，您希望REST客户端定义策略名称、脱机租用期等值。
 
@@ -174,18 +174,18 @@ ht-degree: 0%
 提供了以下REST调用示例：
 
 * 将布尔值传递给AEM Forms进程
-* 将日期值传递到AEM Forms流程
-* 将文档传递到AEM Forms流程
-* 将文档和文本值传递到AEM Forms流程
-* 将明细列表值传递到AEM Forms流程
+* 将日期值传递给AEM Forms进程
+* 将文档传递给AEM Forms进程
+* 将文档和文本值传递给AEM Forms进程
+* 将明细列表值传递给AEM Forms进程
 * 使用REST调用MyApplication/EncryptDocument进程
 * 从Acrobat调用MyApplication/EncryptDocument进程
 
-   每个示例演示如何将不同的数据类型传递到AEM Forms流程
+   每个示例演示如何将不同的数据类型传递到AEM Forms进程
 
 **将布尔值传递给进程**
 
-以下HTML示例将两个值 `Boolean` 传递给名为的AEM Forms进程 `RestTest2`。 调用方法的名称 `invoke` 为，版本为1.0。请注意，使用了HTML Post方法。
+以下HTML示例将两个值传 `Boolean` 递给名为的AEM Forms进程 `RestTest2`。 调用方法的名称 `invoke` 为，版本为1.0。请注意，使用了HTML Post方法。
 
 ```as3
  <html> 
@@ -224,7 +224,7 @@ ht-degree: 0%
 
 **将文档传递到流程**
 
-以下HTML示例调用一个名为的AEM Forms进 `MyApplication/EncryptDocument` 程，该进程需要PDF文档。 有关此过程的信息，请参 [阅使用MTOM调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)。
+以下HTML示例调用一个名为的AEM Forms `MyApplication/EncryptDocument` 进程，该进程需要PDF文档。 有关此过程的信息，请参 [阅使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)。
 
 ```as3
  <html> 
@@ -244,7 +244,7 @@ ht-degree: 0%
 
 **将文档和文本值传递到流程**
 
-以下HTML示例调用一个名为的AEM Forms进 `RestTest3` 程，该进程需要一个文档和两个文本值。 请注意，已使用HTML Post方法。
+以下HTML示例调用一个名为的AEM Forms `RestTest3` 进程，该进程需要一个文档和两个文本值。 请注意，已使用HTML Post方法。
 
 ```as3
  <html> 
@@ -266,7 +266,7 @@ ht-degree: 0%
 
 **将明细列表值传递给进程**
 
-以下HTML示例调用一个名为的AEM Forms进 `SOAPEchoService` 程，该进程需要明细列表值。 请注意，已使用HTML Post方法。
+以下HTML示例调用一个名为的AEM Forms `SOAPEchoService` 进程，该进程需要明细列表值。 请注意，已使用HTML Post方法。
 
 ```as3
  <html> 
@@ -289,7 +289,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此过程不基于现有的AEM Forms流程。 要与代码示例一起操作，请创建一个使用工作台命 `MyApplication/EncryptDocument` 名的流程。 (请参 [阅使用工作台](https://www.adobe.com/go/learn_aemforms_workbench_63)。)
+>这一进程不是基于AEM Forms现有进程。 要与代码示例一起操作，请创建一个使用工作台命 `MyApplication/EncryptDocument` 名的流程。 (请参 [阅使用工作台](https://www.adobe.com/go/learn_aemforms_workbench_63)。)
 
 调用此进程时，它将执行以下操作：
 
@@ -315,7 +315,7 @@ ht-degree: 0%
 
 **从Acrobat调用MyApplication/EncryptDocument进程** {#invoke-process-acrobat}
 
-您可以使用REST请求从Acrobat调用表单进程。 例如，可以调用MyApplication/ *EncryptDocument进程* 。 要从Acrobat调用表单进程，请在Designer中的XDP文件上放置一个提交按钮。 (请参阅 [设计人员帮](https://www.adobe.com/go/learn_aemforms_designer_63)助。)
+您可以使用REST请求从Acrobat调用Forms进程。 例如，可以调用MyApplication/ *EncryptDocument进程* 。 要从Acrobat调用Forms进程，请在Designer中的XDP文件上放置一个提交按钮。 (请参阅 [设计人员帮](https://www.adobe.com/go/learn_aemforms_designer_63)助。)
 
 指定要在按钮的“提交到URL”字 *段中调用进程的* URL，如下图所示。
 
@@ -323,4 +323,4 @@ ht-degree: 0%
 
 如果该过程需要PDF文档作为输入值，请确保您以PDF形式提交表单，如上图所示。 此外，要成功调用进程，该进程必须返回PDF文档。 否则，Acrobat无法处理返回值，并且出现错误。 您不必指定输入进程变量的名称。 例如，* MyApplication/EncryptDocument*进程有一个名为的输入变量 `inDoc`。 只要表单提交为PDF，就不必指定inDoc。
 
-您还可以将表单数据作为XML提交到表单进程。要提交XML数据，请确保下拉 `Submit As` 框指定XML。 由于流程的返回值必须是PDF文档，因此PDF文档显示在Acrobat中。
+您还可以将表单数据作为XML提交到Forms进程。要提交XML数据，请确保下拉 `Submit As` 框指定XML。 由于流程的返回值必须是PDF文档，因此PDF文档显示在Acrobat。

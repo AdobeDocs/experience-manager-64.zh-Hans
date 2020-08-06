@@ -71,11 +71,11 @@ ht-degree: 0%
 
    (com.adobe.livecyclescala-lang.bundle)
 
-   * Adobe XFA Forms Renderer
+   * AdobeXFAForms渲染器
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   * Adobe XFA Forms LC连接器
+   * AdobeXFAFormsLC连接器
 
    (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
@@ -132,7 +132,7 @@ ht-degree: 0%
    * LogMessages.js
    * 语言文件夹
 
-1. 如果以上任何文件或文件夹不存在，请 **再次安装adobe-lc-forms-runtime-pkg-&lt;version>** .zip包。
+1. 如果以上任何文件或文件夹不存在，请 **再次安装adobe-lc-forms-runtime-pkg-&lt;version>.zip** 包。
 1. 导航到与区域设置名称同名的文件夹并检查其内容。 该文件夹必须包含以下文件：
 
    * I18N.js

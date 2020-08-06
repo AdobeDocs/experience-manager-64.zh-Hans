@@ -30,7 +30,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >需要Acrobat® 9.2或更高版本才能将Microsoft XPS格式转换为PDF。
+   >Acrobat® 9.2或更高版本才能将Microsoft XPS格式转换为PDF。
 
 * Autodesk AutoCAD 2005、2006、2007、2008和2009可转换DWF、DWG和DXW（仅英文版）
 * 转换WPD、QPW、SHW的Corel WordPerfect 12和X4（仅英文版）
@@ -40,14 +40,14 @@ ht-degree: 0%
    >
    >“生成PDF”服务不支持64位版本的OpenOffice。
 
-* 转换PSD的Adobe Photoshop® CS2（仅限Windows）
+* Adobe Photoshop® CS2转换PSD（仅限Windows）
 
    >[!NOTE]
    >
-   >不支持Photoshop CS3和CS4，因为它们不支持Windows Server 2003或Windows Server 2008。
+   >PhotoshopCS3和CS4不受支持，因为它们不支持Windows Server 2003或Windows Server 2008。
 
 * Adobe FrameMaker® 7.2和8转换FM（仅限Windows）
-* 将PMD、PM6、P65和PM转换为Adobe PageMaker® 7.0（仅限Windows）
+* AdobePageMaker® 7.0转换PMD、PM6、P65和PM（仅限Windows）
 * 第三方应用程序支持的本机格式（需要开发特定于该应用程序的设置文件）（仅限Windows）
 
 “生成PDF”服务将以下基于标准的文件格式转换为PDF。
@@ -71,10 +71,10 @@ ht-degree: 0%
 “生成PDF”服务要求您执行以下管理任务:
 
 * 在承载AEM Forms的计算机上安装所需的本机应用程序
-* 在承载AEM Forms的计算机上安装Adobe Acrobat Professional或Acrobat Pro Extended 9.2
+* 在承载Adobe Acrobat的计算机上安装AEM Forms专业版或Acrobat Pro扩展版9.2
 * 执行安装后设置任务
 
-这些任务在使用JBoss Turnkey安装和部署AEM表单中有介绍。
+使用JBoss Turnkey安装和部署AEM表单中介绍了这些任务。
 
 您可以使用“生成PDF”服务完成以下任务:
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关生成PDF服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关生成PDF服务的详细信息，请参阅 [AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 将Word文档转换为PDF文档 {#converting-word-documents-to-pdf-documents}
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关生成PDF服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关生成PDF服务的详细信息，请参阅 [AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 [使用Web服务API将Word文档转换为PDF文档](converting-file-formats-pdf.md#convert-word-documents-to-pdf-documents-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -169,6 +169,7 @@ ht-degree: 0%
    * 包 `java.lang.String` 含要使用的安全设置名称的对象。
    * 一个可 `com.adobe.idp.Document` 选对象，包含在生成PDF文档时要应用的设置。
    * 一个可 `com.adobe.idp.Document` 选对象，其中包含要应用于PDF文档的元数据信息。
+
    该方 `createPDF2` 法返回一 `CreatePDFResult` 个对象，该对象包含新的PDF文档和日志信息。 日志文件通常包含转换请求生成的错误或警告消息。
 
 1. 检索结果。
@@ -177,6 +178,7 @@ ht-degree: 0%
 
    * 调用对 `CreatePDFResult` 象的方 `getCreatedDocument` 法，该方法返回 `com.adobe.idp.Document` 对象。
    * 调用对 `com.adobe.idp.Document` 象的方 `copyToFile` 法，从上一步创建的对象中提取PDF文档。
+
    如果您使用 `createPDF2` 该方法获取日志文档（不适用于HTML转换），请执行以下操作：
 
    * 调用 `CreatePDFResult` 对象的方 `getLogDocument` 法。 这将返回一个 `com.adobe.idp.Document` 对象。
@@ -189,7 +191,7 @@ ht-degree: 0%
 
 [快速开始（SOAP模式）: 使用Java API将Microsoft Word文档转换为PDF文档](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -203,7 +205,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建“生成PDF”客户端。
 
@@ -213,7 +215,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `GeneratePDFServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -253,7 +255,7 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 将HTML文档转换为PDF文档 {#converting-html-documents-to-pdf-documents}
 
@@ -261,7 +263,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关生成PDF服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关生成PDF服务的详细信息，请参阅 [AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -299,7 +301,7 @@ ht-degree: 0%
 
 [使用Web服务API将HTML内容转换为PDF文档](converting-file-formats-pdf.md#convert-html-content-to-a-pdf-document-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -346,7 +348,7 @@ ht-degree: 0%
 
 [快速开始（SOAP模式）: 使用Java API将HTML内容转换为PDF文档](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -360,7 +362,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建“生成PDF”客户端。
 
@@ -370,7 +372,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `GeneratePDFServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -403,7 +405,7 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 将PDF文档转换为非图像格式 {#converting-pdf-documents-to-non-image-formats}
 
@@ -411,7 +413,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关生成PDF服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关生成PDF服务的详细信息，请参阅 [AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-2}
 
@@ -449,7 +451,7 @@ ht-degree: 0%
 
 [使用Web服务API将PDF文档转换为RTF文件](converting-file-formats-pdf.md#convert-a-pdf-document-to-a-rtf-file-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -481,6 +483,7 @@ ht-degree: 0%
    * 包 `java.lang.String` 含Adobe PDF设置名称的对象。
    * 一个 `ConvertPDFFormatType` 对象，它指定用于转换的目标文件类型。
    * 一个可 `com.adobe.idp.Document` 选对象，包含在生成PDF文档时要应用的设置。
+
    该方 `exportPDF2` 法返回 `ExportPDFResult` 包含已转换文件的对象。
 
 1. 转换PDF文档。
@@ -496,7 +499,7 @@ ht-degree: 0%
 
 [快速开始（SOAP模式）: 使用Java API将HTML内容转换为PDF文档](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -510,7 +513,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Generate PDF客户端。
 
@@ -520,7 +523,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `GeneratePDFServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -540,7 +543,7 @@ ht-degree: 0%
    * 表示 `BLOB` 要转换的PDF文件的对象。
    * 包含要转换的文件的路径名的字符串。
    * 指定 `java.lang.String` 文件位置的对象。
-   * 一个字符串对象，它指定用于转换的目标文件类型。 指定 `RTF`。
+   * 一个字符串对象，它指定用于转换的目标文件类型。 Specify `RTF`.
    * 一个可 `BLOB` 选对象，包含在生成PDF文档时要应用的设置。
    * 由该方法填 `BLOB` 充的输出参数 `ExportPDF2` 类型。 该方 `ExportPDF2` 法使用转换的文档填充此对象。 （此参数值仅对于Web服务调用是必需的）。
 
@@ -557,7 +560,7 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 添加对其他本机文件格式的支持 {#adding-support-for-additional-native-file-formats}
 
@@ -614,7 +617,7 @@ AppMon使用标准Win32 API与第三方应用程序交互，以便传输UI事件
   </tr> 
   <tr> 
    <td><p>脚本 </p></td> 
-   <td><p>指定“生成PDF”服务与本机应用程序之间的交互。 此类交互通常指导应用程序将文件打印到Adobe PDF驱动程序。 </p><p>该脚本包含指示本机应用程序打开特定对话框的说明，这些说明为这些对话框中的字段和按钮提供特定响应。 </p></td> 
+   <td><p>指定“生成PDF”服务与本机应用程序之间的交互。 此类交互通常将应用程序打印到Adobe PDF驱动程序。 </p><p>该脚本包含指示本机应用程序打开特定对话框的说明，这些说明为这些对话框中的字段和按钮提供特定响应。 </p></td> 
    <td><p>“生成PDF”服务包括所有支持的本机应用程序的脚本文件。 您可以使用XML编辑应用程序修改这些文件。</p><p>要添加对新本机应用程序的支持，必须创建新的脚本文件。 (请参 <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">阅为本机应用程序创建或修改其他对话框XML文件</a>。) </p></td> 
   </tr> 
   <tr> 
@@ -691,7 +694,7 @@ AppMon使用标准Win32 API与第三方应用程序交互，以便传输UI事件
 
 ### 添加或修改对本机文件格式的支持 {#adding-or-modifying-support-for-a-native-file-format}
 
-本节介绍支持其他本机文件格式或修改对已受支持本机文件格式的支持时必须执行的任务。
+本节介绍支持其他本机文件格式或修改对已受支持的本机文件格式的支持时必须执行的任务。
 
 在添加或修改支持之前，您必须完成以下任务。
 
@@ -721,7 +724,7 @@ AppMon使用标准Win32 API与第三方应用程序交互，以便传输UI事件
 
 对话框和脚本文件驻留在appmondata.jar文件中。 必须先取消打包此JAR文件，然后才能修改其中的任何文件或添加新的脚本或对话框文件。 例如，假定您要添加对EditPlus应用程序的支持。 创建两个XML文件，名为appmon.editplus.script.en_US.xml和appmon.editplus.script.addition.en_US.xml。 必须在以下两个位置将这些XML脚本添加到adobe-appmondata.jar文件中：
 
-* adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon。 adobe-livecycle-native-jboss-x86_win32.ear文件位于导出文件夹*AEM forms[install directory]\*configurationManager中。 （如果AEM Forms部署在另一台J2EE应用程序服务器上，请将adobe-livecycle-native-jboss-x86_win32.ear文件替换为与您的J2EE应用程序服务器对应的EAR文件。）
+* adobe-livecycle-native-jboss-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon。 adobe-livecycle-native-jboss-x86_win32.ear文件位于导出文件夹*AEM forms[install directory]\*configurationManager中。 (如果AEM Forms部署在另一台J2EE应用程序服务器上，请用与您的J2EE应用程序服务器对应的EAR文件替换adobe-livecycle-native-jboss-x86_win32.ear文件。)
 * adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon （adobe-appmondata.jar文件在adobe-generatepdf-dsc.jar文件中）。 adobe-generatepdf-dsc.jar文件位于AEM forms *[install directory]*\deploy文件夹中。
 
 将这些XML文件添加到adobe-appmondata.jar文件后，必须重新部署GeneratePDF组件。 要向adobe-appmondata.jar文件添加对话框和脚本XML文件，请执行以下任务:
@@ -729,7 +732,7 @@ AppMon使用标准Win32 API与第三方应用程序交互，以便传输UI事件
 1. 使用WinZip或WinRAR等工具，打开adobe-livecycle-native-jboss-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar文件。
 1. 将对话框和脚本XML文件添加到appmondata.jar文件，或修改此文件中的现有XML文件。 (请参 [阅为本机应用程序创建或修改脚本XML文](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)件， [以及为本机应用程序创建或修改其他对话框XML文件](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)。)
 1. 使用WinZip或WinRAR等工具，打开adobe-generatepdf-dsc.jar > adobe-appmondata.jar。
-1. 将对话框和脚本XML文件添加到appmondata.jar文件，或修改此文件中的现有XML文件。 (请参 [阅为本机应用程序创建或修改脚本XML文](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)件， [以及为本机应用程序创建或修改其他对话框XML文件](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)。) 将XML文件添加到adobe-appmondata.jar文件后，将新的adobe-appmondata.jar文件放入adobe-generatepdf-dsc.jar文件中。
+1. 将对话框和脚本XML文件添加到appmondata.jar文件或修改此文件中的现有XML文件。 (请参 [阅为本机应用程序创建或修改脚本XML文](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)件， [以及为本机应用程序创建或修改其他对话框XML文件](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application)。) 将XML文件添加到adobe-appmondata.jar文件后，将新的adobe-appmondata.jar文件放入adobe-generatepdf-dsc.jar文件中。
 1. 如果添加了对其他本机文件格式的支持，请创建一个系统环境变量，它提供应用程序的路径(请参 [阅创建环境变量以查找本机应用程序](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application)。)
 
 **重新部署GeneratePDF组件**
@@ -872,9 +875,9 @@ AppMon使用标准Win32 API与第三方应用程序交互，以便传输UI事件
 
 **更新“生成PDF”服务配置文件**
 
-1. 选择 **“主页** ”>“ **服务** ” **>“Adobe PDF Generator** ”>“配 ********&#x200B;置文件”，然后选择“导出配置”。
+1. 选择 **“主页** ”>“ **服务** ” **>“Adobe PDF** 生成器 **”>“配置**&#x200B;文件”，然后选 ****&#x200B;择“配置”。
 1. 根据需要 `filetype-settings` 修改native2pdfconfig.xml文件中的元素。
-1. 选择“ **主页** ”>“ **服务** ” **>“** Adobe PDF Generator”>“配置文件&#x200B;**”,******&#x200B;然后选择“配置文件”。 配置数据将导入到“生成PDF”服务中，替换以前的设置。
+1. 选择 **“主页** ”>“ **服务** ” **>“Adobe PDF** 生成器&#x200B;**”>“配置**&#x200B;文件”，然后选 ****&#x200B;择配置文件。 配置数据将导入到“生成PDF”服务中，替换以前的设置。
 
 >[!NOTE]
 >
@@ -913,7 +916,7 @@ AppMon使用标准Win32 API与第三方应用程序交互，以便传输UI事件
 
 **在Windows XP环境中创建系统变量**
 
-1. 选择“ **控制面板”>“系统**”。
+1. 选择 **控制面板>系统**。
 1. 在“系统属性”对话框中，单击“高 **级** ”选项卡，然后单 **击“环境变量”**。
 1. 在“环境变量”对话框的“系统变量”下，单击“ **新建**”。
 1. 在“新建系统变量”对话框的“变 **量名称** ”框中，键入使用applicationname *[]*_PATH格式的名称。
@@ -954,7 +957,7 @@ AEM Forms包含示例XML文件，这些文件导致“生成PDF”服务使用�
 
 #### 脚本XML文件 {#script-xml-file}
 
-此示例指定生成PDF服务如何与记事本交互，以使用Adobe PDF打印机打印文件。
+此示例指定Generate PDF服务如何与记事本交互，以使用Adobe PDF打印机打印文件。
 
 **记事本脚本XML文件(appmon.notepad.script.en_US.xml)**
 

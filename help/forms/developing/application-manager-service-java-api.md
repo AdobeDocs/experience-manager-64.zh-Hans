@@ -28,13 +28,13 @@ Java API快速开始(SOAP)可用于Application Manager服务。
 
 >[!NOTE]
 >
->应用程序管理器API仅支持AEM Forms LCA文件。 它不支持LiveCycle ES2和ES4的LCA文件。
+>应用程序管理器API仅支持AEM FormsLCA文件。 它不支持LiveCycleES2和ES4的LCA文件。
 
-AEM Forms操作可以使用AEM Forms强类型化API执行，连接模式应设置为SOAP。
+AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置为SOAP。
 
 >[!NOTE]
 >
->如果使用其他操作系统（如Unix），则使用AEM表单进行编程时，位于“使用AEM表单进行编程”中的Java API(SOAP)快速开始将基于表单，将特定于窗口的路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>使用AEM表单进行编程中的Java API(SOAP)快速开始基于Forms，如果您使用其他操作系统（如Unix），则使用适用操作系统支持的路径替换特定于窗口的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速开始（SOAP模式）: 使用Java API部署应用程序 {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 

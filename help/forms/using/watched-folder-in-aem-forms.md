@@ -1,6 +1,6 @@
 ---
-title: 以AEM Forms形式监视文件夹
-seo-title: 以AEM Forms形式监视文件夹
+title: 在AEM Forms监视文件夹
+seo-title: 在AEM Forms监视文件夹
 description: 管理员可以将文件夹置于监视中，并在文件置于监视的文件夹中时开始工作流、服务或脚本操作。
 seo-description: 管理员可以将文件夹置于监视中，并在文件置于监视的文件夹中时开始工作流、服务或脚本操作。
 uuid: a525fb20-7b36-48b8-8663-afd640f75017
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 以AEM Forms形式监视文件夹 {#watched-folder-in-aem-forms}
+# 在AEM Forms监视文件夹 {#watched-folder-in-aem-forms}
 
 管理员可以配置网络文件夹（称为“监视文件夹”），当用户将文件（如PDF文件）放在“监视文件夹”中时，会启动预先配置的工作流、服务或脚本操作以处理添加的文件。 服务执行指定操作后，会将结果文件保存到指定的输出文件夹中。 有关工作流、服务和脚本的详细信息，请参 [阅各种文件处理方法](#variousmethodsforprocessingfiles)。
 
@@ -53,6 +53,7 @@ ht-degree: 0%
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
+
    有关受支持属性的完整列表，请参 [阅监视文件夹属性](#watchedfolderproperties)。
 
 1. 单击“ **全部保存**”。 创建节点并保存属性后。 、、 `input`、 `result`和文 `failure`件 `preserve`夹是在属性中指定的路径 `stage``folderPath` 创建的。
@@ -140,6 +141,7 @@ ht-degree: 0%
    * %l =毫秒
    * %R =随机数（介于0和9之间）
    * %P =进程或作业ID
+
    例如，如果2009年7月17日晚上8点，并且您指定C:/Test/WF0/failure/%Y/%M/%D/%H/，则结果文件夹为C:/Test/WF0/failure/2009/07/17/20
 
    如果路径不是绝对的，而是相对的，则在“监视文件夹”中创建该文件夹。 默认值为result/%Y/%M/%D/，它是监视文件夹内的Result文件夹。 有关文件模式的详细信息，请参 [阅关于文件模式](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
@@ -162,7 +164,7 @@ ht-degree: 0%
 
 * **overwriteDuplicateFilename(Boolean)**: 设置为“True”时，结果文件夹和保留文件夹中的文件将被覆盖。 设置为“False”时，名称将使用带数字索引后缀的文件和文件夹。 默认值为False。
 * **preserveOnFailure（布尔值）**: 在无法对服务执行操作的情况下保留输入文件。 默认值为true。
-* **inputFilePattern（字符串）**: 指定监视文件夹的输入文件的模式。 创建文件的允许列表。
+* **inputFilePattern（字符串）**: 指定监视文件夹的输入文件的模式。 创建允许列表文件。
 * **asynch（布尔值）**: 将调用类型标识为异步或同步。 默认值为true（异步）。 文件处理是一种资源消耗任务，将异步标志的值保持为真以防止阻塞扫描作业的主线程。 在群集环境中，务必使标志保持为true，以便为在可用服务器上处理的文件实现负载平衡。 如果标志为false，则扫描作业将尝试按顺序对其自己的线程中的每个顶级文件／文件夹执行处理。 如果没有特定原因（如单服务器设置上基于工作流的处理），请勿将标记设置为false。
 
 >[!NOTE]
@@ -170,7 +172,7 @@ ht-degree: 0%
 >根据设计，工作流是异步的。 即使将值设置为false,工作流也会以异步模式启动。
 
 * **enabled（布尔值）**: 取消激活和激活监视文件夹的扫描。 设置为“启用”为“true”,开始扫描“监视的文件夹”。 默认值为true。
-* **payloadMapperFilter**: 将文件夹配置为监视文件夹后，将在监视文件夹内创建文件夹结构。 该结构具有用于提供输入、接收输出（结果）、为故障保存数据、为长寿命进程保存数据以及为不同阶段保存数据的文件夹。 监视文件夹的文件夹结构可用作以表单为中心的工作流的有效负荷。 有效负荷映射器允许您定义有效负荷的结构，该结构使用监视文件夹进行输入、输出和处理。 例如，如果使用默认映射器，它将“监视文件夹”的内容与 [payload]\input和 [payload]\output文件夹映射。 提供两种现成的有效负荷映射器实现。 如果您没有 [自定义实](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)施，请使用现成的实施之一：
+* **payloadMapperFilter**: 将文件夹配置为监视文件夹后，将在监视文件夹内创建文件夹结构。 该结构具有用于提供输入、接收输出（结果）、为故障保存数据、为长寿命进程保存数据以及为不同阶段保存数据的文件夹。 监视文件夹的文件夹结构可用作以Forms为中心的工作流的有效负荷。 有效负荷映射器允许您定义有效负荷的结构，该结构使用监视文件夹进行输入、输出和处理。 例如，如果使用默认映射器，它将“监视文件夹”的内容与 [payload]\input和 [payload]\output文件夹映射。 提供两种现成的有效负荷映射器实现。 如果您没有 [自定义实](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)施，请使用现成的实施之一：
 
    * **默认映射器：** 使用默认的有效负荷映射器，将已监视文件夹的输入和输出内容保留在有效负荷中单独的输入和输出文件夹中。 此外，在工作流的有效负荷路径中，使 [用有效]/输入/ [和有效]/输出路径，检索并保存内容。
    * **基于文件的简单有效负荷映射器：** 使用基于简单文件的有效负荷映射器将输入和输出内容直接保留在有效负荷文件夹中。 它不会创建任何额外的层次结构，如默认映射器。
@@ -319,9 +321,9 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
    * workflowSession
    * 元数据
 
-如果使用Java编程语言实现工作流，则AEM工作流引擎为workItem、workflowSession和元数据变量提供值。 这些变量作为参数传递给自定义WorkflowProcess实现的execute()方法。
+如果使用Java编程语言来实现工作流，AEM工作流引擎将为workItem、workflowSession和元数据变量提供值。 这些变量作为参数传递给自定义WorkflowProcess实现的execute()方法。
 
-如果使用ECMAScript实现工作流，则AEM工作流引擎为graniteWorkItem、graniteWorkflowSession和元数据变量提供值。 这些变量作为参数传递给WorkflowContextService.execute()方法。
+如果使用ECMAScript实现工作流，AEM工作流引擎将为graniteWorkItem、graniteWorkflowSession和元数据变量提供值。 这些变量作为参数传递给WorkflowContextService.execute()方法。
 
 processWorkflowContext()的参数是com.adobe.aemfd.watchfolder.workflow.api.WorkflowContext类型的对象。 WorkflowContext界面具有以下API，以便于执行上述工作流特定的注意事项：
 
@@ -392,17 +394,17 @@ log.info("Exiting workflow script!")
 
 在创建监视的文件夹时，它会在被监视的文件夹中创建文件夹结构。 文件夹结构具有阶段、结果、保留、输入和失败文件夹。 文件夹结构可用作工作流的输入有效负荷，并接受工作流的输出。 它还可以列表故障点（如果有）。
 
-如果有效负荷的结构与监视文件夹的结构不同，您可以编写自定义脚本将监视文件夹的结构映射到有效负荷。 这种脚本称为负载映射器过滤器。 现成AEM Forms提供有效负荷映射器过滤器，以将已监视文件夹的结构映射到有效负荷。
+如果有效负荷的结构与监视文件夹的结构不同，您可以编写自定义脚本将监视文件夹的结构映射到有效负荷。 这种脚本称为负载映射器过滤器。 现成，AEM Forms提供有效负荷映射器过滤器，将已监视文件夹的结构映射到有效负荷。
 
 #### 创建自定义有效负荷映射器过滤器 {#creating-a-custom-payload-mapper-filter}
 
-1. 下 [载Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar)。
+1. 下载 [Adobe客户端SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar)。
 1. 在基于Maven的项目的构建路径中设置客户端SDK。 要开始，您可以在自己选择的IDE中下载并打开以下基于主机的项目。
 1. 编辑示例包中可用的有效负荷映射器过滤器代码，以满足您的要求。
 1. 使用maven创建自定义有效负荷映射器过滤器的捆绑。
-1. 使 [用AEM包控制台](http://localhost:4502/system/console/bundles) ，安装该包。
+1. 使 [用AEM bundles控制](http://localhost:4502/system/console/bundles) 台安装该捆绑包。
 
-   现在，自定义“负载映射器”过滤器列在AEM监视文件夹UI中。 您可以将其用于工作流。
+   现在，自定义“负载映射器过滤器”列在AEM监视文件夹UI中。 您可以将其用于工作流。
 
    以下示例代码为相对于有效负荷保存的文件实现了一个基于文件的简单映射器。 您可以使用它开始。
 
@@ -510,7 +512,7 @@ log.info("Exiting workflow script!")
 
 * “监视文件夹”依赖舞台文件夹中存在的文件数来确定正在进行的作业数。 如果文件在舞台文件夹中仍未处理，“监视文件夹”将不再调用任何其他作业。 例如，如果批量大小为4，并且停止了3个作业，则“监视文件夹”在后续调用中只调用一个作业。 存在多种情况，这些情况会导致文件在阶段文件夹中保持未处理状态。 安装作业后，管理员可以终止“进程管理”管理页面上的进程，以便“监视文件夹”将文件移出舞台文件夹。
 * 如果AEM Forms服务器在“监视文件夹”调用作业之前关闭，则管理员可以将文件移出舞台文件夹。 有关信息，请参 [阅故障点和恢复](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
-* 如果AEM Forms服务器正在运行，但当作业管理器服务回调时监视文件夹未运行(在服务未按顺序开始时发生)，则管理员可以将文件移出舞台文件夹。 有关信息，请参 [阅故障点和恢复](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
+* 如果AEM Forms服务器正在运行，但当作业管理器服务回调时，监视文件夹未运行(当服务未按顺序开始时发生)，则管理员可以将文件移出舞台文件夹。 有关信息，请参 [阅故障点和恢复](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
 
 ### 故障点和恢复故障点和恢复 {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -535,7 +537,8 @@ log.info("Exiting workflow script!")
 
    * 将“监视文件夹”的includeFilePattern属性更改为与任何新输入文件不匹配的内容（例如，输入NOMATCH）。
    * 暂停创建新输入文件的进程。
-   等待AEM Forms恢复并处理所有文件。 大多数文件都应该恢复，并且所有新的输入文件都应正确处理。 等待监视文件夹恢复和处理文件的时间长短取决于要调用的操作长度和要恢复的文件数。
+
+   等到AEM Forms恢复并处理所有文件。 大多数文件都应该恢复，并且所有新的输入文件都应正确处理。 等待监视文件夹恢复和处理文件的时间长短取决于要调用的操作长度和要恢复的文件数。
 
 1. 确定无法处理哪些文件。 如果您等了适当的时间并完成了上一步，并且舞台文件夹中仍保留未处理的文件，请转到下一步。
 
@@ -633,7 +636,7 @@ ECMAScript将使用PDF Generator的createPDF API将Microsoft Word(.docx)文档�
 
 ### 创建工作流 {#create-a-workflow}
 
-1. 在浏览器窗口中打开AEM工作流UI。
+1. 在浏览器窗口中打开AEM Workflow UI。
 
    https://[servername]:[port]/workflow
 
@@ -724,7 +727,7 @@ ECMAScript将使用PDF Generator的createPDF API将Microsoft Word(.docx)文档�
 
 ### 创建工作流 {#create-a-workflow-1}
 
-1. 在浏览器窗口中打开AEM工作流UI。 `https://[server]:[port]/workflow`
+1. 在浏览器窗口中打开AEM Workflow UI。 `https://[server]:[port]/workflow`
 
 1. 在“模型”视图中，单击“ **新建**”。 在“新建工作流”对话框中，指 **定“标**&#x200B;题”，然后 **单击“确定”**。
 1. 选择新创建的工作流，然后单击“ **编辑**”。 该工作流将在新窗口中打开。

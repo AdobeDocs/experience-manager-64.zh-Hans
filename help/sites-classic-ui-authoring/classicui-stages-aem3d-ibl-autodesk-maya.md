@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 00f7ed25-276b-42c2-ae4c-11de357a9ec6
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 75%
 
 ---
 
@@ -49,7 +52,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 
    Configure the [!UICONTROL Render Settings] with the following suggestions.
 
-   * **[!UICONTROL “公用]** ”选项卡
+   * **[!UICONTROL “常用]** ”选项卡
 
       Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
 
@@ -57,7 +60,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 
       * **[!UICONTROL 总体质量]** - `0.5` 或更少
       * **[!UICONTROL 间接扩散(GI)模式]** - `Final Gather`
-      * **[!UICONTROL 过滤器大小]** - `2.0`、 `2.0`
+      * **[!UICONTROL 筛选器大小]** - `2.0`、 `2.0`
    * 以您希望使用的典型图像大小渲染场景。如果需要，优化灯光或优化渲染设置，或者同时执行这两项操作，以便达到所需的效果。
 
       请注意，通过 Mental Ray 使用基于图像的照明进行渲染时，速度会非常缓慢且会消耗大量 CPU。Adobe 建议您配置最低质量设置，该设置仍能生成所需的渲染质量。

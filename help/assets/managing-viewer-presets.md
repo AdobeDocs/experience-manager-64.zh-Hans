@@ -23,7 +23,7 @@ ht-degree: 21%
 
 Dynamic Media查看器预设是一组设置，这些设置决定用户如何在其计算机屏幕和移动设备上视图富媒体资产。 如果您是管理员，则可以创建查看器预设。您可以设置一系列查看器配置选项。例如，可以更改查看器的显示大小或缩放行为。
 
-有关创建和自定义您自己的HTML5查看器预设的说明，请 *参阅Adobe Scene7 HTML5查看器SDK*。 SDK可在嵌入在SDK中的IS发布服务器上使用。 每个库版本都包含自己的SDK文档。
+有关创建和自定义您自己的HTML5查看器预设的说明，请参 *阅Adobe Scene7HTML5查看器SDK*。 SDK可在嵌入在SDK中的IS发布服务器上使用。 每个库版本都包含自己的SDK文档。
 
 路径: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 例如，3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html)
@@ -92,7 +92,7 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 | **全景图像** | 全景图像和全景VR查看器渲染球面全景图像，让用户沉浸在房间、房产、位置或风景的360°观看体验中。 |
 |  | 要使上传的图像符合球面全景图的要求，它必须具有以下任一或两者： <ul><li>宽高比为2:1。</li><li>用关键字标记为等角形、球形和全景图、球形和全景图。 请参 [阅使用标记](../sites-authoring/tags.md)。</li></ul> |
 |  | 长宽比和关键字条件均适用于资产详细信息页面和“全景媒体”WCM组件的全景资产。 |
-|  | 重要： 此查看器仅在Dynamic Media- Scene7模式下可用。 |
+|  | 重要： 此查看器仅在Dynamic Media -Scene7模式下可用。 |
 | **旋转集** | 提供图像的不同视图，以便用户可以旋转对象来从不同的侧边和角度进行检查。 |
 | **视频** | 使用渐进式或自适应比特率流播放视频。 自适应比特率流会自动执行设备和带宽检测，以正确的格式提供正确质量的视频。 |
 | **垂直缩放** | 通过垂直缩放查看器，您可以最大化产品图像查看体验，为用户提供最佳的产品展示效果。 色板的垂直位置如下所示： <ul><li>确保色板位于折叠上方。 使用水平色板(具体取决于用户的桌面屏幕大小)时，只有用户向下滚动页面后，才能显示色板。 通过将色板垂直放置在查看器中，可确保无论用户的屏幕大小如何，色板都是可见的。</li><li>最大化主图像大小。 使用水平色板时，必须在页面上保留空间，以确保它们可见。 此定位缩小了主图像的大小。 但是，对于垂直色板布局，您无需分配此空间。 因此，您可以最大化主图像大小。</li></ul> |
@@ -104,13 +104,13 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 另请参 [阅实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)。
 
-有关查看器支持的Web浏览器和操作系统版本的信息，您可以查看查看器发行说明。
+有关查看器支持的Web浏览器和操作系统版本的信息，可以查看查看器发行说明。
 
 请参 *阅《查看器* 参考指南》的目录 [中的查看器发行说明](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
 
 >[!NOTE]
 >
->Dynamic Media中的所有现成查看器预设都已激活（开启），但您必须发布它们。\
+>Dynamic Media中的所有现成查看器预设均已激活（开启），但您必须发布它们。\
 >See [Publishing Viewer Presets](#publishing-viewer-presets).
 >
 >您创建和添加的任何新查看器预设都必须同时激活 *和发* 布。\
@@ -160,9 +160,9 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 
 ## 增加显示的Dynamic Media查看器预设数 {#increasing-the-number-of-viewer-presets-that-display}
 
-从“详细信息视图”>“查看器”查看资产时，AEM会显 **[!UICONTROL 示各种查看器预设]**。 您可以增加或减少显示的查看器数量。
+AEM在从“详细信息”视图>“查看器”查看资产时显示 **[!UICONTROL 各种查看器预设]**。 您可以增加或减少显示的查看器数量。
 
-**要增加显示的Dynamic Media查看器预设数目**:
+**要增加显示的Dynamic Media查看器预设的数量，请执行以下操作**:
 
 1. 导航到 **[!UICONTROL CRXDE Lite]** ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))。
 1. 导航到位于的查看器预设列表节点 `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -177,11 +177,11 @@ Dynamic Media附带的所有现成查看器预设均与以下系统完全兼容�
 1. 在limit属 **[!UICONTROL 性中]** ，将数字更改为所需的数字，例如 `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. 点按 **[!UICONTROL 全部保存]**。
 
-## 创建新Dynamic Media查看器预设 {#creating-a-new-viewer-preset}
+## 创建新的Dynamic Media查看器预设 {#creating-a-new-viewer-preset}
 
 通过创建查看器预设，您可以将各种设置应用于视图并与资产交互。 但是，您无需创建新的查看器预设。 如果您愿意，可以使用AEM Assets附带的现成默认查看器预设。
 
-如果选择创建新的查看器预设，则在保存该查看器预设后，查看器的状态将在“查看器预设”页面中自动激 **活**(设置 **[!UICONTROL 为开启]** )。 此状态意味着无论您何时Dynamic Media图 **[!UICONTROL 像]** 或视频，都可 **[!UICONTROL 以在预览]** 组件和交互式媒体组件中看到它。
+如果选择创建新的查看器预设，则在保存该查看器预设后，查看器的状态将在“查看器预设”页面中自动激 **活**(设置 **[!UICONTROL 为开启]** )。 此状态意味着无论您何时预览图 **[!UICONTROL 像或视频]** ，都可以在 **[!UICONTROL Dynamic Media组件]** 和交互式媒体组件中看到它。
 
 某些查看器预设具有排他性设置，这些设置会影响查看器的使用和整体行为。 根据您正在创建的查看器预设，您可能需要注意这些特殊注意事项。
 
@@ -316,7 +316,7 @@ When you create or edit an interactive video viewer preset, you access **[!UICON
 
 ## Publishing Dynamic Media viewer presets {#publishing-viewer-presets}
 
-激活(或打 *开*)查看器预设的状态意味着查看器预设可在Dynamic Media组件、交互式媒体组件中以及每次视图资产时都可见。
+激活(或 *打开*)查看器预设的状态意味着查看器预设在Dynamic Media组件、交互式媒体组件中以及每次视图资产时都可见。
 
 但是，要传送带有查看器预设的资产，还必须发布查看器预设。 All viewer presets must be activated *and* published to obtain URL or embed code for an asset. 您必须激活并发布Dynamic media附带的所有现成查看器预设。 您创建和添加的自定义查看器预设将自动激活，但也必须发布。
 
@@ -332,7 +332,7 @@ When you create or edit an interactive video viewer preset, you access **[!UICON
 
 ## Sorting Dynamic Media viewer presets {#sorting-viewer-presets}
 
-**要对Dynamic Media查看器预设进行排序**:
+**要对Dynamic Media查看器预设进行排序，请执行以下操作**:
 
 1. 点按 AEM 左上角的 AEM 徽标，然后点按左边栏中的&#x200B;**工具**（锤子图标）**[!UICONTROL > Assets > 查看器预设]**。
 1. 单击&#x200B;**[!UICONTROL 预设标题]**、**[!UICONTROL 类型]**、**[!UICONTROL 已发布]**&#x200B;或&#x200B;**[!UICONTROL 状态]**&#x200B;来按列标题进行排序。例如，单击&#x200B;**[!UICONTROL 类型]**&#x200B;按字母顺序或反向字母顺序对查看器预设类型进行排序。

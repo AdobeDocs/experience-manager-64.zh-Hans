@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 3.中断的身份验证和会话管理 {#broken-authentication-and-session-management}
 
-AEM使用声音和经过验证的身份验证技术， [依赖于Apache](https://jackrabbit.apache.org/) Jackrabbit [和Apache Sling](https://sling.apache.org/)。 AEM中不使用浏览器/HTTP会话。
+AEM使用声音和经过验证的身份验证技术， [依靠Apache](https://jackrabbit.apache.org/) Jackrabbit [和Apache Sling](https://sling.apache.org/)。 AEM中不使用浏览器/HTTP会话。
 
 ## 4.不安全的直接对象引用 {#insecure-direct-object-references}
 
@@ -46,13 +46,13 @@ AEM使用声音和经过验证的身份验证技术， [依赖于Apache](https:/
 
 ## 5.跨站点请求伪造(CSRF) {#cross-site-request-forgery-csrf}
 
-跨站点请求伪造(CSRF)的缓解方法是：自动向所有表单和AJAX请求注入加密令牌，并在每个POST的服务器上验证此令牌。
+跨站点请求伪造(CSRF)的缓解方法是：自动向所有表单和AJAX请求中注入加密令牌，并在每个POST在服务器上验证此令牌。
 
-此外，AEM附带一个基于推荐人头的筛选器，该筛选器可配置为 *仅允* 许来自特定主机(在列表中定义)的POST请求。
+此外，AEM附带一个基于推荐人头的筛选器，该筛选器可配置为仅允 *许来自特* 定主机(在列表中定义)的POST请求。
 
 ## 6.安全配置错误 {#security-misconfiguration}
 
-无法保证所有软件始终正确配置。 但是，我们努力提供尽可能多的指导，使配置尽可能简单。 此外，AEM附带集成 [的安全运行状况检查](/help/sites-administering/operations-dashboard.md) ，可帮助您快速监控安全配置。
+无法保证所有软件始终正确配置。 但是，我们努力提供尽可能多的指导，使配置尽可能简单。 此外，AEM还提供 [集成的安全运行状况](/help/sites-administering/operations-dashboard.md) 检查，帮助您一目了然地监控安全配置。
 
 请查看安 [全核对清单](/help/sites-administering/security-checklist.md) ，了解为您提供逐步强化说明的更多信息。
 

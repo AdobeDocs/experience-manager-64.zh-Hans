@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 * **项目批准工作流** -此工作流允许您将内容分配给用户，审核，然后批准。
 * **请求启动项** -请求启动项的工作流。
-* **请求登陆页面** -此工作流请求登陆页面。
+* **请求登陆页** -此工作流请求登陆页。
 * **请求电子邮件** - 此工作流用于请求电子邮件。
 * **产品照片拍摄以及产品照片拍摄（商务）**- 映射包含产品的资产。
 * **DAM 创建和翻译副本以及 DAM 创建语言副本** - 为资产和文件夹创建已翻译的二进制文件、元数据和标记。
@@ -30,7 +33,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 |  | **简单项目** | **媒体项目** | **产品照片拍摄项目** | **翻译项目** |
 |---|:-:|:-:|:-:|:-:|
-| 请求副本 |  | x |  |  |
+| 请求复制 |  | x |  |  |
 | 产品照片拍摄 |  | x | x |  |
 | 产品照片拍摄（商务） |  |  | x |  |
 | 项目批准 | x |  |  |  |
@@ -38,7 +41,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 | 请求登陆页面 | x |  |  |  |
 | 请求电子邮件 | x |  |  |  |
 | DAM创建语言复制和放大； |  |  |  | x |
-| DAM创建和翻译语言复制和映射； |  |  |  | x |
+| DAM创建和翻译语言副本&amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
@@ -95,7 +98,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. 单击&#x200B;**创建**。该工作流随即会启动。**该工作流会显示在“工**&#x200B;作流&#x200B;**”列表中(单击省略**&#x200B;号……)。在“工 **作流** ”拼贴中访问此列表)。
+1. 单击&#x200B;**创建**。该工作流随即会启动。The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
 
 ## 请求登陆页面工作流 {#request-landing-page-workflow}
 

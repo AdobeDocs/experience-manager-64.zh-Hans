@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ## 示例概述 {#sample-overview}
 
-AEM Forms门户草稿和提交组件允许用户将表单另存为草稿并稍后从任何设备提交。 此外，用户还可以在门户上视图其提交的表单。 要启用此功能，AEM Forms提供数据和元数据服务，以存储用户在表单中填写的数据以及与草稿和已提交表单关联的表单元数据。 默认情况下，此数据存储在CRX存储库中。 但是，当用户通过AEM发布实例与表单交互时（通常在企业防火墙之外），组织可能希望自定义数据存储，以使其更加安全可靠。
+AEM Forms门户网站草稿和提交组件允许用户将表单另存为草稿并在以后从任何设备提交。 此外，用户还可以在门户上视图其提交的表单。 为启用此功能，AEM Forms提供数据和元数据服务，以存储用户填写的表单中的数据以及与草稿和提交的表单相关联的表单元数据。 默认情况下，此数据存储在CRX存储库中。 但是，当用户通过AEM publish实例与表单交互时，组织可能希望自定义数据存储，使其更安全、更可靠。
 
 本文档讨论的示例是自定义数据和元数据服务的参考实现，以将草稿和提交组件与数据库集成。 示例实现中使用的数 **据库为MySQL 5.6.24**。 但是，您可以将草稿和提交组件与您选择的任何数据库相集成。
 
 >[!NOTE]
 >
 >* 本文档中说明的示例和配置符合MySQL 5.6.24的要求，您必须将其相应替换为数据库系统。
->* 确保已安装最新版AEM Forms加载项包。 有关可用包的列表，请参阅 [AEM Forms发布文章](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 。
->* 示例包只能用于自适应表单提交操作。
+>* 确保已安装最新版的AEM Forms加载项包。 有关可用包的列表，请参阅 [AEM Forms发布](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 文章。
+>* 示例包仅适用于自适应Forms提交操作。
 
 
 ## 设置和配置示例 {#set-up-and-configure-the-sample}
@@ -42,24 +42,24 @@ AEM Forms门户草稿和提交组件允许用户将表单另存为草稿并稍�
 
    [获取文件](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. 转到位于https://的AEM包管&#x200B;[*理器*]:[*port*]/crx/packmgr/。
+1. 转到AEM package manager(位于&#x200B;[*https://*] host:[*port*]/crx/packmgr/)。
 1. 单击“ **[!UICONTROL 上传包”]**。
 
 1. 浏览以选 **择aem-fp-db-integration-sample-pkg-6.1.2.zip包，然后单击** “确定 **[!UICONTROL ”]**。
 1. 单 **[!UICONTROL 击包]** 旁的“安装”以安装该包。
-1. 转到 **[!UICONTROL AEM Web Console]**&#x200B;的“配置&#x200B;[*”页*]&#x200B;面，网&#x200B;[*址为：*] https:// host:port/system/console/configMgr。
-1. 单击以在编 **[!UICONTROL 辑模式下打开Forms Portal草]** 稿和提交配置。
+1. 转到 **[!UICONTROL AEM Web Console]** Configuration([*位于*] https://主机&#x200B;[*:*] port/system/console/configMgr)。
+1. 单击以在编 **[!UICONTROL 辑模式下打开Forms门户草稿]** 和提交配置。
 
 1. 如下表所述，指定属性的值：
 
    | **属性** | **描述** | **值** |
    |---|---|---|
-   | Forms Portal Draft Data Service | 草稿数据服务的标识符 | formsportal.sampledataservice |
-   | Forms Portal草稿元数据服务 | 草稿元数据服务的标识符 | formsportal.samplemetadataservice |
-   | Forms Portal提交数据服务 | 提交数据服务的标识符 | formsportal.sampledataservice |
-   | Forms Portal提交元数据服务 | 提交元数据服务的标识符 | formsportal.samplemetadataservice |
-   | Forms Portal挂起的签名数据服务 | 挂起签名数据服务的标识符 | formsportal.sampledataservice |
-   | Forms Portal待签名元数据服务 | 待签名元数据服务的标识符 | formsportal.samplemetadataservice |
+   | Forms门户数据服务草稿 | 草稿数据服务的标识符 | formsportal.sampledataservice |
+   | Forms门户元数据服务草稿 | 草稿元数据服务的标识符 | formsportal.samplemetadataservice |
+   | Forms门户提交数据服务 | 提交数据服务的标识符 | formsportal.sampledataservice |
+   | Forms门户提交元数据服务 | 提交元数据服务的标识符 | formsportal.samplemetadataservice |
+   | Forms门户正在等待签名数据服务 | 挂起签名数据服务的标识符 | formsportal.sampledataservice |
+   | Forms门户待签名元数据服务 | 待签名元数据服务的标识符 | formsportal.samplemetadataservice |
 
    >[!NOTE]
    >
@@ -76,11 +76,11 @@ AEM Forms门户草稿和提交组件允许用户将表单另存为草稿并稍�
 
    要为元数据表提供其他名称：
 
-   * 在Web控制台配置中，查找并单击Forms Portal元数据服务示例实现。 您可以更改数据源、元数据／其他元数据表名称的值。
+   * 在“Web控制台配置”中，找到并单击“Forms门户元数据服务示例实施”。 您可以更改数据源、元数据／其他元数据表名称的值。
 
    要为数据表提供其他名称：
 
-   * 在Web控制台配置中，找到并单击Forms Portal Data Service示例实现。 您可以更改数据源和数据表名称的值。
+   * 在Web控制台配置中，找到并单击Forms门户数据服务示例实施。 您可以更改数据源和数据表名称的值。
    >[!NOTE]
    >
    >如果更改表名称，请在表单门户配置中提供这些名称。
@@ -326,7 +326,7 @@ AEM Forms门户草稿和提交组件允许用户将表单另存为草稿并稍�
 
 ## 验证文件名的长度  {#verify-length-of-the-file-name}
 
-Forms Portal的数据库实现使用其他元数据表。 表具有基于表的键和id列的组合主键。 MySQL允许最长255个字符的主键。 您可以使用以下客户端验证脚本验证附加到文件构件的文件名的长度。 附加文件时将运行验证。 当文件名大于150（包括扩展名）时，下面过程中提供的脚本会显示一条消息。 您可以修改脚本，以检查其中是否有不同数量的字符。
+Forms门户数据库的实施使用了额外的元数据表。 表具有基于表的键和id列的组合主键。 MySQL允许最长255个字符的主键。 您可以使用以下客户端验证脚本验证附加到文件构件的文件名的长度。 附加文件时将运行验证。 当文件名大于150（包括扩展名）时，下面过程中提供的脚本会显示一条消息。 您可以修改脚本，以检查其中是否有不同数量的字符。
 
 请执行以下步骤来创 [建客户端库](/help/sites-developing/clientlibs.md) ，并使用该脚本：
 

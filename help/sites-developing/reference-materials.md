@@ -12,13 +12,16 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 4%
 
 ---
 
 
 # API指南{#api-guides}
 
-AEM提供了多个用于开发应用程序的API。 以下列表提供了AEM支持的API的文档：
+AEM提供了多个用于开发应用程序的API。 以下列表提供AEM支持的API的文档：
 
 * [Adobe AEM 6.4.0 API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html)
 
@@ -38,18 +41,18 @@ AEM单页应用程序(SPA)编辑器SDK框架JavaScript API参考：
 
 * [组件映射](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
 * [页面模型管理器](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [对可编辑的组件做出响应](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
-* [角形可编辑组件](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+* [反应可编辑的组件](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+* [角度可编辑组件](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
 
-AEM Delivery和Content Management API:
+AEM投放和内容管理API:
 
 * 核心组件(JSON)
 
    * [JSON导出器](/help/sites-developing/json-exporter.md)
    * [为组件启用JSON导出](/help/sites-developing/json-exporter-components.md)
-   * 有关详细 [信息，请参阅开发用户指南中的](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) “组件”部分
+   * 有关详 [细信息，请参阅《开发用户指南](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) 》中的“组件”部分
 
-* [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
+* [AEM AssetsHTTP API](/help/assets/mac-api-assets.md)
 
 以下外部资源仅供参考：
 

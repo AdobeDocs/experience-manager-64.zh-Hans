@@ -1,8 +1,8 @@
 ---
 title: 流程报告的工作原理
 seo-title: 流程报告的工作原理
-description: JEE流程报告上的AEM表单组成服务的说明和流程报告UI的介绍
-seo-description: JEE流程报告上的AEM表单组成服务的说明和流程报告UI的介绍
+description: 关于JEE流程报告的AEM Forms服务描述和流程报告UI介绍
+seo-description: 关于JEE流程报告的AEM Forms服务描述和流程报告UI介绍
 uuid: 4631b734-a679-495c-a708-2348bf22c1f7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,41 +10,44 @@ topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 0%
 
 ---
 
 
 # 流程报告的工作原理 {#how-process-reporting-works}
 
-流程报告是JEE上AEM Forms的报告模块。
+流程报告是AEM Forms在JEE上的报告模块。
 
-流程报告允许您运行AEM Forms流程和任务报告。
+流程报告允许您运行关于AEM Forms流程和任务的报告。
 
-进程报告使用嵌入式进程报告存储库发布表单数据。 然后，它使用该数据运行报告。
+流程报告使用嵌入式流程报告库发布Forms数据。 然后，它使用该数据运行报告。
 
-流程报告由以下模块组成：
+流程报告包括以下模块：
 
 * [ProcessDataPublisher服务](/help/forms/using/process-reporting/process-reporting-architecture.md#p-processdatapublisher-service-br-p)
 * [ProcessDataStorage服务](/help/forms/using/process-reporting/process-reporting-architecture.md#p-processdatastorageprovider-service-br-p)
 * [OSGi服务](/help/forms/using/process-reporting/process-reporting-architecture.md#p-osgi-service-br-p)
-* [查询数据Servlet](/help/forms/using/process-reporting/process-reporting-architecture.md#p-querydataservlet-service-br-p)
+* [查询数据servlet](/help/forms/using/process-reporting/process-reporting-architecture.md#p-querydataservlet-service-br-p)
 * [进程报告用户界面](/help/forms/using/process-reporting/process-reporting-architecture.md#p-process-reporting-user-interface-br-p)
 
 ## 流程报告架构 {#process-reporting-architecture-br}
 
 ![处理报告架构](assets/processreportingarchitecture.png)
 
-## 过程报告模块 {#process-reporting-modules}
+## 处理报告模块 {#process-reporting-modules}
 
 ### ProcessDataPublisher服务 {#processdatapublisher-service-br}
 
-ProcessDataPublisher服务器定期在AEM Forms数据库上运行，并提取自上次运行服务以来已更改的数据。 然后，它将数据发布到“进程数据存储”服务。
+ProcessDataPublisher服务器定期在AEM Forms数据库上运行，并提取自上次运行服务后更改的数据。 然后，它将数据发布到“流程数据”存储服务。
 
 有关配置服务的详细信息，请参 [阅配置ProcessDataPublisher服务](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)。
 
 ### ProcessDataStorageProvider服务 {#processdatastorageprovider-service-br}
 
-ProcessDataStorageProvider服务从ProcessDataPublisher服务接收进程数据，并将数据保存到进程报告存储库。
+ProcessDataStorageProvider服务从ProcessDataPublisher服务接收进程数据并将数据保存到进程报告库。
 
 有关配置服务的详细信息，请参 [阅配置ProcessDataStorageProvider服务](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p)。
 
@@ -54,23 +57,23 @@ QueryDataServlet使用此服务从“进程报告”存储库获取报告数据�
 
 ### QueryDataServlet服务 {#querydataservlet-service-br}
 
-QueryDataServlet服务接受来自进程报告用户界面的查询。
+QueryDataServlet服务接受来自进程查询报告用户界面的数据。
 
-然后，该服务使用OSGi服务获得相关的报告数据，处理该数据，并将该数据返回到用户界面。
+然后，该服务使用OSGi服务来获取相关报告数据，处理该数据，并将该数据返回给该用户界面。
 
 ### 进程报告用户界面 {#process-reporting-user-interface-br}
 
-“进程报告”用户界面是基于Web浏览器的界面。 使用此界面可视图从AEM Forms数据库发布的进程和任务信息。
+进程报告用户界面是基于Web浏览器的界面。 使用此接口视图从AEM Forms数据库发布的流程和任务信息。
 
 ### QueryDataServlet服务 {#querydataservlet-service-br-1}
 
-QueryDataServlet服务接受来自进程报告用户界面的查询。
+QueryDataServlet服务接受来自进程查询报告用户界面的数据。
 
-然后，该服务使用OSGi服务获得相关的报告数据，处理该数据，并将该数据返回到用户界面。
+然后，该服务使用OSGi服务来获取相关报告数据，处理该数据，并将该数据返回给该用户界面。
 
 ### 自定义报告 {#custom-reports-br}
 
 您可以创建自己的自定义报告，并在“流程报告”用户界面的“自定义报告”选项卡中显示这些报告。
 
-有关创建自定义报告的步骤，请参阅文章在流程中自定义报告报告中 [创建自定义报告](/help/forms/using/process-reporting/process-reporting-custom-reports.md)。
+有关创建自定义报告的步骤，请参阅文章在流程中自定义报告报告 [中创建自定义报告](/help/forms/using/process-reporting/process-reporting-custom-reports.md)。
 

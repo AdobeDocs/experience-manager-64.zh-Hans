@@ -19,14 +19,14 @@ ht-degree: 0%
 
 # 设置Visual Studio项目并构建Windows应用程序 {#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-AEM Forms提供AEM Forms应用程序的完整源代码。 该源包含构建自定义工作区应用程序的所有组件。 源代码存档是 `adobe-lc-mobileworkspace-src-<version>.zip`软件分发软件包 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 的一部分。
+AEM Forms提供AEM Forms应用的完整源代码。 该源包含构建自定义工作区应用程序的所有组件。 源代码存档是 `adobe-lc-mobileworkspace-src-<version>.zip`软件分发软件包 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 的一部分。
 
 要获取AEM Forms应用程序源，请执行以下步骤：
 
-1. 开放 [软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID登录软件分发。
-1. 点按 **[!UICONTROL 标题]** 菜单中可用的Adobe Experience Manager。
+1. 开放 [软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID才能登录软件分发。
+1. 点按 **[!UICONTROL 标题]** 菜单中提供的Adobe Experience Manager。
 1. 在过滤器 **[!UICONTROL 部分]** :
-   1. 从“ **[!UICONTROL 解决方]** 案 **[!UICONTROL ”下]** 拉列表中选择“表单”。
+   1. 从“ **[!UICONTROL 解决方]** 案 **[!UICONTROL ”下拉]** 列表中选择Forms。
    2. 选择包的版本和类型。 您还可以使用“搜 **[!UICONTROL 索下载]** ”选项筛选结果。
 1. 点按适用于您的操作系统的包名称，选择“ **[!UICONTROL 接受EULA条款]**”，然后点 **[!UICONTROL 按下载]**。
 1. 打开 [包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) ，然后单 **[!UICONTROL 击“上传包]** ”以上传包。
@@ -63,11 +63,11 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 该源包含构建自�
 
 ## 构建AEM Forms应用程序 {#build-aem-forms-app}
 
-请执行以下步骤以构建和部署AEM Forms应用程序。
+执行以下步骤构建和部署AEM Forms应用程序。
 
 >[!NOTE]
 >
->存储在Windows文件系统中的AEM Forms应用程序数据未加密。 建议使用Windows BitLocker驱动器加密等第三方工具加密磁盘数据。
+>存储在Windows文件系统上的AEM Forms应用程序数据未加密。 建议使用Windows BitLocker驱动器加密等第三方工具加密磁盘数据。
 
 1. 在Visual Studio标准工具栏中，从 **构建模** 式的下拉菜单中选择“释放”。
 

@@ -1,8 +1,8 @@
 ---
 title: 自定义错误对话框
 seo-title: 自定义错误对话框
-description: 如何自定义LiveCycle AEM Forms工作区的错误对话框以添加不同的错误描述。
-seo-description: 如何自定义LiveCycle AEM Forms工作区的错误对话框以添加不同的错误描述。
+description: 如何自定义LiveCycleAEM Forms工作区的错误对话框，以添加不同的错误描述。
+seo-description: 如何自定义LiveCycleAEM Forms工作区的错误对话框，以添加不同的错误描述。
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,17 +10,20 @@ topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 1%
 
 ---
 
 
 # 自定义错误对话框 {#customizing-error-dialogs}
 
-AEM Forms工作区允许您自定义错误对话框。 执行AEM Forms工 [作区自定义的常规步骤](/help/forms/using/generic-steps-html-workspace-customization.md) ，然后执行以下步骤以自定义错误对话框。
+AEM Forms工作区允许您自定义错误对话框。 执行AEM Forms [工作区自定义的通用步骤](/help/forms/using/generic-steps-html-workspace-customization.md) ，然后执行以下步骤以自定义错误对话框。
 
 ## 自定义文本 {#customizing-text}
 
-1. 在文 `/apps/ws/locales/en-US/translation.json` 件中，将值更改 `wserror` 为自定义值。 例如：
+1. 在文 `/apps/ws/locales/en-US/translation.json` 件中，更改自定 `wserror` 义值的值。 例如：
 
    ```
    "wserror" : {
@@ -182,7 +185,7 @@ AEM Forms工作区允许您自定义错误对话框。 执行AEM Forms工 [作�
    }
    ```
 
-1. 对于脚栏按钮跨度，将和按 `.error-dialog` 钮跨 `.foot-bar` 度与复合列表分开。 要进行此更改，请在newStyle.css文件中添加以下内容：
+1. 对于脚条按钮跨度，将和按 `.error-dialog` 钮跨 `.foot-bar` 度与复合列表分开。 要进行此更改，请在newStyle.css文件中添加以下内容：
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -217,7 +220,7 @@ AEM Forms工作区允许您自定义错误对话框。 执行AEM Forms工 [作�
 
 >[!NOTE]
 >
->如果您引用的是其他图像，请在下面的所需层次中添加这些图像 `/apps/ws/images`。
+>如果您引用的是其他图像，请在所需的层次结构下添加 `/apps/ws/images`。
 
 ## 示例 {#examples}
 

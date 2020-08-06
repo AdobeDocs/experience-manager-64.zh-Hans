@@ -11,25 +11,28 @@ content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
 source-git-commit: ad744e91e8f94d7fefb939209ba186e3b18496b7
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 0%
 
 ---
 
 
 # Tally Essentials {#tally-essentials}
 
-Tally是一个抽象类，它提供了从成员那里收集反馈的标准方法，这些反馈是关于他们如何评价特定产品和服务。 不支持匿名反馈。 网站访问者必须注册并登录才能参加和登录以更改其反馈。 登录要求有助于协调，并通过阻止多个帖子来提高反馈的价值。
+Tally是一个抽象类，它提供一种标准方法，用于收集成员对特定产品和服务的价值的反馈。 不支持匿名反馈。 网站访客必须注册并登录才能参加和登录以更改其反馈。 登录要求有助于协调，并通过阻止多个帖子来提高反馈的价值。
 
 可通过扩展抽象计数类来创建自定义计数组件。
 
-[喜欢](essentials-liking.md) ，是一种简单的表达积极意见的方式，
+[喜欢](essentials-liking.md) ，是一种简单的表达积极意见的方式。
 
-[投票](essentials-voting.md) ，是一种简单的表达正面或负面意见的方式。
+[表决](essentials-voting.md) ，是一种简单的表达积极或消极意见的方式。
 
-[评级](rating-basics.md) 是一种实施统计的方法，它使用星形系统来表达从正面到负面的各种意见。
+[评级](rating-basics.md) 是一种统计的实施，它使用星形系统来表达从正面到负面的各种观点。
 
-自AEM 6.1起，投票组 *件不再* 可用。
+自AEM 6.1起，投 *票组* 件不再可用。
 
-[审阅](reviews-basics.md) 是一个SCF组件，它是评论和评级的 [混合](essentials-comments.md)[组件](rating-basics.md)。
+[评论](reviews-basics.md) 是一个SCF组件，它是评论和评 [级的](essentials-comments.md)[混合](rating-basics.md)。
 
 ## 客户端必备工具 {#essentials-for-client-side}
 
@@ -37,7 +40,7 @@ Tally是一个抽象类，它提供了从成员那里收集反馈的标准方法
 
 ## 服务器端必备工具 {#essentials-for-server-side}
 
-* [Tally API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [计数API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
 * [计数端点](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
@@ -45,16 +48,16 @@ Tally是一个抽象类，它提供了从成员那里收集反馈的标准方法
 
 ### 访问已发布的计数(UGC) {#accessing-posted-tallies-ugc}
 
-UGC应使用一种标准的仲裁方法进行仲裁。\
-请参阅 [审核用户生成的内容](moderate-ugc.md)。
+UGC应使用一种标准的协调方法进行仲裁。\
+请参 [阅调节用户生成的内容](moderate-ugc.md)。
 
-自AEM 6.1 Communities起，对 [UGC使用公用商店](working-with-srp.md) ，包括对UGC的程序化访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）如何。
+自AEM 6.1社区起，使用UGC的公 [用商店](working-with-srp.md) ，包括以程序方式访问UGC，而不管选择的存储选项（如ASRP、MSRP或JSRP）。
 
 **UGC在存储库中的位置和格式可能会发生更改，但不会发出警告**。
 
 请参阅：
 
-* [存储资源提供者概述](srp.md) -介绍和存储库使用概述
+* [存储资源提供程序概述](srp.md) -简介和存储库使用概述
 * [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例
 * [使用SRP访问UGC](accessing-ugc-with-srp.md) —— 编码指南
 * [SocialUtils重构](socialutils.md) -将已弃用的实用程序方法映射到当前SRP实用程序方法

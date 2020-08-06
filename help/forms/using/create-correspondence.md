@@ -1,8 +1,8 @@
 ---
 title: 创建通信
 seo-title: 创建通信
-description: 创建信件模板后，您可以通过管理数据、内容和附件，在AEM Forms中创建通信。
-seo-description: 创建信件模板后，您可以通过管理数据、内容和附件，在AEM Forms中创建通信。
+description: 创建信件模板后，您可以通过管理数据、内容和附件，在AEM Forms创建通信。
+seo-description: 创建信件模板后，您可以通过管理数据、内容和附件，在AEM Forms创建通信。
 uuid: 72c06a81-65c8-4ddd-964d-91f0256a8f79
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
@@ -52,13 +52,13 @@ ht-degree: 0%
 
 1. 默认情况下，将打开字母HTML预览符(移动表单预览符)，其中“数据”选项卡的焦点是。
 
-   有关移动表单及其支持的功能的更多信息，请参 [阅移动表单与PDF表单的功能区分](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)。
+   有关移动表单及其支持的功能的更多信息，请参 [阅移动Forms和PDF forms的功能区分](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)。
 
    有三个选项卡： 数据、内容和附件。 如果没有数据元素（占位符变量和布局字段），则在中直接打开字母，并显示“内容”选项卡。 只有在存在附件或启用库访问时，“附件”选项卡才可用。
 
    >[!NOTE]
 
-   >有关在字母预览的HTML或PDF再现模式之间切换的详细信息，请参 [阅更改字母再现模式](#changerenditionmode)。 有关Corresponce Management和AEM中PDF支持的更多信息，请 [参阅停止NPAPI浏览器插件及其对HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html)[的影响和PDF Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)。
+   >有关在字母预览的HTML或PDF再现模式之间切换的详细信息，请参 [阅更改字母再现模式](#changerenditionmode)。 有关Corresponce Management和AEM中PDF支持的更多信息，请参 [阅停止NPAPI浏览器插件及其对HTML](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) 5 [Forms的影响和PDF forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)。
 
 ### Enter data {#enterdata}
 
@@ -269,7 +269,7 @@ ht-degree: 0%
 
    进行所需的更改后，您可以提交HTML5预览的字母或再次点按预览以查看拼合的PDF输出。
 
-   有关HTML5表单与PDF表单之间差异的信息，请参 [阅HTML5表单与PDF表单之间的功能区别](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)。
+   有关HTML5表单与PDF forms之间差异的信息，请参 [阅HTML5表单与PDF forms之间的功能区别](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)。
 
 ## 保存草稿并提交信函实例 {#savingdrafts}
 
@@ -283,7 +283,7 @@ ht-degree: 0%
 
 只有在发布实例上查看信件时，才能保存此类实例。 默认情况下，保存实例处于关闭状态。 要启用字母实例的保存，请执行以下步骤。
 
-1. 在AEM中，使用以下URL打开服务器的Adobe Experience Manager Web Console配置： https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
+1. 在AEM中，使用以下URL打开服务器的Adobe Experience ManagerWeb控制台配置： https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. 找到 **[!UICONTROL “对应管理配置]** ”并单击它。
 1. 选中“ **[!UICONTROL 管理发布配置上的信函实例]** ”，然后单击“ **[!UICONTROL 保存”]**。
 
@@ -295,21 +295,21 @@ ht-degree: 0%
 
 ### 远程保存 {#remote-save}
 
-此选项适用于担心在发布实例上保存用户数据的用户，通常情况下，发布实例不在公司防火墙之外。 打开远程保存时，字母实例不会保存在发布实例上，但会远程保存在通过LiveCycle Client SDK配置指定的处理作者上。
+此选项适用于担心在发布实例上保存用户数据的用户，通常情况下，发布实例不在公司防火墙之外。 打开远程保存时，将不在发布实例上保存字母实例，但它们将远程保存在通过LiveCycle客户端SDK配置指定的处理作者上。
 
 #### 启用远程保存 {#enable-remote-save}
 
-1. 在AEM中，使用以下URL打开服务器的Adobe Experience Manager Web Console配置： `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. 在AEM中，使用以下URL打开服务器的Adobe Experience ManagerWeb控制台配置： `https://<server>:<port>/<contextpath>/system/console/configMgr`
 1. 搜索“ **[!UICONTROL 对应管理配置]** ”并单击它。
 1. 找到“ **[!UICONTROL 远程保存]** ”配置，选中它，然后单击“ **[!UICONTROL 保存”]**。
 
 #### 指定处理作者设置 {#specify-processing-author-settings}
 
-1. 在AEM中，使用以下URL打开服务器的Adobe Experience Manager Web Console配置： `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. 在AEM中，使用以下URL打开服务器的Adobe Experience ManagerWeb控制台配置： `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
-   ![Adobe Experience Manager Web Console配置](assets/2configmanager.png)
+   ![Adobe Experience ManagerWeb控制台配置](assets/2configmanager.png)
 
-1. 在此页上，找到Adobe LiveCycle Client SDK配置，然后单击以展开它。
+1. 在此页上，找到AdobeLiveCycle客户端SDK配置，然后单击以展开它。
 
 1. 在处理服务器URL中，输入LiveCycle服务器的名称，提供登录信息，然后单击“保 **存”**。
 
@@ -326,7 +326,7 @@ ht-degree: 0%
 
 ## 字母预览的再现模式： 移动表单预览和PDF预览 {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-AEM Forms Commendering Management在“创建对应UI”中将字母显示为HTML。 但是，通信管理仍支持恢复为PDF预览，而不是HTML预览。 有关在HTML和PDF模式之间切换预览的详细信息，请参 [阅更改字母的再现模式](#changerenditionmode)。
+AEM Forms通信管理在创建通信UI中将字母显示为HTML。 但是，通信管理仍支持恢复为PDF预览，而不是HTML预览。 有关在HTML和PDF模式之间切换预览的详细信息，请参 [阅更改字母的再现模式](#changerenditionmode)。
 
 以下是HTML和PDF预览中的优势和功能。
 
@@ -342,7 +342,7 @@ AEM Forms Commendering Management在“创建对应UI”中将字母显示为HTM
 * **分页符**: 在PDF预览中，您可以准确视图字母中的分页对其输出的影响。
 * **最终预览**: 在PDF预览中，您可以视图字母的格式和外观，就像字母在其输出中显示一样。
 
-有关PDF表单中脚本支持的信息，请参阅脚 [本支持](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)。
+有关PDF forms中脚本支持的信息，请参阅 [脚本支持](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)。
 
 有关HTML5表单中脚本支持的更多信息，请参 [阅HTML5表单脚本支持](/help/forms/using/scripting-support.md)。
 

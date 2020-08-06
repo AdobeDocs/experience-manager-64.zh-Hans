@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-Corrensementing Management解决方案允许您向Create Correndections用户界面添加自定义操作。
+Correndection Management解决方案允许您向Create Correndections用户界面添加自定义操作。
 
 本文档中的情景说明了如何在“创建对应用户界面”中创建按钮，将信件共享为附加到电子邮件的审阅PDF。
 
@@ -380,7 +380,7 @@ LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据�
 
 1. 单击&#x200B;**[!UICONTROL 导入]**。
 
-#### 将ServiceName添加到已列入允许列表服务列表 {#adding-servicename-to-the-allowlisted-service-list}
+#### 将ServiceName添加列入允许列表到列表服务 {#adding-servicename-to-the-allowlisted-service-list}
 
 在AEM服务器中提到要访问AEM服务器的LiveCycle服务。
 

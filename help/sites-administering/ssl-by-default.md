@@ -11,51 +11,54 @@ topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
 translation-type: tm+mt
 source-git-commit: eb3ac73ebe3189c144dafa02a2596ea5d512ffba
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
 
 # 默认情况下为SSL{#ssl-by-default}
 
-为了不断提高AEM的安全性，Adobe引入了一项称为“默认SSL”的功能。 其目的是鼓励使用HTTPS连接到AEM实例。
+为了不断提高AEM的安全性，Adobe引入了一种名为“默认SSL”的功能。 其目的是鼓励使用HTTPS连接到AEM实例。
 
 ## 默认情况下启用SSL {#enabling-ssl-by-default}
 
-您可以通过单击AEM主屏幕中的相关收件箱消息，开始配置SSL（默认）。 要进入收件箱，请按屏幕右上角的铃图标。 然后，单击“查看 **全部”**。 这将显示列表视图中排序的所有警报的列表。
+您可以通过单击AEM主屏幕中的相关收件箱消息来开始默认配置SSL。 要进入收件箱，请按屏幕右上角的铃图标。 然后，单击“全 **部视图**”。 这将显示在列表视图中排序的所有警报的列表。
 
-在列表中，选择并打开配置 **HTTPS警报** :
+在列表中，选择并打开 **配置HTTPS** 警报：
 
 ![chlimage_1-341](assets/chlimage_1-341.png)
 
 >[注意!]
 >
->如果收件箱 **中不存在配置HTTPS** 警报，您可以通过转到 *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>如果收 **件箱中不存** 在“配置HTTPS”警报，您可以通过转到 *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-已为此功能 **创建名为ssl-service** 的服务用户。 打开警报后，将引导您完成以下配置向导：
+已为此功能 **创建名为** ssl-service的服务用户。 打开警报后，将引导您完成以下配置向导：
 
-1. 首先，设置“商店凭据”。 这些是 **ssl-service系统用户密钥存储的凭据** ，将包含HTTPS监听器的私钥和信任存储。
+1. 首先，设置存储凭据。 这些是ssl-service系 **统用户密钥存储** （将包含HTTPS监听器的私钥和信任存储）的凭据。
 
    ![chlimage_1-342](assets/chlimage_1-342.png)
 
-1. 输入凭据后，单击 **页面** 右上角的“下一步”。 然后，上传SSL连接的关联私钥和证书。
+1. 输入凭据后，单 **击** 页面右上角的“下一步”。 然后，上传SSL连接的相关私钥和证书。
 
    ![chlimage_1-343](assets/chlimage_1-343.png)
 
    >[!NOTE]
    >
-   >有关如何生成私钥以及要与向导一起使用的证书的信息，请参 [阅以下过程](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) 。
+   >有关如何生成私钥和用于向导的证书的信息，请参 [阅下面的过](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) 程。
 
 1. 最后，指定HTTPS监听器的HTTPS主机名和TCP端口。
 
    ![screen_shot_2018-07-25at31658pm](assets/screen_shot_2018-07-25at31658pm.png)
 
-## 默认情况下自动化SSL {#automating-ssl-by-default}
+## 默认情况下自动执行SSL {#automating-ssl-by-default}
 
 默认情况下，有三种方法可自动执行SSL。
 
-### 通过HTTP POST {#via-http-post}
+### 通过HTTPPOST {#via-http-post}
 
-第一种方法包括发布到配置向导所使用的SSLSetup服务器：
+第一种方法包括发布到配置向导正在使用的SSLSetup服务器：
 
 ```shell
 POST /libs/granite/security/post/sslSetup.html
@@ -90,11 +93,11 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-Servlet与任何sling POST servlet一样，将以200 OK或错误HTTP状态代码作出响应。 您可以在响应的HTML正文中查找有关状态的详细信息。
+Servlet与任何slingPOSTservlet一样，将以200 OK或错误HTTP状态代码做出响应。 您可以在响应的HTML正文中查找有关状态的详细信息。
 
 以下是成功响应和错误的示例。
 
-**成功示例** (status = 200):
+**成功示例** （状态= 200）:
 
 ```xml
 <!DOCTYPE html>
@@ -125,7 +128,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**错误示例** (status = 500):
+**错误示例** （状态= 500）:
 
 ```xml
 <!DOCTYPE html>
@@ -151,12 +154,12 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 或者，您也可以通过上传已包含这些必需项的包来自动设置SSL:
 
-* ssl服务用户的密钥库。 它位于 */home/users/system/security/ssl-service/keystore下* 。
+* ssl服务用户的密钥库。 它位于 *存储库中的/home/users/system/security/ssl-service* /keystore下。
 * 配 `GraniteSslConnectorFactory` 置
 
 ### 生成要与向导一起使用的私钥／证书对 {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-在下面，您将找到一个示例，用于创建DER格式的自签名证书，SSL向导可以使用该证书。
+在下面，您将找到一个示例，用于创建SSL向导可使用的DER格式的自签名证书。
 
 >[!NOTE]
 >
@@ -187,19 +190,19 @@ it for any subsequent updating of the private key or certificate.</dd>
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-最后，在本页开头所述的图形SSL向导的步骤2中，将 **localhostprivate.der上传为私钥，将****** localhost.crt上传为SSL证书。
+最后，在本页 **开头所述的图形SSL向导的** 步骤2中，将localhostprivate.der上传为私钥，将 **** localhost.crt上传为SSL证书。
 
 ### 通过cURL更新SSL配置 {#updating-the-ssl-configuration-via-curl}
 
 >[!NOTE]
 >
->有关 [AEM中有用的cURL命令的集中列表，请参阅将cURL与AEM一起使用](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) 。
+>请参 [阅将cURL与AEM一起使用](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) ，以便集中列表AEM中有用的cURL命令。
 
-您还可以使用cURL工具自动完成SSL配置。 您可以通过将配置参数发布到此URL来执行此操作：
+您还可以使用cURL工具自动进行SSL配置。 您可以通过将配置参数发布到此URL来执行此操作：
 
 *https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
-以下是在配置向导中更改各种设置的参数：
+下面是在配置向导中更改各种设置时可以使用的参数：
 
 * `-F "keystorePassword=password"` -密钥库密码；
 
@@ -218,9 +221,9 @@ openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out loca
 
 >[!NOTE]
 >
->运行cURL以自动化SSL配置的最快方式来自DER和CRT文件所在的文件夹。 或者，您也可以在certificateFile参数中指定完 `privatekeyFile` 整路径。
+>运行cURL以自动进行SSL配置的最快方式来自DER和CRT文件所在的文件夹。 或者，也可以在和certificateFile参数中指 `privatekeyFile` 定完整路径。
 >
->您还需要通过身份验证才能执行更新，因此请确保在cURL命令后面附加该参 `-u user:passeword` 数。
+>您还需要通过身份验证才能执行更新，因此请确保在参数后面附加cURL命 `-u user:passeword` 令。
 >
 >正确的cURL post命令应当如下：
 
@@ -230,9 +233,9 @@ curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm
 
 #### 使用cURL的多个证书 {#multiple-certificates-using-curl}
 
-可以通过重复certificateFile参数，向servlet发送证书链，如下所示：
+可以通过重复certificateFile参数，将证书链发送给servlet，如下所示：
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-执行命令后，请验证所有证书是否都发送到密钥库。 从以下位置检查密钥库：\
+执行命令后，请验证是否所有证书都已发送到密钥库。 从以下位置检查密钥库：\
 [http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)

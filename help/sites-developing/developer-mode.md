@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
 source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
 
 # 开发人员模式{#developer-mode}
 
-在AEM中编辑页面时，可以使用 [多种模](/help/sites-authoring/author-environment-tools.md#page-modes) 式，包括开发人员模式。 这会打开一个侧面板，其中包含多个选项卡，向开发人员提供有关当前页面的信息。 三个选项卡为：
+在AEM中编辑页面时，可以 [使用](/help/sites-authoring/author-environment-tools.md#page-modes) 多种模式，包括开发人员模式。 这会打开一个侧面板，其中包含多个选项卡，向开发人员提供有关当前页面的信息。 三个选项卡为：
 
 * **[用于查看](#components)**结构和性能信息的组件。
 * **[运行测试](#tests)**，并分析测试结果。
@@ -47,6 +50,7 @@ source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 >
 >* 在使用nosamplecontent运行模式的创作实例上
 >* 发布实例
+
 >
 >
 使用后应再次禁用它。
@@ -56,7 +60,7 @@ source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 >请参阅：
 >
 >* 知识库文章， [AEM TouchUI问题疑难解答](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)，以获取更多提示和工具。
->* AEM Gems会话关于 [AEM 6.0开发人员模式](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)。
+>* AEM Gems会话关 [于AEM 6.0开发人员模式](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)。
 
 
 ## 打开开发者模式 {#opening-developer-mode}
@@ -82,7 +86,7 @@ source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 * 允许您展开树并在树中选择特定组件。 通过选择，可访问组件详细信息； 例如：
 
    * 存储库路径
-   * 脚本链接（在CRXDE Lite中访问）
+   * 脚本链接(以CRXDE Lite访问)
 
 * 所选组件（在内容流中，用蓝色边框表示）将在内容树中高亮显示（反之亦然）。
 
@@ -100,16 +104,18 @@ source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 
    * 用于呈现该组件的所有组件脚本。
    * 此特定组件的存储库内容路径。
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * **编辑脚本**: 链接：
 
-   * 在CRXDE Lite中打开组件脚本。
+   * 以CRXDE Lite打开组件脚本。
 
 * 展开组件条目（箭头）还可以显示：
 
    * 所选组件中的层次结构。
    * 单独呈现选定组件、嵌套在其中的任何单个组件以及合并的总时间。
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 >[!CAUTION]
@@ -122,7 +128,7 @@ source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 
 希望“错 **误** ”选项卡始终为空（如上所示），但出现问题时，会为每个组件显示以下详细信息：
 
-* 如果组件将一个条目写入错误日志以及错误的详细信息并直接链接到CRXDE Lite中的相应代码，则会发出警告。
+* 如果组件将一个条目写入错误日志以及错误的详细信息并直接链接到CRXDE Lite中的相应代码，则显示警告。
 * 组件打开管理会话时显示警告。
 
 例如，在调用未定义方法的情况下，将在“错误”选项卡中显示所 **得错** 误：
@@ -135,6 +141,6 @@ source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 
 >[!CAUTION]
 >
->在AEM 6.2中，开发人员模式的测试功能已作为独立工具应用程序重新实施。
+>在AEM 6.2中，开发者模式的测试功能作为独立工具应用程序重新实施。
 >
 >有关完整详细信息，请 [参阅测试您的UI](/help/sites-developing/hobbes.md)。

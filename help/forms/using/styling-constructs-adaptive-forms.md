@@ -560,7 +560,7 @@ LESS框架简化了自适应表单样式的使用案例。 该框架允许您使
   </tr> 
   <tr> 
    <td><p><code>filePreviewIconColor</code></p> </td> 
-   <td><p>构件中预览图标的颜色（引导图标）</p> </td> 
+   <td><p>构件中预览图标(Bootstrap图标)的颜色</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>fileItemCommentHeight</code></p> </td> 

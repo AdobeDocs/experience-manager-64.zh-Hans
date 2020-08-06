@@ -30,7 +30,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->使用AEM Forms进行编程中的快速开始基于Forms操作系统。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>《AEM Forms编程》中的快速开始基于Forms操作系统。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速开始（SOAP模式）: 使用Java API进入备份模式 {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
@@ -150,7 +150,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）: 使用Java API退出备份模式 {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-以下Java代码示例明确导致Forms Server退出备份模式并返回从全局文档存储清除文件。 (请参 [阅在表单服务器上退出备份模式](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)。)
+以下Java代码示例明确导致Forms服务器退出备份模式并返回从全局文档存储清除文件。 (请参 [阅在表单服务器上退出备份模式](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server)。)
 
 ```as3
  /* 

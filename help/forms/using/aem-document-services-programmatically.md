@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # 以编程方式使用AEM文档服务 {#using-aem-document-services-programmatically}
 
-使用AEM文档服务构建Maven Projects所需的客户端类可在AEM Forms [客户端SDK jar中](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 找到。 有关众多项目的信息，请 [参阅如何使用Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md)。
+使用AEM文档服务构建Maven Projects所需的客户端类可在 [AEM Forms客户端SDK](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) jar中找到。 有关众多项目的信息，请 [参阅如何使用Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md)。
 
 >[!NOTE]
 >
@@ -1035,7 +1035,7 @@ public class ModifySignatureField {
 您可以通过使用称为认证签名的特定类型的签名来认证PDF文档，从而保护它。 认证签名与数字签名在以下方面有所区别：
 
 * 它必须是应用于PDF文档的第一个签名。 换言之，应用认证签名时，文档中的其他签名字段必须未签名。 在PDF文档中只允许使用一个认证签名。 要对PDF文档进行签名和认证，请在对其进行签名之前对其进行认证。 验证PDF文档后，您可以对其他签名字段进行数字签名。
-* 文档的作者或发起者可以指定以某些方式修改文档，而不会使认证签名失效。 例如，文档可以允许填写表单或添加注释。 如果作者指定不允许进行某些修改，Acrobat将限制用户以这种方式修改文档。 如果进行了此类修改，则认证签名无效。 此外，当用户打开文档时，Acrobat会发出警告。 （对于未经认证的签名，不会阻止修改，并且正常的编辑操作不会使原始签名失效。）
+* 文档的作者或发起者可以指定以某些方式修改文档，而不会使认证签名失效。 例如，文档可以允许填写表单或添加注释。 如果作者指定不允许进行某些修改，则Acrobat限制用户以这种方式修改文档。 如果进行了此类修改，则认证签名无效。 此外，Acrobat在用户打开文档时发出警告。 （对于未经认证的签名，不会阻止修改，并且正常的编辑操作不会使原始签名失效。）
 * 在签名时，会扫描文档以查找可能使文档的内容模糊或具有误导性的特定类型的内容。 例如，注释可能会模糊页面上某些对了解认证内容很重要的文本。 可以提供有关此类内容的说明（法律证明）。
 
 **语法**:
@@ -1341,7 +1341,7 @@ secureDocument允许您按特定顺序单独或以任何组合加密、签署／
 
 **使用密码加密PDF文档**
 
-当您使用口令加密PDF文档时，用户必须指定口令才能在Adobe Reader或Acrobat中打开PDF文档。 此外，在其他AEM Forms文档服务操作使用文档之前，必须先解锁密码加密的PDF文档。
+当您使用口令加密PDF文档时，用户必须指定口令才能在Adobe Reader或Acrobat打开PDF文档。 此外，在AEM Forms文档服务的另一个操作使用文档之前，必须解锁密码加密的PDF文档。
 
 **使用证书加密PDF文档**
 
@@ -1362,13 +1362,13 @@ secureDocument允许您按特定顺序单独或以任何组合加密、签署／
 
 >[!NOTE]
 >
->在使用证书加密PDF文档之前，必须确保将证书添加到AEM信任存储。
+>在使用证书加密PDF文档之前，必须确保将证书添加到AEM信任商店。
 
 **将使用权限应用于PDF文档**
 
-您可以使用Reader Extensions Java Client API和Web服务将使用权限应用于PDF文档。 使用权限与Acrobat默认提供但Adobe Reader不提供的功能相关，如向表单添加注释或填写表单字段并保存表单的功能。 对其应用了使用权限的PDF文档称为启用权限的文档。 在Adobe Reader中打开启用权限的文档的用户可以执行为该特定文档启用的操作。
+您可以使用Reader扩展Java客户端API和Web服务将使用权限应用于PDF文档。 使用权限与默认在Acrobat但在Adobe Reader不可用的功能有关，如向表单添加注释或填写表单字段并保存表单的功能。 对其应用了使用权限的PDF文档称为启用权限的文档。 在Adobe Reader打开启用权限的文档的用户可以执行为该特定文档启用的操作。
 
-在Reader使用证书扩展PDF文档之前，必须确保将证书添加到AEM Keystore。
+您必须确保将证书添加到AEM Keystore中，才能用证书ReaderPDF文档。
 
 **对PDF文档进行数字签名**
 
@@ -1386,7 +1386,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 >[!NOTE]
 >
->AEM Forms还支持CAdES *[规范](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*，用于对PDF文档进行数字签名。
+>AEM Forms还支 *[持CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*规范，用于对PDF文档进行数字签名。
 
 **PDF认证文档**
 
@@ -1402,7 +1402,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 例如，文档可能允许填写表单或添加注释。 如果作者指定不允许进行某些修改，
 
-Acrobat限制用户以这种方式修改文档。 如果进行了此类修改（如使用其他应用程序），则认证签名无效，并且Acrobat在用户打开文档时发出警告。 （对于未经认证的签名，不会阻止修改，并且正常的编辑操作不会使原始签名失效。）
+Acrobat限制用户以这种方式修改文档。 如果进行了此类修改，如使用其他应用程序，则认证签名无效，Acrobat在用户打开文档时发出警告。 （对于未经认证的签名，不会阻止修改，并且正常的编辑操作不会使原始签名失效。）
 
 在签名时，会扫描文档以查找可能使文档的内容模糊或具有误导性的特定类型的内容。
 
@@ -1454,7 +1454,7 @@ secureDocument(Document inDoc,
  </tbody> 
 </table>
 
-**示例1**: 此示例用于执行密码加密，验证签名字段和Reader扩展PDF文档。
+**示例1**: 此示例用于执行密码加密、验证签名字段和Reader扩展PDF文档。
 
 ```
 /*************************************************************************
@@ -3389,7 +3389,7 @@ public class GetPDFEncryption {
 
 ### 从PDF删除密码加密 {#removing-password-encryption-from-pdf}
 
-从PDF文档中删除基于口令的加密，使用户无需指定口令即可在Adobe Reader或Acrobat中打开PDF文档。 从PDF文档删除基于密码的加密后，文档不再安全。
+从PDF文档中删除基于口令的加密，使用户无需指定口令即可在Adobe Reader或Acrobat打开PDF文档。 从PDF文档删除基于密码的加密后，文档不再安全。
 
 **语法**: `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
@@ -3488,7 +3488,7 @@ public class RemovePasswordEncryption {
 
 ### 删除证书加密 {#removing-certificate-encryption}
 
-您可以从PDF文档中删除基于证书的加密，以便用户可以在Adobe Reader或Acrobat中打开PDF文档。 要从使用证书加密的PDF文档中删除加密，请引用私钥。 从PDF文档删除加密后，它不再安全。
+您可以从PDF文档中删除基于证书的加密，以便用户可以在Adobe Reader或Acrobat打开PDF文档。 要从使用证书加密的PDF文档中删除加密，请引用私钥。 从PDF文档删除加密后，它不再安全。
 
 **语法**: `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
 
@@ -3965,7 +3965,7 @@ String outputFolder="C:/Output";
 <table> 
  <tbody> 
   <tr> 
-   <th>Parameter</th> 
+   <th>参数</th> 
    <th>描述</th> 
   </tr> 
   <tr> 
@@ -4546,7 +4546,7 @@ createPDF服务会引发以下异常：
      <li>无安全性</li> 
      <li>密码安全性<br /> </li> 
      <li>证书安全性<br /> </li> 
-     <li>Adobe Policy Server</li> 
+     <li>Adobe策略服务器</li> 
     </ul> <p>它是可选参数。</p> </td> 
   </tr> 
   <tr> 
@@ -4959,7 +4959,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
      <li>无安全性</li> 
      <li>密码安全性<br /> </li> 
      <li>证书安全性<br /> </li> 
-     <li>Adobe Policy Server</li> 
+     <li>Adobe策略服务器</li> 
     </ul> <p>它是可选参数。</p> </td> 
   </tr> 
   <tr> 

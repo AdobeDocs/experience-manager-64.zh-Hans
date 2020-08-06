@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 100%
 
 ---
 
@@ -37,15 +40,15 @@ source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
 
    * 这种情况可能有几个原因，最常见的原因是本地浏览器或调度程序缓存问题，但有时也可能是复制队列的问题。
 
-* **解决方案**：
+* **解决方案**:
 
    * 这里列举了各种可能的情况：
    * 确认页面复制正确。检查页面状态，如有必要，检查复制队列的状态。
    * 清除本地浏览器中的缓存，然后再次访问页面。
-   * Add `?` to the end of the page URL. For example:
+   * 向页面 URL 的结尾处添加 `?`。例如：
 
       * `http://localhost:4502/sites.html/content?`
-      * 这将会绕过调度程序而直接从 AEM 请求页面。如果收到更新页面，则表示应清除调度程序缓存。
+      * 这将会绕过调度程序而直接从 AEM 请求页面。如果收到更新的页面，则表示应清除调度程序缓存。
    * 如果复制队列存在问题，请与系统管理员联系。
 
 

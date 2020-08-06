@@ -1,8 +1,8 @@
 ---
-title: 在AEM收件箱中管理表单应用程序和任务
-seo-title: 在AEM收件箱中管理表单应用程序和任务
-description: AEM收件箱允许您通过提交应用程序启动以表单为中心的工作流并管理任务。
-seo-description: AEM收件箱允许您通过提交应用程序启动以表单为中心的工作流并管理任务。
+title: 在AEM收件箱中管理Forms应用程序和任务
+seo-title: 在AEM收件箱中管理Forms应用程序和任务
+description: AEM Inbox允许您通过提交应用程序和管理工作流来启动以Forms为中心的任务。
+seo-description: AEM Inbox允许您通过提交应用程序和管理工作流来启动以Forms为中心的任务。
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# 在AEM收件箱中管理表单应用程序和任务 {#manage-forms-applications-and-tasks-in-aem-inbox}
+# 在AEM收件箱中管理Forms应用程序和任务 {#manage-forms-applications-and-tasks-in-aem-inbox}
 
-启动或触发以表单为中心的工作流程的多种方式之一是通过AEM收件箱中的应用程序。 您需要创建一个工作流应用程序，以使表单工作流作为应用程序显示在收件箱中。 有关工作流应用程序和启动表单工作流的其他方式的更多信息，请 [参阅在OSGi上启动以表单为中心的工作流](/help/forms/using/aem-forms-workflow.md#launch)。
+启动或触发以Forms为中心的工作流的多种方法之一是通过AEM收件箱中的应用程序。 您需要创建一个工作流应用程序，以使Forms工作流作为应用程序显示在收件箱中。 有关工作流应用程序和启动Forms工作流的其他方式的更多信息，请 [参阅在OSGi上启动以Forms为中心的工作流](/help/forms/using/aem-forms-workflow.md#launch)。
 
-此外，AEM收件箱还整合了来自各种AEM组件(包括表单任务)的通知和工作流。 当触发包含分配任务步骤的表单工作流时，关联的应用程序将作为任务列在被分派人的收件箱中。 如果受分派人是组，则任务会显示在所有组成员的收件箱中，直到个人声明或委派任务。
+此外，AEM Inbox整合了来自各种AEM组件(包括Forms工作流)的通知和任务。 当触发包含分配任务步骤的表单工作流时，关联的应用程序将作为任务列在被分派人的收件箱中。 如果受分派人是组，则任务会显示在所有组成员的收件箱中，直到个人声明或委派任务。
 
 收件箱用户界面为列表视图和日历视图提供数据。 您还可以配置视图设置。 您可以根据各种参数筛选任务。 有关视图和过滤器的更多信息，请参 [阅您的收件箱](/help/sites-authoring/inbox.md)。
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 管理任务 {#manage-tasks}
 
-当Forms工作流触发并且您是被分派人或被分派人组的一部分时，您的收件箱中会显示一个任务。 您可以从收件箱中视图任务详细信息并对任务执行可用操作。
+当Forms工作流触发并且您是被分派人或被分派人组的一部分时，任务会显示在您的收件箱中。 您可以从收件箱中视图任务详细信息并对任务执行可用操作。
 
 ### 索赔或委托任务 {#claim-or-delegate-tasks}
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ### 视图详细信息并对任务执行操作 {#view-details-and-perform-actions-on-tasks}
 
-打开任务时，您可以视图任务详细信息并执行可用操作。 可用于任务的操作在关联的表单工作流的分配任务步骤中定义。
+打开任务时，您可以视图任务详细信息并执行可用操作。 可用于任务的操作在关联的Forms工作流的分配任务步骤中定义。
 
 1. 点按以选择任务的缩略图。 用于打开或委派选定任务的选项显示在顶部。
 1. 点按 **[!UICONTROL 打开]** ，以视图任务详细信息并执行操作。 将打开详细的任务视图。 在此视图中，您可以视图任务详细信息并对任务执行操作。
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 AEM收件箱仅显示活动任务。 已完成的任务不显示在列表中。 但是，您可以使用收件箱过滤器根据多个参数(如任务类型、状态、开始和结束日期等)筛选任务。 要视图已完成的任务:
 
-1. 在AEM收件箱中，点 ![按切换侧面板1](assets/toggle-side-panel1.png) 以打开筛选器选择器。
+1. 在AEM收件箱中， ![点按切换侧面板](assets/toggle-side-panel1.png) 1以打开筛选器选择器。
 1. 点按 **[!UICONTROL 任务状态]** ，相应的面板并 **[!UICONTROL 选择完成]**。 将显示所有已完成的任务。
 
    ![filter-1](assets/filter-1.png)

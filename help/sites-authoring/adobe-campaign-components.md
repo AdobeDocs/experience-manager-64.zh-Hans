@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2778'
+ht-degree: 69%
 
 ---
 
@@ -80,7 +83,7 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 >[!NOTE]
 >
->就地编辑器在编辑时使用图像的原始大小和长宽比。您还可以指定高度和宽度属性。在保存编辑更改时，将应用属性中定义的任何大小和长宽比限制。
+>就地编辑器在编辑时使用图像的原始大小和长宽比。 您还可以指定高度和宽度属性。 在保存编辑更改时，将应用属性中定义的所有大小和长宽比限制。
 >
 >根据您的实例，[页面设计](/help/sites-developing/designer.md)还可能会强制应用最小和最大限制；这些限制在项目实施过程中开发。
 
@@ -96,7 +99,7 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 * **裁剪**
 
-   选择“裁剪”以裁剪图像。 可使用鼠标裁剪图像。
+   选择裁剪以裁剪图像。 可使用鼠标裁剪图像。
 
 * **旋转**
 
@@ -147,9 +150,9 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 您可以在&#x200B;**显示**、**URL 信息**&#x200B;或&#x200B;**高级**&#x200B;选项卡中配置以下各项：
 
-* **链接题注**
+* **链接标题**
 
-   链接的题注。 这是用户看到的文本。
+   链接的描述。 这是用户看到的文本。
 
 * **链接工具提示**
 
@@ -176,7 +179,7 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 ### Scene7 Image Template (Campaign) {#scene-image-template-campaign}
 
-[Scene7图像模板是分层的](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) ，它们是分层的图像文件，其中的内容和属性可进行参数化以实现可变性。 通过&#x200B;**图像模板**&#x200B;组件，您可以在新闻稿中使用 Scene7 模板，并更改模板参数的值。此外，您还可以在参数中使用Adobe Campaign元数据变量，以便每个用户都能以个性化的方式体验图像。
+[Scene7图像模板](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 是分层的图像文件，其中的内容和属性可进行参数化以实现可变性。 通过&#x200B;**图像模板**&#x200B;组件，您可以在新闻稿中使用 Scene7 模板，并更改模板参数的值。此外，您可以在参数中使用Adobe Campaign元数据变量，以便每个用户以个性化的方式体验图像。
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
@@ -222,7 +225,7 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
    从内容查找器中拖动图像，或单击浏览到图像。根据需要进行裁剪或旋转。
 
-* **图像属性** (高&#x200B;**级图像属性**)
+* **图像属性** (**高级图像属性**)
 
    允许您指定以下内容：
 
@@ -271,6 +274,7 @@ The Text &amp; Personalization (Campaign) component lets you enter a text block 
 >
 >* 可用的个性化字段取决于您的新闻稿所链接到的 Adobe Campaign 模板。
 >* 从 ContextHub 中选择某个人物后，个性化字段会自动替换为选定配置文件中的数据。
+
 >
 >
 请参阅[插入个性化](/help/sites-authoring/campaign.md#inserting-personalization)。
@@ -319,7 +323,7 @@ When you open a form that is configured to integrate with Adobe Campaign, you se
   <tr> 
    <td><p>复选框（营销活动）</p> </td> 
    <td><p>布尔型</p> </td> 
-   <td><p>不再联系（通过任何渠道）</p> </td> 
+   <td><p>不再联系(由任何渠道)</p> </td> 
   </tr> 
   <tr> 
    <td><p>日期字段（营销活动）</p> <p>日期字段/HTML 5（营销活动）</p> </td> 
@@ -328,12 +332,12 @@ When you open a form that is configured to integrate with Adobe Campaign, you se
   </tr> 
   <tr> 
    <td><p>数字字段（营销活动）</p> </td> 
-   <td><p>数字（字节、短、长、双）</p> </td> 
+   <td><p>数字(字节、短、长、多次)</p> </td> 
    <td><p>年龄</p> </td> 
   </tr> 
   <tr> 
    <td><p>选项字段（营销活动）</p> </td> 
-   <td><p>字节，与值关联</p> </td> 
+   <td><p>字节与相关值</p> </td> 
    <td><p>性别</p> </td> 
   </tr> 
   <tr> 
@@ -356,7 +360,7 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 * **标题**
 
-   如果要使用元素名称以外的名称，请在此处输入该名称。
+   如果要使用元素名称以外的名称，请在此处输入它。
 
 * **隐藏标题**
 
@@ -368,7 +372,7 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 * **仅显示值**
 
-   仅显示值（如果有）
+   仅显示值（如果有值）
 
 #### Adobe Campaign {#adobe-campaign}
 
@@ -376,11 +380,11 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 * **映射**
 
-   根据需要，选择Adobe Campaign个性化字段。
+   选择Adobe Campaign个性化字段（如果适用）。
 
 * **对帐密钥**
 
-   如果此字段是对帐密钥的一部分，请选中此复选框。
+   如果此字段是合并关键项的一部分，请选中此复选框。
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -388,11 +392,11 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 * **必填**
 
-   选中此复选框可使此组件成为必需组件；即，用户必须输入值。
+   选中此复选框可使此组件成为必需组件； 即用户必须输入一个值。
 
 * **必需的消息**
 
-   （可选）添加一条消息，指明字段为必填字段。
+   （可选）添加一条消息，说明字段为必填字段。
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -425,7 +429,8 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 * **约束消息**
 
    此外，您还可以添加约束消息，以便用户了解如何正确设置其答案的格式。
-* **样式——宽**&#x200B;度通过单击或点按+和——图标或输入数字，调 **整字****** 段的宽度。
+* **样式——宽**&#x200B;度通过单击或点按 
+**+** 和 **-图标** ，或输入数字。
 
 以下示例展示了所显示的调整了宽度的日期字段（营销活动）组件。
 
@@ -442,7 +447,8 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 * **标题和文本——元素名称**
 
    默认为encryptedPK。 仅当该元素名称与表单中其他元素的名称发生冲突时，才需要对其进行更改。不能有两个表单字段具有相同的元素名称。
-* **Adobe Campaign - URL 参数**&#x200B;添加 EPK 的 URL 参数。例如，您可以使用值 **epk**。
+* **Adobe Campaign - URL 参数**&#x200B;添加 EPK 的 URL 参数。例如，您可以使用 
+**epk**。
 
 以下示例展示了所显示的已加密的主要密钥（营销活动）组件。
 
@@ -458,7 +464,7 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 ### Hidden Reconciliation Key (Campaign) {#hidden-reconciliation-key-campaign}
 
-隐藏的对帐密钥（营销活动）组件允许您将隐藏字段作为对帐密钥的一部分添加到表单。
+隐藏合并关键项(活动)组件允许您将隐藏字段作为合并关键项的一部分添加到表单。
 
 您可以在隐藏的对帐密钥（营销活动）组件中配置以下各项：
 
@@ -484,11 +490,12 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 * **约束消息**
 
    此外，您还可以添加约束消息，以便用户了解如何正确设置其答案的格式。
-* **样式——宽**&#x200B;度通过单击或点按+和——图标或输入数字，调 **整字****** 段的宽度。
+* **样式——宽**&#x200B;度通过单击或点按 
+**+** 和 **-图标** ，或输入数字。
 
 以下示例展示了所显示的配置了宽度的数字字段（营销活动）组件。
 
-![chlimage_1-127](assets/chlimage_1-127.png)
+![chlimage_1-129](assets/chlimage_1-127.png)
 
 ### Option Field (Campaign) {#option-field-campaign}
 
@@ -526,7 +533,7 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 * **约束——约束** 下拉列表
 
-   You can select - **None, Email,** or **Name (no umlauts)**- to add the constraint of either an email address, name, or no constraint. 如果您选择电子邮件，则用户在字段中输入的回答必须是电子邮件地址。如果选择名称，则该名称必须是名称（不允许使用变音）。
+   You can select - **None, Email,** or **Name (no umlauts)**- to add the constraint of either an email address, name, or no constraint. 如果您选择电子邮件，则用户在字段中输入的回答必须是电子邮件地址。如果选择名称，则它必须是名称（不允许变音）。
 
 * **约束消息**
 

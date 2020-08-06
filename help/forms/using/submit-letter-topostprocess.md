@@ -1,8 +1,8 @@
 ---
 title: 信件和互动通信的后处理
 seo-title: 信函的后处理
-description: 通过信件管理中的邮件后处理功能，您可以创建AEM和Forms邮件后处理流程，如打印和电子邮件，并将它们与信件集成。
-seo-description: 通过信件管理中的邮件后处理功能，您可以创建AEM和Forms邮件后处理流程，如打印和电子邮件，并将它们与信件集成。
+description: 信件后处理管理允许您创建AEM和Forms邮件后处理流程，如打印和电子邮件，并将它们与信件集成。
+seo-description: 信件后处理管理允许您创建AEM和Forms邮件后处理流程，如打印和电子邮件，并将它们与信件集成。
 uuid: 4163bba9-e82b-4d3e-b1df-909855413a9e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -27,18 +27,18 @@ ht-degree: 0%
 
 要将帖子流程与信件或交互式通信关联起来，您首先需要设置帖子流程。 提交的信件可以执行两种工作流:
 
-1. **表单工作流：** 这些是JEE流程管理工作流上的AEM Forms。 有关设置表单工 [作流的说明](#formsworkflow)。
+1. **Forms Workflow:** 这些是JEE流程管理工作流的AEM Forms。 设置Forms Workflow [的说明](#formsworkflow)。
 
-1. **AEM Workflow:** AEM工作流还可用作已提交信件的后处理。 有关设置AEM Workflow [的说明](/help/forms/using/aem-forms-workflow.md)。
+1. **AEM工作流：** AEM工作流还可用作已提交信件的后处理。 有关设置AEM工作 [流的说明](/help/forms/using/aem-forms-workflow.md)。
 
 ## 表单工作流 {#formsworkflow}
 
-1. 在AEM中，使用以下URL打开服务器的Adobe Experience Manager Web Console配置： `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. 在AEM中，使用以下URL打开服务器的Adobe Experience ManagerWeb控制台配置： `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![配置管理器](assets/2configmanager-1.png)
 
-1. 在此页上，找到AEM Forms客户端SDK配置，然后单击以展开它。
-1. 在服务器URL中，输入JEE服务器上AEM Forms的名称、登录详细信息，然后单击“保 **存”**。
+1. 在本页中，找到“AEM Forms客户端SDK配置”，并通过单击将其展开。
+1. 在服务器URL中，在JEE服务器上输入您的AEM Forms的名称和登录详细信息，然后单击 **保存**。
 
    ![输入LiveCycle服务器的名称](assets/1cofigmanager.png)
 
@@ -47,17 +47,17 @@ ht-degree: 0%
 
    转到反序列化防火墙配置，并在包前缀的白名单类下添加sun.util.calendar。
 
-1. 现在，您的服务器已映射，JEE上的AEM Forms中的后期进程在创建字母时可在AEM用户界面中使用。
+1. 现在，您的服务器已映射，JEE上的AEM Forms的后处理在创建字母时可在AEM用户界面中使用。
 
    ![创建包含列出的帖子流程的信件屏幕](assets/0configmanager.png)
 
-1. 要验证进程／服务的身份，请复制进程的名称，然后返回Adobe Experience Manager Web Console配置页面> AEM Forms客户端SDK配置，并将该进程添加为新服务。
+1. 要验证进程／服务的身份，请复制进程的名称，然后返回“Adobe Experience ManagerWeb控制台配置”页>“AEM Forms客户端SDK配置”，并将该进程添加为新服务。
 
-   例如，如果字母的“属性”页中的下拉框将进程的名称显示为Forms Workflow -> ValidCCPostProcess/SaveXML，则添加一个服务名称 `ValidCCPostProcess/SaveXML`。
+   例如，如果字母的“属性”页中的下拉框将进程的名称显示为Forms Workflow-> ValidCCPostProcess/SaveXML，则添加一个服务名称 `ValidCCPostProcess/SaveXML`。
 
 1. 要在JEE工作流上使用AEM Forms进行后处理，请设置必要的参数和输出。 参数的默认值如下所示。
 
-   转至Adobe Experience Manager Web Console的“配置”页>“ **[!UICONTROL 对应管理配置]** ”并设置以下参数：
+   转到“Adobe Experience ManagerWeb控制台配置”页>“ **[!UICONTROL 对应管理配置]** ”并设置以下参数：
 
    1. **inPDFDoc(PDF文档参数):** 作为输入的PDF文档。 此输入包含呈现的字母作为输入。 所指示的参数名称是可配置的。 可以从配置中的“对应管理”配置配置这些配置。
    1. **inXMLDoc（XML数据参数）:** 作为输入的XML文档。 此输入包含用户以XML形式输入的数据。
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在使用表单或AEM工作流时，在从发布服务器提交任何内容之前，必须配置DS设置服务。 否则，表格提交将失败。
+>在使用Forms或AEM工作流时，在从发布服务器提交任何内容之前，必须配置DS设置服务。 否则，表格提交将失败。
 
 ## 字母实例检索 {#letter-instances-retrieval}
 
@@ -117,9 +117,9 @@ ht-degree: 0%
 
 1. 将鼠标悬停在字母上并点按 **视图属性**。
 1. 选择&#x200B;**编辑**。
-1. 在“基本属性”中，使用“后处理”下拉框，选择要与信函关联的后处理。 下拉列表中列出了AEM和与表单相关的后处理。
+1. 在“基本属性”中，使用“后处理”下拉框，选择要与信函关联的后处理。 与AEM和Forms相关的后处理都列在下拉列表中。
 1. 点按&#x200B;**保存**。
-1. 在使用“后期处理”配置信函后，发布信函，（可选）在发布实例上指定AEM DS设置服务中的处理URL。 这可确保在处理实例上运行后处理。
+1. 在使用Post Process配置信函后，发布该信函，（可选）在发布实例上，在AEM DS Settings服务中指定处理URL。 这可确保在处理实例上运行后处理。
 
 ## 重新加载草稿字母实例  {#reloaddraft}
 

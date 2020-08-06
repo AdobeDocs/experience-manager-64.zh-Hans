@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2906'
+ht-degree: 88%
 
 ---
 
@@ -54,6 +57,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 >
 >* 使用转出或 Live Copy 时，需要获得 MSM 许可。
 >* 使用同步到 Adobe Target 的功能时，需要获得 Adobe Target 许可。
+
 >
 
 
@@ -66,7 +70,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 例如，通过目标内容的多站点支持功能，您的&#x200B;**一个**&#x200B;品牌可以拥有两个（或更多）站点，这些站点具有以下某种内容：
 
-* 完全“不同”**&#x200B;的目标内容集 - 在一个站点中编辑目标内容不会影响其他站点。链接到不同区域的站点将读写到其自己配置的区域。 例如：
+* 完全“不同”**&#x200B;的目标内容集 - 在一个站点中编辑目标内容不会影响其他站点。链接到不同区域的站点会读取并写入其自己配置的区域。 例如：
 
    * 站点 A 链接到区域 X
    * 站点 B 链接到区域 Y
@@ -138,7 +142,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 >[!NOTE]
 >
->当页面是链接到某个区域的Live Copy，而该区域本身是链接到页面Blueprint的区域的Live Copy时，默认转出将触发目标内容的后续转出。
+>当页面是链接到区域的Live Copy，而该区域本身是链接到页面蓝图的区域的Live Copy时，默认转出会触发目标内容的后续转出。
 
 例如，下图中有四个站点，其中两个站点共享主区域（以及该区域中的所有活动）；还有一个站点的区域是其他区域的 Live Copy，因此会在转出后共享活动；最后一个站点完全独立（因此其活动需要一个单独的区域）。
 
@@ -217,7 +221,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 >[!NOTE]
 >
->Pages or sites that reference the same area are using the *same* shared set of activities, experiences, and offers. 编辑由多个站点共享的活动、体验或选件会影响所有站点。
+>Pages or sites that reference the same area are using the *same* shared set of activities, experiences, and offers. 编辑由多个站点共享的活动、体验或优惠会影响所有站点。
 
 要将站点链接到区域，请执行以下操作：
 
@@ -238,7 +242,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 暂停 Live Copy 会暂时中断继承，但之后可以恢复继承。而分离 Live Copy 则会永久中断继承。
 
-要暂停或分离目标内容的继承，需要先在活动中恢复继承。如果页面或站点链接到的区域是Live Copy，则可以查看活动的继承状态。
+要暂停或分离目标内容的继承，需要先在活动中恢复继承。如果页面或站点链接到的是Live Copy区域，则可以视图活动的继承状态。
 
 从其他站点继承的活动的名称旁边显示有绿色标记。暂停的继承标记为红色，本地创建的活动没有图标。
 
@@ -246,6 +250,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 >
 >* 您只能在活动中暂停或分离 Live Copy。
 >* 要扩展继承的活动，无需暂停或分离 Live Copy。您始终可以为该活动创建&#x200B;**新的**&#x200B;本地体验和选件。如果您想要修改现有活动，则需要暂停继承。
+
 >
 
 
@@ -260,6 +265,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
    1. 选择活动的某个元素，例如受众。AEM 随即会自动显示“暂停 Live Copy”确认对话框。（在整个定位过程中，您都可以通过点按或单击任何元素来暂停 Live Copy。）
    1. 从工具栏的下拉菜单中选择&#x200B;**暂停 Live Copy**。
+
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
 1. Tap or click **Suspend** to suspend the activity. 暂停继承的活动会标记为红色。
@@ -293,7 +299,7 @@ You manage this in an **Area**. 区域可将在不同站点中使用的目标内
 
 ## 删除区域 {#deleting-areas}
 
-删除区域时，也会删除该区域中的所有活动。在您删除区域之前，AEM 会向您发出警告。如果您确实删除了站点所链接的区域，则此品牌的映射将自动重新映射到主区域。
+删除区域时，也会删除该区域中的所有活动。在您删除区域之前，AEM 会向您发出警告。如果您确实删除了网站所链接的区域，则此品牌的映射将自动重新映射到主控区域。
 
 要删除区域，请执行以下操作：
 

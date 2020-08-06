@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 94%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe不计划进一步增强由AEM SMTP服务发送的打开／弹回电子邮件。\
->建议利用Adobe [Campaign及其AEM集成](/help/sites-administering/campaign.md)。
+>Adobe不打算进一步增强AEM SMTP服务发送的打开／弹回电子邮件。\
+>建议是利 [用Adobe Campaign和AEM集成](/help/sites-administering/campaign.md)。
 
 电子邮件营销（例如新闻稿）是所有市场营销的重要组成部分，因为您可以通过这种方式将内容推送到您的潜在客户。在 AEM 中，您可以根据现有 AEM 内容创建新闻稿，也可以添加特定于新闻稿的新内容。
 
@@ -193,6 +196,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 根据需要修改电子邮件的&#x200B;**主题**。
    1. 从下拉列表中选择一个&#x200B;**默认收件人列表**&#x200B;列表。
    1. 单击&#x200B;**确定**。
+
    当您测试或发送新闻稿时，收件人将收到具有指定电子邮件地址和主题的电子邮件。
 
 ## 试运行新闻稿 {#flight-testing-newsletters}

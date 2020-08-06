@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 81%
 
 ---
 
@@ -25,11 +28,12 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
    * 平行光
    * 聚光灯光
    * 点光
-   将舞台上传到 AEM 3D 时，其他灯光类型会被忽略或转换为以上支持的类型之一。查看资产和使用内置的 Rapid Refine 渲染器进行渲染时，会使用转换后的类型。使用Maya进行渲染时，会使用原始的光线类型。
+
+   将舞台上传到 AEM 3D 时，其他灯光类型会被忽略或转换为以上支持的类型之一。查看资产和使用内置的 Rapid Refine 渲染器进行渲染时，会使用转换后的类型。使用Maya进行渲染时，会使用原始灯光类型。
 
 1. 如果需要，创建一个地平面，并应用合适的材料。
 
-   Adobe 建议您将地平面设置为单面。这样做可确保您能够在AEM 3D中从下方查看资产，而地平面不会隐藏资产。
+   Adobe 建议您将地平面设置为单面。这样做可确保在AEM 3D中从下方视图资产，而无需地面隐藏资产。
 
 1. （可选）创建并配置相机。
 
@@ -39,7 +43,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 
    Configure the **[!UICONTROL Render Settings]** with the following suggestions:
 
-   * **[!UICONTROL “公用]** ”选项卡
+   * **[!UICONTROL “常用]** ”选项卡
 
       Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all [!UICONTROL Renderable Cameras].
 
@@ -47,7 +51,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 
       * **[!UICONTROL 整体质量]**`- 0.5` 或更低
       * **[!UICONTROL 间接扩散(GI)模式]** - `Final Gather`
-      * **[!UICONTROL 过滤器大小]** - `2.0`、 `2.0`
+      * **[!UICONTROL 筛选器大小]** - `2.0`、 `2.0`
    * 以您希望使用的典型图像大小渲染场景。If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want.
 
       请注意，通过 Mental Ray 使用基于图像的照明进行渲染时，速度会非常缓慢且会消耗大量 CPU。Adobe 建议您配置最低质量设置，该设置仍能生成所需的渲染质量。

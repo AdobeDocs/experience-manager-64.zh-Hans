@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 07da66ab-dd5e-4ca8-ac6d-76fc81875fd9
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3064'
+ht-degree: 94%
 
 ---
 
@@ -29,11 +32,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 >[!NOTE]
 >
->If your page and/or template has been appropriately set up, then you can use [responsive layout](/help/sites-authoring/responsive-layout.md) when editing.
+>如果您的页面和/或模板进行了适当设置，那么您可以在编辑时使用[响应式布局](/help/sites-authoring/responsive-layout.md)。
 
 >[!NOTE]
 >
->When in **Edit** mode, links in your content are visible, but **not accessible**. Use [Preview mode](#previewing-pages) if you want to navigate using the links in your content.
+>在&#x200B;**编辑**&#x200B;模式下，内容中的链接是可见的，但是&#x200B;**不可访问**。如果您要使用内容中的链接进行导航，请使用[预览模式](#previewing-pages)。
 
 ## 页面工具栏 {#page-toolbar}
 
@@ -93,7 +96,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ### 状态通知 {#status-notification}
 
-If a page is part of a [workflow](/help/sites-authoring/workflows.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
+如果页面是一个[工作流](/help/sites-authoring/workflows.md)或多个工作流的一部分，则在编辑该页面时，将在屏幕顶部的通知栏中显示此信息。
 
 ![screen_shot_2018-03-22at11739](assets/screen_shot_2018-03-22at111739.png)
 
@@ -103,13 +106,13 @@ If a page is part of a [workflow](/help/sites-authoring/workflows.md) or multipl
 
 通知会列出正在针对页面运行的工作流。如果用户参与了当前工作流步骤，还可以使用[影响工作流状态](/help/sites-authoring/workflows-participating.md)和获取更多工作流相关信息的选项，例如：
 
-* **完成** -打开完成工 **作项对话框**
+* **完成** -打开完 **成工作项**
 
-* **委派** -打开“完成工 **作项”对话框**
+* **委派** -打开“完 **成工作项** ”对话框
 
-* **查看详细信息** -打开工作流 **的** “详细信息”窗口
+* **查看详细信息** - 打开工作流的&#x200B;**详细信息**&#x200B;窗口
 
-Completing and delegating workflow steps via the notification bar works as it does when [participating in workflows](/help/sites-authoring/workflows-participating.md) from the Notification inbox.
+通过通知栏完成和委派工作流步骤，与从“通知”收件箱中[参与工作流](/help/sites-authoring/workflows-participating.md)的操作方式相同。
 
 如果页面从属于多个工作流，则在通知的右侧端将显示工作流的数量，并且还提供有箭头按钮以允许您滚动浏览工作流。
 
@@ -121,7 +124,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 * 在将新组件添加到页面时（从组件浏览器拖动）：
 
-   ![screen_shot_2018-03-22at11928](assets/screen_shot_2018-03-22at111928.png)
+   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
 * 移动现有组件时：
 
@@ -151,9 +154,11 @@ Completing and delegating workflow steps via the notification bar works as it do
 1. 可通过以下两种方式在段落系统中选择和添加新组件：
 
    * 从现有组件的工具栏或&#x200B;**将组件拖动到此处**&#x200B;框中选择&#x200B;**插入组件**&#x200B;选项 (+)。
+
    ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
 
-   * If you are on a desktop device you can double-click on the **Drag components here** box.
+   * 如果您使用的是桌面设备，则可以双击&#x200B;**将组件拖动到此处**&#x200B;框。
+
    **插入新组件**&#x200B;对话框将打开以允许您选择需要的组件：
 
    ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
@@ -227,13 +232,13 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 * **编辑**
 
-   [根据组件类型](/help/sites-authoring/default-components.md) ，此操作将允许您 [编辑组件的内容](#edit-content)。 通常会提供一个工具栏。
+   [根据组件类型](/help/sites-authoring/default-components.md)，此操作将允许您[编辑组件的内容](#edit-content)。通常会提供一个工具栏。
 
    ![](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **配置**
 
-   [根据组件类型](/help/sites-authoring/default-components.md) ，此操作将允许您编辑和配置组件的属性。 通常会打开一个对话框。
+   [根据组件类型](/help/sites-authoring/default-components.md)，此操作将允许您编辑和配置组件的属性。通常会打开一个对话框。
 
    ![](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -268,6 +273,7 @@ Completing and delegating workflow steps via the notification bar works as it do
    * 您可以粘贴到同一页面或其他页面。
    * 粘贴的项目将被粘贴到选择粘贴操作时所在的项目上方。
    * 仅当剪贴板中含有内容时，才会显示“粘贴”操作。
+
    ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
    >[!NOTE]
@@ -379,13 +385,13 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 ## 编辑组件布局 {#edit-component-layout}
 
-您可以为组件选择 [Layout](/help/sites-authoring/responsive-layout.md)**** （布局）动作，以更改该组件的布局，并且不必退出编辑模式，从而节省时间，而不必反复从编辑模式切换到布局模式来调整组件。
+您无需为了调整组件而反复不停地从编辑模式切换到[布局模式](/help/sites-authoring/responsive-layout.md)，而是可以为组件选择&#x200B;**布局**&#x200B;操作来更改该组件的布局，在此过程中，由于不必离开编辑模式，从而节省了大量时间。
 
-1. When in **Edit** mode of the sites console, selecting a component reveals the component&#39;s toolbar.
+1. 在站点控制台的&#x200B;**编辑**&#x200B;模式下，选择某个组件会显示该组件的工具栏。
 
    ![screen_shot_2018-03-22at133756](assets/screen_shot_2018-03-22at133756.png)
 
-   Click or tap the **Layout** action to adjust the layout of the component.
+   单击或点按&#x200B;**布局**&#x200B;操作可调整组件的布局。
 
    ![](do-not-localize/chlimage_1-21.png)
 
@@ -394,17 +400,18 @@ Completing and delegating workflow steps via the notification bar works as it do
    * 将显示用于调整组件大小的手柄。
    * 在屏幕的顶部将显示模拟器工具栏。
    * 在组件工具栏中将显示布局操作而不是标准编辑操作。
+
    ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
 
-   You can now modify the layout of the component as you would in [layout mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+   此时，您便可以像在[布局模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)中一样修改组件布局。
 
-1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. 组件的工具栏会返回到其正常的编辑状态。
+1. 在进行必要的布局更改后，单击组件操作菜单中的&#x200B;**关闭**&#x200B;按钮以停止修改组件的布局。组件的工具栏会返回到其正常的编辑状态。
 
    ![](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
->“布局”操作仅限用于选定的组件。例如，如果编辑一个组件的布局，然后单击另一个组件，则新选择的组件将显示标准编辑工具栏（而非布局工具栏），并且大小调整手柄和模拟器工具栏将消失。
+>“布局”操作仅限用于选定的组件。例如，如果您正在编辑一个组件的布局，然后单击另一个组件，则新选择的组件将显示标准编辑工具栏（而非布局工具栏），大小调整手柄以及模拟器工具栏将消失。
 >
 >如果您需要编辑影响到多个组件的总体页面布局，请切换到[布局模式](/help/sites-authoring/responsive-layout.md)。
 
@@ -478,6 +485,7 @@ If the page is based on a [static template](/help/sites-authoring/templates.md#e
 >* 链接会在内容中显示，但在“编辑”模式下无法访问。
 >* 如果您希望使用链接进行导航，请使用任一预览选项。
 >* 使用[键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` 可在预览和最后选择的模式之间切换。
+
 >
 
 
@@ -512,6 +520,7 @@ AEM 允许您锁定页面，这样其他人就无法修改页面内容。当您�
 
    1. 在[选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中选择页面。
    1. 选择锁定图标。
+
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **页面编辑器**
@@ -531,9 +540,9 @@ AEM 允许您锁定页面，这样其他人就无法修改页面内容。当您�
 
 ## 解锁页面 {#unlocking-a-page}
 
-Unlocking a page is very similar to [locking the page](#locking-a-page). Once the page is locked the lock options are replaced by unlock actions.
+解锁页面的方法与[锁定页面](#locking-a-page)非常相似。在锁定页面后，锁定选项就会被替换为解锁操作选项。
 
-“页面信息”菜单将 **“解锁** ”列为一个选项，站点控制台中的“锁定”图标将替换为“解锁 **** ”图标。
+“页面信息”菜单会将&#x200B;**解锁**&#x200B;列为一个选项，并且站点控制台中的“锁定”图标会被替换为&#x200B;**解锁**&#x200B;图标。
 
 ![screen_shot_2018-03-22at134942](assets/screen_shot_2018-03-22at134942.png)
 
@@ -578,6 +587,7 @@ AEM 会按照您执行操作的顺序来存储这些操作的历史记录，这�
 >* 只要您在执行撤消操作之后没有进行任何页面编辑，就可以执行重做操作。
 >* 最多可撤消 20 次编辑操作（默认设置）。
 >* 也可以使用[键盘快捷键](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)执行撤消和重做操作。
+
 >
 
 

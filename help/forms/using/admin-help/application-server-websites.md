@@ -1,8 +1,8 @@
 ---
 title: 应用程序服务器网站
 seo-title: 应用程序服务器网站
-description: 本文档包含指向所有受支持应用程序服务器的制造商网站的链接。
-seo-description: 本文档包含指向所有受支持应用程序服务器的制造商网站的链接。
+description: 此文档包含指向所有受支持的应用程序服务器的制造商网站的链接。
+seo-description: 此文档包含指向所有受支持的应用程序服务器的制造商网站的链接。
 uuid: a5db777e-646a-4f12-9705-6ca50d9339d4
 contentOwner: admin
 content-type: reference
@@ -11,16 +11,19 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 59b03638-7e1c-4cbd-bd37-671a16afa10f
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 0%
 
 ---
 
 
 # 应用程序服务器网站 {#application-server-websites}
 
-此列表包含指向所有受支持应用程序服务器的制造商网站的链接。
+此列表包含指向所有受支持的应用程序服务器的制造商网站的链接。
 
-**** JBoss:https://www.jboss.com/products/platforms/application
+**JBoss:** https://www.jboss.com/products/platforms/application
 
-**** Oracle webLogic:www.oracle.com/us/products/middleware/application-server/index.html
+**Oracle WebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
 
-**** IBM webSphere:www-01.ibm.com/software/websphere/
+**IBM WebSphere:** www-01.ibm.com/software/websphere/

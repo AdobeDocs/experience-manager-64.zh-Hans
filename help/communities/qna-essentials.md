@@ -1,6 +1,6 @@
 ---
-title: 问题与解答基本功能
-seo-title: 问题与解答基本功能
+title: 问题与答案基本工具
+seo-title: 问题与答案基本工具
 description: 问题与答案论坛功能
 seo-description: 问题与答案论坛功能
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 1%
 
 ---
 
 
-# 问题与解答基本功能 {#qna-essentials}
+# 问题与答案基本工具 {#qna-essentials}
 
 本页提供了有关使用问题与答案(QnA)论坛功能的基本信息。
 
@@ -45,7 +48,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
   </tr>
   <tr>
    <td> 属性</td> 
-   <td>请参阅 <a href="working-with-qna.md">问题与解答论坛功能</a></td> 
+   <td>查看问 <a href="working-with-qna.md">题与答案论坛功能</a></td> 
   </tr>
  </tbody>
 </table>
@@ -56,26 +59,26 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 * [问题与解答API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [问题与解答端点](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [问题与答案端点](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [服务器端自定义](server-customize.md)
 
 ### 问题与解答功能 {#qna-function}
 
-包含 [QnA功能的社区站点结构将具有已配置的](functions.md#qna-function)`QnA` 组件，以及影响协调和标记的设置。 QnA函数支持标识特 [权成员用户组](users.md#privileged-members-group)。
+包含QnA功能的社区 [站点结构](functions.md#qna-function) ，将具有已 `QnA` 配置的组件，以及影响协调和标记的设置。 QnA函数支持标识特 [权成员用户组](users.md#privileged-members-group)。
 
 ### 访问问题与解答论坛帖子(UGC) {#accessing-qna-forum-posts-ugc}
 
-UGC应使用一种标准的仲裁方法进行仲裁。\
-请参阅 [审核用户生成的内容](moderate-ugc.md)。
+UGC应使用一种标准的协调方法进行仲裁。\
+请参 [阅调节用户生成的内容](moderate-ugc.md)。
 
-自AEM 6.1 Communities起，对 [UGC使用公用商店](working-with-srp.md) ，包括对UGC的程序化访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）如何。
+自AEM 6.1社区起，使用UGC的公 [用商店](working-with-srp.md) ，包括以程序方式访问UGC，而不管选择的存储选项（如ASRP、MSRP或JSRP）。
 
 **UGC在存储库中的位置和格式可能会发生更改，但不会发出警告**。
 
 请参阅：
 
-* [存储资源提供者概述](srp.md) -介绍和存储库使用概述
+* [存储资源提供程序概述](srp.md) -简介和存储库使用概述
 * [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例
 * [使用SRP访问UGC](accessing-ugc-with-srp.md) —— 编码指南
 * [SocialUtils重构](socialutils.md) -将已弃用的实用程序方法映射到当前SRP实用程序方法

@@ -1,8 +1,8 @@
 ---
 title: 工具控制台
 seo-title: 工具控制台
-description: 了解整个AEM中的不同工具控制台。
-seo-description: 了解整个AEM中的不同工具控制台。
+description: 了解整个 AEM 中的不同工具控制台。
+seo-description: 了解整个 AEM 中的不同工具控制台。
 uuid: d01382f8-0c8f-4d76-9271-bed9e34b3b4b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2bf8496d-a485-4b39-a6c9-07222b66d0cd
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 36%
 
 ---
 
 
 # 工具控制台{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. 工具控制台目前有两种类 **型** ，具体取决于您所使用的UI:
+**工具**&#x200B;控制台让您可以访问一些专用工具，这些工具有助于您管理网站、数字资产及内容存储库的其他方面。工具控制台目前有两种 **形式** ，具体取决于您所使用的UI:
 
 * [工具——经典UI](#tools-classic-ui)
 * [工具——触屏优化UI](#tools-touch-optimized-ui)
@@ -39,12 +42,12 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td>Client Context配置<br /> </td> 
    <td> </td> 
-   <td>Client <a href="/help/sites-developing/client-context.md">Context</a> 表示动态组合的用户数据集合。 此处保留默认和营销云配置。<br /> </td> 
+   <td>Client Context <a href="/help/sites-developing/client-context.md">表示动态组合</a> 的用户数据集合。 此处保留默认和营销云配置。<br /> </td> 
   </tr> 
   <tr> 
-   <td>云服务配置<br /> </td> 
+   <td>Cloud Services配置<br /> </td> 
    <td> </td> 
-   <td>保存与Adobe Marketing cloud <a href="/help/sites-administering/marketing-cloud.md">集成相关的配置</a>。</td> 
+   <td>保存与集成 <a href="/help/sites-administering/marketing-cloud.md">Adobe Marketing Cloud相关的配置</a>。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">商务</a></td> 
@@ -52,64 +55,64 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>提供对导入器和各种产品数据的访问。</td> 
   </tr> 
   <tr> 
-   <td>DAM —— 数字权限管理<br /> </td> 
+   <td>DAM -Digital Rights Management<br /> </td> 
    <td> </td> 
-   <td>提供对数字版权信息和许可证的访问。</td> 
+   <td>提供对数字权限信息和许可证的访问。</td> 
   </tr> 
   <tr> 
    <td>DAM - Health Checker<br /> </td> 
    <td> </td> 
-   <td>比较 <code>/var/dam</code> 和检 <code>/content/dam</code> 查是否有任何不一致<br /> 。 然后，可以同步或删除列出的任何文件／文件夹。 可在Web控制台中配置用于文件夹比较的节点类型。</td> 
+   <td>比较 <code>/var/dam</code> 和 <code>/content/dam</code> 检查是否有任何不一致<br /> 。 随后可以同步或删除列出的所有文件／文件夹。 文件夹比较的节点类型可在Web控制台中进行配置。</td> 
   </tr> 
   <tr> 
-   <td>DAM - Adobe Indesign<br /> </td> 
+   <td>DAM -AdobeIndesign<br /> </td> 
    <td> </td> 
-   <td>用于与Adobe Indesign结合使用的脚本。</td> 
+   <td>用于与AdobeIndesign结合使用的脚本。</td> 
   </tr> 
   <tr> 
-   <td>DAM —— 视频配置文件<br /> </td> 
+   <td>DAM —— 视频用户档案<br /> </td> 
    <td> </td> 
-   <td>用于ffmpeg转码的可配置配置文件。</td> 
+   <td>用于ffmpeg转码的可配置用户档案。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">功能板</a></td> 
    <td> </td> 
-   <td>允许您创建报告仪表板；这为定义显示统一数据的页面提供了一种可自定义的方式。</td> 
+   <td>允许您创建报告仪表板; 这为定义显示统一数据的页面提供了一种可自定义的方式。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">设计</a></td> 
    <td> </td> 
-   <td>保存定义的设计列表，包括要使用的图形和css文件。</td> 
+   <td>保留定义的设计列表，包括要使用的图形和css文件。</td> 
   </tr> 
   <tr> 
    <td>自定义文档</td> 
    <td> </td> 
-   <td>在扩展文档和联机帮助时使用。</td> 
+   <td>用于扩展文档和联机帮助。</td> 
   </tr> 
   <tr> 
    <td>表单提交</td> 
    <td> </td> 
-   <td>保存收到的表单提交的列表。</td> 
+   <td>保留收到的表单提交的列表。</td> 
   </tr> 
   <tr> 
-   <td>导入器——批 <a href="/help/sites-administering/bulk-editor.md">量编辑器</a></td> 
+   <td>导入器- <a href="/help/sites-administering/bulk-editor.md">批量编辑器</a></td> 
    <td> </td> 
    <td>允许您搜索项目并批量编辑它们。 您还可以将内容（批量）导出并导入到存储库中。</td> 
   </tr>
   <tr> 
    <td>导入程序- Feed Importer</td> 
    <td> </td> 
-   <td><p>Feed Importer是一个框架，可将外部源中的内容重复导入存储库。 供给导入程序的构思是以指定的时间间隔轮询远程资源，分析该资源，并在内容存储库中创建表示远程资源内容的节点。</p> </td> 
+   <td><p>Feed Importer是一个框架，可将外部源中的内容重复导入到您的存储库中。 Feed Importer的想法是以指定的时间间隔轮询远程资源，分析它，并在内容存储库中创建表示远程资源内容的节点。</p> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/external-link-checker.md">外部链接检查程序</a></td> 
    <td> </td> 
-   <td>扫描AEM实例中的所有内容页面并检查任何外部链接。 此时将显示有效和无效链接列表。</td> 
+   <td>扫描AEM实例中的所有内容页面并检查任何外部链接。 将显示有效和无效链接列表。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/mobile.md">移动设备</a></td> 
    <td> </td> 
-   <td>帮助您创建为移动设备设计的网站。</td> 
+   <td>帮助您创建专为移动设备设计的网站。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/msm.md">MSM</a></td> 
@@ -124,7 +127,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/sites-administering/package-manager.md">包</a></td> 
    <td> </td> 
-   <td>指向包管理器的替代链接，其中显示已为AEM WCM加载的包。 与CRX的包管理器中显示的信息类似。</td> 
+   <td>指向“包管理器”的替代链接，其中显示已为AEM WCM加载的包。 与CRX的包管理器中显示的信息相似。</td> 
   </tr> 
   <tr> 
    <td>复制——复 <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">制代理</a></td> 
@@ -132,7 +135,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>用于在发布页面时将数据从作者复制到发布，或通过反向复制将用户注释从发布环境返回到作者。</td> 
   </tr> 
   <tr> 
-   <td>导入器——激 <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">活树</a></td> 
+   <td>导入器- <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">激活树</a></td> 
    <td> </td> 
    <td>在“网站”选项卡中，可以激活单个页面。如果已经输入或更新大量内容页面（所有内容页面都驻留在同一根页面下），则可以更轻松地通过一个操作来激活整个树。也可以通过“练习”来模拟激活和突出显示要激活的页面。</td> 
   </tr> 
@@ -147,9 +150,9 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>使用基架，您可以创建一个表单（即基架），其中包含的字段反映您要用于页面的结构，然后使用此表单轻松创建基于此结构的页面。</td> 
   </tr> 
   <tr> 
-   <td>安全性- <a href="/help/sites-administering/notification.md">自助服务配置 </a> </td> 
+   <td>安全- <a href="/help/sites-administering/notification.md">自助服务配置 </a> </td> 
    <td> </td> 
-   <td>允许您配置用户在创建帐户或重置口令时自动收到的电子邮件，以及确认已重置的口令。</td> 
+   <td>允许您配置用户在创建帐户或重置口令时自动收到的电子邮件以及确认已重置的口令。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">分段</a></td> 
@@ -159,7 +162,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>默认SRP配置。 请参 <a href="/help/communities/srp-config.md">阅存储配置</a> 控制台。</td> 
+   <td>默认SRP配置。 请参阅 <a href="/help/communities/srp-config.md">存储配置</a> 控制台。</td> 
   </tr> 
   <tr> 
    <td>任务管理</td> 
@@ -172,24 +175,24 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>没有与此条目相关的活动功能。</td> 
   </tr> 
   <tr> 
-   <td>版本控制——清 <a href="/help/sites-deploying/version-purging.md">除版本</a></td> 
+   <td>版本控制- <a href="/help/sites-deploying/version-purging.md">清除版本</a></td> 
    <td> </td> 
    <td>允许您根据需要清除页面版本。</td> 
   </tr> 
   <tr> 
    <td>虚拟存储库</td> 
    <td> </td> 
-   <td>您可以使用工作区装载功能设置虚拟存储库，为支持JCR的内容应用程序提供对基于CRX和JCR连接器的JCR内容基础结构的简化访问。</td> 
+   <td>您可以使用工作区装载功能设置虚拟存储库，以提供支持JCR的内容应用程序，以简化对基于CRX和JCR连接器的JCR内容基础架构的访问。</td> 
   </tr> 
   <tr> 
-   <td>观察词</td> 
+   <td>口语</td> 
    <td> </td> 
-   <td>已弃用. 请参阅 <a href="/help/communities/moderate-ugc.md#watchwords">协调社区内容</a></td> 
+   <td>已弃用. 请参 <a href="/help/communities/moderate-ugc.md#watchwords">阅协调社区内容</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">工作流</a></td> 
    <td> </td> 
-   <td>工作流控制页面或数字资产上支持任何编辑流程的一系列操作。</td> 
+   <td>工作流可以控制页面或数字资产上支持任何编辑流程的一系列操作。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -200,7 +203,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
  <tbody> 
   <tr> 
    <th>区域</th> 
-   <th>Option</th> 
+   <th>选项</th> 
    <th>用途</th> 
   </tr> 
   <tr> 
@@ -226,10 +229,10 @@ The **Tools** consoles provide access to a number of specialized tools that help
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-authoring/task-content.md">收件箱</a></td> 
-   <td>管理您的收件箱项目。</td> 
+   <td>管理收件箱项目。</td> 
   </tr> 
   <tr> 
-   <td>操作</td> 
+   <td>运营</td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -343,5 +346,5 @@ The **Tools** consoles provide access to a number of specialized tools that help
 
 >[!NOTE]
 >
->上述部分选项实际链接到经典UI。
+>以上某些选项实际链接到经典UI。
 

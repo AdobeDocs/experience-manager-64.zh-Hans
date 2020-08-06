@@ -31,6 +31,7 @@ ht-degree: 0%
    * empid
    * 原因
    * 持续时间
+
    >[!NOTE]
    >
    >此呈现器是摘要页面模板。
@@ -60,7 +61,7 @@ ht-degree: 0%
 
 1. 修改业务流程以从提交的表单数据中提取四个属性。 之后，在CRX中创建Employees/PtoApplication类 **型的节点**，并填充属性。
 
-   1. 在业务流程 **中分配任务** 操作之前，创建流程创建PTO **汇总，并将其用作子流** 程。
+   1. 在业务流程 **中分配任务** 操作之前，创建流程创建 **PTO汇总，并将其用作子流** 程。
    1. 在新 **流程中**，将 **EmployeeName**、EmployeeID、PtoReason **、DaysName、********** AdobeName和EmployeeName定义为输入变量。 这些变量将作为提交的表单数据传递。
 
       还定义一个输出变量**ptoNodePath **，它将在设置摘要Url时使用。
@@ -85,7 +86,7 @@ ht-degree: 0%
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-在AEM Forms工作区中，打开任务时，摘要Url将访问CRX节点，HTML呈现器将显示摘要。
+在AEM Forms工作区中，打开任务时，摘要Url会访问CRX节点，HTML呈现器会显示摘要。
 
 可以更改摘要布局，而无需修改流程。 HTML渲染器会相应地显示摘要。
 

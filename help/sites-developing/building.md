@@ -1,8 +1,8 @@
 ---
-title: 在AEM应用程序中构建标记
-seo-title: 在AEM应用程序中构建标记
-description: 在自定义AEM应用程序中以编程方式使用标记或扩展标记
-seo-description: 在自定义AEM应用程序中以编程方式使用标记或扩展标记
+title: 将标记构建到AEM应用程序
+seo-title: 将标记构建到AEM应用程序
+description: 以编程方式在自定义AEM应用程序中使用标记或扩展标记
+seo-description: 以编程方式在自定义AEM应用程序中使用标记或扩展标记
 uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 在AEM应用程序中构建标记{#building-tagging-into-an-aem-application}
+# 将标记构建到AEM应用程序{#building-tagging-into-an-aem-application}
 
 为了在自定义AEM应用程序中以编程方式使用标记或扩展标记，本页介绍了
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ## Tagging API概述 {#overview-of-the-tagging-api}
 
-在AEM中实 [施标记框](/help/sites-developing/framework.md) 架允许使用JCR API管理标记和标记内容。 TagManager可确保在字符串数组属性中作为值输 `cq:tags` 入的标记不会重复，它会删除指向非现有标记的TagID，并为移动或合并的标记更新TagID。 TagManager使用JCR观察监听器来还原任何不正确的更改。 主类位于com.day.cq.ta [日志包](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
+AEM中的标 [记框架](/help/sites-developing/framework.md) ，允许使用JCR API管理标记和标记内容。 TagManager可确保在字符串数组属性中作为值输 `cq:tags` 入的标记不会重复，它会删除指向非现有标记的TagID，并为移动或合并的标记更新TagID。 TagManager使用JCR观察监听器来还原任何不正确的更改。 主类位于com.day.cq.ta [日志包](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
 
 * JcrTagManagerFactory —— 返回基于JCR的实施 `TagManager`。 它是Tagging API的参考实现。
 * `TagManager` -允许按路径和名称解析和创建标记。

@@ -1,8 +1,8 @@
 ---
 title: 流程报告入门
 seo-title: 流程报告入门
-description: 开始使用JEE流程报告中的AEM Forms时需要遵循的步骤
-seo-description: 开始使用JEE流程报告中的AEM Forms时需要遵循的步骤
+description: 开始使用AEM Forms的JEE流程报告时需要遵循的步骤
+seo-description: 开始使用AEM Forms的JEE流程报告时需要遵循的步骤
 uuid: 86ba17da-57e5-4e7a-a864-583d8c0f830e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 流程报告入门 {#getting-started-with-process-reporting}
 
-流程报告使AEM Forms用户能够查询有关AEM Forms进程的信息，这些信息当前在AEM Forms实施中定义。 但是，流程报告不直接从AEM Forms存储库访问数据。 数据首先按计划发布到“流程报告”存储库(*由ProcessDataPublisher和ProcessDataStorage服*&#x200B;务发布)。 然后，将从发布到存储库的流程查询数据中生成“正在处理报告”中的报告和报告。 流程报告作为表单工作流模块的一部分进行安装。
+进程报告使AEM Forms用户能够查询有关AEM Forms执行中目前定义的AEM Forms进程的信息。 但是，“流程报告”不直接从AEM Forms存储库访问数据。 数据首先按计划发布到“流程报告”存储库(*由ProcessDataPublisher和ProcessDataStorage服*&#x200B;务发布)。 然后，将从发布到存储库的流程查询数据中生成“正在处理报告”中的报告和报告。 进程报告作为Forms Workflow模块的一部分安装。
 
 本文详细介绍了启用将AEM Forms数据发布到流程报告库的步骤。 之后，您将能够使用“流程报告”运行报告和查询。 本文还介绍了配置流程报告服务的可用选项。
 
@@ -27,23 +27,23 @@ ht-degree: 0%
 
 ### 清除非必要流程 {#purge-non-essential-processes}
 
-如果您当前使用的是表单工作流，则AEM表单数据库可能包含大量数据
+如果您当前使用Forms Workflow,AEM Forms数据库可能包含大量数据
 
-流程报告发布服务将发布数据库中当前可用的所有AEM Forms数据。 这意味着，如果数据库包含您不想运行报告和查询的旧数据，则所有这些数据也将发布到存储库，即使报告不需要它。 建议您在运行服务之前清除此数据，以将数据发布到“流程报告”存储库。 这将改善发布服务和查询报告数据的服务的性能。
+进程报告发布服务将发布数据库中当前可用的所有AEM Forms数据。 这意味着，如果数据库包含您不想运行报告和查询的旧数据，则所有这些数据也将发布到存储库，即使报告不需要它。 建议您在运行服务之前清除此数据，以将数据发布到“流程报告”存储库。 这将改善发布服务和查询报告数据的服务的性能。
 
 有关清除AEM Forms流程数据的详细信息，请参 [阅清除流程数据](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html)。
 
 >[!NOTE]
 >
->有关清除实用程序的提示和技巧，请参阅Adobe开发人员连接文章， [其中介绍清除流程和作业](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf)。
+>有关清除实用程序的提示和技巧，请参阅Adobe Developer Connection文章“清 [除流程和作业”](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf)。
 
 ## 配置流程报告服务 {#configuring-process-reporting-services}
 
 ### 计划流程数据发布 {#schedule-process-data-publishing}
 
-流程报告服务按计划将数据从AEM Forms报告库发布到流程库。
+进程报告服务按计划将数据从AEM Forms数据库发布到进程报告库。
 
-此操作可能会占用大量资源，并会影响AEM Forms服务器的性能。 建议您在AEM Forms服务器忙时段之外计划此设置。
+此操作会占用大量资源，并会影响AEM Forms服务器的性能。 建议您在AEM Forms服务器忙时段之外计划此设置。
 
 默认情况下，计划发布数据的时间为每天凌晨2点。
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. 单击 **应用**，单击确定，然后单 **击直接保存到主配置**。
+1. 单击 **应用**，单击确定，然后单 **击直接保存到主控配置**。
 
 1. 重新启动AEM Forms服务器实例。
 
@@ -172,7 +172,7 @@ ProcessDataStorageProvider服务从ProcessDataPublisher服务接收进程数据�
 
 ### ProcessDataPublisher服务 {#processdatapublisher-service}
 
-ProcessDataPublisher服务从AEM Forms数据库导入流程数据，并将数据发布到ProcessDataStorageProvider服务以供存储。
+ProcessDataPublisher服务从AEM Forms数据库导入进程数据，并将数据发布到ProcessDataStorageProvider服务以供存储。
 
 #### 配置ProcessDataPublisher服务   {#to-configure-processdatapublisher-service-nbsp}
 
@@ -196,7 +196,7 @@ ProcessDataPublisher服务从AEM Forms数据库导入流程数据，并将数据
 
 **批处理间隔（秒）**
 
-每次运行ProcessDataPublisher服务时，服务首先按批处理时间间隔拆分自上次运行服务以来的时间。 然后，该服务将分别处理AEM Forms数据的每个间隔。
+每次运行ProcessDataPublisher服务时，服务首先按批处理时间间隔拆分自上次运行服务以来的时间。 然后，该服务单独处理AEM Forms数据的每个间隔。
 
 这有助于控制发布者进程在周期内的每次运行（批处理）期间端到端的数据大小。
 
@@ -218,7 +218,7 @@ ProcessDataPublisher服务从AEM Forms数据库导入流程数据，并将数据
 
 **发布数据自**
 
-AEM Forms环境包含环境设置时的数据。
+AEM Forms环境包含环境建立时的数据。
 
 默认情况下，ProcessDataPublisher服务从AEM Forms数据库导入所有数据。
 
@@ -232,7 +232,7 @@ AEM Forms环境包含环境设置时的数据。
 
 流程报告的用户界面基于浏览器。
 
-设置流程报告后，您可以在AEM Forms安装中的以下位置开始处理流程报告:
+在设置“流程报告”后，您可以在AEM Forms安装中的以下位置开始处理“流程报告”:
 
 `https://<server>:<port>/lc/pr`
 
@@ -244,7 +244,7 @@ AEM Forms环境包含环境设置时的数据。
 
 >[!NOTE]
 >
->要登录到“进程报告”用户界面，您需要以下AEM Forms权限：
+>要登录“进程报告”用户界面，您需要以下“AEM Forms”权限：
 >
 >`PERM_PROCESS_REPORTING_USER`
 
@@ -278,7 +278,7 @@ AEM Forms环境包含环境设置时的数据。
 
 随时单击标题以返回主屏幕。
 
-**上次更新时间：** 流程数据将按计划从AEM Forms报告库发布到流程数据存储库。
+**上次更新时间：** 进程数据按计划从AEM Forms报告库发布到进程数据库。
 
 上次更新时间显示将数据更新推送到流程报告存储库的最后日期和时间。
 

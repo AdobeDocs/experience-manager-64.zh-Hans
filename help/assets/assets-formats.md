@@ -1,6 +1,6 @@
 ---
 title: AEM Assets支持的文件格式
-description: 列表支持的文件格式和MIME类型以及每种格式支持的功能。
+description: 列表AEM Assets支持的文件格式和MIME类型以及每种格式支持的功能。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
@@ -13,7 +13,7 @@ ht-degree: 22%
 
 # AEM Assets支持的文件格式 {#assets-supported-formats}
 
-AEM Assets支持各种文件格式，每种功能都对不同的MIME类型提供不同的支持。
+AEM Assets支持各种文件格式，每种功能都支持不同的MIME类型。
 
 要将AEM Assets与其他符合标准的数字资产管理(DAM)解决方案和桌面软件相集成，请使用Adobe的可扩展元数据平台(XMP)。
 
@@ -47,7 +47,7 @@ AEM Assets支持各种文件格式，每种功能都对不同的MIME类型提供
 
 **‡** 合并的图像是从PSD文件中提取的。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。
 
-支持Dynamic Media功能的栅格图像格式如下：
+Dynamic Media功能支持的栅格图像格式如下：
 
 | 格式 | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -73,15 +73,15 @@ AEM Assets支持各种文件格式，每种功能都对不同的MIME类型提供
 
 * 元数据写回在添加到处理函数时适用于PSB文件 `NComm` 格式。
 
-* 要使用Dynamic Media预览EPS文件并生成动态演绎版，请 [参阅Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media预览EPS文件并生成动态演绎版，请参 [阅Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 对于EPS文件，PostScript文档结构约定(PS-Adobe)版本3.0或更高版本支持元数据写回。
+* 对于EPS文件，PostScript文档结构约定(PS-Adobe)3.0版或更高版本支持元数据写回。
 
 ## Dynamic Media中不支持的栅格图像格式 {#unsupported-image-formats-dynamic-media}
 
-以下列表描述了Dynamic Media不支持的栅格图像文件格式 *的子* 类型。
+以下列表描述了Dynamic Media不支持的栅格图像文件 *格式* 的子类型。
 
-另请参阅 [检测不支持的Dynamic Media文件格式](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)。
+另请参 [阅检测不支持的Dynamic Media文件格式](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)。
 
 * IDAT区块大小大于100 MB的PNG文件。
 * PSB文件。
@@ -92,7 +92,7 @@ AEM Assets支持各种文件格式，每种功能都对不同的MIME类型提供
 
 ## PDF光栅器库 {#supported-pdf-rasterizer-library}
 
-Adobe PDF Rasterizer库为大型和内容密集型Adobe Illustrator和PDF文件生成高质量的缩览图和预览。 Adobe建议对以下对象使用PDF光栅器库：
+Adobe PDF光栅化器库为大型和内容密集型Adobe Illustrator和PDF文件生成高质量缩览图和预览。 Adobe建议对以下对象使用PDF光栅器库：
 
 * 需要大量处理的资源的内容密集型AI/PDF文件。
 * AI/PDF文件，默认情况下不生成缩略图。
@@ -110,7 +110,7 @@ Adobe成像转码库是一款图像处理解决方案，可执行核心图像处
 
 ## Camera Raw {#supported-camera-raw}
 
-Adobe Camera Raw库使AEM Assets能摄取原始图像。 See [Camera Raw Support](camera-raw.md).
+Adobe Camera Raw图书馆使AEM Assets能摄取原始图像。 See [Camera Raw Support](camera-raw.md).
 
 ## 文档格式 {#supported-document-formats}
 
@@ -137,7 +137,7 @@ Adobe Camera Raw库使AEM Assets能摄取原始图像。 See [Camera Raw Support
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-文档功能支持的Dynamic Media格式如下：
+Dynamic Media功能支持的文档格式如下：
 
 | 格式 | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -162,9 +162,9 @@ Adobe Camera Raw库使AEM Assets能摄取原始图像。 See [Camera Raw Support
 
 除了上述功能之外，还要考虑以下事项：
 
-* 要使用Dynamic Media为PDF文件生成动态再 [现，请参阅Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media为PDF文件生成动态演绎版，请参 [阅Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 要使用Dynamic Media预览AI文件并生成动态演绎版，请 [参阅Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media预览AI文件并生成动态演绎版，请参 [阅Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * 要使用Dynamic Media为INDD文件生成动态演绎版，请参 [阅InDesign(INDD)文件格式](../assets/managing-image-presets.md#indesign-indd-file-format)。
 
@@ -224,7 +224,7 @@ Adobe Camera Raw库使AEM Assets能摄取原始图像。 See [Camera Raw Support
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**†** 合并图像是从PSD文件中提取的。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。 使用算法创建的ZIP `Deflate64` 存档在AEM中的支持有限。 不支持存档和取消存档操作。 但是，支持上传、浏览和下载等操作。
+**†** 合并图像是从PSD文件中提取的。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像可能是实际图像，也可能不是实际图像。 使用算法创建的ZIP存 `Deflate64` 档在AEM中的支持有限。 不支持存档和取消存档操作。 但是，支持上传、浏览和下载等操作。
 
 ## Other supported formats {#other-supported-formats}
 
@@ -243,9 +243,9 @@ Adobe Camera Raw库使AEM Assets能摄取原始图像。 See [Camera Raw Support
 
 ## Supported MIME types {#supported-mime-types}
 
-默认情况下，AEM会使用文件扩展名检测文件类型。 AEM可以从文件内容中检测到它。 对于后者，在 [!UICONTROL AEM Web Console] 的Day CQ DAM [!UICONTROL MIME类型服务中选择“从内容检测MIME] ”选项。
+默认情况下，AEM使用文件扩展名检测文件类型。 AEM可以从文件内容中检测到它。 对于后者，在AEM [!UICONTROL Web控制台中] ，选 [!UICONTROL 择Day CQ DAM Mime类型服务中的] “从内容检测MIME”选项。
 
-在CRXDE Lite中，有一列表支持的MIME类型 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`。
+支持的MIME类型列表在CRXDE Lite中可用 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`。
 
 | 文件扩展名 | MIME类型/ Internet媒体类型 | 默认jobParam值 | 允许的jobParam值 |
 |---|---|---|---|

@@ -1,8 +1,8 @@
 ---
 title: 使用 Autodesk Maya 和 Mental Ray 设置标准舞台
 seo-title: 使用 Autodesk Maya 和 Mental Ray 设置标准舞台
-description: 如何使用Autodesk Maya和Mental ray设置标准舞台
-seo-description: 如何使用Autodesk Maya和Mental ray设置标准舞台
+description: 如何使用Autodesk Maya和Mental Ray设置标准舞台
+seo-description: 如何使用Autodesk Maya和Mental Ray设置标准舞台
 uuid: 3895fda6-29ae-46f5-b2bc-abc989808648
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: da8fc33b-84ae-4ead-87bb-5a7870a38b1f
 translation-type: tm+mt
 source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 77%
 
 ---
 
@@ -25,11 +28,12 @@ source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
    * 平行光
    * 聚光灯光
    * 点光
-   将舞台上传到 AEM 3D 时，其他灯光类型会被忽略或转换为以上支持的类型之一。查看资产和使用内置的 Rapid Refine 渲染器进行渲染时，会使用转换后的类型。使用Maya进行渲染时，会使用原始的光线类型。
+
+   将舞台上传到 AEM 3D 时，其他灯光类型会被忽略或转换为以上支持的类型之一。查看资产和使用内置的 Rapid Refine 渲染器进行渲染时，会使用转换后的类型。使用Maya进行渲染时，会使用原始灯光类型。
 
 1. 如果需要，创建一个地平面，并应用合适的材料。
 
-   Adobe 建议您将地平面设置为单面。这样做可确保您能够在AEM 3D中从下方查看资产，而地平面不会隐藏资产。
+   Adobe 建议您将地平面设置为单面。这样做可确保在AEM 3D中从下方视图资产，而无需地面隐藏资产。
 
 1. （可选）创建并配置相机。
 
@@ -39,7 +43,7 @@ source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
 
    根据以下建议配置渲染设置：
 
-   * **[!UICONTROL “公用]** ”选项卡
+   * **[!UICONTROL “常用]** ”选项卡
 
       Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
 
@@ -47,7 +51,7 @@ source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
 
       * **[!UICONTROL 整体质量]**`- 0.5` 或更低
       * **[!UICONTROL 间接扩散(GI)模式]** - `Final Gather`
-      * **[!UICONTROL 过滤器大小]** - `2.0`、 `2.0`
+      * **[!UICONTROL 筛选器大小]** - `2.0`、 `2.0`
    * 以您希望使用的典型图像大小渲染场景。如果需要，优化灯光或优化渲染设置，或者同时执行这两项操作，以便达到所需的效果。
 
       请注意，通过 Mental Ray 使用基于图像的照明进行渲染时，速度会非常缓慢且会消耗大量 CPU。Adobe 建议您配置最低质量设置，该设置仍能生成所需的渲染质量。

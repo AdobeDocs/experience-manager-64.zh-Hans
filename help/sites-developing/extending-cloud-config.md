@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 3%
 
 ---
 
@@ -23,22 +26,22 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
 
 ## 概念 {#concepts}
 
-开发配置时使用的原则基于以下概念：
+在开发配置时采用的原则基于以下概念：
 
 * 服务／适配器用于检索配置。
-* 配置（例如属性／段落）从父项继承。
-* 按路径从分析节点引用。
-* 轻松扩展。
+* 配置（例如属性／段落）从父级继承。
+* 按路径引用自分析节点。
+* 易于扩展。
 * 具有灵活性，可满足更复杂的配置，如 [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)。
-* 支持依赖项(例如 [Adobe Analytics插件需要](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Adobe Analytics配置 [](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) )。
+* 支持依赖项(例如 [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) 插件需 [要Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) 配置)。
 
 ## 结构 {#structure}
 
 配置的基本路径是：
 
-`/etc/cloudservices`.
+`/etc/cloudservices`。
 
-对于每种配置类型，都会提供一个模板和一个组件。这样，配置模板就可以满足自定义后的大多数需求。
+对于每种类型的配置，都会提供一个模板和一个组件。这样，配置模板可以在自定义后满足大多数需求。
 
 要为新服务提供配置，您需要：
 
@@ -51,15 +54,15 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
    * 配置模板
    * 配置组件
 
-模板和组件必须从基本模 `sling:resourceSuperType` 板继承：
+模板和组件必须继承 `sling:resourceSuperType` 基本模板：
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-或基组件
+或基本组件
 
 `cq/cloudserviceconfigs/components/configpage`
 
-服务提供商还应提供服务页面：
+服务提供商还应提供服务页：
 
 `/etc/cloudservices/<service-name>`
 
@@ -121,7 +124,7 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 
 配置存储在子节点下 `jcr:content`。
 
-* 在对话框中定义的固定属性应直接存储在 `jcr:node` 上。
+* 对话框中定义的固定属性应直接存储在 `jcr:node` 上。
 * 动态元素(使 `parsys` 用或 `iparsys`)使用子节点存储组件数据。
 
 ```xml
@@ -135,11 +138,11 @@ propertyname
 
 ### API {#api}
 
-有关API的参考文档，请参 [阅com.day.cq.wcm.webservices支持](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html)。
+有关API的参考文档，请 [参阅com.day.cq.wcm.webservices支持](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html)。
 
 ### AEM集成 {#aem-integration}
 
-可用服务列在“页面 **属性”对话框******`foundation/components/page``wcm/mobile/components/page`（从或继承的任何页面）的“云服务”选项卡中。
+可用服务列在“页面 **属性** ”对话框( **从或继承的任何页面** )的“Cloud Services”选 `foundation/components/page` 项卡中 `wcm/mobile/components/page`。
 
 该选项卡还提供：
 
@@ -150,11 +153,11 @@ propertyname
 
 存储服务的用户凭据时，应加密所有密码。
 
-您可以通过添加隐藏的表单字段来实现这一点。 此字段的属性名 `@Encrypted` 称中应包含注释；例如，对于字 `password` 段，名称将写为：
+您可以通过添加隐藏的表单字段来实现这一点。 此字段的属性名 `@Encrypted` 称中应包含注释； 例如，对于字 `password` 段，名称将写为：
 
 `password@Encrypted`
 
-然后，该属性将由自动加密(使用 `CryptoSupport` 服务) `EncryptionPostProcessor`。
+然后，属性将由（使用服务） `CryptoSupport` 自动加密 `EncryptionPostProcessor`。
 
 >[!NOTE]
 >
@@ -162,9 +165,9 @@ propertyname
 
 >[!NOTE]
 >
->默认情况下， `EcryptionPostProcessor` 仅加密 `POST` 对的请求 `/etc/cloudservices`。
+>默认情况下， `EcryptionPostProcessor` 仅加密 `POST` 对发出的请求 `/etc/cloudservices`。
 
-#### “服务”页的其他属性jcr:content Nodes {#additional-properties-for-service-page-jcr-content-nodes}
+#### “服务”页的其他属性jcr:content节点 {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table> 
  <tbody> 
@@ -174,11 +177,11 @@ propertyname
   </tr> 
   <tr> 
    <td>componentReference</td> 
-   <td>要自动包含在页面中的组件的引用路径。<br /> 这用于附加功能和JS包含。<br /> 这包括包含页面上的组件<br /> ( <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> 通常在标记之前 <code>body</code> )。<br /> 对于Analytics和Target，我们使用它包含其他功能，如跟踪访客行为的JavaScript调用。</td> 
+   <td>要自动包括在页面中的组件的引用路径。<br /> 它用于附加功能和JS包含。<br /> 这包括包含页面上的组件<br /> ( <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> 通常在标记之前 <code>body</code> )。<br /> 在分析和目标方面，我们使用它包含其他功能，如跟踪访客行为的JavaScript调用。</td> 
   </tr> 
   <tr> 
    <td>描述</td> 
-   <td>服务的简短说明。<br /> </td> 
+   <td>服务的简短描述。<br /> </td> 
   </tr> 
   <tr> 
    <td>descriptionExtended</td> 
@@ -206,7 +209,7 @@ propertyname
   </tr> 
   <tr> 
    <td>可见</td> 
-   <td>页面属性对话框中的可见性；默认情况下可见（可选）</td> 
+   <td>页面属性对话框中的可见性； 默认可见（可选）</td> 
   </tr> 
  </tbody> 
 </table>
@@ -223,5 +226,5 @@ propertyname
 
 >[!NOTE]
 >
->另请参阅 [创建自定义云服务](/help/sites-developing/extending-cloud-config-custom-cloud.md)。
+>另请参阅 [创建自定义Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md)。
 

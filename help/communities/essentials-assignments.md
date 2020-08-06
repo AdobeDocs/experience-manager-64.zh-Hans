@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 796781e6-5cab-4ea1-b484-0945bc8febbf
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 11%
 
 ---
 
 
 # Assignments Essentials {#assignments-essentials}
 
-本页提供了使用Enablement Community站点的分配功能的基本 [信息](overview.md#enablement-community) 。
+本页提供了使用Enablement Community站点的任务功能的基 [本信息](overview.md#enablement-community) 。
 
-分配功能是将支持资源和学习路径分配给支持社区的成员的能力。
+分配功能是将支持资源和学习路径分配给支持社区的成员。
 
 ## 客户端必备工具 {#essentials-for-client-side}
 
@@ -47,14 +50,14 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
   </tr>
   <tr>
    <td><strong> 属性</strong></td> 
-   <td>请参阅 <a href="assignments.md">任务功能</a></td> 
+   <td>查看 <a href="assignments.md">任务功能</a></td> 
   </tr>
  </tbody>
 </table>
 
 ### 完成和成功状态 {#completion-and-success-status}
 
-“完成”和“成功”状态用于“任务”上的报告以及状态横幅。
+“完成”和“成功”状态用于“任务”上的报告和状态横幅。
 
 完成状态:
 
@@ -82,7 +85,7 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ### 指定任务功能 {#assignments-function}
 
-包含“分配”功能的社区站 [点结构](functions.md#assignments-function)，包括已配置的 ` [assignments](assignments.md)` 组件。
+包含“分配”功能的社区 [站点结构](functions.md#assignments-function)，包括已配置的 ` [assignments](assignments.md)` 组件。
 
 ### 参考API {#reference-apis}
 
@@ -90,4 +93,4 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 * [报告API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [报告分析API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)

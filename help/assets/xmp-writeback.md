@@ -13,9 +13,9 @@ ht-degree: 7%
 
 # XMP 写回到演绎版 {#xmp-writeback-to-renditions}
 
-此Adobe Experience Manager(AEM)资产中的XMP写回功能可将资产元数据更改复制到资产的演绎版。
+Adobe Experience Manager(AEM)资产中的此XMP写回功能可将资产元数据更改复制到资产的演绎版。
 
-当您从AEM Assets内或在上传资产时更改资产的元数据时，更改最初会存储在Crx-De的资产节点内。
+当您从AEM Assets内更改资产的元数据或在上传资产时，更改最初存储在Crx-De的资产节点内。
 
 XMP写回功能将元数据更改传播到资产的所有或特定演绎版。
 
@@ -29,14 +29,14 @@ In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** pro
 
 但是，AEM Assets不会自动将任何元数据更改传播到资产的演绎版。
 
-利用XMP写回功能，您可以将元数据更改传播到资产的所有演绎版或特定演绎版。 但是，这些更改不会存储在资产层次结构中的元数据节点下。此功能而是会将更改嵌入到演绎版的二进制文件中。
+XMP写回功能允许您将元数据更改传播到资产的所有或特定演绎版。 但是，这些更改不会存储在资产层次结构中的元数据节点下。此功能而是会将更改嵌入到演绎版的二进制文件中。
 
 ## 启用XMP写回 {#enabling-xmp-writeback}
 
-要在上传元数据更改时将其传播到资产的演绎版，请在Configuration Manager中 **修改Adobe CQ DAM Rendition** Maker配置。
+要在上传元数据更改时将其传播到资产的演绎版，请在配置管理器中 **修改Adobe CQDAM演绎版** Maker配置。
 
 1. 从中打开Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`。
-1. 打开 **[!UICONTROL Adobe CQ DAM Rendition Maker配置]** 。
+1. 打开 **[!UICONTROL Adobe CQDAM再现生成器]** 。
 1. 选择“ **[!UICONTROL 传播XMP]** ”选项，然后保存更改。
 
    ![chlimage_1-346](assets/chlimage_1-346.png)
@@ -56,7 +56,7 @@ In this case, the AEM Assets saves the changes to the **[!UICONTROL Title]** pro
    ![step_properties](assets/step_properties.png)
 
 1. To regenerate the pyramid TIFF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
-PTIFF再现仅在Dynamic Media混合模式下创建并存储在本地。 保存工作流。
+PTIFF演绎版仅在Dynamic Media Hybrid模式下创建并存储在本地。 保存工作流。
 
 元数据更改将传播到资 `thumbnail.140.100.png` 产的 `thumbnail.319.319.png` 演绎版，而不是其他演绎版。
 
@@ -64,28 +64,28 @@ PTIFF再现仅在Dynamic Media混合模式下创建并存储在本地。 保存�
 >
 >有关64位Linux中的XMP写回问题，请 [参阅如何在64位RedHat Linux上启用XMP写回](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)。
 >
->有关受支持平台的详细信息，请参 [阅XMP元数据回写的先决条件](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)。
+>有关支持的平台的更多信息，请参 [阅XMP元数据回写先决条件](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)。
 
 ## 筛选XMP元数据 {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] 支持从资产二进制文件读取并在摄取资产时存储在JCR中的XMP元数据的属性／节点的阻止列表和允许的列表筛选。
+[!DNL Experience Manager Assets] 支持XMP元数据的属性／节点的阻止列表和允许列表过滤，该元数据从资产二进制文件读取并在摄取资产时存储在JCR中。
 
-使用阻止的列表进行过滤可导入除为排除指定的属性外的所有XMP元数据属性。 但是，对于具有大量XMP元数据（例如，1000个节点具有10,000个属性）的资产类型（如INDD文件），要筛选的节点名称并不总是预先知道的。 如果使用阻止的列表进行筛选允许导入大量具有大量XMP元数据的资产，则AEM实例或群集可能会遇到稳定性问题，例如阻塞的观察队列。
+使用阻止列表进行筛选后，您可以导入除为排除指定的属性外的所有XMP元数据属性。 但是，对于具有大量XMP元数据（例如，1000个节点具有10,000个属性）的资产类型（如INDD文件），要筛选的节点名称并不总是预先知道的。 如果使用阻止列表进行筛选允许导入大量具有大量XMP元数据的资产，AEM实例或群集可能会遇到稳定性问题，例如阻塞观察队列。
 
-通过允许的列表过滤XMP元数据可通过允许您定义要导入的XMP属性来解决此问题。 这样，将忽略任何其他或未知的XMP属性。 为了向后兼容，您可以将其中一些属性添加到使用阻止列表的筛选器。
+通过允许列表筛选XMP元数据可通过允许您定义要导入的XMP属性来解决此问题。 这样，将忽略任何其他或未知的XMP属性。 为了向后兼容，您可以向使用阻止列表的筛选器中添加一些这些属性。
 
 >[!NOTE]
 >
 >筛选仅适用于资产二进制文件中从XMP源派生的属性。 对于从非XMP源（如EXIF和IPTC格式）派生的属性，过滤不起作用。 例如，资产创建日期存储在以EXIF TIFF命名 `CreateDate` 的属性中。 AEM将此值存储在名为的元数据字段中 `exif:DateTimeOriginal`。 由于源是非XMP源，因此过滤不适用于此属性。
 
 1. 从中打开Configuration Manager `https://[aem_server]:[port]/system/console/configMgr`。
-1. 打开 **[!UICONTROL Adobe CQ DAM XmpFilter配置]** 。
+1. 打开 **[!UICONTROL Adobe CQDAM XmpFilter]** 配置。
 1. To apply filtering via an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
 
-   ![chlimage_1-347](assets/chlimage_1-347.png)
+   ![chlimage_1-349](assets/chlimage_1-347.png)
 
-1. 要在通过允许的列表应用过滤后过滤掉已阻止的XMP属性，请在“XMP过 **[!UICONTROL 滤的已阻止的XML名称]** ”框中指定这些属性。 保存更改。
+1. 要在通过允许列表应用过滤后过滤掉已阻止的XMP属性，请在“XMP过滤的 **[!UICONTROL XML名称被阻止”框中指定]** 这些属性。 保存更改。
 
    >[!NOTE]
    >
-   >默认 **[!UICONTROL 情况下，将块列表应用]** 到XMP属性选项处于选中状态。 换言之，默认情况下启用使用阻止列表进行过滤。 要禁用此类过滤，请取消选 **[!UICONTROL 择“将块列表应用到XMP属性]** ”选项。
+   >默 **[!UICONTROL 认情阻止列表况下，将“应用到XMP属性]** ”选项选中。 换言之，默认情况下启用使用阻止列表进行筛选。 要禁用此类过滤，请取消选 **[!UICONTROL 择应阻止列表用到XMP属性]** 。

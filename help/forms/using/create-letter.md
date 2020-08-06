@@ -35,7 +35,7 @@ ht-degree: 2%
 
 在此工作流中：
 
-1. 表单设计人员使用Adobe Forms Designer创建布局和片段布局，并将它们上传到CRX存储库。 布局包含典型的表单字段、页眉和页脚等布局功能以及内容放置的空“目标区”。 稍后，应用程序专家将映射这些目标区域所需的内容。 有关设计布局 [的更多信息](/help/forms/using/layout-design-details.md)。
+1. 表单设计人员使用AdobeForms设计人员创建布局和片段布局，并将它们上传到CRX存储库。 布局包含典型的表单字段、页眉和页脚等布局功能以及内容放置的空“目标区”。 稍后，应用程序专家将映射这些目标区域所需的内容。 有关设计布局 [的更多信息](/help/forms/using/layout-design-details.md)。
 1. 法律、财务或营销部门的主题专家创建和上传在各种通信模板中重复使用的文本条款免责声明、条款和条件以及徽标等图像等内容。
 1. 应用程序专家创建通信模板。 应用程序专家
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 
 #### Layout fragment {#layout-fragment}
 
-布局片段是可在一个或多个字母中使用的布局。 布局片段用于创建可重复的模式，特别是动态表。 布局可包含“地址”和“引用编号”等典型表单字段。 它还包含表示目标区域的空子表单。 布局(XDP)在Designer中创建，然后上传 [到表单和文档](/help/forms/using/get-xdp-pdf-documents-aem.md)。
+布局片段是可在一个或多个字母中使用的布局。 布局片段用于创建可重复的模式，特别是动态表。 布局可包含“地址”和“引用编号”等典型表单字段。 它还包含表示目标区域的空子表单。 布局(XDP)在Designer中创建，然后上传 [到Forms和文档](/help/forms/using/get-xdp-pdf-documents-aem.md)。
 
 ### 字母创建 {#letter-creation}
 
@@ -95,7 +95,7 @@ ht-degree: 2%
 1. 已提交以供审核和批准。
 1. 通过应用数字签名、认证、加密或权限管理来保护。
 1. 已转换为可搜索的PDF文档，其中包含用于存档和审核的所有必要元数据。
-1. 包含在包含更多文档（如营销材料）的PDF包中。 PDF包随后可作为最终通信发送。
+1. 包含在包含更多文档的PDFPortfolio中，如营销材料。 然后，PDFPortfolio可以作为最终通信发送。
 
 ### 通信管理解决方案架构 {#correspondence-management-solution-architecture}
 
@@ -159,7 +159,7 @@ ht-degree: 2%
    * 对应的布局和片段布局
    * 内容在字母和规则中的显示顺序，用于包含和排除内容
 
-* 业务用户（如索赔调整者或案件工作人员）修改信函中内容或部分的条件。
+* 业务用户（如索赔调整者或案件工作人员）修改信函内容或部分的条件。
 * 场景描述了使用信件解决方案的用户体验、要求和益处。
 * 方案还提供：项目所需的技能集和工具。
 * 规划实施的最佳实践。 “高级实施概述。
@@ -228,7 +228,7 @@ ht-degree: 2%
 
 您首先需要具备以下内容才能创建通信：
 
-* [兼容性包](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)。 安装兼容性包以视图“ **表单** ”页上 **的** “字母”选项。
+* [兼容性包](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)。 安装“Compatibility Package（兼容性包）”以 **视图** “Letters(字母 **)”选** 项(Forms)。
 
 * 字母XDP(布[局](/help/forms/using/document-fragments.md))。
 * 构成字母部[分的其](/help/forms/using/document-fragments.md)他XDP（布局片段）。 XDP\布局是在Designer中创 [建的](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/)。
@@ -241,9 +241,9 @@ ht-degree: 2%
 
 ### 选择布局并输入字母属性 {#select-a-layout-and-enter-the-letter-properties}
 
-1. 选择 **“表单** ”> **“字母**”。
+1. 选择 **Forms** > **字母**。
 
-1. 选择 **创建>字母**。 “对应管理”显示可用布局(XDP)。 这些布局来自Designer。 这些布局还包括Corresponce Management提供的开箱即用的信件模板。 有关“通信管理”模板的详细信息，请参 [阅参考信模板](/help/forms/using/reference-cm-layout-templates.md)。 要添加您自己的布局，请在Designer中创建XDP（布局）文件，然 [后将其上传到AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md)。
+1. 选择 **创建>字母**。 “对应管理”显示可用布局(XDP)。 这些布局来自Designer。 这些布局还包括Corresponce Management提供的开箱即用的信件模板。 有关“通信管理”模板的详细信息，请参 [阅参考信模板](/help/forms/using/reference-cm-layout-templates.md)。 要添加您自己的布局，请在Designer中创建XDP（布局）文件，然后将 [其上传到AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md)。
 
    ![create-letter](assets/create-letter.png)
 
@@ -258,7 +258,7 @@ ht-degree: 2%
    * **说明（可选）:** 请说明这封信供您参考。
    * **数据字典（可选）**: 数据字典可以与对应关联。 您稍后在此通信中插入的资源应与在此处为通信选择的资源具有相同的数据字典，或者没有数据字典。
    * **标记（可选）:** 选择要应用于通信的标记。 您还可以键入新／自定义标记名称，然后按Enter创建它。
-   * **后期处理（可选）:** 选择要应用于信函模板的过帐流程。 现成的发布流程以及您使用AEM创建的流程，如电子邮件和打印。
+   * **后期处理（可选）:** 选择要应用于信函模板的过帐流程。 有现成的帖子流程以及您使用AEM创建的流程，如电子邮件和打印。
 
    ![对应属性](assets/createcorrespondenceproperties.png)
 
@@ -290,7 +290,7 @@ ht-degree: 2%
    1. **可编辑**: 选择此选项后，可在“创建对应”用户界面中编辑内容。 仅当需要业务用户（如报销申请调整者）修改内容时，才将内容标记为可编辑。
    1. **强制**: 选择此选项后，“创建对应”用户界面中将需要内容。
    1. **已选择**: 选择此选项后，内容将默认在“创建对应”用户界面中进行选择。
-   1. **缩进**: 增加或减少字母中模块／内容的缩进。 缩进以级别（从0开始）指定。 每个级别缩进36pts。 有关自定义表单的详细信息，请参 **[!UICONTROL 阅表单工作流中的]** “对应 [管理配置”](/help/forms/using/submit-letter-topostprocess.md#formsworkflow)。
+   1. **缩进**: 增加或减少字母中模块／内容的缩进。 缩进以级别（从0开始）指定。 每个级别缩进36pts。 有关自定义表单的详细信息，请参 **[!UICONTROL 阅Forms工作流程中]** 的对应 [管理配置](/help/forms/using/submit-letter-topostprocess.md#formsworkflow)。
    1. **分页符之前**: 如果将“分页前”设置为打开，则此模块的内容将始终显示在新页面上。
    1. **分页符后**: 如果为特定模块将“分页后”设置为打开，则NEXT模块的内容将始终显示在新页面上。
 
@@ -472,7 +472,7 @@ ht-degree: 2%
 
 ## 创建信函模板的副本 {#createcopylettertemplate}
 
-您可以使用现有的字母模板快速创建具有类似属性、内容和继承资产(如文档片段和数据字典)的字母模板。 为此，请复制并粘贴字母。
+您可以使用现有的字母模板快速创建具有相似属性、内容和继承资产(如文档片段和数据字典)的字母模板。 为此，请复制并粘贴字母。
 
 1. 在“字母”页面中，选择一个或多个字母。 UI将显示复制图标。
 1. 点按复制。UI会显示粘贴图标。 粘贴之前，还可以选择进入文件夹。 不同的文件夹可以包含名称相同的资产。 有关文件夹的详细信息，请参阅 [文件夹和组织资产](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets)。

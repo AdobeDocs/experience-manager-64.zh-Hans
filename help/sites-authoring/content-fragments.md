@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
 translation-type: tm+mt
 source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
 
 >[!CAUTION]
 >
->某些内容片段功能需要应用 [AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md)。
+>某些内容片段功能需 [要应用AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md)。
 
 Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创建和管理](/help/assets/content-fragments.md)。
 
@@ -33,13 +36,14 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 >
 >* **内容片段**&#x200B;是可编辑的内容，主要为文本和相关图像。它们是纯内容，不带有任何设计和布局。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
+
 >
 >
 体验片段可以包含内容片段形式的内容，反之则不行。
 
 >[!CAUTION]
 >
->This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
+>本页必须结合[使用内容片段](/help/assets/content-fragments.md)（及相关页面）一起阅读，因为它不仅介绍了基本术语和概念，还介绍了如何创建和管理片段。
 
 内容片段允许：
 
@@ -75,13 +79,14 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 1. 您可以：
 
-   * Open the **[!UICONTROL Assets]** browser and filter for **[!UICONTROL Content Fragments]** (the default is Images). 然后，将所需的片段拖到组件实例上。
+   * 打开&#x200B;**[!UICONTROL 资产]**&#x200B;浏览器并筛选&#x200B;**[!UICONTROL 内容片段]**（默认为图像）。然后，将所需的片段拖到组件实例上。
    * 选择内容片段组件，然后从工具栏中选择&#x200B;**[!UICONTROL 配置]**。在对话框中，您可以打开选择对话框以浏览并选择所需的&#x200B;**[!UICONTROL 内容片段]**。
+
    >[!NOTE]
    >
    >备选方法是将特定的内容片段直接拖到页面上。这将自动创建关联的组件（内容片段）。
 
-1. Initially the content from the **[!UICONTROL Main]** Element and **[!UICONTROL Master]** (variation) will be shown. 您可以根据需要[选择其他元素和/或变量](#selecting-the-element-or-variation)。
+1. 最初，将显示&#x200B;**[!UICONTROL 主]**&#x200B;元素和&#x200B;**[!UICONTROL 母版]**（变量）中的内容。您可以根据需要[选择其他元素和/或变量](#selecting-the-element-or-variation)。
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -112,6 +117,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
    * 默认的&#x200B;**[!UICONTROL 主元素]**&#x200B;将始终可用。
    * 如果片段是通过适当的模板创建的，将有可选择的元素可用。
+
    >[!NOTE]
    >
    >有哪些元素可用取决于所使用的模板。
@@ -124,7 +130,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 * **[!UICONTROL 段落]**：指定要包含的段落范围：
 
    * **[!UICONTROL 全部]**
-   * **[!UICONTROL 范围]**:例如， `1`, `3-5``9-*`
+   * **[!UICONTROL 范围]**：例如 `1`、`3-5`、`9-*`
 
       * **[!UICONTROL 将标题处理为它们自己的段落]**
 
@@ -148,7 +154,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 * 从[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)添加组件。
 * 从[资产浏览器](/help/sites-authoring/author-environment-tools.md#assets-browser)添加资产。
-* Use [Associated Content](#using-associated-content) as a source for in-between content.
+* 使用[关联内容](#using-associated-content)作为中间内容的源。
 
 >[!CAUTION]
 >
@@ -166,18 +172,19 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 >
 >在将中间内容添加到页面上的内容片段之后，更改基础内容片段的结构（例如在内容片段编辑器中）可能会导致错误/意外的结果。
 >
->发生这种情况时，中间内容会按原样保留：
+>在发生此问题时，中间内容会按原样保留：
 >
 >* 中间组件在片段流的组件序列中具有一个绝对位置。即使片段中段落的内容发生更改，此位置也不会变化。\
-   >  这可能使其看起来好像相对位置已更改，因为中间段落与它们旁边的（片段）段落没有上下文关系。
+   >  这可能使其看起来像是相对位置发生了更改一样，因为中间段落与它们旁边的（片段）段落之间没有上下文关系。
 >* 除非两个段落结构产生冲突；在这种情况下，将不会显示中间内容（尽管它在内部依然存在）。
+
 >
 
 
 
 ## 使用关联内容 {#using-associated-content}
 
-如果您有与 [内容片段关联的](/help/assets/content-fragments-assoc-content.md)[内容](/help/assets/content-fragments.md) ，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是中间内容的 [特殊内容源](#adding-in-between-content)。
+如果您有与[内容片段关联的](/help/assets/content-fragments-assoc-content.md)[内容](/help/assets/content-fragments.md) ，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是中间内容的[特殊内容源](#adding-in-between-content)。
 
 >[!NOTE]
 >
@@ -197,7 +204,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 如果[已在片段本身中插入资产（例如图像）](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment)，则页面编辑器中用于编辑这些资产的选项会受到限制。
 
-例如，对于图像，您可以
+例如，您可以对图像执行以下操作
 
 * 裁剪、旋转或翻转图像。
 * 添加标题或替换文本。

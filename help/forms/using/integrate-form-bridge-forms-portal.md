@@ -10,13 +10,16 @@ topic-tags: hTML5_forms
 discoiquuid: e0608649-bd49-4f40-bc1b-821c9b208883
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 0%
 
 ---
 
 
 # 将Form Bridge与HTML5表单的自定义门户集成 {#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge是一个HTML5表单桥接器API，它允许您与表单交互。 有关FormBridge API参考，请参 [阅FormBridge API参考](/help/forms/using/form-bridge-apis.md)。
+FormBridge是一个HTML5表单桥接器API，允许您与表单交互。 有关FormBridge API参考，请参 [阅FormBridge API参考](/help/forms/using/form-bridge-apis.md)。
 
 您可以使用FormBridge API从HTML页面获取或设置表单字段的值并提交表单。 例如，您可以使用API构建类似向导的体验。
 
@@ -30,13 +33,13 @@ FormBridge是一个HTML5表单桥接器API，它允许您与表单交互。 有�
    1. 使用管理员凭据登录。
    1. 创建用户档案或选择现有用户档案。
 
-      有关如何创建用户档案的详细信息，请参 [阅创建新用户档案](/help/forms/using/custom-profile.md)。
+      有关如何创建用户档案的详细信息，请 [参阅创建新用户档案](/help/forms/using/custom-profile.md)。
 
 1. **修改HTML用户档案**
 
-   将XFA运行时、XFA区域设置库和XFA表单HTML代码片断包含在用户档案渲染器中，设计网页并将表单放在网页内。
+   将XFA运行时、XFA区域设置库和XFA表单HTML片段包含在用户档案渲染器中，设计网页并将表单放在网页内。
 
-   例如，使用以下代码片断创建一个应用程序，该应用程序包含两个输入字段和一个表单，用于演示表单与外部应用程序之间的交互。
+   例如，使用以下代码片断创建一个具有两个输入字段和一个表单的应用程序，以演示表单与外部应用程序之间的交互。
 
    ```xml
    <%@ page session="false"
@@ -75,20 +78,20 @@ FormBridge是一个HTML5表单桥接器API，它允许您与表单交互。 有�
    >第9 **行**，包含用于设计页面的CSS样式和JavaScript文件的其他JSP参考。
    >
    >第18行上的&lt;div id=&quot;rightdiv&quot;>标 **签包含** XFA表单的HTML片段。
-   页面的样式设置为两个容器: **左****右**。 正确的容器具有表单。 左容器有两个输入字段，外部HTML页面的一部分。
-   以下屏幕快照显示了表单在浏览器中的显示方式。
+   页面样式设置为两个容器: **左** 和 **右**。 正确的容器具有表单。 左容器有两个输入字段，外部HTML页的一部分。
+   以下屏幕快照显示表单在浏览器中的显示方式。
 
    ![门户](assets/portal.jpg)
 
-   左侧是 **HTML页面的一部分**。 包含字段的右侧是 **xfa表单**。
+   左侧是HTML页面的 **一部分**。 包含字段的右侧是xfa **表单**。
 
 1. **从页面访问表单字段**
 
-   以下是可添加到表单字段中设置值的示例脚本。
+   以下是一个示例脚本，您可以添加它以在表单字段中设置值。
 
-   例如，如果要使用“字段名”和“姓”中的值设置 **EmployeeName** ，则调用 ************ window.formBridge.setFieldValue函数。
+   例如，如果要使用“字段 **名** ”和“姓”中的值 **设置EmployeeName****,**&#x200B;请调用 **** window.formBridge.setFieldValue函数。
 
-   同样，您也可以通过调用**window.formBridge.getFieldValue **API读取该值。
+   同样，您也可以通过调用**window.formBridge.getFieldValue **API来读取该值。
 
    ```
    $(function() {

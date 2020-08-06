@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM Tagging Framework{#aem-tagging-framework}
 
-要标记内容并利用AEM Tagging基础结构，请执行以下操作：
+要标记内容并利用AEM Tagging基础结构：
 
 * 标记必须作为分类根节点下的类 [`cq:Tag`](#tags-cq-tag-node-type) 型节 [点存在](#taxonomy-root-node)
 
@@ -66,7 +66,7 @@ TagID由命名空间 [和](#tag-namespace) 本地TagID组成。 [容器标](#con
 
 分类根节点是存储库中所有标记的基本路径。 分类根节点不 *能* 是类型的节点 `  cq   :Tag`。
 
-在AEM中，基本路径 `/content/  cq   :tags` 为，根节点类型为 `  cq   :Folder`。
+在AEM中，基路径 `/content/  cq   :tags` 为，根节点为类型 `  cq   :Folder`。
 
 ### 标记命名空间 {#tag-namespace}
 
@@ -165,7 +165,7 @@ TagID由命名空间 [和](#tag-namespace) 本地TagID组成。 [容器标](#con
 
 典型做法包括：
 
-* 允许对 `tag-administrators` 所有命名空间（在下添加／修改）进行组／角色写入 `/content/cq:tags`访问。 此组随附AEM现成功能。
+* 允许对 `tag-administrators` 所有命名空间（在下添加／修改）进行组／角色写入 `/content/cq:tags`访问。 这个组随附AEM即装即用。
 
 * 允许用户／作者读取应可读的所有命名空间（大多数）。
 * 允许用户／作者对用户／作者可自由定义标记的命名空间进行写入访问(在下面添加节点 `/content/cq:tags/some_namespace`)
@@ -216,7 +216,7 @@ AEM中包含的节点类型的基本定义如下：
 
 >[!NOTE]
 >
->要利用AEM标记功能，自定义开发的应用程序不应定义除外的标记属性 `cq:tags`。
+>要利用AEM标记功能，自定义开发的应用程序不应定义标记属性 `cq:tags`。
 
 ## 移动和合并标记 {#moving-and-merging-tags}
 
@@ -334,13 +334,13 @@ println "---------------------------------Success-------------------------------
 
 脚本将获取属性值中 `/etc/tags` 包含的所有标 `cq:movedTo/cq:backLinks` 记。 然后，它重新迭代获取的结果集，并 `cq:movedTo` 将 `cq:backlinks` 和属性值解析 `/content/cq:tags` 为路径(在值中检测到 `/etc/tags` 的情况下)。
 
-**如果升级的AEM实例在经典UI上运行**
+**如果升级的AEM实例在Clasic UI上运行**
 
 >[!NOTE]
 >
 >经典UI不符合零停机时间要求，并且不支持新的标签基础路径。 如果要使用经典UI，则需 `/etc/tags` 要创建经典UI，然后重新启 `cq-tagging` 动组件。
 
-如果TagManager API支持并在经典UI中运行的已升级AEM实例：
+如果TagManager API支持并在经典UI中运行升级的AEM实例：
 
 1. 使用tagId或新标记位置替 `/etc/tags` 换对旧标记基本路径的引用后， `/content/cq:tags`您可以在CRX中将标记迁移到新 `/content/cq:tags` 位置，然后重新启动组件。
 

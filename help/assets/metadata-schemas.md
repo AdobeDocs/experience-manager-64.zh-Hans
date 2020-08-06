@@ -13,7 +13,7 @@ ht-degree: 19%
 
 # 元数据架构 {#metadata-schemas}
 
-在中 [!DNL Experience Manager Assets]，元数据模式定义属性页面的布局以及为使用特定模式的资产显示的元数据属性。 元数据属性包括标题、描述、MIME类型、标记等。 您可以使用元数据模式表单编辑器修改现有模式或添加自定义元数据模式。
+在中 [!DNL Experience Manager Assets]，元数据模式定义属性页面的布局以及为使用特定模式的资产显示的元数据属性。 元数据属性包括标题、描述、MIME类型、标记等。 您可以使用元数据模式Forms编辑器修改现有模式或添加自定义元数据模式。
 
 要视图和编辑资产的属性页面，请执行以下步骤：
 
@@ -29,7 +29,7 @@ ht-degree: 19%
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   要修改资产的MIME类型，请使用自定义元数据模式表单或修改现有表单。 有关详 [细信息，请参阅编辑元模式](metadata-schemas.md#editing-metadata-schema-forms) “表单”。 如果您修改某些MIME类型的元数据模式，则将修改当前MIME类型和所有资产子类型的资产的属性页面布局。 例如，修改下 `jpeg` 的模式 `default/image` 只会修改MIME类型资产的元数据布局（资产属性） `IMAGE/JPEG`。 但是，如果您编辑默认模式，则所做的更改将修改所有类型资产的元数据布局。
+   要修改资产的MIME类型，请使用自定义元数据模式表单或修改现有表单。 请参 [阅编辑元数据模式](metadata-schemas.md#editing-metadata-schema-forms) Forms以了解更多信息。 如果您修改某些MIME类型的元数据模式，则将修改当前MIME类型和所有资产子类型的资产的属性页面布局。 例如，修改下 `jpeg` 的模式 `default/image` 只会修改MIME类型资产的元数据布局（资产属性） `IMAGE/JPEG`。 但是，如果您编辑默认模式，则所做的更改将修改所有类型资产的元数据布局。
 
 ## 元数据架构表单 {#default-metadata-schema-forms}
 
@@ -41,7 +41,7 @@ ht-degree: 19%
 |---|---|---|
 | [!UICONTROL 默认] |  | 资产的基本元数据模式表单。 |
 |  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
-|  | <ul><li> [!UICONTROL dm_video]</li></ul> | 模式表单，用于Dynamic Media视频。 |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Dynamic Media视频的模式表单。 |
 |  | <ul><li> [!UICONTROL 图像]</li></ul> | 模式表单，用于MIME类型为“image”（例如image/jpeg、image/png等）的资产。 <br> 图 [!UICONTROL 像表单] 具有以下子表单模板： <ul><li> [!UICONTROL jpeg]: 模式子类型为jpeg的资产 [!UICONTROL 表单]。</li> <li>[!UICONTROL tiff]: 模式子类型为tiff的资产的 [!UICONTROL 表单]。</li></ul> |
 |  | <ul><li> [!UICONTROL 应用]</li></ul> | 模式表单，用于MIME类型为“application”（例如application/pdf、application/zip等）的资产。 <br>[!UICONTROL pdf]: 模式子类型为pdf的资产的表单。 |
 |  | <ul><li>[!UICONTROL 视频]</li></ul> | 模式表单，用于MIME类型为“”（如video/avi、video/mp4等）的资产。 |
@@ -183,11 +183,11 @@ AEM允许您仅删除自定义模式表单。 您无法删除默认的架构表�
 
 >[!NOTE]
 >
->您无法删除模式中开箱即用的元数据AEM Assets表单。
+>无法删除AEM Assets的现成元数据模式表单。
 
 ## Schema forms for MIME types {#schema-forms-for-mime-types}
 
-AEM Assets为各种现成MIME类型提供默认表单。 但是，您可以为各种MIME类型的资产添加自定义表单。
+AEM Assets为各种开箱即用的MIME类型提供默认表单。 但是，您可以为各种MIME类型的资产添加自定义表单。
 
 ### Add new forms for MIME types {#adding-new-forms-for-mime-types}
 
@@ -243,13 +243,13 @@ AEM Assets允许您定义元数据模式的变体，并将其应用到特定文�
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. 在元数 **[!UICONTROL 据模式表单]** ，选择表 `my_default` 单，然后单击编 **[!UICONTROL 辑]**。
+1. 在元数 **[!UICONTROL 据模式]** “Forms”页 `my_default` 面中，选择表单，然后单 **[!UICONTROL 击编辑]**。
 
 1. 在元数 **[!UICONTROL 据模式编辑]** 器页面中，向模式表单添加一个文本字段。 例如，添加带有标签类别的 **[!UICONTROL 字段]**。
 
-   ![chlimage_1-186](assets/chlimage_1-186.png)
+   ![chlimage_1-185](assets/chlimage_1-186.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在元数据 **[!UICONTROL 模式表单页]** 。
+1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在元数据 **[!UICONTROL 模式Forms]** 页面。
 1. 单击／点 **[!UICONTROL 按工具栏中的应用到文件夹]** ，以将自定义元数据应用到文件夹。
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
@@ -264,7 +264,7 @@ AEM Assets允许您定义元数据模式的变体，并将其应用到特定文�
 
 ## 定义必填元数据 {#defining-mandatory-metadata}
 
-您可以在文件夹级别定义必填字段，该字段将强制应用于上传到该文件夹的资产。 如果您上传的资产上传之前定义的必填字段缺少元数据，则卡视图的资产上会显示缺少元数据的可视指示。
+您可以在文件夹级别定义必填字段，这将强制执行于上传到该文件夹的资产。 如果您上传的资产上传之前定义的必填字段缺少元数据，则卡视图的资产上会显示缺少元数据的可视指示。
 
 >[!NOTE]
 >
@@ -279,14 +279,14 @@ AEM Assets允许您定义元数据模式的变体，并将其应用到特定文�
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在元数据 **[!UICONTROL 模式表单页]** 。 要将自定义元数据应用到文件夹，请选择表单，然后单 **[!UICONTROL 击／点按工具栏中的应]** 用到文件夹。
+1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在元数据 **[!UICONTROL 模式Forms]** 页面。 要将自定义元数据应用到文件夹，请选择表单，然后单 **[!UICONTROL 击／点按工具栏中的应]** 用到文件夹。
 
 1. 导航到文件夹，然后上传某些资产，其中缺少您添加到自定义表单的必填字段的元数据。 资产的卡片视图会显示必填字段中缺少的元数据的消息。
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-1. （可选）访 `http://[server]:[port]/system/console/components/`问。 配置并启 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 用默认禁用的组件。 设置AEM检查资产上元数据有效性的频率。
-此配置会向jcr: `hasValidMetadata` content of assets添加属性。 使用此属性，AEM可以筛选搜索结果。
+1. （可选）访 `http://[server]:[port]/system/console/components/`问。 配置并启 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 用默认禁用的组件。 设置AEM在资产上检查元数据有效性的频率。
+此配置会向jcr: `hasValidMetadata` content of assets添加属性。 使用此属性，AEM可以在搜索中筛选结果。
 
 >[!NOTE]
 >

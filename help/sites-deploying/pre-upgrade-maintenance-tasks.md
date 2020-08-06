@@ -1,8 +1,8 @@
 ---
 title: 升级前维护任务
 seo-title: 升级前维护任务
-description: 了解AEM中的预升级任务。
-seo-description: 了解AEM中的预升级任务。
+description: 了解AEM的预升级任务。
+seo-description: 了解AEM的预升级任务。
 uuid: 6c0d4b31-6464-470b-9e40-1fc2abb9b2a6
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 完全备份AEM {#fully-back-up-aem}
 
-在开始升级之前，应完全备份AEM。 确保备份您的存储库、应用程序安装、数据存储和Mongo实例（如果适用）。 有关备份和恢复AEM实例的详细信息，请参 [阅备份和恢复](/help/sites-administering/backup-and-restore.md)。
+在开始升级之前，AEM应完全备份。 确保备份您的存储库、应用程序安装、数据存储和Mongo实例（如果适用）。 有关备份和恢复AEM实例的详细信息，请参 [阅备份和恢复](/help/sites-administering/backup-and-restore.md)。
 
 ## 备份对/etc的更改 {#backup-changes-etc}
 
@@ -52,29 +52,29 @@ ht-degree: 0%
 
 ## 生成quickstart.properties文件 {#generate-quickstart-properties}
 
-从jar文件启动AEM时，将 `quickstart.properties` 在下生成一个文件 `crx-quickstart/conf`。 如果AEM过去只使用开始脚本启动，则此文件将不存在，并且升级将失败。 请确保检查此文件是否存在，并从jar文件中重新启动AEM（如果不存在）。
+从jar文件启动AEM时，将 `quickstart.properties` 在下生成一个文 `crx-quickstart/conf`件。 如果AEM过去只是使用开始脚本启动，则此文件将不存在，并且升级将失败。 确保检查此文件是否存在，并从jar文件重新启动AEM（如果不存在）。
 
 ## 配置工作流和审核日志清除 {#configure-wf-audit-purging}
 
-这些 `WorkflowPurgeTask` 和任务 `com.day.cq.audit.impl.AuditLogMaintenanceTask` 需要单独的OSGi配置，如果没有这些配置，它们将无法工作。 如果在预升级任务执行期间失败，则最可能的原因是缺少配置。 因此，如果您不想运行这些任务，请确保为这些任务添加OSGi配置，或将它们从升级前优化列表中完全删除。 有关配置工作流清除任务的文档，请参 [阅管理工作流实例](/help/sites-administering/workflows-administering.md) ，审计日志维护任务配置可在AEM 6 [的审计日志维护中找到](/help/sites-administering/operations-audit-log.md)。
+这些 `WorkflowPurgeTask` 和任务 `com.day.cq.audit.impl.AuditLogMaintenanceTask` 需要单独的OSGi配置，如果没有这些配置，它们将无法工作。 如果在预升级任务执行期间失败，则最可能的原因是缺少配置。 因此，如果您不想运行这些任务，请确保为这些任务添加OSGi配置，或将它们从升级前优化列表中完全删除。 有关配置工作流清除任务的文档，请参 [阅管理工作流实例](/help/sites-administering/workflows-administering.md) ，审计日志维护任务配置可在AEM [6的审计日志维护中找到](/help/sites-administering/operations-audit-log.md)。
 
-有关在CQ 5.6上清除工作流和审核日志以及在AEM 6.0上清除审核日志，请参阅清 [除工作流和审核节点](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)。
+有关在CQ 5.6上清除工作流和审核日志以及在AEM 6.0上清除审核日志，请参 [阅清除工作流和审核节点](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)。
 
 ## 安装、配置和运行预升级任务 {#install-configure-run-pre-upgrade-tasks}
 
-由于AEM允许的自定义级别，环境通常不遵循统一的升级方式。 这使得创建标准化升级程序成为一个困难的过程。
+由于AEM允许的定制级别，环境通常不遵循统一的升级方式。 这使得创建标准化升级程序成为一个困难的过程。
 
-在以前版本中，停止或无法安全恢复的AEM升级也很困难。 这导致需要重新启动完整升级程序或执行有缺陷的升级而不触发任何警告的情况。
+在以前版本中，AEM升级也很难停止或无法安全恢复。 这导致需要重新启动完整升级程序或执行有缺陷的升级而不触发任何警告的情况。
 
-为了解决这些问题，Adobe为升级过程添加了多项增强功能，使其更具弹性和用户友好性。 之前必须手动执行的升级前维护任务正在优化和自动化。 此外，还添加了升级后报告，以便能够充分审查该过程，希望更轻松地找到任何问题。
+为了解决这些问题，Adobe在升级过程中增加了多项增强功能，使其更具弹性和用户友好性。 之前必须手动执行的升级前维护任务正在优化和自动化。 此外，还添加了升级后报告，以便能够充分审查该过程，希望更轻松地找到任何问题。
 
-预升级维护任务当前分布于手动部分或完全执行的各种界面上。 AEM 6.3中引入的升级前维护优化使您能够以统一的方式触发这些任务并能够按需检查其结果。
+预升级维护任务当前分布于手动部分或完全执行的各种界面上。 AEM 6.3中引入的升级前维护优化使得能够以统一的方式触发这些任务并能够按需检查其结果。
 
-升级前优化步骤中包含的所有任务均与AEM 6.0以后的所有版本兼容。
+升级前优化步骤中包含的所有任务都与AEM 6.0之后的所有版本兼容。
 
 ### How to Set It Up {#how-to-set-it-up}
 
-在AEM 6.3和更高版本中，快速启动程序中包含升级前维护优化任务。 如果您从旧版AEM 6升级，则可以通过从包管理器下载的单独包使用它们。
+在AEM 6.3和更高版本中，快速启动程序中包含升级前维护优化任务。 如果您从AEM 6的旧版本升级，则可以通过从包管理器下载的单独包提供它们。
 
 您可以在以下位置找到包：
 
@@ -123,7 +123,7 @@ OSGI `PreUpgradeTasksMBean` 组件预配置了一列表升级前维护任务，�
   <tr> 
    <td><code>WorkflowPurgeTask</code></td> 
    <td>crx2/crx3</td> 
-   <td>运行之前，必须配置Adobe Granite Workflow Purge Configuration OSGi。</td> 
+   <td>运行之前，必须配置AdobeGranite工作流清除配置OSGi。</td> 
   </tr> 
   <tr> 
    <td><code>GenerateBundlesListFileTask</code></td> 
@@ -220,12 +220,12 @@ OSGI `PreUpgradeTasksMBeanImpl` 组件预配置了一列表升级前运行状况
   <tr> 
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td> 
    <td>动作</td> 
-   <td><p>运行所有升级前运行状况检查，并将其状态保存在sling <code>preUpgradeHCStatus.properties</code> home路径中名为的文件中。 如果参 <code>shutDownOnSuccess</code> 数设置为 <code>true</code>，则AEM实例将被关闭，但前提是所有升级前运行状况检查都处于“正常”状态。</p> <p>属性文件将用作将来任何升级的先决条件<br /> ，如果升级前运行状况检查执行失败，将停止升级过程<br /> 。 如果要忽略升级前运行状况检查的结果<br /> ，并仍要启动升级，则可以删除该文件。</p> </td> 
+   <td><p>运行所有升级前运行状况检查，并将其状态保存在sling <code>preUpgradeHCStatus.properties</code> home路径中名为的文件中。 如果参 <code>shutDownOnSuccess</code> 数设置为 <code>true</code>，则AEM实例将关闭，但前提是所有升级前运行状况检查都处于“正常”状态。</p> <p>属性文件将用作将来任何升级的先决条件<br /> ，如果升级前运行状况检查执行失败，将停止升级过程<br /> 。 如果要忽略升级前运行状况检查的结果<br /> ，并仍要启动升级，则可以删除该文件。</p> </td> 
   </tr> 
   <tr> 
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td> 
    <td>动作</td> 
-   <td>列表升级到指定的AEM版本时，将不再满足所<br /> 有导入的包。 目标AEM版本必须作为参数<br /> 提供。</td> 
+   <td>列表升级到指定的AEM版本时，将不再满足所<br /> 有导入的包。 必须将目标AEM版本<br /> 作为参数提供。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -246,11 +246,11 @@ OSGI `PreUpgradeTasksMBeanImpl` 组件预配置了一列表升级前运行状况
 
 >[!NOTE]
 >
->仅当您从AEM 5版本升级时，才需要此步骤。 可以完全跳过它以从旧版AEM 6进行升级。
+>只有从AEM 5版本升级时，才需要此步骤。 可以完全跳过它，从AEM 6旧版本升级。
 
 在Apache Oak中， `LoginModules` 在存储库级别配置自定义身份验证的方式已发生根本性改变。
 
-在使用CRX2配置的AEM版本中，将 `repository.xml` CRX2配置放在文件中，而从AEM 6开始，将通过Web控制台在Apache Felix JAAS配置工厂服务中完成。
+在AEM版本中，使用CRX2配置的配置放 `repository.xml` 置在文件中，而从AEM 6开始，通过Web控制台在Apache Felix JAAS配置工厂服务中完成配置。
 
 因此，升级后，必须为Apache Oak禁用和重新创建任何现有配置。
 
@@ -277,7 +277,7 @@ OSGI `PreUpgradeTasksMBeanImpl` 组件预配置了一列表升级前运行状况
 >
 >有关详细信息，请参 [阅使用外部登录模块进行身份验证](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)。
 >
->有关AEM 6中 `LoginModule` 的配置示例，请参 [阅使用AEM 6配置LDAP](/help/sites-administering/ldap-config.md)。
+>有关AEM 6中的 `LoginModule` 配置示例，请参 [阅使用AEM 6配置LDAP](/help/sites-administering/ldap-config.md)。
 
 ## 从/install目录中删除更新 {#remove-updates-install-directory}
 
@@ -285,7 +285,7 @@ OSGI `PreUpgradeTasksMBeanImpl` 组件预配置了一列表升级前运行状况
 >
 >在关闭AEM实例后，仅从crx-quickstart/install目录中删除包。 这是开始就地升级过程之前的最后步骤之一。
 
-删除通过本地文件系统上的目录部署的任何服务包 `crx-quickstart/install` 、功能包或修补程序。 这将防止在更新完成后在新AEM版本上意外安装旧的修补程序和Service Pack。
+删除通过本地文件系统上的目录部署的任何服务包 `crx-quickstart/install` 、功能包或修补程序。 这将防止在更新完成后在新的AEM版本上意外安装旧的修补程序和服务包。
 
 ## 停止任何冷待机实例 {#stop-tarmk-coldstandby-instance}
 
@@ -317,11 +317,11 @@ OSGI `PreUpgradeTasksMBeanImpl` 组件预配置了一列表升级前运行状况
 >
 >此升级前维护任务仅在以下情况下是必需的：
 >
->* 您正在从AEM 6.3以前的AEM版本升级
+>* 您是从AEM 6.3之前的版本升级
 >* 在升级过程中，您会遇到以下任何错误。
 
 
-服务用户最终可能被错误地标记为普通用户的较旧AEM版本时，会出现这种情况。
+服务用户最终可能被误标记为常规用户的AEM旧版本时，会出现特殊情况。
 
 如果发生这种情况，升级将失败，并显示如下消息：
 
@@ -344,7 +344,7 @@ java.lang.RuntimeException: Unable to create service user [communities-utility-r
 
 ## 根据需要升级数据库模式 {#upgrade-the-database-schema-if-needed}
 
-通常，AEM用于持久性的底层Apache Oak堆栈将根据需要负责升级数据库模式。
+通常，Apache Oak堆栈AEM用于持久性的底层将负责根据需要升级数据库模式。
 
 但是，当模式无法自动升级时，可能会出现这种情况。 这些环境大多是高安全性的，数据库在权限非常有限的用户下运行。 如果发生这种情况，AEM将继续使用旧模式。
 

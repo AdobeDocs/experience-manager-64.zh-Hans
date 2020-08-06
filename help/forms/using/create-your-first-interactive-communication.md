@@ -44,13 +44,13 @@ ht-degree: 0%
 电信运营商通过电子邮件向客户发送月度账单。 帐单是交互式通信。 电子邮件包括：
 
 * 受密码保护的PDF，在本教程中称为“打印渠道”。 它包括客户详细信息、帐单详细信息、费用汇总、支付帐单的便捷方式和使用详细信息。
-* 指向Web版本的帐单的链接，在本教程中称为Web渠道。 除了PDF版中介绍的详细信息外，Web版本还以图形形式呈现了使用详细信息，并基于Adobe Target提供了个性化优惠。 Web版本还包含在线支付表单。 无需离开IC即可进行在线支付。
+* 指向Web版本的帐单的链接，在本教程中称为Web渠道。 除了PDF版中介绍的详细信息外，Web版还以图形形式呈现了使用细节和基于Adobe Target的个性化优惠。 Web版本还包含在线支付表单。 无需离开IC即可进行在线支付。
 * 指向增值服务的链接，如在线存储、音乐订阅和点播视频订阅。
 
 ## 前提条件 {#prerequisites}
 
 * 设置AEM作者实例。
-* 在作 [者实例上安装](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms Add-on
+* 在作 [者实例上安装](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms加载项
 * 设置MYSQL数据库
 * 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于MySQL数据库，并使用Oracle的MySQL [JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-表单数据模型允许您将交互式通信连接到不同的数据源。 例如，AEM用户用户档案、REST风格的Web服务、基于SOAP的Web服务、OData服务和关系型数据库。 表单模式模型是业务实体和在连接数据源中可用服务的统一数据表示。 您可以将表单数据模型与交互式通信结合使用，从连接的数据源检索数据。 有关表单数据模型的更多信息，请 [参阅AEM表单数据集成](/help/forms/using/data-integration.md)。
+表单数据模型允许您将交互式通信连接到不同的数据源。 例如，AEM用户用户档案、RESTful Web服务、基于SOAP的Web服务、OData服务和关系型数据库。 表单模式模型是业务实体和在连接数据源中可用服务的统一数据表示。 您可以将表单数据模型与交互式通信结合使用，从连接的数据源检索数据。 有关表单数据模型的详细信息，请参 [阅AEM Forms数据集成](/help/forms/using/data-integration.md)。
 
 **目标：**
 
@@ -109,16 +109,16 @@ ht-degree: 0%
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-要创建交互式通信，您必须在AEM服务器上提供适用于打印和Web渠道的模板。
+要创建交互式通信，必须在AEM服务器上提供用于打印和Web渠道的模板。
 
-打印渠道的模板在Adobe Forms Designer中创建并上传到AEM服务器。 然后，这些模板便可在创建交互式通信时使用。
+打印渠道的模板在AdobeForms设计器中创建并上传到AEM服务器。 然后，这些模板便可在创建交互式通信时使用。
 
 Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建、编辑和启用Web模板。 创建并启用这些模板后，即可在创建交互式通信时使用。
 
 **目标：**
 
-* 使用Adobe Forms Designer创建用于打印渠道的XDP模板
-* 将XDP模板上传到AEM Forms Server
+* 使用AdobeForms设计器创建用于印刷渠道的XDP模板
+* 将XDP模板上传到AEM Forms服务器
 * 创建并启用Web渠道的模板
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
@@ -129,13 +129,13 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 
 为Web版本创建表单数据模型、文档片段和模板等所有构建基块后，您就可以开始创建交互式通信。
 
-交互式通信可通过两种渠道提供： 印刷和Web。 您还可以创建以打印渠道为主的交互式通信。 Web渠道的打印为主选项可确保Web渠道的内容、继承和数据绑定是从打印渠道派生的。
+交互式通信可通过两种渠道提供： 印刷和Web。 您还可以创建交互式通信，将打印渠道作为主控。 Web渠道的打印为主控选项可确保Web渠道的内容、继承和数据绑定是从打印渠道派生的。
 
 **目标：**
 
 * 为打印渠道创建交互式通信
 * 为Web渠道创建交互式通信
-* 以“打印为主”创建印刷和Web交互式通信
+* 创建印刷和Web交互式通信，将印刷作为主控
 * 在Web版交互通信中创建动态表
 * 在Web版本的交互通信中创建图表
 * 在Web版交互通信中创建超链接
@@ -146,7 +146,7 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
-创建交互式通信后，务必测试您在其中所做的每项更改。 测试交互式通信的每个字段都很繁琐。 AEM Forms提供一个SDK(Calvin SDK)，可在Web浏览器中自动测试交互式通信。
+创建交互式通信后，务必测试您在其中所做的每项更改。 测试交互式通信的每个字段非常繁琐。 AEM Forms公司提供一个SDK(Calvin SDK)，以在Web浏览器中自动测试交互式通信。
 
 **目标：**
 

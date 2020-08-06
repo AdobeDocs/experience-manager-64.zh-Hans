@@ -1,5 +1,5 @@
 ---
-title: AEM Core Concepts
+title: AEM核心概念
 seo-title: 基本信息
 description: 概述AEM的结构化方式以及如何在其上进行开发的核心概念，包括了解JCR、Sling、OSGi、调度程序、工作流和MSM
 seo-description: 概述AEM的结构化方式以及如何在其上进行开发的核心概念，包括了解JCR、Sling、OSGi、调度程序、工作流和MSM
@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# AEM Core Concepts {#aem-core-concepts}
+# AEM核心概念 {#aem-core-concepts}
 
 >[!NOTE]
 >
->在深入了解AEM的核心概念之前，Adobe建议完成WKND教程(位 [于开发AEM Sites文档入门中](/help/sites-developing/getting-started.md) )，了解AEM开发流程的概述和核心概念的简介。
+>在深入探讨AEM的核心概念之前，Adobe建议完成《开发AEM Sites [文档入门》中的WKND教程](/help/sites-developing/getting-started.md) ，以了解AEM开发过程的概述和核心概念的简介。
 
-## 在AEM上进行开发的先决条件 {#prerequisites-for-developing-on-aem}
+## 在AEM上开发的先决条件 {#prerequisites-for-developing-on-aem}
 
-在AEM基础上进行开发时，您需要以下技能：
+在AEM基础上进行开发需要以下技能：
 
 * Web应用技术的基本知识，包括：
 
@@ -44,13 +44,13 @@ ht-degree: 0%
 
 Java内容存储库(JCR)标准 [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)，指定一种独立于供应商和独立于实施的方式，用于在内容存储库的粒度级别上双向访问内容。
 
-规范领先者由Adobe Research（瑞士）AG持有。
+Adobe研究公司（瑞士）AG持有规格线索。
 
 JCR [API 2.0包](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) , javax.jcr。&amp;ast; 用于直接访问和操作存储库内容。
 
 ## Experience Server(CRX)和Jackrabbit {#experience-server-crx-and-jackrabbit}
 
-Experience Server提供AEM所构建并可用于构建自定义应用程序的Experience Services，并嵌入基于Jackrabbit的内容存储库。
+Experience Server提供AEM构建的Experience Services，可利用它构建自定义应用程序，并嵌入基于Jackrabbit的内容存储库。
 
 [Apache Jackrabbit](https://jackrabbit.apache.org/) 是JCR API 2.0的一个开放源，完全符合要求。
 
@@ -58,11 +58,11 @@ Experience Server提供AEM所构建并可用于构建自定义应用程序的Exp
 
 ### Sling简介 {#introduction-to-sling}
 
-AEM是使用Sling [构建的](https://sling.apache.org/site/index.html),Sling是一个基于REST原则的Web 应用程序框架，可轻松开发面向内容的应用程序。 Sling使用JCR存储库（如Apache Jackrabbit）或AEM（如CRX内容存储库）作为其数据存储。 Sling已经为Apache Software Foundation贡献了力量——有关更多信息，请访问Apache。
+AEM是使用Sling [构建的](https://sling.apache.org/site/index.html),Sling是一个基于REST原则的Web 应用程序框架，可轻松开发面向内容的应用程序。 Sling使用JCR存储库（如Apache Jackrabbit）或AEM（如果是）CRX内容存储库（如果是）作为其数据存储。 Sling已经为Apache Software Foundation贡献了力量——有关更多信息，请访问Apache。
 
 使用Sling，要呈现的内容类型不是第一个处理考虑事项。 而主要考虑的是URL是否解析为内容对象，然后可以找到脚本来执行渲染。 这为Web内容作者提供了极好的支持，使他们能够轻松地根据自己的要求定制页面。
 
-这种灵活性的优势在具有各种不同内容元素的应用程序中显而易见，或者在您需要可轻松自定义的页面时也显而易见。 尤其是在AEM解决方案中实施Web内容管理系统（如WCM）时。
+这种灵活性的优势在具有各种不同内容元素的应用程序中显而易见，或者在您需要可轻松自定义的页面时也显而易见。 特别是，在实施Web内容管理系统(如AEM解决方案中的WCM)时。
 
 参 [阅15分钟后发现Sling](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) ，了解使用Sling进行开发的最初步骤。
 
@@ -153,13 +153,13 @@ Sling还允许JCR节点以外的其他资源，但这是一个高级功能。
 * 绝对
 * 相对，到配置参数
 
-   Adobe建议使用相对路径，因为它们可以提高移植性。
+   相对路径是Adobe推荐的，因为它们提高了可移植性。
 
 所有Sling脚本都存储在或的子文件夹 `/apps` 中， `/libs`将按此顺序进行搜索(请参阅自定 [义组件和其他元素](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements))。
 
 需要注意的其他几点是：
 
-* 当需要方法(GET、POST)时，将根据HTTP规范（如jobs.POST.esp）以大写形式指定该方法（见下文）
+* 当需要“方法”(GET、POST)时，它将按照HTTP规范(如jobs.POST.esp)以大写形式指定（见下文）
 * 支持各种脚本引擎：
 
    * `.esp, .ecma`: ECMAScript(JavaScript)页（服务器端执行）
@@ -167,19 +167,19 @@ Sling还允许JCR节点以外的其他资源，但这是一个高级功能。
    * `.java`: Java Servlet编译器（服务器端执行）
    * `.jst`: JavaScript模板（客户端执行）
 
-Felix管理控制台()中列出了AEM的给定实例支持的脚本引擎的列表 `http://<host>:<port>/system/console/slingscripting`信息。
+AEM的给定实例支持的脚本引擎列表列在Felix管理控制台() `http://<host>:<port>/system/console/slingscripting`上。
 
 此外，Apache Sling支持与其他流行脚本引擎（如Groovy、JRuby、Freemarker）的集成，并提供了集成新脚本引擎的方法。
 
 使用上例，如果 `sling:resourceType` 是 `hr/jobs` :
 
-* 以。html结尾的GET/HEAD请求和URL（默认请求类型，默认格式）
+* GET/HEAD请求和以。html结尾的URL（默认请求类型，默认格式）
 
    脚本为/apps/hr/jobs/jobs.esp; sling:resourceType的最后一部分构成文件名。
 
-* POST请求（除GET/HEAD外的所有请求类型，方法名称必须为大写）
+* POST请求(除GET/HEAD外的所有请求类型，方法名称必须为大写)
 
-   脚本名称中将使用POST。
+   POST将用在脚本名称中。
 
    脚本是 `/apps/hr/jobs/jobs.POST.esp`。
 
@@ -279,7 +279,7 @@ Felix管理控制台()中列出了AEM的给定实例支持的脚本引擎的列�
 
 * 自动处理GET以外的http方法，包括：
 
-   * POST、PUT、DELETE，它们通过sling默认实现进行处理
+   * POST、PUT、DELETE，使用sling默认实现处理
    * sling: `POST.jsp` resourceType位置中的脚本
 
 * 您的代码架构不再像原来那样清晰、结构清晰； 对于大规模开发至关重要
@@ -355,7 +355,7 @@ OSGi定义了用于开发和部署模块化应用程序和库的架构（也称�
 
 有关操作节点对象的详细信息，请参 [阅Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html)。
 
-**在AEM中** ，所有用户输入都由构件管理。 它们通常用于控制内容的编辑。
+**AEM中的** Widget所有用户输入都由Widget管理。 它们通常用于控制内容的编辑。
 
 对话框通过组合构件来构建。
 
@@ -380,7 +380,7 @@ AEM已使用构件的ExtJS库进行开发。
 
 模板是节点的层次结构，其结构与要创建的页面相同，但没有任何实际内容。
 
-它定义用于呈现页面的页面组件和默认内容（主要顶级内容）。 内容定义了如何呈现它，因为AEM以内容为中心。
+它定义用于呈现页面的页面组件和默认内容（主要顶级内容）。 内容定义了如何呈现AEM以内容为中心。
 
 **页面组件(顶级组件** )用于呈现页面的组件。
 
@@ -432,7 +432,7 @@ S`tring pageName = currentPage.getName();`
 
 * `/libs`
 
-   属于AEM核心的库和定义。 中的子文件 `/libs` 夹表示现成的AEM功能，如搜索或复制。 不应修改 `/libs` 中的内容，因为它会影响AEM的工作方式。 网站的特定功能应在下面进行开 `/apps` 发(请 [参阅自定义组件和其他元素](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements))。
+   属于AEM核心的库和定义。 中的子文件 `/libs` 夹表示现成的AEM功能，例如搜索或复制。 不应修改 `/libs` 中的内容，因为它影响AEM的工作方式。 网站的特定功能应在下面进行开 `/apps` 发(请 [参阅自定义组件和其他元素](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements))。
 
 * `/tmp`
 
@@ -448,7 +448,7 @@ S`tring pageName = currentPage.getName();`
 
 ## 调度程序 {#the-dispatcher}
 
-调度程序是Adobe用于缓存和／或负载平衡的工具。 在调度程序下可找 [到更多信息](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)。
+调度程序是Adobe的缓存和／或负载平衡工具。 在调度程序下可找 [到更多信息](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)。
 
 ## FileVault（源修订系统） {#filevault-source-revision-system}
 
@@ -458,7 +458,7 @@ FileVault为您的JCR存储库提供文件系统映射和版本控制。 它可�
 
 ## 工作流 {#workflows}
 
-您的内容通常受组织流程的约束，包括由不同参加者批准和注销等步骤。 这些流程可以表示为工作流, [在AEM中定义和开发](/help/sites-developing/workflows-models.md)，然后根据需 [要应用到相应的](/help/sites-administering/workflows.md) 内容页 [或](/help/assets/assets-workflow.md) 数字资产。
+您的内容通常受组织流程的约束，包括由不同参加者批准和注销等步骤。 这些流程可以表示为工作流，在AEM [中进行定](/help/sites-developing/workflows-models.md)义和开发 [，然后根据需](/help/sites-administering/workflows.md) 要应用到相应的 [内容页](/help/assets/assets-workflow.md) 或数字资产。
 
 该工作流引擎用于管理工作流的实施及其后对内容的应用。
 

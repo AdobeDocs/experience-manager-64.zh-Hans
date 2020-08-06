@@ -1,8 +1,8 @@
 ---
 title: 自适应表单中的表
 seo-title: 自适应表单中的表
-description: '通过AEM Forms中的表组件，您可以在自适应表单中创建对移动布局具有响应的表，还允许使用XDP表组件。 '
-seo-description: '通过AEM Forms中的表组件，您可以在自适应表单中创建对移动布局具有响应的表，还允许使用XDP表组件。 '
+description: '通过AEM Forms的表组件，您可以以自适应表单创建对移动布局有响应的表，还允许使用XDP表组件。 '
+seo-description: '通过AEM Forms的表组件，您可以以自适应表单创建对移动布局有响应的表，还允许使用XDP表组件。 '
 uuid: 604cd51f-2a47-4410-b414-9cb13fe63713
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
@@ -90,7 +90,7 @@ AEM Forms在组件浏览器的提要栏中提供一个表组件，允许您在�
 
 >[!NOTE]
 >
->您可以通过更改LESS变量的值来更改标题行和正文行的颜色主题。 有关详细信息，请参 [阅AEM Forms中的主题](/help/forms/using/themes.md)。
+>您可以通过更改LESS变量的值来更改标题行和正文行的颜色主题。 有关详细信息，请参阅 [AEM Forms的主题](/help/forms/using/themes.md)。
 
 ## 动态添加或删除行 {#add-or-delete-a-row-dynamically}
 
@@ -132,7 +132,7 @@ AEM Forms在组件浏览器的提要栏中提供一个表组件，允许您在�
 
 ## 移动布局 {#mobile-layouts}
 
-自适应表单表格因其流畅且响应迅速的布局，提供了无与伦比的移动设备体验。 AEM Forms为表优惠了两种类型的移动布局——左侧的标题和可折叠列。
+自适应表单表格因其流畅且响应迅速的布局，提供了无与伦比的移动设备体验。 AEM Forms优惠了两种类型的表移动布局——左侧的标题和可折叠列。
 
 您可以从表的编辑组件对话框的样式选项卡中为表配置移动布局。
 
@@ -242,7 +242,7 @@ AEM Forms在组件浏览器的提要栏中提供一个表组件，允许您在�
 
 ## 使用XDP组件和XSD复杂类型 {#use-xdp-components-and-xsd-complex-types}
 
-如果您基于XFA表单模板创建了自适应表单，则XFA元素可在AEM内容查找器的“数据模型”选项卡中使用。 您可以以自适应形式拖放这些XFA元素，包括表。
+如果您基于XFA表单模板创建了自适应表单，则AEM Content Finder的“数据模型”选项卡中提供了XFA元素。 您可以以自适应形式拖放这些XFA元素，包括表。
 
 XFA表元素将映射到表组件，并以自适应表单开箱即用。 XDP表的所有属性和功能在移入自适应表单时都会保留，您可以像使用本机自适应表单表一样对它执行任何操作。 例如，如果XDP表中的某行被标记为可重复，则在自适应表单中删除时也会重复该行。
 

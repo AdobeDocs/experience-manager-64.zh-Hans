@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 26%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
 
 如果您希望与 Web 开发人员共享代码以实现响应式服务，可使用响应式代码功能。You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.
 
-如果您的网站位于第三方WCM上，则此功能有用。 但是，如果您的网站在AEM上，则非现场图像服务器会渲染该图像并将其提供到网页。
+如果您的网站位于第三方WCM上，则使用此功能很合理。 但是，如果您的网站位于AEM上，则非现场映像服务器会渲染该映像，并将其提供到网页。
 
 另请参阅[在网页上嵌入视频查看器。](embed-code.md)
 
 另请参阅[将 URL 关联到您的 Web 应用程序。](linking-urls-to-yourwebapplication.md)
 
-**要为响应式网站提供优化的图像**:
+**为响应式网站提供优化的图像**:
 
-1. 导航到要为其提供响应式代码的图像，然后在下拉菜单中，点按演 **[!UICONTROL 绎版]**。
+1. 导航到您要为其提供响应式代码的图像，然后在下拉菜单中，点按演 **[!UICONTROL 绎版]**。
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -39,17 +42,17 @@ source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
    >
    >必须发布选定的资产&#x200B;*和*&#x200B;选定的图像预设或查看器预设，才能使 **[!UICONTROL URL]** 或 **[!UICONTROL RESS]** 按钮可用。
    >
-   >Dynamic Media —— 混合模式要求您发布图像预设；Dynamic Media - Scene7模式会自动发布图像预设。
+   >Dynamic Media —— 混合模式要求您发布图像预设； Dynamic Media -Scene7模式自动发布图像预设。
 
 1. 点 **[!UICONTROL 击RESS]**。
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. 在“嵌 **[!UICONTROL 入响应式图像]** ”对话框中，选择并复制响应式代码文本，然后将其粘贴到您的网站中以访问响应式资产。
-1. 编辑嵌入代码中的默认断点，使其与响应式网站的代码断点直接匹配。此外，测试不同页面断点处提供的不同图像分辨率。
+1. 编辑嵌入代码中的默认断点，使其直接与响应式网站的代码断点相匹配。 此外，测试不同页面断点处使用的不同图像分辨率。
 
-## 使用HTTP/2交付Dynamic media资产 {#using-http-to-delivery-your-dynamic-media-assets}
+## 使用HTTP/2投放Dynamic Media资产 {#using-http-to-delivery-your-dynamic-media-assets}
 
-HTTP/2是新的、更新的Web协议，它改进了浏览器和服务器通信的方式。 它提供了更快的信息传输，并减少了所需的处理能力。 支持使用HTTP/2交付Dynamic Media资产，它提供更好的响应和加载时间。
+HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 HTTP/2支持Dynamic Media资产的投放，可提供更好的响应和加载时间。
 
-有关 [Dynamic Media帐户的HTTP/2快速入门的完整详细信息，请参阅](http2.md) HTTP2内容交付。
+有 [关使用Dynamic Media帐户](http2.md) HTTP/2入门的完整详细信息，请参阅内容的HTTP2投放。

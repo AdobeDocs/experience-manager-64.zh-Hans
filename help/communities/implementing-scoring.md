@@ -36,7 +36,7 @@ AEM Communities评分和徽章功能提供识别和奖励社区成员的能力�
 
 >[!CAUTION]
 >
->CRXDE Lite中可见的实现结构在UI可用时可能会发生更改。
+>CRXDE Lite中可见的实现结构在UI可用后可能会发生更改。
 
 ## 徽章 {#badges}
 
@@ -404,7 +404,7 @@ AEM Communities评分和徽章功能提供识别和奖励社区成员的能力�
 
 以下cURL命令显示HTTP请求分配和撤销标记所必需的内容。 基本格式为：
 
-cURL -i -X POST -H头 *-* u *signin * -F *operation * -F *badge * *member-用户档案-url*
+cURL -i -XPOST-H *头* -u *signin * -F *operation * -F *badge * *member-用户档案-url*
 
 *header* = &quot;Accept:application/json&quot;\
 要传递给服务器的自定义标头（必需）
@@ -428,6 +428,7 @@ cURL -i -X POST -H头 *-* u *signin * -F *operation * -F *badge * *member-用户
 >
 >* 启用隧道服务时，可以引 [用作者实](users.md#tunnel-service) 例。
 >* 可能是一个模糊的随机名称——请参 [阅关于可授权](../../help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) ID的安全清单
+
 >
 
 
@@ -470,7 +471,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 | **动词** | **描述** |
 |---|---|
-| 发布 | 成员创建日历事件 |
+| POST | 成员创建日历事件 |
 | 添加 | 日历事件上的成员注释 |
 | 更新 | 会员的日历事件或评论已编辑 |
 | 删除 | 会员的日历事件或评论已被删除 |
@@ -479,7 +480,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 | **动词** | **描述** |
 |---|---|
-| 发布 | 成员创建注释 |
+| POST | 成员创建注释 |
 | 添加 | 成员回复评论 |
 | 更新 | 已编辑会员的注释 |
 | 删除 | 会员的注释已删除 |
@@ -488,7 +489,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 | **动词** | **描述** |
 |---|---|
-| 发布 | 成员创建文件夹 |
+| POST | 成员创建文件夹 |
 | 附加 | 成员上传文件 |
 | 更新 | 成员更新文件夹或文件 |
 | 删除 | 成员删除文件夹或文件 |
@@ -497,7 +498,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 | **动词** | **描述** |
 |---|---|
-| 发布 | 成员创建论坛主题 |
+| POST | 成员创建论坛主题 |
 | 添加 | 成员对论坛主题的回复 |
 | 更新 | 会员的论坛主题或回复已编辑 |
 | 删除 | 会员的论坛主题或回复已被删除 |
@@ -506,7 +507,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 | **动词** | **描述** |
 |---|---|
-| 发布 | 成员创建博客文章 |
+| POST | 成员创建博客文章 |
 | 添加 | 博客文章上的成员评论 |
 | 更新 | 会员的博客文章或评论已编辑 |
 | 删除 | 会员的博客文章或评论已被删除 |
@@ -515,7 +516,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 | **动词** | **描述** |
 |---|---|
-| 发布 | 成员创建问题与答案 |
+| POST | 成员创建问题与答案 |
 | 添加 | 成员创建问题与答案 |
 | 更新 | 会员的问题与答案已编辑 |
 | 选择 | 已选择成员的答案 |
@@ -526,7 +527,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 | **动词** | **描述** |
 |---|---|
-| 发布 | 成员创建审阅 |
+| POST | 成员创建审阅 |
 | 更新 | 已编辑会员的审阅 |
 | 删除 | 会员的审阅已删除 |
 
@@ -585,7 +586,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 可以使用入门教程（参与）站点快 [速尝试评](getting-started.md) 分和标记：
 
-* 在创作时访问CRXDE Lite
+* 创作时的访问CRXDE Lite
 * 浏览到基页：
 
    * /content/sites/engage/cn/jcr:content

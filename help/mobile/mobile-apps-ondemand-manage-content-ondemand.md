@@ -1,8 +1,8 @@
 ---
 title: 管理内容
 seo-title: 管理内容
-description: 内容管理操作是帮助创建和管理应用程序内内容的构件。 可查看本页以了解更多信息。
-seo-description: 内容管理操作是帮助创建和管理应用程序内内容的构件。 可查看本页以了解更多信息。
+description: 内容管理操作是帮助在应用程序中创建和管理内容的构件。 可查看本页以了解更多信息。
+seo-description: 内容管理操作是帮助在应用程序中创建和管理内容的构件。 可查看本页以了解更多信息。
 uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 89fc3701-0472-4629-95d3-da577581a0f0
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 1%
 
 ---
 
@@ -19,25 +22,25 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
 
-内容管理操作是帮助创建和管理应用程序内内容的构件。 对应用程序内的内容执行以下操作。
+内容管理操作是帮助在应用程序中创建和管理内容的构件。 对应用程序中的内容执行以下操作。
 
 ## 内容概述 {#content-overview}
 
-如果您想到在线杂志，则主要内容包括文章、广告和封面。 可在AEM中创建三种主要类型的Mobile On-Demand内容：
+如果您想到在线杂志，主要内容包括文章、广告和封面。 可在AEM中创建三种主要类型的移动点播内容：
 
-* **文章**:基于文本和图画传达信息
-* **** 横幅：通常是图形促销链接
-* **** 集合：代表定义明确 *的桶* ，桶中填充适合封面主题的文章或横幅等内容
+* **文章**: 基于文本与艺术一起传递信息
+* **横幅：** 通常是图形促销链接
+* **集合：** 代表一个定义完 *善的* 、装满适合封面主题的文章或横幅等内容的桶
 
-* **** 共享资源：允许在文章之间重复使用或共享公共部分
+* **共享资源：** 允许在文章之间重复使用或共享公共部分
 
 >[!NOTE]
 >
->要进一步了解AEM mobile应用程序的设计注意事项，请参阅 [联机帮助中的AEM mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 。
+>要进一步了解AEM Mobile应用程序的设计注意事项，请参 [阅联机帮助中的AEM Mobile应用程序](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 设计注意事项。
 
-## 创建和管理内容 {#creating-and-managing-content}
+## Creating and Managing Content {#creating-and-managing-content}
 
 以下主题介绍了内容（即文章、横幅和集合）的创建和管理。 学习如何创建和管理内容后，您可以看到其他主题，如上传共享资源、发布／取消发布内容以及使用预检进行预览。
 
@@ -49,12 +52,12 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 >[!NOTE]
 >
->通常，您应在发布内容之前进行预检。 有关更 [多详细信息，请参阅](/help/mobile/aem-mobile-manage-ondemand-services.md) “使用预检预览”。
+>通常，在发布内容之前应进行预检。 有关更 [多详细信息，请参](/help/mobile/aem-mobile-manage-ondemand-services.md) 阅使用预检预览。
 
 ### 其他资源 {#additional-resources}
 
 要了解管理员和开发人员的角色和职责，请参阅以下资源：
 
-* [为AEM Mobile点播服务开发AEM内容](/help/mobile/aem-mobile-on-demand.md)
-* [管理内容以使用AEM Mobile点播服务](/help/mobile/aem-mobile.md)
+* [为AEM Mobile On-demand Services开发AEM内容](/help/mobile/aem-mobile-on-demand.md)
+* [管理内容以使用AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 

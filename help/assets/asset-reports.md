@@ -95,7 +95,7 @@ ht-degree: 8%
 
    ![链接共享报告的详细信息页](assets/link_share.png)
 
-1. 单击工 **[!UICONTROL 具栏]** 中的“下一步”。
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. 在“配 **[!UICONTROL 置列]** ”页中，默认情况下会选择某些列以显示在报告中。 您可以选择更多列。 取消选择选定列，以在报告中将其排除。
 
@@ -105,7 +105,7 @@ ht-degree: 8%
 
    ![选择或取消选择报告列](assets/custom_columns.png)
 
-1. 单击 **[!UICONTROL 工具栏]** 中的创建。 系统会显示一条消息，通知已开始生成报告。
+1. Click **[!UICONTROL Create]** from the toolbar. 系统会显示一条消息，通知已开始生成报告。
 1. 在“资 [!UICONTROL 产报表] ”页上，报表生成状态基于报表作业的当前状态，例如， [!UICONTROL 成功]、 [!UICONTROL 失败]、排队 [!UICONTROL 队列、或计]划。 通知收件箱中显示相同的状态。要视图报告页面，请单击报告链接。 或者，选择报表，然后单击工 **[!UICONTROL 具栏]** 中的视图。
 
    ![生成的报告](assets/report_page.png)
@@ -146,7 +146,7 @@ ht-degree: 8%
 
    要添加更多自定义列，请单 **[!UICONTROL 击]** “添加”，并重复步骤5和6。
 
-1. 单击 **[!UICONTROL 工具栏]** 中的创建。 系统会显示一条消息，通知已开始生成报告。
+1. Click **[!UICONTROL Create]** from the toolbar. 系统会显示一条消息，通知已开始生成报告。
 
 ## 配置清除服务 {#configure-purging-service}
 

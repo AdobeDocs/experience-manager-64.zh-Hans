@@ -34,7 +34,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->需要AEM 6.4.5.0或更高版本才能将可编辑模板与SPA编辑 [器一起使用](/help/sites-developing/spa-overview.md)。
+>AEM 6.4.5.0或更高版本才能将可编辑模板与SPA编辑器 [一起使用](/help/sites-developing/spa-overview.md)。
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ ht-degree: 8%
 >[!NOTE]
 >
 >以下教程可能也会对在新项目中设置可编辑的页面模板感兴趣：\
->[AEM Sites第2部分入门——创建基页和模板](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[AEM Sites第2部分入门——创建基本页面和模板](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Creating a New Template {#creating-a-new-template}
 
@@ -180,12 +180,12 @@ ht-degree: 8%
 
 要创建新文件夹，您可以执行以下操作之一：
 
-* 以编程方式或使用CRXDE Lite
+* 以编程方式或通过CRXDE Lite
 * 使用配置浏览器
 
 ### 使用CRXDE Lite {#using-crxde-lite}
 
-1. 可以通过编程方式或使用CRXDE Lite为实例创建新文件夹（在/conf下）。
+1. 可以通过编程或CRXDE Lite为实例创建新文件夹（在/conf下）。
 
    必须使用以下结构：
 
@@ -239,7 +239,7 @@ We.Retail引用实 [施的模板文件夹](/help/sites-developing/we-retail.md) 
 
 #### 模板作者组 {#the-template-authors-group}
 
-该 `template-authors` 组是用于管理模板访问权限的组，AEM是标准组，但为空。 必须将用户添加到项目／站点的组。
+组 `template-authors` 是用于管理模板访问权限的组，它是AEM的标准组，但为空。 必须将用户添加到项目／站点的组。
 
 >[!CAUTION]
 >
@@ -430,7 +430,7 @@ We.Retail引用实 [施的模板文件夹](/help/sites-developing/we-retail.md) 
 如果已创建可用作其他模板基础的模板，则可以将此模板复制为模板类型。
 
 1. 创建模板，就像此处介绍的任何可 [编辑模板一样](/help/sites-authoring/templates.md#creating-a-new-template-template-author)，它将作为模板类型的基础。
-1. 使用CRXDE Lite，将新创建的模板从节点复 `templates` 制到模板文 `template-types` 件夹下的 [节点](/help/sites-developing/page-templates-editable.md#template-folders)。
+1. 使用CRXDE Lite，将新创建的模板从节点 `templates` 复制到模板 `template-types` 文件夹下 [的节点](/help/sites-developing/page-templates-editable.md#template-folders)。
 1. 从模板文件夹下 `templates` 的节点中 [删除模板](/help/sites-developing/page-templates-editable.md#template-folders)。
 1. 在节点下的模板副本中，删 `template-types` 除所有属 `cq:template` 性 `cq:templateType``jcr:content` 和属性。
 

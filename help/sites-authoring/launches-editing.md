@@ -12,6 +12,9 @@ discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 99%
 
 ---
 
@@ -67,6 +70,7 @@ Live copy用于将源分 *支中的**内容同步到启动分支* （以使启�
    * [“引用”（“站点”控制台）](/help/sites-authoring/launches.md#launches-in-references-sites-console)，以显示可用的操作：
 
       * 选择&#x200B;**编辑启动项**。
+
    此时将显示源页面。
 
 1. 进行所需的更改，然后使用保存进行 **确认**。
@@ -87,6 +91,7 @@ Live copy用于将源分 *支中的**内容同步到启动分支* （以使启�
    * [“引用”（“站点”控制台）](/help/sites-authoring/launches.md#launches-in-references-sites-console)，以显示可用的操作：
 
       * 选择&#x200B;**编辑属性**。
+
    此时将显示详细信息。
 
 1. 进行所需的更改，然后使用保存进行 **确认**。

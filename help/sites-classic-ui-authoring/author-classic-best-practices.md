@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
 source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 82%
 
 ---
 
@@ -66,10 +69,10 @@ source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
 
 在管理和创作网站内容方面具有一些最佳实践，如下所述：
 
-创作：创作 [环境和工具](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) -提供有关如何创作页面的概述。
+创作： [创作环境和工具](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) -提供有关如何创作页面的概述。
 
-## Forms {#forms}
+## 表单 {#forms}
 
-自适应表单：使 [用自适应表单的最佳实践](/help/forms/using/adaptive-forms-best-practices.md) -介绍设置、创作和自定义自适应表单的最佳实践。
+自适应表单： [使用自适应表单的最佳实践](/help/forms/using/adaptive-forms-best-practices.md) -介绍有关设置、创作和自定义自适应表单的最佳实践。
 
-HTML5表单：设 [计HTML5表单的最佳实践](/help/forms/using/best-practices-for-html5-forms.md) -介绍处理HTML5表单布局和设计的最佳实践。
+HTML5表单： [设计HTML5表单的最佳实践](/help/forms/using/best-practices-for-html5-forms.md) -介绍处理HTML5表单布局和设计的最佳实践。

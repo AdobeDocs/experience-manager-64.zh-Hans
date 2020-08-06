@@ -26,7 +26,7 @@ ht-degree: 0%
 
 在此过程中：
 
-* `[appserver root]` 是运行AEM表单的应用程序服务器的主目录。
+* `[appserver root]` 是运行AEM forms的应用程序服务器的主目录。
 * `[type]` 文件夹名称会因您执行的安装类型而异。
 
 ## 创建SSL凭据 {#create-an-ssl-credential}

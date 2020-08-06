@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 92%
 
 ---
 
@@ -55,16 +58,16 @@ Adobe Experience Manager (AEM) 附带多种现成的组件，这些组件为网�
 
 以下页面提供了指向有关组件的一些其他重要信息的链接：
 
-* [核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) - 核心组件提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
+* [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) - 核心组件提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
 
 * [社区](/help/communities/author-communities.md) - 这些组件为网站提供了交互式功能，例如论坛和评论。Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
 
-* [电子商务](/help/sites-administering/ecommerce.md) - AEM中的电子商务功能还包括一系列组件。实际用途取决于所使用的商务引擎。
+* [电子商务](/help/sites-administering/ecommerce.md) - AEM中的电子商务功能还包括一系列组件。 实际用途取决于所使用的商务引擎。
 
 ### 配置组件 {#configuring-components}
 
 除了作者可在标准安装中访问的组件外，还可使用各种其他组件。
 
-* If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-authoring/templates.md) enable/disable these and edit parameters for specific components.
+* 如果您的页面基于建议的现代化可编辑的模板，则可以通过[编辑模板](/help/sites-authoring/templates.md)来启用/禁用这些组件及编辑特定组件的参数。
 * 如果您的页面基于静态模板，则可以使用[设计模式](/help/sites-authoring/default-components-designmode.md#enable-disable-components)启用/禁用这些组件及编辑特定组件的参数。
 

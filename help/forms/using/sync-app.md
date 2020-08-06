@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 0%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ## 同步应用程序 {#synchronizing-the-app-1}
 
-应用程序中的表单将从AEM Forms服务器下载。 表单下载在任务和表单选项卡下。 从表单创建的草稿将下载到草稿选项卡中，从任务创建的草稿将下载到任务选项卡中。 对于OSGi服务器上的独立表单，表单和草稿分别以“表单”和“草稿”选项卡下载。
+应用程序中的表单从AEM Forms服务器下载。 表单下载在任务和Forms选项卡下。 从表单创建的草稿下载在草稿选项卡中，从任务创建的草稿下载在任务选项卡中。 对于OSGi服务器上的独立表单，表单和草稿分别下载在Forms和草稿选项卡中。
 
-完成并提交表单后，如果应用程序处于联机状态，则表单将立即上传回AEM Forms服务器。 同步应用程序时，将从服务器获取表单。 但是，如果应用程序处于联机状态，草稿会立即与服务器同步。
+填写并提交表单后，如果应用程序处于联机状态，表单将立即上传回AEM Forms服务器。 同步应用程序时，将从服务器获取表单。 但是，如果应用程序处于联机状态，草稿会立即与服务器同步。
 
-默认情况下，当您与AEM Forms服务器联机时，您的应用程序每15分钟同步一次。 但是，您可以选择更改同步频率。 或者，您也可以随时手动同步应用程序。
+默认情况下，当您与AEM Forms服务器联机时，您的应用程序每15分钟同步一次。 但是，您可以选择更改同步频率。 或者，您可以随时手动同步应用程序。
 
 **手动同步应用程序**
 
-点按主屏 ![幕右下角的](assets/sync-app.png) “同步”按钮sync-app。
+点按主屏 ![幕右下角](assets/sync-app.png) 的“同步”按钮sync-app。
 
 **更改同步频率**
 
@@ -41,8 +44,8 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ### 技术规范 {#technical-specifications}
 
-* 将脱机应用程序数据提交到AEM Forms服务器的主逻辑包含在runtime/offline/util/offline.js中。
-* 在。js中，对processOfflineSubmittedSavedTasks(...)函数的调用将保存的／已提交的任务发送到服务器。 它还处理同步过程中的任何错误或冲突。 如果提交任务失败，则应用程序上的任务将标记为失败。 此外，任务仍保留在Outbox中。
-* syncSubmittedTask()和syncSavedTask()函数对各个任务执行操作。
-* 当用户选择将脱机状态同步到服务器或通过后台线程自动同步后，对processOfflineSubmittedSavedTasks()函数的调用由任务列表组件启动。
+* 将脱机应用程序数据提交到AEM Forms服务器的主要逻辑包含在runtime/offline/util/offline.js中。
+* 在。js中，对processOfflineSubmittedSavedTasks(...)函数的调用将保存的／已提交的任务发送到服务器。 它还处理同步过程中的任何错误或冲突。 如果提交任务失败，则应用程序上的任务将标记为失败。 此外，任务仍保留在发件箱中。
+* syncSubmittedTask()和syncSavedTask()函数对单个任务执行操作。
+* 在用户选择将脱机状态同步到服务器或通过后台线程自动同步后，任务列表组件将启动对processOfflineSubmittedSavedTasks()函数的调用。
 

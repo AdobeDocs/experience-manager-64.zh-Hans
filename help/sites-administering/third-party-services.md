@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 translation-type: tm+mt
 source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 11%
 
 ---
 
 
 # 与第三方服务集成{#integrating-with-third-party-services}
 
-通过AEM，您可以与以下非Adobe产品开箱即用地集成：
+借助AEM，您可以与以下非Adobe产品进行开箱即用集成：
 
-* Amazon SNS连接- Amazon web服务
+* AmazonSNS连接-AmazonWeb服务
 * BrightEdge Content Optimizer —— 针对搜索优化的内容
 * ExactTarget —— 电子邮件营销
 * Facebook Connect —— 社交网络
-* 通用分析代码片断——分析
+* 通用分析片段——分析
 * Microsoft Translator或其他机器翻译提供商
 * Pushwoosh连接——应用程序——推送通知
 * Salesforce —— 销售和CRM软件
@@ -43,7 +46,7 @@ Salesforce.com 作为一家企业云计算公司，引领着朝向社交企业�
 
 >[!NOTE]
 >
->Silverpop Engage集成不现成。 要将AEM与Silverpop Engage集成，请 [从包共享下载](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content) 包。
+>Silverpop Engage集成不现成可用。 要将AEM与Silverpop Engage集成， [请从“包共享](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content) ”下载包。
 
 Silverpop Engage提供营销自动化、电子邮件、移动和社交。
 
@@ -57,10 +60,10 @@ Silverpop Engage提供营销自动化、电子邮件、移动和社交。
 
 ## 与Facebook和Twitter集成 {#integrating-with-facebook-and-twitter}
 
-Facebook和Twitter是流行的社交网络服务。 AEM与Facebook和Twitter的集成使组织能够为拥有的数字资产提供Facebook或Twitter登录选项，然后根据个人资料信息个性化用户体验。 营销人员还可以将个人资料信息与来自其他来源的数据（如客户关系管理系统或网站资料）相结合，以创建统一的客户视图。
+Facebook和Twitter是流行的社交网络服务。 AEM与Facebook和Twitter的集成使组织能够为拥有的数字资产提供Facebook或Twitter登录选项，然后根据用户档案信息个性化用户体验。 营销人员还可以将用户档案信息与来自其他来源的数据(如客户关系管理系统或网站用户档案)相结合，以创建统一的客户视图。
 
-有关更 [多信息，请参阅](/help/communities/social-login.md) “社交登录”。
+有关更 [多信息](/help/communities/social-login.md) ，请参阅社交登录。
 
 ## 与其他提供商集成 {#integrating-with-other-providers}
 
-AEM允许您使用通用分析代码片断连接到其 [他外部提供者。](/help/sites-administering/external-providers.md)
+通过AEM，您可以使用通用分析片段连接到其 [他外部提供者。](/help/sites-administering/external-providers.md)

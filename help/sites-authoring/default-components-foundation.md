@@ -13,6 +13,9 @@ legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/ed
 pagetitle: Foundation Components
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '6592'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 >[!NOTE]
 >
->此部分介绍了基础组件，这些组件在 AEM 的多个版本中提供，并可在标准 AEM 安装中直接使用。但是，许多基础组件已在AEM 6.4中弃用。
+>此部分介绍了基础组件，这些组件在 AEM 的多个版本中提供，并可在标准 AEM 安装中直接使用。但AEM 6.4中已弃用许多基础组件。
 >
 >Adobe recommends leveraging the more modern and extensible [core components](https://helpx.adobe.com/experience-manager/core-components/using/authoring.html). These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://helpx.adobe.com/experience-manager/core-components/using/using.html) by your administrator.
 
@@ -29,7 +32,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 Some are immediately available through component browser, various others are also available by using [design mode](/help/sites-authoring/default-components-designmode.md) (if the page is based on a static template) or by [editing the template](/help/sites-authoring/templates.md) (if the page is based on an editable template).
 
-支持使用基础组件，但它们已被核心组件取代，这些核心组件提供了更多可扩展性和灵活性。
+支持使用基础组件，但它们已被核心组件所取代，这些核心组件优惠了更多的可扩展性和灵活性。
 
 >[!NOTE]
 >
@@ -58,7 +61,7 @@ Some are immediately available through component browser, various others are als
 ### 帐户项 {#account-item}
 
 >[!CAUTION]
->此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
+>此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)。
 
 您可以为链接定义标题和描述。
 
@@ -67,7 +70,7 @@ Some are immediately available through component browser, various others are als
 ### 自适应图像 {#adaptive-image}
 
 >[!CAUTION]
->此基础组件已被弃用。Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) instead.
+>此基础组件已被弃用。Adobe recommends leveraging the [Core Components Image Component](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/image.html) instead.
 
 “自适应图像”基础组件生成的图像的大小会被调整至适应打开网页的窗口。要使用该组件，可以从文件系统或 DAM 提供图像资源。打开网页后，Web 浏览器将下载该图像的一个副本，且大小已调整至适合当前窗口。
 
@@ -89,7 +92,7 @@ Some are immediately available through component browser, various others are als
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast;AEM中不支持动画。gif文件用于自适应再现。
+>&amp;ast;&amp;ast; AEM中不支持动画。gif文件，以实现自适应再现。
 
 #### 图像大小和质量 {#images-sizes-and-quality}
 
@@ -169,7 +172,7 @@ Some are immediately available through component browser, various others are als
 
 * **轮播**
 
-   在此，您可以指定传送的操作方式：
+   在此，您指定传送的操作方式：
 
    * 播放速度
 
@@ -177,11 +180,11 @@ Some are immediately available through component browser, various others are als
 
    * 过渡时间
 
-      在两张幻灯片之间过渡的时间（以毫秒为单位）。
+      两张幻灯片之间过渡的时间（以毫秒为单位）。
 
    * 控件样式
 
-      下拉菜单提供各种选项；例如，“上一个／下一个按钮”、“右上切换”。
+      下拉菜单中提供各种选项； 例如，上一个／下一个按钮、右上切换。
 
 * **列表**
 
@@ -189,7 +192,7 @@ Some are immediately available through component browser, various others are als
 
    * **生成列表对象**
 
-      生成页面列表的方法有多种——子页面、固定列表、搜索或高级搜索（所有方法如下所述）。
+      构建页面列表有多种方法——子页面、固定列表、搜索或高级搜索（所有方法如下所述）。
 
       请注意，无论选择哪种方式，包含在列表中的页面均应具有与此页面关联的图像，传送中将显示该图像。如果给定页面的“页面属性”下没有该页面的图像，则应在开始操作之前将图像与页面相关联，否则传送将显示空白（或大部分为空白）的页面。请参阅[编辑页面属性](/help/sites-authoring/editing-page-properties.md)。
 
@@ -202,7 +205,8 @@ Some are immediately available through component browser, various others are als
 手动或使用选择器指定一个路径。如果将此选项留空，则使用当前页面作为父页面。
       * **固定列表选项**
 
-         * **页面**&#x200B;选择页面列表。使 `+` 用添加更多条目和向上／向下按钮调整顺序。
+         * **页面**&#x200B;选择页面列表。 使用 
+`+` 以添加更多条目和上／下按钮来调整顺序。
       * **搜索选项**
 
          * **开始**
@@ -222,11 +226,11 @@ Some are immediately available through component browser, various others are als
             有关查询表达式的完整说明和更多示例，请参阅 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)。
    * **排序依据**
 
-      从下 `jcr:title`拉菜 `jcr:created`单中选 `cq:lastModified`择、、 `cq:template` 或。
+      从下 `jcr:title`拉 `jcr:created`菜单 `cq:lastModified`中选择、 `cq:template` 或。
 
    * **限制**
 
-      您希望在传送中使用的最大项目数；这是可选的。
+      您希望在传送中使用的最大项目数； 这是可选的。
 
 
 
@@ -331,7 +335,7 @@ Some are immediately available through component browser, various others are als
 ### Flash {#flash}
 
 >[!CAUTION]
->此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
+>此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)。
 
 Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Flash 资产拖动到组件上，也可以使用对话框：
 
@@ -387,7 +391,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
 >[!NOTE]
 >
->就地编辑器在编辑时使用图像的原始大小和长宽比。您还可以指定高度和宽度属性。在保存编辑更改时，将应用属性中定义的任何大小和长宽比限制。
+>就地编辑器在编辑时使用图像的原始大小和长宽比。 您还可以指定高度和宽度属性。 在保存编辑更改时，将应用属性中定义的所有大小和长宽比限制。
 >
 >根据您的实例，[页面设计](/help/sites-developing/designer.md)还可能会强制应用最小和最大限制；这些限制在项目实施过程中开发。
 
@@ -411,7 +415,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
 * **裁剪**
 
-   选择“裁剪”以裁剪图像。 可使用鼠标裁剪图像。
+   选择裁剪以裁剪图像。 可使用鼠标裁剪图像。
 
 * **旋转**
 
@@ -475,7 +479,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
          * **子项** （父页面）
 
-            手动或使用选择器指定路径。 如果将此选项留空，则使用当前页面作为父页面。
+            手动或使用选择器指定一个路径。 如果将此选项留空，则使用当前页面作为父页面。
       * **固定列表选项**
 
          * **页面**
@@ -528,12 +532,12 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
 以下示例以显示子页面列表的方式展示了&#x200B;**列表**&#x200B;组件（设计由站点设计的自定义 CSS 定义来控制）。
 
-![dc_list_use](assets/dc_list_use.png)
+![dc_列表_use](assets/dc_list_use.png)
 
 ### 登录 {#login}
 
 >[!CAUTION]
->此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
+>此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)。
 
 此组件提供了“用户名”和“密码”字段。
 
@@ -545,7 +549,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
    * 区域标签
 
-      输入字段的引入文本。
+      输入字段的导入文本。
 
    * 用户名标签
 
@@ -561,7 +565,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
    * 重定向到
 
-      您可以指定用户登录后应打开的网站上的页面。
+      您可以指定用户登录后应打开的网站页面。
 
 * 已登录
 
@@ -821,7 +825,7 @@ When you open the **Configure** dialog, you can also set:
 
    您可在此左对齐或右对齐图像。默认为&#x200B;**左**&#x200B;对齐，图像位于左侧。
 
-* **图像属性** (高&#x200B;**级图像属性**)
+* **图像属性** (**高级图像属性**)
 
    允许您指定以下内容：
 
@@ -885,7 +889,8 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 * 视频
 
    * **视频资产**
-   上传或拖放视频资产。
+
+   上传或删除视频资产。
 
    * **大小**
 
@@ -898,7 +903,8 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 >
 >* `.mp4`
 >* `Ogg`
->* `FLV` （Flash视频）
+>* `FLV` (Flash视频)
+
 >
 
 
@@ -1020,11 +1026,11 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 
    * **必填**
 
-      这取决于表单组件类型，但提供了一个或多个单击框以指示此字段或此字段的某些部分是必需的。
+      这取决于表单组件类型，但提供一个或多个单击框以指示该字段或该字段的某些部分是必需的。
 
    * **必需的消息**
 
-      通知用户此字段为必填字段的消息；必填字段还将标有星号和星号。
+      通知用户此字段为必填字段的消息； 必填字段还将标有星号和星号。
 
    * **约束**
 
@@ -1056,7 +1062,7 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 
 >[!NOTE]
 >
->基础组件表单组件仅支持使用其他基础组件表单组件（按钮、文本、隐藏等）。不支持在基础组件表单中使用[核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)表单组件（反之亦然）。
+>基础组件表单组件仅支持使用其他基础组件表单组件（按钮、文本、隐藏等）。不支持在基础组件表单中使用[核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)表单组件（反之亦然）。
 
 #### 表单开始 {#start-of-form}
 
@@ -1073,7 +1079,8 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 
 * **高级**
 
-   * **操作类**&#x200B;型表单需要操作。操作定义执行用户提交的数据时触发的操作（与HTML中的action=类似）。 有的需要相应的 **操作配置**。
+   * **操作类**&#x200B;型表单需要操作。 操作定义执行用户提交的数据时触发的操作（与HTML中的action=类似）。 有些人需要一个 
+**操作配置**.
 
       标准 AEM 安装中包含以下操作类型选项：
 
@@ -1219,7 +1226,7 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 
          * **查看数据...**
 
-            单击此按钮可访问有关批量编辑器中表单结果的信息。从此处，可以将信息导出到。tsv（制表符分隔）文件（例如，在Excel电子表格中使用）。
+            单击此按钮可访问有关批量编辑器中表单结果的信息。从此处，您可以将信息导出到。tsv（制表符分隔）文件（例如，在Excel电子表格中使用）。
       * **通过上传存储内容**
 
          此选项与“存储内容” **选项相同**。
@@ -1286,7 +1293,7 @@ See also [Configure the Video component](/help/sites-administering/config-video.
 ### Captcha {#captcha}
 
 >[!CAUTION]
->此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
+>此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)。
 
 Captcha 组件需要用户键入屏幕上所示的字母数字字符串。该字符串会随每次刷新而变。
 
@@ -1311,7 +1318,7 @@ Captcha 组件需要用户键入屏幕上所示的字母数字字符串。该字
 ### 信用卡详细信息 {#credit-card-details}
 
 >[!CAUTION]
->此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
+>此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)。
 
 此组件允许您提供输入信用卡详细信息所需的字段。您可以对其进行配置，以指定接受的卡类型和所需的信息（例如，安全码）。
 
@@ -1345,7 +1352,7 @@ Captcha 组件需要用户键入屏幕上所示的字母数字字符串。该字
 
 此组件允许您创建隐藏字段。隐藏字段可用于多种目的；例如，当您需要在提交表单后执行操作，或者在帖子处理期间需要使用隐藏数据时。
 
-![dc_form_hidenfield](assets/dc_form_hiddenfield.png)
+![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
 >

@@ -30,9 +30,9 @@ ht-degree: 1%
 
 ### AEM中的功能 {#features-within-aem}
 
-实施AEM时（尤其是第一次），您将需 [要查看AEM的功能和工作流](https://www.adobe.com/cn/marketing/experience-manager.html) ，以确定您需要／需要哪些方面。
+实施AEM（尤其是首次实施）时，您需要检查AEM [的功能和工作流](https://www.adobe.com/cn/marketing/experience-manager.html) ，以确定您需要／需要哪些方面。
 
-考虑您将使用的AEM功能以及对设计的影响； 例如：
+考虑您将使用的AEM的功能以及对您的设计的影响； 例如：
 
 * [商务](/help/sites-administering/ecommerce.md)
 * [屏幕](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
@@ -43,7 +43,7 @@ ht-degree: 1%
 * [社区](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
-此外，请查 [看AEM的](/help/release-notes/release-notes.md)各个版本的发行说明，了解何时添加了任何新增功能。
+此外，请查 [看发行说](/help/release-notes/release-notes.md)明，了解AEM的不同版本，以查看何时添加了任何新功能。
 
 ### 集成 {#integrations}
 
@@ -69,7 +69,7 @@ AEM可以与其他Adobe产品和／或第三方服务集成。 这些功能可�
 
 >[!NOTE]
 >
->这些要点是通用的， [最佳实践清单](/help/managing/best-practices.md) （与AEM相关）。
+>这些要点是通用的， [最佳实践清单](/help/managing/best-practices.md) (Best Practices Checklist)涉及与AEM相关的具体信息。
 
 * **角色**
 
@@ -133,7 +133,7 @@ AEM可以与其他Adobe产品和／或第三方服务集成。 这些功能可�
 * 向所有相关人员清楚传达信息。 尽管标准的项目管理实践，但明确的角色定义和良好的沟通无法让项目成为或中断项目，这种做法的重复频率也不够高。
 * 跟踪的任何信息只保留一个版本； 例如，错误跟踪、问题跟踪等。
 
-## 关键绩效指标和Target指标 {#key-performance-indicators-and-target-metrics}
+## 关键绩效指标和目标指标 {#key-performance-indicators-and-target-metrics}
 
 组织使用关键绩效指标(KPI)来评估其在触及目标方面的成功。 这些指标是可衡量的价值，可用来证明具体目标如何有效实现。
 
@@ -151,7 +151,7 @@ AEM可以与其他Adobe产品和／或第三方服务集成。 这些功能可�
 
 某些指标可以基于您识别和定义的目标指标。
 
-### Target指标 {#target-metrics}
+### 目标指标 {#target-metrics}
 
 指标用于定义网站质量的定量指标——它们基本上是您要实现的绩效目标的定义，可用于定义 [KPI（关键绩效指标）](#key-performance-indicators-and-target-metrics)。
 
@@ -163,7 +163,7 @@ AEM可以与其他Adobe产品和／或第三方服务集成。 这些功能可�
 * “当我搜索时，系 *统会停止* ” —— 哪类搜索请求会影响系统？
 * “下载文 *件* 需要花费很长时间”-什么是可接受的下载时间（在正常网络条件下）?
 
-Target量度在项目开始定义为：
+目标量度在项目开始定义为：
 
 * 指示要优惠的网站的预期维度
 * 指明要达到的最低质量
@@ -264,7 +264,7 @@ Target量度在项目开始定义为：
 那么，如何确定可实现（平均）响应时间？ 这通常是经验问题：
 
 * 网站的过去体验
-* 体验AEM
+* AEM的经验
 * 识别响应时间高于平均值的复杂页面（如果可能，应单独优化这些页面）
 
 但是，（在受控情况下）可以应用以下准则：
@@ -279,7 +279,7 @@ Target量度在项目开始定义为：
 
 * 在发布时衡量(无创作环境和／或CFC开销)
 * 在服务器上测量（无网络开销）
-* 未缓存(无AEM输出缓存，无Dispatcher缓存)
+* 未缓存(没有AEM输出缓存，没有调度程序缓存)
 * 仅适用于具有多个依赖关系(HTML、JS、PDF...)的复杂项目
 * 系统上没有其他负载
 
@@ -309,7 +309,7 @@ Target量度在项目开始定义为：
 
 为搜索请求设置目标同样是一个体验问题，具体取决于：
 
-* AEM的体验
+* AEM体验
 * 评估与其他目标相比使用搜索的频率
 * 您的持久性管理器
 * 您的搜索索引
@@ -329,7 +329,7 @@ Target量度在项目开始定义为：
 
 您的网站将提供给许多用户/访客，无论是作者还是发布环境。 测试时，数字通常比您使用的要多，但也会波动，难以预测。 您的网站需要针对平均数的并发用户/访客进行设计，而不必注意到负面的性能影响。 同样， `request.log` 还可以用于进行并发测试； 有关更 [多详细信息](/help/sites-deploying/configuring-performance.md) ，请参阅性能优化。
 
-并发用户数的Target取决于环境类型：
+并发用户数的目标取决于环境类型：
 
 * **创作环境**
 
@@ -359,7 +359,7 @@ Target量度在项目开始定义为：
    |---|---|---|
    | 客户端 | 用户计算机的计算能力。 | 页面布局的复杂性。 |
    | 网络 | 网络带宽。 | 页面大小（代码、图像等）。 |
-   | Dispatcher缓存 | Web服务器的服务器内存（主内存和硬盘）。 | Web服务器（主内存和硬盘）。 缓存页数和大小。 |
+   | 调度程序缓存 | Web服务器的服务器内存（主内存和硬盘）。 | Web服务器（主内存和硬盘）。 缓存页数和大小。 |
    | 输出缓存 | AEM服务器的服务器内存（主内存和硬盘）。 | 输出缓存中的页数和大小，每页的依赖关系数。 调度程序缓存会降低此卷。 |
    | Web 服务器 | Web服务器的计算能力。 | 请求数。 缓存会降低此卷。 |
    | 模板 | Web服务器的计算能力。 | 模板的复杂性。 |
@@ -377,7 +377,7 @@ Target量度在项目开始定义为：
 
 安全至关重要，也是一个日益严峻的挑战。 必须 ***从您*** 项目的最初阶段考虑并计划它。
 
-安 [全核对清单](/help/sites-administering/security-checklist.md) (Security Checklist)详细说明了您应采取的步骤，以确保部署AEM时AEM安装是安全的。 安全性（开发时）和用 [户管理和安全性](/help/sites-developing/security.md) 下 [涵盖其他安全方面](/help/sites-administering/security.md)。
+安 [全核对清单](/help/sites-administering/security-checklist.md) (Security Checklist)详细说明了您应采取的步骤，以确保AEM安装在部署时是安全的。 安全性（开发时）和用 [户管理和安全性](/help/sites-developing/security.md) 下 [涵盖其他安全方面](/help/sites-administering/security.md)。
 
 ## 并行和迭代任务 {#parallel-and-iterative-tasks}
 
@@ -427,7 +427,7 @@ Target量度在项目开始定义为：
       * 首次冲刺会导致首次部署到测试环境。
       * 每次冲刺都有可跑的结果。
       * 每个冲刺都会得到客户的认可（带有反馈的结构化测试的最小值）。
-   * 计划在项目过程中是否会更新可用的AEM版本。
+   * 计划在项目期间是否更新可用的AEM版本。
    * 在Sprint期间规划测试和优化。
    * 计划稳定化和优化阶段。
    * 创建要计划用于进一步发行的项目日志。
@@ -479,7 +479,7 @@ Target量度在项目开始定义为：
 
 >[!CAUTION]
 >
->这些数字只能用于初步估计。 经验丰富的AEM开发人员必须进行详细的分析。
+>这些数字只能用于初步估计。 经验丰富的AEM开发人员必须制作详细的分析。
 
 | 相位 | 努力 |
 |---|---|
@@ -495,7 +495,7 @@ Target量度在项目开始定义为：
 
 ## 参考体系结构 {#reference-architecture}
 
-该参考体系结构用于为AEM体系结构提供模板解决方案。 该参考体系结构解决了企业系统经常遇到的问题，包括扩展、可靠性和安全性。
+给出了参考体系结构，为AEM体系结构提供了模板解决方案。 该参考体系结构解决了企业系统经常遇到的问题，包括扩展、可靠性和安全性。
 
 应定义以下网站指标：
 
@@ -527,7 +527,7 @@ Target量度在项目开始定义为：
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM本身提供了一系列机制，帮助您监视、测试、调查和调试应用程序； 包括：</p>
+   <td><p>AEM本身提供了各种机制，帮助您监视、测试、调查和调试应用程序； 包括：</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">开发人员模式</a></li>
      <li>测试 <a href="/help/sites-developing/hobbes.md">控制台</a></li>
@@ -558,7 +558,7 @@ Target量度在项目开始定义为：
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse是一个开放源码IDE，由各种项目组成。 这些解决方案侧重于构建一个由可扩展框架、工具和运行时组成的开放式开发平台，用于在整个生命周期内构建、部署和管理软件。</p> <p>有关 <a href="/help/sites-developing/howto-projects-eclipse.md">更多信息，请参阅如何使用Eclipse开发</a> AEM项目。</p> </td>
+   <td><p>Eclipse是一个开放源码IDE，由各种项目组成。 这些解决方案侧重于构建一个由可扩展框架、工具和运行时组成的开放式开发平台，用于在整个生命周期内构建、部署和管理软件。</p> <p>有关 <a href="/help/sites-developing/howto-projects-eclipse.md">更多信息，请参阅如何使用Eclipse开发AEM</a> 项目。</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
@@ -581,7 +581,7 @@ Target量度在项目开始定义为：
 
 ### 最佳实践 {#best-practices}
 
-Adobe为所有阶段和受众提供更多最佳实践：
+Adobe为所有阶段和受众提供进一步的最佳实践：
 
 * [部署](/help/sites-deploying/best-practices.md)
 * [创作](/help/sites-authoring/best-practices.md)

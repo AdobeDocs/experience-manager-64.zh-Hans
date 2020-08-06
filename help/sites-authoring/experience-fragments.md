@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
 source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 82%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 您可以使用体验片段：
 
 * 如果作者希望重复使用页面的某些部分（某个体验片段），则需要复制并粘贴该片段。创建并维护这些复制/粘贴体验非常费时，而且容易导致用户错误。体验片段无需复制/粘贴。
-* 支持无外设CMS用例。 作者希望仅将AEM用于创作，但不希望将其交付给客户。 第三方系统/触点会使用该体验，然后将其提供给最终用户。
+* 支持无头 CMS 用例。作者希望仅将 AEM 用于创作，而不是用于提供给客户。第三方系统/触点会使用该体验，然后将其提供给最终用户。
 
 >[!NOTE]
 >
@@ -68,18 +71,18 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
 ## 组织您的体验片段 {#organizing-your-experience-fragments}
 
-建议：
-* 使用文件夹组织您的体验片段，
+建议执行以下操作：
+* 使用文件夹组织您的体验片段；
 
 * [在这些文件夹中配置允许的模板](#configure-allowed-templates-folder)。
 
 创建文件夹允许您：
 
-* 为您的体验片段创建有意义的结构；例如，根据
+* 为您的体验片段创建有意义的结构；例如，根据分类
 
    >[!NOTE]
    >
-   >无需将体验片段的结构与站点的页面结构相协调。
+   >无需将体验片段的结构与站点的页面结构保持一致。
 
 * [在文件夹级别分配允许的模板](#configure-allowed-templates-folder)
 
@@ -91,7 +94,7 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
 >[!CAUTION]
 >
->以下屏幕截图是从WKND站点使用Adobe Experience manager作为云服务拍摄的。
+>从WKND站点拍下以下屏幕截图，将Adobe Experience Manager用作Cloud Service。
 
 ![体验片段的文件夹](assets/xf-folders.png)
 
@@ -105,36 +108,36 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
 >[!NOTE]
 >
->也可以为实例配置允 [许的模板](#configure-allowed-templates-instance)，但不建议使用此方法， **** 因为升级时可能会覆盖这些值。
+>It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values may be overwritten upon upgrade.
 
 ### 为文件夹配置允许的模板 {#configure-allowed-templates-folder}
 
 >[!NOTE]
 >
->这是指定允许的模板的 **[!UICONTROL 推荐方法]**，因为升级时不会覆盖这些值。
+>这是指定&#x200B;**[!UICONTROL 允许的模板]**&#x200B;的推荐方法，因为升级时不会覆盖这些值。
 
 1. 导航到所需的&#x200B;**[!UICONTROL 体验片段]**&#x200B;文件夹。
 
-1. 选择文件夹，然后选择属 **[!UICONTROL 性]**。
+1. 选择文件夹，然后选择&#x200B;**[!UICONTROL 属性]**。
 
-1. 在“允许的模板”字段中指定用于检索所需模板 **[!UICONTROL 的正则表达式]** 。
+1. 在&#x200B;**[!UICONTROL 允许的模板]**&#x200B;字段中指定用于检索所需模板的正则表达式。
 
    例如：
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
 
-   ![体验片段属性——允许的模板](assets/xf-folders-templates.png)
+   ![体验片段属性 - 允许的模板](assets/xf-folders-templates.png)
 
-1. 选择 **[!UICONTROL 保存并关闭]**。
+1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
 ### 为实例配置允许的模板 {#configure-allowed-templates-instance}
 
 >[!CAUTION]
 >
->不建议使用此方法更改允 **[!UICONTROL 许的模板]** ，因为指定的模板可能会在升级时被覆盖。
+>It is not recommended to change the **[!UICONTROL Allowed Templates]** by this method, as the templates specified may be overwritten upon upgrade.
 >
->请仅出于信息目的使用此对话框。
+>此对话框仅供参考之用。
 
-1. Navigate to the required **[!UICONTROL Experience Fragments]** console.
+1. 导航到所需的&#x200B;**[!UICONTROL 体验片段]**&#x200B;控制台。
 
 1. 选择&#x200B;**[!UICONTROL 配置选项]**：
 
@@ -150,20 +153,20 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
 要创建体验片段，请执行以下操作：
 
-1. Select **[!UICONTROL Experience Fragments]** from the Global Navigation.
+1. 从全局导航中选择&#x200B;**[!UICONTROL 体验片段]**。
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. 导览至所需的文件夹，然后选择“ **[!UICONTROL 创建]**”。
+1. Navigate to the required folder and select **[!UICONTROL Create]**.
 
-1. 选择 **[!UICONTROL 体验片段]** ，以打开创 **[!UICONTROL 建体验片段向导]** 。
+1. 选择&#x200B;**[!UICONTROL 体验片段]**，以打开&#x200B;**[!UICONTROL 创建体验片段]**&#x200B;向导。
 
-   选择所需的&#x200B;**[!UICONTROL 模板]**，然后单击&#x200B;**[!UICONTROL 下一步]**：
+   选择所需的&#x200B;**[!UICONTROL 模板]**，然后选择&#x200B;**[!UICONTROL 下一步]**：
 
    ![xf-authoring-02](assets/xf-authoring-02.png)
 
 
-1. 输入体 **[!UICONTROL 验片段]** 的 属性。
+1. 输入&#x200B;**[!UICONTROL 体验片段]**&#x200B;的属性。
 
    **[!UICONTROL 标题]**&#x200B;是必填项。如果&#x200B;**[!UICONTROL 名称]**&#x200B;留空，将从&#x200B;**[!UICONTROL 标题]**&#x200B;派生名称。
 
@@ -212,6 +215,7 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
    * **[!UICONTROL 名称]**；如果留空，将从“标题”派生名称
    * **[!UICONTROL 描述]**
    * **[!UICONTROL 变体标记]**
+
    ![xf-authoring-07](assets/xf-authoring-07.png)
 
 1. 使用&#x200B;**[!UICONTROL 完成]**（勾选图标）确认，新的变体将显示在面板中：
@@ -234,6 +238,7 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
    * 将所需片段从资产浏览器拖放到该组件上
    * 从组件工具栏中选择&#x200B;**[!UICONTROL 配置]**，指定要使用的片段，然后使用&#x200B;**完成**（勾选图标）确认
+
    ![xf-authoring-10](assets/xf-authoring-10.png)
 
    >[!NOTE]
@@ -260,7 +265,7 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
    ![xf-authoring-13](assets/xf-authoring-13.png)
 
-1. 输入&#x200B;**[!UICONTROL 构建基块]**&#x200B;的名称，然后使用&#x200B;**[!UICONTROL 转换]**&#x200B;确认：
+1. 输入&#x200B;**[!UICONTROL 构建基块]**&#x200B;的名称，然后使用&#x200B;**[!UICONTROL 转换]**&#x200B;进行确认：
 
    ![xf-authoring-14](assets/xf-authoring-14.png)
 
@@ -272,7 +277,7 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
 您的构建基块会显示在&#x200B;**[!UICONTROL 构建基块]**&#x200B;选项卡中。对于每个基块，可执行以下操作：
 
-* 转到主页:在新选项卡中打开主变量
+* 转至母版：在新选项卡中打开母版变体
 * 重命名
 * 删除
 
@@ -284,15 +289,15 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
 ## 纯 HTML 呈现版本 {#the-plain-html-rendition}
 
-使用URL `.plain.` 中的选择器，您可以访问纯HTML再现。
+Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
 
-这可从浏览器访问，但其主要用途是允许其他应用程序（例如，第三方Web应用程序、自定义移动实施）仅使用URL直接访问体验片段的内容。
+可以从浏览器访问，但其主要用途是允许其他应用程序（例如，第三方Web应用程序、自定义移动实施）仅使用URL直接访问体验片段的内容。
 
 纯HTML再现将协议、主机和上下文路径添加到以下路径：
 
 * 类型： `src`、 `href`或 `action`
 
-* 或结束于： `-src`或 `-href`
+* 或结尾为： `-src`或 `-href`
 
 例如：
 
@@ -308,5 +313,5 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
 默认情况下，将以 HTML 格式提供体验片段。这可以由 AEM 和相似的第三方渠道使用。
 
-要导出到Adobe Target，请使用HTML。 请参阅 [Target 与体验片段集成](/help/sites-administering/experience-fragments-target.md)，以获取完整信息。
+对于出口至Adobe Target，使用HTML。 请参阅 [Target 与体验片段集成](/help/sites-administering/experience-fragments-target.md)，以获取完整信息。
 

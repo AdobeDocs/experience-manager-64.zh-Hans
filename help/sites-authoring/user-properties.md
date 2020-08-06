@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 translation-type: tm+mt
 source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 95%
 
 ---
 
@@ -95,6 +98,7 @@ Using the [User](/help/sites-authoring/user-properties.md#user-settings) option 
 
    * [用于编辑页面的键盘快捷键](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [控制台的键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md)
+
    此选项可启用键盘快捷键。默认情况下，这些键盘快捷键处于启用状态，但也可以将其禁用，例如，当用户要求使用特定辅助功能时。
 
 * **使用经典的创作体验**

@@ -356,7 +356,7 @@ Add an offer from the [offer library](/help/sites-authoring/offerlib.md) to an e
 
    单击或点按&#x200B;**查看方式**&#x200B;旁边的图标可采用拼贴或列表方式查看选件。
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![chlimage_1-70](assets/chlimage_1-78.png)
 
 #### 将自定义选件添加到库 {#adding-a-custom-offer-to-a-library}
 
@@ -661,7 +661,7 @@ The Goals &amp; Settings step of [the targeting process](/help/sites-authoring/c
   </tr> 
   <tr> 
    <td><strong>引擎</strong></td> 
-   <td>根据 <strong>要使用的引擎，在客户端规则 </strong>(无<strong> 跟踪)、Adobe Target、ContextHub和 </strong>Adobe Campaign之间进行选择。</td> 
+   <td>根据 <strong>要使用的引擎，在客户端规则(无 </strong>跟踪<strong> )、Adobe Target、ContextHub </strong>和Adobe Campaign之间进行选择。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -678,11 +678,11 @@ The Goals &amp; Settings step of [the targeting process](/help/sites-authoring/c
   </tr> 
   <tr> 
    <td><strong>准确定位</strong></td> 
-   <td><p>启用准确定位会告知组件在向Adobe Target发送请求之前等待Client Context或Context Hub数据可用。 这可能会增加加载时间。在创作时，“准确定位”始终处于启用状态。</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>注意：</strong> 对特定组件启用或禁用精确定位不会影响您已全局设置的设置。 您始终可以通过在组件中选择“准确定位”来覆盖全局设置。</p> </td> 
+   <td><p>启用准确定位会告知组件在将请求发送到Adobe Target之前等待Client Context或Context Hub数据可用。 这可能会增加加载时间。在创作时，“准确定位”始终处于启用状态。</p> <p>If you select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxDefine</code> first and an <code>mboxUpdate</code> later resulting in an Ajax request once the data is available.</p> <p>If you do not select the <strong>Accurate targeting</strong> check box, the mbox performs an <code>mboxCreate</code> resulting in a synchronous request right away (in this case, not all context data may be available yet).</p> <p><strong>注意：</strong> 对特定组件启用或禁用精确定位不会影响您已全局设置的设置。 您始终可以通过在组件中选择“准确定位”来覆盖全局设置。</p> </td> 
   </tr> 
   <tr> 
    <td><strong>包含已解析的区段</strong></td> 
-   <td><p>选中此复选框后，mbox调用中的所有已解析段以及页面和框架中配置的任何参数。</p> <p>这仅适用于同步AEM区段的XML API的情况。 如果您的 AEM 中存在不由 Adobe Target 处理的区段（如脚本区段），则此选项允许您在 AEM 中解析这些区段，并发送信息告知 Adobe Target 这些区段处于活动状态。</p> </td> 
+   <td><p>选中此复选框后，mbox调用中的所有已解析段以及页面和框架中配置的任何参数。</p> <p>这仅适用于同步AEM区段的XML API。 如果您的 AEM 中存在不由 Adobe Target 处理的区段（如脚本区段），则此选项允许您在 AEM 中解析这些区段，并发送信息告知 Adobe Target 这些区段处于活动状态。</p> </td> 
   </tr> 
   <tr> 
    <td><strong>继承的上下文参数</strong></td> 

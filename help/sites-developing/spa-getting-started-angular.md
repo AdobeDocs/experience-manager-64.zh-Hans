@@ -1,6 +1,6 @@
 ---
-title: AEM中SPA快速入门——角度
-seo-title: AEM中SPA快速入门——角度
+title: AEM中的SPA入门——角度
+seo-title: AEM中的SPA入门——角度
 description: 本文展示了一个SPA应用程序示例，介绍了它的组合方式，并允许您使用Angular框架快速启动并运行自己的SPA。
 seo-description: 本文展示了一个SPA应用程序示例，介绍了它的组合方式，并允许您使用Angular框架快速启动并运行自己的SPA。
 uuid: 29748b0d-c269-4d42-8f89-bd7477d997ad
@@ -10,19 +10,22 @@ content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '1065'
+ht-degree: 1%
 
 ---
 
 
-# AEM中SPA快速入门——角度 {#getting-started-with-spas-in-aem-angular}
+# AEM中的SPA入门——角度 {#getting-started-with-spas-in-aem-angular}
 
-单页应用程序(SPA)可以为网站用户优惠引人入胜的体验。 开发人员希望能够使用SPA框架构建站点，作者希望在AEM内为使用SPA框架构建的站点无缝编辑内容。
+单页应用程序(SPA)可以为网站用户优惠引人入胜的体验。 开发人员希望能够使用SPA框架构建站点，作者希望在AEM内无缝编辑内容，使用SPA框架构建站点。
 
-SPA创作功能优惠了用于在AEM中支持SPA的全面解决方案。 本文介绍Angular框架上的一个简化的SPA应用程序，并说明它如何组合在一起，从而使您能够快速启动并运行自己的SPA。
+SPA创作功能优惠了用于支持AEM内SPA的全面解决方案。 本文介绍Angular框架上的一个简化的SPA应用程序，并说明它如何组合在一起，从而使您能够快速启动并运行自己的SPA。
 
 >[!NOTE]
 >
->本文基于角框架。 有关React框架的相应文档，请参 [阅AEM中SPA快速入门- React](/help/sites-developing/spa-getting-started-react.md)。
+>本文基于角框架。 有关React框架的相应文档，请参 [阅AEM中SPA入门- React](/help/sites-developing/spa-getting-started-react.md)。
 
 >[!NOTE]
 >单页应用程序(SPA)编辑器功能需要AEM 6.4 service pack 2或更高版本。
@@ -31,9 +34,9 @@ SPA创作功能优惠了用于在AEM中支持SPA的全面解决方案。 本文�
 
 ## 简介 {#introduction}
 
-本文概括了简单SPA的基本功能，以及使您的SPA运行所需的最低要求。
+本文概括了简单SPA的基本功能，以及运行所需了解的最低要求。
 
-有关SPA在AEM中的工作方式的详细信息，请参阅以下文档:
+有关AEM中SPA的工作方式的详细信息，请参阅以下文档:
 
 * [SPA简介和演练](/help/sites-developing/spa-walkthrough.md)
 
@@ -45,7 +48,7 @@ SPA创作功能优惠了用于在AEM中支持SPA的全面解决方案。 本文�
 >
 >为了能够在SPA中创作内容，内容必须存储在AEM中并由内容模型公开。
 >
->如果在AEM之外开发的SPA不遵守内容模型合同，则此SPA将不可授权。
+>如果AEM之外开发的SPA不遵守内容模型合同，则该SPA将不可授权。
 
 此文档将介绍简化的SPA的结构并说明其工作方式，以便您将这一理解应用于您自己的SPA。
 
@@ -114,11 +117,11 @@ module.exports = {
 
 ### AEM 项目原型 {#aem-project-archetype}
 
-任何AEM项目都应利 [用AEM项目原型](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，该原型支持使用React或Angular的SPA项目并利用SPA SDK。
+任何AEM项目都应利用 [AEM Project](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)Archetype，它支持使用React或Angular的SPA项目并利用SPA SDK。
 
 ## 应用程序结构 {#application-structure}
 
-如前所述，包括依赖项和构建应用程序将留给您一个可上传到AEM实例的正常SPA包。
+如前所述，包括依赖项和构建应用程序将留给您一个可上传到AEM实例的工作SPA包。
 
 本文档的下一节将介绍AEM中SPA的结构、驱动应用程序的重要文件以及它们如何协同工作。
 
@@ -259,7 +262,7 @@ AEM中SPA的核心思想是将SPA组件映射到AEM组件，并在内容被修�
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
-此方 `MapTo` 法将SPA组件映射到AEM组件。 它支持使用单个字符串或字符串数组。
+该方 `MapTo` 法将SPA组件映射到AEM组件。 它支持使用单个字符串或字符串数组。
 
 `ImageEditConfig` 是一个配置对象，它通过为编辑器提供生成占位符所需的元数据来帮助启用组件的创作功能
 
@@ -290,8 +293,8 @@ AEM中SPA的核心思想是将SPA组件映射到AEM组件，并在内容被修�
 
 有关创建您自己的SPA的分步指南，请参 [阅AEM SPA编辑器入门- WKND事件教程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)。
 
-有关如何组织自己为AEM开发SPA的更多信息，请参阅为AEM开 [发SPA文章](/help/sites-developing/spa-architecture.md)。
+有关如何组织您自己为AEM开发SPA的更多信息，请参阅为AEM开 [发SPA一文](/help/sites-developing/spa-architecture.md)。
 
 有关动态模型到组件映射以及它在AEM中的SPA中的工作方式的更多详细信息，请参 [阅SPA的动态模型到组件映射文章](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)。
 
-如果您希望在AEM中为React或Angular之外的框架实施SPA，或只是希望深入了解AEM的SPA SDK的工作方式，请参阅 [SPA Blueprint文章](/help/sites-developing/spa-blueprint.md) 。
+如果您希望在AEM中为除React或Angular之外的框架实施SPA，或只是希望深入了解AEM的SDK的工作方式，请参阅 [SPA Blueprint文章](/help/sites-developing/spa-blueprint.md) 。

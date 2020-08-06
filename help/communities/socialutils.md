@@ -1,8 +1,8 @@
 ---
 title: SocialUtils重构
 seo-title: SocialUtils重构
-description: com.adobe.cq.social.ugcbase.SocialUtils包已在AEM 6.1中弃用
-seo-description: com.adobe.cq.social.ugcbase.SocialUtils包已在AEM 6.1中弃用
+description: AEM 6.1中已弃用com.adobe.cq.social.ugcbase.SocialUtils包
+seo-description: AEM 6.1中已弃用com.adobe.cq.social.ugcbase.SocialUtils包
 uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -19,42 +22,42 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 ## 已弃用SocialUtils包 {#socialutils-package-deprecated}
 
-com.adobe.cq.social. **ugcbase.SocialUtils包在AEM 6.1中已弃用** 。
+com.adobe.cq.so **cial.ugcbase.SocialUtils包在AEM** 6.1中已弃用。
 
-下表列出了用于代替SocialUtils方法的方法。
+下表列表了用于代替SocialUtils方法的方法。
 
-## SocialResourceUtilities包 {#socialresourceutilities-package}
+## SocialResourceUtilities包  {#socialresourceutilities-package}
 
 | com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities中的方法 |
 |---|
-| Boolean checkPermission（ResourceResolver解析程序，字符串路径，字符串操作） |  |
+| Boolean checkPermission(ResourceResolver, String path, String action) |  |
 | SocialResourceProvider getSocialResourceProvider（资源资源） |  |
 | SocialResourceConfiguration getStorageConfig（资源资源） |  |
 | 资源getUGCResource（资源用户资源） |  |
-| 资源getUGCResource(Resource userResource, resourceResolverFactory rrf) | 新版 |
+| 资源getUGCResource（资源用户资源，资源解析器工厂rrf） | 新版 |
 | 资源getUGCResource(Resource userResource、ResourceResolverFactory rrf、String resourceTypeHint) | 新版 |
-| 资源getUGCResource(Resource userResource, String resourceTypeHint) |  |
-| boolean hasMeadePermissions（资源资源） |  |
-| 字符串resourceToACLPath（资源资源） |  |
-| 字符串resourceToUGCStoragePath（资源资源） | 替换字符串resourceToUGCPath（资源资源） |
+| 资源getUGCResource（资源用户资源，字符串资源类型提示） |  |
+| boolean hasMedeatePermissions（资源资源） |  |
+| 字符串资源ToACLPath（资源资源） |  |
+| 字符串资源ToUGCStoragePath（资源资源） | 替换字符串resourceToUGCPath（资源资源） |
 | 字符串UGCToResourcePath（资源资源） |  |
 | 字符串UGCToResourcePath（字符串ugcPath） | 更改了签名 |
-| 字符串UGCToResourcePath（字符串ugcPath, resourceResolver） | 新版 |
+| 字符串UGCToResourcePath（字符串ugcPath，资源解析程序） | 新版 |
 
-| utilities.resource.api. `com.adobe.cq.social.`SocialResourceUtilities中的方法 |
+| utilities. `com.adobe.cq.social.`resource.api.SocialResourceUtilities中的方法 |
 |---|
 | SocialResourceProvider getSocialResourceProvider（资源资源） | 替换SocialResourceProvider getConfiguredProvider（资源资源） |
 
 ## SCFUtilities包 {#scfutilities-package}
 
-| utilities.scf.api. `com.adobe.cq.social.`SCFUtilites中的方法 |
+| 实用程序 `com.adobe.cq.social.`中的方法。scf.api.SCFUtilites |
 |---|
 | 字符串getAvatar(UserProperties userProperties) |
 | 字符串getAvatar(UserProperties userProperties, int size) |
 | 字符串getAvatar(UserProperties userProperties, String absoluteDefaultAvatar) |
-| 字符串getAvatar(UserProperties userProperties, String absoluteDefaultAvatar, SocialUtils.AVATAR_SIZE) |
-| 页面getContainingPage（资源） |
-| 字符串getSocialProfileURL（字符串用户名， resourceResolver，页面） |
+| 字符串getAvatar（UserProperties userProperties，字符串绝对DefaultAvatar, SocialUtils.AVATAR_SIZE） |
+| 页getContainingPage（资源资源） |
+| 字符串getSocialProfileURL（字符串用户名，资源解析程序，页面） |
 | UserProperties getUserProperties(ResourceResolver, String userId) |
 
 ## For Internal Use Only {#for-internal-use-only}
@@ -69,19 +72,19 @@ com.adobe.cq.social. **ugcbase.SocialUtils包在AEM 6.1中已弃用** 。
 | 字符串getPagePath（资源） |
 | 字符串getPagePath（字符串路径） |
 | 字符串getResourceTypeForIncludedResource（资源组件，字符串defaultResourceType，字符串designPropertyName） |
-| 字符串getResourceTypeFromDesign（资源，字符串样式属性，字符串defaultValue） |
-| boolean isResourceOwner（资源资源） |
+| 字符串getResourceTypeFromDesign（资源，字符串样式属性，字符串默认值） |
+| 布尔型isResourceOwner（资源资源） |
 | 字符串mapUGCPath（资源资源） |
-| 字符串mapUGCPath(String ugcPath, ResourceResolver)解析程序 |
-| boolean mayPost(ResourceResolver, Resource resource) |
-| 字符串prepareUserGeneratedContent(ResourceResolver, String path) |
+| 字符串mapUGCPath（字符串ugcPath，资源解析程序） |
+| boolean mayPost(ResourceResolver, Resource) |
+| 字符串prepareUserGeneratedContent（ResourceResolver，字符串路径） |
 
 ## 方法不再可用 {#methods-no-longer-available}
 
-| Node createNode（ResourceResolver解析程序，字符串路径， String nodeType） |
+| Node createNode(ResourceResolver, String path, String nodeType) |
 |---|
 | 资源getResourceAtPath(ResourceResolver, String path) |
-| 资源getResourceAtPath（ResourceResolver解析程序，字符串路径，字符串资源类型） |
+| 资源getResourceAtPath(ResourceResolver, String path, String resourceType) |
 | 配置getStorageCloudServiceConfig（资源资源） |
 | TranslationManager getTranslationManager() |
 | TranslationSaveQueue getTranslationSaveQueue() |

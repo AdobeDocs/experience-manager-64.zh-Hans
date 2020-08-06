@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1192'
+ht-degree: 61%
 
 ---
 
@@ -34,7 +37,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 配置 AEM 和 Adobe Campaign 后，您可以直接在 AEM 中创建电子邮件分发内容，然后在 Adobe Campaign 中对其进行处理。
 
-在AEM中创建Adobe Campaign内容时，必须先链接到Adobe Campaign服务，然后才能编辑内容以访问所有功能。
+在AEM中创建Adobe Campaign内容时，您必须先链接到Adobe Campaign服务，然后才能编辑内容以访问所有功能。
 
 以下是两种可能的情况：
 
@@ -54,15 +57,16 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    >[!NOTE]
    >
-   >[仅 Geometrixx 中提供了电子邮件示例](/help/sites-developing/we-retail.md#weretail)。请从“包共享”下载示例Geometrixx内容。
+   >[仅 Geometrixx 中提供了电子邮件示例](/help/sites-developing/we-retail.md#weretail)。请从包共享下载示例Geometrixx内容。
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
 1. Select **New** > **New Page** to create new email content.
 1. 选择特定于 Adobe Campaign 的可用模板之一，然后填写页面的常规属性。默认情况下，有两种模板可用：
 
-   * **Adobe Campaign电子邮件(AC 6.1)**:允许您先将内容添加到预定义的模板，然后再将其发送到Adobe Campaign 6.1进行分发。
-   * **Adobe Campaign电子邮件(ACS)**:允许您先将内容添加到预定义的模板，然后再将其发送到Adobe Campaign Standard进行分发。
+   * **Adobe Campaign电子邮件(AC 6.1)**: 允许您在将内容发送到Adobe Campaign6.1以供投放之前，将内容添加到预定义模板。
+   * **Adobe Campaign电子邮件(ACS)**: 允许您在将内容发送到Adobe Campaign Standard进行投放之前，将内容添加到预定义的模板。
+
    ![chlimage_1-173](assets/chlimage_1-173.png)
 
 1. Click **Create** to create your email or newsletter.
@@ -96,7 +100,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. Enter the subject and the text version of the email by selecting **Page properties** > **Email** from the toolbox.
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![chlimage_1-174](assets/chlimage_1-175.png)
 
 1. 通过从 Sidekick 中的可用元素中添加所需的元素，编辑电子邮件内容。要执行此操作，可拖放这些元素。然后，双击您要编辑的元素。
 
@@ -112,7 +116,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 编辑内容时，您可以插入：
 
-* Adobe Campaign 上下文字段。这些字段可以插入文本中，并根据收件人的数据（例如名字、姓氏或目标维度的任何数据）进行调整。
+* Adobe Campaign 上下文字段。这些字段可以插入文本中，并根据收件人的数据(例如名、姓或目标维的任何数据)进行调整。
 * Adobe Campaign 个性化基块。这些是与收件人数据无关的预定义内容块，如品牌徽标或指向镜像页面的链接。
 
 有关营销活动组件的完整说明，请参阅 [Adobe Campaign 组件](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)。
@@ -121,6 +125,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* 只会考虑 Adobe Campaign **配置文件**&#x200B;定位维度的字段。
 >* When viewing Properties from **Sites**, you do not have access to the Adobe Campaign context fields. 您可以在编辑时直接从电子邮件中访问这些字段。
+
 >
 
 
@@ -151,7 +156,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 打开要预览的新闻稿，然后单击“预览”（放大镜）以缩小 Sidekick。
 1. 单击其中一个电子邮件客户端图标，以查看新闻稿在每种电子邮件客户端中的外观。
 
-   ![chlimage_1-181](assets/chlimage_1-181.png)
+   ![chlimage_1-101](assets/chlimage_1-181.png)
 
 1. 展开 Sidekick 以再次开始编辑。
 
@@ -163,7 +168,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-To approve content for Adobe Campaign, apply the workflow by selecting **Workflow** in the sidekick and selecting **Approve for Adobe Campaign** and click **Start Workflow**. 执行步骤并批准内容。 您也可以拒绝该内容，方法是在上一个工作流步骤中选择&#x200B;**拒绝**&#x200B;而不是&#x200B;**批准**。
+To approve content for Adobe Campaign, apply the workflow by selecting **Workflow** in the sidekick and selecting **Approve for Adobe Campaign** and click **Start Workflow**. 完成这些步骤并批准内容。 您也可以拒绝该内容，方法是在上一个工作流步骤中选择&#x200B;**拒绝**&#x200B;而不是&#x200B;**批准**。
 
 ![chlimage_1-183](assets/chlimage_1-183.png)
 
@@ -175,7 +180,7 @@ To approve content for Adobe Campaign, apply the workflow by selecting **Workflo
 
 在 Adobe Campaign 6.1 中：
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-186](assets/chlimage_1-185.png)
 
 >[!NOTE]
 >

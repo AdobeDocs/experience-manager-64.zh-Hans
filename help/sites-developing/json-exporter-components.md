@@ -37,7 +37,7 @@ JSON导出基于Sling [Models](https://sling.apache.org/documentation/bundles/mo
 
 >[!NOTE]
 >
->有关使用Sling模型的示例，请参阅在AEM [中开发Sling模型导出器文章](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html)。
+>有关使用Sling模型的示例，请参阅在AEM [中开发Sling模型导出器一文](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html)。
 
 Sling Model实现类必须添加以下注释：
 

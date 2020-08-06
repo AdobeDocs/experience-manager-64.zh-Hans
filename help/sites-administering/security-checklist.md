@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Security Checklist{#security-checklist}
 
-本节介绍您应采取的各种步骤，以确保部署AEM时AEM安装安全。 清单应自上而下应用。
+本节介绍您应采取的各种步骤，以确保AEM安装在部署时是安全的。 清单应自上而下应用。
 
 >[!NOTE]
 >
@@ -46,17 +46,17 @@ ht-degree: 0%
 
 ### 安装安全修补程序 {#install-security-hotfixes}
 
-确保您已安装Adobe提供 [的最新安全修补程序](https://helpx.adobe.com/cn/experience-manager/kb/aem63-available-hotfixes.html)。
+确保已安装Adobe提供 [的最新安全修补程序](https://helpx.adobe.com/cn/experience-manager/kb/aem63-available-hotfixes.html)。
 
 ### 更改AEM和OSGi控制台管理员帐户的默认密码 {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe强烈建议在安装后更改特权AEM帐户 [**的口&#x200B;**令`admin`(在所有](#changing-the-aem-admin-password)实例上)。
+Adobe强烈建议在安装后更改特权AEM帐户 [**的口&#x200B;**`admin`令](#changing-the-aem-admin-password)（在所有实例上）。
 
 这些帐户包括：
 
 * AEM帐 `admin` 户
 
-   更改AEM管理员帐户的密码后，您在访问CRX时将需要使用新密码。
+   更改AEM admin帐户的密码后，您在访问CRX时需要使用新密码。
 
 * OSGi `admin` Web控制台的口令
 
@@ -66,7 +66,7 @@ Adobe强烈建议在安装后更改特权AEM帐户 [**的口&#x200B;**令`admin`
 
 #### 更改AEM管理员密码 {#changing-the-aem-admin-password}
 
-AEM管理员帐户的密码可通过Granite Operations - Users控 [制台进行](/help/sites-administering/granite-user-group-admin.md) 更改。
+AEM admin帐户的密码可通过Granite Operations - Users [控制台进行](/help/sites-administering/granite-user-group-admin.md) 更改。
 
 您可以在此编辑 `admin` 帐户 [并更改密码](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user)。
 
@@ -101,25 +101,25 @@ AEM管理员帐户的密码可通过Granite Operations - Users控 [制台进行]
 
 ### 实现自定义错误处理程序 {#implement-custom-error-handler}
 
-Adobe建议定义自定义错误处理程序页面，尤其是404和500个HTTP响应代码，以防止信息泄露。
+Adobe建议定义自定义错误处理程序页面，尤其是404和500 HTTP响应代码，以防止信息泄露。
 
 >[!NOTE]
 >
 >有关更 [多详细信息，请参阅如何创建自定义脚本](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html) 或错误处理程序知识库文章。
 
-### 完整的Dispatcher安全核对清单 {#complete-dispatcher-security-checklist}
+### 完整的调度程序安全清单 {#complete-dispatcher-security-checklist}
 
-AEMDispatcher是您的基础架构的关键部分。 Adobe强烈建议您填写调度程 [序安全核对清单](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)。
+AEM Dispatcher是您的基础架构的关键部分。 Adobe强烈建议您填写调度 [程序安全核对清单](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)。
 
 >[!CAUTION]
 >
->使用Dispatcher时，必须禁用“.form”选择器。
+>使用调度程序时，必须禁用“.form”选择器。
 
 ## 验证步骤 {#verification-steps}
 
 ### Configure replication and transport users {#configure-replication-and-transport-users}
 
-AEM的标准安装指定 `admin` 为默认复制代理中传输凭据 [的用户](/help/sites-deploying/replication.md)。 此外，管理员用户还用于在作者系统上源复制。
+AEM的标准安装指定 `admin` 为默认复制代理内传输凭据 [的用户](/help/sites-deploying/replication.md)。 此外，管理员用户还用于在作者系统上源复制。
 
 出于安全考虑，应更改这两种方法，以反映手头的特定用例，同时考虑到以下两个方面：
 
@@ -137,7 +137,7 @@ AEM 6引入了新的“操作”仪表板，旨在帮助系统操作员解决问
 
 ### 检查示例内容是否存在 {#check-if-example-content-is-present}
 
-所有示例内容和用户（例如Geometrixx项目及其组件）都应在生产系统上完全卸载和删除，然后才能公开访问。
+所有示例内容和用户(例如Geometrixx项目及其组件)都应在生产系统上完全卸载和删除，然后才能公开访问。
 
 >[!NOTE]
 >
@@ -147,21 +147,21 @@ AEM 6引入了新的“操作”仪表板，旨在帮助系统操作员解决问
 
 应先在创作和发布生产系统上卸载这些开发OSGi捆绑包，然后再使其可访问。
 
-* Adobe CRXDE支持（com.adobe.granite.crxde支持）
-* Adobe Granite CRX Explorer(com.adobe.granite.crx-explorer)
-* Adobe Granite CRXDE Lite(com.adobe.granite.crxde-lite)
+* AdobeCRXDE支持（com.adobe.granite.crxde支持）
+* AdobeGranite CRX Explorer(com.adobe.granite.crx-explorer)
+* AdobeGraniteCRXDE Lite(com.adobe.granite.crxde-lite)
 
 ### 检查Sling开发包是否存在 {#check-if-the-sling-development-bundle-is-present}
 
-适用 [于Eclipse的AEM Developer Tools](/help/sites-developing/aem-eclipse.md) 部署Apache Sling Tooliping支持安装(org.apache.sling.tooliping.support.install)。
+AEM [Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) 部署Apache Sling工具支持安装(org.apache.sling.tooliping.support.install)。
 
 应在创作和发布生产系统上卸载此OSGi捆绑包，然后才能使其可访问。
 
-### 防止跨站点请求伪造 {#protect-against-cross-site-request-forgery}
+### Protect反跨站伪造请求 {#protect-against-cross-site-request-forgery}
 
 #### CSRF保护框架 {#the-csrf-protection-framework}
 
-AEM 6.1附带一种机制，可帮助防止跨站点请求伪造攻击，该机制称为 **CSRF保护框架**。 有关如何使用它的详细信息，请查阅 [文档](/help/sites-developing/csrf-protection.md)。
+AEM 6.1附带一种机制，有助于防止跨站点请求伪造攻击，称为CSRF **保护框架**。 有关如何使用它的详细信息，请查阅 [文档](/help/sites-developing/csrf-protection.md)。
 
 #### Sling推荐人过滤器 {#the-sling-referrer-filter}
 
@@ -216,7 +216,7 @@ AEM 6.1附带一种机制，可帮助防止跨站点请求伪造攻击，该机�
 
 对于以下每项服务，需要更改指定的设置：
 
-* [Adobe Granite HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md):
+* [AdobeGranite HTML库管理器](/help/sites-deploying/osgi-configuration-settings.md):
 
    * 启用 **Minify** （删除CRLF和空格字符）。
    * 启 **用Gzip** （允许通过一个请求对文件进行Gzip压缩和访问）。
@@ -265,7 +265,7 @@ When working with AEM there are several methods of managing the configuration se
 
    调度程序将对所有有效变量(例如 `200` 返回响应并配置为缓存)进行缓存，最终将生成完整的文件系统，并且不为进一步请求提供服务。
 
-有许多用于防止此类攻击的配置点，在此我们仅讨论与AEM直接相关的攻击。
+防止此类攻击有许多配置点，此处我们只讨论与AEM直接相关的攻击。
 
 **配置Sling以防止DoS**
 
@@ -301,9 +301,9 @@ Sling以内 *容为中心*。 这意味着，当每个(HTTP)请求以JCR资源�
 
       **JSON最大结果** ( `json.maximumresults`)
 
-      在Apache Sling GET Servlet [的配置中](/help/sites-deploying/osgi-configuration-settings.md)。 超过此限制时，渲染将折叠。 AEM中Sling的默认值为 `200`。
+      在Apache SlingGET [Servlet的配置中](/help/sites-deploying/osgi-configuration-settings.md)。 超过此限制时，渲染将折叠。 AEM中Sling的默认值为 `200`。
 
-   * 作为预防措施，禁用其他默认呈示器（HTML、纯文本、XML）。 再次通过配 [置Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md)。
+   * 作为预防措施，禁用其他默认呈示器（HTML、纯文本、XML）。 再次通过配 [置Apache SlingGETServlet](/help/sites-deploying/osgi-configuration-settings.md)。
    >[!CAUTION]
    >
    >请勿禁用JSON渲染器，这是AEM正常操作所必需的。
@@ -316,9 +316,9 @@ Sling以内 *容为中心*。 这意味着，当每个(HTTP)请求以JCR资源�
 
 >[!NOTE]
 >
->此缓解措施应仅对未使用表单的AEM环境执行。
+>此缓解措施应仅对不使用Forms的AEM环境执行。
 
-由于AEM不为提供开箱即用索引，在查询中使 `FormChooserServlet`用表单选择器将触发代价高昂的存储库遍历，通常会使AEM实例陷入停顿。 表单选择器可以通过存在&amp; **ast;.form来检测。&amp;ast;** 查询。
+由于AEM不为查询提供开箱即用索引，在中 `FormChooserServlet`使用表单选择器将触发代价高昂的存储库遍历，通常会使AEM实例陷入停顿。 表单选择器可以通过存在&amp; **ast;.form来检测。&amp;ast;** 查询。
 
 要减轻此问题，请执行以下步骤：
 
@@ -331,9 +331,9 @@ Sling以内 *容为中心*。 这意味着，当每个(HTTP)请求以JCR资源�
 
 **缓解由资产下载Servlet引起的DoS**
 
-AEM中的默认资产下载Servlet允许经过身份验证的用户发出任意大型的并发下载请求，以创建对他们可见的资产的ZIP文件，这些文件可能会使服务器和／或网络过载。
+AEM中默认的资产下载Servlet允许经过身份验证的用户发出任意大的并发下载请求，以创建对他们可见的资产的ZIP文件，这些文件可能会使服务器和／或网络过载。
 
-为了减轻此功能导致的潜在DoS风险， `AssetDownloadServlet` 默认情况下，对于最新AEM版本上的发布实例，OSGi组件处于禁用状态。
+为了减轻由此功能引起的潜在DoS风险， `AssetDownloadServlet` 默认情况下，对于最新AEM版本上的发布实例，OSGi组件处于禁用状态。
 
 如果您的设置要求启用资产下载服务器，请参阅 [此文章](/help/assets/download-assets-from-aem.md#disable-asset-download-servlet) ，了解详细信息。
 
@@ -361,13 +361,13 @@ AEM中的默认资产下载Servlet允许经过身份验证的用户发出任意�
 
    >[!NOTE]
    >
-   >无需重新启动AEM。
+   >不需要重新启动AEM。
 
 ### 验证您没有在用户主路径中透露个人身份信息 {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
 
 通过确保不在存储库用户主路径中暴露任何个人不可识别信息，保护用户非常重要。
 
-自AEM 6.1起，用户（也称为可授权）ID节点名称的存储方式会随接口的新实现而发生 `AuthorizableNodeName` 更改。 新界面将不再在节点名称中显示用户ID，而是生成随机名称。
+自AEM 6.1起，用户（也称为可授权）ID节点名称的存储方式随接口的新实现而改 `AuthorizableNodeName` 变。 新界面将不再在节点名称中显示用户ID，而是生成随机名称。
 
 无需执行任何配置即可启用它，因为现在这是在AEM中生成可授权ID的默认方式。
 
@@ -418,7 +418,7 @@ AEM中的默认资产下载Servlet允许经过身份验证的用户发出任意�
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-1. 复制HMAC和主文件。
+1. 复制HMAC和主控文件。
 1. 然后，转到要将HMAC密钥重复到的目标实例，并导航到数据文件夹。 例如：
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
@@ -429,7 +429,7 @@ AEM中的默认资产下载Servlet允许经过身份验证的用户发出任意�
 
 >[!NOTE]
 >
->首次安装AEM时，您可以通过添加以下参数还原到6.3之前的密钥存储方法：
+>您可以在首次安装AEM时添加以下参数，还原到6.3之前存储密钥的方法：
 >
 >`-Dcom.adobe.granite.crypto.file.disable=true`
 

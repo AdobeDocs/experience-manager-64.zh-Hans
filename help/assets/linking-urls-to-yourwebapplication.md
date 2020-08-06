@@ -1,8 +1,8 @@
 ---
 title: 将 URL 关联到您的 Web 应用程序
 seo-title: 将 URL 关联到您的 Web 应用程序
-description: 如何在Dynamic media中将URL关联到Web应用程序
-seo-description: 如何在Dynamic media中将URL关联到Web应用程序
+description: 如何在Dynamic Media中将URL关联到您的Web应用程序
+seo-description: 如何在Dynamic Media中将URL关联到您的Web应用程序
 uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
 source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
+workflow-type: tm+mt
+source-wordcount: '1289'
+ht-degree: 28%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
 
 您的网站和应用程序通过URL调用访问Dynamic Media服务。 在您发布资产后，Dynamic Media 会激活引用该资产的 URL 字符串。您可以将这些 URL 粘贴到 Web 浏览器中以进行测试。
 
-仅当您未将AEM用作WCM *时* ，才链接到URL。 链接与嵌入——用于将视频播放器作为弹出窗口或模态窗口传送。 如果您使用AEM作为WCM, [则直接在页面上添加资产。](adding-dynamic-media-assets-to-pages.md)
+仅当您未将AEM用作 *WCM* 时，才链接到URL。 链接与嵌入——用于以弹出窗口或模态窗口的形式传送视频播放器。 如果您使用AEM作为WCM, [则直接在页面上添加资产。](adding-dynamic-media-assets-to-pages.md)
 
-要将这些URL字符串放置到网页和应用程序中，请从Dynamic media复制这些字符串。
+要将这些URL字符串放置到网页和应用程序中，请从Dynamic Media复制它们。
 
 >[!NOTE]
 >
@@ -65,7 +68,7 @@ See also [Uploading Assets.](managing-assets-touch-ui.md#uploading-assets)
 
 1. 根据您选择的资产，执行以下操作之一：
 
-   * 如果您选择了图像，请在下拉菜单中点按演 **[!UICONTROL 绎版]**。
+   * 如果您选择了图像，请点按下拉菜单中的演 **[!UICONTROL 绎版]**。
 
       Under the **[!UICONTROL Dynamic]** heading, tap a preset name to view its rendition in the right frame. 您可能需要滚动演绎版列表才能看到动态标题。
 
@@ -73,9 +76,9 @@ See also [Uploading Assets.](managing-assets-touch-ui.md#uploading-assets)
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * 如果您在下拉菜单中选择了旋转集、图像集、旋转集或视频，请点按查看 **[!UICONTROL 器]**。
+   * 如果您在下拉菜单中选择了旋转集、图像集、旋转集或视频，请点按查 **[!UICONTROL 看器]**。
 
-      在左边栏中，点按查看器预设名称。集合或视频的预览将在单独的页面中打开。
+      在左边栏中，点按查看器预设名称。预览集或视频将在单独的页面中打开。
 
       In the left rail, at the bottom, tap **[!UICONTROL URL]**.
 
@@ -87,12 +90,12 @@ See also [Uploading Assets.](managing-assets-touch-ui.md#uploading-assets)
 
 ## 获取静态资产的URL {#obtaining-a-url-for-a-static-asset}
 
-Dynamic media支持静态资产的交付，静态资产是除图像和视频之外的其他资产。 支持的静态资产格式用于交付包括：
+Dynamic Media支持静态资产的投放，静态资产是除图像和视频之外的其他资产。 支持的静态资产投放格式包括：
 
 * 动画GIF
 * 音频文件
 * CSS
-* JavaScript（当您的公司配置了自己的域时）
+* JavaScript(当公司配置了自己的域时)
 * PDF
 * SVG
 * XML
@@ -100,7 +103,7 @@ Dynamic media支持静态资产的交付，静态资产是除图像和视频之�
 
 **要获取静态资产的URL，请执行以下操作**:
 
-1. 导航到要复制其URL的*已发布*静态资产，然后点按资产以将其打开。
+1. 导航到您要复制其URL的*已发布*静态资产，然后点按资产以将其打开。
 
    Remember that URLs are only available to copy *after* you have first *published* the static asset.
 
@@ -115,35 +118,35 @@ Dynamic media支持静态资产的交付，静态资产是除图像和视频之�
          For example, `https://aem.com/is/content/adobe/image.gif`.
    * 单击 **[!UICONTROL 资产>动态演绎版]**，然后点按静态资产的动态演绎版并复制URL。
 
-      更改复制的URL以在路 `is/content` 径中使用，而不是 `is/image/`。
+      更改复制的URL，以 `is/content` 便在路径中使用 `is/image/`。
 
 
 ## 获取已发布视频演绎版的视频URL {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. 在AEM中，导航到工 **[!UICONTROL 具>部署>云>云服务]**。
+1. 在AEM中，导航到 **[!UICONTROL 工具>部署>云>Cloud Services]**。
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面上，向下滚动到 **[!UICONTROL Dynamic Media 云服务]**&#x200B;标题，然后点按显示&#x200B;**[!UICONTROL 配置]**。
 1. 在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下，点按所需配置的名称。
 
-1. 在“ **[!UICONTROL Dynamic Media Cloud Settings]** ”页面的“ **[!UICONTROL 视频服务URL”下]**，复制整个URL路径。 您稍后将需要复制的URL路径。
+1. 在Dynamic Media **[!UICONTROL Cloud设置页]** 面的视频 **[!UICONTROL 服务URL下]**，向下复制整个URL路径。 您稍后将需要复制的URL路径。
 
    例如，URL路径可能与以下内容类似：
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (上述路径仅供说明；它不是您复制的实际路径。)
+   (以上路径仅供说明； 它不是您复制的实际路径。)
 
 1. 在&#x200B;**[!UICONTROL 注册 ID]** 下，复制 ID 最后一部分中的客户名称。
 
    例如，如果注册ID为 `87654321|MyCompany`，则客户名称为 `MyCompany`。
 
-1. 在页面的左上角附近，点按 **[!UICONTROL Cloud Services**，然后点按AEM图标并导航到“常规” **[!UICONTROL >“CRXDE Lite]**”。
+1. 在页面的左上角附近，点按[! **UICONTROLCloud Services**，然后点按AEM图标并导航到 **[!UICONTROL 常规>CRXDE Lite]**。
 1. 从JCR（Java内容存储库）中向下复制整个视频再现路径。
 
    例如，视频的再现路径可能与以下内容类似：
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (上述路径仅供说明；它不是您复制的实际路径。)
+   (以上路径仅供说明； 它不是您复制的实际路径。)
 
 1. 按照以下顺序排列复制的信息，以形成完整的URL路径：
 
@@ -153,39 +156,40 @@ Dynamic media支持静态资产的交付，静态资产是除图像和视频之�
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
-   这是已发布视频再现的完整视频URL。
+   这是已发布视频演绎版的完整视频URL。
 
 ## 获取自适应流播放(HLS)的视频URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. 在AEM中，导航到工 **[!UICONTROL 具>部署>云>云服务]**。
+1. 在AEM中，导航到 **[!UICONTROL 工具>部署>云>Cloud Services]**。
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面上，向下滚动到 **[!UICONTROL Dynamic Media 云服务]**&#x200B;标题，然后点按显示&#x200B;**[!UICONTROL 配置]**。
 1. 在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下，点按所需配置的名称。
-1. 在“ **[!UICONTROL Dynamic Media Cloud服务设置]** ”页上，执行以下操作：
+1. 在Dynamic Media **[!UICONTROL Cloud Services设置页]** ，执行以下操作：
 
-   * 在“ **[!UICONTROL 视频服务URL]**”下，复制整个URL路径。 在这些步骤的后面，您将需要复制的URL路径。 例如，URL路径可能与以下内容类似：
+   * 在“ **[!UICONTROL 视频服务]** URL”下，复制整个URL路径。 在这些步骤之后，您将需要复制的URL路径。 例如，URL路径可能与以下内容类似：
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (上述路径仅供说明；它不是您复制的实际路径。)
+   (以上路径仅供说明； 它不是您复制的实际路径。)
 
    * 在&#x200B;**[!UICONTROL 注册 ID]** 下，复制 ID 最后一部分中的客户名称。在稍后这些步骤中，您将需要复制的客户名称。
 
-      例如，如果注册ID是 `87654321|demoCo`，则您复制的客户名称将为 `demoCo`。
+      例如，如果注册ID是 `87654321|demoCo`您复制的客户名称 `demoCo`。
 
 
-1. 根据您使用的视频交付协议，复制相应的协议选择器。 在以下步骤中，您稍后将需要复制的协议选择器。
+1. 根据您使用的视频投放协议，复制相应的协议选择器。 在这些步骤的后面，您需要复制的协议选择器。
 
-   | 您使用的视频交付协议 | 要使用的协议选择器 |
+   | 您使用的视频投放协议 | 要使用的协议选择器 |
    |---|---|
-   | HTTP如 <br> 果您使用HTTP（非安全视频交付），请确保在您之前复制的视频服务URL值中将https更改为http。 | `public/` |
+   | HTTP <br> 如果您使用HTTP(非安全视频投放)，请确保在您之前复制的视频服务URL值中将https更改为http。 | `public/` |
    | HTTPS | `public-ssl/` |
 
-1. 在AEM中复制由Dynamic media处理的完整视频资产路径。 在这些步骤的稍后部分，您将需要此复制的视频资产路径。
+1. 在AEM中复制完整的视频资产路径，由Dynamic Media处理。 在这些步骤的稍后部分，您将需要此复制的视频资产路径。
 
    例如：
 
    `/content/dam/marketing/MyVideo.mp4`
 
-1. 按照以下顺序合并之前复制的所有部分以创建字符串：
+1. 按照以下顺序合并之前复制的所有片段以创建字符串：
 
    &lt; `video service URL`>&lt; `protocol selector`>&lt; `customer name`>&lt; `video asset path`>
 
@@ -193,12 +197,12 @@ Dynamic media支持静态资产的交付，静态资产是除图像和视频之�
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4`
 
-1. 在字符串末尾附 `.m3u8` 加以完成URL。 例如，在上一 `.m3u8` 步的字符串后面附加完整的URL路径将显示如下：
+1. 通过附加到字符串 `.m3u8` 的末尾来完成URL。 例如，在上一 `.m3u8` 步中附加到字符串后，完整的URL路径将显示如下：
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
 ## 使用HTTP/2交付Dynamic Media资产 {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2是新的、更新的Web协议，它改进了浏览器和服务器通信的方式。 它提供了更快的信息传输，并减少了所需的处理能力。 Dynamic media资产的交付现在可以通过HTTP/2进行，从而提供更好的响应和加载时间。
+HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 Dynamic Media资产的投放现在可以通过HTTP/2，从而提供更好的响应和加载时间。
 
-有关 [Dynamic Media帐户的HTTP/2快速入门的完整详细信息，请参阅](http2.md) HTTP2内容交付。
+有 [关使用Dynamic Media帐户](http2.md) HTTP/2入门的完整详细信息，请参阅内容的HTTP2投放。

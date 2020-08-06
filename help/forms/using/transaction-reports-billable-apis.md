@@ -21,7 +21,7 @@ ht-degree: 7%
 
 列表作为事务处理的所有API
 
-AEM Forms提供多个API，用于提交表单、处理文档和渲染文档。 某些API作为事务处理入账，而其他API则可免费使用。 此文档提供在事务报表中作为事务处理入账的所有API的列表。 以下是使用收费API的几个常见情况：
+AEM Forms提供多个API来提交表单、处理文档和渲染文档。 某些API作为事务处理入账，而其他API则可免费使用。 此文档提供在事务报表中作为事务处理入账的所有API的列表。 以下是使用收费API的几个常见情况：
 
 * 提交自适应表单、HTML5表单和表单集
 * 渲染交互式通信的打印版或Web版
@@ -29,17 +29,17 @@ AEM Forms提供多个API，用于提交表单、处理文档和渲染文档。 �
 * 拼合动态PDF文档
 * 生成记录文档
 * 将交互式PDF文档与另一个PDF文档合并
-* 使用AEM任务的分配工作流步骤和文档服务步骤
+* 使用AEM任务的分配工作流步骤和doc服务步骤
 * 在自适应表单中使用自适应表单
 
-付费API不包括页数、文档或表单的长度或呈现文档的最终格式。 事务处理报表将事务处理分为三个类别: 已处理文档、已渲染文档和已提交表单。
+付费API不包括页数、文档或表单的长度或呈现文档的最终格式。 事务处理报表将事务处理分为三个类别: 文档已处理、已呈现文档和Forms已提交。
 
-* **提交的表单：** 从使用AEM Forms创建的任何类型的表单提交数据，并将数据提交到任何数据存储存储库或数据库时，均视为表单提交。 例如，提交自适应表单、HTML5表单、PDF表单和表单集均作为提交的表单入账。 表单集中的每个表单都被视为提交。 例如，如果表单集有5个表单，则提交表单集时，事务报告服务会将其计为5个提交。
+* **Forms提交：** 当数据从使用AEM Forms创建的任何类型的表单提交时，数据将提交到任何数据存储库或数据库，即视为表单提交。 例如，提交自适应表单、HTML5表单、PDF forms和表单集均作为提交的表单入账。 表单集中的每个表单都被视为提交。 例如，如果表单集有5个表单，则提交表单集时，事务报告服务会将其计为5个提交。
 * **文档呈现：** 通过组合模板和文档、对文档进行数字签名或认证、使用文档服务的可计费文档服务API或将文档从一种格式转换为另一种格式来生成，被视为呈现的文档。
 
 >[!NOTE]
 >
->事务处理报表UI显示三个类别: 提交的表单、呈现的文档和处理的文档。 渲染的文档和处理的文档均作为渲染的文档入账。
+>事务处理报表UI显示三个类别: Forms提交、文档渲染和文档处理。 渲染的文档和处理的文档均作为渲染的文档入账。
 
 ## 收费文档服务API {#billable-document-services-apis}
 
@@ -110,7 +110,7 @@ AEM Forms提供多个API，用于提交表单、处理文档和渲染文档。 �
  </tbody>
 </table>
 
-### Distiller Service {#distiller-service}
+### Distiller {#distiller-service}
 
 <table> 
  <tbody>
@@ -209,7 +209,7 @@ AEM Forms提供多个API，用于提交表单、处理文档和渲染文档。 �
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td> 
-   <td>从XDP模板渲染PDF表单。 XP模板是在Forms Designer中创建的。</td> 
+   <td>从XDP模板渲染PDF表单。 XP模板是在Forms设计器中创建的。</td> 
    <td>已处理的文档</td> 
    <td> </td> 
   </tr>
@@ -247,7 +247,7 @@ AEM Forms提供多个API，用于提交表单、处理文档和渲染文档。 �
  </tbody>
 </table>
 
-### Barcoded Forms Service {#barcoded-forms-service}
+### 巴科德Forms {#barcoded-forms-service}
 
 <table> 
  <tbody>
@@ -350,7 +350,7 @@ AEM Forms提供多个API，用于提交表单、处理文档和渲染文档。 �
 
 ## 收费数据捕获API {#billable-data-capture-apis}
 
-自适应表单、HTML5表单和表单集的所有提交事件均作为事务处理入账。 默认情况下，提交PDF表单不作为事务处理入账。 使用提供的 [事务报表](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) API将PDF表单提交记录为事务。
+自适应表单、HTML5Forms和表单集的所有提交事件均作为事务处理入账。 默认情况下，提交PDF表单不作为事务处理入账。 使用提供的 [事务报表](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) API将PDF forms提交记录为事务。
 
 ### 自适应表单 {#adaptive-forms}
 
@@ -411,7 +411,7 @@ AEM Forms提供多个API，用于提交表单、处理文档和渲染文档。 �
    <td>
     <ul> 
      <li>在自适应表单（自适应表单集）中使用自适应表单只会计入单个事务。 您可以在自适应表单中包含任意数量的自适应表单。</li> 
-     <li>HTML5表单中的每个表单都将帐户设置为单独的事务。 </li> 
+     <li>HTML5Forms表单中的每个表单都将帐户设置为单独的事务。 </li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -419,7 +419,7 @@ AEM Forms提供多个API，用于提交表单、处理文档和渲染文档。 �
 
 ## OSGi API上的收费交互式通信和以表单为中心的AEM工作流 {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
-在OSGi上分配以表单为中心的AEM工作流的任务和文档服务步骤以及交互式通信的所有演绎版，并作为事务处理入账。 在创作实例上预览交互式通信和使用代理UI在发布实例上预览不作为事务处理。 如果工作流步骤将事务处理计算在内，而工作流无法完成，则不会冲销事务处理计数。
+在OSGi上分配以表单为中心的AEM工作流的任务和文档服务步骤以及交互通信的所有演绎版，并作为事务处理入账。 在创作实例上预览交互式通信和使用代理UI在发布实例上预览不作为事务处理。 如果工作流步骤将事务处理计算在内，而工作流无法完成，则不会冲销事务处理计数。
 
 ### 交互通信 - Web 渠道 {#interactive-communication-web-channel}
 
@@ -494,7 +494,7 @@ AEM Forms提供多个API，用于提交表单、处理文档和渲染文档。 �
 
 ## 将可计费API记录为自定义代码的事务处理 {#recording-billable-apis-as-transactions-for-custom-code}
 
-诸如提交PDF表单、使用代理UI预览交互式通信、使用非标准表单提交和自定义实施等操作不作为事务处理入账。 AEM Forms提供一个API来记录此类操作（如事务）。 您可以从自定义实施调用API以 [记录事务](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg)。
+诸如提交PDF表单、使用代理UI预览交互式通信、使用非标准表单提交和自定义实施等操作不作为事务处理入账。 AEM Forms提供API来记录此类操作（如事务）。 您可以从自定义实施调用API以 [记录事务](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg)。
 
 ## 相关文章 {#related-articles}
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # XMP实用程序服务Java API快速开始(SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 
-XMP实用程序服务提供以下快速开始。
+XMP Utilities服务提供以下快速开始。
 
 [快速开始（SOAP模式）: 使用Java API导出XMP元数据](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
 
@@ -34,7 +34,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）: 使用Java API导出XMP元数据 {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-以下代码示例检索、检查和保存XMP元数据。 (请参 [阅从PDF文档导出元数据](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)。)
+下面的代码示例检索、检查和保存XMP元数据。 (请参 [阅从PDF文档导出元数据](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents)。)
 
 ```as3
  /* 

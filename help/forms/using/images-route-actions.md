@@ -1,8 +1,8 @@
 ---
 title: 自定义路由操作中使用的图像
 seo-title: 自定义路由操作中使用的图像
-description: 如何自定义LiveCycle AEM Forms Workspace中路由操作中使用的图像。
-seo-description: 如何自定义LiveCycle AEM Forms Workspace中路由操作中使用的图像。
+description: 如何自定义LiveCycleAEM Forms工作区中路由操作中使用的图像。
+seo-description: 如何自定义LiveCycleAEM Forms工作区中路由操作中使用的图像。
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

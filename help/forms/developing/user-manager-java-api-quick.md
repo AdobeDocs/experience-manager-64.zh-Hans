@@ -45,7 +45,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）: 使用Java API添加用户 {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-以下代码示例将名为Wendy Blue的用户添加到AEM Forms。 (请参阅 [添加用户](/help/forms/developing/users.md#adding-users)。)
+下面的代码示例将名为Wendy Blue的用户添加到AEM Forms。 (请参阅 [添加用户](/help/forms/developing/users.md#adding-users)。)
 
 ```as3
  /* 
@@ -163,7 +163,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）: 使用Java API删除用户 {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-以下代码示例从AEM Forms中删除名为Wendy Blue的用户。 (请参阅 [删除用户](/help/forms/developing/users.md#deleting-users)。)
+以下代码示例从AEM Forms删除名为Wendy Blue的用户。 (请参阅 [删除用户](/help/forms/developing/users.md#deleting-users)。)
 
 ```as3
  /* 
@@ -635,7 +635,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）: 使用Java API添加用户 {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-以下代码示例将名为Wendy Blue的用户添加到AEM Forms。 (请参阅 [添加用户](/help/forms/developing/users.md#adding-users)。)
+下面的代码示例将名为Wendy Blue的用户添加到AEM Forms。 (请参阅 [添加用户](/help/forms/developing/users.md#adding-users)。)
 
 ```as3
  /* 

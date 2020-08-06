@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 889b5ffc-3652-47d8-b576-128f3cee513a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 95%
 
 ---
 
@@ -105,6 +108,6 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 要搜索选件，请执行以下操作：
 
-1. 在“选件”控制台顶部，单击或点按放大镜图标。默认情况下，搜索仅限于选件。
+1. 在“选件”控制台顶部，单击或点按放大镜图标。默认情况下，搜索仅限于优惠。
 1. 输入关键字以搜索选件。从结果中进行选择。
 

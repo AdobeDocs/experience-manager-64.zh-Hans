@@ -1,8 +1,8 @@
 ---
 title: 参考主题
 seo-title: 参考主题
-description: 'AEM Forms提供自适应表单主题，您可以从“软件分发”中获取这些数据，并使用它们来设计表单样式。 '
-seo-description: 'AEM Forms提供自适应表单主题，您可以从“软件分发”中获取这些数据，并使用它们来设计表单样式。 '
+description: 'AEM Forms提供自适应表单主题，您可以从“软件分发”中获取这些数据，并使用它们设计表单的样式。 '
+seo-description: 'AEM Forms提供自适应表单主题，您可以从“软件分发”中获取这些数据，并使用它们设计表单的样式。 '
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 参考主题 {#reference-themes}
 
-[主题](/help/forms/using/themes.md) 使您无需深入了解CSS即可设计表单样式。 除了默认主题之外，您还可以通过安装 [AEM-FORMS.-6.3-REFERENCE-主题包获得以下主题](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
+[主题](/help/forms/using/themes.md) 使您无需深入了解CSS即可设计表单样式。 除了默认主题之外，您还可以通过安装AEM- [FORMS.-6.3-REFERENCE-主题包获得以下主题](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) :
 
 * 贝里尔
 * 执行

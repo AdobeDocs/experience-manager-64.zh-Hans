@@ -1,8 +1,8 @@
 ---
 title: 渲染 3D 资产
 seo-title: 渲染 3D 资产
-description: 了解如何渲染您在AEM中处理和保存的3D资产，以便为网页创建2D图像。
-seo-description: 了解如何渲染您在AEM中处理和保存的3D资产，以便为网页创建2D图像。
+description: 了解如何渲染您在AEM中处理和保存的3D资源，以创建网页的2D图像。
+seo-description: 了解如何渲染您在AEM中处理和保存的3D资源，以创建网页的2D图像。
 uuid: ee4d669c-72b1-4f7a-9a68-a7c6d59c7856
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 65%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
 
 Rapid Refine 渲染器通常需要数分钟才能渲染较大的图像。但是，第三方渲染器在配置为获取最高质量时，通常需要很多分钟，甚至长达数小时。
 
-转换、处理和渲染作业会根据需要在服务器上排队，以防止服务器过载。卡片视图中最近上传的资产会显示消息“正在等待渲染...”。此状态表示必须完成其他处理或渲染作业，才能启动当前渲染作业。
+转换、处理和渲染作业会根据需要在服务器上排队，以防止服务器过载。卡片视图中最近上传的资产会显示消息“正在等待渲染...”。此状态表示必须完成其他处理或渲染作业，才能完成当前渲染作业开始。
 
 >[!NOTE]
 >

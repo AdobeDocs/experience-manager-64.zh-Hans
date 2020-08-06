@@ -1,6 +1,6 @@
 ---
-title: 表单JEE工作流 |处理用户数据
-seo-title: 表单JEE工作流 |处理用户数据
+title: Forms·吉工作流 |处理用户数据
+seo-title: Forms·吉工作流 |处理用户数据
 description: 'null'
 seo-description: 'null'
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
@@ -16,21 +16,21 @@ ht-degree: 0%
 ---
 
 
-# 表单JEE工作流 |处理用户数据 {#forms-jee-workflows-handling-user-data}
+# Forms·吉工作流 |处理用户数据 {#forms-jee-workflows-handling-user-data}
 
-AEM Forms JEE工作流提供用于设计、创建和管理业务流程的工具。 工作流进程由一系列按指定顺序执行的步骤组成。 每个步骤都执行特定操作，如向用户分配任务或发送电子邮件。 流程可以与资产、用户帐户和服务交互，并可以使用以下任一方法触发：
+AEM FormsJEE工作流提供设计、创建和管理业务流程的工具。 工作流进程由一系列按指定顺序执行的步骤组成。 每个步骤都执行特定操作，如向用户分配任务或发送电子邮件。 流程可以与资产、用户帐户和服务交互，并可以使用以下任一方法触发：
 
-* 从AEM Forms Workspace启动流程
+* 从AEM Forms工作区启动流程
 * 使用SOAP或RESTful服务
 * 提交自适应表单
 * 使用监视文件夹
 * 使用电子邮件
 
-有关创建AEM Forms JEE工作流流程的详细信息，请参阅工 [作台帮助](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf)。
+有关创建AEM FormsJEE工作流流程的详细信息，请参阅工 [作台帮助](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf)。
 
 ## 用户数据和数据存储 {#user-data-and-data-stores}
 
-当进程被触发并在进行时，它会捕获有关进程参加者的数据、参加者在与进程关联的表单中输入的数据以及添加到表单的附件。 数据存储在AEM Forms JEE服务器存储库中，如果配置了此类数据，则某些数据（如附件）会存储在全局文档(GDS)目录中。 可以在共享文件系统或数据库上配置GDS目录。
+当进程被触发并在进行时，它会捕获有关进程参加者的数据、参加者在与进程关联的表单中输入的数据以及添加到表单的附件。 数据存储在AEM FormsJEE服务器存储库中，如果配置了，某些数据（如附件）会存储在全局文档(GDS)目录中。 可以在共享文件系统或数据库上配置GDS目录。
 
 ## 访问和删除用户数据 {#access-and-delete-user-data}
 
@@ -46,7 +46,7 @@ AEM Forms JEE工作流提供用于设计、创建和管理业务流程的工具�
 
 执行以下步骤以标识工作流发起者或参与者的流程实例ID:
 
-1. 在AEM Forms服务器数据库中执行以下命令，从数据库表中检索工作流发起者或参与者的 `edcprincipalentity` 主体ID。
+1. 在AEM Forms服务器数据库中执行以下命令，从数据库表中检索工作流发起者或参与者的主 `edcprincipalentity` 体ID。
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -139,7 +139,7 @@ AEM Forms JEE工作流提供用于设计、创建和管理业务流程的工具�
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   如果 `purgeProcessInstance` 配置了该方法，则会从AEM Forms服务器数据库和GDS中完全删除指定调用ID的所有数据。
+   如果 `purgeProcessInstance` 配置了该方法，则从AEM Forms服务器数据库和GDS中完全删除指定调用ID的所有数据。
 
 ### 使用孤立任务 {#orphan}
 
@@ -147,7 +147,7 @@ AEM Forms JEE工作流提供用于设计、创建和管理业务流程的工具�
 
 获得任务ID后，请执行以下操作，以从GDS和任务库中清除孤立的关联文件和数据。
 
-1. 对AEM Forms服务器任务库执行以下命令以检索标识的ID的ID。
+1. 在AEM Forms服务器数据库上执行以下命令，以检索标识的任务ID的ID。
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -187,7 +187,7 @@ AEM Forms JEE工作流提供用于设计、创建和管理业务流程的工具�
 
 
 
-1. 执行以下命令以从AEM Forms服务器任务库中删除ID的数据：
+1. 执行以下命令，从AEM Forms服务器任务库删除ID的数据：
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>

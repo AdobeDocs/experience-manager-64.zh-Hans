@@ -12,10 +12,13 @@ discoiquuid: 23386353-b2bf-49f1-947a-dd7587bba175
 noindex: true
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 0%
 
 ---
 
 
 # PDF Generator备份限制 {#pdf-generator-backup-limitations}
 
-无法备份PDF Generator用于转换文件的临时目录。 即使服务将正确恢复，数据也可能会丢失，因为PDF生成器会按设置的时间间隔审阅和清除临时目录的内容。
+无法备份PDF生成器用于转换文件的临时目录。 即使服务将正确恢复，由于PDF Generator会按设置的时间间隔审阅和清除临时目录的内容，数据也会丢失。

@@ -19,16 +19,16 @@ ht-degree: 0%
 
 # 主屏幕 {#home-screen}
 
-当您登录到AEM Forms应用程序时，您将被重定向到主屏幕。
+登录AEM Forms应用程序时，您将被重定向到“主页”屏幕。
 
 ## 默认主页屏幕 {#default-home-screen}
 
-默认情况下，主屏幕显示所有表单，包括起点和任务（如果连接的服务器启用了AEM Forms Workflow）以及关联的缩略图。 可在AEM Forms服务器中指定缩略图。
+默认情况下，主屏幕显示所有表单，包括起点和任务(如果连接的服务器启用了AEM Forms工作流)以及关联的缩略图。 可在AEM Forms服务器中指定缩略图。
 
 下图用默认“主页”屏幕上的基本组件的调用进行注释。
-![Forms应用程序主屏幕](assets/home-screen-1.png)[单击可放大](assets/home-screen-1-1.png)
+![Forms应用程序主](assets/home-screen-1.png)[屏幕单击放大](assets/home-screen-1-1.png)
 
-1. **菜单按钮**: 点按“ **菜单** ”按钮，导航到任务、表单、发件箱和设置。 如果您的AEM Forms应用程序已连接到AEM Forms JEE服务器，则可以看到“任务”选项。 任务选项还存储从流程中的任务创建的草稿。 对于AEM Forms OSGi服务器，任务选项处于隐藏状态。 发件箱存储保存的表单和草稿，然后再与服务器同步。 当应用程序与服务器同步时，发件箱中所有保存的表单和草稿都将上传 [到AEM Forms服务器](/help/forms/using/sync-app.md)。 有关设置的信息，请参阅 [更新常规设置](/help/forms/using/update-general-settings.md)。
+1. **菜单按钮**: 点按菜 **单按钮** ，导航到任务、Forms、发件箱和设置。 如果您的AEM Forms应用程序已连接到AEM FormsJEE服务器，则可以看到任务选项。 任务选项还存储从流程中的任务创建的草稿。 对于AEM FormsOSGi服务器，任务选项处于隐藏状态。 发件箱存储保存的表单和草稿，然后再与服务器同步。 当应用程序与服务器同步时，“发件箱”中所有保存的表单和草稿都将上传 [到AEM Forms服务器](/help/forms/using/sync-app.md)。 有关设置的信息，请参阅 [更新常规设置](/help/forms/using/update-general-settings.md)。
 1. **任务或表单**: 点按要处理的列出任务或表单。
 1. **水平省略号**: 表示可对表单执行操作。 点击省略号可显示作者提供的操作和描述。 点 **按省略** 号时 **，将** 显示“删除草稿和完成”选项。
 1. **刷新图标**: 点按刷新图标，将您的应用程序与AEM Forms服务器同步。

@@ -21,43 +21,43 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-AEM Forms工作区是AEM Forms的一部分。 Workspace除了PDF表单外，还简化了HTML表单的再现。 现在，您可以从移动界面和Web应用程序参与业务流程。
+AEM Forms工作区是AEM Forms的一部分。 工作区除了PDF forms外，还简化了HTMLForms的再现。 现在，您可以从移动界面和Web应用程序参与业务流程。
 
-此外，AEM Forms工作区可以使用标准HTML和JavaScript™开发方法实现高度可自定义性。 它是基于组件的软件，可轻松与您的其他Web应用程序集成。
+此外，AEM Forms工作区可使用标准HTML和JavaScript™开发方法实现高度自定义。 它是基于组件的软件，可轻松与您的其他Web应用程序集成。
 
 有关详细信息，请参 [阅AEM Forms工作区简介](/help/forms/using/introduction-html-workspace.md)。
 
 ## 熟悉 {#getting-familiar}
 
-要熟悉创建表单应用程序以实现业务流程自动化的端对端过程，请遵循演练。 在完成演练后，您可以使用Workbench、Designer和AEM Forms工作区创建、管理和测试应用程序。 有关实施详细信息，请 [参阅创建您的第一个AEM Forms应用程序](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html)。
+要熟悉创建表单应用程序以实现业务流程自动化的端对端过程，请遵循演练。 在完成演练后，您可以使用Workbench、Designer和AEM Forms工作区创建、管理和测试应用程序。 有关实施详细信息，请参 [阅创建您的第一个AEM Forms应用程序](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html)。
 
 ## 功能概述 {#functional-overview}
 
 您可以使用AEM Forms工作区执行以下任务:
 
-**开始业务流程：** AEM Forms工作区按照您的组织设计和设置的流程进行类别。 您可以喜欢常用类别以快速访问类别。 在开始流程时，通常需要填写表单来开始表单工作流控制的业务流程。 有关详细信息，请参阅 [启动进程](/help/forms/using/starting-processes.md)。
+**开始业务流程：** AEM Forms工作区按照您的组织设计和设置类别您的流程。 您可以喜欢常用类别以快速访问类别。 在开始流程时，通常需要填写表单来开始表单工作流控制的业务流程。 有关详细信息，请参阅 [启动进程](/help/forms/using/starting-processes.md)。
 
 **视图并对任务采取行动：** 视图待办事项列表时，您会看到业务流程中分配给您的任务，或者分配给您所属的任何组，或者您是其他用户的共享任务。 您可以根据需要打开、处理和完成任务。 通常，完成任务涉及提供信息、批准表单或拒绝表单。 有关详细信息，请 [参阅使用待办列表](/help/forms/using/todo-lists.md)。
 
 **跟踪任务**: 要跟踪任务，请使用AEM Forms工作区的“跟踪”选项卡。 您可以搜索您开始或参与的活动或已完成的进程。 您可以视图属于流程的任务、分配和表单。 您还可以使用先前启动的进程中的表单数据开始新进程。 有关详细信息，请参阅 [跟踪进程](/help/forms/using/tracking-processes.md)。
 
-## AEM Forms Workspace的新增功能 {#new-offering-of-aem-forms-workspace}
+## AEM Forms工作区新产品 {#new-offering-of-aem-forms-workspace}
 
 **支持批量批准任务**:
 
 您可以批准多个相同类型的任务。 选择一个任务进行审批后，只有具有相同流程、相同任务名称和相同路由选项的任务仍处于启用状态。 有 [关实施详细信息，请参阅](/help/forms/using/todo-lists.md) “使用待办事项”。
 
-## 从Flex Workspace迁移到AEM Forms工作区 {#migrating-from-flex-workspace-to-aem-forms-workspace}
+## 从Flex工作区迁移到AEM Forms工作区 {#migrating-from-flex-workspace-to-aem-forms-workspace}
 
 **继续工作**
 
-默认情况下，JEE上的AEM Forms也会部署Flex Workspace。 它继续像以前一样工作，并且您的所有现有流程和自定义都继续工作。
+AEM Forms的JEE也默认部署Flex工作区。 它继续像以前一样工作，并且您的所有现有流程和自定义都继续工作。
 
 **将现有流程迁移到AEM Forms工作区：**
 
 在AEM Forms工作区中，与XDP表单关联的默认渲染和提交服务在默认操作用户档案中已发生更改并引入了新服务。 有关详细信息，请 [参阅新建渲染和提交服务](/help/forms/using/new-render-submit-service.md)。 要迁移使用XDP表单的现有流程，要利用这些服务，您可以执行以 [下步骤](/help/forms/using/new-render-submit-service.md)。
 
-**将Flex Workspace自定义与AEM Forms工作区映射：**
+**将Flex工作区自定义与AEM Forms工作区映射：**
 
 两种工作区中各种类型的自定义之间的映射如下所示。
 
@@ -112,7 +112,7 @@ AEM Forms工作区是AEM Forms的一部分。 Workspace除了PDF表单外，还�
 
 ### AEM Forms工作区的限制 {#limitations-of-aem-forms-workspace}
 
-AEM Forms工作区中不提供的Flex Workspace的一些功能包括： 消息和通知、欢迎页面、批准容器以及用于管理列标题的选项。 有关完整的列表，请参 [阅Flex Workspace的功能（AEM Forms Workspace中不提供）](/help/forms/using/features-flex-workspace-available-html.md)。
+Flex工作区的某些功能在AEM Forms工作区中不可用，包括： 消息和通知、欢迎页面、批准容器以及用于管理列标题的选项。 有关完整的列表，请参 [阅AEM Forms工作区中不提供的Flex工作区功能](/help/forms/using/features-flex-workspace-available-html.md)。
 
 ## 使用AEM Forms工作区进行开发 {#developing-with-aem-forms-workspace}
 
@@ -132,16 +132,16 @@ AEM Forms工作区支持各种自定义，以更新用户界面的布局、外�
 
 ### Set up the developer environment {#set-up-the-developer-environment}
 
-AEM Forms工作区交付内容包括部署在CRX上的CRX包、包含完整源代码的SDK归档、第三方JavaScript库以及AEM Forms工作区的构建脚本。 使用这些环境设置开发者以执行上述自定义。 有关详细信息，请参 [阅构建AEM Forms工作区代码](introduction-customizing-html-workspace.md#building-html-workspace-code)。
+AEM Forms工作区交付内容包括部署在CRX上的CRX包、包含完整源代码的SDK归档、第三方JavaScript库以及AEM Forms工作区的构建脚本。 使用这些环境设置开发者以执行上述自定义。 有关详细信息，请参阅构 [建AEM Forms工作区代码](introduction-customizing-html-workspace.md#building-html-workspace-code)。
 
-您可以自定义界面和核心功能的主要部分，如字体、颜色方案、徽标、登录屏幕、错误对话框、与第三方应用程序集成以及在第三方应用程序中重用组件。 您还可以增强“任务摘要”页面上显示的内容，显示用于任务路由操作的图像，甚至可以修改创建AEM Forms工作区应用程序的低级主干模型和视图。
+您可以自定义界面和核心功能的主要部分，如字体、颜色方案、徽标、登录屏幕、错误对话框、与第三方应用程序集成以及在第三方应用程序中重用组件。 您还可以增强“任务摘要”页面上显示的内容，显示任务路由操作的图像，甚至可以修改创建AEM Forms工作区应用程序的低级主干模型和视图。
 
-### XDP表单的HTML渲染 {#html-rendering-of-xdp-forms}
+### XDPForms的HTML渲染 {#html-rendering-of-xdp-forms}
 
 默认情况下，对于新流程，XDP表单在桌面上以PDF格式呈现，在平板电脑上以HTML格式呈现。 始终可以以HTML格式呈现XDP表单。 有关详细信息，请 [参阅新渲染和提交服务](/help/forms/using/new-render-submit-service.md)。
 
-[支持](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) XDP表单的HTML再现 [功能](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html)(可与用户档案一起使用)。 默认情况下，“渲染新HTML表单”使用 `default.html` 用户档案，您可以更改它。 您还可以添加在以HTML格式呈现XDP表单之前发生的自定义更改。
+[移动Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html) (Mobile [Mobile Gent](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html))功能可与用户档案配合，支持XDP表单的HTML再现。 默认情况下，“渲染新HTML表单”使用 `default.html` 用户档案，您可以更改它。 您还可以添加在以HTML格式呈现XDP表单之前发生的自定义更改。
 
-## AEM Forms工作区应用程序 {#aem-forms-workspace-app}
+## AEM Forms工作区应用 {#aem-forms-workspace-app}
 
-要在移动设备上处理业务流程，您可以使用AEM Forms的AEM Forms工作区应用程序产品。 有关详细信息，请参 [阅AEM Forms工作区应用程序概述](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html)。
+要在移动设备上处理业务流程，您可以使用AEM Forms工作区应用程序产品(AEM Forms)。 有关详细信息，请参阅 [AEM Forms工作区应用程序概述](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html)。

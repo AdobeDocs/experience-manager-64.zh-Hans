@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
 translation-type: tm+mt
 source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
 
 它涵盖以下内容：
 
-* [入门](#getting-started) -详细介绍创建和发布首个页面所需的一系列基本事件。
+* [入门](#getting-started) -详细介绍创建和发布首页所需的基本事件序列。
 
 * [其他操作](#further-actions) -继续执行您在创作时可以使用的许多其他操作。
 

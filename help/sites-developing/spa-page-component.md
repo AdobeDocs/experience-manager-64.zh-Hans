@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 1%
 
 ---
 
@@ -92,7 +95,7 @@ SPA的页面组件不会通过JSP或HTL文件和资源对象提供其子组件�
 >
 >此文档仅将We.Retail日志应用程序用于演示目的。 它不应用于任何项目工作。
 >
->任何AEM项目都应利 [用AEM项目原型](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，该原型支持使用React或Angular的SPA项目并利用SPA SDK。AEM上的所有SPA项目均应基于SPA入门套件的Maven原型。
+>任何AEM项目都应利用 [AEM项目原型](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用React或Angular的SPA项目，并利用SPA SDK。AEM上的所有SPA项目均应基于Maven Archetype for SPA Starter Kit。
 
 ## 页面编辑器叠加同步 {#page-editor-overlay-synchronization}
 

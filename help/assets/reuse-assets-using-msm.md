@@ -15,7 +15,7 @@ ht-degree: 9%
 
 # 将MSM用于资产重用资产 {#reuse-assets-using-msm-for-assets}
 
-Adobe Experience Manager(AEM)中的多站点管理器(MSM)功能使用户能够重复使用一次创作的内容，并在多个Web位置间重复使用这些内容。 数字资产与MSM的“资产”功能也适用。 使用MSM for Assets，您可以：
+Adobe Experience Manager(AEM)的多站点管理器(MSM)功能使用户能够重用一次创作的内容，并在多个Web位置间重复使用。 数字资产与MSM的“资产”功能也适用。 使用MSM for Assets，您可以：
 
 * 只需创建一次资产，即可复制这些资产，以便在站点的其他区域重复使用。
 * 在同步过程中保留多个副本，并更新一次原始主副本，以将更改推送到子副本。
@@ -30,7 +30,7 @@ Adobe Experience Manager(AEM)中的多站点管理器(MSM)功能使用户能够�
 
 ### 工作方式和优势 {#how-it-works-the-benefits}
 
-要了解在多个Web位置重复使用相同内容（文本和资产）的使用方案，请参阅可 [能的MSM方案](/help/sites-administering/msm.md#possible-scenarios)。 AEM在原始资产及其链接的副本之间保留一个链接，称为Live Copy(LC)。 维护的链接允许将集中的更改推送到多个Live Copy。 这样可以在消除管理重复副本的限制的同时加快更新。 更改的传播是无错的和集中的。 该功能允许仅允许选定Live Copy进行更新。 用户可以分离链接（即中断继承），并进行在下次更新主副本和转出更改时不会覆盖的本地编辑。 可以对若干选定的元数据字段或整个资产进行分离。 它允许灵活地本地更新最初从主副本继承的资产。
+要了解在多个Web位置重复使用相同内容（文本和资产）的使用方案，请参阅可 [能的MSM方案](/help/sites-administering/msm.md#possible-scenarios)。 AEM保留原始资产与其链接副本之间的链接，称为Live Copy(LC)。 维护的链接允许将集中的更改推送到多个Live Copy。 这样可以在消除管理重复副本的限制的同时加快更新。 更改的传播是无错的和集中的。 该功能允许仅允许选定Live Copy进行更新。 用户可以分离链接（即中断继承），并进行在下次更新主副本和转出更改时不会覆盖的本地编辑。 可以对若干选定的元数据字段或整个资产进行分离。 它允许灵活地本地更新最初从主副本继承的资产。
 
 MSM在源资产及其Live Copy之间保持实时关系，以便：
 
@@ -115,7 +115,7 @@ MSM在源资产及其Live Copy之间保持实时关系，以便：
 
 ### 文件夹所有Live Copy的信息和状态 {#information-status-of-all-lcs-of-folder}
 
-AEM提供了一个控制台，用于检查源文件夹的所有Live Copy的状态。 此控制台显示所有子资产的状态。
+AEM提供一个控制台来检查源文件夹的所有Live Copy的状态。 此控制台显示所有子资产的状态。
 
 1. 选择源文件夹。 Click **[!UICONTROL Properties]** from the toolbar. 或者，使用键盘快捷键 `p`。
 1. 单击 **[!UICONTROL Live Copy 源]**。要打开控制台，请单击 **[!UICONTROL Live Copy 概述]**。此功能板提供所有子资产的顶级状态。
@@ -132,7 +132,7 @@ AEM提供了一个控制台，用于检查源文件夹的所有Live Copy的状�
 对于源资产或文件夹，您可以看到以下信息，并直接从引用边栏执行以下操作：
 
 * 请参阅Live Copy的路径。
-* 在AEM用户界面中打开或显示特定Live Copy。
+* 在AEM用户界面中打开或显示特定的Live Copy。
 * 将更新同步到特定Live Copy。
 * 暂停关系或更改特定Live Copy的转出配置。
 * 访问Live Copy概述控制台。
@@ -150,7 +150,7 @@ Select the source asset or folder, open the left rail, and click **[!UICONTROL R
 对于Live Copy资产或文件夹，您可以看到以下信息，并直接从引用边栏中执行以下操作：
 
 * 查看源的路径。
-* 在AEM用户界面中打开或显示特定Live Copy。
+* 在AEM用户界面中打开或显示特定的Live Copy。
 * 推出更新。
 
 选择 Live Copy 资产或文件夹，打开左边栏，然后单击&#x200B;**[!UICONTROL 引用]**。或者，选择一个资产或文件夹，然后使用键盘快捷键 `Alt + 4`。
@@ -166,7 +166,7 @@ Select the source asset or folder, open the left rail, and click **[!UICONTROL R
 您可以从源资产启动转出操作，并更新全部或部分选择的Live Copy。
 
 1. 选择Live Copy资产或文件夹。 Click **[!UICONTROL Properties]** from the toolbar. 或者，使用键盘快捷键 `p`。
-1. 单击 **[!UICONTROL Live Copy 源]**。单击 **[!UICONTROL 工具栏]** 中的转出。
+1. 单击 **[!UICONTROL Live Copy 源]**。Click **[!UICONTROL Rollout]** from the toolbar.
 1. 选择要更新的Live Copy。 单击 **[!UICONTROL 转出]**。
 1. 要转出对子资产进行的更新，请选择转 **[!UICONTROL 出源和所有子资产]**。
    ![将源的修改转出为几个或所有Live Copy](assets/lc_rollout_page.png)
@@ -260,7 +260,7 @@ AEM允许您使用MSM Java API扩展功能。 对于“资产”，扩展的工�
 
 ## 资产管理任务对Live Copy的影响 {#impact-of-asset-management-tasks-on-live-copies}
 
-Live Copy和源是可以作为数字资产在一定程度上进行管理的资产或文件夹。 AEM中的某些资产管理任务对Live Copy具有特定影响。
+Live Copy和源是可以作为数字资产在一定程度上进行管理的资产或文件夹。 AEM的一些资产管理任务对Live Copy具有特定影响。
 
 * 复制Live Copy时，会创建一个与第一个Live Copy源相同的Live Copy资产。
 * 当您移动源或其Live Copy时，将保留Live关系。
@@ -273,7 +273,7 @@ Live Copy和源是可以作为数字资产在一定程度上进行管理的资�
 
 在更多情况下，“资产”为MSM与“站点”功能的MSM行为相匹配。 需要注意的主要区别是：
 
-* 在站点中，您可以比较蓝图及其Live Copy，但是在资产中无法将源与其Live Copy进行比较。
+* 在站点中，您可以比较蓝图及其Live Copy，但是资产中无法将源与其Live Copy进行比较。
 * 网站通常有子项，但资产则没有。 创建单个资产的Live Copy时，不提供包含或排除子项的选项。
 * MSM for Assets不支持删除创建站点向导中的章节步骤。
 * 对于资产，MSM不支持在页面属性（触屏优化UI）上配置MSM锁。

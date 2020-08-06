@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-AEM Communities的消息传递功能允许登录的站点访客（成员）相互发送消息，当登录到站点时，这些消息可供访问。
+AEM Communities的消息功能使登录网站访客（成员）能够相互发送消息，当登录网站时，这些消息可供访问。
 
 通过在社区站点创建过程中选中一个框，为社区站 [点启用消息](sites-console.md)。
 
@@ -32,7 +32,7 @@ AEM Communities的消息传递功能允许登录的站点访客（成员）相�
 
 ## Messaging Operations Service {#messaging-operations-service}
 
-AEM Communities [消息传递操作服务](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) (Messaging Operations Service)标识处理与消息相关请求的端点、服务应用于存储消息的文件夹，以及如果消息可能包括文件附件，允许哪些文件类型。
+AEM Communities [消息处理业务服务](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) (Messaging Operations Service)标识处理消息相关请求的端点、服务应用于存储消息的文件夹，以及如果消息可能包括文件附件，允许哪些文件类型。
 
 对于使用“社区站点” [控制台创建的社区](sites-console.md)站点，已存在服务实例，收件箱设置为 `/mail/community/inbox`。
 

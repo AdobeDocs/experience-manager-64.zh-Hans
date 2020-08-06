@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
 translation-type: tm+mt
 source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 10%
 
 ---
 
 
 # SharePoint Connector许可、版权声明和免责声明{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-本节列出了与Day JCR Connector for MS SharePoint相关的所有许可、版权声明和免责声明。
+本节列表所有与Day JCR Connector for MS SharePoint相关的许可、版权声明和免责声明。
 
-## Connector第三方库概述 {#overview-of-connector-rd-party-libraries}
+## 连接器第三方库概述 {#overview-of-connector-rd-party-libraries}
 
-下表列出了在SharePoint Connector核心库中使用的第三方库，以及它们所涵盖的许可、版权声明或免责声明：
+下表列表了SharePoint Connector核心库中使用的第三方库，以及其涵盖的许可、版权声明或免责声明：
 
 | 库 | 许可类型 |
 |---|---|
@@ -39,13 +42,13 @@ source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
 | 并发 | [并发](#concurrent) （公共域） |
-| geronimo-activation_1.1.spec | [Apache](#apache) |
+| geronimo-激活_1.1.spec | [Apache](#apache) |
 | geronimo-stax-api_1.0.spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
 | jackrabbit-jcr2spi | [Apache](#apache) |
 | jackrabbit-jcr-commons | [Apache](#apache) |
 | jackrabbit-spi-commons | [Apache](#apache) |
-| 野兔小兔 | [Apache](#apache) |
+| 野兔大嘴 | [Apache](#apache) |
 | jaxen | BSD |
 | log4j | [Apache](#apache) |
 | lucene-core | [Apache](#apache) |
@@ -55,14 +58,14 @@ source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
 | stax-api | [Apache](#apache) |
 | wsdl4j | [Apache](#apache) |
 | wstx-asl | [Apache](#apache) |
-| xalan | [Apache](#apache) |
+| 扎兰 | [Apache](#apache) |
 | xbean | [Apache](#apache) |
 | xml-api | [Apache](#apache) （包含Public Domain和W3C软件许可涵盖的部分） |
 | XmlSchema | [Apache](#apache) |
 
 ## CRX第三方库概述 {#overview-of-crx-rd-party-libraries}
 
-下表列出了CRX中使用的第三方库，以及其涵盖的许可、版权声明或免责声明：
+下表列表了CRX中使用的第三方库，以及涵盖的许可、版权声明或免责声明：
 
 <table> 
  <colgroup> 
@@ -94,7 +97,7 @@ source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
-   <td>并发-1.3.4.jar</td> 
+   <td>concurrent-1.3.4.jar</td> 
    <td><a href="#concurrent">并发</a></td> 
   </tr> 
   <tr> 
@@ -103,10 +106,10 @@ source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
   </tr> 
   <tr> 
    <td>hsqldb-1.8.0.4.jar</td> 
-   <td><a href="#hypersonic-sql-group">高超音速SQL组</a></td> 
+   <td><a href="#hypersonic-sql-group">Hypersonic SQL Group</a></td> 
   </tr> 
   <tr> 
-   <td>jaxen-1.1 beta-6.jar</td> 
+   <td>jaxen-1.1-beta-6.jar</td> 
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
@@ -152,9 +155,9 @@ source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
  </tbody> 
 </table>
 
-## CQSE第三方库概述 {#overview-of-cqse-rd-party-libraries}
+## CQSE第三方图书馆概述 {#overview-of-cqse-rd-party-libraries}
 
-下表列出了Parneiture Servlet engine中使用的第三方库，以及其涵盖的许可、版权声明或免责声明：
+下表列表了Ponnature Servlet引擎中使用的第三方库，以及其涵盖的许可、版权声明或免责声明：
 
 <table> 
  <colgroup> 
@@ -564,7 +567,7 @@ source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
      implementations, and test suites thereof.
 ```
 
-## 高超音速SQL组 {#hypersonic-sql-group}
+## Hypersonic SQL Group {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES

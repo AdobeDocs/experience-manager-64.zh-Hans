@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 70%
 
 ---
 
@@ -34,9 +37,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 专为在触屏和桌面设备上使用而设计，外观在所有设备上均相同，只是[查看和选择资源的方式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)略有不同（分别采用点按和单击方式）。
 
       * 桌面设备：
+
    ![screen_shot_2018-03-23at115248](assets/screen_shot_2018-03-23at115248.png)
 
    * 平板电脑设备（或不到 1024 像素宽的台式机）：
+
    ![screen_shot_2018-03-23at115505](assets/screen_shot_2018-03-23at115505.png)
 
 1. 经典 UI
@@ -45,6 +50,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 主色调为绿色。
    * 专为在桌面设备上使用而设计。
    * 以下文档重点介绍新式 UI。有关在经典 UI 中进行创作的信息，请参阅[经典 UI 创作文档](/help/sites-classic-ui-authoring/classicui.md)。
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 ## 切换UI
@@ -57,11 +63,11 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 您可以在多个位置定义要使用的 UI：
 
-* [为实例配置默认UI](#configuring-the-default-ui-for-your-instance) —— 这将设置用户登录时显示的默认UI，但用户可能可以覆盖此设置，为其帐户或当前会话选择其他UI。
+* [配置实例的默认UI](#configuring-the-default-ui-for-your-instance) —— 这将设置用户登录时显示的默认UI，但用户可以覆盖此设置，为其帐户或当前会话选择其他UI。
 
-* [为帐户设置经典UI创作](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) -这将设置编辑页面时使用的默认UI，但用户可以覆盖此设置，为其帐户或当前会话选择其他UI。
+* [为您的帐户设置经典UI创作](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) -这将设置编辑页面时用作默认UI的UI，但用户可以覆盖此设置，为其帐户或当前会话选择其他UI。
 
-* [将当前会话切换为经典UI](#switching-to-classic-ui-for-the-current-session) —— 此操作将切换为当前会话的经典UI。
+* [将当前会话切换为经典UI](#switching-to-classic-ui-for-the-current-session) —— 此操作会将当前会话切换为经典UI。
 
 * 对于[页面创作，系统会重写某些与 UI 有关的设置](#ui-overrides-for-the-editor)。
 
@@ -106,7 +112,7 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
    例如，从&#x200B;**站点**&#x200B;到&#x200B;**站点管理员**&#x200B;的链接：
 
-   ![screen_shot_2018-03-23at11924](assets/screen_shot_2018-03-23at111924.png)
+   ![screen_shot_2018-03-23at111924](assets/screen_shot_2018-03-23at111924.png)
 
 * **URL**
 
@@ -167,6 +173,7 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 >
 >* 手动编辑 URL - 非标准 URL 可能会导致未知情况和功能缺失。
 >* 同时打开两种模式的编辑器 - 例如，在不同的窗口中打开。
+
 >
 
 

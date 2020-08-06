@@ -12,6 +12,9 @@ discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 90%
 
 ---
 
@@ -44,6 +47,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* [提升嵌套启动项](#promoting-a-nested-launch)，当结构中有多个启动项时。
 >* [启动项 - 事件的顺序](/help/sites-authoring/launches.md#launches-the-order-of-events)，包含有关自动提升和发布的更多详细信息。
+
 >
 
 
@@ -71,6 +75,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * **提升已修改的页面**
    * **提升当前页面**
    * **提升当前页面和子页面**
+
    例如，当选择仅提升已修改的页面时：
 
    ![chlimage_1](assets/chlimage_1.png)
@@ -117,6 +122,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * **提升已修改的页面**
       * **提升当前页面**
       * **提升当前页面和子页面**
+
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
 1. 选择&#x200B;**下一步**。

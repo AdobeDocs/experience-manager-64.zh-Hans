@@ -25,11 +25,11 @@ ht-degree: 5%
 * 添加MIME类型后缀。 许多服务和网站需要图像后缀，如添 `.jpg` 加到URL。
 * 为SEO（搜索引擎优化）创建URL的文件夹路径。
 
-   了 [解Adobe Scene7 Publishing System如何支持SEO](/help/assets/assets/s7_seo.pdf)。
+   了解 [Adobe Scene7出版系统如何支持SEO](/help/assets/assets/s7_seo.pdf)。
 
 * 为SEO（搜索引擎优化）向URL添加元数据。
 
-   了 [解Adobe Scene7 Publishing System如何支持SEO](/help/assets/assets/s7_seo.pdf)。
+   了解 [Adobe Scene7出版系统如何支持SEO](/help/assets/assets/s7_seo.pdf)。
 
 * 设置内容配置以触发下载。
 * 简化图像服务模板URL以实现个性化。 例如，将 `rgb{XX,YY,ZZ}` RTF转换为 `\redXX\greenYY\blueZZ`
@@ -38,7 +38,7 @@ ht-degree: 5%
 
    请参 [阅从URL删除特殊字符](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)。
 
-在Dynamic Media环境中，使用基于XML的系统管理资产信息的网站可以将XML文件上传到Dynamic Media。 您可以将其中一个文件指定为用于服务Dynamic Media资产的预处理规则集文件。 该文件重新构建标准URL协议格式，以满足与Dynamic Media集成的系统的业务逻辑。 指定XML文件作为规则集定义文件路径。
+在Dynamic Media的上下文中，使用基于XML的系统管理资产信息的网站可以将XML文件上传到Dynamic Media。 您可以将其中一个文件指定为用于提供Dynamic Media资产的预处理规则集文件。 此文件重新构建标准URL协议格式，以满足与Dynamic Media集成的系统的业务逻辑。 指定XML文件作为规则集定义文件路径。
 
 >[!CAUTION]
 >
@@ -61,11 +61,11 @@ ht-degree: 5%
 
 **部署XML规则集：**
 
-1. 登录您的Dynamic Media经典帐户：
+1. 登录您的Dynamic Media Classic帐户：
 
    [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
-   您的凭据和登录是在配置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
+   您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
 1. 通过执行以下操作上传规则集文件：
 

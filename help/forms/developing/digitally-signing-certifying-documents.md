@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **关于签名服务**
 
-签名服务使您的组织能够保护其分发和接收的Adobe PDF文档的安全性和隐私。 此服务使用数字签名和认证来确保只有预期的收件人才能更改文档。 由于安全功能应用于文档本身，因此文档在整个生命周期内都保持安全并受到控制。 文档在防火墙之外、离线下载时以及提交回您的组织时仍保持安全。
+通过签名服务，您的组织可以保护其分发和接收的Adobe PDF文档的安全和隐私。 此服务使用数字签名和认证来确保只有预期的收件人才能更改文档。 由于安全功能应用于文档本身，因此文档在整个生命周期内都保持安全并受到控制。 文档在防火墙之外、离线下载时以及提交回您的组织时仍保持安全。
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关签名服务的详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关签名服务的详细信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 添加签名字段 {#adding-signature-fields}
 
@@ -80,8 +80,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
 **创建签名客户端**
 
@@ -97,11 +97,11 @@ ht-degree: 0%
 
 **将PDF文档另存为PDF文件**
 
-在签名服务向PDF文档添加签名字段后，您可以将文档另存为PDF文件，以便用户可以在Acrobat或Adobe Reader中打开它。
+在签名服务向PDF文档添加签名字段后，您可以将文档另存为PDF文件，以便用户在Acrobat或Adobe Reader打开它。
 
 **另请参阅**
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -162,7 +162,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建签名客户端
 
@@ -172,7 +172,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `SignatureServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -209,7 +209,7 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 检索签名字段名称 {#retrieving-signature-field-names}
 
@@ -217,7 +217,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关签名服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)
+>有关签名服务的详细信息，请参阅 [AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -237,10 +237,10 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建签名客户端**
 
@@ -260,7 +260,7 @@ ht-degree: 0%
 
 [使用Web服务API检索签名字段](digitally-signing-certifying-documents.md#retrieve-signature-field-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -295,7 +295,7 @@ ht-degree: 0%
 
 [快速开始（SOAP模式）: 使用Java API检索签名字段名称](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -309,7 +309,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建签名客户端
 
@@ -319,7 +319,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `SignatureServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -343,7 +343,7 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 修改签名字段 {#modifying-signature-fields}
 
@@ -357,7 +357,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关签名服务和修改签名字段的详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关签名服务和修改签名字段的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-2}
 
@@ -379,10 +379,10 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括LiveCycle Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参阅 [包括LiveCycleJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建签名客户端**
 
@@ -401,7 +401,7 @@ ht-degree: 0%
 * **修订检查**: 指定在将签名应用到签名字段时是否执行吊销检查。
 * **证书选项**: 为证书种子值字典赋值。 在指定证书选项之前，建议您熟悉证书种子值字典。 (请参 [阅PDF参考](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)。)
 * **摘要选项**: 指定用于签名的摘要算法。 有效值为SHA1、SHA256、SHA384、SHA512和RIPEMD160。
-* **过滤器**: 指定用于签名字段的筛选器。 例如，可使用Adobe.PPKLite滤镜。 (请参 [阅PDF参考](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)。)
+* **过滤器**: 指定用于签名字段的筛选器。 例如，可以使用Adobe.PPKLite过滤器。 (请参 [阅PDF参考](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)。)
 * **标记选项**: 指定与此签名字段关联的标志值。 值1表示签署方只能为条目使用指定值。 值0表示允许其他值。 下面是位位置：
 
    * **1（过滤器）:** 用于签名字段的签名处理程序
@@ -422,11 +422,11 @@ ht-degree: 0%
 
 **将PDF文档另存为PDF文件**
 
-将包含修改后的签名字段的PDF文档另存为PDF文件，以便用户可以在Acrobat或Adobe Reader中打开它。
+将包含修改后的签名字段的PDF文档另存为PDF文件，以便用户在Acrobat或Adobe Reader打开它。
 
 **另请参阅**
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -464,7 +464,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >要查看可设置的所有种子值字典值，请参阅 `PDFSeedValueOptionSpec` 类引用。 (请参 [阅AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。)
+   >要查看可设置的所有种子值字典值，请参阅 `PDFSeedValueOptionSpec` 类引用。 (请参 [阅AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。)
 
 1. 修改签名字段
 
@@ -491,7 +491,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建签名客户端
 
@@ -501,7 +501,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `SignatureServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -526,7 +526,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >要查看可设置的所有种子值字典值，请参阅 `PDFSeedValueOptionSpec` 类引用。 (请参 [阅AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en))。
+   >要查看可设置的所有种子值字典值，请参阅 `PDFSeedValueOptionSpec` 类引用。 (请参阅 [AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en))。
 
 1. 修改签名字段
 
@@ -541,7 +541,7 @@ ht-degree: 0%
 1. 将PDF文档另存为PDF文件
 
    * 通过调 `System.IO.FileStream` 用其构造函数并传递一个字符串值来创建对象，该字符串值表示将包含签名字段的PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，它存储方 `BLOB` 法返回的对 `addSignatureField` 象内容。 通过获取对象数据成员的值 `BLOB` 填充字节 `MTOM` 数组。
+   * 创建一个字节数组，它存储方 `BLOB` 法返回的对 `addSignatureField` 象内容。 通过获取对象数据成员的 `BLOB` 值填充字 `MTOM` 节数组。
    * 通过调 `System.IO.BinaryWriter` 用对象的构造函数并传递该对 `System.IO.FileStream` 象来创建。
    * 通过调用对象的方法并传递字节数组，将字 `System.IO.BinaryWriter` 节数组的 `Write` 内容写入PDF文件。
 
@@ -549,7 +549,7 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 对PDF文档进行数字签名 {#digitally-signing-pdf-documents}
 
@@ -561,7 +561,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 >
 >在对PDF文档进行数字签名之前，必须确保将证书添加到AEM Forms。 证书是使用管理控制台添加的，或使用Trust Manager API以编程方式添加的。 (请参 [阅使用Trust Manager API导入凭据](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)。)
 
-您可以以编程方式对PDF文档进行数字签名。 对PDF文档进行数字签名时，必须引用AEM Forms中存在的安全凭据。 凭据是用于签名的私钥。
+您可以以编程方式对PDF文档进行数字签名。 在对PDF文档进行数字签名时，必须引用AEM Forms存在的安全凭据。 凭据是用于签名的私钥。
 
 签名服务在对PDF文档进行签名时执行以下步骤：
 
@@ -569,7 +569,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 1. 信任存储会搜索指定的凭据。
 1. 凭据将返回到签名服务并用于签署文档。 此凭据也会根据别名缓存，以便将来请求。
 
-有关处理安全凭据的信息，请参阅适用于应用程序服务器的*安装和部署AEM Forms*指南。
+有关处理安全凭据的信息，请参阅*针对应用程序服务器的安装和部署AEM Forms*指南。
 
 >[!NOTE]
 >
@@ -577,7 +577,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 >[!NOTE]
 >
->并非所有PDF文档都支持签名。 有关签名服务和对文档进行数字签名的更多信息，请 [参阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>并非所有PDF文档都支持签名。 有关签名服务和数字签名文档的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 >[!NOTE]
 >
@@ -585,7 +585,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 **nCypher nShield HSM凭据**
 
-当使用nCypher nShield HSM凭据对PDF文档进行签名或验证时，只有在重新启动部署AEM Forms的J2EE应用程序服务器后，才能使用新凭据。 但是，您可以设置一个配置值，使签名或验证操作能够正常工作，而无需重新启动J2EE应用程序服务器。
+当使用nCypher nShield HSM凭据对PDF文档进行签名或验证时，只有在重新启动AEM Forms部署的J2EE应用程序服务器后，才能使用新凭据。 但是，您可以设置一个配置值，使签名或验证操作能够正常工作，而无需重新启动J2EE应用程序服务器。
 
 您可以在cknfastrc文件中添加以下配置值，该文件位于/opt/nfast/cknfastrc(或c:\nfast\cknfastrc):
 
@@ -597,13 +597,13 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 **签名不受信任**
 
-在认证和签署同一PDF文档时，如果认证签名不可信，则在Acrobat或Adobe Reader中打开PDF文档时，第一个签名旁会显示一个黄色三角形。 为避免这种情况，认证签名必须受信任。
+在认证和签署同一PDF文档时，如果认证签名不可信，则在Acrobat或Adobe Reader打开PDF文档时，第一个签名旁会显示一个黄色三角形。 为避免这种情况，认证签名必须受信任。
 
 **对基于XFA的表单的文档进行签名**
 
-如果尝试使用签名服务API对基于XFA的表单进行签名，则Acrobat中的数据可 `View` 能 `Signed` 丢失 `Version` 了。 例如，请考虑以下工作流：
+如果尝试使用签名服务API对基于XFA的表单进行签名，则Acrobat的表单中可能 `View` 缺 `Signed` 少数 `Version` 据。 例如，请考虑以下工作流：
 
-* 使用使用Designer创建的XDP文件，可以合并一个包含签名字段的表单设计和包含表单数据的XML数据。 您可以使用Forms服务生成交互式PDF文档。
+* 使用使用Designer创建的XDP文件，可以合并一个包含签名字段的表单设计和包含表单数据的XML数据。 您使用Forms服务生成交互式PDF文档。
 * 您可以使用签名服务API对PDF文档进行签名。
 
 ### 步骤摘要 {#summary_of_steps-3}
@@ -625,8 +625,8 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
 **创建签名客户端**
 
@@ -657,7 +657,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 在执行吊销检查时，可以使用联机证书状态协议(OCSP)服务器，而不是使用CRL服务器。 通常，与CRL服务器相比，使用OCSP服务器时，执行吊销检查的速度更快。 (请参阅https://tools.ietf.org/html/rfc2560上的“在线证书状态协 [议](https://tools.ietf.org/html/rfc2560)”。)
 
-您可以使用Adobe应用程序和服务设置签名服务使用的CRL和OCSP服务器顺序。 例如，如果OCSP服务器是在Adobe Applications and Services中先设置的，则会检查OCSP服务器，然后检查CRL服务器。 （请参阅AAC帮助中的“使用信任存储管理证书和凭据”）。
+您可以使用Adobe应用程序和服务设置签名服务使用的CRL和OCSP服务器顺序。 例如，如果OCSP服务器首先在Adobe应用程序和服务中设置，则检查OCSP服务器，然后检查CRL服务器。 （请参阅AAC帮助中的“使用信任存储管理证书和凭据”）。
 
 如果指定不执行吊销检查，则签名服务不会检查用于签署或验证文档的证书是否已被吊销。 即忽略CRL和OCSP服务器信息。
 
@@ -673,11 +673,11 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 要成功签署PDF文档，您可以指定将包含数字签名的签名字段的完全限定名称，如 `form1[0].#subform[1].SignatureField3[3]`。 使用XFA表单字段时，还可以使用签名字段的部分名称： `SignatureField3[3]`.
 
-您还必须引用安全凭据才能对PDF文档进行数字签名。 要引用安全凭据，请指定别名。 别名是对PKCS#12文件（扩展名为。pfx）或硬件安全模块(HSM)中实际凭据的引用。 有关安全凭据的信息，请参阅适用于应用程序服务器的*安装和部署AEM Forms*指南。
+您还必须引用安全凭据才能对PDF文档进行数字签名。 要引用安全凭据，请指定别名。 别名是对PKCS#12文件（扩展名为。pfx）或硬件安全模块(HSM)中实际凭据的引用。 有关安全凭据的信息，请参阅*针对应用程序服务器的安装和部署AEM Forms*指南。
 
 **保存已签名的PDF文档**
 
-签名服务对PDF文档进行数字签名后，您可以将其另存为PDF文件，以便用户在Acrobat或Adobe Reader中打开它。
+签名服务对PDF文档进行数字签名后，您可以将其另存为PDF文件，以便用户在Acrobat或Adobe Reader打开它。
 
 **另请参阅**
 
@@ -685,7 +685,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 [使用Web服务API对PDF文档进行数字签名](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -725,7 +725,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
    * 一个 `java.lang.Boolean` 对象，它指定是否对签署方的证书执行吊销检查。
    * 存 `OCSPOptionSpec` 储联机证书状态协议(OCSP)支持首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。
    * 存 `CRLPreferences` 储证书吊销列表(CRL)首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。
-   * 存储 `TSPPreferences` 时间戳提供者(TSP)支持首选项的对象。 此参数是可选的，可以是 `null`。 有关详细信息，请 [参阅AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+   * 存储 `TSPPreferences` 时间戳提供者(TSP)支持首选项的对象。 此参数是可选的，可以是 `null`。 有关详细信息，请参 [阅AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
    该方 `sign` 法返回一 `com.adobe.idp.Document` 个表示已签名PDF文档的对象。
 
@@ -740,7 +740,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 [快速开始（SOAP模式）: 使用Java API对PDF文档进行数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -754,7 +754,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建签名客户端
 
@@ -764,7 +764,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `SignatureServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -791,7 +791,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
    * 表示签署方联系信息的字符串值。
    * 控 `PDFSignatureAppearanceOptions` 制数字签名外观的对象。 例如，您可以使用此对象向数字签名添加自定义标志。
    * 一个 `System.Boolean` 对象，它指定是否对签署方的证书执行吊销检查。 如果此吊销检查已完成，则会将其嵌入签名中。 默认为 `false`.
-   * 存 `OCSPOptionSpec` 储联机证书状态协议(OCSP)支持首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。 有关此对象的信息，请参 [阅AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+   * 存 `OCSPOptionSpec` 储联机证书状态协议(OCSP)支持首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。 有关此对象的信息，请参 [阅AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
    * 存 `CRLPreferences` 储证书吊销列表(CRL)首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。
    * 存储 `TSPPreferences` 时间戳提供者(TSP)支持首选项的对象。 此参数是可选的，可以是 `null`。
 
@@ -800,7 +800,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 1. 保存已签名的PDF文档
 
    * 通过调 `System.IO.FileStream` 用对象的构造函数创建对象。 传递一个字符串值，它表示已签名PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储方 `BLOB` 法返回的对象的内 `sign` 容。 通过获取对象数据成员的 `BLOB` 值填充字 `MTOM` 节数组。
+   * 创建一个字节数组，用于存储方 `BLOB` 法返回的对象的内 `sign` 容。 通过获取对象数据成员的值 `BLOB` 填充字节 `MTOM` 数组。
    * 通过调 `System.IO.BinaryWriter` 用对象的构造函数并传递该对 `System.IO.FileStream` 象来创建。
    * 通过调用对象的方法并传递字节数组，将字 `System.IO.BinaryWriter` 节数组的 `Write` 内容写入PDF文件。
 
@@ -810,33 +810,33 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## 对交互式表单进行数字签名 {#digitally-signing-interactive-forms}
+## 数字签署交互式Forms {#digitally-signing-interactive-forms}
 
-您可以对Forms服务创建的交互式表单进行签名。 例如，请考虑以下工作流：
+您可以签署由Forms服务创建的交互式表单。 例如，请考虑以下工作流：
 
-* 您可以合并使用设计器创建的基于XFA的PDF表单，以及使用Forms服务在XML文档中的表单数据。 Forms服务器呈现交互式表单。
+* 您可以合并使用设计器创建的基于XFA的PDF表单以及使用Forms服务的XML文档中的表单数据。 Forms服务器呈现交互式表单。
 * 您可以使用签名服务API对交互式表单进行签名。
 
-结果是一个数字签名的交互式PDF表单。 对基于XFA表单的PDF表单进行签名时，请确保将PDF文件另存为Adobe静态PDF表单。 如果尝试对另存为Adobe动态PDF表单的PDF表单进行签名，则会出现异常。 由于您正在对从表单服务返回的表单进行签名，请确保表单包含签名字段。
+结果是一个数字签名的交互式PDF表单。 对基于XFA表单的PDF表单进行签名时，请确保将PDF文件另存为Adobe静态PDF表单。 如果尝试对另存为Adobe动态PDF表单的PDF表单进行签名，则会出现异常。 由于您正在签署从Forms服务返回的表单，请确保表单包含签名字段。
 
 >[!NOTE]
 >
->在对交互式表单进行数字签名之前，必须确保将证书添加到AEM表单。 证书是使用管理控制台添加的，或使用Trust Manager API以编程方式添加的。 (请参 [阅使用Trust Manager API导入凭据](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)。)
+>在对交互式表单进行数字签名之前，必须确保将证书添加到AEM Forms。 证书是使用管理控制台添加的，或使用Trust Manager API以编程方式添加的。 (请参 [阅使用Trust Manager API导入凭据](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)。)
 
-使用Forms Service API时，将 `GenerateServerAppearance` 运行时选项设置为 `true`。 此运行时选项可确保在服务器上生成的表单的外观在在Acrobat或Adobe Reader中打开时仍然有效。 建议在生成交互式表单时使用Forms API进行签名，并设置此运行时选项。
+使用Forms服务API时，将 `GenerateServerAppearance` 运行时选项设置为 `true`。 此运行时选项可确保在Acrobat或Adobe Reader打开时服务器上生成的表单的外观仍然有效。 建议在生成交互式表单时使用FormsAPI进行签名，设置此运行时选项。
 
 >[!NOTE]
 >
->在阅读“对交互式表单进行数字签名”之前，建议您熟悉对PDF文档的签名。 (请参阅 [对PDF文档进行数字签名](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)。)
+>在阅读“数字签名交互式Forms”之前，建议您熟悉对PDF文档的签名。 (请参阅 [对PDF文档进行数字签名](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)。)
 
 ### 步骤摘要 {#summary_of_steps-4}
 
-要对Forms服务返回的交互式表单进行数字签名，请执行以下任务:
+要以数字方式签署Forms服务返回的交互式表单，请执行以下任务:
 
 1. 包括项目文件。
-1. 创建表单和签名客户端。
+1. 创建Forms和签名客户端。
 1. 使用Forms服务获取交互式表单。
 1. 对交互式表单进行签名。
 1. 将签名的PDF文档另存为PDF文件。
@@ -851,24 +851,24 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
 * adobe-forms-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
-**创建表单和签名客户端**
+**创建Forms和签名客户端**
 
-由于此工作流同时调用表单和签名服务，因此请同时创建Forms服务客户端和签名服务客户端。
+由于此工作流同时调用Forms和签名服务，请创建Forms服务客户端和签名服务客户端。
 
 **使用Forms服务获取交互式表单**
 
-您可以使用表单服务获取要签名的交互式PDF表单。 从AEM Forms开始，您可以将对 `com.adobe.idp.Document` 象传递给包含要渲染的表单的Forms服务。 此方法的名称为 `renderPDFForm2`。 此方法返回 `com.adobe.idp.Document` 包含要签名的表单的对象。 您可以将此实 `com.adobe.idp.Document` 例传递给签名服务。
+您可以使用Forms服务获取交互式PDF表单进行签名。 从AEM Forms开始，您可以将对 `com.adobe.idp.Document` 象传递给包含要渲染的表单的Forms服务。 此方法的名称为 `renderPDFForm2`。 此方法返回 `com.adobe.idp.Document` 包含要签名的表单的对象。 您可以将此实 `com.adobe.idp.Document` 例传递给签名服务。
 
-同样，如果您使用Web服务，则可以将 `BLOB` Forms服务返回的实例传递给签名服务。
+同样，如果您使用Web服务，您可以将Forms `BLOB` 服务返回的实例传递给签名服务。
 
 >[!NOTE]
 >
->与“对交互式表单进行数字签名”部分关联的快速开始将调用 `renderPDFForm2` 该方法。
+>与“数字签名交互式Forms”部分关联的快速开始调用该 `renderPDFForm2` 方法。
 
 **对交互式表单进行签名**
 
@@ -882,7 +882,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 **保存已签名的PDF文档**
 
-签名服务对PDF文档进行数字签名后，您可以将其另存为PDF文件。 可以在Acrobat或Adobe Reader中打开PDF文件。
+签名服务对PDF文档进行数字签名后，您可以将其另存为PDF文件。 PDF文件可在Acrobat或Adobe Reader打开。
 
 **另请参阅**
 
@@ -890,23 +890,23 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 [使用Web服务API对交互式表单进行数字签名](digitally-signing-certifying-documents.md#digitally-sign-an-interactive-form-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 [对PDF文档进行数字签名](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[渲染交互式PDF表单](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
+[渲染交互式PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
 
 ### 使用Java API对交互式表单进行数字签名 {#digitally-sign-an-interactive-form-using-the-java-api}
 
-使用表单和签名API(Java)对交互式表单进行数字签名：
+使用Forms和签名API(Java)对交互式表单进行数字签名：
 
 1. 包括项目文件
 
    在Java项目的类路径中包含客户端JAR文件，如adobe-signatures-client.jar和adobe-forms-client.jar。
 
-1. 创建表单和签名客户端
+1. 创建Forms和签名客户端
 
    * 创建包 `ServiceClientFactory` 含连接属性的对象。
    * 使用对 `SignatureServiceClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。
@@ -914,9 +914,9 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 1. 使用Forms服务获取交互式表单
 
-   * 使用 `java.io.FileInputStream` 其构造函数创建一个表示要传递给Forms服务的PDF文档的对象。 传递一个指定PDF文档位置的字符串值。
+   * 使用PDF `java.io.FileInputStream` 文档的构造函数创建一个表示要传递给Forms服务的PDF的对象。 传递一个指定PDF文档位置的字符串值。
    * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对 `java.io.FileInputStream` 象。
-   * 创建一 `java.io.FileInputStream` 个对象，它表示包含表单文档的XML，这些表单数据通过使用其构造函数传递给Forms服务。 传递一个指定XML文件位置的字符串值。
+   * 创建一 `java.io.FileInputStream` 个对象，它表示包含表单文档的XML，通过使用其构造函数将表单数据传递给Forms服务。 传递一个指定XML文件位置的字符串值。
    * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对 `java.io.FileInputStream` 象。
    * 创建 `PDFFormRenderSpec` 用于设置运行时选项的对象。 调用 `PDFFormRenderSpec` 对象的方 `setGenerateServerAppearance` 法并传递 `true`。
    * 调用对 `FormsServiceClient` 象的方 `renderPDFForm2` 法并传递以下值：
@@ -936,7 +936,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
    通过调用对象的方法并 `SignatureServiceClient` 传递以 `sign` 下值，对PDF文档进行签名：
 
-   * 表示 `com.adobe.idp.Document` 要签名的PDF文档的对象。 确保此对象是从 `com.adobe.idp.Document` Forms服务获取的对象。
+   * 表示 `com.adobe.idp.Document` 要签名的PDF文档的对象。 确保此对象是从Forms `com.adobe.idp.Document` 服务获取的对象。
    * 表示已签名的签名字段名称的字符串值。
    * 表示 `Credential` 用于对PDF文档进行数字签名的凭据的对象。 通过 `Credential` 调用对象的 `Credential` 静态方法创建 `getInstance` 对象。 传递一个字符串值，它指定与安全凭据对应的别名值。
    * 一个 `HashAlgorithm` 对象，它指定一个静态数据成员，它表示用于摘要PDF文档的哈希算法。 例如，可以指 `HashAlgorithm.SHA1` 定使用SHA1算法。
@@ -957,31 +957,31 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 **另请参阅**
 
-[对交互式表单进行数字签名](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
+[数字签署交互式Forms](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
 [快速开始（SOAP模式）: 使用Java API对PDF文档进行数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### 使用Web服务API对交互式表单进行数字签名 {#digitally-sign-an-interactive-form-using-the-web-service-api}
 
-使用表单和签名API（Web服务）对交互式表单进行数字签名：
+使用Forms和签名API（Web服务）对交互式表单进行数字签名：
 
 1. 包括项目文件
 
-   创建使用MTOM的Microsoft .NET项目。 由于此客户端应用程序调用两个AEM Forms服务，因此请创建两个服务引用。 对与签名服务关联的服务引用使用以下WSDL定义： `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 由于此客户端应用程序调用两个AEM Forms服务，因此创建两个服务引用。 对与签名服务关联的服务引用使用以下WSDL定义： `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
-   请对与Forms服务关联的服务引用使用以下WSDL定义： `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
+   将以下WSDL定义用于与Forms服务关联的服务引用： `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
 
    由于数 `BLOB` 据类型是两种服务引用的通用类型，因此在使用数据 `BLOB` 类型时完全限定数据类型。 在相应的Web服务快速开始中，所 `BLOB` 有实例都完全限定。
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
-1. 创建表单和签名客户端
+1. 创建Forms和签名客户端
 
    * 使用对象 `SignatureServiceClient` 的默认构造函数创建对象。
    * 使用构 `SignatureServiceClient.Endpoint.Address` 造函数创建 `System.ServiceModel.EndpointAddress` 对象。 将指定WSDL的字符串值传递给AEM Forms服务(例如 `http://localhost:8080/soap/services/SignatureService?WSDL`)。 您无需使用该属 `lc_version` 性。 此属性在您创建服务引用时使用。)
@@ -989,7 +989,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `SignatureServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
    * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -1028,7 +1028,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
    通过调用对象的方法并 `SignatureServiceClient` 传递以 `sign` 下值，对PDF文档进行签名：
 
-   * 表示 `BLOB` 要签名的PDF文档的对象。 使用 `BLOB` Forms服务返回的实例。
+   * 表示 `BLOB` 要签名的PDF文档的对象。 使用Forms `BLOB` 服务返回的实例。
    * 表示已签名的签名字段名称的字符串值。
    * 表示 `Credential` 用于对PDF文档进行数字签名的凭据的对象。 使用对 `Credential` 象的构造函数创建对象，并通过为对象的属性指 `Credential` 定一个值来指 `alias` 定别名。
    * 一个 `HashAlgorithm` 对象，它指定一个静态数据成员，它表示用于摘要PDF文档的哈希算法。 例如，可以指 `HashAlgorithm.SHA1` 定使用SHA1算法。
@@ -1038,7 +1038,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
    * 表示签署方联系信息的字符串值。
    * 控 `PDFSignatureAppearanceOptions` 制数字签名外观的对象。 例如，您可以使用此对象向数字签名添加自定义标志。
    * 一个 `System.Boolean` 对象，它指定是否对签署方的证书执行吊销检查。 如果此吊销检查已完成，则会将其嵌入签名中。 默认为 `false`.
-   * 存 `OCSPPreferences` 储联机证书状态协议(OCSP)支持首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。 有关此对象的信息，请参 [阅AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+   * 存 `OCSPPreferences` 储联机证书状态协议(OCSP)支持首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。 有关此对象的信息，请参 [阅AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
    * 存 `CRLPreferences` 储证书吊销列表(CRL)首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。
    * 存储 `TSPPreferences` 时间戳提供者(TSP)支持首选项的对象。 此参数是可选的，可以是 `null`。
 
@@ -1047,13 +1047,13 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 1. 保存已签名的PDF文档
 
    * 通过调 `System.IO.FileStream` 用对象的构造函数创建对象。 传递一个字符串值，它表示已签名PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储方 `BLOB` 法返回的对象的内 `sign` 容。 通过获取对象数据成员的值 `BLOB` 填充字节 `MTOM` 数组。
+   * 创建一个字节数组，用于存储方 `BLOB` 法返回的对象的内 `sign` 容。 通过获取对象数据成员的 `BLOB` 值填充字 `MTOM` 节数组。
    * 通过调 `System.IO.BinaryWriter` 用对象的构造函数并传递该对 `System.IO.FileStream` 象来创建。
    * 通过调用对象的方法并传递字节数组，将字 `System.IO.BinaryWriter` 节数组的 `Write` 内容写入PDF文件。
 
 **另请参阅**
 
-[对交互式表单进行数字签名](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
+[数字签署交互式Forms](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -1062,18 +1062,18 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 您可以通过使用称为认证签名的特定类型的签名来认证PDF文档，从而保护它。 认证签名与数字签名在以下方面有所区别：
 
 * 它必须是应用于PDF文档的第一个签名； 即，在应用认证签名时，文档中的任何其他签名字段都必须未签名。 在PDF文档中只允许使用一个认证签名。 如果要对PDF文档进行签名和验证，您必须在对其进行签名之前对其进行验证。 验证PDF文档后，您可以对其他签名字段进行数字签名。
-* 文档的作者或发起者可以指定以某些方式修改文档，而不会使认证签名失效。 例如，文档可能允许填写表单或添加注释。 如果作者指定不允许进行某些修改，Acrobat将限制用户以这种方式修改文档。 如果进行了此类修改（如使用其他应用程序），则认证签名无效，并且Acrobat在用户打开文档时发出警告。 （对于未经认证的签名，不会阻止修改，并且正常的编辑操作不会使原始签名失效。）
+* 文档的作者或发起者可以指定以某些方式修改文档，而不会使认证签名失效。 例如，文档可能允许填写表单或添加注释。 如果作者指定不允许进行某些修改，则Acrobat限制用户以这种方式修改文档。 如果进行了此类修改，如使用其他应用程序，则认证签名无效，Acrobat在用户打开文档时发出警告。 （对于未经认证的签名，不会阻止修改，并且正常的编辑操作不会使原始签名失效。）
 * 在签名时，会扫描文档以查找可能使文档的内容模糊或具有误导性的特定类型的内容。 例如，注释可能会模糊页面上某些对了解认证内容很重要的文本。 可以提供有关此类内容的说明（法律证明）。
 
-您可以使用签名服务Java API或签名Web服务API以编程方式验证PDF文档。 验证PDF文档时，必须引用凭据服务中存在的安全凭据。 有关安全凭据的信息，请参 *阅适用于应用程序服务器的* “安装和部署AEM Forms”指南。
+您可以使用签名服务Java API或签名Web服务API以编程方式验证PDF文档。 验证PDF文档时，必须引用凭据服务中存在的安全凭据。 有关安全凭据的信息，请参阅适 *用于应用程序服务器的安* 装和部署AEM Forms(Installing and Deploying Metain Guide)。
 
 >[!NOTE]
 >
->在验证和签署同一PDF文档时，如果验证签名不可信，则在Acrobat或Adobe Reader中打开PDF文档时，第一个签名旁边将显示一个黄色三角形。 必须信任认证签名才能避免这种情况。
+>在验证和签署同一PDF文档时，如果验证签名不可信，则在Acrobat或Adobe Reader打开PDF文档时，第一个签名旁边将显示一个黄色三角形。 必须信任认证签名才能避免这种情况。
 
 >[!NOTE]
 >
->当使用nCypher nShield HSM凭据对PDF文档进行签名或验证时，只有在重新启动部署了AEM Forms的J2EE应用程序服务器后，才能使用新凭据。 但是，您可以设置一个配置值，使签名或验证操作能够正常工作，而无需重新启动J2EE应用程序服务器。
+>当使用nCypher nShield HSM凭据对PDF文档进行签名或验证时，只有重新启动部署了AEM Forms的J2EE应用程序服务器，才能使用新凭据。 但是，您可以设置一个配置值，使签名或验证操作能够正常工作，而无需重新启动J2EE应用程序服务器。
 
 您可以在cknfastrc文件中添加以下配置值，该文件位于/opt/nfast/cknfastrc(或c:\nfast\cknfastrc):
 
@@ -1106,10 +1106,10 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建签名客户端**
 
@@ -1127,7 +1127,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 * **签名字段名称**: 经过认证的签名字段的完全限定名称。 以下值是一个示例： `form1[0].#subform[1].SignatureField3[3]`. 使用XFA表单字段时，还可以使用签名字段的部分名称： `SignatureField3[3]`. 如果字段名称传递了null值，则会动态创建并验证不可见的签名字段。
 * **安全凭据**: 用于验证PDF文档的凭据。 此安全凭据包含密码和别名，该别名必须与在凭据服务中的凭据中显示的别名相匹配。 别名是对PKCS#12文件（扩展名为。pfx）或硬件安全模块(HSM)中实际凭据的引用。
 * **哈希算法**: 用于摘要PDF文档的哈希算法。
-* **签名原因**: 一个值，显示在Acrobat或Adobe Reader中，以便其他用户了解PDF文档通过认证的原因。
+* **签名原因**: 在Acrobat或Adobe Reader显示的值，以便其他用户了解PDF文档通过认证的原因。
 * **签署方的位置**: 由凭据指定的签署方的位置。
 * **联系信息**: 签署方的联系信息，如地址和电话号码。
 * **权限信息**: 控制最终用户在文档上可以执行的操作而不导致认证签名无效的权限。 例如，您可以设置权限，以便对PDF文档的任何更改都会导致认证签名无效。
@@ -1140,7 +1140,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 **将认证的PDF文档另存为PDF文件**
 
-签名服务验证PDF文档后，您可以将其另存为PDF文件，以便用户在Acrobat或Adobe Reader中打开它。
+签名服务验证PDF文档后，您可以将其另存为PDF文件，以便用户在Acrobat或Adobe Reader打开它。
 
 **另请参阅**
 
@@ -1148,7 +1148,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 [使用Web服务API验证PDF文档](digitally-signing-certifying-documents.md#certify-pdf-documents-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1187,9 +1187,9 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
    * 一个字符串值，用于解释使签名失效的操作。
    * 一个 `java.lang.Boolean` 对象，它指定是否对签署方的证书执行吊销检查。 如果此吊销检查已完成，则会将其嵌入签名中。 默认为 `false`.
    * 一个 `java.lang.Boolean` 对象，它指定是否锁定要验证的签名字段。 如果字段已锁定，则签名字段将标记为只读，其属性将无法修改，并且没有所需权限的任何人都无法清除该字段。 默认为 `false`.
-   * 存 `OCSPPreferences` 储联机证书状态协议(OCSP)支持首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。 有关此对象的信息，请参 [阅AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+   * 存 `OCSPPreferences` 储联机证书状态协议(OCSP)支持首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。 有关此对象的信息，请参 [阅AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
    * 存 `CRLPreferences` 储证书吊销列表(CRL)首选项的对象。 如果未执行吊销检查，则不使用此参数，您可以指定 `null`。
-   * 存储 `TSPPreferences` 时间戳提供者(TSP)支持首选项的对象。 例如，创建对象 `TSPPreferences` 后，可以通过调用对象的方法来设置TSP服 `TSPPreferences` 务器的URL `setTspServerURL` 。 此参数是可选的，可以是 `null`。 有关详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+   * 存储 `TSPPreferences` 时间戳提供者(TSP)支持首选项的对象。 例如，创建对象 `TSPPreferences` 后，可以通过调用对象的方法来设置TSP服 `TSPPreferences` 务器的URL `setTspServerURL` 。 此参数是可选的，可以是 `null`。 有关详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
    该方 `certify` 法返回一 `com.adobe.idp.Document` 个表示已验证PDF文档的对象。
 
@@ -1204,7 +1204,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 [快速开始（SOAP模式）: 使用Java API认证PDF文档](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1218,7 +1218,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建签名客户端
 
@@ -1228,7 +1228,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `SignatureServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -1279,13 +1279,13 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 验证数字签名 {#verifying-digital-signatures}
 
 可以验证数字签名，以确保已签名的PDF文档未被修改，且数字签名有效。 验证数字签名时，您可以检查签名的状态和签名的属性，如签名者的身份。 在信任数字签名之前，建议您验证数字签名。 验证数字签名时，请引用包含数字签名的PDF文档。
 
-假设签署方的身份未知。 当您在Acrobat中打开PDF文档时，将显示一条警告消息，指出签署方的身份不详，如下图所示。
+假设签署方的身份未知。 当您在Acrobat打开PDF文档时，将显示一条警告消息，指示签署方的身份未知，如下图所示。
 
 ![vd_vd_verifsig](assets/vd_vd_verifysig.png)
 
@@ -1293,7 +1293,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 >[!NOTE]
 >
->有关签名服务和验证数字签名的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关签名服务和验证数字签名的详细信息，请参阅 [AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-6}
 
@@ -1316,10 +1316,10 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建签名客户端**
 
@@ -1337,15 +1337,15 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 * 吊销检查
 * 时间戳值
 
-在设置这些选项时，可以指定验证时间。 例如，您可以选择当前时间（验证程序计算机上的时间），它指示使用当前时间。 有关不同时间值的信息，请参阅 `VerificationTime` AEM Forms API参 [考中的明细列表值](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+在设置这些选项时，可以指定验证时间。 例如，您可以选择当前时间（验证程序计算机上的时间），它指示使用当前时间。 有关不同时间值的信息，请参阅《AEM Forms `VerificationTime` API参考 [》中的明细列表值](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
-您还可以指定是否在验证过程中执行吊销检查。 例如，您可以执行吊销检查以确定证书是否被吊销。 有关吊销检查选项的信息，请参阅 `RevocationCheckStyle` AEM Forms API参 [考中的明细列表值](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+您还可以指定是否在验证过程中执行吊销检查。 例如，您可以执行吊销检查以确定证书是否被吊销。 有关吊销检查选项的信息，请参阅《AEM Forms `RevocationCheckStyle` API参考 [》中的明细列表值](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
 要对证书执行吊销检查，请使用对象指定证书吊销列表(CRL)服务器的 `CRLOptionSpec` URL。 但是，如果未指定URL服务器的URL，签名服务将从证书获取该URL。
 
 在执行吊销检查时，可以使用联机证书状态协议(OCSP)服务器，而不是使用CRL服务器。 通常，与CRL服务器相比，使用OCSP服务器时，执行吊销检查的速度更快。 (请参阅 [联机证书状态协议](https://tools.ietf.org/html/rfc2560)。)
 
-您可以使用Adobe应用程序和服务设置签名服务使用的CRL和OCSP服务器顺序。 例如，如果OCSP服务器是在Adobe Applications and Services中先设置的，则会检查OCSP服务器，然后检查CRL服务器。
+您可以使用Adobe应用程序和服务设置签名服务使用的CRL和OCSP服务器顺序。 例如，如果OCSP服务器首先在Adobe应用程序和服务中设置，则检查OCSP服务器，然后检查CRL服务器。
 
 如果不执行吊销检查，签名服务将不检查证书是否被吊销。 即忽略CRL和OCSP服务器信息。
 
@@ -1367,7 +1367,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 >[!NOTE]
 >
->有关验证签名时需要的其他值，请参 [阅AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+>有关验证签名时需要的其他值，请参 [阅AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
 **确定签名的状态**
 
@@ -1387,7 +1387,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 [使用Web服务API验证数字签名](#unresolvedlink-lc-si)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1441,7 +1441,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 [快速开始（SOAP模式）: 使用Java API验证数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1455,7 +1455,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建签名客户端
 
@@ -1465,7 +1465,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `SignatureServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -1510,15 +1510,15 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥： 公钥和
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 验证多个数字签名 {#verifying-multiple-digital-signatures}
 
-AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文档包含多个数字签名，这是需要多个签名者签名的业务流程的结果。 例如，考虑一项要求贷款官员和经理签字的财务交易。 您可以使用签名服务Java API或Web服务API验证PDF文档中的所有签名。 验证多个数字签名时，您可以检查每个签名的状态和属性。 在您信任数字签名之前，建议您验证它。 建议您熟悉验证单个数字签名。
+AEM Forms提供验证PDF文档中所有数字签名的方法。 假定PDF文档包含多个数字签名，这是需要多个签名者签名的业务流程的结果。 例如，考虑一项要求贷款官员和经理签字的财务交易。 您可以使用签名服务Java API或Web服务API验证PDF文档中的所有签名。 验证多个数字签名时，您可以检查每个签名的状态和属性。 在您信任数字签名之前，建议您验证它。 建议您熟悉验证单个数字签名。
 
 >[!NOTE]
 >
->有关签名服务和验证数字签名的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关签名服务和验证数字签名的详细信息，请参阅 [AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-7}
 
@@ -1540,10 +1540,10 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建签名客户端**
 
@@ -1561,15 +1561,15 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 * 吊销检查
 * 时间戳值
 
-在设置这些选项时，可以指定验证时间。 例如，您可以选择当前时间（验证程序计算机上的时间），它指示使用当前时间。 有关不同时间值的信息，请参阅 `VerificationTime` AEM Forms API参 [考中的明细列表值](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+在设置这些选项时，可以指定验证时间。 例如，您可以选择当前时间（验证程序计算机上的时间），它指示使用当前时间。 有关不同时间值的信息，请参阅《AEM Forms `VerificationTime` API参考 [》中的明细列表值](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
-您还可以指定是否在验证过程中执行吊销检查。 例如，您可以执行吊销检查以确定证书是否被吊销。 有关吊销检查选项的信息，请参阅 `RevocationCheckStyle` AEM Forms API参 [考中的明细列表值](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+您还可以指定是否在验证过程中执行吊销检查。 例如，您可以执行吊销检查以确定证书是否被吊销。 有关吊销检查选项的信息，请参阅《AEM Forms `RevocationCheckStyle` API参考 [》中的明细列表值](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
 要对证书执行吊销检查，请使用对象指定证书吊销列表(CRL)服务器的 `CRLOptionSpec` URL。 但是，如果未指定CRL服务器的URL，签名服务将从证书获取该URL。
 
-在执行吊销检查时，可以使用联机证书状态协议(OCSP)服务器，而不是使用CRL服务器。 通常，使用OCSP服务器而不是CRL服务器时，执行吊销检查的速度会更快。 (请参阅 [联机证书状态协议](https://tools.ietf.org/html/rfc2560)。)
+在执行吊销检查时，可以使用联机证书状态协议(OCSP)服务器，而不是使用CRL服务器。 通常，使用OCSP服务器而非CRL服务器时，执行吊销检查的速度会更快。 (请参阅 [联机证书状态协议](https://tools.ietf.org/html/rfc2560)。)
 
-您可以使用Adobe应用程序和服务设置签名服务使用的CRL和OCSP服务器顺序。 例如，如果OCSP服务器是在Adobe Applications and Services中先设置的，则会检查OCSP服务器，然后检查CRL服务器。
+您可以使用Adobe应用程序和服务设置签名服务使用的CRL和OCSP服务器顺序。 例如，如果OCSP服务器是在Adobe应用程序和服务中首先设置的，则检查OCSP服务器，然后检查CRL服务器。
 
 如果不执行吊销检查，签名服务将不检查证书是否被吊销。 即忽略CRL和OCSP服务器信息。
 
@@ -1605,7 +1605,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 
 [使用Web服务API验证多个数字签名](#unresolvedlink-lc-si)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1654,7 +1654,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 
 [快速开始（SOAP模式）: 使用Java API验证多个数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [验证数字签名](#unresolvedlink-lc-si)
 
@@ -1670,7 +1670,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建签名客户端
 
@@ -1680,7 +1680,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `SignatureServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -1720,7 +1720,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 删除数字签名 {#removing-digital-signatures}
 
@@ -1728,7 +1728,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 
 >[!NOTE]
 >
->有关签名服务的详细信息，请参 [阅AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关签名服务的详细信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-8}
 
@@ -1749,10 +1749,10 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar（在JBoss上部署AEM表单时是必需的）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，则为必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，则为必需)
+* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必需)
 
-有关这些JAR文件的位置的信息，请参 [阅包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+有关这些JAR文件的位置的信息，请参 [阅包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建签名客户端**
 
@@ -1768,7 +1768,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 
 **将PDF文档另存为PDF文件**
 
-在签名服务从签名字段删除数字签名后，您可以将PDF文档另存为PDF文件，以便用户可以在Acrobat或Adobe Reader中打开它。
+在签名服务从签名字段删除数字签名后，您可以将PDF文档另存为PDF文件，以便用户在Acrobat或Adobe Reader打开它。
 
 **另请参阅**
 
@@ -1776,7 +1776,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 
 [使用Web服务API删除数字签名](digitally-signing-certifying-documents.md#remove-digital-signatures-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1820,7 +1820,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 
 [快速开始（SOAP模式）: 使用Java API删除数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1834,7 +1834,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建签名客户端
 
@@ -1844,7 +1844,7 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `SignatureServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `SignatureServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -1879,4 +1879,4 @@ AEM Forms提供了验证PDF文档中所有数字签名的方法。 假定PDF文�
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

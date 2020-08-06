@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
 source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 67%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
 
 Rapid Refine 渲染器通常需要数分钟才能渲染较大的图像。但是，第三方渲染器在配置为获取最高质量时，通常需要很多分钟，甚至长达数小时。
 
-转换、处理和渲染作业会根据需要在服务器上排队，以防止服务器过载。The message &quot;Waiting for rendering...&quot; is shown on recently uploaded assets in the [!UICONTROL Card View]. 此状态表示必须完成其他处理或渲染作业，才能启动当前渲染作业。
+转换、处理和渲染作业会根据需要在服务器上排队，以防止服务器过载。The message &quot;Waiting for rendering...&quot; is shown on recently uploaded assets in the [!UICONTROL Card View]. 此状态表示必须完成其他处理或渲染作业，才能完成当前渲染作业开始。
 
 >[!NOTE]
 >

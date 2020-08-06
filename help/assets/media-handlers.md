@@ -15,9 +15,9 @@ ht-degree: 5%
 
 Adobe Experience Manager资产提供一组默认工作流和媒体处理程序来处理资产。 工作流定义了典型的资产管理和处理任务，然后将特定任务委派给媒体处理程序，例如缩略图生成或元数据提取。
 
-可以定义一个工作流，当特定类型或格式的资产上传到服务器时，该工作流会自动执行。 这些处理步骤定义为一系列AEM Assets媒体处理程序。 AEM提供一些 [内置的处理函数](#default-media-handlers) ，其他处理函数可以是自定 [义开发的](#creating-a-new-media-handler) ，也可以通过将进程委派到命令行工 [具来定义](#command-line-based-media-handler)。
+可以定义一个工作流，当特定类型或格式的资产上传到服务器时，该工作流会自动执行。 这些处理步骤定义为一系列AEM Assets媒体处理程序。 AEM提供一 [些内置的处理](#default-media-handlers) 程序，通过将进程委派到命令行工具，可 [以自定义开发](#creating-a-new-media-handler) 或定义其他处 [理程序](#command-line-based-media-handler)。
 
-媒体处理程序是AEM资产中对资产执行特定操作的服务。 例如，当MP3音频文件上传到AEM时，工作流会触发一个MP3处理程序，该处理程序会提取元数据并生成缩略图。 媒体处理程序通常与工作流结合使用。 AEM中支持大多数常见的MIME类型。 通过扩展／创建任务、扩展／创建媒体处理函数或禁用／启用媒体处理函数，可以对资产执行特定工作流。
+媒体处理程序是AEM Assets内部对资产执行特定操作的服务。 例如，当MP3音频文件上传到AEM时，工作流会触发一个MP3处理程序，该处理程序会提取元数据并生成缩略图。 媒体处理程序通常与工作流结合使用。 AEM中支持大多数常见的MIME类型。 通过扩展／创建任务、扩展／创建媒体处理函数或禁用／启用媒体处理函数，可以对资产执行特定工作流。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Adobe Experience Manager资产提供一组默认工作流和媒体处理程序�
 
 ## 默认媒体处理函数 {#default-media-handlers}
 
-AEM资产中提供以下媒体处理程序，并处理最常见的MIME类型：
+以下媒体处理程序在AEM Assets内可用，并处理最常见的MIME类型：
 
 | 处理程序名称 | 服务名称（在系统控制台中） | 支持的MIME类型 |
 |---|---|---|
@@ -59,7 +59,7 @@ AEM资产中提供以下媒体处理程序，并处理最常见的MIME类型：
 
 媒体处理程序是通常与工作流结合使用的服务。
 
-AEM具有一些处理资产的默认工作流。 要视图这些模型，请打开工作流控制台，然后单 **[!UICONTROL 击模型]** 选项卡： 与AEM资产开始的工作流标题是特定于资产的标题。
+AEM具有一些处理资产的默认工作流。 要视图这些模型，请打开工作流控制台，然后单 **[!UICONTROL 击模型]** 选项卡： 与AEM Assets开始的工作流标题是特定资产的工作流标题。
 
 现有工作流可以扩展，也可以创建新客户，以根据特定要求处理资产。
 
@@ -129,7 +129,7 @@ AEM具有一些处理资产的默认工作流。 要视图这些模型，请打�
 
 请参 [阅开发工具](../sites-developing/dev-tools.md) ，安装Eclipse并设置Maven插件以及设置Maven项目所需的依赖项。
 
-执行以下过程后，当您将txt文件上传到AEM时，将提取该文件的元数据并生成两个带水印的缩略图。
+执行以下过程后，将txt文件上传到AEM时，将提取该文件的元数据并生成两个带水印的缩略图。
 
 1. 在Eclipse中，创建 `myBundle` Maven项目：
 
@@ -140,8 +140,8 @@ AEM具有一些处理资产的默认工作流。 要视图这些模型，请打�
 
       * 组ID: com.day.cq5.myhandler
       * 对象ID: myBundle
-      * 名称： 我的AEM捆绑
-      * 描述： 这是我的AEM捆绑
+      * 名称： 我的AEM套件
+      * 描述： 这是我的AEM套件
    1. 单击 **[!UICONTROL 完成]**。
 
 
@@ -430,14 +430,14 @@ AEM具有一些处理资产的默认工作流。 要视图这些模型，请打�
    1. 将在 `myBundle-0.0.1-SNAPSHOT.jar` 下创建包（包含编译类） `myBundle/target`。
 
 1. 在CRX资源管理器中，在下面创建新节点 `/apps/myApp`。 名称= `install`，类型= `nt:folder`。
-1. 复制捆绑包 `myBundle-0.0.1-SNAPSHOT.jar` 并将其存储 `/apps/myApp/install` 在下面（例如WebDAV）。 新文本处理函数现在在AEM中处于活动状态。
+1. 复制捆绑包 `myBundle-0.0.1-SNAPSHOT.jar` 并将其存储 `/apps/myApp/install` 在下面（例如WebDAV）。 新的文本处理函数现在在AEM中处于活动状态。
 1. 在您的浏览器中，打开Apache Felix Web管理控制台。 选择“组件”选项卡并禁用默认文本处理程序 `com.day.cq.dam.core.impl.handler.TextHandler`。
 
 ## 基于命令行的媒体处理程序 {#command-line-based-media-handler}
 
-AEM允许您在工作流中运行任何命令行工具来转换资产（如ImageMagick），并将新演绎版添加到资产。 您只需在承载AEM服务器的磁盘上安装命令行工具，并向工作流中添加和配置流程步骤。 调用的过程( `CommandLineProcess`称为)还允许根据特定MIME类型进行筛选，并基于新演绎版创建多个缩略图。
+AEM使您能够在工作流中运行任何命令行工具来转换资产（如ImageMagick），并将新演绎版添加到资产。 您只需在托管AEM服务器的磁盘上安装命令行工具，并向工作流中添加和配置一个流程步骤。 调用的过程( `CommandLineProcess`称为)还允许根据特定MIME类型进行筛选，并基于新演绎版创建多个缩略图。
 
-以下转换可以自动运行并在AEM资产中存储：
+以下转换可以自动运行并在AEM Assets内存储：
 
 * 使用ImageMagick和Ghostscript的EPS [和AI](https://www.imagemagick.org/script/index.php) 转 [换](https://www.ghostscript.com/)
 * 使用FFmpeg的FLV视频转 [码](https://ffmpeg.org/)
@@ -446,14 +446,14 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 
 >[!NOTE]
 >
->在非Windows系统上，FFMpeg工具在为文件名中包含单引号(&#39;)的视频资产生成演绎版时返回错误。 如果视频文件的名称包含单引号，请在上传到AEM之前将其删除。
+>在非Windows系统上，FFMpeg工具在为文件名中包含单引号(&#39;)的视频资产生成演绎版时返回错误。 如果视频文件的名称包含单引号，请先将其删除，然后再上传到AEM。
 
 该流 `CommandLineProcess` 程按其列出的顺序执行以下操作：
 
 * 过滤器文件，如果指定，则根据特定的mime类型。
-* 在承载AEM服务器的磁盘上创建临时目录。
+* 在托管AEM服务器的磁盘上创建临时目录。
 * 将原始文件流化到临时目录。
-* 执行由步骤的参数定义的命令。 该命令将在具有运行AEM的用户权限的临时目录中执行。
+* 执行由步骤的参数定义的命令。 该命令在临时目录中执行，具有运行AEM的用户的权限。
 * 将结果流回AEM服务器的再现文件夹。
 * 删除临时目录。
 * 根据这些演绎版创建缩略图（如果已指定）。 缩略图的编号和尺寸由步骤的参数定义。
@@ -504,7 +504,7 @@ AEM允许您在工作流中运行任何命令行工具来转换资产（如Image
 | tn:&lt;width>:&lt;height> | 可选参数。 该过程创建一个缩略图，其尺寸在参数中定义。 <br>可以定义多个缩略图。 |
 | cmd: &lt;命令> | 定义将执行的命令。 语法取决于命令行工具。 只能定义一个命令。 <br>以下变量可用于创建命令：<br>`${filename}`: 输入文件的名称，例如original.jpg <br> `${file}`: 输入文件的完整路径名，例如/tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: 输入文件的目录，例如/tmp/cqdam0816.tmp <br>`${basename}`: 不带扩展名的输入文件的名称，例如原始文 <br>`${extension}`件： 输入文件的扩展名，例如jpg |
 
-例如，如果ImageMagick安装在承载AEM服务器的磁盘上，并且如果您使用CommandLineProcess作为实施创建了一个进 **程步骤** ，以及将以下值作为进 **程参数**:
+例如，如果ImageMagick安装在承载AEM服务器的磁盘上，并且如果您使用CommandLineProcess作为实施创建了一个进 **程步骤** ，以及以下值作为 **进程参数**:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 

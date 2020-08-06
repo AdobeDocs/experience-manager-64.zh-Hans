@@ -1,8 +1,8 @@
 ---
 title: 转换PDF服务
 seo-title: 转换PDF服务
-description: '使用AEM Forms ConvertPDF服务将PDF文档转换为PostScript或图像文件。 '
-seo-description: '使用AEM Forms ConvertPDF服务将PDF文档转换为PostScript或图像文件。 '
+description: '使用AEM FormsConvertPDF服务将PDF文档转换为PostScript或图像文件。 '
+seo-description: '使用AEM FormsConvertPDF服务将PDF文档转换为PostScript或图像文件。 '
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 配置服务的属性   {#properties}
 
-您可以在AEM控 **制台中使用** AEMFD ConvertPDF服务配置此服务的属性。 AEM控制台的默认URL为 `https://[host]:[port]/system/console/configMgr`。
+您可以使用AEM **控制台中的AEMFD** ConvertPDF服务配置此服务的属性。 AEM控制台的默认URL为 `https://[host]:[port]/system/console/configMgr`。
 
 ## 使用服务 {#using-the-service}
 
@@ -131,7 +131,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### 将ConvertPDF服务与AEM工作流结合使用 {#using-convertpdf-service-with-aem-workflows}
+### 将ConvertPDF服务与AEM工作流一起使用 {#using-convertpdf-service-with-aem-workflows}
 
 从工作流运行ConvertPDF服务与从JSP/Servlet运行类似。
 

@@ -1,8 +1,8 @@
 ---
-title: AEM 6.4中的常用存储库重组
-seo-title: AEM 6.4中的常用存储库重组
-description: 了解如何进行必要的更改以迁移到AEM 6.4中新的存储库结构，这是AEM所有区域通用的。
-seo-description: 了解如何进行必要的更改以迁移到AEM 6.4中新的存储库结构，这是AEM所有区域通用的。
+title: AEM 6.4中的常见存储库重组
+seo-title: AEM 6.4中的常见存储库重组
+description: 了解如何进行必要的更改以迁移到AEM 6.4中新的存储库结构，这些结构在AEM的所有区域中都很常见。
+seo-description: 了解如何进行必要的更改以迁移到AEM 6.4中新的存储库结构，这些结构在AEM的所有区域中都很常见。
 uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,9 +18,9 @@ ht-degree: 2%
 ---
 
 
-# AEM 6.4中的常用存储库重组{#common-repository-restructuring-in-aem}
+# AEM 6.4中的常见存储库重组{#common-repository-restructuring-in-aem}
 
-如AEM 6.4页面 [中的父存储库重组中所述](/help/sites-deploying/repository-restructuring.md) ，升级到AEM 6.4的客户应使用此页来评估与存储库更改相关的工作，这些更改可能会影响所有解决方案。 某些更改需要在AEM 6.4升级过程中进行工作，而其他更改可能会延迟到6.5升级。
+如AEM 6.4中的父 [存储库重组页所述](/help/sites-deploying/repository-restructuring.md) ，升级到AEM 6.4的客户应使用此页来评估与存储库更改相关的工作，这些更改可能会影响所有解决方案。 某些更改需要在AEM 6.4升级过程中进行工作，而其他更改则可推迟到6.5升级。
 
 **升级6.4**
 
@@ -33,12 +33,12 @@ ht-degree: 2%
 **6.5升级之前**
 
 * [ContextHub 配置](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#contexthub-configurations)
-* [经典云服务设计](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-cloud-services-designs)
+* [经典Cloud Services设计](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-cloud-services-designs)
 * [经典仪表板设计](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-dashboards-designs)
 * [经典报表设计](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#classic-reports-designs)
 * [默认设计](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#default-designs)
-* [Adobe DTM JavaScript端点](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#adobe-dtm-javascript-endpoint)
-* [Adobe DTM Web-Hook端点](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#adobe-dtm-web-hook-endpoint)
+* [AdobeDTM JavaScript端点](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#adobe-dtm-javascript-endpoint)
+* [AdobeDTM Web-Hook端点](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#adobe-dtm-web-hook-endpoint)
 * [收件箱任务](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#inbox-tasks)
 * [多站点管理器Blueprint配置](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
 * [AEM项目仪表板小工具配置](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#aem-projects-dashboard-gadget-configurations)
@@ -49,7 +49,7 @@ ht-degree: 2%
 * [翻译规则](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules)
 * [翻译构件客户端库](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-widget-client-library)
 * [树激活Web控制台](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#tree-activation-web-console)
-* [供应商翻译连接器云服务](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#vendor-translation-connector-cloud-services)
+* [供应商转换连接器Cloud Services](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#vendor-translation-connector-cloud-services)
 * [工作流通知电子邮件模板](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#workflow-notification-email-templates)
 
 ## 升级6.4 {#with-upgrade}
@@ -86,8 +86,8 @@ ht-degree: 2%
    <td><strong>重组指导</strong></td> 
    <td><p>任何新的或修改的工作流模型都必须迁移到/conf/global/workflow/models。</p> 
     <ol> 
-     <li>将修改后的工作流模型部署到本地AEM 6.4开发实例中，使其存在于“上一个”位置。</li> 
-     <li>在AEM &gt;工具&gt;工作流&gt;模型中，使用AEM的工作流模型编辑器编辑工作流模型。</li> 
+     <li>将修改后的工作流模型部署到本地AEM 6.4开发实例中，以便它们存在于“上一个”位置。</li> 
+     <li>使用AEM Workflow Model Editor编辑工作流模型，其地址为AEM &gt;工具&gt;工作流&gt;模型。</li> 
      <li>迁移修改的AEM提供的工作流模型时
       <ol> 
        <li>打开工作流模型编辑器后，修改浏览器的地址URL，并将路径段/libs/settings/workflow/models替换为/etc/workflow/models。
@@ -114,7 +114,7 @@ ht-degree: 2%
      <li><code>/conf/global/settings/workflow/models</code></li> 
      <li><code>/libs/settings/workflow/models</code></li> 
      <li><code>/etc/workflow/models</code></li> 
-    </ol> <p>因此，如果要保留之前位置保留的AEM提供的工作流模型的任何自定义，则必须将其移至/conf/global/settings/workflow/models，否则将由/libs/settings/workflow/models中AEM提供的工作流模型定义替代。</p> </td> 
+    </ol> <p>因此，如果要保留AEM提供的工作流模型，则必须将保留在先前位置的所有自定义项移动到/conf/global/settings/workflow/models中，否则将由/libs/settings/workflow/models中AEM提供的工作流模型定义取代。</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -170,7 +170,7 @@ ht-degree: 2%
      <li><code>/conf/global/settings/workflow/launcher</code></li> 
      <li><code>/libs/settings/workflow/launcher</code></li> 
      <li><code>/etc/workflow/launcher</code></li> 
-    </ol> <p>因此，在“上一位置”中保留的AEM提供的工作流启动器的任何自定义都必须移到“新位置”(<code>/conf/global/settings/workflow/launcher</code> 如果要保留，则这些自定义将由中的AEM提供的工作流启动器定义取 <code>/libs/settings/workflow/launcher</code>代。</p> </td> 
+    </ol> <p>因此，在“上一位置”中保留的AEM提供的工作流启动器的任何自定义都必须移到“新位置”(<code>/conf/global/settings/workflow/launcher</code> 如果要保留这些自定义，否则将由中AEM提供的工作流启动器定义取代 <code>/libs/settings/workflow/launcher</code>)。</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -200,9 +200,9 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>注释</strong></td> 
-   <td><p>AEM 6.4 SP1在发布时将使其延迟至6.5 <code>
+   <td><p>AEM 6.4 SP1在发布时会使其延迟至6.5 <code>
       upgrade
-     </code>。</p> <p>如果在发布AEM 6.4 SP1之前升级到AEM 6.4，则此重组应作为升级项目的一部分执行。 如果不这样做，编辑和保存引用上一个位置中的脚本的工作流步骤将从工作流步骤中完全删除工作流脚本引用，并且只有新位置中的工作流脚本将在脚本选择下拉列表中可用。</p> </td> 
+     </code>。</p> <p>如果在发布AEM 6.4 SP1之前升级到AEM 6.4，则此重组应作为升级项目的一部分进行。 如果不这样做，编辑和保存引用上一个位置中的脚本的工作流步骤将从工作流步骤中完全删除工作流脚本引用，并且只有新位置中的工作流脚本将在脚本选择下拉列表中可用。</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -223,12 +223,12 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指导</strong></td> 
-   <td><p>必须将任何新的或修改的ContextHub配置迁移到新位置，并且必须更新引用的AEM站点页面以反映新位置。</p> 
+   <td><p>必须将任何新的或修改的ContextHub配置迁移到新位置，并且必须更新引用的AEM Sites页面以反映新位置。</p> 
     <ol> 
      <li>将任何新的或修改的ContextHub配置从以前的位置复制到新位置。</li> 
      <li>将适用的AEM配置与AEM内容层次关联。
       <ol> 
-       <li><strong>通过AEM站点&gt;页面&gt;页面属性&gt;高级选项卡&gt;云配置实现AEM站点页面层次</strong>。</li> 
+       <li><strong>AEM Sites通过AEM Sites&gt;页面&gt;页面属性&gt;高级选项卡&gt;云配置实现的页面层次</strong>。</li> 
       </ol> </li> 
      <li>将任何迁移的旧版ContextHub配置与上述AEM内容层次结构取消关联。</li> 
     </ol> </td> 
@@ -240,7 +240,7 @@ ht-degree: 2%
  </tbody>
 </table>
 
-### 经典云服务设计 {#classic-cloud-services-designs}
+### 经典Cloud Services设计 {#classic-cloud-services-designs}
 
 <table> 
  <tbody>
@@ -392,7 +392,7 @@ ht-degree: 2%
  </tbody>
 </table>
 
-### Adobe DTM JavaScript端点 {#adobe-dtm-javascript-endpoint}
+### AdobeDTM JavaScript端点 {#adobe-dtm-javascript-endpoint}
 
 <table> 
  <tbody>
@@ -415,7 +415,7 @@ ht-degree: 2%
  </tbody>
 </table>
 
-### Adobe DTM Web-Hook端点 {#adobe-dtm-web-hook-endpoint}
+### AdobeDTM Web-Hook端点 {#adobe-dtm-web-hook-endpoint}
 
 <table> 
  <tbody>
@@ -508,11 +508,11 @@ ht-degree: 2%
    <td><strong>重组指导</strong></td> 
    <td><p>任何新的或修改的AEM项目仪表板小工具配置都必须迁移到新位置(<code>/apps</code>)。</p> 
     <ol> 
-     <li>将任何新的或修改的AEM项目仪表板小工具配置从先前的位置复制到新位置(<code>/apps</code>)。
+     <li>将任何新的或修改的AEM项目仪表板小工具配置从以前的位置复制到新位置(<code>/apps</code>)。
       <ol> 
        <li>请勿复制未修改的AEM项目仪表板小工具配置，因为新位置()中现在存在这些<code>/libs</code>配置。</li> 
       </ol> </li> 
-     <li>更新引用上一个位置的任何AEM项目模板以指向相应的新位置。</li> 
+     <li>更新引用“上一个位置”的任何AEM Projects模板以指向相应的新位置。</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -573,12 +573,12 @@ ht-degree: 2%
     <ol> 
      <li>将所有标记从上一位置复制到新位置。</li> 
      <li>从上一个位置删除所有标记。</li> 
-     <li>通过AEM Web控制台，重新启动Day Commutle 5 Tagging OSGi bundle( <em>位于</em> https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging)，以便AEM识别新位置包含内容并应使用该位置。</li> 
+     <li>通过AEM Web控制台，重新启动Day Commutle 5标记OSGi捆绑包( <em>位于</em> https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging for AEM)，以识别新位置包含内容并应使用它。</li> 
     </ol> </td> 
   </tr>
   <tr>
    <td><strong>注释</strong></td> 
-   <td><p>重新启动Day公报标记OSGi捆绑将仅将新位置注册为标记根（如果上一个位置为空）。</p> <p>针对利用AEM的TagManager API进行标记解析的所有功能，迁移到新位置后，对上一个位置的引用将继续工作。</p> <p>任何明确引用该路径的自定 <code>/etc/tags</code> 义代码都必须更新 <span class="code">为/content <code>
+   <td><p>重新启动Day公报标记OSGi捆绑将仅将新位置注册为标记根（如果上一个位置为空）。</p> <p>针对利用AEM TagManager API进行标签解析的所有功能，迁移到新位置后，对“上一位置”的引用将继续工作。</p> <p>任何明确引用该路径的自定 <code>/etc/tags</code> 义代码都必须更新 <span class="code">为/content <code>
        cq
       </code>/，或者最好重写以利 <code>
        :tags
@@ -601,33 +601,33 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指导</strong></td> 
-   <td><p>任何新的翻译云服务都必须迁移到新位置(<code>/apps</code>或 <code>/conf/global</code> 者 <code>/conf/&lt;tenant&gt;</code>)。</p> 
+   <td><p>任何新的翻译Cloud Services都必须迁移到新位<code>/apps</code>置( <code>/conf/global</code> 或 <code>/conf/&lt;tenant&gt;</code>)。</p> 
     <ol> 
      <li>将以前位置的现有配置迁移到新位置。
       <ul> 
-       <li>通过AEM创作UI在“工具”&gt;“云服务”&gt;“翻译云服务” <strong>中手动重新创建新的翻译云服务配置</strong>。<br /> 或者 </li> 
-       <li>将任何新的Translation Cloud服务配置从上一位置复制到新位置(<code>/apps</code>或 <code>/conf/global</code> ) <code>/conf/&lt;tenant&gt;</code>中。</li> 
+       <li>通过AEM创作UI在“工具”&gt;“Cloud Services”&gt;“翻译Cloud Services” <strong>中手动重新创建新的翻译Cloud Services配置</strong>。<br /> 或者 </li> 
+       <li>将任何新的翻译Cloud Services配置从上一位置复制到新位置(<code>/apps</code>或 <code>/conf/global</code> ) <code>/conf/&lt;tenant&gt;</code>中。</li> 
       </ul> </li> 
      <li>将适用的AEM配置与AEM内容层次关联。
       <ol> 
-       <li>通过AEM Sites &gt; Page <strong>&gt; Page Properties &gt; Advanced Tab &gt; Cloud配置的AEM Sites页面层次结构</strong>。</li> 
-       <li>通过AEM体验片段&gt; <strong>体验片段&gt;属性&gt;云服务选项卡&gt;云配置实现的AEM体验片段层次</strong>。</li> 
-       <li>通过AEM体验片段&gt;文件 <strong>夹&gt;属性&gt;云服务选项卡&gt;云配置获得AEM体验片段文件夹层次结构</strong>。<br /> </li> 
-       <li>通过AEM Assets &gt;文件夹&gt; <strong>文件夹&gt;文件夹属性&gt;云服务选项卡&gt;配置，获得AEM Assets文件夹层次结构</strong>。</li> 
-       <li>通过AEM Projects &gt; <strong>Projects &gt; Project &gt; Project Properties &gt; Advanced Tab &gt; Cloud Configuration实现AEM项目</strong>。</li> 
+       <li>AEM Sites通过 <strong>AEM Sites&gt;页面&gt;页面属性&gt;高级选项卡&gt;云配置的页面层次</strong>。</li> 
+       <li>AEM体验片段层次， <strong>通过AEM体验片段&gt;体验片段&gt;属性&gt;Cloud Services选项卡&gt;云配置</strong>。</li> 
+       <li>AEM体验片段文件夹层次， <strong>通过AEM体验片段&gt;文件夹&gt;属性&gt;Cloud Services选项卡&gt;云配置</strong>。<br /> </li> 
+       <li>通过“AEM Assets”&gt;“文 <strong>件夹”&gt;“文件夹属性”&gt;“AEM Assets选项卡”&gt;“配置”来Cloud Services文件夹层次结构</strong>。</li> 
+       <li>AEM通过AEM项 <strong>目&gt;项目&gt;项目属性&gt;高级选项卡&gt;云配置创建</strong>。</li> 
       </ol> </li> 
-     <li>将任何迁移的旧版翻译云服务与上述AEM内容层次结构取消关联。</li> 
+     <li>将任何迁移的旧版翻译Cloud Services与上述AEM内容层次结构取消关联。</li> 
     </ol> </td> 
   </tr>
   <tr>
    <td><strong>注释</strong></td> 
-   <td><p>翻译云服务解决方案按以下顺序进行：</p> 
+   <td><p>翻译Cloud Services按以下顺序进行：</p> 
     <ol> 
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/translationcfg</code></li> 
      <li><code>/conf/global/settings/cloudconfigs/translations/translationcfg</code></li> 
      <li><code>/apps/settings/cloudconfigs/translations/translationcfg</code></li> 
      <li><code>/libs/settings/cloudconfigs/translations/translationcfg</code></li> 
-    </ol> <p>迁移的翻译云服务必须与AEM 6.4兼容。</p> </td> 
+    </ol> <p>迁移的翻译Cloud Services必须与AEM 6.4兼容。</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -740,7 +740,7 @@ ht-degree: 2%
 | **重组指导** | 无需执行任何操作。 |
 | **注释** | 树激活Web控制台现在可通过“工具”>“ **部署”>“复制”>“激活树**”。 |
 
-### 供应商翻译连接器云服务 {#vendor-translation-connector-cloud-services}
+### 供应商转换连接器Cloud Services {#vendor-translation-connector-cloud-services}
 
 <table> 
  <tbody>
@@ -756,27 +756,27 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指导</strong></td> 
-   <td><p>任何新的供应商翻译连接器云服务必须迁移到新位<code>/apps</code>置( <code>/conf/global</code> 或 <code>/conf/&lt;tenant&gt;</code>)。</p> 
+   <td><p>任何新的供应商转换连接器Cloud Services必须迁移到新<code>/apps</code>位置 <code>/conf/global</code> (或 <code>/conf/&lt;tenant&gt;</code>)。</p> 
     <ol> 
      <li>将上一位置中的现有配置迁移到新位置。
       <ul> 
-       <li>通过AEM创作UI，在“工具”&gt;“云服务”&gt;“翻译云服务” <strong>中手动创建新的供应商翻译连接器云服务配置</strong>。<br /> 或者 </li> 
-       <li>将任何新的供应商翻译连接器云服务配置从以前的位置复制到新的位置(<code>/apps</code>或 <code>/conf/global </code>者 <code>/conf/&lt;tenant&gt;</code>)。</li> 
+       <li>通过AEM创作UI在“工具”&gt;“Cloud Services”&gt;“翻译Cloud Services” <strong>中手动创建新的供应商翻译连接器Cloud Services配置</strong>。<br /> 或者 </li> 
+       <li>将任何新的供应商转换连接器Cloud Services配置从先前位置复制到新<code>/apps</code>位置 <code>/conf/global </code>(或 <code>/conf/&lt;tenant&gt;</code>)。</li> 
       </ul> </li> 
      <li>将适用的AEM配置与AEM内容层次关联。
       <ol> 
-       <li>通过AEM Sites &gt; Page <strong>&gt; Page Properties &gt; Advanced Tab &gt; Cloud配置的AEM Sites页面层次结构</strong>。</li> 
-       <li>通过AEM体验片段&gt; <strong>体验片段&gt;属性&gt;云服务选项卡&gt;云配置实现的AEM体验片段层次</strong>。</li> 
-       <li>通过AEM体验片段&gt;文件 <strong>夹&gt;属性&gt;云服务选项卡&gt;云配置获得AEM体验片段文件夹层次结构</strong>。</li> 
-       <li>通过AEM Assets &gt;文件夹&gt; <strong>文件夹属性&gt;云服务选项卡&gt;配置，获得AEM Assets文件夹层次结构</strong>。</li> 
-       <li>通过AEM Projects &gt; <strong>Projects &gt; Project &gt; Project Properties &gt; Advanced Tab &gt; Cloud Configuration实现AEM项目</strong>。</li> 
+       <li>AEM Sites通过 <strong>AEM Sites&gt;页面&gt;页面属性&gt;高级选项卡&gt;云配置的页面层次</strong>。</li> 
+       <li>AEM体验片段层次， <strong>通过AEM体验片段&gt;体验片段&gt;属性&gt;Cloud Services选项卡&gt;云配置</strong>。</li> 
+       <li>AEM体验片段文件夹层次， <strong>通过AEM体验片段&gt;文件夹&gt;属性&gt;Cloud Services选项卡&gt;云配置</strong>。</li> 
+       <li>通过“AEM Assets”&gt;“文 <strong>件夹”&gt;“文件夹属性”&gt;“AEM Assets选项卡”&gt;“配置”来Cloud Services文件夹层次结构</strong>。</li> 
+       <li>AEM通过AEM项 <strong>目&gt;项目&gt;项目属性&gt;高级选项卡&gt;云配置创建</strong>。</li> 
       </ol> </li> 
-     <li>将任何迁移的旧版翻译云服务与上述AEM内容层次结构取消关联。</li> 
+     <li>将任何迁移的旧版翻译Cloud Services与上述AEM内容层次结构取消关联。</li> 
     </ol> </td> 
   </tr>
   <tr>
    <td><strong>注释</strong></td> 
-   <td><p>翻译云服务解决方案按以下顺序进行：</p> 
+   <td><p>翻译Cloud Services按以下顺序进行：</p> 
     <ol> 
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li> 
      <li><code>/conf/global/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li> 

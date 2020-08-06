@@ -1,8 +1,8 @@
 ---
 title: 管理项目
 seo-title: 管理项目
-description: 通过“项目”，您可以将资源分组到一个实体中以便在“项目”控制台中访问和管理，从而组织项目
-seo-description: 通过“项目”，您可以将资源分组到一个实体中以便在“项目”控制台中访问和管理，从而组织项目
+description: 通过“项目”，您可以将资源分组到一个实体中以便在“项目”控制台中进行访问和管理，从而组织项目
+seo-description: 通过“项目”，您可以将资源分组到一个实体中以便在“项目”控制台中进行访问和管理，从而组织项目
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1061'
+ht-degree: 77%
 
 ---
 
@@ -74,7 +77,7 @@ AEM 提供了以下现成的模板，供您在创建项目时进行选择：
    >
    >有关可与项目关联的项目拼贴的详细说明，请参阅[项目拼贴](/help/sites-authoring/projects.md#project-tiles)。
 
-1. 点按/单击&#x200B;**创建**。您的资源已链接到您的项目，从现在开始，您可以从您的项目访问该资源。
+1. 点按/单击&#x200B;**创建**。您的资源已链接到您的项目，从现在开始，您可以从您的项目访问它。
 
 ### 删除项目或资源链接 {#deleting-a-project-or-resource-link}
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 93%
 
 ---
 
@@ -25,11 +28,11 @@ It can be accessed from **Tools** -> **General** -> **Components**. 在控制台
 
 >[!NOTE]
 >
->组件控制台显示系统中的所有组件。The [Component Browser](/help/sites-authoring/author-environment-tools.md#components-browser) shows components that are available to authors and hides any component groups that begin with a period ( `.`).
+>组件控制台显示系统中的所有组件。[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)显示可用于创作的组件，并隐藏任何以句点 (`.`) 开头的组件组。
 
 ## 搜索 {#search-features}
 
-使用“ **仅内容****** ”图标（左上角），可打开“搜索”面板以搜索和／或筛选组件：
+通过&#x200B;**仅限内容**&#x200B;图标（左上方），您可以打开&#x200B;**搜索**&#x200B;面板以搜索和/或筛选组件：
 
 ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -52,7 +55,7 @@ It can be accessed from **Tools** -> **General** -> **Components**. 在控制台
       * 单击“资源超级类型”将转到该组件。
    >[!NOTE]
    >
-   >Because `/apps` is not editable at runtime, the Components Console is read-only.
+   >由于 `/apps` 在运行时不可编辑，因此组件控制台为只读。
 
 * **策略**
 

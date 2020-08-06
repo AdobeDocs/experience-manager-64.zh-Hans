@@ -1,8 +1,8 @@
 ---
 title: 自定义节点类型
 seo-title: 自定义节点类型
-description: AEM基于Sling，并且使用JCR存储库，该存储库具有两种提供的节点类型，但AEM还提供一系列自定义节点类型
-seo-description: AEM基于Sling，并且使用JCR存储库，该存储库具有两种提供的节点类型，但AEM还提供一系列自定义节点类型
+description: AEM基于Sling，并且使用JCR存储库，该存储库具有由二者提供的节点类型，但AEM还提供一系列自定义节点类型
+seo-description: AEM基于Sling，并且使用JCR存储库，该存储库具有由二者提供的节点类型，但AEM还提供一系列自定义节点类型
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,7 +20,7 @@ ht-degree: 9%
 
 # 自定义节点类型{#custom-node-types}
 
-由于AEM基于Sling并使用JCR存储库，因此这两个资源库提供的节点类型均可供使用：
+由于AEM基于Sling并且使用JCR存储库，因此这两个存储库提供的节点类型均可供使用：
 
 * [JCR节点类型](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
 * [Sling节点类型](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -449,7 +449,7 @@ DAM资产。
 
 **描述**
 
-`cq:attributes` 是ContentBus版本标签的节点类型。 此节点仅具有一系列属性； 其中三个是预定义的“created”、“csd”和“timestampe”。
+`cq:attributes` 是ContentBus版本标记的节点类型。 此节点仅具有一系列属性； 其中三个是预定义的“created”、“csd”和“timestampe”。
 
 * `@prop created (long) mandatory copy` -创建版本信息的时间戳，通常为签入先前版本的时间或页面创建时间。
 * `@prop csd (string) mandatory copy` - csd标准属性，页面节点的cq:csd属性的副本
@@ -472,7 +472,7 @@ DAM资产。
 
 中的项 `cq:Cq4ContentPage` 为：
 
-* `@prop cq:csd` -页面的ContentBus CSD。
+* `@prop cq:csd` -页面的ContentBusCSD。
 * `@node cq:content` -页面内容。 如果页面节点处于“现有且无内容”或“已删除”状态，则此子节点不存在。
 * `@node cq:attributes` -页面属性的列表，以前称为版本标签。 对于cq:contentPage类型，此节点是必需的。 当页面为节点时，属性节点的版本化。
 
@@ -493,7 +493,7 @@ DAM资产。
 * `@prop source (String) mandatory` -数据源URI，这是必需的，不能为空
 * `@prop target (String)` -目标位置，存储从数据源检索的数据。 这是可选的，默认为cq:PollConfig节点。
 * `@prop interval (Long)` -轮询数据源中新数据或更新数据的时间间隔（秒）。 这是可选的，默认为30分钟（1800秒）。
-* [创建自定义Adobe Experience Manager导入程序服务](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [为Adobe Experience Manager创建自定义数据导入程序服务](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **定义**
 

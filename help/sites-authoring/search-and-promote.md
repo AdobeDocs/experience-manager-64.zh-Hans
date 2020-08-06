@@ -1,6 +1,6 @@
 ---
-title: 将Search&Promote功能添加到页面
-seo-title: 将Search&Promote功能添加到页面
+title: 向页面添加Search&Promote功能
+seo-title: 向页面添加Search&Promote功能
 description: 要在您的网站中集成 Search&Promote 功能，需使用 Search&Promote 组件将关键字搜索、搜索结果页面、搜索优化和横幅功能添加到您的页面
 seo-description: 要在您的网站中集成 Search&Promote 功能，需使用 Search&Promote 组件将关键字搜索、搜索结果页面、搜索优化和横幅功能添加到您的页面
 uuid: 382cf784-4214-4bf3-ace6-6f66451195e2
@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 50ba6a09-d6cb-4ec0-8a0f-af0da8cc3d2d
 translation-type: tm+mt
 source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 79%
 
 ---
 

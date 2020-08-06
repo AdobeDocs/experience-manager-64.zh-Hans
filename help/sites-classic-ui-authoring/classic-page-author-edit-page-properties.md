@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +82,7 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
 
    允许您为此页面输入虚 URL。通过这种方式，您可以使用更短并且含意更清楚的 URL。
 
-   例如，如果虚URL设置为w, `elcome`则对于网站h，如果路径/ `v1.0/startpage`标识的页面 `ttp://example.com,` h，则h `ttp://example.com/welcome`应该是h的虚URL `ttp://example.com/content/v1.0/startpage`
+   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >

@@ -22,19 +22,19 @@ ht-degree: 2%
 
 ## 前提条件 {#prerequisites}
 
-* [AEM 6.4Platform](../../help/sites-deploying/deploy.md)
+* [AEM 6.4平台](../../help/sites-deploying/deploy.md)
 
-* AEM Communities许可
+* AEM Communities牌照
 
 * 适用于以下用户的可选许可证：
 
-   * [AdobeAnalytics社区版功能](analytics.md)
+   * [Adobe Analytics社区功能](analytics.md)
    * [用于MSRP的MongoDB](msrp.md)
-   * [适用于ASRP的Adobe Cloud](asrp.md)
+   * [适用于ASRP的Adobe云](asrp.md)
 
 ## 安装清单 {#installation-checklist}
 
-**对于[AEM平台](../../help/sites-deploying/deploy.md#what-is-aem)**
+**对于AEM[平台](../../help/sites-deploying/deploy.md#what-is-aem)**
 
 * 安装最 [新AEM 6.4更新](#aem-updates)
 
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 * [启用隧道服务](#tunnel-service-on-author)
 * [启用社交登录](social-login.md#adobe-granite-oauth-authentication-handler)
-* [配置AdobeAnalytics](analytics.md)
+* [配置Adobe Analytics](analytics.md)
 * 设置默认 [电子邮件服务](email.md)
 * 确定共享UGC [存储(SRP](working-with-srp.md) )**的选择**。
 
@@ -65,7 +65,7 @@ ht-degree: 2%
       * [安装和配置MySQL for DSRP](dsrp-mysql.md)
       * [配置Solr](solr.md)
       * [选择DSRP](srp-config.md)
-   * 如果Adobe SRP( [ASRP)](asrp.md)
+   * 如果Adobe [SRP(ASRP)](asrp.md)
 
       * 与您的客户代表合作进行设置
       * [选择ASRP](srp-config.md)
@@ -74,8 +74,9 @@ ht-degree: 2%
       * 不是共享的UGC存储：
 
          * UGC从未复制
-         * UGC仅在输入AEM实例或群集中可见
+         * UGC仅在输入它的AEM实例或群集上可见
       * 默认为JSRP
+
    针对启 **[用功能](overview.md#enablement-community)**
 
    * [安装和配置FFmpeg](ffmpeg.md)
@@ -90,17 +91,17 @@ ht-degree: 2%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communities GA随社区包一起提供。 要了解AEM 6.4 Communities的更 [新](/help/release-notes/release-notes.md#experience-manager-communities)，请 [参阅AEM 6.4发行说明](/help/release-notes/release-notes.md#release-information)。
+AEM 6.4 Communities GA随Communities包一起提供。 要了解AEM 6.4 Communities的更 [新](/help/release-notes/release-notes.md#experience-manager-communities)，请 [参阅AEM 6.4发行说明](/help/release-notes/release-notes.md#release-information)。
 
 ### AEM 6.4更新 {#aem-updates}
 
-从AEM 6.3开始，对Communities的更新将作为AEM累积修复包和服务包的一部分提供。
+从AEM 6.3开始，对Communities的更新作为AEM累积修复包和服务包的一部分提供。
 
 有关AEM 6.4的最新更新，请务必检查 [Adobe Experience Manager6.4累积修复包和服务包](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html)。
 
 ### 版本历史 {#version-history}
 
-与在AEM 6.4及更高版本中一样，AEM Communities功能和修补程序是AEM Communities累积修复包和服务包的一部分。 因此，没有单独的功能包。
+与AEM 6.4及更高版本一样，AEM Communities的功能和修补程序是AEM Communities累积修补程序包和服务包的一部分。 因此，没有单独的功能包。
 
 ### MySQL的JDBC驱动程序 {#jdbc-driver-for-mysql}
 
@@ -145,11 +146,11 @@ AEM 6.4 Communities GA随社区包一起提供。 要了解AEM 6.4 Communities�
 
 可共享内容对象参考模型(SCORM)是电子教学标准和规范的集合。 SCORM还定义如何将内容打包到可转让的ZIP文件中。
 
-AEM CommunitiesSCORM引擎是启用功能 [的](overview.md#enablement-community) 。 AEM Communities6.4版本支持的Scorm包有：
+AEM CommunitiesSCORM引擎是启用功能 [的必](overview.md#enablement-community) 备。 AEM Communities6.4版支持的Scorm包有：
 
 * **[cq -social- scorm -package，版本1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**。 所有AEM 6.4 Communities版本都支持此SCORM包。
 
-* **[cq -social- scorm -package，版本2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**包[含SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)引擎。 从AEM 6.4.2.x Communities开始，支持此SCORM包。
+* **[cq -social- scorm -package，版本2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**包[含SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)引擎。 从AEM 6.4.2.x社区开始，支持此SCORM包。
 
 对于SCORM引擎的新安装，应使用包 [含SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) ( [ cq -social- scorm -package, version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg))的包。 这样，您就能够播放SCORM 2017支持的学习资源。
 
@@ -190,11 +191,11 @@ AEM CommunitiesSCORM引擎是启用功能 [的](overview.md#enablement-community
 
 有关使用日志的信息，请参 [阅使用审核记录和日志文件](../../help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)。
 
-### AEM Advanced MLS {#aem-advanced-mls}
+### AEM高级MLS {#aem-advanced-mls}
 
 为了支持高级多语言搜索(MLS)的SRP集合（MSRP或DSRP），除了自定义模式和Solr配置外，还需要新的Solr插件。 所有必需项目都打包到一个可下载的zip文件中。
 
-高级MLS下载（也称为“第二阶段”）可从Adobe存储库下载：
+高级MLS下载（也称为“阶段二”）可从Adobe库中下载：
 
 * [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
@@ -205,28 +206,28 @@ AEM CommunitiesSCORM引擎是启用功能 [的](overview.md#enablement-community
 
 ### 关于包共享的链接 {#about-links-to-package-share}
 
-**包在Adobe AEM Cloud中可见**
+**包在AdobeAEM云中可见**
 
-此页面上指向包的链接不需要运行AEM实例，因为它们要在上进行包共享 `adobeaemcloud.com`。 当可查看包时，该按 `Install`钮用于将包安装到Adobe托管站点中。 如果打算安装在本地AEM实例上，选择 `Install`将导致错误。
+本页上的包链接不需要AEM正在运行的实例，因为它们要在上进行包共享 `adobeaemcloud.com`。 当可查看包时，该按 `Install`钮用于将包安装到Adobe托管站点中。 如果打算安装在本地AEM实例上，选 `Install`择将导致错误。
 
 **如何在本地AEM实例上安装**
 
-要安装本地AEM实 `adobeaemcloud.com` 例中可见的包，必须先将包下载到本地磁盘：
+要安装本地AEM实例 `adobeaemcloud.com` 中可见的包，必须先将包下载到本地磁盘：
 
 * Select the **[!UICONTROL Assets]** tab
 * 选择 **[!UICONTROL 下载到磁盘]**
 
-在本地AEM实例上，使用包管理器( [例如](http://localhost:4502/crx/packmgr/)http://localhost:4502/crx/packmgr/)上传到本地AEM的包存储库。
+在本地AEM实例上，使用包管理器( [例如](http://localhost:4502/crx/packmgr/)http://localhost:4502/crx/packmgr/)上传到本地AEM包存储库。
 
-或者，也可以使用包共享从本地AEM实例(例 [如](http://localhost:4502/crx/packageshare/)http://localhost:4502/crx/packageshare/)访问 `Download`包，该按钮将下载到本地AEM实例的包存储库。
+或者，使用包共享从本地AEM实例访问包( [例如](http://localhost:4502/crx/packageshare/)http://localhost:4502/crx/packageshare/), `Download`该按钮将下载到本地AEM实例的包存储库。
 
-进入本地AEM实例的包存储库后，使用包管理器安装该包。
+进入本地AEM实例的包存储库后，使用包管理器安装包。
 
 有关详细信息，请 [访问如何使用包](../../help/sites-administering/package-manager.md#package-share)。
 
 ## 建议的部署 {#recommended-deployments}
 
-在AEM Communities中，公用存储用于存储用户生成的内容(UGC)，通常称为 [存储资源提供者(SRP)](working-with-srp.md)。 建议的部署中心是为公用存储选择SRP选项。
+在AEM Communities，公共存储用于存储用户生成的内容(UGC)，通常称为 [存储资源提供商(SRP)](working-with-srp.md)。 建议的部署中心是为公用存储选择SRP选项。
 
 通用存储支持发布环境中UGC的协调和分析，同时消除复制 [UGC](sync.md) 的需求。
 
@@ -236,15 +237,15 @@ AEM CommunitiesSCORM引擎是启用功能 [的](overview.md#enablement-community
 
 ## 升级 {#upgrading}
 
-从AEM的先前版本升级到AEM 6.4平台时，请务必阅读升级到AEM 6.4。
+从先前版本的AEM升级到AEM 6.4平台时，请务必阅读升级到AEM 6.4。
 
-除了升级平台，请阅读 [升级到AEM Communities6.4](upgrade.md) ，了解社区更改。
+除了升级该平台，请阅读 [升级到AEM Communities6.4](upgrade.md) ，了解社区变化。
 
 ## 配置 {#configurations}
 
 ### 主发布者 {#primary-publisher}
 
-当选择的部署是发 [布场](topologies.md#tarmk-publish-farm)，则必须将一个AEM发布实例标识为不应在所有实例(如依赖通知的功能或Adobe **`primary publisher`** Analytics **)上出现的** 活动 ****。
+如果选择的部署是发 [布场](topologies.md#tarmk-publish-farm)，则必须将一个AEM发布实例标识为不应在所有实例(如依赖通知的功能或 **`primary publisher`** Adobe Analytics **)上出现的** 活动 ****。
 
 默认情况下， `AEM Communities Publisher Configuration` OSGi配置配置中选中了复 **`Primary Publisher`** 选框，这样，发布场中的所有发布实例都将自标识为主实例。
 
@@ -326,13 +327,13 @@ AEM CommunitiesSCORM引擎是启用功能 [的](overview.md#enablement-community
 
 ### 复制加密密钥 {#replicate-the-crypto-key}
 
-AEM Communities有两种功能，要求所有AEM服务器实例使用相同的加密密钥。 这些是 [Analytics](analytics.md) , [ASRP](asrp.md)。
+AEM Communities有两个功能要求所有AEM服务器实例使用相同的加密密钥。 这些是 [Analytics](analytics.md) 和 [ASRP](asrp.md)。
 
-从AEM 6.3开始，密钥材料存储在文件系统中，不再存储在存储库中。
+从AEM 6.3开始，密钥材料存储在文件系统中，而不再存储在存储库中。
 
 要将关键材料从作者复制到所有其他实例，必须：
 
-* 访问AEM实例（通常是作者实例），该实例包含要复制的关键材料
+* 访问包含要复制的关键材料的AEM实例（通常为作者实例）
 
    * 在本地 `com.adobe.granite.crypto.file` 文件系统中找到包
 
@@ -357,7 +358,7 @@ AEM Communities有两种功能，要求所有AEM服务器实例使用相同的�
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * 粘贴之前复制的2个文件
-   * 如果目标AEM [实例当前正在运行](#refresh-the-granite-crypto-bundle) ，则必须刷新Granite Crypto捆绑包
+   * 如果目标AEM实 [例当前正在运行](#refresh-the-granite-crypto-bundle) ，则必须刷新Granite Crypto包
 
 
 >[!CAUTION]
@@ -366,7 +367,7 @@ AEM Communities有两种功能，要求所有AEM服务器实例使用相同的�
 
 #### 存储库复制 {#repository-replication}
 
-将关键材料存储在存储库中（与AEM 6.2及更早版本一样），可通过在每个AEM实例（创建初始存储库）的首次启动时指定以下系统属性来保留：
+将关键材料存储在存储库中(如AEM 6.2及更早版本)，可通过在每个AEM实例的首次启动时指定以下系统属性（创建初始存储库）来保留：
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -429,7 +430,7 @@ AEM Communities有两种功能，要求所有AEM服务器实例使用相同的�
 
 如果使用Dispatcher，请参阅：
 
-* AEM的 [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) 文档
+* AEM [Dispatcher文档](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 * [安装 Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
 * [为社区配置Dispatcher](dispatcher.md)
 * [已知问题](troubleshooting.md#dispatcher-refetch-fails)

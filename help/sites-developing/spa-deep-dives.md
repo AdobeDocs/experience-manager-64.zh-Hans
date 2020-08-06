@@ -1,8 +1,8 @@
 ---
-title: SPA深潜
-seo-title: SPA深潜
-description: AEM SPA Editor SDK在一系列AEM Gems会话中进行了专题介绍。 此系列由Adobe工程师主持，可作为深入了解由Adobe工程师主持的AEM SPA Editor SDK的一个极好指南。
-seo-description: AEM SPA Editor SDK在一系列AEM Gems会话中进行了专题介绍。 此系列由Adobe工程师主持，可作为深入了解由Adobe工程师主持的AEM SPA Editor SDK的一个极好指南。
+title: SPA深海潜水
+seo-title: SPA深海潜水
+description: AEM SPA Editor SDK在一系列AEM Gems会话中得到介绍。 此系列由Adobe工程师主持，可作为深入理解AEM SPA编辑器SDK的极好指南，它由Adobe工程师主持。
+seo-description: AEM SPA Editor SDK在一系列AEM Gems会话中得到介绍。 此系列由Adobe工程师主持，可作为深入理解AEM SPA编辑器SDK的极好指南，它由Adobe工程师主持。
 uuid: 326ac431-79d4-48ed-aa48-0c9bfdbd23d0
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 48ab972b-ca26-40d1-b89e-86124ceb173b
 translation-type: tm+mt
 source-git-commit: 4e1c453e6a8a521b0ae0f0eddfcf80b882d99342
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 0%
 
 ---
 
 
-# SPA深潜{#spa-deep-dives}
+# SPA深海潜水{#spa-deep-dives}
 
-AEM SPA Editor SDK在一系列AEM Gems会话中进行了专题介绍。 [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) 是Adobe专家提供的一系列技术深入介绍。 此系列由Adobe工程师主持，可作为深入了解AEM SPA Editor SDK的极好指南。
+AEM SPA Editor SDK在一系列AEM Gems会话中得到介绍。 [Adobe Experience Manager](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) ·吉姆斯是Adobe专家交付的一系列深度技术潜水。 此系列由Adobe工程师主持，可作为深入了解AEM SPA Editor SDK的极好指南。
 
 ## Gem会话 {#gem-sessions}
 
-* **[AEM SPA Editor](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html)[](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html)**- SPA Editor初学者概述。 如果您刚刚开始使用AEM中的SPA，请从此处开始。
-* **[SPA Editor SDK深入探讨——第1部分——反应](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-React.html)**-深入开发可使用AEM页面编辑器创作的单页应用程序。 涵盖项目结构的考虑因素和建议、审查构成项目架构的所有层、AEM和SPA组件的角色、模型对象的结构和关键JSON字段，等等！
-* **[SPA编辑器SDK深入篇——第2部分——角度](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-Angular.html)**-深入开发可使用AEM页面编辑器创作的单页应用程序。 涵盖项目结构的考虑因素和建议、审查构成项目架构的所有层、AEM和SPA组件的角色、模型对象的结构和关键JSON字段，等等！
+* **[AEM SPA Editor](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html)-[](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-spa-editor.html)**SPA Editor的初学者概述。 如果AEM中的SPA才刚刚入门，请在此处开始。
+* **[SPA编辑器SDK深入篇——第1部分](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-React.html)**-反应——深入开发可使用AEM页面编辑器创作的单页应用程序。 涵盖项目结构的考虑因素和建议、审查构成项目架构的所有层、AEM和SPA组件的角色、模型对象的结构和关键JSON字段，等等！
+* **[SPA编辑器SDK深入篇——第2部分](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/SPA-Editor-SDK-Deep-Dive-Angular.html)**-角度篇——深入探讨可使用AEM页面编辑器创作的单页应用程序开发。 涵盖项目结构的考虑因素和建议、审查构成项目架构的所有层、AEM和SPA组件的角色、模型对象的结构和关键JSON字段，等等！
 

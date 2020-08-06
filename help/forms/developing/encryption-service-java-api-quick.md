@@ -36,11 +36,11 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->使用AEM表单进行编程中的快速开始基于JBoss Application Server和Microsoft Windows操作系统上部署的Forms Server。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>使用AEM表单进行编程中的快速开始基于部署在JBoss Application Server和Microsoft Windows操作系统上的Forms服务器。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速开始（SOAP模式）: 使用Java API加密PDF文档 {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-以下Java代码示例使用密码值 *加密名为Loan* .pdf的PDF文档 `OpenPassword`。 主密码为 `PermissionPassword`。 安全的PDF文档将保存为名为EncryptLoan.pdf *的PDF文件*。 (请参 [阅使用口令加密PDF文档](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)。)
+以下Java代码示例使用密码值 *加密名为Loan* .pdf的PDF文档 `OpenPassword`。 主控密码为 `PermissionPassword`。 安全的PDF文档将保存为名为EncryptLoan.pdf *的PDF文件*。 (请参 [阅使用口令加密PDF文档](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)。)
 
 ```as3
  /* 
@@ -160,7 +160,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）: 使用Java API删除基于密码的加密 {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-以下Java代码示例从名为EncryptLoan.pdf的PDF文档中删除基于口 *令的加密*。 用于删除基于密码的加密的主密码值为 *PermissionPassword*。 无抵押的PDF文档将另存为名为noEncryptionLoan. *pdf的PDF文件*。 (请参 [阅删除密码](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)。)
+以下Java代码示例从名为EncryptLoan.pdf的PDF文档中删除基于口 *令的加密*。 用于删除基于密码的加密的主控密码值为 *PermissionPassword*。 无抵押的PDF文档将另存为名为noEncryptionLoan. *pdf的PDF文件*。 (请参 [阅删除密码](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption)。)
 
 ```as3
  /* 

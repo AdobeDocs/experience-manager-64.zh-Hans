@@ -91,12 +91,12 @@ Audiences are available in Targeting mode for [authoring targeted content](/help
 
 | **属性** | **描述** | **有关更多信息** |
 |---|---|---|
-| **移动设备** | 根据移动设备、设备类型、设备供应商、屏幕尺寸（按像素）等参数目标移动设备。 | 请参 [阅移动文档](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) (Adobe Target)。 |
-| **自定义** | 自定义参数是mbox参数。 如果您将任何 mbox 参数传递给 mbox，或者使用 targetPageParams 函数，这些参数将会显示在此处以供在受众中使用。 | 请参 [阅自定义参数](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) (Adobe Target)。 |
+| **移动设备** | 根据移动设备、设备类型、设备供应商、屏幕尺寸（按像素）等参数目标移动设备。 | 请参 [阅Adobe Target](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/mobile.html) 的移动文档。 |
+| **自定义** | 自定义参数是mbox参数。 如果您将任何 mbox 参数传递给 mbox，或者使用 targetPageParams 函数，这些参数将会显示在此处以供在受众中使用。 | 请参 [阅Adobe Target的自定义](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) 参数文档。 |
 | **操作系统** | 您可以目标使用特定操作系统的访客。 | 目标使用Linux、Macintosh或Windows的用户。 |
-| **站点页面** | 目标访客，他们位于特定页面或具有特定mbox参数。 | 请参 [阅站点页面文档](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) (Adobe Target)。 |
-| **浏览器** | 您可以目标在用户访问您的页面时使用特定浏览器或特定浏览器选项的用户。 | 请参阅 [浏览器选](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)项文档(Adobe Target)。 |
-| **访客配置文件** | 目标访客符合特定用户档案参数。 | 请参阅 [访客用户档案文档](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) (位于Adobe Target)。 |
+| **站点页面** | 目标访客，他们位于特定页面或具有特定mbox参数。 | 请参 [阅位于Adobe Target](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/site-pages.html) 的网页文档。 |
+| **浏览器** | 您可以目标在用户访问您的页面时使用特定浏览器或特定浏览器选项的用户。 | 请参阅 [Adobe Target的浏](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)览器选项文档。 |
+| **访客配置文件** | 目标访客符合特定用户档案参数。 | 请参 [阅Adobe Target的访客](https://docs.adobe.com/content/help/en/target/using/audiences/visitor-profiles/visitor-profile.html) 用户档案文档。 |
 | **流量源** | 目标访客基于搜索引擎或将其引用到您网站的登陆页。 | 请参 [阅Adobe Target的](https://docs.adobe.com/content/help/en/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) “流量源”文档。 |
 
 ## 在“受众”控制台中修改受众 {#modifying-an-audience-in-the-audiences-console}

@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 89%
 
 ---
 
@@ -25,11 +28,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。(See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
->AEM开发人员可以创建新设备组。 (See [Creating Device Group Filters](/help/sites-developing/groupfilters.md).)
+>AEM 开发人员可以创建新设备组。(See [Creating Device Group Filters](/help/sites-developing/groupfilters.md).)
 
 请使用以下过程来创作移动页面：
 
-1. From global navigation open the **Sites** console.
+1. 从全局导航中打开&#x200B;**站点**&#x200B;控制台。
 1. Open the page **We.Retail** -> **United States** -> **English**.
 
 1. Switch to **Preview** mode.

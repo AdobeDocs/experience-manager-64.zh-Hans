@@ -1,8 +1,8 @@
 ---
-title: 应用Dynamic media图像预设
-seo-title: 应用Dynamic media图像预设
-description: 了解如何在Dynamic media中应用图像预设
-seo-description: 了解如何在Dynamic media中应用图像预设
+title: 应用Dynamic Media图像预设
+seo-title: 应用Dynamic Media图像预设
+description: 了解如何在Dynamic Media中应用图像预设
+seo-description: 了解如何在Dynamic Media中应用图像预设
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 39%
 
 ---
 
 
 # Applying Dynamic Media image presets {#applying-image-presets}
 
-图像预设使资产能够动态传送大小不同、格式不同或具有动态生成的其他图像属性的图像。在导出图像时，您可以选择预设，这也会根据管理员指定的规范重新设置图像的格式。
+图像预设使资产能够动态地传送不同大小、不同格式或具有其他动态生成的图像属性的图像。 在导出图像时，您可以选择预设，这也会根据管理员指定的规范重新设置图像的格式。
 
 此外，您可以选择响应式图像预设（选择图像预设后，通过 **[!UICONTROL RESS]** 按钮指定）。
 
@@ -25,11 +28,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 >[!NOTE]
 >
->智能成像可以与现有图像预设配合使用，并在传送的最后一毫秒使用智能功能根据浏览器或网络连接速度进一步减小图像文件大小。 有关更 [多信息，请参阅](imaging-faq.md) “智能成像”。
+>智能成像可以与现有图像预设配合使用，并在投放的最后一毫秒使用智能功能根据浏览器或网络连接速度进一步减小图像文件大小。 有关更 [多信息](imaging-faq.md) ，请参阅智能成像。
 
 无论您何时预览图像，都可以对图像应用图像预设。
 
-**要应用Dynamic media图像预设，请执行以下操作**:
+**要应用Dynamic Media图像预设，请执行以下操作**:
 
 1. 打开资产，在左边栏中，点按下拉菜单，然后点按演 **[!UICONTROL 绎版]**。
 
@@ -47,6 +50,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    * 选择动态演绎版以预览图像预设。
    * Tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]** to display the pop-up.
+
    >[!NOTE]
    >
    >如果资产&#x200B;*和*&#x200B;图像预设尚未发布，则 **[!UICONTROL URL]** 按钮（或 **[!UICONTROL URL]** 和 **[!UICONTROL RESS]** 按钮，如果适用）将不可用。

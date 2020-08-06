@@ -1,16 +1,19 @@
 ---
 title: 资产链接共享
-description: 如何在AEM资产中将资产、文件夹和收藏集共享为外部方的URL。
+description: 如何将资产、文件夹和收藏集作为URL共享到AEM Assets的外部方。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 23%
 
 ---
 
 
 # 资产链接共享 {#asset-link-sharing}
 
-Adobe Experience Manager(AEM)资产允许您将资产、文件夹和收藏集作为URL与组织成员和外部实体（包括合作伙伴和供应商）共享。 通过链接共享资产是一种方便的方式，使外部方无需先登录AEM资产即可获得资源。
+Adobe Experience Manager(AEM)资产允许您以URL的形式与组织成员和外部实体（包括合作伙伴和供应商）共享资产、文件夹和收藏集。 通过链接共享资产是一种方便的方式，使外部各方无需先登录AEM Assets即可获得资源。
 
 >[!NOTE]
 >
@@ -18,14 +21,14 @@ Adobe Experience Manager(AEM)资产允许您将资产、文件夹和收藏集作
 
 ## 共享资产 {#share-assets}
 
-要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户可以查看与他们共享的链接。
+要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或在位置具有读取权 `/var/dam/share` 限的用户能够视图与他们共享的链接。
 
 >[!NOTE]
 >
->在与用户共享链接之前，请确保已 [!UICONTROL 配置Day CQ邮件服务] 。 如果尝试共享链接而未首先配置Day CQ邮件服 [务，则会出现错误](link-sharing.md#configure-day-cq-mail-service)。
+>在与用户共享链接之前，请确保 [!UICONTROL 已配置Day CQ] Mail Service。 如果尝试共享链接时未首先配置Day CQ邮 [件服务，则会出错](link-sharing.md#configure-day-cq-mail-service)。
 
 1. 在“资产”用户界面中，选择要作为链接共享的资产。
-1. 在工具栏中，单击／点按共享链 **[!UICONTROL 接资产]**![共享图标](assets/assets_share.png)。
+1. 在工具栏中，单击／点按共享 **[!UICONTROL 链接资产]**![共享图标](assets/assets_share.png)。
 
    资产链接会在共享链接字段中 **[!UICONTROL 自动创建]** 。 复制此链接并与用户共享。 链接的默认过期时间为一天。
 
@@ -35,7 +38,7 @@ Adobe Experience Manager(AEM)资产允许您将资产、文件夹和收藏集作
 
    >[!NOTE]
    >
-   >要将AEM作者的链接共享到外部实体，请仅为GET请求显示用于链接共享的以下URL。 阻止其他URL以确保AEM部署的安全。
+   >要将AEM作者的链接共享到外部实体，请仅针对GET请求显示以下用于链接共享的URL。 阻止其他URL以确保AEM部署的安全。
    >
    >* &lt;AEM Server>/linkshare.html
    * &lt;AEM Server>/linksharepreview.html
@@ -43,20 +46,21 @@ Adobe Experience Manager(AEM)资产允许您将资产、文件夹和收藏集作
 
 
    >[!NOTE]
-   如果共享资产被移到其他位置，其链接将停止工作。 重新创建链接并与用户重新共享。
+   如果共享资产被移动到其他位置，其链接将停止工作。 重新创建链接并与用户重新共享。
 
 1. 从Web控制台中，打开 **[!UICONTROL Day CQ Link Externalizer]** （日CQ链接外部器）配置，并修改“ **[!UICONTROL Domains]** ”（域）字段中的以下属性，其中各个属性的值均提及：
 
    * 本机
    * 作者
    * 发布
-   对于和 `local` 属 `author` 性，请分别提供本地实例和作者实例的URL。 如果 `local` 运行 `author` 单个AEM作者实例，则这两个属性的值相同。 对 `publish`于，提供发布实例的URL。
+
+   对于 `local` 和属 `author` 性，请分别提供本地和作者实例的URL。 如果 `local` 运行 `author` 单个AEM作者实例，则这两个属性的值相同。 请 `publish`提供发布实例的URL。
 
 1. 在&#x200B;**[!UICONTROL 链接共享]**&#x200B;对话框的电子邮件地址框中，键入要与其共享链接的用户的电子邮件 ID。您还可以与多个用户共享该链接。
 
-   如果用户是您组织的成员，请从键入区域下方的列表中显示的建议电子邮件ID中选择用户的电子邮件ID。对于外部用户，键入完整的电子邮件ID，然后从列表中选择它。
+   如果用户是您组织的成员，请从键入区域下方的列表显示的建议电子邮件ID中选择用户的电子邮件ID。 对于外部用户，请键入完整的电子邮件ID，然后从列表中选择它。
 
-   要向用户发送电子邮件，请在 [Day CQ Mail service中配置SMTP服务器详细信息](link-sharing.md#configure-day-cq-mail-service)。
+   要向用户发出电子邮件，请在Day CQ邮件服务中配置SMTP服 [务器详细信息](link-sharing.md#configure-day-cq-mail-service)。
 
    ![直接从“链接共享”对话框共享指向资产的链接](assets/chlimage_1-543.png)
 
@@ -71,53 +75,54 @@ Adobe Experience Manager(AEM)资产允许您将资产、文件夹和收藏集作
 
    ![设置共享链接的到期日期和时间](assets/chlimage_1-544.png)
 
-1. 要允许用户下载原始图像和再现，请选择“允 **[!UICONTROL 许下载原始文件”]**。
+1. 要允许用户下载原始图像和演绎版，请选择“允 **[!UICONTROL 许下载原始文件”]**。
 
    >[!NOTE]
    默认情况下，用户只能下载您共享为链接的资产的演绎版。
 
 1. 单击&#x200B;**[!UICONTROL 共享]**。系统会显示一条消息，确认已通过电子邮件将该链接共享给用户。
-1. 要查看共享的资产，请单击／点按发送给用户的电子邮件中的链接。 共享的资产会显示在 [!UICONTROL Adobe Marketing Cloud页面] 。
+1. 要视图共享的资产，请单击／点按发送给用户的电子邮件中的链接。 共享的资源显示在 [!UICONTROL Adobe Marketing Cloud] 页面。
 
-   ![Adobe Marketing cloud中提供共享资产](assets/chlimage_1-545.png)
+   ![共享资源在Adobe Marketing Cloud可用](assets/chlimage_1-545.png)
 
    要切换到列表视图，请单击／点按工具栏上的布局图标。
 
-1. 要生成资产预览，请单击/点按共享资产。单击／点 **[!UICONTROL 按工具栏]** ，关闭预览并返回 [!UICONTROL Marketing Cloud页面] 。 如果已共享文件夹，请单击/点按&#x200B;**[!UICONTROL 父文件夹]**，以返回到父文件夹。
+1. 要生成资产预览，请单击/点按共享资产。单击／点 **[!UICONTROL 按工]** 具栏上的返回 [!UICONTROL ，关闭预览并返回] Marketing Cloud页。 如果已共享文件夹，请单击/点按&#x200B;**[!UICONTROL 父文件夹]**，以返回到父文件夹。
 
    ![chlimage_1-546](assets/chlimage_1-546.png)
 
    >[!NOTE]
-   AEM支持生成以下MIME类型的资产预览：JPG、PNG、GIF、BMP、INDD、PDF和PPT。 您只能下载其他MIME类型的资产。
+   AEM支持生成以下MIME类型的资产的预览: JPG、PNG、GIF、BMP、INDD、PDF和PPT。 您只能下载其他MIME类型的资产。
 
-1. 要下载共享的资产，请单击／点按工具栏中的 **[!UICONTROL 选择]** 图标，单击／点按资产，然后单击／点按工具栏中的 **[!UICONTROL 下载]** 。
+1. 要下载共享的资产，请单击／点 **[!UICONTROL 按工具栏]** 中的选择图标，单击／点按资产，然后单击／点按工具 **[!UICONTROL 栏中的]** 下载。
 
    ![用于下载共享资产的工具栏选项](assets/chlimage_1-547.png)
 
-1. 要查看您作为链接共享的资产，请转到资产UI，然后单击／点按 **[!UICONTROL GlobalNav]** 图标。 从列 **[!UICONTROL 表中选择]** “导航”以显示“导航”窗格。
+1. 要视图您作为链接共享的资产，请转到资产UI，然后单击／点按 **[!UICONTROL GlobalNav]** 图标。 从列表 **[!UICONTROL 中选择]** “导航”以显示“导航”窗格。
 1. 从“导航”窗格中，选择&#x200B;**[!UICONTROL 共享链接]**，以显示共享资产列表。
-1. 要取消共享资产，请选择该资产，然后点按／单 **[!UICONTROL 击工具栏]** 中的取消共享。 系统会显示一条消息，确认您已取消共享该资产。此外，该资产对应的条目也会从列表中删除。
+1. 要取消共享资产，请选择资产，然后点按／单 **[!UICONTROL 击工具栏]** 中的取消共享。 系统会显示一条消息，确认您已取消共享该资产。此外，该资产对应的条目也会从列表中删除。
 
 ## 配置Day CQ邮件服务 {#configure-day-cq-mail-service}
 
 1. 单击或点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > 操作 > Web Console]**。
-1. 从服务列表中，找到 **[!UICONTROL Day CQ邮件服务]**。
+1. 在服务列表中，找到 **[!UICONTROL Day CQ Mail Service]**。
 1. Click the **[!UICONTROL Edit]** icon beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
-   * SMTP服务器主机名：电子邮件服务器主机名
-   * SMTP服务器端口：电子邮件服务器端口
-   * SMTP用户：电子邮件服务器用户名
-   * SMTP密码：电子邮件服务器口令
+   * SMTP服务器主机名： 电子邮件服务器主机名
+   * SMTP服务器端口： 电子邮件服务器端口
+   * SMTP用户： 电子邮件服务器用户名
+   * SMTP密码： 电子邮件服务器密码
+
    ![chlimage_1-548](assets/chlimage_1-548.png)
 
 1. Click/tap **[!UICONTROL Save]**.
 
 ## 配置最大数据大小 {#configure-maximum-data-size}
 
-当您使用“链接共享”功能从共享的链接下载资产时，AEM会从存储库压缩整个资产层次结构，然后以ZIP文件格式返回资产。 但是，在ZIP文件中压缩的数据量没有限制的情况下，大量数据会受到压缩，这会导致JVM中内存不足错误。 要防止系统因此受到潜在的拒绝服务攻击，请在配置管理器中使用 **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy servlet的]****** Max Content Size（未压缩）参数配置最大大小。 如果资产的未压缩大小超出配置值，则会拒绝资产下载请求。 默认值为100 MB。
+当您使用链接共享功能从共享的链接下载资产时，AEM会从存储库压缩整个资产层次结构，然后以ZIP文件格式返回资产。 但是，在ZIP文件中压缩的数据量没有限制的情况下，大量数据会受到压缩，这会导致JVM中内存不足错误。 要保护系统免受由于这种情况而可能发生的拒绝服务攻击，请使用配置管理器中Day CQ DAM Adhoc Asset Share Proxy Servlet的 **[!UICONTROL Max Content Size（未压缩）]****[!UICONTROL 参数配置]** 最大大小。 如果资产的未压缩大小超出配置值，则会拒绝资产下载请求。 默认值为100 MB。
 
 1. 单击/点按 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具 > 操作 > Web Console]**。
-1. 从Web控制台中，找到 **[!UICONTROL Day CQ DAM临时资产共享代理Servlet配置]** 。
+1. 在Web控制台中，找到 **[!UICONTROL Day CQ DAM临时资产共享代理Servlet配置]** 。
 1. 在编辑模式下打开 **[!UICONTROL Day CQ DAM 临时资产共享代理 Servlet]** 配置，并修改&#x200B;**[!UICONTROL 最大内容大小（未压缩）]**&#x200B;参数的值。
 
    ![chlimage_1-549](assets/chlimage_1-549.png)
@@ -126,7 +131,7 @@ Adobe Experience Manager(AEM)资产允许您将资产、文件夹和收藏集作
 
 ## Best practices and troubleshooting {#best-practices-and-troubleshooting}
 
-* 资产文件夹或在其名称中包含空白的收藏集可能无法共享。
-* 如果用户无法下载共享资产，请向AEM管理员检查下载限 [制](#configure-maximum-data-size) 。
-* 如果您无法发送包含共享资产链接的电子邮件，或如果其他用户无法收到您的电子邮件，请咨询您的AEM管理员(如果电子邮件服务 [已配置](#configure-day-cq-mail-service) ，或未配置)。
-* 如果您无法使用链接共享功能共享资产，请确保您拥有相应的权限。 请参阅 [共享资产](#share-assets)。
+* 名称中包含空白的资产文件夹或收藏集可能无法共享。
+* 如果用户无法下载共享的资产，请咨询AEM管理员，了解下载 [限制](#configure-maximum-data-size) 。
+* 如果您无法发送包含共享资产链接的电子邮件，或者如果其他用户无法收到您的电子邮件，请咨询AEM管理员(如果电子邮 [件服务](#configure-day-cq-mail-service) 已配置或未配置)。
+* 如果您无法使用链接共享功能共享资产，请确保您具有相应的权限。 请参阅 [共享资产](#share-assets)。

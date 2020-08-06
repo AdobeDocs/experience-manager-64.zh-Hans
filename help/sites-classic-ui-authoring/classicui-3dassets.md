@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c601a44a-6604-4cc2-b35a-60d2c5a950e1
 translation-type: tm+mt
 source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 88%
 
 ---
 
@@ -25,5 +28,5 @@ source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
 
 >[!NOTE]
 >
->AEM 3D仅在AEM触屏UI中可用，而在经典UI中不可用。 有关完整的详细信息，请参阅标准创作文档中的[使用 3D 资产](/help/assets/assets-3d.md)。
+>AEM 3D仅在AEM触屏UI中可用，在经典UI中则不可用。 有关完整的详细信息，请参阅标准创作文档中的[使用 3D 资产](/help/assets/assets-3d.md)。
 

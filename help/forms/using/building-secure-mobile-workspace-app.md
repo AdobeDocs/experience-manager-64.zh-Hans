@@ -1,8 +1,8 @@
 ---
 title: 构建适用于iOS的安全AEM Forms应用程序
 seo-title: 构建适用于iOS的安全AEM Forms应用程序
-description: 构建安全AEM Forms应用程序的步骤。
-seo-description: 构建安全AEM Forms应用程序的步骤。
+description: 构建安全的AEM Forms应用程序的步骤。
+seo-description: 构建安全的AEM Forms应用程序的步骤。
 uuid: 6c4b160f-4d0c-4976-9609-9196795b6c8e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -35,10 +35,10 @@ ht-degree: 0%
 1. 下载供应用户档案并将其添加到Xcode和iPad。
 1. 登录到已安装和配置Xcode和iOS SDK的Mac计算机。
 1. 在Xcode中 `AEM Forms.xcodeproj` 打开项目。
-1. 单 **[!UICONTROL 击“AEM Forms]**”，在“ **[!UICONTROL 目标]**”下 **[!UICONTROL ，选]**&#x200B;择“AEM Forms”。 选择“ **[!UICONTROL 构建设置]** ”选项卡，找到“代 **[!UICONTROL 码签名授权]** ”部分，在“授权”下拉列表中，选 **[!UICONTROL 择“LC Enterprise]** ”选项。
+1. 单击 **[!UICONTROL AEM Forms]**，在 **[!UICONTROL 目标下]**，选 **[!UICONTROL 择AEM Forms]**。 选择“ **[!UICONTROL 构建设置]** ”选项卡，找到“代 **[!UICONTROL 码签名授权]** ”部分，在“授权”下拉列表中，选 **[!UICONTROL 择“LC Enterprise]** ”选项。
 1. 在Xcode中找到并 `LC Enterprise.entitlements` 打开文件进行编辑。 在**XCode授权下，**添加与设置用户档案中相同的键值对。
 1. 在“构 **[!UICONTROL 建设置]** ”选项卡中， **[!UICONTROL 单击“全部]** ” **[!UICONTROL ，然后单]**&#x200B;击“组合”。
 1. 从“设置 **[!UICONTROL ”列表]** ，展开“ **[!UICONTROL 代码签名”]**。
 1. 对于 **[!UICONTROL 代码签名标识]**，请选择相应的签名。 确保为Debug、Release和 **[!UICONTROL 任何iOS]** SDK选 **[!UICONTROL 择同]**&#x200B;一签名 ****。
-1. 在“ **[!UICONTROL 项目]**”下，选 **[!UICONTROL 择AEM Forms]** ，并确保为“代码标识”、“ **[!UICONTROL 调试]**”、“释放 ************”和“任何iOS SDK”签名选择了适当的签名。
+1. 在“ **[!UICONTROL 项目]**”下，选择 **[!UICONTROL AEM Forms]** ，并确保为“代码签名身份”、“ **[!UICONTROL 调试”、“发]**&#x200B;布”、和 ************&#x200B;任何iSDK i选择适当的签名。
 1. 构建和分发AEM Forms应用程序。 有关构建和分发AEM Forms应用程序的详细说明，请参 [阅构建AEM Forms应用程序的安装程序](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)。

@@ -1,8 +1,8 @@
 ---
 title: MSRP - MongoDB存储资源提供程序
 seo-title: MSRP - MongoDB存储资源提供程序
-description: 设置AEM Communities以将关系数据库用作其公用存储
-seo-description: 设置AEM Communities以将关系数据库用作其公用存储
+description: 设置AEM Communities以将关系数据库用作其常用存储
+seo-description: 设置AEM Communities以将关系数据库用作其常用存储
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -33,7 +33,7 @@ ht-degree: 1%
    * 版本2.6或更高版本
    * 无需配置蒙古或共享
    * 强烈建议使用复 [制集](#mongoreplicaset)
-   * 可能与AEM运行在同一台主机上，或远程运行
+   * 可以与AEM在同一主机上运行或远程运行
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -129,7 +129,7 @@ mongodb://mongoserver1:<mongoport1>,mongoserver2:<mongoport2>,mongoserver3:<mong
 
 如果从配置了MSRP的早期版本升级，则必须
 
-1. 执行 [AEM Communities升级](upgrade.md)
+1. 执行升 [级到AEM Communities](upgrade.md)
 1. 安装新的Solr配置文件
    * 对于 [标准MLS](solr.md#installing-standard-mls)
    * 对于 [高级MLS](solr.md#installing-advanced-mls)
@@ -217,7 +217,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 通过检查存储选项的配置，确保MSRP已配置为默认提供程序。 默认情况下，存储资源提供程序为JSRP。
 
-在所有作者和发布AEM实例上，重新访 [问存储配置控制台](srp-config.md) 或检查AEM存储库：
+在所有作者实例和发布AEM实例上，重新访 [问存储配置控制台](srp-config.md) ，或检查AEM存储库：
 
 * 在JCR中， [if/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -226,13 +226,13 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 ### 升级后UGC消失 {#ugc-disappears-after-upgrade}
 
-如果从现有AEM Communities6.0站点升级，则在升级到AEM Communities6.3后，任何预先存在的UGC必须转换为符合 [SRP](srp.md) API所需的结构。
+如果从现有的AEM Communities6.0站点升级，则在升级到AEM Communities6.3后，任何预先存在的UGC必须转换为符合 [SRP](srp.md) API所需的结构。
 
 GitHub上有一个开放源代码工具可用于此用途：
 
 * [AEM CommunitiesUGC迁移工具](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-可以自定义迁移工具，以从AEM社交社区的早期版本中导出UGC，导入到AEM Communities6.1或更高版本中。
+可以自定义迁移工具，将UGC从AEM social communities的早期版本导出，以导入到AEM Communities6.1或更高版本。
 
 ### 错误——未定义字段provider_id {#error-undefined-field-provider-id}
 
@@ -263,6 +263,6 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 
 ## 资源 {#resources}
 
-* [AEM with MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
+* [AEM与MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [MongoDB文档](https://docs.mongodb.org/)
 

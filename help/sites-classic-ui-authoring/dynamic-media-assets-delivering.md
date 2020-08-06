@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 79d426a6-bad5-4f6d-a027-ca935576bcb9
 translation-type: tm+mt
 source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 84%
 
 ---
 
 
 # 传送 Dynamic Media 资产{#delivering-dynamic-media-assets}
 
-如何交付Dynamic media资产（视频和图像）取决于网站的实施方式。
+如何交付Dynamic Media资产（视频和图像）取决于网站的实现方式。
 
 通过 Dynamic Media，您可以选择以下方式：
 

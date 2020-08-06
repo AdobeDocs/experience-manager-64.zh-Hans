@@ -1,6 +1,6 @@
 ---
-title: 使用AEM资产管理您的数字资产
-description: 了解各种资产管理和编辑任务，这些管理和编辑操作可以使用AEM资产的触屏优化用户界面执行
+title: 使用AEM Assets管理您的数字资产
+description: 了解各种资产管理和编辑任务，您可以使用AEM Assets的触屏优化用户界面执行这些操作
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
@@ -14,18 +14,18 @@ ht-degree: 6%
 
 # 管理您的数字资产 {#managing-assets-with-the-touch-optimized-ui}
 
-了解各种资产管理和编辑任务，这些管理和编辑操作可以使用AEM资产的触屏优化用户界面执行。
+了解各种资产管理和编辑任务，您可以使用AEM Assets的触屏优化用户界面执行这些操作。
 
 本文介绍如何使用Adobe Experience Manager(AEM)资产触屏优化用户界面管理和编辑资产。 For an elementary knowledge about the user interface, see [Basic handling of Touch UI](/help/sites-authoring/basic-handling.md). 要管理内容片段，请参 [阅管理内容片段](content-fragments-managing.md) 资产。
 
 ## 创建文件夹 {#create-folders}
 
-在组织资产集合（例如，所有图像）时，您 `Nature` 可以创建文件夹来将它们放在一起。 您可以使用文件夹对资产进行分类和组织。 AEM资产不要求您组织文件夹中的资产以更好地工作。
+在组织资产集合（例如，所有图像）时，您 `Nature` 可以创建文件夹来将它们放在一起。 您可以使用文件夹对资产进行分类和组织。 AEM Assets不要求您组织文件夹中的资源以更好地工作。
 
 >[!NOTE]
 >
->* 共享到Marketing Cloud时，不 `sling:OrderedFolder` 支持共享类型的“资产”文件夹。 如果要共享文件夹，请勿在创建文件夹时选择“已排序”。
->* Experience Manager不允许将 `subassets` word用作文件夹的名称。 它是为包含复合资产子资产的节点保留的关键字。
+>* 共享到Marketing Cloud时，不支 `sling:OrderedFolder` 持共享类型的“资产”文件夹。 如果要共享文件夹，请勿在创建文件夹时选择“已排序”。
+>* Experience Manager不允许 `subassets` 将单词用作文件夹的名称。 它是为包含复合资产子资产的节点保留的关键字。
 
 
 1. 导航到数字资产文件夹中要创建新文件夹的位置。
@@ -40,11 +40,11 @@ ht-degree: 6%
 
 ## Upload assets {#uploading-assets}
 
-您可以将各种类型的资产（包括图像、PDF文件、RAW文件等）从本地文件夹或网络驱动器上传到AEM资产。
+您可以从本地文件夹或网络驱动器将各种类型的资源（包括图像、PDF文件、RAW文件等）上传到AEM Assets。
 
 >[!NOTE]
 >
->在Dynamic Media - Scene7模式下，您只能上传文件大小为2 GB或更小的资产。
+>在Dynamic Media -Scene7模式下，您只能上传文件大小为2 GB或更小的资产。
 
 您可以选择将资产上传到文件夹，无论是否分配了处理用户档案。
 
@@ -78,11 +78,11 @@ ht-degree: 6%
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-   To cancel an ongoing upload, click the `X` button beside the progress bar. 当您取消上传操作时，AEM资产会删除部分上传的资产。
+   To cancel an ongoing upload, click the `X` button beside the progress bar. 当您取消上传操作时，AEM Assets会删除部分上传的资产。
 
    在低带宽情况和网络故障中，恢复上传的功能尤为有用，因为上传大型资产需要很长时间。 您可以暂停上传操作，稍后在情况好转时继续。 在继续时，从暂停的位置上传开始。
 
-   在上传操作过程中，AEM会将要上传的资产部分作为数据块保存到CRX存储库中。 上载完成后，AEM会将这些区块合并到存储库中的单个数据块中。
+   在上传操作过程中，AEM会将上传的资产的部分作为数据块保存在CRX存储库中。 上传完成后，AEM会将这些区块合并到存储库中的单个数据块中。
 
    要为未完成的区块上传作业配置清除任务，请转至 `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`。
 
@@ -96,7 +96,7 @@ ht-degree: 6%
    >
    >在名称冲 **[!UICONTROL 突]** 对话框 **[!UICONTROL 中选择替]** 换后，将为新资产重新生成资产ID。 此ID与上一个资产的ID不同。
    >
-   >如果 **[!UICONTROL 启用资产]** Insights来跟踪Adobe Analytics的展示次数／点击次数，则此重新生成的资产ID将使在Adobe Analytics上为资产捕获的数据无效。
+   >如果 **[!UICONTROL 启用资产]** Insights跟踪Adobe Analytics的展示次数／点击次数，则此重新生成的资产ID将使Adobe Analytics上为该资产捕获的数据无效。
 
    If the asset you upload exists in AEM Assets, the **[!UICONTROL Duplicates Detected]** dialog box warns that you are attempting to upload a duplicate asset. 仅当现有资产的二进制文件的SHA 1校验和值与您上传的资产的校验和值匹配时，才会显示该对话框。 在这种情况下，资产名称并不重要。 换言之，如果资产的二进制文件的SHA 1值相同，则该对话框甚至可能显示具有不同名称的资产。
 
@@ -108,7 +108,7 @@ ht-degree: 6%
 
    Tap **[!UICONTROL Keep]** to retain the duplicate asset in AEM Assets. Tap  **[!UICONTROL Delete]** to delete the duplicate asset you uploaded.
 
-   AEM资产可阻止您上传文件名中带有禁止字符的资产。 如果您尝试上传包含不允许的字符的资产，AEM资产会显示一条警告消息，说明文件名中是否存在禁止的字符，并停止上传，直到您删除这些字符或上传时使用允许的名称。
+   AEM Assets阻止您上传文件名中带有禁止字符的资产。 如果您尝试上传包含不允许的字符的资产，AEM Assets会显示一条警告消息，说明文件名中是否存在禁止的字符，并停止上传，直到您删除这些字符或上传时使用允许的名称。
 
    为了符合组织的特定文件命名约定，您 **[!UICONTROL 可以在“上传资产]** ”对话框中为上传的文件指定长名称。
 
@@ -124,13 +124,13 @@ ht-degree: 6%
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-   如果您在上传文件之前取消上传操作，AEM资产将停止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
+   如果在上传文件之前取消上传操作，AEM Assets将停止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
 
 ### 串行上传 {#serial-uploads}
 
-批量上传大量资产会消耗大量系统资源，这可能会对AEM部署的性能产生负面影响。 潜在的瓶颈可能是您的Internet连接、磁盘上的读写操作、Web浏览器对并发资产上传时的POST请求数的限制。 批量上传操作可能会失败或提前终止。 换言之，AEM资产可能会在摄取大量文件时丢失某些文件，或完全无法摄取任何文件。
+批量上传大量资产会消耗大量系统资源，这可能会对AEM部署的性能产生负面影响。 潜在的瓶颈可能是您的Internet连接、磁盘上的读写操作、Web浏览器对并发资产上传POST请求数的限制。 批量上传操作可能会失败或提前终止。 换言之，AEM资源在摄取大量文件时可能会丢失某些文件，或者完全无法摄取任何文件。
 
-为了克服这种情况，AEM资产在批量上传操作过程中一次只能摄取一个资产（串行上传），而不是同时摄取所有资产。
+为了克服这种情况，AEM Assets在批量上传操作期间一次收录一个资产（串行上传），而不是同时录入所有资产。
 
 资产的串行上传默认处于启用状态。 要禁用该功能并允许并发上传，请在CRXDe `fileupload` 中叠加该节点，并将属性的 `parallelUploads` 值设置为 `true`。
 
@@ -140,12 +140,12 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 
 >[!NOTE]
 >
->在Dynamic Media - Scene7模式下，您只能上传文件大小为2 GB或更小的资产。
+>在Dynamic Media -Scene7模式下，您只能上传文件大小为2 GB或更小的资产。
 
 >[!NOTE]
 >
->要在Dynamic Media中通过FTP上传资产——在AEM作者上安装Scene7模式安装功能包(FP)18912。 联系Adobe客户服务中心获取FP-18912并完成FTP帐户的设置。 请参 [阅安装功能包18912以实现批量资产迁移](/help/assets/bulk-ingest-migrate.md)。
-如果您使用FTP上传资产，则会忽略在AEM中指定的上传设置。 而是使用在Dynamic Media Classic中定义的文件处理规则。
+>要通过FTP在Dynamic Media中上传资产- AEM作者的Scene7模式安装功能包(FP)18912。 联系Adobe客户服务中心获取FP-18912并完成FTP帐户的设置。 请参 [阅安装功能包18912以实现批量资产迁移](/help/assets/bulk-ingest-migrate.md)。
+如果您使用FTP上传资产，则会忽略AEM中指定的上传设置。 而是使用在Dynamic Media Classic中定义的文件处理规则。
 
 **使用FTP上传资产**
 
@@ -160,12 +160,12 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 
    >[!NOTE]
    >
-   >当您通过FTP上传资产时，您在Dynamic Media Classic(Scene7)中设置的上传作业选项会优先于在AEM中设置的资产处理参数。
+   >通过FTP上传资产时，您在Dynamic Media Classic(Scene7)中设置的上传作业选项优先于AEM中设置的资产处理参数。
 
 1. 在“上传作业选项”对话框 **[!UICONTROL 的右下角]** ，点按 **[!UICONTROL 保存]**。
 1. 在上传页面的右下角， **[!UICONTROL 点按]** “提交 **[!UICONTROL 上传”]**。
 
-   要视图上传进度，请在全局导航栏上点按 **[!UICONTROL 作业]**。 “作 **[!UICONTROL 业]** ”页面显示上传的进度。 您可以继续在AEM中工作，并随时返回Dynamic Media Classic中的“作业”页面以查看进行中的作业。
+   要视图上传进度，请在全局导航栏上点按 **[!UICONTROL 作业]**。 “作 **[!UICONTROL 业]** ”页面显示上传的进度。 您可以随时继续在AEM中工作并返回到Dynamic Media Classic中的“作业”页，以查看进行中的作业。
 
    要取消正在进行的上载作业，请点 **[!UICONTROL 按]** “持续时 **[!UICONTROL 间”旁边]** 的取消。
 
@@ -179,14 +179,14 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 | 上传时解压缩ZIP或TAR文件 |  |  |
 | 作业选项 |  | 点按／单 **[!UICONTROL 击作业选]** 项以打开上 [!UICONTROL 传作业选项对话框] ，然后选择影响整个上传作业的选项。 这些选项对于所有文件类型都是相同的。<br>您可以从“应用程序常规设置”页面开始选择上传文件的默认选项。 要打开此页，请选择“设 **[!UICONTROL 置”]** >“应 **[!UICONTROL 用程序设置]**”。 点按默 **[!UICONTROL 认上传选项]** ，以打开“上 [!UICONTROL 传作业选项] ”对话框。 |
 |  | 当 | 选择一次或重复。 要设置重复作业，请选择“重复”选项（每日、每周、每月或自定义），以指定要重复FTP上传作业的时间。 然后根据需要指定计划选项。 |
-|  | 包含子文件夹 | 上传您要上传的文件夹中的所有子文件夹。 您上传的文件夹及其子文件夹的名称会自动输入到AEM资产中。 |
+|  | 包含子文件夹 | 上传您要上传的文件夹中的所有子文件夹。 您上传的文件夹及其子文件夹的名称会自动输入到AEM Assets。 |
 |  | 裁剪选项 | 要从图像两侧手动裁剪，请选择“裁剪”菜单，然后选择“手动”。 然后输入要从图像的任何一侧或每一侧裁剪的像素数。 裁剪的图像多少取决于图像文件中的 ppi（每英寸像素数）设置。例如，如果图像显示 150 ppi，您在“顶部”、“右”、“底部”和“左”文本框中分别输入 75，则会从每个侧边裁剪半英寸。<br> 要自动裁切图像中的空白像素，请打开“裁剪”菜单，选择“手动”，然后在“顶部”、“右”、“底部”和“左”字段中输入像素度量值以从两侧进行裁剪。 您还可以在“裁剪”菜单上选择“修剪”并选择以下选项：<br> **根据裁切** <ul><li>**颜色** -选择颜色选项。 然后，选择“角”菜单，选择图像的角，其颜色最能代表您要裁剪的空白颜色。</li><li>**透明度** -选择“透明度”选项。<br> **容差** -拖动滑块以指定从0到1的容差。对于基于颜色的修剪，指定0仅在像素与您在图像角中选择的颜色完全匹配时裁剪像素。 接近1的数字允许更多的颜色差异。<br>对于基于透明度的修剪，指定0可仅裁剪透明像素。 接近1的数字意味着更加透明。</li></ul><br>请注意，这些裁剪选项是无损的。 |
 |  | 颜色用户档案选项 | 在创建用于投放的优化文件时选择颜色转换：<ul><li>默认颜色保留： 当图像包含色彩空间信息时，保留源图像颜色； 没有颜色转换。 现在几乎所有图像都已嵌入相应的颜色用户档案。 但是，如果CMYK源图像不包含嵌入的颜色用户档案，则这些颜色将转换为sRGB（标准红绿蓝）色彩空间。 sRGB是用于在网页上显示图像的推荐色彩空间。</li><li>保留原始色彩空间： 保留原始颜色，点上不进行任何颜色转换。 对于没有嵌入颜色用户档案的图像，任何颜色转换均使用在“发布”设置中配置的默认颜色用户档案进行。 颜色用户档案可能与使用此选项创建的文件中的颜色不对齐。 因此，建议您使用默认颜色保留选项。</li><li>“自定义自”>“至<br> ”打开菜单，因此您可以选择“转换自”和“转换至色彩空间”。 此高级选项将覆盖嵌入在源文件中的任何颜色信息。 当您提交的所有图像都包含不正确或缺少颜色用户档案数据时，请选择此选项。</li></ul> |
 |  | 图像编辑选项 | 您可以在图像中保留剪切蒙版，并选择颜色用户档案。<br> 请参 [阅在上传时设置图像编辑选项](#setting-image-editing-options-at-upload)。 |
 |  | Postscript选项 | 您可以栅格化PostScript®文件、裁剪文件、维护透明背景、选择分辨率和选择色彩空间。<br> 请参 [阅设置PostScript和Illustrator上传选项](#setting-postscript-and-illustrator-upload-options)。 |
-|  | Photoshop选项 | 您可以从Adobe® Photoshop®文件创建模板、维护图层、指定图层的命名方式、提取文本以及指定图像定位到模板的方式。<br> 请注意，AEM中不支持模板。<br> 请参 [阅设置Photoshop上传选项](#setting-photoshop-upload-options)。 |
+|  | Photoshop选项 | 您可以从Adobe®Photoshop®文件创建模板、维护图层、指定如何命名图层、提取文本以及指定如何将图像定位到模板中。<br> 请注意，AEM中不支持模板。<br> 请参阅 [设置Photoshop上传选项](#setting-photoshop-upload-options)。 |
 |  | PDF选项 | 您可以栅格化文件、提取搜索词和链接、自动生成电子目录、设置分辨率和选择色彩空间。<br> 请注意，AEM不支持eCatalog。 <br> 请参 [阅设置PDF上传选项](#setting-pdf-upload-options)。 |
-|  | Illustrator选项 | 您可以栅格化Adobe Illustrator®文件、维护透明背景、选择分辨率和选择色彩空间。<br> 请参 [阅设置PostScript和Illustrator上传选项](#setting-postscript-and-illustrator-upload-options)。 |
+|  | Illustrator选项 | 您可以栅格化Adobe Illustrator®文件、保持透明背景、选择分辨率和选择色彩空间。<br> 请参 [阅设置PostScript和Illustrator上传选项](#setting-postscript-and-illustrator-upload-options)。 |
 |  | EVideo选项 | 您可以通过选择视频预设对视频文件进行转码。<br> 请参 [阅设置eVideo上传选项](#setting-evideo-upload-options)。 |
 |  | 批集预设 | 要从上传的文件创建图像集或旋转集，请单击要使用的预设的活动列。 您可以选择多个预设。 您可以在Dynamic Media Classic的“应用程序设置／批集预设”页面中创建预设。<br> 请参 [阅将批集预设配置为自动生成图像集和旋转集](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) ，以了解有关创建批集预设的更多信息。<br> 请参 [阅在上传时设置批集预设](#setting-batch-set-presets-at-upload)。 |
 
@@ -205,18 +205,18 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 |---|---|---|
 | 从剪切路径创建蒙版 |  | 根据图像的剪切路径信息为图像创建蒙版。 此选项适用于使用创建了剪切路径的图像编辑应用程序创建的图像。 |
 | USM锐化 |  | 允许您对最终的缩减采样图像微调锐化滤镜效果，控制效果的强度、效果的半径（以像素为单位）以及被忽略的对比度阈值。<br> 此效果使用的选项与Photoshop的USM锐化滤镜的选项相同。 与名称相反，USM锐化是一种锐化滤镜。 在“USM锐化”下，设置所需的选项。 设置选项在下面进行了说明： |
-|  | 数量 | 控制应用于边缘像素的对比度量。<br> 把它想成效果的强度。 Dynamic Media中USM锐化的数量值与Adobe Photoshop中的数量值之间的主要区别在于Photoshop的数量范围在1%到500%之间。 而在Dynamic Media中，值范围为0.0到5.0。值5.0大致相当于Photoshop中的500%; 值0.9等于90%，依此类推。 |
+|  | 数量 | 控制应用于边缘像素的对比度量。<br> 把它想成效果的强度。 动态媒体中USM锐化的金额值与Adobe Photoshop的金额值之间的主要区别在于，Photoshop的金额范围在1%到500%之间。 而在Dynamic Media中，值范围为0.0到5.0。值5.0大致相当于Photoshop的500%; 值0.9等于90%，依此类推。 |
 |  | 半径 | 控制效果的半径。 值范围是0-250。<br> 该效果对图像中的所有像素运行，并从所有方向的所有像素辐射出来。 半径以像素为单位。 例如，要对2000 x 2000像素图像和500 x 500像素图像获得类似的锐化效果，您应对2000 x 2000像素图像设置两个像素的半径，对500 x 500像素图像设置一个像素的半径值。 对于具有更多像素的图像，使用较大的值。 |
 |  | 阈值 | 阈值是应用USM锐化滤镜时忽略的对比度范围。 因此，在使用此滤镜时，不会在图像中引入“杂色”，这一点很重要。 值范围是0-255，它是灰度图像中的亮度步骤数。 0=黑色，128=50%灰色，255=白色。<br> 例如，阈值12会忽略皮肤色调亮度的细微变化，以避免添加杂色，但仍会为对比区域添加边缘对比度，如睫毛与皮肤的交集处。<br> 例如，如果您有一张某人脸部的照片，USM锐化会影响图像的对比部分，如睫毛和皮肤会聚以创建明显的对比度区域以及平滑的皮肤本身。 即使最平滑的外观也会显示亮度值的细微变化。 如果不使用阈值，滤镜会突出外观像素的这些细微更改。 反过来，产生噪声和不需要的效果，同时增加睫毛的对比度，增强锐度。<br> 为了避免此问题，引入了一个阈值，告诉滤镜忽略不显着改变对比度的像素，如平滑外观。<br> 在前面显示的拉链图形中，注意拉链旁边的纹理。 由于阈值过低，无法抑制噪声，因此出现了图像噪声。 |
 |  | 单色 | 选择此项可使图像亮度（强度）变为USM锐化。<br> 取消选中此选项，可单独对每个颜色组件进行锐化。 |
 | 挖空背景 |  | 在上传图像时自动删除其背景。 此技术有助于引起对特定对象的注意并使其从繁忙的背景中脱颖而出。 选择以启用或“打开”挖空背景功能和以下子选项： |
 |  | 角 | 必填.<br> 用于定义要挖空的背景颜色的图像的角。<br> 您可以选择 **左上**、 **左下**、右 **上**&#x200B;或右 **下**&#x200B;选择。 |
-|  | 填充方法 | 必填.<br> 从您设置的“角”位置控制像素透明度。<br> 您可以从以下填充方法中进行选择： <ul><li>**泛色填充** -将与您指定并连接到的“角”匹配的所有像素变为透明。</li><li>**匹配像素** -将所有匹配的像素变为透明，无论它们在图像上的位置如何。</li></ul> |
+|  | 填充方法 | 必填.<br> 从您设置的“角”位置控制像素透明度。<br> 您可以从以下填充方法中进行选择： <ul><li>**Flood** 填充——将与您指定并连接到的“角”匹配的所有像素变为透明。</li><li>**匹配像素** -将所有匹配的像素变为透明，无论它们在图像上的位置如何。</li></ul> |
 |  | 容差 | 可选。<br> 根据您设置的“角”位置控制像素颜色匹配中允许的变化量。<br> 使用值0.0精确匹配像素颜色，或使用值1.0最大变化。 |
 
 #### 设置PostScript和Illustrator上传选项 {#setting-postscript-and-illustrator-upload-options}
 
-上传PostScript(EPS)或Illustrator(AI)图像文件时，可以采用各种方式设置它们的格式。 您可以栅格化文件、保持透明背景、选择分辨率和选择色彩空间。 在“PostScript选项”和“Illustrator选项”下的“上传作业选项”对话框中，可以使用格式化PostScript和Illustrator文件的选项。
+上传PostScript(EPS)或Illustrator(AI)图像文件时，可以采用各种格式设置它们。 您可以栅格化文件、保持透明背景、选择分辨率和选择色彩空间。 “PostScript选项”和“Illustrator选项”下的“上传作业选项”对话框中提供格式化PostScript和PostScript文件的选项。
 
 | 选项 | 子选项 | 描述 |
 |---|---|---|
@@ -235,7 +235,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 如果您使用PSD文件创建模板，Dynamic Media会使用图层从PSD文件创建多个图像； 它为每个图层创建一个图像。
 
-使用上 **[!UICONTROL 述裁剪]****[!UICONTROL 选项和颜]**&#x200B;色用户档案选项，以及Photoshop上传选项。
+使用上 **[!UICONTROL 述的裁剪]****[!UICONTROL 选项和颜]**&#x200B;色用户档案选项，以及Photoshop上传选项。
 
 >[!NOTE]
 >
@@ -248,8 +248,8 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 | 提取文本 |  | 提取文本，以便用户在查看器中搜索文本。 |
 | 将图层扩展到背景大小 |  | 将已撕开的图像图层的大小扩展到背景图层的大小。 |
 | 图层命名 |  | PSD文件中的图层作为单独的图像上传。 |
-|  | 图层名称 | 在PSD文件中将图像命名为图层名称之后。 例如，原始PSD文件中名为Price Tag的图层将变为名为Price Tag的图像。 但是，如果PSD文件中的图层名称是默认的Photoshop图层名称（背景、图层1、图层2等），则图像的命名将以PSD文件中的图层编号而非默认图层名称命名。 |
-|  | Photoshop和图层编号 | 在PSD文件中将图像命名为图层编号之后的图像，而忽略原始图层名称。 图像以Photoshop文件名和附加的图层编号命名。 例如，名为Spring Ad.psd的文件的第二个图层命名为Spring Ad_2，即使它在Photoshop中具有非默认名称。 |
+|  | 图层名称 | 在PSD文件中将图像命名为图层名称之后。 例如，原始PSD文件中名为Price Tag的图层将变为名为Price Tag的图像。 但是，如果PSD文件中的图层名称是默认的Photoshop图层名称（背景、图层1、图层2等），则图像将以PSD文件中的图层编号命名，而不是以其默认图层名称命名。 |
+|  | Photoshop和层号 | 在PSD文件中将图像命名为图层编号之后的图像，而忽略原始图层名称。 图像以Photoshop文件名和附加的图层编号命名。 例如，名为Spring Ad.psd的文件的第二个层被命名为Spring Ad_2，即使它在Photoshop有非默认名称。 |
 |  | Photoshop和图层名称 | 在PSD文件之后命名图像，后跟图层名称或图层编号。 如果PSD文件中的图层名称是默认的Photoshop图层名称，则使用图层编号。 例如，在名为SpringAd的PSD文件中名为Price Tag的图层被命名为Spring Ad_Price Tag。 具有默认名称Layer 2的层称为Spring Ad_2。 |
 | 锚点 |  | 指定如何在从PSD文件生成的分层合成生成的模板中定位图像。 默认情况下，锚点为中心。 无论替换图像的长宽比如何，中心锚点都允许替换图像以最佳方式填充相同的空间。 当引用模板并使用参数替换时，具有替换此图像的不同方面的图像会有效地占据相同的空间。 如果应用程序需要替换图像以填充模板中分配的空间，请更改为其他设置。 |
 
@@ -296,9 +296,9 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 ### 流式上传 {#streamed-uploads}
 
-如果上传大量资产，则对AEM服务器的I/O调用会显着增加，这会降低上传效率，甚至会导致其超时。 AEM资产支持流式上传资产。 流式上传通过在将磁盘复制到存储库之前避免在服务器上的临时文件夹中存储资产，减少了上传操作期间的磁盘I/O。 而是直接将数据传输到存储库。 这样，上传大型资产的时间和超时的可能性就会减少。 默认情况下，流式上传在AEM资产中处于启用状态。
+如果上传大量资产，对AEM服务器的I/O调用会显着增加，这会降低上传效率，甚至会导致其超时。 AEM Assets支持资产流上传。 流式上传通过在将磁盘复制到存储库之前避免在服务器上的临时文件夹中存储资产，减少了上传操作期间的磁盘I/O。 而是直接将数据传输到存储库。 这样，上传大型资产的时间和超时的可能性就会减少。 流上传默认在AEM Assets启用。
 
-对于在JEE服务器上运行的AEM，其servlet-api版本小于3.1，禁用流上传。
+对于在JEE服务器上运行的版本小于3.1的servlet-api的AEM，禁用流上传。
 
 ### 提取包含资产的ZIP存档 {#extract-zip-archive-containing-assets}
 
@@ -306,7 +306,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 一次选择一个ZIP归档，单击“解 **[!UICONTROL 压归档]**”，然后选择目标文件夹。 选择一个选项以处理冲突（如果有）。 如果目标文件夹中已存在ZIP文件中的资产，您可以选择以下选项之一： 跳过提取、替换现有文件、重命名以保留两个资产或创建新版本。
 
-提取完成后，AEM会在通知区域中通知您。 在AEM解压ZIP时，您可以返回工作而不中断提取。
+提取完成后，AEM会在通知区域通知您。 AEM提取ZIP时，您可以返回工作，而不中断提取。
 
 ![ZIP提取通知](assets/zip_extract_notification.png)
 
@@ -363,7 +363,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
    ![设置资产在特定时间段后停止可用的时间](assets/chlimage_1-13.png)
 
-1. 在“标 **[!UICONTROL 记]** ”字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记名称，然后按 **[!UICONTROL Enter]**。 新标记将保存在AEM中。
+1. 在“标 **[!UICONTROL 记]** ”字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记名称，然后按 **[!UICONTROL Enter]**。 新标记保存在AEM中。
 
    YouTube需要标记才能发布，并且有一个指向YouTube的链接（如果可以找到合适的链接）。
 要创建标记，您需要CRX存储库 `/content/cq:tags/default` 中的写入权限。
@@ -411,7 +411,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
    >[!NOTE]
    >
-   >如果您在同一位置复制资产，AEM会自动生成该名称的变体。 例如，如果您复制的资产标题为“Square”,AEM会自动为其副本生成标题为“Square1”。
+   >如果您在同一位置复制资产，AEM会自动生成该名称的变体。 例如，如果您复制的资产标题为Square,AEM会自动为其副本生成标题为Square1。
 
 1. Tap the **[!UICONTROL Paste]** asset icon from the toolbar:
 
@@ -481,7 +481,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
    >[!NOTE]
    >
-   >默认情况下，AEM资产不会在预览模式下显示资产的原始演绎版。 如果您是管理员，则可以使用叠加来配置AEM资产，以在预览模式下显示原始演绎版。
+   >默认情况下，AEM Assets不在预览模式下显示资产的原始演绎版。 如果您是管理员，则可以使用叠加将AEM Assets配置为在预览模式下显示原始演绎版。
 
 1. 选择一个演绎版以进行查看或删除。
 
@@ -501,7 +501,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
    >
    >如果您从演绎版面板中选 **[!UICONTROL 择了演绎版]** ，工具栏会更改上下文并仅显示与演绎版相关的那些操作。 Options, such as the **[!UICONTROL Upload Rendition]** icon is not displayed. 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
 
-   您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的尺寸。 根据您指定的维，AEM资产会显示具有精确或最接近的维度的演绎版。
+   您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的尺寸。 根据您指定的尺寸，AEM Assets显示具有精确或最接近尺寸的再现。
 
    To configure rendition dimensions of an image at the asset detail level, overlay the **[!UICONTROL renditionpicker]** node `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` and configure the value of the width property. 配置属性大 **[!UICONTROL 小（长）(以KB]** )代替宽度，以根据图像大小在资产详细信息页面上自定义再现。 For size-based customization, the property **[!UICONTROL preferOriginal]** assigns preference to the original if the size of the matched rendition is greater than the original.
 
@@ -607,14 +607,14 @@ CUG是限制对资产访问的额外方式。 您还可以为文件夹配置登�
 
    ![add_user](assets/add_user.png)
 
-1. 要在用户访问文件夹时显示登录屏幕，请选择“启 **[!UICONTROL 用]** ”选项。 然后，在AEM中选择登录页面的路径，并保存更改。
+1. 要在用户访问文件夹时显示登录屏幕，请选择“启 **[!UICONTROL 用]** ”选项。 然后，选择AEM中登录页面的路径，并保存更改。
 
    ![login_page](assets/login_page.png)
 
-   如果未指定登录页面的路径，AEM将在发布实例中显示默认登录页面。
+   如果不指定登录页面的路径，AEM将在发布实例中显示默认登录页面。
 
 1. 发布文件夹，然后尝试从发布实例访问它。 将显示登录屏幕。
-1. 如果您是CUG成员，请输入您的安全凭据。 AEM对您进行身份验证后，将显示该文件夹。
+1. 如果您是CUG成员，请输入您的安全凭据。 在AEM对您进行身份验证后，将显示文件夹。
 
 ## 搜索资产 {#searching-assets}
 
@@ -624,7 +624,7 @@ CUG是限制对资产访问的额外方式。 您还可以为文件夹配置登�
 
 对于最近上传的资产，在您在“搜索”框中键入时显示的建议列表中，不会立即显示资产的元数据（包括标题、标记等）。
 
-这是因为AEM资产会等到超时期（默认为1小时）到期后才运行后台作业，以索引所有新上传／更新的资产的元数据并将其添加到建议列表。
+这是因为，AEM Assets会等到超时期（默认为1小时）到期后再运行后台作业，为所有新上传／更新的资产索引元数据并将其添加到建议列表。
 
 ## 使用快速操作 {#quick-actions}
 
@@ -651,7 +651,7 @@ CUG是限制对资产访问的额外方式。 您还可以为文件夹配置登�
 
 ## 编辑图像 {#editing-images}
 
-AEM资产界面中的编辑工具允许您对图像资产执行小型编辑作业。 您可以对图像进行裁剪、旋转、翻转和执行其他编辑作业。 您还可以向资产添加图像映射。
+AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作业。 您可以对图像进行裁剪、旋转、翻转和执行其他编辑作业。 您还可以向资产添加图像映射。
 
 以下格式的文件支持图像编辑功能：
 
@@ -728,7 +728,7 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 
 注释是指添加到图像或视频的评论或解释性说明。注释使营销人员能够协作并留下资产反馈。
 
-视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。AEM资产支持的视频格式取决于浏览器。
+视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。AEM Assets支持的视频格式取决于浏览器。
 
 对于内容片段， [在编辑器中创建注释](content-fragments-variations.md#annotating-a-content-fragment); 此功能 [需要AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md) 。
 
@@ -851,8 +851,8 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 1. 打开 **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]** Service配置页 [，其URL为https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl)。
 1. 要配 **[!UICONTROL 置CQ-DAM-Handler-Gibson字体管理器服务]**，请执行以下操作之一：
 
-   * 在“ **[!UICONTROL System Fonts]** ”目录选项中，指定系统上字体目录的完整路径。 例如，如果您是Mac用户，则可以像在“系统字体”目录选 `/Library/Fonts` 项中一 **[!UICONTROL 样指定路径]** 。 AEM从此目录获取字体。
-   * 在crx-quickstart文件 **夹中** ，创建 **[!UICONTROL 一个名为fonts]** 的目录。 **[!UICONTROL CQ-DAM-Handler-Gibson字体管理器服务]** ，自动获取位置的字体 `crx-quickstart/fonts`。 您可以从Adobe Server Fonts目录选项 **[!UICONTROL 中覆盖此默认]** 路径。
+   * 在“ **[!UICONTROL System Fonts]** ”目录选项中，指定系统上字体目录的完整路径。 例如，如果您是Mac用户，则可以像在“系统字体”目录选 `/Library/Fonts` 项中一 **[!UICONTROL 样指定路径]** 。 AEM从此目录中获取字体。
+   * 在crx-quickstart文件 **夹中** ，创建 **[!UICONTROL 一个名为fonts]** 的目录。 **[!UICONTROL CQ-DAM-Handler-Gibson字体管理器服务]** ，自动获取位置的字体 `crx-quickstart/fonts`。 您可以从Adobe服务器字体目录选项 **[!UICONTROL 中覆盖此默]** 认路径。
    * 在系统中为字体创建新文件夹，并将所需的字体存储在该文件夹中。 然后，在“客户字体”目录选项中指定该文 **[!UICONTROL 件夹的完]** 整路径。
 
 1. 通过 **[!UICONTROL URL]** https://&lt; [server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig访问“注释PDF”配置](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig)。
@@ -879,9 +879,9 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 
 以下是创建版本的方案：
 
-* 您可以在其他应用程序中修改图像并上传到AEM资产。 将创建图像的某个版本，这样原始图像不会被覆盖。
+* 在其他应用程序中修改图像并上传到AEM Assets。 将创建图像的某个版本，这样原始图像不会被覆盖。
 * 您可以编辑资产的元数据。
-* 您可以使用AEM桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建一个新版本。
+* 您使用AEM桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建一个新版本。
 
 您还可以通过工作流启用自动版本控制。 为资产创建版本时，元数据和演绎版会与该版本一起保存。 演绎版是相同图像的替代内容，例如，已上传JPEG文件的PNG演绎版。
 

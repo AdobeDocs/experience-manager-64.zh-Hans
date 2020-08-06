@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 66%
 
 ---
 
 
 # 定位您的 Adobe Campaign{#targeting-your-adobe-campaign}
 
-要定位您的 Adobe Campaign 新闻稿，您需要先设置分段，分段仅在经典 UI 中可用。之后，您便可以为Adobe Campaign创建目标体验。
+要定位您的 Adobe Campaign 新闻稿，您需要先设置分段，分段仅在经典 UI 中可用。之后，您可以创建针对性的Adobe Campaign体验。
 
 ## 在 AEM 中设置分段 {#setting-up-segmentation-in-aem}
 
-设置分段包括创建区段、品牌、营销活动和体验。您只能在经典 UI 中创建区段。您可以在触屏优化UI中创建品牌、营销活动和体验。
+设置分段包括创建区段、品牌、营销活动和体验。您只能在经典 UI 中创建区段。您可以在触屏优化UI中创建品牌、活动和体验。
 
 >[!NOTE]
 >
@@ -68,7 +71,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 创建区段、品牌、营销活动和体验后，您可以创建包含目标内容的新闻稿。创建体验后，您可以将体验与区段相关联。
 
-您可以在触屏优化用户界面和经典用户界面中创建包含目标内容的新闻稿。 本文档介绍了触屏优化UI的操作过程。
+您可以在触屏优化用户界面和经典用户界面中创建包含目标内容的新闻稿。 本文档介绍触屏优化UI的过程。
 
 要创建包含目标内容的新闻稿，请执行以下操作：
 
@@ -76,7 +79,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    >[!NOTE]
    >
-   >[仅 Geometrixx 中提供了电子邮件示例](/help/sites-developing/we-retail.md#weretail)。请从“包共享”下载示例Geometrixx内容。
+   >[仅 Geometrixx 中提供了电子邮件示例](/help/sites-developing/we-retail.md#weretail)。请从包共享下载示例Geometrixx内容。
 
 1. 在新闻稿中，添加一个“文本与个性化”组件。
 1. 在该“文本与个性化”组件中添加文本，例如“This is the default”。
@@ -92,7 +95,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. 导航到另一个区段 (Male)，单击&#x200B;**添加选件**，然后单击加号图标 (+)。然后编辑选件。
+1. 导航到另一个区段 (Male)，单击&#x200B;**添加选件**，然后单击加号图标 (+)。然后编辑优惠。
 1. 导航到另一个区段 (Female)，单击&#x200B;**添加选件**，然后单击加号图标 (+)。接着，编辑该选件。
 1. Click **Next** to see Mapping, then click **Next** to see Settings, which does not apply to Adobe Campaign, and click **Save**.
 

@@ -42,7 +42,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->使用AEM Forms进行编程中的快速开始基于JBoss和Windows操作系统上部署的Forms Server。 但是，如果您使用的是其他操作系统，如Unix，则将特定于窗口的路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>“使用AEM Forms进行编程”中的快速开始基于部署在JBoss和Windows操作系统上的Forms服务器。 但是，如果您使用的是其他操作系统，如Unix，则将特定于窗口的路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速开始（SOAP模式）: 使用Java API创建应用程序版本 {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -444,7 +444,7 @@ public class GetApplication_SOAP {
 
 以下Java代码示例使用Java API获取应用程序。
 
-*注&#x200B;**意**: 获取AEM Forms Application API, getApplications()只返回已部署的应用程序。 *
+*注&#x200B;**意**: 获取AEM Forms应用程序API, getApplications()只返回已部署的应用程序。 *
 
 ```as3
 /* 
@@ -644,7 +644,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## 快速开始（SOAP模式）：使用Java API预览LiveCycle ES2和更高版本的应用程序存档 {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## 快速开始（SOAP模式）：使用Java API预览LiveCycleES2和更高版本的应用程序存档 {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
 以下Java代码示例用于使用Java API预览AEM Forms和更高版本的应用程序存档。
 

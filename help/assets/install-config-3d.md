@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 安装和配置AEM 3D {#installing-and-configuring-aem-d}
 
-AEM 3D（版本3.0）的安装和配置涉及以下方面：
+AEM 3D（版本3.0）的安装和配置涉及以下事项：
 
 1. 安装Autodesk® FBX® SDK库。
 1. 下载和安装本机3D代码包。
@@ -29,17 +29,17 @@ AEM 3D（版本3.0）的安装和配置涉及以下方面：
 
 另请参阅 [使用3D资产](assets-3d.md)。
 
-另请参 [阅AEM 3D资产发行说明](/help/release-notes/aem3d-release-notes.md) ，了解先决条件、支持的浏览器和其他重要发行信息。
+另请参 [阅AEM 3D Assets发行说明](/help/release-notes/aem3d-release-notes.md) ，了解先决条件、支持的浏览器以及其他重要的发行说明。
 
 另请参阅 [使用3D站点组件](using-the-3d-sites-component.md)。
 
 >[!NOTE]
 >
->下载和安装3D包之前，请确保您已成功安装所有必备AEM包。 See the [AEM 3D Release Notes.](install-config-3d.md)
+>在下载和安装3D包之前，请确保您已成功安装所有必备的AEM包。 See the [AEM 3D Release Notes.](install-config-3d.md)
 
 ## 安装Autodesk FBX SDK库 {#installing-the-autodesk-fbx-sdk-library}
 
-本机AEM 3D代码需要Autodesk FBX库来支持FBX文件格式。 （Adobe当前无法再分发此库。）
+本机AEM 3D代码需要Autodesk FBX库来支持FBX文件格式。 (Adobe当前无法再分发此库。)
 
 另请参阅 [高级配置设置](advanced-config-3d.md)。
 
@@ -83,13 +83,13 @@ AEM 3D（版本3.0）的安装和配置涉及以下方面：
    * 如果这是Windows Server部署，请以管理员身份登录到服务器。
    * 如果这是Mac或Windows桌面，请确保您具有管理员权限。
 
-1. 确保您有可用于访问AEM的受支持浏览器。
+1. 确保您有支持的浏览器可用于访问AEM。
 
    请参 [阅系统要求](/help/release-notes/aem3d-release-notes.md#system-requirements)。
 
 1. 访问 [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。 找到功能包的3.0.1 `AEM-6.4-DynamicMedia-3D` 版并下载它。
 
-1. 在AEM中，单击“工 **[!UICONTROL 具”>“管理”>“部署”>“包管理器]**”。
+1. 在AEM中，单击“ **[!UICONTROL 工具”>“管理”>“部署”>“包管理器]**”。
 
 1. 将下载的功能包上传到AEM。 找到它并单击“ **[!UICONTROL 安装]**”。
 
@@ -102,11 +102,11 @@ AEM 3D（版本3.0）的安装和配置涉及以下方面：
 
 **要配置3D资产摄取工作流，请执行以下操作**:
 
-1. 在AEM中，单击AEM徽标以访问全局导航控制台，然后单击工具 **[!UICONTROL 图标]** ，然后导航到 **[!UICONTROL 工作流>模型]**。
+1. 在AEM中，单击AEM徽标以访问全局导航控制台，然后单击工 **[!UICONTROL 具]** 图标并导航 **[!UICONTROL 到工作流>模型]**。
 1. 在“工 **[!UICONTROL 作流模型]** ”页面上，将指针悬 **** 停在“DAM更新资产”工作流上，当出现复选标记时，选择它。
 
 1. On the toolbar, click **[!UICONTROL Edit]**.
-1. 在DAM **[!UICONTROL 更新资产屏幕]** 、AEM浮动面板中，单击工 **[!UICONTROL 作流右]** 侧的加号图标以展开列表。 在列表 **[!UICONTROL 中选择]** “处理步骤”。
+1. 在“DAM **[!UICONTROL 更新资产]** ”屏幕的AEM浮动面板中，单 **[!UICONTROL 击工作流]** 右侧的加号图标以展开列表。 在列表 **[!UICONTROL 中选择]** “处理步骤”。
 1. 拖 **[!UICONTROL 动流程步骤]** ，并将其放入工作流中，就在工作 **[!UICONTROL 流末尾附近的DAM更新资产工作流完成组件之]** 前。
 
    ![3d_process_step_underaem6-4](assets/3d_process_step_underaem6-4.png)
@@ -129,7 +129,7 @@ AEM 3D（版本3.0）的安装和配置涉及以下方面：
 
 ## 验证AEM 3D的设置 {#validating-the-setup-of-aem-d}
 
-1. 在AEM中，单击 **[!UICONTROL 工具>资产]**，然后 `sample-3D-content.zip`下载并展开下载的文件。 (您现在可以在 `sample-3D-content.zip` AEM中删除。)
+1. 在AEM中，单击 **[!UICONTROL 工具>资产]**，然后 `sample-3D-content.zip`下载并展开下载的文件。 (您现在可以在AEM `sample-3D-content.zip` 中删除。)
 
    确保您在卡片视图 **[!UICONTROL 中]** ，以在其余步骤中上传和处理反馈。
 
@@ -178,7 +178,7 @@ AEM 3D（版本3.0）的安装和配置涉及以下方面：
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
-## 配置对Adobe Dimension资源的支持 {#configuring-support-for-adobe-dimension-assets}
+## 配置对Adobe Dimension资产的支持 {#configuring-support-for-adobe-dimension-assets}
 
 >[!NOTE]
 >
@@ -186,19 +186,19 @@ AEM 3D（版本3.0）的安装和配置涉及以下方面：
 
 您可以选择在AEM 3D中为Adobe Dimension资产配置支持。
 
-您必须配置外部转换服务，以允许在AEM中获取、预览和发布Adobe Dimension 3D资产。 服务将从专有的Adobe Dimension(`.dn`)格式转换为glTF(格式化为文 `.glb` 件)的变体，该变体与Dn资产一起另存为再现。 该 `.glb` 再现用于在AEM Assets、站点和屏幕中基于Web查看3D资产，也可供下载以与第三方应用程序一起使用。
+您必须配置外部转换服务，以允许在AEM中获取、预览和发布Adobe Dimension3D资产。 服务将从专有的Adobe Dimension(`.dn`)格式转换为glTF的变体(格式 `.glb` 为文件)，该变体与Dn资产一起保存为再现。 此再 `.glb` 现用于在AEM Assets、站点和屏幕中基于Web查看3D资产，也可供下载以用于第三方应用程序。
 
 >[!NOTE]
 >
->转换服务由Adobe在Amazon AWS中托管。 正确配置服务后， `.dn` 上传到AEM的文件会通过Amazon S3中的临时存储安全地复制到转换服务中。 转换结果通过临时S3存储传回AEM。 所有转让及存储均获保障。 此外，内容在S3中持续存在，且转换服务只短暂（通常不超过几分钟）。
+>转换服务由AmazonAWS中的Adobe托管。 在正确配置服务后，上 `.dn` 传到AEM的文件随后通过AmazonS3中的临时存储被安全地复制到转换服务。 转换结果通过临时S3存储传回AEM。 所有转让及存储均获保障。 此外，内容在S3中持续存在，且转换服务只短暂（通常不超过几分钟）。
 
-**要配置Adobe Dimension资产的支持**:
+**为Adobe Dimension资产配置支持**:
 
-1. 请与您的Adobe AEM客户经理、供应专家或支持代表联系以请求AEM3D服 **务的凭据**。
+1. 请与AdobeAEM客户经理、供应专家或支持代表联系，请求AEM 3D服 **务的凭据**。
 
    >[!NOTE]
    >
-   >每个组织只需要一组凭据，而不管在哪个AEM实例中安装了凭据。
+   >每个组织只需要一组凭据，而不管在哪个AEM实例上安装了凭据。
 
 1. 确认您收到以下信息：
 
@@ -209,7 +209,7 @@ AEM 3D（版本3.0）的安装和配置涉及以下方面：
    * userPoolId
    * clientId
 
-1. 以管理员身份登录要安装凭据的AEM作者实例，然后打 **[!UICONTROL 开CRXDE Lite]**。
+1. 以管理员身份登录AEM作者实例，在其中安装凭据，然后打开 **[!UICONTROL CRXDE Lite]**。
 1. 通过在CRXDE Lite中执行以下操作，配置新凭据信息：
 
    1. 导航到 `/libs/settings/dam/v3D/services/dncr` 并将属 `clientId` 性设置为新值。
@@ -217,16 +217,16 @@ AEM 3D（版本3.0）的安装和配置涉及以下方面：
    1. 将新密码值加载到属 `encryptedPassword` 性中。 点按全部保存时，此值会自 **[!UICONTROL 动加密]**。
    1. 点按 **[!UICONTROL 全部保]**&#x200B;存 `encryptedPassword` ，重新加载页面，然后验证属性是否显示由花括号括起的其他字符串。 此外观表示密码已正确加密且安全。
 
-1. 通过在CRXDE Lite中执 `.glb` 行以下操作，指定转换再 **[!UICONTROL 现的格式]**:
+1. 通过在CRXDE Lite中执 `.glb` 行以下操作，指定转换再现的 **[!UICONTROL 格式]**:
 
-   1. 在CRXDE `/libs/settings/dam/v3D/services/dncr` Lite **[!UICONTROL 中导航]**。
+   1. 导航到 `/libs/settings/dam/v3D/services/dncr` CRXDE Lite **[!UICONTROL 中]**。
    1. 将属 `outputFormat` 性设置为 `Dn` 或 `generic`。
 
-      设置为时， `Dn`转换 `.glb` 包括Adobe特定的扩展（如IBL光照），以在AEM中查看Dn资产时获得最佳质量。 但是，转换的。glb再现在第三方应用程序中可能无法良好呈现。
+      设置为时， `Dn`转换 `.glb` 包括特定于Adobe的扩展（如IBL光照），以在AEM中查看Dn资源时获得最佳质量。 但是，转换的。glb再现在第三方应用程序中可能无法良好呈现。
 
-      如果设置为 `generic`，则 `.glb` 再现是通用的，没有Adobe特定扩展。 此设置允许在第三方应用程序中使用它，而使用AEM 3D查看器进行查看在视觉上将不理想。
+      如果设置为 `generic`，则再 `.glb` 现是通用的，没有特定于Adobe的扩展。 此设置允许在第三方应用程序中使用它，而使用AEM 3D查看器进行查看在视觉上将不理想。
 
-1. 通过在CRXDE Lite中执行以下操作，启 **[!UICONTROL 用Dn文件格式]**:
+1. 通过在CRXDE Lite中执行以下操作，启用Dn文件 **[!UICONTROL 格式]**:
 
    1. 导航至 `/libs/settings/dam/v3D/assetTypes/Dn`.
    1. 将属 `Enabled` 性设置为true。
@@ -247,5 +247,5 @@ AEM 3D（版本3.0）的安装和配置涉及以下方面：
    如果出现这种情况，您可以通过执行以下操作来排除转换故障：
 
    * 删除资产，然后再次上传它。
-   * 确保在CRXDE Lite中正确设置了所有 **[!UICONTROL 配置参数]**。
+   * 确保在CRXDE Lite中正确设置所有配置 **[!UICONTROL 参数]**。
    * 验证防火墙是否阻止访问转换服务和AWS端点。

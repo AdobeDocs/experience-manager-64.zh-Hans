@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 0%
 
 ---
 
 
 # 更改身份验证的评估顺序 {#change-the-order-of-evaluation-for-authentication}
 
-如果您配置了多个身份验证提供者，则可以更改AEM表单评估这些提供者以进行身份验证的顺序。 config.xml文件中列出的身份验证提供者的顺序决定了身份验证的评估顺序。
+如果配置了多个身份验证提供程序，则可以更改AEM表单评估它们以进行身份验证的顺序。 config.xml文件中列出的身份验证提供程序的顺序决定了身份验证的评估顺序。
 
 1. 在管理控制台中，单击“设置”>“用户管理”>“配置”>“导入和导出配置文件”。
 1. 要将当前配置设置导出到文件，请单击“导出”，然后将配置文件保存到其他位置。

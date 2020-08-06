@@ -1,9 +1,12 @@
 ---
 title: XMP 元数据
-description: 了解AEM资产用于元数据管理的XMP（可扩展元数据平台）元数据标准。 XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
+description: 了解AEM Assets用于元数据管理的XMP（可扩展元数据平台）元数据标准。 XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 74%
 
 ---
 
@@ -18,7 +21,7 @@ Adobe 支持 [XMP 规范](https://www.adobe.com/devnet/xmp.html)。
 
 ## What is XMP? {#what-is-xmp}
 
-AEM Assets本机支持XMP —— 由Adobe率先推出的可扩展元数据平台。XMP是处理和存储数字资产中标准化的专有元数据的标准。XMP设计为通用标准，它允许多个应用程序有效地处理元数据。
+AEM Assets本身支持XMP —— 由Adobe率先推出的可扩展元数据平台。 XMP是处理和存储数字资产中标准化的专有元数据的标准。 XMP设计为通用标准，允许多个应用程序有效地处理元数据。
 
 例如，专业生产人士可以使用 Adobe 应用程序中内置的 XMP 支持，在多种文件格式之间传递信息。AEM 资产存储库会提取 XMP 元数据，用它来管理内容生命周期，并提供创建自动化工作流的能力。
 
@@ -26,8 +29,8 @@ XMP 通过提供数据模型、存储模型和架构，使元数据的定义、�
 
 来自 EXIF、ID3 或 Microsoft Office 的所有旧版元数据都将自动转换为 XMP，而 XMP 可进行扩展，以支持特定于客户的元数据架构，例如产品目录。
 
-XMP中的元数据由一组属性组成。这些属性始终与\
-称为资源的特定实体；即，属性是“关于”资源的。 对于 XMP，资源始终是指资产。
+XMP中的元数据由一组属性组成。 这些属性始终与\
+称为资源的特定实体； 即，属性是“关于”资源的。 对于 XMP，资源始终是指资产。
 
 ### Adobe {#adobe}
 
@@ -50,7 +53,7 @@ XMP 最常使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) 
 
 ### 可扩展 {#extensible}
 
-XMP标准设计为可扩展，允许您向XMP数据中添加自定义类型的元数据。 而EXIF则不然——它有一个无法扩展的属性的修正列表。
+XMP标准设计为可扩展，允许您向XMP数据中添加自定义类型的元数据。 而EXIF则不然——它具有无法扩展的属性的固定列表。
 
 >[!NOTE]
 >
@@ -62,7 +65,7 @@ XMP标准设计为可扩展，允许您向XMP数据中添加自定义类型的�
 
 ### 命名空间和架构 {#namespaces-and-schemata}
 
-XMP架构是一组通用XML命名空间中的属性名称，包括\
+XMP模式是通用XML命名空间中的一组属性名称，包括\
 数据类型和描述性信息。 XMP 架构采用其 XML 命名空间 URI 进行标识。使用命名空间可以防止不同架构内名称相同但含义不同的属性之间发生冲突。
 
 例如，在两个独立设计的架构中，**创建者**&#x200B;属性可能指创建资产的人，也可能指创建资产的应用程序（例如，Adobe Photoshop）。

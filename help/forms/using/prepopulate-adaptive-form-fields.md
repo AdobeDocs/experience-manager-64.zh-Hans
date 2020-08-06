@@ -228,13 +228,13 @@ Prefill-Submit-Data-ContentPackage.zip
 
 ## 使用Configuration Manager配置预填服务 {#configuring-prefill-service-using-configuration-manager}
 
-要启用预填服务，请在AEM Web Console配置中指定默认预填服务配置。 使用以下步骤配置预填服务：
+要启用预填服务，请在AEM Web控制台配置中指定默认预填服务配置。 使用以下步骤配置预填服务：
 
 >[!NOTE]
 >
 >预填服务配置适用于自适应表单、HTML5表单和HTML5表单集。
 
-1. 使 **[!UICONTROL 用以下URL打开]** Adobe Experience Manager Web Console配置：\
+1. 使用 **[!UICONTROL URL打开Adobe Experience ManagerWeb]** 控制台配置：\
    https://&lt;server>:&lt;port>/system/console/configMgr
 1. 搜索并打开默 **[!UICONTROL 认预填服务配置]**。
 
@@ -244,9 +244,10 @@ Prefill-Submit-Data-ContentPackage.zip
 
    * file:///C:/Users/public/Document/Prefill/。&amp;ast;
    * http://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
-   >默认情况下，允许通过crx文件预填所有类型的自适应表单（XSD、XDP、JSON、FDM以及不基于表单模型）。 仅允许对JSON和XML文件进行预填。
+   >默认情况下，允许通过crx文件预填所有类型的自适应Forms（XSD、XDP、JSON、FDM，且不基于表单模型）。 仅允许对JSON和XML文件进行预填。
 
 1. 现在已为表单配置预填服务。
 
@@ -334,13 +335,13 @@ prefill page component.zip
 
 [在页面](assets/prefill-page-component.zip)组件中获取文件示例prefill.jsp
 
-## AEM Forms自定义预填服务 {#aem-forms-custom-prefill-service}
+## AEM Forms定制预填服务 {#aem-forms-custom-prefill-service}
 
 您可以在场景中使用自定义预填服务，在场景中，您经常从预定义的源读取数据。 预填服务从定义的数据源读取数据，并用预填数据文件的内容预填自适应表单的字段。 它还可以帮助您将预先填写的数据与自适应表单永久关联。
 
 ### 创建和运行预填服务 {#create-and-run-a-prefill-service}
 
-预填服务是OSGi服务，通过OSGi捆绑包进行打包。 您可以创建OSGi捆绑包、上传它并将其安装到AEM Forms捆绑包。 开始创建捆绑包之前：
+预填服务是OSGi服务，通过OSGi捆绑包进行打包。 您创建OSGi捆绑包，上传并将其安装到AEM Forms捆绑包。 开始创建捆绑包之前：
 
 * [下载AEM Forms客户端SDK](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)
 * [下载样板程序包](assets/prefill-sumbit-xmlsandcontentpackage.zip)
@@ -363,9 +364,9 @@ prefill page component.zip
 
 #### 开始和使用预填服务 {#start-and-use-the-prefill-service}
 
-要开始预填服务，请将JAR文件上传到AEM Forms Web控制台，然后激活该服务。 现在，在自适应表单编辑器中显示的服务开始。 将预填服务与自适应表单关联：
+要开始预填服务，请将JAR文件上传到AEM FormsWeb控制台，然后激活该服务。 现在，在自适应表单编辑器中显示的服务开始。 将预填服务与自适应表单关联：
 
-1. 在表单编辑器中打开自适应表单，然后打开表单容器的属性面板。
-1. 在“属性”控制台中，导航 **[!UICONTROL 到“AEM表单容器”>“基本”>“预填服务]**”。
+1. 在Forms编辑器中打开自适应表单，然后打开表单容器的“属性”面板。
+1. 在“属性”控制台中，导航到 **[!UICONTROL AEM Forms容器>基本>预填服务]**。
 1. 选择“默认预填服务”，然后单击“ **[!UICONTROL 保存]**”。 服务与表单关联。
 

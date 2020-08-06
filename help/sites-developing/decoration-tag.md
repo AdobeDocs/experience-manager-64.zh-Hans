@@ -1,6 +1,6 @@
 ---
 title: 装饰标签
-description: 呈现网页中的组件时，可以生成HTML元素，将呈现的组件包装在它自身中。 对于开发人员，AEM优惠清晰、简单的逻辑控制包含组件的装饰标签。
+description: 呈现网页中的组件时，可以生成HTML元素，将呈现的组件包装在它自身中。 对于开发人员，AEM优惠清晰而简单的逻辑控制包含组件的装饰标签。
 translation-type: tm+mt
 source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
@@ -20,7 +20,7 @@ ht-degree: 0%
    * 布局信息
    * 样式信息
 
-对于开发人员，AEM优惠清晰、简单的逻辑控制包含组件的装饰标签。 装饰标签的呈现方式和呈现方式由两个因素的组合来定义，本页将深入讨论这两个因素：
+对于开发人员，AEM优惠清晰而简单的逻辑控制包含组件的装饰标签。 装饰标签的呈现方式和呈现方式由两个因素的组合来定义，本页将深入讨论这两个因素：
 
 * 组件本身可以使用一组属性配置其装饰标签。
 * 包含组件（HTL、JSP、调度程序等）的脚本可以使用包含参数来定义装饰标签的各个方面。
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 以下属性和节点可以应用于组件以控制其装饰标签的行为：
 
-* **`cq:noDecoration {boolean}`:**此属性可以添加到组件，而且，如果值为true，则强制AEM不在组件上生成任何包装器元素。
+* **`cq:noDecoration {boolean}`:**此属性可以添加到组件，而且，如果值为true，则AEM不会在该组件上生成任何包装器元素。
 * **`cq:htmlTag`节点：**此节点可以添加到组件下，并可以具有以下属性：
    * **`cq:tagName {String}`:**这可用于指定用于封装组件而不是默认DIV元素的自定义HTML标记。
    * **`class {String}`:**这可用于指定要添加到包装器的css类名称。
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 ## JSP {#jsp}
 
-当使用e或包 `cq:includ`含组 `sling:include`件时，AEM中的默认行为是使用DIV来包装元素。 但是，可以通过两种方式自定义此包装：
+使用e或包含组 `cq:includ`件 `sling:include`时，AEM中的默认行为是使用DIV来包装元素。 但是，可以通过两种方式自定义此包装：
 
 * 显式告诉AEM不要使用包装组件 `cq:noDecoration`。
 * 使用自定义HTML标签用／或包 `cq:htmlTag`装组 `cq:tagName` 件 `decorationTagName`。

@@ -11,31 +11,34 @@ content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 5%
 
 ---
 
 
 # 使用喜欢 {#using-liking}
 
-该 `Liking`组件是一个有用的工具，它允许用户对特定内容（如论坛内的评论）发表意见。 使用组 `Liking`件，成员选择心形图标以指示积极意见。
+该 `Liking`组件是一个有用的工具，它允许用户对特定内容（如论坛中的评论）发表意见。 使用组 `Liking`件，成员选择心形图标以表示积极的意见。
 
-## 向页面添加喜欢 {#adding-liking-to-a-page}
+## 为页面添加喜欢 {#adding-liking-to-a-page}
 
-要在创作模 `Liking` 式下将组件添加到页面，请使用组件浏览器查找
+要在创作模 `Liking` 式下将组件添加到页面，请使用组件浏览器来查找
 
 * `Communities / Liking`
 
-并将其拖动到页面上的位置，如相对于用户喜欢的功能的位置。
+并将其拖动到页面上的位置，如用户喜欢的功能的相对位置。
 
 有关必要的信息，请访 [问社区组件基础](basics.md)。
 
-当包含 [所需的客户端库时](essentials-liking.md#essentials-for-client-side) ，组件的显示方式 `Liking` 就是这样的。
+当包 [含所需的客户端库](essentials-liking.md#essentials-for-client-side) ，组件的显示 `Liking` 方式即为此。
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
-## 配置喜好 {#configuring-liking}
+## 配置喜欢 {#configuring-liking}
 
-选择要访问 `Liking` 的已放置组件，然后选择打 `Configure` 开编辑对话框的图标。
+选择要访问的 `Liking` 已放置组件，然后选择打 `Configure` 开编辑对话框的图标。
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -43,22 +46,28 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL 正向响应标签]**(*必需*)正向响应的属性名称。
+* **[!UICONTROL 正面响应标签]**
+(
+*必需*)正响应的属性名称。
 
-* **[!UICONTROL 负响应标签]**(*必需*)负响应的属性名称。
+* **[!UICONTROL 负面响应标签]**
+(
+*必需*)负响应的属性名称。
 
-* **[!UICONTROL Tally Name]**(*必需*)此投票组件的实例的内部可识别属性名称。
+* **[!UICONTROL 标签名称]**
+(
+*必需*)此投票组件实例的内部可识别属性名称。
 
-## 网站访客体验 {#site-visitor-experience}
+## 站点访客体验 {#site-visitor-experience}
 
 ### 成员 {#members}
 
-会员可随时更改其类似内容。
+会员可随时更改其类型。
 
 ### 匿名 {#anonymous}
 
-不支持匿名喜欢。 站点访问者必须注册（成为会员）并登录以参与喜欢。
+不支持匿名喜欢。 站点访客必须注册（成为会员）并登录以参与喜欢活动。
 
 ## 附加信息 {#additional-information}
 
-有关更多信息，请参阅开发 [人员的“赞](essentials-liking.md) Essentials”页。
+有关更多信息，请参阅开发 [人员的](essentials-liking.md) “喜欢基本工具”页。

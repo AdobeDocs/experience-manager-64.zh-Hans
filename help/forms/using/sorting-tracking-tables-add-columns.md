@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 2%
 
 ---
 
 
 # 自定义跟踪表{#customize-tracking-tables}
 
-AEM Forms工作区中的跟踪选项卡用于显示涉及登录用户的进程实例的详细信息。 要视图跟踪表，请首先在左窗格中选择进程名称，以便在中间窗格中查看其实例的列表。 选择一个进程实例，以在右侧窗格中查看由此实例生成的任务表。 默认情况下，表列显示以下任务属性(任务模型中的相应属性在括号中给出):
+AEM Forms工作区中的跟踪选项卡用于显示涉及登录用户的进程实例的详细信息。 要视图跟踪表，请首先在左窗格中选择进程名称，以在中间窗格中查看其实例的列表。 选择一个进程实例，在右窗格中看到由此实例生成的任务表。 默认情况下，表列显示以下任务属性(任务模型中的相应属性在括号中给出):
 
 * ID ( `taskId`)
 * 名称 ( `stepName`)
@@ -26,7 +29,7 @@ AEM Forms工作区中的跟踪选项卡用于显示涉及登录用户的进程�
 * 完成时间( `completeTime`)
 * 所有者 ( `currentAssignment.queueOwner`)
 
-任务模型中剩余的可在任务表中显示的属性有：
+任务模型中可用于显示在任务表中的其余属性为：
 
 <table> 
  <tbody> 
@@ -66,7 +69,7 @@ AEM Forms工作区中的跟踪选项卡用于显示涉及登录用户的进程�
    <td><p>showACLAactions</p> </td> 
   </tr> 
   <tr> 
-   <td><p>截止期限</p> </td> 
+   <td><p>截止时间</p> </td> 
    <td><p>numForms</p> </td> 
    <td><p>showDirectActions</p> </td> 
   </tr> 
@@ -113,7 +116,7 @@ AEM Forms工作区中的跟踪选项卡用于显示涉及登录用户的进程�
  </tbody> 
 </table>
 
-对于任务表中的以下自定义，您需要在源代码中进行语义更改。 请参 [阅自定义AEM Forms工作区简介](/help/forms/using/introduction-customizing-html-workspace.md) ，了解如何使用工作区SDK进行语义更改并从更改的源中构建简化的包。
+对于任务表中的以下自定义项，您需要在源代码中进行语义更改。 请参 [阅自定义AEM Forms工作区](/help/forms/using/introduction-customizing-html-workspace.md) （简介），了解如何使用工作区SDK进行语义更改并从更改的源构建精简的包。
 
 ## 更改表列及其顺序 {#changing-table-columns-and-their-order}
 
@@ -151,11 +154,11 @@ AEM Forms工作区中的跟踪选项卡用于显示涉及登录用户的进程�
    </table>
    ```
 
-## 对跟踪表进行排序 {#sorting-a-tracking-table}
+## 对跟踪表排序 {#sorting-a-tracking-table}
 
-要在单击列标题时对任务列表表进行排序，请执行以下操作：
+要在单击列标题时对任务列表表进行排序：
 
-1. 在文件中注册一个 `.fixedTaskTableHeader th` 单击处理程序 `js/runtime/views/processinstancehistory.js`。
+1. 在文件中注册一个 `.fixedTaskTableHeader th` 单击处理程 `js/runtime/views/processinstancehistory.js`序。
 
    ```as3
    events: {
@@ -165,7 +168,7 @@ AEM Forms工作区中的跟踪选项卡用于显示涉及登录用户的进程�
    }
    ```
 
-   在处理函数中，调用 `onTaskTableHeaderClick` 的函数 `js/runtime/util/history.js`。
+   在处理函数中，调 `onTaskTableHeaderClick` 用函数 `js/runtime/util/history.js`。
 
    ```as3
    onTaskTableHeaderClick: function (event) {
@@ -173,11 +176,11 @@ AEM Forms工作区中的跟踪选项卡用于显示涉及登录用户的进程�
    }
    ```
 
-1. 在中公 `TaskTableHeaderClick` 开该方法 `js/runtime/util/history.js`。
+1. 在中 `TaskTableHeaderClick` 显示方 `js/runtime/util/history.js`法。
 
    该方法从单击任务中查找事件属性，对该属性的任务列表进行排序，并使用排序的任务列表呈现任务表。
 
-   通过提供比较器函数，使用任务列表集合上的骨干排序函数来进行排序。
+   通过提供比较器函数，使用任务列表集合上的“骨干”排序功能进行排序。
 
    ```as3
        return {

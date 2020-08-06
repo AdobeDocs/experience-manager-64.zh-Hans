@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1935'
+ht-degree: 87%
 
 ---
 
@@ -76,7 +79,7 @@ This structure can be viewed from the Websites console, which you can use to [na
 
 在创建新页面时，需填写以下两个关键字段：
 
-* **[标题](#title)**:
+* **[标题](#title)**：
 
    * 它会在控制台中向用户显示并在编辑中的页面内容顶部显示。
    * 此字段为必填字段。
@@ -88,19 +91,19 @@ This structure can be viewed from the Websites console, which you can use to [na
 
 When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and JCR.
 
-根据UI，实现和允许的字符列表略有不同（触屏优化UI的范围更广），但允许的最小值是：
+Implementation and the list of characters allowed differs slightly according to UI (it is more extensive for the touch-enabled UI), but the minimum allowed is:
 
 * 从“a”到“z”
 * 从“A”到“Z”
 * 从“0”到“9”
 * _（下划线）
-* `-` （连字符／减号）
+* `-`（连字符/减号）
 
 如果您要确保名称能被接受/使用，就只能使用这些字符（如果您需要所有允许字符的完整详细信息，请参阅[命名惯例](/help/sites-developing/naming-conventions.md)）。
 
 #### 标题 {#title}
 
-如果您在创建新页面时仅提供页面&#x200B;**标题**，则 AEM 将从此字符串派生页面&#x200B;**名称**[，并根据 AEM 和 JCR 实行的约定验证该名称。](/help/sites-developing/naming-conventions.md)在这两个 UI 中，包含无效字符的&#x200B;**标题**&#x200B;字段将被接受，不过派生的名称将把无效的字符替换掉。例如：
+如果您在创建新页面时只提供一个页面&#x200B;**标题**，AEM 将从此字符串派生页面&#x200B;**名称**[，并依据 AEM 和 JCR 实行的惯例验证此名称。](/help/sites-developing/naming-conventions.md)在这两个 UI 中，包含无效字符的&#x200B;**标题**&#x200B;字段将被接受，不过派生的名称将把无效的字符替换掉。例如：
 
 | 标题 | 派生的名称 |
 |---|---|
@@ -109,7 +112,7 @@ When creating a new page, AEM will [validate the page name according to the conv
 
 #### 名称 {#name}
 
-如果您在创建新页面时提供页面&#x200B;**名称**，AEM 将依据 AEM 和 JCR 实行的惯例[验证此名称](/help/sites-developing/naming-conventions.md)。
+如果您在创建新页面时提供页面&#x200B;**名称**[，AEM 将依据 AEM 和 JCR 实行的惯例验证此名称。](/help/sites-developing/naming-conventions.md)
 
 In the Classic UI you **cannot enter invalid characters** in the **Name** field.
 
@@ -141,7 +144,7 @@ AEM 附带了一些现成的模板。预提供的模板取决于各个网站，�
 
 ### 组件 {#components}
 
-组件是AEM提供的元素，以便您能够添加特定类型的内容。AEM附带一系列现成组件，它们提供了全面的功能；包括：
+组件是AEM提供的元素，以便您能够添加特定类型的内容。 AEM附带一系列现成组件，它们提供全面的功能； 包括：
 
 * 文本
 * 图像
@@ -226,6 +229,7 @@ Once you have created and opened a page you can [add content using the component
 
    * **粘贴** - 粘贴页面以及所有子页面
    * **Shift + 粘贴** - 仅粘贴选定页面
+
    将在新位置粘贴页面。
 
    >[!NOTE]
@@ -328,7 +332,7 @@ AEM 还有一项功能是允许您更新指向重命名或被移动页面的内�
 >文件夹也需遵循在指定新文件夹名称时用到的[页面命名惯例](#page-naming-conventions)。
 
 1. 打开&#x200B;**网站**&#x200B;控制台并导航到所需的位置。
-1. ****&#x200B;在新 **增……菜单(单击“新建……”**&#x200B;旁边的箭头&#x200B;**)，选择“**&#x200B;新建文件夹……”。.
+1. In the **New...** menu (click the arrow next to **New...**), select **New Folder...**.
 1. 此时将打开&#x200B;**创建文件夹**&#x200B;对话框。您可在此输入&#x200B;**名称**&#x200B;和&#x200B;**标题**：
 
    ![chlimage_1-152](assets/chlimage_1-152.png)

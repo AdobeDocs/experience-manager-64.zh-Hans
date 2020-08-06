@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## 简介 {#introduction}
 
-AEM 6中的“操作”仪表板可帮助系统操作员一览地监视AEM系统运行状况。 它还提供有关AEM相关方面的自动生成的诊断信息，并允许配置和运行自包含的维护自动化，从而显着减少项目操作和支持案例。 “操作”仪表板可通过自定义运行状况检查和维护任务进行扩展。 此外，操作仪表板数据可通过JMX从外部监视工具访问。
+AEM 6中的运营仪表板帮助系统运营商一览表地监控AEM系统的运行状况。 它还提供AEM相关方面的自动生成的诊断信息，允许配置和运行自包含的维护自动化，以显着减少项目操作和支持案例。 “操作”仪表板可通过自定义运行状况检查和维护任务进行扩展。 此外，操作仪表板数据可通过JMX从外部监视工具访问。
 
 **运营仪表板:**
 
@@ -31,7 +31,7 @@ AEM 6中的“操作”仪表板可帮助系统操作员一览地监视AEM系统
 * 缩短查找、分析和修复问题的时间
 * 提供自带的维护自动化功能，有助于显着降低项目运营成本
 
-可以从AEM欢迎屏幕转 **到工** 具 **-** 操作，访问它。
+可从AEM欢迎屏幕转 **至****工** 具——操作。
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ AEM 6中的“操作”仪表板可帮助系统操作员一览地监视AEM系统
 
 健康 **报告** (Health Reports)是一个卡片系统，表明特定产品区域的健康状况是否良好。 这些卡是Sling运行状况检查的可视化功能，它将来自JMX和其他来源的数据聚合，并再次以MBean的身份显示处理的信息。 这些MBean还可在JMX Web控 [制台中](/help/sites-administering/jmx-console.md)，在 **org.apache.sling.healthcheck域下进行检查** 。
 
-运行状况报告界面可通过AEM欢迎屏 **幕上的** 工具 **-** 操作 **-** 运行状况报告，或直接通过以下URL进行访问：
+健康报告界面可通过AEM欢迎屏 **幕上的** 工具 **-** 操作 **-** 健康报告菜单访问，或直接通过以下URL访问：
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
@@ -184,7 +184,7 @@ AEM 6中有两种类型的运行状况检查：
    >
    >例如，如果您创建单个安全运行状况检查，您只需将其分配为“**security**”标记，它就会安装，它将自动显示在“操作”仪表板的“安全检查”组合检查下。
 
-### AEM附带的运行状况检查 {#health-checks-provided-with-aem}
+### 随AEM提供的运行状况检查 {#health-checks-provided-with-aem}
 
 <table> 
  <tbody> 
@@ -194,7 +194,7 @@ AEM 6中有两种类型的运行状况检查：
   </tr> 
   <tr> 
    <td>查询性能</td> 
-   <td><p>此运行状况检查在AEM <strong>6.4中已得</strong>到简化 <code>Oak QueryStats</code> ，现在可以检查最近重构的 <code>SlowQueries </code>MBean，更确切地说是属性。 如果统计数据包含任何慢速查询，运行状况检查将返回警告。 否则，返回“确定”状态。<br /> </p> <p>此运行状况检查的 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">MBean为org.apache.sling.healthcheck:name=querysStatus,type=HealthCheck</a>。</p> </td> 
+   <td><p>此运行状况检查在AEM <strong>6.4中已得到简</strong>化 <code>Oak QueryStats</code> ，现在可以检查最近重构的MBean <code>SlowQueries </code>，更确切地说是属性。 如果统计数据包含任何慢速查询，运行状况检查将返回警告。 否则，返回“确定”状态。<br /> </p> <p>此运行状况检查的 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">MBean为org.apache.sling.healthcheck:name=querysStatus,type=HealthCheck</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>观察队列长度</td> 
@@ -202,7 +202,7 @@ AEM 6中有两种类型的运行状况检查：
     <ul> 
      <li>如果值超过值 <code>queueSize</code> (即事件 <code>maxQueueSize</code> 将被删除时)，则返回关键状态</li> 
      <li>返回警告， <code>queueSize</code> 如果值超 <code>maxQueueSize * WARN_THRESHOLD</code> 过（默认值为0.75） </li> 
-    </ul> <p>每个队列的最大长度来自不同的配置（Oak和AEM），不能通过此运行状况检查进行配置。 此运行状况检查的 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">MBean为org.apache.sling.healthcheck:name=OpercationQueueLengthHealthCheck,type=HealthCheck</a>。</p> </td> 
+    </ul> <p>每个队列的最大长度来自不同的配置(Oak和AEM)，不能通过此运行状况检查进行配置。 此运行状况检查的 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">MBean为org.apache.sling.healthcheck:name=OpercationQueueLengthHealthCheck,type=HealthCheck</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>查询遍历限制</td> 
@@ -233,7 +233,7 @@ AEM 6中有两种类型的运行状况检查：
        <li>如果45分钟前不到，则返回“OK”状态 </li> 
       </ul> </li> 
      <li>如果没有满足这些条件，则返回“确定”状态</li> 
-    </ul> <p>“严重”和“警告”状态阈值均可配置。 此运行状况检查的 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">Mbean为org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>。</p> <p><strong>注意： </strong>此运行状况检查在AEM 6.4中可用，并已支持到AEM 6.3.0.1。</p> </td> 
+    </ul> <p>“严重”和“警告”状态阈值均可配置。 此运行状况检查的 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">Mbean为org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>。</p> <p><strong>注意： </strong>此运行状况检查可在AEM 6.4中使用，并已支持AEM 6.3.0.1。</p> </td> 
   </tr> 
   <tr> 
    <td>大型 Lucene 索引</td> 
@@ -250,8 +250,8 @@ AEM 6中有两种类型的运行状况检查：
      <li>每个维护任务都伴有相关的运行状况检查</li> 
      <li>如果任务未添加到维护窗口，其运行状况检查将返回“关键”</li> 
      <li>您需要配置“审核日志”和“工作流清除”维护任务，或者以其他方式从维护窗口中删除它们。 如果未配置，这些任务在首次尝试运行时将失败，因此系统维护检查将返回“关键”状态。</li> 
-     <li><strong>在AEM 6.4中</strong>，还检查Lucene二进制文 <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">件维护任务</a></li> 
-     <li>在AEM 6.2和更低版本上，系统维护检查会在启动后立即返回警告状态，因为任务从不运行。 从6.3开始，如果尚未到达第一个维护窗口，他们将返回“OK（正常）”。</li> 
+     <li><strong>在AEM 6.4中</strong>，还有检查Lucene二进制文 <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">件维护任务</a></li> 
+     <li>在AEM 6.2和更低版本上，系统维护检查会在启动后立即返回“警告”状态，因为任务从不运行。 从6.3开始，如果尚未到达第一个维护窗口，他们将返回“OK（正常）”。</li> 
     </ul> <p>此运行状况检查的 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">MBean为org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -373,7 +373,7 @@ AEM 6中有两种类型的运行状况检查：
    }
    ```
 
-1. 在AEM服务器上添加已用内存的服务：
+1. 为AEM服务器上的已用内存添加服务：
 
    ```xml
    define service {
@@ -403,7 +403,7 @@ AEM 6中有两种类型的运行状况检查：
 * 能够访问堆和线程转储
 * 请求和查询性能分析器
 
-您可以从AEM欢迎屏幕转到工具- **操作——诊断，来进入** “诊断工具”屏幕。 您还可以通过直接访问以下URL来访问屏幕： `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
+通过从AEM欢迎屏幕转到工具——操 **作——诊断** ，可以进入诊断工具屏幕。 您还可以通过直接访问以下URL来访问屏幕： `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
 ![chlimage_1-418](assets/chlimage_1-418.png)
 
@@ -438,7 +438,7 @@ AEM 6中有两种类型的运行状况检查：
 
 >[!NOTE]
 >
->**在AEM 6.4中**，维护任务在INFO级别以更多信息丰富格式注销。 这允许更好地了解维护任务的状态。
+>**在AEM 6.4中**，维护任务在INFO级别以更多信息的丰富格式从开箱即用。 这允许更好地了解维护任务的状态。
 >
 >如果您使用第三方工具（如Splunk）来监视和维护任务活动并做出响应，则可以使用以下日志语句：
 
@@ -483,7 +483,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 对于任何给定查询,Oak都会尝试根据存储库中oak:index节点下定义的Oak索引找到最 **佳执行方** 法。 根据查询,Oak可以选择不同的索引。 了解Oak如何执行查询是优化查询的第一步。
 
-Explain查询是一个工具，用于说明Oak如何执行查询。 可以从AEM欢迎屏幕转 **到工具——操作** -诊断，然后单击 **查询性能** ，并切换到解 **释查询选项卡** 。
+Explain查询是一个工具，用于说明Oak如何执行查询。 可以从AEM欢迎屏 **幕访问工具** -操作——诊断，然后单击 **查询性能** ，切换至解 **释查询选项卡** 。
 
 **功能**
 
@@ -538,7 +538,7 @@ UI可用于通过在屏幕左上角的搜索框中键入筛选条件来筛选表
 
 “自动维护任务”页是一个位置，您可以在该页视图和跟踪计划定期执行的推荐维护任务。 任务与运行状况检查系统集成。 任务也可以从界面手动执行。
 
-要转到“操作”仪表板的“维护”页，您需要从AEM欢迎屏幕转 **到“工具”-“操作”-“仪表板”** -“维护”，或直接转到以下链接：
+要转到“操作”仪表板的“维护”页，您需要从AEM欢迎屏幕 **转到“工具”-“操作”-“仪表板** ”-“维护”，或直接访问以下链接：
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
@@ -564,7 +564,7 @@ UI可用于通过在屏幕左上角的搜索框中键入筛选条件来筛选表
 
 >[!NOTE]
 >
->自AEM 6.1起，还可以将现有维护窗口配置为每月运行一次。
+>由于AEM 6.1，现有维护窗口也可配置为每月运行。
 
 ### 修订清理 {#revision-clean-up}
 
@@ -577,9 +577,9 @@ UI可用于通过在屏幕左上角的搜索框中键入筛选条件来筛选表
 虽然开发维护任务是为了减少与Lucene相关的修改垃圾，但运行任务时总体效率有所提高：
 
 * 每周执行数据存储垃圾收集任务将更快完成
-* 它还可以略微提高AEM的整体性能
+* 它还可以略微改善AEM的整体性能
 
-您可以从以下位置访问Lucene二进制文件清除任务: **AEM >工具>操作>维护>每日维护窗口> Lucene二进制文件清理**。
+您可以从以下位置访问Lucene二进制文件清除任务: **AEM >“工具”>“操作”>“维护”>“每日维护窗口”>“Lucene二进制清除**”。
 
 ### 数据存储垃圾收集 {#data-store-garbage-collection}
 

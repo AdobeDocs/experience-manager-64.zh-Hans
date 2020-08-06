@@ -24,27 +24,27 @@ ht-degree: 0%
 
 本教程是创建您的第一个 [交互式通信系列中的一个](/help/forms/using/create-your-first-interactive-communication.md) 步骤。 建议按照时间顺序按照系列来了解、执行和演示完整的教程用例。
 
-要创建交互式通信，您必须在AEM服务器上提供适用于打印和Web渠道的模板。
+要创建交互式通信，必须在AEM服务器上提供用于打印和Web渠道的模板。
 
-打印渠道的模板在Adobe Forms Designer中创建并上传到AEM服务器。 然后，这些模板便可在创建交互式通信时使用。
+打印渠道的模板在AdobeForms设计器中创建并上传到AEM服务器。 然后，这些模板便可在创建交互式通信时使用。
 
 Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建、编辑和启用Web模板。 创建并启用这些模板后，即可在创建交互式通信时使用。
 
 本教程将指导您逐步创建用于打印和Web渠道的模板，以便在创建交互式通信时使用它们。 在本教程的结尾，您将能够：
 
-* 使用Adobe Forms Designer创建用于打印渠道的XDP模板
-* 将XDP模板上传到AEM Forms Server
+* 使用AdobeForms设计器创建用于印刷渠道的XDP模板
+* 将XDP模板上传到AEM Forms服务器
 * 创建并启用Web渠道的模板
 
 ## 为打印渠道创建模板 {#create-template-for-print-channel}
 
 使用以下渠道创建和管理交互式通信的打印任务的模板：
 
-* [使用Forms Designer创建XDP模板](/help/forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
+* [使用Forms设计器创建XDP模板](/help/forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
 * [将XDP模板上传到AEM Forms服务器](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
 * [为布局片段创建XDP模板](/help/forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
 
-### 使用Forms Designer创建XDP模板 {#create-xdp-template-using-forms-designer}
+### 使用Forms设计器创建XDP模板 {#create-xdp-template-using-forms-designer}
 
 根据用 [例和解剖](/help/forms/using/create-your-first-interactive-communication.md) 结构 [,](/help/forms/using/planning-interactive-communications.md)在XDP模板中创建以下子表单：
 
@@ -62,7 +62,7 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 
 执行以下步骤以为打印渠道创建XDP模板：
 
-1. 打开表单设计器，选择 **文件** >新 **建** > **使用空白表单，点按下一** 个，然后点按， ******** 完成打开表单以创建模板。
+1. 打开Forms设计器，选 **择“文件** ” > **“新建** ” > **使用空白表单，点按下一个，然********** 后点按，然后点按以打开表单以创建模板。
 
    确保从“窗 **口”菜单****中选** 择“对象 **库”和“对** 象”选项。
 
@@ -113,18 +113,18 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 
 ### 将XDP模板上传到AEM Forms服务器 {#upload-xdp-template-to-the-aem-forms-server}
 
-在使用表单设计器创建XDP模板后，必须将其上传到AEM Forms服务器，以便该模板在创建交互式通信时可供使用。
+在使用Forms设计器创建XDP模板后，必须将其上传到AEM Forms服务器，以便在创建交互通信时使用该模板。
 
-1. 选择 **[!UICONTROL “表单]** ”> **[!UICONTROL “表单和文档]**”。
+1. 选择 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
 1. 点按 **创建** > **文件上传**。
 
-   导航并选 **择create_first_ic_print_template** (XDP)模板，然 **后点按打** 开，将XDP模板导入AEM Forms服务器。
+   导航并选择 **create_first_ic_print_template** (XDP)模板，然后点按 **打开** ，将XDP模板导入到AEM Forms服务器。
 
 ### 为布局片段创建XDP模板 {#create-xdp-template-for-layout-fragments}
 
-要为交互通信的“打印”渠道创建布局片段，请使用Forms Designer创建XDP，然后将其上传到AEM Forms服务器。
+要为交互通信的打印渠道创建布局片段，请使用Forms设计器创建XDP并将其上传到AEM Forms服务器。
 
-1. 打开表单设计器，选择 **文件** >新 **建** > **使用空白表单，点按下一** 个，然后点按， ******** 完成打开表单以创建模板。
+1. 打开Forms设计器，选 **择“文件** ” > **“新建** ” > **使用空白表单，点按下一个，然********** 后点按，然后点按以打开表单以创建模板。
 
    确保从“窗 **口”菜单****中选** 择“对象 **库”和“对** 象”选项。
 
@@ -160,7 +160,7 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
    1. 从“ **另存为****类型”下拉列表** 中选择。xdp。
    1. 点按&#x200B;**保存**。
 
-   在使用Forms Designer为布局片段创建XDP模板后，必须将 [其上](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) 传到AEM Forms服务器，以便在创建布局片段时可以使用该模板。
+   在使用Forms设计器为布局片段创建XDP模板后，必须将 [其上](/help/forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) 传到AEM Forms服务器，以便在创建布局片段时使用该模板。
 
 ## 创建Web渠道模板 {#create-template-for-web-channel}
 

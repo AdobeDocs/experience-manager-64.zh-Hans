@@ -1,8 +1,8 @@
 ---
 title: 使用 Dynamic Media
 seo-title: 使用 Dynamic Media
-description: 了解如何使用Dynamic media交付资产以在Web、移动和社交网站上消费。
-seo-description: 了解如何使用Dynamic media交付资产以在Web、移动和社交网站上消费。
+description: 了解如何使用Dynamic Media交付资产以在Web、移动设备和社交网站上消费。
+seo-description: 了解如何使用Dynamic Media交付资产以在Web、移动设备和社交网站上消费。
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 translation-type: tm+mt
 source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+workflow-type: tm+mt
+source-wordcount: '458'
+ht-degree: 48%
 
 ---
 
@@ -23,13 +26,13 @@ Dynamic Media 可提供交互式查看体验，包括缩放、360 度旋转和�
 
 >[!NOTE]
 >
->有关使用Adobe Experience manager和 [Dynamic Media的信息，请参阅社区文章](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)。
+>有关使用Adobe Experience Manager和动态媒 [体的信息，请参阅社区文章](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)。
 
 ## Dynamic Media 的功能 {#what-you-can-do-with-dynamic-media}
 
 通过 Dynamic Media，您可以在发布资产前对其进行管理。[处理数字资产](managing-assets-touch-ui.md)详细介绍了资产的一般处理方式。一般主题包括上传、下载、编辑和发布资产；查看和编辑属性，以及搜索资产。
 
-仅限Dynamic media的功能包括：
+仅限Dynamic Media的功能包括：
 
 * [传送横幅](carousel-banners.md)
 * [图像集](image-sets.md)
@@ -48,17 +51,17 @@ Dynamic Media 可提供交互式查看体验，包括缩放、360 度旋转和�
 
 >[!NOTE]
 >
->要了解使用Dynamic Media与将Dynamic Media Classic与AEM集成之间的差异，请参阅 [Dynamic Media Classic与Dynamic Media的集成](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)。
+>要了解使用Dynamic Media与将Dynamic Media Classic与AEM集成之间的区别，请参 [阅Dynamic Media Classic与Dynamic Media集成](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)。
 
 ## 启用Dynamic Media与禁用Dynamic Media {#dynamic-media-on-versus-dynamic-media-off}
 
-您可以通过以下特征判断是否启用（打开）Dynamic Media:
+您可以通过以下特征判断Dynamic Media是否已启用（打开）:
 
-* 在下载或预览资产时，动态演绎版可用。
+* 在下载或预览资产时，可以使用动态演绎版。
 * 图像集、旋转集和混合媒体集均可用。
 * 创建了 PTIFF 演绎版。
 
-When you click an image asset, the view of the asset is different with Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic media使用HTML5点播查看器。
+When you click an image asset, the view of the asset is different with Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media使用HTML5点播查看器。
 
 ### Dynamic renditions {#dynamic-renditions}
 
@@ -84,6 +87,6 @@ With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` 
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
-禁用Dynamic Media后，您可以放大和缩小并恢复到原始大小：
+禁用Dynamic Media后，您可以放大和缩小并还原到原始大小：
 
 ![chlimage_1-362](assets/chlimage_1-362.png)

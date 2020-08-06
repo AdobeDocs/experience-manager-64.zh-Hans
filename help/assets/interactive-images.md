@@ -36,7 +36,7 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 ## Quick Start: Interactive Images {#quick-start-interactive-images}
 
-以下工作流分步说明旨在帮助您快速设置并运行AEM Assets中的交互式图像。
+以下工作流分步说明旨在帮助您在AEM Assets快速设置和运行交互式图像。
 
 请查找某些“快速入门”任务中的&#x200B;**示例**&#x200B;标题。它包含一个简短的教程，该教程基于尚未添加交互式图像的以下网页示例：
 
@@ -46,11 +46,11 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 **交互式图像工作流**:
 
-1. **（可选）识别热点变量** -如果您使用独立的AEM Assets和Dynamic Media，可以通过识别现有Quickview实施中使用的动态变量来开始，以便您在创建交互式图像时输入热点数据。 See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
+1. **（可选）识别热点变量** -如果您使用AEM Assets和Dynamic Media独立版本，可通过识别现有Quickview实施中使用的动态变量来开始，以便您在创建交互式图像时输入热点数据。 See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
 
    但是，如果您使用AEM Sites、AEM eCommerce或二者，则不必执行此步骤。
 
-   请参 [阅AEM Assets中的电子商务概念](/help/sites-administering/concepts.md)。
+   请参阅 [AEM Assets的电子商务概念](/help/sites-administering/concepts.md)。
 
 1. **（可选）创建交互式图像查看器预设** -自定义用于表示热点的图形图像。 如果您打算使用现成的名为的交互式图像查看器预设，则无需创建您自己的交互式图像查看器预 `Shoppable_Banner` 设。
 
@@ -68,10 +68,10 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
    * See [Publishing Assets](publishing-dynamicmedia-assets.md) for details on how to publish interactive image assets.
 
-1. **在AEM中将交互式图像添加到您的网站或您的网站**
+1. **将交互式图像添加到您的网站或AEM中的您的网站**
 
-   * 如果您使用AEM Sites、AEM电子商务或两者，则可以通过将交互式媒体组件拖动到页面上，将交互式图像直接添加到AEM中的网页。 See [Adding Dynamic Media Assets to Pages](adding-dynamic-media-assets-to-pages.md).
-   * 如果您使用独立AEM Assets和Dynamic Media，则必须在您的网站上复制嵌入代码，然后将其与现有Quickview集成。 See [Integrating an interactive image with your website](#integrating-an-interactive-image-with-your-website).
+   * 如果您使用AEM Sites、AEM电子商务或两者，则可以通过将交互式媒体组件拖动到页面上，将交互式图像直接添加到AEM的网页。 See [Adding Dynamic Media Assets to Pages](adding-dynamic-media-assets-to-pages.md).
+   * 如果您使用AEM Assets和Dynamic Media独立版本，则必须将嵌入代码复制到您的网站上，然后将其与现有Quickview集成。 See [Integrating an interactive image with your website](#integrating-an-interactive-image-with-your-website).
    * 如果您使用第三方WCM（Web内容管理器），则必须将新的交互式视频与网站上使用的现有Quickview实现相集成。 请参 [阅将交互式图像与现有概览相集成](#integrating-an-interactive-image-with-an-existing-quickview)。
 
 ## （可选）识别热点变量 {#optional-identifying-hotspot-variables}
@@ -81,15 +81,15 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 >仅当满足以下条件时，才需要此任务:
 >
 >* 您希望通过触发Quickviews向图像添加交互性。
->* 您的AEM实施不 *使用* eCommerce integration framework从任何电子商务解决方案（如IBM Websphere Commerce、Elastic Path、hybris或Intershop）将产品数据拉入AEM。 请参 [阅AEM Assets中的电子商务概念](/help/sites-administering/concepts.md)。
+>* 您的AEM实施不 *使用* eCommerce integration framework将产品数据从任何电子商务解决方案（如IBM Websphere Commerce、Elastic Path、hybris或Intershop）拉入AEM。 请参阅 [AEM Assets的电子商务概念](/help/sites-administering/concepts.md)。
 
 >
 >
-如果您的AEM实施使用电子商务，您可以跳过此任务并继续到下一个任务。
+如果您的AEM实施使用电子商务，则可以跳过此任务并继续到下一个任务。
 
 开始，识别现有Quickview实现所使用的动态变量，以便输入热点数据以创建交互式图像。
 
-在AEM Assets中向横幅图像添加热点时，您需要分配SKU(库存单位； 您所优惠的每个不同产品或服务的唯一标识符)以及每个热点的可选附加变量。 以后会使用这些热点变量将热点与概览内容相匹配。
+在AEM Assets向横幅图像添加热点时，您需要分配SKU(库存单位； 您所优惠的每个不同产品或服务的唯一标识符)以及每个热点的可选附加变量。 以后会使用这些热点变量将热点与概览内容相匹配。
 
 必须准确地识别要与热点数据相关联的变量数量及类型，这一点很重要。而且，添加到横幅图像的每个热点都必须附带足够的信息，以便能够在现有的后端系统中明确地识别产品。
 
@@ -278,7 +278,7 @@ d. （可选）要删除热点，请在图像上选择该热点，然后点按�
 
    * 点按 **[!UICONTROL 概览]**。
 
-      * 如果您是AEM Sites或电子商务客户，请点按 **[!UICONTROL 产品选取器]** 图标（放大镜）以打开“选 **[!UICONTROL 择产品]** ”页面。 点按要使用的产品，然后点 **[!UICONTROL 按页]** 面右上角的选择以返回“热点 **[!UICONTROL 管理”页]** 。
+      * 如果您是AEM Sites或电子商务客户，请点按 **[!UICONTROL 产品选取器]** 图标（放大镜）以打开 **[!UICONTROL 选择产品页]** 。 点按要使用的产品，然后点 **[!UICONTROL 按页]** 面右上角的选择以返回“热点 **[!UICONTROL 管理”页]** 。
       * 如果您不是 *AEM Sites* 或电子商务客户
 
          * 请参阅 [识别热点变量](#optional-identifying-hotspot-variables); 您需要定义这些变量。
@@ -286,7 +286,7 @@ d. （可选）要删除热点，请在图像上选择该热点，然后点按�
          * (Optional) If there are other variables within the Quickview that you need to use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. 在文本字段中，指定其他变量。 例如，`category=Mens` 就是一个添加的变量。
    * 点按&#x200B;**超链接**。
 
-      * 如果您是AEM Sites客户，请点按 **[!UICONTROL 站点选]** 择器图标（文件夹）以导航到URL。 请注意，如果您的交互式内容包含相对URL的链接，特别是指向AEM Sites页的链接，则无法使用基于URL的链接方法。
+      * 如果您是AEM Sites客户，请点 **[!UICONTROL 按站点]** 选择器图标（文件夹）以导航到URL。 请注意，如果您的交互式内容包含相对URL的链接，特别是指向AEM Sites页面的链接，则无法使用基于URL的链接方法。
       * 如果您是独立客户，请在“HREF **[!UICONTROL ”文本]** 字段中，指定链接网页的完整URL路径。
 
       请确保指定是在新的浏览器选项卡（建议使用默认选项卡）还是在同一选项卡中打开链接。
@@ -295,7 +295,7 @@ d. （可选）要删除热点，请在图像上选择该热点，然后点按�
 
    * Tap **Experience Fragment**.
 
-      * 如果您是AEM Sites客户，请点按 **[!UICONTROL 搜索]** 图标（放大镜）以打 **[!UICONTROL 开体验片段]** 。 点按要使用的体验片段，然 **[!UICONTROL 后点]** 按页面右上角的选择以返回到热点管理页面。
+      * 如果您是AEM Sites客户，请点 **[!UICONTROL 击搜]** 索图标（放大镜）以打 **[!UICONTROL 开体验片段]** 。 点按要使用的体验片段，然 **[!UICONTROL 后点]** 按页面右上角的选择以返回到热点管理页面。
 
          请参 [阅体验片段](/help/sites-authoring/experience-fragments.md)。
          >[!NOTE]
@@ -324,7 +324,7 @@ d. （可选）要删除热点，请在图像上选择该热点，然后点按�
 
 当您对交互式图像感到满意时，您可以发布该图像。\
 请参阅[在网页上嵌入视频查看器或图像查看器](embed-code.md)。\
-请参阅[将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)。请注意，如果您的交互式内容包含相对URL的链接，特别是指向AEM Sites页的链接，则无法使用基于URL的链接方法。\
+请参阅[将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)。请注意，如果您的交互式内容包含相对URL的链接，特别是指向AEM Sites页面的链接，则无法使用基于URL的链接方法。\
 See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
 
 **要预览交互式图像**:
@@ -342,7 +342,7 @@ See [Publishing Assets](publishing-dynamicmedia-assets.md) for details on how to
 
 在上传横幅图像、将热点添加到图像并发布交互式图像后，您现在可以将其添加到网站页面。
 
-如果您是AEM Sites客户，则可以通过将交互式媒体组件拖到页面上来添加交互式图像。 See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
+如果您是AEM Sites的客户，则可以通过将交互式媒体组件拖到页面上来添加交互式图像。 See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
 
 如果您是独立的AEM Assets客户，则可以按本节所述手动将交互式图像添加到您的网站。
 
@@ -386,7 +386,7 @@ To apply a crop to a shoppable interactive image for a responsive environment, y
 
 >[!NOTE]
 >
->此任务仅在您是独立AEM Assets客户时适用。
+>此任务仅在您是独立的AEM Assets客户时适用。
 
 该过程的最后一步是将交互式图像与网站上现有的Quickview实施相集成。 但是，没有任何一种集成解决方案是在所有情况下都适用的。每个Quickview实施都是独一无二的，需要一种特定的方法，最可能需要前端IT人员的协助。
 

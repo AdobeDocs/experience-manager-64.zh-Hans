@@ -168,7 +168,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 要创建新转出配置，请执行以下操作：
 
-1. 打开CRXDE Lite; 例如：
+1. 开放CRXDE Lite; 例如：
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. 导航至 :
@@ -219,7 +219,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 添加类型的子节 `cq:LiveSyncAction` 点以向转出配置添加同步操作。 同步操作节点的顺序决定操作的发生顺序。
 
-1. 仍在CRXDE Lite中，选择您的转 [出配置节](#create-the-rollout-configuration) 点。
+1. 仍处于CRXDE Lite中，请选择您 [的转出配置](#create-the-rollout-configuration) 节点。
 
    例如：
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
@@ -549,7 +549,7 @@ GITHUB上的代码
 
 配置您在上一个过程中创建的转出配置，以便它使用 `ExampleLiveActionFactory` 类。
 
-1. 打开CRXDE Lite; 例如， [http://localhost:4502/crx/de](http://localhost:4502/crx/de)。
+1. 开放CRXDE Lite; 例如， [http://localhost:4502/crx/de](http://localhost:4502/crx/de)。
 1. 在下面创建以下节点 `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **名称**: `exampleLiveAction`
@@ -603,7 +603,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 
 ## 更改语言名称和默认国家／地区 {#changing-language-names-and-default-countries}
 
-AEM使用一组默认的语言和国家／地区代码。
+AEM使用默认的语言和国家代码集。
 
 * 默认语言代码是ISO-639-1定义的小写双字母代码。
 * 默认国家／地区代码是ISO 3166定义的小写或大写双字母代码。

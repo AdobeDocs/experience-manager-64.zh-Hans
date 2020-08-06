@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 93%
 
 ---
 
@@ -42,6 +45,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * [订阅通知](#subscribing-to-notifications)
    * [处理通知](#processing-your-notifications)
+
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
 ## 订阅通知 {#subscribing-to-notifications}
@@ -60,12 +64,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 单击左上角的&#x200B;**配置...** 以打开配置对话框。
 
-   ![screen_shot_2012-02-08at11056am](assets/screen_shot_2012-02-08at111056am.png)
+   ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
 
 1. 选择通知渠道：
 
    * **收件箱**：通知将显示在您的 AEM 收件箱中。
    * **电子邮件**：通知将通过电子邮件发送到您的用户个人资料中定义的电子邮件地址。
+
    >[!NOTE]
    >
    >需要配置一些设置，才能通过电子邮件通知。也可以自定义电子邮件模板，或针对新语言添加电子邮件模板。有关在 AEM 中配置电子邮件通知的信息，请参阅[配置电子邮件通知](/help/sites-administering/notification.md#configuringemailnotification)。
@@ -92,6 +97,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       要仅接收路径定义的页面上的操作通知，请将&#x200B;**是否精确？**&#x200B;设置为&#x200B;**是**。
 
    * 要允许该规则，请将&#x200B;**规则**&#x200B;设置为&#x200B;**允许**。如果设置为&#x200B;**拒绝**，则拒绝该规则，但不删除它，可在以后允许该规则。
+
    要删除定义，请单击表单元格来选择该行，并单击&#x200B;**删除**。
 
 1. 单击&#x200B;**确定**&#x200B;以保存配置。

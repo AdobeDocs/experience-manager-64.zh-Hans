@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 2%
 
 ---
 
 
 # Calendar Essentials {#calendar-essentials}
 
-本页提供有关使用日历功能的基本信息。
+此页提供有关使用日历功能的基本信息。
 
 ## 客户端必备工具 {#essentials-for-client-side}
 
@@ -63,17 +66,17 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ### 日历功能 {#calendar-function}
 
-包含“日历”功能的社区站 [点结构将具有](functions.md#calendar-function) 已配置的c `alendar`组件。 日历功能支持标识特权 [成员用户组](users.md#privileged-members-group)。
+包含“日历”功能的社 [区站点结构](functions.md#calendar-function) 将具有已配置的c `alendar`组件。 日历功能支持标识特 [权成员用户组](users.md#privileged-members-group)。
 
 ### 访问日历帖子(UGC) {#accessing-calendar-posts-ugc}
 
-自AEM 6.1 Communities起，对 [UGC使用公用商店](working-with-srp.md) ，包括对UGC的程序化访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）如何。
+自AEM 6.1社区起，使用UGC的公 [用商店](working-with-srp.md) ，包括以程序方式访问UGC，而不管选择的存储选项（如ASRP、MSRP或JSRP）。
 
 **UGC在存储库中的位置和格式可能会发生更改，但不会发出警告**。
 
 请参阅：
 
-* [存储资源提供者概述](srp.md) -介绍和存储库使用概述
+* [存储资源提供程序概述](srp.md) -简介和存储库使用概述
 * [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例
 * [使用SRP访问UGC](accessing-ugc-with-srp.md) —— 编码指南
 * [SocialUtils重构](socialutils.md) -将已弃用的实用程序方法映射到当前SRP实用程序方法

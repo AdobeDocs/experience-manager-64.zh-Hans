@@ -1,8 +1,8 @@
 ---
 title: 开发（通用）
 seo-title: 开发（通用）
-description: 集成框架包含带有API的集成层，允许您为电子商务功能构建AEM组件
-seo-description: 集成框架包含带有API的集成层，允许您为电子商务功能构建AEM组件
+description: 集成框架包含一个带有API的集成层，允许您为电子商务功能构建AEM组件
+seo-description: 集成框架包含一个带有API的集成层，允许您为电子商务功能构建AEM组件
 uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 该集成框架包含一个带有API的集成层。 这允许您为电子商务功能（独立于您的特定电子商务引擎）构建AEM组件。 它还允许您使用内部CRX数据库或插入电子商务系统并将产品数据拉入AEM。
 
-为使用集成层提供了许多现成的AEM组件。 目前有：
+提供了许多现成的AEM组件以使用集成层。 目前有：
 
 * 产品显示组件
 * 购物车
@@ -35,11 +35,11 @@ ht-degree: 0%
 * 结帐
 * 搜索
 
-对于搜索，会提供集成挂接，允许您使用AEM搜索、第三方搜索(如Search&amp;Promote)或其组合。
+为了搜索，提供了集成挂钩，它允许您使用AEM搜索、第三方搜索(如Search&amp;Promote)或其组合。
 
 ## 电子商务引擎选择 {#ecommerce-engine-selection}
 
-电子商务框架可以与任何电子商务解决方案一起使用，所使用的引擎需要由AEM进行标识——即使使用AEM通用引擎也是如此：
+电子商务框架可以与任何电子商务解决方案一起使用，所使用的引擎需要由AEM进行标识——即使使用AEM通用引擎时也是如此：
 
 * 电子商务引擎是支持接口的OSGi服 `CommerceService` 务
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 * 该属 `cq:commerceProvider` 性还用于引用相应的商务工厂定义。
 
-   * 例如，具有 `cq:commerceProvider` 值geometrixx的属性将与Day CQ Commerce Factory for Geometrixx-Outdoors()的 **OSGi配置相关联** -其中`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`参数也具有值 `commerceProvider``geometrixx`。
+   * 例如，具有 `cq:commerceProvider` 值geometrixx的属性将与Day CQ Commerce Factory for **Outdoors()的OSGi配置关联** -其中`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`参数也具有值 `commerceProvider``geometrixx`。
    * 此处还可以配置其他属性（如果适用并可用）。
 
 在标准AEM安装中，需要特定实施，例如：
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->使用CRXDE Lite，您可以在AEM通用实现的产品组件中查看如何处理该问题：
+>使用CRXDE Lite，您可以了解在AEM通用实施的产品组件中如何处理此问题：
 >
 >`/apps/geometrixx-outdoors/components/product`
 
@@ -125,7 +125,7 @@ CommerceSession ****:
 >
 >实际上，变型轴由任何返回决定 `Product.getVariantAxes()` :
 >
->* 对于通用实现，AEM从产品数据中的属性读取它( `cq:productVariantAxes`)
+>* 对于通用实现，AEM从产品数据()中的属性中读取该 `cq:productVariantAxes`数据
 >
 >
 虽然产品（通常）可以有许多变型轴，但现成的产品组件只处理两个：
@@ -135,7 +135,7 @@ CommerceSession ****:
 
 >
 >   
-通过产品引用的属性选 `variationAxis` 择此附加变体(通常适 `color` 用于Geometrixx Outdoors)。
+通过产品引用的属性选 `variationAxis` 择此附加变体(通常 `color` 用于Geometrixx Outdoors)。
 
 #### 产品引用和PIM数据 {#product-references-and-pim-data}
 
@@ -335,16 +335,16 @@ public class AxisFilter implements VariantFilter {
 
 * 存储
 
-   * 在AEM-generic case carts中，购物车存储在ClientContext [中](/help/sites-administering/client-context.md)
+   * 在AEM-generic case carts中，购物车存储在 [ClientContext](/help/sites-administering/client-context.md)
 
 **个性化**
 
-* 个性化应始终通过ClientContext [推动](/help/sites-administering/client-context.md)。
-* A ClientContext `/version/` of the cart is created in all cases:
+* 个性化应始终通过 [ClientContext](/help/sites-administering/client-context.md)。
+* AClientContext `/version/` of the cart is created in all cases:
 
    * 应使用该方法添加产 `CommerceSession.addCartEntry()` 品。
 
-* 以下说明了ClientContext购物车中购物车信息的示例：
+* 以下说明了ClientContext车中购物车信息的示例：
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -477,7 +477,7 @@ public class AxisFilter implements VariantFilter {
 
       * `DiscountPromotionHandler`，它应用购物车宽的绝对或百分比折扣
       * `PerfectPartnerPromotionHandler`，如果合作伙伴产品也在购物车中，则应用产品绝对或百分比折扣
-   * ClientContext解析 `SegmentMgr` 区段，ClientContext解析 `CartMgr` 促销。 将触发每个受至少一个已解析区段约束的促销。
+   * ClientContext解 `SegmentMgr` 析区段，ClientContext解析 `CartMgr` 促销。 将触发每个受至少一个已解析区段约束的促销。
 
       * Fired Promotions are sent back to the server an AJAX call to re-calculate the cart.
       * Fired Promotions(and added Vouchers)也显示在ClientContext面板中。

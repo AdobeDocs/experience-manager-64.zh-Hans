@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 92%
 
 ---
 
@@ -34,19 +37,23 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
 营销活动管理由多种元素组成：
 
 * **品牌**
-In AEM, brands are the top level unit and form a collection of **Campaigns**.
+在AEM中，品牌是顶级单位，并构成 
+**营销活动**.
 
-* **营销活动**&#x200B;营销活动是各个&#x200B;**体验**&#x200B;的集合。
+* **活动**&#x200B;活动是单个 
+**体验**.
 
-* **体验**&#x200B;有目标性的内容构成了各种体验，在&#x200B;**触点**&#x200B;呈现给访客。有若干类型的体验：
+* **体验**&#x200B;重点内容构成各种体验，呈现给访客: 
+**触点**. 有若干类型的体验：
 
    * **Teaser**
-      [Teaser页面／段落](#teasers) ，用于将特定访客区段定向 **** 到其感兴趣的内容。
+      [Teaser页面／段落](#teasers) 用于将特定访客 **段** 定向到其感兴趣的内容。
 
       Teaser 页面可以：
 
       * 呈现一系列选项以供访客选择
       * 仅显示一个基于特定访客段的 Teaser 段落；例如，显示的 Teaser 段落可能取决于访客的年龄。
+
       通常，Teaser 页面是一个临时操作，它将持续特定时间段，直到由下一个 Teaser 页面取代。
 
    * **新闻稿**

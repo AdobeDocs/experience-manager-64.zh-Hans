@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 74%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe不计划进一步增强此功能（管理潜在客户和列表）。\
->建议利用 [Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md)。
+>Adobe不打算进一步增强此功能(管理潜在客户和列表)。\
+>建议利用 [Adobe Campaign和AEM集成](/help/sites-administering/campaign.md)。
 
 Users can be asked to subscribe to **Email Service Provider&#39;s** mailing lists with the help of the **Form** component used on an AEM web page. 要准备一个包含注册表单的 AEM 页面以订阅您的电子邮件服务邮寄列表，您必须将相应的服务配置应用到潜在订阅者将会访问的 AEM 页面。
 

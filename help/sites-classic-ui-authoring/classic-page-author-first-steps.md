@@ -11,6 +11,9 @@ topic-tags: page-authoring
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
 
 它涵盖以下内容：
 
-* [入门](#getting-started):详细介绍创建和发布首个页面所需的一系列基本事件。
+* [入门](#getting-started): 详细介绍创建和发布首个页面所需的基本事件序列。
 
-* [其他操作](#further-actions):继续执行您在创作时可以使用的许多其他操作。
+* [其他操作](#further-actions): 继续执行您在创作时可以使用的许多其他操作。
 
 ## 入门 {#getting-started}
 

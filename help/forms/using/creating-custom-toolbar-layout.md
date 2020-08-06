@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 0%
 
 ---
 
@@ -18,39 +21,39 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 ## 工具栏布局 {#layout}
 
-在创建自适应表单时，可以为表单指定工具栏布局。 工具栏布局定义表单上的命令和工具栏的布局。
+创建自适应表单时，可以为表单指定工具栏布局。 工具栏布局定义表单上的命令和工具栏的布局。
 
-工具栏布局使用的工具严重依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 组织和优化此代码的服务可能是一个复杂的问题。 为了帮助解决此问题，AEM提供了客户端库文件夹，允许您在存储库中存储客户端代码，将其组织到类别中，并定义何时以及如何向客户端提供每类代码。 然后，客户端库系统负责在最终网页中生成正确的链接以加载正确的代码。 有关详细信息，请参 [阅客户端库在AEM中的工作方式。](/help/sites-developing/clientlibs.md)
+工具栏布局使用时严重依赖由复杂的JavaScript和CSS代码驱动的客户端处理。 组织和优化此代码的服务可能是一个复杂的问题。 为了帮助解决此问题，AEM提供了客户端库文件夹，允许您在存储库中存储客户端代码，将其组织到类别中，并定义何时以及如何将每个类别的代码提供给客户端。 然后，客户端库系统负责在最终网页中生成正确的链接以加载正确的代码。 有关详细信息，请 [参阅AEM中客户端库的工作方式。](/help/sites-developing/clientlibs.md)
 
-![](assets/default_toolbar_layout.png) 工具栏的示例布局&#x200B;****&#x200B;图：工 *具栏的示例布局*
+![工具栏布局示例](assets/default_toolbar_layout.png)**图：** *工具栏的示例布局*
 
-自适应表单提供一组开箱即用的布局：
+自适应表单提供一套现成的布局：
 
-![](assets/toolbar1.png) 开箱即用的工具栏布局图 ****:开 *箱即用的工具栏布局*
+![开箱即用的工具栏布局图 ](assets/toolbar1.png)**:** *开箱即用的工具栏布局*
 
 此外，您还可以创建自定义工具栏布局。
 
 以下过程详细介绍了创建自定义工具栏的步骤，该工具栏在工具栏中显示三个操作，在工具栏的下拉列表中显示其他操作。
 
-附加的内容包包含下面描述的整个代码。 安装内容包后，打开以 `/content/forms/af/CustomLayoutDemo.html` 查看自定义工具栏布局演示。
+附加的内容包包含下面描述的整个代码。 安装内容包后，打开以 `/content/forms/af/CustomLayoutDemo.html` 视图自定义工具栏布局演示。
 
 CustomToolbarLayoutDemo.zip
 
-[获取文件](assets/customtoolbarlayoutdemo.zip)Demo自定义工具栏布局
+[获取文件](assets/customtoolbarlayoutdemo.zip)演示自定义工具栏布局
 
 ## 创建自定义工具栏布局 {#layout-1}
 
 1. 创建文件夹以维护自定义工具栏布局。 例如：
 
-   `/apps/customlayout/toolbar`.
+   `/apps/customlayout/toolbar`。
 
    要创建自定义布局，您可以使用（和自定义）以下文件夹中可用的现成工具栏布局之一：
 
    `/libs/fd/af/layouts/toolbar`
 
-   例如，将该节点从 `mobileFixedToolbarLayout` 文件夹复制 `/libs/fd/af/layouts/toolbar` 到该文件 `/apps/customlayout/toolbar` 夹。
+   例如，将节点从 `mobileFixedToolbarLayout` 文件夹复 `/libs/fd/af/layouts/toolbar` 制到该文 `/apps/customlayout/toolbar` 件夹。
 
-   另外，将toolbarCommon.jsp复制到文件 `/apps/customlayout/toolbar` 夹。
+   同时，将toolbarCommon.jsp复制到文 `/apps/customlayout/toolbar` 件夹。
 
    >[!NOTE]
    >
@@ -58,19 +61,19 @@ CustomToolbarLayoutDemo.zip
 
 1. 将复制的节点重 `mobileFixedToolbarLayout`命名为 `customToolbarLayout.`
 
-   此外，请为节点提供相关描述。 例如，将节点的jcr:description更改为工具栏的 **自定义布局**。
+   此外，请为节点提供相关描述。 例如，将节点的jcr:description更改为工具栏 **的自定义布局**。
 
-   节 `guideComponentType` 点的属性决定布局类型。 在这种情况下，布局类型是工具栏，因此它会显示在工具栏布局选择下拉列表中。
+   节 `guideComponentType` 点的属性决定布局类型。 在这种情况下，布局类型为工具栏，因此它会显示在工具栏布局选择下拉列表中。
 
    ![具有相关描述的节点](assets/toolbar3.png)
 
    具有相关描述的节点
 
-   您的新自定义工具栏布局将显示在自适应表 **单工具栏对话框配** 置中。
+   您的新自定义工具栏布局将显示在自适应 **表单工具栏** 对话框配置中。
 
-   ![可用工具栏布局列表](assets/toolbar4.png)
+   ![列表可用工具栏布局](assets/toolbar4.png)
 
-   可用工具栏布局列表
+   列表可用工具栏布局
 
    >[!NOTE]
    >
@@ -78,13 +81,13 @@ CustomToolbarLayoutDemo.zip
 
 1. 选择此自定义工具栏布局，然后单击“确定”。
 
-   在节点中添加clientlib（javascript和css）, `/etc/customlayout` 并在中包含clientlib的引用 `customToolbarLayout.jsp`。
+   在节点中添加clientlib（javascript和css） `/etc/customlayout` ，并在中包含clientlib的引用 `customToolbarLayout.jsp`。
 
    ![customToolbarLayout.css文件的路径](assets/toolbar_3.png)
 
    customToolbarLayout.css文件的路径
 
-   样本 `customToolbarLayout.jsp`:
+   示例 `customToolbarLayout.jsp`:
 
    ```php
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -100,9 +103,9 @@ CustomToolbarLayoutDemo.zip
 
    >[!NOTE]
    >
-   >为布局添加指南工具栏类。 工具栏的现成样式是针对指导工具栏类定义的。
+   >为布局添加指南工具栏类。 工具栏的现成样式是根据指南工具栏类定义的。
 
-   样本 `toolBarCommon.jsp`:
+   示例 `toolBarCommon.jsp`:
 
    ```php
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>
@@ -223,4 +226,4 @@ CustomToolbarLayoutDemo.zip
 >
 >在上一步中更新的说明将显示在布局下拉列表中。
 
-![](assets/toolbar_1.png) 自定义布局工具栏的桌面视图&#x200B;****&#x200B;图：自定 *义布局工具栏的桌面视图*
+![自定义布局工具栏的桌面视图](assets/toolbar_1.png)**图：** *自定义布局工具栏的桌面视图*

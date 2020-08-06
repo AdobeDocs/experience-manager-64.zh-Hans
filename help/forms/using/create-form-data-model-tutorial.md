@@ -26,9 +26,9 @@ ht-degree: 0%
 
 ## 关于教程 {#about-the-tutorial}
 
-AEM Forms数据集成模块允许您从不同的后端数据源(如AEM用户用户档案、RESTful Web服务、基于SOAP的Web服务、OData服务和关系型数据库)创建表单数据模型。 您可以在表单数据模型中配置数据模型对象和服务，并将其与自适应表单关联。 自适应表单字段绑定到数据模型对象属性。 这些服务使您能够预填自适应表单并将提交的表单数据写入数据模型对象。
+AEM Forms数据集成模块允许您从AEM用户用户档案、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库等不同的后端数据源创建表单数据模型。 您可以在表单数据模型中配置数据模型对象和服务，并将其与自适应表单关联。 自适应表单字段绑定到数据模型对象属性。 这些服务使您能够预填自适应表单并将提交的表单数据写入数据模型对象。
 
-有关表单数据集成和表单数据模型的更多信息，请 [参阅AEM表单数据集成](data-integration.md)。
+有关表单数据集成和表单数据模型的更多信息，请参 [阅AEM Forms数据集成](data-integration.md)。
 
 本教程将指导您逐步准备、创建、配置表单数据模型并将其与交互式通信相关联。 在本教程的结尾，您将能够：
 
@@ -116,7 +116,7 @@ CREATE TABLE `calls` (
 
 ## 第2步： 将MySQL数据库配置为数据源 {#step-configure-mysql-database-as-data-source}
 
-您可以配置不同类型的数据源以创建表单数据模型。 在本教程中，您将配置已配置并填充示例数据的MySQL数据库。 有关其他受支持数据源以及如何配置数据源的信息，请 [参阅AEM Forms数据集成](data-integration.md)。
+您可以配置不同类型的数据源以创建表单数据模型。 在本教程中，您将配置已配置并填充示例数据的MySQL数据库。 有关其他受支持数据源以及如何配置数据源的信息，请参 [阅AEM Forms数据集成](data-integration.md)。
 
 执行以下操作以配置MySQL数据库：
 
@@ -128,7 +128,7 @@ CREATE TABLE `calls` (
 
 1. 将MySQL数据库配置为数据源：
 
-   1. 转到AEM Web控制台，网址 [为http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
+   1. 转到AEM Web控制台，网 [址为](http://localhost:4502/system/console/configMgr)http://localhost:4502/system/console/configMgr。
    1. 找到 **Apache Sling Connection池化DataSource配置** 。 点击以在编辑模式下打开配置。
    1. 在配置对话框中，指定以下详细信息：
 
@@ -151,11 +151,11 @@ CREATE TABLE `calls` (
 
 ## Step 3: Create form data model {#step-create-form-data-model}
 
-AEM Forms提供直观的用户界面，可 [以从配置的数](data-integration.md)据源创建表单数据模型。 您可以在表单数据模型中使用多个数据源。 对于本教程中的用例，您将使用MySQL作为数据源。
+AEM Forms提供直观的用户界面， [以便从配置的](data-integration.md)数据源创建表单数据模型。 您可以在表单数据模型中使用多个数据源。 对于本教程中的用例，您将使用MySQL作为数据源。
 
 执行以下操作以创建表单数据模型：
 
-1. 在AEM作者实例中，导航到“表 **单** ”>“ **数据集成”**。
+1. 在AEM创作实例中，导航到 **Forms** > **数据集成**。
 1. Tap **Create** >  **Form Data Model**.
 1. 在创建表单数据模型向导中，指 **定表单** 数据模型的名称。 例如， **FDM_Create_First_IC**。 点按 **下一步**。
 1. 选择数据源屏幕列表所有已配置的数据源。 选择 **MySQL** 数据源并点 **按创建**。
@@ -176,7 +176,7 @@ AEM Forms提供直观的用户界面，可 [以从配置的数](data-integration
 
 ### 添加数据模型对象和服务 {#add-data-model-objects-and-services}
 
-1. 在AEM作者实例上，导航到“表 **单** ”>“ **数据集成”**。 默认URL为 [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)。
+1. 在AEM创作实例上，导航到 **Forms** > **数据集成**。 默认URL为 [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm)。
 1. 此处 **列出您之前创建的** FDM_Create_First_IC表单数据模型。 选择它并点按 **编辑**。
 
    所选数据源 **MySQL** 显示在“数 **据源** ”窗格中。

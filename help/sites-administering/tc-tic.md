@@ -1,7 +1,7 @@
 ---
 title: 配置翻译集成框架
-seo-title: 配置翻译集成框架
-description: 了解如何配置翻译集成框架。
+seo-title: Configuring the Translation Integration Framework
+description: Learn how to configure the Translation Integration Framework.
 seo-description: 了解如何配置翻译集成框架。
 uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
 contentOwner: Guillaume Carlino
@@ -18,40 +18,40 @@ ht-degree: 2%
 ---
 
 
-# 配置翻译集成框架{#configuring-the-translation-integration-framework}
+# Configuring the Translation Integration Framework{#configuring-the-translation-integration-framework}
 
 翻译集成框架与第三方翻译服务集成以协调AEM内容的翻译。
 
 * 连接到您的翻译服务提供商。
-* 创建翻译集成框架配置。
-* 将云配置与您的页面关联。
+* Create a Translation Integration Framework configuration.
+* Associate the cloud configurations with your pages.
 
-有关AEM中内容翻译功能的概述，请参阅多 [语言站点内容翻译](/help/sites-administering/translation.md)。
+For an overview of the content translation features in AEM, see [Translating Content for Multilingual Sites](/help/sites-administering/translation.md).
 
-## 连接到翻译服务提供商 {#connecting-to-a-translation-service-provider}
+## Connecting to a Translation Service Provider {#connecting-to-a-translation-service-provider}
 
-创建将AEM连接到翻译服务提供商的云配置。 默认情况下，AEM包含连接到Microsoft Translator的功能。
-以下翻译供应商为翻译项目提供了新API的实施。 链接可进一步了解集成：
+Create a cloud configuration that connects AEM to your translation service provider. AEM includes the capability to connect to Microsoft Translator by default.
+The following translation vendors provide an implementation of the new API for the Translation Projects. Links to learn more about the integration:
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) （Adobe Exchange高级合作伙伴）
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [云字](https://exchange.adobe.com/experiencecloud.details.90019.html)
 * [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
-* [林戈特克](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
-* [智能化](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
+* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [阿尔特朗](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
-* Microsoft（AEM中预装了Microsoft Translator）
+* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
+* Microsoft (Microsoft Translator is pre-installed in AEM)
 
 >[!NOTE]
 >
 >要查找人文和机器翻译提供商的最新列表，请查看以下页面：
 >
 >
->* [AEM Human Translation](https://www.adobe.com/go/aem-human-translation-connectors)
+>* [AEM人文翻译](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [AEM机器翻译](https://www.adobe.com/go/aem-machine-translation-connectors)
 
 >
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 配置翻译集成框架后，可以将 [其与使用该框架的页](/help/sites-administering/tc-prep.md) 面相关联。
 
-**注意：** 有关AEM中内容翻译功能的概述，请参阅多 [语言站点内容翻译](/help/sites-administering/translation.md)。
+**注意：** 有关AEM中内容翻译功能的概述，请参 [阅多语言站点翻译内容](/help/sites-administering/translation.md)。
 
 框架的单个配置控制如何翻译页面内容、社区内容和资产。
 ![chlimage_1-386](assets/translation-config-64.jpg)
@@ -186,7 +186,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-1. 在侧栏中，单击或点按工具>操作>云>Cloud Service。
+1. 在侧栏中，单击或点按工具>操作>云>Cloud Services。
 1. 在“翻译集成”区域中，是否已创建任何配置将决定显示哪个链接：
 
    * 如果尚未创建任何配置，请单击或点按立即配置。
@@ -199,7 +199,7 @@ ht-degree: 2%
 
 要配置将源页面翻译为其他语言，请将页面与以下云配置关联：
 
-* 将AEM连接到翻译提供程序的云配置。
+* 将AEM连接到翻译提供商的云配置。
 * 配置翻译详细信息的翻译集成框架。
 
 请注意，翻译集成框架云配置标识要用于连接服务提供商的云配置。 将源页面与框架云配置关联时，该页面必须与框架云配置使用的服务提供商云配置关联。
@@ -215,7 +215,7 @@ ht-degree: 2%
 将页面与用于翻译页面和子页面的翻译提供程序相关联。
 
 1. 在站点控制台中，选择要配置的页面，然后单击或点按视图属性。
-1. 单击或点按编辑，然后单击或点按Cloud Service选项卡。
+1. 单击或点按编辑，然后单击或点按Cloud Services选项卡。
 1. 单击或点按添加配置>翻译集成。
 1. 选择要使用的翻译提供程序，然后单击或点按完成。
 
@@ -224,7 +224,7 @@ ht-degree: 2%
 将页面与翻译集成框架关联，该框架定义您希望如何执行页面和子页面的翻译。
 
 1. 在站点控制台中，选择要配置的页面，然后单击或点按视图属性。
-1. 单击或点按编辑，然后单击或点按Cloud Service选项卡。
+1. 单击或点按编辑，然后单击或点按Cloud Services选项卡。
 1. 单击或点按添加配置>翻译集成。
 1. 选择要使用的翻译集成框架，然后单击或点按完成。
 

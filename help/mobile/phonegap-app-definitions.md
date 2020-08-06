@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 860dde0b-7cb4-4668-9fac-6f954f1ec0a7
 translation-type: tm+mt
 source-git-commit: c58437f791daa11669198d916f0756ff4830677c
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
@@ -19,23 +22,23 @@ source-git-commit: c58437f791daa11669198d916f0756ff4830677c
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
 
-应用程序定义是一种确定哪些空间和其他配置适合应用程序的方法。 应用程序定义允许用户添加空间，无需重新编译应用程序。 应用程序定义将更新，其中将包括任何新空间的信息。
+应用程序定义是一种确定哪些空间和其他配置适合应用程序的方法。 应用程序定义允许用户添加空间，无需重新编译应用程序。 应用程序定义将更新，其中将包含任何新空间的信息。
 
 >[!NOTE]
 >
->应用程序定义绑定到应用程序，因此它们需要在AEM Mobile应用程序控制台中创建应用程序。
+>应用程序定义与应用程序关联，因此它们需要在AEM Mobile应用程序控制台中创建应用程序。
 
 ## 创建新应用程序定义 {#creating-a-new-app-definition}
 
-1. 从AEM **导航控制台中** ，选择Mobile。
+1. 从AEM **导航** 控制台中选择“移动”。
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. 从Mobile **中选择** Apps **，然后单击** “ **创建”。**
+1. 从Mobile **中选择** “应用 **程序** ”，然后单 **击“创建”。**
 
-   选择“应 **用程序** ”并输入详细信息，以创建您的新应用程序。
+   选择要 **创建** 、并输入详细信息以创建您的新应用程序。
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
@@ -51,6 +54,6 @@ source-git-commit: c58437f791daa11669198d916f0756ff4830677c
 
 要了解管理员和开发人员的角色和职责，请参阅以下资源：
 
-* [使用AEM为Adobe PhoneGap Enterprise进行开发](/help/mobile/developing-in-phonegap.md)
-* [通过AEM管理Adobe phoneGap Enterprise的内容](/help/mobile/administer-phonegap.md)
+* [用AEM为Adobe PhoneGap企业发展](/help/mobile/developing-in-phonegap.md)
+* [通过AEM为Adobe PhoneGap企业管理内容](/help/mobile/administer-phonegap.md)
 

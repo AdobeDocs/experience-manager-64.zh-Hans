@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 84%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。(See [Creating a Live Copy for Different Channels](/help/sites-administering/msm-livecopy.md).)
 >
->AEM开发人员可以创建新设备组。 (See [Creating Device Group Filters.](/help/sites-developing/groupfilters.md))
+>AEM 开发人员可以创建新设备组。(See [Creating Device Group Filters.](/help/sites-developing/groupfilters.md))
 
 请使用以下过程来创作移动页面：
 
@@ -46,5 +49,5 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->从移动设备中请求创作实例上的页面时，会禁用模拟器。然后，可以使用触屏优化UI进行创作。
+>从移动设备中请求创作实例上的页面时，会禁用模拟器。然后，可使用触屏优化UI完成创作。
 

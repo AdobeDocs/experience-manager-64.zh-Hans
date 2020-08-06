@@ -64,7 +64,7 @@ ht-degree: 7%
 
 在页面组件上启用字段(*不在* 模板上):
 
-1. 使用CRXDE Lite（或等效的方法）打开页面组件。
+1. 使用CRXDE Lite（或等效方法）打开页面组件。
 
    例如：`/apps/core/wcm/components/page/v1/page`
 

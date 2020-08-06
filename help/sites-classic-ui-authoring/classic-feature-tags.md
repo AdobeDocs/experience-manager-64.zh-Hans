@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 75%
 
 ---
 
@@ -39,7 +42,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 应用标记 {#applying-tags}
 
-In the author environment, authors may apply tags by accessing the page properties and entering one or more tags in the **Tags/Keywords** field.
+在创作环境中，作者可以通过访问页面属性并在&#x200B;**标记/关键字**&#x200B;字段中输入一个或多个标记来应用标记。
 
 To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the `Tags/Keywords` field pull-down to select from the list of tags permitted for the page. Tthe **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
 
@@ -57,7 +60,7 @@ To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Pr
 
 >[!NOTE]
 >
->激活页面时，会自动打开一个对话框，并允许您激活属于该页面的未激活标记。
+>激活页面时，会自动打开一个对话框，通过该对话框可以激活属于该页面的未激活标记。
 
 **取消激活**
 
@@ -65,7 +68,7 @@ To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Pr
 
 ## 标记云 {#tag-clouds}
 
-标记云显示一组标记，用于当前页面、整个网站或最常访问的标记。 标记云是一种突出显示用户感兴趣的问题的方法。 用于显示标记的文本大小因其使用而异。
+标记云显示一组标记，用于当前页面、整个网站或最常访问的标记。 标记云是突出显示用户感兴趣的问题的一种方法。 用于显示标记的文本大小因标记的使用而异。
 
 [标记云](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud)组件（通用组件组）用于向页面添加标记云。
 

@@ -1,6 +1,6 @@
 ---
-title: 如何在AEM中审核用户管理操作
-seo-title: 如何在AEM中审核用户管理操作
+title: 如何审计AEM中的用户管理操作
+seo-title: 如何审计AEM中的用户管理操作
 description: 了解如何在AEM中审核用户管理操作。
 seo-description: 了解如何在AEM中审核用户管理操作。
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
@@ -11,41 +11,45 @@ content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 1%
 
 ---
 
 
-# 如何在AEM中审核用户管理操作{#how-to-audit-user-management-operations-in-aem}
+# 如何审计AEM中的用户管理操作{#how-to-audit-user-management-operations-in-aem}
 
 ## 简介 {#introduction}
 
 AEM引入了记录权限更改的功能，以便以后可以审核这些更改。
 
-该增强功能允许对用户的权限和组分配执行审核CRUD（创建、读取、更新、删除）操作。 具体而言，它将记录：
+该增强功能允许对用户的权限和组分配执行审核CRUD（创建、读取、更新、删除）操作。 更具体地说，它将记录：
 
 * 新用户已创建
-* 添加到用户组的用户
+* 被添加到组的用户
 * 现有用户或用户组的权限更改
 
 默认情况下，这些条目将写入文 `error.log` 件。 为了简化监控，建议将它们重定向到单独的日志文件。 有关如何执行此操作的更多信息，请参阅以下段落。
 
 ## 将输出重定向到单独的日志文件 {#redirecting-the-output-to-a-separate-log-file}
 
-要将日志输出重定向到单独的日志文件，您需要创建新的 **Apache Sling日志记录器配置** 。 我们将在 `useraudit.log` 以下示例中用作单独文件的名称。
+要将日志记录输出重定向到单独的日志文件，您需要创建新的 **Apache Sling日志记录器配置** 。 我们将在 `useraudit.log` 以下示例中作为单独文件的名称。
 
 1. 通过浏览到 `https://<serveraddress>:<serverport>/system/console/configMgr`
-1. 搜索 **Apache Sling日志记录记录器配置**。 然后，按条目右侧的“+”以创建新的工厂配置。
+1. 搜索 **Apache Sling日志记录器配置**。 然后，按条目右侧的“+”以创建新工厂配置。
 1. 创建以下配置：
 
-   * **** 日志级别：信息
-   * **** 日志文件：logs/useraudit.log
-   * **** 消息模式：级别默认值
-   * **** 记录器：com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
-   要在 **Logger** （记录器）字段中输入这两个记录器，您需要输入第一个记录器的名称，然后按“+”按钮并输入第二个记录器的名称，以创建另一个字段。
+   * **日志级别：** 信息
+   * **日志文件：** logs/useraudit.log
+   * **消息模式：** 级别默认值
+   * **记录器：** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.可授权的Servlet
+
+   要将两个记录器输入 **到Logger** 字段中，您需要输入第一个记录器的名称，然后按“+”按钮并输入第二个记录器的名称，以创建另一个字段。
 
 ## 示例输出 {#example-output}
 
-如果配置正确，输出应如下：
+如果配置正确，输出应如下所示：
 
 ```xml
 19.05.2017 15:15:08.933 *INFO* [0:0:0:0:0:0:0:1 [1495196108932] POST /libs/granite/security/post/authorizables.html HTTP/1.1] com.adobe.granite.security.user.internal.servlets.AuthorizableServlet Create Group 'group1' operation initiated by User 'admin' (administrator)

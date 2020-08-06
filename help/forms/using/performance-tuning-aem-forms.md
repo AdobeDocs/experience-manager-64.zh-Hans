@@ -1,8 +1,8 @@
 ---
 title: AEM Forms服务器的性能调整
 seo-title: AEM Forms服务器的性能调整
-description: 要使AEM Forms达到最佳性能，您可以微调缓存设置和JVM参数。 此外，使用Web服务器可以增强AEM Forms部署的性能。
-seo-description: 要使AEM Forms达到最佳性能，您可以微调缓存设置和JVM参数。 此外，使用Web服务器可以增强AEM Forms部署的性能。
+description: 要使AEM Forms以最佳方式运行，您可以微调缓存设置和JVM参数。 此外，使用Web服务器可以增强AEM Forms部署的性能。
+seo-description: 要使AEM Forms以最佳方式运行，您可以微调缓存设置和JVM参数。 此外，使用Web服务器可以增强AEM Forms部署的性能。
 uuid: 77eaeecc-ca52-4d3d-92e6-1ab4d91b9edd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 ## 缓存设置 {#cache-settings}
 
-您可以使用AEM Web Configuration Console中的Mobile Forms配 **置组件** ，配置和控制AEM Forms的缓存策略：
+您可以使用AEM Web Configuration控制台中的移动AEM Forms配置组件 **配置和控制Forms** 的缓存策略，网址为：
 
-* （OSGi上的AEM Forms） `https://[server]:[port]/system/console/configMgr`
+* (AEM FormsOSGi) `https://[server]:[port]/system/console/configMgr`
 * (AEM Forms on JEE) `https://[server]:[port]/lc/system/console/configMgr`
 
 缓存的可用选项如下：
@@ -40,11 +40,11 @@ AEM Forms的默认缓存设置可能不足以实现最佳性能。 因此，建�
 * **缓存大小** （根据表单数量）: 根据需要
 * **最大对象大小**: 根据需要
 
-![移动表单配置](assets/snap.png)
+![移动Forms配置](assets/snap.png)
 
 >[!NOTE]
 >
->如果您使用AEM Dispatcher缓存自适应表单，它还会缓存自适应表单，该表单包含带有预填充数据的表单。 如果此类表单从AEM Dispatcher缓存中提供，则可能导致向用户提供预填或过时的数据。 因此，请使用AEM Dispatcher缓存不使用预填数据的自适应表单。 此外，调度程序缓存不会自动使缓存片段失效。 因此，请勿使用它缓存表单片段。 对于此类表单和片段，请使 [用自适应表单缓存](/help/forms/using/configure-adaptive-forms-cache.md)。
+>如果使用AEM Dispatcher缓存自适应表单，它还会缓存自适应表单，该表单包含带有预填充数据的表单。 如果此类表单从AEM Dispatcher缓存提供，则可能导致向用户提供预填或过时的数据。 因此，使用AEM Dispatcher缓存不使用预填数据的自适应表单。 此外，调度程序缓存不会自动使缓存片段失效。 因此，请勿使用它缓存表单片段。 对于此类表单和片段，请使 [用自适应表单缓存](/help/forms/using/configure-adaptive-forms-cache.md)。
 
 ## JVM参数 {#jvm-parameters}
 
@@ -142,9 +142,9 @@ Apache可以使用HTTP协议与CRX进行通信。 这些配置是用于使用HTT
 
 ## 在运行AEM Forms的服务器上使用防病毒 {#using-an-antivirus-on-server-running-aem-forms}
 
-在运行防病毒软件的服务器上可能会遇到性能降低的问题。 始终打开防病毒（访问扫描）软件会扫描系统的所有文件。 它可能会减慢服务器速度，并影响AEM Forms的性能。
+在运行防病毒软件的服务器上可能会遇到性能降低的问题。 始终打开防病毒（访问扫描）软件会扫描系统的所有文件。 它会降低服务器速度，并影响AEM Forms的性能。
 
-要提高性能，您可以引导防病毒软件排除以下AEM Forms文件和文件夹，使其不再始终处于开启（访问）扫描状态：
+要提高性能，您可以指示防病毒软件从始终处于（访问）扫描状态中排除以下AEM Forms文件和文件夹：
 
 * AEM安装目录。 如果无法排除完整目录，请排除以下内容：
 
@@ -158,13 +158,13 @@ Apache可以使用HTTP协议与CRX进行通信。 这些配置是用于使用HTT
    * (Weblogic)\Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (Websphere)\项目Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(仅限JEE上的AEM Forms** )全局文档存储(GDS)目录。 默认位置为：
+* **(仅AEM Forms在JEE上** )全球文档存储(GDS)目录。 默认位置为：
 
    * (JBoss) `[appserver root]/server/[server]/svcnative/DocumentStorage`
    * (WebLogic) `[appserverdomain]/[server]/adobe/LiveCycleServer/DocumentStorage`
    * (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
 
-* **(仅限JEE上的AEM Forms** )AEM Forms服务器日志和临时目录。 默认位置为：
+* **(仅AEM Forms在JEE上)** AEM Forms服务器日志和临时目录。 默认位置为：
 
    * Server logs - `[AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs`
    * 临时目录- [AEM Forms安装目录]\temp
@@ -173,7 +173,7 @@ Apache可以使用HTTP协议与CRX进行通信。 这些配置是用于使用HTT
 >
 >* 如果您对GDS和临时目录使用其他位置，请在打开AdminUI `https://[server]:[port]/adminui)`时，导 **航到“主页”>“设置”>“核心系统设置”>“核心配置** ”，以确认使用的位置。
 
-* 如果AEM Forms服务器在排除建议的目录后运行缓慢，则也排除Java可执行文件(java.exe)。
+* 如果AEM Forms服务器在排除建议的目录后运行速度较慢，则也排除Java可执行文件(java.exe)。
 
 
 

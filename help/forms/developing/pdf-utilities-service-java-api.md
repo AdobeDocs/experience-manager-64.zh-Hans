@@ -36,7 +36,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->AEM表单编程中的快速开始基于Forms Server操作系统。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>AEM表单编程中的快速开始基于Forms服务器操作系统。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速开始（SOAP模式）: 使用Java API将PDF文档转换为XDP文档 {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
@@ -241,7 +241,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）: 使用Java API检索PDF文档属性 {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-以下代码示例确定文档是否为PDF文档，如果是，则确定是能够读取该数据的最早Acrobat版本。 (请参阅 [检索PDF文档属性](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)。)
+以下代码示例确定文档是否为PDF文档，如果是，则确定是能够读取该的最早的Acrobat版本。 (请参阅 [检索PDF文档属性](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)。)
 
 ```as3
  /* 

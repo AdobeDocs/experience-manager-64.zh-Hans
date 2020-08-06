@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用Camera Raw处理图像 {#camera-raw-support}
 
-您可以启用Camera Raw支持处理CR2、NEF和RAF等原始文件格式，并以JPEG格式渲染图像。 Adobe Experience Manager资产中使用软件分发中提供 [的Camera Raw包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) ，支持此功能。
+您可以启用Camera Raw支持来处理原始文件格式（如CR2、NEF和RAF），并以JPEG格式渲染图像。 在Adobe Experience Manager资产中，使用软件分发提供 [的Camera Raw](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 包支持该功能。
 
 >[!NOTE]
 >
@@ -38,9 +38,9 @@ ht-degree: 1%
 
    ![石](assets/chlimage_1-335.png)
 
-1. 从侧面板中，在“缩览 **[!UICONTROL 图创建”步骤下添加Camera Raw]** /DNG处 **[!UICONTROL 理程序步骤]** 。
+1. 从侧面板中，在Thumbnail创 **[!UICONTROL 建步骤下添加Camera Raw]** /DNG处 **[!UICONTROL 理程序步骤]** 。
 
-1. 在Camera Raw/ **[!UICONTROL DNG处理程序步骤中]** ，在“参数”选项卡中添加以 **[!UICONTROL 下配置]** :
+1. 在Camera Raw **[!UICONTROL /DNG处理程序]** ，在“参数”选项卡中添加以 **[!UICONTROL 下配置]** :
 
    * **[!UICONTROL MIME类型]**: `image/dng` 和 `image/x-raw-(.*)`
    * **[!UICONTROL Command]**:
@@ -56,9 +56,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->确保以上配置与使用Camera RAW和DNG **[!UICONTROL 处理步骤配置的示例DAM更新资产相同]** 。
+>确保以上配置与Camera Raw和DNG处 **[!UICONTROL 理步骤配置的示例DAM更新资产相同]** 。
 
-您现在可以将相机原始数据文件导入AEM Assets。 安装Camera RAW包并配置所需的工作流程后，“图 **[!UICONTROL 像调整]** ”选项会显示在侧窗格的列表中。
+您现在可以将相机原始数据文件导入AEM Assets。 安装Camera Raw包并配置所需的工作流后，“图 **[!UICONTROL 像调整]** ”选项会显示在侧窗格的列表中。
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 *图： 使用选项对图像进行轻量编辑*
 
-将编辑保存到Camera Raw图像后，将为该图像生 `AdjustedPreview.jpg` 成一个新的再现。 对于除Camera Raw之外的其他图像类型，更改会反映在所有再现中。
+将编辑保存到Camera Raw图像后，将为图像生 `AdjustedPreview.jpg` 成新的再现。 对于除Camera Raw之外的其他图像类型，更改会反映在所有再现中。
 
 ## 最佳实践、已知问题和限制 {#best-practices}
 
@@ -76,4 +76,4 @@ ht-degree: 1%
 
 * 该功能仅支持JPEG再现。 Windows 64位、Mac OS和RHEL 7.x支持此功能。
 * RAW和DNG格式不支持元数据写回。
-* Camera Raw库在每次处理的像素总数方面存在限制。 目前，它最多可处理文件长边的65000像素，或先遇到任何条件时的512 MP。
+* Camera Raw库在每次可处理的总像素方面存在限制。 目前，它最多可处理文件长边的65000像素，或先遇到任何条件时的512 MP。

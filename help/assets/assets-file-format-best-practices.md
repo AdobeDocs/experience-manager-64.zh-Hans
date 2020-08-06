@@ -1,20 +1,23 @@
 ---
 title: 资产文件格式最佳实践
-description: AEM Assets中文件支持的最佳实践。
+description: AEM Assets文件支持的最佳实践。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 1%
 
 ---
 
 
 # Assets file format best practices {#assets-file-format-best-practices}
 
-AEM资产支持许多专有和第三方文件格式库，以满足用户的各种文件支持要求。 支持的Adobe库包括Adobe Camera Raw、Gibson、Adobe PDF Rasterizer和Adobe InDesign Server。 此外，AEM Assets还支持第三方库，包括ImageMagick、TwelveMoxes等。
+AEM Assets公司支持许多专有和第三方文件格式库，以满足用户的各种文件支持需求。 支持的Adobe库包括Adobe Camera Raw、吉布森、Adobe PDF·拉斯特里泽和Adobe InDesign Server。 此外，AEM Assets还支持第三方库，包括ImageMagick、TwelveMoxes等。
 
 For the supported file formats, see [Assets supported formats](assets-formats.md).
 
-## Adobe Camera Raw库 {#adobe-camera-raw-library}
+## Adobe Camera Raw图书馆 {#adobe-camera-raw-library}
 
 为获得最佳性能，Adobe建议使用Adobe Camera Raw库：
 
@@ -23,21 +26,21 @@ For the supported file formats, see [Assets supported formats](assets-formats.md
 
 Adobe Camera Raw库支持CMYK颜色用户档案作为输入。 但是，它以RGB色彩空间生成输出，并且仅支持JPEG格式的输出。 它不会在缩略图中保留源文件色彩空间（例如CMYK）。
 
-有关详细信息，请参 [阅AEM资产中](camera-raw.md) 的Camera Raw支持。
+有关详细信息，请参阅 [AEM Assets的](camera-raw.md) Camera Raw支持。
 
-## Adobe PDF Rasterizer库 {#adobe-pdf-rasterizer-library}
+## Adobe PDF市图书馆 {#adobe-pdf-rasterizer-library}
 
-为获得最佳效果，Adobe建议对以下文件使用Adobe PDF Rasterizer库：
+为获得最佳效果，Adobe建议对以下文件使用Adobe PDF光栅器库：
 
 * 内容密集型大量PDF文件
 * 未生成现成缩略图的AI文件
 * 对于具有专色(PMS)颜色的AI文件
 
-与开箱即用的栅格输出相比，使用PDF光栅器生成的缩览图和预览的质量更高。 Adobe PDF Rasterizer库不支持任何色彩空间转换。 无论源PDF文件的色彩空间如何，Adobe PDF Rasterizer都只生成RGB输出。
+与开箱即用的栅格输出相比，使用PDF光栅器生成的缩览图和预览的质量更高。 Adobe PDF光栅器库不支持任何色彩空间转换。 无论源PDF文件的色彩空间如何，Adobe PDF光栅器只生成RGB输出。
 
-## Adobe InDesign Server {#adobe-indesign-cc-server}
+## Adobe InDesign服务器 {#adobe-indesign-cc-server}
 
-Adobe建议您使用Adobe InDesign Server提取Adobe InDesign特定的再现，如IDML和HTML。 有关详细信息，请 [参阅在Adobe InDesign中将AEM资产添加为引用](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)。
+Adobe建议您使用Adobe InDesign服务器提取特定于Adobe InDesign的再现，如IDML和HTML。 有关详细信息，请参 [阅在Adobe InDesign将AEM资产添加为引用](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)。
 
 ## Dynamic Media  {#dynamic-media}
 

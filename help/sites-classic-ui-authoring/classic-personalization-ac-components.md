@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 560b62b7-6bff-4cc4-baf9-c6573daa61ef
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2475'
+ht-degree: 75%
 
 ---
 
@@ -128,7 +131,8 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 * **链接工具提示**&#x200B;添加其他有关如何使用链接的信息。
 
-* **链接类型**&#x200B;在下拉列表中，选择&#x200B;**自定义 URL** 或&#x200B;**自适应文档**。此字段为必填字段。如果选择“自定义 URL”，则可以提供链接 URL。如果选择“自适应文档”，则可以提供文档路径。
+* **LinkType**&#x200B;在下拉列表中，在 
+**自定义URL** 和自 **适应文档**。 此字段为必填字段。如果选择“自定义 URL”，则可以提供链接 URL。如果选择“自适应文档”，则可以提供文档路径。
 
 * **其他 URL 参数**&#x200B;添加任何其他 URL 参数。单击“添加项目”可添加多个项目。
 
@@ -165,7 +169,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 * **图像**
 从内容查找器中拖动图像，或单击以浏览到图像。根据需要进行裁剪或旋转。
 
-* **图像属性** (高&#x200B;**级图像属性**)
+* **图像属性** (**高级图像属性**)
 
    允许您指定以下内容：
 
@@ -250,7 +254,7 @@ When you open a form that is configured to integrate with Adobe Campaign, you se
   <tr> 
    <td><p>复选框（营销活动）</p> </td> 
    <td><p>布尔型</p> </td> 
-   <td><p>不再联系（通过任何渠道）</p> </td> 
+   <td><p>不再联系(由任何渠道)</p> </td> 
   </tr> 
   <tr> 
    <td><p>日期字段（营销活动）</p> <p>日期字段/HTML 5（营销活动）</p> </td> 
@@ -259,12 +263,12 @@ When you open a form that is configured to integrate with Adobe Campaign, you se
   </tr> 
   <tr> 
    <td><p>数字字段（营销活动）</p> </td> 
-   <td><p>数字（字节、短、长、双）</p> </td> 
+   <td><p>数字(字节、短、长、多次)</p> </td> 
    <td><p>年龄</p> </td> 
   </tr> 
   <tr> 
    <td><p>选项字段（营销活动）</p> </td> 
-   <td><p>字节，与值关联</p> </td> 
+   <td><p>字节与相关值</p> </td> 
    <td><p>性别</p> </td> 
   </tr> 
   <tr> 
@@ -285,7 +289,7 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 * **标题**
 
-   如果要使用元素名称以外的名称，请在此处输入该名称。
+   如果要使用元素名称以外的名称，请在此处输入它。
 
 * **隐藏标题**
 
@@ -297,7 +301,7 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 * **仅显示值**
 
-   仅显示值（如果有）
+   仅显示值（如果有值）
 
 #### Adobe Campaign {#adobe-campaign}
 
@@ -305,21 +309,21 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 * **映射**
 
-   根据需要，选择Adobe Campaign个性化字段。
+   选择Adobe Campaign个性化字段（如果适用）。
 
 * **对帐密钥**
 
-   如果此字段是对帐密钥的一部分，请选中此复选框。
+   如果此字段是合并关键项的一部分，请选中此复选框。
 
 #### 约束 {#constraints}
 
 * **必填**
 
-   选中此复选框可使此组件成为必需组件；即，用户必须输入值。
+   选中此复选框可使此组件成为必需组件； 即用户必须输入一个值。
 
 * **必需的消息**
 
-   （可选）添加一条消息，指明字段为必填字段。
+   （可选）添加一条消息，说明字段为必填字段。
 
 #### 样式 {#styling}
 
@@ -371,7 +375,7 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
    默认为encryptedPK。 仅当该元素名称与表单中其他元素的名称发生冲突时，才需要对其进行更改。不能有两个表单字段具有相同的元素名称。
 
-* **Adobe Campaign - URL参数**
+* **Adobe Campaign- URL参数**
 
    添加EPK的URL参数。 例如，您可以使用值 **epk**。
 
@@ -389,7 +393,7 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 ### Hidden Reconciliation Key (Campaign) {#hidden-reconciliation-key-campaign}
 
-隐藏的对帐密钥（营销活动）组件允许您将隐藏字段作为对帐密钥的一部分添加到表单。
+隐藏合并关键项(活动)组件允许您将隐藏字段作为合并关键项的一部分添加到表单。
 
 您可以在隐藏的对帐密钥（营销活动）组件中配置以下各项：
 
@@ -415,11 +419,12 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 * **约束消息**
 
    此外，您还可以添加约束消息，以便用户了解如何正确设置其答案的格式。
-* **样式——宽**&#x200B;度通过单击或点按+和——图标或输入数字，调 **整字****** 段的宽度。
+* **样式——宽**&#x200B;度通过单击或点按 
+**+** 和 **-图标** ，或输入数字。
 
 以下示例展示了所显示的配置了宽度的数字字段（营销活动）组件。
 
-![chlimage_1-127](assets/chlimage_1-127.png)
+![chlimage_1-129](assets/chlimage_1-127.png)
 
 ### Option Field (Campaign) {#option-field-campaign}
 
@@ -455,7 +460,7 @@ Adobe Campaign 组件具有所有组件（不包括已加密的主要密钥组�
 
 * **约束——约束** 下拉列表
 
-   You can select - **None, Email,** or **Name (no umlauts)** - to add the constraint of either an email address, name, or no constraint. 如果您选择电子邮件，则用户在字段中输入的回答必须是电子邮件地址。如果选择名称，则该名称必须是名称（不允许使用变音）。
+   You can select - **None, Email,** or **Name (no umlauts)** - to add the constraint of either an email address, name, or no constraint. 如果您选择电子邮件，则用户在字段中输入的回答必须是电子邮件地址。如果选择名称，则它必须是名称（不允许变音）。
 
 * **约束消息**
 

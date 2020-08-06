@@ -1,6 +1,6 @@
 ---
 title: 资产监控最佳实践
-description: 监视AEM实例部署后的环境和性能的最佳实践。
+description: 部署AEM实例后监控其环境和性能的最佳实践。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 资产监控最佳实践 {#assets-monitoring-best-practices}
 
-从Adobe Experience Manager(AEM)资产的角度来看，监控应包括对以下流程和技术进行观察和报告:
+从Adobe Experience Manager(AEM)资产的角度来看，监测应包括观察和报告下列进程和技术：
 
 * 系统CPU
 * 系统内存使用
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * OSGi控制台运行状况检查
 
-通常，AEM资产可以通过两种方式进行监视：实时监视和长期监视。
+通常，AEM Assets可以通过两种方式进行监测，即实时监测和长期监测。
 
 ## 实时监视 {#live-monitoring}
 
@@ -41,24 +41,24 @@ ht-degree: 0%
 * [Iftop](http://www.ex-parrot.com/pdw/iftop/): Iftop显示有关以太网／网络使用的详细信息。 Iftop显示使用以太网的实体的每个通信渠道统计信息以及它们使用的带宽量。 Iftop可以使用或安装在大多数Linux系 `yum install iftop` 统上 `apt-get install iftop`。
 
 * Java Flight Recorder(JFR): Oracle提供的一种商业工具，您可以在非生产环境中自由使用。 有关详细信息，请 [参阅如何使用Java飞行记录器诊断CQ运行时问题](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)。
-* AEM error.log文件： 您可以调查AEM error.log文件，以了解系统中记录的错误的详细信息。 使用该命 `tail -F quickstart/logs/error.log` 令识别您应调查的错误。
+* AEM error.log文件： 您可以调查AEM error.log文件，了解系统中记录的错误的详细信息。 使用该命 `tail -F quickstart/logs/error.log` 令识别您应调查的错误。
 * [工作流控制台](../sites-administering/workflows.md): 利用工作流控制台监视滞后或卡住的工作流。
 
-通常，您可以结合使用这些工具来全面了解AEM实例的性能。
+通常，您结合使用这些工具来全面了解AEM实例的性能。
 
 >[!NOTE]
 >
->这些工具是标准工具，Adobe不直接支持。 他们不需要额外的许可证。
+>这些工具是标准工具，不直接受Adobe支持。 他们不需要额外的许可证。
 
 ![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png)
 
 ## 长期监控 {#long-term-monitoring}
 
-对AEM实例的长期监视包括对实时监视的相同部分进行更长时间的监视。 它还包括定义特定于您的环境的警报。
+对AEM实例的长期监控包括对实时监控的相同部分进行更长时间的监控。 它还包括定义特定于您的环境的警报。
 
 ### 日志聚合和报告 {#log-aggregation-and-reporting}
 
-聚合日志有多种可用工具，例如Splunk(TM)和Elastic Search/Logstash/Kabana(ELK)。 要评估AEM实例的正常运行时间，您必须了解特定于系统的日志事件并基于它们创建警报。 了解您的开发和操作实践可以帮助您更好地了解如何调整日志聚合过程以生成关键警报。
+聚合日志有多种可用工具，例如Splunk(TM)和Elastic Search/Logstash/Kabana(ELK)。 要评估AEM实例的正常运行时间，您必须了解特定于系统的日志事件并根据它们创建警报。 了解您的开发和操作实践可以帮助您更好地了解如何调整日志聚合过程以生成关键警报。
 
 ### 环境监控 {#environment-monitoring}
 
@@ -71,11 +71,11 @@ ht-degree: 0%
 * JMX MBean
 * 外部网站
 
-您需要NewRelic(TM)和AppDynamics(TM)等外部工具来监视每个项目。 使用这些工具，您可以定义特定于您系统的警报，例如高系统利用率、工作流备份、运行状况检查失败或未经身份验证的网站访问。 Adobe不推荐任何特定工具胜过其他工具。 找到适合您的工具，并利用它来监视讨论的项目。
+您需要NewRelic(TM)和AppDynamics(TM)等外部工具来监视每个项目。 使用这些工具，您可以定义特定于您系统的警报，例如高系统利用率、工作流备份、运行状况检查失败或未经身份验证的网站访问。 Adobe不推荐任何特定工具。 找到适合您的工具，并利用它来监视讨论的项目。
 
 #### 内部应用程序监控 {#internal-application-monitoring}
 
-内部应用程序监视包括监视构成AEM堆栈的应用程序组件，包括JVM、内容存储库，以及通过在平台上构建的自定义应用程序代码进行监视。 通常，它通过JMX Mbeans执行，可由许多流行的监控解决方案直接进行监控，如SolarWinds(TM),HP OpenView(TM),Hyperic(TM),Zabbix(TM)等。 对于不支持直接连接到JMX的系统，您可以编写外壳脚本以提取JMX数据，并以它们本身理解的格式将其呈现给这些系统。
+内部应用程序监控包括通过构建在平台上的自定义应用程序代码监控AEM堆栈中的应用程序组件，包括JVM、内容存储库。 通常，它通过JMX Mbeans执行，可由许多流行的监控解决方案直接进行监控，如SolarWinds(TM),HP OpenView(TM),Hyperic(TM),Zabbix(TM)等。 对于不支持直接连接到JMX的系统，您可以编写外壳脚本以提取JMX数据，并以它们本身理解的格式将其呈现给这些系统。
 
 默认情况下，不启用对JMX Mbeans的远程访问。 有关通过JMX进行监视的详细信息，请参 [阅使用JMX技术的监视和管理](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html)。
 
@@ -105,11 +105,11 @@ ht-degree: 0%
 * 警报阈值： 当线程数大于基线的150%时。
 * 警报定义： 要么存在一个活动失控的过程，要么效率低下的操作消耗大量资源。 分析线程转储以得出定义。
 
-**AEM监视**
+**AEM监控**
 
-AEM还通过JMX公开一组统计信息和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前找出它们。 有关详细信息，请参 [阅](/help/sites-administering/jmx-console.md) AEM JMX MBean的相关文档。
+AEM还通过JMX公开一组统计和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前找出它们。 有关详细信息，请参 [阅AEM](/help/sites-administering/jmx-console.md) JMX MBean的相关文档。
 
-以下是您可以监视的AEM的一些基线参数：
+以下是一些可以监视AEM的基线参数：
 
 复制代理
 
@@ -194,5 +194,5 @@ AEM还通过JMX公开一组统计信息和操作。 这些功能有助于评估�
 * 使用工作流控制台验证工作流是否按预期方式执行。 如果可能，将多个工作流浓缩为单个工作流。
 * 重新访问实时监控，并寻找任何特定资源的其他瓶颈或高消费者。
 * 调查客户端网络的出口点和AEM实例网络的入口点，包括调度程序。 这些往往是瓶颈领域。 有关详细信息，请参阅 [资产网络注意事项](assets-network-considerations.md)。
-* 升级您的AEM服务器。 您的AEM实例可能大小不足。 Adobe客户关怀团队可以帮助您确定您的服务器是否规模不足。
+* 升级AEM服务器。 您的AEM实例可能大小不足。 Adobe客户关怀团队可以帮助您确定您的服务器是否规模不足。
 * 检查 `access.log` 和文 `error.log` 件是否在出错时输入项。 查找可能指示自定义代码异常的模式。 将它们添加到您监视的事件列表。

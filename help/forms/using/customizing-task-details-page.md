@@ -1,8 +1,8 @@
 ---
 title: 自定义任务详细信息页
 seo-title: 自定义任务详细信息页
-description: 如何在AEM Forms工作区中自定义任务详细信息页面，以修改显示的有关任务的默认信息。
-seo-description: 如何在AEM Forms工作区中自定义任务详细信息页面，以修改显示的有关任务的默认信息。
+description: 如何在AEM Forms工作区中自定义任务详细信息页面以修改显示的任务默认信息。
+seo-description: 如何在AEM Forms工作区中自定义任务详细信息页面以修改显示的任务默认信息。
 uuid: d85fae55-8e66-4595-8560-5485622b6841
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -23,12 +23,12 @@ ht-degree: 0%
 
 您可以向任务详细信息页面添加以下信息：
 
-* 任务的JSON对象中可用的信息(AEM Forms工作区JSON对 [象描述中的任务部分](/help/forms/using/html-workspace-json-object-description.md))
+* 任务的JSON对象中提供的信息(AEM Forms工作区JSON对 [象描述中的任务部分](/help/forms/using/html-workspace-json-object-description.md))
 * 进程实例的JSON对象中可用的信息(AEM Forms工作区JSON对 [象描述中的进程实例部分](/help/forms/using/html-workspace-json-object-description.md))
 
 要自定义任务详细信息页面，请执行以下操作：
 
-1. 按照 [AEM Forms工作区自定义的常规步骤操作。](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. 按照 [AEM Forms工作区自定义的一般步骤操作。](/help/forms/using/generic-steps-html-workspace-customization.md)
 1. 要显示任何其他信息，请在“块”>“块”>“块” `translation.json` >“块” `todo`处向文 `details`件添加相 `app`应的键 [ 值对 `required`]。
 
    该 [ 块 `required`引用可用块] ，如任务信息的任务块、处理信息的处理块和待处理任务信息的当前处理任务块。
@@ -85,6 +85,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->要使用在AEM Forms工作区的**任务流程**选项卡中创建的任务自定义开始详细信息页面，请向中添加新信息 `/apps/ws/js/runtime/templates/startprocess.html`。
+>要使用在AEM Forms工作区的**任务流程**选项卡中创建的任务自定义开始详细信息页面，请向添加新信息 `/apps/ws/js/runtime/templates/startprocess.html`。
 >
 >要为在详细信息页面中添加的信息添加新样式，请使用工作区自定义中的“用 *户界面更改* ”部分修 [改CSS文件](/help/forms/using/changing-locale-user-interface.md)。

@@ -1,24 +1,27 @@
 ---
-title: AEM中资产的增强排序
-description: 了解AEM资产如何部署服务器端排序来一次性对文件夹资产或搜索查询进行排序，而不是在客户端批量对它们排序。
+title: AEM中资源的增强排序
+description: 了解AEM Assets如何部署服务器端排序来对文件夹资产或搜索查询进行一次排序，而不是在客户端进行批量排序。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 3%
 
 ---
 
 
-# AEM中资产的增强排序 {#enhanced-sorting-of-assets-in-aem}
+# AEM中资源的增强排序 {#enhanced-sorting-of-assets-in-aem}
 
-了解AEM资产如何部署服务器端排序来一次性对文件夹资产或搜索查询进行排序，而不是在客户端批量对它们排序。
+了解AEM Assets如何部署服务器端排序来对文件夹资产或搜索查询进行一次排序，而不是在客户端进行批量排序。
 
-Adobe Experience Manager(AEM)资产的搜索功能得到增强，可在文件夹列表视图和搜索结果页面中高效地对大量资产进行排序。 您还可以对时间轴条目进行排序。
+Adobe Experience Manager(AEM)资产的搜索功能得到增强，可以高效地对文件夹列表视图和搜索结果页面中的大量资产进行排序。 您还可以对时间轴条目进行排序。
 
-AEM资产会部署服务器端排序，以一次性对文件夹或搜索查询中的整个资产集（无论大小）进行排序，而不是在客户端批量对它们进行排序。 这样，预取的结果可以快速显示在用户界面上，从而使排序操作更加响应迅速。
+AEM Assets部署服务器端排序，一次对文件夹或搜索查询中的整个资产集（无论大小）进行排序，而不是在客户端批量对它们进行排序。 这样，预取的结果可以快速显示在用户界面上，从而使排序操作更快速、响应更快。
 
 ## 在列表视图中对资产排序 {#sorting-assets-in-list-view}
 
-通过AEM资产，您可以根据以下字段对文件夹资产进行排序：
+AEM Assets允许您根据以下字段对文件夹资产进行排序：
 
 * 区域设置
 * 状态
@@ -27,7 +30,7 @@ AEM资产会部署服务器端排序，以一次性对文件夹或搜索查询�
 * 评级
 * 修改日期
 * 发布日期
-* 使用情况
+* 使用
 * 点击量
 * 展示次数
 * 已签出
@@ -47,7 +50,7 @@ AEM资产会部署服务器端排序，以一次性对文件夹或搜索查询�
 
 >[!NOTE]
 >
->要对或列中的值进 `Name` 行排序， `Title`请叠 `/libs/dam/gui/content/commons/availablecolumns` 加并将值更 `sortable` 改为 `True`。
+>要对或列中的值 `Name` 进行排序， `Title`请叠加 `/libs/dam/gui/content/commons/availablecolumns` 并将值更改 `sortable` 为 `True`。
 
 ## 在搜索结果中对资产进行排序 {#sorting-assets-in-search-results}
 
@@ -71,18 +74,18 @@ AEM资产会部署服务器端排序，以一次性对文件夹或搜索查询�
 
 ## 在时间轴中对资产排序 {#sorting-assets-in-timeline}
 
-通过AEM资产，您可以按时间顺序对时间轴条目进行排序，如批注、版本、工作流和活动。
+AEM Assets允许您按时间顺序对时间轴条目进行排序，如批注、版本、工作流和活动。
 
-1. 从资产UI中，选择要显示其时间轴的资产。
-1. 单击／点按GolbalNav图标，然后选择“时 **[!UICONTROL 间轴”]**。
+1. 在资产UI中，选择要显示其时间轴的资产。
+1. 单击／点按GolbalNav图标，然后选择“ **[!UICONTROL 时间轴]**”。
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. 在时间轴中，从列表中选择一个条目。 例如，选择 **[!UICONTROL 注释]** ，以显示与资产关联的注释列表。
+1. 在时间轴中，从列表中选择一个条目。 例如，选择 **[!UICONTROL 注释]** ，以显示与资产关联的注释的列表。
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. 单击／点按日 **[!UICONTROL 期标签旁]** ,“排序” **[!UICONTROL 图标]** 。 根据您的选择，注释将按时间顺序／时间顺序排列，按时间顺序／时间顺序将注释添加到资产。
+1. 单击／点按日 **[!UICONTROL 期]** 标签旁的 **[!UICONTROL 排序图]** 标。 根据您的选择，注释会按时间顺序／时间顺序排列，按时间顺序或相反的时间顺序添加到资产中。
 
    ![chlimage_1-401](assets/chlimage_1-401.png)
 

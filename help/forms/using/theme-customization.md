@@ -1,8 +1,8 @@
 ---
 title: 主题自定义
 seo-title: 主题自定义
-description: 如何自定义AEM Forms应用程序的主题。
-seo-description: 如何自定义AEM Forms应用程序的主题。
+description: 如何自定义您的AEM Forms应用程序的主题。
+seo-description: 如何自定义您的AEM Forms应用程序的主题。
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,11 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    * 对于Android，在Eclipse中打开Android项目。
    * 对于Windows，请在Visual `MWSWindows.sln` Studio中打开。
 
-1. 导览至模板文件夹。
+1. 导航到模板文件夹。
 
-   * 在Xcode中，导航到“捕 **捉”>“www”>“wsmobile”>“js”>“运行时”>“模板** ”文件夹。
-   * 在Eclipse中，导航到资产> www > wsmobile > js > runtime > templates文 **件夹** 。
-   * 在Visual Studio中，导航到 **MWSWindows > www > wsmobile > js > runtime > templates文件夹** 。
+   * 在Xcode中，导航到“捕 **获”>“www”>“wsmobile”>“js”>“运行时”>“模板** ”文件夹。
+   * 在Eclipse中，导航到资 **产> www > wsmobile > js > runtime > templates** 文件夹。
+   * 在Visual Studio中，导航到MWSWindows > www > wsmobile > js > runtime > templates **文件夹** 。
 
 1. Open the `template.html` file for editing.
 1. 找到以下字符串：
@@ -48,7 +51,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
                  <%} else 
    ```
 
-   将其替换为 `<%`。
+   替换为 `<%`。
 
 1. 在文件中找到以下代 `template.html` 码：
 
@@ -73,11 +76,11 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 1. 导览至css文件夹。
 
    * 在Xcode中，导航到 **Capture > www > wsmobile > css**。
-   * 在Eclipse中，导航到资 **源> www > wsmobile > css**。
+   * 在Eclipse中，导航到 **资源> www > wsmobile > css**。
    * 在Visual Studio中，导航到 **MWSWindows > www > wsmobile > css**。
 
 1. Open the `_style.css` file for editing.
-1. 对于背景图像，请更 `#323232` 改为 `#fff`。
+1. 对于背景图像，请 `#323232` 更改为 `#fff`。
 1. 保存更改并关闭 `_style.css` 文件。
 1. 打开AEM Forms应用程序。
 

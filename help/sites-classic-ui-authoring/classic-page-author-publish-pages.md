@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 78%
 
 ---
 
@@ -28,15 +31,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >一些与发布有关的术语可能会引起混淆：
 >
 >* **发布/取消发布**
-   >  这些是使内容在发布环境中公开可用（或不公开）的主要操作条款。
+   >  这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
    >
    >
 * **激活／取消激活**
-   >  这些术语与发布／取消发布同义。
+   >  这两个术语与发布/取消发布同义。
    >
    >
 * **复制**
-   >  这些是描述数据（例如，页面内容、文件、代码、用户注释）从一个环境移动到另一个环境的技术术语，例如在发布或反向复制用户注释时。
+   >  这些是描述数据（例如，页面内容、文件、代码、用户注释）从一个环境移动到另一个的技术术语，例如在发布或反向复制用户注释时。
 >
 
 
@@ -47,6 +50,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* 将触发一个工作流，向相应的人员通知您的发布请求。
 >* 将显示一条消息来通知您没有权限（仅显示很短的一段时间）。
+
 >
 
 
@@ -115,7 +119,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ### 以后激活 {#activate-later}
 
-安排以后激活：
+计划激活以后：
 
 1. 在网站控制台中，转至“**激活**”菜单，然后选择“**以后激活**”。
 1. In the dialog that opens you provide the date and time for activation and click **OK**. This creates a version of the page that is activated at the specified time.
@@ -128,7 +132,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ### 稍后取消激活 {#deactivate-later}
 
-要安排稍后取消激活，请执行以下操作：
+计划您稍后取消激活：
 
 1. In the Website console, go to the **Deactivate** menu, and select **Deactivate later**.
 

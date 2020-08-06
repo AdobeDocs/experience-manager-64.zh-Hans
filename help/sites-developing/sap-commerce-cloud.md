@@ -1,8 +1,8 @@
 ---
-title: 使用SAP Commerce Cloud进行开发
-seo-title: 使用SAP Commerce Cloud进行开发
-description: SAP Commerce Cloud集成框架包括一个包含API的集成层
-seo-description: SAP Commerce Cloud集成框架包括一个包含API的集成层
+title: 使用SAPCommerce Cloud进行开发
+seo-title: 使用SAPCommerce Cloud进行开发
+description: SAPCommerce Cloud集成框架包括一个带有API的集成层
+seo-description: SAPCommerce Cloud集成框架包括一个带有API的集成层
 uuid: a780dd17-027a-4a61-af8f-3e2f600524c7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 使用SAP Commerce Cloud进行开发{#developing-with-sap-commerce-cloud}
+# 使用SAPCommerce Cloud进行开发{#developing-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ ht-degree: 0%
 该集成框架包含一个带有API的集成层。 这允许您：
 
 * 插入电子商务系统并将产品数据拉入AEM
-* 构建AEM组件，使其能够独立于特定的电子商务引擎
+* 构建AEM组件，使其能够独立于特定的eCommerce引擎
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -35,17 +35,17 @@ ht-degree: 0%
 >
 >[还提供](/help/sites-developing/ecommerce.md#api-documentation) API文档。
 
-为使用集成层提供了许多现成的AEM组件。 目前有：
+提供了许多现成的AEM组件以使用集成层。 目前有：
 
 * 产品展示组件
 * 购物车
 * 结帐
 
-对于搜索，会提供一个集成挂接，允许您使用AEM搜索、电子商务系统的搜索、第三方搜索(如Search&amp;Promote)或其组合。
+为了搜索，提供了集成挂钩，它允许您使用AEM搜索、电子商务系统的搜索、第三方搜索(如Search&amp;Promote)或其组合。
 
 ## 电子商务引擎选择 {#ecommerce-engine-selection}
 
-电子商务框架可与任何电子商务解决方案一起使用，所使用的引擎需要由AEM识别：
+电子商务框架可与任何电子商务解决方案一起使用，所使用的引擎需要由AEM进行识别：
 
 * 电子商务引擎是支持接口的OSGi服 `CommerceService` 务
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 请参阅以下示例：
 
-| `cq:commerceProvider = geometrixx` | 在标准AEM安装中，需要特定实施； 例如，geometrixx示例，其中包括通用API的最小扩展 |
+| `cq:commerceProvider = geometrixx` | 在标准AEM安装中，需要具体实施； 例如，geometrixx示例，其中包括通用API的最小扩展 |
 |---|---|
 | `cq:commerceProvider = hybris` | hybris implementation |
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Using CRXDE Lite you can see how this is handled in the product component for the hybris implementation:
+>UsingCRXDE Lite, you can see how this is handled in the product component for the hybris implementation:
 >
 >`/apps/geometrixx-outdoors/components/hybris/product/product.jsp`
 
@@ -156,15 +156,15 @@ hybris uses a user session to store information such as the customer&#39;s shopp
 Product data that is maintained in hybris needs to be available in AEM. 已实施以下机制：
 
 * An initial load of IDs is provided by hybris as a feed. 此源可能有更新。
-* hybris will supply update information via a feed(wich AEM polls)。
-* 当AEM is using product data, it will send requests back to hybris for the current data(conditional get request using last modified date)。
+* hybris will supply update information via a feed(wish AEM pols)。
+* 当AEM is using product data时，它将发送请求返回至hybris for the current data(conditional get request using last modified date)。
 * On hybris is possible to specify feed contents in a declaporational way.
-* 将源结构映射到AEM内容模型时，会在AEM端的源适配器中进行。
+* 将供给结构映射到AEM内容模型会在AEM端的供给适配器中发生。
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
-* 导入程序(b)用于AEM中目录的页面树结构的初始设置。
-* Catalog changes in hybris are is adised to AEM via a feed, thes then propagate to AEM(b)
+* 导入程序(b)用于AEM目录中页面树结构的初始设置。
+* hybris中的目录更改通过源指示到AEM, thes propagate to AEM(b)
 
    * 与目录版本相关的产品已添加／删除／更改。
    * 已批准产品。
@@ -184,7 +184,7 @@ Product data that is maintained in hybris needs to be available in AEM. 已实�
        }
       ```
 
-* AEM中的目录配置可识别“ **暂存** ”和 **“在线** ”目录版本。
+* AEM中的目录配置可识别 **暂存** 和 **联机目** 录版本。
 
 * 在目录版本之间同步产品需要相应AEM页面(a, c)的(de-)激活
 
@@ -204,7 +204,7 @@ Product data that is maintained in hybris needs to be available in AEM. 已实�
 
 #### 产品和变体的架构 {#architecture-of-product-and-variants}
 
-一个产品可以有多个变体； 例如，它可能因颜色和／或大小而异。 产品必须定义驱动变化的属性； 我们用这些变 *型轴来定*&#x200B;义。
+一个产品可以有多个变体； 例如，它可能因颜色和／或大小而异。 产品必须定义驱动变化的属性； 我们用这些变 *型轴来定义*。
 
 但是，并非所有属性都是变型轴。 变化也会影响其他属性； 例如，价格可能取决于大小。 Thesper properties cannot be selected by the shopper, and eso not be consured to variant axes.
 
@@ -229,7 +229,7 @@ The product/variant resource does not always hold the actual product dataIt migh
 1. 再加一个
 >
 >   
-通过产品引用的属性选 `variationAxis` 择此附加变体(通常适 `color` 用于Geometrixx Outdoors)。
+通过产品引用的属性选 `variationAxis` 择此附加变体(通常 `color` 用于Geometrixx Outdoors)。
 
 #### 产品引用和产品数据 {#product-references-and-product-data}
 
@@ -429,16 +429,16 @@ public class AxisFilter implements VariantFilter {
 * 存储
 
    * In the hybris case, the hybris server owns the cart.
-   * 在AEM-generic案例中，购物车存储在ClientContext [中](/help/sites-administering/client-context.md)。
+   * 在AEM-generic case购物车中，购物车存储在 [ClientContext中](/help/sites-administering/client-context.md)。
 
 **个性化**
 
-* 个性化应始终通过ClientContext [推动](/help/sites-administering/client-context.md)。
-* A ClientContext `/version/` of the cart is created in all cases:
+* 个性化应始终通过 [ClientContext](/help/sites-administering/client-context.md)。
+* AClientContext `/version/` of the cart is created in all cases:
 
    * 应使用该方法添加产 `CommerceSession.addCartEntry()` 品。
 
-* 以下说明了ClientContext购物车中购物车信息的示例：
+* 以下说明了ClientContext车中购物车信息的示例：
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -505,12 +505,12 @@ public class AxisFilter implements VariantFilter {
    >
 * 检查方法是否可用
 >* 添加定价信息
->* 要使购物者能够在AEM中更新订单页面（包括发运方法的超集和描述它们的文本），同时仍具有显示相关信息的控 `CommerceSession` 件。
+>* 要使购物者能够更新AEM中的订单页（包括发运方法的超集和描述它们的文本），同时仍具有显示相关信息的控 `CommerceSession` 件。
 
 
 **付款处理**
 
-* 支付 `CommerceSession` 处理连接也归该用户所有。
+* 付款 `CommerceSession` 处理连接也归该用户所有。
 * 实施者需要向实施添加特定呼叫(到他们选择的付款处理服务 `CommerceSession` )。
 
 **订单履行**
@@ -552,23 +552,23 @@ public class AxisFilter implements VariantFilter {
 
 ### 用户集成 {#user-integration}
 
-AEM与各种电子商务系统之间提供集成。 这需要一种在不同系统之间同步购物者的策略，这样AEM特定的代码就只能知道AEM，反之亦然：
+AEM与各种电子商务系统之间提供集成。 这需要一种在不同系统之间同步购物者的策略，这样AEM特定的代码只需了解AEM，反之亦然：
 
 * 身份验证
 
-   假定AEM是唯一的 *Web* 前端，因此执行 *所有* 身份验证。
+   AEM被假定为唯 *一* 的web前端，因此执行 *所有* 身份验证
 
 * Accounts in Hybris
 
-   AEM creates a ecompoged(下属)account in hybris for each shopper. 此帐户的用户名与AEM用户名相同。 密码随机密码是自动生成并存储在AEM中（已加密）的。
+   AEM creates a ecoped(下属)account in hybris for each shopper 此帐户的用户名与AEM用户名相同。 密码随机密码是自动生成并存储（加密）在AEM中的。
 
 #### 预先存在的用户 {#pre-existing-users}
 
-AEM front-end can be posited in front of an existing hybris implementation. Asso a hybris engine can be added to an existing AEM installation. 为此，系统必须能够正常地处理任一系统中的现有用户：
+AEM前端可定位在现有hybris实现的前面。 Asso a hybris engine can be added to an existing AEM installation. 为此，系统必须能够正常地处理任一系统中的现有用户：
 
 * AEM -> hybris
 
-   * 登录到hybris时，如果AEM用户不存在：
+   * 登录到hybris时，如果AEM user不已存在：
 
       * create new hybris user with a cryptographically random password
       * store hybris username in the user directory of the AEM user
@@ -577,10 +577,10 @@ AEM front-end can be posited in front of an existing hybris implementation. Asso
 
 * hybris -> AEM
 
-   * 登录AEM时，如果系统识别用户：
+   * 登录到AEM时，如果系统识别用户：
 
       * attemt log in to hybris with supplied username/pwd
-      * 如果成功，请在AEM中使用相同的口令创建新用户（AEM特定的salt将导致AEM特定的哈希）
+      * 如果成功，请在AEM中使用相同的口令创建新用户(AEM特定的salt将导致AEM特定的哈希)
    * 在Sling中实现了上述算法 `AuthenticationInfoPostProcessor`
 
       * See: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`

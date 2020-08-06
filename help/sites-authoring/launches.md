@@ -11,11 +11,14 @@ topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 96%
 
 ---
 
 
-# 启动项 概述{#launches}
+# 启动项概述{#launches}
 
 使用启动项，您可以有效地开发内容的将来版本。
 
@@ -82,12 +85,14 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 对源页面所做的更改会自动体现在启动副本中（如果进行了继承设置，即设置为 Live Copy）。
    * 可以在不中断这些自动更新或源页面的情况下对启动副本进行更改。
+
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
 * [创建嵌套启动项](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - 一个启动项嵌套在另一个启动项中：
 
    * 源是现有的启动项。
    * 您可以将[嵌套启动项提升](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch)到任何目标；该目标可以是父启动项或顶层源页面（生产）。
+
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
    >[!CAUTION]

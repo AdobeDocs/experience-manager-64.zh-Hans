@@ -54,13 +54,13 @@ PDF生成器为您提供多个预定义的PDF设置。 您不能修改这些预�
 * 打印到更高的图像分辨率
 * 使用其他设置来保留有关原始文档的最大信息量。
 
-这些PDF文件可以在Adobe Acrobat 5和Adobe Acrobat Reader® 5或更高版本中打开。
+这些PDF文件可以在Adobe Acrobat5和Adobe AcrobatReader® 5或更高版本中打开。
 
-**超大页面：** 创建适合可靠查看和打印大于200 x 200英寸的工程绘图的PDF文档。 创建的PDF文档可以在Adobe Acrobat Professional和Acrobat Standard、版本7或更高版本以及Adobe Reader 7或更高版本中打开。
+**超大页面：** 创建适合可靠查看和打印大于200 x 200英寸的工程绘图的PDF文档。 创建的PDF文档可以在Adobe Acrobat专业版和Acrobat Standard版（版本7或更高版本）以及Adobe Reader7或更高版本中打开。
 
-**PDF/A-1B 2005 CMYK / PDF/A-1B 2005 RGB:** 检查传入的作业是否符合ISO标准以长期保留（存档）电子文档，并仅在符合时创建PDF/A文件。 这些文件主要用于存档。 兼容文件只能包含文本、栅格图像和矢量对象； 它们不能包含加密和脚本。 此外，必须嵌入所有字体，才能打开文档并以创建方式查看。 PDF/A-1b使用PDF 1.4并将所有颜色转换为CMYK或RGB，具体取决于您选择的标准。 可以在Acrobat 5和Acrobat Reader 5及更高版本中打开使用此设置文件创建的PDF文件。 有关PDF/A的更多信息，请参阅Adobe和行业标准。
+**PDF/A-1B 2005 CMYK / PDF/A-1B 2005 RGB:** 检查传入的作业是否符合ISO标准以长期保留（存档）电子文档，并仅在符合时创建PDF/A文件。 这些文件主要用于存档。 兼容文件只能包含文本、栅格图像和矢量对象； 它们不能包含加密和脚本。 此外，必须嵌入所有字体，才能打开文档并以创建方式查看。 PDF/A-1b使用PDF 1.4并将所有颜色转换为CMYK或RGB，具体取决于您选择的标准。 可以在Acrobat 5和Acrobat Reader5及更高版本中打开使用此设置文件创建的PDF文件。 有关PDF/A的更多信息，请参阅Adobe和行业标准。
 
-**PDF/X-1a 2001:** 检查传入作业是否符合PDF/X-1a规范，并仅在符合规范时创建PDF文件。 PDF/X-1a是图形内容交换的ISO标准。 PDF/X-1a要求嵌入所有字体，指定适当的PDF框，以及以CMYK或专色显示颜色。 满足PDF/X-1a要求的PDF文件针对特定输出条件，如根据“规范”的“Web Offset Publications”进行Web Offset打印。 有关PDF/X的更多信息，请参阅Adobe和行业标准。
+**PDF/X-1a 2001:** 检查传入作业是否符合PDF/X-1a规范，并仅在符合规范的情况下创建PDF文件。 PDF/X-1a是图形内容交换的ISO标准。 PDF/X-1a要求嵌入所有字体，指定适当的PDF框，以及以CMYK或专色显示颜色。 满足PDF/X-1a要求的PDF文件针对特定输出条件，如根据“规范”的“Web Offset Publications”进行Web Offset打印。 有关PDF/X的更多信息，请参阅Adobe和行业标准。
 
 **PDF/X-3 2002:** 检查传入作业是否符合PDF/X-3规范，并仅在符合规范时创建PDF文件。 与PDF/X-1a一样，PDF/X-3是图形内容交换的ISO标准。 主要区别在于PDF/X-3支持与设备无关的颜色。
 
@@ -73,15 +73,15 @@ PDF生成器为您提供多个预定义的PDF设置。 您不能修改这些预�
 * 不会根据文本方向或文档结构约定(DSC)注释自动旋转页面
 * 使用其他设置来保留有关原始文档的最大信息量。
 
-如果打印作业的字体无法嵌入，则打印作业将失败。 可以在Acrobat 5和Acrobat Reader 5及更高版本中打开这些PDF文件。
+如果打印作业的字体无法嵌入，则打印作业将失败。 这些PDF文件可以在Acrobat 5和Acrobat Reader5及更高版本中打开。
 
 >[!NOTE]
 >
 >在创建要发送到商业打印机或印前服务提供商的PDF文件之前，请确定输出分辨率和其他设置，或使用建议的设置请求。joboptions文件。 您可能需要为特定提供商自定义Adobe PDF设置，然后提供您自己的。joboptions文件。
 
-**最小文件大小：** 创建PDF文件，用于在Web或内部网上显示，或通过电子邮件系统分发，以便在屏幕上查看。 这组选项使用压缩、缩减采样和相对较低的图像分辨率。 它将所有颜色转换为sRGB，除非必要，否则不嵌入字体。 它还优化用于字节服务的文件。 可以在Acrobat 5和Acrobat Reader 5.0及更高版本中打开这些PDF文件。
+**最小文件大小：** 创建PDF文件，用于在Web或内部网上显示，或通过电子邮件系统分发，以便在屏幕上查看。 这组选项使用压缩、缩减采样和相对较低的图像分辨率。 它将所有颜色转换为sRGB，除非必要，否则不嵌入字体。 它还优化用于字节服务的文件。 这些PDF文件可以在Acrobat 5和Acrobat Reader5.0及更高版本中打开。
 
-**标准：** 创建PDF文件以打印到桌面打印机或数字复印机、在CD上发布或作为发布验证发送到客户端。 这组选项使用压缩和缩减采样来减小文件大小。 它还嵌入文件中使用的所有字体的子集，将所有颜色转换为sRGB，并打印到中等分辨率以创建原始文档的合理精确再现。 请注意，默认情况下不嵌入Microsoft Windows字体子集。 可以在Acrobat 5和Acrobat Reader 5.0及更高版本中打开这些PDF文件。
+**标准：** 创建PDF文件以打印到桌面打印机或数字复印机、在CD上发布或作为发布验证发送到客户端。 这组选项使用压缩和缩减采样来减小文件大小。 它还嵌入文件中使用的所有字体的子集，将所有颜色转换为sRGB，并打印到中等分辨率以创建原始文档的合理精确再现。 请注意，默认情况下不嵌入Microsoft Windows字体子集。 这些PDF文件可以在Acrobat 5和Acrobat Reader5.0及更高版本中打开。
 
 ## 添加或编辑PDF设置 {#add-or-edit-pdf-settings}
 
@@ -89,7 +89,7 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
 
 1. 在管理控制台中，单击“服务”>“PDF生成器”>“Adobe PDF设置”。
 1. 单击“新建”或单击现有设置的名称。
-1. 在“新建／编辑Adobe PDF设置”页面上，完成以下部分中的所需信息：
+1. 在“新建／编辑Adobe PDF设置”页面，完成以下部分中的所需信息：
 
    [常规选项](configuring-pdf-settings.md#general-options)
 
@@ -131,7 +131,7 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
 
 ### 文件选项 {#file-options}
 
-**兼容性：** PDF文件的兼容性级别。 对于将广泛分发的文档，请考虑选择Acrobat 4(PDF 1.3)或Acrobat 5(PDF 1.4)以确保所有用户都可以视图和打印文档。 如果您使用Acrobat 5兼容性或更高版本创建文件，则它们可能与Acrobat的早期版本不兼容。 以下子部分显示了使用不同级别的Acrobat兼容性创建的PDF文件之间的一些差异。
+**兼容性：** PDF文件的兼容性级别。 对于将广泛分发的文档，请考虑选择Acrobat 4(PDF 1.3)或Acrobat 5(PDF 1.4)，以确保所有用户都可以视图和打印文档。 如果使用Acrobat 5兼容性或更高版本创建文件，则它们可能与Acrobat的早期版本不兼容。 以下子部分显示了使用不同级别的Acrobat兼容性创建的PDF文件之间的一些差异。
 
 <table> 
  <tbody> 
@@ -142,22 +142,22 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
    <th><p>Acrobat 7(PDF 1.6)和Acrobat 8(PDF 1.7)</p> </th> 
   </tr> 
   <tr> 
-   <td><p>可以使用Acrobat 3.0和Acrobat Reader 3.0及更高版本打开。</p> </td> 
-   <td><p>可以使用Acrobat 3.0和Acrobat Reader 3.0及更高版本打开。 特定于更高版本的功能可能丢失或无法查看。</p> </td> 
-   <td><p>大多数可以使用Acrobat 4和Acrobat Reader 4.0及更高版本打开。 特定于更高版本的功能可能丢失或无法查看。</p> </td> 
-   <td><p>大多数可以使用Acrobat 4和Acrobat Reader 4.0及更高版本打开。 特定于更高版本的功能可能丢失或无法查看。</p> </td> 
+   <td><p>可在Acrobat3.0和Acrobat Reader3.0及更高版本中打开。</p> </td> 
+   <td><p>可在Acrobat3.0和Acrobat Reader3.0及更高版本中打开。 特定于更高版本的功能可能丢失或无法查看。</p> </td> 
+   <td><p>大部分房源可在Acrobat 4和Acrobat Reader4.0及更高版本开放。 特定于更高版本的功能可能丢失或无法查看。</p> </td> 
+   <td><p>大部分房源可在Acrobat 4和Acrobat Reader4.0及更高版本开放。 特定于更高版本的功能可能丢失或无法查看。</p> </td> 
   </tr> 
   <tr> 
    <td><p>不能包含使用实时透明效果的图稿。 转换为PDF 1.3之前，必须拼合任何透明度。</p> </td> 
-   <td><p>支持在图稿中使用实时透明度。 （Acrobat Distiller功能会拼合透明度。）</p> </td> 
-   <td><p>支持在图稿中使用实时透明度。 （Acrobat Distiller功能会拼合透明度。）</p> </td> 
-   <td><p>支持在图稿中使用实时透明度。 （Acrobat Distiller功能会拼合透明度。）</p> </td> 
+   <td><p>支持在图稿中使用实时透明度。 (Acrobat·Distiller功能拼合透明度。)</p> </td> 
+   <td><p>支持在图稿中使用实时透明度。 (Acrobat·Distiller功能拼合透明度。)</p> </td> 
+   <td><p>支持在图稿中使用实时透明度。 (Acrobat·Distiller功能拼合透明度。)</p> </td> 
   </tr> 
   <tr> 
    <td><p>不支持图层。</p> </td> 
    <td><p>不支持图层。</p> </td> 
-   <td><p>从支持生成分层PDF文档的应用程序（如Adobe Illustrator® CS或Adobe InDesign® CS及更高版本）创建PDF文件时保留图层。</p> </td> 
-   <td><p>从支持生成分层PDF文档（如Illustrator CS或InDesign CS及更高版本）的应用程序创建PDF文件时保留图层。</p> </td> 
+   <td><p>从支持生成分层PDF文档(如Adobe Illustrator® CS或Adobe InDesign® CS及更高版本)的应用程序创建PDF文件时保留图层。</p> </td> 
+   <td><p>从支持生成分层PDF文档(如IllustratorCS或InDesignCS及更高版本)的应用程序创建PDF文件时保留图层。</p> </td> 
   </tr> 
   <tr> 
    <td><p>支持具有8种颜色剂的DeviceN色彩空间。</p> </td> 
@@ -166,7 +166,7 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
    <td><p>支持最多31种着色剂的DeviceN色彩空间。</p> </td> 
   </tr> 
   <tr> 
-   <td><p>可以嵌入多字节字体。 （嵌入时，Distiller将转换字体。）</p> </td> 
+   <td><p>可以嵌入多字节字体。 (Distiller在嵌入时转换字体。)</p> </td> 
    <td><p>可以嵌入多字节字体。</p> </td> 
    <td><p>可以嵌入多字节字体。</p> </td> 
    <td><p>可以嵌入多字节字体。</p> </td> 
@@ -182,9 +182,9 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
 
 **对象级压缩：** 将小对象（每个对象本身都不可压缩）合并到流中，然后可以高效压缩。
 
-**关闭：** 不压缩PDF文档中的任何结构信息。 如果希望用户使用Acrobat 5和更高版本视图、导航书签和其他结构性信息并与之交互，请选择此选项。
+**关闭：** 不压缩PDF文档中的任何结构信息。 如果您希望用户使用Acrobat 5及更高版本视图、导航书签和其他结构性信息并与之交互，请选择此选项。
 
-**仅标记：** 在PDF文档中压缩结构信息。 使用此选项可生成一个PDF文件，可使用Acrobat 5打开和打印。 用户无法视图Acrobat 5或Acrobat Reader 5.0中的任何辅助工具、结构或加标签的PDF信息，但他们可以在Acrobat 6和Adobe Reader 6.0中视图此信息。
+**仅标记：** 在PDF文档中压缩结构信息。 使用此选项可生成一个PDF文件，可使用Acrobat 5打开和打印。 用户无法视图Acrobat 5或Acrobat Reader5.0中的任何辅助工具、结构或加标签的PDF信息，但他们可以在Acrobat 6和Adobe Reader6.0中视图此信息。
 
 **自动旋转页面：** 根据文本或DSC注释的方向设置页面的自动旋转。 例如，某些页面（如包含表的页面）可能需要用户侧翻来阅读它们。 选择“单独”以根据该页面上的文本方向旋转每个页面。 选择“按文件集中”以根据大多数文本的方向旋转文档中的所有页面。
 
@@ -206,7 +206,7 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
 
 ### 默认页面大小 {#default-page-size}
 
-“默认页面大小”选项指定在原始文件中未指定页面大小时要使用的页面大小。 通常，Adobe PostScript文件包含此信息，但封装的PostScript(EPS)文件除外，这些文件给出边框大小，但不提供页面大小。 在任一方向上允许的最大页面大小为15,000,000英寸（31,800,000厘米）。 这些选项配置默认页面大小：
+“默认页面大小”选项指定在原始文件中未指定页面大小时要使用的页面大小。 通常，Adobe PostScript文件包含此信息，但包含封装的PostScript(EPS)文件除外，这些文件给出定界框大小，但不提供页面大小。 在任一方向上允许的最大页面大小为15,000,000英寸（31,800,000厘米）。 这些选项配置默认页面大小：
 
 **宽度：** 页面宽度
 
@@ -323,7 +323,7 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
 
 “颜色”选项设置PDF生成器的所有颜色管理信息。 有关访问“颜色”选项的说明，请参 [阅添加或编辑PDF设置](configuring-pdf-settings.md#add-or-edit-pdf-settings)。
 
-### Adobe颜色设置 {#adobe-color-settings}
+### Adobe Color设置 {#adobe-color-settings}
 
 **设置文件：** 此列表包含一列表颜色设置，这些设置也用于主要图形应用程序，如Adobe Photoshop和Adobe Illustrator。 您选择的颜色设置决定了此页面上的其他Adobe颜色设置。 例如，如果选择“无”以外的设置，则除“设备相关数据”之外的所有选项都将预定义并灰显。 只有在为“设置文件”选择“无”时，才能编辑“颜色管理策略”和“工作空间”设置。
 
@@ -335,9 +335,9 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
 
 **为颜色管理标记所有内容：** 在提取文件时嵌入国际色彩联盟用户档案并校准图像中的颜色，如果您选择了Acrobat 4(PDF 1.3)或更高版本的兼容性，则使生成的PDF文件中的颜色与设备无关。 但是，文件（RGB、灰度和CMYK）中与设备相关的色彩空间将转换为与设备无关的色彩空间（CalRGB、CalGray和LAB）。
 
-**为色彩管理仅标记图像：** 如果您选择了Acrobat 4(PDF 1.3)兼容性，则在提取文件时，ICC用户档案仅嵌入在图像中，而不嵌入文本或图形。 此选项可防止黑色文本发生任何颜色偏移。 但是，图像（RGB、灰度和CMYK）中与设备相关的色彩空间将转换为与设备无关的色彩空间（CalRGB、CalGray和LAB）。 文本和图形不进行转换。
+**为色彩管理仅标记图像：** 如果您选择了Acrobat 4(PDF 1.3)兼容性，则在提取文件时，ICC用户档案只嵌入在图像中，而不嵌入文本或图形中。 此选项可防止黑色文本发生任何颜色偏移。 但是，图像（RGB、灰度和CMYK）中与设备相关的色彩空间将转换为与设备无关的色彩空间（CalRGB、CalGray和LAB）。 文本和图形不进行转换。
 
-**将所有颜色转换为sRGB或将所有颜色转换为CMYK:** 校准文件中的颜色，使颜色设备与“标记颜色管理的所有内容”相似。 如果选择Acrobat 4(PDF 1.3)或更高版本的兼容性并转换为sRGB，则CMYK和RGB图像将转换为sRGB。
+**将所有颜色转换为sRGB或将所有颜色转换为CMYK:** 校准文件中的颜色，使颜色设备与“标记颜色管理的所有内容”相似。 如果选择了Acrobat 4(PDF 1.3)或更高版本的兼容性并转换为sRGB，则CMYK和RGB图像将转换为sRGB。
 
 无论您选择何种兼容性选项，灰度图像都保持不变。 这通常会减小PDF文件的大小并提高显示速度，因为描述RGB图像所需的信息比描述CMYK图像所需的信息少。 由于RGB是显示器上使用的本机色彩空间，因此在显示过程中无需进行颜色转换，这有助于快速在线查看。 如果PDF文件用于联机或低分辨率打印机，则建议使用此选项。
 
@@ -375,7 +375,7 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
 
 ### 设备相关数据 {#device-dependent-data}
 
-如果您使用使用高端文档和图形应用程序（如Adobe Illustrator和Adobe InDesign）创建的文档，这些选项将适用。 有关详细信息，请参阅应用程序附带的文档。
+如果您使用使用高端文档和图形应用程序(如Adobe Illustrator和Adobe InDesign)创建的文档，这些选项将适用。 有关详细信息，请参阅应用程序附带的文档。
 
 传输功能用于艺术效果并调整特定输出设备的规格。 例如，用于在特定照排机上输出的文件可以包含补偿该打印机固有的点增益的传递函数。
 
@@ -391,23 +391,23 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
 
 **保留半色调信息：** 在文件中保留任何半色调信息。 半色调信息由控制油墨半色调设备在纸张上特定位置沉积的量的点组成。 改变点大小和密度可产生灰色或连续颜色变化的错觉。 对于CMYK图像，使用四个半色调网屏，每个网屏分别用于打印过程中使用的油墨。
 
-在传统印刷制作中，半色调是通过将半色调网置于薄膜和图像之间，然后曝光薄膜而产生的。 等效的电子内容（如Adobe Photoshop中的内容）允许用户在制作胶片或纸张输出之前指定半色调网屏属性。 半色调信息用于特定输出设备。
+在传统印刷制作中，半色调是通过将半色调网置于薄膜和图像之间，然后曝光薄膜而产生的。 电子等效项(如在Adobe Photoshop)允许用户在制作胶片或纸张输出之前指定半色调网屏属性。 半色调信息用于特定输出设备。
 
 ## 高级选项 {#advanced-options}
 
 “高级”选项指定PDF文件中要保留的文档结构约定(DSC)注释，以及如何设置影响从PostScript转换的其他选项。 在PostScript文件中，DSC注释包含有关该文件的信息（如原始应用程序、创建日期和页面方向）。 它们还为文件中的页面描述提供结构（如prolog节的开始和结束语句）。 文档打印或印刷时，DSC注释很有用。 有关访问高级选项的说明，请参 [阅添加或编辑PDF设置](configuring-pdf-settings.md#add-or-edit-pdf-settings)。
 
-使用“高级”选项时，了解PostScript语言及其如何翻译为PDF会很有帮助。 (请参 [阅Adobe PostScript 3](https://www.adobe.com/products/postscript/main.html)。)
+使用“高级”选项时，了解PostScript语言及其如何翻译为PDF会很有帮助。 (见 [Adobe PostScript](https://www.adobe.com/products/postscript/main.html)3。)
 
-**允许PostScript文件覆盖Adobe PDF设置：** 使用存储在PostScript文件中的设置，而不是当前的Adobe PDF设置文件。 在处理PostScript文件之前，可以在文件中放置参数以控制以下方面：
+**允许PostScript文件覆盖Adobe PDF设置：** 使用存储在PostScript文件中的设置而不是当前的Adobe PDF设置文件。 在处理PostScript文件之前，可以在文件中放置参数以控制以下方面：
 
 * 文本和图形的压缩
 * 采样图像的缩减采样和编码
-* 嵌入1类字体和1类多主字体实例
+* 嵌入1类字体和1类多种主控字体实例
 
-**允许PostScript XObject:** PostScript XObject存储在同一文件的许多页面上显示的信息，如背景图像或页眉和页脚信息。 使用PostScript XObject可以加快打印速度，但需要更多打印机内存。 要阻止创建PostScript XObject，如果创建的PDF文件与Acrobat 5(PDF 1.4)或更高版本的兼容性，请取消选择此选项。
+**允许PostScript XObject:** PostScript XObject存储在同一文件的许多页面上显示的信息，如背景图像或页眉和页脚信息。 使用PostScript XObject可以加快打印速度，但需要更多打印机内存。 要阻止创建PostScript XObject，如果创建的PDF文件兼容Acrobat 5(PDF 1.4)或更高版本，请取消选择此选项。
 
-**将渐变转换为平滑暗色：** 将Acrobat 4和更高版本的混合色转换为平滑的阴影，使PDF文件更小，并有可能提高最终输出的质量。 PDF Generator可转换来自Adobe Illustrator、Adobe InDesign、Adobe FreeHand MX、CorelDraw、Quark Xpress和Microsoft PowerPoint的渐变。
+**将渐变转换为平滑暗色：** 将Acrobat 4和更高版本的混合色转换为平滑的阴影，使PDF文件更小，并可能提高最终输出的质量。 PDF Generator转换来自Adobe Illustrator、Adobe InDesign、Adobe FreeHandMX、CorelDraw、QuarkXpress和Microsoft PowerPoint的渐变。
 
 **将平滑线转换为曲线：** 减少在CAD绘图中构建曲线所使用的控制点数量，从而缩小PDF并加快屏幕渲染。
 
@@ -417,7 +417,7 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
 
 **叠印默认值为非零叠印：** 防止CMYK值为零的叠印对象消除它们下面的CMYK对象。 在PDF文件中插入OPM 1图形状态参数即可实现此效果，只要存在Setoverprint运算符。
 
-**在PDF文件中保存Adobe PDF设置：** 嵌入用于创建PDF文件的设置文件。 您可以在Acrobat的“文件附件”对话框中打开和视图设置文件（文件扩展名为。joboptions）。 Adobe PDF设置文件将成为PDF文件内嵌入式文件树中的一个项目。
+**在PDF文件中保存Adobe PDF设置：** 嵌入用于创建PDF文件的设置文件。 您可以在Acrobat的“文件附件”对话框中打开并视图设置文件（扩展名为。joboptions）。 Adobe PDF设置文件成为PDF文件内EmbeddedFiles树中的一个项。
 
 **如果可能，将原始JPEG图像保存为PDF:** 处理任何压缩的JPEG图像（已使用DCT编码压缩的图像），而不重新压缩它们。 如果选择此选项，PDF Generator将解压JPEG图像，以确保它们不会损坏。 但是，它不会重新压缩有效图像，因此原始图像的处理不会受到影响。 选择此选项后，性能会提高，因为只会执行解压缩（而非重新压缩），并且图像数据和元数据会保留。
 
@@ -433,7 +433,7 @@ PDF设置可精确确定文件的转换方式及其生成的PDF结构和功能�
 
 **保留OPI注释：** 保留替换仅用于放置(FPO)图像或用高分辨率图像进行注释所需的信息，该图像位于支持开放印前界面(OPI)版本1.3和2.0的服务器上。
 
-**保留DSC的文档信息：** 保留标题、创建日期和时间等信息。 在Acrobat中打开PDF文件时，此信息会显示在“文档属性说明”面板中。
+**保留DSC的文档信息：** 保留标题、创建日期和时间等信息。 在Acrobat打开PDF文件时，此信息会显示在“文档属性描述”面板中。
 
 **调整页面大小并将图稿居中放置到EPS文件中：** 将EPS图像居中并调整页面大小以紧贴图像。 此选项仅适用于由单个EPS文件组成的作业。
 
@@ -451,13 +451,13 @@ PDF Generator可以检查PostScript文件中的文档内容，确保在创建PDF
 
 有关访问“标准”报告和规范选项的说明，请参 [阅添加或编辑PDF设置](configuring-pdf-settings.md#add-or-edit-pdf-settings)。
 
-**合规标准：** 选择一个标准以生成报告，指示文件是否符合要求，如果不符合，则指示遇到了哪些问题。 当“常规设置”页面上的“兼容性”设置为Acrobat 4.0时，将启用以下选项。 当“兼容性”设置为Acrobat 5.0时，只有Acrobat 5.0选项可供选择。 当“兼容性”设置为替代选项时，以下选项将灰显：
+**合规标准：** 选择一个标准以生成报告，指示文件是否符合要求，如果不符合，则指示遇到了哪些问题。 当“常规设置”页上的“兼容性”设置为“Acrobat 4.0”时，将启用以下选项。 当“兼容性”设置为“Acrobat 5.0”时，只有“Acrobat 5.0”选项可供选择。 当“兼容性”设置为替代选项时，以下选项将灰显：
 
-* PDF/X-1a（与Acrobat 4.0兼容）
-* PDF/X-3（与Acrobat 4.0兼容）
-* PDF/X-1a（与Acrobat 5.0兼容）
-* PDF/X-3（与Acrobat 5.0兼容）
-* PDF/A-1b（Acrobat 5.0兼容）
+* PDF/X-1a(兼容Acrobat 4.0)
+* PDF/X-3(兼容Acrobat 4.0)
+* PDF/X-1a(兼容Acrobat 5.0)
+* PDF/X-3(兼容Acrobat 5.0)
+* PDF/A-1b(兼容Acrobat 5.0)
 
 ### PDF/X标准选项 {#options-for-pdf-x-standards}
 
@@ -493,7 +493,7 @@ PDF Generator可以检查PostScript文件中的文档内容，确保在创建PDF
 
 ### PDF/A标准选项 {#options-for-pdf-a-standard}
 
-当“兼容性”（在“常规”区域）设置为Acrobat 4(PDF 1.3)或Acrobat 5(PDF 1.4)时，将启用这些选项。
+当“兼容性”（在“常规”区域）设置为“Acrobat 4”(PDF 1.3)或“Acrobat 5”(PDF 1.4)时，将启用这些选项。
 
 **不符合以下条件时：** 指定如果PostScript文件不符合PDF/A要求，是否创建PDF文件。
 
@@ -519,13 +519,13 @@ PDF Generator可以检查PostScript文件中的文档内容，确保在创建PDF
 
 **页面布局：** 确定是以单页、对开页、连续页还是连续对开页模式查看文档。
 
-**放大率：** 设置打开时用于显示文档的缩放级别。 默认情况下，在Acrobat或Adobe Reader首选项中使用用户配置的放大率值。
+**放大率：** 设置打开时用于显示文档的缩放级别。 默认设置在Acrobat或Adobe Reader首选项中使用用户配置的放大率值。
 
 **打开到页码：** 设置文档在打开的页面，通常为第1页。
 
 >[!NOTE]
 >
->为放大率和页面布局选项设置“默认”时，将使用Acrobat或Adobe Reader中“页面显示”首选项中的单个用户设置。
+>为放大率和页面布局选项设置“默认”时，将使用Acrobat或Adobe Reader的“页面显示”首选项中的单个用户设置。
 
 ### 窗口选项 {#window-options}
 
@@ -551,7 +551,7 @@ PDF Generator可以检查PostScript文件中的文档内容，确保在创建PDF
 
 >[!NOTE]
 >
->如果隐藏菜单栏和工具栏，则用户在Acrobat中打开文件时无法应用命令和选择工具，除非他们知道键盘快捷键。
+>如果隐藏菜单栏和工具栏，则用户无法应用命令和选择工具，除非他们知道在Acrobat打开文件时的键盘快捷键。
 
 ## 上传和下载序文件和尾文件 {#uploading-and-downloading-prologue-and-epilogue-files}
 

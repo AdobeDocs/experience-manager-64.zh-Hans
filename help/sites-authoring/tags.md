@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
 translation-type: tm+mt
 source-git-commit: 8326ee711558a390f79fc185fc37bbbb3097e309
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 76%
 
 ---
 
@@ -48,9 +51,9 @@ source-git-commit: 8326ee711558a390f79fc185fc37bbbb3097e309
 
 ## 应用标记 {#applying-tags}
 
-In the author environment, authors may apply tags by accessing the page properties and entering one or more tags in the **Tags/Keywords** field.
+在创作环境中，作者可以通过访问页面属性并在&#x200B;**标记/关键字**&#x200B;字段中输入一个或多个标记来应用标记。
 
-To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. “标 **准标记** ”选项卡是默认的命名空间，这意味着分类没有 `namespace-string:` 前缀。 
+To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. **标准标记**&#x200B;选项卡是默认的命名空间，这意味着分类前面没有 `namespace-string:` 前缀。
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -66,7 +69,7 @@ To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Pr
 
 >[!NOTE]
 >
->激活页面时，会自动打开一个对话框，并允许您激活属于该页面的未激活标记。
+>激活页面时，会自动打开一个对话框，通过该对话框可以激活属于该页面的未激活标记。
 
 **取消激活**
 
@@ -74,7 +77,7 @@ To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Pr
 
 ## 标记云 {#tag-clouds}
 
-标记云显示一组标记，用于当前页面、整个网站或最常访问的标记。 标记云是一种突出显示用户感兴趣的问题的方法。 用于显示标记的文本大小因其使用而异。
+标记云显示一组标记，用于当前页面、整个网站或最常访问的标记。 标记云是突出显示用户感兴趣的问题的一种方法。 用于显示标记的文本大小因标记的使用而异。
 
 [标记云](/help/sites-authoring/default-components-foundation.md#tag-cloud)组件（通用组件组）用于向页面添加标记云。
 

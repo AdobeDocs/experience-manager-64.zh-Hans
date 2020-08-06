@@ -12,6 +12,9 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 92%
 
 ---
 
@@ -45,6 +48,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
       1. 从工具栏中选择&#x200B;**创建**&#x200B;以打开选择框。
       1. 从该选择框中，选择&#x200B;**创建启动项**&#x200B;以打开向导。
+
    >[!NOTE]
    >
    >在“站 **点** ”控制台中，您还可以使用选 [择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) ，在选择创建之前选择 **页面**。
@@ -55,6 +59,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 导航到所需的位置。
    * 选择源页面并进行确认（复选标记）。
+
    根据需要重复执行上述步骤。
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -70,6 +75,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * **包括子页面**：
 
       * 指定您希望创建的启动项包括还是不包括子页面。默认情况下，将包括这些子页面。
+
    单击&#x200B;**下一步**&#x200B;以继续。
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
@@ -84,6 +90,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       默认情况下，此选项处于选中状态。
 
    * **启动日期**：激活启动副本的日期和时间（取决于&#x200B;**生产就绪**&#x200B;标记；请参阅[启动项 - 事件的顺序](/help/sites-authoring/launches.md#launches-the-order-of-events)）。
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. 使用&#x200B;**创建**&#x200B;完成该过程并创建新启动项。确认对话框将询问您是否要立即打开该启动项：

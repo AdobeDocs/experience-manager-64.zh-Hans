@@ -1,6 +1,6 @@
 ---
 title: 扩展资产搜索
-description: 将AEM资产的搜索功能扩展到开箱即用的按字符串搜索资产之外。
+description: 将AEM Assets的搜索功能扩展到开箱即用的按字符串搜索资产之外。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
@@ -13,11 +13,11 @@ ht-degree: 15%
 
 # 扩展资产搜索 {#extending-assets-search}
 
-您可以扩展Adobe Experience Manager(AEM)资产搜索功能。 开箱即用，AEM资产会按字符串搜索资产。
+您可以扩展Adobe Experience Manager(AEM)资产搜索功能。 开箱即用，AEM Assets会按字符串搜索资产。
 
 搜索通过QueryBuilder界面完成，因此可以使用多个谓词自定义搜索。 可以在以下目录中叠加默认谓词集： `/apps/dam/content/search/searchpanel/facets`.
 
-您还可以向AEM资产管理面板添加其他选项卡。
+您还可以向“AEM Assets管理员”面板添加其他选项卡。
 
 >[!CAUTION]
 >
@@ -36,7 +36,7 @@ ht-degree: 15%
 
 ## 添加选项卡 {#adding-tabs}
 
-您可以通过在AEM资产管理员中配置其他搜索选项卡来添加这些选项卡。 要创建其他选项卡：
+您可以通过在AEM Assets管理员中配置其他搜索选项卡来添加这些选项卡。 要创建其他选项卡：
 
 1. 如果文件夹结 `/apps/wcm/core/content/damadmin/tabs,`构尚不存在，请创建该文件夹结构，然后从中 `tabs` 复制并 `/libs/wcm/core/content/damadmin` 粘贴该节点。
 1. 根据需要创建和配置第二个选项卡。
@@ -47,7 +47,7 @@ ht-degree: 15%
 
 ## 创建自定义谓词 {#creating-custom-predicates}
 
-AEM资产附带一组预定义谓词，可用于自定义资产共享页面。 以这种方式自定义资产共享在创建和配 [置资产共享页面中有介绍](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)。
+AEM Assets提供了一组预定义谓词，可用于自定义资产共享页面。 以这种方式自定义资产共享在创建和配 [置资产共享页面中有介绍](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)。
 
 除了使用预先存在的谓词，AEM开发人员还可以使用查询生成器API创建 [自己的谓词](/help/sites-developing/querybuilder-api.md)。
 
@@ -303,6 +303,6 @@ AEM资产附带一组预定义谓词，可用于自定义资产共享页面。 �
 
 ## 自定义搜索结果 {#customizing-search-results}
 
-在“资产共享”页面上显示搜索结果受所选镜头的约束。 AEM资产附带一组预定义的镜头，可用于自定义资产共享页面。 以这种方式自定义资产共享在创建和配 [置资产共享页面中有介绍](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)。
+在“资产共享”页面上显示搜索结果受所选镜头的约束。 AEM Assets提供了一套预定义的镜头，可用于自定义资产共享页面。 以这种方式自定义资产共享在创建和配 [置资产共享页面中有介绍](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)。
 
-除了使用预先存在的镜头外，AEM开发人员还可以创建自己的镜头。
+除了使用预先存在的镜头外，AEM开发人员还可以制作自己的镜头。

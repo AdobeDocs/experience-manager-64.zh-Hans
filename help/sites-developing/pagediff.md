@@ -28,11 +28,11 @@ ht-degree: 7%
 
 ## 操作详细信息 {#operation-details}
 
-在比较页面版本时，AEM会在后台重新创建用户希望进行比较的先前版本，以便进行比较。 这需要能够呈现内容 [进行并排比较](/help/sites-authoring/page-diff.md#presentation-of-differences)。
+在比较页面版本时，用户希望比较的先前版本由AEM在后台重新创建，以便进行比较。 这需要能够呈现内容 [进行并排比较](/help/sites-authoring/page-diff.md#presentation-of-differences)。
 
-此休闲操作由AEM在内部完成，对用户是透明的，无需任何干预。 但是，在CRX DE Lite中查看存储库的管理员将在内容结构中看到这些重新创建的版本。
+此娱乐操作由AEM内部完成，对用户透明，无需任何干预。 但是，在CRX DE Lite中查看存储库的管理员将在内容结构中看到这些重新创建的版本。
 
-根据AEM修补程序级别，行为会有所不同，可能需要特定权限才能正常工作。
+根据AEM修补程序级别，行为不同，可能需要特定权限才能正常工作。
 
 ### AEM 6.4.3之前 {#prior-to-aem}
 
@@ -40,7 +40,7 @@ ht-degree: 7%
 
 `/content/versionhistory/<userId>/<site structure>`
 
-因为在使用页面差异机制时，AEM会重新创建页面的先前版本，为了使用该功能，用户必须具有某些JCR权限。
+因为在使用页面差异机制时，AEM重新创建页面的先前版本，为了使用该功能，用户必须具有某些JCR权限。
 
 >[!CAUTION]
 >
@@ -58,11 +58,11 @@ ht-degree: 7%
 
 ## 开发人员限制 {#developer-limitations}
 
-以前，在经典UI中，必须考虑特殊开发因素以促进AEM差异(如使用标 `cq:text` 签库或自定义将OSGi服务 `DiffService` 集成到组件中)。 新的差异功能不再需要此功能，因为差异是通过DOM比较在客户端发生的。
+以前，在经典UI中，必须特别考虑开发以促进AEM扩展(如使用标 `cq:text` 签库，或自定义将OSGi服务 `DiffService` 集成到组件中)。 新的差异功能不再需要此功能，因为差异是通过DOM比较在客户端发生的。
 
 但是，开发人员需要考虑许多限制。
 
-* 此功能使用与AEM产品不间隔的CSS类。 如果页面中包含具有相同名称的其他自定义CSS类或第三方CSS类，则差异的显示可能会受到影响。
+* 此功能使用名称与AEM产品不间隔的CSS类。 如果页面中包含具有相同名称的其他自定义CSS类或第三方CSS类，则差异的显示可能会受到影响。
 
    * `html-added`
    * `html-removed`

@@ -11,17 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 0%
 
 ---
 
 
 # 导入和导出PDF Generator配置文件 {#importing-and-exporting-pdf-generator-configuration-files}
 
-配置文件包含PDF生成器转换信息，包括PDF、文件类型和安全设置。
+配置文件包含PDF Generator转换信息，包括PDF、文件类型和安全设置。
 
 >[!NOTE]
 >
->无法通过导入自定义的native2pdfconfig.xml文件来更改PDF Generator的超时设置。 该文件中的超时设置仅供参考，并在PDF生成器中显示当前设置。 要更改超时设置，请参阅安装和部署AEM表单中的“设置PDF生成 [器性能参数”](https://www.adobe.com/go/learn_aemforms_installJBoss_63)。
+>无法通过导入自定义本机2pdfconfig.xml文件来更改PDF Generator的超时设置。 该文件中的超时设置仅供参考，并显示PDF生成器中的当前设置。 要更改超时设置，请参阅安装和部署AEM表单中的“设置PDF生成 [器性能参数”](https://www.adobe.com/go/learn_aemforms_installJBoss_63)。
 
 ## 导出当前配置文件 {#export-your-current-configuration-file}
 
@@ -29,7 +32,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 1. 要导出设置，请选择相应的选项：
 
    * 要导出所有已命名的设置，请选择“下载整个配置”。
-   * 要仅导出一个Adobe PDF设置、安全性设置或文件类型设置，请选择“下载最小配置”。
+   * 要仅导出一个Adobe PDF设置、安全设置或文件类型设置，请选择“下载最小配置”。
 
       如果要导出最小配置，请选择要导出的Adobe PDF、安全性和文件类型设置。
 
@@ -47,11 +50,11 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 ## 转换AutoCAD文件内的所有图层 {#convert-all-layers-within-autocad-files}
 
-默认情况下，PDF生成器仅将AutoCAD文件的默认层转换为PDF，而不是将文件中的所有层转换为PDF。 要转换所有图层，请按照以下步骤操作。
+默认情况下，PDF Generator仅将AutoCAD文件的默认图层转换为PDF，而不是将文件中的所有图层转换为PDF。 要转换所有图层，请按照以下过程操作。
 
 1. 在管理控制台中，单击“服务”>“PDF生成器”>“配置文件”>“导出配置”。
 1. 选择“下载整个配置”，然后单击“下载”。
-1. 在文本编辑器中，打开下载的文件，并在标 `AutoCAD` 记内的标 `PDFMaker` 记下添加文本 `convertAllPages="true"`。
+1. 在文本编辑器中，打开下载的文件，并在标 `AutoCAD` 记中的标 `PDFMaker` 记下添加文本 `convertAllPages="true"`。
 1. 在管理控制台中，单击“服务”>“PDF生成器”>“配置文件”>“导入配置”。
 1. 选择“导入现有配置文件”，指定更新的文件，然后单击“导入”。
 

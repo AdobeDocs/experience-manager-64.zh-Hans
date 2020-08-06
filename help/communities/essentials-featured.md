@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 5%
 
 ---
 
 
 # 特色内容基础 {#featured-content-essentials}
 
-本页提供了处理特色内容的基本信息。
+本页提供处理特色内容的基本信息。
 
-与将帖子固定到论坛顶部不同，此功能允许在社区站点内的任何位置突出显示内容。
+与将帖子固定到论坛顶部相比，此功能允许在社区站点的任何位置突出显示内容。
 
 ## 客户端必备工具 {#essentials-for-client-side}
 
@@ -56,4 +59,4 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ### 文件库功能 {#file-library-function}
 
-包含“特色内容”功能的社区站 [点结构](functions.md#featured-content-function)，包括配置的组 `featured content` 件。
+包含“特色内容”功能的社 [区站点结构](functions.md#featured-content-function)，包括已配置的 `featured content` 组件。

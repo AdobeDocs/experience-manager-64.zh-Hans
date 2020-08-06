@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->自2011年8月5日起，Adobe将内容服务ES客户迁移到Adobe数字企业平台体验服务。 使用内容服务的客户的产品路线图是转向新的ADEP Experience Services - Core，它包含基于现代化、模块化CRX架构构建的本机内容存储库，该存储库是在Adobe收购Day Software时获得的。
+>自2011年8月5日起，Adobe将Content Services ES客户迁移到Adobe Digital Enterprise PlatformExperience Services。 使用内容服务的客户的产品路线是转向新的ADEP Experience Services - Core，它包括构建在现代化、模块化CRX架构上的本机内容存储库，该存储库是在Adobe获取Day Software时获得的。
 
 [快速开始（SOAP模式）: 使用Java API创建Content Services空间](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -46,7 +46,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->使用AEM表单进行编程中的快速开始基于JBoss和Windows操作系统上部署的Forms Server。 但是，如果您使用的是其他操作系统（如UNIX），请将特定于窗口的路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>使用AEM表单进行编程中的快速开始基于部署在JBoss和Windows操作系统上的Forms服务器。 但是，如果您使用的是其他操作系统（如UNIX），请将特定于窗口的路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速开始（SOAP模式）: 使用Java API创建Content Services空间（已弃用） {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 

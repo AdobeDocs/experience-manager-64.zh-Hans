@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## 在开发之前 {#before-you-develop}
 
-在开发支持网页的AEM应用程序之前，应先作出若干设计决策。 例如，您需要具有以下信息：
+在开发支持网页的AEM应用程序之前，应该做出一些设计决策。 例如，您需要具有以下信息：
 
 * 您正在定位的设备。
 * 目标视区大小。
@@ -186,7 +186,7 @@ JSP脚本生成引用样式表的以下HTML代码：
 
 `<cq:include script="/libs/wcm/mobile/components/simulator/simulator.jsp"/>`
 
-要查看示例，请在CRXDE `/apps/weretail/components/page/head.jsp` Lite中打开文件。
+要查看示例，请以 `/apps/weretail/components/page/head.jsp` CRXDE Lite打开文件。
 
 ### 注册页面组件以进行模拟 {#registering-page-components-for-simulation}
 
@@ -222,7 +222,7 @@ When working with AEM there are several methods of managing the configuration se
 
 设备组节点位于文件 `/etc/mobile/groups` 夹中。
 
-例如，Geometrixx媒体站点的根页面为 `/content/geometrixx-media`。 节 `/content/geometrixx-media/jcr:content` 点包括以下属性：
+例如，Geometrixx Media站点的根页面为 `/content/geometrixx-media`。 节 `/content/geometrixx-media/jcr:content` 点包括以下属性：
 
 * 名称: `cq:deviceGroups`
 * 类型: `String[]`
@@ -331,7 +331,7 @@ W3C建议的图 [片元素](https://picture.responsiveimages.org/) 使用媒体�
 
 ### 了解AEM中的图像渲染 {#understanding-image-rendering-in-aem}
 
-要自定义图像渲染，您应了解默认的AEM静态图像渲染实现。 AEM提供图像组件和图像渲染servlet，它们可协同为网页渲染图像。 当图像组件包含在页面的段落系统中时，会出现以下事件序列：
+要自定义图像渲染，您应了解默认的AEM静态图像渲染实现。 AEM提供图像组件和图像渲染servlet，它们可以协同工作来渲染网页的图像。 当图像组件包含在页面的段落系统中时，会出现以下事件序列：
 
 1. 创作： 作者编辑图像组件以指定要包含在HTML页面中的图像文件。 文件路径将存储为图像组件节点的属性值。
 1. 页面请求： 页面组件的JSP会生成HTML代码。 图像组件的JSP将生成一个img元素并将其添加到页面。
@@ -380,7 +380,7 @@ W3C建议的图 [片元素](https://picture.responsiveimages.org/) 使用媒体�
 AEM会安装以下可使用或扩展的实施。
 
 * 自适应图像基础组件，它生成媒体查询，并对自适应图像组件Servlet发出HTTP请求，以缩放图像。
-* Geometrixx Commons包会安装改变图像分辨率的Image Reference Modification Servlet示例Servlet。
+* Geometrixx共享包会安装Image Reference Modification Servlet示例Servlet，它们会改变图像分辨率。
 
 ### Understanding the Adaptive Image component {#understanding-the-adaptive-image-component}
 
@@ -441,7 +441,7 @@ adaptive-image.jsp脚本包含以下生成div元素和媒体查询的代码：
 
 >[!CAUTION]
 >
->AEM中不支持动画。gif文件，用于自适应再现。
+>AEM中不支持动画。gif文件，以实现自适应再现。
 
 因此，Sling会将以下格式的HTTP请求URL解析为此servlet:
 
@@ -552,7 +552,7 @@ Servlet使用属性SCR注释设置默认支持的图像质量和尺寸。
 
 AdaptiveImageComponentServlet类还覆盖writeLayer方法。 此方法将JPEG质量应用于图像。
 
-### 图像引用修改Servlet(Geometrixx Common) {#image-reference-modification-servlet-geometrixx-common}
+### 图像引用修改Servlet(Geometrixx常用) {#image-reference-modification-servlet-geometrixx-common}
 
 示例图像引用修改Servlet为img元素生成大小属性以在网页上缩放图像。
 
@@ -654,7 +654,7 @@ Servlet使用属性SCR注释设置默认支持的图像质量和尺寸。
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-类 `AbstractImageServlet` 提供处理 `doGet` HTTP请求的方法。 此方法确定与调用关联的资源，从存储库检索资源属性，并将它们保存在ImageContext [对象](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) 中。
+类 `AbstractImageServlet` 提供处理 `doGet` HTTP请求的方法。 此方法确定与调用关联的资源，从存储库检索资源属性，并将它们保存在ImageContext [对象中](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) 。
 
 该 `ImageReferenceModificationServlet` 类覆盖该方 `createLayer` 法并实现确定要渲染的图像资源的逻辑。 该方法检索名为的页面节点的子 `jcr:content` 节点 `image`。 从 [此节点创建Image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/Image.html) 对象，该方 `image` 法从图像节点的属性返回 `getFileReference``fileReference` 图像文件的路径。
 
@@ -664,7 +664,7 @@ Servlet使用属性SCR注释设置默认支持的图像质量和尺寸。
 
 ## 开发流体网格 {#developing-a-fluid-grid}
 
-AEM使您能够高效、有效地实施流体网格。 本页介绍如何将自适应网格或现有网格实施(如 [Bootstrap](https://twitter.github.com/bootstrap/))集成到AEM应用程序中。
+AEM使您能够高效、有效地实施流体网格。 本页介绍如何将自适应网格或现有网格实现(如 [Bootstrap](https://twitter.github.com/bootstrap/))集成到AEM应用程序中。
 
 如果您不熟悉流体网格，请参 [阅本页底部的](/help/sites-developing/responsive.md#developing-a-fluid-grid) “流体网格简介”部分。 本文概述了流体网格及其设计。
 
@@ -711,11 +711,11 @@ AEM使您能够高效、有效地实施流体网格。 本页介绍如何将自�
 
 * 样式 `.span` 使用绝对数字定义元素宽度。
 * 样式 `.row-fluid .span*` 将元素宽度定义为父项的百分比。 百分比是根据绝对宽度计算的。
-* 较大视区的媒体查询指定较大的绝对宽度。
+* 较大视区的媒体查询会指定较大的绝对宽度。
 
 >[!NOTE]
 >
->Geometrixx Media范例将Bootstrap [javascript](https://twitter.github.com/bootstrap/javascript.html) framework集成到其流体网格实现中。 Bootstrap框架提供bootstrap.css文件。
+>Geometrixx Media示例将Bootstrap [javascript框架](https://twitter.github.com/bootstrap/javascript.html) 集成到其流体网格实现中。 Bootstrap框架提供bootstrap.css文件。
 
 ```xml
 /* default styles (no media queries) */

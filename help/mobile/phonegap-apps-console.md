@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
 
-AEM mobile应用程序开发流程认识到不同专业知识的用户对移动应用程序开发的贡献。 以下流程图说明了内容作者和应用程序开发人员执行任务的一般顺序。
+AEM移动应用程序开发流程认识到拥有不同专业知识的用户对移动应用程序开发的贡献。 以下流程图说明了内容作者和应用程序开发人员执行任务的一般顺序。
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -32,7 +32,7 @@ AEM mobile应用程序开发流程认识到不同专业知识的用户对移动�
 
 ## 移动应用程序的结构 {#the-structure-of-mobile-applications}
 
-AEM Mobile提供用于创建移动应用程序的Phonegap应用程序蓝图。 蓝图定义了您创建的应用程序的结构。 应用程序包括以下项目：
+AEM Mobile提供了用于创建移动应用程序的Phonegap应用程序蓝图。 蓝图定义了您创建的应用程序的结构。 应用程序包括以下项目：
 
 * 根页面。
 * 应用程序的语言变体。
@@ -40,7 +40,7 @@ AEM Mobile提供用于创建移动应用程序的Phonegap应用程序蓝图。 �
 
 ### Phonegap应用程序的根 {#the-root-of-a-phonegap-app}
 
-您在AEM中创建的移动应用程序的根页面将显示在“应用程序”控制台中。
+您在AEM中创建的移动应用程序的根页面将显示在应用程序控制台中。
 
 根页面存储在创建应用程序时指定的应用程序的“目标路径”属性下（默认路径为/content/phonegap/apps）。 页面名称是应用程序的“名称”属性。 例如，名为的站点的根页面的默认URL `myphonegapapp` 为 `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`。
 
@@ -57,7 +57,7 @@ AEM Mobile提供用于创建移动应用程序的Phonegap应用程序蓝图。 �
 语言页面有两个用途：
 
 * 页面内容是应用程序的语言变体的弹出页面。
-* 页面属性控制应用程序的多个设计方面，如用于请求内容更新的URL，以及有关连接到云构建和AdobeAnalytics服务集成的信息。
+* 页面属性控制应用程序的多个设计方面，如用于请求内容更新的URL，以及有关连接到云构建和Adobe Analytics服务集成的信息。
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -77,10 +77,10 @@ AEM Mobile提供用于创建移动应用程序的Phonegap应用程序蓝图。 �
 
 您还可以提供一个图像文件，用作应用程序缩略图，选择要使用的PhoneGap Build配置，然后选择要使用的移动应用程序分析配置。 此图像仅用作缩略图，以在Experience Manager的移动应用程序控制台中代表您的移动应用程序。
 
-还存在其他（和可选）选项卡，用于构建云服务并将Adobe Mobile Services SDK插件集成到您的应用程序中。
+还存在其他（和可选）选项卡，用于构建云服务并将AdobeMobile Services SDK插件集成到您的应用程序中。
 
 * 构建： 单击“管理配置”并在此处设置build.phonegap.com构建服务。 然后，您将能够从下拉菜单中选择新创建的PhoneGap构建云服务。
-* Analytics: 单击“管理配置”并设 [置您的Adobe Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) SDK云服务。 然后，您将能够从下拉列表中选择新创建的Mobile Service以集成到您的移动应用程序中。
+* 分析： 单击“管理配置”并设 [置AdobeMobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) SDK云服务。 然后，您将能够从下拉列表中选择新创建的Mobile Service以集成到您的移动应用程序中。
 
 >[!NOTE]
 >
@@ -98,7 +98,7 @@ AEM Mobile提供用于创建移动应用程序的Phonegap应用程序蓝图。 �
 
    要创建PhoneGap构建配置，请单击“管理配置”。
 
-1. （可选）如果您使用SiteCatalyst跟踪应用程序活动，请在“Analytics”选项卡上，选择要使用的配置。
+1. （可选）如果您使用SiteCatalyst跟踪应用程序活动，请在“分析”选项卡上，选择要使用的配置。
 
    要创建移动应用程序配置，请单击“管理配置”。
 
@@ -135,7 +135,7 @@ AEM Mobile提供用于创建移动应用程序的Phonegap应用程序蓝图。 �
 
    ![](do-not-localize/chlimage_1-12.png)
 
-1. 在“基本”、“高级”、“内部版本”和“Analytics”选项卡上配置属性，然后单击或点按完成图标。
+1. 在“基本”、“高级”、“构建”和“分析”选项卡上配置属性，然后单击或点按完成图标。
 
    ![](do-not-localize/chlimage_1-13.png)
 
@@ -171,14 +171,14 @@ AEM发布实例上的内容同步缓存用作移动应用程序的内容存储�
 
 ### 使用应用程序模板 {#using-app-templates}
 
-这是Apps 6.1 Feature Pack 2提供的一项功能，它提供了一种轻松的方式，可利用现有应用程序模板在AEM中创建新应用程序。
+这是Apps 6.1 Feature Pack 2提供的功能，它提供了一种轻松的方式，利用现有的应用程序模板在AEM内创建新的应用程序。
 
 什么是应用程序模板？ 将它视为表示应用程序基线或基础的页面模板和组件的集合。
 根据其他应用程序的模板创建新应用程序时，您将获得一个应用程序，其起点代表从中创建该应用程序的应用程序。
 
 您必须拥有现有的移动应用程序模板（或安装有应用程序模板的应用程序）才能利用此功能。
 
-最新的AEM Apps 6.1范例包包含带应用程序模板的Geometrixx应用程序的更新版本。 或者，您也可以安装StarterKit，它也提供一个模板。
+最新的AEM Apps 6.1范例包包含具有应用程序模板的Geometrixx应用程序的更新版本。 或者，您也可以安装StarterKit，它也提供一个模板。
 
 根据应用程序模板创建新应用程序的步骤：
 
@@ -195,7 +195,7 @@ AEM发布实例上的内容同步缓存用作移动应用程序的内容存储�
 1. 单击下一步。
 1. 提供应用程序ID和标题，但您可能还希望包括名称和说明。
 
-   1. 此外，您还可以通过浏览AEM资产将PNG（支持的PhoneGap图标格式）提供为图标。
+   1. 此外，您还可以通过浏览AEM资产将PNG（支持的PhoneGap图标格式）作为图标提供。
    1. 请记住，在“管理应用程序”拼贴中创建应用程序后，您可以编辑所有这些字段。 除App Id外，一旦设置了App Id，您便无法更改它。
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -209,15 +209,15 @@ AEM发布实例上的内容同步缓存用作移动应用程序的内容存储�
 
 >[!NOTE]
 >
->如果您从AEM卸载Geometrixx Outdoors引用应用程序包并基于其模板创建了应用程序，则该应用程序将不再正常工作。 可以删除Geometrixx Outdoors应用程序，但是，如果其他移动应用程序使用该应用程序模板，则该应用程序模板必须保留。
+>如果您从AEM卸载Geometrixx Outdoors引用应用程序包，并基于其模板创建了应用程序，则该应用程序将不再正常工作。 Geometrixx Outdoors应用程序可以删除，但如果其他移动应用程序使用该应用程序，则该应用程序模板必须保留。
 
-## 探索Geometrixx Outdoors范例应用程序 {#exploring-the-sample-geometrixx-outdoors-app}
+## 浏览示例Geometrixx Outdoors应用程序 {#exploring-the-sample-geometrixx-outdoors-app}
 
 Geometrixx Outdoors应用程序是一个示例PhoneGap应用程序，它演示了默认PhoneGap应用程序蓝图和示例移动组件的功能。
 
 要打开应用程序，请在边栏中单击“移动应用程序”，然后选择“Geometrixx Outdoors应用程序”。
 
-### 常见页面功能- Geometrixx移动应用程序 {#common-page-features-geometrixx-mobile-app}
+### 常见页面功能-Geometrixx移动应用程序 {#common-page-features-geometrixx-mobile-app}
 
 移动应用程序的每个页面都包含以下功能：
 
@@ -231,14 +231,14 @@ Geometrixx Outdoors应用程序是一个示例PhoneGap应用程序，它演示�
 
 * 段落系统，用于添加组件和创建内容。
 
-### 主页- Geometrixx移动应用程序 {#the-home-page-geometrixx-mobile-app}
+### 主页-Geometrixx移动应用程序 {#the-home-page-geometrixx-mobile-app}
 
 主页的内容由以下导航工具组成：
 
 * 一个菜单列表组件，它提供指向“齿轮”、“评论”、“新闻”和“关于我们”子页面的链接。
 * 一个轻扫传送组件，它显示子页面。
 
-### 齿轮页- Geometrixx移动应用程序 {#the-gear-page-geometrixx-mobile-app}
+### 齿轮页-Geometrixx移动应用程序 {#the-gear-page-geometrixx-mobile-app}
 
 齿轮页面为用户提供对产品页面的访问权。 菜单列表组件提供对齿轮页子页面的访问。 子页面是网站提供的一类别产品。
 
@@ -249,31 +249,31 @@ Geometrixx Outdoors应用程序是一个示例PhoneGap应用程序，它演示�
 
 每个类别页面使用与“齿轮”页面相同的内容结构。 轮盘提供对子页面的访问，子页面是产品的子类别。 子类别页面包含提供产品页面链接的产品列表。
 
-### 产品页面- Geometrixx移动应用程序 {#the-products-page-geometrixx-mobile-app}
+### 产品页面-Geometrixx移动应用程序 {#the-products-page-geometrixx-mobile-app}
 
 “产品”页面及其子页面层次结构为产品页面实施了分类系统。 层次结构的每个分支中的最低页面是包含ng产品组件的产品页面。
 
 “产品”页面对应用程序用户不可用。 齿轮页面提供对每个产品页面的访问。
 
-### “评论”页- Geometrixx移动应用程序 {#the-reviews-page-geometrixx-mobile-app}
+### 评论页-Geometrixx移动应用程序 {#the-reviews-page-geometrixx-mobile-app}
 
 包含返回按钮。 段落系统允许您添加组件。
 
 使用应用程序时，“审阅”页面可从“英语”页面的轮盘中访问。
 
-### 新闻页- Geometrixx移动应用程序 {#the-news-page-geometrixx-mobile-app}
+### 新闻页面-Geometrixx移动应用程序 {#the-news-page-geometrixx-mobile-app}
 
 包含返回按钮。 段落系统允许您添加组件。
 
 使用应用程序时，“News”（新闻）页面可从“English”（英语）页面的轮盘中访问。
 
-### “关于我们”页- Geometrixx移动应用程序 {#the-about-us-page-geometrixx-mobile-app}
+### “关于美国”页面-Geometrixx移动应用程序 {#the-about-us-page-geometrixx-mobile-app}
 
 “关于我们”页包含多个两列行组件。 每列都包含图像或文本组件。 组件是可编辑的，段落系统允许您添加组件。
 
 使用应用程序时，“关于我们”页面可从“英语”页面的轮盘中访问。
 
-### 位置页- Geometrixx移动应用程序 {#the-locations-page-geometrixx-mobile-app}
+### 位置页面-Geometrixx移动应用程序 {#the-locations-page-geometrixx-mobile-app}
 
 位置页面包含位置组件。
 

@@ -1,8 +1,8 @@
 ---
-title: AEM Forms工作区JSON对象说明
-seo-title: AEM Forms工作区JSON对象说明
-description: 有关LiveCycle AEM Forms工作区中用于自定义、扩展、修改和重用的JSON JavaScript对象的概念性信息。
-seo-description: 有关LiveCycle AEM Forms工作区中用于自定义、扩展、修改和重用的JSON JavaScript对象的概念性信息。
+title: AEM Forms工作区JSON对象描述
+seo-title: AEM Forms工作区JSON对象描述
+description: 有关在LiveCycleAEM Forms工作区中用于自定义、扩展、修改和重用的JSON JavaScript对象的概念信息。
+seo-description: 有关在LiveCycleAEM Forms工作区中用于自定义、扩展、修改和重用的JSON JavaScript对象的概念信息。
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,17 +10,20 @@ topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '2134'
+ht-degree: 4%
 
 ---
 
 
-# AEM Forms工作区JSON对象说明 {#aem-forms-workspace-json-object-description}
+# AEM Forms工作区JSON对象描述 {#aem-forms-workspace-json-object-description}
 
 在AEM Forms工作区中使用的JSON对象如下所述。
 
 1. 类别
 
-   类别显示在工作区的开始进程选项卡中。 这些类别用于对起点进行分类。
+   类别显示在工作区的“开始”进程选项卡中。 这些类别用于对起始点进行分类。
 
 <table> 
  <tbody>
@@ -32,7 +35,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>名称</td> 
    <td>F</td> 
-   <td>类别名称</td> 
+   <td>类别名</td> 
   </tr>
   <tr>
    <td>id</td> 
@@ -42,7 +45,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>说明<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>类别说明<br type="_moz" /> </td> 
+   <td>类别描述<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>parentOid<br type="_moz" /> </td> 
@@ -52,7 +55,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>startPointsList<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>包含列表类别中存在的所有起始点</td> 
+   <td>包含列表类别中存在的所有起点</td> 
   </tr>
   <tr>
    <td>categoryList</td> 
@@ -74,18 +77,18 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    |---|---|---|
    | categoryId | F | 它包含起始点所属类别的id。 |
    | 描述 | F | 它包含起点的描述。 |
-   | 名称 | F | 它包含起始点的名称。 |
-   | serializedImageTicket | F | 它包含与起始点对应的图像票证。 此图像票证用于从服务器获取起始点的图像。 |
+   | 名称 | F | 它包含起点的名称。 |
+   | serializedImageTicket | F | 它包含与起始点对应的图像票证。 此图像票证用于起始点的imageUrl字段，以从服务器获取起始点的图像。 |
    | serviceName | F | 它包含起始点服务的名称。 |
    | startpointId | F | 它包含起始点的id。 |
-   | isFavorite | T | 指示起始点是否为收藏点。 如果起始点是最喜欢的，则返回true；否则返回false。 |
-   | isDefaultImage | T | 指示是否有为进程指定的图像。 如果没有与进程else false关联的图像，则返回true。 |
+   | isFavorite | T | 表示起点是否为收藏点。 如果起始点是最喜爱的，则返回true；如果返回false，则返回false。 |
+   | isDefaultImage | T | 指示是否有为处理指定的图像。 如果没有与进程关联的图像，则返回True；否则返回False。 |
    | 任务 | T | 它包含调用起始点时创建的任务。 |
    | imageUrl | T | 它包含与起始点对应的图像的url。 |
 
 1. 任务
 
-   任务分配给用户／用户组，并包含可填充数据的用户界面(表单或指南（已弃用）)。 为用户分配任务后，会向他们提供表单或指南以完成和提交。
+   任务分配给用户／用户组，并包含一个可以填充数据的用户界面(表单或指南（已弃用）)。 为用户分配任务后，会向他们提供填写和提交的表单或指南。
 
 <table> 
  <tbody>
@@ -97,7 +100,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>classOfTask</td> 
    <td>F</td> 
-   <td>当任务为lc8任务时，任务类为“LC8”，否则为“标准”。<br /> </td> 
+   <td>当任务为lc8任务为其他“标准”时，任务类为“LC8”。<br /> </td> 
   </tr>
   <tr>
    <td>completeTime<br /> </td> 
@@ -125,14 +128,14 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    <td>它包含有关当前任务分配的详细信息。<br /> </td> 
   </tr>
   <tr>
-   <td>截止期限<br /> </td> 
+   <td>截止时间<br /> </td> 
    <td>F</td> 
    <td>它包含任务到期的时间戳。<br /> </td> 
   </tr>
   <tr>
    <td>说明<br /> </td> 
    <td>F</td> 
-   <td>它包含对任务的描述。<br /> </td> 
+   <td>它包含任务的描述。<br /> </td> 
   </tr>
   <tr>
    <td>displayName<br /> </td> 
@@ -142,7 +145,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>forwardGroupId<br /> </td> 
    <td>F</td> 
-   <td>它包含可转发任务的组的ID。 在设计过程中设置。<br /> </td> 
+   <td>它包含可将任务转发到的组的ID。 在设计过程中设置。<br /> </td> 
   </tr>
   <tr>
    <td>instructions<br /> </td> 
@@ -162,7 +165,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>isOpenFullScreen<br /> </td> 
    <td>F</td> 
-   <td>如果为true，则打开任务时，表单将首次显示完整屏幕。<br /> </td> 
+   <td>如果为true，则在打开任务时，表单将首次显示完整屏幕。<br /> </td> 
   </tr>
   <tr>
    <td>isRouteSelectionRequired<br /> </td> 
@@ -172,12 +175,12 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>isShowAttachments<br /> </td> 
    <td>F</td> 
-   <td>如果属于，则显示附件。<br /> </td> 
+   <td>如果是，则显示附件。<br /> </td> 
   </tr>
   <tr>
    <td>isStartTask<br /> </td> 
    <td>F</td> 
-   <td>如果为true，则从任务点创建开始。<br /> </td> 
+   <td>如果为True，则从任务点创建开始。<br /> </td> 
   </tr>
   <tr>
    <td>isVisible<br /> </td> 
@@ -197,7 +200,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>processInstanceId</td> 
    <td>F</td> 
-   <td>其任务所属的进程实例的ID。<br /> </td> 
+   <td>任务所属的进程实例的ID。<br /> </td> 
   </tr>
   <tr>
    <td>processInstanceStatus<br /> </td> 
@@ -222,7 +225,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>serializedImageTicket<br /> </td> 
    <td>F</td> 
-   <td>它包含与任务相对应的图像票证。 此图像票证用于任务的imageUrl字段，以从服务器获取要任务的图像。<br /> <br /> </td> 
+   <td>它包含与任务对应的图像票证。 此图像票证用于任务的imageUrl字段，以从服务器获取任务图像。<br /> <br /> </td> 
   </tr>
   <tr>
    <td>serviceName<br /> </td> 
@@ -237,7 +240,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>状态<br /> </td> 
    <td>F</td> 
-   <td>1 =创建任务(从开始点创建。)<br /> 2 =创建并保存(任务是从开始点创建并保存的。)<br /> 3 =已分配(在进程启动后，任务将分配给用户。)<br /> 4 =已分配并保存(已分配并保存任务。)<br /> 100 =已完成(任务已完成。)<br /> 101 =死期(任务已到期)。<br /> 102 =终止<br /> </td> 
+   <td>1 =已创建(任务是从开始点创建的。)<br /> 2 =创建并保存(任务是从开始点创建并保存的。)<br /> 3 =已分配(进程启动后，任务将分配给用户。)<br /> 4 =已分配并保存(已分配并保存任务。)<br /> 100 =已完成(任务已完成。)<br /> 101 =死期(任务已到期)<br /> 102 =终止<br /> </td> 
   </tr>
   <tr>
    <td>stepName<br /> </td> 
@@ -252,7 +255,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>taskACL<br /> </td> 
    <td>F</td> 
-   <td>这是访问控制的列表,任务。<br /> </td> 
+   <td>是访问控制列表任务。<br /> </td> 
   </tr>
   <tr>
    <td>taskId<br /> </td> 
@@ -272,17 +275,17 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>taskFormType<br /> </td> 
    <td>T</td> 
-   <td>它包含任务表单类型。 使用此字段，任务在客户端上呈现为pdf for、swf表单等。<br /> </td> 
+   <td>它包含任务表单类型。 使用此字段，任务在客户端上以pdf形式呈现，如swf表单等。<br /> </td> 
   </tr>
   <tr>
    <td>showDirectActions<br /> </td> 
    <td>T</td> 
-   <td>如果为true，则路由操作在工作区中可见。<br /> </td> 
+   <td>如果为true，则在工作区中可以看到路由操作。<br /> </td> 
   </tr>
   <tr>
    <td>showACLAactions<br /> </td> 
    <td>T</td> 
-   <td>如果为true，则向前、查阅、共享等操作在工作区中可见。<br /> </td> 
+   <td>如果为真，则向前、查阅、共享等操作在工作区中可见。<br /> </td> 
   </tr>
   <tr>
    <td>supportsOffline<br /> </td> 
@@ -297,12 +300,12 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>readerSubmitOptions<br /> </td> 
    <td>T</td> 
-   <td>此对象包含用于通过Reader提交PDF表单的选项，以防PDF表单不包含提交按钮。<br /> </td> 
+   <td>此对象包含用于通过阅读器提交pdf表单的选项，以防pdf表单不包含提交按钮。<br /> </td> 
   </tr>
   <tr>
    <td>isDefaultImage<br /> </td> 
    <td>T</td> 
-   <td>指示是否有为进程指定的图像。 如果没有与进程else false关联的图像，则返回true。<br /> </td> 
+   <td>指示是否有为处理指定的图像。 如果没有与进程关联的图像，则返回True；否则返回False。<br /> </td> 
   </tr>
   <tr>
    <td>historyTaskList<br /> </td> 
@@ -317,12 +320,12 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>availableCommands<br /> </td> 
    <td>T</td> 
-   <td>它包含可对任务执行的操作。<br /> </td> 
+   <td>它包含可对任务执行的所有操作。<br /> </td> 
   </tr>
   <tr>
    <td>availableCommands.directCommands<br /> </td> 
    <td>T</td> 
-   <td>它包含可用于任务的所有路由操作。<br /> </td> 
+   <td>它包含任务可用的所有路由操作。<br /> </td> 
   </tr>
   <tr>
    <td>availableCommands.taskACLCommands<br /> </td> 
@@ -332,7 +335,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>availableCommands.otherCommands<br /> </td> 
    <td>T</td> 
-   <td>它包含锁定、解锁、放弃、返回、声明等可用命令。<br /> </td> 
+   <td>它包含诸如锁定、解锁、放弃、返回、声明等可用命令。<br /> </td> 
   </tr>
   <tr>
    <td>processInstanceInfo<br /> </td> 
@@ -347,12 +350,12 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>pendingTasks<br /> </td> 
    <td>T</td> 
-   <td>它包含任务进程实例的待定任务的列表。<br /> </td> 
+   <td>它包含任务进程实例的挂起列表。<br /> </td> 
   </tr>
   <tr>
    <td>userActions<br /> </td> 
    <td>T</td> 
-   <td>它是对象的数组。 每个对象都包含有关路由的详细信息，如果存在，还包含相应的确认消息。<br /> </td> 
+   <td>它是对象的数组。 每个对象都包含路由及其相应确认消息的详细信息（如果存在）。<br /> </td> 
   </tr>
   <tr>
    <td>dataUrl<br /> </td> 
@@ -367,12 +370,12 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>submitted<br /> </td> 
    <td>T</td> 
-   <td>如果提交了任务，则返回true。<br /> </td> 
+   <td>如果提交任务，则为True。<br /> </td> 
   </tr>
   <tr>
    <td>attachments<br /> </td> 
    <td>T</td> 
-   <td>列表任务。<br /> </td> 
+   <td>列表任务的附件。<br /> </td> 
   </tr>
   <tr>
    <td>个指定任务<br /> </td> 
@@ -384,7 +387,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 1. 筛选器
 
-   过滤器基本上是用户或用户组的队列。 将任务分配给用户／用户组后，任务会添加到相应的队列中。
+   过滤器基本上是用户或组的队列。 当任务被分配给用户／组时，任务会添加到相应队列中。
 
 <table> 
  <tbody>
@@ -396,7 +399,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>isDefault <br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果队列是登录用户的默认队列，则为true；否则为false。<br type="_moz" /> </td> 
+   <td>如果队列是登录用户的默认队列，则为True；否则为False。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>名称<br type="_moz" /> </td> 
@@ -416,7 +419,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>查询</td> 
    <td>T</td> 
-   <td>它包含与过滤器关联的查询。 此查询用于从完整任务列表中搜索任务。<br type="_moz" /> </td> 
+   <td>它包含与筛选器关联的查询。 此查询用于从完整任务列表中搜索任务。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>任务</td> 
@@ -428,7 +431,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 1. 办公室外
 
-   您可以管理离职计划，并控制在您缺席时分配给您的任务流。
+   您可以管理办公室外计划，并控制在您缺席时分配给您的任务流。
 
 <table> 
  <tbody>
@@ -440,7 +443,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>dateRanges<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>它包含用户的办公外计划的数组对象。 在每个计划对象中，startDate字段包含计划的开始日期，dendDate字段包含计划的结束日期。 如果endDate在计划中为null，则表示用户尚未预定离职计划的结束日期。<br type="_moz" /> </td> 
+   <td>它包含用户的办公室外计划的数组对象。 在每个计划对象中，startDate字段包含计划的开始日期，而dendDate字段包含计划的结束日期。 如果endDate在计划中为null，则表示用户尚未计划离职计划的结束日期。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
@@ -460,7 +463,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>processSpecificDistans<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>它包含特定于进程的指定办公室外对象的数组。 在每个进程特定的指定对象中，processName包含进程的名称；如果没有为相应进程分配用户，则isNotDesignated为true；如果没有为相应进程分配用户的其他详细信息，则userDesignated为null。<br type="_moz" /> </td> 
+   <td>它包含特定于流程的指定对象数组。 在每个特定于进程的指定对象中，processName包含进程的名称；如果没有为相应进程分配用户，则isNotDesignated为true；如果没有为相应进程分配用户的其他详细信息，则userDesignated为null。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processes<br type="_moz" /> </td> 
@@ -475,19 +478,19 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>outOfOfficeSettings<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>它包含修改的离职设置。<br type="_moz" /> </td> 
+   <td>它包含修改的办公室外设置。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>它包含用户列表，用户在日期之前会按登录用户进行搜索。<br type="_moz" /> </td> 
+   <td>它包含登录用户搜索到的直至日期的用户的列表。<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
 
 1. 进程实例
 
-   当通过工作区或工作台调用进程时，将创建进程实例。
+   当通过工作区或工作台调用进程时，会创建进程实例。
 
 <table> 
  <tbody>
@@ -499,7 +502,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>说明<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>进程实例说明<br type="_moz" /> </td> 
+   <td>流程实例的说明<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>启动器</td> 
@@ -524,7 +527,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>0 =启动<br /> 1 =运行<br /> 2 =完成3 =完成<br /> 4 =终止<br /> 5 =终止<br /> 6 =暂停7 =暂停<br /><br /><br /> 8 =取消暂停<br type="_moz" /> </td> 
+   <td>0 =启动<br /> 1 =运行<br /> 2 =完成3 =完成<br /> 4 =终止<br /> 5 =终止6 =暂停<br /><br /><br /><br /> 7 =暂停8 =取消暂停<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td> 
@@ -534,17 +537,17 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>processStartTime<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>进程开始时的时间戳。<br type="_moz" /> </td> 
+   <td>进程启动时的时间戳。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processVariables<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>进程变量对象的数组。 每个进程变量对象包含进程变量名、进程变量值和进程变量类型。<br type="_moz" /> </td> 
+   <td>进程变量对象的数组。 每个进程变量对象包含进程变量名称、进程变量值和进程变量类型。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>任务列表<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>由此进程实例生成的任务。<br type="_moz" /> </td> 
+   <td>任务由此进程实例生成。<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -576,7 +579,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>processTitle<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>进程的标题。<br type="_moz" /> </td> 
+   <td>流程的标题。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processInstanceList<br type="_moz" /> </td> 
@@ -588,7 +591,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 1. 任务分配对象
 
-   任务赋值对象包含有关任务赋值的信息。 以下是任务赋值的属性。
+   任务赋值对象包含有关任务赋值的信息。 以下是任务分配的属性。
 
 <table> 
  <tbody>
@@ -605,7 +608,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>assignmentType<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>0 =初始分配<br /> 1 =转发(任务已转发给当前任务所有者。)<br /> 2 =已退回(任务已由先前的任务所有者返回给当前任务所有者。)<br /> 3 =已申请(任务的当前所有者已申请任务。)<br /> 4 =升级(升级后，任务已分配给当前任务所有者。)<br /> 5 =已分配管理员(管理员已将任务分配给当前任务所有者。)<br /> 6 =咨询了任务(已咨询了任务的当前所有者。)<br type="_moz" /> </td> 
+   <td>0 =初始分配<br /> 1 =转发(任务已转发给当前任务所有者。)<br /> 2 =已退回(任务已由先前的任务所有者返回给当前任务所有者。)<br /> 3 =已申请(任务的当前所有者已申请任务。)<br /> 4 =升级(任务在升级后已分配给任务的当前所有者。)<br /> 5 =管理员已分配任务(管理员已将任务分配给当前所有者。)<br /> 6 =已咨询任务(已咨询任务的当前所有者。)<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td> 
@@ -615,7 +618,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>queueId<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>当前任务所有者的队列ID。<br type="_moz" /> </td> 
+   <td>任务当前所有者的队列ID。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>queueOwner<br type="_moz" /> </td> 
@@ -632,7 +635,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 1. 任务ACL对象
 
-   任务ACL对象包含有关转发、共享、查阅等权限的信息。 任务。 以下是任务ACL的属性。
+   任务ACL对象包含有关权限的信息，如转发、共享、查阅等。 任务。 以下是任务ACL的属性。
 
 <table> 
  <tbody>
@@ -654,7 +657,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>canClaim<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果为真，则可声明任务。<br type="_moz" /> </td> 
+   <td>如果为真，则可声称任务。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canConsult<br type="_moz" /> </td> 
@@ -664,19 +667,19 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>canForward<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果为真，则可转发任务。<br type="_moz" /> </td> 
+   <td>如果为真，可以转发任务。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canShare<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果为True，则可以共享任务。<br type="_moz" /> </td> 
+   <td>如果为真，则可以共享任务。<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
 
 1. 任务附件
 
-   附件可添加到任务。 附件的类型可以是附件和附注。 以下是attachment对象的属性。
+   附件可以添加到任务。 附件的类型可以是附件和附注。 以下是attachment对象的属性。
 
 <table> 
  <tbody>
@@ -738,7 +741,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   <tr>
    <td>taskId<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>向其添加附件的任务的ID。<br type="_moz" /> </td> 
+   <td>添加附件的任务的ID。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>类型<br type="_moz" /> </td> 
@@ -746,19 +749,19 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    <td>“类型”(Type)是文件的附件，“类型”(Type)是注释的注释。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>formattedCreationDate<br type="_moz" /> </td> 
+   <td>格式化的CreationDate<br type="_moz" /> </td> 
    <td>T</td> 
    <td>它根据用户的UI设置包含附件创建日期。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>formattedDescription<br type="_moz" /> </td> 
+   <td>格式化描述<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>格式化的附件说明。 用于显示AEM Forms工作区中附件说明中的特殊字符。<br type="_moz" /> </td> 
+   <td>格式化附件说明。 用于在AEM Forms工作区中显示附件说明中显示的特殊字符。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedFileName<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>格式化的附件名称。 用于显示AEM Forms工作区中附件名称中存在的特殊字符。 这仅用于备注。<br type="_moz" /> </td> 
+   <td>格式化的附件名称。 用于在AEM Forms工作区中显示附件名称中存在的特殊字符。 这仅供注释。<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -790,7 +793,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    <td>用户的说明。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>directGroupMembership<br type="_moz" /> </td> 
+   <td>directGroup成员关系<br type="_moz" /> </td> 
    <td>F</td> 
    <td>列表用户组。<br type="_moz" /> </td> 
   </tr>
@@ -820,12 +823,12 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    <td>用户的名字。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>oid<br type="_moz" /> </td> 
+   <td>类<br type="_moz" /> </td> 
    <td>F</td> 
    <td>用户的ID。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>org<br type="_moz" /> </td> 
+   <td>组织<br type="_moz" /> </td> 
    <td>F</td> 
    <td>用户的组织名称。<br type="_moz" /> </td> 
   </tr>
@@ -840,7 +843,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    <td>用户的联系号码。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>telephoneNumber<br type="_moz" /> </td> 
+   <td>电话号码<br type="_moz" /> </td> 
    <td>F</td> 
    <td>用户的联系号码。<br type="_moz" /> </td> 
   </tr>

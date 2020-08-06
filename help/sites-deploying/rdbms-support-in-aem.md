@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
 translation-type: tm+mt
 source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 0%
 
 ---
 
@@ -19,40 +22,40 @@ source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
 
 ## 概述 {#overview}
 
-使用Document Microkernel实现了对AEM中关系数据库持久性的支持。 文档微内核是实现MongoDB持久性的基础。
+使用文档Microkernel实现了对AEM中关系数据库持久性的支持。 文档微内核是实现MongoDB持久性的基础。
 
-它由一个基于Mongo Java API的Java API组成。 还提供了BlobStore API的实现。 默认情况下，blob存储在数据库中。
+它包含一个基于Mongo Java API的Java API。 还提供了BlobStore API的实现。 默认情况下，blob存储在数据库中。
 
-有关实施详细信息，请参阅 [RDBDocumentStore和](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) RDBBlobStore [](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) 文档。
+有关实施详细信息的详细信息，请参 [阅RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) 和 [RDBBlobStore文档](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) 。
 
 >[!NOTE]
 >
->还提 **供对PostgreSQL 9.4的支持** ，但仅用于演示目的。 它不适用于生产环境。
+>还提 **供对PostgreSQL 9.4** 的支持，但仅用于演示目的。 它不适用于生产环境。
 
 ## 支持的数据库 {#supported-databases}
 
-有关AEM中关系型数据库支持级别的详细信息，请参阅技 [术要求页](/help/sites-deploying/technical-requirements.md)。
+有关AEM中关系数据库支持级别的详细信息，请参见“技术 [要求”页](/help/sites-deploying/technical-requirements.md)。
 
 ## 配置步骤 {#configuration-steps}
 
-通过配置OSGi服务创建存 `DocumentNodeStoreService` 储库。 除MongoDB外，它还经过扩展以支持关系数据库持久性。
+通过配置OSGi服务创建 `DocumentNodeStoreService` 存储库。 除了MongoDB，它还扩展了它以支持关系数据库持久性。
 
-为使其正常工作，需要使用AEM配置数据源。 这通过文件完 `org.apache.sling.datasource.DataSourceFactory.config` 成。 相应数据库的JDBC驱动程序需要作为本地配置中的OSGi包单独提供。
+要使数据源正常工作，需要使用AEM配置数据源。 这通过文件完 `org.apache.sling.datasource.DataSourceFactory.config` 成。 相应数据库的JDBC驱动程序需要作为OSGi绑定在本地配置中单独提供。
 
-有关创建用于JDBC驱动程序的OSGi捆绑包的步骤，请参阅 [Apache Sling网站](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) 上的此文档。
+有关创建JDBC驱动程序的OSGi捆绑包的步骤，请参 [阅](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) Apache Sling网站上的此文档。
 
 >[!NOTE]
 >
 >某些SQL驱动程序已打包为OSGi包。
 >
->如果出现这种情况，只需将jar文件复制到install-path/crx-quickstart/install/9。
+>如果是，只需将jar文件复制到install-path/crx-quickstart/install/9。
 
-捆绑包到位后，请按照以下步骤配置AEM的RDB持久性：
+捆绑包到位后，请按照以下步骤配置AEM和RDB持久性：
 
-1. 确保数据库守护程序已启动，并且您有一个活动的数据库供AEM使用。
-1. 将AEM 6.3jar复制到安装目录中。
-1. 在安装目录中 `crx-quickstart\install` 创建一个名为的文件夹。
-1. 通过在目录中创建具有以下名称的配置文件，配置文档节点存 `crx-quickstart\install` 储区：
+1. 确保数据库守护程序已启动，并且您有一个活动数据库可与AEM一起使用。
+1. 将AEM 6.3 jar复制到安装目录中。
+1. 在安装目录中 `crx-quickstart\install` 创建名为的文件夹。
+1. 通过在目录中创建具有以下名称的配置文件，配置文档节点 `crx-quickstart\install` 存储：
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
@@ -61,20 +64,20 @@ source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
    >[!NOTE]
    >
-   >有关每个支持的数据库的数据源配置的详细信息，请参阅 [数据源配置选项](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)。
+   >有关每个受支持数据库的数据源配置的详细信息，请参 [阅数据源配置选项](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)。
 
 1. 接下来，准备要与AEM一起使用的JDBC OSGi包：
 
    1. 从https://dev.mysql.com/downloads/connector/j/下载ZIP存档
       * 版本必须>= 5.1.38
-   1. 从存档 `mysql-connector-java-version-bin.jar` 中提取（捆绑）
-   1. 使用Web控制台安装并启动捆绑包：
-      * 请访问 *http://serveraddress:serverport/system/console/bundles*
+   1. 从存档 `mysql-connector-java-version-bin.jar` 中解压（包）
+   1. 使用Web控制台安装和开始捆绑包：
+      * 转到 *http://serveraddress:serverport/system/console/bundles*
       * 选择 **安装／更新**
-      * 浏览到从下载的ZIP归档中提取的捆绑包
-      * 检查 **** Oracle Corporation的MySQLcom.mysql.jdbc驱动程序是否处于活动状态，然后启动它。
+      * 浏览到从下载的ZIP存档中提取的包
+      * 检查 **Oracle Corporation的MySQLcom.mysql.jdbc的JDBC驱动程序是否处于活动状态** ，并将其开始。
 
-1. 最后，使用和运行模式 `crx3` 启动 `crx3rdb` AEM:
+1. 最后，开始AEM和 `crx3` 运行 `crx3rdb` 模式：
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -82,41 +85,41 @@ source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
 
 ## 数据源配置选项 {#data-source-configuration-options}
 
-OSGi配 `org.apache.sling.datasource.DataSourceFactory-oak.config` 置用于配置AEM与数据库持久层之间通信所需的参数。
+OSGi `org.apache.sling.datasource.DataSourceFactory-oak.config` 配置用于配置AEM与数据库持久性层之间通信所需的参数。
 
-以下配置选项可用：
+提供以下配置选项：
 
 * `datasource.name:` 数据源名称。 默认为 `oak`.
 
-* `url:` 需要与JDBC一起使用的数据库的URL字符串。 每个数据库类型都有其自己的URL字符串格式。 有关详细信息，请参 [阅下面的URL字符串格式](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) 。
+* `url:` 需要与JDBC一起使用的数据库的URL字符串。 每个数据库类型都有其自己的URL字符串格式。 有关详细信息，请参 [阅下面的URL字符串](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) 格式。
 
-* `driverClassName:` JDBC驱动程序类名。 这会因您要使用的数据库而异，随后会因连接到数据库所需的驱动程序而异。 以下是AEM支持的所有数据库的类名：
+* `driverClassName:` JDBC驱动程序类名。 这会因您要使用的数据库以及随后连接到数据库所需的驱动程序而异。 以下是AEM支持的所有数据库的类名：
 
-   * `org.postgresql.Driver` for PostgreSQL;
+   * `org.postgresql.Driver` PostgreSQL;
    * `com.ibm.db2.jcc.DB2Driver` DB2;
-   * `oracle.jdbc.OracleDriver` 对于Oracle;
-   * `com.mysql.jdbc.Driver` 用于MySQL和MariaDB（实验性）;
-   * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` for Microsoft SQL Server（实验性）。
+   * `oracle.jdbc.OracleDriver` Oracle;
+   * `com.mysql.jdbc.Driver` 用于MySQL和MariaDB（实验）;
+   * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` for Microsoft SQL Server（实验）。
 
 * `username:` 数据库运行的用户名。
 
-* `password:` 数据库口令。
+* `password:` 数据库密码。
 
 ### URL字符串格式 {#url-string-formats}
 
-数据源配置中使用不同的URL字符串格式，具体取决于需要使用的数据库类型。 以下是AEM当前支持的数据库的格式列表：
+数据源配置中使用不同的URL字符串格式，具体取决于需要使用的数据库类型。 下面是AEM当前支持的列表库的格式：
 
-* `jdbc:postgresql:databasename` for PostgreSQL;
+* `jdbc:postgresql:databasename` PostgreSQL;
 
 * `jdbc:db2://localhost:port/databasename` DB2;
-* `jdbc:oracle:thin:localhost:port:SID` 对于Oracle;
-* `jdbc:mysql://localhost:3306/databasename` 用于MySQL和MariaDB（实验性）;
+* `jdbc:oracle:thin:localhost:port:SID` Oracle;
+* `jdbc:mysql://localhost:3306/databasename` 用于MySQL和MariaDB（实验）;
 
-* `jdbc:sqlserver://localhost:1453;databaseName=name` for Microsoft SQL Server（实验）。
+* `jdbc:sqlserver://localhost:1453;databaseName=name` （实验）。
 
 ## 已知限制 {#known-limitations}
 
-虽然RDBMS持久性支持将多个AEM实例与单个数据库一起并发使用，但并发安装不支持。
+RDBMS持久性支持将多个AEM实例与单个数据库同时使用，但并发安装则不支持。
 
-要解决此问题，请确保先使用单个成员运行安装，然后在完成安装后添加其他成员。
+要解决此问题，请确保先使用单个成员运行安装，并在第一个成员完成安装后添加其他成员。
 

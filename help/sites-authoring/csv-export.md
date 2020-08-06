@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 78%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >系统将使用您浏览器的下载功能及默认目标位置。
 
-通过创建 CSV 导出向导，您可以选择以下内容：
+创建 CSV 导出向导允许您选择以下内容：
 
 * 要导出的属性
 
@@ -59,7 +62,7 @@ The create **CSV Export** option is available when browsing the **Sites** consol
 
 要创建 CSV 导出，请执行以下操作：
 
-1. 打开&#x200B;**站点**&#x200B;控制台，根据需要导航到所需的位置。
+1. 必要时，打开&#x200B;**站点**&#x200B;控制台并导航到所需的位置。
 1. From the toolbar, select **Create** then **CSV Export** to open the wizard:
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)

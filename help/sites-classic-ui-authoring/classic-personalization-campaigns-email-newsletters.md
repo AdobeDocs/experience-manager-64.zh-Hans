@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 67%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 创建电子邮件 {#creating-an-email}
 
-An email or newsletter that you want to publish to an e-mail service can be created under a campaign using the **Geometrixx Newsletter** template. You can also use the **Geometrixx Outdoors E-Mail** template. 基于 **Geometrixx Outdoors电子邮件模板的示例电子邮件** /新闻稿 `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`，请访问。
+An email or newsletter that you want to publish to an e-mail service can be created under a campaign using the **Geometrixx Newsletter** template. You can also use the **Geometrixx Outdoors E-Mail** template. 基于Geometrixx Outdoors电子邮件模板的 **示例电子邮件** /新闻稿 `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`，请访问。
 
 要创建发布到已配置电子邮件服务的新电子邮件，请执行以下操作：
 
@@ -66,7 +69,7 @@ The **Email Tools** component for ExactTarget can add more email functionality t
  <tbody> 
   <tr> 
    <td>邮寄地址(必需)</td> 
-   <td>此组件会在电子邮件中插入贵组织的邮寄地址。</td> 
+   <td>此组件会在电子邮件中插入您组织的邮寄地址。</td> 
   </tr> 
   <tr> 
    <td>个人资料中心(必需)</td> 
@@ -109,6 +112,7 @@ The **Email Tools** component for ExactTarget can add more email functionality t
    >
    >
 * 以下两个电子邮件工具是必需的：**邮寄地址（必需）**&#x200B;和&#x200B;**个人资料中心（必需）**。如果将电子邮件发布到 ExactTarget，这两个电子邮件工具默认均会被添加到每封邮件的底部。
+
 >
 
 
@@ -146,7 +150,7 @@ The **Email Tools** component for ExactTarget can add more email functionality t
 1. 打开电子邮件。
 1. 在发布电子邮件之前，请确保您已将正确的配置应用到电子邮件。
 1. 单击&#x200B;**发布**。This opens the **Publish Newsletter To E-mail Service Provider** window.
-1. 填写&#x200B;**新闻稿名称**&#x200B;字段。系统会使用此名称将电子邮件/新闻稿发布到电子邮件服务提供商。如果未提供电子邮件名称，则会使用AEM中新闻稿的页面名称发布电子邮件。
+1. 填写&#x200B;**新闻稿名称**&#x200B;字段。系统会使用此名称将电子邮件/新闻稿发布到电子邮件服务提供商。如果未提供电子邮件名称，则使用AEM中新闻稿的页面名称发布电子邮件。
 1. 单击&#x200B;**发布**。
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)

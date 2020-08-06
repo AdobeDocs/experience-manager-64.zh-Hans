@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM表单发行版中已弃用Flex工作空间。
+>Flex工作区已弃用于AEM表单发布。
 
 例如，您可以从一个环境导出搜索模板定义和全局设置，然后将它们导入到另一个环境，从而从开发环境移动到生产。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM表单发行版中已弃用Flex工作空间。
+>Flex工作区已弃用于AEM表单发布。
 
 工作区全局设置文件包含以下设置：
 
@@ -81,13 +81,13 @@ ht-degree: 0%
 **client_specialRoutes_routes_deny_names:** Workbench用户可用来解释为“deny”的字符串的种类。 字符串区分大小写。 例如，默认值为deny。 如果Workbench用户在流程中使用“拒绝”一词，则无法识别该词。 必须向此设置添加“拒绝”一词，才能自定义路由按钮并将样式应用于该按钮。
 
 **client_specialRoutes_routes_deny_style:** 位于Workspace主题文件中的样式名称，用于标识拒绝按钮图标。 样式必须包括启用图标和禁用图标的值。 要为自定义按钮定义样式，必须使用以下模板：
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** Workbench用户可用来解释为“approve”的字符串的种类。 字符串区分大小写。 例如，默认值为approve。 如果Workbench用户在流程中使用“批准”一词，则无法识别该词。 必须将“批准”添加到此设置中，才能自定义路由按钮并应用样式。
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** Workbench用户可用来解释为“approve”的字符串的种类。 字符串区分大小写。 例如，默认值为approve。 如果Workbench用户在流程中使用“批准”一词，则无法识别该词。 必须将“批准”添加到此设置，才能自定义路由按钮并将样式应用于该按钮。
 
 **client_specialRoutes_names:** 用于从资源文件中查找自定义字符串值的键。 此设置中的每个条目都需要包含名称和样式的值。
 
 ### JGroup设置 {#jgroup-settings}
 
-这些设置仅在您已从Adobe LiveCycle ES 2.5或更早版本升级后才显示。
+这些设置仅在您已从AdobeLiveCycleES 2.5或更早版本升级后才显示。
 
 **server_remoteevents_ClientTimeoutMilliseconds:** JGroup等待事件消息的最长时间。 不应更改此设置。
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 **server_remoteevents_JGroupName:** 用于远程事件通信的JGroup的名称。 该值是随机生成的，以避免群集中的冲突。 不应更改此值。
 
-有关JGroups和Workspace的其他信息，请参 [阅JGroups和AEM表单工作区——说明](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html)。
+有关JGroup和Workspace的其他信息，请参 [阅JGroup和AEM表单Workspace —— 说明](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html)。
 
 ### formView设置 {#formview-settings}
 
@@ -125,9 +125,9 @@ ht-degree: 0%
 
 **server_debugLevel:** 请勿更改此设置。
 
-**client_pollingInterval:** 设置在（JEE上的AEM表单已弃用）Flex Workspace上使用的轮询间隔（以秒为单位），以检测新的和修改的任务。 默认为3秒。 这对于AEM Forms Workspace不起作用。
+**client_pollingInterval:** 设置在(JEE上的AEM表单已弃用)Flex工作区上使用的轮询间隔（以秒为单位），以检测新的和修改的任务。 默认为3秒。 这对AEM Forms工作区无效。
 
-**client_systemContext_name:** 在AEM Forms Workspace中，为任务的附件指定要在“添加者”字段（在“附件”选项卡中）中显示的自定义名称（例如“公民”）。
+**client_systemContext_name:** 在AEM Forms工作区中，为任务的附件指定要在“添加者”字段（“附件”选项卡）中显示的自定义名称（例如“公民”）。
 
 要定义自定义名称，请执行以下操作：
 

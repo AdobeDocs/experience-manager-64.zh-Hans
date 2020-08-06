@@ -1,8 +1,8 @@
 ---
 title: 设置Android studio项目并构建Android应用程序
 seo-title: 设置Android studio项目并构建Android应用程序
-description: 设置Android Studio项目和为AEM Forms应用程序构建安装程序的步骤
-seo-description: 设置Android Studio项目和为AEM Forms应用程序构建安装程序的步骤
+description: 设置Android Studio项目和构建AEM Forms应用程序安装程序的步骤
+seo-description: 设置Android Studio项目和构建AEM Forms应用程序安装程序的步骤
 uuid: 4c966cdc-d0f5-4b5b-b21f-f11e8a35ec8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 本文适用于构建AEM Forms应用程序6.3.1.1及更高版本。 有关从AEM FormsApp 6.3的源代码构建应用程序，请参阅 [设置Eclipse项目和构建Android™应用程序](/help/forms/using/setup-eclipse-project-build-installer.md)。
 
-AEM Forms提供AEM Forms应用程序的完整源代码。 源包含构建自定义AEM Forms应用程序的所有组件。 源代码存档是 `adobe-lc-mobileworkspace-src-<version>.zip` 软件分发软件包 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 的一部分。
+AEM Forms提供AEM Forms应用的完整源代码。 该源包含构建自定义AEM Forms应用程序的所有组件。 源代码存档是 `adobe-lc-mobileworkspace-src-<version>.zip` 软件分发软件包 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 的一部分。
 
 要获取AEM Forms应用程序源，请执行以下步骤：
 
-1. 开放 [软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID登录软件分发。
-1. 点按 **[!UICONTROL 标题]** 菜单中可用的Adobe Experience Manager。
+1. 开放 [软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID才能登录软件分发。
+1. 点按 **[!UICONTROL 标题]** 菜单中提供的Adobe Experience Manager。
 1. 在过滤器 **[!UICONTROL 部分]** :
-   1. 从“ **[!UICONTROL 解决方]** 案 **[!UICONTROL ”下]** 拉列表中选择“表单”。
+   1. 从“ **[!UICONTROL 解决方]** 案 **[!UICONTROL ”下拉]** 列表中选择Forms。
    2. 选择包的版本和类型。 您还可以使用“搜 **[!UICONTROL 索下载]** ”选项筛选结果。
 1. 点按适用于您的操作系统的包名称，选择“ **[!UICONTROL 接受EULA条款]**”，然后点 **[!UICONTROL 按下载]**。
 1. 打开 [包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) ，然后单 **[!UICONTROL 击“上传包]** ”以上传包。

@@ -1,8 +1,8 @@
 ---
 title: SPA模型路由
 seo-title: SPA模型路由
-description: 对于AEM中的单页应用程序，该应用程序负责路由。 本文档描述了路由机制、合同和可用选项。
-seo-description: 对于AEM中的单页应用程序，该应用程序负责路由。 本文档描述了路由机制、合同和可用选项。
+description: 对于AEM中的单页应用程序，应用程序负责路由。 本文档描述了路由机制、合同和可用选项。
+seo-description: 对于AEM中的单页应用程序，应用程序负责路由。 本文档描述了路由机制、合同和可用选项。
 uuid: 93b4f85a-a240-42d4-95e2-e8b790df7723
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # SPA模型路由{#spa-model-routing}
 
-对于AEM中的单页应用程序，该应用程序负责路由。 本文档描述了路由机制、合同和可用选项。
+对于AEM中的单页应用程序，应用程序负责路由。 本文档描述了路由机制、合同和可用选项。
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ ht-degree: 0%
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-请注意，SPA的每条路由都应与AEM中的可访问资源(例如，“ `/content/mysite/mypage"`)对应，因为一旦选择了该路由， `PageModelManager` 该页面将自动尝试加载相应的页面模型。 但是，如果需要，SPA还可以定义路由的“块列表”，这些路由应被以下对象忽略 `PageModelManager`:
+请注意，SPA的每条路由都应与AEM中的可访问资源(例如，“ `/content/mysite/mypage"`)相对应，因 `PageModelManager` 为一旦选择了该路由，将自动尝试加载相应的页面模型。 但是，如果需要，SPA还可以定义路由的“阻止列表”，这些路由应被以下用户忽略 `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

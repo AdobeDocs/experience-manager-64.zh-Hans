@@ -1,6 +1,6 @@
 ---
 title: 资产卸载最佳实践
-description: 推荐在AEM Assets中卸载资产摄取和复制工作流的使用案例和最佳实践。
+description: 在AEM Assets为卸载资产摄取和复制工作流推荐的使用案例和最佳实践。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->此功能已从AEM 6.4开始弃用，并在AEM 6.5中删除。请相应地进行计划。
+>从AEM 6.4开始，此功能已弃用，并在AEM 6.5中删除。相应的计划。
 
-在Adobe Experience Manager(AEM)资产中处理大文件和运行工作流可能会占用大量CPU、内存和I/O资源。 特别是，资产的大小、工作流、用户数和资产摄取频率都会影响系统的整体性能。 资源密集型操作包括AEM资产摄取和复制工作流。 在单个AEM创作实例上大量使用这些工作流可能会对创作效率产生不利影响。
+在Adobe Experience Manager(AEM)资产中处理大文件和运行工作流会占用大量CPU、内存和I/O资源。 特别是，资产的大小、工作流、用户数和资产摄取频率都会影响系统的整体性能。 资源密集型操作包括AEM资产摄取和复制工作流。 在单个AEM创作实例上大量使用这些工作流可能会对创作效率产生不利影响。
 
 将这些任务卸载到专用工作器实例可以降低CPU、内存和IO开销。 通常，卸载的想法是将消耗大量CPU/内存/IO资源的任务分发到专用工作器实例。 以下部分包括资产卸载的推荐使用案例。
 
 ## AEM Assets卸载 {#aem-assets-offloading}
 
-AEM Assets实现了特定于资产的本机工作流扩展以卸载。 它构建于卸载框架提供的通用工作流扩展之上，但在实施中包含其他特定于资产的功能。 资产卸载的目标是对上传的资产高效运行DAM更新资产工作流。 资产卸载使您能够更好地控制摄取工作流。
+AEM Assets实施了本机特定于资源的工作流扩展，用于卸载。 它构建于卸载框架提供的通用工作流扩展之上，但在实施中包含其他特定于资产的功能。 资产卸载的目标是对上传的资产高效运行DAM更新资产工作流。 资产卸载使您能够更好地控制摄取工作流。
 
 ## AEM Assets卸载组件 {#aem-assets-offloading-components}
 
@@ -49,7 +49,7 @@ DAM更新资产卸载工作流在用户上传资产的主（作者）服务器�
 
 ## Sling拓扑 {#sling-topology}
 
-Sling拓扑将AEM实例分组，使它们能够相互感知，与基础持久性无关。 Sling拓扑的这一特性允许您为非集群、群集和混合场景创建拓扑。 实例可向整个拓扑公开属性。 框架提供回调，用于侦听拓扑（实例和属性）中的更改。 Sling拓扑为Sling分布式作业提供了基础。
+Sling拓扑将AEM实例分组，使它们能够相互感知，与底层持久性无关。 Sling拓扑的这一特性允许您为非集群、群集和混合场景创建拓扑。 实例可向整个拓扑公开属性。 框架提供回调，用于侦听拓扑（实例和属性）中的更改。 Sling拓扑为Sling分布式作业提供了基础。
 
 ### Sling分发作业 {#sling-distributed-jobs}
 
@@ -88,7 +88,7 @@ Sling分布式作业提供作业和分发框架。 Granite卸载只负责将作�
 
 ### 建议的资源卸载部署 {#recommended-assets-offloading-deployment}
 
-在AEM和Oak中，可能存在多种部署方案。 对于资产卸载，建议使用共享数据存储进行基于TarMK的部署。 下图概述了建议的部署：
+在AEM和Oak中，可能有多种部署方案。 对于资产卸载，建议使用共享数据存储进行基于TarMK的部署。 下图概述了建议的部署：
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -117,7 +117,7 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 ### 在作者和工作者之间使用共享数据存储和无二进制复制  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
-建议使用无二进制复制来减少资产卸载的传输开销。 要了解如何为共享数据存储区设置无二进制复制，请参 [阅在AEM中配置节点存储和数据存储](/help/sites-deploying/data-store-config.md)。 对于资产卸载，此过程并不不同，只是涉及其他复制代理。 由于无二进制复制只适用于正向复制代理，因此您还应对所有卸载代理使用正向复制。
+建议使用无二进制复制来减少资产卸载的传输开销。 要了解如何为共享数据存储设置无二进制复制，请参 [阅在AEM中配置节点存储和数据存储](/help/sites-deploying/data-store-config.md)。 对于资产卸载，此过程并不不同，只是涉及其他复制代理。 由于无二进制复制只适用于正向复制代理，因此您还应对所有卸载代理使用正向复制。
 
 ### 关闭传输包 {#turning-off-transport-packages}
 

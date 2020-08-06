@@ -96,7 +96,7 @@ Blueprint配置标识要用作一个或多个Live Copy页面源的现有网站�
 
 * 由Blueprint配置引用 [的页面](#creating-a-blueprint-configuration)。
 * 以及与配置无连接的页面。
-* AEM还支持在其他Live Copy页面中创建Live Copy。
+* AEM还支持在其他Live Copy的页面中创建Live Copy。
 
 唯一的区别是，源/ **蓝图页** 上的Rollout命令的可用性取决于源是否被Blueprint配置引用：
 
@@ -361,7 +361,7 @@ Blueprint页面（在Blueprint配置中引用）为您提供了Live Copy页面�
 1. 从以下位置选择相应的选项：
 
    * **暂停**
-   * **暂停（含子项）**
+   * **与子项一起暂停**
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 

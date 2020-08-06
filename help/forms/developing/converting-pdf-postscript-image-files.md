@@ -31,7 +31,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关转换PDF服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+   >有关转换PDF服务的详细信息，请参阅 [AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 将PDF文档转换为PostScript {#converting-pdf-documents-to-postscript}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关转换PDF服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关转换PDF服务的详细信息，请参阅 [AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 在以编程方式执行“转换PDF”服务操作之前，必须创建“转换PDF”服务客户端。 如果您使用Java API，请创建一个 `ConvertPdfServiceClient` 对象。 如果您使用Web服务API，请创建一个 `ConvertPDFServiceService` 对象。
 
-本部分使用AEM Forms中引入的Web服务功能。 要访问新功能，必须使用属性构建代理对 `lc_version` 象。 (请参阅使用Web服务调用AEM表 [单中的“使用Web服务访问新功](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)能”。)
+本节使用在AEM Forms引入的Web服务功能。 要访问新功能，必须使用属性构建代理对 `lc_version` 象。 (请参阅使用Web服务调用AEM Forms中的“ [使用Web服务访问新功能](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)”。)
 
 **引用PDF文档转换为PostScript文件**
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 **设置转换运行时选项**
 
-将PDF文档转换为PostScript文件时，可以定义指定所创建PostScript类型的运行时选项。 例如，可以定义第3级PostScript文件。
+将PDF文档转换为PostScript文件时，可以定义指定所创建PostScript类型的运行时选项。 例如，可以定义级别3 PostScript文件。
 
 通常，生成的PostScript文件将反映输入PDF文档的大小。 如果选择 `ShrinkToFit` 选项（缩小PostScript文件的输出以适合页面），您将看不到输入PDF文档与生成的PostScript文件之间的区别。 仅当 `ShrinkToFit` 您选择以比输入PDF文档小的页面大小打印时，此选项才生效。 要选择较小的页面大小，请定义 `PageSize` 选项。 此外，建议您设置选 `RotateAndCenter` 项以获 `true` 得正确的PostScript输出。
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关可以设置的运行时值的信息，请参阅 `ToPSOptionsSpec` AEM Forms API参 [考中的类引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+>有关可以设置的运行时值的信息，请参阅《AEM Forms `ToPSOptionsSpec` API参考 [》中的类引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
 **将PDF文档转换为PostScript文件**
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 [使用Web服务API将PDF文档转换为PS](converting-pdf-postscript-image-files.md#convert-a-pdf-document-to-ps-using-the-web-service-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 1. 设置转换运行时选项。
 
    * 通过调 `ToPSOptionsSpec` 用对象的构造函数创建对象。
-   * 通过调用属于该对象的适当方法来设置运行时 `ToPSOptionsSpec` 选项。 例如，要定义所创建的PostScript级别，请调 `ToPSOptionsSpec` 用对象的 `setPsLevel` 方法并传递 `PSLevel` 指定PostScript级别的明细列表值。 有关可设置的所有运行时值的信息，请参阅 `ToPSOptionsSpec` AEM Forms API参 [考中的类引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+   * 通过调用属于该对象的适当方法来设置运行时 `ToPSOptionsSpec` 选项。 例如，要定义所创建的PostScript级别，请调 `ToPSOptionsSpec` 用对象的 `setPsLevel` 方法并传递 `PSLevel` 指定PostScript级别的明细列表值。 有关可设置的所有运行时值的信息，请参阅《AEM Forms `ToPSOptionsSpec` API参考 [》中的类引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
 1. 将PDF文档转换为PostScript文件。
 
@@ -127,6 +127,7 @@ ht-degree: 0%
 
    * 表示 `com.adobe.idp.Document` 要转换为PostScript文件的PDF文档的对象。
    * 指 `ToPSOptionsSpec` 定PostScript运行时选项的对象。
+
    该方 `toPS2` 法返回一 `Document` 个包含新PostScript文档的对象。
 
 1. 保存PostScript文件。
@@ -140,7 +141,7 @@ ht-degree: 0%
 
 [快速开始（SOAP模式）: 使用Java API将PDF文档转换为PostScript](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -154,7 +155,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建转换PDF客户端。
 
@@ -164,7 +165,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `ConvertPdfServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -188,6 +189,7 @@ ht-degree: 0%
 
    * 表示 `BLOB` 要转换为PostScript文件的PDF文档的对象
    * 指定 `ToPSOptionsSpec` 运行时选项的对象
+
    转换完成后，通过访问PostScript文档对象的属性提取表示该 `BLOB` 的二进制 `MTOM` 数据。 这会返回一个字节数组，您可以将其写出到PostScript文件。
 
 1. 保存PostScript文件。
@@ -203,7 +205,7 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 将PDF文档转换为图像格式 {#converting-pdf-documents-to-image-formats}
 
@@ -213,7 +215,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关转换PDF服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关转换PDF服务的详细信息，请参阅 [AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -240,7 +242,7 @@ ht-degree: 0%
 
 **设置运行时选项**
 
-必须设置运行时选项，如图像格式和分辨率值。 有关运行时值的信息，请参阅 `ToImageOptionsSpec` AEM Forms API参 [考中的类引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+必须设置运行时选项，如图像格式和分辨率值。 有关运行时值的信息，请参阅《AEM Forms `ToImageOptionsSpec` API参考 [》中的类引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
 **将PDF转换为图像**
 
@@ -254,7 +256,7 @@ ht-degree: 0%
 
 **另请参阅**
 
-[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -282,6 +284,7 @@ ht-degree: 0%
 
    * 使用对 `ToImageOptionsSpec` 象的构造函数创建对象。
    * 根据需要调用属于此对象的方法。 例如，通过调用方法并传递指定格 `setImageConvertFormat` 式类型的枚 `ImageConvertFormat` 举值来设置图像类型。
+
    >[!NOTE]
    >
    >必须 `ImageConvertFormat` 设置明细列表值。
@@ -292,6 +295,7 @@ ht-degree: 0%
 
    * 表示 `com.adobe.idp.Document` 要转换的PDF文件的对象。
    * 包含 `com.adobe.livecycle.converpdfservice.client.ToImageOptionsSpec` 有关目标图像格式的各种首选项的对象。
+
    该方 `toImage2` 法返回包 `java.util.List` 含图像的对象。 集合中的每个元素都是一个 `com.adobe.idp.Document` 实例。
 
 1. 从集合检索图像文件。
@@ -312,7 +316,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >替换 `localhost` 为承载AEM Forms的服务器的IP地址。
+   >替 `localhost` 换为承载AEM Forms的服务器的IP地址。
 
 1. 创建转换PDF客户端。
 
@@ -322,7 +326,7 @@ ht-degree: 0%
    * 将对 `System.ServiceModel.BasicHttpBinding` 象的字段 `MessageEncoding` 设置为 `WSMessageEncoding.Mtom`。 此值确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`。
+      * 为字段指定AEM表单用户名 `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`。
       * 为字段分配相应的口令值 `ConvertPdfServiceClient.ClientCredentials.UserName.Password`。
       * 为字段指 `HttpClientCredentialType.Basic` 定常量值 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 为字段指 `BasicHttpSecurityMode.TransportCredentialOnly` 定常量值 `BasicHttpBindingSecurity.Security.Mode`。
@@ -339,6 +343,7 @@ ht-degree: 0%
 
    * 使用对 `ToImageOptionsSpec` 象的构造函数创建对象。
    * 根据需要调用属于此对象的方法。 例如，通过调用方法并传递指定格 `setImageConvertFormat` 式类型的 `ImageConvertFormat` 明细列表值来设置图像类型。
+
    >[!NOTE]
    >
    >必须 `ImageConvertFormat` 设置明细列表值。
@@ -349,6 +354,7 @@ ht-degree: 0%
 
    * 表 `BLOB` 示要转换的文件的对象
    * 包 `ToImageOptionsSpec` 含目标图像格式各种首选项的对象
+
    该方 `toImage2` 法返回 `MyArrayOfBLOB` 包含新创建的图像文件的对象。
 
 1. 从集合检索图像文件。
@@ -360,4 +366,4 @@ ht-degree: 0%
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM表单](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

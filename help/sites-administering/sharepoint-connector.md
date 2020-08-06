@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Day JCR Connector for Microsoft SharePoint 2010和Microsoft SharePoint 2013，版本4.0。
 
-本文包括有关Adobe JCR Connector for Microsoft SharePoint 2010和Microsoft SharePoint 2013版本4.0的详细信息。
+本文包括有关AdobeJCR Connector for Microsoft SharePoint 2010和Microsoft SharePoint 2013版本4.0的详细信息。
 
 SharePoint连接器支持以下基本功能：
 
@@ -83,7 +83,7 @@ SharePoint连接器可从包共享下 [载](https://www.adobeaemcloud.com/conten
    * Microsoft Office SharePoint Server(MOSS)2010
    * Microsoft Office SharePoint Server(MOSS)2013
 
-* 如果您需要对连接器的自定义部署（OEM、特殊要求、自定义身份验证方法）的支持，请与您所在地区的Adobe办事处联系。
+* 如果您需要对连接器的自定义部署（OEM、特殊要求、自定义身份验证方法）的支持，请与您所在地区的Adobe办公室联系。
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ SharePoint连接器可从包共享下 [载](https://www.adobeaemcloud.com/conten
 
 AEM包共享用于分发产品功能、示例和热修复。 有关详细信息，请参阅 [包共享文档](/help/sites-administering/package-manager.md#package-share)。
 
-要在AEM欢迎页面上访问包共享，请点按／单击 **工具** ，然后选择 **包共享**。 您需要有效的Adobe ID，其中包含您的公司电子邮件地址。 此外，登录到您的帐户后，申请“包共享”访问权限。
+要访问AEM欢迎页上的包共享，请点按／单击 **工具** ，然后选择 **包共享**。 您需要有效的Adobe ID，其中包含您的公司电子邮件地址。 此外，登录到您的帐户后，申请“包共享”访问权限。
 
 #### 与AEM集成 {#integrating-with-aem}
 
@@ -135,9 +135,9 @@ AEM包共享用于分发产品功能、示例和热修复。 有关详细信息�
 `<name>` 是JCR工作区的名称，并且\
 `<url>` 是该工作区的SharePoint服务器的URL。
 
-在AEM中，执行与上述配置步骤不同的另一步。 允许列出&#x200B;**“com.day.cq.dam.cq-dam-jcr-connectors**”捆绑。
+在AEM中，除上述配置步骤外，再执行一个步骤。 允许列表&#x200B;**“com.day.cq.dam.cq-dam-jcr-connectors**”捆绑。
 
-要在AEM中允许列表包，请执行以下步骤：
+要允许列表AEM中的捆绑包，请执行以下步骤：
 
 1. 导航到OSGi管理控制台： http://localhost:4502/system/console/configMgr。
 
@@ -194,21 +194,21 @@ AEM包共享用于分发产品功能、示例和热修复。 有关详细信息�
 Sharepoint包括经典和基于声明的身份验证方法，这两种方法都支持以下身份验证类型：
 
 * 基本
-* 基于表单
+* Forms
 
 特别是，可以使用以下类型的身份验证：
 
 * Classic-Basic
-* 基于经典表单
+* 基于经典Forms
 * Claims-Basic
-* 基于声明表单
+* Forms索赔
 
 AEM JCR Connector for Microsoft SharePoint 2010和Microsoft SharePoint 2013，版本4.0支持基于声明的身份验证（Microsoft建议使用此身份验证），该身份验证在以下模式下运行：
 
 * **基本/NTLM身份验证**: 连接器首先尝试使用基本身份验证进行连接。 如果不可用，则切换到基于NTLM的身份验证。
-* **基于表单的身份验证**: Sharepoint根据用户在登录表单（通常是网页）中键入的凭据验证用户。 系统为经过身份验证的请求发出一个令牌，该令牌包含用于为后续请求重新建立标识的密钥。
+* **基于Forms的身份验证**: Sharepoint根据用户在登录表单（通常是网页）中键入的凭据验证用户。 系统为经过身份验证的请求发出一个令牌，该令牌包含用于为后续请求重新建立标识的密钥。
 
-**配置基于表单的身份验证**
+**配置基于Forms的身份验证**
 
 转到： [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
@@ -230,9 +230,9 @@ AEM JCR Connector for Microsoft SharePoint 2010和Microsoft SharePoint 2013，�
 
 只有在AEM和SharePoint上通过身份验证的用户才能通过连接器访问SharePoint内容。
 
-您还可以使用连接器扩展进行身份验证以创建自定义身份验证模块，例如，将AEM用户的访问权限映射到特定SharePoint用户。 创建与SharePoint用户（用户名和密码应匹配）对应的AEM用户，以便能够查看映射到连接器实例的SharePoint内容。
+您还可以使用连接器扩展进行身份验证来创建自定义身份验证模块，例如，将AEM用户的访问权映射到特定SharePoint用户。 创建与SharePoint用户（用户名和密码应匹配）对应的AEM用户，以便能够查看映射到连接器实例的SharePoint内容。
 
-要在AEM中创建用户，请执行以下操作：
+在AEM中创建用户：
 
 1. 登录http://localhost:9502/with管理员用户。
 1. 单击“工具”。
@@ -264,7 +264,7 @@ AEM JCR Connector for Microsoft SharePoint 2010和Microsoft SharePoint 2013，�
 
 #### 支持SharePoint服务器的不同身份验证方法 {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-在其标准版本中，连接器支持标准IIS **Windows** 身份验证（基本）和基于表单的身份验证（基于令牌）。 通过 [可扩展性机制](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) ，可以支持其他身份验证方法。
+在其标准版本中，连接器支持标准IIS Windows **身份** 验证（基本）和基于Forms的身份验证（基于令牌）。 通过 [可扩展性机制](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) ，可以支持其他身份验证方法。
 
 以下步骤提供了扩展标准身份验证以支持SharePoint服务器的各种身份验证方法的相关指南：
 

@@ -1,8 +1,8 @@
 ---
 title: We.Finance参考站点演练
 seo-title: We.Finance参考站点演练
-description: '浏览We.Finance参考站点并了解其实施方式。 We.Finance是展示AEM Forms主要功能的示例实施。 '
-seo-description: '浏览We.Finance参考站点并了解其实施方式。 We.Finance是展示AEM Forms主要功能的示例实施。 '
+description: '浏览We.Finance参考站点并了解其实施方式。 We.Finance是展示AEM Forms的主要特性和功能的示例实施。 '
+seo-description: '浏览We.Finance参考站点并了解其实施方式。 We.Finance是展示AEM Forms的主要特性和功能的示例实施。 '
 uuid: cbcedba4-6151-475d-b6c2-9859e0382768
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Pre-requisites {#pre-requisites}
 
-按照设置和配置AEM Forms引 [用站点中的说明设置引用站点](/help/forms/using/setup-reference-sites.md)。
+按照设置和配置AEM Forms参考站 [点中的说明设置参考站点](/help/forms/using/setup-reference-sites.md)。
 
 ## We.Finance Reference站点方案 {#we-finance-reference-site-scenarios}
 
@@ -49,7 +49,7 @@ We.Finance信用卡应用方案涉及以下角色：
 
 ![workflow_aem](assets/workflow_aem.png)
 
-让我们详细了解参考站点场景，以了解AEM Forms如何帮助We.Finance实现其目标。
+让我们详细了解参考站点场景，了解AEM Forms如何帮助We.Finance实现其目标。
 
 ### Sarah从We.Finance收到新闻稿并申请信用卡 {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-a-credit-card}
 
@@ -105,8 +105,8 @@ Sarah单击“ **[!UICONTROL 发送邮件]**”。 她收到一封电子邮件�
 * 它包括自适应表单规则，用于调用表单数据模型服务来预填已登录用户的用户详细信息。 它还调用服务，按社会保险号或表单中提供的电子邮件地址预填信息。 您可以在查看表单数据模型及其服务 `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`。
 * 它使用各种自适应表单组件来捕获输入并适应用户响应。 它还使用支持HTML5输入类型的电子邮件等组件。
 * 它使用签名步骤组件显示完成的表单，并允许在表单上进行电子签名。
-* “保存我的进度”按钮为用户生成一个唯一ID，并将部分填写的应用程序另存为AEM存储库中的节点中的草稿。 此外，它还显示一个对话框，其中搜索允许发送电子邮件，其中包含指向包含草稿应用程序的节点的链接。 确认对话框上的“发送邮件”按钮会触发一封电子邮件，其中包含指向包含草稿的节点的链接。
-* 它使用调用AEM工作流提交操作来触发信用卡审批工作流。 您可以在以下位置查看此表单中使用的工作流： `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
+* “保存我的进度”按钮为用户生成唯一的ID，并将部分填写的应用程序作为草稿保存在AEM存储库中的节点中。 此外，它还显示一个对话框，其中搜索允许发送电子邮件，其中包含指向包含草稿应用程序的节点的链接。 确认对话框上的“发送邮件”按钮会触发一封电子邮件，其中包含指向包含草稿的节点的链接。
+* 它使用调用AEM工作流提交操作来触发信用卡批准工作流。 您可以在以下位置查看此表单中使用的工作流： `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
 
 建议查看表单以了解用于构建表单的模式、组件、规则、表单数据模型、表单工作流和提交操作。
 
@@ -118,7 +118,7 @@ Sarah单击“ **[!UICONTROL 发送邮件]**”。 她收到一封电子邮件�
 * [主题](/help/forms/using/themes.md)
 * [数据集成](/help/forms/using/data-integration.md)
 * [在自适应表单中使用Adobe Sign](/help/forms/using/working-with-adobe-sign.md)
-* [OSGi上以表单为中心的工作流程](/help/forms/using/aem-forms-workflow.md)
+* [OSGi上以Forms为中心的工作流程](/help/forms/using/aem-forms-workflow.md)
 
 ### 亲自查看 {#a-see-it-yourself}
 
@@ -138,7 +138,7 @@ Sarah稍后回来，找到We.Finance的一封电子邮件。 她单击电 **[!UI
 
 ![恢复1](assets/resume-1.png)
 
-或者，她也可以在We.Finance主页的 **[!UICONTROL “我的表单]** ”下访问她的申请草稿。
+或者，她也可以在We.Finance主页的“我 **[!UICONTROL 的Forms]** ”下访问她的申请草案。
 
 ![门户草稿](assets/portal-drafts.png)
 
@@ -152,15 +152,15 @@ Sarah稍后回来，找到We.Finance的一封电子邮件。 她单击电 **[!UI
 
 ### We.Finance接收并批准此申请 {#approving-the-application}
 
-We.Finance收到Sarah提交的信用卡申请。 任务被分配给Gloria Rios。 她会在自己的AEM收件箱中查看任务并批准它。
+We.Finance收到Sarah提交的信用卡申请。 任务被分配给Gloria Rios。 她查看AEM收件箱中的任务并批准它。
 
 ![收件箱](assets/inbox.png)
 
 #### 工作方式 {#how-it-works-2}
 
-当Sarah填写并提交信用卡应用程序时，将触发一个Forms Workflow并在Gloria的AEM收件箱中创建一个任务。
+当Sarah填写并提交信用卡应用程序时，将在Gloria的AEM收件箱中创建Forms Workflow触发器和任务。
 
-OSGi上的AEM Forms提供以表单为中心的工作流，使您能够构建基于表单的自适应工作流。 这些工作流可用于审阅和批准、业务流程流、开始文档服务、与Adobe Sign签名工作流程集成等。 有关详细信息，请参 [阅OSGi上以表单为中心的工作流程](/help/forms/using/aem-forms-workflow.md)。
+AEM FormsOSGi提供以表单为中心的工作流，使您能够构建基于表单的自适应工作流。 这些工作流可用于审核和批准、业务流程流、开始文档服务、与Adobe Sign签名工作流集成等。 有关详细信息，请参 [阅OSGi上以Forms为中心的工作流程](/help/forms/using/aem-forms-workflow.md)。
 
 下图描述了处理信用卡应用程序并生成应用程序PDF输出的AEM工作流。
 
@@ -168,7 +168,7 @@ OSGi上的AEM Forms提供以表单为中心的工作流，使您能够构建基�
 
 #### 亲自查看 {#see-it-yourself-2}
 
-您可以访问we.finance站点的AEM收件箱：https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html。 在页面上，点按 **[!UICONTROL 登录]**，选中 **[!UICONTROL 以代表身份登录复选]**`grios/password` 框，使用Gloria Rios的用户名／密码登录AEM收件箱，然后批准信用卡应用程序。 有关将AEM收件箱用于以表单为中心的工作流任务的信息，请 [参阅管理AEM收件箱中的表单应用程序和任务](/help/forms/using/manage-applications-inbox.md)。
+您可以访问位于https://&lt;hostname>:&lt;PublishPort>/content/we-finance/global/en.html的&#x200B;*we.finance站点的* AEM *收件箱*。 在页面上，点按 **[!UICONTROL 登录]**，选中登 **[!UICONTROL 录为代表复选框]** ，使用Gloria Rios的用户名／口令 `grios/password` 登录AEM收件箱，并批准信用卡应用程序。 有关将AEM收件箱用于以表单为中心的工作流任务的信息，请参 [阅在AEM收件箱中管理Forms应](/help/forms/using/manage-applications-inbox.md)用程序和任务。
 
 ![收件箱-1](assets/inbox-1.png)
 
@@ -210,7 +210,7 @@ https://&lt;*host*>:&lt;*port*>/content/aemforms-refsite/doclink.html?文档=/co
 
 ![语句——电子邮件](assets/statement-email.png)
 
-Sarah在电子邮件中单击“视图对帐单”以视图信用卡对帐单。 该语句是一个交互式通信。 它具有Web和打印(PDF)版本。 该语句与Forms Data Model集成，从数据库检索特定于客户的数据。 交互式语句包含各种元素：
+Sarah在电子邮件中单击“视图对帐单”以视图信用卡对帐单。 该语句是一个交互式通信。 它具有Web和打印(PDF)版本。 该语句与Forms数据模型集成，从数据库检索特定于客户的数据。 交互式语句包含各种元素：
 
 * 语句摘要
 * 详细费用报告
@@ -240,27 +240,27 @@ https://&lt;*hostname*>:&lt;*port*>/content/aemforms-refsite/doclink.html?文档
 
 您可以在创作和发布实例上访问它。
 
-信用卡对帐单在对帐单末尾显示促销优惠。 您可以将Adobe Target与AEM Forms Interactive Communication集成，根据特定客户细分提供促销目标优惠。 要将交互式通信配置为使用Adobe Target进行自定义和定向优惠，请参阅 [创建定向体验](/help/forms/using/experience-targeting-forms.md)。
+信用卡对帐单在对帐单末尾显示促销优惠。 您可以将Adobe Target与AEM Forms互动通信相集成，根据特定客户细分投放促销目标优惠。 要将您的交互式通信配置为使用Adobe Target进行自定义和定向优惠，请参 [阅创建定向体验](/help/forms/using/experience-targeting-forms.md)。
 
 ![](do-not-localize/offers.png)
 
 ### We.Finance对信用卡应用的性能分析 {#we-finance-analyzes-the-performance-of-the-credit-card-application}
 
-We.Finance会不时检查其信用卡应用程序的性能，以检查客户可能遇到的任何问题。 他们使用此分析对信用卡应用程序中所需的更改做出明智决策，以增强用户体验，降低表单的弃用率，从而提高转化率。 他们利用AEM Forms与Adobe Analytics的集成来进行分析。 以下图像描绘了其分析仪表板。
+We.Finance会不时检查其信用卡应用程序的性能，以检查客户可能遇到的任何问题。 他们使用此分析对信用卡应用程序中所需的更改做出明智决策，以增强用户体验，降低表单的弃用率，从而提高转化率。 他们利用AEM Forms和Adobe Analytics的融合来分析。 以下图像描绘了其分析仪表板。
 
-有关如何解释分析仪表板的更多信息，请参 [阅查看和了解AEM Forms分析报告](/help/forms/using/view-understand-aem-forms-analytics-reports.md)。
+有关如何解释分析仪表板的更多信息，请参阅查 [看和了解AEM Forms分析报告](/help/forms/using/view-understand-aem-forms-analytics-reports.md)。
 
 ![cc-analytics](assets/cc-analytics.png)
 
 #### 工作方式 {#how-it-works-5}
 
-信用卡应用程序表单的性能指标是使用Adobe Analytics跟踪的。 有关配置Adobe Analytics和查看报告的更多信息，请参 [阅为表单和文档配置分析](/help/forms/using/configure-analytics-forms-documents.md)。
+信用卡申请表的性能指标使用Adobe Analytics进行跟踪。 有关配置Adobe Analytics和查看报告的详细信息，请参 [阅配置表单和文档的分析](/help/forms/using/configure-analytics-forms-documents.md)。
 
 #### 亲自查看 {#see-it-yourself-br}
 
 为了视图和浏览分析报告，我们将在参考站点为信用卡应用程序提供种子数据。 在使用种子数据之前，请参 [阅配置分析](/help/forms/using/setup-reference-sites.md#configureanalytics)。 在创作实例中执行以下步骤，将报表视图为种子数据：
 
-1. 转到 **[!UICONTROL 表单和文档]** UI，网址为：*https://&lt;hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments。
+1. 转至 **[!UICONTROL Forms和文档]** UI，网址&#x200B;*为https://&lt;hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments。
 
 1. 单击以打开 **[!UICONTROL We.Finance文件]** 夹。
 1. 选择 **[!UICONTROL 信用卡自适应表单]** ，然后在工具栏中单击启用 **[!UICONTROL 分析]**。
@@ -280,13 +280,13 @@ We.Finance会不时检查其信用卡应用程序的性能，以检查客户可�
 
 **信用卡申请的A/B测试**
 
-除了分析信用卡应用程序的性能并不断改进它，We.Finance还利用AEM Forms与目标的集成来创建A/B测试。 它允许他们提供信用卡申请表的不同体验，并确定在填写和提交表单方面可以更好地转化率的体验。
+除了分析信用卡应用程序的性能并不断改进，We.Finance还利用AEM Forms与目标的集成来创建A/B测试。 它允许他们提供信用卡申请表的不同体验，并确定在填写和提交表单方面可以更好地转化率的体验。
 
-要在AEM Forms服务器中配置目标，请参 [阅在AEM Forms中设置和集成目标](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms)。
+要在AEM Forms服务器中配置目标，请参 [阅在AEM Forms设置和集成目标](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms)。
 
 执行以下步骤以体验创建We.Finance信用卡申请表的A/B测试：
 
-1. 转至 **[!UICONTROL 表单和文档]** ，网址为https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments。
+1. 转至 **[!UICONTROL Forms和文档]** ，网址为&#x200B;*https://&lt;hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments。
 
 1. 单击以打开 **[!UICONTROL We.Finance文件]** 夹。
 1. 选择 **[!UICONTROL 信用卡自适应表单]** 的申请。
@@ -300,7 +300,7 @@ We.Finance会不时检查其信用卡应用程序的性能，以检查客户可�
 1. 选择“信 **用卡申请”表** ，然后单击 **编辑**。 它提供了打开其中一种体验的选项。 单击 **体验B**。 表单将在编辑模式下打开。
 
 1. 根据需要修改表单以创建与默认体验A不同的体验。
-1. 转到表单和文档UI，选择表单，单击 **更多**，然后选择 **开始A/B测试**。
+1. 转到Forms和文档UI，选择表单，单 **击更多**，然后选择 **开始A/B测试**。
 
 1. 现在，使用以下url在Chrome浏览器中多次打开表单：
 
@@ -346,7 +346,7 @@ We.Finance住房抵押方案涉及以下角色：
 
 #### 工作方式 {#how-it-works-6}
 
-“贷款”页面上的住房抵押计算器是AEM站点页面中的嵌入自适应表单。 您可以在编辑模式下查看“贷款”页面 `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`。
+“贷款”页面上的住房抵押计算器是AEM Sites页面中嵌入的自适应表单。 您可以在编辑模式下查看“贷款”页面 `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`。
 
 嵌入式按揭贷款计算器是一种自适应表单，它使用规则根据计算器字段中提供的贷款详细信息计算EMI金额。 您可以在查看自适应表单 `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/hm-calc.html`。
 
@@ -389,7 +389,7 @@ Sarah选择申请住房抵押，并单击“立即 **[!UICONTROL 应用”]** �
 * 应用程序中的第一个选项卡“入门”是一个动态按揭贷款计算器，它根据用户选择显示选项。 例如，“购买”和“再融资”选项的字段和值不同。 此功能是使用show-hide规则实现的。 此外，当您单击继续并初始化“计划”选项卡时，它会调用在表单数据模型中配置的Web服务，以获取和显示抵押计划。 您可以在查看表单数据模型和配置的服务 `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`。
 * 它使用各种自适应表单组件来捕获输入并适应用户响应。 它还使用支持HTML5输入类型的电子邮件等组件。
 * 它使用签名步骤组件显示完成的表单，并允许在表单上进行电子签名。
-* 它使用调用AEM工作流提交操作来触发We Finance Home Mortage AEM工作流。 您可以在以下位置查看此表单中使用的工作流： `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
+* 它使用调用AEM工作流提交操作来触发We Finance Home MortgageAEM工作流。 您可以在以下位置查看此表单中使用的工作流： `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
 
 建议查看表单以了解用于构建表单的模式、组件、规则、表单数据模型、表单工作流和提交操作。
 
@@ -401,7 +401,7 @@ Sarah选择申请住房抵押，并单击“立即 **[!UICONTROL 应用”]** �
 * [主题](/help/forms/using/themes.md)
 * [数据集成](/help/forms/using/data-integration.md)
 * [在自适应表单中使用Adobe Sign](/help/forms/using/working-with-adobe-sign.md)
-* [OSGi上以表单为中心的工作流程](/help/forms/using/aem-forms-workflow.md)
+* [OSGi上以Forms为中心的工作流程](/help/forms/using/aem-forms-workflow.md)
 
 #### 亲自查看 {#see-it-yourself-6}
 
@@ -427,9 +427,9 @@ Gloria打开任务，单击“需要更多信息”，并对缺少的政府ID发
 
 #### 工作方式 {#how-it-works-8}
 
-当Sarah填写并提交家庭抵押申请时，将触发一个Forms Workflow，并在Gloria的AEM收件箱中创建一个任务。 当Gloria查看应用程序并请求更多信息时，该任务将分配给John Doe。 当John Doe附加该ID并重新提交该应用程序时，它将分配给Gloria。 这在与抵押贷款应用程序关联的AEM工作流中定义。
+当Sarah填写并提交住房抵押申请时，将在Gloria的AEM收件箱中创建Forms Workflow触发器和任务。 当Gloria查看应用程序并请求更多信息时，该任务将分配给John Doe。 当John Doe附加该ID并重新提交该应用程序时，它将分配给Gloria。 这在与按揭贷款应用程序关联的AEM工作流中定义。
 
-OSGi上的AEM Forms提供以表单为中心的工作流，使您能够构建基于表单的自适应工作流。 这些工作流可用于审阅和批准、业务流程流、开始文档服务、与Adobe Sign签名工作流程集成等。 有关详细信息，请参 [阅OSGi上以表单为中心的工作流程](/help/forms/using/aem-forms-workflow.md)。
+AEM FormsOSGi提供以表单为中心的工作流，使您能够构建基于表单的自适应工作流。 这些工作流可用于审核和批准、业务流程流、开始文档服务、与Adobe Sign签名工作流集成等。 有关详细信息，请参 [阅OSGi上以Forms为中心的工作流程](/help/forms/using/aem-forms-workflow.md)。
 
 下图描述了与按揭贷款应用程序关联的AEM工作流。
 
@@ -437,9 +437,9 @@ OSGi上的AEM Forms提供以表单为中心的工作流，使您能够构建基�
 
 #### 亲自查看 {#see-it-yourself-7}
 
-您可以访问位于https://&lt;hostname>:&lt;AuthorPort ***>/content/we-finance/global/en/login.html?resource*********=/aem/inbox.html的AEM收件箱。 使用Gloria Rios和John Doe的 `grios/password` 用户名／口令登录到AEM收件箱 `jdoe/jdoe` ，并浏览家庭按揭贷款应用程序工作流程。
+您可以访问位于https://&lt;***hostname***>:&lt;AuthorPort ******>/content/we-finance/global/en/login.html?resource=/aem/inbox.html的AEM收件箱。 使用Gloria Rios和John Doe的 `grios/password` 用户名／密码登录AEM收件 `jdoe/jdoe` 箱，并浏览家庭按揭贷款应用程序工作流程。
 
-有关将AEM收件箱用于以表单为中心的工作流任务的信息，请 [参阅管理AEM收件箱中的表单应用程序和任务](/help/forms/using/manage-applications-inbox.md)。
+有关将AEM收件箱用于以表单为中心的工作流任务的信息，请参 [阅在AEM收件箱中管理Forms应](/help/forms/using/manage-applications-inbox.md)用程序和任务。
 
 ### Sarah收到欢迎信件 {#sarah-receives-the-welcome-kit}
 
@@ -451,7 +451,7 @@ OSGi上的AEM Forms提供以表单为中心的工作流，使您能够构建基�
 
 #### 工作方式 {#how-it-works-9}
 
-欢迎工具包是包中包含的交互式 `cq-we-finance-content-pkg.zip` 通信。 欢迎工具包中的促销优惠由Adobe Target服务器提供。 优惠是针对特定客户细分进行自定义和定位的。 欢迎工具包从预配置的Adobe Target服务器中为女优惠受众群获取。
+欢迎工具包是包中包含的交互式 `cq-we-finance-content-pkg.zip` 通信。 欢迎包中的促销优惠由Adobe Target服务器提供。 优惠是针对特定客户细分进行自定义和定位的。 欢迎工具包从预配置的Adobe Target服务器中为女性客户的受众区段获取优惠。
 
 欢迎工具包的桌面版本中的交互式卡使用使用文档片段的默认卡布局创建的自定义布局。
 
@@ -494,21 +494,21 @@ https://&lt;*hostname*>:&lt;*port*>/content/forms/af/we-finance/mortgage-account
 
 ### We.Finance分析抵押申请的绩效 {#we-finance-analyzes-the-performance-of-the-mortgage-application}
 
-We.Finance会不时检查其抵押申请的表现，以检查客户可能面临的任何问题。 他们使用此分析对抵押申请中所需的更改做出明智决策，以增强用户体验、降低表单放弃率，从而提高转化率。 他们利用AEM Forms与Adobe Analytics的集成来进行分析。 以下图像描绘了其分析仪表板。
+We.Finance会不时检查其抵押申请的表现，以检查客户可能面临的任何问题。 他们使用此分析对抵押申请中所需的更改做出明智决策，以增强用户体验、降低表单放弃率，从而提高转化率。 他们利用AEM Forms和Adobe Analytics的融合来分析。 以下图像描绘了其分析仪表板。
 
-有关如何解释分析仪表板的更多信息，请参 [阅查看和了解AEM Forms分析报告](/help/forms/using/view-understand-aem-forms-analytics-reports.md)。
+有关如何解释分析仪表板的更多信息，请参阅查 [看和了解AEM Forms分析报告](/help/forms/using/view-understand-aem-forms-analytics-reports.md)。
 
 ![mortgage-analytics](assets/mortgage-analytics.png)
 
 #### 工作方式 {#how-it-works-11}
 
-使用Adobe Analytics跟踪抵押申请表的绩效指标。 有关配置Adobe Analytics和查看报告的更多信息，请参 [阅为表单和文档配置分析](/help/forms/using/configure-analytics-forms-documents.md)。
+使用Adobe Analytics跟踪抵押申请表的性能指标。 有关配置Adobe Analytics和查看报告的详细信息，请参 [阅配置表单和文档的分析](/help/forms/using/configure-analytics-forms-documents.md)。
 
 #### 亲自查看 {#see-it-yourself-br-1}
 
 为了视图和浏览分析报告，我们将在参考站点中提供按揭贷款应用程序的种子数据。 在使用种子数据之前，请参 [阅配置分析](/help/forms/using/setup-reference-sites.md#configureanalytics)。 在创作实例中执行以下步骤，将报表视图为种子数据：
 
-1. 转到 **表单和文档** UI，网址为：*https://&lt;hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments。
+1. 转至 **Forms和文档** UI，网址&#x200B;*为https://&lt;hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments。
 
 1. 单击以打开 **we-finance文件** 夹。
 1. 选择 **[!UICONTROL “家庭抵押贷款]** ”自适应表单的应用程序，然后在工具栏中单击“启 **[!UICONTROL 用分析”]**。
@@ -529,11 +529,11 @@ We.Finance会不时检查其抵押申请的表现，以检查客户可能面临�
 
 除了分析抵押应用程序的性能并不断改进它，We.Finance还利用AEM Forms与目标的集成来创建A/B测试。 它允许他们提供不同的申请表体验，并确定在填写和提交表单方面可带来更好转化率的体验。
 
-要在AEM Forms服务器中配置目标，请参 [阅在AEM Forms中设置和集成目标](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms)。
+要在AEM Forms服务器中配置目标，请参 [阅在AEM Forms设置和集成目标](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms)。
 
 在创作实例中执行以下步骤以体验创建We.Finance抵押申请表的A/B测试：
 
-1. 转至 **表单和文档** ，网址为https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments。
+1. 转至 **Forms和文档** ，网址为&#x200B;*https://&lt;hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments。
 
 1. 单击以打开 **We.Finance文件** 夹。
 1. 选择“ **适用于住房抵押** ”自适应表单。
@@ -547,7 +547,7 @@ We.Finance会不时检查其抵押申请的表现，以检查客户可能面临�
 1. 选择“适用 **于住房抵押的应用程序** ”自适应表单，然 **后单击“编辑”**。 它提供了打开其中一种体验的选项。 单击 **体验B**。 表单将在编辑模式下打开。
 
 1. 根据需要修改表单以创建与默认体验A不同的体验。
-1. 转到表单和文档UI，选择表单，单击 **更多**，然后选择 **开始A/B测试**。
+1. 转到Forms和文档UI，选择表单，单 **击更多**，然后选择 **开始A/B测试**。
 
 1. 现在，使用以下url在Chrome浏览器中多次打开表单：
 
@@ -587,7 +587,7 @@ Microsoft Dynamics的住房抵押应用程序演练演示了当参考站点使�
 
 #### 工作方式 {#how-it-works-12}
 
-“贷款”页面上的住房抵押计算器是AEM站点页面中的嵌入自适应表单。 您可以在编辑模式下查看“贷款”页面 `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`。
+“贷款”页面上的住房抵押计算器是AEM Sites页面中嵌入的自适应表单。 您可以在编辑模式下查看“贷款”页面 `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`。
 
 嵌入式按揭贷款计算器是一种自适应表单，它使用规则根据计算器字段中提供的贷款详细信息计算EMI金额。 您可以在查看自适应表单 `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/ms-dynamics/home-mortgage-calculator.html`。
 
@@ -694,7 +694,7 @@ Sarah是We.Finance的现有客户。 她使用自己的We.Finance帐户凭据登
 
 * 它包括自适应表单规则，用于调用表单数据模型服务来预填已登录用户的用户详细信息。 它还调用服务，按社会保险号或表单中提供的电子邮件地址预填信息。 您可以在查看表单数据模型及其服务 `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`。
 * 它使用各种自适应表单组件来捕获输入并适应用户响应。 它还使用支持HTML5输入类型的电子邮件等组件。
-* “保存我的进度”按钮为用户生成一个唯一ID，并将部分填写的应用程序另存为AEM存储库中的节点中的草稿。 此外，它还显示一个对话框，其中搜索允许发送电子邮件，其中包含指向包含草稿应用程序的节点的链接。 确认对话框上的“发送邮件”按钮会触发一封电子邮件，其中包含指向包含草稿的节点的链接。
+* “保存我的进度”按钮为用户生成唯一的ID，并将部分填写的应用程序作为草稿保存在AEM存储库中的节点中。 此外，它还显示一个对话框，其中搜索允许发送电子邮件，其中包含指向包含草稿应用程序的节点的链接。 确认对话框上的“发送邮件”按钮会触发一封电子邮件，其中包含指向包含草稿的节点的链接。
 * 它使用调用AEM工作流提交操作来触发主保险批准工作流。 您可以在以下位置查看此表单中使用的工作流： `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
 
 建议查看表单以了解用于构建表单的模式、组件、规则、表单数据模型、表单工作流和提交操作。
@@ -707,7 +707,7 @@ Sarah是We.Finance的现有客户。 她使用自己的We.Finance帐户凭据登
 * [主题](/help/forms/using/themes.md)
 * [数据集成](/help/forms/using/data-integration.md)
 * [在自适应表单中使用Adobe Sign](/help/forms/using/working-with-adobe-sign.md)
-* [OSGi上以表单为中心的工作流程](/help/forms/using/aem-forms-workflow.md)
+* [OSGi上以Forms为中心的工作流程](/help/forms/using/aem-forms-workflow.md)
 
 #### 亲自查看 {#see-it-yourself-12}
 
@@ -717,7 +717,7 @@ Sarah是We.Finance的现有客户。 她使用自己的We.Finance帐户凭据登
 
 ### We.Finance批准申请并签订合同 {#we-finance-approves-the-application-and-a-contract-is-signed}
 
-We.Finance收到Sarah提交的家庭保险申请。 任务被分配给Gloria Rios。 她会在自己的AEM收件箱中审阅应用程序并批准它。
+We.Finance收到Sarah提交的家庭保险申请。 任务被分配给Gloria Rios。 她在AEM收件箱中查看应用程序并批准它。
 
 ![保险收件箱——格里os](assets/insurance-inbox-grios.png)
 
@@ -731,7 +731,7 @@ Sarah会收到一封电子邮件，其中附有用于签署家庭保险单合同
 
 #### 工作方式 {#how-it-works-16}
 
-当Sarah提交家庭保险申请时，将触发一个表单工作流，并在Gloria的AEM收件箱中创建一个任务。 当Gloria审阅并批准该应用程序时，任务将分配给Frank De Costa。 任务从一个人物流向另一个人物的流程在与保险应用程序关联的AEM工作流中定义。 有关工作流的更多信息，请参 [阅OSGi上以表单为中心的工作流程](/help/forms/using/aem-forms-workflow.md)。
+当Sarah提交家庭保险申请时，Forms Workflow会触发，任务会在Gloria的AEM收件箱中创建。 当Gloria审阅并批准该应用程序时，任务将分配给Frank De Costa。 在与保险应用程序关联的AEM工作流中，将任务从一个人物流定义到另一个人物流。 有关工作流的更多信息，请参 [阅OSGi上以Forms为中心的工作流](/help/forms/using/aem-forms-workflow.md)。
 
 下图描述了与保险应用程序关联的AEM工作流。
 
@@ -743,12 +743,12 @@ Sarah会收到一封电子邮件，其中附有用于签署家庭保险单合同
 
 执行以下操作：
 
-1. 转到AEM收件箱， `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`然后以Gloria人 `grios/grios` 用户名密码的身份登录。 批准Sarah的家庭保险申请的任务。
+1. 转到AEM Inbox, `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`然后以Gloria角色 `grios/grios` 的用户名密码身份登录。 批准Sarah的家庭保险申请的任务。
 
-1. 然后，以Frank角色的用 `fdcosta/password` 户名密码身份登录AEM收件箱。 视图任务。
+1. 然后，以Frank角色的用 `fdcosta/password` 户名密码身份登录到AEM收件箱。 视图任务。
 1. 现在，转到并 `https://[authorHost]:[authorPort]/aem/forms.html/content/dam/formsanddocuments/we-finance/insurance` 预览HomeInsuranceWelcomeKit的字母模板。
 1. 在“数据”面板中指定信息。 单击 **[!UICONTROL 预览]** ，然后将PDF下载到您的本地文件系统。 确保PDF文件以contract.pdf文件名保存。
-1. 转到Frank的AEM收件箱，打开任务，附加下载的合同PDF，然后单击“发 **[!UICONTROL 送合同]**”。
+1. 转到Frank的AEM收件箱，打开任务，附加下载的合同PDF，然后单击“发 **[!UICONTROL 送合同”]**。
 1. 打开包含合同的电子邮件并签署文档。
 
 ### Sarah收到欢迎信件 {#sarah-receives-a-welcome-kit}
@@ -797,7 +797,7 @@ We.Finance财富管理方案涉及以下角色：
 
 ### Sarah探索Blue Chip Growth Fund招股说明书，了解该基金 {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
-Sarah浏览了招股说明书的“概述”、“价格与绩效”、“组合管理”、“费用与最低值”以及“税金与支付”标签，以了解当前和历史价格、历史增长、与标普500指数的比较、按行业分散、基金管理人员以及与基金相关的开支。 相关信息被隔离到不同的标签中。 招股说明书是一种互动交流。 交互式通信具有响应式设计。 她可以在任何屏幕尺寸的设备上打开交互式通信，交互式通信会重排设计以适合底层设备。
+Sarah浏览了招股说明书的“概述”、“价格与绩效”、“Portfolio管理”、“费用与最低值”以及“税金与支付”标签，以了解当前和历史价格、历史增长、与标准普尔500指数的比较、行业多元化、基金管理人员以及与基金相关的开支。 相关信息被隔离到不同的标签中。 招股说明书是一种互动交流。 交互式通信具有响应式设计。 她可以在任何屏幕尺寸的设备上打开交互式通信，交互式通信会重排设计以适合底层设备。
 
 ![slide1-1](assets/slide1-1.png)
 
@@ -819,7 +819,7 @@ Sarah浏览了招股说明书的“概述”、“价格与绩效”、“组合
 
 #### 工作方式 {#how-it-works-19}
 
-蓝筹增长基金的招股说明书是一种互动交流。 它具有Web和PDF渠道。 交互式通信与AEM工作流集成，通过电子邮件发送PDF版本。 可以在https:// authorHost上查看工作流[模型]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html。
+蓝筹增长基金的招股说明书是一种互动交流。 它具有Web和PDF渠道。 交互通信与AEM工作流集成，通过电子邮件发送PDF版本。 可以在https:// authorHost上查看工作流[模型]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html。
 
 ![财富管理](assets/wealth-management.png)
 
@@ -842,13 +842,13 @@ Sarah按照电子邮件中提供的说明操作并成功重新发布该过程。
 
 ### 康拉德向We.Finance发送保险单续订通讯 {#conrad-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Conrad登录AEM实例，打开“自动保险”仪表板，指定Sarah的 **客户ID**，然后单 **击“续订策略**”。 此 **时将打开** “代理UI”，其中显示已填写的Sarah Rose的策略详细信息。 Conrad指定了Sarah的电子邮件地址，并单击“ **提交**”。 Sarah会收到一封电子邮件，主题 **为“您的汽车保险续订**”。
+Conrad登录AEM实例，打开“自动保险”仪表板，指定Sarah的 **客户ID**，然后单击“ **续订策略**”。 此 **时将打开** “代理UI”，其中显示已填写的Sarah Rose的策略详细信息。 Conrad指定了Sarah的电子邮件地址，并单击“ **提交**”。 Sarah会收到一封电子邮件，主题 **为“您的汽车保险续订**”。
 
 ![cc-仪表板](assets/cc-dashboard.png)
 
 #### 工作方式 {#how-it-works-20}
 
-保险单续订通信是一种交互通信。 Conrad Simms使用代理UI将保险单续订通信发送给Sarah。 通信包括打印(PDF)和指向交互通信的Web渠道的链接。 交互式通信使用AEM工作流发送电子邮件。 您可以在https:// authorHost上查看该[工作流]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+保险单续订通信是一种交互通信。 Conrad Simms使用代理UI将保险单续订通信发送给Sarah。 通信包括打印(PDF)和指向交互通信的Web渠道的链接。 交互通信使用AEM Workflow发送电子邮件。 您可以在https:// authorHost上查看该[工作流]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
 
 ![自动保险工作流](assets/auto-insurance-workflow.png)
 
@@ -913,11 +913,11 @@ https://[publishServer]:[publishPort]/content/document.html?模式=fdm&amp;docum
 
 #### 工作方式  {#how-it-works-22}
 
-Renew Now（立即续订）按钮将Sarah转到付款页面。 付款页面是自适应表单。 Sarah会填写信用卡详细信息并单击“ **提交**”。 系统会处理她的信用卡付款，屏幕上会显示在自适应表单中配置的感谢信。
+Renew Now（立即续订）按钮将Sarah引导到付款页面。 付款页面是自适应表单。 Sarah会填写信用卡详细信息并单击“ **提交**”。 系统会处理她的信用卡付款，屏幕上会显示在自适应表单中配置的感谢信。
 
 #### 亲自查看  {#see-it-yourself-20}
 
-单击 **立即续** 订以访问付款页面。 填写您的信用卡信息，然后单击“ **付款”。** 您可以访问创作实例中的付款页面：
+单击 **立即续订** ，以访问付款页面。 填写您的信用卡信息，然后单击“ **付款”。** 您可以访问创作实例中的付款页面：
 
 https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&amp;模式=fdm&amp;customerId=900001
 

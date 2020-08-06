@@ -1,8 +1,8 @@
 ---
 title: 在AEM Forms工作区中集成第三方应用程序
 seo-title: 在AEM Forms工作区中集成第三方应用程序
-description: 如何在AEM Forms工作区中集成诸如通信管理之类的第三方应用程序。
-seo-description: 如何在AEM Forms工作区中集成诸如通信管理之类的第三方应用程序。
+description: 如何在AEM Forms工作区中集成诸如“通信管理”等第三方应用程序。
+seo-description: 如何在AEM Forms工作区中集成诸如“通信管理”等第三方应用程序。
 uuid: 9649157c-fe28-43bf-a7d3-52ed55a0bf4f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 AEM Forms工作区支持对表单和文档的任务分配和完成活动的管理。 这些表单和文档可以是以XDP、PDF、HTML或Flex格式呈现的XDPForms、Flex®表单或指南（已弃用）。
 
-这些功能得到进一步增强。 AEM Forms现在支持与支持类似AEM Forms工作区功能的第三方应用程序进行协作。 此功能的一个常见部分是分配工作流和任务的后续批准。 AEM Forms为AEM Forms企业用户提供单一的统一体验，以便通过AEM Forms工作区处理受支持应用程序的所有此类任务分配或批准。
+这些功能得到进一步增强。 AEM Forms现在支持与支持类似AEM Forms工作区功能的第三方应用程序进行协作。 此功能的一个常见部分是分配工作流和任务的后续批准。 AEM Forms为AEM Forms企业用户提供单一的统一体验，以便通过AEM Forms工作区处理所有此类受支持应用程序的任务分配或批准。
 
 例如，让我们将Correponsement Management视为与AEM Forms工作区集成的示例候选。 通信管理有“信件”的概念，可以呈现并允许行动。
 
 ## 创建对应管理资产 {#create-correspondence-management-assets}
 
-开始，创建在AEM Forms工作区中呈现的示例对应管理模板。 有关详细信息，请 [参阅创建信函模板](/help/forms/using/create-letter.md)。
+开始，方法是创建在AEM Forms工作区中呈现的示例Correndence Management模板。 有关详细信息，请 [参阅创建信函模板](/help/forms/using/create-letter.md)。
 
 访问URL中的“对应管理”模板，验证“对应管理”模板是否可以成功呈现。 URL的模式与 `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 

@@ -5,8 +5,8 @@ contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 798fe016f1a1e27cdbb9737709d1f5ea9ef722c9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1112'
+ht-degree: 13%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 前提条件 {#prerequisites}
 
-该集成需要 [企业Adobe Stock计划](https://stockenterprise.adobe.com/) , [!DNL Experience Manager] 以及至少部署了Service Pack 2的6.4。 有 [!DNL Experience Manager] 关6.4 Service Pack的详细信息，请参阅 [这些发行说明](/help/release-notes/sp-release-notes.md)。
+该集成需要企 [业Adobe Stock计划](https://stockenterprise.adobe.com/) , [!DNL Experience Manager] 以及至少部署了Service Pack 2的6.4。 有 [!DNL Experience Manager] 关6.4 Service Pack的详细信息，请参阅 [这些发行说明](/help/release-notes/sp-release-notes.md)。
 
 ## 集成 [!DNL Experience Manager] 和 [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -31,12 +31,12 @@ ht-degree: 0%
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. 在用 [!DNL Experience Manager] 户界面中，导航 **[!UICONTROL 到工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL Adobe IMS配置]**。 单击&#x200B;**[!UICONTROL 创建]**，然后选择&#x200B;**[!UICONTROL 云解决方案]** > **[!UICONTROL Adobe Stock]**。
+1. In [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. 单击&#x200B;**[!UICONTROL 创建]**，然后选择&#x200B;**[!UICONTROL 云解决方案]** > **[!UICONTROL Adobe Stock]**。
 1. 重用现有证书或选择“ **[!UICONTROL 创建新证书”]**。
 1. 单击&#x200B;**[!UICONTROL 创建证书]**。创建后，下载公钥。 单击&#x200B;**[!UICONTROL 下一步]**。
-1. 将下载的公钥添加到您的服 [!DNL Adobe Developer Console] 务帐户。 单击&#x200B;**[!UICONTROL 下一步]**。使Adobe IMS [!UICONTROL 技术帐户配置屏幕保持打开] ，以便很快提供这些值。
-1. 访 [问Adobe Developer Console](https://console.adobe.io)。 确保您的帐户对需要集成的组织具有管理员权限。
-1. 单击 **[!UICONTROL 创建新项目]** ，然后单 **[!UICONTROL 击添加API]**。 从 **[!UICONTROL 您可]** 用的API列表 [!UICONTROL 中选择Adobe Stock]。 选 [!UICONTROL 择OAUTH 2.0 Web]。 配置并复制显示的各种值。
+1. 将下载的公钥添加到您的服 [!DNL Adobe Developer Console] 务帐户。 单击&#x200B;**[!UICONTROL 下一步]**。让Adobe [!UICONTROL IMS技术帐户配置屏幕保持打开] ，以便很快提供这些值。
+1. 访问 [Adobe开发人员控制台](https://console.adobe.io)。 确保您的帐户对需要集成的组织具有管理员权限。
+1. 单击 **[!UICONTROL 创建新项目]** ，然后单 **[!UICONTROL 击添加API]**。 从 **[!UICONTROL 您]** 可用的API列表 [!UICONTROL 中选择Adobe Stock]。 选 [!UICONTROL 择OAUTH 2.0 Web]。 配置并复制显示的各种值。
 1. In [!DNL Experience Manager] provide the values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. 有关 [这些值的详细信息](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)，请参阅JWT身份验证快速开始。
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
@@ -47,12 +47,12 @@ ht-degree: 0%
 1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. 单击 **[!UICONTROL 创建]** ，创建配置并将其与现有IMS配置关联。 选 `PROD` 作环境参数。
 1. 在授 **[!UICONTROL 权资产路径]** 字段中，保留原样。 请勿更改要存储资产的位 [!DNL Adobe Stock] 置。
-1. 通过添加所有所需属性完成创建。 Click **[!UICONTROL Save &amp; Close]**.
+1. 通过添加所有所需属性完成创建。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 1. 添加 [!DNL Experience Manager] 可授权资产的用户或用户组。
 
 >[!NOTE]
 >
->如果有多个配 [!DNL Adobe Stock] 置，请在“用户首选项”面板(**[!UICONTROL AEM]** >用户图 **[!UICONTROL 标>用户首选项]** > **[!UICONTROL User Preferences]******>  Stock配置)中选择所需的配置。
+>如果有多个配置， [!DNL Adobe Stock] 请在“用户首选项”**[!UICONTROL 面板(AEM >]** User User Preferences > **[!UICONTROL User Preferences]** > ******** Stock配置图标)中选择所需的配置。
 
 ## 在以下位置使 [!DNL Adobe Stock] 用和管理资产 [!DNL Experience Manager] {#usemanage}
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 您 [!DNL Experience Manager] 的用户可以在和中搜索资 [!DNL Experience Manager] 产 [!DNL Adobe Stock]。 当搜索位置不限于时， [!DNL Adobe Stock]将显示来自和 [!DNL Experience Manager] 的搜 [!DNL Adobe Stock] 索结果。
 
-* 要搜索资 [!DNL Adobe Stock] 产，请单 **[!UICONTROL 击导航]** > **[!UICONTROL 资]** 产 **[!UICONTROL >]**&#x200B;搜索Adobe Stock。
+* 要搜索资产， [!DNL Adobe Stock] 请单击 **[!UICONTROL 导航]** >资 **[!UICONTROL 产]** >搜 **[!UICONTROL 索Adobe Stock]**。
 
 * 要在和之间搜 [!DNL Adobe Stock] 索资 [!DNL Experience Manager Assets]产，请单 ![击search_icon](assets/search_icon.png)。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 >
 >Assets searched from [!DNL Adobe Stock] are just displayed in [!DNL Experience Manager]. [!DNL Adobe Stock] 只有在用户保存资产或 [!DNL Experience Manager] 许可证并保存资产 [后，才会](/help/assets/aem-assets-adobe-stock.md#saveassets) 将资 [产取回并存储在存储库中](/help/assets/aem-assets-adobe-stock.md#licenseassets)。 Assets that are already stored in [!DNL Experience Manager] are displayed and highlighted for ease of reference and access. Also, the [!DNL Stock] assets are saved with some additional metadata to indicate the source as [!DNL Stock].
 
-![在Experience Manager中搜索过滤器，并在搜索结果中高亮显示Adobe Stock资源](assets/aem-search-filters2.jpg)
+![以Experience Manager方式搜索过滤器，并在搜索结果中突出显示Adobe Stock资产](assets/aem-search-filters2.jpg)
 
 *图： 在搜索结果中搜[!DNL Experience Manager]索过滤器[!DNL Adobe Stock]并突出显示资产。*
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 用户可以 [!DNL Adobe Stock] 使用其企业计划的配额来许可 [!DNL Adobe Stock] 资产。 当您授权许可资产时，资产会保存，但不带水印，并且可在中搜索和使用 [!DNL Experience Manager Assets]。
 
-![用于许可和保存Experience Manager资源中的Adobe Stock资源的对话框](assets/aem-stock_licenseandsave.jpg)
+![对话框用于在Adobe Stock资产中许可和保存Experience Manager资产](assets/aem-stock_licenseandsave.jpg)
 
 *图： 允许并保存资产的[!DNL Adobe Stock]对话框[!DNL Experience Manager Assets]。*
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +24,9 @@ AEM允许您生成包含从内容动态获取的文本的图形。
 
 为此，您还可以加载和使用您自己的字体。
 
-目前，所有Java平台实现都支持 [TrueType字体](https://en.wikipedia.org/wiki/Truetype) 。
+目前，所有Java平台实现都支 [持TrueType](https://en.wikipedia.org/wiki/Truetype) 字体。
 
-1. 打开CRXDE lite并导航到您的项目应用程序文件夹：
+1. 打开CRXDE Lite并导航到您的项目应用程序文件夹：
 
    `/apps/<your-project>/`
 
@@ -31,19 +34,20 @@ AEM允许您生成包含从内容动态获取的文本的图形。
 
    * **名称**: `fonts`
    * **类型**: `sling:Folder`
+
    保存所有更改。
 
-1. 将字体文件复制到该文件夹中；例如，使用WebDAV。
+1. 将字体文件复制到此文件夹中； 例如，使用WebDAV。
 
    >[!NOTE]
    >
    >存储库中的字体文件必须具有后缀 `*.ttf` 或 `*.TTF`。
 
-1. 更新 [Day Commons](/help/sites-deploying/configuring-osgi.md) GFX [Font Helper的OSGi配置](/help/sites-deploying/osgi-configuration-settings.md)。 添加字体文件夹的路径；即 `/apps/<your-project>/fonts`.
+1. 更新 [Day Commons](/help/sites-deploying/configuring-osgi.md) GFX [Font Helper的OSGi配置](/help/sites-deploying/osgi-configuration-settings.md)。 添加字体文件夹的路径； 即 `/apps/<your-project>/fonts`.
 
-1. 返回CRXDE Lite。 您现在应该会在您 `.fontlist` 的文件夹中看到一个包含导入字体名称的节点。
+1. 返回CRXDE Lite。 您现在应该会在 `.fontlist` 文件夹中看到一个包含导入字体名称的节点。
 
-   这些字体现在可以在Java API中使用。
+   这些字体现在已准备好在Java API中使用。
 
-有关如何将字体与Java API一起使用的完整详细信息，请参 [阅Java API的Font类的文档](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html)。
+有关如何将字体与Java API一起使用的完整详细信息， [请参阅Java API的Font类的文档](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html)。
 

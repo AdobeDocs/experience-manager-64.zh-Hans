@@ -1,8 +1,8 @@
 ---
 title: 生成XDP表单的HTML5预览
 seo-title: 生成XDP表单的HTML5预览
-description: 预览LiveCycle Designer中的HTML选项卡可用于预览表单在浏览器中的显示效果。
-seo-description: 预览LiveCycle Designer中的HTML选项卡可用于预览表单在浏览器中的显示效果。
+description: 预览设计器中的“LiveCycleHTML”选项卡可用于预览表单，就像表单在浏览器中显示一样。
+seo-description: 预览设计器中的“LiveCycleHTML”选项卡可用于预览表单，就像表单在浏览器中显示一样。
 uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
@@ -30,15 +30,15 @@ ht-degree: 0%
 
 ### 配置Apache Sling Authentication Service {#configure-apache-sling-authentication-service}
 
-1. 转到 `https://[server]:[port]/system/console/configMgr` OSGi或
+1. 转到AEM Forms `https://[server]:[port]/system/console/configMgr` 在OSGi上运行，或
 
-   `https://[server]:[port]/lc/system/console/configMgr` 在JEE上运行的AEM Forms。
+   `https://[server]:[port]/lc/system/console/configMgr` AEM Forms在JEE上跑。
 
 1. 找到并单 **击Apache Sling Authentication Service** （Apache Sling身份验证服务）配置，以在编辑模式下打开它。
 
 1. 根据您是在OSGi还是JEE上运行AEM Forms，在“身份验证要求”字 **段中添加** :
 
-   * JEEAEM Forms
+   * AEM FormsJEE
 
       * -/content/xfaforms
       * -/etc/clientlibs
@@ -46,6 +46,7 @@ ht-degree: 0%
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
+
    >[!NOTE]
    >
    >请勿复制粘贴“身份验证要求”字段中的指定值，因为它可能损坏该值中的特殊字符。 而是在字段中键入指定的值。
@@ -55,14 +56,14 @@ ht-degree: 0%
 
 ### 禁用保护模式 {#disable-protected-mode}
 
-默认 [情况下](/help/forms/using/get-xdp-pdf-documents-aem.md) ，保护模式处于打开状态。 让它为生产环境启用。 您可以禁用它，以便开发环境在设计中预览HTML5表单。 请执行以下步骤以禁用它：
+默认 [情况下](/help/forms/using/get-xdp-pdf-documents-aem.md) ，保护模式处于打开状态。 让它为生产环境启用。 您可以将其禁用，以在设计师中预览HTML5Forms。 请执行以下步骤以禁用它：
 
 1. 以管理员身份登录到AEM Web Console。
 
    * OSGi上的AEM Forms的URL `https://[server]:[port]/system/console/configMgr`
    * JEE上的AEM Forms的URL是 `https://[server]:[port]/lc/system/console/configMgr`
 
-1. 打开 **[!UICONTROL 移动表单配置]** ，进行编辑。
+1. 打开 **[!UICONTROL 移动Forms配置]** ，进行编辑。
 1. 取消选择“ **[!UICONTROL 保护模式]** ”选项，然后单 **[!UICONTROL 击“保存]**”。
 
 ### 提供AEM Forms服务器的详细信息 {#provide-details-of-aem-forms-server}
@@ -74,17 +75,18 @@ ht-degree: 0%
    * **HTTP端口号**: AEM服务器端口。 默认值为 4502。
    * **HTML预览上下文：** 呈现XFA表单的用户档案路径。 以下默认用户档案用于在设计器中预览表单。 但是，您也可以指定自定义用户档案的路径。
 
-      * `/content/xfaforms/profiles/default.html` (OSGi上的AEM Forms)
-      * `/lc/content/xfaforms/profiles/default.html` (JEE上的AEM Forms)
-   * **Forms Manager上下文：** 部署Forms Manager UI的上下文路径。 默认值为：
+      * `/content/xfaforms/profiles/default.html` (AEM FormsOSGi)
+      * `/lc/content/xfaforms/profiles/default.html` (AEM FormsJEE)
+   * **Forms经理背景：** 部署Forms管理器UI的上下文路径。 默认值为：
 
-      * `/aem/forms` (OSGi上的AEM Forms)
-      * `/lc/forms` (JEE上的AEM Forms)
-   **注意：** *确保AEM Forms服务器已启动并正在运行。 HTML预览连接到CRX服务器以*&#x200B;生成&#x200B;*预览。*
+      * `/aem/forms` (AEM FormsOSGi)
+      * `/lc/forms` (AEM FormsJEE)
 
-   ![AEM Forms设计器选项 ](assets/server_options.png)
+   **注意：** *确保AEM Forms服务器已启动并运行。 HTML预览连接到CRX服务器以*&#x200B;生成&#x200B;*预览。*
 
-   AEM Forms设计器选项
+   ![AEM Forms设计师选项 ](assets/server_options.png)
+
+   AEM Forms设计师选项
 
 1. 要预览HTML中的表单，请单击“ **预览HTML** ”选项卡。
 
@@ -112,6 +114,6 @@ Designer允许您使用范例XML数据预览和测试表单。 建议您经常�
 
 ## 预览库中的表单 {#html-preview-of-forms-in-forms-manager}
 
-在AEM Forms中，您可以预览存储库中的表单和文档。 预览有助于准确了解表单的外观和行为，就像最终用户一样。
+在AEM Forms，您可以预览存储库中的表单和文档。 预览有助于准确了解表单的外观和行为，就像最终用户一样。
 
 [**联系支持&#x200B;**](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -1,8 +1,8 @@
 ---
-title: 创建自定义云服务
-seo-title: 创建自定义云服务
-description: 可以使用自定义云服务类型扩展默认云服务集
-seo-description: 可以使用自定义云服务类型扩展默认云服务集
+title: 创建自定义Cloud Service
+seo-title: 创建自定义Cloud Service
+description: 默认Cloud Services集可以使用自定义Cloud Service类型进行扩展
+seo-description: 默认Cloud Services集可以使用自定义Cloud Service类型进行扩展
 uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 12%
 
 ---
 
 
-# 创建自定义云服务{#creating-a-custom-cloud-service}
+# 创建自定义Cloud Service{#creating-a-custom-cloud-service}
 
-可以使用自定义云服务类型扩展默认云服务集。 这允许您以结构化方式将自定义标记注入页面。 这将主要用于第三方分析提供商，例如Google Analytics、Chartbeat等。 云服务是从父页面继承到子页面的，并且能够在任何级别中断继承。
+默认的Cloud Services集可以用自定义Cloud Service类型进行扩展。 这允许您以结构化方式将自定义标记注入页面。 这将主要用于第三方分析提供商，例如Google Analytics、Chartbeat等。 Cloud Services从父页面继承到子页面，能够在任何级别中中断继承。
 
 >[!NOTE]
 >
->此用于创建新云服务的分步指南是使用Google Analytics的示例。 所有内容可能不适用于您的使用案例。
+>此创建新Cloud Service的分步指南是使用Google Analytics的示例。 所有内容可能不适用于您的使用案例。
 
 1. 在CRXDE Lite中，在以下位置创建新节点 `/apps`:
 
@@ -35,15 +38,16 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
 
 1. 在以下位置创建2个新节点 `/apps/acs/analytics`:
 
-   * **名称**:组件
+   * **名称**: 组件
    * **类型**: `sling:Folder`
+
    和
 
-   * **名称**:模板
+   * **名称**: 模板
    * **类型**: `sling:Folder`
 
 
-1. 右键单击 `/apps/acs/analytics/components`。 **** 选择 **创建……后跟创**&#x200B;建组件……打开的对话框允许您指定：
+1. 右键单击 `/apps/acs/analytics/components`。 选择 **创建……** ，然后 **选择创建组件……** 打开的对话框允许您指定：
 
    * **标签**: `googleanalyticspage`
    * **标题**: `Google Analytics Page`
@@ -53,14 +57,15 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
 1. 单击“ **下一步** ”两次，然后指定：
 
    * **允许的父项:** `acs/analytics/templates/googleanalytics`
-   单击“ **下一步** ”两次，然后单 **击“确定”**。
+
+   单击“ **下一步** ”两次，然后 **单击“确定**”。
 
 1. 将属性添加到 `googleanalyticspage`:
 
    * **名称:** `cq:defaultView`
-   * **** 值： `html`
+   * **值：** `html`
 
-1. 使用以下内容创 `content.jsp` 建名 `/apps/acs/analytics/components/googleanalyticspage`称为的新文件：
+1. 创建名为“”的 `content.jsp` 新 `/apps/acs/analytics/components/googleanalyticspage`文件，其中包含以下内容：
 
    ```xml
    <%@page contentType="text/html"
@@ -105,7 +110,7 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
 
 1. 在以下位置创建新节点 `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
 
-   * **名称**:tab1
+   * **名称**: tab1
    * **类型**: `cq:Panel`
    * **属性**:
 
@@ -115,13 +120,13 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
 
 1. 在以下位置创建新节点 `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
-   * **名称**:项目
+   * **名称**: 项目
    * **类型**: `nt:unstructured`
    * **属性**:
 
       * **名称**: `fieldLabel`
-      * **类型**:字符串
-      * **值**:帐户ID
+      * **类型**: 字符串
+      * **值**: 帐户ID
 
       * **名称**: `fieldDescription`
       * **类型**: `String`
@@ -137,7 +142,7 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
       * **类型**: `String`
       * **值**: `textfield`
 
-1. 复 `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` 制到 `/apps/acs/analytics/components/googleanalyticspage/body.jsp` 第34行并更 `libs``apps` 改到第79行，使第79行的脚本参考成为完全限定的路径。
+1. 复制 `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` 到 `/apps/acs/analytics/components/googleanalyticspage/body.jsp` 并更改 `libs` 到第34行， `apps` 使第79行上的脚本引用成为完全限定的路径。
 1. 在以下位置创建新模板 `/apps/acs/analytics/templates/`:
 
    * 具有 **资源类型** = `acs/analytics/components/googleanalyticspage`
@@ -195,20 +200,22 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
 
    * **标题**: `Google Analytics`
    * **名称**: `googleanalytics`
-   返回CRXDE lite中，在 `/etc/cloudservices/googleanalytics`下面，添加以下属性 `jcr:content`:
+
+   返回CRXDE Lite，在 `/etc/cloudservices/googleanalytics`下面添加以下属性 `jcr:content`:
 
    * **名称**: `componentReference`
    * **类型**: `String`
    * **值**: `acs/analytics/components/googleanalytics`
 
 
-1. 导航到新创建的服务页面( `http://localhost:4502/etc/cloudservices/googleanalytics.html`)并单击 **+** ，以创建新配置：
+1. 导航到新创建的服务页 `http://localhost:4502/etc/cloudservices/googleanalytics.html`面()并单 **击+** 以创建新配置：
 
    * **父配置**: `/etc/cloudservices/googleanalytics`
    * **标题:**  `My First GA Config`
+
    选择 **Google Analytics配置** ，然后单 **击创建**。
 
-1. 例如 **，输入帐户ID**`AA-11111111-1`。 单击&#x200B;**确定**。
-1. 导航到页面，然后在“云服务”选项卡下的页面属性中添加新 **创建的配置** 。
-1. 页面将添加自定义标记。
+1. 输入 **帐户ID**，例如 `AA-11111111-1`。 单击&#x200B;**确定**。
+1. 导航到页面，并在页面属性中的“Cloud Services”选项卡下添加新创 **建的** 配置。
+1. 页面中将添加自定义标记。
 

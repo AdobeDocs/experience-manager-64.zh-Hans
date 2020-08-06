@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 38%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
 * 在作者
 * 以管理权限登录
-* 浏览至控制台
+* 浏览到控制台
 
    例如， [http://localhost:4502/tagging](http://localhost:4502/tagging)
 
@@ -37,7 +40,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
    如果选择“**标记**”，则可以创建一个命名空间：
 
-   ![creating_tags_andnamespaces_1](assets/creating_tags_andnamespaces-1.png)
+   ![creating_tags_andnamespaces-1](assets/creating_tags_andnamespaces-1.png)
 
    如果选择一个命名空间（例如&#x200B;**演示**），则可以在该命名空间内创建一个标记：
 
@@ -45,17 +48,20 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
 1. 在两种情况下，输入
 
-   * **标题**(*必需*)标记的显示标题。 虽然可以输入任何字符，
+   * **标题**
+(
+*必需*)标记的显示标题。 虽然可以输入任何字符，
 
       建议不要使用这些特殊字符：
 
       * `colon (:)` -命名空间分隔符
       * `forward slash (/)` -子标签分隔符
-      如果输入这些字符，则不显示这些字符。
+
+      如果输入这些字符，则不会显示这些字符。
 
    * **名称**
 
-      (必&#x200B;*需*)标记的节点名称。
+      (*必需*)标记的节点名称。
 
    * **描述**
 
@@ -88,11 +94,11 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
 **列表**&#x200B;会打开一个新窗口，使用突出显示的标记显示所有页面的路径：
 
-![list_showing_where_stagrereferenced](assets/list_showing_wheretagsarereferenced.png)
+![列表_showing_where引用](assets/list_showing_wheretagsarereferenced.png)
 
 ## 移动标记 {#moving-tags}
 
-为了帮助标记管理员和开发人员清理分类或重命名标记ID，可以将标记移到新位置：
+要帮助标记管理员和开发人员清理分类或重命名标记ID，可以将标记移动到新位置：
 
 1. 打开 **Tagging** 控制台。
 1. 选择标记并在顶部工具栏（或上下文菜单）中单击“**移动...**”。
@@ -109,7 +115,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
 >[!NOTE]
 >
->作者不应移动标记或重命名标记ID。 必要时，作者只应更 [改标记标题](#editing-tags)。
+>作者不应移动标记或重命名标记ID。 必要时，作者只应 [更改标记标题](#editing-tags)。
 
 ## 合并标记 {#merging-tags}
 
@@ -158,20 +164,20 @@ The following procedure shows how to translate the `title`of the tag **Animals**
 
 ![edit_tag](assets/edit_tag.png)
 
-“标记”控制台使用用户语言设置，因此对于“动物”标签，在用户属性中将语言设置为法语的用户将显示“Animaux”。
+Tagging控制台使用用户语言设置，因此对于Animal标记，将为用户属性中将语言设置为法语的用户显示“Animaux”。
 
 To add a new language to the dialog, please refer to the section [Adding a New Language to the Edit Tag Dialog](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in the **Tagging for Developers** section.
 
-### 以指定语言在页面属性中显示标记标题 {#displaying-tag-titles-in-page-properties-in-a-specified-language}
+### 在指定语言的页面属性中显示标记标题 {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 
 By default the tag `titles`in the page properties are displayed in the page language. The tag dialog in the page properties has a language field that enables the display of tag `titles`in a different language. The following procedure describes how to display the tag `titles`in French:
 
 1. Refer to the previous section to add the French translation to the **Animals** below **Tags** > **Stock Photography**.
 1. 打开英语分支的 **Geometrixx** 站点中的&#x200B;**产品**&#x200B;页面的页面属性。
-1. 打开“ **标记／关键字****** ”对话框（通过选择“标记／关键字”显示区域右侧的下拉菜单），然后从右下角的下拉菜单中选择法语语言。
-1. 使用向左向右箭头滚动，直到能够选择“ **Stock Photography** ”选项卡
+1. 打开“ **标记** /关键字”对话框（通过选择“标记／关键字”显示区域右侧的下拉菜单），并从右下角的 **下拉菜单中选择** 法语语言。
+1. 使用向左向右箭头滚动，直到能够选择“图片库” **选项卡** 。
 
-   选择 **Animals** (**Animaux**)标签，在对话框之外选择以关闭它，然后将标签添加到页面属性。
+   选择 **Animals** (**Animaux**)标签，在对话框外选择以关闭它，然后将标签添加到页面属性。
 
    ![french_tag](assets/french_tag.png)
 

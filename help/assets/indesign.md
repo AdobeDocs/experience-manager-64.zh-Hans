@@ -1,6 +1,6 @@
 ---
-title: 将AEM Assets与Adobe InDesign Server集成
-description: 了解如何将AEM Assets与InDesign Server集成。
+title: 将AEM Assets与Adobe InDesign Server整合
+description: 了解如何将AEM Assets与InDesign Server相结合。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
@@ -11,28 +11,28 @@ ht-degree: 5%
 ---
 
 
-# 将AEM Assets与Adobe InDesign Server集成 {#integrating-aem-assets-with-indesign-server}
+# 将AEM Assets与Adobe InDesign Server整合 {#integrating-aem-assets-with-indesign-server}
 
 Adobe Experience Manager(AEM)资产使用：
 
-* 用于分配特定处理任务的负载的代理。 代理是与代理工作者通信以实现特定任务的AEM实例，其他AEM实例则用于传送结果。
+* 用于分配特定处理任务的负载的代理。 代理是AEM实例，它与代理工作器通信以实现特定任务，而其他AEM实例则提供结果。
 * 用于定义和管理特定任务的代理工作器。
 
 这些任务可以涵盖多种领域； 例如，使用Adobe InDesign Server处理文件。
 
-要将文件完全上传到您使用Adobe InDesign创建的AEM Assets，将使用代理。 它使用代理工作器与Adobe InDesign Server通信，在Adobe InDesign Server中运 [行脚本](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ，以提取元数据并为AEM Assets生成各种再现。 代理工作者在云配置中启用InDesign Server与AEM实例之间的双向通信。
+要将文件完全上传到您用Adobe InDesign创建的AEM Assets，将使用代理。 它使用代理工作者与Adobe InDesign Server通信，在 [运行脚本](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ，以提取元数据并为AEM Assets生成各种再现。 代理工作程序在云配置中启用InDesign Server与AEM实例之间的双向通信。
 
 >[!NOTE]
 >
->Adobe InDesign提供两种产品：
+>Adobe InDesign有两种产品：
 >
 >* [InDesign](https://www.adobe.com/products/indesign.html)\
    >  这允许您为印刷和／或数字分发设计页面布局。
    >
    >
 * [InDesign Server](https://www.adobe.com/products/indesignserver.html)\
-   >  此引擎使您能够根据您使用InDesign创建的内容有计划地创建自动文档。 它作为服务运行，为其ExtendScript引擎提 [供接口](https://www.adobe.com/devnet/scripting.html) 。\
-   >  脚本以ExtendScript编写，与javascript类似。 有关Indesign脚本的信息，请参 [阅https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
+   >  此引擎使您能够根据您使用文档创建的内容有计划地创建自动InDesign。 它作为一种服务运行，为其ExtendScript引擎提供 [接口](https://www.adobe.com/devnet/scripting.html) 。\
+   >  脚本在ExtendScript编写，与javascript类似。 有关Indesign脚本的信息，请参 [阅https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
 
 >
 
@@ -40,11 +40,11 @@ Adobe Experience Manager(AEM)资产使用：
 
 ## 提取的工作方式 {#how-the-extraction-works}
 
-InDesign Server可以与AEM Assets集成，以便上传使用InDesign()创 `.indd`建的文件、生成再现、提取 *所* 有媒体（例如，视频）并存储为资产：
+InDesign Server可以与AEM Assets集成，以便上传使用InDesign()创 `.indd`建的文件、生成再现 ** 、提取所有媒体（例如，视频）并存储为资产：
 
 >[!NOTE]
 >
->以前版本的AEM能够提取XMP和缩略图，现在可以提取所有媒体。
+>先前版本的AEM能够提取XMP和缩略图，现在可以提取所有媒体。
 
 1. 将文件 `.indd` 上传到AEM Assets。
 1. 框架通过SOAP（简单对象访问协议）将命令脚本发送到InDesign Server。
@@ -57,13 +57,13 @@ InDesign Server可以与AEM Assets集成，以便上传使用InDesign()创 `.ind
       * 将解压结构、文本和任何媒体文件。
       * 将生成PDF和JPG再现。
       * 将生成HTML和IDML再现。
-   * 将生成的文件发回AEM Assets。
+   * 将结果文件发回AEM Assets。
 
    >[!NOTE]
    >
    >IDML是一种基于XML的格式，可呈现 *InDesign文* 件中的所有内容。 它使用Zip压缩存储为压缩 [包](https://www.techterms.com/definition/zip) 。
    >
-   >有关 [更多信息，请参阅Adobe InDesign Interchange Formats](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) INX和IDML。
+   >有关 [更多信息，请参阅Adobe InDesign交换格式](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) INX和IDML。
 
    >[!CAUTION]
    >
@@ -72,8 +72,8 @@ InDesign Server可以与AEM Assets集成，以便上传使用InDesign()创 `.ind
 1. 生成提取和再现后：
 
    * 此结构将被复制到 `cq:Page` （演绎版类型）。
-   * 提取的文本和文件以AEM Assets存储。
-   * 所有演绎版都以AEM Assets形式存储在资产本身中。
+   * 提取的文本和文件存储在AEM Assets。
+   * 所有演绎版都存储在AEM Assets，位于资产本身中。
 
 ## 将InDesign Server与AEM集成 {#integrating-the-indesign-server-with-aem}
 
@@ -84,7 +84,7 @@ InDesign Server可以与AEM Assets集成，以便上传使用InDesign()创 `.ind
 
    仅当默认值不适用于您的实例时，才需要这样做。
 
-1. 为InDesign [Server配置代理工作器](#configuring-the-proxy-worker-for-indesign-server)。
+1. 为InDesign Server [配置代理工作器](#configuring-the-proxy-worker-for-indesign-server)。
 
 ### 安装InDesign Server {#installing-the-indesign-server}
 
@@ -94,9 +94,9 @@ InDesign Server可以与AEM Assets集成，以便上传使用InDesign()创 `.ind
 
    >[!NOTE]
    >
-   >InDesign Server（CS6和更高版本）。
+   >InDesign Server（CS6和更高）。
 
-1. 如果需要，可以自定义InDesign Server实例的配置。
+1. 如果需要，您可以自定义InDesign Server实例的配置。
 
 1. 从命令行开始服务器：
 
@@ -119,7 +119,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 此工作流设置了默认值，这些默认值可以适应您在各种创作实例上的设置(这是一个标准工作流，因此在编辑工作流下可 [以获取更多信息](/help/sites-developing/workflows-models.md#configuring-a-workflow-step))。 如果您使用默认值（包括SOAP端口），则不需要任何配置。
 
-设置完成后，将InDesign文件上传到AEM Assets（通过任何常用方法）将触发处理资产和准备各种再现所需的工作流。 将文件上传到AEM Assets, `.indd` 以确认您看到IDS创建的不同演绎版位于 `<*your_asset*>.indd/Renditions`
+设置完成后，将InDesign文件上传到AEM Assets（通过任何常用方法）将触发处理资产和准备各种演绎版所需的工作流。 将文件上传到AEM Assets, `.indd` 以确认您看到IDS在 `<*your_asset*>.indd/Renditions`
 
 #### 媒体提取 {#media-extraction}
 
@@ -131,7 +131,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 媒体提取参数和脚本路径
 
-* **ExtendScript库**: 这是一个简单的http get/post方法库，其他脚本需要它。
+* **ExtendScript图书馆**: 这是一个简单的http get/post方法库，其他脚本需要它。
 
 * **扩展脚本**: 您可以在此处指定不同的脚本组合。 如果希望在InDesign Server上执行您自己的脚本，请将脚本保存在 `/apps/settings/dam/indesign/scripts`。
 
@@ -139,7 +139,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 >[!CAUTION]
 >
->请勿更改 ExtendScript 库。库提供与Sling通信所需的HTTP功能。 此设置指定要发送到Adobe InDesign Server以供在此使用的库。
+>请勿更改 ExtendScript 库。库提供与Sling通信所需的HTTP功能。 此设置指定要发送到Adobe InDesign Server以供在那里使用的库。
 
 由媒 `ThumbnailExport.jsx` 体提取工作流步骤运行的脚本生成。jpg格式的缩略图再现。 此演绎版由流程缩略图工作流步骤用于生成AEM所需的静态演绎版。
 
@@ -147,7 +147,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 #### 页面提取 {#page-extraction}
 
-这会从提取的元素创建AEM页面。 提取处理程序用于从再现（当前为HTML或IDML）中提取数据。 此数据随后用于使用PageBuilder创建页面。
+这将从提取的元素创建AEM页面。 提取处理程序用于从再现（当前为HTML或IDML）中提取数据。 此数据随后用于使用PageBuilder创建页面。
 
 要进行自定义，可以编辑&#x200B;**页面提取**&#x200B;步骤的&#x200B;**[!UICONTROL 参数]**&#x200B;选项卡。
 
@@ -166,13 +166,13 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 * **页面设计**: 生成结果页面时要使用的页面设计。
 
-### 为InDesign Server配置代理工作器 {#configuring-the-proxy-worker-for-indesign-server}
+### 配置代理工作器以进行InDesign Server {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
 >该工作器驻留在代理实例上。
 
-1. 在“工具”控制台中，展 **[!UICONTROL 开左窗格中]** 的“Cloud Service配置”。 然后展开 **[!UICONTROL 云代理配置]**。
+1. 在“工具”控制台中，展 **[!UICONTROL 开左窗格中]** 的“Cloud Services配置”。 然后展开 **[!UICONTROL 云代理配置]**。
 
 1. 双击 **[!UICONTROL IDS worker]** 以打开进行配置。
 
@@ -186,7 +186,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 ### 配置Day CQ链接外部器  {#configuring-day-cq-link-externalizer}
 
-如果InDesign服务器和AEM在不同的主机上运行，或者这两个应用程序都未在默认端口上运行，请配置 **Day CQ Link Externalizer** ，以设置InDesign服务器的主机名、端口和内容路径。
+如果InDesign服务器和AEM在不同的主机上运行，或者上述两种应用程序都未在默认端口上运行，请配置 **Day CQ Link Externalizer** ，以设置InDesign服务器的主机名、端口和内容路径。
 
 1. 访问URL上的Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`。
 1. 找到配置 **[!UICONTROL Day CQ Link Externalizer]**，然后单击&#x200B;**[!UICONTROL 编辑]**&#x200B;图标以将其打开。
@@ -198,7 +198,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 您现在可以为IDS启用并行作业处理。
 
-首先，您需要确定InDesign Server可处理的最大 `x`并行作业数():
+首先，您需要确定InDesign Server可以处理的最大并行 `x`作业数():
 
 * 在单个多处理器计算机上，InDesign Server可处理的并行作业(x)的最大数目比运行IDS的处理器数少一个。
 * 在多台计算机上运行ID时，您需要计算可用处理器总数（即在所有计算机上），然后减去计算机总数。
@@ -219,27 +219,27 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
    * **[!UICONTROL 最大并行作业]** - `<*x*>` （如上所计算）
 
 1. 保存这些更改。
-1. 要启用Adobe CS6和更新版本的多会话支持，请选中下 `enable.multisession.name` 的复选框 `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`。
+1. 要启用AdobeCS6和更新版本的多会话支持，请选中下 `enable.multisession.name` 的复选框 `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`。
 1. 通过向 [IDS Worker配 `*x*>` 置添加SOAP端点，创建&lt; IDS Worker池](#configuring-the-proxy-worker-for-indesign-server)。
 
    如果有多台计算机运行InDesign Server，请为每台计算机添加SOAP端点（每台计算机的处理器数-1）。
 
    >[!NOTE]
    >
-   >使用Worker池时，您可以启用IDS Worker的阻止列表。
+   >使用工作池时，您可以启用IDS工作者的阻止列表。
    >
    >为此，请启用配置下的“enable.retry.name”复选框，该 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 配置将启用IDS作业检索。
    >
    >此外，在配 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` 置下，为参数设置一个正值，该 `max.errors.to.blacklist` 参数在禁止IDS进入作业处理程序列表之前确定作业检索的数量
    >
-   >默认情况下，在IDS工作`retry.interval.to.whitelist.name`器经过可配置（分钟）时间重新验证后。 如果在线找到该工作者，则该工作者将从阻止的列表中删除。
+   >默认情况下，在IDS工作`retry.interval.to.whitelist.name`器经过可配置（分钟）时间重新验证后。 如果在线找到该工作者，则从阻止列表中删除该工作者。
 
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
-## 支持Adobe InDesign Server 10.0或更高版本 {#enabling-support-for-indesign-server-or-higher}
+## 支持Adobe InDesign服务器10.0或更高版本 {#enabling-support-for-indesign-server-or-higher}
 
-对于InDesign Server 10.0或更高版本，请执行以下步骤以启用多会话支持。
+对于InDesign服务器10.0或更高版本，请执行以下步骤以启用多会话支持。
 
 1. 从实例中打开Configuration [!DNL Assets] Manager `https://[aem_server]:[port]/system/console/configMgr`。
 1. 编辑配置 `com.day.cq.dam.ids.impl.IDSJobProcessor.name`。
@@ -251,7 +251,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 ## 配置Experience Manager凭据 {#configure-aem-credentials}
 
-您可以更改从AEM实例访问InDesign服务器的默认管理员凭据（用户名和密码），而不会中断与Adobe InDesign服务器的集成。
+您可以更改从AEM实例访问InDesign服务器的默认管理员凭据（用户名和密码），而不中断与Adobe InDesign服务器的集成。
 
 1. 转到 `/etc/cloudservices/proxy.html`.
 1. 在对话框中，指定新的用户名和密码。

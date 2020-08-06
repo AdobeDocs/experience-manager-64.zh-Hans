@@ -129,6 +129,7 @@ Adobe的成像转码库是一种专有的图像处理解决方案，可以执行
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![石](assets/chlimage_1-199.png)
 
 1. （可选）使用单个命令从中间再现生成缩略图。 中间再现用作源，以生成静态和Web再现。 这种方法比以前的方法快。 但是，不能使用此方法将自定义参数应用于缩略图。
@@ -139,7 +140,7 @@ Adobe的成像转码库是一种专有的图像处理解决方案，可以执行
 
 1. 同步更新的 [!UICONTROL DAM更新资产工作流] 模型。 保存工作流。
 
-验证配置、上传TIFF图像并监视error.log文件。 您会注意到 `INFO` 提到的消息 `SwitchEngineHandlingProcess execute: executing command line`。 日志中提到生成的演绎版。 工作流完成后，您可以在AEM中视图新演绎版。
+验证配置、上传TIFF图像并监视error.log文件。 您会注意到 `INFO` 提到的消息 `SwitchEngineHandlingProcess execute: executing command line`。 日志中提到生成的演绎版。 工作流完成后，您可以在AEM中视图新再现。
 
 >[!MORELIKETHIS]
 >

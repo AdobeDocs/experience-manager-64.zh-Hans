@@ -26,7 +26,7 @@ ht-degree: 7%
 
 ## 关于教程  {#about-the-tutorial}
 
-您可以使用主题为自适应表单提供独特的外观和样式。 您可以应用随自适应表单编辑器提供的现成主题，或创建您自己的自定义主题。 AEM Forms提供一个主题 [编辑器](themes.md) ，用于创建自定义主题。 单个主题可以为在手机、平板电脑或桌面上打开的同一自适应表单提供不同的外观。 使用主题编辑器不需要任何CSS或LESS知识，但是是需要的。
+您可以使用主题为自适应表单提供独特的外观和样式。 您可以应用随自适应表单编辑器提供的现成主题，或创建您自己的自定义主题。 AEM Forms提供一 [个主题编辑](themes.md) ，以创建自定义主题。 单个主题可以为在手机、平板电脑或桌面上打开的同一自适应表单提供不同的外观。 使用主题编辑器不需要任何CSS或LESS知识，但是是需要的。
 
 在教程结束时，您将学习：
 
@@ -101,13 +101,13 @@ ht-degree: 7%
 
 ### 创建主题 {#create-a-theme}
 
-1. 登录到AEM作者实例，然后导航到 **Adobe Experience Manager** > **Forms** > **主题**。 默认URL为 [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes)。
+1. 登录到AEM作者实例，并导航到 **Adobe Experience Manager** > **Forms** > **主题**。 默认URL为 [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes)。
 1. 点按 **[!UICONTROL 创建]** ，然后选 **[!UICONTROL 择主题]**。 此时将显示“创建主题”页，其中包含创建主题所需的字段。 “标题”和“名称”字段为必填字段：
 
    * **标题：** 指定主题的标题。 例如，全 **局主题。** 标题可帮助您从主题的列表中识别主题。
    * **名称：** 指定主题的名称。 例如， **Global-Theme。** 在存储库中创建具有指定名称的节点。 当您开始键入标题时，将自动生成名称字段的值。 您可以更改建议的值。 名称字段只能包含字母数字字符、连字符和下划线。 所有无效输入都替换为连字符。
 
-1. 点按&#x200B;**创建**。将创建一个主题并显示一个用于打开表单进行编辑的对话框。 点按 **打开** ，在新选项卡中打开新创建的主题。 主题在主题编辑器中打开。 对于样式，主题编辑器使用AEM Forms附带的现成自适应表单。
+1. 点按&#x200B;**创建**。将创建一个主题并显示一个用于打开表单进行编辑的对话框。 点按 **打开** ，在新选项卡中打开新创建的主题。 主题在主题编辑器中打开。 对于样式，主题编辑器使用随AEM Forms一起提供的现成自适应表单。
 
    有关使用主题编辑器UI的信息，请参 [阅关于主题编辑器](/help/forms/using/themes.md#aboutthethemeeditor)。
 
@@ -135,7 +135,7 @@ ht-degree: 7%
    | 字体颜色 | FFFFFF |
    | 字体大小 | 54px |
 
-1. 点按标题构件并点 **按标题**。 用于设置标题构件样式的选项显示在左侧。 展开 **Dimensions &amp; Position** 折叠面板，将Height **设置** 为，然 `120px`后点按aem_6_3_forms_save ![](assets/aem_6_3_forms_save.png)。
+1. 点按标题构件并点 **按标题**。 用于设置标题构件样式的选项显示在左侧。 展开 **Dimension和位置** ，将Height设置为 **，然** 后点 `120px`按aem_6_3_forms_save ![](assets/aem_6_3_forms_save.png)。
 1. 展开标题构件的“背景”折叠面板，将“背 **景颜色** ”设置为 `F6921E.`
 
    将鼠标悬 **停在“图像和渐变** ” > **+添加**，点 **按图像**。 设置以下属性， ![然后点按aem_6_3_forms_save](assets/aem_6_3_forms_save.png)。
@@ -146,7 +146,7 @@ ht-degree: 7%
    | 位置 | 右下 |
    | 并排显示 | 不重复 |
 
-1. 在主题编辑器中，点按标题中的标志，然后点按标 **题标志**。 展开“维和位置”折叠面板，设置以下属 ![性并点按aem_6_3_forms_save](assets/aem_6_3_forms_save.png)。
+1. 在主题编辑器中，点按标题中的标志，然后点按标 **题标志**。 展开“Dimension和位置”折叠面板，设置以下属 ![性并点按aem_6_3_forms_save](assets/aem_6_3_forms_save.png)。
 
 <table> 
  <tbody> 
@@ -217,12 +217,12 @@ ht-degree: 7%
    <td>18px</td> 
   </tr> 
   <tr> 
-   <td>尺寸和位置</td> 
+   <td>Dimension和位置</td> 
    <td>宽度</td> 
    <td>60%</td> 
   </tr> 
   <tr> 
-   <td>尺寸和位置</td> 
+   <td>Dimension和位置</td> 
    <td>边距</td> 
    <td> 
     <ul> 
@@ -301,7 +301,7 @@ ht-degree: 7%
 
    ![样式选项](assets/style-option.png)
 
-1. 点按 **附加** 按钮，然 ![后点按aem_6_3_](assets/aem_6_3_edit.png)editicon。 在“维”和“位置” **折叠面板中设置** 以下属性：
+1. 点按 **附加** 按钮，然 ![后点按aem_6_3_](assets/aem_6_3_edit.png)editicon。 在Dimension和位置折叠面 **板中设置以** 下属性：
 
    | 属性 | 值 |
    |---|---|
@@ -407,12 +407,12 @@ ht-degree: 7%
    <td>值</td> 
   </tr> 
   <tr> 
-   <td>尺寸和位置</td> 
+   <td>Dimension和位置</td> 
    <td>浮点数</td> 
    <td>右</td> 
   </tr> 
   <tr> 
-   <td>尺寸和位置</td> 
+   <td>Dimension和位置</td> 
    <td>边距</td> 
    <td> 
     <ul> 
@@ -441,14 +441,14 @@ ht-degree: 7%
 
 您可以使用各种字体来设计自适应表单。 在查看自适应表单的所有设备可能没有用于设计自适应表单的字体。 您可以使用Web字体服务将所需的字体交付到目标设备。
 
-Adobe Typekit是一种Web字体服务。 您可以配置和使用带有自适应表单的服务。 要在自适应表单中使用Adobe Typekit:
+Adobe Typekit是一种Web字体服务。 您可以配置和使用带有自适应表单的服务。 以自适应形式使用Adobe Typekit:
 
 >[!NOTE]
 >
->![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit现在称为Adobe Fonts，包含在Creative Cloud和其他订阅中。 [了解更多](https://fonts.adobe.com/).
+>![typekit-to-adobe-fonts Typekit现在称为](assets/typekit-to-adobe-fonts.png) “Adobe Fonts”，包含在Creative Cloud和其他订阅中。 [了解更多](https://fonts.adobe.com/).
 
-1. 创建一 [个Adobe Typekit](https://typekit.com/) 帐户，创建一个工具包，将字体Myriad Pro添加到该工具包，发布该工具包，并获取工具包ID。 需要在自适应表单中使用Adobe Typekit字体（Web字体）。
-1. 在AEM Forms服务器中，导航到 ![adobe](assets/adobeexperiencemanager.png) Experience Manager **>** Hammer **** > Deployment工 ![具>](assets/hammer.png)********> Cloud Services。 在云服务页面上，导航到第 **三方服务** > **Typekit**，然后单击Typekit下 **的“立即配** 置”。 如果某个配置已可用，请单击+按钮以创建新实例。
+1. 创建 [Adobe Typekit](https://typekit.com/) 帐户、创建工具包、将字体MyriadPro添加到工具包、发布工具包并获取工具包ID。 需要以自适应形式使用Adobe Typekit字体（Web字体）。
+1. 在AEM Forms服务器中，导 ![航到adobeexperiencemanager](assets/adobeexperiencemanager.png) **** Adobe Experience Manager **>** Hammer Tools ![>](assets/hammer.png) Deployment ********>Cloud Services>。 在Cloud Services页面上，导航到 **第三方服务** > **Typekit**，然后单击Typekit下 **的“立即配** 置”。 如果某个配置已可用，请单击+按钮以创建新实例。
 
    在创建配置对话框中，为配 **置指** 定标题，然后单 **击创建**。 您将被重定向到配置页面。 在出现的编辑组件对话框中，提供您的 **工具包ID** ，然后单 **击确定**。
 

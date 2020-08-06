@@ -1,6 +1,6 @@
 ---
 title: 管理Dynamic Media图像预设
-description: 了解Dynamic Media图像预设，了解如何创建、修改和管理图像预设
+description: 了解Dynamic Media图像预设并了解如何创建、修改和管理图像预设
 uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -51,9 +51,9 @@ You could create two Image Presets: one with 500 x 500 pixels for desktop versio
 >
 >在您预览或传送资产时，您创建的任何图像预设也可作为动态演绎版使用。
 >
->在 *Dynamic Media- Scene7模式*，您 *无需发* 布图像预设，因为图像预设会自动发布。
+>在 *Dynamic Media -Scene7模式*，您 *无需发* 布图像预设，因为图像预设会自动发布。
 >
->在 *Dynamic Media-混合模式*，您需要手动发布图像预设。
+>在 *Dynamic Media —— 混合模式中*，您需要手动发布图像预设。
 >
 >See [Publishing Image Presets.](#publishing-image-presets)
 
@@ -65,9 +65,9 @@ You could create two Image Presets: one with 500 x 500 pixels for desktop versio
 
 如果您希望支持摄取AI、EPS和PDF文件，以便生成这些文件格式的动态演绎版，您可能需要在创建图像预设之前查看以下信息。
 
-Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets的背景下，主要区别是：
+Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要区别是：
 
-* Adobe Illustrator文档由包含多个图层的单个页面组成。 每个图层都会作为PNG子资源提取到主Illustrator资源下。
+* Adobe Illustrator文档由一页多层组成。 每个层都被提取为主Illustrator资源下的PNG子资产。
 * PDF文档由一个或多个页面组成。 每页都会在主多页PDF文档下提取为单页PDF子资产。
 
 子资产由整个工作流 `Create Sub Asset process` 中的组件创 `DAM Update Asset` 建。 要在工作流中查看此流程组件，请点 **[!UICONTROL 按工具>工作流>模型> DAM更新资产>编辑]**。
@@ -76,11 +76,11 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets的背景下，�
 
 您可以在打开资产时视图子资产或页面，点按内容菜单，然后选择子 **[!UICONTROL 资产]** 或 **[!UICONTROL 页面]**。 子资产是真实资产。 即，PDF页面由工作流组件 `Create Sub Asset` 提取。 然后，它们会 `page1.pdf`作为 `page2.pdf`、等存储在主资产下。 存储资产后，DAM更新 **[!UICONTROL 资产工作流会处理]** 这些资产。
 
-要使用Dynamic Media预览AI、EPS或PDF文件并生成动态演绎版，需要执行以下处理步骤：
+要使用Dynamic Media预览和生成AI、EPS或PDF文件的动态演绎版，需要执行以下处理步骤：
 
 1. 在DAM更 **[!UICONTROL 新资产工作流中]** ，栅格化 **[!UICONTROL PDF/AI图像预览再现流程组件会使用配置的分辨率将原始资产的第一页栅格化为再]**`cqdam.preview.png` 现。
 
-1. 然后 `cqdam.preview.png` ，该再现会通过工作流中的Dynamic Media **[!UICONTROL 处理图像资产流程组件]** ，优化为PTIFF。
+1. 然后 `cqdam.preview.png` ，该再现会通过工作流中的Dynamic Media Process **[!UICONTROL 图像资产流程组件优化]** ，为PTIFF格式。
 
 >[!NOTE]
 >
@@ -143,17 +143,17 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets的背景下，�
 
 如果要支持摄取INDD文件，以便生成此文件格式的动态演绎版，您可能需要在创建图像预设之前查看以下信息。
 
-对于InDesign文件，仅当Adobe InDesign服务器与AEM集成时，才会提取子资源。 引用的资产会根据其元数据进行链接。 链接不需要InDesign Server。 但是，在处理InDesign文件以获取要在InDesign文件和引用的资产之间创建的链接之前，AEM中必须存在引用的资产。
+对于InDesign文件，仅当Adobe InDesign服务器与AEM集成时，才会提取子资源。 引用的资产会根据其元数据进行链接。 InDesign Server不是链接必需的。 但是，在处理InDesign文件之前，AEM中必须存在引用的资产，才能在InDesign文件和引用的资产之间创建链接。
 
 See [Integrating AEM Assets with InDesign Server](indesign.md).
 
-DAM更新资产工作流中的媒体 **[!UICONTROL 提取进程组]** 件运行多个预 **[!UICONTROL 配置的扩展脚]** 本以处理InDesign文件。
+DAM更新资产工作流中的媒体 **[!UICONTROL 提取流程组]** 件会运行多个预 **[!UICONTROL 配置的扩展脚]** 本，以处理InDesign文件。
 
 ![媒体提取过程参数中的扩展脚本路径](assets/media_extraction_arguments.png)
 
 在 **[!UICONTROL DAM更新资]** 产工作流中 **[!UICONTROL ，媒体提取]** 流程组件 **[!UICONTROL 的参数]** 中的扩展脚本路径。
 
-以下脚本供Dynamic Media集成使用：
+Dynamic Media集成使用以下脚本：
 
 <table> 
  <tbody> 
@@ -170,7 +170,7 @@ DAM更新资产工作流中的媒体 **[!UICONTROL 提取进程组]** 件运行�
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>是</td> 
-   <td>为每页生成一个300 ppi的JPEG子资产。 JPEG子资产是存储在InDesign资产下的真实资产。 它还经过优化，并通过工作流转换为 <code>DAM Update Asset</code> PTIFF。<br /> </td> 
+   <td>为每页生成一个300 ppi的JPEG子资产。 JPEG子资产是存储在InDesign资产下的实际资产。 它还经过优化，并通过工作流转换为 <code>DAM Update Asset</code> PTIFF。<br /> </td> 
   </tr> 
   <tr> 
    <td>PDFPagesExport.jsx</td> 
@@ -182,7 +182,7 @@ DAM更新资产工作流中的媒体 **[!UICONTROL 提取进程组]** 件运行�
 
 ## 配置图像缩略图大小 {#configuring-image-thumbnail-size}
 
-您可以通过在DAM更新资产工作流中配置这些设置来 **[!UICONTROL 配置缩略图的大小]** 。 在工作流中，您可以通过两个步骤配置图像资产的缩略图大小。 尽管动态图&#x200B;**[!UICONTROL 像资产使用一个(Dynamic Media流程图像资产]**)，静态缩略图生成使用另一个（流程缩略图），或者当所有其他进程无法生成缩略图时，这两个进程&#x200B;**[!UICONTROL 应具有相同]**** 的设置。
+您可以通过在DAM更新资产工作流中配置这些设置来 **[!UICONTROL 配置缩略图的大小]** 。 在工作流中，您可以通过两个步骤配置图像资产的缩略图大小。 尽管动态图&#x200B;**[!UICONTROL 像资产使用一个(Dynamic Media Process Image]** Assets)，静态缩略图生成使用另一个(**[!UICONTROL Process Thumbnails]**)，或者当所有其他进程无法生成缩略图时，这两个进程 *应具有相同* 的设置。
 
 在 **[!UICONTROL Dynamic Media 流程图像资产]**&#x200B;步骤中，缩略图由图像服务器生成，此配置与应用于&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤的配置无关。通过&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤生成缩略图是创建缩览图最耗时、内存占用最多的方法。
 
@@ -202,7 +202,7 @@ DAM更新资产工作流中的媒体 **[!UICONTROL 提取进程组]** 件运行�
 **配置缩略图大小**:
 
 1. 点按 **[!UICONTROL 工具>工作流>模型> DAM更新资产>编辑]**。
-1. 点按Dynamic Media **[!UICONTROL 处理图像资产]** ，然后点按缩略图 **[!UICONTROL 选项卡]** 。 根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
+1. 点按Dynamic **[!UICONTROL Media Process图像资产]** ，然后点按缩略图 **[!UICONTROL 选项卡]** 。 根据需要更改缩略图大小，然后点按&#x200B;**[!UICONTROL 确定]**。
 
    ![step_properties_thumbnailarguments](assets/step_properties_thumbnailarguments.png)
 
@@ -216,7 +216,7 @@ DAM更新资产工作流中的媒体 **[!UICONTROL 提取进程组]** 件运行�
 
 ### 增加或减少显示的Dynamic Media图像预设数 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-在预览资产时，您创建的图像预设可以作为动态演绎版使用。 从“详细信息”视图>“演绎版”查看资产时，AEM会显 **[!UICONTROL 示各种动态演绎版]**。 您可以增加或减少显示的演绎版限制。
+在预览资产时，您创建的图像预设可以作为动态演绎版使用。 AEM在从详细信息视图>演绎版查看资产时显示 **[!UICONTROL 各种动态演绎版]**。 您可以增加或减少显示的演绎版限制。
 
 **要增加或减少显示的Dynamic Media图像预设数**:
 
@@ -248,7 +248,7 @@ DAM更新资产工作流中的媒体 **[!UICONTROL 提取进程组]** 件运行�
 
 >[!NOTE]
 >
->要创建Dynamic Media图像预设，您必须以AEM管理员或Admin Console管理员的身份具有管理员权限。
+>要创建Dynamic Media图像预设，您必须具有AEM管理员或Admin Console管理员的管理员权限。
 
 **要创建Dynamic Media图像预设，请执行以下操作**:
 
@@ -272,7 +272,7 @@ DAM更新资产工作流中的媒体 **[!UICONTROL 提取进程组]** 件运行�
 
 To create a responsive image preset, perform the steps in [Creating Image Presets](#creating-image-presets). When entering the height and width in the **[!UICONTROL Edit Image Preset]** window, erase the values and leave them blank.
 
-将它们留空会告知AEM此图像预设是响应式预设。 您可以根据需要调整其他值。
+将它们留空会告知AEM此图像预设是响应式的。 您可以根据需要调整其他值。
 
 ![chlimage_1-498](assets/chlimage_1-498.png)
 
@@ -280,13 +280,13 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
 >
 >要在将图像预设应用到资产时显示 **[!UICONTROL URL]** 和 **[!UICONTROL RESS]** 按钮，必须先发布资产。
 >
->在Dynamic Media- Scene7模式下，图像预设和图像资产会自动发布。
+>在Dynamic Media -Scene7模式中，图像预设和图像资产会自动发布。
 >
->在Dynamic Media-混合模式下，您必须手动发布图像预设和图像资产。
+>在Dynamic Media —— 混合模式中，您必须手动发布图像预设和图像资产。
 
 ### Image Preset options {#image-preset-options}
 
-在创建或编辑图像预设时，您可以使用本节介绍的几种选项。此外，Adobe建议开始选择以下 *三种最佳* 做法选项：
+在创建或编辑图像预设时，您可以使用本节介绍的几种选项。此外，Adobe还建议对开始采 *用以下* 三种最佳做法选项：
 
 * **[!UICONTROL 格式]** (**[!UICONTROL 基本]** 选项卡)-选 **[!UICONTROL 择JPEG]** 或其他符合要求的格式。 所有Web浏览器都支持JPEG图像格式； 它可以在小文件大小和图像质量之间实现良好的平衡。 但是，JPEG格式图像使用有损压缩方案，如果压缩设置太低，会引入不需要的图像伪影。 因此，Adobe 建议将压缩质量设置为 75。此设置在图像质量和小文件大小之间提供了良好的平衡。
 * **[!UICONTROL 启用简单锐化]** -请勿选择启 **[!UICONTROL 用简单锐化]** (此锐化滤镜优惠的控制比USM锐化设置少)。
@@ -397,7 +397,7 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
      <li><strong>双线性</strong> -最快速的重新取样方法。 会出现一些锯齿伪像。</li> 
      <li><strong>两次立方</strong> -提高CPU使用率，但生成较锐利的图像，出现的锯齿伪像较少。</li> 
      <li><strong>锐化2</strong> —— 可以生成比两次立方效果更锐利的结果，但CPU成本更高。</li> 
-     <li><strong>Bi-Sharp</strong> —— 选择Photoshop默认重新取样器以减小图像大小，在Adobe Photoshop <strong>中称为</strong> “双立方（更锐利）”。</li> 
+     <li><strong>Bi-Sharp</strong> —— 选择Photoshop默认重新取样器以减小图像大小，在Adobe Photoshop <strong>称为</strong> “双立方”。</li> 
      <li><strong>每种颜色</strong>和<strong>亮度</strong> - 每种方法均可基于颜色或亮度。默认情况下将选择<strong>每种颜色</strong>。</li> 
     </ul> </td> 
   </tr> 
@@ -407,7 +407,7 @@ To create a responsive image preset, perform the steps in [Creating Image Preset
   </tr> 
   <tr> 
    <td><strong>图像修饰符</strong></td> 
-   <td><p>除了UI中提供的常用图像设置之外，Dynamic Media还支持大量可在图像修饰符字段中指定的高 <strong>级图像修改</strong> 。 这些参数在图像服务器协 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">议命令参考中定义</a>。</p> <p>重要： 不支持API中列出的以下功能：</p> 
+   <td><p>除了UI中提供的常见图像设置之外，Dynamic Media还支持许多可在图像修饰符字段中指定的高 <strong>级图像修</strong> 改。 这些参数在图像服务器协 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">议命令参考中定义</a>。</p> <p>重要： 不支持API中列出的以下功能：</p> 
     <ul> 
      <li>基本模板和文本渲染命令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> 和 <code>textPs=</code></li> 
      <li>本地化命令： <code>locale=</code> 和 <code>req=xlate</code></li> 
@@ -430,7 +430,7 @@ Besides the options available in the **[!UICONTROL Basic]** and **[!UICONTROL Ad
 
 >[!NOTE]
 >
->某些图像修 [饰符无法在AEM中使用](#advanced-tab-options)。
+>某些图像修 [饰符不能用于AEM](#advanced-tab-options)。
 
 * [op_invert](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html) —— 反转每个颜色分量以获得负片图像效果。
 
@@ -486,11 +486,11 @@ Besides the options available in the **[!UICONTROL Basic]** and **[!UICONTROL Ad
 
 ## Publishing Dynamic Media image presets {#publishing-image-presets}
 
-如果您运行的是Dynamic Media-混合模式，则必须手动发布图像预设。
+如果运行的是Dynamic Media —— 混合模式，则必须手动发布图像预设。
 
-如果您运行的是Dynamic Media- Scene7模式，则图像预设将自动为您发布； 您无需完成这些步骤。
+如果您运行的是Dynamic Media -Scene7模式，则图像预设将自动为您发布； 您无需完成这些步骤。
 
-**要以Dynamic Media形式发布图像预设——混合模式**:
+**要在Dynamic Media —— 混合模式中发布图像预设，请执行以下操作**:
 
 1. 在AEM中，点按AEM徽标以访问全局导航控制台。
 1. 点按工 **[!UICONTROL 具图]** 标，然后导航到 **[!UICONTROL 资产>图像预设]**。

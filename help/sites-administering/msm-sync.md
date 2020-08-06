@@ -262,7 +262,7 @@ ht-degree: 74%
 
 ### 从同步中排除属性和节点类型 {#excluding-properties-and-node-types-from-synchronization}
 
-您可以配置多个支持相应同步操作的 OSGi 服务，以便它们不会影响特定的节点类型和属性。例如，Live Copy中不应包含与AEM的内部功能相关的许多属性和子节点。 只应复制与页面用户相关的内容。
+您可以配置多个支持相应同步操作的 OSGi 服务，以便它们不会影响特定的节点类型和属性。例如，与AEM的内部功能相关的许多属性和子节点不应包含在Live Copy中。 只应复制与页面用户相关的内容。
 
 When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 

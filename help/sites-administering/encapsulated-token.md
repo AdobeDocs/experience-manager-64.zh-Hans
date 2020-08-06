@@ -66,7 +66,7 @@ ht-degree: 0%
 
 在配置封装令牌时，您需要考虑以下几点：
 
-1. 由于涉及密码，所有实例都需要具有相同的HMAC密钥。 自AEM 6.3起，关键材料不再存储在存储库中，而存储在实际的文件系统中。 考虑到这一点，复制密钥的最佳方法是将它们从源实例的文件系统复制到要复制密钥的目标实例的文件系统。 请参阅下面的“复制HMAC密钥”下的更多信息。
+1. 由于涉及密码，所有实例都需要具有相同的HMAC密钥。 自AEM 6.3以来，关键材料不再存储在存储库中，而存储在实际的文件系统中。 考虑到这一点，复制密钥的最佳方法是将它们从源实例的文件系统复制到要复制密钥的目标实例的文件系统。 请参阅下面的“复制HMAC密钥”下的更多信息。
 1. 需要启用封装令牌。 这可以通过Web控制台完成。
 
 ### 复制HMAC密钥 {#replicating-the-hmac-key}
@@ -88,7 +88,7 @@ HMAC密钥作为存储库中的二进制 `/etc/key` 属性存在。 您可以通
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-1. 复制HMAC和主文件。
+1. 复制HMAC和主控文件。
 1. 然后，转到要将HMAC密钥重复到的目标实例，并导航到数据文件夹。 例如：
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`

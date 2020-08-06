@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: dc185a75-84a0-4075-ae1e-8bb78d414aa8
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 0%
 
 ---
 
 
 # 语言复制向导{#language-copy-wizard}
 
-“语言复制”向导是创建和检验多语言内容结构的指导式体验。 现在创建语言副本更简单、快捷。
+语言副本向导是一种指导式体验，用于创建和指导多语言内容结构。 现在创建语言副本更简单、更快捷。
 
 >[!NOTE]
 >
 >用户必须是项目管理员组的成员才能创建站点的语言副本。
 
-要访问此向导，请执行以下操作：
+要访问此向导：
 
 1. 在站点中，选择一个页面，然后点按／单击创建。
 
@@ -33,7 +36,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
    ![chlimage_1-49](assets/chlimage_1-49.jpeg)
 
-1. 通过 **向导的选择源** ，可以添加／删除页面。 您还可以选择包括或排除子页面。
+1. 通 **过向导的** “选择源”步骤可添加／删除页面。 您还可以选择包括或排除子页面。
 
    ![chlimage_1-50](assets/chlimage_1-50.jpeg)
 
@@ -45,15 +48,15 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
    >
    >默认情况下，只有一个翻译设置。 要能够选择其他设置，您必须先配置云配置。 请参 [阅配置翻译集成框架](/help/sites-administering/tc-tic.md)。
 
-1. “下 **一步** ”按钮将显示向导的“ **翻译** ”步骤。 在此，您可以选择仅创建结构、创建新翻译项目或添加到现有翻译项目。
+1. “下 **一步** ”按钮将显示 **向导的** “翻译”步骤。 在此，您可以选择仅创建结构、创建新翻译项目或添加到现有翻译项目。
 
    >[!NOTE]
    >
-   >如果在上一步中选择了多种语言，则会创建多个翻译项目。
+   >如果您在上一步选择了多种语言，将创建多个翻译项目。
 
    ![chlimage_1-52](assets/chlimage_1-52.jpeg)
 
-1. “创 **建** ”按钮将结束向导。
+1. “创 **建** ”按钮结束向导。
 
    ![chlimage_1-53](assets/chlimage_1-53.jpeg)
 

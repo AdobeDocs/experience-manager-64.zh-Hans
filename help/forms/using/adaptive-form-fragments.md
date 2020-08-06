@@ -107,11 +107,11 @@ ht-degree: 0%
 
 ### 配置片段外观 {#configure-fragment-appearance}
 
-插入自适应表单的任何片段都显示为占位符图像。 占位符在片段中最多显示十个子面板的标题。 您可以配置AEM Forms以显示完整片段而非占位符图像。
+插入自适应表单的任何片段都显示为占位符图像。 占位符在片段中最多显示十个子面板的标题。 您可以配置AEM Forms以显示完整片段而不是占位符图像。
 
 请执行以下步骤以在表单中显示完整片段：
 
-1. 转到AEM Web控制台配置页，[*网址为*] https [*:host*]:port/system/console/configMgr。
+1. 转到AEM Web控制台配置页&#x200B;[*的https*]:[*host*]:port/system/console/configMgr。
 1. 搜索并单击 **[!UICONTROL 自适应表单配置服务]** ，以在编辑模式下打开它。
 1. 禁 **[!UICONTROL 用“启用占位符代替片段]** ”复选框可显示完整片段，而非占位符图像。
 
@@ -158,7 +158,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您还可以在AEM内容查找器中从自适应表单片段库拖放绑定的自适应表单片段，并从自适应表单片段面板的编辑组件对话框中提供正确的绑定引用。
+>您还可以从AEM内容查找器中的自适应表单片段库拖放绑定的自适应表单片段，并从自适应表单片段面板的编辑组件对话框中提供正确的绑定引用。
 
 ## 管理片段 {#manage-fragments}
 
@@ -237,7 +237,7 @@ ht-degree: 0%
 
    `127.0.0.1 <Host machine>`
 
-   **主机**: 部署AEM Forms的Apple Mac计算机。
+   **主机**: 部署了AEM Forms的Apple Mac计算机。
 
 ## 引用片段 {#reference-fragments}
 

@@ -1,9 +1,12 @@
 ---
 title: 元数据架构参考
-description: '了解用于描述资产元数据的标准惯例，包括都柏林核心、IPTC和其他元数据架构。 '
+description: '了解用于描述资产元数据的标准惯例，包括都柏林核心、IPTC和其他元数据模式。 '
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 88%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 ## 都柏林核心 {#dublin-core}
 
-都柏林核心元数据提供了一个用于描述资产的标准化惯例集，可使资产更易于查找。在AEM资产中，都柏林核心描述数字资产，包括视频、声音、图像和文档。
+都柏林核心元数据提供了一个用于描述资产的标准化惯例集，可使资产更易于查找。在AEM Assets，都柏林核心描述了包括视频、声音、图像和文档在内的数字资产。
 
 都柏林核心元数据元素集 (DCMES) 很简单，共包含 15 个元数据元素，如下表所示。每个都柏林核心元素都是可选元素，并且可以重复。您可以视需要为特定于媒体类型的元数据添加或删除都柏林核心元数据信息。
 

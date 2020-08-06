@@ -1,8 +1,8 @@
 ---
-title: Activity Stream Essentials
-seo-title: Activity Stream Essentials
-description: 成员执行的最近活动列表或单个内容线程上的最近活动列表
-seo-description: 成员执行的最近活动列表或单个内容线程上的最近活动列表
+title: 活动流基础
+seo-title: 活动流基础
+description: 成员对单个内容线程执行的最近活动列表或最近活动的列表
+seo-description: 成员对单个内容线程执行的最近活动列表或最近活动的列表
 uuid: 6e4734bb-52a8-4670-b665-e640108b036e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,27 +11,30 @@ content-type: reference
 discoiquuid: 8cc04993-4021-4cb7-b973-5afc4da1ed11
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 1%
 
 ---
 
 
-# Activity Stream Essentials {#activity-stream-essentials}
+# 活动流基础 {#activity-stream-essentials}
 
-已登录社区成员的活动，例如发布到论坛或博客，被收集到流中，该流可以通过活动流组件的配置以各种方式过滤和显示。
+已签名的社区成员的活动，例如发布到论坛或博客，被收集到流中，该流可以通过配置活动流组件以各种方式被过滤和显示。
 
-跟踪功能可在社区成员关注感兴趣的帖子或其他社区成员时添加另一组活动。
+当社区成员关注感兴趣的帖子或其他社区成员时，跟踪功能会添加另一组活动。
 
-所有 [社区站点](overview.md#communitiessites) ，都包含已登录成员的用户配置文件页面，该页面将以相同方式显示成员活动。
+所有 [社区站点](overview.md#communitiessites) 都包含已登录成员的用户用户档案页，该用户活动页将以相同方式显示成员。
 
 ## 概念 {#concepts}
 
-活 *动流* ，是成员执行的最近活动列表或单个内容线程（如论坛主题或博客）上最近活动的列表。
+活动 *流* 是成员对单个内容线程（如论坛主题或博客）执行的最近活动的列表或最近活动的列表。
 
 成员可以通过关注其他个人或内容来关注活动流。
 
-新 *闻源* ，是将成员跟随的活动流合并到单个流中。
+新 *闻源* ，是活动流的合并，其后是成员到单个流中。
 
-社 [交图可捕获](essentials-socialgraph.md) 1个成员与另一个成员的以下关系。
+社 [交图](essentials-socialgraph.md) ，捕获一个成员与另一个成员的以下关系。
 
 ## 客户端必备工具 {#essentials-for-client-side}
 
@@ -76,4 +79,4 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ### 活动流功能 {#activity-stream-function}
 
-包括“活动流”功能的社区站 [点结构](functions.md#activity-stream-function)，包括已配置的组 `activity streams` 件。
+一种包括活动流功能的 [社区站点结构](functions.md#activity-stream-function)，包括配置的 `activity streams` 组件。

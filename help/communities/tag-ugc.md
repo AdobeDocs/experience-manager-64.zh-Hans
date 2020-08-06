@@ -1,8 +1,8 @@
 ---
 title: 标记用户生成的内容
 seo-title: 标记用户生成的内容
-description: 标记用户生成的内容(UGC)是社区成员如何帮助其他成员搜索内容
-seo-description: 标记用户生成的内容(UGC)是社区成员如何帮助其他成员搜索内容
+description: 用户生成内容(UGC)的标记是社区成员如何帮助其他成员搜索内容
+seo-description: 用户生成内容(UGC)的标记是社区成员如何帮助其他成员搜索内容
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 ## 概述 {#overview}
 
-标记用户生成的内容(UGC)是社区成员帮助其他成员搜索内容的方式。
+标记用户生成的内容(UGC)是社区成员帮助其他成员搜索内容的方法。
 
-通常，创作环境中的作者和管理员会应用标记。 标记UGC的独特之处在于UGC标记由发布环境中的社区成员应用。
+通常，标记由作者和管理员在创作环境中应用。 标记UGC的独特之处在于UGC标记由发布环境中的社区成员应用。
 
-这两个应用程序的标记命名空间和分类相同。
+标记命名空间和分类对于这两个应用程序是相同的。
 
 ## 社区功能 {#communities-features}
 
-可以配置为允许标记的AEM Communities功能包括
+可配置为允许标记的AEM Communities功能
 
 * [博客](blog-feature.md)
 * [日历](calendar.md)
@@ -41,15 +44,15 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 有关开 [发人员信息](tag.md) ，请参阅Tag Essentials。
 
-请参 [阅使用社交标记云](tagcloud.md) ，以便将社交标记云组件添加到页面，以便于使用应用的标记搜索已发布的UGC。
+请参 [阅使用社交标记云](tagcloud.md) ，以向页面添加社交标记云组件，以便于使用应用的标记搜索已发布的UGC。
 
 ### 标记权限 {#tag-permissions}
 
-默认权限设置为不允许发布环境中的每个人都读取标记命名空间。
+默认权限设置为不允许发布命名空间中的所有人读取标记环境。
 
-由于标签在发布环境中应用于UGC，因此需要为社区成员启用读取权限，以便他们能够选择要应用的标签。
+由于标记在发布环境应用于UGC，因此需要为社区成员启用读取权限，以便他们能够选择要应用的标记。
 
-请参阅 [设置标记权限](../../help/sites-administering/tags.md#setting-tag-permissions)。
+请参 [阅设置标记权限](../../help/sites-administering/tags.md#setting-tag-permissions)。
 
 以下是管理员对组应用读取权限时CRXDE中显示 `/etc/tag/discussions` 的方式 `*Community Engage Members*`。
 

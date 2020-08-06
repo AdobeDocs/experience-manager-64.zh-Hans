@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 translation-type: tm+mt
 source-git-commit: 8a5222c98b4f93ea86b572eaf233f61dec074951
+workflow-type: tm+mt
+source-wordcount: '299'
+ht-degree: 89%
 
 ---
 
@@ -68,10 +71,10 @@ source-git-commit: 8a5222c98b4f93ea86b572eaf233f61dec074951
 
 |  |  |  |
 |---|---|---|
-| 创作工具 | [创作环境和工具](/help/sites-authoring/author-environment-tools.md) | 提供用于创作页面的工具的概述。 |
-| 组织页面 | [创建和组织页面](/help/sites-authoring/managing-pages.md) | 提供如何最好地组织页面（包括命名约定）的概述。 |
+| 创作工具 | [创作环境和工具](/help/sites-authoring/author-environment-tools.md) | 概述用于创作页面的工具。 |
+| 组织页面 | [创建和组织页面](/help/sites-authoring/managing-pages.md) | 提供如何最好地组织页面（包括命名惯例）的概述。 |
 
-## Forms {#forms}
+## 表单 {#forms}
 
 |  |  |  |
 |---|---|---|

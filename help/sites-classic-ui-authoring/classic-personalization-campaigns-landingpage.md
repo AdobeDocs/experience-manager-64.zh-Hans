@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8be3adcf-5b3a-40e9-8f87-1a6f39aab554
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3193'
+ht-degree: 81%
 
 ---
 
@@ -129,7 +132,7 @@ AEM 中的示例登陆页面如下所示：
 
 **标签** 用户看到的文本。 您可以使用富文本编辑器来修改格式设置。
 
-**目标URL** 输入用户单击文本后要访问的URI。
+**目标URL** 输入您希望用户在单击文本时访问的URI。
 
 **渲染选项** 描述渲染选项。 选项如下：
 
@@ -140,7 +143,7 @@ AEM 中的示例登陆页面如下所示：
 
 **CSS** 在“样式”选项卡上，输入CSS样式表的路径。
 
-**ID** 在“样式”选项卡上，输入组件的ID以唯一标识它。
+**ID在** “样式”选项卡上，输入组件的ID以唯一标识它。
 
 以下是一个点进率链接示例：
 
@@ -154,7 +157,7 @@ AEM 中的示例登陆页面如下所示：
 
 **标签** 用户在图形中看到的文本。 您可以使用富文本编辑器来修改格式设置。
 
-**目标URL** 输入用户单击图像后要访问的URI。
+**目标URL** 输入您希望用户在单击图像时访问的URI。
 
 **渲染选项** 描述渲染选项。 选项如下：
 
@@ -165,7 +168,7 @@ AEM 中的示例登陆页面如下所示：
 
 **CSS** 在“样式”选项卡上，输入CSS样式表的路径。
 
-**ID** 在“样式”选项卡上，输入组件的ID以唯一标识它。
+**ID在** “样式”选项卡上，输入组件的ID以唯一标识它。
 
 以下是一个图形链接示例：
 
@@ -186,7 +189,7 @@ CTA 潜在客户表单是由多个不同组件构成的：
 * **表单字段和元素**
 表单字段和元素可以包括文本框、单选按钮、图像等。用户通常在表单字段中完成操作，例如键入文本。有关更多信息，请参见单个表单元素。
 
-* **个人资料组**&#x200B;件与访客个人资料相关的个人资料组件用于社交协作以及需要访客个人信息的其他区域。
+* **用户档案组件**&#x200B;用户档案组件与用于社交协作的访客用户档案以及需要访客个性化的其他区域相关。
 
 The preceding shows an example form; it is comprised of the **Lead Form** component (start and end), with **First Name** and **Email Id** fields used for input and a **Submit** field
 
@@ -229,11 +232,11 @@ The preceding shows an example form; it is comprised of the **Lead Form** compon
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-**“出生日期** ”用户可以输入出生日期信息。
+**出生日期** “用户”可以输入出生日期信息。
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
-**电子邮件ID** 允许用户输入电子邮件地址（标识）。
+**电子邮件** ID允许用户输入电子邮件地址（标识）。
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -241,7 +244,7 @@ The preceding shows an example form; it is comprised of the **Lead Form** compon
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
-**“性别** ”用户可以从下拉列表中选择其性别。
+**性别** “用户可以从下拉列表中选择其性别。
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -249,7 +252,7 @@ The preceding shows an example form; it is comprised of the **Lead Form** compon
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
-**潜在客户表单** 添加此组件可向登录页面添加潜在客户表单。 潜在客户表单会自动包含一个潜在客户表单的开头和潜在客户表单的结尾字段。其间，您还可以添加本节中介绍的潜在客户表单组件。
+**潜在客户表单** 添加此组件可向登陆页添加潜在客户表单。 潜在客户表单会自动包含一个潜在客户表单的开头和潜在客户表单的结尾字段。其间，您还可以添加本节中介绍的潜在客户表单组件。
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -266,7 +269,7 @@ The Lead Form component defines both the start and end of a form using the **For
 **感谢页面**
 为感谢访客提供其意见而引用的页面。如果留空，表单将在提交后重新显示。
 
-**启动工作流** -确定提交潜在客户表单后将触发哪个工作流。
+**开始工作流** 确定提交潜在客户表单后将触发哪个工作流。
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -274,8 +277,8 @@ The Lead Form component defines both the start and end of a form using the **For
 
 * 创建潜在客户
 * 电子邮件服务: 创建订阅者并添加到列表 - 如果您当前使用的是 ExactTarget 之类的电子邮件服务提供商，则可以使用此选项。
-* 电子邮件服务：发送自动回复的电子邮件——如果您使用的是ExactTarget等电子邮件服务提供商，请使用此功能。
-* 电子邮件服务：将用户从列表中取消订阅——如果您使用的是ExactTarget等电子邮件服务提供商，则可使用。
+* 电子邮件服务： 发送自动回复的电子邮件——如果您使用的是ExactTarget等电子邮件服务提供商，则可使用。
+* 电子邮件服务： 使用户取消列表-如果您使用的是ExactTarget等电子邮件服务提供商，则使用此选项。
 * 使用户取消订阅
 
 **表单标识符** 表单标识符可唯一标识潜在客户表单。 单个页面上具有多个表单时，应使用表单标识符；请确保它们具有不同的标识符。
@@ -284,9 +287,9 @@ The Lead Form component defines both the start and end of a form using the **For
 
 这是指定库中节点的路径的可选字段。如果此节点具有与字段名称相匹配的属性，则表单上的相应字段将随这些属性的值预加载。如果不存在任何匹配，则字段将包含默认值。
 
-**客户端验证** 指示此表单是否需要客户端验证（始终进行服务器验证）。 这可以与表单Captcha组件结合实现。
+**客户端验证** 指示此表单是否需要客户端验证（始终进行服务器验证）。 这可以与FormsCaptcha组件结合使用。
 
-**验证资源类型** 如果您要验证整个潜在客户表单（而非单个字段），则定义表单验证资源类型。
+**验证资源类型** 如果您要验证整个潜在客户表单（而非单个字段），可定义表单验证资源类型。
 
 如果您要验证完整表单，还应包含以下任一内容：
 
@@ -298,7 +301,7 @@ The Lead Form component defines both the start and end of a form using the **For
 
    ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-**操作配置** 根据在发布选项中的选择，操作配置会发生更改。 例如，如果您选择创建潜在客户，则可以配置要将潜在客户添加到哪个列表。
+**操作配置** 根据发布选项中的选择，操作配置会发生更改。 例如，如果您选择创建潜在客户，则可以配置要将潜在客户添加到哪个列表。
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -362,7 +365,7 @@ The Lead Form component defines both the start and end of a form using the **For
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. 将设计包拖放到拖放框中。请注意，当设计包被拖放到其上方时，箭头方向会发生更改。
-1. 执行拖放操作后，您会看到登陆页面替代了导入程序页面。您的HTML登录页面已成功导入。
+1. 执行拖放操作后，您会看到登陆页面替代了导入程序页面。您的HTML登陆页已成功导入。
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -400,7 +403,7 @@ The Lead Form component defines both the start and end of a form using the **For
 
 在经典用户界面中，您可以随时单击登陆页面顶部的蓝色感叹号来查看有关上次导入的信息。
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![chlimage_1-78](assets/chlimage_1-70.png)
 
 如果导入的设计包存在某些问题，例如是关于某些包中并不存在的图像/脚本，或诸如此类的问题，则设计导入程序会以列表形式显示这些问题。在经典用户界面中，要查看问题列表，请单击登陆页面工具栏中的问题链接。In the following image, clicking on **Issues** link opens the Import Issues window.
 
@@ -408,7 +411,7 @@ The Lead Form component defines both the start and end of a form using the **For
 
 ### 重置登陆页面 {#resetting-a-landing-page}
 
-如果您想要在对登陆页面设计包进行更改后重新将其导入，则可以“清除”登陆页面，方法是在经典用户界面中单击登陆页面顶部的&#x200B;**清除**，或在触屏优化用户界面中单击设置菜单中的“清除”。这样做会删除导入的登录页面，并创建空的导入程序页面。
+如果您想要在对登陆页面设计包进行更改后重新将其导入，则可以“清除”登陆页面，方法是在经典用户界面中单击登陆页面顶部的&#x200B;**清除**，或在触屏优化用户界面中单击设置菜单中的“清除”。这样做会删除导入的登陆页并创建空白导入程序页面。
 
 在清除登陆页面时，您可以删除内容更改。If you click **No**, then the content changes are preserved, that is, the structure under `jcr:content/importer`is preserved and only the importer page component and the resources in `etc/design` are removed. Whereas, if you click **Yes**, the `jcr:content/importer` is also removed.
 
@@ -434,7 +437,7 @@ The Lead Form component defines both the start and end of a form using the **For
 
 ### 发布登陆页面 {#publishing-a-landing-page}
 
-您可以像发布普通页面一样发布登陆页面及其所有依赖关系。
+您可以像发布普通页面一样发布登陆页及其所有依赖项。
 
 >[!NOTE]
 >

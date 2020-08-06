@@ -75,7 +75,7 @@ Sling JobManager和JobConsumer支持创建在拓扑中处理的作业：
 
 对于群集中的每个实例，您可以看到几个与拓扑相关的属性：
 
-* 实例的作业使用者的允许主题列表。
+* 实例的作业使用者的允许列表主题。
 * 用于连接拓扑的端点。
 * 已注册实例以卸载的作业主题。
 * 实例处理的作业主题。
@@ -108,10 +108,10 @@ Sling JobManager和JobConsumer支持创建在拓扑中处理的作业：
 
 Apache Sling Resource-Based Discovery Service在每个实例上运行，以控制Experience Manager实例与拓扑交互的方式。
 
-发现服务向拓扑连接器服务发送定期的POST请求（心跳），以建立和维护与拓扑的连接。 拓扑连接器服务保留允许加入拓扑的IP地址或主机名列表：
+发现服务向拓扑连接器服务发送定期POST请求（心跳），以建立和维护与拓扑的连接。 拓扑连接器服务保留允许加入拓扑的IP地址或主机名允许列表:
 
 * 要将实例连接到拓扑，请指定根成员的拓扑连接器服务的URL。
-* 要启用实例加入拓扑，请将该实例添加到根成员的拓扑连接器服务的允许列表中。
+* 要使实例能够加入拓扑，请将该实例添加到根成员的拓扑连接器服务的允许列表。
 
 使用Web控制台或sling:OsgiConfig节点配置org.apache.sling.discovery.impt.Config服务的以下属性：
 
@@ -174,7 +174,7 @@ Apache Sling Resource-Based Discovery Service在每个实例上运行，以控�
 1. 在浏览器中打开Web控制台。 ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. 单击“主”>“拓扑管理”。
 1. 单击“配置发现服务”。
-1. 对于拓扑的每个成员，向拓扑连接器允许列表属性添加一个项，并指定拓扑成员的主机名或IP地址。
+1. 对于拓扑的每个成员，向“拓扑连接器允许列表”属性添加一个项，并指定拓扑成员的主机名或IP地址。
 
 ## 配置主题消耗 {#configuring-topic-consumption}
 
@@ -219,7 +219,7 @@ Apache Sling Job Consumer Manager服务提供主题允许列表和阻止列表�
 
 **注意：** 如果实例属于拓扑，您还可以在拓扑中的任何计算机上使用卸载浏览器来启用或禁用主题。
 
-创建启用主题列表的逻辑首先允许允许列表中的所有主题，然后删除块列表中的主题。默认情况下，所有主题都处于启用状态(允许列表值为 `*`)，并且不禁用任何主题（块列表没有值）。
+创建已启用主题列表的逻辑首先允许允许列表中的所有主题，然后删除阻止列表中的主题。默认情况下，所有主题都处于启用状态(允许列表值为 `*`)，并且不禁用任何主题(阻止列表没有值)。
 
 使用Web控制台或 `sling:OsgiConfig` 节点配置以下属性。 对 `sling:OsgiConfig` 于节点，作业消费者管理器服务的PID为org.apache.sling.事件.impl.jobs.JobConsumerManager。
 
@@ -283,7 +283,7 @@ Apache Sling Job Consumer Manager服务提供主题允许列表和阻止列表�
    | 传输>传输URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
    | “传输”>“传输用户” | 目标实例上的复制用户 |
    | “传输”>“传输密码” | 目标实例上的复制用户口令 |
-   | “扩展”>“HTTP方法” | 发布 |
+   | “扩展”>“HTTP方法” | POST |
    | “触发器”>“忽略默认值” | True |
 
 ### 创建反向代理 {#creating-the-reverse-agent}
@@ -297,7 +297,7 @@ Apache Sling Job Consumer Manager服务提供主题允许列表和阻止列表�
    | 传输>传输URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
    | “传输”>“传输用户” | 目标实例上的复制用户 |
    | “传输”>“传输密码” | 目标实例上的复制用户口令 |
-   | “扩展”>“HTTP方法” | 获取 |
+   | “扩展”>“HTTP方法” | GET |
 
 ### 创建发件箱代理 {#creating-the-outbox-agent}
 
@@ -333,7 +333,7 @@ Apache Sling Job Consumer Manager服务提供主题允许列表和阻止列表�
 * 用户不直接与处理DAM资产的一个或多个Experience Manager实例交互。 这些实例专用于DAM资产的后台处理。
 
 1. 在每个Experience Manager实例上，配置发现服务，使其指向根地形连接器。 (请参 [阅配置拓扑成员](#title4)。)
-1. 配置根拓扑连接器，使连接实例位于允许列表中。
+1. 配置根拓扑连接器，使连接实例位于允许列表上。
 1. 打开卸载浏览器并禁 `com/adobe/granite/workflow/offloading` 用用户与之交互以上传或更改DAM资产的实例中的主题。
 
    ![chlimage_1-116](assets/chlimage_1-116.png)

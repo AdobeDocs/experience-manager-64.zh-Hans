@@ -1,8 +1,8 @@
 ---
 title: 内容服务的JSON导出程序
 seo-title: 内容服务的JSON导出程序
-description: 'AEM Content Services旨在将AEM中／来自内容的描述和投放概括到网页之外。 他们使用可供任何客户使用的标准化方法，向非传统AEM网页的渠道提供内容投放。 '
-seo-description: 'AEM Content Services旨在将AEM中／来自内容的描述和投放概括到网页之外。 他们使用可供任何客户使用的标准化方法，向非传统AEM网页的渠道提供内容投放。 '
+description: 'AEM Content Services设计为在AEM关注网页之外对内容进行投放和描述。 它们使用标准化方法向非传统AEM网页的渠道提供内容投放，这些方法可供任何客户使用。 '
+seo-description: 'AEM Content Services设计为在AEM关注网页之外对内容进行投放和描述。 它们使用标准化方法向非传统AEM网页的渠道提供内容投放，这些方法可供任何客户使用。 '
 uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
@@ -20,15 +20,15 @@ ht-degree: 4%
 
 # 内容服务的JSON导出程序{#json-exporter-for-content-services}
 
-AEM Content Services旨在将AEM中／来自内容的描述和投放概括到网页之外。
+AEM Content Services设计为在AEM关注网页之外对内容进行投放和描述。
 
-他们使用可供任何客户使用的标准化方法，向非传统AEM网页的渠道提供内容投放。 这些渠道可以包括：
+它们使用标准化方法向非传统AEM网页的渠道提供内容投放，这些方法可供任何客户使用。 这些渠道可以包括：
 
 * [单页应用程序](spa-walkthrough.md)
 * 本机移动应用程序
-* AEM外部的其他渠道和触点
+* AEM以外的其他渠道和触点
 
-对于使用结构化内容的内容片段，您可以通过使用JSON导出器以JSON数据模型格式交付(y)AEM页面的内容，来提供内容服务。 然后，您自己的应用程序可以使用它。
+对于使用结构化内容的内容片段，您可以通过使用JSON导出器以JSON数据模型格式交付AEM页的内容来提供内容服务。 然后，您自己的应用程序可以使用它。
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ AEM Content Services旨在将AEM中／来自内容的描述和投放概括到网
 
 使用AEM JSON导出器，您可以以JSON数据模型格式提供(y)AEM页面的内容。 然后，您自己的应用程序可以使用它。
 
-在AEM中，投放是使用选择器和扩 `model` 展功 `.json` 能实现的。
+在AEM中，投放是使用选择器和扩 `model` 展来 `.json` 实现的。
 
 `.model.json`
 

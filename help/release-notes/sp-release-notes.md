@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 1a6431f19b7eae73150ea3b0bfa00a719e155c41
+source-git-commit: f318a14b3d0e4abf25a73c0f19afdef969658b9c
 workflow-type: tm+mt
 source-wordcount: '21624'
 ht-degree: 23%
@@ -245,7 +245,7 @@ AEM 6.4.7.0的一些主要亮点是：
 
 * 当具有重复名的资产在场景7中已存在时，AEM中的资产重命名无法同步到场景7(CQ-4276763)。
 
-* 当具有“读取”权限的用户尝试打开通过电子邮件发送的用于资产下载的Zip文件时，它无法解压缩(CQ-4277925)。
+* 当具有“读取”权限的用户尝试打开通过电子邮件发送的用于资产下载的Zip文件时，该文件无法解压缩(CQ-4277925)。
 
 * PPT再现工作流无法生成已上传PPT文件的再现，因为AEM 6.4无法更新到com.adobe.granite.poi版本2.0.28(CQ-4279059)。
 
@@ -409,7 +409,7 @@ AEM 6.4.6.0的一些主要亮点是：
 * 打开一个内容片段时出现解析错误，该内容片段包含一个个字符元($)和大括号({)。 适用于 CQ-4270266 的修补程序
 * 尝试在时间轴中显示“体验片段”的某个版本时，NullPointerException 中的 VersionPreviewServlet 失败。NPR-30074：适用于 CQ-4271881 的修补程序
 * 无法通过签入功能锁定内容片段。 NPR-29923：适用于 CQ-4258785 的修补程序
-* SAML身份验证处理程序中的签名验证失败。 NPR-30379: GRANITE-26567的支持请求。
+* SAML身份验证处理程序中的签名验证失败。 NPR-30379: GRANITE-26567的支持请求
 
 **复制**
 

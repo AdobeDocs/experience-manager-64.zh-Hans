@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ![](do-not-localize/data-integeration.png)
 
-AEM Forms数据集成允许您配置和连接到不同的数据源。 现成支持以下类型。 但是，只需少量自定义，您也可以集成其他数据源。
+AEM Forms数据集成允许您配置和连接不同的数据源。 现成支持以下类型。 但是，只需少量自定义，您也可以集成其他数据源。
 
 * 关系数据库- MySQL、Microsoft SQL Server、IBM DB2和Oracle RDBMS。
 * AEM用户用户档案
@@ -30,13 +30,13 @@ AEM Forms数据集成允许您配置和连接到不同的数据源。 现成支�
 * 基于SOAP的Web服务
 * OData服务
 
-数据集成支持OAuth2.0、基本身份验证和API密钥现成身份验证类型，并允许为访问Web服务实现自定义身份验证。 在AEM cloud services中配置RESTful、基于SOAP和OData服务时，在AEM Web控制台中配置关系用户档案库的JDBC和AEM用户的连接器。
+数据集成支持OAuth2.0、基本身份验证和API密钥现成身份验证类型，并允许为访问Web服务实现自定义身份验证。 在AEM Cloud Services中配置了RESTful、基于SOAP和OData服务时，在AEM Web控制台中配置关系用户档案库的JDBC和AEM用户的连接器。
 
 ## 配置关系数据库 {#configure-relational-database}
 
 您可以使用AEM Web Console配置配置关系数据库。 执行以下操作：
 
-1. 转到AEM Web控制台(位 `https://[server]:[host]/system/console/configMgr`置)。
+1. 转到AEM Web控制台 `https://[server]:[host]/system/console/configMgr`。
 1. 查找Apache **[!UICONTROL Sling Connection池化DataSource配置]** 。 点击以在编辑模式下打开配置。
 1. 在配置对话框中，指定要配置的数据库的详细信息，如：
 
@@ -51,7 +51,7 @@ AEM Forms数据集成允许您配置和连接到不同的数据源。 现成支�
    >请确保在配置数据源之前加密敏感信息，如口令。 要加密：
    >
    >1. 转到 `https://[server]:[port]/system/console/crypto`.
-   >1. 在纯文 **[!UICONTROL 本字段中]** ，指定要加密的口令或任何字符串，然后单击 **[!UICONTROL 保护]**。
+   >1. 在纯文 **[!UICONTROL 本字段中]** ，指定要加密的口令或任何字符串，然后单击 **[!UICONTROL Protect]**。
 
    >
    >加密的文本将显示在可在配置中指定的受保护文本字段中。
@@ -68,8 +68,8 @@ AEM Forms数据集成允许您配置和连接到不同的数据源。 现成支�
 
 您可以使用AEM Web Console中的用户用户档案连接器配置配置AEM用户用户档案。 执行以下操作：
 
-1. 转到AEM Web控制台(位 `https://[server]:[host]/system/console/configMgr`置)。
-1. 查找AEM Forms **[!UICONTROL 用户档案集成——用户连接器配置]** ，然后点按以在编辑模式下打开配置。
+1. 转到AEM Web控制台 `https://[server]:[host]/system/console/configMgr`。
+1. 查找 **[!UICONTROL AEM Forms用户档案集成——用户连接器配置]** ，然后点按以编辑模式打开配置。
 1. 在“用户用户档案连接器配置”对话框中，可以添加、删除或更新用户用户档案属性。 指定的属性将可用于表单数据模型中。 使用以下格式指定用户用户档案属性：
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -81,7 +81,7 @@ AEM Forms数据集成允许您配置和连接到不同的数据源。 现成支�
 
    >[!NOTE]
    >
-   >&amp; **amp;ast;** 在上例中，表示CRXDE结构中AEM `profile/empLocation/` 用户用户档案中节点下的所有节点。 表单数据模型可以访问节点下 `city` 任何节点 `string` 中的类型属 `profile/empLocation/` 性。 但是，包含指定属性的节点必须采用一致的结构。
+   >&amp; **amp;ast;** 在上例中，表示AEM用户用户档案中 `profile/empLocation/` 的节点下CRXDE结构中的所有节点。 表单数据模型可以访问节点下 `city` 任何节点 `string` 中的类型属 `profile/empLocation/` 性。 但是，包含指定属性的节点必须采用一致的结构。
 
 1. 点按 **[!UICONTROL 保存]** ，以保存配置。
 
@@ -91,7 +91,7 @@ AEM Forms数据集成允许您配置和连接到不同的数据源。 现成支�
 >
 >为RESTful、SOAP和OData服务配置云服务，需要配置云服务文件夹。
 
-AEM中的所有云服务配置都整合在AEM存储 `/conf` 库的文件夹中。 默认情况下，该 `conf` 文件夹包 `global` 含可在其中创建云服务配置的文件夹。 但是，您需要手动为云配置启用它。 您还可以在中创建其他文 `conf` 件夹，以创建和组织云服务配置。
+AEM中的所有云服务配置都整合在AEM存储库 `/conf` 的文件夹中。 默认情况下，该 `conf` 文件夹包 `global` 含可在其中创建云服务配置的文件夹。 但是，您需要手动为云配置启用它。 您还可以在中创建其他文 `conf` 件夹，以创建和组织云服务配置。
 
 要为云服务配置配置文件夹，请执行以下操作：
 
@@ -108,11 +108,11 @@ AEM中的所有云服务配置都整合在AEM存储 `/conf` 库的文件夹中�
 
 ## 配置REST风格的Web服务 {#configure-restful-web-services}
 
-REST风格的Web服务可在Swagger定 [义文件中使用](https://swagger.io/specification/) JSON格式的Swagger规范或YAML格式进行描述。 要在AEM cloud services中配置REST风格的Web服务，请确保文件系统上有Swagger文件或文件托管的URL。
+REST风格的Web服务可在Swagger定 [义文件中使用](https://swagger.io/specification/) JSON格式的Swagger规范或YAML格式进行描述。 要在AEM云服务中配置RESTful Web服务，请确保文件系统上有Swagger文件或文件托管的URL。
 
 执行以下操作以配置RESTful服务：
 
-1. 转至“工 **[!UICONTROL 具”>“Cloud Service”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
+1. 转至“工 **[!UICONTROL 具”>“Cloud Services”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
 
    有关 [创建和配置云服务配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder) ，请参阅配置云服务配置的文件夹。
 
@@ -126,9 +126,9 @@ REST风格的Web服务可在Swagger定 [义文件中使用](https://swagger.io/s
 
 ## 配置SOAP Web服务 {#configure-soap-web-services}
 
-使用Web服务描述语言(WSDL) [规范描述基于SOAP的Web服务](https://www.w3.org/TR/wsdl)。 要在AEM cloud services中配置基于SOAP的Web服务，请确保您具有Web服务的WSDL URL，并执行以下操作：
+使用Web服务描述语言(WSDL) [规范描述基于SOAP的Web服务](https://www.w3.org/TR/wsdl)。 要在AEM云服务中配置基于SOAP的Web服务，请确保您具有Web服务的WSDL URL，并执行以下操作：
 
-1. 转至“工 **[!UICONTROL 具”>“Cloud Service”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
+1. 转至“工 **[!UICONTROL 具”>“Cloud Services”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
 
    有关 [创建和配置云服务配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder) ，请参阅配置云服务配置的文件夹。
 
@@ -146,13 +146,13 @@ REST风格的Web服务可在Swagger定 [义文件中使用](https://swagger.io/s
 
 ## 配置OData服务 {#config-odata}
 
-OData服务由其服务根URL标识。 要在AEM cloud services中配置OData服务，请确保您具有该服务的服务根URL，并执行以下操作：
+OData服务由其服务根URL标识。 要在AEM云服务中配置OData服务，请确保您具有该服务的服务根URL，并执行以下操作：
 
 >[!NOTE]
 >
 >有关配置Microsoft Dynamics 365的分步指南（联机或内部），请参 [阅Microsoft Dynamics OData配置](/help/forms/using/ms-dynamics-odata-configuration.md)。
 
-1. 转至“工 **[!UICONTROL 具”>“Cloud Service”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
+1. 转至“工 **[!UICONTROL 具”>“Cloud Services”>“数据源]**”。 点按以选择要在其中创建云配置的文件夹。
 
    有关 [创建和配置云服务配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder) ，请参阅配置云服务配置的文件夹。
 

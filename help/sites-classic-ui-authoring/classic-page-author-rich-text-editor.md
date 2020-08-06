@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1814'
+ht-degree: 89%
 
 ---
 
@@ -77,7 +80,7 @@ The Rich Text Editor provides a range of featues, these [depend on the configura
 
 ### 预定义样式和格式 {#predefined-styles-and-formats}
 
-![cq55_rte_styles段落](assets/cq55_rte_stylesparagraph.png)
+![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
 您的安装可以包括预定义的样式和格式。它们随&#x200B;**样式**&#x200B;和&#x200B;**格式**&#x200B;下拉列表提供且可应用于您选定的文本。
 
@@ -157,7 +160,7 @@ AEM 会按时间顺序保留您在当前组件中过去 50 次操作的记录。
 
 只需将光标置于列表中，然后选择其他样式即可更改列表样式。子列表也可以具有不同于包含列表的样式。在创建子列表（通过缩进）后，即可应用样式。
 
-![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_列表_use](assets/cq55_rte_lists_use.png)
 
 ### 链接 {#links}
 
@@ -382,7 +385,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 
 #### 合并单元格 {#merge-cells}
 
-![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png)![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * 如果您选择了一组单元格，可以将这些单元格合并为一个。
 * 如果您只选择了一个单元格，可以将其与右侧或下方的单元格合并。
@@ -408,6 +411,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 >
 >* Windows IE：使用 Ctrl 并单击主鼠标按钮（通常是左键）可选择多个单元格。
 >* Firefox：拖动鼠标可选择单元格区域。
+
 >
 
 

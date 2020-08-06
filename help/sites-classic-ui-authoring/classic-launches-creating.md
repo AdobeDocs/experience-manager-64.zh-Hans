@@ -12,6 +12,9 @@ discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 90%
 
 ---
 
@@ -39,6 +42,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * **不包括子页面**：选中此选项，可只为源页面（而非子页面）创建启动项。默认情况下，此选项处于未选中状态。
    * **保持同步**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此功能可通过将启动项设为 [Live Copy](/help/sites-administering/msm.md) 来实现。
    * **启动日期**：激活启动副本的日期和时间（取决于&#x200B;**生产就绪**&#x200B;标记；请参阅[启动项 - 事件的顺序](/help/sites-authoring/launches.md#launches-the-order-of-events)）。
+
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
 1. 单击&#x200B;**创建**。

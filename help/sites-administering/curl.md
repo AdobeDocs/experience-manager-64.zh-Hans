@@ -22,7 +22,7 @@ ht-degree: 2%
 
 管理员通常需要自动操作或简化任何系统中的常见任务。 例如，在AEM中，管理用户、安装包和管理OSGi捆绑包是通常必须完成的任务。
 
-由于构建AEM的Sling框架具有RESTful性质，大多数任务都可以简化为URL调用。 cURL可用于执行此类URL调用，并且对于AEM管理员来说也是一个有用的工具。
+由于构建AEM的Sling框架具有RESTful性质，因此大多数任务都可简化为URL调用。 cURL可用于执行此类URL调用，并且对于AEM管理员来说可以是一个有用的工具。
 
 ## 什么是cURL {#what-is-curl}
 
@@ -30,11 +30,11 @@ cURL是用于执行URL操作的开放源代码命令行工具。 它支持各种
 
 cURL是使用URL语法获取或发送数据的成熟且广泛使用的工具，最初于1997年发布。 名称cURL最初是指“请参阅URL”。
 
-由于构建AEM的Sling框架具有RESTful特性，因此大多数任务可以简化为URL调用，该调用可以用cURL执行。 [内容处理任务](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) (如激活页面、启动工作流 [)以及操作任务(如](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 包管理和管理用户)可以使用cURL实现自动化。 此外，您还可 [以为AEM中的大多数任务](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) 创建您自己的cURL命令。
+由于构建AEM的Sling框架具有RESTful性质，因此大多数任务可以简化为URL调用，该调用可以用cURL执行。 [内容处理任务](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) (如激活页面、启动工作流 [)以及操作任务(如](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 包管理和管理用户)可以使用cURL实现自动化。 此外，您还可 [以为AEM的大多数任务](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) 创建您自己的cURL命令。
 
 >[!NOTE]
 >
->通过cURL执行的任何AEM命令都必须像任何AEM用户一样获得授权。 使用cURL执行AEM命令时，会尊重所有ACL和访问权限。
+>通过cURL执行的任何AEM命令都必须像AEM的任何用户一样获得授权。 使用cURL执行AEM命令时，会尊重所有ACL和访问权限。
 
 ## 下载cURL {#downloading-curl}
 
@@ -42,7 +42,7 @@ cURL是macOS和某些Linux版本的标准部分。 但是，它适用于大多�
 
 cURL的源存储库也可在GitHub上找到。
 
-## 构建可用于cURL的AEM命令 {#building-a-curl-ready-aem-command}
+## 构建cURL就绪的AEM命令 {#building-a-curl-ready-aem-command}
 
 可以为AEM中的大多数操作(如触发工作流、检查OSGi配置、触发JMX命令、创建复制代理等)构建cURL命令。
 
@@ -59,7 +59,7 @@ cURL的源存储库也可在GitHub上找到。
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. 在创 **建页面** 向导中 **单击创建** ，以实际创建工作流。
-1. 右键单击生成的POST操作，然后选择 **复制** -> **复制为cURL**。
+1. 右键单击生成的POST操作，然后选 **择** “复制” **->“复制为cURL**”。
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -69,15 +69,15 @@ cURL的源存储库也可在GitHub上找到。
 
 1. 通过命令行执行cURL命令并视图响应。
 
-   ![chlimage_1-70](assets/chlimage_1-70.png)
+   ![chlimage_1-78](assets/chlimage_1-70.png)
 
 ## 常见操作AEM cURL命令 {#common-operational-aem-curl-commands}
 
-以下是一列表AEM cURL命令，用于常见的管理和操作任务。
+下面是AEM cURL命令的列表，用于常见的管理和操作任务。
 
 >[!NOTE]
 >
->以下示例假定AEM在端口上运 `localhost` 行， `4502` 并将用户与密 `admin` 码一起使用 `admin`。 其他命令占位符设置在尖括号中。
+>以下示例假定AEM在端口上运 `localhost` 行， `4502` 并使用带口令 `admin` 的用户 `admin`。 其他命令占位符设置在尖括号中。
 
 ### 包管理 {#package-management}
 
@@ -296,7 +296,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 #### 启用和禁用CRX DE Lite {#enabling-and-disabling-crx-de-lite}
 
-有关 [详细信息，请参阅在AEM中启用](/help/sites-administering/enabling-crxde-lite.md) CRXDE Lite。
+有关详 [细信息，请参](/help/sites-administering/enabling-crxde-lite.md) 阅在AEM中启用CRXDE Lite。
 
 ### 数据存储垃圾收集 {#data-store-garbage-collection}
 
@@ -304,7 +304,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 ### 分析与目标集成 {#analytics-and-target-integration}
 
-有关 [详细信息，请参阅选择加入Adobe Analytics](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) 和Adobe目标。
+有关 [详细信息，请参阅选择加入Adobe Analytics](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) 和Adobe Target。
 
 ### 单一登录 {#single-sign-on}
 
@@ -314,11 +314,11 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 ## 常见内容处理AEM cURL命令 {#common-content-manipulation-aem-curl-commands}
 
-以下是一列表用于内容处理的AEM cURL命令。
+下面是用于内容处理的AEM cURL命令的列表。
 
 >[!NOTE]
 >
->以下示例假定AEM在端口上运 `localhost` 行， `4502` 并将用户与密 `admin` 码一起使用 `admin`。 其他命令占位符设置在尖括号中。
+>以下示例假定AEM在端口上运 `localhost` 行， `4502` 并使用带口令 `admin` 的用户 `admin`。 其他命令占位符设置在尖括号中。
 
 ### 页面管理 {#page-management}
 

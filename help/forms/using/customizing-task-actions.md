@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 自定义任务操作 {#customizing-task-actions}
 
-AEM Forms工作区允许用户自定义任务操作。 在自定义任务操作之前，请确保遵循AEM Forms工作区自 [定义的常规步骤中列出的步骤](/help/forms/using/generic-steps-html-workspace-customization.md)。
+AEM Forms工作区允许用户自定义任务操作。 在自定义任务操作之前，请确保按照AEM Forms工作区自定义的 [常规步骤中列出的步骤操作](/help/forms/using/generic-steps-html-workspace-customization.md)。
 
 ## 自定义文本样式 {#customizing-text-style}
 

@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 37c8b1bd-0e60-42d2-80ed-dece3f5c2342
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 76%
 
 ---
 
@@ -46,6 +49,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
       * 使用向左/向右箭头浏览各种工作流的状态信息。
       * 单击/点按实际数字以打开所有适用工作流的下拉列表，然后选择您希望在状态栏中显示的工作流。
+
    ![wf-59](assets/wf-59.png)
 
    >[!NOTE]
@@ -225,7 +229,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 工作流详细信息会以选项卡的形式显示，并且工具栏中会提供相应的操作：
 
-* **工作项** (WORKITEM)选项卡：
+* **“工作项** ”选项卡：
 
    ![wf-72](assets/wf-72.png)
 

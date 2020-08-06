@@ -1,6 +1,6 @@
 ---
-title: OSGi组和权限上的AEM Forms
-seo-title: OSGi组和权限上的AEM Forms
+title: AEM Forms论OSGi集团与特权
+seo-title: AEM Forms论OSGi集团与特权
 description: 将用户分配到组以在OSGi上管理AEM Forms
 seo-description: 将用户分配到组以在OSGi上管理AEM Forms
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# OSGi组和权限上的AEM Forms {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms论OSGi集团与特权 {#aem-forms-on-osgi-groups-and-privileges}
 
 将用户分配到组以在OSGi上管理AEM Forms
 
-您可以 [在AEM中](/help/sites-administering/user-group-ac-admin.md#group-administration) 创建组 [，并将策](/help/sites-administering/user-group-ac-admin.md#user-administration) 略和用户分配到这些组。 这些策略控制属于组的用户的权限。
+您可以 [创建组](/help/sites-administering/user-group-ac-admin.md#group-administration) ，并将策略 [和用户](/help/sites-administering/user-group-ac-admin.md#user-administration) 分配到AEM中的组。 这些策略控制属于组的用户的权限。
 
-安装AEM [Forms Add-on包后](/help/forms/using/installing-configuring-aem-forms-osgi.md)，本文中提到的组（如forms-user和forms-power-user）将自动可用于分配。 下表列表了用户根据组分配可对OSGi上的AEM Forms执行的任务:
+安装 [AEM Forms加载项包后](/help/forms/using/installing-configuring-aem-forms-osgi.md)，本文中提到的组（如forms-user和forms-power-user）将自动可供分配。 下表列表了用户可以根据组分配对OSGi上的AEM Forms执行的任务:
 
 <table> 
  <tbody>

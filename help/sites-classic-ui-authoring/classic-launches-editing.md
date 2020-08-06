@@ -12,6 +12,9 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 99%
 
 ---
 
@@ -47,6 +50,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * **标题**
       * **起始日期**：这相当于启动日期
       * **生产就绪**
+
       有关这些字段的用途和交互的信息，请参阅[启动项 - 事件的顺序](/help/sites-authoring/launches.md#launches-the-order-of-events)。
 
    * 在&#x200B;**图像**&#x200B;选项卡中，您可以上传图像文件。

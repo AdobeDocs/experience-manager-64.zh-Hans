@@ -108,7 +108,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td>Adobe Sign Block</td> 
-   <td>添加一个包含占位符的文本块，用于在使用Adobe Sign进行签名时填充字段。</td> 
+   <td>添加一个文本块，其中带有占位符，以在使用Adobe Sign进行签名时填写字段。</td> 
   </tr> 
   <tr> 
    <td>按钮</td> 
@@ -295,11 +295,11 @@ ht-degree: 3%
 * 在组件属性中以格式指定单选按钮和 `{value}={text}` 复选框项的值。
 * 默认情况下，文件附件组件只允许用户附加一个文件。 但是，您可以配置组件属性以支持多个附件。 此外，如果用户附加了多个具有相同文件名的文件，则附件可能会引起一些问题。 因此，建议在提交表单时为每个提交的附件关联唯一标识符。 为此，请执行以下操作：
 
-   1. 在AEM Forms服务器上，导航到 **[!UICONTROL Adobe Experience Manager >工具>操作> Web Console]**。
-   1. 查找并点 **[!UICONTROL 按自适应表单配置服务]**。
-   1. 在自适应表单配置服务对话框中，启 **[!UICONTROL 用使文件名唯一]**。 默认情况下，它处于禁用状态。
+   1. 在您的AEM Forms服务器上，导航到 **[!UICONTROL Adobe Experience Manager>工具>操作> Web Console]**。
+   1. 查找并点 **[!UICONTROL 按自适应Forms配置服务]**。
+   1. 在自适应Forms配置服务对话框中，启 **[!UICONTROL 用使文件名唯一]**。 默认情况下，它处于禁用状态。
 
-* 要使用户能够使用Safari浏览器附加PDF，请确 **[!UICONTROL 保将application]** /pdf添加到“文件”附件组件的“支持的文件类型”属性。 使用先前的AEM Forms版本创建的自适应表单可 **[!UICONTROL 能包含。pdf]** ，而 **[!UICONTROL 不是“支持的文件类型]** ”属性中的application/pdf。
+* 要使用户能够使用Safari浏览器附加PDF，请确 **[!UICONTROL 保将application]** /pdf添加到“文件”附件组件的“支持的文件类型”属性。 使用先前的AEM Forms版本创建的自适应表单 **[!UICONTROL 可能包含。pdf]** ，而 **[!UICONTROL 不是“支持的文件类型]** ”属性中的application/pdf。
 
 有关自适应表单的更多最佳实践，请参 [阅使用自适应表单的最佳实践](/help/forms/using/adaptive-forms-best-practices.md)。
 

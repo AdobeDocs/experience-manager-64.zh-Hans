@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1672'
+ht-degree: 89%
 
 ---
 
@@ -42,6 +45,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * 随后将会显示新标记，其右侧带有一个小星星，表示该标记为新标记。
    * 使用下拉列表功能，可从现有标记中进行选择。
    * 当您将鼠标悬停在选择框中的标记条目上时，会显示 x，用于为此页面删除该标记。
+
    有关标记的更多信息，请访问[使用标记](/help/sites-authoring/tags.md)。
 
 * **隐藏导航**
@@ -80,7 +84,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    允许您输入此页面的虚 URL，以便使用更短并且/或者含意更清楚的 URL。
 
-   例如，如果虚URL设置为w, `elcome`则对于网站h，如果路径/ `v1.0/startpage`标识的页面 `ttp://example.com,` h，则h `ttp://example.com/welcome`应该是h的虚URL `ttp://example.com/content/v1.0/startpage`
+   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -114,11 +118,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    >[!NOTE]
    >
-   > Alias设置属 `sling:alias` 性以定义资源的别名（这仅影响资源，不影响路径）。
+   > 别名会设置 `sling:alias` 属性以定义资源的别名（这仅会影响资源，不会影响路径）。
    >
-   >例如：如果为节点定义 `latin-lang` 别名，则 `/content/we-retail/spanish` 可通过 `/content/we-retail/latin-language`
+   >例如：如果您为节点 `/content/we-retail/spanish` 定义别名 `latin-lang`，则可以通过 `/content/we-retail/latin-language` 访问此页面。
    >
-   >有关更多详细信息， [请参阅SEO和URL管理最佳实践下的本地化页面名称](/help/managing/seo-and-url-management.md#localized-page-names)
+   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **允许的模板**
 
@@ -167,7 +171,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * **为 Facebook 启用用户共享**
    * **为 Pinterest 启用用户共享**
-   * **首选体验片段变量** 定义用于为页面生成元数据的体验片段变量
+   * **首选体验片段变量**
+定义用于为页面生成元数据的体验片段变量
 
 ### 云服务 {#cloud-services}
 
@@ -190,6 +195,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * [添加权限](/help/sites-administering/user-group-ac-admin.md)
    * [编辑已关闭的用户组](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
    * 查看[有效权限](/help/sites-administering/user-group-ac-admin.md)
+
    >[!CAUTION]
    >
    >The **Permissions** tab allows editing of CUG configurations based on the presence of the `granite:AuthenticationRequired` mixin. 如果页面权限是使用已弃用的 CUG 配置来配置的，则在存在 `cq:cugEnabled` 属性的情况下，将会显示一条警告消息，且 CUG 权限将不可编辑，同时[高级](/help/sites-authoring/editing-page-properties.md#advanced)选项卡上的“身份验证要求”也将不可编辑。
@@ -224,25 +230,26 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * 从&#x200B;**站点**&#x200B;控制台中：
 
    * [创建一个新页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)（一部分属性）
-   * Clicking or tapping **Properties**
+   * 单击或点按&#x200B;**属性**
 
       * 单个页面
       * 多个页面（只有一部分属性可用于整体编辑）
 
 * 在页面编辑器中：
 
-   * 使用 **页面信息** (然后 **打开属性**)
+   * 使用&#x200B;**页面信息**（然后&#x200B;**打开属性**）
 
 ### 从“站点”控制台中 - 单个页面 {#from-the-sites-console-single-page}
 
 单击或点按&#x200B;**属性**&#x200B;以定义页面属性：
 
-1. 使用“**站点**”控制台，导航到要查看和编辑属性的页面位置。
+1. 使用&#x200B;**站点**&#x200B;控制台，导航到要查看和编辑属性的页面位置。
 
-1. Select the **Properties** option for the required page using either:
+1. 使用以下任一方式为所需的页面选择&#x200B;**属性**&#x200B;选项：
 
    * [快速操作](/help/sites-authoring/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+
    此时将使用相应的选项卡显示页面属性。
 
 1. 查看或编辑所需的属性。
@@ -268,7 +275,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ### 从“站点”控制台中 - 多个页面 {#from-the-sites-console-multiple-pages}
 
-从“站 **点** ”控制台中，您可以选择多个页面，然后使用 **查看属性** ，以查看和／或编辑页面属性。 这称为批量编辑页面属性。
+从“站 **点** ”控制台中，您可以选择多个页面，然后使用&#x200B;**查看属性** ，以查看和／或编辑页面属性。 这称为批量编辑页面属性。
 
 >[!NOTE]
 >
@@ -314,6 +321,7 @@ After selecting the pages and then clicking or tapping the **Properties** option
 
       * 在“查看”模式中，只显示具有相同值的属性。
       * 当字段有多个值时（例如“标记”），只有在&#x200B;*所有值*&#x200B;均相同的情况下，才会显示这些值。如果只有部分值相同，则仅在编辑时才显示它们。
+
    如果不存在具有相同值的属性，则会显示一条消息。
 
 * **编辑**
@@ -324,7 +332,7 @@ After selecting the pages and then clicking or tapping the **Properties** option
 
       * 当您选择&#x200B;**完成**&#x200B;时，新值将会应用于所有选定页面。
       * 当字段有多个值时（例如“标记”），您可以附加一个新值，也可以删除相同的值。
-   * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. 编辑此类字段时应格外小心，以防数据丢失。
+   * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如，文本 `<Mixed Entries>`。编辑此类字段时应格外小心，以防数据丢失。
 
 
 >[!NOTE]

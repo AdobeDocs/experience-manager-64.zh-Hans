@@ -100,7 +100,7 @@ GITHUB上的代码
 
 ### UberJar怎么办？ {#what-can-t-i-do-with-the-uberjar}
 
-由于UberJar仅 **包含** API，因此它不可执行，无法用于运 **行Adobe Experience Manager** 。 要运行AEM，您需要AEM快速入门(独立或Web 应用程序存档(WAR)表单)。
+由于UberJar仅 **包含** API，因此它不可执行，不能用于运 **行Adobe Experience Manager** 。 要运行AEM，您需要AEM快速入门(独立或Web 应用程序存档(WAR)表单)。
 
 ### 您提到了设备测试的限制。 请进一步说明。 {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -462,7 +462,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 * 我们告诉它编译 `${project.build.directory}/jsps-to-compile`
 * 并将结果输 `${project.build.directory}/ignoredjspc` 出到(即 `myproject/content/target/ignoredjspc`)
 
-* 我们设置maven-resources-plugin以将JSP复制到 `${project.build.directory}/jsps-to-compile``libs/` generate-sources阶段，并将其配置为不复制文件夹(因为这是AEM产品代码，我们不想为我们的项目生成依赖项，也不需要验证它是否进行编译。
+* 我们设置maven-resources-plugin以在“生成源” `${project.build.directory}/jsps-to-compile``libs/` 阶段将JSP复制到文件夹，并将其配置为不复制该文件夹(因为这是AEM产品代码，我们不想为我们的项目生成依赖项，也不需要验证它是否进行编译。
 
 如上所述，我们的主要目标是验证JSP，并确保在生成过程包含错误时失败。 因此，我们将它们编译为一个被忽略的单独目录（事实上，稍后会立即删除，您将看到）。
 
@@ -669,7 +669,7 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 </profiles>
 ```
 
-### 如何与AEM Communities配合使用 {#how-to-work-with-aem-communities}
+### 如何与AEM Communities {#how-to-work-with-aem-communities}
 
 获得AEM Communities功能许可后，需要额外的APIjar。
 

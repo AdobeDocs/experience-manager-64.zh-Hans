@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +40,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
 >[!NOTE]
 >
->Search can also be invoked by using the hotkey `/` (forward slash) whenever the search rail is visible.
+>显示搜索边栏时，还可以使用热键 `/`（正斜杠）调用搜索。
 
 ## 搜索和筛选 {#search-and-filter}
 
@@ -70,6 +73,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
    * 搜索目录
    * 标记
    * 搜索条件；例如修改日期、发布状态、LiveCopy 状态。
+
    >[!NOTE]
    >
    >搜索条件可能会视情况而异：
@@ -84,7 +88,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
    ![screen_shot_2018-03-23at101710](assets/screen_shot_2018-03-23at101710.png)
 
-1. 使 **用** X **（右上方）关闭** 搜索。
+1. 使用 **X**（右上方）关闭&#x200B;**搜索**。
 
 >[!NOTE]
 >
@@ -113,7 +117,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
    * 使用 **x**（针对保存的搜索的名称）以开始新的查询（保存的搜索本身将不会被删除）。
    * **编辑保存的搜索**，更改搜索条件，然后再次&#x200B;**保存**。
 
-通过选择保存的搜索并单击搜索面板底部的“编 **辑保存的搜索** ”，可以修改保存的搜索。
+通过选择保存的搜索并单击搜索面板底部的&#x200B;**编辑保存的搜索**，可以修改保存的搜索。
 
 ![screen_shot_2018-03-23at102213](assets/screen_shot_2018-03-23at102213.png)
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 translation-type: tm+mt
 source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -29,6 +32,7 @@ source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
 >
 >* Windows：按住 Ctrl 并单击所需的组件。
 >* Mac：按住 Cmd 并单击所需的组件。
+
 >
 
 
@@ -45,22 +49,22 @@ source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
   <tr> 
    <td>编辑模式</td> 
    <td><code>Ctrl-z</code></td> 
-   <td>撤消最后一次更改。</td> 
+   <td>撤消最后一次更改.</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td><code>Ctrl-y</code></td> 
-   <td>重做最后一次更改。</td> 
+   <td>重做最后一次更改.</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td><strong><code>Shift-Click</code></strong></td> 
-   <td>选择多个段落。</td> 
+   <td>选择多个段落.</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td><strong><code>Ctrl-Click</code></strong></td> 
-   <td>选择多个段落。</td> 
+   <td>选择多个段落.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -166,7 +170,7 @@ source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
   </tr> 
   <tr> 
    <td>编辑模式</td> 
-   <td><br /> 在URL中设置以下后缀：然 <code>?debugClientLibs=true</code><br /> 后使用：<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>查看页面加载的计时统计数据。</td> 
   </tr> 
  </tbody> 

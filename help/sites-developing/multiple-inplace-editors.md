@@ -1,6 +1,6 @@
 ---
 title: 为多个就地编辑器配置RTE。
-description: 通过配置富文本编辑器，在Adobe Experience Manager中创建多个就地编辑器。
+description: 通过配置富文本编辑器在Adobe Experience Manager创建多个就地编辑器。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 配置多个就地编辑器 {#configure-multiple-in-place-editors}
 
-您可以在Adobe Experience Manager中配置富文本编辑器，使其具有多个就地编辑器。 配置后，您可以选择适当的内容并打开相应的编辑器。
+您可以在Adobe Experience Manager配置富文本编辑器，使其具有多个就地编辑器。 配置后，您可以选择适当的内容并打开相应的编辑器。
 
 ![特定就地编辑器](assets/rte-inplace-editor.png)
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
 ### 富文本编辑器的其他配置 {#additional-configuration-for-rich-text-editors}
 
-多个富文本编辑器的配置略有不同，因为您可以单独配置每个RTE实例。 有关详细信息， [请参阅配置富文本编辑器](/help/sites-administering/rich-text-editor.md)。 要使多个RTE为每个就地RTE创建配置。 Adobe建议在下创建新的配置节 `cq:InplaceEditingConfig` 点，因为每个RTE都可以有不同的配置。 在新节点下，创建每个单独的RTE配置。
+多个富文本编辑器的配置略有不同，因为您可以单独配置每个RTE实例。 有关详细信息， [请参阅配置富文本编辑器](/help/sites-administering/rich-text-editor.md)。 要使多个RTE为每个就地RTE创建配置。 Adobe建议在下面创建新的配 `cq:InplaceEditingConfig` 置节点，因为每个RTE都可以有不同的配置。 在新节点下，创建每个单独的RTE配置。
 
 ```xml
     texttext

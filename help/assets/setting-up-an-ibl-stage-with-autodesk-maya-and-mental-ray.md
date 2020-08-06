@@ -1,8 +1,8 @@
 ---
 title: 使用 Autodesk Maya 和 Mental Ray 设置 IBL 舞台
 seo-title: 使用 Autodesk Maya 和 Mental Ray 设置 IBL 舞台
-description: 如何使用Autodesk Maya和Mental ray设置IBL舞台
-seo-description: 如何使用Autodesk Maya和Mental ray设置IBL舞台
+description: 如何使用Autodesk Maya和Mental Ray设置IBL舞台
+seo-description: 如何使用Autodesk Maya和Mental Ray设置IBL舞台
 uuid: 353ff561-0d30-4d62-8cad-68890c883c92
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
 source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 69%
 
 ---
 
@@ -48,7 +51,7 @@ source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
 
    Configure the **[!UICONTROL Render Settings]** with the following suggestions.
 
-   * **[!UICONTROL “公用]** ”选项卡
+   * **[!UICONTROL “常用]** ”选项卡
 
       Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all **[!UICONTROL Renderable Cameras]**.
 

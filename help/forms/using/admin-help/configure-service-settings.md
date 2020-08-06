@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 配置服务设置 {#configure-service-settings}
 
-您可以使用“服务管理”页为属于AEM表单的每个服务配置设置。 可用设置因所配置的服务而异。
+您可以使用“服务管理”页为AEM表单中的每个服务配置设置。 可用设置因所配置的服务而异。
 
 1. 在管理控制台中，单击“服务”>“应用程序和服务”>“服务管理”。
 1. 更改服务前停止该服务。 (请参 [阅启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)。)
@@ -69,7 +69,7 @@ Workbench提供记录流程实例在运行时执行时的功能，然后回放�
 
 ## 中央迁移桥服务（已弃用）设置 {#central-migration-bridge-service-settings}
 
-中央迁移桥服务( `CentralMigrationBridge`)调用Adobe Central Pro Output Server(Central)功能的子集，该功能包括JFMERGE、JFTRANS和XMLIMPORT命令。 通过中央迁移桥服务操作，您可以在AEM表单中重复使用以下中央资产：
+中央迁移桥服务( `CentralMigrationBridge`)调用Adobe Central Pro Output Server（中央）功能的子集，该子集包括JFMERGE、JFTRANS和XMLIMPORT命令。 Central Migration Bridge服务操作允许您在AEM表单中重用以下Central资源：
 
 * 模板设计(&amp;ast;.ifd)
 * 输出模板(&amp;ast;.mdf)
@@ -79,7 +79,7 @@ Workbench提供记录流程实例在运行时执行时的功能，然后回放�
 
 中央迁移桥服务可使用以下设置。
 
-**中央安装目录：** 安装Adobe Central 5.7的目录。
+**中央安装目录：** 安装AdobeCentral 5.7的目录。
 
 ## EMC Documentum服务设置的Content Repository Connector {#content-repository-connector-for-emc-documentum-service-settings}
 
@@ -159,7 +159,7 @@ Distiller服务提供以下设置。
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES（已弃用）是与LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 内容服务（已弃用）支持将于2014年12月31日结束。 请参 [阅Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。 要了解有关配置Content Services（已弃用）的信息，请参 [阅管理Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)。
+>Adobe®LiveCycle®内容服务ES（已弃用）是与LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 内容服务（已弃用）支持将于2014年12月31日结束。 请参阅 [Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。 要了解有关配置Content Services（已弃用）的信息，请参 [阅管理Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)。
 
 文档管理服务( `DocumentManagementService`)使进程能够使用由Content Services（已弃用）提供的内容管理功能。 文档管理操作提供在内容管理系统中维护空间和内容的基本任务。 这些任务的示例包括复制、删除、移动、检索和存储内容、创建空间和关联以及获取和设置内容属性。
 
@@ -211,7 +211,7 @@ Distiller服务提供以下设置。
 
 ## 加密服务设置 {#encryption-service-settings}
 
-加密服务() `EncryptionService`允许您加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对内容的访问。 如果PDF文档是使用密码加密的，则用户必须先指定打开密码，然后才能在Adobe Reader或Adobe Acrobat中查看文档。 同样，如果PDF文档用证书加密，则用户必须使用与用于加密PDF文档的证书（私钥）对应的公钥对PDF文档进行解密。
+加密服务() `EncryptionService`允许您加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对内容的访问。 如果PDF文档是使用口令加密的，则用户必须指定打开口令，才能在Adobe Reader或Adobe Acrobat查看文档。 同样，如果PDF文档用证书加密，则用户必须使用与用于加密PDF文档的证书（私钥）对应的公钥对PDF文档进行解密。
 
 加密服务提供以下设置。
 
@@ -249,19 +249,19 @@ FTP服务可使用以下设置。
 
 “生成PDF”服务提供以下设置。
 
-**Adobe PDF设置：** 要应用于转换作业的预配置Adobe PDF设置的名称（如果这些设置未作为API调用参数的一部分指定）。 通过单击“服务”>“PDF生成器”>“Adobe PDF设置”，可以在管理控制台中配置Adobe PDF设置。 这些设置仅适用于基于PDFMaker的转换。
+**Adobe PDF设置：** 预配置的要应用于转换作业的Adobe PDF设置的名称（如果这些设置未指定为API调用参数的一部分）。 通过单击“服务”>“PDF生成器”>“Adobe PDF设置”，可以在管理控制台中配置“Adobe PDF设置”。 这些设置仅适用于基于PDFMaker的转换。
 
 **安全设置：** 要应用于转换作业的预配置安全设置的名称（如果这些设置未指定为API调用参数的一部分）。 通过单击“服务”>“PDF生成器”>“安全设置”，在管理控制台中配置安全设置。
 
 **文件类型设置：** 要应用于转换作业的预配置文件类型设置的名称（如果这些设置未指定为API调用参数的一部分）。 通过单击“服务”>“PDF生成器”>“文件类型设置”，可以在管理控制台中配置文件类型设置。
 
-**使用Acrobat WebCapture（仅限Windows）:** 如果此设置为真，“生成PDF”服务将使用Acrobat X Pro进行所有HTML到PDF转换。 这可以改善由HTML生成的PDF文件的质量，但性能可能略低。 默认值为false。
+**使用AcrobatWebCapture（仅限Windows）:** 如果此设置为真，“生成PDF”服务将使用Acrobat XPro进行所有HTML到PDF转换。 这可以改善由HTML生成的PDF文件的质量，但性能可能略低。 默认值为false。
 
-**使用Acrobat图像转换（仅限Windows）:** 如果此设置为真，“生成PDF”服务将使用Acrobat X Pro进行所有图像到PDF转换。 仅当默认的纯Java转换机制无法成功转换大部分输入图像时，此设置才有用。 默认值为false。
+**使用Acrobat图像转换（仅限Windows）:** 如果此设置为真，“生成PDF”服务将使用Acrobat XPro进行所有图像到PDF的转换。 仅当默认的纯Java转换机制无法成功转换大部分输入图像时，此设置才有用。 默认值为false。
 
-**启用基于Acrobat的AutoCAD转换（仅限Windows）:** 如果此设置为真，“生成PDF”服务将Acrobat X Pro用于所有DWG到PDF的转换。 仅当服务器上未安装AutoCAD或AutoCAD转换机制无法成功转换文件时，此设置才有用。
+**启用基于Acrobat的AutoCAD转换（仅限Windows）:** 如果此设置为真，“生成PDF”服务将使用Acrobat XPro进行所有DWG到PDF的转换。 仅当服务器上未安装AutoCAD或AutoCAD转换机制无法成功转换文件时，此设置才有用。
 
-**查找用户名中禁止的特殊字符的常规表达式（仅限Windows）:** 指定在用户名中显示字符时干扰“导出PDF”和“优化PDF”操作的字符。
+**查找用户名中禁止的特殊字符的常规表达式（仅限Windows）:** 指定在用户名中显示字符时与Export PDF和Optimize PDF操作相干的字符。
 
 **ImageToPDF池大小：** “生成PDF”服务中默认（纯Java）图像到PDF转换器的池大小。 此设置控制“生成PDF”服务可以执行的最大同时图像到PDF转换。 此设置（建议用于单处理器系统）的默认值为3，在多处理器系统上可增加此值。
 
@@ -269,7 +269,7 @@ FTP服务可使用以下设置。
 
 **OCR池大小：** PDF生成器用于OCR的PaperCaptureService的池大小。 此设置（建议用于单处理器系统）的默认值为3，在多处理器系统上可增加此值。 此设置仅在Windows系统上有效。
 
-**用于HTML到PDF转换的回退字体系列：** 当原始HTML中使用的字体对AEM表单服务器不可用时，PDF文档中要使用的字体系列的名称。 如果希望转换使用不可用字体的HTML页面，请指定字体系列。 例如，以区域语言创作的页面可能使用不可用的字体。
+**用于HTML到PDF转换的回退字体系列：** AEM forms服务器不能使用原始HTML中使用的字体时，PDF文档中使用的字体系列的名称。 如果希望转换使用不可用字体的HTML页面，请指定字体系列。 例如，以区域语言创作的页面可能使用不可用的字体。
 
 **如果首次尝试转换失败** ，则原生转换的重试逻辑将控制PDF生成重试:
 
@@ -287,7 +287,7 @@ FTP服务可使用以下设置。
 
 ## 指南ES4实用程序服务设置 {#guides-es4-utilities-service-settings}
 
-创建指南时，某些资源（如指南定义）会嵌入在指南中。 资源也可以作为对存储在本地或AEM表单服务器上的应用程序资源的引用存在。 本指南不包含数据，提交位置和输入的值不适用于所有外部环境。
+创建指南时，某些资源（如指南定义）会嵌入在指南中。 资源也可以作为对存储在本地或AEM forms服务器上的应用程序资源的引用存在。 本指南不包含数据，提交位置和输入的值不适用于所有外部环境。
 
 在大多数情况下，默认的参考线渲染服务足以准备参考线，以便在Workspace或其他外部环境中使用。 (在“服务”视图中，在“工作台”中，默认服务为“参考线（系统）/进程／渲染指南- 1.0”。) 使用“指南实用程 `GuidesUtility`序”服务()，您可以创建一个自定义的过程来渲染指南（如果需要）。
 
@@ -334,7 +334,7 @@ FTP服务可使用以下设置。
 
 macKeySeed值是用于生成安全URL的随机数生成器的种子。 设置此值将使每个群集节点以相同的方式初始化随机数生成器，并有权访问相同的安全URL。 可以对此种子值使用任何随机字符串。
 
-需要刷新安全URL时更改macKeySeed值。 刷新安全URL取决于您的安全策略，与更改服务器主根密码的刷新策略类似。 macSeedValue类似于安全URL的主密码，因为它用于生成新的唯一随机数以用于安全URL生成和检索。
+需要刷新安全URL时更改macKeySeed值。 刷新安全URL取决于您的安全策略，它类似于更改服务器主控根密码的刷新策略。 macSeedValue类似于安全URL的主控密码，因为它用于生成新的唯一随机数以用于安全URL生成和检索。
 
 必须重新启动群集，因为macSeedValue在系统启动时是只读的。 所有节点都需要重新启动才能读取该值，因为它们单独使用它来使用种子值初始化其内部随机数。
 
@@ -392,7 +392,7 @@ LDAP服务提供以下设置。
 
 **初始上下文工厂：** 用作上下文工厂的Java类。 此类用于创建到LDAP服务器的连接。 默认值为com.sun.jndi.ldap.LdapCtxFactory，它适用于大多数LDAP服务器。
 
-**提供者URL:** 用于连接LDAP服务的URL。 值的格式为 `ldap://server name:port`
+**提供者URL:** 用于连接LDAP服务的URL。 The format of the value is `ldap://server name:port`
 
 *服务器名* 是承载LDAP服务器的计算机的名称
 
@@ -410,7 +410,7 @@ LDAP服务提供以下设置。
 
 ## Microsoft SharePoint配置服务设置 {#microsoft-sharepoint-configuration-service-settings}
 
-通过Microsoft SharePoint配置服 `(MSSharePointConfigService)`务，可以指定具有模拟权限的AEM表单用户的凭据。 有关模拟权限的信息，请 [参阅配置Connector for Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)。
+通过Microsoft SharePoint配置服 `(MSSharePointConfigService)`务，可指定具有模拟权限的AEM表单用户的凭据。 有关模拟权限的信息，请 [参阅配置Connector for Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)。
 
 Microsoft SharePoint配置服务提供以下设置：
 
@@ -423,7 +423,7 @@ Microsoft SharePoint配置服务提供以下设置：
 
 **加密：** 指定是否加密存储在移动设备上的数据。
 
-**表单应用程序：** 在移动客户端应用程序中启用表单功能。 选择此选项后，用户可以打开表单并从移动设备启动进程。
+**Forms申请：** 在移动客户端应用程序中启用Forms功能。 选择此选项后，用户可以打开表单并从移动设备启动进程。
 
 **任务应用程序：** 在移动客户端应用程序中启用任务功能。 选择此选项后，用户可以从移动设备访问任务列表和完整任务。
 
@@ -443,7 +443,7 @@ Microsoft SharePoint配置服务提供以下设置：
 
 **黑莓：** 允许BlackBerry设备连接到服务器。
 
-**需要Android Microsoft Exchange ActiveSync:** 指定Microsoft Exchange ActiveSync策略管理器(EAS)是否必须在Android设备上安装并处于活动状态。 选择此选项后，必须在Android设备上实施EAS。 如果未选择此选项，则不执行检查，尽管仍执行其他要求。
+**需要Android Microsoft Exchange ActiveSync:** 指定Microsoft Exchange ActiveSync策略管理器(EA)是否必须在Android设备上安装并处于活动状态。 选择此选项后，必须在Android设备上强制实施EA。 如果未选择此选项，则不执行检查，尽管仍执行其他要求。
 
 **Android最小PIN长度：** Android设备必须具有强制PIN或密码至少为此长度的全局设置。 仅具有指定长度的PIN是不够的。 PIN长度必须由系统强制执行，以便用户以后无法删除或缩短PIN。 默认值为 4。
 
@@ -478,17 +478,17 @@ Microsoft SharePoint配置服务提供以下设置：
 
 PDFG配置服务()提供以下 `PDFGConfigService`设置。
 
-**用户作业选项目录：** 文件系统文件夹的路径，其中c服务写入Acrobat Pro Extended可访问的作业选项文件。 默认值为 [user.home]/Application Data/Adobe/Adobe PDF/Settings。
+**用户作业选项目录：** 文件系统文件夹的路径，其中c服务写入可供Acrobat Pro扩展访问的作业选项文件。 默认值为 [user.home]/Application Data/Adobe/Adobe PDF/设置。
 
-**PS启动目录：** 文件系统文件夹的路径，保存Adobe Acrobat Distiller所需的启动文件。 默认值为 [user.home]/Application Data/Adobe/Adobe PDF/Distiller/Startup。
+**PS启动目录：** 保存Adobe Acrobat·Distiller所需启动文件的文件系统文件夹路径。 默认值为 [user.home]/Application Data/Adobe/Adobe PDF/Distiller/启动。
 
-**PS启动文件：** Adobe Acrobat Distiller所需的启动文件的名称。 默认值为example.ps。
+**PS启动文件：** Adobe Acrobat·Distiller需要的启动文件名称。 默认值为example.ps。
 
 **服务器转换超时：** 生成PDF服务和Distiller服务的最大作业转换超时（以秒为单位）。 此设置限制了在config.xml文件和PDF Generator的管理控制台页面中可以指定的最大转换超时。 默认值为 270。
 
 **服务器全局超时：** 执行PDF转换时，表单服务器会考虑超时限制。 配置超时值以解决问题。
 
-**作业选项前缀：** 生成PDF服务用来在它临时创建的供Acrobat Distiller使用的作业选项文件前附加短字符串的前缀。 默认值为pdfg。
+**作业选项前缀：** 生成PDF服务用来在它临时创建以供Acrobat·Distiller使用的作业选项文件前附加短字符串的前缀。 默认值为pdfg。
 
 **非Unicode应用程序：** 以逗号分隔的应用程序名称列表，它们已知不能使用Unicode。 此列表预填充了多个应用程序的名称，在PDF Generator中为这些应用程序预配置了支持。 如果选择通过其他无法使用Unicode的第三方应用程序添加对PDF转换的支持，则必须将这些支持添加到此列表。 默认值为Autocad、Excel、PowerPoint、Project、Publisher、Visio、Word、WordPerfect。
 
@@ -508,7 +508,7 @@ PDFG清除扫描秒数的默认值 `43200` 为（12小时）。 作业过期秒�
 
 ## 表单工作流数据服务服务设置 {#forms-workflow-data-services-service-settings}
 
-以下服务扩展了Data Services并公开了Workspace用来与服务器通话的组件。 除非Adobe支持部门指示您这样做，否则请勿更改这些服务的配置选项。 这些服务并非用于直接访问：
+以下服务扩展了Data Services并公开了Workspace用来与服务器通话的组件。 除非Adobe支持指示您更改这些服务的配置选项。 这些服务并非用于直接访问：
 
 * `ProcessManagementLcdsAttachmentService`
 * `ProcessManagementLcdsPropertyService`
@@ -516,17 +516,17 @@ PDFG清除扫描秒数的默认值 `43200` 为（12小时）。 作业过期秒�
 
 ## 远程处理服务设置 {#remoting-service-settings}
 
-大多数服务都进行了配置，这样您就可以通过（AEM表单已弃用）AEM表单远程处理来访问它们。 有关（AEM表单已弃用）AEM表单远程处理的信息，请参 [阅AEM表单编程](https://adobe.com/go/learn_aemforms_programming_63)。
+大多数服务都经过配置，因此您可以通过(AEM forms已弃用)AEM forms Remoting访问它们。 有关(AEM表单已弃用)AEM表单远程处理的信息，请参 [阅使用AEM表单编程](https://adobe.com/go/learn_aemforms_programming_63)。
 
 远程处理服务提供以下设置。
 
-**Flex客户端身份验证方法：** 确定当被调用的服务启用安全性、被调用的操作不支持匿名调用，并且客户端传入无或无效凭据时，服务器返回给客户端的响应类型。 从“自定义”或“基本”中进行选择。 默认值为“基本”。
+**Flex客户端认证方法：** 确定当被调用的服务启用安全性、被调用的操作不支持匿名调用，并且客户端传入无或无效凭据时，服务器返回给客户端的响应类型。 从“自定义”或“基本”中进行选择。 默认值为“基本”。
 
-**允许序列化不可序列化类：** 大多数AEM表单端点只允许将可序列化类用于调用。 在旧版本中，远程处理端点允许从基于Flex的客户端调用不可序列化类。 为防止APS11-15中描述的安全漏洞，此漏洞已更改。 如果要继续将非可序列化类与Flex Remoting端点一起使用，请选中此复选框。
+**允许序列化不可序列化类：** 大多数AEM表单端点只允许使用可序列化类进行调用。 在旧版本中，远程处理端点允许从基于Flex的客户端调用不可序列化类。 为防止APS11-15中描述的安全漏洞，此漏洞已更改。 如果要继续将非可序列化类与Flex远程处理端点一起使用，请选中此复选框。
 
 ## 存储库服务设置 {#repository-service-settings}
 
-存储库服务( `RepositoryService`)为AEM表单提供资源存储和管理服务。 开发人员创建应用程序时，可以在存储库中而不是文件系统中部署资产。 资产可以包括任何类型的附属品，包括XML表单、PDF表单（包括Acrobat表单）、表单片段、图像、用户档案、策略、SWF文件、DDX文件、XML模式、WSDL文件和测试数据。
+存储库服务( `RepositoryService`)为AEM表单提供资源存储和管理服务。 开发人员创建应用程序时，可以在存储库中而不是文件系统中部署资产。 资产可以包括任何类型的附属品，包括XML表单、PDF forms(包括Acrobat表单)、表单片段、图像、用户档案、策略、SWF文件、DDX文件、XML模式、WSDL文件和测试数据。
 
 您可以使用AEM表单中包含的默认存储库，或使用第三方存储库（EMC Documentum Content Server、IBM FileNet Content Manager或IBM Content Manager）。
 
@@ -538,19 +538,19 @@ PDFG清除扫描秒数的默认值 `43200` 为（12小时）。 作业过期秒�
 
 ## 签名服务设置 {#signature-service-settings}
 
-签名服务( `SignatureService`)使您的组织能够保护其分发和接收的Adobe PDF文档的安全性和隐私。 此服务使用数字签名和认证来确保文档不被更改。 更改文档会破坏其签名。 由于安全功能被应用于文档本身，因此文档在整个生命周期内都保持安全并受到控制； 防火墙之外、离线下载时以及提交回您的组织时。
+签名服务( `SignatureService`)使您的组织能够保护其分发和接收的Adobe PDF文档的安全和隐私。 此服务使用数字签名和认证来确保文档不被更改。 更改文档会破坏其签名。 由于安全功能被应用于文档本身，因此文档在整个生命周期内都保持安全并受到控制； 防火墙之外、离线下载时以及提交回您的组织时。
 
 签名服务提供以下设置。
 
-**远程HSM SPI服务的名称：** 此选项用于在远程计算机上安装HSM时使用。 当AEM表单安装在64位Windows上且您使用HSM设备进行签名时，请指定此选项。
+**远程HSM SPI服务的名称：** 此选项用于在远程计算机上安装HSM时使用。 当AEM表单安装在64位Windows上并且您使用HSM设备进行签名时，请指定此选项。
 
-**远程HSM Web服务的URL:** 在64位Windows上安装AEM表单并且您使用HSM设备进行签名时，请指定此选项。
+**远程HSM Web服务的URL:** 当AEM表单安装在64位Windows上并且您使用HSM设备进行签名时，请指定此选项。
 
 **包含表单加载更改的认证：** 选择此选项后，除XFA模板外，还将验证XFA表单状态。 请注意，启用此选项可能会对性能产生负面影响。 默认值为true。
 
 **执行文档JavaScript脚本：** 指定在签名操作期间是否执行文档JavaScript脚本。 默认值为false。
 
-**处理与Acrobat 9兼容的文档:** 指定是否启用Acrobat 9兼容性。 例如，选择此选项后，动态PDF中的“可见认证”将启用。 默认值为false。
+**具有Acrobat 9兼容性的流程文档:** 指定是否启用Acrobat 9兼容性。 例如，选择此选项后，动态PDF中的“可见认证”将启用。 默认值为false。
 
 **签名时嵌入吊销信息：** 指定在签署PDF文档时是否嵌入吊销信息。 默认值为false。
 
@@ -560,9 +560,9 @@ PDFG清除扫描秒数的默认值 `43200` 为（12小时）。 作业过期秒�
 
 **吊销检查顺序：** 指定通过证书撤销列表(CRL)和联机证书状态协议(OCSP)机制进行检查时的撤销检查顺序。 默认值为OCSPFirst。
 
-**吊销存档信息的最大大小：** 吊销存档信息的最大大小（以千字节为单位）。 AEM表单会尝试在不超过限制的情况下存储尽可能多的吊销信息。 默认值为10 KB。
+**吊销存档信息的最大大小：** 吊销存档信息的最大大小（以千字节为单位）。 AEM表单尝试在不超过限制的情况下存储尽可能多的吊销信息。 默认值为10 KB。
 
-**支持从Adobe产品的PreRelease构建创建的签名：** 选择此选项后，使用Adobe产品预发行版创建的签名将正确验证。 默认值为false。
+**支持从Adobe产品的PreRelease构建创建的签名：** 选择此选项后，使用Adobe产品的预发行版创建的签名将正确验证。 默认值为false。
 
 **验证时间选项：** 指定签署方证书的验证时间。 默认值为Secure Time Else Current Time。
 
@@ -570,7 +570,7 @@ PDFG清除扫描秒数的默认值 `43200` 为（12小时）。 作业过期秒�
 
 **使用存储在文档中的验证信息验证签名：** 选择此选项后，将使用嵌入到文档中的验证信息（包括吊销和时间戳信息）来验证签名。 默认值为true。
 
-**允许的最大嵌套验证会话数：** 允许的最大嵌套验证会话数。 当OCSP或CRL证书设置不正确时，AEM表单使用此值可防止验证OCSP或CRL签名者证书时出现无限循环。 默认值为 10。
+**允许的最大嵌套验证会话数：** 允许的最大嵌套验证会话数。 AEM表单使用此值防止在OCSP或CRL证书设置不正确时验证OCSP或CRL签名者证书时出现无限循环。 默认值为 10。
 
 **用于验证的最大时钟偏斜：** 签名时间在验证时间之后的最长时间（以分钟为单位）。 如果时钟偏差大于此值，则签名将无效。 默认值为65分钟。
 
@@ -743,7 +743,7 @@ PDFG清除扫描秒数的默认值 `43200` 为（12小时）。 作业过期秒�
 
 **失败时保留：** 如果为true，则失败时原始文件将保留在失败文件夹中。
 
-**节流：** 选择此选项后，将限制AEM表单在任何给定时间处理的已监视文件夹作业数。 “批量大小”值确定最大作业数（请参阅关于限制）。
+**节流：** 选择此选项后，将限制AEM表单在任何给定时间处理的监视文件夹作业数。 “批量大小”值确定最大作业数（请参阅关于限制）。
 
 ## Web服务设置 {#web-service-service-settings}
 
@@ -832,9 +832,9 @@ XSLT转换服务可使用以下设置。
    * **DELETE_VERSION_PERM:** 删除服务的某个版本
    * **MODIFY_VERSION_PERM:** 修改服务的版本
    * **READ_PERM:** 视图服务
-   * **PROCESS_OWNER_PERM:** 供将来版本的AEM表单中使用。 请勿使用此权限。
-   * **SERVICE_MANAGER_PERM:** 供将来版本的AEM表单中使用。 请勿使用此权限。
-   * **SERVICE_AGENT_PERM:** 供将来版本的AEM表单中使用。 请勿使用此权限。
+   * **PROCESS_OWNER_PERM:** 用于AEM表单的未来版本。 请勿使用此权限。
+   * **SERVICE_MANAGER_PERM:** 用于AEM表单的未来版本。 请勿使用此权限。
+   * **SERVICE_AGENT_PERM:** 用于AEM表单的未来版本。 请勿使用此权限。
 
 1. 单击添加。
 

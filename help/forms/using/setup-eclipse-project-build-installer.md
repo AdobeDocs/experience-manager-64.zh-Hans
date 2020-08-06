@@ -1,8 +1,8 @@
 ---
 title: 构建AEM FormsAndroid应用程序
 seo-title: 构建AEM FormsAndroid应用程序
-description: 设置Android Studio项目和为AndroidAEM Forms应用程序构建。apk文件的步骤
-seo-description: 设置Android Studio项目和为AndroidAEM Forms应用程序构建。apk文件的步骤
+description: 设置Android Studio项目和为Android的AEM Forms应用程序构建。apk文件的步骤
+seo-description: 设置Android Studio项目和为Android的AEM Forms应用程序构建。apk文件的步骤
 uuid: 2e140aaf-5be5-4d5d-9941-9d1f4bf2debd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 构建AEM FormsAndroid应用程序 {#build-the-aem-forms-android-app}
 
-按照建议的序列执行以下步骤，为AEM Forms构建Android应用程序。
+在建议的序列中执行以下步骤，为AEM Forms构建Android应用程序。
 
 1. [下载AEM Forms应用程序源代码包](#download-android-zip)
 1. [设置环境变量](#set-environment-variable-android)
@@ -31,10 +31,10 @@ AEM Forms应用程序源代码包是指存 `adobe-lc-mobileworkspace-src-<versio
 
 请执行以下步骤下载文 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 件：
 
-1. 开放 [软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID登录软件分发。
-1. 点按 **[!UICONTROL 标题]** 菜单中可用的Adobe Experience Manager。
+1. 开放 [软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID才能登录软件分发。
+1. 点按 **[!UICONTROL 标题]** 菜单中提供的Adobe Experience Manager。
 1. 在过滤器 **[!UICONTROL 部分]** :
-   1. 从“ **[!UICONTROL 解决方]** 案 **[!UICONTROL ”下]** 拉列表中选择“表单”。
+   1. 从“ **[!UICONTROL 解决方]** 案 **[!UICONTROL ”下拉]** 列表中选择Forms。
    2. 选择包的版本和类型。 您还可以使用“搜 **[!UICONTROL 索下载]** ”选项筛选结果。
 1. 点按适用于您的操作系统的包名称，选择“ **[!UICONTROL 接受EULA条款]**”，然后点 **[!UICONTROL 按下载]**。
 1. 打开 [包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) ，然后单 **[!UICONTROL 击“上传包]** ”以上传包。
@@ -48,7 +48,7 @@ AEM Forms应用程序源代码包是指存 `adobe-lc-mobileworkspace-src-<versio
 
 ## 设置环境变量 {#set-environment-variable-android}
 
-在开始环境应用程序的构建过程之前，请设置以下AEM Forms变量：
+在开始AEM Forms应用程序的构建过程之前，请设置以下环境变量：
 
 * 将JAVA_HOME环境变量设置为本地文件系统中JDK软件的位置。 例如，C:\Program Files\Java\jdk1.8.0_181
 * 为Android `ANDROID_SDK_ROOT` 将系统环境变量设置为SDK位置。 例如，C:\Users\username\AppData\Local\Android\Sdk
@@ -56,14 +56,14 @@ AEM Forms应用程序源代码包是指存 `adobe-lc-mobileworkspace-src-<versio
 
 ## 构建标准AEM Forms应用程序 {#set-up-the-xcode-project}
 
-在本地文件系统上保存adobe-lc-mobileworkspace-src-&lt;version>.zip文件并设置环境变量后，使用以下任意选项构建标准AEM FormsAndroid应用程序：
+在本地文件系统上保存adobe-lc-mobileworkspace-src-&lt;version>.zip文件并设置环境变量后，请使用以下任意选项构建标准的AEM FormsAndroid应用程序：
 
 * [使用Android Studio构建AEM Forms应用程序](#using-android-studio)
 * [使用Android Studio生成。apk文件](#generate-apk-android-studio)
 
 ### 使用Android Studio构建AEM Forms应用程序 {#using-android-studio}
 
-请执行以下步骤以使用Android Studio构建AEM Forms应用程序：
+执行以下步骤以使用Android Studio构建AEM Forms应用程序：
 
 1. 在您的计算机上启动Android Studio应用程序。
 1. 单击 **打开现有Android Studio项目**。 如果打开现有项目的对话框不自动显示，请选择“文 **件** ”>“ **打开”**。

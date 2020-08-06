@@ -1,5 +1,5 @@
 ---
-title: 中的数字版权管理 [!DNL Adobe Experience Manager Assets]。
+title: Digital Rights Management [!DNL Adobe Experience Manager Assets]。
 description: 了解如何在中管理授权资产的资产到期状态和信息 [!DNL Experience Manager]。
 contentOwner: AG
 translation-type: tm+mt
@@ -89,7 +89,7 @@ ht-degree: 6%
 To enable the [!DNL Assets] console to display the referencing compound assets along with the expired subassets, configure an **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuration Manager.
 
 1. 打开 [!DNL Experience Manager] Configuration Manager。
-1. 选择 **[!UICONTROL Adobe CQ DAM到期通知]**。 默认情况下， **[!UICONTROL 系统会选择]** “基于时间的调度程序”，这将计划作业，以在特定时间检查资产是否已过期子资产。 作业完成后，已过期的子资产和引用的资产会在搜索结果中显示为过期。
+1. 选择 **[!UICONTROL Adobe CQDAM到期通知]**。 默认情况下， **[!UICONTROL 系统会选择]** “基于时间的调度程序”，这将计划作业，以在特定时间检查资产是否已过期子资产。 作业完成后，已过期的子资产和引用的资产会在搜索结果中显示为过期。
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
@@ -114,7 +114,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. 单击 **[!UICONTROL 工具栏]** 中的发布。 如果工具栏上未显示 **发布** ，请单击工 **[!UICONTROL 具栏上的]** 更多 **[!UICONTROL ，然后找到]** 发布选项。
+1. Click **[!UICONTROL Publish]** from the toolbar. 如果工具栏上未显示 **发布** ，请单击工 **[!UICONTROL 具栏上的]** 更多 **[!UICONTROL ，然后找到]** 发布选项。
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -165,7 +165,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-## Adobe Cloud中的数字版权管理 [!DNL Assets] {#digital-rights-management-in-assets-1}
+## Digital Rights Management [!DNL Assets] {#digital-rights-management-in-assets-1}
 
 此功能强制您接受许可协议，然后您才能从下载许可资产 [!DNL Adobe Experience Manager Assets]。
 
@@ -182,7 +182,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 >
 >已弃用 `/etc/dam/drm/licenses` 用于在早期版本中存储许可证 [!DNL Experience Manager] 的位置。
 >
->如果您创建或修改许可证页面，或从以前的版本移植 [!DNL Experience Manager] 这些页面，Adobe建议您将它们存储在或 `/apps/settings/dam/drm/licenses` 下面 `/conf/&ast;/settings/dam/drm/licenses`。
+>如果您创建或修改许可证页面，或从以前的版本移 [!DNL Experience Manager] 植这些页面，Adobe建议您将它们存储在或 `/apps/settings/dam/drm/licenses` 下面 `/conf/&ast;/settings/dam/drm/licenses`。
 
 ### 下载受DRM保护的资源 {#downloading-drm-assets}
 

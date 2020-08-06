@@ -1,8 +1,8 @@
 ---
 title: 示例ContextHub存储候选项
 seo-title: 示例ContextHub存储候选项
-description: ContextHub提供了几个可在解决方案中使用的样本存储候选
-seo-description: ContextHub提供了几个可在解决方案中使用的样本存储候选
+description: ContextHub提供了几个可在解决方案中使用的样本存储候选项
+seo-description: ContextHub提供了几个可在解决方案中使用的样本存储候选项
 uuid: feccd813-6077-4e87-a96e-d451114e5527
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
 
 ContextHub提供了几个可在解决方案中使用的样本存储候选。 为每个示例提供以下信息：
 
-* 从何处查找源代码，以便您打开它用于学习目的。
+* 在何处可以找到源代码，以便您打开它进行学习。
 * 如何配置从应用商店创建的商店。
 * 存储数据的结构，以便您能够访问它。
 
@@ -27,7 +30,7 @@ ContextHub提供了几个可在解决方案中使用的样本存储候选。 为
 >
 >示例存储候选项作为参考配置提供，以帮助您为项目构建自己的专用配置，因此不应直接使用。
 
-## aem.segmentation Store Candidate范例 {#aem-segmentation-sample-store-candidate}
+## aem.segmentation示例商店候选 {#aem-segmentation-sample-store-candidate}
 
 存储已解析和未解析的ContextHub区段。 自动从ContextHub SegmentManager检索区段。
 
@@ -37,11 +40,11 @@ ContextHub提供了几个可在解决方案中使用的样本存储候选。 为
 
 ### 基本实施 {#base-implementation-segmentation}
 
-aem.segmentation存储候选项扩展 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)。
+aem.segmentation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)。
 
 ### 配置 {#configuration-segmentation}
 
-创建aem.segmentation存储时，无需提供详细配置。 默认配置指定ContextHub区段定义的位置。
+创建aem.segmentation存储时，无需提供详细配置。 默认配置指定ContextHub段定义的位置。
 
 ```xml
 {
@@ -53,9 +56,9 @@ aem.segmentation存储候选项扩展 [`ContextHub.Store.PersistedJSONPStore`](/
 }
 ```
 
-## contexthub.geolocation示例存储候选 {#contexthub-geolocation-sample-store-candidate}
+## contexthub.geolocation示例存储候选项 {#contexthub-geolocation-sample-store-candidate}
 
-contexthub.geolocation范例存储候选者使用Google Maps获取和存储有关客户端位置的信息。
+contexthub.geolocation范例存储候选项使用Google Maps获取和存储有关客户端位置的信息。
 
 ### 源位置 {#source-location-geolocation}
 
@@ -67,7 +70,7 @@ contexthub.geolocation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`
 
 ### 配置 {#configuration-geolocation}
 
-默认配置指定有关Google服务的信息以及初始纬度和经度坐标。
+默认配置指定有关Google服务的信息以及初始经纬度坐标。
 
 ```xml
 {
@@ -109,9 +112,9 @@ contexthub.geolocation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`
 
 >[!NOTE]
 >
->Chrome 50.x中引入的安全策略要求所有与地理位置相关的调用都通过安全连接进行。 因此，如果AEM也在通过https运行，则AEM会强制使用https进行geolocation API调用。 否则，使用http以符合同一源的策略。 有关 [Chrome中更改的更多详细信息](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) ，请参阅此Google博客文章。
+>Chrome 50.x中引入的安全策略要求所有地理位置相关调用都通过安全连接进行。 因此，如果AEM也通过https运行，AEM会强制使用https进行geolocation API调用。 否则，使用http以符合同一来源的策略。 有关 [Chrome中的更改](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) ，请参阅此Google博客文章。
 
-## contexthub.surferinfo范例商店候选 {#contexthub-surferinfo-sample-store-candidate}
+## contexthub.surferinfo示例存储候选项 {#contexthub-surferinfo-sample-store-candidate}
 
 存储有关当前客户端环境的信息，如设备、窗口、浏览器、日期和时间。
 
@@ -121,7 +124,7 @@ contexthub.geolocation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`
 
 ### 基本实施 {#base-implementation-surferinfo}
 
-contexthub.datetime存储候选项扩展 [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)。
+contexthub.datetime存储候选项已扩展 [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)。
 
 ### 配置 {#configuration-surferinfo}
 
@@ -180,7 +183,7 @@ contexthub.datetime存储候选项扩展 [`ContextHub.Store.PersistedStore`](/he
 
 ## granite.emulators示例存储候选项 {#granite-emulators-sample-store-candidate}
 
-granite.emulators范例存储候选存储有关客户端设备的信息。
+granite.emulators示例存储候选存储有关客户端设备的信息。
 
 ### 源位置 {#source-location-emulators}
 
@@ -192,7 +195,7 @@ contexthub.geolocation存储候选扩展 [`ContextHub.Store.PersistedStore`](/he
 
 ### 配置 {#configuration-emulators}
 
-默认配置包括一个名为的数组，该数 `defaultEmulators` 组包含有关不同设备的信息。 创建商店时，请根据需要在“详细信息配置”属性中提供不同的设备配置文件，格式如下例所示：
+默认配置包含一个名为的数 `defaultEmulators` 组，它包含有关不同设备的信息。 创建商店时，请根据需要在“详细配置”属性中提供不同的设备用户档案，格式如下例所示：
 
 ```xml
 {
@@ -239,7 +242,7 @@ contexthub.geolocation存储候选扩展 [`ContextHub.Store.PersistedStore`](/he
 
 ### 数据项 {#data-items-emulators}
 
-存储数据树与以下示例类似：
+存储数据树类似于以下示例：
 
 ```xml
 {
@@ -311,7 +314,7 @@ contexthub.geolocation存储候选扩展 [`ContextHub.Store.PersistedStore`](/he
 }
 ```
 
-## granite.profile Store Candadiate {#granite-profile-sample-store-candidate}
+## granite.用户档案样本存储候选 {#granite-profile-sample-store-candidate}
 
 存储有关当前用户的信息。
 
@@ -321,7 +324,7 @@ contexthub.geolocation存储候选扩展 [`ContextHub.Store.PersistedStore`](/he
 
 ### 基本实施 {#base-implementation-profile}
 
-contexthub.datetime存储候选项扩展 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)。
+contexthub.datetime存储候选项已扩展 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)。
 
 ### 配置 {#configuration-profile}
 

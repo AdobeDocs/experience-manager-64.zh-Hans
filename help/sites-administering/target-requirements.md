@@ -1,6 +1,6 @@
 ---
-title: 与Adobe Target集成的先决条件
-seo-title: 与Adobe Target集成的先决条件
+title: 与Adobe Target整合的先决条件
+seo-title: 与Adobe Target整合的先决条件
 description: 了解与Adobe Target集成的先决条件。
 seo-description: 了解与Adobe Target集成的先决条件。
 uuid: 88be6a97-c964-4e42-a3a2-ed9b2c9ee49e
@@ -18,13 +18,13 @@ ht-degree: 3%
 ---
 
 
-# 与Adobe Target集成的先决条件{#prerequisites-for-integrating-with-adobe-target}
+# 与Adobe Target整合的先决条件{#prerequisites-for-integrating-with-adobe-target}
 
 作为AEM和Adobe Target [集成的一部分](/help/sites-administering/target.md)，您需要向Adobe Target注册，配置复制代理，并在发布节点上安全活动设置。
 
 ## 向Adobe Target注册 {#registering-with-adobe-target}
 
-要将AEM与Adobe Target集成，您必须拥有有效的Adobe Target帐户。 此帐户至少必须具有**审批者**级别权限。 注册Adobe Target时，您会收到客户代码。 您需要客户端代码以及Adobe Target登录名和口令才能将AEM连接到Adobe Target。
+要将AEM与Adobe Target集成，您必须拥有有效的Adobe Target帐户。 此帐户至少必须具有**审批者**级别权限。 当你向Adobe Target注册时，你会收到一个客户代码。 您需要客户端代码和Adobe Target登录名和密码才能将AEM连接到Adobe Target。
 
 客户代码在调用Adobe Target服务器时标识Adobe Target客户帐户。
 
@@ -37,9 +37,9 @@ ht-degree: 3%
 
 ## 启用目标复制代理 {#enabling-the-target-replication-agent}
 
-必须在创作实 [例上启用](/help/sites-deploying/replication.md) “测试和目标”复制代理。 请注意，如果您使用nosamplecontent运行模式安装AEM, [则此复](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) 制代理在默认情况下不启用。 有关保护生产环境的更多信息，请参阅安 [全核对清单](/help/sites-administering/security-checklist.md)。
+必须在创作实 [例上启用](/help/sites-deploying/replication.md) “测试和目标”复制代理。 请注意，如果您使用nosamplecontent运行模式安装AEM，则 [默认情况下](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) 不启用此复制代理。 有关保护生产环境的更多信息，请参阅安 [全核对清单](/help/sites-administering/security-checklist.md)。
 
-1. 在AEM主页中，单击或点按 **工具** > **部署** > **复制**。
+1. 在AEM主页上，单击或点按 **工具** > **部署** > **复制**。
 1. 单击或点按作 **者上的代理**。
 1. 单击或点按测 **试和目标(测试和目标)复** 制代理 **，然后单击或点按**&#x200B;编辑。
 1. 选择“启用”选项，然后单击或点 **按确定**。
@@ -66,9 +66,9 @@ cq: **ActivitySettings节点** ，在CRXDE lite的jcr:content节点 `/content/ca
 
 ## 配置AEM externalizer {#configuring-the-aem-externalizer}
 
-在Adobe Target中编辑活动时，除非您更改AEM作 **者节** 点上的URL，否则URL将指向localhost。
+在Adobe Target编辑活动时，URL将指向 **localhost** ，除非您更改AEM作者节点上的URL。
 
-要配置AEM externalizer:
+配置AEM externalizer:
 
 1. 导航到位于https://&lt; **server>:&lt;port>/system/console/configMgr的OSGi Web控制台。**
 1. 查 **找Day CQ Link Externalizer** ，然后输入创作节点的域。

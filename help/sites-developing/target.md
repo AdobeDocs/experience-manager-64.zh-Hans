@@ -22,16 +22,16 @@ ht-degree: 0%
 
 本节介绍有关开发组件以用于内容定位的主题。
 
-* 有关连接Adobe Target的信息，请参 [阅与Adobe Target集成](/help/sites-administering/target.md)。
+* 有关与Adobe Target连接的信息，请参 [阅与Adobe Target集成](/help/sites-administering/target.md)。
 * 有关创作目标内容的信息，请参阅 [使用定位模式创作目标内容](/help/sites-authoring/content-targeting-touch.md)。
 
 >[!NOTE]
 >
->在AEM作者中目标组件时，该组件会向Adobe Target发出一系列服务器端调用，以注册活动、设置优惠和检索Adobe Target段（如果已配置）。 AEM发布到Adobe Target时不会进行任何服务器端调用。
+>当您在AEM作者中目标组件时，该组件会向Adobe Target发出一系列服务器端调用，以注册活动、设置优惠和检索Adobe Target区段（如果已配置）。 AEM发布到Adobe Target时不会进行任何服务器端调用。
 
-## 在页面上启用Adobe Target定位 {#enabling-targeting-with-adobe-target-on-your-pages}
+## 在您的页面上启用Adobe Target定位 {#enabling-targeting-with-adobe-target-on-your-pages}
 
-要在页面中使用与Adobe Target交互的目标组件，请在元素中包含特定的客户端 `<head>` 代码。
+要在与Adobe Target交互的页面中使用目标组件，请在元素中包含特定的客户端 `<head>` 代码。
 
 ### 头部部分 {#the-head-section}
 
@@ -197,17 +197,17 @@ JSP会添加所需的分析javascript对象和对客户端javascript库的引用
 
 用于创建mbox的默认mbox.js文件位于 `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`。 要使用客户mbox.js文件，请将该文件添加到目标云配置。 要添加文件，文 `mbox.js` 件系统中必须有该文件。
 
-例如，如果要使用Marketing Cloud [ID服务](https://docs.adobe.com/content/help/en/id-service/using/home.html) ，您需要下载mbox.js，以便它包含基于租户的变量 `imsOrgID` 的正确值。 此变量是与Marketing Cloud ID服务集成时必需的。 有关信息，请 [参阅AdobeAnalytics作为Adobe Target的](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) 报告来源 [,](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html)然后再进行实施。
+例如，如果要使用 [Marketing CloudID服务](https://docs.adobe.com/content/help/en/id-service/using/home.html) ，则需要下载mbox.js，以便它包含基于租户的变量 `imsOrgID` 的正确值。 此变量是与Marketing CloudID服务集成时必需的。 有关信息，请参 [阅Adobe Analytics作为Adobe Target的报告](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) 来源并在您实施之前 [](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html)。
 
 >[!NOTE]
 >
 >如果在目标配置中定义了自定义mbox，则每个人都必须对发布服务器上的 **/etc/cloudservices** 具有读取访问权限。 如果没有此访问权限，则在发布网站上加载mbox.js文件将导致404错误。
 
-1. 转到“CQ工 **具** ”页面并选 **择Cloud Service**。 ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. 转到“CQ工 **具** ”页面并选 **择Cloud Services**。 ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. 在树中，选择Adobe Target，在配置列表中，多次单击您的目标配置。
 1. 在配置页面上，单击编辑。
 1. 对于“自定义mbox.js”属性，单击“浏览”并选择文件。
-1. 要应用更改，请输入Adobe Target帐户的口令，单击“重新连接到目标”，然后在连接成功时单击“确定”。 然后，在“编辑组件”对话框中单击“确定”。
+1. 要应用更改，请输入您的Adobe Target帐户的口令，单击“重新连接到目标”，然后在连接成功时单击“确定”。 然后，在“编辑组件”对话框中单击“确定”。
 
 您的目标配置包含一个自定义mbox.js [文件，页面标题部分中所需的代码会将该文件添加到客户端库框架](/help/sites-developing/target.md#the-head-section) ，而不是对testandtarget.js库的引用。
 
@@ -231,9 +231,9 @@ JSP会添加所需的分析javascript对象和对客户端javascript库的引用
 
 >[!NOTE]
 >
->如果您未使用DTM，则向Adobe Target发送订单确认。
+>如果您没有使用DTM，请向Adobe Target发送订单确认。
 
-要跟踪网站性能，请从订单确认页面向Adobe Target发送采购信息。 (请参 [阅Adobe Target文档中](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) ，创建orderConfirmPage Mbox。) Adobe Target在MBox名称为时将mbox数据识别为订单确认数 `orderConfirmPage` 据，并使用以下特定参数名称：
+要跟踪网站性能，请从订单确认页面向Adobe Target发送购买信息。 (请参 [阅Adobe Target文档中](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) ，创建orderConfirmPage Mbox。) Adobe Target将mbox数据识别为订单确认数据，当您的MBox名称 `orderConfirmPage` 为，并使用以下特定参数名称：
 
 * productPurchasedId: 标识所购买产品的列表ID。
 * orderId: 订单的ID。
@@ -252,7 +252,7 @@ JSP会添加所需的分析javascript对象和对客户端javascript库的引用
 
 每个顺序的每个参数的值都不同。 因此，您需要一个组件，它根据购买的属性生成代码。 CQ eCommerce [Integration Framework](/help/sites-administering/ecommerce.md) 使您能够与产品目录集成并实施购物车和结帐页面。
 
-访客购买产品时，Geometrixx Outdoors示例显示以下确认页：
+Geometrixx Outdoors示例在访客购买产品时显示以下确认页：
 
 ![chlimage_1-174](assets/chlimage_1-175.png)
 
@@ -322,7 +322,7 @@ String orderID = session.getOrderId();
 目标.jsp脚本访问页面属性以确定要用于该组件的定位引擎，然后执行相应的脚本：
 
 * Adobe Target: `/libs/cq/personalization/components/target/engine_tnt.jsp`
-* [Adobe TargetAT.JS](/help/sites-administering/target.md): `/libs/cq/personalization/components/target/engine_atjs.jsp`
+* [Adobe Target与AT.JS](/help/sites-administering/target.md): `/libs/cq/personalization/components/target/engine_atjs.jsp`
 * [Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md): `/libs/cq/personalization/components/target/engine_cq_campaign.jsp`
 * 客户端规则/ContextHub: `/libs/cq/personalization/components/target/engine_cq.jsp`
 
@@ -332,9 +332,9 @@ String orderID = session.getOrderId();
 >
 >默认情况下，mbox是隐藏的- mboxDefault类决定此行为。 隐藏mbox可确保访客在交换默认内容之前不会看到该内容； 但是，隐藏mbox会影响感知到的性能。
 
-当Adobe Target驱动内容定位时，engine_tnt.jsp脚本将创建包含目标体验内容的mbox:
+当Adobe Target推动内容定位时，engine_tnt.jsp脚本将创建包含目标体验内容的mbox:
 
-* 根据 `div` Adobe TargetAPI的 `mboxDefault`要求，添加类的元素。
+* 根据 `div` Adobe TargetAPI的要 `mboxDefault`求，添加类的元素。
 
 * 在元素中添加mbox内容（目标体验的内容）。 `div`
 

@@ -9,13 +9,16 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 4%
 
 ---
 
 
 # 自适应表单关键字 {#adaptive-forms-keywords}
 
-自适应表单关键字是预定义的保留标识符，对自适应表单具有特殊含义。 您不能将这些关键字用作自适应表单中的标识符。 下表列出了作为自适应表单保留标识符的所有关键字。
+自适应表单关键字是预定义的保留标识符，对于自适应表单具有特殊意义。 您不能将这些关键字用作自适应表单中的标识符。 下表列表了作为自适应表单保留标识符的所有关键字。
 
 <table> 
  <tbody>
@@ -80,7 +83,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
    <td><p>setAttribute</p> </td> 
   </tr>
   <tr>
-   <td><p>formattedValue</p> </td> 
+   <td><p>格式化值</p> </td> 
    <td><p>xdpRef</p> </td> 
    <td><p>getGuideProp</p> </td> 
   </tr>
@@ -180,7 +183,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
    <td><p>enabledExp</p> </td> 
   </tr>
   <tr>
-   <td><p>execCompletion</p> </td> 
+   <td><p>执行完成</p> </td> 
    <td><p>sectionId</p> </td> 
    <td><p>setFocus</p> </td> 
   </tr>
@@ -220,7 +223,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
    <td><p>sectionFields</p> </td> 
   </tr>
   <tr>
-   <td><p>获取的服务</p> </td> 
+   <td><p>已获取的FromService</p> </td> 
    <td><p>repeatablePanelId</p> </td> 
    <td><p>getSelectedIndex</p> </td> 
   </tr>

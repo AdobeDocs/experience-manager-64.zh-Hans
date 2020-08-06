@@ -33,19 +33,19 @@ AEM随SAML身份验 [证处理](http://saml.xml.org/saml-specifications) 程序�
 
 >[!NOTE]
 >
->查 [看AEM和SAML集成的演示](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)。
+>请参 [阅AEM和SAML集成的演示](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)。
 >
 >要阅读端到端社区文章，请单击： [将SAML与Adobe Experience Manager集成](https://helpx.adobe.com/experience-manager/using/aem63_saml.html)。
 
 ## 配置SAML 2.0身份验证处理程序 {#configuring-the-saml-authentication-handler}
 
-Web控 [制台](/help/sites-deploying/configuring-osgi.md) ，提供对称为Adobe Granite SAML 2.0身份验证处理程 [序配置的访问权](http://saml.xml.org/saml-specifications)****。 可以设置以下属性。
+Web控 [制台](/help/sites-deploying/configuring-osgi.md) ，提供对SAML [2.0身份验证处理程序配置(称为](http://saml.xml.org/saml-specifications) AdobeGranite SAML 2.0身份验证处理程序)的访问 ****。 可以设置以下属性。
 
 >[!NOTE]
 >
 >默认情况下，SAML 2.0身份验证处理程序处于禁用状态。 要启用该处理函数，必须至少设置以下属性之一：
 >
->* 标识提供者POST URL。
+>* 标识提供者POSTURL。
 >* 服务提供商实体ID。
 
 >
@@ -60,7 +60,7 @@ Web控 [制台](/help/sites-deploying/configuring-osgi.md) ，提供对称为Ado
 
 **服务排名** OSGi框架服务排名值用于指示调用此服务的顺序。 这是一个整数值，其中值越高，表示优先级越高。
 
-**IDP证书别名** 全局信任存储中IdP证书的别名。 如果此属性为空，则会禁用身份验证处理程序。 有关如何设置IdP证书，请参阅下面的“将IdP证书添加到AEM TrustStore”一章。
+**IDP证书别名** 全局信任存储中IdP证书的别名。 如果此属性为空，则会禁用身份验证处理程序。 请参见下面的“将IdP证书添加到AEM TrustStore”一章，了解如何设置它。
 
 **SAML身份验证** 请求应发送到的IDP的标识提供者URL。 如果此属性为空，则会禁用身份验证处理程序。
 

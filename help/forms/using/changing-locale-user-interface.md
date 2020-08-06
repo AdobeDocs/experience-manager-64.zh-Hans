@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # 更改AEM Forms工作区用户界面的区域设置 {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-AEM Forms Workspace为英语、法语、德语和日语提供开箱即用支持。 它还提供将AEM Forms Workspace用户界面本地化为任何其他语言的功能。
+AEM Forms工作区为英语、法语、德语和日语提供开箱即用支持。 它还提供将AEM Forms工作区用户界面本地化为任何其他语言的功能。
 
-要将AEM Forms Workspace用户界面本地化为您选择的语言：
+要将AEM Forms工作区用户界面本地化为您选择的语言：
 
 * 本地化AEM Forms工作区的文本。
 * 本地化折叠的类别、队列和流程。
@@ -32,13 +32,13 @@ AEM Forms Workspace为英语、法语、德语和日语提供开箱即用支持�
 
 >[!NOTE]
 >
->要更改AEM Forms工作区的登录屏幕的语言，请参 [阅创建新的登录屏幕](/help/forms/using/creating-new-login-screen.md)。
+>要更改AEM Forms工作区登录屏幕的语言，请参 [阅创建新登录屏幕](/help/forms/using/creating-new-login-screen.md)。
 
 ## 文本本地化 {#localizing-text}
 
 请执行以下步骤，添加对新语言和浏 *览器* 区域设置代码 *的支持*。
 
-1. 登录到CRXDE Lite。
+1. 登录CRXDE Lite。
 
    CRXDE Lite的默认URL为 `https://[server]:[port]/lc/crx/de/index.jsp`。
 
@@ -46,7 +46,7 @@ AEM Forms Workspace为英语、法语、德语和日语提供开箱即用支持�
 1. 将文件从 `translation.json`位置复 `/apps/ws/locales/en-US` 制到位置 `/apps/ws/locales/nw`。
 1. 导航到并 `/apps/ws/locales/nw` 打开以 `translation.json` 进行编辑。 对translation.json文件进行特定于区域设置的更改。
 
-   以下示例包含适用于AEM Forms工作区英语和法语区域设置的translation.json文件。
+   以下示例包含AEM Forms工作区英语和法语区域设置的translation.json文件。
 
    ![translation_json_in_en](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
 
@@ -126,6 +126,7 @@ AEM Forms工作区使用图像显示类别、队列和进程的标题。 您需�
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`
+
    以下示例代码显示如何添加jquery.ui.datepicker-nw.js条目：
 
    ```
@@ -167,6 +168,7 @@ AEM Forms工作区使用图像显示类别、队列和进程的标题。 您需�
 
    * apps\ws\js\runtime\views\searchtemplatedetails.js
    * apps\ws\js\runtime\views\outofoffice.js
+
    更改以下代码以添加新区域设置：
 
    ```

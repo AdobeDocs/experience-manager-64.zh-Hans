@@ -1,8 +1,8 @@
 ---
 title: 云配置
 seo-title: 云配置
-description: 将点播应用程序关联到云配置后，Adobe Experience Manager(AEM)可通过建立双向链接直接与Mobile On-Demand托管项目通信。 可查看本页以了解更多信息。
-seo-description: 将点播应用程序关联到云配置后，Adobe Experience Manager(AEM)可通过建立双向链接直接与Mobile On-Demand托管项目通信。 可查看本页以了解更多信息。
+description: 将点播应用程序与云配置关联后，Adobe Experience Manager(AEM)可通过建立双向链接直接与移动点播托管项目进行通信。 可查看本页以了解更多信息。
+seo-description: 将点播应用程序与云配置关联后，Adobe Experience Manager(AEM)可通过建立双向链接直接与移动点播托管项目进行通信。 可查看本页以了解更多信息。
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 2%
 
 ---
 
@@ -19,23 +22,23 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
 
-将点播应用程序关联到云配置后，Adobe Experience Manager(AEM)可以通过建立双向链接直接与Mobile On-Demand托管项目通信。 通过将应用程序关联到Mobile On-Demand项目，您将能够在AEM中执行内容创建（如文章、横幅和集合），但也可以将该内容提供给Mobile On-Demand。
+将点播应用程序与云配置关联后，Adobe Experience Manager(AEM)可通过建立双向链接直接与移动点播托管项目进行通信。 通过将您的应用程序链接到移动点播项目，您将能够在AEM中创建内容（如文章、横幅和集合），同时将该内容提供给移动点播。
 
-从那里，发布、预览和管理内容成为可能。 您还可以将现有Mobile On-Demand内容导入AEM并执行内容编辑。
+从那里，发布、预览和管理内容变得可能。 您还可以将现有的Mobile On-Demand内容导入AEM并执行内容编辑。
 
 ## 设置云配置 {#setting-up-cloud-configuration}
 
 >[!CAUTION]
 >
->在开始为On-Demand应用程序配置云配置之前，您必须熟悉AEM Mobile配置和配置AEM Mobile On-Demand services客户端。
+>在开始为On-Demand应用程序配置云配置之前，您必须熟悉AEM Mobile配置和配置AEM Mobile On-demand Services客户端。
 >
->有关详细信息， [请参阅管理部分中的设置AEM Mobile On-Demand Services](/help/mobile/aem-mobile-setup.md) 。
+>有关详细信息，请参 [阅管理部分](/help/mobile/aem-mobile-setup.md) 中的设置AEM Mobile On-demand Services。
 
-要配置Mobile On-Demand Cloud Services，请单击应用程序功能板中“管理连接”拼贴右上角 **的顶齿轮** 。
+要配置Mobile On-DemandCloud Services，请从应用程序仪表板中单击“管理连接”拼贴右 **上角** 的顶齿轮。
 
-您应熟悉应用程序仪表板和可用拼贴。 有关更 [多详细信息，请参阅AEM Mobile应用程序控制板](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 。
+您应熟悉应用程序仪表板和可用拼贴。 有关更 [多详细信息](/help/mobile/mobile-apps-ondemand-application-dashboard.md) ，请参阅AEM Mobile应用程序仪表板。
 
 ### 设置指向云配置的链接 {#setting-up-link-to-cloud-configuration}
 
@@ -43,16 +46,16 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 >
 >确保您拥有现有的点播客户端和云配置。
 >
->有关详细信息， [请参阅管理部分中的设置AEM Mobile On-Demand Services](/help/mobile/aem-mobile-setup.md) 。
+>有关详细信息，请参 [阅管理部分](/help/mobile/aem-mobile-setup.md) 中的设置AEM Mobile On-demand Services。
 
-以下步骤介绍了如何设置云配置链接：
+以下步骤介绍了如何设置指向云配置的链接：
 
-1. 从 **Mobile**，选择 **Apps** ，然后从目录中选择Mobile On-Demand应用程序。
-1. 单击“管理连接”拼贴上 **的齿轮图** 标。
+1. 从 **Mobile**，选 **择“应** 用程序”，然后从目录中选择Mobile On-Demand应用程序。
+1. 单击“管理连接”拼贴 **上的齿轮** 图标。
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. 输入现有配置或通过输入配置标题、设 **备Id**&#x200B;和设备令牌 **，创建**&#x200B;新 **配置**。
+1. 输入现有配置，或通过输入配置标题、设 **备Id****和设备令**&#x200B;牌创建新配置 ****。
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 

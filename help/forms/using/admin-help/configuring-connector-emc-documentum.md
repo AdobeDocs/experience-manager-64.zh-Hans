@@ -26,7 +26,7 @@ EMC Documentum的Connector支持AEM表单与EMC Documentum之间的通信。 有
 
 >[!NOTE]
 >
->在早期版本中，资产可以存储在ECM存储库中。 在当前版本中，资产存储在AEM表单本机存储库中，并且已弃用存储库提供程序服务。 在执行AEM表单升级时，将资产从ECM存储库迁移到AEM表单存储库。 有关详细信息，请参阅适用于应用程序服务器的AEM表单升级指南。
+>在早期版本中，资产可以存储在ECM存储库中。 在当前版本中，资产存储在AEM forms本机存储库中，并且已弃用存储库提供程序服务。 将资产从ECM存储库迁移到AEM表单存储库是在您执行升级到AEM表单时完成的。 有关详细信息，请参阅适用于应用程序服务器的AEM表单升级指南。
 
 ## 配置服务器连接 {#configuring-the-server-connection}
 
@@ -108,7 +108,7 @@ Documentum凭据信息用于AEM表单系统上下文。 存储库凭据特定于
 
 需要执行一些手动步骤，以确保Workspace中的“任务队列共享请求”功能与Connector for EMC Documentum一起正常工作。
 
-1. 部署AEM表单并安装Workbench后，请登录Workbench并打开“资源”视图。 您将通过此视图确定QueueSharing.swf文件的位置。
+1. 部署AEM表单并安装Workbench后，登录到Workbench并打开“资源”视图。 您将通过此视图确定QueueSharing.swf文件的位置。
 1. 将QueueSharing.swf文件从“资源”视图拖到Windows桌面或等效位置，具体取决于您的操作系统。
 1. 在管理控制台中，单击“服务”>“EMC Documentum的连接器”>“配置设置”。
 1. 在“存储库服务提供商信息”下，将配置的存储库提供程序更改为EMC Documentum存储库提供程序。

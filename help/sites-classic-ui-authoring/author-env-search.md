@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 85%
 
 ---
 
@@ -29,7 +32,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
-通过搜索面板，您可以在所有网站页面中进行搜索。它包含以下字段和构件：
+通过搜索面板，您可以在所有网站页面中进行搜索。 它包含以下字段和构件：
 
 * **全文**：搜索指定的文本
 * **修改于以下日期之后/之前**：仅搜索在特定日期之间更改过的页面
@@ -42,11 +45,13 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 >
 >* [通配符](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [布尔运算符](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+
    >
    >
 * [正则表达式](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [字段分组](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Boosting](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+
 >
 
 
@@ -75,6 +80,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
    * 定义应替换该词的词
    * 指示搜索是否应区分大小写
    * 指示是否应仅查找所有词（否则，还将查找子字符串）
+
    Clicking **Preview** lists where the term has been found. You can select/clear specific instances to be replaced:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)

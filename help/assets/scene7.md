@@ -1,8 +1,8 @@
 ---
-title: 将Dynamic Media经典功能添加到页面
-seo-title: 将Dynamic Media经典功能添加到页面
-description: 了解如何将Dynamic Media经典功能和组件添加到AEM页面。
-seo-description: 了解如何将Dynamic Media经典功能和组件添加到AEM页面。
+title: 将Dynamic Media Classic功能添加到页面
+seo-title: 将Dynamic Media Classic功能添加到页面
+description: 了解如何将Dynamic Media Classic功能和组件添加到AEM页面。
+seo-description: 了解如何将Dynamic Media Classic功能和组件添加到AEM页面。
 uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
 contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -18,11 +18,11 @@ ht-degree: 25%
 ---
 
 
-# 将Dynamic Media经典功能添加到页面 {#adding-scene-features-to-your-page}
+# 将Dynamic Media Classic功能添加到页面 {#adding-scene-features-to-your-page}
 
-[AdobeDynamic MediaClassic](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) 是一款托管解决方案，用于管理、增强、发布富媒体资产并将富媒体资产交付到Web、移动、电子邮件以及连接Internet的显示屏和印刷品。
+[AdobeDynamic Media](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classic是一种托管解决方案，用于管理、增强、发布富媒体资产并将富媒体资产交付到Web、移动、电子邮件以及连接Internet的显示屏和印刷品。
 
-您可以在各种查看器中视图发布在Dynamic Media经典中的AEM资产：
+您可以在各种查看器中视图在Dynamic Media Classic中发布的AEM资产：
 
 * 缩放
 * 弹出
@@ -30,9 +30,9 @@ ht-degree: 25%
 * 图像模板
 * 图像
 
-您可以将数字资产从AEM直接发布到Dynamic Media经典，也可以将数字资产从Dynamic Media经典发布到AEM。
+您可以将数字资产从AEM直接发布到Dynamic Media Classic，还可以将数字资产从Dynamic Media Classic发布到AEM。
 
-本文档介绍如何将数字资产从AEM发布到Dynamic Media经典，反之亦然。 此外，还详细介绍了各种查看器。有关为Dynamic Media经典配置AEM的信息，请参 [阅将Dynamic Media经典与AEM集成](/help/sites-administering/scene7.md)。
+本文档介绍如何将数字资产从AEM发布到Dynamic Media Classic，反之亦然。 此外，还详细介绍了各种查看器。有关为AEM配置Dynamic Media Classic的信息，请参 [阅将Dynamic Media Classic与AEM集成](/help/sites-administering/scene7.md)。
 
 另请参阅[添加图像映射](image-maps.md)。
 
@@ -42,9 +42,9 @@ For more information on using video components with AEM, see [Video](video.md).
 >
 >If Dynamic Media Classic assets do not display properly, make sure that Dynamic media is [disabled](config-dynamic.md#disabling-dynamic-media) and then refresh the page.
 
-## 从资产手动发布到Dynamic Media经典 {#manually-publishing-to-scene-from-assets}
+## 从资产手动发布到Dynamic Media Classic {#manually-publishing-to-scene-from-assets}
 
-您可以按如下方式将数字资产发布到Dynamic Media经典：
+您可以按如下方式将数字资产发布到Dynamic Media Classic:
 
 * [在经典用户界面中，从“资产”控制台访问](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-from-the-assets-console)
 * [在资产的经典用户界面中](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md#publishing-from-an-asset)
@@ -52,12 +52,12 @@ For more information on using video components with AEM, see [Video](video.md).
 
 >[!NOTE]
 >
->AEM异步发布到Dynamic Media经典。 After you click **[!UICONTROL Publish]**, it may take several seconds for your asset to publish to Dynamic Media Classic.
+>AEM异步发布到Dynamic Media Classic。 After you click **[!UICONTROL Publish]**, it may take several seconds for your asset to publish to Dynamic Media Classic.
 
 
-## Dynamic Media经典组件 {#scene-components}
+## 动态媒体经典组件 {#scene-components}
 
-AEM中提供以下Dynamic Media经典组件：
+AEM中提供以下Dynamic Media Classic组件：
 
 * 缩放
 * 弹出（缩放）
@@ -69,7 +69,7 @@ AEM中提供以下Dynamic Media经典组件：
 >
 >These components are not available by default and need to be selected in **[!UICONTROL Design]** mode before using.
 
-After they are made available in **[!UICONTROL Design]** mode, you can add the components to your page like any other AEM component. 尚未发布到Dynamic Media经典的资产会发布到Dynamic Media经典(如果位于同步文件夹中、页面上或具有Dynamic Media经典云配置)。
+After they are made available in **[!UICONTROL Design]** mode, you can add the components to your page like any other AEM component. 尚未发布到Dynamic Media Classic的资产会发布到Dynamic Media Classic（如果位于同步文件夹、页面或Dynamic Media Classic云配置中）。
 
 >[!NOTE]
 >
@@ -77,34 +77,34 @@ After they are made available in **[!UICONTROL Design]** mode, you can add the c
 
 ### Flash 查看器生命周期终止通知 {#flash-viewers-end-of-life-notice}
 
-自2017年1月31日起，AdobeDynamic Media经典终止了对Flash查看器平台的支持。
+自2017年1月31日起，Adobe动态媒体经典终止了对Flash查看器平台的支持。
 
 有关此项重大变更的更多信息，请参阅 [Flash 查看器生命周期终止常见问题解答](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html)。
 
 ### Adding a Dynamic Media Classic component (Scene7) to a page {#adding-a-scene-component-to-a-page}
 
-向页面添加Dynamic Media经典(Scene7)组件与向任何页面添加组件相同。 Dynamic Media经典组件在以下各节中有详细介绍。
+向页面添加Dynamic Media Classic(Scene7)组件与向任何页面添加组件相同。 Dynamic Media Classic组件在以下各节中有详细介绍。
 
-**要向页面添加Dynamic Media经典(Scene7)组件，请执行以下操作**:
+**要向页面添加Dynamic Media Classic(Scene7)组件，请执行以下操作**:
 
-1. 在AEM中，打开要添加Dynamic Media经典(Scene7)组件的页面。
+1. 在AEM中，打开要添加Dynamic Media Classic(Scene7)组件的页面。
 
-1. 如果没有Dynamic Media经典组件可用，请单 **[!UICONTROL 击]** “设计”模式，点按带有蓝色边框的任何组件，点按父项 **[!UICONTROL 图标]** ，然后点按 **[!UICONTROL 配置图标]** 。 在 **[!UICONTROL Parsys(Design)中]**，选择所有Dynamic Media经典组件以使其可用，然后单击 **[!UICONTROL 确定]**。
+1. 如果没有可用的Dynamic Media Classic组件，请单击 **[!UICONTROL 设计]** 模式，点按带有蓝色边框的任何组件，点按父 **[!UICONTROL 项]** 图标，然后 **[!UICONTROL 单击配置]** 图标。 在 **[!UICONTROL Parsys(Design)中]**，选择所有Dynamic Media Classic组件以使其可用，然后单击 **[!UICONTROL 确定]**。
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
 1. 单击 **[!UICONTROL 编辑]** ，以返回 **[!UICONTROL 编辑模]** 式。
 
-1. 将组件从Sidekick中的Dynamic Media经典组拖动到页面的所需位置。
+1. 将组件从Sidekick中的Dynamic Media Classic组拖动到页面的所需位置。
 
 1. Click the **[!UICONTROL Configuration]** icon to open the component.
 
 1. 根据需要编辑该组件，然后单击&#x200B;**[!UICONTROL 确定]**&#x200B;以保存更改。
-1. 将图像或视频从内容浏览器拖到您添加到页面的Dynamic Media经典组件上。
+1. 将图像或视频从内容浏览器拖动到您添加到页面的Dynamic Media Classic组件上。
 
    >[!NOTE]
    >
-   >仅在触屏UI中，必须将图像或视频拖放到您放置在页面上的Dynamic Media经典组件上。 不支持选择和编辑Dynamic Media经典组件，然后选择资产。
+   >仅在触屏UI中，您必须将图像或视频拖放到您放置在页面上的Dynamic Media Classic组件上。 不支持选择和编辑Dynamic Media Classic组件，然后选择资产。
 
 ### Adding interactive viewing experiences to a responsive site {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
@@ -118,21 +118,21 @@ After they are made available in **[!UICONTROL Design]** mode, you can add the c
 
    >[!NOTE]
    >
-   >如果Dynamic Media经典组件不可用，请 [确保通过设计模式启用它们](/help/sites-authoring/default-components-designmode.md)。
+   >如果Dynamic Media Classic组件不可用，请确 [保通过设计模式启用它们](/help/sites-authoring/default-components-designmode.md)。
 
 1. In a website with the **[!UICONTROL Dynamic Media Classic]** components enabled, drag an **[!UICONTROL Image]** component to the page.
 1. 选择组件，然后点按配置图标。
-1. 在“Dynamic Media **[!UICONTROL 经典设置]** ”选项卡中，调整断点。
+1. 在Dynamic Media **[!UICONTROL Classic设置选项卡中]** ，调整断点。
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
 1. 确认查看器可实现响应式大小调整，并且所有交互已针对台式机、平板电脑和移动设备进行了优化。
 
-### 所有Dynamic Media经典组件的通用设置 {#settings-common-to-all-scene-components}
+### 所有Dynamic Media Classic组件的通用设置 {#settings-common-to-all-scene-components}
 
 Although configuration options vary, the following are common to all [!UICONTROL Dynamic Media Classic] components:
 
-* **[!UICONTROL 文件引]**&#x200B;用浏览到要引用的文件。 文件引用显示资产URL，但不一定是完整的Dynamic Media经典URL（包括URL命令和参数）。 不能在此字段中添加Dynamic Media经典URL命令和参数。 必须使用组件中的相应功能才能添加这些命令和参数。
+* **[!UICONTROL 文件引]**&#x200B;用浏览到要引用的文件。 文件引用显示资产URL，但不一定是完整的Dynamic Media Classic URL（包括URL命令和参数）。 不能在此字段中添加Dynamic Media Classic URL命令和参数。 必须使用组件中的相应功能才能添加这些命令和参数。
 * **[!UICONTROL 宽度]**&#x200B;允许您设置宽度。
 * **[!UICONTROL 高度]**&#x200B;允许您设置高度。
 
@@ -162,7 +162,7 @@ In the HTML5 **[!UICONTROL Flyout]** component, the asset is shown as split scre
 
 ### 图像 {#image}
 
-Dynamic Media经 **[!UICONTROL 典图像]** 组件允许您向图像添加Dynamic Media经典功能，如Dynamic Media经典修饰符、图像预设或查看器预设，以及锐化。 Dynamic Media经 **[!UICONTROL 典图像]** 组件与AEM中具有特殊Dynamic Media经典功能的其他图像组件类似。 In this example, the image has the Dynamic Media Classic URL modifier, **&amp;op_invert=1** applied.
+通过Dynamic Media Classic **[!UICONTROL 图像]** 组件，您可以向图像添加Dynamic Media Classic功能，如Dynamic Media Classic修饰符、图像预设或查看器预设，以及锐化。 Dynamic Media Classic Image组 **[!UICONTROL 件与]** AEM中具有特殊Dynamic Media Classic功能的其他图像组件类似。 In this example, the image has the Dynamic Media Classic URL modifier, **&amp;op_invert=1** applied.
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
@@ -174,7 +174,7 @@ Dynamic Media经 **[!UICONTROL 典图像]** 组件允许您向图像添加Dynami
 
 * **[!UICONTROL 查看器]**&#x200B;预设从下拉菜单中选择现有的查看器预设。 如果未显示您要查找的查看器预设，则可能需要将其显示出来。请参阅[管理查看器预设](/help/assets/managing-viewer-presets.md)。如果您正在使用图像预设，则无法选择查看器预设，反之亦然。
 
-* **[!UICONTROL Dynamic Media经典]**&#x200B;配置选择要用于从SPS获取活动图像预设的Dynamic Media经典配置。
+* **[!UICONTROL Dynamic Media Classic配置]**&#x200B;选择要用于从SPS获取活动图像预设的Dynamic Media Classic配置。
 
 * **[!UICONTROL 图像预]**&#x200B;设从下拉菜单中选择现有的图像预设。 如果未显示您要查找的图像预设，则可能需要将其显示出来。请参阅[管理图像预设](/help/assets/managing-image-presets.md)。如果您正在使用图像预设，则无法选择查看器预设，反之亦然。
 
@@ -182,25 +182,25 @@ Dynamic Media经 **[!UICONTROL 典图像]** 组件允许您向图像添加Dynami
 
 * **[!UICONTROL 锐化]**&#x200B;选择要如何锐化图像。 [图像预设最佳实践](/help/assets/managing-image-presets.md#image-preset-options)和[锐化最佳实践](/help/assets/assets/s7_sharpening_images.pdf)中详细介绍了锐化。
 
-* **[!UICONTROL URL修饰符]**&#x200B;您可以通过提供其他Dynamic Media经典图像命令来更改图像效果。 相关内容在[图像预设](/help/assets/managing-image-presets.md)和[命令参考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中进行了介绍。
+* **[!UICONTROL URL修饰]**&#x200B;符您可以通过提供其他Dynamic Media Classic图像命令来更改图像效果。 相关内容在[图像预设](/help/assets/managing-image-presets.md)和[命令参考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中进行了介绍。
 
 * **[!UICONTROL 断点]**&#x200B;如果您的网站是响应式的，您需要调整断点。 断点之间必须使用逗号 (,) 分隔。
 
 ### 图像模板 {#image-template}
 
-[Dynamic Media经典图像模板](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 是已导入到Dynamic Media经典的分层Photoshop内容，其中内容和属性经过参数化以实现可变性。 通过&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，您可以在 AEM 中导入图像并对文本进行动态更改。此外，您还可以配置&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，以使用 Client Context 中的值，从而让每个客户获取个性化的图像体验。
+[动态媒体经典图像模板](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 是已导入到Dynamic Media Classic的分层Photoshop内容，其中内容和属性经过参数化以实现可变性。 通过&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，您可以在 AEM 中导入图像并对文本进行动态更改。此外，您还可以配置&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，以使用 Client Context 中的值，从而让每个客户获取个性化的图像体验。
 
 Tap **[!UICONTROL Edit]** to configure the component. You can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components) as well as other settings described in this section.
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
-* **[!UICONTROL 文件引用、宽度、高度]**&#x200B;查看所有Dynamic Media经典组件通用的设置。
+* **[!UICONTROL 文件引用、宽度、高度]**&#x200B;查看所有Dynamic Media Classic组件通用的设置。
 
    >[!NOTE]
    >
-   >Dynamic Media经典URL命令和参数不能直接添加到文件引用URL。 只能在组件 UI 的&#x200B;**[!UICONTROL 参数]**&#x200B;面板中定义这些命令和参数。
+   >Dynamic Media Classic URL命令和参数不能直接添加到文件引用URL。 只能在组件 UI 的&#x200B;**[!UICONTROL 参数]**&#x200B;面板中定义这些命令和参数。
 
-* **[!UICONTROL 标题、替代文]**&#x200B;本在Dynamic Media经典图像模板选项卡中，为图像添加一个标题，为关闭图形的用户添加替代文本。
+* **[!UICONTROL 标题、替代文]**&#x200B;本在Dynamic Media经典图像模板选项卡中，为图像添加一个标题，为关闭了图形的用户添加替代文本。
 
 * **[!UICONTROL URL，打开方式]**&#x200B;您可以设置资产以打开链接。 设置 URL，并在打开方式中指示是要在同一窗口中还是在新窗口中打开该 URL。
 
@@ -230,9 +230,9 @@ To link a field to a client context value, tap **[!UICONTROL Select]** to open t
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### 使Dynamic Media经典图像模板成为链接 {#making-the-scene-image-template-a-link}
+#### 将Dynamic Media经典图像模板设为链接 {#making-the-scene-image-template-a-link}
 
-1. 在具有Dynamic Media经典图像模板 **[!UICONTROL 组件的页]** 面上，点 **[!UICONTROL 按编辑]**。
+1. 在包含Dynamic Media Classic图像模板组件 **[!UICONTROL 的页面上]** ，点按 **[!UICONTROL 编辑]**。
 1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. In the **[!UICONTROL Open in]** field, select whether you want the target to open (a new window or same window).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
@@ -245,7 +245,7 @@ The Dynamic Media Classic **[!UICONTROL Video]** component (available from the D
 
 它可用于自适应视频集、单个MP4视频或单个F4V视频。
 
-See [Video](s7-video.md) for more information on how videos work with Dynamic Media Classic integration. 此外，请参 [阅Dynamic Media经典视频组件与基础视频组件](s7-video.md)。
+See [Video](s7-video.md) for more information on how videos work with Dynamic Media Classic integration. 此外，请参 [阅Dynamic Media Classic Video组件与Foundation Video组件](s7-video.md)。
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -253,23 +253,23 @@ See [Video](s7-video.md) for more information on how videos work with Dynamic Me
 
 Adobe DAM 和 WCM 会显示是否上传了主视频。但它们不会显示以下代理资产：
 
-* Dynamic Media经典编码再现
-* Dynamic Media经典自适应视频集
+* Dynamic Media Classic编码的演绎版
+* 动态媒体经典自适应视频集
 
-在将自适应视频集与Dynamic Media经典视频组件一起使用时，您需要调整组件大小以适合视频的尺寸。
+在将自适应视频集与Dynamic Media Classic视频组件一起使用时，您需要调整组件大小以适合视频的尺寸。
 
-## Dynamic Media经典内容浏览器 {#scene-content-browser}
+## 动态媒体经典内容浏览器 {#scene-content-browser}
 
-通过Dynamic Media经典内容浏览器，您可以直接在AEM中从Dynamic Media经典视图内容。 To access the content browser, in the **[!UICONTROL Content Finder]**, select **[!UICONTROL Dynamic Media Classic]** in the touch-optimized user interface or the **[!UICONTROL S7]** icon in the classic user interface. 这两种用户界面的功能是相同的。
+通过Dynamic Media Classic内容浏览器，您可以直接在AEM中视图Dynamic Media Classic中的内容。 To access the content browser, in the **[!UICONTROL Content Finder]**, select **[!UICONTROL Dynamic Media Classic]** in the touch-optimized user interface or the **[!UICONTROL S7]** icon in the classic user interface. 这两种用户界面的功能是相同的。
 
-如果您有多个配置，默认情况下，AEM 会显示[默认配置](/help/sites-administering/scene7.md#configuring-a-default-configuration)。您可以直接在Dynamic Media经典内容浏览器中的下拉菜单中选择不同的配置。
+如果您有多个配置，默认情况下，AEM 会显示[默认配置](/help/sites-administering/scene7.md#configuring-a-default-configuration)。您可以直接在Dynamic Media Classic内容浏览器中的下拉菜单中选择不同的配置。
 
 >[!NOTE]
 >
->* 位于临时文件夹中的资产不会显示在Dynamic Media经典内容浏览器中。
->* 启用 [安全预览后](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene),Dynamic Media经典上已发布和取消发布的资产都会显示在Dynamic Media经典内容浏览器中。
+>* 位于临时文件夹中的资产不会显示在Dynamic Media Classic内容浏览器中。
+>* 启用 [安全预览后](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)，动态媒体经典上已发布和取消发布的资产都会显示在动态媒体经典内容浏览器中。
 >* If you do not see **[!UICONTROL Dynamic Media Classic]** or the **[!UICONTROL S7]** icon as an option in the content browser, you need to [configure Dynamic Media Classic to work with AEM](/help/sites-administering/scene7.md).
->* 对于视频，Dynamic Media经典内容浏览器支持：
+>* 对于视频，Dynamic Media Classic内容浏览器支持：
    >   * 自适应视频集：一种容器，包含在多种屏幕上实现无缝播放所需的所有视频呈现
    >   * 单个MP4视频
    >   * 单个F4V视频
@@ -279,13 +279,13 @@ Adobe DAM 和 WCM 会显示是否上传了主视频。但它们不会显示以�
 
 您可以在触屏优化UI或经典UI中访问内容浏览器。 目前，触屏优化具有以下限制：
 
-* 不支持Dynamic Media经典中的FXG和Flash资源。
+* 不支持Dynamic Media Classic中的FXG和Flash资源。
 
-通过从第三个下拉菜单中选择 **[!UICONTROL Dynamic Media经典]** ，浏览Dynamic Media经典资产。 Dynamic Media经典不会显示在列表中(如果尚未配置Dynamic Media经典/AEM集成)。
+通过从第三个下拉菜单中选择 **[!UICONTROL Dynamic Media]** Classic，浏览Dynamic Media Classic资产。 如果您尚未配置Dynamic Media Classic/AEM集成，则列表中不显示Dynamic Media Classic。
 
 >[!NOTE]
 >
->* Dynamic Media经典内容浏览器加载约100个资源，并按名称对其进行排序。
+>* 动态媒体经典内容浏览器加载约100个资产，并按名称对它们进行排序。
 >* 如果您设置了安全预览服务器，浏览器将使用该预览服务器来呈现缩略图和资产。
 
 >
@@ -301,9 +301,9 @@ Adobe DAM 和 WCM 会显示是否上传了主视频。但它们不会显示以�
 * 对于自适应视频集和模板，不会为缩略图生成大小信息。
 * 对于自适应视频集，不会为缩略图生成分辨率。
 
-### 使用内容浏览器搜索Dynamic Media经典资产 {#searching-for-scene-assets-with-the-content-browser}
+### 使用内容浏览器搜索Dynamic Media Classic资产 {#searching-for-scene-assets-with-the-content-browser}
 
-搜索Dynamic Media经典资产与搜索AEM资产类似，但搜索时您实际看到的是Dynamic Media经典系统中资产的远程视图，而不是直接将其导入AEM。
+搜索Dynamic Media Classic资产与搜索AEM资产类似，但搜索时您实际看到的是Dynamic Media Classic系统中资产的远程视图，而不是直接将其导入AEM。
 
 您可以使用经典 UI 或触屏优化 UI 来查看和搜索资产。根据所用的界面，搜索方式会略有不同。
 
@@ -321,15 +321,15 @@ Adobe DAM 和 WCM 会显示是否上传了主视频。但它们不会显示以�
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
-* **[!UICONTROL 资产类型选]**&#x200B;择 **[!UICONTROL Dynamic Media经典]** ，以浏览Dynamic Media经典内容。 仅当配置了Dynamic Media经典时，此选项才可用。
+* **[!UICONTROL 资产类型选]**&#x200B;择 **[!UICONTROL Dynamic Media Classic]** ，以浏览Dynamic Media Classic内容。 仅当配置了Dynamic Media Classic时，此选项才可用。
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-* **[!UICONTROL 配置]**&#x200B;如果您在Dynamic Media中定义了多个Cloud Service经典 [!UICONTROL 配置]，则可以在此处选择它。 根据您选择的配置，文件夹会相应地进行更改。
+* **[!UICONTROL 配置]**&#x200B;如果您在Cloud Services中定义了多个Dynamic Media Classic配置 ，则可以在此处选择它。 根据您选择的配置，文件夹会相应地进行更改。
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
-* **[!UICONTROL 资产类]**&#x200B;型在Dynamic Media经典浏览器中，您可以筛选结果以包含以下任一内容： 图像、模板、视频和自适应视频集。 如果您没有选择任何资产类型，则默认情况下，AEM 会搜索所有资产类型。
+* **[!UICONTROL 资产类]**&#x200B;型在Dynamic Media Classic浏览器中，您可以筛选结果以包含以下任一内容： 图像、模板、视频和自适应视频集。 如果您没有选择任何资产类型，则默认情况下，AEM 会搜索所有资产类型。
 
 ![chlimage_1-246](assets/chlimage_1-246.png)
 

@@ -1,8 +1,8 @@
 ---
 title: 记录自定义实现的事务
 seo-title: 记录自定义实现的事务
-description: 使用TransactionRecorder API记录不自动作为事务处理的操作
-seo-description: 使用TransactionRecorder API记录不自动作为事务处理的操作
+description: 使用TransactionRecorder API记录未自动作为事务处理的操作
+seo-description: 使用TransactionRecorder API记录未自动作为事务处理的操作
 uuid: a22b1a0b-7553-4a17-8fb4-a3bee97b4a98
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,21 +10,24 @@ topic-tags: forms-manager
 discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
 translation-type: tm+mt
 source-git-commit: 0fb4d181b700e223becfee8e3e68a84d6f964c1d
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 0%
 
 ---
 
 
 # 记录自定义实现的事务 {#record-a-transaction-for-custom-implementations}
 
-使用TransactionRecorder API记录不自动作为事务处理的操作
+使用TransactionRecorder API记录未自动作为事务处理的操作
 
-您可以使用自定义代码提交PDF表单，向最终用户发送代理UI预览URL以预览交互式通信，或使用自定义方法而不是使用随AEM表单提供的提交方法提交表单。 以前提到的所有操作和AEM Forms API的自定义实施不作为事务处理入账。 AEM Forms提供了一个API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html)，用于记录事务等操作。
+您可以使用自定义代码提交PDF表单、向最终用户发送代理UI预览URL以预览交互式通信，或使用自定义方法而不是使用AEM Forms提供的提交方法提交表单。 以前提到的AEM FormsAPI的所有操作和自定义实现均不作为事务处理入账。 AEM Forms提供了一个 [API](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html),TransactionRecorder，用于记录此类操作（如事务）。
 
 要记录事务，请编写标 [准sling servlet](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) ，并从客户端调用servlet以记录事务。 可以使用AJAX或任何其他标准方法调用servlet。
 
 ## 示例服务器端代码 {#sample-server-sided-code}
 
-您可以使用以下示例代码从JAVA类使用自定义OSGi包运行TransactionRecorder API。
+您可以使用以下示例代码从JAVA类使用自定义OSGi捆绑包运行TransactionRecorder API。
 
 ```java
 import com.adobe.aem.transaction.core.ITransactionRecorder;
@@ -72,7 +75,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 ## 示例客户端代码 {#sample-client-side-code}
 
-您可以使用以下示例代码调用具有 `TransactionRecorder`API的servlet。
+您可以使用以下示例代码调用具有API的 `TransactionRecorder`servlet。
 
 ```
 $.ajax({
@@ -90,7 +93,7 @@ $.ajax({
 
 ## 相关文章 {#related-articles}
 
-* [事务处理报告概述](/help/forms/using/transaction-reports-overview.md)
+* [事务处理报表概览](/help/forms/using/transaction-reports-overview.md)
 * [查看和了解事务处理报表](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [事务处理报告可开单API](/help/forms/using/transaction-reports-billable-apis.md)
+* [事务处理报表可计费API](/help/forms/using/transaction-reports-billable-apis.md)
 

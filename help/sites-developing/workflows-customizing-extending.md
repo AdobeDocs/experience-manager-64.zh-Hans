@@ -68,6 +68,7 @@ ht-degree: 1%
 
    * **常见**: 以编辑标题和说明。
    * **高级**: 用于编辑电子邮件通知属性。
+
    ![wf-44](assets/wf-44.png)![wf-45](assets/wf-45.png)
 
    >[!NOTE]
@@ -121,6 +122,7 @@ WorkItem有自己的MetaDataMap，只能在该工作项（如步骤）运行时�
 >* 该步骤的编辑对话框将标题和说明存储在以下位置： >
 >* `./jcr:title`
 >* `./jcr:description` 位置
+
 >
 >  
 当编辑对话框使用组件实现的公用选项卡时，满足 `/libs/cq/flow/components/step/step` 此要求。
@@ -132,6 +134,7 @@ WorkItem有自己的MetaDataMap，只能在该工作项（如步骤）运行时�
 
    * 名称: `cq:editConfig`
    * 类型: `cq:EditConfig`
+
    >[!NOTE]
    >
    >有关cq:editConfig节点的详细信息，请参 [阅配置组件的编辑行为](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)。
@@ -182,6 +185,7 @@ WorkItem有自己的MetaDataMap，只能在该工作项（如步骤）运行时�
 
    * 名称: `cq:editConfig`
    * 类型: `cq:EditConfig`
+
    有关cq:editConfig节点的详细信息，请参 [阅配置组件的编辑行为](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)。
 
 1. 在cq:EditConfig节点下，添加以下节点：
@@ -203,7 +207,7 @@ WorkItem有自己的MetaDataMap，只能在该工作项（如步骤）运行时�
 
 1. 要删除模型开发人员更改属性值的能力，请覆盖组件super类型的对话框。
 
-### 向参加者步骤添加表单和对话框 {#adding-forms-and-dialogs-to-participant-steps}
+### 将Forms和对话框添加到参加者步骤 {#adding-forms-and-dialogs-to-participant-steps}
 
 自定义您的参加者步骤组件，以提供表单参加者步 [骤和对话框参加](/help/sites-developing/workflows-step-ref.md#form-participant-step) 者 [步骤组件中的功能](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) :
 
@@ -216,6 +220,7 @@ WorkItem有自己的MetaDataMap，只能在该工作项（如步骤）运行时�
 
    * 名称: `cq:editConfig`
    * 类型: `cq:EditConfig`
+
    有关cq:editConfig节点的详细信息，请参 [阅配置组件的编辑行为](/help/sites-developing/components-basics.md#edit-behavior)。
 
 1. 在cq:EditConfig节点下，添加以下节点：
@@ -381,7 +386,7 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 
 要将进程步骤定义为OSGI服务组件（Java捆绑）:
 
-1. 创建捆绑包并将其部署到OSGI容器。 请参阅有关使用CRXDE Lite或Eclipse创 [建捆绑包](/help/sites-developing/developing-with-crxde-lite.md) 的 [文档](/help/sites-developing/howto-projects-eclipse.md)。
+1. 创建捆绑包并将其部署到OSGI容器。 请参阅有关创建包含 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 或Eclipse [的文档](/help/sites-developing/howto-projects-eclipse.md)。
 
    >[!NOTE]
    >
@@ -528,7 +533,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 要使用脚本：
 
-1. 创建脚本（例如，使用CRXDE Lite）并将其保存在下面的存储库中 `/apps/myapp/workflow/scripts`
+1. 创建脚本(例如，CRXDE Lite)并将其保存在下面的存储库中 `/apps/myapp/workflow/scripts`
 1. 要指定在“进程步骤编辑”对话 **框中标识脚本** ，请向脚本的节 `jcr:content` 点添加以下属性：
 
    | 名称 | 类型 | 值 |
@@ -645,7 +650,7 @@ function getParticipant() {
 }
 ```
 
-1. 创建脚本（例如，使用CRXDE Lite）并将其保存在下面的存储库中 `/apps/myapp/workflow/scripts`
+1. 创建脚本(例如，CRXDE Lite)并将其保存在下面的存储库中 `/apps/myapp/workflow/scripts`
 1. 要指定在“进程步骤编辑”对话 **框中标识脚本** ，请向脚本的节 `jcr:content` 点添加以下属性：
 
    | 名称 | 类型 | 值 |
@@ -665,6 +670,7 @@ function getParticipant() {
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+
 >
 
 
@@ -847,6 +853,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
       * 项目
       * WCM 工作流
       * 工作流
+
    ![wf-35](assets/wf-35.png)
 
 1. 您现在可以打开一个工作流模型进行编辑。 在步骤浏览器中，您可以进行筛选，以查 **看我的自定义步骤**:
@@ -887,6 +894,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
       在模型映射中和“我的自定义——步骤属性”配置对话框 **的** “标题” **字段中，在步骤卡上设置默认标题** 。
 
    * 您还可以定义自己的自定义属性。
+
    ![wf-40](assets/wf-40.png)
 
 1. 在节点上配置属性 `cq:listeners`。
@@ -899,6 +907,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
    * `afterdelete: CQ.workflow.flow.Step.afterDelete`
    * `afteredit: CQ.workflow.flow.Step.afterEdit`
    * `afterinsert: CQ.workflow.flow.Step.afterInsert`
+
    此配置对于编辑器的正常工作至关重要。 在大多数情况下，此配置不得更改。
 
    但是，设 `cq:inherit` 置为true(在节 `cq:editConfig` 点上，请参阅上面的内容)允许您继承此配置，无需在步骤定义中显式包含它。 如果没有继承，则您需要添加此节点并包含以下属性和值。
@@ -1030,7 +1039,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >
 >经典UI模型编辑器对话框仍可用于标准的触屏优化UI编辑器。
 >
->但是，如果您要将经 [典UI步骤](/help/sites-developing/dialog-conversion.md) 对话框升级到标准UI对话框，则AEM具有对话框转换工具。 转换后，某些情况下仍可对对话框进行手动改进。
+>如果要将经典 [UI步骤对话框](/help/sites-developing/dialog-conversion.md) 升级到标准UI对话框，则AEM具有对话框转换工具。 转换后，某些情况下仍可对对话框进行手动改进。
 >
 >* 如果升级的对话框为空，您可以查看与 `/libs` 如何提供解决方案示例功能相似的对话框。 例如：
    >
@@ -1040,6 +1049,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >* `/libs/dam/components`
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
+
 >
 >  
 您不得在中修改任 `/libs`何内容，只需将它们作为示例。 如果要利用任何现有步骤，请将其复制到该 `/apps` 步骤并在其中修改。

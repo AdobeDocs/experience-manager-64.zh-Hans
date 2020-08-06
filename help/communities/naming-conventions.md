@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5271feb9-70c6-4c82-8ac7-34a63d80e3aa
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
@@ -23,8 +26,8 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 在AEM开发中，建议在存储库项目名称中使用连字符，但连字符在Java包名称中是非法的。
 
-基础CRX平台必须能够区分实际下划线“_”和连字符“-”。 因此，在JCR中，连字符必须替换为其unicode值(u002d)，并用下划线“_”转义。
+基础CRX平台必须能够区分实际的下划线&#x200B;_“”和连字符“-”。 因此，在JCR中，连字符必须用其unicode值(u002d)替换，并用下划线“_”转义。
 
-例如，如果存储库路径为/apps/my-example/component/info/Info.java ****，则包名称应为 `java package apps.my_002dexample.component.info;`
+例如，如果存储库路径为 **/apps/my-example/component/info/Info.java**，则包名称应为 `java package apps.my_002dexample.component.info;`
 
-请注意，下划线同样必须转义，这样才 `_` 会变 `_005f`成。
+请注意，下划线同样必须转义，这样 `_` 才 `_005f`能。

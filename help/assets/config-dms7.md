@@ -1,8 +1,8 @@
 ---
-title: 配置Dynamic Media-Scene7模式
-seo-title: 配置Dynamic Media-Scene7模式
-description: 有关如何配置Dynamic Media的信息-Scene7模式。
-seo-description: 有关如何配置Dynamic Media的信息-Scene7模式。
+title: 配置Dynamic Media -Scene7模式
+seo-title: 配置Dynamic Media -Scene7模式
+description: 有关如何配置Dynamic Media -Scene7模式的信息。
+seo-description: 有关如何配置Dynamic Media -Scene7模式的信息。
 uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -18,19 +18,19 @@ ht-degree: 4%
 ---
 
 
-# 配置Dynamic Media-Scene7模式 {#configuring-dynamic-media-scene-mode}
+# 配置Dynamic Media -Scene7模式 {#configuring-dynamic-media-scene-mode}
 
-如果您使用为不同环境设置的Adobe Experience Manager，例如一个用于开发，一个用于暂存，另一个用于实时生产，您需要为这些环境中的每个配置Dynamic MediaCloud Service。
+如果您使用Adobe Experience Manager为不同环境（如一个用于开发、一个用于暂存、一个用于实时生产）进行设置，则需要为每个这些环境配置Dynamic MediaCloud Services。
 
-## Dynamic Media架构图-Scene7模式 {#architecture-diagram-of-dynamic-media-scene-mode}
+## 动态媒体的架构图-Scene7模式 {#architecture-diagram-of-dynamic-media-scene-mode}
 
-以下架构图描述了Dynamic Media-Scene7模式的工作方式。
+以下架构图描述了Dynamic Media -Scene7模式的工作方式。
 
-借助新架构，AEM负责主控资产并与Dynamic Media进行同步以处理和发布资产：
+借助新的体系结构，AEM负责主控资产并与Dynamic Media同步以处理和发布资产：
 
-1. 主控资产上传到AEM后后，会复制到Dynamic Media。 此时，Dynamic Media将处理所有资产处理和再现生成，如图像的视频编码和动态变型。
-1. 生成再现后，AEM可以安全访问和预览远程Dynamic Media再现(不会将二进制文件发送回AEM实例)。
-1. 在内容可以发布和批准后，它会触发Dynamic Media服务，将内容推送到投放服务器并缓存CDN中的内容。
+1. 主控资产上传到AEM后后，会将其复制到Dynamic Media。 此时，Dynamic Media将处理所有资产处理和再现生成，如图像的视频编码和动态变型。
+1. 生成再现后，AEM可以安全访问和预览远程Dynamic Media再现(不会将二进制文件发回AEM实例)。
+1. 在内容可供发布和批准后，它会触发Dynamic Media服务，将内容推送到投放服务器并缓存CDN中的内容。
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -40,9 +40,9 @@ ht-degree: 4%
 
 >[注意]
 >
->Dynamic Media-Scene7模式仅用于AEM Author实例。 因此，必须在AEM Author实 `runmode=dynamicmedia_scene7`例上进行配置，而不是在AEM Publish实例上进行配置。
+>Dynamic Media -Scene7模式仅适用于AEM作者实例。 因此，您必须在AEM `runmode=dynamicmedia_scene7`作者实例上进行配置，而不是在AEM发布实例上进行配置。
 
-要启用Dynamic Media，您必须在终端窗口 `dynamicmedia_scene7` 中输入以下内容（使用的示例端口为4502），从命令行使用运行模式启动AEM:
+要启用Dynamic Media，您必须在终端窗口 `dynamicmedia_scene7` 中输入以下内容（使用的示例端口为4502），从命令行使用运行模式启动AEM::
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
@@ -50,7 +50,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## （可选）将Dynamic Media预设和配置从6.3迁移到6.4零停机时间 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-如果要将AEMDynamic Media从6.3升级到6.4（现在包括零停机时间部署的功能），您需要运行以下curl命令，以将所有预设和配置从迁移到 `/etc` CRXDE Lite `/conf` 中。
+如果要将AEM Dynamic Media从6.3升级到6.4（现在包括零停机时间部署的功能），您需要运行以下curl命令，以将所有预设和配置从迁移到 `/etc` CRXDE Lite中 `/conf` 。
 
 >[注意]
 >
@@ -66,36 +66,36 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## （可选）安装功能包18912以批量迁移资产 {#installing-feature-pack}
 
-功能包18912允许您通过FTP批量摄取资产，或从Dynamic Media(混合模式或Dynamic Media经典)迁移到Dynamic Media(AEM上的Scene7模式)迁移资产。 酒店可从Adobe Professional Services购买。
+功能包18912允许您通过FTP批量摄取资产，或将资产从Dynamic Media —— 混合模式或Dynamic Media Classic迁移到AEM的Dynamic Media -Scene7模式。 酒店可从Adobe Professional Services购买。
 
 有关 [详细信息，请参阅安装功能包18912](bulk-ingest-migrate.md) ，以实现批量资产迁移。
 
 ## Configuring Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
-在配置Dynamic MediaCloud Service之前，请更改密码。 在收到包含Dynamic Media凭据的供应电子邮件后，您必 [须登录](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 到Dynamic Media经典以更改密码。 供应电子邮件中提供的密码是系统生成的，并且仅用于临时密码。 请务必更新密码，以便Dynamic MediaCloud Service设置正确的凭据。
+在配置Dynamic MediaCloud Services之前，请更改口令。 在您收到包含Dynamic Media凭据的供应电子邮件后，必 [须登录](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以更改密码。 供应电子邮件中提供的密码是系统生成的，并且仅用于临时密码。 更新密码以使Dynamic MediaCloud Service设置的凭据正确，这一点很重要。
 
 >[!NOTE]
 >
->默认情况下，Cloud Service的配置路径为 `/content/dam`。 任何其他配置路径都不受Dynamic Media支持-Scene7模式。
+>默认情况下，Cloud Services的配置路径为 `/content/dam`。 任何其他配置路径都不支持Dynamic Media -Scene7模式。
 
-要配置Dynamic MediaCloud Service:
+要配置Dynamic MediaCloud Services:
 
-1. 在AEM中，点按AEM徽标以访问全局导航控制台，然后点按工具图标，然后点按 **[!UICONTROL Cloud Service>Dynamic Media配置]**。
-1. 在“Dynamic Media配置浏览器”页面的左窗格中，点按全 **[!UICONTROL 局]** ，然后点 **[!UICONTROL 按创建]**。 请勿点按或选择全局左侧的文件夹 [!UICONTROL 图标]。
-1. 在“创 [!UICONTROL 建Dynamic Media配置] ”页面上，输入标题、Dynamic Media帐户电子邮件地址和密码，然后选择您的区域。 这些资源是通过供应电子邮件中的Adobe提供给您的。 如果您未收到此信息，请与支持部门联系。
+1. 在AEM中，点按AEM徽标以访问全局导航控制台，然后点按工具图标，然后点 **[!UICONTROL 按Cloud Services> Dynamic Media配置]**。
+1. 在Dynamic Media配置浏览器页面的左侧窗格中，点按全 **[!UICONTROL 局]** ，然后点 **[!UICONTROL 按创建]**。 请勿点按或选择全局左侧的文件夹 [!UICONTROL 图标]。
+1. 在“创 [!UICONTROL 建Dynamic Media配置] ”页面上，输入标题、Dynamic Media帐户电子邮件地址和密码，然后选择您所在的区域。 这些资源是通过供应电子邮件中的Adobe提供给您的。 如果您未收到此信息，请与支持部门联系。
 
    Tap **[!UICONTROL Connect to Dynamic Media]**.
 
    >[!NOTE]
    >
-   >在您收到包含Dynamic Media凭据的供应电子邮件后，请 [登录](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) “Dynamic Media经典”以更改您的密码。 供应电子邮件中提供的密码是系统生成的，并且仅用于临时密码。 请务必更新密码，以便Dynamic Media云服务设置正确的凭据。
+   >在您收到包含Dynamic Media凭据的供应电子邮件后，请 [登录](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以更改您的密码。 供应电子邮件中提供的密码是系统生成的，并且仅用于临时密码。 请务必更新密码，以便Dynamic Media云服务设置正确的凭据。
 
 1. 如果连接成功，您还可以设置以下内容：
 
-   * **[!UICONTROL 公司]** -Dynamic Media帐户的名称。 您可能有多个Dynamic Media帐户用于不同的子品牌、部门或不同的暂存／生产环境。
+   * **[!UICONTROL 公司]** - Dynamic Media帐户的名称。 您可能为不同的子品牌、部门或不同的分阶段／生产环境拥有多个Dynamic Media帐户。
    * **[!UICONTROL 公司根文件夹路径]**
    * **[!UICONTROL 发布资产]** -“立 **[!UICONTROL 即]** ”选项意味着上传资产时，系统会收录资产并立即提供URL/嵌入。 发布资产不需要用户干预。 “激活 **[!UICONTROL 时]** ”选项表示您需要先显式发布资产，然后才能提供URL/嵌入链接。
-   * **[!UICONTROL 安全预览服务器]** -允许您指定到安全再现预览服务器的URL路径。 也就是说，在生成再现后，AEM可以安全访问和预览远程Dynamic Media再现(不会将二进制文件发回到AEM实例)。
+   * **[!UICONTROL 安全预览服务器]** -允许您指定到安全再现预览服务器的URL路径。 也就是说，在生成再现后，AEM可以安全访问和预览远程Dynamic Media再现(不会将二进制文件发回AEM实例)。
 
       除非您有特殊安排来使用您自己的公司服务器或特殊服务器，否则Adobe建议您使用默认设置。
    >[!NOTE]
@@ -107,33 +107,33 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
-1. 要在发布Dynamic Media内容之前安全地预览其内容，您需要“允许列表”AEM作者实例以连接到Dynamic Media:
+1. 要在Dynamic Media内容发布前安全预览，您需要“”AEM允许列表作者实例以连接到Dynamic Media:
 
-   * 登录您的Dynamic Media经典帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。 您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
+   * 登录您的Dynamic Media Classic帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。 您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
    * 在页面右上方的导航栏上，点按设置>应 **[!UICONTROL 用程序设置>发布设置>图像服务器]**。
    * 在“图像服务器发布”页面的“发布上下文”下拉列表中，选择“测 **[!UICONTROL 试图像服务”]**。
    * 对于“客户端地址筛选器”，点 **[!UICONTROL 按添加]**。
-   * 选中复选框以启用（打开）地址，然后输入AEM Author实例的IP地址(而非DispatcherIP)。
+   * 选中此复选框以启用（打开）该地址，然后输入AEM作者实例的IP地址（而非调度程序IP）。
    * 点按&#x200B;**[!UICONTROL 保存]**。
 
-现在您已完成基本配置； 您已准备好使用Dynamic Media-Scene7模式。
+现在您已完成基本配置； 您已准备好使用Dynamic Media -Scene7模式。
 
-如果要进一步自定义配置，您可以选择在“Dynamic Media-Scene7”模式中 [配置高级设置”（可选）下](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)填写任何任务。
+如果要进一步自定义配置，您可以选择在Dynamic Media -Scene7模式中 [配置高级设置下完成任何任务](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)。
 
-## （可选）在Dynamic Media-Scene7模式下配置高级设置 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## （可选）在Dynamic Media -Scene7模式中配置高级设置 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-如果要进一步自定义Dynamic Media的配置和设置-Scene7模式或优化其性能，您可以完成以下一个或多个可选任务:
+如果要进一步自定义Dynamic Media -Scene7模式的配置和设置，或优化其性能，您可以完成以下一个或多个可选任务:
 
 * [（可选）Dynamic Media的设置和配置-Scene7模式设置](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p)
 
-* [（可选）调整Dynamic Media的性能-Scene7模式](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
+* [（可选）调整Dynamic Media -Scene7模式的性能](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 * [（可选）筛选要复制的资产](#optional-filtering-assets-for-replication)
 
 ### （可选）Dynamic Media的设置和配置-Scene7模式设置</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
 
-当您处于运行模式 **时，您使用Dynamic Media经典**(Scene7)用户界面对Dynamic Media设置进行更改。
+当您处于运行模式 **时，Dynamicmedia**_scene7会使用Dynamic Media Classic(Scene7)用户界面对Dynamic Media设置进行更改。
 
-以上某些任务要求您在此登录Dynamic Media经典： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+以上某些任务要求您在此处登录Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
 设置和配置任务包括：
 
@@ -146,9 +146,9 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 #### 图像服务器的发布设置 {#publishing-setup-for-image-server}
 
-默认情况下，“发布设置”设置会确定如何从Dynamic Media传送资产。 如果未指定任何设置，则Dynamic Media会根据发布设置中定义的默认设置传送资产。 例如，传送不包含分辨率属性的图像的请求将生成具有默认对象分辨率设置的图像。
+默认情况下，“发布设置”设置会确定如何从Dynamic Media传送资产。 如果未指定任何设置，Dynamic Media会根据发布设置中定义的默认设置传送资产。 例如，传送不包含分辨率属性的图像的请求将生成具有默认对象分辨率设置的图像。
 
-配置发布设置： 在Dynamic Media经典中，点 **[!UICONTROL 按设置>应用程序设置>发布设置>图像服务器]**。
+配置发布设置： 在Dynamic Media Classic中，点按设 **[!UICONTROL 置>应用程序设置>发布设置>图像服务器]**。
 
 “图像服务器”屏幕为传送图像建立了默认设置。 有关每个设置的说明，请参阅用户界面。
 
@@ -162,11 +162,11 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 #### 配置应用程序常规设置 {#configuring-application-general-settings}
 
-要打开“应用程 [!UICONTROL 序常规设置] ”页，请在Dynamic Media经典全局导航栏中，点 **[!UICONTROL 按设置>应用程序设置>常规设置]**。
+要打开“应 [!UICONTROL 用程序常规设置] ”页，请在Dynamic Media Classic全局导航栏中，点 **[!UICONTROL 按设置>应用程序设置>常规设置]**。
 
-**[!UICONTROL 服务器]** -在帐户配置时，Dynamic Media会自动为公司提供分配的服务器。 这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非AEM支持明确指示，否则不要更改任何服务器名称。
+**[!UICONTROL 服务器]** -在帐户配置时，Dynamic Media会自动为您的公司提供分配的服务器。 这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非AEM支持明确指示，否则不要更改任何服务器名称。
 
-**[!UICONTROL 覆盖图像]** -Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定了如何上传替换资产： 是替换原件还是成为重复。 重复资产使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
+**[!UICONTROL 覆盖图像]** - Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定了如何上传替换资产： 是替换原件还是成为重复。 重复资产使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
 
 * **[!UICONTROL 在当前文件夹中覆盖，基本图像名称／扩展名相同]** -此选项是最严格的替换规则。 它要求您将替换图像上传到与原始图像相同的文件夹，并且替换图像的文件扩展名与原始图像的扩展名相同。 如果这些要求未满足，则会创建重复。
 
@@ -189,7 +189,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 配置默认颜色属性以在请求图像时启用颜色校正：
 
-1. [使用在设置过程中提供](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 的凭据登录Dynamic Media经典。 导航到“设 **[!UICONTROL 置”>“应用程序设置]**”。
+1. [使用在设置过程中提供的凭据](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) ，登录到Dynamic Media Classic。 导航到“设 **[!UICONTROL 置”>“应用程序设置]**”。
 1. 展开&#x200B;**[!UICONTROL 发布设置]**&#x200B;区域，然后选择&#x200B;**[!UICONTROL 图像服务器]**。设置发布实例的默认设置时，将&#x200B;**[!UICONTROL 发布上下文]**&#x200B;设置为&#x200B;**[!UICONTROL 图像提供]**。
 1. 滚动到需要更改的属性，例如“颜色管理属性”区 **[!UICONTROL 域中的属性]** 。
 
@@ -214,7 +214,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 #### 配置资产处理 {#configuring-asset-processing}
 
-您可以定义Dynamic Media应处理哪些资产类型，并自定义高级资产处理参数。 例如，您可以指定资产处理参数以执行以下操作：
+您可以定义Dynamic Media应处理的资产类型，并自定义高级资产处理参数。 例如，您可以指定资产处理参数以执行以下操作：
 
 * 将Adobe PDF转换为电子目录资产。
 * 将Adobe Photoshop文档(.PSD)转换为横幅模板资产以进行个性化。
@@ -258,7 +258,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
    ![webconsole](assets/2019-08-02_16-13-14.png)
 
-1. 新的浏览器选项卡会打开到 **[!UICONTROL Adobe Experience ManagerWeb控制台配置页]** 。
+1. 将打开新的浏览器选项卡， **[!UICONTROL 进入Adobe Experience ManagerWeb控制台配置]** 页面。
 
    ![webconsole](assets/2019-08-02_16-17-29.png)
 
@@ -278,7 +278,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 1. In the lower-right corner of the page, click **[!UICONTROL Save]**.
 
-   此时，您可以关闭具有打开的Adobe Experience ManagerWeb控制台配置页的浏览器选项卡。
+   此时，您可以关闭打开“Adobe Experience ManagerWeb控制台配置”页的浏览器选项卡。
 
 1. 返回到具有打开的AEM控制台的浏览器选项卡。
 
@@ -308,7 +308,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 首先，定义资产在集合中的分组方式的命名约定。 然后，您可以创建批集预设，该预设是一组唯一命名的自包含说明，这些说明定义了如何使用与预设菜谱中定义的命名约定相匹配的图像构建该集。
 
-上传文件时，Dynamic Media会自动创建一个集，其中所有文件均与活动预设中定义的命名规范相匹配。
+上传文件时，Dynamic Media会自动创建一个集，其中包含与活动预设中定义的命名约定相匹配的所有文件。
 
 **配置默认命名**
 
@@ -322,7 +322,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 **配置默认命名：**
 
-1. 登录您的Dynamic Media经典(Scene7)帐户： [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 登录您的Dynamic Media Classic(Scene7)帐户： [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
@@ -348,7 +348,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 **创建批集预设**
 
-Dynamic Media使用批量集预设将资产组织为一组图像（替代图像、颜色选项、360旋转），以便在查看器中显示。 批量集预设将在Dynamic Media中与资产上传流程一起自动运行。
+Dynamic Media使用批量集预设将资产组织为一组图像（替代图像、颜色选项、360旋转），以便在查看器中显示。 批集预设会在Dynamic Media中与资产上传流程一起自动运行。
 
 您可以创建、编辑和管理批集预设。 有两种形式的批集预设定义： 一个用于您可能已设置的默认命名约定，另一个用于您动态创建的自定义命名约定。
 
@@ -356,7 +356,7 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
 
 **要创建批集预设，请执行以下操作：**
 
-1. 登录您的Dynamic Media经典(Scene7)帐户： [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 登录您的Dynamic Media Classic(Scene7)帐户： [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
@@ -372,7 +372,7 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
    * If you are using a default naming convention that you previously set up under **[!UICONTROL Application Setup > Batch Set Presets > Default Naming]**, expand **[!UICONTROL Asset Naming Conventions]**, and then in the **[!UICONTROL File Naming]** drop-down list, tap **[!UICONTROL Default]**.
    * To define a new naming convention as you set up the preset, **[!UICONTROL Asset Naming Conventions]**, and then in the **[!UICONTROL File Naming]** drop-down list, tap **[!UICONTROL Custom]**.
 
-1. 对 [!UICONTROL 于序列]，定义在将图像集以Dynamic Media组合在一起后显示的顺序。
+1. 对 [!UICONTROL 于序列]，定义在Dynamic Media中将图像集组合在一起后图像的显示顺序。
 
    默认情况下，资产按字母数字顺序排序。 但是，您可以使用逗号分隔的常规列表来定义顺序。
 
@@ -383,7 +383,7 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
 1. 在“详细 **[!UICONTROL 信息]** ”面板中，点 **[!UICONTROL 按保存]**。
 1. 点按 **[!UICONTROL 新预设]** 名称旁边的“活动”。
 
-   激活预设可确保在您将资产上传到Dynamic Media时，批集预设会应用于生成该集。
+   激活预设可确保在您将资产上传到Dynamic Media时，会应用批集预设来生成该集。
 
 **为自动生成2D旋转集创建批集预设**
 
@@ -411,7 +411,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 **要为自动生成2D旋转集创建批集预设，请执行以下操作：**
 
-1. 登录您的Dynamic Media经典(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 登录您的Dynamic Media Classic(Scene7)帐户： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
@@ -458,23 +458,23 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 1. 对于 **[!UICONTROL 设置命名]** 和创 **[!UICONTROL 建约定]**，指定您在资产命名约定中定义的基本名称的后 **[!UICONTROL 缀或前缀]**。
 
-   此外，定义在Dynamic Media经典文件夹结构中创建旋转集的位置。
+   此外，定义在Dynamic Media Classic文件夹结构中创建旋转集的位置。
 
    如果您定义了大量集，您可能希望将这些集与包含资产自己的文件夹分开。 例如，创建一个旋转集文件夹，将生成的集放在此处。
 
 1. 在“详细 **[!UICONTROL 信息]** ”面板中，点 **[!UICONTROL 按保存]**。
 1. 点按 **[!UICONTROL 新预设]** 名称旁边的“活动”。
 
-   激活预设可确保在您将资产上传到Dynamic Media时，批集预设会应用于生成该集。
+   激活预设可确保在您将资产上传到Dynamic Media时，会应用批集预设来生成该集。
 
-### （可选）调整Dynamic Media的性能-Scene7模式 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### （可选）调整Dynamic Media -Scene7模式的性能 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-为保持Dynamic Media-Scene7模式平稳运行，Adobe建议使用以下同步性能／可伸缩性微调提示：
+为了使Dynamic Media -Scene7模式平稳运行，Adobe建议使用以下同步性能／可伸缩性微调提示：
 
 * 更新预定义的作业参数以处理不同的文件格式。
 * 更新预定义的Granite工作流（视频资产）队列工作线程。
 * 更新预定义的Granite临时工作流（图像和非视频资产）队列工作线程。
-* 更新到Dynamic Media经典服务器的最大上传连接数。
+* 更新到Dynamic Media Classic服务器的最大上传连接数。
 
 #### 更新预定义的作业参数以处理不同的文件格式
 
@@ -492,7 +492,7 @@ Adobe建议对PDF、Postscript和PSD文件使用以下“调整”作业参数�
 | Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Thumbnail&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-要更新任何这些参数，请按照启用基于MIME类 [型的资产/Dynamic Media经典上传作业参数支持中的步骤操作](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
+要更新任何这些参数，请按照启用基 [于MIME类型的资产/Dynamic Media Classic上传作业参数支持中的步骤操作](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
 
 #### 更新Granite临时工作流队列 {#updating-the-granite-transient-workflow-queue}
 
@@ -510,7 +510,7 @@ Granite传输工作流队列用于DAM更 **[!UICONTROL 新资产工作流]** 。
 
    默认情况下，并行作业的最大数量取决于可用CPU核心的数量。 例如，在4核服务器上，它分配2个工作线程。 （介于0.0和1.0之间的值是基于比率的，或者任何大于1的数字将指定工作线程的数量。）
 
-   Adobe建议将32 **[!UICONTROL 个最大并行作业]** 配置为充分支持将文件重量上传到Dynamic Media经典。
+   Adobe建议将32 **[!UICONTROL 个最大并行作业]** 配置为充分支持将文件重量上传到Dynamic Media Classic。
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -518,7 +518,7 @@ Granite传输工作流队列用于DAM更 **[!UICONTROL 新资产工作流]** 。
 
 #### 更新Granite Workflow队列 {#updating-the-granite-workflow-queue}
 
-Granite工作流队列用于非临时工作流。 在Dynamic Media中，它用于使用Dynamic Media编码视频工作流 **[!UICONTROL 处理视频]** 。
+Granite工作流队列用于非临时工作流。 在Dynamic Media中，它用于使用Dynamic Media编码视频工 **[!UICONTROL 作流处理视频]** 。
 
 **要更新Granite工作流队列，请执行以下操作：**
 
@@ -540,16 +540,16 @@ Granite工作流队列用于非临时工作流。 在Dynamic Media中，它用�
 
 #### 更新Scene7上传连接 {#updating-the-scene-upload-connection}
 
-Scene7上传连接设置将AEM资产同步到Dynamic Media经典服务器。
+Scene7上传连接设置将AEM资产同步到Dynamic Media Classic服务器。
 
 **要更新Scene7上传连接，请执行以下操作：**
 
 1. 导航至 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在连接 [!UICONTROL 数字字段] 和／或活动作 [!UICONTROL 业超时字段中] ，根据需要更改该数字。
 
-   连接 **[!UICONTROL 数量设置]** ，控制AEM上传至Dynamic Media所允许的HTTP连接的最大数量； 通常，10个连接的预定义值就足够了。
+   “ **[!UICONTROL 连接数]** ”设置控制AEM上传Dynamic Media所允许的HTTP连接的最大数量； 通常，10个连接的预定义值就足够了。
 
-   活动 **[!UICONTROL 作业超时]** (Active job timeout)设置决定在投放服务器中发布已上传的Dynamic Media资产的等待时间。 默认情况下，此值为2100秒或35分钟。
+   活动 **[!UICONTROL 作业超时]** (Active job timeout)设置决定在投放服务器中发布已上传Dynamic Media资产的等待时间。 默认情况下，此值为2100秒或35分钟。
 
    对于大多数用例，设置2100就足够了。
 
@@ -559,9 +559,9 @@ Scene7上传连接设置将AEM资产同步到Dynamic Media经典服务器。
 
 ### （可选）筛选要复制的资产 {#optional-filtering-assets-for-replication}
 
-在非Dynamic Media部署中，您将AEM作者环境的*所有*资产（图像和视频）复制到AEM发布节点。 此工作流是必需的，因为AEM发布服务器也会传送资产。
+在非Dynamic Media部署中，您将*所有*资产（图像和视频）从AEM创作环境复制到AEM发布节点。 此工作流是必需的，因为AEM发布服务器也会传送资产。
 
-但是，在Dynamic Media部署中，由于资产是通过云服务交付的，因此无需将这些资产复制到AEM发布节点。 这种“混合发布”工作流程可避免复制资产的额外存储成本和更长的处理时间。 其他内容（如站点页面）继续从AEM发布节点提供。
+但是，在Dynamic Media部署中，由于资产是通过云服务交付的，因此无需将这些相同的资产复制到AEM发布节点。 这种“混合发布”工作流程可避免复制资产的额外存储成本和更长的处理时间。 其他内容（如站点页面）继续从AEM发布节点提供。
 
 这些过滤器为您提供了一种方 *法* ，可以排除资产被复制到AEM发布节点。
 
@@ -587,7 +587,7 @@ Scene7上传连接设置将AEM资产同步到Dynamic Media经典服务器。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dynamic Media视频投放</td> 
+   <td>动态媒体视频投放</td> 
    <td>过滤视频</td> 
    <td>开始 <strong>视频/</strong></td> 
    <td>现成的“过滤器——视频”将： 

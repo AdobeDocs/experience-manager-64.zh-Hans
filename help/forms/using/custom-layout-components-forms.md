@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 0%
 
 ---
 
@@ -27,17 +30,17 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 ## 创建自定义面板布局 {#creating-a-custom-panel-layout}
 
 1. Navigate to the location `/crx/de`.
-1. 将面板布局从位置( `/libs/fd/af/layouts/panel` 例如， `tabbedPanelLayout`)复制 `/apps` 到(例如， `/apps/af-custom-layout`)。
-1. 重命名您复制到的布局 `customPanelLayout`。 更改节点和的属 `qtip` 性 `jcr:description`。 例如，将其更改为 `Custom layout - Toggle tabs`。
+1. 将面板布局从位 `/libs/fd/af/layouts/panel` 置(例如， `tabbedPanelLayout`)复 `/apps` 制到(例如 `/apps/af-custom-layout`)。
+1. 重命名您复制到的布局 `customPanelLayout`。 更改节点和的属 `qtip` 性 `jcr:description`。 例如，将它们更改为 `Custom layout - Toggle tabs`。
 
 ![自定义面板布局CRX DE快照](assets/custom.png)
 
 >[!NOTE]
 >
->将属性设 `guideComponentType`置为值 `fd/af/layouts/panel` 可确定布局是面板布局。
+>将属性设 `guideComponentType`置为该 `fd/af/layouts/panel` 值可确定该布局是面板布局。
 
 1. 将新布局 `tabbedPanelLayout.jsp` 下的文件重命名为customPanelLayout.jsp。
-1. 要引入新的样式和行为，请在节点下创建一个客户端 `etc` 库。 例如，在/etc/af-custom-layout-clientlib位置，创建节点client-library。 让节点具有类别属性af.panel.custom。 它具有以下。css和。js文件：
+1. 要引入新的样式和行为，请在节点下创建一个客户端 `etc` 库。 例如，在/etc/af-custom-layout-clientlib位置创建节点client-library。 让节点具有类别属性af.panel.custom。 它具有以下。css和。js文件：
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -111,7 +114,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 1. 要增强外观和行为，可以包含 `client library`。
 
-   此外，更新。jsp文件中包含的脚本的路径。 例如，按如下方式更 `customPanelLayout.jsp` 新文件：
+   此外，更新。jsp文件中包含的脚本的路径。 例如，按如下方 `customPanelLayout.jsp` 式更新文件：
 
    ```
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -198,8 +201,8 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 1. 在“创作”模式下打开自适应表单。 您定义的面板布局将添加到用于配置面板布局的列表。
 
-   ![自定义面板布局显示在面板布局列表中自适应表单的屏幕快照](assets/auth-layt.png) ，使用自定义面板布局 ![](assets/s1.png)![屏幕截图演示自定义布局的切换功能](assets/s2.png)
+   ![自定义面板布局显示在自适应表单的面板布局列表](assets/auth-layt.png)![屏幕快照中，使用自定义面板布局](assets/s1.png)![屏幕截图演示自定义布局的切换功能](assets/s2.png)
 
-自定义面板布局和使用该布局的自适应表单的示例ZIP。
+自定义面板布局和使用它的自适应表单的示例ZIP。
 
 [获取文件](assets/af-custom-layout.zip)

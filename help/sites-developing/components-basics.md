@@ -23,7 +23,7 @@ ht-degree: 1%
 
 开始开发新组件时，您需要了解其结构和配置的基础知识。
 
-此过程涉及阅读理论并查看标准AEM实例中的各种组件实现。 虽然AEM已转向新的标准、新式、触屏优化UI，但它仍支持经典UI，因此后一种方法略为复杂。
+此过程涉及阅读理论并查看标准AEM实例中的各种组件实现。 后一种方法略为复杂，因为尽管AEM已转向新的标准、新式、触屏优化UI，但它仍支持经典UI。
 
 ## 概述 {#overview}
 
@@ -61,11 +61,11 @@ ht-degree: 1%
 在进行任何有关开发组件的严肃讨论开始之前，您需要了解您的作者将使用的UI:
 
 * **触屏优化 UI**
-   [在AEM 5](/help/sites-developing/touch-ui-concepts.md) .6.0中作为预览引入并在6.x中扩展的标准用户界面。 它基于Adobe Marketing Cloud的统一用户体验，使用Coral UI和Granite UI [的基础技](/help/sites-developing/touch-ui-concepts.md#coral-ui) 术 [实现](/help/sites-developing/touch-ui-concepts.md#granite-ui)。
+   [AEM](/help/sites-developing/touch-ui-concepts.md) 5.6.0中作为预览引入并在6.x中扩展的标准用户界面。 它基于Adobe Marketing Cloud的统一用户体验，使用Coral UI和Granite UI [的底层技](/help/sites-developing/touch-ui-concepts.md#coral-ui) 术 [实现](/help/sites-developing/touch-ui-concepts.md#granite-ui)。
 
 * **经典UI**&#x200B;基于CQ 5.1中引入的ExtJS技术的用户界面。
 
-有关更 [多详细信息，请参阅](/help/sites-deploying/ui-recommendations.md) “客户的UI界面推荐”。
+有关 [更多详细信息，请参阅客户](/help/sites-deploying/ui-recommendations.md) 的UI界面Recommendations。
 
 可以实施组件以支持触屏优化UI、经典UI或两者。 在查看标准实例时，您还会看到最初为经典UI或触屏优化UI设计的现成组件，或者两者兼有。
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe建议利用触屏优化UI从最新技术中受益。 [AEM Modernination Tools&amp;(moderniatzion-tools.md)可让迁移更轻松。
+>Adobe建议利用触屏优化UI从最新技术中受益。 [AEM Modernination Tools&amp;(moderniatzion-tools.md)可以简化迁移。
 
 ### 内容逻辑和渲染标记  {#content-logic-and-rendering-markup}
 
@@ -83,7 +83,7 @@ HTL支持这一理 [念](https://helpx.adobe.com/experience-manager/htl/user-gui
 
 ### HTL与JSP {#htl-vs-jsp}
 
-HTL是AEM 6.0引入的一种HTML模板语言。
+HTL是AEM 6.0引入的HTML模板语言。
 
 在开发您自己的组 [件时](https://helpx.adobe.com/experience-manager/htl/user-guide.html) ，有关是使用HTL还是JSP（Java服务器页面）的讨论应该很简单，因为HTL现在是AEM的推荐脚本语言。
 
@@ -97,7 +97,7 @@ HTL和JSP都可用于为经典和触屏优化UI开发组件。 尽管有一种�
 
 要为相应的UI创建您自己的组件，请参阅（阅读此页面后）:
 
-* [触屏优化UI的AEM组件](/help/sites-developing/developing-components.md)
+* [AEM适用于触屏优化UI的组件](/help/sites-developing/developing-components.md)
 * [经典UI的AEM组件](/help/sites-developing/developing-components-classic.md)
 
 快速入门的方法是复制现有组件，然后进行所需的更改。 要了解如何创建您自己的组件并将其添加到段落系统，请参阅：
@@ -110,7 +110,7 @@ HTL和JSP都可用于为经典和触屏优化UI开发组件。 尽管有一种�
 
 使用以下工具将组件移至发布实例：
 
-* [使用包管理器](/help/sites-administering/package-manager.md) ，将您的组件添加到包中，并将它们移至另一个AEM实例。
+* [使用包管理器](/help/sites-administering/package-manager.md) ，将您的组件添加到包并将它们移动到另一个AEM实例。
 * [使用激活树复制工具](/help/sites-authoring/publishing-pages.md#manage-publication) ，复制组件。
 
 >[!NOTE]
@@ -160,7 +160,7 @@ AEM组件的结构强大而灵活，主要考虑事项有：
 组件的定义可以按如下方式进行划分：
 
 * AEM组件基于 [Sling](https://sling.apache.org/documentation.html)。
-* AEM组件（通常）位于：
+* AEM组件位于（通常）以下位置：
 
    * HTL: `/libs/wcm/foundation/components`
    * JSP: `/libs/foundation/components`
@@ -169,7 +169,7 @@ AEM组件的结构强大而灵活，主要考虑事项有：
 
    * `/apps/<myApp>/components`
 
-* AEM标准组件定义为 `cq:Component` 并包含关键元素：
+* AEM标准组件定义为 `cq:Component` 并具有关键元素：
 
    * jcr属性：
 
@@ -559,7 +559,7 @@ AEM组件的结构强大而灵活，主要考虑事项有：
 
 ## 组件层次结构和继承 {#component-hierarchy-and-inheritance}
 
-AEM中的组件受3个不同层次结构的约束：
+AEM中的组件受3个不同层次的约束：
 
 * **资源类型层次结构**
 
@@ -633,11 +633,11 @@ AEM中的组件受3个不同层次结构的约束：
 
 存储库中有许多现有配置。 您可以轻松搜索特定属性或子节点：
 
-* 要查找节点的属 `cq:editConfig` 性，例如 `cq:actions`，您可以在CRXDE Lite中使用查询 **工具** ，并使用以下XPath查询字符串进行搜索：
+* 要查找节点的属 `cq:editConfig` 性，例如 `cq:actions`，您可以在查询中使 **用CRXDE Lite** 工具，并使用以下XPath查询字符串进行搜索：
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 要查找的子节 `cq:editConfig`点，例如，可以 `cq:dropTargets`搜索类型的子节点 `cq:DropTargetConfig`; 您可以在** CRXDE Lite**中使用查询工具，并使用以下XPath查询字符串进行搜索：
+* 要查找的子节 `cq:editConfig`点，例如，可以 `cq:dropTargets`搜索类型的子节点 `cq:DropTargetConfig`; 您可以在**查询**中使用CRXDE Lite工具，并使用以下XPath查询字符串进行搜索：
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 

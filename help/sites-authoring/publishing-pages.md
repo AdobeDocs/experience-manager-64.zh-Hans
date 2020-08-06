@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1630'
+ht-degree: 87%
 
 ---
 
@@ -28,15 +31,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >一些与发布有关的术语可能会引起混淆：
 >
 >* **发布/取消发布**
-   >  这些是使内容在发布环境中公开可用（或不公开）的主要操作条款。
+   >  这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
    >
    >
 * **激活／取消激活**
-   >  这些术语与发布／取消发布同义。
+   >  这两个术语与发布/取消发布同义。
    >
    >
 * **复制**
-   >  这些是描述数据（例如，页面内容、文件、代码、用户注释）从一个环境移动到另一个环境的技术术语，例如在发布或反向复制用户注释时。
+   >  这些是描述数据（例如，页面内容、文件、代码、用户注释）从一个环境移动到另一个的技术术语，例如在发布或反向复制用户注释时。
 >
 
 
@@ -48,6 +51,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >* 将触发一个工作流，向相应的人员通知您的发布请求。
 >* 您的开发团队可能已[自定义此工作流](/help/sites-developing/workflows-models.md)。
 >* 将显示一条简短的消息，通知您工作流已经触发。
+
 >
 
 
@@ -63,7 +67,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 如果您在编辑页面，则可以直接从编辑器中发布该页面。
 
-1. Select the **Page Information** icon to open the menu and then the **Publish Page** option.
+1. 选择&#x200B;**页面信息**&#x200B;图标以打开相应的菜单，然后选择&#x200B;**发布页面**&#x200B;选项。
 
    ![screen_shot_2018-03-21at152734](assets/screen_shot_2018-03-21at152734.png)
 
@@ -72,11 +76,12 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 如果不包含要发布的引用，则将直接发布页面。
    * 如果页面包含需要发布的引用，则将在&#x200B;**发布**&#x200B;向导中列出该内容，从该向导中可以：
 
-      * Specify which of the assets/tags/etc. you want to publish together with the page, then use **Publish** to complete the process.
+      * 指定要与页面一起发布的资产/标记/等，然后使用&#x200B;**发布**&#x200B;完成该过程。
       * 使用&#x200B;**取消**&#x200B;中止操作。
+
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Selecting **Publish** will replicate the page to the publish environment. 在页面编辑器中，将显示一个确认发布操作的信息横幅。
+1. 选择&#x200B;**发布**&#x200B;会将页面复制到发布环境。在页面编辑器中，将显示一个确认发布操作的信息横幅。
 
    ![screen_shot_2018-03-21at152840](assets/screen_shot_2018-03-21at152840.png)
 
@@ -97,11 +102,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 #### 快速发布 {#quick-publish}
 
-**“快速发布** ”适用于简单的情况，可立即发布选定的页面，无需进行任何进一步交互。 正因为这一点，任何未发布的引用也将被自动发布。
+**快速发布**&#x200B;适用于一些简单的情况，可立即发布选定的页面，而无需进行任何进一步的交互。正因为这一点，任何未发布的引用也将被自动发布。
 
 要使用“快速发布”发布页面，请执行以下操作：
 
-1. Select the page or pages in the sites console and click on the **Quick Publish** button.
+1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**快速发布**&#x200B;按钮。
 
    ![screen_shot_2018-03-21at153115](assets/screen_shot_2018-03-21at153115.png)
 
@@ -117,18 +122,19 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 #### 管理发布 {#manage-publication}
 
-**“管理出版物** ”提供的选项比“快速发布”更多，允许包含子页面、自定义引用、启动任何适用的工作流以及提供在以后的日期发布的选项。
+与“快速发布”相比，**管理发布**&#x200B;提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
 
 要使用“管理发布”发布或取消发布页面，请执行以下操作：
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
+1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**管理发布**&#x200B;按钮。
 
    ![screen_shot_2018-03-21at153309](assets/screen_shot_2018-03-21at153309.png)
 
-1. 将启 **动“管理发布** ”向导。 The first step, **Options**, allows you to:
+1. 此时会启动&#x200B;**管理发布**&#x200B;向导。第一个步骤&#x200B;**选项**&#x200B;允许您：
 
    * 选择发布或取消发布选定的页面。
    * 选择立即还是在以后的日期执行该操作。
+
    稍后发布会启动一个在指定时间发布选定的一个或多个页面的工作流。相反，稍后取消发布则会启动一个在指定时间取消发布选定的一个或多个页面的工作流。
 
    如果您要稍后撤消发布/取消发布页面，请转到[“工作流”控制台](/help/sites-administering/workflows.md)以终止相应的工作流。
@@ -141,31 +147,33 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
-   您可以使用“添 **加内容** ”按钮向要发布的页面列表添加其他页面，以防您在启动“管理发布”向导之前忘记选择一个页面。
+   如果您因一时疏忽而忘记在启动“管理发布”向导之前选择某个页面，则可以使用&#x200B;**添加内容**&#x200B;按钮将其他页面添加到要发布的页面列表中。
 
    单击“添加内容”按钮会启动[路径浏览器](/help/sites-authoring/author-environment-tools.md#path-browser)以供选择内容。
 
-   Select the required pages and then click **Select** to add the content to the wizard or **Cancel **to cancel the selection and return to the wizard.
+   选择所需的页面，然后单击&#x200B;**选择**&#x200B;以将该内容添加到向导，或单击 **取消** 以取消所做的选择并返回到向导。
 
    返回到向导后，您可以选择列表中的项目以进一步配置其选项，例如：
 
    * 包括其子项。
    * 将其从选择中删除。
    * 管理其已发布的引用。
+
    ![screen_shot_2018-03-21at153450](assets/screen_shot_2018-03-21at153450.png)
 
-   Clicking **Include Children** opens a dialogue allowing you to:
+   单击&#x200B;**包括子项**&#x200B;会打开一个对话框，它允许您：
 
    * 仅包括下级子项。
    * 仅包括已修改的页面。
    * 仅包括已发布的页面。
-   Click **Add** to add the children pages to the list of pages to be published or unpublished based on the selection options. Click **Cancel** to cancel the selection and return to the wizard.
+
+   单击&#x200B;**添加**&#x200B;可根据选择的选项将子页面添加到要发布或取消发布的页面列表中。单击&#x200B;**取消**&#x200B;可取消所做的选择并返回到向导。
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
    返回到向导后，您将看到根据您在“包括子项”对话框中选择的选项添加的页面。
 
-   You can view and modify the references to be published or unpublished for a page by selecting it and then clicking the **Published References** button.
+   您可以通过选择页面，然后单击&#x200B;**已发布引用**&#x200B;按钮，来查看和修改该页面要发布或取消发布的引用。
 
    ![screen_shot_2018-03-21at153801](assets/screen_shot_2018-03-21at153801.png)
 
@@ -179,23 +187,24 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    ![screen_shot_2018-03-21at153925](assets/screen_shot_2018-03-21at153925.png)
 
-1. Click **Publish** to complete.
+1. 单击&#x200B;**发布**&#x200B;以完成。
 
    返回到站点控制台后，将显示一条确认发布的通知消息。
 
    ![screen_shot_2018-03-21at153951](assets/screen_shot_2018-03-21at153951.png)
 
-1. If the published pages are associated with workflows, they may be shown in a final **Workflows** step of the publication wizard.
+1. 如果发布的页面与工作流相关联，则这些工作流可能会显示在发布向导的最后一个步骤&#x200B;**工作流**&#x200B;中。
 
    >[!NOTE]
    >
-   >The **Workflows** step will be shown based on what rights your user may or may not have. See the [previous note on this page](/help/sites-authoring/publishing-pages.md) regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md) for details.
+   >将根据用户可能拥有也可能没有的权限显示&#x200B;**工作流**&#x200B;步骤。See the [previous note on this page](/help/sites-authoring/publishing-pages.md) regarding publishing privileges as well as [Managing Access to Workflows](/help/sites-administering/workflows-managing.md) and [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md) for details.
 
    资源将按触发的工作流分组，并且每组都提供了用于执行以下操作的选项：
 
    * 定义工作流的标题。
    * 保留工作流包，前提是工作流具有[多资源支持](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)。
    * 在选择保留工作流包的选项时，定义工作流包的标题。
+
    Click **Publish** or **Publish Later **to complete the publication.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
@@ -204,7 +213,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 取消发布页面将从发布环境中删除该页面，以便不再将其提供给您的读者。
 
-In a [manner similar to publishing](/help/sites-authoring/publishing-pages.md#publishing-pages), one or more pages can be unpublished:
+通过[与发布类似的方式](/help/sites-authoring/publishing-pages.md#publishing-pages)，可以取消发布一个或多个页面：
 
 * [从页面编辑器中](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [从站点控制台中](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
@@ -217,8 +226,8 @@ In a [manner similar to publishing](/help/sites-authoring/publishing-pages.md#pu
 
 正如[使用“管理发布”选项发布页面](/help/sites-authoring/publishing-pages.md#manage-publication)一样，也可以使用它来取消发布页面。
 
-1. Select the page or pages in the sites console and click on the **Manage Publication** button.
-1. 将启 **动“管理发布** ”向导。 在第一步的“选 **项**”中，选择“取消发布 **”，而不是“发布”的默认** 选项 ****。
+1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**管理发布**&#x200B;按钮。
+1. 此时会启动&#x200B;**管理发布**&#x200B;向导。在第一个步骤&#x200B;**选项**&#x200B;中，选择&#x200B;**取消发布**，而不是默认选项&#x200B;**发布**。
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -235,7 +244,7 @@ In a [manner similar to publishing](/help/sites-authoring/publishing-pages.md#pu
 您可以使用站点控制台上的[管理发布](/help/sites-authoring/publishing-pages.md#manage-publication)选项来完成此操作。
 
 1. 在站点控制台中，选择您希望发布或取消发布的树的根页面，然后选择&#x200B;**管理发布**。
-1. 将启 **动“管理发布** ”向导。 选择发布或取消发布以及应在何时开始，然后选择&#x200B;**下一步**&#x200B;以继续。
+1. 此时会启动&#x200B;**管理发布**&#x200B;向导。选择发布或取消发布以及应在何时开始，然后选择&#x200B;**下一步**&#x200B;以继续。
 1. 在&#x200B;**范围**&#x200B;步骤中，选择根页面，然后选择&#x200B;**包括子项**。
 
    ![chlimage_1-56](assets/chlimage_1-56.png)
@@ -244,6 +253,7 @@ In a [manner similar to publishing](/help/sites-authoring/publishing-pages.md#pu
 
    * 仅包括下级子项
    * 仅包括已发布的页面
+
    这些选项默认处于选中状态，因此您必须记得取消选择它们。单击&#x200B;**添加**&#x200B;以确认并将内容添加到发布/取消发布。
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
@@ -252,9 +262,9 @@ In a [manner similar to publishing](/help/sites-authoring/publishing-pages.md#pu
 
    ![screen_shot_2018-03-21at154237](assets/screen_shot_2018-03-21at154237.png)
 
-   Remember that you can also review the references to be published via the **Published References** option.
+   请记住，您还可以通过&#x200B;**已发布引用**&#x200B;选项查看要发布的引用。
 
-1. [按正常方式继续“管理发布](#manage-publication) ”向导，以完成树的发布或取消发布。
+1. [按正常方式继续“管理发布](#manage-publication) ”向导，以完成发布或取消发布树。
 
 ## 确定发布状态 {#determining-publication-status}
 
@@ -264,13 +274,13 @@ In a [manner similar to publishing](/help/sites-authoring/publishing-pages.md#pu
 
    ![screen_shot_2018-03-21at154336](assets/screen_shot_2018-03-21at154336.png)
 
-   发布状态显示在站 [点控制台的卡](/help/sites-authoring/basic-handling.md#card-view)、 [列和](/help/sites-authoring/basic-handling.md#column-view)列表视图中 [](/help/sites-authoring/basic-handling.md#list-view) 。
+   站点控制台的[卡片](/help/sites-authoring/basic-handling.md#card-view)、[列](/help/sites-authoring/basic-handling.md#column-view)和[列表](/help/sites-authoring/basic-handling.md#list-view)视图中将显示发布状态。
 
-* In the [timeline](/help/sites-authoring/basic-handling.md#timeline)
+* 在[时间轴](/help/sites-authoring/basic-handling.md#timeline)中
 
    ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 
-* In the [Page Information menu](/help/sites-authoring/author-environment-tools.md#page-information) when editing a page
+* 在[“页面信息”菜单](/help/sites-authoring/author-environment-tools.md#page-information)中（编辑页面时）
 
    ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)
 

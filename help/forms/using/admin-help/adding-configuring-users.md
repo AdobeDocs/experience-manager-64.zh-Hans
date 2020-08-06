@@ -40,7 +40,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您遇到用户的任何登录问题，请参 [阅JEE用户上的AEM Forms无法在OSGi端上的AEM Forms登录](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html)。
+   >如果您遇到用户的任何登录问题，请参阅 [JEE上的AEM Forms用户无法在OSGi端的AEM Forms上登录](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html)。
 
 ## 用户设置 {#user-settings}
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 确保用户ID是唯一的。 请勿使用已分配给已删除用户的版本。
 
-AEM表单无法区分用户ID和密码相同但属于不同域的用户帐户。 要避免此问题，请勿在多个域上创建具有相同用户ID的帐户。
+AEM表单无法区分具有相同用户ID和密码但属于不同域的用户帐户。 要避免此问题，请勿在多个域上创建具有相同用户ID的帐户。
 
 使用SQL Server作为数据库时，无法创建超过255个字符的用户ID。
 
@@ -155,20 +155,20 @@ AEM表单无法区分用户ID和密码相同但属于不同域的用户帐户。
    * 在“入 **[!UICONTROL 列表]**”中，选 **[!UICONTROL 择用户]**。
    * 选择域，选择要显示的项目数，然后单击“查 **[!UICONTROL 找”]**。
 
-1. 选中用户对应的复选框，单击“删 **[!UICONTROL 除]**”，然后单击 **[!UICONTROL “确定”]**。
+1. 选中用户对应的复选框，单击“删 **[!UICONTROL 除]**”，然后单击 **[!UICONTROL “确定]**”。
 
 >[!NOTE]
 >
->AEM Forms on JEE还允许在OSGi上运行的AEM Forms Add-on的用户被识别为AEM用户。 在需要在JEE上的AEM Forms和在OSGi上运行的AEM Forms Add-on之间进行单点登录（例如，HTML工作区）的情况下，此选项是必需的。 上述删除操作仅从JEE上的AEM Forms中删除用户。 该用户不会从运行于OSGi环境上的AEM Forms Add-on中删除。 但是，删除用户后进行的任何登录尝试(AEM Forms Add-on JEE服务器或OSGi环境上的AEM Forms Add-on的登录尝试)均被拒绝。
+>AEM Forms在JEE上还允许在OSGi上运行的AEM表单加载项的用户被识别为AEM用户。 对于在JEE上的AEM Forms和在OSGi上运行的AEM表单加载项之间需要单点登录（例如，HTML工作区）的情况，这是必需的。 上述删除操作仅从JEE上的AEM Forms删除用户。 未从运行在OSGi环境上的AEM Forms加载项中删除该用户。 但是，删除用户后进行的任何登录尝试(登录到AEM FormsJEE加载项服务器或AEM FormsOSGi环境上的登录尝试)均被拒绝。
 
 ## 创建自定义登录错误处理程序 {#create-custom-login-error-handler}
 
-如果用户没有必需的AEM表单和CQ权限，尝试登录嵌入在CQ中的以下应用程序，则会将用户重定向到包含错误跟踪的默认CQ 404页：
+如果用户没有必需的AEM表单和CQ权限，则尝试登录嵌入在CQ中的以下应用程序，该用户将被重定向到包含错误跟踪的默认CQ 404页：
 
 * 通信管理解决方案
-* AEM Forms Workspace
+* AEM forms Workspace
 
-   ***注&#x200B;**: AEM表单发行版中已弃用Flex工作空间。*
+   ***注&#x200B;**: Flex工作区已弃用于AEM表单发布。*
 
 * 表单管理器
 * 进程报告

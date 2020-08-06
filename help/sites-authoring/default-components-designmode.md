@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 80%
 
 ---
 
@@ -86,6 +89,7 @@ In addition to these, various other components are also available. You can use D
 
    * 允许的组件
    * 设置
+
    **允许的组件**
 
    On the **Allowed Components** tab, you define which components are available for the parsys.
@@ -95,6 +99,7 @@ In addition to these, various other components are also available. You can use D
    * 减号表示至少选中了组中的一个而并非所有项目。
    * 可按名称进行搜索来筛选组件。
    * 无论是否应用了筛选器，组件组名称右侧列出的数字都表示这些组中选定组件的总数。
+
    此配置是按页面组件来定义。如果子页面也使用相同的模板和/或页面组件（通常一致），那么会将相同的配置应用到相应的段落系统。
 
    >[!NOTE]
@@ -121,7 +126,7 @@ In addition to these, various other components are also available. You can use D
 
    ![](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
-   在设计对话框中，您可以根据可用的设计参数配置组件。
+   在设计对话框中，可以根据可用的设计参数配置组件。
 
    ![screen_shot_2018-03-22at103530](assets/screen_shot_2018-03-22at103530.png)
 
@@ -130,6 +135,7 @@ In addition to these, various other components are also available. You can use D
    * 主要
    * 功能
    * 样式
+
    **属性**
 
    **属性**&#x200B;选项卡允许您配置组件的重要设计参数。例如，对于图像组件，您可以定义允许的图像最大和最小大小。

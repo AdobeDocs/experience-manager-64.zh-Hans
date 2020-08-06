@@ -1,6 +1,6 @@
 ---
-title: Barcoded Forms Service Java APIQ快速开始(SOAP)
-seo-title: Barcoded Forms Service Java APIQ快速开始(SOAP)
+title: BarcodedForms服务Java APIQ快速开始(SOAP)
+seo-title: BarcodedForms服务Java APIQ快速开始(SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Barcoded Forms Service Java API快速开始(SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+# BarcodedForms服务Java API快速开始(SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
-Java API快速开始(SOAP)可用于Barcoded Forms服务：
+Java API快速开始(SOAP)可用于BarcodedForms服务：
 
 [快速开始（SOAP模式）: 使用Java API解码条形码表单数据](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
@@ -28,7 +28,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->使用AEM Forms编程中的快速开始基于JBoss Application Server和Microsoft Windows操作系统上部署的Forms Server。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>“使用AEM Forms进行编程”中的快速开始基于部署在JBoss Application Server和Microsoft Windows操作系统上的Forms服务器。 但是，如果您使用的是其他操作系统（如UNIX），请将Windows特定路径替换为适用操作系统支持的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参 [阅设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速开始（SOAP模式）: 使用Java API解码条形码表单数据 {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 

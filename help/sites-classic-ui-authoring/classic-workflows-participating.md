@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 98%
 
 ---
 
@@ -62,7 +65,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 选择工作流步骤，然后单击顶部导航栏中的&#x200B;**完成**&#x200B;按钮。
 1. 在显示的对话框中，选择&#x200B;**下一步**；也就是接下来要执行的步骤。下拉列表会显示所有适当的目标。您还可以输入&#x200B;**评论**。
 
-   ![工作流程完整](assets/workflowcomplete.png)
+   ![工作流程完成](assets/workflowcomplete.png)
 
    列出的步骤数取决于工作流模型的设计。
 

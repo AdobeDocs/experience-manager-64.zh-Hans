@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 93%
 
 ---
 
@@ -28,8 +31,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe不计划进一步增强此功能（管理潜在客户和列表）。\
->建议利用 [Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md)。
+>Adobe不打算进一步增强此功能(管理潜在客户和列表)。\
+>建议利用 [Adobe Campaign和AEM集成](/help/sites-administering/campaign.md)。
 
 ## 为新闻稿创建列表 {#creating-a-list-for-the-newsletter}
 

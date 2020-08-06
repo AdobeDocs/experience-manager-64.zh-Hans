@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1264'
+ht-degree: 62%
 
 ---
 
@@ -56,7 +59,7 @@ To do this, see the [Templates documentation](/help/sites-developing/page-templa
 
 1. 在 siteadmin 中启动。
 1. 滚动浏览树结构以找到所选网站中要创建表单的位置。
-1. **选择**&#x200B;新建&#x200B;**>**&#x200B;新建页面…….
+1. Select **New** > **New page...**.
 1. Select either **Adobe Campaign Profile (AC 6.1)** or **Adobe Campaign Profile (ACS)** template and enter the page properties.
 
    >[!NOTE]
@@ -80,7 +83,7 @@ Adobe Campaign 的专用表单具有特定的组件。这些组件提供了一�
 此部分仅详细介绍了 Adobe Campaign 的特定链接。For more information on a more general overview of how to use forms in Adobe Experience Manager, see [Editmode components](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. 导航到要编辑的表单。
-1. **在工具箱中，选择“页**&#x200B;面&#x200B;**”>“**&#x200B;页面属性……”然后，转到弹 **出窗口的** “云服务”选项卡。
+1. In the toolbox, select **Page** > **Page Properties...** then go to the **Cloud Services** tab of the pop-up window.
 1. Add the Adobe Campaign service by clicking **Add service**, and then selecting the configuration that corresponds to your Adobe Campaign instance in the service&#39;s drop down list. 在设置实例之间的连接时会执行此配置。For more information, see [Connecting AEM to Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
@@ -94,6 +97,7 @@ Adobe Campaign 的专用表单具有特定的组件。这些组件提供了一�
    * **Adobe Campaign: 保存配置文件**：允许您在 Adobe Campaign 中创建或更新收件人（默认值）。
    * **Adobe Campaign: 订阅服务**：允许您在 Adobe Campaign 中管理收件人的订阅。
    * **Adobe Campaign: 取消订阅服务**：允许您在 Adobe Campaign 中取消收件人的订阅。
+
    The **Action Configuration** field lets you specify whether or not you would like to create the recipient profile in the Adobe Campaign database if it does not yet exist. To do this, check the **Create user if not existing** option.
 
 1. 通过将所选组件从工具箱拖放到表单中来添加它们。有关可用的 Adobe Campaign 特定组件的更多信息，请参阅 [Adobe 表单组件](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)。
@@ -116,7 +120,7 @@ Adobe Campaign 的专用表单具有特定的组件。这些组件提供了一�
 
 >[!NOTE]
 >
->You must have an **Encryted Primary Key** component on each form. 在组件中，选择Adobe Campaign，以便只显示这些组件。
+>You must have an **Encryted Primary Key** component on each form. 在“组件”中，选择“Adobe Campaign”，以便只显示那些组件。
 >
 >在此过程中，虽然您手动输入了 EPK 编号，但实际上，用户可以在新闻稿中获得此页面的链接（无论是取消订阅、订阅还是更新配置文件）。EPK 会根据用户自动进行更新。
 >

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be4a856-951b-4cb6-8103-8004052c63a0
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 78%
 
 ---
 
@@ -28,7 +31,7 @@ Adobe建议您在上传主3D模型文件之前或同时上传所有引用的文�
 ## 上传 3D 资产的最佳实践 {#best-practices-for-uploading-d-assets}
 
 * 通常，不会限制您在 AEM Assets 文件夹层次结构中上传 3D 内容的位置。但是，AEM 3D 的自动文件依赖关系解析存在范围限制，以便控制搜索大型资产存储库所需的时间。因此，Adobe 建议您在上传 3D 资产及其文件依赖项时，应在合理的范围（通用祖父文件夹）内对每个文件执行此操作。解析文件依赖关系后，您可以将 3D 资产及其依赖项随意移动到存储库中的任意位置，而不会丢失已建立的关系。
-* Adobe建议您在*上传之前*确定3D内容的一致文件夹结构。 下面的提示建议了一些您可以采取的方法：
+* Adobe建议您在*上传之前，为3D内容*确定一致的文件夹结构。 下面的提示建议了一些您可以采取的方法：
 
    * **为您上传的每个 3D 资产建立一个单独的文件夹**。
 
@@ -54,7 +57,7 @@ Adobe建议您在上传主3D模型文件之前或同时上传所有引用的文�
 
 ## 监测您上传的 3D 文件的处理状态 {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. 每个上传的3D模型通常会经历以下4-6个有序处理阶段：
+In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. 每个上传的3D模型通常经历以下4-6个有序处理阶段：
 
 <table> 
  <tbody> 
@@ -80,7 +83,7 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   </tr> 
   <tr> 
    <td>4</td> 
-   <td>创建光图</td> 
+   <td>创建光照图</td> 
    <td>可选。允许您提高交互式预览的质量，并快速使用默认渲染器进行渲染。</td> 
   </tr> 
   <tr> 

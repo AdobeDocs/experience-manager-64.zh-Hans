@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 93%
 
 ---
 
@@ -89,7 +92,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 配置以下可控制行为的营销活动属性：
 
-* **优先级：**&#x200B;该营销活动相对于其他营销活动的优先级。当多个营销活动同时开启时，优先级最高的营销活动将控制访客体验。
+* **优先级：**&#x200B;该营销活动相对于其他营销活动的优先级。当多个活动同时打开时，具有最高优先级的活动将控制访客体验。
 * **“开始时间”和“结束时间”：**&#x200B;这两个属性可控制营销活动对访客体验的控制时间段。“开始时间”属性控制营销活动开始控制体验的时间。“结束时间”属性控制营销活动停止控制体验的时间。
 * **图像：**&#x200B;在 AEM 中表示营销活动的图像。
 * **云服务：**&#x200B;与营销活动集成的云服务配置。（请参阅[与 Adobe Marketing Cloud 集成](/help/sites-administering/marketing-cloud.md)。）

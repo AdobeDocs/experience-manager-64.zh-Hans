@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: edc78306-5e83-45a4-a44b-ce0d21ff0f31
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 78%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
 
 ## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
 
-经典UI是面向桌面的用户界面，自CQ5（AEM的前身）起便可用。 以下创作文档主要针对此 UI 进行介绍。
+经典UI是面向桌面的用户界面，自CQ5(AEM的前身)起就提供了该界面。 以下创作文档主要针对此 UI 进行介绍。
 
 触屏优化 UI 是 AEM 的新标准用户界面，它既适用于触控设备，也适用于桌面设备。Please see the [standard authoring documentation](/help/sites-authoring/author.md) for further information.
 
 >[!NOTE]
 >
->由于触屏优化 UI 是 AEM 的标准 UI，因此不再对经典 UI 进行维护。这意味着某些功能在经典UI中不可用。
+>由于触屏优化 UI 是 AEM 的标准 UI，因此不再对经典 UI 进行维护。这意味着在经典UI中不提供某些功能。
 
 ## Concept of Authoring (and Publishing) {#concept-of-authoring-and-publishing}
 

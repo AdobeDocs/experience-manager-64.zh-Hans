@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 translation-type: tm+mt
 source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 1%
 
 ---
 
@@ -19,22 +22,22 @@ source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
 
 模板用于创建页面并定义可在所选范围内使用的组件。 模板是节点的层次结构，其结构与要创建的页面相同，但没有任何实际内容。
 
-每个模板都会为您提供一系列可供使用的组件。
+每个模板都会为您提供一系列可用组件。
 
 * 模板由组件构 [建](/help/sites-developing/components.md);
-* 组件使用并允许访问构件，这些构件用于呈现内容。
+* 组件使用和允许访问构件，这些构件用于呈现内容。
 
 >[!NOTE]
 >
->要了解如何使用CRXDE Lite开发AEM应用程序，请参阅 [使用CRXDE Lite开发](/help/sites-developing/developing-with-crxde-lite.md)。
+>要了解如何使用CRXDE Lite开发AEM应用程序，请参 [阅使用CRXDE Lite开发](/help/sites-developing/developing-with-crxde-lite.md)。
 
 模板是页面的基础。
 
-要创建页面，必须将模板(node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**)复制到site-tree中的相应位置：这是使用“网站”选项卡创建页面时会发生 **的情况** 。
+要创建页面，必须将模板(node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**)复制到站点树中的相应位置： 这是使用网站选项卡创建页面时发 **生的** 情况。
 
 此复制操作还为页面提供其初始内容（通常仅限顶级内容）和属性sling:resourceType，用于呈现页面的页面组件的路径（子节点jcr:content中的所有内容）。
 
@@ -43,16 +46,16 @@ source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
 需要考虑两个方面：
 
 * 模板本身的结构
-* 使用模板时生成的内容结构
+* 使用模板时生成的内容的结构
 
-在类型为 **cq:Template的节点下创建模板**。
+在cq:Template类型的节点下 **创建模板**。
 
 可以设置各种属性，特别是：
 
-* **jcr:title** —— 模板的标题；在创建页面时显示。
-* **jcr:description** - description for template;在创建页面时显示。
+* **jcr:title** —— 模板的标题； 创建页面时显示在对话框中。
+* **jcr:description** —— 模板的描述； 创建页面时显示在对话框中。
 
-此节点包 *含一个jcr:content(cq:PageContent)节点* ，该节点用作生成页面的内容节点的基础；此引用使用 *sling:resourceType*，用于呈现新页面实际内容的组件。
+此节点包 *含一个jcr:content(cq:PageContent)节点* ，该节点用作生成页面的内容节点的基础； 此引用使 *用sling:resourceType*，用于呈现新页面实际内容的组件。
 
 >[!NOTE]
 >
@@ -60,6 +63,7 @@ source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
 >
 >* [模板](/help/sites-developing/templates.md)
 >* [组件](/help/sites-developing/components.md)
+
 >
 
 

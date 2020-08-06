@@ -34,13 +34,13 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 >[!NOTE]
 >
->如果网页上有一个具有只读权限的用户访问的Dynamic Media组件，则分页符和组件无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断； 由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
+>如果具有只读权限的用户访问了网页上的Dynamic Media组件，则分页符和组件无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断； 由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
 >  
->要避免此问题，请确保AEM Sites用户具有访问资产所需的权限。
+>要避免此问题，请确保AEM Sites用户具有访问资产的必要权限。
 
 1. 在 AEM 中，打开您要添加 Dynamic Media 组件的页面。
 1. 在页面左侧的面板中（可能需要切换侧面板的显示），单击组件 **[!UICONTROL 图标]** 。
-1. 在“ **[!UICONTROL 组件]** ”标题下，在下拉列表中选择 **[!UICONTROL Dynamic Media]**。 如果没有列表Dynamic Media组件可用，您可能需要启用要使用的Dynamic Media组件。 See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
+1. 在“ **[!UICONTROL 组件]** ”标题下方的下拉列表中，选择 **[!UICONTROL Dynamic Media]**。 如果没有可用的Dynamic Media组件列表，您可能需要启用要使用的Dynamic Media组件。 See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
@@ -67,15 +67,15 @@ To add the dynamic media functionality to assets you use on your websites, you c
    ![允许的组件](/help/assets/assets-dm/allowed-components.png)
 
 1. 滚动直到您看到 **[!UICONTROL Dynamic Media]**。
-1. 点按Dynamic Media左侧的>图 **[!UICONTROL 标]** ，展开列表，选择要启用的Dynamic Media组件。
+1. 点按Dynamic Media左侧的> **[!UICONTROL 图标]** ，展开列表，选择要启用的Dynamic Media组件。
 
    ![Dynamic Media组件列表](/help/assets/assets-dm/dm-components-select.png)
 
 1. 在布局容器页面的右上 **[!UICONTROL 角附近]** ，点按完成（复选标记）图标。
 
-1. 在工具栏右侧页面顶部附近的下拉列表中，点按 **[!UICONTROL 初始内容]**, [然后像往常一样将Dynamic Media组件](#adding-a-dynamic-media-component-to-a-page) 添加到页面。
+1. 在工具栏右侧页面顶部附近的下拉列表中，点按 **[!UICONTROL 初始内容]**, [然后照常向页面添加Dynamic Media组件](#adding-a-dynamic-media-component-to-a-page) 。
 
-## 本地化Dynamic Media组件 {#localizing-dynamic-media-components}
+## 将Dynamic Media组件本地化 {#localizing-dynamic-media-components}
 
 您可以通过以下两种方式之一本地化Dynamic Media组件：
 
@@ -91,7 +91,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 ## Dynamic Media components {#dynamic-media-components}
 
-Dynamic Media和交互式媒体位于组件的 [!UICONTROL Dynamic Media] 选项 [!UICONTROL 卡下]。 对于任何交互式资产（例如交互式视频、交互式图像或传送集），请使用[!UICONTROL 交互式媒体]组件。对于所有其他 Dynamic Media 资产，请使用 Dynamic Media 组件。
+Dynamic Media和交互式媒体位于组件中 [!UICONTROL 的Dynamic] Media选 [!UICONTROL 项卡下]。 对于任何交互式资产（例如交互式视频、交互式图像或传送集），请使用[!UICONTROL 交互式媒体]组件。对于所有其他 Dynamic Media 资产，请使用 Dynamic Media 组件。
 
 >[!NOTE]
 >
@@ -105,9 +105,9 @@ Dynamic Media组件是智能的——根据您添加的是图像还是视频，�
 
 >[!NOTE]
 >
->如果具有只读权限的用户访问的网页上存在Dynamic Media组件、交互式媒体组件或两者，则分页符和组件将无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断； 由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
+>如果具有只读权限的用户访问的网页上存在Dynamic Media组件、交互式媒体组件或两者，则分页符和组件无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断； 由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
 >  
->要避免此问题，请确保AEM Sites用户具有访问资产所需的权限。
+>要避免此问题，请确保AEM Sites用户具有访问资产的必要权限。
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
 * **[!UICONTROL 查看器]**&#x200B;预设从下拉菜单中选择现有的视频查看器预设。 如果未显示您要查找的查看器预设，则可能需要将其显示出来。请参阅管理查看器预设。
 
-* **[!UICONTROL 查看器]**&#x200B;修饰符查看器修饰符采用名称=值对和分隔符的形式，允许您根据《Adobe查看器参考指南》中的概述更改查看器。 查看器修饰符的示例为posterimage=img.jpg&amp;caption=text.vtt,1
+* **[!UICONTROL 查看器修饰]**&#x200B;符查看器修饰符采用名称=值对和分隔符的形式，允许您根据《Adobe查看器参考指南》中的概述更改查看器。 查看器修饰符的示例为posterimage=img.jpg&amp;caption=text.vtt,1
 
    例如，通过查看器修饰符，您可以执行以下操作：
 
@@ -217,9 +217,9 @@ You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UI
 
 >[!NOTE]
 >
->如果具有只读权限的用户访问的网页上存在Dynamic Media组件、交互式媒体组件或两者，则分页符和组件将无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断； 由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
+>如果具有只读权限的用户访问的网页上存在Dynamic Media组件、交互式媒体组件或两者，则分页符和组件无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断； 由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
 > 
->要避免此问题，请确保AEM Sites用户具有访问资产所需的权限。
+>要避免此问题，请确保AEM Sites用户具有访问资产的必要权限。
 
 ![chlimage_1-541](assets/chlimage_1-541.png)
 
@@ -256,18 +256,18 @@ You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UI
 
 如果未显示您要查找的查看器预设，请检查以确保其已发布。 您必须先发布查看器预设，然后才能使用它们。 请参阅[管理查看器预设](managing-viewer-presets.md)。
 
-### 使用HTTP/2投放Dynamic Media资源 {#using-http-to-delivery-dynamic-media-assets}
+### 使用HTTP/2投放Dynamic Media资产 {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 投放Dynamic Media资源现在可以通过HTTP/2，从而提供更好的响应和加载时间。
+HTTP/2是新的、经过更新的Web协议，它改进了浏览器和服务器的通信方式。 它提供更快的信息传输，并减少所需的处理能力。 Dynamic Media资产的投放现在可以通过HTTP/2，从而提供更好的响应和加载时间。
 
-有 [关通过Dynamic Media](http2.md) 帐户开始使用HTTP/2的完整详细信息，请参阅内容的HTTP2投放。
+有 [关使用Dynamic Media帐户](http2.md) HTTP/2入门的完整详细信息，请参阅内容的HTTP2投放。
 
 >[!MORELIKETHIS]
 >
->* [了解AEMDynamic Media的色彩管理](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
->* [在AEMDynamic Media中使用自定义视频缩略图](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
->* [了解带有AEMDynamic Media的资产查看器](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
->* [在AEMDynamic Media中使用交互式视频](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
->* [在AEMDynamic Media中使用视频播放器](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
->* [在AEMDynamic Media中使用图像锐化](https://helpx.adobe.com/experience-manager/6-4/assets/using/best-practices-for-optimizing-the-quality-of-your-images.html)
+>* [使用AEM Dynamic Media了解颜色管理](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
+>* [将自定义视频缩略图与AEM Dynamic Media结合使用](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [使用AEM Dynamic Media了解资产查看器](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
+>* [将交互式视频与AEM Dynamic Media结合使用](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
+>* [在AEM Dynamic Media中使用视频播放器](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
+>* [将图像锐化与AEM Dynamic Media结合使用](https://helpx.adobe.com/experience-manager/6-4/assets/using/best-practices-for-optimizing-the-quality-of-your-images.html)
 

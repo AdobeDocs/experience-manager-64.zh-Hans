@@ -41,7 +41,7 @@ ht-degree: 34%
 
 A public certificate allows you to authenticate your profile on [!DNL Adobe Developer Console].
 
-1. 在用户 [!DNL Experience Manager] 界面中，访问 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 旧]**&#x200B;版Cloud Service。
+1. 在用户 [!DNL Experience Manager] 界面中，访问 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL 旧]**&#x200B;版Cloud Services。
 
 1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
 
@@ -119,7 +119,7 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
 
 要配置集成，请使用Adobe开 [!UICONTROL 发人员控制台集]成中的 [!UICONTROL TECHNICAL ACCOUNT ID]、ORGANIZATION ID [!UICONTROL 、]CLIENT SECRET [!UICONTROL 和CLIENT ID] 字段的值。 创建智能标记云配置允许对部署中的API请求进行 [!DNL Experience Manager] 身份验证。
 
-1. 在中 [!DNL Experience Manager]，导航到 **[!UICONTROL 工具>Cloud Service>旧Cloud Service]** ，以打开 [!UICONTROL Cloud Service控] 制台。
+1. 在中 [!DNL Experience Manager]，导航到 **[!UICONTROL 工具>Cloud Service>旧Cloud Services]** ，以打开 [!UICONTROL Cloud Services控] 制台。
 
 1. 在资产 **[!UICONTROL 智能标记下]**，打开以上创建的配置。 在服务设置页面上，单击 **[!UICONTROL 编辑]**。
 

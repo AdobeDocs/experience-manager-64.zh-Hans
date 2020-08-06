@@ -1,8 +1,8 @@
 ---
 title: 为以AEM Forms为中心的工作流步骤动态选择用户或用户组
 seo-title: 为以AEM Forms为中心的工作流步骤动态选择用户或用户组
-description: '了解如何在运行时为AEM Forms工作流选择用户或用户组。 '
-seo-description: '了解如何在运行时为AEM Forms工作流选择用户或用户组。 '
+description: '了解如何在运行时为AEM Forms工作流选择用户或组。 '
+seo-description: '了解如何在运行时为AEM Forms工作流选择用户或组。 '
 uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
@@ -18,11 +18,11 @@ ht-degree: 1%
 
 # 为以AEM Forms为中心的工作流步骤动态选择用户或用户组 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
-了解如何在运行时为AEM Forms工作流选择用户或用户组。
+了解如何在运行时为AEM Forms工作流选择用户或组。
 
 在大型组织中，有要求动态选择流程的用户。 例如，根据座席与客户的接近程度选择现场座席来为客户服务。 在这种情况下，将动态选择代理。
 
-在OSGi上指定以表单为中 [心的任务的工作流和Adobe Sign步骤](/help/forms/using/aem-forms-workflow.md) ，提供动态选择用户的选项。 您可以使用ECMAScript或OSGi捆绑包动态选择“指定任务”步骤的被分派人，或选择“签名文档”步骤的签署人。
+在OSGi上指定以任务 [为中心的工作流的Forms和Adobe Sign步骤](/help/forms/using/aem-forms-workflow.md) ，提供动态选择用户的选项。 您可以使用ECMAScript或OSGi捆绑包动态选择“指定任务”步骤的被分派人，或选择“签名文档”步骤的签署人。
 
 ## 使用ECMAScript动态选择用户或用户组 {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
@@ -48,13 +48,13 @@ ECMAScript是一种脚本语言。 它用于客户端脚本和服务器应用程
       |--- |--- |--- |
       | jcr:title | 字符串 | 指定脚本的名称。 例如，选择最近的字段代理。 此名称显示在分配任务和签名文档步骤中。 |
 
-   1. 单击“ **全部保存**”。 该脚本可在AEM工作流的组件中进行选择。
+   1. 单击“ **全部保存**”。 脚本可在AEM Workflow的组件中进行选择。
 
       ![脚本](assets/script.png)
 
 ### 范例ECMAScript可动态选择用户或用户组 {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
-以下示例ECMAScript动态选择“分配”任务步骤的被分派人。 在此脚本中，根据有效负荷的路径选择用户。 在使用此脚本之前，请确保脚本中提及的所有用户都存在于AEM中。 如果脚本中提及的用户在AEM中不存在，则相关进程可能会失败。
+以下示例ECMAScript动态选择“分配”任务步骤的被分派人。 在此脚本中，根据有效负荷的路径选择用户。 在使用此脚本之前，请确保脚本中提及的所有用户都存在于AEM中。 如果AEM中不存在脚本中提到的用户，则相关进程可能会失败。
 
 ```
 function getParticipant() {
@@ -78,7 +78,7 @@ var path = workflowData.getPayload().toString();
 
 >[!NOTE]
 >
->在使用ECMAScript for Adobe Sign时，脚本必须位于crx-repository的/apps/fd/workflow/scripts/adobesign/中，并应具有一个名为getAdobeSignRecipients的函数，以返回用户的列表。
+>在使用ECMAScript forAdobe Sign时，脚本必须位于crx-repository中/apps/fd/workflow/scripts/adobesign/，并且应具有一个名为getAdobeSignRecipients的函数，以返回用户的列表。
 
 ```
 function getAdobeSignRecipients() {
@@ -117,9 +117,9 @@ function getAdobeSignRecipients() {
 
 ## 使用Java界面动态选择用户或用户组 {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-您可以使用 [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java界面动态选择Adobe Sign的用户或用户组并分配任务步骤。 您可以创建一个使用RecipientInfoSpecifier Java界 [面的OSGi捆绑](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) ，并将其部署到AEM Forms服务器。 它使该选项可在AEM Workflow的分配任务和Adobe Sign组件中进行选择。
+您可以使用 [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java界面动态选择用户或用户组以执行Adobe Sign和分配任务步骤。 您可以创建使用RecipientInfoSpecifier Java界面的 [OSGi捆绑包](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) ，并将其部署到AEM Forms服务器。 它使该选项可在AEM工作流的“分配任务”和“Adobe Sign”组件中进行选择。
 
-您需要 [AEM Forms Client](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) SDK jar和 [granite jar文件来编译下面列出的代](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 码示例。 将这些jar文件作为外部依赖关系添加到OSGi捆绑项目。 您可以使用任何Java IDE创建OSGi捆绑。 以下过程提供了使用Eclipse创建OSGi捆绑包的步骤：
+您需要 [AEM Forms客户](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) SDK jar [和granite jar文](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 件来编译下面列出的代码示例。 将这些jar文件作为外部依赖关系添加到OSGi捆绑项目。 您可以使用任何Java IDE创建OSGi捆绑。 以下过程提供了使用Eclipse创建OSGi捆绑包的步骤：
 
 1. 打开Eclipse IDE。 导航到 **[!UICONTROL 文件]**> **[!UICONTROL 新建项目]**。
 1. 在“选择向导”屏幕上，选择“创 **[!UICONTROL 建项目]**”，然后单 **[!UICONTROL 击“下一步]**”。
@@ -231,13 +231,13 @@ function getAdobeSignRecipients() {
 
    `mvn clean install`
 
-1. 将捆绑包上传到AEM Forms服务器。 您可以使用AEM包管理器将包导入AEM Forms服务器。
+1. 将捆绑包上传到AEM Forms服务器。 可以使用AEM Package Manager将捆绑包导入AEM Forms服务器。
 
-导入捆绑包后，Adobe Sign和分配任务步骤中将提供选择Java界面以动态选择用户或用户组的选项。
+导入捆绑包后，选择Java界面以动态选择用户或用户组的选项在Adobe Sign和分配任务步骤中变为可用。
 
 ### 动态选择用户或用户组的示例Java代码 {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
-以下示例代码动态选择Adobe Sign步骤的被分派人。 您在OSGi捆绑中使用该代码。 在使用下面列出的代码之前，请确保代码中提到的用户信息（电子邮件地址和电话号码）正确。 如果代码中提到的用户信息不正确，则相关过程可能失败。
+以下示例代码动态选择Adobe Sign步骤的受分派人。 您在OSGi捆绑中使用该代码。 在使用下面列出的代码之前，请确保代码中提到的用户信息（电子邮件地址和电话号码）正确。 如果代码中提到的用户信息不正确，则相关过程可能失败。
 
 ```java
 /*************************************************************************

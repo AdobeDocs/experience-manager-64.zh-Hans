@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 52%
@@ -37,7 +37,7 @@ AEM 3D 支持基于图像的照明 (IBL)，以便使用内置的 Adobe Rapid Ref
 
 * **扩散照明环境图** 像——此类图像应为HDR图像，但可能相对较小，因为在将图像用于扩散照明之前，会对图像进行大量过滤。
 * **反射环境图像** -此类图像用于在对象表面中创建反射。 它可以是标准 8 位 RGB 图像，该图像的大小和分辨率提供所需的反射质量和锐化。如果指定了 HDR 图像，AEM 3D 会预先使用专有算法将其转换为 8 位 RGB。
-* **背景环境图** 像——此类图像用作背景。 它可以是标准 8 位 RGB 图像，并且应当具有舞台背景所需的大小/分辨率/细节级别。如果指定了 HDR 图像，AEM 3D 会使用专有算法将其转换为 8 位 RGB。 ``
+* **背景环境图** 像——此类图像用作背景。 它可以是标准 8 位 RGB 图像，并且应当具有舞台背景所需的大小/分辨率/细节级别。如果指定了 HDR 图像，AEM 3D 会使用专有算法将其转换为 8 位 RGB。
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ AEM 3D 支持基于图像的照明 (IBL)，以便使用内置的 Adobe Rapid Ref
    <td><p>允许您调整模拟太阳的补充光源的方向和强度。 <span class="diff-html-added">该光源增加照明亮度并使物体将投影投射到地面上。 使用 Rapid Refine 进行渲染时，支持使用 Google Chrome 预览投影；但是，目前不支持使用其他浏览器进行预览。</span></p> 
     <ul> 
      <li><strong>纬度</strong> -太阳光源的垂直位置(<code>0.0</code>-<code>1.0</code>)。<br /> 设置为 <code>0.0</code> 水平线(扩散照明环境图像的垂直中心); <code>1.0</code> 位于最高点(扩散照明环境图像的上边缘)。</li> 
-     <li><strong>long</strong> —— 太阳光源的水平<code>0.0</code>位置(<code>1.0</code>-)。<br /> 设置为0.0时，左边对应； 1.0对应于扩散照明环境图像的右边缘。<br /> </li> 
+     <li><strong>long</strong> —— 太阳光源的水平<code>0.0</code>位置(<code>1.0</code>-)。<br /> 设置为0.0时，左边对应；1.0对应于扩散照明环境图像的右边缘。<br /> </li> 
      <li><strong>亮</strong> -太阳光源的亮度。 增加此值可使太阳光源变亮；减少此值可使太阳光源变暗。<br /> 关闭补充 <code>0</code> 照明并禁用投影的设置。 该参数不影响环境反射。<br /> </li> 
     </ul> </td> 
   </tr> 

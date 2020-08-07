@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '9242'
 ht-degree: 0%
@@ -305,7 +305,10 @@ We.Finance会不时检查其信用卡应用程序的性能，以检查客户可�
 1. 现在，使用以下url在Chrome浏览器中多次打开表单：
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] 在下次打开表单之前 **，从** 浏览器的cookie持久性中删除名为mbox的cookie。 您将随机看到表单的体验A和B。
+
+   >[!NOTE]
+   >
+   >在下次打开表单之前 **，从** 浏览器的cookie持久性中删除名为mbox的cookie。 您将随机看到表单的体验A和B。
 
 1. 选择表单，单击 **更多**，然后单 **击A/B测试报告**。 您在报告中找不到太多数据，因为您刚刚开始测试。 现在，让我们提供一些种子数据，了解A/B测试报告的外观。
 
@@ -552,13 +555,19 @@ We.Finance会不时检查其抵押申请的表现，以检查客户可能面临�
 1. 现在，使用以下url在Chrome浏览器中多次打开表单：
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] 在下次打开表单之前 **，从** 浏览器的cookie持久性中删除名为mbox的cookie。 您将随机看到表单的体验A和B。
+
+   >[!NOTE]
+   >
+   >在下次打开表单之前 **，从** 浏览器的cookie持久性中删除名为mbox的cookie。 您将随机看到表单的体验A和B。
 
 1. 选择表单，单击 **更多**，然后单 **击A/B测试报告**。 您在报告中找不到太多数据，因为您刚刚开始测试。 现在，让我们提供一些种子数据，了解A/B测试报告的外观。
 
 1. 打开CRXDE Lite并备份以下文件： /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. 将上述文件中 `onReportLoadSuccess` 的函数定义替换为以下文件中的函数定义： /apps/we-finance/demo-artifacts/targetreport.js
-   >[!NOTE] 这些更改仅用于演示目的。 确保完成此过程后恢复文件内容。
+
+   >[!NOTE]
+   >
+   >这些更改仅用于演示目的。 确保完成此过程后恢复文件内容。
 
 1. 刷新您生成的报表，您将看到类似以下内容的内容。 查看报告仪表板。
 

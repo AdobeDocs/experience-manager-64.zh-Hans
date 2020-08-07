@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 translation-type: tm+mt
-source-git-commit: 4d1c3bcc4262781d7032273504ccf41e36f5c3a5
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '6010'
 ht-degree: 26%
@@ -237,7 +237,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 在创作环境中单击缩略图时，将显示“快速 **[!UICONTROL 视图]** ”对话框的预览。
 
-![chlimage_1-129](assets/chlimage_1-127.png)
+![chlimage_1-127](assets/chlimage_1-127.png)
 
 您可以选择创建自己的自定义交互式视频查看器预设。 您可以确定视频播放器的样式、交互式缩略图以及显示在视频末尾的缩略图网格视图。
 
@@ -277,7 +277,7 @@ If you have already uploaded your video and thumbnail assets, proceed to [Adding
 
 **[!UICONTROL 在当]** 前的创 **[!UICONTROL 建／编辑会话中]** ，页面右上角附近支持撤消和重做选项。
 
-保存交互式视频后，视频会立即打开到预览。 您可以从中选择交互式视频查看器预设并播放视频，大致了解交互式视频将如何呈现给客户。
+保存交互式视频后，视频会立即打开到预览。您可以从中选择交互式视频查看器预设并播放视频，大致了解交互式视频将如何呈现给客户。
 
 **为视频添加交互性**:
 
@@ -447,7 +447,7 @@ If you have already uploaded your video and thumbnail assets, proceed to [Adding
       </ul> 
        <ul> 
        <li>指定体验片段在视频中的显示方式，如同其宽度和高度一样。</li>
-       </ul><strong>注意</strong>: 请注意，在体验片段中嵌入查看器时，不支持交互式视频中的社交媒体共享工具。 要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。</p></tr>&lt; 
+       </ul><strong>注意</strong>:请注意，在体验片段中嵌入查看器时，不支持交互式视频中的社交媒体共享工具。 要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。</p></tr>&lt; 
       <tr> 
       <td>编辑已分配给缩略图的操作</td> 
       <td>在某个时间轴区段内，点按其文本标签右侧带有链式链接的缩略图。该链式链接表示已向该缩略图分配操作。点按<strong>操作</strong>选项卡以进行更改。</td> 
@@ -506,7 +506,7 @@ If you have already uploaded your video and thumbnail assets, proceed to [Adding
 
 1. 发布交互式视频。发布后会创建嵌入代码或 URL，最后您需要将该嵌入代码或 URL 复制并粘贴到您的网站体验。
 
-   如果您使用Quickviews添加交互性，则只使用嵌入代码； 如果您通过超链接的网页添加了交互性，则还可以使用已发布的URL。 但是，请注意，如果您的交互式内容包含与相对URL(特别是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
+   如果您使用Quickviews添加交互性，则只使用嵌入代码；如果您通过超链接的网页添加了交互性，则还可以使用已发布的URL。 但是，请注意，如果您的交互式内容包含与相对URL(特别是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
 
    请参阅[发布资产](publishing-dynamicmedia-assets.md)。
 
@@ -533,7 +533,7 @@ See [Publishing Assets](publishing-dynamicmedia-assets.md) for details on how to
 
    请参阅[在网页上嵌入视频查看器或图像查看器](embed-code.md)。
 
-   如果您使用Quickviews添加交互性，则只使用嵌入代码； 如果您通过超链接的网页添加了交互性，则还可以使用已发布的URL。 但是，请注意，如果您的交互式内容包含与相对URL(特别是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
+   如果您使用Quickviews添加交互性，则只使用嵌入代码；如果您通过超链接的网页添加了交互性，则还可以使用已发布的URL。 但是，请注意，如果您的交互式内容包含与相对URL(特别是指向AEM Sites页面的链接)的链接，则无法使用基于URL的链接方法。
 
 1. 在目标网页代码中，找到静态视频所在的位置。
 
@@ -545,7 +545,7 @@ See [Publishing Assets](publishing-dynamicmedia-assets.md) for details on how to
 
 >[!NOTE]
 至此，如果您只是通过超链接的网页添加交互性，您就已经完成了所有操作。
-但是，如果您为触发概览而添加了任何交互性，则交互式视频旁边的缩略图仅用于显示目的； 它们尚未与您现有的Quickviews集成。 在这种情况下，您现在需要将交互式视频与网站上的现有Quickviews相集成。
+但是，如果您为触发概览而添加了任何交互性，则交互式视频旁边的缩略图仅用于显示目的；它们尚未与您现有的Quickviews集成。 在这种情况下，您现在需要将交互式视频与网站上的现有Quickviews相集成。
 
 **示例**
 
@@ -662,7 +662,7 @@ AEM返回的嵌入代码已具有现成的事件处理程序。 它被注释掉�
 
 因此，只需取消上面突出显示的代码片断的注释，并将虚拟处理程序主体替换为特定网页的特定代码。
 
-标准嵌入代码中存在两个默认回调处理函数： `quickViewActivate` 和 `initComplete`。 在查 `quickViewActivate` 看器中单击缩略图时，处理函数会触发。 使用它将查看器与Quickview激活逻辑集成。 当查 `initComplete` 看器加载到页面中时，处理函数只触发一次。 此处理函数用于调整网页DOM中的Quickview对话框位置。
+标准嵌入代码中存在两个默认回调处理函数： `quickViewActivate` 和 `initComplete`。 在查 `quickViewActivate` 看器中单击缩略图时，处理函数会触发。 使用它将查看器与Quickview激活逻辑集成。 当查 `initComplete` 看器加载到页面时，处理函数只触发一次。 此处理函数用于调整网页DOM中的Quickview对话框位置。
 
 构建Quickview URL的过程与识别本主题前面介绍的缩略图变量的过程相反。 使用我们之前标识的Quickview URL示例，您可以了解在各种情况下如何构建Quickview URL:
 

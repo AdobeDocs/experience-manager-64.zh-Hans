@@ -3,7 +3,7 @@ title: 在网页中使用页面跟踪器和嵌入代码
 description: 了解如何在网站代码中包含页面跟踪器和嵌入JavaScript代码，使Adobe Analytics能够捕获围绕资源的使用数据。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
@@ -33,9 +33,9 @@ ht-degree: 0%
                 assetAnalytics.charsLimitForGET = 2000; // bytes
                 assetAnalytics.dispatcher.init("assetstesting","xxxx","xxx","list1","eVar3","event8","event7");
             </script>
-                    
+
     </head>
-                
+
     <body>
 
                                 <img
@@ -46,7 +46,7 @@ ht-degree: 0%
 
         <a
             href="https://www.adobe.com"
-        
+
             onclick="assetAnalytics.core.assetClicked(this);return false">
                 <img
                     src="http://localhost/xxxx/content/dam/test/xyz.jpg"
@@ -75,7 +75,6 @@ ht-degree: 0%
                 assetAnalytics.charsLimitForGET = 2000; // bytes
                 assetAnalytics.dispatcher.init("assetstesting","abc.net","bee","list1","eVar3","event8","event7");
             </script>
-                                                
  </head>
 ```
 
@@ -94,7 +93,7 @@ ht-degree: 0%
 
         <a
             href="https://www.adobe.com"
-        
+
             onclick="assetAnalytics.core.assetClicked(this);return false">
            <img
                     src="http://localhost:4502/xxxx/content/dam/test/xyz.jpg"

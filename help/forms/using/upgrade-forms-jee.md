@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 0%
@@ -125,7 +125,9 @@ ht-degree: 0%
 
       如果创建数据库的新实例，请将步骤3中备份的数据导入数据库。 有关如何将数据导入数据库的信息，请参阅相应数据库供应商的文档。
 
-      >[!NOTE] 如果您使用RDBMK持久性格式，请对在JEE上的AEM Forms上运行的存储库持久性和文档服务使用单一数据库。
+      >[!NOTE]
+      >
+      >如果您使用RDBMK持久性格式，请对在JEE上的AEM Forms上运行的存储库持久性和文档服务使用单一数据库。
 
 
 1. 执行升级：
@@ -133,17 +135,23 @@ ht-degree: 0%
    1. 通过运行安装项目，在新服务器上的JEE上安装AEM 6.4Forms。 安装程序将所有所需文件放在计算机上的一个安装目录结构中。
    1. 安装完成后，运行Configuration **Manager** ，以配置各种AEM Forms模块并设置适当的配置。 除了配置设置之外，它还允许指定全局数据存储(GDS)和crx-repository的路径。
 
-      >[!NOTE] 在升级任务选择屏幕上，选 **[!UICONTROL 择从Adobe Experience Manager Forms6.2.0升级]** 。 从 **[!UICONTROL Adobe Experience Manager Forms6.2.0升级选项]** ，配置管理器可从LiveCycleES3升级到AEM 6.4Forms。
+      >[!NOTE]
+      >
+      >在升级任务选择屏幕上，选 **[!UICONTROL 择从Adobe Experience Manager Forms6.2.0升级]** 。 从 **[!UICONTROL Adobe Experience Manager Forms6.2.0升级选项]** ，配置管理器可从LiveCycleES3升级到AEM 6.4Forms。
 
    1. (AEM Forms文档安全模块不需要)升级CRX存储库并将其导入AEM 6.4Forms服务器。
 
-      >[!NOTE] 升级crx-repository并迁移内容后，请更改管理员帐户的口令。 有关详细说明，请 [参阅更改现有用户的口令](/help/sites-administering/granite-user-group-admin.md)。
+      >[!NOTE]
+      >
+      >升级crx-repository并迁移内容后，请更改管理员帐户的口令。 有关详细说明，请 [参阅更改现有用户的口令](/help/sites-administering/granite-user-group-admin.md)。
 1. 根据您的用例，执行部署后任务以验证登录凭据、配置文档服务、通信管理、文档安全等。
 1. 验证服务器是否成功升级：
 
    对升级后的AEM Forms服务器执行几个常规操作，以确保成功升级服务器。 您可以填写并提交一些迁移的表单或保护文档以确保成功升级。
 
-   >[!NOTE] 在AEM 6.4Forms,crx-repository的结构已更改。 升级到AEM 6.4表单后，请使用您重新创建的更改路径进行自定义。 有关更改路径的完整列表，请参 [阅AEM 6.4中的Forms存储库重组](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)。
+   >[!NOTE]
+   >
+   >在AEM 6.4Forms,crx-repository的结构已更改。 升级到AEM 6.4表单后，请使用您重新创建的更改路径进行自定义。 有关更改路径的完整列表，请参 [阅AEM 6.4中的Forms存储库重组](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)。
 
 **根据您现有的环境和应用程序服务器，选择以下文档之一并按照详细说明操作：**
 

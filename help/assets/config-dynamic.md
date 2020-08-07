@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '7833'
 ht-degree: 1%
@@ -156,7 +156,7 @@ Dynamic Media —— 需要启用并配置混合功能以供使用。 根据您�
 
    如果要发布到s7投放，则还需要包含以下trustStore参数：
 
-   ```
+   ```shell
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
    
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -172,7 +172,7 @@ Dynamic Media —— 需要启用并配置混合功能以供使用。 根据您�
 
       图像服务器日志文件名的示例： `ImageServer-57346-2019-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access日志记录通过和向Dynamic Media发出的每个 `/is/image` 请求 `/is/content`。
-   这些日志仅在启用Dynamic Media时才使用。 它们不包含在从 **system/console** /status-Bundlelist页 **[!UICONTROL 面生成的“下载完整包]** ”中； 如果您遇到Dynamic Media问题，请致电客户支持，将这两个日志附加到该问题。
+   这些日志仅在启用Dynamic Media时才使用。 它们不包含在从 **system/console** /status-Bundlelist页 **[!UICONTROL 面生成的“下载完整包]** ”中；如果您遇到Dynamic Media问题，请致电客户支持，将这两个日志附加到该问题。
 
 ### 如果将AEM安装到其他端口或上下文路径…… {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -218,7 +218,7 @@ Dynamic Media —— 需要启用并配置混合功能以供使用。 根据您�
 
 如果您要将AEM Dynamic Media从6.3升级到6.4(现在包括零停机时间（也称为“选择加入”）部署)，则需要运行以下curl命令，以将所有预设和配置从迁移到 `/etc``/conf` CRXDE Lite中。
 
-**注意**: 如果在兼容模式下运行AEM实例，则无需运行这些命令，即已安装兼容性打包。
+**注意**:如果在兼容模式下运行AEM实例，则无需运行这些命令，即已安装兼容性打包。
 
 要将自定义预设和配置从迁移 `/etc` 到 `/conf`，请运行以下Linux curl命令：
 
@@ -272,7 +272,7 @@ Dynamic Media图像投放的工作方式是从AEM作者发布图像资产（包�
 
 1. 在“编 **[!UICONTROL 辑User Settings For dynamic-media]** -replication”页面上 **[!UICONTROL ，展开“从KeyStore]** 添加私钥”文件区域，并添加以下内容（请参阅下面的图像）:
 
-   * 在“ **[!UICONTROL 新别名]** ”字段中，输入稍后在复制配置中使用的别名名称； 例如， **复制**。
+   * 在“ **[!UICONTROL 新别名]** ”字段中，输入稍后在复制配置中使用的别名名称；例如， **复制**。
    * 点按 **[!UICONTROL 密钥存储文件]**。 导航到按Adobe提供给您的KeyStore文件，选择它，然后点按打 **[!UICONTROL 开]**。
    * 在“KeyStore **[!UICONTROL 文件口令]** ”字段中，输入KeyStore文件口令。 这不是 _您在_ 第5步中创建的KeyStore密码，而是KeyStore文件密码Adobe在设置过程中发送给您的欢迎电子邮件中提供的密码。 如果您未收到KeyStore文件密码，请与Adobe客户服务部门联系。
    * 在“ **[!UICONTROL 私钥密码]** ”字段中，输入私钥密码（可能与上一步中提供的私钥密码相同）。 Adobe在配置过程中向您发送的欢迎电子邮件中提供私钥密码。 如果您未收到私钥密码，请与Adobe客户服务联系。
@@ -292,9 +292,9 @@ Dynamic Media图像投放的工作方式是从AEM作者发布图像资产（包�
 1. 点按设 **[!UICONTROL 置]** 选项卡，然后输入以下内容：
 
    * **[!UICONTROL 启用]** -选中此复选框可启用复制代理。
-   * **[!UICONTROL 区域]** -设置为相应的区域： 北美、欧洲或亚洲
+   * **[!UICONTROL 区域]** -设置为相应的区域：北美、欧洲或亚洲
    * **[!UICONTROL 租户ID]** —— 此值是发布到复制服务的公司/租户的名称。 此值是Adobe在设置过程中在向您发送的欢迎电子邮件中提供的租户ID。 如果您未收到此信息，请与Adobe客户服务联系。
-   * **[!UICONTROL 密钥存储别名]** -此值与在设置身份验证中生成密钥时设置的**新别名** [值相同](#setting-up-authentication); 例如 `replication`, (请参阅设置身 [份验证中的步骤](#setting-up-authentication)7。)
+   * **[!UICONTROL 密钥存储别名]** -此值与在设置身份验证中生成密钥时设置的**新别名** [值相同](#setting-up-authentication);例如 `replication`, (请参阅设置身 [份验证中的步骤](#setting-up-authentication)7。)
    * **[!UICONTROL 密钥存储密码]** -这是您在点击创建密钥存储时创建的 **[!UICONTROL KeyStore密码]**。 Adobe不提供此密码。 请参阅设置身 [份验证的第5步](#setting-up-authentication)。
 
    下图显示了具有示例数据的复制代理：
@@ -333,7 +333,7 @@ Replication test succeeded
 
 在设置身份验证时，您可能会遇到以下一些问题，这些问题与他们的解决方案一起使用。 在检查这些复制之前，请确保已设置复制。
 
-#### 问题： HTTP状态代码401（带有消息）-需要授权 {#problem-http-status-code-with-message-authorization-required}
+#### 问题：HTTP状态代码401（带有消息）-需要授权 {#problem-http-status-code-with-message-authorization-required}
 
 此问题可能是由于用户未能设置KeyStore而引 `dynamic-media-replication` 起的。
 
@@ -356,9 +356,9 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**解决方案**: 检查是否 `KeyStore` 已保存 **[!UICONTROL 到Dynamic Media Replication用户]** ，并且提供了正确的密码。
+**解决方案**:检查是否 `KeyStore` 已保存 **[!UICONTROL 到Dynamic Media Replication用户]** ，并且提供了正确的密码。
 
-#### 问题： 无法解密密钥——无法解密数据 {#problem-could-not-decrypt-key-could-not-decrypt-data}
+#### 问题：无法解密密钥——无法解密数据 {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -372,9 +372,9 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**解决方案**: 检查密码。 复制代理中保存的密码与用于创建密钥库的密码不同。
+**解决方案**:检查密码。 复制代理中保存的密码与用于创建密钥库的密码不同。
 
-#### 问题： InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
+#### 问题：InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
 此问题由AEM作者实例中的配置错误引起。 作者上的java进程未获得正确的结果 `javax.net.ssl.trustStore`。 复制日志中显示此错误：
 
@@ -392,9 +392,9 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**解决方案**: 确保AEM作者上的java进程将系统属 **性-Djavax.net.ssl.trustStore=** 设置为有效的truststore。
+**解决方案**:确保AEM作者上的java进程将系统属 **性-Djavax.net.ssl.trustStore=** 设置为有效的truststore。
 
-#### 问题： KeyStore未设置或未初始化 {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### 问题：KeyStore未设置或未初始化 {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 此问题可能由热修复或覆盖Dynamic Media用户或密钥 **[!UICONTROL 库节点的功能包]****[!UICONTROL 引起]** 。
 
@@ -425,7 +425,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. 点按 **[!UICONTROL 测试连接]** ，以验证配置是否有效。
 
-#### 问题： 发布代理使用SSL而不是OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
+#### 问题：发布代理使用SSL而不是OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 此问题可能是由于修补程序或功能包安装不正确或覆盖设置所致。
 

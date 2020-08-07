@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: 9bfd332b419f0d4e180a7db2545e8434f37c683b
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 1%
@@ -198,22 +198,22 @@ AEM是一个要部署的战争文件。
    * Tomcat在安装时不允许管理员和管理者访问。 因此，您必须手动编辑才 `tomcat-users.xml` 能允许访问这些帐户：
 
       * 编辑 `tomcat-users.xml` 以包含管理员和管理者的访问权限。 配置应类似于以下示例：
-      * 
 
-         ```
-         <?xml version='1.0' encoding='utf-8'?>
-          <tomcat-users>
-          <role rolename="manager"/>
-          <role rolename="tomcat"/>
-          <role rolename="admin"/>
-          <role rolename="role1"/>
-          <role rolename="manager-gui"/>
-          <user username="both" password="tomcat" roles="tomcat,role1"/>
-          <user username="tomcat" password="tomcat" roles="tomcat"/>
-          <user username="admin" password="admin" roles="admin,manager-gui"/>
-          <user username="role1" password="tomcat" roles="role1"/>
-          </tomcat-users>
-         ```
+      ```xml
+        <?xml version='1.0' encoding='utf-8'?>
+         <tomcat-users>
+         <role rolename="manager"/>
+         <role rolename="tomcat"/>
+         <role rolename="admin"/>
+         <role rolename="role1"/>
+         <role rolename="manager-gui"/>
+         <user username="both" password="tomcat" roles="tomcat,role1"/>
+         <user username="tomcat" password="tomcat" roles="tomcat"/>
+         <user username="admin" password="admin" roles="admin,manager-gui"/>
+         <user username="role1" password="tomcat" roles="role1"/>
+         </tomcat-users>
+      ```
+
    * 如果要使用上下文根“/”部署AEM，则必须更改现有ROOT Web应用程序的上下文根：
 
       * 停止和取消部署ROOT Web应用程序
@@ -226,12 +226,12 @@ AEM是一个要部署的战争文件。
       并将max-file-size和max-request-size增加到至少500MB，请参见此类文 `multipart-config` 件的以下示例 `web.xml` :
 
       ```
-        <multipart-config>
-         <!-- 500MB max -->
-         <max-file-size>524288000</max-file-size>
-         <max-request-size>524288000</max-request-size>
-         <file-size-threshold>0</file-size-threshold>
-         </multipart-config>
+      <multipart-config>
+       <!-- 500MB max -->
+       <max-file-size>524288000</max-file-size>
+       <max-request-size>524288000</max-request-size>
+       <file-size-threshold>0</file-size-threshold>
+       </multipart-config>
       ```
 
 

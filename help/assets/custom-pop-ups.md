@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1063'
 ht-degree: 3%
 
 ---
@@ -110,7 +110,7 @@ Dynamic Media中的以下查看器支持快速查看：
    * 交互式图像查看器： [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 交互式视频查看器： [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 您现在需要配置quickViewActivate“”处理程序。
+1. 您现在需要配置处理 `quickViewActivate` 程序。
 
    quickViewActivate处理函数控制查看器中的Quickview。 该处理函数包含变量列表和函数调用，以便与Quickview一起使用。 嵌入代码为概览中设置的SKU变量以及示例loadQuickView函数调用提供映射。
 
@@ -189,7 +189,7 @@ Dynamic Media中的以下查看器支持快速查看：
    </div>
    ```
 
-1. 添加一个函数以更新弹出窗口中的sku值； 通过替换在步骤5中创建的简单函数使弹出窗口可见。 与以下内容集成：
+1. 添加一个函数以更新弹出窗口中的sku值；通过替换在步骤5中创建的简单函数使弹出窗口可见。 与以下内容集成：
 
    ```xml
    <script type="text/javascript">

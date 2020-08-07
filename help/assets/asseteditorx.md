@@ -3,7 +3,7 @@ title: 扩展资产编辑器
 description: 了解如何使用自定义组件扩展资产编辑器的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 13%
@@ -47,7 +47,7 @@ AEM Assets组件使用WCM edit clientlib的扩展。 客户端库通常加载到
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-示例将此javascript源加载 `head.jsp`到(`/apps/geometrixx/components/asseteditor/head.jsp`)中。
+该示例在()中加 `head.jsp`载此`/apps/geometrixx/components/asseteditor/head.jsp`JavaScript源。
 
 ### 其他样式表 {#additional-style-sheets}
 
@@ -59,9 +59,9 @@ AEM Assets组件使用WCM edit clientlib的扩展。 客户端库通常加载到
 
 ### Geometrixx样式表 {#geometrixx-style-sheet}
 
-示例页面组件要求所有选择器开始 `.asseteditor` 为 `static.css` ()`/etc/designs/geometrixx/static.css`。 最佳实践： 将所有选 `.asseteditor` 择器复制到样式表，并根据需要调整规则。
+示例页面组件要求所有选择器开始 `.asseteditor` 为 `static.css` ()`/etc/designs/geometrixx/static.css`。 最佳实践：将所有选 `.asseteditor` 择器复制到样式表，并根据需要调整规则。
 
-### 表单选择器： 对最终加载的资源的调整 {#formchooser-adjustments-for-eventually-loaded-resources}
+### 表单选择器：对最终加载的资源的调整 {#formchooser-adjustments-for-eventually-loaded-resources}
 
 资产编辑器使用表单选择器，您只需添加一个表单选择器和表单到资产URL的路径，即可在同一表单页面上编辑资源（在本例中为资产）。
 

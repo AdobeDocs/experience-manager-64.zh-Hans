@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -233,14 +233,20 @@ AEM中包含的节点类型的基本定义如下：
 
    该属性的特殊 `cq:movedTo` 值是 `nirvana`: 在删除标记但无法从存储库中删除该标记时应用该标记，因为存在必须 `cq:movedTo` 保留的子标记。
 
-   >[!NOTE]仅当 `cq:movedTo` 满足以下任一条件时，属性才会添加到已移动或合并的标记：
+   >[!NOTE]
+   >
+   >仅当 `cq:movedTo` 满足以下任一条件时，属性才会添加到已移动或合并的标记：
+   >
    >1. 标记用于内容（即它有引用）或
    >1. 标记包含已移动的子项。
 
 
 * `cq:backlinks` 使引用保持在另一个方向，即保留已移动到标记B或与标记B合并的所有标记的列表。这通常要求在移动／合并／删除标记B以及激活标记B时使属性保持最新，在这种情况下，必须同时激活其所有背景标记。 `cq:movedTo`
 
->[!NOTE]仅当 `cq:backlinks` 满足以下任一条件时，属性才会添加到已移动或合并的标记：
+>[!NOTE]
+>
+>仅当 `cq:backlinks` 满足以下任一条件时，属性才会添加到已移动或合并的标记：
+>
 >1. 标记用于内容（即它有引用）或
 >1. 标记包含已移动的子项。
 

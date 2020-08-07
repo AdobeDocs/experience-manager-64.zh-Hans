@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2293'
 ht-degree: 0%
 
 ---
@@ -82,13 +82,11 @@ AEM中慢查询有3种主要分类，按严重性列出：
 
 * **查询生成器查询**
 
-   * 
-
-      ```
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=my:tag
-      ```
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=my:tag
+   ```
 
 * **查询计划**
 
@@ -100,24 +98,20 @@ AEM中慢查询有3种主要分类，按严重性列出：
 
 * **cq:tags索引规则**
 
-   * 
-
-      ```
-      /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-       @name=jcr:content/cq:tags
-       @propertyIndex=true
-      ```
-
+       &quot;
+ /     oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+     @name=jcr:content/cq:tags
+     @propertyIndex=trueChign
+    &quot;
+   
 * **查询生成器查询**
 
-   * 
-
-      ```
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=myTagNamespace:myTag
-      ```
-
+       &quot;
+ type=cq     :
+ page property=jcr:content/cq:tagsproperty     
+ value=myTagNamespace:myTag     
+    &quot;
+   
 * **查询计划**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -152,7 +146,7 @@ AEM中慢查询有3种主要分类，按严重性列出：
 
 #### 部署后 {#post-deployment-2}
 
-* 监视日志，以发现触发大节点遍历或大堆内存消耗的查询: &quot;
+* 监视日志，以查看触发大节点遍历或大堆内存消耗的查询: &quot;
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * 优化查询以减少遍历的节点数
@@ -193,21 +187,18 @@ AEM支持以下查询语言：
 
    * **未优化查询**
 
-      * 
+      ```
+       property=jcr:content/contentType
+       property.value=article-page
+      ```
 
-         ```
-          property=jcr:content/contentType
-          property.value=article-page
-         ```
    * **优化查询**
 
-      * 
-
-         ```
-          type=cq:Page 
-          property=jcr:content/contentType 
-          property.value=article-page
-         ```
+      ```
+       type=cq:Page 
+       property=jcr:content/contentType 
+       property.value=article-page
+      ```
    查询缺少nodetype限制力，AEM采用nodetype, `nt:base` 而AEM中的每个节点都是nodetype的子类型，有效地导致了nodetype限制。
 
    设置 `type=cq:Page` 将此查询限制为 `cq:Page` 仅节点，并将查询解析为AEM cqPageLucene，将结果限制为AEM中的一个节点(仅 `cq:Page` 节点)子集。
@@ -216,22 +207,19 @@ AEM支持以下查询语言：
 
    * **未优化查询**
 
-      * 
+      ```
+      type=nt:hierarchyNode
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
-         ```
-         type=nt:hierarchyNode
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **优化查询**
 
-      * 
-
-         ```
-         type=cq:Page
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
+      ```
+      type=cq:Page
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
    `nt:hierarchyNode` 是的父节点类 `cq:Page`型，并且假 `jcr:content/contentType=article-page` 定仅通过我们的自定 `cq:Page` 义应用程序应用于节点，此查询将只返回其 `cq:Page` 中的节点 `jcr:content/contentType=article-page`。 但这是次优限制，因为：
 
    * 其他节点继 `nt:hierarchyNode` 承自(例如 `dam:Asset`)不必要地为潜在结果集添加。
@@ -243,20 +231,17 @@ AEM支持以下查询语言：
 
    * **未优化查询**
 
-      * 
+      ```
+        property=jcr:content/contentType
+        property.value=article-page
+      ```
 
-         ```
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **优化查询**
 
-      * 
-
-         ```
-         property=jcr:content/sling:resourceType
-         property.value=my-site/components/structure/article-page
-         ```
+      ```
+      property=jcr:content/sling:resourceType
+      property.value=my-site/components/structure/article-page
+      ```
    将属性限制从 `jcr:content/contentType` （自定义值）更改为众所周知的属 `sling:resourceType` 性允许查询解析为属性索引，该属性 `slingResourceType` 索引按此索引索引所有内容 `sling:resourceType`。
 
    当查询不通过nodetype识别，并且结果集由单个属性限制时，最好使用属性索引（与Lucene属性索引相对）。
@@ -265,49 +250,43 @@ AEM支持以下查询语言：
 
    * **未优化查询**
 
-      * 
+      ```
+      type=cq:Page
+      path=/content
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
-         ```
-         type=cq:Page
-         path=/content
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **优化查询**
 
-      * 
-
-         ```
-         type=cq:Page
-         path=/content/my-site/us/en
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
+      ```
+      type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
    将路径限制范围 `path=/content`从 `path=/content/my-site/us/en` 中调整为允许索引减少需要检查的索引条目数。 当查询可以很好地限制路径时，除了 `/content` 或 `/content/dam`者，确保索引已包含 `evaluatePathRestrictions=true`。
 
-   使用注释 `evaluatePathRestrictions` 可增加索引大小。
+   使用注 `evaluatePathRestrictions` 释可增加索引大小。
 
 1. 尽可能避免查询函数／操作查询： `LIKE` 随着 `fn:XXXX` 成本的增加，基于限制的结果也会增加。
 
    * **未优化查询**
 
-      * 
+      ```
+      type=cq:Page
+      property=jcr:content/contentType
+      property.operation=like
+      property.value=%article%
+      ```
 
-         ```
-         type=cq:Page
-         property=jcr:content/contentType
-         property.operation=like
-         property.value=%article%
-         ```
    * **优化查询**
 
-      * 
-
-         ```
-         type=cq:Page
-         fulltext=article
-         fulltext.relPath=jcr:content/contentType
-         ```
+      ```
+      type=cq:Page
+      fulltext=article
+      fulltext.relPath=jcr:content/contentType
+      ```
    LIKE条件的计算速度很慢，因为如果文本开始带有通配符(“%。..”)，则无法使用索引。 jcr:contains条件允许使用全文索引，因此是首选。 这要求已解析的Lucene属性索引具有的indexRule `jcr:content/contentType` 与 `analayzed=true`。
 
    使用查询功能(如 `fn:lowercase(..)` 此类)可能更难进行优化，因为没有更快的等效功能（在更复杂、更显眼的索引分析器配置之外）。 最好确定其他范围查询限制，以改进总体的覆盖性能，要求函数在尽可能小的潜在结果集上操作。
@@ -318,51 +297,44 @@ AEM支持以下查询语言：
 
    * **未优化查询**
 
-      * 
+      ```
+      type=cq:Page
+      path=/content
+      ```
 
-         ```
-         type=cq:Page
-         path=/content
-         ```
    * **优化查询**
 
-      * 
-
-         ```
-         type=cq:Page
-         path=/content
-         p.guessTotal=100
-         ```
+      ```
+      type=cq:Page
+      path=/content
+      p.guessTotal=100
+      ```
    对于查询执行速度快但结果数量大的情况，p. `guessTotal` 是查询生成器查询的关键优化。
 
    `p.guessTotal=100` 告知查询Builder仅收集前100个结果，并设置一个布尔标志，指示是否存在至少一个结果（但不存在多少结果，因为计算此数量会导致速度变慢）。 这种优化对于分页或无限加载用例是非常有用的，在这些用例中，只增量显示结果的子集。
 
 ## 现有索引调整 {#existing-index-tuning}
 
-1. 如果最佳查询解析为属性索引，则无需执行任何操作，因为属性索引是最小可调的。
+1. 如果最佳查询解析为属性索引，则无需执行任何操作，因为属性索引是最小可调整的。
 1. 否则，查询应解析为Lucene属性索引。 如果无法解析索引，请跳到创建新索引。
 1. 根据需要，将查询转换为XPath或JCR-SQL2。
 
    * **查询生成器查询**
 
-      * 
+      ```
+      query type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      orderby=@jcr:content/publishDate
+      orderby.sort=desc
+      ```
 
-         ```
-         query type=cq:Page
-         path=/content/my-site/us/en
-         property=jcr:content/contentType
-         property.value=article-page
-         orderby=@jcr:content/publishDate
-         orderby.sort=desc
-         ```
    * **XPath从查询生成器查询生成**
 
-      * 
-
-         ```
-         /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
-         ```
-
+      ```
+      /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
+      ```
 
 1. 将XPath（或JCR-SQL2）提供给Oak [索引定义生成器](https://oakutils.appspot.com/generate/index) ，以生成优化的Lucene属性索引定义。
 
@@ -398,21 +370,17 @@ AEM支持以下查询语言：
 
    * **查询生成器查询**
 
-      * 
+      ```
+      type=myApp:Author
+      property=firstName
+      property.value=ira
+      ```
 
-         ```
-         type=myApp:Author
-         property=firstName
-         property.value=ira
-         ```
    * **XPath从查询生成器查询生成**
 
-      * 
-
-         ```
-         //element(*, myApp:Page)[@firstName = 'ira']
-         ```
-
+      ```
+      //element(*, myApp:Page)[@firstName = 'ira']
+      ```
 
 1. 将XPath（或JCR-SQL2）提供给Oak [索引定义生成器](https://oakutils.appspot.com/generate/index) ，以生成优化的Lucene属性索引定义。
 

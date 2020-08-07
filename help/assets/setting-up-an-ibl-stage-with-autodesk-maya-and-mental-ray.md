@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 69%
@@ -59,7 +59,7 @@ ht-degree: 69%
 
       * **总体质量** - `0.5` 或更少
       * **间接扩散(GI)模式** - `Final Gather`
-      * ``**Filter Size** - `2.0`, `2.0`
+      * **筛选器大小** - `2.0`、 `2.0`
    * 以您希望使用的典型图像大小渲染场景。如果需要，优化灯光或优化渲染设置，或者同时执行这两项操作，以便达到所需的效果。
 
       请注意，通过 Mental Ray 使用基于图像的照明进行渲染时，速度会非常缓慢且会消耗大量 CPU。Adobe 建议您配置最低质量设置，该设置仍能生成所需的渲染质量。

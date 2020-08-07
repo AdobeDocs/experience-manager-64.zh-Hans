@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -171,18 +171,16 @@ Product data that is maintained in hybris needs to be available in AEM. 已实�
 
 * The hybris extension provides a polling importer(&quot;hybris&quot; scheme&quot;), which can be configured to import changes into AEM at a specified interval(example, ever 24 hours where the interval is specified in seconds):
 
-   * 
-
-      ```
-      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-       {
-       * "jcr:mixinTypes": ["cq:PollConfig"],
-       * "enabled": true,
-       * "source": "hybris:outdoors",
-       * "jcr:primaryType": "cq:PageContent",
-       * "interval": 86400
-       }
-      ```
+   ```
+     http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+      {
+      * "jcr:mixinTypes": ["cq:PollConfig"],
+      * "enabled": true,
+      * "source": "hybris:outdoors",
+      * "jcr:primaryType": "cq:PageContent",
+      * "interval": 86400
+      }
+   ```
 
 * AEM中的目录配置可识别 **暂存** 和 **联机目** 录版本。
 
@@ -664,4 +662,3 @@ public class MyImportHandler extends DefaultImportHandler {
     ...
 }
 ```
-

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Adobe Sign为自适应表单启用电子签名工作流。 电子签名可改善
    * widget_write
    * workflow_read
 
-   有关为Adobe Sign应用程序配置OAuth设置并获取密钥的分步信息，请参 [阅配置应用程序开发人员文档](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) 。
+   有关为Adobe Sign应用程序配置OAuth设置并获取密钥的分步信息，请参 [阅配置应用程序开发人员文档](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) 。
 
    ![OAuth配置](assets/oauth_config.png)
 

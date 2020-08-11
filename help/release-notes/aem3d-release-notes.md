@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,13 @@ ht-degree: 0%
 
 # AEM 3D发行说明 {#aem-d-release-notes}
 
+>[!IMPORTANT]
+>
+>不再支持AEM 6.4中的AEM 3D功能包。 Adobe建议您将AEM中的3D资源功 [能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更高版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+
 AEM-6.4-DynamicMedia-3D版本3.1.0（2018年10月10日）
 
-AEM 3D功能包支持AEM Assets中的3D内容。 它提供上传、管理、预览和渲染3D资产的功能。 对单个对象（而非具有多个对象的复杂场景）的查看和渲染支持已得到优化。
+AEM 3D功能包支持AEM Assets的3D内容。 它提供上传、管理、预览和渲染3D资产的功能。 对单个对象（而非具有多个对象的复杂场景）的查看和渲染支持已得到优化。
 
 AEM 3D支持Adobe Dimension(Dn)和glTF资产类型。 这些资产类型的实施与本文档中描述的传统3D类型的实施大体不同。 请参 [阅使用Adobe Dimension资产](/help/assets/working-dimension-assets.md)。
 
@@ -114,11 +118,11 @@ See [Installing and configuring AEM 3D](/help/assets/install-config-3d.md).
 ### 兼容性 {#compatibility}
 
 * **不支持作为Windows服务运行（仅限Windows）** -此操作可能有效，但尚未对其进行测试。
-* **Dynamic Media** ( `dynamicmedia-scene7` 模式)- AEM33D与随AEM 6.4发布的新Dynamic Media解决方案的兼容性尚未完全验证。 如果Dynamic Media和AEM3D一起部署，建议您仅将3D资产及其依赖项放置在未分配给Dynamic Media的AEM Assets存储库的区域中。 此建议对于3D舞台需要但Dynamic Media不支持的32位TIFF文件尤为重要。
+* **Dynamic Media** ( `dynamicmedia-scene7` 模式)- AEM 3D与随AEM 6.4发布的新Dynamic Media解决方案的兼容性尚未完全验证。 如果Dynamic Media和AEM 3D一起部署，建议您仅将3D资产及其依赖项放置在未分配给Dynamic Media的AEM Assets存储库的某个区域。 此建议对于3D舞台所需的32位TIFF文件尤为重要，但Dynamic Media不支持。
 
 ### 常规 {#general}
 
-* **解析依赖关系** 快捷方式——此快捷键在3D资产的卡视图中可用。 卡视图卡中的资产卡会显示“未解析的依赖关系”横幅。 该快捷键会打开“ **基本属性** ”选项卡，而 **不是“依赖** ”选项卡。 解决方法： 手动导航到“依赖关系”选项卡。
+* **解析依赖关系** 快捷方式——此快捷键在3D资产的卡视图中可用。 卡视图卡中的资产卡会显示“未解析的依赖关系”横幅。 该快捷键会打开“ **基本属性** ”选项卡，而 **不是“依赖** ”选项卡。 解决方法：手动导航到“依赖关系”选项卡。
 
 * **舞台选择器不可用** -包含灯光的3D资产由AEM自动标记为3D舞台。 “详细信息”视图中没有舞台选择器可用。 要将3D资产标记为3D对象，请导航到“基 **本属性**”，将“资 **产类** ”更 **改为3D对象**，然后单 **击“**&#x200B;保存”。
 
@@ -151,7 +155,7 @@ See [Installing and configuring AEM 3D](/help/assets/install-config-3d.md).
 * **IBL舞台背景图像** -对于某些IBL场景，背景图像可能质量较差，如过亮或过模糊。 为最大限度地提高IBL舞台的图像背景的视觉质量，Adobe建议您准备单独的高分辨率8位JPEG图像，并将其作为背景环境图像附加到IBL **舞台**。
 
 * **使用IBL舞台用Maya进行渲染时显示黑色图像** -此问题可能是由于Maya找不到IBL图像依赖关系，因为舞台引用的原始IBL图像已被其他名称的图像替换。 要避免此问题，请确保Maya IBL舞台引用的三个依赖关系中至少有一个与Maya文件中的原始IBL文件引用同名。
-* **IBL舞台的反向背景图像** - IBL舞台的图像有意水平翻转，以匹配随Autodesk Maya提供的NVIDIA心理光线渲染器的行为。 解决方法： 上传用于PhotoshopIBL舞台的图像前，请翻转它们。
+* **IBL舞台的反向背景图像** - IBL舞台的图像有意水平翻转，以匹配随Autodesk Maya提供的NVIDIA心理光线渲染器的行为。 解决方法：上传用于PhotoshopIBL舞台的图像前，请翻转它们。
 * **IBL舞台的亮度** - IBL图像的自动分析可能导致场景太暗或太亮。 要调整IBL舞台的照明亮度，请导航到 **基本属性** ，并根 **据需要调** 整 **环境照** 明的亮值。
 
 ### AEM Sites3D组件 {#aem-sites-d-component}
@@ -165,4 +169,4 @@ See [Installing and configuring AEM 3D](/help/assets/install-config-3d.md).
 
 * **3D组件配置** -必须在所有活动的发布节点上安装3D功能包，并且每个节点必须配置 **CRXDE Lite** ，以使用上的相同配置选项 `/libs/settings/dam/v3D/WebGLSites`。
 
-* **发布后缺少纹理、背景** 或照明-AEM Sites **中的** “发布”机制会自动发布页面的主要依赖项，包括3D模型和3D组件引用的3D舞台。 3D舞台和3D模型通常取决于IBL图像和纹理映射的辅助资源，而站点发布机制不会自动发布这些资源。 解决方法： 在从站点发布网页之前，从资产发布所有3D资产。 这样做可确保3D资产的所有依赖关系在“发布”节点上均可用。
+* **发布后缺少纹理、背景** 或照明-AEM Sites **州的** “发布”机制会自动发布页面的主要依赖项，包括3D模型和3D组件引用的3D舞台。 3D舞台和3D模型通常取决于IBL图像和纹理映射的辅助资源，而站点发布机制不会自动发布这些资源。 解决方法：在从站点发布网页之前，从资产发布所有3D资产。 这样做可确保3D资产的所有依赖关系在“发布”节点上均可用。

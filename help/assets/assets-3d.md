@@ -1,5 +1,5 @@
 ---
-title: 使用 3D 资产
+title: 使用AEM 3D资源
 seo-title: 使用 3D 资产
 description: 了解如何在AEM 3D中使用3D资源
 seo-description: 了解如何在AEM 3D中使用3D资源
@@ -10,15 +10,19 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
-source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 6%
+source-wordcount: '1192'
+ht-degree: 5%
 
 ---
 
 
-# 使用 3D 资产 {#working-with-d-assets}
+# Working with AEM 3D assets {#working-with-d-assets}
+
+>[!IMPORTANT]
+>
+>AEM 6.4中不再支持AEM 3D。 Adobe建议您将AEM中的3D资源功 [能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更高版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 通过 AEM 3D (Adobe Experience Manager 3D)，您可以上传、管理、查看和渲染 3D 内容。单个对象的查看和渲染支持已得到优化。
 
@@ -57,7 +61,7 @@ AEM 3D允许您在称为舞台的预定义环境中视图和渲染高质量的�
 
 * Autodesk FBX(Filmbox)文件格式(`.fbx`)
 
-   Autodesk 3D文件交换格式； 二进制和ASCII格式。
+   Autodesk 3D文件交换格式；二进制和ASCII格式。
 
    在第三方应用程序中创建FBX文件时，Adobe建议使用以下配置设置（请参阅下表）。 这些设置可以帮助您为要在AEM中使用的3D文件获得最佳效果。 选项名称取自“Autodesk Maya FBX **[!UICONTROL Export Options”(自动桌面玛雅FBX导出选项]** )对话框。
 

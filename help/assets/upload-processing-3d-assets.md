@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 69%
+source-wordcount: '868'
+ht-degree: 66%
 
 ---
 
 
 # 关于 AEM 中 3D 资产的上传和处理 {#about-the-uploading-and-processing-of-d-assets-in-aem}
+
+>[!IMPORTANT]
+>
+>AEM 6.4中不再支持AEM 3D。 Adobe建议您将AEM中的3D资源功 [能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更高版本](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)。
 
 可使用标准上传或同步机制将 3D 资产及其关联的引用文件纳入 AEM Assets。
 

@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1681'
 ht-degree: 0%
 
 ---
 
 
 # 安装和配置AEM 3D {#installing-and-configuring-aem-d}
+
+>[!IMPORTANT]
+>
+>AEM 6.4中不再支持AEM 3D。 Adobe建议您将AEM中的3D资源功 [能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更高版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 AEM 3D（版本3.0）的安装和配置涉及以下事项：
 
@@ -170,7 +174,7 @@ AEM 3D（版本3.0）的安装和配置涉及以下事项：
 
    在logo-sphere.fbx页面的右上角附近，单击“舞台聚焦”图标以展开下拉菜单，然后选择 `stage-spotlights.fbx`。
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
 1. 从“舞台 **[!UICONTROL 聚焦]** ”下拉列表中，选择 `stage-helipad.fbx`。
 

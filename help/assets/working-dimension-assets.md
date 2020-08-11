@@ -10,15 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
 
 # 使用Adobe Dimension资产 {#working-with-adobe-dimension-assets}
+
+>[!IMPORTANT]
+>
+>不再支持AEM 6.4中的AEM 3D功能包。 Adobe建议您将AEM中的3D资源功 [能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更高版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) 与Adobe Dimension资产合作。
 
 AEM 3D功能包支持AEM Assets、AEM Sites和AEM Screens`.dn` 的Adobe Dimension资源（文件）。
 
@@ -33,7 +37,7 @@ AEM 3D功能包支持AEM Assets、AEM Sites和AEM Screens`.dn` 的Adobe Dimensio
 * 包含Adobe特定扩展，以在使用AdobeglTF查看器视图AEM Assets、AEM Sites或AEM Screens的Dimension资源时最大化视觉质量。 这使再现 `.glb` 与大多数第三方应用程序不兼容。
 * 排除Adobe特定扩展，以实现再现与第 `.glb` 三方应用程序的兼容性。 这限制了在AEM Assets、AEM Sites或AEM Screens（例如，没有IBL照明）观看时的视觉质量，以模拟典型的第三方应用程序的质量。
 
-将Dimension/glTF文件传输到AmazonAWS或从AWS传输，并在AWS中实现其临时存储完全安全。 这些文件在AmazonAWS中保留的时间最短； 通常在正常操作期间不超过几分钟。
+将Dimension/glTF文件传输到AmazonAWS或从AWS传输，并在AWS中实现其临时存储完全安全。 这些文件在AmazonAWS中保留的时间最短；通常在正常操作期间不超过几分钟。
 
 要启用对Dimension资产的支持，您必须从Adobe获取访问转换服务的凭据。 See [Installing and configuring AEM 3D](install-config-3d.md).
 

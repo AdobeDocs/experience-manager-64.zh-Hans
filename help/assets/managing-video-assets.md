@@ -6,7 +6,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 9ced187ddc9bb2d12922fcc734b20ef9767d8fbf
+source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 15%
@@ -85,13 +85,13 @@ AEM Assets为扩展名为MP4的视频资源生成预览。 如果资产的格式
 1. 点按 **[!UICONTROL 预览]** 图标以播放视频。
 1. 要对视频添加注释，请点 **[!UICONTROL 按注]** 释按钮。 注释会添加到视频中的特定时间点（帧）。
 
-   添加注释时，您可以在画布上绘图，并在绘图中包含注释。 注释会自动保存在Adobe Experience Manager资产中。
+   添加注释时，您可以在画布上绘图，并在绘图中包含注释。注释会自动保存在Adobe Experience Manager资产中。
 
    ![chlimage_1-204](assets/chlimage_1-204.png)
 
    要退出注释向导，请点按关 **[!UICONTROL 闭]**。
 
-1. To jump to a specific point in the video, specify the time in seconds in the text field and click **[!UICONTROL Jump]**. 例如，要跳过视频的前 秒，请在`20`文本字段中输入 10。
+1. To jump to a specific point in the video, specify the time in seconds in the text field and click **[!UICONTROL Jump]**. 例如，要跳过视频的前 20 秒，请在`20`文本字段中输入 。
 
    ![chlimage_1-205](assets/chlimage_1-205.png)
 

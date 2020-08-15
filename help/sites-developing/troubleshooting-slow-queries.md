@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: c4e18cad7bc08638af9dce6ab396554052043e16
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ AEM中慢查询有3种主要分类，按严重性列出：
 
 #### 在开发过程中 {#during-development}
 
-解 **释所有** 查询，并确保其查询计划不包含 **/&amp;ast; 在它们** 中遍历解释。 遍历查询计划的示例：
+解 **释所有** 查询，并确保其查询计划不包含 **/&amp;ast;在它们** 中遍历解释。 遍历查询计划的示例：
 
 * **计划：** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
@@ -98,20 +98,20 @@ AEM中慢查询有3种主要分类，按严重性列出：
 
 * **cq:tags索引规则**
 
-       &quot;
- /     oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-     @name=jcr:content/cq:tags
-     @propertyIndex=trueChign
-    &quot;
-   
+   ```
+   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+    @name=jcr:content/cq:tags
+    @propertyIndex=true
+   ```
+
 * **查询生成器查询**
 
-       &quot;
- type=cq     :
- page property=jcr:content/cq:tagsproperty     
- value=myTagNamespace:myTag     
-    &quot;
-   
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=myTagNamespace:myTag
+   ```
+
 * **查询计划**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -146,7 +146,7 @@ AEM中慢查询有3种主要分类，按严重性列出：
 
 #### 部署后 {#post-deployment-2}
 
-* 监视日志，以查看触发大节点遍历或大堆内存消耗的查询: &quot;
+* 监视日志，以查看触发大节点遍历或大堆内存消耗的查询:
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * 优化查询以减少遍历的节点数
@@ -267,7 +267,7 @@ AEM支持以下查询语言：
       ```
    将路径限制范围 `path=/content`从 `path=/content/my-site/us/en` 中调整为允许索引减少需要检查的索引条目数。 当查询可以很好地限制路径时，除了 `/content` 或 `/content/dam`者，确保索引已包含 `evaluatePathRestrictions=true`。
 
-   使用注 `evaluatePathRestrictions` 释可增加索引大小。
+   使用注释 `evaluatePathRestrictions` 可增加索引大小。
 
 1. 尽可能避免查询函数／操作查询： `LIKE` 随着 `fn:XXXX` 成本的增加，基于限制的结果也会增加。
 
@@ -437,7 +437,7 @@ AEM支持以下查询语言：
 
 * **[索引管理器](/help/sites-administering/operations-dashboard.md#the-index-manager)**
 
-   * 显示AEM实例上的索引的AEM Operations WebUI; 有助于了解哪些索引已经存在，可以定位或增强。
+   * 显示AEM实例上的索引的AEM Operations WebUI;有助于了解哪些索引已经存在，可以定位或增强。
 
 * **[记录](/help/sites-administering/operations-dashboard.md#log-messages)**
 

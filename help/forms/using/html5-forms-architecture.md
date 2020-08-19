@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 6f0016b6b59d27da89c41089aa4d73096846a7fb
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2038'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,7 @@ ht-degree: 0%
 
 HTML5表单功能部署为嵌入式AEM实例中的包，并使用REST风格的Apache Sling Architecture作为REST端点展 [示为HTTP/S](https://sling.apache.org/)。
 
-    [ ![01-aem-forms-architecture](assets/01-aem-forms-architecture.jpg)
-*视图全尺寸*](javascript:void(0)。md)
-
-    [ ![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0)。md)
+![02-aem-forms-architecture_large](assets/02-aem-forms-architecture_large.jpg)
 
 ### 使用Sling Framework {#using-sling-framework}
 
@@ -45,18 +42,18 @@ HTML5表单缓存处理（再现或提交）表单时所需的所有中间对象
 
 Mobile Form维护两个不同级别的缓存，PreRender缓存和Render Cache。 preRender缓存包含已解析模板的所有片段和图像，而Render缓存包含已渲染的内容（如HTML）。
 
-![HTML5表单工作流](assets/cacheworkflow.png)**图：** *HTML5表单工作流程*
+![HTML5表单工作流](assets/cacheworkflow.png)**图：***HTML5表单工作流程*
 
 HTML5表单不缓存缺少片段和图像引用的模板。 如果HTML5表单所用时间超过正常时间，请检查服务器日志中是否缺少引用和警告。 另外，请确保未达到对象的最大大小。
 
 FormsOSGi服务通过两个步骤处理请求：
 
-* **布局和初始表单状态生成**: FormsOSGi渲染服务调用Forms缓存组件以确定表单是否已缓存且未失效。 如果表单已缓存且有效，则它将从缓存中提供生成的HTML。 如果表单失效，FormsOSGi渲染服务将以XML格式生成初始表单布局和表单状态。 此XML由FormsOSGi服务转换为HTML布局和初始JSON表单状态，然后缓存以备后续请求。
-* **预填充的Forms**: 在呈现时，如果用户请求具有预填充数据的表单，FormsOSGi呈现服务将调用Forms服务容器，并生成具有合并数据的新表单状态。 但是，由于布局已在上述步骤中生成，因此此调用比第一次调用更快。 此调用仅执行数据合并并对数据运行脚本。
+* **布局和初始表单状态生成**:FormsOSGi渲染服务调用Forms缓存组件以确定表单是否已缓存且未失效。 如果表单已缓存且有效，则它将从缓存中提供生成的HTML。 如果表单失效，FormsOSGi渲染服务将以XML格式生成初始表单布局和表单状态。 此XML由FormsOSGi服务转换为HTML布局和初始JSON表单状态，然后缓存以备后续请求。
+* **预填充的Forms**:在呈现时，如果用户请求具有预填充数据的表单，FormsOSGi呈现服务将调用Forms服务容器，并生成具有合并数据的新表单状态。 但是，由于布局已在上述步骤中生成，因此此调用比第一次调用更快。 此调用仅执行数据合并并对数据运行脚本。
 
 如果表单中或表单中使用的任何资产存在任何更新，表单缓存组件会检测到它，并且该特定表单的缓存将失效。 FormsOSGi服务完成处理后，用户档案渲染器jsp将JavaScript库引用和样式添加到此表单并返回对客户端的响应。 Apache等典型Web服 [务器](https://httpd.apache.org/) ，可在此处与HTML压缩结合使用。 Web服务器将显着减小响应大小、网络流量以及在服务器和客户端计算机之间传输数据所需的时间。
 
-当用户提交表单时，浏览器将JSON格式的表单状态发送给提交服 [务代理](/help/forms/using/service-proxy.md); 然后，提交服务代理使用JSON数据生成数据XML，并提交该数据XML以提交端点。
+当用户提交表单时，浏览器将JSON格式的表单状态发送给提交服 [务代理](/help/forms/using/service-proxy.md);然后，提交服务代理使用JSON数据生成数据XML，并提交该数据XML以提交端点。
 
 ## 组件 {#components}
 
@@ -96,7 +93,7 @@ HTML5表单使用缓存优化吞吐量和响应时间。 您可以配置缓存�
   </tr> 
   <tr> 
    <td>攻击性</td> 
-   <td>缓存呈现的HTML内容<br /> 缓存在“保守”级别中缓存的所有对象。<br /> <strong>注意</strong>: 此策略可获得最佳性能，但会消耗更多内存来存储缓存的伪像。</td> 
+   <td>缓存呈现的HTML内容<br /> 缓存在“保守”级别中缓存的所有对象。<br /> <strong>注意</strong>:此策略可获得最佳性能，但会消耗更多内存来存储缓存的伪像。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -123,7 +120,7 @@ Configuration Service支持调整HTML5表单的配置参数和缓存设置。
 
 #### 脚本引擎 {#scripting-engine}
 
-AdobeXFA实现支持两种脚本语言，以支持表单中的用户定义逻辑执行： JavaScript和FormCalc。
+AdobeXFA实现支持两种脚本语言，以支持表单中的用户定义逻辑执行：JavaScript和FormCalc。
 
 HTMLForms的脚本引擎使用JavaScript编写，以支持这两种语言的XFA脚本API。
 
@@ -176,8 +173,8 @@ Sling包包含与用户档案和用户档案渲染器相关的内容。
 
 用户档案节点具有 **值xfaforms** / **用户档案的属性sling:resourceSuperType**。 此属性在内部向位于/libs/xfaforms/用户档案文件夹中的用户档案节 **点的sling脚本发送转发请求** 。 这些脚本是JSP页，它们是将HTML表单和所需的JS/CSS对象组合在一起的容器。 页面包括对以下内容的引用：
 
-* **xfaforms.I18N。&lt;locale>**: 此库包含本地化数据。
-* **xfaforms.用户档案**: 此库包含XFA脚本和布局引擎的实现。
+* **xfaforms.I18N。&lt;locale>**:此库包含本地化数据。
+* **xfaforms.用户档案**:此库包含XFA脚本和布局引擎的实现。
 
 这些库建模为CQ客户端库，它利用CQ框架JavaScript库的自动连接、缩小和压缩功能。\
 有关CQ客户端库的详细信息，请参 [阅CQ Clientlib文档](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html)。

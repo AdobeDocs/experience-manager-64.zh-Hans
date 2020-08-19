@@ -7,7 +7,7 @@ uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 4a1be7a5a233557dff0e7cd3796380532f23d5eb
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 0%
@@ -95,7 +95,7 @@ AEM 6.4 Communities在“社区站点”控制台中的现有社区站点上提�
 
 ## 管理UGC和用户用户档案 {#managing-ugc-and-user-profiles}
 
-AEM Communities将用户数据保护置于社区体验的核心， [它提供开箱即用的API](user-ugc-management-service.md)[和示例servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)。 这些API有助于批量管理（批量删除和批量导出）用户生成的内容和删除用户用户档案，并有助于处理欧盟GDPR合规请求。
+AEM Communities将用户数据保护置于社区体验的核心， [它提供开箱即用的API](user-ugc-management-service.md)[和示例servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)。 这些API有助于批量管理（批量删除和批量导出）用户生成的内容和删除用户用户档案，并有助于处理欧盟GDPR合规请求。
 
 ## 更改内容 {#what-s-changed}
 

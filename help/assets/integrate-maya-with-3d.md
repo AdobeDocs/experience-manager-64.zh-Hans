@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 1. 将Maya可执行文件文件夹的路径添加到Windows PATH环境变量。
 
-   例如，在Windows Server 2012上，点 **击[!UICONTROL开始>控制面板>系统和安全>系统>高级系统设置>环境变量**。 将文件夹的完整路 `Maya2016\bin` 径追加到系 `Path`统变量。
+   例如，在Windows Server 2012上， **[!UICONTROL 开始]>[!UICONTROL 环境]>系统和[!UICONTROL 控制面板]>[!UICONTROL Security]> System**> System设置>系统设置>变量。 将文件夹的完整路 `Maya2016\bin` 径追加到系 `Path`统变量。
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 1. 要启用JT(Siemens PLM Open CAD)文件格式，请导航到并 `/libs/settings/dam/v3D/assetTypes/jt` 将Enabled属 **[!UICONTROL 性设]** 置为 `true`。
 1. 在AEM中，启用Maya作为渲染器。 首先，导航到 **[!UICONTROL 工具>常规>CRXDE Lite]**。
-1. 从CRXDE Lite **[!UICONTROL 页]** 的左侧面板中，导航到以下各项：
+1. 从CRXDE Lite **[!UICONTROL 页]** （左侧面板）中，导航到以下内容：
 
    `/libs/settings/dam/v3D/renderers/maya`
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
    请注意， `sample-3D-content.zip` 之前已下载用于验证基本3D功能。
 
-1. 返回到 **[!UICONTROL卡视图** ，并观察已上传资产上显示的消息横幅。
+1. 返回卡 **[!UICONTROL 视图]** ，观察已上传资产上显示的消息横幅。
 
    当Maya将本机格式转换为时，将显示“转换 `.MA` 格式”横 `.FBX`幅。
 

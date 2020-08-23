@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 5%
@@ -60,7 +60,7 @@ See also [Managing Viewer Presets](managing-viewer-presets.md).
    >
    >仅支持在允许的最大图像大小范围内的图像。 对超过大小限制的图像的请求将产生403响应。
 
-1. 在“请 **求属性** ”标题下，执行以下操作：
+1. 在“请 **[求属性]** ”标题下，执行以下操作：
 
    * 将“请 **[!UICONTROL 求模糊化模式]** ”设置 **[!UICONTROL 为“禁用]**”。
    * 将“请 **[!UICONTROL 求锁定模式]** ”设置 **[!UICONTROL 为“禁用]**”。

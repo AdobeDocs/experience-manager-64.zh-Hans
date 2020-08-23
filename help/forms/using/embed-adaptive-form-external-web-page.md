@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -38,73 +38,70 @@ ht-degree: 0%
 
 1. 将以下代码嵌入到您网站的网页中：
 
-   ```
-   
-   
-<!doctype html>
-<html>
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>这是网页的标题！</title>
+   ```html
+   <!doctype html>
+   <html>
+   <head>
+    <title>This is the title of the webpage!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-  <div class="customafsection"/>
-    <p>此部分将替换为自适应表单。</p>
-
-
-    &lt;script>
-    var选项= {path:&quot;/content/forms/af/locbasic.html&quot;, dataRef:&quot;&quot;, themepath:&quot;&quot;,CSS_Selector:&quot;。customafsection&quot;};
+   </head>
+   <body>
+   <div class="customafsection"/>
+   <p>This section is replaced with the adaptive form.</p>
+   
+    <script>
+    var options = {path:"/content/forms/af/locbasic.html", dataRef:"", themepath:"", CSS_Selector:".customafsection"};
     alert(options.path);
     var loadAdaptiveForm = function(options){
     //alert(options.path);
-    if(options.path){/options.path){/options.path.path自适应表单
-    
-    //的url，例如： http:myserver:4503/content/forms/af/ABC，其中ABC是自适应表单
-    /注： 如果AEM服务器在上下文路径上运行，则自适应表单URL必须包含上
-    下文路径路径= options.path;
-    path += &quot;/jcr:content/guideContainer.html&quot;;
-    $.ajax({
-    url: 路径，
-    类型： “GET”,
-    数据： {
-    //将wcmmode设置为禁用
-    wcmmode: &quot;disabled&quot;
-    //设置数据引用(如果有
-    // &quot;dataRef&quot;): options.dataRef
-    //为表单对象//
-    &quot;themeOverride&quot;指定不同的主题： options.themepath
-    },
-    async: false,
-    success: 函数(容器
-    ){//如果加载了jquery，请设置//的内部html，如果未加载jquery，请使用文档提供的API设置内部HTML，但这些API不会按照HTML5规范
-    
-    //评估HTML中的脚本标记，例如： 文档.getElementById()。
-    innerHTMLif(window)。$ &amp;&amp; options.CSS_Selector){
-    // HTML API of jquery提取标记，更新DOM，并评估嵌入在脚本标记中的代码。
-    $(options.CSS_Selector)。html(data);
+    if(options.path) {
+        // options.path refers to the publish URL of the adaptive form
+        // For Example: http:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
+        // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path 
+        var path = options.path;
+        path += "/jcr:content/guideContainer.html";
+        $.ajax({
+            url  : path ,
+            type : "GET",
+            data : {
+                // Set the wcmmode to be disabled
+                wcmmode : "disabled"
+                // Set the data reference, if any
+               // "dataRef": options.dataRef
+                // Specify a different theme for the form object
+              //  "themeOverride" : options.themepath
+            },
+            async: false,
+            success: function (data) {
+                // If jquery is loaded, set the inner html of the container
+                // If jquery is not loaded, use APIs provided by document to set the inner HTML but these APIs would not evaluate the script tag in HTML as per the HTML5 spec
+                // For example: document.getElementById().innerHTML
+                if(window.$ && options.CSS_Selector){
+                    // HTML API of jquery extracts the tags, updates the DOM, and evaluates the code embedded in the script tag.
+                    $(options.CSS_Selector).html(data);
+                }
+            },
+            error: function (data) {
+                // any error handler
+            }
+        });
+    } else {
+        if (typeof(console) !== "undefined") {
+            console.log("Path of Adaptive Form not specified to loadAdaptiveForm");
+        }
     }
-    },
-    错误： 函数(数据
-    ){//任何错误处理程序
-    }
-    });
-    }其
-    他{if(typeof(console!== &quot;undefined&quot;){
-    console.log（&quot;未将自适应表单的路径指定为loadAdaptiveForm&quot;）;
-    }
-    }
-    }（选项）;
-    
-    &lt;/script>
-</body>
-</html>
+    }(options);
+   
+    </script>
+   </body>
+   </html>
    ```
 
 1. 在嵌入代码中：
 
    * 使用自适应 `options.path` 表单的发布URL路径更改变量的值。 如果AEM服务器在上下文路径上运行，请确保URL包含上下文路径。 例如，上述代码和adaptive from驻留在同一aem forms服务器上，因此该示例使用adaptive form /content/forms/af/locbasic.html的上下文路径。
    * 替换为 `options.dataRef` 要随URL一起传递的属性。 您可以使用dataref变量预 [填自适应表单](/help/forms/using/prepopulate-adaptive-form-fields.md)。
-   * 替换为 `options.themePath` 自适应表单中配置的主题以外的主题的路径。 或者，也可以使用request属性指定主题路径。
+   * 替换为 `options.themePath` 在自适应表单中配置的主题以外的主题的路径。 或者，也可以使用request属性指定主题路径。
    * `CSS_Selector` 是嵌入自适应表单的表单容器的CSS选择器。 例如，.customafsection css类是上例中的CSS选择器。
 
 自适应表单嵌入到网页中。 在嵌入的自适应表单中观察以下内容：
@@ -136,7 +133,7 @@ ht-degree: 0%
     ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   在规 `[AEM_Instance`则中，替换为AEM服务器发布URL。
+   替换 `[AEM_Instance]` 为规则中的AEM服务器发布URL。
 
 如果不在上下文路径上装载AEM服务器，Apache层的代理规则将如下：
 

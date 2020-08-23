@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
@@ -40,7 +40,7 @@ AEM会记录详细日志，您可能要配置这些日志，以排除安装问�
 
 ## 使用详细选项 {#using-the-verbose-option}
 
-在开始AEM WCM时，可以向命令行添加-v(verbose)选项，如： java -jar cq-wcm-quickstart-&lt;version>.jar -v.
+在开始AEM WCM时，可以向命令行添加-v(verbose)选项，如：java -jar cq-wcm-quickstart-&lt;version>.jar -v.
 
 详细选项显示控制台上的一些快速启动日志输出，以便用于故障排除。
 
@@ -48,7 +48,7 @@ AEM会记录详细日志，您可能要配置这些日志，以排除安装问�
 
 下节介绍一些安装问题及其解决方案。
 
-### **多次-单击快速启动jar没有任何效果，或者使用其他项目（例如，归档管理器）打开jar文件{#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}**
+### 多次-单击快速启动jar没有任何效果，或者使用其他项目（例如，归档管理器）打开jar文件 {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
 这通常表示操作系统的桌面环境配置为打开扩展名为。jar的文件时出现问题。 它还可能指示您未安装Java，或者您使用的是不支持的Java版本。
 
@@ -65,7 +65,7 @@ AEM会记录详细日志，您可能要配置这些日志，以排除安装问�
 * 有时重新安装支持的Java版本有助于恢复正确的关联。
 * 您始终可以如上所述使用命令行或开始/停止脚本运行CRX。
 
-### **我在CRX上运行的应用程序会引发内存不足错误{#my-application-running-on-crx-throws-out-of-memory-errors}**
+### 我在CRX上运行的应用程序会引发内存不足错误 {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
@@ -86,11 +86,11 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 这将生成堆转储文&#x200B;**件(java_...hprof**)。 生成堆转储后，该进程可能继续运行。 通常，一个堆转储文件足以分析问题。
 
-### **在多次单击AEM快速启动后，AEM欢迎屏幕不会显示在浏览器中{#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}**
+### The AEM Welcome screen does not display in the browser after double-clicking AEM Quickstart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 在某些情况下，即使存储库本身成功运行，AEM WCM欢迎屏幕也不会自动显示。 这可能取决于操作系统设置、浏览器配置或类似因素。
 
-通常的症状是AEM WCM快速启动窗口显示“AEM WCM正在启动，正在等待服务器启动……&quot; 如果此消息显示时间较长，请使用默认的4502端口或运行实例的端口，手动将AEM WCM URL输入浏览器窗口： http://localhost:4502/。
+通常的症状是AEM WCM快速启动窗口显示“AEM WCM正在启动，正在等待服务器启动……&quot; 如果此消息显示时间较长，请使用默认的4502端口或运行实例的端口，手动将AEM WCM URL输入浏览器窗口：http://localhost:4502/。
 
 此外，日志可能会显示浏览器未启动的原因。
 
@@ -100,7 +100,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 ## 使用应用程序服务器进行安装疑难解答 {#troubleshooting-installations-with-an-application-server}
 
-### **请求geometrixx-outdoor页面时返回“找不到页面”{#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}**
+### 请求geometrixx-outdoor页面时返回“找不到页面” {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
 **适用于WebLogic 10.3.5和JBoss 5.1**
 
@@ -108,7 +108,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 有关详细信息， *请参阅部署AEM* web应用程序步骤。
 
-### **响应标头大小可以大于4Kb{#response-header-size-can-be-greater-than-kb}**
+### 响应标头大小可以大于4Kb {#response-header-size-can-be-greater-than-kb}
 
 502个错误可能表示Web服务器无法处理AEM HTTP响应头的大小。 AEM可以生成包含大于4Kb的cookie的HTTP响应头。 确保您的servlet容器已配置，这样最大响应标头大小可以超过4kb。
 
@@ -126,7 +126,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 如果安装AEM时使用外部存储（例如，数据库服务器），删除文件夹不会自动删除数据，但会删除存储配置，这会使恢复JCR内容变得困难。
 
-### **JSP文件未在JBoss上编译{#jsp-files-are-not-compiled-on-jboss}**
+### JSP文件未在JBoss上编译 {#jsp-files-are-not-compiled-on-jboss}
 
 如果安装或更新JSP文件以Experience ManagerJBoss，并且未编译相应的Servlet，请确保正确配置了JBoss JSP编译器。 有关信息，请参阅\
 [JBoss文章中的JSP编译问题](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) 。

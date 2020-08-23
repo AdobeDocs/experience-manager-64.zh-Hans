@@ -4,9 +4,9 @@ description: 了解各种资产管理和编辑任务，您可以使用AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9811'
 ht-degree: 6%
 
 ---
@@ -64,13 +64,13 @@ ht-degree: 6%
 
    要选择多个文件，请在按住 Ctrl/Command 键的同时在文件选取器对话框中选择资产。在iPad中，一次只能选择一个文件。
 
-   您可以暂停上传大型资产（大于500 MB），稍后从同一页面继续上传。 点按上 **[!UICONTROL 传开始]** 时显示的进度栏旁边的“暂停”图标。
+   您可以暂停上传大型资产（大于500 MB），稍后从同一页面恢复它。 点按上 **[!UICONTROL 传开始]** 时显示的进度栏旁边的“暂停”图标。
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
    资产被视为大资产的大小可以配置。 例如，您可以配置系统，将1000 MB以上（而不是500 MB）的资产视为大资产。 在这种情况下，当 **[!UICONTROL 上传大]** 于1000 MB的资产时，进度栏中会显示“暂停”按钮。
 
-   如 **[!UICONTROL 果上传的]**文件大于1000 MB，则“暂停”按钮不显示。 但是，如果取消少于1000 MB的文件上传，将显示“**[!UICONTROL 暂停&#x200B;]**”按钮。
+   如果 **[!UICONTROL 上传的文]** 件大于1000 MB且文件小于1000 MB，则“暂停”按钮不显示。 但是，如果取消少于1000 MB的文件上传，将显示“ **[!UICONTROL 暂停]** ”按钮。
 
    要修改大小限制，请在CRX `chunkUploadMinFileSize` 存储库中 `fileupload`配置节点的属性。
 
@@ -82,7 +82,7 @@ ht-degree: 6%
 
    在低带宽情况和网络故障中，恢复上传的功能尤为有用，因为上传大型资产需要很长时间。 您可以暂停上传操作，稍后在情况好转时继续。 在继续时，从暂停的位置上传开始。
 
-   在上传操作过程中，AEM会将上传的资产的部分作为数据块保存在CRX存储库中。 上传完成后，AEM会将这些区块合并到存储库中的单个数据块中。
+   在上传操作期间，AEM会将要上传的资产的部分作为数据块保存在CRX存储库中。 上传完成后，AEM会将这些区块合并到存储库中的单个数据块中。
 
    要为未完成的区块上传作业配置清除任务，请转至 `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`。
 
@@ -153,7 +153,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 1. [使用从供应电子邮件收到的凭据](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) ，登录到Dynamic Media Classic。 在全局导航栏上，点按 **[!UICONTROL 上传]**。
 
 1. 在上 **[!UICONTROL 传]** 页面左上角附近，点按通过FTP **[!UICONTROL 选项卡]** 。
-1. 在页面左侧，选择要从中上传文件的FTP文件夹； 在页面的右侧，选择目标文件夹。
+1. 在页面左侧，选择要从中上传文件的FTP文件夹；在页面的右侧，选择目标文件夹。
 1. 在页面的右下角附近，点按作 **[!UICONTROL 业选项]** ，然后根据您选择的文件夹中的资产设置所需的选项。
 
    请参 [阅上传作业选项](#upload-job-options)。
@@ -181,8 +181,8 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 |  | 当 | 选择一次或重复。 要设置重复作业，请选择“重复”选项（每日、每周、每月或自定义），以指定要重复FTP上传作业的时间。 然后根据需要指定计划选项。 |
 |  | 包含子文件夹 | 上传您要上传的文件夹中的所有子文件夹。 您上传的文件夹及其子文件夹的名称会自动输入到AEM Assets。 |
 |  | 裁剪选项 | 要从图像两侧手动裁剪，请选择“裁剪”菜单，然后选择“手动”。 然后输入要从图像的任何一侧或每一侧裁剪的像素数。 裁剪的图像多少取决于图像文件中的 ppi（每英寸像素数）设置。例如，如果图像显示 150 ppi，您在“顶部”、“右”、“底部”和“左”文本框中分别输入 75，则会从每个侧边裁剪半英寸。<br> 要自动裁切图像中的空白像素，请打开“裁剪”菜单，选择“手动”，然后在“顶部”、“右”、“底部”和“左”字段中输入像素度量值以从两侧进行裁剪。 您还可以在“裁剪”菜单上选择“修剪”并选择以下选项：<br> **根据裁切** <ul><li>**颜色** -选择颜色选项。 然后，选择“角”菜单，选择图像的角，其颜色最能代表您要裁剪的空白颜色。</li><li>**透明度** -选择“透明度”选项。<br> **容差** -拖动滑块以指定从0到1的容差。对于基于颜色的修剪，指定0仅在像素与您在图像角中选择的颜色完全匹配时裁剪像素。 接近1的数字允许更多的颜色差异。<br>对于基于透明度的修剪，指定0可仅裁剪透明像素。 接近1的数字意味着更加透明。</li></ul><br>请注意，这些裁剪选项是无损的。 |
-|  | 颜色用户档案选项 | 在创建用于投放的优化文件时选择颜色转换：<ul><li>默认颜色保留： 当图像包含色彩空间信息时，保留源图像颜色； 没有颜色转换。 现在几乎所有图像都已嵌入相应的颜色用户档案。 但是，如果CMYK源图像不包含嵌入的颜色用户档案，则这些颜色将转换为sRGB（标准红绿蓝）色彩空间。 sRGB是用于在网页上显示图像的推荐色彩空间。</li><li>保留原始色彩空间： 保留原始颜色，点上不进行任何颜色转换。 对于没有嵌入颜色用户档案的图像，任何颜色转换均使用在“发布”设置中配置的默认颜色用户档案进行。 颜色用户档案可能与使用此选项创建的文件中的颜色不对齐。 因此，建议您使用默认颜色保留选项。</li><li>“自定义自”>“至<br> ”打开菜单，因此您可以选择“转换自”和“转换至色彩空间”。 此高级选项将覆盖嵌入在源文件中的任何颜色信息。 当您提交的所有图像都包含不正确或缺少颜色用户档案数据时，请选择此选项。</li></ul> |
-|  | 图像编辑选项 | 您可以在图像中保留剪切蒙版，并选择颜色用户档案。<br> 请参 [阅在上传时设置图像编辑选项](#setting-image-editing-options-at-upload)。 |
+|  | 颜色用户档案选项 | 在创建用于投放的优化文件时选择颜色转换：<ul><li>默认颜色保留：当图像包含色彩空间信息时，保留源图像颜色；没有颜色转换。 现在几乎所有图像都已嵌入相应的颜色用户档案。 但是，如果CMYK源图像不包含嵌入的颜色用户档案，则这些颜色将转换为sRGB（标准红绿蓝）色彩空间。 sRGB是用于在网页上显示图像的推荐色彩空间。</li><li>保留原始色彩空间：保留原始颜色，点上不进行任何颜色转换。 对于没有嵌入颜色用户档案的图像，任何颜色转换均使用在“发布”设置中配置的默认颜色用户档案进行。 颜色用户档案可能与使用此选项创建的文件中的颜色不对齐。 因此，建议您使用默认颜色保留选项。</li><li>“自定义自”>“至<br> ”打开菜单，因此您可以选择“转换自”和“转换至色彩空间”。 此高级选项将覆盖嵌入在源文件中的任何颜色信息。 当您提交的所有图像都包含不正确或缺少颜色用户档案数据时，请选择此选项。</li></ul> |
+|  | 图像编辑选项 | 您可以保留图像中的剪切蒙版，并选择颜色用户档案。<br> 请参 [阅在上传时设置图像编辑选项](#setting-image-editing-options-at-upload)。 |
 |  | Postscript选项 | 您可以栅格化PostScript®文件、裁剪文件、维护透明背景、选择分辨率和选择色彩空间。<br> 请参 [阅设置PostScript和Illustrator上传选项](#setting-postscript-and-illustrator-upload-options)。 |
 |  | Photoshop选项 | 您可以从Adobe®Photoshop®文件创建模板、维护图层、指定如何命名图层、提取文本以及指定如何将图像定位到模板中。<br> 请注意，AEM中不支持模板。<br> 请参阅 [设置Photoshop上传选项](#setting-photoshop-upload-options)。 |
 |  | PDF选项 | 您可以栅格化文件、提取搜索词和链接、自动生成电子目录、设置分辨率和选择色彩空间。<br> 请注意，AEM不支持eCatalog。 <br> 请参 [阅设置PDF上传选项](#setting-pdf-upload-options)。 |
@@ -205,9 +205,9 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 |---|---|---|
 | 从剪切路径创建蒙版 |  | 根据图像的剪切路径信息为图像创建蒙版。 此选项适用于使用创建了剪切路径的图像编辑应用程序创建的图像。 |
 | USM锐化 |  | 允许您对最终的缩减采样图像微调锐化滤镜效果，控制效果的强度、效果的半径（以像素为单位）以及被忽略的对比度阈值。<br> 此效果使用的选项与Photoshop的USM锐化滤镜的选项相同。 与名称相反，USM锐化是一种锐化滤镜。 在“USM锐化”下，设置所需的选项。 设置选项在下面进行了说明： |
-|  | 数量 | 控制应用于边缘像素的对比度量。<br> 把它想成效果的强度。 动态媒体中USM锐化的金额值与Adobe Photoshop的金额值之间的主要区别在于，Photoshop的金额范围在1%到500%之间。 而在Dynamic Media中，值范围为0.0到5.0。值5.0大致相当于Photoshop的500%; 值0.9等于90%，依此类推。 |
+|  | 数量 | 控制应用于边缘像素的对比度量。<br> 把它看作效果的强度。 动态媒体中USM锐化的金额值与Adobe Photoshop的金额值之间的主要区别在于，Photoshop的金额范围在1%到500%之间。 而在Dynamic Media中，值范围为0.0到5.0。值5.0大致相当于Photoshop的500%;值0.9等于90%，依此类推。 |
 |  | 半径 | 控制效果的半径。 值范围是0-250。<br> 该效果对图像中的所有像素运行，并从所有方向的所有像素辐射出来。 半径以像素为单位。 例如，要对2000 x 2000像素图像和500 x 500像素图像获得类似的锐化效果，您应对2000 x 2000像素图像设置两个像素的半径，对500 x 500像素图像设置一个像素的半径值。 对于具有更多像素的图像，使用较大的值。 |
-|  | 阈值 | 阈值是应用USM锐化滤镜时忽略的对比度范围。 因此，在使用此滤镜时，不会在图像中引入“杂色”，这一点很重要。 值范围是0-255，它是灰度图像中的亮度步骤数。 0=黑色，128=50%灰色，255=白色。<br> 例如，阈值12会忽略皮肤色调亮度的细微变化，以避免添加杂色，但仍会为对比区域添加边缘对比度，如睫毛与皮肤的交集处。<br> 例如，如果您有一张某人脸部的照片，USM锐化会影响图像的对比部分，如睫毛和皮肤会聚以创建明显的对比度区域以及平滑的皮肤本身。 即使最平滑的外观也会显示亮度值的细微变化。 如果不使用阈值，滤镜会突出外观像素的这些细微更改。 反过来，产生噪声和不需要的效果，同时增加睫毛的对比度，增强锐度。<br> 为了避免此问题，引入了一个阈值，告诉滤镜忽略不显着改变对比度的像素，如平滑外观。<br> 在前面显示的拉链图形中，注意拉链旁边的纹理。 由于阈值过低，无法抑制噪声，因此出现了图像噪声。 |
+|  | 阈值 | 阈值是应用USM锐化滤镜时忽略的对比度范围。 因此，在使用此滤镜时，不会在图像中引入“杂色”，这一点很重要。 值范围是0-255，它是灰度图像中的亮度步骤数。 0=黑色，128=50%灰色，255=白色。<br> 例如，阈值12会忽略皮肤色调亮度的细微变化，以避免添加杂色，但仍会为对比区域添加边缘对比度，如睫毛与皮肤的交集处。<br> 例如，如果您有一张某人脸部的照片，USM锐化会影响图像的对比部分，如睫毛和皮肤会聚以创建明显的对比度区域以及平滑的皮肤本身。 即使最平滑的外观也会显示亮度值的细微变化。 如果不使用阈值，滤镜会突出外观像素的这些细微更改。 反过来，产生噪声和不需要的效果，同时增加睫毛的对比度，增强锐度。<br> 为了避免此问题，引入了一个阈值，告诉滤镜忽略不显着改变对比度的像素，如平滑外观。<br> 在前面显示的拉链图形中，注意拉链旁边的纹理。 由于阈值过低，无法抑制噪声，图像出现噪声。 |
 |  | 单色 | 选择此项可使图像亮度（强度）变为USM锐化。<br> 取消选中此选项，可单独对每个颜色组件进行锐化。 |
 | 挖空背景 |  | 在上传图像时自动删除其背景。 此技术有助于引起对特定对象的注意并使其从繁忙的背景中脱颖而出。 选择以启用或“打开”挖空背景功能和以下子选项： |
 |  | 角 | 必填.<br> 用于定义要挖空的背景颜色的图像的角。<br> 您可以选择 **左上**、 **左下**、右 **上**&#x200B;或右 **下**&#x200B;选择。 |
@@ -233,7 +233,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 
 PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时，可以自动从文件创建图像模板（在“上传”屏幕上选择“创建模板”选项）。
 
-如果您使用PSD文件创建模板，Dynamic Media会使用图层从PSD文件创建多个图像； 它为每个图层创建一个图像。
+如果您使用PSD文件创建模板，Dynamic Media会使用图层从PSD文件创建多个图像；它为每个图层创建一个图像。
 
 使用上 **[!UICONTROL 述的裁剪]****[!UICONTROL 选项和颜]**&#x200B;色用户档案选项，以及Photoshop上传选项。
 
@@ -259,7 +259,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 >[!NOTE]
 >
->AEM中不支持eCatalog。
+>aem中不支持eCatalog。
 
 从以下选项中进行选择：
 
@@ -290,7 +290,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 #### 在上传时设置批集预设 {#setting-batch-set-presets-at-upload}
 
-如果要从已上传的图像自动创建图像集或旋转集，请单 **击要使用的预设的[!UICONTROL** Active列。 您可以选择多个预设。
+如果要从已上传的图像自动创建图像集或旋转集，请单 **[!UICONTROL 击]** 要使用的预设的“活动”列。 您可以选择多个预设。
 
 请参 [阅将批集预设配置为自动生成图像集和旋转集](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) ，以了解有关创建批集预设的更多信息。
 
@@ -304,7 +304,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 您可以像上传任何其他受支持的资产一样上传ZIP存档。 同一文件名规则适用于ZIP文件。 AEM允许您将ZIP存档解压到DAM位置。
 
-一次选择一个ZIP归档，单击“解 **[!UICONTROL 压归档]**”，然后选择目标文件夹。 选择一个选项以处理冲突（如果有）。 如果目标文件夹中已存在ZIP文件中的资产，您可以选择以下选项之一： 跳过提取、替换现有文件、重命名以保留两个资产或创建新版本。
+一次选择一个ZIP归档，单击“解 **[!UICONTROL 压归档]**”，然后选择目标文件夹。 选择一个选项以处理冲突（如果有）。 如果目标文件夹中已存在ZIP文件中的资产，您可以选择以下选项之一：跳过提取、替换现有文件、重命名以保留两个资产或创建新版本。
 
 提取完成后，AEM会在通知区域通知您。 AEM提取ZIP时，您可以返回工作，而不中断提取。
 
@@ -438,7 +438,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
    >[!NOTE]
    >
-   >您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
+   >您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果您使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
 
    >[!NOTE]
    >
@@ -618,7 +618,7 @@ CUG是限制对资产访问的额外方式。 您还可以为文件夹配置登�
 
 ## 搜索资产 {#searching-assets}
 
-基本搜索在“搜索和筛 [选器”部分中详](/help/sites-authoring/search.md#search-and-filter) 细介绍。 使用“ **[!UICONTROL 搜索]** ”面板搜索资产、标记和元数据。 可以使用通配符星号搜索字符串的部分。 此外，您还可以使用搜索彩 **[!UICONTROL 块化]** 来自定义 [搜索面板](search-facets.md)。
+基本搜索在搜索和筛 [选部分有详细](/help/sites-authoring/search.md#search-and-filter) 。 使用“ **[!UICONTROL 搜索]** ”面板搜索资产、标记和元数据。 可以使用通配符星号搜索字符串的部分。 此外，您还可以使用搜索彩 **[!UICONTROL 块化]** 来自定 [义搜索面板](search-facets.md)。
 
 ![过滤器面板](assets/filters_panel.png)
 
@@ -630,8 +630,8 @@ CUG是限制对资产访问的额外方式。 您还可以为文件夹配置登�
 
 快速操作图标一次只能用于单个资产。根据设备，执行以下操作以显示快速操作图标：
 
-* 触控设备： 触摸并按住。 例如，在iPad上，您可以点按并按住资产，以便显示快速操作。
-* 非触控设备： 悬停指针。 例如，在桌面设备上，如果将指针悬停在资产缩略图上，则会显示快速操作栏。
+* 触控设备：触摸并按住。 例如，在iPad上，您可以点按并按住资产，以便显示快速操作。
+* 非触控设备：悬停指针。 例如，在桌面设备上，如果将指针悬停在资产缩略图上，则会显示快速操作栏。
 
 ### 导航到资产并选择 {#navigating-and-selecting-assets}
 
@@ -711,12 +711,12 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 
 在“收 [藏集](managing-collections-touch-ui.md#navigating-the-collections-console)”控制台中， **[!UICONTROL “显示全部]** ”列表提供选项，仅用于视图注释和工作流。 此外，时间轴仅对控制台中列出的顶级集合显示。 如果您在任何集合中导航，则不会显示该集合。
 
-**[!UICONTROL 时间轴]** 包含特 [定于内容片段的若干选项](content-fragments-managing.md#timeline-for-content-fragments); 此功能 [需要AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md) 。
+**[!UICONTROL 时间轴]** 包含特 [定于内容片段的若干选项](content-fragments-managing.md#timeline-for-content-fragments);此功能 [需要AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md) 。
 
 **要使用时间轴**:
 
 1. 打开资产的资产页面，或在资产UI中选择它。
-1. 点按全 **[!UICONTROL 局导航]** 图标，并从 **列表中选** 择时间轴]。
+1. 点按全 **[!UICONTROL 局导航]** 图标，然后从 **[列表中]** 选择“时间轴”。
 
    ![时间](assets/timeline.png)
 
@@ -730,7 +730,7 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 
 视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。AEM Assets支持的视频格式取决于浏览器。
 
-对于内容片段， [在编辑器中创建注释](content-fragments-variations.md#annotating-a-content-fragment); 此功能 [需要AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md) 。
+对于内容片段， [在编辑器中创建注释](content-fragments-variations.md#annotating-a-content-fragment);此功能 [需要AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md) 。
 
 在保存注释之前，可以添加多个注释。
 
@@ -746,7 +746,7 @@ You can also add image maps using the image editor. For details, see [Adding Ima
    * [快速操作](managing-assets-touch-ui.md#quick-actions)
    * 在选择资产或导航到资产页面后，从工具栏中
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
 1. 在时间轴底部的&#x200B;**[!UICONTROL 注释]**&#x200B;框中添加注释。Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 
@@ -845,8 +845,7 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 
    返回渲染的PDF文件并刷新它。 刷新的PDF反映了您所做的更改。
 
-**要以外语打印批注，请执行以下操作**:
-如果资产包含外语（尤其是非拉丁语言）的批注，您必须首先在AEM服务器上配置CQ-DAM-Handler-Gibson字体管理器服务，才能打印这些批注。 在配置CQ-DAM-Handler-Gibson字体管理器服务时，请提供所需语言的字体所在的路径。
+**要以外语打印批注，请执行以下操作**:如果资产包含外语（尤其是非拉丁语言）的批注，您必须首先在AEM服务器上配置CQ-DAM-Handler-Gibson字体管理器服务，才能打印这些批注。 在配置CQ-DAM-Handler-Gibson字体管理器服务时，请提供所需语言的字体所在的路径。
 
 1. 打开 **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]** Service配置页 [，其URL为https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl)。
 1. 要配 **[!UICONTROL 置CQ-DAM-Handler-Gibson字体管理器服务]**，请执行以下操作之一：
@@ -868,7 +867,7 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 
    * 全部在一个超级CJK字体中： [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
    * Noto Sans（适用于欧洲语言）: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * 您选择的语言的Noto字体： [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
+   * 您选择的语言没有字体： [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
 
 1. 通过将font-family参数设置为配置批注PDF文 `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`件。 此配置默认可用，适用于所有欧洲和CJK语言。
 1. 如果您选择的语言与步骤2中提到的语言不同，请在默认字体系列后面附加一个适当（以逗号分隔）的条目。
@@ -879,7 +878,7 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 
 以下是创建版本的方案：
 
-* 在其他应用程序中修改图像并上传到AEM Assets。 将创建图像的某个版本，这样原始图像不会被覆盖。
+* 您可以在其他应用程序中修改图像并上传到AEM Assets。 将创建图像的某个版本，这样原始图像不会被覆盖。
 * 您可以编辑资产的元数据。
 * 您使用AEM桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建一个新版本。
 
@@ -941,7 +940,7 @@ You can also add image maps using the image editor. For details, see [Adding Ima
 
 ## 关于集合 {#collections}
 
-集合是一组有序的资产。 使用集合在用户之间共享资产。
+集合是一组有序的资产。使用集合在用户之间共享资产。
 
 * 收藏集可以包含来自不同位置的资产，因为它们只包含对这些资产的引用。 每个收藏集都保持资产的引用完整性。
 * 您可以与具有不同权限级别的多个用户共享集合，包括编辑、查看等。

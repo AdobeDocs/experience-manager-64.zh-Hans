@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 30%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->如果资产未位于Dynamic Media Classic同步文件夹中，则指向发布到Dynamic **[!UICONTROL Media Classic的链接]** 将不可用。
+>如果资产未位于Dynamic Media Classic同步文件夹中，则指向Dynamic Media Classic **[!UICONTROL 的发布链接]** 将不可用。
 
 **要直接从数字资产发布到Dynamic Media Classic，请执行以下操作**:
 
@@ -109,7 +109,7 @@ Adobe建议您仅从Dynamic Media Classic目标文件夹中的资产将资产发
 
 1. In the sidekick, click the **[!UICONTROL Page]** icon, then click **[!UICONTROL Page Properties]**.
 
-1. 单 **击[!UICONTROLCloud Services>添加服务> Dynamic Media Classic(Scene7)**。
+1. 单击 **[!UICONTROL Cloud Services]>添[!UICONTROL 加服务]>[!UICONTROL Dynamic Media Classic(Scene7)]**。
 1. 在AdobeDynamic Media Classic下拉列表中，选择所需的配置，然后单击确 **[!UICONTROL 定]**。
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -121,7 +121,7 @@ Adobe建议您仅从Dynamic Media Classic目标文件夹中的资产将资产发
    >
    >If the digital asset is in the CQ target folder, then no link to **[!UICONTROL Check Dynamic Media Classic Publication Status]** appears. 资产只是放置在组件中。
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. 单击 **[!UICONTROL 检查Dynamic Media Classic发布状态]**。 如果资产未发布，AEM会将资产发布到Dynamic Media Classic。 上传后，资产会被放置在临时文件夹中。By default, the ad-hoc folder is located in the `name_of_the_company/CQ5_adhoc`. 您可以[根据需要配置此位置](#configuringtheadhocfolder)。
 
@@ -240,7 +240,7 @@ You set these configuration options by double-clicking a Dynamic Media Classic c
 
 **[!UICONTROL 输出格式]** -选择图像的输出格式，例如jpeg。 根据所选的输出格式，您可能会有额外的配置选项。请参阅[管理图像预设](/help/assets/managing-image-presets.md)。
 
-**[!UICONTROL 锐化]** -选择要如何锐化图像。 有关锐化的详细说明，请 [*参阅AdobeDynamic Media Classic图像质量和锐化最佳实践&#x200B;*](/help/assets/assets/s7_sharpening_images.pdf)。
+**[!UICONTROL 锐化]** -选择要如何锐化图像。 有关锐化的详细说明，请 [*参阅AdobeDynamic Media Classic图像质量和锐化最佳实践*](/help/assets/assets/s7_sharpening_images.pdf)。
 
 **[!UICONTROL URL修饰符]** -您可以通过提供其他Dynamic Media Classic图像命令来更改图像效果。 These are described in [Managing Image Presets](/help/assets/managing-image-presets.md) and the [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
@@ -394,7 +394,7 @@ Adobe DAM 和 WCM 会显示是否上传了主视频。但它们不会显示以�
 
 ![chlimage_1-96](assets/chlimage_1-96.png)
 
-**[!UICONTROL 资产类型]** 在Dynamic Media Classic浏览器中，您可以筛选结果以包含以下任一内容： 图像、模板、视频和自适应视频集。 如果您没有选择任何资产类型，则默认情况下，AEM 会搜索所有资产类型。
+**[!UICONTROL 资产类型]** 在Dynamic Media Classic浏览器中，您可以筛选结果以包含以下任一内容：图像、模板、视频和自适应视频集。 如果您没有选择任何资产类型，则默认情况下，AEM 会搜索所有资产类型。
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 

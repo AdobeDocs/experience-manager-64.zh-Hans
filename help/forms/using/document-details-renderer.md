@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 0%
@@ -92,7 +92,7 @@ AEM Forms工作区监听 `window.global.postMessage([Message],[Payload])`
 
 **AEM Forms工作区与第三方应用程序通信**
 
-如果AEM Forms工作区的直接操作按钮可见，它将调 `window.[External-App-Name].getMessage([Action])`用，其中[ `Action]` 从中读取 `routeActionMap`。 第三方应用程序必须监听此界面，然后通过API通知AEM Forms工 `postMessage ()` 作区。
+如果AEM Forms工作区的直接操作按钮可见，则它将调 `window.[External-App-Name].getMessage([Action])`用，从中 `[Action]` 读取的位置 `routeActionMap`。 第三方应用程序必须监听此界面，然后通过API通知AEM Forms工 `postMessage ()` 作区。
 
 例如，Flex应用程序可以定 `ExternalInterface.addCallback('getMessage', listener)` 义支持此通信。 如果第三方应用程序希望通过其自己的按钮处理表单提交，则您应指 `hideDirectActions = true() in the runtimeMap` 定并可跳过此监听器。 因此，此构造是可选的。
 

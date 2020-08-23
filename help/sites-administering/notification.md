@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 1%
@@ -40,7 +40,7 @@ AEM向用户发送电子邮件通知：
 
 ## 配置邮件服务 {#configuring-the-mail-service}
 
-要使AEM能够发送电子邮件， **Day CQ Mail** Service需要正确配置。 您可以在Web控制台中视图配置。 When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+要使AEM能够发送电子邮件， **Day CQ邮件服务** 需要正确配置。 您可以在Web控制台中视图配置。 When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 以下约束适用：
 
@@ -68,7 +68,7 @@ AEM向用户发送电子邮件通知：
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` 类型 `sling:OsgiConfig`
 
-1. 向名为 `String` 的节点添加属性] `email.from`。 对于该值，指定要使用的电子邮件地址。
+1. 向名 `String` 为的节点添加属性 `email.from`。 对于该值，指定要使用的电子邮件地址。
 
 1. 单击“ **全部保存**”。
 
@@ -138,7 +138,7 @@ This is an automatically generated message. Please do not reply.
 
 其中，&lt;text_x>可以是静态文本和动态字符串变量的混合。 以下变量可在页面通知的电子邮件模板中使用：
 
-* `${time}`,事件日期和时间。
+* `${time}`、事件日期和时间。
 
 * `${userFullName}`，触发事件的用户的全名。
 
@@ -176,7 +176,7 @@ This is an automatically generated message. Please do not reply.
 
 #### 为论坛通知自定义电子邮件模板 {#customizing-email-templates-for-forum-notification}
 
-为论坛通知自定义英语电子邮件模板：
+要自定义论坛通知的英语电子邮件模板，请执行以下操作：
 
 1. 在CRXDE中，打开文件：
 
@@ -198,7 +198,7 @@ This is an automatically generated message. Please do not reply.
 
 以下变量可在论坛通知的电子邮件模板中使用：
 
-* `${time}`,事件日期和时间。
+* `${time}`、事件日期和时间。
 
 * `${forum.path}`, the path to the forum page.
 
@@ -255,7 +255,7 @@ subject=<text_1>
 >
 >有关模板格式的更多信息，请 [参阅Properties.load()方法的javadocs](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) 。
 
-该方法 `${payload.path.open}` 显示工作项的有效负荷路径。 例如，对于站点中的页面， `payload.path.open` 则类似于 `/bin/wcmcommand?cmd=open&path=…`。; 这没有服务器名称，因此模板会优先使用它 `${host.prefix}`
+该方法 `${payload.path.open}` 显示工作项的有效负荷路径。 例如，对于站点中的页面， `payload.path.open` 则类似于 `/bin/wcmcommand?cmd=open&path=…`。;这没有服务器名称，因此模板会优先使用它 `${host.prefix}`
 
 可以在电子邮件模板中使用以下变量：
 
@@ -285,7 +285,7 @@ subject=<text_1>
 
 * `${payload.type}`、有效负荷类型
 * `${payload.path}`，有效负荷的路径
-* `${host.prefix}`，主机前缀，例如： http://localhost:4502
+* `${host.prefix}`，主机前缀，例如：http://localhost:4502
 
 ### 为新语言添加电子邮件模板 {#adding-an-email-template-for-a-new-language}
 
@@ -293,9 +293,9 @@ subject=<text_1>
 
 1. 在CRXDE中，添加以下文 `<language-code>.txt` 件：
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` : 适用于页面通知
-   * `/etc/notification/email/default/com.day.cq.collab.forum` : 论坛通知
-   * `/etc/workflow/notification/email/default` : 工作流通知
+   * `/etc/notification/email/default/com.day.cq.wcm.core.page` :适用于页面通知
+   * `/etc/notification/email/default/com.day.cq.collab.forum` :论坛通知
+   * `/etc/workflow/notification/email/default` :工作流通知
 
 1. 使文件适应语言。
 1. 保存更改。

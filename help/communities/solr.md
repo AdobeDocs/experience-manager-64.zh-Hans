@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 2%
@@ -83,8 +83,7 @@ sh./scripts/cloud-scripts/zkcli.sh \\
 #### 2.创建集合 {#create-a-collection}
 
 针对开发人员的 Adobe AIR API 参考:\
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create\
-](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 使用:\
 。/bin/solr create \\
@@ -117,16 +116,16 @@ AEM社区的MLS可以作为标准MLS或高级MLS提供。 标准MLS仅包括Solr
 
 标准MLS包括对以下语言的内容搜索的增强：
 
-* 英语： 用于尝试匹配字派生的改进的调节器
-* 日语： 改进了半角字符的日文标记
+* 英语：用于尝试匹配字派生的改进的调节器
+* 日语：改进了半角字符的日文标记
 
 高级MLS包括对以下语言的内容搜索的增强：
 
-* 英语： 用旅鼠代替了训练员
-* 德语： 添加的解压缩程序
-* 法语： 添加了版本处理
-* 简体中文： 添加了更智能的令牌
-* 各种语言： 添加了更简单、停止单词列表和正常化者。
+* 英语：用旅鼠代替了训练员
+* 德语：添加的解压缩程序
+* 法语：添加了版本处理
+* 简体中文：添加了更智能的令牌
+* 各种语言：添加了更简单、停止单词列表和正常化者。
 
 高级MLS支持以下33种语言。
 
@@ -145,7 +144,7 @@ AEM社区的MLS可以作为标准MLS或高级MLS提供。 标准MLS仅包括Solr
 
 #### AEM 6.1 Solr搜索、标准MLS和高级MLS的比较 {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**注意**: AEM 6.1指AEM 6.1 Communities FP3及更早版本。
+**注意**:AEM 6.1指AEM 6.1 Communities FP3及更早版本。
 
 ![chlimage_1-283](assets/chlimage_1-283.png)
 
@@ -162,9 +161,9 @@ Solr 5的标准MLS文件(模式.xml、solrconfig.xml)
 
 标准MLS文件存储在AEM存储库中。
 
-**注意**: Solr文件存储在msrp/文件夹中，也用于DSRP（无需更改）。
+**注意**:Solr文件存储在msrp/文件夹中，也用于DSRP（无需更改）。
 
-**下载说明**: 替换为 `solrX` 或 `solr4``solr5` 根据需要替换
+**下载说明**:替换为 `solrX` 或 `solr4``solr5` 根据需要
 
 1. 使用CRXDE|Lite，找到
 
@@ -188,8 +187,8 @@ Solr 5的标准MLS文件(模式.xml、solrconfig.xml)
 
    1. 将现有Solr配置目录的内容复 *制到new-config-dir*
 
-      * 对于Solr4: copy *solr-install-dir*/example/solr/collection1/conf/&amp;ast;
-      * 对于Solr5: copy *solr-install-dir*/server/solr/configsets/data_driven_模式配置/&amp;ast;
+      * 对于Solr4:copy *solr-install-dir*/example/solr/collection1/conf/&amp;ast;
+      * 对于Solr5:copy *solr-install-dir*/server/solr/configsets/data_driven_模式配置/&amp;ast;
    1. 将下载的 **模式** .xml **和solrconfig.xml复制**** 到new-config-dir以覆盖现有文件
 
 
@@ -249,10 +248,10 @@ Solr 5的标准MLS文件(模式.xml、solrconfig.xml)
       * 创建子文件夹主题／和lang/
    1. 将现有Solr配置目录的内容复 *制到new-config-dir*
 
-      * 对于Solr4: 复 *制solr-install*-dir/example/solr/collection1/conf/&amp;ast;
-      * 对于Solr5: 复 *制solr-install*-dir/server/solr/configsets/data_driven_模式配置s/&amp;ast;
+      * 对于Solr4:复 *制solr-install*-dir/example/solr/collection1/conf/&amp;ast;
+      * 对于Solr5:复 *制solr-install*-dir/server/solr/configsets/data_driven_模式配置s/&amp;ast;
    1. 将提取的 **模式** .xml **和solrconfig.xml复制** 到 ** new-config-dir以覆盖现有文件
-   1. 对于Solr5: 将 *solr_install_dir*/server/solr/configsets/sample_techproducts_configs/conf/lang/&amp;ast;.txt&quot;复制到 *new-config-dir*/lang/
+   1. 对于Solr5:将 *solr_install_dir*/server/solr/configsets/sample_techproducts_configs/conf/lang/&amp;ast;.txt&quot;复制到 *new-config-dir*/lang/
    1. 将提取 **的秒** 字／文件夹 *复制到new-config-dir* , *生成new-config-dir*/stopwords/&amp;ast;.txt
 
 
@@ -260,8 +259,8 @@ Solr 5的标准MLS文件(模式.xml、solrconfig.xml)
 1. [将新配置上传](#upload-a-configuration-to-zookeeper) 到ZooKeeper
 1. 复制新 **用户档案** /文件夹……
 
-   * 对于Solr4: 复制到每个节点的资源／文件夹
-   * 对于Solr5: 复制到每个Solr安装的服务器／资源／文件夹。 如果所有节点都位于同一Solr安装目录中，则此步骤仅执行一次。
+   * 对于Solr4:复制到每个节点的资源／文件夹
+   * 对于Solr5:复制到每个Solr安装的服务器／资源／文件夹。 如果所有节点都位于同一Solr安装目录中，则此步骤仅执行一次。
 
 1. 在SolrCloud **中** 每个节点的solr-home目录（包含solr.xml）中创建一个lib/文件夹。 将以下位置的jar复制到每个节点上的新lib/文件夹：
 
@@ -294,7 +293,7 @@ Solr 5的标准MLS文件(模式.xml、solrconfig.xml)
    * 。/bin/solr开始
    * 。/bin/solr create_core -c collection1 -d sample_techproducts_configs
 
-* 运行安装脚本： 安 [装-v 4|5] - [d solrhome] -c集合 [路径]:
+* 运行安装脚本：安 [装-v 4|5] - [d solrhome] -c集合 [路径]:
 
    * -d solhome
 
@@ -328,8 +327,8 @@ Solr 5的标准MLS文件(模式.xml、solrconfig.xml)
 
 solrconfig. **xml文件控制** “自动提交”间隔和搜索可见性，并且需要测试和调整。
 
-&lt;autoCommit>: 默认情况下，自动提交间隔(即对稳定存储的硬提交)设置为15秒。 搜索可见性默认为使用预提交索引。
+&lt;autoCommit>:默认情况下，自动提交间隔(即对稳定存储的硬提交)设置为15秒。 搜索可见性默认为使用预提交索引。
 
 要将搜索更改为使用已更新的索引来反映由于提交而发生的更改，请将包含的&lt;openSearcher>更改为true。
 
-&lt;autoSoftCommit>: “soft”提交可确保更改可见（索引已更新），但不确保更改同步到稳定存储（硬提交）。 结果是性能得到改进。 默认情况下，&lt;autoSoftCommit>在包含的&lt;maxTime>设置为-1时被禁用。
+&lt;autoSoftCommit>:“soft”提交可确保更改可见（索引已更新），但不确保更改同步到稳定存储（硬提交）。 结果是性能得到改进。 默认情况下，&lt;autoSoftCommit>在包含的&lt;maxTime>设置为-1时被禁用。

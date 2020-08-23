@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 92017a4c2c9ab9f139440e40f368958bcc3bb2ef
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5547'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 [默认情况下，Dynamic Media 处于禁用状态。](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)要利用Dynamic Media功能，您需要启用它。
 
->[注意]
+>[!NOTE]
 >
 >Dynamic Media -Scene7模式仅适用于AEM作者实例。 因此，您必须在AEM `runmode=dynamicmedia_scene7`作者实例上进行配置，而不是在AEM发布实例上进行配置。
 
@@ -52,7 +52,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 如果要将AEM Dynamic Media从6.3升级到6.4（现在包括零停机时间部署的功能），您需要运行以下curl命令，以将所有预设和配置从迁移到 `/etc` CRXDE Lite中 `/conf` 。
 
->[注意]
+>[!NOTE]
 >
 >如果在兼容模式下运行AEM实例（即已安装兼容性打包），则无需运行这些命令。
 
@@ -66,7 +66,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## （可选）安装功能包18912以批量迁移资产 {#installing-feature-pack}
 
-功能包18912允许您通过FTP批量摄取资产，或将资产从Dynamic Media —— 混合模式或Dynamic Media Classic迁移到AEM的Dynamic Media -Scene7模式。 酒店可从Adobe Professional Services购买。
+功能包18912允许您通过FTP批量摄取资产，或将资产从Dynamic Media —— 混合模式或Dynamic Media Classic迁移到AEM的Dynamic Media -Scene7模式。 客人可从Adobe Professional Services购买。
 
 有关 [详细信息，请参阅安装功能包18912](bulk-ingest-migrate.md) ，以实现批量资产迁移。
 
@@ -116,7 +116,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * 选中此复选框以启用（打开）该地址，然后输入AEM作者实例的IP地址（而非调度程序IP）。
    * 点按&#x200B;**[!UICONTROL 保存]**。
 
-现在您已完成基本配置； 您已准备好使用Dynamic Media -Scene7模式。
+现在您已完成基本配置；您已准备好使用Dynamic Media -Scene7模式。
 
 如果要进一步自定义配置，您可以选择在Dynamic Media -Scene7模式中 [配置高级设置下完成任何任务](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)。
 
@@ -148,7 +148,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 默认情况下，“发布设置”设置会确定如何从Dynamic Media传送资产。 如果未指定任何设置，Dynamic Media会根据发布设置中定义的默认设置传送资产。 例如，传送不包含分辨率属性的图像的请求将生成具有默认对象分辨率设置的图像。
 
-配置发布设置： 在Dynamic Media Classic中，点按设 **[!UICONTROL 置>应用程序设置>发布设置>图像服务器]**。
+配置发布设置：在Dynamic Media Classic中，点按设 **[!UICONTROL 置>应用程序设置>发布设置>图像服务器]**。
 
 “图像服务器”屏幕为传送图像建立了默认设置。 有关每个设置的说明，请参阅用户界面。
 
@@ -166,7 +166,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 **[!UICONTROL 服务器]** -在帐户配置时，Dynamic Media会自动为您的公司提供分配的服务器。 这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 除非AEM支持明确指示，否则不要更改任何服务器名称。
 
-**[!UICONTROL 覆盖图像]** - Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定了如何上传替换资产： 是替换原件还是成为重复。 重复资产使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
+**[!UICONTROL 覆盖图像]** - Dynamic Media不允许两个文件具有相同的名称。 每个项目的URL ID（文件名减去扩展名）必须是唯一的。 这些选项指定了如何上传替换资产：是替换原件还是成为重复。 重复资产使用“-1”重命名（例如，chair.tif更名为chair-1.tif）。 这些选项影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产（如JPG、TIF或PNG）。
 
 * **[!UICONTROL 在当前文件夹中覆盖，基本图像名称／扩展名相同]** -此选项是最严格的替换规则。 它要求您将替换图像上传到与原始图像相同的文件夹，并且替换图像的文件扩展名与原始图像的扩展名相同。 如果这些要求未满足，则会创建重复。
 
@@ -174,7 +174,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 >
 >要保持与AEM的一致性，请选 **[!UICONTROL 择“覆盖当前文件夹中的基本图像名称／扩展名”]**。
 
-* **[!UICONTROL 在任何文件夹中覆盖相同的基本资产名称／扩展名]** -要求替换图像的文件扩展名与原始图像相同(例如，替 `chair.jpg` 换 `chair.jpg` 但不替换 `chair.tif`)。 但是，您可以将替换图像上传到与原始图像不同的文件夹。 更新后的图像驻留在新文件夹中； 在文件的原始位置找不到该文件。
+* **[!UICONTROL 在任何文件夹中覆盖相同的基本资产名称／扩展名]** -要求替换图像的文件扩展名与原始图像相同(例如，替 `chair.jpg` 换 `chair.jpg` 但不替换 `chair.tif`)。 但是，您可以将替换图像上传到与原始图像不同的文件夹。 更新后的图像驻留在新文件夹中；在文件的原始位置找不到该文件。
 * **[!UICONTROL 在任意文件夹中覆盖相同的基本资产名称，而不考虑扩展名]** -此选项是最包含内容的替换规则。 您可以将替换图像上传到与原始图像不同的文件夹，以其他文件扩展名上传文件，然后替换原始文件。 如果原始文件位于其他文件夹中，则替换图像将驻留在其上传到的新文件夹中。
 
 **[!UICONTROL 默认颜色用户档案]** -有 [关详细信息](#configuring-color-management) ，请参阅配置颜色管理。
@@ -220,7 +220,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 * 将Adobe Photoshop文档(.PSD)转换为横幅模板资产以进行个性化。
 * 栅格化Adobe Illustrator文件(.AI)或Adobe Photoshop封装的Postscript文件(.EPS)。
 
->[注意]
+>[!NOTE]
 >
 >视频用户档案和成像用户档案可分别用于定义视频和图像的处理。
 
@@ -350,7 +350,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 Dynamic Media使用批量集预设将资产组织为一组图像（替代图像、颜色选项、360旋转），以便在查看器中显示。 批集预设会在Dynamic Media中与资产上传流程一起自动运行。
 
-您可以创建、编辑和管理批集预设。 有两种形式的批集预设定义： 一个用于您可能已设置的默认命名约定，另一个用于您动态创建的自定义命名约定。
+您可以创建、编辑和管理批集预设。 有两种形式的批集预设定义：一个用于您可能已设置的默认命名约定，另一个用于您动态创建的自定义命名约定。
 
 您可以使用表单字段方法来定义批集预设或代码方法，它允许您使用常规表达式。 与默认命名一样，您可以在 [!UICONTROL 表单视图中] 定义的同时选择 [!UICONTROL 视图代码] ，并使用常规表达式构建定义。 或者，您也可以取消选中视图以使用其中一种或只使用另一种。
 
@@ -420,7 +420,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
    请注 [!UICONTROL 意],视图表单(如“详细信息”页面右上角 [!UICONTROL 设置] )是默认视图。
 
 1. 在预 **[!UICONTROL 设列表]** 面板中，点 **[!UICONTROL 按添加]** ，以激活屏幕右侧“详 **[!UICONTROL 细信息]** ”面板中的定义字段。
-1. 在“详 **[!UICONTROL 细信息]** ”面板的[!UICONTROL预设名称[!UICONTROL字段中，键入预设的名称。
+1. 在“详 **[!UICONTROL 细信息]** ”面板的“ [!UICONTROL 预设名称] ”字段中，键入预设的名称。
 1. In the **[!UICONTROL Batch Set Type]** drop-down menu, select **[!UICONTROL Asset Set]**.
 1. 在“ **[!UICONTROL 子类型]** ”下拉列表中 **[!UICONTROL ，选择“]**&#x200B;多轴旋转集”。
 1. 展开 **[!UICONTROL 资产命名约定]**，然后在文件命 **[!UICONTROL 名下拉列表中]** ，点按自 **[!UICONTROL 定义]**。
@@ -500,7 +500,7 @@ Granite传输工作流队列用于DAM更 **[!UICONTROL 新资产工作流]** 。
 
 **要更新Granite临时工作流队列，请执行以下操作**:
 
-1. 导航 [到https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) ，并搜索 **[!UICONTROL 队列： Granite临时工作流队列]**。
+1. 导航 [到https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) ，并搜索 **[!UICONTROL 队列：Granite临时工作流队列]**。
 
    >[!NOTE]
    >
@@ -522,7 +522,7 @@ Granite工作流队列用于非临时工作流。 在Dynamic Media中，它用�
 
 **要更新Granite工作流队列，请执行以下操作：**
 
-1. 导航到 `https://<server>/system/console/configMgr` 并搜索队 **[!UICONTROL 列： Granite工作流队列]**。
+1. 导航到 `https://<server>/system/console/configMgr` 并搜索队 **[!UICONTROL 列：Granite工作流队列]**。
 
    >[!NOTE]
    >
@@ -547,7 +547,7 @@ Scene7上传连接设置将AEM资产同步到Dynamic Media Classic服务器。
 1. 导航至 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在连接 [!UICONTROL 数字字段] 和／或活动作 [!UICONTROL 业超时字段中] ，根据需要更改该数字。
 
-   “ **[!UICONTROL 连接数]** ”设置控制AEM上传Dynamic Media所允许的HTTP连接的最大数量； 通常，10个连接的预定义值就足够了。
+   “ **[!UICONTROL 连接数]** ”设置控制AEM上传Dynamic Media所允许的HTTP连接的最大数量；通常，10个连接的预定义值就足够了。
 
    活动 **[!UICONTROL 作业超时]** (Active job timeout)设置决定在投放服务器中发布已上传Dynamic Media资产的等待时间。 默认情况下，此值为2100秒或35分钟。
 
@@ -619,7 +619,7 @@ Scene7上传连接设置将AEM资产同步到Dynamic Media Classic服务器。
 
    请注意， `dc:format` 资产的 `Fiji Red.jpg` 属性 `image/jpeg`是
 
-   要使此滤镜应用于所有图像（无论其格式如何），请将值设 `image/*` 置 `*` 为应用于任何格式的所有图像的常规表达式。
+   要使此滤镜应用于所有图像（无论其格式如何），请将值设 `image/*` 置为 `*` 应用于任何格式的所有图像的常规表达式。
 
    要使滤镜仅应用于JPEG类型的图像，请输入值 `image/jpeg`。
 

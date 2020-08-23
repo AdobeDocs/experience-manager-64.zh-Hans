@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 28%
@@ -133,20 +133,20 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (以上路径仅供说明； 它不是您复制的实际路径。)
+   (以上路径仅供说明；它不是您复制的实际路径。)
 
 1. 在&#x200B;**[!UICONTROL 注册 ID]** 下，复制 ID 最后一部分中的客户名称。
 
    例如，如果注册ID为 `87654321|MyCompany`，则客户名称为 `MyCompany`。
 
-1. 在页面的左上角附近，点按[! **UICONTROLCloud Services**，然后点按AEM图标并导航到 **[!UICONTROL 常规>CRXDE Lite]**。
+1. 在页面的左上角附近，点按云 **[!UICONTROL 服]务**，然后点 **[!UICONTROL 按AEM图标]**，导航至“常规”>“CRXDE Lite”。
 1. 从JCR（Java内容存储库）中向下复制整个视频再现路径。
 
    例如，视频的再现路径可能与以下内容类似：
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (以上路径仅供说明； 它不是您复制的实际路径。)
+   (以上路径仅供说明；它不是您复制的实际路径。)
 
 1. 按照以下顺序排列复制的信息，以形成完整的URL路径：
 
@@ -169,7 +169,7 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (以上路径仅供说明； 它不是您复制的实际路径。)
+   (以上路径仅供说明；它不是您复制的实际路径。)
 
    * 在&#x200B;**[!UICONTROL 注册 ID]** 下，复制 ID 最后一部分中的客户名称。在稍后这些步骤中，您将需要复制的客户名称。
 
@@ -183,7 +183,7 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
    | HTTP <br> 如果您使用HTTP(非安全视频投放)，请确保在您之前复制的视频服务URL值中将https更改为http。 | `public/` |
    | HTTPS | `public-ssl/` |
 
-1. 在AEM中复制完整的视频资产路径，由Dynamic Media处理。 在这些步骤的稍后部分，您将需要此复制的视频资产路径。
+1. 在AEM中复制完整的视频资产路径（由Dynamic Media处理）。 在这些步骤的稍后部分，您将需要此复制的视频资产路径。
 
    例如：
 

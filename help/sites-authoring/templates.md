@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 96%
@@ -316,7 +316,7 @@ ht-degree: 96%
 
 * [布局](#editing-a-template-layout-template-author)
 
-   您可以在此处预定义所需设备格式的模板布局。**模板创作** 的布局模式与页面创作的布局模 **[式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**具有相同的功能]。
+   您可以在此处预定义所需设备格式的模板布局。模板创作的&#x200B;**布局**&#x200B;模式与&#x200B;**[页面创作的布局](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**&#x200B;模式具有相同的功能。
 
 * [页面策略](#editing-a-template-structure-template-author)
 
@@ -445,7 +445,7 @@ ht-degree: 96%
 
    >[!NOTE]
    >
-   >如果将同一类型的多个组件添加为初始内容，则同一策略适用于所有这些组件。**[静态模板的设计模式](/help/sites-authoring/default-components-designmode.md)**存在相同的限制。
+   >如果将同一类型的多个组件添加为初始内容，则同一策略适用于所有这些组件。**[静态模板的设计模式](/help/sites-authoring/default-components-designmode.md)**&#x200B;存在相同的限制。
 
    ***属性***
 
@@ -575,7 +575,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->可以将&#x200B;**初始内容**&#x200B;模式视为使用模板创建的页面的编辑模式。因此，策略不是在&#x200B;**初始内容**&#x200B;模式下定义的，而是在&#x200B;**[结构](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)**模式下定义的。
+>可以将&#x200B;**初始内容**&#x200B;模式视为使用模板创建的页面的编辑模式。因此，策略不是在&#x200B;**初始内容**&#x200B;模式下定义的，而是在&#x200B;**[结构](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)**&#x200B;模式下定义的。
 
 * 可编辑的已解锁组件带有标记。选定此类组件后，它们会显示一个蓝色边框：
 

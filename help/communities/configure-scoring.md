@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 0%
@@ -123,9 +123,9 @@ AEM Communities评分和徽章功能提供识别和奖励社区成员的能力�
 
 访问评分和标记数据的描述使用JSRP，因为UGC可以使用 [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)。
 
-**作者JSRP**: 在作者环境中进行实验，结果在UGC中，仅在作者环境中可见。
+**作者JSRP**:在作者环境中进行实验，结果在UGC中，仅在作者环境中可见。
 
-**发布时的JSRP**: 同样，如果在发布环境上进行测试，则必须对发布实例使用管理权限访问CRXDE Lite。 如果发布实例在生产模 [式](../../help/sites-administering/production-ready.md) （nosamplecontent运行模式）中运行 [，则需要启用](../../help/sites-administering/enabling-crxde-lite.md)CRXDE Lite。
+**发布时的JSRP**:同样，如果在发布环境上进行测试，则必须对发布实例使用管理权限访问CRXDE Lite。 如果发布实例在生产模 [式](../../help/sites-administering/production-ready.md) （nosamplecontent运行模式）中运行 [，则需要启用](../../help/sites-administering/enabling-crxde-lite.md)CRXDE Lite。
 
 UGC在JSRP上的基本位置是 `/content/usergenerated/asi/jcr/`。
 
@@ -136,7 +136,7 @@ UGC在JSRP上的基本位置是 `/content/usergenerated/asi/jcr/`。
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-开发人员可从Adobe [库](deploy-communities.md#LatestReleases) 获取已安装版本的最新Javadoc。 请参 [阅将Maven用于社区： Javadocs](maven.md#javadocs)。
+开发人员可从Adobe [库](deploy-communities.md#LatestReleases) 获取已安装版本的最新Javadoc。 请参 [阅将Maven用于社区：Javadocs](maven.md#javadocs)。
 
 **UGC在存储库中的位置和格式可能会发生更改，但不会发出警告**。
 
@@ -152,10 +152,12 @@ UGC在JSRP上的基本位置是 `/content/usergenerated/asi/jcr/`。
       * `/content/sites/engage/en/forum/jcr:content`
    * 添加评分和徽章属性
 
-      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
-/etc/community/scoring/rules/forums-scoring]`
-      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
-/etc/community/badging/rules/forums-scoring]`
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,`
+
+         `/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,`
+
+         `/etc/community/badging/rules/forums-scoring]`
    * 找到论坛组件节点
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -215,7 +217,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 >
 >此示例不遵循以下最佳实践：
 >
->* 评分规则名称应具有全局唯一性； 他们不应以同一个名字结尾。\
+>* 评分规则名称应具有全局唯一性；他们不应以同一个名字结尾。\
    >  不要执行 *的* 示例：\
    >  /etc/community/scorning/rules/site1/forums-scorning\
    >  /etc/community/scorning/rules/site2/forums-scorning
@@ -271,7 +273,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 ## 附加信息 {#additional-information}
 
-要根据点显示成员的排序列表:
+要根据点显示成员的排序列表，请执行以下操作：
 
 * [用于包含在](functions.md#leaderboard-function) 社区站点或组模板中的排行榜功能。
 * [通栏组件](enabling-leaderboard.md)，通栏功能的特色组件，用于页面创作。

@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '848'
 ht-degree: 52%
 
 ---
@@ -31,7 +31,7 @@ AEM 3D 支持基于图像的照明 (IBL)，以便使用内置的 Adobe Rapid Ref
 * **[!UICONTROL 位深度]** - 32位（浮点）
 * **[!UICONTROL 像素顺序]** -隔行(RGBRGB)
 * **[!UICONTROL 图像压缩]** - LZW
-* **[!UICONTROL字节顺序** - IBM PC
+* **[!UICONTROL 字节顺序]** - IBM PC
 
 虽然通常情况下 IBL 舞台使用单个 HDR 图像便已足够，但 AEM 3D 允许使用最多三个不同的图像，从而增强对 IBL 效果的控制：
 
@@ -59,7 +59,7 @@ AEM 3D 支持基于图像的照明 (IBL)，以便使用内置的 Adobe Rapid Ref
     <ul> 
      <li><strong>纬度</strong> -太阳光源的垂直位置(<code>0.0</code>-<code>1.0</code>)。<br /> 设置为 <code>0.0</code> 水平线(扩散照明环境图像的垂直中心); <code>1.0</code> 位于最高点(扩散照明环境图像的上边缘)。</li> 
      <li><strong>long</strong> —— 太阳光源的水平<code>0.0</code>位置(<code>1.0</code>-)。<br /> 设置为0.0时，左边对应；1.0对应于扩散照明环境图像的右边缘。<br /> </li> 
-     <li><strong>亮</strong> -太阳光源的亮度。 增加此值可使太阳光源变亮；减少此值可使太阳光源变暗。<br /> 关闭补充 <code>0</code> 照明并禁用投影的设置。 该参数不影响环境反射。<br /> </li> 
+     <li><strong>亮</strong> -太阳光源的亮度。 增加此值可使太阳光源变亮；减少此值可使太阳光源变暗。<br /> 关闭补充照 <code>0</code> 明并禁用投影的设置。 该参数不影响环境反射。<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 

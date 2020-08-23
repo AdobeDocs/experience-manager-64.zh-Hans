@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1476'
 ht-degree: 33%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 33%
 
 混合媒体集由带有MixedMediaSet字样的横幅 **[!UICONTROL 指定]**。 此外，如果混合媒体集已发布，则横幅上会显示发布日期(由 **[!UICONTROL World]** 图标指示)以及上次修改日期(由 **** Pencil图标指示)。
 
-![chlimage_1-349](assets/chlimage_1-348.png)
+![chlimage_1-348](assets/chlimage_1-348.png)
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ If you need to, you can edit [Mixed Media Sets](#editing-mixed-media-sets). In a
 
    >[!NOTE]
    >
-   >如果要添加资产，请点按添 **[!UICONTROL 加资产]**。
+   >如果您要添加资产，请点按添 **[!UICONTROL 加资产]**。
 
 1. To delete an asset, select the corresponding check box and tap **[!UICONTROL Delete Asset]**.
 1. 要应用预设，请点 **[!UICONTROL 按右]** 上角的预设，然后选择要应用到资产的预设。
@@ -153,7 +153,7 @@ You can perform a variety of editing tasks to assets in Mixed Media Sets directl
    >* You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
-1. 完成 **编辑后点按[!** UICONTROL保存。
+1. 完成 **[!UICONTROL 编辑]** 后，点按保存。
 
    >[!NOTE]
    >

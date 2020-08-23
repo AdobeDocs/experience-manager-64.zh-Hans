@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1838'
 ht-degree: 27%
 
 ---
@@ -32,17 +32,17 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 >
 >有关资产用户界面的信息，请参 [阅使用触屏UI管理资产](managing-assets-touch-ui.md)。
 
-## 快速开始: 旋转集 {#quick-start-spin-sets}
+## 快速开始:旋转集 {#quick-start-spin-sets}
 
 要快速设置和运行旋转集，请遵循以下工作流：
 
 1. [上传多个视图的图像。](#uploading-assets-for-spin-sets)
 
-   对于一维旋转集，一个项目至少需要8-12张照片；对于二维旋转集，一个项目至少需要16-24张照片。 拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。 例如，如果一维旋转集包含12个镜头，则对每个镜头将项目旋转30度(360/12)。
+   对于一维旋转集，一个项目至少需要8-12张照片；对于二维旋转集，一个项目至少需要16-24张照片。拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。例如，如果一维旋转集包含12个镜头，则对每个镜头将项目旋转30度(360/12)。
 
 1. [创建旋转集。](#creating-spin-sets)
 
-   要创建旋转集，请选 **[!UICONTROL 择创建>旋转集]** ，然后命名旋转集，选择资产，然后按照图像的显示顺序对图像进行排序。
+   要创建旋转集，请选择 **[!UICONTROL 创建>旋转集]** ，然后命名旋转集，选择资产，然后按图像的显示顺序对图像进行排序。
 
    See [Working with Selectors](working-with-selectors.md).
 
@@ -73,7 +73,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 
 1. [将URL关联到Web 应用程序](linking-urls-to-yourwebapplication.md) , [或嵌入视频查看器或图像查看器](embed-code.md)。
 
-   AEM Assets为旋转集创建URL调用，并在您发布旋转集后将其激活。 您可以在预览资产时复制这些URL。 或者，您也可以将它们嵌入到您的网站上。
+   AEM Assets为旋转集创建URL调用，并在您发布旋转集后将其激活。您可以在预览资产时复制这些URL。或者，您也可以将它们嵌入到您的网站上。
 
    选择旋转集，然后在左边栏下拉菜单中选择&#x200B;**[!UICONTROL 查看器]**。
 
@@ -83,7 +83,7 @@ If you need to, you can [edit Spin Sets](#editing-spin-sets). 此外，您还可
 
 ## 上传旋转集的资产 {#uploading-assets-for-spin-sets}
 
-对于一维旋转集，一个项目至少需要8-12张照片；对于二维旋转集，一个项目至少需要16-24张照片。 拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。 例如，如果一维旋转集包含12个镜头，则对每个镜头将项目旋转30度(360/12)。
+对于一维旋转集，一个项目至少需要8-12张照片；对于二维旋转集，一个项目至少需要16-24张照片。拍摄时必须定期进行，以给人以项目正在旋转和翻动的印象。例如，如果一维旋转集包含12个镜头，则对每个镜头将项目旋转30度(360/12)。
 
 You can upload images for the Spin Sets as you would [upload any other asset in AEM Assets](managing-assets-touch-ui.md).
 
@@ -91,7 +91,7 @@ You can upload images for the Spin Sets as you would [upload any other asset in 
 
 以下是关于旋转集图像的一些最佳实践。一般而言，旋转集中的图像越多，图像的旋转效果越好。但是，在旋转集中包含很多图像也会使加载图像所需的时间变长。在拍摄用于旋转集的图像时，AEM 建议遵循以下准则：
 
-* 在一维旋转集中至少使用8-12幅图像，在二维旋转集中至少使用16-24幅图像。 必须至少使用8张图像才能进行360度旋转。 一维旋转集比较常见，因为创建二维旋转集非常繁琐。
+* 在一维旋转集中至少使用8-12幅图像，在二维旋转集中至少使用16-24幅图像。必须至少使用8张图像才能进行360度旋转。一维旋转集比较常见，因为创建二维旋转集非常繁琐。
 * 使用无损格式；建议使用 TIFF 和 PNG。
 * 对所有图像使用蒙版，以使项目显示在纯白或其他高对比度的背景中。或者，也可以添加阴影。
 * 确保充分突出产品细节，使其成为焦点。
@@ -109,7 +109,7 @@ You can upload images for the Spin Sets as you would [upload any other asset in 
 
 **要创建旋转集，请执行以下操作：**
 
-1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set**. 您还可以从包含资产的文件夹中创建旋转集。
+1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set]**. 您还可以从包含资产的文件夹中创建旋转集。
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
@@ -147,7 +147,7 @@ You can upload images for the Spin Sets as you would [upload any other asset in 
 
 您可以在用户界面中创建旋转集，也可以使用批 [集预设自动创建](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。 但是，使用批集预设创建的集 *不会* 显示在用户界面中。 您可以通过三种不同方式访问通过批集预设创建的集。 （即使您在用户界面中创建了旋转集，这些方法也可用。）
 
-您还可以通过用户界面视图集，如编辑旋 [转集所述](#editing-spin-sets)。
+您还可以通过用户界面视图集，如编辑旋转 [集中所述](#editing-spin-sets)。
 
 **视图旋转集：**
 

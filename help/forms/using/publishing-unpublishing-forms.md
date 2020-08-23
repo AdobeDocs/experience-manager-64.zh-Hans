@@ -10,9 +10,9 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM Forms允许您轻松创建、发布和取消发布表单。 有关AEM Forms的更多信息，请参 [阅表单管理简介](/help/forms/using/introduction-managing-forms.md)。
 
-AEM Forms服务器提供两个实例： 创作和发布。 创作实例用于创建和管理表单资产和资源。 发布实例用于保留可供最终用户使用的资产和相关资源。 可以在“创作”模式下导入XDP和PDF forms。 有关详细信息，请参 [阅在AEM Forms获取XDP和PDF文档](/help/forms/using/get-xdp-pdf-documents-aem.md)。
+AEM Forms服务器提供两个实例：创作和发布。 创作实例用于创建和管理表单资产和资源。 发布实例用于保留可供最终用户使用的资产和相关资源。 可以在“创作”模式下导入XDP和PDF forms。 有关详细信息，请参 [阅在AEM Forms获取XDP和PDF文档](/help/forms/using/get-xdp-pdf-documents-aem.md)。
 
 ## 支持的资源   {#supported-assets-nbsp}
 
@@ -61,8 +61,8 @@ AEM Forms支持以下类型的资产：
 资产可以具有以下状态：
 
 * **未发布：** 从未发布的资产(未发布状态仅适用于Forms资产。 通信管理资产没有未发布状态。)
-* **已发布**: 已发布且在发布实例上可用的资产
-* **已修改**: 在发布后修改的资产
+* **已发布**:已发布且在发布实例上可用的资产
+* **已修改**:在发布后修改的资产
 
 ## 发布资产 {#publish-an-asset}
 
@@ -145,7 +145,7 @@ AEM Forms允许您为Forms和文档计划资产发布和取消发布。 您可�
    1. 将指针移到资产上，然后点按取消 **[!UICONTROL 发布]**![取消发布](assets/unpublish.png)。
    1. 执行下列操作之一，然后点按取消发布：
 
-      * 如果您处于卡视图，请点 **按[!UICONTROL进入选** 择 ![](assets/aem6forms_check-circle.png)aem6forms_check-circle，然后点按资产。 此时会选择资产。
+      * 如果您处于卡视图，请点 **[!UICONTROL 按进入]**![](assets/aem6forms_check-circle.png)选择，然后点按资产。 此时会选择资产。
       * 如果您处于列表视图，请将鼠标悬停在资产上，然后点按选 ![择资产复选标记](assets/selectassetcheckmark.png) 。 此时会选择资产。
       * 点按资产以显示其详细信息。
       * 通过点按视图属性视图属性来显示资产 ![的属性](assets/viewproperties.png)。

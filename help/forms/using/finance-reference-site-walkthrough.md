@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9242'
+source-wordcount: '9231'
 ht-degree: 0%
 
 ---
@@ -168,7 +168,7 @@ AEM FormsOSGi提供以表单为中心的工作流，使您能够构建基于表�
 
 #### 亲自查看 {#see-it-yourself-2}
 
-您可以访问位于https://&lt;hostname>:&lt;PublishPort>/content/we-finance/global/en.html的&#x200B;*we.finance站点的* AEM *收件箱*。 在页面上，点按 **[!UICONTROL 登录]**，选中登 **[!UICONTROL 录为代表复选框]** ，使用Gloria Rios的用户名／口令 `grios/password` 登录AEM收件箱，并批准信用卡应用程序。 有关将AEM收件箱用于以表单为中心的工作流任务的信息，请参 [阅在AEM收件箱中管理Forms应](/help/forms/using/manage-applications-inbox.md)用程序和任务。
+您可以访问位于https://&lt;hostname>:&lt;PublishPort>/content/we-finance/global/en.html的&#x200B;*we.finance站点的* AEM *收件箱*。 在页面上，点按 **[!UICONTROL 登录]**，选中 **[!UICONTROL 以代表身份登录复选框]** ，使用Gloria Rios的用户名／口令 `grios/password` 登录AEM收件箱，并批准信用卡应用程序。 有关将AEM收件箱用于以表单为中心的工作流任务的信息，请参 [阅在AEM收件箱中管理Forms应](/help/forms/using/manage-applications-inbox.md)用程序和任务。
 
 ![收件箱-1](assets/inbox-1.png)
 
@@ -248,7 +248,7 @@ https://&lt;*hostname*>:&lt;*port*>/content/aemforms-refsite/doclink.html?文档
 
 We.Finance会不时检查其信用卡应用程序的性能，以检查客户可能遇到的任何问题。 他们使用此分析对信用卡应用程序中所需的更改做出明智决策，以增强用户体验，降低表单的弃用率，从而提高转化率。 他们利用AEM Forms和Adobe Analytics的融合来分析。 以下图像描绘了其分析仪表板。
 
-有关如何解释分析仪表板的更多信息，请参阅查 [看和了解AEM Forms分析报告](/help/forms/using/view-understand-aem-forms-analytics-reports.md)。
+有关如何解释分析仪表板的更多信息，请参 [阅查看和了解AEM Forms分析报告](/help/forms/using/view-understand-aem-forms-analytics-reports.md)。
 
 ![cc-analytics](assets/cc-analytics.png)
 
@@ -312,8 +312,8 @@ We.Finance会不时检查其信用卡应用程序的性能，以检查客户可�
 
 1. 选择表单，单击 **更多**，然后单 **击A/B测试报告**。 您在报告中找不到太多数据，因为您刚刚开始测试。 现在，让我们提供一些种子数据，了解A/B测试报告的外观。
 
-1. 打开CRXDE Lite并备份以下文件： /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
-1. 将上述文件中 `onReportLoadSuccess` 的函数定义替换为以下文件中的函数定义： /apps/we-finance/demo-artifacts/targetreport.js
+1. 打开CRXDE Lite并备份以下文件：/libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
+1. 将上述文件中 `onReportLoadSuccess` 的函数定义替换为以下文件中的函数定义：/apps/we-finance/demo-artifacts/targetreport.js
 
    **注意：** 这些更改仅用于演示目的。 确保完成此过程后恢复文件内容。
 
@@ -343,9 +343,9 @@ We.Finance住房抵押方案涉及以下角色：
 
 莎拉·罗斯计划买一套房，并寻找住房抵押计划。 她是We.Finance客户，因此访问We.Finance门户来探索家庭抵押优惠。 她转到“贷款”部分，在门户上找到一个按揭贷款计算器。 她填写详细信息，点击“计算我的抵押贷款”，这会返回抵押计划。
 
-![贷款1](assets/loans1.png)![贷款2](assets/loans2.png)**图：** *抵押计算器*
+![贷款1](assets/loans1.png)![贷款2](assets/loans2.png)**图：***抵押计算器*
 
-![loans3图](assets/loans3.png)**3:** *按揭贷款计算器结果*
+![loans3图](assets/loans3.png)**3:***按揭贷款计算器结果*
 
 #### 工作方式 {#how-it-works-6}
 
@@ -410,7 +410,7 @@ Sarah选择申请住房抵押，并单击“立即 **[!UICONTROL 应用”]** �
 
 转到并 `https://[server]:[port]/content/we-finance/global/en/all-forms.html` 单击“Home Mortgage Application **(家庭抵押** 应用程序)”上的“Apply now（立即应用）”按钮。 填写“入门”选项卡中的详细信息，尝试其他选项，然后提交应用程序。
 
-请确保在应用程序中指定有效的电子邮件ID，以便在您的收件箱中接收确认邮件。
+请确保在应用程序中指定有效的电子邮件ID，以便在收件箱中接收确认邮件。
 
 ### We.Finance接收应用程序 {#approving_the_application-1}
 
@@ -499,7 +499,7 @@ https://&lt;*hostname*>:&lt;*port*>/content/forms/af/we-finance/mortgage-account
 
 We.Finance会不时检查其抵押申请的表现，以检查客户可能面临的任何问题。 他们使用此分析对抵押申请中所需的更改做出明智决策，以增强用户体验、降低表单放弃率，从而提高转化率。 他们利用AEM Forms和Adobe Analytics的融合来分析。 以下图像描绘了其分析仪表板。
 
-有关如何解释分析仪表板的更多信息，请参阅查 [看和了解AEM Forms分析报告](/help/forms/using/view-understand-aem-forms-analytics-reports.md)。
+有关如何解释分析仪表板的更多信息，请参 [阅查看和了解AEM Forms分析报告](/help/forms/using/view-understand-aem-forms-analytics-reports.md)。
 
 ![mortgage-analytics](assets/mortgage-analytics.png)
 
@@ -562,8 +562,8 @@ We.Finance会不时检查其抵押申请的表现，以检查客户可能面临�
 
 1. 选择表单，单击 **更多**，然后单 **击A/B测试报告**。 您在报告中找不到太多数据，因为您刚刚开始测试。 现在，让我们提供一些种子数据，了解A/B测试报告的外观。
 
-1. 打开CRXDE Lite并备份以下文件： /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
-1. 将上述文件中 `onReportLoadSuccess` 的函数定义替换为以下文件中的函数定义： /apps/we-finance/demo-artifacts/targetreport.js
+1. 打开CRXDE Lite并备份以下文件：/libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
+1. 将上述文件中 `onReportLoadSuccess` 的函数定义替换为以下文件中的函数定义：/apps/we-finance/demo-artifacts/targetreport.js
 
    >[!NOTE]
    >
@@ -590,9 +590,9 @@ Microsoft Dynamics的住房抵押应用程序演练演示了当参考站点使�
 
 莎拉·罗斯计划买一套房，并寻找住房抵押计划。 她是We.Finance客户，因此访问We.Finance门户来探索家庭抵押优惠。 她转到“贷款”部分，在门户上找到一个按揭贷款计算器。 她填写详细信息，点击“计算我的抵押贷款”，这会返回抵押计划。
 
-![贷款1](assets/loans1.png)![贷款2](assets/loans2.png)**图：** *抵押计算器*
+![贷款1](assets/loans1.png)![贷款2](assets/loans2.png)**图：***抵押计算器*
 
-![loans3图](assets/loans3.png)**3:** *按揭贷款计算器结果*
+![loans3图](assets/loans3.png)**3:***按揭贷款计算器结果*
 
 #### 工作方式 {#how-it-works-12}
 
@@ -847,7 +847,7 @@ We.Finance汽车保险应用方案涉及以下角色：
 
 Sarah Rose是We.Finance的现有客户，已购买汽车保险。 现在是她续签保险单的时候。 We.Finance保险代理康拉德·西姆斯向莎拉发送了关于她保单续签的提醒。 提醒电子邮件包含一个PDF，其中包含策略续订详细信息以及指向交互式通信的Web版本的链接。 交互式通信采用适合移动设备的响应式设计。 她可以在任何设备上打开交互通信，并重排交互通信以适合底层设备的屏幕大小。 附加到电子邮件的交互式通信的PDF版本对脱机阅读很有帮助。
 
-Sarah按照电子邮件中提供的说明操作并成功重新发布该过程。 下图显示了汽车保险应用程序演练的工作流：  ![自动保险——申请演练](assets/auto-insurance-application-walkthrough.png)
+Sarah按照电子邮件中提供的说明操作并成功重新发布该过程。 下图显示了汽车保险应用程序演练的工作流： ![自动保险——申请演练](assets/auto-insurance-application-walkthrough.png)
 
 ### 康拉德向We.Finance发送保险单续订通讯 {#conrad-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
@@ -871,7 +871,7 @@ Conrad登录AEM实例，打开“自动保险”仪表板，指定Sarah的 **客
 * 标准政策比高级政策成本低。
 * 优惠政策有防盗奖励，标准政策有聪明的骑行奖励
 
-这两个策略都使用相同的交互式通信。 策略中的部分会根据策略类型条件进行更改或隐藏。 您可以直接从https:// authorHost访问和查看自动保险续签交互[通信]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsure/auto-insurance-renewal
+这两个策略都使用相同的交互式通信。 策略中的部分会根据策略类型条件进行更改或隐藏。 您可以直接从 `https://[authorHost]: [authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **将Microsoft Dynamics用作数据源**
 
@@ -894,7 +894,7 @@ Conrad登录AEM实例，打开“自动保险”仪表板，指定Sarah的 **客
 
 Sarah收到一封附有We.Finance附件的电子邮件，提醒她汽车保险保单即将过期。 附件是其汽车保险单续订详细信息的打印版本。
 
-Sarah单击 **“立即续订** ”并转到其汽车保险信件的Web版本。 在这封信上，Sarah找到了她的政策到期的剩余天数。 本页概述了Sarah的保险单详细信息，如保单编号、到期金额，以及折扣优惠和忠诚度奖励等其他信息。 Sarah再次单 **击策略** 底部的“立即续订”。
+Sarah点击 **Renew Now** （立即续订）并转到Web版的汽车保险信。 在这封信上，Sarah找到了她的政策到期的剩余天数。 本页概述了Sarah的保险单详细信息，如保单编号、到期金额，以及折扣优惠和忠诚度奖励等其他信息。 Sarah再次单 **击策略** 底部的“立即续订”。
 
 ![自动保险续签电子邮件](assets/auto-insurance-renewal-email.png)
 
@@ -922,11 +922,11 @@ https://[publishServer]:[publishPort]/content/document.html?模式=fdm&amp;docum
 
 #### 工作方式  {#how-it-works-22}
 
-Renew Now（立即续订）按钮将Sarah引导到付款页面。 付款页面是自适应表单。 Sarah会填写信用卡详细信息并单击“ **提交**”。 系统会处理她的信用卡付款，屏幕上会显示在自适应表单中配置的感谢信。
+Renew Now（立即续订）按钮将指示Sarah进入付款页面。 付款页面是自适应表单。 Sarah会填写信用卡详细信息并单击“ **提交**”。 系统会处理她的信用卡付款，屏幕上会显示在自适应表单中配置的感谢信。
 
 #### 亲自查看  {#see-it-yourself-20}
 
-单击 **立即续订** ，以访问付款页面。 填写您的信用卡信息，然后单击“ **付款”。** 您可以访问创作实例中的付款页面：
+单击 **立即续** 订以访问付款页面。 填写您的信用卡信息，然后单击“ **付款”。** 您可以访问创作实例中的付款页面：
 
 https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&amp;模式=fdm&amp;customerId=900001
 

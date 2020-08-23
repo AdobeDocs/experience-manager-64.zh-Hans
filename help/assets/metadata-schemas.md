@@ -3,9 +3,9 @@ title: 元数据架构
 description: '元数据模式定义属性页面的布局以及为资产显示的元数据属性。 了解如何创建自定义元数据模式、编辑元数据模式，以及如何将元数据模式应用于资产。  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33541e9d1fa8bc24ae637141c0260f5595f38a4f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2535'
 ht-degree: 19%
 
 ---
@@ -42,8 +42,8 @@ ht-degree: 19%
 | [!UICONTROL 默认] |  | 资产的基本元数据模式表单。 |
 |  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
 |  | <ul><li> [!UICONTROL dm_video]</li></ul> | Dynamic Media视频的模式表单。 |
-|  | <ul><li> [!UICONTROL 图像]</li></ul> | 模式表单，用于MIME类型为“image”（例如image/jpeg、image/png等）的资产。 <br> 图 [!UICONTROL 像表单] 具有以下子表单模板： <ul><li> [!UICONTROL jpeg]: 模式子类型为jpeg的资产 [!UICONTROL 表单]。</li> <li>[!UICONTROL tiff]: 模式子类型为tiff的资产的 [!UICONTROL 表单]。</li></ul> |
-|  | <ul><li> [!UICONTROL 应用]</li></ul> | 模式表单，用于MIME类型为“application”（例如application/pdf、application/zip等）的资产。 <br>[!UICONTROL pdf]: 模式子类型为pdf的资产的表单。 |
+|  | <ul><li> [!UICONTROL 图像]</li></ul> | 模式表单，用于MIME类型为“image”（例如image/jpeg、image/png等）的资产。 <br> 图 [!UICONTROL 像表单] 具有以下子表单模板： <ul><li> [!UICONTROL jpeg]:模式子类型为jpeg的资产 [!UICONTROL 表单]。</li> <li>[!UICONTROL tiff]:模式子类型为tiff的资产的 [!UICONTROL 表单]。</li></ul> |
+|  | <ul><li> [!UICONTROL 应用]</li></ul> | 模式表单，用于MIME类型为“application”（例如application/pdf、application/zip等）的资产。 <br>[!UICONTROL pdf]:模式子类型为pdf的资产的表单。 |
 |  | <ul><li>[!UICONTROL 视频]</li></ul> | 模式表单，用于MIME类型为“”（如video/avi、video/mp4等）的资产。 |
 | [!UICONTROL 收藏集] |  | 集合的模式表单。 |
 | [!UICONTROL contentfragment] |  | 模式内容片段表单。 |
@@ -63,7 +63,7 @@ ht-degree: 19%
 
 1. In the dialog, enter the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
 
-   ![chlimage_1-175](assets/chlimage_1-174.png)
+   ![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## 编辑元数据模式表单 {#editing-metadata-schema-forms}
 
@@ -93,14 +93,14 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your schema
 | 组件名称 | 描述 |
 |---|---|
 | [!UICONTROL 章节标题] | 添加一列表常用组件的章节标题。 |
-| [!UICONTROL 单行文本] | 添加单行文本属性。 它存储为字符串。 |
-| [!UICONTROL 多值文本] | 添加多值文本属性。 它存储为字符串数组。 |
+| [!UICONTROL 单行文本] | 添加单行文本属性。它存储为字符串。 |
+| [!UICONTROL 多值文本] | 添加多值文本属性。它存储为字符串数组。 |
 | [!UICONTROL 数字] | 添加数字组件。 |
 | [!UICONTROL 日期] | 添加日期组件。 |
 | [!UICONTROL 下拉列表] | 添加下拉列表。 |
 | [!UICONTROL 标准标记] | 添加标记. |
 | [!UICONTROL 智能标记] | 通过自动添加元数据标记来增强搜索功能。 |
-| [!UICONTROL 隐藏字段] | 添加隐藏字段。 在保存资产时，它将作为POST参数发送。 |
+| [!UICONTROL 隐藏字段] | 添加隐藏字段。在保存资产时，它将作为POST参数发送。 |
 | [!UICONTROL 资产引用对象] | 将此组件添加到资产引用的资产的视图列表。 |
 | [!UICONTROL 资产引用] | 添加以显示引用资产的资产列表。 |
 | [!UICONTROL 产品引用] | 添加以显示与资产链接的产品的列表。 |
@@ -111,33 +111,33 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your schema
 
 To edit the properties of a metadata component on the form, click the component and edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab.
 
-**字段标签**: 资产的属性页面上显示的元数据属性的名称。
+**字段标签**:资产的属性页面上显示的元数据属性的名称。
 
-**映射到属性**: 此属性指定资产节点在CRX存储库中保存的相对路径／名称。 It starts with `./` because indicating that the path is under the asset&#39;s node.
+**映射到属性**:此属性指定资产节点在CRX存储库中保存的相对路径／名称。 It starts with `./` because indicating that the path is under the asset&#39;s node.
 
 以下是此属性的有效值：
 
 * `./jcr:content/metadata/dc:title`：将该值作为属性 `dc:title` 存储在资产的元数据节点中。
 
-* `./jcr:created`: 在资产的节点显示JCR属性。 如果您在视图属性上配置这些属性，我们建议您将这些属性标记为“禁用编辑”，因为它们是受保护属性。Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`:在资产的节点显示JCR属性。 如果您在视图属性上配置这些属性，我们建议您将这些属性标记为“禁用编辑”，因为它们是受保护属性。Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
 
 要确保在元数据模式表单中正确显示组件，属性路径不应包含任何空格。
 
-**占位符**: 使用此属性可指定与元数据属性相关的占位符文本。
+**占位符**:使用此属性可指定与元数据属性相关的占位符文本。
 
-**必需**: 使用此属性可在属性页面上将元数据属性标记为必需。
+**必需**:使用此属性可在属性页面上将元数据属性标记为必需。
 
-**禁用编辑**: 使用此属性可使元数据属性在属性页面上不可编辑。
+**禁用编辑**:使用此属性可使元数据属性在属性页面上不可编辑。
 
-**在只读模式下显示空字段**: 标记此属性可在属性页面上显示元数据属性，即使其没有值也是如此。 默认情况下，当元数据属性没有值时，不会在属性页面中列出该属性。
+**在只读模式下显示空字段**:标记此属性可在属性页面上显示元数据属性，即使其没有值也是如此。默认情况下，当元数据属性没有值时，不会在属性页面中列出该属性。
 
-**显示订购列表**: 使用此属性可显示选项的有序列表
+**显示订购列表**:使用此属性可显示选项的有序列表
 
-**选择**: 使用此属性指定列表中的选项
+**选择**:使用此属性指定列表中的选项
 
 **描述**：使用此属性可添加对元数据组件的简短描述。
 
-**类**: 属性关联的对象类。
+**类**:属性关联的对象类。
 
 **删除图标** 单击此图标可从模式表单中删除组件。
 
@@ -183,7 +183,7 @@ AEM允许您仅删除自定义模式表单。 您无法删除默认的架构表�
 
 >[!NOTE]
 >
->无法删除AEM Assets的现成元数据模式表单。
+>您无法删除AEM Assets的现成元数据模式表单。
 
 ## Schema forms for MIME types {#schema-forms-for-mime-types}
 
@@ -239,7 +239,7 @@ AEM Assets允许您定义元数据模式的变体，并将其应用到特定文�
 如果文件夹有子文件夹，则子文件夹内的资产会继承子文件夹级别所应用模式的元数据(如果子文件夹级别应用了其他模式)。 但是，如果子文件夹级别未应用模式或同一模式，则子文件夹资产将继承父文件夹级别所应用模式的元数据。
 
 1. 单击 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > Assets > 元数据架构]**。此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
-1. 选中表单前面的复选框（例如默认元数据表单），单击或点按复制 **[!UICONTROL 图标]** ，然后将其另存为自定义表单。 指定表单的自定义名称，例如 `my_default`。 或者，您也可以创建自定义表单。
+1. 选中表单前面的复选框（例如默认元数据表单），单击或点按复 **[!UICONTROL 制图]** 标并将其另存为自定义表单。 指定表单的自定义名称，例如 `my_default`。 或者，您也可以创建自定义表单。
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
@@ -247,7 +247,7 @@ AEM Assets允许您定义元数据模式的变体，并将其应用到特定文�
 
 1. 在元数 **[!UICONTROL 据模式编辑]** 器页面中，向模式表单添加一个文本字段。 例如，添加带有标签类别的 **[!UICONTROL 字段]**。
 
-   ![chlimage_1-185](assets/chlimage_1-186.png)
+   ![chlimage_1-186](assets/chlimage_1-186.png)
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在元数据 **[!UICONTROL 模式Forms]** 页面。
 1. 单击／点 **[!UICONTROL 按工具栏中的应用到文件夹]** ，以将自定义元数据应用到文件夹。
@@ -283,7 +283,7 @@ AEM Assets允许您定义元数据模式的变体，并将其应用到特定文�
 
 1. 导航到文件夹，然后上传某些资产，其中缺少您添加到自定义表单的必填字段的元数据。 资产的卡片视图会显示必填字段中缺少的元数据的消息。
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
 1. （可选）访 `http://[server]:[port]/system/console/components/`问。 配置并启 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 用默认禁用的组件。 设置AEM在资产上检查元数据有效性的频率。
 此配置会向jcr: `hasValidMetadata` content of assets添加属性。 使用此属性，AEM可以在搜索中筛选结果。
@@ -292,6 +292,6 @@ AEM Assets允许您定义元数据模式的变体，并将其应用到特定文�
 >
 >如果资产是在计划检查后添加的，则直到下一个计划检查 `hasValidMetadata` 后，才会将资产标记为。 资产不会显示在中间搜索结果中。
 
->[!C动作]
+>[!CAUTION]
 >
 >元数据验证检查会占用大量资源，并且可能会影响系统性能。 计划相应的检查。 如果AEM部署存在性能问题，请尝试禁用此作业。

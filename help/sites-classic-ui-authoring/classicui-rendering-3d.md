@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
-source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 67%
+source-wordcount: '705'
+ht-degree: 69%
 
 ---
 
@@ -50,8 +50,8 @@ Rapid Refine 渲染器通常需要数分钟才能渲染较大的图像。但是�
 
    请参阅[查看 3D 资产](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md)。
 
-1. From **Adobe Experience Manager**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View** drop-down list, tap **[!UICONTROL Card View]**.
+1. 在 **Adobe Experience Manager** 中的&#x200B;**[!UICONTROL 导航]**&#x200B;页面上，点按&#x200B;**[!UICONTROL 资产]**。
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. 导航到要渲染的3D对象。
 
 1. 点按 3D 对象的卡片以在资产详细信息页面中打开它。

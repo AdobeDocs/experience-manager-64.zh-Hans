@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 您可以将自定义构件插入移动Forms。 您可以扩展现有的jQuery构件，或使用外观框架开发自己的自定义构件。 XFA引擎使用各种构件，有关详 [细信息，请参阅自适应和HTML5表单的](/help/forms/using/introduction-widgets.md) “外观框架”。
 
-![默认和自定义构件的示例](assets/custom-widgets.jpg)**图：** *默认和自定义构件的示例*
+![默认和自定义构件的示例](assets/custom-widgets.jpg)**图：***默认和自定义构件的示例*
 
 ## 将自定义构件与HTML5表单集成 {#integrating-custom-widgets-with-html-forms}
 
@@ -46,7 +46,7 @@ HTML5表单提供构件框架的实现，可以扩展该框架以创建新构件
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>返回将HTML事件转换为XFA事件的映射。 <br /> {模糊<br /> : XFA_EXIT_事件<br /> , }<br /> 此示例说明模糊是HTML事件,XFA_EXIT_事件是相应的XFA事件。 </td> 
+   <td>返回将HTML事件转换为XFA事件的映射。 <br /> {模糊<br /> :XFA_EXIT_事件<br /> , }<br /> 此示例说明模糊是HTML事件,XFA_EXIT_事件是相应的XFA事件。 </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -89,17 +89,19 @@ window.formBridge.registerConfig("widgetConfig",
 
 构件配置作为JSON对象（键值对的集合）提供，其中键标识字段，值表示要与这些字段一起使用的构件。 示例配置如下：
 
+```
 *{*
 
-*&quot;identifier1&quot;: &quot;customwidgetname&quot;,\
-&quot;identifier2&quot; : &quot;customwidgetname2&quot;,\
-..\
+*“identifier1” : “customwidgetname”,  
+“identifier2” : “customwidgetname2”,  
+..  
 }*
+```
 
 其中，“identifier”是表示特定字段、特定类型字段集或所有字段的jQuery CSS选择器。 以下列表了不同情况下标识符的值：
 
 | 标识符类型 | 标识符 | 描述 |
 |---|---|---|
 | 具有名称字段名称的特定字段 | 标识符：&quot;div.fieldname&quot; | 名称为“fieldname”的所有字段都使用构件呈现。 |
-| 所有类型为“type”的字段（其中类型为NumericField、DateField等。）:  | 标识符： &quot;div.type&quot; | 对于Timefield和DateTimeField，类型为文本字段，因为不支持这些字段。 |
-| 所有字段 | 标识符： &quot;div.field&quot; |  |
+| 所有类型为“type”的字段（其中类型为NumericField、DateField等。）:  | 标识符：&quot;div.type&quot; | 对于Timefield和DateTimeField，类型为文本字段，因为不支持这些字段。 |
+| 所有字段 | 标识符：&quot;div.field&quot; |  |

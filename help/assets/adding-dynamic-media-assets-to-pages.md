@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2830'
+source-wordcount: '2829'
 ht-degree: 34%
 
 ---
@@ -34,7 +34,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 >[!NOTE]
 >
->如果具有只读权限的用户访问了网页上的Dynamic Media组件，则分页符和组件无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断； 由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
+>如果具有只读权限的用户访问了网页上的Dynamic Media组件，则分页符和组件无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断；由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
 >  
 >要避免此问题，请确保AEM Sites用户具有访问资产的必要权限。
 
@@ -91,7 +91,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 ## Dynamic Media components {#dynamic-media-components}
 
-Dynamic Media和交互式媒体位于组件中 [!UICONTROL 的Dynamic] Media选 [!UICONTROL 项卡下]。 对于任何交互式资产（例如交互式视频、交互式图像或传送集），请使用[!UICONTROL 交互式媒体]组件。对于所有其他 Dynamic Media 资产，请使用 Dynamic Media 组件。
+Dynamic Media和交互式媒体位于组件中 [!UICONTROL 的Dynamic Media] 选项 [!UICONTROL 卡下]。 对于任何交互式资产（例如交互式视频、交互式图像或传送集），请使用[!UICONTROL 交互式媒体]组件。对于所有其他 Dynamic Media 资产，请使用 Dynamic Media 组件。
 
 >[!NOTE]
 >
@@ -105,7 +105,7 @@ Dynamic Media组件是智能的——根据您添加的是图像还是视频，�
 
 >[!NOTE]
 >
->如果具有只读权限的用户访问的网页上存在Dynamic Media组件、交互式媒体组件或两者，则分页符和组件无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断； 由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
+>如果具有只读权限的用户访问的网页上存在Dynamic Media组件、交互式媒体组件或两者，则分页符和组件无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断；由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
 >  
 >要避免此问题，请确保AEM Sites用户具有访问资产的必要权限。
 
@@ -158,7 +158,7 @@ You must edit the following Dynamic Media Settings by clicking the **[!UICONTROL
 
 使用Dynamic Media组件将动态视频添加到网页。 编辑该组件时，您可以选择使用预定义的视频查看器预设，以在页面上播放视频。
 
-![chlimage_1-540](assets/chlimage_1-540.png)
+![chlimage_1-541](assets/chlimage_1-540.png)
 
 You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
@@ -207,7 +207,7 @@ You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UI
 
 * **[!UICONTROL URL，打开方式]**&#x200B;您可以设置资产以打开链接。 设置 URL，并在打开方式中指示是要在同一窗口中还是在新窗口中打开该 URL。如果您查看的是图像集、旋转集或混合媒体集，则此选项不可用。
 
-* **[!UICONTROL高度** 和宽 **[!UICONTROL 度]**&#x200B;如果您希望智能裁剪图像具有固定大小，请输入以像素为单位的值。 将这两个值留空会使视频成为自适应资产。
+* **[!UICONTROL 高度]** 和 **[!UICONTROL 宽]**&#x200B;度如果您希望智能裁剪图像具有固定大小，请输入以像素为单位的值。 将这两个值留空会使视频成为自适应资产。
 
 ### Interactive Media component {#interactive-media-component}
 
@@ -217,7 +217,7 @@ You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UI
 
 >[!NOTE]
 >
->如果具有只读权限的用户访问的网页上存在Dynamic Media组件、交互式媒体组件或两者，则分页符和组件无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断； 由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
+>如果具有只读权限的用户访问的网页上存在Dynamic Media组件、交互式媒体组件或两者，则分页符和组件无法正确呈现。 其原因是，重建页面是为了确保组件的属性良好，并且任何引用的资产和配置都可访问。 然后，页面会再次呈现，导致组件中断；由于用户的只读访问权限，无法重新呈现页面上的相应组件代码。
 > 
 >要避免此问题，请确保AEM Sites用户具有访问资产的必要权限。
 

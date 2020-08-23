@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4726'
+source-wordcount: '4725'
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 1%
 在进行任何有关开发组件的严肃讨论开始之前，您需要了解您的作者将使用的UI:
 
 * **触屏优化 UI**
-   [AEM](/help/sites-developing/touch-ui-concepts.md) 5.6.0中作为预览引入并在6.x中扩展的标准用户界面。 它基于Adobe Marketing Cloud的统一用户体验，使用Coral UI和Granite UI [的底层技](/help/sites-developing/touch-ui-concepts.md#coral-ui) 术 [实现](/help/sites-developing/touch-ui-concepts.md#granite-ui)。
+   [AEM](/help/sites-developing/touch-ui-concepts.md) 5.6.0中作为预览引入并在6.x中扩展的标准用户界面。它基于Adobe Marketing Cloud的统一用户体验，使用Coral UI和Granite UI [的底层技](/help/sites-developing/touch-ui-concepts.md#coral-ui) 术 [实现](/help/sites-developing/touch-ui-concepts.md#granite-ui)。
 
 * **经典UI**&#x200B;基于CQ 5.1中引入的ExtJS技术的用户界面。
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe建议利用触屏优化UI从最新技术中受益。 [AEM Modernination Tools&amp;(moderniatzion-tools.md)可以简化迁移。
+>Adobe建议利用触屏优化UI从最新技术中受益。 [AEM现代化工具](modernization-tools.md) ，可让迁移更轻松。
 
 ### 内容逻辑和渲染标记  {#content-logic-and-rendering-markup}
 
@@ -173,7 +173,7 @@ AEM组件的结构强大而灵活，主要考虑事项有：
 
    * jcr属性：
 
-      一列表jcr属性； 这些是变量，某些可能是可选的，尽管组件节点的基本结构，其属性和子节点由定义定 `cq:Component` 义
+      一列表jcr属性；这些是变量，某些可能是可选的，尽管组件节点的基本结构，其属性和子节点由定义定 `cq:Component` 义
 
    * 资源:
 
@@ -189,8 +189,8 @@ AEM组件的结构强大而灵活，主要考虑事项有：
 
 * **重要属性**:
 
-   * `jcr:title` -组件标题； 例如，当组件在组件浏览器或Sidekick中列出时，将用作标签。
-   * `jcr:description` -组件说明； 可用作组件浏览器或Sidekick中的鼠标悬停提示。
+   * `jcr:title` -组件标题；例如，当组件在组件浏览器或Sidekick中列出时，将用作标签。
+   * `jcr:description` -组件说明；可用作组件浏览器或Sidekick中的鼠标悬停提示。
    * 经典 UI：
 
       * `icon.png` -此组件的图标。
@@ -204,7 +204,7 @@ AEM组件的结构强大而灵活，主要考虑事项有：
 
    * `cq:editConfig (cq:EditConfig)` -定义组件的编辑属性，并使组件显示在组件浏览器或Sidekick中。
 
-      注意： 如果组件具有对话框，则它将自动显示在组件浏览器或Sidekick中，即使cq:editConfig不存在也是如此。
+      注意：如果组件具有对话框，则它将自动显示在组件浏览器或Sidekick中，即使cq:editConfig不存在也是如此。
 
    * `cq:childEditConfig (cq:EditConfig)` -控制未定义其自身的子组件的作者UI方面 `cq:editConfig`。
    * 触屏优化 UI:
@@ -239,7 +239,7 @@ AEM组件的结构强大而灵活，主要考虑事项有：
 
    * 20 x 20像素是标准组件图标的大小。
 
-      * 将缩小较大的图标（客户端）。
+      * 将缩小大图标（客户端）。
    * 建议颜色为rgb(112, 112, 112)> #707070
    * 标准组件图标的背景是透明的。
    * Only `.png` and `.svg` files are supported.
@@ -423,14 +423,14 @@ AEM组件的结构强大而灵活，主要考虑事项有：
 
 特定权益的物业包括：
 
-* `jcr:title` -组件的标题； 这可用于标识组件，例如，它显示在组件浏览器或Sidekick的组件列表中
-* `jcr:description` -组件说明； 可用作sidekick中组件列表中的鼠标悬停提示
+* `jcr:title` -组件的标题；这可用于标识组件，例如，它显示在组件浏览器或Sidekick的组件列表中
+* `jcr:description` -组件说明；可用作sidekick中组件列表中的鼠标悬停提示
 
-* `sling:resourceSuperType`: 这表示在扩展组件（通过覆盖定义）时继承的路径
+* `sling:resourceSuperType`:这表示在扩展组件（通过覆盖定义）时继承的路径
 
 特定感兴趣的子节点包括：
 
-* `cq:editConfig` ( `cq:EditConfig`-此控制视觉方面； 例如，它可以定义条形或构件的外观，也可以添加自定义控件
+* `cq:editConfig` ( `cq:EditConfig`-控制视觉方面；例如，它可以定义条形或构件的外观，也可以添加自定义控件
 
 * `cq:childEditConfig` ( `cq:EditConfig`)-它控制没有自己定义的子组件的可视方面
 
@@ -571,7 +571,7 @@ AEM中的组件受3个不同层次的约束：
 
 * **容器层次结构**
 
-   它用于将配置设置填充到子组件中，最常用于parsys方案。
+   它用于将配置设置填充到子组件，最常用于parsys方案。
 
    例如，可在父组件上定义编辑栏按钮、控制集布局（编辑栏、滚动）、对话框布局（内联、浮动）的配置设置并传播到子组件。
 
@@ -581,11 +581,11 @@ AEM中的组件受3个不同层次的约束：
 
    在运行时，这由包括序列强加。
 
-   此层次结构由设计人员使用，而设计人员又作为渲染的各个设计方面的基础； 包括布局信息、css信息、parsys中的可用组件等。
+   此层次结构由设计人员使用，而设计人员又作为渲染的各个设计方面的基础；包括布局信息、css信息、parsys中的可用组件等。
 
 ## 编辑行为 {#edit-behavior}
 
-本节介绍如何配置组件的编辑行为。 这包括一些属性，如可用于组件的操作、就地编辑器的特性以及与组件上的事件相关的监听器。
+本节介绍如何配置组件的编辑行为。 这包括可用于组件的操作、就地编辑器的特性以及与组件上的事件相关的监听器等属性。
 
 该配置对于触屏优化UI和经典UI都是通用的，尽管有某些特定的差异。
 
@@ -593,26 +593,26 @@ AEM中的组件受3个不同层次的约束：
 
 * [ `cq:editConfig` 节点属性](#configuring-with-cq-editconfig-properties):
 
-   * `cq:actions` ( `String array`): 定义可对组件执行的操作。
-   * `cq:layout` ( `String`): : 定义如何在经典UI中编辑组件。
-   * `cq:dialogMode` ( `String`): 定义如何在经典UI中打开组件对话框
+   * `cq:actions` ( `String array`):定义可对组件执行的操作。
+   * `cq:layout` ( `String`)::定义如何在经典UI中编辑组件。
+   * `cq:dialogMode` ( `String`):定义如何在经典UI中打开组件对话框
 
       * 在触屏优化UI中，对话框始终以桌面模式浮动，并在移动设备中以全屏方式自动打开。
-   * `cq:emptyText` ( `String`): 定义当不存在可视内容时显示的文本。
-   * `cq:inherit` ( `Boolean`): 定义是否从它继承的组件继承缺失值。
-   * `dialogLayout` （字符串）: 定义对话框的打开方式。
+   * `cq:emptyText` ( `String`):定义当不存在可视内容时显示的文本。
+   * `cq:inherit` ( `Boolean`):定义是否从它继承的组件继承缺失值。
+   * `dialogLayout` （字符串）:定义对话框的打开方式。
 
 
 * [ `cq:editConfig` 子节点](#configuring-with-cq-editconfig-child-nodes):
 
-   * `cq:dropTargets` (节点类 `nt:unstructured`型): 定义拖放列表目标，可接受内容查找器资产的删除
+   * `cq:dropTargets` (节点类 `nt:unstructured`型):定义拖放列表目标，可接受内容查找器资产的删除
 
       * 多个拖放目标仅在经典UI中可用。
       * 在触屏优化UI中，允许使用单个拖放目标。
-   * `cq:actionConfigs` (节点类 `nt:unstructured`型): 定义附加到cq:actions列表的新操作列表。
-   * `cq:formParameters` (节点类 `nt:unstructured`型): 定义添加到对话框表单的其他参数。
-   * `cq:inplaceEditing` (节点类 `cq:InplaceEditingConfig`型): 为组件定义就地编辑配置。
-   * `cq:listeners` (节点类 `cq:EditListenersConfig`型): 定义在组件上执行操作之前或之后发生的情况。
+   * `cq:actionConfigs` (节点类 `nt:unstructured`型):定义附加到cq:actions列表的新操作列表。
+   * `cq:formParameters` (节点类 `nt:unstructured`型):定义添加到对话框表单的其他参数。
+   * `cq:inplaceEditing` (节点类 `cq:InplaceEditingConfig`型):为组件定义就地编辑配置。
+   * `cq:listeners` (节点类 `cq:EditListenersConfig`型):定义在组件上执行操作之前或之后发生的情况。
 
 
 >[!NOTE]
@@ -637,7 +637,7 @@ AEM中的组件受3个不同层次的约束：
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 要查找的子节 `cq:editConfig`点，例如，可以 `cq:dropTargets`搜索类型的子节点 `cq:DropTargetConfig`; 您可以在**查询**中使用CRXDE Lite工具，并使用以下XPath查询字符串进行搜索：
+* 要查找的子节 `cq:editConfig`点，例如，可以 `cq:dropTargets`搜索类型的子节点 `cq:DropTargetConfig`;您可以在**查询**中使用CRXDE Lite工具，并使用以下XPath查询字符串进行搜索：
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -667,7 +667,7 @@ AEM中的组件受3个不同层次的约束：
   </tr> 
     <tr>
     <td><code>editannotate</code></td>
-    <td>添加一个按钮以编辑组件以及允许 <a href="/help/sites-authoring/annotations.md">注释</a>。</td>
+    <td>添加用于编辑组件的按钮以及允许 <a href="/help/sites-authoring/annotations.md">注释</a>。</td>
    </tr>
   <tr> 
    <td><code>delete</code></td> 
@@ -928,9 +928,9 @@ AEM中的组件受3个不同层次的约束：
    <td><code>editorType</code></td> 
    <td><p>()<code>String</code>编辑器类型。 可用类型有：</p> 
     <ul> 
-     <li>纯文本： 用于非HTML内容。<br /> </li> 
-     <li>标题： 是一种增强的纯文本编辑器，在开始编辑之前将图形字幕转换为纯文本。 由Geometrixx标题组件使用。<br /> </li> 
-     <li>文本： 用于HTML内容（使用富文本编辑器）。<br /> </li> 
+     <li>纯文本：用于非HTML内容。<br /> </li> 
+     <li>标题：是一种增强的纯文本编辑器，在开始编辑之前将图形字幕转换为纯文本。 由Geometrixx标题组件使用。<br /> </li> 
+     <li>文本：用于HTML内容（使用富文本编辑器）。<br /> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -1031,7 +1031,7 @@ AEM中的组件受3个不同层次的约束：
 >
 >对于嵌套组件，对于定义为节点上属性的操作有一些 `cq:listeners` 限制：
 
->* 对于嵌套组件，以下属性的值 *必须* 为 `REFRESH_PAGE`: >
+>* 对于嵌套组件，以下属性的值 *必须* 为 `REFRESH_PAGE`:>
 >* `aftermove`
 * `aftercopy`
 

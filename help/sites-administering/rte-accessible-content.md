@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 0%
@@ -76,7 +76,7 @@ AEM **中的** Text组件可用于触屏优化UI和经典UI。 下图显示了�
 新的语义块格式可通过以下方式可供选择：
 
 1. 根据您的RTE，确定并导航到配 [置位置](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)。
-1. [启用“段落”选择字段](/help/sites-administering/rich-text-editor.md); 通过 [激活插件](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
+1. [启用“段落”选择字段](/help/sites-administering/rich-text-editor.md);通过 [激活插件](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
 1. [在“段落”选择字段中指定要使用的格式](/help/sites-administering/rich-text-editor.md)。
 1. 然后，RTE中的选择字段中的内容作者可以使用段落格式。 可以访问它们：
 
@@ -167,9 +167,9 @@ AEM **中的** Text组件可用于触屏优化UI和经典UI。 下图显示了�
    ```
    /**
     * Adds Caption Element
-    */
-   var captionElement; 
-   if (dom.firstChild && dom.firstChild.tagName.toLowerCase() == "caption") 
+   */
+   var captionElement;
+   if (dom.firstChild && dom.firstChild.tagName.toLowerCase() == "caption")
    {
       captionElement = dom.firstChild;
    }
@@ -178,7 +178,7 @@ AEM **中的** Text组件可用于触屏优化UI和经典UI。 下图显示了�
        var captionTextNode = document.createTextNode(config.caption)
        if (captionElement)
        {
-          dom.replaceNode(captionElement.firstChild,captionTextNode); 
+          dom.replaceNode(captionElement.firstChild,captionTextNode);
        } else
        {
            captionElement = document.createElement("caption");
@@ -191,7 +191,7 @@ AEM **中的** Text组件可用于触屏优化UI和经典UI。 下图显示了�
               dom.appendChild(captionElement);
            }
        }
-   } else if (captionElement) 
+   } else if (captionElement)
    {
      dom.removeChild(captionElement);
    }

@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2831'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 2%
 
 * **[!UICONTROL 超时处理程序]**
 
-   在步骤超时时控制工作流的处理程序； 例如：
+   在步骤超时时控制工作流的处理程序；例如：
 
    `Auto Advancer`
 
@@ -97,8 +97,8 @@ AND **[!UICONTROL Split]** （与拆分）在工作流中创建一个拆分，�
 
 * 编辑AND **[!UICONTROL 拆分属性]** :
 
-   * **[!UICONTROL 拆分名称]**: 为说明性目的指定名称。
-   * 选择所需的分支数量； 2、3、4或5。
+   * **[!UICONTROL 拆分名称]**:为说明性目的指定名称。
+   * 选择所需的分支数量；2、3、4或5。
 
 * 根据需要向分支添加工作流步骤。
 
@@ -108,7 +108,7 @@ AND **[!UICONTROL Split]** （与拆分）在工作流中创建一个拆分，�
 
 容器 **[!UICONTROL 步骤]** ,开始作为子工作流运行的另一个工作流模型。
 
-此 **[!UICONTROL 容器]]允许您重用工作流模型&#x200B;**，以实现常见的步骤序列。 例如，翻译工作流模型可用于多个编辑工作流。
+此 **[!UICONTROL 容器]** 允许您重用工作流模型来实现常见的步骤序列。 例如，翻译工作流模型可用于多个编辑工作流。
 
 ![wf-28](assets/wf-28.png)
 
@@ -119,15 +119,15 @@ AND **[!UICONTROL Split]** （与拆分）在工作流中创建一个拆分，�
 * [**[!UICONTROL 通用]**](#step-properties-common-tab)
 * **[!UICONTROL 容器]**
 
-   * **[!UICONTROL 子工作流]**: 选择要开始的工作流。
+   * **[!UICONTROL 子工作流]**:选择要开始的工作流。
 
 ## 跳转步骤 {#goto-step}
 
 使用 **[!UICONTROL “跳转]** ”(Goto Step)，可以指定要执行的工作流模型中的下一个步骤，具体取决于ECMAScript的结果：
 
-* `true`: 跳转 **[!UICONTROL 步骤完成]** ,工作流引擎将执行指定的步骤。
+* `true`:跳转 **[!UICONTROL 步骤完成]** ,工作流引擎将执行指定的步骤。
 
-* `false`: 跳转 **[!UICONTROL 步骤完成]** ，普通路由逻辑确定要执行的下一步。
+* `false`:跳转 **[!UICONTROL 步骤完成]** ，普通路由逻辑确定要执行的下一步。
 
 转 **[!UICONTROL 到步骤]** ，您可以在工作流模型中实现高级路由结构。 例如，要实现循环，可以定 **[!UICONTROL 义跳转]** (Goto Step)以在工作流中执行前一步，脚本将评估循环条件。
 
@@ -138,9 +138,9 @@ AND **[!UICONTROL Split]** （与拆分）在工作流中创建一个拆分，�
 * [**[!UICONTROL 通用]**](#step-properties-common-tab)
 * **[!UICONTROL 进程]**
 
-   * **[!UICONTROL 转到的步骤]]**: 选择要执行的步骤。
-   * **[!UICONTROL 脚本路径]**: 确定是否执行跳转步骤的ECMAScript **[!UICONTROL 路径]**。
-   * **[!UICONTROL 脚本]**: 确定是否执行跳转步 **[!UICONTROL 骤的ECMAScript]**。
+   * **[!UICONTROL 要转到的步骤]**:选择要执行的步骤。
+   * **[!UICONTROL 脚本路径]**:确定是否执行跳转步骤的ECMAScript **[!UICONTROL 路径]**。
+   * **[!UICONTROL 脚本]**:确定是否执行跳转步 **[!UICONTROL 骤的ECMAScript]**。
 
 >[!CAUTION]
 >
@@ -195,12 +195,12 @@ OR **[!UICONTROL Split]** （或拆分）在工作流中创建一个拆分，之
 
    * **[!UICONTROL 通用]**
 
-      * 选择所需的分支数量； 2、3、4或5。
+      * 选择所需的分支数量；2、3、4或5。
    * **[!UICONTROL 分支：*x*>]**
 
-      * **[!UICONTROL 脚本路径]**: 包含脚本的文件的路径。
-      * **[!UICONTROL 脚本]**: 在框中添加脚本。
-      * **[!UICONTROL 默认路由]**: 当多个分支的计算结果为true时，将遵循默认分支。 您只能指定一个分支作为默认值。
+      * **[!UICONTROL 脚本路径]**:包含脚本的文件的路径。
+      * **[!UICONTROL 脚本]**:在框中添加脚本。
+      * **[!UICONTROL 默认路由]**:当多个分支的计算结果为true时，将遵循默认分支。 您只能指定一个分支作为默认值。
 
    >[!NOTE]
    >
@@ -226,9 +226,9 @@ OR **[!UICONTROL Split]** （或拆分）在工作流中创建一个拆分，之
 
 ### 参与者步骤 {#participant-step}
 
-参与者 **[!UICONTROL 步骤]** ，您可以为特定操作分配所有权。 仅当用户手动确认该步骤后，工作流才会继续。 当您希望某人对工作流执行操作时，会使用此功能； 例如，审核步骤。
+参与者 **[!UICONTROL 步骤]** ，您可以为特定操作分配所有权。 仅当用户手动确认该步骤后，工作流才会继续。 当您希望某人对工作流执行操作时，会使用此功能；例如，审核步骤。
 
-尽管与操作不直接相关，但在分配操作时必须考虑用户授权； 用户必须有权访问作为工作流有效负荷的页面。
+尽管与操作不直接相关，但在分配操作时必须考虑用户授权；用户必须有权访问作为工作流有效负荷的页面。
 
 #### 参与者步骤——配置 {#participant-step-configuration}
 
@@ -268,14 +268,14 @@ OR **[!UICONTROL Split]** （或拆分）在工作流中创建一个拆分，之
 * [**[!UICONTROL 用户/组]**](#step-properties-user-group-tab)
 * **[!UICONTROL 对话框]**
 
-   * **[!UICONTROL对话框路径**: 您创建的对话框的对话框 [节点的路径](#dialog-participant-step-creating-a-dialog)。
+   * **对[!UICONTROL 话路径**]:您创建的对话框的对话框 [节点的路径](#dialog-participant-step-creating-a-dialog)。
 
 #### 对话框参与者步骤——创建对话框{#dialog-participant-step-creating-a-dialog}
 
 要创建对话框，请执行以下操作：
 
 * 确定结果数据将存储在 [有效负荷中的位置](#dialog-participant-step-storing-data-in-the-payload)。
-* [定义对话框； 这包括定义用于收集（和保存）数据的字段](#dialog-participant-step-dialog-definition)。
+* [定义对话框；这包括定义用于收集（和保存）数据的字段](#dialog-participant-step-dialog-definition)。
 
 #### 对话框参与者步骤——在有效负荷中存储数据 {#dialog-participant-step-storing-data-in-the-payload}
 
@@ -329,7 +329,7 @@ OR **[!UICONTROL Split]** （或拆分）在工作流中创建一个拆分，之
 
    对话 **[!UICONTROL 框参加者]****[!UICONTROL 步骤具有对话]** 框路径 [属性(以及参加者](#participant-step)步骤的属性)。 对话框路 **[!UICONTROL 径属性]** 的值是对话 `dialog` 框节点的路径。
 
-   例如，该对话框包含在存储在节点 `EmailWatch` 中的名为的组件中：
+   例如，该对话框包含在存储在节点 `EmailWatch` 中名为的组件中：
 
    `/apps/myapp/workflows/dialogs`
 
@@ -386,17 +386,17 @@ OR **[!UICONTROL Split]** （或拆分）在工作流中创建一个拆分，之
 * [**[!UICONTROL 通用]**](#step-properties-common-tab)
 * **[!UICONTROL 参与者选择器]**
 
-   * **[!UICONTROL 参加者选择器]**: 您创建的参 [加者选择器的名称](#dynamic-participant-step-developing-the-participant-chooser)。
-   * **[!UICONTROL 参数]**: 任何必需的参数。
-   * **[!UICONTROL 电子邮件]**: 是否应向用户发送电子邮件通知。
+   * **[!UICONTROL 参加者选择器]**:您创建的参 [加者选择器的名称](#dynamic-participant-step-developing-the-participant-chooser)。
+   * **[!UICONTROL 参数]**:任何必需的参数。
+   * **[!UICONTROL 电子邮件]**:是否应向用户发送电子邮件通知。
 
 * **[!UICONTROL 对话框]**
 
-   * **[!UICONTROL 对话框路径]**: 您创建的对话框的对话框 [节点的路径(与对话框参 **加者步骤一样**)](#dialog-participant-step-creating-a-dialog)。
+   * **[!UICONTROL 对话框路径]**:您创建的对话框的对话框 [节点的路径(与对话框参 **加者步骤一样**)](#dialog-participant-step-creating-a-dialog)。
 
 #### 动态参与者步骤——开发参与者选择器 {#dynamic-participant-step-developing-the-participant-chooser}
 
-您创建参加者选择器。 因此，您可以使用任何选择逻辑或条件。 例如，参加者选择器可以选择工作项最少的用户（在组内）。 您可以创建任意数量的参与者选择器，以与工作流模型中“动态参 **加者步骤&#x200B;*”组件的*不同实例一起使用。
+您创建参加者选择器。 因此，您可以使用任何选择逻辑或条件。 例如，参加者选择器可以选择工作项最少的用户（在组内）。 您可以创建任意数量的参与者选择器，以与工作流模型中“动态参 **加者步骤”组件的** 不同实例配合使用。
 
 创建OSGi服务或ECMAScript，它选择用户将工作项分配给该用户。
 
@@ -431,8 +431,8 @@ OR **[!UICONTROL Split]** （或拆分）在工作流中创建一个拆分，之
 
    服务必须实 [现com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 接口。 接口定义以下成员：
 
-   * `SERVICE_PROPERTY_LABEL` 字段： 使用此字段可指定参加者选择器的名称。 该名称显示在“动态参与者步骤”属性中的可用参 **[!UICONTROL 加者选择器列表]** 。
-   * `getParticipant` 方法： 将动态解析的主体id返回为 `String` 值。
+   * `SERVICE_PROPERTY_LABEL` 字段：使用此字段可指定参加者选择器的名称。 该名称显示在“动态参与者步骤”属性中的可用参 **[!UICONTROL 加者选择器列表]** 。
+   * `getParticipant` 方法：将动态解析的主体id返回为 `String` 值。
 
    >[!CAUTION]
    >
@@ -514,7 +514,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [**[!UICONTROL 用户/组]**](#step-properties-user-group-tab)
 * **[!UICONTROL 表单]**
 
-   * **[!UICONTROL表单路径**: 创建的表 [单的路径](#form-participant-step-creating-the-form)。
+   * **[!UICONTROL 表单路径]**:创建的表 [单的路径](#form-participant-step-creating-the-form)。
 
 #### 表单参与者步骤——创建表单 {#form-participant-step-creating-the-form}
 
@@ -555,7 +555,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [**[!UICONTROL 通用]**](#step-properties-common-tab)
 * **[!UICONTROL 参数]**
 
-   * **[!UICONTROL 参加者]**: 指定可供选择的用户的列表。 要将用户添加到列表，请单 **[!UICONTROL 击“添加项]** ”，然后键入用户节点或用户ID的主路径。 用户的顺序不会影响分配工作项的可能性。
+   * **[!UICONTROL 参加者]**:指定可供选择的用户的列表。 要将用户添加到列表，请单 **[!UICONTROL 击“添加项]** ”，然后键入用户节点或用户ID的主路径。 用户的顺序不会影响分配工作项的可能性。
 
 ### 工作流发起者参与人选择器 {#workflow-initiator-participant-chooser}
 
@@ -580,12 +580,12 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [**[!UICONTROL 通用]**](#step-properties-common-tab)
 * **[!UICONTROL 进程]**
 
-   * **[!UICONTROL 流程]**: 要执行的进程实现。 使用下拉菜单选择ECMAScript或OSGi服务。 有关：
+   * **[!UICONTROL 流程]**:要执行的进程实现。 使用下拉菜单选择ECMAScript或OSGi服务。 有关：
 
-      * 标准ECMAScript和OSGi服务，请参 [阅内置流程流程流程](/help/sites-developing/workflows-process-ref.md)。
+      * 标准ECMAScript和OSGi服务，请参 [阅内置流程流程中的流程](/help/sites-developing/workflows-process-ref.md)。
       * 为进程步 **[!UICONTROL 骤创]** 建ECMAScript [，请](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)参阅使用ECMAScript实现进程步骤。
       * 为进程步骤创 **[!UICONTROL 建OSGi]** 服务， [请参阅使用Java类实现进程步骤](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)。
-   * **[!UICONTROL 处理程序高级]**: 选择此选项可将工作流自动前进到执行后的下一个步骤。 如果未选择，则实现脚本必须处理工作流进程。
-   * **[!UICONTROL 参数]**: 要传递给该进程的参数。
+   * **[!UICONTROL 处理程序高级]**:选择此选项可将工作流自动前进到执行后的下一个步骤。 如果未选择，则实现脚本必须处理工作流进程。
+   * **[!UICONTROL 参数]**:要传递给该进程的参数。
 
 

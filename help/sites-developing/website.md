@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4919'
+source-wordcount: '4916'
 ht-degree: 2%
 
 ---
@@ -75,13 +75,13 @@ ht-degree: 2%
 
 使用CRXDE Lite在存储库中创建mywebsite应用程序结构：
 
-1. 在CRXDE Lite左侧的树中，右键单击文件夹，然 **`/apps`** 后单击“创 **[!UICONTROL 建”>“创建文件夹”]**。 在“创 **建文件夹** ”对话框中，键 `mywebsite` 入文件夹名称，然后单 **击[!UICONTROL确定**。
+1. 在CRXDE Lite左侧的树中，右键单击文件夹，然 **`/apps`** 后单击“创 **[!UICONTROL 建”>“创建文件夹”]**。 在“创 **建文件夹** ”对话框中，键 `mywebsite` 入文件夹名称，然后单击“ **确定**”。
 1. 右键单击文件夹， `/apps/mywebsite` 然后单击“ **[!UICONTROL 创建”>“创建文件夹”]**。 在“创 **[!UICONTROL 建文件夹]** ”对话框中，键 `components` 入文件夹名称，然后单击“ **[!UICONTROL 确定]**”。
 1. 右键单击文件夹， `/apps/mywebsite` 然后单击“ **[!UICONTROL 创建”>“创建文件夹”]**。 在“创 **[!UICONTROL 建文件夹]** ”对话框中，键 `templates` 入文件夹名称，然后单击“ **[!UICONTROL 确定]**”。
 
    树中的结构现在应该类似于：
 
-   ![chlimage_1-181](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. 单击“ **[!UICONTROL 全部保存]**”。
 
@@ -127,10 +127,10 @@ static.css文件和图像示例
 
 1. 在“创建模板”对话框中，键入以下值，然后单击“下 **[!UICONTROL 一步]**”:
 
-   * **[!UICONTROL 标签]**: 内容页
-   * **[!UICONTROL 标题]**: 我的网站内容页面模板
-   * **[!UICONTROL 描述]**: 这是我的网站内容页面模板
-   * **[!UICONTROL 资源类型]**: mywebsite/components/contentpage
+   * **[!UICONTROL 标签]**:内容页
+   * **[!UICONTROL 标题]**:我的网站内容页面模板
+   * **[!UICONTROL 描述]**:这是我的网站内容页面模板
+   * **[!UICONTROL 资源类型]**:mywebsite/components/contentpage
 
    使用“排名”属性的默认值。
 
@@ -157,9 +157,9 @@ static.css文件和图像示例
 1. 在CRXDE Lite中，右键单击， `/apps/mywebsite/components` 然后单 **[!UICONTROL 击创建>组件]**。
 1. 在创建 **[!UICONTROL 组件]** 对话框中，键入以下属性值：
 
-   * **[!UICONTROL 标签]**: 内容页
-   * **[!UICONTROL 标题]**: 我的网站内容页面组件
-   * **[!UICONTROL 描述]**: 这是“我的网站内容”页面组件
+   * **[!UICONTROL 标签]**:内容页
+   * **[!UICONTROL 标题]**:我的网站内容页面组件
+   * **[!UICONTROL 描述]**:这是“我的网站内容”页面组件
 
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -216,9 +216,9 @@ static.css文件和图像示例
 
 ### 创建网站页面和内容页面 {#creating-your-website-page-and-content-pages}
 
-在此部分中，您将创建以下所有页面均使用内容页面模板： 我的网站、英语、产品、服务和客户。
+在此部分中，您将创建以下所有页面均使用内容页面模板：我的网站、英语、产品、服务和客户。
 
-1. 在AEM欢迎页面([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))上，单击网站。
+1. 在AEM欢迎页面(http://localhost:4502/libs/cq/core/content/welcome.html[](http://localhost:4502/libs/cq/core/content/welcome.html))上，单击网站。
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -234,26 +234,26 @@ static.css文件和图像示例
 1. 单击&#x200B;**[!UICONTROL 创建]**。在文件夹树中，选择页面， `/Websites/My Website` 然后单击“ **[!UICONTROL 新建”>“新建页面”]**。
 1. 在创 **[!UICONTROL 建页面]** ，输入以下属性值，然后单击创建：
 
-   * **[!UICONTROL 标题]**: 英语
-   * **[!UICONTROL 名称]**: en
+   * **[!UICONTROL 标题]**:英语
+   * **[!UICONTROL 名称]**:en
    * 选择“我 **[!UICONTROL 的网站内容”页面模板]**
 
 1. 在文件夹树中，选择页面， `/Websites/My Website/English` 然后单击“ **[!UICONTROL 新建”>“新建页面”]**。
 1. 在创 **[!UICONTROL 建页面]** ，输入以下属性值，然后单击创 **[!UICONTROL 建]**:
 
-   * **[!UICONTROL 标题]**: 产品
+   * **[!UICONTROL 标题]**:产品
    * 选择“我 **[!UICONTROL 的网站内容”页面模板]**
 
 1. 在文件夹树中，选择页面， `/Websites/My Website/English` 然后单击“ **[!UICONTROL 新建”>“新建页面”]**。
 1. 在创 **[!UICONTROL 建页面]** ，输入以下属性值，然后单击创 **[!UICONTROL 建]**:
 
-   * **标题**: 服务
+   * **标题**:服务
    * 选择“我 **[!UICONTROL 的网站内容”页面模板]**
 
 1. 在文件夹树中，选择页面， `/Websites/My Website/English` 然后单击“ **[!UICONTROL 新建”>“新建页面”]**。
 1. 在创 **[!UICONTROL 建页面]** ，输入以下属性值，然后单击创 **[!UICONTROL 建]**:
 
-   * **标题**: 客户
+   * **标题**:客户
    * 选择“我 **[!UICONTROL 的网站内容”页面模板]**
 
    您的结构如下所示：
@@ -262,9 +262,9 @@ static.css文件和图像示例
 
 1. 要将页面链接到我的网站设计，请在CRXDE Lite中选择 `/content/mywebsite/en/jcr:content` 节点。 在“属 **[!UICONTROL 性]** ”选项卡上，为新属性键入以下值，然后单击“添加”:
 
-   * **[!UICONTROL 名称]**: cq:designPath
-   * **[!UICONTROL 类型]**: 字符串
-   * **[!UICONTROL 值]**: /etc/designs/mywebsite
+   * **[!UICONTROL 名称]**:cq:designPath
+   * **[!UICONTROL 类型]**:字符串
+   * **[!UICONTROL 值]**:/etc/designs/mywebsite
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
@@ -291,9 +291,9 @@ static.css文件和图像示例
    1. 选择节 `/apps/mywebsite/components/contentpage` 点。
    1. 在“属性”选项卡的底部，键入以下属性值，然后单击“添加”:
 
-      * **[!UICONTROL 名称]**: sling:resourceSuperType
-      * **[!UICONTROL 类型]**: 字符串
-      * **[!UICONTROL 值]**: foundation/components/page
+      * **[!UICONTROL 名称]**:sling:resourceSuperType
+      * **[!UICONTROL 类型]**:字符串
+      * **[!UICONTROL 值]**:foundation/components/page
    1. 单击“ **[!UICONTROL 全部保存]**”。
 
 
@@ -500,7 +500,7 @@ static.css文件和图像示例
 
 在本练习中，Sling将这些URL与您创建的/apps/mywebsite/components/contentpage/navimage.png.java脚本相匹配。
 
-1. 在CRXDE Lite中，在 `topnav.jsp` 定位 `/apps/mywebsite/components/topnav.`锚点元素的内容下打开（第14行）:
+1. 在CRXDE Lite中，打 `topnav.jsp` 开“ `/apps/mywebsite/components/topnav.`定位锚点元素的内容”（第14行）下的：
 
    ```xml
    <%=child.getTitle() %>
@@ -657,14 +657,14 @@ static.css文件和图像示例
 1. 在“网站”页面的文 **[!UICONTROL 件夹]** 树中，选择“网 **[!UICONTROL 站／我的网站／英语／产品]** ”项目，然 **[!UICONTROL 后单击“新建”>“新建页面”]**。
 1. 在对话框中输入以下属性值，然后单击“创 **[!UICONTROL 建”]**:
 
-   * **[!UICONTROL 标题]**: 产品1.
-   * **[!UICONTROL 名称]**: product1.
+   * **[!UICONTROL 标题]**:产品1.
+   * **[!UICONTROL 名称]**:product1.
    * 选择 **[!UICONTROL 我的网站内容页面模板]**
 
 1. 使用以下属性值在产品下创建另一个页面：
 
-   * **[!UICONTROL 标题]**: 产品2
-   * **[!UICONTROL 名称]**: product2
+   * **[!UICONTROL 标题]**:产品2
+   * **[!UICONTROL 名称]**:product2
    * 选择 **[!UICONTROL 我的网站内容页面模板]**
 
 1. 在CRXDE Lite中，为产品1页面设置说明和日期：
@@ -678,9 +678,9 @@ static.css文件和图像示例
    1. 单击&#x200B;**[!UICONTROL 添加]**。
    1. 在“属 **[!UICONTROL 性]** ”选项卡中，使用以下值创建另一个属性：
 
-      * **[!UICONTROL 名称]**: 日期
-      * **[!UICONTROL 类型]**: 字符串
-      * **[!UICONTROL 值]**: 02/14/2008
+      * **[!UICONTROL 名称]**:日期
+      * **[!UICONTROL 类型]**:字符串
+      * **[!UICONTROL 值]**:02/14/2008
       * 单击&#x200B;**[!UICONTROL 添加]**。
    1. 单击“ **[!UICONTROL 全部保存]**”。
 
@@ -691,15 +691,15 @@ static.css文件和图像示例
    1. 选择节 `/content/mywebsite/en/products/product2/jcr:content` 点。
    1. 在“属 **[!UICONTROL 性]** ”选项卡中，输入以下值：
 
-      * **[!UICONTROL 名称]**: jcr:description
-      * **[!UICONTROL 类型]**: 字符串
-      * **[!UICONTROL 值]**: 这是对产品2！的描述。
+      * **[!UICONTROL 名称]**:jcr:description
+      * **[!UICONTROL 类型]**:字符串
+      * **[!UICONTROL 值]**:这是对产品2！的描述。
    1. 单击&#x200B;**[!UICONTROL 添加]**。
    1. 在同一文本框中，将以前的值替换为以下值：
 
-      * **[!UICONTROL 名称]**: 日期
-      * **[!UICONTROL 类型]**: 字符串
-      * **[!UICONTROL 值]**: 05/11/2012
+      * **[!UICONTROL 名称]**:日期
+      * **[!UICONTROL 类型]**:字符串
+      * **[!UICONTROL 值]**:05/11/2012
       * 单击&#x200B;**[!UICONTROL 添加]**。
    1. 单击“ **[!UICONTROL 全部保存]**”。
 
@@ -712,9 +712,9 @@ static.css文件和图像示例
 1. 在CRXDE Lite中，右键单 `/apps/mywebsite/components`击，选 **[!UICONTROL 择创]**&#x200B;建 **[!UICONTROL ,]**&#x200B;然后选择创建组件。
 1. 在对话框中输入以下属性值，然后单击“下 **[!UICONTROL 一步]**”:
 
-   * **[!UICONTROL 标签]**: 列表子项。
-   * **[!UICONTROL 标题]**: 我的列表子项组件。
-   * **[!UICONTROL 描述]**: 这是我的列表子项组件。
+   * **[!UICONTROL 标签]**:列表子项。
+   * **[!UICONTROL 标题]**:我的列表子项组件。
+   * **[!UICONTROL 描述]**:这是我的列表子项组件。
 
 1. 继续单 **[!UICONTROL 击]** “下一步”, **[!UICONTROL 直到显示“允许的子项]** ”面板，然后单击“ **[!UICONTROL 确定”]**。
 
@@ -776,15 +776,15 @@ static.css文件和图像示例
 
 1. 选择 **tab1节点** ，单击“ **[!UICONTROL 创建”>“创建节点]**”，输入以下属性值，然后单击“确 **[!UICONTROL 定”]**:
 
-   * **[!UICONTROL 名称]**: 项目
-   * **[!UICONTROL 类型]**: cq:WidgetCollection
+   * **[!UICONTROL 名称]**:项目
+   * **[!UICONTROL 类型]**:cq:WidgetCollection
 
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. 使用以下属性值在项目节点下创建一个节点：
 
-   * **[!UICONTROL 名称]**: 利斯特罗
-   * **[!UICONTROL 类型]**: cq：构件
+   * **[!UICONTROL 名称]**:利斯特罗
+   * **[!UICONTROL 类型]**:cq：构件
 
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
@@ -1023,7 +1023,7 @@ public class img_GET extends AbstractImageServlet {
 
 本节介绍如何使用设计模式对话框将图像设置为徽标。
 
-1. 在浏览 **[!UICONTROL 器中]** ，打开“产品”页面，单 **[!UICONTROL 击Sidekick底部的]** “设计 **[!UICONTROL ”按钮进入“设]** 计”模式。
+1. 在浏览 **[!UICONTROL 器中]** ，打开“产品”页面， **[!UICONTROL 单击Sidekick底部的]** “设计 **[!UICONTROL ”按钮进入“设]** 计”模式。
 
    ![](do-not-localize/chlimage_1-10.png)
 
@@ -1082,7 +1082,7 @@ public class img_GET extends AbstractImageServlet {
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
->[!Note]
+>[!NOTE]
 >您可以在编辑模式下设置不同的标题和类型/ **[!UICONTROL 大小]** 。
 
 ### 包括段落系统组件 {#including-the-paragraph-system-component}
@@ -1105,7 +1105,7 @@ public class img_GET extends AbstractImageServlet {
 
 1. 在您的浏览器中，刷新 **[!UICONTROL 产品]** 页面。 它现在具有parsys组件，如下所示：
 
-   ![chlimage_1-129](assets/chlimage_1-127.png)
+   ![chlimage_1-127](assets/chlimage_1-127.png)
 
 ### 创建图像组件 {#creating-the-image-component}
 
@@ -1124,13 +1124,13 @@ public class img_GET extends AbstractImageServlet {
 1. 选择组 `image` 件节点，并更改以下属性值：
 
    * `jcr:title:` 我的图像组件。
-   * `jcr:description`: 这是我的图像组件。
+   * `jcr:description`:这是我的图像组件。
 
 1. 使用以下属性值 `image` 向节点添加属性：
 
-   * **[!UICONTROL 名称]**: componentGroup
-   * **[!UICONTROL 类型]**: 字符串
-   * **[!UICONTROL 值]**: 我的网站
+   * **[!UICONTROL 名称]**:componentGroup
+   * **[!UICONTROL 类型]**:字符串
+   * **[!UICONTROL 值]**:我的网站
 
 1. 在节点 `image` 下，将节点重 `design_dialog` 命名为 `dialog`。
 
@@ -1174,18 +1174,18 @@ public class img_GET extends AbstractImageServlet {
 
 1. 在CRXDE Lite中，在节点/apps/mywebsite/components/image下，创建一个新节点，如下所示：
 
-   * **[!UICONTROL 名称]**: cq:editConfig。
-   * **[!UICONTROL 类型]**: cq:EditConfig。
+   * **[!UICONTROL 名称]**:cq:editConfig。
+   * **[!UICONTROL 类型]**:cq:EditConfig。
 
 1. 在节点cq:editConfig下，按如下方式创建新节点：
 
-   * **[!UICONTROL 名称]**: cq:dropTargets。
-   * **[!UICONTROL 类型]**: cq:DropTargetConfig。
+   * **[!UICONTROL 名称]**:cq:dropTargets。
+   * **[!UICONTROL 类型]**:cq:DropTargetConfig。
 
 1. 在节点cq:dropTargets下，按如下方式创建新节点：
 
-   * **[!UICONTROL 名称]**: 图像。
-   * **[!UICONTROL 类型]**: nt:unstructured。
+   * **[!UICONTROL 名称]**:图像。
+   * **[!UICONTROL 类型]**:nt:unstructured。
 
 1. 在CRXDE中，按如下方式设置属性：
 
@@ -1195,7 +1195,7 @@ public class img_GET extends AbstractImageServlet {
 | 组 | 字符串 | 媒体 |
 | propertyName | 字符串 | 。/imageReference |
 
-![chlimage_1-127](assets/chlimage_1-129.png)
+![chlimage_1-129](assets/chlimage_1-129.png)
 
 #### 添加图标 {#adding-the-icon}
 
@@ -1211,9 +1211,9 @@ public class img_GET extends AbstractImageServlet {
 1. 在浏览器中，重新加载 **[!UICONTROL 产品]** 页面。
 1. 在Sidekick中，单击“设 **[!UICONTROL 计模式]** ”图标。
 1. 单击“ **[!UICONTROL 编辑]** ”按钮以编辑段落的设计对话框。
-1. 对话框中显示了允许 **[!UICONTROL 的组件]** 列表; 导航到 **[!UICONTROL MyWebsite]**，选择“ **[!UICONTROL 我的图像组件]** ”，然 **[!UICONTROL 后单击]**“确定”。
+1. 对话框中显示了允许 **[!UICONTROL 的组件]** 列表;导航到 **[!UICONTROL MyWebsite]**，选择“ **[!UICONTROL 我的图像组件]** ”，然 **[!UICONTROL 后单击]**“确定”。
 1. 返回到 **[!UICONTROL 编辑模式]**。
-1. 多次-单击parsys框架(在将组 **[!UICONTROL 件或资产拖动到此处]**)。 插 **[!UICONTROL 入新组件]** 和 **[!UICONTROL Sidekick选择器]** 如下所示：
+1. 多次-单击parsys框架(在将组 **[!UICONTROL 件或资产拖动到此处]**)。 插入 **[!UICONTROL 新组件]** 和 **[!UICONTROL Sidekick选择器]** 如下所示：
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
@@ -1237,7 +1237,7 @@ public class img_GET extends AbstractImageServlet {
 
 1. 在AEM网站页面的文件夹树中，选择， `Websites/My Website/English`然后单击“ **[!UICONTROL 新建”>“新建页面”]**。 指定以下属性值，然后单击创建：
 
-   * **[!UICONTROL 标题]**: 工具栏
+   * **[!UICONTROL 标题]**:工具栏
    * 选择 **[!UICONTROL 我的网站内容页面模板]**
 
 1. 在页面列表中，右键单击工具栏 **[!UICONTROL 页面]** ，然后单击 **[!UICONTROL 属性]**。 选择 **[!UICONTROL “在导航中隐藏]**”，然后单击 **[!UICONTROL “确定”]**。
@@ -1270,12 +1270,12 @@ public class img_GET extends AbstractImageServlet {
 
    1. 在第一个面板中，指定以下属性值：
 
-      * **[!UICONTROL 标签]**: 搜索
-      * **[!UICONTROL 标题]**: 我的搜索组件
-      * **[!UICONTROL 描述]**: 这是我的搜索组件
-      * **[!UICONTROL 组]**: 我的网站
+      * **[!UICONTROL 标签]**:搜索
+      * **[!UICONTROL 标题]**:我的搜索组件
+      * **[!UICONTROL 描述]**:这是我的搜索组件
+      * **[!UICONTROL 组]**:我的网站
    1. 单击 **[!UICONTROL 下一]**，然后再次 **[!UICONTROL 单击]** 下一步。
-   1. 在[! **UICONTROL Allowed Parents** ]面板上，单击 **[!UICONTROL +按钮]** 并键入 `*/parsys`。
+   1. 在“允 **[!UICONTROL 许的父项]** ”面板上，单 **[!UICONTROL 击+按钮]** 并键入 `*/parsys`。
    1. 单击 **[!UICONTROL 下一]** 步，然后单击 **[!UICONTROL 确定]**。
 
 
@@ -1500,7 +1500,7 @@ public class img_GET extends AbstractImageServlet {
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-1. 导航到您的 **[!UICONTROL 产品]** 页面。 在输入框中搜索客户并按 **[!UICONTROL Enter]**。 您将被重定向到“ **[!UICONTROL 搜索]** ”页面。 切换到 **[!UICONTROL 预览]** 模式： 输出的格式与以下内容类似：
+1. 导航到您的 **[!UICONTROL 产品]** 页面。 在输入框中搜索客户并按 **[!UICONTROL Enter]**。 您将被重定向到“ **[!UICONTROL 搜索]** ”页面。 切换到 **[!UICONTROL 预览]** 模式：输出的格式与以下内容类似：
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 

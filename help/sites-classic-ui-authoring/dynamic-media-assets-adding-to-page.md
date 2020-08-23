@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 54%
+source-wordcount: '1722'
+ht-degree: 55%
 
 ---
 
@@ -159,7 +159,7 @@ The [!UICONTROL Interactive Media] component is smart – depending on whether y
 
 **[!UICONTROL 宽度和高度]** -如果希望视频具有固定大小，请输入以像素为单位的值。 将这两个值留空会使视频成为自适应资产。
 
-You can edit the following **[!UICONTROL Add To Cart** settings by clicking **[!UICONTROL Edit]** in the component.
+您可以通过在组件中单击&#x200B;**[!UICONTROL 编辑]**，来编辑以下&#x200B;**[!UICONTROL 添加到购物车]**&#x200B;设置。
 
 **[!UICONTROL 显示产品资产]** -默认情况下，此值处于选中状态。 产品资产会按“商务”模块中的定义显示产品的图像。清除复选标记不会显示产品资产。
 

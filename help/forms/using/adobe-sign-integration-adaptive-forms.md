@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 0%
@@ -40,10 +40,10 @@ Adobe Sign为自适应表单启用电子签名工作流。 电子签名可改善
 
 在入门项目准备就绪后，请执行以下步骤以在创作实例上将Adobe Sign与AEM Forms一起配置：
 
-1. 在AEM Forms的创作实例中，导 **[!UICONTROL 航到&#x200B;**![Tools](assets/hammer.png)**hammer **>**General]**> Configuration Browser 。
+1. 在AEM Forms的创作实例中，导 **[!UICONTROL 航到**![Tools](assets/hammer.png) **hammer** > **General]**> Configuration Browser 。
 1. 在“配置 **[!UICONTROL 浏览器]** ”页面上，点 **[!UICONTROL 按创建]**。
 1. 在创 **[!UICONTROL 建配置]** ，指定配置的标 **[!UICONTROL 题]** ，启用云 **[!UICONTROL 配置]**，然后点 **[!UICONTROL 按创]**&#x200B;建。 它为云服务创建配置容器。
-1. 导航到 **[!UICONTROL 工具&#x200B;**锤![>](assets/hammer.png)Cloud Services**>**Adobe Sign**，然后选]**择您在上述步骤中创建的配置容器。
+1. 导航到 **[!UICONTROL 工具** 锤 ![>](assets/hammer.png) Cloud Services **>** Adobe Sign **，然后选]** 择您在上述步骤中创建的配置容器。
 
    >[!NOTE]
    >
@@ -66,11 +66,11 @@ Adobe Sign为自适应表单启用电子签名工作流。 电子签名可改善
    * widget_write
    * workflow_read
 
-   有关为Adobe Sign应用程序配置OAuth设置并获取密钥的分步信息，请参 [阅配置应用程序开发人员文档](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) 。
+   有关为Adobe Sign应用程序配置OAuth设置并获取密钥的分步信息，请参阅为应用程 [序开发人员文档配置](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) oAuth设置。
 
    ![OAuth配置](assets/oauth_config.png)
 
-1. 返回“创建 **[!UICONTROL Adobe Sign配置]** ”页。 在“设 **[!UICONTROL 置]** ”选项卡中， **!UICONTROL OAuth URL]**字段提到以下默认URL:
+1. 返回“创建 **[!UICONTROL Adobe Sign配置]** ”页。 在“设 **[!UICONTROL 置]** ”选项卡中， **[!UICONTROL OAuth URL]** (OAuth URL)字段提及以下默认URL:
 
    `https://secure.na1.echosign.com/public/oauth`
 
@@ -78,7 +78,7 @@ Adobe Sign为自适应表单启用电子签名工作流。 电子签名可改善
 
    **na1指** 默认数据库共享。
 
-   您可以修改数据库共享的值。 重新启动服务器，以便能够为数据库共享使用新值。
+   您可以修改数据库共享的值。 重新启动服务器，以便能够使用数据库共享的新值。
 
 1. 指定 **[!UICONTROL 客户端]** ID(也称为应用程序 ID **[!UICONTROL )和客户]**&#x200B;端机密。 选择“ **[!UICONTROL 启用Adobe Sign附件]** ”选项，将附加到自适应表单的文件追加到发送以供签名的相应Adobe Sign文档。
 

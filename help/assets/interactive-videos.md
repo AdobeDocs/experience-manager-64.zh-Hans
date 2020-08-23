@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6008'
 ht-degree: 26%
 
 ---
@@ -38,7 +38,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 >[!NOTE]
 >
->如果您创建交互式视频以在用户单击缩略图时启动网页，某些设备将阻止打开弹出网页。 在这种情况下，您必须更改设备上的弹出窗口阻止程序设置。 例如，在Apple iPhone 6上，点 **按[!UICONTROL** Settings **> Safari** > Block Pop-ups **，然后将控件滑******&#x200B;动到[!ICONTROL Off Jaud。 现在，当您播放交互式视频并单击缩略图时，如果要打开弹出窗口，将提示您。 如果您接受，则将打开网页。
+>如果您创建交互式视频以在用户单击缩略图时启动网页，某些设备将阻止打开弹出网页。 在这种情况下，您必须更改设备上的弹出窗口阻止程序设置。 例如，在Apple iPhone 6上，点按 **[!UICONTROL 设置]** > **Safari** > **阻止弹出窗口**，然后将控件滑 **[!UICONTROL 动到Off]**。 现在，当您播放交互式视频并单击缩略图时，如果要打开弹出窗口，将提示您。 如果您接受，则将打开网页。
 
 ## 观看如何创建交互式视频 {#watch-how-interactive-videos-are-created}
 

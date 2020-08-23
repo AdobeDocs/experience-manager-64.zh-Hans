@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
@@ -51,9 +51,9 @@ ht-degree: 0%
 
 * **页面工具栏**&#x200B;包含以下选项：
 
-   * **切换侧面板**: 用于显示或隐藏提要栏。
-   * **页面信息**: 允许您指定诸如发布／取消发布时间、缩略图、客户端库、页面策略和页面设计客户端库等信息。
-   * **模拟器**: 允许您模拟和自定义不同设备的外观。
+   * **切换侧面板**:用于显示或隐藏提要栏。
+   * **页面信息**:允许您指定诸如发布／取消发布时间、缩略图、客户端库、页面策略和页面设计客户端库等信息。
+   * **模拟器**:允许您模拟和自定义不同设备的外观。
    * **图层选择器：** 允许您更改图层。
 
       可选择“结 **构** ”层或 **“初始内容** ”层。 结构层允许您添加和自定义页眉和页脚。 通过初始内容层可以自定义表单内容。
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 * **提要栏：** 提供内容、属性、资产和组件浏览器。
 * **组件工具栏：** 选择组件时，您会看到一个工具栏，通过该工具栏可以自定义组件。
-* **页面**: 添加内容以创建模板的区域。
+* **页面**:添加内容以创建模板的区域。
 
 请参 [阅创作自适应表单的介绍](/help/forms/using/introduction-forms-authoring.md) ，以了解触屏UI编辑器。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 ![结构层中的布局容器](assets/header-layer-selector.png)
 
-**图：** *结构层中的布局容器*
+**图：***结构层中的布局容器*
 
 **A.页眉** 组件的布局容器 **B.页脚组件** 的布局容器
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 ![在“结构”层中添加的页眉和页脚](assets/header-and-footer.png)
 
-**图：** *在“结构”层中添加的页眉和页脚*
+**图：***在“结构”层中添加的页眉和页脚*
 
 #### 在结构层中锁定／解锁组件 {#locking-unlocking-components-in-the-structure-layer}
 
@@ -109,11 +109,11 @@ ht-degree: 0%
 
 表单作者将其用作创建表单的基础。 内容流结构在模板的初始内容层中指定。 要切换到编辑表单模板的初始内容，请在页面工具栏中预览之前，点 ![按画布下拉](assets/canvas-drop-down.png)**[!UICONTROL >初始内容&#x200B;]**。
 
-    [ ![模板编辑器中的初始内容层](assets/initial-content-layer.png)
+![模板编辑器中的初始内容层](assets/initial-content-layer.png)
 
 模板编辑器中的初始内容层，显示为指定属性而选择的自适应表单容器。
 
-](assets/initial-content-layer-1.png)在“初始内容”层，创建作者用作基础的自适应表单模板。 创作模板与创作表单相似，您使用侧栏中提供的选项。 提要栏提供内容、属性、资产和组件浏览器。
+在“初始内容”层中，创建作者用作基础的自适应表单模板。 创作模板与创作表单相似，您使用侧栏中提供的选项。 提要栏提供内容、属性、资产和组件浏览器。
 
 请参 [阅提要栏](/help/forms/using/introduction-forms-authoring.md#sidebar)。
 
@@ -141,11 +141,11 @@ ht-degree: 0%
 
 #### 在选项卡中添加内容 {#adding-content-in-tabs}
 
-    [ ![在自适应表单模板中添加字段](assets/template-edit-initial-content.png)
+![在自适应表单模板中添加字段](assets/template-edit-initial-content.png)
 
 在模板中添加字段
 
-](assets/template-edit-initial-content-1.png)在添加面板并将它们构造为选项卡后，可以在选项卡中添加字段。 在编辑器中选择选项卡时，可以看到将组 **[!UICONTROL 件拖动到此]** 。 您可以拖放组件，如文本框、列表项和按钮。 您可以在提要栏中从组件浏览器拖放组件。
+在添加面板并将它们构造为选项卡后，可以在选项卡内添加字段。 在编辑器中选择选项卡时，可以看到将组 **[!UICONTROL 件拖动到此处]** 。 您可以拖放组件，如文本框、列表项和按钮。 您可以在提要栏中从组件浏览器拖放组件。
 
 每个组件都具有增强数据捕获和操作的属性。 例如，您可以启用组 **[!UICONTROL 件的]** “必需”字段属性。 作者可以指定客户跳过填写必填字段时看到的消息。 在“必填字段消 **[!UICONTROL 息”属性中指定]** 消息。
 

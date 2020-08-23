@@ -10,9 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1669'
 ht-degree: 56%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 56%
 * FFMPEG 缩略图
 * FFMPEG 编码
 
-请注意，启用和配置Dynamic Media Classic集成不会自动从现成的DAM摄取工作流中删除或取消激活这两个工作流步骤。 如果您已经在 AEM 中使用基于 FFMPEG 的视频编码，则您很可能已经在创作环境中安装了 FFMPEG。在这种情况下，使用DAM摄取的新视频将进行两次编码： 一次来自FFMPEG编码器，另一次来自Dynamic Media Classic集成。
+请注意，启用和配置Dynamic Media Classic集成不会自动从现成的DAM摄取工作流中删除或取消激活这两个工作流步骤。 如果您已经在 AEM 中使用基于 FFMPEG 的视频编码，则您很可能已经在创作环境中安装了 FFMPEG。在这种情况下，使用DAM摄取的新视频将进行两次编码：一次来自FFMPEG编码器，另一次来自Dynamic Media Classic集成。
 
 如果您在AEM中配置了基于FFMPEG的视频编码并安装了FFMPEG,Adobe建议您从DAM摄取工作流中删除两个FFMPEG工作流。
 
@@ -122,7 +122,7 @@ Scene7 视频组件仅适用于 Scene7 视频。而基础组件则适用于 AEM 
 
 >[!NOTE]
 >
->S7 视频组件使用现成的通用视频配置文件。但是，您可以通过在Scene7执行下列操作之一来获取AEM使用的基于HTML5的视频播放器： 复制现成HTML5视频播放器的嵌入代码并将其放入AEM页面。
+>S7 视频组件使用现成的通用视频配置文件。但是，您可以通过在Scene7执行下列操作之一来获取AEM使用的基于HTML5的视频播放器：复制现成HTML5视频播放器的嵌入代码并将其放入AEM页面。
 
 ## AEM 视频组件 {#aem-video-component}
 
@@ -150,7 +150,7 @@ Scene7 视频组件仅适用于 Scene7 视频。而基础组件则适用于 AEM 
 >
 >必须激活新的视频配置文件以及对其所做的更改，才能进行发布。
 
-1. 在AEM中，点 **按[!UICONTROL工具>配置控制台**。
+1. 在AEM中，点按 **[!UICONTROL 工具]>[!UICONTROL 配置控制台]**。
 1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
 1. 创建一个新的 S7 视频配置文件。In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. 为新的视频配置文件页面指定一个名称，然后单击&#x200B;**[!UICONTROL 创建]**。
 

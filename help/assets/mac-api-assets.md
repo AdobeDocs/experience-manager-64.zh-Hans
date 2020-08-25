@@ -3,9 +3,9 @@ title: 中的资源HTTP API [!DNL Adobe Experience Manager]。
 description: 使用中的HTTP API创建、读取、更新、删除和管理数字资产 [!DNL Adobe Experience Manager Assets]。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1552'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,9 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 结束 [!UICONTROL 后]，资产及其演绎版不能通过Web界 [!DNL Assets] 面和HTTP API使用。 如果“开始时间”为将来，或“结束 [!UICONTROL 时间] ”为过去，则 [!UICONTROL API会返回] 404错误消息。
 
+>[!CAUTION]
+>
+>[HTTP API更新命名空间中的元](#update-asset-metadata) 数据属 `jcr` 性。 但是，Experience Manager用户界面会更新命名空间中的元数据属 `dc` 性。
 
 ## Data model {#data-model}
 
@@ -33,7 +36,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 文件夹类似于传统文件系统中的目录。 它们是其他文件夹或声明的容器。 文件夹具有以下组件：
 
-**实体**: 文件夹的实体是其子元素，可以是文件夹和资产。
+**实体**:文件夹的实体是其子元素，可以是文件夹和资产。
 
 **属性**:
 
@@ -46,9 +49,9 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **链接** “文件夹”显示三个链接：
 
-* `self`: 链接到自身。
-* `parent`: 链接到父文件夹。
-* `thumbnail`: （可选）指向文件夹缩略图图像的链接。
+* `self`:链接到自身。
+* `parent`:链接到父文件夹。
+* `thumbnail`:（可选）指向文件夹缩略图图像的链接。
 
 ### 资产 {#assets}
 
@@ -60,23 +63,23 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 在文 [!DNL Experience Manager] 件夹中，具有以下组件：
 
-* 实体： 资产的子项是其演绎版。
+* 实体：资产的子项是其演绎版。
 * 属性.
 * 链接.
 
 资产HTTP API包括以下功能：
 
-* 检索文件夹列表。
-* 创建文件夹。
-* 创建资产。
-* 更新资产二进制。
-* 更新资产元数据。
-* 创建资产演绎版。
-* 更新资产演绎版。
-* 创建资产评论。
-* 复制文件夹或资产。
-* 移动文件夹或资产。
-* 删除文件夹、资产或演绎版。
+* [检索文件夹列表](#retrieve-a-folder-listing)。
+* [创建文件夹](#create-a-folder)。
+* [创建资产](#create-an-asset)。
+* [更新资产二进制](#update-asset-binary)。
+* [更新资产元数据](#update-asset-metadata)。
+* [创建资产演绎版](#create-an-asset-rendition)。
+* [更新资产演绎版](#update-an-asset-rendition)。
+* [创建资产评论](#create-an-asset-comment)。
+* [复制文件夹或资产](#copy-a-folder-or-asset)。
+* [移动文件夹或资产](#move-a-folder-or-asset)。
+* [删除文件夹、资产或演绎版](#delete-a-folder-asset-or-rendition)。
 
 >[!NOTE]
 >
@@ -94,13 +97,13 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **请求**: `GET /api/assets/myFolder.json`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 200 —— 好——成功。
 * 404 —— 未找到——文件夹不存在或无法访问。
 * 500 —— 内部服务器错误——如果出现其他问题。
 
-**响应**: 返回的实体类是资产或文件夹。 包含的实体的属性是每个实体的全部属性集的子集。 为了获得实体的完整表示形式，客户端应检索链接指向的URL的内容，其中 `rel` 包含 `self`:
+**响应**:返回的实体类是资产或文件夹。 包含的实体的属性是每个实体的全部属性集的子集。 为了获得实体的完整表示形式，客户端应检索链接指向的URL的内容，其中 `rel` 包含 `self`:
 
 ## Create a folder {#create-a-folder}
 
@@ -115,7 +118,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 201 —— 创建——成功创建时。
 * 409 —— 冲突——如果文件夹已存在。
@@ -124,16 +127,16 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 ## 创建资产 {#create-an-asset}
 
-将提供的文件放在提供的路径上，以在DAM存储库中创建资产。 如果提 `*` 供的不是节点名称，则servlet将参数名称或文件名用作节点名称。
+将提供的文件放在提供的路径上，以在DAM存储库中创建资产。 如果提 `*` 供的是节点名称，则servlet使用参数名称或文件名作为节点名称。
 
-**参数**: 参数用 `name` 于资产名称和 `file` 文件引用。
+**参数**:参数用 `name` 于资产名称和 `file` 文件引用。
 
 **请求**
 
 * `POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"`
 * `POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 201 —— 已创建——如果资产创建成功。
 * 409 —— 冲突——如果资产已存在。
@@ -146,10 +149,10 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **请求**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 200 —— 确定——如果资产已成功更新。
-* 404 —— 未找到——如果在提供的URI中找不到或访问资产，请执行此操作。
+* 404 —— 未找到——如果在提供的URI中找不到或访问资产，则返回该资产。
 * 412 - PREPOSITATION FAILED —— 如果找不到或访问根集合。
 * 500 —— 内部服务器错误——如果出现其他问题。
 
@@ -157,30 +160,51 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 更新资产元数据属性。 如果更新命名空间中的任 `dc:` 何属性，API将更新命名空间中的同一属 `jcr` 性。 API不同步两个命名空间下的属性。
 
-**请求**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**请求**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 200 —— 确定——如果资产已成功更新。
-* 404 —— 未找到——如果在提供的URI中找不到或访问资产，请执行此操作。
+* 404 —— 未找到——如果在提供的URI中找不到或访问资产，则返回该资产。
 * 412 - PREPOSITATION FAILED —— 如果找不到或访问根集合。
 * 500 —— 内部服务器错误——如果出现其他问题。
+
+### 在命名空间和之间同步元 `dc` 数据更 `jcr` 新 {#sync-metadata-between-namespaces}
+
+API方法更新命名空间中的元数据属 `jcr` 性。 使用触屏UI进行的更新更改了命名空间中的元数据属 `dc` 性。 要在命名空间和之间 `dc` 同步元 `jcr` 数据值，您可以创建工作流并配置Experience Manager以在资产编辑时执行该工作流。 使用ECMA脚本同步所需的元数据属性。 以下示例脚本将标题字符串同步在 `dc:title` 和之 `jcr:title`间。
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## 创建资产演绎版 {#create-an-asset-rendition}
 
 为资产创建新资产演绎版。 如果未提供请求参数名称，则文件名将用作再现名称。
 
-**参数**: 这些参数 `name` 用于再现的名称 `file` 和文件引用。
+**参数**:这些参数 `name` 用于再现的名称 `file` 和文件引用。
 
 **请求**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 201 —— 已创建——如果再现已成功创建。
-* 404 —— 未找到——如果在提供的URI中找不到或访问资产，请执行此操作。
+* 404 —— 未找到——如果在提供的URI中找不到或访问资产，则返回该资产。
 * 412 - PREPOSITATION FAILED —— 如果找不到或访问根集合。
 * 500 —— 内部服务器错误——如果出现其他问题。
 
@@ -190,10 +214,10 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **请求**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 200 —— 确定——如果再现已成功更新。
-* 404 —— 未找到——如果在提供的URI中找不到或访问资产，请执行此操作。
+* 404 —— 未找到——如果在提供的URI中找不到或访问资产，则返回该资产。
 * 412 - PREPOSITATION FAILED —— 如果找不到或访问根集合。
 * 500 —— 内部服务器错误——如果出现其他问题。
 
@@ -201,14 +225,14 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 创建新资产注释。
 
-**参数**: 参数用 `message` 于注释的消息正文和 `annotationData` JSON格式的注释数据。
+**参数**:参数用 `message` 于注释的消息正文和 `annotationData` JSON格式的注释数据。
 
 **请求**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 201 —— 已创建——如果注释已成功创建。
-* 404 —— 未找到——如果在提供的URI中找不到或访问资产，请执行此操作。
+* 404 —— 未找到——如果在提供的URI中找不到或访问资产，则返回该资产。
 * 412 - PREPOSITATION FAILED —— 如果找不到或访问根集合。
 * 500 —— 内部服务器错误——如果出现其他问题。
 
@@ -216,7 +240,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 复制提供的路径中提供到新目标的文件夹或资产。
 
-**请求标题**: 参数包括：
+**请求标题**:参数包括：
 
 * `X-Destination` - API解决方案范围中要将资源复制到的新目标URI。
 * `X-Depth` - `infinity` 或 `0`。 仅使 `0` 用会复制资源及其属性，而不复制其子项。
@@ -224,7 +248,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **请求**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 201 —— 已创建——如果文件夹／资产已复制到非现有目标。
 * 204 —— 无内容——如果文件夹／资产已复制到现有目标。
@@ -235,7 +259,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 将给定路径上的文件夹或资产移动到新目标。
 
-**请求标题**: 参数包括：
+**请求标题**:参数包括：
 
 * `X-Destination` - API解决方案范围中要将资源复制到的新目标URI。
 * `X-Depth` - `infinity` 或 `0`。 仅使 `0` 用会复制资源及其属性，而不复制其子项。
@@ -243,7 +267,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 
 **请求**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 201 —— 已创建——如果文件夹／资产已复制到非现有目标。
 * 204 —— 无内容——如果文件夹／资产已复制到现有目标。
@@ -260,7 +284,7 @@ API响应是某些MIME类型的JSON文件和所有MIME类型的响应代码。 J
 * `DELETE /api/assets/myFolder/myAsset.png`
 * `DELETE /api/assets/myFolder/myAsset.png/renditions/original`
 
-**响应代码**: 响应代码为：
+**响应代码**:响应代码为：
 
 * 200 —— 确定——如果文件夹已成功删除。
 * 412 - PREPOSITATION FAILED —— 如果找不到或访问根集合。

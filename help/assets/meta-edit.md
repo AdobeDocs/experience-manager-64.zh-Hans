@@ -3,9 +3,9 @@ title: 如何编辑或添加元数据
 description: 了解AEM Assets的资产元数据以及编辑资产元数据的各种方式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '483'
 ht-degree: 8%
 
 ---
@@ -54,3 +54,11 @@ ht-degree: 8%
 
 1. 要添加命名空间，请单击或点 **[!UICONTROL 按]** 底部的“新建”。
 1. 在XML命名空间约定中指定自定义命名空间（以URI形式指定id并为id指定关联前缀），然后单击或点按保 **[!UICONTROL 存]**。
+
+## 提示和限制 {#best-practices-limitations}
+
+* 通过触屏UI进行的元数据更新会更改命名空间中的元数据 `dc` 属性。 通过HTTP API进行的任何更新都会更改命名空间中的元数据属 `jcr` 性。 了 [解如何使用HTTP API更新元数据](/help/assets/mac-api-assets.md#update-asset-metadata)。
+
+>[!MORELIKETHIS]
+>
+>* [关于元数据及其在资产中的需求](metadata.md)

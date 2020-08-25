@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
+source-git-commit: 2a24d7b9232f39d47d79d995251a14beb0c0f666
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 15%
 
 ---
@@ -58,10 +58,8 @@ AEM Assets为扩展名为MP4的视频资源生成预览。 如果资产的格式
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
 
-1. 刷新浏览器。 叠加节 `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` 点被选中。
-1. 在“属 **[!UICONTROL 性]** ”选项卡中，输入相应的字节值，将大小限制增加到所需大小。 例如，输入以下值以将大小限制增加到30 GB:
-
-   `{sizeLimit : "32212254720"}`
+1. 刷新浏览器。 叠加节 `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` 点被选中。
+1. 在“属 **[!UICONTROL 性]** ”选项卡中，输入相应的字节值，将大小限制增加到所需大小。 例如，输入 `32212254720` 值以将大小限制增加到30 GB。
 
 1. 在工具栏中，点按保 **[!UICONTROL 存全部]**。
 1. 在 AEM 中，点按&#x200B;**[!UICONTROL 工具 > 操作 > Web Console]**。

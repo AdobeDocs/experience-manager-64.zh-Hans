@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: e9701237c8d5faf79f08f5cc3d1cd41540d06bf5
 workflow-type: tm+mt
 source-wordcount: '2507'
 ht-degree: 0%
@@ -28,11 +28,11 @@ AEM Forms应用支持根据您的服务器在移动设备上同步自适应表�
 
 AEM Forms应用程序在iOS、Android和Windows设备上受支持。 您可以从Google Play安装适用于Android的AEM Forms应用程序，从App Store安装iOS，从Windows应用商店安装Windows。
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt
+    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt
 
 要在iOS、Android或Windows设备上安装、自定义和分发应用程序，请参阅自 [定义、构建和分发AEM Forms应用程序](#customize-build-distribute)。
 
@@ -55,7 +55,7 @@ AEM Forms应用需要AEM Forms服务器。 用户可以渲染您在AEM Forms创�
 
 未使用AEM Forms工作流的AEM Forms服务器是OSGi上的AEM Forms服务器，或者是独立的移动表单或自适应表单。 AEM Forms应用程序可与您在OSGi上的AEM Forms实 [施配合](/help/sites-deploying/configuring-osgi.md)。 Forms，您的应用程序中提供AEM Forms应用程序的启用和发布功能。
 
-表单将下载到您的应用程序中，并可脱机使用。 例如，您运营的是一家银行，客户填写您网站上的一个应用程序。 该应用程序是一种自适应表单，可接受客户提供的信息并将其存储以供审阅。 管理员会查看表单，并在AEM作者实例中创建验证表单。 管理员启用表单与AEM Forms应用程序的同步并发布。 如果验证表单在AEM Forms应用程序中可用，您的现场代理可以使用移动设备验证客户的详细信息。 移动设备与服务器同步，验证表单加载到应用程序中。 您的现场代理可以访问您的客户、验证详细信息、将数据保存为草稿或提交验证表单。 只要应用程序处于联机状态，表单就会与服务器同步。
+表单将下载到您的应用程序中，并可脱机使用。 例如，您运营的是一家银行，客户填写您网站上的一个应用程序。 该应用程序是一种自适应表单，可接受客户提供的信息并将其存储以供审阅。 管理员会查看表单，并在AEM作者实例中创建验证表单。 管理员启用表单与AEM Forms应用程序同步并发布。 如果验证表单在AEM Forms应用程序中可用，您的现场代理可以使用移动设备验证客户的详细信息。 移动设备与服务器同步，验证表单加载到应用程序中。 您的现场代理可以访问您的客户、验证详细信息、将数据保存为草稿或提交验证表单。 只要应用程序处于联机状态，表单就会与服务器同步。
 
 要在AEM Forms应用程序中同步表单：
 
@@ -167,11 +167,11 @@ AEM Forms应用程序易于自定义以满足特定组织的需求。 应用程�
 
 您可以为以下对象自定义您的应用程序：
 
-**品牌**: 在AEM Forms应用程序中更改应用程序图标、应用程序名称、启动图像和页面。 您还可以更改文本以本地化特定区域的应用程序。 有关AEM Forms应用程序品牌化的更多信息，请参阅品牌 [化自定义](/help/forms/using/branding-customization.md)。
+**品牌**:在AEM Forms应用程序中更改应用程序图标、应用程序名称、启动图像和页面。 您还可以更改文本以本地化特定区域的应用程序。 有关AEM Forms应用程序品牌化的更多信息，请参阅品牌 [化自定义](/help/forms/using/branding-customization.md)。
 
-**主题**: 在AEM Forms应用程序用户界面中更改颜色、字体和间距等样式。 有关详细信息，请参阅 [主题自定义](/help/forms/using/theme-customization.md)。
+**主题**:在AEM Forms应用程序用户界面中更改颜色、字体和间距等样式。 有关详细信息，请参阅 [主题自定义](/help/forms/using/theme-customization.md)。
 
-**手势**: 在AEM Forms应用程序用户界面中更改右轻扫和左轻扫等手势。 有关详细信息，请参阅手 [势自定义](/help/forms/using/gesture-customization.md)。
+**手势**:在AEM Forms应用程序用户界面中更改右轻扫和左轻扫等手势。 有关详细信息，请参阅手 [势自定义](/help/forms/using/gesture-customization.md)。
 
 有关设置AEM Forms应用程序项目进行自定义的详细信息，请参阅：
 

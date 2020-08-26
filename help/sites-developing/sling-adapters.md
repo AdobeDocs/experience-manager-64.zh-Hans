@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 730a874376c21d5d137223e35662b42e722049cf
+source-git-commit: 269facfb6351b0b7c73e963ac7c5dc0b57c78a3e
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Node node = resource.adaptTo(Node.class);
 
 * 获取特定于实施的对象。
 
-   例如，基于JCR的通用接口实现提 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 供对基础JCR的访 [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)问。
+   例如，基于JCR的通用接口实现提 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 供对基础JCR的访问 [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)。
 
 * 需要传递内部上下文对象的对象的快捷方式创建。
 
@@ -69,10 +69,10 @@ Node node = resource.adaptTo(Node.class);
 
 可以通过多种方 `Adaptable.adaptTo()` 式实现：
 
-* 物体本身； 实现方法本身并映射到某些对象。
+* 物体本身；实现方法本身并映射到某些对象。
 * 由“ [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)”，它可以映射任意对象。
 
-   对象仍必须实现接 `Adaptable` 口并且必须扩 [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) 展(将调用传递 `adaptTo` 给中央适配器管理器)。
+   对象仍必须实现接 `Adaptable` 口并且必须扩 [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) 展(这会将调 `adaptTo` 用传递到中央适配器管理器)。
 
    这允许钩入现 `adaptTo` 有类的机制，例如 `Resource`。
 
@@ -84,7 +84,7 @@ Node node = resource.adaptTo(Node.class);
 
 ### Sling {#sling}
 
-[**资源&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html)适应于：
+[**资源**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) 适应于：
 
 <table> 
  <tbody> 
@@ -114,13 +114,13 @@ Node node = resource.adaptTo(Node.class);
   </tr> 
   <tr> 
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/PersistableValueMap.html">PersistableValueMap</a></td> 
-   <td>如果这是基于JCR节点的资源，并且用户有权修改该节点上的属性。<br /> 注意： 多个可持续地图不共享其值。</td> 
+   <td>如果这是基于JCR节点的资源，并且用户有权修改该节点上的属性。<br /> 注意：多个可持续地图不共享其值。</td> 
   </tr> 
   <tr> 
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td> 
    <td>返回“文件”的二进制内容<code>nt:resource</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>AuthorizableResourceProvider</code><code>org.apache.sling.jackrabbit.usermanager</code><code>/system/userManager</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Page</code><code>cq:PseudoPage</code></td></tr><tr><td></td><td><code>cq:Component</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td><code>cq:Template</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Tag</code></td></tr><tr><td></td><td><code>cq:Preferences</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr></tbody></table>
 
-[**ResourceResolver适应&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html):
+[**ResourceResolver适应**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html) :
 
 <table> 
  <tbody> 
@@ -187,11 +187,11 @@ Node node = resource.adaptTo(Node.class);
  </tbody> 
 </table>
 
-[**SlingHttpServletRequest **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)适应于：
+[**SlingHttpServletRequest**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) 适应于：
 
 尚未目标，但实现了Adaptible（适应性），可用作自定义AdapterFactory中的源。
 
-[**SlingHttpServletResponse **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)适应于：
+[**SlingHttpServletResponse**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) 适应于：
 
 <table> 
  <tbody> 
@@ -204,7 +204,7 @@ Node node = resource.adaptTo(Node.class);
 
 #### WCM {#wcm}
 
-[**页面会&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)调整为：
+[**页面会**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) 调整为：
 
 <table> 
  <tbody> 
@@ -227,7 +227,7 @@ Node node = resource.adaptTo(Node.class);
  </tbody> 
 </table>
 
-[**组件&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)适应于：
+[**组件**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html) 适应于：
 
 | [资源](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 组件的资源。 |
 |---|---|
@@ -235,7 +235,7 @@ Node node = resource.adaptTo(Node.class);
 | [节点](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 组件的节点。 |
 | ... | 组件的资源可以调整的所有内容。 |
 
-[**模板&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)适应于：
+[**模板**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html) 适应于：
 
 <table> 
  <tbody> 
@@ -260,7 +260,7 @@ Node node = resource.adaptTo(Node.class);
 
 #### 安全 {#security}
 
-[**可授权&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html)、[**用户**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) 和 [**组适&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html)应：
+[**可授权**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html)、 [**用户**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) 和 [**组适**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) 应：
 
 | [节点](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 返回用户／组主节点。 |
 |---|---|
@@ -268,7 +268,7 @@ Node node = resource.adaptTo(Node.class);
 
 #### DAM {#dam}
 
-[**资产会&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html)调整为：
+[**资产会**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html) 调整为：
 
 | [资源](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 资产的资源。 |
 |---|---|
@@ -277,7 +277,7 @@ Node node = resource.adaptTo(Node.class);
 
 #### 标记 {#tagging}
 
-[**标签&#x200B;**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html)适应于：
+[**标签**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html) 适应于：
 
 | [资源](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | 标记的资源。 |
 |---|---|

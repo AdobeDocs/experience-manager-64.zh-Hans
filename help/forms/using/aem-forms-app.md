@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: e9701237c8d5faf79f08f5cc3d1cd41540d06bf5
+source-git-commit: 3bd6ed70dd86df51042bdbde3ea3a60b3a91ab51
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2499'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ AEM Forms应用支持根据您的服务器在移动设备上同步自适应表�
 
 AEM Forms应用程序在iOS、Android和Windows设备上受支持。 您可以从Google Play安装适用于Android的AEM Forms应用程序，从App Store安装iOS，从Windows应用商店安装Windows。
 
-    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
-    
-    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
-    
-    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt
+[![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+
+[![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+
+[![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 要在iOS、Android或Windows设备上安装、自定义和分发应用程序，请参阅自 [定义、构建和分发AEM Forms应用程序](#customize-build-distribute)。
 

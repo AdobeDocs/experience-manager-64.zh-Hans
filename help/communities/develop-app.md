@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: babfbd7e864eb15c0b06b114fea4cef6db2a6a07
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 2%
+source-wordcount: '611'
+ht-degree: 3%
 
 ---
 
@@ -33,9 +33,10 @@ ht-degree: 2%
 使用CRXDE Lite:
 
 <!--Resolve steps below-->
-    *名称： `sling:resourceSuperType&#39;
-    *类型： `String&#39;
-    *值： `foundation/components/page`
+
+* 名称: `sling:resourceSuperType`
+* 类型: `String`
+* 值: `foundation/components/page`
 
 1. 单击绿色 **[!UICONTROL [+添]加]**
 1. 单击“ **[!UICONTROL 全部保存”]**

@@ -10,7 +10,7 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1509'
 ht-degree: 11%
@@ -28,7 +28,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->内容片段随后用于创作页面； 请参 [阅使用内容片段进行页面创作](/help/sites-authoring/content-fragments.md)。
+>内容片段随后用于创作页面；请参 [阅使用内容片段进行页面创作](/help/sites-authoring/content-fragments.md)。
 
 ## 创建内容片段 {#creating-content-fragments}
 
@@ -38,7 +38,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->有关模 [板的更多信息](/help/sites-developing/customizing-content-fragments.md) ，请参阅开发内容片段； 用于简单内容片段。
+>有关模 [板的更多信息](/help/sites-developing/customizing-content-fragments.md) ，请参阅开发内容片段；用于简单内容片段。
 
 ### 创建内容片段 {#creating-a-content-fragment}
 
@@ -51,7 +51,7 @@ ht-degree: 11%
    * 这可以是：
 
       * [模板](/help/sites-developing/content-fragment-templates.md) -例如简 **[!UICONTROL 单片段]**
-      * [模型](content-fragments-models.md) -用于创建需要结构化内容的片段； 例如 **Airport**
+      * [模型](content-fragments-models.md) -用于创建需要结构化内容的片段；例如 **Airport**
    * 将显示所有可用的模板和模型。
 
    选择后，使用 **[!UICONTROL 下一]** 步继续。
@@ -74,9 +74,9 @@ ht-degree: 11%
 
       * **[!UICONTROL 名称]**
 
-         名称； 将用于形成URL。
+         名称；将用于形成URL。
 
-         强制； 将自动从标题派生，但可以更新。
+         强制；将自动从标题派生，但可以更新。
 
 
 1. 选 **[!UICONTROL 择创建]** ，以完成操作，然后打开片段 **[!UICONTROL 进行编辑]** ，或返回控制台并执行完 **[!UICONTROL 成]**。
@@ -85,8 +85,8 @@ ht-degree: 11%
 
 在“资 **[!UICONTROL 产]** ”控制台中，您的内容片段可以执行一系列操作，其中一种操作为：
 
-* 工具栏； 选择片段后，所有适当的操作都可用。
-* 作为 [快速行动](/help/sites-authoring/basic-handling.md#quick-actions); 可用于单个片段卡的操作子集。
+* 工具栏；选择片段后，所有适当的操作都可用。
+* 作为 [快速行动](/help/sites-authoring/basic-handling.md#quick-actions);可用于单个片段卡的操作子集。
 
 ![cfm-6420-17](assets/cfm-6420-17.png)
 
@@ -94,7 +94,7 @@ ht-degree: 11%
 
 * **[!UICONTROL 下载]**
 
-   * 将片段另存为ZIP文件； 您可以定义是否包括元素、变量、元数据。
+   * 将片段另存为ZIP文件；您可以定义是否包括元素、变量、元数据。
 
 * **[!UICONTROL 创建]**
 * **[!UICONTROL 签出]**
@@ -228,7 +228,7 @@ ht-degree: 11%
 
 ## 查看和编辑片段的元数据（属性） {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-您可以使用元数据选项卡视图和编辑片段 [!UICONTROL 的属](content-fragments-metadata.md) 性。
+您可以使用元数据选项卡视图和编辑片段 [[!UICONTROL 的属]](content-fragments-metadata.md) 性。
 
 ## 内容片段的时间轴 {#timeline-for-content-fragments}
 
@@ -237,8 +237,8 @@ ht-degree: 11%
 * 视图有关版本、注释和批注的信息
 * 版本操作
 
-   * **[!UICONTROL 还原到此版本](#reverting-to-a-version)**（选择现有片段，然后选择特定版本）
-   * **[!UICONTROL 与当前片段比较](#comparing-fragment-versions)**（先选择一个现有片段，然后选择一个特定版本）
+   * **[[!UICONTROL 还原到此版本]](#reverting-to-a-version)** （选择现有片段，然后选择特定版本）
+   * **[[!UICONTROL 与当前片段比较]](#comparing-fragment-versions)** （先选择一个现有片段，然后选择一个特定版本）
    * 添加标 **[!UICONTROL 签]** 和／或 **[!UICONTROL 注释]** （选择现有片段，然后选择特定版本）
    * **[!UICONTROL 另存为版本]** （选择现有片段，然后选择时间轴底部的向上箭头）
 
@@ -268,7 +268,7 @@ ht-degree: 11%
 
 ## 比较片段版本 {#comparing-fragment-versions}
 
-选择 **[!UICONTROL 特定版本后]** ，时间轴中 [!UICONTROL 会提](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) 供“与当前比较”(Compare to Current)操作。
+选择 **[!UICONTROL 特定版本后]** ，时间轴中 [[!UICONTROL 会提]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) 供“与当前比较”(Compare to Current)操作。
 
 此选项将打开：
 
@@ -284,7 +284,7 @@ ht-degree: 11%
    * 插入的文本——绿色
    * 替换文本——蓝色
 
-* 全屏图标允许您自行打开任一版本； 然后切换回并行视图
+* 全屏图标允许您自行打开任一版本；然后切换回并行视图
 * 您可以 **[!UICONTROL 还原]** 到特定版本
 * **[!UICONTROL 完成]** ，将返回控制台
 
@@ -298,7 +298,7 @@ ht-degree: 11%
 
 您可以还原到片段的特定版本：
 
-* 直接从时 [!UICONTROL 间轴](content-fragments-managing.md#timeline-for-content-fragments)。
+* 直接从时 [[!UICONTROL 间轴]](content-fragments-managing.md#timeline-for-content-fragments)。
 
    选择所需的版本，然后执 **[!UICONTROL 行还原到此版本]** 。
 
@@ -314,8 +314,8 @@ ht-degree: 11%
 
 必须发布内容片段才能在发布环境中使用。 可以发布它们：
 
-* 创建后； 从“资 **[!UICONTROL 产]** ”控制台。
-* 当您发 [布使用片段的页面时](/help/sites-authoring/content-fragments.md#publishing); 片段将列在页面引用中。
+* 创建后；从“资 **[!UICONTROL 产]** ”控制台。
+* 当您发 [布使用片段的页面时](/help/sites-authoring/content-fragments.md#publishing);片段将列在页面引用中。
 
 >[!CAUTION]
 >

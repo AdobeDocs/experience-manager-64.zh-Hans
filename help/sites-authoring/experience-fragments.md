@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
-source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 82%
@@ -189,7 +189,7 @@ ht-degree: 82%
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
-1. 从组件工具栏中选择&#x200B;**[!UICONTROL 配置](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**。
+1. 从组件工具栏中选择&#x200B;**[[!UICONTROL 配置]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**。
 1. 添加&#x200B;**[!UICONTROL 资产]**，并根据需要定义&#x200B;**[!UICONTROL 属性]**。
 1. 使用&#x200B;**[!UICONTROL 完成]**（勾选图标）确认定义。
 1. 根据需要添加更多组件。
@@ -297,7 +297,7 @@ Using the `.plain.` selector in the URL, you can access the plain HTML rendition
 
 * 类型： `src`、 `href`或 `action`
 
-* 或结尾为： `-src`或 `-href`
+* 或结束于： `-src`或 `-href`
 
 例如：
 

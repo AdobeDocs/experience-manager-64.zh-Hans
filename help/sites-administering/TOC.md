@@ -5,9 +5,9 @@ audience: admin-user
 user-guide-title: AEM 6.4管理用户指南
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 14%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 14%
 + [管理用户指南概述](home.md)
 + 站点功能 {#introduction}
    + [网站管理](msm-and-translation.md)
-   + [重用内容： 多站点管理器和Live Copy](msm.md)
+   + [重用内容：多站点管理器和Live Copy](msm.md)
    + [Live Copy概述控制台](msm-livecopy-overview.md)
    + [配置 Live Copy 同步](msm-sync.md)
    + [创建和同步Live Copy](msm-livecopy.md)
@@ -150,7 +150,6 @@ ht-degree: 14%
    + [与AdobeSearch&amp;Promote集成](search-and-promote.md)
    + [解决方案集成](integration.md)
    + [目标与体验片段集成](experience-fragments-target.md)
-   + [电子邮件模板的最佳实践](best-practices-for-email-templates.md)
 + 最佳实践 {#bestpractices}
    + [最佳实践](administer-best-practices.md)
    + [翻译最佳实践](tc-bp.md)

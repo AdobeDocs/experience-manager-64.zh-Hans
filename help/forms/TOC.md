@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.4Forms用户指南
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3711'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 1%
       + [在JEE上使用JBoss统包安装和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
       + [仅安装和配置文档安全服务器](using/installing-and-configuring-the-document-security-server.md)
       + [准备安装AEM Forms单台服务器](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
-      + [在JEE上安装和部署JBoss的AEM Forms](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
+      + [在JEE上为JBoss安装和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
       + [在WebLogic的JEE上安装和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
       + [在WebSphere的JEE上安装和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
       + [安装AEM Forms工作台](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
@@ -504,7 +504,6 @@ ht-degree: 1%
       + [使字体可用](/help/forms/using/admin-help/make-fonts-available.md)
       + [指定要嵌入的字体](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [指定安全设置](/help/forms/using/admin-help/specify-security-settings.md)
-      + [更改字符集](/help/forms/using/admin-help/change-character-set.md)
    + 配置表单工作流{#configure-forms-workflow}
       + [关于管理和流程术语](/help/forms/using/admin-help/administration-process-terminology.md)
       + [管理流程](/help/forms/using/admin-help/processes.md)

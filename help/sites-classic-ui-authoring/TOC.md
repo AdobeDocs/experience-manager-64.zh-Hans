@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: AEM 6.4经典UI创作用户指南
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 91%
+source-wordcount: '298'
+ht-degree: 90%
 
 ---
 
@@ -67,10 +67,8 @@ ht-degree: 91%
    + [使用营销活动管理器](classic-personalization-campaigns-mktg-manager.md)
    + [电子邮件营销](classic-personalization-campaigns-email.md)
    + [跟踪弹回的电子邮件](classic-personalization-campaigns-email-tracking-bounces.md)
-   + [Teaser 和战略](classic-personalization-campaigns-teasers-strategy.md)
    + [设置您的营销活动](classic-personalization-campaigns-setting-up-your.md)
    + [将电子邮件发布到电子邮件服务提供商](classic-personalization-campaigns-email-newsletters.md)
-   + [使用营销活动管理器](classic-personalization-campaigns-mktg-manager.md)
    + [创建有效的新闻稿登陆页面](classic-personalization-campaigns-email-landingpage.md)
    + [管理订阅](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}

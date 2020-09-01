@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: AEM 6.4 发行说明
 user-guide-description: Learn about the latest new features in AEM 6.4 in the release notes.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 610e9a54adad3abdfecb8b2c4da67d677f75175e
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 41%
+source-wordcount: '73'
+ht-degree: 38%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 41%
 + [AEM Sites 发行说明](sites.md)
 + [AEM Assets 发行说明](assets.md)
 + [AEM Forms 发行说明](forms.md)
++ [AEM FormsJEE修补程序安装程序](jee-patch-installer-64.md)
 + [AEM Communities 发行说明](communities-release-notes.md)
 + [AEM 3D发行说明](aem3d-release-notes.md)
 + [已弃用和已删除的功能](deprecated-removed-features.md)

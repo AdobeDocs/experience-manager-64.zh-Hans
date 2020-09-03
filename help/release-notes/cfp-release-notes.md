@@ -4,9 +4,9 @@ description: 特定于Adobe Experience Manager6.4累积修复包的发行说明�
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f1a5f720ade66e5e8f909264563fa7ad1149b15f
+source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3331'
 ht-degree: 13%
 
 ---
@@ -158,6 +158,8 @@ Adobe Experience Manager6.4.8.2修复了以下问题。
 **升级**
 
 * 将版本升 [!DNL JBoss] 级到7.0.9以在文档 [!DNL Experience Manager Forms] 中使用环境安全 [!DNL Linux] 时，将导致错误(CQ-4300546)。
+
+有关安全更新的信息，请参阅 [Experience Manager安全公告页](https://helpx.adobe.com/security/products/experience-manager.html)。
 
 ## 以前的累积修补程序包中包含的修补程序和功能包 {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 

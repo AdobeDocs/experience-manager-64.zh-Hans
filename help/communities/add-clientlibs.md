@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: 805e4411930749ff4b6b05ea4a8b87b4f96d72fd
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 1%
@@ -45,7 +45,7 @@ ht-degree: 1%
 * Click **[!UICONTROL Add]**
 * 单击“ **[!UICONTROL 全部保存”]**
 
-注意： 用“apps”预先呈现类别价值。 是用于将“拥有的应用程序”标识为位于/apps文件夹（而非/libs）中的约定。  重要： 添加占位符 `js.txt` 和 `css.txt` 文件。 （没有它们，它不是正式的cq:ClientLibraryFolder。）
+注意：用“apps”预先呈现类别价值。 是用于将“拥有的应用程序”标识为位于/apps文件夹（而非/libs）中的约定。  重要：添加占位符 `js.txt` 和 `css.txt` 文件。 （没有它们，它不是正式的cq:ClientLibraryFolder。）
 
 
 1. 右键单击 **`/etc/designs/an-scf-sandbox/clientlibs`**
@@ -124,7 +124,7 @@ css.txt和js.txt的第一行标识了从中找到以下一列表文件的基本�
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-包含语句属于 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 的 <html> 脚本. 默认包 **`foundation head.jsp`** 括可覆盖的脚本： **`headlibs.jsp`**.
+include语句属于脚 `<head>` 本的一 `<html>` 节。 默认包 **`foundation head.jsp`** 括可覆盖的脚本： **`headlibs.jsp`**.
 
 **复制headlibs.jsp并包含clientlibs:**
 
@@ -170,7 +170,7 @@ css.txt和js.txt的第一行标识了从中找到以下一列表文件的基本�
 
    * 包名称: `an-scf-sandbox-minimal-pkg`
    * 版本: `0.1`
-   * 组： &lt;leave as default>
+   * 组：&lt;leave as default>
    * Click **[!UICONTROL OK]**
 
 * Click **[!UICONTROL Edit]**
@@ -178,13 +178,13 @@ css.txt和js.txt的第一行标识了从中找到以下一列表文件的基本�
    * 选择 **[!UICONTROL 过滤器]** 选项卡
 
       * 单击“ **[!UICONTROL 添加过滤器”]**
-      * 根路径： &lt;浏览到> `/apps/an-scf-sandbox`
+      * 根路径：&lt;浏览到> `/apps/an-scf-sandbox`
       * Click **[!UICONTROL Done]**
       * 单击“ **[!UICONTROL 添加过滤器”]**
-      * 根路径： &lt;浏览到> `/etc/designs/an-scf-sandbox`
+      * 根路径：&lt;浏览到> `/etc/designs/an-scf-sandbox`
       * Click **[!UICONTROL Done]**
       * 单击“ **[!UICONTROL 添加过滤器”]**
-      * 根路径： &lt;浏览到> `/content/an-scf-sandbox`
+      * 根路径：&lt;浏览到> `/content/an-scf-sandbox`
       * Click **[!UICONTROL Done]**
    * Click **[!UICONTROL Save]**
 

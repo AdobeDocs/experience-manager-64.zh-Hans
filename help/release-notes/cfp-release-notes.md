@@ -4,9 +4,9 @@ description: 特定于Adobe Experience Manager6.4累积修复包的发行说明�
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
+source-git-commit: d3721590e3c2dfd2b048f1b5964915a343f95f6d
 workflow-type: tm+mt
-source-wordcount: '3331'
+source-wordcount: '3364'
 ht-degree: 13%
 
 ---
@@ -171,6 +171,7 @@ AEM Cumulative Fix Pack 6.4.8.1取决于AEM 6.4 Service Pack 8。 因此，在�
 
 AEM 6.4.8.1的一些主要亮点是：
 
+* 禁止匿名访问CRXDE Lite以增强安全性。 而是将用户定向到登录屏幕。 请参 [阅使用CRXDE Lite开发](/help/sites-developing/developing-with-crxde-lite.md)。
 * 删除了与Adobe Experience Manager的包共享集成。
 * 内置存储库 (Apache Jackrabbit Oak) 已更新至版本 1.8.21。
 
@@ -180,6 +181,7 @@ Adobe Experience Manager6.4.8.1修复了以下问题。
 
 #### 站点 {#sites-6481}
 
+* 匿名用户可以访问CRX DE Lite功能(NPR-33522)。
 * 当LiveCopy中的本地组件名称与蓝图中的组件名称相同，并且从蓝图中转出该组件时，术语_msm_moved不会添加到本地组件的名称(NPR-33207)。
 * 附加到原始请求的参数不包括在重定向URL中(NPR-33174)。
 * 当Coral.Select选项设置emptyOption=true或包含值为“”的默认项时，dropdownshowhide.js文件会遇到错误：未捕获的TypeError:component.getValue不是函数(NPR-33163)。

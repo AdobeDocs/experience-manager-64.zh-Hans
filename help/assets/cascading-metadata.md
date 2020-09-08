@@ -3,9 +3,9 @@ title: 层叠元数据
 description: 本文介绍如何为资产定义层叠元数据。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 452c90bc72c8d71af4b6c4ca2243024b459f53d9
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '980'
 ht-degree: 13%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 13%
 # Cascading Metadata {#cascading-metadata}
 
 本文介绍如何为资产定义层叠元数据。
+
+>[!CAUTION]
+>
+>内容片段不支持层叠元数据。
 
 在捕获资产的元数据信息时，用户会在各种可用字段中提供信息。 您可以显示特定元数据字段或字段值，这些字段或字段值取决于在其他字段中选择的选项。 此类元数据的条件显示称为级联元数据。 换言之，您可以在特定元数据字段／值与一个或多个字段和／或其值之间创建依赖关系。
 
@@ -110,8 +114,8 @@ ht-degree: 13%
 
    ![视频资产的层叠元数据](assets/video_asset.png)
 
-   *图： 视频资产的层叠元数据*
+   *图：视频资产的层叠元数据*
 
    ![文档资产的级联元数据](assets/doc_type_fields.png)
 
-   *图： 文档资产的级联元数据*
+   *图：文档资产的级联元数据*

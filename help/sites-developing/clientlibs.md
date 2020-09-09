@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 50d57997496e6809361277f7025f3858857e14af
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 0%
@@ -54,12 +54,12 @@ ht-degree: 0%
 
 每个 `cq:ClientLibraryFolder` 文件都会填入一组JS和／或CSS文件，以及一些支持文件（请参阅下文）。 属性配置 `cq:ClientLibraryFolder` 如下：
 
-* `categories`: 标识今秋内JS和／或CSS文件集所属的类别 `cq:ClientLibraryFolder` 符。 该 `categories` 属性具有多值，允许库文件夹成为多个类别的一部分（请参见下面，了解这可能有何用）。
+* `categories`:标识今秋内JS和／或CSS文件集所属的类别 `cq:ClientLibraryFolder` 符。 该 `categories` 属性具有多值，允许库文件夹成为多个类别的一部分（请参见下面，了解这可能有何用）。
 
-* `dependencies`: 这是此库文件夹所依赖的其他客户端库类别的列表。 例如，给定两个 `cq:ClientLibraryFolder` 节点 `F` ，如果某个文件需要另一个文件才能正常工作，则至少其中一个节点 `G`应该 `F``G``categories``G``dependencies``F`位于中。
+* `dependencies`:这是此库文件夹所依赖的其他客户端库类别的列表。 例如，给定两个 `cq:ClientLibraryFolder` 节点 `F` ，如果某个文件需要另一个文件才能正常工作，则至少其中一个节点 `G`应该 `F``G``categories``G``dependencies``F`位于中。
 
-* `embed`: 用于嵌入来自其他库的代码。 如果节点F嵌入节点G和H，则生成的HTML将是节点G和H中的内容集中。
-* `allowProxy`: 如果客户端库位于下 `/apps`方，则此属性允许通过代理servlet访问它。 请参 [阅查找客户端库文件夹和使用下面的代理客户端库](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) Servlet。
+* `embed`:用于嵌入来自其他库的代码。 如果节点F嵌入节点G和H，则生成的HTML将是节点G和H中的内容集中。
+* `allowProxy`:如果客户端库位于下 `/apps`方，则此属性允许通过代理servlet访问它。 请参 [阅查找客户端库文件夹和使用下面的代理客户端库](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) Servlet。
 
 ## 引用客户端库 {#referencing-client-side-libraries}
 
@@ -134,7 +134,7 @@ Web客户端必须具有访问节点的 `cq:ClientLibraryFolder` 权限。 您�
 
 >[!NOTE]
 >
->客户端库文件夹下的静态资源必须位于名为resources的文 *件夹中*。 如果文件夹资源下没有静态资源（如图像），则 *不能*&#x200B;在发布实例上引用它。 以下是一个示例： http://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
+>客户端库文件夹下的静态资源必须位于名为resources的文 *件夹中*。 如果文件夹资源下没有静态资源（如图像），则 *不能*&#x200B;在发布实例上引用它。 以下是一个示例：http://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ Web客户端必须具有访问节点的 `cq:ClientLibraryFolder` 权限。 您�
 * 您有一个clientlib `/apps/myproject/clientlibs/foo`
 * 您的静态图像 `/apps/myprojects/clientlibs/foo/resources/icon.png`
 
-然后将属 `allowProxy` 性设置为 `foo` true。
+然后将属性 `allowProxy` 设置为 `foo` true。
 
 * 然后，您可以请求 `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * 然后，您可以通过 `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
@@ -169,10 +169,10 @@ Web客户端必须具有访问节点的 `cq:ClientLibraryFolder` 权限。 您�
 1. 输入库文件的名称，并在“类型”列表中选择 `cq:ClientLibraryFolder`。 单击 **确定** ，然后单击 **全部保存**。
 1. 要指定库所属的类别或类别，请选 `cq:ClientLibraryFolder` 择节点，添加以下属性，然后单击“全 **部保存**:
 
-   * 名称： 类别
-   * 类型： 字符串
-   * 值： 类别名称
-   * 多： 选择
+   * 名称：类别
+   * 类型：字符串
+   * 值：类别名称
+   * 多：选择
 
 1. 通过任何方式将源文件添加到库文件夹。 例如，使用WebDav客户端复制文件，或创建文件并手动创作内容。
 
@@ -181,8 +181,8 @@ Web客户端必须具有访问节点的 `cq:ClientLibraryFolder` 权限。 您�
 1. 选择客户端库文件夹，然后单击“ **创建”>“创建文件**”。
 1. 在“文件名”框中，键入以下文件名之一，然后单击“确定”:
 
-   * **`js.txt`:**使用此文件名生成JavaScript文件。
-   * **`css.txt`:**使用此文件名生成层叠样式表。
+   * **`js.txt`:** 使用此文件名生成JavaScript文件。
+   * **`css.txt`:** 使用此文件名生成层叠样式表。
 
 1. 打开文件并键入以下文本以标识源文件路径的根：
 
@@ -192,7 +192,7 @@ Web客户端必须具有访问节点的 `cq:ClientLibraryFolder` 权限。 您�
 
    `#base=.`
 
-   下面的代码将根设置为节点下名为mobile的文 `cq:ClientLibraryFolder` 件夹：
+   以下代码将根设置为节点下名为mobile的文 `cq:ClientLibraryFolder` 件夹：
 
    `#base=mobile`
 
@@ -242,7 +242,6 @@ Web客户端必须具有访问节点的 `cq:ClientLibraryFolder` 权限。 您�
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/shared.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/underscore.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
@@ -315,7 +314,7 @@ body {
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
 | `/libs/cq/cloudserviceconfigs/widgets` | `!touch` |
 | `/libs/cq/searchpromote/widgets` | `!touch` |
-| `/libs/cq/searchpromote/widgets/themes/default` | `[`*无值&#x200B;*`]` |
+| `/libs/cq/searchpromote/widgets/themes/default` | `[`*无值*`]` |
 | `/libs/cq/touch/widgets` | `touch` |
 | `/libs/cq/touch/widgets/themes/default` | `touch` |
 | `/libs/cq/ui/widgets` | `!touch` |
@@ -323,13 +322,13 @@ body {
 
 ## 使用预处理器 {#using-preprocessors}
 
-AEM支持可插拔的预处理器，并随附 [对JUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) for CSS和JavaScript以及Google Closure Compiler(GCC) [for JavaScript(GCC)的支持(](https://developers.google.com/closure/compiler/) YU设置为AEM默认预处理器)。
+AEM支持可插拔的预处理器，并随附 [对JUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) for CSS和JavaScript以及Google Closure Compiler(GCC) [for JavaScript(GCC)的支持](https://developers.google.com/closure/compiler/) ,YU设置为AEM默认预处理器。
 
 可插拔预处理器允许灵活使用，包括：
 
 * 定义可处理脚本源的脚本处理器
 * 处理器可配置选项
-* 处理器可用于微型化，但也可用于非微型化情况
+* 处理器可用于微型化，也可用于非微型化情况
 * clientlib可以定义要使用哪个处理器
 
 >[!NOTE]
@@ -456,8 +455,8 @@ AEM提供了多种工具用于调试和测试客户端库文件夹。
 
 HTML库管理器服务在运 `cq:ClientLibraryFolder` 行时处理标记并生成库。 环境、开发或生产类型决定了您应如何配置服务：
 
-* 提高安全性： 禁用调试
-* 提高性能： 删除空白并压缩库。
-* 提高可读性： 包括空格，不压缩。
+* 提高安全性：禁用调试
+* 提高性能：删除空白并压缩库。
+* 提高可读性：包括空格，不压缩。
 
 有关配置服务的信息，请参 [阅AEM HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md)。

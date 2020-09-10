@@ -3,10 +3,10 @@ title: 使用 Brand Portal 配置 AEM Assets
 description: '了解如何使用Brand Portal配置AEM Assets，以将资产和集合发布到Brand Portal。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 1510b3a1b40e2e08579fc833f563fa77d6cc65cd
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 42%
+source-wordcount: '1678'
+ht-degree: 43%
 
 ---
 
@@ -30,8 +30,8 @@ Adobe Experience Manager (AEM) Assets 通过 Adobe I/O 使用 Brand Portal 进�
 
 
 本帮助描述以下两个用例：
-* [新配置](#configure-new-integration-64): 如果您是新的Brand Portal用户，并且希望使用Brand Portal配置您的AEM Assets作者实例，则可以在AdobeI/O上创建新配置。
-* [升级配置](#upgrade-integration-64): 如果您是现有的Brand Portal用户，且您的AEM Assets作者实例在旧版OAuth网关上配置了Brand Portal，建议删除现有配置并在AdobeI/O上创建新配置。
+* [新配置](#configure-new-integration-64):如果您是新的Brand Portal用户，并且希望使用Brand Portal配置您的AEM Assets作者实例，则可以在AdobeI/O上创建新配置。
+* [升级配置](#upgrade-integration-64):如果您是现有的Brand Portal用户，且您的AEM Assets作者实例在旧版OAuth网关上配置了Brand Portal，建议删除现有配置并在AdobeI/O上创建新配置。
 
 提供的信息基于以下假设：阅读本帮助的任何人都熟悉以下技术：
 
@@ -92,7 +92,7 @@ IMS 配置包括两个步骤：
 
 公共证书允许您在 Adobe I/O 上验证配置文件。
 
-1. 登录您的AEM Assets作者实例默认URL: http://本地主机：4502/aem/start.html
+1. 登录您的AEM Assets作者实例默认URL:http://本地主机：4502/aem/start.html
 1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** >> **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Adobe IMS 帐户配置 UI](assets/ims-config1.png)
@@ -208,7 +208,7 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
 
 1. 登录您的AEM Assets作者实例
 
-   默认URL: http://本地主机：4502/aem/start.html
+   默认URL:http://本地主机：4502/aem/start.html
 1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services >> AEM Brand Portal]**.
 
    此时将打开 Brand Portal 的“配置”页面。
@@ -229,7 +229,7 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
 
 1. 登录您的AEM Assets作者实例
 
-   默认URL: http://本地主机：4502/aem/start.html
+   默认URL:http://本地主机：4502/aem/start.html
 
 1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment >> Replication]**.
 
@@ -254,10 +254,6 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
    >
    >复制代理并行工作并平等地共享作业分配，从而将发布速度提高四倍于原始速度。 配置云服务后，无需进行额外配置即可启用默认激活的复制代理以启用多个资产的并行发布。
 
-   >[!NOTE]
-   >
-   >请避免禁用任何复制代理，因为这可能会导致某些资产的复制失败。
-
 
 1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
@@ -267,15 +263,13 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
 
    ![](assets/test-integration5.png)
 
-   >[!NOTE]
-   >
-   >复制代理并行工作并平等地共享作业分配，从而将发布速度提高四倍于原始速度。 配置云服务后，无需进行额外配置即可启用默认激活的复制代理以启用多个资产的并行发布。
 
 1. 逐一验证所有四个复制代理的测试结果。
 
    >[!NOTE]
    >
    >请避免禁用任何复制代理，因为这可能会导致某些资产的复制失败。
+   >确保将所有四个复制代理都配置为避免超时错误。 See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Brand Portal已成功配置您的AEM Assets作者实例。 您现在可以：
 
@@ -297,7 +291,7 @@ Brand Portal已成功配置您的AEM Assets作者实例。 您现在可以：
 
 1. 登录您的AEM Assets作者实例
 
-   默认URL: http://本地主机：4502/aem/start.html
+   默认URL:http://本地主机：4502/aem/start.html
 
 1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment >> Replication]**.
 
@@ -309,7 +303,7 @@ Brand Portal已成功配置您的AEM Assets作者实例。 您现在可以：
 
 1. 找到Brand Portal租户的复制代理。
 
-   确保所有 **复制代理的队列** “空闲”，没有发布作业处于活动状态。
+   确保所有 **复制代理的队列** “空闲”，未激活任何发布作业。
 
    ![](assets/test-integration3.png)
 
@@ -324,7 +318,7 @@ Brand Portal已成功配置您的AEM Assets作者实例。 您现在可以：
 
 1. 登录您的AEM Assets创作实例，以管理员身份打开CRX Lite。
 
-   默认URL: http://本地主机：4502/crx/de/index.jsp
+   默认URL:http://本地主机：4502/crx/de/index.jsp
 
 1. 导航到 `/etc/replications/agents.author` 并删除Brand Portal租户的所有四个复制代理。
 

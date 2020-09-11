@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 2%
@@ -72,14 +72,14 @@ SPA创作功能优惠了用于支持AEM内SPA的全面解决方案。 本文举�
 
 在We.Retail日志应用程序中查 `Weather.js`看自定义天气组件()的代码：
 
-* **第16行**: React Open Weather构件会根据需要加载。
-* **第46行**: 该函 `MapTo` 数将此React组件与相应的AEM组件关联，以便在SPA编辑器中编辑它。
+* **第16行**:React Open Weather构件会根据需要加载。
+* **第46行**:该函 `MapTo` 数将此React组件与相应的AEM组件关联，以便在SPA编辑器中编辑它。
 
-* **第22-29行**: 定 `EditConfig` 义城市，检查城市是否已填充，如果为空，则定义值。
+* **第22-29行**:定 `EditConfig` 义城市，检查城市是否已填充，如果为空，则定义值。
 
-* **第31-44行**: Weather组件扩展了类 `Component` 并提供React Open Weather组件的NPM使用文档中定义的所需数据，并渲染该组件。
+* **第31-44行**:Weather组件扩展了类 `Component` 并提供React Open Weather组件的NPM使用文档中定义的所需数据，并渲染该组件。
 
-```
+```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~ Copyright 2018 Adobe Systems Incorporated
  ~
@@ -97,7 +97,7 @@ SPA创作功能优惠了用于支持AEM内SPA的全面解决方案。 本文举�
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 import React, {Component} from 'react';
 import ReactWeather from 'react-open-weather';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Weather.css');
 

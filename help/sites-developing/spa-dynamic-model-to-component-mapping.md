@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 有关模型分 [析和对模型的前端组件访问](/help/sites-developing/spa-blueprint.md) ，请参阅SPA Blueprint文档。
 
-另请参阅npm包： [https://www.npmjs.com/package/@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+另请参阅npm包： [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## 模型驱动的单页应用程序 {#model-driven-single-page-application}
 

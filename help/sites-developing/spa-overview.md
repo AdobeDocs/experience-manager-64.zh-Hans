@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
@@ -49,7 +49,7 @@ SPA的页面组件不会通过JSP或HTL文件提供其子组件的HTML元素。 
 
 ### 页面模型管理 {#page-model-management}
 
-页面模型的解析和管理被委托给提供的 `PageModel` 库。 SPA必须使用页面模型库才能进行初始化并由SPA编辑器创作。 页面模型库通过npm间接提供给AEM页面 `cq-react-editable-components` 组件。 页面模型是AEM和SPA之间的解释器，因此始终必须存在。 创作页面时，必须添加其 `cq.authoring.pagemodel.messaging` 他库才能启用与页面编辑器的通信。
+页面模型的解析和管理被委托给提供的 `PageModel` 库。 SPA必须使用页面模型库才能进行初始化并由SPA编辑器创作。 页面模型库通过npm间接提供给AEM页面 `aem-react-editable-components` 组件。 页面模型是AEM和SPA之间的解释器，因此始终必须存在。 创作页面时，必须添加其 `cq.authoring.pagemodel.messaging` 他库才能启用与页面编辑器的通信。
 
 如果SPA页面组件从页面核心组件继承内容，则有两个选项可使客户端库 `cq.authoring.pagemodel.messaging` 类别可用：
 

@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 1%
@@ -34,7 +34,7 @@ SPA创作功能优惠了用于支持AEM内SPA的全面解决方案。 本文介�
 
 ## 简介 {#introduction}
 
-本文概括了简单SPA的基本功能，以及运行所需了解的最低要求。
+本文概括了简单SPA的基本功能，以及使您的SPA运行所需的最低要求。
 
 有关AEM中SPA的工作方式的详细信息，请参阅以下文档:
 
@@ -62,9 +62,9 @@ SPA创作功能优惠了用于支持AEM内SPA的全面解决方案。 本文介�
 
 ```
 "dependencies": {
-  "@adobe/cq-angular-editable-components": "~1.0.3",
-  "@adobe/cq-spa-component-mapping": "~1.0.3",
-  "@adobe/cq-spa-page-model-manager": "~1.0.4"
+  "@adobe/aem-angular-editable-components": "~1.0.3",
+  "@adobe/aem-spa-component-mapping": "~1.0.5",
+  "@adobe/aem-spa-page-model-manager": "~1.0.3"
 }
 ```
 
@@ -131,12 +131,12 @@ module.exports = {
 
 SPA的入口点是此处显示的 `app.module.ts` 简化文件，以集中处理重要内容。
 
-```
+```javascript
 // app.module.ts
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SpaAngularEditableComponentsModule } from '@adobe/cq-angular-editable-components';
+import { SpaAngularEditableComponentsModule } from '@adobe/aem-angular-editable-components';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -162,11 +162,11 @@ export class AppModule {}
 
 引导 `app.module.ts` 完 `AppComponent`成后，它便可以初始化应用程序，该应用程序以简化版本显示，以专注于重要内容。
 
-```
+```javascript
 // app.component.ts
 import { Component } from '@angular/core';
-import { ModelManager } from '@adobe/cq-spa-page-model-manager';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { ModelManager } from '@adobe/aem-spa-page-model-manager';
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-root',
@@ -194,13 +194,13 @@ export class AppComponent {
 
 ### main-content.component.ts {#main-content-component-ts}
 
-通过处理页面，在 `app.component.ts` 简 `main-content.component.ts` 化版本中列出的调用。
+通过处理页面， `app.component.ts` 以简 `main-content.component.ts` 化版本列出的调用。
 
-```
+```javascript
 import { Component } from '@angular/core';
 import { ModelManagerService }     from '../model-manager.service';
 import { ActivatedRoute } from '@angular/router';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-main',

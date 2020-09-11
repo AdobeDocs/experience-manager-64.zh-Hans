@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 1%
@@ -35,7 +35,7 @@ SPA创作功能优惠了用于支持AEM内SPA的全面解决方案。 本文介�
 
 ## 简介 {#introduction}
 
-本文概括了简单SPA的基本功能，以及运行所需了解的最低要求。
+本文概括了简单SPA的基本功能，以及使您的SPA运行所需的最低要求。
 
 有关AEM中SPA的工作方式的详细信息，请参阅以下文档:
 
@@ -63,9 +63,9 @@ SPA创作功能优惠了用于支持AEM内SPA的全面解决方案。 本文介�
 
 ```
   "dependencies": {
-    "@adobe/cq-react-editable-components": "~1.0.3",
-    "@adobe/cq-spa-component-mapping": "~1.0.3",
-    "@adobe/cq-spa-page-model-manager": "~1.0.4"
+    "@adobe/aem-react-editable-components": "~1.0.4",
+    "@adobe/aem-spa-component-mapping": "~1.0.5",
+    "@adobe/aem-spa-page-model-manager": "~1.0.3"
   }
 ```
 
@@ -139,10 +139,10 @@ module.exports = {
 
 进入SPA的入口点当然是此处显示的 `index.js` 文件经过简化以集中处理重要内容。
 
-```
+```javascript
 import ReactDOM from 'react-dom';
 import App from './App';
-import { ModelManager, Constants } from "@adobe/cq-spa-page-model-manager";
+import { ModelManager, Constants } from "@adobe/aem-spa-page-model-manager";
 
 ...
 
@@ -167,7 +167,7 @@ ReactDOM.render(
 通过呈现应用程 `index.js` 序 `App.js`调用，此处以简化版本显示以专注于重要内容。
 
 ```
-import {Page, withModel } from '@adobe/cq-react-editable-components';
+import {Page, withModel } from '@adobe/aem-react-editable-components';
 
 ...
 
@@ -182,10 +182,10 @@ export default withModel(App);
 
 ### Page.js {#page-js}
 
-通过呈现页面， `App.js` 在简 `Page.js` 化版本中列出的调用。
+通过呈现页面， `App.js` 以简 `Page.js` 化版本列出的调用。
 
 ```
-import {Page, MapTo, withComponentMappingContext } from "@adobe/cq-react-editable-components";
+import {Page, MapTo, withComponentMappingContext } from "@adobe/aem-react-editable-components";
 
 ...
 
@@ -206,7 +206,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 ```
 import React, {Component} from 'react';
-import {MapTo} from '@adobe/cq-react-editable-components';
+import {MapTo} from '@adobe/aem-react-editable-components';
 
 require('./Image.css');
 
@@ -249,7 +249,7 @@ AEM中SPA的核心思想是将SPA组件映射到AEM组件，并在内容被修�
 
 ```
 import React, { Component } from 'react';
-import { MapTo } from '@cq/cq-react-editable-components';
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 ...
 

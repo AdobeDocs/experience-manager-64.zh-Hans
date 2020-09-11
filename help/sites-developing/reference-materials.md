@@ -11,7 +11,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
-source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 4%
@@ -39,10 +39,10 @@ AEM提供了多个用于开发应用程序的API。 以下列表提供AEM支持�
 
 AEM单页应用程序(SPA)编辑器SDK框架JavaScript API参考：
 
-* [组件映射](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
-* [页面模型管理器](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [反应可编辑的组件](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
-* [角度可编辑组件](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
+* [组件映射](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
+* [页面模型管理器](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [反应可编辑的组件](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [角度可编辑组件](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 AEM投放和内容管理API:
 

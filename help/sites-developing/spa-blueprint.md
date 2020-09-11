@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '2124'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 它代表SPA抽象了表示实际内容结构的JSON结构的检索和管理。 它还负责与SPA同步，以告知它何时必须重新呈现其组件。
 
-请参阅NPM [包@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
+请参阅NPM [包@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 初始化应 `PageModelManager`用程序时，库首先加载提供的应用程序根模型（通过参数、元属性或当前URL）。 如果库标识当前页面的模型不是其获取的根模型的一部分，并将其作为子页面的模型包含在其中。
 
@@ -99,14 +99,14 @@ SPA组件必须与页面模型同步，并随其内容的任何相应更改进�
 
 为了促进库的互操作性，Adobe建议特定框架的模块捆绑以下库。 如果需要，该层可以在将底层API公开到项目之前封装和调整它们。
 
-* [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+* [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### 实施 {#implementations}
 
 #### 反应 {#react}
 
-npm模块： [@adobe/cq-react-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+npm模块： [@adobe/aem-react-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### 角度 {#angular}
 
@@ -169,7 +169,7 @@ npm模块：即将推出
 * `gridClassNames:` 为响应式网格提供的类名
 * `columnClassNames:` 为响应式列提供的类名
 
-另请参阅npm资 [源@adobe/cq-react-editable-components响应式gridjsx](https://www.npmjs.com/package/@adobe/cq-react-editable-components#srccomponentsresponsivegridjsx)
+另请参阅npm资 [源@adobe/aem-react-editable-components响应式gridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### 响应网格占位符 {#placeholder-of-the-reponsive-grid}
 

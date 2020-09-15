@@ -4,9 +4,9 @@ description: 特定于Adobe Experience Manager6.4累积修复包的发行说明�
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5989421ee1207880462fd1eaefc1a9714061307e
+source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3402'
 ht-degree: 13%
 
 ---
@@ -361,7 +361,7 @@ For information about installing the cumulative installer for AEM Forms JEE and 
 
 ### Uber Jar {#uber-jar}
 
-The Uber Jar for AEM 6.4.8.2 is available in the [Adobe Public Maven repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
+The Uber Jar for AEM 6.4.8.2 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
 
 To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](../sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -373,6 +373,10 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
       <scope>provided</scope>
 </dependency>
 ```
+
+>[!NOTE]
+>
+>从此版本开始，UberJar和其他相关对象可在Maven Central存储库中使用，而不是Adobe公共Maven存储库(repo.adobe.com)。 主UberJar文件已重命名为 `uber-jar-<version>.jar`。 因此，标签没 `classifier`有 `apis` 任何值（作为值） `dependency` 。
 
 ## 已移除/已弃用功能 {#removed-deprecated-features}
 

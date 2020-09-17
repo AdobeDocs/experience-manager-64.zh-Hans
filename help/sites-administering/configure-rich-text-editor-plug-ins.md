@@ -3,9 +3,9 @@ title: 配置富文本编辑器插件
 description: 了解如何配置AEM富文本编辑器插件以启用各种功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 2236d029dc463930e6bbdc1e1aed89e761f0cd89
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4204'
 ht-degree: 3%
 
 ---
@@ -706,7 +706,7 @@ RTE允许作者撤消或重做上次所做的几项编辑。 默认情况下，5
       * **名称** `cssExternal`
       * **类型** `String`
       * **值** CSS类的名称（没有前面的“.”）; for example, `cssClass` instead of `.cssClass`)
-   * 有效协议 **的阵列** (包括https://、https:// file://、mailto：等)
+   * 有效协议 **的数组**。 支持的协议 `http://`有 `https://`、 `file://`和 `mailto:`。
 
       * **名称** `protocols`
       * **类型** `String[]`

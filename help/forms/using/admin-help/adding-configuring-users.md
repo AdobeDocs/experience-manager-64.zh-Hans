@@ -8,7 +8,7 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
@@ -24,8 +24,7 @@ ht-degree: 0%
 
 在创建用户时，可以将用户添加到用户组并为其分配角色。
 
-1. 在管理控制台中，单 **[!UICONTROL 击“设置”>“用户管理”>“用户和用户组]**”，然后单 **[!UICONTROL 击“新建用户”]**。
-.
+1. 在管理控制台中，单 **[!UICONTROL 击“设置”>“用户管理”>“用户和用户组]**”，然后单 **[!UICONTROL 击“新建用户”]**。.
 1. 在“ **[!UICONTROL 常规设置]**”下，根据需要提供信息，然后单击“下 **[!UICONTROL 一步”]**。 有关设置的详细信息，请参 [阅用户设置](adding-configuring-users.md#user-settings)。
 1. （可选）要将用户添加到用户组，请单击“查 **[!UICONTROL 找用户组]**”，然后执行以下任务:
 
@@ -72,7 +71,7 @@ ht-degree: 0%
 
 **区域设置：** 用户的ISO区域设置
 
-**业务日历密钥：** 允许您根据此设置的值将业务日历映射到用户。 业务日历定义业务日和非业务日。 AEM表单在计算提醒、截止日期和升级等事件的未来日期和时间时，可以使用业务日历。 您为用户分配业务日历密钥的方式取决于您使用的是企业域、本地域还是混合域。 (请参 [阅添加域](/help/forms/using/admin-help/adding-domains.md#adding-domains)。)
+**业务日历密钥：** 允许您根据此设置的值将业务日历映射到用户。 业务日历定义业务日和非业务日。 AEM表单在计算提醒、截止日期和升级等事件的未来日期和时间时可以使用业务日历。 您为用户分配业务日历密钥的方式取决于您使用的是企业域、本地域还是混合域。 (请参 [阅添加域](/help/forms/using/admin-help/adding-domains.md#adding-domains)。)
 
 如果您使用的是本地域或混合域，则有关用户的信息仅存储在用户管理数据库中。 对于这些用户，将“业务日历密钥”设置为字符串。 然后，在表单工作流中将业务日历键（字符串）映射到业务日历。
 
@@ -136,7 +135,7 @@ AEM表单无法区分具有相同用户ID和密码但属于不同域的用户帐
    >
    >无法将本地用户添加到目录组。 但是，可以将目录用户添加到本地组。
 
-   * 要将用户从组中删除，请选中该组的复选框，单击“ **[!UICONTROL 删除]**”，然后单击“ **[!UICONTROL 保存]**”。
+   * 要将用户从用户组中删除，请选中该用户组的复选框，单击“ **[!UICONTROL 删除]**”，然后单击“ **[!UICONTROL 保存]**”。
 
 
 1. 要编辑用户的角色，请单击“角色 **[!UICONTROL 分配”选项]** 卡，然后执行以下任务:
@@ -155,7 +154,7 @@ AEM表单无法区分具有相同用户ID和密码但属于不同域的用户帐
    * 在“入 **[!UICONTROL 列表]**”中，选 **[!UICONTROL 择用户]**。
    * 选择域，选择要显示的项目数，然后单击“查 **[!UICONTROL 找”]**。
 
-1. 选中用户对应的复选框，单击“删 **[!UICONTROL 除]**”，然后单击 **[!UICONTROL “确定]**”。
+1. 选中用户对应的复选框，单击“删 **[!UICONTROL 除]**”，然后单击 **[!UICONTROL “确定”]**。
 
 >[!NOTE]
 >
@@ -168,7 +167,7 @@ AEM表单无法区分具有相同用户ID和密码但属于不同域的用户帐
 * 通信管理解决方案
 * AEM forms Workspace
 
-   ***注&#x200B;**: Flex工作区已弃用于AEM表单发布。*
+   ***注&#x200B;**:Flex工作区已弃用于AEM表单发布。*
 
 * 表单管理器
 * 进程报告

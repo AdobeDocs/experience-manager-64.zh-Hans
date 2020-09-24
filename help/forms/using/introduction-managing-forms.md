@@ -6,10 +6,10 @@ seo-description: AEM Forms提供管理自适应Forms和相关资产的工具。 
 uuid: 8a9fe83a-e9dc-410e-9bae-eca936c6eb8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
+topic-tags: forms-manager, introduction
 discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 translation-type: tm+mt
-source-git-commit: 1a671421c208d8b1b446765b9302877506dbddc2
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Forms和文档提供多种选项，用于创建交互式通信、自适应表单
 
 创建按钮是创建或上传AEM Forms资产的过程的起点。 它为您提供创建以下内容的选项：
 
-* **交互通信**: 交互通信是基于HTML的个性化、交互性和设备友好型数字通信、声明或文档。 交互式通信本质上是响应式的，并根据用户设备和设置自动更改布局和设计。 有关详细信息，请参 [阅交互式通信概述](/help/forms/using/interactive-communications-overview.md)。
+* **交互通信**:交互通信是基于HTML的个性化、交互性和设备友好型数字通信、声明或文档。 交互式通信本质上是响应式的，并根据用户设备和设置自动更改布局和设计。 有关详细信息，请参 [阅交互式通信概述](/help/forms/using/interactive-communications-overview.md)。
 
 * **自适应表单：** 自适应表单是一种引人入胜的响应式表单。 您可以根据用户响应、设备或工作环境，添加或删除表单部分，从而创作自适应表单以动态适应用户输入。 自适 [应表单创作介绍文章](/help/forms/using/introduction-forms-authoring.md) ，提供有关自适应表单的详细信息。
 
@@ -108,7 +108,7 @@ AEM“工具”面板包含各种组件的工具。 要导航到特定于AEM For
 
 ## 用户界面的常用元素 {#commonelements}
 
-* **左边栏：** 单击左边栏图标左边栏 ![可显示](assets/railleftpng.png) “AEM Forms”的“时间轴”和“引用”功能。
+* **左边栏：** 您可以单击左边栏图标 ![栏左边](assets/railleftpng.png) ，以显示AEM Forms的时间轴和引用功能。
 
    * **时间轴：** 您可以在时间轴中添加和视图可供审核的资产评论。 有关详细说明，请参 [阅创建和管理表单中资产的审阅](/help/forms/using/create-reviews-forms.md)。
    * **引用：** AEM Forms资产可用于多个AEM Forms资产。 例如，文档片段可以用于多个字母。 引用是指选定资产所使用的资产列表（其他表单或资源），也是选定资产所使用的其他资产的列表。
@@ -116,12 +116,12 @@ AEM“工具”面板包含各种组件的工具。 要导航到特定于AEM For
 * **痕迹导航：** 痕迹导航表示当前控制台或文件夹的标题。 您可以单击痕迹导航选项，在层次结构中较高的文件夹级别之间导航。
 * **视图切换器：** 您可以单击视图切换器图标 ![视图列表](assets/viewlist.png)![或视图卡](assets/viewcard.png) ，在列表和卡视图之间快速切换。 有关通用用户界面组件的详细信息，请参 [阅使用作者环境](/help/sites-authoring/basic-handling.md)。
 * **搜索：** 搜索选项 ![搜索](assets/search.png) ，可快速查找并跳转到所需的内容和工具。 键入内容或产品功能的名称并从建议中进行选择，例如，键入“文档”以快速查找并导航到Forms和文档或文档片段控制台。 有关搜索的详细信息，请参阅AEM 6.2搜 [索文](/help/sites-authoring/search.md) 章
-* **操作工具栏**: 选择资产时，操作工具栏会显示在资产列表上方。 它包含选定资产的所有管理工具。 您可以将鼠标悬停在工具图标上，以视图描述其功能的工具提示
+* **操作工具栏**:选择资产时，操作工具栏会显示在资产列表上方。 它包含选定资产的所有管理工具。 您可以将鼠标悬停在工具图标上，以视图描述其功能的工具提示
 
 >[!NOTE]
 >
 >当用户执行任何Forms和文档控制台的搜索时，边栏仅包含 **过滤器和选项**。 您可以使用过滤器和选项执行高级搜索。
 
-* **操作工具栏**: 选择资产时，操作工具栏会显示在资产列表上方。 它包含选定资产的所有管理工具。 您可以将鼠标悬停在工具图标上，以视图描述其功能的工具提示
+* **操作工具栏**:选择资产时，操作工具栏会显示在资产列表上方。 它包含选定资产的所有管理工具。 您可以将鼠标悬停在工具图标上，以视图描述其功能的工具提示
 
 ![自适应表单的操作工具栏](assets/action-tool-bar.png)

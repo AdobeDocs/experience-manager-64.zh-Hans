@@ -6,10 +6,10 @@ seo-description: 'AEM Forms提供了API，您可以使用它查询表单门户�
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: developer-reference
+topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 5%
@@ -95,7 +95,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr> 
   <tr> 
    <td><code>cutPoints</code> <br /> （可选）</td> 
-   <td>指定要包含在结果中的表单属性的逗号分隔列表。 默认属性为：<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code> <code>owner</code></td> 
+   <td>指定要包含在结果中的表单属性的逗号分隔列表。 默认属性为：<br /><code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code> <code>owner</code></td> 
   </tr> 
   <tr> 
    <td><code>search</code> <br /> （可选）</td> 

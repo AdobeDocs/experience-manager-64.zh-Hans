@@ -1,16 +1,16 @@
 ---
-title: '"Microsoft SQL Server数据库： 微调配置”'
-seo-title: '"Microsoft SQL Server数据库： 微调配置”'
+title: '"Microsoft SQL Server数据库：微调配置”'
+seo-title: '"Microsoft SQL Server数据库：微调配置”'
 description: 了解如何微调Microsoft SQL Server数据库的配置。
 seo-description: 了解如何微调Microsoft SQL Server数据库的配置。
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS, SG_AEMFORMS
 discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Microsoft SQL Server数据库： 微调配置 {#microsoft-sql-server-database-fine-tuning-the-configuration}
+# Microsoft SQL Server数据库：微调配置 {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
 使用Microsoft SQL Server时，应更改默认配置设置。 在Oracle Enterprise Manager中右键单击本地服务器以访问属性对话框。
 

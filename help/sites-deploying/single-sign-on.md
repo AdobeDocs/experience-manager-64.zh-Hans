@@ -7,10 +7,10 @@ uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: Security
+topic-tags: Security, configuring
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -45,26 +45,26 @@ SSO身份验证处理程序服务( `com.adobe.granite.auth.sso.impl.SsoAuthentic
 
    例如，对于NTLM集：
 
-   * **路径：** 根据需要； 例如， `/`
+   * **路径：** 根据需要；例如， `/`
    * **标题名称**: `LOGON_USER`
    * **ID格式**: `^<DOMAIN>\\(.+)$`
 
       其中 `<*DOMAIN*>` 将替换为您自己的域名。
    对于CoSign:
 
-   * **路径：** 根据需要； 例如， `/`
-   * **标题名称**: remote_user
+   * **路径：** 根据需要；例如， `/`
+   * **标题名称**:remote_user
    * **ID格式：** 原样
 
    对于SiteMinder:
 
-   * **路径：** 根据需要； 例如， `/`
+   * **路径：** 根据需要；例如， `/`
    * **标题名称：** SM_USER
-   * **ID格式**: 原样
+   * **ID格式**:原样
 
 
 
-1. 确认单点登录是否可以根据需要工作； 包括授权。
+1. 确认单点登录是否可以根据需要工作；包括授权。
 
 >[!CAUTION]
 >
@@ -109,7 +109,7 @@ SSO身份验证处理程序服务( `com.adobe.granite.auth.sso.impl.SsoAuthentic
 
 
 
-您可以使用Felix控制台的Authenticator选项，查看哪个身份验证处理程序正在应用于内容 **树的** 任何部分； 例如：
+您可以使用Felix控制台的Authenticator选项，查看哪个身份验证处理程序正在应用于内容 **树的** 任何部分；例如：
 
 `http://localhost:4502/system/console/slingauth`
 

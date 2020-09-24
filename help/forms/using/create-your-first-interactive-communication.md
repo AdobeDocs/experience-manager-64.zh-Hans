@@ -6,10 +6,10 @@ seo-description: 了解如何创建您的第一个交互式通信。
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 0%
@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# 教程： 创建您的第一个交互式通信 {#tutorial-create-your-first-interactive-communication}
+# 教程：创建您的第一个交互式通信 {#tutorial-create-your-first-interactive-communication}
 
 了解如何创建您的第一个交互式通信。
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
-交互式通信集中化和管理安全、个性化和交互式通信(如业务通信、文档、声明、营销邮件、帐单和欢迎套件)的创建、组合和投放。 交互式通信可以使用两种渠道交付： 印刷和Web。 打印渠道用于创建PDF和纸张通信，而Web渠道用于提供在线体验。
+交互式通信集中化和管理安全、个性化和交互式通信(如业务通信、文档、声明、营销邮件、帐单和欢迎套件)的创建、组合和投放。 交互式通信可以使用两种渠道交付：印刷和Web。 打印渠道用于创建PDF和纸张通信，而Web渠道用于提供在线体验。
 
 本教程提供了用于创建交互式通信的端到端框架。 本教程分为一个用例和多个指南。 每个指南都可以帮助您创建用作构件块的功能，以创建交互式通信。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 * 设置MYSQL数据库
 * 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于MySQL数据库，并使用Oracle的MySQL [JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
-## 第1步： 规划交互式通信 {#step-plan-the-interactive-communication}
+## 第1步：规划交互式通信 {#step-plan-the-interactive-communication}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-表单数据模型允许您将交互式通信连接到不同的数据源。 例如，AEM用户用户档案、RESTful Web服务、基于SOAP的Web服务、OData服务和关系型数据库。 表单模式模型是业务实体和在连接数据源中可用服务的统一数据表示。 您可以将表单数据模型与交互式通信结合使用，从连接的数据源检索数据。 有关表单数据模型的详细信息，请参 [阅AEM Forms数据集成](/help/forms/using/data-integration.md)。
+表单数据模型允许您将交互式通信连接到不同的数据源。 例如，AEM用户用户档案、RESTful Web服务、基于SOAP的Web服务、OData服务和关系型数据库。 表单模式模型是业务实体和在连接数据源中可用服务的统一数据表示。 您可以将表单数据模型与交互式通信结合使用，从连接的数据源检索数据。 有关表单数据模型的更多信息，请参 [阅AEM Forms数据集成](/help/forms/using/data-integration.md)。
 
 **目标：**
 
@@ -91,11 +91,11 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model-tutorial.md)
 
-## 第3步： 创建文档片段 {#step-create-document-fragments}
+## 第3步：创建文档片段 {#step-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-文档片段是用于组成交互通信的通信的可重用组件。 文档片段的类型有： 文本、列表和条件。
+文档片段是用于组成交互通信的通信的可重用组件。 文档片段的类型有：文本、列表和条件。
 
 **目标：**
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
-## 第4步： 创建模板 {#step-create-templates}
+## 第4步：创建模板 {#step-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -123,13 +123,13 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
-## 第5步： 创建交互式通信 {#step-create-an-interactive-communication}
+## 第5步：创建交互式通信 {#step-create-an-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
 为Web版本创建表单数据模型、文档片段和模板等所有构建基块后，您就可以开始创建交互式通信。
 
-交互式通信可通过两种渠道提供： 印刷和Web。 您还可以创建交互式通信，将打印渠道作为主控。 Web渠道的打印为主控选项可确保Web渠道的内容、继承和数据绑定是从打印渠道派生的。
+交互式通信可通过两种渠道提供：印刷和Web。 您还可以创建交互式通信，将打印渠道作为主控。 Web渠道的打印为主控选项可确保Web渠道的内容、继承和数据绑定是从打印渠道派生的。
 
 **目标：**
 
@@ -142,7 +142,7 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-interactive-communication-tutorial.md)
 
-## 第6步： 测试交互式通信 {#step-test-your-interactive-communication}
+## 第6步：测试交互式通信 {#step-test-your-interactive-communication}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
@@ -154,7 +154,7 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 * 创建测试用例
 * 运行测试用例
 
-## 第7步： 发布交互通信 {#step-publish-your-interactive-communication}
+## 第7步：发布交互通信 {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

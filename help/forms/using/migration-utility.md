@@ -5,13 +5,13 @@ description: 迁移实用程序允许您将AEM Forms资产和文档从AEM 6.3For
 seo-description: 迁移实用程序允许您将AEM Forms资产和文档从AEM 6.3Forms或先前版本迁移到AEM 6.4Forms。
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
-topic-tags: installing
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 1%
@@ -53,7 +53,7 @@ ht-degree: 1%
 对于通信管理资产：
 
 * 对于从前一个平台导入的资产，将添加一个属性： **fd:version=1.0**。
-* 自AEM 6.1Forms以来，注释不可立即使用。 以前添加的注释可在资产中使用，但不会自动在界面上显示。 您需要在AEM Forms用户界面中自定义extendedProperties属性，以使注释可见。
+* 自AEM 6.1Forms以来，注释不会开箱即用。 以前添加的注释可在资产中使用，但不会自动在界面上显示。 您需要在AEM Forms用户界面中自定义extendedProperties属性，以使注释可见。
 * 在LiveCycleES4等早期版本中，文本使用FlexRichTextEditor进行编辑，但自AEM 6.1Forms以来，使用HTML编辑器。 由于字体的呈现和外观、字体大小和字体边距可能与作者用户界面中的先前版本不同。 但是，这些字母在呈现时看起来是一样的。
 * 文本模块中的列表得到了改进，现在呈现方式有所不同。 可能存在视觉差异。 我们建议您渲染并查看在文本模块中使用列表的字母。
 * 由于图像内容模块已转换为DAM资产，并且布局和片段在迁移过程中会添加到表单，因此这些模块的“更新者”属性会更改为管理员。
@@ -132,31 +132,31 @@ ht-degree: 1%
 
    * 表单数据模型云服务
 
-      * 源路径： /etc/cloudservices/fdm
-      * 目标路径： /conf/global/settings/cloudconfigs/fdm
+      * 源路径：/etc/cloudservices/fdm
+      * 目标路径：/conf/global/settings/cloudconfigs/fdm
    * Recaptcha
 
-      * 源路径： /etc/cloudservices/recaptcha
-      * 目标路径： /conf/global/settings/cloudconfigs/recaptcha
+      * 源路径：/etc/cloudservices/recaptcha
+      * 目标路径：/conf/global/settings/cloudconfigs/recaptcha
    * Adobe Sign
 
-      * 源路径： /etc/cloudservices/echosign
-      * 目标路径： /conf/global/settings/cloudconfigs/echosign
+      * 源路径：/etc/cloudservices/echosign
+      * 目标路径：/conf/global/settings/cloudconfigs/echosign
    * Typekit云服务
 
-      * 源路径： /etc/cloudservices/typekit
-      * 目标路径： /conf/global/settings/cloudconfigs/typekit
+      * 源路径：/etc/cloudservices/typekit
+      * 目标路径：/conf/global/settings/cloudconfigs/typekit
 
    迁移过程进行时，浏览器窗口将显示以下内容：
 
-   * 资产更新时： 资产已成功更新。
-   * 迁移完成后： 已完成资产迁移。
+   * 资产更新时：资产已成功更新。
+   * 迁移完成后：已完成资产迁移。
 
    执行迁移实用程序后，将执行以下操作：
 
-   * **向资产中添加标记**: 添加标签“Corresponce Management: 迁移资产”/“自适应Forms: 迁移资产”。 到迁移的资产，以便用户能够识别迁移的资产。 运行迁移实用程序时，系统中的所有现有资产都标记为已迁移。
-   * **生成标记**: 以前系统中存在的类别和子类别将创建为标记，然后这些标记与AEM中的相关对应管理资产相关联。 例如，字母模板的类别（声明）和子类别（声明）会生成为标记。
-   * **将布局和布局片段移动到AEM 6.4Forms用户界面**: 如果从6.2升级到6.4，则布局模板和布局片段将作为表单添加到AEM Forms6.4用户界面部分。
+   * **向资产中添加标记**:添加标签“Corresponce Management:迁移资产”/“自适应Forms:迁移资产”。 到迁移的资产，以便用户能够识别迁移的资产。 运行迁移实用程序时，系统中的所有现有资产都标记为已迁移。
+   * **生成标记**:以前系统中存在的类别和子类别将创建为标记，然后这些标记与AEM中的相关对应管理资产相关联。 例如，字母模板的类别（声明）和子类别（声明）会生成为标记。
+   * **将布局和布局片段移动到AEM 6.4Forms用户界面**:如果从6.2升级到6.4，则布局模板和布局片段将作为表单添加到AEM Forms6.4用户界面部分。
 
    >[!NOTE]
    >

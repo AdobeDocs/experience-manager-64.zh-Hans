@@ -5,11 +5,11 @@ description: 自适应表单可以使用XML模式作为表单模型，从而使�
 seo-description: 自适应表单可以使用XML模式作为表单模型，从而使您能够利用现有的XSD模板创建自适应表单。 可以将模式元素从XSD拖放到自适应表单上。
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 5%
@@ -280,7 +280,7 @@ XML元素与自适应表单组件的映射如下所示：
   <tr> 
    <td><p><code>pattern</code></p> </td> 
    <td><p>字符串</p> </td> 
-   <td><p>指定字符的顺序。 如果字符符合指定的模式，则组件接受字符。</p> <p>模式属性映射到相应自适应表单组件的验证模式。</p> </td> 
+   <td><p>指定字符的顺序。 如果字符符合指定的模式，则组件接受这些字符。</p> <p>模式属性映射到相应自适应表单组件的验证模式。</p> </td> 
    <td> 
     <ul> 
      <li>映射到XSD模式的所有自适应表单组件 </li> 

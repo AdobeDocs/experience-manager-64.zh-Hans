@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 0%
@@ -111,7 +111,7 @@ See [Installing and configuring AEM 3D](/help/assets/install-config-3d.md).
 * 此版本的AEM 3D对使用Adobe Dimension创建的。dn文件的支持有限。
 * 在上传处理过程中，AEM利用基于云的、由Adobe托管的转换服务从本机。dn文件创建glTF再现。 需要访问转换服务并选择AmazonAWS端点。
 * 提供了新的glTF查看器，它支持在AEM Assets和站点／屏幕中查看Dn资产。 尚不支持查看器中的阶段。
-* Dn模型可嵌入显示的IBL灯和背景（如果有）。 或者，查看器应用默认照明或默认背景颜色，或两者。
+* Dn模型可嵌入显示的IBL灯和背景（如果存在）。 或者，查看器应用默认照明或默认背景颜色，或两者。
 * Dn资产的高质量渲染尚不可用。
 * 依赖项（如纹理映射）嵌入在Dn资产中，无法在AEM中显式管理。
 

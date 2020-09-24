@@ -7,10 +7,10 @@ uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 服务容器提供以下功能：
 
-* 允许使用不同方法调用AEM Forms服务。 可以通过设置端点来配置服务，以便使用所有方法调用它： 远程处理、Java API、Web服务和REST。 (请参 [阅以编程方式管理端点](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints)。)
+* 允许使用不同方法调用AEM Forms服务。 可以通过设置端点来配置服务，以便使用所有方法调用它：远程处理、Java API、Web服务和REST。 (请参 [阅以编程方式管理端点](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints)。)
 * 将消息转换为称为调用请求的标准化格式。 从客户机应用程序（或其他服务）向位于服务容器中的服务发送调用请求。 调用请求包含诸如要调用的服务的名称和执行操作所需的数据值等信息。 许多服务需要文档才能执行操作。 因此，调用请求通常包含文档，该数据可以是PDF数据、XDP数据、XML数据等。
 * 将调用请求路由到相应的服务（要调用的服务的名称是调用请求的一部分）。
 * 执行任务，如确定调用者是否具有调用指定服务操作的权限。 调用请求必须包含有效的AEM表单用户名和密码。
@@ -68,7 +68,7 @@ ht-degree: 0%
 
    如果您使用监视文件夹调用服务，则当您将文件放在已配置的监视文件夹中时，将发送调用请求。 如果您使用电子邮件调用服务，则当电子邮件到达配置的收件箱中时，将向服务发送调用请求。
 
-   一旦执行操作，服务容器会发回调用响应。 调用响应包含操作结果等信息。 例如，如果操作修改PDF文档，则调用响应将包含修改后的PDF文档。 如果操作失败，则调用响应包含错误消息。
+   服务容器在执行操作后发回调用响应。 调用响应包含操作结果等信息。 例如，如果操作修改PDF文档，则调用响应将包含修改后的PDF文档。 如果操作失败，则调用响应包含错误消息。
 
    可以以发送调用请求的相同方式检索调用响应。 即，如果调用请求是使用Java API发送的，则可以使用Java API检索调用响应。 例如，假定某个操作修改PDF文档。 您可以通过获取调用该服务的Java方法的返回值来检索修改后的PDF文档。
 

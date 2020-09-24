@@ -6,10 +6,10 @@ seo-description: AEM Inbox允许您通过提交应用程序和管理工作流来
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: publish
+topic-tags: document_services, publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 转到AEM收件箱 `https://[server]:[port]/aem/inbox`。
 1. 在收件箱UI中，点按创 **[!UICONTROL 建>应用程序]**。 此时将显示“选择应用程序”页。
-1. 选择一个应用程序，然后单击 **[!UICONTROL 创建]**。 此时将打开与应用程序关联的自适应表单。 填写表单并点按 **[!UICONTROL 提交]**。 它启动关联的工作流并在被分派人的收件箱中创建任务。
+1. 选择一个应用程序，然后单 **[!UICONTROL 击创建]**。 此时将打开与应用程序关联的自适应表单。 填写表单并点按 **[!UICONTROL 提交]**。 它启动关联的工作流并在被分派人的收件箱中创建任务。
 
 ## 管理任务 {#manage-tasks}
 

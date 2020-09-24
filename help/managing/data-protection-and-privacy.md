@@ -1,16 +1,16 @@
 ---
 title: 数据保护和数据隐私法规-Adobe Experience Manager就绪性
-seo-title: Adobe Experience Manager为数据保护和数据隐私法规做好准备； 如GDPR、CCPA等
-description: '了解Adobe Experience Manager对各种数据保护和数据隐私法规的支持； 包括欧盟一般数据保护规定(GDPR)、加利福尼亚消费者隐私法，以及实施新AEM项目时如何遵守这些规定。 '
-seo-description: '了解Adobe Experience Manager对各种数据保护和数据隐私法规的支持； 包括欧盟一般数据保护规定(GDPR)、加利福尼亚消费者隐私法，以及实施新AEM项目时如何遵守这些规定。 '
+seo-title: Adobe Experience Manager为数据保护和数据隐私法规做好准备；如GDPR、CCPA等
+description: '了解Adobe Experience Manager对各种数据保护和数据隐私法规的支持；包括欧盟一般数据保护规定(GDPR)、加利福尼亚消费者隐私法，以及实施新AEM项目时如何遵守这些规定。 '
+seo-description: '了解Adobe Experience Manager对各种数据保护和数据隐私法规的支持；包括欧盟一般数据保护规定(GDPR)、加利福尼亚消费者隐私法，以及实施新AEM项目时如何遵守这些规定。 '
 uuid: c443aa47-0766-4280-b0f2-b5b06534ffba
 contentOwner: aheimoz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
-topic-tags: grdp
+topic-tags: grdp, introduction
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 translation-type: tm+mt
-source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 1%
@@ -54,7 +54,7 @@ Adobe Experience Manager的实例及其上运行的应用程序由我们的客�
 
 本条例的主要规定是：
 
-1. 扩展了个人数据的定义，以包含所有唯一ID; 直接和间接可识别数据。
+1. 扩展了个人数据的定义，以包含所有唯一ID;直接和间接可识别数据。
 
 2. 加强同意要求。
 
@@ -68,9 +68,9 @@ Adobe Experience Manager:
 
    * 这有效地意味着客户管理法规角色，包括业务实体和服务提供商、数据管理者和数据处理者等。
 
-   * 如下图所示，Adobe Experience Platform Privacy Service不属于AEM的工作流程。
+   * 如下图所示，Adobe Experience Platform Privacy Service将不是AEM工作流程的一部分。
 
-* AEM包括客户隐私管理员和／或AEM管理员执行隐私法规请求的文档和过程； 手动或通过API（如果可用）。
+* AEM包括客户隐私管理员和／或AEM管理员执行隐私法规请求的文档和过程；手动或通过API（如果可用）。
 
 * 未添加新服务或UI。
 

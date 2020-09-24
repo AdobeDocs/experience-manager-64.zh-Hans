@@ -6,11 +6,11 @@ seo-description: 查找由Adobe工程和咨询团队编译的最佳实践，帮�
 uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 translation-type: tm+mt
-source-git-commit: c1cf6fa92c923cce18000c8dd82b2c17d6783ee5
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '859'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 * 最佳实践是基 **于语言的结构** ，顶级创作和国家站点之间不超过3个级别。
 * 使用遵循W3C标准的语言／国家/ **地区站点命名约定**。
 * 确定如何按地区和国家／地区分发内容。 请考虑哪些国家／地区共享语言。 建议创建语言母版，即未激活页面的层，在该层，可以审阅和修改译文内容，然后将其推送或拉至共享该语言的国家站点。
-* 创建语言母版有两种方法： 使用语言副本，以及使用MSM/Live Copy。
+* 创建语言母版有两种方法：使用语言副本，以及使用MSM/Live Copy。
 
    * 语言复制方法是AEM现成翻译集成框架使用的方法，因此它是最简单的入门方法。 该框架提供用户界面，使内容更改最初能够容易地从主语言（例如英语）主控传播和翻译到语言母版。 但是，随着项目的发展，工作流自动化对于管理越来越多的页面和／或语言的翻译变得越来越必要。
    * 对于站点更大、更复杂的高级用例，MSM/Live Copy方法可能是一种替代方法。 开始需要强大的管理和工作流自动化来处理英语和语言大师之间复杂的继承关系，并降低覆盖现有翻译的风险。 这种处理可以在一些翻译连接器的帮助下完成。 请参 [阅MSM和多语言站点](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites) ，以了解更多信息。

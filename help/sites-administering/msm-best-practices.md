@@ -7,10 +7,10 @@ uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: best-practices
+topic-tags: null
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 1%
@@ -60,7 +60,7 @@ MSM是一个可配置的框架，用于自动进行内容部署。 实施通常�
 使用Blueprint配置的额外好处是：
 
 * 允许作者在Blueprint上使 **用** “转出”选项——将修改（显式）推送到继承自此Blueprint的Live Copy。
-* 允许作者使用创 **建站点**; 这允许用户轻松选择语言并配置Live Copy的结构。
+* 允许作者使用创 **建站点**;这允许用户轻松选择语言并配置Live Copy的结构。
 * 为与Blueprint有关系的Live Copy定义默认转出配置。
 
 如果未引用Blueprint配置，则只能从Live Copy本身启动转出，实质上是从源中提取内容。
@@ -94,7 +94,7 @@ MSM是一个可配置的框架，用于自动进行内容部署。 实施通常�
 
    这是一种更专业的方法，主要用于创建具有多语言结构的网站。
 
-在创建站点时，请注意以下几点：
+以下是创建站点时要注意的几个注意事项：
 
 * 要创建新站点，您需要Blueprint [配置](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations)。
 * 要允许选择要在新站点中创建的语言路径，蓝图（源）中必须存在相应的语言根。
@@ -171,7 +171,7 @@ MSM可通过两种方式协助创建多语言网站：
 
 MSM转出配置可高度自定义。 您应该知道，自动推广可能会产生深远的影响。 作为最佳实践，您应在 *之前* ，非常谨慎地进行规划，例如：
 
-* 自动推广； 例如，使用 [onModify触发器](#onmodify),
+* 自动推广；例如，使用 [onModify触发器](#onmodify),
 * 自定义 [节点类型／属性](#node-types-properties),
 * 开始后续工作流,
 * 和／或激活内容作为推广的一部分。

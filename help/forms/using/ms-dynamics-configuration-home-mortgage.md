@@ -5,10 +5,10 @@ description: 了解如何通过自适应表单利用We.Finance Reference网站�
 seo-description: 了解如何通过自适应表单利用We.Finance Reference网站的家庭抵押工作流程的Microsoft® Dynamics 365服务
 uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: Configuration
+topic-tags: develop, Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%
@@ -75,5 +75,5 @@ AEM Forms提供云服务，将Dynamics 365与 [Forms数据集成](/help/forms/us
 
       `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. 将包导入Microsoft® Dynamics实例。 在Microsoft® Dynamics实例中，转至“销 **售** ”>“ **联系人** ”，然 **后点按导入数据**。
+   1. 将包导入您的Microsoft® Dynamics实例。 在Microsoft® Dynamics实例中，转至“销 **售** ”>“ **联系人** ”，然 **后点按导入数据**。
 

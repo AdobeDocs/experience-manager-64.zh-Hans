@@ -6,10 +6,10 @@ seo-description: 您可以在AEM站点页面中嵌入自适应表单。 用户�
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, author
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 translation-type: tm+mt
-source-git-commit: d6595efef33b3c296d427dcfac39c377bd42fc9f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -27,9 +27,9 @@ AEM Forms允许表单开发人员将自适应表单和交互式通信无缝嵌�
 
 在AEM Sites页面中，您可以使用以下方式添加自适应表单或交互式通信：
 
-* **[AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**容器组件“AEM Forms”提供了可添加到网站页面的组件。 AEM Forms容器组件允许您嵌入自适应表单和交互式通信。
+* **[AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**&#x200B;容器组件“AEM Forms”提供了可添加到网站页面的组件。 AEM Forms容器组件允许您嵌入自适应表单和交互式通信。
 
-* **[资产浏览](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**器您创建的所有表单和交互式通信均位于资产下。 您可以将表单作为资产拖放到页面上。
+* **[资产浏览](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**&#x200B;器您创建的所有表单和交互式通信均位于资产下。 您可以将表单作为资产拖放到页面上。
 
 ## 前提条件 {#prerequisites}
 
@@ -54,15 +54,15 @@ AEM Forms允许表单开发人员将自适应表单和交互式通信无缝嵌�
 1. 在“编辑AEM Forms容器”对话框中，指定以下内容。
 
    * **资产类型：** 选择要嵌入的资产类型。 选项包括自适应表单和交互式通信
-   * **资产路径**: 浏览并选择要嵌入的自适应表单或交互式通信。 如果您从资产浏览器中删除它，则会自动填充它。
-   * （仅限自适应表单） **帖子提交**: 选择要在提交表单时触发的操作。 您可以选择显示感谢信或感谢信页面。
+   * **资产路径**:浏览并选择要嵌入的自适应表单或交互式通信。 如果您从资产浏览器中删除它，则会自动填充它。
+   * （仅限自适应表单） **发布提交**:选择要在提交表单时触发的操作。 您可以选择显示感谢信或感谢信页面。
 
-      * **感谢信**: 使用富文本编辑器编写消息，以在提交表单时显示。 此选项仅在您选择显示感谢信时可用。
-      * **感谢页面**: 浏览并选择要在提交表单时显示的页面。 此选项仅在您选择显示感谢页面时可用。
-      * **提交时刷新页面**: 启用此项可刷新包含嵌入的自适应表单的页面以显示感谢页面。 否则，感谢页面将替换AEM Forms容器中的自适应表单，而不刷新页面。 此选项仅在您选择显示感谢页面时可用。
-   * **主题**: 选择一个主题，它为自适应表单或交互式通信的组件定义样式。 样式包括字体样式、背景颜色、尺寸和对齐方式等外观属性。
-   * **高度**: 指定容器高度。 将其留空可自动调整容器大小。
-   * **CSS客户端库**: 指定CSS客户端库的路径。
+      * **感谢信**:使用富文本编辑器编写消息，以在提交表单时显示。 此选项仅在您选择显示感谢信时可用。
+      * **感谢页面**:浏览并选择要在提交表单时显示的页面。 此选项仅在您选择显示感谢页面时可用。
+      * **提交时刷新页面**:启用此项可刷新包含嵌入的自适应表单的页面以显示感谢页面。 否则，感谢页面将替换AEM Forms容器中的自适应表单，而不刷新页面。 此选项仅在您选择显示感谢页面时可用。
+   * **主题**:选择一个主题，它为自适应表单或交互式通信的组件定义样式。 样式包括字体样式、背景颜色、尺寸和对齐方式等外观属性。
+   * **高度**:指定容器的高度。 将其留空可自动调整容器大小。
+   * **CSS客户端库**:指定CSS客户端库的路径。
 
 
 1. 保存设置。 自适应表单或交互式通信现在嵌入到页面中。

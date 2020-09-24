@@ -6,10 +6,10 @@ seo-description: 了解如何以自适应表单配置AEM CAPTCHA或Google reCAPT
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: author
+topic-tags: author, adaptive_forms
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -86,7 +86,7 @@ AEM Forms以自适应形式支持CAPTCHA。 您可以使用Google的reCAPTCHA服
 
    >[!NOTE]
    >
-   >不要从Captcha **[!UICONTROL 服务]** 下拉列表中选择Default，因为默认的AEM CAPTCHA服务已弃用。
+   >不要从Captcha **[!UICONTROL 服务]** (默认AEM CAPTCHA服务)下拉框中选择Default（默认），因为默认的CAPTCHA服务已弃用。
 
 1. 保存属性。
 

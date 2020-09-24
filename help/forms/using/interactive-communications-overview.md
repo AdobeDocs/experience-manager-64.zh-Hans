@@ -5,11 +5,11 @@ description: 本文包括概述、示例用例、创建工作流程以及交互�
 seo-description: 交互通信关键功能、示例用例、创建工作流程以及交互通信和通信管理之间的差异
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
+topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 5%

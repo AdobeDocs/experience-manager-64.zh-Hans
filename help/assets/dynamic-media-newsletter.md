@@ -3,10 +3,10 @@ description: '按体验联盟列出的动态媒体新闻快讯是每月新闻快
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 seo-description: 此一站式商店新闻快讯中提供相关知识构建资源，包括如何制作视频、解决方案概述，以及介绍一些主要功能，如图像预设、查看器预设、视频用户档案等。
 seo-title: 'Adobe动态媒体新闻快讯 '
-solution: Dynamic Media
+solution: Dynamic Media Classic
 title: Dynamic Media新闻快讯
 translation-type: tm+mt
-source-git-commit: 787fcf312eabcb44cfe114b5b3b80341fa295637
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Experience League的每月Dynamic Media Newsletter旨在帮助您快速掌握Dyn
 
    在此问题中：
 
-   * 参加新的Skill Builder网络研讨会并转型为Dynamic Media Classic专家。
+   * 参加新的Skill Builder网络研讨会，并转型为Dynamic Media Classic专家。
    * 了解在2020年Adobe峰会上Dynamic Media的位置。
    * 了解如何使用Dynamic Media的裁剪功能。
    * 充分利用免费审核，帮助您从Dynamic Media Classic获得更多价值。
@@ -74,7 +74,7 @@ Experience League的每月Dynamic Media Newsletter旨在帮助您快速掌握Dyn
    * 五个新的Skill Builder网络研讨会，用于提升您的Dynamic Media Classic技能。
    * 免费审核，帮助您从Dynamic Media Classic获得更多价值。
    * 我们的富媒体客户将迎来创纪录的假日购物季节。
-   * 您选择DAM（数字资产管理器）的必备指南，可满足您目前的需求，并为将来的富媒体新功能做好准备。
+   * 您选择DAM（数字资产管理器）的指南，可满足您目前的需求，并为您准备迎接未来富媒体的新增功能。
    * 会见数字媒体专家Mark Dean。
 
 * **[2019年11月，第11期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**
@@ -151,7 +151,7 @@ Experience League的每月Dynamic Media Newsletter旨在帮助您快速掌握Dyn
    * 在Experience League中观看关键操作方法视频。
    * 了解即将到来的Adobe内幕浏览。
    * 阅读由三部分组成的博客系列，更新您的富媒体战略。
-   * 了解AI驱动视频智能裁剪。
+   * 了解AI驱动的视频智能裁剪。
 
 * **[2019年4月，04期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 

@@ -5,12 +5,12 @@ description: 解释如何为自适应表单的记录文档(DoR)生成模板。
 seo-description: 解释如何为自适应表单的记录文档(DoR)生成模板。
 uuid: 6c0664a4-a2eb-4ec5-bad0-cf4e2f4fe83d
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
 noindex: true
 translation-type: tm+mt
-source-git-commit: 1e46cdf8f52426ec3bb1c0712355b7bedf270b13
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 3%
@@ -314,14 +314,14 @@ See [Document of Record Template Configuration](#document-of-record-template-con
 
 1. 根据您是选择默认模板还是自定义模板，以下部分属性或全部属性将显示在记录文档选项卡中。 请相应地指定以下各项：
 
-   * **徽标图像**: 您可以选择使用自适应表单中的徽标图像，从DAM中选择一个图像，或从计算机上传一个图像。
+   * **徽标图像**:您可以选择使用自适应表单中的徽标图像，从DAM中选择一个图像，或从计算机上传一个图像。
    * **表单标题**
    * **标题文本**
    * **免责声明标签**
    * **免责声明**
    * **免责声明文本**
-   * **重音颜色**: 标题文本和分隔线在文档或记录PDF中呈现的颜色
-   * **字体系列**: 记录PDF文档中文本的字体系列
+   * **重音颜色**:标题文本和分隔线在文档或记录PDF中呈现的颜色
+   * **字体系列**:记录PDF文档中文本的字体系列
    * **对于复选框和单选按钮组件，仅显示选定值**
    * **用于多个选定值的分隔符**
    * **包括未绑定到数据模型的表单对象**
@@ -368,7 +368,7 @@ See [Document of Record Template Configuration](#document-of-record-template-con
 
 **字段级别设置**
 
-* **从记录文档中排除**: 将属性设置为true将不包括记录文档中的字段。 这是名为的可脚本属性 `excludeFromDoR`。 其行为取决于隐藏 **的表单级别属性时** ，从DoR中排除字段。
+* **从记录文档中排除**:将属性设置为true将不包括记录文档中的字段。 这是名为的可脚本属性 `excludeFromDoR`。 其行为取决于隐藏 **的表单级别属性时** ，从DoR中排除字段。
 
 * **将面板显示为表：** 如果面板中的字段少于6个，则设置属性会将面板显示为记录文档中的表。 仅适用于面板。
 * **从记录文档中排除标题：** 设置属性时，将不包括面板／表的标题(从记录文档)。 仅适用于面板和表。

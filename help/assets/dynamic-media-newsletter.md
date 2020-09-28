@@ -3,10 +3,10 @@ description: '按体验联盟列出的动态媒体新闻快讯是每月新闻快
 keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 seo-description: 此一站式商店新闻快讯中提供相关知识构建资源，包括如何制作视频、解决方案概述，以及介绍一些主要功能，如图像预设、查看器预设、视频用户档案等。
 seo-title: 'Adobe动态媒体新闻快讯 '
-solution: Dynamic Media Classic
+solution: Dynamic Media
 title: Dynamic Media新闻快讯
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 8038ae762811bc376768be7fff143521629bc96a
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Experience League的每月Dynamic Media Newsletter旨在帮助您快速掌握Dyn
 
    在此问题中：
 
-   * 参加新的Skill Builder网络研讨会，并转型为Dynamic Media Classic专家。
+   * 参加新的Skill Builder网络研讨会并转型为Dynamic Media Classic专家。
    * 了解在2020年Adobe峰会上Dynamic Media的位置。
    * 了解如何使用Dynamic Media的裁剪功能。
    * 充分利用免费审核，帮助您从Dynamic Media Classic获得更多价值。

@@ -3,9 +3,9 @@ title: 通过DTM实现资产洞察
 description: 了解如何使用Adobe动态标签管理(DTM)启用资产分析。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 994dd56ce13b2d1f959e392e181d752e994bf198
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,11 @@ ht-degree: 0%
 
 # 通过DTM实现资产洞察 {#enabling-asset-insights-through-dtm}
 
-Adobe动态标签管理是一种激活数字营销工具的工具。 酒店免费提供给Adobe Analytics客户。
+Adobe动态标签管理是一种激活数字营销工具的工具。 酒店免费提供给Adobe Analytics客户。 您可以自定义跟踪代码，使第三方CMS解决方案能够使用资产分析，也可以使用DTM插入资产分析标记。 只支持并提供图像洞察。
 
-尽管您可以自定义跟踪代码以启用第三方CMS解决方案以使用资产分析，但Adobe建议您使用DTM插入资产分析标记。
+>[!CAUTION]
+>
+>AdobeDTM已弃用，支持Adobe Experience Platform Launch，并且很快将 [结束其使用](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建议您使 [用Launch进行资产分析](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)。
 
 执行以下步骤以通过DTM启用资产分析：
 
@@ -49,7 +51,6 @@ Adobe动态标签管理是一种激活数字营销工具的工具。 酒店免�
    >* 将删除对 `assetAnalytics.dispatcher.init()` 的呼叫。 一旦DTM的Adobe Analytics工具完成加载，该函数将被调用。
    >* 根据托管资产分析页面跟踪器(例如AEM、CDN等)的位置，脚本源的来源可能需要更改。
    >* 对于AEM托管的页面跟踪器，源应使用调度程序实例的主机名指向发布实例。
-
 
 
 1. 打开 [https://dtm.adobe.com](https://dtm.adobe.com)。 单击Web属性中的“概述”，然后单击“添加工具”或打开现有的“Adobe Analytics工具”。 创建工具时，可将“配置方法”设置为“自动”。
@@ -110,7 +111,7 @@ Adobe动态标签管理是一种激活数字营销工具的工具。 酒店免�
 
       其余参数与“分析配置”页面(“工具”>“资&#x200B;**[!UICONTROL 产”>“分析配置”]**)中配置的参数相对应。
 
-   * 通过查询所有可用的SiteCatalyst引 `satelliteLib` 擎来检索AppMeasurement对象。 如果配置了多个标记，请相应地更改数组选择器的索引。 阵列中的条目按DTM界面中可用的SiteCatalyst工具进行排序。
+   * 通过查询所有可用的SiteCatalyst引擎 `satelliteLib` 来检索AppMeasurement对象。 如果配置了多个标记，请相应地更改数组选择器的索引。 阵列中的条目按DTM界面中可用的SiteCatalyst工具进行排序。
 
 1. 保存并关闭“代码编辑器”窗口，然后在“工具”配置中保存更改。
 1. 在“批准 **[!UICONTROL ”]** 选项卡中，批准两个待处理的批准。 DTM标记已准备好插入网页。 有关如何在网页中插入DTM标记的详细信息，请参 [阅在自定义页面模板中集成DTM](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/)。

@@ -1,16 +1,17 @@
 ---
-title: AEM 6.4资产用户指南
+title: 资产指南
 description: 本指南涵盖所有AEM Assets任务，如如何创建、管理、投放和优化数字资产。
+user-guide-title: 资产指南
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 23%
+source-wordcount: '336'
+ht-degree: 24%
 
 ---
 
 
-# AEM 6.4资产用户指南
+# 资产指南
 
 本指南涵盖所有AEM Assets任务，如如何创建、管理、投放和优化数字资产。
 

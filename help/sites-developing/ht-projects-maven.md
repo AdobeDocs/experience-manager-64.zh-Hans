@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: b46164c81890a41e3811a65534c264884e8562fc
+source-git-commit: 821cbc7fc1f92f1ac2a4044798c7e008c6248b92
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Apache Maven是一个开放源码工具，用于通过自动化构建和提供�
 * 与IDE无关的开发环境
 * Maven原型和由Adobe提供的文物的使用
 * 将Apache Sling和Apache Felix工具集用于基于Maven的开发设置
-* 轻松导入IDE; 例如，Eclipse和／或IntelliJ
+* 轻松导入IDE;例如，Eclipse和／或IntelliJ
 * 与连续集成系统轻松集成
 
 ## Experience ManagerAPI依赖关系 {#experience-manager-api-dependencies}
@@ -60,6 +60,10 @@ Apache Maven是一个开放源码工具，用于通过自动化构建和提供�
 
 如果公司已使用Maven Repository Manager（如Sonatype Nexus、Apache Archiva或JFrog Artifactory），请向项目添加适当的配置以引用此存储库管理器，并将Adobe的Maven Repository([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/))添加到存储库管理器。
 
+>[!NOTE]
+>
+>从AEM 6.4.8.2开始，UberJar和其他相关对象可在Maven Central存储库 [中使用](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/) ，而不是Adobe公共Maven存储库(repo.adobe.com)。 主UberJar文件已重命名为 `uber-jar-<version>.jar`。 因此，标签没 `classifier`有 `apis` 任何值（作为值） `dependency` 。
+
 如果您没有使用存储库管理器，则需要向pom.xml文 *件中* 添加一 *个存储库元素* :
 
 ```xml
@@ -67,7 +71,7 @@ Apache Maven是一个开放源码工具，用于通过自动化构建和提供�
     <repository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </repository>
 </repositories>
@@ -75,7 +79,7 @@ Apache Maven是一个开放源码工具，用于通过自动化构建和提供�
     <pluginRepository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </pluginRepository>
 </pluginRepositories>
@@ -405,7 +409,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 </workspaceFilter>
 ```
 
-您还需要重新配置maven-resources-plugin，以不在包中包含这些文件： 在安装包时不应用filter.xml文件，但仅当使用包管理器重新构建包时才应用filter.xml文件。
+您还需要重新配置maven-resources-plugin，以不在包中包含这些文件：在安装包时不应用filter.xml文件，但仅当使用包管理器重新构建包时才应用filter.xml文件。
 
 相应 `<resources>` 地更改内容中的部分：
 
@@ -451,7 +455,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 
 >[!NOTE]
 >
->该 `com.adobe.granite.xssprotection` 伪像不包括在cq-quickstart-product-dependencies POM中，并且需要从依赖关系查找器获得的完全Maven坐标。
+>该 `com.adobe.granite.xssprotection` 伪像不包括在cq-quickstart-product-dependencies POM中，并且需要从依赖关系查找器获取的完整Maven坐标。
 
 #### 将JSP编译为Maven编译阶段的一部分 {#compiling-jsps-as-part-of-the-maven-compile-phase}
 

@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
       * 创建和发布 [Twitter Connect云服务](#create-a-twitter-connect-cloud-service)。
 
 
-1. [**为社区&#x200B;**站点启用](#enable-social-login)“社交登录”。
+1. [**为社区** 站点启用](#enable-social-login) “社交登录”。
 
 有两个基本概念：
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 ### Facebook API版本 {#facebook-api-version}
 
 社交登录和we-retail Facebook范例是在Facebook Graph API为1.0版时开发的。\
-自AEM 6.4 GA和AEM 6.3 SP1社交登录更新以与较新的Facebook Graph API 2.5版本一起使用。
+自AEM 6.4 GA和AEM 6.3 SP1社交登录更新以与更新的Facebook Graph API 2.5版本一起使用。
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ ht-degree: 0%
       * 对于 *站点URL*，输入 `  https://<server>:<port>.`
    * 在“ *显示名称*”中，输入一个标题以用作Facebook连接服务的标题。
    * 对于 *类别*，建议选择“ *页面应用程序* ”，但可以是任何内容。
-   * *添加产品：  Facebook登录*
+   * *添加产品： Facebook登录*
       * 对于 *有效的OAuth重定向URI*，请输入 `  https://<server>:<port>.`
 
 >[!NOTE]
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ### 创建Facebook ConnectCloud Service {#create-a-facebook-connect-cloud-service}
 
-通过 [](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) 创建云服务配置实例化的AdobeGranite OAuth应用程序和提供程序实例，标识新用户所添加的Facebook应用程序和成员组。
+通过 [](#adobe-granite-oauth-application-and-provider) 创建云服务配置实例化的AdobeGranite OAuth应用程序和提供程序实例，标识新用户所添加的Facebook应用程序和成员组。
 
 1. 在AEM作者实例上，以管理员权限登录。
 1. 从全局导航中，选择 **[!UICONTROL 工具>Cloud Services> Facebook Social登录配置]**。
@@ -119,8 +119,8 @@ ht-degree: 0%
    * **[!UICONTROL 应用程序ID/API密钥]***(*&#x200B;必需 ***)输入*** Facebook应用程序的应用程序ID。 它标识从对 [话框创建的AdobeGranite OAuth应用程序和](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) Provider实例。
    * **[!UICONTROL 应用程序密]** 码(*必需*)输入Facebook应 ***用程序的*** 应用程序密码。
    * **[!UICONTROL 创建用户]** 如果选中此项，则使用Facebook帐户登录将创建AEM用户条目，并将其作为成员添加到所选用户组。  默认为选中（强烈推荐）。
-   * **[!UICONTROL 掩码用户ID]**: 取消选择。
-   * **[!UICONTROL 范围电子邮件]**: 应从Facebook获取用户的电子邮件id。
+   * **[!UICONTROL 掩码用户ID]**:取消选择。
+   * **[!UICONTROL 范围电子邮件]**:应从Facebook获取用户的电子邮件id。
    * **[!UICONTROL 添加到用户组]** ，选择“添加用户组”，为要向其 [添加用户的社](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) 区站点，选择一个或多个成员组。
 
    >[!NOTE]
@@ -233,11 +233,11 @@ Facebook和Twitter的后续步骤相同：
 
 在Twitter应用程序管理员的权限部分：
 
-* **[!UICONTROL 访问]**: 选择 `Read only`。
+* **[!UICONTROL 访问]**:选择 `Read only`。
 
    * 不支持其他选项
 
-* **[!UICONTROL 其他权限]**: （可选）选 `Request email addresses from users`择。
+* **[!UICONTROL 其他权限]**:（可选）选 `Request email addresses from users`择。
 
    * 如果未选择，AEM中的用户用户档案将不包括其电子邮件地址。
    * Twitter的说明说明需要采取其他步骤。
@@ -354,7 +354,7 @@ Facebook和Twitter的后续步骤相同：
 * 如果尚未登录Facebook或Twitter，请使用相应的凭据登录
 * 可能需要根据Facebook或Twitter应用程序显示的对话框授予权限
 * 请注意，页面顶部的工具栏会更新以反映成功的登录
-* 选择 **[!UICONTROL 用户档案]**: 用户档案页显示用户的头像图像、名字和姓氏。 它还根据允许的字段／参数显示Facebook或Twitter用户档案中的信息。
+* 选择 **[!UICONTROL 用户档案]**:用户档案页显示用户的头像图像、名字和姓氏。 它还根据允许的字段／参数显示Facebook或Twitter用户档案中的信息。
 
 ## AEM平台OAuth配置 {#aem-platform-oauth-configurations}
 
@@ -443,7 +443,7 @@ Facebook和Twitter的后续步骤相同：
 
 在作者实例上，以管理权限登录：
 
-1. 从全局导航： 选 **择工[具、CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md)。**
+1. 从全局导航：选 **择工[具、CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md)。**
 1. 从ntBaseLucene的副本创建名为ntBaseLucene-oauth的索引：
 
    * 在节点/oak:index下
@@ -455,10 +455,10 @@ Facebook和Twitter的后续步骤相同：
 
 1. 修改节点ntBaseLucene-oauth的属性：
 
-   * **[!UICONTROL indexPath]**: /oak:index/ntBaseLucene-oauth
-   * **[!UICONTROL name]**: oauthid-123xxxx
-   * **[!UICONTROL 重新索引]**: 真
-   * **[!UICONTROL reindexCount]**: 1
+   * **[!UICONTROL indexPath]**:/oak:index/ntBaseLucene-oauth
+   * **[!UICONTROL name]**:oauthid-123xxxx
+   * **[!UICONTROL 重新索引]**:真
+   * **[!UICONTROL reindexCount]**:1
 
 1. 在节点/oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties下：
 
@@ -466,7 +466,7 @@ Facebook和Twitter的后续步骤相同：
    * 将cqTags重命名为oauthid-123xxxx
    * 修改节点oauthid-123xxxx的属性
 
-      * **[!UICONTROL name]**: oauthid-123xxxx
+      * **[!UICONTROL name]**:oauthid-123xxxx
    * 选择 **[!UICONTROL 全部保存]**。
 
 

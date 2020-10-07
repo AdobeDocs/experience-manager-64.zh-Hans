@@ -4,9 +4,9 @@ description: 特定于Adobe Experience Manager6.4累积修复包的发行说明�
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '3402'
+source-wordcount: '3420'
 ht-degree: 13%
 
 ---
@@ -32,7 +32,7 @@ AEM 6.4.8.2是依赖于AEM 6.4 Service Pack 8的累积修补程序包(CFP)。 �
 
 在AEM 6.4.8.2中，内置存储库(Apache Jackrabbit Oak)已更新至版本1.8.22。
 
-For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
+For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager6.4.8.2修复了以下问题。
 
@@ -175,7 +175,7 @@ AEM 6.4.8.1的一些主要亮点是：
 * 删除了与Adobe Experience Manager的包共享集成。
 * 内置存储库 (Apache Jackrabbit Oak) 已更新至版本 1.8.21。
 
-For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
+For information on CFP and other types of releases, see [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager6.4.8.1修复了以下问题。
 

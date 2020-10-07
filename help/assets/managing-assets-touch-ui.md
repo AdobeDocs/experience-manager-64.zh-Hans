@@ -4,9 +4,9 @@ description: 了解各种资产管理和编辑任务，您可以使用AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: dc3015732e2fe6b69117f736b31d89c5388d2be8
 workflow-type: tm+mt
-source-wordcount: '9811'
+source-wordcount: '10015'
 ht-degree: 6%
 
 ---
@@ -425,6 +425,12 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 ### 移动或重命名资产 {#moving-or-renaming-assets}
 
+当您将资产（或文件夹）移动到其他位置时，资产（或文件夹）不会重复，这与复制资产时不同。 资产（或文件夹）将放置在目标位置，并从源位置删除。 您还可以在将资产移至新位置时对其重命名。 如果您要将已发布的资产移动到其他位置，则可以选择重新发布资产。 默认情况下，已发布资产上的移动操作会自动取消发布该资产。 如果作者在移动资产时选择了“重新 [!UICONTROL 发布] ”选项，则移动的资产会重新发布。
+
+![您可以在移动已发布的资产时重新发布它](assets/republish-on-move.png)
+
+移动资产或文件夹：
+
 1. 导航到要移动的资产所在的位置。
 
 1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
@@ -438,7 +444,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
    >[!NOTE]
    >
-   >您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果您使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
+   >您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
 
    >[!NOTE]
    >
@@ -462,6 +468,14 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
    * 点按 **[!UICONTROL 取消]** ，以停止移动操作。
 
    如果您不更新引用，则它们会继续指向资产的上一路径。 如果您调整引用，它们将更新为新的资产路径。
+
+### 使用拖动操作移动资产 {#move-using-drag}
+
+您可以将资产（或文件夹）拖动到目标位置，而不是使用用户界面中的移动 [!UICONTROL 选项] ，从而将它们移动到同级文件夹。 但是，此操作只能在列表视图中执行。
+
+通过拖动资产来移动资产不会打 [!UICONTROL 开移动资产] ，因此您在移动资产时不会选择重命名资产。 此外，在移动资产时，会通过拖动重新发布已发布的资产，而无需征求用户批准重新发布。
+
+![通过拖动资产将资产移至同级文件夹](assets/move-by-drag.gif)
 
 ## 管理再现 {#managing-renditions}
 
@@ -746,7 +760,7 @@ You can also add image maps using the image editor. For details, see [Adding Ima
    * [快速操作](managing-assets-touch-ui.md#quick-actions)
    * 在选择资产或导航到资产页面后，从工具栏中
 
-   ![chlimage_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. 在时间轴底部的&#x200B;**[!UICONTROL 注释]**&#x200B;框中添加注释。Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 

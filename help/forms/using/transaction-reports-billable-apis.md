@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1877'
 ht-degree: 7%
 
 ---
@@ -32,14 +32,14 @@ AEM Forms提供多个API来提交表单、处理文档和渲染文档。 某些A
 * 使用AEM任务的分配工作流步骤和doc服务步骤
 * 在自适应表单中使用自适应表单
 
-付费API不包括页数、文档或表单的长度或呈现文档的最终格式。 事务处理报表将事务处理分为三个类别: 文档已处理、已呈现文档和Forms已提交。
+付费API不包括页数、文档或表单的长度或呈现文档的最终格式。 事务处理报表将事务处理分为三个类别:文档已处理、已呈现文档和Forms已提交。
 
 * **Forms提交：** 当数据从使用AEM Forms创建的任何类型的表单提交时，数据将提交到任何数据存储库或数据库，即视为表单提交。 例如，提交自适应表单、HTML5表单、PDF forms和表单集均作为提交的表单入账。 表单集中的每个表单都被视为提交。 例如，如果表单集有5个表单，则提交表单集时，事务报告服务会将其计为5个提交。
 * **文档呈现：** 通过组合模板和文档、对文档进行数字签名或认证、使用文档服务的可计费文档服务API或将文档从一种格式转换为另一种格式来生成，被视为呈现的文档。
 
 >[!NOTE]
 >
->事务处理报表UI显示三个类别: Forms提交、文档渲染和文档处理。 渲染的文档和处理的文档均作为渲染的文档入账。
+>事务处理报表UI显示三个类别:Forms提交、文档渲染和文档处理。 渲染的文档和处理的文档均作为渲染的文档入账。
 
 ## 收费文档服务API {#billable-document-services-apis}
 
@@ -234,7 +234,7 @@ AEM Forms提供多个API来提交表单、处理文档和渲染文档。 某些A
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toImage</a></td> 
-   <td>将PDF文档转换为列表图像文档。 支持的图像格式为JPEG、JPEG2K、PNG和TIFF。</td> 
+   <td>将PDF文档转换为一列表图像文档。 支持的图像格式为JPEG、JPEG2K、PNG和TIFF。</td> 
    <td>已处理的文档</td> 
    <td> </td> 
   </tr>
@@ -350,7 +350,7 @@ AEM Forms提供多个API来提交表单、处理文档和渲染文档。 某些A
 
 ## 收费数据捕获API {#billable-data-capture-apis}
 
-自适应表单、HTML5Forms和表单集的所有提交事件均作为事务处理入账。 默认情况下，提交PDF表单不作为事务处理入账。 使用提供的 [事务报表](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) API将PDF forms提交记录为事务。
+自适应表单、HTML5Forms和表单集的所有提交事件均作为事务处理入账。 默认情况下，提交PDF表单不作为事务处理入账。 使用提供的 [事务报表](record-transaction-custom-implementation.md) API将PDF forms提交记录为事务。
 
 ### 自适应表单 {#adaptive-forms}
 

@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1835'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,6 @@ ht-degree: 6%
 * [AEM平台简介](/help/sites-deploying/platform.md)
 * [性能指南](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 入门](/help/mobile/getting-started-aem-mobile.md)
-* [更新发放车辆定义](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [什么是AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## 基本概念 {#basic-concepts}
@@ -69,9 +68,9 @@ Adobe Experience Manager 是基于 Web 的客户端服务器系统，可用于�
 
 在基础架构级别AEM提供以下内容：
 
-* **Web 应用程序服务器**: AEM可以以独立模式部署（它包括集成的Jetty Web服务器），也可以作为第三方应用程序服务器（WebLogic、WebSphere等）中的Web应用程序部署。
-* **Web 应用程序框架**: AEM整合了SlingWeb 应用程序框架，可简化REST风格的、面向内容的Web应用程序的编写。
-* **内容存储库**: AEM包含一个Java内容存储库(JCR)，它是一种专门为非结构化和半结构化数据设计的分层数据库。 存储库不仅存储面向用户的内容，还存储应用程序使用的所有代码、模板和内部数据。
+* **Web 应用程序服务器**:AEM可以以独立模式部署（它包括集成的Jetty Web服务器），也可以作为第三方应用程序服务器（WebLogic、WebSphere等）中的Web应用程序部署。
+* **Web 应用程序框架**:AEM整合了SlingWeb 应用程序框架，可简化REST风格的、面向内容的Web应用程序的编写。
+* **内容存储库**:AEM包含一个Java内容存储库(JCR)，它是一种专门为非结构化和半结构化数据设计的分层数据库。 存储库不仅存储面向用户的内容，还存储应用程序使用的所有代码、模板和内部数据。
 
 在此基础上，AEM还优惠了许多应用程序级功能，用于管理：
 
@@ -91,24 +90,24 @@ AEM服务器基 **于Java** ，并运行于支持该平台的大多数操作系�
 
 在AEM术语中，“实例”是在服务器上运行的AEM的副本。 AEM安装通常至少涉及两个实例，通常运行在不同的计算机上：
 
-* **作者**: 用于创建、上传和编辑内容以及管理网站的AEM实例。 内容准备就绪后，即会复制到发布实例。
-* **发布**: 为公众提供已发布内容的AEM实例。
+* **作者**:用于创建、上传和编辑内容以及管理网站的AEM实例。 内容准备就绪后，即会复制到发布实例。
+* **发布**:为公众提供已发布内容的AEM实例。
 
 这些实例与已安装的软件完全相同。 它们仅通过配置区分。 此外，大多数安装都使用调度程序：
 
-* **调度程序**: 静态Web服务器（Apache httpd、Microsoft IIS等） 增强了AEM调度程序模块。 它缓存由发布实例生成的网页以提高性能。
+* **调度程序**:静态Web服务器（Apache httpd、Microsoft IIS等） 增强了AEM调度程序模块。 它缓存由发布实例生成的网页以提高性能。
 
 此设置有许多高级选项和详细说明，但大多数部署的核心是作者、发布和调度程序的基本模式。 首先，我们将关注一个相对简单的机构。 随后将讨论高级部署选项。
 
 以下各节介绍了这两种情况：
 
-* **内部部署**: AEM在您的公司环境中部署和管理。
+* **内部部署**:AEM在您的公司环境中部署和管理。
 
-* **Managed Services-Adobe Experience Manager云经理**: AEM由Adobe Managed Services部署和管理。
+* **Managed Services-Adobe Experience Manager云经理**:AEM由Adobe Managed Services部署和管理。
 
 ### On-premise {#on-premise}
 
-您可以在公司环境的服务器上安装AEM。 典型安装实例包括： 开发、测试和发布环境。 有关如何让AEM软 [件在本地安装](/help/sites-deploying/deploy.md#getting-started) ，请参阅入门部分。
+您可以在公司环境的服务器上安装AEM。 典型安装实例包括：开发、测试和发布环境。 有关如何让AEM软 [件在本地安装](/help/sites-deploying/deploy.md#getting-started) ，请参阅入门部分。
 
 要进一步了解典型的内部部署，请参阅推荐 [部署](/help/sites-deploying/recommended-deploys.md)。
 
@@ -126,7 +125,7 @@ AEMManaged Services是数字体验管理的完整解决方案。 它在云中提
 
 **最高安全性：** 通过在受限访问设施、防火墙系统后或虚拟专用云中托管客户应用程序，确保企业级物理、网络和数据安全。 它包括具有强大数据存储加密、抗病毒和数据隔离功能的单租户虚拟机。
 
-**云管理器**: Cloud Manager是Adobe Experience ManagerManaged Services服务的一部分，它是一个自助门户，使组织能够在云中自行管理Adobe Experience Manager。 它包括一流的连续集成和连续投放(CI/CD)管道，使IT团队和实施合作伙伴能够在不影响性能或安全性的情况下加快自定义或更新的投放。 Cloud Manager仅适用于Adobe托管服务客户。
+**云管理器**:Cloud Manager是Adobe Experience ManagerManaged Services服务的一部分，它是一个自助门户，使组织能够在云中自行管理Adobe Experience Manager。 它包括一流的连续集成和连续投放(CI/CD)管道，使IT团队和实施合作伙伴能够在不影响性能或安全性的情况下加快自定义或更新的投放。 Cloud Manager仅适用于Adobe托管服务客户。
 
 要进一步了解Cloud Manager及其资源，请参阅《Cloud Manager [**用户指南》**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)。
 
@@ -134,7 +133,7 @@ AEMManaged Services是数字体验管理的完整解决方案。 它在云中提
 
 ### 前提条件 {#prerequisites}
 
-虽然生产实例通常在运行正式支持的操作系统的专用计算机上运行(请 [参阅技术要求](/help/sites-deploying/technical-requirements.md))，但Experience Manager服务器实际上将在支持Java Standard Edition [**8的任何系统上运行&#x200B;**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)。
+虽然生产实例通常在运行正式支持的操作系统的专用计算机上运行(请 [参阅技术要求](/help/sites-deploying/technical-requirements.md))，但Experience Manager服务器实际上将在支持Java Standard Edition [**8的任何系统上运行**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)。
 
 为了熟悉和在AEM上进行开发，使用运行Apple OS X或Microsoft Windows或Linux的桌面版本的本地计算机上安装的实例非常常见。
 
@@ -142,7 +141,7 @@ AEMManaged Services是数字体验管理的完整解决方案。 它在云中提
 
 ### 获取软件 {#getting-the-software}
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website **](https://licensing.adobe.com/). Business partners can request download access from[**spphelp@adobe.com **](mailto:spphelp@adobe.com).
+Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [**Adobe Licensing Website**](https://licensing.adobe.com/). Business partners can request download access from [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
 AEM软件包有两种形式：
 
@@ -192,7 +191,7 @@ AEM软件包有两种形式：
 
 AEM需要几分钟时间才能解压缩jar文件、安装自己并开始。 上述过程导致：
 
-* AEM **author实例**
+* aem **author实例**
 * 在localhost上运 **行**
 * 在端口4502 **上**
 
@@ -277,16 +276,16 @@ AEM需要几分钟时间才能解压缩jar文件、安装自己并开始。 上�
 
 此文件夹包含以下Unix bash外壳程序脚本：
 
-* **`start`**: 开始实例
-* `stop`: 停止实例
-* **`status`**: 报告实例的状态
-* **`quickstart`**: 用于配置开始信息（如果需要）。
+* **`start`**:开始实例
+* `stop`:停止实例
+* **`status`**:报告实例的状态
+* **`quickstart`**:用于配置开始信息（如果需要）。
 
 还有适用于Windows **`bat`** 的对等文件。 有关详细信息，请参阅：
 
 * [命令行启动和停止](/help/sites-deploying/command-line-start-and-stop.md)
 
-AEM开始并自动将您的Web浏览器重定向到相应的页面，通常是登录页面； 例如：
+AEM开始并自动将您的Web浏览器重定向到相应的页面，通常是登录页面；例如：
 
 `http://localhost:4502/`
 
@@ -320,6 +319,5 @@ AEM开始并自动将您的Web浏览器重定向到相应的页面，通常是�
 * [AEM平台简介](/help/sites-deploying/platform.md)
 * [性能指南](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 入门](/help/mobile/getting-started-aem-mobile.md)
-* [更新发放车辆定义](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [什么是AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 

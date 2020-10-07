@@ -4,7 +4,7 @@ description: 了解各种资产管理和编辑任务，您可以使用AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc3015732e2fe6b69117f736b31d89c5388d2be8
+source-git-commit: 8970712d30883e96a1ae50bc40688c58857a7557
 workflow-type: tm+mt
 source-wordcount: '10015'
 ht-degree: 6%
@@ -425,7 +425,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 ### 移动或重命名资产 {#moving-or-renaming-assets}
 
-当您将资产（或文件夹）移动到其他位置时，资产（或文件夹）不会重复，这与复制资产时不同。 资产（或文件夹）将放置在目标位置，并从源位置删除。 您还可以在将资产移至新位置时对其重命名。 如果您要将已发布的资产移动到其他位置，则可以选择重新发布资产。 默认情况下，已发布资产上的移动操作会自动取消发布该资产。 如果作者在移动资产时选择了“重新 [!UICONTROL 发布] ”选项，则移动的资产会重新发布。
+当您将资产（或文件夹）移动到其他位置时，与复制资产时不重复的资产（或文件夹）。 资产（或文件夹）将放置在目标位置，并从源位置删除。 您还可以在将资产移至新位置时对其重命名。 如果您要将已发布的资产移动到其他位置，则可以选择重新发布资产。 默认情况下，已发布资产上的移动操作会自动取消发布该资产。 如果作者在移动资产时选择了“重新 [!UICONTROL 发布] ”选项，则移动的资产会重新发布。
 
 ![您可以在移动已发布的资产时重新发布它](assets/republish-on-move.png)
 
@@ -580,7 +580,7 @@ See [Download assets from AEM](download-assets-from-aem.md)
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. 如果资产引用了其他资产，向导中便会列出这些引用。仅显示自上次发布或取消发布后未发布或已修改的引用。 选择要发布的引用。
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-29](assets/chlimage_1-21.png)
 
 1. Tap **[!UICONTROL Publish]** to confirm the activation for the assets.
 

@@ -10,7 +10,7 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 4%
@@ -26,7 +26,7 @@ AEM Content Services设计为在AEM关注网页之外对内容进行投放和描
 
 * [单页应用程序](spa-walkthrough.md)
 * 本机移动应用程序
-* AEM以外的其他渠道和触点
+* aem以外的其他渠道和触点
 
 对于使用结构化内容的内容片段，您可以通过使用JSON导出器以JSON数据模型格式交付AEM页的内容来提供内容服务。 然后，您自己的应用程序可以使用它。
 
@@ -54,7 +54,7 @@ AEM Content Services设计为在AEM关注网页之外对内容进行投放和描
 
 您也可以通过专门定位结构化内容片段来提供其内容。
 
-这是使用片段的整个路径(通过 `jcr:content`); 例如，带有后缀（如）。
+这是使用片段的整个路径(通过 `jcr:content`);例如，带有后缀（如）。
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 

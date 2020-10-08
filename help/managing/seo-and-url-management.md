@@ -10,7 +10,7 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 translation-type: tm+mt
-source-git-commit: 5ea8fac7eb0d474aa27a0203ab324d6931ce5571
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '3117'
 ht-degree: 97%
@@ -254,7 +254,7 @@ Resource myPage = req.getResource();
 
 1. 调度程序在 `/my-page.html` 处缓存响应并将响应返回给用户。
 1. 内容作者对此页面进行了更改并将其激活。
-1. 调度程序刷新代理发送 `/content/my-brand/my-page`** 的失效请求。**由于调度程序没有将页面缓存在此路径中，因此仍然会缓存旧内容且该内容会过时。
+1. 调度程序刷新代理发送 `/content/my-brand/my-page`**的失效请求。**&#x200B;由于调度程序没有将页面缓存在此路径中，因此仍然会缓存旧内容且该内容会过时。
 
 有多种方法可配置自定义调度程序刷新规则，这些规则会将较短的 URL 映射到较长的 URL，以便使缓存失效。
 

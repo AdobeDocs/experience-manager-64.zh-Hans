@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1842'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 &lt;*Forms设计人员安装*&#x200B;目录>/Samples/Forms/采购订单／表单片段
 
-其中，*&lt;install directory*>是安装路径。 为了客户端应用程序的目的，从此安装位置复制了Purchase Order Dynamic.xdp文件，并将其部署到名为Applications/FormsApplication的Forms *应用程序中*。 Purchase Order Dynamic.xdp文件放在名为FormsFolder的文件夹中。 同样，片段也放在名为Fragments的文件夹中，如下图所示。
+其中，*&lt;install directory*>是安装路径。 出于客户端应用程序的目的，Purchase Order Dynamic.xdp文件从此安装位置复制并部署到名为Applications/FormsApplication的Forms *应用程序*。 Purchase Order Dynamic.xdp文件放在名为FormsFolder的文件夹中。 同样，片段也放在名为Fragments的文件夹中，如下图所示。
 
 ![cw_cw_fragments存储库](assets/cw_cw_fragmentsrepository.png)
 
@@ -119,7 +119,7 @@ Web应用程序使用的XML数据文件已从“Data”文件夹移 `C:\Adobe`�
 
 >[!NOTE]
 >
->有关创建调用Java servlet的HTML页 `RenderFormFragment` 的信息，[请参阅创建网页](/help/forms/developing/rendering-forms.md#creating-the-web-page)。
+>有关创建调用Java servlet的HTML页 `RenderFormFragment` 的信息，请参 [阅创建网页](/help/forms/developing/rendering-forms.md#creating-the-web-page)。
 
 ### 为servlet创建Java应用程序逻辑 {#creating-java-application-logic-for-the-servlet}
 
@@ -379,7 +379,7 @@ Java servlet通过使用以下Java代码从HTML页面捕获发布的数据：
 
 1. 在“项 **目浏览器** ”窗口中，右键单击项 `FragmentsWebApplication` 目并选择“导 **出** ”> **WAR文件**。
 1. 在“ **Web模块** ”文本框 `FragmentsWebApplication` 中，键入Java项目的名称。
-1. 在“目 **标** ”文本框中， `FragmentsWebApplication.war`**键&#x200B;**入文件名，指定WAR文件的位置，然后单击“完成”。
+1. 在“目 **标** ”文本框中， `FragmentsWebApplication.war`**键**&#x200B;入文件名，指定WAR文件的位置，然后单击“完成”。
 
 ### 将WAR文件部署到J2EE应用程序服务器 {#deploying-the-war-file-to-the-j2ee-application-server}
 

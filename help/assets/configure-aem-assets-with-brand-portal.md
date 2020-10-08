@@ -3,7 +3,7 @@ title: 使用 Brand Portal 配置 AEM Assets
 description: '了解如何使用Brand Portal配置AEM Assets，以将资产和集合发布到Brand Portal。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 656a06ae70293a3f1ec6768fc9eea15f1329c42c
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 43%
@@ -21,15 +21,14 @@ Adobe Experience Manager (AEM) Assets 通过 Adobe I/O 使用 Brand Portal 进�
 >
 >以前，品牌门户通过旧版OAuth网关在经典UI中配置，该网关使用JWT令牌交换获得IMS访问令牌进行授权。
 
-
 >[!TIP]
 >
 >***仅限现有客户***
 >
 >建议继续使用现有的旧版OAuth网关配置。 如果您在旧版OAuth网关配置中遇到问题，请删除现有配置并通过AdobeI/O创建新配置。
 
-
 本帮助描述以下两个用例：
+
 * [新配置](#configure-new-integration-64):如果您是新的Brand Portal用户，并且希望使用Brand Portal配置您的AEM Assets作者实例，则可以在AdobeI/O上创建新配置。
 * [升级配置](#upgrade-integration-64):如果您是现有的Brand Portal用户，且您的AEM Assets作者实例在旧版OAuth网关上配置了Brand Portal，建议删除现有配置并在AdobeI/O上创建新配置。
 
@@ -46,7 +45,6 @@ Adobe Experience Manager (AEM) Assets 通过 Adobe I/O 使用 Brand Portal 进�
 * 具有最新Service Pack的正在运行的AEM Assets作者实例。
 * Brand Portal 租户 URL。
 * 对 Brand Portal 租户的 IMS 组织具有系统管理员权限的用户。
-
 
 [下载并安装AEM 6.4](#aemquickstart)
 
@@ -73,6 +71,7 @@ Adobe Experience Manager (AEM) Assets 通过 Adobe I/O 使用 Brand Portal 进�
 ## 创建配置 {#configure-new-integration-64}
 
 如果您是首次使用Brand Portal配置AEM Assets，请在列出的序列中执行以下步骤：
+
 1. [获取公共证书](#public-certificate)
 1. [创建 Adobe I/O 集成](#createnewintegration)
 1. [创建 IMS 帐户配置](#create-ims-account-configuration)
@@ -82,7 +81,6 @@ Adobe Experience Manager (AEM) Assets 通过 Adobe I/O 使用 Brand Portal 进�
 >[!NOTE]
 >
 >AEM Assets作者实例仅应配置一个Brand Portal租户。
-
 
 ### 创建 IMS 配置 {#create-ims-configuration}
 
@@ -205,8 +203,6 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
 >
 >确保IMS配置通过运行状况检查。 如果配置未通过运行状况检查，则无效。 您必须删除它并创建新的有效配置。
 
-
-
 ### 配置云服务 {#configure-the-cloud-service}
 
 执行以下步骤以创建 Brand Portal 云服务配置：
@@ -258,7 +254,6 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
    >[!NOTE]
    >
    >复制代理并行工作并平等地共享作业分配，从而将发布速度提高四倍于原始速度。 配置云服务后，无需进行额外配置即可启用默认激活的复制代理以启用多个资产的并行发布。
-
 
 1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
@@ -360,4 +355,3 @@ Brand Portal已成功配置您的AEM Assets作者实例。 您现在可以：
 * [将资产发布到 Brand Portal](brand-portal-publish-assets.md)
 * [将资产和文件夹发布到Brand Portal](brand-portal-publish-folder.md)
 * [将集合发布到品牌门户](brand-portal-publish-collection.md)
-

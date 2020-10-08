@@ -4,7 +4,7 @@ description: 了解各种资产管理和编辑任务，您可以使用AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8970712d30883e96a1ae50bc40688c58857a7557
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '10015'
 ht-degree: 6%
@@ -145,7 +145,8 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 >[!NOTE]
 >
 >要通过FTP在Dynamic Media中上传资产- AEM作者的Scene7模式安装功能包(FP)18912。 联系Adobe客户服务中心获取FP-18912并完成FTP帐户的设置。 请参 [阅安装功能包18912以实现批量资产迁移](/help/assets/bulk-ingest-migrate.md)。
-如果您使用FTP上传资产，则会忽略AEM中指定的上传设置。 而是使用在Dynamic Media Classic中定义的文件处理规则。
+>
+>如果您使用FTP上传资产，则会忽略AEM中指定的上传设置。 而是使用在Dynamic Media Classic中定义的文件处理规则。
 
 **使用FTP上传资产**
 
@@ -580,7 +581,7 @@ See [Download assets from AEM](download-assets-from-aem.md)
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. 如果资产引用了其他资产，向导中便会列出这些引用。仅显示自上次发布或取消发布后未发布或已修改的引用。 选择要发布的引用。
 
-   ![chlimage_1-29](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21.png)
 
 1. Tap **[!UICONTROL Publish]** to confirm the activation for the assets.
 

@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1838'
 ht-degree: 27%
@@ -49,7 +49,8 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
    >[!NOTE]
    >
    >You can also create Spin Sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
-   *批集由IPS（图像生产系统）创建，作为资产摄取的一部分，并且仅在Dynamic Media -Scene7模式下可用*。
+   >
+   >*批集由IPS（图像生产系统）创建，作为资产摄取的一部分，并且仅在Dynamic Media -Scene7模式下可用*。
 
 1. 根据需要设置[旋转集查看器预设](managing-viewer-presets.md)。
 
@@ -103,7 +104,9 @@ You can upload images for the Spin Sets as you would [upload any other asset in 
 
 >[!NOTE]
 >
->您还可以通过[批量集预设](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)自动创建旋转集。批集由IPS（图像生产系统）创建，作为资产摄取的一部分，并且仅在Dynamic Media -Scene7模式下可用。
+>您还可以通过[批量集预设](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)自动创建旋转集。
+>
+>批集由IPS（图像生产系统）创建，作为资产摄取的一部分，并且仅在Dynamic Media -Scene7模式下可用。
 >
 >请参阅配置Dynamic Media -Scene7模式中的“创建批集预设以自动生成图 [像集和旋转集”](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。
 

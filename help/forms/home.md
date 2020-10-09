@@ -1,18 +1,18 @@
 ---
-title: AEM 6.4Forms用户指南
-seo-title: AEM 6.4Forms用户指南
+title: Adobe Experience Manager六点四Forms指南
+seo-title: AEM 6.4 Forms 用户指南
 description: 本指南涵盖所有AEM Forms任务，包括如何创建、管理、发布和更新数字表单。
 seo-description: 涵盖所有AEM Forms任务，包括如何创建、管理、发布和更新数字表单。
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 22%
+source-wordcount: '370'
+ht-degree: 28%
 
 ---
 
 
-# AEM 6.4Forms用户指南
+# Adobe Experience Manager六点四Forms指南
 
 本指南涵盖所有AEM Forms任务，包括如何创建、管理、发布和更新数字表单。
 

@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 5aff983a0e8ef2f3ca790a997b37276567f543fe
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '4295'
 ht-degree: 1%
@@ -25,7 +25,7 @@ AEM Forms提供一套OSGi服务，用于完成不同的文档级别操作，例�
 
 * **巴科德Forms社：** 使您能够从条形码的电子图像中提取数据。 该服务接受包含一个或多个条码的TIFF和PDF文件作为输入并提取条形码数据。 有关详细信息，请参 [阅BarcodedForms服务](/help/forms/using/using-barcoded-forms-service.md)。
 
-* **文档保障服务：** 使您能够加密和解密文档，扩展Adobe Reader的功能并增加使用权限，并为文档添加数字签名。 文档保障服务包含三项服务： 签名、加密和读者扩展。 有关详细信息，请参 [阅DocAssurance Service](/help/forms/using/overview-aem-document-services.md)。
+* **文档保障服务：** 使您能够加密和解密文档，扩展Adobe Reader的功能并增加使用权限，并为文档添加数字签名。 文档保障服务包含三项服务：签名、加密和读者扩展。 有关详细信息，请参 [阅DocAssurance Service](/help/forms/using/overview-aem-document-services.md)。
 
 * **加密服务：** 使您能够加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对其内容的访问。 有关详细信息，请参 [阅加密服务](/help/forms/using/overview-aem-document-services.md#encryption-service)。
 
@@ -66,8 +66,8 @@ AEM Forms加载项包是部署到AEM上的应用程序。 通常，您只需一�
 * AEM实例的安装路径不包含空格。
 * AEM实例已启动且正在运行。 在AEM术语中，“实例”是在创作或发布模式下在服务器上运行的AEM的副本。 通常，您只需一个AEM实例（作者或发布）即可运行AEM Forms文档服务：
 
-   * **作者**: 用于创建、上传和编辑内容以及管理网站的AEM实例。 内容准备就绪后，即会复制到发布实例。
-   * **发布**: 通过Internet或内部网络向公众提供已发布内容的AEM实例。
+   * **作者**:用于创建、上传和编辑内容以及管理网站的AEM实例。 内容准备就绪后，即会复制到发布实例。
+   * **发布**:通过Internet或内部网络向公众提供已发布内容的AEM实例。
 
 * 满足内存要求。 AEM Forms附加包要求：
 
@@ -76,8 +76,8 @@ AEM Forms加载项包是部署到AEM上的应用程序。 通常，您只需一�
 
 * 安装了PDF生成器在Microsoft Windows和Linux上执行转换所需的客户端软件：
 
-   * **Microsoft Windows**: 安 [装](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)Microsoft [Office或Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux**: 安装 [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft Windows**:安 [装](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)Microsoft [Office或Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+   * **Linux**:安装 [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
 
 >[!NOTE]
 >
@@ -513,7 +513,7 @@ AEM Forms加载项包是部署到AEM上的应用程序。 这一一揽子计划�
 
 ### （仅限Windows）配置HTML到PDF转换的主路由 {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-PDF Generator服务提供多条路由将HTML文件转换为PDF文档: Webkit、AcrobatWebCapture（仅限Windows）和PhantomJS。 Adobe建议使用PhantomJS路由，因为它能够处理动态内容，并且不依赖32位库、32位JDK，或不需要任何额外字体。 此外，PhantomJS路由不需要sudo或root访问权限即可运行转换。
+PDF Generator服务提供多条路由将HTML文件转换为PDF文档:Webkit、AcrobatWebCapture（仅限Windows）和PhantomJS。 Adobe建议使用PhantomJS路由，因为它能够处理动态内容，并且不依赖32位库、32位JDK，或不需要任何额外字体。 此外，PhantomJS路由不需要sudo或root访问权限即可运行转换。
 
 HTML到PDF转换的默认主要路由是Webkit。 要更改转换路线：
 
@@ -555,8 +555,7 @@ DocAssurance服务可将使用权限应用于PDF文档。 要对PDF文档应用�
 
    >[!NOTE]
    >
-   >* 在生产环境中，将您的评估凭据替换为生产凭据。 请确保在更新过期或评估凭据之前删除旧的Reader扩展凭据。
-
+   >在生产环境中，将您的评估凭据替换为生产凭据。 请确保在更新过期或评估凭据之前删除旧的Reader扩展凭据。
 
 1. 单击 **[!UICONTROL “编辑用户]** 设置” **[!UICONTROL 页面上的“保存并关]** 闭”。
 
@@ -606,7 +605,7 @@ Assembler服务取决于Reader扩展服务、签名服务、Forms服务和输出
 
    `ldd phantomjs`
 
-   运行以下命令以列表缺少的库。
+   运行以下命令以列表缺失的库。
 
    `ldd phantomjs | grep not`
 

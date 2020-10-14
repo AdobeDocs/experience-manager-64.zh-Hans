@@ -4,9 +4,9 @@ description: 了解各种资产管理和编辑任务，您可以使用AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: c86c84efeb25673490373273a9f4720381e46454
 workflow-type: tm+mt
-source-wordcount: '10015'
+source-wordcount: '10031'
 ht-degree: 6%
 
 ---
@@ -424,7 +424,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
    >
    >The **[!UICONTROL Paste]** icon is available in the toolbar until the paste operation is completed.
 
-### 移动或重命名资产 {#moving-or-renaming-assets}
+## 移动和重命名资产 {#moving-or-renaming-assets}
 
 当您将资产（或文件夹）移动到其他位置时，与复制资产时不重复的资产（或文件夹）。 资产（或文件夹）将放置在目标位置，并从源位置删除。 您还可以在将资产移至新位置时对其重命名。 如果您要将已发布的资产移动到其他位置，则可以选择重新发布资产。 默认情况下，已发布资产上的移动操作会自动取消发布该资产。 如果作者在移动资产时选择了“重新 [!UICONTROL 发布] ”选项，则移动的资产会重新发布。
 
@@ -434,39 +434,42 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 1. 导航到要移动的资产所在的位置。
 
-1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
+![您可以在移动已发布的资产时重新发布它](assets/republish-on-move.png)
 
-   ![move_icon](assets/move_icon.png)
+移动资产或文件夹：
 
-1. In the **[!UICONTROL Move Assets]** wizard, do one of the following:
+1. 导航到要移动的资产所在的位置。
 
-   * 指定资产在移动后的名称。 然后点按 **[!UICONTROL 下一]** 步以继续。
-   * 点按 **[!UICONTROL 取消]** ，以停止该过程。
+1. 选择资产，然后单击工 **[!UICONTROL 具栏]** 中的移动选项。
+   ![“资产”工具栏中的“移动”选项](assets/do-not-localize/move_icon.png)
 
+1. In the [!UICONTROL Move Assets] wizard, do one of the following:
+
+   * 指定资产在移动后的名称。 然后，单 **[!UICONTROL 击]** “下一步”继续。
+
+   * Click **[!UICONTROL Cancel]** to stop the process.
    >[!NOTE]
    >
-   >您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
-
-   >[!NOTE]
-   >
-   >不支持以下(以空格分隔的列表)字符：
-   >* 资产文件名不能包含  `* / : [ \ \ ] | # % { } ? &`
-   >* 资产文件夹名称不能包含  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
+   >* 重命名时，文件名中不允许有空格。
 
 
-1. On the **[!UICONTROL Select Destination]** page, do one of the following:
+1. On the **[!UICONTROL Select Destination]** dialog, do one of the following:
 
-   * Navigate to the new location for the assets, and then tap **[!UICONTROL Next]** to proceed.
-   * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** page.
+   * Navigate to the new location for the assets, and then click **[!UICONTROL Next]** to proceed.
+
+   * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Rename]** screen.
 
 1. 如果被移动的资产具有任何引用页面、资产或收藏集，则调整引 **[!UICONTROL 用选项卡会出]** 现在选择目 **[!UICONTROL 标选项卡]** 的旁边。
 
-   在“调整引用”页面上执 **[!UICONTROL 行下列操]** 作之一：
+   在“调整引用”屏幕中执 **[!UICONTROL 行下列操作]** :
 
-   * Specify the references to be adjusted based on the new details, and then tap **[!UICONTROL Move]** to proceed.
-   * From the **[!UICONTROL Adjust]** column, select or deselect references to the assets.
-   * Tap **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** page.
-   * 点按 **[!UICONTROL 取消]** ，以停止移动操作。
+   * Specify the references to be adjusted based on the new details, and then click **[!UICONTROL Move]** to proceed.
+
+   * From the **[!UICONTROL Adjust]** column, select/unselect references to the assets.
+   * Click **[!UICONTROL Back]** to return to the **[!UICONTROL Select Destination]** screen.
+
+   * 单击 **[!UICONTROL 取消]** ，以停止移动操作。
 
    如果您不更新引用，则它们会继续指向资产的上一路径。 如果您调整引用，它们将更新为新的资产路径。
 

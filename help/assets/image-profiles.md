@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: bca4e5ef625cae978120410f0b38692363d4f5f3
+source-git-commit: 9aae7ddac586a43f57dd34fc20df686ed2f8faca
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2714'
 ht-degree: 19%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 19%
 
 >[!IMPORTANT]
 >
->图像用户档案不适用于PDF、GIF或INDD(Adobe InDesign)文件。
+>图像用户档案不适用于PDF、动画GIF或INDD(Adobe InDesign)文件。
 
 ## Crop options {#crop-options}
 

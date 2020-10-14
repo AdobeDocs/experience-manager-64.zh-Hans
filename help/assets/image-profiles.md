@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: bca4e5ef625cae978120410f0b38692363d4f5f3
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2713'
 ht-degree: 19%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 19%
 
 >[!IMPORTANT]
 >
->图像用户档案不适用于PDF文件。
+>图像用户档案不适用于PDF、GIF或INDD(Adobe InDesign)文件。
 
 ## Crop options {#crop-options}
 
@@ -54,20 +54,20 @@ ht-degree: 19%
     <ul> 
      <li>值包括顶部、底部、左侧和右侧。</li> 
      <li>左上角被视为0,0，并从那里计算像素裁剪。</li> 
-     <li>裁剪起点： 左为X，上为Y</li> 
-     <li>水平计算： 原始图像的水平像素尺寸减去“左”，然后减去“右”。</li> 
-     <li>垂直计算： 垂直像素高度减去“顶部”，然后减去“底部”。</li> 
-    </ul> <p>例如，假定您的图像为4000 x 3000像素。 您使用以下值： 顶部=250，底部=500，左侧=300，右侧=700。</p> <p>从左上角(300,250)，使用（4000-300-700、3000-250-500或3000,2250）的填充空间进行裁剪。</p> </td> 
+     <li>裁剪起点：左为X，上为Y</li> 
+     <li>水平计算：原始图像的水平像素尺寸减去“左”，然后减去“右”。</li> 
+     <li>垂直计算：垂直像素高度减去“顶部”，然后减去“底部”。</li> 
+    </ul> <p>例如，假定您的图像为4000 x 3000像素。 您使用以下值：顶部=250，底部=500，左侧=300，右侧=700。</p> <p>从左上角(300,250)，使用（4000-300-700、3000-250-500或3000,2250）的填充空间进行裁剪。</p> </td> 
   </tr> 
   <tr> 
    <td>智能裁剪</td> 
    <td>根据图像的可视焦点批量裁剪图像。</td> 
-   <td><p>Smart Crop利用Adobe Sensei人工智能的强大功能快速实现批量图像裁剪自动化。 Smart Crop可自动检测并裁切到任何图像的焦点，以捕获预期的兴趣点，而不管屏幕大小。</p> <p>要使用智能裁剪，请 <strong>从“裁剪选项</strong> ”下拉列表中选择智能裁剪，然后在响应式图像裁剪的右侧，启用（打开）该功能。</p> <p>大、中和小的默认断点大小通常涵盖大多数图像在移动和平板电脑设备、桌面和横幅上使用的所有大小。 如果需要，可以编辑“大”、“中”和“小”的默认名称。</p> <p>要添加更多断点，请单击“添 <strong>加裁剪”</strong>; 要删除裁剪，请单击垃圾桶图标。</p> </td> 
+   <td><p>Smart Crop利用Adobe Sensei人工智能的强大功能快速实现批量图像裁剪自动化。 Smart Crop可自动检测并裁切到任何图像的焦点，以捕获预期的兴趣点，而不管屏幕大小。</p> <p>要使用智能裁剪，请 <strong>从“裁剪选项</strong> ”下拉列表中选择智能裁剪，然后在响应式图像裁剪的右侧，启用（打开）该功能。</p> <p>大、中和小的默认断点大小通常涵盖大多数图像在移动和平板电脑设备、桌面和横幅上使用的所有大小。 如果需要，可以编辑“大”、“中”和“小”的默认名称。</p> <p>要添加更多断点，请单击“添 <strong>加裁剪”</strong>;要删除裁剪，请单击垃圾桶图标。</p> </td> 
   </tr> 
   <tr> 
    <td>颜色和图像样本</td> 
    <td>批量为每个图像生成一个图像样本。</td> 
-   <td><p><strong>注意</strong>: Dynamic Media Classic不支持智能色板。</p> <p>从显示颜色或纹理的产品图像自动定位和生成高质量样本。</p> <p>要使用颜色和图像色板， <strong>请从</strong> “裁剪选项”下拉列表中选择“智能裁剪”，然后在“颜色和图像色板”的右侧，启用（打开）该功能。 在“宽度”和“高度”文本框中输入像素值。</p> <p>虽然所有图像裁剪都可从演绎版边栏中使用，但只能通过复制URL功能使用色板。 请注意，必须使用您自己的查看组件在站点上呈现色板。 (这种情况的例外是传送横幅。 Dynamic Media为传送横幅中使用的色板提供查看组件。)</p> <p><strong>使用图像色板</strong></p> <p>图像样本的URL非常简单。 即：</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>其中， <code>:Swatch</code> 资产请求会附加到该资产请求。</p> <p><strong>使用色板</strong></p> <p>要使用色板，您需要 <code>req=userdata</code> 使用以下项：</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>例如，以下是Dynamic Media Classic(Scene7)中的样本资产：</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>下面是样本资产的相应 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>答 <code>req=userdata</code> 复如下：</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>注意</strong>:Dynamic Media Classic不支持智能色板。</p> <p>从显示颜色或纹理的产品图像自动定位和生成高质量样本。</p> <p>要使用颜色和图像色板， <strong>请从</strong> “裁剪选项”下拉列表中选择“智能裁剪”，然后在“颜色和图像色板”的右侧，启用（打开）该功能。 在“宽度”和“高度”文本框中输入像素值。</p> <p>虽然所有图像裁剪都可从演绎版边栏中使用，但只能通过复制URL功能使用色板。 请注意，必须使用您自己的查看组件在站点上呈现色板。 (这种情况的例外是传送横幅。 Dynamic Media为传送横幅中使用的色板提供查看组件。)</p> <p><strong>使用图像色板</strong></p> <p>图像样本的URL非常简单。 即：</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>其中， <code>:Swatch</code> 资产请求会附加到该资产请求。</p> <p><strong>使用色板</strong></p> <p>要使用色板，您需要 <code>req=userdata</code> 使用以下项：</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>例如，以下是Dynamic Media Classic(Scene7)中的样本资产：</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>下面是样本资产的相应 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>答 <code>req=userdata</code> 复如下：</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -100,7 +100,7 @@ In **Unsharp Mask**, you have the following filtering options:
   </tr> 
   <tr> 
    <td>阈值</td> 
-   <td><p>确定应用USM锐化滤镜时要忽略的对比度范围。 换句话说，此选项确定锐化的像素与周围区域必须存在多大的不同，才能被视为边缘像素并进行锐化。 要避免引入杂色，请尝试0到255之间的值。</p> </td> 
+   <td><p>确定应用USM锐化滤镜时要忽略的对比度范围。换句话说，此选项确定锐化的像素与周围区域必须存在多大的不同，才能被视为边缘像素并进行锐化。 要避免引入杂色，请尝试0到255之间的值。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -213,7 +213,7 @@ In **Unsharp Mask**, you have the following filtering options:
 
    * 在页面的右上角附近，向左或向右拖动滑块条，分别增加或减少图像显示。
    * 在图像上，拖动角手柄以调整裁剪或色板的可查看区域的大小。
-   * 在图像上，将框／色板拖动到新位置。 您只能编辑图像色板； 色板是静态的。
+   * 在图像上，将框／色板拖动到新位置。 您只能编辑图像色板；色板是静态的。
    * 在图像上方，点按 **[!UICONTROL 还原]** ，以撤消所有编辑并恢复原始裁剪或色板。
 
 1. 在页面的右上角附近，点按保 **[!UICONTROL 存]**，然 **[!UICONTROL 后点]** 按关闭，以返回到资产文件夹。

@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4部署指南
-breadcrumb-title: Deploying Guide
-user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
+user-guide-title: AEM 6.4 Deploying 指南
+breadcrumb-title: Deploying 指南
+user-guide-description: 详细了解 Adobe Experience Manager 6.4 的安装、部署和架构，包括我们的 Adobe Managed Services 云部署。
 translation-type: tm+mt
 source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 11%
+source-wordcount: '349'
+ht-degree: 18%
 
 ---
 
 
-# AEM 6.4部署用户指南 {#deploying}
+# AEM 6.4 Deploying User Guide {#deploying}
 
 + [部署用户指南](home.md)
 + AEM平台简介 {#introduction}

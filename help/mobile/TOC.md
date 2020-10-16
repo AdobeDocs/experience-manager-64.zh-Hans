@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4移动用户指南
-breadcrumb-title: Mobile Guide
-user-guide-description: Create and manage content for mobile apps.
+user-guide-title: AEM 6.4 移动用户指南
+breadcrumb-title: Mobile 指南
+user-guide-description: 创建和管理移动应用程序的内容。
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 7%
+source-wordcount: '324'
+ht-degree: 12%
 
 ---
 
 
-# AEM 6.4移动用户指南 {#mobile}
+# AEM 6.4 移动用户指南 {#mobile}
 
 + [移动用户指南概述](home.md)
 + Introduction to AEM Mobile {#introduction}

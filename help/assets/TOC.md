@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: 资产指南
-breadcrumb-title: Assets Guide
-user-guide-description: Create, manage, deliver, and optimize digital assets.
+user-guide-title: Assets 指南
+breadcrumb-title: Assets 指南
+user-guide-description: 创建、管理、交付和优化数字资产。
 translation-type: tm+mt
 source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 47%
+source-wordcount: '723'
+ht-degree: 48%
 
 ---
 
 
-# 资产指南 {#assets}
+# Assets 指南 {#assets}
 
 + [资产用户指南](home.md)
 + [AEM 6.4 Assets发行说明](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)

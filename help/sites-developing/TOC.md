@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4开发用户指南
-breadcrumb-title: Developing Guide
-user-guide-description: This guide covers how to build out your AEM instance.
+user-guide-title: AEM 6.4 Developing 用户指南
+breadcrumb-title: Developing 指南
+user-guide-description: 本指南介绍如何构建 AEM 实例。
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 10%
+source-wordcount: '815'
+ht-degree: 12%
 
 ---
 
 
-# AEM 6.4开发用户指南 {#developing}
+# AEM 6.4 Developing 用户指南 {#developing}
 
 + [开发用户指南概述](home.md)
 + 开发人员简介{#introduction}
@@ -103,9 +103,9 @@ ht-degree: 10%
    + 单页应用程序{#spas}
       + [SPA简介和演练](spa-walkthrough.md)
       + [SPA WKND教程](spa-wknd.md)
-      + [AEM中的SPA入门——反应](spa-getting-started-react.md)
-      + [AEM中的SPA入门——角度](spa-getting-started-angular.md)
-      + [为SPA实施React组件](spa-implementing-react-component.md)
+      + [SPA AEM入门——反应](spa-getting-started-react.md)
+      + [SPA AEM入门——角度](spa-getting-started-angular.md)
+      + [为SPA实施React Component](spa-implementing-react-component.md)
       + [SPA深海潜水](spa-deep-dives.md)
       + [SPA编辑器概述](spa-overview.md)
       + [为AEM开发SPA](spa-architecture.md)
@@ -113,9 +113,9 @@ ht-degree: 10%
       + [SPA页面组件](spa-page-component.md)
       + [SPA的动态模型到组件映射](spa-dynamic-model-to-component-mapping.md)
       + [SPA模型路由](spa-routing.md)
-      + [SPA与Adobe Experience Platform Launch集成](spa-launch.md)
+      + [SPA和Adobe Experience Platform Launch集成](spa-launch.md)
       + [SPA和服务器端渲染](spa-ssr.md)
-      + [SPA参考资料](spa-reference-materials.md)
+      + [SPA参考材料](spa-reference-materials.md)
    + [HTTP API](/help/assets/mac-api-assets.md)
    + [内容片段](/help/assets/content-fragments.md)
    + [体验片段](/help/sites-authoring/experience-fragments.md)

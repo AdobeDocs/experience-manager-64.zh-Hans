@@ -3,13 +3,13 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Adobe Experience Manager6.4发行说明
-breadcrumb-title: Release Notes
-user-guide-description: Learn about the latest new features in AEM 6.4 in the release notes.
+breadcrumb-title: 发行说明
+user-guide-description: 在发行说明中了解AEM 6.4的最新新增功能。
 translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 28%
+source-wordcount: '91'
+ht-degree: 26%
 
 ---
 

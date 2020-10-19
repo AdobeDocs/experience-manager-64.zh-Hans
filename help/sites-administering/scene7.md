@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '5477'
+source-wordcount: '5491'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 ## AEM/Dynamic Media Classic集成与Dynamic Media {#aem-scene-integration-versus-dynamic-media}
 
-AEM用户可以选择两种解决方案来使用dynamic media: 将其AEM实例与Dynamic Media Classic集成，或使用集成到AEM的Dynamic Media解决方案。
+AEM用户可以选择两种解决方案来使用dynamic media:将其AEM实例与Dynamic Media Classic集成，或使用集成到AEM的Dynamic Media解决方案。
 
 使用以下条件确定要选择的解决方案：
 
@@ -53,7 +53,7 @@ AEM用户可以选择两种解决方案来使用dynamic media: 将其AEM实例�
 在此解决方案中处理资产时，您需要执行下列操作之一：
 
 * 将资产直接上传到Dynamic Media Classic，然后通过Dynamic Media Classic内 **容浏览器访问** ，以进行页面创作或
-* 上传到AEM Assets，然后启用自动发布到Dynamic Media Classic; 您可以通过资 **产内容** 浏览器访问以进行页面创作
+* 上传到AEM Assets，然后启用自动发布到Dynamic Media Classic;您可以通过资 **产内容** 浏览器访问以进行页面创作
 
 您用于此集成的组件位于设计模 **式的Dynamic Media** Classic组件 [区域。](/help/sites-authoring/author-environment-tools.md#page-modes)
 
@@ -160,8 +160,8 @@ AEM Dynamic Media是直接在AEM平台内统一Dynamic Media Classic功能。
     </tbody> 
     </table>
 
-1. (可选； 请参阅用例表)-设置 [Dynamic Media云配置](/help/assets/config-dynamic.md)[并启用Dynamic Media Server](/help/assets/config-dynamic.md)。
-1. (可选； 请参阅用例表)-如果您选择启用从资产自动上传到Dynamic Media Classic，则需要添加以下内容：
+1. (可选；请参阅用例表)-设置 [Dynamic Media云配置](/help/assets/config-dynamic.md)[并启用Dynamic Media Server](/help/assets/config-dynamic.md)。
+1. (可选；请参阅用例表)-如果您选择启用从资产自动上传到Dynamic Media Classic，则需要添加以下内容：
 
    1. 设置自动上传到Dynamic Media Classic。
    1. 在Dam更 **新资产工作流结束** 、所有Dynamic Media工作流步骤之 *后添加Dynamic Media* Classic上 **传步骤(** `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
@@ -217,7 +217,7 @@ Adobe建议您通过让根文件夹仅指向子文件夹而不是整个公司来
 要配置Dynamic Media Classic以与AEM集成，您需要完成以下步骤：
 
 1. [定义云配置](#creating-a-cloud-configuration-for-scene) -定义Dynamic Media Classic文件夹与Assets文件夹之间的映射。 即使您只想单向(AEM Assets到Dynamic Media Classic)同步，也需要完成此步骤。
-1. [启用 **Adobe CQ的s7dam Dam监听器&#x200B;**](#enabling-the-adobe-cq-scene-dam-listener)-在OSGi控[!UICONTROL 制台中]完成。
+1. [启用 **Adobe CQ的s7dam Dam监听器**](#enabling-the-adobe-cq-scene-dam-listener) -在OSGi控 [!UICONTROL 制台中] 完成。
 1. 如果您希望AEM资产自动上传到Dynamic Media Classic，您需要打开该选项，并将Dynamic Media Classic添加到DAM更新资产工作流。 您还可以手动上传资产。
 1. 将动态媒体经典组件添加到Sidekick。 这允许用户在其AEM页面上使用Dynamic Media Classic组件。
 1. [将配置映射到AEM中的页面](#enabling-scene-for-wcm) -此步骤是视图您在Dynamic Media Classic中创建的任何视频预设所必需的。 如果您需要将资产从CQ目标文件夹外部发布到Dynamic Media Classic，也需要执行此操作。
@@ -303,7 +303,7 @@ Adobe建议您通过让根文件夹仅指向子文件夹而不是整个公司来
 
 >[!NOTE]
 >
->您可以有多个配置： 一个云配置表示Dynamic Media Classic公司的一个用户。 如果要访问其他Dynamic Media Classic公司或用户，您需要创建多个配置。
+>您可以有多个配置：一个云配置表示Dynamic Media Classic公司的一个用户。 如果要访问其他Dynamic Media Classic公司或用户，您需要创建多个配置。
 
 要将AEM配置为能够将资产发布到Dynamic Media Classic，请执行以下操作：
 
@@ -323,7 +323,7 @@ Adobe建议您通过让根文件夹仅指向子文件夹而不是整个公司来
 
 1. 输入Dynamic Media Classic帐户的电子邮件地址、密码和区域，然后点 **[!UICONTROL 按连接到Dynamic Media Classic]**。 您已连接到Dynamic Media Classic服务器，该对话框会扩展，并显示更多选项。
 
-1. 输入 **[!UICONTROL 公司]** 名 **[!UICONTROL 称和根路径]** (这是已发布的服务器名称以及要指定的任何路径； 如果您不知道已发布的服务器名称，请在Dynamic Media Classic中，转到“设置”>“ **[!UICONTROL 应用程序设置]**”。)
+1. 输入 **[!UICONTROL 公司]** 名 **[!UICONTROL 称和根路径]** (这是已发布的服务器名称以及要指定的任何路径；如果您不知道已发布的服务器名称，请在Dynamic Media Classic中，转到“设置”>“ **[!UICONTROL 应用程序设置]**”。)
 
    >[!NOTE]
    >
@@ -373,7 +373,7 @@ Adobe建议您通过让根文件夹仅指向子文件夹而不是整个公司来
 
    >[!NOTE]
    >
-   >最佳实践： 大多数资源最多只需几分钟即可摄取（例如，图像）。 但在某些情况下（例如，视频较大），超时值应增加到7200秒（2小时）以适应较长的处理时间。 否则，此Dynamic Media Classic上传作业在JCR元数 **[!UICONTROL 据中被标]** 为UploadFailed。
+   >最佳实践：大多数资源最多只需几分钟即可摄取（例如，图像）。 但在某些情况下（例如，视频较大），超时值应增加到7200秒（2小时）以适应较长的处理时间。 否则，此Dynamic Media Classic上传作业在JCR元数 **[!UICONTROL 据中被标]** 为UploadFailed。
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
 
@@ -425,7 +425,7 @@ Adobe建议您通过让根文件夹仅指向子文件夹而不是整个公司来
 
 在将资产推送到Dynamic Media Classic而不发布之前，您必须设置以下各项：
 
-1. 联系Dynamic Media Classic客户关怀(s7support@adobe.com)，为您的Dynamic Media Classic帐户启用安全预览。
+1. [使用Admin Console创建支持案例。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 在您的支持情况下，请求为您的Dynamic Media Classic帐户启用安全预览。
 1. 按照说明为 [您的Dynamic Media Classic帐户设置安全预览。](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 这些步骤与在Dynamic Media Classic中创建任何安全测试设置的步骤相同。
@@ -454,11 +454,11 @@ Adobe建议您通过让根文件夹仅指向子文件夹而不是整个公司来
 要将推送到Dynamic Media Classic的资产状态设置为未发布，请执行以下操作：
 
 1. 点按AEM图标并导航到 **[!UICONTROL 部署>Cloud Services]**，点 **[!UICONTROL 按Dynamic Media Classic]**，然后在Dynamic Media Classic中选择配置。
-1. 点按&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。在“启 **[!UICONTROL 用安全视图]** ”下拉菜单中，选 **[!UICONTROL 择“在AEM发布激活时]** ”，将资产推送到Dynamic Media Classic而不进行发布。 (默认情况下，此值设置为“立 **[!UICONTROL 即]**”，其中Dynamic Media Classic资产会立即发布。)
+1. 点按&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。在启 **[!UICONTROL 用安全视图]** 下拉菜单中，选 **[!UICONTROL 择在AEM发布激活上，将资]** 产推送到Dynamic Media Classic而不进行发布。 (默认情况下，此值设置为“立 **[!UICONTROL 即]**”，其中Dynamic Media Classic资产会立即发布。)
 
    有关 [在资产公开前测试资产](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html) ，请参阅动态媒体经典文档。
 
-   ![chlimage_1-382](assets/chlimage_1-302.png)
+   ![chlimage_1-302](assets/chlimage_1-302.png)
 
 1. 点按 **[!UICONTROL 确定]**。
 

@@ -138,7 +138,7 @@ ht-degree: 4%
 
 * Adobe Sign调度程序间歇性地停止工作，因此待签名的表单不会移至提交。 要解决此问题，请从AEM **Web控制台(** https:// server:port [*/system*]/console/bundles)重新启&#x200B;[**]&#x200B;动Apache Sling调度程序支持包。
 
-### 自适应Forms创作
+### 自适应Forms创作 {#forms-1}
 
 * 自适应表单中的图表组件占用的空间比通常占用的空间要多。
 * 在Forms管理器UI中保存自适应表单、自适应表单片段或交互式通信的属性时，会返回异常。

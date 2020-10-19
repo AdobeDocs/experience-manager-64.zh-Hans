@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: afbe9f80-c2a3-4a46-b9d6-4c9406667d7f
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '761'
 ht-degree: 4%
 
 ---
@@ -57,9 +57,8 @@ Adobe自己的测试得出以下结果：
 
 ## 为我的Dynamic Media Classic帐户启用HTTP/2的过程是什么？ {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-您必须发起Adobe技术支持(`s7support@adobe.com`)请求，以切换到HTTP/2; 它不会自动为您完成。
-
-1. 在您的支持请求中提供以下信息：
+1. 必须 [使用Admin Console创建支持案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ，并请求切换到HTTP/2;它不会自动为您完成。
+1. 在您的支持案例中提供以下信息：
 
    * 主要联系人姓名、电子邮件和电话号码。
    * 要过渡到HTTP2的所有域。 就是， `images.company.com` 或者 `mycompany.scene7.com`.
@@ -98,4 +97,4 @@ HTTP/2过渡将清除CDN中的缓存，因为它涉及到移到新的CDN配置�
 
 ## 如何验证URL或网站是否已通过HTTP/2激活？ {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-您需要下载外部才能与Web浏览器一起使用。 对于Firefox和Chrome，有一个名为HTTP/ **[!UICONTROL 2和SPDY Indicator的扩展]**。 浏览器仅安全地支持HTTP/2，因此有必要使用HTTPS调用URL进行验证。 如果支持HTTP/2，则此扩展以蓝色Flash符号和标题“X-Firefox-Spdy”表示： “h2”。
+您需要下载外部才能与Web浏览器一起使用。 对于Firefox和Chrome，有一个名为HTTP/ **[!UICONTROL 2和SPDY Indicator的扩展]**。 浏览器仅安全地支持HTTP/2，因此有必要使用HTTPS调用URL进行验证。 如果支持HTTP/2，则此扩展以蓝色Flash符号和标题“X-Firefox-Spdy”表示：“h2”。

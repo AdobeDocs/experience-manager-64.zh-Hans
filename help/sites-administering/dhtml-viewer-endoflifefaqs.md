@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 1%
+source-wordcount: '1665'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 **Scene7为何要做出这一改变？**
 
-Web标准不断发展，DHTML是一种较旧的Web开发技术，正迅速被HTML5所取代。 作为平台，DHTML的最大局限性在于它无法创建HTML5现在可以一致、更轻松地支持跨浏览器的丰富体验。 例如，此类限制包括缺乏对以下产品的跨浏览器支持：
+Web标准不断发展，DHTML是一种较旧的Web开发技术，正迅速被HTML5所取代。 作为平台，DHTML的最大局限性在于它无法创造HTML5现在可以一致、更轻松地支持跨浏览器的丰富体验。 例如，此类限制包括缺乏对以下产品的跨浏览器支持：
 
 * 自定义光标
 * 圆角
@@ -127,8 +127,8 @@ HTML5 SDK版本2.2.1的当前系统要求为：
 
 **如果要借助现有DHTML查看器保持生产实时状态，有哪些选项？**
 
-尽管您仍可以与基于DHTML的查看器一起在生产环境中实时工作，但务必注意，2014年1月31日之后将不会进行任何增强、错误修复或客户关怀。 因此，我们强烈建议所有客户迁移到更强大的HTML5查看器平台。 . 但是，如果您的业务状况在EOL日期之前阻止了此类迁移，您可以选择与专业服务部门签订合同，以延长支持的维护时间。 有关详细信息，请联系您的客户经理。
+尽管您仍可以与基于DHTML的查看器一起在生产环境中实时工作，但务必注意，2014年1月31日之后将不会进行任何增强、错误修复或客户关怀。 因此，我们强烈建议所有客户迁移到更强大的HTML5查看器平台。. 但是，如果您的业务状况在EOL日期之前阻止了此类迁移，您可以选择与专业服务部门签订合同，以延长支持的维护时间。 有关详细信息，请联系您的客户经理。
 
 **我应与谁联系以了解更多信息？**
 
-如果此常见问题解答未回答您的所有问题，请联系支持([s7support@adobe.com](mailto:s7support@adobe.com))或您的Adobe客户经理。
+如果此常见问题解答没有回答您的所有问题，请 [使用Admin Console创建支持案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ，或与您的Adobe客户经理联系。

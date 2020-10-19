@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 83f8fc7773941a429bdf47425add64d2363e7851
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1758'
 ht-degree: 2%
 
 ---
@@ -118,10 +118,10 @@ Dynamic Media许可证不需要支付任何额外费用即可获得您的第一�
 
 ## 为我的帐户启用智能成像的过程是什么？ {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-您必须启动使用智能成像的请求； 它不会自动启用。
+您必须启动使用智能成像的请求；它不会自动启用。
 
-1. 发起技术支持请求(电子邮件： s7support@adobe.com)。
-1. 在您的支持请求中提供以下信息：
+1. [使用Admin Console创建支持案例。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. 在您的支持案例中提供以下信息：
 
    1. 主要联系人姓名、电子邮件、电话。
    1. 要启用智能成像的所有域(即images.公司.com或mycompany.scene7.com)。
@@ -143,7 +143,7 @@ Dynamic Media许可证不需要支付任何额外费用即可获得您的第一�
 
 1. 技术支持将根据请求的提交顺序将您添加到智能图像处理客户等待列表。
 1. 当Adobe准备好处理您的请求时，支持人员将与您联系以协调和设置目标日期。
-1. **可选**: 在Adobe将新功能推向生产之前，您可以选择在暂存中测试智能成像。
+1. **可选**:在Adobe将新功能推向生产之前，您可以选择在暂存中测试智能成像。
 1. 完成后，支持会通知您。
 1. 为最大限度地提高智能成像的性能，Adobe建议将生存时间(TTL)设置为24小时或更长。 TTL定义CDN缓存资源的时长。 要更改此设置：
 
@@ -159,7 +159,7 @@ Dynamic Media许可证不需要支付任何额外费用即可获得您的第一�
 
 ## 改用智能成像有哪些风险？ {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-客户网页不存在风险。 但是，您应该注意到，智能成像过渡会清除CDN中的缓存，因为它涉及到在AEM上转向新的Dynamic Media Classic或Dynamic Media配置。
+客户网页不存在风险。 但是，您应该注意到，智能成像过渡会清除CDN中的缓存，因为它涉及到在AEM上切换到新的Dynamic Media Classic或Dynamic Media配置。
 
 在初始过渡期间，非缓存图像直接点击Adobe的来源服务器，直到重新构建缓存。 因此，Adobe计划一次处理几个客户过渡，以便在从来源处理请求时保持可接受的性能。 对于大多数客户，在1到2天内在CDN重新完全建立缓存。
 

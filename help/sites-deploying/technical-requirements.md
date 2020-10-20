@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 65346b3de98ec53e97c66fdac3be43b9c71e292a
+source-git-commit: d09956e5e7fb42e9c4b145e027778f209876239a
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3142'
 ht-degree: 2%
 
 ---
@@ -68,11 +68,11 @@ Adobe建议这些配置，并作为标准软件维护协议的一部分提供全
    <td>描述<br /> </td> 
   </tr> 
   <tr> 
-   <td><strong>答： 支持</strong></td> 
+   <td><strong>答：支持</strong></td> 
    <td>Adobe为此配置提供全面支持和维护。 此配置由Adobe的质量保证流程涵盖。</td> 
   </tr> 
   <tr> 
-   <td><strong>R: 受限支持</strong></td> 
+   <td><strong>R:受限支持</strong></td> 
    <td>为了确保我们的客户项目成功，Adobe在受限的支持项目内提供全面支持，这要求满足特定条件。 R级支持需要正式的客户请求和Adobe确认。 有关详细信息，请与Adobe客户服务联系。</td> 
   </tr> 
  </tbody> 
@@ -82,7 +82,7 @@ Adobe建议这些配置，并作为标准软件维护协议的一部分提供全
 
 | 支持级别 | 描述 |
 |---|---|
-| **Z: 不支持** | 不支持此配置。 Adobe不对配置是否工作做出任何声明，也不支持配置。 |
+| **Z:不支持** | 不支持此配置。 Adobe不对配置是否工作做出任何声明，也不支持配置。 |
 
 ## 支持的平台 {#supported-platforms}
 
@@ -104,27 +104,27 @@ Adobe Experience Manager使用以下版本的Java虚拟机：
   </tr> 
   <tr> 
    <td>Oracle Java SE 11 JDK [1]</td> 
-   <td>Z: 不支持 </td> 
+   <td>Z:不支持 </td> 
   </tr> 
   <tr> 
    <td>Oracle Java SE 10 JDK [1]</td> 
-   <td>Z: 不支持 </td> 
+   <td>Z:不支持 </td> 
   </tr> 
   <tr> 
    <td>Oracle Java SE 9 JDK [1]</td> 
-   <td>Z: 不支持</td> 
+   <td>Z:不支持</td> 
   </tr> 
   <tr> 
    <td><strong>Oracle Java SE 8 JDK - 64位</strong></td> 
-   <td>答： 支持[3]<br /> </td> 
+   <td>答：支持[3]<br /> </td> 
   </tr> 
   <tr> 
    <td>IBM J9 VM —— 内部版本2.9,JRE 1.8.0 [2]</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>IBM J9 VM —— 内部版本2.8,JRE 1.8.0 [2]</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
  </tbody> 
 </table>
@@ -148,82 +148,82 @@ Adobe Experience Manager使用以下版本的Java虚拟机：
   <tr> 
    <td><strong>带有TAR文件的文件系统[1]</strong></td> 
    <td>存储库</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td><strong>带有数据存储区[1]的文件系统</strong></td> 
    <td>二进制文件</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>在文件系统[1]的TAR文件中存储二进制文件</td> 
    <td>二进制文件</td> 
-   <td>Z: 不支持生产</td> 
+   <td>Z:不支持生产</td> 
   </tr> 
   <tr> 
    <td>AmazonS3</td> 
    <td>二进制文件</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>Microsoft Azure Blob存储</td> 
    <td>二进制文件</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>MongoDB Enterprise 3.6 [5]</td> 
    <td>存储库</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>MongoDB Enterprise 3.4 [2, 3]</td> 
    <td>存储库</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>MySQL 5.7</td> 
    <td>Forms数据库</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>IBM DB2 11.1<br /> </td> 
    <td>Forms数据库</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>IBM DB2 10.5</td> 
    <td>存储库和Forms数据库</td> 
-   <td>R: 受限支持(4)</td> 
+   <td>R:受限支持(4)</td> 
   </tr> 
   <tr> 
    <td>Oracle Database 12c(12.1.x)</td> 
    <td>存储库和Forms数据库</td> 
-   <td>R: 受限支持</td> 
+   <td>R:受限支持</td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server 2017</td> 
    <td>Forms数据库</td> 
-   <td>Z: 不支持(4)</td> 
+   <td>Z:不支持(4)</td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server 2016</td> 
    <td>Forms数据库</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server 2014</td> 
    <td>Forms数据库</td> 
-   <td>R: 受限支持(4)</td> 
+   <td>R:受限支持(4)</td> 
   </tr> 
   <tr> 
    <td><strong>Apache Lucene（Quickstart内置）</strong></td> 
    <td>搜索服务</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>阿帕奇索尔</td> 
    <td>搜索服务</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
  </tbody> 
 </table>
@@ -268,13 +268,13 @@ Adobe Experience Manager可以作为独立服务器（快速启动JAR文件）�
 
 | 平台 | 支持级别 |
 |---|---|
-| **快速启动内置Servlet引擎(Jetty 9.3)** | 答： 支持 |
-| Oracle WebLogic Server 12.2(12cR2) | 答： 支持 |
-| IBM WebSphere Application Server Continuous投放(LibertyProfile)，带Web用户档案7.0和IBM JRE 1.8 | 答： 支持 |
-| IBM WebSphere Application Server 9.0 | 答： 支持 |
-| Apache Tomcat 8.5.x | 答： 支持 |
-| JBoss EAP 7.1.0（带JBoss应用程序服务器） | 答： 支持(1) |
-| JBoss EAP 7.0.0（带JBoss应用程序服务器） | 答： 支持 |
+| **快速启动内置Servlet引擎(Jetty 9.3)** | 答：支持 |
+| Oracle WebLogic Server 12.2(12cR2) | 答：支持 |
+| IBM WebSphere Application Server Continuous投放(LibertyProfile)，带Web用户档案7.0和IBM JRE 1.8 | 答：支持 |
+| IBM WebSphere Application Server 9.0 | 答：支持 |
+| Apache Tomcat 8.5.x | 答：支持 |
+| JBoss EAP 7.1.0（带JBoss应用程序服务器） | 答：支持(1) |
+| JBoss EAP 7.0.0（带JBoss应用程序服务器） | 答：支持 |
 
 1. 不支持AEM Forms。
 
@@ -290,43 +290,43 @@ Adobe Experience Manager使用以下服务器平台：
   </tr> 
   <tr> 
    <td><strong>Linux，基于Red Hat分发</strong></td> 
-   <td>答： 支持(1)</td> 
+   <td>答：支持(1)</td> 
   </tr> 
   <tr> 
    <td>Linux，基于Debian分发，包括 乌本图</td> 
-   <td>答： 支持(4)</td> 
+   <td>答：支持(4)</td> 
   </tr> 
   <tr> 
    <td>Linux，基于SUSE分发</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>Microsoft Windows Server 2016</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>Microsoft Windows Server 2012 R2</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>Oracle Solaris 11</td> 
-   <td>答： 受限制(3,5,7)<br /> R: 对新合同的限制支持</td> 
+   <td>答：受限制(3,5,7)<br /> R:对新合同的限制支持</td> 
   </tr> 
   <tr> 
    <td>IBM AIX 7.2</td> 
-   <td>答： 受限制(2,5,7)<br /> R: 对新合同的限制支持</td> 
+   <td>答：受限制(2,5,7)<br /> R:对新合同的限制支持</td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Linux内核2.6、3.x和4.x包含Red Hat分发的衍生产品，包括Red Hat Enterprise Linux、CentOS、Oracle Linux和AmazonLinux。 AEM表单加载项功能仅在CentOS 7和Red Hat Enterprise Linux 6.5和7上受支持。
-1. AEM Assets: 请参见XMP元 [数据回写支持部分](#requirements-for-aem-assets-xmp-metadata-write-back)
-1. AEM Assets: 不支持Dynamic Media Imaging。 支持Dynamic Media视频。
+1. Linux内核2.6、3.x和4.x包含Red Hat分发的衍生产品，包括Red Hat Enterprise Linux、CentOS、Oracle Linux和AmazonLinux。 AEM Forms加载项功能仅在CentOS 7和Red Hat Enterprise Linux 7上受支持。
+1. AEM Assets:请参见XMP元 [数据回写支持部分](#requirements-for-aem-assets-xmp-metadata-write-back)
+1. AEM Assets:不支持Dynamic Media Imaging。 支持Dynamic Media视频。
 1. AEM Forms仅在Ubuntu 16.04 LTS上受支持。
-1. AEM Assets: 不支持原始 [文件转换](/help/assets/camera-raw.md)
-1. AEM Forms: 不支持生产环境
-1. AEM Assets: 不支持增强 [的PDF光栅器](/help/assets/aem-pdf-rasterizer.md)
-1. AEM Forms: 不支持
+1. AEM Assets:不支持原始 [文件转换](/help/assets/camera-raw.md)
+1. AEM Forms:不支持生产环境
+1. AEM Assets:不支持增强 [的PDF光栅器](/help/assets/aem-pdf-rasterizer.md)
+1. AEM Forms:不支持
 
 ### 虚拟和云计算环境 {#virtual-cloud-computing-environments}
 
@@ -346,14 +346,14 @@ Adobe建议使用Adobe Managed Services在Azure或AWS上部署AEM。 Adobe Manag
 
 | 平台 | 支持级别 |
 |---|---|
-| **Apache httpd 2.4.x** （另请参阅下面的1,2） | 答： 支持 |
-| Microsoft IIS 10(Internet Information Server) | 答： 支持 |
-| Microsoft IIS 8.5(Internet Information Server) | 答： 支持 |
+| **Apache httpd 2.4.x** （另请参阅下面的1,2） | 答：支持 |
+| Microsoft IIS 10(Internet Information Server) | 答：支持 |
+| Microsoft IIS 8.5(Internet Information Server) | 答：支持 |
 
 1. 基于Apache httpd源代码构建的Web服务器将具有与其所基于的httpd版本相同的支持级别。 如果有疑问，请向Adobe咨询，以确认与相应服务器产品相关的支持级别。 以下情况：
 
    1. HTTP服务器是仅使用Apache源正式分发或
-   1. HTTP服务器作为运行它的操作系统的一部分进行传送。 示例： IBM HTTP Server、Oracle HTTP Server
+   1. HTTP服务器作为运行它的操作系统的一部分进行传送。 示例：IBM HTTP Server、Oracle HTTP Server
 
 1. Dispatcher不适用于Windows操作系统的Apache 2.4.x。
 
@@ -380,58 +380,58 @@ AEM用户界面针对大屏幕（通常是笔记本和台式计算机）和平�
   </tr> 
   <tr> 
    <td><strong>Google Chrome(Evergreen)</strong></td> 
-   <td>答： 支持</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>Microsoft Edge(Evergreen)</td> 
-   <td>答： 支持</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>Microsoft Internet Explorer 11</td> 
-   <td>答： 支持</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>Mozilla Firefox(Evergreen)</td> 
-   <td>答： 支持</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>Mozilla Firefox最后一个ESR [1]</td> 
-   <td>答： 支持</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>macOS上的Apple Safari 12.x</td> 
-   <td>答： 支持</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>macOS上的Apple Safari 11.x</td> 
-   <td>答： 支持</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>macOS上的Apple Safari 10.x</td> 
-   <td>答： 支持</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
+   <td>答：支持</td> 
   </tr> 
   <tr> 
    <td>iOS 12.x上的Apple Safari</td> 
-   <td>答： 支持[2]</td> 
-   <td>Z: 不支持</td> 
+   <td>答：支持[2]</td> 
+   <td>Z:不支持</td> 
   </tr> 
   <tr> 
    <td>iOS 11.x上的Apple Safari</td> 
-   <td>答： 支持[2]</td> 
-   <td>Z: 不支持</td> 
+   <td>答：支持[2]</td> 
+   <td>Z:不支持</td> 
   </tr> 
   <tr> 
    <td>iOS 10.3上的Apple Safari</td> 
-   <td>答： 支持[2]</td> 
-   <td>Z: 不支持</td> 
+   <td>答：支持[2]</td> 
+   <td>Z:不支持</td> 
   </tr> 
  </tbody> 
 </table>
@@ -441,7 +441,7 @@ AEM用户界面针对大屏幕（通常是笔记本和台式计算机）和平�
 
 ### 支持的网站浏览器 {#supported-browsers-for-websites}
 
-一般来说，AEM Sites提供的网站浏览器支持取决于AEM页面模板、设计和组件输出的实现，因此由执行这些部分的一方控制。
+一般来说，AEM Sites提供的网站浏览器支持取决于AEM页面模板、设计和组件输出的实现，因此由实施这些部分的一方控制。
 
 ### WebDAV客户端 {#webdav-clients}
 
@@ -494,9 +494,9 @@ AEM Dynamic Media默认处于禁用状态。 See [Enabling Dynamic Media](/help/
 启用Dynamic Media后，将适用以下附加系统要求：
 >[!NOTE]
 >
->以下系统要求 **_仅在_** “Dynamic Media —— 混合”模式下适用； Dynamic Media —— 混合模式具有嵌入式图像服务器，该服务器仅在某些操作系统上得到认证。
+>以下系统要求 **_仅在_** “Dynamic Media —— 混合”模式下适用；Dynamic Media —— 混合模式具有嵌入式图像服务器，该服务器仅在某些操作系统上得到认证。
 >
->对于运行Dynamic Media -Scene7模式(即 **dynamicmedia_scene7运行模式** )的Dynamic Media客户，没有其他系统要求； 系统要求与AEM相同。 动态媒体-Scene7模式体系架构使用基于云的图像服务，而不是嵌入在AEM中的服务。
+>对于运行Dynamic Media -Scene7模式(即 **dynamicmedia_scene7运行模式** )的Dynamic Media客户，没有其他系统要求；系统要求与AEM相同。 动态媒体-Scene7模式体系架构使用基于云的图像服务，而不是嵌入在AEM中的服务。
 
 #### 硬件 {#hardware}
 

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ AEM 6.4Forms的新增功能和增强功能摘要。
 
 AEM Forms包含若干新增功能和增强功能，它们通过自适应表单和交互式通信进一步简化了创建、管理和用户体验。
 
-阅读新增功能和增强功能的快速介绍。 访问文档以了解资源提供的详细信息。 另请参阅AEM 6.4Forms发 [行说明](/help/release-notes/forms.md)。 有关完整的AEM 6.4Forms文档，请 [访问AEM 6.4Forms用户指南](/help/forms/home.md)。
+阅读新增功能和增强功能的快速介绍。 访问文档以了解资源提供的详细信息。 另请参阅AEM 6.4Forms发 [行说明](/help/release-notes/forms.md)。 有关完整的AEM 6.4Forms文档，请 [访问AEM 6.4Forms指南](/help/forms/home.md)。
 
 ## 交互式通信 {#interactive-communications}
 
@@ -52,7 +52,7 @@ AEM Forms包含若干新增功能和增强功能，它们通过自适应表单�
 
 WYSIWYG拖放文档编辑器对业务友好。 资产的直观界面、拖放功能、标准组件、数据模型和集成存储库有助于快速轻松地创作交互式通信。
 
-要创建交互式通信或编辑现有通信，商业用户可以使用以下构件： 渠道、内容、属性、资产、组件和数据源。
+要创建交互式通信或编辑现有通信，商业用户可以使用以下构件：渠道、内容、属性、资产、组件和数据源。
 
 ![drag-n-drop-lf](assets/drag-n-drop-lf.png)
 
@@ -60,7 +60,7 @@ WYSIWYG拖放文档编辑器对业务友好。 资产的直观界面、拖放功
 
 ### 在交互式通信中从打印内容自动生成Web版本 {#auto-generate-web-version-from-print-content-in-interactive-communication}
 
-作者可以在同一个编辑器中自动生成从印刷文档到创作、预览和编辑印刷文档和Web文档的Web内容。 交互通信作者只需创建一次，即可发布到所有渠道。 交互式通信作者可以在打印和Web渠道中使用相同的文档片段，以防重复工作。
+作者可以在同一个编辑器中自动生成从印刷文档到创作、预览和编辑印刷文档和Web文档的Web内容。 交互通信作者只需创建一次，即可发布到所有渠道。 交互式通信作者可以在打印和Web渠道中使用相同的文档片段，以防止重复工作。
 
 有关详细信息，请参 [阅打印渠道和Web渠道](/help/forms/using/web-channel-print-channel.md)。
 
@@ -116,7 +116,7 @@ AEM Forms包含交互式通信的开箱即用主题。 使用主题，您还可�
 
 ![](do-not-localize/data-integeration-1.png)
 
-[AEM Forms数据集成](/help/forms/using/data-integration.md) 允许您配置不同的数据源； 例如数据库、基于RESTful或SOAP的Web服务以及OData服务； 创建表单数据模型，您可以使用该模型在自适应表单和文档中绑定数据、预填和调用服务。
+[AEM Forms数据集成](/help/forms/using/data-integration.md) 允许您配置不同的数据源；例如数据库、基于RESTful或SOAP的Web服务以及OData服务；创建表单数据模型，您可以使用该模型在自适应表单和文档中绑定数据、预填和调用服务。
 
 此版本中的数据集成新增了若干功能和增强功能。
 

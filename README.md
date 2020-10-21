@@ -1,12 +1,16 @@
 ---
-source-git-commit: 02ba51316b01c8e96a96735b95c60164df3a48ea
+source-git-commit: 725e1683aa1c7fe2ced6cb2e729a0435f3f883bb
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '84'
-ht-degree: 0%
+source-wordcount: '170'
+ht-degree: 3%
 
 ---
 # Adobe Experience Manager6.4文件
+
+| EXL-PR | EXL | 预览 | 激活 | 发布时间 | 帮助 |
+|--- |--- |--- |--- |--- |--- |
+| [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-64.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-64.en_pr-exl/lastBuild/) | [![生成状态](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-64.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-64.en_exl/lastBuild/lastBuild) | [预览URL](https://experienceleague.corp.adobe.com/docs/experience-manager-64/authoring/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [实时URL](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/home.html?lang=en) | [Authoring 指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 这是Adobe Experience Manager6.4文档的储存库。 本文档涵盖安装、管理、创作使用以及如何自定义AEM。
 

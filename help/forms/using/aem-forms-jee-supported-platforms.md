@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: ef8b12b462b05b6117d61d2877b16cbedfee42fd
+source-git-commit: 503910dbea671cf441307f4fa4bdc24e54fd338e
 workflow-type: tm+mt
-source-wordcount: '3276'
+source-wordcount: '3305'
 ht-degree: 1%
 
 ---
@@ -47,15 +47,15 @@ Adobe建议这些配置，并作为标准软件维护协议的一部分提供完
    <th>描述</th> 
   </tr> 
   <tr> 
-   <td>答： 支持<br /> </td> 
+   <td>答：支持<br /> </td> 
    <td>Adobe为此配置提供全面支持和维护。 此配置由Adobe的质量保证流程涵盖。</td> 
   </tr> 
   <tr> 
-   <td>R: 受限支持</td> 
+   <td>R:受限支持</td> 
    <td>Adobe在满足特定先决条件后提供对此配置的完全支持。 与Adobe企业支持部门联系，了解先决条件并提出支持请求。</td> 
   </tr> 
   <tr> 
-   <td>L: 有限支持</td> 
+   <td>L:有限支持</td> 
    <td>Adobe在满足特定先决条件后为此配置提供全面支持和维护。 并非所有功能在配置中都可用。 与Adobe企业支持部门联系，了解先决条件并提出支持请求。<br /> </td> 
   </tr> 
  </tbody> 
@@ -65,8 +65,8 @@ Adobe建议这些配置，并作为标准软件维护协议的一部分提供完
 
 | 支持级别 | 描述 |
 |---|---|
-| E: 预期可用 | 该配置预计会正常工作，而且没有相反的报告。 |
-| Z: 不支持 | 不支持此配置。 Adobe不对配置是否工作做出任何声明，也不支持配置。 |
+| E:预期可用 | 该配置预计会正常工作，而且没有相反的报告。 |
+| Z:不支持 | 不支持此配置。 Adobe不对配置是否工作做出任何声明，也不支持配置。 |
 
 ### Java虚拟机(JVM) {#java-virtual-machines-jvm}
 
@@ -81,12 +81,12 @@ Adobe Experience Manager Forms需要运行Java虚拟机，该虚拟机由Java开
   </tr> 
   <tr> 
    <td><p>Oracle Java™ SE 8（64位）</p> </td> 
-   <td><p>答： 支持</p> </td> 
+   <td><p>答：支持</p> </td> 
    <td><p>次要版本和更新</p> </td> 
   </tr> 
   <tr> 
    <td>IBM® J9 Virtual Machine（内部版本2.8,JRE 1.8.0）</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
    <td>次要版本和更新</td> 
   </tr> 
  </tbody> 
@@ -148,7 +148,7 @@ Adobe Experience Manager Forms需要运行Java虚拟机，该虚拟机由Java开
 * 仅支持MongoDB存储引擎WiredTiger。
 * AEM不支持MongoDB共享。
 * AEM Forms在JEE上不支持MySQL的RDBMK持久性。
-* 文档安全模块不使用内容存储库。 这意味着，如果您仅使用文档安全，并且不计划使用HTML Workspace、HTML5表单或自适应表单，则不要安装内容存储库。
+* 文档安全模块不使用内容存储库。 这意味着，如果您仅使用文档安全，并且不计划使用HTML Workspace、HTML5表单或自适应表单，则请勿安装内容存储库。
 * AEM FormsJEE支持Oracle多租户体系结构。
 
 #### 数据库支持 {#database-support}
@@ -231,17 +231,17 @@ Adobe Experience Manager Forms需要运行Java虚拟机，该虚拟机由Java开
   </tr> 
   <tr> 
    <td><p>Oracle WebLogic Server 12.2.1(12c R2) <sup>[1] [2] [4] [8]</sup></p> </td> 
-   <td><p>答： 支持</p> </td> 
+   <td><p>答：支持</p> </td> 
    <td><p>服务包和关键更新</p> </td> 
   </tr> 
   <tr> 
    <td>IBM® WebSphere® Application Server 9.0 <sup>[2] [6]</sup><br /> </td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
    <td>服务包和关键更新</td> 
   </tr> 
   <tr> 
    <td><p>JBoss®企业应用程序平台(EAP)7.0.6 <sup>[1] [4] [5] [7] [8][11]</sup></p> </td> 
-   <td><p>答： 支持</p> </td> 
+   <td><p>答：支持</p> </td> 
    <td><p>支持的EAP版本的修补程序和累积修补程序<br /> </p> </td> 
   </tr> 
  </tbody> 
@@ -264,42 +264,42 @@ Adobe Experience Manager Forms需要运行Java虚拟机，该虚拟机由Java开
   </tr> 
   <tr> 
    <td>Microsoft Windows Server 2016</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
    <td>服务包和关键更新</td> 
   </tr> 
   <tr> 
    <td><p>Microsoft Windows Server 2012 R2 V6.3</p> </td> 
-   <td><p>答： 支持</p> </td> 
+   <td><p>答：支持</p> </td> 
    <td><p>服务包和关键更新</p> </td> 
   </tr> 
   <tr> 
    <td><p>Oracle Solaris™ 11 - V5.11<sup> [3] [10]</sup></p> </td> 
-   <td><p>L: 有限</p> </td> 
+   <td><p>L:有限</p> </td> 
    <td><p>更新和修补程序</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Red Hat Enterprise Linux 7(Kernel 3.x)</p> </td> 
-   <td><p>答： 支持</p> </td> 
+   <td><p>Red Hat Enterprise Linux 7(Kernel 3.x)注</br><b>意：</b> Red Hat Enterprise Linux 6于2020年11月30日进入维护阶段，过渡进入延长寿命阶段。 Adobe建议使用Red Hat Enterprise Linux 7进行升级和新安装。</p> </td> 
+   <td><p>答：支持</p> </td> 
    <td><p>次要版本、累积更新和关键更新</p> </td> 
   </tr> 
   <tr> 
    <td><p>SUSE® Linux® Enterprise Server 12</p> </td> 
-   <td><p>答： 支持</p> </td> 
+   <td><p>答：支持</p> </td> 
    <td><p>服务包、累积修补程序和关键安全更新</p> </td> 
   </tr> 
   <tr> 
    <td>Oracle Linux® 7 Update 3</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
    <td>服务包、累积修补程序和关键安全更新</td> 
   </tr> 
   <tr> 
    <td>CentOS 7<sup> [9]</sup></td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
    <td>服务包、累积修补程序和关键安全更新</td> 
   </tr> 
   <tr> 
    <td>IBM AIX 7.2 [10]</td> 
-   <td>答： 有限支持</td> 
+   <td>答：有限支持</td> 
    <td>服务包、累积修补程序和关键安全更新</td> 
   </tr> 
  </tbody> 
@@ -324,7 +324,7 @@ Adobe Experience Manager Forms需要运行Java虚拟机，该虚拟机由Java开
   </tr> 
   <tr> 
    <td><p>Microsoft® Windows® 10</p> </td> 
-   <td>E: 预期可用</td> 
+   <td>E:预期可用</td> 
    <td><p>服务包和关键更新</p> </td> 
   </tr> 
  </tbody> 
@@ -549,29 +549,29 @@ AEM Forms的以下子系统不 [符合](https://www.section508.gov/) 508:
   </tr> 
   <tr> 
    <td>Microsoft Windows Server</td> 
-   <td>Intel® Xeon® E5-2680、2.4 GHz处理器或等效的VMWare<br /> ESX 5.1或更高版本<br /> RAM: 6 GB（64位操作系统，带64位JVM）可用磁盘空间<br /> : 15GB临时空间外加22GB<br /> ，适用于JEE</td> 
+   <td>Intel® Xeon® E5-2680、2.4 GHz处理器或等效的VMWare<br /> ESX 5.1或更高版本<br /> RAM:6 GB（64位操作系统，带64位JVM）可用磁盘空间<br /> :15GB临时空间外加22GB<br /> ，适用于JEE</td> 
   </tr> 
   <tr> 
    <td>Sun Solaris</td> 
-   <td>UltraSPARC® IIIi,1.5 GHz处理器<br /> Solaris容器(Zones)分区<br /> RAM: 6 GB（64位操作系统，带64位JVM）可用磁盘空间<br /> : 6 GB临时空间外加22 GB<br /> ，适用于JEE</td> 
+   <td>UltraSPARC® IIIi,1.5 GHz处理器<br /> Solaris容器(Zones)分区<br /> RAM:6 GB（64位操作系统，带64位JVM）可用磁盘空间<br /> :6 GB临时空间外加22 GB<br /> ，适用于JEE</td> 
   </tr> 
   <tr> 
    <td>IBM AIX</td> 
-   <td>P6 pSeries 520（型号52A）9131-52A,1.8 GHz处理器<br /> LPAR分区<br /> RAM: 6 GB（64位操作系统，带64位JVM）可用磁盘空间<br /> : 6 GB临时空间外加22 GB<br /> ，适用于JEE</td> 
+   <td>P6 pSeries 520（型号52A）9131-52A,1.8 GHz处理器<br /> LPAR分区<br /> RAM:6 GB（64位操作系统，带64位JVM）可用磁盘空间<br /> :6 GB临时空间外加22 GB<br /> ，适用于JEE</td> 
   </tr> 
   <tr> 
    <td>SUSE Linux Enterprise Server</td> 
-   <td>Intel Xeon E5-2670v2,1个vCPU,2.5 GHz处理器<br /> AWS m3.medium（3个ECU）<br /> RAM: 6 GB（64位操作系统，带64位JVM）可用磁盘空间<br /> : 6 GB临时空间外加22 GB<br /> ，适用于JEE</td> 
+   <td>Intel Xeon E5-2670v2,1个vCPU,2.5 GHz处理器<br /> AWS m3.medium（3个ECU）<br /> RAM:6 GB（64位操作系统，带64位JVM）可用磁盘空间<br /> :6 GB临时空间外加22 GB<br /> ，适用于JEE</td> 
   </tr> 
   <tr> 
    <td>Red Hat Enterprise Linux</td> 
-   <td>Intel Xeon E5-2670v2,1个vCPU,2.5 GHz处理器<br /> AWS m3.medium（3个ECU）<br /> RAM: 6 GB（64位操作系统，带64位JVM）可用磁盘空间<br /> : 6 GB临时空间外加22 GB<br /> ，适用于JEE<br /> </td> 
+   <td>Intel Xeon E5-2670v2,1个vCPU,2.5 GHz处理器<br /> AWS m3.medium（3个ECU）<br /> RAM:6 GB（64位操作系统，带64位JVM）可用磁盘空间<br /> :6 GB临时空间外加22 GB<br /> ，适用于JEE<br /> </td> 
   </tr> 
   <tr> 
    <td>小型生产环境的硬件要求</td> 
    <td> 
     <ul> 
-     <li><strong>以英特尔为后盾的环境</strong>: 英特尔®至强® E5-2680,2.4 GHz或更高。 使用双核处理器将进一步提高性能</li> 
+     <li><strong>以英特尔为后盾的环境</strong>:英特尔®至强® E5-2680,2.4 GHz或更高。 使用双核处理器将进一步提高性能</li> 
      <li><strong>以Sun SPARC为后盾的环境:</strong> UltraSPARC V或更高版本</li> 
      <li><strong>以IBM AIX为后盾的环境:</strong> Power6或更高版本<br /> </li> 
      <li><strong>内存： </strong>4 GB <br /> </li> 
@@ -614,14 +614,14 @@ AEM Forms的以下子系统不 [符合](https://www.section508.gov/) 508:
  </tbody> 
 </table>
 
-* 安装的磁盘空间： 1.7 GB（仅限Workbench）,2.7 GB（在单个驱动器上），可完全安装Workbench、Designer和示例程序集400 MB（临时安装目录）- 200 MB（在用户临时目录）, 200 MB（在Windows临时目录中）
+* 安装的磁盘空间：1.7 GB（仅限Workbench）,2.7 GB（在单个驱动器上），可完全安装Workbench、Designer和示例程序集400 MB（临时安装目录）- 200 MB（在用户临时目录）, 200 MB（在Windows临时目录中）
 
 >[!NOTE]
 >
 >如果所有这些位置都驻留在单个驱动器上，则安装过程中必须有1.5 GB可用空间。 安装完成后，将删除复制到临时目录的文件。
 
-* 运行Workbench的内存： 2 GB内存
-* 硬件要求： Intel® Pentium® 4或AMD等效处理器，1 GHz处理器
+* 运行Workbench的内存：2 GB内存
+* 硬件要求：Intel® Pentium® 4或AMD等效处理器，1 GHz处理器
 * 最低1024 X 768像素或更高的显示器分辨率，16位颜色或更高
 * TCP/IPv4或TCP/IPv6网络连接到JEE服务器上的AEM Forms
 
@@ -642,7 +642,7 @@ AEM Forms的以下子系统不 [符合](https://www.section508.gov/) 508:
 * 图形内存- 128 MB GPU（建议使用256 MB）
 * 2.35 GB可用硬盘空间
 * DVD-ROM驱动器
-* Internet Explorer 10或11; Firefox 45.x
+* Internet Explorer 10或11;Firefox 45.x
 * 1024 X 768像素或更高的显示器分辨率
 * 视频硬件加速（可选）
 * Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC。
@@ -664,7 +664,7 @@ AEM Forms的以下子系统不 [符合](https://www.section508.gov/) 508:
 
 >[!NOTE]
 >
->AcrobatDC产品系列为Acrobat和Reader引入了两种途径，这两种途径本质上是不同的产品： “经典”和“连续”。 有关这两个音轨的详细信息和比较，请参 [阅https://www.adobe.com/go/acrobatdctracks。](https://www.adobe.com/go/acrobatdctracks)
+>AcrobatDC产品系列为Acrobat和Reader引入了两种途径，这两种途径本质上是不同的产品：“经典”和“连续”。 有关这两个音轨的详细信息和比较，请参 [阅https://www.adobe.com/go/acrobatdctracks。](https://www.adobe.com/go/acrobatdctracks)
 
 ### 浏览器 {#browsers}
 
@@ -679,27 +679,27 @@ AEM Forms的以下子系统不 [符合](https://www.section508.gov/) 508:
   </tr> 
   <tr> 
    <td><p>Microsoft Edge</p> </td> 
-   <td><p>答： 支持</p> </td> 
+   <td><p>答：支持</p> </td> 
    <td><p>服务包和更新</p> </td> 
   </tr> 
   <tr> 
    <td><p>Mozilla Firefox 45.x</p> </td> 
-   <td><p>答： 支持</p> </td> 
+   <td><p>答：支持</p> </td> 
    <td><p>所有更新</p> </td> 
   </tr> 
   <tr> 
    <td><p>Google Chrome 46+</p> </td> 
-   <td><p>答： 支持</p> </td> 
+   <td><p>答：支持</p> </td> 
    <td><p>所有更新</p> </td> 
   </tr> 
   <tr> 
    <td>Apple Safari 11.x</td> 
-   <td>答： 支持</td> 
+   <td>答：支持</td> 
    <td>所有更新</td> 
   </tr> 
   <tr> 
    <td><p>MAC OS X上的Google Chrome和Firefox</p> </td> 
-   <td><p>答： 支持</p> </td> 
+   <td><p>答：支持</p> </td> 
    <td><p>所有更新</p> </td> 
   </tr> 
  </tbody> 
@@ -809,4 +809,4 @@ Adobe保留在任何给定时刻更改由AEM Forms在JEE版本上支持的第三
 
 通过搜索Adobe企业支持站点以找到与您的产品相关的知识库文章，还可以找到有关第三方修补程序的其他信息。
 
-[**联系支持&#x200B;**](https://www.adobe.com/account/sign-in.supportportal.html)
+[**联系支持**](https://www.adobe.com/account/sign-in.supportportal.html)

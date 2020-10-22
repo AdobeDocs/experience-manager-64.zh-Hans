@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
-source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 79%
+source-wordcount: '555'
+ht-degree: 81%
 
 ---
 
@@ -36,13 +36,9 @@ AEM 提供了两种环境：
 
 在创作环境中，AEM 的功能通过两种 UI 来提供。对于发布环境，可以设计提供给用户使用的界面的整体外观。
 
->[!NOTE]
->
->AEM和调度程序用于发布此AEM文档。
-
 ## 创作环境 {#author-environment}
 
-作者在称为&#x200B;**[创作环境](/help/sites-authoring/home.md)**的环境中工作。这为创建内容提供了易于使用的界面（图形用户界面（GUI 或 UI））。它通常位于公司防火墙之后，防火墙能够提供全方位保护，并且要求作者使用分配了相应访问权限的帐户登录。
+作者在称为&#x200B;**[创作环境](/help/sites-authoring/home.md)**&#x200B;的环境中工作。这为创建内容提供了易于使用的界面（图形用户界面（GUI 或 UI））。它通常位于公司防火墙之后，防火墙能够提供全方位保护，并且要求作者使用分配了相应访问权限的帐户登录。
 
 >[!NOTE]
 >
@@ -89,7 +85,7 @@ When ready, the AEM site&#39;s content is published to the **publish environment
    >
    >
 * **复制**
-   >  这些是用于指示数据（例如页面内容、文件、代码、用户评论）从一个环境到另一个的移动的技术术语； 例如，在发布或反向复制用户注释时。
+   >  这些是用于指示数据（例如页面内容、文件、代码、用户评论）从一个环境到另一个的移动的技术术语；例如，在发布或反向复制用户注释时。
 >
 
 

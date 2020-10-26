@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: 4c0c4ee86840cec0aa368b48e7f512cb86abeb02
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '3223'
+source-wordcount: '3231'
 ht-degree: 8%
 
 ---
@@ -30,11 +30,11 @@ ht-degree: 8%
 * 提供模板，它们可以保留与从它们创建的任何页面的动态连接。 这可确保模板的任何更改都反映在页面本身中。
 * 使页面组件更加通用，这样无需自定义即可使用核心页面组件。
 
-借助可编辑的模板，可在组件中隔离制作页面的片段。 您可以在UI中配置组件的必要组合，从而无需为每个页面变体开发新的页面组件。
+借助可编辑的模板，可在组件中隔离制作页面的部分内容。 您可以在UI中配置组件的必要组合，从而无需为每个页面变体开发新的页面组件。
 
 >[!NOTE]
 >
->AEM 6.4.5.0或更高版本才能将可编辑模板与SPA编辑器 [一起使用](/help/sites-developing/spa-overview.md)。
+>AEM 6.4.5.0或更高版本才能将可编辑的模板与SPA [Editor一起使用](/help/sites-developing/spa-overview.md)。
 
 >[!NOTE]
 >
@@ -205,7 +205,7 @@ ht-degree: 8%
    名称: `jcr:title`
 
    * 类型: `String`
-   * 值： 要显示在“模板”控制台中的标题(用于 **文件夹** )。
+   * 值：要显示在“模板”控制台中的标题(用于 **文件夹** )。
 
 1. 除 *了标准* 、创作权限和权限(例如， `content-authors`)，您现在需要为作者分配组并定义所需的访问权限(ACL)，以便在新文件夹中创建模板。
 
@@ -222,14 +222,16 @@ ht-degree: 8%
 1. 单击&#x200B;**创建**。
 1. 在创 **建配置** 对话框中，需要配置以下字段：
 
-   * **标题**: 提供配置文件夹的标题
-   * **可编辑模板**: 勾号，允许在此文件夹内创建可编辑的模板
+   * **标题**:提供配置文件夹的标题
+   * **可编辑模板**:勾号，允许在此文件夹内创建可编辑的模板
 
 1. Click **Create**
 
 >[!NOTE]
 >
 >在配置浏览器中，如果您希望在该文件夹内创建模板，可以编辑 **全局文件夹** ，并激活“可编辑模板”选项，但建议不要这样做。
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ### ACL和组 {#acls-and-groups}
 
@@ -579,13 +581,13 @@ GITHUB上的代码
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
       * 定义属性：
 
-         * 名称： 状态
-         * 类型： 字符串
+         * 名称：状态
+         * 类型：字符串
          * 值: `enabled`
 
 1. **允许的模板**
 
-   * [在子分支的相应页面或根页 **面的&#x200B;**](/help/sites-authoring/templates.md#allowing-a-template-author)“页面属性”中定义允许的模板路径。
+   * [在子分支的相应页面或根页 **面的**](/help/sites-authoring/templates.md#allowing-a-template-author) “页面属性”中定义允许的模板路径。
    * 设置属性：
 
       `cq:allowedTemplates`
@@ -605,7 +607,7 @@ GITHUB上的代码
 
    * `cq:template`
 
-      提供对实际模板的动态参考； 允许在实际页面上反映对模板所做的更改。
+      提供对实际模板的动态参考；允许在实际页面上反映对模板所做的更改。
 
    * `cq:templateType`
 
@@ -641,7 +643,7 @@ GITHUB上的代码
 
    * 页面组件将合并 `structure/jcr:content` 模板的树和页 `jcr:content` 面的树。
    * 页面组件将仅允许作者编辑已标记为可编辑的模板结构的节点（以及任何子节点）。
-   * 在页面上渲染组件时，该组件的相对路径将从节点中取 `jcr:content` 出； 随后将搜索模 `policies/jcr:content` 板节点下的同一路径。
+   * 在页面上渲染组件时，该组件的相对路径将从节点中取 `jcr:content` 出；随后将搜索模 `policies/jcr:content` 板节点下的同一路径。
 
       * 此 `cq:policy` 节点的属性指向实际的内容策略（即它包含该组件的设计配置）。
       * 这允许您拥有多个可重复使用相同内容策略配置的模板。

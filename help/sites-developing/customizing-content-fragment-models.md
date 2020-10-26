@@ -9,7 +9,7 @@ contentOwner: aheimoz
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 位置 {#locations}
 
-模型在启用了“内 `/conf`容片段模型”属性的文 [件夹下进行保存和创建](/help/assets/content-fragments-models.md#enable-content-fragment-models) 。 此设置也可在配置属性中 **查看**，可从配置浏 **览器访问**。
+模型在启用了“内 `/conf`容片段模型”属性的文 [件夹下进行保存和创建](/help/assets/content-fragments-models.md#enable-content-fragment-models) 。 此设置也可在配置属性中 **查看**，可从配置浏 **[览器访问](/help/sites-administering/configurations.md)**。
 
 1. 通过工具、常规 **、配置**&#x200B;浏 **览器**&#x200B;导航 **到浏**&#x200B;览器。例如， 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
@@ -36,7 +36,7 @@ ht-degree: 0%
 
    例如，以下属性 `global`: `http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
 
-在“模型”控制台中，将显示具有“内 **容片段模型** ”属性的所有文件夹。 通过工 **具**、资 **产**、内 **容片段模型导航**; 例如 `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`,
+在“模型”控制台中，将显示具有“内 **容片段模型** ”属性的所有文件夹。 通过工 **具**、资 **产**、内 **容片段模型导航**;例如 `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`,
 
 用户可以 [使用创建模型向导](/help/assets/content-fragments-models.md#creating-a-content-fragment-model) (使用 **控制台中的创** 建 **)创建内容片** 段模型。
 

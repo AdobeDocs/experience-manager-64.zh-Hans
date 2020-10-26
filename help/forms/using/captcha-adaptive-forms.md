@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author, adaptive_forms
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ AEM Forms以自适应形式支持CAPTCHA。 您可以使用Google的reCAPTCHA服
 1. 创建云服务的配置容器。
 
    1. 转到“工 **[!UICONTROL 具”>“常规”>“配置浏览器”]**。
+      * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
    1. 执行以下操作以启用云配置的全局文件夹，或跳过此步骤，为云服务配置创建和配置其他文件夹。
 
       1. 在配置浏览器中，选择全 **[!UICONTROL 局文]** 件夹并点 **[!UICONTROL 按属性]**。

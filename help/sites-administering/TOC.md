@@ -6,9 +6,9 @@ user-guide-title: AEM 6.4 Administering 用户指南
 breadcrumb-title: Administering 指南
 user-guide-description: 了解如何管理 AEM。
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: dd3fdd5fd632d79262aeb2edaca0c58bf6710d18
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '625'
 ht-degree: 16%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 16%
    + [语言复制向导](tc-wizard.md)
    + [翻译增强功能](tc-enhancements.md)
    + [翻译最佳实践](tc-bp.md)
+   + [配置和配置浏览器](configurations.md)
    + [AEM常见问题解答](aem-faqs.md)
 + 操作 {#operations}
    + [功能板](dashboards.md)

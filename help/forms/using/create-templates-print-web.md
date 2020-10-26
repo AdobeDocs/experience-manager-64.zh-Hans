@@ -1,5 +1,5 @@
 ---
-title: “教程： 创建模板”
+title: “教程：创建模板”
 seo-title: 为交互通信创建打印和Web模板
 description: 为交互通信创建打印和Web模板
 seo-description: 为交互通信创建打印和Web模板
@@ -8,15 +8,15 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
 
 
-# 教程： 创建模板 {#tutorial-create-templates}
+# 教程：创建模板 {#tutorial-create-templates}
 
 为交互通信创建打印和Web模板
 
@@ -48,13 +48,13 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 
 根据用 [例和解剖](/help/forms/using/create-your-first-interactive-communication.md) 结构 [,](/help/forms/using/planning-interactive-communications.md)在XDP模板中创建以下子表单：
 
-* 帐单详细信息： 包括文档片段
-* 客户详细信息： 包括文档片段
-* 帐单汇总： 包括文档片段
-* 摘要： 包括文档片段（费用子表单）和图表（图表子表单）
-* 明细调用： 包括表（布局片段）
-* 立即付款： 包括图像
-* 增值服务： 包括图像
+* 帐单详细信息：包括文档片段
+* 客户详细信息：包括文档片段
+* 帐单汇总：包括文档片段
+* 摘要：包括文档片段（费用子表单）和图表（图表子表单）
+* 明细调用：包括表（布局片段）
+* 立即付款：包括图像
+* 增值服务：包括图像
 
 ![create_print_template](assets/create_print_template.gif)
 
@@ -178,6 +178,7 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 执行以下步骤为可编辑的模板创建文件夹：
 
 1. 点按 **工具**![>配](assets/tools-icon.svg) 置浏览器 ****。
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. 在“配置浏览器”页面中，点按 **创建**。
 1. 在“创 **建配置** ”对话框中，指 **定Create_First_IC_templates作为文件夹的标题** ，选中“可编 **辑的模板**”，然 **后点按创**&#x200B;建。
 
@@ -189,13 +190,13 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 
 根据用 [例和解剖](/help/forms/using/create-your-first-interactive-communication.md) 结构 [,](/help/forms/using/planning-interactive-communications.md)在Web模板中创建以下面板：
 
-* 帐单详细信息： 包括文档片段
-* 客户详细信息： 包括文档片段
-* 帐单汇总： 包括文档片段
-* 费用汇总： 包括文档片段和图表（双列布局）
-* 明细调用： 包括表
-* 立即付款： 包括“立 **即付费** ”按钮和图像
-* 增值服务： 包括图像和“订 **阅** ”按钮。
+* 帐单详细信息：包括文档片段
+* 客户详细信息：包括文档片段
+* 帐单汇总：包括文档片段
+* 费用汇总：包括文档片段和图表（双列布局）
+* 明细调用：包括表
+* 立即付款：包括“立 **即付费** ”按钮和图像
+* 增值服务：包括图像和“订 **阅** ”按钮。
 
 ![create_web_template](assets/create_web_template.gif)
 

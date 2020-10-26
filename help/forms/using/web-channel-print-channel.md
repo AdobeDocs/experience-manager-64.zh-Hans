@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 导入打印渠道模板以及创建和启用Web渠道模板
 
-交互式通信可通过两种渠道提供： 印刷和Web。 打印渠道用于创建PDF和纸质通信，如作为保险费付款提醒的打印信函，而Web渠道用于提供在线体验，如网站上的信用卡对帐单。
+交互式通信可通过两种渠道提供：印刷和Web。 打印渠道用于创建PDF和纸质通信，如作为保险费付款提醒的打印信函，而Web渠道用于提供在线体验，如网站上的信用卡对帐单。
 
 交互通信作者可以重复使用文档片段和图像等资源，创建打印版和Web版的交互通信。
 
@@ -53,6 +53,7 @@ ht-degree: 0%
 1. 创建一个“模板”文件夹以保留您的交互式通信Web模板（如果您还没有）。 有关详细信息，请参阅页面模板中 [的模板文件夹——可编辑](/help/sites-developing/page-templates-editable.md)。
 
    1. 点按 **[!UICONTROL 工]** 具 ![-](assets/tools-1.png) 1 >配置 **[!UICONTROL 浏览器]**。
+      * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
    1. 在“配置浏览器”页面中，点按 **[!UICONTROL 创建]**。
    1. 在创建配置对话框中，指定文件夹的标题，选中可编 **[!UICONTROL 辑模板]**，然后点 **[!UICONTROL 按创建]**。
 

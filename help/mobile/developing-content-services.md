@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 3%
+source-wordcount: '303'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -43,7 +43,9 @@ Content Services引入了几个新的AEM构造，使开发人员能够访问AEM�
 >
 >开始使用Content Services之前，请确保启用Content Services标志。 要在应用程序中启用模型的创建和管理，您需要在配置浏览器中启用数据模型。
 >
->有关详 **[细信息，请参阅](/help/mobile/developing-content-services.md)**“管理内容服务”。
+>有关详 **[细信息，请参阅](/help/mobile/developing-content-services.md)** “管理内容服务”。
+>
+>See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

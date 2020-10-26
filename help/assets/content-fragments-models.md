@@ -9,9 +9,9 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 translation-type: tm+mt
-source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '704'
 ht-degree: 13%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 13%
 要创 [建新的内容片段模型](#creating-a-content-fragment-model) , **您必须首先** 使用配置管理器启用它们：
 
 1. 导航到&#x200B;**[!UICONTROL 工具]**、**[!UICONTROL 常规]**，然后打开&#x200B;**[!UICONTROL 配置浏览器]**。
+   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
 1. 选择适合您的网站的位置。
 1. 使 **[!UICONTROL 用创建]** 打开对话框，您可以：
 
@@ -84,11 +85,11 @@ ht-degree: 13%
 1. 导航到 **[!UICONTROL 工具]**、资 **[!UICONTROL 产]**，然后打 **[!UICONTROL 开内容片段模型]**。
 
 1. 导航到包含内容片段模型的文件夹。
-1. 打开编辑所需的 **[!UICONTROL 模型]**; 使用快速操作，或先选择模型，然后从工具栏中选择操作。
+1. 打开编辑所需的 **[!UICONTROL 模型]**;使用快速操作，或先选择模型，然后从工具栏中选择操作。
 
    打开模型编辑器后，将显示：
 
-   * 左： 字段已定义
+   * 左：字段已定义
    * 右侧：可用于创建字段的&#x200B;**[!UICONTROL 数据类型]**（可在创建字段后使用的&#x200B;**[!UICONTROL 属性]**）
 
    >[!NOTE]

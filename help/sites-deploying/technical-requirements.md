@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: d09956e5e7fb42e9c4b145e027778f209876239a
+source-git-commit: 155a0425229c79b06eced72b689972e4fdd09265
 workflow-type: tm+mt
-source-wordcount: '3142'
+source-wordcount: '3143'
 ht-degree: 2%
 
 ---
@@ -178,7 +178,7 @@ Adobe Experience Manager使用以下版本的Java虚拟机：
   <tr> 
    <td>MongoDB Enterprise 3.4 [2, 3]</td> 
    <td>存储库</td> 
-   <td>答：支持</td> 
+   <td>答：不支持</td> 
   </tr> 
   <tr> 
    <td>MySQL 5.7</td> 

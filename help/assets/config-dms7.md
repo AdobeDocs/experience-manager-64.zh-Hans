@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
 workflow-type: tm+mt
-source-wordcount: '5547'
+source-wordcount: '5571'
 ht-degree: 4%
 
 ---
@@ -140,8 +140,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 * [图像服务器的发布设置](#publishing-setup-for-image-server)
 * [配置应用程序常规设置](#configuring-application-general-settings)
 * [配置颜色管理](#configuring-color-management)
-* [配置资产处理](#configuring-asset-processing)
-* [为不支持的格式添加自定义MIME类型](#adding-custom-mime-types-for-unsupported-formats)
+* [编辑受支持格式的MIME类型](#editing-mime-types-for-supported-formats)
+* [为不支持的格式添加MIME类型](#adding-mime-types-for-unsupported-formats)
 * [创建批集预设以自动生成图像集和旋转集](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### 图像服务器的发布设置 {#publishing-setup-for-image-server}
@@ -212,21 +212,18 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 * 返回RGB输出的动态演绎版将在色彩空间中 `sRGB` 返回它。
 * 返回CMYK输出的动态演绎版将在色彩空间 `WebCoated` 中返回它。
 
-#### 配置资产处理 {#configuring-asset-processing}
+#### 编辑受支持格式的MIME类型 {#editing-mime-types-for-supported-formats}
 
 您可以定义Dynamic Media应处理的资产类型，并自定义高级资产处理参数。 例如，您可以指定资产处理参数以执行以下操作：
 
 * 将Adobe PDF转换为电子目录资产。
 * 将Adobe Photoshop文档(.PSD)转换为横幅模板资产以进行个性化。
 * 栅格化Adobe Illustrator文件(.AI)或Adobe Photoshop封装的Postscript文件(.EPS)。
-
->[!NOTE]
->
->视频用户档案和成像用户档案可分别用于定义视频和图像的处理。
+* [视频用户档案](/help/assets/video-profiles.md) 和 [成像用户档案](/help/assets/image-profiles.md) ，可分别用于定义视频和图像的处理。
 
 请参阅[上传资产](managing-assets-touch-ui.md#uploading-assets)。
 
-**要配置资产处理**:
+**要编辑受支持格式的MIME类型，请执行以下操作：**
 
 1. 在AEM中，点按AEM徽标以访问全局导航控制台，然后点 **[!UICONTROL 按工具]** （锤子）图标并导航 **[!UICONTROL 到常规>CRXDE Lite]**。
 1. 在左边栏中，导航到以下内容：
@@ -252,7 +249,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 您可以为 AEM Assets 中不支持的格式添加自定义 MIME 类型。To ensure that any new node you add in CRXDE Lite is not deleted by AEM, you must ensure that you move the MIME type before **[!UICONTROL image_]** and its enabled value is set to **[!UICONTROL false]**.
 
-**要为不支持的格式添加自定义MIME类型**:
+**为不支持的格式添加自定义MIME类型**
 
 1. 在AEM中，单击 **[!UICONTROL 工具>操作> Web Console]**。
 
@@ -498,7 +495,7 @@ Adobe建议对PDF、Postscript和PSD文件使用以下“调整”作业参数�
 
 Granite传输工作流队列用于DAM更 **[!UICONTROL 新资产工作流]** 。 在Dynamic Media中，它用于图像摄取和处理。
 
-**要更新Granite临时工作流队列，请执行以下操作**:
+**更新Granite临时工作流队列**
 
 1. 导航 [到https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) ，并搜索 **[!UICONTROL 队列：Granite临时工作流队列]**。
 
@@ -508,11 +505,13 @@ Granite传输工作流队列用于DAM更 **[!UICONTROL 新资产工作流]** 。
 
 1. 在“最 **[!UICONTROL 大并行作业]** ”字段中，将数字更改为所需值。
 
-   默认情况下，并行作业的最大数量取决于可用CPU核心的数量。 例如，在4核服务器上，它分配2个工作线程。 （介于0.0和1.0之间的值是基于比率的，或者任何大于1的数字将指定工作线程的数量。）
+   您可以增加 **[!UICONTROL 最大并行作业]** ，以充分支持将文件重量上传到Dynamic Media。 确切值取决于硬件容量。 在某些情况下（即初始迁移或一次性批量上传），您可以使用大值。 但是，请注意，使用大值（如内核数的2倍）可能会对其他并发活动产生负面影响。 因此，您应根据您的特定用例测试和调整值。
 
-   Adobe建议将32 **[!UICONTROL 个最大并行作业]** 配置为充分支持将文件重量上传到Dynamic Media Classic。
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
 

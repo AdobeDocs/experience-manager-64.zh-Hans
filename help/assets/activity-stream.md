@@ -3,10 +3,10 @@ title: 时间轴中的活动流
 description: '本文介绍如何在时间轴上显示资产的活动日志。 '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 48%
+source-wordcount: '214'
+ht-degree: 45%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 48%
 
 时间轴中显示的活动日志是从 CRX 中的 `/var/audit/com.day.cq.dam/content/dam` 位置获取的，日志文件就存储在该位置。
 
-此外，当上传新资产或通过 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [AEM 桌面应用程序](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/introduction.html)修改现有资产并签入 AEM 时，会记录时间轴活动。
+此外，当上传新资产或通过 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [AEM 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)修改现有资产并签入 AEM 时，会记录时间轴活动。
 
 >[!NOTE]
 >

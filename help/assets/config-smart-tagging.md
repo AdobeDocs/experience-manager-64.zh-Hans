@@ -3,9 +3,9 @@ title: 使用智能内容服务配置资产标记。
 description: 了解如何使用智能内容服务在中配置智能标记 [!DNL Adobe Experience Manager]，以及增强智能标记功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d0a173b1c95141c91b7d0495e994eab07f2655e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1212'
 ht-degree: 34%
 
 ---
@@ -58,7 +58,7 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
    ![Experience Manager智能内容服务对话框，用于提供内容服务URL](assets/aem_scs.png)
 
 
-   *图： 用于提供内容服务URL的智能内容服务对话框*
+   *图：用于提供内容服务URL的智能内容服务对话框*
 
    >[!NOTE]
    >
@@ -69,7 +69,7 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
    ![为智能标记服务创建的设置的表示形式](assets/smart-tags-download-public-cert.png)
 
 
-   *图： 智能标记服务的设置*
+   *图：智能标记服务的设置*
 
 ### Reconfigure when a certificate expires {#certrenew}
 
@@ -83,7 +83,7 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
 
    ![删除密钥库中现有的相似性搜索条目以添加新的安全证书](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *图：删除 Keystore 中的现有`similaritysearch`条目以添加新的安全证书。*
+   *图：删除 Keystore 中的现有 `similaritysearch` 条目以添加新的安全证书。*
 
 1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 云服务]** > **[!UICONTROL 旧版云服务]**。单击 **[!UICONTROL 资产智能标记]** >显 **[!UICONTROL 示配置]** >可 **[!UICONTROL 用配置]**。 单击所需的配置。
 
@@ -113,7 +113,7 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
 
    ![在“概述”选项卡中，您可以查看为集成提供的信息。](assets/integration_details.png)
 
-   *图： Adobe开发人员控制台中集成的详细信息*
+   *图：Adobe开发人员控制台中集成的详细信息*
 
 ## 配置智能内容服务 {#configure-smart-content-service}
 
@@ -167,21 +167,21 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
    ![配置DAM更新资产工作流并添加智能标记步骤](assets/smart-tag-step-properties-workflow1.png)
 
 
-   *图： 配置DAM更新资产工作流并添加智能标记步骤*
+   *图：配置DAM更新资产工作流并添加智能标记步骤*
 
 1. 在&#x200B;**[!UICONTROL 参数]**&#x200B;选项卡中，如果希望完成工作流，请选择&#x200B;**[!UICONTROL 忽略错误]**，即使自动标记步骤失败也是如此。
 
    ![配置DAM更新资产工作流以添加智能标记步骤和提前选择处理程序](assets/smart-tag-step-properties-workflow2.png)
 
 
-   *图： 配置DAM更新资产工作流以添加智能标记步骤和提前选择处理程序*
+   *图：配置DAM更新资产工作流以添加智能标记步骤和提前选择处理程序*
 
    要在上传资产时标记资产，而不考虑是否对文件夹启用了智能标记，请选择&#x200B;**[!UICONTROL 忽略智能标记标志]**。
 
    ![配置DAM更新资产工作流以添加智能标记步骤并选择忽略智能标记标记](assets/smart-tag-step-properties-workflow3.png)
 
 
-   *图： 配置DAM更新资产工作流以添加智能标记步骤并选择忽略智能标记标记*
+   *图：配置DAM更新资产工作流以添加智能标记步骤并选择忽略智能标记标记*
 
 1. 单击&#x200B;**[!UICONTROL 确定]**，以关闭流程步骤，然后保存工作流。
 
@@ -190,5 +190,4 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
 >* [管理智能标记](managing-smart-tags.md)
 >* [智能标记概述和培训方法](enhanced-smart-tags.md)
 >* [培训智能内容服务的准则和规则](smart-tags-training-guidelines.md)
->* [有关如何配置智能标记的视频教程](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 

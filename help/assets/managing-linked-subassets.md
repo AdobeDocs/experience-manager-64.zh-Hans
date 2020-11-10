@@ -3,9 +3,9 @@ title: 管理复合资产并生成子资产。
 description: 了解如何从InDesign、Adobe Illustrator和Photoshop文件中创建对AEM资产的引用。 还了解如何使用页面查看器功能视图多页文件（包括PDF、INDD、PPT、PPTX和AI文件）的各个页面。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1386'
 ht-degree: 5%
 
 ---
@@ -48,7 +48,7 @@ AEM Assets已存在引用的资产。 您可以通过配置InDesign服 [务器�
 
 >[!NOTE]
 >
->如果InDesign服务器是代理的，则InDesign文件的预览将嵌入到其XMP元数据中。 在这种情况下，不显式需要缩略图提取。 但是，如果InDesign服务器未代理，则必须显式提取InDesign文件的缩略图。
+>如果InDesign服务器是代理的，则InDesign文件的预览将嵌入到其XMP元数据中。 在这种情况下，缩略图提取不是明确必需的。 但是，如果InDesign服务器未代理，则必须显式提取InDesign文件的缩略图。
 
 ### Create references By Dragging AEM assets {#create-references-by-dragging-aem-assets}
 
@@ -57,8 +57,7 @@ AEM Assets已存在引用的资产。 您可以通过配置InDesign服 [务器�
 ### Create references to AEM assets by exporting a ZIP file {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Perform the steps in [Creating Workflow Models](/help/sites-developing/workflows-models.md) to create a new workflow.
-1. 使用Adobe InDesign的“打包”功能导出文档。
-Adobe InDesign可以将文档和关联资产作为包出口。 在这种情况下，导出的文件夹包含一个“链接”文件夹，其中包含InDesign文件中的子资产。
+1. 使用Adobe InDesign的“打包”功能导出文档。Adobe InDesign可以将文档和关联资产作为包出口。在这种情况下，导出的文件夹包含一个“链接”文件夹，其中包含InDesign文件中的子资产。
 1. 创建 ZIP 文件并将其上传到 AEM 存储库。
 1. 启动 Unarchiver 工作流。
 1. When the workflow completes, the references in the Links folder are automatically referenced as subassets. To view a list of referred assets, navigate to the asset details page of the InDesign asset and close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
@@ -93,11 +92,11 @@ Adobe InDesign可以将文档和关联资产作为包出口。 在这种情况�
 
 要生成子资产，请执行以下操作之一：
 
-* 新资产： DAM [!UICONTROL 更新资产工作流] ，对上传到AEM的任何新资产执行。 子资产是为新的多页资产自动生成的。
-* 现有多页资产： 按照以下任 [!UICONTROL 一步骤手动执行] DAM更新资产工作流：
+* 新资产：DAM [!UICONTROL 更新资产工作流] ，对上传到AEM的任何新资产执行。 子资产是为新的多页资产自动生成的。
+* 现有多页资产：按照以下任 [!UICONTROL 一步骤手动执行] DAM更新资产工作流：
 
    * 选择一个资产，然 [!UICONTROL 后单击] “时间轴”以打开左侧面板。 或者，使用键盘快捷键 `alt + 3`。 单击 [!UICONTROL 开始工]作流，选 [!UICONTROL 择DAM更新资产]，单击 [!UICONTROL 开始]，然后 [!UICONTROL 单击继]续。
-   * 选择资产，然后单击工 [!UICONTROL 具栏中的创建] >工作流。 从弹出对话框中，选 [!UICONTROL 择DAM更新资产工作] 流，单击 [!UICONTROL 开始]，然后 [!UICONTROL 单击继续]。
+   * 选择资产，然后单击工 [!UICONTROL 具栏中的创建] >工作流。 从弹出对话框中，选 [!UICONTROL 择DAM更新资产] ，单击 [!UICONTROL 开始]，然后 [!UICONTROL 单击继续]。
 
 特别是对于Microsoft Word文档，请执 **[!UICONTROL 行DAM分析Word文档工作流]** 。 它从Microsoft `cq:Page` Word文档的内容生成一个组件。 从文档提取的图像从组件中引 `cq:Page` 用。 即使禁用了子资产生成，也会提取这些图像。
 
@@ -117,7 +116,7 @@ Adobe InDesign可以将文档和关联资产作为包出口。 在这种情况�
 
 工具栏、左边栏和页面查看器控件中提供以下选项：
 
-* **[!UICONTROL 桌面操作]** ，使用AEM桌面应用程序打开或显示特定子资产。 如果您使用AEM [桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) ，请参阅如何配置桌面操作。
+* **[!UICONTROL 桌面操作]** ，使用AEM桌面应用程序打开或显示特定子资产。 如果您使用AEM [桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) ，请参阅如何配置桌面操作。
 
 * **[!UICONTROL 属性]** 选项会打开 [!UICONTROL 特定子资] 产的属性页面。
 
@@ -133,4 +132,5 @@ Adobe InDesign可以将文档和关联资产作为包出口。 在这种情况�
 
 >[!MORELIKETHIS]
 >
->* [使用Adobe Experience Manager桌面应用程序](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
+>* [使用Adobe Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+

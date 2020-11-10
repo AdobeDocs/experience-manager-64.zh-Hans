@@ -7,9 +7,9 @@ user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 创建、管理、交付和优化数字资产。
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '721'
 ht-degree: 48%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 48%
 # Assets 指南 {#assets}
 
 + [资产用户指南](home.md)
-+ [AEM 6.4 Assets发行说明](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)
++ [AEM 6.4 Assets发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
 + [关于DAM](assets.md)
 + [用户体验改进](ux-improvements.md)
 + [资产的最佳实践](best-practices-for-assets.md)

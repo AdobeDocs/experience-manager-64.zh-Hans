@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6200'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ AEM 6中有两种类型的运行状况检查：
 1. 个人运行状况检查
 1. 综合运行状况检查
 
-“个 **人健康检查** ”是与状态卡对应的单个健康检查。 单个运行状况检查可以配置规则或阈值，并可提供一个或多个提示和链接以解决已识别的运行状况问题。 让我们以“日志错误”检查为例： 如果实例日志中有ERROR条目，您将在运行状况检查的详细信息页面上找到它们。 在页面顶部，您将在“诊断工具”部分看到指向“日志消息”分析器的链接，该链接将使您能够更详细地分析这些错误并重新配置记录器。
+“个 **人健康检查** ”是与状态卡对应的单个健康检查。 单个运行状况检查可以配置规则或阈值，并可提供一个或多个提示和链接以解决已识别的运行状况问题。 让我们以“日志错误”检查为例：如果实例日志中有ERROR条目，您将在运行状况检查的详细信息页面上找到它们。 在页面顶部，您将在“诊断工具”部分看到指向“日志消息”分析器的链接，该链接将使您能够更详细地分析这些错误并重新配置记录器。
 
 复 **合运行状况检查** (Composite Health Check)是一种检查，可从多个单独的检查中聚合信息。
 
@@ -76,7 +76,7 @@ AEM 6中有两种类型的运行状况检查：
 
 ### 创建单个运行状况检查 {#creating-an-individual-health-check}
 
-创建单个运行状况检查涉及两个步骤： 实施Sling运行状况检查并在仪表板的配置节点中添加运行状况检查项。
+创建单个运行状况检查涉及两个步骤：实施Sling运行状况检查并在仪表板的配置节点中添加运行状况检查项。
 
 1. 要创建Sling运行状况检查，您需要创建实施Sling HealthCheck界面的OSGI组件。 您将此组件添加到捆绑包中。 组件的属性将完全标识运行状况检查。 安装该组件后，将自动为运行状况检查创建JMX MBean。 有关更多 [信息，请参阅Sling](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) Health Check文档。
 
@@ -117,7 +117,7 @@ AEM 6中有两种类型的运行状况检查：
 
    >[!NOTE]
    >
-   >上面的资源路径按如下方式创建： 如果运行状况检查的mbean名称为“test”，则在路径末尾添加“test” `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
+   >上面的资源路径按如下方式创建：如果运行状况检查的mbean名称为“test”，则在路径末尾添加“test” `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
    >
    >因此，最终的路径是：
    >
@@ -141,7 +141,7 @@ AEM 6中有两种类型的运行状况检查：
 
 1. 转到OSGI控制台中的Web配置管理器。 您可以通过访问 `https://serveraddress:port/system/console/configMgr`
 
-1. 搜索名为Apache Sling Composite **Health Check的条目**。 找到它后，请注意已有两种配置可用： 一个用于系统检查，另一个用于安全检查。
+1. 搜索名为Apache Sling Composite **Health Check的条目**。 找到它后，请注意已有两种配置可用：一个用于系统检查，另一个用于安全检查。
 1. 通过按配置右侧的“+”按钮创建新配置。 将出现一个新窗口，如下所示：
 
    ![chlimage_1-63](assets/chlimage_1-63.jpeg)
@@ -159,7 +159,7 @@ AEM 6中有两种类型的运行状况检查：
    >
    >将为Apache Sling Composite Health Check的每个新配置创建一个新的JMX Mbean。**
 
-1. 最后，需要在“操作仪表板”配置节点中添加刚刚创建的复合运行状况检查的条目。 此过程与单个运行状况检查的过程相同： 需要在 **下创建nt** :unstructured类型的节点 `/apps/settings/granite/operations/hc`。 节点的资源属性将由OSGI配置中 **hc.mean.name的值** 定义。
+1. 最后，需要在“操作仪表板”配置节点中添加刚刚创建的复合运行状况检查的条目。 此过程与单个运行状况检查的过程相同：需要在 **下创建nt** :unstructured类型的节点 `/apps/settings/granite/operations/hc`。 节点的资源属性将由OSGI配置中 **hc.mean.name的值** 定义。
 
    例如，如果您创建了配置并将hc. **mbean.name值设置****为diskusage**，则配置节点将如下所示：
 
@@ -296,7 +296,7 @@ AEM 6中有两种类型的运行状况检查：
   </tr> 
   <tr> 
    <td>安全检查</td> 
-   <td><p>安全检查是一个组合，它聚合多个与安全相关的检查的结果。 这些单独的运行状况检查可解决与安全清单文档页上提供的安全清 <a href="/help/sites-administering/security-checklist.md">单不同的问题。</a> 该检查在实例启动时可用作安全烟雾测试。 </p> <p>此运行状况检查的 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">MBean为org.apache.sling.healthcheck:name=</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">securitychecks,type=HealthCheck</a></p> </td> 
+   <td><p>安全检查是一个组合，它聚合多个与安全相关的检查的结果。 这些单独的运行状况检查可解决与安全清单文档页上提供的安全清 <a href="/help/sites-administering/security-checklist.md">单不同的问题。</a> 该检查在实例启动时可用作安全烟雾测试。 </p> <p>此运行状况检查的 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">MBean为org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a></p> </td> 
   </tr> 
   <tr> 
    <td>活动包</td> 
@@ -418,9 +418,9 @@ AEM 6中有两种类型的运行状况检查：
 示例：
 
 * 如果您计划捕获所有 **ERROR** 消息——无需配置。 默认情况下，会捕获所有ERROR消息。
-* 如果您计划捕获所 **有ERROR**、 **WARN****和** INFO消息——记录器名称应设置为： “**root**”和记录器级别： **信息**。
+* 如果您计划捕获所 **有ERROR**、 **WARN****和** INFO消息——记录器名称应设置为：“**root**”和记录器级别： **信息**。
 
-* 如果您计划捕获来自特定包的所有消息（例如com.adobe.granite）-记录器名称应设置为： “com.adobe.granite”和记录器级别： **调试** (这将捕获所 **有ERROR**、WARN **、** INFO **和DEBUG消息****** )，如下图所示。
+* 如果您计划捕获来自特定包的所有消息（例如com.adobe.granite）-记录器名称应设置为：“com.adobe.granite”和记录器级别： **调试** (这将捕获所 **有ERROR**、WARN **、** INFO **和DEBUG消息****** )，如下图所示。
 
 ![chlimage_1-419](assets/chlimage_1-419.png)
 
@@ -777,7 +777,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
    <td>实例</td> 
    <td> 
     <ul> 
-     <li>AEM版本</li> 
+     <li>aem版本</li> 
      <li>列表运行模式</li> 
      <li>实例开始的日期</li> 
     </ul> </td> 

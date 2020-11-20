@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4787'
 ht-degree: 20%
@@ -46,7 +46,7 @@ ht-degree: 20%
 >
 >必须将非管理用户添加到 **dam-users组** ，才能创建或编辑传送横幅。 如果您在创建或编辑时遇到问题，请咨询系统管理员，他可以将您添 **加到dam用户组** 。
 
-## 快速开始: 传送横幅 {#quick-start-carousel-banners}
+## 快速开始:传送横幅 {#quick-start-carousel-banners}
 
 要快速设置并运行图像集，请执行以下操作：
 
@@ -56,7 +56,7 @@ ht-degree: 20%
 
    >[!NOTE]
    >
-   >如果您是AEM Sites或电子商务客户，则可以使用内置功能导航到产品页面并查找产品目录中的现有外观。 无需手动输入热点或图像映射变量。 请参阅有关设 [置电子商务的信息](/help/sites-administering/generic.md)。
+   >如果您是AEM Sites或电子商务客户，则可以使用内置功能导航到产品页面并查找产品目录中的现有外观。 您无需手动输入热点或图像映射变量。 请参阅有关设 [置电子商务的信息](/help/sites-administering/generic.md)。
    >
    >如果您是AEM Assets和Dynamic Media的客户，您将手动输入热点和图像地图的数据，然后将已发布的URL或嵌入代码集成到您的第三方内容管理系统中。
 
@@ -102,7 +102,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets](#editing-carousel
 
 >[!NOTE]
 >
->如果您是AEM Sites和／或AEM电子商务客户，请跳过此步骤。 无需手动识别热点或图像映射变量； 您可以使用与Ecommerce的集成进行产品集成。 请参阅有关设 [置电子商务的信息](/help/sites-administering/generic.md)。 此外，您可以使用交互式组件并将其添加到网页。
+>如果您是AEM Sites和／或AEM电子商务客户，请跳过此步骤。 无需手动识别热点或图像映射变量；您可以使用与Ecommerce的集成进行产品集成。 请参阅有关设 [置电子商务的信息](/help/sites-administering/generic.md)。 此外，您可以使用交互式组件并将其添加到网页。
 >
 >如果您是AEM Assets或媒体客户，则应发布URL或嵌入代码，然后与第三方内容管理系统集成，并手动识别热点和图像地图。
 
@@ -134,7 +134,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets](#editing-carousel
 
 在最简单的情况下，产品 SKU 是概览 URL 中唯一的变量部分。在这种情况下，SKU值是您向横幅图像添加热点或图像映射时唯一需要的数据。
 
-但是，在复杂的情况下，概览 URL 除了 SKU 之外还有一些不同的可变元素，例如类别 ID、颜色代码、大小代码，等等。在这种情况下，每个元素都是热点或旋转横幅功能中图像映射数据定义中的单独变量。
+但是，在复杂的情况下，概览 URL 除了 SKU 之外还有一些不同的可变元素，例如类别 ID、颜色代码、大小代码，等等。在这种情况下，每个元素都是热点或旋转横幅功能中图像映射数据定义中的一个单独变量。
 
 请考虑以下快速视图URL及其生成的热点或图像映射变量示例：
 
@@ -214,7 +214,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets](#editing-carousel
    要删除幻灯片，请点按幻灯片，然后点 **[!UICONTROL 按工具栏中]** 的删除幻灯片。 要移动幻灯片，请点按重排器图标，按住并移至所需位置。
 
 1. 在幻灯片中添加图像后，您可以向图像添加热点和／或图像映射。 请参 [阅添加热点或图像地图](#adding-hotspots-or-image-maps-to-an-image-banner)。
-1. 通过点按或单击“行为和外观”选项卡，并调整传送横幅的外观或特定组件的行为，可以更改传送集的可视设计和行为。 有关 [如何使用查看器编辑器](viewer-presets.md) ，请参阅管理查看器预设。
+1. 通过点按或单击“行为和外观”选项卡，并调整传送横幅的外观或特定组件的行为，可以更改传送集的可视设计和行为。 有关 [如何使用查看器编辑](viewer-presets.md) 器的更多信息，请参阅管理查看器预设。
 
    >[!NOTE]
    >
@@ -251,8 +251,8 @@ If you need to edit Carousel Sets, see [editing Carousel Sets](#editing-carousel
 >[!NOTE]
 >
 >当您在交互式图像或传送横幅 [中向图像](interactive-images.md) 添加热点时，无论热点是交互式图像还是传送横幅，热点信息都会存储在与图像位置相对的同一元数据位置。 此功能意味着您可以轻松地在任一查看器中重复使用同一图像及其定义的热点数据。
-
->但是，请注意，传送横幅支持图像上的图像地图，这些图像上也可能包含热点； 交互式图像则不会。 如果要创建使用同一图像的交互式图像或传送横幅，请牢记这一点。 您可能希望改为使用同一图像的单独副本创建交互式图像和传送横幅。
+>
+>但是，请注意，传送横幅支持图像上的图像地图，这些图像上也可能包含热点；交互式图像则不会。 如果要创建使用同一图像的交互式图像或传送横幅，请牢记这一点。 您可能希望改为使用同一图像的单独副本创建交互式图像和传送横幅。
 
 >[!NOTE]
 >
@@ -266,8 +266,8 @@ If you need to edit Carousel Sets, see [editing Carousel Sets](#editing-carousel
 1. 在页面的左上角附近，点按&#x200B;**[!UICONTROL 热点]**&#x200B;或&#x200B;**[!UICONTROL 图像映射]**。
 1. 执行下列操作之一：
 
-   * 对于热点： 在图像上，点按您希望显示热点的位置。
-   * 对于图像映射： 在图像上，点按，然后从左上角拖动到右下角以创建图像映射区域。 您可以通过拖动角来调整图像映射的大小。
+   * 对于热点：在图像上，点按您希望显示热点的位置。
+   * 对于图像映射：在图像上，点按，然后从左上角拖动到右下角以创建图像映射区域。 您可以通过拖动角来调整图像映射的大小。
 
    如有必要，请将热点或图像映射拖到新位置。 根据需要添加其他热点或图像地图。
 
@@ -282,7 +282,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets](#editing-carousel
       * 如果您不是AEM Sites或电子商务客户
 
          * 请参 [阅识别热点](#identifying-hotspot-and-image-map-variables) 变量，就像您想要定义这些变量一样。
-         * 然后，手动输入SKU值。 In the **[!UICONTROL SKU Value]** text field, type the product&#39;s SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. 输入的SKU值会自动填充快速视图模板的变量部分，以便系统能够将点按的热点与特定SKU的快速视图相关联。
+         * 然后，手动输入SKU值。 In the **[!UICONTROL SKU Value]** text field, type the product&#39;s SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. 输入的SKU值会自动填充快速视图模板的变量部分，以便系统能够将点按的热点与特定SKU的快速视图关联。
          * (Optional) If there are other variables within the quick view that you need to use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. In the text field, specify an additional variable. 例如，`category=Mens` 就是一个添加的变量。
          * 有关更 [多信息，请参](working-with-selectors.md) 阅使用选择器。
    * 点按&#x200B;**[!UICONTROL 超链接]**。
@@ -303,7 +303,7 @@ If you need to edit Carousel Sets, see [editing Carousel Sets](#editing-carousel
 
          请参 [阅体验片段](/help/sites-authoring/experience-fragments.md)。
 
-         **注意**: 请注意，在体验片段中嵌入查看器时，轮盘横幅中不支持社交媒体共享工具。 要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
+         **注意**:请注意，在体验片段中嵌入查看器时，轮盘横幅中不支持社交媒体共享工具。 要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，您可以成功将其嵌入到体验片段中。
 
       * 指定体验片段在横幅上的显示方式，如同其宽度和高度一样。
 

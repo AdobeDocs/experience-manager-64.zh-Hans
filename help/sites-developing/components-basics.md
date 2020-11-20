@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 1%
@@ -1030,10 +1030,12 @@ AEM中的组件受3个不同层次的约束：
 >[!NOTE]
 >
 >对于嵌套组件，对于定义为节点上属性的操作有一些 `cq:listeners` 限制：
-
->* 对于嵌套组件，以下属性的值 *必须* 为 `REFRESH_PAGE`:>
->* `aftermove`
-* `aftercopy`
+>
+>* 对于嵌套组件，以下属性的值 *必须* 为 `REFRESH_PAGE`:
+   >
+   >  
+* `aftermove`
+>  * `aftercopy`
 
 
 事件处理函数可以通过自定义实现实现。 例如(其 `project.customerAction` 中是静态方法):
@@ -1045,7 +1047,8 @@ AEM中的组件受3个不同层次的约束：
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-有关经典UI，请参阅和构件文档的“和 `before<action>` 事件 `after<action>` ”部分，以查看可在处理 [ 函数中 `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) 使用 [ 的参 `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) 数。
+>
+>有关经典UI，请参阅和构件文档的“和 `before<action>` 事件 `after<action>` ”部分，以查看可在处理 [ 函数中 `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) 使用 [ 的参 `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) 数。
 
 使用以下配置，在删除、编辑、插入或移动组件后刷新页面：
 

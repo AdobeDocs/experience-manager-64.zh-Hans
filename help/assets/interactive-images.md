@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4300'
 ht-degree: 18%
@@ -249,7 +249,7 @@ When you finish creating your interactive image, you can use **[!UICONTROL Previ
 >[!NOTE]
 >
 >当您在交互式图像或传送横幅中向图像添加热点时，无论热点是交互式图像还是传送横幅，热点信息都会存储在与图像位置相关的同一元数据位置。 此功能意味着您可以在任一查看器中轻松重复使用同一图像及其定义的热点数据。
-
+>
 >但是，请注意，传送横幅支持图像上的图像地图，这些图像上也可能包含热点；交互式图像则不会。 如果要创建使用同一图像的交互式图像或传送横幅，请牢记这一点。 您可能希望改为使用同一图像的单独副本创建交互式图像和传送横幅。
 >
 >另请参阅 [传送横幅](carousel-banners.md)。

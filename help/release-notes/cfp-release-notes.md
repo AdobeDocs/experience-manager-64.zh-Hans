@@ -4,9 +4,9 @@ description: 特定于Adobe Experience Manager6.4累积修复包的发行说明�
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9b339e7a9ac3f43fd0ef2e672d6fbd640993368b
+source-git-commit: e29f203fc6754056d613bd47bdb8decff9e6b5c3
 workflow-type: tm+mt
-source-wordcount: '4042'
+source-wordcount: '4039'
 ht-degree: 11%
 
 ---
@@ -457,7 +457,7 @@ To use Uber Jar in a Maven project, refer to the article, [How to use Uber jar](
 
 >[!NOTE]
 >
->从此版本开始，UberJar和其他相关对象可在Maven Central存储库中使用，而不是Adobe公共Maven存储库(repo.adobe.com)。 主UberJar文件已重命名为 `uber-jar-<version>.jar`。 因此，标签没 `classifier`有 `apis` 任何值（作为值） `dependency` 。
+>UberJar和其他相关对象可在Maven Central存储库中使用，而不是AdobePublic Maven存储库(repo.adobe.com)。 主UberJar文件已重命名为 `uber-jar-<version>.jar`。 因此，标签没 `classifier`有 `apis` 任何值（作为值） `dependency` 。
 
 ## 已移除/已弃用功能 {#removed-deprecated-features}
 

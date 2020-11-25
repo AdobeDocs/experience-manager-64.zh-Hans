@@ -4,9 +4,9 @@ description: 特定于Adobe Experience Manager6.4累积修复包的发行说明�
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c9d5556f2358489ae011add1243785f52c0c4135
+source-git-commit: a969fb6ca6962766b7a69a4f35a9960269dabc86
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4038'
 ht-degree: 11%
 
 ---
@@ -332,7 +332,7 @@ Adobe Experience Manager6.4.8.1修复了以下问题。
 
 >[!NOTE]
 >
->AEM累积修复包不包含针对AEM Forms的修复。 它们是通过单独的 Forms 附加组件包交付的。此外，还发布了包含针对AEM Forms的JEE修复的累积安装程序。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
+>它们是通过单独的 Forms 附加组件包交付的。此外，还发布了包含针对AEM Forms的JEE修复的累积安装程序。 For more information, see [Install AEM Forms add-on package](#install-aem-forms-add-on-package) and [Install AEM Forms JEE installer](#install-aem-forms-jee-installer).
 
 * 通信管理：当用户粘贴来自文档的 [!DNL Word] 内容时，文本文档片段不保留格式(NPR-33213)。
 * 适应性Forms:自适应表单词典中字符串的新行将字 `&#xa;` 符添加到词典(NPR-33265)。

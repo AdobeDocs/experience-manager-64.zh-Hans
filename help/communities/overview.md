@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1407'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 4%
 
 利用 Adobe Experience Manager (AEM) Communities，可以快速创建内部部署社区网站，从而提升性能和网站管理能力，同时促进网站访客转化为有价值的社区成员。
 
-请联系您的客户代表，了解有关AEM Communities的许可以及支持功能和Adobe Analytics的其他许可信息。
+<!--
+Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
+-->
 
 ## 社区功能 {#communities-features}
 
@@ -46,30 +48,30 @@ AEM Communities支持与网站访客建立关系，通过博客、问题与答�
    * 登录
    * 翻译
 * 提供基本功能：
-   * 响应式设计： 使用 [TwitterBootstrap主题](https://getbootstrap.com)
-   * 登录： 自助注册、社 [交登录](social-login.md)、用户用户档案
-   * 通知： 会员可以看到与他们相关的事件
-   * 消息： 会员可以在社区站点内发送或接收消息
-   * 搜索： 能够在社区站点内进行搜索
-   * 语言切换： 能为多语言站点选 [择语言](../../help/sites-administering/translation.md)
-   * 管理： 授权成员有权审核和管理社区站点内的用户
+   * 响应式设计：使用 [TwitterBootstrap主题](https://getbootstrap.com)
+   * 登录：自助注册、社 [交登录](social-login.md)、用户用户档案
+   * 通知：会员可以看到与他们相关的事件
+   * 消息：会员可以在社区站点内发送或接收消息
+   * 搜索：能够在社区站点内进行搜索
+   * 语言切换：能为多语言站点选 [择语言](../../help/sites-administering/translation.md)
+   * 管理：授权成员有权审核和管理社区站点内的用户
 * 消除许多页面级创作步骤：
-   * 品牌： 可选上传横幅图像以显示在社区站点的所有页面上
-   * 导航菜单： 为社区站点模板中包含的功能提供了导航链接
+   * 品牌：可选上传横幅图像以显示在社区站点的所有页面上
+   * 导航菜单：为社区站点模板中包含的功能提供了导航链接
 
 要体验快速创建新社区站点的便利性，请访 [问AEM Communities入门](getting-started.md)。
 
 ## 社区内容持久性 {#community-content-persistence}
 
-为了改进社区内容的性能和同步，AEM Communities要求为所有AEM（作者和发布）实例之间共享的用户生成内容(UGC)建立一个专用的公用存储。
+为了改进社区内容的性能和同步，AEM Communities要求为所有AEM（作者和发布）实例之间共享的用户生成内容(UGC)提供一个专用的公用存储。
 
 社区内容可通过存储资源提供者(SRP)轻松访问，该提供者提供一个层，用于将访问与底层拓扑分离，并支持UGC的公共存储。
 
 要进一步了解社区内容持久性和推荐的部署，请访问：
 
-* [社区内容存储](working-with-srp.md): 讨论UGC的可用SRP存储选项
-* [推荐的拓扑](topologies.md): 讨论基于用例的拓扑和SRP选择
-* [升级到AEM 6.3 Communities](upgrade.md): 在移至AEM 6.3时提供有关UGC的有用信息。
+* [社区内容存储](working-with-srp.md):讨论UGC的可用SRP存储选项
+* [推荐的拓扑](topologies.md):讨论基于用例的拓扑和SRP选择
+* [升级到AEM 6.3 Communities](upgrade.md):在移至AEM 6.3时提供有关UGC的有用信息。
 
 ## 社区控制台 {#communities-consoles}
 
@@ -205,7 +207,7 @@ AEM Communities支持与网站访客建立关系，通过博客、问题与答�
 
 ## AEM Demo Machine {#aem-demo-machine}
 
-AEM [Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) 管理和运行AEM Sites [、Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites)、 [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets)、 Apps [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities)[](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps)[](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)和BildoMachine的演示，它通常要求设置比只启动QuickStart实例更多。 AEM Demo Machine将设置其他 [基础](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) 架构，如MongoDB、Solr、MySQL、FFmpeg和电子邮件服务器。
+AEM [Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) 管理和运行AEM Sites [、Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites)、 [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets)、 Apps [](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities)[](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps)[](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)Apps和Bildo Forms的演示，通常需要设置比启动QuickStart实例更多的设置。 AEM Demo Machine将设置其他 [基础](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) 架构，如MongoDB、Solr、MySQL、FFmpeg和电子邮件服务器。
 
 AEM Demo Machine由
 

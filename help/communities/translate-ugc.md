@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ UGC的翻译使网站访客和成员能够通过消除语言障碍体验全球�
 
 ## 默认翻译服务 {#the-default-translation-service}
 
-AEM Communities提供 [试用许可证](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) ，提供 [支持多种语](../../help/sites-administering/tc-msconf.md) 言的默认翻译服务。
+AEM Communities包含 [对多种语言](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) 、启用 [的默认翻译服务](../../help/sites-administering/tc-msconf.md) 的试用许可证。
 
 创 [建社区站点](sites-console.md)时，从TRANSLATION子面板 `Allow Machine Translation` 选中后，将启 [用默认](sites-console.md#translation) 翻译服务。
 
@@ -109,7 +109,7 @@ AEM Communities提供 [试用许可证](../../help/sites-administering/tc-msconf
 
 有关详细说明，请 [访问创建翻译集成配置](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
-* **[!UICONTROL “站点]** ”选项卡： 可以保留为默认值
+* **[!UICONTROL “站点]** ”选项卡：可以保留为默认值
 * **[!UICONTROL “社区]** ”选项卡：
    * **[!UICONTROL 翻译提供]**&#x200B;者从下拉列表中选择翻译提供者。 默认为 
 `microsoft`、试用服务。
@@ -119,7 +119,7 @@ AEM Communities提供 [试用许可证](../../help/sites-administering/tc-msconf
 
    * **[!UICONTROL 选择区域设置……]**（可选）通过选择存储UGC的区域设置，来自所有语言副本的帖子将显示在一个全局对话中。 根据惯例，为网站的基 [本语言](sites-console.md#translation) 选择区域设置。 选择 `No Common Store` 将禁用全局翻译。 默认情况下，全局翻译处于禁用状态。
 
-* **[!UICONTROL “资产]** ”选项卡： 可以保留为默认值
+* **[!UICONTROL “资产]** ”选项卡：可以保留为默认值
 * 选择确 **[!UICONTROL 定]**
 
 #### 激活 {#activation}

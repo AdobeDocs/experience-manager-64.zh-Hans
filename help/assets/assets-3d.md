@@ -18,11 +18,11 @@ ht-degree: 5%
 ---
 
 
-# Working with AEM 3D assets {#working-with-d-assets}
+# 使用AEM 3D资源{#working-with-d-assets}
 
 >[!IMPORTANT]
 >
->AEM 6.4中不再支持AEM 3D。 Adobe建议您将AEM中的3D资源功 [能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更高版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>AEM 6.4中不再支持AEM 3D。 Adobe建议您将[AEM中的3D资产功能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更高版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 通过 AEM 3D (Adobe Experience Manager 3D)，您可以上传、管理、查看和渲染 3D 内容。单个对象的查看和渲染支持已得到优化。
 
@@ -30,11 +30,11 @@ ht-degree: 5%
 
 另请参阅[安装和配置 AEM 3D](install-config-3d.md)。
 
-## 关于AEM 3D中的模型和舞台 {#about-models-and-stages-in-aem-d}
+## 关于AEM 3D {#about-models-and-stages-in-aem-d}中的模型和舞台
 
 AEM 3D允许您在称为舞台的预定义环境中视图和渲染高质量的独立静态3D模型。 基本上，舞台为3D场景提供“照明”以及在本机应用程序（如Autodesk® Maya®或Autodesk 3ds Max®）中进行渲染的设置。 此外，舞台可以选择地包括预定义的相机、背景和地平面几何。
 
-上传的包含光照的3D文件假定为舞台。 您可以通过在资产详细信息页面中打开资产，将此类资产还原为简单的3D对象。 点按 **[!UICONTROL 视图]**&#x200B;属性，然后点 **[!UICONTROL 按基本]** 选项卡。 在元数据标题下的资产类下拉列表下，选择 **[!UICONTROL 3D对象]**。
+上传的包含光照的3D文件假定为舞台。 您可以通过在资产详细信息页面中打开资产，将此类资产还原为简单的3D对象。 点按&#x200B;**[!UICONTROL 视图属性]**，然后点按&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡。 在元数据标题下的资产类下拉列表下，选择&#x200B;**[!UICONTROL 3D对象]**。
 
 创建要用于AEM 3D的3D模型时，请注意以下事项：
 
@@ -47,11 +47,11 @@ AEM 3D允许您在称为舞台的预定义环境中视图和渲染高质量的�
 
 * 一般场景照明由舞台提供。 因此，Adobe不建议您在3D模型文件中包含光。 可在模型中包含灯。 但是，它们必须只针对模型。 例如，可能需要包括额外的照明，以使被其他部分遮住的对象的一部分变亮。 因此，光是舞台灯就看不见了。
 
-## AEM 3D中支持的文件 {#supported-files-in-aem-d}
+## AEM 3D {#supported-files-in-aem-d}中支持的文件
 
-典型的3D资产具有主模型文件，且没有或更多引用文件。 引用的文件包括纹理贴图或 **IBL（基于图像的光照）图像** 。
+典型的3D资产具有主模型文件，且没有或更多引用文件。 引用的文件包括纹理映射或&#x200B;**IBL（基于图像的照明）**&#x200B;图像。
 
-### 关于主3D模型文件 {#about-the-primary-d-model-file}
+### 关于主3D模型文件{#about-the-primary-d-model-file}
 
 主3D模型文件包含实际的3D模型几何和应用于模型曲面的（缺省）材料的定义。 AEM 3D支持以下主要3D模型文件格式：
 
@@ -63,7 +63,7 @@ AEM 3D允许您在称为舞台的预定义环境中视图和渲染高质量的�
 
    Autodesk 3D文件交换格式；二进制和ASCII格式。
 
-   在第三方应用程序中创建FBX文件时，Adobe建议使用以下配置设置（请参阅下表）。 这些设置可以帮助您为要在AEM中使用的3D文件获得最佳效果。 选项名称取自“Autodesk Maya FBX **[!UICONTROL Export Options”(自动桌面玛雅FBX导出选项]** )对话框。
+   在第三方应用程序中创建FBX文件时，Adobe建议使用以下配置设置（请参阅下表）。 这些设置可以帮助您为要在AEM中使用的3D文件获得最佳效果。 选项名称取自&#x200B;**[!UICONTROL Autodesk Maya FBX Export Options]**&#x200B;对话框。
 
 <table> 
  <tbody> 
@@ -89,11 +89,11 @@ AEM 3D允许您在称为舞台的预定义环境中视图和渲染高质量的�
   </tr> 
   <tr> 
    <td>相机</td> 
-   <td><p>选择3 <strong>D舞台</strong>。</p> <p>取消选择3D模型。</p> </td> 
+   <td><p>选择<strong>3D舞台</strong>。</p> <p>取消选择3D模型。</p> </td> 
   </tr> 
   <tr> 
    <td>灯光</td> 
-   <td><p>选择3 <strong>D舞台</strong>。</p> <p>取消选 <strong>择3D模型</strong>。</p> </td> 
+   <td><p>选择<strong>3D舞台</strong>。</p> <p>取消选择<strong>3D模型</strong>。</p> </td> 
   </tr> 
   <tr> 
    <td>单位——自动</td> 
@@ -105,11 +105,11 @@ AEM 3D允许您在称为舞台的预定义环境中视图和渲染高质量的�
   </tr> 
   <tr> 
    <td>嵌入媒体</td> 
-   <td>两个选项都受支持。 如果选择了嵌入，AEM 3D会将嵌入的媒体提取到与模型文件同名的相邻文件夹，并附加 <code>.fbm</code> 到该文件夹。</td> 
+   <td>两个选项都受支持。 如果选择了“嵌入”,AEM 3D会将嵌入的媒体提取到与模型文件同名的相邻文件夹，并附加<code>.fbm</code>。</td> 
   </tr> 
   <tr> 
    <td>FBX文件格式——类型</td> 
-   <td>支持 <strong>二进制 </strong>或 <strong>ASCII </strong>代码。</td> 
+   <td>支持二进制<strong>或<strong>ASCII </strong>。</strong></td> 
   </tr> 
   <tr> 
    <td>FBX文件格式——版本</td> 
@@ -122,13 +122,13 @@ AEM 3D允许您在称为舞台的预定义环境中视图和渲染高质量的�
 
 * 玛雅汽车台
 
-   ASCII和二 `.ma` 进制格 `.mb` 式。
+   ASCII `.ma`和二进制`.mb`格式。
 
 * `Jupiter Tesselation (ISO 14306-1).jt`。
 
    行业标准的CAD数据交换、协作和产品可视化格式。
 
-### 支持纹理映射文件 {#support-for-texture-map-files}
+### 支持纹理映射文件{#support-for-texture-map-files}
 
 3D模型文件中的材料定义可以包括对提供纹理映射的外部图像文件的引用。 AEM 3D支持以下类型的纹理映射文件：
 
@@ -142,18 +142,18 @@ AEM 3D允许您在称为舞台的预定义环境中视图和渲染高质量的�
 
 主3D模型文件中的材料可以引用AEM 3D忽略的其他类型的映射。
 
-### IBL（基于图像的照明）图像 {#ibl-image-based-lighting-images}
+### IBL（基于图像的照明）图像{#ibl-image-based-lighting-images}
 
 定义舞台的3D模型文件可以引用单个IBL环境图像。 目前，AEM 3D仅支持经纬度格式的32位TIFF图像，用于扩散IBL和反射。 对于球面场景背景，还支持8位RGB图像。
 
-See [About working with IBL stages](working-with-ibl-stages.md).
+请参阅[关于使用IBL阶段](working-with-ibl-stages.md)。
 
 >[!NOTE]
 >
 >当前忽略主3D模型文件中存在的文件参照（上述参照除外）。 AEM 3D不支持对辅助3D模型文件的引用。
 Y-up是此版本FBX文件的首选坐标系。
 
-## 主3D模型文件中的材料底纹 {#material-shading-in-a-primary-d-model-file}
+## 主3D模型文件{#material-shading-in-a-primary-d-model-file}中的材料底纹
 
 原始本机模型文件可包含与着色器（如Blinn、Lambert或过程式着色器）一起使用的材料定义。 仅当您使用相应的本机应用程序（如Autodesk Maya）进行渲染时，才支持这些可能复杂的材料。
 
@@ -163,7 +163,7 @@ Y-up是此版本FBX文件的首选坐标系。
 
 请参阅[渲染 3D 资产](rendering-3d-assets.md)。
 
-## 在主3D模型文件中命名材料 {#naming-materials-in-a-primary-d-model-file}
+## 在主3D模型文件{#naming-materials-in-a-primary-d-model-file}中命名材料
 
-曲 *面被定* 义为由相同材料覆盖的3D模型的表面区域。 此材料还提供曲面的名称。 因此，Adobe建议您相应地命名主3D模型文件中包含的材料。 例如，使用“Body”、“Windows”、“Tires”或“Rims”等特定名称比使用“Red”、“Glass”、“Rubber”、“Alumin”等模糊名称更为可取。
+*表面*&#x200B;定义为由相同材料覆盖的3D模型的表面区域。 此材料还提供曲面的名称。 因此，Adobe建议您相应地命名主3D模型文件中包含的材料。 例如，使用“Body”、“Windows”、“Tires”或“Rims”等特定名称比使用“Red”、“Glass”、“Rubber”、“Alumin”等模糊名称更为可取。
 

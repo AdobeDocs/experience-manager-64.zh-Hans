@@ -18,7 +18,7 @@ ht-degree: 0%
 
 资产模板是一种特殊的资产类别，它有助于快速为数字和印刷媒体重用视觉效果丰富的内容。 资产模板包括两个部分，即固定消息部分和可编辑部分。
 
-固定消息部分可以包含专有内容，如品牌徽标和禁用进行编辑的版权信息。 可编辑部分可在可编辑的字段中包含可视内容和文本内容，以自定义消息。
+固定消息部分可以包含专有内容，如品牌徽标和禁用进行编辑的版权信息。 可编辑部分可在可编辑以自定义消息的字段中包含可视内容和文本内容。
 
 在保护全局签名的同时灵活地进行有限的编辑，这使得资产模板成为快速调整内容和分发内容的理想构件块，并将其作为各种功能的内容伪像。 内容重用有助于降低管理印刷和数字渠道的成本，并在这些渠道提供全面、一致的体验。
 
@@ -46,20 +46,20 @@ ht-degree: 0%
 
 您还可以将这些格式的输出下载到本地系统。
 
-## 创建宣传品 {#creating-a-collateral}
+## 创建宣传资料{#creating-a-collateral}
 
 请考虑您希望为即将到来的活动制作数字可打印宣传品（如小册子、传单和广告）并与全球直销店共享的场景。 根据模板创建宣传资料有助于跨渠道提供统一的客户体验。 设计人员可以使用创意解决方案(如InDesign)创建活动模板（单页或多页），并为您将模板上传到AEM Assets。 在创建宣传品之前，应提前将一个或多个INDD模板上传到Experience Manager并供使用。
 
-1. 单击或点按AEM徽标，然后单击／点按导 **[!UICONTROL 航页]** 面上的资产。
-1. 从选项中，选择“模 **[!UICONTROL 板”]**。
+1. 单击或点按AEM徽标，然后单击／点按导航页面上的&#x200B;**[!UICONTROL 资产]**。
+1. 从选项中，选择&#x200B;**[!UICONTROL 模板]**。
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
-1. 单击／点 **[!UICONTROL 按创]**&#x200B;建，然后从菜单中选择要创建的宣传品。 例如，选择“ **[!UICONTROL 小册子]**”。
+1. 单击／点按&#x200B;**[!UICONTROL 创建]**，然后从菜单中选择要创建的宣传品。 例如，选择&#x200B;**[!UICONTROL Brochure]**。
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
 
-1. 提前将一个或多个INDD模板上传到Experience Manager并可用。 为您的宣传册选择一个模板，然后单击／点按下 **[!UICONTROL 一步]**。
+1. 提前将一个或多个INDD模板上传到Experience Manager并可用。 为宣传册选择模板，然后单击／点按&#x200B;**[!UICONTROL 下一步]**。
 
    ![chlimage_1-308](assets/chlimage_1-308.png)
 
@@ -67,11 +67,11 @@ ht-degree: 0%
 
    ![chlimage_1-309](assets/chlimage_1-309.png)
 
-1. （可选）单击／点按“标 **[!UICONTROL 记]** ”字段 **[!UICONTROL 旁的]** “标记”图标，然后为小册子选择一个或多个标记。 单击／点按 **[!UICONTROL 确认]** ，以确认您的选择。
+1. （可选）单击／点按&#x200B;**[!UICONTROL 标记]**&#x200B;字段旁边的&#x200B;**[!UICONTROL 标记]**&#x200B;图标，然后为手册选择一个或多个标记。 单击／点按&#x200B;**[!UICONTROL 确认]**&#x200B;以确认您的选择。
 
    ![chlimage_1-310](assets/chlimage_1-310.png)
 
-1. 单击&#x200B;**[!UICONTROL 创建]**。对话框会确认新手册的制作。 单击／点 **[!UICONTROL 按打开]** ，以在编辑模式下打开宣传册。
+1. 单击&#x200B;**[!UICONTROL 创建]**。对话框会确认新手册的制作。 单击／点按&#x200B;**[!UICONTROL 打开]**&#x200B;以编辑模式打开宣传册。
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -79,13 +79,13 @@ ht-degree: 0%
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## 编辑宣传资料 {#editing-a-collateral}
+## 编辑宣传资料{#editing-a-collateral}
 
 您可以在创建宣传品后立即对其进行编辑。 或者，也可以从模板页面或资产页面打开它。
 
 1. 要打开要编辑的宣传品，请执行下列操作之一：
 
-   * 打开您在创建宣传资料第7步中创建的宣传资料(本例中 [为宣传册)](asset-templates.md#creating-a-collateral)。
+   * 打开您在[创建宣传资料](asset-templates.md#creating-a-collateral)的步骤7中创建的宣传资料（本例中为宣传册）。
    * 在“模板”页面中，导航到创建宣传品的文件夹，然后单击／点按宣传品缩略图上的编辑快速操作。
    * 在宣传品的资产页面中，单击／点按工具栏中的编辑图标。
    * 选择宣传品，然后单击／点按工具栏中的编辑图标。
@@ -106,7 +106,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >确保您的AEM实例与InDesign服务器相集成，使AEM Assets能够从InDesign模板提取数据并使其可供编辑。 有关详细信息，请参 [阅将AEM Assets与InDesign Server集成](indesign.md)。
+   >确保您的AEM实例与InDesign服务器相集成，使AEM Assets能够从InDesign模板提取数据并使其可供编辑。 有关详细信息，请参阅[将AEM Assets与InDesign Server集成](indesign.md)。
 
 1. 要修改可编辑字段中的文本，请单击／点按可编辑字段列表中的文本字段，然后编辑该字段中的文本。
 
@@ -114,11 +114,11 @@ ht-degree: 0%
 
    您可以编辑文本属性，例如字体样式、颜色和大小，使用提供的选项。
 
-1. 单击／点按 **[!UICONTROL 预览]** 图标以预览文本更改。
+1. 单击／点按&#x200B;**[!UICONTROL 预览]**&#x200B;图标以预览文本更改。
 
    ![chlimage_1-317](assets/chlimage_1-317.png)
 
-1. 要交换图像，请单击／点按资产 **[!UICONTROL 查找器]** 图标。
+1. 要交换图像，请单击／点按&#x200B;**[!UICONTROL 资产查找器]**&#x200B;图标。
 
    ![chlimage_1-318](assets/chlimage_1-318.png)
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
-1. 单击／点按 **[!UICONTROL 预览]** 图标以预览图像。
+1. 单击／点按&#x200B;**[!UICONTROL 预览]**&#x200B;图标以预览图像。
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -138,7 +138,7 @@ ht-degree: 0%
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. 单击／点按工 **[!UICONTROL 具栏]** 上的预览图标以预览所有更改。 单击／点按 **[!UICONTROL 完成]** ，以保存对宣传资料的编辑更改。
+1. 单击／点按工具栏上的&#x200B;**[!UICONTROL 预览]**&#x200B;图标以预览所有更改。 单击／点按&#x200B;**[!UICONTROL 完成]**&#x200B;以保存对宣传资料的编辑更改。
 
    >[!NOTE]
    >
@@ -150,14 +150,14 @@ ht-degree: 0%
    >
    >要启用AEM解析图像，请执行以下操作：
    >
-   >* 创建InDesign模板时嵌入图像(请参 [阅关于链接和嵌入图形](https://helpx.adobe.com/indesign/using/graphics-links.html))。
+   >* 创建InDesign模板时嵌入图像（请参阅[关于链接和嵌入图形](https://helpx.adobe.com/indesign/using/graphics-links.html)）。
    >* 将AEM装载到您的本地文件系统，然后将缺少的图标与现有AEM资产进行映射。
 
    >
-   >有关使用InDesign文档的更多信息，请 [参阅使用AEM中的InDesign文档的最佳实践](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)。
+   >有关使用InDesign文档的详细信息，请参阅[在AEM](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)中使用InDesign文档的最佳实践。
 
-1. 要为手册生成PDF再现，请在对话框中选择“Acrobat”选项，然后单击“继 **[!UICONTROL 续”]**。
-1. 附属品会在您开始使用的文件夹中创建。 要视图演绎版，请打开宣传品，然 **[!UICONTROL 后从]** GlobalNav列表中选择“演绎版”。
+1. 要为手册生成PDF再现，请在对话框中选择“Acrobat”选项，然后单击&#x200B;**[!UICONTROL 继续]**。
+1. 附属品会在您开始使用的文件夹中创建。 要视图演绎版，请打开宣传品，然后从GlobalNav列表中选择&#x200B;**[!UICONTROL 演绎版]**。
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
@@ -165,12 +165,12 @@ ht-degree: 0%
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
-## 合并附属品 {#merge-collateral}
+## 合并附属品{#merge-collateral}
 
 
-1. 单击或点按 **[!UICONTROL 工具>资产]**。
-1. 从选项中，选择“模 **[!UICONTROL 板”]**。
-1. 单击／点按 **[!UICONTROL 创建]** ，然后从 **[!UICONTROL 菜单中]** 选择“合并”。
+1. 单击或点按&#x200B;**[!UICONTROL 工具>资产]**。
+1. 从选项中，选择&#x200B;**[!UICONTROL 模板]**。
+1. 单击／点按&#x200B;**[!UICONTROL 创建]**，然后从菜单中选择&#x200B;**[!UICONTROL 合并]**。
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
@@ -194,16 +194,16 @@ ht-degree: 0%
 
    ![chlimage_1-330](assets/chlimage_1-330.png)
 
-1. 单击／点 **[!UICONTROL 按工]** 具栏中的下一步。
-1. 在“预览 **[!UICONTROL 和重新排序]** ”屏幕中，根据需要重新排列模板，并预览要合并的模板选择。 然后，单击／点按工 **[!UICONTROL 具栏]** 中的下一步。
+1. 单击／点按工具栏中的&#x200B;**[!UICONTROL 下一步]**。
+1. 在&#x200B;**[!UICONTROL 预览和重新排序]**&#x200B;屏幕中，根据需要重新排列模板并预览要合并的模板选择。 然后，单击／点按工具栏中的&#x200B;**[!UICONTROL 下一步]**。
 
    ![chlimage_1-331](assets/chlimage_1-331.png)
 
-1. 在“配置模板”屏幕中，指定宣传品的名称。 （可选）指定您认为合适的任何标记。 如果要以PDF格式导出输出，请选择“ **[!UICONTROL Acrobat(.PDF)]** ”选项。 默认情况下，辅助材料以JPG和InDesign格式导出。 要更改多页宣传资料的显示缩略图，请单击／点按更 **[!UICONTROL 改缩略图]**。
+1. 在“配置模板”屏幕中，指定宣传品的名称。 （可选）指定您认为合适的任何标记。 如果要以PDF格式导出输出，请选择&#x200B;**[!UICONTROL Acrobat(.PDF)]**&#x200B;选项。 默认情况下，辅助材料以JPG和InDesign格式导出。 要更改多页宣传资料的显示缩略图，请单击／点按&#x200B;**[!UICONTROL 更改缩略图]**。
 
    ![chlimage_1-332](assets/chlimage_1-332.png)
 
-1. Click/tap **[!UICONTROL Save]** and then click/tap **[!UICONTROL OK]** in the dialog to close the dialog. 将在您开始使用的文件夹中创建多页宣传资料。
+1. 单击／点按&#x200B;**[!UICONTROL 保存]**，然后单击／点按对话框中的&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭对话框。 将在您开始使用的文件夹中创建多页宣传资料。
 
    >[!NOTE]
    >

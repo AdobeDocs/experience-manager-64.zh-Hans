@@ -22,7 +22,7 @@ ht-degree: 48%
 + [关于DAM](assets.md)
 + [用户体验改进](ux-improvements.md)
 + [资产的最佳实践](best-practices-for-assets.md)
-+ 使用AEM Assets {#using}
++ 使用AEM Assets{#using}
    + [AEM Assets主页经验](assets-home-page.md)
    + [在AEM中搜索资产](search-assets.md)
    + [GQL 全文搜索](gql-search.md)
@@ -37,9 +37,9 @@ ht-degree: 48%
    + [Experience League 发布的 Dynamic Media 新闻稿](dynamic-media-newsletter.md)
    + [设置 Dynamic Media](administering-dynamic-media.md)
    + [使用 Dynamic Media](dynamic-media.md)
-   + [配置Dynamic Media -Scene7模式](config-dms7.md)
-   + [配置Dynamic Media —— 混合模式](config-dynamic.md)
-   + [Dynamic Media疑难解答-Scene7模式](troubleshoot-dms7.md)
+   + [配置Dynamic Media-Scene7模式](config-dms7.md)
+   + [配置Dynamic Media-混合模式](config-dynamic.md)
+   + [Dynamic Media-Scene7模式疑难解答](troubleshoot-dms7.md)
    + [管理 Dynamic Media 资产](managing-assets.md)
    + [优化图像质量的最佳实践](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [管理 Dynamic Media 查看器预设](managing-viewer-presets.md)
@@ -73,7 +73,7 @@ ht-degree: 48%
    + [使 CDN 缓存内容无效](invalidate-cdn-cached-content.md)
    + [安装功能包18912以批量迁移资产](bulk-ingest-migrate.md)
    + [使用选择器](working-with-selectors.md)
-+ 扩展资产 {#extending}
++ 扩展资产{#extending}
    + [自定义和扩展资产](extending-assets.md)
    + [使用媒体处理函数和工作流处理资产](media-handlers.md)
    + [扩展资产搜索](searchx.md)
@@ -82,7 +82,7 @@ ht-degree: 48%
    + [扩展资产编辑器](asseteditorx.md)
    + [资产 HTTP API](mac-api-assets.md)
    + [资产代理开发](proxy.md)
-+ 管理资产 {#administer}
++ 管理资产{#administer}
    + [资产支持的格式](assets-formats.md)
    + [搜索 Facet](search-facets.md)
    + [管理资产的元数据](metadata.md)
@@ -139,7 +139,7 @@ ht-degree: 48%
    + [内容片段 - 删除注意事项](content-fragments-delete.md)
    + [内容片段——标记](content-fragments-markdown.md)
    + [为内容片段创建翻译项目](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ 管理资产{#managing}
    + [使用针对触摸优化的用户界面管理资产](managing-assets-touch-ui.md)
    + [管理多个资产和收藏集](managing-multiple-assets.md)
    + [资产选择器](asset-selector.md)
@@ -166,7 +166,7 @@ ht-degree: 48%
    + [专用文件夹共享](private-folder.md)
    + [智能内容服务培训指南](smart-tags-training-guidelines.md)
    + [视频演绎版](video-renditions.md)
-+ 3D资产 {#three-d}
++ 3D资产{#three-d}
    + [AEM 3D发行说明](../release-notes/aem3d-release-notes.md)
    + [使用 3D 资产](assets-3d.md)
    + [安装和配置AEM 3D](install-config-3d.md)

@@ -11,25 +11,25 @@ ht-degree: 0%
 ---
 
 
-# 资产代理开发 {#assets-proxy-development}
+# 资产代理开发{#assets-proxy-development}
 
 Adobe Experience Manager(AEM)资产使用代理为某些任务分发处理。
 
-代理是一个特定（有时也是单独的）AEM实例，它使用代理工作程序作为处理程序，负责处理作业并创建结果。 代理工作器可用于各种任务。 对于AEM Assets代理，此代理可用于加载资产以在AEM Assets内进行渲染。 例如，IDS代理 [工作者使用InDesign Server](indesign.md) ，处理文件以在AEM Assets使用。
+代理是一个特定（有时也是单独的）AEM实例，它使用代理工作程序作为处理程序，负责处理作业并创建结果。 代理工作器可用于各种任务。 对于AEM Assets代理，此代理可用于加载资产以在AEM Assets内进行渲染。 例如，[IDS代理工作者](indesign.md)使用InDesign Server处理文件以在AEM Assets使用。
 
 当代理是单独的AEM实例时，这有助于减少AEM创作实例的负载。 默认情况下，AEM Assets在同一JVM（通过代理外部化）中执行资产处理任务，以减少AEM创作实例的负载。
 
-## 代理（HTTP访问） {#proxy-http-access}
+## 代理（HTTP访问）{#proxy-http-access}
 
-当代理配置为在以下位置接受处理作业时，可通过HTTP Servlet使用： `/libs/dam/cloud/proxy`. 此servlet根据已发布的参数创建sling作业。 然后，此操作会添加到代理作业队列并连接到相应的代理工作器。
+当代理配置为在以下位置接受处理作业时，可通过HTTP Servlet使用：`/libs/dam/cloud/proxy`。 此servlet根据已发布的参数创建sling作业。 然后，此操作会添加到代理作业队列并连接到相应的代理工作器。
 
-### 支持的操作 {#supported-operations}
+### 支持的操作{#supported-operations}
 
 * `job`
 
-   **要求**: 参数 `jobevent` 必须设置为序列化值映射。 它用于为作业处 `Event` 理器创建。
+   **要求**:该参 `jobevent` 数必须设置为序列化值映射。它用于为作业处理器创建`Event`。
 
-   **结果**: 添加新作业。 如果成功，则返回唯一的作业ID。
+   **结果**:添加新作业。如果成功，则返回唯一作业ID。
 
 ```shell
 curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
@@ -38,9 +38,9 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **要求**: 必须 `jobid` 设置参数。
+   **要求**:必须 `jobid` 设置参数。
 
-   **结果**: 返回作业处理者创建的结果节点的JSON表示形式。
+   **结果**:返回作业处理者创建的结果节点的JSON表示形式。
 
 ```shell
 curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
@@ -49,9 +49,9 @@ curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
 
 * `resource`
 
-   **要求**: 必须设置参数jobid。
+   **要求**:必须设置参数jobid。
 
-   **结果**: 返回与给定作业关联的资源。
+   **结果**:返回与给定作业关联的资源。
 
 ```shell
 curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
@@ -60,26 +60,26 @@ curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
 
 * `remove`
 
-   **要求**: 必须设置参数jobid。
+   **要求**:必须设置参数jobid。
 
-   **结果**: 如果找到，则删除作业。
+   **结果**:如果找到，则删除作业。
 
 ```shell
 curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
     http://localhost:4502/libs/dam/cloud/proxy
 ```
 
-### Proxy Worker {#proxy-worker}
+### 代理工作器{#proxy-worker}
 
-代理工作者是负责处理作业和创建结果的处理器。 Worker驻留在代理实例上，必须实 [施sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) ，以被识别为代理Worker。
+代理工作者是负责处理作业和创建结果的处理器。 Worker驻留在代理实例上，必须实现[sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html)才能被识别为代理Worker。
 
 >[!NOTE]
 >
->该工作人员必须实 [施sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) ，才能被识别为代理工作人员。
+>该工作人员必须实施[sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html)才能被识别为代理工作人员。
 
 ### 客户端API {#client-api}
 
-[`JobService`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) 可用作OSGi服务，它提供创建作业、删除作业和从这些作业获取结果的方法。 此服务的默认实现(`JobServiceImpl`)使用HTTP客户端与远程代理servlet通信。
+[`JobService`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) 可用作OSGi服务，它提供创建作业、删除作业和从这些作业获取结果的方法。此服务的默认实现(`JobServiceImpl`)使用HTTP客户端与远程代理servlet通信。
 
 以下是API使用的示例：
 
@@ -107,13 +107,13 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 >[!NOTE]
 >
->有关代理API的参考文档，请访问 [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html)。
+>[`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html)下提供代理API的参考文档。
 
-代理和代理工作器配置均可通过云服务配置获得，并可从AEM Assets工具控制台 **或下** 方访问 `/etc/cloudservices/proxy`。 每个代理工作器都应添加一个节点，用 `/etc/cloudservices/proxy` 于工作器特定配置详细信息( `/etc/cloudservices/proxy/workername`例如)。
+代理和代理工作器配置均可通过云服务配置使用，这些配置可从AEM Assets **工具**&#x200B;控制台或`/etc/cloudservices/proxy`下访问。 每个代理工作器应在`/etc/cloudservices/proxy`下添加一个节点，以了解工作器特定的配置详细信息（例如`/etc/cloudservices/proxy/workername`）。
 
 >[!NOTE]
 >
->有关 [详细信息，请参阅Indesign Server](indesign.md#configuring-the-proxy-worker-for-indesign-server) Proxy Worker配 [置和](../sites-developing/extending-cloud-config.md) Cloud Services配置。
+>有关详细信息，请参阅[Indesign Server代理工作器配置](indesign.md#configuring-the-proxy-worker-for-indesign-server)和[Cloud Services配置](../sites-developing/extending-cloud-config.md)。
 
 以下是API使用的示例：
 
@@ -130,9 +130,9 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
  final String value = cloudConfig.get("someProperty", "defaultValue");
 ```
 
-### 开发自定义代理工作器 {#developing-a-customized-proxy-worker}
+### 开发自定义代理工作器{#developing-a-customized-proxy-worker}
 
-IDS [代理工作者](indesign.md) 是AEM Assets代理工作者的一个示例，该代理工作者已经开箱即用地提供外包Indesign资产的处理。
+[IDS代理工作者](indesign.md)是AEM Assets代理工作者的一个示例，该代理工作者已经提供现成的外包，用于外包Indesign资产的处理。
 
 您还可以开发和配置自己的AEM Assets代理工作人员，以创建专门的工作人员来调度和外包您的AEM Assets处理任务。
 
@@ -158,21 +158,21 @@ IDS [代理工作者](indesign.md) 是AEM Assets代理工作者的一个示例�
 >
 >在以下步骤中，Indesign等效项指示为参考示例。
 
-1. Sling [作业被使用](https://sling.apache.org/site/eventing-and-jobs.html) ，因此您需要为您的使用案例定义作业主题。
+1. 使用[Sling作业](https://sling.apache.org/site/eventing-and-jobs.html)，因此您需要为您的用例定义作业主题。
 
-   例如，请参阅 `IDSJob.IDS_EXTENDSCRIPT_JOB` IDS代理工作器。
+   例如，请参见`IDSJob.IDS_EXTENDSCRIPT_JOB`了解IDS代理工作器。
 
-1. 外部步骤用于触发事件，然后等待完成； 这是通过轮询id来完成的。 您必须自行制定实施新功能的步骤。
+1. 外部步骤用于触发事件，然后等待完成；这是通过轮询id来完成的。 您必须自行制定实施新功能的步骤。
 
-   实施 `WorkflowExternalProcess`，然后使用JobService API和您的作业主题准备作业事件并将其调度到JobService（一种OSGi服务）。
+   实施`WorkflowExternalProcess`，然后使用JobService API和您的作业主题准备作业事件并将其调度到JobService（一种OSGi服务）。
 
-   例如，请参 `INDDMediaExtractProcess`阅IDS代理工作器的。java。
+   例如，请参阅IDS代理工作器的`INDDMediaExtractProcess`.java。
 
 1. 为您的主题实施作业处理程序。 此处理程序需要进行开发，以便执行您的特定操作并被视为工作者实现。
 
-   例如，请参阅 `IDSJobProcessor.java` IDS代理工作器。
+   例如，请参见`IDSJobProcessor.java`了解IDS代理工作器。
 
-1. 利用 `ProxyUtil.java` 大坝共享。 这允许您使用dam代理向员工分派任务。
+1. 在dam-commons中利用`ProxyUtil.java`。 这允许您使用dam代理向员工分派任务。
 
 >[!NOTE]
 >

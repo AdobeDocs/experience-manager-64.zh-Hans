@@ -21,60 +21,60 @@ ht-degree: 13%
 
 >[!CAUTION]
 >
->某些内容片段功能需 [要应用AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](../release-notes/sp-release-notes.md)。
+>某些内容片段功能要求应用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](../release-notes/sp-release-notes.md)。
 
-内容片段模型定义内容片段的内 [容结构](content-fragments.md)。
+内容片段模型定义[内容片段](content-fragments.md)的内容结构。
 
-## Enable Content Fragment Models {#enable-content-fragment-models}
+## 启用内容片段模型{#enable-content-fragment-models}
 
 >[!CAUTION]
 >
->如果不启用内 **[!UICONTROL 容片段模型]**，则 **[!UICONTROL 创建选]** 项将不可用于创建新模型。
+>如果不启用&#x200B;**[!UICONTROL 内容片段模型]**，则&#x200B;**[!UICONTROL 创建]**&#x200B;选项将不可用于创建新模型。
 
 要启用内容片段模型，您需要：
 
 * 在配置管理器中启用内容片段模型
 * 将配置应用到您的资产文件夹
 
-### 在Configuration Manager中启用内容片段模型 {#enable-content-fragment-models-in-configuration-manager}
+### 在Configuration Manager {#enable-content-fragment-models-in-configuration-manager}中启用内容片段模型
 
-要创 [建新的内容片段模型](#creating-a-content-fragment-model) , **您必须首先** 使用配置管理器启用它们：
+要[创建新的内容片段模型](#creating-a-content-fragment-model),**必须首先使用配置管理器启用它们：**
 
 1. 导航到&#x200B;**[!UICONTROL 工具]**、**[!UICONTROL 常规]**，然后打开&#x200B;**[!UICONTROL 配置浏览器]**。
-   * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
+   * 有关详细信息，请参阅[配置浏览器文档](/help/sites-administering/configurations.md)。
 1. 选择适合您的网站的位置。
-1. 使 **[!UICONTROL 用创建]** 打开对话框，您可以：
+1. 使用&#x200B;**[!UICONTROL 创建]**&#x200B;打开对话框，其中：
 
-   1. 指定 **[!UICONTROL 标题]**。
-   1. 选择 **[!UICONTROL 内容片段模型]** ，以启用其使用。
+   1. 指定&#x200B;**[!UICONTROL 标题]**。
+   1. 选择&#x200B;**[!UICONTROL 内容片段模型]**&#x200B;以启用其使用。
 
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
-1. 选择 **[!UICONTROL 创建]** ，以保存定义。
+1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以保存定义。
 
-### 将配置应用到您的资产文件夹 {#apply-the-configuration-to-your-assets-folder}
+### 将配置应用于您的资产文件夹{#apply-the-configuration-to-your-assets-folder}
 
-为内容片 **[!UICONTROL 段模型]** 启用配置全局后，用户创建的任何模型都可以用于任何资产文件夹中。
+当为内容片段模型启用配置&#x200B;**[!UICONTROL global]**&#x200B;时，用户创建的任何模型都可以用于任何资产文件夹中。
 
 要将其他配置（即不包括全局配置）与类似的 Assets 文件夹一起使用，您必须定义连接。可使用&#x200B;**[!UICONTROL 云服务]**&#x200B;选项卡（位于相应文件夹的&#x200B;**[!UICONTROL 文件夹属性]**&#x200B;中）中的&#x200B;**[!UICONTROL 配置]**&#x200B;完成来此操作。
 
-## 创建内容片段模型 {#creating-a-content-fragment-model}
+## 创建内容片段模型{#creating-a-content-fragment-model}
 
-1. 导航到 **[!UICONTROL 工具]**、资 **[!UICONTROL 产]**，然后打 **[!UICONTROL 开内容片段模型]**。
-1. 导览至适合您的配置的文 [件夹](#enable-content-fragment-models)。
-1. 使用 **[!UICONTROL 创建]** ，打开向导。
+1. 导航到&#x200B;**[!UICONTROL 工具]**、**[!UICONTROL 资产]**，然后打开&#x200B;**[!UICONTROL 内容片段模型]**。
+1. 导览至适合您的[配置](#enable-content-fragment-models)的文件夹。
+1. 使用&#x200B;**[!UICONTROL 创建]**&#x200B;打开向导。
 
    >[!CAUTION]
    >
-   >如果 [未启用内容片段模型的使用](#enable-content-fragment-models)，则 **“创建** ”选项将不可用。
+   >如果[未启用内容片段模型的使用](#enable-content-fragment-models)，则&#x200B;**创建**&#x200B;选项将不可用。
 
 1. 指定&#x200B;**[!UICONTROL 模型标题]**。您还可以根据需要添加&#x200B;**[!UICONTROL 描述]**。
 
    ![cfm-6420-10](assets/cfm-6420-10.png)
 
-1. 使 **[!UICONTROL 用]** “创建”(Create)保存空模型。 将显示一条消息，指示操作成功，您可以选 **[!UICONTROL 择]** “打开”(Open)以立即编辑模型， **[!UICONTROL 或选择“]** 完成”(Done)以返回控制台。
+1. 使用&#x200B;**[!UICONTROL 创建]**&#x200B;保存空模型。 将显示一条消息，指示操作成功，您可以选择&#x200B;**[!UICONTROL 打开]**&#x200B;以立即编辑模型，或选择&#x200B;**[!UICONTROL 完成]**&#x200B;以返回控制台。
 
-## 定义内容片段模型 {#defining-your-content-fragment-model}
+## 定义内容片段模型{#defining-your-content-fragment-model}
 
 内容片段模型有效地定义所生成内容片段的结构。 使用模型编辑器，您可以添加和配置必填字段：
 
@@ -82,10 +82,10 @@ ht-degree: 13%
 >
 >编辑现有内容片段模型可能会影响相关片段。
 
-1. 导航到 **[!UICONTROL 工具]**、资 **[!UICONTROL 产]**，然后打 **[!UICONTROL 开内容片段模型]**。
+1. 导航到&#x200B;**[!UICONTROL 工具]**、**[!UICONTROL 资产]**，然后打开&#x200B;**[!UICONTROL 内容片段模型]**。
 
 1. 导航到包含内容片段模型的文件夹。
-1. 打开编辑所需的 **[!UICONTROL 模型]**;使用快速操作，或先选择模型，然后从工具栏中选择操作。
+1. 打开&#x200B;**[!UICONTROL Edit]**&#x200B;所需的型号；使用快速操作，或先选择模型，然后从工具栏中选择操作。
 
    打开模型编辑器后，将显示：
 
@@ -94,7 +94,7 @@ ht-degree: 13%
 
    >[!NOTE]
    >
-   >When a field is **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&amp;ast;**).
+   >当字段为&#x200B;**Required**&#x200B;时，左窗格中指示的&#x200B;**Label**&#x200B;将用标记符(**&amp;ast;**)进行标记。
 
    ![cfm-6420-12](assets/cfm-6420-12.png)
 
@@ -104,7 +104,7 @@ ht-degree: 13%
 
    ![cfm-6420-11](assets/cfm-6420-11.png)
 
-   * 将字段添加到模型后，右侧面板将显示可为该 **特定** 数据类型定义的属性。 您可以在此处定义该字段的必需内容。 例如：
+   * 将字段添加到模型后，右面板将显示可为该特定数据类型定义的&#x200B;**属性**。 您可以在此处定义该字段的必需内容。 例如：
 
    ![cfm-6420-13](assets/cfm-6420-13.png)
 
@@ -114,11 +114,11 @@ ht-degree: 13%
 
    ![cf-32](assets/cf-32.png)
 
-1. 添加所有必填字段并定义属性后，请 **[!UICONTROL 使用]** “保存”保留定义。 例如：
+1. 添加所有必填字段并定义属性后，使用&#x200B;**[!UICONTROL Save]**&#x200B;保留定义。 例如：
 
    ![cfm-6420-14](assets/cfm-6420-14.png)
 
-## 删除内容片段模型 {#deleting-a-content-fragment-model}
+## 删除内容片段模型{#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 >
@@ -126,25 +126,25 @@ ht-degree: 13%
 
 要删除内容片段模型，请执行以下操作：
 
-1. 导航到 **[!UICONTROL 工具]**、资 **[!UICONTROL 产]**，然后打 **[!UICONTROL 开内容片段模型]**。
+1. 导航到&#x200B;**[!UICONTROL 工具]**、**[!UICONTROL 资产]**，然后打开&#x200B;**[!UICONTROL 内容片段模型]**。
 
 1. 导航到包含内容片段模型的文件夹。
-1. 选择模型，然后从工 **[!UICONTROL 具栏]** 中选择删除。
+1. 从工具栏中选择您的型号，然后选择&#x200B;**[!UICONTROL 删除]**。
 
    >[!NOTE]
    >
    >如果模型被引用，则会发出警告。 采取适当措施。
 
-## 发布内容片段模型 {#publishing-a-content-fragment-model}
+## 发布内容片段模型{#publishing-a-content-fragment-model}
 
 内容片段模型需要在发布任何相关内容片段时／之前发布。
 
 要发布内容片段模型，请执行以下操作：
 
-1. 导航到 **[!UICONTROL 工具]**、资 **[!UICONTROL 产]**，然后打 **[!UICONTROL 开内容片段模型]**。
+1. 导航到&#x200B;**[!UICONTROL 工具]**、**[!UICONTROL 资产]**，然后打开&#x200B;**[!UICONTROL 内容片段模型]**。
 
 1. 导航到包含内容片段模型的文件夹。
-1. 选择您的模型，然后从工 **[!UICONTROL 具栏]** 中选择发布。
+1. 从工具栏中选择您的型号，然后选择&#x200B;**[!UICONTROL 发布]**。
 
    >[!NOTE]
    >

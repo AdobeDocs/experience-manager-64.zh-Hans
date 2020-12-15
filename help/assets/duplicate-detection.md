@@ -15,13 +15,13 @@ ht-degree: 3%
 
 如果您尝试上传存在于Adobe Experience Manager(AEM)资产中的资产，重复检测功能会将其标识为重复。 重复检测默认为禁用。 要启用该功能，请执行以下步骤：
 
-1. 打开 **[!UICONTROL Adobe Experience ManagerWeb控制台配置]** (位于 `https://[server]:[port]/system/console/configMgr`)。
-1. Edit the configuration for the servlet **[!UICONTROL Day CQ DAM Create Asset]**.
-1. Select the **[!UICONTROL detect duplicate]** option, and click/tap **[!UICONTROL Save]**.
+1. 打开&#x200B;**[!UICONTROL Adobe Experience ManagerWeb控制台配置]**&#x200B;页，地址为`https://[server]:[port]/system/console/configMgr`。
+1. 编辑servlet **[!UICONTROL Day CQ DAM创建资产]**&#x200B;的配置。
+1. 选择&#x200B;**[!UICONTROL 检测重复]**&#x200B;选项，然后单击／点按&#x200B;**[!UICONTROL 保存]**。
 
    ![在servlet中选择检测重复选项](assets/chlimage_1-377.png)
 
-检测重复功能现在在AEM Assets启用。 当用户尝试上传AEM中存在的资产时，系统会检查是否存在冲突并指示它。 资产使用存储在的SHA-1哈希进行标识，这 `jcr:content/metadata/dam:sha1`意味着无论文件名如何，都会检测重复资产。
+检测重复功能现在在AEM Assets启用。 当用户尝试上传AEM中存在的资产时，系统会检查冲突并指示它。 资产使用存储在`jcr:content/metadata/dam:sha1`的SHA-1哈希进行标识，这意味着无论文件名如何，都会检测重复资产。
 
 >[!MORELIKETHIS]
 >

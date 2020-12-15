@@ -11,11 +11,11 @@ ht-degree: 0%
 ---
 
 
-# 有效翻译资产的最佳实践 {#best-practices-for-translating-assets-efficiently}
+# 有效翻译资产的最佳实践{#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager(AEM)资产支持多语言工作流，将数字资产的二进制文件、元数据和标记翻译为多个区域设置并管理已翻译的资产。 有关详细信息，请参 [阅多语言资产](multilingual-assets.md)。
+Adobe Experience Manager(AEM)资产支持多语言工作流，将数字资产的二进制文件、元数据和标记翻译为多个区域设置并管理已翻译的资产。 有关详细信息，请参阅[多语言资产](multilingual-assets.md)。
 
-为了有效管理资产以确保不同的翻译版本保持同步，请在运行 [翻译工作流](preparing-assets-for-translation.md) 之前创建资产的语言副本。
+为了有效管理资产以确保不同的翻译版本保持同步，请在运行翻译工作流之前创建资产的[语言副本](preparing-assets-for-translation.md)。
 
 资产或资产组的语言副本是具有相似内容层次结构的语言同级（或同一语言中资产的版本）。
 
@@ -32,18 +32,18 @@ Adobe Experience Manager(AEM)资产支持多语言工作流，将数字资产的
    * [设置文件数据存储](/help/sites-deploying/data-store-config.md)
    * [设置AmazonS3数据存储](/help/sites-deploying/data-store-config.md)
 
-1. 禁用DAM元数 [据写回工作流](/help/sites-administering/workflow-offloader.md#disable-offloading) 。
+1. 禁用[DAM MetaData写回](/help/sites-administering/workflow-offloader.md#disable-offloading)工作流
 
-   如名称所示，DAM元数 *据写回工作流* 会将元数据重写到二进制文件。 由于元数据在翻译后会发生更改，因此将其写回二进制文件会为语言副本生成不同的二进制文件。
+   正如名称所暗示的，*DAM元数据写回*&#x200B;工作流会将元数据重写到二进制文件中。 由于元数据在翻译后会发生更改，因此将其写回二进制文件会为语言副本生成不同的二进制文件。
 
    >[!NOTE]
    >
-   >禁用DAM MetaData *写回工作流* ，将关闭资产二进制文件的XMP元数据写回。 因此，将来的元数据更改不再保存在资产中。 在禁用此工作流之前，评估后果。
+   >禁用&#x200B;*DAM MetaData Writeback*&#x200B;工作流会关闭资产二进制文件的XMP元数据回写。 因此，将来的元数据更改不再保存在资产中。 在禁用此工作流之前，评估后果。
 
-1. 启用“设 *置上次修改日期* ”工作流。
+1. 启用&#x200B;*设置上次修改日期*&#x200B;工作流。
 
-   DAM MetaData *写回工作流* ，配置资产的上次修改日期。 由于您在步骤2中禁用了此工作流，AEM Assets无法再让资产的上次修改日期保持最新。 因此，请启 *用“设置上次修改日期* ”工作流，以确保资产的上次修改日期为最新日期。 具有过期的上次修改日期的资产可能会导致错误。
+   *DAM MetaData Writeback*&#x200B;工作流配置资产的上次修改日期。 由于您在步骤2中禁用了此工作流，AEM Assets无法再让资产的上次修改日期保持最新。 因此，请启用&#x200B;*设置上次修改日期*&#x200B;工作流，以确保资产的上次修改日期是最新的。 具有过期的上次修改日期的资产可能会导致错误。
 
-1. [配置转换集成框架](/help/sites-administering/tc-tic.md) ，以停止转换资产二进制文件。 取消选择“资产”选项卡下的“转换资产”选项，以停止转换资产二进制文件。
-1. 使用多语言资产工作流转 [译资产元数据／标记](multilingual-assets.md)。
+1. [配置转换集成框架](/help/sites-administering/tc-tic.md) 以停止转换资产二进制文件。取消选择“资产”选项卡下的“转换资产”选项，以停止转换资产二进制文件。
+1. 使用[多语言资产工作流](multilingual-assets.md)转换资产元数据／标记。
 

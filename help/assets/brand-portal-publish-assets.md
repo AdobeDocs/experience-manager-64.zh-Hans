@@ -25,7 +25,7 @@ ht-degree: 35%
 >
 >Adobe 建议实施错峰发布，最好在非高峰时段发布，这样 AEM 作者就不会占用过多的资源。
 
-1. 从“资产”控制台中，将指针悬停在所需的资产上，然后 **[!UICONTROL 从快速操]** 作中选择“发布”选项。
+1. 从“资产”控制台中，将指针悬停在所需的资产上，然后从快速操作中选择&#x200B;**[!UICONTROL 发布]**&#x200B;选项。
 
    或者，选择要发布到Brand Portal的资产。
 
@@ -39,13 +39,13 @@ ht-degree: 35%
 
 要将选定资产发布到 Brand Portal，请执行以下任一操作：
 
-* 在工具栏中，选择&#x200B;**[!UICONTROL 快速发布]**。Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+* 在工具栏中，选择&#x200B;**[!UICONTROL 快速发布]**。然后，从菜单中选择&#x200B;**[!UICONTROL 发布到品牌门户]**。
 
 * 在工具栏中，选择&#x200B;**[!UICONTROL 管理发布]**。
 
-   1. 然后，从操 **[!UICONTROL 作中]** ，选 **[!UICONTROL 择发布到品牌门户]**，从计划 **[!UICONTROL 中选]** 择 **[!UICONTROL 立即]**&#x200B;发布。 Tap/ click **[!UICONTROL Next].**
+   1. 然后，从&#x200B;**[!UICONTROL 操作]**&#x200B;中选择&#x200B;**[!UICONTROL 发布到品牌门户]**，从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL Now]**。 点按／单击&#x200B;**[!UICONTROL 下一步]。**
 
-   2. 在范 **[!UICONTROL 围内]**，确认您的选择，然后点按／单 **[!UICONTROL 击发布到品牌门户]**。
+   2. 在&#x200B;**[!UICONTROL 范围]**&#x200B;中，确认您的选择，然后点按／单击&#x200B;**[!UICONTROL 发布到品牌门户]**。
 
 此时将显示一条消息，表明资产已排队等候发布到 Brand Portal。登录到Brand Portal界面，以查看已发布的资产。
 
@@ -53,14 +53,14 @@ ht-degree: 35%
 
 要计划在稍后的日期或时间将资产发布到 Brand Portal，请执行以下操作：
 
-1. 选择要发布的资产／文件夹后，请从顶 **[!UICONTROL 部的工具栏]** 中选择管理发布。
-2. 在“管 **[!UICONTROL 理发布]** ”页面上，从“ **[!UICONTROL 操作”中选择“发布到品牌门户]** ”，然 **[!UICONTROL 后从Scheduling Portal中]**********&#x200B;选择“稍后发布”。
+1. 选择要发布的资产／文件夹后，从顶部的工具栏中选择&#x200B;**[!UICONTROL 管理发布]**。
+2. 在&#x200B;**[!UICONTROL 管理发布]**&#x200B;页面上，从&#x200B;**[!UICONTROL 操作]**&#x200B;中选择&#x200B;**[!UICONTROL 发布到品牌门户]**，然后从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL 稍后]**。
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-3. 选择&#x200B;**[!UICONTROL 激活日期]**，并指定时间。Tap/ click **[!UICONTROL Next]**.
-4. 选择&#x200B;**[!UICONTROL 激活日期]**，并指定时间。Tap/ click **[!UICONTROL Next]**.
-5. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;下指定工作流标题。Tap/ click **[!UICONTROL Publish Later]**.
+3. 选择&#x200B;**[!UICONTROL 激活日期]**，并指定时间。点按／单击&#x200B;**[!UICONTROL 下一步]**。
+4. 选择&#x200B;**[!UICONTROL 激活日期]**，并指定时间。点按／单击&#x200B;**[!UICONTROL 下一步]**。
+5. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;下指定工作流标题。点按／单击&#x200B;**[!UICONTROL 稍后发布]**。
 
    ![publishworkflow](assets/publishworkflow.png)
 

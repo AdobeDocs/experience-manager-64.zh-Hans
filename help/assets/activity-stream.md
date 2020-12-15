@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 45%
+ht-degree: 51%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 45%
 >
 >临时工作流不会显示在时间轴中，因为没有为这些工作流保存历史记录信息。
 
-要视图活动流，请对资产执行一个或多个操作，选择资产，然后从GlobalNav列表 **[!UICONTROL 中]** 选择时间轴。
+要视图活动流，请对资产执行一个或多个操作，选择资产，然后从GlobalNav列表中选择&#x200B;**[!UICONTROL 时间轴]**。
 
 ![时间轴-3](assets/timeline-3.png)
 
-时间轴显示您对资产执行的操作的活动流。
+时间轴显示您对资产所执行操作的活动流。
 
 ![活动流](assets/activity_stream.png)
 

@@ -1,8 +1,8 @@
 ---
 title: 使用 Dynamic Media
 seo-title: 使用 Dynamic Media
-description: 了解如何使用Dynamic Media交付资产以在Web、移动设备和社交网站上消费。
-seo-description: 了解如何使用Dynamic Media交付资产以在Web、移动设备和社交网站上消费。
+description: 了解如何使用Dynamic Media提供资产以在Web、移动和社交网站上消费。
+seo-description: 了解如何使用Dynamic Media提供资产以在Web、移动和社交网站上消费。
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -26,7 +26,7 @@ Dynamic Media 可提供交互式查看体验，包括缩放、360 度旋转和�
 
 >[!NOTE]
 >
->有关使用Adobe Experience Manager和动态媒 [体的信息，请参阅社区文章](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)。
+>[与Adobe Experience Manager和Dynamic Media合作](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)上有社区文章。
 
 ## Dynamic Media 的功能 {#what-you-can-do-with-dynamic-media}
 
@@ -47,23 +47,23 @@ Dynamic Media 可提供交互式查看体验，包括缩放、360 度旋转和�
 * [管理资产](managing-assets.md)
 * [使用概览创建自定义弹出窗口](custom-pop-ups.md)
 
-另请参 [阅设置Dynamic Media](administering-dynamic-media.md)。
+另请参阅[设置Dynamic Media](administering-dynamic-media.md)。
 
 >[!NOTE]
 >
->要了解使用Dynamic Media与将Dynamic Media Classic与AEM集成之间的区别，请参 [阅Dynamic Media Classic与Dynamic Media集成](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)。
+>要了解使用Dynamic Media与将Dynamic Media经典与AEM集成之间的区别，请参见[Dynamic Media经典与Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)。
 
-## 启用Dynamic Media与禁用Dynamic Media {#dynamic-media-on-versus-dynamic-media-off}
+## Dynamic Media启用与Dynamic Media禁用{#dynamic-media-on-versus-dynamic-media-off}
 
-您可以通过以下特征判断Dynamic Media是否已启用（打开）:
+您可以通过以下特征判断是否启用了Dynamic Media:
 
 * 在下载或预览资产时，可以使用动态演绎版。
 * 图像集、旋转集和混合媒体集均可用。
 * 创建了 PTIFF 演绎版。
 
-When you click an image asset, the view of the asset is different with Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media使用HTML5点播查看器。
+单击图像资产时，Dynamic Media[enabled](config-dynamic.md#enabling-dynamic-media)的资产视图会有所不同。 Dynamic Media使用点播HTML5查看器。
 
-### Dynamic renditions {#dynamic-renditions}
+### 动态演绎版{#dynamic-renditions}
 
 当 Dynamic Media 处于启用状态时，可以使用图像和查看器预设等动态演绎版（在&#x200B;**[!UICONTROL 动态]**&#x200B;下）。
 
@@ -75,18 +75,18 @@ When you click an image asset, the view of the asset is different with Dynamic M
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
-### PTIFF renditions {#ptiff-renditions}
+### PTIFF演绎版{#ptiff-renditions}
 
-Dynamic media enabled assets include `pyramid.tiffs`.
+启用Dynamic Media的资产包括`pyramid.tiffs`。
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### 资产视图更改 {#asset-views-change}
 
-With Dynamic Media enabled, you can zoom in and out by clicking the `+` and `-` buttons. You can also click/tap to zoom into certain area. Revert brings you to the original version and you can make the image full screen by clicking the diagonal arrows. Dynamic Media enabled looks like this:
+启用Dynamic Media后，可以单击`+`和`-`按钮进行放大和缩小。您还可以单击／点按以放大特定区域。还原功能可使您恢复到原始版本，并可通过单击对角箭头使图像全屏显示。Dynamic Media启用后，
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
-禁用Dynamic Media后，您可以放大和缩小并还原到原始大小：
+禁用Dynamic Media后，您可以放大和缩小并恢复到原始大小：
 
 ![chlimage_1-362](assets/chlimage_1-362.png)

@@ -24,8 +24,8 @@ ht-degree: 56%
 
 >[!NOTE]
 >
->The **[!UICONTROL OBJ 3D]** format does not support lights. 因此，它不能用于向 AEM 3D 提供舞台。
+>**[!UICONTROL OBJ 3D]**&#x200B;格式不支持灯光。 因此，它不能用于向 AEM 3D 提供舞台。
 
-舞台的文件格式决定了您可以对该舞台使用的渲染器。For example, if Autodesk® Maya® is used for high-quality rendering, the stage must be in `.ma` or `.mb` format. 如果您打算只使用默认的 Rapid Refine™ 渲染器，则任何支持的舞台文件格式均可接受。
+舞台的文件格式决定了您可以对该舞台使用的渲染器。例如，如果Autodesk® Maya®用于高质量渲染，则舞台必须采用`.ma`或`.mb`格式。 如果您打算只使用默认的 Rapid Refine™ 渲染器，则任何支持的舞台文件格式均可接受。
 
 在上传到AEM之前，AEM 3D中除输出图像类型和大小外的所有渲染设置都必须经过预配置并保存到舞台文件中。

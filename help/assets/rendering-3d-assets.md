@@ -51,14 +51,14 @@ Rapid Refine 渲染器通常需要数分钟才能渲染较大的图像。但是�
    请参阅[查看 3D 资产](viewing-3d-assets.md)。
 
 1. 在 Adobe Experience Manager 中的&#x200B;**[!UICONTROL 导航]**&#x200B;页面上，点按&#x200B;**[!UICONTROL 资产]**。
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. 在页面的右上角附近，从&#x200B;**[!UICONTROL 视图]**&#x200B;下拉列表中，点按&#x200B;**[!UICONTROL 卡视图]**。
 1. 导航到要渲染的3D对象。
 1. 点按 3D 对象的卡片以在资产详细信息页面中打开它。
 1. 在页面的左上角附近，点按下拉列表，然后选择&#x200B;**[!UICONTROL 渲染]**。
 
    ![chlimage_1-369](assets/chlimage_1-369.png)
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Stage Selector]** icon (spotlight), then select a stage name with the background and lighting that you want to apply to the 3D object.
+1. 在资产详细信息页面的右上角附近，点按&#x200B;**[!UICONTROL 舞台选择器]**&#x200B;图标（聚焦），然后选择您要应用于3D对象的具有背景和光线的舞台名称。
 
    请参阅[关于在 AEM 3D 中使用舞台](about-the-use-of-stages-in-aem-3d.md)。
 
@@ -66,7 +66,7 @@ Rapid Refine 渲染器通常需要数分钟才能渲染较大的图像。但是�
 
    **[!UICONTROL “舞台选择器”图标]**
 
-1. On the **[!UICONTROL Render]** drop-down list on the left side of the asset details page, select a renderer.
+1. 在资产详细信息页面左侧的&#x200B;**[!UICONTROL Render]**&#x200B;下拉列表中，选择一个呈示器。
 
    默认的 **Rapid Refine** 渲染器始终可用。如果您选择的舞台是本机格式，则相应的第三方渲染器也会显示在列表中以供您选择。
 
@@ -74,12 +74,12 @@ Rapid Refine 渲染器通常需要数分钟才能渲染较大的图像。但是�
 
 1. 执行以下操作：
 
-   * In the **[!UICONTROL Width]** and **[!UICONTROL Height]** fields, enter the pixel width and height that you want your image rendered.
-   * In the **[!UICONTROL Image Name]** field, enter the name of the rendered image.
-   * In the **[!UICONTROL Export Path]** field, enter the path where you want the rendered image stored. Or, tap the **[!UICONTROL Browse]** icon and navigate to a location.
-   * (Optional) Select or deselect the **[!UICONTROL Overwrite existing imag]e **check box.
+   * 在&#x200B;**[!UICONTROL 宽度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;字段中，输入要渲染图像的像素宽度和高度。
+   * 在&#x200B;**[!UICONTROL 图像名称]**&#x200B;字段中，输入渲染后图像的名称。
+   * 在&#x200B;**[!UICONTROL 导出路径]**&#x200B;字段中，输入要存储渲染后的图像的路径。 或者，点按&#x200B;**[!UICONTROL 浏览]**&#x200B;图标并导航到某个位置。
+   * （可选）选中或取消选中“覆盖现有图像]e **”复选框。**[!UICONTROL 
 
-1. Near the upper-right corner of the asset details page, tap the **[!UICONTROL Camera Selector]** icon. 选择要对渲染后的图像应用的相机视图。
+1. 在资产详细信息页面的右上角附近，点按&#x200B;**[!UICONTROL 相机选择器]**&#x200B;图标。 选择要对渲染后的图像应用的相机视图。
 
    左侧栏和右侧栏或顶部栏和底部栏是一个可视指示器，以指示将渲染的视图部分。当相机由选定的舞台提供时，您可以选择预定义的相机。
 

@@ -6,66 +6,66 @@ translation-type: tm+mt
 source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '2535'
-ht-degree: 19%
+ht-degree: 23%
 
 ---
 
 
 # 元数据架构 {#metadata-schemas}
 
-在中 [!DNL Experience Manager Assets]，元数据模式定义属性页面的布局以及为使用特定模式的资产显示的元数据属性。 元数据属性包括标题、描述、MIME类型、标记等。 您可以使用元数据模式Forms编辑器修改现有模式或添加自定义元数据模式。
+在[!DNL Experience Manager Assets]中，元数据模式定义属性页面的布局以及为使用特定模式的资产显示的元数据属性。 元数据属性包括标题、描述、MIME类型、标记等。 您可以使用元数据模式Forms编辑器修改现有模式或添加自定义元数据模式。
 
 要视图和编辑资产的属性页面，请执行以下步骤：
 
-1. 单击或点按卡 **[!UICONTROL 片视图中]** ，资产拼贴上快速操作中的视图属性。
+1. 单击或点按卡片视图中资产拼贴的快速操作中的&#x200B;**[!UICONTROL 视图属性]**。
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-   或者，选择资产，然后单击或点按工 **[!UICONTROL 具栏中]** 的属性图标。
+   或者，选择资产，然后单击或点按工具栏中的&#x200B;**[!UICONTROL 属性]**&#x200B;图标。
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. 您可以编辑可用选项卡下的各种可编辑元数据属性。 但是，您无法在属性页 [!UICONTROL 面的] “基本 [!UICONTROL ”选项] 卡中修改资产类型。
+1. 您可以编辑可用选项卡下的各种可编辑元数据属性。 但是，您无法修改属性页面的[!UICONTROL 基本]选项卡中的资产[!UICONTROL 类型]。
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   要修改资产的MIME类型，请使用自定义元数据模式表单或修改现有表单。 请参 [阅编辑元数据模式](metadata-schemas.md#editing-metadata-schema-forms) Forms以了解更多信息。 如果您修改某些MIME类型的元数据模式，则将修改当前MIME类型和所有资产子类型的资产的属性页面布局。 例如，修改下 `jpeg` 的模式 `default/image` 只会修改MIME类型资产的元数据布局（资产属性） `IMAGE/JPEG`。 但是，如果您编辑默认模式，则所做的更改将修改所有类型资产的元数据布局。
+   要修改资产的MIME类型，请使用自定义元数据模式表单或修改现有表单。 有关详细信息，请参阅[编辑元数据模式Forms](metadata-schemas.md#editing-metadata-schema-forms)。 如果您修改某些MIME类型的元数据模式，则将修改当前MIME类型和所有资产子类型的资产的属性页面布局。 例如，修改`default/image`下的`jpeg`模式只会修改MIME类型为`IMAGE/JPEG`的资产的元数据布局（资产属性）。 但是，如果您编辑默认模式，则所做的更改将修改所有类型资产的元数据布局。
 
 ## 元数据架构表单 {#default-metadata-schema-forms}
 
-要视图表单／模板的列表，请在界面 [!DNL Experience Manager] 中导航到 **[!UICONTROL 工具]** >资 **[!UICONTROL 产]** >元数 **[!UICONTROL 据模式]**。
+要视图表单／模板的列表，请在[!DNL Experience Manager]界面中导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据模式]**。
 
 [!DNL Experience Manager] 提供以下元数据模式表单模板：
 
 | 模板 |  | 描述 |
 |---|---|---|
 | [!UICONTROL 默认] |  | 资产的基本元数据模式表单。 |
-|  | The following child forms inherit the properties of the [!UICONTROL default] form: |  |
-|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Dynamic Media视频的模式表单。 |
-|  | <ul><li> [!UICONTROL 图像]</li></ul> | 模式表单，用于MIME类型为“image”（例如image/jpeg、image/png等）的资产。 <br> 图 [!UICONTROL 像表单] 具有以下子表单模板： <ul><li> [!UICONTROL jpeg]:模式子类型为jpeg的资产 [!UICONTROL 表单]。</li> <li>[!UICONTROL tiff]:模式子类型为tiff的资产的 [!UICONTROL 表单]。</li></ul> |
+|  | 以下子表单继承[!UICONTROL default]表单的属性： |  |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | 模式表单，用于Dynamic Media视频。 |
+|  | <ul><li> [!UICONTROL 图像]</li></ul> | 模式表单，用于MIME类型为“image”（例如image/jpeg、image/png等）的资产。 <br> 图像  表单具有以下子表单模板： <ul><li> [!UICONTROL jpeg]:模式子类型为jpeg的资产 [!UICONTROL 表单]。</li> <li>[!UICONTROL tiff]:模式子类型为tiff的资产的 [!UICONTROL 表单]。</li></ul> |
 |  | <ul><li> [!UICONTROL 应用]</li></ul> | 模式表单，用于MIME类型为“application”（例如application/pdf、application/zip等）的资产。 <br>[!UICONTROL pdf]:模式子类型为pdf的资产的表单。 |
 |  | <ul><li>[!UICONTROL 视频]</li></ul> | 模式表单，用于MIME类型为“”（如video/avi、video/mp4等）的资产。 |
 | [!UICONTROL 收藏集] |  | 集合的模式表单。 |
 | [!UICONTROL contentfragment] |  | 模式内容片段表单。 |
-| [!UICONTROL 表单] |  | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL 表单] |  | 此模式形式与[Adobe Experience Manager Forms](/help/forms/home.md)相关。 |
 
 >[!NOTE]
 >
 >要视图模式表单的子表单，请单击／点按模式表单名称。
 
-## Add a metadata schema form {#adding-a-metadata-schema-form}
+## 添加元数据模式表单{#adding-a-metadata-schema-form}
 
-1. 要向列表添加自定义模板，请单击工 **[!UICONTROL 具栏]** 中的创建。
+1. 要向列表添加自定义模板，请单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
 
    >[!NOTE]
    >
    >未编辑的模板前会显示一个锁图标。 如果自定义任何模板，则模板前面的锁图标会消失。
 
-1. In the dialog, enter the title of the schema form and click **[!UICONTROL Create]** to complete the form creation process.
+1. 在对话框中，输入模式表单的标题，然后单击&#x200B;**[!UICONTROL 创建]**&#x200B;以完成表单创建过程。
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
-## 编辑元数据模式表单 {#editing-metadata-schema-forms}
+## 编辑元数据模式表单{#editing-metadata-schema-forms}
 
 可以编辑新添加的或现有的元数据架构表单。元数据模式表包括：
 
@@ -76,7 +76,7 @@ ht-degree: 19%
 
 可以向元数据架构表单中添加新的选项卡或表单项目。从父级派生的选项卡和表单项目处于锁定状态。 无法从子级别更改它们。
 
-1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
+1. 在&#x200B;**[!UICONTROL 模式Forms]**&#x200B;页面中，选中表单前面的复选框，然后单击工具栏上的&#x200B;**[!UICONTROL 编辑]**。
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -84,42 +84,42 @@ ht-degree: 19%
 
    ![chlimage_1-176](assets/chlimage_1-176.png)
 
-1. To configure a component, select it and modify its properties in the **[!UICONTROL Settings]** tab.
+1. 要配置组件，请选择它并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中修改其属性。
 
 ### “构建表单”选项卡内的组件{#components-within-the-build-form-tab}
 
-The **[!UICONTROL Build Form]** tab lists form items that you use in your schema form. The **[!UICONTROL Settings]** tab provides the attributes of each item that you select in the **[!UICONTROL Build Form]** tab. The following table lists the form items available in the **[!UICONTROL Build Form]** tab:
+**[!UICONTROL 构建表单]**&#x200B;选项卡列表您在模式表单中使用的表单项。 **[!UICONTROL 设置]**&#x200B;选项卡提供您在&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中选择的每个项的属性。 下表列表了&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中可用的表单项：
 
 | 组件名称 | 描述 |
 |---|---|
-| [!UICONTROL 章节标题] | 添加一列表常用组件的章节标题。 |
-| [!UICONTROL 单行文本] | 添加单行文本属性。它存储为字符串。 |
-| [!UICONTROL 多值文本] | 添加多值文本属性。它存储为字符串数组。 |
+| [!UICONTROL 章节标题] | 添加一系列常用组件的章节标题。 |
+| [!UICONTROL 单行文本] | 添加单行文本属性。它将作为字符串存储。 |
+| [!UICONTROL 多值文本] | 添加多值文本属性。它将作为字符串数组存储。 |
 | [!UICONTROL 数字] | 添加数字组件。 |
 | [!UICONTROL 日期] | 添加日期组件。 |
 | [!UICONTROL 下拉列表] | 添加下拉列表。 |
-| [!UICONTROL 标准标记] | 添加标记. |
+| [!UICONTROL 标准标记] | 添加标记。 |
 | [!UICONTROL 智能标记] | 通过自动添加元数据标记来增强搜索功能。 |
-| [!UICONTROL 隐藏字段] | 添加隐藏字段。在保存资产时，它将作为POST参数发送。 |
-| [!UICONTROL 资产引用对象] | 将此组件添加到资产引用的资产的视图列表。 |
-| [!UICONTROL 资产引用] | 添加以显示引用资产的资产列表。 |
-| [!UICONTROL 产品引用] | 添加以显示与资产链接的产品的列表。 |
+| [!UICONTROL 隐藏字段] | 添加隐藏字段。在保存资产时，该字段将作为 POST 参数发送。 |
+| [!UICONTROL 资产引用对象] | 添加此组件可查看该资产所引用的其他资产的列表。 |
+| [!UICONTROL 资产引用] | 添加此组件可显示引用该资产的其他资产的列表。 |
+| [!UICONTROL 产品引用] | 添加此组件可显示与该资产关联的产品的列表。 |
 | [!UICONTROL 资产评级] | 添加以显示资产评级选项。 |
 | [!UICONTROL 上下文元数据] | 添加以控制资产属性页面中其他元数据选项卡的显示。 |
 
-### 编辑元数据组件 {#editing-the-metadata-component}
+### 编辑元数据组件{#editing-the-metadata-component}
 
-To edit the properties of a metadata component on the form, click the component and edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab.
+要编辑表单上元数据组件的属性，请单击该组件，并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中编辑以下所有属性或属性的子集。
 
 **字段标签**:资产的属性页面上显示的元数据属性的名称。
 
-**映射到属性**:此属性指定资产节点在CRX存储库中保存的相对路径／名称。 It starts with `./` because indicating that the path is under the asset&#39;s node.
+**映射到属性**:此属性指定资产节点在CRX存储库中保存的相对路径／名称。它以`./`开始，因为它表示路径位于资产的节点下。
 
 以下是此属性的有效值：
 
 * `./jcr:content/metadata/dc:title`：将该值作为属性 `dc:title` 存储在资产的元数据节点中。
 
-* `./jcr:created`:在资产的节点显示JCR属性。 如果您在视图属性上配置这些属性，我们建议您将这些属性标记为“禁用编辑”，因为它们是受保护属性。Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`:在资产的节点显示JCR属性。如果您在视图属性上配置这些属性，我们建议您将这些属性标记为“禁用编辑”，因为它们是受保护属性。否则，在保存资产属性时，错误[!UICONTROL 资产无法修改]结果。
 
 要确保在元数据模式表单中正确显示组件，属性路径不应包含任何空格。
 
@@ -139,7 +139,7 @@ To edit the properties of a metadata component on the form, click the component 
 
 **类**:属性关联的对象类。
 
-**删除图标** 单击此图标可从模式表单中删除组件。
+**删除** 图标单击此图标可从模式表单中删除组件。
 
 >[!NOTE]
 >
@@ -157,23 +157,23 @@ To edit the properties of a metadata component on the form, click the component 
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-### 在JSON文件中指定属性 {#specifying-properties-in-json-file}
+### 在JSON文件{#specifying-properties-in-json-file}中指定属性
 
 您还可以通过指定相应的键值对在 JSON 文件中定义选项，而不是为&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中的选项指定属性。在 **[!UICONTROL JSON 路径]**&#x200B;字段中指定 JSON 文件的路径。
 
-### 在模式表单中添加或删除选项卡 {#adding-deleting-a-tab-in-the-schema-form}
+### 在模式表单{#adding-deleting-a-tab-in-the-schema-form}中添加或删除选项卡
 
 通过架构编辑器，可以添加或删除选项卡。默认架构表单包括&#x200B;**[!UICONTROL 基本]**、**[!UICONTROL 高级]**、**[!UICONTROL IPTC]** 和 **[!UICONTROL IPTC 扩展]**&#x200B;选项卡（默认情况下）。
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
-Click `+` to add a new tab on a schema form. By default, the new tab has the name `Unnamed-1`. You can modify the name from the **[!UICONTROL Settings]** tab. Click `X` to delete a tab.
+单击`+`在模式表单上添加新选项卡。默认情况下，新选项卡的名称为`Unnamed-1`。可以从&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中修改该名称。 单击`X`以删除选项卡。
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-## 删除元数据模式表单 {#deleting-metadata-schema-forms}
+## 删除元数据模式表单{#deleting-metadata-schema-forms}
 
-AEM允许您仅删除自定义模式表单。 您无法删除默认的架构表单/模板。但是，您可以删除对这些表单所做的任何自定义更改。
+AEM 仅允许您删除自定义架构表单。您无法删除默认的架构表单/模板。但是，您可以删除对这些表单所做的任何自定义更改。
 
 要删除某个表单，请选择该表单，然后单击&#x200B;**[!UICONTROL 删除]**&#x200B;图标。
 
@@ -185,26 +185,26 @@ AEM允许您仅删除自定义模式表单。 您无法删除默认的架构表�
 >
 >您无法删除AEM Assets的现成元数据模式表单。
 
-## Schema forms for MIME types {#schema-forms-for-mime-types}
+## 模式MIME类型{#schema-forms-for-mime-types}的表单
 
 AEM Assets为各种开箱即用的MIME类型提供默认表单。 但是，您可以为各种MIME类型的资产添加自定义表单。
 
-### Add new forms for MIME types {#adding-new-forms-for-mime-types}
+### 为MIME类型{#adding-new-forms-for-mime-types}添加新表单
 
-在相应的表单类型下创建新表单。For example, to add a new template for the `image/png` subtype, create the form under the `image` forms. 架构表单的标题是子类型名称。In this case, the title is `png`.
+在相应的表单类型下创建新表单。例如，要为`image/png`子类型添加新模板，请在`image`表单下创建表单。 架构表单的标题是子类型名称。在这种情况下，标题为`png`。
 
-### Use an existing schema template for various MIME types {#using-an-existing-schema-template-for-various-mime-types}
+### 对各种MIME类型{#using-an-existing-schema-template-for-various-mime-types}使用现有模式模板
 
-您可以为不同的 MIME 类型使用现有模板。For example, use the `image/jpeg` form for assets of MIME type `image/png`.
+您可以为不同的 MIME 类型使用现有模板。例如，对MIME类型为`image/png`的资产使用`image/jpeg`表单。
 
-In this case, create a new node at `/etc/dam/metadataeditor/mimetypemappings` in the CRX repository. 指定节点的名称并定义以下属性：
+在这种情况下，请在CRX存储库中的`/etc/dam/metadataeditor/mimetypemappings`处创建新节点。 指定节点的名称并定义以下属性：
 
 | 名称 | 描述 | 类型 | 值 |
 |---|---|---|---|
 | `exposedmimetype` | 要映射的现有表单的名称 | `String` | `image/jpeg` |
-| `mimetypes` | List of MIME types that use the form defined in the `exposedmimetype` attribute | `String` | `image/png` |
+| `mimetypes` | 使用`exposedmimetype`属性中定义的表单的MIME类型列表 | `String` | `image/png` |
 
-AEM 资产映射以下 MIME 类型和架构表单：
+AEM Assets 映射以下 MIME 类型和架构表单：
 
 | 架构表单 | MIME类型 |
 |---|---|
@@ -220,11 +220,11 @@ AEM 资产映射以下 MIME 类型和架构表单：
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
 
-## Grant access to metadata schemas {#granting-access-to-metadata-schemas}
+## 授予对元数据模式的访问权限{#granting-access-to-metadata-schemas}
 
-元数据模式功能仅对管理员可用。 但是，管理员可以通过为文件夹提供“创建”、“修 **[!UICONTROL 改”和“删]**&#x200B;除 **[!UICONTROL ”权限，]**&#x200B;为非管理员 **[!UICONTROL 用户提供]** 访问权限 `/conf` 。
+元数据模式功能仅对管理员可用。 但是，管理员可以通过在`/conf`文件夹中提供&#x200B;**[!UICONTROL 创建]**、**[!UICONTROL 修改]**&#x200B;和&#x200B;**[!UICONTROL 删除]**&#x200B;权限，为非管理员用户提供访问权限。
 
-## 应用特定于文件夹的元数据 {#applying-folder-specific-metadata}
+## 应用特定于文件夹的元数据{#applying-folder-specific-metadata}
 
 AEM Assets允许您定义元数据模式的变体，并将其应用到特定文件夹。
 
@@ -239,30 +239,30 @@ AEM Assets允许您定义元数据模式的变体，并将其应用到特定文�
 如果文件夹有子文件夹，则子文件夹内的资产会继承子文件夹级别所应用模式的元数据(如果子文件夹级别应用了其他模式)。 但是，如果子文件夹级别未应用模式或同一模式，则子文件夹资产将继承父文件夹级别所应用模式的元数据。
 
 1. 单击 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > Assets > 元数据架构]**。此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
-1. 选中表单前面的复选框（例如默认元数据表单），单击或点按复 **[!UICONTROL 制图]** 标并将其另存为自定义表单。 指定表单的自定义名称，例如 `my_default`。 或者，您也可以创建自定义表单。
+1. 选中表单前面的复选框，例如默认元数据表单，然后单击或点按&#x200B;**[!UICONTROL 复制]**&#x200B;图标，并将其另存为自定义表单。 指定表单的自定义名称，例如`my_default`。 或者，您也可以创建自定义表单。
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. 在元数 **[!UICONTROL 据模式]** “Forms”页 `my_default` 面中，选择表单，然后单 **[!UICONTROL 击编辑]**。
+1. 在&#x200B;**[!UICONTROL 元数据模式Forms]**&#x200B;页面中，选择`my_default`表单，然后单击&#x200B;**[!UICONTROL 编辑]**。
 
-1. 在元数 **[!UICONTROL 据模式编辑]** 器页面中，向模式表单添加一个文本字段。 例如，添加带有标签类别的 **[!UICONTROL 字段]**。
+1. 在&#x200B;**[!UICONTROL 元数据模式编辑器]**&#x200B;页面中，向模式表单添加一个文本字段。 例如，添加标签为&#x200B;**[!UICONTROL 类别]**&#x200B;的字段。
 
    ![chlimage_1-186](assets/chlimage_1-186.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在元数据 **[!UICONTROL 模式Forms]** 页面。
-1. 单击／点 **[!UICONTROL 按工具栏中的应用到文件夹]** ，以将自定义元数据应用到文件夹。
+1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在&#x200B;**[!UICONTROL 元数据模式Forms]**&#x200B;页面中。
+1. 单击／点按工具栏中的&#x200B;**[!UICONTROL 应用到文件夹]**，将自定义元数据应用到文件夹。
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
 
-1. 选择要应用已修改模式的文件夹，然后单击／点按应 **[!UICONTROL 用]**。
+1. 选择要应用已修改模式的文件夹，然后单击／点按&#x200B;**[!UICONTROL 应用]**。
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. 如果该文件夹应用了其他元数据模式，则会显示一条消息，警告您将覆盖现有元数据模式。 单击“ **[!UICONTROL 覆盖]**”。
-1. Click **[!UICONTROL OK]** to close the success message.
+1. 如果该文件夹应用了其他元数据模式，则会显示一条消息，警告您将覆盖现有元数据模式。 单击&#x200B;**[!UICONTROL 覆盖]**。
+1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭成功消息。
 1. 导览至应用已修改元数据模式的文件夹。
 
-## 定义必填元数据 {#defining-mandatory-metadata}
+## 定义必需元数据{#defining-mandatory-metadata}
 
 您可以在文件夹级别定义必填字段，这将强制执行于上传到该文件夹的资产。 如果您上传的资产上传之前定义的必填字段缺少元数据，则卡视图的资产上会显示缺少元数据的可视指示。
 
@@ -271,26 +271,26 @@ AEM Assets允许您定义元数据模式的变体，并将其应用到特定文�
 >可以根据其他字段的值将元数据字段定义为强制字段。 在“卡”视图中，AEM不显示有关此类强制元数据字段缺失元数据的警告消息。
 
 1. 单击 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > Assets > 元数据架构]**。此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
-1. 将默认元数据表单另存为自定义表单。 例如，将其另存为 `my_default`。
+1. 将默认元数据表单另存为自定义表单。 例如，将其另存为`my_default`。
 
-   ![chlimage_1-189](assets/chlimage_1-189.png)
+   ![chlimage_1-109](assets/chlimage_1-189.png)
 
-1. 编辑自定义表单。 添加必填字段。 例如，添加一个 **类别** 字段，并将该字段设为必填。
+1. 编辑自定义表单。 添加必填字段。 例如，添加&#x200B;**类别**&#x200B;字段，并将该字段设为必填。
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在元数据 **[!UICONTROL 模式Forms]** 页面。 要将自定义元数据应用到文件夹，请选择表单，然后单 **[!UICONTROL 击／点按工具栏中的应]** 用到文件夹。
+1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在&#x200B;**[!UICONTROL 元数据模式Forms]**&#x200B;页面中。 要将自定义元数据应用到文件夹，请选择表单，然后单击／点按工具栏中的&#x200B;**[!UICONTROL 应用到文件夹]**。
 
 1. 导航到文件夹，然后上传某些资产，其中缺少您添加到自定义表单的必填字段的元数据。 资产的卡片视图会显示必填字段中缺少的元数据的消息。
 
    ![chlimage_1-112](assets/chlimage_1-192.png)
 
-1. （可选）访 `http://[server]:[port]/system/console/components/`问。 配置并启 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 用默认禁用的组件。 设置AEM在资产上检查元数据有效性的频率。
-此配置会向jcr: `hasValidMetadata` content of assets添加属性。 使用此属性，AEM可以在搜索中筛选结果。
+1. （可选）访问`http://[server]:[port]/system/console/components/`。 配置并启用默认禁用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`组件。 设置AEM在资产上检查元数据有效性的频率。
+此配置将属性`hasValidMetadata`添加到资产的jcr:content。 使用此属性，AEM可以在搜索中筛选结果。
 
 >[!NOTE]
 >
->如果资产是在计划检查后添加的，则直到下一个计划检查 `hasValidMetadata` 后，才会将资产标记为。 资产不会显示在中间搜索结果中。
+>如果资产是在计划检查后添加的，则直到下一个计划检查后，资产才会被标记为`hasValidMetadata`。 资产不会显示在中间搜索结果中。
 
 >[!CAUTION]
 >

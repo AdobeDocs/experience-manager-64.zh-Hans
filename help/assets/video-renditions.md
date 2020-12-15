@@ -11,11 +11,11 @@ ht-degree: 5%
 ---
 
 
-# Video renditions {#video-renditions}
+# 视频演绎版{#video-renditions}
 
 Adobe Experience Manager(AEM)资产为各种格式（包括OGG、FLV等）的视频资产生成视频演绎版。
 
-AEM 资产支持媒体资产的静态和动态演绎版（DM 编码的演绎版）。
+AEM Assets 支持媒体资产的静态和动态演绎版（DM 编码的演绎版）。
 
 静态演绎版是使用FFMPEG（在系统路径上安装并可用）本机生成的，并存储在内容存储库中。
 
@@ -23,17 +23,17 @@ DM编码的演绎版存储在代理服务器中，并在运行时提供。
 
 AEM资产在客户端为这些演绎版提供播放支持。
 
-要视图特定视频资产的演绎版，请打开其资产页面，然后点按全局导航图标。 然后，从列表 **[!UICONTROL 中选择]** “演绎版”。
+要视图特定视频资产的演绎版，请打开其资产页面，然后点按全局导航图标。 然后，从列表中选择&#x200B;**[!UICONTROL 演绎版]**。
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-视频演绎版的列表显示在演绎 **[!UICONTROL 版面]** 板中。
+视频演绎版的列表显示在&#x200B;**[!UICONTROL 演绎版]**&#x200B;面板中。
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-要为DM编码的演绎版配置代理服务器，请 [配置Dynamic Media Cloud服务。](config-dynamic.md)
+要为DM编码的演绎版配置代理服务器，请[配置Dynamic Media云服务。](config-dynamic.md)
 
-To generate video renditions with desired parameters, [create a corresponding video profile](video-profiles.md).
+要生成具有所需参数的视频演绎版，请[创建相应的视频用户档案](video-profiles.md)。
 
 配置代理服务器并创建视频用户档案后，您可以将此视频预设包含在处理用户档案中，并将处理用户档案应用到文件夹。
 

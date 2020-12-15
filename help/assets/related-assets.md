@@ -11,13 +11,13 @@ ht-degree: 0%
 ---
 
 
-# 相关资产 {#related-assets}
+# 相关资产{#related-assets}
 
-Adobe Experience Manager(AEM)资产允许您使用“相关资产”功能，根据组织的需求手动关联资产。 例如，您可以将许可证文件与资产或类似主题上的图像／视频关联。 您可以关联共享某些共同属性的资产。 您还可以使用该功能在资产之间创建源／派生关系。 例如，如果您有从INDD文件生成的PDF文件，则可以将PDF文件与其源INDD文件相关联。
+Adobe Experience Manager(AEM)资产允许您使用“相关资产”功能，根据组织需求手动关联资产。 例如，您可以将许可证文件与资产或类似主题上的图像／视频关联。 您可以关联共享某些共同属性的资产。 您还可以使用该功能在资产之间创建源／派生关系。 例如，如果您有从INDD文件生成的PDF文件，则可以将PDF文件与其源INDD文件相关联。
 
 这样，您就可以灵活地向供应商／代理共享低分辨率文件（例如PDF/JPG），并仅在请求时提供高分辨率文件（例如INDD）。
 
-## 相关资产 {#relating-assets}
+## 相关资产{#relating-assets}
 
 1. 从资产界面中，打开要关联的资产的属性页面。
 
@@ -31,38 +31,38 @@ Adobe Experience Manager(AEM)资产允许您使用“相关资产”功能，根
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. 要将其他资产与您选择的资产关联，请单击／点按工 **[!UICONTROL 具栏]** 中的关联图标。
+1. 要将其他资产与您选择的资产关联，请单击／点按工具栏中的&#x200B;**[!UICONTROL 关联]**&#x200B;图标。
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
 1. 执行下列操作之一：
 
-   * 要关联资产的源文件，请从 **[!UICONTROL 列表]** 中选择源。
-   * 要关联派生文件，请从 **[!UICONTROL 列表]** 中选择“派生”。
-   * 要在资产之间创建双向关系，请从列表 **[!UICONTROL 中选]** 择其他。
+   * 要关联资产的源文件，请从列表中选择&#x200B;**[!UICONTROL 源]**。
+   * 要关联派生文件，请从列表中选择&#x200B;**[!UICONTROL 派生]**。
+   * 要在资产之间创建双向关系，请从列表中选择&#x200B;**[!UICONTROL 其他]**。
 
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
-1. 从选 **[!UICONTROL 择资产]** ，导航到要关联的资产所在的位置，然后选择它。
+1. 在&#x200B;**[!UICONTROL 选择资产]**&#x200B;屏幕中，导航到您要关联的资产所在的位置，然后选择它。
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. 单击／点按确 **[!UICONTROL 认]** 图标。
-1. 单击／点 **[!UICONTROL 按确]** 定以关闭对话框。 根据您在步骤3中对关系的选择，相关资产会列在“相关”部分的相应类别 **[!UICONTROL 下]** 。 例如，如果您相关的资产是当前资产的源文件，则该资产会列在“源” **[!UICONTROL 下]**。
+1. 单击／点按&#x200B;**[!UICONTROL 确认]**&#x200B;图标。
+1. 单击／点按&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭对话框。 根据您在步骤3中对关系的选择，相关资产会列在&#x200B;**[!UICONTROL 相关]**&#x200B;部分的相应类别下。 例如，如果您相关的资产是当前资产的源文件，则会列在&#x200B;**[!UICONTROL Source]**&#x200B;下。
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. 要取消资产的关联，请单击／点按工 **[!UICONTROL 具栏中]** 的取消关联图标。
+1. 要取消资产的关联，请单击／点按工具栏中的&#x200B;**[!UICONTROL 取消关联]**&#x200B;图标。
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. 从删除关系对话框中选择要取消关 **[!UICONTROL 系的资]** 产，然后单击／点按取 **[!UICONTROL 消关系]**。
+1. 从&#x200B;**[!UICONTROL 删除关系]**&#x200B;对话框中选择要取消关联的资产，然后单击／点按&#x200B;**[!UICONTROL 取消关联]**。
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. 单击／点 **[!UICONTROL 按确]** 定以关闭对话框。 您删除关系的资产会从相关资产的列表中删除“相关” **[!UICONTROL 部分]** 。
+1. 单击／点按&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭对话框。 您删除了关系的资产会从&#x200B;**[!UICONTROL 相关]**&#x200B;部分的相关资产列表中删除。
 
-## 转换相关资产 {#translating-related-assets}
+## 转换相关资产{#translating-related-assets}
 
 使用“相关资产”功能在资产之间创建源／派生关系在翻译工作流也很有帮助。 当您对派生资产运行转换工作流时，AEM Assets会自动获取源文件引用的任何资产并将其包含在其中以进行转换。 这样，源资产引用的资产便会与源资产和派生资产一起进行折算。 例如，假设您的英语副本包括派生资产及其源文件，如所示。
 
@@ -72,7 +72,7 @@ Adobe Experience Manager(AEM)资产允许您使用“相关资产”功能，根
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 
-1. 按照创建新翻译项目中的步骤，将源文件夹中的资 [产翻译为目标语言](translation-projects.md#create-a-new-translation-project)。 例如，在本例中，将您的资源翻译为法语。
+1. 按照[创建新的翻译项目](translation-projects.md#create-a-new-translation-project)中的步骤，将源文件夹中的资产翻译为目标语言。 例如，在本例中，将您的资源翻译为法语。
 1. 从“项目”页面中，打开翻译文件夹。
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
@@ -85,7 +85,7 @@ Adobe Experience Manager(AEM)资产允许您使用“相关资产”功能，根
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. 选择资产，然后单击／点按工 **[!UICONTROL 具栏中的]** “资产中的显示”，以视图资产的转换状态。
+1. 选择资产，然后单击／点按工具栏中的&#x200B;**[!UICONTROL 资产]**&#x200B;中的显示，以视图资产的转换状态。
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -93,6 +93,6 @@ Adobe Experience Manager(AEM)资产允许您使用“相关资产”功能，根
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. 选择与源相关的资产，然后单击／点按资产 **[!UICONTROL 中的显示]**。 此时会显示已转换的相关资产。
+1. 选择与源相关的资产，然后单击／点按&#x200B;**[!UICONTROL 在资产]**&#x200B;中显示。 此时会显示已转换的相关资产。
 
    ![chlimage_1-288](assets/chlimage_1-288.png)

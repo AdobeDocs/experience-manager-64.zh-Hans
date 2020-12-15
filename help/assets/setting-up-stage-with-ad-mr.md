@@ -43,15 +43,15 @@ ht-degree: 77%
 
    根据以下建议配置渲染设置：
 
-   * **[!UICONTROL “常用]** ”选项卡
+   * **[!UICONTROL 公用选]** 项卡
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      取消选中所有可渲染相机的&#x200B;**[!UICONTROL Alpha渠道（遮罩）]**&#x200B;复选框。
 
    * **[!UICONTROL “质量”选项卡]**
 
-      * **[!UICONTROL 整体质量]**`- 0.5` 或更低
-      * **[!UICONTROL 间接扩散(GI)模式]** - `Final Gather`
-      * **[!UICONTROL 筛选器大小]** - `2.0`、 `2.0`
+      * **[!UICONTROL 整体]** `- 0.5` 质量或更低
+      * **[!UICONTROL 间接扩散(GI)模式]** -  `Final Gather`
+      * **[!UICONTROL 滤镜大小]** - `2.0`,  `2.0`
    * 以您希望使用的典型图像大小渲染场景。如果需要，优化灯光或优化渲染设置，或者同时执行这两项操作，以便达到所需的效果。
 
       请注意，通过 Mental Ray 使用基于图像的照明进行渲染时，速度会非常缓慢且会消耗大量 CPU。Adobe 建议您配置最低质量设置，该设置仍能生成所需的渲染质量。
@@ -66,6 +66,6 @@ ht-degree: 77%
 
    如果未在 AEM 服务器上配置 Autodesk® Maya®，请从 Maya 中导出 FBX，然后再将其上传到 AEM。
 
-1. 在 AEM 中打开资产属性。Set **[!UICONTROL Title]** to a suitable string that will appear in the **[!UICONTROL Stage Selector]** drop-down list. 确认将&#x200B;**[!UICONTROL 类]**&#x200B;设置为 **[!UICONTROL 3D 舞台]**。保存并退出。
+1. 在 AEM 中打开资产属性。将&#x200B;**[!UICONTROL Title]**&#x200B;设置为将在&#x200B;**[!UICONTROL 舞台选择器]**&#x200B;下拉列表中显示的合适字符串。 确认将&#x200B;**[!UICONTROL 类]**&#x200B;设置为 **[!UICONTROL 3D 舞台]**。保存并退出。
 1. 打开一个 3D 资产，选择新舞台，并验证它是否按预期方式进行预览和渲染。
 

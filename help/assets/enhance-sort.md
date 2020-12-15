@@ -11,7 +11,7 @@ ht-degree: 3%
 ---
 
 
-# AEM中资源的增强排序 {#enhanced-sorting-of-assets-in-aem}
+# AEM {#enhanced-sorting-of-assets-in-aem}中资源的增强排序
 
 了解AEM Assets如何部署服务器端排序来对文件夹资产或搜索查询进行一次排序，而不是在客户端进行批量排序。
 
@@ -19,7 +19,7 @@ Adobe Experience Manager(AEM)资产的搜索功能得到增强，可以高效地
 
 AEM Assets部署服务器端排序，一次对文件夹或搜索查询中的整个资产集（无论大小）进行排序，而不是在客户端批量对它们进行排序。 这样，预取的结果可以快速显示在用户界面上，从而使排序操作更快速、响应更快。
 
-## 在列表视图中对资产排序 {#sorting-assets-in-list-view}
+## 在列表视图{#sorting-assets-in-list-view}中对资产排序
 
 AEM Assets允许您根据以下字段对文件夹资产进行排序：
 
@@ -50,9 +50,9 @@ AEM Assets允许您根据以下字段对文件夹资产进行排序：
 
 >[!NOTE]
 >
->要对或列中的值 `Name` 进行排序， `Title`请叠加 `/libs/dam/gui/content/commons/availablecolumns` 并将值更改 `sortable` 为 `True`。
+>要对`Name`或`Title`列中的值进行排序，请叠加`/libs/dam/gui/content/commons/availablecolumns`并将`sortable`的值更改为`True`。
 
-## 在搜索结果中对资产进行排序 {#sorting-assets-in-search-results}
+## 在搜索结果{#sorting-assets-in-search-results}中对资产进行排序
 
 您可以根据以下字段对搜索结果进行排序：
 
@@ -72,20 +72,20 @@ AEM Assets允许您根据以下字段对文件夹资产进行排序：
 
    ![chlimage_1-398](assets/chlimage_1-398.png)
 
-## 在时间轴中对资产排序 {#sorting-assets-in-timeline}
+## 在时间轴{#sorting-assets-in-timeline}中对资产进行排序
 
 AEM Assets允许您按时间顺序对时间轴条目进行排序，如批注、版本、工作流和活动。
 
 1. 在资产UI中，选择要显示其时间轴的资产。
-1. 单击／点按GolbalNav图标，然后选择“ **[!UICONTROL 时间轴]**”。
+1. 单击／点按GolbalNav图标，然后选择&#x200B;**[!UICONTROL 时间轴]**。
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. 在时间轴中，从列表中选择一个条目。 例如，选择 **[!UICONTROL 注释]** ，以显示与资产关联的注释的列表。
+1. 在时间轴中，从列表中选择一个条目。 例如，选择&#x200B;**[!UICONTROL 注释]**&#x200B;以显示与资产关联的注释的列表。
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. 单击／点按日 **[!UICONTROL 期]** 标签旁的 **[!UICONTROL 排序图]** 标。 根据您的选择，注释会按时间顺序／时间顺序排列，按时间顺序或相反的时间顺序添加到资产中。
+1. 单击／点按&#x200B;**[!UICONTROL Date]**&#x200B;标签旁的&#x200B;**[!UICONTROL 排序]**&#x200B;图标。 根据您的选择，注释会按时间顺序／时间顺序排列，按时间顺序或相反的时间顺序添加到资产中。
 
    ![chlimage_1-401](assets/chlimage_1-401.png)
 

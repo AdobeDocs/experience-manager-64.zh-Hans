@@ -21,7 +21,7 @@ ht-degree: 27%
 
 ## 将文件夹发布到 Brand Portal{#publish-folders-to-brand-portal-1}
 
-1. 从AEM Assets界面，将指针悬停在所需的文件夹上，并从快 **[!UICONTROL 速操作]** 中选择“发布”选项。
+1. 从AEM Assets界面，将指针悬停在所需的文件夹上，然后从快速操作中选择&#x200B;**[!UICONTROL 发布]**&#x200B;选项。
 
    或者，选择所需的文件夹，然后执行后续步骤。
 
@@ -31,11 +31,11 @@ ht-degree: 27%
 
    要将选定文件夹发布到 Brand Portal，请执行以下任一操作：
 
-   * 在工具栏中，选择&#x200B;**[!UICONTROL 快速发布]**。Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+   * 在工具栏中，选择&#x200B;**[!UICONTROL 快速发布]**。然后，从菜单中选择&#x200B;**[!UICONTROL 发布到品牌门户]**。
    * 在工具栏中，选择&#x200B;**[!UICONTROL 管理发布]**。
 
-3. 然后，从操 **[!UICONTROL 作中]** ，选 **[!UICONTROL 择发布到品牌门户]**，从计划 **[!UICONTROL 中选]** 择 **[!UICONTROL 立即]**&#x200B;发布。 点按 **[!UICONTROL 下一步]。**
-4. 在范 **[!UICONTROL 围内]**，确认您的选择并点 **[!UICONTROL 按发布到品牌门户]**。
+3. 然后，从&#x200B;**[!UICONTROL 操作]**&#x200B;中选择&#x200B;**[!UICONTROL 发布到品牌门户]**，从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL Now]**。 点按&#x200B;**[!UICONTROL 下一步]。**
+4. 在&#x200B;**[!UICONTROL 范围]**&#x200B;中，确认您的选择，然后点按&#x200B;**[!UICONTROL 发布到品牌门户]**。
 
    此时将显示一条消息，表明文件夹已排队等候发布到 Brand Portal。登录到Brand Portal界面，查看已发布的文件夹。
 
@@ -43,14 +43,14 @@ ht-degree: 27%
 
    要将资产文件夹的发布计划到Brand Portal工作流，请在以后的日期或时间执行以下操作：
 
-   1. 选择要发布的资产／文件夹后，请从顶 **[!UICONTROL 部的工具栏]** 中选择管理发布。
-   2. 在“管 **[!UICONTROL 理发布]** ”页面上，从“ **[!UICONTROL 操作”中选择“发布到品牌门户]** ”，然 **[!UICONTROL 后从Scheduling Portal中]**********&#x200B;选择“稍后发布”。
+   1. 选择要发布的资产／文件夹后，从顶部的工具栏中选择&#x200B;**[!UICONTROL 管理发布]**。
+   2. 在&#x200B;**[!UICONTROL 管理发布]**&#x200B;页面上，从&#x200B;**[!UICONTROL 操作]**&#x200B;中选择&#x200B;**[!UICONTROL 发布到品牌门户]**，然后从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL 稍后]**。
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   3. 选择&#x200B;**[!UICONTROL 激活日期]**，并指定时间。点按 **[!UICONTROL 下一步]**。
-   4. 在&#x200B;**[!UICONTROL 范围]**&#x200B;中确认您的选择。点按 **[!UICONTROL 下一步]**。
-   5. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;下指定工作流标题。点按 **[!UICONTROL 稍后发布]**。
+   3. 选择&#x200B;**[!UICONTROL 激活日期]**，并指定时间。点按&#x200B;**[!UICONTROL 下一步]**。
+   4. 在&#x200B;**[!UICONTROL 范围]**&#x200B;中确认您的选择。点按&#x200B;**[!UICONTROL 下一步]**。
+   5. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;下指定工作流标题。点按&#x200B;**[!UICONTROL 稍后发布]**。
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
@@ -64,15 +64,15 @@ ht-degree: 27%
 
    ![publish2bp-1](assets/publish2bp-1.png)
 
-2. 在工具栏中，点按／单击 **[!UICONTROL 管理发布]**。
+2. 在工具栏中，点按／单击&#x200B;**[!UICONTROL 管理发布]**。
 
 3. **立即从Brand Portal中取消发布**
 
    要快速从Brand Portal中取消发布所需的文件夹，请执行以下操作：
 
-   1. 在“管 **[!UICONTROL 理发布]** ”页上，从 **[!UICONTROL 操作]** 中选 **[!UICONTROL 择从Brand Portal和Scheduling]** Select Now ********&#x200B;中取消发布。
-   2. Tap/ click **[!UICONTROL Next].**
-   3. 在范 **[!UICONTROL 围内]**，确认您的选择，然后点 **[!UICONTROL 按从Brand Portal取消发布]**。
+   1. 在&#x200B;**[!UICONTROL 管理发布]**&#x200B;页面上，从&#x200B;**[!UICONTROL 操作]**&#x200B;中选择&#x200B;**[!UICONTROL 从品牌门户]**&#x200B;取消发布，从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL Now]**。
+   2. 点按／单击&#x200B;**[!UICONTROL 下一步]。**
+   3. 在&#x200B;**[!UICONTROL 范围]**&#x200B;中，确认您的选择，然后点按&#x200B;**[!UICONTROL 从Brand Portal]**&#x200B;取消发布。
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
@@ -80,10 +80,10 @@ ht-degree: 27%
 
    要将文件夹从Brand Portal发布计划到以后的日期和时间，请执行以下操作：
 
-   1. 在“管 **[!UICONTROL 理发布]** ”页上，从 **[!UICONTROL 操作]** 中选 **[!UICONTROL 择从Brand Portal和Scheduling]** Select Later ******取消发布。**
-   2. 选择&#x200B;**[!UICONTROL 激活日期]**，并指定时间。点按 **[!UICONTROL 下一步]**。
-   3. 在范 **[!UICONTROL 围内]**，确认您的选择并点 **[!UICONTROL 按下一步]**。
-   4. Specify a **[!UICONTROL Workflow title]** under **[!UICONTROL Workflows]**. 点按 **[!UICONTROL 稍后取消发布]。**
+   1. 在&#x200B;**[!UICONTROL 管理发布]**&#x200B;页面上，从&#x200B;**[!UICONTROL 操作]**&#x200B;中选择&#x200B;**[!UICONTROL 从品牌门户]**&#x200B;取消发布，从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL 稍后]。**
+   2. 选择&#x200B;**[!UICONTROL 激活日期]**，并指定时间。点按&#x200B;**[!UICONTROL 下一步]**。
+   3. 在&#x200B;**[!UICONTROL 范围]**&#x200B;中，确认您的选择，然后点按&#x200B;**[!UICONTROL 下一步]**。
+   4. 在&#x200B;**[!UICONTROL 工作流]**&#x200B;下指定&#x200B;**[!UICONTROL 工作流标题]**。 点按&#x200B;**[!UICONTROL 稍后取消发布]。**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 

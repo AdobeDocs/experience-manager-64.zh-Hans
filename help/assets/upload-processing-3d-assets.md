@@ -22,7 +22,7 @@ ht-degree: 66%
 
 >[!IMPORTANT]
 >
->AEM 6.4中不再支持AEM 3D。 Adobe建议您将AEM中的3D资源功 [能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更高版本](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)。
+>AEM 6.4中不再支持AEM 3D。 Adobe建议您将[AEM中的3D资源功能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更高版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)。
 
 可使用标准上传或同步机制将 3D 资产及其关联的引用文件纳入 AEM Assets。
 
@@ -57,13 +57,13 @@ Adobe建议您在上传主3D模型文件之前或同时上传所有引用的文�
 
 通常，转换和处理 3D 文件会消耗服务器上的大量 CPU 和内存资源。此操作还会花费大量时间。处理时间通常会根据模型的大小和服务器的功能而大不相同。例如，少于 10 万个人脸的典型小模型通常在不到一分钟内便可进行查看；在 2-3 分钟内即可完全处理。然而，拥有超过一百万个人脸的大模型则可能需要几十分钟才能完全处理。
 
-转换、处理和渲染作业会按需要排队，以防止严重减缓服务器速度。The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. 此状态表示必须先完成其他处理或渲染作业，才会处理当前资产。
+转换、处理和渲染作业会按需要排队，以防止严重减缓服务器速度。消息“正在等待处理……” 上传资产时，卡片视图符&#x200B;]**有时会显示。**[!UICONTROL &#x200B;此状态表示必须先完成其他处理或渲染作业，才会处理当前资产。
 
-机制可用于限制CPU用于摄取处理和渲染。 有关 [如何配置](advanced-config-3d.md) CPU限制的信息，请参阅高级配置设置。
+机制可用于限制CPU用于摄取处理和渲染。 有关如何配置CPU限制的信息，请参见[高级配置设置](advanced-config-3d.md)。
 
 ## 监测您上传的 3D 文件的处理状态 {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. 每个上传的3D模型通常经历以下4-6个有序处理阶段：
+仅在&#x200B;**[!UICONTROL 卡视图]**&#x200B;中，处理状态和进度会作为进度横幅显示在资产卡上。 每个上传的3D模型通常经历以下4-6个有序处理阶段：
 
 <table> 
  <tbody> 
@@ -90,17 +90,17 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
   <tr> 
    <td>4</td> 
    <td>创建地阴影</td> 
-   <td>可选。允许您在3D对象下方的地面上生成环境遮挡投影。 请参 <a href="/help/assets/advanced-config-3d.md">阅高级配置设置</a> ，以启用或禁用此处理。</td> 
+   <td>可选。允许您在3D对象下方的地面上生成环境遮挡投影。 请参阅<a href="/help/assets/advanced-config-3d.md">高级配置设置</a>以启用或禁用此处理。</td> 
   </tr> 
   <tr> 
    <td>5<br /> </td> 
    <td>创建光照图</td> 
-   <td>可选。允许您提高交互式预览的质量，并快速使用默认渲染器进行渲染。请参 <a href="/help/assets/advanced-config-3d.md">阅高级配置设置</a> ，以启用或禁用此处理。</td> 
+   <td>可选。允许您提高交互式预览的质量，并快速使用默认渲染器进行渲染。请参阅<a href="/help/assets/advanced-config-3d.md">高级配置设置</a>以启用或禁用此处理。</td> 
   </tr> 
   <tr> 
    <td>6<br /> </td> 
    <td>创建动画</td> 
-   <td>可选。允许您渲染一个简单的动画，之后，将该动画用作卡片视图中的可视缩略图。请参 <a href="/help/assets/advanced-config-3d.md">阅高级配置设置</a> ，以启用或禁用此处理。</td> 
+   <td>可选。允许您渲染一个简单的动画，之后，将该动画用作卡片视图中的可视缩略图。请参阅<a href="/help/assets/advanced-config-3d.md">高级配置设置</a>以启用或禁用此处理。</td> 
   </tr> 
   <tr> 
    <td>7<br /> </td> 
@@ -112,5 +112,5 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
 
 >[!NOTE]
 >
->You can view a 3D asset in **[!UICONTROL Detail View]** or render it after the Creating preview stage is complete. 您无需等待所有处理阶段完成。
+>您可以在&#x200B;**[!UICONTROL 详细视图]**&#x200B;中视图3D资产，或在创建预览阶段完成后渲染它。 您无需等待所有处理阶段完成。
 

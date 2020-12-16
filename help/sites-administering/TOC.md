@@ -7,18 +7,18 @@ user-guide-title: AEM 6.4 Administering 用户指南
 breadcrumb-title: Administering 指南
 user-guide-description: 了解如何管理 AEM。
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 16%
 
 ---
 
 
-# AEM 6.4 Administering 用户指南 {#administering}
+# AEM 6.4 Administering 用户指南  {#administering}
 
 + [管理用户指南概述](home.md)
-+ 站点功能 {#introduction}
++ 站点功能{#introduction}
    + [网站管理](msm-and-translation.md)
    + [重用内容：多站点管理器和Live Copy](msm.md)
    + [Live Copy概述控制台](msm-livecopy-overview.md)
@@ -50,7 +50,7 @@ ht-degree: 16%
    + [批量编辑器](bulk-editor.md)
    + [配置电子邮件通知](notification.md)
    + [配置RTE以生成可访问站点](rte-accessible-content.md)
-   + [外部链接检查器](external-link-checker.md)
+   + [链接检查器](external-link-checker.md)
    + [AEM疑难解答](troubleshoot.md)
    + [AEM 6中的审核日志维护](operations-audit-log.md)
    + [编辑者](enable-classic-ui-editor.md)
@@ -135,7 +135,7 @@ ht-degree: 16%
    + [与Adobe动态标签管理集成](dtm.md)
    + [选择加入Adobe Analytics和Adobe Target](opt-in.md)
    + [AEM门户和Portlet](aem-as-portal.md)
-   + [与Dynamic Media Classic集成(Scene7)](scene7.md)
+   + [与Dynamic Media经典(Scene7)集成](scene7.md)
    + [AEM Livefyre菜谱](aem-livefyre-recipes.md)
    + [集成问题疑难解答](troubleshooting-integration-issues.md)
    + [与BrightEdge Content Optimizer集成](brightedge.md)

@@ -1,5 +1,5 @@
 ---
-title: “教程： 规划交互式通信”
+title: “教程：规划交互式通信”
 seo-title: 规划您的交互式通信
 description: 规划交互式通信的剖析
 seo-description: 规划交互式通信的剖析
@@ -16,33 +16,33 @@ ht-degree: 3%
 ---
 
 
-# 教程： 规划交互式通信 {#tutorial-plan-the-interactive-communication}
+# 教程：规划交互式通信{#tutorial-plan-the-interactive-communication}
 
 规划交互式通信的剖析
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-本教程是创建您的第一个 [交互式通信系列中的一个](/help/forms/using/create-your-first-interactive-communication.md) 步骤。 建议按照时间顺序按照系列来了解、执行和演示完整的教程用例。
+本教程是[创建您的第一个交互式通信](/help/forms/using/create-your-first-interactive-communication.md)系列中的一个步骤。 建议按照时间顺序按照系列来了解、执行和演示完整的教程用例。
 
 规划交互式通信的第一步是最终确定交互式通信的内容。 法律、财务、支持或营销等部门的主题专家可以帮助您最终确定内容。 内容完成后，您必须对其进行分析，以确定创建交互式通信所需的各种资产类型。
 
-## 规划注意事项 {#planning-considerations}
+## 规划注意事项{#planning-considerations}
 
 交互式通信包括以下元素：
 
-* **静态文本** ，主要包括交互式通信的一般部分，这些部分在性质上是通用的，并包含在与所有客户的通信中。 例如，页眉、页脚、问候或免责声明。
-* **从后端系统（表单数据模型）来源的数据** ，是客户特定的，并与交互式通信动态合并。 例如，策略编号或地址可以使用表单数据模型来源。
-* **用于打印** 和Web版本的交互通信的布局或模板。
-* **交互式** “通信”中显示各种文本段落的顺序。
-* **正在自定义通信的前线员工(代理** UI)在发送通信前输入的数据。 例如，付款到期日。
+* **静** 态文本主要包括交互式通信的一般部分，这些部分在性质上是通用的，并包含在与所有客户的通信中。例如，页眉、页脚、问候或免责声明。
+* **从后端系统（表单数据模型）来源** 的数据是客户特定的，并与交互式通信动态合并。例如，策略编号或地址可以使用表单数据模型来源。
+* **用于打** 印和Web版本的交互式通信的布局或模板。
+* **交** 互式通信中显示各种文本段落的顺序。
+* **正在自定义通信的前线员工(代理** UI)在发送通信前输入的数据。例如，付款到期日。
 
-* **根据预定** 条件填充的条件数据。 例如，生成交互式通信的日期。
-* **存储在存储库中的图像**，如徽标和签名图像。 企业徽标等图像将出现在大多数或所有交互式通信中。
-* **简化交互通信** 中复杂数据的表示所需的图表和表格
+* **根据** 预定义条件填充的条件数据。例如，生成交互式通信的日期。
+* **存储在存储库中的图像**，如徽标和签名图像。企业徽标等图像将出现在大多数或所有交互式通信中。
+* **简化交** 互式通信中复杂数据表示所需的图表和表
 
-## 交互通信剖析 {#anatomy-of-the-interactive-communication}
+## 交互通信剖析{#anatomy-of-the-interactive-communication}
 
-完成用于创建交互式通信的内容和元素后，您可以创建交互式通信的剖析。 解剖结构必须在“规划考虑事项”部分 [中列出详细](/help/forms/using/planning-interactive-communications.md#planning-considerations) 信息。 根据我们的使用案例，以下是电信运营商向其客户发送的月度账单的剖析示例。
+完成用于创建交互式通信的内容和元素后，您可以创建交互式通信的剖析。 解剖结构必须包含[规划注意事项](/help/forms/using/planning-interactive-communications.md#planning-considerations)部分中列出的详细信息。 根据我们的使用案例，以下是电信运营商向其客户发送的月度账单的剖析示例。
 
 解剖结构包括具有以下输入模式的数据：
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 * 条件数据
 * 图像
 
-在每个部分中，粗体文本表示静态文本。 数据库包括customer、bills和calls表。 表单数据模型可以从这些表中的任何一个接收数据。 有关详细信息，请参 [阅创建表单数据模型](create-form-data-model-tutorial.md)。
+在每个部分中，粗体文本表示静态文本。 数据库包括customer、bills和calls表。 表单数据模型可以从这些表中的任何一个接收数据。 有关详细信息，请参阅[创建表单数据模型](create-form-data-model-tutorial.md)。
 
 下表说明了交互式通信剖析中每个字段的数据源：
 
@@ -68,14 +68,14 @@ ht-degree: 3%
   <tr>
    <td>帐单详细信息</td> 
    <td><p>发票编号</p> <p>帐单日期</p> <p>帐单期间</p> <p>您的计划</p> </td> 
-   <td><p>“计划” <strong>字段的 </strong>值</p> <p>表——客户</p> </td> 
+   <td><p><strong>您的计划</strong>字段的值</p> <p>表——客户</p> </td> 
    <td><p>以下字段的值：</p> 
     <ul> 
      <li>发票编号</li> 
      <li>帐单日期</li> 
      <li>帐单期间</li> 
     </ul> <p> </p> </td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>客户详细信息</td> 
@@ -94,12 +94,12 @@ ht-degree: 3%
      <li>状态代码</li> 
      <li>连接数</li> 
     </ul> </td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>帐单汇总</td> 
    <td><p>上一余额</p> <p>付款</p> <p>调整</p> <p>当前帐单期间的费用</p> <p>到期金额</p> <p>到期日期</p> </td> 
-   <td><p>“费用当前 <strong>开单期间”字段的 </strong> 值</p> <p>表——清单</p> </td> 
+   <td><p><strong>当前帐单期间</strong>字段的值</p> <p>表——清单</p> </td> 
    <td><p>以下字段的值：</p> 
     <ul> 
      <li>上一余额</li> 
@@ -108,7 +108,7 @@ ht-degree: 3%
      <li>到期金额</li> 
      <li>到期日期</li> 
     </ul> </td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>费用汇总</td> 
@@ -126,7 +126,7 @@ ht-degree: 3%
      <li>应付总额（“未付”计算字段）</li> 
     </ul> <p>表——清单</p> </td> 
    <td>无字段</td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>明细调用——传出</td> 
@@ -140,20 +140,20 @@ ht-degree: 3%
     </ul> </td> 
    <td><p>所有值</p> <p>表——调用</p> </td> 
    <td>无字段</td> 
-   <td>--</td> 
+   <td>—</td> 
   </tr>
   <tr>
    <td>立即付款</td> 
-   <td>--</td> 
-   <td>--</td> 
-   <td>--</td> 
+   <td>—</td> 
+   <td>—</td> 
+   <td>—</td> 
    <td>PayNow</td> 
   </tr>
   <tr>
    <td>增值服务</td> 
-   <td>--</td> 
-   <td>--</td> 
-   <td>--</td> 
+   <td>—</td> 
+   <td>—</td> 
+   <td>—</td> 
    <td>ValueAddedServices</td> 
   </tr>
  </tbody>

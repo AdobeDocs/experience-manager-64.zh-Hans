@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# 汇编PDF文档 {#assembling-pdf-documents}
+# 汇编PDF文档{#assembling-pdf-documents}
 
 **关于Assembler服务**
 
@@ -29,5 +29,5 @@ Assembler服务可以将多个PDF文档合并为一个PDF文档，或将一个PD
 
 >[!NOTE]
 >
->有关Assembler服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关Assembler服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 

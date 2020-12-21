@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms数据集成简介 {#aem-forms-data-integration}
+# AEM Forms数据集成简介{#aem-forms-data-integration}
 
 数据集成允许您将AEM Forms与不同的数据源相集成，并创建表单数据模型以创建和使用自适应表单和交互式通信。
 
@@ -29,7 +29,7 @@ AEM Forms的应用程序（如自适应表单和交互式通信）需要与数�
 
 虽然分布式模块化系统有其自身的优势，但挑战在于跨数据源集成和创建数据关联。 数据集成是功能高效的企业基础架构的关键，该基础架构具有与业务数据交换应用程序连接的不同数据源。
 
-## 数据集成概述 {#data-integration-overview}
+## 数据集成概述{#data-integration-overview}
 
 ![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
@@ -47,7 +47,7 @@ AEM Forms数据集成允许配置不同数据源并将其与AEM Forms连接。 �
 * 使用自适应表单规则调用数据源服务／操作
 * 将提交的自适应表单数据写入数据源
 
-## 数据集成入门 {#get-started-with-data-integration}
+## 数据集成{#get-started-with-data-integration}入门
 
 实施数据集成的第一步是识别和配置数据源，这些数据源存储您希望在自适应表单和交互式通信用例中使用的信息。 接下来，您创建一个表单数据模型，它使用来自一个或多个数据源的数据模型对象、属性和服务。 您可以基于表单数据模型创建自适应表单和交互式通信，其中交互式通信中的自适应表单字段或占位符绑定到相应的数据源属性。
 

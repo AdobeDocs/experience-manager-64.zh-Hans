@@ -16,7 +16,7 @@ ht-degree: 3%
 ---
 
 
-# 使用JSON模式创建自适应表单 {#creating-adaptive-forms-using-json-schema}
+# 使用JSON模式{#creating-adaptive-forms-using-json-schema}创建自适应表单
 
 ## 前提条件 {#prerequisites}
 
@@ -25,9 +25,9 @@ ht-degree: 3%
 * [创建自适应表单](/help/forms/using/creating-adaptive-form.md)
 * [JSON模式](https://json-schema.org/)
 
-## 将JSON模式用作表单模型  {#using-a-json-schema-as-form-model}
+## 将JSON模式用作表单模型{#using-a-json-schema-as-form-model}
 
-AEM Forms支持使用现有JSON模式作为表单模型创建自适应表单。 此JSON模式表示组织中的后端系统生成或使用数据的结构。 您使用的JSON模式应符合 [v4规范](https://json-schema.org/draft-04/schema)。
+AEM Forms支持使用现有JSON模式作为表单模型创建自适应表单。 此JSON模式表示组织中的后端系统生成或使用数据的结构。 您使用的JSON模式应符合[v4规范](https://json-schema.org/draft-04/schema)。
 
 使用JSON模式的主要功能有：
 
@@ -62,33 +62,33 @@ JSON元素与自适应表单组件的映射如下：
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>{</p> <p>“类型”: "string",</p> <p>}</p> </td> 
+   <td><p>{</p> <p>“类型”:"string",</p> <p>}</p> </td> 
    <td><br /> <br /> 文本字段<br /> <br /> <br /> </td> 
   </tr> 
   <tr> 
-   <td>数字属性<br /> </td> 
-   <td>子类型设置为浮点的数字字段<br /> </td> 
+   <td>number属性<br /> </td> 
+   <td>子类型设置为float<br />的数字字段 </td> 
   </tr> 
   <tr> 
-   <td>integer属性<br /> </td> 
-   <td>子类型设置为整数的数字字段<br /> </td> 
+   <td>整数属性<br /> </td> 
+   <td>子类型设置为整数<br />的数字字段 </td> 
   </tr> 
   <tr> 
    <td>布尔属性<br /> </td> 
    <td>切换<br /> </td> 
   </tr> 
   <tr> 
-   <td>object property<br /> </td> 
+   <td>对象属性<br /> </td> 
    <td>面板<br /> </td> 
   </tr> 
   <tr> 
    <td>数组属性</td> 
-   <td>最小和最大分别等于minItems和maxItems的可重复面板。 仅支持同质阵列。 因此，项目约束必须是对象而不是数组。<br /> </td> 
+   <td>最小和最大分别等于minItems和maxItems的可重复面板。 仅支持同质阵列。 因此，项约束必须是对象而不是数组。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 常见模式属性 {#common-schema-properties}
+### 常见模式属性{#common-schema-properties}
 
 自适应表单使用JSON模式中的可用信息映射每个生成的字段。 特别是：
 
@@ -104,7 +104,7 @@ JSON元素与自适应表单组件的映射如下：
 * 模式属性以自适应形式设置为验证模式(常规表达式)。
 * JSON模式文件的扩展名必须保留为。模式.json。 例如，&lt;filename>.模式.json。
 
-## 示例JSON模式 {#sample-json-schema}
+## 示例JSON模式{#sample-json-schema}
 
 以下是JSON模式的示例。
 
@@ -286,7 +286,7 @@ JSON元素与自适应表单组件的映射如下：
 }
 ```
 
-### 可重用模式定义 {#reusable-schema-definitions}
+### 可重用模式定义{#reusable-schema-definitions}
 
 定义密钥用于识别可重用模式。 可重用的模式定义用于创建片段。 它类似于在XSD中识别复杂类型。 下面给出了具有定义的示例JSON模式:
 
@@ -317,9 +317,9 @@ JSON元素与自适应表单组件的映射如下：
 
 上例定义了客户记录，其中每个客户同时具有发运地址和开单地址。 两个地址的结构相同——地址有街道地址、城市地址和州地址——因此最好不要重复地址。 它还使添加和删除字段变得很容易，以便将来进行任何更改。
 
-## JSON模式定义中的预配置字段 {#pre-configuring-fields-in-json-schema-definition}
+## 预配置JSON模式定义{#pre-configuring-fields-in-json-schema-definition}中的字段
 
-您可以使用 **aem:afProperties属性** ，预配置JSON模式字段以映射到自定义自适应表单组件。 下面列出了一个示例：
+您可以使用&#x200B;**aem:afProperties**&#x200B;属性预配置JSON模式字段以映射到自定义自适应表单组件。 下面列出了一个示例：
 
 ```
 {
@@ -339,7 +339,7 @@ JSON元素与自适应表单组件的映射如下：
 }
 ```
 
-## 限制自适应表单组件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
+## 限制自适应表单组件{#limit-acceptable-values-for-an-adaptive-form-component}的可接受值
 
 您可以向JSON模式元素添加以下限制以限制自适应表单组件可接受的值：
 
@@ -416,7 +416,7 @@ JSON元素与自适应表单组件的映射如下：
   <tr> 
    <td><p><code>pattern</code></p> </td> 
    <td><p>字符串</p> </td> 
-   <td><p>指定字符的顺序。 如果字符符合指定的模式，则组件接受字符。</p> <p>模式属性映射到相应自适应表单组件的验证模式。</p> </td> 
+   <td><p>指定字符的顺序。 如果字符符合指定的模式，则组件接受这些字符。</p> <p>模式属性映射到相应自适应表单组件的验证模式。</p> </td> 
    <td> 
     <ul> 
      <li>映射到XSD模式的所有自适应表单组件 </li> 
@@ -437,7 +437,7 @@ JSON元素与自适应表单组件的映射如下：
  </tbody> 
 </table>
 
-## 不支持的构造  {#non-supported-constructs}
+## 不支持的构造{#non-supported-constructs}
 
 自适应表单不支持以下JSON模式构造：
 
@@ -452,7 +452,7 @@ JSON元素与自适应表单组件的映射如下：
 
 在可重复的子表单中，必须使用完整的子表单。 如果只想选择字段，请使用整个结构并删除不需要的字段。
 
-**我在内容查找器中有一个很长的复杂结构。 如何找到特定元素？**
+**我在内容查找器中有一个很长的复杂结构。如何找到特定元素？**
 
 您有两种选择：
 

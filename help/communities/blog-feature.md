@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# 博客功能 {#blog-feature}
+# 博客功能{#blog-feature}
 
 ## 简介 {#introduction}
 
@@ -31,11 +31,11 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 * 在发布端创建博客文章和评论
 * 富文本编辑
 * 内联图像（支持拖放）
-* 嵌入式社交网络内容([嵌入支持](blog-developer-basics.md#allowing-rich-media))
+* 嵌入式社交网络内容（[oEmbed支持](blog-developer-basics.md#allowing-rich-media)）
 * 草稿模式
 * 计划发布
-* 代表起草(特权 [成员](users.md#privileged-members-group) 可以代表其他社区成员创建内容)
-* [博客文章和评论的上下文](moderate-ugc.md) 、批量协调
+* 代表起草（[特权成员](users.md#privileged-members-group)可以代表其他社区成员创建内容）
+* [博客文章和评论的](moderate-ugc.md) 上下文和批量版本化
 
 文档的本节介绍
 
@@ -44,11 +44,11 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
 >[!NOTE]
 >
->组件 `Journal`和 `Journal Sidebar` 标题 `Blog` 为和 `Blog Sidebar`。
+>组件`Journal`和`Journal Sidebar`的标题分别为`Blog`和`Blog Sidebar`。
 >
 >AEM 6.0及更早版本中的博客功能现已删除。 它基于模板，并且仅允许作者在创作环境中创建内容。
 
-## 将博客组件添加到页面 {#adding-blog-components-to-a-page}
+## 将博客组件添加到页面{#adding-blog-components-to-a-page}
 
 如果希望在创作模式下将博客添加到页面，请使用组件浏览器查找
 
@@ -57,45 +57,54 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
 将它们拖到应显示博客的页面上的位置。
 
-有关必要的信息，请访 [问社区组件基础](basics.md)。
+有关必要的信息，请访问[社区组件基础知识](basics.md)。
 
-当包含 [所需的客户端库](blog-developer-basics.md#essentials-for-client-side) ，组件的显示 `Blog`方式如下：
+当包含[必需的客户端库](blog-developer-basics.md#essentials-for-client-side)时，`Blog`组件的显示方式如下：
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-以及显示 `Blog Sidebar` 方式：
+以及`Blog Sidebar`的显示方式：
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### 配置博客 {#configuring-blog}
+### 配置博客{#configuring-blog}
 
-选择要访问的 `Blog` 已放置组件，然后选择打 `Configure` 开编辑对话框的图标。
+选择要访问的已放置`Blog`组件，然后选择打开编辑对话框的`Configure`图标。
 
-![配置图标](assets/chlimage_1-149.png)![博客设置](assets/Blog-configure.png)
+![配置](assets/chlimage_1-149.png) ![图标博客设置](assets/Blog-configure.png)
 
-#### “设置”选项卡 {#settings-tab}
+#### 设置选项卡{#settings-tab}
 
-在“设 **[!UICONTROL 置]** ”选项卡下，指定博客的基本功能：
+在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡下，指定博客的基本功能：
 
-* **[!UICONTROL 允许附件缩]**&#x200B;览图如果选中，则会创建附加图像的缩览图。
+* **[!UICONTROL 允许附]**
+件缩略图如果选中，则会创建附加图像的缩略图。
 
-* **[!UICONTROL 最大附加缩略图]**&#x200B;大小附加缩略图图像的最大大小（以像素为单位）。 默认值为800 x 800。
+* **[!UICONTROL 最大附加缩]**
+略图大小附加缩略图图像的最大大小（以像素为单位）。默认值为800 x 800。
 
-* **[!UICONTROL 缩览图的最小图像大]**&#x200B;小用于为内联图像生成缩览图的图像的最小大小（以字节为单位）。 默认值为100000字节(100kb)。
+* **[!UICONTROL 缩略图的最小图像]**
+大小用于为内联图像生成缩略图的图像的最小大小（以字节为单位）。默认值为100000字节(100kb)。
 
-* **[!UICONTROL 最大缩略图]**&#x200B;大小内联图像的缩略图最大大小（以像素为单位）。 默认值为800 x 800。
+* **[!UICONTROL 最大缩]**
+览图大小内联图像的缩览图图像的最大大小（以像素为单位）。默认值为800 x 800。
 
-* **[!UICONTROL 允许特权成]**&#x200B;员如果选中，则仅允许特权成员创建内容。
+* **[!UICONTROL 允许特权]**
+成员如果选中，则只允许特权成员创建内容。
 
-* **[!UICONTROL 允许的特权]**&#x200B;成员添加允许创建内容的特权成员。
+* **[!UICONTROL 允许的特]**
+权成员添加允许创建内容的特权成员。
 
-* **[!UICONTROL 在作者编辑模式下阻止用户生成的内]**&#x200B;容如果启用，则在作者模式下进行编辑时阻止用户生成的内容。
+* **[!UICONTROL 在作者编辑模式下阻止用户生]**
+成的内容如果启用，则在作者模式下编辑时阻止用户生成的内容。
 
-* **[!UICONTROL 日志标]**&#x200B;题要在页面上显示的博客标题。
+* **[!UICONTROL 日志]**
+标题要在页面上显示的博客标题。
    >注意:
    >日志标题用于自动创建博客的URL。 您在此指定的日志标题中最多使用50个字符（除5个字符外，还有5个字符可用于唯一性）来创建博客的URL。
 
-* **[!UICONTROL 日志描]**&#x200B;述博客描述。
+* **[!UICONTROL 日志]**
+描述博客描述。
 
 * **[!UICONTROL 每页主题数]**
 
@@ -115,7 +124,7 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
 * **[!UICONTROL 允许标记]**
 
-   如果选中此项，则允许成员向其帖子中添加标记标签(请参 **[!UICONTROL 阅标记字段]** 选项卡)。 默认为未选中。
+   如果选中此项，则允许成员向其帖子中添加标记标签（请参阅&#x200B;**[!UICONTROL 标记字段]**&#x200B;选项卡）。 默认为未选中。
 
 * **[!UICONTROL 允许文件上传]**
 
@@ -123,11 +132,11 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
 * **[!UICONTROL 最大文件大小]**
 
-   仅在选中时 `Allow File Uploads` 相关。 此字段将限制已上载文件的大小（以字节为单位）。 默认值为104857600(10 Mb)。
+   仅当选中`Allow File Uploads`时相关。 此字段将限制已上载文件的大小（以字节为单位）。 默认值为104857600(10 Mb)。
 
 * **[!UICONTROL 允许的文件类型]**
 
-   仅在选中时 `Allow File Uploads` 相关。 以逗号分隔的文件扩展名列表，以“点”分隔。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何文件类型，则不允许上传那些未指定的文件类型。 默认值未指定，因此允许所有文件类型。
+   仅当选中`Allow File Uploads`时相关。 以逗号分隔的文件扩展名列表，以“点”分隔。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何文件类型，则不允许上传那些未指定的文件类型。 默认值未指定，因此允许所有文件类型。
 
 * **[!UICONTROL 附加图像文件最大大小]**
 
@@ -143,27 +152,27 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
 * **[!UICONTROL 允许关注]**
 
-   如果选中此项，则为博客文章添加以下功能，允许成员 [收到](notifications.md) 新帖子的通知。 默认为未选中。
+   如果选中此项，则为博客文章添加以下功能，使成员能够收到新帖子的[通知](notifications.md)。 默认为未选中。
 
 * **[!UICONTROL 允许电子邮件订阅]**
 
-   如果选中此项，则允许成员通过电子邮件(订阅)通知[新帖](subscriptions.md)子。 需要 `Allow Following` 检查并配置电 [子邮件](email.md)。 默认为未选中。
+   如果选中此项，则允许通过电子邮件向成员通知新帖子([订阅](subscriptions.md))。 需要检查`Allow Following`并配置[电子邮件](email.md)。 默认为未选中。
 
 * **[!UICONTROL 允许投票]**
 
-   如果选中此项，则在博客条目中加入投票功能。 默认为未选中。
+   如果选中此项，则在博客条目中包含投票功能。 默认为未选中。
 
 * **[!UICONTROL 显示徽章]**
 
-   如果选中，则使用会员的博 [客条目](implementing-scoring.md) ，显示已获得和分配的徽章。 默认为未选中。
+   如果选中，则使用成员的博客条目显示已获得的标记并分配了[标记](implementing-scoring.md)。 默认为未选中。
 
 * **[!UICONTROL 允许专题内容]**
 
-   如果选中，则该想法可被标识为特色 [内容](featured.md)。 默认为未选中。
+   如果选中，则该想法可标识为[特色内容](featured.md)。 默认为未选中。
 
-#### “用户审核”选项卡 {#user-moderation-tab}
+#### “用户协调”选项卡{#user-moderation-tab}
 
-在“用户 **[!UICONTROL 审核]** ”选项卡下，指定审核设置：
+在&#x200B;**[!UICONTROL 用户审核]**&#x200B;选项卡下，指定审核设置：
 
 * **[!UICONTROL 拒绝帖子]**
 
@@ -193,23 +202,23 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
    输入主题或评论在隐藏之前必须标出的次数，以免公开视图。 如果设置为-1，则标记的主题或评论从不隐藏于公共视图。 否则，此数字必须大于或等于仲裁阈值。 默认值为5。
 
-#### 标记字段选项卡 {#tag-field-tab}
+#### 标记字段选项卡{#tag-field-tab}
 
-在“标记 **[!UICONTROL 字段]** ”选项卡下，指定在“设置”选项卡上选中“允 **[!UICONTROL 许标记]** ”时可应用的 **[!UICONTROL 标记]** :
+在&#x200B;**[!UICONTROL 标记字段]**&#x200B;选项卡下，指定在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡上选中&#x200B;**[!UICONTROL 允许标记]**&#x200B;时可应用的标记：
 
 * **[!UICONTROL 允许的命名空间]**
 
-   如果在“设 `Allow Tagging` 置”选项卡下选中， **[!UICONTROL 则相关]** 。 可应用的标记仅限于所选命名空间类别内的标记。 命名空间的列表包括“标准标记”(默认命名空间)和“包括所有标记”。 默认值为“无”(none checked)，这意味着允许所有命名空间。
+   如果在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡下检查了`Allow Tagging`，则相关。 可应用的标记仅限于所选命名空间类别内的标记。 命名空间的列表包括“标准标记”(默认命名空间)和“包括所有标记”。 默认值为“无”(none checked)，这意味着允许所有命名空间。
 
 * **[!UICONTROL 建议限制]**
 
    输入要作为建议显示给论坛成员的标记数。 值-1表示没有限制。 默认值为0。
 
-### 配置博客提要栏 {#configuring-blog-sidebar}
+### 配置博客提要栏{#configuring-blog-sidebar}
 
-多次单击组件 `Blog Sidebar` 时，将打开一个编辑对话框。
+多次单击`Blog Sidebar`组件时，将打开一个编辑对话框。
 
-在“日志 **[!UICONTROL 提要栏设置]** ”选项卡下，指定存档的日期格式以及要在提要栏中显示的条目类型：
+在&#x200B;**[!UICONTROL 日志提要栏设置]**&#x200B;选项卡下，指定存档的日期格式以及要在提要栏中显示的条目类型：
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -217,11 +226,11 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
    用于显示博客条目存档的格式。 格式使用遵循Java约定的占位符。
 
-   * yyyy: 全年，比如2015年
-   * yy: 短年，比如15
-   * MMMMMM: 整月，如6月
-   * 嗯： 短月，如6月
-   * MM: 月号，如06
+   * yyyy:全年，比如2015年
+   * yy:短年，比如15
+   * MMMMMM:整月，如6月
+   * 嗯：短月，如6月
+   * MM:月号，如06
 
    默认值为“yyyy MMMM”，例如显示“2015年6月”
 
@@ -235,7 +244,7 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
 * **[!UICONTROL 日志组件路径]**
 
-   *（可选）* 要从中列出博客文章的博客资源的位置。 如果留空，将使用同一页 `social/journal/components/hbs/journal` 面上显示的resourceType组件。
+   *（可选）* 要从中列出博客文章的博客资源的位置。如果留空，将使用资源类型`social/journal/components/hbs/journal`的组件，该组件显示在同一页面上。
 
    * 例如，`/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -243,7 +252,7 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
    要显示的博客文章数。 值-1表示无限制。 默认值为-1。
 
-## 站点访客体验 {#site-visitor-experience}
+## 站点访客体验{#site-visitor-experience}
 
 在发布环境中，博客功能将按创建的降序显示最新的博客文章，后跟较旧的博客文章。 博客提要栏允许站点访客应用过滤器来限制所显示博客文章的选择。
 
@@ -253,7 +262,7 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
 其他功能取决于站点访客是版主、管理员、社区成员、特权成员还是匿名。
 
-### 使用文章 {#working-with-articles}
+### 使用文章{#working-with-articles}
 
 创建新博客文章时，可以选择
 
@@ -263,15 +272,15 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
 博客文章将显示在相应的选项卡（已发布、草稿或已计划）下，以供能够在发布时进行创作的成员使用。
 
-#### 版主和管理员 {#moderators-and-administrators}
+#### 版主和管理员{#moderators-and-administrators}
 
-当登录用户具有版主或管理员权限时，他们能够对发布到博 [客的所有博客文章](moderate-ugc.md) 和评论执行审核任务（如组件的配置所允许）。
+当登录用户具有审查方或管理员权限时，他们可以对所有博客文章和发布到博客的评论执行[审核任务](moderate-ugc.md)（组件配置允许）。
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
 ### 成员 {#members}
 
-当登录用户是社区成员或特 [权成员](users.md#privileged-members-group) （取决于配置）时，他们可以选择 `New Article` 创建和发布新的博客文章。
+当登录用户是社区成员或[特权成员](users.md#privileged-members-group)（取决于配置）时，他们可以选择`New Article`创建并发布新的博客文章。
 
 具体而言，他们可以：
 
@@ -292,10 +301,10 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
 ## 附加信息 {#additional-information}
 
-有关详细信息，请参阅开发人 [员的“Blog](blog-developer-basics.md) Essentials”页面。
+有关开发人员的详细信息，请参阅[Blog Essentials](blog-developer-basics.md)页面。
 
-有关审核博客条目和评论，请参阅 [审核用户生成的内容](moderate-ugc.md)。
+有关审核博客条目和评论，请参阅[审核用户生成的内容](moderate-ugc.md)。
 
-有关标记博客条目和注释，请参 [阅标记用户生成的内容](tag-ugc.md)。
+有关标记博客条目和注释，请参阅[标记用户生成的内容](tag-ugc.md)。
 
-有关博客条目和注释的翻译，请参阅 [翻译用户生成的内容](translate-ugc.md)。
+有关博客条目和注释的翻译，请参阅[翻译用户生成的内容](translate-ugc.md)。

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 升级到AEM 6.4Forms{#upgrade-to-aem-forms}
 
-AEM 6.4Forms包含若干新功能和增强功能，可简化表单和通信的创建、管理和用户体验。 要了解AEM 6.4Forms的所有新增功能和增强功能，请参阅新增 [功能摘要文档](/help/forms/using/whats-new.md)。
+AEM 6.4Forms包含若干新功能和增强功能，可简化表单和通信的创建、管理和用户体验。 要了解AEM 6.4Forms的所有新增功能和增强功能，请参阅[新增功能摘要文档](/help/forms/using/whats-new.md)。
 
 您可以升级现有LiveCycle或AEM Forms安装，以获得AEM 6.4Forms提供的新功能和增强功能，同时保持现有数据、流程和资产不变。 升级时，还会保留元数据和进程的状态。 您可以选择升级途径开始升级。
 

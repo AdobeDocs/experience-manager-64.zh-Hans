@@ -18,31 +18,31 @@ ht-degree: 0%
 ---
 
 
-# 使用SRP访问UGC {#accessing-ugc-with-srp}
+# 使用SRP {#accessing-ugc-with-srp}访问UGC
 
 ## 关于SRP {#about-srp}
 
-所有AEM Communities组件和功能都构建 [在社交组件框架(SCF)上](scf.md)，该框架调用SocialResourceProvider API访问所有用户生成的内容(UGC)。
+所有AEM Communities组件和功能都构建在[社交组件框架(SCF)](scf.md)上，后者调用SocialResourceProvider API访问所有用户生成的内容(UGC)。
 
-在创建社区站点之前， [存储资源提供者](working-with-srp.md) (SRP)必须配置为选择与基础拓扑一致的 [实现](topologies.md)。 SRP实现基于三个存储选项：
+在创建社区站点之前，必须配置[存储资源提供程序(SRP)](working-with-srp.md)以选择与基础[拓扑](topologies.md)一致的实现。 SRP实现基于三个存储选项：
 
 1. [ASRP](asrp.md) -Adobe点播存储
 2. [MSRP](msrp.md) - MongoDB
 3. [JSRP](jsrp.md) - JCR
 
-## 关于UGC存储 {#about-ugc-storage}
+## 关于UGC存储{#about-ugc-storage}
 
-UGC存储的重要信息是，当站点配置为使用ASRP或MSRP时，实际UGC不会存储在AEM节 [点存储](../../help/sites-deploying/data-store-config.md) (JCR)中。
+要了解UGC的存储，重要的是，当站点配置为使用ASRP或MSRP时，实际的UGC不会存储在AEM [节点存储](../../help/sites-deploying/data-store-config.md)(JCR)中。
 
 虽然JCR中可能存在使UGC阴影的节点，以提供有用的元数据，但不要将这些节点与实际UGC混淆。
 
-请参 [阅存储资源提供程序概述。](srp.md)
+请参阅[存储资源提供程序概述。](srp.md)
 
-## 最佳实践 {#best-practice}
+## 最佳实践{#best-practice}
 
 在开发自定义组件时，开发人员应当注意独立于当前选择的拓扑进行编码，从而保留将来迁移到新拓扑的灵活性。
 
-### 假定JCR不可用 {#assume-jcr-not-available}
+### 假定JCR不可用{#assume-jcr-not-available}
 
 应避免特定于JCR的方法。
 
@@ -63,16 +63,16 @@ UGC存储的重要信息是，当站点配置为使用ASRP或MSRP时，实际UGC
 * JCR事件
 * 工作流启动器(使用JCR事件)
 
-### 使用搜索集合 {#use-search-collections}
+### 使用搜索集合{#use-search-collections}
 
-不同的SRP可以有不同的本机查询语言。 建议使用com.adobe.cq.so [cial.ugc.api包中的方法](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) ，调用相应的查询语言。
+不同的SRP可以有不同的本机查询语言。 建议使用[com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html)包中的方法调用相应的查询语言。
 
-有关详细信息，请参 [阅Search Essentials](search-implementation.md)。
+有关详细信息，请参阅[Search Essentials](search-implementation.md)。
 
 ## 资源 {#resources}
 
 * [社区内容存储](working-with-srp.md) -讨论UGC公用商店的可用SRP选项
-* [存储资源提供程序概述](srp.md) -简介和存储库使用概述
-* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例
-* [Search Essentials](search-implementation.md) —— 用于搜索UGC的基本信息
+* [存储资源提供者概述](srp.md) -简介和存储库使用概述
+* [SRP和UGC Essentials](srp-and-ugc.md)  - SRP实用程序方法和示例
+* [Search Essentials](search-implementation.md) -搜索UGC的基本信息
 * [SocialUtils重构](socialutils.md) -将已弃用的实用程序方法映射到当前SRP实用程序方法

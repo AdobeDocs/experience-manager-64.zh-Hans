@@ -16,15 +16,15 @@ ht-degree: 0%
 ---
 
 
-# HTML5表单简介 {#introduction-to-html-forms}
+# HTML5表单简介{#introduction-to-html-forms}
 
 HTML5表单是Adobe Experience Manager6.0(AEM 6.0)软件中的一项新功能，它将XFA表单模板的渲染优惠为HTML5格式。 此功能支持在不支持基于XFA的PDF的移动设备和桌面浏览器上呈现表单。 HTML5表单不仅支持XFA表单模板的现有功能，还为移动设备添加了新功能，如连笔签名。
 
-HTML5表单根据标准HTML5构造生成文档。 您可以在支持HTML5的所有现代浏览器中视图HTML5表单。 它不需要为浏览器安装任何其他浏览器插件。 有关支持的浏览器的详细信息，请参 [阅支持的客户端平台](https://adobe.com/go/learn_aemforms_supportedplatforms_63)。
+HTML5表单根据标准HTML5构造生成文档。 您可以在支持HTML5的所有现代浏览器中视图HTML5表单。 它不需要为浏览器安装任何其他浏览器插件。 有关支持的浏览器的详细信息，请参阅[支持的客户端平台](https://adobe.com/go/learn_aemforms_supportedplatforms_63)。
 
 ![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
-## HTML5表单的主要功能 {#key-capabilities-of-html-forms-br}
+## HTML5表单{#key-capabilities-of-html-forms-br}的主要功能
 
 * 以HTML5格式呈现所有兼容浏览器都支持的现有XFA表单。
 * 利用标准XFA表单设计功能为移动设备目标表单。
@@ -36,14 +36,14 @@ HTML5表单根据标准HTML5构造生成文档。 您可以在支持HTML5的所�
 * 允许自定义构件优惠丰富的数据捕获体验。
 * 支持与Web应用程序集成。
 
-### 多渠道出版 {#multichannel-publishing}
+### 多渠道发布{#multichannel-publishing}
 
 表单开发人员可以使用XFA模板以PDF和HTML5格式呈现表单。 在您拥有大量XFA表单的情况下，此功能非常有用，这些表单需要极少的更改才能适应HTML5表单设计实践。 您可以将现有的XFA表单渲染为HTML5，以目标尚不支持基于XFA的PDF的各种设备。
 
-## 管理HTML5表单 {#manage-html-forms}
+## 管理HTML5表单{#manage-html-forms}
 
-AEM还为使用AEM FormsUI列出和管理所有表单模板提供统一的视图。 您可以激活、取消激活、发布和预览表单。 有关详细信息，请参 [阅管理表单的简介](/help/forms/using/introduction-managing-forms.md)。
+AEM还为使用AEM FormsUI列出和管理所有表单模板提供统一的视图。 您可以激活、取消激活、发布和预览表单。 有关详细信息，请参阅[管理表单的简介](/help/forms/using/introduction-managing-forms.md)。
 
-### Forms定制 {#forms-customization}
+### Forms定制{#forms-customization}
 
-HTML5表单使用标准HTML5构造呈现表单模板。 这使得使用Web技术（主要是CSS和JavaScript）以HTML5格式自定义和扩展表单变得简单。 您可以轻松自定义现有构件的外观，创建自己的自定义构件，或在表单中使用自定义样式。 有关创建自定义构件和自定义现有构件的更多信息，请 [参阅使用HTML5表单插入自定义构件](/help/forms/using/custom-widgets.md)。
+HTML5表单使用标准HTML5构造呈现表单模板。 这使得使用Web技术（主要是CSS和JavaScript）以HTML5格式自定义和扩展表单变得简单。 您可以轻松自定义现有构件的外观，创建自己的自定义构件，或在表单中使用自定义样式。 有关创建自定义构件和自定义现有构件的详细信息，请参阅[使用HTML5表单插入自定义构件](/help/forms/using/custom-widgets.md)。

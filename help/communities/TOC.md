@@ -14,10 +14,10 @@ ht-degree: 11%
 ---
 
 
-# AEM 6.4 Communities 用户指南 {#communities}
+# AEM 6.4 Communities 用户指南  {#communities}
 
 + [AEM Communities概述](home.md)
-+ Introduction to AEM Communities {#introduction}
++ AEM Communities简介{#introduction}
    + [社区站点](administer-landing.md)
    + [AEM Communities概述](overview.md)
    + [AEM 6.4 Communities的新增功能](whats-new-aem-communities.md)
@@ -32,7 +32,7 @@ ht-degree: 11%
    + [为Enablement创作新社区站点](enablement-create-site.md)
    + [创建和分配Enablement Resources](resource.md)
    + [体验已发布的支持站点](enablement-published-site.md)
-+ 部署 {#deploy}
++ 部署{#deploy}
    + [部署社区](deploy-communities.md)
    + [升级到 AEM 6.4 Communities](upgrade.md)
    + [社区的推荐拓扑](topologies.md)

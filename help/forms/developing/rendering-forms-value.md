@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# 按价值呈现Forms {#rendering-forms-by-value}
+# 按值{#rendering-forms-by-value}呈现Forms
 
 通常，在Designer中创建的表单设计会通过引用Forms服务来传递。 表单设计可能很大，因此，通过引用传递它们更有效，以避免必须按值将表单设计字节汇总起来。 Forms服务还可以缓存表单设计，这样在缓存表单时，它不必持续读取表单设计。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Forms服务还可以解析表单设计中链接内容的位置。 例如，从表单设计中引用的链接图像是相对URL。 链接的内容始终被假定为相对于表单设计位置。 因此，解析链接内容是通过将相对路径应用到绝对表单设计位置来确定其位置的问题。
 
-您可以按值传递表单设计，而不是按引用传递表单设计。 动态创建表单设计时，按值传递表单设计是有效的； 即，当客户端应用程序在运行时生成创建表单设计的XML时。 在这种情况下，表单设计不会存储在物理存储库中，因为它存储在内存中。 在运行时动态创建表单设计并按值传递它时，您可以缓存表单并提高Forms服务的性能。
+您可以按值传递表单设计，而不是按引用传递表单设计。 动态创建表单设计时，按值传递表单设计是有效的；即，当客户端应用程序在运行时生成创建表单设计的XML时。 在这种情况下，表单设计不会存储在物理存储库中，因为它存储在内存中。 在运行时动态创建表单设计并按值传递它时，您可以缓存表单并提高Forms服务的性能。
 
 **按值传递表单的限制**
 
@@ -43,9 +43,9 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 
 >[!NOTE]
 >
->有关Forms服务的详细信息，请参 [阅AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关Forms服务的详细信息，请参见[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
-## 步骤摘要 {#summary-of-steps}
+## 步骤{#summary-of-steps}的摘要
 
 要按值呈现表单，请执行以下步骤：
 
@@ -65,7 +65,7 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 
 **参考表单设计**
 
-按值呈现表单时，必须创建包含要呈 `com.adobe.idp.Document` 现的表单设计的对象。 您可以引用现有XDP文件，也可以在运行时动态创建表单设计并用该 `com.adobe.idp.Document` 数据填充表单。
+按值呈现表单时，必须创建一个`com.adobe.idp.Document`对象，其中包含要呈现的表单设计。 您可以引用现有XDP文件，也可以在运行时动态创建表单设计并用该数据填充`com.adobe.idp.Document`。
 
 >[!NOTE]
 >
@@ -73,11 +73,11 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 
 **按值呈现表单**
 
-要按值呈现表单，请将包 `com.adobe.idp.Document` 含表单设计的实例传递到呈现方法的 `inDataDoc` 参数(可以是 `FormsServiceClient` 对象的任何呈现方法， `renderPDFForm`如 `(Deprecated) renderHTMLForm`、等等)。 此参数值通常为与表单合并的数据保留。 同样，将空字符串值传递给该 `formQuery` 参数。 通常，此参数需要一个指定表单设计名称的字符串值。
+要按值呈现表单，请将包含表单设计的`com.adobe.idp.Document`实例传递给呈现方法的`inDataDoc`参数（可以是`FormsServiceClient`对象的任何呈现方法，如`renderPDFForm`、`(Deprecated) renderHTMLForm`等）。 此参数值通常为与表单合并的数据保留。 同样，将空字符串值传递给`formQuery`参数。 通常，此参数需要一个指定表单设计名称的字符串值。
 
 >[!NOTE]
 >
->如果要在表单中显示数据，则必须在元素中指定数 `xfa:datasets` 据。 有关XFA体系结构的信息，请访 [问https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html)。
+>如果要在表单中显示数据，必须在`xfa:datasets`元素中指定数据。 有关XFA体系结构的信息，请访问[https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html)。
 
 **将表单数据流写入客户端Web浏览器**
 
@@ -99,7 +99,7 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 
 [创建呈现Forms的Web 应用程序](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## 使用Java API按值呈现表单 {#render-a-form-by-value-using-the-java-api}
+## 使用Java API {#render-a-form-by-value-using-the-java-api}按值呈现表单
 
 使用FormsAPI(Java)按值渲染表单：
 
@@ -109,48 +109,48 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 
 1. 创建Forms客户端API对象
 
-   * 创建包 `ServiceClientFactory` 含连接属性的对象。
-   * 使用对 `FormsServiceClient` 象的构造函数并传递该对 `ServiceClientFactory` 象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用`FormsServiceClient`对象的构造函数创建`ServiceClientFactory`对象。
 
 1. 参考表单设计
 
-   * 创建一 `java.io.FileInputStream` 个对象，该对象通过使用其构造函数并传递指定XDP文件位置的字符串值来表示要呈现的表单设计。
-   * 使用对 `com.adobe.idp.Document` 象的构造函数并传递该对 `java.io.FileInputStream` 象。
+   * 创建一个`java.io.FileInputStream`对象，该对象通过使用其构造函数并传递指定XDP文件位置的字符串值来表示要呈现的表单设计。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
 
 1. 按值呈现表单
 
-   调用对 `FormsServiceClient` 象的方 `renderPDFForm` 法并传递以下值：
+   调用`FormsServiceClient`对象的`renderPDFForm`方法并传递以下值：
 
    * 空字符串值。 （通常，此参数需要一个指定表单设计名称的字符串值。）
-   * 包 `com.adobe.idp.Document` 含表单设计的对象。 通常，此参数值是为与表单合并的数据保留的。
-   * 存 `PDFFormRenderSpec` 储运行时选项的对象。 这是可选参数，您可 `null` 以指定是否不想指定运行时选项。
-   * 包 `URLSpec` 含Forms服务所需的URI值的对象。
-   * 存储 `java.util.HashMap` 文件附件的对象。 这是可选参数，您可 `null` 以指定是否不想将文件附加到表单。
+   * 包含表单设计的`com.adobe.idp.Document`对象。 通常，此参数值是为与表单合并的数据保留的。
+   * 存储运行时选项的`PDFFormRenderSpec`对象。 这是可选参数，如果不想指定运行时选项，可以指定`null`。
+   * 一个`URLSpec`对象，它包含Forms服务所需的URI值。
+   * 存储文件附件的`java.util.HashMap`对象。 这是可选参数，如果不想将文件附加到表单，可以指定`null`。
 
-   该 `renderPDFForm` 方法返回 `FormsResult` 一个对象，该对象包含可写入客户端Web浏览器的表单数据流。
+   `renderPDFForm`方法返回一个`FormsResult`对象，该对象包含一个可写入客户端Web浏览器的表单数据流。
 
 1. 将表单数据流写入客户端Web浏览器
 
-   * 通过 `com.adobe.idp.Document` 调用对象的 `FormsResult` 方法创建 `getOutputContent` 对象。
-   * 通过调用对象的方 `com.adobe.idp.Document` 法获取对象的内容 `getContentType` 类型。
-   * 通过调 `javax.servlet.http.HttpServletResponse` 用对象的方法并传递对 `setContentType` 象的内容类型来设置对象的内 `com.adobe.idp.Document` 容类型。
-   * 创建一 `javax.servlet.ServletOutputStream` 个对象，该对象通过调用该对象的方法将表单数据流写 `javax.servlet.http.HttpServletResponse` 入客户端Web浏 `getOutputStream` 览器。
-   * 通过 `java.io.InputStream` 调用对象的 `com.adobe.idp.Document` 方法创建 `getInputStream` 对象。
-   * 创建一个字节数组并分配对象的 `InputStream` 大小。 调用 `InputStream` 对象的方 `available` 法以获取对象的大 `InputStream` 小。
-   * 通过调用对象的方法并将字节数组作 `InputStream` 为参数传 `read`递，用表单数据流填充字节数组。
-   * 调用对 `javax.servlet.ServletOutputStream` 象的方 `write` 法，将表单数据流发送到客户端Web浏览器。 将字节数组传递给 `write` 方法。
+   * 通过调用`FormsResult`对象“s `getOutputContent`方法创建`com.adobe.idp.Document`对象。
+   * 通过调用`getContentType`方法获取`com.adobe.idp.Document`对象的内容类型。
+   * 通过调用`setContentType`方法并传递`com.adobe.idp.Document`对象的内容类型，设置`javax.servlet.http.HttpServletResponse`对象的内容类型。
+   * 通过调用`javax.servlet.http.HttpServletResponse`对象的`getOutputStream`方法，创建一个`javax.servlet.ServletOutputStream`对象，用于将表单数据流写入客户端Web浏览器。
+   * 通过调用`com.adobe.idp.Document`对象的`getInputStream`方法创建`java.io.InputStream`对象。
+   * 创建一个字节数组并分配`InputStream`对象的大小。 调用`InputStream`对象的`available`方法以获取`InputStream`对象的大小。
+   * 通过调用`InputStream`对象的`read`方法并将字节数组作为参数进行传递，用表单数据流填充字节数组。
+   * 调用`javax.servlet.ServletOutputStream`对象的`write`方法，将表单数据流发送到客户端Web浏览器。 将字节数组传递给`write`方法。
 
 **另请参阅**
 
 [按价值呈现Forms](/help/forms/developing/rendering-forms.md)
 
-[快速开始（SOAP模式）: 使用Java API按值呈现](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[快速开始（SOAP模式）:使用Java API按值呈现](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 使用Web服务API按值呈现表单 {#render-a-form-by-value-using-the-web-service-api}
+## 使用Web服务API {#render-a-form-by-value-using-the-web-service-api}按值呈现表单
 
 使用FormsAPI（Web服务）按值渲染表单：
 
@@ -161,41 +161,41 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 
 1. 创建Forms客户端API对象
 
-   创建对 `FormsService` 象并设置身份验证值。
+   创建`FormsService`对象并设置身份验证值。
 
 1. 参考表单设计
 
-   * 使用对 `java.io.FileInputStream` 象的构造函数创建对象。 传递一个指定XDP文件位置的字符串值。
-   * 使用对 `BLOB` 象的构造函数创建对象。 该 `BLOB` 对象用于存储使用密码加密的PDF文档。
-   * 创建存储对象内容的字节数 `java.io.FileInputStream` 组。 您可以通过使用对象的方法获取对象的大 `java.io.FileInputStream` 小来确定字节数组的 `available` 大小。
-   * 通过调用对象的方法并传递字节数 `java.io.FileInputStream` 组，用流 `read` 数据填充字节数组。
-   * 通过调 `BLOB` 用对象的方法并 `setBinaryData` 传递字节数组来填充对象。
+   * 使用`java.io.FileInputStream`对象的构造函数创建&lt;a0/>对象。 传递一个指定XDP文件位置的字符串值。
+   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储使用密码加密的PDF文档。
+   * 创建存储`java.io.FileInputStream`对象内容的字节数组。 通过使用`available`方法获取`java.io.FileInputStream`对象的大小，可以确定字节数组的大小。
+   * 通过调用`java.io.FileInputStream`对象的`read`方法并传递字节数组，用流数据填充字节数组。
+   * 通过调用`setBinaryData`方法并传递字节数组来填充`BLOB`对象。
 
 1. 按值呈现表单
 
-   调用对 `FormsService` 象的方 `renderPDFForm` 法并传递以下值：
+   调用`FormsService`对象的`renderPDFForm`方法并传递以下值：
 
    * 空字符串值。 （通常，此参数需要一个指定表单设计名称的字符串值。）
-   * 包 `BLOB` 含表单设计的对象。 通常，此参数值是为与表单合并的数据保留的。
-   * 存 `PDFFormRenderSpec` 储运行时选项的对象。 这是可选参数，您可 `null` 以指定是否不想指定运行时选项。
-   * 包 `URLSpec` 含Forms服务所需的URI值的对象。
-   * 存储 `java.util.HashMap` 文件附件的对象。 这是可选参数，您可 `null` 以指定是否不想将文件附加到表单。
-   * 由方 `com.adobe.idp.services.holders.BLOBHolder` 法填充的空对象。 它用于存储呈现的PDF表单。
-   * 由方 `javax.xml.rpc.holders.LongHolder` 法填充的空对象。 （此参数存储表单中的页数。）
-   * 由方 `javax.xml.rpc.holders.StringHolder` 法填充的空对象。 （此参数存储区域设置值。）
-   * 将包含 `com.adobe.idp.services.holders.FormsResultHolder` 此操作结果的空对象。
+   * 包含表单设计的`BLOB`对象。 通常，此参数值是为与表单合并的数据保留的。
+   * 存储运行时选项的`PDFFormRenderSpec`对象。 这是可选参数，如果不想指定运行时选项，可以指定`null`。
+   * 一个`URLSpec`对象，它包含Forms服务所需的URI值。
+   * 存储文件附件的`java.util.HashMap`对象。 这是可选参数，如果不想将文件附加到表单，可以指定`null`。
+   * 由方法填充的空`com.adobe.idp.services.holders.BLOBHolder`对象。 它用于存储呈现的PDF表单。
+   * 由方法填充的空`javax.xml.rpc.holders.LongHolder`对象。 （此参数存储表单中的页数。）
+   * 由方法填充的空`javax.xml.rpc.holders.StringHolder`对象。 （此参数存储区域设置值。）
+   * 将包含此操作结果的空`com.adobe.idp.services.holders.FormsResultHolder`对象。
 
-   该 `renderPDFForm` 方法使用 `com.adobe.idp.services.holders.FormsResultHolder` 表单数据流填充作为最后一个参数值传递的对象，该表单数据流必须写入客户端Web浏览器。
+   `renderPDFForm`方法使用必须写入客户端Web浏览器的表单数据流填充作为最后一个参数值传递的`com.adobe.idp.services.holders.FormsResultHolder`对象。
 
 1. 将表单数据流写入客户端Web浏览器
 
-   * 通过 `FormResult` 获取对象数据成 `com.adobe.idp.services.holders.FormsResultHolder` 员的值创 `value` 建对象。
-   * 通过调 `BLOB` 用对象的方法创建包含表 `FormsResult` 单数据的 `getOutputContent` 对象。
-   * 通过调用对象的方 `BLOB` 法获取对象的内容 `getContentType` 类型。
-   * 通过调 `javax.servlet.http.HttpServletResponse` 用对象的方法并传递对 `setContentType` 象的内容类型来设置对象的内 `BLOB` 容类型。
-   * 创建一 `javax.servlet.ServletOutputStream` 个对象，该对象通过调用该对象的方法将表单数据流写 `javax.servlet.http.HttpServletResponse` 入客户端Web浏 `getOutputStream` 览器。
-   * 创建一个字节数组，并通过调用对 `BLOB` 象的方法来填 `getBinaryData` 充它。 此任务将对象的内 `FormsResult` 容分配给字节数组。
-   * 调用对 `javax.servlet.http.HttpServletResponse` 象的方 `write` 法，将表单数据流发送到客户端Web浏览器。 将字节数组传递给 `write` 方法。
+   * 通过获取`com.adobe.idp.services.holders.FormsResultHolder`对象的`value`数据成员的值，创建`FormResult`对象。
+   * 通过调用`FormsResult`对象的`getOutputContent`方法，创建包含表单数据的`BLOB`对象。
+   * 通过调用`getContentType`方法获取`BLOB`对象的内容类型。
+   * 通过调用`setContentType`方法并传递`BLOB`对象的内容类型，设置`javax.servlet.http.HttpServletResponse`对象的内容类型。
+   * 通过调用`javax.servlet.http.HttpServletResponse`对象的`getOutputStream`方法，创建一个`javax.servlet.ServletOutputStream`对象，用于将表单数据流写入客户端Web浏览器。
+   * 创建一个字节数组，并通过调用`BLOB`对象的`getBinaryData`方法填充它。 此任务将`FormsResult`对象的内容分配给字节数组。
+   * 调用`javax.servlet.http.HttpServletResponse`对象的`write`方法，将表单数据流发送到客户端Web浏览器。 将字节数组传递给`write`方法。
 
 **另请参阅**
 

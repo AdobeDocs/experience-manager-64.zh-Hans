@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 更改身份验证的评估顺序 {#change-the-order-of-evaluation-for-authentication}
+# 更改验证评估的顺序{#change-the-order-of-evaluation-for-authentication}
 
 如果配置了多个身份验证提供程序，则可以更改AEM表单评估它们以进行身份验证的顺序。 config.xml文件中列出的身份验证提供程序的顺序决定了身份验证的评估顺序。
 
@@ -44,7 +44,7 @@ ht-degree: 0%
     </node>
    ```
 
-   在 `<entry key="order" value="3" />`中，编辑每个节点的值以设置身份验证评估的顺序。
+   在`<entry key="order" value="3" />`中，编辑每个节点的值以设置身份验证评估的顺序。
 
 1. 要导入更新的文件，请在“用户管理”中，单击“配置”>“导入和导出配置文件”。
 1. 单击“浏览”以查找文件，单击“导入”，然后单击“确定”。

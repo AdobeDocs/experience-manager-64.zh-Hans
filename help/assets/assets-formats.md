@@ -147,7 +147,7 @@ Adobe Camera Raw图书馆使AEM Assets能摄取原始图像。 请参阅[Camera 
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | 选定 | 选定 | 选定 | 选定 | 选定 |
 | HTML |  |  |  |  |  |
-| RTF |  |  |  |  |  |
+| TTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
 | XLS |  |  |  |  |  |
 | XLSX |  |  |  |  |  |

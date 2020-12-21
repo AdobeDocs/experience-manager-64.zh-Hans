@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 添加、启用、修改或删除端点 {#adding-enabling-modifying-or-removing-endpoints}
+# 添加、启用、修改或删除端点{#adding-enabling-modifying-or-removing-endpoints}
 
-## 向服务添加端点 {#add-an-endpoint-to-a-service}
+## 向服务{#add-an-endpoint-to-a-service}添加端点
 
-端点只能添加到服务。 端点不能单独存在； 它必须与服务关联。
+端点只能添加到服务。 端点不能单独存在；它必须与服务关联。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 单击添加。
 
-## 启用或禁用端点 {#enable-or-disable-an-endpoint}
+## 启用或禁用端点{#enable-or-disable-an-endpoint}
 
 默认情况下，会自动启用新端点。 但是，如果已禁用某个端点，则需要启用该端点才能使其正常工作。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 1. 在管理控制台中，单击“服务”>“应用程序和服务”>“端点管理”。
 1. 在“端点管理”页面上，选中要启用或禁用的端点的复选框，然后单击“启用”或“禁用”。
 
-## 修改端点 {#modify-an-endpoint}
+## 修改端点{#modify-an-endpoint}
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 您也可以从“服务管理”页面执行此任务，方法是选择一个服务，然后单击“端点”选项卡。
 
-## 删除端点 {#remove-an-endpoint}
+## 删除端点{#remove-an-endpoint}
 
 1. 在管理控制台中，单击“服务”>“应用程序和服务”>“端点管理”。
 1. 在“端点管理”页面上，选中要删除的端点对应的复选框，然后单击“删除”。 终点不再显示。

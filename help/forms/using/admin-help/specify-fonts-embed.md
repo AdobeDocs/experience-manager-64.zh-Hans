@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果已为“输出”指定自定义XCI文件，则XCI文件中的嵌入字体选项将覆盖这些设置。 (请参 [阅指定输出的文件位置](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)。)
+>如果已为“输出”指定自定义XCI文件，则XCI文件中的嵌入字体选项将覆盖这些设置。 （请参阅[指定输出文件位置](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)。）
 
 1. 在管理控制台中，单击“服务”>“输出”。
 1. 在“字体嵌入设置”下的“始终嵌入字体”框中，键入要与表单嵌入的字体名称（以逗号分隔）。 您指定的字体仅嵌入在生成的表单中（如果在表单中使用）。 如果已在传递给服务的XCI文件中打开嵌入字体选项，则忽略此设置。 在这种情况下，PDF中使用的所有字体始终是嵌入的。

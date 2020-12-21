@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# 使用一组自适应表单创建自适应表单 {#create-an-adaptive-form-using-a-set-of-adaptive-forms}
+# 使用一组自适应表单创建自适应表单{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
 ## 概述 {#overview}
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 >
 >不能将基于XFA的自适应表单／片段用作子表单或父表单。
 
-## 幕后工作 {#behind-the-scenes}
+## 幕后花絮{#behind-the-scenes}
 
-您可以在父表单中添加基于XSD的自适应表单和片段。 父表单的结构与任何自适应表 [单相同](/help/forms/using/prepopulate-adaptive-form-fields.md)。 当您将自适应表单添加为子表单时，它会作为面板添加到父表单中。 绑定子表单的数据存储在父 `data`表单的 `afBoundData` XML模式部分的根下。
+您可以在父表单中添加基于XSD的自适应表单和片段。 父表单的结构与任何自适应表单[相同。 ](/help/forms/using/prepopulate-adaptive-form-fields.md)当您将自适应表单添加为子表单时，它会作为面板添加到父表单中。 绑定子表单的数据存储在父表单的XML模式的`afBoundData`部分的`data`根下。
 
 例如，您的客户填写申请表。 表单的前两个字段是名称和标识。 其XML为：
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 </afData>
 ```
 
-您可以在应用程序中添加另一个表单，让客户填写其办公地址。 子表单的模式根是 `officeAddress`。 应 `bindref` 用 `/application/officeAddress` 或 `/officeAddress`。 如果 `bindref`未提供，则子表单将添加为子 `officeAddress` 树。 请参阅下面表单的XML:
+您可以在应用程序中添加另一个表单，让客户填写其办公地址。 子表单的模式根为`officeAddress`。 应用`bindref` `/application/officeAddress`或`/officeAddress`。 如果未提供`bindref`，则将子表单添加为`officeAddress`子树。 请参阅下面表单的XML:
 
 ```xml
 <afData>
@@ -74,7 +74,7 @@ ht-degree: 0%
 </afData>
 ```
 
-如果插入另一个允许客户提供房地址的表单，则应 `bindref` 用 `/application/houseAddress or /houseAddress.`XML如下：
+如果插入另一个允许客户提供房地址的表单，则应用`bindref` `/application/houseAddress or /houseAddress.` XML如下：
 
 ```xml
 <afData>
@@ -98,9 +98,9 @@ ht-degree: 0%
 </afData>
 ```
 
-如果要保留与模式根（在本示例中）相同的子根 `Address`名称，请使用索引bindrefs。
+如果要保留与模式根（本例中为`Address`）相同的子根名称，请使用索引bindrefs。
 
-例如，应用bindrefs `/application/address[1]` 或 `/address[1]` 和 `/application/address[2]` 或 `/address[2]`。 表单的XML为：
+例如，应用bindrefs `/application/address[1]`或`/address[1]`和`/application/address[2]`或`/address[2]`。 表单的XML为：
 
 ```xml
 <afData>
@@ -124,22 +124,22 @@ ht-degree: 0%
 </afData>
 ```
 
-您可以使用属性更改自适应表单／片段的默认子 `bindRef` 树。 通过 `bindRef` 该属性，可以指定指向XML模式树结构中某个位置的路径。
+您可以使用`bindRef`属性更改自适应表单／片段的默认子树。 通过`bindRef`属性，可指定指向XML模式树结构中某个位置的路径。
 
-如果子表单未绑定，则其数据将存 `data`储在父表 `afUnboundData` 单的XML模式部分的根下。
+如果子表单未绑定，则其数据存储在父表单的XML模式的`afUnboundData`部分的`data`根下。
 
-您可以多次将自适应表单添加为子表单。 确保正确 `bindRef` 修改自适应表单的每个已使用实例指向数据根下的不同子根。
+您可以多次将自适应表单添加为子表单。 确保正确修改`bindRef`，以便自适应表单的每个已使用实例指向数据根下的不同子根。
 
 >[!NOTE]
 >
 >如果不同的表单／片段被映射到同一子根，则数据将被覆盖。
 
-## 使用资产浏览器将自适应表单添加为子表单 {#adding-an-adaptive-form-as-a-child-form-using-asset-browser}
+## 使用资产浏览器{#adding-an-adaptive-form-as-a-child-form-using-asset-browser}将自适应表单添加为子表单
 
 请执行以下步骤，使用资产浏览器将自适应表单添加为子表单。
 
 1. 在编辑模式下打开父表单。
-1. 在提要栏中，单击 **资产**![-资产浏览器](assets/assets-browser.png)。 在“资产”下 **，从下拉** 菜单中选择“自适应表单”。
+1. 在提要栏中，单击&#x200B;**资产** ![资产——浏览器](assets/assets-browser.png)。 在“资产”下，从下拉列表中选择&#x200B;**自适应表单**。
    [ ![在资产下选择自适应表单](assets/asset.png)](assets/asset-1.png)
 
 1. 拖放要作为子表单添加的自适应表单。

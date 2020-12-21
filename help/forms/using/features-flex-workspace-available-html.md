@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Flex工作区功能在AEM Forms工作区中不可用 {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
+# AEM Forms工作区{#features-of-flex-workspace-not-available-in-aem-forms-workspace}中不提供Flex工作区的功能
 
 AEM Forms工作区是全新的工作区。 以下是基于Flex的工作区的一些功能，这些功能在AEM Forms工作区中不可用。
 

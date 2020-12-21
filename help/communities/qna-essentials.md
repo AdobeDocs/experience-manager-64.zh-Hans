@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# 问题与答案基本工具 {#qna-essentials}
+# QnA Essentials {#qna-essentials}
 
 本页提供了有关使用问题与答案(QnA)论坛功能的基本信息。
 
-## 客户端必备工具 {#essentials-for-client-side}
+## 客户端{#essentials-for-client-side}的必备工具
 
 <table> 
  <tbody>
@@ -48,14 +48,14 @@ ht-degree: 1%
   </tr>
   <tr>
    <td> 属性</td> 
-   <td>查看问 <a href="working-with-qna.md">题与答案论坛功能</a></td> 
+   <td>请参阅<a href="working-with-qna.md"> QnA论坛功能</a></td> 
   </tr>
  </tbody>
 </table>
 
 * [客户端自定义](client-customize.md)
 
-## 服务器端必备工具 {#essentials-for-server-side}
+## 服务器端{#essentials-for-server-side}的必备工具
 
 * [问题与解答API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
@@ -65,21 +65,21 @@ ht-degree: 1%
 
 ### 问题与解答功能 {#qna-function}
 
-包含QnA功能的社区 [站点结构](functions.md#qna-function) ，将具有已 `QnA` 配置的组件，以及影响协调和标记的设置。 QnA函数支持标识特 [权成员用户组](users.md#privileged-members-group)。
+包含[QnA函数](functions.md#qna-function)的社区站点结构将具有已配置的`QnA`组件以及影响协调和标记的设置。 QnA函数支持标识[特权成员用户组](users.md#privileged-members-group)。
 
-### 访问问题与解答论坛帖子(UGC) {#accessing-qna-forum-posts-ugc}
+### 访问QnA论坛帖子(UGC){#accessing-qna-forum-posts-ugc}
 
 UGC应使用一种标准的协调方法进行仲裁。\
-请参 [阅调节用户生成的内容](moderate-ugc.md)。
+请参阅[协调用户生成的内容](moderate-ugc.md)。
 
-自AEM 6.1社区起，使用UGC的公 [用商店](working-with-srp.md) ，包括以程序方式访问UGC，而不管选择的存储选项（如ASRP、MSRP或JSRP）。
+自AEM 6.1社区起，对UGC使用[公用商店](working-with-srp.md)包括对UGC的程序化访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）。
 
 **UGC在存储库中的位置和格式可能会发生更改，但不会发出警告**。
 
 请参阅：
 
-* [存储资源提供程序概述](srp.md) -简介和存储库使用概述
-* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例
-* [使用SRP访问UGC](accessing-ugc-with-srp.md) —— 编码指南
+* [存储资源提供者概述](srp.md) -简介和存储库使用概述
+* [SRP和UGC Essentials](srp-and-ugc.md)  - SRP实用程序方法和示例
+* [使用SRP访问UGC](accessing-ugc-with-srp.md) -编码指南
 * [SocialUtils重构](socialutils.md) -将已弃用的实用程序方法映射到当前SRP实用程序方法
 

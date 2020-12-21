@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # 为IBM Content Manager配置连接器{#configuring-connector-for-ibm-content-manager}
 
-IBM Content Manager的Connector支持AEM表单与IBM Content Manager之间的通信。 有关其他背景信息，请参阅《服务参考》中的“Connectors for [ECM”](https://www.adobe.com/go/learn_aemforms_services_63)。
+IBM Content Manager的Connector支持AEM表单与IBM Content Manager之间的通信。 有关其他背景信息，请参阅[服务参考](https://www.adobe.com/go/learn_aemforms_services_63)中的“Connectors for ECM”。
 
-## 配置IBM Content Manager连接 {#configure-the-ibm-content-manager-connection}
+## 配置IBM Content Manager连接{#configure-the-ibm-content-manager-connection}
 
 1. 在管理控制台中，单击“服务”>“IBM Content Manager的连接器”。
 1. 在“Datastore Name”（数据存储名称）框中，输入要连接的IBM Content Manager数据存储的名称。 如果数据库是本地的，请输入数据库的名称。 如果数据库是远程数据库，请输入其别名。
@@ -31,7 +31,7 @@ IBM Content Manager的Connector支持AEM表单与IBM Content Manager之间的通
 1. （可选）在“别名连接字符串”框中，输入其他连接参数。 在大多数情况下，此框应为空。 有关其他信息，请参阅您的IBM文档。
 1. 单击保存。
 
-## 服务设置的验证 {#validation-of-service-settings}
+## 服务设置{#validation-of-service-settings}的验证
 
 如果输入了不正确的dataStore别名、用户名或密码，您将获得以下结果，具体取决于IBM Content Manager服务的Content Repository Connector当前是否正在运行：
 

@@ -130,7 +130,7 @@ AEM中提供以下Dynamic Media经典组件：
 
 ### 所有Dynamic Media经典组件{#settings-common-to-all-scene-components}的通用设置
 
-尽管配置选项不同，但以下各项对于所有[!UICONTROL Dynamic Media经典]组件是通用的：
+尽管配置选项不同，但以下是所有[!UICONTROL Dynamic Media经典]组件的通用选项：
 
 * **[!UICONTROL 文件]**
 引用浏览到要引用的文件。文件引用显示资产URL，但不一定是完整的Dynamic Media经典URL（包括URL命令和参数）。 不能在此字段中添加Dynamic Media经典URL命令和参数。 必须使用组件中的相应功能才能添加这些命令和参数。
@@ -369,5 +369,5 @@ Adobe DAM 和 WCM 会显示是否上传了主视频。但它们不会显示以�
 * **[!UICONTROL 发布]**
 状态您可以根据发布状态筛选资产： **[!UICONTROL 未]** 发布或 **[!UICONTROL 已发布]**。如果未选择任何&#x200B;**[!UICONTROL 发布状态]**，默认情况下AEM将搜索所有发布状态。
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![chlimage_1-248](assets/chlimage_1-247.png)
 

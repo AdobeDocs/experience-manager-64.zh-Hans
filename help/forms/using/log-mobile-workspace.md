@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# 登录AEM Forms应用程序 {#logging-in-to-aem-forms-app}
+# 登录AEM Forms应用程序{#logging-in-to-aem-forms-app}
 
 开始AEM Forms应用程序时，您首先需要提供登录凭据和AEM Forms服务器URL。
 
-## 开始应用程序 {#to-start-the-app}
+## 开始应用程序{#to-start-the-app}
 
 1. 点击移动设备上的AEM Forms应用程序图标。
 1. 要登录应用程序，请输入用户名、口令和AEM Forms服务器URL。
@@ -34,7 +34,7 @@ ht-degree: 0%
    >* 您可以选择要通过应用程序登录的AEM Forms服务器URL。
 
 
-登录应用程序时，您将转到“主页” [**屏&#x200B;**幕](/help/forms/using/home-screen.md)。
+登录应用程序时，您将转到&#x200B;[**主页**&#x200B;屏幕](/help/forms/using/home-screen.md)。
 
 >[!NOTE]
 >

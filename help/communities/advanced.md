@@ -18,23 +18,23 @@ ht-degree: 1%
 ---
 
 
-# 高级评分和徽章 {#advanced-scoring-and-badges}
+# 高级评分和徽章{#advanced-scoring-and-badges}
 
 ## 概述 {#overview}
 
-高级评分允许授予徽章，将会员标识为专家。 高级评分根据成员创建的 *内容* 的数量和质量分配积分，而基本评分则只根据创建的内容数量分配积分。
+高级评分允许授予徽章，将会员标识为专家。 高级评分根据成员创建的内容的数量&#x200B;*和*&#x200B;质量分配积分，而基本评分只根据创建的内容数量分配积分。
 
 此差异是由于用于计算得分的得分引擎。 基本评分引擎应用简单的数学。 高级评分引擎是一种自适应算法，它奖励通过主题的自然语言处理(NLP)推导的、贡献有价值和相关内容的活跃成员。
 
 除了内容相关性外，评分算法还考虑成员活动，如投票和答案百分比。 虽然基本评分包括定量评分，但高级评分会通过算法来使用这些评分。
 
-因此，高级评分引擎需要足够的数据来使分析有意义。 随着算法不断调整所创建内容的体积和质量，成为专家的成就阈值会不断被重新评估。 还有一个概念是 *成员* 较旧职位的衰败。 如果专家成员停止参与他们获得专家身份的主题，在某个预定点(请参 [阅评分引擎配置](#configurable-scoring-engine))，他们可能失去专家身份。
+因此，高级评分引擎需要足够的数据来使分析有意义。 随着算法不断调整所创建内容的体积和质量，成为专家的成就阈值会不断被重新评估。 还有成员较旧员额的&#x200B;*衰减*&#x200B;的概念。 如果专家成员停止参与他们获得专家身份的主题，在某个预定点（参见[评分引擎配置](#configurable-scoring-engine)），他们可能失去其专家身份。
 
 设置高级评分与基本评分基本相同：
 
-* 基本和高级评分和徽章规 [则以相同方式](implementing-scoring.md#apply-rules-to-content) 应用于内容
+* 基本和高级评分和徽章规则以相同方式应用于内容[](implementing-scoring.md#apply-rules-to-content)
    * 基本和高级评分和徽章规则可应用于相同内容
-* [为组件启用标记](implementing-scoring.md#enable-badges-for-component) 是通用的
+* [为组件启用标记](implementing-scoring.md#enable-badges-for-component) 一般
 
 设置评分和徽章规则的区别是：
 
@@ -46,21 +46,22 @@ ht-degree: 1%
 * 高级标记规则：
    * `badgingType` 设置为高 **[!UICONTROL 级]**
    * `badgingLevels` 设置为要授予的专家级别数
-   * 需要 `badgingPaths` 标记阵列而不是阈值阵列映射点到标记
+   * 需要`badgingPaths`阵列标记，而不是阈值阵列映射点到标记
 
 >[!NOTE]
 >
->要使用高级评分和徽章功能，请安 [装专家识别包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)。
+>要使用高级评分和徽章功能，请安装[专家标识包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)。
 
-## 可配置的评分引擎 {#configurable-scoring-engine}
+## 可配置的评分引擎{#configurable-scoring-engine}
 
 高级评分引擎提供OSGi配置，其参数影响高级评分算法。
 
 ![chlimage_1-260](assets/chlimage_1-260.png)
 
-* **[!UICONTROL 评分权重]**&#x200B;对于主题，指定在计算得分时应给予最高优先级的动词。 可输入一个或多个主题，但每个主题限 **于一个动词**。 请参 [阅主题和动词](implementing-scoring.md#topics-and-verbs)。
+* **[!UICONTROL 评分]**
+权重对于主题，指定在计算得分时应给予最高优先级的动词。可以输入一个或多个主题，但限于每个主题**一个动词。**&#x200B;请参阅[主题和动词](implementing-scoring.md#topics-and-verbs)。
 
-   以逗号 `topic,verb` 转义的方式输入。 例如：
+   输入为`topic,verb`，逗号转义。 例如：
 
    `/social/forum/hbs/social/forum\,ADD`
 
@@ -87,7 +88,7 @@ ht-degree: 1%
 
    默认值为 50。
 
-## 高级评分规则 {#advanced-scoring-rules}
+## 高级评分规则{#advanced-scoring-rules}
 
 在基本评分中，获得徽章所需的数量是已知的。
 
@@ -95,17 +96,17 @@ ht-degree: 1%
 
 如果某位成员在某个主题上获得了专家徽章，而该主题不再有效，则可能会由于时间的流逝而失去其徽章。
 
-### 评分类型 {#scoringtype}
+### ScoringType {#scoringtype}
 
-评分规则是评分子规则集，每个子规则都声明 `scoringType`。
+评分规则是评分子规则集，每个子规则声明`scoringType`。
 
-要调用高级评分引擎， `scoringType`应将其设置为 `advanced`。
+要调用高级评分引擎，`scoringType`应设置为`advanced`。
 
-请参 [阅评分子规则](implementing-scoring.md#scoring-sub-rules)。
+请参阅[评分子规则](implementing-scoring.md#scoring-sub-rules)。
 
 ![chlimage_1-261](assets/chlimage_1-261.png)
 
-### 秒词 {#stopwords}
+### 秒词{#stopwords}
 
 高级评分包会安装一个配置文件夹，其中包含一个秒词文件：
 
@@ -117,9 +118,9 @@ ht-degree: 1%
 
 如果秒词文件缺失，高级评分引擎将抛出错误。
 
-## 高级徽章规则 {#advanced-badging-rules}
+## 高级标记规则{#advanced-badging-rules}
 
-高级标记规则属性与基本标记 [规则属性不同](implementing-scoring.md#badging-rules)。
+高级标记规则属性与[基本标记规则属性](implementing-scoring.md#badging-rules)不同。
 
 除了将点与徽章图像关联之外，只需确定允许的专家数量和要授予的徽章图像。
 
@@ -130,11 +131,11 @@ ht-degree: 1%
 | badgingPath | String[] | （必需）标记图像的多值字符串，最高为badgingLevels的数量。 必须对徽章图像路径进行排序，以便将第一个路径授予最高专家。 如果标记数少于badgingLevels所指示的标记数，则数组中的最后一个标记将填充数组的其余部分。 示例条目：/etc/community/badging/images/expert-badge/jcr:content/expert.png |
 | 标记级别 | 长整型 | （可选）指定要授予的专业知识级别。 例如，如果应该有专家和几乎的专家（两个徽章），则值应设置为2。 badgingLevel应与为badgingPath属性列出的与专家相关的徽章图像的数量相对应。 默认值为1。 |
 | badgingType | 字符串 | （必需）将评分引擎标识为“基本”或“高级”。 如果设置为“高级”，则默认值为“基本”。 |
-| scoringRules | String[] | （可选）用于将标记规则限制为对列出的评分规则标识的事件进行评分的多值字符串。示例条目：/etc/community/scorning/rules/adv-comments-scoring默认值为无限制。 |
+| scoringRules | 字符串[] | （可选）用于将标记规则限制为对列出的评分规则标识的事件进行评分的多值字符串。示例条目：/etc/community/scorning/rules/adv-comments-scoring默认值为无限制。 |
 
-## 包含的规则和徽章 {#included-rules-and-badge}
+## 包含规则和徽章{#included-rules-and-badge}
 
-### 包含的徽章 {#included-badge}
+### 包含的徽章{#included-badge}
 
 此测试版中包含一个基于奖励的专家徽章：
 
@@ -154,11 +155,11 @@ ht-degree: 1%
 * [为组件启用标记](implementing-scoring.md#enable-badges-for-component)
 * [应用规则](implementing-scoring.md#apply-rules-to-content)
 
-### 包括评分规则和子规则 {#included-scoring-rules-and-sub-rules}
+### 包括评分规则和子规则{#included-scoring-rules-and-sub-rules}
 
-测试版包含两个用于论坛功能的高级评 [分规则](functions.md#forum-function) （每个规则分别用于论坛和论坛功能的评论组件）:
+测试版包含[论坛功能](functions.md#forum-function)的两个高级评分规则（论坛功能的论坛和评论组件各有一个规则）:
 
-1. /etc/community/scorning/rules/adv-comments-scorning
+1. /etc/community/scorning/rules/adv-comments-scoring
 
    * `subRules[]` =
 
@@ -180,21 +181,21 @@ ht-degree: 1%
 
 **注释:**
 
-* 节 `rules`点和 `sub-rules` 节点都属于类型 `cq:Page`
-* `subRules` 是规则节点上[] “字符串”类型的属 `jcr:content` 性
+* `rules`和`sub-rules`节点的类型均为`cq:Page`
+* `subRules` 是字符串类[] 型的属性，该规则的节 `jcr:content` 点
 * `sub-rules` 可能在各种评分规则之间共享
 * `rules` 应该位于具有读取权限的存储库位置，供所有人使用
    * 规则名称必须唯一，而不管位置
 
-### 包含徽章规则 {#included-badging-rules}
+### 包含标记规则{#included-badging-rules}
 
-该版本中包含两个与高级论坛和评论评分规则相 [对应的高级标记规则](#included-scoring-rules-and-sub-rules)。
+该版本中包含两个与[高级论坛和评论评分规则](#included-scoring-rules-and-sub-rules)对应的高级标记规则。
 
 * /etc/community/badging/rules/adv-comments-badging
 * /etc/community/badging/rules/adv-forums-badging
 
 **注释:**
 
-* `rules` 节点的类型 `cq:Page`
+* `rules` 节点的类型  `cq:Page`
 * `rules`应该位于具有读取权限的存储库位置，供所有人使用
    * 规则名称必须唯一，而不管位置

@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 处理停止的操作和分支 {#working-with-stalled-operations-and-branches}
+# 处理停止的操作和分支{#working-with-stalled-operations-and-branches}
 
 “停止的操作”页和“停止的分支”页显示已停止的进程。 当在执行操作期间或之后发生错误或由于进程中故意停止操作而发生错误时，进程可能会停止：
 
@@ -29,15 +29,15 @@ ht-degree: 0%
 
 对于每个停止的项目，列表显示以下信息：
 
-**操作名称或分支名称：** 操作或分支的名称。
+**工序名称或分支名** 称：工序或分支的名称。
 
-**状态：** 对于已停止的项目，始终处于停止状态。
+**状态：** 已停止的项目始终停止。
 
 **错误：** 问题的简短描述。
 
-**进程ID:** 表单工作流在实例化进程时分配的正整数（即，当用户或自动步骤启动进程时）。 您可以使用此标识符跟踪流程实例的生命周期。
+**进程ID:** 工作流在实例化进程时分配的正整数（即，当用户或自动步骤启动进程时）。您可以使用此标识符跟踪流程实例的生命周期。
 
-**进程名称——版本：** 在Workbench中分配的流程的名称。
+**流程名称——版** 本：在Workbench中分配的流程名称。
 
 **停止日期：** 操作或分支停止的日期和时间。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 * 选择一个错误以视图其详细信息。 选择错误时，将显示“错误详细信息”页。
 * 终止或重试停止的操作，或重试停止的分支。
 
-## 终止或重试停止的操作或分支 {#terminating-or-retrying-stalled-operations-or-branches}
+## 终止或重试停止的操作或分支{#terminating-or-retrying-stalled-operations-or-branches}
 
 在“停止的操作”页面上，您可以终止显示的进程实例。
 
@@ -56,17 +56,17 @@ ht-degree: 0%
 
 当您重试某个操作时，将向Forms工作流发送重新启动该操作的请求。 如果导致进程停止的错误已修复，且重试请求成功，则进程从其已停止的点开始再次运行，其状态将更改为“正在运行”。 如果无法重新启动该操作，则它将保持停止状态，您可能需要终止它。
 
-### 终止停止的操作 {#terminate-a-stalled-operation}
+### 终止停止的操作{#terminate-a-stalled-operation}
 
 1. 在管理控制台中，单击“服务”>“表单工作流”>“停止的操作错误”。
 1. 在“停止的操作”页面上，选择要终止的项目，然后单击“终止”。
 
-### 重试停止的操作或分支 {#retry-a-stalled-operation-or-branch}
+### 重试停止的操作或分支{#retry-a-stalled-operation-or-branch}
 
 1. 在管理控制台中，单击“服务”>“表单工作流”，然后单击“停止的操作错误”或“停止的分支错误”。
 1. 在“停止的操作”或“停止的分支”页面上，选择要重试的项目，然后单击“重试”。
 
-## 查看有关停止操作或分支的错误详细信息 {#viewing-error-details-about-stalled-operations-or-branches}
+## 查看有关停止操作或分支的错误详细信息{#viewing-error-details-about-stalled-operations-or-branches}
 
 如果从“停止的操作”或“停止的分支”页上的停止项列表中选择错误，将显示“错误详细信息”页，其中显示有关错误的详细信息，有助于您对问题进行疑难解答。
 
@@ -74,14 +74,14 @@ ht-degree: 0%
 
 您还可以从“错误详细信息”页面终止或重试已停止的操作，并重试已停止的分支。
 
-## 升级用户不存在时，进程不会停止 {#process-does-not-stall-when-escalation-user-does-not-exist}
+## 当升级用户不存在{#process-does-not-stall-when-escalation-user-does-not-exist}时，进程不会停止
 
 在AEM forms User服务中的“分配任务”操作配置为在特定时间段后将任务升级给其他用户，并且“分配任务”操作执行后但升级发生之前，将删除升级用户时，会出现错误。
 
 出现这种情况时，流程和任务的状态在配置的升级时间不会更改，并且升级不会发生，但流程不会停止。 服务器日志中显示以下消息：
 
-&quot;为提升指定的主体对于taskID无效： *数字*，指定的队列： *数字*。”
+&quot;为提升指定的主体对于taskID无效：*number*，指定队列：*number*。&quot;
 
 如果在生成任务之前(在执行分配任务操作之前)删除了升级用户，则进程将暂停或引发InvalidPrincipal异常事件。
 
-为防止出现此问题，在删除用户时，搜索属于该用户的任务并相应地处理这些数据。 (See [Working with tasks](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+为防止出现此问题，在删除用户时，搜索属于该用户的任务并相应地处理这些数据。 (请参阅[使用任务](/help/forms/using/admin-help/tasks.md#working-with-tasks)。)

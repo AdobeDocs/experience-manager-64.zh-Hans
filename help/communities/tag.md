@@ -24,15 +24,15 @@ ht-degree: 3%
 
 发布环境中应用的标记的基础结构与在创作环境中应用于内容的标记的基础结构相同，如页面和资产：
 
-* 有关创 [建和管](../../help/sites-administering/tags.md) 理标 [记的信息，请参阅管理标](tag-ugc.md) 记和标记用户生成的内容(UGC)。
+* 有关创建和管理标记的信息，请参阅[管理标记](../../help/sites-administering/tags.md)和[标记用户生成的内容](tag-ugc.md)(UGC)。
 
-* See [Tagging for Developers](../../help/sites-developing/tags.md) for information about the [tagging framework](../../help/sites-developing/framework.md) as well as including and extending tags in [custom applications](../../help/sites-developing/building.md).
+* 有关[标记框架](../../help/sites-developing/framework.md)以及在[自定义应用程序](../../help/sites-developing/building.md)中包括和扩展标记的信息，请参阅[开发人员标记](../../help/sites-developing/tags.md)。
 
-* 有关 [如何向页面添加组件以在发布环境](tagcloud.md)`social tag cloud` 中突出显示应用于UGC的标记的作者信息，请参阅使用社交标记云。
+* 有关作者如何向页面添加`social tag cloud`组件以在发布环境中突出显示应用于UGC的标记的信息，请参阅[使用社交标记云](tagcloud.md)。
 
-* 有关 [目录的标记资源](tag-resources.md) ，请参阅标记启用资源。
+* 有关为目录标记资源的信息，请参阅[标记Enablement Resources](tag-resources.md)。
 
-配置社区站点或以下功能之 [一时](sites-console.md#tagging) ，可启用UGC标记：
+在配置[社区站点](sites-console.md#tagging)或下列功能之一时，可以启用UGC标记：
 
 * [博客](blog-feature.md)
 * [日历](calendar.md)
@@ -40,7 +40,7 @@ ht-degree: 3%
 * [论坛](forum.md)
 * [问题与解答](working-with-qna.md)
 
-## 客户端必备工具 {#essentials-for-client-side}
+## 客户端{#essentials-for-client-side}的必备工具
 
 ### 社交标记云 {#social-tag-cloud}
 
@@ -68,14 +68,14 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong>属性</strong></td> 
-   <td>请参 <a href="tagcloud.md">阅使用社交标记云</a></td> 
+   <td>请参阅<a href="tagcloud.md">使用社交标记云</a></td> 
   </tr>
  </tbody>
 </table>
 
 * [客户端自定义](client-customize.md)
 
-## 服务器端必备工具 {#essentials-for-server-side}
+## 服务器端{#essentials-for-server-side}的必备工具
 
 * [社交标记云API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
@@ -83,8 +83,8 @@ ht-degree: 3%
 
 * [服务器端自定义](server-customize.md)
 
-## 标记搜索 {#tag-searching}
+## 标记搜索{#tag-searching}
 
-从功 [能包1](deploy-communities.md#latestfeaturepack) (FP1)开始，使用标签标题执行标 [签搜索](../../help/sites-developing/framework.md#tag-characteristics)。
+从[功能包1](deploy-communities.md#latestfeaturepack)(FP1)开始，使用[标记标题](../../help/sites-developing/framework.md#tag-characteristics)执行标记搜索。
 
-在FP1之前，使用标记id执 [行搜索](../../help/sites-developing/framework.md#tagid)。
+在FP1之前，使用[标记id](../../help/sites-developing/framework.md#tagid)执行搜索。

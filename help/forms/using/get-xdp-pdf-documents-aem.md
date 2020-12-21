@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 在AEM Forms获取XDP和PDF文档 {#getting-xdp-and-pdf-documents-in-aem-forms}
+# 在AEM Forms获取XDP和PDF文档{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## 概述 {#overview}
 
@@ -27,17 +27,17 @@ ht-degree: 0%
 * PDF forms
 * 文档(平面PDF文档)
 
-您可以单独上传支持的资产类型，也可以上传为ZIP存档。 您只能在ZIP归档中与XFA `Resource`表单一起上传该类型的资产。
+您可以单独上传支持的资产类型，也可以上传为ZIP存档。 您只能将`Resource`类型的资产上传到ZIP归档中的XFA表单旁边。
 
 >[!NOTE]
 >
->确保您是组成员， `form-power-users` 以便能够上传XDP文件。 请与管理员联系以成为组成员。
+>确保您是`form-power-users`组的成员，以便能够上传XDP文件。 请与管理员联系以成为组成员。
 
-## 上传表单 {#uploading-forms}
+## 上传表单{#uploading-forms}
 
-1. 通过访问登录AEM Forms用户界面 `https://[server]:[port]/aem/forms.html`。
+1. 通过访问`https://[server]:[port]/aem/forms.html`登录AEM Forms用户界面。
 1. 导览至要上传表单的文件夹或包含表单的文件夹。
-1. 在操作工具栏中，点按 **创建>文件上传**。
+1. 在操作工具栏中，点按&#x200B;**创建>文件上传**。
 
    ![“创建”下的“从本地存储文件”选项](assets/step.png)
 
@@ -61,21 +61,21 @@ ht-degree: 0%
 
 上传完成后，后台工作流会根据资产的预览为每个资产生成缩略图。 资产的较新版本（如果已上传）会覆盖现有资产。
 
-### 保护模式 {#protected-mode}
+### 保护模式{#protected-mode}
 
 AEM Forms服务器允许您运行JavaScript代码。 恶意JavaScript代码可能会损害AEM Forms环境。 保护模式限制AEM Forms仅从受信任的资源和位置运行XDP文件。 AEM FormsUI中提供的所有XDP都被视为可信资产。
 
 默认情况下，受保护模式处于打开状态。 如有必要，您可以禁用保护模式：
 
-1. 以管理员身份登录到AEM Web Console。 URL为 `https://[server]:[port]/system/console/configMgr`
+1. 以管理员身份登录到AEM Web Console。 URL为`https://[server]:[port]/system/console/configMgr`
 1. 打开移动Forms配置进行编辑。
-1. 取消选择“保护模式”选项，然后单击“ **保存**”。 保护模式被禁用。
+1. 取消选择“保护模式”选项，然后单击“保存&#x200B;**”。**&#x200B;保护模式被禁用。
 
-## 更新引用的XFA表单 {#updating-referenced-xfa-forms}
+## 更新引用的XFA表单{#updating-referenced-xfa-forms}
 
 在AEM Forms,XFA表单模板可以由自适应表单或其他XFA表单模板引用。 此外，模板可以引用资源或其他XFA模板。
 
-引用XFA的自适应表单的字段与XFA中的可用字段绑定。 更新表单模板时，关联的自适应表单会尝试与XFA同步。 有关详细信息，请参 [阅将自适应表单与关联的XFA同步](/help/forms/using/synchronizing-adaptive-forms-xfa.md)。
+引用XFA的自适应表单的字段与XFA中的可用字段绑定。 更新表单模板时，关联的自适应表单会尝试与XFA同步。 有关详细信息，请参阅[将自适应表单与关联的XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)同步。
 
 删除表单模板会损坏从属的自适应表单或表单模板。 这种自适应表单有时被非正式地称为脏表单。 在AEM Forms用户界面中，您可以通过以下两种方式找到脏表单。
 
@@ -85,7 +85,7 @@ AEM Forms服务器允许您运行JavaScript代码。 恶意JavaScript代码可�
 
 ![更新关联的XFA后出现不同步自适应表单的警告](assets/dirtyaf.png)
 
-将保留一个标志，以指示自适应表单是否脏。 此信息可在表单属性页面上找到，并与表单元数据一起提供。 只有对于脏自适应表单，元数据属性才 `Model Refresh` 会显示 `Recommended` 值。
+将保留一个标志，以指示自适应表单是否脏。 此信息可在表单属性页面上找到，并与表单元数据一起提供。 只有对于脏自适应表单，元数据属性`Model Refresh`才显示`Recommended`值。
 
 ![指示自适应表单与XFA模型不同步](assets/model-refresh.png)
 

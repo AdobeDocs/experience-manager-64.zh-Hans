@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 流程报告简介 {#introduction-to-process-reporting}
+# 流程报告{#introduction-to-process-reporting}简介
 
 ![过程报告](assets/process-reporting.png)
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 其他流程报告提供一个界面，用于运行临时查询并将自定义报告视图集成到流程报告用户界面中。
 
-有关受支持浏览器的列表，请参阅 [AEM Forms支持的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)。
+有关受支持浏览器的列表，请参阅[AEM Forms支持的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)。
 
 流程报告建立在以下模块上：
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 * 将流程数据发布到嵌入式流程报告库
 * 为视图报告提供基于浏览器的用户界面
 
-## 主要功能 {#key-capabilities}
+## 关键功能{#key-capabilities}
 
-### 始终在线报告 {#always-on-reporting}
+### 始终打开报告{#always-on-reporting}
 
 ![站点管理](assets/site-management.png)
 
@@ -45,11 +45,11 @@ ht-degree: 0%
 
 流程报告还提供以CSV格式导出报表和查询数据的选项。
 
-### 临时报告 {#adhoc-reports}
+### 临时报告{#adhoc-reports}
 
 ![打印和颜色](assets/print-&-colour.png)
 
-使用过滤器获取特定视图的数据。
+使用过滤器获取特定视图数据。
 
 您可以按ID、持续时间、开始和结束日期、流程启动器等搜索流程或任务。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 然后，您可以保存要在以后的日期或时间运行的报表过滤器。
 
-### 进程/任务历史 {#process-task-history}
+### 进程/任务历史记录{#process-task-history}
 
 ![文件管理](assets/file-management.png)
 

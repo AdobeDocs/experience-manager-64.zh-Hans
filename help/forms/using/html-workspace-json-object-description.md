@@ -17,7 +17,7 @@ ht-degree: 4%
 ---
 
 
-# AEM Forms工作区JSON对象描述 {#aem-forms-workspace-json-object-description}
+# AEM Forms工作区JSON对象描述{#aem-forms-workspace-json-object-description}
 
 在AEM Forms工作区中使用的JSON对象如下所述。
 
@@ -33,7 +33,7 @@ ht-degree: 4%
    <td><strong>评论</strong></td> 
   </tr>
   <tr>
-   <td>名称</td> 
+   <td>name</td> 
    <td>F</td> 
    <td>类别名</td> 
   </tr>
@@ -43,14 +43,14 @@ ht-degree: 4%
    <td>类别ID<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>说明<br type="_moz" /> </td> 
+   <td>描述<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>类别描述<br type="_moz" /> </td> 
+   <td>类别说明<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>parentOid<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>包含父类别的oid<br type="_moz" /> </td> 
+   <td>包含父类别<br type="_moz" />的oid </td> 
   </tr>
   <tr>
    <td>startPointsList<br type="_moz" /> </td> 
@@ -60,7 +60,7 @@ ht-degree: 4%
   <tr>
    <td>categoryList</td> 
    <td>T</td> 
-   <td>包含列表类别的直接子类别<br type="_moz" /> </td> 
+   <td>包含类别的直接子类别的列表<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -81,7 +81,7 @@ ht-degree: 4%
    | serializedImageTicket | F | 它包含与起始点对应的图像票证。 此图像票证用于起始点的imageUrl字段，以从服务器获取起始点的图像。 |
    | serviceName | F | 它包含起始点服务的名称。 |
    | startpointId | F | 它包含起始点的id。 |
-   | isFavorite | T | 表示起点是否为收藏点。 如果起始点是最喜爱的，则返回true；如果返回false，则返回false。 |
+   | isFavorite | T | 表示起点是否为收藏点。 如果起始点是最喜爱的，则返回true；如果返回，则返回false。 |
    | isDefaultImage | T | 指示是否有为处理指定的图像。 如果没有与进程关联的图像，则返回True；否则返回False。 |
    | 任务 | T | 它包含调用起始点时创建的任务。 |
    | imageUrl | T | 它包含与起始点对应的图像的url。 |
@@ -94,13 +94,13 @@ ht-degree: 4%
  <tbody>
   <tr>
    <td>属性<br /> </td> 
-   <td>仅限客户端<br /> </td> 
+   <td>仅客户端<br /> </td> 
    <td>评论<br /> </td> 
   </tr>
   <tr>
    <td>classOfTask</td> 
    <td>F</td> 
-   <td>当任务为lc8任务为其他“标准”时，任务类为“LC8”。<br /> </td> 
+   <td>当任务为lc8任务时，任务类为“LC8”，否则为“标准”。<br /> </td> 
   </tr>
   <tr>
    <td>completeTime<br /> </td> 
@@ -128,14 +128,14 @@ ht-degree: 4%
    <td>它包含有关当前任务分配的详细信息。<br /> </td> 
   </tr>
   <tr>
-   <td>截止时间<br /> </td> 
+   <td>deadline<br /> </td> 
    <td>F</td> 
-   <td>它包含任务到期的时间戳。<br /> </td> 
+   <td>它包含任务到达其截止日期的时间戳。<br /> </td> 
   </tr>
   <tr>
-   <td>说明<br /> </td> 
+   <td>描述<br /> </td> 
    <td>F</td> 
-   <td>它包含任务的描述。<br /> </td> 
+   <td>它包含任务的说明。<br /> </td> 
   </tr>
   <tr>
    <td>displayName<br /> </td> 
@@ -155,37 +155,37 @@ ht-degree: 4%
   <tr>
    <td>isLocked<br /> </td> 
    <td>F</td> 
-   <td>如果任务已锁定，则为true。<br /> </td> 
+   <td>如果任务已锁定，则为True。<br /> </td> 
   </tr>
   <tr>
    <td>isMustOpenToComplete<br /> </td> 
    <td>F</td> 
-   <td>如果必须打开任务表单才能完成任务，则为true。<br /> </td> 
+   <td>如果必须打开任务表单才能完成任务，则为True。<br /> </td> 
   </tr>
   <tr>
    <td>isOpenFullScreen<br /> </td> 
    <td>F</td> 
-   <td>如果为true，则在打开任务时，表单将首次显示完整屏幕。<br /> </td> 
+   <td>如果为true，则打开任务时，表单将首次显示完整屏幕。<br /> </td> 
   </tr>
   <tr>
    <td>isRouteSelectionRequired<br /> </td> 
    <td>F</td> 
-   <td>如果为true，则必须选择路由才能完成任务。<br /> </td> 
+   <td>如果为true，则必须选择路由以完成任务。<br /> </td> 
   </tr>
   <tr>
    <td>isShowAttachments<br /> </td> 
    <td>F</td> 
-   <td>如果是，则显示附件。<br /> </td> 
+   <td>如果为true，则显示附件。<br /> </td> 
   </tr>
   <tr>
    <td>isStartTask<br /> </td> 
    <td>F</td> 
-   <td>如果为True，则从任务点创建开始。<br /> </td> 
+   <td>如果为true，则从任务点创建开始。<br /> </td> 
   </tr>
   <tr>
    <td>isVisible<br /> </td> 
    <td>F</td> 
-   <td>如果任务在工作区中可见，则为true。<br /> </td> 
+   <td>如果工作区中显示任务，则为True。<br /> </td> 
   </tr>
   <tr>
    <td>nextReminder<br /> </td> 
@@ -195,12 +195,12 @@ ht-degree: 4%
   <tr>
    <td>优先级<br /> </td> 
    <td>F</td> 
-   <td>它包含任务优先级。<br /> 1 =最高优先级<br /> 2 =高优先级<br /> 3 =正常优先级<br /> 4 =低优先级<br /> 5 =最低优先级<br /> </td> 
+   <td>它包含任务优先级。<br /> 1 =最高优先级<br /> 2 =高优先<br /> 级3 =正常优先级<br /> 4 =低优先级<br /> 5 =最低优先级<br /> </td> 
   </tr>
   <tr>
    <td>processInstanceId</td> 
    <td>F</td> 
-   <td>任务所属的进程实例的ID。<br /> </td> 
+   <td>其任务是其一部分的进程实例的ID。<br /> </td> 
   </tr>
   <tr>
    <td>processInstanceStatus<br /> </td> 
@@ -215,7 +215,7 @@ ht-degree: 4%
   <tr>
    <td>routeList<br /> </td> 
    <td>F</td> 
-   <td>它包含与列表相关的路由任务。 用户可以通过从路由任务中选择任一路由来完成列表。<br /> </td> 
+   <td>它包含与列表相关的路由任务。 用户可以通过从路由任务中选择任何一条路由来完成列表。<br /> </td> 
   </tr>
   <tr>
    <td>selectedRoute<br /> </td> 
@@ -223,9 +223,9 @@ ht-degree: 4%
    <td>它包含完成任务时所选路由的名称。<br /> </td> 
   </tr>
   <tr>
-   <td>serializedImageTicket<br /> </td> 
+   <td>seriadedImageTicket<br /> </td> 
    <td>F</td> 
-   <td>它包含与任务对应的图像票证。 此图像票证用于任务的imageUrl字段，以从服务器获取任务图像。<br /> <br /> </td> 
+   <td>它包含与任务对应的图像票证。 此图像票证用于任务的imageUrl字段，以从服务器获取任务映像。<br /> <br /> </td> 
   </tr>
   <tr>
    <td>serviceName<br /> </td> 
@@ -255,7 +255,7 @@ ht-degree: 4%
   <tr>
    <td>taskACL<br /> </td> 
    <td>F</td> 
-   <td>是访问控制列表任务。<br /> </td> 
+   <td>它是访问控制列表任务。<br /> </td> 
   </tr>
   <tr>
    <td>taskId<br /> </td> 
@@ -270,12 +270,12 @@ ht-degree: 4%
   <tr>
    <td>formUrl<br /> </td> 
    <td>T</td> 
-   <td>它包含任务的表单URL。<br /> </td> 
+   <td>它包含任务的表单url。<br /> </td> 
   </tr>
   <tr>
    <td>taskFormType<br /> </td> 
    <td>T</td> 
-   <td>它包含任务表单类型。 使用此字段，任务在客户端上以pdf形式呈现，如swf表单等。<br /> </td> 
+   <td>它包含任务表单类型。 使用此字段，任务在客户端上呈现为pdf形式、swf表单等。<br /> </td> 
   </tr>
   <tr>
    <td>showDirectActions<br /> </td> 
@@ -285,7 +285,7 @@ ht-degree: 4%
   <tr>
    <td>showACLAactions<br /> </td> 
    <td>T</td> 
-   <td>如果为真，则向前、查阅、共享等操作在工作区中可见。<br /> </td> 
+   <td>如果为true，则在工作区中可看到向前、查阅、共享等操作。<br /> </td> 
   </tr>
   <tr>
    <td>supportsOffline<br /> </td> 
@@ -300,22 +300,22 @@ ht-degree: 4%
   <tr>
    <td>readerSubmitOptions<br /> </td> 
    <td>T</td> 
-   <td>此对象包含用于通过阅读器提交pdf表单的选项，以防pdf表单不包含提交按钮。<br /> </td> 
+   <td>此对象包含用于在pdf表单不包含提交按钮时通过reader提交pdf表单的选项。<br /> </td> 
   </tr>
   <tr>
    <td>isDefaultImage<br /> </td> 
    <td>T</td> 
-   <td>指示是否有为处理指定的图像。 如果没有与进程关联的图像，则返回True；否则返回False。<br /> </td> 
+   <td>指示是否有为处理指定的图像。 如果没有与进程关联的图像，则为True。<br /> </td> 
   </tr>
   <tr>
    <td>historyTaskList<br /> </td> 
    <td>T</td> 
-   <td>它包含列表,任务在任务详细信息的历史记录选项卡中使用。<br /> </td> 
+   <td>它包含列表任务，这些任务在详细信息的历史记录选项卡中使用。<br /> </td> 
   </tr>
   <tr>
    <td>isOwner<br /> </td> 
    <td>T</td> 
-   <td>如果已登录用户是任务的所有者，则为true。<br /> </td> 
+   <td>如果登录用户是任务的所有者，则为True。<br /> </td> 
   </tr>
   <tr>
    <td>availableCommands<br /> </td> 
@@ -330,7 +330,7 @@ ht-degree: 4%
   <tr>
    <td>availableCommands.taskACLCommands<br /> </td> 
    <td>T</td> 
-   <td>它包含向前、共享和查阅等命令(如果任务可用)。<br /> </td> 
+   <td>它包含向前、共享和查询等命令(如果任务可用)。<br /> </td> 
   </tr>
   <tr>
    <td>availableCommands.otherCommands<br /> </td> 
@@ -368,14 +368,14 @@ ht-degree: 4%
    <td>这是第三方应用程序表单的配置。<br /> </td> 
   </tr>
   <tr>
-   <td>submitted<br /> </td> 
+   <td>已提交<br /> </td> 
    <td>T</td> 
-   <td>如果提交任务，则为True。<br /> </td> 
+   <td>如果提交了任务，则为True。<br /> </td> 
   </tr>
   <tr>
-   <td>attachments<br /> </td> 
+   <td>附件<br /> </td> 
    <td>T</td> 
-   <td>列表任务的附件。<br /> </td> 
+   <td>列表的附件。<br /> </td> 
   </tr>
   <tr>
    <td>个指定任务<br /> </td> 
@@ -399,10 +399,10 @@ ht-degree: 4%
   <tr>
    <td>isDefault <br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果队列是登录用户的默认队列，则为True；否则为False。<br type="_moz" /> </td> 
+   <td>如果队列是登录用户的默认队列，则为True，否则为False。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>名称<br type="_moz" /> </td> 
+   <td>name<br type="_moz" /> </td> 
    <td>F</td> 
    <td>队列所有者的名称。<br type="_moz" /> </td> 
   </tr>
@@ -414,7 +414,7 @@ ht-degree: 4%
   <tr>
    <td>类型</td> 
    <td>F</td> 
-   <td>它包含队列的类型。<br /> 0 —— 用户队列。<br /> 1. 共享队列。<br /> 2. 组队列。<br type="_moz" /> </td> 
+   <td>它包含队列的类型。<br /> 0 —— 用户队列。<br /> 1. 共享队列。<br /> 2.组队列。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>查询</td> 
@@ -451,14 +451,14 @@ ht-degree: 4%
    <td>如果用户不在办公室，则没有主要指定项，则为true。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>isOutOffice<br type="_moz" /> </td> 
+   <td>isOutOfOffice<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果用户不在办公室，则为true。<br type="_moz" /> </td> 
+   <td>如果用户不在办公室，则为True。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>outOfficeDesignate<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>它包含用户被分配为主要指定用户的详细信息。<br type="_moz" /> </td> 
+   <td>它包含被用户指定为主指定用户的详细信息。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processSpecificDistans<br type="_moz" /> </td> 
@@ -466,24 +466,24 @@ ht-degree: 4%
    <td>它包含特定于流程的指定对象数组。 在每个特定于进程的指定对象中，processName包含进程的名称；如果没有为相应进程分配用户，则isNotDesignated为true；如果没有为相应进程分配用户的其他详细信息，则userDesignated为null。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>processes<br type="_moz" /> </td> 
+   <td>进程<br type="_moz" /> </td> 
    <td>T</td> 
    <td>它包含用户可用的所有进程的列表。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>initialOutOfficeSettings<br type="_moz" /> </td> 
+   <td>initialOutOfOfficeSettings<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>它包含最初获取的用户的初始离职设置。<br type="_moz" /> </td> 
+   <td>它包含最初获取的用户的初始办公室外设置。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>outOfOfficeSettings<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>它包含修改的办公室外设置。<br type="_moz" /> </td> 
+   <td>它包含已修改的办公室外设置。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>它包含登录用户搜索到的直至日期的用户的列表。<br type="_moz" /> </td> 
+   <td>它包含登录用户搜索到日期的用户的列表。<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -500,9 +500,9 @@ ht-degree: 4%
    <td><strong>评论</strong></td> 
   </tr>
   <tr>
-   <td>说明<br type="_moz" /> </td> 
+   <td>描述<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>流程实例的说明<br type="_moz" /> </td> 
+   <td>进程实例的说明<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>启动器</td> 
@@ -527,7 +527,7 @@ ht-degree: 4%
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>0 =启动<br /> 1 =运行<br /> 2 =完成3 =完成<br /> 4 =终止<br /> 5 =终止6 =暂停<br /><br /><br /><br /> 7 =暂停8 =取消暂停<br type="_moz" /> </td> 
+   <td>0 =启动<br /> 1 =运行<br /> 2 =完成<br /> 3 =完成<br /> 4 =终止<br /> 5 =终止<br /> 6 =暂停<br /> 7 =暂停<br /> 8 =取消暂停<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td> 
@@ -542,7 +542,7 @@ ht-degree: 4%
   <tr>
    <td>processVariables<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>进程变量对象的数组。 每个进程变量对象包含进程变量名称、进程变量值和进程变量类型。<br type="_moz" /> </td> 
+   <td>进程变量对象的数组。 每个进程变量对象都包含进程变量名称、进程变量值和进程变量类型。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>任务列表<br type="_moz" /> </td> 
@@ -564,7 +564,7 @@ ht-degree: 4%
   <tr>
    <td>processMajorVersion<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>流程的主要版本。<br type="_moz" /> </td> 
+   <td>进程的主要版本。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processMinorVersion<br type="_moz" /> </td> 
@@ -579,12 +579,12 @@ ht-degree: 4%
   <tr>
    <td>processTitle<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>流程的标题。<br type="_moz" /> </td> 
+   <td>进程的标题。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processInstanceList<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>列表此进程的进程实例。<br type="_moz" /> </td> 
+   <td>此进程的进程实例列表。<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -628,7 +628,7 @@ ht-degree: 4%
   <tr>
    <td>queueOwnerId<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>当前任务所有者的ID。<br type="_moz" /> </td> 
+   <td>任务的当前所有者的ID。<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -657,22 +657,22 @@ ht-degree: 4%
   <tr>
    <td>canClaim<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果为真，则可声称任务。<br type="_moz" /> </td> 
+   <td>如果为true，则可声明任务。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canConsult<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果是真的，可以咨询任务。<br type="_moz" /> </td> 
+   <td>如果为true，则可咨询任务。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canForward<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果为真，可以转发任务。<br type="_moz" /> </td> 
+   <td>如果为true，则可转发任务。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>canShare<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果为真，则可以共享任务。<br type="_moz" /> </td> 
+   <td>如果为true，则可共享任务。<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -704,7 +704,7 @@ ht-degree: 4%
    <td>添加附件的用户的名称。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>说明<br type="_moz" /> </td> 
+   <td>描述<br type="_moz" /> </td> 
    <td>F</td> 
    <td>附件说明。<br type="_moz" /> </td> 
   </tr>
@@ -729,7 +729,7 @@ ht-degree: 4%
    <td>如果为true，则备注为扩展（长）备注。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>permissions<br type="_moz" /> </td> 
+   <td>权限<br type="_moz" /> </td> 
    <td>F</td> 
    <td>与附件关联的权限。 allowRead字段用于读取权限，allowWrite用于写入权限，allowDelete用于删除权限。<br type="_moz" /> </td> 
   </tr>
@@ -746,22 +746,22 @@ ht-degree: 4%
   <tr>
    <td>类型<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>“类型”(Type)是文件的附件，“类型”(Type)是注释的注释。<br type="_moz" /> </td> 
+   <td>“类型”是文件的附件，“类型”是注释。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>格式化的CreationDate<br type="_moz" /> </td> 
+   <td>formattedCreationDate<br type="_moz" /> </td> 
    <td>T</td> 
    <td>它根据用户的UI设置包含附件创建日期。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>格式化描述<br type="_moz" /> </td> 
+   <td>formattedDescription<br type="_moz" /> </td> 
    <td>T</td> 
    <td>格式化附件说明。 用于在AEM Forms工作区中显示附件说明中显示的特殊字符。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedFileName<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>格式化的附件名称。 用于在AEM Forms工作区中显示附件名称中存在的特殊字符。 这仅供注释。<br type="_moz" /> </td> 
+   <td>格式化的附件名称。 用于在AEM Forms工作区中显示附件名称中存在的特殊字符。 仅用于注释。<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -778,7 +778,7 @@ ht-degree: 4%
    <td><strong>评论</strong></td> 
   </tr>
   <tr>
-   <td>address<br type="_moz" /> </td> 
+   <td>地址<br type="_moz" /> </td> 
    <td>F</td> 
    <td>用户的地址。<br type="_moz" /> </td> 
   </tr>
@@ -788,14 +788,14 @@ ht-degree: 4%
    <td>用户的通用名称。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>说明<br type="_moz" /> </td> 
+   <td>描述<br type="_moz" /> </td> 
    <td>F</td> 
    <td>用户的说明。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>directGroup成员关系<br type="_moz" /> </td> 
+   <td>directGroupMemberships<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>列表用户组。<br type="_moz" /> </td> 
+   <td>用户组的列表。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>displayName<br type="_moz" /> </td> 
@@ -808,9 +808,9 @@ ht-degree: 4%
    <td>用户的电子邮件ID。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>isOutOffice<br type="_moz" /> </td> 
+   <td>isOutOfOffice<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>如果用户不在办公室，则为true。<br type="_moz" /> </td> 
+   <td>如果用户不在办公室，则为True。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>lastName<br type="_moz" /> </td> 
@@ -820,25 +820,25 @@ ht-degree: 4%
   <tr>
    <td>firstName<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>用户的名字。<br type="_moz" /> </td> 
+   <td>用户的名。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>类<br type="_moz" /> </td> 
+   <td>oid<br type="_moz" /> </td> 
    <td>F</td> 
    <td>用户的ID。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>组织<br type="_moz" /> </td> 
+   <td>org<br type="_moz" /> </td> 
    <td>F</td> 
    <td>用户的组织名称。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>邮政地址<br type="_moz" /> </td> 
+   <td>postalAddress<br type="_moz" /> </td> 
    <td>F</td> 
    <td>用户的邮政地址。<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>telephone<br type="_moz" /> </td> 
+   <td>电话<br type="_moz" /> </td> 
    <td>F</td> 
    <td>用户的联系号码。<br type="_moz" /> </td> 
   </tr>

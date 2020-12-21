@@ -18,9 +18,9 @@ ht-degree: 1%
 ---
 
 
-# 指定XCI配置选项 {#specifying-xci-configuration-options}
+# 指定XCI配置选项{#specifying-xci-configuration-options}
 
-Forms允许您指定将用于渲染的自定义XCI文件。 (请参阅 [配置Forms的位置](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)。) 默认情况下，Forms会覆盖XCI文件中指定的一些选项，包括：
+Forms允许您指定将用于渲染的自定义XCI文件。 (请参阅[配置Forms的位置](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)。) 默认情况下，Forms会覆盖XCI文件中指定的一些选项，包括：
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

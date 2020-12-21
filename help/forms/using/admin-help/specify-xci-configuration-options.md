@@ -18,9 +18,9 @@ ht-degree: 1%
 ---
 
 
-# 指定XCI配置选项 {#specify-xci-configuration-options}
+# 指定XCI配置选项{#specify-xci-configuration-options}
 
-输出允许您指定用于渲染的自定义XCI文件。 (请参 [阅指定输出的文件位置](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)。) 默认情况下，“输出”将覆盖XCI文件中指定的一些选项，包括：
+输出允许您指定用于渲染的自定义XCI文件。 （请参阅[指定输出文件位置](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)。） 默认情况下，“输出”将覆盖XCI文件中指定的一些选项，包括：
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

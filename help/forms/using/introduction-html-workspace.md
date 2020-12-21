@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms工作区简介 {#introduction-to-aem-forms-workspace}
+# AEM Forms工作区简介{#introduction-to-aem-forms-workspace}
 
 Forms工作流程通过自动化和提供对关键文档和与表单相关的业务流程的可见性，提高了组织效率。 使用流程管理模块，您可以构建可在线或离线访问的简化的端到端工作流，包括人员、系统、内容和业务规则。Forms工作流程包括AEM Forms工作区。 AEM Forms工作区新增了扩展和集成工作区的功能，并使其更加用户友好。
 

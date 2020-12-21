@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 清除流程数据 {#purging-process-data}
+# 清除进程数据{#purging-process-data}
 
 调用长寿命进程时生成的进程数据可能过大，导致AEM表单性能降低，并且使用了不必要的磁盘空间。 最好在不再需要记录时清除流程数据。 AEM表单提供了几种清除流程数据的方法：
 
-* 您可以使用管理控制台执行与长期流程相关的过时记录一次性清除，或计划定期自动清除。 (请参 [阅从作业管理器数据库清除记录](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database)。)
-* 您可以使用AEM forms Java API和Web服务API以编程方式清除与长期进程相关的进程数据。 (请参阅使用AEM表单进行编 [程中的“清除流程数](https://www.adobe.com/go/learn_aemforms_programming_63)据”。)
-* 使用流程清除工具根据流程名称和其他参数清除流程。 有关详细信息，请参阅流程清除工具自述文件，该文件位 *[于aem_forms root]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt中。
+* 您可以使用管理控制台执行与长期流程相关的过时记录一次性清除，或计划定期自动清除。 （请参阅[从作业管理器数据库清除记录](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database)。）
+* 您可以使用AEM forms Java API和Web服务API以编程方式清除与长期进程相关的进程数据。 (请参阅使用AEM表单进行编程[中的“清除流程数据”。)](https://www.adobe.com/go/learn_aemforms_programming_63)
+* 使用流程清除工具根据流程名称和其他参数清除流程。 有关详细信息，请参阅进程清除工具自述文件，该文件位于&#x200B;*[aem_forms root]*\sdk\misc\Foundation\ProcessPurgeTool\ReadMe.txt中。
 

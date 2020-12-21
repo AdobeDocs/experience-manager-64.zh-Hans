@@ -18,27 +18,27 @@ ht-degree: 0%
 ---
 
 
-# 设置当天的消息 {#setting-the-message-of-the-day}
+# 设置日{#setting-the-message-of-the-day}的消息
 
 您可以设置要在Workspace用户界面的欢迎页面上显示的消息。
 
 如果需要，您可以使用AdobeFlash®播放器支持的HTML标签来设置文本外观的格式：
 
-* &lt;a>锚点标签
-* &lt;b>粗体标记
-* &lt;br>中断标签
-* &lt;font>字体标签
-* &lt;img>图像标记
-* &lt;i>斜体标签
-* &lt;li>列表项标签
-* &lt;p>段落标记
-* &lt;span> Span标签
-* &lt;textformat>文本格式标签
-* &lt;u>下划线标签
+* &lt;a> 锚点标签&lt;/a>
+* &lt;b> 粗体标记&lt;/b>
+* &lt;br> 中断标签
+* &lt;font> 字体标签&lt;/font>
+* &lt;img> 图像标签
+* &lt;i> 斜体标签&lt;/i>
+* &lt;li> 列表项标签
+* &lt;p> 段落标记
+* &lt;span> Span标签&lt;/span>
+* &lt;textformat> 文本格式标签
+* &lt;u> 下划线标签&lt;/u>
 
-有关支持的标记的详细信息，请参阅《Flex语 `htmlText` 言参考》中TextField类属 [性的定义](https://www.adobe.com/support/documentation/en/flex/)。
+有关支持的标记的详细信息，请参阅[Flex语言参考](https://www.adobe.com/support/documentation/en/flex/)中TextField类的`htmlText`属性的定义。
 
-## 设置当天的消息 {#set-the-message-of-the-day}
+## 设置日{#set-the-message-of-the-day}的消息
 
 1. 在管理控制台中，单击“服务”>“工作区”>“当天消息”。
 1. 在“日消息”框中，提供要在欢迎屏幕上显示的文本。

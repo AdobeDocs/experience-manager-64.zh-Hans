@@ -18,15 +18,15 @@ ht-degree: 3%
 ---
 
 
-# 社交图基础 {#social-graph-essentials}
+# 社交图基本信息{#social-graph-essentials}
 
-社区成员既能遵守 [活动](essentials-activities.md) ，又能遵守。
+社区成员遵循[活动](essentials-activities.md)并遵循的能力通过两个组件建立：
 
-组 `follow`件必须与其他资源关联，并且该关联已针对社区站点中的现有社区成员和功能 [建立](overview.md#communitiessites)。
+`follow`组件必须与其他资源关联，并且已经为[社区站点](overview.md#communitiessites)中的现有社区成员和功能建立了此关联。
 
-组 `following`件列表当前成员之后或当前成员后面的成员。 在为社区站点建立的用户用户档案中，包含成员之间关系的社交图。
+`following`组件列表当前成员之后或当前成员后面的成员。 在为社区站点建立的用户用户档案中，包含成员之间关系的社交图。
 
-## 客户端必备工具 {#essentials-for-client-side}
+## 客户端{#essentials-for-client-side}的必备工具
 
 ### 关注 {#following}
 
@@ -54,20 +54,20 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong> 属性</strong></td> 
-   <td>请参 <a href="socialgraph.md">阅使用社交图</a></td> 
+   <td>请参阅<a href="socialgraph.md">使用社交图</a></td> 
   </tr>
   <tr>
-   <td><strong> 可选<br /> 属性</strong></td> 
+   <td><strong> 可选<br />属性</strong></td> 
    <td>
     <ul> 
      <li>名称: <strong><code>outgoing</code></strong></li> 
      <li>类型：布尔型</li> 
      <li>值:<br /> 
       <ul> 
-       <li><i>true - </i>组件 <code>following</code> 将列表当前已登录成员的成员 <code>follows</code></li> 
-       <li><i>false </i>-组 <code>following</code> 件将列表当前已 <code>follow </code>登录成员的成员</li> 
+       <li><i>true - </i>组 <code>following</code> 件将列表当前登录成员的成员 <code>follows</code></li> 
+       <li><i>false  </i>-组 <code>following</code> 件将列表当 <code>follow </code>前登录成员的成员</li> 
       </ul> </li> 
-    </ul> <p>如果属 <i>性缺失</i> ，则默认值为true。 当前，无法在创作模式下使用编辑对话框设置此属性。 必须使用CRXDE|Lite将该属性添 <code>following </code>加到节 <a href="../../help/sites-developing/developing-with-crxde-lite.md">点的实例中</a>。</p> </td> 
+    </ul> <p>如果属性缺失，则默认为<i>true</i>。 当前，无法在创作模式下使用编辑对话框设置此属性。 必须使用<a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>将属性添加到<code>following </code>节点的实例中。</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -76,13 +76,13 @@ ht-degree: 3%
 
 | **resourceType** | social/socialgraph/components/hbs/following |
 |---|---|
-| [**可包含&#x200B;**](scf.md#add-or-include-a-communities-component) | 否 |
+| [**可包含**](scf.md#add-or-include-a-communities-component) | 否 |
 | **模板** | /libs/social/socialgraph/components/hbs/following/following.hbs |
 | **css** | /libs/social/socialgraph/components/hbs/following/clientlibs/following.css |
 
 * [客户端自定义](client-customize.md)
 
-## 服务器端必备工具 {#essentials-for-server-side}
+## 服务器端{#essentials-for-server-side}的必备工具
 
 * [社交图API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 

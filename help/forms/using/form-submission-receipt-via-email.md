@@ -17,39 +17,39 @@ ht-degree: 1%
 ---
 
 
-# 通过电子邮件发送表单提交确认 {#sending-a-form-submission-acknowledgement-via-email}
+# 通过电子邮件{#sending-a-form-submission-acknowledgement-via-email}发送表单提交确认
 
-## 自适应表单数据提交 {#adaptive-form-data-submission}
+## 自适应表单数据提交{#adaptive-form-data-submission}
 
-自适应表单为将表单数据提交到不同端点提 [供了多](/help/forms/using/configuring-submit-actions.md) 个现成的提交操作工作流。
+自适应表单提供了多种现成的[提交操作](/help/forms/using/configuring-submit-actions.md)工作流，用于将表单数据提交到不同的端点。
 
-例如，“电子邮件 **操作** ”提交操作在成功提交自适应表单时发送电子邮件。 还可以将其配置为发送电子邮件中的表单数据和PDF。
+例如，**电子邮件操作**&#x200B;提交操作会在自适应表单成功提交时发送电子邮件。 还可以将其配置为发送电子邮件中的表单数据和PDF。
 
 本文详细介绍了在自适应表单上启用“电子邮件”操作的步骤及其提供的不同配置。
 
 >[!NOTE]
 >
->您还可以使用“电 **子邮件PDF** ”动作以PDF附件的形式通过电子邮件发送完成的表单。 此操作的可用配置选项与“电子邮件”操作的可用选项相同。 “通过电子邮件发送PDF”操作仅对基于XFA的自适应表单可用
+>您还可以使用&#x200B;**“通过电子邮件发送PDF”操作**&#x200B;以PDF附件的形式通过电子邮件发送完成的表单。 此操作的可用配置选项与“电子邮件”操作的可用选项相同。 “通过电子邮件发送PDF”操作仅对基于XFA的自适应表单可用
 
-## Email action {#email-action}
+## 电子邮件操作{#email-action}
 
 使用“电子邮件”操作，作者可以在自适应表单成功提交时自动向一个或多个收件人发送电子邮件。
 
 >[!NOTE]
 >
->要使用电子邮件操作，您需要按照配置邮件服务中的说明配 [置AEM邮件服务](/help/sites-administering/notification.md#configuring-the-mail-service)。
+>要使用“电子邮件”操作，您需要按照[配置邮件服务](/help/sites-administering/notification.md#configuring-the-mail-service)中的说明配置AEM邮件服务。
 
-### 在自适应表单上启用电子邮件操作 {#enabling-email-action-on-an-adaptive-form}
+### 在自适应表单{#enabling-email-action-on-an-adaptive-form}上启用电子邮件操作
 
 1. 在编辑模式下打开自适应表单。
 
-1. 单 **击** “自适应表 **单”工具栏的** 开始旁边的“编辑”。
+1. 单击自适应表单&#x200B;**工具栏的**&#x200B;开始旁的&#x200B;**编辑**。
 
    此时将打开编辑组件对话框。
 
    ![自适应表单的编辑组件对话框](assets/start_of_adp_form.png)
 
-1. 选择提 **交操作** 选项卡，并从提 **交操作下拉** 列表中选择电子邮件操作。
+1. 选择&#x200B;**提交操作**&#x200B;选项卡，并从提交操作下拉列表中选择&#x200B;**电子邮件操作**。
 
    该选项卡显示用于为当前表单配置电子邮件操作的选项。
 
@@ -59,35 +59,35 @@ ht-degree: 1%
 
    在“主题”和“电子邮件”模板字段中分别指定电子邮件的主题和正文。
 
-   您还可以在字段中指定变量占位符，在这种情况下，当最终用户成功提交表单时，将处理字段的值。 有关详细信息，请参 [阅使用自适应表单字段名称动态创建电子邮件内容](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p)。
+   您还可以在字段中指定变量占位符，在这种情况下，当最终用户成功提交表单时，将处理字段的值。 有关详细信息，请参阅[使用自适应表单字段名称动态创建电子邮件内容](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p)。
 
    如果表单包含文件附件，并且您希望将这些文件附加到电子邮件中，请选择“包含附件”。
 
    >[!NOTE]
    >
-   >如果选择“电子邮 **件PDF”动作**，则必须选择“包括附件”选项。
+   >如果选择&#x200B;**“通过电子邮件发送PDF”操作**，则必须选择“包括附件”选项。
 
 1. 单击&#x200B;**确定**&#x200B;以保存更改。
 
-### 使用自适应表单字段名称动态创建电子邮件内容 {#using-adaptive-form-field-names-to-dynamically-create-email-content}
+### 使用自适应表单字段名称动态创建电子邮件内容{#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
 自适应表单中的字段名称称为占位符，用户提交表单后，将替换为该字段的值。
 
 在“电子邮件操作”选项卡中，您可以使用在执行操作时处理的占位符。 这意味着用户提交表单时会生成电子邮件的标题（如Mailto、CC、密送、主题）。
 
-要定义占位符，请在“提 `${<field name>}` 交操作”选项卡的字段中指定。
+要定义占位符，请在“提交操作”选项卡的字段中指定`${<field name>}`。
 
-例如，如果表单包含用 **于捕获用户电子邮** 件ID的名为的“电子邮件地址”字段 `email_addr`，则可以在“邮件到”、“抄送”或“密件抄送”字段中指定以下内容。
+例如，如果表单包含名为`email_addr`的&#x200B;**电子邮件地址**&#x200B;字段，用于捕获用户的电子邮件ID，则可以在“邮件地址”、“抄送”或“密件抄送”字段中指定以下内容。
 
 `${email_addr}`
 
-当用户提交表单时，将向表单字段中输入的电子邮件ID `email_addr` 发送电子邮件。
+当用户提交表单时，将向表单的`email_addr`字段中输入的电子邮件ID发送电子邮件。
 
 >[!NOTE]
 >
->您可以在字段的“编辑”对话 **框中** ，找到字段的名称。
+>您可以在字段的&#x200B;**编辑**&#x200B;对话框中找到字段的名称。
 
-变量占位符还可用于“主题” **和“电子** 邮 **件”模板字段** 。
+变量占位符还可用于&#x200B;**Subject**&#x200B;和&#x200B;**电子邮件模板**&#x200B;字段。
 
 例如：
 

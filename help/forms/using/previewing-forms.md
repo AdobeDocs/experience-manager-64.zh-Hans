@@ -16,7 +16,7 @@ ht-degree: 2%
 ---
 
 
-# 预览表单 {#previewing-a-form}
+# 预览表单{#previewing-a-form}
 
 ## 概述 {#overview}
 
@@ -38,7 +38,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>PDF表单</td> 
-   <td>PDF预览和预览数据<br /> </td> 
+   <td>PDF预览和预览（使用数据<br />） </td> 
   </tr>
   <tr>
    <td>自适应表单</td> 
@@ -46,18 +46,18 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>表单模板</td> 
-   <td>PDF预览，带数据的PDF预览,HTML预览，带数据的HTML预览<br /> </td> 
+   <td>PDF预览、带数据的PDF预览、HTML预览、带数据的HTML预览<br /> </td> 
   </tr>
  </tbody>
 </table>
 
-## 预览表单 {#previewing-a-form-1}
+## 预览表单{#previewing-a-form-1}
 
-1. 选择要预览的资产，然后单击操作工 ![具栏中的“预览](assets/aem6forms_preview.png) aem6forms_预览”。
+1. 选择要预览的资产，然后单击操作工具栏中的预览![aem6forms_预览](assets/aem6forms_preview.png)。
 
    >[!NOTE]
    >
-   >要选择资产，请从默认的卡列表切换到视图视图。 单 ![击aem6forms_viewlist](assets/aem6forms_viewlist.png) 或 ![aem6forms_viewcard](assets/aem6forms_viewcard.png) 以切换视图。
+   >要选择资产，请从默认的卡列表切换到视图视图。 单击![aem6forms_viewlist](assets/aem6forms_viewlist.png)或![aem6forms_viewcard](assets/aem6forms_viewcard.png)切换视图。
 
 1. 单击预览列表可显示适用于选定资产类型的可能预览选项。 单击所需的选项，以在新选项卡中呈现选定的资产。
 
@@ -69,8 +69,8 @@ ht-degree: 2%
 
 ## 使用数据预览 {#preview-with-data}
 
-选择“ **预览**”时，您可以查看表单中输入的实际数据的外观。 预览“数据”选项允许您上传包含示例用户数据的XML。 示例用户数据用于以您选择的格式填充预览表单。
+当您选择&#x200B;**带数据的预览**&#x200B;时，您可以看到表单中输入的实际数据的外观。 预览“数据”选项允许您上传包含示例用户数据的XML。 示例用户数据用于以您选择的格式填充预览表单。
 
-1. 选择资产，单击“预览 ![aem6forms_预览”](assets/aem6forms_preview.png)，然后选择“ **预览与数据”**。
+1. 选择资产，单击预览![aem6forms_预览](assets/aem6forms_preview.png)，然后选择预览&#x200B;**数据**。
 1. 在“预览表单”对话框中，将FormData作为XML文件提供。 单击“预览”以使用XML中的合并数据呈现表单。
 

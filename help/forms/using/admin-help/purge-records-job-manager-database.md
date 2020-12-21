@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 从作业管理器数据库清除记录 {#purge-records-from-the-job-manager-database}
+# 从作业管理器数据库{#purge-records-from-the-job-manager-database}中清除记录
 
 调用长寿命进程时生成的进程数据可能过大，导致AEM表单性能降低，并且使用了不必要的磁盘空间。 最好在不再需要记录时清除流程数据。
 
-您可以使用管理控制台一次性清除过时的记录，或计划常规自动清除。 清除过时记录的其他方法在清除 [过程数据中讨论](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)。
+您可以使用管理控制台一次性清除过时的记录，或计划常规自动清除。 在[清除过程数据](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)中讨论了清除过时记录的其他方法。
 
 **访问“作业清除”调度程序页**
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 **配置自动清除计划**
 
 1. 选择“重复间隔”，并指定两次清除之间的天数或周数。
-1. 在“清除已完成的记录筛选器”区域中，指定记录被视为已过时并准备清除的天数或周数。 无法将值设置为 `0`。
+1. 在“清除已完成的记录筛选器”区域中，指定记录被视为已过时并准备清除的天数或周数。 不能将值设置为`0`。
 
    >[!NOTE]
    >

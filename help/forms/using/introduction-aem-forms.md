@@ -17,11 +17,11 @@ ht-degree: 3%
 ---
 
 
-# Introduction to AEM Forms {#introduction-to-aem-forms}
+# AEM Forms简介{#introduction-to-aem-forms}
 
-有关AEM Forms的最新功能和增强功能的信 [息，请参阅AEM Forms的新增功能](/help/forms/using/whats-new.md)。
+有关AEM Forms的最新功能和增强功能的信息，请参见[AEM Forms的新增功能](/help/forms/using/whats-new.md)。
 
-## 关于AEM Forms {#about-aem-forms}
+## 关于AEM Forms{#about-aem-forms}
 
 Adobe Experience Manager(AEM)提供易于使用的解决方案，用于创建、管理、发布和更新复杂的数字表单，同时与后端流程、业务规则和数据相集成。
 
@@ -31,11 +31,11 @@ AEM Forms利用并扩展您在XFA表单和AdobeLiveCycle解决方案中的现有
 
 在大型企业中，表单通常只创建一次，并通过复制到内容管理系统来重复使用。 保持大型表单数据库的最新状态并使其可发现，可能是一个相当大的挑战。 AEM提供可自定义的Forms门户，确保客户在Web和移动渠道中查找和访问所需的表单。
 
-AEM Forms提供的表单管理工具不仅允许您管理自适应表单，还允许您管理XFA表单、PDF forms和相关资产。 有关详细信息，请参 [阅管理表单的简介](/help/forms/using/introduction-managing-forms.md)。
+AEM Forms提供的表单管理工具不仅允许您管理自适应表单，还允许您管理XFA表单、PDF forms和相关资产。 有关详细信息，请参阅[管理表单的简介](/help/forms/using/introduction-managing-forms.md)。
 
 ![](do-not-localize/4th-draft.gif)
 
-### 关键功能 {#key-capabilities}
+### 关键功能{#key-capabilities}
 
 总之，AEM Forms公司提供如下功能等强大的表单管理功能，可减少手动操作流程并提高客户满意度。
 
@@ -47,7 +47,7 @@ AEM Forms提供的表单管理工具不仅允许您管理自适应表单，还�
 * 与Adobe Document Cloud电子签名服务或Scribble集成，以电子方式签署包含机密信息的文档
 * 自动表单发布功能以及通过多个渠道提供及时、个性化和一致的通信的能力
 
-## AEM表单类型 {#aem-form-types}
+## AEM表单类型{#aem-form-types}
 
 AEM Forms允许您扩展新表单和现有表单以创建：
 
@@ -79,7 +79,7 @@ PDF forms可以脱机填写、保存在本地以及下次联机时发送的表�
 * 支持文件附件
 * 与HTML Workspace集成以实现数据捕获
 
-## 脱机数据收集 {#offline-data-collection-br}
+## 脱机数据收集{#offline-data-collection-br}
 
 提交表单数据后，Adobe Experience Manager将表单数据与现有系统、业务规则和所需人员相连。
 
@@ -99,7 +99,7 @@ AEM Forms提供Forms工作区，这是一款移动应用程序，可将您的数
 
 ![](do-not-localize/3rd-draft.gif)
 
-## 个性化交流 {#personalized-communication}
+## 个性化通信{#personalized-communication}
 
 高效的自助数字体验的一个重要组成部分是传达及时的个性化信息，让用户随时随地通过任何设备访问这些信息。 个性化、及时的通信可以提高转化率和用户满意度。
 
@@ -111,11 +111,11 @@ AEM Forms提供Forms工作区，这是一款移动应用程序，可将您的数
 
 * 通信创作环境，支持模板、内容块、业务规则等
 * 文档转换和组件
-* 支持通过多个渠道（包括Web、电子邮件和纸张）进行按需或批量文档投放
+* 支持通过多个渠道（包括Web、电子邮件和纸张）进行点播或批量文档投放
 * 具有更改历史记录的审计跟踪
 * 支持数字签名以验证内容完整性和签署方身份
 * 文档AEM Forms安全附加组件，包括加密、使用策略、跟踪和审核
 
 ![](do-not-localize/layout-02.png)
-**图：** *简化的个性化沟通工作流程*
+**图：简化的** *个性化交流工作流程*
 

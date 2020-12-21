@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 配置业务日历 {#configuring-business-calendars}
+# 配置业务日历{#configuring-business-calendars}
 
-*业务日历* (例如，法定假日、周末和公司关机日)为您的组织定义业务和非业务日。 使用业务日历时，AEM表单在执行特定日期计算时会跳过非业务日。 在Workbench中，您可以指定是将业务日历用于与用户相关的事件(如任务提醒、截止日期和升级)，还是用于与用户无关的操作(如计时器事件和等待服务)。
+*业* 务日历定义组织的业务和非业务日(例如法定假日、周末和公司关机日)。使用业务日历时，AEM表单在执行特定日期计算时会跳过非业务日。 在Workbench中，您可以指定是将业务日历用于与用户相关的事件(如任务提醒、截止日期和升级)，还是用于与用户无关的操作(如计时器事件和等待服务)。
 
 例如，任务提醒被配置为在任务被分配给用户后的三个工作日内发出。 任务是星期四分配的。 但是，接下来的三天不是工作日，因为星期五是全国假日，接下来的两天是周末。 因此，提醒函将于下周三发出。
 
@@ -28,39 +28,39 @@ ht-degree: 0%
 >
 >使用业务日历计算日期和时间时，AEM表单使用运行它的服务器的日期和时间，而不调整时区之间的差异。 例如，如果任务提醒计划于上午10:00在伦敦运行的服务器上发生，但收到提醒的用户位于纽约市，则用户将在当地时间上午5:00收到提醒。
 
-## 使用默认业务日历 {#using-the-default-business-calendar}
+## 使用默认业务日历{#using-the-default-business-calendar}
 
-AEM forms提供默认的业务日 *历(名为“内置日历*”)，将星期六和星期日指定为非工作日。 如果组织中的所有用户有相同的非工作日，您可以更新默认业务日历以适合您的组织。 仅使用默认业务日历时，您无需在用户管理中启用业务日历或提供任何映射。 如果未定义其他业务日历，AEM表单将使用默认业务日历。
+AEM forms提供默认的业务日历（名为&#x200B;*内置日历*），将星期六和星期日指定为非工作日。 如果组织中的所有用户有相同的非工作日，您可以更新默认业务日历以适合您的组织。 仅使用默认业务日历时，您无需在用户管理中启用业务日历或提供任何映射。 如果未定义其他业务日历，AEM表单将使用默认业务日历。
 
-## 设置多个业务日历 {#setting-up-multiple-business-calendars}
+## 设置多个业务日历{#setting-up-multiple-business-calendars}
 
 如果您组织中的某些用户有不同的非工作日，您可以定义多个业务日历并配置允许用户运行时解析业务日历的映射。
 
-### 定义多个业务日历 {#define-multiple-business-calendars}
+### 定义多个业务日历{#define-multiple-business-calendars}
 
 1. 确定如何将相应的业务日历与用户关联。 有两种方法可将业务日历与用户关联：
 
-   **组成员关系：** 您可以根据用户的组成员关系，将业务日历分配给用户。 在这种情况下，组中的每个用户将使用相同的业务日历。
+   **用户组成** 员关系：您可以根据用户的用户组成员关系为用户分配业务日历。在这种情况下，组中的每个用户将使用相同的业务日历。
 
    如果用户是两个不同组的成员，并且这些组映射到两个不同的业务日历，AEM表单将使用其在搜索结果中找到的第一个日历。 在这种情况下，请考虑使用业务日历密钥将用户与业务日历关联。
 
-   **业务日历密钥：** 您可以根据业务日历密钥（在用户管理中指定的设置）将业务日历分配给用户。 然后，在表单工作流中将业务日历密钥映射到业务日历。
+   **业务日历键：** 您可以根据业务日历键（在用户管理中指定的设置）将业务日历分配给用户。然后，在表单工作流中将业务日历密钥映射到业务日历。
 
-   您为用户分配业务日历密钥的方式取决于您使用的是企业域、本地域还是混合域。 有关设置域的详细信息，请参 [阅添加域](/help/forms/using/admin-help/adding-domains.md#adding-domains)。
+   您为用户分配业务日历密钥的方式取决于您使用的是企业域、本地域还是混合域。 有关设置域的详细信息，请参阅[添加域](/help/forms/using/admin-help/adding-domains.md#adding-domains)。
 
-   如果您使用的是本地域或混合域，则有关用户的信息仅存储在用户管理数据库中。 要为这些用户设置业务日历键，请在“用户管理”中添加或编辑用户时，在“业务日历键”字段中输入一个字符串。 (请参 [阅添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)。) 然后，在表单工作流中将业务日历键（字符串）映射到业务日历。 (请参 [阅将用户和用户组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。)
+   如果您使用的是本地域或混合域，则有关用户的信息仅存储在用户管理数据库中。 要为这些用户设置业务日历键，请在“用户管理”中添加或编辑用户时，在“业务日历键”字段中输入一个字符串。 （请参阅[添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)。） 然后，在表单工作流中将业务日历键（字符串）映射到业务日历。 （请参阅[将用户和用户组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
 
-   如果您使用的是企业域，则有关用户的信息驻留在第三方存储系统（如LDAP目录）中，用户管理将与用户管理数据库同步。 这允许您将业务日历密钥映射到LDAP目录中的字段。 例如，如果目录中的每个用户记录都包含“国家／地区”字段，并且要根据用户所在的国家／地区分配业务日历，则在指定目录的用户设置时，在“业务日历密钥”字段中指定“国家／地区”字段名称。 (请参 [阅配置目录](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)。) 然后，您可以将业务日历键（LDAP目录中为“国家／地区”字段定义的值）映射到表单工作流中的业务日历。 (请参 [阅将用户和用户组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。)
+   如果您使用的是企业域，则有关用户的信息驻留在第三方存储系统（如LDAP目录）中，用户管理将与用户管理数据库同步。 这允许您将业务日历密钥映射到LDAP目录中的字段。 例如，如果目录中的每个用户记录都包含“国家／地区”字段，并且要根据用户所在的国家／地区分配业务日历，则在指定目录的用户设置时，在“业务日历密钥”字段中指定“国家／地区”字段名称。 （请参阅[配置目录](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)。） 然后，您可以将业务日历键（LDAP目录中为“国家／地区”字段定义的值）映射到表单工作流中的业务日历。 （请参阅[将用户和用户组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
 
-1. 在表单工作流中，为共享相同非工作日的每组用户定义日历。 (请参 [阅创建或更新业务日历](configuring-business-calendars.md#create-or-update-a-business-calendar)。)
-1. 在表单工作流中，映射每个日历的业务日历密钥或组成员关系。 (请参 [阅将用户和用户组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。)
-1. 在Workbench中，流程开发人员选择是否使用业务日历进行提醒、截止日期和升级。 (请参 [阅工作台帮](https://www.adobe.com/go/learn_aemforms_workbench_63)助。)
+1. 在表单工作流中，为共享相同非工作日的每组用户定义日历。 （请参阅[创建或更新业务日历](configuring-business-calendars.md#create-or-update-a-business-calendar)。）
+1. 在表单工作流中，映射每个日历的业务日历密钥或组成员关系。 （请参阅[将用户和用户组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
+1. 在Workbench中，流程开发人员选择是否使用业务日历进行提醒、截止日期和升级。 （请参阅[工作台帮助](https://www.adobe.com/go/learn_aemforms_workbench_63)。）
 
    如果流程开发人员选择使用业务日历，AEM表单将根据用户管理设置和管理控制台中定义的业务日历映射动态选择相应的业务日历，如果不存在映射，则将使用默认日历。
 
    如果流程开发人员不使用业务日历，事件的日期计算会将每天视为业务日。 例如，任务截止期被配置为在任务被分配给用户后的三天内完成。 任务是星期四分配的。 任务的最后期限是周日，尽管是周末。
 
-## 创建或更新业务日历 {#create-or-update-a-business-calendar}
+## 创建或更新业务日历{#create-or-update-a-business-calendar}
 
 如果您的组织包含具有不同非工作日的不同用户集，您可以定义多个业务日历。 您还可以更改现有日历，包括AEM表单附带的默认内置日历。
 
@@ -69,12 +69,12 @@ AEM forms提供默认的业务日 *历(名为“内置日历*”)，将星期六
 >如果您不创建新业务日历，则将使用默认日历。
 
 1. 在管理控制台中，单击“服务”>“Forms工作流”>“业务日历”。
-1. 要添加新的业务日历，请 ![单击bus_cal_plus](assets/bus_cal_plus.png)。 下拉 *列表中* ，将显示“新建日历”文本。 选择文本，然后键入日历的其他名称。
+1. 要添加新的业务日历，请单击![bus_cal_plus](assets/bus_cal_plus.png)。 文本&#x200B;*新日历*&#x200B;显示在下拉列表中。 选择文本，然后键入日历的其他名称。
 
    要编辑现有业务日历，请从下拉列表中选择该日历。
 
 1. 在“默认非工作日”下，选择任何每周非工作日，如周末。
-1. [可选] ，选择使用工作时间，并指定工作日的开始和结束时间。
+1. [可] 选选择使用工作时间，并指定工作日的开始和结束时间。
 
    如果选择此选项，则在指定时间范围之前发生的事件将移至时间范围的开始，而在时间范围之后发生的事件将移至下一工作日的开始时间。
 
@@ -82,9 +82,9 @@ AEM forms提供默认的业务日 *历(名为“内置日历*”)，将星期六
 
 1. 在左侧的日历中，多次单击任何其他非工作日，如节假日。 不能选择过去的天数。 您选择的非工作日显示在右侧的列表中，日期在一行中显示两次。 选择左侧的日期，键入非工作日的名称或说明。
 
-   要从列表中删除非工作日，请单 ![击该日旁边的](assets/bus_cal_trash.png) bus_cal_trash。
+   要从列表中删除非工作日，请单击该日旁边的![bus_cal_trash](assets/bus_cal_trash.png)。
 
-1. [可选] 。如果此日历将作为默认日历，请选择默认日历。 当与用户关联的事件不存在其他日历映射或者没有为计时器事件或等待服务指定业务日历时，将使用默认日历。 无法删除默认日历。
+1. [可] 选如果此日历将作为默认日历，请选择默认日历。当与用户关联的事件不存在其他日历映射或者没有为计时器事件或等待服务指定业务日历时，将使用默认日历。 无法删除默认日历。
 1. 定义完非工作日后，选择启用日历使其处于活动状态，然后单击保存。
 
    如果要更新现有日历，则新版本将立即生效并用于所有业务日历计算，包括已运行的任务。
@@ -93,11 +93,11 @@ AEM forms提供默认的业务日 *历(名为“内置日历*”)，将星期六
    >
    >如果不启用日历，将使用默认日历。
 
-## 将用户和组映射到业务日历 {#mapping-users-and-groups-to-a-business-calendar}
+## 将用户和用户组映射到业务日历{#mapping-users-and-groups-to-a-business-calendar}
 
-可以使用两种方法将业务日历与用户关联。 您可以根据业务日历密钥或用户所属的目录组将业务日历分配给用户。 您可以使用“映射”选项卡指定AEM表单将使用的方法，还可以将业务日历键和组映射到业务日历。 有关将业务日历密钥与用户关联的详细信息，请 [参阅设置多个业务日历](configuring-business-calendars.md#setting-up-multiple-business-calendars)。
+可以使用两种方法将业务日历与用户关联。 您可以根据业务日历密钥或用户所属的目录组将业务日历分配给用户。 您可以使用“映射”选项卡指定AEM表单将使用的方法，还可以将业务日历键和组映射到业务日历。 有关将业务日历密钥与用户关联的详细信息，请参阅[设置多个业务日历](configuring-business-calendars.md#setting-up-multiple-business-calendars)。
 
-### 根据业务日历密钥将业务日历与用户关联 {#associate-business-calendars-with-users-based-on-business-calendar-keys}
+### 根据业务日历键{#associate-business-calendars-with-users-based-on-business-calendar-keys}将业务日历与用户关联
 
 1. 在管理控制台中，单击“服务”>“表单工作流”>“业务日历”，然后单击“映射”选项卡。
 1. 在“System Will Use(系统将使用列表)”中，选择“User Manager Business Calendar Key Resolution（用户管理者业务日历密钥解析）”。
@@ -107,14 +107,14 @@ AEM forms提供默认的业务日 *历(名为“内置日历*”)，将星期六
 
    如果用户管理管理员未定义任何业务日历密钥，则列表将为空。
 
-1. 对于UM业务日历键列表中的每个项目，选择一个日历。
+1. 对于UM业务日历关键字列表中的每个项目，选择一个日历。
 1. 单击保存。
 
-### 根据目录服务组将业务日历与用户和用户组关联 {#associate-business-calendars-with-users-and-groups-based-on-directory-service-groups}
+### 根据目录服务组{#associate-business-calendars-with-users-and-groups-based-on-directory-service-groups}将业务日历与用户和用户组关联
 
 1. 在管理控制台中，单击“服务”>“表单工作流”>“业务日历”，然后单击“映射”选项卡。
 1. 在“系统将使用列表”中，选择由目录服务器定义的组。
-1. 在“映射”选项卡上，选择“显示目录服务组”。 此时会显示列表，其中包含已在用户管理中定义的组。 (请参阅 [目录设置](/help/forms/using/admin-help/configuring-directories.md#directory-settings)。)
+1. 在“映射”选项卡上，选择“显示目录服务组”。 此时会显示列表，其中包含已在用户管理中定义的组。 （请参阅[目录设置](/help/forms/using/admin-help/configuring-directories.md#directory-settings)。）
 
    >[!NOTE]
    >
@@ -123,7 +123,7 @@ AEM forms提供默认的业务日 *历(名为“内置日历*”)，将星期六
 1. 对于“目录服务组”列表中的每个项，选择一个日历。
 1. 单击保存。
 
-## 导出和导入业务日历 {#exporting-and-importing-business-calendars}
+## 导出和导入业务日历{#exporting-and-importing-business-calendars}
 
 AEM表单使您能够将业务日历作为XML文件导出和导入。 您可以使用此功能将日历从分阶段系统移动到生产系统。
 
@@ -131,18 +131,18 @@ AEM表单使您能够将业务日历作为XML文件导出和导入。 您可以�
 >
 >此功能可导出和导入所有定义的业务日历，包括AEM表单提供的默认业务日历。 导入的与现有日历同名的业务日历将覆盖现有日历。
 
-### 导出业务日历 {#export-business-calendars}
+### 导出业务日历{#export-business-calendars}
 
 1. 在管理控制台中，单击“服务”>“表单工作流”>“业务日历”。
 1. 单击“导出”并保存XML文件。
 
-### 导入业务日历 {#import-business-calendars}
+### 导入业务日历{#import-business-calendars}
 
 1. 在管理控制台中，单击“服务”>“表单工作流”>“业务日历”。
 1. 单击导入。
 1. 选择包含导出的业务日历的XML文件，然后单击“打开”。
 
-## 删除业务日历 {#delete-a-business-calendar}
+## 删除业务日历{#delete-a-business-calendar}
 
 您可以删除您的组织不再需要的任何业务日历。 如果删除的业务日历仍映射到用户和用户组，则将使用默认日历。
 

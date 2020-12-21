@@ -18,27 +18,27 @@ ht-degree: 5%
 ---
 
 
-# 报告控制台 {#reports-console}
+# 报告控制台{#reports-console}
 
 ## 概述 {#overview}
 
-对于AEM Communities，有各种报告可以从作者环境以多种方式访问。
+对于AEM Communities，有各种报告可从作者环境以多种方式访问。
 
 总的来说，各种报告有：
 
-* [任务报告](#assignments-report) -对于支 [持社区](overview.md#enablement-community)，提供学员分配进度的概览，包括在实施SCORM标准时的关联得分
+* [任务报告](#assignments-report) -针对启 [用社区](overview.md#enablement-community)，提供学员分配进度的概览，包括在实施SCORM标准时的关联得分
 * [视图报告](#views-report) -按社区成员和任何社区站点的站点访客提供一视图内容图表
-* [帖子报告](#posts-report) -按社区成员向任何社区站点提供各种类型帖子的图表
+* [帖子报告](#posts-report) -按社区成员向任何社区站点提供各种类型的帖子图表
 
-启 [用Adobe Analytics](sites-console.md#analytics)后，报告将包括一段时间内每个支持资源的视图、播放、评论和评级数
+启用[Adobe Analytics](sites-console.md#analytics)时，报告将包括一段时间内每个启用资源的视图数、播放数、评论数和评级数
 
 表格报表可以以。csv格式导出，供后续处理。
 
-## 报告控制台 {#reporting-consoles}
+## 报告控制台{#reporting-consoles}
 
-### 社区站点报告 {#reports-for-community-sites}
+### 社区站点报告{#reports-for-community-sites}
 
-* 从全局导航： **[!UICONTROL 导航>社区>报告]**
+* 从全局导航：**[!UICONTROL 导航>社区>报告]**
 * 从
    * **[!UICONTROL 指定报表]**
       * 为所选社区站点、用户或组和分配生成报告
@@ -48,13 +48,13 @@ ht-degree: 5%
       * 为所选社区站点、内容类型和时间段生成报告
          ![chlimage_1-156](assets/chlimage_1-156.png)
 
-### Enablement Resources和学习路径报告 {#reports-for-enablement-resources-and-learning-paths}
+### Enablement Resources和Learning Paths报告{#reports-for-enablement-resources-and-learning-paths}
 
-* 从全局导航： **[!UICONTROL 导航>社区>资源]**
+* 从全局导航：**[!UICONTROL 导航>社区>资源]**
 * 选择现有的教育社区站点
-   * 选择 **[!UICONTROL 报告图]** 标以生成涵盖所有支持资源的报告
+   * 选择&#x200B;**[!UICONTROL 报告]**&#x200B;图标以生成涵盖所有启用资源的报告
    * 选择支持学习路径
-   * 选择 **[!UICONTROL 报表]** 图标以生成报表
+   * 选择&#x200B;**[!UICONTROL 报告]**&#x200B;图标以生成报告
       * 包含的支持资源
       * 分配给学习路径的学员数
 * 这些报告提供：
@@ -65,7 +65,7 @@ ht-degree: 5%
       * 评论数
       * 给定星级
 
-有关详细信息，请参 [阅“资源](resources.md#report) ”控制台的“报告”部分。
+有关详细信息，请参阅“资源”控制台的[报告部分](resources.md#report)。
 
 ## 指定报表 {#assignments-report}
 
@@ -77,13 +77,16 @@ ht-degree: 5%
 
 选择报表的条件：
 
-* **[!UICONTROL 站点]**&#x200B;选择一个支持社区站点
+* **[!UICONTROL 站点选]**
+择一个教育社区站点
 * **[!UICONTROL 用户或组]**
    * 选择用户以为一个学员生成报告
-   * 选择“组”以为学员组生成报告隧道服务将从发布环境访问成员和成员组
-* **[!UICONTROL 分配]**&#x200B;从分配给选定学员的启用资源中进行选择
+   * 选择“组”为学员组生成报告
+隧道服务将从发布环境访问成员和成员组
+* **[!UICONTROL 分]**
+配从分配给选定学员的启用资源中进行选择
 
-选择 **[!UICONTROL 生成]** ，以创建报表：
+选择&#x200B;**[!UICONTROL 生成]**&#x200B;以创建报告：
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -95,15 +98,18 @@ ht-degree: 5%
 
 选择报表的条件：
 
-* **[!UICONTROL 站点]**&#x200B;选择社区站点
-* **[!UICONTROL 内容类]**&#x200B;型可以选择所有内容或选择站点上存在的某个功能
-* 时间范围选择以下选项之一：
+* **[!UICONTROL 站]**
+点选择社区站点
+* **[!UICONTROL 内容]**
+类型可以选择所有内容或选择站点上存在的某个功能
+* 时间范围
+选择以下选项之一：
    * 过去 7 天
    * 过去 30 天
    * 过去 90 天
    * 去年
 
-选择 **[!UICONTROL 生成]** ，以创建报表：
+选择&#x200B;**[!UICONTROL 生成]**&#x200B;以创建报告：
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -115,20 +121,23 @@ ht-degree: 5%
 
 选择报表的条件：
 
-* **[!UICONTROL 站点]**&#x200B;选择社区站点
-* **[!UICONTROL 内容类]**&#x200B;型可以选择所有内容或选择站点上存在的某个功能
-* 时间范围选择以下选项之一：
+* **[!UICONTROL 站]**
+点选择社区站点
+* **[!UICONTROL 内容]**
+类型可以选择所有内容或选择站点上存在的某个功能
+* 时间范围
+选择以下选项之一：
    * 过去 7 天
    * 过去 30 天
    * 过去 90 天
    * 去年
 
-选择 **[!UICONTROL 生成]** ，以创建报表：
+选择&#x200B;**[!UICONTROL 生成]**&#x200B;以创建报告：
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
 ## 疑难解答 {#troubleshooting}
 
-### 未列出社区站点 {#no-community-sites-listed}
+### 未列出社区站点{#no-community-sites-listed}
 
 如果未列出社区站点，请确保已为站点启用Adobe Analytics。 如果选择分配报告，请确保分配功能在社区站点的结构中。

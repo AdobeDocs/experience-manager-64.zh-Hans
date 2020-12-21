@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 群集环境中备份和恢复的策略 {#strategy-for-backup-and-restore-in-a-clustered-environment}
+# 群集环境{#strategy-for-backup-and-restore-in-a-clustered-environment}中备份和恢复的策略
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 >您需要备份AEM表单设置程序正在使用的任何其他数据，如客户字体、连接器数据等。
 
-## 备份群集环境 {#back-up-a-clustered-environment}
+## 备份群集环境{#back-up-a-clustered-environment}
 
 本主题讨论备份任何AEM表单群集环境的以下策略：
 
@@ -43,48 +43,48 @@ ht-degree: 0%
 * 在线备份，不停机但响应延迟
 * 备份Bootstrap属性文件
 
-### 离线备份（停机） {#offline-backup-with-downtime}
+### 停机时间{#offline-backup-with-downtime}的脱机备份
 
-1. 关闭整个群集和相关服务。 (请参 [阅启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. 在任何节点上备份数据库、GDS和连接器。 (请参 [阅要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. 关闭整个群集和相关服务。 （请参阅[启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)）
+1. 在任何节点上备份数据库、GDS和连接器。 （请参阅[要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)）
 1. 执行以下步骤以脱机备份AEM存储库：
 
    1. 对于每个群集节点，备份包含群集节点id的文件。
    1. 备份任何辅助群集节点（包括子目录）的所有文件。
    1. 单独备份每个群集节点的存储库／系统ID。
 
-   有关详细步骤，请参 [阅备份和还原](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)。
+   有关详细步骤，请参阅[备份和还原](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)。
 
 1. 备份任何其他数据，如客户字体。
 1. 再次开始群集。
 
-### 无停机的脱机备份 {#offline-backup-with-no-downtime}
+### 脱机备份，不停机{#offline-backup-with-no-downtime}
 
-1. 进入滚动备份模式。 (请参 [阅进入备份模式](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
+1. 进入滚动备份模式。 （请参阅[进入备份模式](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes)）
 
    请注意，在恢复后，我们需要离开滚动备份模式。
 
-1. 关闭群集中与AEM相关的任何辅助节点。 (请参 [阅启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. 在任何节点上备份数据库、GDS和连接器。 (请参 [阅要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. 关闭群集中与AEM相关的任何辅助节点。 （请参阅[启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)）
+1. 在任何节点上备份数据库、GDS和连接器。 （请参阅[要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)）
 1. 执行以下步骤以脱机备份AEM存储库：
 
    1. 对于每个群集节点，备份包含群集节点id的文件。
    1. 备份任何辅助群集节点（包括子目录）的所有文件。
    1. 单独备份每个群集节点的repository/system.id。
 
-   有关详细步骤，请参 [阅备份和还原](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)。
+   有关详细步骤，请参阅[备份和还原](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)。
 
 1. 备份任何其他数据，如客户字体。
 1. 再次开始群集。
 
-### 在线备份，不停机但响应延迟 {#online-backup-with-no-downtime-but-delay-in-response}
+### 联机备份，无停机但响应延迟{#online-backup-with-no-downtime-but-delay-in-response}
 
-1. 进入滚动备份模式。 (请参 [阅进入备份模式](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
+1. 进入滚动备份模式。 （请参阅[进入备份模式](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes)）
 
    请注意，在恢复后，您需要离开滚动备份模式。
 
-1. 关闭群集中与AEM相关的任何辅助节点。 (请参 [阅启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. 在任何节点上备份数据库、GDS和连接器。 (请参 [阅要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. 关闭群集中与AEM相关的任何辅助节点。 （请参阅[启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)）
+1. 在任何节点上备份数据库、GDS和连接器。 （请参阅[要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)）
 1. 执行以下步骤联机备份AEM存储库：
 
    1. 对于每个群集节点，备份包含cluster_node.id的文件。
@@ -94,17 +94,17 @@ ht-degree: 0%
 1. 备份任何其他数据，如客户字体。
 1. 再次开始群集。
 
-### 备份Bootstrap属性文件 {#back-up-the-bootstrap-properties-file}
+### 备份Bootstrap属性文件{#back-up-the-bootstrap-properties-file}
 
 创建AEM群集时，将在应用程序服务器中为所有辅助节点创建一个属性文件。 建议备份Bootstrap属性文件。 您可以在应用程序服务器上的以下位置找到该文件：
 
-* JBoss: 在BIN目录中
-* WebLogic: 在域目录中
-* WebSphere: 用户档案目录
+* JBoss:在BIN目录中
+* WebLogic:在域目录中
+* WebSphere:用户档案目录
 
 您需要备份AEM辅助节点的灾难恢复方案的文件，并在应用程序服务器上的指定位置将其替换（如果已恢复）。
 
-## 群集环境中的恢复 {#recovery-in-a-clustered-environment}
+## 群集环境{#recovery-in-a-clustered-environment}中的恢复
 
 如果整个群集或单个节点出现任何故障，您需要使用备份恢复它。
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 如果整个群集因数据库崩溃等故障而失败，您需要执行以下步骤。 恢复取决于使用的备份方法。
 
-### 恢复单个节点 {#restoring-a-single-node}
+### 恢复单个节点{#restoring-a-single-node}
 
 1. 停止损坏的节点。
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 1. 从系统映像重新创建物理系统。
 1. 将修补程序或更新应用到制作图像后应用的AEM表单。 在备份过程中记录了此信息。 AEM表单必须恢复到与备份系统时相同的修补程序级别。
-1. (*可选*)如果所有其他节点都正常工作，则AEM存储库可能也已损坏。 在这种情况下，您将在AEM存储库的error.log文件中看到一个存储库不同步消息。
+1. （*可选*）如果所有其他节点都正常工作，则AEM存储库可能也已损坏。 在这种情况下，您将在AEM存储库的error.log文件中看到一个存储库不同步消息。
 
    要恢复存储库，请执行以下步骤。
 
@@ -146,7 +146,7 @@ ht-degree: 0%
 * 在重新启动任何群集节点之前，请确保从主节点删除存储库/clustered.txt。
 * 确保主节点是先启动的，一旦它完全启动，就开始其他节点。
 
-### 恢复整个群集 {#restoring-the-entire-cluster}
+### 恢复整个群集{#restoring-the-entire-cluster}
 
 1. 停止所有群集节点。
 1. 从系统映像重新创建物理系统。
@@ -176,17 +176,17 @@ ht-degree: 0%
 * 在重新启动任何群集节点之前，请确保从主节点删除存储库/clustered.txt。
 * 确保主节点是先启动的，一旦它完全启动，就开始其他节点。
 
-## 备份和恢复通信管理解决方案发布节点 {#back-up-and-restore-correspondence-management-solution-publish-node}
+## 备份和恢复通信管理解决方案发布节点{#back-up-and-restore-correspondence-management-solution-publish-node}
 
-发布者节点在群集环境中没有任何主次关系。 您可以通过执行备份和还原来备份任 [何发布者节点](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)。
+发布者节点在群集环境中没有任何主次关系。 您可以按照[备份和还原](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)对任何发布者节点进行备份。
 
-### 恢复单个发布者节点 {#recover-a-single-publisher-node}
+### 恢复单个发布者节点{#recover-a-single-publisher-node}
 
 1. 关闭需要恢复的节点，直到该节点再次启动，才执行任何发布活动。
-1. 使用恢复备份 [(https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring恢复备]份)恢复发布节点。
+1. 使用[恢复备份](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring恢复备份)恢复发布节点。
 
-### 恢复群集 {#recover-a-cluster}
+### 恢复群集{#recover-a-cluster}
 
 1. 关闭群集。
-1. 使用恢复备份 [(https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring恢复备]份)恢复发布节点。
+1. 使用[恢复备份](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring恢复备份)恢复发布节点。
 1. 开始主节点，后跟作者群集的辅助节点。

@@ -17,9 +17,9 @@ ht-degree: 3%
 ---
 
 
-# 对应管理配置属性 {#correspondence-management-configuration-properties}
+# 对应管理配置属性{#correspondence-management-configuration-properties}
 
-要配置这些属性，请在浏览器中打开以下URL: `https://<server>:<port>/<contextPath>/system/console/configMgr` 并选择“ **对应管理配置”**。
+要配置这些属性，请在浏览器中打开以下URL:`https://<server>:<port>/<contextPath>/system/console/configMgr`并选择&#x200B;**对应管理配置**。
 
 Corresponcement Management具有以下配置属性：
 
@@ -34,19 +34,19 @@ Corresponcement Management具有以下配置属性：
   <tr> 
    <td><p>缩进</p> </td> 
    <td>模块上的缩进<p> </p> </td> 
-   <td><p>12.7mm</p> </td> 
+   <td><p>12.7毫米</p> </td> 
    <td><p>任意数字</p> </td> 
   </tr> 
   <tr> 
    <td>最小宽度数</td> 
    <td>使用除罗马数字之外的编号列表时，要应用于项目符号／编号字段的最小宽度</td> 
-   <td>8.0mm</td> 
+   <td>8毫米</td> 
    <td>任意数字</td> 
   </tr> 
   <tr> 
    <td><p>罗马数字最小宽度</p> </td> 
    <td><p>使用罗马数字时，要应用于项目符号／编号字段的最小宽度</p> </td> 
-   <td><p>12.7mm</p> </td> 
+   <td><p>12.7毫米</p> </td> 
    <td><p>任意数字</p> </td> 
   </tr> 
   <tr> 
@@ -136,32 +136,32 @@ Corresponcement Management具有以下配置属性：
   <tr> 
    <td><p>优化数据字典实例</p> </td> 
    <td><p>支持优化数据字典实例b/w服务器和客户端的传输</p> </td> 
-   <td><p>true</p> </td> 
+   <td><p>真</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>自动更正不一致 </p> </td> 
-   <td><p>启用后，它会自动处理信件分配中可能的不一致情况</p> </td> 
-   <td><p>true</p> </td> 
+   <td><p>启用后，它会自动处理信件分配中可能出现的不一致</p> </td> 
+   <td><p>真</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>使用配置的数据格式</p> </td> 
    <td><p>控制是否使用配置的数据编辑格式和数据显示格式</p> </td> 
-   <td><p>true</p> </td> 
+   <td><p>真</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>数据显示格式</p> </td> 
    <td><p>指定特定于区域设置的数据显示格式</p> </td> 
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=。; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=。; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=。; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td> 
-   <td><p>--</p> </td> 
+   <td><p>locale=en_US;dateFormat=dd-MM-yyyy;numberDecimalSeparator=。;numberGroupSeparator=,;numberUseGroupSeparator=truelocale=de_DE;dateFormat=dd-MM-yyyy;numberDecimalSeparator=,;numberGroupSeparator=。;numberUseGroupSeparator=truelocale=fr_FR;dateFormat=dd-MM-yyyy;numberDecimalSeparator=,;numberGroupSeparator= ;numberUseGroupSeparator=truelocale=ja_JP;dateFormat=dd-MM-yyyy;numberDecimalSeparator=。;numberGroupSeparator=,;numberUseGroupSeparator=true</p> </td> 
+   <td><p>—</p> </td> 
   </tr> 
   <tr> 
    <td><p>数据编辑格式</p> </td> 
    <td><p>编辑数据格式。 将数据写为字符串或从字符串分析数据时使用</p> </td> 
-   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=。; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td> 
-   <td>--<p> </p> </td> 
+   <td><p>locale=en_US;dateFormat=dd-MM-yyyy;numberDecimalSeparator=。;numberGroupSeparator=,;numberUseGroupSeparator=true</p> </td> 
+   <td>—<p> </p> </td> 
   </tr> 
   <tr> 
    <td><p>在发布时管理信函实例</p> </td> 
@@ -172,67 +172,67 @@ Corresponcement Management具有以下配置属性：
   <tr> 
    <td><p>启用审核</p> </td> 
    <td><p>启用／禁用审核功能。 如果为false，则将禁用所有操作的审核日志</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用读审核</p> </td> 
    <td><p>启用／禁用资产读取的审核功能</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用创建审核</p> </td> 
    <td><p>启用／禁用资产创建的审核功能</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用更新审核</p> </td> 
    <td><p>启用／禁用资产更新的审核功能</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用还原审核</p> </td> 
    <td><p>启用／禁用资产还原的审核功能</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用发布审核</p> </td> 
    <td><p>启用／禁用资产发布的审核功能</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用“另存为草稿审核”</p> </td> 
    <td><p>启用／禁用保存信函草稿的审核功能</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用提交审核</p> </td> 
    <td><p>启用／禁用信函提交的审核功能</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用电子邮件审核</p> </td> 
    <td><p>启用／禁用电子邮件发送的审核功能</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用打印审核</p> </td> 
-   <td><p>启用／禁用打印信件的审核功能</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>启用／禁用用于打印信件的审核功能</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用自定义投放审核</p> </td> 
    <td><p>启用／禁用自定义字母投放的审核功能</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
@@ -244,31 +244,31 @@ Corresponcement Management具有以下配置属性：
   <tr> 
    <td><p>CM用户根</p> </td> 
    <td><p>包含所有Corresponce Management用户资产的文件夹的URL</p> </td> 
-   <td><p>--</p> </td> 
+   <td><p>—</p> </td> 
    <td><p>有效的文件夹位置</p> </td> 
   </tr> 
   <tr> 
    <td><p>字母缓存大小</p> </td> 
-   <td><p>指定要保存在缓存中的最大字母数。</p> <p>更改此值将导致清理缓 <code>in-memory</code> 存。</p> </td> 
+   <td><p>指定要保存在缓存中的最大字母数。</p> <p>更改此值将导致清理<code>in-memory</code>缓存。</p> </td> 
    <td><p>100</p> </td> 
    <td><p>任何数值</p> </td> 
   </tr> 
   <tr> 
    <td><p>启用字母缓存</p> </td> 
-   <td><p>启用／禁用字母缓存。</p> <p>更改此值将导致清理缓 <code>in-memory </code> 存。</p> </td> 
-   <td><p>true</p> </td> 
+   <td><p>启用／禁用字母缓存。</p> <p>更改此值将导致清理<code>in-memory </code>缓存。</p> </td> 
+   <td><p>真</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>数据元素排序</p> </td> 
    <td><p>在创建对应界面时，按照字母中的顺序保持数据元素排序</p> </td> 
-   <td><p>true</p> </td> 
+   <td><p>真</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
   <tr> 
    <td><p>支持重装</p> </td> 
    <td><p>启用／禁用服务器端呈现的字母中的重新加载支持。</p> <p>禁用此选项将提高字母渲染性能。</p> </td> 
-   <td><p>false</p> </td> 
+   <td><p>假</p> </td> 
    <td><p>true/false</p> <p> </p> </td> 
   </tr> 
   <tr> 
@@ -291,7 +291,7 @@ Corresponcement Management具有以下配置属性：
   </tr> 
   <tr> 
    <td><p>调试目录 </p> <p> </p> </td> 
-   <td>用于调试的文件系统文件夹位置。 如果目录不是， <code>exists</code>则不会生成任何调试转储。</td> 
+   <td>用于调试的文件系统文件夹位置。 如果目录不是<code>exists</code>，则不会生成调试转储。</td> 
    <td>acm.debugDirectory</td> 
    <td> </td> 
   </tr> 

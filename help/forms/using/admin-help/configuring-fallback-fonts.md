@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 配置回退字体 {#configuring-fallback-fonts}
+# 配置回退字体{#configuring-fallback-fonts}
 
 您可以手动配置FontManagerResources.properties文件，将默认的AEM表单字体映射到回退（或替换）（如果服务器上没有默认字体）。 此属性文件位于adobe-fontmanager.jar文件中。
 
@@ -26,16 +26,16 @@ ht-degree: 0%
 >
 >回退字体配置也适用于汇编器服务。
 
-1. 导航到aem-forms root/*[configurationManager]*/export目录中的 *[adobe-livecycle-appserver]*.ear文件，制作备份副本，并取消打包原始文件。
+1. 导航到&#x200B;*[aem-forms root]*/configurationManager/export目录中的adobe-livecycle-*[appserver]*.ear文件，制作备份副本，并取消打包原始文件。
 1. 找到adobe-fontmanager.jar文件并将其解包。
 1. 找到FontManagerResources.properties文件，并在文本编辑器中打开它。
 1. 根据需要修改通用字体和备用字体位置和名称并保存文件。
 
-   FontManagerResources.properties文件中的字体条目是相对 *[于aem-forms root]*/fonts目录的。 如果指定的字体不是默认的AEM表单字体，则必须在此目录结构中（在现有目录中或新创建的目录中）安装这些字体。
+   FontManagerResources.properties文件中的字体条目是相对于&#x200B;*[aem-forms root]*/fonts目录的。 如果指定的字体不是默认的AEM表单字体，则必须在此目录结构中（在现有目录中或新创建的目录中）安装这些字体。
 
    >[!NOTE]
    >
-   >如果指定的字体或默认字体不包含特定的Unicode字符，或者如果该字符不可用，则根据以下优先级从备用字体取该字符：
+   >如果指定的字体或默认字体不包含特定的Unicode字符，或者如果该字符不可用，则根据以下优先级从备用字体中取用该字符：
 
    * 区域设置特定字体
    * 未设置区域设置时的ROOT字体

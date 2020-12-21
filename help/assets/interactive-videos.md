@@ -488,7 +488,7 @@ ht-degree: 26%
       在时间轴上，点按要分成两半的区段，然后点按工具栏上的&#x200B;**[!UICONTROL 拆分区段]**。
 
       选择两个或多个段会禁用&#x200B;**[!UICONTROL 拆分段]**&#x200B;功能。
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    将选定的10秒段分为两段，每段5秒。
 

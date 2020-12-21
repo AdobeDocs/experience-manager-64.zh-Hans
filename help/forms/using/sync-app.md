@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 同步应用程序 {#synchronizing-the-app}
+# 同步应用程序{#synchronizing-the-app}
 
-## 同步应用程序 {#synchronizing-the-app-1}
+## 同步应用程序{#synchronizing-the-app-1}
 
 应用程序中的表单从AEM Forms服务器下载。 表单下载在任务和Forms选项卡下。 从表单创建的草稿下载在草稿选项卡中，从任务创建的草稿下载在任务选项卡中。 对于OSGi服务器上的独立表单，表单和草稿分别下载在Forms和草稿选项卡中。
 
@@ -30,11 +30,11 @@ ht-degree: 0%
 
 **手动同步应用程序**
 
-点按主屏 ![幕右下角](assets/sync-app.png) 的“同步”按钮sync-app。
+点按主屏幕右下角的“同步”按钮![sync-app](assets/sync-app.png)。
 
 **更改同步频率**
 
-1. 要转到“设置”屏幕，请点按“主页”屏幕左上角的菜单按钮，然后点按“设 **置”**。
+1. 要转到“设置”屏幕，请点按“主页”屏幕左上角的菜单按钮，然后点按&#x200B;**设置**。
 1. 在设置屏幕中，点按常规选项卡。
 
    ![“常规设置”窗口中的同步频率设置](assets/gen-settings-1.png)
@@ -42,7 +42,7 @@ ht-degree: 0%
 1. 在“同步频率”选项上，点按“同步频率”右侧的值。
 1. 在下拉列表中，选择新的同步频率。
 
-### 技术规范 {#technical-specifications}
+### 技术规范{#technical-specifications}
 
 * 将脱机应用程序数据提交到AEM Forms服务器的主要逻辑包含在runtime/offline/util/offline.js中。
 * 在。js中，对processOfflineSubmittedSavedTasks(...)函数的调用将保存的／已提交的任务发送到服务器。 它还处理同步过程中的任何错误或冲突。 如果提交任务失败，则应用程序上的任务将标记为失败。 此外，任务仍保留在发件箱中。

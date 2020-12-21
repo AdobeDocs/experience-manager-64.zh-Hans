@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 启用PDF/A支持 {#enable-pdf-a-support}
+# 启用PDF/A支持{#enable-pdf-a-support}
 
 PDF Generator支持从Microsoft Excel、Microsoft PowerPoint和Microsoft Word文件创建符合PDF/A规范的文件。
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 大容量安全信息投放 {#high-volume-secure-information-delivery}
+# 大容量安全信息投放{#high-volume-secure-information-delivery}
 
 在大量生产环境(例如为电信公司生成有担保的月度发票的)中，创建特定于每个文档的许可证可以成为资源密集型流程。 在这种情况下，文档安全支持将许可证关联到用户，而不是文档。 为用户生成的许可证将用于为该用户提供保护的所有文档。
 
@@ -30,4 +30,4 @@ ht-degree: 0%
 
 只有通过文档安全Java SDK支持创建抽象策略。 但是，您可以从文档安全网页管理从抽象策略创建的策略。 使用此方法创建的策略的行为与通过文档安全网页创建的策略相同。
 
-有关更 [多信息，请参阅](https://www.adobe.com/go/learn_aemforms_programming_63) AEM表单编程。
+有关详细信息，请参阅[使用AEM表单进行编程](https://www.adobe.com/go/learn_aemforms_programming_63)。

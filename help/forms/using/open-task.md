@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# 打开任务 {#opening-a-task}
+# 打开任务{#opening-a-task}
 
-如果AEM Forms应用程序与AEM Forms服务器同步，则可以与分配给您的任务一起使用。 任务是工作流中在工作台中或AEM工作流编辑器中定义的步骤。 例如，请参阅 [Conard在GeometrixxGov参考站点中获取评估任务](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task)。 您可以更改当前分配给您的任何任务。 所有任务都可在“任务”选项卡中使用。 保存为草稿的任务仍保留在“任务”选项卡中。
+如果AEM Forms应用程序与AEM Forms服务器同步，则可以与分配给您的任务一起使用。 任务是工作流中在工作台中或AEM工作流编辑器中定义的步骤。 例如，请参阅[Conard在GeometrixxGov引用站点](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task)中获取评估任务。 您可以更改当前分配给您的任何任务。 所有任务都可在“任务”选项卡中使用。 保存为草稿的任务仍保留在“任务”选项卡中。
 
-其他表单将保存为草稿选项卡中的草稿。 请参 [阅保存草稿](/help/forms/using/save-as-draft.md)。
+其他表单将保存为草稿选项卡中的草稿。 请参阅[保存草稿](/help/forms/using/save-as-draft.md)。
 
 **打开任务**
 
@@ -34,11 +34,11 @@ ht-degree: 0%
 
 1. 点击任务以打开它。
 
-   您可以点按 **视图汇总** ，以视图在工作台流程中指定的其他说明。
+   您可以点按&#x200B;**视图摘要**&#x200B;以视图工作台流程中指定的其他说明。
 
 **打开应用程序**
 
-1. 点击“Forms **”选项** 卡中的 **应用程** 序。
+1. 点按&#x200B;**Forms**&#x200B;选项卡中的&#x200B;**application**。
 
    选择应用程序时，应用程序的说明将显示在应用程序名称下方。 在描述后，将显示与应用程序关联的用户操作／操作。
 
@@ -47,4 +47,4 @@ ht-degree: 0%
 
 1. 点击任务以打开它。
 
-   您可以点按 **视图摘要** ，以视图为应用程序指定的其他说明。
+   您可以点按&#x200B;**视图摘要**&#x200B;以视图为应用程序指定的其他说明。

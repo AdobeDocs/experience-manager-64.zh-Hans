@@ -27,7 +27,7 @@ ht-degree: 1%
 * 在登录页面上自定义图像
 * 自定义应用程序菜单中的徽标
 
-## 自定义图标和启动图像 {#customizing-icon-and-launch-images}
+## 自定义图标和启动图像{#customizing-icon-and-launch-images}
 
 请执行以下步骤以自定义默认应用程序图标和AEM Forms应用程序的启动图像：
 
@@ -35,16 +35,16 @@ ht-degree: 1%
 >
 >对于所有图标和图像，请使用非隔行PNG格式。
 
-### 自定义图标和启动图像 {#to-customize-icon-and-launch-images}
+### 自定义图标并启动图像{#to-customize-icon-and-launch-images}
 
-#### 适用于iOS {#for-ios}
+#### 对于iOS {#for-ios}
 
-1. 在Xcode中 `Capture.xcodeproj` 打开项目。
-1. (用&#x200B;***于自定义图***&#x200B;标)在Capture的导航器视图下，导航到 **[!UICONTROL Capture > Capture > Supporting Files > Capture-info.plist]**。 单击“Icon files（图标文件）”旁的下拉框。 指定图标文件(.png)的名称，并在“捕捉”>“捕捉”>“资 **[!UICONTROL 源”>“图标”上上传文件]**。 当前支持的维度有： 29x29、50x50、58x58、72x72、100x100和144x144。
-1. (***用于自定义启动图像***)确保图像的文件名为：
+1. 在Xcode中打开`Capture.xcodeproj`项目。
+1. （***对于自定义图标***）在Capture的导航器视图下，导航到&#x200B;**[!UICONTROL Capture > Capture > Supporting Files > Capture-info.plist]**。 单击“Icon files（图标文件）”旁的下拉框。 指定图标文件(.png)的名称，并上传位于&#x200B;**[!UICONTROL 捕获>捕获>资源>图标]**&#x200B;的文件。 当前支持的维度有：29x29、50x50、58x58、72x72、100x100和144x144。
+1. （***用于自定义启动图像***）确保图像的文件名为：
 
-   * 对于纵向： `Default-Portrait~ipad.png` 和 `Default-Portrait@2x~ipad.png`
-   * 对于横向： `Default-Landscape~ipad.png` 和 `Default-Landscape@2x~ipad.png`
+   * 对于纵向：`Default-Portrait~ipad.png`和`Default-Portrait@2x~ipad.png`
+   * 对于横向：`Default-Landscape~ipad.png`和`Default-Landscape@2x~ipad.png`
 
    将它们上传到Capture项目以替换项目中的现有文件。
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 1. 在iOS设备或iOS模拟器上构建和运行AEM Forms应用程序。
 
-#### 适用于Android {#for-android}
+#### 对于Android {#for-android}
 
 1. 将应用程序图标文件命名为：
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 1. 重新构建AEM Forms应用程序。
 
-### 适用于Windows {#for-windows}
+### 对于Windows {#for-windows}
 
 1. 替换路径中的图标：
 
@@ -90,42 +90,42 @@ ht-degree: 1%
 
 1. 重新构建AEM Forms应用程序。
 
-## 自定义应用程序名称 {#customize-the-app-name}
+## 自定义应用程序名称{#customize-the-app-name}
 
-### 适用于iOS {#for-ios-1}
+### 对于iOS {#for-ios-1}
 
-1. 在Xcode中 `Capture.xcodeproj` 打开项目。
-1. 在Capture的导航器视图下，导航到 **[!UICONTROL Capture > Capture > Supporting Files > InfoPlist.strings]**。
+1. 在Xcode中打开`Capture.xcodeproj`项目。
+1. 在Capture的导航器视图下，导航到&#x200B;**[!UICONTROL Capture > Capture > Supporting Files > InfoPlist.strings]**。
 
-   将属性的值 `CFBundleDisplayName` 更新为要显示给应用程序的名称。
+   将`CFBundleDisplayName`属性的值更新为要为应用程序显示的名称。
 
 1. 在iOS设备或iOS模拟器上构建和运行AEM Forms应用程序。
 
-   有关构建适用于iOS的应用程序的详细信息， [请参阅设置Xcode项目和构建iOS应用程序](/help/forms/using/setup-xcode-project-build-installer.md)。
+   有关构建适用于iOS的应用程序的详细信息，请参阅[设置Xcode项目和构建iOS应用程序](/help/forms/using/setup-xcode-project-build-installer.md)。
 
-### 适用于Android {#for-android-1}
+### 对于Android {#for-android-1}
 
 1. 在任何文本或Xml编辑器中打开以下Xml:
 
    `[User_Home]/Projects/[your-project]/src/android/res/values/strings.xml and android/res/values-en/strings.xml`
 
-1. 更新密钥的值 `app_name`。
+1. 更新键`app_name`的值。
 1. 重新构建AEM Forms应用程序。
 
-   有关构建适用于Android的应用程序的详细信息，请 [参阅设置Eclipse项目和构建Android应用程序](/help/forms/using/setup-eclipse-project-build-installer.md)。
+   有关构建适用于Android的应用程序的详细信息，请参阅[设置Eclipse项目和构建Android应用程序](/help/forms/using/setup-eclipse-project-build-installer.md)。
 
-### 适用于Windows {#for-windows-1}
+### 对于Windows {#for-windows-1}
 
 1. 在任何文本编辑器中打开以下Xml:
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
-1. 更新标记中的 `<name>...</name>` 值。
+1. 更新`<name>...</name>`标记中的值。
 1. 重新构建AEM Forms应用程序。
 
-   有关构建适用于Windows的应用程序的详细信 [息，请参阅设置Visual Studio项目和构建Windows应用程序](/help/forms/using/setup-visual-studio-project-build-installer.md)。
+   有关构建适用于Windows的应用程序的详细信息，请参阅[设置Visual Studio项目和构建Windows应用程序](/help/forms/using/setup-visual-studio-project-build-installer.md)。
 
-## 在登录页面上自定义图像 {#customizing-images-on-the-login-page}
+## 在登录页面{#customizing-images-on-the-login-page}上自定义图像
 
 AEM Forms应用程序的登录页面有徽标和背景图像。 徽标位于登录对话框的上方，背景图像位于登录对话框的下方。 请执行以下步骤以自定义登录页面上的默认图像：
 
@@ -155,32 +155,32 @@ AEM Forms应用程序的登录页面有徽标和背景图像。 徽标位于登�
 
 **使用Xcode在登录页面上自定义图像**
 
-1. 在Xcode中 `Capture.xcodeproj` 打开项目。
+1. 在Xcode中打开`Capture.xcodeproj`项目。
 
-1. 导览至文 `www/wsmobile/images`件夹。
-1. 要更改标志，请用自定 `LC-logo.png` 义文件替换默认 `LC-logo.png` 文件。
-1. 要更改背景，请用自定 `Landing_bg.jpeg` 义文件替换默认 `Landing_bg.jpeg`文件。
+1. 导航到`www/wsmobile/images`文件夹。
+1. 要更改标志，请将默认的`LC-logo.png`文件替换为自定义的`LC-logo.png`文件。
+1. 要更改背景，请将默认的`Landing_bg.jpeg`文件替换为自定义的`Landing_bg.jpeg`文件。
 1. 在iOS设备或iOS模拟器上构建和运行AEM Forms应用程序。
 
-### 使用Eclipse自定义登录页面上的图像 {#to-customize-images-on-the-login-pages-using-eclipse}
+### 使用Eclipse {#to-customize-images-on-the-login-pages-using-eclipse}自定义登录页面上的图像
 
 1. 在Eclipse中打开Android项目。
 
-1. 导览至文 `assets/www/wsmobile/images`件夹。
-1. 要更改标志，请用自定 `LC-logo.png` 义文件替换默认 `LC-logo.png` 文件。
-1. 要更改背景，请用自定 `Landing_bg.jpeg` 义文件替换默认 `Landing_bg.jpeg`文件。
+1. 导航到`assets/www/wsmobile/images`文件夹。
+1. 要更改标志，请将默认的`LC-logo.png`文件替换为自定义的`LC-logo.png`文件。
+1. 要更改背景，请将默认的`Landing_bg.jpeg`文件替换为自定义的`Landing_bg.jpeg`文件。
 1. 在Android设备上构建和运行AEM Forms应用程序。
 
-### 使用Visual Studio自定义登录页面上的图像 {#to-customize-images-on-the-login-pages-using-visual-studio}
+### 使用Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}自定义登录页面上的图像
 
-1. 在Visual `MWSWindows.sln` Studio中打开项目。
+1. 在Visual Studio中打开`MWSWindows.sln`项目。
 
-1. 导览至文 `MWSWindows\www\wsmobile\images`件夹。
-1. 要更改标志，请用自定 `LC-logo.png` 义文件替换默认 `LC-logo.png` 文件。
-1. 要更改背景，请用自定 `Landing_bg.jpeg` 义文件替换默认 `Landing_bg.jpeg`文件。
+1. 导航到`MWSWindows\www\wsmobile\images`文件夹。
+1. 要更改标志，请将默认的`LC-logo.png`文件替换为自定义的`LC-logo.png`文件。
+1. 要更改背景，请将默认的`Landing_bg.jpeg`文件替换为自定义的`Landing_bg.jpeg`文件。
 1. 在Windows设备上构建和运行AEM Forms应用程序。
 
-## 自定义应用程序菜单中的徽标 {#customizing_images_on_the_login_page-1}
+## 自定义应用程序菜单{#customizing_images_on_the_login_page-1}中的徽标
 
 登录AEM Forms应用程序并点击菜单按钮后，您会在菜单上方看到徽标。 请执行以下步骤以自定义默认标志：
 
@@ -205,24 +205,24 @@ AEM Forms应用程序的登录页面有徽标和背景图像。 徽标位于登�
 
 **使用Xcode在登录页面上自定义图像**
 
-1. 在Xcode中 `Capture.xcodeproj` 打开项目。
+1. 在Xcode中打开`Capture.xcodeproj`项目。
 
-1. 导览至文 `www/wsmobile/images`件夹。
-1. 要更改标志，请用自定 `aem_icon.png` 义文件替换默认 `aem_icon.png` 文件。
+1. 导航到`www/wsmobile/images`文件夹。
+1. 要更改标志，请将默认的`aem_icon.png`文件替换为自定义的`aem_icon.png`文件。
 1. 在iOS设备或iOS模拟器上构建和运行AEM Forms应用程序。
 
-### 使用Eclipse自定义登录页面上的图像 {#to-customize-images-on-the-login-pages-using-eclipse-1}
+### 使用Eclipse {#to-customize-images-on-the-login-pages-using-eclipse-1}自定义登录页面上的图像
 
 1. 在Eclipse中打开Android项目。
 
-1. 导览至文 `assets/www/wsmobile/images`件夹。
-1. 要更改标志，请用自定 `aem_icon.png` 义文件替换默认 `aem_icon.png` 文件。
+1. 导航到`assets/www/wsmobile/images`文件夹。
+1. 要更改标志，请将默认的`aem_icon.png`文件替换为自定义的`aem_icon.png`文件。
 1. 在Android设备上构建和运行AEM Forms应用程序。
 
-### 使用Visual Studio自定义登录页面上的图像 {#to-customize-images-on-the-login-pages-using-visual-studio-1}
+### 使用Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}自定义登录页面上的图像
 
-1. 在Visual `MWSWindows.sln` Studio中打开项目。
+1. 在Visual Studio中打开`MWSWindows.sln`项目。
 
-1. 导览至文 `MWSWindows\www\wsmobile\images`件夹。
-1. 要更改标志，请用自定 `aem_icon.png` 义文件替换默认 `aem_icon.png` 文件。
+1. 导航到`MWSWindows\www\wsmobile\images`文件夹。
+1. 要更改标志，请将默认的`aem_icon.png`文件替换为自定义的`aem_icon.png`文件。
 1. 在Windows设备上构建和运行AEM Forms应用程序。

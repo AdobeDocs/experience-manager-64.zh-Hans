@@ -19,6 +19,6 @@ ht-degree: 0%
 ---
 
 
-# PDF Generator备份限制 {#pdf-generator-backup-limitations}
+# PDF Generator备份限制{#pdf-generator-backup-limitations}
 
 无法备份PDF生成器用于转换文件的临时目录。 即使服务将正确恢复，由于PDF Generator会按设置的时间间隔审阅和清除临时目录的内容，数据也会丢失。

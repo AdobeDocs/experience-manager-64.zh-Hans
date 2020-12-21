@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# 在OSGi环境上强化和保护AEM表单 {#hardening-and-securing-aem-forms-on-osgi-environment}
+# 在OSGi环境{#hardening-and-securing-aem-forms-on-osgi-environment}上强化和保护AEM表单
 
 了解在OSGi服务器上保护AEM Forms的建议和最佳实践。
 
@@ -34,15 +34,15 @@ ht-degree: 0%
 
 AEM Forms高度可定制，可在多种不同的环境中工作。 某些建议可能不适用于您的组织。
 
-## 安全传输层 {#secure-transport-layer}
+## 安全传输层{#secure-transport-layer}
 
 传输层安全漏洞是任何面向Internet或面向Intranet的应用程序服务器面临的首要威胁之一。 本节介绍针对这些漏洞强化网络上主机的过程。 它解决了网络分段、传输控制协议／因特网协议(TCP/IP)栈加固以及使用防火墙保护主机的问题。
 
-### 限制开放端点  {#limit-open-endpoints}
+### 限制开放端点{#limit-open-endpoints}
 
 组织可以具有外部防火墙来限制最终用户与AEM Forms发布场之间的访问。 组织还可以具有内部防火墙，以限制发布场与组织元素中的其他元素（例如，作者实例、处理实例、数据库）之间的访问。 允许防火墙允许最终用户和组织元素中访问有限数量的AEM FormsURL:
 
-#### 配置外部防火墙  {#configure-external-firewall}
+#### 配置外部防火墙{#configure-external-firewall}
 
 您可以配置外部防火墙以允许特定AEM FormsURL访问Internet。 要填写或提交自适应表单、HTML5、通信管理信件或登录AEM Forms服务器，必须访问这些URL:
 
@@ -96,7 +96,7 @@ AEM Forms高度可定制，可在多种不同的环境中工作。 某些建议�
  </tbody>
 </table>
 
-#### 配置内部防火墙  {#configure-internal-firewall}
+#### 配置内部防火墙{#configure-internal-firewall}
 
 您可以配置内部防火墙，以允许某些AEM Forms组件（例如，作者实例、处理实例、数据库）与发布场和拓扑图中提到的其他内部组件进行通信：
 
@@ -121,7 +121,7 @@ AEM Forms高度可定制，可在多种不同的环境中工作。 某些建议�
  </tbody>
 </table>
 
-#### 设置存储库权限和访问控制列表(ACL) {#setup-repository-permissions-and-access-control-lists-acls}
+#### 设置存储库权限和访问控制列表(ACL){#setup-repository-permissions-and-access-control-lists-acls}
 
 默认情况下，所有人都可以访问发布节点上的可用资产。 对所有资产启用只读访问权限。 需要启用匿名访问。 如果您计划限制表单视图并仅向经过身份验证的用户提交访问权限，则使用公用组仅允许经过身份验证的用户对发布节点上可用的资产具有只读访问权限。 以下位置／目录包含需要强化的表单资产（对已验证的用户来说，为只读访问）:
 
@@ -129,34 +129,34 @@ AEM Forms高度可定制，可在多种不同的环境中工作。 某些建议�
 * /etc.clientlibs/fd/&amp;ast;
 * /libs/fd/&amp;ast;
 
-## 安全地处理表单数据  {#securely-handle-forms-data}
+## 安全地处理表单数据{#securely-handle-forms-data}
 
 AEM Forms将数据存储到预定义的位置和临时文件夹。 您应保护数据，防止未经授权的使用。
 
-### 设置临时文件夹的定期清除 {#setup-periodic-cleanup-of-temporary-folder}
+### 设置临时文件夹{#setup-periodic-cleanup-of-temporary-folder}的定期清除
 
 为文件附件、验证或预览组件配置表单时，相应数据会存储在位于/tmp/fd/的发布节点上。 数据会定期清除。 您可以将默认数据清除作业修改为更具攻击性。 要修改计划清除数据的作业，请打开AEM Web Console，打开AEM Forms临时存储清除任务，并修改Cron表达式。
 
 在上述情况下，仅为经过身份验证的用户保存数据。 此外，访问控制列表(ACL)保护数据。 因此，修改数据清除是保护信息的额外步骤。
 
-### 保护表单门户提交操作保存的数据 {#secure-data-saved-by-forms-portal-submit-action}
+### 保护表单门户提交操作{#secure-data-saved-by-forms-portal-submit-action}保存的数据
 
 默认情况下，自适应表单的表单门户提交操作会将数据保存到发布节点的本地存储库中。 数据保存在/content/forms/fp。 **不建议在发布实例上存储数据。**
 
 您可以配置存储服务以通过线路发送到处理群集，而无需在发布节点上本地保存任何内容。 处理群集位于专用防火墙后的安全区域中，数据保持安全。
 
-使用AEM DS设置服务的处理服务器凭据将数据从发布节点发布到处理服务器。 建议使用具有对处理服务器存储库的读写访问权限的受限非管理用户的凭据。 有关详细信息，请参 [阅配置草稿和提交的存储服务](/help/forms/using/configuring-draft-submission-storage.md)。
+使用AEM DS设置服务的处理服务器凭据将数据从发布节点发布到处理服务器。 建议使用具有对处理服务器存储库的读写访问权限的受限非管理用户的凭据。 有关详细信息，请参阅[为草稿和提交配置存储服务](/help/forms/using/configuring-draft-submission-storage.md)。
 
-### 通过表单数据模型(FDM)处理的安全数据 {#secure-data-handled-by-form-data-model-fdm}
+### 通过表单数据模型(FDM){#secure-data-handled-by-form-data-model-fdm}处理的安全数据
 
 使用具有最低所需权限的用户帐户为表单数据模型(FDM)配置数据源。 使用管理帐户可以为未经授权的用户提供对元数据和模式实体的开放访问。\
 数据集成还提供对FDM服务请求授权的方法。 您可以插入执行前和执行后授权机制来验证请求。 在预填表单、提交表单以及通过规则调用服务时生成服务请求。
 
-**预处理授权：** 您可以在执行请求之前使用预处理授权来验证请求的真实性。 您可以使用输入、服务和请求详细信息来允许或停止执行请求。 如果停止执行，则可以返回数据集成异常OPERATION_ACCESS_DENIED。 您还可以在发送客户端请求以执行之前修改它。 例如，更改输入并添加其他信息。
+**预处理授权：** 您可以在执行请求之前使用预处理授权来验证请求的真实性。您可以使用输入、服务和请求详细信息来允许或停止执行请求。 如果停止执行，则可以返回数据集成异常OPERATION_ACCESS_DENIED。 您还可以在发送客户端请求以执行之前修改它。 例如，更改输入并添加其他信息。
 
-**流程后授权：** 在将结果返回给请求者之前，您可以使用后处理授权验证和控制结果。 您还可以过滤、修剪和插入其他数据到结果。
+**后处理授权：** 在将结果返回给请求者之前，您可以使用后处理授权验证和控制结果。您还可以过滤、修剪和插入其他数据到结果。
 
-### 限制用户访问 {#limit-user-access}
+### 限制用户访问{#limit-user-access}
 
 创作、发布和处理实例需要一组不同的用户角色。 请勿运行任何具有管理员凭据的实例。
 
@@ -188,14 +188,14 @@ AEM Forms将数据存储到预定义的位置和临时文件夹。 您应保护�
 * 对于远程保存和提交用例，请创建对crx-repository的content/form/fp路径具有读取、创建和修改权限的用户。
 * 将用户添加到工作流用户组，使用户能够使用AEM收件箱应用程序。
 
-## AEM Forms环境的安全内部网要素 {#secure-intranet-elements-of-an-aem-forms-environment}
+## AEM Forms环境{#secure-intranet-elements-of-an-aem-forms-environment}的安全内部网元素
 
 通常，处理群集和Forms Workflow加载项(JEE上的AEM Forms)在防火墙后运行。 因此，这些都被认为是安全的。 您仍可以执行几个步骤来强化这些环境:
 
-### 安全处理群集 {#secure-processing-cluster}
+### 安全处理群集{#secure-processing-cluster}
 
 处理群集在创作模式下运行，但不将其用于开发活动。 不允许将普通用户包括在处理群集的内容作者和表单用户组中。
 
-### 使用AEM最佳做法确保AEM Forms环境 {#use-aem-best-practices-to-secure-an-aem-forms-environment}
+### 使用AEM最佳做法保护AEM Forms环境{#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-此文档提供特定于AEM Forms环境的说明。 您应确保在部署时基础AEM安装是安全的。 有关详细说明，请参 [阅AEM安全核对清单](/help/sites-administering/security-checklist.md) 文档。
+此文档提供特定于AEM Forms环境的说明。 您应确保在部署时基础AEM安装是安全的。 有关详细说明，请参阅[AEM安全核对清单](/help/sites-administering/security-checklist.md)文档。

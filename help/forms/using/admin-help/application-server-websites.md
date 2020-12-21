@@ -18,12 +18,12 @@ ht-degree: 0%
 ---
 
 
-# 应用程序服务器网站 {#application-server-websites}
+# 应用程序服务器网站{#application-server-websites}
 
 此列表包含指向所有受支持的应用程序服务器的制造商网站的链接。
 
 **JBoss:** https://www.jboss.com/products/platforms/application
 
-**Oracle WebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
+**OracleWebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
 
 **IBM WebSphere:** www-01.ibm.com/software/websphere/

@@ -21,7 +21,7 @@ ht-degree: 15%
 
 >[!CAUTION]
 >
->自AEM 6.4起，已弃用经典UI。 有关公告，请参阅[已弃用和已删除功能](../release-notes/deprecated-removed-features.md)。 我们鼓励您使用触屏优化UI。 有关自定义项，请参阅[搜索彩块化](search-facets.md)。
+>自AEM 6.4起，已弃用经典UI。 有关公告，请参阅[已弃用和已删除的功能](../release-notes/deprecated-removed-features.md)。 我们鼓励您使用触屏优化UI。 有关自定义项，请参阅[搜索彩块化](search-facets.md)。
 
 ## 覆盖{#overlaying}
 

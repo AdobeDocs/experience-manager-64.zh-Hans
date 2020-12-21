@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# AEM文档服务概述 {#overview-of-aem-document-services}
+# AEM文档服务概述{#overview-of-aem-document-services}
 
 AEM文档服务是一套用于创建、组合和保护PDF文档的OSGi服务。 文档服务包含以下服务：
 
-## 输出服务 {#output-service}
+## 输出服务{#output-service}
 
 通过“输出”服务，您可以创建不同格式的文档，包括PDF、激光打印机格式和标签打印机格式。 激光打印机格式为PostScript和打印机控制语言(PCL)。 以下列表指定标签打印机格式：
 
@@ -40,11 +40,11 @@ AEM文档服务是一套用于创建、组合和保护PDF文档的OSGi服务。 
 
 可以使用以下四个输出服务操作：
 
-* **generatePDFOuput**: 将表单设计与数据合并以生成PDF文档
-* **generatePrintedOutput**: 将表单设计与表单数据合并，以生成要发送到激光打印机或标签网络打印机的文档
+* **generatePDFOuput**:将表单设计与数据合并以生成PDF文档
+* **generatePrintedOutput**:将表单设计与表单数据合并，以生成要发送到激光打印机或标签网络打印机的文档
 
-* **generatePDFOutputBatch**: 在一次调用中将多个模板与多个数据记录合并，以生成一批PDF文件。 还可以通过组合所有PDF来生成单个PDF
-* **generatePrintedOutputBatch**: 在一次调用中将多个模板与多个文档记录合并，以生成一批打印(PS、PCL、ZPL、DPL、IPL、TPCL)。 还可以选择生成单个打印文档。
+* **generatePDFOutputBatch**:在一次调用中将多个模板与多个数据记录合并，以生成一批PDF文件。还可以通过组合所有PDF来生成单个PDF
+* **generatePrintedOutputBatch**:在一次调用中将多个模板与多个文档记录合并，以生成一批打印(PS、PCL、ZPL、DPL、IPL、TPCL)。还可以选择生成单个打印文档。
 
 ## 汇编程序服务 {#assembler-service}
 
@@ -91,13 +91,13 @@ DDX文档可以指定具有以下特征的生成文档:
 * FTP
 * HTTP/HTTPS
 
-## 文档保障服务 {#doc-assurance-service}
+## 文档保障服务{#doc-assurance-service}
 
 文档保障服务可帮助您加密和解密文档，扩展Adobe Reader的功能并授予其他使用权限，并为文档添加数字签名。 您的用户可以与PDF forms和文档轻松交互，而您的组织可以提高安全性、归档和法规遵从性。
 
-文档保障服务包含三项服务： 签名、加密和读者扩展。
+文档保障服务包含三项服务：签名、加密和读者扩展。
 
-### 签名服务 {#signature-service}
+### 签名服务{#signature-service}
 
 签名服务允许您在AEM服务器上使用数字签名和文档。 例如，签名服务通常用于以下情况：
 
@@ -107,11 +107,11 @@ DDX文档可以指定具有以下特征的生成文档:
 
 签名服务访问存储在信任存储中的证书和凭据。
 
-### 加密服务 {#encryption-service}
+### 加密服务{#encryption-service}
 
 加密服务允许您加密和解密文档。 文档加密后，其内容将变得不可读。 您可以加密整个PDF文档（包括其内容、元数据和附件）、除元数据以外的所有内容，或仅加密附件。 授权用户可以解密文档以获得对其内容的访问。 如果PDF文档是使用口令加密的，则用户必须指定打开口令，才能在Adobe Reader或Acrobat查看文档。 如果PDF文档是使用证书加密的，则用户必须使用私钥（证书）解密PDF文档。 用于解密PDF文档的私钥必须与用于加密它的公钥相对应。
 
-### Reader扩展服务 {#reader-extension-service}
+### Reader扩展服务{#reader-extension-service}
 
 Reader扩展服务通过扩展Adobe Reader的功能以及额外的使用权限，使您的组织能够轻松共享交互式PDF文档。 Reader扩展服务可与Adobe Reader7.0或更高版本配合使用。 该服务向PDF文档添加使用权限。 此操作激活在使用Adobe Reader打开PDF文档时通常不可用的功能，如向文档添加注释、填写表单和保存文档。 第三方用户不需要额外的软件或插件即可与启用权限的文档配合使用。
 
@@ -128,8 +128,8 @@ Reader扩展服务通过扩展Adobe Reader的功能以及额外的使用权限�
 
 当在Adobe Reader打开启用权限的PDF文档时，这些特殊用户功能会自动激活。 当用户使用完启用权限的文档后，这些功能在Adobe Reader再次被禁用。 在用户收到另一个启用权限的PDF文档之前，它们一直处于禁用状态。
 
-开箱即用，DocAssurance服务不可用。 要配置DocAssurance服务，请参阅 [配置文档服务](/help/forms/using/install-configure-document-services.md)。
+开箱即用，DocAssurance服务不可用。 要配置DocAssurance服务，请参阅[配置文档服务](/help/forms/using/install-configure-document-services.md)。
 
-## 发送到打印机服务 {#send-to-printer-service}
+## 发送到打印机服务{#send-to-printer-service}
 
 “发送到打印机服务”提供API将文档发送到指定的打印机进行打印。

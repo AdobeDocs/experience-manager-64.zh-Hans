@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# HTML5表单的图片子句支持 {#picture-clause-support-for-html-forms}
+# 支持HTML5表单的Picture子句{#picture-clause-support-for-html-forms}
 
 HTML5表单支持XFA Picture子句（用于显示值）和格式化日期、文本和数字符号的值。 支持以下Picture子句表达式:
 
@@ -29,7 +29,7 @@ HTML5表单支持XFA Picture子句（用于显示值）和格式化日期、文�
 >
 >目前，Mobile Forms不支持编辑图片子句。 此外，不支持DateTime和Time Picture子句符号。
 
-## 支持的日期字段符号 {#supported-date-field-symbols}
+## 支持的日期字段符号{#supported-date-field-symbols}
 
 支持日期图片子句表达式:
 
@@ -56,15 +56,15 @@ HTML5表单支持XFA Picture子句（用于显示值）和格式化日期、文�
   </tr>
   <tr>
    <td>DD</td> 
-   <td>每月的零位(01-31)。<br /> </td> 
+   <td>每月的零位填充两位数(01-31)。<br /> </td> 
   </tr>
   <tr>
    <td>M</td> 
-   <td>1-或2位(1-12)年月。<br /> </td> 
+   <td>年度的1-或2位(1-12)月。<br /> </td> 
   </tr>
   <tr>
    <td>MM</td> 
-   <td>一年中的零位(01-12)。<br /> </td> 
+   <td>一年中的零填充两位数(01-12)月。<br /> </td> 
   </tr>
   <tr>
    <td>MMM</td> 
@@ -93,21 +93,21 @@ HTML5表单支持XFA Picture子句（用于显示值）和格式化日期、文�
  </tbody>
 </table>
 
-## 数字图片子句 {#numeric-picture-clause}
+## 数字图片子句{#numeric-picture-clause}
 
 HTML5表单支持数字图片符号。 但是，PDF forms和HTMLForms在支持方面存在差异。
 
-在 **PDF forms**&#x200B;中，数字被格式化，而与Picture子句中的符号数无关
+在&#x200B;**PDF forms**&#x200B;中，不管Picture子句中符号的数量如何，都格式化数字
 
-在 **HTMLForms**，仅当数字的数字小于Picture子句中符号的数目时，才格式化数字。
+在&#x200B;**HTMLForms**&#x200B;中，仅当数字的数字小于Picture子句中符号数时，才格式化数字。
 
-**示例**: 请考虑Picture子句： num{zzz,zzz,zz9}。
+**示例**:请考虑Picture子句：num{zzz,zzz,zz9}。
 
-数字 **10000** 在HTML和 **PDF forms中格** 式设置为10,000。
+数字&#x200B;**10000**&#x200B;在HTML和PDF forms中均格式化为&#x200B;**10,000**。
 
 数字1000000的格式设置为1,000,000PDF forms。 但是，在HTMLForms中，数字仍未格式化为1000000。
 
-HTMLForms中数字图片子句的 **支持表达式** :
+**HTMLForms**&#x200B;中Numeric Picture子句支持的表达式为：
 
 * num.integer{}
 * num.decimal{}
@@ -124,22 +124,22 @@ HTMLForms中数字图片子句的 **支持表达式** :
   </tr>
   <tr>
    <td>9</td> 
-   <td><strong>输出格式</strong>: 一个数字。 或者，如果输入数据为空或在相应位置有空格，则为零位数。<br /> </td> 
+   <td><strong>输出格式</strong>:一个数字。或者，如果输入数据为空或相应位置有空格，则为零位。<br /> </td> 
    <td>单位数</td> 
   </tr>
   <tr>
    <td>Z</td> 
-   <td><strong>输出格式</strong>: 一个数字。 或者，如果输入数据为空，或者空格，或者对应位置的零位。<br /> </td> 
+   <td><strong>输出格式</strong>:一个数字。或者，如果输入数据为空，或者空格，或者对应位置的零位。<br /> </td> 
    <td>单位数或空格</td> 
   </tr>
   <tr>
    <td>z</td> 
-   <td><strong>输出格式</strong>: 一个数字。 或者，如果输入数据为空、空格或相应位置的零位，则无济于事。<br /> </td> 
+   <td><strong>输出格式</strong>:一个数字。或者，如果输入数据为空、空格或相应位置的零位，则无用处。<br /> </td> 
    <td>一位数或无</td> 
   </tr>
   <tr>
    <td>错误</td> 
-   <td><strong>输出格式</strong>: 由指数符号(E)组成的浮点数的指数部分。 后跟可选的加号或减号。 后跟指数值。<br /> </td> 
+   <td><strong>输出格式</strong>:由指数符号(E)组成的浮点数的指数部分。后跟可选的加号或减号。 后跟指数值。<br /> </td> 
    <td>与输出格式相同</td> 
   </tr>
   <tr>
@@ -148,8 +148,8 @@ HTMLForms中数字图片子句的 **支持表达式** :
    <td><br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>S或S<br /> </td> 
-   <td>输出格式： 如果数字为负数，则为减号。 其他空间。<br /> </td> 
+   <td>S或s<br /> </td> 
+   <td>输出格式：如果数字为负数，则为减号。 其他空格。<br /> </td> 
    <td>如果数字为负，则减号。 数字为正时加号</td> 
   </tr>
   <tr>
@@ -200,7 +200,7 @@ HTMLForms中数字图片子句的 **支持表达式** :
  </tbody>
 </table>
 
-## 文本图片子句 {#text-picture-clause}
+## 文本图片子句{#text-picture-clause}
 
 HTML5表单支持以下文本图片子句表达式:
 

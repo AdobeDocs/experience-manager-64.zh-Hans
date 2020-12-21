@@ -17,11 +17,11 @@ ht-degree: 1%
 ---
 
 
-# 参考信模板 {#reference-letter-templates}
+# 参考信模板{#reference-letter-templates}
 
 在“对应管理”中，字母模板包含典型的表单字段、页眉和页脚等布局功能以及内容放置的空“目标区”。
 
-通信管理在AEM Forms包AEM- [FORMS中提供信件模板。-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES)。 有关安装包的信息，请参 [阅如何使用包](/help/sites-administering/package-manager.md)。 您可以根据品牌和业务需求在Designer中自定义模板。 该包包含以下模板：
+通信管理在AEM Forms包[AEM-FORMS中提供字母模板。-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES)。 有关安装包的信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。 您可以根据品牌和业务需求在Designer中自定义模板。 该包包含以下模板：
 
 * 经典
 * 经典Simple
@@ -62,7 +62,7 @@ Classic模板顶部带有徽标，适合用于普通的专业信件。
 
 使用经典简单模板创建的字母的PDF预览
 
-## 平衡左 {#balanced-left}
+## 平衡左{#balanced-left}
 
 “平衡左”模板在字母左侧包含徽标。
 
@@ -70,7 +70,7 @@ Classic模板顶部带有徽标，适合用于普通的专业信件。
 
 使用平衡左模板创建的字母的PDF预览
 
-## 平衡权 {#balanced-right}
+## 平衡右{#balanced-right}
 
 “平衡右侧”模板左侧有公司徽标，并为在字母本身上输入收件人地址提供空间。 “平衡右侧”模板还包含一个页脚，当您的字母具有多个页面时，该页脚会重新排列。
 
@@ -78,7 +78,7 @@ Classic模板顶部带有徽标，适合用于普通的专业信件。
 
 使用平衡右侧模板创建的字母的PDF预览
 
-## 左视 {#visual-left}
+## 可视左{#visual-left}
 
 “可视左侧”模板在页面左侧有一个侧盖，侧盖上放置有公司标志。 “可视左侧”模板有一个主题字段，但没有页脚。
 
@@ -86,7 +86,7 @@ Classic模板顶部带有徽标，适合用于普通的专业信件。
 
 使用左视模板创建的字母的PDF预览
 
-## 视觉顶部 {#visual-top}
+## 可视顶部{#visual-top}
 
 “视觉效果最佳”模板顶部有视觉效果。 “可视顶部”模板在页面本身中有一个用于输入收件人地址的字段。 可视顶部模板具有主题字段和页脚，用于重排扩展到多个页面的字母。
 
@@ -94,7 +94,7 @@ Classic模板顶部带有徽标，适合用于普通的专业信件。
 
 使用可视顶部模板创建的字母的PDF预览
 
-## 视觉顶部——经典 {#visual-top-classic}
+## 可视顶部——经典{#visual-top-classic}
 
 视觉效果顶部——经典模板在页面顶部有一个标题，带有公司标志。 “视觉效果最佳——经典”模板有一个用于输入主题的字段，但没有页脚。
 

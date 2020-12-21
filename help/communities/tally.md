@@ -24,21 +24,21 @@ Tally是一个抽象类，它提供一种标准方法，用于收集成员对特
 
 可通过扩展抽象计数类来创建自定义计数组件。
 
-[喜欢](essentials-liking.md) ，是一种简单的表达积极意见的方式。
+[](essentials-liking.md) Liking是一种简单的表达积极意见的方式。
 
-[表决](essentials-voting.md) ，是一种简单的表达积极或消极意见的方式。
+[沃](essentials-voting.md) 廷格是一种简单的表达积极或消极意见的方法。
 
-[评级](rating-basics.md) 是一种统计的实施，它使用星形系统来表达从正面到负面的各种观点。
+[Rating](rating-basics.md) 是一种运用星系系统表达各种观点的统计方法。
 
-自AEM 6.1起，投 *票组* 件不再可用。
+自AEM 6.1起，*poll*&#x200B;组件不再可用。
 
-[评论](reviews-basics.md) 是一个SCF组件，它是评论和评 [级的](essentials-comments.md)[混合](rating-basics.md)。
+[查](reviews-basics.md) 看SCF组件，它是评论和评 [](essentials-comments.md) 级的 [混合](rating-basics.md)。
 
-## 客户端必备工具 {#essentials-for-client-side}
+## 客户端{#essentials-for-client-side}的必备工具
 
 * [客户端自定义](client-customize.md)
 
-## 服务器端必备工具 {#essentials-for-server-side}
+## 服务器端{#essentials-for-server-side}的必备工具
 
 * [计数API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
@@ -46,19 +46,19 @@ Tally是一个抽象类，它提供一种标准方法，用于收集成员对特
 
 * [服务器端自定义](server-customize.md)
 
-### 访问已发布的计数(UGC) {#accessing-posted-tallies-ugc}
+### 访问已发布的计数(UGC){#accessing-posted-tallies-ugc}
 
 UGC应使用一种标准的协调方法进行仲裁。\
-请参 [阅调节用户生成的内容](moderate-ugc.md)。
+请参阅[协调用户生成的内容](moderate-ugc.md)。
 
-自AEM 6.1社区起，使用UGC的公 [用商店](working-with-srp.md) ，包括以程序方式访问UGC，而不管选择的存储选项（如ASRP、MSRP或JSRP）。
+自AEM 6.1社区起，对UGC使用[公用商店](working-with-srp.md)包括对UGC的程序化访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）。
 
 **UGC在存储库中的位置和格式可能会发生更改，但不会发出警告**。
 
 请参阅：
 
-* [存储资源提供程序概述](srp.md) -简介和存储库使用概述
-* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例
-* [使用SRP访问UGC](accessing-ugc-with-srp.md) —— 编码指南
+* [存储资源提供者概述](srp.md) -简介和存储库使用概述
+* [SRP和UGC Essentials](srp-and-ugc.md)  - SRP实用程序方法和示例
+* [使用SRP访问UGC](accessing-ugc-with-srp.md) -编码指南
 * [SocialUtils重构](socialutils.md) -将已弃用的实用程序方法映射到当前SRP实用程序方法
 

@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# HTML5表单与PDF forms之间的功能区别 {#feature-differentiation-between-html-forms-and-pdf-forms}
+# HTML5表单与PDF forms的功能区别{#feature-differentiation-between-html-forms-and-pdf-forms}
 
 下表指定了对HTML5表单和PDF forms提供的功能支持：
 
@@ -36,8 +36,8 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>签名字段<br /> </td> 
-   <td><strong>不支持</strong> “数字签名”，但会为纸 <strong>质文件(如签名</strong> )添加一个新的“徒手签名”字段。 您可以使用“涂写签名”字段在表单上 <strong>涂写其签</strong> 名。 签名将作为图像保存在表单上。 您可以在“涂写签名”字段中 <strong>保存地理位置</strong> 信息。</td> 
-   <td>可用于数字签名 <strong>的签名字段</strong>。</td> 
+   <td><strong>不支</strong> 持数字签名，但会为纸质 <strong>签名</strong> （如签名）添加新的“Scribble Signaturefield”。可以使用<strong>“涂写签名”</strong>字段在表单上涂写其签名。 签名将作为图像保存在表单上。 可以在<strong>“涂写签名”</strong>字段中保存地理位置信息。</td> 
+   <td>可用于<strong>数字签名</strong>的签名字段。</td> 
   </tr>
   <tr>
    <td>数据合并</td> 
@@ -51,12 +51,12 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>分页<br /> </td> 
-   <td><p>HTML5表单被分为面板和框，使其外观与PDF forms相似。 页面大小会动态计算。 如果HTML5表单中页面的所有内容被删除或标记为隐藏，则空白页面将被隐藏，空白页面上方和下方的页面之间不显示空白（空白）。</p> <p>如果数据合并或脚本向页面添加内容，则页面的长度会扩展以容纳新添加的内容。 表单中不会添加任何新页面以容纳新添加的内容。 </p> <p><strong>注意：</strong> 删除或隐藏HTML5表单中页面的所有内容后，空白页面（空白）在第1页到第2页之间保持可见，但在任何其他页面之间不可见。</p> </td> 
-   <td>PDF中的分页取决于数据内容合并或用户内容，并且页面计数会根据它而增加／减少。</td> 
+   <td><p>HTML5表单被分为面板和框，使其外观与PDF forms相似。 页面大小会动态计算。 如果HTML5表单中页面的所有内容被删除或标记为隐藏，则空白页面将被隐藏，空白页面上方和下方的页面之间不显示空白（空白）。</p> <p>如果数据合并或脚本向页面添加内容，则页面的长度会扩展以容纳新添加的内容。 表单中不会添加任何新页面以容纳新添加的内容。 </p> <p><strong>注意：</strong> 当HTML5表单中页面的所有内容被删除或标记为隐藏时，空白页面（空白）在第1页和第2页之间保持可见，但在任何其他页面之间则不可见。</p> </td> 
+   <td>PDF中的分页取决于数据内容合并或用户内容，并且页面数量会据此增加／减少。</td> 
   </tr>
   <tr>
    <td>页眉／页脚 </td> 
-   <td>支持. <br /> <br /> 由于HTML5移动表单不支持分页，因此页眉和页脚只显示一次。 但是，您可以在布局中设置它们，使其显示在移动表单预览的多个位置。<br /> </td> 
+   <td>支持. <br /> <br /> 由于HTML5移动表单不支持分页，因此页眉和页脚只显示一次。但是，您可以在布局中设置它们，使其显示在移动表单预览的多个位置。<br /> </td> 
    <td>支持.</td> 
   </tr>
   <tr>
@@ -66,12 +66,12 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>XFA Script API</td> 
-   <td>支持最常用的XFA脚本构造。 有关受支持构造的详细列表，请参阅 <a href="/help/forms/using/scripting-support.md">脚本支持</a>。</td> 
+   <td>支持最常用的XFA脚本构造。 有关受支持构造的详细列表，请参阅<a href="/help/forms/using/scripting-support.md">脚本支持</a>。</td> 
    <td>支持所有XFA脚本构造。</td> 
   </tr>
   <tr>
    <td>Acrobat脚本API </td> 
-   <td>HTML5表单支持最常用的API。 有关详细信息，请参 <a href="/help/forms/using/scripting-support.md">阅脚本支持</a>。</td> 
+   <td>HTML5表单支持最常用的API。 有关详细信息，请参阅<a href="/help/forms/using/scripting-support.md">脚本支持</a>。</td> 
    <td>如果PDF文件在Acrobat或Reader打开，它还支持Acrobat提供的所有脚本API。</td> 
   </tr>
   <tr>
@@ -82,5 +82,5 @@ ht-degree: 2%
  </tbody>
 </table>
 
-按照最佳实践为HTML5再现启用表单模板，并确保HTML5表单和基于XFA的PDF的行为和外观一致。 有关最佳实践的详细列表，请 [参阅设计HTML5表单的最佳实践。](/help/forms/using/best-practices-for-html5-forms.md)
+按照最佳实践为HTML5再现启用表单模板，并确保HTML5表单和基于XFA的PDF的行为和外观一致。 有关最佳实践的详细列表，请参阅[设计HTML5表单的最佳实践。](/help/forms/using/best-practices-for-html5-forms.md)
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 客户端自定义 {#client-side-customization}
+# 客户端自定义{#client-side-customization}
 
 | **[‹功能基本工具](essentials.md)** | **[服务器端自定义](server-customize.md)** |
 |---|---|
@@ -28,37 +28,37 @@ ht-degree: 0%
 
 叠加或扩展组件有两种主要方法。
 
-[对组件进行](#overlays) 覆盖会更改默认组件，并影响对组件的每个引用。
+[叠](#overlays) 加组件会更改默认组件并影响对组件的每个引用。
 
-[扩展](#extensions) 组件（以唯一名称命名）会限制更改的范围。 术语“extend”与“override”可互换使用。
+[扩](#extensions) 展组件（以唯一方式命名）会限制更改的范围。术语“extend”与“override”可互换使用。
 
-## 叠加 {#overlays}
+## 叠加{#overlays}
 
 覆盖组件是修改默认组件并影响所有使用默认组件的实例的方法。
 
-通过修改/apps目录中默认组件的副本&#x200B;**** ，而不是修改/libs目录中的原始&#x200B;**组件** 。 该组件使用相同的相对路径构建，但“libs”被替换为“apps”。
+通过修改/**apps**&#x200B;目录中默认组件的副本，而不是修改/**libs**&#x200B;目录中的原始组件，完成叠加。 该组件使用相同的相对路径构建，但“libs”被替换为“apps”。
 
 /apps目录是解析请求时首先搜索的位置，如果找不到，则使用位于/libs目录中的默认版本。
 
-不得修改/libs目录中的默认组件，因为以后的修补程序和升级可以在维护公共接口时以任何必要方式免费更改/libs目录。
+/libs目录中的默认组件绝不能修改，因为以后的修补程序和升级可以在维护公共接口时以任何必要方式免费更改/libs目录。
 
-这与扩展默 [认组件](#extensions) （其中希望修改特定用途）、创建组件的唯一路径以及依赖引用/libs目录中的原始默认组件作为超级资源类型不同。
+这与[扩展](#extensions)默认组件不同，在默认组件中，您希望修改特定用途，为组件创建唯一路径，并依赖引用/libs目录中的原始默认组件作为超级资源类型。
 
-有关覆盖注释组件的快速示例，请尝试“覆盖 [注释组件”教程](overlay-comments.md)。
+有关覆盖注释组件的快速示例，请尝试[覆盖注释组件教程](overlay-comments.md)。
 
-## 扩展 {#extensions}
+## 扩展{#extensions}
 
 扩展（覆盖）组件是一种修改特定用途的方法，不会影响使用默认值的所有实例。 扩展组件在/apps文件夹中以唯一方式命名，并引用/libs文件夹中的默认组件，因此不会修改组件的默认设计和行为。
 
-这与覆盖默认 [组件](#overlays) 不同，在默认组件中，Sling的性质会解析对应用程序／文件夹的相对引用，然后在libs/文件夹中进行搜索，从而全局修改组件的设计或行为。
+这与在libs/文件夹中搜索之前，将[覆盖](#overlays)默认组件不同，其中Sling的性质解析对apps/文件夹的相对引用，从而全局修改组件的设计或行为。
 
-有关扩展注释组件的快速示例，请尝试扩展 [注释组件教程](extend-comments.md)。
+有关扩展注释组件的快速示例，请尝试[扩展注释组件教程](extend-comments.md)。
 
-## Javascript绑定 {#javascript-binding}
+## Javascript绑定{#javascript-binding}
 
 组件的HBS脚本必须绑定到实现此功能的JavaScript对象、模型和视图。
 
-属性的值可 `data-scf-component` 以是默认值，如 **`social/tally/components/hbs/rating`**，或者是自定义功能的扩展（自定义）组件， **如weretail/components/hbs/rating**。
+`data-scf-component`属性的值可以是默认值，如&#x200B;**`social/tally/components/hbs/rating`**，或用于自定义功能的扩展（自定义）组件，如&#x200B;**weretail/components/hbs/rating**。
 
 要绑定组件，必须将整个组件脚本包含在&lt;div>元素中，并具有以下属性：
 
@@ -66,9 +66,9 @@ ht-degree: 0%
 
    解析到上下文中的id属性
 
-* `data-scf-component`=&quot;*&lt;resourceType>*
+* `data-scf-component`=&quot;*&lt;resourcetype>*
 
-例如，从 `/apps/weretail/components/hbs/rating/rating.hbs`:
+例如，从`/apps/weretail/components/hbs/rating/rating.hbs`:
 
 ```xml
 <div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 `{{properties.<property_name>}}`
 
-## 设置CSS外观 {#skinning-css}
+## 设置CSS {#skinning-css}外观
 
 自定义组件以匹配网站的整体主题可通过“设置外观”实现——在一定程度上更改颜色、字体、图像、按钮、链接、间距甚至定位。
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 1. 确定要更改的元素（例如，书写器区域、工具栏按钮、消息字体等）。
 1. 确定影响这些元素的CSS类／规则。
 1. 创建样式表文件(.css)。
-1. 将样式表包含在站点的客户[端库文](#clientlibs-for-scf)件夹(clientlibs)中，并确保它包含在模板和带ui:includeClientLib [的页面中](../../help/sites-developing/clientlibs.md)。
+1. 将样式表包含在站点的客户端库文件夹([clientlibs](#clientlibs-for-scf))中，并确保它包含在模板和具有[ui:includeClientLib](../../help/sites-developing/clientlibs.md)的页面中。
 
 1. 重新定义您在样式表中标识的(#2)CSS类和规则，并添加样式。
 
@@ -105,9 +105,9 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->前缀为scf-js-&amp; **ast的任何CSS类名称；** 在javascript代码中具有特定用途。 这些类影响组件的状态（例如，从隐藏切换到可见），不应覆盖也不应删除。
+>前缀为&#x200B;**scf-js-&amp;ast;**&#x200B;的任何CSS类名在javascript代码中具有特定用途。 这些类影响组件的状态（例如，从隐藏切换到可见），不应覆盖也不应删除。
 >
->而scf-js-&amp;ast; 类不影响样式，类名称可能用在样式表中，但须注意，由于它们控制元素的状态，可能会产生副作用。
+>而scf-js-&amp;ast;类不影响样式，类名称可能用在样式表中，但须注意，由于它们控制元素的状态，可能会产生副作用。
 
 ## 扩展Javascript {#extending-javascript}
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 1. 扩展方法
 1. 使用SCF.registerComponent()注册所有具有默认值或自定义对象和视图的方法。
 
-### forum.js: 论坛扩展示例- HBS  {#forum-js-sample-extension-of-forum-hbs}
+### forum.js:论坛扩展示例- HBS {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -144,39 +144,39 @@ ht-degree: 0%
 })($CQ, _, Backbone, SCF);
 ```
 
-## 脚本标记 {#script-tags}
+## 脚本标记{#script-tags}
 
 脚本标签是客户端框架的固有部分。 它们是帮助将服务器端生成的标记与客户端的型号和视图绑定在一起的粘合剂。
 
-在覆盖或覆盖组件时，不应删除SCF脚本中的脚本标签。 为在HTML中注入JSON而自动创建的SCF脚本标记使用属性 `data-scf-json=`true标识。
+在覆盖或覆盖组件时，不应删除SCF脚本中的脚本标签。 为在HTML中注入JSON而自动创建的SCF脚本标记使用属性`data-scf-json=`true进行标识。
 
-## SCF的客户端库 {#clientlibs-for-scf}
+## SCF的客户端库{#clientlibs-for-scf}
 
-客户端 [库](../../help/sites-developing/clientlibs.md) (clientlibs)的使用提供了一种组织和优化用于在客户端上呈现内容的Javascript和CSS的方法。
+使用[客户端库](../../help/sites-developing/clientlibs.md)(clientlibs)提供了一种组织和优化用于在客户端上呈现内容的Javascript和CSS的方法。
 
 SCF的clientlibs对于两个变体遵循非常特定的命名模式，只有在类别名中存在“author”时，该模式才会有所不同：
 
 | Clientlib变体 | 类别属性的模式 |
 |--- |--- |
-| 完整的clientlib | cq.social.hbs.&lt;组件名称> |
-| 作者clientlib | cq.social.author.hbs.&lt;组件名称> |
+| 完整的clientlib | cq.social.hbs.&lt;component name=&quot;&quot;> |
+| 作者clientlib | cq.social.author.hbs.&lt;component name=&quot;&quot;> |
 
-### 完整客户端库 {#complete-clientlibs}
+### 完整的Clientlibs {#complete-clientlibs}
 
 完整（非作者）clientlib包含依赖项，并且便于与ui:includeClientLib一起使用。
 
 以下版本位于：
 
-* /etc/clientlibs/social/hbs/&lt;component name>
+* /etc/clientlibs/social/hbs/&lt;组件名称>
 
 例如：
 
-* 客户端文件夹节点： /etc/clientlibs/social/hbs/forum
-* 类别属性： cq.social.hbs.forum
+* 客户端文件夹节点：/etc/clientlibs/social/hbs/forum
+* 类别属性：cq.social.hbs.forum
 
-“社 [区组件”指南](components-guide.md) ,列表每个SCF组件所需的完整客户端库。
+[社区组件指南](components-guide.md)列表每个SCF组件所需的完整客户端库。
 
-[Clientlibs for Communities组件介绍](clientlibs.md) 如何将clientlibs添加到页面。
+[社区组件的](clientlibs.md) Clientlibs介绍如何将Clientlibs添加到页面。
 
 ### 作者Clientlibs {#author-clientlibs}
 
@@ -190,19 +190,19 @@ SCF的clientlibs对于两个变体遵循非常特定的命名模式，只有在�
 
 例如：
 
-* 客户端文件夹节点： /libs/social/forum/hbs/forum/clientlibs
-* 类别属性： cq.social.author.hbs.forum
+* 客户端文件夹节点：/libs/social/forum/hbs/forum/clientlibs
+* 类别属性：cq.social.author.hbs.forum
 
-注意： 虽然作者clientlibs从不嵌入其他库，但他们会列表其依赖关系。 嵌入到其他库时，依赖项不会自动拉入，还必须嵌入。
+注意：虽然作者clientlibs从不嵌入其他库，但他们会列表其依赖关系。 嵌入到其他库时，依赖项不会自动拉入，还必须嵌入。
 
-通过在“社区组件”指南中为每个SCF组件列出的clientlib中插入“author”，可以识别所需的 [作者clientlib](components-guide.md)。
+通过在[社区组件指南](components-guide.md)中为每个SCF组件列出的clientlib中插入“author”，可以识别所需的作者客户端。
 
-### 使用注意事项 {#usage-considerations}
+### 使用注意事项{#usage-considerations}
 
 每个站点在管理客户端库方面都有所不同。 各种因素包括：
 
-* 总体速度： 可能是希望网站能够响应，但第一页的加载速度会稍慢，这是可以接受的。 如果许多页面使用相同的Javascript，则各种Javascript可嵌入到一个clientlib中，并从要加载的第一页引用。 此次下载中的Javascript仍保持缓存状态，从而最大限度地减少后续页面的下载数据量。
-* 短时间到首页： 也许最好让第一页快速加载。 在这种情况下，Javascript位于多个小文件中，只在需要时引用。
+* 总体速度：可能是希望网站能够响应，但第一页的加载速度会稍慢，这是可以接受的。 如果许多页面使用相同的Javascript，则各种Javascript可嵌入到一个clientlib中，并从要加载的第一页引用。 此次下载中的Javascript仍保持缓存状态，从而最大限度地减少后续页面的下载数据量。
+* 短时间到首页：也许最好让第一页快速加载。 在这种情况下，Javascript位于多个小文件中，只在需要时引用。
 * 第一页加载与后续下载之间的平衡。
 
 | **[‹功能基本工具](essentials.md)** | **[服务器端自定义](server-customize.md)** |

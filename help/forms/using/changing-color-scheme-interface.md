@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# 更改接口的颜色方案 {#changing-the-color-scheme-of-the-interface}
+# 更改接口{#changing-the-color-scheme-of-the-interface}的颜色方案
 
-您可以修改AEM Forms工作区用户界面部分的颜色方案以满足您的要求。 以下是一些典型颜色方案自定义的示例。 除了本文中讨论的步骤之外，请参阅AEM Forms工 [作区自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)。
+您可以修改AEM Forms工作区用户界面部分的颜色方案以满足您的要求。 以下是一些典型颜色方案自定义的示例。 除本文讨论的步骤外，请参阅[AEM Forms工作区自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)。
 
-## Top navigation bar {#top-navigation-bar}
+## 顶部导航栏{#top-navigation-bar}
 
-### 使用背景图像 {#using-background-image}
+### 使用背景图像{#using-background-image}
 
 更新AEM Forms工作区顶部的导航栏。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关WebDAV访问的详细信息，请参 [阅https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html)。
+   >有关WebDAV访问的详细信息，请参阅[https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html)。
 
 1. 通过添加以下样式，在/apps/ws/css/newStyle.css中引用新的背景图像。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
    }
    ```
 
-### 在CSS中使用颜色属性 {#using-color-property-in-css}
+### 在CSS {#using-color-property-in-css}中使用颜色属性
 
 1. 在newStyle.css中添加以下样式，网址为/apps/ws/css
 
@@ -54,10 +54,10 @@ ht-degree: 0%
    }
    ```
 
-## 类别组件 {#category-component}
+## 类别组件{#category-component}
 
-类别组件在左面板中显示任务的各种类别。 要更改其颜色，请在CSS文件的元 `.category` 素中定义背景颜色。
+类别组件在左面板中显示任务的各种类别。 要更改其颜色，请在CSS文件的`.category`元素中定义背景颜色。
 
-## 任务组件 {#task-component}
+## 任务组件{#task-component}
 
 任务显示在称为TaskList组件的中间面板中。 要更改其颜色，请修改与样式表中的。任务选择器关联的样式。

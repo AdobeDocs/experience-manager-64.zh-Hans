@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# 在AEM Forms工作区中集成第三方应用程序 {#integrating-third-party-applications-in-aem-forms-workspace}
+# 在AEM Forms工作区{#integrating-third-party-applications-in-aem-forms-workspace}中集成第三方应用程序
 
 AEM Forms工作区支持对表单和文档的任务分配和完成活动的管理。 这些表单和文档可以是以XDP、PDF、HTML或Flex格式呈现的XDPForms、Flex®表单或指南（已弃用）。
 
@@ -24,28 +24,28 @@ AEM Forms工作区支持对表单和文档的任务分配和完成活动的管�
 
 例如，让我们将Correponsement Management视为与AEM Forms工作区集成的示例候选。 通信管理有“信件”的概念，可以呈现并允许行动。
 
-## 创建对应管理资产 {#create-correspondence-management-assets}
+## 创建对应管理资产{#create-correspondence-management-assets}
 
-开始，方法是创建在AEM Forms工作区中呈现的示例Correndence Management模板。 有关详细信息，请 [参阅创建信函模板](/help/forms/using/create-letter.md)。
+开始，方法是创建在AEM Forms工作区中呈现的示例Correndence Management模板。 有关详细信息，请参阅[创建字母模板](/help/forms/using/create-letter.md)。
 
-访问URL中的“对应管理”模板，验证“对应管理”模板是否可以成功呈现。 URL的模式与 `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+访问URL中的“对应管理”模板，验证“对应管理”模板是否可以成功呈现。 URL的模式与`https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`类似
 
-其 `encodedLetterId` 中是URL编码的字母Id。 在Workbench中为工作区任务定义渲染流程时，指定相同的字母Id。
+其中`encodedLetterId`是URL编码的字母Id。 在Workbench中为工作区任务定义渲染流程时，指定相同的字母Id。
 
-## 创建任务以在AEM Workspace中呈现和提交字母 {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## 创建任务以在AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}中呈现和提交字母
 
 在执行这些步骤之前，请确保您是以下组的成员：
 
 * cm-agent-users
 * 工作区用户
 
-有关详细信息，请参 [阅添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md)。
+有关详细信息，请参阅[添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md)。
 
 使用以下步骤创建任务，在AEM Workspace中渲染和提交字母：
 
 1. 启动工作台。 以管理员身份登录到localhost。
-1. 单击“文件”>“新建”>“应用程序”。 在“应用程序名称”字段中，输 `CMDemoSample` 入，然后单击“完成”。
-1. 选 `CMDemoSample/1.0` 择并右键单击 `NewProcess`。 在名称字段中，输入， `CMRenderer` 然后单击完成。
+1. 单击“文件”>“新建”>“应用程序”。 在“应用程序名称”字段中，输入`CMDemoSample`，然后单击“完成”。
+1. 选择`CMDemoSample/1.0`并右键单击`NewProcess`。 在名称字段中，输入`CMRenderer`，然后单击完成。
 1. 拖动开始点活动选取器并进行配置：
 
    1. 在演示文稿数据中，选择使用CRX资产。
@@ -56,7 +56,7 @@ AEM Forms工作区支持对表单和文档的任务分配和完成活动的管�
 
       ![字母](assets/lettertab.png)
 
-   1. 选择相应的字母，然后单击“ **确定**”。
+   1. 选择相应的字母，然后单击&#x200B;**确定**。
 
 1. 单击“管理操作用户档案”。 将显示“管理操作用户档案”对话框。 确保正确选择渲染进程和提交进程。
 1. 要使用数据XML文件打开该字母，请浏览并选择“准备数据进程”中的相应数据文件。
@@ -101,12 +101,13 @@ AEM Forms工作区支持对表单和文档的任务分配和完成活动的管�
    }
    ```
 
-   [获取文件](assets/dscsample.zip)下载DSC: 上面附加的文件中提供 `DSCSample.zip` 示例DSC。 下载并解压缩 `DSCSample.zip` 文件。 在使用DSC服务之前，您需要配置它。 有关信息，请 [参阅配置DSC服务](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)。
+   [获取](assets/dscsample.zip)
+文件下载DSC:上面附加的文件中提供 `DSCSample.zip` 示例DSC。下载并解压缩`DSCSample.zip`文件。 在使用DSC服务之前，您需要配置它。 有关信息，请参阅[配置DSC服务](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)。
 
-   在“定义活动”对话框中，选择相应的活动，如getLetterInstanceInfo，然后单击“ **确定**”。
+   在“定义活动”对话框中，选择相应的活动，如getLetterInstanceInfo，然后单击&#x200B;**确定**。
 
 1. 部署应用程序。 如果出现提示，请登记并保存资产。
-1. 登录到AEM forms工作区 `https://[server]:[port]/lc/content/ws`。
+1. 登录到位于`https://[server]:[port]/lc/content/ws`的AEM forms工作区。
 1. 打开您添加的任务,CMRenderer。 出现“Corresponce Management（通信管理）”信函。
 
    ![cminworkspace](assets/cminworkspace.png)

@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 在ToDo列表中显示其他数据 {#displaying-additional-data-in-todo-list}
+# 在ToDo列表{#displaying-additional-data-in-todo-list}中显示其他数据
 
 默认情况下，AEM Forms工作区待办事项列表显示任务显示名称和说明。 但是，您可以添加其他信息，如创建日期、截止日期。 您还可以添加图标并更改显示屏的样式。
 
@@ -25,18 +25,18 @@ ht-degree: 0%
 
 本文详细介绍了在ToDo列表中为每个任务添加要显示的信息的步骤。
 
-## 可添加的内容 {#what-can-be-added}
+## 可以添加的内容{#what-can-be-added}
 
-您可以添加服务器发 `task.json` 送的信息。 该信息可以添加为纯文本，也可以使用样式设置信息的格式。
+可以添加服务器发送的`task.json`中的可用信息。 该信息可以添加为纯文本，也可以使用样式设置信息的格式。
 
-有关JSON对象描述的详细信息，请参 [阅此](/help/forms/using/html-workspace-json-object-description.md) 文章。
+有关JSON对象描述的详细信息，请参阅[此](/help/forms/using/html-workspace-json-object-description.md)文章。
 
-## 在任务上显示信息 {#displaying-information-on-a-task}
+## 显示任务{#displaying-information-on-a-task}上的信息
 
-1. 按照AEM Forms [工作区自定义的通用步骤操作](/help/forms/using/generic-steps-html-workspace-customization.md)。
-1. 要显示任务的附加信息，必须在任务块中添加相应的键值对 `translation.json`。
+1. 按照[AEM Forms工作区自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)操作。
+1. 要显示任务的附加信息，必须在`translation.json`的任务块中添加相应的键值对。
 
-   例如，英 `/apps/ws/locales/en-US/translation.json` 语更改：
+   例如，更改`/apps/ws/locales/en-US/translation.json`表示英语：
 
    ```
    "task" : {
@@ -121,9 +121,9 @@ ht-degree: 0%
    }
    ```
 
-## 为新属性定义CSS {#defining-css-for-the-new-property}
+## 为新属性{#defining-css-for-the-new-property}定义CSS
 
-1. 您可以对添加到任务的信息（属性）应用样式。 为此，您需要为添加到的新属性添加样式信息 `/apps/ws/css/newStyle.css`。
+1. 您可以对添加到任务的信息（属性）应用样式。 为此，您需要为添加到`/apps/ws/css/newStyle.css`的新属性添加样式信息。
 
    例如，添加：
 
@@ -135,7 +135,7 @@ ht-degree: 0%
    }
    ```
 
-## 在HTML模板中添加条目 {#adding-entry-in-the-html-template}
+## 在HTML模板{#adding-entry-in-the-html-template}中添加条目
 
 最后，您需要在开发包中包含要添加到任务的每个属性的条目。 要创建一个，请参阅构建AEM Forms工作区代码。
 
@@ -144,9 +144,9 @@ ht-degree: 0%
    * 从: `/libs/ws/js/runtime/templates/`
    * 到: `/apps/ws/js/runtime/templates/`
 
-1. 将新信息添加到 `/apps/ws/js/runtime/templates/task.html`。
+1. 将新信息添加到`/apps/ws/js/runtime/templates/task.html`。
 
-   例如，添加 `div class="taskProperties"`:
+   例如，在`div class="taskProperties"`下添加：
 
    ```
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>

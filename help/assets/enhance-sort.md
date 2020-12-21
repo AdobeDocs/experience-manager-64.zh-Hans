@@ -87,5 +87,5 @@ AEM Assets允许您按时间顺序对时间轴条目进行排序，如批注、�
 
 1. 单击／点按&#x200B;**[!UICONTROL Date]**&#x200B;标签旁的&#x200B;**[!UICONTROL 排序]**&#x200B;图标。 根据您的选择，注释会按时间顺序／时间顺序排列，按时间顺序或相反的时间顺序添加到资产中。
 
-   ![chlimage_1-401](assets/chlimage_1-401.png)
+   ![chlimage_1-481](assets/chlimage_1-401.png)
 

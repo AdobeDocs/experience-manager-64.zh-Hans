@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# Acrobat Reader DC扩展使用的证书类型 {#certificate-types-used-by-acrobat-reader-dc-extensions}
+# Acrobat Reader DC扩展{#certificate-types-used-by-acrobat-reader-dc-extensions}使用的证书类型
 
 证书查看器提供有关证书的以下信息：
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 * 有效期
 * Acrobat Reader DC扩展使用权
 
-## 证书“友好”名称 {#certificate-friendly-name}
+## 证书“友好”名称{#certificate-friendly-name}
 
 Acrobat Reader DC扩展证书的“友好”名称是描述证书属性的字符串，如下例所示：
 
@@ -35,17 +35,17 @@ ARE 2D条形码完整生产V6.1 P8 0002054
 
 该字符串包含以下元素：
 
-**证书类型：** 描述证书激活的AEM表单模块以及激活级别，如ARE 2D条形码已满。 有关可用证书类型的列表，请参阅“证书用户档案”部分表中的“类型”列。
+**证书类型：** 描述证书激活的AEM表单模块以及激活级别，如ARE 2D条形码已满。有关可用证书类型的列表，请参阅“证书用户档案”部分表中的“类型”列。
 
-**部署类型：** 指示证书的预期用途，如生产。 值可以是“评估”或“生产”。 有关与每个证书类型关联的部署类型列表，请参阅“证书用户档案”部分表中的“部署类型”列。
+**部署类型：** 指示证书的预期用途，如生产。值可以是“评估”或“生产”。 有关与每个证书类型关联的部署类型列表，请参阅“证书用户档案”部分表中的“部署类型”列。
 
-**使用权限版本：** 描述证书可用于的使用权限算法版本，如V6.1。此版本不表示Acrobat或Acrobat Reader DC扩展的版本。
+**使用权限版** 本：描述证书可用于的使用权限算法版本，如V6.1。此版本不表示Acrobat或Acrobat Reader DC扩展的版本。
 
-**用户档案代码：** 用户档案代码是完整证书属性的简写说明，如P8。 有关与每个文件类型关联的列表代码的用户档案，请参阅“证书用户档案”部分表中的用户档案代码列。
+**用户档案代** 码：用户档案代码是完整证书属性的简写说明，例如P8。有关与每个文件类型关联的列表代码的用户档案，请参阅“证书用户档案”部分表中的用户档案代码列。
 
-**序列号：** Adobe颁发的每个证书都分配有序列号，如0002054。 Adobe企业支持或Adobe企业帐户代表可以使用此序列号将证书跟踪到特定产品订单或OEM关系。
+**序列号：** Adobe颁发的每个证书都分配有序列号，如0002054。Adobe企业支持或Adobe企业帐户代表可以使用此序列号将证书跟踪到特定产品订单或OEM关系。
 
-## 证书用户档案 {#certificate-profiles}
+## 证书用户档案{#certificate-profiles}
 
 下表列表了您在分析Acrobat Reader DC扩展证书时可能遇到的证书用户档案。
 
@@ -109,44 +109,44 @@ ARE 2D条形码完整生产V6.1 P8 0002054
   </tr> 
   <tr> 
    <td><p>I10</p></td> 
-   <td><p>Forms; 可供OEM使用。</p></td> 
+   <td><p>Forms;可供OEM使用。</p></td> 
    <td><p>最大</p></td> 
    <td><p>生产和评估</p></td> 
   </tr> 
   <tr> 
    <td><p>I11</p></td> 
-   <td><p>Forms; 可供OEM使用。</p></td> 
+   <td><p>Forms;可供OEM使用。</p></td> 
    <td><p>最大</p></td> 
    <td><p>生产和评估</p></td> 
   </tr> 
   <tr> 
    <td><p>I12</p></td> 
-   <td><p>仅签名； 可供OEM使用。</p></td> 
+   <td><p>仅签名；可供OEM使用。</p></td> 
    <td><p>最大</p></td> 
    <td><p>生产和评估</p></td> 
   </tr> 
   <tr> 
    <td><p>I13</p></td> 
-   <td><p>仅限脱机注释； 可供OEM使用。</p></td> 
+   <td><p>仅限脱机注释；可供OEM使用。</p></td> 
    <td><p>最大</p></td> 
    <td><p>生产和评估</p></td> 
   </tr> 
   <tr> 
    <td><p>I14</p></td> 
-   <td><p>仅注释； 可供OEM使用。</p></td> 
+   <td><p>仅注释；可供OEM使用。</p></td> 
    <td><p>最大</p></td> 
    <td><p>生产和评估</p></td> 
   </tr> 
   <tr> 
    <td><p>I15</p></td> 
-   <td><p>完全权限； 可供OEM使用。</p></td> 
+   <td><p>完全权限；可供OEM使用。</p></td> 
    <td><p>最大</p></td> 
    <td><p>生产和评估</p></td> 
   </tr> 
  </tbody> 
 </table>
 
-## 有效期 {#validity-period}
+## 有效期{#validity-period}
 
 评估证书颁发给客户和开发人员，以便他们能够评估和开发产品的示例应用程序。 这些证书的有效期为60至90天。 它们将在问题数据之后的第二个月结束时到期。
 
@@ -154,13 +154,13 @@ ARE 2D条形码完整生产V6.1 P8 0002054
 
 Adobe内部使用证书用于Adobe，以支持软件开发、集成、原型构建和演示。 这些证书的有效期为自发行之日起两年。
 
-生产证书将颁发给购买Acrobat Reader DC扩展的客户。 这些证书在证书颁发机构(CA)允许的最长期限内有效，如“证书 *用户档案* ”表中所示。
+生产证书将颁发给购买Acrobat Reader DC扩展的客户。 这些证书在证书颁发机构(CA)允许的最长期限内有效，在“证书用户档案”表中显示为&#x200B;*Max*。
 
-## Acrobat Reader DC扩展使用权 {#acrobat-reader-dc-extensions-usage-rights}
+## Acrobat Reader DC扩展使用权{#acrobat-reader-dc-extensions-usage-rights}
 
 在证书查看器中检查Acrobat Reader DC扩展证书时，可以从“详细信息”选项卡（如果已配置）中选择使用权限项，以查看证书可启用的Adobe Reader使用权限的详细列表。 在特定文档上启用的使用权限可以是由证书启用的使用权限的子集。
 
-如果非协作环境需要在线注释，请与Adobe支持联系以了解更多信息。 Mode属性与部署类型匹配，是生 *产* 或评 *估*。
+如果非协作环境需要在线注释，请与Adobe支持联系以了解更多信息。 Mode属性与部署类型匹配，并且是&#x200B;*production*&#x200B;或&#x200B;*evaluation*。
 
 允许的Acrobat Reader DC扩展使用权包含一个或多个特定元素。 这些元素被用于不同的组合中，以实现各种授权产品功能。
 

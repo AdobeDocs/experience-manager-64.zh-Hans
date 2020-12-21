@@ -16,37 +16,40 @@ ht-degree: 0%
 ---
 
 
-# 通过延迟加载提高大型表单的性能 {#improve-performance-of-large-forms-with-lazy-loading}
+# 通过延迟加载{#improve-performance-of-large-forms-with-lazy-loading}提高大型表单的性能
 
-## 延迟加载简介 {#introduction-to-lazy-loading}
+## {#introduction-to-lazy-loading}延迟加载简介
 
 当表单变得庞大而复杂，有成百上千个字段时，最终用户在运行时渲染表单时会经历很长的响应时间。 为了最大限度地缩短响应时间，自适应表单允许您将表单分解为逻辑片段，并配置为延迟片段的初始化或加载，直到片段需要可见。 这称为延迟加载。 此外，一旦用户导航到表单中的其他部分并且片段不再可见，将卸载为延迟加载配置的片段。
 
 在配置延迟加载之前，我们先了解要求和准备步骤。
 
-## 准备配置延迟加载 {#preparing-to-configure-lazy-loading}
+## 准备配置延迟加载{#preparing-to-configure-lazy-loading}
 
 在自适应表单中配置片段的延迟加载之前，定义策略以创建片段、确定脚本中使用的值或其他片段中引用的值，以及定义规则以控制延迟加载片段中字段的可见性，这一点很重要。
 
-* **识别和创建片段**&#x200B;您只能配置自适应表单片段以延迟加载。 片段是驻留在自适应表单外并可跨表单重复使用的独立片段。 因此，实施延迟加载的第一步是在表单中识别逻辑部分并将其转换为片段。 您可以从头创建片段或将现有表单面板另存为片段。
+* **识别和创建片**
+段您只能配置自适应表单片段以延迟加载。片段是驻留在自适应表单外并可跨表单重复使用的独立片段。 因此，实施延迟加载的第一步是在表单中识别逻辑部分并将其转换为片段。 您可以从头创建片段或将现有表单面板另存为片段。
 
-   有关创建片段的详细信息，请参 [阅自适应表单片段](/help/forms/using/adaptive-form-fragments.md)。
+   有关创建片段的详细信息，请参阅[自适应表单片段](/help/forms/using/adaptive-form-fragments.md)。
 
-* **识别和标记基于Forms**&#x200B;的全局价值交易涉及动态元素，从用户处捕获相关数据并处理它以简化表单填写体验。 例如，表单的片段X中有字段A，其值决定了其他片段中字段B的有效性。 在这种情况下，如果将片段X标记为延迟加载，则字段A的值必须可用于验证字段B，即使片段X未加载也是如此。 为此，您可以将字段A标记为全局字段，这可确保其值在片段X未加载时可用于验证字段B。
+* **识别和标记全局**
+值基于表单的交易涉及动态元素，从用户处捕获相关数据并处理它以简化表单填写体验。例如，表单的片段X中有字段A，其值决定了其他片段中字段B的有效性。 在这种情况下，如果将片段X标记为延迟加载，则字段A的值必须可用于验证字段B，即使片段X未加载也是如此。 为此，您可以将字段A标记为全局字段，这可确保其值在片段X未加载时可用于验证字段B。
 
-   有关如何使字段值变为全局的信息，请参阅配 [置延迟加载](/help/forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)。
+   有关如何使字段值变为全局的信息，请参见[配置延迟加载](/help/forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p)。
 
-* **编写规则以控制字段的可见性** Forms包含一些字段和部分，这些字段和部分不适用于所有用户和所有条件。 Forms的作者和开发人员使用可见性或显示隐藏规则，根据用户输入控制其可见性。 例如，在表单的“就业状态”字段中选择“失业”的用户不会看到“办公地址”字段。 有关编写规则的详细信息，请参阅 [使用规则编辑器](/help/forms/using/rule-editor.md)。
+* **编写规则以控制字段的可**
+见性表单包括某些字段和部分，这些字段和部分不适用于所有用户和所有条件。Forms的作者和开发人员使用可见性或显示隐藏规则，根据用户输入控制其可见性。 例如，在表单的“就业状态”字段中选择“失业”的用户不会看到“办公地址”字段。 有关编写规则的详细信息，请参阅[使用规则编辑器](/help/forms/using/rule-editor.md)。
 
    您可以在懒惰加载的片段中利用可见性规则，以便条件字段仅在需要时才显示。 此外，将条件字段标记为全局，以在懒惰加载的片段的可见性表达式中引用它。
 
-## 配置延迟加载 {#configuring-lazy-loading}
+## 配置延迟加载{#configuring-lazy-loading}
 
 请执行以下步骤以在自适应表单片段上启用延迟加载：
 
 1. 在创作模式下打开自适应表单，其中包含要启用以进行延迟加载的片段。
-1. 选择自适应表单片段并点 ![按cmppr](assets/cmppr.png)。
-1. 在提要栏中，懒 **[!UICONTROL 惰地启用加载片段]** ，然后点 **按完成**。
+1. 选择自适应表单片段，然后点按![cmppr](assets/cmppr.png)。
+1. 在提要栏中，启用&#x200B;**[!UICONTROL 延迟加载片段]**&#x200B;并点按&#x200B;**完成**。
 
    ![为自适应表单片段启用延迟加载](assets/lazy-loading-fragment.png)
 
@@ -55,13 +58,13 @@ ht-degree: 0%
 您可以将松散加载片段中对象的值标记为全局值，以便在未加载包含的片段时，这些值可用于脚本。 执行以下操作：
 
 1. 在创作模式下打开自适应表单片段。
-1. 点按要将其值标记为全局的字段，然后点按 ![](assets/cmppr.png)。
-1. 在提要栏中，启 **[!UICONTROL 用延迟加载期间的使用值]**。
+1. 点按要将其值标记为全局的字段，然后点按![](assets/cmppr.png)。
+1. 在提要栏中，启用&#x200B;**[!UICONTROL 在延迟加载期间使用值]**。
    ![侧栏中的延迟加载字段](assets/enable-lazy-loading.png)
 
    该值现在标记为全局，即使卸载包含的片段，也可在脚本中使用。
 
-## 配置延迟加载的注意事项和最佳实践 {#considerations-and-best-practices-for-configuring-lazy-loading}
+## 配置延迟加载{#considerations-and-best-practices-for-configuring-lazy-loading}的注意事项和最佳实践
 
 处理延迟加载时要记住的一些限制、建议和要点如下：
 
@@ -73,14 +76,14 @@ ht-degree: 0%
 * 考虑为应根据条件显示或隐藏的片段编写可见性规则。 例如，您可以根据用户指定的婚姻状态显示或隐藏“配偶详细信息”片段。
 * 松散加载的片段不支持文件附件和条款和条件组件。
 
-### 为配置延迟加载编写脚本的最佳实践 {#scripting-best-practices-for-configuring-lazy-loading}
+### 为配置延迟加载编写脚本的最佳实践{#scripting-best-practices-for-configuring-lazy-loading}
 
 为延迟加载面板开发脚本时要注意的要点如下：
 
-* 确保在延迟加载片段的字段上使用的初始化和计算脚本本质上是幂等的。 幂等脚本是那些即使在多次执行之后也具有相同效果的脚本。
+* 确保在延迟加载片段的字段上使用的初始化和计算脚本本质上是无幂的。 幂等脚本是那些即使在多次执行之后也具有相同效果的脚本。
 * 使用字段的全局可用属性使位于延迟加载面板中的字段值可用于表单的所有其他面板。
 * 不要转发延迟面板中字段的引用值，无论字段是否在片段之间全局标记。
 * 使用面板重置功能，通过使用以下单击表达式重置面板上所有可见的内容。
 
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;): &quot;navigablePanel&quot;})。resetData()
+   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;):&quot;navigablePanel&quot;})。resetData()
 

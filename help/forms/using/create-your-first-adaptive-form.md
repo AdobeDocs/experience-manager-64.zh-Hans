@@ -16,13 +16,13 @@ ht-degree: 0%
 ---
 
 
-# 创建您的第一个自适应表单 {#do-not-publish-create-your-first-adaptive-form}
+# 创建您的第一个自适应表单{#do-not-publish-create-your-first-adaptive-form}
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
 ## 简介 {#introduction}
 
-您是否希望获得可简化注册、提高参 **与度并缩短周转时间的适合移** 动设备的表单 **** ，自适应表单是您的理想选择。 自适应表单提供移动、自动化和分析友好的表单体验。 您可以轻松构建具有响应性和交互性的表单，使用自动化流程减少管理和重复性任务，使用数据分析来改进和个性化客户对表单的体验。
+您是否在寻找一种适合移动设备的&#x200B;**表单体验**，它简化了注册、提高了参与度并缩短了周转时间，**自适应表单**&#x200B;是您的理想选择。 自适应表单提供移动、自动化和分析友好的表单体验。 您可以轻松构建具有响应性和交互性的表单，使用自动化流程减少管理和重复性任务，使用数据分析来改进和个性化客户对表单的体验。
 
 本教程提供了用于创建自适应表单的端到端框架。 本教程分为一个用例和多个指南。 每个指南都可以帮助您学习并向在本教程中创建的自适应表单添加新功能。 您在每个指南后面都有一个有效的自适应表单。 有自适应表单创建指南。 随后的指南将很快推出。 在本教程的结尾，您将能够：
 
@@ -42,18 +42,18 @@ ht-degree: 0%
 ### 先决条件 {#prerequisite}
 
 * 设置AEM作者实例。
-* 在 [创作实例上安装](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms加载项。
-* 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于MySQL数据库，并使用Oracle的MySQL [JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html)。
+* 在创作实例上安装[AEM Forms加载项](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
+* 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于MySQL数据库，并使用Oracle的[MySQL JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
 * 使用下面显示的字段设置包含客户数据的数据库。 数据库不是创建自适应表单的必备工具。 本教程使用数据库来显示AEM Forms的表单数据模型和持久性功能。
 
 ![自适应格式数据](assets/adaptiveformdata.png)
 
-## 第1步： 创建自适应表单 {#step-create-an-adaptive-form}
+## 第1步：创建自适应表单{#step-create-an-adaptive-form}
 
 ![03-create-adaptive-form-main-image_small_new](assets/03-create-adaptive-form-main-image_small_new.png)
 
-自适应表单是新一代、引人入胜、响应迅速、动态且自适应的表单。 利用自适应表单，您可以提供个性化且有针对性的体验。 AEM Forms提供拖放式WYSIWYG编辑器以创建自适应表单。 有关自适应表单的详细信息，请参 [阅创作自适应表单的简介](/help/forms/using/introduction-forms-authoring.md)。
+自适应表单是新一代、引人入胜、响应迅速、动态且自适应的表单。 利用自适应表单，您可以提供个性化且有针对性的体验。 AEM Forms提供拖放式WYSIWYG编辑器以创建自适应表单。 有关自适应表单的详细信息，请参阅[创作自适应表单的简介](/help/forms/using/introduction-forms-authoring.md)。
 
 目标：
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
-## Step 2: Create Form Data Model {#step-create-form-data-model}
+## 第2步：创建表单数据模型{#step-create-form-data-model}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
-## 第3步： 将规则应用于自适应表单字段 {#step-apply-rules-to-adaptive-form-fields}
+## 第3步：将规则应用于自适应表单字段{#step-apply-rules-to-adaptive-form-fields}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -91,11 +91,11 @@ ht-degree: 0%
 * 创建规则并将其应用于自适应表单字段
 * 使用规则触发表单数据模型服务以将数据更新到数据库
 
-## 第4步： 设置自适应表单的样式 {#step-style-your-adaptive-form}
+## 第4步：设置自适应表单的样式{#step-style-your-adaptive-form}
 
 ![09-Style-your-adaptive-form_small](assets/09-Style-your-adaptive-form_small.png)
 
-自适应表单提供主题 [和编辑](/help/forms/using/themes.md) 器，用于为自适应表单创建主题。 主题包含组件和面板的样式详细信息，您可以以不同的形式重复使用主题。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。 将主题应用于表单时，指定的样式会反映在表单的相应组件上。 自适应表单还支持特定于表单的样式的串联样式。
+自适应表单提供主题和[编辑器](/help/forms/using/themes.md)，以创建自适应表单的主题。 主题包含组件和面板的样式详细信息，您可以以不同的形式重复使用主题。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。 将主题应用于表单时，指定的样式会反映在表单的相应组件上。 自适应表单还支持特定于表单的样式的串联样式。
 
 目标：
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## 第5步： 测试自适应表单 {#step-test-your-adaptive-form}
+## 第5步：测试自适应表单{#step-test-your-adaptive-form}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
@@ -116,13 +116,13 @@ ht-degree: 0%
 * 安装Calvin SDK
 * 为更改地址表单创建测试套件和测试用例
 
-要了解SDK，请参阅将自 [动测试与AEM自适应表单一起使用](/help/forms/using/calvin.md)。
+要了解SDK，请参阅[使用AEM自适应表单的自动测试](/help/forms/using/calvin.md)。
 
-## 第6步： 发布自适应表单 {#step-publish-your-adaptive-form}
+## 第6步：发布自适应表单{#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-您可以将自适应表单发布为独立表单（单页应用程序），包括在AEM站 [点页面中](/help/forms/using/embed-adaptive-form-aem-sites.md)，或使用Forms门户在AEM站 [点上列表](/help/forms/using/introduction-publishing-forms.md)。
+您可以将自适应表单作为独立表单（单页应用程序）发布，包括在AEM [站点页面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[Forms门户](/help/forms/using/introduction-publishing-forms.md)在AEM站点上发布列表。
 
 目标：
 

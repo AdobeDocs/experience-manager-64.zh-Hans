@@ -24,7 +24,7 @@ ht-degree: 0%
 
 如果您使用的是评估凭据，请在转到生产环境时将其替换为生产凭证。 要更新过期或评估凭据，请首先删除旧的Acrobat Reader DC扩展凭据。
 
-有关获取凭据的信息，请参 [阅准备安装AEM表单（单台服务器）](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)。
+有关获取凭据的信息，请参阅[准备安装AEM表单（单台服务器）](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)。
 
 信任存储可能包含多个Acrobat Reader DC扩展凭据。 您必须将其中一个凭据指定为默认Reader扩展凭据。 当Workbench用户无法确定在创建流程期间使用的凭据时，将使用默认凭据。 这些规则适用于默认凭据：
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您还可以通过编程方式导入和删除凭据。 (请参 [阅使用AEM表单进行编程](https://www.adobe.com/go/learn_aemforms_programming_63)。)
+>您还可以通过编程方式导入和删除凭据。 (请参阅[使用AEM表单进行编程](https://www.adobe.com/go/learn_aemforms_programming_63)。)
 
-## 导入Acrobat Reader DC扩展凭据 {#import-a-acrobat-reader-dc-extensions-credential}
+## 导入Acrobat Reader DC扩展凭据{#import-a-acrobat-reader-dc-extensions-credential}
 
 1. 在管理控制台中，单击“设置”>“信任存储管理”>“本地凭据”。
 1. 单击“导入”，在“信任存储类型”下，选择“Acrobat Reader DC扩展凭据”。
@@ -52,12 +52,12 @@ ht-degree: 0%
 
    如果出现错误消息“由于文件格式不正确或密码不正确而导入凭据失败”，请验证密码是否有效。
 
-## 删除Acrobat Reader DC扩展凭据 {#remove-a-acrobat-reader-dc-extensions-credential}
+## 删除Acrobat Reader DC扩展凭据{#remove-a-acrobat-reader-dc-extensions-credential}
 
 1. 在管理控制台中，单击“设置”>“信任存储管理”>“本地凭据”。
 1. 选择凭据，然后单击删除。
 
-## 替换Acrobat Reader DC扩展凭据 {#replace-a-acrobat-reader-dc-extensions-credential}
+## 替换Acrobat Reader DC扩展凭据{#replace-a-acrobat-reader-dc-extensions-credential}
 
 1. 在管理控制台中，单击“设置”>“信任存储管理”>“本地凭据”。
 1. 记下现有凭据的别名，然后选择它并单击删除。

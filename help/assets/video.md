@@ -426,7 +426,7 @@ HLS（HTTP实时流）是自适应视频流播放的Apple标准，可根据网�
    <td><p>编码</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>编码</p> </td> 

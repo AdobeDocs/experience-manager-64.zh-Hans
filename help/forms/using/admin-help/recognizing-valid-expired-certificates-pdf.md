@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 识别PDF文档中的有效和过期证书 {#recognizing-valid-and-expired-certificates-in-pdf-documents}
+# 识别PDF文档{#recognizing-valid-and-expired-certificates-in-pdf-documents}中的有效和过期的证书
 
 当在Adobe Reader打开具有由Reader扩展应用的使用权限的PDF文档时，将显示一个状态栏，其中描述在PDF文档中启用的特定使用权限。
 

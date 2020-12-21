@@ -19,13 +19,13 @@ ht-degree: 0%
 ---
 
 
-# 社区工具 {#communities-tools}
+# 社区工具{#communities-tools}
 
 在创作时，要访问“社区”工具控制台：
 
-* 从全局导航： **[!UICONTROL “工具”>“社区”]**
+* 从全局导航：**[!UICONTROL 工具>社区]**
 
-![chlimage_1-127](assets/chlimage_1-129.png)
+![chlimage_1-129](assets/chlimage_1-129.png)
 
 * [站点模板](sites.md) -用于创建和管理站点模板的控制台
 * [组模板](tools-groups.md)-用于创建和管理组模板的控制台

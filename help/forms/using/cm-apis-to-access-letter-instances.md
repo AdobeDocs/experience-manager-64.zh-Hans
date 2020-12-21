@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 用于访问字母实例的API {#apis-to-access-letter-instances}
+# 访问字母实例{#apis-to-access-letter-instances}的API
 
 ## 概述 {#overview}
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 通信管理为您提供了API，您可以使用它们构建列表界面以处理提交的信函实例或草稿。 API列表并打开代理的已提交和已草稿信函实例，以便代理可以继续处理草稿或已提交的信函实例。
 
-## 正在读取字母实例 {#fetching-letter-instances}
+## 正在读取字母实例{#fetching-letter-instances}
 
 通信管理使API能够通过LetterInstanceService服务获取字母实例。
 
@@ -42,9 +42,9 @@ ht-degree: 0%
 
 ### 使用getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-以下API根据查询对象（已提交和草稿）查找字母实例。 如果查询对象为null，则返回所有字母实例。 此API返回LetterInstanceVO [对象的列表](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) ，该对象可用于提取字母实例的其他信息
+以下API根据查询对象（已提交和草稿）查找字母实例。 如果查询对象为null，则返回所有字母实例。 此API返回[LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html)对象的列表，它可用于提取字母实例的其他信息
 
-**语法**: `List getAllLetterInstances(Query query) throws ICCException;`
+**语法**:  `List getAllLetterInstances(Query query) throws ICCException;`
 
 <table> 
  <tbody> 
@@ -59,9 +59,9 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### 示例1: 提取SUBMITTED类型的所有字母实例 {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### 示例1:提取SUBMITTED {#example-fetch-all-the-letter-instances-of-type-submitted}类型的所有字母实例
 
-以下代码返回已提交字母实例的列表。 要仅获取草稿，请将 `LetterInstanceType.COMPLETE.name()` `LetterInstanceType.DRAFT.name().`
+以下代码返回已提交字母实例的列表。 要仅获取草稿，请将`LetterInstanceType.COMPLETE.name()`更改为`LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference
@@ -118,11 +118,11 @@ String letterInstanceId = "/content/apps/cm/letterInstances/1001/sampleLetterIns
 LetterInstanceVO letterInstance = letterInstanceService.getLetterInstance(letterInstanceId );
 ```
 
-### 验证LetterInstance是否存在 {#verifying-if-letterinstance-exist}
+### 验证LetterInstance是否存在{#verifying-if-letterinstance-exist}
 
 检查字母实例是否按给定名称存在
 
-**语法**: `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
+**语法**:  `public Boolean letterInstanceExists(String letterInstanceName) throws ICCException;`
 
 | **参数** | **描述** |
 |---|---|
@@ -135,7 +135,7 @@ String letterInstanceName = "sampleLetterInstance";
 Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName );
 ```
 
-## 正在打开的字母实例 {#opening-letter-instances}
+## 打开字母实例{#opening-letter-instances}
 
 字母实例的类型可以是“已提交”或“草稿”。 打开两个字母实例类型会显示不同的行为：
 
@@ -152,7 +152,7 @@ CCR UI支持cmLetterInstanceId参数，该参数可用于重新加载字母。
 >
 >重装通信时，您不必指定cmLetterId或cmLetterName/State/Version，因为提交的数据已经包含重新加载的通信的所有详细信息。 RandomNo用于避免浏览器缓存问题，您可以使用时间戳作为随机数。
 
-### 正在打开提交的信函实例 {#opening-submitted-letter-instance}
+### 正在打开已提交的信函实例{#opening-submitted-letter-instance}
 
 提交的PDF可以使用字母实例ID直接打开：
 

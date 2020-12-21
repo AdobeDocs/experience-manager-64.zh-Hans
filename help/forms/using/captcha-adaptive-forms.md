@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 在自适应表单中使用CAPTCHA {#using-captcha-in-adaptive-forms}
+# 在自适应表单{#using-captcha-in-adaptive-forms}中使用CAPTCHA
 
 CAPTCHA(Completely Automated Public Turing test to tell Computers and Humans Apart)是在线交易中常用的项目，用于区分人和自动项目或机器人程序。 它提出了挑战并评估用户响应，以确定它是人还是机器人与站点交互。 它可防止用户在测试失败时继续操作，并防止蠕虫程序发布垃圾邮件或恶意用途，从而确保在线交易的安全。
 
@@ -29,39 +29,39 @@ AEM Forms以自适应形式支持CAPTCHA。 您可以使用Google的reCAPTCHA服
 >
 >在AEM Forms应用程序的脱机模式下，不支持自适应表单中的CAPTCHA。
 
-## 配置ReCAPTCHA服务（由Google提供） {#google-recaptcha}
+## Google {#google-recaptcha}配置ReCAPTCHA服务
 
-表单作者可以使用Google的reCAPTCHA服务在自适应表单中实施CAPTCHA。 它优惠高级CAPTCHA功能来保护您的站点。 有关reCAPTCHA工作方式的更多信息，请 [参阅Google reCAPTCHA](https://developers.google.com/recaptcha/)。
+表单作者可以使用Google的reCAPTCHA服务在自适应表单中实施CAPTCHA。 它优惠高级CAPTCHA功能来保护您的站点。 有关reCAPTCHA工作方式的详细信息，请参阅[Google reCAPTCHA](https://developers.google.com/recaptcha/)。
 
 ![recaptcha](assets/recaptcha.png)
 
 要在AEM Forms实施reCAPTCHA服务，请执行以下操作：
 
-1. 从 [Google获取reCAPTCHA API密钥](https://www.google.com/recaptcha/admin) 对。 它包括一个站点密钥和一个秘密。
+1. 从Google获取[reCAPTCHA API密钥对](https://www.google.com/recaptcha/admin)。 它包括一个站点密钥和一个秘密。
 1. 创建云服务的配置容器。
 
-   1. 转到“工 **[!UICONTROL 具”>“常规”>“配置浏览器”]**。
-      * See the [Configuration Browser documentation](/help/sites-administering/configurations.md) for more information.
+   1. 转至&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。
+      * 有关详细信息，请参阅[配置浏览器文档](/help/sites-administering/configurations.md)。
    1. 执行以下操作以启用云配置的全局文件夹，或跳过此步骤，为云服务配置创建和配置其他文件夹。
 
-      1. 在配置浏览器中，选择全 **[!UICONTROL 局文]** 件夹并点 **[!UICONTROL 按属性]**。
-      1. 在配置属性对话框中，启用 **[!UICONTROL 云配置]**。
-      1. 点按 **[!UICONTROL 保存并关闭]** ，以保存配置并退出对话框。
-   1. 在配置浏览器中，点按 **[!UICONTROL 创建]**。
-   1. 在创建配置对话框中，指定文件夹的标题并启用云 **[!UICONTROL 配置]**。
-   1. 点按 **[!UICONTROL 创建]** ，以创建为云服务配置启用的文件夹。
+      1. 在配置浏览器中，选择&#x200B;**[!UICONTROL global]**&#x200B;文件夹，然后点按&#x200B;**[!UICONTROL 属性]**。
+      1. 在配置属性对话框中，启用&#x200B;**[!UICONTROL 云配置]**。
+      1. 点按&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存配置并退出对话框。
+   1. 在配置浏览器中，点按&#x200B;**[!UICONTROL 创建]**。
+   1. 在创建配置对话框中，指定文件夹的标题并启用&#x200B;**[!UICONTROL 云配置]**。
+   1. 点按&#x200B;**[!UICONTROL 创建]**&#x200B;以创建为云服务配置启用的文件夹。
 
 
 1. 为reCAPTCHA配置云服务。
 
-   1. 在AEM创作实例中，转到 ![工具](assets/tools.png) > **Cloud Services**。
-   1. 点击 **[!UICONTROL reCAPTCHA]**。 此时将打开“配置”页。 选择在上一步中创建的配置容器，然后点 **[!UICONTROL 按创建]**。
-   1. 为reCAPTCHA服务指定名称、站点密钥和密钥，然后点 **[!UICONTROL 按创建]** ，以创建云服务配置。
-   1. 在编辑组件对话框中，指定在步骤1中获取的站点和密钥。 点按 **[!UICONTROL 保存设置]** ，然后点 **[!UICONTROL 按确]** 定以完成配置。
+   1. 在AEM作者实例上，转至![tools](assets/tools.png) > **Cloud Services**。
+   1. 点按&#x200B;**[!UICONTROL reCAPTCHA]**。 此时将打开“配置”页。 选择在上一步中创建的配置容器，然后点按&#x200B;**[!UICONTROL 创建]**。
+   1. 指定reCAPTCHA服务的名称、站点密钥和密钥，然后点按&#x200B;**[!UICONTROL 创建]**&#x200B;以创建云服务配置。
+   1. 在编辑组件对话框中，指定在步骤1中获取的站点和密钥。 点按&#x200B;**[!UICONTROL 保存设置]**，然后点按&#x200B;**[!UICONTROL 确定]**&#x200B;以完成配置。
 
-   配置reCAPTCHA服务后，即可在自适应表单中使用。 有关详细信息，请参 [阅在自适应表单中使用CAPTCHA](#using-captcha)。
+   配置reCAPTCHA服务后，即可在自适应表单中使用。 有关详细信息，请参阅[在自适应表单中使用CAPTCHA](#using-captcha)。
 
-## 在自适应表单中使用CAPTCHA {#using-captcha}
+## 在自适应表单{#using-captcha}中使用CAPTCHA
 
 要在自适应表单中使用CAPTCHA:
 
@@ -71,7 +71,7 @@ AEM Forms以自适应形式支持CAPTCHA。 您可以使用Google的reCAPTCHA服
    >
    >确保在创建自适应表单时选择的配置容器包含reCAPTCHA云服务。 您还可以编辑自适应表单属性以更改与表单关联的配置容器。
 
-1. 从组件浏览器中，将Captcha组 **[!UICONTROL 件拖]** 放到自适应表单上。
+1. 从组件浏览器中，将&#x200B;**[!UICONTROL Captcha]**&#x200B;组件拖放到自适应表单上。
 
    >[!NOTE]
    >
@@ -81,13 +81,13 @@ AEM Forms以自适应形式支持CAPTCHA。 您可以使用Google的reCAPTCHA服
    >
    >Captcha是时间敏感型的，约一分钟后过期。 因此，建议将Captcha组件放在自适应表单中“提交”按钮之前。
 
-1. 选择您添加的Captcha组件，然后点 ![按](assets/cmppr.png) cmppr以编辑其属性。
-1. 指定CAPTCHA构件的标题。 The default value is **Captcha**. 如果 **[!UICONTROL 不希望显]** 示标题，请选择隐藏标题。
-1. 从Captcha **[!UICONTROL 服务]** 下拉框中，如果按Google的ReCAPTCHA服务中的说明对 **[!UICONTROL reCaptcha]** 进行了配置，请选择 [reCaptcha以启用reCAPTCHA服务](#google-recaptcha)。 从设置下拉菜单中选择配置。 此外，为reCAPTCHA构件 **[!UICONTROL 选择]** “正常 **[!UICONTROL ”或]** “压缩”大小。
+1. 选择您添加的Captcha组件，然后点按![cmpr](assets/cmppr.png)以编辑其属性。
+1. 指定CAPTCHA构件的标题。 默认值为&#x200B;**Captcha**。 如果不希望显示标题，请选择&#x200B;**[!UICONTROL 隐藏标题]**。
+1. 从&#x200B;**[!UICONTROL Captcha服务]**&#x200B;下拉列表中，如果按照Google](#google-recaptcha)的[ReCAPTCHA服务中的说明配置reCAPTCHA服务，请选择&#x200B;**[!UICONTROL reCaptcha]**&#x200B;以启用reCAPTCHA服务。 从设置下拉菜单中选择配置。 此外，为reCAPTCHA构件选择&#x200B;**[!UICONTROL Normal]**&#x200B;或&#x200B;**[!UICONTROL Compact]**&#x200B;大小。
 
    >[!NOTE]
    >
-   >不要从Captcha **[!UICONTROL 服务]** (默认AEM CAPTCHA服务)下拉框中选择Default（默认），因为默认的CAPTCHA服务已弃用。
+   >请勿从Captcha服务下拉菜单中选择&#x200B;**[!UICONTROL Default]**，因为默认的AEM CAPTCHA服务已弃用。
 
 1. 保存属性。
 

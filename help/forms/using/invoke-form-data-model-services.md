@@ -20,13 +20,13 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-AEM Forms使表单作者能够从自适应表单字段中调用表单数据模型中配置的服务，从而进一步简化和增强表单填写体验。 要调用数据模型服务，您可以在可视编辑器中创建规则，或使用规则编辑器的代码 `guidelib.dataIntegrationUtils.executeOperation` 编辑器中的API指定 [JavaScript](/help/forms/using/rule-editor.md)。
+AEM Forms使表单作者能够从自适应表单字段中调用表单数据模型中配置的服务，从而进一步简化和增强表单填写体验。 要调用数据模型服务，您可以在可视编辑器中创建规则，或使用[规则编辑器](/help/forms/using/rule-editor.md)的代码编辑器中的`guidelib.dataIntegrationUtils.executeOperation` API指定JavaScript。
 
-此文档侧重于使用API调 `guidelib.dataIntegrationUtils.executeOperation` 用服务编写JavaScript。
+此文档侧重于使用`guidelib.dataIntegrationUtils.executeOperation` API编写JavaScript以调用服务。
 
 ## 使用API {#using-the-api}
 
-API `guidelib.dataIntegrationUtils.executeOperation` 从自适应表单字段中调用服务。 API语法如下：
+`guidelib.dataIntegrationUtils.executeOperation` API从自适应表单字段中调用服务。 API语法如下：
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -40,7 +40,7 @@ API需要以下参数。
 | `inputs` | 用于指定其值输入到服务操作的表单对象的结构 |
 | `outputs` | 用于指定将填充服务操作返回值的表单对象的结构 |
 
-API的结构指定 `guidelib.dataIntegrationUtils.executeOperation` 了有关服务操作的详细信息。 结构的语法如下所示。
+`guidelib.dataIntegrationUtils.executeOperation` API的结构指定有关服务操作的详细信息。 结构的语法如下所示。
 
 ```
 var operationInfo = {
@@ -85,11 +85,11 @@ API结构指定有关服务操作的以下详细信息。
  </tbody> 
 </table>
 
-## 调用服务的示例脚本 {#sample-script-to-invoke-a-service}
+## 调用服务{#sample-script-to-invoke-a-service}的示例脚本
 
-以下示例脚本使用 `guidelib.dataIntegrationUtils.executeOperation` API调用表单 `getAccountById` 数据模型中配置的 `employeeAccount` 服务操作。
+以下示例脚本使用`guidelib.dataIntegrationUtils.executeOperation` API调用在`employeeAccount`表单数据模型中配置的`getAccountById`服务操作。
 
-此操 `getAccountById` 作将表单字段中的 `employeeID` 值作为参数的输入，并返回 `empId` 相应员工的员工姓名、帐户编号和帐户余额。 输出值将填充到指定的表单字段中。 例如，参数中的值 `name` 将填充在表单元 `fullName` 素中，而参数的 `accountNumber` 值将填充 `account` 在表单元素中。
+`getAccountById`操作将`employeeID`表单字段中的值作为`empId`参数的输入，并返回相应员工的员工姓名、帐号和帐户余额。 输出值将填充到指定的表单字段中。 例如，`name`参数中的值填充在`fullName`表单元素中，`accountNumber`参数的值填充在`account`表单元素中。
 
 ```
 var operationInfo = {

@@ -25,19 +25,20 @@ Commendence Management允许您重新品牌化其解决方案模板，以实现�
 
 您可以在创建通信UI中使用您组织的徽标更改徽标。
 
-![“创建对应UI”图中的自定义图](assets/0_1_introscreenshot.png)**标：** *创建对应UI中的自定义图标*
+![创建对应UIFigure中的自定](assets/0_1_introscreenshot.png)
+**义图** *标：创建对应UI中的自定义图标*
 
-### 在创建对应UI中更改徽标 {#changing-the-logo-in-the-create-correspondence-ui}
+### 在创建对应UI {#changing-the-logo-in-the-create-correspondence-ui}中更改标志
 
 要设置您选择的徽标图像，请执行以下操作：
 
-1. 在CRX中创 [建适当的文件夹结构](#creatingfolderstructure)。
-1. [上传您在CRX中创建](#uploadlogo) 的文件夹中的新标志文件。
+1. 在CRX](#creatingfolderstructure)中创建适当的[文件夹结构。
+1. [在您在CRX中](#uploadlogo) 创建的文件夹中上传新的徽标文件。
 
-1. [在CRX上设置](#createcss) CSS以引用新的徽标。
-1. 清除浏览器历史记录 [并刷新创建对应UI](#refreshccrui)。
+1. [在CRX上](#createcss) 设置CSS以引用新徽标。
+1. 清除浏览器历史记录并[刷新创建对应UI](#refreshccrui)。
 
-## 创建所需的文件夹结构 {#creatingfolderstructure}
+## 创建所需的文件夹结构{#creatingfolderstructure}
 
 创建用于托管自定义徽标图像和样式表的文件夹结构，如下所述。 根文件夹/apps的新文件夹结构与/libs文件夹的结构类似。
 
@@ -51,22 +52,22 @@ Commendence Management允许您重新品牌化其解决方案模板，以实现�
 
 请按照以下步骤在/apps分支中创建所需的文件夹结构：
 
-1. 转到并 `https://[server]:[port]/[ContextPath]/crx/de` 以管理员身份登录。
-1. 在apps文件夹中，创建一个名为的 `css` 文件夹，其路径／结构与css文件夹（位于ccrui文件夹中）类似。
+1. 转到`https://[server]:[port]/[ContextPath]/crx/de`并以管理员身份登录。
+1. 在apps文件夹中，创建一个名为`css`的文件夹，其路径／结构与css文件夹（位于ccrui文件夹）类似。
 
    创建css文件夹的步骤：
 
-   1. 右键单击以下 **路径** 的css文件夹，然后选择“ **叠加节点”**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
+   1. 右键单击以下路径中的&#x200B;**css**&#x200B;文件夹，然后选择&#x200B;**叠加节点**:`/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
       ![叠加节点](assets/1_overlaynode_css.png)
 
    1. 确保“叠加节点”对话框具有以下值：
 
-      **路径：** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **路径** :/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **叠加位置：** /apps/
+      **叠加位置** :/apps/
 
-      **匹配节点类型：** 已检查
+      **匹配节点类型：已选** 中
 
       ![叠加节点路径](assets/0_1_5ioverlaynodedialog.png)
 
@@ -81,16 +82,16 @@ Commendence Management允许您重新品牌化其解决方案模板，以实现�
 
    1. 单击&#x200B;**确定**。css文件夹是在指定的路径中创建的。
 
-1. 在apps文件夹中，创建一个名为的 `imgs` 文件夹，其路径／结构与imgs文件夹（位于ccrui文件夹）类似。
+1. 在apps文件夹中，创建一个名为`imgs`的文件夹，其路径／结构与imgs文件夹（位于ccrui文件夹）类似。
 
-   1. 右键单击以下路 **径的** “图像”文件夹，然后选择 **“叠加节点”**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
+   1. 右键单击以下路径中的&#x200B;**imgs**&#x200B;文件夹，然后选择&#x200B;**叠加节点**:`/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. 确保“叠加节点”对话框具有以下值：
 
-      **路径：** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **路径** :/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **叠加位置：** /apps/
+      **叠加位置** :/apps/
 
-      **匹配节点类型：** 已检查
+      **匹配节点类型：已选** 中
 
    1. 单击&#x200B;**确定**。
 
@@ -98,20 +99,20 @@ Commendence Management允许您重新品牌化其解决方案模板，以实现�
       >
       >您还可以手动在/apps文件夹中创建文件夹结构。
 
-1. 单击 **“全部保** 存”以在服务器上保存更改。
+1. 单击&#x200B;**全部保存**&#x200B;以在服务器上保存更改。
 
-## 将新徽标上传到CRX {#uploadlogo}
+## 将新标志上传到CRX {#uploadlogo}
 
 将自定义徽标文件上传到CRX。 标准HTML规则控制徽标的呈现。 支持的图像文件格式取决于您访问AEM Forms时所使用的浏览器。 所有浏览器都支持JPEG、GIF和PNG。 有关详细信息，请参阅浏览器特定的文档，了解支持的图像格式。
 
-* 徽标图像的默认尺寸为48 px &amp;ast; 48 px. 确保图像与此大小相似或大于48 px &amp;ast; 48 px.
+* 徽标图像的默认尺寸为48 px &amp;ast;48 px. 确保图像与此大小相似或大于48 px &amp;ast;48 px.
 * 如果徽标图像的高度大于50像素，则“创建对应”用户界面会将图像缩小到最大高度50像素，因为这是标题的高度。 缩小图像时，“创建对应”用户界面会保持图像的长宽比。
 * 如果图像较小，则“创建对应用户界面”不会放大图像，因此，请确保您使用的徽标图像高度至少为48像素，并且宽度足够清晰。
 
 请按照以下步骤将自定义徽标文件上传到CRX:
 
 1. 转到 `https://[server]:[port]/[contextpath]/crx/de`. 如有必要，请以管理员身份登录。
-1. 在CRXDE中，右键单击以下路 **径的** imgs文件夹，然后选择 **创建>创建文件**:
+1. 在CRXDE中，右键单击以下路径的&#x200B;**imgs**&#x200B;文件夹，然后选择&#x200B;**创建>创建文件**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
 
@@ -121,7 +122,7 @@ Commendence Management允许您重新品牌化其解决方案模板，以实现�
 
    ![作为新节点的CustomLogo.png](assets/3_contentexplorernewnode_customlogo.png)
 
-1. 单击“ **全部保存**”。
+1. 单击&#x200B;**保存全部**。
 
    在您创建的新文件（此处为CustomLogo.png）下，将显示jcr:content属性。
 
@@ -131,22 +132,22 @@ Commendence Management允许您重新品牌化其解决方案模板，以实现�
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. 多次-单击 **jcr:data属性** 。
+1. 多次-单击&#x200B;**jcr:data**&#x200B;属性。
 
    将显示“编辑jcr:data”对话框。
 
    现在，单击newlogo.png文件夹，多次单击jcr:content（dim选项）并设置类型nt:resource。 如果不存在，请创建名为jcr:content的属性。
 
-1. 在“编辑jcr:data”对话框中， **单击** “浏览”，然后选择要用作标志的图像文件（此处为CustomLogo.png）。
+1. 在“编辑jcr:data”对话框中，单击&#x200B;**浏览**，然后选择要用作标志的图像文件（此处为CustomLogo.png）。
 
    支持的图像文件格式取决于您访问AEM Forms时所使用的浏览器。 所有浏览器都支持JPEG、GIF和PNG。 有关详细信息，请参阅浏览器特定的文档，了解支持的图像格式。
 
    ![示例自定义徽标文件](assets/geometrixx-outdoors.png)
-   **图：** *示例——要用作自定义标志的CustomLogo.png*
+   **图：** *示例——将用作自定义徽标的CustomLogo.png*
 
-1. 单击“ **全部保存**”。
+1. 单击&#x200B;**保存全部**。
 
-## 创建CSS以将徽标与UI集成 {#createcss}
+## 创建CSS以将徽标与UI{#createcss}集成
 
 自定义徽标图像需要在内容上下文中加载其他样式表。
 
@@ -159,8 +160,8 @@ Commendence Management允许您重新品牌化其解决方案模板，以实现�
 
    创建customcss.css文件的步骤：
 
-   1. 右键单击css文 **件夹** ，然后选择 **“创建”>“创建文件”**。
-   1. 在“新建文件”对话框中，将CSS的名称指 `customcss.css`定为（不能使用其他文件名），然后单 **击“确定**”。
+   1. 右键单击&#x200B;**css**&#x200B;文件夹，然后选择&#x200B;**创建>创建文件**。
+   1. 在“新建文件”对话框中，将CSS的名称指定为`customcss.css`（不能使用其他文件名），然后单击&#x200B;**确定**。
    1. 将以下代码添加到新创建的css文件。 在代码中的content:url中，指定已上传到CRXDE中的imgs文件夹的图像名称。
 
       ```css
@@ -169,11 +170,12 @@ Commendence Management允许您重新品牌化其解决方案模板，以实现�
       }
       ```
 
-   1. 单击“ **全部保存**”。
+   1. 单击&#x200B;**保存全部**。
 
-## 刷新“创建对应UI”以查看自定义徽标 {#refreshccrui}
+## 刷新“创建对应UI”，查看自定义标志{#refreshccrui}
 
 清除浏览器缓存，然后在浏览器中打开创建对应UI实例。 您应当看到您的自定义徽标。
 
-![使用自定义徽标创建对应的用户界面](assets/0_1_introscreenshot-1.png)**图：** *创建对应UI中的自定义图标*
+![使用自定义徽标创建对应](assets/0_1_introscreenshot-1.png)
+**用户界** *面图：创建对应UI中的自定义图标*
 

@@ -17,13 +17,13 @@ ht-degree: 3%
 ---
 
 
-# 将创建对应UI与自定义门户集成 {#integrating-create-correspondence-ui-with-your-custom-portal}
+# 将创建对应UI与自定义门户{#integrating-create-correspondence-ui-with-your-custom-portal}集成
 
 ## 概述 {#overview}
 
 本文详细介绍了如何将“创建通信解决方案”与环境集成。
 
-## 基于URL的调用 {#url-based-invocation}
+## 基于URL的调用{#url-based-invocation}
 
 从自定义门户调用“创建对应”应用程序的一种方法是使用以下请求参数准备URL:
 
@@ -44,11 +44,11 @@ ht-degree: 3%
 >
 >在调用创建对应应用程序之前，请保存并上传数据，以在给定的dataURL调用创建对应UI。 这可以从自定义门户本身或通过另一个后端进程完成。
 
-## 内联基于数据的调用 {#inline-data-based-invocation}
+## 内联基于数据的调用{#inline-data-based-invocation}
 
-调用“创建通信”应用程序的另一种（也是更安全的）方法是，只需点击URL，同时发送参数和POST以调用“创建通信”应用程序作为请求（将它们隐藏在最终用户面前）。 `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`这也意味着您现在可以内嵌（作为同一请求的一部分，使用cmData参数）传递Create Commendence应用程序的XML数据，这在以前的方法中是不可能的／理想的。
+调用“创建通信”应用程序的另一种（也是更安全的）方法是简单点击`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`的URL，同时发送参数和数据以作为POST请求调用“创建通信”应用程序（将它们隐藏在最终用户面前）。 这也意味着您现在可以内嵌（作为同一请求的一部分，使用cmData参数）传递Create Commendence应用程序的XML数据，这在以前的方法中是不可能的／理想的。
 
-### 用于指定字母的参数 {#parameters-for-specifying-letter}
+### 指定字母{#parameters-for-specifying-letter}的参数
 
 <table> 
  <tbody>
@@ -77,7 +77,7 @@ ht-degree: 3%
 
 表中的参数顺序指定用于加载字母的参数的首选项。
 
-### 用于指定XML数据源的参数 {#parameters-for-specifying-the-xml-data-source}
+### 用于指定XML数据源{#parameters-for-specifying-the-xml-data-source}的参数
 
 <table> 
  <tbody>
@@ -106,7 +106,7 @@ ht-degree: 3%
 
 表中的参数顺序指定用于加载XML数据的参数的首选项。
 
-### 其他参数 {#other-parameters}
+### 其他参数{#other-parameters}
 
 <table> 
  <tbody>
@@ -118,7 +118,7 @@ ht-degree: 3%
   <tr>
    <td>cmPreview<br /> </td> 
    <td>布尔型</td> 
-   <td>如果在预览模式下打开字母，则为True<br /> </td> 
+   <td>在预览模式下打开字母为True<br /> </td> 
   </tr>
   <tr>
    <td>随机</td> 

@@ -18,19 +18,19 @@ ht-degree: 0%
 ---
 
 
-# 查看凭据使用信息 {#review-credential-use-information}
+# 查看凭据使用信息{#review-credential-use-information}
 
 凭据包含描述其预期用途的信息，这些用途可通过Acrobat Reader DC扩展最终用户Web应用程序访问。 您可以使用此信息来确定所安装的凭证类型（评估或生产）及其有效日期。
 
 1. 打开Web浏览器并输入此URL:
 
-   http://localhost:*[port]*/ReaderExtensions(其 *[中port是应用程]* 序服务器的端口号)
+   http://localhost:*[port]*/ReaderExtensions（其中&#x200B;*[port]*&#x200B;是应用程序服务器的端口号）
 
 1. 使用默认用户名和密码登录：
 
-   用户名： 管理员
+   用户名：管理员
 
-   密码： 口令
+   密码：口令
 
    >[!NOTE]
    >

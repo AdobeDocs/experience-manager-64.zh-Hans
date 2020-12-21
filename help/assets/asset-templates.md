@@ -73,7 +73,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL 创建]**。对话框会确认新手册的制作。 单击／点按&#x200B;**[!UICONTROL 打开]**&#x200B;以编辑模式打开宣传册。
 
-   ![chlimage_1-311](assets/chlimage_1-311.png)
+   ![chlimage_1-310](assets/chlimage_1-311.png)
 
    或者，关闭对话框并导航到您开始使用的“模板”页面中的文件夹，以视图您创建的小册子。 附属品的类型显示在其缩略图上的卡片视图。 例如，在这种情况下，Brochure会显示在缩略图上。
 

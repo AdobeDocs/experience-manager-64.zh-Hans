@@ -17,27 +17,28 @@ ht-degree: 0%
 ---
 
 
-# 主屏幕 {#home-screen}
+# 主屏幕{#home-screen}
 
 登录AEM Forms应用程序时，您将被重定向到“主页”屏幕。
 
-## 默认主页屏幕 {#default-home-screen}
+## 默认主屏幕{#default-home-screen}
 
 默认情况下，主屏幕显示所有表单，包括起点和任务(如果连接的服务器启用了AEM Forms工作流)以及关联的缩略图。 可在AEM Forms服务器中指定缩略图。
 
 下图用默认“主页”屏幕上的基本组件的调用进行注释。
-![Forms应用程序主](assets/home-screen-1.png)[屏幕单击放大](assets/home-screen-1-1.png)
+![Forms应用程序主](assets/home-screen-1.png)
+[屏幕单击可放大](assets/home-screen-1-1.png)
 
-1. **菜单按钮**: 点按菜 **单按钮** ，导航到任务、Forms、发件箱和设置。 如果您的AEM Forms应用程序已连接到AEM FormsJEE服务器，则可以看到任务选项。 任务选项还存储从流程中的任务创建的草稿。 对于AEM FormsOSGi服务器，任务选项处于隐藏状态。 发件箱存储保存的表单和草稿，然后再与服务器同步。 当应用程序与服务器同步时，“发件箱”中所有保存的表单和草稿都将上传 [到AEM Forms服务器](/help/forms/using/sync-app.md)。 有关设置的信息，请参阅 [更新常规设置](/help/forms/using/update-general-settings.md)。
-1. **任务或表单**: 点按要处理的列出任务或表单。
-1. **水平省略号**: 表示可对表单执行操作。 点击省略号可显示作者提供的操作和描述。 点 **按省略** 号时 **，将** 显示“删除草稿和完成”选项。
-1. **刷新图标**: 点按刷新图标，将您的应用程序与AEM Forms服务器同步。
+1. **菜单按钮**:点按菜 **** 单按钮以导航到任务、Forms、输出框和设置。如果您的AEM Forms应用程序已连接到AEM FormsJEE服务器，则可以看到任务选项。 任务选项还存储从流程中的任务创建的草稿。 对于AEM FormsOSGi服务器，任务选项处于隐藏状态。 发件箱存储保存的表单和草稿，然后再与服务器同步。 当应用程序与服务器[同步时，Outbox中所有保存的表单和草稿都上传到AEM Forms服务器。 ](/help/forms/using/sync-app.md)有关“设置”的信息，请参阅[“更新常规设置”](/help/forms/using/update-general-settings.md)。
+1. **任务或表单**:点按要处理的列出任务或表单。
+1. **水平省略号**:表示可对表单执行操作。点击省略号可显示作者提供的操作和描述。 点按省略号时，将显示&#x200B;**删除草稿**&#x200B;和&#x200B;**完整**&#x200B;选项。
+1. **刷新图标**:点按刷新图标，将您的应用程序与AEM Forms服务器同步。
 
-## 自定义主屏幕 {#customizing-the-home-screen}
+## 自定义主屏幕{#customizing-the-home-screen}
 
 ![常规设置](assets/gen-settings.png)
 
-您可以从应用程序的“常规设置”或HTML Workspace的“首 **[选项”选项卡](/help/forms/using/update-general-settings.md)**，更改应用程序的&#x200B;**默认**“主页”屏幕。
+您可以从应用程序的&#x200B;**[常规设置](/help/forms/using/update-general-settings.md)**&#x200B;或HTML Workspace的&#x200B;**首选项**&#x200B;选项卡中更改应用程序的默认主屏幕。
 
 对应用程序上的“主页”屏幕设置所做的更改会影响当前已记录用户或当前移动设备上用户的“主页”屏幕。
 

@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 最小化数据库增长的提示 {#tips-for-minimizing-database-growth}
+# 最小化数据库增长的提示{#tips-for-minimizing-database-growth}
 
 长寿命的进程将进程数据存储在AEM forms数据库中。 使用一些简单的流程设计和产品配置策略，可以最大限度地减少AEM表单数据库的增长。
 
-## 流程设计提示 {#process-design-tips}
+## 流程设计提示{#process-design-tips}
 
 尽可能使用短时间流程。 短期进程不在数据库中存储进程数据。 使用短时进程的缺点是，在管理控制台中不跟踪它们的状态和状态，并且该进程没有历史记录。
 
@@ -32,8 +32,8 @@ ht-degree: 0%
 
 使用简单的变量类型（例如，字符串或int），并尽可能避免使用复杂的变量类型。 即使变量不包含值，也会为变量分配数据库空间。 复杂变量通常比简单变量需要更多空间。
 
-## 产品管理提示 {#product-administration-tips}
+## 产品管理提示{#product-administration-tips}
 
 有效使用全局文档存储(GDS)。 表单服务器上的GDS目录用于存储传递给进程中AEM表单的服务的文件。 为了提高性能，较小的文档会存储在内存中并保留在数据库中。
 
-管理控制台显示“默认文档最大内联大小”属性，用于配置存储在内存中并保留在文档库中的的最大大小。 (请参阅 [配置常规AEM表单设置](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)。) 如果将此属性设置为低值，则大多数文档将保留在GDS目录中，而不是数据库中。 优点是，当文件存储在GDS目录中时，不再需要时，您可以更轻松地删除它们。
+管理控制台显示“默认文档最大内联大小”属性，用于配置存储在内存中并保留在文档库中的的最大大小。 (请参阅[配置常规AEM表单设置](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)。) 如果将此属性设置为低值，则大多数文档将保留在GDS目录中，而不是数据库中。 优点是，当文件存储在GDS目录中时，不再需要时，您可以更轻松地删除它们。

@@ -18,11 +18,11 @@ ht-degree: 9%
 ---
 
 
-# 可重用组件的描述 {#description-of-reusable-components}
+# 可重用组件{#description-of-reusable-components}的说明
 
-AEM Forms工作区由可重 [用的组件组](/help/forms/using/integrating-html-ws-components-web.md) 成，这些组件在CRX™中以 [特定的文](/help/forms/using/folder-structure.md) 件夹结构组织。 每个组件在文件夹结构中指定的位置都有模型、视图和模板文件，JavaScript™依赖于其他组件文件，组件监听的事件以及在AEM Forms工作区触发这些事件的JavaScript对象。 此处提供具有组成文件名和相关性的可重用组件的完整列表。
+AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-components-web.md)组件组成，这些组件在CRX™中以特定的[文件夹结构](/help/forms/using/folder-structure.md)组织。 每个组件在文件夹结构中指定的位置都有模型、视图和模板文件，JavaScript™依赖于其他组件文件，组件监听的事件以及在AEM Forms工作区触发这些事件的JavaScript对象。 此处提供具有组成文件名和相关性的可重用组件的完整列表。
 
-## 任务列表 {#tasklist}
+## TaskList {#tasklist}
 
 <table> 
  <tbody> 
@@ -172,11 +172,11 @@ AEM Forms工作区由可重 [用的组件组](/help/forms/using/integrating-html
    <td><p>JS依赖关系</p> </td> 
    <td> 
     <ul> 
-     <li><p>字段： 队列： { name, qid, isDefault, type}</p> </li> 
-     <li><p>字段： 查询: 字符串</p> </li> 
-     <li><p>字段： parentView: 过滤器列表视图</p> </li> 
-     <li><p>字段： parentModel: 任务列表模型</p> </li> 
-     <li><p>字段： 实用程序</p> </li> 
+     <li><p>字段：队列：{ name, qid, isDefault, type}</p> </li> 
+     <li><p>字段：查询:字符串</p> </li> 
+     <li><p>字段：parentView:过滤器列表视图</p> </li> 
+     <li><p>字段：parentModel:任务列表模型</p> </li> 
+     <li><p>字段：实用程序</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -247,12 +247,12 @@ AEM Forms工作区由可重 [用的组件组](/help/forms/using/integrating-html
    <td><p>JS依赖关系</p> </td> 
    <td> 
     <ul> 
-     <li><p>扩展： 过滤器视图</p> </li> 
-     <li><p>字段： 队列：{ name, qid, isDefault, type }</p> </li> 
-     <li><p>字段： 查询: 字符串</p> </li> 
-     <li><p>字段： parentView: 过滤器列表视图</p> </li> 
-     <li><p>字段： parentModel: 任务列表模型</p> </li> 
-     <li><p>字段： 实用程序</p> </li> 
+     <li><p>扩展：过滤器视图</p> </li> 
+     <li><p>字段：队列：{ name, qid, isDefault, type }</p> </li> 
+     <li><p>字段：查询:字符串</p> </li> 
+     <li><p>字段：parentView:过滤器列表视图</p> </li> 
+     <li><p>字段：parentModel:任务列表模型</p> </li> 
+     <li><p>字段：实用程序</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -266,7 +266,7 @@ AEM Forms工作区由可重 [用的组件组](/help/forms/using/integrating-html
 >
 >TeamFilter获取指示已从TaskList组件中选择哪个任务的事件。 尽管这些组件共享模型类，但没有其他依赖关系。
 
-## 任务详细信息 {#taskdetails}
+## TaskDetails {#taskdetails}
 
 <table> 
  <tbody> 
@@ -324,7 +324,7 @@ AEM Forms工作区由可重 [用的组件组](/help/forms/using/integrating-html
  </tbody> 
 </table>
 
-## 类别列表 {#categorylist}
+## CategoryList {#categorylist}
 
 <table> 
  <tbody> 
@@ -776,7 +776,7 @@ AEM Forms工作区由可重 [用的组件组](/help/forms/using/integrating-html
 
 >[!NOTE]
 >
->OutofOffice可以单独使用。
+>OutofOffice可单独使用。
 
 ## ShareQueue {#sharequeue}
 
@@ -896,7 +896,7 @@ AEM Forms工作区由可重 [用的组件组](/help/forms/using/integrating-html
 >
 >AppNavigation可以单独使用。
 
-## 用户信息 {#userinfo}
+## UserInfo {#userinfo}
 
 <table> 
  <tbody> 
@@ -925,7 +925,7 @@ AEM Forms工作区由可重 [用的组件组](/help/forms/using/integrating-html
    <td> 
     <ul> 
      <li>userImageUrlRected - userinfo模型</li> 
-     <li>sessionRenewed - userinfo模型 <br /> </li> 
+     <li>sessionRextended - userinfo model <br /> </li> 
      <li>sessionExpired - userinfo模型 </li> 
     </ul> </td> 
   </tr> 
@@ -1002,7 +1002,7 @@ AEM Forms工作区由可重 [用的组件组](/help/forms/using/integrating-html
  </tbody> 
 </table>
 
-## 搜索模板 {#searchtemplate}
+## SearchTemplate {#searchtemplate}
 
 <table> 
  <tbody> 

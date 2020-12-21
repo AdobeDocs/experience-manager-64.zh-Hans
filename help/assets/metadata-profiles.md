@@ -24,7 +24,7 @@ ht-degree: 35%
 
 1. 单击某个组件，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中配置其属性。例如，单击&#x200B;**[!UICONTROL Description]**&#x200B;组件并编辑其属性。
 
-   ![chlimage_1-481](assets/chlimage_1-481.png)
+   ![chlimage_1-401](assets/chlimage_1-481.png)
 
    编辑&#x200B;**[!UICONTROL Description]**&#x200B;组件的以下属性：
 

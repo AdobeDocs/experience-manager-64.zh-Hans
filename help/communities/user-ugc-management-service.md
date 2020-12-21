@@ -18,21 +18,21 @@ ht-degree: 0%
 ---
 
 
-# AEM Communities用户与UGC管理服务 {#user-and-ugc-management-service-in-aem-communities}
+# AEM Communities{#user-and-ugc-management-service-in-aem-communities}的用户和UGC管理服务
 
 >[!IMPORTANT]
 >
 >GDPR在以下各节中用作示例，但涵盖的详细信息适用于所有数据保护和隐私法规；例如GDPR、CCPA等。
 
-AEM Communities公开现成的API，用于管理用户用户档案和批量管理用户生成的内容(UGC)。 启用后，UserUgcManagement **服务允许特权用户** （社区管理员和版主）禁用用户用户档案，并批量删除或批量导出特定用户的UGC。 这些API还使客户数据的控制者和处理器能够遵守欧洲合并的一般数据保护规定(GDPR)和其他受GDPR启发的隐私规定。
+AEM Communities公开现成的API，用于管理用户用户档案和批量管理用户生成的内容(UGC)。 启用&#x200B;**UserUgcManagement**&#x200B;服务后，特权用户（社区管理员和版主）便可以禁用用户用户档案，并批量删除或批量导出特定用户的UGC。 这些API还使客户数据的控制者和处理器能够遵守欧洲合并的一般数据保护规定(GDPR)和其他受GDPR启发的隐私规定。
 
-有关详细信息，请 [参阅Adobe隐私中心的GDPR页面](https://www.adobe.com/privacy/general-data-protection-regulation.html)。
+有关详细信息，请参阅Adobe隐私中心](https://www.adobe.com/privacy/general-data-protection-regulation.html)的[GDPR页面。
 
 >[!NOTE]
 >
->如果您在 [AEM Communities站点中配置](analytics.md) “Adobe Analytics”，则捕获的用户数据将发送到Adobe Analytics服务器。 Adobe Analytics提供的API允许您访问、导出和删除用户数据并遵守GDPR。 有关详细信息，请参 [阅提交访问和删除请求](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)。
+>如果您在AEM Communities](analytics.md)站点中配置了[Adobe Analytics，则捕获的用户数据将发送到Adobe Analytics服务器。 Adobe Analytics提供的API允许您访问、导出和删除用户数据并遵守GDPR。 有关详细信息，请参阅[提交访问和删除请求](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)。
 
-要使用这些API，您需要通过激 `/services/social/ugcmanagement` 活UserUgcManagement服务来启用端点。 要激活此服务，请安 [装GitHub](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) .com上 [提供的示例servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)。 然后，使用http请求，在社区站点的发布实例上使用适当的参数点击端点，如下所示：
+要使用这些API，您需要通过激活UserUgcManagement服务来启用`/services/social/ugcmanagement`端点。 要激活此服务，请安装[GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)上提供的[示例servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)。 然后，使用http请求，在社区站点的发布实例上使用适当的参数点击端点，如下所示：
 
 `http://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation<getUgc>`
 
@@ -40,7 +40,7 @@ AEM Communities公开现成的API，用于管理用户用户档案和批量管�
 
 这些API支持执行以下功能。
 
-## 检索用户的UGC {#retrieve-the-ugc-of-a-user}
+## 检索用户{#retrieve-the-ugc-of-a-user}的UGC
 
 `getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)` 帮助从系统中导出用户的所有UGC。
 
@@ -51,9 +51,9 @@ AEM Communities公开现成的API，用于管理用户用户档案和批量管�
 
 `http://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
 
-## 删除用户的UGC {#delete-the-ugc-of-a-user}
+## 删除用户{#delete-the-ugc-of-a-user}的UGC
 
-**deleteUserUgc(ResourceResolver resourceResolver, String user)帮助** 从系统中删除用户的所有UGC。
+**deleteUserUgc(ResourceResolver resourceResolver, String user)** 帮助从系统中删除用户的所有UGC。
 
 * **用户**:用户的可授权ID。
 
@@ -70,9 +70,9 @@ AEM Communities公开现成的API，用于管理用户用户档案和批量管�
 
 ![AEM社区变量映射Adobe Analytics](assets/Analytics-Communities-Mapping.png)
 
-## 禁用用户帐户 {#disable-a-user-account}
+## 禁用用户帐户{#disable-a-user-account}
 
-**deleteUserAccount(ResourceResolver resourceResolver, String user)帮助禁用** 用户帐户。
+**deleteUserAccount(ResourceResolver resourceResolver, String user)帮** 助禁用用户帐户。
 
 * **用户**:用户的可授权ID。
 
@@ -87,4 +87,4 @@ AEM Communities公开现成的API，用于管理用户用户档案和批量管�
 
 >[!NOTE]
 >
->deleteUserAccount()API仅禁用系统中的用户用户档案并删除UGC。 但是，要从系统中删除用户用户档案，请导航到 **CRXDE Lite**: [https://&lt;server>/crx/de](http://localhost:4502/crx/de)，找到用户节点并将其删除。
+>deleteUserAccount()API仅禁用系统中的用户用户档案并删除UGC。 但是，要从系统中删除用户用户档案，请导航到&#x200B;**CRXDE Lite**:[https://&lt;server>/crx/de](http://localhost:4502/crx/de)，找到用户节点并将其删除。

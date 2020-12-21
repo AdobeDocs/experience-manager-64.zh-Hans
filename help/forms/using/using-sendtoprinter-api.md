@@ -30,12 +30,12 @@ ht-degree: 13%
    将文档发送到打印机时，请指定以下打印协议之一：
 
    * **杯子** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIFS**: 输出服务支持通用Internet文件系统(CIFS)打印协议。
+   * **CIFS**:输出服务支持通用Internet文件系统(CIFS)打印协议。
 
-## 使用SendToPrinter服务 {#using-sendtoprinter-service}
+## 使用SendToPrinter服务{#using-sendtoprinter-service}
 
 下表列表:
 
@@ -44,7 +44,7 @@ ht-degree: 13%
 
 | 协议（访问机制） | 打印服务器URI(PrinterSpec.printServer) | 打印机的名称(PrinterSpec.printerName) | 结果 |
 |--- |--- |--- |--- |
-| SharedPrinter | 任意 | 空 | 异常： 必需参数sPrinterName不能为空。 |
+| SharedPrinter | 任意 | 空 | 异常：必需参数sPrinterName不能为空。 |
 | SharedPrinter | 任意 | 无效 | 出现异常，表示找不到打印机。 |
 | SharedPrinter | 任意 | 有效 | 成功的打印作业。 |
 | LPD | 空 | 任意 | 表示必需参数sPrintServerUri不能为空的异常。 |
@@ -62,13 +62,13 @@ ht-degree: 13%
 | CIFS | 无效 | 任意 | 使用CIFS进行打印时出现未知错误。 |
 | CIFS | 空 | 任意 | 表示必需参数sPrintServerUri不能为空的异常。 |
 
-## 身份验证支持 {#authentication-support}
+## 身份验证支持{#authentication-support}
 
 身份验证仅支持CIFS打印。 要进行身份验证，请在PrinterSpec中提供用户名／密码／域。 您可以通过执行以下步骤，使用AEM Granite CyprotoSupport Service加密口令：
 
 1. 转到https://&lt;server>:&lt;port>/system/console。
 
-1. 转至“主 **[!UICONTROL ”]** >“ **[!UICONTROL 加密支持”]**。
+1. 转到&#x200B;**[!UICONTROL Main]** > **[!UICONTROL 加密支持]**。
 
-1. 输入一些纯文本，然后单击 **[!UICONTROL Protect]**。
+1. 输入一些纯文本，然后单击&#x200B;**[!UICONTROL Protect]**。
 

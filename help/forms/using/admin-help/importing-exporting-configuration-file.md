@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 导入和导出配置文件 {#importing-and-exporting-the-configuration-file}
+# 导入和导出配置文件{#importing-and-exporting-the-configuration-file}
 
 使用“手动配置”页可下载XML格式的配置设置副本。 此文件中的设置控制所有服务器首选项。 然后，您可以编辑文件并将其上传回服务器。 您还可以使用该文件配置另一个AEM forms产品实例。
 

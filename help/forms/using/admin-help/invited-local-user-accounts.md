@@ -18,12 +18,12 @@ ht-degree: 0%
 ---
 
 
-# 管理已邀请和本地用户帐户 {#managing-invited-and-local-user-accounts}
+# 管理已邀请和本地用户帐户{#managing-invited-and-local-user-accounts}
 
 使用“已邀请的用户和本地用户”页面管理已邀请的用户和本地用户。 仅当满足以下要求时，才会显示此页：
 
-* 您是管理员，为其分配了文档安全性“管理已邀请的用户和本地用户”角色和管理控制台用户角色。 (请参 [阅创建和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。)
-* 已启用已邀请的用户注册。 (请参阅 [配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)。)
+* 您是管理员，为其分配了文档安全性“管理已邀请的用户和本地用户”角色和管理控制台用户角色。 （请参阅[创建和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。）
+* 已启用已邀请的用户注册。 （请参阅[配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)。）
 
 “已邀请用户”和“本地用户”页面包含两个选项卡，您可以使用它们搜索、视图、编辑、锁定、解锁和删除已邀请的和本地用户帐户。
 
@@ -33,18 +33,18 @@ ht-degree: 0%
 >
 >还可以直接通过文档安全引用的LDAP目录添加被邀请的用户，或者当用户或管理员在创建或编辑策略时邀请新用户时，从而启动注册邀请电子邮件。 如果您在“已邀请的用户注册”页上启用“启用已邀请用户注册”选项，则用户可以将新的已邀请用户添加到策略中。
 
-## 添加受邀用户 {#add-an-invited-user}
+## 添加受邀用户{#add-an-invited-user}
 
 一次可以向文档安全添加一个或多个已邀请用户帐户。 要添加已邀请的用户帐户，您需要该用户的电子邮件地址。 添加用户时，文档安全性会发送一封注册电子邮件，邀请用户进行注册。
 
 1. 在管理控制台中，单击“服务”>“文档安全性”>“已邀请的用户和本地用户”，然后单击“邀请新用户”。
 1. 键入要邀请的用户的电子邮件地址。 在一行中输入多个地址，以逗号分隔。
 
-   您在启用受邀用户注册时创建的消息将发送给用户。 (请参阅 [配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)。)
+   您在启用受邀用户注册时创建的消息将发送给用户。 （请参阅[配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)。）
 
 1. 单击确定。
 
-## 视图有关本地用户的信息 {#view-information-about-a-local-user}
+## 视图有关本地用户{#view-information-about-a-local-user}的信息
 
 您可以视图有关本地用户的信息，包括名称、电子邮件地址、组织、注册状态和域。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
    将显示用户详细信息，您可以重置用户的口令并取消激活帐户。
 
-## 向未注册的外部用户发送电子邮件 {#send-an-email-to-an-unregistered-external-user}
+## 向未注册的外部用户{#send-an-email-to-an-unregistered-external-user}发送电子邮件
 
 在您添加受邀用户时，文档安全性会自动向用户发送注册电子邮件请求。 您还可以手动生成注册电子邮件，以发送给尚未注册的受邀用户。 例如，如果受邀用户的注册电子邮件过期，您可能希望发送新邀请。
 
@@ -61,17 +61,17 @@ ht-degree: 0%
 1. 在用户列表中，选中每个用户对应的复选框，以向其发送注册电子邮件，然后单击“重新发送邀请电子邮件”。
 1. 查看选定用户的列表，然后单击“确定”。
 
-## 重置本地用户口令 {#reset-a-local-user-password}
+## 重置本地用户密码{#reset-a-local-user-password}
 
 您可以为已激活的已邀请用户重置口令，这些用户已注册文档安全，但忘记了口令。 重置密码时，会生成一封电子邮件，其中包含用户的新临时密码。
 
-启用受邀用户注册流程后，您创建了一封电子邮件，将发送给用户，提示用户重置密码。 (请参阅 [配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)。)
+启用受邀用户注册流程后，您创建了一封电子邮件，将发送给用户，提示用户重置密码。 （请参阅[配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)。）
 
 1. 在管理控制台中，单击“服务”>“文档安全”>“已邀请的用户和本地用户”，然后单击“本地用户”选项卡。
 1. 在用户列表中，选择相应的用户。
 1. 在“管理本地用户”页面上，单击“重置口令”，然后单击“确定”。 将向用户发送包含新密码的重置密码电子邮件。
 
-## 启用或禁用用户帐户 {#enable-or-disable-a-user-account}
+## 启用或禁用用户帐户{#enable-or-disable-a-user-account}
 
 您可以禁用本地用户帐户以临时限制用户登录到文档安全。 禁用帐户时，用户无法使用受策略保护的文档或创建或应用策略。
 
@@ -89,11 +89,11 @@ ht-degree: 0%
 1. 在用户列表中，选择相应的用户。
 1. 在“本地用户详细信息”页面上，单击“帐户启用”。
 
-## 删除已邀请的用户帐户 {#remove-an-invited-user-account}
+## 删除受邀用户帐户{#remove-an-invited-user-account}
 
 您可以从文档安全性中删除已邀请的用户帐户。 您可能希望删除帐户，例如，当用户更改其个人电子邮件帐户信息时。
 
-如果删除用户帐户，则只有您或其他管理员可以通过在“已邀请的用户”页面上选择“添加已邀请的用户”选项来恢复该帐户。 用户无法将已删除的用户帐户添加到策略中，该方法无法启动邀请过程。
+如果删除用户帐户，则只有您或其他管理员可以通过在“已邀请的用户”页面上选择“添加已邀请的用户”选项来恢复该帐户。 用户无法将已删除的用户帐户添加到策略中，该方法不能启动邀请过程。
 
 >[!NOTE]
 >
@@ -102,28 +102,28 @@ ht-degree: 0%
 1. 在管理控制台中，单击“服务”>“文档安全”>“已邀请用户和本地用户”，然后单击“已邀请用户”选项卡。
 1. 选中一个或多个用户旁的复选框，单击“删除”，然后单击“确定”。
 
-## 搜索已邀请的用户帐户 {#search-for-an-invited-user-account}
+## 搜索受邀用户帐户{#search-for-an-invited-user-account}
 
 您可以使用电子邮件地址搜索已邀请的用户帐户。
 
 1. 在管理控制台中，单击“服务”>“文档安全”>“已邀请用户和本地用户”。
 1. 在“查找电子邮件”框中，键入用户的电子邮件地址，然后单击“查找”。
 
-## 搜索本地用户帐户 {#search-for-a-local-user-account}
+## 搜索本地用户帐户{#search-for-a-local-user-account}
 
 您可以使用用户的电子邮件地址或姓名和域搜索本地用户。
 
 1. 在管理控制台中，单击“服务”>“文档安全”>“已邀请的用户和本地用户”，然后单击“本地用户”选项卡。
 1. 在“查找”框中键入搜索条件，选择“名称”或“电子邮件”，然后单击“查找”。
 
-## 删除本地用户帐户 {#remove-a-local-user-account}
+## 删除本地用户帐户{#remove-a-local-user-account}
 
 您可以从文档安全中删除本地用户帐户。 您可能希望删除帐户，例如，当用户更改其个人电子邮件帐户信息时。
 
 1. 在管理控制台中，单击“服务”>“文档安全”>“已邀请的用户和本地用户”，然后单击“本地用户”选项卡。
 1. 选中一个或多个用户旁的复选框，单击“删除”，然后单击“确定”。
 
-## 对用户列表排序 {#sort-the-user-list}
+## 对用户列表{#sort-the-user-list}排序
 
 通过按列标题对用户列表进行排序，可以更轻松地查找用户。 列标题旁边的三角形图标指示当前用于排序的列：
 

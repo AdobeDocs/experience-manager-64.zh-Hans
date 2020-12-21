@@ -20,13 +20,13 @@ ht-degree: 1%
 
 # Reviews Essentials {#reviews-essentials}
 
-此功能由两个可协同工作的组件组成： 审阅和审阅摘要。
+此功能由两个可协同工作的组件组成：审阅和审阅摘要。
 
-审阅是基于包含一个或多 [个评级](essentials-comments.md) （计数）组件 [的注释](rating-basics.md) 系统的复合组件。
+评论是基于[评论系统](essentials-comments.md)的组合组件，该系统包含一个或多个[评级](rating-basics.md)（计数）组件。
 
 不支持匿名发布审阅。 站点访客必须注册并登录才能添加评论。 已签名的访客（会员）可随时更新其审阅。
 
-## 客户端必备工具 {#essentials-for-client-side}
+## 客户端{#essentials-for-client-side}的必备工具
 
 ### 审核 {#reviews}
 
@@ -38,7 +38,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>可包含</strong></a></td> 
-   <td>是——属性在设计模式下 <i>可编 </i>辑</td> 
+   <td>是——属性可在<i>design </i>模式下编辑</td> 
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
@@ -54,7 +54,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>属性</strong></td> 
-   <td>请参阅 <a href="reviews.md">使用审阅</a></td> 
+   <td>请参阅<a href="reviews.md">使用评论</a></td> 
   </tr>
  </tbody>
 </table>
@@ -63,15 +63,15 @@ ht-degree: 1%
 
 | **resourceType** | social/reviews/components/hbs/summary |
 |---|---|
-| [**可包含&#x200B;**](scf.md#add-or-include-a-communities-component) | 是——属性可在*design *mode中编辑 |
-| [**clientlibs **](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
+| [**可包含**](scf.md#add-or-include-a-communities-component) | 是——属性可在*design *mode中编辑 |
+| [**clientlibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
 | **模板** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
-| **属性** | 请参阅 [使用审阅](reviews.md) |
+| **属性** | 请参阅[使用评论](reviews.md) |
 
 * [客户端自定义](client-customize.md)
 
-## 服务器端必备工具 {#essentials-for-server-side}
+## 服务器端{#essentials-for-server-side}的必备工具
 
 * [审阅API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
@@ -79,19 +79,19 @@ ht-degree: 1%
 
 * [服务器端自定义](server-customize.md)
 
-### 访问已发布的审阅(UGC) {#accessing-posted-reviews-ugc}
+### 访问已发布的审阅(UGC){#accessing-posted-reviews-ugc}
 
 UGC应使用一种标准的协调方法进行仲裁。\
-请参 [阅调节用户生成的内容](moderate-ugc.md)。
+请参阅[协调用户生成的内容](moderate-ugc.md)。
 
-自AEM 6.1社区起，使用UGC的公 [用商店](working-with-srp.md) ，包括以程序方式访问UGC，而不管选择的存储选项（如ASRP、MSRP或JSRP）。
+自AEM 6.1社区起，对UGC使用[公用商店](working-with-srp.md)包括对UGC的程序化访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）。
 
 **UGC在存储库中的位置和格式可能会发生更改，但不会发出警告**。
 
 请参阅：
 
-* [存储资源提供程序概述](srp.md) -简介和存储库使用概述
-* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例
-* [使用SRP访问UGC](accessing-ugc-with-srp.md) —— 编码指南
+* [存储资源提供者概述](srp.md) -简介和存储库使用概述
+* [SRP和UGC Essentials](srp-and-ugc.md)  - SRP实用程序方法和示例
+* [使用SRP访问UGC](accessing-ugc-with-srp.md) -编码指南
 * [SocialUtils重构](socialutils.md) -将已弃用的实用程序方法映射到当前SRP实用程序方法
 

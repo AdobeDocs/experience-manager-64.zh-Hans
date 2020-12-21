@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# 使用注释 {#using-comments}
+# 使用注释{#using-comments}
 
 ## 简介 {#introduction}
 
@@ -26,40 +26,40 @@ ht-degree: 4%
 
 文档的本节介绍
 
-* 添 `Comments`加到页面
-* 组件的配置设 `Comments`置
+* 将`Comments`添加到页面
+* `Comments`组件的配置设置
 
 >[!NOTE]
 >
 >不支持匿名发布评论。 站点访客必须注册（成为会员）并登录才能参加。
 
-## 向页面添加注释 {#adding-comments-to-a-page}
+## 向页面{#adding-comments-to-a-page}添加注释
 
-要在创作模 `Comments`式下将组件添加到页面，请使用组件浏览器查找
+要在创作模式下将`Comments`组件添加到页面，请使用组件浏览器查找
 
 * `Communities / Comments`
 
 并将其拖动到页面上的位置，如相对于要用户评论的功能的位置，或仅在页面底部。
 
-有关必要的信息，请访 [问社区组件基础](basics.md)。
+有关必要的信息，请访问[社区组件基础知识](basics.md)。
 
-当包 [含所需的客户端库](essentials-comments.md#essentials-for-client-side) ，组件的显示 `Comments`方式即为此。
+当包含[必需的客户端库](essentials-comments.md#essentials-for-client-side)时，将显示`Comments`组件。
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->一个页 `Comments`面上只能存在一个组件。 请注意，一些社区功能已经包含评论，如博客、日历、论坛、问题与解答和评论。
+>页面上只能存在一个`Comments`组件。 请注意，一些社区功能已经包含评论，如博客、日历、论坛、问题与解答和评论。
 
-## 配置注释 {#configuring-comments}
+## 配置注释{#configuring-comments}
 
-选择要访问的 `Comments` 已放置组件，然后选择打 `Configure` 开编辑对话框的图标。
+选择要访问的已放置`Comments`组件，然后选择打开编辑对话框的`Configure`图标。
 
-![配置注](assets/configure.png) 释 ![设置](assets/commentssettings.png)
+![配置](assets/configure.png) ![推荐设置](assets/commentssettings.png)
 
-### “注释”选项卡 {#comments-tab}
+### “注释”选项卡{#comments-tab}
 
-在“注 **[!UICONTROL 释]** ”选项卡下，指定访客如何输入注释。
+在&#x200B;**[!UICONTROL 注释]**&#x200B;选项卡下，指定访客如何输入注释。
 
 * **[!UICONTROL 允许回复]**
 
@@ -83,7 +83,7 @@ ht-degree: 4%
 
 * **[!UICONTROL 允许的文件类型]**
 
-   仅当选中“允许文件上传”时相关。 带“点”分隔符的文件扩展名的逗号分隔列表。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何文件类型，则不允许指定那些未指定的文件类型。 默认值未指定，因此允许所有文件类型。
+   仅当选中“允许文件上传”时相关。 带“点”分隔符的文件扩展名的逗号分隔列表。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何文件类型，则不允许指定那些未指定的文件类型。 默认值未指定，因此允许所有文件类型。
 
 * **[!UICONTROL 富文本编辑器]**
 
@@ -101,9 +101,9 @@ ht-degree: 4%
 
    如果选中，则允许显示已获奖和已获奖的徽章。 默认为未选中。
 
-### “用户审核”选项卡 {#user-moderation-tab}
+### “用户协调”选项卡{#user-moderation-tab}
 
-在“用户 **[!UICONTROL 审核]** ”选项卡下，指定如何管理已发布的注释。 有关详细信息，请参 [阅调节用户生成的内容](moderate-ugc.md)。
+在&#x200B;**[!UICONTROL 用户协调]**&#x200B;选项卡下，指定如何管理已发布的注释。 有关详细信息，请参阅[协调用户生成的内容](moderate-ugc.md)。
 
 * **[!UICONTROL 预审]**
 
@@ -139,49 +139,49 @@ ht-degree: 4%
 
 * **[!UICONTROL 标记限制]**
 
-   输入评论在隐藏之前必须标出的次数，使其不受公共视图。 此数字必须大于或等于仲裁 **[!UICONTROL 阈值]**。 默认值为5。
+   输入评论在隐藏之前必须标出的次数，使其不受公共视图。 此数字必须大于或等于&#x200B;**[!UICONTROL 调节阈值]**。 默认值为5。
 
-### “排序设置”选项卡 {#sort-settings-tab}
+### 排序设置选项卡{#sort-settings-tab}
 
-在“排 **[!UICONTROL 序设置]** ”选项卡下，指定显示已发布注释时的排序方式。
+在&#x200B;**[!UICONTROL 排序设置]**&#x200B;选项卡下，指定显示已发布注释时的排序方式。
 
 * **[!UICONTROL 排序字段]**
 
-   下拉以选择其中 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`一个或 `Most Liked`。
+   下拉以选择`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`或`Most Liked`中的一个。
 
 * **[!UICONTROL 排序顺序]**
 
-   下拉以选择其中一个 `Ascending` 或 `Descending`。
+   下拉以选择`Ascending`或`Descending`中的一个。
 
-### 更改为自定义注释类型 {#changing-to-a-custom-comment-type}
+### 更改为自定义注释类型{#changing-to-a-custom-comment-type}
 
 通过更改注释资源类型，注释系统将不再使用默认值生成注释实例，而是使用开发人员自定义（扩展）的实例。
 
-在确定自定义资源类型后，进入 [设计模式](../../help/sites-authoring/default-components-designmode.md) ,多次单击置入的组 `Comments` 件以打开一个包含其他选项卡的对话框。
+在确定自定义资源类型后，进入[设计模式](../../help/sites-authoring/default-components-designmode.md)并多次单击已放置的`Comments`组件以打开一个包含其他选项卡的对话框。
 
-在“资 **[!UICONTROL 源类型]** ”选项卡下，为组件的新实例指定自定义resourceType `Comments or Voting`:
+在&#x200B;**[!UICONTROL 资源类型]**&#x200B;选项卡下，为`Comments or Voting`组件的新实例指定自定义resourceType:
 
 ![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **[!UICONTROL 评论资源类型]**
 
-   导航到/apps中扩展组 `comment`件（单个注释）的resourceType。 例如，`/apps/social/commons/components/hbs/comments/comment`
+   导航到/apps中扩展的`comment`组件（单个注释）的resourceType。 例如，`/apps/social/commons/components/hbs/comments/comment`
 
    此资源将标识当访客发布评论时创建的UGC的resourceType。
 
 * **[!UICONTROL 投票资源类型]**
 
-   导航到/apps中扩展组 `voting`件的resourceType。 例如，`/apps/social/components/hbs/voting`
+   导航到/apps中扩展`voting`组件的resourceType。 例如，`/apps/social/components/hbs/voting`
 
    此资源将标识访客投票时创建的UGC的资源类型。
 
 * **[!UICONTROL 注释系统资源类型]**
 
-   导航到/apps中扩展组 `comments`件（注释系统）的resourceType。 除非页面模板在基础脚 [本中动](scf.md#add-or-include-a-communities-component) 态地包含评论系统，而不是作为资源（评论节点）添加到页面，否则将保留为空。 阅读有关{{include}}帮 [助程序的信息，了解更多](handlebars-helpers.md#include)。
+   导航到/apps中扩展的`comments`组件（注释系统）的resourceType。 除非页面模板[在基础脚本中动态地包括](scf.md#add-or-include-a-communities-component)注释系统，而不是作为资源（注释节点）添加到页面，否则保留为空。 阅读有关[{{include}} helper](handlebars-helpers.md#include)的详细信息。
 
-## 站点访客体验 {#site-visitor-experience}
+## 站点访客体验{#site-visitor-experience}
 
-### 版主和管理员 {#moderators-and-administrators}
+### 版主和管理员{#moderators-and-administrators}
 
 当登录用户具有审查方或管理员权限时，他们可以执行组件配置所允许的审核任务，而不管评论的创作者是谁。
 
@@ -200,8 +200,8 @@ ht-degree: 4%
 
 ## 附加信息 {#additional-information}
 
-有关详细信息，请参阅“注 [释要件](essentials-comments.md) ”页面。
+有关开发人员的详细信息，请参阅[Comments Essentials](essentials-comments.md)页面。
 
-有关审核已发布的注释，请参 [阅审核用户生成的内容](moderate-ugc.md)。
+有关已发布注释的审核，请参阅[审核用户生成的内容](moderate-ugc.md)。
 
-有关已发布注释的翻译，请参阅 [翻译用户生成的内容](translate-ugc.md)。
+有关已发布注释的转换，请参阅[转换用户生成的内容](translate-ugc.md)。

@@ -24,13 +24,13 @@ ht-degree: 1%
 
 ## 已知问题 {#known-issues}
 
-### 调度程序重取失败 {#dispatcher-refetch-fails}
+### 调度程序重取失败{#dispatcher-refetch-fails}
 
 当将Dispatcher 4.1.5与较新版本的Jetty一起使用时，重取可能导致在等待请求超时后“无法从远程服务器接收响应”。
 
 使用Dispatcher 4.1.6或更高版本可解决此问题。
 
-### 从CQ 5.4升级后无法访问论坛帖子 {#cannot-access-forum-post-after-upgrading-from-cq}
+### 从CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}升级后无法访问论坛帖子
 
 如果在CQ 5.4上创建了论坛并发布了主题，然后将站点升级到AEM 5.6.1或更高版本，则尝试视图现有帖子可能会导致页面上出错：
 
@@ -55,19 +55,19 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 创作和发布失败有所不同。 创作时，它将失败且不显示论坛主题。 在发布时，它会在页面上引发错误。
 
-有关 [详细信息，请参阅com.day.cq.commons.date](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .RelativeTimeFormat API。
+有关详细信息，请参阅[com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API。
 
-## 常见问题 {#common-concerns}
+## 常见问题{#common-concerns}
 
-### 日志中的警告： 已弃用Handlebars {#warning-in-logs-handlebars-deprecated}
+### 日志中的警告：已弃用Handlebars {#warning-in-logs-handlebars-deprecated}
 
 在启动期间（不是第1次启动，但之后每次启动），日志中可能会显示以下警告：
 
-* 11.04.2014 08:38:07.223 **WARN**[]FelixStartLevelcom.github.jkank.handlebars.Handlebars Helper &#39;i18n&#39;已被“com.adobe.cq.social.handlebars.I18nHelper@15bac645”替换
+* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jkank.handlebars.Handlebars Helper &#39;i18n&#39;已被“com.adobe.cq.social.handlebars.I18nHelper@15bac645”替换
 
-SCF使用的jkank.handlebars.Handlebars是自己的i18n帮 [助工具](scf.md#handlebarsjavascripttemplatinglanguage)，因此可以安全地忽略此警告。 开始时，它将替换为特定于AEM的 [i18n帮助程序](handlebars-helpers.md#i-n)。 此警告由第三方库生成，以确认覆盖现有帮助程序。
+此警告可以安全地忽略，因为[SCF](scf.md#handlebarsjavascripttemplatinglanguage)使用的jkank.handlebars.Handlebars是自己的i18n帮助程序。 在开始时，它将替换为AEM特定的[i18n帮助程序](handlebars-helpers.md#i-n)。 此警告由第三方库生成，以确认覆盖现有帮助程序。
 
-### 日志中的警告： OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
+### 日志中的警告：OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
 发布大量社交社区论坛主题可能会导致OakResourceListener processOsgiEventQueue中大量的警告和信息日志。
 
@@ -82,7 +82,7 @@ SCF使用的jkank.handlebars.Handlebars是自己的i18n帮 [助工具](scf.md#ha
 23.04.2014 14:21:18.990 *WARN* [pool-5-thread-3] org.apache.sling.jcr.resource.internal.OakResourceListener processOsgiEventQueue: Resource at /var/replication/data/1f799fb4-0aeb-4660-aadb-705657f16048/b9/b91f1690-87e8-41d8-a78e-cd2259f837c8/jcr:content not found, which is not expected for an added or modified node
 ```
 
-### 日志中出错： IndexElementFactory的NoClassDefFoundError {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
+### 日志中出错：IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}的NoClassDefFoundError
 
 将AEM 5.6.1 GA升级到最新的cq-socialcommunities-pkg-1.4.x或AEM 6.0会在启动过程中导致日志文件中出现错误，该情况将解析自身，从重新启动时未看到错误就可以证明这一点。
 

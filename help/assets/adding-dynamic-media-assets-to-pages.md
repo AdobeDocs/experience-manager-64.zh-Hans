@@ -166,7 +166,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 使用Dynamic Media组件将动态视频添加到网页。 编辑该组件时，您可以选择使用预定义的视频查看器预设，以在页面上播放视频。
 
-![chlimage_1-541](assets/chlimage_1-540.png)
+![chlimage_1-540](assets/chlimage_1-540.png)
 
 必须通过单击组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;来编辑以下Dynamic Media设置。
 

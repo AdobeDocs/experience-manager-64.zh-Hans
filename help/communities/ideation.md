@@ -22,7 +22,7 @@ ht-degree: 3%
 
 本页提供使用构思功能的基本信息，该功能与论坛类似，但能另存为草稿，并具有更协作的感觉。
 
-## 客户端必备工具 {#essentials-for-client-side}
+## 客户端{#essentials-for-client-side}的必备工具
 
 <table> 
  <tbody>
@@ -36,7 +36,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientlibs</strong></a></td> 
-   <td>cq.social.hbs.potting<br /> cq.social.hbs.赞同<br /> cq.social.hbs.ideation</td> 
+   <td>cq.social.hbs.porting<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
   </tr>
   <tr>
    <td> <strong>模板</strong></td> 
@@ -48,7 +48,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong> 属性</strong></td> 
-   <td>查看 <a href="ideation-feature.md">构思功能</a></td> 
+   <td>请参阅<a href="ideation-feature.md">构思功能</a></td> 
   </tr>
  </tbody>
 </table>
@@ -57,4 +57,4 @@ ht-degree: 3%
 
 ### 构思功能 {#ideation-function}
 
-一种包括构思功能的社区 [站点结构](functions.md#ideation-function)，包括配置的 `ideation` 组件。
+包含[标识函数](functions.md#ideation-function)的社区站点结构包括配置的`ideation`组件。

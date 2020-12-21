@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# AEM Forms论OSGi集团与特权 {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms关于OSGi组和权限{#aem-forms-on-osgi-groups-and-privileges}
 
 将用户分配到组以在OSGi上管理AEM Forms
 
-您可以 [创建组](/help/sites-administering/user-group-ac-admin.md#group-administration) ，并将策略 [和用户](/help/sites-administering/user-group-ac-admin.md#user-administration) 分配到AEM中的组。 这些策略控制属于组的用户的权限。
+您可以[创建组](/help/sites-administering/user-group-ac-admin.md#group-administration)并将策略和[用户](/help/sites-administering/user-group-ac-admin.md#user-administration)分配给AEM中的组。 这些策略控制属于组的用户的权限。
 
-安装 [AEM Forms加载项包后](/help/forms/using/installing-configuring-aem-forms-osgi.md)，本文中提到的组（如forms-user和forms-power-user）将自动可供分配。 下表列表了用户可以根据组分配对OSGi上的AEM Forms执行的任务:
+安装[AEM Forms加载项包](/help/forms/using/installing-configuring-aem-forms-osgi.md)后，本文中提到的组（如forms-user和forms-power-user）将自动可供分配。 下表列表了用户可以根据组分配对OSGi上的AEM Forms执行的任务:
 
 <table> 
  <tbody>
@@ -33,7 +33,7 @@ ht-degree: 1%
    <td>任务</td> 
   </tr>
   <tr>
-   <td>表单用户 <sup>[1]</sup></td> 
+   <td>forms-user <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>创建、预览、发布和提交自适应表单</li> 

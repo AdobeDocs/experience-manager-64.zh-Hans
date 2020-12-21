@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms工作区中使用的API {#apis-used-in-aem-forms-workspace}
+# AEM Forms工作区{#apis-used-in-aem-forms-workspace}中使用的API
 
 以下API在AEM Forms工作区中使用。
 

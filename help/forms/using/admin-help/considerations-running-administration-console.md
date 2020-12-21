@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 运行管理控制台时的注意事项 {#considerations-when-running-administrationconsole}
+# 运行管理控制台{#considerations-when-running-administrationconsole}时的注意事项
 
 运行管理控制台时，需要考虑以下事项：
 
-* 如果使用URL访问管理控制台， `https://*[hostname]*:*[port]*/adminui`则指定的主机名不能包含下划线字符。 否则，指向管理控制台中某些区域的链接可能无法正常工作。
+* 如果使用URL `https://*[hostname]*:*[port]*/adminui`访问管理控制台，则指定的主机名不能包含下划线字符。 否则，指向管理控制台中某些区域的链接可能无法正常工作。
 * 如果在日文OS的Windows资源管理器中运行管理控制台，您可能会遇到以下问题：
 
    * 单击链接将返回登录页面而不是预期链接。

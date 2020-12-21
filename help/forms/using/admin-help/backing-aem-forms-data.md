@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 备份AEM表单数据 {#backing-up-the-aem-forms-data}
+# 备份AEM表单数据{#backing-up-the-aem-forms-data}
 
 本节介绍完成AEM表单数据库、GDS和内容存储根目录的热备份或联机备份所需的步骤。
 
@@ -38,20 +38,20 @@ ht-degree: 0%
 >
 >恢复过程后，未引用的文件可能会保留在GDS目录中。 此时存在已知限制。
 
-## 备份存储库、GDS、AEM存储库和内容根目录 {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
+## 备份存储库、GDS 、 AEM存储库和内容根目录{#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
 必须将AEM表单置于安全备份（快照）模式或滚动备份（连续覆盖）模式。 在设置AEM表单以进入任一备份模式之前，请确保：
 
 * 验证系统版本，并记录自上次执行完整系统映像备份以来应用的修补程序或更新。
-* 如果您使用滚动或快照模式备份，请确保您的数据库配置了正确的日志设置，以允许对数据库进行热备份。 (请参 [阅AEM表单数据库](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。)
+* 如果您使用滚动或快照模式备份，请确保您的数据库配置了正确的日志设置，以允许对数据库进行热备份。 (请参阅[AEM forms database](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。)
 
 除了这些之外，还要遵循以下备份／还原过程的准则。
 
-* 使用可用的操作系统或第三方备份实用程序备份GDS目录。 (请参 [阅GDS位置](/help/forms/using/admin-help/files-back-recover.md#gds-location)。)
-* （可选）使用可用的操作系统或第三方备份和实用程序备份内容存储根目录。 (请参 [阅内容存储根位置(独立环境)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment)[或内容存储根位置(聚簇环境)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment)。)
-* 备份创作和发布实例（crx -repository备份）。
+* 使用可用的操作系统或第三方备份实用程序备份GDS目录。 （请参阅[GDS位置](/help/forms/using/admin-help/files-back-recover.md#gds-location)。）
+* （可选）使用可用的操作系统或第三方备份和实用程序备份内容存储根目录。 (请参阅[内容存储根位置(独立环境)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment)或[内容存储根位置(群集环境)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment)。)
+* 备份   创作和发布实例（crx -repository备份）。
 
-   要备份“对应管理解决方案”环境，请对创作和发布实例执行步骤，如备份和 [还原中所述](/help/sites-administering/backup-and-restore.md)。
+   要备份“对应管理解决方案”环境，请对作者执行步骤并发布实例，如[备份和还原](/help/sites-administering/backup-and-restore.md)中所述。
 
    备份作者实例和发布实例时，请考虑以下几点：
 
@@ -60,9 +60,9 @@ ht-degree: 0%
    * 工作台开发人员可以继续在本地处理其流程。 他们不应在备份阶段部署任何新进程。
    * 每个备份会话的长度（用于滚动备份模式）的决定应基于备份AEM表单(DB、GDS、AEM存储库和任何其他自定义数据)中所有数据所花费的总时间。
 
-您应备份AEM表单数据库，包括任何事务日志。 (请参 [阅AEM表单数据库](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。) 有关详细信息，请参阅数据库的相应知识库文章：
+您应备份AEM表单数据库，包括任何事务日志。 (请参阅[AEM forms database](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。) 有关详细信息，请参阅数据库的相应知识库文章：
 
-* [AEM表单的Oracle备份和恢复](https://www.adobe.com/go/kb403624)
+* [OracleAEM表单备份和恢复](https://www.adobe.com/go/kb403624)
 * [AEM表单的MySQL备份和恢复](https://www.adobe.com/go/kb403625)
 * [AEM表单的Microsoft SQL Server备份和恢复](https://www.adobe.com/go/kb403623)
 * [AEM表单的DB2备份和恢复](https://www.adobe.com/go/kb403626)
@@ -73,9 +73,9 @@ ht-degree: 0%
 >
 >在开始备份GDS之前，数据库备份必须完成。 如果数据库备份未完成，则数据将不同步。
 
-### 进入备份模式 {#entering-the-backup-modes}
+### 进入备份模式{#entering-the-backup-modes}
 
-您可以使用管理控制台、LCBackupMode命令或AEM表单安装附带的API进入和退出备份模式。 请注意，对于滚动备份（连续覆盖），管理控制台选项不可用； 您应使用命令行选项或API。 <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM forms API Reference on Help and Tutorials page. -->
+您可以使用管理控制台、LCBackupMode命令或AEM表单安装附带的API进入和退出备份模式。 请注意，对于滚动备份（连续覆盖），管理控制台选项不可用；您应使用命令行选项或API。 <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM forms API Reference on Help and Tutorials page. -->
 
 >[!NOTE]
 >
@@ -91,15 +91,15 @@ ht-degree: 0%
 
 **使用命令行选项进入安全备份模式**
 
-您可以使用命令行界面脚 `LCBackupMode` 本将AEM表单置于安全备份模式。
+可以使用命令行接口`LCBackupMode`脚本将AEM表单置于安全备份模式。
 
 1. 设置ADOBELIVECYCLE并开始应用程序服务器。
-1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder.
-1. 根据您的操作系统，编辑或 `LCBackupMode.cmd` 脚 `LCBackupMode.sh` 本以提供适合您的系统的默认值。
+1. 转到`*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`文件夹。
+1. 根据您的操作系统，编辑`LCBackupMode.cmd`或`LCBackupMode.sh`脚本以提供适合您的系统的默认值。
 1. 在命令提示符下，在单行上运行以下命令：
 
-   * (Windows)hostname主机名 `LCBackupMode.cmd enter [-Host=`*、*portnumber`] [-port=`**`] [-user=`*用户&#x200B;*名密码`] [-password=`**`] [-label=`**`] [-timeout=`*标签名秒数* `]`
-   * (Linux, UNIX)主机名 `LCBackupMode.sh enter [-host=`*端口&#x200B;*`] [-port=`*号用* 户名 `] [-user=`**`] [-password=`*密码*`] [-label=`*标签名&#x200B;*`]`
+   * (Windows)`LCBackupMode.cmd enter [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*用户名* `] [-password=`*密码* `] [-label=`*标签名称* `] [-timeout=`*秒* `]`
+   * (Linux, UNIX)`LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*用户名* `] [-password=`*密码* `] [-label=`*标签名称* `]`
 
    在以前的命令中，占位符的定义如下：
 
@@ -113,11 +113,11 @@ ht-degree: 0%
 
    `label` 是此备份的文本标签，可以是任何字符串。
 
-   `timeout` 是备份模式自动保留后的秒数。 可以是0到10,080。 如果为0（这是默认值），则备份模式永远不会超时。
+   `timeout` 是备份模式自动保留后的秒数。可以是0到10,080。 如果为0（这是默认值），则备份模式永远不会超时。
 
    有关备份模式的命令行界面的详细信息，请参阅BackupRestoreCommandline目录中的自述文件。
 
-### 退出备份模式 {#leaving-backup-modes}
+### 离开备份模式{#leaving-backup-modes}
 
 您可以使用管理控制台或命令行选项保留备份模式。
 
@@ -131,19 +131,19 @@ ht-degree: 0%
 
 **保留所有备份模式**
 
-您可以使用命令行界面将AEM表单带出安全备份模式（快照模式）或结束当前备份模式会话（滚动模式）。 请注意，无法使用管理控制台退出滚动备份模式。 在滚动备份模式下，将禁用管理控制台上的“备份实用程序”控件。 必须使用API调用或LCBackupMode命令。
+您可以使用命令行界面将AEM表单带出安全备份模式（快照模式）或结束当前备份模式会话（滚动模式）。 请注意，您不能使用管理控制台退出滚动备份模式。 在滚动备份模式下，将禁用管理控制台上的“备份实用程序”控件。 必须使用API调用或LCBackupMode命令。
 
-1. Go to the `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` folder.
-1. 根据您的操作系统，编辑或 `LCBackupMode.cmd` 脚 `LCBackupMode.sh` 本以提供适合您的系统的默认值。
+1. 转到`*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`文件夹。
+1. 根据您的操作系统，编辑`LCBackupMode.cmd`或`LCBackupMode.sh`脚本以提供适合您的系统的默认值。
 
    >[!NOTE]
    >
-   >必须按照准备安装AEM表单中应用程序服务器的相应章节中的说明设置 [JAVA_HOME目录](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*。*
+   >您必须按照[准备安装AEM表单](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*中针对应用程序服务器的相应章节中的说明设置JAVA_HOME目录。*
 
 1. 在单行上运行以下命令：
 
-   * (Windows)主机名 `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*端口号&#x200B;*`] [-port=`*用户名*`] [-user=`*密&#x200B;*码`] [-password=`*，密码* `]`
-   * (Linux, UNIX)主机名 `LCBackupMode.sh leaveContinuousCoverage [-Host=`*端口&#x200B;*`] [-port=`*号用* 户 `] [-user=`*名密&#x200B;*码`] [-password=`** `]`
+   * (Windows)`LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*用户名* `] [-password=`*密码* `]`
+   * (Linux, UNIX)`LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*用户名* `] [-password=`*密码* `]`
 
       在以前的命令中，占位符的定义如下：
 

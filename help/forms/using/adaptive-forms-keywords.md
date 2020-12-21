@@ -16,7 +16,7 @@ ht-degree: 4%
 ---
 
 
-# 自适应表单关键字 {#adaptive-forms-keywords}
+# 自适应表单关键字{#adaptive-forms-keywords}
 
 自适应表单关键字是预定义的保留标识符，对于自适应表单具有特殊意义。 您不能将这些关键字用作自适应表单中的标识符。 下表列表了作为自适应表单保留标识符的所有关键字。
 
@@ -78,7 +78,7 @@ ht-degree: 4%
    <td><p>子项</p> </td> 
   </tr>
   <tr>
-   <td><p>value</p> </td> 
+   <td><p>选定</p> </td> 
    <td><p>autoSaveInfo</p> </td> 
    <td><p>setAttribute</p> </td> 
   </tr>
@@ -100,7 +100,7 @@ ht-degree: 4%
   <tr>
    <td><p>editPictureClause</p> </td> 
    <td><p>xsdRef</p> </td> 
-   <td><p>名称</p> </td> 
+   <td><p>name</p> </td> 
   </tr>
   <tr>
    <td><p>mandatory</p> </td> 
@@ -240,4 +240,4 @@ ht-degree: 4%
  </tbody>
 </table>
 
-除了上面列出的关键字之外，请避免使用与自适应表单JavaScript API [类似的名称](https://adobe.com/go/learn_aemforms_javascript_api_63)。
+除了上面列出的关键字之外，请避免使用与[自适应表单JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63)类似的名称。

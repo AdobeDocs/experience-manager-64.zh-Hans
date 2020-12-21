@@ -18,18 +18,18 @@ ht-degree: 4%
 ---
 
 
-# Enablement Resources控制台 {#enablement-resources-console}
+# Enablement Resources控制台{#enablement-resources-console}
 
-对于AEM Communities,“资源”控制台 [是Enablement Managers](users.md) 创建、管理资源并将资源分配给Enablement Community站点的成员的位置。
+对于AEM Communities，资源控制台是[ Enablement Managers](users.md)创建、管理资源并将资源分配给Enablement Community站点成员的位置。
 
-## 要求 {#requirements}
+## 要求{#requirements}
 
 在为社区站点添加启用资源之前，必须正确配置AEM实例，包括：
 
 * SCORM
 * FFmpeg
 
-有关详细信息，请参 [阅配置启用](enablement.md)。
+有关详细信息，请参阅[配置Enablement](enablement.md)。
 
 >[!CAUTION]
 >
@@ -37,13 +37,13 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->随着AEM 6.3的发 [布和的](deploy-communities.md#latestfeaturepack) “社区”功能包 [的推出](deploy-communities.md#latestfeaturepack) ,AEM 6.2 FP3和AEM 6.1 FP7(https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest支持功能包)不再 [][](mysql.md)需要MySQL数据库的支持。
+>随着[AEM 6.3](deploy-communities.md#latestfeaturepack)的发布和等效的社区功能包[AEM 6.2 FP3](deploy-communities.md#latestfeaturepack)和[AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest功能包)的发布，启用功能不再需要[MySQL数据库](mysql.md)。
 
 ## 术语 {#terminology}
 
 ### 资源 {#resource}
 
-资源对于支持社区 [至关重要](overview.md#enablement-community)。 它们是分配给成员的材料，使他们能够提高技能。
+资源对于[启用社区](overview.md#enablement-community)至关重要。 它们是分配给成员的材料，使他们能够提高技能。
 
 资源的特性：
 
@@ -59,15 +59,15 @@ ht-degree: 4%
 
 学习路径是一组逻辑的启用资源，这些资源分组在一起，便于分配给成员。
 
-### 成员组 {#members-group}
+### 成员组{#members-group}
 
-创建社区站点时，在创建为不同角色配置了各种权限的站点特 [定用户组时](users.md) ，会使用为URL指定的站点名称。 所有这些自动创建的组都带有前缀 `Community *<site-name>*`。
+创建社区站点时，在创建为[站点特定用户组](users.md)时，会使用为URL指定的站点名称，这些用户组配置了各种角色的各种权限。 所有这些自动创建的组都带有`Community *<site-name>*`前缀。
 
-此类用户组之一 `Community *<site-name>* Members` 是组，它将发布环境中的注册用户标识为社区成员。 有关示例， [请参阅教程《AEM Communities教](getting-started-enablement.md) 学入门》。
+此类用户组之一是`Community *<site-name>* Members`组，它将发布环境中的注册用户标识为社区成员。 有关示例，请参阅教程[Enablement](getting-started-enablement.md)AEM Communities入门。
 
-对 [于参与社区](overview.md#egagementcommunity)，允许站点访客自行注册或使用社交登录是合理的，此时，他们会自动添加到成员组。
+对于[参与社区](overview.md#egagementcommunity)，允许站点访客自行注册或使用社交登录是合理的，在此时，他们会自动添加到成员组。
 
-对 [于启用社](overview.md#enablement-community)区，建议将站点设为私有，然后需要管理员将用户添加到成员组。
+对于[enablement communities](overview.md#enablement-community)，建议将站点设为私有，然后需要管理员将用户添加到成员组。
 
 ## 访问社区站点的Enablement Resources {#accessing-a-community-site-s-enablement-resources}
 
@@ -75,11 +75,11 @@ ht-degree: 4%
 
 在创作环境中，要访问“资源”控制台
 
-* 从全局导航： **[!UICONTROL 导航>社区>资源]**
+* 从全局导航：**[!UICONTROL 导航>社区>资源]**
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
-### 选择社区站点 {#select-a-community-site}
+### 选择社区站点{#select-a-community-site}
 
 社区资源控制台将显示所有社区站点。
 
@@ -103,14 +103,14 @@ ht-degree: 4%
 
 ![chlimage_1-167](assets/chlimage_1-167.png)
 
-## 创建资源 {#create-a-resource}
+## 创建资源{#create-a-resource}
 
 ![chlimage_1-168](assets/chlimage_1-168.png)
 
 向社区站点添加新的启用资源
 
-* 选择图 `Create` 标
-* 从显示的子菜单中，选择 `Resource`
+* 选择`Create`图标
+* 从显示的子菜单中，选择`Resource`
 
 此操作将启动
 
@@ -120,65 +120,67 @@ ht-degree: 4%
 * 识别资源联系人
 * 将资源分配给成员
 
-当资源是课程的一部分（即学习路径）时，只应将成员分配到学习路径。 可在创建启用资源后添加分配。
+当资源是课程的一部分（即学习路径）时，只应将成员分配给学习路径。 可在创建启用资源后添加分配。
 
-### 1 Basic Info {#basic-info}
+### 1基本信息{#basic-info}
 
 ![chlimage_1-169](assets/chlimage_1-169.png)
 
 * **[!UICONTROL 添加]**
 
-   (*可选*)要在成员的分配页面以及“资源”控制台中启用资源的卡片上显示的图像。 从服务器的本地文件系统中选择该图像。 如果未提供图像，则将为上传的资源生成缩略图。
+   （*可选*）要在成员的分配页面以及“资源”控制台中的启用资源卡上显示的图像。 从服务器的本地文件系统中选择该图像。 如果未提供图像，则将为上传的资源生成缩略图。
 
-   ***注意***: 建议的图像大小不仅为480 x 480像素。 由于卡的响应式设计具有不同的浏览器尺寸，因此显示大小将从220 X 165像素变化到400 x 165像素。
+   ***注意***:建议的图像大小不仅为480 x 480像素。由于卡的响应式设计具有不同的浏览器尺寸，因此显示大小将从220 X 165像素变化到400 x 165像素。
 
 * **[!UICONTROL 网站名称]**
 
-   (*只读*)要添加资源的社区站点。
+   (*readonly*)要向其添加资源的社区站点。
 
-* **[!UICONTROL 资源名称&amp;ast;]**
+* **[!UICONTROL 资源名称(&amp;A);]**
 
-   (*必需*)资源的显示名称。 根据显示名称创建有效节点名称。
+   (*required*)资源的显示名称。 根据显示名称创建有效节点名称。
 
 * **[!UICONTROL 标记]**
 
-   (可&#x200B;*选*)可以选择一个或多个标记，将启用资源与一个或多个目录相关联。 请参 [阅标记启用资源](tag-resources.md)。
+   （*可选*）可以选择一个或多个标记，将启用资源与一个或多个目录相关联。 请参阅[标记Enablement Resources](tag-resources.md)。
 
 * **[!UICONTROL 在目录中显示]**
 
-   取消选中后，启用资源将不会显示在任何目录中。 如果选中此项，则除非预过滤或UI中 [的成员过滤器](catalog-developer-essentials.md#pre-filters) ，否则启用资源将显示在所有目录中。 默认为未选中。
+   取消选中后，启用资源将不会显示在任何目录中。 如果选中此项，则除非[预过滤](catalog-developer-essentials.md#pre-filters)或UI中的成员过滤器，否则启用资源将显示在所有目录中。 默认为未选中。
 
 * **[!UICONTROL 描述]**
 
-   (可&#x200B;*选*)要显示的启用资源说明。
+   （*可选*）要显示的启用资源说明。
 
 * **[!UICONTROL 较小的资产]**
 
-   (*可选*)从AEM Assets选出。 用于在发布环境（如目录）中表示资源的缩略图图像。
+   （*可选*）从AEM Assets选择。 用于在发布环境（如目录）中表示资源的缩略图图像。
 
 * **[!UICONTROL 较大的资产]**
 
-   (*可选*)从AEM Assets选出。 在发布环境中表示资源的大图像，如资源的主页。
+   （*可选*）从AEM Assets选择。 在发布环境中表示资源的大图像，如资源的主页。
 
 * **[!UICONTROL 内容片段资产]**
 
-   (*可选*)从AEM Assets选出。 可在发布环境中引用但默认不使用的内容片段。
+   （*可选*）从AEM Assets选择。 可在发布环境中引用但默认不使用的内容片段。
 
-* Select **[!UICONTROL Next]**
+* 选择&#x200B;**[!UICONTROL 下一步]**
 
-### 2 Add Content {#add-content}
+### 2添加内容{#add-content}
 
 ![chlimage_1-170](assets/chlimage_1-170.png)
 
 虽然它看起来好像可能选择了多个启用资源，但只允许一个资源。
 
-选择 `'+' icon`右上角的，以通过标识源开始选择资源的过程。
+选择右上角的`'+' icon`，以通过标识源开始选择资源的过程。
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
-* **[!UICONTROL 从我的本地文件上]**&#x200B;传从本地文件系统上传将使用本机文件浏览器选择并上传文件。 支持的文件类型包括SCORM.zip（HTML5或SWF）、MP4视频、SWF、PDF和图像类型(JPG、PNG、GIF、BMP)。 文件名将变为添加到资产库的资产名称。
+* **[!UICONTROL 从我的本地文]**
+件上传从本地文件系统上传将使用本机文件浏览器选择并上传文件。支持的文件类型包括SCORM.zip（HTML5或SWF）、MP4视频、SWF、PDF和图像类型(JPG、PNG、GIF、BMP)。 文件名将变为添加到资产库的资产名称。
 
-* **[!UICONTROL 浏览资产库]**&#x200B;从资产库中进行选择。 选择仅限于社区站点中可见的选项。
+* **[!UICONTROL 浏览资产]**
+库从资产库中选择。选择仅限于社区站点中可见的选项。
 
 * **[!UICONTROL 添加外部 URL]**
 
@@ -210,7 +212,7 @@ ht-degree: 4%
 
 * **[!UICONTROL 定义外部资源]**
 
-   输入要显示物料的位置。 成功状态和得分值是手动输入的(请参 [阅报](reports.md)告)。 上传的封面图像可用于提供其他信息。
+   输入要显示物料的位置。 成功状态和得分值是手动输入的（请参阅[报告](reports.md)）。 上传的封面图像可用于提供其他信息。
 
    在打开的对话框中，输入：
 
@@ -222,19 +224,19 @@ ht-degree: 4%
 
       物理站点的位置，如教室。
 
-#### 添加的视频资源示例 {#example-of-an-added-video-resource}
+#### 添加的视频资源{#example-of-an-added-video-resource}的示例
 
 ![chlimage_1-172](assets/chlimage_1-172.png)
 
 * **[!UICONTROL 资源封面图像]**
 
-   封面图像是在首次查看启用资源时要显示的图像。 例如，当视频资源尚未播放时，将显示封面图像。 如果未上传自定义图像，则显示默认图像。 对于视频资源，可以生成 [缩略图](enablement.md#ffmpeg)，但只有在上传时，而不是在视频作为URL引用时。 对于位置资源，图像可用于提供其他信息。
+   封面图像是在首次查看启用资源时要显示的图像。 例如，当视频资源尚未播放时，将显示封面图像。 如果未上传自定义图像，则显示默认图像。 对于视频资源，[可以生成缩略图](enablement.md#ffmpeg)，但仅当上传时，而不是当视频作为URL引用时。 对于位置资源，图像可用于提供其他信息。
 
    封面图像的建议大小为640 x 360 px。
 
-* Select **[!UICONTROL Next]**
+* 选择&#x200B;**[!UICONTROL 下一步]**
 
-### 3 Settings {#settings}
+### 3设置{#settings}
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
@@ -242,11 +244,11 @@ ht-degree: 4%
 >
 >不应直接在要从学习路径引用的教育资源中登记学员。 学员只需登记到学习路径中。
 >
->如果某个成员登记到引用该资源的资源和学习路径中，则其分配将同时显示学习路径中的单个资源和资源。
+>如果某个成员登记到引用该资源的资源和学习路径中，则其分配将同时显示学习路径中的单一资源和资源。
 
 * **[!UICONTROL 社交设置]**
 
-   这些设置控制学员是否能够提供与启用资源相关的输入。 审核 [设置](sites-console.md#moderation) 是父社区站点的设置。
+   这些设置控制学员是否能够提供与启用资源相关的输入。 [协调设置](sites-console.md#moderation)是父社区站点的设置。
 
    * **[!UICONTROL 允许评论]**
 
@@ -262,37 +264,38 @@ ht-degree: 4%
 
 * **[!UICONTROL 到期日期]**
 
-   *(可选* )可以选择完成分配的日期。
+   *（可选）* 可以选择完成分配的日期。
 
 * **[!UICONTROL 资源作者]**
-   *（可选）* Enablement Resource的作者。 使用下拉菜单从成员组的成员用户 [中进行选择](#members-group)。
+   *（可选）* 启用资源的作者。使用下拉菜单从[成员组](#members-group)的成员中进行选择。
 
-* **[!UICONTROL 资源联系和放大；ast;]**
-   *（必需）* ，会员可以联系的与启用资源相关的人员。 使用下拉菜单从成员组的成员用户 [中进行选择](#members-group)。
+* **[!UICONTROL 资源联系方式(&amp;A);]**
+   *（必需）* 会员可以联系的与启用资源相关的人员。使用下拉菜单从[成员组](#members-group)的成员中进行选择。
 
 * **[!UICONTROL 资源专家]**
-   *（可选）* ，会员可以与具有支持资源相关专业知识的人员联系。 使用下拉菜单从成员组的成员用户 [中进行选择](#members-group)。
+   *（可选）* 会员可以联系的人员，他们具有与支持资源相关的专业知识。使用下拉菜单从[成员组](#members-group)的成员中进行选择。
 
-### 4 Assignments {#assignments}
+### 4任务{#assignments}
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
-* **[!UICONTROL 添加受]**&#x200B;分配者使用下拉菜单从 [会员](#members-group) （以粗体列出的用户和用户组）中选择要作为学员登记的成员。 成员登录社区站点后，其登记的启用资源（和学习路径）将显示在其“任务” [页面](functions.md#assignments-function) 。
+* **[!UICONTROL 添]**
+加受分配者使用下拉菜单从 [会员](#members-group) -将作为学员登记的用户和用户组（以粗体显示）中进行选择。成员登录社区站点后，其登记的启用资源（和学习路径）将显示在其[“任务分配](functions.md#assignments-function)”页面上。
 
-* select **[!UICONTROL Create]**
+* 选择&#x200B;**[!UICONTROL 创建]**
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
-成功创建启用资源将返回到“资源”控制台，并选择新创建的资源。 从此控制台中，可以管 [理资源](#managing-a-resource)。
+成功创建启用资源将返回到“资源”控制台，并选择新创建的资源。 从此控制台中，可以[管理资源](#managing-a-resource)。
 
-## Create a Learning Path {#create-a-learning-path}
+## 创建学习路径{#create-a-learning-path}
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
 向社区站点添加新的学习路径
 
-* 选择图 `Create` 标
-* 从显示的子菜单中，选择 `Learning Path`
+* 选择`Create`图标
+* 从显示的子菜单中，选择`Learning Path`
 
 此操作将启动
 
@@ -312,43 +315,43 @@ ht-degree: 4%
 
 * **[!UICONTROL 添加]**
 
-   (*可选*)在成员的分配页面和资源控制台中的学习路径卡片上显示的图像。 从服务器的本地文件系统中选择该图像。 如果未提供图像，则将为上传的资源生成缩略图。
+   （*可选*）要在成员分配页面和资源控制台中学习路径的卡片上显示的图像。 从服务器的本地文件系统中选择该图像。 如果未提供图像，则将为上传的资源生成缩略图。
 
-   ***注意***: 建议的图像大小不再只是480 x 480像素。 由于卡的响应式设计具有不同的浏览器尺寸，因此显示大小将从220 X 165像素变化到400 x 165像素。
+   ***注意***:建议的图像大小不再只是480 x 480像素。由于卡的响应式设计具有不同的浏览器尺寸，因此显示大小将从220 X 165像素变化到400 x 165像素。
 
 * **[!UICONTROL 网站名称]**
 
-   (*只读*)要添加资源的社区站点。
+   (*readonly*)要向其添加资源的社区站点。
 
 * **[!UICONTROL 学习路径名称]**
 
-   (*必需*)学习路径的显示名称。 根据显示名称创建有效节点名称。
+   (*required*)学习路径的显示名称。 根据显示名称创建有效节点名称。
 
 * **[!UICONTROL 标记]**
 
-   (*可选*)可以选择将学习路径与一个或多个目录相关联的一个或多个标记。 请参 [阅标记启用资源](tag-resources.md)。
+   （*可选*）可以选择一个或多个标记，将学习路径与一个或多个目录相关联。 请参阅[标记Enablement Resources](tag-resources.md)。
 
 * **[!UICONTROL 在目录中显示]**
 
-   如果不选中，则学习路径不会显示在任何目录中。 如果选中此项，则除非已预过滤或 [UI中的成员过滤器](catalog-developer-essentials.md#pre-filters) ，否则学习路径将显示在所有目录中。 在目录中显示学习路径将间接授予对其所有包含资源的READ访问权限。 默认为未选中。
+   如果不选中，则学习路径不会显示在任何目录中。 如果选中此项，则除非[预过滤的](catalog-developer-essentials.md#pre-filters)或UI中的成员过滤器，否则学习路径将显示在所有目录中。 在目录中显示学习路径将间接授予对其所有包含资源的READ访问权限。 默认为未选中。
 
 * **[!UICONTROL 描述]**
 
-   (可&#x200B;*选*)要显示的启用资源说明。
+   （*可选*）要显示的启用资源说明。
 
 * **[!UICONTROL 较小的资产]**
 
-   (*可选*)从AEM Assets选出。 用于在发布环境（如目录）中表示资源的缩略图图像。
+   （*可选*）从AEM Assets选择。 用于在发布环境（如目录）中表示资源的缩略图图像。
 
 * **[!UICONTROL 较大的资产]**
 
-   (*可选*)从AEM Assets选出。 在发布环境中表示资源的大图像，如资源的主页。
+   （*可选*）从AEM Assets选择。 在发布环境中表示资源的大图像，如资源的主页。
 
 * **[!UICONTROL 内容片段资产]**
 
-   (*可选*)从AEM Assets选出。 可在发布环境中引用但默认不使用的内容片段。
+   （*可选*）从AEM Assets选择。 可在发布环境中引用但默认不使用的内容片段。
 
-* Select **[!UICONTROL Next]**
+* 选择&#x200B;**[!UICONTROL 下一步]**
 
 ### 添加必备项 {#add-prerequisites}
 
@@ -358,7 +361,7 @@ ht-degree: 4%
 (
 *可选*)选择其他已发布的学习路径后，必须先完成这些路径，学员才能选择此学习路径。
 
-* Select **[!UICONTROL Next]**
+* 选择&#x200B;**[!UICONTROL 下一步]**
 
 ### 添加资源 {#add-resources}
 
@@ -366,7 +369,7 @@ ht-degree: 4%
 
 * **[!UICONTROL 强制执行学习路径中的排序]**
 
-   (*可选*)如果设置为“开”，则添加启用资源的顺序是学员完成学习路径所需的顺序。 默认为关闭。
+   （*可选*）如果设置为“开”，则添加启用资源的顺序是学员完成学习路径的顺序。 默认为关闭。
 
 * **[!UICONTROL 资源]**
 
@@ -374,7 +377,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->您只能选择与学习路径同级别的可用资源。 例如，对于在组中创建的学习路径，只有组级别资源可用； 对于在社区站点中创建的学习路径，该站点中的资源可用于添加到学习路径。
+>您只能选择与学习路径同级别的可用资源。 例如，对于在组中创建的学习路径，只有组级别资源可用；对于在社区站点中创建的学习路径，该站点中的资源可用于添加到学习路径。
 
 * 选择&#x200B;**[!UICONTROL 下一步]**。
 
@@ -384,13 +387,13 @@ ht-degree: 4%
 
 * **[!UICONTROL 添加注册]**
 
-   使用下拉菜单从社区站点的成员组和成员组（以粗体显示）中进行 [选择](#members-group)。 在首次创建学习路径时不必添加任务。 可以修改学习路径属性，以在以后添加学员。
+   使用下拉菜单从社区站点的[成员组](#members-group)的成员和成员组（以粗体显示）中进行选择。 在首次创建学习路径时不必添加任务。 可以修改学习路径属性，以在以后添加学员。
 
-* **[!UICONTROL Learning Path Contact&amp;ast;]**
+* **[!UICONTROL 学习路径联系方式(&amp;A);]**
 
-   *（必需）* ，会员可以联系的与学习路径相关的人员。 使用下拉菜单从社区站点的成员组中的成员用户 [中进行选择](#members-group)。
+   *（必需）* 会员可以联系的与学习路径相关的人员。使用下拉菜单从社区站点的[成员组](#members-group)的成员中进行选择。
 
-* Select **[!UICONTROL Create]**
+* 选择&#x200B;**[!UICONTROL 创建]**
 
 >[!NOTE]
 >
@@ -398,7 +401,7 @@ ht-degree: 4%
 >
 >如果某个会员登记到启用资源和引用该资源的学习路径中，则其分配将同时显示学习路径中的单一资源和资源。
 
-## 管理资源 {#managing-a-resource}
+## 管理资源{#managing-a-resource}
 
 管理单个支持资源
 
@@ -418,7 +421,7 @@ ht-degree: 4%
 
 ### 编辑资源 {#edit-resource}
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 通过选择铅笔图标，可以使用显示的创建启用资源的步骤，以便可以修改提供的任何信息。
 
@@ -428,7 +431,7 @@ ht-degree: 4%
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-通过选择垃圾桶图标，启用资源将 `Delete`在确认后显示。
+通过选择垃圾桶图标，启用资源将在确认后变为`Delete`d。
 
 ### 发布 {#publish}
 
@@ -436,9 +439,9 @@ ht-degree: 4%
 
 在学员能够看到分配的支持资源之前，必须先发布它：
 
-* 选择“世界”图标 `Publish`
-* 在弹出的对话框中，再次选择 **[!UICONTROL 发布]** 。
-* 选择关 **[!UICONTROL 闭]**
+* 选择`Publish`的世界图标
+* 在弹出的对话框中，再次选择&#x200B;**[!UICONTROL 发布]**
+* 选择&#x200B;**[!UICONTROL 关闭]**
 
 即使对话框声明操作已排队，它通常也会立即发布。
 
@@ -446,7 +449,7 @@ ht-degree: 4%
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-要临时使发布环境中的成员无法访问启用资源而不删除它，请使用资源的“世界” `Unpublish`图标。
+要临时使发布环境中的成员无法访问启用资源，而不删除它，请使用资源`Unpublish`的全球图标。
 
 ### 报告 {#report}
 
@@ -454,13 +457,13 @@ ht-degree: 4%
 
 通过“报告”图标，学员可以访问在发布环境中与分配的支持资源交互时生成的报告。 报告因资源类型而异。
 
-对于所有学习路径，可以根据资源或学员视图报告( `User Report`)。
+对于所有学习路径，可以根据资源或学员视图报告(`User Report`)。
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
-此报告专门针对当前支持资源或学习路径。 提供的报告深度取决于 [Adobe Analytics](analytics.md) 是否为社区站点授权和启用。 时间 [轴](#timeline)、查 [看器参与和按设](#viewer-engagement)备的参与报告是根据轮询间隔从 [Adobe Analytics导入](#engagement-by-device)[](analytics.md#report-importer)的。
+此报告专门针对当前支持资源或学习路径。 提供的报告深度取决于是否为社区站点许可和启用[Adobe Analytics](analytics.md)。 根据[轮询间隔](analytics.md#report-importer)，从Adobe Analytics导入[时间线](#timeline)、[查看器参与](#viewer-engagement)和[按设备参与](#engagement-by-device)报告。
 
-对于所有启用资源，无论是否启用Adobe Analytics，都会显示“被分派人 [状态](#assignee-status) ”和“ [评级](#ratings) ”以及“报 [告摘要](#report-summary) ”表。
+对于所有启用资源，无论是否启用Adobe Analytics，都有关于[被分派人状态](#assignee-status)和[评级](#ratings)的报告，以及[报告摘要](#report-summary)表。
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
@@ -518,7 +521,7 @@ ht-degree: 4%
 
 “评级”报告基于已对启用资源进行评级的学员数，显示每个星级评级的数量，后跟总评级数和平均评级的摘要。
 
-#### 报告摘要 {#report-summary}
+#### 报告摘要{#report-summary}
 
 对于启用资源，报告摘要是表列表
 
@@ -546,13 +549,13 @@ ht-degree: 4%
    * 已完成的资源数
    * 他们的状态
 
-可以通过使用选择器选择列来调整表的显 `Show / hide columns` 示。
+可以使用`Show / hide columns`选择器选择列来调整表的显示。
 
-#### Download Report as CSV {#download-report-as-csv}
+#### 以CSV {#download-report-as-csv}格式下载报告
 
 “报告摘要”表格可使用控制台顶部的按钮以CSV格式下载。
 
-* 对于Enablement资源： `Download Resource Report as CSV` 按钮
-* 学习路径： `Download Learning Path Report as CSV` 按钮
+* 对于Enablement资源：`Download Resource Report as CSV`按钮
+* 学习路径：`Download Learning Path Report as CSV`按钮
 
 无论选择哪些列进行显示，都会下载完整的“报告摘要”。

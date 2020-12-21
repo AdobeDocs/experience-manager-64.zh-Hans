@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 以编程方式管理首选项节点 {#programmatically-managing-the-preferencesnodes}
+# 以编程方式管理首选项节点{#programmatically-managing-the-preferencesnodes}
 
 本主题介绍如何使用Preferences Manager Service API(Java)以编程方式管理Preferences节点。
 
-您可以从管理员UI中手动更改配置设置。 要更改选项，请导航到 `Home>Settings>User Management> Configuration>Manual Configuration`。 进行 `config.xml` 更改后导入，您会注意到除在节点进行的更改外的所有更改 `/Adobe/Adobe Experience Manager Forms/Config/UM persist` 都丢失。 用户管理导入和导出的预览不支持更改其他组件的配置设置。 现在，可以使用API进行这些 `PreferencesManagerServiceClient` 更改。
+您可以从管理员UI中手动更改配置设置。 要更改选项，请导航到`Home>Settings>User Management> Configuration>Manual Configuration`。 进行更改后导入`config.xml`，您会注意到除在节点`/Adobe/Adobe Experience Manager Forms/Config/UM persist`所做更改外的所有更改都丢失。 用户管理导入和导出的预览不支持更改其他组件的配置设置。 现在，可以使用`PreferencesManagerServiceClient` API进行这些更改。
 
 **步骤摘**&#x200B;要要以编程方式管理首选项节点，请执行以下步骤：
 

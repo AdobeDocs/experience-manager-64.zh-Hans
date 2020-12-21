@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# 证书和凭据管理基础知识 {#basics-of-managing-certificates-and-credentials}
+# 管理证书和凭据{#basics-of-managing-certificates-and-credentials}的基础知识
 
-凭 *据包含* 您对文档进行签名或识别所需的私钥信息。 证 *书* ，是您为信任配置的公钥信息。 AEM表单使用证书和凭据用于以下几种用途：
+*凭据*&#x200B;包含签名或识别文档所需的私钥信息。 *证书*&#x200B;是您为信任配置的公钥信息。 AEM表单使用证书和凭据用于以下几种用途：
 
-* Acrobat Reader DC扩展使用凭据启用PDF文档中的Adobe Reader使用权。 (请参 [阅配置凭据以用于Acrobat Reader DC扩展](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)。)
-* 您可以将Rights Management配置为仅显示来自受信任发行商的凭据，以便在Acrobat使用。 (请参阅 [配置Rights Management显示设置](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)。) 证书中必须存在公用名称(CN)。
-* 签名服务访问证书和凭据。 有关签名服务的详细信息，请参 [阅服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+* Acrobat Reader DC扩展使用凭据启用PDF文档中的Adobe Reader使用权。 (请参阅[配置用于Acrobat Reader DC扩展的凭据](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)。)
+* 您可以将Rights Management配置为仅显示来自受信任发行商的凭据，以便在Acrobat使用。 (请参阅[配置Rights Management显示设置](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)。) 证书中必须存在公用名称(CN)。
+* 签名服务访问证书和凭据。 有关签名服务的详细信息，请参阅[服务引用](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 **生成对密钥**
 

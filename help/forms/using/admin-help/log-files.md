@@ -18,23 +18,23 @@ ht-degree: 0%
 ---
 
 
-# Log files {#log-files}
+# 日志文件{#log-files}
 
 事件（如运行时或启动错误）记录到应用程序服务器日志文件中。 如果在部署到应用程序服务器时遇到任何问题，可以使用日志文件帮助您找到问题。 您可以使用任何文本编辑器打开日志文件。
 
-(JBoss)以下日志文件位于目 `*[appserver root]*/server/*[server]*/log` 录中：
+(JBoss)以下日志文件位于`*[appserver root]*/server/*[server]*/log`目录中：
 
 * boot.log
 * server.log.*[yyyy-mm-dd]*
 * server.log
 
-(WebLogic)域日志文件位于appserverdomain *[目录中]* ，服务器日志文件位于*[appserverdomain]/servers/[appserver name]/logs *目录中：
+(WebLogic)域日志文件位于&#x200B;*[appserverdomain]*&#x200B;目录中，服务器日志文件位于*[appserverdomain]/servers/[appserver name]/logs *目录中：
 
 * access.log
 * *[appserver name]*.log
 * *[appserver name]*.out。*[增量数]*
 
-(WebSphere)以下日志文件位于 *[appserver root]*/用户档案/default/logs/*[appserver name目录]* :
+(WebSphere)以下日志文件位于&#x200B;*[appserver root]*/用户档案/default/logs/*[appserver name]*&#x200B;目录中：
 
 * SystemErr.log
 * SystemOut.log

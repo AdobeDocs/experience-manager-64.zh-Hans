@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# 为输出指定文件位置 {#specify-file-locations-for-output}
+# 指定输出{#specify-file-locations-for-output}的文件位置
 
 您可以指定“输出”在其中查找它需要的特定类型文件的位置。
 
@@ -26,25 +26,25 @@ ht-degree: 1%
 1. 在位置下，指定相应的选项。
 1. 单击保存。
 
-## 位置设置 {#locations-settings}
+## 位置设置{#locations-settings}
 
-**内容根URI:** 从中检索表单的存储库的URI或绝对位置。 此值与通过API指定的sForm参数组合，以构建到检索的表单的绝对路径。 此值可以引用可通过HTTP访问的目录或Web位置。
+**内容根URI:** 从中检索表单的存储库的URI或绝对位置。此值与通过API指定的sForm参数组合，以构建到检索的表单的绝对路径。 此值可以引用可通过HTTP访问的目录或Web位置。
 
 默认值为空字符串。
 
-**XCI配置文件：** 输出服务用于渲染的XCI配置文件的相对或绝对位置。 对于相对值，假定XCI文件驻留在AEM表单可部署的EAR文件中。
+**XCI配置文件：** 输出服务用于渲染的XCI配置文件的相对或绝对位置。对于相对值，假定XCI文件驻留在AEM表单可部署的EAR文件中。
 
 默认值为 `com/adobe/formServer/PA/pa_output.xci`.
 
-**缓存位置：** 指定输出磁盘缓存的位置。 更改此设置时，将重置当前位置的所有现有缓存信息，并在新位置创建新缓存。 选择以下选项之一：
+**缓存位置：** 指定输出磁盘缓存的位置。更改此设置时，将重置当前位置的所有现有缓存信息，并在新位置创建新缓存。 选择以下选项之一：
 
-**默认位置：** 这是默认选择。 选择此选项后，将在依赖于您所使用的应用程序服务器的位置创建缓存：
+**默认位置：** 这是默认选择。选择此选项后，将在依赖于您所使用的应用程序服务器的位置创建缓存：
 
 * **JBoss:** `[JBoss Home]\server\[install type]\svcdata\Output\Cache`
 * **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[forms server name]\Output\Cache`
 * **WebSphere:** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 
-**LC临时目录：** 缓存创建在AEM forms temp目录的子目录中，该目录在管理控制台中的“设置”>“核心系统设置”>“配置”>“临时目录的位置”下指定。 子目录名为 `adobeoutput_[servername]`。
+**LC临时目录：** 缓存在AEM forms temp目录的子目录中创建，该目录在管理控制台中的“设置”>“核心系统设置”>“配置”>“临时目录的位置”下指定。子目录名为`adobeoutput_[servername]`。
 
 >[!NOTE]
 >

@@ -18,13 +18,13 @@ ht-degree: 7%
 ---
 
 
-# 交互通信配置属性 {#interactive-communications-configuration-properties}
+# 交互通信配置属性{#interactive-communications-configuration-properties}
 
 编辑交互通信的默认配置属性
 
-Interactive Communications包括在安装AEM Forms加载项包后自 [动配置的属](/help/forms/using/installing-configuring-aem-forms-osgi.md) 性。 交互通信作者可以使用“Adobe Experience ManagerWeb控制台配置”页 **面编辑这些默认配置** 属性。
+交互通信包括在安装[AEM Forms加载项](/help/forms/using/installing-configuring-aem-forms-osgi.md)软件包后自动配置的属性。 交互通信作者可以使用&#x200B;**Adobe Experience ManagerWeb控制台配置**&#x200B;页编辑这些默认配置属性。
 
-Open the **Adobe Experience Manager Web Console Configuration** page using the following URL:
+使用以下URL打开&#x200B;**Adobe Experience ManagerWeb控制台配置**&#x200B;页：
 
 https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
 
@@ -35,9 +35,9 @@ https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
 * [自适应表单与交互式通信Web渠道配置](#adaptive-form-and-interactive-communication-web-channel-configuration)
 * [自适应表单与交互通信Web渠道主题配置](#adaptive-form-and-interactive-communication-web-channel-theme-configuration)
 
-## 文档片段配置 {#document-fragments-configuration}
+## 文档片段配置{#document-fragments-configuration}
 
-点按 **“Adobe Experience ManagerWeb** 控制台 **配置”页上的文档片段配置** ，以视图文档片段的配置属性。
+点按&#x200B;**Adobe Experience ManagerWeb控制台配置**&#x200B;页上的&#x200B;**文档片段配置**&#x200B;以视图文档片段的配置属性。
 
 <table> 
  <tbody> 
@@ -58,41 +58,41 @@ https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>--</p> </td> 
+   <td><p>—</p> </td> 
   </tr> 
   <tr> 
    <td>缩进</td> 
    <td>应用于列表文档片段中文本的单个缩进单位的宽度。</td> 
-   <td>12.7mm</td> 
+   <td>12.7毫米</td> 
    <td>数字</td> 
   </tr> 
   <tr> 
    <td>罗马数字最小宽度</td> 
    <td>在列表文档片段中使用罗马数字时，应用于项目符号或数字字段的最小宽度。 </td> 
-   <td>12.7mm</td> 
+   <td>12.7毫米</td> 
    <td>数字</td> 
   </tr> 
   <tr> 
    <td>最小宽度数</td> 
    <td>在列表文档片段中使用编号列表（除罗马数字之外）时，要应用于项目符号或编号字段的最小宽度。</td> 
-   <td>8.0mm</td> 
+   <td>8毫米</td> 
    <td>数字</td> 
   </tr> 
  </tbody> 
 </table>
 
-## 创建对应配置 {#create-correspondence-configuration}
+## 创建对应配置{#create-correspondence-configuration}
 
-点 **按Adobe Experience ManagerWeb** 控制台 **配置页上的创建对应配置** ，以视图代理UI的配置属性。
+点按&#x200B;**Adobe Experience ManagerWeb控制台配置**&#x200B;页上的&#x200B;**创建对应配置**&#x200B;以视图代理UI的配置属性。
 
 | 属性 | 描述 | 默认 | 可接受值 |
 |---|---|---|---|
 | 显示要编辑的已解析内容 | 选中此复选框可在代理UI上编辑文本模块时显示已解析的内容（实际值而非占位符）。 | 未选择 | 不适用 |
 | 在预览期间应用水印 | 选中此复选框可将水印应用于“在预览模式下打印交互通信的渠道”。 | 未选择 | 不适用 |
 
-## 自适应表单与交互式通信Web渠道配置 {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## 自适应表单和交互式通信Web渠道配置{#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-点按 **“Adobe Experience ManagerWeb控制台配置”页****上的“自适应表单和交互式通信Web渠道配置** ”，以视图自适应Forms和交互式通信Web渠道的配置属性。 下表描述了与交互通信相关的属性：
+点按&#x200B;**Adobe Experience ManagerWeb控制台配置**&#x200B;页上的&#x200B;**自适应表单和交互式通信Web渠道配置**，以视图自适应Forms和交互式通信Web渠道的配置属性。 下表描述了与交互通信相关的属性：
 
 | 属性 | 描述 | 默认 | 可接受值 |
 |---|---|---|---|
@@ -100,9 +100,9 @@ https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
 | 最大缓存条目数 | 设置可使用缓存检索的最大自适应表单和交互式通信数。 | 100 | 数字 |
 | 使文件名唯一 | 选中此复选框可为自适应Forms和交互式通信中作为附件包含的文件提供唯一名称。 | 未选择 | 不适用 |
 
-## 自适应表单与交互通信Web渠道主题配置 {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## 自适应表单和交互式通信Web渠道主题配置{#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-点按 **“Adobe Experience ManagerWeb控制台配置”页上的“自适应表单** ”和“交互式 **通信Web渠道”主题配置** ，以视图自适应Forms和交互式通信Web渠道主题的配置属性。
+点按&#x200B;**Adobe Experience ManagerWeb控制台配置**&#x200B;页上的&#x200B;**自适应表单和交互式通信Web渠道主题配置**，以视图自适应Forms和交互式通信Web渠道主题的配置属性。
 
 <table> 
  <tbody> 

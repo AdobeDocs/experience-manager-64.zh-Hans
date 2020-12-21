@@ -18,10 +18,10 @@ ht-degree: 0%
 ---
 
 
-# 开发沙箱内容 {#develop-sandbox-content}
+# 开发沙箱内容{#develop-sandbox-content}
 
 **[◆添加客户端库](add-clientlibs.md)**
 
-此时，可以使用We-Retail社区（社区组件指南）和功能 [要素在沙箱中探索社](../../help/sites-developing/we-retail.md)区功能 [，以](components-guide.md) 供参考 [，同时](essentials.md) 在沙箱中探索社区功能。
+此时，可以使用[We-Retail Community](../../help/sites-developing/we-retail.md)、[社区组件指南](components-guide.md)和[功能要素](essentials.md)在沙箱中探索社区功能以供参考。
 
 **[◆添加客户端库](add-clientlibs.md)**

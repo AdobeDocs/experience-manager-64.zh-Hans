@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# 排除流程报告 {#troubleshooting-process-reporting}
+# 排除进程报告{#troubleshooting-process-reporting}故障
 
-## 在Microsoft Windows 7上的Internet Explorer 9上创建过滤器时遇到的问题 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
+## 在Microsoft Windows 7上的Internet Explorer 9上创建过滤器时遇到的问题{#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-如果为预定义报告创建过滤器，则Microsoft Windows 7的Internet Explorer **9环境中间歇****性地出现以下问** 题：
+如果为预定义的报告创建过滤器，则&#x200B;**Internet Explorer 9**(对于&#x200B;**Microsoft Windows 7**&#x200B;环境)上会间歇性地出现以下问题：
 
 * “值”(Value)字段中的下拉列表显示唯一标识符而非值。
 * “值”字段中的“日历”控件显示日语字符。

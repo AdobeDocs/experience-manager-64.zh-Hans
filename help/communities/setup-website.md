@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 设置网站结构 {#setup-website-structure}
+# 设置网站结构{#setup-website-structure}
 
 要设置网站，以下说明将介绍要在以下位置创建的文件夹：
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 * `/content/an-scf-sandbox`
 这是可下载网页所在的位置
 
-本教程中的代码将依赖于应用程序、设计和内容的主文件夹名称相同。 如果您为网站选择其他名称，请始终 `an-scf-sandbox` 替换为您选择的名称。
+本教程中的代码将依赖于应用程序、设计和内容的主文件夹名称相同。 如果为网站选择其他名称，则始终使用您选择的名称替换`an-scf-sandbox`。
 
 >[!NOTE]
 >
@@ -47,37 +47,37 @@ ht-degree: 0%
    >   * 下划线变为“_005f”
 
 
-## 设置应用程序目录（/应用程序） {#setup-the-application-directory-apps}
+## 设置应用程序目录(/apps){#setup-the-application-directory-apps}
 
 存储库中的/apps目录包含用于实现从/content目录服务的页面的行为和呈现的代码。
 
 /apps目录受保护，且不能像/content和/etc/designs目录一样公开访问。
 
-1. Create `/apps/an-scf-sandbox` folder.
+1. 创建`/apps/an-scf-sandbox`文件夹。
 
-   使用 **[!UICONTROL CRXDE Lite]**，在资源管理器窗格中
+   使用&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;在资源管理器窗格中
 
-   1. 选择文 `/apps` 件夹
-   1. 右键单击 **[!UICONTROL 创建]**..或下拉创建 **[!UICONTROL ...菜单]**
-   1. 选择 **[!UICONTROL 创建文件夹……]** .
-   1. 在创建 **[!UICONTROL 文件夹]** ，输入 `an-scf-sandbox`
-   1. Click **[!UICONTROL OK]**
+   1. 选择`/apps`文件夹
+   1. 右键单击&#x200B;**[!UICONTROL 创建]**...或下拉创建……]**菜单**[!UICONTROL 
+   1. 选择&#x200B;**[!UICONTROL 创建文件夹……]**。
+   1. 在&#x200B;**[!UICONTROL 创建文件夹]**&#x200B;对话框中，输入`an-scf-sandbox`
+   1. 单击&#x200B;**[!UICONTROL 确定]**
 
-1. 创建 **[!UICONTROL 组件]** 子文件夹。
+1. 创建&#x200B;**[!UICONTROL components]**&#x200B;子文件夹。
 
-   1. 选择文 `/apps/an-scf-sandbox` 件夹
-   1. 单击“ **[!UICONTROL 创建”>“创建文件夹”]**
-   1. 在创建文 **[!UICONTROL 件夹对话]** ，输入组 **[!UICONTROL 件]**
-   1. Click **[!UICONTROL OK]**
+   1. 选择`/apps/an-scf-sandbox`文件夹
+   1. 单击&#x200B;**[!UICONTROL 创建>创建文件夹]**
+   1. 在&#x200B;**[!UICONTROL 创建文件夹]**&#x200B;对话框中，输入&#x200B;**[!UICONTROL 组件]**
+   1. 单击&#x200B;**[!UICONTROL 确定]**
 
-1. 创建 **[!UICONTROL 模板]** 子文件夹。
+1. 创建&#x200B;**[!UICONTROL templates]**&#x200B;子文件夹。
 
-   1. 选择文 `/apps/an-scf-sandbox` 件夹
-   1. 单击“ **[!UICONTROL 创建”>“创建文件夹”]**
-   1. 在创建文 **[!UICONTROL 件夹对话]** ，输入模 **[!UICONTROL 板]**
-   1. Click **[!UICONTROL OK]**
-   1. 重新选择 `/apps/an-scf-sandbox`
-   1. 选择 **[!UICONTROL 全部保存]**
+   1. 选择`/apps/an-scf-sandbox`文件夹
+   1. 单击&#x200B;**[!UICONTROL 创建>创建文件夹]**
+   1. 在&#x200B;**[!UICONTROL 创建文件夹]**&#x200B;对话框中，输入&#x200B;**[!UICONTROL 模板]**
+   1. 单击&#x200B;**[!UICONTROL 确定]**
+   1. 重新选择`/apps/an-scf-sandbox`
+   1. 选择&#x200B;**[!UICONTROL 保存全部]**
 
    与任何编辑过程一样，经常进行保存。 如果您在输入数据时遇到问题，可能是因为登录超时，或者您需要保存以前所做的编辑。
 
@@ -85,23 +85,23 @@ ht-degree: 0%
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-## 设置设计目录(/etc/designs) {#setup-the-design-directory-etc-designs}
+## 设置设计目录(/etc/designs){#setup-the-design-directory-etc-designs}
 
 /etc/designs目录包含要与页面内容一起下载的图像、脚本和样式表。
 
-1. 要在经典UI中使用设计器工具，请浏 [览至https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin)。
+1. 要在经典UI中使用设计器工具，请浏览至[https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin)。
 
-   注意： 如果使用CRXDE Lite创建类型的节 `cq:Page`点，则访问控制和复制不会设置为页面的默认设置。
+   注意：如果使用CRXDE Lite创建类型为`cq:Page`的节点，则访问控制和复制不会设置为页面的默认设置。
 
-1. 在资源管理器窗格中，选择“ **[!UICONTROL 设计]** ”文件夹，然后 **[!UICONTROL 单击“新建”>“新建页面”]**。
+1. 在资源管理器窗格中，选择&#x200B;**[!UICONTROL Designs]**&#x200B;文件夹，然后单击&#x200B;**[!UICONTROL 新建>新建页面]**。
 
    输入：
 
-   * 标题： **SCF沙箱**
-   * 名称： **an-scf沙箱**
-   * 选择 **设计页面模板**
+   * 标题：**SCF沙箱**
+   * 名称：**an scf-sandbox**
+   * 选择&#x200B;**设计页面模板**
 
-   Click **[!UICONTROL Create]**
+   单击&#x200B;**[!UICONTROL 创建]**
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -113,8 +113,8 @@ ht-degree: 0%
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-## 设置内容目录(/content) {#setup-the-content-directory-content}
+## 设置内容目录(/content){#setup-the-content-directory-content}
 
 存储库中的/content目录是网站内容所在的位置。 /content下的路径包括浏览器请求的URL路径。
 
-*在将页* 面模板 [创建为初始应用程序的一部分后](initial-app.md#createthepagetemplate) ，可以根据模板创建初始页面内容……. [**⇒**](initial-app.md)
+*在* 将页 [面](initial-app.md#createthepagetemplate) 模板创建为初始应用程序的一部分后，可以根据模板创建初始页面内容…….  [**⇒**](initial-app.md)

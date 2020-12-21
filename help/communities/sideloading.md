@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 组件侧传 {#component-sideloading}
+# 组件侧传{#component-sideloading}
 
 ## 概述 {#overview}
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 1. [将组件添加到DOM](#dynamically-add-component-to-dom)
 
-1. [使用以下两种方法](#sideload-by-invoking-scf) 之一侧传组件：
+1. [使用以下](#sideload-by-invoking-scf) 两种方法之一侧传组件：
 
 * [动态包含](#dynamic-inclusion)
    * 启动所有动态添加的组件
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->不支持 [对非现有资源](scf.md#add-or-include-a-communities-component) 进行侧传。
+>不支持对[非现有资源](scf.md#add-or-include-a-communities-component)进行侧传。
 
 ## 将组件动态添加到DOM {#dynamically-add-component-to-dom}
 
@@ -53,9 +53,11 @@ ht-degree: 0%
 
 无论使用什么标签，元素至少必须包含以下两个属性，以符合标准SCF根元素模式：
 
-* **data-component-id已**&#x200B;添加组件的有效路径
+* **data-component-**
+id已添加组件的有效路径
 
-* **data-scf-component**&#x200B;组件的resourceType
+* **data-scf-**
+component组件的resourceType
 
 以下是添加的注释组件的一个示例：
 
@@ -68,9 +70,9 @@ ht-degree: 0%
 </div>
 ```
 
-## 通过调用SCF进行侧传 {#sideload-by-invoking-scf}
+## 通过调用SCF {#sideload-by-invoking-scf}进行侧传
 
-### 动态包含 {#dynamic-inclusion}
+### 动态包含{#dynamic-inclusion}
 
 动态包含使用引导请求，这会导致SCF检查DOM并引导页面上找到的所有SCF组件。
 
@@ -78,7 +80,7 @@ ht-degree: 0%
 
 $(文档)。trigger(SCF.事件.BOOTSTRAP_REQUEST);
 
-### 动态加载 {#dynamic-loading}
+### 动态加载{#dynamic-loading}
 
 动态加载提供对加载SCF组件的控制。
 
@@ -86,4 +88,4 @@ $(文档)。trigger(SCF.事件.BOOTSTRAP_REQUEST);
 
 SCF.addComponent(文档.getElementById(*someId*));
 
-其 *中* someId是data-component- **id属性的值** 。
+其中&#x200B;*someId*&#x200B;是&#x200B;**data-component-id**&#x200B;属性的值。

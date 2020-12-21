@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 修改PDF导出转换设置 {#modifying-the-pdf-export-conversion-settings}
+# 修改“PDF导出”转换设置{#modifying-the-pdf-export-conversion-settings}
 
 使用下面的步骤修改用于导出PDF、EPS、DOC、TXT、RTF、XML或HTML文件的转换设置。 默认情况下，PDF文件使用在Adobe Acrobat专业版或Acrobat Standard中配置的默认“另存为”设置。 例如，在Acrobat，将PDF文件转换为EPS时的默认“另存为”设置将只导致PDF文件中有一页被转换为EPS。
 

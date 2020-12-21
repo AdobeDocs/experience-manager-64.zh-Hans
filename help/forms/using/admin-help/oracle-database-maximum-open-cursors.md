@@ -1,8 +1,8 @@
 ---
-title: Oracle数据库最大打开游标阈值
-seo-title: Oracle数据库最大打开游标阈值
-description: 了解如何为Oracle中打开的游标配置最大值。
-seo-description: 了解如何为Oracle中打开的游标配置最大值。
+title: Oracle数据库最大开放游标阈值
+seo-title: Oracle数据库最大开放游标阈值
+description: 了解如何为Oracle的打开的游标配置最大值。
+seo-description: 了解如何为Oracle的打开的游标配置最大值。
 uuid: c1d20997-f853-4772-b1c6-8cea73221d0a
 contentOwner: admin
 content-type: reference
@@ -18,6 +18,6 @@ ht-degree: 0%
 ---
 
 
-# Oracle数据库最大打开游标阈值 {#oracle-database-maximum-open-cursors-threshold}
+# Oracle数据库最大打开游标阈值{#oracle-database-maximum-open-cursors-threshold}
 
-要在Oracle中为打开的游标配置最大值，您可能必须将此值调整为适合您的应用程序的数字。 在中等负载下，光标打开的平均数为2700。 建议开始上限为3000。 有关详细信息，请访 [问https://www.orafaq.com/node/758](https://www.orafaq.com/node/758)。
+要在Oracle为打开的游标配置最大值，您可能必须将此值调整为适合您的应用程序的数字。 在中等负载下，光标打开的平均数为2700。 建议开始上限为3000。 有关详细信息，请访问[https://www.orafaq.com/node/758](https://www.orafaq.com/node/758)。

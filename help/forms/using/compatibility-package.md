@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# 安装兼容性包 {#compatibility-package}
+# 安装兼容性包{#compatibility-package}
 
 在AEM Forms6.4上安装兼容性软件包可让您使用AEM Forms6.3中的通信管理资源以及已弃用的自适应表单模板和页面
 
 ## 概述 {#overview}
 
-交互通信是在AEM Forms6.4中创建客户通信的默认和推荐方法。要继续使用AEM 6.3Forms和AEM 6.2Forms的字母，您需要安装 [AEMFD兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
+交互通信是在AEM Forms6.4中创建客户通信的默认和推荐方法。要继续使用AEM 6.3Forms和AEM 6.2Forms的字母，您需要安装[AEMFD兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
 
 AEMFD兼容性软件包允许您在AEM Forms6.3和AEM Forms6.4上使用以下来自AEMFD 6.3和6.2的资源：
 
@@ -33,24 +33,24 @@ AEMFD兼容性软件包允许您在AEM Forms6.3和AEM Forms6.4上使用以下来
 * 数据字典
 * 自适应表单已弃用的模板和页面
 
-有关详细信息，请 [参阅通过安装兼容性包使资产与AEM Forms6.4兼容](/help/forms/using/compatibility-package.md#assetsmadecompatible)。
+有关详细信息，请参阅[通过安装兼容性软件包](/help/forms/using/compatibility-package.md#assetsmadecompatible)使资产与AEM Forms6.4兼容。
 
-## 在AEM Forms6.4中增加对AEM Forms6.3和6.2资产的支持 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## 在AEM Forms6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}中增加对AEM Forms6.3和6.2资产的支持
 
 执行升级后，请执行以下操作以安装AEMFD兼容性包并使您的资源与6.4兼容：
 
-确保已预 [装AEM](/help/sites-deploying/backward-compatibility.md) Compatibility包。
+确保已预安装[AEM Compatibility包](/help/sites-deploying/backward-compatibility.md)。
 
-1. 安装兼 [容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
+1. 安装[兼容性软件包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
 
-   有关上传和安装包的详细信息，请参 [阅如何使用包](/help/sites-administering/package-manager.md)。
+   有关上传和安装包的详细信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。
 
 1. 日志稳定后，重新启动服务器。
 1. 使用迁移实用程序使您的资源与6.4兼容。
 
-   有关详细信息，请参阅 [迁移实用程序](/help/forms/using/migration-utility.md)。
+   有关详细信息，请参阅[迁移实用程序](/help/forms/using/migration-utility.md)。
 
-## 通过安装兼容性包使资源与AEM Forms6.4兼容 {#assetsmadecompatible}
+## 通过安装兼容性软件包{#assetsmadecompatible}与AEM Forms6.4兼容的资源
 
 通过安装兼容性包，您可以使以下资源和模板与AEM Forms6.4兼容：
 

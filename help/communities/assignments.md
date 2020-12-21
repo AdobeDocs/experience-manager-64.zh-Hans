@@ -18,16 +18,16 @@ ht-degree: 1%
 ---
 
 
-# 任务功能 {#assignments-feature}
+# 任务功能{#assignments-feature}
 
-在组件浏览器 [的“社区](catalog.md) ”组中找到的Enablement Assignments和Enablement Catalog组件是Enablement Community [的组件](overview.md#enablement-community)。
+在组件浏览器中的“社区”组中找到的Enablement Assignments和[Enablement Catalog](catalog.md)组件是[Enablement Community](overview.md#enablement-community)的组件。
 
-Enablement Assignments组件允许当前登录的社区成员（学员）访问其分配的 [启用资源](resources.md)。
+Enablement Assignments组件允许当前登录的社区成员（学员）访问其分配的[启用资源](resources.md)。
 
-从AEM Communities [教育入门教程](getting-started-enablement.md) ，请参阅“体验已发布站点”部分中成员的任 [务和目录视图](enablement-published-site.md) 。
+从[Enablement](getting-started-enablement.md)的AEM Communities入门教程中，请参阅[体验发布站点](enablement-published-site.md)部分中成员的任务和目录视图。
 
 ## 附加信息 {#additional-information}
 
-有关更多信息，请参阅开发人 [员的“任务](essentials-assignments.md) ”(Assignments)“必备工具”(Essentials)页。
+有关开发人员的详细信息，请参阅[ Assignments Essentials](essentials-assignments.md)页面。
 
-创 [建社区站点](functions.md#assignments-function) 时，“任务” [功能可用](sites-console.md)。
+创建[社区站点](sites-console.md)时，[赋值函数](functions.md#assignments-function)可用。

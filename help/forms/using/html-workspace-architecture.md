@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms工作区架构 {#aem-forms-workspace-architecture}
+# AEM Forms工作区体系结构{#aem-forms-workspace-architecture}
 
 AEM Forms工作区是在CRX™上托管的Web应用程序。 在浏览器中打开工作区时，将访问CRX资源，并在浏览器中将应用程序呈现为HTML页。
 
@@ -31,9 +31,9 @@ AEM Forms工作区是在CRX™上托管的Web应用程序。 在浏览器中打�
 
 AEM Forms服务器通过JDBC访问AEM Forms数据库。 数据库保留任务、进程及其实例、用户和相关信息。
 
-AEM Forms工作区设计为模块化的JavaScript™组件，可单独自定义并在其他Web应用程序中重用。 这些组件基于BackBone,BackBone是一个JavaScript库，它为Web应用程序提供结构。 此处提供了描述组件与BackBone交互的详细 [文章](/help/forms/using/backbone-interaction.md)。 本文讨论CRX文件夹结构中组件的 [组织](/help/forms/using/folder-structure.md) 。
+AEM Forms工作区设计为模块化的JavaScript™组件，可单独自定义并在其他Web应用程序中重用。 这些组件基于BackBone,BackBone是一个JavaScript库，它为Web应用程序提供结构。 描述组件与BackBone交互的详细文章为[此处](/help/forms/using/backbone-interaction.md)。 在[此](/help/forms/using/folder-structure.md)文章中，将讨论CRX文件夹结构中组件的组织。
 
 为AEM Forms工作区提供的包：
 
-* `adobe-lc-workspace-pkg-<version>.zip`: 它是CRX包，即，可以使用包管理器在CRX中部署它。
-* `adobe-lc-workspace-<version>-src.zip`: 它是一个存档，包含AEM Forms工作区的完整代码和用于创建部署包的脚本——发运、调试和开发包。
+* `adobe-lc-workspace-pkg-<version>.zip`:它是CRX包，即，可以使用包管理器在CRX中部署它。
+* `adobe-lc-workspace-<version>-src.zip`:它是一个存档，包含AEM Forms工作区的完整代码和用于创建部署包的脚本——发运、调试和开发包。

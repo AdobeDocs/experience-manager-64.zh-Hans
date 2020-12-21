@@ -18,41 +18,41 @@ ht-degree: 0%
 ---
 
 
-# 社区订阅 {#communities-subscriptions}
+# 社区订阅{#communities-subscriptions}
 
 ## 概述 {#overview}
 
-自社区FP1 [起](deploy-communities.md#latestfeaturepack)，社区成员可以使用称为订阅的功能通过电子邮件与社区交互。
+从社区[FP1](deploy-communities.md#latestfeaturepack)开始，社区成员可以使用称为订阅的功能通过电子邮件与社区交互。
 
-订阅与通知类 [似](notifications.md) ，因为在关注博客文章、论坛主题或问题与解答问题时，成员可以订阅通知。
+订阅与[notifications](notifications.md)类似，因为在关注博客文章、论坛主题或问题与答案时，成员可以订阅。
 
 订阅与通知的区别在于：
 
 * 成员在关注其他成员时不能订阅
-* 对成员而言，唯一要执行的操作是在以 `Email Subscriptions` 下情况下选择
+* 对成员而言，唯一要执行的操作是选择`Email Subscriptions` ，然后
 * 配置电子邮件回复后，会员只需回复收到的电子邮件，即可有效发布内容
 
-### 要求 {#requirements}
+### 要求{#requirements}
 
 **配置电子邮件**
 
 必须配置电子邮件，以使订阅能够正常工作，并使成员能通过电子邮件回复。
 
-有关设置电子邮件的说明，请参阅 [配置电子邮件](email.md)。
+有关设置电子邮件的说明，请参阅[配置电子邮件](email.md)。
 
 **启用订阅并关注**
 
-必须配置组件以启用订阅 *和以* 下组件。 允许订阅的功 [能包括](blog-feature.md)博 [客](forum.md)[、论](working-with-qna.md)坛和QnA。
+必须配置组件以启用订阅&#x200B;*和*。 允许订阅的功能有[blog](blog-feature.md)、[论坛](forum.md)和[QnA](working-with-qna.md)。
 
-## 订阅 {#subscriptions-from-following}
+## 订阅自{#subscriptions-from-following}
 
 ![chlimage_1-5](assets/chlimage_1-5.png)
 
-“跟 **踪** ”按钮提供了以活动、订阅和／或通知形式跟踪条目的方法。 每次选 **择** “跟随”按钮时，都可以打开或关闭选择。
+**Follow**&#x200B;按钮提供了一种方法，可以按活动、订阅和／或通知跟踪条目。 每次选择&#x200B;**“跟随”按钮时，都可以打开或关闭选择。**
 
-如果选择了以下任何方法，则按钮的文本将变为“以 **下”**。 为方便起见，可以选择 `Unfollow All` 关闭所有方法。
+如果选择了以下任何方法，则按钮的文本将变为&#x200B;**Following**。 为方便起见，可以选择`Unfollow All`以关闭所有方法。
 
-仅当 **将论**`Email Subscriptions` 坛、QnA或博客配置为启用电子邮件订阅时，“关注”按钮才会包含此选项。 此按钮将显示
+仅当将论坛、 QnA或博客配置为启用电子邮件订阅时，**Follow**&#x200B;按钮将包含`Email Subscriptions`选项。 此按钮将显示
 
 * 在启用的论坛、问题与答案或博客的主功能页上
 
@@ -62,15 +62,15 @@ ht-degree: 0%
 
    * 当该特定条目具有活动时，将发送电子邮件
 
-## 通过电子邮件回复 {#reply-by-email}
+## 通过电子邮件回复{#reply-by-email}
 
-当电子邮 [件配置为通过电子邮件回复](email.md#configure-polling-importer)，订阅的成员将收到一封包含已发布内容和指向在线内容的链接的电子邮件。
+当电子邮件[配置为通过电子邮件](email.md#configure-polling-importer)回复时，订阅该电子邮件的成员将收到一封电子邮件，其中包含已发布的内容和指向在线内容的链接。
 
 如果他们回复了电子邮件，则他们在回复中输入的内容将显示为在线内容。
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
-回复的发布时间由轮询导入程序的更 [新时间间隔控制](email.md#configure-polling-importer)。
+回复的发布时间由[轮询导入程序的更新间隔](email.md#configure-polling-importer)控制。
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 

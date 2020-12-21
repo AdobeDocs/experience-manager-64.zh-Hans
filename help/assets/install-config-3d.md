@@ -180,7 +180,7 @@ AEM 3D（版本3.0）的安装和配置涉及以下事项：
 
    使用鼠标左键调整视图。 背景和模型光照会发生变化，以反映新的舞台选择。
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
 ## 配置对Adobe Dimension资产{#configuring-support-for-adobe-dimension-assets}的支持
 

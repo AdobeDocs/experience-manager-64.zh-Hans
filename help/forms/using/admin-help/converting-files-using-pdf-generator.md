@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 使用PDF生成器转换文件{#converting-files-using-pdf-generator}
+# 使用PDF Generator{#converting-files-using-pdf-generator}转换文件
 
 您可以使用PDF Generator网页转换文件。
 
-## 创建PDF文件 {#create-a-pdf-file}
+## 创建PDF文件{#create-a-pdf-file}
 
 1. 在管理控制台中，单击“服务”>“PDF生成器”>“创建PDF”。
 1. 单击“浏览”以查找并选择文件。
@@ -39,17 +39,17 @@ ht-degree: 0%
 
    * 如果要上传设置文件，请在框中键入其路径和名称，或单击“浏览”查找并选择文件。
 
-1. （可选）在XMP元数据文件下，键入XMP文件的路径和名称，或单击浏览以查找并选择文件。 XMP文件可用于包含标准元数据信息。 (请参 [阅关于XMP文](converting-files-using-pdf-generator.md#about-xmp-files)件。)
+1. （可选）在XMP元数据文件下，键入XMP文件的路径和名称，或单击浏览以查找并选择文件。 XMP文件可用于包含标准元数据信息。 (请参阅[关于XMP文件](converting-files-using-pdf-generator.md#about-xmp-files)。)
 1. 单击创建。创建文件时，将显示指向该文件的链接。 如果转换过程中出错，则会显示警告。 如果创建的是Postscript文件，则警告还包含指向日志文件的链接。
 1. 单击PDF文件的链接。 文件在Acrobat打开。
 
-### 关于XMP文件 {#about-xmp-files}
+### 关于XMP文件{#about-xmp-files}
 
-PDF Generator在Acrobat 5.0或更高版本中创建的PDF文档包含XML格式的文档元数据。 *元数据* 包括有关文档及其内容的信息，如作者姓名、关键字以及搜索实用程序可以使用的版权信息。
+PDF Generator在Acrobat 5.0或更高版本中创建的PDF文档包含XML格式的文档元数据。 *元数* 据包括有关文档及其内容的信息，如作者姓名、关键字以及搜索实用程序可以使用的版权信息。
 
-文档元数据包含（但不限于）也显示在Acrobat“文档属性”对话框的“描述”选项卡上的信息。 “描述”选项卡上所做的更改会反映在文档元数据中。 文档元数据可以通过使用第三方产品进行扩展和修改。
+文档元数据包含（但不限于）也显示在Acrobat“文档属性”对话框的“描述”选项卡上的信息。 在“描述”选项卡上所做的更改会反映在文档元数据中。 文档元数据可以通过使用第三方产品进行扩展和修改。
 
-Adobe可扩展元数据平台(XMP)为Adobe应用程序提供一个通用XML框架，该框架实现了文档元数据在出版工作流的创建、处理和交换的标准化。 您可以以XMP格式保存和导入文档元数据XML源代码，从而轻松地在各种文档之间共享元数据。 有关XMP文件的详细信息，请参 [阅可扩展元数据平台(XMP)](https://www.adobe.com/products/xmp/) 和 [AdobeXMP开发人员中心](https://www.adobe.com/devnet/xmp.html)。
+Adobe可扩展元数据平台(XMP)为Adobe应用程序提供一个通用XML框架，该框架实现了文档元数据在出版工作流的创建、处理和交换的标准化。 您可以以XMP格式保存和导入文档元数据XML源代码，从而轻松地在各种文档之间共享元数据。 有关XMP文件的详细信息，请参阅[可扩展元数据平台(XMP)](https://www.adobe.com/products/xmp/)和[AdobeXMP开发人员中心](https://www.adobe.com/devnet/xmp.html)。
 
 您可以在Acrobat创建XMP文件。
 
@@ -90,13 +90,13 @@ Adobe可扩展元数据平台(XMP)为Adobe应用程序提供一个通用XML框�
    * 要使用现有设置文件，请选择“上传设置文件”，然后单击“浏览”以转到文件位置。
 
 
-1. 要上传XMP文件，请单击“浏览”并转到文件位置。 XMP文件可用于包含标准元数据信息。 (请参 [阅关于XMP文](converting-files-using-pdf-generator.md#about-xmp-files)件。)
+1. 要上传XMP文件，请单击“浏览”并转到文件位置。 XMP文件可用于包含标准元数据信息。 (请参阅[关于XMP文件](converting-files-using-pdf-generator.md#about-xmp-files)。)
 1. 单击创建。创建文件时，将显示指向PDF文件的链接。
 1. 单击链接以在Acrobat视图PDF文档。
 
-## 将PDF文件导出为其他文件格式（仅限Windows） {#export-a-pdf-file-to-another-file-format-windows-only}
+## 将PDF文件导出为另一种文件格式（仅限Windows）{#export-a-pdf-file-to-another-file-format-windows-only}
 
-您可以将PDF文件导出为各种文件格式，如《服务参考》的“生成PDF服务”一 [章所述](https://www.adobe.com/go/learn_aemforms_services_63)。
+您可以将PDF文件导出为各种文件格式，如[Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)的“生成PDF服务”一章中所述。
 
 1. 在管理控制台中，单击“服务”>“PDF生成器”>“Export PDF”。
 1. 单击“浏览”以找到要导出的PDF文件。
@@ -105,11 +105,11 @@ Adobe可扩展元数据平台(XMP)为Adobe应用程序提供一个通用XML框�
 
    转换文件时显示的转换时间可能大于此处指定的值。 转换时间包括等待线程或进程所花费的时间、转换文件所花费的时间以及回退转换器所花费的时间（如果适用）。 次. 指定超时值只是转换文件所花费的时间。
 
-1. （可选）在“指定自 **定义预检用户档案** ”选项中，单击“浏览”，然后选择 [自定义预检用户档案](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)。 预检用户档案仅在将文档转换为PDF归档(PDF/A)格式时使用。
+1. （可选）在&#x200B;**指定自定义预检用户档案**&#x200B;选项中，单击“浏览”，然后选择[自定义预检用户档案](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)。 预检用户档案仅在将文档转换为PDF归档(PDF/A)格式时使用。
 1. 单击“导出”。 转换完成后，将显示指向导出文件的链接。
 1. 单击链接以视图转换的文件。
 
-## 优化PDF（仅限Windows） {#optimize-a-pdf}
+## 优化PDF（仅限Windows）{#optimize-a-pdf}
 
 PDF Generator支持减小PDF文件的大小。
 

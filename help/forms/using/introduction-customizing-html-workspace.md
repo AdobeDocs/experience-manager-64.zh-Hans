@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# 自定义AEM表单工作区简介 {#introduction-to-customizing-aem-form-workspace}
+# 自定义AEM表单工作区{#introduction-to-customizing-aem-form-workspace}的简介
 
 AEM form workspace提供修改其界面的表示语义和功能的功能。 更改样式、布局、格式、品牌和核心功能的自定义类型如下所述。
 
 ![cu_customized_workspace_example](assets/cu_customized_workspace_example.png)
 
-## 自定义类型 {#types-of-customizations}
+## 自定义类型{#types-of-customizations}
 
 AEM Forms工作区支持各种自定义，以更新用户界面的布局、外观和功能等。 这些自定义涉及更新以下一项或多项内容：
 
@@ -32,13 +32,13 @@ AEM Forms工作区支持各种自定义，以更新用户界面的布局、外�
 * 使用语义自定义的功能
 * 在其他应用程序中重用HTML组件
 
-### 用户界面更改 {#user-interface-changes}
+### 用户界面更改{#user-interface-changes}
 
 您可以更改AEM Forms工作区的外观、布局和其他演示文稿语义。 通过自定义CSS、HTML模板和JavaScript™文件更改工作区。 所有默认文件都在默认安装中提供。
 
-AEM Forms工作区自定义的一般步 [骤中介绍了最常用的步骤](/help/forms/using/generic-steps-html-workspace-customization.md)。 有关此类自定义的特定示例（包括详细步骤），请参阅本文末尾的相关文章。
+[AEM Forms工作区自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)中介绍了最常用的步骤。 有关此类自定义的特定示例（包括详细步骤），请参阅本文末尾的相关文章。
 
-#### 了解样式表 {#understanding-the-style-sheet}
+#### 了解样式表{#understanding-the-style-sheet}
 
 在自定义工作区之前，请熟悉AEM Forms提供的默认样式表，网址为：/libs/ws/css/style.css。
 
@@ -63,7 +63,7 @@ AEM Forms工作区自定义的一般步 [骤中介绍了最常用的步骤](/hel
    <td><p>类别列表标题</p> </td> 
   </tr> 
   <tr> 
-   <td><p>.类别, .过滤器</p> </td> 
+   <td><p>.类别、.过滤器</p> </td> 
    <td><p>类别列表下的空格</p> </td> 
   </tr> 
   <tr> 
@@ -125,24 +125,24 @@ CSS自定义的顶级步骤包括：
 
 * 创建CSS文件。
 * 向此CSS添加样式项。 有关详细信息，请参阅了解CSS样式。
-* 在中更新其引用 `html.jsp`。
+* 更新`html.jsp`中的引用。
 
-有关执行这些自定义的确切步骤，请参 [阅AEM Forms工作区自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)。 AEM Forms工作区附带的CSS文件位于/libs/ws/css/。 对于与CSS相关的自定义，请使 [用送货包](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。 有关CSS相关自定义的特定示例，请参阅本文末尾的相关帮助主题。
+有关执行这些自定义的确切步骤，请参阅[AEM Forms工作区自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)。 AEM Forms工作区附带的CSS文件位于/libs/ws/css/。 对于与CSS相关的自定义，请使用[发运包](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。 有关CSS相关自定义的特定示例，请参阅本文末尾的相关帮助主题。
 
 #### 图像 {#image}
 
-您可以自定义AEM Forms工作区以添加用户的头像或添加组织的徽标。 对于这些自定义，请使 [用送货包](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。
+您可以自定义AEM Forms工作区以添加用户的头像或添加组织的徽标。 对于这些自定义，请使用[送货包](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。
 
 对图像进行自定义的顶级步骤有：
 
 * 安装和配置WebDAV。
 * 添加新图像。
 * 添加与添加的图像对应的新样式。
-* 链接到文件中的新CSS `html.jsp` 文件。
+* 链接到`html.jsp`文件中的新CSS文件。
 
-要开始在AEM Forms工作区中自定义图像，请按照AEM Forms工 [作区自定义的常规步骤操作](/help/forms/using/generic-steps-html-workspace-customization.md)。 有关与图像相关的自定义的特定示例，请参阅本文末尾的相关帮助主题。
+要开始在AEM Forms工作区中自定义图像，请按照[AEM Forms工作区自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)操作。 有关与图像相关的自定义的特定示例，请参阅本文末尾的相关帮助主题。
 
-#### HTML模板 {#html-template}
+#### HTML模板{#html-template}
 
 HTML模板有助于定义工作区用户界面的外观和布局。 通过更新默认HTML模板，您可以自定义布局默认用户界面。
 
@@ -152,9 +152,9 @@ HTML模板有助于定义工作区用户界面的外观和布局。 通过更新
 * 在用户定义的文件夹中添加新模板。
 * 对复制的文件进行相关更新，如新模板的路径。
 
-有关此类自定义的特定示例，请参阅本文末尾提供的“帮助”主题。 根据要自 [定义的模板](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) ，在 [发运包](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)或开发包之间进行选择。
+有关此类自定义的特定示例，请参阅本文末尾提供的“帮助”主题。 根据要自定义的模板，在[发运包](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)或[开发包](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)之间进行选择。
 
-### 语义变化 {#semantic-changes}
+### 语义更改{#semantic-changes}
 
 要修改AEM Forms工作区功能，请更改JavaScript源代码。 核心功能中的修改被标记为“语义更改”。 您可以修改作为AEM Forms工作区源代码的一部分提供的模型、视图和模板。
 
@@ -165,26 +165,26 @@ HTML模板有助于定义工作区用户界面的外观和布局。 通过更新
 * 进行相关更新，如更新默认JavaScript文件中新添加的模型和视图的路径。
 * 精简软件包以优化性能。
 
-有关作为源代码一部分的组件的更多概念信息，请参阅可重 [用组件的说明](/help/forms/using/description-reusable-components.md)。 对于这些自定义，请使用开发包。
+有关作为源代码一部分的组件的更多概念信息，请参见[可重用组件说明](/help/forms/using/description-reusable-components.md)。 对于这些自定义，请使用开发包。
 
-### 可重用组件 {#reusable-components}
+### 可重用组件{#reusable-components}
 
 由于AEM Forms工作区是基于组件的软件，因此可以轻松自定义和重用它。 您可以轻松地将工作区组件与Web应用程序集成。
 
-有关更多概念信息，请参 [阅可重用组件说明](/help/forms/using/description-reusable-components.md) ，以及有关使用这些组件的说明，请参 [阅将AEM Forms工作区组件集成到Web应用程序中](/help/forms/using/description-reusable-components.md)。
+有关概念信息，请参阅[可重用组件说明](/help/forms/using/description-reusable-components.md)和有关使用组件的说明，请参阅[将AEM Forms工作区组件集成到Web应用程序中](/help/forms/using/description-reusable-components.md)。
 
-## 构建AEM Forms工作区代码 {#building-html-workspace-code}
+## 构建AEM Forms工作区代码{#building-html-workspace-code}
 
-### SDK包 {#sdk-package}
+### SDK包{#sdk-package}
 
-该包包含AEM Forms工作区的源代码。 此包可从获取 `[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip`。
+该包包含AEM Forms工作区的源代码。 软件包位于`[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip`。
 
 它主要用于自定义，因为它提供了生成以下内容的功能：
 
-* 适用于发运、调试和开发用户档案的CRX包(在CRX包 [中提到](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p))。
+* 适用于送货、调试和开发用户档案的CRX包（在[CRX包](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)中提到）。
 * 自定义代码的缩小版本（用于语义更改）。
 
-#### WS内容 {#ws-content}
+#### WS内容{#ws-content}
 
 * 客户端pkg:
 
@@ -216,7 +216,7 @@ HTML模板有助于定义工作区用户界面的外观和布局。 通过更新
             * 视图-包含AEM Forms工作区中所有组件的骨干视图。
          * main.js
          * router.js
-      * libs/ws: pdf.html和pluginPing.pdf用于在AEM Forms工作区中加载PDF forms,WSNextAdapter.swf用于在AEM Forms工作区中加载SWF表单和参考线。
+      * libs/ws:pdf.html和pluginPing.pdf用于在AEM Forms工作区中加载PDF forms,WSNextAdapter.swf用于在AEM Forms工作区中加载SWF表单和参考线。
       * 区域设置：
 
          * de-DE —— 包含德语的translation.json。
@@ -230,9 +230,9 @@ HTML模板有助于定义工作区用户界面的外观和布局。 通过更新
 
 
 
-### CRX包 {#crx-package}
+### CRX包{#crx-package}
 
-CRX包可部署在CRX™存储库上。 可在上找到 `[*LC root*]\crx-repository\install\adobe-lc-workspace-pkg.zip`。
+CRX包可部署在CRX™存储库上。 它位于`[*LC root*]\crx-repository\install\adobe-lc-workspace-pkg.zip`。
 
 此包可以使用下面描述的三个用户档案构建。
 
@@ -242,14 +242,14 @@ CRX包可部署在CRX™存储库上。 可在上找到 `[*LC root*]\crx-reposit
 | 调试用户档案 | 此用户档案创建中等效率的CRX包。 包的大小略大于使用“发运”用户档案创建的包。 此包将大多数JavaScript文件组合为单个JS文件。 | 使用此用户档案进行调试。 |
 | 开发用户档案 | 此用户档案创建最大可能大小的CRX包。 所有JavaScript文件均可单独使用，因为它们位于SDK包中。 | 结合语义变化时使用此用户档案。 |
 
-#### 发运用户档案 {#ship-profile}
+#### 发运用户档案{#ship-profile}
 
 #### Command {#command}
 
-* mvn clean -P将安装在发运到客户端的源包的client-pkg文件夹上。
+* mvn clean -P将源包的client-pkg文件夹安装到客户端。
 * 运送用户档案命令执行仅在64位JVM上工作。
 
-#### WS内容 {#ws-content-1}
+#### WS内容{#ws-content-1}
 
 * css —— 包含style.css、ie.css和jquery-ui.css。
 * 图像——包含所有图像。
@@ -287,14 +287,14 @@ CRX包可部署在CRX™存储库上。 可在上找到 `[*LC root*]\crx-reposit
 * content.xml
 * _rep_policy.xml
 
-#### 调试用户档案 {#debug-profile}
+#### 调试用户档案{#debug-profile}
 
-#### Command {#command-1}
+#### 命令{#command-1}
 
 * mvn clean -P调试在client-pkg上安装
 * 调试用户档案命令执行仅在64位JVM上工作。
 
-#### WS内容 {#ws-content-2}
+#### WS内容{#ws-content-2}
 
 * css —— 包含style.css、ie.css和jqueri-ui.css。
 * 图像——包含所有图像。
@@ -332,13 +332,13 @@ CRX包可部署在CRX™存储库上。 可在上找到 `[*LC root*]\crx-reposit
 * content.xml
 * _rep_policy.xml
 
-#### 开发用户档案 {#dev-profile}
+#### 开发用户档案{#dev-profile}
 
-#### Command {#command-2}
+#### 命令{#command-2}
 
 mvn clean -P Dev在client-pkg上安装
 
-#### WS内容 {#ws-content-3}
+#### WS内容{#ws-content-3}
 
 * css —— 包含style.css、ie.css和jqueri-ui.css。
 * 图像——包含所有图像。

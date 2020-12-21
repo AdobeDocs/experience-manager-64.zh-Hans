@@ -18,41 +18,41 @@ ht-degree: 4%
 ---
 
 
-# 活动趋势 {#activity-trends}
+# 活动趋势{#activity-trends}
 
 ## 简介 {#introduction}
 
-该 `Community Activity List` 组件能够按成员以及帖子和视图内容添加有关帖子和视图的趋势信息。
+`Community Activity List`组件提供按成员添加帖子和视图以及帖子和视图内容的趋势信息的功能。
 
 文档的本节介绍
 
-* 将组件 `Community Activity List` 添加到社 [区站点](overview.md#community-sites)
+* 将`Community Activity List`组件添加到[社区站点](overview.md#community-sites)
 
-* 组件的配置设 `Community Activity List` 置
+* `Community Activity List`组件的配置设置
 
 ## 要求 {#requirement}
 
-只有在Adobe Analytics `Community Activity List` 获得社区站点的许可和配置后，才能获得社区站点的数据。
+`Community Activity List`的数据仅在Adobe Analytics获得社区站点的许可和配置后才可用。
 
-请参 [阅社区分析配置功能](analytics.md)。
+请参阅[社区功能分析配置](analytics.md)。
 
-## 将社区活动列表添加到页面 {#adding-a-community-activity-list-to-a-page}
+## 将社区活动列表添加到页面{#adding-a-community-activity-list-to-a-page}
 
-要在创作 `Community Activity List` 模式下将组件添加到页面，请找到该组 `Communities / Community Activity List` 件，然后将其拖动到页面上的相应位置。
+要在创作模式下将`Community Activity List`组件添加到页面，请找到该组件`Communities / Community Activity List`，然后将其拖动到页面上的相应位置。
 
-有关必要的信息，请访 [问社区组件基础](basics.md)。
+有关必要的信息，请访问[社区组件基础知识](basics.md)。
 
 首次放置到社区站点的页面时，组件的显示方式如下：
 
 ![chlimage_1-227](assets/chlimage_1-227.png)
 
-## 配置社区活动列表  {#configuring-community-activity-list}
+## 配置社区活动列表{#configuring-community-activity-list}
 
-选择要访问的 `Community Activity List` 已放置组件，然后选择打 `Configure` 开编辑对话框的图标。
+选择要访问的已放置`Community Activity List`组件，然后选择打开编辑对话框的`Configure`图标。
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
-在“注 **[!UICONTROL 释]** ”选项卡下，指定是否显示已上载文件的注释以及如何显示：
+在&#x200B;**[!UICONTROL 注释]**&#x200B;选项卡下，指定是否显示已上载文件的注释以及如何显示这些注释：
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
@@ -64,11 +64,11 @@ ht-degree: 4%
    * `Members`
    * `Content`
 
-   Default is `Members`.
+   默认值为`Members`。
 
 * **[!UICONTROL 显示标题]**
 
-   要在数据上方显示的描述性标题，如 `Trending Content`。
+   要显示在数据上方的描述性标题，如`Trending Content`。
 
    默认为无标题。
 
@@ -98,7 +98,7 @@ ht-degree: 4%
    * `This year (since Jan 1st)`
    * `Total`
 
-   Default is `Total`.
+   默认值为`Total`。
 
 * **[!UICONTROL 上下文路径]**
 
@@ -108,18 +108,18 @@ ht-degree: 4%
 
 * **[!UICONTROL 成员数量整合]**
 
-   取消选中（关闭）时，只计数顶级帖子。 例如，如果上下文是根页面（默认），则 `Activity Type`其 `Posts`中的活动将不显示任何，因为无法将内容发布到根页面。 选中后，将包括所有子页面上的计数。
+   取消选中（关闭）时，只计数顶级帖子。 例如，如果上下文是根页面（默认），则`Posts`的`Activity Type`将不会显示任何活动，因为无法将内容发布到根页面。 选中后，将包括所有子页面上的计数。
 
    选中默认值。
 
-## 包含4个组件的示例页面 {#example-page-with-components}
+## 包含4个组件{#example-page-with-components}的示例页
 
-**顶级访客** 配置： 类型=成员，活动类型=视图
+**顶级** 访客配置：类型=成员，活动类型=视图
 
-**顶级参与者** 配置： 类型=成员，活动类型=帖子
+**顶级** 贡献者配置：类型=成员，活动类型=帖子
 
-**主要内容** 配置： 类型=内容，活动类型=视图,
+**热门** 内容配置：类型=内容，活动类型=视图,
 
-**趋势内容** 配置： 类型=内容，活动类型=帖子
+**趋势** 内容配置：类型=内容，活动类型=帖子
 
 ![chlimage_1-230](assets/chlimage_1-230.png)

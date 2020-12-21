@@ -17,18 +17,18 @@ ht-degree: 0%
 ---
 
 
-# 布局设计 {#layout-design}
+# 布局设计{#layout-design}
 
 XFA表单模板或XDP是以下模板：
 
 * [书信](/help/forms/using/create-letter.md)
-* [Interactive](/help/forms/using/web-channel-print-channel.md#printchannel) Communications [的打印渠道](/help/forms/using/interactive-communications-overview.md)
+* [交互](/help/forms/using/web-channel-print-channel.md#printchannel) 通信的 [打印渠道](/help/forms/using/interactive-communications-overview.md)
 
 * 布局片段
 
 XDP是在AdobeForms设计师中设计的。 本文详细介绍如何设计XDP以创建有效通信／交互通信，如在何处使用表单字段或目标区域以及何时使用布局片段。
 
-## 为字母或Interactive Communications的印刷渠道创建布局 {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
+## 为字母或Interactive Communications的打印渠道创建布局{#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
 布局定义交互通信的字母／打印渠道的图形布局。 布局可包含“地址”和“引用编号”等典型表单字段。 它还包含表示目标区域的空子表单。 在表单设计器中创建布局，完成后，应用程序专家将其上传到AEM服务器。 在此处，您可以在创建对应模板或打印交互通信的渠道时选择布局。
 
@@ -49,14 +49,14 @@ XDP是在AdobeForms设计师中设计的。 本文详细介绍如何设计XDP以
    1. 对于“主居住区”部分，添加占位符目标区。 此占位符绑定到字母／交互式通信设计时的分段主居住区。
    1. 将布局(以及使用布局的片段（如果有）)上传到AEM Forms服务器。
 
-## 使用模式 {#using-schema}
+## 使用模式{#using-schema}
 
 您可以在布局或布局片段中使用模式，但它不是必需的。 如果您使用模式，请确保：
 
 1. 布局和在字母／交互式通信中使用的所有片段布局使用与字母／交互式通信相同的模式。
 1. 填充数据所需的所有字段都绑定到模式。
 
-## 创建可关联字段 {#creating-relatable-fields}
+## 创建可重复字段{#creating-relatable-fields}
 
 默认情况下，所有字段都被视为与各种其他数据源相关。 如果您的布局包含任何不能与数据源相关的字段，请使用“_int”（内部）后缀命名该字段；例如，pageCount_int。
 
@@ -80,7 +80,7 @@ XDP是在AdobeForms设计师中设计的。 本文详细介绍如何设计XDP以
 
 字段的布局配置比目标区域子表单更灵活；但是，它们与单个值类型相关联。 您可以使字段变大，或将其设置为固定的宽度和高度，依此类推。 解析的模块或规则结果将推入字段。
 
-## 确定何时使用子表单和文本字段 {#deciding-when-to-use-subforms-and-text-nbsp-fields}
+## 决定何时使用子表单和文本字段{#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
 如果要以自上而下的垂直流布局（多个段落或图像）捕获多个模块内容，请使用子表单。 您的布局必须处理子表单的高度增长以容纳其内容这一事实。 如果无法确定与子表单/目标关联的内容的长度永远不会超出布局中为子表单保留的空间，请在流子表单容器中将子表单创建为子表单。 此过程确保子表单下的布局对象随着子表单的增长向下流动。
 
@@ -119,13 +119,13 @@ XDP是在AdobeForms设计师中设计的。 本文详细介绍如何设计XDP以
  </tbody> 
 </table>
 
-## 设置重复性元素 {#setting-up-repetitive-elements}
+## 设置重复元素{#setting-up-repetitive-elements}
 
 当您的组织的徽标和地址等元素出现在信件／交互通信的所有页面时，请为这些元素创建表单字段并将它们放在主控页面。 为这些字段使用名称（字段名称）绑定。
 
-## 指定服务器渲染格式 {#specify-the-server-nbsp-render-format}
+## 指定服务器渲染格式{#specify-the-server-nbsp-render-format}
 
 将布局的服务器渲染格式用于动态XML表单；否则，任何基于此布局的字母／交互通信都无法正确呈现。 默认情况下，Forms设计器中的服务器渲染格式设置为动态XML表单。 要确保您使用的格式正确：
 
-* 在设计器中，单 **[!UICONTROL 击“文件”>“表单属性”>“默认]**”，并确保“PDF渲染／格式”设置设置为“动态XML表单”。
+* 在“设计器”中，单击&#x200B;**[!UICONTROL “文件”>“表单属性”>“默认”]**，并确保“PDF渲染／格式”设置设置为“动态XML表单”。
 

@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 使用API执行服务操作 {#performing-service-operations-using-apis}
+# 使用API{#performing-service-operations-using-apis}执行服务操作
 
-在使用AEM FormsAPI开始开发客户端应用程序之前，建议您首先阅读调用AEM Forms，它描述了调用服务的不同方式。 (请参阅 [服务容器](/help/forms/developing/service-container.md#service-container)。)
+在使用AEM FormsAPI开始开发客户端应用程序之前，建议您首先阅读调用AEM Forms，它描述了调用服务的不同方式。 (请参阅[服务容器](/help/forms/developing/service-container.md#service-container)。)
 
 熟悉不同的调用方法后，您可以学习如何以编程方式与每个服务交互。 您可以在AdobeFlex®Builder™、Java开发环境或Microsoft Visual Studio .NET等环境中开发客户端应用程序，这允许您使用暴露的WSDL在本机SOAP堆栈上使用。
 

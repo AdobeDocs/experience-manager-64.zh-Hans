@@ -17,7 +17,7 @@ ht-degree: 5%
 ---
 
 
-# 使用XML模式创建自适应表单 {#creating-adaptive-forms-using-xml-schema}
+# 使用XML模式{#creating-adaptive-forms-using-xml-schema}创建自适应表单
 
 ## 前提条件 {#prerequisites}
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 * [创建自适应表单](/help/forms/using/creating-adaptive-form.md)
 * [XML 架构](https://www.w3.org/TR/xmlschema-2/)
 
-## 使用XML模式作为表单模型 {#using-an-xml-schema-as-form-model}
+## 使用XML模式作为表单模型{#using-an-xml-schema-as-form-model}
 
 AEM Forms支持使用现有的XML模式作为表单模型创建自适应表单。 此XML模式表示组织中的后端系统生成或使用数据的结构。
 
@@ -81,7 +81,7 @@ XML元素与自适应表单组件的映射如下所示：
  </tbody> 
 </table>
 
-## 范例XML模式 {#sample-xml-schema}
+## 示例XML模式{#sample-xml-schema}
 
 下面是一个XML模式的示例。
 
@@ -129,7 +129,7 @@ XML元素与自适应表单组件的映射如下所示：
 >
 >确保XML模式只有一个根元素。 不支持具有多个根元素的XML模式。
 
-## 使用XML模式向字段添加特殊属性 {#adding-special-properties-to-fields-using-xml-schema}
+## 使用XML模式{#adding-special-properties-to-fields-using-xml-schema}向字段添加特殊属性
 
 您可以向XML模式元素添加以下属性，以向相关自适应表单的字段添加特殊属性。
 
@@ -173,9 +173,9 @@ XML元素与自适应表单组件的映射如下所示：
 
 >
 >
-例如，如果添加模式元 `userFirstName` 素，则自适应表单中生成的描述为 `User First Name`。
+例如，如果添加`userFirstName`模式元素，则自适应表单中生成的描述为`User First Name`。
 
-## 限制自适应表单组件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
+## 限制自适应表单组件{#limit-acceptable-values-for-an-adaptive-form-component}的可接受值
 
 可以向XML模式元素添加以下限制以限制自适应表单组件可接受的值：
 
@@ -293,21 +293,21 @@ XML元素与自适应表单组件的映射如下所示：
 
 **如何知道树中的哪个元素与哪个XML元素关联？**
 
-在内容查找器中多次单击某个元素时，将显示一个字段名称和一个名为的属性 `bindRef`。 此属性将树元素映射到模式中的元素或属性。
+在内容查找器中多次单击某个元素时，将显示一个字段名称和一个名为`bindRef`的属性。 此属性将树元素映射到模式中的元素或属性。
 
 ![XML模式元素的二进制字段](assets/dblclick.png)
 
-bindRef字段</code> 显示树元素与模式中元素或属性之间的关联。
+bindRef</code>字段显示树元素与模式中元素或属性之间的关联。
 
 >[!NOTE]
 >
->属性的值 `@` 中有一个符 `bindRef`号，用于区分它们与元素。 For example, `/config/projectDetails/@duration`.
+>属性的`bindRef`值中有一个`@`符号，以区分它们与元素。 例如，`/config/projectDetails/@duration`。
 
 **为什么我无法拖动子表单的单个元素（从任何复杂类型生成的结构）以用于可重复的子表单（minOccours或maxOccurs值大于1）?**
 
 在可重复的子表单中，必须使用完整的子表单。 如果只想选择字段，请使用整个结构并删除不需要的字段。
 
-**我在内容查找器中有一个很长的复杂结构。 如何找到特定元素？**
+**我在内容查找器中有一个很长的复杂结构。如何找到特定元素？**
 
 您有两种选择：
 
@@ -316,4 +316,4 @@ bindRef字段</code> 显示树元素与模式中元素或属性之间的关联�
 
 **什么是bindRef?**
 
-A `bindRef` 是自适应表单组件与模式元素或属性之间的连接。 它指示 `XPath` 从此组件或字段捕获的值在输出XML中的可用位置。 从预 `bindRef`填（预填充）XML预填充字段值时，也会使用。
+`bindRef`是自适应表单组件与模式元素或属性之间的连接。 它指定`XPath`，从此组件或字段捕获的值在输出XML中可用。 从预填充（预填充）XML预填充字段值时，也使用`bindRef`。

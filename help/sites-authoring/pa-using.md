@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 可使用页面分析数据评估页面内容的有效性。
 
-## 可从控制台中查看分析数据 {#analytics-visible-from-the-console}
+## 可从控制台中查看分析数据  {#analytics-visible-from-the-console}
 
 ![aa-10](assets/aa-10.png)
 
@@ -70,23 +70,23 @@ ht-degree: 91%
 
 1. 在站点控制台中选择要向作者公开的量度，然后单击&#x200B;**添加**。
 
-   显示的列从Adobe Analytics检索。
+   将从 Adobe Analytics 中检索显示的列。
 
    ![aa-16](assets/aa-16.png)
 
 ### 从站点打开内容分析 {#opening-content-insights-from-sites}
 
-Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites console to further investigate page effectiveness.
+从“站点”控制台打开[内容分析](/help/sites-authoring/content-insights.md)以进一步调查页面有效性。
 
 1. 在站点控制台中，选择要查看“内容分析”的页面。
 1. 在工具栏上，单击“分析和建议”图标。
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## 可从页面编辑器 (Activity Map) 中查看分析数据 {#analytics-visible-from-the-page-editor-activity-map}
+## 可从页面编辑器 (Activity Map) 中查看分析数据  {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >由于 Adobe Analytics API 中的安全性更改，因此无法再使用 AEM 中包含的 Activity Map 版本。
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>现在应使用Adobe Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap插件。

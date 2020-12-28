@@ -22,7 +22,7 @@ ht-degree: 93%
 
 AEM 让您能够使用&#x200B;**布局容器**&#x200B;组件为页面实现响应式布局。
 
-由此提供的段落系统让您能够将组件放置在响应式网格内。此网格可以根据设备/窗口大小和格式重新安排布局。此组件可与[**布局&#x200B;**模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)配合使用，让您能够根据设备创建和编辑响应式布局。
+由此提供的段落系统让您能够将组件放置在响应式网格内。此网格可以根据设备/窗口大小和格式重新安排布局。此组件可与&#x200B;[**布局**&#x200B;模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)配合使用，让您能够根据设备创建和编辑响应式布局。
 
 布局容器：
 
@@ -41,15 +41,16 @@ AEM 让您能够使用&#x200B;**布局容器**&#x200B;组件为页面实现响�
 
 AEM 使用一组机制为页面实现响应式布局：
 
-* [**布局容器&#x200B;**](#adding-a-layout-container-and-its-content-edit-mode)组件
+* [**布局容器**](#adding-a-layout-container-and-its-content-edit-mode)&#x200B;组件
 
    此组件在[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)中可用，而且提供了一个网格段落系统，让您能够在响应式网格内添加和放置组件。您也可以将此组件设置为页面上的默认段落系统。
 
-* [**布局模式&#x200B;**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
+* [**布局模式**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
    将布局容器放置到页面上后，就可以使用&#x200B;**布局**&#x200B;模式在响应式网格内放置内容。
 
-* [**模拟器&#x200B;**](#selecting-a-device-to-emulate)模拟器让您能够创建并编辑响应式网站，这些网站可以根据设备/窗口大小，通过以交互方式调整组件大小来重新安排布局。随后，用户可以使用模拟器查看内容的呈现方式。
+* [**模拟器**](#selecting-a-device-to-emulate)
+模拟器让您能够创建并编辑响应式网站，这些网站可以根据设备/窗口大小，通过以交互方式调整组件大小来重新安排布局。随后，用户可以使用模拟器查看内容的呈现方式。
 
 通过这些响应式网格机制，您可以：
 
@@ -67,7 +68,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 >[!NOTE]
 >
->通过对模板进行配置，可以启用上述机制。See [Configuring Responsive Layout](/help/sites-administering/configuring-responsive-layout.md) for further information.
+>通过对模板进行配置，可以启用上述机制。有关详细信息，请参阅[配置响应式布局](/help/sites-administering/configuring-responsive-layout.md)。
 
 ## 布局定义、设备模拟和断点 {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -153,7 +154,7 @@ AEM 允许您根据设备的宽度定义布局：
 
 >[!NOTE]
 >
->如果&#x200B;**布局容器**&#x200B;尚不可用，则必须明确地[为段落系统/页面激活布局容器](/help/sites-administering/configuring-responsive-layout.md)（例如，使用[**设计&#x200B;**模式激活](/help/sites-authoring/default-components-designmode.md)）。
+>如果&#x200B;**布局容器**&#x200B;尚不可用，则必须明确地[为段落系统/页面激活布局容器](/help/sites-administering/configuring-responsive-layout.md)（例如，使用&#x200B;[**设计**&#x200B;模式激活](/help/sites-authoring/default-components-designmode.md)）。
 
 1. 布局 **容器在组件浏览器中** ，可作为标准 [组件使用](/help/sites-authoring/author-environment-tools.md#components-browser)。 从此处，您可以将其拖动到页面上的所需位置，随后您将看到将组件拖动到 **此处占位符** 。
 1. 接下来，您可以向布局容器中添加组件。这些组件将存放实际的内容：
@@ -263,8 +264,9 @@ AEM 允许您根据设备的宽度定义布局：
    >
    >在以上示例中，浮动和隐藏操作之所以可用，是因为此布局容器嵌套在一个父布局容器内。
 
-   * **取消隐藏组**&#x200B;件选择父组件可显示包含 
-**显示隐藏的组件** 。 在此示例中，隐藏了两个组件。
+   * **取消隐**
+藏组件选择父组件可显示包含 
+**显示隐藏** 组件选项。在此示例中，隐藏了两个组件。
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    选择&#x200B;**显示隐藏的组件**&#x200B;选项时，当前隐藏的组件将以蓝色显示在它们的原始位置。

@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 70%
 
 ## 切换UI
 
-Although the touch-enabled UI is now the standard UI and [feature parity](../release-notes/touch-ui-features-status.md) has been nearly reached with the administration and editing of sites, there may be times when the user wishes to switch to the [classic UI](/help/sites-classic-ui-authoring/classicui.md). 可使用几个选项进行切换。
+尽管触屏优化UI现在是标准UI，并且[功能奇偶校验](../release-notes/touch-ui-features-status.md)几乎已通过站点管理和编辑实现，但有时用户希望切换到[经典UI](/help/sites-classic-ui-authoring/classicui.md)。 可使用几个选项进行切换。
 
 >[!NOTE]
 >
@@ -63,11 +63,11 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 您可以在多个位置定义要使用的 UI：
 
-* [配置实例的默认UI](#configuring-the-default-ui-for-your-instance) —— 这将设置用户登录时显示的默认UI，但用户可以覆盖此设置，为其帐户或当前会话选择其他UI。
+* [配置实例的默认UI](#configuring-the-default-ui-for-your-instance)  —— 这将设置用户登录时显示的默认UI，但用户可以覆盖此设置，为其帐户或当前会话选择其他UI。
 
 * [为您的帐户设置经典UI创作](/help/sites-authoring/select-ui.md#setting-classic-ui-authoring-for-your-account) -这将设置编辑页面时用作默认UI的UI，但用户可以覆盖此设置，为其帐户或当前会话选择其他UI。
 
-* [将当前会话切换为经典UI](#switching-to-classic-ui-for-the-current-session) —— 此操作会将当前会话切换为经典UI。
+* [将当前会话切换为经典UI](#switching-to-classic-ui-for-the-current-session)  —— 此操作会将当前会话切换为经典UI。
 
 * 对于[页面创作，系统会重写某些与 UI 有关的设置](#ui-overrides-for-the-editor)。
 
@@ -75,13 +75,13 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 >
 >切换到经典 UI 的各种选项无法立即开箱即用，必须对您的实例进行专门配置。
 >
->See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+>有关详细信息，请参阅[启用对经典UI的访问](/help/sites-administering/enable-classic-ui.md)。
 
 >[!NOTE]
 >
 >对于从以前版本升级而来的实例，页面创作将继续使用经典 UI。
 >
->After upgrade, page authoring will not be automatically switched to the touch-enabled UI, but you can configure this using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). 请参阅[编辑器的 UI 重写](#ui-overrides-for-the-editor)。
+>升级后，页面创作不会自动切换到触屏优化UI，但您可以使用&#x200B;**WCM创作UI模式服务**（`AuthoringUIMode`服务）的[OSGi配置](/help/sites-deploying/configuring-osgi.md)进行配置。 请参阅[编辑器的 UI 重写](#ui-overrides-for-the-editor)。
 
 ## 配置实例的默认 UI {#configuring-the-default-ui-for-your-instance}
 
@@ -89,13 +89,13 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 该设置可能会被用户默认设置或会话设置所重写。
 
-## 为您的帐户设置经典 UI 创作 {#setting-classic-ui-authoring-for-your-account}
+## 为您的帐户设置经典 UI 创作  {#setting-classic-ui-authoring-for-your-account}
 
 每个用户都可以访问[用户首选项](/help/sites-authoring/user-properties.md)来定义自己是否希望使用经典 UI 进行页面创作（而不是默认 UI）。
 
 该设置可能会被会话设置所重写。
 
-## 将当前会话切换为经典 UI {#switching-to-classic-ui-for-the-current-session}
+## 将当前会话{#switching-to-classic-ui-for-the-current-session}切换为经典UI
 
 使用触屏优化 UI 时，桌面用户可能想要还原到经典（仅限桌面）UI。将当前会话切换到经典 UI 的方法有多种。
 
@@ -106,7 +106,7 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
    >用于切换到经典 UI 的该选项无法立即开箱即用，必须对您的实例进行专门配置。
    >
    >
-   >See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+   >有关详细信息，请参阅[启用对经典UI的访问](/help/sites-administering/enable-classic-ui.md)。
 
    如果启用该选项，那么每当您将鼠标悬停在适用的控制台上时，都会显示一个图标（一个显示器符号），点按/单击它将在经典 UI 中打开相应的位置。
 
@@ -116,7 +116,7 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 * **URL**
 
-   The classic UI can be accessed using the URL for the welcome screen at `welcome.html`. For example:
+   经典UI可以使用欢迎屏幕`welcome.html`的URL进行访问。例如：
 
    `http://localhost:4502/welcome.html`
 
@@ -133,7 +133,7 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 >
 >用于切换到经典 UI 的该选项无法立即开箱即用，必须对您的实例进行专门配置。
 >
->See [Enabling Access to Classic UI](/help/sites-administering/enable-classic-ui.md) for more information.
+>有关详细信息，请参阅[启用对经典UI的访问](/help/sites-administering/enable-classic-ui.md)。
 
 如果已启用，**打开经典 UI** 将可从&#x200B;**页面信息**&#x200B;对话框中访问：
 
@@ -145,17 +145,17 @@ Although the touch-enabled UI is now the standard UI and [feature parity](../rel
 
 * 创作页面时：
 
-   * Use of the classic editor is forced when accessing the page using `cf#` in the URL. 例如：
+   * 当使用URL中的`cf#`访问页面时，会强制使用经典编辑器。 例如：
 
       `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-   * Use of the touch-enabled editor is forced when using `/editor.html` in the URL or when using a touch device. 例如：
+   * 当在URL中使用`/editor.html`或使用触控设备时，会强制使用触屏启用编辑器。 例如：
 
       `http://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * 任何强制操作都是临时的，而且仅对浏览器会话有效
 
-   * A cookie set will be set dependent on whether touch-enabled ( `editor.html`) or classic ( `cf#`) is used.
+   * 将根据使用的是触屏启用(`editor.html`)还是经典(`cf#`)来设置Cookie集。
 
 * 在通过 `siteadmin` 打开页面时，将检查以下各项是否存在：
 

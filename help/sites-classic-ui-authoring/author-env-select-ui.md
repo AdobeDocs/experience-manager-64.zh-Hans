@@ -28,7 +28,7 @@ ht-degree: 59%
 >
 >对于从以前版本升级而来的实例，页面创作将继续使用经典 UI。
 >
->After upgrade, page authoring will not be automatically switched to the touch-enabled UI, but you can configure this using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of the **WCM Authoring UI Mode Service** ( `AuthoringUIMode` service). 请参阅[编辑器的 UI 重写](#uioverridesfortheeditor)。
+>升级后，页面创作不会自动切换到触屏优化UI，但您可以使用&#x200B;**WCM创作UI模式服务**（`AuthoringUIMode`服务）的[OSGi配置](/help/sites-deploying/configuring-osgi.md)进行配置。 请参阅[编辑器的 UI 重写](#uioverridesfortheeditor)。
 
 ## 配置实例的默认 UI {#configuring-the-default-ui-for-your-instance}
 

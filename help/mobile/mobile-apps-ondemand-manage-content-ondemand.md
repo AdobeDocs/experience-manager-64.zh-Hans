@@ -22,25 +22,25 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
 内容管理操作是帮助在应用程序中创建和管理内容的构件。 对应用程序中的内容执行以下操作。
 
-## 内容概述 {#content-overview}
+## 内容概述{#content-overview}
 
 如果您想到在线杂志，主要内容包括文章、广告和封面。 可在AEM中创建三种主要类型的移动点播内容：
 
-* **文章**: 基于文本与艺术一起传递信息
-* **横幅：** 通常是图形促销链接
-* **集合：** 代表一个定义完 *善的* 、装满适合封面主题的文章或横幅等内容的桶
+* **文章**:基于文本与艺术一起传递信息
+* **横幅：通** 常是图形促销链接
+* **集合：** 表示定义 ** 明确的包，其中填充适合封面主题的文章或横幅等内容
 
-* **共享资源：** 允许在文章之间重复使用或共享公共部分
+* **共享资源：允** 许在文章之间重复使用或共享公用部分
 
 >[!NOTE]
 >
->要进一步了解AEM Mobile应用程序的设计注意事项，请参 [阅联机帮助中的AEM Mobile应用程序](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 设计注意事项。
+>要进一步了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)。
 
-## Creating and Managing Content {#creating-and-managing-content}
+## 创建和管理内容{#creating-and-managing-content}
 
 以下主题介绍了内容（即文章、横幅和集合）的创建和管理。 学习如何创建和管理内容后，您可以看到其他主题，如上传共享资源、发布／取消发布内容以及使用预检进行预览。
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->通常，在发布内容之前应进行预检。 有关更 [多详细信息，请参](/help/mobile/aem-mobile-manage-ondemand-services.md) 阅使用预检预览。
+>通常，在发布内容之前应进行预检。 有关详细信息，请参阅[使用Preflight预览](/help/mobile/aem-mobile-manage-ondemand-services.md)。
 
 ### 其他资源 {#additional-resources}
 

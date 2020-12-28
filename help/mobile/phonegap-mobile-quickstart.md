@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# 移动快速入门 {#mobile-quickstart}
+# 移动快速启动{#mobile-quickstart}
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
-## AEM验证应用程序 {#aem-verify-app}
+## AEM验证应用程序{#aem-verify-app}
 
 >[!CAUTION]
 >

@@ -23,7 +23,7 @@ ht-degree: 58%
 * [](/help/sites-authoring/default-components-foundation.md)基础组件到核心组件[](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
 * [](website.md)经典 UI 到触控式 UI[](touch-ui-concepts.md)
 
-有关这些工具的使用方法的更多信息，请 [参阅其文档](http://opensource.adobe.com/aem-modernize-tools/)。
+有关这些工具的使用的详细信息，请[参阅其文档](http://opensource.adobe.com/aem-modernize-tools/)。
 
 >[!NOTE]
 >

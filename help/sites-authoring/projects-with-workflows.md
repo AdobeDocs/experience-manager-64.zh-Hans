@@ -45,7 +45,7 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->&amp;ast; These workflows are not started from the **Workflow** tile in Projects. 请参阅[为资产创建语言副本](/help/sites-administering/tc-manage.md)。
+>&amp;ast;这些工作流不是从项目中的&#x200B;**Workflow**&#x200B;拼贴中启动的。 请参阅[为资产创建语言副本](/help/sites-administering/tc-manage.md)。
 
 无论您选择哪个工作流，启动和完成工作流的步骤都是相同的。只是具体的实施步骤有所不同。
 
@@ -59,7 +59,7 @@ ht-degree: 84%
 
 此部分介绍了可用于项目的工作流。
 
-## 请求复制工作流 {#request-copy-workflow}
+## 请求复制工作流  {#request-copy-workflow}
 
 使用此工作流，您可以请求用户提供手稿，然后批准该手稿。要启动请求复制工作流，请执行以下操作：
 
@@ -76,11 +76,11 @@ ht-degree: 84%
 
 [创意项目](/help/sites-authoring/managing-product-information.md)中详细介绍了产品照片拍摄工作流（商务和无商务）。
 
-## 项目批准工作流 {#project-approval-workflow}
+## 项目批准工作流  {#project-approval-workflow}
 
 在项目批准工作流中，您可以将内容分配给用户进行审核，然后批准内容。
 
-1. In your Simple project, select the ****+** sign in the **Workflows** tile and select **Project Approval Workflow**.
+1. 在您的简单项目中，选择&#x200B;**工作流**&#x200B;拼贴中的****+**&#x200B;符号，然后选择&#x200B;**项目批准工作流**。
 1. 输入标题并从“团队”列表中选择要将其分配给的对象。在适用的情况下，输入描述、内容路径、任务优先级和到期日期。
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -98,7 +98,7 @@ ht-degree: 84%
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. 单击&#x200B;**创建**。该工作流随即会启动。The workflow appears in the **Workflows** list (click ellipses **...** on the **Workflows** tile to access this list).
+1. 单击&#x200B;**创建**。该工作流随即会启动。该工作流将显示在&#x200B;**工作流**&#x200B;列表中(单击省略号&#x200B;**...**&#x200B;工作流&#x200B;**拼贴上的**&#x200B;可访问此列表)。
 
 ## 请求登陆页面工作流 {#request-landing-page-workflow}
 
@@ -111,7 +111,7 @@ ht-degree: 84%
 
 1. 单击&#x200B;**创建**。该工作流随即会启动。相应任务会显示在&#x200B;**任务**&#x200B;拼贴中。
 
-## 请求电子邮件工作流 {#request-email-workflow}
+## 请求电子邮件工作流  {#request-email-workflow}
 
 使用此工作流，您可以请求电子邮件。此工作流与在&#x200B;**电子邮件**&#x200B;拼贴中显示的工作流相同。
 

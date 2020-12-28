@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
 Adobe Experience Manager(AEM)移动只是构成整个AEM平台的支柱之一。
 
@@ -31,9 +31,9 @@ Adobe Experience Manager(AEM)移动只是构成整个AEM平台的支柱之一。
 * **开发人员**
 * **创作**
 
-## 创作PhoneGap应用程序 {#authoring-phonegap-applications}
+## 创作PhoneGap应用程序{#authoring-phonegap-applications}
 
-AEM ***作者&#x200B;*(或营销*人员&#x200B;*)**(可使用现成的模板和组件来添加和编辑页面、拖放组件以及添加DAM中所有类型的媒体，包括图像、视频和文本片段（内容片段）。
+***AEM作者*（或&#x200B;*营销人员*）**能够使用现成的模板和组件添加和编辑页面，拖放组件以及添加DAM中所有类型的媒体，包括图像、视频和文本片段（内容片段）。
 
 请参阅以下资源以开始：
 
@@ -45,7 +45,7 @@ AEM ***作者&#x200B;*(或营销*人员&#x200B;*)**(可使用现成的模板和�
 * [使用创建向导创建新的AEM Mobile应用程序](/help/mobile/phonegap-create-new-app.md)
 * [导入现有混合应用程序](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-要了解Content Services ****，请参 [阅Content Services Overview](/help/mobile/develop-content-as-a-service.md) （内容服务概述）。
+要了解&#x200B;**内容服务**，请参阅[内容服务概述](/help/mobile/develop-content-as-a-service.md)以快速入门。
 
 ## 其他资源 {#additional-resources}
 

@@ -22,11 +22,11 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->以下文档重点介绍经典 UI。For information about authoring in the modern, touch-enabled UI, see the [standard Authoring documentation](/help/assets/assets.md).
+>以下文档重点介绍经典 UI。有关在现代化触屏优化UI中进行创作的信息，请参阅[标准创作文档](/help/assets/assets.md)。
 
 在创作环境中，您可以执行与以下各项相关的任务：
 
-* [创作](/help/sites-authoring/author.md) (包括 [页面创作](/help/sites-authoring/qg-page-authoring.md) 和 [资产管理](/help/assets/assets.md))
+* [创作](/help/sites-authoring/author.md) (包括 [页面](/help/sites-authoring/qg-page-authoring.md) 创作 [和](/help/assets/assets.md)资产管理)
 
 * 在网站上生成和维护内容时所需的[管理](/help/sites-administering/administer-best-practices.md)任务
 
@@ -47,7 +47,7 @@ ht-degree: 86%
    * 这是新式标准 AEM UI。
    * 主色调为灰色，且采用整洁的平面界面。
    * 既适用于触控设备，也适用于桌面设备（针对触屏进行了优化）。其外观和感觉在所有设备上都是相同的，只是[查看和选择资源](/help/sites-authoring/basic-handling.md)稍有不同（分别采用点按和单击方式）。
-   * See the [standard Authoring documentation](/help/sites-authoring/author.md) for further details on how to author using the touch-based UI. 以下文档重点介绍经典 UI。
+   * 有关如何使用触屏优化UI进行创作的更多详细信息，请参阅[标准创作文档](/help/sites-authoring/author.md)。 以下文档重点介绍经典 UI。
 
    * 桌面设备：
 

@@ -1,8 +1,8 @@
 ---
 title: 构建移动应用程序
 seo-title: 构建移动应用程序
-description: '本页提供有关如何使用GitHub提供的代码构建移动应用程序的完整分步文章，请参阅此处。构建应用程序以安装到设备或模拟器，进行测试或发布到应用商店。 您可以使用PhoneGap命令行界面在本地构建应用程序，或使用PhoneGap Build在云中构建应用程序。 '
-seo-description: '本页提供有关如何使用GitHub提供的代码构建移动应用程序的完整分步文章，请参阅此处。构建应用程序以安装到设备或模拟器，进行测试或发布到应用商店。 您可以使用PhoneGap命令行界面在本地构建应用程序，或使用PhoneGap Build在云中构建应用程序。 '
+description: '本页提供有关如何使用GitHub提供的代码构建移动应用程序的完整分步文章，请参阅此处。构建您的应用程序以安装到设备或模拟器上进行测试或发布到应用商店。 您可以使用PhoneGap命令行界面在本地构建应用程序，或使用PhoneGap Build在云中构建应用程序。 '
+seo-description: '本页提供有关如何使用GitHub提供的代码构建移动应用程序的完整分步文章，请参阅此处。构建您的应用程序以安装到设备或模拟器上进行测试或发布到应用商店。 您可以使用PhoneGap命令行界面在本地构建应用程序，或使用PhoneGap Build在云中构建应用程序。 '
 uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
 content-type: reference
@@ -22,52 +22,52 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
 构建应用程序以安装到设备或模拟器以进行测试或发布到应用程序商店。 您可以使用PhoneGap命令行界面在本地构建应用程序，或使用PhoneGap Build在云中构建应用程序。
 
-有关如何使用GitHub提供的代码构建移动应用程序的完整分步文章，请参阅此 [处](https://helpx.adobe.com/experience-manager/using/aem62_mobile.html)。
+[此处](https://helpx.adobe.com/experience-manager/using/aem62_mobile.html)提供了有关如何使用GitHub提供的代码构建移动应用程序的完整分步文章。
 
-## 将应用程序移到Publish实例 {#moving-the-application-to-the-publish-instance}
+## 将应用程序移到Publish实例{#moving-the-application-to-the-publish-instance}
 
 将应用程序文件移动到发布实例，以便您能够为已安装的移动应用程序实例提供内容更新，以及使用已发布的内容构建应用程序。 应用程序由存储库中的两个节点分支组成：
 
-* `/content/phonegap/apps/<application name>`: 作者创建和激活的网页。
-* `/content/phonegap/content/<application name>`: 应用程序配置文件和内容同步配置。
+* `/content/phonegap/apps/<application name>`:作者创建和激活的网页。
+* `/content/phonegap/content/<application name>`:应用程序配置文件和内容同步配置。
 
 >[!NOTE]
 >
 >如果不将应用程序文件移动到发布实例，内容作者将无法更新内容同步缓存。
 
-您只需将分支中的文件移 `/content/phonegap/content/<application name>` 动到发布实例。 当作者激活页 `/content/phonegap/apps/<application name>` 面时，将移动分支中的文件。
+您只需将`/content/phonegap/content/<application name>`分支中的文件移动到发布实例。 作者激活页面时，将移动`/content/phonegap/apps/<application name>`分支中的文件。
 
 AEM提供两种将批量内容移动到发布实例的方法：
 
-* [使用复制控制台上的](/help/sites-authoring/publishing-pages.md) “激活树”命令。
-* [创建包含内容](/help/sites-administering/package-manager.md) 的包并复制该包。
+* [使用复制控制台](/help/sites-authoring/publishing-pages.md) 上的激活树命令。
+* [创建包](/help/sites-administering/package-manager.md) 含内容的包并复制该包。
 
-例如，将创建名为phonegapapp的移动应用程序。 必须将以下节点移动到发布实例： /content/phonegap/content/phonegapapp.
+例如，将创建名为phonegapapp的移动应用程序。 必须将以下节点移动到发布实例：/content/phonegap/content/phonegapapp.
 
-**提示：** 要将包从作者实例移动到发布实例，请对包使用复制命令。
+**提示：** 要将包从作者实例移动到发布实例，请对包使用“复制”命令。
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-## 使用PhoneGap命令行界面构建 {#building-using-the-phonegap-command-line-interface}
+## 使用PhoneGap命令行接口{#building-using-the-phonegap-command-line-interface}构建
 
 使用PhoneGap命令行界面(CLI)在您的计算机上编译PhoneGap应用程序。 要将AEM内容包含到您的应用程序中，AEM将创建一个ZIP文件，其中包含您的移动应用程序内容、内容同步配置和其他必需资源。 下载ZIP文件并将其包含在您的内部版本中。
 
-### 准备构建环境 {#preparing-your-build-environment}
+### 准备构建环境{#preparing-your-build-environment}
 
 要使用PhoneGap CLI进行构建，您需要安装Node.js和PhoneGap客户端实用程序。 您需要Internet连接才能执行以下过程。
 
-1. 下载并安装 [Node.js](https://nodejs.org/)。
+1. 下载并安装[Node.js](https://nodejs.org/)。
 1. 打开终端或命令提示符并输入以下节点命令以安装PhoneGap实用程序：
 
    ```shell
    npm install -g phonegap
    ```
 
-   在Unix或Linux系统上，可能需要在命令前加前缀 `sudo`。
+   在Unix或Linux系统上，可能需要在命令前加上`sudo`前缀。
 
    终端显示一系列HTTPGET命令的结果。 安装成功后，终端将显示库的安装位置，与以下示例类似：
 
@@ -88,10 +88,10 @@ AEM提供两种将批量内容移动到发布实例的方法：
 
 1. （可选）获取您所针对的移动平台的SDK:
 
-   * 要构建适用于iOS平台的应用程序，请安装最新版 [Xcode](https://developer.apple.com/xcode/)。
-   * 要构建Android应用程序，请安 [装Android SDK](https://developer.android.com/)。
+   * 要构建适用于iOS平台的应用程序，请安装最新版本的[Xcode](https://developer.apple.com/xcode/)。
+   * 要构建Android应用程序，请安装[Android SDK](https://developer.android.com/)。
 
-### 下载内容ZIP文件 {#downloading-the-content-zip-file}
+### 下载内容ZIP文件{#downloading-the-content-zip-file}
 
 将移动应用程序的内容移到文件系统。
 
@@ -111,9 +111,9 @@ AEM提供两种将批量内容移动到发布实例的方法：
 1. 保存ZIP文件后，单击“成功”对话框上的“关闭”。
 1. 解压ZIP文件的内容。
 
-### 使用PhoneGap CLI构建 {#using-the-phonegap-cli-to-build}
+### 使用PhoneGap CLI构建{#using-the-phonegap-cli-to-build}
 
-使用PhoneGap CLI编译和安装应用程序。 有关如何使用PhoneGap CLI的信息，请参阅PhoneGap [命令行界面文档](https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html) 。
+使用PhoneGap CLI编译和安装应用程序。 有关如何使用PhoneGap CLI的信息，请参阅PhoneGap [命令行界面](https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html)文档。
 
 1. 打开终端或命令提示符，将当前目录更改为下载的应用程序ZIP文件。 例如，以下内容将目录更改为ng-app-cli.1392137825303.zip文件：
 
@@ -127,7 +127,7 @@ AEM提供两种将批量内容移动到发布实例的方法：
    phonegap build android
    ```
 
-## 使用PhoneGap Build构建 {#building-using-phonegap-build}
+## 使用PhoneGap Build{#building-using-phonegap-build}构建
 
 使用PhoneGap云服务构建您的应用程序。 要执行此过程，必须先创建PhoneGap Build配置。
 
@@ -144,7 +144,7 @@ AEM提供两种将批量内容移动到发布实例的方法：
 1. 在创建配置对话框中，键入标题属性的值。 默认情况下，“名称”属性的值是从标题派生的，但您可以输入名称。 单击创建。
 1. 在“PhoneGap Build配置”对话框中，键入PhoneGap Build用户名和密码，然后单击“确定”。
 
-### 使用PhoneGap Build {#using-phonegap-build}
+### 使用PhoneGap Build{#using-phonegap-build}
 
 将您的应用程序资源发送到PhoneGap Build，以便针对各种移动平台进行编译。
 
@@ -163,9 +163,9 @@ AEM提供两种将批量内容移动到发布实例的方法：
 
    **注意：** 构建成功完成时，AEM Beta的测试版不会创建收件箱通知。
 
-1. 在“成功”对话框中，单击PhoneGap Build以打开Adobe PhoneGap Build页面，网 [址为](https://build.phonegap.com/apps)https://build.phonegap.com/apps。 如果您正在等待应用程序显示，则可以检查“ [PhoneGap Build状态](https://status.build.phonegap.com/) ”页。
+1. 在“成功”对话框中，单击“PhoneGap Build”以打开位于[https://build.phonegap.com/apps](https://build.phonegap.com/apps)的Adobe PhoneGap Build页面。 如果您正在等待应用程序出现，则可以检查[PhoneGap Build状态](https://status.build.phonegap.com/)页。
 
-   有关安装内部版本的信息，请参阅 [PhoneGap Build文档](https://docs.build.phonegap.com/en_US/3.1.0/#googtrans%28en%29)。
+   有关安装内部版本的信息，请参阅[PhoneGap Build文档](https://docs.build.phonegap.com/en_US/3.1.0/#googtrans%28en%29)。
 
    >[!NOTE]
    >
@@ -173,4 +173,4 @@ AEM提供两种将批量内容移动到发布实例的方法：
 
 ### 后续步骤 {#the-next-steps}
 
-构建过程后的下一步是了解应 [用程序的结构](/help/mobile/phonegap-structure-an-app.md)。
+构建过程后的下一步是了解应用程序](/help/mobile/phonegap-structure-an-app.md)的[结构。

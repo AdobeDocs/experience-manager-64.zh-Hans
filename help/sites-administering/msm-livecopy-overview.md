@@ -20,29 +20,29 @@ ht-degree: 2%
 
 # Live Copy概述控制台{#live-copy-overview-console}
 
-Live **Copy概述** 允许您：
+**Live Copy概述**&#x200B;允许您：
 
 * 视图/管理站点间的继承：
 
    * 视图Blueprint树和相应的Live Copy结构及其继承状态
-   * 更改继承状态； 例如，暂停、恢复
+   * 更改继承状态；例如，暂停、恢复
    * 视图Blueprint和Live Copy属性
 
 * 执行转出操作
 
-## 打开Live Copy概述 {#opening-the-live-copy-overview}
+## 打开Live Copy概述{#opening-the-live-copy-overview}
 
 您可以从以下位置打开Live Copy概述：
 
 * [蓝图页面的引用侧面板（站点控制台）](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [Blueprint页面的属性](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
-### 打开Live Copy概述- Blueprint页面的引用 {#opening-live-copy-overview-references-for-a-blueprint-page}
+### 打开Live Copy概述- Blueprint页面{#opening-live-copy-overview-references-for-a-blueprint-page}的引用
 
-可 **以从站点控制台** 的“引 **用** ”侧面板打 **开Live Copy** Overview:
+可以从&#x200B;**站点**&#x200B;控制台的&#x200B;**引用**&#x200B;侧面板打开&#x200B;**Live Copy概述**:
 
-1. 在“站 **点** ”控制台 [中，导航到您的Blueprint页面并将其选中](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)。
-1. Open the **[References](/help/sites-authoring/basic-handling.md#references)**panel and select **Live Copies**.
+1. 在&#x200B;**站点**&#x200B;控制台中，[导航到您的Blueprint页面并选择它](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)。
+1. 打开&#x200B;**[引用](/help/sites-authoring/basic-handling.md#references)**&#x200B;面板并选择&#x200B;**Live Copy**。
 
    ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -50,34 +50,34 @@ Live **Copy概述** 允许您：
    >
    >您还可以先打开引用，然后选择蓝图。
 
-1. 选择 **Live Copy概述** ，以显示和使用与选定蓝图相关的所有Live Copy的概述。
-1. 使 **用** “关闭”退出并返回 **站点** 。
+1. 选择&#x200B;**Live Copy概述**&#x200B;以显示和使用与所选蓝图相关的所有Live Copy的概述。
+1. 使用&#x200B;**关闭**&#x200B;退出并返回到&#x200B;**站点**&#x200B;控制台。
 
-### 打开Live Copy概述- Blueprint页面的属性 {#opening-live-copy-overview-properties-of-a-blueprint-page}
+### 打开Live Copy概述- Blueprint页面{#opening-live-copy-overview-properties-of-a-blueprint-page}的属性
 
-查看 **Blueprint页面的属性** 时，可以打开Live Copy概述：
+在查看Blueprint页面的属性时，可以打开&#x200B;**Live Copy概述**:
 
-1. 打开 **相应** Blueprint页面的属性。
-1. 打开 **Blueprint** 选项卡- Live Copy **概述选项将显** 示在顶部工具栏中：
+1. 打开相应蓝图页面的&#x200B;**属性**。
+1. 打开&#x200B;**Blueprint**&#x200B;选项卡——顶部工具栏中将显示&#x200B;**Live Copy概述**&#x200B;选项：
 
    ![chlimage_1-360](assets/chlimage_1-360.png)
 
-1. 选 **择Live Copy** Overview（Live Copy概述）以显示和使用与当前Blueprint相关的所有Live Copy的概述。
+1. 选择&#x200B;**Live Copy概述**&#x200B;以显示和使用与当前蓝图相关的所有Live Copy的概述。
 
    >[!NOTE]
    >
-   >有关更多详细信息，另请参阅知 [识库文章Live Copy状态消息——最新／绿色／同步](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html)。
+   >有关详细信息，另请参阅知识库文章[Live Copy状态消息——最新／绿色／同步](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html)。
 
-1. 使 **用** “关闭”退出并返回 **站点** 。
+1. 使用&#x200B;**关闭**&#x200B;退出并返回到&#x200B;**站点**&#x200B;控制台。
 
-## 使用Live Copy概述 {#using-the-live-copy-overview}
+## 使用Live Copy概述{#using-the-live-copy-overview}
 
-Live **Copy概述** ，还可用于对Live Copy执行以下操作：
+**Live Copy概述**&#x200B;还可用于对Live Copy执行操作：
 
-1. Open the **Live Copy Overview**.
-1. 选择所需的Blueprint或Live Copy页面——工具栏将更新以显示可用的操作。 可 [用的操作](/help/sites-administering/msm.md#terms-used) ，取决于您是选择 [Blueprint](#actions-for-a-blueprint-page) 还是 [Live Copy](#actions-for-a-live-copy-page) 页面：
+1. 打开&#x200B;**Live Copy概述**。
+1. 选择所需的Blueprint或Live Copy页面——工具栏将更新以显示可用的操作。 可用的[操作](/help/sites-administering/msm.md#terms-used)取决于您选择的是[blueprint](#actions-for-a-blueprint-page)还是[Live Copy](#actions-for-a-live-copy-page)页面：
 
-### Blueprint页面的操作 {#actions-for-a-blueprint-page}
+### Blueprint页面{#actions-for-a-blueprint-page}的操作
 
 选择Blueprint页面时，可执行以下操作：
 
@@ -91,7 +91,7 @@ Live **Copy概述** ，还可用于对Live Copy执行以下操作：
 
    * 执行转出以将更改从源推送到Live Copy。
 
-### Live Copy页面的操作 {#actions-for-a-live-copy-page}
+### Live Copy页面{#actions-for-a-live-copy-page}的操作
 
 选择Live Copy页面时，可以执行以下操作：
 
@@ -127,18 +127,18 @@ Live **Copy概述** ，还可用于对Live Copy执行以下操作：
 
 ## 关系状态 {#relationship-status}
 
-“关 **系状态** ”控制台有两个选项卡，提供一系列功能：
+**关系状态**&#x200B;控制台具有两个选项卡，提供一系列功能：
 
 * [关系状态信息](#relationship-status-information)
 * [Live Copy信息](#live-copy-information)
 
-### 关系状态信息 {#relationship-status-information}
+### 关系状态信息{#relationship-status-information}
 
 此选项卡提供了有关Blueprint和Live Copy之间关系状态的详细信息：
 
 ![chlimage_1-363](assets/chlimage_1-363.png)
 
-### Live Copy信息 {#live-copy-information}
+### Live Copy信息{#live-copy-information}
 
 此选项卡允许您视图和编辑Live Copy配置：
 

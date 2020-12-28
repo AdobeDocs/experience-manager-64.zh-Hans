@@ -27,16 +27,16 @@ Adobe提供了两个版本的商务集成框架：
 |  | CIF在预装 | CIF云 |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | 支持的 AEM 版本 | AEM on-prem或AMS 6.x | AEM AMS 6.4和6.5 |
-| 后端 | - AEM、Java <br> -整体集成、预构建映射（模板）<br> - JCR存储库 | -Magento <br>- Java和Javascript <br>-无商务数据存储在JCR存储库中 |
+| 后端 | - AEM、Java <br> - Monigle集成，预构建映射（模板）<br> - JCR存储库 | -Magento<br>- Java和Javascript <br>-无商务数据存储在JCR存储库中 |
 | 前端 | AEM服务器端呈现的页面 | 混合页面应用程序（混合渲染） |
-| 产品目录 | -产品导入程序、编辑器、AEM中的 <br>缓存——带有AEM或代理页面的常规目录 | -无产品导 <br>入——通用模 <br>板——通过连接器点播数据 |
-| 可伸缩性 | -最多可支持几百万种产品（取决于用例）- <br> Dispatcher上的缓存 | -无卷限制- <br>在Dispatcher或CDN上缓存 |
+| 产品目录 | -产品导入程序、编辑器、AEM <br>中的缓存——带AEM或代理页面的常规目录 | -无产品导入<br>-通用模板<br>-通过连接器按需数据 |
+| 可伸缩性 | -最多可支持几百万种产品（取决于用例）<br> - Dispatcher上的缓存 | -无卷限制<br>- Dispatcher或CDN上的缓存 |
 | 标准化数据模型 | 否 | 是，Magento图QL模式 |
-| 可用性 | 是：<br> - SAPCommerce Cloud(Extension updated to support AEM 6.4 and Hybris 5(default)and maintains compatibility with Hybris 4 <br>- SalesforceCommerce Cloud(Connector open-sourced to support AEM 6.4) | 是，通过GitHub开放源。 <br> Magento Commerce(支持Magento2.3.2（默认），并兼容Magento2.3.1)。 |
-| 何时使用 | 有限用例： 对于需要导入小型静态目录的情况 | 大多数用例中的首选解决方案 |
+| 可用性 | Yes:<br> - SAPCommerce Cloud(Extension updated to support AEM 6.4 and Hybris 5(default)and maintains compatibility with Hybris 4 <br> - SalesforceCommerce Cloud(Connector open-sourced to support AEM 6.4) | 是，通过GitHub开放源。 <br> Magento Commerce(支持Magento2.3.2（默认），并兼容Magento2.3.1)。 |
+| 何时使用 | 有限用例：对于需要导入小型静态目录的情况 | 大多数用例中的首选解决方案 |
 
 
-## 部署其他实施 {#deploying-other-implementations}
+## 部署其他实现{#deploying-other-implementations}
 
 * [SAPCommerce Cloud](/help/sites-deploying/sap-commerce-cloud.md)
 * [SalesforceCommerce Cloud](https://github.com/adobe/commerce-salesforce)
@@ -44,7 +44,7 @@ Adobe提供了两个版本的商务集成框架：
 
 >[!NOTE]
 >
->有关概念和管理电子商务实施的信息，请参 [阅管理电子商务](/help/sites-administering/ecommerce.md)。
+>有关概念和管理电子商务实施的信息，请参阅[管理电子商务](/help/sites-administering/ecommerce.md)。
 >
->有关扩展电子商务功能的信息，请参 [阅开发电子商务](/help/sites-developing/ecommerce.md)。
+>有关扩展电子商务功能的信息，请参阅[开发电子商务](/help/sites-developing/ecommerce.md)。
 

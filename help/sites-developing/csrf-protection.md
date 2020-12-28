@@ -28,22 +28,22 @@ ht-degree: 0%
 >
 >匿名用户的发布实例上没有令牌。
 
-## 要求 {#requirements}
+## 要求{#requirements}
 
 ### 依赖关系 {#dependencies}
 
-任何依赖依赖关系的组 `granite.jquery` 件都将自动从CSRF保护框架受益。 如果任何组件的情况不是这样，则必须先声明一个依赖关系，然 `granite.csrf.standalone` 后才能使用框架。
+任何依赖`granite.jquery`依赖关系的组件都将自动从CSRF保护框架受益。 如果任何组件的情况不是这样，则必须先声明对`granite.csrf.standalone`的依赖关系，然后才能使用框架。
 
-### 复制加密密钥 {#replicating-crypto-keys}
+### 复制加密密钥{#replicating-crypto-keys}
 
-为了利用令牌，您需要将二进制文件复 `/etc/keys/hmac` 制到部署中的所有实例。 将HMAC密钥复制到所有实例的一种简便方法是创建一个包含密钥的包，并通过包管理器在所有实例上安装它。
-
->[!NOTE]
->
->确保您还进行必要 [的调度程序配](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) 置更改，以使用CSRF保护框架。
+为了利用令牌，您需要将`/etc/keys/hmac`二进制文件复制到部署中的所有实例。 将HMAC密钥复制到所有实例的一种简便方法是创建一个包含密钥的包，并通过包管理器在所有实例上安装它。
 
 >[!NOTE]
 >
->如果将清单缓存与Web应用程序一起使用，请确保向清单中添&#x200B;**加“&amp;ast;**”，以确保令牌不使CSRF令牌生成调用脱机。 有关详细信息，请查阅此 [链接](https://www.w3.org/TR/offline-webapps/)。
+>为了使用CSRF保护框架，还请确保进行必要的[调度程序配置更改](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)。
+
+>[!NOTE]
 >
->有关CSRF攻击及其缓解方法的详细信息，请参 [阅跨站点请求伪造OWASP页](https://owasp.org/www-community/attacks/csrf)。
+>如果将清单缓存与Web应用程序一起使用，请确保向清单添加“**&amp;ast;**”，以确保令牌不使CSRF令牌生成调用脱机。 有关详细信息，请参阅此[链接](https://www.w3.org/TR/offline-webapps/)。
+>
+>有关CSRF攻击及其缓解方法的详细信息，请参阅[跨站点请求伪造OWASP页面](https://owasp.org/www-community/attacks/csrf)。

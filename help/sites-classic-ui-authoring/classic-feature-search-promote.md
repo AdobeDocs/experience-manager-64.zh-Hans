@@ -18,9 +18,9 @@ ht-degree: 57%
 ---
 
 
-# Adding Search&amp;Promote features to your page {#adding-search-promote-features-to-your-page}
+# 向页面{#adding-search-promote-features-to-your-page}添加Search&amp;Promote功能
 
-To integrate Search&amp;Promote capabilities in your web site, use the [!UICONTROL Search&amp;Promote] components to add the following features to your pages:
+要在网站中集成Search&amp;Promote功能，请使用[!UICONTROL Search&amp;Promote]组件将以下功能添加到您的页面：
 
 * 关键字搜索
 * 搜索结果页面
@@ -39,7 +39,7 @@ Search＆Promote 服务器上配置了一些 facet，这也是每个组件提供
   </tr> 
   <tr> 
    <td>横幅</td> 
-   <td>显示横幅广告。 Banners are selected based on data gathered through Search&amp;Promote.<br /> </td> 
+   <td>显示横幅广告。 横幅根据通过Search&amp;Promote收集的数据进行选择。<br /> </td> 
   </tr> 
   <tr> 
    <td>痕迹导航</td> 
@@ -84,20 +84,20 @@ Search＆Promote 服务器上配置了一些 facet，这也是每个组件提供
 
 ![srpageing](assets/srchpagination.png)
 
-You can configure the following component properties in [!UICONTROL Edit] mode to control runtime behavior:
+可以在[!UICONTROL 编辑]模式中配置以下组件属性以控制运行时行为：
 
 * **[!UICONTROL 隐藏单个结果页]** -选择此选项可在搜索返回单个结果页时隐藏页面导航控件。
-* **[!UICONTROL 隐藏第一页／最后一页]** -选择此选项可防止用户跳转至结果的第一页或最后一页。
+* **[!UICONTROL 隐藏第一页／最后]** 一页——选择此选项可防止用户跳转至结果的第一页或最后一页。
 * **[!UICONTROL 隐藏上一页／下一页]** -确定用户是否可以相对于当前页面导航结果页面。
-* **[!UICONTROL 全部隐藏视图]** -确定用户是否可以将所有搜索结果合并到单个页面。 通常，提供分页数据可以更有效地使用服务器资源。选择此选项可阻止在一个响应消息中传输较大数据集。
+* **[!UICONTROL 全部隐藏视图]** -确定用户是否可以将所有搜索结果合并到单个页面。通常，提供分页数据可以更有效地使用服务器资源。选择此选项可阻止在一个响应消息中传输较大数据集。
 
-## 允许按 facet 筛选结果 {#enabling-the-filtering-of-results-by-facets}
+## 允许按 facet 筛选结果  {#enabling-the-filtering-of-results-by-facets}
 
-您可以允许用户按 facet 筛选搜索结果。The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components enable users to select one or more facets for filtering. 使用这些组件时，您还应包含&#x200B;**[!UICONTROL 痕迹导航]**&#x200B;组件。痕迹导航可指示当前使用的筛选器。
+您可以允许用户按 facet 筛选搜索结果。**[!UICONTROL 复选框列表Facet]**、**[!UICONTROL 下拉Facet]**&#x200B;和&#x200B;**[!UICONTROL 链接列表Facet]**&#x200B;组件使用户能够选择一个或多个facet进行筛选。 使用这些组件时，您还应包含&#x200B;**[!UICONTROL 痕迹导航]**&#x200B;组件。痕迹导航可指示当前使用的筛选器。
 
-The **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, and **[!UICONTROL Link List Facet]** components each have the following properties that you configure in **[!UICONTROL Edit]** mode:
+**[!UICONTROL 复选框列表Facet]**、**[!UICONTROL 下拉Facet]**&#x200B;和&#x200B;**[!UICONTROL 链接列表Facet]**&#x200B;组件均具有您在&#x200B;**[!UICONTROL 编辑]**&#x200B;模式下配置的以下属性：
 
-* **[!UICONTROL Facet Name]** —— 用于过滤器的facet的名称。
+* **[!UICONTROL Facet Name]**  —— 用于过滤器的facet的名称。
 
 **[!UICONTROL 复选框列表 Facet]** 组件会显示包含附带复选框的 facet 列表。使用&#x200B;**[!UICONTROL 复选框列表 Facet]**，用户可以查看包含多个 facet 项目的结果子集。例如，可以使用“品牌”facet，因为多个品牌可提供相同类型的产品。
 
@@ -117,7 +117,7 @@ facet 成员显示为链接列表。每个链接的文本是与当前搜索结�
 
 ![andplinklistcomp](assets/sandplinklistcomp.png)
 
-The links in the list also changes when a filter is applied from a different type of [!UICONTROL Search&amp;Promote] component. 使用多种类型的筛选器组件可以提供有效的筛选器组合。
+当从不同类型的[!UICONTROL 列表]组件应用过滤器时，Search&amp;Promote中的链接也会发生变化。 使用多种类型的筛选器组件可以提供有效的筛选器组合。
 
 **[!UICONTROL 痕迹导航]**&#x200B;组件使客户能够按照应用筛选器的顺序查看当前应用于搜索结果的筛选器。客户可以单击痕迹导航中的项目以还原到该筛选器组合。
 
@@ -125,14 +125,14 @@ The links in the list also changes when a filter is applied from a different typ
 
 您可以在编辑模式下配置痕迹导航的以下属性，以便自定义该组件的外观：
 
-* **[!UICONTROL 分隔符]** -定义要充当每个痕迹导航之间分隔符的字符或字符串。 分隔符字段接受任何字符串作为输入。 默认设置为“>”（不带引号）
-* **[!UICONTROL 尾部分隔符]** -定义要在痕迹导航末尾显示的字符或字符串。 “结尾分隔符”字段接受任何字符串作为输入。 此字段的默认设置为“空白”（即痕迹导航行末尾不显示任何内容）
+* **[!UICONTROL 分隔符]** -定义要充当每个痕迹导航之间分隔符的字符或字符串。分隔符字段接受任何字符串作为输入。 默认设置为“>”（不带引号）
+* **[!UICONTROL 尾部分隔符]** -定义要在痕迹导航末尾显示的字符或字符串。“结尾分隔符”字段接受任何字符串作为输入。 此字段的默认设置为“空白”（即痕迹导航行末尾不显示任何内容）
 
 ## 添加搜索框 {#adding-search-boxes}
 
-The **[!UICONTROL Search]** component enables customers to perform keyword searches. 可将“搜索”组件添加到要提供搜索访问权限的每个页面。
+**[!UICONTROL 搜索]**&#x200B;组件使客户能够执行关键字搜索。 可将“搜索”组件添加到要提供搜索访问权限的每个页面。
 
-Configure the following properties in **[!UICONTROL Edit]** mode to control runtime behavior:
+在&#x200B;**[!UICONTROL 编辑]**&#x200B;模式中配置以下属性以控制运行时行为：
 
 * **[!UICONTROL 结果页面路径]** -显示搜索结果的页面的路径。
 * **[!UICONTROL 启用自动完成]** -选择此项可在客户开始在搜索框中键入内容时显示建议的搜索关键字。
@@ -141,13 +141,13 @@ Configure the following properties in **[!UICONTROL Edit]** mode to control runt
 
 ## 添加横幅 {#adding-banners}
 
-The **[!UICONTROL Banners]** component displays banner advertisements according to the customer&#39;s Search&amp;Promote searches. Search&amp;Promote 服务器上的逻辑会确定要显示的横幅。例如，搜索牛仔裤可能会显示与时装相关的横幅。在男士专栏中进行筛选可以进一步优化横幅的选择。
+**[!UICONTROL 横幅]**&#x200B;组件根据客户的Search&amp;Promote搜索显示横幅广告。 Search&amp;Promote 服务器上的逻辑会确定要显示的横幅。例如，搜索牛仔裤可能会显示与时装相关的横幅。在男士专栏中进行筛选可以进一步优化横幅的选择。
 
-The **[!UICONTROL Banners]** component provides one configurable property named **[!UICONTROL Banner Area]**. In **[!UICONTROL Edit]** mode, select one of the property values to specify how the banner appears. Search&amp;Promote 服务会确定您可以从中选择的值列表。
+**[!UICONTROL 横幅]**&#x200B;组件提供一个名为&#x200B;**[!UICONTROL 横幅区域]**&#x200B;的可配置属性。 在&#x200B;**[!UICONTROL 编辑]**&#x200B;模式中，选择一个属性值以指定横幅的显示方式。 Search&amp;Promote 服务会确定您可以从中选择的值列表。
 
 ## Search&amp;Promote 搜索页面示例 {#example-search-promote-search-page}
 
 此图显示了在页面中添加的用于创建以下功能齐全的 Search&amp;Promote 结果页面的组件。
 
-![1328213789109](assets/1328213789109.png) ![sandpageexample](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![沙盒示例](assets/sandppageexample.png)
 

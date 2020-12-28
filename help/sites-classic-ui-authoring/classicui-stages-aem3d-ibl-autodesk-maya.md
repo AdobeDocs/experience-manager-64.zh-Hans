@@ -26,23 +26,23 @@ ht-degree: 75%
 1. 设置基于图像的照明。
 
    1. 在“渲染设置”中，选择&#x200B;**[!UICONTROL 渲染使用: mental ray]**，然后打开“场景”选项卡。****
-   1. Open the **[!UICONTROL Environment]** accordion, then click **[!UICONTROL Create Image Based Lighting]**.
-   1. Click the box icon that has a right arrow on the left side of the box to select the IBL node `mentalRayIblShape1`, then exit the [!UICONTROL Render Settings].
-   1. In the **[!UICONTROL Attribute Editor]**, select the transform node `mentalRayIbl1`, then rename the transform node to `AdobeIbl`.
+   1. 打开&#x200B;**[!UICONTROL 环境]**&#x200B;折叠面板，然后单击&#x200B;**[!UICONTROL 创建基于图像的照明]**。
+   1. 单击框左侧带有向右箭头的框图标以选择IBL节点`mentalRayIblShape1`，然后退出[!UICONTROL 渲染设置]。
+   1. 在&#x200B;**[!UICONTROL 属性编辑器]**&#x200B;中，选择转换节点`mentalRayIbl1`，然后将转换节点重命名为`AdobeIbl`。
 
-   1. Set the [!UICONTROL Scale] of the node to make the environment sphere significantly larger than the largest 3D object to be shown with this stage (for example, `10000,10000,10000`).
+   1. 设置节点的[!UICONTROL 缩放]，使环境球显着大于要用此舞台显示的最大3D对象（例如`10000,10000,10000`）。
    1. 选择 `AdobeIblShape` 节点并对其进行如下配置：
 
       * **[!UICONTROL 映射]** - 球形
       * **[!UICONTROL 类型]** - 图像文件
       * **[!UICONTROL 发光]** - true
-   1. Attach the desired 32-bit TIFF image to the `AdobeIbl` node.
+   1. 将所需的32位TIFF图像附加到`AdobeIbl`节点。
 
 
 1. 设置地平面。
 
    * 创建一个合适的平面用作地平面，并调整其大小以使其适合 IBL 球，同时穿过坐标原点。
-   * Attach a **[!UICONTROL Use Background]** material to the ground plane and name it `AdobeUseBackground` and attach it to the ground plane object.
+   * 将&#x200B;**[!UICONTROL Use Background]**&#x200B;材料连接到地平面，并将其命名为`AdobeUseBackground`，然后将其连接到地平面对象。
 
 1. （可选）创建并配置相机。
 
@@ -50,17 +50,17 @@ ht-degree: 75%
 
 1. 使用 Mental Ray 设置渲染。
 
-   Configure the [!UICONTROL Render Settings] with the following suggestions.
+   根据以下建议配置[!UICONTROL 渲染设置]。
 
-   * **[!UICONTROL “常用]** ”选项卡
+   * **[!UICONTROL 公用选]** 项卡
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all Renderable Cameras.
+      取消选中所有可渲染相机的&#x200B;**[!UICONTROL Alpha渠道（遮罩）]**&#x200B;复选框。
 
    * **[!UICONTROL “质量”选项卡]**
 
       * **[!UICONTROL 总体质量]** - `0.5` 或更少
-      * **[!UICONTROL 间接扩散(GI)模式]** - `Final Gather`
-      * **[!UICONTROL 筛选器大小]** - `2.0`、 `2.0`
+      * **[!UICONTROL 间接扩散(GI)模式]** -  `Final Gather`
+      * **[!UICONTROL 滤镜大小]** - `2.0`,  `2.0`
    * 以您希望使用的典型图像大小渲染场景。如果需要，优化灯光或优化渲染设置，或者同时执行这两项操作，以便达到所需的效果。
 
       请注意，通过 Mental Ray 使用基于图像的照明进行渲染时，速度会非常缓慢且会消耗大量 CPU。Adobe 建议您配置最低质量设置，该设置仍能生成所需的渲染质量。

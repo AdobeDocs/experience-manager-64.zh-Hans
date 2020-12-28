@@ -18,11 +18,11 @@ ht-degree: 82%
 ---
 
 
-# Quick Guide to WCAG 2.0{#quick-guide-to-wcag}
+# WCAG 2.0{#quick-guide-to-wcag}快速指南
 
 AEM的开发旨在最大限度地遵守Web内容辅助功能准则：
 
-The [Web Content Accessibility Guidelines version 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+[Web内容辅助功能指导原则2.0版(WCAG2)](https://www.w3.org/TR/WCAG/)是由[万维网联盟(W3C)](https://www.w3.org/)根据其[Web辅助功能倡议(WAI)](https://www.w3.org/WAI/)制定的一组国际公认的指导原则。
 
 WCAG 2.0 包含一系列非技术层面的准则及成功标准，旨在确保残障人士能够访问并使用 Web 内容。这些准则和成功标准向 Web 内容作者、设计人员和开发人员提供建议，确保他们创作的资源可尽可能多地供更多人访问，而无论他们具有任何缺陷；例如，视觉障碍、听力损失、学习困难、年龄限制等。
 
@@ -36,11 +36,11 @@ WCAG 2.0 包含一系列非技术层面的准则及成功标准，旨在确保�
 
 WCAG 2.0 的目的是提供以下准则：
 
-* 与技 **术无关：**
+* **技术不可知：**
 
    换言之，可应用于各种Web内容格式的准则，而不仅仅是HTML。 因此，WCAG 2.0 可以涵盖由 PDF、Flash、JavaScript 和其他当前和未来 Web 技术生成或提供的内容。这旨在解决WCAG 1.0的一个公认弱点，即它以HTML为重，而牺牲其他Web内容格式。
 
-* 可 **测试：**
+* 是&#x200B;**可测试的：**
 
    每个准则的编写方式都是客观的测试，以确保一组辅助功能专家一般都同意该准则已得到满足。 无障碍准则的一个挑战是，虽然一些准则在技术上可以测试，但另一些准则需要人为判断来确定是否成功达到了准则要求。编写WCAG 2.0的目的是减少WCAG 1.0的一些准则和检查点中存在的主观性。
 

@@ -18,39 +18,39 @@ ht-degree: 1%
 ---
 
 
-# 与Adobe动态标签管理集成 {#integrating-with-adobe-dynamic-tag-management}
+# 与Adobe动态标签管理集成{#integrating-with-adobe-dynamic-tag-management}
 
-将 [Adobe动态标签管理](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) 与AEM集成，以便您能够使用动态标签管理Web属性跟踪AEM站点。 动态标签管理使营销人员能够管理用于收集数据的标签，并在数字营销系统中分发数据。 例如，使用动态标签管理收集AEM网站的使用数据并分发数据以在Adobe Analytics或Adobe Target分析。
+将[Adobe动态标签管理](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html)与AEM集成，以便您能够使用动态标签管理Web属性跟踪AEM站点。 动态标签管理使营销人员能够管理用于收集数据的标签，并在数字营销系统中分发数据。 例如，使用动态标签管理收集AEM网站的使用数据并分发数据以在Adobe Analytics或Adobe Target分析。
 
-在集成之前，您需要创建跟踪AEM站 [点域](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) 的动态标签管理Web属性。 必 [须配置](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) web属性的托管选项，以便您能够配置AEM以访问动态标签管理库。
+在集成之前，您需要创建跟踪AEM站点域的动态标签管理[web属性](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties)。 必须配置web属性的[托管选项](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab)，以便配置AEM以访问动态标签管理库。
 
 配置集成后，对动态标签管理部署工具和规则的更改无需在AEM中更改动态标签管理配置。 AEM可以自动使用这些更改。
 
 >[!NOTE]
 >
->如果您使用具有自定义代理配置的DTM，则需要配置两个HTTP客户端代理配置，因为AEM的某些功能使用3.x API，而另一些则使用4.x API:
+>如果您使用具有自定义代理配置的DTM，则需要同时配置HTTP客户端代理配置，因为AEM的某些功能使用3.x API，而另一些则使用4.x API:
 >
->* 3.x已配置为 [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x配置为 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 3.x配置有[http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x配置有[http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
 >
 
 
 
-## 部署选项 {#deployment-options}
+## 部署选项{#deployment-options}
 
 以下部署选项影响与动态标签管理集成的配置。
 
-### 动态标签管理托管 {#dynamic-tag-management-hosting}
+### 动态标签管理托管{#dynamic-tag-management-hosting}
 
 AEM支持托管在云中或托管在AEM上的动态标签管理。
 
-* 云托管： 动态标签管理javascript库存储在云中，AEM页面直接引用它们。
-* AEM托管： 动态标签管理生成javascript库。 AEM使用工作流模型来获取和安装库。
+* 云托管：动态标签管理javascript库存储在云中，AEM页面直接引用它们。
+* AEM托管：动态标签管理生成javascript库。 AEM使用工作流模型来获取和安装库。
 
-实施所使用的托管类型决定了您执行的一些配置和实施任务。 有关托管选项的信息，请参 [阅动态标签管理帮助](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) 中的托管——嵌入选项卡。
+实施所使用的托管类型决定了您执行的一些配置和实施任务。 有关托管选项的信息，请参阅动态标签管理帮助中的[托管——嵌入选项卡](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab)。
 
-### 暂存和生产库 {#staging-and-production-library}
+### 暂存和生产库{#staging-and-production-library}
 
 确定AEM作者实例是使用动态标签管理暂存还是生产代码。
 
@@ -58,25 +58,25 @@ AEM支持托管在云中或托管在AEM上的动态标签管理。
 
 如果需要，您的创作实例可以使用生产库。 Web浏览器插件可用，使您能够在云托管库时，在使用临时库进行测试之间切换。
 
-### 使用动态标签管理部署挂接 {#using-the-dynamic-tag-management-deployment-hook}
+### 使用动态标签管理部署挂接{#using-the-dynamic-tag-management-deployment-hook}
 
-AEM托管动态标签管理库时，您可以使用动态标签管理部署挂接服务将库更新自动推送到AEM。 在对库进行更改时（如编辑动态标签管理Web属性时）推送库更新。
+AEM托管动态标签管理库时，您可以使用动态标签管理部署挂接服务将库更新自动推送到AEM。 当对库进行更改（如编辑动态标签管理Web属性时）时，将推送库更新。
 
-要使用部署挂接，动态标签管理必须能够连接到承载库的AEM实例。 您必 [须启用对AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) 的动态标签管理服务器的访问。
+要使用部署挂接，动态标签管理必须能够连接到承载库的AEM实例。 必须[启用对动态标签管理服务器的AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service)访问。
 
 在某些情况下，AEM可以是不可到达的，例如，当AEM位于防火墙后时。 在这些情况下，您可以使用AEM轮询导入程序选项定期检索库。 cron作业表达式指示库下载的计划。
 
-## 启用对部署挂接服务的访问 {#enabling-access-for-the-deployment-hook-service}
+## 启用部署挂接服务{#enabling-access-for-the-deployment-hook-service}的访问
 
 启用动态标签管理部署挂接服务以访问AEM，以便该服务可以更新AEM托管的库。 根据需要指定更新暂存库和生产库的动态标签管理服务器的IP地址：
 
 * 暂存: `107.21.99.31`
-* 生产： `23.23.225.112` 和 `204.236.240.48`
+* 生产：`23.23.225.112`和`204.236.240.48`
 
-Perform the configuration using either the [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) or a [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) node:
+使用[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)节点执行配置：
 
 * 在Web控制台中，使用“配置”页上的AdobeDTM部署挂接配置项。
-* 对于OSGi配置，服务PID为 `com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`。
+* 对于OSGi配置，服务PID为`com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`。
 
 下表说明了要配置的属性。
 
@@ -85,13 +85,13 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
 | 暂存DTM IP白名单 | `dtm.staging.ip.whitelist` | 用于更新暂存库的动态标签管理服务器的IP地址。 |
 | 生产DTM IP白名单 | `dtm.production.ip.whitelist` | 用于更新生产库的动态标签管理服务器的IP地址。 |
 
-## 创建动态标签管理配置 {#creating-the-dynamic-tag-management-configuration}
+## 创建动态标签管理配置{#creating-the-dynamic-tag-management-configuration}
 
 创建云配置，以便AEM实例可以使用动态标签管理进行身份验证并与您的Web属性交互。
 
 >[!NOTE]
 >
->当您的DTM Web属性包括Adobe Analytics工具并且您也在使用内容分析时，请避免在您的页面中包含两个Adobe Analytics跟踪 [代码](/help/sites-authoring/content-insights.md)。 在您的 [Adobe Analytics云配置中](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)，选择“不包括跟踪代码”选项。
+>当您的DTM Web属性包括Adobe Analytics工具并且您也在使用[内容分析](/help/sites-authoring/content-insights.md)时，请避免在您的页面上包含两个Adobe Analytics跟踪代码。 在[Adobe Analytics云配置](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)中，选择“不包括跟踪代码”选项。
 
 ### 常规设置 {#general-settings}
 
@@ -120,11 +120,11 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
  </tbody> 
 </table>
 
-### 自托管属性——暂存和生产 {#self-hosting-properties-staging-and-production}
+### 自托管属性——暂存和生产{#self-hosting-properties-staging-and-production}
 
 动态标签管理配置的以下属性使AEM能够托管动态标签管理库。 属性使AEM能够下载并安装库。 或者，您可以自动更新库，确保它们反映在动态标签管理应用程序中所做的任何更改。
 
-某些属性使用您从“嵌入”选项卡的“库下载”部分获得的值作为Dynamic Tag Management Web属性。 有关信息，请参 [阅动态标签](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download) 管理帮助中的库下载。
+某些属性使用您从“嵌入”选项卡的“库下载”部分获得的值作为Dynamic Tag Management Web属性。 有关信息，请参阅动态标签管理帮助中的[库下载](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download)。
 
 >[!NOTE]
 >
@@ -152,15 +152,15 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
   </tr> 
   <tr> 
    <td>域提示</td> 
-   <td><p>（可选）托管动态标签管理库的AEM服务器的域。 指定一个值以覆盖为Day CQ Link Externalizer服务配 <a href="/help/sites-developing/externalizer.md">置的默认域</a>。</p> <p>连接到动态标签管理时，AEM使用此值为动态标签管理Web属性配置库下载属性的临时HTTP路径或生产HTTP路径。</p> </td> 
+   <td><p>（可选）托管动态标签管理库的AEM服务器的域。 指定一个值以覆盖为<a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer服务</a>配置的默认域。</p> <p>连接到动态标签管理时，AEM使用此值为动态标签管理Web属性配置库下载属性的临时HTTP路径或生产HTTP路径。</p> </td> 
   </tr> 
   <tr> 
    <td>安全域提示</td> 
-   <td><p>（可选）通过HTTPS承载动态标签管理库的AEM服务器的域。 指定一个值以覆盖为Day CQ Link Externalizer服务配 <a href="/help/sites-developing/externalizer.md">置的默认域</a>。</p> <p>连接到动态标签管理时，AEM使用此值为动态标签管理Web属性配置库下载属性的临时HTTPS路径或生产HTTPS路径。</p> </td> 
+   <td><p>（可选）通过HTTPS承载动态标签管理库的AEM服务器的域。 指定一个值以覆盖为<a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer服务</a>配置的默认域。</p> <p>连接到动态标签管理时，AEM使用此值为动态标签管理Web属性配置库下载属性的临时HTTPS路径或生产HTTPS路径。</p> </td> 
   </tr> 
   <tr> 
    <td>共享密钥</td> 
-   <td><p>（可选）用于解密下载的共享机密。 从动态标签管理的“库下载”页的“共享机密”字段获取此值。</p> <p><strong>注意：</strong> 必须在安装 <a href="https://www.openssl.org/docs/apps/openssl.html">AEM的计</a> 算机上安装OpenSSL库，这样AEM才能解密下载的库。</p> </td> 
+   <td><p>（可选）用于解密下载的共享机密。 从动态标签管理的“库下载”页的“共享机密”字段获取此值。</p> <p><strong>注意：</strong> 必须在安装 <a href="https://www.openssl.org/docs/apps/openssl.html"></a> AEM的计算机上安装OpenSSL库，以便AEM能够解密下载的库。</p> </td> 
   </tr> 
   <tr> 
    <td>启用轮询导入程序</td> 
@@ -175,7 +175,7 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
 
 ![chlimage_1-352](assets/chlimage_1-352.png)
 
-### 云托管属性——暂存和生产 {#cloud-hosting-properties-staging-and-production}
+### 云托管属性——暂存和生产{#cloud-hosting-properties-staging-and-production}
 
 在云托管动态标签配置时，您可以为动态标签管理配置配置配置以下属性。
 
@@ -191,7 +191,7 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
   </tr> 
   <tr> 
    <td>页眉代码</td> 
-   <td><p>从主机的动态标签管理中获取的用于暂存的标题代码。 当您连接到动态标签管理时，会自动填充此值。</p> <p> 要在动态标签管理中查看代码，请单击嵌入选项卡，然后单击主机名。 展开“题头代码”部分，然后根据需要单击“暂存嵌入代码”或“生产嵌入代码”区域的“复制嵌入代码”。</p> </td> 
+   <td><p>从主机的动态标签管理中获取的用于暂存的标题代码。 当您连接到动态标签管理时，会自动填充此值。</p> <p> 要在动态标签管理中查看代码，请单击嵌入选项卡，然后单击主机名。 展开“标题代码”部分，然后根据需要单击临时嵌入代码或生产嵌入代码区域的复制嵌入代码。</p> </td> 
   </tr> 
   <tr> 
    <td>页脚代码</td> 
@@ -200,7 +200,7 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
  </tbody> 
 </table>
 
-![chlimage_1-355](assets/chlimage_1-353.png)
+![chlimage_1-353](assets/chlimage_1-353.png)
 
 以下过程使用触屏优化UI配置与动态标签管理的集成。
 
@@ -210,7 +210,7 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
    * 如果这是您添加的第一个配置，请单击“立即配置”。
    * 如果已创建一个或多个配置，请单击“显示配置”，然后单击“可用配置”旁的+链接。
 
-   ![chlimage_1-356](assets/chlimage_1-354.png)
+   ![chlimage_1-354](assets/chlimage_1-354.png)
 
 1. 键入配置标题，然后单击创建。
 1. 在API令牌字段中，输入动态标签管理用户帐户的API令牌属性值。
@@ -228,7 +228,7 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
 1. 如果您正在创作实例上使用暂存代码，请取消选择“在创作时包括生产代码”。
 1. 根据需要，在“暂存设置”选项卡和“生产设置”选项卡上提供属性值，然后单击“确定”。
 
-## 手动下载动态标签管理库 {#manually-downloading-the-dynamic-tag-management-library}
+## 手动下载动态标签管理库{#manually-downloading-the-dynamic-tag-management-library}
 
 手动下载动态标签管理库以立即在AEM上更新它们。 例如，当您希望在轮询导入程序计划自动下载库之前测试更新的库时，请手动下载。
 
@@ -240,9 +240,9 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
 
 >[!NOTE]
 >
->下载的文件存储在 `/etc/clientlibs/dtm/my config/companyID/propertyID/servertype`下。
+>下载的文件存储在`/etc/clientlibs/dtm/my config/companyID/propertyID/servertype`下。
 >
->以下内容直接从您的DTM [配置中获取](#creating-the-dynamic-tag-management-configuration)。
+>以下是直接从[DTM配置](#creating-the-dynamic-tag-management-configuration)中获取的。
 >
 >* `myconfig`
 >* `companyID`
@@ -253,7 +253,7 @@ Perform the configuration using either the [Web Console](/help/sites-deploying/c
 
 
 
-## 将动态标签管理配置与您的站点关联 {#associating-a-dynamic-tag-management-configuration-with-your-site}
+## 将动态标签管理配置与站点{#associating-a-dynamic-tag-management-configuration-with-your-site}关联
 
 将您的动态标签管理配置与网站的页面相关联，以便AEM将所需的脚本添加到页面。 将站点的根页面与配置关联。 该页面的所有子代都继承关联。 如果需要，您可以覆盖子体页面上的关联。
 

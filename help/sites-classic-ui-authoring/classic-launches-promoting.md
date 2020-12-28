@@ -27,14 +27,14 @@ ht-degree: 95%
 * 是否提升当前页面的子页面。
 * 是提升整个启动项还是只提升已更改的页面。
 
-## 提升启动页面 {#promoting-launch-pages}
+## 提升启动页面  {#promoting-launch-pages}
 
 要提升页面，请在编辑要提升的启动页面时执行以下步骤：
 
 1. 在 Sidekick 的&#x200B;**页面**&#x200B;选项卡上，单击&#x200B;**提升启动项**。
 1. 指定要提升的页面：
 
-   * (Default) To promote only the current page, select **Promote Page Changes To Production Version**.
+   * （默认）要仅提升当前页面，请选择&#x200B;**将页面更改提升到生产版本**。
    * 若还要提升当前页面的子页面，请选择&#x200B;**包括子页面**。
    * 要提升启动项中的所有页面，请选择&#x200B;**将全面启动项提升至生产版本**。
 

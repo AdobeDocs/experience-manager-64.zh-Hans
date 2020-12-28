@@ -38,15 +38,15 @@ ht-degree: 13%
 * 更新了设备列表以实现响应式网站预览，现在包括Apple iPhone 8、8 Plus和X以及Samsung S7
 * 将模板设计信息的默认位置从/etc/design移开，以支持/conf中的站点特定设置。 从先前AEM发行版升级的客户仍可使用/etc/design。
 
-### 组件和模板开发 {#component-amp-template-development}
+### 组件和模板开发{#component-amp-template-development}
 
-* Project Archetype 13+，请参阅Github [以获取发行说明](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases)。
+* Project Archetype 13+，请参阅[Github以获取发行说明](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases)。
 * HTL 版本 1.3.1，请参阅 [Github 以查看发行说明](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1)。
 * Core Components 2.0.4+，请参阅 [Github 以查看发行说明](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases)。
 * 样式系统
 
    * 添加了一个全新的概念，可将CSS类分配给组件并允许页面编辑器中的用户通过UI从样式子集中进行选择
-   * 添加了定义组件周围呈现的HTML元素名称的功能，例如 &lt;main>, &lt;aside>
+   * 添加了定义组件周围呈现的HTML元素名称的功能，例如&lt;main>, &lt;aside>
 
 * 布局容器的网格系统，请参阅 [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid)。
 * 模板编辑器和策略
@@ -85,9 +85,9 @@ ht-degree: 13%
 * 添加了通过时间轴边栏开始体验片段工作流的功能
 * 引用边栏现在显示体验片段在AEM中的使用位置
 * 模板位置的配置现在允许作者在全局级别或文件夹级别定义允许体验片段模板使用的内容
-* 多面搜索现在支持高级筛选，如已发布／未发布、导出到社交媒体和Adobe Target
+* 多面搜索现在支持高级过滤，如已发布／未发布、导出到社交媒体和Adobe Target
 * 在将体验片段导出到Pinterest或Facebook时添加了单个社交媒体登录
-* 将AEM Experience Fragments与Adobe Target集成。 将体验片段同步到目标将创建Adobe Target优惠，该可与目标的可视体验书写器一起使用，以将其嵌入到任何支持目标的体验中。
+* 将AEM Experience Fragments与Adobe Target集成。 将体验片段同步到目标将在Adobe Target创建优惠，并与目标的可视体验书写器一起使用，以将其嵌入到任何支持目标的体验中。
 
 ### 翻译 {#translation}
 
@@ -121,25 +121,25 @@ ht-degree: 13%
 
 ### AEM 与 Adobe Target  {#aem-amp-adobe-target-nbsp}
 
-* 将AEM Experience Fragments与Adobe Target集成。 将体验片段同步到目标将创建Adobe Target优惠，该可与目标的可视体验书写器一起使用，以将其嵌入到任何支持目标的体验中。
-* Adobe Targetmbox.js版本63现已包含。 Adobe建议将实施切换到at.js。
-* 现在包含 at.js 版本 1.2.2。Adobe建议使用动态标签管理(DTM) [或](https://www.adobe.com/enterprise/cloud-platform/launch.html) Adobe Experience Platform Launch将at.js配置到站点。
+* 将AEM Experience Fragments与Adobe Target集成。 将体验片段同步到目标将在Adobe Target创建优惠，并与目标的可视体验书写器一起使用，以将其嵌入到任何支持目标的体验中。
+* Adobe Targetmbox.js版本63现已包含在内。 Adobe建议将实施切换到at.js。
+* 现在包含 at.js 版本 1.2.2。Adobe建议使用动态标签管理(DTM)或[Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html)将at.js配置到站点中。
 
 ### AEM 与 Adobe Analytics {#aem-amp-adobe-analytics}
 
 * s_code.js H.27.5现已包含。 Adobe建议将实施切换到AppMeasurement.js
-* AppMeasurement.js 1.8.0现已包含在内。 Adobe建议使用动态标签管理(DTM)或 [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) ，将AppMeasurement.js配置到站点中。
+* AppMeasurement.js 1.8.0现已包含在内。 Adobe建议使用动态标签管理(DTM)或[Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html)将AppMeasurement.js配置到站点中。
 
 ## Communities 加载项 {#communities-add-on}
 
 请参阅 [Communities 发行说明页面](/help/release-notes/communities-release-notes.md)
 
-## Screens 加载项 {#screens-add-on}
+## Screens 加载项  {#screens-add-on}
 
 * 增加了连接到AEM发布服务器以进行命令和控制和渠道下载(而不是直接连接到AEM作者)的Screens播放器支持。
 * 增加了将渠道分配分组到计划中的功能
 * 渠道分配现在具有开始和结束日期
 * 设备仪表板现在显示播放器外壳和固件版本
 * 设备仪表板列表显示播放器的连接状态
-* 添加了对AEM Screens播放器的Google Chrome OS支持
+* 增加了对AEM Screens播放器的Google Chrome OS支持
 * 添加了适用于AEM Screens播放器的Microsoft Windows 10

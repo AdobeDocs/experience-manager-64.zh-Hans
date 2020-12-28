@@ -52,27 +52,32 @@ ht-degree: 1%
 
 ## 架构 {#architecture}
 
-典型的AEM设置由作者和发布环境组成。 这些环境对基础硬件大小和系统配置有不同的要求。 创作环境和发布环境部分介绍了两 [种环境的](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations)[详细注意事项](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) 。
+典型的AEM设置由作者和发布环境组成。 这些环境对基础硬件大小和系统配置有不同的要求。 [作者环境](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations)和[发布环境](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations)各节中介绍了两种环境的详细注意事项。
 
 在典型的项目设置中，您有几个环境可用于暂存项目阶段：
 
-* **开发环境**&#x200B;开发新功能或进行重大更改。 最佳实践是为每个开发人员使用开发环境（通常是在他们的个人系统上本地安装）。
+* **开发**
+环境开发新功能或进行重大更改。最佳实践是为每个开发人员使用开发环境（通常是在他们的个人系统上本地安装）。
 
-* **创作测试环境**&#x200B;验证更改。 测试环境的数量可能因项目要求而异（例如，QA、集成测试或用户接受测试各自独立）。
+* **创作测试**
+环境验证更改。测试环境的数量可能因项目要求而异（例如，QA、集成测试或用户接受测试各自独立）。
 
-* **发布测试环境**&#x200B;主要用于测试社交协作用例和／或作者与多个发布实例之间的交互。
+* **发布测试**
+环境主要用于测试社交协作用例和／或作者与多个发布实例之间的交互。
 
-* **创作生产环境**&#x200B;供作者编辑内容。
+* **创作生产**
+环境供作者编辑内容。
 
-* **发布生产环境**&#x200B;用于提供已发布的内容。
+* **发布生产**
+环境用于提供已发布的内容。
 
 此外，环境可能不同，从运行AEM和应用程序服务器的单服务器系统到高度扩展的多服务器、多CPU群集实例集。 我们建议您为每个生产系统使用一台单独的计算机，并且不要在这些计算机上运行其他应用程序。
 
-## 一般硬件大小调整注意事项 {#generic-hardware-sizing-considerations}
+## 一般硬件大小调整注意事项{#generic-hardware-sizing-considerations}
 
 以下各节介绍了如何计算硬件要求，同时考虑到了各种因素。 对于大型系统，我们建议您对参考配置执行一组简单的内部基准测试。
 
-性能优化是一个基本任务，需要先执行它，然后才能对特定项目进行基准测试。 请确保在执行任何基准测试并将结果用于任何 [硬件大小计算之前](/help/sites-deploying/configuring-performance.md) ，应用性能优化文档中提供的建议。
+性能优化是一个基本任务，需要先执行它，然后才能对特定项目进行基准测试。 在执行任何基准测试并将其结果用于任何硬件大小计算之前，请确保应用[性能优化文档](/help/sites-deploying/configuring-performance.md)中提供的建议。
 
 高级用例的硬件规模要求需要基于项目的详细性能评估。 需要卓越硬件资源的高级使用案例的特点包括：
 
@@ -80,7 +85,7 @@ ht-degree: 1%
 * 广泛使用自定义代码、自定义工作流或第三方软件库
 * 与不支持的外部系统集成
 
-### 磁盘空间／硬盘 {#disk-space-hard-drive}
+### 磁盘空间／硬盘{#disk-space-hard-drive}
 
 所需的磁盘空间很大程度上取决于Web应用程序的卷和类型。 计算时应考虑：
 
@@ -97,26 +102,26 @@ ht-degree: 1%
 >
 >生产实例的临时目录应至少具有6 GB可用空间。
 
-### 虚拟化 {#virtualization}
+### 虚拟化{#virtualization}
 
 AEM在虚拟化环境中运行良好，但可能存在CPU或I/O等无法直接与物理硬件相等的因素。 建议选择更高的I/O速度（通常），因为这在大多数情况下都是关键因素。 对环境进行基准测试是准确了解所需资源的必要条件。
 
-### AEM实例的并行化 {#parallelization-of-aem-instances}
+### AEM实例{#parallelization-of-aem-instances}的并行化
 
-#### 失败安全性 {#fail-safeness}
+#### 失败安全性{#fail-safeness}
 
 在至少两个单独的系统上部署故障保护网站。 如果一个系统发生故障，另一个系统可以接管并因此补偿系统故障。
 
-#### 系统资源可伸缩性 {#system-resources-scalability}
+#### 系统资源可伸缩性{#system-resources-scalability}
 
-当所有系统都在运行时，可以提高的计算性能。 这种附加性能不一定与群集节点数呈线性关系，因为这种关系高度依赖于技术环境; 有关详细信息， [请参阅](/help/sites-deploying/recommended-deploys.md) “群集”文档。
+当所有系统都在运行时，可以提高的计算性能。 这种附加性能不一定与群集节点数呈线性关系，因为这种关系高度依赖于技术环境;有关详细信息，请参阅[群集文档](/help/sites-deploying/recommended-deploys.md)。
 
 根据特定Web项目的基本要求和具体用例来估计需要多少个群集节点：
 
 * 从故障安全性的角度来看，对于所有环境，必须根据群集节点恢复所需的时间来确定关键故障的严重程度和故障补偿时间。
-* 在可扩展性方面，写操作的数量基本上是最重要的因素； 请参 [阅作者并行工作](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) ，以查看作者环境 [和社交协作，以查](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) 看发布环境。 可以为仅访问系统以处理读取操作的操作建立负载平衡； 有关详 [细信息](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) ，请参阅Dispatcher。
+* 在可扩展性方面，写操作的数量基本上是最重要的因素；请参阅[作者在并行](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel)中工作(对于作者环境)和[社交协作](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations)(对于发布环境)。 可以为仅访问系统以处理读取操作的操作建立负载平衡；有关详细信息，请参阅[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)。
 
-## 创作环境特定计算 {#author-environment-specific-calculations}
+## 创作环境特定计算{#author-environment-specific-calculations}
 
 为了进行基准测试，Adobe为独立作者实例开发了一些基准测试。
 
@@ -142,11 +147,11 @@ AEM在虚拟化环境中运行良好，但可能存在CPU或I/O等无法直接�
 
 以上两个测试清楚地强调吞吐量根据操作类型而有所不同。 将环境上的活动用作调整系统大小的基础。 通过修改等较低密集度的操作（这也更常见），您将获得更好的吞吐量。
 
-### 缓存 {#caching}
+### 缓存{#caching}
 
 在创作环境中，缓存效率通常要低得多，因为对网站的更改更频繁，而且内容具有高度交互性和个性化。 使用调度程序，您可以缓存AEM库、JavaScript、CSS文件和布局图像。 这加快了创作过程的某些方面。 将Web服务器配置为额外设置在这些资源上进行浏览器缓存的标头将减少HTTP请求的数量，从而改善系统响应性，作者可以体验到这些请求。
 
-### 并行工作的作者 {#authors-working-in-parallel}
+### 并行{#authors-working-in-parallel}的作者
 
 在作者环境中，并行工作的作者人数和系统的交互增加的负载是主要的限制因素。 因此，我们建议您根据数据的共享吞吐量来调整系统。
 
@@ -182,11 +187,11 @@ AEM在虚拟化环境中运行良好，但可能存在CPU或I/O等无法直接�
 
 当作者使用AEM执行基本操作时，此公式可作为扩展CPU的一般准则。 假定系统和应用程序已优化。 但是，对于MSM或资产等高级功能，此公式不成立（请参阅以下各节）。
 
-另请参阅有关并行化和性能优 [化的](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) 其 [他注释](/help/sites-deploying/configuring-performance.md)。
+另请参见有关[并行化](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances)和[性能优化](/help/sites-deploying/configuring-performance.md)的附加注释。
 
-### 硬件Recommendations {#hardware-recommendations}
+### 硬件Recommendations{#hardware-recommendations}
 
-通常，您可以为创作环境使用与发布环境建议的相同硬件。 通常，创作系统上的网站流量要低得多，但缓存效率也较低。 但是，这里的基本因素是，并行工作的作者人数，以及对系统采取的行动类型。 一般而言，AEM群集(作者环境)在缩放读取操作方面最为有效； 换言之，AEM群集可以与正在执行基本编辑操作的作者进行良好的缩放。
+通常，您可以为创作环境使用与发布环境建议的相同硬件。 通常，创作系统上的网站流量要低得多，但缓存效率也较低。 但是，这里的基本因素是，并行工作的作者人数，以及对系统采取的行动类型。 一般而言，AEM群集(作者环境)在缩放读取操作方面最为有效；换言之，AEM群集可以与正在执行基本编辑操作的作者进行良好的缩放。
 
 Adobe的基准测试使用RedHat 5.5操作系统执行，该操作系统在Hewlett-Packard ProLiant DL380 G5硬件平台上运行，其配置如下：
 
@@ -199,9 +204,9 @@ Adobe的基准测试使用RedHat 5.5操作系统执行，该操作系统在Hewle
 
 AEM实例运行时的堆大小最小为256M，最大为1024M。
 
-## 发布环境特定计算 {#publish-environment-specific-calculations}
+## 发布环境特定计算{#publish-environment-specific-calculations}
 
-### 缓存效率和流量 {#caching-efficiency-and-traffic}
+### 缓存效率和流量{#caching-efficiency-and-traffic}
 
 缓存效率对于网站速度至关重要。 下表显示优化的AEM系统使用反向代理（如调度程序）每秒可以处理多少页：
 
@@ -216,15 +221,15 @@ AEM实例运行时的堆大小最小为256M，最大为1024M。
 
 >[!CAUTION]
 >
->免责声明： 这些数字基于默认硬件配置，并可能因所使用的特定硬件而异。
+>免责声明：这些数字基于默认硬件配置，并可能因所使用的特定硬件而异。
 
 缓存比率是调度程序无需访问AEM即可返回的页的百分比。 100%表示调度程序回答所有请求，0%表示AEM计算每一页。
 
-### 模板和应用程序的复杂性 {#complexity-of-templates-and-applications}
+### 模板和应用程序{#complexity-of-templates-and-applications}的复杂性
 
 如果您使用复杂模板，AEM需要更多时间来渲染页面。 从缓存中提取的页面不受此影响，但在考虑总体响应时间时，页面大小仍是相关的。 渲染复杂页面可能比渲染简单页面轻松花费十倍时间。
 
-### 公式 {#formula}
+### 公式{#formula}
 
 使用以下公式，您可以计算AEM解决方案的整体复杂性的估计值：
 
@@ -284,17 +289,17 @@ AEM实例运行时的堆大小最小为256M，最大为1024M。
 
 >[!NOTE]
 >
->&amp;ast; 除了JVM所需的内存外，还为操作系统保留足够的内存。
+>&amp;ast;除了JVM所需的内存外，还为操作系统保留足够的内存。
 
-## 其他特定用例计算 {#additional-use-case-specific-calculations}
+## 其他特定用例的计算{#additional-use-case-specific-calculations}
 
 除了计算默认Web应用程序外，您可能需要考虑以下用例的特定因素。 计算值将添加到默认计算中。
 
-### 特定于资产的注意事项 {#assets-specific-considerations}
+### 特定于资产的注意事项{#assets-specific-considerations}
 
 对数字资产的广泛处理需要优化硬件资源，最相关的因素是图像大小和处理后图像的峰值吞吐量。
 
-分配至少16GB堆并配置DAM更新资产工作流，以使用 [Camera Raw包](/help/assets/camera-raw.md) ，获取原始图像。
+分配至少16GB堆并配置DAM更新资产工作流，以使用[Camera Raw包](/help/assets/camera-raw.md)获取原始图像。
 
 >[!NOTE]
 >
@@ -304,9 +309,9 @@ AEM实例运行时的堆大小最小为256M，最大为1024M。
 
 >[!NOTE]
 >
->另请参阅《资 [产性能指南》](/help/sites-deploying/assets-performance-sizing.md)。
+>另请参阅[资产性能指南](/help/sites-deploying/assets-performance-sizing.md)。
 
-### 多站点管理器 {#multi-site-manager}
+### 多站点管理器{#multi-site-manager}
 
 在创作环境上使用AEM MSM时，资源消耗量主要取决于特定用例。 基本因素有：
 
@@ -319,7 +324,7 @@ AEM实例运行时的堆大小最小为256M，最大为1024M。
 
 还请考虑，如果AEM MSM使用案例占用的资源比计划的多，并行工作的作者将发现性能副作用。
 
-### AEM Communities大小调整注意事项 {#aem-communities-sizing-considerations}
+### AEM Communities规模调整注意事项{#aem-communities-sizing-considerations}
 
 包含AEM Communities功能（社区站点）的AEM站点在发布环境下体验到来自站点访客（成员）的高级交互。
 

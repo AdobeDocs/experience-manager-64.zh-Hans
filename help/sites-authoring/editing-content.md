@@ -106,9 +106,9 @@ ht-degree: 94%
 
 通知会列出正在针对页面运行的工作流。如果用户参与了当前工作流步骤，还可以使用[影响工作流状态](/help/sites-authoring/workflows-participating.md)和获取更多工作流相关信息的选项，例如：
 
-* **完成** -打开完 **成工作项**
+* **完成** -打开完成工 **作项** 对话框
 
-* **委派** -打开“完 **成工作项** ”对话框
+* **委派** -打开“完成工 **作项”** 对话框
 
 * **查看详细信息** - 打开工作流的&#x200B;**详细信息**&#x200B;窗口
 
@@ -136,7 +136,7 @@ ht-degree: 94%
 
 您可以使用[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)添加新组件。[组件占位符](#component-placeholder)显示组件在放置时将占据的位置：
 
-1. 确保页面处于[**编辑&#x200B;**模式](/help/sites-authoring/author-environment-tools.md#page-modes)。
+1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-authoring/author-environment-tools.md#page-modes)。
 1. 打开[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)。
 1. 将所需的组件拖动到[所需位置](#component-placeholder)。
 
@@ -150,7 +150,7 @@ ht-degree: 94%
 
 您可以使用段落系统的&#x200B;**将组件拖动到此处**&#x200B;框添加新组件：
 
-1. 确保页面处于[**编辑&#x200B;**模式](/help/sites-authoring/author-environment-tools.md#page-modes)。
+1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-authoring/author-environment-tools.md#page-modes)。
 1. 可通过以下两种方式在段落系统中选择和添加新组件：
 
    * 从现有组件的工具栏或&#x200B;**将组件拖动到此处**&#x200B;框中选择&#x200B;**插入组件**&#x200B;选项 (+)。
@@ -165,7 +165,7 @@ ht-degree: 94%
 
 1. 选定的组件将添加到页面底部。根据需要[编辑](#edit-content)组件。
 
-### 使用资产浏览器插入组件 {#inserting-a-component-using-the-assets-browser}
+### 使用资产浏览器插入组件  {#inserting-a-component-using-the-assets-browser}
 
 您还可以通过从[资产浏览器](/help/sites-authoring/author-environment-tools.md#assets-browser)拖动资产来向页面添加新组件。这将自动创建相应类型的新组件（并且包含资产）。
 
@@ -206,7 +206,7 @@ ht-degree: 94%
 
 要通过拖动以上某一资产类型创建组件，请执行以下操作：
 
-1. 确保页面处于[**编辑&#x200B;**模式](/help/sites-authoring/author-environment-tools.md#page-modes)。
+1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-authoring/author-environment-tools.md#page-modes)。
 1. 打开[资产浏览器](/help/sites-authoring/author-environment-tools.md#assets-browser)。
 1. 将所需的资产拖动到所需位置。[组件占位符](#component-placeholder)显示组件在放置时将占据的位置。
 
@@ -311,7 +311,7 @@ ht-degree: 94%
 * 打开[组件编辑对话框](#component-edit-dialog)。
 * 通过从资产浏览器中[拖放资产](#inserting-a-component-using-the-assets-browser)来直接添加内容。
 
-### 组件编辑对话框 {#component-edit-dialog}
+### 组件编辑对话框  {#component-edit-dialog}
 
 您可以打开一个组件以使用[组件工具栏的编辑（铅笔）图标](#edit-configure-copy-cut-delete-paste)来编辑内容。
 
@@ -354,7 +354,7 @@ ht-degree: 94%
 | 视频 | Flash |
 | 内容片段 | 内容片段 |
 
-## 编辑（内容）全屏模式 {#edit-content-full-screen-mode}
+## 编辑（内容）全屏模式  {#edit-content-full-screen-mode}
 
 对于所有组件，都可以通过以下图标进入（和退出）全屏模式：
 
@@ -453,11 +453,11 @@ ht-degree: 94%
 
 如果页面基于[可编辑的模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以通过选择[“页面信息”菜单](/help/sites-authoring/author-environment-tools.md#page-information)中的&#x200B;**编辑模板**，轻松地切换到[模板编辑器](/help/sites-authoring/templates.md#editing-templates-template-authors)。
 
-If the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates), you can switch to [Design mode](/help/sites-authoring/default-components-designmode.md) using the [page mode selector](/help/sites-authoring/author-environment-tools.md#page-modes) on the toolbar to enable/disable components for use on the page.
+如果页面基于[静态模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以使用工具栏上的[页面模式选择器](/help/sites-authoring/author-environment-tools.md#page-modes)切换至[设计模式](/help/sites-authoring/default-components-designmode.md)，以启用／禁用要在页面上使用的组件。
 
 您在[列视图](/help/sites-authoring/basic-handling.md#column-view)或[列表视图](/help/sites-authoring/basic-handling.md#list-view)中选择页面时，可以轻松地查看该页面所基于的模板。
 
-## Live Copy 状态 {#live-copy-status}
+## Live Copy 状态  {#live-copy-status}
 
 [“Live Copy 状态”页面模式](/help/sites-authoring/author-environment-tools.md#page-modes)允许快速查看 Live Copy 状态以及继承/未继承的组件。
 
@@ -472,7 +472,7 @@ If the page is based on a [static template](/help/sites-authoring/templates.md#e
 
 [注释](/help/sites-authoring/annotations.md)允许审核者和其他作者对内容提出反馈。该功能通常作审核和验证之用。
 
-## 预览页面 {#previewing-pages}
+## 预览页面  {#previewing-pages}
 
 可通过以下两个选项预览页面：
 
@@ -504,7 +504,7 @@ If the page is based on a [static template](/help/sites-authoring/templates.md#e
 
 进行创作时，可以使用页面编辑器右上角的图标进入预览模式：
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![chlimage_1-247](assets/chlimage_1-248.png)
 
 ### 查看已发布的项目 {#view-as-published}
 
@@ -562,7 +562,7 @@ AEM 允许您锁定页面，这样其他人就无法修改页面内容。当您�
 >
 >也可使用[键盘快捷键](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` 撤消页面编辑操作。
 >
->The keyboard shortcut `Ctrl-Y` is also availalbe to redo page edit actions.
+>键盘快捷键`Ctrl-Y`也可用于重做页面编辑操作。
 
 >[!NOTE]
 >

@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -54,15 +54,15 @@ Adobe Experience Manager (AEM) 附带多种现成的组件，这些组件为网�
 
 [组件控制台](/help/sites-authoring/default-components-console.md)对 AEM 安装提供的组件组和组件进行了概述。您可以查看有关单个组件及其用途的关键信息。
 
-## 组件 - 主要区域 {#components-major-areas}
+## 组件 - 主要区域  {#components-major-areas}
 
 以下页面提供了指向有关组件的一些其他重要信息的链接：
 
 * [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) - 核心组件提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
 
-* [社区](/help/communities/author-communities.md) - 这些组件为网站提供了交互式功能，例如论坛和评论。Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
+* [社区](/help/communities/author-communities.md) - 这些组件为网站提供了交互式功能，例如论坛和评论。创建[社区站点](/help/communities/overview.md)时，会包含其中的许多组件。
 
-* [电子商务](/help/sites-administering/ecommerce.md) - AEM中的电子商务功能还包括一系列组件。 实际用途取决于所使用的商务引擎。
+* [电子商务](/help/sites-administering/ecommerce.md) - AEM 中的电子商务功能也包含一系列组件。实际用途取决于所使用的商业引擎。
 
 ### 配置组件 {#configuring-components}
 

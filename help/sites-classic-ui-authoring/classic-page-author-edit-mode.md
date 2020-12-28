@@ -30,9 +30,9 @@ ht-degree: 85%
 >
 >根据您的实例，您可能已经拥有明确按照您的要求开发的自定义组件。这些组件甚至会与此处讨论的某些组件同名。
 
-The components are available when [editing a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) from the **Components** tab of the sidekick and the **Insert New Component** selector (when you double-click in the **Drag components or assets here** area).
+当[从Sidekick的&#x200B;**组件**&#x200B;选项卡和&#x200B;**插入新组件**&#x200B;选择器中编辑页面](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)时(当您在&#x200B;**将组件或资产拖动到此处**&#x200B;区域中多次时)，这些组件可用。
 
-You can select a component and drag it to the required location on your page and then [Edit Content and Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
+您可以选择一个组件并将其拖动到页面上的所需位置，然后[编辑内容和属性](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)。
 
 组件按照各种类别（组件组）进行分类，这些类别包括（用于创作页面）：
 
@@ -44,13 +44,13 @@ You can select a component and drag it to the required location on your page and
 
 常规组件是指用于创建内容的基本组件。
 
-### 帐户项 {#account-item}
+### 帐户项  {#account-item}
 
 您可以为链接定义标题和描述。
 
 ![](do-not-localize/chlimage_1-4.png)
 
-### 自适应图像 {#adaptive-image}
+### 自适应图像  {#adaptive-image}
 
 “自适应图像”基础组件生成的图像的大小会被调整至适应打开网页的窗口。要使用该组件，可以从文件系统或 DAM 提供图像资源。打开网页后，Web 浏览器将下载该图像的一个副本，且大小已调整至适合当前窗口。
 
@@ -72,7 +72,7 @@ You can select a component and drag it to the required location on your page and
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast; AEM中不支持动画。gif文件，以实现自适应再现。
+>&amp;ast;&amp;ast;AEM中不支持动画。gif文件，以实现自适应再现。
 
 #### 图像大小和质量 {#images-sizes-and-quality}
 
@@ -163,7 +163,7 @@ You can select a component and drag it to the required location on your page and
       两张幻灯片之间过渡的时间（以毫秒为单位）。
    * 控件样式
 
-      下拉菜单中提供各种选项； 例如，上一个／下一个按钮、右上切换。
+      下拉菜单中提供各种选项；例如，上一个／下一个按钮、右上切换。
 
 * **列表**
 在此处，可以指定页面在传送中的包含方式：
@@ -186,7 +186,7 @@ You can select a component and drag it to the required location on your page and
 
          * **页面**
 
-            选择页面列表。 Use `+` to add more entries and the up/down buttons to adjust the order.
+            选择页面列表。 使用`+`添加更多条目，使用向上／向下按钮调整顺序。
       * **搜索选项**
 
          * **开始**
@@ -205,11 +205,11 @@ You can select a component and drag it to the required location on your page and
             有关查询表达式的完整说明和更多示例，请参阅 [QueryBuilder API](/help/sites-developing/querybuilder-api.md)。
    * **排序依据**
 
-      从下 `jcr:title`拉 `jcr:created`菜单 `cq:lastModified`中选择、 `cq:template` 或。
+      从下拉菜单中选择`jcr:title`、`jcr:created`、`cq:lastModified`或`cq:template`。
 
    * **限制**
 
-      您希望在传送中使用的最大项目数； 这是可选的。
+      您希望在传送中使用的最大项目数；这是可选的。
 
 
 
@@ -219,7 +219,7 @@ You can select a component and drag it to the required location on your page and
 >
 >您可以为 Adobe Experience Manager 创建一个自定义传送组件，使其显示位于 AEM DAM 中的数字资产。有关信息，请参阅[为 Adobe Experience Manager 创建自定义传送组件](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html)。
 
-### 图表 {#chart}
+### 图表  {#chart}
 
 图表组件允许您添加条形图、折线图或饼图。AEM 可根据您提供的数据创建图表。您可通过在“数据”选项卡中直接键入或通过复制并粘贴电子表格来提供数据。
 
@@ -317,7 +317,7 @@ You can select a component and drag it to the required location on your page and
 >
 >根据您的用例，还有其他选项可用于外部应用程序的集成，例如，[Portlet 的集成](/help/sites-administering/aem-as-portal.md)。
 
-### Flash {#flash}
+### Flash  {#flash}
 
 Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Flash 资产拖动到组件上，也可以使用对话框：
 
@@ -357,7 +357,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
       任何其他所需的属性。
 
-### 图像 {#image}
+### 图像  {#image}
 
 图像组件可根据指定的参数显示图像和相应文本。
 
@@ -373,7 +373,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 >
 >Internet Explorer 用户需要上传图像，单击&#x200B;**确定**，然后重新打开图像，以预览方式查看已上传的文件，并进行修改（即裁剪）。
 >
->See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
+>有关AEM使用的HTML5功能的更多信息，请参见[认证平台](/help/release-notes/release-notes.md#certifiedplatforms)部分。
 
 加载图像后，您可以配置下列各项：
 
@@ -441,20 +441,20 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
       * **子页面选项**
 
-         * **子项** （父页面）
+         * **子项** of（父页面）
 
             手动或使用选择器指定一个路径。 如果将此选项留空，则使用当前页面作为父页面。
       * **固定列表选项**
 
-         * **页面** -选择页面列表。 使用+添加更多条目，使用向上／向下按钮调整顺序。
+         * **页面** -选择一列表页面。使用+添加更多条目，使用向上／向下按钮调整顺序。
       * **搜索选项**
 
-         * **开始** -手动或使用选择器输入开始路径。 搜索查询
+         * **开始** -手动或使用选择器输入开始路径。搜索查询
 可以输入纯文本搜索查询。
       * **高级搜索选项**
 
-         * **QueryBuilder谓词记号** -您可以使用QueryBuilder谓词记号输入搜索查询。 例如，您可以输入“fulltext=Marketing”，以使内容带有“Marketing”的所有页面都显示在传送中。 请参 [阅QueryBuilder](/help/sites-developing/querybuilder-api.md) API，了解有关查询表达式和更多示例的完整讨论。
-      * **标记** -指定父 **页面**、标记 **/关键字以及** 所需的匹配条件。
+         * **QueryBuilder谓词记号** -您可以使用QueryBuilder谓词记号输入搜索查询。例如，您可以输入“fulltext=Marketing”，以使内容带有“Marketing”的所有页面都显示在传送中。请参 [阅QueryBuilder ](/help/sites-developing/querybuilder-api.md) API，了解有关查询表达式和更多示例的完整讨论。
+      * **标记** -指定父 **页面**、标记 **/** 关键字和所需的匹配条件。
    * **显示方式**
 
       希望列出项目的方式；包括链接、Teaser 和新闻。
@@ -488,7 +488,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
 此组件提供了“用户名”和“密码”字段。
 
-![chlimage_1-29](assets/chlimage_1-29.png)
+![chlimage_1-21](assets/chlimage_1-29.png)
 
 您可以配置：
 
@@ -578,7 +578,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
    * **节点类型**
 
-      If the search is to be restricted to specific node type list them here; for example, `cq:Page`.
+      如果搜索限制为特定节点类型，则将其列表到此处；例如，`cq:Page`。
 
    * **搜索路径**
 
@@ -657,7 +657,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
    * **新幻灯片**
 
-      You can specify a selection of slides using the **Add** (and **Remove**) buttons.
+      可以使用&#x200B;**添加**（和&#x200B;**删除**）按钮指定幻灯片选项。
 
    * **标题**
 
@@ -820,8 +820,8 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
 * 视频
 
-   * **视频资产** -上传或拖放您的视频资产。
-   * **大小** -视频的固有大小（宽x高，以像素为单位）将显示在“大小”（请参阅上文）旁边的框中。 如果要覆盖视频的固有尺寸，请在此处手动输入宽度和高度尺寸。 单击 **确定** ，关闭对话框。
+   * **视频资产** -上传或删除您的视频资产。
+   * **大小** -视频的固有大小（宽x高，以像素为单位）将显示在“大小”（请参阅上文）旁边的框中。 如果要覆盖视频的固有尺寸，请在此处手动输入宽度和高度尺寸。单击“ **** 确定”关闭对话框。
 
 >[!NOTE]
 >
@@ -847,7 +847,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
 默认为 2 个相等列的列控件组件。
 
-### 3 列 {#columns-2}
+### 3 列  {#columns-2}
 
 默认为 3 个相等列的列控件组件。
 
@@ -861,13 +861,13 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
       选择您要呈现的列数。创建后，每列都有自己的链接，用于在添加内容时拖动组件或资产。
 
-## 表单 {#form}
+## 表单  {#form}
 
 表单组件用于为访客创建表单以提交输入。表单和表单组件可用于收集用户反馈（例如，客户满意度调查问卷）和用户信息（例如，用户注册）等信息。
 
 >[!NOTE]
 >
->请参阅 [AEM 表单帮助](/help/forms/home.md)，以获取有关 AEM 表单的信息。
+>请参阅 [AEM Forms 帮助](/help/forms/home.md)，以获取有关 AEM Forms 的信息。
 
 表单是从多个不同组件中构建的：
 
@@ -954,7 +954,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
       这取决于表单组件类型，但提供一个或多个单击框以指示该字段或该字段的某些部分是必需的。
 
-   * **必填消息** -通知用户此字段为必填字段的消息； 必填字段还将标有星号和星号。
+   * **必填消息** -通知用户此字段为必填字段的消息；必填字段还将标有星号和星号。
    * **约束** -可供选择的约束取决于表单组件类型。
    * **约束消息**
 用于告知用户必需项目的消息。
@@ -971,7 +971,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
    * **CSS**
 
-### 表单（组件） {#form-component}
+### 表单（组件）  {#form-component}
 
 表单组件使用&#x200B;**表单开始**&#x200B;和&#x200B;**表单结尾**&#x200B;元素定义表单的开始和结尾。它们始终是成对的，以确保正确定义表单。
 
@@ -979,7 +979,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
 在表单开始和表单结尾之间，您可以添加用于定义用户实际输入字段的表单组件。
 
-#### 表单开始 {#start-of-form}
+#### 表单开始  {#start-of-form}
 
 定义页面上新表单的开始时需要此组件。您可以配置：
 
@@ -1051,7 +1051,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **操作配置**
 
-      The options available in **Action Configuration** are dependent on the **Action Type** selected:
+      **操作配置**&#x200B;中可用的选项取决于所选&#x200B;**操作类型**:
 
       * **帐户请求**
 
@@ -1061,7 +1061,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
          * 内容路径
 
-            表单转储的任何内容的内容路径。Enter a path that ends with a slash `/`. 斜杠表示对于每个表单端口而言，新节点是在给定位置创建的；例如：
+            表单转储的任何内容的内容路径。输入以斜杠`/`结尾的路径。 斜杠表示对于每个表单端口而言，新节点是在给定位置创建的；例如：
 
             `/forms/feedback/`
 
@@ -1079,7 +1079,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
          * **资源类型**
 
-            如果设置此项，则此项将作为 `sling:resourceType`
+            如果设置此项，则将其作为`sling:resourceType`添加到每个注释中
 
          * **视图选择器**
       * **创建潜在客户**
@@ -1103,7 +1103,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
          * **查看数据...**
 
-            单击此按钮可访问有关批量编辑器中表单结果的信息。From here, you can export the information to a `.tsv` (tab-separated) file (for use, for example, in an Excel spreadsheet).
+            单击此按钮可访问有关批量编辑器中表单结果的信息。从此处，可以将信息导出到`.tsv`（制表符分隔）文件（例如，在Excel电子表格中使用）。
       * **邮件**
 
          * **从**
@@ -1134,7 +1134,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
          * **内容路径**
 
-            表单转储的任何内容的内容路径。Enter a path that ends with a slash `/`. 斜杠表示对于每个表单端口而言，新节点是在给定位置创建的；例如：
+            表单转储的任何内容的内容路径。输入以斜杠`/`结尾的路径。 斜杠表示对于每个表单端口而言，新节点是在给定位置创建的；例如：
 
             `/forms/feedback/`
 
@@ -1143,7 +1143,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
             单击此按钮可访问有关批量编辑器中表单结果的信息。从此处，您可以将信息导出到。tsv（制表符分隔）文件（例如，在Excel电子表格中使用）。
       * **通过上传存储内容**
 
-         此选项与“存储内容” **选项相同**。
+         其选项与&#x200B;**存储内容**&#x200B;相同。
 
       * **取消订阅者的订阅**
 
@@ -1204,7 +1204,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
 组件配置为立即使用，但您可以根据需要更改配置。例如，可以为地址的单个元素添加约束。将字段留空将使用默认设置。
 
-### Captcha {#captcha}
+### Captcha  {#captcha}
 
 Captcha 组件需要用户键入屏幕上所示的字母数字字符串。该字符串会随每次刷新而变。
 
@@ -1212,7 +1212,7 @@ Captcha 组件需要用户键入屏幕上所示的字母数字字符串。该字
 
 您可为此组件配置不同参数，包括当 captcha 字符串无效时将显示的消息。
 
-### 复选框组 {#checkbox-group}
+### 复选框组  {#checkbox-group}
 
 通过复选框可以生成一个或多个复选框的列表，其中某些复选框可以同时选中。
 
@@ -1256,7 +1256,7 @@ Captcha 组件需要用户键入屏幕上所示的字母数字字符串。该字
 >
 >您可以创建一个自定义上传组件来将文件上传至 Sling Servlet。有关信息，请参阅[将文件上传至 Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html)。
 
-### 隐藏字段 {#hidden-field}
+### 隐藏字段  {#hidden-field}
 
 此组件允许您创建隐藏字段。隐藏字段可用于多种目的；例如，当您需要在提交表单后执行操作，或者在帖子处理期间需要使用隐藏数据时。
 
@@ -1268,7 +1268,7 @@ Captcha 组件需要用户键入屏幕上所示的字母数字字符串。该字
 >
 >请参阅[显示和隐藏表单组件](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components)。
 
-### 图像按钮 {#image-button}
+### 图像按钮  {#image-button}
 
 图像按钮允许您使用自己的图像和文本创建按钮：
 
@@ -1288,7 +1288,7 @@ Captcha 组件需要用户键入屏幕上所示的字母数字字符串。该字
 
 最常用于日历事件表单，它在该表单中用于事件的 URL/链接字段。
 
-### 密码字段 {#password-field}
+### 密码字段  {#password-field}
 
 此组件用于允许用户输入密码：
 
@@ -1359,7 +1359,7 @@ Captcha 组件需要用户键入屏幕上所示的字母数字字符串。该字
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### Workflow Submit Button(s) {#workflow-submit-button-s}
+### 工作流提交按钮{#workflow-submit-button-s}
 
 此组件允许您创建可在工作流中使用的提交按钮。
 

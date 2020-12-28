@@ -58,7 +58,7 @@ ht-degree: 99%
 
 1. 单击&#x200B;**保存**。
 
-## 发现页面的启动状态 {#discovering-the-launch-status-of-a-page}
+## 发现页面的启动状态  {#discovering-the-launch-status-of-a-page}
 
 编辑页面的启动项时，有关该启动项的信息会显示在 Sidekick 的&#x200B;**版本控制**&#x200B;选项卡底部：
 

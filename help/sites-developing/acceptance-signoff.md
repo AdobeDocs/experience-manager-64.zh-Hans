@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 接受和签署{#acceptance-and-sign-off}
+# 接受和注销{#acceptance-and-sign-off}
 
-如前所述，“ [验收测试](/help/sites-developing/planning.md) ”是用于验证以下各项的特殊测试类别:
+如前所述，[验收测试](/help/sites-developing/planning.md)是用于验证以下各项的特殊测试类别:
 
 * 项目满足客户的要求。
 * 客户接受项目。

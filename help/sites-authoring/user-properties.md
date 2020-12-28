@@ -22,7 +22,7 @@ ht-degree: 95%
 
 AEM 提供了配置帐户和创作环境某些方面的功能。
 
-Using the [User](/help/sites-authoring/user-properties.md#user-settings) option in the [header](/help/sites-authoring/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options.
+使用[header](/help/sites-authoring/basic-handling.md#the-header)和关联的[我的首选项](#my-preferences)对话框中的[用户](/help/sites-authoring/user-properties.md#user-settings)选项，可以修改用户选项。
 
 ## 用户设置 {#user-settings}
 

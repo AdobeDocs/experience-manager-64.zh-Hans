@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe现在提供 [AEM Development Tools](/help/sites-developing/aem-eclipse.md) for Eclipse，它可以帮助您使用Eclipse开发AEM解决方案。
+>Adobe现在提供[AEM Development Tools for Eclipse](/help/sites-developing/aem-eclipse.md)，它可以帮助您使用Eclipse开发AEM解决方案。
 
 ## 概述 {#overview}
 
@@ -43,15 +43,15 @@ ht-degree: 0%
 
 ## 安装Eclipse {#install-eclipse}
 
-从Eclipse下载页下载“Eclipse IDE for Java EE Developers”(Eclipse IDE for Java EE开发 [人员)](https://www.eclipse.org/downloads/)。
+从[Eclipse下载页面](https://www.eclipse.org/downloads/)下载“Eclipse IDE for Java EE开发人员”。
 
-按照安装说明 [安装Eclipse](https://wiki.eclipse.org/Eclipse/Installation)。
+按照[安装说明](https://wiki.eclipse.org/Eclipse/Installation)安装Eclipse。
 
-## 根据Maven设置AEM项目 {#set-up-your-aem-project-based-on-maven}
+## 根据Maven {#set-up-your-aem-project-based-on-maven}设置AEM项目
 
-接下来，如使用Apache Maven构建AEM项目 [中所述，使用Maven设置项目](/help/sites-developing/ht-projects-maven.md)。
+接下来，使用Maven设置项目，如[使用Apache Maven](/help/sites-developing/ht-projects-maven.md)构建AEM项目中所述。
 
-## 准备对Eclipse的JSP支持 {#prepare-jsp-support-for-eclipse}
+## 准备对Eclipse {#prepare-jsp-support-for-eclipse}的JSP支持
 
 Eclipse还可以提供与JSP结合的支持，例如
 
@@ -60,12 +60,12 @@ Eclipse还可以提供与JSP结合的支持，例如
 
 为了使其正常工作：
 
-1. 按照使用Apache [Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)[中如何使用JSP的说明操作](/help/sites-developing/ht-projects-maven.md)。
+1. 按照[使用Apache Maven](/help/sites-developing/ht-projects-maven.md)构建AEM项目中的[如何使用JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)中的说明操作。
 1. 在内容模块的POM中的&lt;build />部分添加以下内容。
 
    Eclipse的Maven支持插件m2e不支持maven-jspc插件，此配置告知m2e忽略插件以及清理临时编译结果的相关任务。
 
-   这不是问题： 如使用 [JSP的方法中所述](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)，此设置中的maven-jspc插件仅用于验证JSP作为构建过程的一部分进行编译。 Eclipse已报告JSP中的任何问题，并且不依赖此Maven插件才能这样做。
+   这不是问题：如[如何使用JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)中所述，此设置中的maven-jspc-plugin仅用于验证JSP作为构建过程的一部分进行编译。 Eclipse已报告JSP中的任何问题，并且不依赖此Maven插件才能这样做。
 
    **myproject/content/pom.xml**
 
@@ -128,11 +128,11 @@ Eclipse还可以提供与JSP结合的支持，例如
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
-1. 现在，您可以使用Eclipse开发AEM项目，包括JSP自动完成。
+1. 现在，您已准备好使用Eclipse开发AEM项目，包括JSP自动完成。
 
    ![chlimage_1-43](assets/chlimage_1-43.png)
 
    >[!NOTE]
    >
-   >如果您在 `/libs/foundation/global.jsp` 中包含或 `/libs`其他JSP，您需要将其复制到项目中，这样Eclipse才能解析包含。 同时，您需要确保Maven未将其捆绑到您的内容包中。 如何实现这一点，请参 [阅如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md)。
+   >如果您在`/libs`中包含`/libs/foundation/global.jsp`或其他JSP，您需要将其复制到您的项目，这样Eclipse就能解析包含。 同时，您需要确保Maven未将其捆绑到您的内容包中。 如何实现这一点，请参见[如何使用Apache Maven](/help/sites-developing/ht-projects-maven.md)构建AEM项目。
 

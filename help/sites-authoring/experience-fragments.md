@@ -46,7 +46,7 @@ ht-degree: 82%
 >
 >如果您遇到任何问题，请联系您的系统管理员。
 
-## 应在何时使用体验片段？ {#when-should-you-use-experience-fragments}
+## 应在何时使用体验片段？  {#when-should-you-use-experience-fragments}
 
 体验片段应在以下时候使用：
 
@@ -90,7 +90,7 @@ ht-degree: 82%
    >
    >您可以使用[模板编辑器](/help/sites-authoring/templates.md)创建自己的模板。
 
-以下示例显示了根据构建的体验片段 `Contributors`。 使用的结构还说明了如何使用其他功能，如多站点管理（包括语言副本）。
+以下示例显示了根据`Contributors`构建的体验片段。 使用的结构还说明了如何使用其他功能，如多站点管理（包括语言副本）。
 
 >[!CAUTION]
 >
@@ -108,7 +108,7 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->It is also possible to configure the [Allowed Templates for your instance](#configure-allowed-templates-instance), but this method is **not** recommended as the values may be overwritten upon upgrade.
+>也可以为实例](#configure-allowed-templates-instance)配置[允许的模板，但建议使用&#x200B;**不**&#x200B;此方法，因为升级时可能会覆盖这些值。
 
 ### 为文件夹配置允许的模板 {#configure-allowed-templates-folder}
 
@@ -133,7 +133,7 @@ ht-degree: 82%
 
 >[!CAUTION]
 >
->It is not recommended to change the **[!UICONTROL Allowed Templates]** by this method, as the templates specified may be overwritten upon upgrade.
+>不建议使用此方法更改&#x200B;**[!UICONTROL 允许的模板]**，因为指定的模板可能会在升级时被覆盖。
 >
 >此对话框仅供参考之用。
 
@@ -157,7 +157,7 @@ ht-degree: 82%
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Navigate to the required folder and select **[!UICONTROL Create]**.
+1. 导览至所需的文件夹，然后选择&#x200B;**[!UICONTROL 创建]**。
 
 1. 选择&#x200B;**[!UICONTROL 体验片段]**，以打开&#x200B;**[!UICONTROL 创建体验片段]**&#x200B;向导。
 
@@ -181,11 +181,11 @@ ht-degree: 82%
 
 ## 编辑您的体验片段 {#editing-your-experience-fragment}
 
-体验片段编辑器提供了与普通页面编辑器类似的功能。See [Editing Page Content](/help/sites-authoring/editing-content.md) for more information on how to use it.
+体验片段编辑器提供了与普通页面编辑器类似的功能。请参阅[编辑页面内容](/help/sites-authoring/editing-content.md)以了解有关其用法的更多信息。
 
 以下示例过程说明了如何为产品创建 Teaser：
 
-1. Drag and drop a **[!UICONTROL Category Teaser]** from the [Components Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. 从[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)拖放&#x200B;**[!UICONTROL 类别Teaser]**。
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
@@ -289,15 +289,15 @@ ht-degree: 82%
 
 ## 纯 HTML 呈现版本 {#the-plain-html-rendition}
 
-Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
+使用URL中的`.plain.`选择器，可以访问纯HTML再现。
 
 可以从浏览器访问，但其主要用途是允许其他应用程序（例如，第三方Web应用程序、自定义移动实施）仅使用URL直接访问体验片段的内容。
 
 纯HTML再现将协议、主机和上下文路径添加到以下路径：
 
-* 类型： `src`、 `href`或 `action`
+* 类型：`src`、`href`或`action`
 
-* 或结束于： `-src`或 `-href`
+* 或结束于：`-src`或`-href`
 
 例如：
 

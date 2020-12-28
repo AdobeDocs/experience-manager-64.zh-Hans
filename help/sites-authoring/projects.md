@@ -13,18 +13,18 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '1394'
-ht-degree: 75%
+ht-degree: 87%
 
 ---
 
 
 # 项目{#projects}
 
-通过“项目”，您可以将资源分组到一个实体中。通用共享环境使您能够轻松管理项目。可以与项目关联的资源类型在 AEM 中称为“拼贴”。Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
+通过“项目”，您可以将资源分组到一个实体中。通用共享环境使您能够轻松管理项目。可以与项目关联的资源类型在 AEM 中称为“拼贴”。拼贴可能包括项目和团队信息、资产、工作流和其他类型的信息，如[项目拼贴中所述。](#project-tiles)
 
 >[!CAUTION]
 >
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and **/home/groups**.
+>对于项目中的用户，要使用“项目”功能(如创建项目、创建任务/工作流、查看和管理团队)查看其他用户／组，这些用户需要具有对&#x200B;**/home/users**&#x200B;和&#x200B;**/home/groups**&#x200B;的读取权限。 满足这一要求的最简单方法是向&#x200B;**项目用户**&#x200B;组授予 **/home/users** 和 **/home/groups** 的读取权限。
 
 作为用户，您可以执行以下操作：
 
@@ -52,7 +52,7 @@ ht-degree: 75%
 * **切换活动的项目**&#x200B;允许您在所有项目和仅处于活动状态的项目之间切换。
 * **显示统计信息视图**&#x200B;允许您查看与任务完成程度相关的项目统计信息。
 
-## 项目拼贴 {#project-tiles}
+## 项目拼贴  {#project-tiles}
 
 通过项目，您可以将不同类型的信息与项目关联。这些信息称为&#x200B;**拼贴**。本节介绍了各个拼贴以及它们包含的信息类型。
 
@@ -87,7 +87,7 @@ ht-degree: 75%
 
 单击&#x200B;**添加收藏集**&#x200B;并从列表中选择相应的收藏集，可添加收藏集。
 
-### 体验 {#experiences}
+### 体验  {#experiences}
 
 **体验**&#x200B;拼贴允许您将移动设备应用程序、网站或出版物添加到项目中。
 
@@ -97,13 +97,13 @@ ht-degree: 75%
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
-选择缩略图的路径，并在适用的情况下更改体验的缩略图。Experiences are grouped together in the **Experiences** tile.
+选择缩略图的路径，并在适用的情况下更改体验的缩略图。体验会在&#x200B;**体验**&#x200B;拼贴中进行分组。
 
 ### 链接 {#links}
 
 “链接”拼贴允许您将外部链接与项目关联。
 
-![chlimage_1-174](assets/chlimage_1-175.png)
+![chlimage_1-175](assets/chlimage_1-175.png)
 
 您可以使用易于识别的名称来命名链接并更改其缩略图。
 
@@ -125,7 +125,7 @@ ht-degree: 75%
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. 转换作业列表还显示资产元数据和标记的条目。 这些条目指示资产的元数据和标记也会被翻译。
+单击&#x200B;**翻译作业**&#x200B;卡底部的省略号，以视图翻译工作流中的资产。 翻译作业列表还会显示资产元数据和标记条目。这些条目指示资产的元数据和标记也会被翻译。
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
@@ -135,7 +135,7 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
-您可以在团队中添加和删除团队成员。In addition, you can edit the [user role](#user-roles-in-a-project) assigned to the team member.
+您可以在团队中添加和删除团队成员。此外，您还可以编辑向团队成员分配的[用户角色](#user-roles-in-a-project)。
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
@@ -147,7 +147,7 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 此工作流在[创建登陆页面工作流](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)中进行了介绍。
 
-### 电子邮件 {#emails}
+### 电子邮件  {#emails}
 
 **电子邮件**&#x200B;拼贴可帮助您管理电子邮件请求。它会启动请求电子邮件工作流。
 
@@ -159,7 +159,7 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 您可以指定项目遵循特定的工作流。当有任何工作流正在运行时，其状态会显示在“项目”的&#x200B;**工作流**&#x200B;拼贴中。
 
-![chlimage_1-186](assets/chlimage_1-185.png)
+![chlimage_1-185](assets/chlimage_1-185.png)
 
 您可以指定项目遵循特定的工作流。根据您选择的项目，您可以使用不同的工作流。
 
@@ -173,27 +173,27 @@ Click the ellipsis at the bottom of the **Translation Job** card to view the ass
 
 ### 任务 {#tasks}
 
-“任务”拼贴允许您监测任何项目相关任务（包括工作流）的状态。Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
+“任务”拼贴允许您监测任何项目相关任务（包括工作流）的状态。[使用任务](/help/sites-authoring/task-content.md)中详细介绍了任务。
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
 ## 项目模板 {#project-templates}
 
-AEM随附三个不同的现成模板：
+AEM 提供了四种不同的现成模板：
 
 * 简单项目——任何不适合其他类别的项目的参考范例（全部捕获）。 它包括三个基本角色（所有者、编辑者和观察者）和四个工作流（项目批准、请求启动项、请求登陆页面和请求电子邮件）。
-* 媒体项目——与媒体相关的活动的参考示例项目。 它包括几个与媒体相关的项目角色（摄影师、编辑者、撰稿人、设计师、所有者和观察者）。它还包括两个与媒体内容相关的工作流-请求复制（用于请求和查看文本）和产品照片拍摄（用于管理与产品相关的照片）
-* [产品照片拍摄项目](/help/sites-authoring/managing-product-information.md) -用于管理与电子商务相关的产品照片的参考范例。 它包括摄影师、编辑、修图师、所有者、创意总监、社交媒体营销人员、营销经理、审阅者和观察者的角色。
-* [翻译项目](/help/sites-administering/translation.md) - 用于管理翻译相关活动的参考示例。它包括三个基本角色（所有者、编辑者和观察者）。它包括两个工作流，它们可在工作流用户界面中访问。
+* 媒体项目——与媒体相关的活动的参考示例项目。 它包括几个与媒体相关的项目角色（摄影师、编辑者、撰稿人、设计师、所有者和观察者）。此外，它还包括两个与媒体内容相关的工作流 - 请求复制（用于请求和查看文本）和产品照片拍摄（用于管理与产品相关的照片）。
+* [产品照片拍摄项目](/help/sites-authoring/managing-product-information.md) -用于管理与电子商务相关的产品照片的参考范例。它包括以下角色：摄影师、编辑者、修图师、所有者、创意总监、社交媒体营销人员、营销经理、审阅者和观察者。
+* [翻译项目](/help/sites-administering/translation.md) - 用于管理翻译相关活动的参考示例。它包括三个基本角色（所有者、编辑者和观察者）。此外，它还包括两个可在工作流用户界面中访问的工作流。
 
 根据您选择的模板，您可以使用不同的选项，特别是与用户角色和工作流有关的选项。
 
-## 项目中的用户角色 {#user-roles-in-a-project}
+## 项目中的用户角色  {#user-roles-in-a-project}
 
 项目模板中设置了不同的用户角色，之所以使用这些用户角色，主要是出于以下两个原因：
 
-1. 权限. 用户角色属于下列三个类别之一：观察者、编辑者、所有者。例如，摄影师或文案人将具有与编辑相同的权限。 权限决定了用户可以对项目中的内容执行的操作。
-1. 工作流. 工作流可确定向谁分配了项目中的任务。任务可以与项目角色关联。 例如，可以将某个任务分配给摄影师，这样所有具有摄影师角色的团队成员都将会获取该任务。
+1. 权限. 用户角色属于下列三个类别之一：观察者、编辑者、所有者。例如，摄影师或撰稿人将拥有与编辑者相同的权限。权限决定了用户可以对项目中的内容执行的操作。
+1. 工作流. 工作流可确定向谁分配了项目中的任务。任务可以与项目角色关联。例如，可以将某个任务分配给摄影师，这样所有具有摄影师角色的团队成员都将会获取该任务。
 
 所有项目都支持以下默认角色，以便您可以管理安全性和控制权限：
 
@@ -225,7 +225,7 @@ AEM随附三个不同的现成模板：
   </tr> 
   <tr> 
    <td><p>所有者</p> </td> 
-   <td><p>具有此角色的用户可以启动项目。所有者可以创建项目、在项目中启动工作以及将已批准的资产移至“生产”文件夹。 所有者还可以查看和执行项目中的所有其他任务。</p> </td> 
+   <td><p>具有此角色的用户可以启动项目。所有者可以创建项目、在项目中启动工作，以及将批准的资产移动到“生产”文件夹。所有者还可以查看和执行项目中的所有其他任务。</p> </td> 
    <td> 
     <ul> 
      <li>/etc/commerce 的写入权限</li> 

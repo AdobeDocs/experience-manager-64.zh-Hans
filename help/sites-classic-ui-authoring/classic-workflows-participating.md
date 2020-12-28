@@ -44,7 +44,7 @@ ht-degree: 98%
 
    如果您发现需要重复一个步骤或一系列步骤，您可以执行回退。此操作允许您选择之前已在工作流中执行过的步骤，以进行重新处理。工作流会返回到您指定的步骤，然后从此处继续执行。
 
-## 参与工作流 {#participating-in-a-workflow}
+## 参与工作流  {#participating-in-a-workflow}
 
 ### 已分配工作流操作的通知 {#notifications-of-assigned-workflow-actions}
 
@@ -65,13 +65,13 @@ ht-degree: 98%
 1. 选择工作流步骤，然后单击顶部导航栏中的&#x200B;**完成**&#x200B;按钮。
 1. 在显示的对话框中，选择&#x200B;**下一步**；也就是接下来要执行的步骤。下拉列表会显示所有适当的目标。您还可以输入&#x200B;**评论**。
 
-   ![工作流程完成](assets/workflowcomplete.png)
+   ![工作流程完整](assets/workflowcomplete.png)
 
    列出的步骤数取决于工作流模型的设计。
 
 1. 单击&#x200B;**确定**&#x200B;以确认该操作。
 
-### 委派参与者步骤 {#delegating-a-participant-step}
+### 委派参与者步骤  {#delegating-a-participant-step}
 
 请按照以下过程委派工作项。
 
@@ -82,7 +82,7 @@ ht-degree: 98%
 
 1. 单击&#x200B;**确定**&#x200B;以确认该操作。
 
-### 对参与者步骤执行回退 {#performing-step-back-on-a-participant-step}
+### 对参与者步骤执行回退  {#performing-step-back-on-a-participant-step}
 
 请按照以下过程执行回退。
 

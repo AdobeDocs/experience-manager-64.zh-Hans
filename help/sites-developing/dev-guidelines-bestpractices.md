@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM开发——准则和最佳实践{#aem-development-guidelines-and-best-practices}
 
-## 使用模板和组件的指南 {#guidelines-for-using-templates-and-components}
+## 使用模板和组件{#guidelines-for-using-templates-and-components}的准则
 
 AEM组件和模板构成了一个非常强大的工具包。 开发人员可以使用它们为网站业务用户、编辑人员和管理员提供功能，使其网站能够适应不断变化的业务需求（内容敏捷性），同时保持网站的统一布局（品牌保护）。
 
@@ -49,15 +49,15 @@ AEM组件和模板构成了一个非常强大的工具包。 开发人员可以�
 * 为您的自定义组件提供必要的灵活性和配置功能。
 * 最大限度地利用AEM段落系统（parsys和iparsys组件）的功能和灵活性。
 
-### 自定义组件和其他元素 {#customizing-components-and-other-elements}
+### 自定义组件和其他元素{#customizing-components-and-other-elements}
 
 创建您自己的组件或自定义现有组件时，通常最容易（也最安全）重用现有定义。 同样的原则也适用于AEM中的其他元素，例如错误处理程序。
 
-这可以通过复制和覆盖现有定义来完成。 换言之，将定义从复制 `/libs` 到 `/apps/<your-project>`。 中的此新定义 `/apps`可以根据您的要求进行更新。
+这可以通过复制和覆盖现有定义来完成。 换言之，将定义从`/libs`复制到`/apps/<your-project>`。 此新定义位于`/apps`中，可以根据您的要求进行更新。
 
 >[!NOTE]
 >
->有关更 [多详细信息](/help/sites-developing/overlays.md) ，请参阅使用叠加。
+>有关详细信息，请参阅[使用叠加](/help/sites-developing/overlays.md)。
 
 例如：
 
@@ -65,7 +65,7 @@ AEM组件和模板构成了一个非常强大的工具包。 开发人员可以�
 
    这涉及覆盖组件定义：
 
-   * 通过复制现有组件在中 `/apps/<website-name>/components/<MyComponent>` 创建新组件文件夹：
+   * 通过复制现有组件在`/apps/<website-name>/components/<MyComponent>`中创建新组件文件夹：
 
       * 例如，要自定义文本组件副本，请执行以下操作：
 
@@ -83,17 +83,17 @@ AEM组件和模板构成了一个非常强大的工具包。 开发人员可以�
 
 >[!CAUTION]
 >
->您 **不得更** 改路径中的任 `/libs` 何内容。
+>您&#x200B;**不得**&#x200B;更改`/libs`路径中的任何内容。
 >
->这是因为下次升级实 `/libs` 例时，内容会被覆盖（而应用修补程序或功能包时，内容很可能会被覆盖）。
+>这是因为下次升级实例时，`/libs`的内容会被覆盖（当您应用修补程序或功能包时，很可能会被覆盖）。
 >
 >对于配置和其他更改：
 >
->1. 将项目复制到 `/libs` `/apps`
->1. 在 `/apps`
+>1. 将`/libs`中的项复制到`/apps`
+>1. 在`/apps`中进行任何更改
 
 
-## 何时使用JCR查询以及何时不使用它们 {#when-to-use-jcr-queries-and-when-not-to-use-them}
+## 何时使用JCR查询，何时不使用{#when-to-use-jcr-queries-and-when-not-to-use-them}
 
 JCR查询在正确使用时是一个强大的工具。 它们适用于：
 
@@ -112,16 +112,16 @@ JCR查询永远不应用于纯渲染请求。 例如，JCR查询不适用于
 
 >[!NOTE]
 >
->如果您使用 [查询生成器](/help/sites-developing/querybuilder-api.md)，则使用JCR查询，因为查询生成器在内部生成JCR查询。
+>如果使用[查询生成器](/help/sites-developing/querybuilder-api.md)，则使用JCR查询，因为查询生成器在内部生成JCR查询。
 
 
-## 安全注意事项 {#security-considerations}
+## 安全注意事项{#security-considerations}
 
 >[!NOTE]
 >
->还值得参考安全 [清单](/help/sites-administering/security-checklist.md)。
+>还值得参考[安全清单](/help/sites-administering/security-checklist.md)。
 
-### JCR（存储库）会话 {#jcr-repository-sessions}
+### JCR（存储库）会话{#jcr-repository-sessions}
 
 您应使用用户会话，而不是管理会话。 这意味着您应使用：
 
@@ -129,13 +129,13 @@ JCR查询永远不应用于纯渲染请求。 例如，JCR查询不适用于
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Protect反对跨站点脚本(XSS) {#protect-against-cross-site-scripting-xss}
+### Protect反对跨站点脚本(XSS){#protect-against-cross-site-scripting-xss}
 
 跨站点脚本(XSS)使攻击者能够将代码注入其他用户查看的网页中。 恶意Web用户可能利用此安全漏洞绕过访问控制。
 
 AEM在输出时应用过滤所有用户提供的内容的原则。 在开发和测试过程中，防止XSS优先。
 
-此外，Web应用程序防火墙(如 [Apache的mod_security](https://modsecurity.org))可以提供对部署环境安全的可靠、集中的控制，并防止以前未检测到的跨站点脚本攻击。
+此外，Web应用程序防火墙（如Apache](https://modsecurity.org)的[mod_security）可以提供对部署环境安全的可靠、集中的控制，并防止以前未检测到的跨站点脚本攻击。
 
 >[!CAUTION]
 >
@@ -147,7 +147,7 @@ XSSAPI备忘单。
 
 [获取文件](assets/xss_cheat_sheet_2016.pdf)
 
-### 保护机密信息的通信 {#securing-communication-for-confidential-information}
+### 保护机密信息通信{#securing-communication-for-confidential-information}
 
 对于任何Internet应用程序，请确保在传输机密信息时
 
@@ -156,16 +156,16 @@ XSSAPI备忘单。
 
 这适用于对系统保密的信息（如配置或管理访问）以及对用户保密的信息（如其个人详细信息）
 
-## 独特的开发任务 {#distinct-development-tasks}
+## 独特的开发任务{#distinct-development-tasks}
 
-### 自定义错误页面 {#customizing-error-pages}
+### 自定义错误页面{#customizing-error-pages}
 
 可以为AEM自定义错误页面。 这是建议的，这样实例不会在内部服务器错误上显示sling跟踪。
 
-有关 [完整的详细信息，请参阅自定义错误处理程序显示](/help/sites-developing/customizing-errorhandler-pages.md) 的错误页面。
+有关完整的详细信息，请参阅[自定义错误处理程序](/help/sites-developing/customizing-errorhandler-pages.md)显示的错误页面。
 
-### 在Java进程中打开文件 {#open-files-in-the-java-process}
+### 在Java进程{#open-files-in-the-java-process}中打开文件
 
-由于AEM可以访问大量文件，因此建议为AEM显 [式配置Java进程打开的文件](/help/sites-deploying/configuring.md#open-files-in-the-java-process) 数量。
+由于AEM可以访问大量文件，因此建议为AEM显式配置Java进程[打开的文件数。](/help/sites-deploying/configuring.md#open-files-in-the-java-process)
 
 为最大限度地减少此问题的发展，应确保尽可能快（有意义）正确关闭任何打开的文件。

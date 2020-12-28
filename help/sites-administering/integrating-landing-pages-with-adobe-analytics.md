@@ -20,7 +20,7 @@ ht-degree: 24%
 
 # 将登陆页与Adobe Analytics集成{#integrating-landing-pages-with-adobe-analytics}
 
-AEM通过使用以下行动 [动员](https://www.omniture.com/en/products/analytics/sitecatalyst) (CTA)组件将登陆页解决方案与Adobe Analytics集成：
+AEM已通过使用以下行动动员(CTA)组件将登陆页解决方案与[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst)集成：
 
 1. 点进率组件
 1. 图形链接组件
@@ -29,15 +29,15 @@ AEM通过使用以下行动 [动员](https://www.omniture.com/en/products/analyt
 
 ## 前提条件 {#prerequisites}
 
-Adobe建议您通过现有的AEM [-Adobe Analytics集成](/help/sites-administering/adobeanalytics.md) ，了解此集成的工作方式。
+Adobe建议您通过[现有的AEM-Adobe Analytics集成](/help/sites-administering/adobeanalytics.md)了解此集成的工作方式。
 
 ## 可用于映射的组件 {#components-available-for-mapping}
 
-在AEM中，Sidekick中 **此处显示** 的 **行动动员组件** - ClickThroughLink **** 和GraphicalLink，可映射到Adobe Analytics变量。
+在AEM中，此处在Sidekick中显示的&#x200B;**行动动员**&#x200B;组件- **ClickThroughLink**&#x200B;和&#x200B;**GraphicalLink**&#x200B;可映射到Adobe Analytics变量。
 
-![chlimage_1-21](assets/chlimage_1-21.jpeg)
+![chlimage_1-29](assets/chlimage_1-21.jpeg)
 
-### 将登陆页组件映射到Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
+### 将登陆页组件映射到Adobe Analytics{#mapping-landing-page-components-to-adobe-analytics}
 
 要将登陆页组件映射到Adobe Analytics:
 
@@ -90,7 +90,7 @@ Adobe建议您通过现有的AEM [-Adobe Analytics集成](/help/sites-administer
 </table>
 
 1. 使用内容查找器中的任何Adobe Analytics变量映射这些暴露的属性。 框架现已准备就绪。
-1. 您现在可以使用现有CTA组件创建新登陆页或打开现有登陆页，然后从Sidekick中单击页面属 **性** (在触屏优化UI中，选择“打开属性 **”并单**********&#x200B;击Cloud Services)中的“Cloud Services”选项卡，并配置框架以使用登陆页。 在下拉列表中选择框架。
+1. 您现在可以创建新登陆页或打开包含现有CTA组件的现有登陆页，并单击Sidekick中&#x200B;**页面属性**&#x200B;中的&#x200B;**Cloud Services**&#x200B;选项卡(在触屏优化UI中，选择&#x200B;**打开属性**&#x200B;并单击&#x200B;**Cloud Services**)并配置框架用于登陆页。 在下拉列表中选择框架。
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 

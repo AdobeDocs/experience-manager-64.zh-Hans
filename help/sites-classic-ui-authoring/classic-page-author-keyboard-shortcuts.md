@@ -24,7 +24,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->In the following tables, for the key combinations in the **Shortcut** column, both Ctrl and Command keys work on macOS.
+>在下表中，对于&#x200B;**Shortcut**&#x200B;列中的组合键，Ctrl和Command键均适用于macOS。
 
 >[!NOTE]
 >
@@ -157,7 +157,7 @@ ht-degree: 91%
 
 在使用[控制台](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)时，桌面用户也可以使用各种键盘快捷键。
 
-## 用于开发的键盘快捷键 {#keyboard-shortcuts-for-development}
+## 用于开发的键盘快捷键  {#keyboard-shortcuts-for-development}
 
 在使用页面编辑器时，还有其他键盘快捷键可供桌面开发人员使用。
 
@@ -170,7 +170,7 @@ ht-degree: 91%
   </tr> 
   <tr> 
    <td>编辑模式</td> 
-   <td>Set the following suffix in the URL:<br /> <code>?debugClientLibs=true</code><br /> Then use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>在URL中设置以下后缀：<br /> <code>?debugClientLibs=true</code><br />然后使用：<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>查看页面加载的计时统计数据。</td> 
   </tr> 
  </tbody> 

@@ -16,7 +16,7 @@ ht-degree: 1%
 ---
 
 
-# Livefyre功能包2.0.6发行说明 {#livefyre-feature-pack-release-notes}
+# Livefyre功能包2.0.6发行说明{#livefyre-feature-pack-release-notes}
 
 ## 发行信息 {#release-information}
 
@@ -29,18 +29,18 @@ ht-degree: 1%
 | 兼容性 (*) | AEM 6.4 SP1、6.4、6.3 GA和6.2 SP1 |
 | 描述 | 此软件包允许您将Livefyre行业领先的特选功能与AEM实例相集成，使您能够在几分钟内将宝贵的用户生成内容(UGC)从社交网络发布到您的站点。 |
 
-## Livefyre功能包2.0.6包含的内容 {#what-is-included-in-livefyre-feature-pack}
+## Livefyre功能包2.0.6 {#what-is-included-in-livefyre-feature-pack}中包含的内容
 
 此软件包将Livefyre行业领先的特选功能与AEM实例相集成，使您能够在几分钟内将宝贵的用户生成内容(UGC)从社交网络发布到您的站点。 此包有三个不同的组件：
 
 **将UGC内容导入AEM Assets**
 
-* 将Twitter和Instagram用户生成的内容(UGC)从Livefyre Studio导入到使用UGC导入程序的AEM Assets。
+* 使用UGC导入程序将Twitter和Instagram用户生成的内容(UGC)从Livefyre Studio导入AEM Assets。
 * 访问您的Livefyre库。
 * 使用Livefyre社交搜索在Twitter和Instagram上实时搜索。
 * 在UGC上管理权限。
 
-**向AEM Sites或社区添加Livefyre组件**
+**将Livefyre组件添加到AEM Sites或社区**
 
 * 使用包括地图、画廊和媒体墙在内的一整套社交组件即时构建和自定义动态、引人入胜的体验。
 * 在AEM Sites或社区中发布UGC。
@@ -50,9 +50,9 @@ ht-degree: 1%
 * 将您现有的产品目录无缝集成到Livefyre中，以推动用户在您的站点中的参与和转化，并提供可购物的UGC体验。
 * 编辑或删除AEM Commerce产品目录中的项目，并自动更新Livefyre中的更改。
 
-有关安装的帮助，请参 [阅与Livefyre集成](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)。
+有关安装的帮助，请参阅[与Livefyre集成](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)。
 
-### 其他发行信息 {#additional-release-information}
+### 其他发行信息{#additional-release-information}
 
 由于更新影响Instagram非商业用户帐户中内容的聚合，我们无法再代表您发布评论或自动检查作者的回复。 [单击此处了解更多信息](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/)。
 
@@ -60,10 +60,10 @@ ht-degree: 1%
 >
 >Livefyre功能包2.0.6不支持AEM Classic UI。
 
-#### 新增功能或改进 {#new-feature-or-improvement}
+#### 新增功能或改进{#new-feature-or-improvement}
 
 * 添加了在Livefyre中设置权限请求社交帐户之前搜索UGC的功能。 您必须设置社交帐户以请求权限，或者如果您拥有内容，则覆盖权限请求。
-* Instagram和Twitter UGC [权限请求工作流已更新](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) ，以符合最新的API。
+* Instagram和Twitter [UGC权限请求工作流](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)已更新以符合最新的API。
 * 权限状态和相应的操作现在显示在权限请求屏幕上。
 
 #### 错误修复 {#bug-fixes}
@@ -72,7 +72,7 @@ ht-degree: 1%
 * 修复了Livefyre studio中的资产计数与AEM UGC库中的资产计数不匹配的问题。
 * 修复了UGC库中在重置筛选器选项后显示筛选结果的问题。
 * 修复了AEM Commerce中行动动员按钮将用户重定向到错误URL的问题。
-* 修复了将多个组件拖放到parsys占位符中导致其消失的AEM Sites中的问题。
+* 修复了AEM Sites的一个问题，该问题导致将多个组件拖放到parsys占位符中导致其消失。
 * 修复了在发送权限请求时，禁用的社交帐户可供选择的问题。
 * 修复了将UGC从资产拖放到站点时会出错的问题。
 * 修复了将聊天和Liveblog组件拖放到站点时不会创建应用程序的问题。

@@ -26,17 +26,17 @@ ht-degree: 1%
 >
 >如果未进行任何内容更改，您将看到一条消息，指明页面已激活，但不会创建新版本
 
-您可以使用Sidekick的“版本控制”选项 **卡按请求** 创建其他版本。 这些版本存储在存储库中，并可在需要时还原。
+您可以使用Sidekick的&#x200B;**版本控制**&#x200B;选项卡在请求时创建其他版本。 这些版本存储在存储库中，并可在需要时还原。
 
 这些版本从不被清除，因此存储库大小会随着时间的推移而增大，因此需要进行管理。
 
 AEM附带各种机制，可帮助您管理存储库：
 
-* 版 [本管理器](#version-manager)
+* [版本管理器](#version-manager)
 
-   This can be configured to purge old versions when new versions are created.
+   此配置可用于在创建新版本时清除旧版本。
 
-* 清除 [版本工具](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
+* [清除版本](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)工具
 
    它用作监视和维护存储库的一部分。
 
@@ -50,13 +50,13 @@ AEM附带各种机制，可帮助您管理存储库：
 
       当版本的年龄超过此值时，会从存储库中清除该版本。
 
-* 版本 [清除维护任务](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)。 您可以计划“版本清除”维护任务，以自动删除旧版本。 因此，这会最大限度地减少手动使用版本清除工具的需求。
+* [版本清除维护任务](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)。 您可以计划“版本清除”维护任务，以自动删除旧版本。 因此，这会最大限度地减少手动使用版本清除工具的需求。
 
 >[!CAUTION]
 >
 >要优化存储库大小，您应经常运行版本清除任务。 任务应在业务时间以外安排，当流量有限时。
 
-## 版本管理器 {#version-manager}
+## 版本管理器{#version-manager}
 
 除了通过清除工具明确清除外，还可以将版本管理器配置为在创建新版本时清除旧版本。
 
@@ -66,27 +66,27 @@ AEM附带各种机制，可帮助您管理存储库：
 
 以下选项可供选择：
 
-* `versionmanager.createVersionOnActivation` (布尔值，默认值： true)
+* `versionmanager.createVersionOnActivation` (布尔值，默认值：true)
 
    是否在激活页面时创建版本。
 
    创建版本，除非将复制代理配置为禁止创建版本（由版本管理器承担）
 
-   A version is only created if the activation happens on a paths that is contained in versionmanager.ivPaths (see below).
+   只有在版本管理器。ivPaths中包含的路径上发生激活时，才会创建版本（请参阅下文）。
 
-* `versionmanager.ivPaths` (字符串[]，默认值： {&quot;/&quot;}
+* `versionmanager.ivPaths` (字符串[]，默认值：{&quot;/&quot;}
 
    如果versionmanager.createVersionOnActivation为true，则在激活上隐式创建版本的路径。
 
-* `versionmanager.purgingEnabled` (Boolean, default: false)
+* `versionmanager.purgingEnabled` (布尔值，默认值：false)
 
    是否在创建新版本时启用清除
 
-* `versionmanager.purgePaths` (String[], default: {&quot;/content&quot;})
+* `versionmanager.purgePaths` (字符串[]，默认值：{&quot;/content&quot;})
 
    创建新版本时要清除版本的路径。
 
-* `versionmanager.maxAgeDays` (int，默认值： 30)
+* `versionmanager.maxAgeDays` (int，默认值：30)
 
    清除时，将删除任何早于此值的版本。 如果此值小于1，则不根据版本的年龄执行清除
 
@@ -102,9 +102,9 @@ AEM附带各种机制，可帮助您管理存储库：
 >
 >建议不要在存储库中保留大量版本。 因此，在配置版本清除操作时，请注意不要从清除中排除太多版本，否则存储库大小将无法正确优化。 如果您因业务需要而保留大量版本，请与Adobe支持联系，以找到优化存储库大小的替代方法。
 
-### 组合保留选项 {#combining-retention-options}
+### 组合保留选项{#combining-retention-options}
 
-定义如何保留哪些版本( `maxAgeDays`、 `maxNumberVersions`、 `minNumberVersions`)的选项可根据您的要求组合。
+定义如何保留哪些版本(`maxAgeDays`、`maxNumberVersions`、`minNumberVersions`)的选项可根据您的要求进行组合。
 
 例如，在定义要保留的最大版本数时，以及要保留的最旧版本时：
 
@@ -138,6 +138,6 @@ AEM附带各种机制，可帮助您管理存储库：
 
    * 保留3个版本
 
-## 清除版本工具 {#purge-versions-tool}
+## 清除版本工具{#purge-versions-tool}
 
-清除 [版本](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) 工具用于清除存储库中节点或节点层次结构的版本。 其主要目的是通过删除旧版本的节点来帮助您减小存储库的大小。
+[清除版本](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)工具用于清除存储库中节点或节点层次结构的版本。 其主要目的是通过删除旧版本的节点来帮助您减小存储库的大小。

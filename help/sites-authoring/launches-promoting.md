@@ -33,7 +33,7 @@ ht-degree: 90%
 
 >[!CAUTION]
 >
->不能并行提升单个启动项。This means that two promote actions on the same launch at the same time can result in an error - `Launch could not be promoted` (together with conflict errors in the log).
+>不能并行提升单个启动项。这意味着，在同一次启动中同时执行两个提升操作可能会导致错误- `Launch could not be promoted`（以及日志中的冲突错误）。
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ ht-degree: 90%
 
    * **站点**&#x200B;控制台：
 
-      1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#references) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). 此时将显示所有引用。
+      1. 打开[引用边栏](/help/sites-authoring/author-environment-tools.md#references)，然后使用[选择模式](/help/sites-authoring/basic-handling.md)选择所需的源页面（或选择并打开引用边栏，顺序不重要）。 此时将显示所有引用。
 
       1. 选择&#x200B;**启动项**（例如“启动项 (1)”）以显示特定启动项的列表。
       1. 选择特定的启动项以显示可用的操作。
@@ -91,7 +91,7 @@ ht-degree: 90%
 
 1. 选择&#x200B;**提升**。
 
-## 编辑时提升启动页面 {#promoting-launch-pages-when-editing}
+## 编辑时提升启动页面  {#promoting-launch-pages-when-editing}
 
 在编辑启动页面时，也可以从&#x200B;**页面信息**&#x200B;中执行&#x200B;**提升启动项**&#x200B;操作。这将打开相应向导来收集所需的信息。
 
@@ -101,7 +101,7 @@ ht-degree: 90%
 >
 >此操作适用于单个启动项和[嵌套启动项](#promoting-a-nested-launch)。
 
-## 提升嵌套启动项 {#promoting-a-nested-launch}
+## 提升嵌套启动项  {#promoting-a-nested-launch}
 
 创建嵌套启动项后，您可以将其提升回任意源，包括根目录源（生产）。
 

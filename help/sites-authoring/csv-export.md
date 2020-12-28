@@ -56,14 +56,14 @@ ht-degree: 78%
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-The create **CSV Export** option is available when browsing the **Sites** console (in List view): it is an option of the **Create** drop down menu:
+在浏览&#x200B;**站点**&#x200B;控制台时，可以使用创建&#x200B;**CSV导出**&#x200B;选项(在列表视图下):它是&#x200B;**创建**&#x200B;下拉菜单的选项：
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 要创建 CSV 导出，请执行以下操作：
 
 1. 必要时，打开&#x200B;**站点**&#x200B;控制台并导航到所需的位置。
-1. From the toolbar, select **Create** then **CSV Export** to open the wizard:
+1. 在工具栏中，选择&#x200B;**创建**，然后选择&#x200B;**CSV导出**&#x200B;以打开向导：
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 

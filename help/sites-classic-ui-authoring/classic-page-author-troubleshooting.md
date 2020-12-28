@@ -71,7 +71,7 @@ ht-degree: 95%
 
 * **问题：**
 
-   * When using the **Find &amp; Replace** option it can happen that not all instances of the `find` term are replaced on a page.
+   * 使用&#x200B;**查找并替换**&#x200B;选项时，并非替换页面上的`find`术语的所有实例。
 
 * **原因**：
 

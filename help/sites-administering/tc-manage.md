@@ -22,7 +22,7 @@ ht-degree: 1%
 
 准备翻译内容后，您需要通过创建缺失的语言副本来完成语言结构，并创建翻译项目。
 
-翻译项目使您能够管理AEM内容的翻译。 翻译项目是AEM项目的一 [种类](/help/sites-authoring/projects.md) ，它包含要翻译成其他语言的资源。 这些资源是使用语言主控 [创建](/help/sites-administering/tc-prep.md) 的语言副本的页面和资产。
+翻译项目使您能够管理AEM内容的翻译。 翻译项目是AEM [project](/help/sites-authoring/projects.md)的类型，它包含要翻译为其他语言的资源。 这些资源是使用语言主控创建的[语言副本](/help/sites-administering/tc-prep.md)的页面和资产。
 
 将资源添加到翻译项目时，会为其创建一个翻译作业。 作业提供命令和状态信息，用于管理在资源上执行的人工翻译和机器翻译工作流。
 
@@ -42,12 +42,12 @@ ht-degree: 1%
 >
 >选项3与翻译作业／项目无关。 它允许您将语言主控的内容和结构更改复制到（未翻译）语言副本。 您可以使用它保持语言主语同步，即使不进行翻译。
 
-## 执行初始翻译并更新现有翻译 {#performing-initial-translations-and-updating-existing-translations}
+## 执行初始翻译并更新现有翻译{#performing-initial-translations-and-updating-existing-translations}
 
 AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻译的语言副本。 为页面创建翻译项目并指明要翻译的语言副本时，AEM会检测目标语言副本中是否已存在源页面：
 
-* **语言副本不包含页面：** AEM将此情况视为初始翻译。 页面会立即复制到语言副本中并包含在项目中。 将翻译的页面导入AEM后，AEM会直接将其复制到语言副本。
-* **语言副本已包含页面：** AEM将此情况视为更新的翻译。 此时会创建启动项，并将页面副本添加到启动项中，并包含在项目中。 启动项允许您在将更新的翻译提交到语言副本之前查看其：
+* **语言副本不包含页面：AEM将** 此情况视为初始翻译。页面会立即复制到语言副本中并包含在项目中。 将翻译的页面导入AEM后，AEM会直接将其复制到语言副本。
+* **语言副本已包含页面：AEM** 将此情况视为更新的翻译。此时会创建启动项，并将页面副本添加到启动项中，并包含在项目中。 启动项允许您在将更新的翻译提交到语言副本之前查看其：
 
    * 将已翻译的页面导入AEM后，将在启动项中覆盖该页面。
    * 仅当提升启动项时，译文页面才会覆盖语言副本。
@@ -57,7 +57,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 * 将为/content/geometrixx/cn/products页面和所有子页面创建翻译项目，目标是法语语言副本。 由于语言副本不包括/content/geometrixx/fr/products页面，AEM会立即将/content/geometrixx/cn/products页面和所有子页面复制到法语语言副本。 这些副本也包含在翻译项目中。
 * 将为/content/geometrixx/en页面和所有子页面创建翻译项目，目标为法语语言副本。 由于语言副本包括与/content/geometrixx/en页（语言根）对应的页面，AEM将复制/content/geometrixx/en页面和所有子页面，并将其添加到启动项。 这些副本也包含在翻译项目中。
 
-## 使用“引用”面板创建翻译项目 {#creating-translation-projects-using-the-references-panel}
+## 使用“引用”面板{#creating-translation-projects-using-the-references-panel}创建翻译项目
 
 创建翻译项目，以便执行和管理用于翻译您语言资源的工作流主控。 在创建项目时，您以要翻译的语言主控以及要执行翻译的语言副本指定页面：
 
@@ -67,7 +67,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 您可以指定选定页面的子页面也被选定。 在这种情况下，子页面的副本也会添加到每个项目中，以便进行翻译。 当任何子页面与不同的翻译集成框架配置关联时，AEM会创建其他项目。
 
-您还可以手 [动创建翻译项目](#creating-a-translation-project-using-the-projects-console)。
+您还可以[手动创建翻译项目](#creating-a-translation-project-using-the-projects-console)。
 
 **初始翻译和更新翻译**
 
@@ -75,11 +75,11 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-翻译后，您可以先审 [阅翻译](#reviewing-and-promoting-updated-content) ，然后再用它覆盖语言副本。 当所选页面不存在语言副本时，将显示“创建并翻译”选项卡，提供对项目相关命令的访问。
+翻译后，您可以在覆盖语言副本之前，[查看翻译](#reviewing-and-promoting-updated-content)。 当所选页面不存在语言副本时，将显示“创建并翻译”选项卡，提供对项目相关命令的访问。
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
-### 为新语言副本创建翻译项目 {#create-translation-projects-for-a-new-language-copy}
+### 为新语言副本{#create-translation-projects-for-a-new-language-copy}创建翻译项目
 
 1. 使用站点控制台选择要添加到翻译项目的页面。
 
@@ -92,7 +92,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 1. 选择“语言副本”，然后选择要翻译源页面的语言副本。
 1. 单击或点按创建和翻译，然后配置翻译作业：
 
-   * 使用语言下拉列表选择要翻译的语言副本。 根据需要选择其他语言。 列表中显示的语言与您创 [建的语言根对应](/help/sites-administering/tc-prep.md#creating-a-language-root)。
+   * 使用语言下拉列表选择要翻译的语言副本。 根据需要选择其他语言。 列表中显示的语言与您创建的[语言根](/help/sites-administering/tc-prep.md#creating-a-language-root)对应。
    * 要翻译您选择的页面和所有子页面，请选择选择所有子页面。 要仅翻译您选择的选定页面，请清除该选项。
    * 对于“项目”，选择“创建新翻译项目”。
    * 键入项目的名称。
@@ -101,7 +101,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 单击或点按创建。
 
-### 为现有语言副本创建翻译项目 {#create-translation-projects-for-an-existing-language-copy}
+### 为现有语言副本{#create-translation-projects-for-an-existing-language-copy}创建翻译项目
 
 1. 使用站点控制台选择要添加到翻译项目的页面。
 
@@ -122,13 +122,13 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 单击或点按开始。
 
-## 将页面添加到翻译项目 {#adding-pages-to-a-translation-project}
+## 将页面添加到翻译项目{#adding-pages-to-a-translation-project}
 
 创建翻译项目后，可以使用“资源”窗格向项目添加页面。 添加页面对于将来自同一项目中不同分支的页面包含在内非常有用。
 
-将页面添加到翻译项目时，这些页面将包含在新的翻译作业中。 您还可以 [将页面添加到现有作业](#adding-pages-assets-to-a-translation-job)。
+将页面添加到翻译项目时，这些页面将包含在新的翻译作业中。 您还可以[向现有作业](#adding-pages-assets-to-a-translation-job)添加页面。
 
-与创建新项目时一样，在添加页面时，页面的副本会在必要时添加到启动项，以避免覆盖现有语言副本。 (请参 [阅为现有语言副本创建翻译项目](#performing-initial-translations-and-updating-existing-translations)。)
+与创建新项目时一样，在添加页面时，页面的副本会在必要时添加到启动项，以避免覆盖现有语言副本。 （请参阅[为现有语言副本创建翻译项目](#performing-initial-translations-and-updating-existing-translations)。）
 
 1. 使用站点控制台选择要添加到翻译项目的页面。
 
@@ -156,7 +156,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 单击或点按开始。
 
-## 将页面／资产添加到翻译作业 {#adding-pages-assets-to-a-translation-job}
+## 将页面／资产添加到转换作业{#adding-pages-assets-to-a-translation-job}
 
 您可以向翻译项目的翻译作业中添加页面、资产、标记或i18n词典。 要添加页面或资产，请执行以下操作：
 
@@ -166,7 +166,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 单击或点按添加和页面／资产。
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
 1. 选择要添加的分支的最上方的项目，然后单击或点按复选标记图标。 您可以进行多选。
 
@@ -178,7 +178,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 您的页面和／或资产会添加到您的翻译作业。
 
-## 将i18n词典添加到翻译作业 {#adding-i-n-dictionaries-to-a-translation-job}
+## 将i18n词典添加到翻译作业{#adding-i-n-dictionaries-to-a-translation-job}
 
 您可以向翻译项目的翻译作业中添加页面、资产、标记或i18n词典。 要添加i18n词典，请执行以下操作：
 
@@ -200,9 +200,9 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 >[!NOTE]
 >
->有关i18n词典的更多信息，请阅 [读使用翻译器管理词典](/help/sites-developing/i18n-translator.md)。
+>有关i18n字典的详细信息，请阅读[使用转换器管理字典](/help/sites-developing/i18n-translator.md)。
 
-## 向翻译作业添加标记 {#adding-tags-to-a-translation-job}
+## 将标记添加到翻译作业{#adding-tags-to-a-translation-job}
 
 您可以向翻译项目的翻译作业中添加页面、资产、标记或i18n词典。 添加标记：
 
@@ -222,22 +222,22 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 ![chlimage_1-257](assets/chlimage_1-257.png)
 
-## 查看翻译项目详细信息 {#seeing-translation-project-details}
+## 查看翻译项目详细信息{#seeing-translation-project-details}
 
-翻译摘要拼贴包含为翻译项目配置的属性。 除了通用项目信 [息外](/help/sites-authoring/projects.md#project-info),“翻译”选项卡还包含翻译特定属性：
+翻译摘要拼贴包含为翻译项目配置的属性。 除了通用[项目信息](/help/sites-authoring/projects.md#project-info)之外，“转换”选项卡还包含转换特定属性：
 
-* 源语言： 正在翻译的页面的语言。
-* 目标语： 翻译页面时所用的语言。
-* 翻译方法： 翻译工作流。 支持人文翻译或机器翻译。
-* 翻译提供商： 执行翻译的翻译服务提供商。
-* 内容类别: （机器翻译）用于翻译的内容类别。
-* 云配置： 用于项目的转换服务连接器的云配置。
+* 源语言：正在翻译的页面的语言。
+* 目标语：翻译页面时所用的语言。
+* 翻译方法：翻译工作流。 支持人文翻译或机器翻译。
+* 翻译提供商：执行翻译的翻译服务提供商。
+* 内容类别:（机器翻译）用于翻译的内容类别。
+* 云配置：用于项目的转换服务连接器的云配置。
 
 当使用页面的“资源”窗格创建项目时，将根据源页面的属性自动配置这些属性。
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 
-## 监视翻译作业的状态 {#monitoring-the-status-of-a-translation-job}
+## 监视翻译作业的状态{#monitoring-the-status-of-a-translation-job}
 
 翻译项目的翻译作业拼贴提供了翻译作业的状态以及作业中的页面和资产数量。
 
@@ -262,12 +262,12 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 要查看作业中每个文件的状态，请单击或点按拼贴底部的省略号。
 
-## 设置翻译作业的到期日期 {#setting-the-due-date-of-translation-jobs}
+## 设置转换作业的到期日期{#setting-the-due-date-of-translation-jobs}
 
 指定翻译供应商需要返回翻译文件的日期。 您可以为项目或特定作业设置截止日期：
 
-* **项目：** 项目中的转换作业将继承到期日期。
-* **工作：** 为作业设置的到期日将覆盖为项目设置的到期日。
+* **项目：** 项目中的转换作业继承到期日期。
+* **作业：** 您为作业设置的到期日将覆盖为项目设置的到期日。
 
 仅当您所使用的翻译供应商支持此功能时，才能正确设置到期日期。
 
@@ -293,7 +293,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
    ![chlimage_1-263](assets/chlimage_1-263.png)
 
-## 对翻译作业进行范围界定 {#scoping-a-translation-job}
+## 范围转换作业{#scoping-a-translation-job}
 
 对翻译作业进行范围设置，以从您的翻译服务提供商获得翻译成本的估计。 当您对作业进行范围设置时，源文件将提交给翻译供应商，该供应商将文本与其存储的翻译池（翻译记忆库）进行比较。 通常，范围是需要翻译的词数。
 
@@ -303,7 +303,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 >
 >范围确定是可选的。 您可以开始翻译作业，而不进行范围界定。
 
-当您对翻译作业进行范围设置时，该作业的状态为 `Scope Requested`。 当转换供应商返回范围时，状态将更改为 `Scope Completed`。 完成作用域设置后，可以使用“显示作用域”命令查看作用域设置结果。
+当您对转换作业进行作用域时，该作业的状态为`Scope Requested`。 当转换供应商返回范围时，状态将更改为`Scope Completed`。 完成作业范围时，可以使用“显示范围”命令查看作业范围结果。
 
 仅当您使用的翻译供应商支持此功能时，范围确定才能正确工作。
 
@@ -314,7 +314,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 当作业状态更改为SCOPE_COMPLETED时，在转换作业拼贴上单击或点按命令菜单，然后单击或点按显示范围。
 
-## 启动翻译作业 {#starting-a-translation-job}
+## 启动转换作业{#starting-a-translation-job}
 
 开始将源页面翻译为目标语的翻译作业。 将根据“翻译摘要”拼贴的属性值执行翻译。
 
@@ -329,15 +329,15 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 在确认翻译开始的操作对话框中，单击或点按关闭。
 
-## 取消翻译作业 {#canceling-a-translation-job}
+## 取消转换作业{#canceling-a-translation-job}
 
-取消翻译作业以停止翻译过程并阻止翻译供应商执行任何其他翻译。 当作业具有或状态时，可以取 `Committed For Translation` 消作 `Translation In Progress` 业。
+取消翻译作业以停止翻译过程并阻止翻译供应商执行任何其他翻译。 当作业的状态为`Committed For Translation`或`Translation In Progress`时，可以取消作业。
 
 1. 在“项目”控制台中，打开翻译项目。
 1. 在转换作业拼贴中，单击或点按命令菜单，然后单击或点按取消。
 1. 在确认取消翻译的操作对话框中，单击或点按确定。
 
-## 接受／拒绝工作流 {#accept-reject-workflow}
+## 接受／拒绝工作流{#accept-reject-workflow}
 
 当内容在翻译后返回且处于“准备审阅”状态时，您可以进入翻译作业并接受／拒绝内容。
 
@@ -349,7 +349,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 拒绝内容会将其发送回翻译供应商，他将能够在该供应商处看到评论。
 
-## 审核和提升更新的内容 {#reviewing-and-promoting-updated-content}
+## 查看和提升更新的内容{#reviewing-and-promoting-updated-content}
 
 为现有语言副本翻译内容时，请查看翻译，根据需要进行更改，然后提升翻译以将其移至语言副本。 当翻译作业显示“准备审阅”状态时，您可以审阅已翻译的文件。
 
@@ -368,13 +368,13 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 1. 查看内容并进行必要更改后，要提升启动项副本，请单击提升。
 1. 在提升启动项页面上，指定要提升的页面，然后单击或点按提升。
 
-## 比较语言副本 {#comparing-language-copies}
+## 比较语言副本{#comparing-language-copies}
 
 要将语言副本与语言主控比较，请执行以下操作：
 
-1. 在“站 **点** ”控制台中，导航到要进行比较的语言副本。
-1. 打开“ **[引用](/help/sites-authoring/basic-handling.md#references)**”面板。
-1. 在“副本 **”标题** 下，选择 **“语言副本”。**
+1. 在&#x200B;**站点**&#x200B;控制台中，导航到要比较的语言副本。
+1. 打开&#x200B;**[引用](/help/sites-authoring/basic-handling.md#references)**&#x200B;面板。
+1. 在&#x200B;**副本**&#x200B;标题下，选择&#x200B;**语言副本。**
 1. 选择您的特定语言副本，然后单击**与主控的**比较，或**与先前的**比较（如果适用）。
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
@@ -383,7 +383,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
    有关使用此功能的完整信息，请参阅[页面差异](/help/sites-authoring/page-diff.md)。
 
-## 完成和存档翻译作业 {#completing-and-archiving-translation-jobs}
+## 正在完成和存档转换作业{#completing-and-archiving-translation-jobs}
 
 在您查看了供应商提供的已翻译文件后完成翻译作业。 对于人文翻译工作流，完成翻译会向供应商表明翻译合同已履行，并且他们应将翻译保存到其翻译记忆库。
 
@@ -393,9 +393,9 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 在翻译作业完成后存档该作业，您不再需要查看作业状态详细信息。 存档作业时，将从项目中删除翻译作业拼贴。
 
-## 创建语言副本的结构 {#creating-the-structure-of-a-language-copy}
+## 创建语言副本的结构{#creating-the-structure-of-a-language-copy}
 
-填充您的语言副本，使其包含您正在翻译的主控语言的内容。 在填充语言副本之前，必 [须已创建语言副本](/help/sites-administering/tc-prep.md#creating-a-language-root) 的语言根目录。
+填充您的语言副本，使其包含您正在翻译的主控语言的内容。 在填充语言副本之前，必须先创建语言副本的语言根[。](/help/sites-administering/tc-prep.md#creating-a-language-root)
 
 1. 使用“站点”控制台选择您用作源的主控语言的语言根。 例如，要翻译Geometrixx演示站点的英语页面，请选择“内容”>“Geometrixx演示站点”>“英语”。
 1. 在工具栏中，单击或点按引用。
@@ -415,15 +415,15 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 单击或点按开始。
 
-## 使用项目控制台创建翻译项目 {#creating-a-translation-project-using-the-projects-console}
+## 使用项目控制台{#creating-a-translation-project-using-the-projects-console}创建翻译项目
 
 如果您希望使用“项目”控制台，可以手动创建翻译项目。
 
-在手动创建翻译项目时，除了基本属性之外，还必须提供以下与翻译相关的属 [性的值](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
+在手动创建翻译项目时，除了[基本属性](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project)之外，还必须提供以下与翻译相关的属性的值：
 
 * **名称：** 项目名称。
 * **源语言：** 源内容的语言。
-* **目标语：** 翻译内容的语言。
+* **目标语** 言：内容翻译到的语言。
 * **翻译方法：** 选择“人工翻译”以指示要手动执行翻译。
 
 1. 在项目控制台的工具栏中，单击或点按创建。
@@ -432,7 +432,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 1. 单击或点按高级，并提供与翻译相关的属性的值。
 1. 单击或点按创建。在确认框中，单击或点按完成以返回到项目控制台，或单击或点按打开项目以打开和开始管理项目。
 
-## 导出翻译作业 {#exporting-a-translation-job}
+## 导出转换作业{#exporting-a-translation-job}
 
 您可以下载翻译作业的内容，例如，通过连接器发送到未与AEM集成的翻译提供商，或查看内容。
 
@@ -440,7 +440,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 1. 在“导出”对话框中，单击或点按“下载导出的文件”，如有必要，请使用Web浏览器对话框保存文件。
 1. 在“导出”对话框中，单击或点按关闭。
 
-## 导入翻译作业 {#importing-a-translation-job}
+## 导入转换作业{#importing-a-translation-job}
 
 您可以将已翻译的内容导入AEM，例如，当翻译提供商将翻译内容发送给您时，因为这些内容未通过连接器与AEM集成。
 

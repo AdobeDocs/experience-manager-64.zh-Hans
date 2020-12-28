@@ -54,7 +54,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-Click or tap **Got it!**&#x200B;可转到概述的下一个页面。Click or tap **Close** or click or tap outside of the overview dialogue to close.
+单击或点按&#x200B;**，收到！**&#x200B;可转到概述的下一个页面。单击或点按&#x200B;**关闭**，或者单击或点按概述对话框外部以关闭。
 
 该概述将在您下次访问控制台时重新启动，除非您选中&#x200B;**不再显示此对话框**&#x200B;选项。
 
@@ -91,7 +91,7 @@ Click or tap **Got it!**&#x200B;可转到概述的下一个页面。Click or tap
   </tr>
   <tr>
    <td>资产<br /> </td> 
-   <td>通过这些控制台，您可以导入和<a href="/help/assets/assets.md">管理数字资产</a>，如图像、视频、文档和音频文件。随后，这些资产便可由同一 AEM 实例上运行的任何网站使用。 </td> 
+   <td>通过这些控制台，您可以导入和<a href="/help/assets/assets.md">管理数字资产</a>，如图像、视频、文档和音频文件。随后，这些资产便可以由在同一 AEM 实例中运行的任何网站使用。 </td> 
   </tr>
   <tr>
    <td>社区</td> 
@@ -107,7 +107,7 @@ Click or tap **Got it!**&#x200B;可转到概述的下一个页面。Click or tap
   </tr>
   <tr>
    <td>表单</td> 
-   <td>This console allows you to create, manage, and process your <a href="/help/forms/using/introduction-aem-forms.md">forms and documents</a>&gt;.</td> 
+   <td>此控制台允许您创建、管理和处理<a href="/help/forms/using/introduction-aem-forms.md">表单和文档</a>。</td> 
   </tr>
   <tr>
    <td>个性化</td> 
@@ -190,7 +190,7 @@ Click or tap **Got it!**&#x200B;可转到概述的下一个页面。Click or tap
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   仅在列表视图中可用。See [list view](#list-view) for more information.
+   仅在列表视图中可用。有关详细信息，请参阅[列表视图](#list-view)。
 
 * **创建**&#x200B;按钮
 
@@ -228,7 +228,7 @@ Click or tap **Got it!**&#x200B;可转到概述的下一个页面。Click or tap
 
    与在首次访问任何控制台时浏览[产品导航概述](/help/sites-authoring/basic-handling.md#product-navigation)一样，浏览此概述。
 
-   在[**页面信息&#x200B;**菜单中，可以随时通过选择**&#x200B;帮助&#x200B;**](/help/sites-authoring/author-environment-tools.md#accessing-help)来再次显示这些幻灯片。
+   在&#x200B;[**页面信息**&#x200B;菜单中，可以随时通过选择&#x200B;**帮助**](/help/sites-authoring/author-environment-tools.md#accessing-help)&#x200B;来再次显示这些幻灯片。
 
 * **“工具”控制台**
 
@@ -269,7 +269,7 @@ Click or tap **Got it!**&#x200B;可转到概述的下一个页面。Click or tap
 >
 >各个可用图标根据相应控制台/功能/方案提供。
 
-## 快速操作 {#quick-actions}
+## 快速操作  {#quick-actions}
 
 在[卡片视图](#quick-actions)中，某些操作以快速操作图标的形式呈现，同时也在工具栏中提供。快速操作图标一次只能用于一个项目，因此无需预先选择。
 
@@ -292,7 +292,7 @@ Click or tap **Got it!**&#x200B;可转到概述的下一个页面。Click or tap
 >
 >默认情况下，AEM Assets 不会在 UI 中将资产的原始呈现版本显示为任何视图中的缩略图。如果您是管理员，可以使用叠加来配置 AEM Assets，以将原始呈现版本显示为缩略图。
 
-### 选择资源 {#selecting-resources}
+### 选择资源  {#selecting-resources}
 
 选择特定的资源取决于视图和设备的组合：
 
@@ -320,13 +320,13 @@ Click or tap **Got it!**&#x200B;可转到概述的下一个页面。Click or tap
    <td>卡片视图<br /> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li> 
+     <li>桌面：<br />鼠标悬停，然后使用复选标记快速操作</li> 
      <li>移动设备：<br />按住卡片不动</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Click the card</li> 
-     <li>Mobile device:<br /> Tap the card</li> 
+     <li>桌面：<br />单击卡</li> 
+     <li>移动设备：<br />点击卡</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -363,7 +363,7 @@ Click or tap **Got it!**&#x200B;可转到概述的下一个页面。Click or tap
 
 1. 在选择了某个资源后，顶部标题被[操作工具栏](#actions-toolbar)覆盖，通过该工具栏可访问当前适用于选定资源的操作。
 
-   To exit selection mode select the **X** to the top-right.
+   要退出选择模式，请选择右上方的&#x200B;**X**。
 
 ### 列视图 {#column-view}
 

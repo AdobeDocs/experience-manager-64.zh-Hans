@@ -17,9 +17,9 @@ ht-degree: 7%
 ---
 
 
-# Forms6.4中的存储库重组{#forms-repository-restructuring-in-aem}
+# Forms6.4{#forms-repository-restructuring-in-aem}中的存储库重组
 
-如AEM 6.4中的父 [存储库重组页所述](/help/sites-deploying/repository-restructuring.md) ，升级到AEM 6.4的客户应使用此页来评估与影响AEM Forms解决方案的存储库更改相关的工作。 某些更改需要在AEM 6.4升级过程中进行工作，而其他更改则可推迟到6.5升级。
+如AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的父[存储库重组页所述，升级到AEM 6.4的客户应使用此页评估与影响AEM Forms解决方案的存储库更改相关的工作。 某些更改需要在AEM 6.4升级过程中进行工作，而其他更改则可推迟到6.5升级。
 
 **升级6.4**
 
@@ -34,7 +34,7 @@ ht-degree: 7%
 
 ## 升级6.4 {#with-upgrade}
 
-### 杂项 {#misc}
+### Misc {#misc}
 
 | **上一个位置** | `/etc/clientlibs/fd/fp` |
 |---|---|
@@ -90,43 +90,43 @@ ht-degree: 7%
 | **重组指导** | 从不建议或支持更改这些clientlib。 如果对这些clientlibs进行了修改，则应回滚这些修改以使用AEM提供的代码。 |
 | **注释** | 不适用 |
 
-## 6.5升级之前 {#prior-to-upgrade}
+## 6.5之前的升级{#prior-to-upgrade}
 
-### EchosignCloud Service配置 {#echosign-cloud-service-configuration}
+### EchosignCloud Service配置{#echosign-cloud-service-configuration}
 
 | **上一个位置** | `/etc/cloudservices/echosign` |
 |---|---|
 | **新位置** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **重组指导** | 要从 [Forms迁移](/help/sites-deploying/lazy-content-migration.md) UI触发的延迟内容迁移实用程序。 |
+| **重组指导** | 要从Forms迁移UI触发的[延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)实用程序。 |
 | **注释** | 不适用 |
 
-### RecaptchaCloud Service配置 {#recaptcha-cloud-service-configurations}
+### RecaptchaCloud Service配置{#recaptcha-cloud-service-configurations}
 
 | **上一个位置** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **新位置** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **重组指导** | 要从 [Forms迁移](/help/sites-deploying/lazy-content-migration.md) UI触发的延迟内容迁移实用程序。 |
+| **重组指导** | 要从Forms迁移UI触发的[延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)实用程序。 |
 | **注释** | 不适用 |
 
-### TypekitCloud Service配置 {#typekit-cloud-service-configurations}
+### TypekitCloud Service配置{#typekit-cloud-service-configurations}
 
 | **上一个位置** | `/etc/cloudservices/typekit` |
 |---|---|
 | **新位置** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **重组指导** | 要从 [Forms迁移](/help/sites-deploying/lazy-content-migration.md) UI触发的延迟内容迁移实用程序。 |
+| **重组指导** | 要从Forms迁移UI触发的[延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)实用程序。 |
 | **注释** | 不适用 |
 
-### 杂项 {#misc-1}
+### Misc {#misc-1}
 
 | **上一个位置** | `/etc/cloudservices/fdm` |
 |---|---|
 | **新位置** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **重组指导** | 要从 [Forms迁移](/help/sites-deploying/lazy-content-migration.md) UI触发的延迟内容迁移实用程序。 |
+| **重组指导** | 要从Forms迁移UI触发的[延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)实用程序。 |
 | **注释** | 不适用 |
 
 | **上一个位置** | `/etc/designs/fd/fp` |
 |---|---|
 | **新位置** | `/libs/fd/fp` |
-| **重组指导** | 对/etc模板的任何引用最终应更新为指向其对应 `/libs` 模板。 |
+| **重组指导** | 对/etc模板的任何引用最终应更新为指向其`/libs`对应项。 |
 | **注释** | 不适用 |
 

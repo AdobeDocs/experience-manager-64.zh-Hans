@@ -32,23 +32,23 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->由于电子商务框架可以与任何电子商务解决方案一起使用，请参 [阅开发（通用）](/help/sites-developing/generic.md) ，以了解有关使用Intershop、Elastic Path或IBM Websphere Commerce开发可能性的更多信息。
+>由于电子商务框架可以与任何电子商务解决方案一起使用，请参阅[开发（一般）](/help/sites-developing/generic.md)以了解有关使用Intershop、Elastic Path或IBM Websphere Commerce开发可能性的更多信息。
 
 >[!NOTE]
 >
->要将集成框架与外部电子商务提供商一起使用，您首先需要安装所需的包。 有关详细信息，请参 [阅部署电子商务](/help/sites-deploying/ecommerce.md)。
+>要将集成框架与外部电子商务提供商一起使用，您首先需要安装所需的包。 有关详细信息，请参阅[部署eCommerce](/help/sites-deploying/ecommerce.md)。
 >
->有关概念和管理电子商务实施的信息，请参 [阅管理电子商务](/help/sites-administering/ecommerce.md)。
+>有关概念和管理电子商务实施的信息，请参阅[管理电子商务](/help/sites-administering/ecommerce.md)。
 
-## API文档 {#api-documentation}
+## API文档{#api-documentation}
 
 电子商务API由以下包提供：
 
 `com.adobe.cq.commerce.*`
 
-有关更 [多信息](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) ，请参阅API文档。
+有关详细信息，请参阅[API文档](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html)。
 
 >[!NOTE]
 >
->有关详细说明构建电子商务提供商的所有步骤的完整文章， [请参阅创建自定义Adobe Experience Manager6.2电子商务提供商](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)。
+>有关详细介绍构建电子商务提供商的所有步骤的完整文章，请参阅[创建自定义Adobe Experience Manager6.2电子商务提供商](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)。
 

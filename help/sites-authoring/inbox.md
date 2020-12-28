@@ -64,7 +64,7 @@ ht-degree: 95%
 >
 >某些操作也将显示在[相应资源的卡片视图](/help/sites-authoring/basic-handling.md#card-view)中。
 
-## 现成的管理任务  {#out-of-the-box-administrative-tasks}
+## 现成的管理任务   {#out-of-the-box-administrative-tasks}
 
 AEM 预先加载了四项分配给管理员用户组的现成任务。
 
@@ -144,7 +144,7 @@ AEM 预先加载了四项分配给管理员用户组的现成任务。
 
    这些操作适用于该项目，具体包括：
 
-   * **完成**&#x200B;操作; 例如，任务或工作流项。
+   * **完成**&#x200B;操作;例如，任务或工作流项。
    * **重新分配**/**委派**&#x200B;项目。
    * **打开**&#x200B;项目；根据项目类型，此操作可以：
 
@@ -201,13 +201,13 @@ AEM 预先加载了四项分配给管理员用户组的现成任务。
 
    * **高级**
 
-      * **名称**: this will be used to form the URL; if blank it will be based on the **Title**.
+      * **名称**:这将用于形成URL;如果为空，则它将基于&#x200B;**标题**。
 
    ![wf-87](assets/wf-87.png)
 
 1. 选择&#x200B;**提交**。
 
-## 创建项目 {#creating-a-project}
+## 创建项目  {#creating-a-project}
 
 对于某些任务，您可以创建一个基于该任务的[项目](/help/sites-authoring/projects.md)：
 

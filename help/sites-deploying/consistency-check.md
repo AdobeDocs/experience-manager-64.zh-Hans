@@ -31,15 +31,15 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 ...
 ```
 
-## 执行一致性检查 {#perform-a-consistency-check}
+## 执行一致性检查{#perform-a-consistency-check}
 
 要执行一致性检查，请导览至JMX Mbean**com.adobe.granite（存储库）**的管理页。 从AEM主屏幕，转到：
 
 **“工具”>“Web控制台”>“主”（在菜单栏上）>“JMX”>“com.adobe.granite（存储库）”**
 
-在默认安装中，它位于以下位置：  **[|显示我|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
+在默认安装中，它位于以下位置： **[|显示Me|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
-在页面 **的** “操作”部分，您将找到两种方法： **`traversalCheck`** 和 **`consistencyCheck`**。 要执行检查，请单击操作并输入所需的参数。
+在页面的&#x200B;**操作**&#x200B;部分，您将找到两种方法：**`traversalCheck`**&#x200B;和&#x200B;**`consistencyCheck`**。 要执行检查，请单击操作并输入所需的参数。
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 

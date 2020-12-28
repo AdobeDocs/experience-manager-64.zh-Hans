@@ -15,10 +15,10 @@ ht-degree: 85%
 ---
 
 
-# AEM 6.4 Classic UI Authoring User Guide {#classic-ui}
+# AEM 6.4经典UI创作用户指南{#classic-ui}
 
 + [经典UI创作指南概述](home.md)
-+ 经典UI创作介绍 {#introduction}
++ 经典UI创作简介{#introduction}
    + [创作的首要步骤](classic-page-author-first-steps.md)
    + [在经典 UI 中进行创作](classicui.md)
    + [使用创作环境](author-env.md)
@@ -78,7 +78,7 @@ ht-degree: 85%
    + [使用 Adobe Campaign](classic-personalization-ac.md)
    + [Adobe Campaign 组件](classic-personalization-ac-components.md)
    + [定位您的 Adobe Campaign](classic-personalization-ac-target.md)
-+ 在经典UI中创作资产 {#assets}
++ 在经典UI中创作资产{#assets}
    + [处理资产](classicui-assets.md)
    + [关于使用 IBL 舞台](classicui-stages-aem3d-ibl.md)
    + [渲染 3D 资产](classicui-rendering-3d.md)

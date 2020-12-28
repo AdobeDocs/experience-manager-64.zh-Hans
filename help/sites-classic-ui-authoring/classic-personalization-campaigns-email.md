@@ -23,7 +23,7 @@ ht-degree: 94%
 >[!NOTE]
 >
 >Adobe不打算进一步增强AEM SMTP服务发送的打开／弹回电子邮件。\
->建议是利 [用Adobe Campaign和AEM集成](/help/sites-administering/campaign.md)。
+>建议[利用Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md)。
 
 电子邮件营销（例如新闻稿）是所有市场营销的重要组成部分，因为您可以通过这种方式将内容推送到您的潜在客户。在 AEM 中，您可以根据现有 AEM 内容创建新闻稿，也可以添加特定于新闻稿的新内容。
 
@@ -46,7 +46,7 @@ ht-degree: 94%
 >
 >如果没有先将新闻稿发布到发布实例，或发布实例不可用，则以下操作将失败：更新电子邮件提供商、执行试运行，或发送新闻稿。请务必发布您的新闻稿，并确保发布实例已启动且正在运行。
 
-## 创建新闻稿体验 {#creating-a-newsletter-experience}
+## 创建新闻稿体验  {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>在发送新闻稿之前，请检查位于`http://localhost:4502/system/console/configMgr`的Day CQ Link Externalizer的OSGi配置。
 >
 >默认情况下，参数的值为 `localhost:4502`，并且如果运行实例的端口发生更改，将无法完成操作。
 
@@ -229,7 +229,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->Before sending newsletters, check the OSGi configuration for Day CQ Link Externalizer at `http://localhost:4502/system/console/configMgr`.
+>在发送新闻稿之前，请检查位于`http://localhost:4502/system/console/configMgr`的Day CQ Link Externalizer的OSGi配置。
 >
 >默认情况下，参数的值为 `localhost:4502`，并且如果运行实例的端口发生更改，将无法完成操作。
 
@@ -237,7 +237,7 @@ ht-degree: 94%
 >
 >如果没有先将新闻稿发布到发布实例，或发布实例不可用，则以下操作将失败：更新电子邮件提供商、执行试运行，或发送新闻稿。请务必发布您的新闻稿，并确保发布实例已启动且正在运行。
 
-### 从营销活动发送新闻稿 {#sending-newsletters-from-a-campaign}
+### 从营销活动发送新闻稿  {#sending-newsletters-from-a-campaign}
 
 要从营销活动中发出新闻稿，请执行以下操作：
 
@@ -263,7 +263,7 @@ ht-degree: 94%
    >
    >确保您是收件人之一，以此确保收到 Newsletter。
 
-### 从列表发送 Newsletter {#sending-newsletters-from-a-list}
+### 从列表发送 Newsletter  {#sending-newsletters-from-a-list}
 
 要从列表中发出新闻稿，请执行以下操作：
 
@@ -293,7 +293,7 @@ ht-degree: 94%
 
 此部分介绍如何订阅新闻稿。
 
-### 订阅新闻稿 {#subscribing-to-a-newsletter-1}
+### 订阅新闻稿  {#subscribing-to-a-newsletter-1}
 
 订阅 Newsletter（以 Geometrixx 网站为例）：
 

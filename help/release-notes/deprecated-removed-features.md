@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
 source-wordcount: '1281'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
@@ -32,12 +32,12 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 区域 | 功能 | 替换 |
 |---|---|---|
 | UI | Adobe 不打算进一步增强经典 UI。AEM 6.4 包含经典 UI，从早期发行版升级的客户可以继续按原样使用它。请注意，经典 UI 在弃用期间仍完全受支持。 <ul> <li>`/libs/cq/core/content/welcome.html` </li> <li> `/siteadmin` </li> <li> `/damadmin` </li> <li> `/mcmadmin` </li> <li> `/inbox` </li> <li> `/tagging` </li> <li> `/cf#` (页面编辑器) </li><li> `/libs/launches/content/admin.html` </li> <li> `/libs/cq/workflow/content/console.html` </li> </ul> | 建议客户切换使用新的AEM UI。 |
-| 组件 | Adobe不打算进一步增强下面列出的基础组件。 AEM 6.4包含基础组件，从早期版本升级的客户可以按原样继续使用它们。 请注意，已弃用的基础组件仍完全受支持。 <ul> <li> foundation/components/account/accountname </li> <li> foundation/components/account/actions </li> <li> foundation/components/account/passwordreset </li> <li> foundation/components/account/requestconfirmation </li> <li> foundation/components/adaptiveimage </li> <li> foundation/components/assetsharepage </li> <li> foundation/components/breadcrumb </li> <li> foundation/components/form/creditcard </li> <li> foundation/components/listchildren </li> <li> foundation/components/login </li> <li> foundation/components/logo </li> <li> foundation/components/mobilefooter </li> <li> foundation/components/mobileimage </li> <li> foundation/components/mobilelist </li> <li> foundation/components/mobilelogo </li> <li> foundation/components/mobilereference </li> <li> foundation/components/mobiletextimage </li> <li> foundation/components/mobiletopnav </li> <li> foundation/components/search </li> <li> foundation/components/sitemap </li> <li> foundation/components/table </li> <li> foundation/components/toolbar </li> <li> foundation/components/topnav </li> <li> foundation/components/userinfo </li> </ul> | 建议客户在未来的项目中使用核心组件。无需更改现有站点。 |
-| 组件 | Adobe不打算进一步增强下面列出的基础组件。 AEM 6.4包含基础组件，从早期版本升级的客户可以按原样继续使用它们。 请注意，已弃用的基础组件仍完全受支持。 <ul><li>基础／组件／时间</li></ul> | Adobe不打算提供替换。 |
+| 组件 | Adobe不打算进一步增强下面列出的基础组件。 AEM 6.4包含基础组件，从早期版本升级的客户可以按原样继续使用它们。 请注意，基础组件在弃用期间仍完全受支持。 <ul> <li> foundation/components/account/accountname </li> <li> foundation/components/account/actions </li> <li> foundation/components/account/passwordreset </li> <li> foundation/components/account/requestconfirmation </li> <li> foundation/components/adaptiveimage </li> <li> foundation/components/assetsharepage </li> <li> foundation/components/breadcrumb </li> <li> foundation/components/form/creditcard </li> <li> foundation/components/listchildren </li> <li> foundation/components/login </li> <li> foundation/components/logo </li> <li> foundation/components/mobilefooter </li> <li> foundation/components/mobileimage </li> <li> foundation/components/mobilelist </li> <li> foundation/components/mobilelogo </li> <li> foundation/components/mobilereference </li> <li> foundation/components/mobiletextimage </li> <li> foundation/components/mobiletopnav </li> <li> foundation/components/search </li> <li> foundation/components/sitemap </li> <li> foundation/components/table </li> <li> foundation/components/toolbar </li> <li> foundation/components/topnav </li> <li> foundation/components/userinfo </li> </ul> | 建议客户在未来的项目中使用核心组件。无需更改现有站点。 |
+| 组件 | Adobe不打算进一步增强下面列出的基础组件。 AEM 6.4包含基础组件，从早期版本升级的客户可以按原样继续使用它们。 请注意，基础组件在弃用期间仍完全受支持。 <ul><li>基础／组件／时间</li></ul> | Adobe不打算提供替换。 |
 | 门户Director | 门户Director是一组功能，它允许在第三方服务器中通过Portlet托管AEM内容。 Adobe不打算进一步增强下列位置下的门户网站Director功能。 AEM 6.4包含门户Director，从早期版本升级的客户可以按原样继续使用它。 请注意，在弃用Portal Direct时，仍完全受支持。 <ul><li>/libs/portal/director</li></ul> | Adobe不打算提供替换。 |
 | Portlet组件 | /foundation/components/portlet下的Portlet组件支持在AEM中作为组件托管JSR Portlet。 Adobe不打算进一步增强Portlet组件功能。 AEM 6.4包含Portlet组件，从早期版本升级的客户可以按原样继续使用它。 请注意，Portlet组件在弃用时仍完全受支持。 | Adobe不打算提供替换。 |
 | 表单 | 由于不再支持Adobe中心产品，因此已弃用对Adobe中心迁移桥服务的支持。 | 无替换项 |
-| 表单 | 已弃用在查询和OperationOptions中使用JSONObject。 已弃用以下API: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | 使用 `IValueMap` API |
+| 表单 | 已弃用在查询和OperationOptions中使用JSONObject。 已弃用以下API: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | 使用`IValueMap` API |
 | 表单 | 已弃用的中央迁移桥服务。 | 不提供任何替换。 |
 | 资产 | 从AEM 6.4开始，已弃用资产卸载。 |  |
 | 开发人员 | Lodash/下划线客户端库。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的Lodash/下划线客户端库 | Adobe建议仍需使用Lodash/下划线的客户将其代码添加到其项目代码库中。 |
@@ -147,11 +147,12 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 ## 已删除功能 {#removed-features}
 
-下表列出了已从AEM 6.4中删除的列表特性和功能。以前的版本将这些功能标记为已弃用。
+下表列出了已从AEM 6.4中删除的列表特性和功能。以前的版本将这些功能标为
+已弃用。
 
 | 区域 | 功能 | 替换 |
 |---|---|---|
-| Analytics Activity Map | AEM 中包含的 Activity Map 的版本。 | 由于 Adobe Analytics API 中的安全性更改，因此无法再使用 AEM 中包含的 Activity Map 版本。The [ActivityMap plug-in provided by Adobe Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used. |
+| Analytics Activity Map | AEM 中包含的 Activity Map 的版本。 | 由于 Adobe Analytics API 中的安全性更改，因此无法再使用 AEM 中包含的 Activity Map 版本。现在应使用Adobe Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap插件。 |
 | 元件-Forms | 表单Captcha(foundation/components/form/captcha) | 请改用Google组件的ReCaptcha |
 | 组件 | 幻灯片放映（基础／组件／幻灯片放映） | 无替换项 |
 | 组件 | Flash(foundation/components/flash) | 无替换项 |
@@ -178,4 +179,4 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 区域 | 功能 | 发布 |
 |---|---|---|
 | 浏览器支持 | Microsoft Internet Explorer | AEM 6.4是支持Microsoft Internet Explorer 11的最后一个版本。 |
-| Foundation | UI 框架 | Adobe在2019年弃用了Coral UI 2组件。 AEM 6.4完全基于Coral UI 3(随AEM 6.2一起推出)。 Adobe建议已使用Coral 2构建自定义UI的客户和合作伙伴将这些UI重构到Coral 3。 Adobe offers a tool to convert Coral 2 dialogs to Coral 3 - [Read more](/help/sites-developing/dialog-conversion.md). |
+| Foundation | UI 框架 | Adobe在2019年弃用了Coral UI 2组件。 AEM 6.4完全基于Coral UI 3(随AEM 6.2一起推出)。 Adobe建议已使用Coral 2构建自定义UI的客户和合作伙伴将这些UI重构到Coral 3。 Adobe优惠一个工具，将Coral 2对话框转换为Coral 3 - [阅读更多](/help/sites-developing/dialog-conversion.md)。 |

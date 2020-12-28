@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 81%
+ht-degree: 85%
 
 ---
 
@@ -35,11 +35,11 @@ Adobe Experience Manager (AEM) 附带多种现成的组件，这些组件为网�
 
 * [用于创作页面的组件](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Components used for creating standard page content are primarily contained in the groups **General**, **Columns** and **Forms**.
+   用于创建标准页面内容的组件主要包含在&#x200B;**General**、**Columns**&#x200B;和&#x200B;**Forms**&#x200B;组中。
 
 * [电子商务](/help/sites-administering/ecommerce.md)
 
-   The eCommerce functionality within AEM also includes a range of components, contained in the **Commerce** group. 实际用途取决于所使用的商务引擎。
+   AEM中的电子商务功能还包含一系列组件，它们包含在&#x200B;**Commerce**&#x200B;组中。 实际用途取决于所使用的商业引擎。
 
 ## 使用设计模式配置组件 {#using-design-mode-to-configure-components}
 

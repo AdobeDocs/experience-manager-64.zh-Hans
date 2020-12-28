@@ -15,21 +15,21 @@ ht-degree: 6%
 ---
 
 
-# 为AEM Foundation处理GDPR请求{#handling-gdpr-requests-for-the-aem-foundation}
+# 处理AEM Foundation的GDPR请求{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
->GDPR在以下各节中用作示例，但涵盖的详细信息适用于所有数据保护和隐私法规； 例如GDPR、CCPA等。
+>GDPR在以下各节中用作示例，但涵盖的详细信息适用于所有数据保护和隐私法规；例如GDPR、CCPA等。
 
-## AEM基础GDPR支持 {#aem-foundation-gdpr-support}
+## AEM Foundation GDPR支持{#aem-foundation-gdpr-support}
 
 在AEM基础级别，存储的个人数据是用户用户档案。 因此，本文中的信息主要介绍如何访问和删除用户用户档案，以分别解决GDPR访问和删除请求。
 
-## 访问用户用户档案 {#accessing-a-user-profile}
+## 访问用户用户档案{#accessing-a-user-profile}
 
-### 手动步骤 {#manual-steps}
+### 手动步骤{#manual-steps}
 
-1. 通过浏览至“设置”-“安全”-“ **[!UICONTROL 用户”，或直接浏览至]** “用户管理”控制台 `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. 通过浏览至&#x200B;**[!UICONTROL 设置——安全性——用户]**&#x200B;或直接浏览至`https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`，打开用户管理控制台
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -37,7 +37,7 @@ ht-degree: 6%
 
    ![用户搜索](assets/usersearch.png)
 
-1. 最后，通过单击打开用户用户档案，然后查看“详细信息”选 **[!UICONTROL 项卡]** 。
+1. 最后，单击打开用户用户档案，然后查看&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡下。
 
    ![userprofile_small](assets/userprofile_small.png)
 
@@ -72,9 +72,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## 禁用用户并删除关联的用户档案 {#disabling-a-user-and-deleting-the-associated-profiles}
+## 禁用用户并删除关联用户档案{#disabling-a-user-and-deleting-the-associated-profiles}
 
-### 禁用用户 {#disable-user}
+### 禁用用户{#disable-user}
 
 1. 打开“用户管理”控制台并搜索相关用户，如上所述。
 1. 将鼠标悬停在用户上并单击选择图标。 用户档案将变为灰色，表示已选择它。
@@ -91,19 +91,19 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![禁用用户](assets/disableduser.png)
 
-### 删除用户用户档案信息 {#delete-user-profile-information}
+### 删除用户用户档案信息{#delete-user-profile-information}
 
-1. 登录CRXDE Lite，然后搜索 `[!UICONTROL userId]`:
+1. 登录CRXDE Lite，然后搜索`[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. 打开默认位于以下位置的 `[!UICONTROL /home/users]` 用户节点：
+1. 默认打开位于`[!UICONTROL /home/users]`下的用户节点：
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
 1. 删除用户档案节点及其所有子节点。 用户档案节点有两种格式，具体取决于AEM版本：
 
-   1. 默认专用用户档案 `[!UICONTROL /profile]`
+   1. `[!UICONTROL /profile]`下的默认专用用户档案
    1. `[!UICONTROL /profiles]`, for new用户档案created using AEM 6.4.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)

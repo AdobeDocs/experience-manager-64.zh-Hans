@@ -43,13 +43,13 @@ ht-degree: 93%
 
 网站结构可以被视为包含内容页面的树结构。这些内容页面的名称用于组成 URL，而标题则会在查看页面内容时显示出来。
 
-The following shows an example from the We.Retail site, where a hiking shorts page ( `desert-sky-shorts`) is accessed:
+下面显示了We.Retail站点的一个示例，在该示例中，可访问远足短裤页面(`desert-sky-shorts`):
 
-* Author environment: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+* 作者环境:`http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * 发布环境: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Depending on the configuration of your instance, use of `/content` might be optional on the publish environment.
+根据实例的配置，在发布环境中使用`/content`可能是可选的。
 
 ```xml
  /content
@@ -111,7 +111,7 @@ Depending on the configuration of your instance, use of `/content` might be opti
 >
 >另请注意，某些浏览器（例如旧版本的 IE）只能接受一定长度的 URL，因此还有技术原因需缩短页面名称。
 
-When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
+创建新页面时，AEM将[根据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证页面名称。
 
 允许使用的字符最少包括：
 
@@ -171,7 +171,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 ### 组件 {#components}
 
-Components are the elements provided by AEM so that you can add specific types of content. AEM comes with a range of [out-of-the-box components](/help/sites-authoring/default-components-console.md) that provide comprehensive functionality. These include:
+组件是AEM提供的元素，以便您能够添加特定类型的内容。AEM附带一系列[现成组件](/help/sites-authoring/default-components-console.md)，它们提供全面的功能。这些包括：
 
 * 文本
 * 图像
@@ -265,7 +265,7 @@ Components are the elements provided by AEM so that you can add specific types o
 >
 >只有在“预览”模式下才能通过页面编辑器导航到其他页面，因为在“编辑”模式下，链接不处于活动状态。
 
-### 复制和粘贴页面 {#copying-and-pasting-a-page}
+### 复制和粘贴页面  {#copying-and-pasting-a-page}
 
 您可以将页面及其所有子页面复制到一个新位置：
 
@@ -302,7 +302,7 @@ Components are the elements provided by AEM so that you can add specific types o
 
 >[!NOTE]
 >
->页面只能移动到允许使用该页面所基于的模板的位置。See [Template Availability](/help/sites-developing/templates.md#template-availability) for more information.
+>页面只能移动到允许使用该页面所基于的模板的位置。有关详细信息，请参阅[模板可用性](/help/sites-developing/templates.md#template-availability)。
 
 移动或重命名页面的过程基本相同，都由同一个向导来处理。通过此向导，您可以：
 
@@ -396,7 +396,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
 您可以在控制台中或者在编辑单个页面时[锁定/解锁页面](/help/sites-authoring/editing-content.md#locking-a-page)。关于页面是否已被锁定的信息也会显示在这两个位置。
 
-![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png)![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
+![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 
 ### 创建新文件夹 {#creating-a-new-folder}
 

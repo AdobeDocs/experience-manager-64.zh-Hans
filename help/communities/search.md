@@ -50,7 +50,7 @@ ht-degree: 1%
 
 在&#x200B;**[!UICONTROL 搜索设置]**&#x200B;选项卡下，指定在访客输入查询时如何搜索路径。
 
-![chlimage_1-375](assets/chlimage_1-375.png)
+![chlimage_1-376](assets/chlimage_1-375.png)
 
 * **[!UICONTROL 搜索]**
 路径通过使用添加项目按钮添加搜索路径，内容搜索受到限制。例如，要将搜索限制到特定论坛，请选择放在页面中的论坛组件：
@@ -77,7 +77,7 @@ ht-degree: 1%
 
 当包含所需的客户端库`cq.social.hbs.search`时，`Search Result`组件的显示方式如下：
 
-![chlimage_1-376](assets/chlimage_1-376.png)
+![chlimage_1-375](assets/chlimage_1-376.png)
 
 ### 配置添加的搜索结果{#configure-the-added-search-result}
 

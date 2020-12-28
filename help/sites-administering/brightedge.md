@@ -27,8 +27,8 @@ ht-degree: 0%
 1. 在边栏上，单击工具>操作>云>Cloud Services。
 1. 单击BrightEdge Content Optimizer部分中显示的链接。 是否已创建BrightEdge配置决定链接文本：
 
-   * 立即配置： 未创建配置时，将显示此链接。
-   * 显示配置： 创建一个或多个配置后，将显示此链接。
+   * 立即配置：未创建配置时，将显示此链接。
+   * 显示配置：创建一个或多个配置后，将显示此链接。
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 1. 键入配置标题。 （可选）键入用于将配置存储在存储库中的节点的名称。 单击创建。
 1. 在“BrightEdge Content Optimizer配置”对话框中，键入BrightEdge帐户的用户名和密码，然后单击“确定”。
 
-## 编辑BrightEdge配置 {#editing-a-brightedge-configuration}
+## 编辑BrightEdge配置{#editing-a-brightedge-configuration}
 
 根据需要修改BrightEdge配置的用户名和密码。 这些修改会影响使用该配置的所有页面。
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 1. 单击要编辑的配置的名称。
 1. 单击编辑，修改属性值，然后单击确定。
 
-## 将页面与BrightEdge配置关联 {#associating-pages-with-a-brightedge-configuration}
+## 将页面与BrightEdge配置{#associating-pages-with-a-brightedge-configuration}关联
 
 将页面与BrightEdge配置关联，以将页面数据发送到BrightEdge服务进行分析。 将页面与配置关联后，子页面将继承关联。 通常，您会关联网站的主页，以便所有页面的数据都发送到BrightEdge。
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-## 激活BrightEdge配置 {#activating-a-brightedge-configuration}
+## 激活BrightEdge配置{#activating-a-brightedge-configuration}
 
 激活BrightEdge配置以在发布实例上复制它，并使发布的页面能够与BrightEdge服务交互。
 

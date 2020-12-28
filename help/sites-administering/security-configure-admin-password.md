@@ -30,9 +30,9 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->请注意，该功能不涵盖需要手动更改密码的Felix控制台。 有关详细信息，请参阅相 [关的安全清单部分](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts)。
+>请注意，该功能不涵盖需要手动更改密码的Felix控制台。 有关详细信息，请参阅相关的[安全清单部分](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts)。
 
-## 如何使用它？ {#how-do-i-use-it}
+## 如何使用它？{#how-do-i-use-it}
 
 如果您选择通过命令行安装AEM，则此功能将自动触发，而不是多次从文件系统资源管理器单击JAR。
 
@@ -50,9 +50,9 @@ java -jar aem6.3.jar
 >
 >更改管理员密码的提示仅在安装新AEM实例时显示。
 
-## 使用-nointeractive标志 {#using-the-nointeractive-flag}
+## 使用-nointeractive标志{#using-the-nointeractive-flag}
 
-您还可以选择从属性文件中指定密码。 这是通过使用与系统属 `-nointeractive` 性组合的标志 `-Dadmin.password.file` 来完成的。
+您还可以选择从属性文件中指定密码。 这是通过将`-nointeractive`标志与`-Dadmin.password.file`系统属性结合使用来实现的。
 
 以下是一个示例：
 
@@ -60,7 +60,7 @@ java -jar aem6.3.jar
 java -Dadmin.password.file =/path/to/passwordfile.properties -jar aem6.3.jar -nointeractive
 ```
 
-文件中的 `passwordfile.properties` 密码必须采用以下格式：
+`passwordfile.properties`文件中的口令必须采用以下格式：
 
 ```xml
 admin.password = 12345678
@@ -68,5 +68,5 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->如果您只是使用不带 `-nointeractive` 系统属性的 `-Dadmin.password.file` 参数，AEM将使用默认的管理员密码，而不要求您更改它，实质上是从先前版本复制行为。 此非交互式模式可用于使用安装脚本中的命令行进行自动安装。
+>如果您只使用`-nointeractive`参数而不使用`-Dadmin.password.file`系统属性，AEM将使用默认的管理员密码，而不要求您更改它，实际上是从先前版本复制行为。 此非交互式模式可用于使用安装脚本中的命令行进行自动安装。
 

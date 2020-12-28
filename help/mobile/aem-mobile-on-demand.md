@@ -17,23 +17,23 @@ ht-degree: 1%
 ---
 
 
-# AEM Mobile点播 {#aem-mobile-on-demand}
+# AEM Mobile点播{#aem-mobile-on-demand}
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
 >[!NOTE]
 >
->如果您未将AEM用作内容管理源，请参阅 [AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html)。
+>如果您未将AEM用作内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html)。
 
 >[!NOTE]
 >
->在与AEM Mobile合作并遵循本入门指南中的步骤之前，用户应该熟悉 [AEM](/help/sites-deploying/deploy.md)。
+>在与AEM Mobile合作并遵循本入门指南中的步骤之前，用户应熟悉[AEM](/help/sites-deploying/deploy.md)。
 >
->要为AEM Mobile On-demand Services设置环境，请参 [阅AEM Mobile应用程序仪表板或控制中心](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
+>要设置AEM Mobile On-demand Services的环境，请参阅[AEM Mobile应用程序仪表板或控制中心](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
 
-AEM开 **发人** 员扩展并创建自定义Web模板和组件，使AEM作者 *能够创建精美* 、引人入胜的移动体验。 这些模板和组件不仅针对移动App世界进行了优化； 但可以同时与设备和AEM服务器（任何远程服务器）通信到全渠道服务端点。 AEM内置内容编辑器供AEM作 *者使用* ，在应用程序中创建丰富且相关的体验，包括与Adobe Marketing Cloud其他地区的集成。
+**AEM开发人员**&#x200B;扩展并创建自定义Web模板和组件，使&#x200B;*AEM作者*&#x200B;能够创建精美、引人入胜的移动体验。 这些模板和组件不仅针对移动App世界进行了优化；但可以同时与设备和AEM服务器（任何远程服务器）通信到全渠道服务端点。 *AEM作者*&#x200B;使用AEM内置内容编辑器在应用程序中创建丰富且相关的体验，包括与Adobe Marketing Cloud其他地区的集成。
 
 AEM开发人员在使用AEM Mobile On-demand Services创建应用程序时负责以下任务:
 
@@ -41,11 +41,11 @@ AEM开发人员在使用AEM Mobile On-demand Services创建应用程序时负责
 * [内容同步的移动设备](/help/mobile/mobile-ondemand-contentsync.md)
 * [内容属性和内容导出](/help/mobile/on-demand-content-properties-exporting.md)
 
-请参 [阅开发AEM Mobile内容服务](/help/mobile/developing-content-services.md) ，以开发内容服务。
+请参阅[开发AEM Mobile内容服务](/help/mobile/developing-content-services.md)以开发内容服务。
 
 >[!NOTE]
 >
->AEM *开发人员的角色* ，不会开始模板和组件的开发并结束开发。 AEM *开发人* 员可以创建一个全新的应用程序，而不是简单地扩展开箱即用的参考实施示例。
+>*AEM开发人员的*&#x200B;角色不开始模板和组件的开发并结束。 *AEM developer*&#x200B;可以创建一个全新的应用程序，而不是简单地扩展现成的参考实现示例。
 
 ## 其他资源 {#additional-resources}
 

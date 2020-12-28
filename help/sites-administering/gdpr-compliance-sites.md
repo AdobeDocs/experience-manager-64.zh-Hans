@@ -18,53 +18,53 @@ ht-degree: 0%
 ---
 
 
-# AEM Sites- GDPR就绪性{#aem-sites-gdpr-readiness}
+# AEM Sites- GDPR就绪{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->GDPR在以下各节中用作示例，但涵盖的详细信息适用于所有数据保护和隐私法规； 例如GDPR、CCPA等。
+>GDPR在以下各节中用作示例，但涵盖的详细信息适用于所有数据保护和隐私法规；例如GDPR、CCPA等。
 
 欧洲合并的《数据隐私权一般数据保护规定》自2018年5月起生效。
 
 AEM Sites愿意帮助客户履行其GDPR合规义务。 本页将引导客户完成在AEM Sites处理GDPR请求的过程。 它描述了存储的私有数据的位置，以及如何手动或使用代码删除这些数据。
 
-有关详细信息，请 [参阅Adobe隐私中心的GDPR页面](https://www.adobe.com/privacy/general-data-protection-regulation.html)。
+有关详细信息，请参阅Adobe隐私中心](https://www.adobe.com/privacy/general-data-protection-regulation.html)的[GDPR页面。
 
 >[!NOTE]
 >
->有关更 [多详细信息，请参](/help/managing/data-protection-and-privacy.md) 阅AEM GDPR就绪性。
+>有关更多详细信息，请参阅[AEM GDPR Readiness](/help/managing/data-protection-and-privacy.md)。
 
-## 作者服务器 {#author-server}
+## 作者服务器{#author-server}
 
-平台GDPR文档中涵盖作者服务器上的用户帐 [户和UGC内容](/help/managing/data-protection-and-privacy.md)。
+作者服务器上的用户帐户和UGC内容在[平台GDPR文档](/help/managing/data-protection-and-privacy.md)中介绍。
 
-## 发布服务器 {#publish-server}
+## 发布服务器{#publish-server}
 
-平台GDPR文档中介绍用于验证站点访客和发布服务器上UGC内容 [的用户帐户](/help/managing/data-protection-and-privacy.md)。
+[平台GDPR文档](/help/managing/data-protection-and-privacy.md)中介绍用于验证站点上访客和发布服务器上UGC内容的用户帐户。
 
 默认情况下，AEM Sites组件不存储由访客在发布服务器上输入的表单数据。 建议将数据转发给第三方系统或Adobe Campaign以进一步处理。
 
-## 选择加入／选择退出 {#opt-in-opt-out}
+## 选择加入／选择退出{#opt-in-opt-out}
 
-AEM有 [cookie选择退出服务](/help/sites-developing/cookie-optout.md) ，可用于管理用户的选择加入／选择退出。
+AEM有一个[cookie opt-out service](/help/sites-developing/cookie-optout.md)，可用于管理用户的opt-in/out。
 
-## 通过分析增强洞察 {#enhanced-insights-by-analytics}
+## 通过Analytics增强的洞察{#enhanced-insights-by-analytics}
 
 AEM Sites提供与Enhanced Insights by Analytics的可选集成，该集成使用Adobe Analytics点播服务中的功能。
 
-有关管理与Adobe Analytics相关的GDPR数据主体请求的更多信息，请参 [阅Adobe Analytics和GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html)。
+有关管理与Adobe Analytics相关的GDPR数据主体请求的更多信息，请参见[Adobe Analytics和GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html)。
 
-## 通过目标增强个性化 {#enhanced-personalization-by-target}
+## 通过目标{#enhanced-personalization-by-target}增强个性化
 
 AEM Sites包括通过目标与增强个性化的可选集成，该集成使用Adobe Target点播服务中的功能。
 
-有关管理与Adobe Target相关的GDPR数据主体请求的更多信息，请 [参阅Adobe Target-隐私和一般数据保护规定](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
+有关管理与Adobe Target相关的GDPR数据主体请求的更多信息，请参见[Adobe Target-隐私和一般数据保护规定](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
 
 ## ContextHub {#contexthub}
 
-AEM为ContextHub提供可选的 [数据层](/help/sites-developing/contexthub.md)。 这会在浏览器中保留特定于访客的数据，以便用于基于规则的个性化。
+AEM为[ContextHub](/help/sites-developing/contexthub.md)提供可选的数据层。 这会在浏览器中保留特定于访客的数据，以便用于基于规则的个性化。
 
-默认情况下，此访客数据不存储在AEM中； AEM会向数据层发送规则，以便在浏览器中做出个性化决策。
+默认情况下，此访客数据不存储在AEM中；AEM会向数据层发送规则，以便在浏览器中做出个性化决策。
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ AEM为ContextHub提供可选的 [数据层](/help/sites-developing/contexthub.md
 >
 >Adobe CQ5.5及更早版本现在为EOL，本文档未涵盖。
 
-### 实施加入／退出 {#implementing-opt-in-opt-out}
+### 实施加入／退出{#implementing-opt-in-opt-out}
 
 站点所有者需要根据以下准则实施退出组件。
 
@@ -104,11 +104,11 @@ AEM为ContextHub提供可选的 [数据层](/help/sites-developing/contexthub.md
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### 预览ContextHub的持久性 {#previewing-persistence-of-contexthub}
+### 预览ContextHub {#previewing-persistence-of-contexthub}的持久性
 
 要预览使用的ContextHub的永久性，用户可以：
 
-* 使用浏览器的控制台； 例如：
+* 使用浏览器的控制台；例如：
 
    * 铬黄：
 
@@ -192,7 +192,7 @@ var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persiste
 console.log(storage.getTree());
 ```
 
-### 清除ContextHub的持久性 {#clearing-persistence-of-contexthub}
+### 清除ContextHub {#clearing-persistence-of-contexthub}的持久性
 
 要清除ContextHub持久性，请执行以下操作：
 
@@ -209,7 +209,7 @@ console.log(storage.getTree());
    ContextHub.resetAllStores();
    ```
 
-* 清除特定的持久性层； 例如，sessionStorage:
+* 清除特定的持久性层；例如，sessionStorage:
 
    ```
    var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });

@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '2289'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 93%
 
 1. 单击&#x200B;**创建**。您的新品牌将在 MCM 中显示（带有默认图标）。
 
-### 为您的新品牌定义属性 {#defining-the-properties-for-your-new-brand}
+### 为您的新品牌定义属性  {#defining-the-properties-for-your-new-brand}
 
 1. 从左边窗格中选择&#x200B;**营销活动**，然后在右边窗格中选择您的新品牌图标并单击&#x200B;**属性...**
 
@@ -74,7 +74,7 @@ ht-degree: 93%
 
 1. 单击&#x200B;**确定**&#x200B;进行保存。
 
-## 创建新营销活动 {#creating-a-new-campaign}
+## 创建新营销活动  {#creating-a-new-campaign}
 
 创建新的营销活动：
 
@@ -88,11 +88,11 @@ ht-degree: 93%
 
 1. 单击&#x200B;**创建**。您的新营销活动将显示在 MCM 中。
 
-### 定义新营销活动的属性 {#defining-the-properties-for-your-new-campaign}
+### 定义新营销活动的属性  {#defining-the-properties-for-your-new-campaign}
 
 配置以下可控制行为的营销活动属性：
 
-* **优先级：**&#x200B;该营销活动相对于其他营销活动的优先级。当多个活动同时打开时，具有最高优先级的活动将控制访客体验。
+* **优先级：**&#x200B;该营销活动相对于其他营销活动的优先级。如果同时开启了多个营销活动，则具有最高优先级的营销活动会控制访客体验。
 * **“开始时间”和“结束时间”：**&#x200B;这两个属性可控制营销活动对访客体验的控制时间段。“开始时间”属性控制营销活动开始控制体验的时间。“结束时间”属性控制营销活动停止控制体验的时间。
 * **图像：**&#x200B;在 AEM 中表示营销活动的图像。
 * **云服务：**&#x200B;与营销活动集成的云服务配置。（请参阅[与 Adobe Marketing Cloud 集成](/help/sites-administering/marketing-cloud.md)。）
@@ -107,7 +107,7 @@ ht-degree: 93%
 
 1. 单击&#x200B;**确定**&#x200B;进行保存。
 
-## 创建新体验 {#creating-a-new-experience}
+## 创建新体验  {#creating-a-new-experience}
 
 创建新体验的步骤取决于体验类型：
 
@@ -121,7 +121,7 @@ ht-degree: 93%
 >
 >现在建议使用 MCM 来创建体验。
 
-## 配置新体验 {#configuring-your-new-experience}
+## 配置新体验  {#configuring-your-new-experience}
 
 既然您已为体验创建了基本梗概，则还需要根据相应体验类型继续执行以下操作：
 
@@ -172,7 +172,7 @@ ht-degree: 93%
 >
 >要添加或修改用户的头像，请打开 Clickstream Cloud (Ctrl+Alt+c)，加载个人资料，并单击&#x200B;**编辑**。
 
-### 创建新潜在客户 {#creating-new-leads}
+### 创建新潜在客户  {#creating-new-leads}
 
 创建新潜在客户后，请务必[激活潜在客户](#activating-or-deactivating-leads)，以便跟踪其发布实例活动并对其体验进行个性化设置。
 
@@ -246,7 +246,7 @@ ht-degree: 93%
 
    潜在客户窗格中将显示新潜在客户。在单击该条目后，输入的所有信息将显示在右侧窗格中。在创建潜在客户后，可以将其添加到列表中。
 
-### 将潜在客户添加到列表 {#adding-leads-to-lists}
+### 将潜在客户添加到列表  {#adding-leads-to-lists}
 
 向预先存在的列表中添加潜在客户：
 
@@ -262,7 +262,7 @@ ht-degree: 93%
 
 1. 选择要向其添加潜在客户的列表，并单击&#x200B;**确定**。这些潜在客户将添加到相应列表中。
 
-### 查看潜在客户信息 {#viewing-lead-information}
+### 查看潜在客户信息  {#viewing-lead-information}
 
 要查看潜在客户信息，请在 MCM 中，单击相应潜在客户旁的复选框，右侧窗格将打开，其中显示该潜在客户的所有信息，包括列表从属关系。
 
@@ -290,7 +290,7 @@ ht-degree: 93%
    >
    >要更改潜在客户头像，请转到用户个人资料。可以在 Clickstream Cloud 中加载个人资料，方法是按 CTRL+ALT+c，单击&#x200B;**加载**，然后选择个人资料。
 
-### 删除现有潜在客户 {#deleting-existing-leads}
+### 删除现有潜在客户  {#deleting-existing-leads}
 
 要在 MCM 中删除现有潜在客户，请选中该潜在客户旁的复选框，并单击&#x200B;**删除**。该潜在客户即会从该潜在客户列表和所有相关列表中删除。
 
@@ -298,7 +298,7 @@ ht-degree: 93%
 >
 >在删除之前，AEM 会确认您是否要删除现有潜在客户。在删除后，无法检索它。
 
-## 使用列表 {#working-with-lists}
+## 使用列表  {#working-with-lists}
 
 >[!NOTE]
 >
@@ -341,7 +341,7 @@ ht-degree: 93%
 
 1. 根据需要进行编辑，并单击&#x200B;**保存**&#x200B;以保存更改。
 
-### 删除现有列表 {#deleting-existing-lists}
+### 删除现有列表  {#deleting-existing-lists}
 
 要删除现有列表，请在 MCM 中，选中该列表旁的复选框，并单击&#x200B;**删除**。该列表即已删除。从属于该列表的潜在客户不会被删除，仅删除与该列表的从属关系。
 
@@ -349,7 +349,7 @@ ht-degree: 93%
 >
 >在删除之前，AEM 会确认您是否要删除现有列表。在删除后，无法检索它。
 
-### 合并列表 {#merging-lists}
+### 合并列表  {#merging-lists}
 
 您可以将现有列表与另一个列表合并。在执行此操作时，要合并的列表将变成另一个列表的成员。它仍将作为单独的实体存在，不能被删除。
 
@@ -381,7 +381,7 @@ ht-degree: 93%
 >
 >从成员资格中删除合并的列表与从列表中删除潜在客户一样。打开&#x200B;**列表**&#x200B;选项卡，选择包含合并列表的列表，并通过单击该列表旁的红色圆圈来删除成员资格。
 
-### 查看列表中的潜在客户 {#viewing-leads-in-lists}
+### 查看列表中的潜在客户  {#viewing-leads-in-lists}
 
 您随时可以通过浏览或搜索成员来查看属于特定列表的潜在客户。
 

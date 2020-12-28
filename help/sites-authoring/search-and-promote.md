@@ -18,7 +18,7 @@ ht-degree: 79%
 ---
 
 
-# Adding Search&amp;Promote features to your page{#adding-search-promote-features-to-your-page}
+# 向页面添加Search&amp;Promote功能{#adding-search-promote-features-to-your-page}
 
 要在您的网站中集成 Search&amp;Promote 功能，需使用 Search&amp;Promote 组件将以下功能添加到您的页面：
 
@@ -31,5 +31,5 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->有关将 Search&amp;Promote 功能添加到您的页面的详细信息，请参阅经典 UI 创作文档。See [Adding Search &amp; Promote features to your page](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) for more information.
+>有关将 Search&amp;Promote 功能添加到您的页面的详细信息，请参阅经典 UI 创作文档。有关详细信息，请参阅[向页面添加搜索和提升功能](/help/sites-classic-ui-authoring/classic-feature-search-promote.md)。
 

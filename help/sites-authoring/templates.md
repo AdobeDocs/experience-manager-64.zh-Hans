@@ -18,7 +18,7 @@ ht-degree: 96%
 ---
 
 
-# 创建页面模板 {#creating-page-templates}
+# 创建页面模板  {#creating-page-templates}
 
 创建页面时，您必须选择一个模板，以用作创建新页面的基础。模板可定义生成页面的结构、任何初始内容以及可使用的组件。
 
@@ -41,7 +41,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->AEM 6.4.5.0或更高版本才能将可编辑模板与SPA编辑器 [一起使用](/help/sites-developing/spa-overview.md)。
+>AEM 6.4.5.0或更高版本才能将可编辑模板与[SPA Editor](/help/sites-developing/spa-overview.md)一起使用。
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->Pages and templates created with the **Templates Console** are not meant to be used with the classic UI and such use is not supported.
+>使用&#x200B;**模板控制台**&#x200B;创建的页面和模板不能与经典UI一起使用，因此不支持这样的使用。
 
 ## 开始之前 {#before-you-start}
 
@@ -96,7 +96,7 @@ ht-degree: 96%
 
 本文档详细介绍的任务列有负责执行这些任务的角色。
 
-### 可编辑的模板和静态模板 {#editable-and-static-templates}
+### 可编辑的模板和静态模板  {#editable-and-static-templates}
 
 现在，AEM 提供了两种基本类型的模板：
 
@@ -112,11 +112,11 @@ ht-degree: 96%
    * 此类模板[由开发人员提供](/help/sites-developing/page-templates-static.md)，因此不能由作者创建或编辑。
    * 可复制此类模板，以创建新页面，但是创建之后，页面与模板之间不存在动态连接（即使已注册模板名称来获取相关信息）。
    * 可使用[设计模式](/help/sites-authoring/default-components-designmode.md)来保留设计属性。
-   * Because editing static templates is the exclusive task of a developer, please see the developer document [Page Templates - Static](/help/sites-developing/page-templates-static.md) for more information.
+   * 由于编辑静态模板是开发人员的专享任务，请参阅开发人员文档[页面模板——静态](/help/sites-developing/page-templates-static.md)以了解更多信息。
 
 按照定义，“模板”控制台和模板编辑器只允许创建和编辑可编辑的模板。因此，本文档将专门重点介绍可编辑的模板。
 
-### 使用模板创建页面 {#using-a-template-to-create-a-page}
+### 使用模板创建页面  {#using-a-template-to-create-a-page}
 
 使用静态模板和可编辑的模板[创建新页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)的过程没有明显的区别，也没有孰优孰劣之分。对于页面作者而言，该创建过程一目了然。
 
@@ -157,7 +157,7 @@ ht-degree: 96%
 
 ### 创建新模板 - 模板作者 {#creating-a-new-template-template-author}
 
-1. Open the **Templates Console** (via **Tools** -> **General**) then navigate to the required folder.
+1. 打开&#x200B;**模板控制台**（通过&#x200B;**工具** -> **常规**），然后导航到所需的文件夹。
 
    >[!NOTE]
    >
@@ -184,7 +184,7 @@ ht-degree: 96%
    >
    >创建新模板后，会在控制台中将其标记为&#x200B;**草稿**，这表示页面作者还不能使用此模板。
 
-### 定义模板属性 - 模板作者 {#defining-template-properties-template-author}
+### 定义模板属性 - 模板作者  {#defining-template-properties-template-author}
 
 模板可能具有以下属性：
 
@@ -229,7 +229,7 @@ ht-degree: 96%
 
 1. 如果对缩略图满意，请单击或点按&#x200B;**保存并关闭**。
 
-### 启用并允许模板 - 模板作者 {#enabling-and-allowing-a-template-template-author}
+### 启用并允许模板 - 模板作者  {#enabling-and-allowing-a-template-template-author}
 
 为了能够在创建页面时使用模板，您需要执行以下操作：
 
@@ -272,7 +272,7 @@ ht-degree: 96%
    >
    >如果&#x200B;**允许的模板**&#x200B;列表为空，则树会向上追溯，直到找到值/列表。
    >
-   >See [Template Availability](/help/sites-developing/templates.md#template-availability) - the principles for allowed templates remain the same.
+   >请参阅[模板可用性](/help/sites-developing/templates.md#template-availability) —— 允许的模板原则保持不变。
 
 1. 单击&#x200B;**保存**，以保存对页面属性所做的更改。
 
@@ -290,7 +290,7 @@ ht-degree: 96%
 
 1. 从工具栏中选择&#x200B;**发布**&#x200B;以完成操作。
 
-## 编辑模板 - 模板作者 {#editing-templates-template-authors}
+## 编辑模板 - 模板作者  {#editing-templates-template-authors}
 
 创建或编辑模板时，您可以定义模板的多个方面。编辑模板类似于页面创作。
 
@@ -530,7 +530,7 @@ ht-degree: 96%
 
    在列表中选择一个组件，然后单击或点按 **添加类型** ，以向已映射的组件添加其他MIME类型。 单击&#x200B;**删除**&#x200B;图标可删除 MIME 类型。
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
    *响应设置*
 
@@ -549,7 +549,7 @@ ht-degree: 96%
       * 已输入的内容会被视为初始内容，因此仅在&#x200B;**初始内容**&#x200B;模式下可见。
    * 无法移动、剪切或删除已解锁组件的父组件。
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
    这包括解锁容器组件，以便在初始内容模式或生成的页面 **中添加其他组件** 。 如果在解锁容器之前已将组件／内容添加到容器，则这些组件／内容在结构模式下不再显示，但将以初始内容模式 **显示****** 。 在&#x200B;**“结构”模式**&#x200B;下，只会显示容器组件本身，及其&#x200B;**允许的组件**&#x200B;列表。
 
@@ -613,7 +613,7 @@ ht-degree: 96%
 
 要访问&#x200B;**页面设计**&#x200B;对话框，请执行以下操作：
 
-1. From the **Template Editor**, select **Page Information** from the toolbar, then **Page Design** to open the dialog.
+1. 从&#x200B;**模板编辑器**&#x200B;中，从工具栏中选择&#x200B;**页面信息**，然后选择&#x200B;**页面设计**&#x200B;以打开对话框。
 1. 随即会打开&#x200B;**页面设计**&#x200B;对话框，该对话框分成两个部分：
 
    * 左半部分定义了[页面策略](/help/sites-authoring/templates.md#page-policies)

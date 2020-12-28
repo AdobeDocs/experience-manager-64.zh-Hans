@@ -22,13 +22,13 @@ ht-degree: 1%
 
 ## 下载 {#download}
 
-创建此脚本是为了简化生成可读报 `access.log` 告的文件的分析，以便以后处理。
+此脚本可简化`access.log`文件的分析，生成可读报告供以后处理。
 
 [获取文件](assets/analyse-access.sh)
 
 ## 描述 {#description}
 
-创建此脚本是为了简化生成可读报 `access.log` 告的文件的分析，以便以后处理。
+此脚本可简化`access.log`文件的分析，生成可读报告供以后处理。
 
 它生成总请求数、GET与POST、随时间的请求分发等。
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 从文件中告诉您如何运行该注释：
 
-分析CQ `access.log` 外推各种信息并在上生成Markdown输出 `stdout`。
+分析CQ `access.log`外推各种信息并在`stdout`上产生Markdown输出。
 
 ## 使用 {#usage}
 

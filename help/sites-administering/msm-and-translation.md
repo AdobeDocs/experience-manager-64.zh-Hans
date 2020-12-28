@@ -24,21 +24,21 @@ ht-degree: 2%
 
 * 多站点管理器(MSM)允许您在多个位置使用相同的站点内容，同时允许各种不同的内容：
 
-   * [重用内容： 多站点管理器和Live Copy](/help/sites-administering/msm.md)
+   * [重用内容：多站点管理器和Live Copy](/help/sites-administering/msm.md)
 
 * 翻译允许您自动翻译页面内容、资产和用户生成的内容，以创建和维护多语言网站：
 
    * [翻译多语言站点的内容](/help/sites-administering/translation.md)
 
-* 这两个功能可以结合使用，以满足跨国和多语 [言网站的需要](#multinational-and-multilingual-sites)。
+* 这两个功能可以结合起来，以满足[跨国和多语言](#multinational-and-multilingual-sites)网站的需要。
 
-## 跨国和多语言站点 {#multinational-and-multilingual-sites}
+## 跨国和多语言站点{#multinational-and-multilingual-sites}
 
 通过结合使用多站点管理器和翻译工作流程，您可以高效地创建跨国和多语言站点的内容。 为特定国家／地区以一种语言创建一个主控站点，然后将该内容作为其他站点的基础，在需要时使用翻译：
 
 * [将主控](/help/sites-administering/translation.md) 站点翻译为不同的语言。
 
-* 使用 [多站点管理器](/help/sites-administering/msm.md) ，可以：
+* 使用[多站点管理器](/help/sites-administering/msm.md)可以：
 
    * 重用主控站点和翻译中的内容，为其他国家和文化创建站点。
    * 确保将多站点管理器的使用限制为一种语言的内容，例如，英语主控->国家／地区站点的英语分支、法语主控->国家／地区站点的法语分支。
@@ -52,8 +52,8 @@ ht-degree: 2%
 >
 >在这种情况下，MSM不会管理不同的语言版本。
 >
->* [MSM](/help/sites-administering/msm.md) 管理从蓝图(例如，全局主控)到语言边界内的Live Copy（例如，本地站点）的翻译内容的部署。
->* AEM [的翻译集](/help/sites-administering/translation.md) 成功能与第三方翻译管理服务相结合，管理语言并将内容翻译成这些不同的语言。
+>* [MSM](/help/sites-administering/msm.md) 管理从蓝图(如全局主控)到语言边界内的Live Copy（如本地站点）的翻译内容的部署。
+>* AEM的[translation](/help/sites-administering/translation.md)集成功能与第三方翻译管理服务相结合，管理语言并将内容翻译成这些不同的语言。
 
 >
 >
@@ -63,7 +63,7 @@ ht-degree: 2%
 >
 >对于所有用例，建议阅读以下最佳实践：
 >
->* [MSM的最佳实践](/help/sites-administering/msm-best-practices.md); 特别是：
+>* [MSM的最佳实践](/help/sites-administering/msm-best-practices.md);特别是：
    >
    >   
    * [创建站点](/help/sites-administering/msm-best-practices.md#create-site)

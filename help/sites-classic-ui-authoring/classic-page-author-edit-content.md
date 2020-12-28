@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '1780'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 97%
 >
 >如果您遇到任何问题，我们建议您与系统管理员联系。
 
-## Sidekick {#sidekick}
+## Sidekick  {#sidekick}
 
 在创作页面时，Sidekick 是一项重要工具。创作页面时 Sidekick 将处于浮动状态，所以始终可见。
 
@@ -62,7 +62,7 @@ ht-degree: 97%
 
 * [基架](/help/sites-authoring/scaffolding.md)
 
-* [客户端上下文](/help/sites-administering/client-context.md)
+* [Client Context](/help/sites-administering/client-context.md)
 
 ## 插入组件 {#inserting-a-component}
 
@@ -86,7 +86,7 @@ ht-degree: 97%
 
 1. 在页面中插入所需组件。然后双击段落，此时将打开一个窗口，在此可以配置段落和添加内容。
 
-### 使用内容查找器插入组件 {#inserting-a-component-using-the-content-finder}
+### 使用内容查找器插入组件  {#inserting-a-component-using-the-content-finder}
 
 您还可以通过从[内容查找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)拖动资产来向页面添加新组件。这将自动创建包含资产的相应类型新组件。
 
@@ -105,7 +105,7 @@ ht-degree: 97%
 
 要通过拖动以上某一资产类型创建组件，请执行以下操作：
 
-1. 确保页面处于[**编辑&#x200B;**模式](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)。
+1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)。
 1. 打开[内容查找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)。
 1. 将所需的资产拖动到所需位置。[组件占位符](#componentplaceholder)显示组件在放置时将占据的位置。
 
@@ -113,7 +113,7 @@ ht-degree: 97%
 
 1. 根据需要[编辑](#editmovecopypastedelete)组件。
 
-## 编辑组件（内容和属性） {#editing-a-component-content-and-properties}
+## 编辑组件（内容和属性）  {#editing-a-component-content-and-properties}
 
 要编辑现有段落，请执行以下操作之一：
 
@@ -203,7 +203,7 @@ ht-degree: 97%
 
 [注释](/help/sites-classic-ui-authoring/classic-page-author-annotations.md)允许其他作者对内容提出反馈。该功能通常作审核和验证之用。
 
-## 预览页面 {#previewing-pages}
+## 预览页面  {#previewing-pages}
 
 Sidekick 的底部边框中有两个对于预览页面很重要的图标：
 
@@ -223,7 +223,7 @@ Sidekick 的底部边框中有两个对于预览页面很重要的图标：
 
 ## 查找并替换 {#find-replace}
 
-如果要对同一个短语执行较大规模的编辑，通过&#x200B;**[查找并替换](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**菜单选项，可在网站的某一部分中搜索并替换某一字符串的多个实例。
+如果要对同一个短语执行较大规模的编辑，通过&#x200B;**[查找并替换](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**&#x200B;菜单选项，可在网站的某一部分中搜索并替换某一字符串的多个实例。
 
 ## 锁定页面 {#locking-a-page}
 
@@ -260,7 +260,7 @@ AEM 允许您锁定页面，以便其他人无法修改页面内容。当您对�
 * 撤消：Ctrl+Z (Windows) 或 Cmd+Z (Mac)
 * 重做：Ctrl+Y (Windows) 或 Cmd+Y (Mac)
 
-当您对一个或多个段落的删除、添加或迁移操作执行撤消或重做时，受影响的段落会闪烁加亮显示（默认行为）。
+当您撤消或重做对一个或多个段落执行的删除、添加或重新定位操作时，受影响的段落会闪烁并高亮显示（默认行为）。
 
 >[!NOTE]
 >

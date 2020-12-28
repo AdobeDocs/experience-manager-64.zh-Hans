@@ -37,25 +37,25 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->设备组响 **应式设备** 将永远不会有选择器，因为假定那些被识别为支持响应式设计的设备不需要自适应布局
+>设备组&#x200B;**响应式设备**&#x200B;将永远不会有选择器，因为假定那些被识别为支持响应式设计的设备不需要自适应布局
 
 ## 配置 {#configuration}
 
-可以为现有设备组或您自己创建的组 [配置自适应渲染选择器。](/help/sites-developing/mobile.md#device-groups)
+可以为现有设备组或您自己创建的[组配置自适应渲染选择器。](/help/sites-developing/mobile.md#device-groups)
 
-对于此示例，我们将配置现有设备组 **Smart Phone** ，使其具有自适应渲染选择器，作为We.Retail中体 **验页面模** 板的一部分。
+对于此示例，我们将配置现有设备组&#x200B;**智能电话**，使其具有自适应渲染选择器，作为We.Retail中&#x200B;**体验页面**&#x200B;模板的一部分。
 
-1. 编辑需要自适应选择器的设备组 `http://localhost:4502/miscadmin#/etc/mobile/groups`
+1. 在`http://localhost:4502/miscadmin#/etc/mobile/groups`中编辑需要自适应选择器的设备组
 
-   设置“禁用模 **拟器** 并保存”选项。
+   设置选项&#x200B;**禁用模拟器**&#x200B;并保存。
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. 选择器将可用于Blackberry和 **iPhone** 4 **，前提是设备组** Smart Phone **** 将添加到模板和页面结构，步骤如下。
+1. 选择器将可用于&#x200B;**Blackberry**&#x200B;和&#x200B;**iPhone 4**，前提是设备组&#x200B;**Smart Phone**&#x200B;按以下步骤添加到模板和页面结构中。
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. 使用CRX DE Lite，通过将设备组添加到模板结构上的多值字符串属性，允许在模 `cq:deviceGroups` 板上使用设备组。
+1. 使用CRX DE Lite，通过将设备组添加到模板结构的多值字符串属性`cq:deviceGroups`，允许在模板上使用设备组。
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -65,19 +65,19 @@ ht-degree: 0%
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. 使用CRX DE Lite，通过将设备组添加到站点结构上的多值字符串属性，允许在您 `cq:deviceGroups` 的站点上使用设备组。
+1. 使用CRX DE Lite，通过将设备组添加到站点结构的多值字符串属性`cq:deviceGroups`，允许在您的站点上使用设备组。
 
    `/content/<your-site>/jcr:content`
 
-   例如，如果我们要允许智 **能电话** 设备组：
+   例如，如果我们要允许&#x200B;**智能电话**&#x200B;设备组：
 
    `/content/we-retail/jcr:content`
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-现在，当在页 [面编辑器](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) (如修改布局 [时](/help/sites-authoring/responsive-layout.md))中使用模拟器时，您会选择已配置设备组的设备，此时页面将使用选择器作为URL的一部分呈现。
+现在，当在页面编辑器中使用[emulator](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)（例如，当[修改布局](/help/sites-authoring/responsive-layout.md)时）并选择已配置设备组的设备时，页面将呈现为URL的一部分，其中包含一个选择器。
 
-在我们的示例中，当根据体验页面模 **板编辑页面** ，并在模拟器中选择iPhone 4时，将呈现该页面，其中包括选择器 `arctic-surfing-in-lofoten.smart.html` , `arctic-surfing-in-lofoten.html`
+在我们的示例中，当根据&#x200B;**体验页面**&#x200B;模板编辑页面并在模拟器中选择iPhone 4时，将呈现该页面，其中将选择器显示为`arctic-surfing-in-lofoten.smart.html`而不是`arctic-surfing-in-lofoten.html`
 
 也可以使用此选择器直接调用页面。
 

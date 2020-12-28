@@ -44,7 +44,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->&amp;ast; Once the user starts to interact with the page in Preview Mode, the `Ctrl-Shift-m` shortcut is no longer available. 用户必须单击顶部编辑器栏或返回到“编辑”模式，才能使该快捷键再次变为可用。
+>&amp;ast;用户开始以预览模式与页面进行交互后，`Ctrl-Shift-m`快捷键便不再可用。 用户必须单击顶部编辑器栏或返回到“编辑”模式，才能使该快捷键再次变为可用。
 
 在使用[控制台](/help/sites-authoring/keyboard-shortcuts.md)时，桌面用户也可以使用各种键盘快捷键。
 

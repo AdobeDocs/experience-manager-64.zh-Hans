@@ -105,7 +105,7 @@ MySQL Workbench提供了用于执行SQL脚本的UI，这些脚本安装模式和
 
 #### 新建社区连接{#new-communities-connection}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ## 数据库设置{#database-setup}
 

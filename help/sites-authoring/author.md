@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 81%
+ht-degree: 86%
 
 ---
 
 
-# Concept of Authoring and Publishing{#authoring}
+# 创作和发布的概念{#authoring}
 
 AEM 提供了两种环境：
 
@@ -66,11 +66,11 @@ AEM 提供了两种环境：
 
 ## 发布环境 {#publish-environment}
 
-When ready, the AEM site&#39;s content is published to the **publish environment**. 在该环境中，根据设计界面的具体观感，目标受众可以使用网站页面。
+准备就绪后，AEM站点的内容将发布到&#x200B;**发布环境**。 在该环境中，根据设计界面的具体观感，目标受众可以使用网站页面。
 
 通常，发布环境位于内网与外网的“隔离区”中；换句话说，可用于 Internet，但不再处于内部网络的完全保护之下。
 
-如果 AEM 站点是一个[社区站点](/help/communities/overview.md)或包含[社区组件](/help/communities/author-communities.md)，则已登录的网站访客（成员）可以与社区功能交互。例如，他们可以发布到论坛、发布评论或关注其他成员。 会员可以被授予执行通常仅限于作者环境的活动的权限，例如创建新页面（社区组）、博客文章和审核其他成员的帖子。
+如果 AEM 站点是一个[社区站点](/help/communities/overview.md)或包含[社区组件](/help/communities/author-communities.md)，则已登录的网站访客（成员）可以与社区功能交互。例如，他们可以发布到论坛、发布评论或关注其他成员。 成员可以被授予执行各种活动的权限，但这些活动通常仅限于在创作环境中执行，例如创建新页面（社区组）、博客文章，以及审核其他成员的帖子。
 
 >[!NOTE]
 >

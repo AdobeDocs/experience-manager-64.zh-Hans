@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# 内容服务的JSON导出程序{#json-exporter-for-content-services}
+# 内容服务的JSON导出器{#json-exporter-for-content-services}
 
 AEM Content Services设计为在AEM关注网页之外对内容进行投放和描述。
 
@@ -32,13 +32,13 @@ AEM Content Services设计为在AEM关注网页之外对内容进行投放和描
 
 >[!NOTE]
 >
->自核心组件1.1.0版以来，所 [有核心组件均可使用此处描述的功能](https://docs.adobe.com/content/docs/en/core-components/v1.html)。
+>自核心组件](https://docs.adobe.com/content/docs/en/core-components/v1.html)的[版本1.1.0以来，此处描述的功能可用于所有核心组件。
 
-## 包含内容片段核心组件的JSON导出程序 {#json-exporter-with-content-fragment-core-components}
+## 包含内容片段核心组件{#json-exporter-with-content-fragment-core-components}的JSON导出器
 
 使用AEM JSON导出器，您可以以JSON数据模型格式提供(y)AEM页面的内容。 然后，您自己的应用程序可以使用它。
 
-在AEM中，投放是使用选择器和扩 `model` 展来 `.json` 实现的。
+在AEM中，投放是使用选择器`model`和`.json`扩展实现的。
 
 `.model.json`
 
@@ -54,7 +54,7 @@ AEM Content Services设计为在AEM关注网页之外对内容进行投放和描
 
 您也可以通过专门定位结构化内容片段来提供其内容。
 
-这是使用片段的整个路径(通过 `jcr:content`);例如，带有后缀（如）。
+这是使用片段的整个路径（通过`jcr:content`）完成的；例如，带有后缀（如）。
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
@@ -72,11 +72,11 @@ AEM Content Services设计为在AEM关注网页之外对内容进行投放和描
 
    >[!NOTE]
    >
-   >您可以 [调整自己的组件](/help/sites-developing/json-exporter-components.md) ，以访问和使用这些数据。
+   >您可以[调整您自己的组件](/help/sites-developing/json-exporter-components.md)以访问和使用此数据。
 
    >[!NOTE]
    >
-   >虽然不是标准实现， [但支持多个选择器](json-exporter-components.md#multiple-selectors) , `model` 但必须是第一个选择器。
+   >虽然不是标准实现，但支持[多个选择器，](json-exporter-components.md#multiple-selectors)但`model`必须是第一个选择器。
 
 ### 更多信息 {#further-information}
 
@@ -94,15 +94,15 @@ AEM Content Services设计为在AEM关注网页之外对内容进行投放和描
 
    * [以JSON格式获取页面信息](/help/sites-developing/pageinfo.md)
 
-## 相关文档 {#related-documentation}
+## 相关文档{#related-documentation}
 
 有关更多详细信息，请参阅：
 
-* 资产 [用户指南中的内容片段主题](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* 资产用户指南](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)中的[内容片段主题
 
 * [内容片段模型](/help/assets/content-fragments-models.md)
 * [使用内容片段进行创作](/help/sites-authoring/content-fragments.md)
 * [为组件启用JSON导出](/help/sites-developing/json-exporter-components.md)
 
-* [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 和内容 [片段组件](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [核心](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 组件和内 [容片段组件](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 

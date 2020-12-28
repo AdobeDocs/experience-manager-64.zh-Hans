@@ -33,13 +33,13 @@ AEM提供：
 
 Selenium用于在浏览器中对每个活动使用一个用户进行功能测试。 它将测试步骤（单击）记录为HTML表或Java类。
 
-有关详细信息，请参 [阅https://www.seleniumhq.org/](https://www.seleniumhq.org/)。
+有关详细信息，请参阅[https://www.seleniumhq.org/](https://www.seleniumhq.org/)。
 
 **JMeter**
 
 JMeter用于跟踪请求，可用于功能、性能和压力测试。
 
-有关详细信息，请参 [阅http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/)。
+有关详细信息，请参阅[http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/)。
 
 还有许多专有工具可用于自动化测试和管理测试计划。
 

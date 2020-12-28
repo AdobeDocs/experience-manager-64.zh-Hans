@@ -28,7 +28,7 @@ CRX记录详细日志。 解包并开始快速启动后，您可以在以下位�
 * crx-quickstart/server/logs
 * crx-quickstart/logs
 
-## 激活DEBUG日志级别 {#activating-the-debug-log-level}
+## 激活DEBUG日志级别{#activating-the-debug-log-level}
 
 默认日志级别为INFO，即不记录DEBUG消息。
 
@@ -54,9 +54,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 | 2 | 警告 | 操作已成功，但遇到问题。 CRX可能正常工作，也可能无法正常工作。 |
 | 3 | 信息 | 操作已成功。 |
 
-## 用于疑难解答的详细选项 {#verbose-option-used-for-troubleshooting}
+## 用于排除{#verbose-option-used-for-troubleshooting}故障的详细选项
 
-在开始CRX时，可以向命令行添加-v(verbose)选项，如： &quot;
+在开始CRX时，可以向命令行添加-v(verbose)选项，如：&quot;
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 

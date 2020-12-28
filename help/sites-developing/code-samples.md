@@ -20,15 +20,15 @@ ht-degree: 4%
 
 # 代码样本{#code-samples}
 
-Adobe咨询服务团队生成了一系列AEM代码示例。 这些范例是经过充分注释的代码片段，可帮助AEM开发人员了解AEM的关键构件。 这些范例可从以下网页获取： [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/)。
+Adobe咨询服务团队生成了一系列AEM代码示例。 这些范例是经过充分注释的代码片段，可帮助AEM开发人员了解AEM的关键构件。 这些范例可从以下网页获取：[https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/)。
 
-为AEM新手设计的多部分教程涵盖基本主题，如项目设置、核心组件、可编辑模板、客户端库和组件开发： [AEM Sites入门- WKND教程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+为AEM新手设计的多部分教程涵盖基本主题，如项目设置、核心组件、可编辑模板、客户端库和组件开发：[AEM Sites入门- WKND教程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
-AdobeAEM社区团队创建开发人员操作方法文章。 您可以在此处找到 [文章](https://helpx.adobe.com/cn/experience-manager/topics/how-to.html)。
+AdobeAEM社区团队创建开发人员操作方法文章。 您可以在此处](https://helpx.adobe.com/cn/experience-manager/topics/how-to.html)找到文章[。
 
-此处提供一个Maven模板，用于创建新的AEM项目作为开发您自己的功能的 [起点](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)。
+[此处](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)提供一个Maven模板，用于创建新的AEM项目作为开发您自己的功能的起点。
 
-此处提供标准、触屏优化UI代码 [示例](/help/sites-developing/developing-components.md)。
+标准的触屏优化UI代码范例可在[此处](/help/sites-developing/developing-components.md)获取。
 
 还提供其他代码示例：
 

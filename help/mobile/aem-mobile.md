@@ -18,15 +18,15 @@ ht-degree: 2%
 ---
 
 
-# AEM Mobile点播 {#aem-mobile-on-demand}
+# AEM Mobile点播{#aem-mobile-on-demand}
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
 >[!NOTE]
 >
->如果您未将AEM用作内容管理源，请参阅 [AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html)。
+>如果未将AEM用作内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html)。
 
 ## AEM 管理员 {#aem-administrator}
 
@@ -34,13 +34,13 @@ ht-degree: 2%
 >
 >**先决条件:**
 >
->在开始设置AEM Mobile On-demand Services环境之前，请参阅 [AEM Mobile应用程序仪表板或控制中心](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
+>在开始设置AEM Mobile On-demand Services环境之前，请参阅[AEM Mobile应用程序仪表板或控制中心](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
 
-AEM管 ***理员*** 负责通过使用创建向导创建新应用程序或导入现有应用程序来将新应用程序添加到AEM Mobile目录。 AEM管理员使用AEM Mobile的创建向 *导创建新应用* ，通常从现成的参考范例或（在大多数情况下）AEM开发人员创建的自定义应用程序模板中选择一个所需的应用程序 *模板。*
+***AEM administrator***&#x200B;负责通过使用创建向导创建新应用程序或导入现有应用程序将新应用程序添加到AEM Mobile目录。 使用AEM Mobile的&#x200B;*创建向导*&#x200B;创建新应用程序的AEM管理员通常从我们的现成参考范例中选择一个所需的应用程序模板，或者（在大多数情况下）从&#x200B;*AEM开发人员创建的自定义应用程序模板中选择一个所需的应用程序模板。*
 
 >[!NOTE]
 >
->有关设置AEM组和权限的详细信息，请单击“联 [机帮助”中的“创建用户角色](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) ”和“授予访问权限”。
+>有关设置AEM组和权限的详细信息，请单击“联机帮助”中的[“创建用户角色和授予访问权限”](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)。
 
 AEM管理员在使用AEM Mobile On-demand Services创建应用程序时负责以下任务:
 

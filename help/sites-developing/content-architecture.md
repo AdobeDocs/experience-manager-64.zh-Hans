@@ -20,25 +20,25 @@ ht-degree: 0%
 
 # 内容架构{#content-architecture}
 
-## 遵循David的模式 {#follow-david-s-model}
+## 按照David的型号{#follow-david-s-model}操作
 
 David’s Model是多年前由David Nuescheler撰写的，但今天的想法仍然成立。 David’s Model的主要宗旨如下：
 
 * 数据优先，结构后来。 也许吧。
 * 推动内容层次结构，不要让它发生。
-* 工作区适 `clone()`用于 `merge()`、和 `update()`。
+* 工作区适用于`clone()`、`merge()`和`update()`。
 * 提防同名兄弟姐妹。
 * 引用被视为有害的。
 * 文件是文件。
 * 身份是邪恶的。
 
-David’s Model可在Jackrabbitwiki上找到，网址为 [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel)。
+David’s Model可在Jackrabbit wiki上找到，网址为[https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel)。
 
-### 一切都是内容 {#everything-is-content}
+### 所有内容{#everything-is-content}
 
 所有内容都应存储在存储库中，而不是依赖单独的第三方数据源，如数据库。 这适用于创作内容、二进制数据（如图像、代码、配置等）。 这允许我们使用一组API来管理所有内容并通过复制来管理此内容的升级。 我们还可以获得单一的备份、记录等来源。
 
-### 使用“内容模型优先”的设计原则 {#use-the-content-model-first-design-principle}
+### 使用“内容模型优先”设计原则{#use-the-content-model-first-design-principle}
 
 构建新功能时，请始终通过首先设计JCR内容结构来进行开始，然后使用默认的Sling Servlet阅读和编写内容。 这样，您就可以确保实施能够与开箱即用的访问控制机制良好地配合，并避免生成不必要的CRUD样式的servlet。
 
@@ -46,11 +46,11 @@ David’s Model可在Jackrabbitwiki上找到，网址为 [https://wiki.apache.or
 
 Servlet应根据resourceTypes而不是路径进行定义。 这使得可以使用JCR访问控制，遵守REST原则，以及使用请求中提供给我们的资源和资源解析程序。 这还允许我们更改在服务器端呈现URL的脚本，而无需从客户端更改任何URL，同时隐藏客户端实现详细信息以增加安全性。
 
-### 避免定义新节点类型 {#avoid-defining-new-node-types}
+### 避免定义新的节点类型{#avoid-defining-new-node-types}
 
 节点类型在基础架构层处于较低的级别，大多数要求都可以通过使用分配给nt:unstructured, oak:Unstructured, sling:Folder或cq:Page节点类型的sling:resourceType来满足。 节点类型等同于存储库中的模式，并且更改节点类型可能非常昂贵。
 
-### 遵守JCR中的命名约定 {#adhere-to-naming-conventions-in-the-jcr}
+### 遵循JCR {#adhere-to-naming-conventions-in-the-jcr}中的命名约定
 
 遵循命名惯例将为代码库增加一致性，降低缺陷发生率并提高开发人员在系统中工作的速度。 Adobe在开发AEM时使用以下约定：
 

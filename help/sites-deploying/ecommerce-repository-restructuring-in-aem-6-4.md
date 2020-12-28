@@ -17,13 +17,13 @@ ht-degree: 2%
 ---
 
 
-# AEM 6.4中的电子商务存储库重组{#e-commerce-repository-restructuring-in-aem}
+# AEM 6.4{#e-commerce-repository-restructuring-in-aem}中的电子商务存储库重组
 
-如AEM 6.4中的父 [存储库重组页所述](/help/sites-deploying/repository-restructuring.md) ，升级到AEM 6.4的客户应使用此页来评估与影响AEM电子商务解决方案的存储库更改相关的工作。 某些更改需要在AEM 6.4升级过程中进行工作，而其他更改则可推迟到6.5升级。
+如AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的父[存储库重组页所述，升级到AEM 6.4的客户应使用此页来评估与影响AEM电子商务解决方案的存储库更改相关的工作。 某些更改需要在AEM 6.4升级过程中进行工作，而其他更改则可推迟到6.5升级。
 
 ## 升级6.4 {#with-upgrade}
 
-### 产品、订单、集合、分类、发运方法和付款方法数据 {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
+### 产品、订单、集合、分类、发运方法和付款方法数据{#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
 <table> 
  <tbody>
@@ -37,7 +37,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指导</strong></td> 
-   <td><p>您可以使用 <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">延迟迁移</a> 任务迁移电子商务数据。</p> <p>它执行以下步骤：</p> 
+   <td><p>您可以使用<a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">延迟迁移</a>任务迁移电子商务数据。</p> <p>它执行以下步骤：</p> 
     <ul> 
      <li>调整对旧位置的引用以指向新位置</li> 
      <li>将内容从旧位置移到新位置</li> 

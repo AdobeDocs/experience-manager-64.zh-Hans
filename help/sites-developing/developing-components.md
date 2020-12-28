@@ -363,7 +363,7 @@ Granite UI和Granite UI组件（等效于构件）中的字段验证是使用`fo
 
 ## 启用组件并将其添加到段落系统{#enabling-and-adding-your-component-to-the-paragraph-system}
 
-开发组件后，需要启用该组件以在相应的段落系统中使用，以便在所需的页面上使用。
+开发组件后，需要启用该组件以在相应的段落系统中使用，以便在所需的页面上使用它。
 
 可通过以下任一方式执行此操作：
 

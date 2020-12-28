@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 客户用户界面Recommendations{#user-interface-recommendations-for-customers}
+# 客户的用户界面Recommendations{#user-interface-recommendations-for-customers}
 
 Adobe Experience Manager6.4提供两个UI —— 统一的Experience CloudUI和经典UI。
 
@@ -26,17 +26,23 @@ Adobe Experience Manager6.4提供两个UI —— 统一的Experience CloudUI和�
 
 利息条款：
 
-* **UI（或标准UI）** 5.6.0中引入的现代化用户界面是一种技术预览，在后续发行版中进行了扩展。 它基于Adobe Experience Cloud的统一用户体验，以前称为触屏优化UI或触屏优化UI。
+* **UI（或标准UI）**
+5.6.0中引入的现代化用户界面是一种技术预览，在后续发行版中进行了扩展。它基于Adobe Experience Cloud的统一用户体验，以前称为触屏优化UI或触屏优化UI。
 
-* **经典UI**&#x200B;基于ExtJS技术的用户界面（2008年CQ 5.1中引入）。
+* **基**
+于ExtJS技术的经典UIser界面，2008年CQ 5.1中引入了该界面。
 
-* **站点管**&#x200B;理员管理站点层次结构（移动、激活、管理引用）和创建新页面的功能。
+* **站点**
+管理用于管理站点层次结构（移动、激活、管理引用）和创建新页面的功能。
 
-* **页面创**&#x200B;作功能添加／编辑页面内容。
+* **页面**
+创作用于添加／编辑页面内容的功能。
 
-* **DAM/资产管理**&#x200B;功能用于管理数字资产(包括图像、视频、文档、下载)。
+* **DAM/资产管**
+理用于管理数字资产(包括图像、视频、文档、下载)的功能。
 
-* **ContextHub**&#x200B;聚合访客信息并将其用于各种用途的功能。 提供用户界面以模拟访问网站的人员。 从AEM 6.2开始，ContextHub取代了之前的技术Client Context。
+* **ContextHubCapabilities**
+，可聚合有关访客的信息并将其用于各种用途。提供用户界面以模拟访问网站的人员。 从AEM 6.2开始，ContextHub取代了之前的技术Client Context。
 
 ## 常规 {#general}
 
@@ -48,7 +54,7 @@ Adobe建议客户计划在2018/19年切换到新UI。 这可以在6.4的更新�
 
 Adobe不打算对从AEM 6.4开始的经典UI进行进一步的增强。请注意，在弃用经典UI时，仍完全支持经典UI。
 
-## 规则与Recommendations {#rules-and-recommendations}
+## 规则和Recommendations{#rules-and-recommendations}
 
 以下是Adobe Experience Manager6.4产品管理部的一列表建议：
 
@@ -68,10 +74,10 @@ Adobe不打算对从AEM 6.4开始的经典UI进行进一步的增强。请注意
     <ol> 
      <li>更新到6.4</li> 
      <li>使用默认UI进行站点管理、资产…… 以此类推。<br /> </li> 
-     <li>配置“编辑页面”操作以打开经典UI页面编辑器。 See <a href="#selecting-your-ui">Selecting Your UI</a>.</li> 
+     <li>配置“编辑页面”操作以打开经典UI页面编辑器。 请参阅<a href="#selecting-your-ui">选择UI</a>。</li> 
     </ol> <p>然后，在第二阶段：</p> 
     <ol> 
-     <li>更新组件对话框以使用Coral 3对话框格式。 Adobe建议使用 <a href="/help/sites-developing/dialog-conversion.md">对话框转换工</a> 具更新组件。</li> 
+     <li>更新组件对话框以使用Coral 3对话框格式。 Adobe建议使用<a href="/help/sites-developing/dialog-conversion.md">对话框转换工具</a>更新组件。</li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -80,35 +86,35 @@ Adobe不打算对从AEM 6.4开始的经典UI进行进一步的增强。请注意
     <ol> 
      <li>更新到6.4</li> 
      <li>使用默认UI进行站点管理、资产…… 以此类推。</li> 
-     <li>配置“编辑页面”操作以打开经典UI页面编辑器。 See <a href="#selecting-your-ui">Selecting Your UI</a>.</li> 
+     <li>配置“编辑页面”操作以打开经典UI页面编辑器。 请参阅<a href="#selecting-your-ui">选择UI</a>。</li> 
     </ol> <p>然后，在第二阶段：</p> 
     <ol> 
-     <li>更新组件对话框以使用Coral 3对话框格式。 Adobe建议使用 <a href="/help/sites-developing/dialog-conversion.md">对话框转换工</a> 具更新组件。</li> 
+     <li>更新组件对话框以使用Coral 3对话框格式。 Adobe建议使用<a href="/help/sites-developing/dialog-conversion.md">对话框转换工具</a>更新组件。</li> 
      <li>配置ContextHub(ClientContext的替换)并更新页面模板以使用ContextHub。 请注意，ContextHub具有允许加载自定义ClientContext存储的兼容模式。</li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td><p>已使用CQ/AEM多年。</p> <p>已扩展产品UI（例如，站点管理），并构建了包含大量编辑对话框的组件。</p> </td> 
-   <td><p>更新到6.4并将经典UI配置为所有用户进行页面创作的默认UI。 See <a href="#selecting-your-ui">Selecting Your UI</a>.</p> <p>然后开始项目以应用Coral 3格式的自定义和优化组件对话框。 请参 <a href="#resources-to-help">阅帮助资源</a>。<br /> </p> </td> 
+   <td><p>更新到6.4并将经典UI配置为所有用户进行页面创作的默认UI。 请参阅<a href="#selecting-your-ui">选择UI</a>。</p> <p>然后开始项目以应用Coral 3格式的自定义和优化组件对话框。 请参阅帮助</a>的<a href="#resources-to-help">资源。<br /> </a></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 常见问题解答 {#faq}
+## 常见问题解答{#faq}
 
-有关详细信息，请参 [阅知识库文章触屏](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html)UI创作常见问题解答； 包括有关经典UI的弃用计划的任何信息。
+有关详细信息，请参阅知识库文章[触屏UI创作常见问题解答](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html);包括有关经典UI的弃用计划的任何信息。
 
-## Selecting Your UI {#selecting-your-ui}
+## 选择您的UI {#selecting-your-ui}
 
-请参 [阅选择您的UI](/help/sites-authoring/select-ui.md) ，以了解有关根据需要配置系统的信息。
+有关根据需要配置系统的信息，请参阅[选择您的UI](/help/sites-authoring/select-ui.md)。
 
-## 触屏优化UI状态 {#touch-optimized-ui-status}
+## 触屏优化UI状态{#touch-optimized-ui-status}
 
-有关AEM 6.3中触屏优化UI的增强功能的详细信息，请参 [阅发行说明](/help/release-notes/release-notes.md#what-s-new) 中的新增功能。
+有关AEM 6.3中触屏优化UI的增强功能的详细信息，请参阅发行说明中的[新增功能](/help/release-notes/release-notes.md#what-s-new)。
 
-完整概述，请参阅触 [屏UI功能状态页](/help/release-notes/touch-ui-features-status.md) 。
+完整概述请参阅[触屏UI功能状态](/help/release-notes/touch-ui-features-status.md)页
 
-## 帮助资源 {#resources-to-help}
+## 帮助{#resources-to-help}的资源
 
 有关基本操作的背景信息：
 
@@ -118,7 +124,7 @@ Adobe不打算对从AEM 6.4开始的经典UI进行进一步的增强。请注意
 有关详细的开发信息：
 
 * [触屏优化UI架构](/help/sites-developing/touch-ui-concepts.md)。
-* 使用对 [话框转换工具](/help/sites-developing/dialog-conversion.md) ，将组件编辑对话框从经典UI转换为触屏优化UI。
+* 使用[对话框转换工具](/help/sites-developing/dialog-conversion.md)将组件编辑对话框从经典UI转换为触屏优化UI。
 
 * [触屏优化UI的结构](/help/sites-developing/touch-ui-structure.md)。
 

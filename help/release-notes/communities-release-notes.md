@@ -20,11 +20,11 @@ ht-degree: 12%
 
 # AEM Communities 发行说明 {#aem-communities-release-notes}
 
-本节提供有关自6.3版本以来对AEM Communities的改进的信息。 要更详细地了解新增功能，请参 [阅AEM 6.4 Communities的新增功能](/help/communities/whats-new-aem-communities.md)。
+本节介绍自6.3版以来对AEM Communities的改进。 要详细了解新增功能，请参阅[AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md)的新增功能。
 
-To obtain the latest release, see the [Deploying Communities](/help/communities/deploy-communities.md#latest-releases) section of the documentation.
+要获得最新版本，请参阅文档的[部署社区](/help/communities/deploy-communities.md#latest-releases)部分。
 
-## 主要改进 {#main-improvements}
+## 主要改进{#main-improvements}
 
 社区站点:
 
@@ -47,7 +47,7 @@ To obtain the latest release, see the [Deploying Communities](/help/communities/
 
 文件库:
 
-* 社区成员现在对文件库进行了多项增强，如排序、标记……
+* 社区成员现在对文件库进行了多项增强，如排序顺序、标记……
 
 通知:
 
@@ -61,17 +61,17 @@ To obtain the latest release, see the [Deploying Communities](/help/communities/
 
 与AEM 6.4中基本更改的整体兼容性。
 
-注意： AEM 6.3也提供所有这些功能。请查看AEM Communities发行说明以了解 [6.3](https://helpx.adobe.com/cn/experience-manager/6-3/release-notes.html)。
+注意：aem 6.3也提供所有这些功能。请查看AEM Communities的发行说明，了解[6.3](https://helpx.adobe.com/cn/experience-manager/6-3/release-notes.html)。
 
 ## 已知问题 {#known-issues}
 
-* **审核** -无法从批量审核UI中将父帖子作为单个删除操作删除(CQ-4236797)
+* **协调** -无法从批量协调UI中将父帖子作为单个删除操作删除(CQ-4236797)
 * **控制台** -忘记用户名或密码链接正在重定向到登录页面，而不是相应的密码检索表单(CQ-4237682)
 
-## 选择功能 {#select-features}
+## 选择功能{#select-features}
 
-专家评分(*由Sensei提供支持*)用于启用游戏化，这是鼓励和奖励宝贵社区行为的有效方式。 它还可用于为推荐或营销目的确定专家。
+专家评分（*由Sensei*&#x200B;提供支持）-用于启用游戏化，这是鼓励和奖励宝贵社区行为的有效方式。 它还可用于为推荐或营销目的确定专家。
 
-## 演示 {#demonstrations}
+## 演示{#demonstrations}
 
-在使用AEM Communities演示方案时， [也可以在新的We.Retail参考实施中](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) ，使用GitHub.com上公开提供的AEM Demo Machine来演示所有这些功能。
+在使用AEM Communities演示方案时，还可以在新的We.Retail参考实施中使用GitHub.com上公开提供的[AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki)演示所有这些功能。

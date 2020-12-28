@@ -22,15 +22,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
 熟悉文章、横幅和集合上的内容管理操作后，即可发布内容。 您也可以取消发布内容。
 
 >[!NOTE]
 >
->要进一步了解AEM Mobile应用程序的设计注意事项，请参 [阅联机帮助中的AEM Mobile应用程序](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 设计注意事项。
+>要进一步了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)。
 
-## 发布／取消发布内容 {#publishing-unpublishing-the-content}
+## 发布／取消发布内容{#publishing-unpublishing-the-content}
 
 这与“AEM发布”不同。 我们不会将内容推送到AEM发布服务器实例，以使其可以公开查看。 在此，我们将通知Mobile On-Demand，所选内容应在实时Mobile On-Demand应用程序中公开。
 

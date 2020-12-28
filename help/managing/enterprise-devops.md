@@ -63,7 +63,7 @@ Adobe Experience Manager(AEM)部署通常由多个环境组成，用于不同级
 
 ### 质量保证 {#quality-assurance}
 
-This environment is used by the quality assurance team to comprehensively [test](/help/sites-developing/test-plan.md) your new system; both design and function. 它应同时具有创作和发布环境（包含适当的内容），并提供所有必要的服务以启用完整的测试套件。
+质量保证团队使用此环境全面[测试](/help/sites-developing/test-plan.md)您的新系统；设计和功能。 它应同时具有创作和发布环境（包含适当的内容），并提供所有必要的服务以启用完整的测试套件。
 
 ### 暂存 {#staging}
 
@@ -141,6 +141,6 @@ AEM项目经常触发代码部署：
 可以在以下位置传输内容：
 
 * 在不同环境之间 - 通过导出和导入包。
-* Between different instances - by directly replicating ([AEM replication](/help/sites-deploying/replication.md)) the content (using a HTTP, or HTTPS, connection).
+* 在不同实例之间——通过直接复制([AEM复制](/help/sites-deploying/replication.md))内容（使用HTTP或HTTPS连接）。
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

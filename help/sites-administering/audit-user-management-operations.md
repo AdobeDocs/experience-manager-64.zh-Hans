@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# 如何审计AEM中的用户管理操作{#how-to-audit-user-management-operations-in-aem}
+# 如何审核AEM{#how-to-audit-user-management-operations-in-aem}中的用户管理操作
 
 ## 简介 {#introduction}
 
@@ -30,24 +30,24 @@ AEM引入了记录权限更改的功能，以便以后可以审核这些更改�
 * 被添加到组的用户
 * 现有用户或用户组的权限更改
 
-默认情况下，这些条目将写入文 `error.log` 件。 为了简化监控，建议将它们重定向到单独的日志文件。 有关如何执行此操作的更多信息，请参阅以下段落。
+默认情况下，这些条目将写入`error.log`文件。 为了简化监控，建议将它们重定向到单独的日志文件。 有关如何执行此操作的更多信息，请参阅以下段落。
 
-## 将输出重定向到单独的日志文件 {#redirecting-the-output-to-a-separate-log-file}
+## 将输出重定向到单独的日志文件{#redirecting-the-output-to-a-separate-log-file}
 
-要将日志记录输出重定向到单独的日志文件，您需要创建新的 **Apache Sling日志记录器配置** 。 我们将在 `useraudit.log` 以下示例中作为单独文件的名称。
+要将日志记录输出重定向到单独的日志文件，您需要创建新的&#x200B;**Apache Sling日志记录器**&#x200B;配置。 我们将在以下示例中使用`useraudit.log`作为单独文件的名称。
 
-1. 通过浏览到 `https://<serveraddress>:<serverport>/system/console/configMgr`
-1. 搜索 **Apache Sling日志记录器配置**。 然后，按条目右侧的“+”以创建新工厂配置。
+1. 浏览至`https://<serveraddress>:<serverport>/system/console/configMgr`，转到Web控制台
+1. 搜索&#x200B;**Apache Sling日志记录器配置**。 然后，按条目右侧的“+”以创建新工厂配置。
 1. 创建以下配置：
 
-   * **日志级别：** 信息
+   * **日志级别：信** 息
    * **日志文件：** logs/useraudit.log
    * **消息模式：** 级别默认值
-   * **记录器：** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.可授权的Servlet
+   * **Logger:** com.adobe.granite.security.user.internal.audit、com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   要将两个记录器输入 **到Logger** 字段中，您需要输入第一个记录器的名称，然后按“+”按钮并输入第二个记录器的名称，以创建另一个字段。
+   要在&#x200B;**Logger**&#x200B;字段中输入两个记录器，您需要输入第一个记录器的名称，然后按“+”按钮并输入第二个记录器的名称，以创建另一个字段。
 
-## 示例输出 {#example-output}
+## 输出示例{#example-output}
 
 如果配置正确，输出应如下所示：
 

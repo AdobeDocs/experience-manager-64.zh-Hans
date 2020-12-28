@@ -32,7 +32,7 @@ ht-degree: 93%
 >[!NOTE]
 >
 >Adobe不打算进一步增强此功能(管理潜在客户和列表)。\
->建议利用 [Adobe Campaign和AEM集成](/help/sites-administering/campaign.md)。
+>建议利用[Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md)。
 
 ## 为新闻稿创建列表 {#creating-a-list-for-the-newsletter}
 
@@ -88,7 +88,7 @@ ht-degree: 93%
 
 1. 使用两个 Teaser 创建市场活动 -- 一个带有企业标记，一个没有企业标记。
 
-## 将内容推送给订阅者 {#pushing-content-to-subscribers}
+## 将内容推送给订阅者  {#pushing-content-to-subscribers}
 
 通过 MCM 中的新闻稿功能将所有更改内容推送到页面中。然后向订阅者推送更新内容。
 

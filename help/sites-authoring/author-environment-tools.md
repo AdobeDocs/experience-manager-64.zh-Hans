@@ -48,7 +48,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 在编辑页面时，**帮助**&#x200B;可从以下位置访问：
 
-* [**页面信息&#x200B;**](/help/sites-authoring/editing-page-properties.md#page-properties)选择器，这将显示幻灯片介绍（在您第一次访问编辑器时显示）。
+* [**页面信息**](/help/sites-authoring/editing-page-properties.md#page-properties)&#x200B;选择器，这将显示幻灯片介绍（在您第一次访问编辑器时显示）。
 * 适用于特定组件的[配置](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)对话框（使用对话工具栏中的 ? 图标）；这将根据上下文显示帮助。
 
 其他[与帮助相关的资源可以从控制台中访问](/help/sites-authoring/basic-handling.md#accessing-help)。
@@ -269,13 +269,13 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 例如，在适当时，**页面信息**&#x200B;还有以下选项：
 
 * [提升启动项](/help/sites-authoring/launches-promoting.md)，如果该页面是启动项。
-* [编辑模板](/help/sites-authoring/templates.md) (如果页面基于可编辑的模 [板)](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [编辑](/help/sites-authoring/templates.md) 模板(如果页面基于可编辑的模 [板)](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [如果管理员已启用](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) 此选项，则在经 [典UI中打开](/help/sites-administering/enable-classic-ui-editor.md)
+* [在经典UI](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) 中打开如果管理员 [启用了此选项](/help/sites-administering/enable-classic-ui-editor.md)
 
 另外，在适当时，**页面信息**&#x200B;还允许访问分析和建议。
 
-## 页面模式 {#page-modes}
+## 页面模式  {#page-modes}
 
 编辑页面时可以使用多种模式来执行不同的操作：
 
@@ -315,7 +315,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 在创作时，通常需要选择其他资源，例如在定义指向其他页面或资源的链接或者选择图像时。为了轻松选择路径，[路径字段](/help/sites-authoring/author-environment-tools.md#path-fields)提供了自动完成功能，并且还可通过[路径浏览器](/help/sites-authoring/author-environment-tools.md#path-browser)做出更可靠的选择。
 
-### 路径字段 {#path-fields}
+### 路径字段  {#path-fields}
 
 此处所用的说明示例是图像组件。有关使用和编辑组件的更多信息，请参阅[页面创作组件](/help/sites-authoring/default-components.md)。
 

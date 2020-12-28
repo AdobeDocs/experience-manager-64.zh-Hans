@@ -22,7 +22,7 @@ ht-degree: 97%
 
 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，需要解决许多AEM项目的SEO问题。
 
-This document first describes some [SEO best practices](#seo-best-practices) and recommendations for achieving these on an AEM implementation. 然后，本文档更深入地介绍了第一节中提出的一些更加[复杂的实施步骤](#aem-configurations)。
+本文档首先介绍了一些 [SEO 最佳实践](#seo-best-practices)以及在 AEM 实施上实现这些最佳实践的建议。然后，本文档更深入地介绍了第一节中提出的一些更加[复杂的实施步骤](#aem-configurations)。
 
 ## SEO 最佳实践 {#seo-best-practices}
 
@@ -218,7 +218,7 @@ Resource myPage = req.getResource();
 
 >[!NOTE]
 >
-> The `sling:alias` property can be set using the [Alias property when editing Page Properties](/help/sites-authoring/editing-page-properties.md#advanced)
+> 在编辑页面属性](/help/sites-authoring/editing-page-properties.md#advanced)时，可以使用[别名属性设置`sling:alias`属性
 
 #### /etc/map {#etc-map}
 

@@ -82,7 +82,7 @@ ht-degree: 96%
 
    允许您为此页面输入虚 URL。通过这种方式，您可以使用更短并且含意更清楚的 URL。
 
-   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
+   例如，如果对于网站h `ttp://example.com,`，虚URL设置为w `elcome`，且路径/ `v1.0/startpage`标识的页面为h &lt;a2/>，则h `ttp://example.com/welcome`将是h `ttp://example.com/content/v1.0/startpage`的虚URL
 
    >[!CAUTION]
    >
@@ -134,7 +134,7 @@ ht-degree: 96%
 
    指定导出配置。
 
-### 缩略图 {#thumbnail}
+### 缩略图  {#thumbnail}
 
 * **页面缩略图**
 
@@ -172,13 +172,13 @@ ht-degree: 96%
 
    在[多站点管理](/help/sites-administering/msm.md)中为 Blueprint 页面定义属性。控制将修改传播到 Live Copy 的情况。
 
-### Live Copy {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
    在[多站点管理](/help/sites-administering/msm.md)中为 Live Copy 页面定义属性。控制将从 Blueprint 中传播修改的情况。
 
-### 站点结构 {#site-structure}
+### 站点结构  {#site-structure}
 
 * 提供具有全站点功能的页面的链接，例如&#x200B;**注册页面**、**脱机页面**&#x200B;以及其他。
 
@@ -190,7 +190,7 @@ ht-degree: 96%
 
 1. 打开要编辑的页面。
 
-1. 在 Sidekick 中，打开“**页面**”选项卡，然后选择“**页面属性...**”
+1. 在 Sidekick 中，打开&#x200B;**页面**&#x200B;选项卡，然后选择&#x200B;**页面属性...**。
 
    这会打开一个包含多个选项卡的对话框。
 

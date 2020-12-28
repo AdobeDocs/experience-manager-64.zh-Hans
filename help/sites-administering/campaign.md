@@ -36,5 +36,5 @@ Adobe Campaign 是一套解决方案，允许您在所有在线渠道和离线�
 
 >[!NOTE]
 >
->要查看相关的AEM社区文章，请参阅： [整合Adobe Experience Manager和Adobe Campaign Standard，创造Newletter](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)。
+>要查看相关的AEM社区文章，请参阅：[整合Adobe Experience Manager和Adobe Campaign Standard以创建Newletter](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)。
 

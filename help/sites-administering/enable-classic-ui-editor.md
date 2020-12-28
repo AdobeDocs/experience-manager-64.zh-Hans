@@ -24,7 +24,7 @@ ht-degree: 5%
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-要重新启用“页面信 **息”菜单中** 的“在经 **典UI中打开** ”选项，请执行以下步骤。
+要重新启用&#x200B;**页面信息**&#x200B;菜单中的选项&#x200B;**在经典UI**&#x200B;中打开，请执行以下步骤。
 
 1. 使用CRXDE Lite，找到以下节点：
 
@@ -34,17 +34,17 @@ ht-degree: 5%
 
    `http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
-1. 使用“叠加节点” **选项创建叠** 加； 例如：
+1. 使用&#x200B;**叠加节点**&#x200B;选项创建叠加；例如：
 
    * **路径**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **覆盖位置**: `/apps/`
-   * **匹配节点类型**: 活动（选中复选框）
+   * **匹配节点类型**:活动（选中复选框）
 
 1. 将以下多值文本属性添加到叠加的节点：
 
    `sling:hideProperties = ["granite:hidden"]`
 
-1. 编辑 **页面时，“页面信息** ”菜单中也 **提供了“在经** 典UI中打开”选项。
+1. 编辑页面时，在&#x200B;**页面信息**&#x200B;菜单中再次提供&#x200B;**在经典UI中打开**&#x200B;选项。
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 

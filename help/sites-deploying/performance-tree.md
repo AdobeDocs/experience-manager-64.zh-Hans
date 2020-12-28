@@ -26,7 +26,7 @@ ht-degree: 4%
 
 图中的每个步骤都链接到文档资源或推荐。
 
-## 先决条件和假设 {#prerequisites-and-assumptions}
+## 先决条件和假设{#prerequisites-and-assumptions}
 
 假定在给定页面(AEM控制台或网页)上观察到性能问题，并可以一致地重现。 在开始调查之前，要想测试或监控性能，必须先做好准备。
 
@@ -42,17 +42,17 @@ ht-degree: 4%
 
 ### 章节 3 {#section-2}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ### 章节 4 {#section-3}
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
-### Section 5 {#section-4}
+### 第5节{#section-4}
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-## 引用链接 {#reference-links}
+## 引用链接{#reference-links}
 
 <table> 
  <tbody> 
@@ -64,7 +64,7 @@ ht-degree: 4%
   <tr> 
    <td><strong>步骤 0</strong></td> 
    <td>分析请求流</td> 
-   <td><p>您可以在浏览器中使用标准HTTP请求分析来分析请求流。 有关如何在Chrome上执行此操作的详细信息，请参阅：<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td> 
+   <td><p>您可以在浏览器中使用标准HTTP请求分析来分析请求流。 有关如何在Chrome上执行此操作的详细信息，请参阅：<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> loadinghttps://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 2</strong></td> 
@@ -74,17 +74,17 @@ ht-degree: 4%
   <tr> 
    <td><strong>步骤 3</strong></td> 
    <td>是否可以缓存请求？</td> 
-   <td>有关可缓存请求和一般调度程序性能优化建议的更多信息，请参 <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">阅调度程序性能优化</a>。</td> 
+   <td>有关可缓存请求和一般调度程序性能优化建议的详细信息，请参阅<a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">调度程序性能优化</a>。</td> 
   </tr> 
   <tr> 
    <td><strong>步骤 4</strong></td> 
    <td>请求是否来自调度程序？</td> 
-   <td><p>请查阅Dispatcher <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">调试文档</a> ，查看请求是否正确缓存。<br /> </p> </td> 
+   <td><p>检查<a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">调试程序调试文档</a>以查看请求是否正确缓存。<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 5</strong></td> 
    <td>调度程序是否正尝试通过AEM验证每个请求？</td> 
-   <td>在传送缓存资源 <code>HEAD</code> 之前，检查调度程序是否向AEM发送请求以进行身份验证。 您可以在AEM中查找 <code>HEAD</code> 请求来完成此 <code>access.log</code>操作。 有关详细信息，请参 <a href="/help/sites-deploying/configure-logging.md">阅日志</a>。<br /> </td> 
+   <td>在传送缓存资源之前，检查调度程序是否向AEM发送<code>HEAD</code>请求以进行身份验证。 可以通过在AEM <code>access.log</code>中查找<code>HEAD</code>请求来完成此操作。 有关详细信息，请参阅<a href="/help/sites-deploying/configure-logging.md">日志记录</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 6</strong></td> 
@@ -99,7 +99,7 @@ ht-degree: 4%
   <tr> 
    <td><strong>步骤 8</strong></td> 
    <td>本地实例的速度慢是否可以重现？</td> 
-   <td><br /> <p>使 <a href="/help/sites-developing/tough-day.md">用Tough</a> Day从生产实例复制“真实世界”条件。 如果这种情况不适用于您的开发过程，请确保在不同的网络上下文中测试生产实例（或相同的分阶段实例）。<br /> </p> </td> 
+   <td><br /> <p>使用<a href="/help/sites-developing/tough-day.md">Tough Day</a>从生产实例复制“真实世界”条件。 如果这种情况不适用于您的开发，请确保在不同的网络上下文中测试生产实例（或相同的分阶段实例）。<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 9</strong></td> 
@@ -109,7 +109,7 @@ ht-degree: 4%
   <tr> 
    <td><strong>步骤10和29</strong></td> 
    <td>调查网络层</td> 
-   <td><p>调查网络层的饱和度和延迟问题。</p> <p>对于作者层，建议延迟不超过100毫秒。</p> <p>有关性能优化提示的更多信息，请参 <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">阅本页</a>。</p> </td> 
+   <td><p>调查网络层的饱和度和延迟问题。</p> <p>对于作者层，建议延迟不超过100毫秒。</p> <p>有关性能优化提示的详细信息，请参阅<a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">此页</a>。</p> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 11</strong></td> 
@@ -124,7 +124,7 @@ ht-degree: 4%
   <tr> 
    <td><strong>步骤 13</strong></td> 
    <td>检查硬件要求</td> 
-   <td>查看有关硬件大小 <a href="/help/managing/hardware-sizing-guidelines.md">调整指南的文档</a>。<br /> </td> 
+   <td>请查阅<a href="/help/managing/hardware-sizing-guidelines.md">硬件大小调整指南</a>的相关文档。<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 14</strong></td> 
@@ -134,12 +134,12 @@ ht-degree: 4%
   <tr> 
    <td><strong>步骤 15</strong></td> 
    <td>查找慢速请求</td> 
-   <td><p>您可以通过分析或使用来检查 <code>request.log</code> 慢速请求 <code>rlog.jar</code>。</p> <p>有关使用rlog.jar的详细信息，请参阅此页。</p> <p>请参 <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">阅使用rlog.jar查找持续时间较长的请求</a>。<br /> </p> <p> </p> </td> 
+   <td><p>您可以通过分析<code>request.log</code>或使用<code>rlog.jar</code>检查慢速请求。</p> <p>有关使用rlog.jar的详细信息，请参阅此页。</p> <p>请参阅<a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">使用rlog.jar查找持续时间较长的请求</a>。<br /> </p> <p> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 16</strong></td> 
    <td>用户档案服务器</td> 
-   <td><p>有关可与AEM一起使用的分析工具的信息，请参 <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">阅监视和分析性能工具</a>。<br /> </p> </td> 
+   <td><p>有关可与AEM一起使用的分析工具的信息，请参见<a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">性能监视和分析工具</a>。<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 17</strong></td> 
@@ -149,7 +149,7 @@ ht-degree: 4%
   <tr> 
    <td><strong>步骤 18</strong></td> 
    <td>概要分析的常见情况</td> 
-   <td>请参 <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">阅“性能优化</a> ”部分中的分析特定方案。<br /> </td> 
+   <td>请参阅性能优化部分中的<a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">分析特定方案</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 19</strong></td> 
@@ -169,12 +169,12 @@ ht-degree: 4%
   <tr> 
    <td><strong>步骤 21</strong></td> 
    <td>磁盘I/O</td> 
-   <td><p>请参 <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">阅监视和维护文档</a> 中的Disk I/O部分。</p> </td> 
+   <td><p>请参阅监视和维护文档中的<a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">磁盘I/O</a>部分。</p> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤22和22.1</strong></td> 
    <td>高速缓存比率</td> 
-   <td>请参 <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">阅计算调度程序缓存比率</a>。<br /> <br /> </td> 
+   <td>请参阅<a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">计算调度程序缓存比率</a>。<br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 23</strong></td> 
@@ -214,7 +214,7 @@ ht-degree: 4%
     <ol> 
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">资产同步服务</a></li> 
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">多个DAM实例</a></li> 
-     <li>此处和此处的性能 <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">调整</a> 提 <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">示文章</a>。<br /> </li> 
+     <li>性能调整提示文章<a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">此处</a>和<a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">此处</a>。<br /> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -244,7 +244,7 @@ ht-degree: 4%
     <ol> 
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">常规调度程序配置</a></li> 
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">配置调度程序缓存</a></li> 
-    </ol> <p>如何提高缓存率； 使请求可缓存（调度程序最佳实践）</p> <p>此外，要优化缓存配置，请考虑以下设置<br /> </p> 
+    </ol> <p>如何提高缓存率；使请求可缓存（调度程序最佳实践）</p> <p>此外，要优化缓存配置，请考虑以下设置<br /> </p> 
     <ol> 
      <li>为非GET的HTTP请求设置无缓存规则</li> 
      <li>将查询字符串配置为不可缓存</li> 
@@ -260,7 +260,7 @@ ht-degree: 4%
   <tr> 
    <td><strong>步骤 35</strong></td> 
    <td>配置调度程序</td> 
-   <td><a href="https://helpx.adobe.com/cn/experience-manager/dispatcher/using/dispatcher-configuration.html">配置调度程序</a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">配置调度程序</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 36</strong></td> 
@@ -289,17 +289,17 @@ ht-degree: 4%
   <tr> 
    <td><strong>步骤45<br /> 和47</strong><br /> </td> 
    <td>使用HTTP/2</td> 
-   <td>有关步骤37、38和39，请参见创业板会议。 此外，请查看 <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">此论</a> 坛帖子，了解HTTP/2支持。<br /> </td> 
+   <td>有关步骤37、38和39，请参见创业板会议。 另外，请查看<a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">此</a>论坛帖子，了解HTTP/2支持。<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 49</strong></td> 
    <td>缩小有效负荷大小</td> 
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">启用Gzip</a> 并 <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">缩小图像大小</a>。<br /> </td> 
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">启</a> 用Gzip <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">并缩小图像大小</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤42和43</strong></td> 
    <td>保持活动</td> 
-   <td><p>不同 <code>Keep-Alive</code> 请求中是否存在重新使用连接的标头？ 否则，这意味着每个请求都会导致另一个连接建立，这会带来不必要的开销。 (浏览器中的标准HTTP请求分析)</p> <p>您可以检查代 <a href="/help/sites-administering/proxy-jar.md">理服务器工具</a> ，以检查“保持活动”连接。<br /> </p> </td> 
+   <td><p>不同请求中是否存在<code>Keep-Alive</code>头以重新使用连接？ 否则，这意味着每个请求都会导致另一个连接建立，这会带来不必要的开销。 (浏览器中的标准HTTP请求分析)</p> <p>您可以检查<a href="/help/sites-administering/proxy-jar.md">代理服务器工具</a>以检查“保持活动”连接。<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 44</strong></td> 

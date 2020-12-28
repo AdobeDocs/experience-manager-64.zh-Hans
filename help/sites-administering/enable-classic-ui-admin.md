@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-在中具有经典UI版本的每个控制台 `/libs/cq/core/content/nav` 都可以单独重新启用，这样 **将鼠标悬停在控制台图标上时，“经** 典UI”选项会再次弹出到该控制台图标上。
+每个在`/libs/cq/core/content/nav`中具有经典UI版本的控制台都可以单独重新启用，这样，将鼠标移过控制台图标时，**经典UI**&#x200B;选项会再次弹出。
 
 在此示例中，我们将重新为站点控制台启用经典UI。
 
@@ -40,17 +40,17 @@ ht-degree: 1%
 
    `/libs/cq/core/content/nav/sites`
 
-1. 使用“叠加节点” **选项创建叠** 加； 例如：
+1. 使用&#x200B;**叠加节点**&#x200B;选项创建叠加；例如：
 
    * **路径**: `/apps/cq/core/content/nav/sites`
    * **覆盖位置**: `/apps/`
-   * **匹配节点类型**: 活动（选中复选框）
+   * **匹配节点类型**:活动（选中复选框）
 
 1. 将以下布尔属性添加到叠加的节点：
 
    `enableDesktopOnly = {Boolean}true`
 
-1. 经典 **UI选项** 在管理控制台中再次作为弹出窗口选项可用。
+1. “**经典UI**”选项在管理控制台中再次作为弹出选项可用。
 
    ![screen_shot_2018-03-23at111924](assets/screen_shot_2018-03-23at111924.png)
 

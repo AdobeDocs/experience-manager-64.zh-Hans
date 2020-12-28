@@ -41,18 +41,18 @@ ht-degree: 81%
 
 1. 使用 Mental Ray 设置渲染。
 
-   Configure the **[!UICONTROL Render Settings]** with the following suggestions:
+   根据以下建议配置&#x200B;**[!UICONTROL 渲染设置]**:
 
-   * **[!UICONTROL “常用]** ”选项卡
+   * **[!UICONTROL 公用选]** 项卡
 
-      Deselect the **[!UICONTROL Alpha channel (mask)]** check box for all [!UICONTROL Renderable Cameras].
+      取消选中所有[!UICONTROL 可渲染相机]的&#x200B;**[!UICONTROL Alpha渠道（遮罩）]**&#x200B;复选框。
 
    * **[!UICONTROL “质量”选项卡]**
 
-      * **[!UICONTROL 整体质量]**`- 0.5` 或更低
-      * **[!UICONTROL 间接扩散(GI)模式]** - `Final Gather`
-      * **[!UICONTROL 筛选器大小]** - `2.0`、 `2.0`
-   * 以您希望使用的典型图像大小渲染场景。If necessary, refine the lights, or [!UICONTROL Render settings], or do both to achieve the results you want.
+      * **[!UICONTROL 整体]** `- 0.5` 质量或更低
+      * **[!UICONTROL 间接扩散(GI)模式]** -  `Final Gather`
+      * **[!UICONTROL 滤镜大小]** - `2.0`,  `2.0`
+   * 以您希望使用的典型图像大小渲染场景。如有必要，调整灯光，或者[!UICONTROL 渲染设置]，或者同时执行这两项操作，以获得所需的效果。
 
       请注意，通过 Mental Ray 使用基于图像的照明进行渲染时，速度会非常缓慢且会消耗大量 CPU。Adobe 建议您配置最低质量设置，该设置仍能生成所需的渲染质量。
 

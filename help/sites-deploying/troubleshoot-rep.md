@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 复制疑难解答{#troubleshooting-replication}
+# 复制故障排除{#troubleshooting-replication}
 
 本页提供有关如何解决复制问题的信息。
 
-## 问题 {#problem}
+## 问题{#problem}
 
 复制（非反向复制）因某种原因失败。
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 复制失败有多种原因。 本文阐述了在分析这些问题时可能采取的方法。
 
-**单击激活按钮时，复制是否会被触发？ 如果不是，请执行以下操作：**
+**单击激活按钮时，复制是否会被触发？如果不是，则执行以下操作：**
 
 1. 转到/crx/explorer(CQ5.5)并以管理员身份登录。
 1. 打开“内容浏览器”
@@ -42,8 +42,8 @@ ht-degree: 0%
 
 **如果一个代理队列或几个代理队列被卡住：**
 
-1. 队列是否显示 **阻止** 状态？ 如果是，则发布实例未运行或完全无响应？ 检查发布实例以查看其错误（即检查日志，并查看是否存在OutOfMemory错误或其他问题）。 然后，如果速度通常比较慢，则进行线程转储并分析。
-1. 队列状态是否显 **示队列处于活动状态- # pending**? 基本上，复制作业可能会卡在套接字读取中，等待发布实例或调度程序做出响应。 这可能意味着发布实例或调度程序处于高负载状态或卡在锁中。 从作者处获取线程转储，并在此情况下发布。
+1. 队列是否显示&#x200B;**blocked**&#x200B;状态？ 如果是，则发布实例未运行或完全无响应？ 检查发布实例以查看其错误（即检查日志，并查看是否存在OutOfMemory错误或其他问题）。 然后，如果速度通常比较慢，则进行线程转储并分析。
+1. 队列状态是否显示&#x200B;**队列处于活动状态- # pending**? 基本上，复制作业可能会卡在套接字读取中，等待发布实例或调度程序做出响应。 这可能意味着发布实例或调度程序处于高负载状态或卡在锁中。 从作者处获取线程转储，并在此情况下发布。
 
    * 在线程转储分析器中，从作者打开线程转储，检查复制代理的sling事件作业是否卡在socketRead中。
    * 在线程转储分析器中从发布打开线程转储，分析可能导致发布实例不响应的原因。 您应当看到名称中带有/bin/receivePOST的线程，即从作者处接收复制的线程。
@@ -74,42 +74,42 @@ ht-degree: 0%
 
 有时，将所有复制日志记录设置为在DEBUG级别的单独日志文件中会非常有用。 要执行此操作：
 
-1. 转到并 `https://host:port/system/console/configMgr` 以管理员身份登录。
-1. 查找Apache Sling Logging Logger工厂，并通过单击工厂配 **置右** 侧的+按钮创建实例。 这将创建新的日志记录记录器。
+1. 转到`https://host:port/system/console/configMgr`并以管理员身份登录。
+1. 查找Apache Sling Logging Logger工厂，并通过单击工厂配置右侧的&#x200B;**+**&#x200B;按钮创建一个实例。 这将创建新的日志记录记录器。
 1. 设置如下配置：
 
-   * 日志级别： 调试
-   * 日志文件路径： *（CQ5.4和5.3）* ../logs/replication.log *(CQ5.5)* logs/replication.log
-   * 类别: com.day.cq.replication
+   * 日志级别：调试
+   * 日志文件路径：*（CQ5.4和5.3）* ../logs/replication.log *(CQ5.5)* logs/replication.log
+   * 类别:com.day.cq.replication
 
 1. 如果您怀疑此问题与sling事件／作业有关，则还可以在类别:org.apache.sling.事件下添加此java包
 
-### 暂停复制代理队列  {#pausing-replication-agent-queue}
+### 暂停复制代理队列{#pausing-replication-agent-queue}
 
 有时，它可能适合暂停复制队列以减少创作系统上的负载，而不禁用它。 目前，只有通过临时配置无效端口才能实现此操作。 从5.4开始，您可以看到复制代理队列中的暂停按钮有一些限制
 
 1. 状态不会持久，这意味着如果重新启动服务器或复制捆绑包被循环使用，它将返回运行状态。
 1. 暂停的空闲时间较短(在没有其他线程复制的活动后1小时，OOB为空)，而不是更长的时间。 因为吊具有避免空闲线的功能。 基本上，检查作业队列线程是否已使用较长时间，如果这样，它将启动清理循环。 由于清理周期，它会停止线程，因此暂停的设置会丢失。 由于作业被保留，因此会启动一个新线程来处理没有暂停配置详细信息的队列。 由于此队列变为运行状态。
 
-### 在用户激活中不复制页面权限 {#page-permissions-are-not-replicated-on-user-activation}
+### 用户激活{#page-permissions-are-not-replicated-on-user-activation}上未复制页面权限
 
 页面权限不会复制，因为它们存储在授予访问权限的节点下，而不存储在用户下。
 
 一般情况下，页面权限不应从作者复制到发布，默认情况下不应复制。 这是因为这两个环境的访问权限应不同。 因此，建议在发布时单独配置ACL（与作者分开配置）。
 
-### 将命名空间信息从“作者”复制到“发布”时，复制队列被阻止 {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+### 将命名空间信息从作者复制到发布{#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}时，复制队列被阻止
 
-在某些情况下，当尝试将命名空间信息从创作实例复制到发布实例时，复制队列会被阻止。 这是因为复制用户没有权 `jcr:namespaceManagement` 限。 要避免此问题，请确保：
+在某些情况下，当尝试将命名空间信息从创作实例复制到发布实例时，复制队列会被阻止。 这是因为复制用户没有`jcr:namespaceManagement`权限。 要避免此问题，请确保：
 
-* 复制用户(如“传输”选项卡>“ [用户](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) ”下所配置)也存在于“发布”实例中。
+* 复制用户（如[传输](/help/sites-deploying/replication.md#replication-agents-configuration-parameters)选项卡>用户下配置）也存在于发布实例中。
 * 用户在安装内容的路径上具有读写权限。
-* 用户在存 `jcr:namespaceManagement` 储库级别具有权限。 您可以按如下方式授予权限：
+* 用户在存储库级别具有`jcr:namespaceManagement`权限。 您可以按如下方式授予权限：
 
-1. 以管理员身份登录 `http://localhost:4502/crx/de/index.jsp`到CRX/DE()。
-1. 单击“ **访问控制** ”选项卡。
-1. 选择 **存储库**。
-1. 单击 **添加条目** （加号图标）。
+1. 以管理员身份登录到CRX/DE(`http://localhost:4502/crx/de/index.jsp`)。
+1. 单击&#x200B;**访问控制**&#x200B;选项卡。
+1. 选择&#x200B;**存储库**。
+1. 单击&#x200B;**添加条目**（加号图标）。
 1. 输入用户的名称。
-1. 从权 `jcr:namespaceManagement` 限列表中选择。
+1. 从权限列表中选择`jcr:namespaceManagement`。
 1. 单击确定。
 

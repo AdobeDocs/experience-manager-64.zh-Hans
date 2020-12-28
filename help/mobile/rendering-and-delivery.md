@@ -21,9 +21,9 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
-AEM内容可以通过Sling Default [Servlet轻松呈现](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) ，以 [呈现JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 和其他格式。
+AEM内容可以通过[Sling默认Servlet](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)轻松呈现，以呈现[JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering)和其他格式。
 
 这些现成的呈现方式通常沿着存储库移动，并按原样返回内容。
 
@@ -37,30 +37,30 @@ AEM还通过Sling支持开发和部署自定义sling渲染器以完全控制渲�
 
 ## 请求JSON {#requesting-json}
 
-使 **用&lt;RESOURCE.caas[。&lt;EXPORT-CONFIG][。&lt;EXPORT-CONFIG].json** ，用于请求JSON。
+使用&#x200B;**&lt;RESOURCE.caas[。&lt;export-config>.][&lt;export-config>.] jsonto请求JSON。**
 
 <table>
  <tbody>
   <tr>
    <td>资源</td>
-   <td>/content/entities下的实体资源<br /> ，或 <br /> /content下的内容资源</td>
+   <td>/content/entities<br />或<br />下的实体资源位于/content下</td>
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>可选</strong><br /> </p> <p>在/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG下找到的导出配置<br /><br /> 如果忽略，将应用默认的导出配置 </p> </td>
+   <td><p><strong>可选</strong><br /> </p> <p>在/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br />下找到的导出配置如果省略，将应用默认的导出配置 </p> </td>
   </tr>
   <tr>
    <td>深度——整型</td>
-   <td><strong>可选</strong><br /><br /> 的深度递归，用于渲染子项（在Sling渲染中使用）</td>
+   <td><strong>可选</strong><br /> <br /> 深度递归，用于渲染Sling渲染中使用的子项</td>
   </tr>
  </tbody>
 </table>
 
-## 创建导出配置 {#creating-export-configs}
+## 创建导出配置{#creating-export-configs}
 
 可以创建导出配置以自定义JSON渲染。
 
-您可以在/apps/mobileapps/ *caas/exportConfigs下创建配置节点。*
+您可以在&#x200B;*/apps/mobileapps/caas/exportConfigs下创建配置节点。*
 
 | 节点名称 | 配置的名称（用于渲染选择器） |
 |---|---|
@@ -110,7 +110,7 @@ AEM还通过Sling支持开发和部署自定义sling渲染器以完全控制渲�
    <td>String[]</td>
    <td>包含所有内容</td>
    <td>属性名称</td>
-   <td><p>如果excludePropertyPrefixes设置<br /> ，则这包括指定属性，尽管与被排除的前缀匹配，</p> <p>else（忽略的排除属性）仅包括这些属性</p> </td>
+   <td><p>如果excludePropertyPrefixes set<br />这包括指定属性，尽管与被排除的前缀匹配，</p> <p>else（忽略的排除属性）仅包括这些属性</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -136,13 +136,13 @@ AEM还通过Sling支持开发和部署自定义sling渲染器以完全控制渲�
  </tbody>
 </table>
 
-### 资源类型导出重写 {#resource-type-export-overrides}
+### 资源类型导出覆盖{#resource-type-export-overrides}
 
-在/apps/mobileapps/ *caas/exportConfigs下创建配置节点。*
+在&#x200B;*/apps/mobileapps/caas/exportConfigs下创建配置节点。*
 
-| 名称 | resourceTypeOverrides |
+| name | resourceTypeOverrides |
 |---|---|
-| jcr:primaryType | nt:unstructured |
+| jcr:primaryType | nt：非结构化 |
 
 下表显示了属性：
 
@@ -156,27 +156,27 @@ AEM还通过Sling支持开发和部署自定义sling渲染器以完全控制渲�
    <td><strong>描述</strong></td>
   </tr>
   <tr>
-   <td>&lt;SELECTOR_TO_INC&gt;</td>
+   <td>&lt;selector_to_inc&gt;</td>
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>对于以下sling资源类型，不要返回默认的CaaS json导出。<br /> 将资源渲染为，以返回客户json导出；<br /> &lt;资源&gt;。&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>对于以下sling资源类型，不要返回默认的CaaS json导出。<br /> 将资源渲染为；以返回客户json导出<br /> &lt;resource&gt;。&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
 
-### 现有内容服务导出配置 {#existing-content-services-export-configs}
+### 现有Content Services导出配置{#existing-content-services-export-configs}
 
 内容服务包括两种导出配置：
 
 * 默认（未指定配置）
 * 页面（要呈现站点页面）
 
-#### 默认导出配置 {#default-export-configuration}
+#### 默认导出配置{#default-export-configuration}
 
 如果在所请求的URI中指定了配置，则将应用Content Services默认导出配置。
 
-&lt;RESOURCE>.caas[。&lt;DEPTH-INT>].json
+&lt;resource>.caas[。&lt;depth-int>].json
 
 <table>
  <tbody>
@@ -194,7 +194,7 @@ AEM还通过Sling支持开发和部署自定义sling渲染器以完全控制渲�
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>jcr:text,text jcr<br /> :title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /><br /> cq:tags,cq:lastModified,lastModified</td>
+   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags<br /> cq:lastModified,lastModified</td>
   </tr>
   <tr>
    <td>includeComponents</td>
@@ -214,16 +214,16 @@ AEM还通过Sling支持开发和部署自定义sling渲染器以完全控制渲�
   </tr>
   <tr>
    <td>Sling JSON重写</td>
-   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReference mobileapps<br /> /caas/components/data/assetlist</td>
+   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReference<br /> mobileapps/caas/components/data/assetlist</td>
   </tr>
  </tbody>
 </table>
 
-#### 页面导出配置 {#page-export-configuration}
+#### 页面导出配置{#page-export-configuration}
 
 此配置扩展了默认值，以包括子节点下的子节点分组。
 
-&lt;SITE_PAGE>.caas.page[。&lt;DEPTH-INT>].json
+&lt;site_page>.caas.page[。&lt;depth-int>].json
 
 ### 其他资源 {#additional-resources}
 

@@ -53,7 +53,7 @@ ht-degree: 98%
 >您可以对各种资源添加注释：
 >
 >* [对资产添加注释](/help/assets/managing-assets-touch-ui.md#annotating)
->* [Annotating video assets](/help/assets/managing-video-assets.md#annotating-video-assets)
+>* [对视频资产添加注释](/help/assets/managing-video-assets.md#annotating-video-assets)
 
 >
 

@@ -15,10 +15,10 @@ ht-degree: 18%
 ---
 
 
-# AEM 6.4 Deploying User Guide {#deploying}
+# AEM 6.4部署用户指南{#deploying}
 
 + [部署用户指南](home.md)
-+ AEM平台简介 {#introduction}
++ AEM平台简介{#introduction}
    + [AEM平台简介](platform.md)
    + [技术要求](technical-requirements.md)
    + [存储6.4中的元素](storage-elements-in-aem-6.md)
@@ -63,7 +63,7 @@ ht-degree: 18%
    + [配置操作方法文章](ht-deploy.md)
    + [删除Geometrixx站点](removing-the-geometrixx-sites.md)
    + [配置Web控制台](configuring-web-console.md)
-+ Upgrading to AEM 6.4 {#upgrading}
++ 升级到AEM 6.4 {#upgrading}
    + [升级到AEM 6.4](upgrade.md)
    + [计划升级](upgrade-planning.md)
    + [利用模式检测器评估升级复杂度](pattern-detector.md)
@@ -80,12 +80,12 @@ ht-degree: 18%
    + [升级代码和自定义](upgrading-code-and-customizations.md)
    + [应用程序服务器安装的升级步骤](app-server-upgrade.md)
    + [列表升级后卸载的过时捆绑包](obsolete-bundles.md)
-+ 存储库重组 {#restructuring}
++ 存储库重构{#restructuring}
    + [AEM 6.4中的存储库重组](repository-restructuring.md)
    + [AEM 6.4中的常见存储库重组](all-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4中的站点存储库重组](sites-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4中的资产存储库重组](assets-repository-restructuring-in-aem-6-4.md)
-   + [AEM 6.4中的Dynamic Media存储库重组](dynamicmedia-repository-restructuring-in-aem-6-4.md)
+   + [Dynamic Media6.4中的存储库重组](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Forms6.4中的存储库重组](forms-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4中的电子商务存储库重组](ecommerce-repository-restructuring-in-aem-6-4.md)
    + [6.4中的AEM Communities库重组](communities-repository-restructuring-in-aem-6-4.md)

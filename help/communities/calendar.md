@@ -41,7 +41,7 @@ ht-degree: 5%
 
 当包含[必需的客户端库](calendar-basics-for-developers.md#essentials-for-client-side)时，将显示`Calendar`组件。
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### 配置日历{#configuring-calendar}
 

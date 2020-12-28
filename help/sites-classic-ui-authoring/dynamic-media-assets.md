@@ -28,5 +28,5 @@ Dynamic Media 在经典 UI 中不可用。请参阅针对触屏优化用户界�
 
 >[!NOTE]
 >
->If you are using Dynamic Media, you cannot simultaneously use automatic uploads available if [integrate Dynamic Media Classic into AEM](/help/sites-administering/scene7.md). See [enabling Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). 默认情况下，Dynamic Media 处于禁用状态。
+>如果您使用Dynamic Media，则如果[将Dynamic Media经典集成到AEM&lt;a](/help/sites-administering/scene7.md)，则不能同时使用自动上传。 请参阅[启用Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media)。 默认情况下，Dynamic Media 处于禁用状态。
 

@@ -18,7 +18,7 @@ ht-degree: 15%
 ---
 
 
-# Deploying Best Practices{#deploying-best-practices}
+# 部署最佳实践{#deploying-best-practices}
 
 部署最佳实践介绍了如何以最高效、最有效的方式部署或维护AEM。 这些主题涵盖 AEM 中的多个区域，此外还将不断增加新的主题。
 
@@ -39,7 +39,7 @@ ht-degree: 15%
 
 ## OAK {#oak}
 
-[Oak是](/help/sites-deploying/platform.md) 一个可伸缩、高性能的分层内容存储库，它是AEM的基础。
+[Oakis](/help/sites-deploying/platform.md) 是可扩展且高性能的分层内容存储库，是AEM的基础。
 
 <table> 
  <tbody>
@@ -77,7 +77,7 @@ AEM Communities简化了预置社区的创建和管理。 有关AEM Communities�
 
 [社区内容存储](/help/communities/working-with-srp.md) -讨论用户生成内容(UGC)的新共享存储功能以及选择基础拓扑的注 [意事项](/help/communities/topologies.md)。
 
-[推荐的社区部署](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) -描述推荐的社区部署。 |
+[社区的推荐部署](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) -描述社区的推荐部署。 |
 
 ## UI {#ui}
 
@@ -85,7 +85,7 @@ AEM Communities简化了预置社区的创建和管理。 有关AEM Communities�
 
 [客户用户界面Recommendations](/help/sites-deploying/ui-recommendations.md)
 
-AEM当前有两个UI: 经典和触屏优化UI。 因此，客户必须在项目实施过程中决定要使用哪个。 此文档旨在帮助您找到正确的选择。
+AEM当前有两个UI:经典和触屏优化UI。 因此，客户必须在项目实施过程中决定要使用哪个。 此文档旨在帮助您找到正确的选择。
 
 ## 演出 {#performance}
 
@@ -96,7 +96,7 @@ AEM当前有两个UI: 经典和触屏优化UI。 因此，客户必须在项目�
   <tr>
    <td>质量保证的最佳实践</td> 
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">质量保证的最佳实践</a></td> 
-   <td>标准化概述定义测试概念时涉及的问题，专门用于发布环境的性 <em>能测</em> 试。 这主要是QA工程师、项目经理和系统管理员感兴趣的。</td> 
+   <td>标准化概述在<em>publish</em>环境上为性能测试专门定义测试概念时涉及的问题。 这主要是QA工程师、项目经理和系统管理员感兴趣的。</td> 
   </tr>
   <tr>
    <td>将 Dispatcher 与 CDN 结合使用</td> 

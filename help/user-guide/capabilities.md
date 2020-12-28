@@ -9,16 +9,16 @@ translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 9%
+ht-degree: 32%
 
 ---
 
 
-# AEM 6.4功能用户指南 {#aem-64-capabilities-user-guides}
+# AEM 6.4功能用户指南{#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[进一步了解Adobe Experience Manager6.4的安装、部署和架构](/help/sites-deploying/home.md)，包括我们的Adobe Managed Services云部署。
+[进一步了解Adobe Experience Manager6.4的安装、部署和架构](/help/sites-deploying/home.md)，包括Adobe Managed Services云部署。
 
 [了解如何管理AEM项目](/help/managing/home.md)。
 
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 [了解在AEM中创建内容和创作的主要概念](/help/sites-authoring/home.md)。
 
-[了解如何管理AEM](/help/sites-administering/home.md)。
+[了解管理AEM](/help/sites-administering/home.md)。
 
 ## AEM Assets {#aem-assets}
 

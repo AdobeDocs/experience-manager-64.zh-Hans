@@ -42,7 +42,7 @@ ht-degree: 96%
 * [编辑启动项](/help/sites-authoring/launches-editing.md)
 * [提升启动项](/help/sites-authoring/launches-promoting.md)
 
-## 启动项 - 事件的顺序 {#launches-the-order-of-events}
+## 启动项 - 事件的顺序  {#launches-the-order-of-events}
 
 启动项允许您有效地为将来发布的一个或多个激活网页开发内容。
 
@@ -101,7 +101,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`.
+>创建和编辑启动项需要对`/content/launches`的访问权限——与默认组`content-authors`的权限相同。
 >
 >如果您遇到任何问题，请联系您的系统管理员。
 
@@ -113,7 +113,7 @@ ht-degree: 96%
 
 * 或者直接通过 [http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html) 访问
 
-## Launches in References (Sites Console) {#launches-in-references-sites-console}
+## 引用（站点控制台）中的启动项{#launches-in-references-sites-console}
 
 1. 在&#x200B;**站点**&#x200B;控制台中，导航到启动项的源。
 1. 打开&#x200B;**引用**&#x200B;边栏并选择源页面。

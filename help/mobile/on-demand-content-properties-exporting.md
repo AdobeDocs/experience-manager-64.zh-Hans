@@ -22,15 +22,15 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
-应用程序在AEM *中以cq* :Pages的形式显示。
+应用程序在AEM中表示为&#x200B;*cq:Pages*。
 
-除了下面显示的表示集成支持属性 *的其他属性外* ，这些属性还共享任何cq:Page中的相同公共属性。
+除了下面显示的表示集成支持属性的其他属性外，这些属性还共享任何&#x200B;*cq:Page*&#x200B;中的相同公共属性。
 
 ## 应用程序属性 {#app-properties}
 
-下表显示了应用 **程序属性和节点**。
+下表显示了&#x200B;**App Properties和Nodes**。
 
 <table>
  <tbody>
@@ -47,7 +47,7 @@ ht-degree: 4%
   <tr>
    <td>dps-exportTemplate</td>
    <td>字符串：路径</td>
-   <td><p>应用程序导出配置的路径。 导出配置是一个包含2个子ContentSync导出配置模板的文件夹；</p> <p><i>dps-article</i>: 用于导出文章内容的ContentSync导出配置</p> <p><i>dps-HTMLResources</i>: 用于导出应用程序／文章共享资源的内容同步导出配置</p> </td>
+   <td><p>应用程序导出配置的路径。 导出配置是一个包含2个子ContentSync导出配置模板的文件夹；</p> <p><i>dps-article</i>:用于导出文章内容的ContentSync导出配置</p> <p><i>dps-HTMLResources</i>:用于导出应用程序／文章共享资源的内容同步导出配置</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -82,12 +82,12 @@ ht-degree: 4%
   <tr>
    <td>sling:resourceType</td>
    <td>字符串：路径</td>
-   <td><p>cq的路径：是或扩展 <i>mobileapps/core/components/instance的组件。</i></p> <p>它提供应用程序目录中的状态和呈现。</p> </td>
+   <td><p>cq的路径：是或扩展<i>mobileapps/core/components/instance的组件。</i></p> <p>它提供应用程序目录中的状态和呈现。</p> </td>
   </tr>
  </tbody>
 </table>
 
-您可以使用 ***内容属性*** 来创建内容。 请参阅以下创建和导出文章和共享资源的资源：
+可以使用&#x200B;***内容属性***&#x200B;创建内容。 请参阅以下创建和导出文章和共享资源的资源：
 
 * [内容属性](/help/mobile/content-properties.md)
 * [创建文章导出配置](/help/mobile/creating-article-export-configuration.md)

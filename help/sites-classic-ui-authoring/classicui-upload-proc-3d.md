@@ -31,7 +31,7 @@ Adobe建议您在上传主3D模型文件之前或同时上传所有引用的文�
 ## 上传 3D 资产的最佳实践 {#best-practices-for-uploading-d-assets}
 
 * 通常，不会限制您在 AEM Assets 文件夹层次结构中上传 3D 内容的位置。但是，AEM 3D 的自动文件依赖关系解析存在范围限制，以便控制搜索大型资产存储库所需的时间。因此，Adobe 建议您在上传 3D 资产及其文件依赖项时，应在合理的范围（通用祖父文件夹）内对每个文件执行此操作。解析文件依赖关系后，您可以将 3D 资产及其依赖项随意移动到存储库中的任意位置，而不会丢失已建立的关系。
-* Adobe建议您在*上传之前，为3D内容*确定一致的文件夹结构。 下面的提示建议了一些您可以采取的方法：
+* Adobe建议在*上传之前，为3D内容*确定一致的文件夹结构。 下面的提示建议了一些您可以采取的方法：
 
    * **为您上传的每个 3D 资产建立一个单独的文件夹**。
 
@@ -53,11 +53,11 @@ Adobe建议您在上传主3D模型文件之前或同时上传所有引用的文�
 
 通常，转换和处理 3D 文件会消耗服务器上的大量 CPU 和内存资源。此操作还会花费大量时间。处理时间通常会根据模型的大小和服务器的功能而大不相同。例如，少于 10 万个人脸的典型小模型通常在不到一分钟内便可进行查看；在 2-3 分钟内即可完全处理。然而，拥有超过一百万个人脸的大模型则可能需要几十分钟才能完全处理。
 
-转换、处理和渲染作业会按需要排队，以防止严重减缓服务器速度。The message &quot;Waiting for processing...&quot; is sometimes shown in the **[!UICONTROL Card View]** at the time you uploaded assets. 此状态表示必须先完成其他处理或渲染作业，才会处理当前资产。
+转换、处理和渲染作业会按需要排队，以防止严重减缓服务器速度。消息“正在等待处理……” 上传资产时，卡片视图符&#x200B;]**有时会显示。**[!UICONTROL &#x200B;此状态表示必须先完成其他处理或渲染作业，才会处理当前资产。
 
 ## 监测您上传的 3D 文件的处理状态 {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-In **[!UICONTROL Card View]** only, the processing status and progression is displayed as a progress banner on the asset&#39;s card. 每个上传的3D模型通常经历以下4-6个有序处理阶段：
+仅在&#x200B;**[!UICONTROL 卡视图]**&#x200B;中，处理状态和进度会作为进度横幅显示在资产卡上。 每个上传的3D模型通常经历以下4-6个有序处理阶段：
 
 <table> 
  <tbody> 
@@ -101,5 +101,5 @@ In **[!UICONTROL Card View]** only, the processing status and progression is dis
 
 >[!NOTE]
 >
->You can view a 3D asset in **[!UICONTROL Detail View]** or render it after the Creating preview stage is complete. 您无需等待所有处理阶段完成。
+>您可以在&#x200B;**[!UICONTROL 详细视图]**&#x200B;中视图3D资产，或在创建预览阶段完成后渲染它。 您无需等待所有处理阶段完成。
 

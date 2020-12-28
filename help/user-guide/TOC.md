@@ -3,18 +3,18 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4用户指南
-user-guide-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.4.
+user-guide-description: 概述了解、安装、管理和使用AEM 6.4的所有基本资源。
 contentOwner: Chris Bohnert
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
-source-wordcount: '45'
-ht-degree: 2%
+source-wordcount: '60'
+ht-degree: 1%
 
 ---
 
 
-# AEM 6.4 User Guide {#user-guide}
+# AEM 6.4用户指南{#user-guide}
 
 + [AEM 6.4用户指南中心](home.md)
 + 用户指南和资源{#user-guides}
@@ -25,5 +25,5 @@ ht-degree: 2%
    + [新AEM用户的资源](new.md)
    + [了解AEM功能](learn.md)
    + [最佳实践、操作方法和培训](best-practice.md)
-   + [AEM Communitiy](community.md)
+   + [AEM社区](community.md)
    + [疑难解答](troubleshooting.md)

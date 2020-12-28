@@ -13,24 +13,24 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '259'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
 # 使用Adobe Campaign表单组件创建自定义AEM页面模板{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-本页介绍如何通过检查如何实现 [Adobe Campaign表单](/help/sites-authoring/adobe-campaign-components.md) ()模板来构建使用Geometrixx表单组件的自定义页面模板，并指 `/apps/geometrixx-outdoors/components/page_campaign_profile`出创建自己的自定义模板时可能需要的重要信息。
+本页介绍如何通过检查如何实现Geometrixx-户外模板(`/apps/geometrixx-outdoors/components/page_campaign_profile`)来构建使用[Adobe Campaign表单](/help/sites-authoring/adobe-campaign-components.md)组件的自定义页面模板，并指出创建自己的自定义模板时可能需要的重要信息。
 
 >[!NOTE]
 >
->[电子邮件和表单范例仅在Geometrixx中提供](/help/sites-developing/we-retail.md)。 请从包共享下载示例Geometrixx内容。
+>[电子邮件和表单范例仅在Geometrixx中提供](/help/sites-developing/we-retail.md)。请从“包共享”中下载 Geometrixx 示例内容。
 
 要使用Adobe Campaign表单组件创建自定义AEM页面模板，请确保您具有以下各项：
 
 1. **更正resourceSuperType**
 
-   确保页面组件从中继承 `mcm/campaign/components/profile`。
+   确保page-component从`mcm/campaign/components/profile`继承。
 
    这是Servlet获取和保存信息所必需的
 
@@ -41,16 +41,16 @@ ht-degree: 0%
 
 1. **ClientContext设置**
 
-   当您查看clientcontext设置()时， `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`您会看到以下设置：
+   当您查看clientcontext设置(`/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`)时，您会看到以下设置：
 
-   * ClientContext指向 `/etc/clientcontext/campaign`
-   * 还有一个额外的 *配置* 节点。
+   * ClientContext指向`/etc/clientcontext/campaign`
+   * 还有额外的&#x200B;*config*&#x200B;节点。
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
 1. **head.jsp(/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
 
-   在 **head.jsp**&#x200B;中，您会看到以下使用 **clientcontext-config和cloudservice** -hook **的行**:
+   在&#x200B;**head.jsp**&#x200B;中，您将看到以下使用&#x200B;**clientcontext-config**&#x200B;和&#x200B;**cloudservice-hook**&#x200B;的行：
 
    ```
    <cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 1. **body.jsp(/apps/geometrixx-outdoors/components/page_campaign_profile/body.jsp)**
 
-   在 **body.jsp**&#x200B;中，云服务加载到页面底部：
+   在&#x200B;**body.jsp**&#x200B;中，云服务加载到页面底部：
 
    ```
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 1. **活动页面属性**
 
-   要能够选择Adobe Campaign模板，页面属性会通过“活动”选项卡进 **行扩** 展：
+   要能够选择Adobe Campaign模板，请使用&#x200B;**活动**&#x200B;选项卡扩展page-properties:
 
    `/apps/geometrixx-outdoors/components/page_campaign_profile/dialog/items/tabs/items/campaign`
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 1. **模板设置**。
 
-   在模板() `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`中，您会看到以下默认值：
+   在模板(`/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`)中，您会看到以下默认值：
 
    | **acMapping** | mapRecipient(对于Adobe Campaign6.1),用户档案(对于Adobe Campaign Standard) |
    |---|---|

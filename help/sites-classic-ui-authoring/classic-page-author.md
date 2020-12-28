@@ -38,9 +38,11 @@ ht-degree: 78%
 
 * **就地编辑** 文本和图像组件可以直接在网页上进行编辑，而无需打开对话框或明确的保存操作。
 
-* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**可编辑页面上显示的“检查器”浮动窗口。从此处可以将新组件拖动到页面上，并且可以执行特定于页面的操作。
+* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
+可编辑页面上显示的“检查器”浮动窗口。从此处可以将新组件拖动到页面上，并且可以执行特定于页面的操作。
 
-* **[内容查找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**每个可创作页面左侧的内容查找器可让您快速访问各种资产，包括数字资产（如其他图像、Flash 元素和文档）、其他页面和段落。可以将这些项目拖动到页面上；例如放置资产或创建到其他页面的链接。
+* **[内容查找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
+每个可创作页面左侧的内容查找器可让您快速访问各种资产，包括数字资产（如其他图像、Flash 元素和文档）、其他页面和段落。可以将这些项目拖动到页面上；例如放置资产或创建到其他页面的链接。
 
 * **上下文菜单**
 右键单击屏幕上的大部分元素（例如，页面上的段落）会显示包含相应操作选项的上下文菜单。

@@ -18,7 +18,7 @@ ht-degree: 38%
 ---
 
 
-# 在We.Retail中试用体验片段{#trying-out-experience-fragments-in-we-retail}
+# 在We.Retail{#trying-out-experience-fragments-in-we-retail}中尝试体验片段
 
 在We.Retail中试用体验片段
 
@@ -30,7 +30,7 @@ ht-degree: 38%
 
 >[!NOTE]
 >
->**[内容片段](/help/sites-developing/we-retail-content-fragments.md)**和&#x200B;**体验片段**是 AEM 中的两个不同功能：
+>**[内容片段](/help/sites-developing/we-retail-content-fragments.md)**&#x200B;和&#x200B;**体验片段**&#x200B;是 AEM 中的两个不同功能：
 >
 >* **内容片段**&#x200B;是可编辑的内容，主要为文本和相关图像。它们是纯内容，不带有任何设计和布局。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
@@ -39,13 +39,13 @@ ht-degree: 38%
 >
 体验片段可以包含内容片段形式的内容，反之则不行。
 
-## 在We.Retail中创建体验片段的位置 {#where-to-create-experience-fragments-in-we-retail}
+## 在We.Retail {#where-to-create-experience-fragments-in-we-retail}中创建体验片段的位置
 
-从全局导航中选择&#x200B;**体验片段**。在此，您可以配 [置](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) 、创 [建和编](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) 辑您的 [Experience Fragments以及任何相关](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)变量。
+从全局导航中选择&#x200B;**体验片段**。在此，您配置[创建](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment)和[编辑您的体验片段以及任何相关的[变量](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)。](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment)
 
-## 在We.Retail中使用体验片段的位置 {#where-to-use-experience-fragments-in-we-retail}
+## 在We.Retail {#where-to-use-experience-fragments-in-we-retail}中使用体验片段的位置
 
-您可以在全局 [导航中](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) “站点”下的任何页 [面上使](/help/sites-authoring/editing-content.md) 用体验片段 **(与任** 何其他组件一样)。
+您可以在全局导航中的&#x200B;**站点**&#x200B;下的[任何页面](/help/sites-authoring/editing-content.md)上使用您的&lt;a0/>体验片段](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment)（与任何其他组件一样）。[
 
 ## 更多信息 {#further-information}
 

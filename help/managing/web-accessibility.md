@@ -53,21 +53,21 @@ ht-degree: 47%
 
 ## 万维网联盟和WCAG 2.0 {#world-wide-web-consortium-and-wcag}
 
-[万维网联盟 (W3C)](https://www.w3.org/) 是一个致力于开发 Web 标准的国际社区。为了帮助Web设计人员和开发人员制作具备辅助功能的 [Web站点](https://www.w3.org/WAI/) ,Web辅助功能计划(WAI)于2008年12月发 [布了Web内容辅助功能指南(WCAG)2.0](https://www.w3.org/TR/WCAG20/) （更新1999年发布的原始版本）。
+[万维网联盟 (W3C)](https://www.w3.org/) 是一个致力于开发 Web 标准的国际社区。为帮助Web设计人员和开发人员制作可访问的网站，[Web辅助功能计划(WAI)](https://www.w3.org/WAI/)于2008年12月发布了[Web内容辅助功能准则(WCAG)2.0](https://www.w3.org/TR/WCAG20/)（更新1999年发布的原始版本）。
 
 >[!NOTE]
 >
->An [updated version of the guidelines](https://www.w3.org/TR/WCAG21/) is currently in development, but will not be considered for this version of AEM.
+>准则[的](https://www.w3.org/TR/WCAG21/)更新版本当前正在开发中，但此版本的AEM不会考虑此版本。
 
 使用Adobe Experience Manager，内容作者和／或网站所有者可以创建满足WCAG 2.0 A级和AA级成功标准的Web内容。
 
 [WCAG 2.0 快速入门指南](/help/managing/qg-wcag.md)中重点介绍了 WCAG 2.0 的特定方面。
 
-### WCAG 2.0辅助功能符合性级别 {#wcag-accessibility-conformance-levels}
+### WCAG 2.0辅助功能符合性级别{#wcag-accessibility-conformance-levels}
 
-WCAG 2.0提供涵盖 [辅助功能级别的指南（包括相关成功标准）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)。
+WCAG 2.0提供了[涵盖辅助功能级别](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)的指导准则（与相关成功标准）。
 
-与AEM相关的这些内容在A级和AA [符合性中涵盖](/help/sites-authoring/creating-accessible-content.md)。 在创建站点时，您应该大体上确定希望自己的站点符合哪个等级。
+与AEM相关的这些符号在[级别A和AA符合性](/help/sites-authoring/creating-accessible-content.md)中涵盖。 在创建站点时，您应该大体上确定希望自己的站点符合哪个等级。
 
 >[!NOTE]
 >

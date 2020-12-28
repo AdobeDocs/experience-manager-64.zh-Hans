@@ -27,16 +27,16 @@ Apache Jackrabbit Oak旨在实现可伸缩、高性能的分层内容存储库�
 
 它是Jackrabbit 2的后继版本，AEM 6将其用作其内容存储库CRX的默认后端。
 
-## 设计原则和目标 {#design-principles-and-goals}
+## 设计原则和目标{#design-principles-and-goals}
 
-Oak实施 [了JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0)规范。 其主要设计目标是：
+Oak实现了[JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html)(JCR 2.0)规范。 其主要设计目标是：
 
 * 更好地支持大型存储库
 * 多个分布式群集节点以实现高可用性
 * 更好的性能
 * 支持许多子节点和访问控制级别
 
-## 架构概念 {#architecture-concept}
+## 架构概念{#architecture-concept}
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -65,13 +65,13 @@ Oak JCR的主要目标是将JCR语义转换为树操作。 它还负责：
 
 此外，非Java实现现在成为可能，并且是Oak JCR概念的一部分。
 
-## 存储概述 {#storage-overview}
+## 存储概述{#storage-overview}
 
 Oak存储层为内容的实际存储提供抽象层。
 
-目前，AEM6中提供两种存储实施： **Tar存储****和MongoDB存储**。
+目前，AEM6中提供两种存储实施：**Tar存储**&#x200B;和&#x200B;**MongoDB存储**。
 
-### 焦油存储 {#tar-storage}
+### 焦油存储{#tar-storage}
 
 Tar存储使用tar文件。 它将内容存储为较大区段内的各种类型记录。 日志用于跟踪存储库的最新状态。
 
@@ -85,13 +85,13 @@ Tar存储使用tar文件。 它将内容存储为较大区段内的各种类型�
 
 * **地区**
 
-相关记录（如节点及其直接子项）通常存储在同一段中。 这使得搜索存储库的速度非常快，并且避免了每次会话访问多个相关节点的典型客户端的大多数高速缓存丢失。
+相关记录（如节点及其直接子项）通常存储在同一段中。 这使得搜索存储库的速度非常快，并避免了每次会话访问多个相关节点的典型客户端的大多数高速缓存丢失。
 
 * **紧凑性**
 
 记录的格式化已针对大小进行优化，以降低IO成本并将尽可能多的内容放入缓存中。
 
-### 蒙戈存储 {#mongo-storage}
+### 蒙戈存储{#mongo-storage}
 
 MongoDB存储利用MongoDB进行共享和群集。 存储库树保存在一个MongoDB文档库中，其中每个节点都是一个单独的数据库。
 
@@ -121,7 +121,7 @@ MongoDB存储通过每次修改向文档添加数据。 但是，仅当清理被
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
-## Jackrabbit 2有什么不同？ {#what-is-different-from-jackrabbit}
+## Jackrabbit 2有什么不同？{#what-is-different-from-jackrabbit}
 
 由于Oak的设计是向后兼容JCR 1.0标准，因此用户级别几乎不会发生任何变化。 但是，在设置基于Oak的AEM安装时，您需要考虑到一些显着的差异：
 
@@ -129,7 +129,7 @@ MongoDB存储通过每次修改向文档添加数据。 但是，仅当清理被
 * 与Jackrabbit 2不同，会话始终反映存储库的最新状态，而Oak会话反映从获取会话时存储库的稳定视图。 这是由于Oak所基于的MVCC模型。
 * Oak中不支持同名同级(SNS)。
 
-## 其他平台相关文档 {#other-platform-related-documentation}
+## 其他平台相关文档{#other-platform-related-documentation}
 
 有关AEM平台的详细信息，另请查看以下文章：
 

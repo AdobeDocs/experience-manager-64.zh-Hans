@@ -28,7 +28,7 @@ ht-degree: 18%
 
 ## WKND 开发人员教程 {#wknd-developer-tutorial}
 
-此处提供教 [程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ，或单击下面的图像。
+教程在[此处](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)可用，或者单击下面的图像。
 
 [![单击图像](assets/screen_shot_2018-11-23at152453.png)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
@@ -44,6 +44,6 @@ ht-degree: 18%
 
 在详细了解上述概念之前，请先阅读教程。
 
-## 后续步骤 {#next-steps}
+## 后续步骤{#next-steps}
 
-完成教程后 [](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)，请考虑查看文档 [AEM核心概念](/help/sites-developing/the-basics.md) ，以更好地了解AEM的一些底层技术和开发范例。
+完成[教程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)之后，请考虑查看文档[AEM核心概念](/help/sites-developing/the-basics.md)，以更好地了解AEM的一些底层技术和开发范例。

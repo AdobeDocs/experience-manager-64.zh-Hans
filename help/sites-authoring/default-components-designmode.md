@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 80%
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 80%
 
 安装现成 AEM 实例后，组件浏览器中会提供一些可立即使用的组件。
 
-In addition to these, various other components are also available. You can use Design mode to [enable/disable such components](#enable-disable-components). When enabled and located on your page you can then use Design mode to [configure aspects of the component design](#configuring-the-design-of-a-component) by editing the attribute parameters.
+除了这些组件以外，还有其他各种组件可用。您可以使用设计模式[启用/禁用这类组件](#enable-disable-components)。在启用这类组件并将它们放置在页面上后，您可以使用设计模式通过编辑属性参数来[配置组件设计的特性](#configuring-the-design-of-a-component)。
 
 >[!NOTE]
 >
@@ -34,9 +34,9 @@ In addition to these, various other components are also available. You can use D
 
 >[!NOTE]
 >
->Design mode is only available for design configurations stored as content under ( `/etc`).
+>设计模式仅适用于存储为(`/etc`)下的内容的设计配置。
 >
->Starting in AEM 6.4, it is recommended to store designs as configuration data under `/apps` to support continuous deployment scenarios. Designs stored under `/apps` are not editable at runtime and the Design mode will not be available to non-admin users for such templates.
+>从AEM 6.4开始，建议将设计作为配置数据存储在`/apps`下，以支持连续部署方案。 存储在`/apps`下的设计在运行时不可编辑，非管理员用户将无法使用此类模板的设计模式。
 
 这涉及到添加或删除在页面的段落系统中允许使用的组件。段落系统 (`parsys`) 本身是一个复合组件，其中包含其他段落组件。段落系统允许作者向页面中添加不同类型的组件，并包含所有其他段落组件。每个段落类型表示为一个组件。
 
@@ -69,7 +69,7 @@ In addition to these, various other components are also available. You can use D
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Click or tap the **Parent** icon.
+1. 单击或点按&#x200B;**父项**&#x200B;图标。
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -92,7 +92,7 @@ In addition to these, various other components are also available. You can use D
 
    **允许的组件**
 
-   On the **Allowed Components** tab, you define which components are available for the parsys.
+   在&#x200B;**允许的组件**&#x200B;选项卡上，定义可用于parsys的组件。
 
    * 这些组件按其组件组分组，各组可以展开和折叠。
    * 可以通过选中组名称选择整个组，通过取消选中全部取消选择。
@@ -110,7 +110,7 @@ In addition to these, various other components are also available. You can use D
 
    在&#x200B;**设置**&#x200B;选项卡上，您可以定义其他选项，例如为每个组件绘制锚点，以及定义每个容器的单元格边距。
 
-1. Select **Done** to save your configuration.
+1. 选择&#x200B;**完成**&#x200B;以保存配置。
 
 ## 配置组件的设计 {#configuring-the-design-of-a-component}
 

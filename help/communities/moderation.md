@@ -286,7 +286,7 @@ ht-degree: 3%
 
 #### 允许 {#allow}
 
-![chlimage_1-481](assets/chlimage_1-481.png)
+![chlimage_1-401](assets/chlimage_1-481.png)
 
 处理单个帖子时，当帖子已被标记或拒绝时，将显示“允许”图标。 如果已标记，则选择“允许”将清除所有标记。
 

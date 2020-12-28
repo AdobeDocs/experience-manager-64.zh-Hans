@@ -18,16 +18,16 @@ ht-degree: 0%
 ---
 
 
-# CRX2OAK迁移工具 {#crx-oak-migration-tool}
+# CRX2OAK迁移工具{#crx-oak-migration-tool}
 
-## 更改和修复列表 {#list-of-changes-and-fixes}
+## 更改列表和修复{#list-of-changes-and-fixes}
 
-### 1.8.6（2018年6月） {#june}
+### 1.8.6（2018年6月）{#june}
 
 * OAK-7339通过引入LoopbackBlobStore，修复在MissingBlobStore上所有因UnsupportedOperationException而中断的故障
 * 使用Oak 1.8.4
 
-### 1.8.4（2018年4月） {#april}
+### 1.8.4（2018年4月）{#april}
 
 * 使用Oak版本1.8.2
 * GRANITE-18104回购程序从6.3迁移到6.4的错误应该更有意义
@@ -38,27 +38,27 @@ ht-degree: 0%
 * GRANITE-17601将oak-upgrade嵌入CRX2Oak中，使用oak-blob-cloud
 * GRANITE-18553 crx2oak在节点上保留版本属性，即使版本未迁移也是如此
 
-### 版本1.6.8（2017年3月） {#version-march}
+### 版本1.6.8（2017年3月）{#version-march}
 
 * 将Oak版本更新为1.6.1
 * CQ-61847将crx2oak-quickstart-extension与crx2oak合并(添加了迁移用户档案)
 * CQ-97488提升和删除AEM运行模式（通过重写sling.options.file）
 * GRANITE-12798/OAK-4260将Oak Segment改为Oak Segment Tar的能力
 
-### 版本1.4.2（2016年3月） {#version-march-1}
+### 版本1.4.2（2016年3月）{#version-march-1}
 
 * 将Oak版本升级到1.4.1
 * OAK-3846 / GRANITE-10748如果SNS节点违反节点类型约束，请重命名这些节点
-* OAK-3910 / GRANITE-10730迁移节点继承未包含版本 `mix:versionable` 历史记录
-* OAK-4128 / GRANITE-11757 `RepositorySidegrade` 不复制根节点属性
+* OAK-3910 / GRANITE-10730迁移节点从`mix:versionable`继承，无版本历史
+* OAK-4128 / GRANITE-11757 `RepositorySidegrade`未复制根节点属性
 
-### 版本1.3.4（2016年1月） {#version-january}
+### 版本1.3.4（2016年1月）{#version-january}
 
 * 将Oak版本升级到1.3.16
 * OAK-3844/GRANITE-10730更好地支持不带版本历史记录的可转换节点
 * OAK-3846如果SNS节点违反节点类型限制，则重命名SNS节点
 
-### 版本1.3.2（2015年12月） {#version-december}
+### 版本1.3.2（2015年12月）{#version-december}
 
 * 将Oak版本升级到1.3.12
 * 迁移后不应移动数据存储目录(GRANITE-10447)

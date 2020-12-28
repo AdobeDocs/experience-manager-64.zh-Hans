@@ -22,11 +22,11 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
 >[!CAUTION]
 >
->从AEM 6.2或6.3迁移到AEM 6.4的现有AEM Mobile应用程序客户可以通过从PackageShare下载包继续使用AEM Mobile [应用程序](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package)。 但是，新安装的AEM 6.4不支持AEM Mobile应用程序功能。
+>从AEM 6.2或6.3迁移到AEM 6.4的现有AEM Mobile应用程序客户可以通过从PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package)下载[包继续使用AEM Mobile应用程序。 但是，新安装的AEM 6.4不支持AEM Mobile应用程序功能。
 
 Adobe Experience Manager(AEM)移动公司是Adobe Experience Manager多渠道数字平台的一部分，该平台还利用AEM Assets、站点、屏幕、工作流、用户经理、商务和Forms。 AEM Mobile优惠了极大的部署灵活性，使企业能够使用各种内容源。
 
@@ -38,4 +38,4 @@ AEM Mobile优惠了多种创建应用程序的方法。 创建应用程序的三
 
 >[!NOTE]
 >
->如果您是Adobe Experience Manager的新手，您可能想要阅读AEM [快速入门](/help/sites-deploying/deploy.md)。
+>如果您是Adobe Experience Manager的新手，您可能想浏览[AEM](/help/sites-deploying/deploy.md)快速入门。

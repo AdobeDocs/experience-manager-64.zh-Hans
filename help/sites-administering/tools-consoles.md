@@ -20,7 +20,7 @@ ht-degree: 36%
 
 # 工具控制台{#tools-consoles}
 
-**工具**&#x200B;控制台让您可以访问一些专用工具，这些工具有助于您管理网站、数字资产及内容存储库的其他方面。工具控制台目前有两种 **形式** ，具体取决于您所使用的UI:
+**工具**&#x200B;控制台让您可以访问一些专用工具，这些工具有助于您管理网站、数字资产及内容存储库的其他方面。**工具**&#x200B;控制台目前有两种不同的版本，具体取决于您所使用的UI:
 
 * [工具——经典UI](#tools-classic-ui)
 * [工具——触屏优化UI](#tools-touch-optimized-ui)
@@ -42,12 +42,12 @@ ht-degree: 36%
   <tr> 
    <td>Client Context配置<br /> </td> 
    <td> </td> 
-   <td>Client Context <a href="/help/sites-developing/client-context.md">表示动态组合</a> 的用户数据集合。 此处保留默认和营销云配置。<br /> </td> 
+   <td><a href="/help/sites-developing/client-context.md">Client Context</a>表示动态组合的用户数据集合。 此处保留默认和营销云配置。<br /> </td> 
   </tr> 
   <tr> 
    <td>Cloud Services配置<br /> </td> 
    <td> </td> 
-   <td>保存与集成 <a href="/help/sites-administering/marketing-cloud.md">Adobe Marketing Cloud相关的配置</a>。</td> 
+   <td>保存与<a href="/help/sites-administering/marketing-cloud.md">集成Adobe Marketing Cloud</a>相关的配置。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">商务</a></td> 
@@ -60,9 +60,9 @@ ht-degree: 36%
    <td>提供对数字权限信息和许可证的访问。</td> 
   </tr> 
   <tr> 
-   <td>DAM - Health Checker<br /> </td> 
+   <td>DAM —— 运行状况检查器<br /> </td> 
    <td> </td> 
-   <td>比较 <code>/var/dam</code> 和 <code>/content/dam</code> 检查是否有任何不一致<br /> 。 随后可以同步或删除列出的所有文件／文件夹。 文件夹比较的节点类型可在Web控制台中进行配置。</td> 
+   <td>比较<code>/var/dam</code>和<code>/content/dam</code>并检查<br />是否存在任何不一致。 随后可以同步或删除列出的所有文件／文件夹。 文件夹比较的节点类型可在Web控制台中进行配置。</td> 
   </tr> 
   <tr> 
    <td>DAM -AdobeIndesign<br /> </td> 
@@ -77,7 +77,7 @@ ht-degree: 36%
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">功能板</a></td> 
    <td> </td> 
-   <td>允许您创建报告仪表板; 这为定义显示统一数据的页面提供了一种可自定义的方式。</td> 
+   <td>允许您创建报告仪表板;这为定义显示统一数据的页面提供了一种可自定义的方式。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">设计</a></td> 
@@ -130,7 +130,7 @@ ht-degree: 36%
    <td>指向“包管理器”的替代链接，其中显示已为AEM WCM加载的包。 与CRX的包管理器中显示的信息相似。</td> 
   </tr> 
   <tr> 
-   <td>复制——复 <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">制代理</a></td> 
+   <td>复制- <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">复制代理</a></td> 
    <td> </td> 
    <td>用于在发布页面时将数据从作者复制到发布，或通过反向复制将用户注释从发布环境返回到作者。</td> 
   </tr> 
@@ -150,19 +150,19 @@ ht-degree: 36%
    <td>使用基架，您可以创建一个表单（即基架），其中包含的字段反映您要用于页面的结构，然后使用此表单轻松创建基于此结构的页面。</td> 
   </tr> 
   <tr> 
-   <td>安全- <a href="/help/sites-administering/notification.md">自助服务配置 </a> </td> 
+   <td>安全性- <a href="/help/sites-administering/notification.md">自助服务配置</a> </td> 
    <td> </td> 
    <td>允许您配置用户在创建帐户或重置口令时自动收到的电子邮件以及确认已重置的口令。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">分段</a></td> 
    <td> </td> 
-   <td>站点访客在访问站点时的兴趣和目标各不相同。了解这些目标并满足预期是在线营销活动的一个重要成功因素。Segmentation helps to achieve this by analyzing and characterizing a visitor's details.<br /> </td> 
+   <td>站点访客在访问站点时的兴趣和目标各不相同。了解这些目标并满足预期是在线营销活动的一个重要成功因素。分段通过分析和表征访客的详细信息来帮助实现此目的。<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>默认SRP配置。 请参阅 <a href="/help/communities/srp-config.md">存储配置</a> 控制台。</td> 
+   <td>默认SRP配置。 请参阅<a href="/help/communities/srp-config.md">存储配置</a>控制台。</td> 
   </tr> 
   <tr> 
    <td>任务管理</td> 
@@ -187,7 +187,7 @@ ht-degree: 36%
   <tr> 
    <td>口语</td> 
    <td> </td> 
-   <td>已弃用. 请参 <a href="/help/communities/moderate-ugc.md#watchwords">阅协调社区内容</a></td> 
+   <td>已弃用. 请参阅<a href="/help/communities/moderate-ugc.md#watchwords">协调社区内容</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">工作流</a></td> 

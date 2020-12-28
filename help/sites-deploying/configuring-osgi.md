@@ -20,19 +20,19 @@ ht-degree: 0%
 
 # 配置OSGi{#configuring-osgi}
 
-[OSGi是Adobe Experience Manager](https://www.osgi.org/) (AEM)技术堆栈中的一个基本要素。 它用于控制AEM的复合束及其配置。
+[OSG](https://www.osgi.org/) 是Adobe Experience Manager(AEM)技术堆栈中的一个基本要素。它用于控制AEM的复合束及其配置。
 
-OSGi&quot;提&#x200B;*供了标准化的基元，它允许应用程序由小的、可重用的和协作的组件构建。 这些组件可以组成一个应用程序并进行部署*”。
+OSGi &quot;*提供了标准化的基元，它允许应用程序由小的、可重用的和协作的组件构建。 这些组件可以组成应用程序并部署*”。
 
-这样，可以轻松管理捆绑套件，因为可以单独停止、安装和启动捆绑套件。 互依关系将自动处理。 每个OSGi组件(请参 [阅OSGi规范](https://www.osgi.org/Specifications/HomePage))都包含在各种包中的一个中。
+这样，可以轻松管理捆绑套件，因为可以单独停止、安装和启动捆绑套件。 互依关系将自动处理。 每个OSGi组件（请参见[OSGi规范](https://www.osgi.org/Specifications/HomePage)）都包含在各种捆绑包中。
 
 您可以通过以下任一方式管理此类包的配置设置：
 
-* 使用 [Adobe CQWeb控制台](#osgi-configuration-with-the-web-console)
-* 使用 [配置文件](#osgi-configuration-with-configuration-files)
-* 配置 [存储库中 `sling:OsgiConfig`的content-nodes()](#osgi-configuration-in-the-repository)
+* 使用[Adobe CQWeb控制台](#osgi-configuration-with-the-web-console)
+* 使用[配置文件](#osgi-configuration-with-configuration-files)
+* 配置存储库](#osgi-configuration-in-the-repository)中的[content-nodes(`sling:OsgiConfig`)
 
-虽然存在细微差异，但可以使用两种方法，主要与“运行 [模式”相关](/help/sites-deploying/configure-runmodes.md):
+尽管存在细微差异，但可以使用两种方法，主要与[运行模式](/help/sites-deploying/configure-runmodes.md)相关：
 
 * [Adobe CQ网络控制台](#osgi-configuration-with-the-web-console)
 
@@ -50,29 +50,29 @@ OSGi&quot;提&#x200B;*供了标准化的基元，它允许应用程序由小的�
 * [存储库中的content-nodes(sling:osgiConfig)](#osgi-configuration-in-the-repository)
 
    * 这需要使用CRXDE Lite进行手动配置。
-   * 根据节点的命名约 `sling:OsgiConfig` 定，您可以将配置绑定到特定 [运行模式](/help/sites-deploying/configure-runmodes.md)。 您甚至可以在同一存储库中保存多个运行模式的配置。
+   * 由于`sling:OsgiConfig`节点的命名约定，您可以将配置绑定到特定的[运行模式](/help/sites-deploying/configure-runmodes.md)。 您甚至可以在同一存储库中保存多个运行模式的配置。
    * 将立即应用任何适当的配置（取决于运行模式）。
 
 无论您使用哪种方法，所有这些配置方法：
 
 * 确保复制或复制存储库内容会重新创建相同的配置。
-* 允许您检查FileVault或Subversion的配置； 安全更新或更新。
+* 允许您检查FileVault或Subversion的配置；安全更新或更新。
 * 可以保存在包中，以便在设置其他实例时使用。
 * 允许您使用脚本执行配置转出以传播配置详细信息。
 
 >[!NOTE]
 >
->某些重要设置的详细信息列在“OSGi配 [置设置”下。](/help/sites-deploying/osgi-configuration-settings.md)
+>某些重要设置的详细信息列在[OSGi配置设置下。](/help/sites-deploying/osgi-configuration-settings.md)
 
-## OSGi配置与Web控制台 {#osgi-configuration-with-the-web-console}
+## Web控制台{#osgi-configuration-with-the-web-console}的OSGi配置
 
-AEM [中的Web控制台](/help/sites-deploying/web-console.md) ，为配置捆绑包提供了标准化界面。 “配 **置** ”选项卡用于配置OSGi包，因此是配置AEM系统参数的基础机制。
+AEM中的[Web控制台](/help/sites-deploying/web-console.md)为配置捆绑包提供了标准化界面。 **配置**&#x200B;选项卡用于配置OSGi包，因此是配置AEM系统参数的基础机制。
 
 所做的任何更改将立即应用于相关OSGi配置，无需重新启动。
 
 >[!NOTE]
 >
->在Web控制台中所做的更改会作为配置文件保存在 [存储库中](#osgi-configuration-with-configuration-files)。 这些组件可以包含在内容包中，以便在进一步安装中重新使用。
+>在Web控制台中所做的更改将作为[配置文件](#osgi-configuration-with-configuration-files)保存在存储库中。 这些组件可以包含在内容包中，以便在进一步安装中重新使用。
 
 >[!NOTE]
 >
@@ -82,29 +82,29 @@ AEM [中的Web控制台](/help/sites-deploying/web-console.md) ，为配置捆�
 
 要使用Web控制台更新配置，请执行以下操作：
 
-1. 通过以 **下方式** ，访问Web控制台的“配置”选项卡：
+1. 通过以下任一方式访问Web控制台的&#x200B;**配置**&#x200B;选项卡：
 
-   * 从“工具”->“操作”菜单上的 **链接打开Web控制台** 。 登录控制台后，您可以使用下拉菜单：
+   * 从&#x200B;**工具->操作**&#x200B;菜单上的链接打开Web控制台。 登录控制台后，您可以使用下拉菜单：
 
       **OSGi >**
 
-   * 直接URL; 例如：
+   * 直接URL;例如：
 
       `http://localhost:4502/system/console/configMgr`
    将显示列表。
 
 1. 通过以下任一方式选择要配置的捆绑包：
 
-   * 单击该包 **的** “编辑”图标
-   * 单击 **包的** “名称”
+   * 单击该包的&#x200B;**编辑**&#x200B;图标
+   * 单击捆绑的&#x200B;**名称**
 
-1. 此时将打开一个对话框。您可以在此根据需要进行编辑； 例如，将“日志 **级别** ”设置为 `INFO`:
+1. 此时将打开一个对话框。您可以在此根据需要进行编辑；例如，将&#x200B;**日志级别**&#x200B;设置为`INFO`:
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
    >[!NOTE]
    >
-   >更新将作为配置文件保 [存在存储库中](#osgi-configuration-with-configuration-files)。 要在之后找到这些标识，（例如，要包含在内容包中以用于另一个实例），您应记下永久标识( `PID`)。
+   >更新将作为[配置文件](#osgi-configuration-with-configuration-files)保存在存储库中。 要在之后找到这些标识，（例如，要包含在内容包中以用于另一个实例），您应记下永久标识(`PID`)。
 
 1. 单击&#x200B;**保存**。
 
@@ -112,11 +112,11 @@ AEM [中的Web控制台](/help/sites-deploying/web-console.md) ，为配置捆�
 
    >[!NOTE]
    >
-   >您现在可以找到 [相关的配置文件](#osgi-configuration-with-configuration-files); 例如，包含在内容包中以用于另一个实例。
+   >您现在可以找到相关的[配置文件](#osgi-configuration-with-configuration-files);例如，包含在内容包中以用于另一个实例。
 
-## OSGi配置配置文件 {#osgi-configuration-with-configuration-files}
+## 配置文件{#osgi-configuration-with-configuration-files}的OSGi配置
 
-使用Web控制台进行的配置更改会作为配置文件()保留在存储库中， `.config`具体如下：
+使用Web控制台进行的配置更改会作为配置文件(`.config`)保留在存储库中，具体如下：
 
 `/apps`
 
@@ -124,18 +124,18 @@ AEM [中的Web控制台](/help/sites-deploying/web-console.md) ，为配置捆�
 
 >[!NOTE]
 >
->配置文件的格式非常具体——有关完整的 [详细信息，请参](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) 阅Sling Apache文档。
+>配置文件的格式非常具体——有关完整的详细信息，请参见[Sling Apache文档](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format)。
 >
 >因此，建议通过在Web控制台中进行实际更改来创建和维护配置文件。
 
 Web控制台不显示已保存更改的存储库位置，但可以轻松找到这些更改：
 
-1. 在Web控制台中 [进行初始更改，创建配置文件](#osgi-configuration-with-the-web-console)。
+1. 通过[在Web控制台](#osgi-configuration-with-the-web-console)中进行初始更改来创建配置文件。
 1. 打开CRXDE Lite。
-1. 在“工 **具** ”菜单中 **选择查询...** .
-1. 提交类型 **查询**`SQL` ，以搜索已更新配置的PID。
+1. 在&#x200B;**工具**&#x200B;菜单中，选择&#x200B;**查询...**。
+1. 提交查询&#x200B;**类型** `SQL`以搜索已更新配置的PID。
 
-   例如， **Apache Felix OSGi Management** Console具有以下持久性标识(PID):
+   例如，**Apache Felix OSGi管理控制台**&#x200B;具有以下的永久标识(PID):
 
    `org.apache.felix.webconsole.internal.servlet.OsgiManager`
 
@@ -157,47 +157,47 @@ Web控制台不显示已保存更改的存储库位置，但可以轻松找到�
 
 1. 您现在可以生成包含此节点的内容包，并根据需要在其他实例上使用。
 
-## 存储库中的OSGi配置 {#osgi-configuration-in-the-repository}
+## 存储库{#osgi-configuration-in-the-repository}中的OSGi配置
 
 除了使用Web控制台，您还可以在存储库中定义配置详细信息。 这使您能够轻松配置不同的运行模式。
 
-这些配置是通过在存储库中 `sling:OsgiConfig` 创建要引用的节点来实现的。 这些节点将镜像OSGi配置，并为它们形成用户界面。 要更新配置数据，请更新节点属性。
+这些配置是通过在存储库中创建`sling:OsgiConfig`节点来引用系统的。 这些节点将镜像OSGi配置，并为它们形成用户界面。 要更新配置数据，请更新节点属性。
 
-如果修改存储库中的配置数据，则更改会立即应用于相关OSGi配置，就像是使用Web控制台进行了更改一样，并会进行相应的验证和一致性检查。 此操作也适用于将配置从复制到的 `/libs/` 操作 `/apps/`。
+如果修改存储库中的配置数据，则更改会立即应用于相关OSGi配置，就像是使用Web控制台进行了更改一样，并会进行相应的验证和一致性检查。 此操作也适用于将配置从`/libs/`复制到`/apps/`的操作。
 
 由于同一配置参数可以位于多个位置，因此系统：
 
-* 搜索所有类型的节点 `sling:OsgiConfig`
+* 搜索类型为`sling:OsgiConfig`的所有节点
 * 过滤器根据服务名称
 * 过滤器根据运行模式
 
 >[!NOTE]
 >
->另请阅 [读如何仅为特定实例定义基于存储库的配置](https://helpx.adobe.com/experience-manager/kb/RunModeDependentConfigAndInstall.html)。
+>另请阅读[如何仅为特定实例定义基于存储库的配置](https://helpx.adobe.com/experience-manager/kb/RunModeDependentConfigAndInstall.html)。
 
-### 将新配置添加到存储库 {#adding-a-new-configuration-to-the-repository}
+### 将新配置添加到存储库{#adding-a-new-configuration-to-the-repository}
 
-#### 您需要了解的内容 {#what-you-need-to-know}
+#### 您需要了解的{#what-you-need-to-know}
 
 要向存储库添加新配置，您需要了解以下内容：
 
-1. 服 **务的永久** 标识(PID)。
+1. 服务的&#x200B;**永久标识**(PID)。
 
-   引用Web **控制台** 中的“配置”字段。 该名称在捆绑名称后面的括号中显示(或 **在页面底部** 的“配置信息”中显示)。
+   在Web控制台中引用&#x200B;**Configurations**&#x200B;字段。 该名称在包名称后面的括号中显示（或在页面底部的&#x200B;**配置信息**&#x200B;中）。
 
-   例如，创建一个节点 `com.day.cq.wcm.core.impl.VersionManagerImpl.` 以配置 **AEM WCM Version Manager**。
+   例如，创建一个节点`com.day.cq.wcm.core.impl.VersionManagerImpl.`以配置&#x200B;**AEM WCM Version Manager**。
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. 是否需要 [特定运行](/help/sites-deploying/configure-runmodes.md) 模式。 创建文件夹：
+1. 是否需要特定的[运行模式](/help/sites-deploying/configure-runmodes.md)。 创建文件夹：
 
    * `config` -适用于所有运行模式
    * `config.author` -对于作者环境
    * `config.publish` -对于发布环境
    * `config.<run-mode>` -视情况
 
-1. 是否需要 **配置** 或 **工厂配置** 。
-1. 要配置的各个参数； 包括需要重新创建的任何现有参数定义。
+1. 是否需要&#x200B;**配置**&#x200B;或&#x200B;**工厂配置**。
+1. 要配置的各个参数；包括需要重新创建的任何现有参数定义。
 
    在Web控制台中引用单个参数字段。 每个参数的名称将显示在括号中。
 
@@ -206,13 +206,13 @@ Web控制台不显示已保存更改的存储库位置，但可以轻松找到�
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. 中是否已存在配置 `/libs`? 要列表实例中的所有配置，请使 **用CRXDE Lite** 中的查询工具提交以下SQL查询:
+1. `/libs`中是否已存在配置？ 要列表实例中的所有配置，请使用CRXDE Lite中的&#x200B;**查询**&#x200B;工具提交以下SQL查询:
 
    `select * from sling:OsgiConfig`
 
-   如果是，则可以将此配置复制到 ` /apps/<yourProject>/`新位置，然后在新位置进行自定义。
+   如果是，则可将此配置复制到` /apps/<yourProject>/`，然后在新位置进行自定义。
 
-#### 在存储库中创建配置 {#creating-the-configuration-in-the-repository}
+#### 在存储库{#creating-the-configuration-in-the-repository}中创建配置
 
 要将新配置实际添加到存储库，请执行以下操作：
 
@@ -220,7 +220,7 @@ Web控制台不显示已保存更改的存储库位置，但可以轻松找到�
 
    ` /apps/<yourProject>`
 
-1. 如果文件夹尚未存在，请 `config` 创建文 `sling:Folder`件夹():
+1. 如果文件夹尚未存在，请创建`config`文件夹(`sling:Folder`):
 
    * `config` -适用于所有运行模式
    * `config.<run-mode>` -特定于特定运行模式
@@ -228,24 +228,24 @@ Web控制台不显示已保存更改的存储库位置，但可以轻松找到�
 1. 在此文件夹下，创建一个节点：
 
    * 类型: `sling:OsgiConfig`
-   * 名称： 持久身份(PID);
+   * 名称：持久身份(PID);
 
-      例如，AEM WCM Version Manager的使用 `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      例如，AEM WCM Version Manager使用`com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >在名称后附加工厂 `-<identifier>` 配置时。
+   >在进行工厂配置时，将`-<identifier>`追加到名称。
    >
-   >如下所示： `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
+   >如下所示：`org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
    >
-   >如果 `<identifier>` 替换为您（必须）输入用来标识实例的自由文本（您不能忽略此信息）; 例如：
+   >其中`<identifier>`被替换为自由文本，您（必须）输入该文本以标识实例（您不能忽略此信息）;例如：
    >
    >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
 1. 对于要配置的每个参数，在此节点上创建一个属性：
 
-   * 名称： Web控制台中显示的参数名称； 该名称显示在字段描述末尾的括号中。 例如，供 `Create Version on Activation` 使用 `versionmanager.createVersionOnActivation`
-   * 类型： 酌情。
-   * 值： 。
+   * 名称：Web控制台中显示的参数名称；该名称显示在字段描述末尾的括号中。 例如，对于`Create Version on Activation`，请使用`versionmanager.createVersionOnActivation`
+   * 类型：酌情。
+   * 值：。
 
    您只需为要配置的参数创建属性，其他参数仍将采用AEM设置的默认值。
 
@@ -255,37 +255,37 @@ Web控制台不显示已保存更改的存储库位置，但可以轻松找到�
 
 >[!CAUTION]
 >
->您不得更改路径中的任 `/libs` 何内容。
+>不得更改`/libs`路径中的任何内容。
 
 >[!CAUTION]
 >
 >配置的完整路径必须正确，才能在启动时读取。
 
-## 配置详细信息 {#configuration-details}
+## 配置详细信息{#configuration-details}
 
-### 启动时的分辨率顺序 {#resolution-order-at-startup}
+### 启动时的分辨率顺序{#resolution-order-at-startup}
 
 使用以下优先顺序：
 
-1. 存储库节 `/apps/*/config...`点位于。(类型 `sling:OsgiConfig` 或属性文件)下。
+1. `/apps/*/config...`下的存储库节点，类型为`sling:OsgiConfig`或属性文件。
 
-1. 类型为以下的存储库 `sling:OsgiConfig` 节点 `/libs/*/config...`。 （现成定义）。
+1. `/libs/*/config...`下类型为`sling:OsgiConfig`的存储库节点。 （现成定义）。
 
-1. 任何 `.config` 文件 `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`。 本地文件系统上。
+1. 来自`<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`的任何`.config`文件。 本地文件系统上。
 
-这意味着中的通用配置 `/libs` 可以由中的特定项目配置进行遮罩 `/apps`。
+这意味着`/libs`中的通用配置可以由`/apps`中的项目特定配置来遮罩。
 
-### 运行时的分辨率顺序 {#resolution-order-at-runtime}
+### 运行时的分辨率顺序{#resolution-order-at-runtime}
 
 在系统运行时所做的配置更改会触发重新加载，修改了配置。
 
 然后，应用以下优先顺序：
 
 1. 在Web控制台中修改配置将立即生效，因为它在运行时优先。
-1. 在中修改配置 `/apps` 将立即生效。
-1. 修改中的配 `/libs` 置将立即生效，除非中的配置遮罩 `/apps`。
+1. 在`/apps`中修改配置将立即生效。
+1. 修改`/libs`中的配置将立即生效，除非它被`/apps`中的配置遮住。
 
-### 多种运行模式的分辨率 {#resolution-of-multiple-run-modes}
+### 多种运行模式的分辨率{#resolution-of-multiple-run-modes}
 
 对于运行模式特定配置，可以组合多个运行模式。 例如，您可以使用以下样式创建配置文件夹：
 
@@ -293,18 +293,18 @@ Web控制台不显示已保存更改的存储库位置，但可以轻松找到�
 
 如果所有运行模式都与启动时定义的运行模式匹配，则将应用此类文件夹中的配置。
 
-例如，如果实例是以运行模式启动的，则 `author,dev,emea`将应用中和中的 `/apps/*/config.emea`配 `/apps/*/config.author.dev/` 置节点，而不应用中和 `/apps/*/config.author.emea.dev/` 中的配 `/apps/*/config.author.asean/``/config/author.dev.emea.noldap/` 置节点。
+例如，如果实例是以运行模式`author,dev,emea`启动的，则将应用`/apps/*/config.emea`、`/apps/*/config.author.dev/`和`/apps/*/config.author.emea.dev/`中的配置节点，而不应用`/apps/*/config.author.asean/`和`/config/author.dev.emea.noldap/`中的配置节点。
 
 如果同一PID的多个配置适用，则应用具有最多匹配运行模式的配置。
 
-例如，如果实例是以运行模式启动的， `author,dev,emea`并且同时 `/apps/*/config.author/` 为 `/apps/*/config.emea.author/` 定义配置\
-`com.day.cq.wcm.core.impl.VersionManagerImpl`，将应用中 `/apps/*/config.emea.author/` 的配置。
+例如，如果实例是以运行模式`author,dev,emea`启动的，并且`/apps/*/config.author/`和`/apps/*/config.emea.author/`都定义了\
+`com.day.cq.wcm.core.impl.VersionManagerImpl`，将应用 `/apps/*/config.emea.author/` 中的配置。
 
 此规则的粒度在PID级别。\
-不能为同一PID定义某些属性， `/apps/*/config.author/` 而为同一PID定义更 `/apps/*/config.emea.author/` 多特定属性。\
+不能为同一PID在`/apps/*/config.author/`中定义某些属性，而为同一PID在`/apps/*/config.emea.author/`中定义更多特定属性。\
 对于整个PID，具有最大匹配运行模式数的配置是有效的。
 
-### 标准配置 {#standard-configurations}
+### 标准配置{#standard-configurations}
 
 以下列表显示了存储库中可用配置的一小部分（在标准安装中）:
 
@@ -322,37 +322,37 @@ Web控制台不显示已保存更改的存储库位置，但可以轻松找到�
 
 >[!NOTE]
 >
->由于这些配置位于 `/libs` 其中，因此在自定义之前，不得直接编辑这些配置，而应将其复制到您的应 `/apps`用程序区域()。
+>由于这些配置位于`/libs`中，因此在自定义之前，不得直接编辑它们，而应将其复制到您的应用程序区域(`/apps`)。
 
-要列表实例中的所有配置节点，请使用 **CRXDE Lite** 中的查询功能提交以下SQL查询:
+要列表实例中的所有配置节点，请使用CRXDE Lite中的&#x200B;**查询**&#x200B;功能提交以下SQL查询:
 
 `select * from sling:OsgiConfig`
 
-### 配置持久性 {#configuration-persistence}
+### 配置持久性{#configuration-persistence}
 
 * 如果通过Web控制台更改配置，则（通常）会将其写入存储库：
 
    `/apps/{somewhere}`
 
-   * 默认情 `{somewhere}` 况 `system/config` 下，将配置写入
+   * 默认情况下，`{somewhere}`为`system/config`，因此将配置写入
 
       `/apps/system/config`
 
-   * 但是，如果您正在编辑最初来自存储库中其他位置的配置： 例如：
+   * 但是，如果您正在编辑最初来自存储库中其他位置的配置：例如：
 
       /libs/foo/config/someconfig
 
-      然后将更新后的配置写入原始位置； 例如：
+      然后将更新后的配置写入原始位置；例如：
 
       `/apps/foo/config/someconfig`
 
-* 更改的设置保 `admin` 存在 `*.config` 以下文件：
+* 由`admin`更改的设置保存在`*.config`文件中：
 
    ```
       /crx-quickstart/launchpad/config
    ```
 
-   * 这是OSGi配置管理员的专用数据区域，它包含由指定的所有配置详细信息，而 `admin`不管这些配置详细信息是如何进入系统的。
+   * 这是OSGi配置管理员的专用数据区域，它包含由`admin`指定的所有配置详细信息，而不管它们如何进入系统。
    * 这是一个实施详细信息，您绝不能直接编辑此目录。
    * 但是，了解这些配置文件的位置以便可以为备份和／或多个安装获取副本是有用的：
 
@@ -366,7 +366,7 @@ Web控制台不显示已保存更改的存储库位置，但可以轻松找到�
 
 >[!CAUTION]
 >
->您不得 ***编辑*** 以下文件夹或文件：
+>必须&#x200B;***never***&#x200B;编辑以下文件夹或文件：
 >
 >`/crx-quickstart/launchpad/config`
 

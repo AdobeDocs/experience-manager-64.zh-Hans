@@ -18,11 +18,11 @@ ht-degree: 10%
 ---
 
 
-# SharePoint Connector许可、版权声明和免责声明{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# SharePoint连接器许可、版权声明和免责声明{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 本节列表所有与Day JCR Connector for MS SharePoint相关的许可、版权声明和免责声明。
 
-## 连接器第三方库概述 {#overview-of-connector-rd-party-libraries}
+## 连接器第三方库概述{#overview-of-connector-rd-party-libraries}
 
 下表列表了SharePoint Connector核心库中使用的第三方库，以及其涵盖的许可、版权声明或免责声明：
 
@@ -63,7 +63,7 @@ ht-degree: 10%
 | xml-api | [Apache](#apache) （包含Public Domain和W3C软件许可涵盖的部分） |
 | XmlSchema | [Apache](#apache) |
 
-## CRX第三方库概述 {#overview-of-crx-rd-party-libraries}
+## CRX第三方库概述{#overview-of-crx-rd-party-libraries}
 
 下表列表了CRX中使用的第三方库，以及涵盖的许可、版权声明或免责声明：
 
@@ -155,7 +155,7 @@ ht-degree: 10%
  </tbody> 
 </table>
 
-## CQSE第三方图书馆概述 {#overview-of-cqse-rd-party-libraries}
+## CQSE第三方库概述{#overview-of-cqse-rd-party-libraries}
 
 下表列表了Ponnature Servlet引擎中使用的第三方库，以及其涵盖的许可、版权声明或免责声明：
 
@@ -426,7 +426,7 @@ ht-degree: 10%
      limitations under the License.
 ```
 
-## 并发 {#concurrent}
+## 并发{#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -438,7 +438,7 @@ ht-degree: 10%
      <a href="https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
 ```
 
-## 第JCR天 {#day-jcr}
+## 第JCR {#day-jcr}天
 
 ```xml
      Day Management AG ("Licensor") is willing to license this 
@@ -567,7 +567,7 @@ ht-degree: 10%
      implementations, and test suites thereof.
 ```
 
-## Hypersonic SQL Group {#hypersonic-sql-group}
+## 高超音速SQL组{#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -1094,7 +1094,7 @@ ht-degree: 10%
      (LFI#95810/Form ID#011801)
 ```
 
-## W3C文档 {#w-c-document}
+## W3C文档{#w-c-document}
 
 ```xml
      This license came from: https://www.w3.org/Consortium/Legal/
@@ -1180,7 +1180,7 @@ ht-degree: 10%
      (last updated by reagle on 1999/04/99.)
 ```
 
-## W3C软件 {#w-c-software}
+## W3C软件{#w-c-software}
 
 ```xml
      This license came from: <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>

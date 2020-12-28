@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# AEM 6.4中的存储库重组{#repository-restructuring-in-aem}
+# AEM 6.4{#repository-restructuring-in-aem}中的存储库重组
 
 ## 简介 {#introduction}
 
@@ -31,21 +31,21 @@ ht-degree: 0%
 * AEM产品代码将始终放在/libs中，自定义代码不得覆盖
 * 自定义代码应放在/apps、/content和/conf中
 
-## 对6.4升级的影响 {#impact-on-upgrades}
+## 对6.4升级的影响{#impact-on-upgrades}
 
 升级到AEM 6.4时，/etc下的大部分内容将复制到存储库中的其他文件夹中。 这些新位置是引用内容的首选位置。 但是，每次尝试使AEM 6.4升级都向后兼容/etc文件夹中的先前位置，因此在大多数情况下，旧位置将继续由AEM代码引用，直到在客户的应用程序中主动进行更改（在很多情况下是手动进行的）。 从时间轴的角度来看，有两类别更改：
 
 * 升级——有些/etc重组更改不向后兼容，因此应计划并实施作为AEM 6.4升级的一部分的修改。
 * 6.5升级之前——大多数/etc重组更改都可以推迟到将来升级后的某个时间。 如前所述，AEM 6.4代码将继续引用旧位置，直到作为客户版本的一部分实施修改。 虽然没有应进行更改的强制时间线，但建议在6.5升级之前进行更改，因为将来的功能可能依赖于引用的新位置。 此外，根据惯例，某个特定功能的文档将引用新位置，因此，如果仍在使用旧位置，可能会令人混淆。
 
-### 重组指导 {#restructuring-guidance}
+### 重组指南{#restructuring-guidance}
 
 在计划升级到AEM 6.4时，应参考以下各个解决方案页面以评估工作成果：
 
 * [所有AEM解决方案通用的存储库重组](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [AEM Sites库重组](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
 * [AEM Assets库重组](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
-* [AEM Assets动态媒体存储库重组](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
+* [AEM AssetsDynamic Media库重组](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [AEM Forms库重组](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [AEM Communities库重组](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
 * [AEM商务存储库重组](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-4.md)

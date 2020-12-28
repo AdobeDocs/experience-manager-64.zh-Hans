@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 78%
 
 
 
-## 发布页面 {#publishing-a-page}
+## 发布页面  {#publishing-a-page}
 
 激活页面的方法有两种：
 
@@ -73,7 +73,7 @@ ht-degree: 78%
 1. 在网站控制台中，选择您要激活的页面。
 1. 从顶部菜单或选定页面项目的下拉菜单中选择&#x200B;**激活**。
 
-   要激活页面及其所有子页面的内容，请使用[**工具&#x200B;**控制台](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite)。
+   要激活页面及其所有子页面的内容，请使用&#x200B;[**工具**&#x200B;控制台](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite)。
 
    ![screen_shot_2012-02-08at13817pm](assets/screen_shot_2012-02-08at13817pm.png)
 
@@ -83,7 +83,7 @@ ht-degree: 78%
 
 1. 必要时，AEM 会要求您激活或取消激活与该页面链接的所有资产。您可以选中或清除用于激活这些资产的复选框。
 
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
 1. AEM WCM 可激活所选的内容。发布的一个或多个页面将显示在[“网站”控制台](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)中（用绿色标记），并提供有关谁激活了内容以及激活日期和时间的信息。
 
@@ -119,10 +119,10 @@ ht-degree: 78%
 
 ### 以后激活 {#activate-later}
 
-计划激活以后：
+计划在以后的时间激活：
 
-1. 在网站控制台中，转至“**激活**”菜单，然后选择“**以后激活**”。
-1. In the dialog that opens you provide the date and time for activation and click **OK**. This creates a version of the page that is activated at the specified time.
+1. 在“网站”控制台中，转到&#x200B;**激活**&#x200B;菜单，然后选择&#x200B;**以后激活**。
+1. 在打开的对话框中，提供激活的日期和时间，然后单击&#x200B;**确定**。这会创建在指定时间激活的页面版本。
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
@@ -130,13 +130,13 @@ ht-degree: 78%
 
 如果您要撤消激活/取消激活页面，请转到[“工作流”控制台](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd)以终止相应的工作流。
 
-### 稍后取消激活 {#deactivate-later}
+### 稍后取消激活  {#deactivate-later}
 
-计划您稍后取消激活：
+计划在以后的时间取消激活：
 
-1. In the Website console, go to the **Deactivate** menu, and select **Deactivate later**.
+1. 在网站控制台中，转到&#x200B;**取消激活**&#x200B;菜单，然后选择&#x200B;**稍后取消激活**。
 
-1. In the dialog that opens you provide the date and time for deactivation and click **OK**.
+1. 在打开的对话框中，提供取消激活的日期和时间，然后单击&#x200B;**确定**。
 
    ![screen_shot_2012-02-08at15129pm](assets/screen_shot_2012-02-08at15129pm.png)
 
@@ -144,7 +144,7 @@ ht-degree: 78%
 
 如果您要撤消此取消激活操作，请转到[“工作流”控制台](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd)以终止相应的工作流。
 
-## 计划激活/计划停用（开始/结束时间） {#scheduled-activation-deactivation-on-off-time}
+## 计划激活/计划停用（开始/结束时间）  {#scheduled-activation-deactivation-on-off-time}
 
 您可以使用&#x200B;**开始时间**&#x200B;和&#x200B;**结束时间**&#x200B;来安排页面的发布/取消发布时间，这两个设置可在[页面属性](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)中进行定义。
 
@@ -152,21 +152,21 @@ ht-degree: 78%
 
 状态可以从[网站](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)控制台查看。发布状态将以不同的颜色表示。
 
-## 激活网站的完整区域（树） {#activating-a-complete-section-tree-of-your-website}
+## 激活网站的完整区域（树）  {#activating-a-complete-section-tree-of-your-website}
 
 在&#x200B;**网站**&#x200B;选项卡中，可以激活单个页面。如果输入或更新了大量内容页面（所有内容页面都位于同一根页面下），则可以更轻松地通过一个操作来激活整个树。您也可以通过执行练习来模拟激活和突出显示要激活的页面。
 
-1. Open the **Tools** console by selecting it from the **Welcome** page and then double-click **Replication** to open the console ( `http://localhost:4502/etc/replication.html`).
+1. 从&#x200B;**欢迎**&#x200B;页面选择&#x200B;**工具**&#x200B;控制台，然后多次单击&#x200B;**复制**&#x200B;以打开控制台(`http://localhost:4502/etc/replication.html`)。
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. 在&#x200B;**复制**&#x200B;控制台上，单击&#x200B;**激活树**。
 
-   The following window ( `http://localhost:4502/etc/replication/treeactivation.html`) will be displayed.
+   将显示以下窗口(`http://localhost:4502/etc/replication/treeactivation.html`)。
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Enter the **Start Path**. This specifies the path to the root of the section you want to activate (publish). This page and all pages underneath are considered for activation (or used in the emulation if a Dry Run is selected).
+1. 输入&#x200B;**开始路径**。这指定要激活（发布）的节的根路径。 系统将考虑使用此页面和该页面下的所有页面进行激活（或在选择“练习”时，系统将模拟使用它）。
 1. 根据需要激活选择条件：
 
    * **仅限已修改的条目**：仅激活已修改的页面。
@@ -175,6 +175,6 @@ ht-degree: 78%
 
 1. 选择要执行的操作：
 
-   1. Select **Dry Run** if you want to check which pages *would* be activated. This is only an emulation, no pages will be activated.
-   1. Select **Activate** if you want to activate the pages.
+   1. 如果要检查将激活哪些页面&#x200B;**，请选择&#x200B;**练习**。这只是模拟，不会激活任何页面。
+   1. 如果要激活页面，请选择&#x200B;**激活**。
 

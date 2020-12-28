@@ -159,7 +159,7 @@ ht-degree: 1%
 
 1. 只需视图[作者实例](http://localhost:4502/content/community-components/en/comments.html)上的评论（可能仍以管理员／管理员身份登录）。
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
    注意：虽然作者的&#x200B;*asipath*&#x200B;下有JCR节点，但这些节点用于SCF框架。 实际UGC不在JCR中，而在MongoDB中。
 

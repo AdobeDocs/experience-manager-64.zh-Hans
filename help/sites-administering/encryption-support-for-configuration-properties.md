@@ -28,32 +28,32 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->期望已加密值的服务需要使用IsProtected检查，以在尝试解密之前查看该值是否已加密，因为它可能已被解密。
+>期望已加密值的服务需要使用IsProtected检查，以在尝试解密之前查看该值是否已加密，因为可能已将其解密。
 
-## 启用加密支持 {#enabling-encryption-support}
+## 启用加密支持{#enabling-encryption-support}
 
-这些步骤说明如何为邮件服务加密SMTP密码。 您可以完成要加密的OSGI属性的这些步骤。
+这些步骤说明如何为邮件服务加密SMTP密码。 您可以为要加密的OSGI属性完成这些步骤。
 
-1. 转到AEM Web控制台(位 *于https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr)*
-1. 在左上角，转到主- **加密支持**
+1. 转到位于&#x200B;*https://&lt;serveraddress>的AEM Web控制台：&lt;serverport>/system/console/configMgr*
+1. 在左上角，转至&#x200B;**Main - Crypto Support**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. 将显 **示“Adobe Experience ManagerWeb控制台加密** 支持”页。
+1. 将显示&#x200B;**Adobe Experience ManagerWeb控制台加密支持**&#x200B;页。
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. 在纯 **文本字段中** ，输入要保护的敏感数据的文本。
-1. 选择 **Protect**。 “受保护”文本显示为加密文本。
+1. 在&#x200B;**纯文本**&#x200B;字段中，输入要保护的敏感数据的文本。
+1. 选择&#x200B;**Protect**。 “受保护”文本显示为加密文本。
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. 从Step#5复制受保护文本并将其粘贴到OSGI表单值中。 在此示例中，加密 **的SMTP** 口令会添 *加到Day CQ邮件服务*。
+1. 从Step#5复制受保护文本并将其粘贴到OSGI表单值中。 在此示例中，加密的&#x200B;**SMTP密码**&#x200B;被添加到&#x200B;*Day CQ邮件服务*。
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 
 1. 保存Day CQ邮件服务属性。 SMTP密码现在将作为加密值发送。
 
-## 解密支持 {#decryption-support}
+## 解密支持{#decryption-support}
 
 AEM现在提供配置插件来解密配置属性。 此AEM插件将自动解密和检索明文属性。

@@ -22,12 +22,12 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
 为了允许AEM Mobile应用程序查看器在您的作者实例上视图应用程序，您需要将HTML推荐人过滤器设置为“允许空”。
 
 如果不想使用应用程序查看器来查看处于开发和暂存状态的应用程序，则无需更改推荐人过滤器的默认设置。
 
-在运行中的AEM作者实例中，导航到： [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) 并搜索“Apache Sling推荐人过滤器”。 单击以编辑推荐人过滤器并选中“允许空”复选框（请参阅下图）。 然后，点击保存按钮并关闭浏览器页面。
+在运行中的AEM作者实例中，导航到：[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)并搜索“Apache Sling推荐人过滤器”。 单击以编辑推荐人过滤器并选中“允许空”复选框（请参阅下图）。 然后，点击保存按钮并关闭浏览器页面。
 
 ![推荐人过滤器设置](assets/chlimage_1-106.png)

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 性能和可伸缩性{#performance-scalability}
 
-## 白皮书： AEM可扩展性、性能和灾难恢复 {#white-paper-aem-scalability-performance-and-disaster-recovery}
+## 白皮书：AEM可扩展性、性能和灾难恢复{#white-paper-aem-scalability-performance-and-disaster-recovery}
 
 本白皮书讨论了将可扩展性构建到Adobe Experience Manager的方式以及卓越的性能指标和出色的灾难恢复功能。
 

@@ -18,40 +18,40 @@ ht-degree: 0%
 ---
 
 
-# 上传共享资源 {#uploading-shared-resources}
+# 上传共享资源{#uploading-shared-resources}
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
 内容管理操作是帮助在应用程序中创建和管理内容的构件。 对应用程序中的内容执行以下操作。
 
 >[!NOTE]
 >
->要进一步了解AEM Mobile应用程序的设计注意事项，请参 [阅联机帮助中的AEM Mobile应用程序](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 设计注意事项。
+>要进一步了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)。
 
 >[!CAUTION]
 >
 >必须先关联Mobile On-Demand连接。
 
-## 上传共享资源 {#uploading-shared-resources-1}
+## 上传共享资源{#uploading-shared-resources-1}
 
 通常，文章等内容在所有作者甚至应用程序中都必须具有相同的外观。 因此，使脚本、css和字体可供所有人使用是必不可少的。 此操作会将此类共享资源发送到Mobile On-Demand，然后可根据需要使用该资源。
 
-在配置应用程序并将其关联到云配置后，您可以上传您的共享资源。 有关将应用程序关联到云配置的详细步骤，请单击 [此处](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)。
+在配置应用程序并将其关联到云配置后，您可以上传您的共享资源。 有关将应用程序关联到云配置的详细步骤，请单击[此处](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)。
 
 >[!NOTE]
 >
->共享资源使用ContentSync收集所有不同的资源。 有关更 [多详细信息，请参](/help/mobile/mobile-ondemand-contentsync.md) 阅Mobile with ContentSync。
+>共享资源使用ContentSync收集所有不同的资源。 有关详细信息，请参阅[Mobile with ContentSync](/help/mobile/mobile-ondemand-contentsync.md)。
 
 按照以下步骤上传文章的共享资源：
 
-1. 从“管理文章”拼 **贴中选择文** 章。
-1. 单击 **上传共享资源** ，以上传您的共享HTML资源。
+1. 从&#x200B;**管理文章**&#x200B;拼贴中选择文章。
+1. 单击&#x200B;**上传共享资源**&#x200B;以上传您的共享HTML资源。
 
-   ![chlimage_1-133](assets/chlimage_1-133.png)
+   ![chlimage_1-135](assets/chlimage_1-133.png)
 
-### The Next Step {#the-next-step}
+### 下一步{#the-next-step}
 
 了解创建和发布内容后，请参阅
 

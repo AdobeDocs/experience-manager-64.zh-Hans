@@ -22,29 +22,29 @@ ht-degree: 0%
 
 Apache Sling Discovery功能提供一个Java API，使您能够创建使用JobManager作业和JobConsumer服务。
 
-有关创建卸载拓扑和配置主题使用情况的信息，请参 [阅卸载作业](/help/sites-deploying/offloading.md)。
+有关创建卸载拓扑和配置主题使用情况的信息，请参阅[卸载作业](/help/sites-deploying/offloading.md)。
 
-## 处理作业有效负荷 {#handling-job-payloads}
+## 处理作业有效负荷{#handling-job-payloads}
 
 卸载框架定义了两个用于标识作业有效负荷的作业属性。 卸载的复制代理使用这些属性来标识要复制到拓扑中实例的资源：
 
-* `offloading.job.input.payload`: 内容路径的逗号分隔列表。 内容将复制到执行作业的实例。
-* `offloading.job.output.payload`: 内容路径的逗号分隔列表。 作业执行完成后，作业有效负荷将复制到创建该作业的实例上的这些路径。
+* `offloading.job.input.payload`:内容路径的逗号分隔列表。内容将复制到执行作业的实例。
+* `offloading.job.output.payload`:内容路径的逗号分隔列表。作业执行完成后，作业有效负荷将复制到创建该作业的实例上的这些路径。
 
-使用枚 `OffloadingJobProperties` 举引用属性名称：
+使用`OffloadingJobProperties`枚举引用属性名称：
 
 * `OffloadingJobProperties.INPUT_PAYLOAD.propertyName()`
 * `OffloadingJobProperties.OUTPUT_PAYLOAD.propetyName()`
 
 作业不需要有效负载。 但是，如果作业需要对资源进行操作并且作业被卸载到未创建作业的计算机，则有效负荷是必需的。
 
-## 创建要卸载的作业 {#creating-jobs-for-offloading}
+## 创建要卸载的作业{#creating-jobs-for-offloading}
 
 创建调用JobManager.addJob方法的客户端，以创建由自动选择的JobConsumer执行的作业。 提供以下信息以创建作业：
 
-* 主题： 工作主题。
-* 名称： （可选）
-* 属性映射： 包 `Map<String, Object>` 含任意数量属性的对象，如输入有效负荷路径和输出有效负荷路径。 此Map对象可用于执行作业的JobConsumer对象。
+* 主题：工作主题。
+* 名称：（可选）
+* 属性映射：`Map<String, Object>`对象，它包含任意数量的属性，如输入有效负荷路径和输出有效负荷路径。 此Map对象可用于执行作业的JobConsumer对象。
 
 以下示例服务为给定主题和输入有效负荷路径创建作业。
 
@@ -94,17 +94,17 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-当为主题和负载调用JobGeneratorImpl.createJob时，日志中 `com/adobe/example/offloading` 包含以下 `/content/geometrixx/de/services` 消息：
+当为`com/adobe/example/offloading`主题和`/content/geometrixx/de/services`负载调用JobGeneratorImpl.createJob时，日志中包含以下消息：
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
 ```
 
-## 发展就业消费者 {#developing-a-job-consumer}
+## 开发工作用户{#developing-a-job-consumer}
 
-要消耗作业，请开发实现接口的OSGi服 `org.apache.sling.event.jobs.consumer.JobConsumer` 务。 使用属性标识要消费的主 `JobConsumer.PROPERTY_TOPICS` 题。
+要使用作业，请开发实现`org.apache.sling.event.jobs.consumer.JobConsumer`接口的OSGi服务。 使用`JobConsumer.PROPERTY_TOPICS`属性确定要消费的主题。
 
-以下示例JobConsumer实现在主题中注 `com/adobe/example/offloading` 册。 使用者只需将有效负荷内容节点的“消耗”属性设置为true。
+以下示例JobConsumer实现在`com/adobe/example/offloading`主题中注册。 使用者只需将有效负荷内容节点的“消耗”属性设置为true。
 
 ```java
 package com.adobe.example.offloading;
@@ -181,7 +181,7 @@ MyJobConsumer类为/content/geometrixx/de/services的输入有效负荷生成以
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
-## Maven依赖关系 {#maven-dependencies}
+## Maven依赖项{#maven-dependencies}
 
 向pom.xml文件添加以下依赖关系保护，以便Maven可以解析与卸载相关的类。
 

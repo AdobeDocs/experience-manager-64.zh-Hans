@@ -19,23 +19,23 @@ ht-degree: 0%
 ---
 
 
-# 你的混合应用准备好迎接AEM Mobile了吗？{#is-your-hybrid-app-ready-for-aem-mobile}
+# 您的混合应用程序准备好迎接AEM Mobile了吗？{#is-your-hybrid-app-ready-for-aem-mobile}
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
-因此，您已将Hybrid PhoneGap或Cordova应用程序导入AEM，现在怎么办？ 您可能希望向应用程序添加可创作内容。 要完成此任务，您需要对AEM应用程序的结构有全面的了解。 AEM中的应用程序通常分为两部分。 “shell”和“content”。 “外壳”由应用的静态部分组成； 如PhoneGap配置文件、应用程序框架和导航控件。 导入的存档内容会作为外壳程序的一部分进行存储。 在此文档中，shell是应用程序开发人员构建的Hybrid PhoneGap应用程序的所有非AEM创作内容。
+因此，您已将Hybrid PhoneGap或Cordova应用程序导入AEM，现在怎么办？ 您可能希望向应用程序添加可创作内容。 要完成此任务，您需要对AEM应用程序的结构有全面的了解。 AEM中的应用程序通常分为两部分。 “shell”和“content”。 “外壳”由应用的静态部分组成；如PhoneGap配置文件、应用程序框架和导航控件。 导入的存档内容会作为外壳程序的一部分进行存储。 在此文档中，shell是应用程序开发人员构建的Hybrid PhoneGap应用程序的所有非AEM创作内容。
 
 内容是指在AEM中由AEM开发人员构建的创作的组件、模板和创作的页面。 内容被分类为开发人员内容或创作内容。 组件、设计和页面模板由开发人员构建，因此被视为开发内容。 创作内容是使用组件和模板构建的页面。 这些操作通常由设计人员或营销人员完成。
 
 将创作的AEM页面添加到您的混合应用程序需要应用程序开发人员与AEM开发人员之间的协调。 在应用程序中要添加创作内容的任意位置，应用程序开发人员需要以可在AEM中覆盖的结构组织这些页面。 应用程序开发人员必须能够向AEM开发人员提供添加AEM创作内容的路径，然后在混合应用程序中提供占位符页，该占位符页将在AEM开发人员创作页面内容后被替换。
 
-为了使解释更易于遵循，我们将使用AEMMarketing Cloud: AEM Mobile混合参考，以解释这些概念。 Hybrid Reference应用程序包含带侧面菜单的欢迎页面。
+为了使解释更易于遵循，我们将使用AEMMarketing Cloud:AEM Mobile混合参考，以解释这些概念。 Hybrid Reference应用程序包含带侧面菜单的欢迎页面。
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-在此示例中，我们将创作应用程序的欢迎页面。 请查看来源https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75 [](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75)。 我们看到应用程序开发人员已定义欢迎页面并为应用程序呈现的页面提供模板。 这是应用程序开发人员和AEM开发人员需要协调的地方。 混合引用应用程序中欢迎页面模板的路径定义为“content/mobileapps/hybrid-reference-app/en/welcome.template.html”。 此路径非常重要，因为AEM开发人员将使用相同的路径在AEM存储库中创作其欢迎页面。
+在此示例中，我们将创作应用程序的欢迎页面。 查看源[https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75)。 我们看到应用程序开发人员已定义欢迎页面并为应用程序呈现的页面提供模板。 这是应用程序开发人员和AEM开发人员需要协调的地方。 混合引用应用程序中欢迎页面模板的路径定义为“content/mobileapps/hybrid-reference-app/en/welcome.template.html”。 此路径非常重要，因为AEM开发人员将使用相同的路径在AEM存储库中创作其欢迎页面。
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 

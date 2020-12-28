@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# 在AEM中启用CRXDE Lite{#enabling-crxde-lite-in-aem}
+# 启用AEM{#enabling-crxde-lite-in-aem}中的CRXDE Lite
 
-为确保AEM安装尽可能安全，安全检查清单建议在生产 [环境中禁用Web](/help/sites-administering/security-checklist.md#disable-webdav) DAV。
+为确保AEM安装尽可能安全，安全清单建议[在生产环境中禁用WebDAV](/help/sites-administering/security-checklist.md#disable-webdav)。
 
-但是，CRXDE Lite依赖于包 `org.apache.sling.jcr.davex` 才能正常工作，因此禁用WebDAV也会有效地禁用CRXDE Lite。
+但是，CRXDE Lite依赖于`org.apache.sling.jcr.davex`捆绑才能正常工作，因此禁用WebDAV也将有效地禁用CRXDE Lite。
 
-出现这种情况时，浏 `https://serveraddress:4502/crx/de/index.jsp` 览到将显示空的根节点，并且对CRXDE Lite资源的所有HTTP请求都将失败：
+如果出现这种情况，浏览到`https://serveraddress:4502/crx/de/index.jsp`将显示空的根节点，并且对CRXDE Lite资源的所有HTTP请求都将失败：
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 如果禁用此选项，则可以按照以下过程打开CRXDE Lite:
 
-1. 转到OSGi组件控制台，网址为 `http://localhost:4502/system/console/components`
+1. 转到位于`http://localhost:4502/system/console/components`的OSGi组件控制台
 1. 搜索以下组件：
 
    * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`
@@ -46,7 +46,7 @@ ht-degree: 0%
 1. 创建以下配置：
 
    * **根路径:** `/crx/server`
-   * 在“使用绝 **对URI”下勾选框**。
+   * 在&#x200B;**使用绝对URI**&#x200B;下勾选框。
 
 1. 使用完CRXDE Lite后，请确保再次禁用WebDAV。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
 ```
 
-## Other Resources {#other-resources}
+## 其他资源{#other-resources}
 
 有关AEM 6安全功能的详细信息，请参阅以下页面：
 

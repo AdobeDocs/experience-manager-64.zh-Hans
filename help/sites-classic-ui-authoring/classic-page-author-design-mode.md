@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 88%
 
 安装现成 AEM 实例后，Sidekick 中会提供一些可立即使用的组件。
 
-除了这些组件以外，还有其他一些组件可用。您可以使用设计模式[启用/禁用这类组件](#enabledisablecomponentsusingdesignmode)。When enabled and located on your page you can then use Design mode to [configure aspects of the component design](#configuringcomponentsusingdesignmode) by editing the attribute parameters.
+除了这些组件以外，还有其他一些组件可用。您可以使用设计模式[启用/禁用这类组件](#enabledisablecomponentsusingdesignmode)。在启用这类组件并且它们显示在页面上后，您可以使用设计模式通过编辑属性参数来[配置组件设计的特性。 ](#configuringcomponentsusingdesignmode)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ ht-degree: 88%
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Click **Edit** on the Paragraph system (**Design of par**).
+1. 单击段落系统上的&#x200B;**编辑**（**par**&#x200B;的设计）。
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -64,7 +64,7 @@ ht-degree: 88%
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## 配置组件的设计 {#configuring-the-design-of-a-component}
+## 配置组件的设计  {#configuring-the-design-of-a-component}
 
 在设计模式中，还可以配置单个组件的属性。每个组件都有其自身的参数，下面的示例说明了&#x200B;**图像**&#x200B;组件的配置方法：
 
@@ -74,7 +74,7 @@ ht-degree: 88%
 
 1. 您可以配置组件的设计。
 
-   For example, if you click **Edit** on the Image component (**Design of image**) you can configure the component specific parameters:
+   例如，如果单击图像组件（**图像设计**）上的&#x200B;**编辑**，则可以配置组件特定参数：
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 

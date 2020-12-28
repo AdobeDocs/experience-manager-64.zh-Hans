@@ -37,7 +37,7 @@ AEM提供了多个用于开发应用程序的API。 以下列表提供AEM支持�
 
 * [编辑器核心Javascript API参考](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
-AEM单页应用程序(SPA)编辑器SDK框架JavaScript API参考：
+AEM单页应用程序(SPA)Editor SDK框架JavaScript API参考：
 
 * [组件映射](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [页面模型管理器](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
@@ -50,7 +50,7 @@ AEM投放和内容管理API:
 
    * [JSON导出器](/help/sites-developing/json-exporter.md)
    * [为组件启用JSON导出](/help/sites-developing/json-exporter-components.md)
-   * 有关详 [细信息，请参阅《开发用户指南](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) 》中的“组件”部分
+   * 有关详细信息，请参阅《开发用户指南》中的[组件部分](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js)
 
 * [AEM AssetsHTTP API](/help/assets/mac-api-assets.md)
 

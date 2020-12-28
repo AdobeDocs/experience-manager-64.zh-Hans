@@ -18,21 +18,21 @@ ht-degree: 0%
 ---
 
 
-# 为AEM应用程序配置{#configuring-for-aem-apps}
+# 为AEM Apps配置{#configuring-for-aem-apps}
 
 Adobe Experience Manager应用程序提供通过无线(OTA)更新应用程序内容的功能。 更新的内容存储在发布实例上。 要允许设备上的应用程序连接到发布实例并检查更新，需要将发布实例配置为允许空的推荐人头。
 
-## 配置空推荐人头 {#configuring-empty-referrer-header}
+## 配置空推荐人标头{#configuring-empty-referrer-header}
 
 要配置推荐人筛选器服务，请执行以下操作：
 
-* 打开Apache Felix控制台(**配置**):
+* 打开Apache Felix控制台(**Configurations**):
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * 以管理员身份登录。
-* 在“配 **置** ”菜单中，选择： *Apache Sling推荐人过滤器*
+* 在&#x200B;**配置**&#x200B;菜单中，选择：*Apache Sling推荐人过滤器*
 * 选中“允许为空”字段，以允许空／缺少推荐人标头。
-* 单击 **保存** ，以保存更改。
+* 单击&#x200B;**保存**&#x200B;以保存更改。
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-有关更多 [详细信息，请参](/help/sites-deploying/osgi-configuration-settings.md)[阅OSGI配置设置和安全清单——跨站点请求伪造问题](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) 。
+有关更多详细信息，请参阅[OSGI配置设置](/help/sites-deploying/osgi-configuration-settings.md)和[安全清单——跨站点请求伪造问题](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery)。

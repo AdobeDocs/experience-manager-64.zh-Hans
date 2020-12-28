@@ -21,13 +21,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如，React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
 
 AEM与PhoneGap集成，因此您可以使用AEM页面轻松创建应用程序。 PhoneGap允许用户创建实用程序应用程序，以便用户处理内容。 内容同步使您能够创建与应用程序捆绑的页面版本控制存档。
 
 >[!NOTE]
 >
->在开始使用AEM Mobile之前，请确保设置环境并开始使用 [AEM Mobile应用仪表板](/help/mobile/phonegap-authoring-apps.md)。
+>在开始使用AEM Mobile之前，请确保设置环境并开始使用[AEM Mobile应用程序仪表板](/help/mobile/phonegap-authoring-apps.md)。
 
 以下资源将帮助您开始使用AEM MobileAdobe PhoneGap:
 
@@ -35,17 +35,17 @@ AEM与PhoneGap集成，因此您可以使用AEM页面轻松创建应用程序。
 * [内容同步的移动设备](/help/mobile/phonegap-contentsync.md)
 * [页面模板](/help/mobile/phonegap-apps-arch-page-templates.md)
 
-* [AEM Mobile内容服务： 概述](/help/mobile/develop-content-as-a-service.md)
+* [AEM Mobile内容服务：概述](/help/mobile/develop-content-as-a-service.md)
 
-   * 要启用内容服务和数据模型，请参 [阅管理内容服务](/help/mobile/developing-content-services.md)
-   * 要了解创建模型，请参阅开 [发模型](/help/mobile/administer-mobile-apps.md)
-   * 要了解渲染和投放，请参 [阅内容服务的渲染和投放](/help/mobile/rendering-and-delivery.md)
+   * 要启用内容服务和数据模型，请参阅[管理内容服务](/help/mobile/developing-content-services.md)
+   * 要了解创建模型，请参阅[开发模型](/help/mobile/administer-mobile-apps.md)
+   * 要了解渲染和投放，请参阅[内容服务的渲染和投放](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >
->要在任何iOS或Android移动设备上运行AEM移动应用程序，请参阅使 [用AEM验证应用程序的移动快速启动](/help/mobile/phonegap-mobile-quickstart.md)。
+>要在任何iOS或Android移动设备上运行AEM移动应用程序，请参阅[使用AEM验证应用程序](/help/mobile/phonegap-mobile-quickstart.md)的移动快速启动。
 
-## 领先 {#getting-ahead}
+## 领先{#getting-ahead}
 
 要了解管理员和开发人员的角色和职责，请参阅以下资源：
 

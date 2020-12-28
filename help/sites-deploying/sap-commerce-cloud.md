@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >This page contains links to the hybris website. 对于某些页面，您需要帐户才能登录。
 
-## 使用SAP部署电子商务Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
+## 使用SAPCommerce Cloud{#deploying-ecommerce-with-sap-commerce-cloud}部署电子商务
 
 >[!NOTE]
 >
@@ -33,26 +33,26 @@ ht-degree: 0%
 >
 >`Geometrixx Outdoors Site English (US)`
 
-部署必 [需的eCommerce](#packages-needed-for-ecommerce-with-hybris) packages将提供eCommerce framework的完整功能，以及eCommerce functionality的引用实现，如与hybris实现（包括演示目录）一起提供
+部署[必需的eCommerce packages](#packages-needed-for-ecommerce-with-hybris)将提供eCommerce framework的完整功能，以及随hybris实现（包括演示目录）提供的eCommerce功能的参考实现
 
-此选项位于Geometrixx Outdoors站点的英语(美 `/content/geometrixx-outdoors/en_US`国)分支()下：
+此选项位于Geometrixx Outdoors站点的英语（美国）分支(`/content/geometrixx-outdoors/en_US`)下：
 
-* [产品信息](#productinformationwithcolorvariants) （如果适用，带有颜色变体）
+* [产品信息](#productinformationwithcolorvariants) （如果适用，包含颜色变体）
 
 * [购物车内容概述](#shoppingcartcontentoverview)
-* [客户注册](#customersignup)[和客户登录](#customersignin)
+* [客户登](#customersignup) 录 [和客户登录](#customersignin)
 
 * [访问the hybris management console](#accesstothehybrismanagementconsole)
 
 ### Technical Requirements - hybris Server {#technical-requirements-hybris-server}
 
-The hybris extension of the eCommerce Integration Framework has beed updated to support Hybris 5(as default), while maintaining backward compatibility with [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
+The hybris extension of the eCommerce Integration Framework has beed updated to support Hybris 5(as default), while maintaining backward compatibility with [ Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
 >* 支持up to hybris 6.4 with OCC version 2.
 >* You will need Java 7 to run the [hybris 5 server.](https://www.hybris.com/en/architecture-technology)
->* AEM extension不支持 [The hybris add-on,](https://www.hybris.com/en/products/telecommunication)the Telco Accelerator, is not supported by the  extension.
+>* AEM extension不支持hybris add-on, the [Telco Accelerator](https://www.hybris.com/en/products/telecommunication)。
 
 >
 
@@ -76,9 +76,9 @@ The hybris extension of the eCommerce Integration Framework has beed updated to 
    * `cq-hybris-content-6.3.2`
    * hybris-specific API implementation
    * `cq-geometrixx-hybris-content-6.3.2`
-   * a reference implementation to illustre use of hybris( `geometrixx-outdoors/en_US`)
+   * a reference implementation to illustrate use of hybris(`geometrixx-outdoors/en_US`)
 
-### eCommerce with hybris安装 {#installation-of-ecommerce-with-hybris}
+### eCommerce with hybris {#installation-of-ecommerce-with-hybris}安装
 
 要安装完整的配置(使用演示目录，Geometrixx Outdoors)，基本步骤为：
 
@@ -87,7 +87,7 @@ The hybris extension of the eCommerce Integration Framework has beed updated to 
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. 使用包管理器安装演示内 [容包](/help/sites-administering/package-manager.md):
+1. 使用[包管理器](/help/sites-administering/package-manager.md)安装演示内容包：
 
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
@@ -105,7 +105,7 @@ The hybris extension of the eCommerce Integration Framework has beed updated to 
 
 >[!NOTE]
 >
->对于开 [发人员](/help/sites-developing/ecommerce.md#api-documentation) ，还可下载API文档。
+>对于开发人员[API文档](/help/sites-developing/ecommerce.md#api-documentation)也可下载。
 
 ### Download and Build your hybris Server {#download-and-build-your-hybris-server}
 
@@ -117,9 +117,9 @@ The hybris extension of the eCommerce Integration Framework has beed updated to 
 
 >[!NOTE]
 >
->要完成此操作，您需 [要在系](https://groovy-lang.org/) 统上安装Groovy。
+>要完成此操作，您需要在系统上安装[Groovy](https://groovy-lang.org/)。
 
-1. Download the **hybris Commerce Suite** distribution from the hybris download site.
+1. 下载&#x200B;**hybris Commerce Suite** distribution from the hybris download site.
 
    >[!CAUTION]
    >
@@ -141,7 +141,7 @@ The hybris extension of the eCommerce Integration Framework has beed updated to 
    >
    >`ant clean all`
    >
-   >需 `Return` 要时按。
+   >根据需要按`Return`。
 
 1. 将以下文件下载到您提取的hybris分发的根文件夹，
 
@@ -177,19 +177,19 @@ The hybris extension of the eCommerce Integration Framework has beed updated to 
    >
    >根据您的系统，完成这些步骤中的几个可能需要几分钟。
 
-1. 在您的浏览器中，导航到 **the hybris administration console** at:
+1. 在您的浏览器中，导航到&#x200B;**hybris管理控制台**，网址为：
 
    [http://localhost:9002](http://localhost:9002)
 
-1. 单击 **初始化** ，然后确认初始化操作（因为它将删除现有数据）。
+1. 单击&#x200B;**初始化**，然后确认初始化操作（因为它将删除现有数据）。
 
-   进度将显示在控制台上，并指 `FINISHED` 示完成。
+   进度将显示在控制台上，`FINISHED`表示已完成。
 
    >[!NOTE]
    >
    >根据您的系统，可能需要几分钟才能完成此操作。
 
-### 设置Geometrixx Outdoors商店 {#setup-the-geometrixx-outdoors-store}
+### 设置Geometrixx Outdoors商店{#setup-the-geometrixx-outdoors-store}
 
 此过程将上传并配置演示商店——在线Geometrixx。
 
@@ -200,31 +200,31 @@ The hybris extension of the eCommerce Integration Framework has beed updated to 
    sh hybrisserver.sh
    ```
 
-1. 在您的浏览器中，导航到 **the hybris management console** at:
+1. 在您的浏览器中，导航到&#x200B;**hybris管理控制台**，网址为：
 
    [http://localhost:9002/hmc/hybris](http://localhost:9002/hmc/hybris)
 
-1. 在提要栏导航中，解 **释系统** 和 **工具**。 然后，选 **择** “导入”以打 **开向导： “CSV导入** ”窗口。
-1. 在“配 **置** ”选项卡中， **上传** 以下导 **入文件**:
+1. 在提要栏导航中，浏览&#x200B;**System**&#x200B;和&#x200B;**Tools**。 然后选择&#x200B;**导入**&#x200B;以打开&#x200B;**向导：CSV Import**&#x200B;窗口。
+1. 在&#x200B;**配置**&#x200B;选项卡中，**上载**&#x200B;以下&#x200B;**导入文件**:
 
    [获取文件](assets/geometrixx-outdoors-export.csv)
 
-1. 将“区域 **设置** ”设置为：
+1. 将&#x200B;**区域设置**&#x200B;设置为：
 
    `en_US - English (United States)`
 
-1. Open the **Resources** tab.
-1. **上传** 以下 **媒体-Zip**:
+1. 打开&#x200B;**资源**&#x200B;选项卡。
+1. **上** 传以下 **媒体-Zip**:
 
    [获取文件](assets/geometrixx-outdoors-images.zip)
 
-1. 单击 **开始** ，以导入指定的文件。 “结 **果** ”选项卡将显示所有日志条目。
+1. 单击&#x200B;**开始**&#x200B;以导入指定的文件。 **Result**&#x200B;选项卡将显示所有日志条目。
 
-1. 单击 **完成** ，关闭导入窗口。
+1. 单击&#x200B;**完成**&#x200B;以关闭导入窗口。
 
-1. 在提要栏中，依次 **选择** System、 **Tools****、** Import。
+1. 在提要栏中，选择&#x200B;**System**，然后选择&#x200B;**Tools**，然后选择&#x200B;**Import**。
 
-1. **上传** 以下导 **入文件**:
+1. **上** 传以下 **导入文件**:
 
    [获取文件](assets/base-store.csv)
 
@@ -232,13 +232,13 @@ The hybris extension of the eCommerce Integration Framework has beed updated to 
 
    [获取文件](assets/base-store-5_7.csv)
 
-1. 将“区域 **设置** ”设置为：
+1. 将&#x200B;**区域设置**&#x200B;设置为：
 
    `en_US - English (United States)`
 
-1. 单击 **开始** ，以导入指定的文件。 “结 **果** ”选项卡将显示所有日志条目。
+1. 单击&#x200B;**开始**&#x200B;以导入指定的文件。 **Result**&#x200B;选项卡将显示所有日志条目。
 
-1. 单击 **完成** ，关闭导入窗口。
+1. 单击&#x200B;**完成**&#x200B;以关闭导入窗口。
 
 1. 您现在可以使用产品驾驶舱来视图导入的目录和产品：
 

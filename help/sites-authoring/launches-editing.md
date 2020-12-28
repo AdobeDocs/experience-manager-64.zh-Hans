@@ -28,7 +28,7 @@ ht-degree: 99%
 1. [从“引用”（“站点”控制台）中访问启动项](/help/sites-authoring/launches.md#launches-in-references-sites-console)以显示可用的操作。
 1. 选择&#x200B;**转到页面**&#x200B;以打开要编辑的页面。
 
-### 编辑基于 Live Copy 的启动页面 {#editing-launch-pages-subject-to-a-live-copy}
+### 编辑基于 Live Copy 的启动页面  {#editing-launch-pages-subject-to-a-live-copy}
 
 如果您的启动项基于 [Live Copy](/help/sites-administering/msm.md)，那么您将会：
 
@@ -44,12 +44,12 @@ Live copy用于将源分 *支中的**内容同步到启动分支* （以使启�
 
 有关更多信息，请参阅[更改 Live Copy 内容](/help/sites-administering/msm-livecopy.md#changing-live-copy-content)。
 
-## 比较启动页面与其源页面 {#comparing-a-launch-page-to-its-source-page}
+## 比较启动页面与其源页面  {#comparing-a-launch-page-to-its-source-page}
 
 要跟踪您所做的更改，您可以在引用中查看启动项 **** ，并将启动项页面与其源页面进行比较：
 
 1. 在&#x200B;**站点**&#x200B;控制台中，[导航到启动项的源页面并将其选中](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)。
-1. 打开&#x200B;**[引用](/help/sites-authoring/basic-handling.md#references)**面板，然后选择&#x200B;**启动项**。
+1. 打开&#x200B;**[引用](/help/sites-authoring/basic-handling.md#references)**&#x200B;面板，然后选择&#x200B;**启动项**。
 1. 选择您的特定启动项，然后选择&#x200B;**和源比较**：
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
@@ -58,7 +58,7 @@ Live copy用于将源分 *支中的**内容同步到启动分支* （以使启�
 
    有关使用此功能的完整信息，请参阅[页面差异](/help/sites-authoring/page-diff.md)。
 
-## 更改使用的源页面 {#changing-the-source-pages-used}
+## 更改使用的源页面  {#changing-the-source-pages-used}
 
 您可以随时向启动项的源页面范围中添加页面或从中删除页面：
 
@@ -79,7 +79,7 @@ Live copy用于将源分 *支中的**内容同步到启动分支* （以使启�
    >
    >要将页面添加到启动项，这些页面必须位于通用语言根目录下；即，在单个站点内。
 
-## 编辑启动项配置 {#editing-a-launch-configuration}
+## 编辑启动项配置  {#editing-a-launch-configuration}
 
 您可以随时编辑启动项的属性：
 
@@ -98,7 +98,7 @@ Live copy用于将源分 *支中的**内容同步到启动分支* （以使启�
 
    有关&#x200B;**启动日期**&#x200B;和&#x200B;**生产就绪**&#x200B;字段的用途和交互的信息，请参阅[启动项 - 事件的顺序](/help/sites-authoring/launches.md#launches-the-order-of-events)。
 
-## 发现页面的启动状态 {#discovering-the-launch-status-of-a-page}
+## 发现页面的启动状态  {#discovering-the-launch-status-of-a-page}
 
 从“引用”选项卡中选择特定启动项时，将会显示状态（请参阅[“引用”（“站点”控制台）中的启动项](/help/sites-authoring/launches.md#launches-in-references-sites-console)）。
 

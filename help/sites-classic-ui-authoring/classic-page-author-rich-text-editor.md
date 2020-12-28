@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '1814'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -58,9 +58,9 @@ ht-degree: 89%
 >
 >**标题**&#x200B;组件设计用于包含短文本（没有换行符）。在就地编辑模式中编辑标题时，输入换行符将在标题下方打开一个新&#x200B;**文本**&#x200B;组件。
 
-## 富文本编辑器的功能 {#features-of-the-rich-text-editor}
+## 富文本编辑器的功能  {#features-of-the-rich-text-editor}
 
-The Rich Text Editor provides a range of featues, these [depend on the configuration](/help/sites-administering/rich-text-editor.md) of the individual component. The features are available for both the touch-optimized and classic UI.
+富文本编辑器提供了一系列功能，这些[取决于单个组件的配置](/help/sites-administering/rich-text-editor.md)。这些功能可用于触屏优化UI和经典UI。
 
 ### 基本字符格式 {#basic-character-formats}
 
@@ -78,7 +78,7 @@ The Rich Text Editor provides a range of featues, these [depend on the configura
 
 所有都以切换方式运行，因此重新选择将删除格式。
 
-### 预定义样式和格式 {#predefined-styles-and-formats}
+### 预定义样式和格式  {#predefined-styles-and-formats}
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
@@ -100,7 +100,7 @@ The Rich Text Editor provides a range of featues, these [depend on the configura
 >
 >不要实际重新选择任何已应用样式的文本，否则将停用图标。
 
-### 剪切、复制、粘贴 {#cut-copy-paste}
+### 剪切、复制、粘贴  {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
@@ -120,7 +120,7 @@ The Rich Text Editor provides a range of featues, these [depend on the configura
 
    这会将内容粘贴为 HTML（具有一些必要的格式修改）。
 
-### 撤消、重做 {#undo-redo}
+### 撤消、重做  {#undo-redo}
 
 ![](do-not-localize/cq55_rte_undoredo.png)
 
@@ -184,14 +184,14 @@ AEM 会按时间顺序保留您在当前组件中过去 50 次操作的记录。
 
 >[!NOTE]
 >
->URI 可以为您的安装配置的任何协议作为前缀。In a standard installation these are `https://`, `ftp://`, and `mailto:`. 将拒绝并非为您的安装配置的协议，并将其标记为无效。
+>URI 可以为您的安装配置的任何协议作为前缀。在标准安装中，这些是`https://`、`ftp://`和`mailto:`。 将拒绝并非为您的安装配置的协议，并将其标记为无效。
 
 
 要中断链接，请将光标置于链接文本中的任意位置并单击&#x200B;**取消链接**&#x200B;图标：
 
 ![](do-not-localize/chlimage_1-13.png)
 
-### 锚点 {#anchors}
+### 锚点  {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -229,7 +229,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 
 >[!NOTE]
 >
->AEM 还提供了用于进行更详细图像配置的专用组件。For example the **Image** and **Text Image** components are available.
+>AEM 还提供了用于进行更详细图像配置的专用组件。例如，可以使用&#x200B;**图像**&#x200B;和&#x200B;**文本图像**&#x200B;组件。
 
 ### 拼写检查 {#spelling-checker}
 
@@ -259,7 +259,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 
    >[!NOTE]
    >
-   >Although tables are available in the RTE, it is recommended to use the **Table** component when creating tables.
+   >尽管RTE中有可用的表，但在创建表时，建议使用&#x200B;**表**&#x200B;组件。
 
 在&#x200B;**文本**&#x200B;和&#x200B;**表**&#x200B;组件中，可通过单击表中的上下文菜单（通常是鼠标右键按钮）使用表功能；例如：
 
@@ -369,7 +369,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 
 还可删除当前行。
 
-#### 添加或删除列 {#add-or-delete-columns}
+#### 添加或删除列  {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
@@ -377,7 +377,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 
 还可删除当前列。
 
-#### 选择整行或整列 {#selecting-entire-rows-or-columns}
+#### 选择整行或整列  {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -385,12 +385,12 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 
 #### 合并单元格 {#merge-cells}
 
-![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png)![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergeq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * 如果您选择了一组单元格，可以将这些单元格合并为一个。
 * 如果您只选择了一个单元格，可以将其与右侧或下方的单元格合并。
 
-#### 拆分单元格 {#split-cells}
+#### 拆分单元格  {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
@@ -399,7 +399,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 * 水平拆分单元格将在当前单元格的右侧、当前列中生成新单元格。
 * 垂直拆分单元格将在当前单元格的下方、但在当前行中生成新单元格。
 
-#### 创建嵌套表 {#creating-nested-tables}
+#### 创建嵌套表  {#creating-nested-tables}
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -422,7 +422,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 
 这将从&#x200B;**文本**&#x200B;组件中删除表。
 
-### 特殊字符 {#special-characters}
+### 特殊字符  {#special-characters}
 
 ![](do-not-localize/cq55_rte_specialchars.png)
 
@@ -432,7 +432,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 
 使用鼠标悬停可查看字符的放大版本，然后单击以便将其包含在您的文本中的当前位置。
 
-### 源编辑模式 {#source-editing-mode}
+### 源编辑模式  {#source-editing-mode}
 
 ![](do-not-localize/cq55_rte_sourceedit.png)
 

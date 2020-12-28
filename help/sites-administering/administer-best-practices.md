@@ -58,13 +58,13 @@ ht-degree: 17%
   </tr>
   <tr>
    <td>图像预设选项</td> 
-   <td>了解 <a href="/help/assets/managing-image-presets.md#understanding-image-presets">图像预设</a> 和图 <a href="/help/assets/managing-image-presets.md#image-preset-options">像预设最佳实践</a></td> 
-   <td>作为管理图像预设文档的一 <a href="/help/assets/managing-image-presets.md">部分</a>，这些主题介绍了哪些图像预设以及有关选择图像预设选项的最佳实践。</td> 
+   <td>了解<a href="/help/assets/managing-image-presets.md#understanding-image-presets">图像预设</a>和<a href="/help/assets/managing-image-presets.md#image-preset-options">图像预设最佳实践</a></td> 
+   <td>在<a href="/help/assets/managing-image-presets.md">管理图像预设</a>的文档中，以下主题介绍了哪些图像预设以及有关选择图像预设选项的最佳实践。</td> 
   </tr>
   <tr>
-   <td>动态媒体与直接与Scene7集成</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM集成与动态媒体</a></td> 
-   <td>介绍何时最好使用Dynamic Media解决方案、何时将S7与AEM集成或何时同时使用两者。</td> 
+   <td>Dynamic Media与Scene7直接融合</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM整合与Dynamic Media</a></td> 
+   <td>描述何时最好使用Dynamic Media解决方案、何时将S7与AEM集成或何时同时使用两者。</td> 
   </tr>
  </tbody>
 </table>
@@ -83,7 +83,7 @@ ht-degree: 17%
   <tr>
    <td>定义实例的默认UI。</td> 
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">配置实例的默认UI</a></p> </td> 
-   <td>AEM有两个UI: 触屏优化和经典。 本节详细介绍如何为实例定义默认UI。</td> 
+   <td>AEM有两个UI:触屏优化和经典。 本节详细介绍如何为实例定义默认UI。</td> 
   </tr>
   <tr>
    <td>多站点管理</td> 

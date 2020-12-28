@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
 
 # 最佳实践{#best-practices}
 
-## 开发人员的最佳实践——快速入门 {#best-practices-for-developers-getting-started}
+## 开发人员的最佳实践——快速入门{#best-practices-for-developers-getting-started}
 
 Adobe工程和咨询团队为AEM开发人员开发了一套全面的最佳做法。 Adobe开发人员在开发核心AEM产品更新和客户代码以用于客户实施时遵循这些最佳实践。
 
@@ -35,7 +35,7 @@ Adobe工程和咨询团队为AEM开发人员开发了一套全面的最佳做法
 * [OSGi Bundles](/help/sites-developing/osgi-bundles.md)
 * [Java API最佳实践](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
-### 其他最佳实践信息 {#additional-best-practices-information}
+### 其他最佳实践信息{#additional-best-practices-information}
 
 以下区域提供了专门用于制定最佳实践的文档：
 
@@ -59,16 +59,16 @@ Adobe工程和咨询团队为AEM开发人员开发了一套全面的最佳做法
  <tbody>
   <tr>
    <td>标准触屏优化UI背后的一些理论。</td> 
-   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">触屏优化UI: 概念</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">触屏优化UI: 结构</a></p> </td> 
+   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">触屏优化UI:概念</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">触屏优化UI:结构</a></p> </td> 
    <td>这些文档概述了触屏优化UI的概念和结构。</td> 
   </tr>
   <tr>
-   <td>触屏优化UI: 自定义控制台 </td> 
+   <td>触屏优化UI:自定义控制台 </td> 
    <td><a href="/help/sites-developing/customizing-consoles-touch.md">自定义触屏优化UI控制台</a></td> 
    <td>此文档描述了扩展触屏优化UI控制台的最佳方式。</td> 
   </tr>
   <tr>
-   <td>触屏优化UI: 自定义页面创作</td> 
+   <td>触屏优化UI:自定义页面创作</td> 
    <td><a href="/help/sites-developing/customizing-page-authoring-touch.md">自定义触屏优化UI页面创作</a></td> 
    <td>介绍如何为触屏优化UI扩展页面创作。</td> 
   </tr>
@@ -82,13 +82,13 @@ Adobe工程和咨询团队为AEM开发人员开发了一套全面的最佳做法
 
 ## 社区 {#communities}
 
-[AEM Communities](/help/communities/overview.md) 简化了预置社区的创建和管理。
+[AEM](/help/communities/overview.md) 社区简化了内部部署社区的创建和管理。
 
 社区的一些最佳实践在以下位置进行介绍：
 
 |  |  |  |
 |---|---|---|
-| 使用用户生成内容(UGC)的最佳实践 | [编码准则](/help/communities/code-guide.md) | 为社交组件框架(SCF)开发灵活 [的可移植代码](/help/communities/scf.md) 的指南。 |
+| 使用用户生成内容(UGC)的最佳实践 | [编码准则](/help/communities/code-guide.md) | 为[社交组件框架](/help/communities/scf.md)(SCF)开发灵活、可移植代码的准则。 |
 | 社区组件的示例使用 | [社区组件指南](/help/communities/components-guide.md) | 交互式开发工具。 |
 
 ## 工具/HTL {#tooling-htl}
@@ -103,5 +103,5 @@ HTML模板语言(HTL)是随AEM 6.0引入的一种新的HTML模板系统，取代
 >[!NOTE]
 >
 >下面的多部分教程可能是设置新AEM项目的最佳实践，详细介绍核心组件、可编辑模板、客户端库和组件开发：\
->[AEM Sites入门- WKND教程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[AEM Sites - WKND 教程快速入门](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 

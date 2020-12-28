@@ -26,9 +26,9 @@ ht-degree: 0%
 
 David是Day Software AG的联合创始人兼CTO，该公司是全球内容管理和内容基础架构软件的领先提供商，2010年Adobe公司收购了该公司。 他目前是Adobe企业技术的资深和副总裁，还领导JSR-170(Java内容存储库(JCR)应用程序编程接口(API)的开发，JSR-170是内容管理的技术标准。
 
-您还可以在https://wiki.apache.org/jackrabbit/DavidsModel上查看更 [新](https://wiki.apache.org/jackrabbit/DavidsModel)。
+还可在[https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel)上查看更新。
 
-## David简介 {#introduction-from-david}
+## David {#introduction-from-david}的简介
 
 在各种讨论中，我发现开发人员对JCR在内容建模方面提供的特性和功能有些不安。 在如何在存储库中对内容进行建模以及为什么一个内容模型比另一个更好方面，目前还没有指南和很少的经验。
 
@@ -38,13 +38,13 @@ David是Day Software AG的联合创始人兼CTO，该公司是全球内容管理
 
 >[!NOTE]
 >
->免责声明： 这些准则表达了我个人的、有时还有争议的视图。 我期待着讨论这些准则并加以完善。
+>免责声明：这些准则表达了我个人的、有时还有争议的视图。 我期待着讨论这些准则并加以完善。
 
-## 七条简单规则 {#seven-simple-rules}
+## 七个简单规则{#seven-simple-rules}
 
-### 规则#1: 数据优先，结构后。 也许吧。 {#rule-data-first-structure-later-maybe}
+### 规则#1:数据优先，结构后。 也许吧。{#rule-data-first-structure-later-maybe}
 
-#### 说明 {#explanation-1}
+#### 说明{#explanation-1}
 
 我建议不要担心在ERD意义上声明的数据结构。 最初。
 
@@ -52,7 +52,7 @@ David是Day Software AG的联合创始人兼CTO，该公司是全球内容管理
 
 我觉得斯特凡诺对这个概括了很多。
 
-我的底线是： 结构昂贵，在许多情况下，完全不必向基础存储明确声明结构。
+我的底线是：结构昂贵，在很多情况下完全不必向基础存储明确声明结构。
 
 有一个关于结构的隐式合同，您的应用程序本身就使用它。 假设我将博客文章的修改日期存储在lastModified属性中。 我的应用程序将自动知道从同一属性再次读取修改日期，因此确实无需明确声明。
 
@@ -60,11 +60,11 @@ David是Day Software AG的联合创始人兼CTO，该公司是全球内容管理
 
 #### 示例 {#example-1}
 
-上述在“blog post” `lastModified` 节点上使用“日期”属性的示例实际上并不表示需要特殊节点类型。 我绝对会至少 `nt:unstructured` 在一开始用于我的博客帖子节点。 由于在我的博客应用程序中，我要做的就是显示最后一个修改日期（可能是“订购日期”），我几乎不在乎它是否是日期。 由于我隐含地信任博客写作应用程序将“日期”放在那里，因此真的不需要以nodetype的形 `lastModified` 式声明日期的存在。
+上述在“blog post”节点上使用`lastModified`日期属性的示例实际上并不表示需要特殊节点类型。 至少最初，我肯定会将`nt:unstructured`用于我的博客帖子节点。 由于在我的博客应用程序中，我要做的就是显示最后一个修改日期（可能是“订购日期”），我几乎不在乎它是否是日期。 由于我隐含地信任博客编写应用程序将“日期”放在那里，因此真的不需要以nodetype的形式声明`lastModified`日期的存在。
 
-### 规则2: 推动内容层次结构，不要让它发生。 {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
+### 规则2:推动内容层次结构，不要让它发生。{#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
-#### 说明 {#explanation-2}
+#### 说明{#explanation-2}
 
 内容层次结构是非常有价值的资产。 所以别让它发生，设计它。 如果您没有“好”、可读的节点名称，那可能是您应该重新考虑的。 武断的数字从来都不是“好名字”。
 
@@ -78,7 +78,7 @@ David是Day Software AG的联合创始人兼CTO，该公司是全球内容管理
 >
 >内容存储库的结构方式也会影响性能。 为获得最佳性能，连接到内容存储库中各个节点的子节点数通常不应超过1&#39;000。
 >
->请参 [阅CRX可以处理多少数据？](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) 的双曲余切值。
+>请参阅[CRX可以处理多少数据？](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) 的双曲余切值。
 
 #### 示例 {#example-2}
 
@@ -100,15 +100,15 @@ David是Day Software AG的联合创始人兼CTO，该公司是全球内容管理
 
 使用上述内容模型，我可以轻松允许“匿名”用户“创建”评论，但将匿名用户保留为只读状态，以用于工作区的其余部分。
 
-### 规则3: 工作区适用于clone()、merge()和update()。 {#rule-workspaces-are-for-clone-merge-and-update}
+### 规则3:工作区用于clone()、merge()和update()。 {#rule-workspaces-are-for-clone-merge-and-update}
 
-#### 说明 {#explanation-3}
+#### 说明{#explanation-3}
 
-如果您不在应用程 `clone()`序 `merge()` 中使用 `update()` 或方法，则可能需要使用单一工作区。
+如果应用程序中不使用`clone()`、`merge()`或`update()`方法，则可能需要使用单一工作区。
 
 “对应节点”是JCR规范中定义的概念。 本质上，归根结底是表示相同内容的节点，在不同的所谓工作区中。
 
-JCR引入了Workspaces的非常抽象的概念，这使得许多开发者不清楚如何处理这些工作。 我建议您对工作区的使用进行以下测试。
+JCR引入了Workspaces的非常抽象的概念，这使得许多开发者不清楚该如何处理它们。 我建议您对工作区的使用进行以下测试。
 
 如果多个工作区中“对应”节点（本质上是具有相同UUID的节点）存在大量重叠，您可能会将工作区用到适当位置。
 
@@ -131,9 +131,9 @@ JCR引入了Workspaces的非常抽象的概念，这使得许多开发者不清�
 * 针对不同目标受众（如公共、私有、本地、...）的不同内容
 * 适用于不同用户的邮箱
 
-### 规则4: 提防同名兄弟姐妹。 {#rule-beware-of-same-name-siblings}
+### 规则4:提防同名兄弟姐妹。{#rule-beware-of-same-name-siblings}
 
-#### 说明 {#explanation-4}
+#### 说明{#explanation-4}
 
 虽然同名同级(SNS)已引入规范中，以允许与为XML设计并通过XML表示的数据结构兼容，因此对JCR非常有价值，但SNS会为存储库带来大量开销和复杂性。
 
@@ -157,9 +157,9 @@ JCR引入了Workspaces的非常抽象的概念，这使得许多开发者不清�
 /content/blog[1]/post[2]
 ```
 
-### 规则5: 被认为有害的参考。 {#rule-references-considered-harmful}
+### 规则5:被认为有害的参考。{#rule-references-considered-harmful}
 
-#### 说明 {#explanation-5}
+#### 说明{#explanation-5}
 
 引用意味着参照完整性。 我发现，重要的是要了解，引用不仅会为管理引用完整性的存储库增加额外成本，而且从内容灵活性的角度来说，它们也成本高昂。
 
@@ -173,17 +173,17 @@ JCR引入了Workspaces的非常抽象的概念，这使得许多开发者不清�
 
 我认为有一些用例，如果某个参考物晃荡，系统真的无法工作，但我无法从我的直接经验中得出一个好的“真实”而简单的例子。
 
-### 规则6: 文件是文件。 {#rule-files-are-files}
+### 规则6:文件是文件。{#rule-files-are-files}
 
-#### 说明 {#explanation-6}
+#### 说明{#explanation-6}
 
-如果内容模型公开的东西闻起来 *甚至像* 我试图使用（或从中扩展）的文件或文件夹 `nt:file`，以 `nt:folder` 及 `nt:resource`。
+如果内容模型公开的东西甚至远远闻起&#x200B;*气味*，就像我尝试使用（或从中扩展）`nt:file`、`nt:folder`和`nt:resource`的文件或文件夹。
 
-在我的体验中，许多通用应用程序都允许与nt:folder和nt:files隐式交互，并且知道如果这些事件被附加元信息所丰富，如何处理和显示这些数据。 例如，与位于JCR顶部的CIFS或WebDAV等文件服务器实现的直接交互变为隐式。
+在我的体验中，许多通用应用程序都允许与nt:folder和nt:files隐式交互，并且知道如果这些事件被附加的元信息所丰富，如何处理和显示这些数据。 例如，与位于JCR顶部的CIFS或WebDAV等文件服务器实现的直接交互变为隐式。
 
-我认为，作为一条很好的经验法则，可以使用以下方法： 如果需要存储文件名和mime类型， `nt:file`/ `nt:resource` 就是非常匹配的。 如果可以有多个“文件”，则nt:folder是存储这些文件的好地方。
+我认为，作为一条很好的经验法则，可以使用以下方法：如果需要存储文件名和mime类型，则`nt:file`/ `nt:resource`是非常匹配的。 如果可以有多个“文件”，则nt:folder是存储这些文件的好地方。
 
-如果您需要为资源添加元信息，例如“author”或“description”属性，请扩展 `nt:resource` 而非 `nt:file`。 我很少扩展nt：文件，经常扩展 `nt:resource`。
+如果您需要为资源添加元信息，例如“author”或“description”属性，请扩展`nt:resource`而不是`nt:file`。 我很少扩展nt:file，并经常扩展`nt:resource`。
 
 #### 示例 {#example-6}
 
@@ -203,9 +203,9 @@ JCR引入了Workspaces的非常抽象的概念，这使得许多开发者不清�
 /content/myblog/posts/iphone_shipping/attachments/front.jpg/jcr:content [nt:resource]
 ```
 
-### 规则#7: 身份是邪恶的。 {#rule-ids-are-evil}
+### 规则#7:身份是邪恶的。{#rule-ids-are-evil}
 
-#### 说明 {#explanation-7}
+#### 说明{#explanation-7}
 
 在关系数据库中，ID是表达关系的必要手段，因此人们也倾向于在内容模型中使用它们。 主要是因为错误的原因。
 
@@ -215,7 +215,7 @@ JCR引入了Workspaces的非常抽象的概念，这使得许多开发者不清�
 
 还要记住，项目可以通过路径进行标识，而“symlinks”对于大多数用户来说比UNIX文件系统中的硬链接意义更大，而路径对于大多数应用程序来说引用目标节点也有意义。
 
-更重要的是，它是 **mix**:referencable，这意味着它可以在您实际需要引用它的时间点应用到节点。
+更重要的是，它是&#x200B;**mix**:referencable，这意味着它可以应用到您实际需要引用它的时间点。
 
 因此，假设您希望能够潜在地引用“文档”类型的节点，并不意味着您的“文档”节点类型必须从mix:reference以静态方式扩展，因为它可以动态添加到“文档”的任何实例。
 

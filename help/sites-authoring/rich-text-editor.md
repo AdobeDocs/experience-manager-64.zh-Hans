@@ -18,7 +18,7 @@ ht-degree: 33%
 ---
 
 
-# Using the Rich Text Editor to author content {#using-the-rich-text-editor-to-author-content}
+# 使用富文本编辑器创作内容{#using-the-rich-text-editor-to-author-content}
 
 富文本编辑器(RTE)是在AEM页面中创作文本的基本构建块。 许多组件（如文本、文本和图像以及表）都基于RTE。
 
@@ -28,7 +28,7 @@ ht-degree: 33%
 
 ## 就地编辑 {#in-place-editing}
 
-只需点按或单击，即可选择基于文本的组件，这将显示组 [件工具栏](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)。
+只需点按或单击，即可选择基于文本的组件，显示[组件工具栏](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)。
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -38,9 +38,9 @@ ht-degree: 33%
 
 此工具栏提供了以下选项：
 
-* **格式**: 设置粗体、斜体和下划线格式。
+* **格式**:设置粗体、斜体和下划线格式。
 
-* **列表**: 创建项目符号或编号列表或设置缩进。
+* **列表**:创建项目符号或编号列表或设置缩进。
 
 * **超链接**
 
@@ -52,13 +52,13 @@ ht-degree: 33%
 
 * **保存**
 
-## 全屏编辑 {#full-screen-editing}
+## 全屏编辑{#full-screen-editing}
 
 对于基于文本的组件，从工具栏中选择全屏模式将打开富文本编辑器并隐藏页面内容的其余部分。
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-全屏模式显示由管理员配置的富文本编辑器的所有选项。 这些配置可能因AEM实 [例而异](../sites-administering/rich-text-editor.md) ，具体取决于管理员或AEM开发人员提供的配置。 如果您发现某个选项缺失，请要求您的管理员使其可用。
+全屏模式显示由管理员配置的富文本编辑器的所有选项。 这些属性可能因AEM实例[而异，具体取决于管理员或AEM开发人员提供的配置](../sites-administering/rich-text-editor.md)。 如果您发现某个选项缺失，请要求您的管理员使其可用。
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 

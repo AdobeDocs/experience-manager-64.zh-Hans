@@ -16,19 +16,19 @@ ht-degree: 8%
 ---
 
 
-# 智能内容服务发行说明 {#smart-content-service-release-notes}
+# 智能内容服务发行说明{#smart-content-service-release-notes}
 
 智能内容服务的概述和服务的已知问题。
 
 组织需要根据员工、合作伙伴和客户引用和搜索数字资产时所使用的分类标记其数字资产。 与通用标记相比，基于业务分类标记的资产更容易识别和检索，而基于标记的搜索则更容易。
 
-智能内容服务使用您的AEM Assets业务分类自动标记数字资产，从而确保最相关的资产出现在搜索中。
+智能内容服务使用您的AEM Assets分类法自动标记数字资产，从而确保最相关的资产出现在搜索中。
 
 您必须对AEM资产和标记的精选集合进行智能内容服务培训，以识别您的业务分类。 经过培训后，服务可以将这些标记应用于类似的资产集。
 
 智能内容服务由Adobe Sensei平台提供支持，该平台使您能够针对您的业务分类培训图像识别算法。 此内容智能随后可用于对类似资产应用相关标记。
 
-## 主要改进 {#key-improvements}
+## 关键改进{#key-improvements}
 
 智能内容服务包括以下主要改进：
 
@@ -88,11 +88,11 @@ ht-degree: 8%
 * [adobe.com 上的 Adobe Experience Manager 产品页面](https://www.adobe.com/marketing-cloud/experience-manager.html)
 * [增强的智能标记文档](/help/assets/enhanced-smart-tags.md)
 
-## Product Access and Support (Restricted Sites) {#product-access-and-support-restricted-sites}
+## 产品访问和支持（受限站点）{#product-access-and-support-restricted-sites}
 
 这些网站仅适用于客户。如果您是Adobe并需要访问，请与客户经理联系。
 
 * [产品访问](https://login.marketing.adobe.com)
 * [产品下载：licensing.adobe.com](https://licensing.adobe.com/).
-* 有关软件分发的其他功能的产品更新、修补程序 [和软件包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。
-* [通过Admin Console提供客户支持](https://adminconsole.adobe.com/)。 有关详细信息，请参 [阅新Adobe客户支持体验](https://docs.adobe.com/content/help/en/customer-one/using/home.html)。
+* 有关[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)上其他功能的产品更新、修补程序和软件包。
+* [通过Admin Console提供客户支持](https://adminconsole.adobe.com/)。有关详细信息，请参阅[新Adobe客户支持体验](https://docs.adobe.com/content/help/en/customer-one/using/home.html)。

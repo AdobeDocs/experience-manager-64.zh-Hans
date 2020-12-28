@@ -28,7 +28,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 >
->如果运行的版本早于AEM 6.4.3，则用户必须对节 **点具有“修改** /创建/ `/content/versionhistory` 删除”权限才能使用该功能。
+>如果运行的版本早于AEM 6.4.3，则用户必须对节点`/content/versionhistory`具有&#x200B;**修改／创建／删除**&#x200B;权限才能使用该功能。
 >
 >请参阅[开发和页面差异](/help/sites-developing/pagediff.md#operation-details)，以了解有关此功能的更多技术详细信息。
 
@@ -43,7 +43,7 @@ ht-degree: 95%
 
 请参阅有关如何在这些情况下启动差异比较的相关主题。
 
-### 差异表示形式 {#presentation-of-differences}
+### 差异表示形式  {#presentation-of-differences}
 
 无论比较何种内容，差异的表示形式都保持相同。
 
@@ -76,7 +76,7 @@ ht-degree: 95%
 >
 >在比较语言副本时，会取消激活突出显示功能，因为在翻译中，所有内容都会发生更改，突出显示没有任何用处。
 
-### 全屏和退出 {#fullscreen-and-exiting}
+### 全屏和退出  {#fullscreen-and-exiting}
 
 为了集中查看特定内容，您可以单击并排差异比较任何一侧的全屏图标，以将其放大到整个浏览器窗口。
 
@@ -84,7 +84,7 @@ ht-degree: 95%
 
 选定的一侧将填满整个窗口，但标题栏仍将保留在顶部，允许您在两个页面之间切换。
 
-![chlimage_1-354](assets/chlimage_1-356.png)
+![chlimage_1-356](assets/chlimage_1-356.png)
 
 您也可以选择单击退出全屏图标来关闭全屏视图。
 

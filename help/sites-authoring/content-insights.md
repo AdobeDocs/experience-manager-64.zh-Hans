@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->内容分析报表要求您的管理员将 AEM 与 SiteCatalyst、Target 和 BrightEdge 集成在一起。See [Integrating with SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integrating with Adobe Target](/help/sites-administering/target.md), and [Integrating with BrightEdge](/help/sites-administering/brightedge.md).
+>内容分析报表要求您的管理员将 AEM 与 SiteCatalyst、Target 和 BrightEdge 集成在一起。请参阅[与SightCatalyst](/help/sites-administering/adobeanalytics.md)集成、[与Adobe Target](/help/sites-administering/target.md)集成以及[与BrightEdge](/help/sites-administering/brightedge.md)集成。
 
 ## “查看次数”报表{#the-views-report}
 
@@ -88,7 +88,7 @@ ht-degree: 91%
 
 ## “&lt;营销活动名称> 活动”报表{#the-campaign-activity-report}
 
-对于页面处于激活状态的每个营销活动，均会显示一个名为“*&lt;营销活动名称>* 活动”的报表。该报表显示提供优惠的每个区段的页面展示次数和转换率。
+对于页面处于激活状态的每个营销活动，均会显示一个名为“*&lt;营销活动名称>* 活动”的报表。该报表显示了为其提供选件的每个区段的页面展示次数和转化次数。
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 

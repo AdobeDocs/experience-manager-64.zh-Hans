@@ -26,7 +26,7 @@ ht-degree: 90%
 * 将页面恢复到之前的版本，例如，为了撤消您对页面所做的更改。
 * 将页面的当前版本与之前版本进行比较，并突出显示文本和图像中的差异。
 
-## 创建新版本 {#creating-a-new-version}
+## 创建新版本  {#creating-a-new-version}
 
 创建页面的新版本：
 
@@ -36,8 +36,8 @@ ht-degree: 90%
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. 输入&#x200B;**评论**（可选）。
-1. To set a label to the version (optional), click the **More >>** button and set the **Label** to name the version. If the label is not set, the version is an automatically incremented number.
-1. Click **Create Version**. 页面上随即显示一条灰显的消息；例如：
+1. 要设置版本的标签（可选），请单击&#x200B;**更多>>**&#x200B;按钮并设置&#x200B;**标签**&#x200B;来命名版本。如果未设置标签，则版本是自动递增的编号。
+1. 单击&#x200B;**创建版本**。 页面上随即显示一条灰显的消息；例如：
 
    版本 1.2，创建对象：衬衫。
 
@@ -45,7 +45,7 @@ ht-degree: 90%
 >
 >激活页面时会自动创建版本。
 
-## 从 Sidekick 恢复某个页面版本 {#restoring-a-page-version-from-sidekick}
+## 从 Sidekick 恢复某个页面版本  {#restoring-a-page-version-from-sidekick}
 
 将页面恢复到之前的版本：
 
@@ -65,13 +65,13 @@ ht-degree: 90%
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. 选择**恢复版本……**列表当前文件夹中的文档版本。 即使页面已被删除，也会列出最后一个版本：
+1. 选择**恢复版本……**列表当前文件夹中的文档版本。即使页面已被删除，也会列出最后一个版本：
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
 1. 选择要恢复的版本，然后单击&#x200B;**恢复**。AEM 会恢复您选择的版本（或树）。
 
-### 从控制台恢复树 {#restoring-a-tree-from-the-console}
+### 从控制台恢复树  {#restoring-a-tree-from-the-console}
 
 此方法可用于恢复页面版本。还可用于恢复之前已删除的页面：
 
@@ -88,7 +88,7 @@ ht-degree: 90%
 将页面的当前版本与之前的版本进行比较：
 
 1. 在您的浏览器中，打开要将其与之前版本进行比较的页面。
-1. In the Sidekick, select the **Versioning** tab, then the **Restore Versio** n sub tab.
+1. 在Sidekick中，选择&#x200B;**版本控制**&#x200B;选项卡，然后选择&#x200B;**恢复版本** n子选项卡。
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -99,11 +99,11 @@ ht-degree: 90%
    * 添加的文本为绿色并突出显示。
    * 添加或删除的图像会带有绿色边框。
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
 1. 在 Sidekick 中，选择&#x200B;**恢复版本**&#x200B;子选项卡，然后单击 **&lt;&lt; 返回**&#x200B;按钮以显示当前版本。
 
-## 时间扭曲 {#timewarp}
+## 时间扭曲  {#timewarp}
 
 时间扭曲是一项功能，旨在模拟过去特定时间某个页面的&#x200B;***已发布***&#x200B;状态。
 
@@ -120,7 +120,7 @@ ht-degree: 90%
 >
 >如果从存储库从删除了版本，那么时间扭曲无法显示正确的视图。此外，如果呈现网站的元素（如代码、css、图像等）已发生更改，则视图将与它原来的样子不一样，因为这些项不在存储库中。
 
-### 使用时间扭曲日历 {#using-the-timewarp-calendar}
+### 使用时间扭曲日历  {#using-the-timewarp-calendar}
 
 可以从 Sidekick 使用时间扭曲。
 

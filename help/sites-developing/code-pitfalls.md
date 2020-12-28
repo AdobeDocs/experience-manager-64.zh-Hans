@@ -20,14 +20,14 @@ ht-degree: 0%
 
 # 代码陷阱{#code-pitfalls}
 
-## 避免Java代码中的Sling绑定 {#avoid-sling-bindings-in-java-code}
+## 避免Java代码{#avoid-sling-bindings-in-java-code}中的Sling绑定
 
-在90%的情况下，Sling Bindings是访问服务的不恰当方式。 您应该使用 *@Reference**或@Incrite注释* 。
+在90%的情况下，Sling Bindings是访问服务的不恰当方式。 相反，您应使用&#x200B;*@Reference*&#x200B;或&#x200B;*@Incrite*&#x200B;注释。
 
-## 避免Java代码中的线程。中断 {#avoid-thread-interrupt-in-java-code}
+## 避免Java代码{#avoid-thread-interrupt-in-java-code}中的Thread.interrupt
 
-*Thread.interrupt是危险的* ，因为当在错误的时间调用时，它可能会关闭文件，包括Lucene文件和永久缓存文件。
+*线程。* 中断是危险的，因为在错误的时间调用它时，它可以关闭文件，包括Lucene文件和永久缓存文件。
 
-## 避免将Java同步与ReadWriteLocks混合 {#avoid-mixing-java-synchronization-with-readwritelocks}
+## 避免将Java同步与ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}混用
 
 这会导致代码最终陷入死锁的竞赛条件。

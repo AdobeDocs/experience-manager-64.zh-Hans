@@ -33,9 +33,9 @@ ht-degree: 0%
 * 电子邮件的SMTP
 * 用于用户管理的LDAP
 
-例如，可以在通过TCP/IP网络通信的任何两个应用程序之间放置代理服务器； 例如，Web浏览器和AEM。 这允许您监视请求CQ页面时发生的具体情况。
+例如，可以在通过TCP/IP网络通信的任何两个应用程序之间放置代理服务器；例如，Web浏览器和AEM。 这允许您监视请求CQ页面时发生的具体情况。
 
-## 启动代理服务器工具 {#starting-the-proxy-server-tool}
+## 启动代理服务器工具{#starting-the-proxy-server-tool}
 
 开始命令行上的服务器：
 
@@ -45,11 +45,11 @@ ht-degree: 0%
 
 `<host>`
 
-这是要连接到的CRX实例的主机地址。 如果实例在本地计算机上，则此实例将为 `localhost`。
+这是要连接到的CRX实例的主机地址。 如果实例在本地计算机上，则该实例将为`localhost`。
 
 `<remoteport>`
 
-这是目标CRX实例的主机端口。 例如，新安装的AEM安装的默认值 **`4502`** 为，新安装的AEM作者实例的默认值 `4502`为。
+这是目标CRX实例的主机端口。 例如，新安装的AEM安装的默认值为&#x200B;**`4502`**，新安装的AEM作者实例的默认值为`4502`。
 
 `<localport>`
 
@@ -75,9 +75,9 @@ ht-degree: 0%
 
 **`-i <numIndentions>`**（添加缩进）
 
-缩进每个活动连接以提高可读性。 默认为16级。 此功能是与一起引入的 `proxy.jar version 1.16`。
+缩进每个活动连接以提高可读性。 默认为16级。 此功能是在`proxy.jar version 1.16`中引入的。
 
-### 日志格式 {#log-format}
+### 日志格式{#log-format}
 
 proxy-2.1.jar生成的日志条目均采用以下格式：
 
@@ -99,7 +99,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-这显示第6个连接上客户端()与服 `C`务器()之 `S`间以平均速度传递的字节数。
+这显示在第6个连接上以平均速度在客户端(`C`)和服务器(`S`)之间传递的字节数。
 
 **日志输出示例**
 
@@ -115,7 +115,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 `/content/test.jpg`
 
-内容 `test.html` 为：
+`test.html`的内容为：
 
 ```xml
 <html>
@@ -129,11 +129,11 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 </html>
 ```
 
-假定AEM实例运行于上， `localhost:4502` 我们将开始代理，如下所示：
+假定AEM实例运行在`localhost:4502`上，我们开始代理，如下所示：
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-CQ/CRX实例现在可通过代理访问，并 `localhost:4444` 且通过此端口的所有通信都记录到 `test.log`。
+CQ/CRX实例现在可通过`localhost:4444`的代理访问，并且通过此端口的所有通信都记录到`test.log`。
 
 如果我们现在观察代理的输出，我们将看到浏览器与AEM实例之间的交互。
 
@@ -148,7 +148,7 @@ using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 
 `http://localhost:4444/content/test.html`
 
-我们看到浏览器请求 `GET` 页面：
+我们看到浏览器对页面发出`GET`请求：
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -165,7 +165,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-AEM实例会对文件的内容做出响应 `test.html`:
+AEM实例以文件`test.html`的内容做出响应：
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -187,7 +187,7 @@ S-0-#000311 -> [</body>]
 S-0-#000319 -> [</html>]
 ```
 
-### 代理服务器的使用 {#uses-of-the-proxy-server}
+### 代理服务器{#uses-of-the-proxy-server}的使用
 
 以下场景说明了代理服务器可用于的几个用途：
 

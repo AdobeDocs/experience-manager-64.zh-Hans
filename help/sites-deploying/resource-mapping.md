@@ -24,10 +24,10 @@ ht-degree: 1%
 
 例如，您可以使用这些映射：
 
-* 在所有请求前加 `/content` 上前缀，使内部结构在访客到您网站时处于隐藏状态。
-* 定义重定向，以便将所有请求重 `/content/en/gateway` 定向到您网站的页面 `https://gbiv.com/`。
+* 为所有请求添加`/content`前缀，使内部结构在访客到您网站时隐藏。
+* 定义重定向，以便将发往网站`/content/en/gateway`页面的所有请求重定向到`https://gbiv.com/`。
 
-一个可能的HTTP映 [射将所有请求作为/content到localhost:4503的前缀](#configuring-an-internal-redirect-to-content)。 这样的映射可用于在允许的情况下将内部结构从访客隐藏到网站：
+一个可能的HTTP映射[用/content](#configuring-an-internal-redirect-to-content)为localhost:4503的所有请求添加前缀。 这样的映射可用于在允许的情况下将内部结构从访客隐藏到网站：
 
 `localhost:4503/content/geometrixx/en/products.html`
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 `localhost:4503/geometrixx/en/products.html`
 
-因为映射将自动向添加前 `/content` 缀 `/geometrixx/en/products.html`。
+因为映射将自动将前缀`/content`添加到`/geometrixx/en/products.html`。
 
 >[!CAUTION]
 >
@@ -43,29 +43,31 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关详细信息，请参 [阅Sling文档和资源](https://sling.apache.org/site/resources.html)[的映射](https://sling.apache.org/site/mappings-for-resource-resolution.html) 和资源。
+>有关详细信息，请参阅Sling文档和[资源分辨率的映射](https://sling.apache.org/site/resources.html)和[资源](https://sling.apache.org/site/mappings-for-resource-resolution.html)。
 
-## 查看映射定义 {#viewing-mapping-definitions}
+## 查看映射定义{#viewing-mapping-definitions}
 
 这些映射构成两个列表,JCR资源解析程序将对它们进行评估（从上到下）以找到匹配项。
 
-这些列表可以在Felix控制台的JCR ResourceResolver **选项下查看** （连同配置信息）; 例如， `https://<host>:<port>/system/console/jcrresolver`:
+这些列表可以在Felix控制台的&#x200B;**JCR ResourceResolver**&#x200B;选项下查看（连同配置信息）;例如，`https://<host>:<port>/system/console/jcrresolver`:
 
 * 配置
 
-   显示当前配置(如Apache Sling资源解 [析程序定义](/help/sites-deploying/osgi-configuration-settings.md))。
+   显示当前配置（如[Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md)所定义）。
 
 * 配置测试
 
-   这允许您输入URL或资源路径。 单击 **“解析** ” **或“映射** ”，以确认系统将如何转换条目。
+   这允许您输入URL或资源路径。 单击&#x200B;**解析**&#x200B;或&#x200B;**映射**&#x200B;以确认系统将如何转换条目。
 
-* **解析程序映**&#x200B;射条目ResourceResolver.resolve方法用来将URL映射到资源的条目的列表。
+* **解析程**
+序映射条目ResourceResolver.resolve方法用于将URL映射到资源的条目列表。
 
-* **映射映射**&#x200B;条目ResourceResolver.map方法用于将资源路径映射到URL的条目列表。
+* **映射映**
+射条目ResourceResolver.map方法用于将资源路径映射到URL的条目的列表。
 
 这两个列表显示各种条目，包括应用程序定义为默认值的条目。 这些URL通常旨在简化用户的URL。
 
-列表将一个模 **式**(与请求匹配的常规表达式)与一个 **替换** (Replacement)配对，该替换定义要实施的重定向。
+列表将与请求匹配的常规表达式&#x200B;**模式**&#x200B;与定义要实施的重定向的&#x200B;**替换**&#x200B;配对。
 
 例如，:
 
@@ -87,21 +89,21 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有许多资源有助于解释如何定义常规表达式; 例如 [https://www.regular-expressions.info/](https://www.regular-expressions.info/)。
+>有许多资源有助于解释如何定义常规表达式;例如[https://www.regular-expressions.info/](https://www.regular-expressions.info/)。
 
-## 在AEM中创建映射定义 {#creating-mapping-definitions-in-aem}
+## 在AEM {#creating-mapping-definitions-in-aem}中创建映射定义
 
 在AEM的标准安装中，您可以找到以下文件夹：
 
 `/etc/map/http`
 
-这是定义HTTP协议的映射时使用的结构。 可以为要映 `sling:Folder`射的任何其他协议 `/etc/map` 创建其他文件夹()。
+这是定义HTTP协议的映射时使用的结构。 可以在`/etc/map`下为要映射的任何其它协议创建其他文件夹(`sling:Folder`)。
 
 ### 配置内部重定向到/content {#configuring-an-internal-redirect-to-content}
 
-创建将任何请求作为前缀的映射至http://localhost:4503/，具有 `/content`:
+要创建将任何请求作为前缀的映射，请使用`/content`将任何请求添加到http://localhost:4503/:
 
-1. 使用CRXDE导航到 `/etc/map/http`。
+1. 使用CRXDE导航到`/etc/map/http`。
 
 1. 创建新节点：
 
@@ -111,8 +113,8 @@ ht-degree: 1%
 
    * **名称** `localhost_any`
 
-1. 单击“ **全部保存**”。
-1. **向此** 节点添加以下属性：
+1. 单击&#x200B;**保存全部**。
+1. **将** 以下属性添加到此节点：
 
    * **名称** `sling:match`
 
@@ -124,7 +126,7 @@ ht-degree: 1%
       * **值** `/content/`
 
 
-1. 单击“ **全部保存**”。
+1. 单击&#x200B;**保存全部**。
 
 此操作将处理以下请求：\
 `localhost:4503/geometrixx/en/products.html`\
@@ -134,9 +136,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->请参 [阅Sling](https://sling.apache.org/site/mappings-for-resource-resolution.html) 文档中的资源，进一步了解可用的sling属性及其配置方式。
+>有关sling属性的可用信息以及如何配置这些属性的详细信息，请参阅Sling文档中的[资源](https://sling.apache.org/site/mappings-for-resource-resolution.html)。
 
 >[!NOTE]
 >
->您可以使用 `/etc/map.publish` 保存发布环境的配置。 然后，必须复制这些资源，并为发 `/etc/map.publish`布环境的Apache Sling Resource Resolver的 **映射位置** () [配置新位置](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) ()。
+>您可以使用`/etc/map.publish`保存发布环境的配置。 然后，必须复制这些资源，并为发布环境的[Apache Sling资源解析器](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)的&#x200B;**映射位置**&#x200B;配置新位置(`/etc/map.publish`)。
 

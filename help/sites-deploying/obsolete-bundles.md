@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 workflow-type: tm+mt
 source-wordcount: '188'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# 列表升级后卸载的过时捆绑包{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+# 升级{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}后卸载的废弃捆绑包列表
 
 >[!NOTE]
 >

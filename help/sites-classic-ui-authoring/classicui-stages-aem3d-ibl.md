@@ -55,23 +55,23 @@ AEM 3D 支持基于图像的照明 (IBL)，以便使用内置的 Adobe Rapid Ref
   </tr> 
   <tr> 
    <td>IBL Sun详细信息</td> 
-   <td><p>允许您调整模拟太阳的补充光源的方向和强度。 <span class="diff-html-added">该光源增加照明亮度并使物体将投影投射到地面上。 使用 Rapid Refine 进行渲染时，支持使用 Google Chrome 预览投影；但是，目前不支持使用其他浏览器进行预览。</span></p> 
+   <td><p>允许您调整模拟太阳的补充光源的方向和强度。 <span class="diff-html-added">该光源增加照明亮度并使物体将投影投射到地面上。使用 Rapid Refine 进行渲染时，支持使用 Google Chrome 预览投影；但是，目前不支持使用其他浏览器进行预览。</span></p> 
     <ul> 
-     <li><strong>纬度</strong> -太阳光源的垂直位置(<code>0.0</code>-<code>1.0</code>)。<br /> 设置为 <code>0.0</code> 水平线(扩散照明环境图像的垂直中心); <code>1.0</code> 位于最高点(扩散照明环境图像的上边缘)。</li> 
-     <li><strong>long</strong> —— 太阳光源的水平<code>0.0</code>位置(<code>1.0</code>-)。<br /> 设置为0.0时，左边对应； 1.0对应于扩散照明环境图像的右边缘。<br /> </li> 
-     <li><strong>亮</strong> -太阳光源的亮度。 增加此值可使太阳光源变亮；减少此值可使太阳光源变暗。<br /> 关闭补充 <code>0</code> 照明并禁用投影的设置。 该参数不影响环境反射。<br /> </li> 
+     <li><strong>lat</strong>  —— 太阳光源的垂直<code>0.0</code>位置(<code>1.0</code>-)。<br /> 设置为 <code>0.0</code> 水平线(扩散照明环境图像的垂直中心); <code>1.0</code> 位于最高点(扩散照明环境图像的上边缘)。</li> 
+     <li><strong>long</strong>  —— 太阳光源的水平<code>0.0</code>位置(<code>1.0</code>-)。<br /> 设置为0.0时，左边对应；1.0对应于扩散照明环境图像的右边缘。<br /> </li> 
+     <li><strong>亮</strong> -太阳光源的亮度。增加此值可使太阳光源变亮；减少此值可使太阳光源变暗。<br /> 设置为关闭 <code>0</code> 补充照明并禁用投影。该参数不影响环境反射。<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>IBL相机高度</td> 
-   <td>如果IBL背景在地平线附近出现扭曲，可以通过调整此属性来减少或消除扭曲。 <br /> </td> 
+   <td>如果IBL背景在地平线附近出现扭曲，可以通过调整此属性来减少或消除扭曲。<br /> </td> 
   </tr> 
   <tr> 
    <td>环境照明</td> 
    <td><p><span class="diff-html-added">可控制扩散照明。 如果扩散照明环境图像异常明亮或黑暗（例如夜景），您可能需要手动调整此属性以纠正照明亮度。</span></p> 
     <ul> 
-     <li><strong>r、g、b</strong> —— 当前未使用。</li> 
-     <li><strong>bright</strong> —— 亮 <span class="diff-html-added">度倍增器。 增加或减少此值可提高或降低总体照明强度（基本 IBL 照明和太阳光源的亮度）。</span></li> 
+     <li><strong>r、g、b</strong> -当前未使用。</li> 
+     <li><strong>bright</strong> -亮 <span class="diff-html-added">度倍增器。增加或减少此值可提高或降低总体照明强度（基本 IBL 照明和太阳光源的亮度）。</span></li> 
     </ul> </td> 
   </tr> 
  </tbody> 

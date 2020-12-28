@@ -1,8 +1,8 @@
 ---
-title: 触控UI功能状态
-seo-title: 触控UI功能状态
-description: 特定于Adobe Experience Manager 6.3触屏UI的发行说明。
-seo-description: 特定于Adobe Experience Manager 6.3触屏UI的发行说明。
+title: 触屏UI功能状态
+seo-title: 触屏UI功能状态
+description: 特定于Adobe Experience Manager6.3触屏UI的发行说明。
+seo-description: 特定于Adobe Experience Manager6.3触屏UI的发行说明。
 uuid: dc335334-6c50-4cee-8a2e-183958742686
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -11,33 +11,36 @@ content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 translation-type: tm+mt
 source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 14%
 
 ---
 
 
-# 触控UI功能状态 {#touch-ui-feature-status}
+# 触屏UI功能状态{#touch-ui-feature-status}
 
 >[!CAUTION]
 >
->在AEM版本6.4中，已弃 [用经典UI](/help/release-notes/deprecated-removed-features.md)。 Adobe不打算对经典UI进行进一步的增强，并鼓励用户利用触屏优化UI中提供的强大新功能。
+>对于AEM的6.4版，[经典UI已弃用](/help/release-notes/deprecated-removed-features.md)。 Adobe不打算对经典UI进行进一步的增强，并鼓励用户利用触屏优化UI中提供的强大新功能。
 
-从6.0版开始，AEM引入了称为“触屏优化UI”（也称为“触屏优化UI”）的新用户界面，该界面符合Adobe Marketing Cloud和Adobe整体用户界面准则。 在几乎达到功能部分的情况下，这已成为AEM中的标准UI，该UI具有传统的、面向桌面的界面，称为“经典UI”。
+从6.0版开始，AEM引入了称为“触屏优化UI”（也称为“触屏优化UI”）的新用户界面，该界面与Adobe Marketing Cloud和整个Adobe用户界面指南保持一致。 在几乎达到功能特性的情况下，它已成为AEM中的标准UI，具有传统的、面向桌面的界面，称为“经典UI”。
 
-虽然触屏优化UI中提供了大多数功能，但仍有一些功能尚未完整，并且将在将来的发行版中添加。
+虽然触屏优化UI中提供的大多数功能尚未完整，并且将在未来版本中添加。
 
-以下列表显示了在AEM 6.4中实现的功能的当前状态。
+以下列表显示了AEM 6.4中实现的功能的当前状态。
 
-有关升级到AEM 6.4的客户的建议，请参阅客户 [的用户界面建议](/help/sites-deploying/ui-recommendations.md) ，了解详细信息。
-
->[!NOTE]
->
->请注意，本页仅包含经典UI的功能对等性。
->
->未列出经典UI中不存在的触屏优化UI所添加和特有的功能。
+有关升级到AEM 6.4的客户的建议，请参见[客户的用户界面Recommendations](/help/sites-deploying/ui-recommendations.md)以了解详细信息。
 
 >[!NOTE]
 >
->此列表力求完整，但不应视为详尽无遗。
+>请注意，本页仅涵盖与经典UI的功能对等性。
+>
+>未列出触屏优化UI中不存在的新增功能和特有功能。
+
+>[!NOTE]
+>
+>本列表力求完整，但不应视为详尽无遗。
 
 ## 图例 {#legend}
 
@@ -47,9 +50,9 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
 * **已替换**:该功能被替换为新实现，其工作方式不同。
 * **删除**:该功能在触屏优化UI中不再存在，将不会被替换。
 
-## 功能状态：站点管理员 {#feature-status-sites-admin}
+## 功能状态：站点管理员{#feature-status-sites-admin}
 
-这是经典UI站点管理员( `/siteadmin`)拥有的功能和触屏优化UI()中的状态的列 `/sites.html`表。
+这是经典UI站点管理员(`/siteadmin`)所具有的列表功能以及触屏优化UI(`/sites.html`)的状态。
 
 <table> 
  <tbody>
@@ -61,7 +64,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   <tr>
    <td>导航站点层次结构</td> 
    <td>完成<br /> </td> 
-   <td>AEM 6.4引入了内容 <a href="/help/sites-authoring/basic-handling.md#content-tree">树视图</a>。</td> 
+   <td>AEM 6.4引入了<a href="/help/sites-authoring/basic-handling.md#content-tree">内容树视图</a>。</td> 
   </tr>
   <tr>
    <td>启动工作流</td> 
@@ -84,7 +87,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>创建新Live Copy <br /> </td> 
+   <td>新建Live Copy <br /> </td> 
    <td>完成<br /> </td> 
    <td> </td> 
   </tr>
@@ -104,7 +107,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>复制／粘贴页面（复制）</td> 
+   <td>复制／粘贴页面(重复)</td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -159,7 +162,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>查看／编辑属性</td> 
+   <td>视图/编辑属性</td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -169,7 +172,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>版本历史</td> 
+   <td>版本历史记录</td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -184,12 +187,12 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td>使用经典UI。</td> 
   </tr>
   <tr>
-   <td>显示旧版本与当前版本之间的差异<br /> </td> 
+   <td>显示旧版本与当前版本的差异<br /> </td> 
    <td>完成<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Live copy操作（滚出）</td> 
+   <td>Live Copy操作（滚出）</td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -200,11 +203,11 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   </tr>
   <tr>
    <td>查找并替换</td> 
-   <td>Missing<br /> </td> 
+   <td>缺少<br /> </td> 
    <td>使用经典UI。</td> 
   </tr>
   <tr>
-   <td>通知收件箱（JCR事件）</td> 
+   <td>通知收件箱(JCR事件)</td> 
    <td>缺失</td> 
    <td>使用经典UI。 将替换为不同的实现。</td> 
   </tr>
@@ -216,9 +219,9 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
  </tbody>
 </table>
 
-## 功能状态：页面编辑器 {#feature-status-page-editor}
+## 功能状态：页面编辑器{#feature-status-page-editor}
 
-这是经典UI页面编辑器( `/cf#`)所具有的功能和触屏启用( `/editor.html`)中的状态列表。
+这是经典UI页面编辑器(`/cf#`)所具有的列表功能以及触屏启用(`/editor.html`)的状态。
 
 <table> 
  <tbody>
@@ -253,12 +256,12 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>编辑表单</td> 
+   <td>编辑Forms</td> 
    <td>完成<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>编辑选件</td> 
+   <td>编辑优惠</td> 
    <td>完成<br /> </td> 
    <td> </td> 
   </tr>
@@ -288,7 +291,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>模式：Live copy状态<br /> </td> 
+   <td>模式：Live Copy状态<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -303,7 +306,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>转出页面</td> 
+   <td>转出页</td> 
    <td>完成<br /> </td> 
    <td> </td> 
   </tr>
@@ -335,50 +338,50 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   <tr>
    <td>复制页面</td> 
    <td>已删除<br /> </td> 
-   <td>使用站点管理员复 <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">制页面</a>。<br /> </td> 
+   <td>使用站点管理员复制页面<a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">。</a><br /> </td> 
   </tr>
   <tr>
    <td>移动页面</td> 
    <td>已删除</td> 
-   <td>使用站点管理 <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">员移动页面</a>。<br /> </td> 
+   <td>使用站点管理员移动页面<a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">。</a><br /> </td> 
   </tr>
   <tr>
    <td>删除页面</td> 
    <td>已删除</td> 
-   <td>使用站点管理员 <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">删除页面</a>。<br /> </td> 
+   <td>使用站点管理员删除<a href="/help/sites-authoring/managing-pages.md#deleting-a-page">页面</a>。<br /> </td> 
   </tr>
   <tr>
    <td>显示引用</td> 
    <td>已删除</td> 
-   <td>使用站点管理 <a href="/help/sites-authoring/author-environment-tools.md#references">员查看详细的参考列表</a>。<br /> </td> 
+   <td>使用站点管理<a href="/help/sites-authoring/author-environment-tools.md#references">查看详细的参考列表</a>。<br /> </td> 
   </tr>
   <tr>
    <td>审查日志</td> 
    <td>已删除</td> 
-   <td>使用站点管理员并 <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">打开活动边栏</a>。<br /> </td> 
+   <td>使用站点管理员和<a href="/help/sites-authoring/author-environment-tools.md#events-timeline">打开活动边栏</a>。<br /> </td> 
   </tr>
   <tr>
    <td>创建版本</td> 
    <td>已删除</td> 
-   <td>使用站点管理 <a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">员创建新版本</a>。<br /> </td> 
+   <td>使用站点管理员<a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">创建新版本</a>。<br /> </td> 
   </tr>
   <tr>
    <td>恢复版本</td> 
    <td>已删除</td> 
-   <td>使用站点管理员恢 <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">复版本</a>。</td> 
+   <td>使用站点管理员恢复版本<a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">。</a></td> 
   </tr>
   <tr>
    <td>切换启动项</td> 
    <td>已删除</td> 
-   <td>使用站点管理员在 <a href="/help/sites-authoring/launches-promoting.md">启动项之间切换</a>。<br /> </td> 
+   <td>使用站点管理员在启动项<a href="/help/sites-authoring/launches-promoting.md">之间切换。</a><br /> </td> 
   </tr>
   <tr>
    <td>翻译页面</td> 
    <td>已删除</td> 
-   <td>使用站点管理员 <a href="/help/sites-administering/tc-manage.md">向翻译项目添加页面</a>。<br /> </td> 
+   <td>使用站点管理员<a href="/help/sites-administering/tc-manage.md">向翻译项目</a>添加页面。<br /> </td> 
   </tr>
   <tr>
-   <td>时间扭曲（选择日期／时间，浏览站点，然后查看）<br /> </td> 
+   <td>时间扭曲（选择日期／时间，浏览站点，视图）<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -389,11 +392,11 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   </tr>
   <tr>
    <td>Client Context UI<br /> </td> 
-   <td>已更换</td> 
-   <td>以后 <a href="/help/sites-authoring/ch-previewing.md">使用ContextHub</a> UI。</td> 
+   <td>已替换</td> 
+   <td>将使用<a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> UI。</td> 
   </tr>
   <tr>
-   <td>适用于各种媒体类型的内容查找器<br /> </td> 
+   <td>各种媒体类型的内容查找器<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -403,7 +406,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>复制和粘贴组件<br /> </td> 
+   <td>复制并粘贴组件<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -423,16 +426,16 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>使用组件自动创建将内容直接拖放到parsys占位符中<br /> </td> 
+   <td>将内容直接拖放到parsys占位符中，组件自动创建<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
  </tbody>
 </table>
 
-## 功能状态：文本、表和图像编辑器 {#feature-status-text-table-and-image-editors}
+## 功能状态：文本、表和图像编辑器{#feature-status-text-table-and-image-editors}
 
-这是经典UI文本、表和图像编辑器具有的功能以及触屏优化UI中的状态列表。
+这是经典UI文本、表和图像编辑器的功能列表以及触屏优化UI中的状态。
 
 <table> 
  <tbody>
@@ -444,12 +447,12 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   <tr>
    <td>富文本编辑器</td> 
    <td>完成</td> 
-   <td>可用于就地、对话框和全屏。</td> 
+   <td>可用于就地、对话和全屏。</td> 
   </tr>
   <tr>
    <td>启用／禁用RTE插件</td> 
    <td>完成<br /> </td> 
-   <td>可以使用模板编辑 <a href="/help/sites-authoring/templates.md">器完成</a>。</td> 
+   <td>可以使用<a href="/help/sites-authoring/templates.md">模板编辑器</a>完成。</td> 
   </tr>
   <tr>
    <td>将RTE用于纯文本</td> 
@@ -472,12 +475,12 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE插件：从Microsoft word粘贴<br /> </td> 
+   <td>RTE插件：从Microsoft Word<br />粘贴 </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE插件：查找和替换</td> 
+   <td>RTE插件：查找并替换</td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -487,7 +490,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE插件：子标和上标</td> 
+   <td>RTE插件：子和上标</td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -497,7 +500,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE插件：列表（项目符号／编号）</td> 
+   <td>RTE插件：列表语（项目符号／数字）</td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -532,29 +535,29 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE插件：允许内嵌图像</td> 
+   <td>RTE插件：允许联机图像</td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>表编辑器</td> 
    <td>完成</td> 
-   <td>可用于就地、对话框和全屏。<br /> </td> 
+   <td>可用于就地、对话和全屏。<br /> </td> 
   </tr>
   <tr>
-   <td>将图像拖放到表单元格中<br /> </td> 
+   <td>将图像拖放到表单元格<br /> </td> 
    <td>完成</td> 
    <td>可用的联机</td> 
   </tr>
   <tr>
    <td>图像编辑器<br /> </td> 
    <td>完成</td> 
-   <td>可用于就地、对话框和全屏。<br /> </td> 
+   <td>可用于就地、对话和全屏。<br /> </td> 
   </tr>
   <tr>
    <td>启用／禁用IPE插件</td> 
    <td>完成</td> 
-   <td>模板编辑器中现在有一 <a href="/help/sites-authoring/templates.md">个UI</a>。</td> 
+   <td><a href="/help/sites-authoring/templates.md">模板编辑器</a>中现在有一个UI。</td> 
   </tr>
   <tr>
    <td>IPE插件：裁剪</td> 
@@ -589,9 +592,9 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
  </tbody>
 </table>
 
-## 功能状态：工具 {#feature-status-tools}
+## 功能状态：工具{#feature-status-tools}
 
-这是经典UI具有的各种工具以及触屏优化UI中的状态列表。
+这是经典UI具有的各种工具的列表，以及触屏优化UI中的状态。
 
 <table> 
  <tbody>
@@ -602,17 +605,17 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   </tr>
   <tr>
    <td>任务管理</td> 
-   <td>已更换</td> 
-   <td>6.0引入了项 <a href="/help/sites-authoring/projects.md">目和任务</a>。<br /> </td> 
+   <td>已替换</td> 
+   <td>6.0引入了<a href="/help/sites-authoring/projects.md">项目和任务</a>。<br /> </td> 
   </tr>
   <tr>
-   <td>工作流收件箱<br /> </td> 
+   <td>Workflow收件箱<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>页面模板配置工作流(<code>/etc/workflow/wcm/templates.html</code>)</td> 
-   <td>Missing<br /> </td> 
+   <td>页面模板配置的工作流(<code>/etc/workflow/wcm/templates.html</code>)</td> 
+   <td>缺少<br /> </td> 
    <td>使用经典UI。</td> 
   </tr>
   <tr>
@@ -621,7 +624,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>MSM/Blueprint控制中心</td> 
+   <td>MSM/Blueprint Control Center</td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -631,13 +634,13 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>推出配置UI</td> 
+   <td>转出配置UI</td> 
    <td>缺失</td> 
    <td>使用经典UI。</td> 
   </tr>
   <tr>
    <td>用户、组和权限UI<br /> </td> 
-   <td>基本完成<br /> </td> 
+   <td>Martily Complete<br /> </td> 
    <td>对于高级权限编辑，请使用经典UI。<br /> </td> 
   </tr>
   <tr>
@@ -652,7 +655,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   </tr>
   <tr>
    <td>批量编辑器(<code>/etc/importers/bulkeditor.html</code>)</td> 
-   <td>Missing<br /> </td> 
+   <td>缺少<br /> </td> 
    <td>使用经典UI。</td> 
   </tr>
  </tbody>

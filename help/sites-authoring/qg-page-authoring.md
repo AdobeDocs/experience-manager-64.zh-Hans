@@ -90,7 +90,7 @@ ht-degree: 96%
 
 1. 这将打开向导，逐步指导您收集[创建新页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)时所需的信息。按照屏幕上的说明操作。
 
-## 选择页面以执行其他操作 {#selecting-your-page-for-further-action}
+## 选择页面以执行其他操作  {#selecting-your-page-for-further-action}
 
 您可以选择一个页面，以对其执行操作。选择页面后，工具栏将自动更新，以显示与该资源相关的操作。
 
@@ -189,7 +189,7 @@ ht-degree: 96%
    >
    >要使用内容中的链接导航，您必须使用[预览模式](/help/sites-authoring/editing-content.md#preview-mode)。
 
-## 编辑页面属性 {#editing-the-page-properties}
+## 编辑页面属性  {#editing-the-page-properties}
 
 [编辑页面属性](/help/sites-authoring/editing-page-properties.md)的方法（主要）有两种：
 
@@ -241,7 +241,7 @@ ht-degree: 96%
 
    请参阅[发布页面](/help/sites-authoring/publishing-pages.md#unpublishing-pages)以了解更多信息。
 
-## 移动、复制并粘贴或删除页面 {#move-copy-and-paste-or-delete-your-page}
+## 移动、复制并粘贴或删除页面  {#move-copy-and-paste-or-delete-your-page}
 
 1. [导航](#finding-your-page)到要移动、复制并粘贴或删除的页面。
 1. 使用以下任一方式根据需要选择复制（然后粘贴）、移动或删除图标：
@@ -288,7 +288,7 @@ ht-degree: 96%
 
 1. 点按/单击所需的引用类型，以显示更多详细信息并（视需要）执行进一步操作。
 
-## 创建页面版本 {#creating-a-version-of-your-page}
+## 创建页面版本  {#creating-a-version-of-your-page}
 
 1. 要打开“时间轴”边栏，请使用工具栏图标选择&#x200B;**[时间轴](/help/sites-authoring/basic-handling.md#timeline)**（在[选择您的页面](#selecting-your-page-for-further-action)之前或之后）：
 

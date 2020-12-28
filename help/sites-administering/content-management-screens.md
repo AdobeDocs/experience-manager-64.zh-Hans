@@ -18,9 +18,9 @@ ht-degree: 1%
 ---
 
 
-# 内容管理屏幕{#content-management-for-screens}
+# 屏幕内容管理{#content-management-for-screens}
 
-AEM Screens ***的内容经理*** (Content Manager)是一位创意专业人士，与营销密切合作，了解活动、受众和期望的焦点。 内容管理者负责通过开发不同的渠道并将序列分配到定时渠道体验中来创建和协调最终用户体验。
+AEM Screens的&#x200B;***内容经理***&#x200B;是一名创意专业人士，与营销密切合作，了解活动、受众和所需关注点。 内容管理者负责通过开发不同的渠道并将序列分配到定时渠道体验中来创建和协调最终用户体验。
 
 Content Manager for Screens设计位置和计划，维护渠道集成，执行分析和报告，以及维护视频用户档案。
 

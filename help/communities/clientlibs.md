@@ -92,5 +92,5 @@ ht-degree: 0%
 
 使用[AEM Communities](getting-started.md)快速入门示例（其中`site-name`为&#x200B;*engage*），添加评论组件时，clientliblist的显示方式如下：
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![chlimage_1-248](assets/chlimage_1-247.png)
 

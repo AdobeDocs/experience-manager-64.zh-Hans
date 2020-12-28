@@ -56,12 +56,12 @@ ht-degree: 93%
   </tr> 
   <tr> 
    <td><strong>数字资产</strong><br /> </td> 
-   <td>通过这些控制台，您可以导入和<a href="/help/sites-classic-ui-authoring/classicui-assets.md">管理数字资产</a>，如图像、视频、文档和音频文件。随后，这些资产便可由同一 AEM 实例上运行的任何网站使用。 </td> 
+   <td>通过这些控制台，您可以导入和<a href="/help/sites-classic-ui-authoring/classicui-assets.md">管理数字资产</a>，如图像、视频、文档和音频文件。随后，这些资产便可以由在同一 AEM 实例中运行的任何网站使用。 </td> 
   </tr> 
   <tr> 
    <td><strong>启动项</strong></td> 
    <td>此控制台可帮助管理您的<a href="/help/sites-classic-ui-authoring/classic-launches.md">启动项</a>；通过这些启动项，可以为一个或多个已激活网页的将来版本开发内容。
-<br /> <i>注意： 在触屏优化UI中，“站点”控制台中提供了许多相同的功能，同时还提供了引用边栏。</i><i>如果需要，可以从“工具”控制台中访问此控制台；选择“操作”，然后选择“启动项”。</i></td> 
+<br /> <i>注意：在触屏优化UI中，“站点”控制台中提供了许多相同的功能，同时还提供了引用边栏。</i><i>如果需要，可以从“工具”控制台中访问此控制台；选择“操作”，然后选择“启动项”。</i></td> 
   </tr> 
   <tr> 
    <td><strong>收件箱 </strong></td> 

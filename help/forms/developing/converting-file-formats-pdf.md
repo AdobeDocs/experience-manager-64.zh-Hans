@@ -1,8 +1,8 @@
 ---
 title: 在文件格式和PDF之间转换
 seo-title: 在文件格式和PDF之间转换
-description: 'null'
-seo-description: 'null'
+description: 使用“生成PDF”服务将本机文件格式转换为PDF。 生成PDF服务还将PDF转换为其他文件格式并优化PDF文档的大小。
+seo-description: 使用“生成PDF”服务将本机文件格式转换为PDF。 生成PDF服务还将PDF转换为其他文件格式并优化PDF文档的大小。
 uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '7876'
+source-wordcount: '7932'
 ht-degree: 0%
 
 ---

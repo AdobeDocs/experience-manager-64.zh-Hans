@@ -1,8 +1,8 @@
 ---
 title: 处理提交的Forms
 seo-title: 处理提交的Forms
-description: 'null'
-seo-description: 'null'
+description: 使用Forms服务检索在交互式表单中输入的已提交数据。 用户可以以XML、PDF和URL UTF-16格式提交表单数据。
+seo-description: 使用Forms服务检索在交互式表单中输入的已提交数据。 用户可以以XML、PDF和URL UTF-16格式提交表单数据。
 uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2921'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 0%
    <td><p>Forms服务将交互式PDF表单呈现给客户端Web浏览器。</p></td>
   </tr>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>用户填写交互式表单并单击提交按钮。 表单以PDF数据形式提交回Forms服务。 此选项在设计器中设置。</p></td>
   </tr>
   <tr>

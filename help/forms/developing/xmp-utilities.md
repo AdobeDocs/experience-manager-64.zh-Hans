@@ -1,8 +1,8 @@
 ---
 title: 使用XMP实用程序
 seo-title: 使用XMP实用程序
-description: 'null'
-seo-description: 'null'
+description: 使用XMP实用程序Java和Web服务API以编程方式将XMP元数据导入PDF文档，并从PDF文档检索和保存XMP元数据。
+seo-description: 使用XMP实用程序Java和Web服务API以编程方式将XMP元数据导入PDF文档，并从PDF文档检索和保存XMP元数据。
 uuid: 90ce6cef-efe1-456a-8e0c-5ba90249dda0
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---

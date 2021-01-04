@@ -1,8 +1,8 @@
 ---
 title: 存储库服务API快速开始
 seo-title: 存储库服务API快速开始
-description: 'null'
-seo-description: 'null'
+description: 使用AEM Forms存储库服务创建文件夹、写入资源、列表资源、读取资源、更新资源、搜索资源、创建资源间关系、锁定资源、管理访问控制列表和删除资源。
+seo-description: 使用AEM Forms存储库服务创建文件夹、写入资源、列表资源、读取资源、更新资源、搜索资源、创建资源间关系、锁定资源、管理访问控制列表和删除资源。
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---

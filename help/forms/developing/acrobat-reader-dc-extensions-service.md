@@ -1,17 +1,17 @@
 ---
 title: Acrobat Reader DC扩展服务Java API快速开始(SOAP)
 seo-title: Acrobat Reader DC扩展服务Java API快速开始(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 使用Acrobat Reader DC扩展服务将使用权限应用于PDF文档，从PDF文档删除使用权限，以及检索有关用于将使用权限应用于名为LoanUsageRights.pdf的启用权限的PDF文档的凭据的信息。
+seo-description: 使用Acrobat Reader DC扩展服务将使用权限应用于PDF文档，从PDF文档删除使用权限，以及检索有关用于将使用权限应用于名为LoanUsageRights.pdf的启用权限的PDF文档的凭据的信息。
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
 content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---

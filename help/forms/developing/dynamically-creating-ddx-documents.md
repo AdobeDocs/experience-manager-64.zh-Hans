@@ -1,8 +1,8 @@
 ---
 title: 动态创建DDX文档
 seo-title: 动态创建DDX文档
-description: 'null'
-seo-description: 'null'
+description: 使用Java API和Web服务API动态创建DDX文档。 动态创建DDX文档使您能够在DDX文档中使用在运行时获得的值。
+seo-description: 使用Java API和Web服务API动态创建DDX文档。 动态创建DDX文档使您能够在DDX文档中使用在运行时获得的值。
 uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 translation-type: tm+mt
-source-git-commit: 674af8b7657cf11f5e78fd39e652a6dcaa23c70a
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2123'
+source-wordcount: '2185'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: 汇编PDFPortfolio
 seo-title: 汇编PDFPortfolio
-description: 'null'
-seo-description: 'null'
+description: 组合一个PDF包，组合多种文档，包括word文件、图像文件和PDF文档。 您可以使用Java API和Web服务API组合PDF包。
+seo-description: 组合一个PDF包，组合多种文档，包括word文件、图像文件和PDF文档。 您可以使用Java API和Web服务API组合PDF包。
 uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: b995edbd3fefc8e2f593661b40d650ba6836f686
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1851'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: 数字签名和认证文档
 seo-title: 数字签名和认证文档
-description: 'null'
-seo-description: 'null'
+description: 使用签名服务向PDF文档添加和删除数字签名域、检索PDF文档中的签名域名称、修改签名域、对PDF文档进行数字签名、验证PDF文档、验证PDF文档中的数字签名、验证PDF文档中的所有数字签名，以及从签名域中删除数字签名。
+seo-description: 使用签名服务向PDF文档添加和删除数字签名域、检索PDF文档中的签名域名称、修改签名域、对PDF文档进行数字签名、验证PDF文档、验证PDF文档中的数字签名、验证PDF文档中的所有数字签名，以及从签名域中删除数字签名。
 uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '16977'
+source-wordcount: '17099'
 ht-degree: 0%
 
 ---

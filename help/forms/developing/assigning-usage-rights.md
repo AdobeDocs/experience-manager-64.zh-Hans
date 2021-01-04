@@ -1,8 +1,8 @@
 ---
 title: 分配使用权限
 seo-title: 分配使用权限
-description: 'null'
-seo-description: 'null'
+description: 使用Acrobat Reader DC扩展Java Client API和Web Service API从PDF文档应用和删除使用权限。
+seo-description: 使用Acrobat Reader DC扩展Java Client API和Web Service API从PDF文档应用和删除使用权限。
 uuid: 8c2020df-ea3c-49fa-916f-38a458f40d2b
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '3895'
+source-wordcount: '3937'
 ht-degree: 0%
 
 ---

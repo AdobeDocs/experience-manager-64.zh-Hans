@@ -1,8 +1,8 @@
 ---
 title: 组合多个XDP片段
 seo-title: 组合多个XDP片段
-description: 'null'
-seo-description: 'null'
+description: 使用Java API和Web服务API将多个XDP片段组合到单个XDP文档中。
+seo-description: 使用Java API和Web服务API将多个XDP片段组合到单个XDP文档中。
 uuid: 9e74e0e0-568d-4760-91a8-03dc1362d497
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 0ed1f69d-c212-4d47-a572-ae030f2983fc
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1908'
 ht-degree: 0%
 
 ---

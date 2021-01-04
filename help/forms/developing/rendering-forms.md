@@ -1,8 +1,8 @@
 ---
 title: 呈现Forms
 seo-title: 呈现Forms
-description: 'null'
-seo-description: 'null'
+description: 使用Forms服务创建交互式数据捕获客户端应用程序，这些应用程序验证、处理、转换和交付通常在设计器中创建的表单。 表单作者可以开发单个表单设计，Forms服务在各种浏览器环境以PDF、SWF或HTML格式呈现。
+seo-description: 使用Forms服务创建交互式数据捕获客户端应用程序，这些应用程序验证、处理、转换和交付通常在设计器中创建的表单。 表单作者可以开发单个表单设计，Forms服务在各种浏览器环境以PDF、SWF或HTML格式呈现。
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---

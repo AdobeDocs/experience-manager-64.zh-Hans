@@ -1,8 +1,8 @@
 ---
 title: 调用以人为中心的长寿命进程
 seo-title: 调用以人为中心的长寿命进程
-description: 'null'
-seo-description: 'null'
+description: 使用基于Java的基于Web的客户端应用程序（使用调用API）、使用Web服务的ASP.NET应用程序以及使用Remoting的Flex构建的客户端应用程序，以编程方式调用在Workbench中创建的以人为中心的长寿命进程。
+seo-description: 使用基于Java的基于Web的客户端应用程序（使用调用API）、使用Web服务的ASP.NET应用程序以及使用Remoting的Flex构建的客户端应用程序，以编程方式调用在Workbench中创建的以人为中心的长寿命进程。
 uuid: 42269d41-a90f-4ea1-aeb9-d61337bcfa54
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '3682'
+source-wordcount: '3752'
 ht-degree: 0%
 
 ---

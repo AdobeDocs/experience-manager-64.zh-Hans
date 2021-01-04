@@ -1,8 +1,8 @@
 ---
 title: 使用API执行服务操作
 seo-title: 使用API执行服务操作
-description: 'null'
-seo-description: 'null'
+description: 使用AEM FormsAPI开发客户端应用程序。
+seo-description: 使用AEM FormsAPI开发客户端应用程序。
 uuid: a5697c91-d643-4265-973c-18467ca0437a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 8fa1426f-f453-45c5-89b9-67038f56c70e
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---

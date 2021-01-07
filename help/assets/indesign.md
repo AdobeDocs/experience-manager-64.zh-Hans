@@ -3,10 +3,10 @@ title: 将AEM Assets与Adobe InDesign Server整合
 description: 了解如何将AEM Assets与InDesign Server相结合。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 13d33d0474d2a29226747aa77bf0bc0a51142209
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 5%
+source-wordcount: '1702'
+ht-degree: 4%
 
 ---
 
@@ -135,13 +135,13 @@ AEM Assets有一个预配置的工作流&#x200B;**DAM更新资产**，该工作�
 
 * **扩展脚本**:您可以在此处指定不同的脚本组合。如果希望在InDesign Server上执行您自己的脚本，请将脚本保存在`/apps/settings/dam/indesign/scripts`。
 
-   有关Indesign脚本的信息，请参阅[https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
+   有关InDesign脚本的信息，请参阅[https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
 
 >[!CAUTION]
 >
 >请勿更改 ExtendScript 库。库提供与Sling通信所需的HTTP功能。 此设置指定要发送到Adobe InDesign Server以供在那里使用的库。
 
-媒体提取工作流步骤运行的`ThumbnailExport.jsx`脚本生成。jpg格式的缩略图再现。 此演绎版由流程缩略图工作流步骤用于生成AEM所需的静态演绎版。
+由媒体提取工作流步骤运行的`ThumbnailExport.jsx`脚本生成JPG格式的缩略图再现。 此演绎版由流程缩略图工作流步骤用于生成AEM所需的静态演绎版。
 
 您可以配置流程缩略图工作流步骤以生成不同大小的静态演绎版。 确保不删除默认值，因为AEM AssetsUI要求使用默认值。 最后，删除图像预览再现工作流步骤将删除。jpg缩略图再现，因为不再需要它。
 
@@ -186,15 +186,15 @@ AEM Assets有一个预配置的工作流&#x200B;**DAM更新资产**，该工作�
 
 ### 配置Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
 
-如果InDesign服务器和AEM在不同的主机上运行，或者上述两个应用程序都未在默认端口上运行，请配置&#x200B;**Day CQ Link Externalizer**&#x200B;以设置InDesign服务器的主机名、端口和内容路径。
+如果InDesign Server和AEM位于不同的主机上，或者其中一个或两个应用程序在默认端口上无法工作，请配置&#x200B;**Day CQ Link Externalizer**&#x200B;以设置InDesign Server的主机名、端口和内容路径。
 
 1. 访问位于URL `https://[AEM_server]:[port]/system/console/configMgr`的Configuration Manager。
-1. 找到配置 **[!UICONTROL Day CQ Link Externalizer]**，然后单击&#x200B;**[!UICONTROL 编辑]**&#x200B;图标以将其打开。
-1. 指定Indesign服务器的主机名和上下文路径，然后单击“保存”**[!UICONTROL “保存”]**。
+1. 找到配置&#x200B;**[!UICONTROL Day CQ Link Externalizer]**。 单击&#x200B;**[!UICONTROL 编辑]**&#x200B;以打开。
+1. 链接Externalizer设置有助于为[!DNL Experience Manager]部署和[!DNL InDesign Server]创建绝对URL。 使用&#x200B;**[!UICONTROL 域]**&#x200B;字段指定[!DNL Adobe InDesign Server]的主机名和上下文路径。 按照屏幕上的说明操作。单击&#x200B;**[!UICONTROL 保存]**。
 
-   ![chlimage_1-290](assets/chlimage_1-290.png)
+   ![链接外部器设置](assets/link-externalizer-config.png)
 
-### 为InDesign Server{#enabling-parallel-job-processing-for-indesign-server-s}启用并行作业处理
+### 为InDesign Server{#enabling-parallel-job-processing-for-indesign-server}启用并行作业处理
 
 您现在可以为IDS启用并行作业处理。
 

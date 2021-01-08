@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 17%
+source-wordcount: '543'
+ht-degree: 13%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 17%
 
 ## 资产 {#assets}
 
-以下主题介绍了有关资产（包括 Dynamic Media 功能和 Scene 7 集成）的最佳实践：
+有关资产(包括Dynamic Media功能和Dynamic Media经典集成)的最佳实践，请参阅以下主题：
 
 <table> 
  <tbody>

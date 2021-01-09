@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 6c5b0abd9f19ceddd84e8615f0aedf48b1ef5868
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,14 @@ AEM Forms在组件浏览器的提要栏中提供一个表组件，允许您在�
 >[!NOTE]
 >
 >虽然可以在表中添加任意数量的行，但可添加的列最多为六列。 此外，无法从表中删除标题行。
+
+### 设置表{#set-column-width}的列宽
+
+执行以下步骤来设置表的列宽：
+
+1. 在&#x200B;**[!UICONTROL 内容]**&#x200B;选项卡中，点按&#x200B;**[!UICONTROL 表]**&#x200B;组件，然后点按配置（![配置](assets/configure-icon.svg)）图标。
+
+1. 在&#x200B;**[!UICONTROL 列宽]**&#x200B;字段中输入以逗号分隔的值列表，以指定表中每列的比例宽度。 例如，对于包含3列的表，在&#x200B;**[!UICONTROL 列宽]**&#x200B;字段中指定2,4,6作为值会导致将第一列的列宽设置为2/12，将第二列设置为4/12，将第三列设置为6/12。 2/12表示第一列的宽度是表宽度的六分之一。 同样，4/12将第二列宽度设置为表宽度的三分之一，6/12将第三列宽度设置为表宽度的一半。
 
 ### 添加表说明{#add-table-description}
 

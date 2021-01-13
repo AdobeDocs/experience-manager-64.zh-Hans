@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '435'
 ht-degree: 7%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 7%
 通过[视频组件](/help/sites-authoring/default-components-foundation.md#video)，可在页面上放置一个预定义的OOTB（现成）视频元素。
 
 要进行正确转码，管理员必须[安装FFmpeg并单独配置AEM](#install-ffmpeg)。 它们还可以[配置视频配置文件](#configure-video-profiles)以便与 HTML5 元素结合使用。
+
+>[!CAUTION]
+>
+>无需进行大量项目级自定义，此组件不再开箱即用。
 
 ## 配置视频用户档案{#configure-video-profiles}
 

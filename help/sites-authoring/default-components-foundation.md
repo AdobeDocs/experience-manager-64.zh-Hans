@@ -12,10 +12,10 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '6592'
-ht-degree: 84%
+source-wordcount: '6670'
+ht-degree: 83%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 84%
 
 您可以为链接定义标题和描述。
 
-![chlimage_1-111](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-191.png)
 
 ### 自适应图像 {#adaptive-image}
 
@@ -338,6 +338,10 @@ ht-degree: 84%
 >[!CAUTION]
 >此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
 
+>[!CAUTION]
+>
+>无需进行大量项目级自定义，此组件不再开箱即用。
+
 Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Flash 资产拖动到组件上，也可以使用对话框：
 
 * **Flash**
@@ -540,6 +544,10 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 >[!CAUTION]
 >此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
 
+>[!CAUTION]
+>
+>无需进行大量项目级自定义，此组件不再开箱即用。
+
 此组件提供了“用户名”和“密码”字段。
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
@@ -575,6 +583,10 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
       用于指示用户已登录的文本。
 
 ### 订单状态 {#order-status}
+
+>[!CAUTION]
+>
+>无需进行大量项目级自定义，此组件不再开箱即用。
 
 * **标题**
 
@@ -712,6 +724,10 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
 >[!CAUTION]
 >此基础组件已被弃用。Adobe 建议改用[轮播核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)。
+
+>[!CAUTION]
+>
+>无需进行大量项目级自定义，此组件不再开箱即用。
 
 此组件允许您加载一系列将在您的页面上显示为幻灯片放映的图像。您可以添加或删除图像以及为每个图像指定标题。在“高级”下，您还可以指定显示区域的大小。
 
@@ -880,6 +896,10 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 ![dc_title_use](assets/dc_title_use.png)
 
 ### 视频 {#video}
+
+>[!CAUTION]
+>
+>无需进行大量项目级自定义，此组件不再开箱即用。
 
 **视频**&#x200B;组件允许您在页面上放置一个预定义的现成视频元素。
 
@@ -1296,6 +1316,10 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 
 >[!CAUTION]
 >此基础组件已被弃用。Adobe 建议改用[核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
+
+>[!CAUTION]
+>
+>无需进行大量项目级自定义，此组件不再开箱即用。
 
 Captcha 组件需要用户键入屏幕上所示的字母数字字符串。该字符串会随每次刷新而变。
 

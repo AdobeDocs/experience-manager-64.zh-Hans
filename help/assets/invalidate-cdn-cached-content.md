@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '672'
 ht-degree: 28%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 28%
 
 Dynamic Media资源由CDN缓存，以便快速投放。 但是，当您对资产进行更新时，您可能希望这些更改立即生效。 使您的CDN(内容投放网络)缓存内容失效后，您可以快速更新由Dynamic Media交付的资源，而不是等待缓存过期。
 
-另请参阅[Dynamic Media经典(Scene7)中的缓存概述](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)。
+另请参阅[Dynamic Media经典](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)中的缓存概述。
 
 **要使CDN缓存内容失效，请执行以下操作：**
 
-1. 登录您的Dynamic Media经典(Scene7)帐户：
+1. 登录您的Dynamic Media经典桌面应用程序。
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+   [Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)
 
    您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
@@ -44,7 +44,7 @@ Dynamic Media资源由CDN缓存，以便快速投放。 但是，当您对资产
    如果模板仅包含`<ID>`，则Dynamic Media将填入`https://<server>/is/image`，其中`<server>`是在“常规设置”中定义的发布服务器名称，而&lt;ID>是选择无效的资产。
 
 1. 在页面的右下角，单击&#x200B;**[!UICONTROL 关闭]**。
-1. 在Dynamic Media经典(Scene7)UI中，选择一个或多个资源，然后单击&#x200B;**[!UICONTROL 文件>使CDN失效]**。 您将看到一个列表，其中包含从您创建的模板和您选择的资产中生成的一个或多个URL。 它使用“应用程序常规设置”下“已发布服务器名称”下列出的服务器URL。
+1. 在Dynamic Media经典桌面应用程序的用户界面中，选择一个或多个资源，然后单击&#x200B;**[!UICONTROL “文件”>“使CDN失效”]**。 您将看到一个列表，其中包含从您创建的模板和您选择的资产中生成的一个或多个URL。 它使用“应用程序常规设置”下“已发布服务器名称”下列出的服务器URL。
 
    例如，在上一步中设置了CDN失效模板后，假定您选择了名为`Backpack_B`的单个图像资产图像。 单击&#x200B;**[!UICONTROL “文件”>“使CDN失效”]**&#x200B;时，会在CDN失效用户界面中生成以下URL:
 

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '21621'
+source-wordcount: '21618'
 ht-degree: 24%
 
 ---
@@ -48,7 +48,7 @@ AEM 6.4.8.0是重要更新，包括新功能、关键客户请求的增强功能
 
 * 使用SOAP Web服务的表单数据模型集成现在支持元素上的选择组或属性。
 
-* AEM Assets现在通过Adobe I/O配置了品牌门户。
+* AEM Assets现在通过[!DNL Adobe I/O]配置了Brand Portal。
 
 * 已将捆绑在ContextHub中的jQuery版本更新为3.2.1。
 

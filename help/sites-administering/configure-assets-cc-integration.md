@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
 translation-type: tm+mt
-source-git-commit: fb2567cdf5a0ae210270366899b49db256374f25
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1361'
 ht-degree: 3%
 
 ---
@@ -16,12 +16,12 @@ ht-degree: 3%
 
 # 配置AEM Assets与Experience Cloud和Creative Cloud{#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}的集成
 
-如果您是Adobe Experience Cloud客户，则可以将Adobe Experience Manager(AEM)资产内的资产与Adobe Creative Cloud同步，反之亦然。 您还可以将资产与Experience Cloud同步，反之亦然。 您可以通过Adobe I/O设置此同步。
+如果您是Adobe Experience Cloud客户，则可以将Adobe Experience Manager(AEM)资产内的资产与Adobe Creative Cloud同步，反之亦然。 您还可以将资产与Experience Cloud同步，反之亦然。 可以通过[!DNL Adobe I/O]设置此同步。
 
 设置此集成的工作流是：
 
-1. 在Adobe I/O使用公共网关创建身份验证并获得应用程序 ID。
-1. 使用应用程序ID在您的AEM Assets实例上创建用户档案。
+1. 在[!DNL Adobe I/O]中使用公共网关创建身份验证并获取应用程序 ID。
+1. 使用用户档案在AEM Assets实例上创建应用程序 ID。
 1. 使用此配置将您在AEM Assets的资产与Creative Cloud同步。
 
 在后端，AEM服务器使用网关验证您的用户档案，然后在AEM Assets和Experience Cloud之间同步数据。
@@ -109,7 +109,7 @@ ht-degree: 3%
 
 ## 启用同步{#enable-synchronization}
 
-1. 使用过程[的最后一步中提到的以下方法之一显示公钥。向Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud)添加新配置。 单击&#x200B;**[!UICONTROL 显示公钥]**。
+1. 使用过程[的最后一步中提到的下列方法之一显示公钥向Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud)添加新配置。 单击&#x200B;**[!UICONTROL 显示公钥]**。
 
    ![chlimage_1-292](assets/chlimage_1-292.png)
 

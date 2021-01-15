@@ -6,7 +6,7 @@ seo-title: 'AdobeDynamic Media通讯 '
 solution: Dynamic Media Classic
 title: Dynamic Media通讯
 translation-type: tm+mt
-source-git-commit: 6caef5222b9f2163bfe7f7ded0e989fbc402bfef
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -52,9 +52,9 @@ Experience League的每月Dynamic Media时事通讯旨在帮助您快速了解Dy
    * 进一步了解我们的免费Dynamic Media经典审计。
    * 会见客户成功服务高级项目经理John Monroe。
 
-   >[!IMPORTANT]
-   >
-   >我们希望确保只向希望收到Dynamic Media时事通讯的用户发送该通讯。 要在此问题后继续接收新闻稿，请在[此处](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)注册。
+      >[!IMPORTANT]
+      >
+      >我们希望确保只向希望收到Dynamic Media时事通讯的用户发送该通讯。 要在此问题后继续接收新闻稿，请在[此处](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)注册。
 
 * **[2020年2月，第二期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -109,7 +109,6 @@ Experience League的每月Dynamic Media时事通讯旨在帮助您快速了解Dy
    * 会见Adobe Experience Manager资产高级产品营销经理Bridget Roman。
    * 在Experience League学习Dynamic Media和Dynamic Media经典。
 
-
 * **[2019年8月，08期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
    在此问题中：
@@ -119,7 +118,6 @@ Experience League的每月Dynamic Media时事通讯旨在帮助您快速了解Dy
    * 开始您从Experience League的Dynamic Media获得价值的旅程。
    * 抢先领略即将在9月推出的强大集成，它可让您分析访客如何与您的富媒体交互。
    * 会见Dynamic Media技术支持部门的PieterJan Pieper。
-
 
 * **[2019年7月，07期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
@@ -158,6 +156,7 @@ Experience League的每月Dynamic Media时事通讯旨在帮助您快速了解Dy
    欢迎收看Dynamic Media新闻通讯的开幕式，我们的新月新闻通讯在Adobe Experience Manager资产和AdobeDynamic Media经典中为Dynamic Media用户提供了新闻、事件和资源。
 
    在此问题中：
+
    * 注册我们的Dynamic Media经典隐藏功能网络研讨会。
    * 了解我们的点播网络研讨会系列，帮助您制定富媒体战略。
    * 阅读关键富媒体使用案例以及我们针对它们的解决方案。

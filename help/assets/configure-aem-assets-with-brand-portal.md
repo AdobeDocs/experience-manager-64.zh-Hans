@@ -3,21 +3,21 @@ title: 使用 Brand Portal 配置 AEM Assets
 description: '了解如何使用Brand Portal配置AEM Assets，以将资产和集合发布到Brand Portal。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 43%
+source-wordcount: '1647'
+ht-degree: 37%
 
 ---
 
 
 # 使用 Brand Portal 配置 AEM Assets {#configure-integration-64}
 
-Adobe Experience Manager (AEM) Assets 通过 Adobe I/O 使用 Brand Portal 进行了配置，从而可获取 IMS 令牌以授权您的 Brand Portal 租户。
+Adobe Experience Manager(AEM)资产通过[!DNL Adobe I/O]配置了品牌门户，后者为您的品牌门户租户购买IMS令牌以进行授权。
 
 >[!NOTE]
 >
->在AEM 6.4.8.0及更高版本上支持通过Adobe I/O通过Brand Portal配置AEM Assets。
+>AEM 6.4.8.0及更高版本支持通过[!DNL Adobe I/O]通过品牌门户配置AEM Assets。
 >
 >以前，品牌门户通过旧版OAuth网关在经典UI中配置，该网关使用JWT令牌交换获得IMS访问令牌进行授权。
 
@@ -25,12 +25,12 @@ Adobe Experience Manager (AEM) Assets 通过 Adobe I/O 使用 Brand Portal 进�
 >
 >***仅限现有客户***
 >
->建议继续使用现有的旧版OAuth网关配置。 如果您遇到旧版OAuth网关配置问题，请删除现有配置并通过Adobe I/O创建新配置。
+>建议继续使用现有的旧版OAuth网关配置。 如果您在旧版OAuth网关配置中遇到问题，请删除现有配置并通过[!DNL Adobe I/O]创建新配置。
 
 本帮助描述以下两个用例：
 
-* [新配置](#configure-new-integration-64):如果您是新的Brand Portal用户，并且希望使用Brand Portal配置您的AEM Assets作者实例，则可以在Adobe I/O创建新配置。
-* [升级配置](#upgrade-integration-64):如果您是现有的Brand Portal用户，且您的AEM Assets作者实例在旧版OAuth网关上配置了Brand Portal，建议删除现有配置并在Adobe I/O创建新配置。
+* [新配置](#configure-new-integration-64):如果您是新的Brand Portal用户，并且希望使用Brand Portal配置您的AEM Assets作者实例，则可以在上创建新配置 [!DNL Adobe I/O]。
+* [升级配置](#upgrade-integration-64):如果您是现有的Brand Portal用户，且您的AEM Assets作者实例在旧版OAuth网关上配置了Brand Portal，建议删除现有配置并在上创建新配置 [!DNL Adobe I/O]。
 
 提供的信息基于以下假设：阅读本帮助的任何人都熟悉以下技术：
 
@@ -73,7 +73,7 @@ Adobe Experience Manager (AEM) Assets 通过 Adobe I/O 使用 Brand Portal 进�
 如果您是首次使用Brand Portal配置AEM Assets，请在列出的序列中执行以下步骤：
 
 1. [获取公共证书](#public-certificate)
-1. [创建 Adobe I/O 集成](#createnewintegration)
+1. [Createintegration(创 [!DNL Adobe I/O] 建集成)](#createnewintegration)
 1. [创建 IMS 帐户配置](#create-ims-account-configuration)
 1. [配置云服务](#configure-the-cloud-service)
 1. [测试配置](#test-integration)
@@ -93,7 +93,7 @@ IMS 配置包括两个步骤：
 
 ### 获取公共证书 {#public-certificate}
 
-公共证书允许您在 Adobe I/O 上验证配置文件。
+公共证书允许您在[!DNL Adobe I/O]上验证用户档案。
 
 1. 登录您的AEM Assets作者实例
 默认URL:http://本地主机：4502/aem/start.html
@@ -117,7 +117,7 @@ IMS 配置包括两个步骤：
 
    ![创建证书](assets/ims-config2.png)
 
-1. 单击&#x200B;**[!UICONTROL 下载公钥]**，然后将 *AEM-Adobe-IMS.crt* 证书文件保存到您的计算机上。该证书文件将用于[创建 Adobe I/O 集成](#createnewintegration)。
+1. 单击&#x200B;**[!UICONTROL 下载公钥]**，然后将 *AEM-Adobe-IMS.crt* 证书文件保存到您的计算机上。证书文件用于[创建 [!DNL Adobe I/O] 集成](#createnewintegration)。
 
    ![下载证书](assets/ims-config3.png)
 
@@ -125,13 +125,13 @@ IMS 配置包括两个步骤：
 
    在&#x200B;**帐户**&#x200B;选项卡中，您可以创建 Adobe IMS 帐户，但您需要集成详细信息。暂时保持此页面打开。
 
-   打开新选项卡并[创建Adobe I/O集成](#createnewintegration)以获取IMS帐户配置的集成详细信息。
+   打开新选项卡并[创建 [!DNL Adobe I/O] 集成](#createnewintegration)以获取IMS帐户配置的集成详细信息。
 
-### 创建 Adobe I/O 集成 {#createnewintegration}
+### 创建[!DNL Adobe I/O]集成{#createnewintegration}
 
-Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，这是设置 IMS 帐户配置所必需的。
+[!DNL Adobe I/O] 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，这是设置 IMS 帐户配置所必需的。
 
-1. 使用 Brand Portal 租户的 IMS 组织的系统管理员权限登录到 Adobe I/O 控制台。
+1. 以系统管理员权限登录[!DNL Adobe I/O]控制台，访问Brand Portal租户的IMS组织。
 
    默认 URL：[https://console.adobe.io/](https://console.adobe.io/)
 
@@ -174,7 +174,7 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
 确保您已执行以下步骤：
 
 * [获取公共证书](#public-certificate)
-* [创建 Adobe I/O 集成](#createnewintegration)
+* [Createintegration(创 [!DNL Adobe I/O] 建集成)](#createnewintegration)
 
 **创建 IMS 帐户配置的步骤：**
 
@@ -184,7 +184,7 @@ Adobe I/O 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，�
 
    在&#x200B;**[!UICONTROL 授权服务器]**&#x200B;中，输入 URL：[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   粘贴您在[创建 Adobe I/O 集成](#createnewintegration)结束时复制的 API 密钥、客户端密钥和 JWT 有效负荷。
+   在[创建 [!DNL Adobe I/O] 集成](#createnewintegration)结尾处粘贴您复制的API密钥、客户端机密和JWT有效负荷。
 
    单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -335,7 +335,7 @@ Brand Portal已成功配置您的AEM Assets作者实例。 您现在可以：
    ![](assets/delete-mac-user.png)
 
 
-您现在可以在Adobe I/O的AEM 6.4作者实例上[创建配置](#configure-new-integration-64)。
+您现在可以在[!DNL Adobe I/O]的AEM 6.4作者实例上[创建配置](#configure-new-integration-64)。
 
 
 

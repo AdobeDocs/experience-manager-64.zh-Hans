@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
-source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 15%
+source-wordcount: '1567'
+ht-degree: 16%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 15%
 
 在后台，智能内容服务使用Adobe Sensei的AI框架，根据您的标签结构和业务分类训练其图像识别算法。 然后，此内容智能用于对另一组资产应用相关标记。
 
-智能内容服务是在Adobe I/O托管的云服务。要在Adobe Experience Manager(AEM)中使用它，系统管理员必须将AEM实例与AdobeIO集成。
+智能内容服务是托管在[!DNL Adobe I/O]上的云服务。 要在Adobe Experience Manager(AEM)中使用它，系统管理员必须将您的AEM实例与[!DNL Adobe I/O]集成。
 
 总而言之，使用智能内容服务的主要步骤如下：
 
@@ -44,14 +44,14 @@ ht-degree: 15%
 
 ## 前提条件 {#prerequisites}
 
-在使用智能内容服务之前，请确保在Adobe I/O创建以下集成：
+在使用智能内容服务之前，请确保在[!DNL Adobe I/O]上创建集成：
 
 * 具备拥有组织管理员权限的 Adobe ID 帐户。
 * 您的组织已启用智能内容服务。
 
 ## 入门 {#onboarding}
 
-智能内容服务可作为AEM的附加组件购买。 购买后，系统会向组织的管理员发送一封电子邮件，其中包含指向AdobeIO的链接。
+智能内容服务可作为AEM的附加组件购买。 购买后，系统会向组织的管理员发送一封电子邮件，其中包含指向[!DNL Adobe I/O]的链接。
 
 管理员可以点击链接将智能内容服务与AEM集成。 要将服务与AEM Assets集成，请参阅[配置智能标记](config-smart-tagging.md)。
 

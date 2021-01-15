@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 249f2dd2553bc436a432ef68eae5cf846794ff81
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 26%
@@ -130,7 +130,7 @@ AEM中提供以下Dynamic Media经典组件：
 
 ### 所有Dynamic Media经典组件{#settings-common-to-all-scene-components}的通用设置
 
-尽管配置选项不同，但以下是所有[!UICONTROL Dynamic Media经典]组件的通用选项：
+尽管配置选项不同，但以下各项对于所有[!UICONTROL Dynamic Media经典]组件是通用的：
 
 * **[!UICONTROL 文件]**
 引用浏览到要引用的文件。文件引用显示资产URL，但不一定是完整的Dynamic Media经典URL（包括URL命令和参数）。 不能在此字段中添加Dynamic Media经典URL命令和参数。 必须使用组件中的相应功能才能添加这些命令和参数。
@@ -190,7 +190,7 @@ AEM中提供以下Dynamic Media经典组件：
 出格式选择图像的输出格式，例如jpeg。根据所选的输出格式，您可能会有额外的配置选项。请参阅[图像预设最佳实践](/help/assets/managing-image-presets.md#image-preset-options)。
 
 * **[!UICONTROL 锐]**
-化选择要如何锐化图像。[图像预设最佳实践](/help/assets/managing-image-presets.md#image-preset-options)和[锐化最佳实践](/help/assets/assets/s7_sharpening_images.pdf)中详细介绍了锐化。
+化选择要如何锐化图像。[图像预设最佳实践](/help/assets/managing-image-presets.md#image-preset-options)和[锐化最佳实践](/help/assets/assets/sharpening_images.pdf)中详细介绍了锐化。
 
 * **[!UICONTROL URL修]**
 饰符您可以通过提供其他Dynamic Media经典图像命令来更改图像效果。相关内容在[图像预设](/help/assets/managing-image-presets.md)和[命令参考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中进行了介绍。
@@ -369,5 +369,5 @@ Adobe DAM 和 WCM 会显示是否上传了主视频。但它们不会显示以�
 * **[!UICONTROL 发布]**
 状态您可以根据发布状态筛选资产： **[!UICONTROL 未]** 发布或 **[!UICONTROL 已发布]**。如果未选择任何&#x200B;**[!UICONTROL 发布状态]**，默认情况下AEM将搜索所有发布状态。
 
-![chlimage_1-248](assets/chlimage_1-247.png)
+![chlimage_1-247](assets/chlimage_1-247.png)
 

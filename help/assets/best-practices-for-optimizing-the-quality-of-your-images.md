@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: fa8e2d0612e6c7aaddb821352534bd9f6fc31076
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 56%
+source-wordcount: '1493'
+ht-degree: 58%
 
 ---
 
@@ -48,7 +48,7 @@ AEM 中含有 100 多个 Dynamic Media 图像传送命令，可用于微调和�
 
 在控制网站中的图像时，图像锐化是最复杂的方面，很容易出现多种错误。请参阅以下有用资源，花时间详细了解一下 AEM 中锐化和 USM 锐化的工作原理：
 
-最佳实践白皮书[在Adobe Scene7出版系统和图像服务器](/help/assets/assets/s7_sharpening_images.pdf)中锐化图像同样适用于AEM。
+最佳实践白皮书[在Adobe Scene7出版系统和图像服务器](/help/assets/assets/sharpening_images.pdf)中锐化图像同样适用于AEM。
 
 另请参阅[使用USM锐化锐化图像](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)。
 
@@ -64,19 +64,18 @@ AEM 中含有 100 多个 Dynamic Media 图像传送命令，可用于微调和�
       * **[!UICONTROL amount]** （0-5，效果的强度。）
       * **[!UICONTROL radius]** （0-250，锐化对象周围绘制的“锐化线”宽度，以像素为单位。）
 
-         请记住，radius和amount参数相辅相成。减少半径可以通过增加数量来补偿。radius允许进行更精细的控制，低值仅锐化边缘像素，高值锐化较宽范围的像素。
+             请记住，radius和amount参数相辅相成。减少半径可以通过增加数量来补偿。radius允许进行更精细的控制，低值仅锐化边缘像素，高值锐化较宽范围的像素。
+         * **[!UICONTROL threshold]** （0-255，效果的灵敏度）。
 
-      * **[!UICONTROL threshold]** （0-255，效果的灵敏度）。
+             此参数确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素，而滤镜会锐化这些像素。 **[!UICONTROL threshold]**参数有助于避免过度锐化颜色相似的区域，如肤色。 例如，阈值为12时，会忽略肤色亮度的细微变化，以避免添加“杂色”，同时仍会为高对比度区域添加边缘对比度，如睫毛与皮肤相遇的地方。
+         
+         有关如何设置这三个参数的更多信息，包括使用滤镜方面的最佳实践，请参阅以下资源：
 
-         此参数确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素，而滤镜会锐化这些像素。 **[!UICONTROL threshold]**&#x200B;参数有助于避免使用类似颜色（如肤色）过度锐化区域。 例如，阈值为12时，会忽略肤色亮度的细微变化，以避免添加“杂色”，同时仍会为高对比度区域添加边缘对比度，如睫毛与皮肤相遇的地方。
-      有关如何设置这三个参数的更多信息，包括使用滤镜方面的最佳实践，请参阅以下资源：
+         AEM有关锐化图像的帮助主题。
 
-      AEM有关锐化图像的帮助主题。
+         最佳实践白皮书[在Adobe Scene7出版系统和图像服务器上锐化图像](/help/assets/assets/sharpening_images.pdf)。
 
-      最佳实践白皮书[在Adobe Scene7出版系统和图像服务器上锐化图像](/help/assets/assets/s7_sharpening_images.pdf)。
-
-   * AEM还允许您控制第四个参数：monochrome(0,1)。 此参数确定是使用值0分别将USM锐化应用于每个颜色组件，还是使用值1将USM锐化应用于图像亮度／强度。
-
+      * AEM还允许您控制第四个参数：monochrome(0,1)。 此参数确定是使用值0分别将USM锐化应用于每个颜色组件，还是使用值1将USM锐化应用于图像亮度／强度。
 
 作为最佳实践，应首先开始设置 USM 锐化 radius 参数。您可以先使用以下 radius 设置：
 
@@ -125,7 +124,6 @@ jpegSize是一个有用的参数，可确保图像不会超过某个大小，以
 
 在您试验的过程中，以下一般建议对于优化工作流也很有帮助：
 
-* 实时尝试和测试不同的参数，可直接在URL上或使用Scene7出版系统的图像调整功能，该功能为调整操作提供实时预览。
+* 直接在URL上实时尝试和测试不同的参数。
 * 作为最佳实践，请记住，您可以将Dynamic Media图像服务命令分组到图像预设中。 图像预设基本上是具有自定义预设名称（如`$thumb_low$`和`&product_high$`）的URL命令宏。 URL 路径中的自定义预设名称会调用这些预设。这类功能可帮助您针对网站中图像的不同使用模式来管理命令和质量设置，并缩短 URL 的整体长度。
 * AEM 还提供了更高级的图像质量调整方法，例如在摄取时应用锐化图像。对于高级用例，如果这可能是进一步调整和优化渲染结果的选项，[Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)可以帮助您进行自定义分析和最佳实践。
-

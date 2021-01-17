@@ -1,8 +1,8 @@
 ---
 title: 文档管理服务（已弃用）Java API快速开始(SOAP)
 seo-title: 文档管理服务（已弃用）Java API快速开始(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 使用文档管理服务Java API创建内容服务空间、删除内容服务空间、向内容服务添加内容、从内容服务检索内容、移动内容服务内容、列表内容服务内容、搜索内容服务内容并设置内容服务权限。
+seo-description: 使用文档管理服务Java API创建内容服务空间、删除内容服务空间、向内容服务添加内容、从内容服务检索内容、移动内容服务内容、列表内容服务内容、搜索内容服务内容并设置内容服务权限。
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---

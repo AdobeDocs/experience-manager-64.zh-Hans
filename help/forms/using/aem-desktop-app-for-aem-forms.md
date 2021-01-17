@@ -1,8 +1,8 @@
 ---
 title: AEM桌面应用程序(AEM Forms)
 seo-title: AEM桌面应用程序(AEM Forms)
-description: 'null'
-seo-description: 'null'
+description: AEM桌面应用程序允许您将Adobe Experience Manager(AEM)资产存储库和AEM Forms二进制文件映射到系统上的网络目录。 进一步了解AEM桌面应用程序中支持的资源以及如何启用AEM FormsAEM桌面应用程序。
+seo-description: AEM桌面应用程序允许您将Adobe Experience Manager(AEM)资产存储库和AEM Forms二进制文件映射到系统上的网络目录。 进一步了解AEM桌面应用程序中支持的资源以及如何启用AEM FormsAEM桌面应用程序。
 uuid: 99e0f2fb-8623-45bb-8e2e-5c5d6f482366
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,9 +10,9 @@ topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3995381542c86694bad6ff6d3f726b1e24bf7ddc
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---

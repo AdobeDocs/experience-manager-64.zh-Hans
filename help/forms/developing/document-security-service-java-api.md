@@ -1,8 +1,8 @@
 ---
 title: 文档安全服务JavaAPI快速开始(SOAP)
 seo-title: 文档安全服务JavaAPI快速开始(SOAP)
-description: 'null'
-seo-description: 'null'
+description: '使用Rights Management服务Java API创建策略、修改策略、删除策略、将策略应用于PDF文档、从PDF文档删除策略、撤销文档、恢复对已撤销文档的访问、检查受策略保护的PDF文档、创建水印、修改水印、搜索事件以及从Word文档删除策略。 '
+seo-description: 使用Rights Management服务Java API创建策略、修改策略、删除策略、将策略应用于PDF文档、从PDF文档删除策略、撤销文档、恢复对已撤销文档的访问、检查受策略保护的PDF文档、创建水印、修改水印、搜索事件以及从Word文档删除策略。
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: Application Manager客户端JavaAPI快速开始(SOAP)
 seo-title: Application Manager客户端JavaAPI快速开始(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 使用Application Manager Client创建应用程序版本、导出应用程序、导入应用程序、获取AEM Forms应用程序、获取应用程序、获取应用程序状态、预览AEM Forms和更高版本的应用程序归档以及删除AEM Forms应用程序归档。
+seo-description: 使用Application Manager Client创建应用程序版本、导出应用程序、导入应用程序、获取AEM Forms应用程序、获取应用程序、获取应用程序状态、预览AEM Forms和更高版本的应用程序归档以及删除AEM Forms应用程序归档。
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---

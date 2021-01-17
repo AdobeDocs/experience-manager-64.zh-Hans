@@ -1,8 +1,8 @@
 ---
 title: 备份和还原服务APIQ快速开始
 seo-title: 备份和还原服务APIQ快速开始
-description: 'null'
-seo-description: 'null'
+description: 使用Backup and Restore Service API使用Java API快速开始进入和退出备份模式。
+seo-description: 使用Backup and Restore Service API使用Java API快速开始进入和退出备份模式。
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速开始（SOAP模式）:使用Java API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}进入备份模式
 
-以下Java代码示例进入备份模式，并在两小时内使用唯一标签。 备份时间过期或明确退出备份模式后，表单服务器将返回以从全局文档存储清除文件。 （请参阅表单服务器[进入备份模式。）](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)
+以下Java代码示例进入备份模式，并在两小时内使用唯一标签。 备份时间过期或明确退出备份模式后，表单服务器将返回以从全局文档存储清除文件。 （请参阅表单服务器](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server)进入备份模式。）[
 
 ```as3
  /* 

@@ -1,8 +1,8 @@
 ---
 title: 服务容器
 seo-title: 服务容器
-description: 'null'
-seo-description: 'null'
+description: 进一步了解服务容器的功能。 此外，本文还描述了以编程方式调用AEM Forms服务的不同方式。
+seo-description: 进一步了解服务容器的功能。 此外，本文还描述了以编程方式调用AEM Forms服务的不同方式。
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---

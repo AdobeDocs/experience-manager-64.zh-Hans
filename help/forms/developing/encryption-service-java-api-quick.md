@@ -1,8 +1,8 @@
 ---
 title: 加密服务Java API QuickStart(SOAP)
 seo-title: 加密服务Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 使用Encryption Service Java API加密PDF文档、删除基于密码的加密、使用证书加密PDF文档、删除基于证书的加密、解锁加密的PDF文档并确定加密类型。
+seo-description: 使用Encryption Service Java API加密PDF文档、删除基于密码的加密、使用证书加密PDF文档、删除基于证书的加密、解锁加密的PDF文档并确定加密类型。
 uuid: 3e29b3e9-340b-4b35-80cc-f0aff4180892
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---

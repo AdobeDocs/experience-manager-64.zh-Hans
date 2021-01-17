@@ -1,17 +1,17 @@
 ---
 title: '以表单为中心的AEM工作流在OSGi和AEM FormsJEE工作流上的操作和功能 '
 seo-title: '以表单为中心的AEM工作流在OSGi和AEM FormsJEE工作流上的操作和功能 '
-description: 'null'
-seo-description: 'null'
+description: 进一步了解AEM Inbox和HTML Workspace支持的操作差异、OSGi和AEM FormsJEE工作流上以表单为中心的AEM工作流支持的功能差异以及AEM Inbox和AEM Forms应用程序功能之间的差异。
+seo-description: 进一步了解AEM Inbox和HTML Workspace支持的操作差异、OSGi和AEM FormsJEE工作流上以表单为中心的AEM工作流支持的功能差异以及AEM Inbox和AEM Forms应用程序功能之间的差异。
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 20%
+source-wordcount: '931'
+ht-degree: 18%
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Assembler Service Java API QuickStart(SOAP)
 seo-title: Assembler Service Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 使用汇编服务汇编PDF文档、反汇编PDF文档、汇编加密的PDF文档、汇编带有bates编号的PDF文档、汇编非交互式PDF文档、确定文档是否符合PDF/A规范、验证DDX文档、将PDF文档与书签汇编在一起、动态汇编DDX文档包、PDF并组合多个XDP片段。
+seo-description: 使用汇编服务汇编PDF文档、反汇编PDF文档、汇编加密的PDF文档、汇编带有bates编号的PDF文档、汇编非交互式PDF文档、确定文档是否符合PDF/A规范、验证DDX文档、将PDF文档与书签汇编在一起、动态汇编DDX文档包、PDF并组合多个XDP片段。
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: 组件和服务Java APIQ快速开始(SOAP)
 seo-title: 组件和服务Java APIQ快速开始(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 使用组件和服务Java API快速开始部署组件、设置服务的执行上下文、禁用服务安全性、开始服务、修改服务配置值和删除组件。
+seo-description: 使用组件和服务Java API快速开始部署组件、设置服务的执行上下文、禁用服务安全性、开始服务、修改服务配置值和删除组件。
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---

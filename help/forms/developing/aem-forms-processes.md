@@ -1,8 +1,8 @@
 ---
 title: 理解AEM Forms进程
 seo-title: 理解AEM Forms进程
-description: 'null'
-seo-description: 'null'
+description: 了解如何使用AEM Forms业务流程实现运营自动化。 激活进程以创建服务，以便您可以像调用其他服务一样调用它。 过程可以是短期的，也可以是长期的。
+seo-description: 了解如何使用AEM Forms业务流程实现运营自动化。 激活进程以创建服务，以便您可以像调用其他服务一样调用它。 过程可以是短期的，也可以是长期的。
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---

@@ -7,10 +7,10 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
+source-git-commit: 9e6a7f0ec6ed921df419e626a155d0895dbaefde
 workflow-type: tm+mt
-source-wordcount: '3841'
-ht-degree: 24%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -385,7 +385,8 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
      <li><strong>应用至</strong> -确定是否将取消锐化应用于每种颜色或亮度。</li>
     </ul>
     <div>
-      有关“锐化”的介绍，请参阅*AdobeDynamic Media经典图像质量和锐化最佳实践</a>。
+      有关锐化的说明，请参阅  
+     <a href="https://experienceleague.adobe.com/doc/experience-manager-64/assets/assets/sharpening_images.pdf">AdobeDynamic Media经典图像质量和锐化最佳实践</a>。
     </div> </td>
   </tr>
   <tr>

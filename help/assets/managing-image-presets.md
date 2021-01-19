@@ -1,17 +1,15 @@
 ---
 title: 管理Dynamic Media图像预设
 description: 了解Dynamic Media图像预设并学习如何创建、修改和管理图像预设
-uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '3850'
+source-wordcount: '3841'
 ht-degree: 24%
 
 ---
@@ -106,31 +104,31 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>进程参数</strong></td> 
-   <td><strong>默认设置</strong></td> 
-   <td><strong>描述</strong></td> 
+   <td><strong>进程参数</strong></td>
+   <td><strong>默认设置</strong></td>
+   <td><strong>描述</strong></td>
   </tr> 
   <tr> 
-   <td>Mime 类型</td> 
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td> 
-   <td>列表被视为PDF或Illustrator文档的文档mime类型。<br /> </td> 
+   <td>Mime 类型</td>
+   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br/> </p> </td>
+   <td>列表被视为PDF或Illustrator文档的文档mime类型。<br/> </td>
   </tr> 
   <tr> 
-   <td>最大宽度</td> 
-   <td>2048</td> 
-   <td>生成的预览再现的最大宽度（以像素为单位）。<br /> </td> 
+   <td>最大宽度</td>
+   <td>2048</td>
+   <td>生成的预览再现的最大宽度（以像素为单位）。<br/> </td>
   </tr> 
   <tr> 
-   <td>最大高度</td> 
-   <td>2048</td> 
-   <td>生成的预览再现的最大高度（以像素为单位）。<br /> </td> 
+   <td>最大高度</td>
+   <td>2048</td>
+   <td>生成的预览再现的最大高度（以像素为单位）。<br/> </td>
   </tr> 
   <tr> 
-   <td>分辨率</td> 
-   <td>72</td> 
-   <td>分辨率，以ppi为单位栅格化第一页（每英寸像素数）。</td> 
-  </tr> 
- </tbody> 
+   <td>分辨率</td>
+   <td>72</td>
+   <td>分辨率，以ppi为单位栅格化第一页（每英寸像素数）。</td>
+  </tr>
+ </tbody>
 </table>
 
 使用默认处理参数，PDF/AI文档的第一页以72 ppi栅格化，生成的预览图像的大小为2048 x 2048像素。 对于典型部署，您可能希望将分辨率提高到至少150 ppi或更高。 例如，300 ppi的美国字母大小文档要求最大宽度和高度分别为2550 x 3300像素。
@@ -158,24 +156,24 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>扩展脚本名称</strong></td> 
-   <td><strong>默认</strong></td> 
-   <td><strong>描述</strong></td> 
+   <td><strong>扩展脚本名称</strong></td>
+   <td><strong>默认</strong></td>
+   <td><strong>描述</strong></td>
   </tr> 
   <tr> 
-   <td>ThumbnailExport.jsx</td> 
-   <td>是</td> 
-   <td>生成经过优化的300 ppi <code>thumbnail.jpg</code>再现，并由<code>Dynamic Media Process Image Assets</code>进程组件转换为PTIFF再现。<br /> </td> 
+   <td>ThumbnailExport.jsx</td>
+   <td>是</td>
+   <td>生成经过优化的300 ppi <code>thumbnail.jpg</code>再现，并由<code>Dynamic Media Process Image Assets</code>进程组件转换为PTIFF再现。<br/> </td>
   </tr> 
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>是</td> 
-   <td>为每页生成一个300 ppi的JPEG子资产。 JPEG子资产是存储在InDesign资产下的实际资产。 它还通过<code>DAM Update Asset</code>工作流优化并转换为PTIFF。<br /> </td> 
+   <td>为每页生成一个300 ppi的JPEG子资产。 JPEG子资产是存储在InDesign资产下的实际资产。 它还通过<code>DAM Update Asset</code>工作流优化并转换为PTIFF。<br/> </td>
   </tr> 
   <tr> 
-   <td>PDFPagesExport.jsx</td> 
-   <td>否</td> 
-   <td>为每个页面生成一个PDF子资产。 PDF子资产将按照前面所述进行处理。 由于PDF仅包含单页，因此不会生成子资产。<br /> </td> 
+   <td>PDFPagesExport.jsx</td>
+   <td>否</td>
+   <td>为每个页面生成一个PDF子资产。 PDF子资产将按照前面所述进行处理。 由于PDF仅包含单页，因此不会生成子资产。<br/> </td>
   </tr> 
  </tbody> 
 </table>
@@ -297,129 +295,129 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>字段</strong></td> 
-   <td><strong>描述</strong></td> 
+   <td><strong>字段</strong></td>
+   <td><strong>描述</strong></td>
   </tr> 
   <tr> 
-   <td><strong>名称</strong></td> 
-   <td>输入一个描述性名称，不加任何空格。在名称中包含图像大小规格可帮助用户识别此图像预设。</td> 
+   <td><strong>名称</strong></td>
+   <td>输入一个描述性名称，不加任何空格。在名称中包含图像大小规格可帮助用户识别此图像预设。</td>
+  </tr>
+  <tr> 
+   <td><strong>宽度和高度</strong></td>
+   <td>输入传送图像时所用的像素大小。宽度和高度必须大于 0 像素。如果任一值为 0，则无法创建预设。如果两个值均为空，则表示已经创建了响应式图像预设。</td>
   </tr> 
   <tr> 
-   <td><strong>宽度和高度</strong></td> 
-   <td>输入传送图像时所用的像素大小。宽度和高度必须大于 0 像素。如果任一值为 0，则无法创建预设。如果两个值均为空，则表示已经创建了响应式图像预设。</td> 
-  </tr> 
-  <tr> 
-   <td><strong>格式</strong></td> 
-   <td><p>从菜单中选择一个格式。</p> <p>选择 <strong>JPEG</strong> 可提供以下更多选项。</p> 
+   <td><strong>格式</strong></td>
+   <td><p>从菜单中选择一个格式。</p> <p>选择 <strong>JPEG</strong> 可提供以下更多选项。</p>
     <ul> 
      <li><strong>质量</strong> -控制JPEG压缩级别。此设置会影响文件大小和图像质量。JPEG质量比例为1-100。拖动滑块时，比例可见。</li> 
-     <li><strong>启用JPG色度缩减采样</strong> -由于眼睛对高频颜色信息的敏感程度低于高频亮度，因此JPEG图像将图像信息分为明亮度和颜色分量。当压缩JPEG图像时，明亮度分量将保留为全分辨率，而颜色分量则通过平均一组像素进行缩减采样。缩减像素采样可将数据量减少一半或三分之一，几乎不会影响感知质量。缩减像素采样不适用于灰度图像。此技术可减少对对比度高的图像（例如，叠加有文本的图像）有用的压缩量。</li> 
+     <li><strong>启用JPG色度缩减采样</strong> -由于眼睛对高频颜色信息的敏感程度低于高频亮度，因此JPEG图像将图像信息分为明亮度和颜色分量。当压缩JPEG图像时，明亮度分量将保留为全分辨率，而颜色分量则通过平均一组像素进行缩减采样。缩减像素采样可将数据量减少一半或三分之一，几乎不会影响感知质量。缩减像素采样不适用于灰度图像。此技术可减少对对比度高的图像（例如，叠加有文本的图像）有用的压缩量。</li>
+    </ul>
+    <div>
+      选择 <strong>GIF</strong> 或<strong>带有 Alpha 的 GIF</strong> 可提供以下更多 <strong>GIF 颜色量化</strong>选项：
+    </div>
+    <ul> 
+     <li><strong>类 </strong>型——选 <strong>择</strong> Adaptive <strong>（默认）、</strong>Web <strong>或</strong>Macintosh。如果您选 <strong>择带有Alpha的GIF</strong>，则Macintosh选项不可用。</li>
+     <li><strong>混色</strong> -选择 <strong></strong> “扩 <strong>散”或</strong>“关闭”</li>
+     <li><strong>颜色数目</strong> - 输入介于 2 到 256 之间的一个数字。</li>
+     <li><strong>颜色列表</strong> - 输入一个以逗号分隔的列表。例如，对于白色、灰色和黑色，输入 000000,888888,ffffff。</li>
     </ul> 
     <div>
-      选择 <strong>GIF</strong> 或<strong>带有 Alpha 的 GIF</strong> 可提供以下更多 <strong>GIF 颜色量化</strong>选项： 
-    </div> 
-    <ul> 
-     <li><strong>类 </strong>型——选 <strong>择</strong> Adaptive <strong>（默认）、</strong>Web <strong>或</strong>Macintosh。如果您选 <strong>择带有Alpha的GIF</strong>，则Macintosh选项不可用。</li> 
-     <li><strong>混色</strong> -选择 <strong></strong> “扩 <strong>散”或</strong>“关闭”</li> 
-     <li><strong>颜色数目</strong> - 输入介于 2 到 256 之间的一个数字。</li> 
-     <li><strong>颜色列表</strong> - 输入一个以逗号分隔的列表。例如，对于白色、灰色和黑色，输入 000000,888888,ffffff。</li> 
-    </ul> 
-    <div>
-      选择 <strong>PDF</strong>、<strong>TIFF</strong> 或<strong>带有 Alpha 的 TIFF</strong> 可提供以下更多选项： 
-    </div> 
-    <ul> 
-     <li><strong>压缩</strong> - 选择一种压缩算法。“PDF”的算法选项有<strong>无</strong>、<strong>Zip</strong> 和 <strong>Jpeg</strong>；对于“TIFF”，压缩算法选项有<strong>无</strong>、<strong>LZW</strong>、<strong>Jpeg</strong> 和 <strong>Zip</strong>；对于“带有 Alpha 的 TIFF”，压缩算法选项有<strong>无</strong>、<strong>LZW</strong> 和 <strong>Zip</strong>。</li> 
-    </ul> <p>如果选择 <strong>PNG</strong>、<strong>带有 Alpha 的 PNG</strong>，或者选择 <strong>EPS</strong>，则不提供其他选项。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>锐化</strong></td> 
-   <td>选择<strong>启用简单锐化</strong>选项可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </td> 
-  </tr> 
- </tbody> 
+      选择 <strong>PDF</strong>、<strong>TIFF</strong> 或<strong>带有 Alpha 的 TIFF</strong> 可提供以下更多选项：
+    </div>
+    <ul>
+     <li><strong>压缩</strong> - 选择一种压缩算法。“PDF”的算法选项有<strong>无</strong>、<strong>Zip</strong> 和 <strong>Jpeg</strong>；对于“TIFF”，压缩算法选项有<strong>无</strong>、<strong>LZW</strong>、<strong>Jpeg</strong> 和 <strong>Zip</strong>；对于“带有 Alpha 的 TIFF”，压缩算法选项有<strong>无</strong>、<strong>LZW</strong> 和 <strong>Zip</strong>。</li>
+    </ul> <p>如果选择 <strong>PNG</strong>、<strong>带有 Alpha 的 PNG</strong>，或者选择 <strong>EPS</strong>，则不提供其他选项。</p> </td>
+  </tr>
+  <tr>
+   <td><strong>锐化</strong></td>
+   <td>选择<strong>启用简单锐化</strong>选项可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </td>
+  </tr>
+ </tbody>
 </table>
 
 #### “高级”选项卡选项{#advanced-tab-options}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>字段</strong></td> 
-   <td><strong>描述</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>色彩空间</strong></td> 
-   <td>为色彩空间选择<strong>RGB、CMYK、</strong>或<strong>灰度</strong>。</td> 
-  </tr> 
-  <tr> 
-   <td><strong>颜色配置文件</strong></td> 
-   <td>如果资产与工作用户档案不同，请选择应将其转换为的输出色彩空间用户档案。</td> 
-  </tr> 
-  <tr> 
-   <td><strong>渲染方法</strong></td> 
-   <td>您可以覆盖默认的渲染方法。 渲染意图确定在目标颜色用户档案（溢色）中无法再现的颜色会发生什么情况。 如果渲染方法与ICC用户档案不兼容，则将忽略它。 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>字段</strong></td>
+   <td><strong>描述</strong></td>
+  </tr>
+  <tr>
+   <td><strong>色彩空间</strong></td>
+   <td>为色彩空间选择<strong>RGB、CMYK、</strong>或<strong>灰度</strong>。</td>
+  </tr>
+  <tr>
+   <td><strong>颜色配置文件</strong></td>
+   <td>如果资产与工作用户档案不同，请选择应将其转换为的输出色彩空间用户档案。</td>
+  </tr>
+  <tr>
+   <td><strong>渲染方法</strong></td>
+   <td>您可以覆盖默认的渲染方法。 渲染意图确定在目标颜色用户档案（溢色）中无法再现的颜色会发生什么情况。 如果渲染方法与ICC用户档案不兼容，则将忽略它。
     <ul> 
-     <li>选择<strong>感知</strong>，当原始图像中的一种或多种颜色超出目标色彩空间的色域时，将整个色域从一个色彩空间压缩到另一个色彩空间。</li> 
-     <li>当当前颜色空间中的颜色超出目标色彩空间的色域时，选择<strong>相对比色</strong>，并希望将其映射到目标色彩空间色域中最接近的颜色，而不影响任何其他颜色。 </li> 
-     <li>选择<strong>饱和度</strong>以在转换为目标色彩空间时重现原始图像色彩饱和度。 </li> 
-     <li>选择<strong>绝对比色</strong>以完全匹配颜色，而不调整会改变图像亮度的白点或黑点。</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>黑场补偿</strong></td> 
-   <td>如果输出用户档案支持此功能，请选择此选项。 如果黑点补偿与指定的ICC用户档案不兼容，则忽略黑点补偿。</td> 
-  </tr> 
-  <tr> 
-   <td><strong>仿色</strong></td> 
-   <td>选择此选项可避免或减少色带伪像。 </td> 
-  </tr> 
-  <tr> 
-   <td><strong>锐化类型</strong></td> 
-   <td><p>选择<strong>无</strong>、<strong>锐化</strong>或 <strong>USM 锐化</strong>。 </p> 
+     <li>选择<strong>感知</strong>，当原始图像中的一种或多种颜色超出目标色彩空间的色域时，将整个色域从一个色彩空间压缩到另一个色彩空间。</li>
+     <li>当当前颜色空间中的颜色超出目标色彩空间的色域时，选择<strong>相对比色</strong>，并希望将其映射到目标色彩空间色域中最接近的颜色，而不影响任何其他颜色。 </li>
+     <li>选择<strong>饱和度</strong>以在转换为目标色彩空间时重现原始图像色彩饱和度。 </li>
+     <li>选择<strong>绝对比色</strong>以完全匹配颜色，而不调整会改变图像亮度的白点或黑点。</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>黑场补偿</strong></td>
+   <td>如果输出用户档案支持此功能，请选择此选项。 如果黑点补偿与指定的ICC用户档案不兼容，则忽略黑点补偿。</td>
+  </tr>
+  <tr>
+   <td><strong>仿色</strong></td>
+   <td>选择此选项可避免或减少色带伪像。 </td>
+  </tr>
+  <tr>
+   <td><strong>锐化类型</strong></td>
+   <td><p>选择<strong>无</strong>、<strong>锐化</strong>或 <strong>USM 锐化</strong>。 </p>
+    <ul>
+     <li>选择<strong>无</strong>可禁用锐化。</li>
+     <li>选择<strong>锐化</strong>可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </li>
+     <li>选择<strong> USM锐化</strong>可微调最终缩减采样图像的锐化滤镜效果。您可以控制效果的强度、效果的半径（以像素为单位）以及将被忽略的对比度阈值。此效果使用的选项与Photoshop的“USM锐化”滤镜相同。</li>
+    </ul> <p>在 <strong>USM 锐化</strong>中，您可以设置以下选项：</p>
     <ul> 
-     <li>选择<strong>无</strong>可禁用锐化。</li> 
-     <li>选择<strong>锐化</strong>可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </li> 
-     <li>选择<strong> USM锐化</strong>可微调最终缩减采样图像的锐化滤镜效果。您可以控制效果的强度、效果的半径（以像素为单位）以及将被忽略的对比度阈值。此效果使用的选项与Photoshop的“USM锐化”滤镜相同。</li> 
-    </ul> <p>在 <strong>USM 锐化</strong>中，您可以设置以下选项：</p> 
-    <ul> 
-     <li><strong>数量</strong> -控制应用于边缘像素的对比度数量。默认的实数值为1.0。对于高分辨率图像，最高可将其增加到5.0。可以考虑使用“数量”来衡量滤镜强度。</li> 
-     <li><strong>半径</strong> -确定边缘像素周围影响锐化的像素数。对于高分辨率图像，输入1到2的实数。 低值仅锐化边缘像素；高值锐化较宽范围的像素。 正确的值取决于图像大小。</li> 
-     <li><strong>阈值</strong> -确定应用USM锐化滤镜时要忽略的对比度范围。换句话说，此选项确定锐化的像素与周围区域必须存在多大的不同，才能被视为边缘像素并进行锐化。为避免引入杂色，请尝试2到20之间的整数值。 </li> 
-     <li><strong>应用至</strong> -确定是否将取消锐化应用于每种颜色或亮度。</li> 
-    </ul> 
+     <li><strong>数量</strong> -控制应用于边缘像素的对比度数量。默认的实数值为1.0。对于高分辨率图像，最高可将其增加到5.0。可以考虑使用“数量”来衡量滤镜强度。</li>
+     <li><strong>半径</strong> -确定边缘像素周围影响锐化的像素数。对于高分辨率图像，输入1到2的实数。 低值仅锐化边缘像素；高值锐化较宽范围的像素。 正确的值取决于图像大小。</li>
+     <li><strong>阈值</strong> -确定应用USM锐化滤镜时要忽略的对比度范围。换句话说，此选项确定锐化的像素与周围区域必须存在多大的不同，才能被视为边缘像素并进行锐化。为避免引入杂色，请尝试2到20之间的整数值。 </li>
+     <li><strong>应用至</strong> -确定是否将取消锐化应用于每种颜色或亮度。</li>
+    </ul>
     <div>
-      有关“锐化”的信息，请参阅<a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">锐化图像</a>。 
-    </div> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>重新取样模式</strong></td> 
-   <td>选择一个<strong>重新取样模式</strong>选项。在缩减像素采样时，这些选项会锐化图像： 
-    <ul> 
-     <li><strong>双线性</strong> -最快的重新取样方法。会出现一些锯齿伪像。</li> 
-     <li><strong>两次立方</strong> -提高CPU使用率，但生成较锐利的图像，出现的锯齿伪像较少。</li> 
-     <li><strong>锐化2</strong>  —— 可以产生比两次立方更锐利的结果，但CPU成本更高。</li> 
-     <li><strong>Bi-Sharp</strong> -选择Photoshop默认重新取样器以减小图像大小，该方法称 <strong>为双</strong> 立方锐化Adobe Photoshop。</li> 
-     <li><strong>每种颜色</strong>和<strong>亮度</strong> - 每种方法均可基于颜色或亮度。默认情况下将选择<strong>每种颜色</strong>。</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>打印分辨率</strong></td> 
-   <td>选择此图像的打印分辨率；默认值为 72 像素。</td> 
-  </tr> 
-  <tr> 
-   <td><strong>图像修饰符</strong></td> 
-   <td><p>除了UI中提供的常用图像设置之外，Dynamic Media还支持大量高级图像修改，您可以在<strong>图像修饰符</strong>字段中指定这些修改。 这些参数在<a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">图像服务器协议命令参考</a>中定义。</p> <p>重要：不支持API中列出的以下功能：</p> 
-    <ul> 
-     <li>基本模板和文本渲染命令：<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li> 
-     <li>本地化命令：<code>locale=</code>和 <code>req=xlate</code></li> 
-     <li><code>req=set</code> 不可用于一般用途。</li> 
-     <li><code>req=mbrset</code></li> 
-     <li><code>req=saveToFile</code></li> 
-     <li><code>req=targets</code></li> 
-     <li><code>template=</code></li> 
-     <li>非核心Dynamic Media服务：SVG、图像渲染和Web到打印</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+      有关“锐化”的介绍，请参阅*AdobeDynamic Media经典图像质量和锐化最佳实践</a>。
+    </div> </td>
+  </tr>
+  <tr>
+   <td><strong>重新取样模式</strong></td>
+   <td>选择一个<strong>重新取样模式</strong>选项。在缩减像素采样时，这些选项会锐化图像：
+    <ul>
+     <li><strong>双线性</strong> -最快的重新取样方法。会出现一些锯齿伪像。</li>
+     <li><strong>两次立方</strong> -提高CPU使用率，但生成较锐利的图像，出现的锯齿伪像较少。</li>
+     <li><strong>锐化2</strong>  —— 可以产生比两次立方更锐利的结果，但CPU成本更高。</li>
+     <li><strong>Bi-Sharp</strong> -选择Photoshop默认重新取样器以减小图像大小，该方法称 <strong>为双</strong> 立方锐化Adobe Photoshop。</li>
+     <li><strong>每种颜色</strong>和<strong>亮度</strong> - 每种方法均可基于颜色或亮度。默认情况下将选择<strong>每种颜色</strong>。</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>打印分辨率</strong></td>
+   <td>选择此图像的打印分辨率；默认值为 72 像素。</td>
+  </tr>
+  <tr>
+   <td><strong>图像修饰符</strong></td>
+   <td><p>除了UI中提供的常用图像设置之外，Dynamic Media还支持大量高级图像修改，您可以在<strong>图像修饰符</strong>字段中指定这些修改。 这些参数在<a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">图像服务器协议命令参考</a>中定义。</p> <p>重要：不支持API中列出的以下功能：</p>
+    <ul>
+     <li>基本模板和文本渲染命令：<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li>
+     <li>本地化命令：<code>locale=</code>和 <code>req=xlate</code></li>
+     <li><code>req=set</code> 不可用于一般用途。</li>
+     <li><code>req=mbrset</code></li>
+     <li><code>req=saveToFile</code></li>
+     <li><code>req=targets</code></li>
+     <li><code>template=</code></li>
+     <li>非核心Dynamic Media服务：SVG、图像渲染和Web到打印</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## 使用图像修饰符{#defining-image-preset-options-with-image-modifiers}定义图像预设选项
@@ -501,9 +499,6 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 
 ## 删除Dynamic Media图像预设{#deleting-image-presets}
 
-**要删除Dynamic Media图像预设，请执行以下操作**:
-
 1. 在AEM中，点按AEM徽标以访问全局导航控制台。
 1. 点按&#x200B;**[!UICONTROL 工具]**&#x200B;图标，然后导航到&#x200B;**[!UICONTROL 资产>图像预设]**。
 1. 选择预设，然后点按&#x200B;**[!UICONTROL 删除]**。 Dynamic Media确认您要删除它。 点按&#x200B;**[!UICONTROL 删除]**。
-

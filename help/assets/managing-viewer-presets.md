@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4248'
 ht-degree: 21%
 
 ---
@@ -23,12 +23,12 @@ ht-degree: 21%
 
 Dynamic Media查看器预设是一组设置，用于确定用户如何在其计算机屏幕和移动设备上视图富媒体资产。 如果您是管理员，则可以创建查看器预设。您可以设置一系列查看器配置选项。例如，可以更改查看器的显示大小或缩放行为。
 
-有关创建和自定义您自己的HTML5查看器预设的说明，请参阅&#x200B;*Adobe Scene7HTML5查看器SDK*。 SDK可在嵌入在SDK中的IS发布服务器上使用。 每个库版本都包含自己的SDK文档。
+有关创建和自定义您自己的HTML5查看器预设的说明，请参阅AdobeDynamic Media *HTML5查看器SDK API文档*。 SDK可在嵌入在SDK中的IS发布服务器上使用。 每个库版本都包含自己的SDK文档。
 
 路径: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
-例如，3.5 SDK:[https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html)
+例如，3.10 SDK:[https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-另请参阅[Adobe查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
+另请参阅[《AdobeDynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
 
 本节介绍如何创建、编辑和管理查看器预设。 无论您何时对资产进行预览，您都可以将查看器预设应用到资产。 请参阅[应用查看器预设](viewer-presets.md)。
 
@@ -40,7 +40,7 @@ Dynamic Media查看器预设是一组设置，用于确定用户如何在其计�
 
 所有现成查看器都支持键盘辅助功能。
 
-另请参阅[键盘辅助功能和导航](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
+另请参阅[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
 ## 管理Dynamic Media查看器预设{#managing-presets}
 

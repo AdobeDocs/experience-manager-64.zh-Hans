@@ -10,10 +10,10 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 56%
+source-wordcount: '1681'
+ht-degree: 55%
 
 ---
 
@@ -137,7 +137,7 @@ Scene7 视频组件仅适用于 Scene7 视频。而基础组件则适用于 AEM 
 | 方法 | HTML5 为首选方法。Flash 仅用作不可使用 HTML5 时的回退方法。 | 在大多数台式机上使用 Flash。在移动设备和平板电脑上使用 HTML5。 |
 | 交付 | 渐进式 | 自适应流式传输 |
 | 跟踪 | 是 | 是 |
-| 可扩展性 | 是 | 是（通过 Scene7 查看器 SDK） |
+| 可扩展性 | 是 | 是（带有[HTML5查看器SDK API文档](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)） |
 | 移动视频 | 是 | 是 |
 
 ### 设置  {#setting-up}

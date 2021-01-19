@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '3428'
-ht-degree: 30%
+source-wordcount: '3403'
+ht-degree: 31%
 
 ---
 
@@ -240,7 +240,7 @@ AEM中提供以下Dynamic Media经典组件：
 
 **[!UICONTROL 输出格式]** -选择图像的输出格式，例如jpeg。根据所选的输出格式，您可能会有额外的配置选项。请参阅[管理图像预设](/help/assets/managing-image-presets.md)。
 
-**[!UICONTROL 锐化]** -选择要如何锐化图像。[*AdobeDynamic Media经典图像质量和锐化最佳实践*](/help/assets/assets/sharpening_images.pdf)&#x200B;中详细介绍了锐化。
+<!-- **[!UICONTROL Sharpening]** - Select how you want to sharpen the image. Sharpening is explained in detail in [*Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices*](/help/assets/assets/sharpening_images.pdf). -->
 
 **[!UICONTROL URL修饰符]** -您可以通过提供其他Dynamic Media经典图像命令来更改图像效果。这些操作在[管理图像预设](/help/assets/managing-image-presets.md)和[命令参考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中有介绍。
 

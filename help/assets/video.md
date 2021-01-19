@@ -10,10 +10,10 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '10502'
-ht-degree: 25%
+source-wordcount: '10456'
+ht-degree: 24%
 
 ---
 
@@ -310,7 +310,7 @@ HLS（HTTP实时流）是自适应视频流播放的Apple标准，可根据网�
 
 在为主视频文件选择或创建视频编码预设时，请确保预设的宽高比与主视频文件的宽高比相同。宽高比是视频的宽度与高度的比率。
 
-要确定视频文件的长宽比，请获取该文件的元数据并记下该文件的宽度和高度（请参阅上面的“获取文件的元数据”）。 然后，使用此公式确定宽高比：
+要确定视频文件的长宽比，请获取该文件的元数据并记录该文件的宽度和高度（请参阅上面的“获取文件的元数据”）。 然后，使用此公式确定宽高比：
 
 *宽度/高度 = 宽高比*
 
@@ -426,7 +426,7 @@ HLS（HTTP实时流）是自适应视频流播放的Apple标准，可根据网�
    <td><p>编码</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>编码</p> </td> 
@@ -902,19 +902,13 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 1. 在列出顶级已发布视频的表中，点按视频名称以播放视频，还可以查看该视频的受众保留（流失）报表。
 
-### 查看基于使用 Scene7 HMTL5 查看器 SDK 创建的视频查看器的视频报表 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### 根据您使用HTML5查看器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}创建的视频查看器查看视频报告
 
-如果您使用的是Dynamic Media提供的现成视频查看器，或者您基于现成视频查看器创建了自定义查看器预设，则无需执行任何其他步骤即可视图视频报告。但是，如果您基于Scene7HTML5查看器SDK创建了自己的视频查看器，请使用以下步骤确保视频查看器将跟踪事件发送到Dynamic Media视频报表。
+如果您使用的是Dynamic Media提供的现成视频查看器，或者您基于现成视频查看器创建了自定义查看器预设，则无需执行任何其他步骤即可视图视频报告。 但是，如果您基于HTML5查看器SDK API创建了自己的视频查看器，请使用以下步骤确保视频查看器将跟踪事件发送到Dynamic Media视频报表。
 
-使用 Scene7 查看器参考和 Scene7 HTML5 查看器 SDK 创建您自己的视频查看器。
+使用[Adobe《Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)和[HTML5查看器SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)创建您自己的视频查看器。
 
-请参阅《[Scene7 查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)》。
-
-从 Adobe Developer Connection 下载 Scene7 HTML 查看器 SDK。
-
-请参阅 [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)。
-
-要查看基于使用 Scene7 HMTL5 查看器 SDK 创建的视频查看器的视频报表，请执行以下操作：
+要视图基于您使用HTML5查看器SDK API创建的视频查看器的视频报表，请执行以下操作：
 
 1. 导航到任意已发布的视频资产。
 1. 在资产页面的左上角附近，从下拉列表中选择&#x200B;**[!UICONTROL 查看器]**。
@@ -941,7 +935,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 1. 通过执行以下操作，创建 TrackingManager 组件：
 
-   * 在调用`s7sdk.Utils.init();`后，通过添加以下内容，创建一个TrackingManager实例以跟踪事件:
+   * 在调用`s7sdk.Util.init();`后，通过添加以下内容，创建一个TrackingManager实例以跟踪事件:
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -1038,7 +1032,7 @@ Dynamic Media有能力将字幕文件转换为JSON（JavaScript对象表示法�
 >
 >使用的视频播放器必须支持使用章节标记。 Dynamic Media视频播放器确实支持章节标记，但使用第三方视频播放器可能不支持。
 
-如果需要，您可以使用章节而不是使用视频查看器预设创建自定义视频查看器并为其添加品牌。 有关创建具有章节导航的HTML5查看器的说明，请参阅《Adobe Scene7查看器SDK for HTML5指南》中类`s7sdk.video.VideoPlayer`和`s7sdk.video.VideoScrubber`下的标题“使用修饰符自定义行为”。 可从[Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)下载Adobe Scene7查看器SDK。
+如果需要，您可以使用章节而不是使用视频查看器预设创建自定义视频查看器并为其添加品牌。 有关使用章节导航创建您自己的HTML5查看器的说明，请在AdobeHTML5查看器SDK API中，参考类`s7sdk.video.VideoPlayer`和`s7sdk.video.VideoScrubber`下的标题“使用修饰符自定义行为”。 请参阅[HTML5查看器SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html))文档。
 
 为视频创建章节列表的方法与创建字幕的方法非常相似。 即，创建一个WebVTT文件。 但是，请注意，此文件必须与您也可能使用的任何WebVTT题注文件分开；不能将字幕和章节合并到一个WebVTT文件中。
 

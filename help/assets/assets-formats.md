@@ -3,9 +3,9 @@ title: AEM Assets支持的文件格式
 description: 列表AEM Assets支持的文件格式和MIME类型以及每种格式支持的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1708'
 ht-degree: 22%
 
 ---
@@ -147,7 +147,7 @@ Adobe Camera Raw图书馆使AEM Assets能摄取原始图像。 请参阅[Camera 
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | 选定 | 选定 | 选定 | 选定 | 选定 |
 | HTML |  |  |  |  |  |
-| TTF |  |  |  |  |  |
+| RTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
 | XLS |  |  |  |  |  |
 | XLSX |  |  |  |  |  |
@@ -243,7 +243,7 @@ Adobe Camera Raw图书馆使AEM Assets能摄取原始图像。 请参阅[Camera 
 
 ## 支持的MIME类型{#supported-mime-types}
 
-默认情况下，AEM使用文件扩展名检测文件类型。 AEM可以从文件内容中检测到它。 对于后者，在AEM Web Console中选择]Day CQ DAM Mime类型服务[!UICONTROL 中的从内容[!UICONTROL 检测MIME选项。]
+默认情况下，AEM使用文件扩展名检测文件类型。 AEM可以从文件内容中检测到它。 对于后者，在AEM Web Console中选择[!UICONTROL Day CQ DAM Mime类型服务]中的从内容]检测MIME选项。[!UICONTROL 
 
 支持的MIME类型列表在`/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`的CRXDE Lite中可用。
 
@@ -289,7 +289,7 @@ Adobe Camera Raw图书馆使AEM Assets能摄取原始图像。 请参阅[Camera 
 | PPT | application/vnd.ms-powerpoint |  |  |
 | PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
-| RTF | application/rtf |  |  |
+| TTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | application/x-shockwave-flash |  |  |
 | TAR | application/x-tar |  |  |
@@ -307,6 +307,6 @@ Adobe Camera Raw图书馆使AEM Assets能摄取原始图像。 请参阅[Camera 
 
 >[!MORELIKETHIS]
 >
->* [启用基于MIME类型的资产/Scene7上传作业参数支持](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
+>* [支持基于MIME类型的资产/Dynamic Media经典上传作业参数](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
 >* [配置基于MIME类型的上传作业参数支持](config-dynamic.md)。
 

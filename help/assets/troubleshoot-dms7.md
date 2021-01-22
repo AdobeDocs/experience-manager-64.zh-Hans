@@ -1,18 +1,14 @@
 ---
 title: Dynamic Media-Scene7模式疑难解答
-seo-title: Dynamic Media-Scene7模式疑难解答
-description: Dynamic Media在Scene7运行模式故障排除。
-seo-description: Dynamic Media在Scene7运行模式故障排除。
-uuid: bd9653f7-e4c7-464f-84a8-dc1e8dc37ba2
+description: 诊断Dynamic Media-Scene7运行模式。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: eab920f4-b56e-4ed2-9ec1-03f348810ae5
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1295'
 ht-degree: 1%
 
 ---
@@ -30,7 +26,7 @@ ht-degree: 1%
 * 任何AEM 6.4累积修复包(CFP)都是先在&#x200B;*之前*&#x200B;安装的，后面是任何可用的Dynamic Media功能包。
 * 安装可选功能包18912。
 
-   此可选功能包用于FTP支持，或者如果您要将资产从Dynamic Media经典(Scene7)迁移到Dynamic Media。
+   此可选功能包用于FTP支持，或者如果您要将资产从Dynamic Media经典迁移到Dynamic Media。
 
 * 导航到Cloud Services用户界面，确认预配的帐户显示在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下。
 * 确保已启用&#x200B;**[!UICONTROL Dynamic Media资产激活(scene7)]**&#x200B;复制代理。

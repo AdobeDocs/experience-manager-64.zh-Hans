@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '7833'
+source-wordcount: '7831'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ Dynamic Media-需要启用并配置混合功能以供使用。 根据您的用�
 
 通过启用Dynamic Media，动态媒体功能将在UI中可用，并且每个上传的图像资产都会收到`cqdam.pyramid.tiff`再现，用于快速投放动态图像再现。 这些PTIFF具有显着优势，包括(1)仅管理单个主控图像并动态生成无限再现而无需任何附加存储，以及(2)使用交互式可视化（如缩放、平移、旋转等）的能力。
 
-如果要在AEM中使用Dynamic Media经典(Scene7)，则不应启用Dynamic Media，除非您使用[特定方案](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)。 除非您通过运行模式启用Dynamic Media，否则Dynamic Media将处于禁用状态。
+如果要在AEM中使用Dynamic Media经典，则不应启用Dynamic Media，除非您使用[特定方案](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)。 Dynamic Media被禁用，除非您通过runmode启用Dynamic Media。
 
 要启用Dynamic Media，必须从命令行或快速启动文件名中启用Dynamic Media运行模式。
 
@@ -284,7 +284,7 @@ Dynamic Media图像投放的工作方式是从AEM作者中发布图像资产（�
 
    接下来，您需要[配置复制代理。](#configuring-the-replication-agent)
 
-### 配置复制代理{#configuring-the-replication-agent}
+### 配置复制代理 {#configuring-the-replication-agent}
 
 1. 在AEM中，点按AEM徽标以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具>部署>复制>作者上的代理]**。
 1. 在创作页面上的代理中，点按&#x200B;**[!UICONTROL Dynamic Media混合图像复制(s7投放)]**。
@@ -329,7 +329,7 @@ Replication test succeeded
 * 发布图像。 点按图像，在下拉菜单中选择&#x200B;**[!UICONTROL 查看器]**。 选择查看器预设，然后点按&#x200B;**[!UICONTROL URL]**，在浏览器中复制并粘贴该URL，以验证您是否可以看到该图像。
 
 
-### 身份验证疑难解答{#troubleshooting-authentication}
+### 身份验证疑难解答 {#troubleshooting-authentication}
 
 在设置身份验证时，您可能会遇到以下一些问题，这些问题与他们的解决方案一起使用。 在检查这些复制之前，请确保已设置复制。
 
@@ -676,7 +676,7 @@ AEM 6.4及更高版本将此预设保存在`/conf/global/settings/dam/dm/presets
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dynamic Media经典(Scene7)集成</td> 
+   <td>Dynamic Media经典集成</td> 
    <td><p>滤镜图像</p> <p>过滤器集</p> <p>过滤视频</p> </td> 
    <td><p>具有<strong>image/</strong>的开始</p> <p>包含<strong>application/</strong>，以<strong>set</strong>结尾。</p> <p>开始具有<strong>video/</strong></p> </td> 
    <td><p>将传输URI配置为指向AEM发布服务器，而不是AdobeDynamic Media云复制服务URL。 设置此过滤器将允许Dynamic Media经典传送资产，而不是AEM发布实例。</p> <p>现成的“filter-images”、“filter-sets”和“filter-video”将：</p> 

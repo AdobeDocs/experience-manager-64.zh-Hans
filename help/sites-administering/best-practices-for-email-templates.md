@@ -1,18 +1,14 @@
 ---
 title: 电子邮件模板的最佳实践
-seo-title: 电子邮件模板的最佳实践
-description: 查找有关在AEM中创建电子邮件模板的最佳实践。
-seo-description: 查找有关在AEM中创建电子邮件模板的最佳实践。
-uuid: 714090bd-a742-4004-a968-aebd8fd03e04
+description: 查找有关电子邮件设计的最佳实践，在Adobe Experience Manager建立完善的电子邮件活动模板。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices, integration
-discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1053'
 ht-degree: 1%
 
 ---
@@ -150,7 +146,7 @@ AEM附带了多个现成的模板和组件，供您创建活动新闻稿。 您�
 | 文本与个性化 | /libs/mcm/活动/components/personalization |
 | 文本图像 | /libs/mcm/活动/components/textimage |
 | 链接 | /libs/mcm/活动/components/reference |
-| Scene7 图像模板 | /libs/mcm/活动/s7image |
+| Dynamic Media经典(前Scene7)图像模板 | /libs/mcm/活动/s7image |
 | 目标引用 | /libs/mcm/活动/components/reference |
 
 >[!NOTE]

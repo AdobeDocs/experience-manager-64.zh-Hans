@@ -4,9 +4,9 @@ description: 了解各种资产管理和编辑任务，您可以使用AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c86c84efeb25673490373273a9f4720381e46454
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10031'
+source-wordcount: '10030'
 ht-degree: 6%
 
 ---
@@ -161,7 +161,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 
    >[!NOTE]
    >
-   >通过FTP上传资产时，您在Dynamic Media经典(Scene7)中设置的上传作业选项优先于在AEM中设置的资产处理参数。
+   >通过FTP上传资产时，您在Dynamic Media经典中设置的上传作业选项优先于AEM中设置的资产处理参数。
 
 1. 在&#x200B;**[!UICONTROL 上传作业选项]**&#x200B;对话框的右下角，点按&#x200B;**[!UICONTROL 保存]**。
 1. 在&#x200B;**[!UICONTROL 上传]**&#x200B;页面的右下角，点按&#x200B;**[!UICONTROL 提交上传]**。
@@ -450,7 +450,7 @@ Dynamic Media用图层从PSD文件创建多幅图像；它为每个图层创建�
    * 单击&#x200B;**[!UICONTROL 取消]**&#x200B;以停止该进程。
    >[!NOTE]
    >
-   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果您使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
+   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
    >* 重命名时，文件名中不允许有空格。
 
 

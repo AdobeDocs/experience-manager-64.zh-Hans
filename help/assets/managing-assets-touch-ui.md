@@ -4,9 +4,9 @@ description: 了解各种资产管理和编辑任务，您可以使用AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '10030'
+source-wordcount: '10039'
 ht-degree: 6%
 
 ---
@@ -151,8 +151,8 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您要上传大
 **使用FTP上传资产**
 
 1. 使用您选择的FTP客户端，使用您从供应电子邮件收到的FTP用户名和密码登录到FTP服务器。 在FTP客户端中，将文件或文件夹上传到FTP服务器。
-1. [使用从供应电](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 子邮件收到的凭据登录到Dynamic Media类。在全局导航栏上，点按&#x200B;**[!UICONTROL 上传]**。
-
+1. 打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后使用从供应电子邮件收到的凭据登录到您的帐户。
+1. 在全局导航栏上，点按&#x200B;**[!UICONTROL 上传]**。
 1. 在&#x200B;**[!UICONTROL 上传]**&#x200B;页面左上角附近，点按&#x200B;**[!UICONTROL 通过FTP]**&#x200B;选项卡。
 1. 在页面左侧，选择要从中上传文件的FTP文件夹；在页面的右侧，选择目标文件夹。
 1. 在页面的右下角附近，点按&#x200B;**[!UICONTROL 作业选项]**，然后根据您选择的文件夹中的资产设置所需的选项。
@@ -450,7 +450,7 @@ Dynamic Media用图层从PSD文件创建多幅图像；它为每个图层创建�
    * 单击&#x200B;**[!UICONTROL 取消]**&#x200B;以停止该进程。
    >[!NOTE]
    >
-   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
+   >* 您可以为资产指定相同的名称，前提是新位置中没有使用该名称的资产。但是，如果您将资产移动到存在同名资产的位置，则应使用其他名称。 如果您使用相同的名称，系统将自动生成该名称的变体。 例如，如果您的资产的名称为“Square”，系统会为其副本生成名称“Square1”。
    >* 重命名时，文件名中不允许有空格。
 
 

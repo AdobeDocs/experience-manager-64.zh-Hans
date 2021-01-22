@@ -1,6 +1,6 @@
 ---
-title: 配置Dynamic Media-Scene7模式
-seo-title: 配置Dynamic Media-Scene7模式
+title: 配置 Dynamic Media - Scene7 模式
+seo-title: 配置 Dynamic Media - Scene7 模式
 description: 有关如何配置Dynamic Media-Scene7模式的信息。
 seo-description: 有关如何配置Dynamic Media-Scene7模式的信息。
 uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
@@ -10,15 +10,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5571'
+source-wordcount: '5577'
 ht-degree: 4%
 
 ---
 
 
-# 配置Dynamic Media-Scene7模式{#configuring-dynamic-media-scene-mode}
+# 配置 Dynamic Media - Scene7 模式 {#configuring-dynamic-media-scene-mode}
 
 如果您使用Adobe Experience Manager为不同环境（如一个用于开发、一个用于暂存、一个用于实时生产）进行设置，则需要为每个环境配置Dynamic MediaCloud Services。
 
@@ -72,7 +72,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## 配置Dynamic MediaCloud Services{#configuring-dynamic-media-cloud-services}
 
-在配置Dynamic MediaCloud Services之前，请更改密码。 在收到具有Dynamic Media凭据的供应电子邮件后，您必须[登录](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)到Dynamic Media经典以更改密码。 供应电子邮件中提供的密码是系统生成的，并且仅用于临时密码。 请务必更新密码，以便使用正确的凭据设置Dynamic MediaCloud Service。
+在配置Dynamic MediaCloud Services之前，请更改密码。 在您收到具有Dynamic Media凭据的供应电子邮件后，您必须[登录](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)到Dynamic Media经典桌面应用程序以更改密码。 供应电子邮件中提供的密码是系统生成的，并且仅用于临时密码。 请务必更新密码，以便使用正确的凭据设置Dynamic MediaCloud Service。
 
 >[!NOTE]
 >

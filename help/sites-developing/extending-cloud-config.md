@@ -1,18 +1,14 @@
 ---
 title: 云服务配置
-seo-title: 云服务配置
-description: 您可以扩展现有实例以创建您自己的配置
-seo-description: 您可以扩展现有实例以创建您自己的配置
-uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
+description: 您可以扩展现有实例以创建您自己的配置。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
-source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '566'
 ht-degree: 3%
 
 ---
@@ -222,7 +218,7 @@ propertyname
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 * [Search&amp;Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
-* [Scene7](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
+* [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]
 >

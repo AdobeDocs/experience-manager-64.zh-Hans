@@ -1,18 +1,18 @@
 ---
-title: AEM 6.4 Cumulative Fix Pack发行说明
+title: AEM 6.4 累积修补程序包发行说明
 description: 特定于Adobe Experience Manager6.4累积修复包的发行说明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '4217'
-ht-degree: 11%
+source-wordcount: '4219'
+ht-degree: 16%
 
 ---
 
 
-# AEM 6.4 Cumulative Fix Pack发行说明{#aem-cumulative-fix-pack-release-notes}
+# AEM 6.4 累积修补程序包发行说明 {#aem-cumulative-fix-pack-release-notes}
 
 ## 发行信息 {#release-information}
 
@@ -20,9 +20,9 @@ ht-degree: 11%
 
 | 产品 | **Adobe Experience Manager (AEM) 6.4** |
 |---|---|
-| 版本 | 6.4.8.3 |
+| 版本号 | 6.4.8.3 |
 | 类型 | 累积修补程序包 |
-| 日期 | 2020年11月26日 |
+| 日期 | 2020 年 11 月 26 日 |
 | 先决条件 | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
 | 下载 URL | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-3.0.zip)上的AEM 6.4.8.3 |
 
@@ -63,9 +63,9 @@ Adobe Experience Manager6.4.8.3修复了以下问题。
 
 #### [!DNL Dynamic Media] {#dynamic-media}
 
-* 在“图像预设”设置中，当]中取消选择“启用JPG色度缩减采样”[!UICONTROL 选项时，所做的更改不会与[!DNL Experience Manager]同步(NPR-34284)。[!DNL Dynamic Media]
+* 在“图像预设”设置中，当[!DNL Experience Manager]中取消选择“启用JPG色度缩减采样”]选项时，所做的更改不会与[!DNL Dynamic Media]同步(NPR-34284)。[!UICONTROL 
 * 在[!UICONTROL 查看器预设编辑器]中，编辑[!UICONTROL PanoramicImage/PanoramicImage_VR]预设时，在`PanoramicView`组件中，`PANORAMICVIEW_AUTOROTATE`修饰符标签不可用(CQ-4302043)。
-* 从[!DNL Experience Manager]取消发布视频时，不会取消发布已配置Scene7上的自适应视频集。 (CQ-4304405).
+* 从[!DNL Experience Manager]取消发布视频时，不会取消发布已配置的Dynamic Media经典上的自适应视频集。 (CQ-4304405).
 
 ### 平台 {#platform-6483}
 
@@ -98,7 +98,7 @@ Adobe Experience Manager6.4.8.3修复了以下问题。
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] 在计划的累积修复包发布日期后一周 [!DNL Experience Manager] 内发布加载项包。
+>[!DNL Experience Manager Forms] 在计划的 [!DNL Experience Manager] 累积修补程序包发行日期后一周发布附加组件包。
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ Adobe Experience Manager6.4.8.2修复了以下问题。
 
 * 当将图像用户档案添加到具有多个长宽比（例如，11）的文件夹时，智能裁剪功能会出错而失败(NPR-34083)。
 
-* 对[!UICONTROL Adobe Experience Manager]中的图像预设所做的更改不会同步到Scene7出版系统(NPR-34284、CQ-4299713)。
+* 对[!UICONTROL Adobe Experience Manager]中的图像预设所做的更改不会同步到Dynamic Media经典(NPR-34284、CQ-4299713)。
 
 * 在[!UICONTROL 查看器预设编辑器]页面(CQ-4302043)的[!UICONTROL 行为]选项卡中缺少[!UICONTROL PANORAMICVIEW_AUTOLOTATE]修饰符标签。
 
@@ -270,7 +270,7 @@ Adobe Experience Manager6.4.8.2修复了以下问题。
 
 AEM Cumulative Fix Pack 6.4.8.1是自2020年3月AEM 6.4 Service Pack 8(6.4.8.0)正式上市以来，包含若干内部和客户修复的重要更新。
 
-AEM Cumulative Fix Pack 6.4.8.1取决于AEM 6.4 Service Pack 8。 因此，在安装AEM 6.4 Service Pack 8之后，必须安装AEM Cumulative Fix Pack 6.4.8.1包。
+AEM 累积修补程序包 6.4.8.1 依赖于 AEM 6.4 Service Pack 8。因此，在安装AEM 6.4 Service Pack 8之后，必须安装AEM Cumulative Fix Pack 6.4.8.1包。
 
 AEM 6.4.8.1的一些主要亮点是：
 
@@ -401,9 +401,9 @@ Adobe Experience Manager6.4.8.1修复了以下问题。
 
 执行以下步骤以在现有 AEM 6.4.8.0 实例上安装累积修补程序包：
 
-1. 单击[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-3.0.zip)链接以下载软件包。
+1. 单击 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-3.0.zip) 链接以下载包。
 
-1. 打开[包管理器](http://localhost:4502/crx/packmgr/index.jsp)并单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
+1. 打开[包管理器](http://localhost:4502/crx/packmgr/index.jsp)，并单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
 
 1. 选择包名称，然后单击&#x200B;**[!UICONTROL 安装]**。
 
@@ -413,7 +413,7 @@ Adobe Experience Manager6.4.8.1修复了以下问题。
 >
 >因此，建议在访问该实例之前先等待错误日志稳定下来。用户必须等待与卸载更新程序包相关的特定日志，才能确保安装成功。 这通常出现在 Safari 中，但也可能会间歇性发生在任何浏览器中。
 
-### 自动安装  {#auto-installation}
+### 自动安装 {#auto-installation}
 
 可通过两种方法将 AEM 6.4.8.3 自动安装到正在运行的实例上：
 
@@ -448,7 +448,7 @@ AEM 6.4.8.3包含新版本的Dynamic Media查看器(5.10.1)，该查看器支持
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] 在计划的累积修复包发布日期后一周 [!DNL Experience Manager] 内发布加载项包。
+>[!DNL Experience Manager Forms] 在计划的 [!DNL Experience Manager] 累积修补程序包发行日期后一周发布附加组件包。
 
 >[!NOTE]
 >
@@ -470,7 +470,7 @@ AEM 6.4.8.3包含新版本的Dynamic Media查看器(5.10.1)，该查看器支持
 
 用于AEM 6.4.8.3的Uber Jar位于[ Maven Central存储库](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.3/)中。
 
-要在Maven项目中使用Uber Jar，请参阅文章[如何使用Uber jar](../sites-developing/ht-projects-maven.md)，并在您的项目POM中包含以下依赖项：
+要在 Maven 项目中使用 Uber Jar，请参阅[如何使用 Uber Jar](../sites-developing/ht-projects-maven.md) 一文，并在项目 POM 中包含以下依赖项：
 
 ```shell
 <dependency>
@@ -489,10 +489,10 @@ AEM 6.4.8.3包含新版本的Dynamic Media查看器(5.10.1)，该查看器支持
 
 此部分列出了 AEM 6.4 中已移除或已弃用的功能和特性。
 
-| 区域 | 功能 | 替换 | 版本 |
+| 区域 | 功能 | 替换 | 版本号 |
 |---|---|---|---|
 | 资产 | 管理子资产的标记操作 | 无替换项 | AEM 6.4.2.0 |
-| 资产和 Creative Cloud 集成 | [AEM到Creative Cloud文件](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) 夹共享在AEM 6.2中引入，以便让创意用户能够访问AEM中的资产。在 Creative Cloud 应用程序中发布的新功能“Adobe 资产链接”提供了更佳的用户体验，能够直接从 Photoshop、InDesign 和 Illustrator 中轻松访问 AEM Assets。Adobe 不会再进一步增强文件夹共享功能。尽管AEM中包含该功能，但会强烈建议客户使用该替换。 | Adobe资产链接或桌面应用程序。 有关更多信息，请参阅 [AEM Creative Cloud 集成](/help/assets/aem-cc-integration-best-practices.md)一文。 | AEM 6.4.4.0 |
+| 资产和 Creative Cloud 集成 | AEM 6.2 中引入了 [AEM 到 Creative Cloud 的文件夹共享](https://docs.adobe.com/content/help/zh-Hans/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，以便创意用户可以从 AEM 访问资产。在 Creative Cloud 应用程序中发布的新功能“Adobe 资产链接”提供了更佳的用户体验，能够直接从 Photoshop、InDesign 和 Illustrator 中轻松访问 AEM Assets。Adobe 不会再进一步增强文件夹共享功能。尽管AEM中包含该功能，但会强烈建议客户使用该替换。 | Adobe资产链接或桌面应用程序。 有关更多信息，请参阅 [AEM Creative Cloud 集成](/help/assets/aem-cc-integration-best-practices.md)一文。 | AEM 6.4.4.0 |
 
 ## 已知问题 {#known-issues}
 
@@ -517,7 +517,7 @@ AEM 6.4.8.3 中包含的内容包列表
 * [AEM 6.4 发行说明](../release-notes/release-notes.md)
 * [AEM 产品页面](https://www.adobe.com/solutions/web-experience-management.html)
 * [AEM 6.4 文档](https://helpx.adobe.com/cn/support/experience-manager/6-4.html)
-* 订阅[Adobe优先级产品更新](https://www.adobe.com/subscription/priority-product-update.html)
+* 订阅 [Adobe 产品更新早知道](https://www.adobe.com/subscription/priority-product-update.html)
 
 ## 受限的网站 {#restricted-sites-new}
 

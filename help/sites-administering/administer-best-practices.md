@@ -1,18 +1,14 @@
 ---
 title: 最佳实践
-seo-title: 最佳实践
-description: 查找由Adobe工程和咨询团队编译的最佳实践，帮助管理员快速入门。
-seo-description: 查找由Adobe工程和咨询团队编译的最佳实践，帮助管理员快速入门。
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
+description: 了解由Adobe工程和咨询团队汇编的Adobe Experience Manager最佳做法，帮助管理员快速入门。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '537'
 ht-degree: 13%
 
 ---
@@ -52,8 +48,8 @@ ht-degree: 13%
    <td>许多处理用户档案都基于文件夹，因为视频、元数据、图像处理始终应用于文件夹。 此最佳实践文档描述了如何定义和设置文件夹层次结构，因为层次结构对内容的处理方式有很大影响。 </td> 
   </tr>
   <tr>
-   <td>整合Scene7和AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">将Scene7与AEM集成的最佳实践</a></td> 
+   <td>整合Dynamic Media经典和AEM</td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">将Dynamic Media经典与AEM集成的最佳实践</a></td> 
    <td><p>介绍何时打开轮询导入程序、如何测试集成以及何时使用内容浏览器还是直接上传到资产。</p> </td> 
   </tr>
   <tr>
@@ -62,8 +58,8 @@ ht-degree: 13%
    <td>在<a href="/help/assets/managing-image-presets.md">管理图像预设</a>的文档中，以下主题介绍了哪些图像预设以及有关选择图像预设选项的最佳实践。</td> 
   </tr>
   <tr>
-   <td>Dynamic Media与Scene7直接融合</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM整合与Dynamic Media</a></td> 
+   <td>Dynamic Media与Dynamic Media经典的直接整合</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Dynamic Media经典/AEM集成与Dynamic Media</a></td> 
    <td>描述何时最好使用Dynamic Media解决方案、何时将S7与AEM集成或何时同时使用两者。</td> 
   </tr>
  </tbody>

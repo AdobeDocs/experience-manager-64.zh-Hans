@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2779'
 ht-degree: 71%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 71%
 
 ## Adobe Campaign 新闻稿组件  {#adobe-campaign-newsletter-components}
 
-所有营销活动组件均遵循[电子邮件模板的最佳实践](/help/sites-administering/best-practices-for-email-templates.md)中列出的最佳实践，并且均基于 Adobe 标记语言 [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html)。
+所有营销活动组件均遵循[电子邮件模板的最佳实践](/help/sites-administering/best-practices-for-email-templates.md)中列出的最佳实践，并且均基于 Adobe 标记语言 [HTL](https://helpx.adobe.com/cn/experience-manager/htl/using/overview.html)。
 
 如果打开的新闻稿/电子邮件已配置为与 Adobe Campaign 集成，您应会在 **Adobe Campaign 新闻稿**&#x200B;部分看到以下组件：
 
 * 标题（营销活动）
 * 图像（营销活动）
 * 链接（营销活动）
-* Scene7 图像模板（营销活动）
+* Dynamic Media图像模板(活动)
 * 目标引用（营销活动）
 * 文本与图像（营销活动）
 * 文本与个性化（营销活动）
@@ -51,7 +51,7 @@ ht-degree: 71%
 
 您可以直接编辑&#x200B;**标题（营销活动）**&#x200B;组件。留空将使用页面标题。
 
-![chlimage_1-105](assets/chlimage_1-106.png)
+![chlimage_1-106](assets/chlimage_1-106.png)
 
 您可以配置以下各项：
 
@@ -181,13 +181,13 @@ ht-degree: 71%
 
 [Scene7图](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 像模板是分层的图像文件，其中的内容和属性可进行参数化以实现可变性。通过&#x200B;**图像模板**&#x200B;组件，您可以在新闻稿中使用 Scene7 模板，并更改模板参数的值。此外，您可以在参数中使用Adobe Campaign元数据变量，以便每个用户以个性化的方式体验图像。
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
 单击&#x200B;**编辑**&#x200B;可配置该组件。您可以配置本节中介绍的设置。 此Scene7图像模板详细描述在[Scene7图像模板组件](/help/assets/scene7.md#image-template)中。
 
 此外，参数面板列出了在 Scene7 中为模板定义的所有模板参数。对于其中的每个参数，您都可以调整值、插入变量，或将其重置为默认值。
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### 目标引用(活动){#targeted-reference-campaign}
 

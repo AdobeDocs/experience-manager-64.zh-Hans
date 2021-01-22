@@ -1,20 +1,20 @@
 ---
-title: 资产大小调整指南
+title: Assets 大小调整指南
 description: '确定用于估计部署AEM Assets所需的基础架构和资源的有效指标的最佳实践。 '
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 
-# 资产大小调整指南{#assets-sizing-guide}
+# Assets 大小调整指南 {#assets-sizing-guide}
 
 在调整Adobe Experience Manager(AEM)资产实施的环境大小时，务必确保在磁盘、CPU、内存、IO和网络吞吐量方面有足够的可用资源。 调整这些资源中的许多资源的大小需要了解要加载到系统中的资产数量。 如果没有更好的指标，您可以将现有库的大小除以库的年龄，以查找资产的创建速率。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 1. 确定要加载到系统中的资产的大小和数量。
 1. 获取要上传到AEM的资产的代表性示例。 例如，如果您计划将PSD、JPG、AI和PDF文件加载到系统中，您需要每种文件格式的多个范例图像。 此外，这些范例应代表不同的文件大小和复杂的图像。
 1. 定义要使用的演绎版。
-1. 在AEM中使用ImageMagick或Adobe的Creative Cloud应用程序创建再现。 除了用户指定的演绎版之外，还可创建现成的演绎版。 对于实施Scene7的用户，可以使用IC二进制生成要存储在AEM中的PTIFF再现。
+1. 在AEM中使用ImageMagick或Adobe的Creative Cloud应用程序创建再现。 除了用户指定的演绎版之外，还可创建现成的演绎版。 对于实施Dynamic Media经典的用户，可以使用IC二进制生成要存储在AEM中的PTIFF再现。
 1. 如果您计划使用子资产，请为相应的文件类型生成子资产。 请参阅有关如何从InDesign文件生成子资产页面或从Illustrator图层生成PNG/PDF文件的在线文档。
 1. 将输出图像、演绎版和子资产的大小与原始图像进行比较。 它允许您在加载系统时生成预期的增长因子。 例如，如果您在处理1GB资产后生成合并大小为3GB的演绎版和子资产，则演绎版增长系数为3。
 1. 确定在系统中维护资产版本的最长时间。

@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
-source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 82%
+source-wordcount: '310'
+ht-degree: 72%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 82%
   <tr>
    <td>动态图像处理</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">动态图像处理最佳实践</a></td> 
-   <td><p>介绍当您使用 Dynamic Media 功能或与 Scene7 集成时，如何锐化图像以获得最佳效果，以及优化图像质量的最佳方法是什么。 </p> </td> 
+   <td><p>介绍在使用Dynamic Media功能或与Dynamic Media集成时，如何锐化图像以获得最佳效果以及优化图像质量的最佳方法。 </p> </td> 
   </tr>
   <tr>
    <td>多语言资产</td> 

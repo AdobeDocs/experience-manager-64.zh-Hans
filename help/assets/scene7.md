@@ -1,18 +1,14 @@
 ---
 title: 将Dynamic Media经典功能添加到页面
-seo-title: 将Dynamic Media经典功能添加到页面
-description: 了解如何将Dynamic Media经典功能和组件添加到AEM页面。
-seo-description: 了解如何将Dynamic Media经典功能和组件添加到AEM页面。
-uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
+description: 了解Dynamic Media经典组件以及如何将它们添加到AEM页面。
 contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: managing-assets
-discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 28e552f065d38225226d757c0af00d86d9ed8e07
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '2873'
 ht-degree: 26%
 
 ---
@@ -130,7 +126,7 @@ AEM中提供以下Dynamic Media经典组件：
 
 ### 所有Dynamic Media经典组件{#settings-common-to-all-scene-components}的通用设置
 
-尽管配置选项不同，但以下各项对于所有[!UICONTROL Dynamic Media经典]组件是通用的：
+尽管配置选项不同，但以下是所有[!UICONTROL Dynamic Media经典]组件的通用选项：
 
 * **[!UICONTROL 文件]**
 引用浏览到要引用的文件。文件引用显示资产URL，但不一定是完整的Dynamic Media经典URL（包括URL命令和参数）。 不能在此字段中添加Dynamic Media经典URL命令和参数。 必须使用组件中的相应功能才能添加这些命令和参数。

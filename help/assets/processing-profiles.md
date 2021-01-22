@@ -1,19 +1,15 @@
 ---
 title: 用于处理元数据、图像和视频的用户档案
-seo-title: 用于处理元数据、图像和视频的用户档案
 description: 用户档案一组规则，围绕要应用于上传到文件夹的资产的选项。 指定要应用于您上传的视频资产的元数据用户档案和视频编码用户档案。 对于图像资产，您还可以指定要应用于图像资产的图像用户档案，以便对图像资产进行正确裁剪。
-seo-description: 用户档案一组规则，围绕要应用于上传到文件夹的资产的选项。 指定要应用于您上传的视频资产的元数据用户档案和视频编码用户档案。 对于图像资产，您还可以指定要应用于图像资产的图像用户档案，以便对图像资产进行正确裁剪。
-uuid: d95978b9-ffa4-4895-854f-3f7bd396e019
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 347a90ae-a0c5-44f5-8e80-edc3edc1386f
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 10%
+source-wordcount: '1378'
+ht-degree: 11%
 
 ---
 
@@ -106,7 +102,7 @@ ht-degree: 10%
 
    ![Scene7批上传组件](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. 在&#x200B;**[!UICONTROL 批量上传到Scene7—步骤属性]**&#x200B;对话框中，设置以下内容：
+1. 在&#x200B;**[!UICONTROL 批量上传到Scene7步骤属性]**&#x200B;对话框中，设置以下内容：
    * 在&#x200B;**[!UICONTROL 标题]**&#x200B;和&#x200B;**[!UICONTROL 说明]**&#x200B;文本字段中，根据需要输入新标题和作业说明。
    * 如果处理函数将前进到下一步，请选择&#x200B;**[!UICONTROL 处理函数高级]**。
    * 在&#x200B;**[!UICONTROL 超时]**&#x200B;字段中，输入外部进程超时（秒）。
@@ -116,7 +112,7 @@ ht-degree: 10%
 
    ![属性对话框](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. 在&#x200B;**[!UICONTROL 批量上传到Scene7-步骤属性]**&#x200B;对话框的右上角，点按&#x200B;**[!UICONTROL 完成]**。
+1. 在&#x200B;**[!UICONTROL 批量上传到Scene7步骤属性]**&#x200B;对话框的右上角，点按&#x200B;**[!UICONTROL 完成]**。
 
 1. 在Scene7的右上角：重新处理资产工作流模型页，点按&#x200B;**[!UICONTROL 同步]**。 当您看到&#x200B;**[!UICONTROL 已同步]**&#x200B;时，工作流运行时模型已成功同步，可以重新处理文件夹中的资产。
 

@@ -1,18 +1,14 @@
 ---
 title: 视频
-seo-title: 视频
-description: 了解如何在Dynamic Media使用视频
-seo-description: 了解如何在Dynamic Media使用视频
-uuid: 15e89f88-2787-472d-bbb6-d370bbab9228
+description: 了解如何在Dynamic Media使用视频。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
-discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '10456'
+source-wordcount: '10396'
 ht-degree: 24%
 
 ---
@@ -162,9 +158,9 @@ Dynamic Media支持MP4 H.264视频的移动视频播放。您可以在以下位�
 * 配置视频播放器以满足您的品牌需求。
 * 使用简单的 URL 或嵌入代码将视频集成到您的网站、移动站点或移动应用程序。
 
-请参阅[动态视频播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)。
+<!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-另请参阅《Scene7 查看器参考指南》中的“[关于 HTML5 查看器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)”。
+另请参阅《AdobeDynamic Media查看器参考指南》中的[关于HTML5查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only)。
 
 ## 最佳实践：使用HTML5视频查看器{#best-practice-using-the-html-video-viewer}
 
@@ -193,76 +189,76 @@ HLS（HTTP实时流）是自适应视频流播放的Apple标准，可根据网�
 
 渐进式视频通过下载视频并将其本地存储到用户的桌面屏幕或移动设备来交付。
 
-下表介绍使用Scene7视频查看器在桌面计算机和移动设备上播放视频的设备、浏览器和方法。
+下表介绍使用Dynamic Media视频查看器在桌面计算机和移动设备上播放视频的设备、浏览器和方法。
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>设备</strong></td> 
-   <td><strong>浏览器</strong></td> 
-   <td><strong>视频播放模式</strong></td> 
-  </tr> 
+   <td><strong>设备</strong></td>
+   <td><strong>浏览器</strong></td>
+   <td><strong>视频播放模式</strong></td>
+  </tr>
   <tr> 
-   <td>桌面设备</td> 
-   <td>Internate Explorer 9和10</td> 
-   <td>渐进式下载。</td> 
-  </tr> 
+   <td>桌面设备</td>
+   <td>Internate Explorer 9和10</td>
+   <td>渐进式下载。</td>
+  </tr>
   <tr> 
-   <td>桌面设备</td> 
-   <td>Internate Explorer 11+</td> 
-   <td>在Windows 8和Windows 10上——只要请求HLS，就强制使用HTTPS。 已知限制：HLS上的HTTP在浏览器／操作系统组合<br /> <br /> On Windows 7 - Progressive download中不工作。 使用标准逻辑选择HTTP与HTTPS协议。</td> 
-  </tr> 
+   <td>桌面设备</td>
+   <td>Internate Explorer 11+</td>
+   <td>在Windows 8和Windows 10上——只要请求HLS，就强制使用HTTPS。 已知限制：HLS上的HTTP在浏览器／操作系统组合<br /> <br /> On Windows 7 - Progressive download中不工作。 使用标准逻辑选择HTTP与HTTPS协议。</td>
+  </tr>
   <tr> 
-   <td>桌面设备</td> 
-   <td>Firefox 23-44</td> 
-   <td>渐进式下载。</td> 
-  </tr> 
+   <td>桌面设备</td>
+   <td>Firefox 23-44</td>
+   <td>渐进式下载。</td>
+  </tr>
   <tr> 
-   <td>桌面设备</td> 
-   <td>Firefox 45或更高版本</td> 
-   <td>HLS视频流。</td> 
-  </tr> 
+   <td>桌面设备</td>
+   <td>Firefox 45或更高版本</td>
+   <td>HLS视频流。</td>
+  </tr>
   <tr> 
-   <td>桌面设备</td> 
-   <td>铬黄</td> 
-   <td>HLS视频流。</td> 
-  </tr> 
+   <td>桌面设备</td>
+   <td>铬黄</td>
+   <td>HLS视频流。</td>
+  </tr>
   <tr> 
-   <td>桌面设备</td> 
-   <td>Safari(Mac)</td> 
-   <td>HLS视频流。</td> 
-  </tr> 
+   <td>桌面设备</td>
+   <td>Safari(Mac)</td>
+   <td>HLS视频流。</td>
+  </tr>
   <tr> 
-   <td>移动设备</td> 
-   <td>Chrome（Android 6或更早版本）</td> 
-   <td>渐进式下载。</td> 
-  </tr> 
+   <td>移动设备</td>
+   <td>Chrome（Android 6或更早版本）</td>
+   <td>渐进式下载。</td>
+  </tr>
   <tr> 
-   <td>移动设备</td> 
-   <td>Chrome（Android 7或更高版本）</td> 
-   <td>HLS视频流。</td> 
-  </tr> 
+   <td>移动设备</td>
+   <td>Chrome（Android 7或更高版本）</td>
+   <td>HLS视频流。</td>
+  </tr>
   <tr> 
-   <td>移动设备</td> 
-   <td>Android（默认浏览器）</td> 
-   <td>渐进式下载。</td> 
-  </tr> 
+   <td>移动设备</td>
+   <td>Android（默认浏览器）</td>
+   <td>渐进式下载。</td>
+  </tr>
   <tr> 
-   <td>移动设备</td> 
-   <td>Safari(iOS)</td> 
-   <td>HLS视频流。</td> 
-  </tr> 
+   <td>移动设备</td>
+   <td>Safari(iOS)</td>
+   <td>HLS视频流。</td>
+  </tr>
   <tr> 
-   <td>移动设备</td> 
-   <td>Chrome(iOS)</td> 
-   <td>HLS视频流。</td> 
-  </tr> 
+   <td>移动设备</td>
+   <td>Chrome(iOS)</td>
+   <td>HLS视频流。</td>
+  </tr>
   <tr> 
-   <td>移动设备</td> 
-   <td>黑莓</td> 
-   <td>HLS视频流。</td> 
-  </tr> 
- </tbody> 
+   <td>移动设备</td>
+   <td>黑莓</td>
+   <td>HLS视频流。</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Dynamic Media视频解决方案的架构{#architecture-of-dynamic-media-video-solution}
@@ -426,7 +422,7 @@ HLS（HTTP实时流）是自适应视频流播放的Apple标准，可根据网�
    <td><p>编码</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>编码</p> </td> 
@@ -902,7 +898,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 1. 在列出顶级已发布视频的表中，点按视频名称以播放视频，还可以查看该视频的受众保留（流失）报表。
 
-### 根据您使用HTML5查看器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}创建的视频查看器查看视频报告
+### 根据您使用Dynamic MediaHTML5查看器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}创建的视频查看器查看视频报告
 
 如果您使用的是Dynamic Media提供的现成视频查看器，或者您基于现成视频查看器创建了自定义查看器预设，则无需执行任何其他步骤即可视图视频报告。 但是，如果您基于HTML5查看器SDK API创建了自己的视频查看器，请使用以下步骤确保视频查看器将跟踪事件发送到Dynamic Media视频报表。
 
@@ -963,7 +959,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
       ```
    appMeasurementBridge 对象具备内置的跟踪功能。但是，您可以提供自己的对象来支持多个跟踪系统或其他功能。
 
-   有关详细信息，请参阅&#x200B;*Scene7HTML5查看器SDK用户指南*&#x200B;中的&#x200B;*使用TrackingManager组件*，可从[Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)下载。
+<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## 向视频{#adding-captions-to-video}添加字幕
 
@@ -977,7 +973,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 Dynamic Media有能力将字幕文件转换为JSON（JavaScript对象表示法）格式。 此转换意味着您可以将JSON文本作为视频的隐藏但完整的记录嵌入到网页中。 然后，搜索引擎可以爬网和索引内容，使视频更容易被发现，并为客户提供有关视频内容的更多详细信息。
 
-有关在URL中使用JSON函数的详细信息，请参阅&#x200B;*Scene7图像服务API帮助*&#x200B;中的[服务静态（非图像）内容](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html)。
+有关在URL中使用JSON函数的详细信息，请参阅&#x200B;*Dynamic Media图像服务和渲染API帮助*&#x200B;中的[服务静态（非图像）内容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
 
 **要向视频添加字幕或字幕**:
 
@@ -1180,4 +1176,3 @@ Cost-efficient access to rapidly evolving technology.
 1. 成功上传图像后，在&#x200B;**[!UICONTROL 更改缩略图]**&#x200B;页面中，点按&#x200B;**[!UICONTROL 保存更改]**。
 
    自定义缩略图会添加到您的视频中。
-

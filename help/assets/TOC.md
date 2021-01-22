@@ -7,15 +7,15 @@ user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 创建、管理、交付和优化数字资产。
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 48%
+source-wordcount: '723'
+ht-degree: 52%
 
 ---
 
 
-# Assets 指南 {#assets}
+# Assets 指南  {#assets}
 
 + [资产用户指南](home.md)
 + [AEM 6.4 Assets发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
@@ -37,7 +37,7 @@ ht-degree: 48%
    + [Experience League 发布的 Dynamic Media 新闻稿](dynamic-media-newsletter.md)
    + [设置 Dynamic Media](administering-dynamic-media.md)
    + [使用 Dynamic Media](dynamic-media.md)
-   + [配置Dynamic Media-Scene7模式](config-dms7.md)
+   + [配置 Dynamic Media - Scene7 模式](config-dms7.md)
    + [配置Dynamic Media-混合模式](config-dynamic.md)
    + [Dynamic Media-Scene7模式疑难解答](troubleshoot-dms7.md)
    + [管理 Dynamic Media 资产](managing-assets.md)
@@ -50,7 +50,7 @@ ht-degree: 48%
    + [Dynamic Media 图像配置文件](image-profiles.md)
    + [智能图像处理](imaging-faq.md)
    + [视频](s7-video.md)
-   + [将Scene7功能添加到您的页面](scene7.md)
+   + [将Dynamic Media经典功能添加到您的页面](scene7.md)
    + [HTTP2 内容交付](http2.md)
    + [传送 Dynamic Media 资产](delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中激活热链接保护](hotlink-protection.md)
@@ -109,9 +109,9 @@ ht-degree: 48%
    + [元数据配置文件](metadata-profiles.md)
    + [Digital Rights Management资产](drm.md)
    + [使用资产分析演示包](touch-ui-using-demo-package-for-asset-insights.md)
-   + [资产卸载最佳实践](assets-offloading-best-practices.md)
+   + [Assets 卸载最佳实践](assets-offloading-best-practices.md)
    + [资产文件格式最佳实践](assets-file-format-best-practices.md)
-   + [资产监控最佳实践](assets-monitoring-best-practices.md)
+   + [Assets 监控最佳实践](assets-monitoring-best-practices.md)
    + [Camera Raw 支持](camera-raw.md)
    + [使用 Apache Tika 检测 MIME 类型的资产](detect-asset-mime-type-with-tika.md)
    + [图像转码库](imaging-transcoding-library.md)
@@ -121,7 +121,7 @@ ht-degree: 48%
    + [添加水印](watermarking.md)
    + [批量元数据导入和导出](metadata-import-export.md)
    + [资产模板](asset-templates.md)
-   + [AEM到Creative Cloud文件夹共享最佳实践](aem-cc-folder-sharing-best-practices.md)
+   + [AEM 至 Creative Cloud 文件夹共享最佳实践](aem-cc-folder-sharing-best-practices.md)
    + [文件夹元数据架构](folder-metadata-schema.md)
    + [管理智能标记](managing-smart-tags.md)
 + Brand Portal {#brandportal}
@@ -169,7 +169,7 @@ ht-degree: 48%
 + 3D资产{#three-d}
    + [AEM 3D发行说明](../release-notes/aem3d-release-notes.md)
    + [使用 3D 资产](assets-3d.md)
-   + [安装和配置AEM 3D](install-config-3d.md)
+   + [安装和配置 AEM 3D](install-config-3d.md)
    + [高级配置设置](advanced-config-3d.md)
    + [使用Adobe Dimension资产](working-dimension-assets.md)
    + [关于 AEM 中 3D 资产的上传和处理](upload-processing-3d-assets.md)

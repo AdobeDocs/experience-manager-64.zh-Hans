@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '274'
 ht-degree: 25%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->本文档描述了Dynamic Media的功能，这些功能直接集成到AEM中。 如果您使用集成到AEM的Dynamic Media经典(以前称为Scene7)，请参阅[Dynamic Media经典集成文档](/help/sites-administering/scene7.md)。
+>本文档描述了Dynamic Media的功能，这些功能直接集成到AEM中。 如果您正在将Dynamic Media经典集成到AEM中，请参阅[Dynamic Media经典集成文档](/help/sites-administering/scene7.md)。
 >
 >请参阅[双重使用方案](/help/sites-administering/scene7.md#dual-use-scenario)，以了解您可能希望将AEM与Dynamic Media经典以及Dynamic Media集成在一起的时间。
 

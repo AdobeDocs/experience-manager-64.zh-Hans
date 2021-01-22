@@ -1,19 +1,15 @@
 ---
 title: 工具控制台
-seo-title: 工具控制台
-description: 了解整个 AEM 中的不同工具控制台。
-seo-description: 了解整个 AEM 中的不同工具控制台。
-uuid: d01382f8-0c8f-4d76-9271-bed9e34b3b4b
+description: 了解Adobe Experience Manager各地不同的工具控制台。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 2bf8496d-a485-4b39-a6c9-07222b66d0cd
 translation-type: tm+mt
-source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 36%
+source-wordcount: '875'
+ht-degree: 34%
 
 ---
 

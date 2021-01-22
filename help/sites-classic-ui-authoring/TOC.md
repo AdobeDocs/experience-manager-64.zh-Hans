@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4经典UI创作用户指南
 breadcrumb-title: 经典UI创作指南
 user-guide-description: 本指南介绍在经典用户界面中在AEM中进行创作的概念。
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 85%
+source-wordcount: '319'
+ht-degree: 83%
 
 ---
 
@@ -86,7 +86,7 @@ ht-degree: 85%
    + [传送 Dynamic Media 资产](dynamic-media-assets-delivering.md)
    + [使用 Autodesk Maya 和 Mental Ray 设置标准舞台](classicui-stages-aem3d-ad-mr.md)
    + [将 Dynamic Media 资产添加到页面](dynamic-media-assets-adding-to-page.md)
-   + [将 Scene7 功能添加到您的页面](manage-assets-classic-s7.md)
+   + [将Dynamic Media经典(Scene7)功能添加到页面](manage-assets-classic-s7.md)
    + [使用 Dynamic Media](dynamic-media-assets.md)
    + [使用 3D 资产](classicui-3dassets.md)
    + [视频](manage-assets-classic-s7-video.md)

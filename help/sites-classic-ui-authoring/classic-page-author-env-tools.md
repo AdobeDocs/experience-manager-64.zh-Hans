@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -61,7 +61,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * [图像](#finding-images)
 * [文档](#finding-documents)
 * [电影](#finding-movies)
-* [Scene 7 媒体浏览器](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Dynamic Media浏览器](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [页面](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 * [段落](#referencing-paragraphs-from-other-pages)
 * [产品](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)

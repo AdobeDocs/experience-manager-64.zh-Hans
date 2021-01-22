@@ -1,18 +1,14 @@
 ---
 title: 配置 Dynamic Media - Scene7 模式
-seo-title: 配置 Dynamic Media - Scene7 模式
-description: 有关如何配置Dynamic Media-Scene7模式的信息。
-seo-description: 有关如何配置Dynamic Media-Scene7模式的信息。
-uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
+description: 了解如何配置Dynamic Media-Scene7模式。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '5577'
+source-wordcount: '5596'
 ht-degree: 4%
 
 ---
@@ -88,7 +84,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    >[!NOTE]
    >
-   >在您收到具有Dynamic Media凭据的供应电子邮件后，请[登录](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)Dynamic Media经典以更改您的密码。 供应电子邮件中提供的密码是系统生成的，并且仅用于临时密码。 请务必更新密码，以便使用正确的凭据设置Dynamic Media云服务。
+   >在您收到具有Dynamic Media凭据的供应电子邮件后，请打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户以更改密码。 供应电子邮件中提供的密码是系统生成的，并且仅用于临时密码。 请务必更新密码，以便使用正确的凭据设置Dynamic Media云服务。
 
 1. 如果连接成功，您还可以设置以下内容：
 
@@ -109,7 +105,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 1. 点按&#x200B;**[!UICONTROL 保存]**。
 1. 要在发布Dynamic Media内容前安全预览内容，您需要“”AEM允许列表作者实例以连接到Dynamic Media:
 
-   * 登录您的Dynamic Media经典帐户：[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。 您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
+   * 打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录您的帐户。 您的凭据和登录详细信息是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
    * 在页面右上方的导航栏上，点按&#x200B;**[!UICONTROL 设置>应用程序设置>发布设置>图像服务器]**。
    * 在“图像服务器发布”页面的“发布上下文”下拉列表中，选择&#x200B;**[!UICONTROL 测试图像服务]**。
    * 对于“客户端地址筛选器”，点按&#x200B;**[!UICONTROL 添加]**。
@@ -133,7 +129,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 当您处于运行模式&#x200B;**dynamicmedia_scene7**&#x200B;时，您可以使用Dynamic Media经典(Scene7)用户界面更改您的Dynamic Media设置。
 
-以上一些任务要求您在此处登录Dynamic Media经典：[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+以上某些任务要求您打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
 
 设置和配置任务包括：
 
@@ -189,7 +185,7 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 配置默认颜色属性以在请求图像时启用颜色校正：
 
-1. [使用在设置过](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 程中提供的凭据登录Dynamic Media类。导航到&#x200B;**[!UICONTROL 设置>应用程序设置]**。
+1. 打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后使用在配置过程中提供的凭据登录您的帐户。 导航到&#x200B;**[!UICONTROL 设置>应用程序设置]**。
 1. 展开&#x200B;**[!UICONTROL 发布设置]**&#x200B;区域，然后选择&#x200B;**[!UICONTROL 图像服务器]**。设置发布实例的默认设置时，将&#x200B;**[!UICONTROL 发布上下文]**&#x200B;设置为&#x200B;**[!UICONTROL 图像提供]**。
 1. 滚动到需要更改的属性，例如&#x200B;**[!UICONTROL 颜色管理属性]**&#x200B;区域中的属性。
 
@@ -319,9 +315,9 @@ Dynamic Media颜色管理允许您对资产进行颜色校正。 通过颜色校
 
 **配置默认命名：**
 
-1. 登录您的Dynamic Media经典(Scene7)帐户：[www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录您的帐户。
 
-   您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
+   您的凭据和登录详细信息是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
 1. 在页面顶部附近的导航栏上，点按&#x200B;**[!UICONTROL 设置>应用程序设置>批集预设>默认命名]。**
 1. 选择&#x200B;**[!UICONTROL 查看表单]**&#x200B;或&#x200B;**[!UICONTROL 查看代码]**，以指定要查看的方式并输入有关每个元素的信息。
@@ -353,9 +349,9 @@ Dynamic Media使用批量集预设将资产组织为一组图像（替代图像�
 
 **要创建批集预设，请执行以下操作：**
 
-1. 登录您的Dynamic Media经典(Scene7)帐户：[www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录您的帐户。
 
-   您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
+   您的凭据和登录详细信息是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
 1. 在页面顶部附近的导航栏上，点按&#x200B;**[!UICONTROL 设置>应用程序设置>批集预设>批集预设]。**
 
@@ -408,9 +404,9 @@ spin-01-01
 
 **要为自动生成2D旋转集创建批集预设，请执行以下操作：**
 
-1. 登录您的Dynamic Media经典(Scene7)帐户：[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 打开[Dynamic Media经典桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录您的帐户。
 
-   您的凭据和登录是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
+   您的凭据和登录详细信息是在设置时由Adobe提供的。 如果您没有此信息，请与技术支持联系。
 
 1. 在页面顶部附近的导航栏上，点按&#x200B;**[!UICONTROL 设置>应用程序设置>批集预设>批集预设]**。
 

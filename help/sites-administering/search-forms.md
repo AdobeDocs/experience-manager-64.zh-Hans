@@ -1,18 +1,14 @@
 ---
 title: 配置搜索表单
-seo-title: 配置搜索表单
 description: 了解如何配置搜索Forms。
-seo-description: 了解如何配置搜索Forms。
-uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2062'
 ht-degree: 13%
 
 ---
@@ -64,9 +60,9 @@ ht-degree: 13%
 
    此配置定义在资产浏览器中（编辑页面时）搜索产品时可用的选项。
 
-* **页面编辑器(Scene7搜索**):
+* **页面编辑(Dynamic Media经典 [搜索，] 前Scene7)**:
 
-   此配置定义在资产浏览器（编辑页面时）中搜索Scene7资源时可用的选项。
+   此配置定义在资产浏览器（编辑页面时）中搜索Dynamic Media经典资源时可用的选项。
 
 * **站点管理员搜索边栏**:
 
@@ -114,7 +110,7 @@ ht-degree: 13%
    <th>设置</th> 
   </tr> 
   <tr> 
-   <td>分析 </td> 
+   <td>Analytics </td> 
    <td>显示以分析为后盾的数据时，站点浏览器中的搜索／过滤功能。 分析搜索过滤器加载以匹配映射的自定义分析列。</td> 
    <td> 
     <ul> 
@@ -396,7 +392,7 @@ ht-degree: 13%
 
 * **选项路径**
 
-   用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择&#x200B;**+**&#x200B;图标后，将选择添加到有效选项列表（然后根据需要删除&#x200B;**-**&#x200B;图标）。
+   用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择&#x200B;**+**&#x200B;图标后，将选择添加到有效选项列表（如果需要，将&#x200B;**-**&#x200B;图标删除）。
 
    这些选项是用户创建的内容节点，其结构如下：
 
@@ -440,7 +436,7 @@ ht-degree: 13%
 1. [打开要更](#creating-opening-a-customized-configuration) 新的自定义配置。
 1. 如果要添加新字段，请打开&#x200B;**选择谓词**&#x200B;选项卡，并将所需的谓词拖动到所需位置。 例如，**日期范围谓词**:
 
-   ![chlimage_1-376](assets/chlimage_1-375.png)
+   ![chlimage_1-375](assets/chlimage_1-375.png)
 
 1. 取决于：
 
@@ -453,7 +449,7 @@ ht-degree: 13%
       选择谓词字段（在右侧），然后打开&#x200B;**设置**&#x200B;选项卡。
    例如，**日期范围谓词**&#x200B;的设置：
 
-   ![chlimage_1-375](assets/chlimage_1-376.png)
+   ![chlimage_1-376](assets/chlimage_1-376.png)
 
 1. 根据需要进行更改，然后使用&#x200B;**完成**&#x200B;进行确认。
 

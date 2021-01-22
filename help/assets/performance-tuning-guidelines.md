@@ -3,9 +3,9 @@ title: 资产性能调整指南
 description: 重点介绍AEM配置、对硬件、软件和网络组件进行更改，以消除瓶颈并优化AEM Assets的性能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3202'
+source-wordcount: '3206'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ Adobe建议启用HTTPS，因为许多公司都有防火墙来监听HTTP通信，
 
 ### DAM更新资产配置{#dam-update-asset-configuration}
 
-DAM更新资产工作流包含为任务配置的完整步骤套件，如Scene7PTIFF生成和InDesign Server集成。 但是，大多数用户可能不需要执行以下几个步骤。 Adobe建议您创建DAM更新资产工作流模型的自定义副本，并删除任何不必要的步骤。 在这种情况下，请更新DAM更新资产的启动程序以指向新模型。
+DAM更新资产工作流包含为任务配置的完整步骤套件，如Dynamic Media经典PTIFF生成和InDesign Server集成。 但是，大多数用户可能不需要执行以下几个步骤。 Adobe建议您创建DAM更新资产工作流模型的自定义副本，并删除任何不必要的步骤。 在这种情况下，请更新DAM更新资产的启动程序以指向新模型。
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ DAM更新资产工作流包含为任务配置的完整步骤套件，如Scene7PT
 
 许多站点客户实现一个图像servlet，在请求图像时调整大小和裁切图像，这会给发布实例增加额外的负载。 但是，只要可以缓存这些图像，挑战就可以缓解。
 
-另一种方法是使用Scene7技术完全放弃图像处理。 此外，您还可以部署Brand Portal，它不仅负责AEM基础架构的再现生成，还负责整个发布层。
+另一种方法是使用Dynamic Media经典技术完全放弃图像处理。 此外，您还可以部署Brand Portal，它不仅负责AEM基础架构的再现生成，还负责整个发布层。
 
 #### ImageMagick {#imagemagick}
 

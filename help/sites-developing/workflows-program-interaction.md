@@ -1,18 +1,14 @@
 ---
 title: 以编程方式与工作流交互
-seo-title: 以编程方式与工作流交互
-description: 'null'
-seo-description: 'null'
-uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
+description: 了解如何使用API和脚本管理工作流并与工作流进行编程交互。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
-source-git-commit: 1e7dae08d9f7a4c06c678e33446a1bcb7c2db5f5
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2015'
 ht-degree: 0%
 
 ---
@@ -249,7 +245,7 @@ REST API支持以下操作：
   </tr> 
   <tr> 
    <td><code>DELETE</code></td> 
-   <td>删除模型。 为了解决防火墙／代理问题，<code>POST</code>中包含值<code>DELETE</code>的<code>X-HTTP-Method-Override</code>头条目的&lt;a0/&gt;也将作为<code>DELETE</code>请求接受。</td> 
+   <td>删除模型。 为了解决防火墙／代理问题，<code>POST</code>中包含值<code>DELETE</code>的<code>X-HTTP-Method-Override</code>头条目的也将作为<code>DELETE</code>请求接受。</td> 
   </tr> 
  </tbody> 
 </table>

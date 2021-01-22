@@ -1,26 +1,22 @@
 ---
-title: 与Dynamic Media经典(Scene7)集成
-seo-title: 与Dynamic Media经典(Scene7)集成
+title: 与Dynamic Media经典集成
 description: 了解如何将AEM与Dynamic Media经典相集成。
-seo-description: 了解如何将AEM与Dynamic Media经典相集成。
-uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5491'
+source-wordcount: '5456'
 ht-degree: 2%
 
 ---
 
 
-# 与Dynamic Media经典(Scene7)集成{#integrating-with-dynamic-media-classic-scene}
+# 与Dynamic Media经典{#integrating-with-dynamic-media-classic-scene}集成
 
-[Adobe](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Dynamic MediaClassics是一种托管解决方案，用于管理、增强、发布富媒体资产并将富媒体资产交付到Web、移动、电子邮件以及连接Internet的显示屏和印刷品。
+AdobeDynamic Media经典是用于管理、增强、发布和将富媒体资产交付到Web、移动、电子邮件以及连接Internet的显示屏和印刷品的托管解决方案。
 
 要使用Dynamic Media经典，您需要配置云配置，以便Dynamic Media经典和AEM Assets能够相互交互。 本文档介绍如何配置AEM和Dynamic Media经典。
 
@@ -363,7 +359,7 @@ Adobe建议您通过让根文件夹仅指向子文件夹而不是整个公司来
 
 ### 向Dynamic Media经典上传工作流{#adding-configurable-timeout-to-scene-upload-workflow}添加可配置超时
 
-当AEM实例配置为通过Dynamic Media经典(Scene7)处理视频编码时，默认情况下，任何上传作业都有35分钟超时。 要适应可能运行时间较长的视频编码作业，可以配置此设置：
+默认情况下，当AEM实例配置为通过Dynamic Media经典处理视频编码时，任何上传作业都会出现35分钟超时。 要适应可能运行时间较长的视频编码作业，可以配置此设置：
 
 1. 导航到&#x200B;**http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**。
 

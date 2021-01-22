@@ -1,19 +1,15 @@
 ---
 title: 视频
-seo-title: 视频
 description: Assets 提供了集中式视频资产管理功能，您可以将视频直接上传到 Assets 以自动编码为 Scene7，并直接从 Assets 访问 Scene7 视频以进行页面创作。
-seo-description: Assets 提供了集中式视频资产管理功能，您可以将视频直接上传到 Assets 以自动编码为 Scene7，并直接从 Assets 访问 Scene7 视频以进行页面创作。
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 47%
+source-wordcount: '1707'
+ht-degree: 46%
 
 ---
 

@@ -3,9 +3,9 @@ title: 将资产批量迁移到Adobe Experience Manager资产
 description: 如何将资产引入AEM、应用元数据、生成演绎版并将其激活以发布实例。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1791'
 ht-degree: 11%
 
 ---
@@ -79,7 +79,7 @@ Adobe的Managed Services团队使用一种名为Glutton的工具将数据加载�
 
 ### 处理演绎版{#process-renditions}
 
-在将资产加载到系统后，您需要通过DAM更新资产工作流来处理这些资产，以提取元数据并生成演绎版。 在执行此步骤之前，您需要重复和修改DAM更新资产工作流以满足您的需求。 您可能不需要默认工作流中的某些步骤，如Scene7PTIFF生成或InDesign服务器集成。
+在将资产加载到系统后，您需要通过DAM更新资产工作流来处理这些资产，以提取元数据并生成演绎版。 在执行此步骤之前，您需要重复和修改DAM更新资产工作流以满足您的需求。 您可能不需要默认工作流中的某些步骤，如Dynamic Media经典PTIFF生成或InDesign服务器集成。
 
 根据需要配置工作流后，您有两个选项可执行该工作流：
 

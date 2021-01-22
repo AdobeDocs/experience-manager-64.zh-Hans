@@ -1,18 +1,14 @@
 ---
 title: Dynamic Media视频用户档案
-seo-title: Dynamic Media视频用户档案
-description: 'Dynamic Media 附带预定义的自适应视频编码配置文件。此现成用户档案中的设置经过优化，可为客户提供最佳的观看体验。 '
-seo-description: 'Dynamic Media 附带预定义的自适应视频编码配置文件。此现成用户档案中的设置经过优化，可为客户提供最佳的观看体验。 '
-uuid: cfb498f8-44a0-4d94-99b0-fed7c27f575b
+description: 'Dynamic Media提供预定义的自适应视频编码用户档案。 此现成用户档案中的设置经过优化，可为客户提供最佳视频观看体验。 '
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: b893f366-279a-4872-9413-77626d3387ea
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3068'
 ht-degree: 39%
 
 ---
@@ -202,7 +198,7 @@ Dynamic Media已经附带了预定义的自适应视频编码用户档案，该�
    * 重复第 5-10 步来创建其他编码预设。
    * 在页面的右上角，点按保 **[!UICONTROL 存]** ，以保存配置文件。
 
-## 使用自定义添加的视频编码参数{#using-custom-added-video-encoding-parameters}
+## 使用添加的自定义视频编码参数 {#using-custom-added-video-encoding-parameters}
 
 您可以编辑现有视频编码用户档案，以利用在AEM中创建或编辑视频用户档案时在用户界面中找不到的高级视频编码参数。 您可以自定义向现有用户档案添加一个或多个高级参数，如&#x200B;**[!UICONTROL minBitrate]**&#x200B;和&#x200B;**[!UICONTROL maxBitrate]**。
 

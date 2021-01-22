@@ -1,19 +1,15 @@
 ---
 title: 应用Dynamic Media查看器预设
-seo-title: 应用Dynamic Media查看器预设
-description: 了解如何在Dynamic Media应用查看器预设
-seo-description: 了解如何在Dynamic Media应用查看器预设
-uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
+description: 了解如何将管理员创建的查看器预设应用于Dynamic Media的资产。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 42%
+source-wordcount: '224'
+ht-degree: 44%
 
 ---
 

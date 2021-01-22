@@ -1,18 +1,15 @@
 ---
 title: 为响应式网站传送优化的图像
-seo-title: 为响应式网站传送优化的图像
-description: 如何使用响应式代码功能传送优化的图像
-seo-description: 如何使用响应式代码功能传送优化的图像
-uuid: 7c6baef5-7513-4644-94ed-2383e8724c17
+description: 如何使用Dynamic Media的响应式代码功能交付优化的图像
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '334'
 ht-degree: 35%
 
 ---

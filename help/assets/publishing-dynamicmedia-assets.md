@@ -1,18 +1,14 @@
 ---
 title: 发布 Dynamic Media 资产
-seo-title: 发布 Dynamic Media 资产
-description: 如何发布Dynamic Media资产
-seo-description: 如何发布Dynamic Media资产
-uuid: b1bee905-86cf-4284-8d4e-067e11557899
+description: 如何发布Dynamic Media资源，包括这些资源的HTTP/2投放。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 22%
 
 ---

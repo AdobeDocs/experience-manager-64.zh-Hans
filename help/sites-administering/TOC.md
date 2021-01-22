@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 Administering 用户指南
 breadcrumb-title: Administering 指南
 user-guide-description: 了解如何管理 AEM。
 translation-type: tm+mt
-source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 16%
+source-wordcount: '623'
+ht-degree: 19%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 16%
    + [AEM疑难解答](troubleshoot.md)
    + [AEM 6中的审核日志维护](operations-audit-log.md)
    + [编辑者](enable-classic-ui-editor.md)
-   + [管理对工作流的访问](workflows-managing.md)
+   + [管理对工作流的访问权限](workflows-managing.md)
    + [将cURL与AEM一起使用](curl.md)
    + [为页面编辑配置撤消](config-undo.md)
    + [代理服务器工具(proxy.jar)](proxy-jar.md)
@@ -66,7 +66,7 @@ ht-degree: 16%
    + [管理工作流实例](workflows-administering.md)
    + [配置布局容器和布局模式](configuring-responsive-layout.md)
    + [启用对经典UI的访问](enable-classic-ui.md)
-   + [开始工作流](workflows-starting.md)
+   + [启动工作流](workflows-starting.md)
    + [配置富文本编辑器插件](configure-rich-text-editor-plug-ins.md)
    + [Admin Console](enable-classic-ui-admin.md)
 + 安全 {#security}
@@ -84,7 +84,7 @@ ht-degree: 16%
    + [单一登录](/help/sites-deploying/single-sign-on.md)
    + [如何审计AEM中的用户管理操作](audit-user-management-operations.md)
    + [默认情况下为SSL](ssl-by-default.md)
-   + [SAML 2.0身份验证处理程序](saml-2-0-authenticationhandler.md)
+   + [SAML 2.0 身份验证处理程序](saml-2-0-authenticationhandler.md)
    + [AEM中已关闭的用户组](closed-user-groups.md)
    + [Granite Operations —— 用户和组管理](granite-user-group-admin.md)
    + [在AEM中启用CRXDE Lite](enabling-crxde-lite.md)
@@ -115,7 +115,7 @@ ht-degree: 16%
    + [与第三方服务集成](third-party-services.md)
    + [与 Salesforce 集成](salesforce.md)
    + [与 Adobe Target 集成](target.md)
-   + [与Livefyre集成](livefyre.md)
+   + [与 Livefyre 集成](livefyre.md)
    + [与 Adobe Analytics 集成](adobeanalytics.md)
    + [连接Adobe Analytics和创建框架](adobeanalytics-connect.md)
    + [为Adobe Analytics配置链接跟踪](adobeanalytics-link.md)
@@ -135,8 +135,8 @@ ht-degree: 16%
    + [与Adobe动态标签管理集成](dtm.md)
    + [选择加入Adobe Analytics和Adobe Target](opt-in.md)
    + [AEM门户和Portlet](aem-as-portal.md)
-   + [与Dynamic Media经典(Scene7)集成](scene7.md)
-   + [AEM Livefyre菜谱](aem-livefyre-recipes.md)
+   + [与Dynamic Media经典集成](scene7.md)
+   + [AEM Livefyre 指南](aem-livefyre-recipes.md)
    + [集成问题疑难解答](troubleshooting-integration-issues.md)
    + [与BrightEdge Content Optimizer集成](brightedge.md)
    + [电子邮件模板的最佳实践](best-practices-for-email-templates.md)

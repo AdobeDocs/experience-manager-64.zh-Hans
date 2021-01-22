@@ -1,31 +1,27 @@
 ---
 title: 视频
-seo-title: 视频
-description: 了解集中式视频资产管理AEM Assets，您可以在该管理下将视频上传到Dynamic Media经典，并直接从AEM Assets访问Dynamic Media经典视频。 Dynamic Media经典视频集成将优化视频的范围扩展到所有屏幕。
-seo-description: 了解集中式视频资产管理AEM Assets，您可以在该管理下将视频上传到Dynamic Media经典，并直接从AEM Assets访问Dynamic Media经典视频。 Dynamic Media经典视频集成将优化视频的范围扩展到所有屏幕。
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
+description: 了解集中式视频资产管理AEM Assets，您可以在该管理下将视频上传到Dynamic Media经典，并直接从AEM Assets访问Dynamic Media经典视频。 Dynamic Media经典视频集成通过自动设备和自动带宽检测将优化视频的范围扩展到所有屏幕。
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1681'
-ht-degree: 55%
+source-wordcount: '1617'
+ht-degree: 57%
 
 ---
 
 
 # 视频 {#video}
 
-资产提供了集中式视频资产管理功能，您可以将视频直接上传到资产以自动编码到Dynamic Media经典(Scene7)，并直接从资产中访问Dynamic Media经典视频以进行页面创作。
+资产提供了集中式视频资产管理功能，您可以将视频直接上传到资产以自动编码到Dynamic Media经典，并直接从资产访问Dynamic Media经典视频以进行页面创作。
 
 Dynamic Media经典视频集成将优化视频的范围扩展到所有屏幕（自动设备和带宽检测）。
 
 * **[!UICONTROL Scene7视频]**&#x200B;组件可自动执行设备和带宽检测，以在台式机、平板电脑和移动设备上播放正确的格式和质量的视频。
-* Assets - 您可以包含自适应视频集，而不只是单个视频资产。自适应视频集是一个容器，其中包含在多种屏幕上无缝播放视频所需的所有视频演绎版。自适应视频集是同一个视频的一组版本，这些版本以不同的比特率和格式进行编码，例如 400 kbps、800 kbps 和 1000 kbps。使用自适应视频集以及 S7 视频组件，可在多种屏幕（包括台式机、iOS、Android、Blackberry 和 Windows 移动设备）上实现自适应视频流式传输。请参阅[有关自适应视频集的 Scene7 文档以了解更多信息](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html)。
+* Assets - 您可以包含自适应视频集，而不只是单个视频资产。自适应视频集是一个容器，其中包含在多种屏幕上无缝播放视频所需的所有视频演绎版。自适应视频集是同一个视频的一组版本，这些版本以不同的比特率和格式进行编码，例如 400 kbps、800 kbps 和 1000 kbps。使用自适应视频集以及 S7 视频组件，可在多种屏幕（包括台式机、iOS、Android、Blackberry 和 Windows 移动设备）上实现自适应视频流式传输。<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## 关于FFMPEG和Dynamic Media经典{#about-ffmpeg-and-scene}
 

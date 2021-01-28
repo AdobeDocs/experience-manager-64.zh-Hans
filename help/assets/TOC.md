@@ -7,10 +7,10 @@ user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 创建、管理、交付和优化数字资产。
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 1c853b441845997fbb3086ca93d7020ed02d88c4
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 52%
+source-wordcount: '731'
+ht-degree: 51%
 
 ---
 
@@ -167,7 +167,7 @@ ht-degree: 52%
    + [智能内容服务培训指南](smart-tags-training-guidelines.md)
    + [视频演绎版](video-renditions.md)
 + 3D资产{#three-d}
-   + [AEM 3D发行说明](../release-notes/aem3d-release-notes.md)
+   + [AEM 3D发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/assets/three-d/assets-3d.html)
    + [使用 3D 资产](assets-3d.md)
    + [安装和配置 AEM 3D](install-config-3d.md)
    + [高级配置设置](advanced-config-3d.md)

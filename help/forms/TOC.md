@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.4 Forms 指南
 breadcrumb-title: Forms 指南
 user-guide-description: 创建、管理、发布和更新数字表单。
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: e7603d481720b368c6976674205bb523ac0df3d0
 workflow-type: tm+mt
-source-wordcount: '3721'
-ht-degree: 2%
+source-wordcount: '3730'
+ht-degree: 3%
 
 ---
 
@@ -63,20 +63,20 @@ ht-degree: 2%
       + [安装和配置交互通信](using/installing-configuring-intreactive-communication-correspondence-management.md)
    + 在JEE上安装AEM Forms{#jee-installation}
       + [支持AEM表单在JEE上的平台](using/aem-forms-jee-supported-platforms.md)
-      + [在JEE上使用JBoss统包安装和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
-      + [仅安装和配置文档安全服务器](using/installing-and-configuring-the-document-security-server.md)
-      + [准备安装AEM Forms单台服务器](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
-      + [在JEE上为JBoss安装和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
+      + [在JEE上使用JBoss Turnkey安装和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
+      + [安装和配置AEM Forms文档安全服务器](using/installing-and-configuring-the-document-security-server.md)
+      + [准备安装AEM Forms（单台服务器）](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
+      + [在JEE上安装和部署JBoss的Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
       + [在WebLogic的JEE上安装和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
-      + [在WebSphere的JEE上安装和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
+      + [在WebSphere的JEE上安装和部署Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
       + [安装AEM Forms工作台](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
       + [安装和配置Designer](using/installing-configuring-designer.md)
-      + [准备安装AEM Forms服务器群集](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
-      + [在JBoss群集上在JEE上配置AEM Forms](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
-      + [在WebLogic群集上在JEE上配置AEM Forms](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
-      + [在WebSphere群集上在JEE上配置AEM Forms](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
+      + [准备安装AEM Forms（服务器群集）](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
+      + [在JBoss群集上在JEE上配置Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
+      + [在WebLogic群集上在JEE上配置Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
+      + [在WebSphere群集上在JEE上配置Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
    + 设定 AEM Forms {#configure-aem-forms}
-      + [AEM Forms服务器的性能调整](using/performance-tuning-aem-forms.md)
+      + [AEM Forms 服务器性能优化](using/performance-tuning-aem-forms.md)
       + [配置自适应表单缓存](using/configure-adaptive-forms-cache.md)
       + [配置AEM DS设置](using/configuring-the-processing-server-url-.md)
       + [配置同步调度程序](using/configure-synchronization-scheduler.md)
@@ -89,19 +89,19 @@ ht-degree: 2%
    + 在OSGi上升级AEM Forms{#aem-forms-osgi-upgrade}
       + [在OSGi上升级到AEM 6.4表单](using/upgrade-forms-osgi.md)
       + [安装兼容性包](using/compatibility-package.md)
-      + [迁移AEM Forms资产和文档](using/migration-utility.md)
+      + [迁移 AEM Forms 资产和文档](using/migration-utility.md)
    + 升级JEE上的AEM Forms{#aem-forms-jee-upgrade}
       + [准备升级AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64)
-      + [升级清单和计划](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64)
+      + [Adobe Experience Manager FormsJEE升级清单和计划](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64)
       + [升级到JEE上的AEM 6.4表单](using/upgrade-forms-jee.md)
-      + [从AEM Forms版本升级到AEM 6.4FormsJEE for JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
+      + [升级到Adobe Experience Manager FormsJEE for JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
       + [从LiveCycleES4 SP1升级到JEE上的JBoss的Adobe Experience Manager Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
-      + [从AEM Forms版本升级到AEM 6.4Forms的JEE for JBoss trunky](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
+      + [升级到AEM FormsJEE for JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
       + [从LiveCycleES4 SP1升级到JEE上的JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
-      + [从AEM Forms版本升级到AEM 6.4Forms的JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
-      + [从LiveCycleES4 SP1升级到WebLogic JEE上的AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
-      + [从AEM Forms版本升级到AEM 6.4Forms的WebSphere JEE版](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
-      + [从LiveCycleES4 SP1升级到WebSphere JEE上的AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
+      + [在WebLogic的JEE上升级到Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
+      + [从LiveCycleES4 SP1升级到WebLogic JEE上的Adobe Experience Manager Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
+      + [在WebSphere的JEE上升级到Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
+      + [从LiveCycleES4 SP1升级到WebSphere JEE上的Adobe Experience Manager Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
 + 管理AEM Forms{#manage-administer-aem-forms}
    + [AEM Forms论OSGi集团与特权](using/forms-groups-privileges-tasks.md)
    + [创建新文件夹以对表单进行分类](using/creating-new-folders-categorize-forms.md)
@@ -116,7 +116,7 @@ ht-degree: 2%
       + [以Forms为中心的OSGi工作流](using/forms-workflow-osgi-handling-user-data.md)
       + [Forms用户管理](using/user-management-handling-user-data.md)
       + [Forms·吉工作流](using/forms-workflow-jee-handling-user-data.md)
-      + [Forms门户](using/forms-portal-handling-user-data.md)
+      + [Forms Portal](using/forms-portal-handling-user-data.md)
       + [通信管理](using/correspondence-management-handling-user-data.md)
       + [与Adobe Sign集成](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [文档安全](/help/forms/using/document-security-handling-user-data.md)
@@ -145,7 +145,7 @@ ht-degree: 2%
    + [创建可访问的自适应表单](using/creating-accessible-adaptive-forms.md)
    + [创建具有可重复章节的表单](using/creating-forms-repeatable-sections.md)
    + [在AEM站点页面中嵌入自适应表单或交互式通信](using/embed-adaptive-form-aem-sites.md)
-   + [在外部网页中嵌入自适应表单](using/embed-adaptive-form-external-web-page.md)
+   + [将自适应表单嵌入到外部网页中](using/embed-adaptive-form-external-web-page.md)
    + [自适应表单组件的内联样式](using/inline-style-adaptive-forms.md)
    + [多步表单序列简介](using/introduction-form-sequence.md)
    + [自适应表单的布局功能](using/layout-capabilities-adaptive-forms.md)
@@ -175,7 +175,7 @@ ht-degree: 2%
    + [将用户数据中的信息添加到表单提交元数据](using/form-submission-metadata.md)
    + [基于XDP的自适应表单中的XFA支持](using/xfa-api-supported-in-adaptive-form.md)
    + [在设计器中更改零页内容](using/changing-page-zero-content-designer.md)
-   + [授予规则编辑者对选定用户组的访问权限](using/rule-editor-access-user-groups.md)
+   + [向选定的用户组授予对规则编辑器的访问权限](using/rule-editor-access-user-groups.md)
    + [使用AEM翻译工作流程本地化自适应表单和记录文档](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
    + [自动测试自适应表单](using/calvin.md)
    + [自适应表单的样式构造](using/styling-constructs-adaptive-forms.md)
@@ -344,13 +344,13 @@ ht-degree: 2%
    + [创建或配置监视文件夹](using/creating-configure-watched-folder.md)
    + [在分配任务步骤中使用自定义电子邮件模板](using/use-custom-email-template-assign-task-step.md)
    + [在电子邮件通知中使用元数据](using/use-metadata-in-email-notifications.md)
-+ Forms门户{#use-forms-portal}
++ Forms Portal {#use-forms-portal}
    + [自定义表单门户组件的模板](using/customizing-templates-forms-portal-components.md)
    + [启用表单门户组件](using/enabling-forms-portal-components.md)
    + [创建表单门户页面](using/creating-form-portal-page.md)
    + [用于在表单门户上处理已提交表单的API](using/report-submitted-data-forms.md)
    + [草稿和提交组件的自定义存储](using/adding-custom-storage-provider-forms.md)
-+ Document Services {#use-document-services}
++ 文档服务 {#use-document-services}
    + [AEM文档服务概述](using/overview-aem-document-services.md)
    + [表单服务](using/forms-service.md)
    + [输出服务](using/output-service.md)
@@ -368,7 +368,7 @@ ht-degree: 2%
    + [Protect代表其他用户创建文档](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
    + [使用设计器](http://www.adobe.com/go/learn_aemforms_designer_64)
-   + [设计人员快速开始教程](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64)
+   + [设计人员快速开始Tutorials](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64)
    + [设计人员范例](http://www.adobe.com/go/learn_aemforms_designer_samples_64)
    + [设计人员脚本基础知识](http://www.adobe.com/go/learn_aemforms_scriptingBasics_64)
    + [设计人员脚本参考](http://www.adobe.com/go/learn_aemforms_scriptingReference_64)

@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 translation-type: tm+mt
-source-git-commit: f87d70515a385fb23b36797e468325fa1a5e9ff4
+source-git-commit: f02fde7583da87d48bf72bf569762e9d604d25ce
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 1%
@@ -43,7 +43,7 @@ ht-degree: 1%
     </ul> </td> 
   </tr>
   <tr>
-   <td>表单——用户</td> 
+   <td>表单功能用户</td> 
    <td>
     <ul> 
      <li>创建、预览、发布和提交自适应表单</li> 

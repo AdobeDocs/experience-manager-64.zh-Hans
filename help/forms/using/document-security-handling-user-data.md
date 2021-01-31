@@ -1,16 +1,16 @@
 ---
 title: 文档安全 |处理用户数据
 seo-title: 文档安全 |处理用户数据
-description: 'null'
-seo-description: 'null'
+description: AEM Forms文档安全允许您创建、存储和应用预定义的安全设置到文档。 它确保只有授权用户才能使用文档。 了解文档安全如何在文档库表中组织数据、访问和导出安全数据，如果需要，还可以永久删除数据。
+seo-description: AEM Forms文档安全允许您创建、存储和应用预定义的安全设置到文档。 它确保只有授权用户才能使用文档。 了解文档安全如何在文档库表中组织数据、访问和导出安全数据，如果需要，还可以永久删除数据。
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---

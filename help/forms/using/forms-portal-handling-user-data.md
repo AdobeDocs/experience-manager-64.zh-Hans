@@ -1,17 +1,17 @@
 ---
 title: Forms门户 |处理用户数据
 seo-title: Forms门户 |处理用户数据
-description: 'null'
-seo-description: 'null'
+description: AEM Forms门户提供的组件可用于在AEM Sites页面列表自适应表单、HTML5表单和其他Forms资源。 了解Forms门户如何存储草稿和提交表单的数据。 深入了解如何在配置的数据存储中访问登录和匿名用户的草稿和提交的表单数据，并根据需要删除它。
+seo-description: AEM Forms门户提供的组件可用于在AEM Sites页面列表自适应表单、HTML5表单和其他Forms资源。 了解Forms门户如何存储草稿和提交表单的数据。 深入了解如何在配置的数据存储中访问登录和匿名用户的草稿和提交的表单数据，并根据需要删除它。
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Forms门户网站在以下情况下存储草稿和提交表单的数据：
 
 ### AEM实例{#aem-instances}
 
-登录用户和匿名用户的AEM实例（作者、发布或远程）中的所有草稿和提交的表单数据都存储在适用AEM存储库的`/content/forms/fp/`节点中。 每次登录或匿名用户保存草稿或提交表单时，都会生成每个附件的`draft ID`或`submission ID`、`user data ID`和随机`ID`（如果适用），这些随机&lt;a3/>与相应的草稿或提交相关联。
+登录用户和匿名用户的AEM实例（作者、发布或远程）中的所有草稿和提交的表单数据都存储在适用AEM存储库的`/content/forms/fp/`节点中。 每次登录或匿名用户保存草稿或提交表单时，都会生成每个附件的`draft ID`或`submission ID`、`user data ID`和随机`ID`（如果适用），这些随机与相应的草稿或提交相关联。
 
 #### 访问用户数据{#access-user-data}
 

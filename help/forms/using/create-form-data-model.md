@@ -1,17 +1,17 @@
 ---
 title: “教程：创建表单数据模型“”
 seo-title: 创建表单数据模型教程
-description: 'null'
-seo-description: 'null'
+description: AEM Forms数据集成模块允许您从AEM用户用户档案、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库等不同的后端数据源创建表单数据模型。 了解如何将MySQL数据库配置为数据源，创建、配置和测试表单数据模型。
+seo-description: AEM Forms数据集成模块允许您从AEM用户用户档案、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库等不同的后端数据源创建表单数据模型。 了解如何将MySQL数据库配置为数据源，创建、配置和测试表单数据模型。
 page-status-flag: de-activated
 uuid: 81d40278-4df9-4b61-93ad-eae2fce0a35c
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1544'
 ht-degree: 1%
 
 ---

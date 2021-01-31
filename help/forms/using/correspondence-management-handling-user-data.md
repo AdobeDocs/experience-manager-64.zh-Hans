@@ -1,16 +1,16 @@
 ---
 title: 通信管理 |处理用户数据
 seo-title: 通信管理 |处理用户数据
-description: 'null'
-seo-description: 'null'
+description: AEM Forms通信管理使您能够创建、管理和简化安全的个性化客户通信。 了解如何配置在AEM存储库中存储草稿和提交的信件的数据、访问存储的数据以及删除存储的数据。
+seo-description: AEM Forms通信管理使您能够创建、管理和简化安全的个性化客户通信。 了解如何配置在AEM存储库中存储草稿和提交的信件的数据、访问存储的数据以及删除存储的数据。
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---

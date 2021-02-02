@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 28e552f065d38225226d757c0af00d86d9ed8e07
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '3428'
+source-wordcount: '3426'
 ht-degree: 30%
 
 ---
@@ -242,7 +242,7 @@ AEM中提供以下Dynamic Media经典组件：
 
 **[!UICONTROL 锐化]** -选择要如何锐化图像。[*AdobeDynamic Media经典图像质量和锐化最佳实践*](/help/assets/assets/sharpening_images.pdf)&#x200B;中详细介绍了锐化。
 
-**[!UICONTROL URL修饰符]** -您可以通过提供其他Dynamic Media经典图像命令来更改图像效果。这些操作在[管理图像预设](/help/assets/managing-image-presets.md)和[命令参考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中有介绍。
+**[!UICONTROL URL修饰符]** -您可以通过提供其他Dynamic Media经典图像命令来更改图像效果。这些操作在[管理图像预设](/help/assets/managing-image-presets.md)和[命令参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中有介绍。
 
 **[!UICONTROL 断点]** -如果您的网站是响应式的，您需要调整断点。断点必须用逗号`,`分隔。
 

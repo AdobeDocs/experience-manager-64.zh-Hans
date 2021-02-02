@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '5456'
+source-wordcount: '5454'
 ht-degree: 2%
 
 ---
@@ -567,7 +567,7 @@ Dynamic Media经典资产仍可通过安全预览获得。 只有在AEM中发布
 
    例如，`psprocess="rasterize"&psresolution=120`。
 
-   有关可使用的其他上传作业参数，请参阅[AdobeDynamic Media经典图像生产系统API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html)。
+   有关可使用的其他上传作业参数，请参阅[AdobeDynamic Media经典图像生产系统API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html)。
 
    >[!NOTE]
    >

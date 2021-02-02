@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 Administering 用户指南
 breadcrumb-title: Administering 指南
 user-guide-description: 了解如何管理 AEM。
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 19%
+source-wordcount: '658'
+ht-degree: 18%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 19%
    + [减轻AEM中的序列化问题](mitigating-serialization-issues.md)
    + [用户同步](sync.md)
    + [封装的令牌支持](encapsulated-token.md)
-   + [单一登录](/help/sites-deploying/single-sign-on.md)
+   + [单一登录](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/single-sign-on.html)
    + [如何审计AEM中的用户管理操作](audit-user-management-operations.md)
    + [默认情况下为SSL](ssl-by-default.md)
    + [SAML 2.0 身份验证处理程序](saml-2-0-authenticationhandler.md)
@@ -155,11 +155,11 @@ ht-degree: 19%
    + [目标与体验片段集成](experience-fragments-target.md)
 + 最佳实践 {#bestpractices}
    + [最佳实践](administer-best-practices.md)
-   + [翻译最佳实践](tc-bp.md)
-   + [MSM最佳实践](msm-best-practices.md)
+   + [翻译最佳实践](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html)
+   + [MSM最佳实践](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html)
    + [AEM Sites- GDPR就绪性](gdpr-compliance-sites.md)
-   + [为AEM Foundation处理GDPR请求](handling-gdpr-requests-for-aem-platform.md)
-   + [AEM商务- GDPR就绪性](gdpr-compliance-commerce.md)
+   + [为AEM Foundation处理GDPR请求](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/handling-gdpr-requests-for-aem-platform.html)
+   + [AEM商务- GDPR就绪性](https://experienceleague.adobe.com/docs/experience-manager-64/administering/ecommerce/gdpr-compliance-commerce.html)
 + 内容管理 {#contentmanagement}
    + [如何使用包](package-manager.md)
    + [资产工作流卸载程序](workflow-offloader.md)

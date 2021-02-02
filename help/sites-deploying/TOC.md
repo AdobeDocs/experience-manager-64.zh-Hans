@@ -7,9 +7,9 @@ user-guide-title: AEM 6.4 Deploying 指南
 breadcrumb-title: Deploying 指南
 user-guide-description: 详细了解 Adobe Experience Manager 6.4 的安装、部署和架构，包括我们的 Adobe Managed Services 云部署。
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '356'
 ht-degree: 18%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 18%
    + [自定义独立安装](custom-standalone-install.md)
    + [命令行启动和停止](command-line-start-and-stop.md)
    + [在AEM 6中配置节点存储和数据存储](data-store-config.md)
-   + [修订清理](revision-cleanup.md)
+   + [修订版清理](revision-cleanup.md)
    + [如何使用TarMK Cold Standby运行AEM](tarmk-cold-standby.md)
    + [AEM 6.4中的RDBMS支持](rdbms-support-in-aem.md)
    + [Oak查询和索引](queries-and-indexing.md)
@@ -55,7 +55,7 @@ ht-degree: 18%
    + [卸载作业](offloading.md)
    + [单一登录](single-sign-on.md)
    + [资源映射](resource-mapping.md)
-   + [启用HTTP Over SSL](/help/sites-administering/ssl-by-default.md)
+   + [启用HTTP Over SSL](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
    + [一致性和遍历检查](consistency-check.md)
    + [性能指南](performance-guidelines.md)
    + [性能优化](configuring-performance.md)

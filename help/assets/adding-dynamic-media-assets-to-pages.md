@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2825'
 ht-degree: 34%
 
 ---
@@ -166,7 +166,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 使用Dynamic Media组件将动态视频添加到网页。 编辑该组件时，您可以选择使用预定义的视频查看器预设，以在页面上播放视频。
 
-![chlimage_1-540](assets/chlimage_1-540.png)
+![chlimage_1-541](assets/chlimage_1-540.png)
 
 必须通过单击组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;来编辑以下Dynamic Media设置。
 
@@ -182,8 +182,8 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
    例如，通过查看器修饰符，您可以执行以下操作：
 
-   * 将题注文件与视频[题注关联。](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * 将导航文件与视频[导航关联。](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * 将题注文件与视频[题注关联。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 将导航文件与视频[导航关联。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 单击组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;可编辑以下[!UICONTROL 高级设置]。
 
@@ -237,7 +237,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 > 
 >要避免此问题，请确保AEM Sites用户具有访问资产的必要权限。
 
-![chlimage_1-540](assets/chlimage_1-541.png)
+![chlimage_1-541](assets/chlimage_1-541.png)
 
 您可以通过在组件中单击&#x200B;**[!UICONTROL 编辑]**，来编辑以下&#x200B;**[!UICONTROL 常规]**&#x200B;设置。
 

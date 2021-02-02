@@ -6,10 +6,10 @@ user-guide-title: AEM 6.4 Communities 用户指南
 breadcrumb-title: Communities 指南
 user-guide-description: 创建在线体验，如论坛、用户组、学习资源和其他社交功能。
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 11%
+source-wordcount: '506'
+ht-degree: 12%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 11%
    + [社区站点](administer-landing.md)
    + [AEM Communities概述](overview.md)
    + [AEM 6.4 Communities的新增功能](whats-new-aem-communities.md)
-   + [AEM Communities 发行说明](/help/release-notes/communities-release-notes.md)
+   + [AEM Communities 发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
    + [AEM Communities 快速入门](getting-started.md)
    + [AEM Communities教育入门](getting-started-enablement.md)
    + [初始设置](setup.md)
@@ -39,7 +39,7 @@ ht-degree: 11%
    + [为社区配置Dispatcher](dispatcher.md)
 + 管理 {#administer}
    + [AEM Communities用户与UGC管理服务](user-ugc-management-service.md)
-   + [社区站点](administer-landing.md)
+   + [社区站点](https://experienceleague.adobe.com/docs/experience-manager-64/communities/introduction/administer-landing.html)
    + [社区控制台](consoles.md)
    + [社区分析配置功能](analytics.md)
    + [配置Enablement Features](enablement.md)
@@ -47,7 +47,7 @@ ht-degree: 11%
    + [协调社区内容](moderate-ugc.md)
    + [配置电子邮件](email.md)
    + [社区通知](notifications.md)
-   + [社区订阅](subscriptions.md)
+   + [Communities 订阅](subscriptions.md)
    + [社区评分和徽章](implementing-scoring.md)
    + [管理用户和用户组](users.md)
    + [社区组控制台](groups.md)
@@ -166,4 +166,5 @@ ht-degree: 11%
    + [活动趋势](trends.md)
    + [使用社交标记云](tagcloud.md)
    + [使用投票](voting.md)
-   + [创建示例页面](create-sample-page.md)
+   + [创建示例页面](https://experienceleague.adobe.com/docs/experience-manager-64/communities/develop/create-sample-page.html)
+

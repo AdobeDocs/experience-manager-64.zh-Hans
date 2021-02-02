@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '762'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 5%
 >使用规则集时要小心；它们可以阻止在您的网站上显示Dynamic Media内容。
 
 有一些可用的示例规则集可以帮助您创建自己的规则集。\
-请参阅[规则集引用](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
+请参阅[规则集引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
 
 与创建所有规则集一样，在使用XML validator项目（如xmlvalid）上传XML文件之前，请确保XML文件有效。\
 另请参阅[规则集疑难解答](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)。

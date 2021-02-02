@@ -10,9 +10,9 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '5893'
+source-wordcount: '5889'
 ht-degree: 0%
 
 ---
@@ -200,7 +200,7 @@ AEM WCM记录详细日志。 解包并开始快速启动后，您可以找到登
 
       此处会注册错误消息（严重性级别不同）。
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 
       此日志仅在Dynamic Media启用时使用。 它提供用于分析内部ImageServer进程行为的统计和分析信息。
 
@@ -208,7 +208,7 @@ AEM WCM记录详细日志。 解包并开始快速启动后，您可以找到登
 
       每个访问请求都在此处注册，并随响应一起注册。
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
       此日志仅在Dynamic Media启用时使用。 s7access日志记录通过`/is/image`和`/is/content`向Dynamic Media发出的每个请求。
 

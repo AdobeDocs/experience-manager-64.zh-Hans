@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: managing-assets
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2871'
 ht-degree: 26%
 
 ---
@@ -189,7 +189,7 @@ AEM中提供以下Dynamic Media经典组件：
 化选择要如何锐化图像。[图像预设最佳实践](/help/assets/managing-image-presets.md#image-preset-options)和[锐化最佳实践](/help/assets/assets/sharpening_images.pdf)中详细介绍了锐化。
 
 * **[!UICONTROL URL修]**
-饰符您可以通过提供其他Dynamic Media经典图像命令来更改图像效果。相关内容在[图像预设](/help/assets/managing-image-presets.md)和[命令参考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中进行了介绍。
+饰符您可以通过提供其他Dynamic Media经典图像命令来更改图像效果。相关内容在[图像预设](/help/assets/managing-image-presets.md)和[命令参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中进行了介绍。
 
 * **[!UICONTROL 断]**
 点如果您的网站是响应式的，您需要调整断点。断点之间必须使用逗号 (,) 分隔。

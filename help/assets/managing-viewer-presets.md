@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '4248'
+source-wordcount: '4234'
 ht-degree: 21%
 
 ---
@@ -56,7 +56,7 @@ Dynamic Media查看器预设是一组设置，用于确定用户如何在其计�
 
 不同的网页有不同的需求。 例如，有时您希望网页提供链接，在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，可能需要将HTML5查看器直接嵌入到托管页面。 在后一种情况下，网页可能具有静态布局。 或者，它可以是&#x200B;*响应式*，在不同设备上或对于不同的浏览器窗口大小显示不同。 为了满足这些需求，Dynamic Media附带的所有预定义现成HTML5查看器都支持静态网页和响应式设计网页。
 
-有关如何将响应式查看器嵌入到网页中的详细信息，请参阅&#x200B;*图像服务API帮助*&#x200B;中的[响应式图像库](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)。
+有关如何将响应式查看器嵌入到网页中的详细信息，请参阅&#x200B;*图像服务API帮助*&#x200B;中的[响应式图像库](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)。
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
 有关查看器支持的Web浏览器和操作系统版本的信息，可以查看查看器发行说明。
 
-请参阅[查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)的目录中的&#x200B;*查看器发行说明*。
+请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)的目录中的&#x200B;*查看器发行说明*。
 
 >[!NOTE]
 >
@@ -211,15 +211,15 @@ AEM在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资�
 
       通过可视编辑器，您可以查看特定属性对样式的影响。 只需设置或调整任何属性，即可使用编辑器左侧的范例即时查看它对查看器有何影响。
 
-      [查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*&lt;viewer_name>*&#x200B;查看器”帮助主题中介绍了每种类型的查看器预设的CSS样式属性。
+      [查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*&lt;viewer_name>*&#x200B;查看器”帮助主题中介绍了每种类型的查看器预设的CSS样式属性。
 
-      例如，如果要创建类型为`Mixed_Media`的查看器预设，请参阅[自定义混合媒体查看器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)以了解列表和每个属性的说明。
+      例如，如果要创建类型为`Mixed_Media`的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)以了解列表和每个属性的说明。
 
    * 如果您在单独的CSS文件中定义了样式设置，则可以将CSS文件上传到AEM Assets。 点按&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单下的&#x200B;**[!UICONTROL 导入CSS]**（可能需要向上滚动可视编辑器才能看到它），以查找已上传的CSS文件并将其与查看器预设关联。
 
       导入CSS文件时，可视编辑器会检查CSS是否使用正确的查看器标记。 例如，如果要创建缩放查看器，则必须使用父查看器元素上定义的查看器类名`.s7mixedmediaviewer`定义导入的所有CSS规则。
 
-      只要正确定义给定查看器的CSS标记，就可以导入任意手工CSS。 (CSS标记在[查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中均有介绍。 例如，如果要阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，可视编辑器可能不理解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍可正常工作。
+      只要正确定义给定查看器的CSS标记，就可以导入任意手工CSS。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中均有介绍。 例如，如果要阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，可视编辑器可能不理解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍可正常工作。
    >[!NOTE]
    >
    >如果您希望直接在其原始表单中编辑 CSS，请点按“选定类型”下拉菜单下的&#x200B;**[!UICONTROL 显示/隐藏 CSS]**（您可能需要向上滚动可视编辑器才能看到此选项）。****
@@ -236,7 +236,7 @@ AEM在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资�
 
    可视编辑器中的许多组件都有与其关联的详细说明。 当您展开组件以显示其关联的参数时，这些说明会显示在蓝色框中。
 
-   有些“查看器类型”具有的组件允许您在 **IS 命令**&#x200B;文本字段中指定“图像提供”命令。有关可使用的命令列表，请参阅[图像提供 API 参考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
+   有些“查看器类型”具有的组件允许您在 **IS 命令**&#x200B;文本字段中指定“图像提供”命令。有关可使用的命令列表，请参阅[图像提供 API 参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
 
    >[!NOTE]
    >

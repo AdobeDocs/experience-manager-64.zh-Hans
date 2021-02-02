@@ -7,10 +7,10 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 9e6a7f0ec6ed921df419e626a155d0895dbaefde
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3837'
+ht-degree: 24%
 
 ---
 
@@ -406,7 +406,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
   </tr>
   <tr>
    <td><strong>图像修饰符</strong></td>
-   <td><p>除了UI中提供的常用图像设置之外，Dynamic Media还支持大量高级图像修改，您可以在<strong>图像修饰符</strong>字段中指定这些修改。 这些参数在<a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">图像服务器协议命令参考</a>中定义。</p> <p>重要：不支持API中列出的以下功能：</p>
+   <td><p>除了UI中提供的常用图像设置之外，Dynamic Media还支持大量高级图像修改，您可以在<strong>图像修饰符</strong>字段中指定这些修改。 这些参数在<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">图像服务器协议命令参考</a>中定义。</p> <p>重要：不支持API中列出的以下功能：</p>
     <ul>
      <li>基本模板和文本渲染命令：<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li>
      <li>本地化命令：<code>locale=</code>和 <code>req=xlate</code></li>
@@ -423,7 +423,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 
 ## 使用图像修饰符{#defining-image-preset-options-with-image-modifiers}定义图像预设选项
 
-除了&#x200B;**[!UICONTROL 基本]**&#x200B;和&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡中提供的选项外，您还可以定义图像修饰符，在定义图像预设时提供更多选项。 图像渲染依赖于Dynamic Media图像渲染API。 API在[HTTP协议参考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html)中有详细定义。
+除了&#x200B;**[!UICONTROL 基本]**&#x200B;和&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡中提供的选项外，您还可以定义图像修饰符，在定义图像预设时提供更多选项。 图像渲染依赖于Dynamic Media图像渲染API。 API在[HTTP协议参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html)中有详细定义。
 
 下面的一些基本示例显示了可以使用图像修饰符实现的操作。
 
@@ -431,7 +431,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 >
 >某些图像修饰符[不能用于AEM](#advanced-tab-options)。
 
-* [op_invert](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  —— 反转每个颜色分量以获得负片图像效果。
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  —— 反转每个颜色分量以获得负片图像效果。
 
    ```xml
    &op_invert=1
@@ -439,7 +439,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 
    ![chlimage_1-499](assets/chlimage_1-499.png)
 
-* [op_blur](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - 向图像应用模糊滤镜。
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - 向图像应用模糊滤镜。
 
    ```xml
    &op_blur=25
@@ -455,7 +455,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 
    ![chlimage_1-501](assets/chlimage_1-501.png)
 
-* [op_brightness](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  —— 降低或增加亮度。
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  —— 降低或增加亮度。
 
    ```xml
    &op_brightness=75
@@ -463,7 +463,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
 
    ![chlimage_1-502](assets/chlimage_1-502.png)
 
-* [opac](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) - 调整图像不透明度。可用于降低前景不透明度。
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) - 调整图像不透明度。可用于降低前景不透明度。
 
    ```xml
    opac=50

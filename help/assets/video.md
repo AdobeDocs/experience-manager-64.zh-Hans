@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '10396'
+source-wordcount: '10392'
 ht-degree: 24%
 
 ---
@@ -144,7 +144,7 @@ Dynamic Media的视频是一款端到端的解决方案，可轻松发布高质�
 * 组织、浏览和搜索具有全面元数据支持的视频，以实现高效的视频资产管理。
 * 将自适应视频集交付到Web、桌面和移动设备，包括iPhone、iPad、Android、Blackberry和Windows手机。
 
-自适应视频流播放在多种 iOS 平台上受支持。请参阅[Adobe查看器参考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
+自适应视频流播放在多种 iOS 平台上受支持。请参阅[Adobe查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
 
 Dynamic Media支持MP4 H.264视频的移动视频播放。您可以在以下位置找到支持此视频格式的Blackberry设备：[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支持的视频格式。
 
@@ -172,7 +172,7 @@ Dynamic MediaHTML5视频查看器预设是功能强大的视频播放器。您�
 
 通过将使用 HTML5 和 CSS 设计播放组件的功能、支持嵌入式播放的功能，以及根据浏览器的容量使用自适应和渐进式流播放的功能整合到单一播放器中，您可以扩大富媒体内容可以传送到的桌面和移动用户的范围，并确保简化视频体验。
 
-另请参阅《 查看器参考指南》中的“[关于 HTML5 查看器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)”。
+另请参阅《 查看器参考指南》中的“[关于 HTML5 查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)”。
 
 ### 使用HTML5视频查看器{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}在桌面计算机和移动设备上播放视频
 
@@ -410,7 +410,7 @@ HLS（HTTP实时流）是自适应视频流播放的Apple标准，可根据网�
    <td><p>源</p> </td> 
    <td><p>1920 x 1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>编码</p> </td> 

@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '3426'
+source-wordcount: '3381'
 ht-degree: 30%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 30%
 
 # 将Dynamic Media经典功能添加到页面{#adding-scene-features-to-your-page}
 
-[Adobe](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Dynamic MediaClassics是一种托管解决方案，用于管理、增强、发布富媒体资产并将富媒体资产交付到Web、移动、电子邮件以及连接Internet的显示屏和印刷品。
+AdobeDynamic Media经典是用于管理、增强、发布和将富媒体资产交付到Web、移动、电子邮件以及连接Internet的显示屏和印刷品的托管解决方案。
 
 您可以在各种查看器中视图发布在Dynamic Media经典中的AEM资产：
 
@@ -149,8 +149,6 @@ AEM中提供以下Dynamic Media经典组件：
 
 自2017年1月31日起，AdobeDynamic Media经典正式终止了对Flash查看器平台的支持。
 
-有关此重要更改的详细信息，请参阅[Flash查看器生命周期结束常见问题解答](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html)。
-
 ### 将Dynamic Media经典组件添加到页面{#adding-a-scene-component-to-a-page}
 
 向页面添加Dynamic Media经典组件与向任何页面添加组件相同。 Dynamic Media经典组件在以下各节中有详细说明。
@@ -248,7 +246,7 @@ AEM中提供以下Dynamic Media经典组件：
 
 ### 图像模板 {#image-template}
 
-[Dynamic Media经典图](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 像模板是已导入到Dynamic Media经典的分层的Photoshop内容，在经典中，内容和属性进行了参数化以实现可变性。通过&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，您可以在 AEM 中导入图像并对文本进行动态更改。此外，您还可以配置&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，以使用 Client Context 中的值，从而让每个客户获取个性化的图像体验。
+[Dynamic Media经典图](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) 像模板是已导入到Dynamic Media经典的分层的Photoshop内容，在经典中，内容和属性进行了参数化以实现可变性。**[!UICONTROL 图像模板]**&#x200B;组件允许您导入图像并在AEM中动态更改文本。 此外，您还可以配置&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，以使用 Client Context 中的值，从而让每个客户获取个性化的图像体验。
 
 单击&#x200B;**[!UICONTROL 编辑]**&#x200B;可配置该组件。您可以配置所有Dynamic Media经典组件](/help/sites-administering/scene7.md#settingscommontoalldynamicmediaclassicscomponents)通用的[设置以及本节中介绍的其他设置。
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5454'
+source-wordcount: '5440'
 ht-degree: 2%
 
 ---
@@ -422,7 +422,7 @@ Dynamic Media经典资产仍可通过安全预览获得。 只有在AEM中发布
 在将资产推送到Dynamic Media经典而不发布之前，您必须设置以下各项：
 
 1. [使用Admin Console创建支持案例。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 在您的支持情况下，请求为您的Dynamic Media经典帐户启用安全预览。
-1. 按照[为您的Dynamic Media经典帐户设置安全预览的说明操作。](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. 按照[为您的Dynamic Media经典帐户设置安全预览的说明操作。](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)
 
 这些步骤与在Dynamic Media经典中创建任何安全测试设置的步骤相同。
 
@@ -452,7 +452,7 @@ Dynamic Media经典资产仍可通过安全预览获得。 只有在AEM中发布
 1. 点按AEM图标并导航到&#x200B;**[!UICONTROL 部署>Cloud Services]**，点按&#x200B;**[!UICONTROL Dynamic Media经典]**，然后在Dynamic Media经典中选择您的配置。
 1. 点按&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。在&#x200B;**[!UICONTROL 启用安全视图]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 在AEM发布激活]**&#x200B;上，将资产推送到Dynamic Media经典而不进行发布。 (默认情况下，此值设置为&#x200B;**[!UICONTROL Immedialy]**，其中Dynamic Media经典资产会立即发布。)
 
-   有关在资产公开前测试资产的详细信息，请参阅[Dynamic Media经典文档](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)。
+   有关在资产公开前测试资产的详细信息，请参阅[Dynamic Media经典文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)。
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 

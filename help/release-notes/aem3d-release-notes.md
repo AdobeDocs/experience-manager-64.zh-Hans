@@ -1,18 +1,14 @@
 ---
 title: AEM 3D发行说明
-seo-title: AEM 3D发行说明
 description: Adobe Experience Manager资产中特定于3D内容的发行说明。
-seo-description: Adobe Experience Manager资产中特定于3D内容的发行说明。
-uuid: 6675951f-86f0-4ec5-97e4-d247f6faf913
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes, 3D
 content-type: reference
-discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: 9710c9931b4f17073c712f5869a1843c1d99ee8e
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->不再支持AEM 6.4中的AEM 3D功能包。 Adobe建议您将[AEM中的3D资产功能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更高版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>不再支持AEM 6.4中的AEM 3D功能包。 Adobe建议您将[AEM中的3D资产功能用作Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更高版本。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 AEM-6.4-DynamicMedia-3D版本3.1.0（2018年10月10日）
 
@@ -70,7 +66,7 @@ AEM 3D支持Adobe Dimension(Dn)和glTF资产类型。 这些资产类型的实�
 
 另请参阅[使用3D资产](/help/assets/assets-3d.md)。
 
-## 安装和配置AEM 3D {#installing-and-configuring-aem-d}
+## 安装和配置 AEM 3D {#installing-and-configuring-aem-d}
 
 请参阅[安装和配置AEM 3D](/help/assets/install-config-3d.md)。
 

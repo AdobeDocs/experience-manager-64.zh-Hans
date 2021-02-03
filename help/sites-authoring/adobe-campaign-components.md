@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '2779'
-ht-degree: 71%
+source-wordcount: '2786'
+ht-degree: 70%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 71%
 
 各组件如下图所示：
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ### 标题(活动){#heading-campaign}
 
@@ -179,13 +179,13 @@ ht-degree: 71%
 
 ### Scene7图像模板(活动){#scene-image-template-campaign}
 
-[Scene7图](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) 像模板是分层的图像文件，其中的内容和属性可进行参数化以实现可变性。通过&#x200B;**图像模板**&#x200B;组件，您可以在新闻稿中使用 Scene7 模板，并更改模板参数的值。此外，您可以在参数中使用Adobe Campaign元数据变量，以便每个用户以个性化的方式体验图像。
+[Scene7图](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) 像模板是分层的图像文件，其中的内容和属性可进行参数化以实现可变性。**图像模板**&#x200B;组件允许您在新闻稿中使用Dynamic Media经典(以前称为Scene7)模板并更改模板参数的值。 此外，您可以在参数中使用Adobe Campaign元数据变量，以便每个用户以个性化的方式体验图像。
 
-![chlimage_1-191](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111.png)
 
-单击&#x200B;**编辑**&#x200B;可配置该组件。您可以配置本节中介绍的设置。 此Scene7图像模板详细描述在[Scene7图像模板组件](/help/assets/scene7.md#image-template)中。
+单击&#x200B;**编辑**&#x200B;可配置该组件。您可以配置本节中介绍的设置。 此Dynamic Media经典(以前称为Scene7)图像模板在[Scene7图像模板组件](/help/assets/scene7.md#image-template)中有详细说明。
 
-此外，参数面板列出了在 Scene7 中为模板定义的所有模板参数。对于其中的每个参数，您都可以调整值、插入变量，或将其重置为默认值。
+此外，参数面板会列表为Dynamic Media经典(以前称为Scene7)中的模板定义的所有模板参数。 对于其中的每个参数，您都可以调整值、插入变量，或将其重置为默认值。
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 

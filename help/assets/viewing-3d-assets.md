@@ -1,19 +1,15 @@
 ---
 title: 查看 3D 资产
-seo-title: 查看 3D 资产
 description: 了解AEM中资产详细信息页面提供的交互式3D查看器，以及如何使用它视图3D资产。
-seo-description: 了解AEM中资产详细信息页面提供的交互式3D查看器，以及如何使用它视图3D资产。
-uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 32%
+source-wordcount: '1778'
+ht-degree: 33%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 32%
 
 >[!IMPORTANT]
 >
->AEM 6.4中不再支持AEM 3D。 Adobe建议您将[AEM中的3D资源功能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更高版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) 视图3D资产。
+>AEM 6.4中不再支持AEM 3D。 Adobe建议您将[AEM中的3D资源功能用作Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更高版本。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) 视图3D资产。
 
 此文档介绍如何视图资产详细信息中的3D资产，以及如何视图站点中3D组件中的资产。
 
@@ -91,7 +87,7 @@ AEM 中的资产详细信息页面提供了交互式 3D 查看器。该查看器
       </ul> </td> 
       </tr> 
       <tr> 
-      <td><p>检查</p> <p>或</p> <p>目标</p> </td> 
+      <td><p>检查</p> <p>或</p> <p>Target</p> </td> 
       <td><p>点按或单击可在检查模式和目标模式之间切换。</p> 
       <ul> 
       <li><strong>检查</strong>-点按或单击进入目标模式。</li> 
@@ -170,7 +166,7 @@ AEM 中的资产详细信息页面提供了交互式 3D 查看器。该查看器
 
 1. 用两指向下或向上拖动触控板按钮，向上移动相机，使相机离对象更近或更远。 此操作与放大或缩小类似，允许检查对象的详细信息。 或者，单击并按住&#x200B;**[!UICONTROL “放大”或**[!UICONTROL “缩小”按钮，将相机移近或远离对象。]**]**
 
-1. 按住&#x200B;**ALT/option**&#x200B;键和（左）触摸板按钮时，使用单指拖动来平移相机。 此操作可横向移动相机，使您在放大时查看对象的不同部分。 或者，单击“绕行／平移切换”****&#x200B;按钮切换至&#x200B;**[!UICONTROL “平移”]**&#x200B;模式，然后在按住（左）按钮的同时使用单指拖动来平移相机。 再次单击“绕行／平移”按钮，以还原到“绕行”模式。]****[!UICONTROL ****
+1. 按住&#x200B;**ALT/option**&#x200B;键和（左）触摸板按钮时，使用单指拖动来平移相机。 此操作可横向移动相机，使您在放大时查看对象的不同部分。 或者，单击“绕行／平移切换”****&#x200B;按钮切换至&#x200B;**[!UICONTROL “平移”]**&#x200B;模式，然后在按住（左）按钮的同时使用单指拖动来平移相机。 再次单击“绕行／平移”按钮，以还原到“绕行”模式。********
 
 1. 单击&#x200B;**[!UICONTROL 重置查看器]**&#x200B;以重置相机。 此操作将对象恢复为完全视图，如果启用，则恢复自动旋转。
 
@@ -184,7 +180,7 @@ AEM 中的资产详细信息页面提供了交互式 3D 查看器。该查看器
 
 1. 使用滚轮可使相机离对象更近或更远。 这与放大或缩小类似，允许您检查对象的详细信息。 或者，单击并按住&#x200B;**[!UICONTROL “放大”或**[!UICONTROL “缩小”按钮，将相机移近或远离对象。]**]**
 
-1. 按住&#x200B;**ALT/option**&#x200B;键和鼠标左键拖动以平移相机。 这样，相机可横向移动，以在放大时查看对象的不同部分。 或者，单击“绕行／平移切换”****&#x200B;按钮切换至&#x200B;**[!UICONTROL 平移]**&#x200B;模式，然后按住鼠标左键拖动以平移相机。 再次单击“绕行／平移”切换&#x200B;]**以还原到“绕行”模式。******[!UICONTROL 
+1. 按住&#x200B;**ALT/option**&#x200B;键和鼠标左键拖动以平移相机。 这样，相机可横向移动，以在放大时查看对象的不同部分。 或者，单击“绕行／平移切换”****&#x200B;按钮切换至&#x200B;**[!UICONTROL 平移]**&#x200B;模式，然后按住鼠标左键拖动以平移相机。 再次单击“绕行／平移”切换&#x200B;]**以还原到“绕行”模式。**[!UICONTROL ****
 1. 单击&#x200B;**[!UICONTROL 重置查看器]**&#x200B;以重置相机。 此操作将对象恢复为完全视图，如果启用，则恢复自动旋转。
 1. 单击&#x200B;**[!UICONTROL 全屏]**&#x200B;进入全屏模式。 使用键盘上的&#x200B;**[!UICONTROL Escape]**&#x200B;键或再次单击&#x200B;**[!UICONTROL 全屏]**&#x200B;将3D查看器恢复为页面嵌入模式。
 

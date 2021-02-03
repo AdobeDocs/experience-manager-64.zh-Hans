@@ -1,18 +1,14 @@
 ---
 title: 使用Adobe Dimension资产
-seo-title: 使用Adobe Dimension资产
 description: 在AEM 3D中使用Adobe Dimension资产。
-seo-description: 在AEM 3D中使用Adobe Dimension资产。
-uuid: 476e6758-b3a1-42ba-a18d-bfc407c6a72e
 contentOwner: Rick Brough
 topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->不再支持AEM 6.4中的AEM 3D功能包。 Adobe建议您将[AEM中的3D资源功能用作Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更高版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) 与Adobe Dimension资产合作。
+>不再支持AEM 6.4中的AEM 3D功能包。 Adobe建议您将[AEM中的3D资源功能用作Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更高版本。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) 与Adobe Dimension资产合作。
 
 AEM 3D功能包支持AEM Assets、AEM Sites和AEM Screens的Adobe Dimension资源（`.dn`文件）。
 

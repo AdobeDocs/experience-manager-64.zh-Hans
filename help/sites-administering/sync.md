@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+source-git-commit: 770e435f41102b2d795c88cbb361de510564d319
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 2%
@@ -171,7 +171,7 @@ ht-degree: 2%
    * 访问[Web控制台](/help/sites-deploying/configuring-osgi.md)
 
       * 例如[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-   * 定位`Adobe Granite Distribution - Encrypted Password Transport Secret Provider`
+   * 定位`com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * 选择要打开进行编辑的现有配置（铅笔图标）
 
       验证 `property name` : **`socialpubsync-publishUser`**
@@ -503,7 +503,7 @@ ht-degree: 2%
 
 #### （发布）一个Apache Sling Distribution Agent —— 队列代理工厂{#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
-![chlimage_1-481](assets/chlimage_1-401.png)
+![chlimage_1-401](assets/chlimage_1-401.png)
 
 #### （发布）一个Adobe花岗岩分布——差异观察器工厂{#publish-one-adobe-granite-distribution-diff-observer-factory}
 

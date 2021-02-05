@@ -1,16 +1,16 @@
 ---
 title: 以Forms为中心的OSGi工作流 |处理用户数据
 seo-title: 以Forms为中心的OSGi工作流 |处理用户数据
-description: 'null'
-seo-description: 'null'
+description: 以Forms为中心的AEM工作流使您能够自动处理以Forms为中心的真实业务流程。 深入挖掘用户数据和数据存储。 了解如何访问和删除用户数据。
+seo-description: 以Forms为中心的AEM工作流使您能够自动处理以Forms为中心的真实业务流程。 深入挖掘用户数据和数据存储。 了解如何访问和删除用户数据。
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 * 使用监视的文件夹
 * 提交交互式通信或信件
 
-有关以Forms为中心的AEM工作流和功能的详细信息，请参阅OSGi[上以Forms为中心的工作流。](/help/forms/using/aem-forms-workflow.md)
+有关以Forms为中心的AEM工作流和功能的详细信息，请参阅OSGi](/help/forms/using/aem-forms-workflow.md)上以Forms为中心的工作流。[
 
 ## 用户数据和数据存储{#user-data-and-data-stores}
 

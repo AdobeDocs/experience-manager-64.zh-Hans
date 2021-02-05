@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
+source-git-commit: 12d64aebbe769c0b3fa7c721e7fbac547d320f67
 workflow-type: tm+mt
-source-wordcount: '3569'
+source-wordcount: '3592'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ Adobe Sign与AEM Forms的整合支持：
 * 以匿名或登录用户身份对表单进行签名
 * 动态签名流程(与AEM Forms工作流程集成)
 * 通过知识库、电话和社交用户档案进行身份验证
+
+了解使用Adobe Sign语与自适应表单](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)的最佳实践，以创建更好的签名体验。[
 
 ## 前提条件 {#prerequisites}
 

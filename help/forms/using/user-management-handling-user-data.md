@@ -1,16 +1,16 @@
 ---
 title: Forms用户管理 |处理用户数据
 seo-title: Forms用户管理 |处理用户数据
-description: 'null'
-seo-description: 'null'
+description: 用户管理是一个AEM FormsJEE组件，它允许创建、管理和授权AEM Forms用户访问AEM Forms。 深入挖掘用户数据和数据存储。 了解如何访问和删除用户数据。
+seo-description: 用户管理是一个AEM FormsJEE组件，它允许创建、管理和授权AEM Forms用户访问AEM Forms。 深入挖掘用户数据和数据存储。 了解如何访问和删除用户数据。
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---

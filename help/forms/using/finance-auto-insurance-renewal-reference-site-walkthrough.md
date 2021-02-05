@@ -1,16 +1,16 @@
 ---
 title: We.Finance汽车保险续订参考站点演练
 seo-title: We.Finance汽车保险续订参考站点演练
-description: 'null'
-seo-description: 'null'
+description: 阅读详细的We.Finance汽车保险用例参考站点演练，其中展示了AEM表单及其与Microsoft Dynamics的集成如何帮助在金融服务公司实现个性化的客户体验。
+seo-description: 阅读详细的We.Finance汽车保险用例参考站点演练，其中展示了AEM表单及其与Microsoft Dynamics的集成如何帮助在金融服务公司实现个性化的客户体验。
 uuid: 18676ab4-9f8d-4014-b751-2a722fd152da
 contentOwner: dekalra
 topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---

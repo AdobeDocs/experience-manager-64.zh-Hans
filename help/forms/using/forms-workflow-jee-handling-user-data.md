@@ -1,16 +1,16 @@
 ---
 title: Forms·吉工作流 |处理用户数据
 seo-title: Forms·吉工作流 |处理用户数据
-description: 'null'
-seo-description: 'null'
+description: AEM FormsJEE工作流提供设计、创建和管理业务流程的工具。 了解有关如何访问和删除用户数据、在工作流发起者或参与者已知时识别进程实例ID、在用户数据存储为基元变量时识别进程实例ID、根据进程实例ID从工作流实例中清除用户数据以及使用孤立任务的更多信息。
+seo-description: AEM FormsJEE工作流提供设计、创建和管理业务流程的工具。 了解有关如何访问和删除用户数据、在工作流发起者或参与者已知时识别进程实例ID、在用户数据存储为基元变量时识别进程实例ID、根据进程实例ID从工作流实例中清除用户数据以及使用孤立任务的更多信息。
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---

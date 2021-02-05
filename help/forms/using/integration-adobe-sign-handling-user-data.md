@@ -1,16 +1,16 @@
 ---
 title: 与Adobe Sign集成 |处理用户数据
 seo-title: 与Adobe Sign集成 |处理用户数据
-description: 'null'
-seo-description: 'null'
+description: AEM Forms公司与Adobe Sign公司整合，使电子签名工作流能以自适应形式处理法律，销售，工资，人力资源管理工作流的表单或协议。 深入挖掘用户数据、数据存储以及访问和删除用户数据。
+seo-description: AEM Forms公司与Adobe Sign公司整合，使电子签名工作流能以自适应形式处理法律，销售，工资，人力资源管理工作流的表单或协议。 深入挖掘用户数据、数据存储以及访问和删除用户数据。
 uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---

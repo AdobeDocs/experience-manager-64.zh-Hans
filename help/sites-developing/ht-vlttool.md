@@ -45,7 +45,7 @@ Jackrabbit FileVault工具(VLT)是由[Apache Foundation](https://www.apache.org/
 1. 从[Maven对象存储库下载FileVault归档文件。](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
-   >VLT工具的源代码在GitHub上可用。[](https://github.com/apache/jackrabbit-filevault)
+   >VLT工具的源代码在GitHub上可用。](https://github.com/apache/jackrabbit-filevault)[
 1. 解压存档。
 1. 将`<archive-dir>/vault-cli-<version>/bin`添加到环境`PATH`中，以便根据需要访问命令文件`vlt`或`vlt.bat`。 例如：
 

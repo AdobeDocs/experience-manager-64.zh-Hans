@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 幕后花絮{#behind-the-scenes}
 
-您可以在父表单中添加基于XSD的自适应表单和片段。 父表单的结构与任何自适应表单[相同。 ](/help/forms/using/prepopulate-adaptive-form-fields.md)当您将自适应表单添加为子表单时，它会作为面板添加到父表单中。 绑定子表单的数据存储在父表单的XML模式的`afBoundData`部分的`data`根下。
+您可以在父表单中添加基于XSD的自适应表单和片段。 父表单的结构与任何自适应表单](/help/forms/using/prepopulate-adaptive-form-fields.md)相同。 [当您将自适应表单添加为子表单时，它会作为面板添加到父表单中。 绑定子表单的数据存储在父表单的XML模式的`afBoundData`部分的`data`根下。
 
 例如，您的客户填写申请表。 表单的前两个字段是名称和标识。 其XML为：
 

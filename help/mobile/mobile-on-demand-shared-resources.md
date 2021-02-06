@@ -49,7 +49,7 @@ ht-degree: 0%
 1. 从&#x200B;**管理文章**&#x200B;拼贴中选择文章。
 1. 单击&#x200B;**上传共享资源**&#x200B;以上传您的共享HTML资源。
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 ### 下一步{#the-next-step}
 

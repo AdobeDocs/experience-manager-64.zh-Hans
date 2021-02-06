@@ -1,6 +1,6 @@
 ---
-title: 为SPA实施React Component
-seo-title: 为SPA实施React Component
+title: 为 SPA 实施 React 组件
+seo-title: 为 SPA 实施 React 组件
 description: 本文举了一个示例，说明如何调整简单、现有的React组件以与AEM SPA Editor一起使用。
 seo-description: 本文举了一个示例，说明如何调整简单、现有的React组件以与AEM SPA Editor一起使用。
 uuid: aebca2ea-a020-45e1-8043-f8c21154c660
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
 
-# 为SPA实施React组件{#implementing-a-react-component-for-spa}
+# 为 SPA 实施 React 组件{#implementing-a-react-component-for-spa}
 
-单页应用程序(SPA)可以为网站用户优惠引人入胜的体验。 开发人员希望能够使用SPA框架构建站点，而作者希望无缝编辑AEM中的内容，使用SPA框架构建站点。
+单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用SPA框架构建站点，而作者希望无缝编辑AEM中的内容，使用SPA框架构建站点。
 
 SPA创作功能优惠了在AEM内支持SPA的一个全面的解决方案。 本文举了一个示例，说明如何调整简单、现有的React组件以与AEM SPA Editor一起使用。
 

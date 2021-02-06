@@ -140,7 +140,7 @@ XX后缀是定义里程碑的轨道偏移。 例如，指定4、8、16、20和28
 
 1. 要将CQ变量映射到Adobe Analytics属性，请将Adobe Analytics属性从组件上CQ变量旁的ContentFinder拖动。
 
-   有关优化映射的信息，请参见《Adobe Analytics测量视频指南》[。](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
+   有关优化映射的信息，请参见《Adobe Analytics测量视频指南》](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)。[
 
 1. [将framework](/help/sites-administering/adobeanalytics.md) 添加到页面。
 1. 要在&#x200B;**预览模式**&#x200B;中测试设置，请播放视频以获取Adobe Analytics呼叫以触发。
@@ -275,7 +275,7 @@ eventdata.events.milestoneXX
 
 1. 要将CQ变量映射到Adobe Analytics属性，请将Adobe Analytics属性从组件上CQ变量旁的ContentFinder拖动。
 
-   有关优化映射的信息，请参见《Adobe Analytics测量视频指南》[。](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
+   有关优化映射的信息，请参见《Adobe Analytics测量视频指南》](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)。[
 
 1. [将framework](/help/sites-administering/adobeanalytics.md) 添加到页面。
 1. 要在&#x200B;**预览模式**&#x200B;中测试设置，请播放视频以获取Adobe Analytics呼叫以触发。

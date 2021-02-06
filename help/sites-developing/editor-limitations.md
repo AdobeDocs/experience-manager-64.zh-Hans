@@ -1,8 +1,8 @@
 ---
 title: 编辑器限制
 seo-title: 编辑器限制
-description: 触屏优化UI中的编辑器利用叠加与iframe中限制的内容交互。 此交互在编辑器的使用方面以及对于开发人员而言都有一些限制。
-seo-description: 触屏优化UI中的编辑器利用叠加与iframe中限制的内容交互。 此交互在编辑器的使用方面以及对于开发人员而言都有一些限制。
+description: 触屏优化UI中的编辑器利用叠加与iframe中限制的内容交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。
+seo-description: 触屏优化UI中的编辑器利用叠加与iframe中限制的内容交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 9b1b0bd53d6c9e0c2c2857ef34b3409fff8485d2
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
 
 # 编辑器限制{#editor-limitations}
 
-触屏优化UI中的编辑器利用叠加与iframe中限制的内容交互。 此交互在编辑器的使用方面以及对于开发人员而言都有一些限制。 本页概括了这些限制，并尽可能提供解决方案或解决办法。
+触屏优化UI中的编辑器利用叠加与iframe中限制的内容交互。 这种交互方式会对编辑器的使用以及开发人员造成一些限制。本页概括了这些限制，并尽可能提供解决方案或解决办法。
 
 ## 功能限制{#functional-limitations}
 

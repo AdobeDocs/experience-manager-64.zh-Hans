@@ -133,7 +133,7 @@ ht-degree: 0%
 1. 获取要加密的PDF文档。
 
    * 创建一个`java.io.FileInputStream`对象，它表示要加密的PDF文档，方法是使用它的构造函数并传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置加密运行时选项。
 
@@ -196,7 +196,7 @@ ht-degree: 0%
 
 1. 获取要加密的PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储使用密码加密的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储使用密码加密的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示要加密的PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -204,7 +204,7 @@ ht-degree: 0%
 
 1. 设置加密运行时选项。
 
-   * 使用`PasswordEncryptionOptionSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PasswordEncryptionOptionSpec`对象的构造函数创建对象。
    * 通过为`PasswordEncryptionOptionSpec`对象的`encryptOption`文档成员分配`PasswordEncryptionOption`明细列表值，指定要加密的PDF资源。 要加密整个PDF，包括其元数据及其附件，请将`PasswordEncryptionOption.ALL`分配给此数据成员。
    * 通过为`PasswordEncryptionOptionSpec`对象的`compatability`数据成员分配`PasswordEncryptionCompatability`明细列表值，指定Acrobat兼容性选项。 例如，将`PasswordEncryptionCompatability.ACRO_7`分配给此数据成员。
    * 指定允许用户通过为`PasswordEncryptionOptionSpec`对象的`documentOpenPassword`数据成员指定表示打开口令的字符串值来打开加密的PDF文档的口令值。
@@ -223,7 +223,7 @@ ht-degree: 0%
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示受保护PDF文档的文件位置。
    * 创建一个字节数组，用于存储`encryptPDFUsingPassword`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -337,15 +337,15 @@ ht-degree: 0%
 1. 获取要加密的PDF文档。
 
    * 创建一个`java.io.FileInputStream`对象，它表示要加密的PDF文档，方法是使用它的构造函数并传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 引用证书。
 
    * 创建一个`java.util.List`对象，它使用其构造函数存储权限信息。
    * 通过调用`java.util.List`对象的`add`方法并传递一个`CertificateEncryptionPermissions`文档值，指定与加密的明细列表关联的权限，该值表示向打开受保护的PDF文档的用户授予的权限。 例如，要指定所有权限，请传递`CertificateEncryptionPermissions.PKI_ALL_PERM`。
-   * 使用`Recipient`对象的构造函数创建&lt;a0/>对象。
+   * 使用`Recipient`对象的构造函数创建对象。
    * 创建一个`java.io.FileInputStream`对象，它表示用于加密PDF文档的证书，方法是使用它的构造函数并传递一个指定证书位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数创建`java.io.FileInputStream`对象，并传递表示证书的&lt;a1/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数创建`java.io.FileInputStream`对象，并传递表示证书的对象。
    * 调用`Recipient`对象的`setX509Cert`方法并传递包含证书的`com.adobe.idp.Document`对象。 （此外，`Recipient`对象可以具有Truststore证书别名或LDAP URL作为证书源。）
    * 使用`CertificateEncryptionIdentity`对象的构造函数创建一个用于存储权限和证书信息的对象。
    * 调用`CertificateEncryptionIdentity`对象的`setPerms`方法并传递存储权限信息的`java.util.List`对象。
@@ -411,16 +411,16 @@ ht-degree: 0%
 
 1. 获取要加密的PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储使用证书加密的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储使用证书加密的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示要加密的PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`MTOM`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`MTOM`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 引用证书。
 
-   * 使用`Recipient`对象的构造函数创建&lt;a0/>对象。 此对象将存储证书信息。
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 此`BLOB`对象将存储加密PDF文档的证书。
+   * 使用`Recipient`对象的构造函数创建对象。 此对象将存储证书信息。
+   * 使用`BLOB`对象的构造函数创建对象。 此`BLOB`对象将存储加密PDF文档的证书。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示证书的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -432,7 +432,7 @@ ht-degree: 0%
 
 1. 设置加密运行时选项。
 
-   * 使用`CertificateEncryptionOptionSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`CertificateEncryptionOptionSpec`对象的构造函数创建对象。
    * 通过为`CertificateEncryptionOptionSpec`对象的`option`文档成员分配`CertificateEncryptionOption`明细列表值，指定要加密的PDF资源。 要加密整个PDF文档，包括其元数据及其附件，请为此数据成员分配`CertificateEncryptionOption.ALL`。
    * 通过为`CertificateEncryptionOptionSpec`对象的`compat`数据成员分配`CertificateEncryptionCompatibility`明细列表值，指定Acrobat兼容性选项。 例如，将`CertificateEncryptionCompatibility.ACRO_7`分配给此数据成员。
 
@@ -450,7 +450,7 @@ ht-degree: 0%
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示受保护PDF文档的文件位置。
    * 创建一个字节数组，用于存储`encryptPDFUsingCertificates`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`binaryData`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -538,8 +538,8 @@ ht-degree: 0%
 
 1. 获取加密的PDF文档。
 
-   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定加密PDF文档位置的字符串值，创建一个表示加密PDF文档的&lt;a0/>对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定加密PDF文档位置的字符串值，创建一个表示加密PDF文档的对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 删除加密。
 
@@ -592,7 +592,7 @@ ht-degree: 0%
 
 1. 获取加密的PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储加密的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储加密的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示加密PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -611,7 +611,7 @@ ht-degree: 0%
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示不安全的PDF文档的文件位置。
    * 创建一个字节数组，用于存储`removePDFPasswordSecurity`方法返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -693,8 +693,8 @@ ht-degree: 0%
 
 1. 获取加密的PDF文档。
 
-   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个表示已加密PDF文档的&lt;a0/>对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个表示已加密PDF文档的对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 删除密码。
 
@@ -741,7 +741,7 @@ ht-degree: 0%
 
 1. 获取加密的PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储经过密码加密的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储经过密码加密的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示加密PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -760,7 +760,7 @@ ht-degree: 0%
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示不安全的PDF文档的文件位置。
    * 创建一个字节数组，用于存储`removePDFPasswordSecurity`方法返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -844,8 +844,8 @@ ht-degree: 0%
 
 1. 获取加密的PDF文档。
 
-   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定加密PDF文档位置的字符串值，创建一个表示加密PDF文档的&lt;a0/>对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定加密PDF文档位置的字符串值，创建一个表示加密PDF文档的对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 解锁文档。
 
@@ -906,7 +906,7 @@ ht-degree: 0%
 
 1. 获取加密的PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。
+   * 使用`BLOB`对象的构造函数创建对象。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示加密PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -1018,7 +1018,7 @@ PDF文档可以受以下加密类型的保护：
 1. 获取加密的PDF文档。
 
    * 使用PDF文档的构造函数并传递一个指定PDF文档位置的字符串值，创建一个表示PDF的`java.io.FileInputStream`对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 确定加密类型。
 
@@ -1062,7 +1062,7 @@ PDF文档可以受以下加密类型的保护：
 
 1. 获取加密的PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。
+   * 使用`BLOB`对象的构造函数创建对象。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示加密PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。

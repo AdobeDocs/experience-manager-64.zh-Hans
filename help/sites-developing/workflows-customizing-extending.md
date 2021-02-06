@@ -99,7 +99,7 @@ WorkItem有自己的MetaDataMap，只能在该工作项（如步骤）运行时�
 
 ## 创建自定义工作流步骤组件{#creating-custom-workflow-step-components}
 
-工作流步骤组件可以以与任何其他组件[相同的方式创建。](/help/sites-developing/components.md)
+工作流步骤组件可以以与任何其他组件](/help/sites-developing/components.md)相同的方式创建。[
 
 要继承其中一个（现有）基本步骤组件，请将以下属性添加到`cq:Component`节点：
 
@@ -622,7 +622,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 ### 使用ECMA脚本{#developing-a-participant-chooser-using-an-ecma-script}开发参加者选择器
 
-您可以创建一个ECMA脚本，该脚本选择分配了&#x200B;**参与者步骤**&#x200B;生成的工作项的用户。 脚本必须包含一个名为`getParticipant`的函数，该函数不需要参数，并返回一个`String`，该&lt;a1/>包含用户或组的ID。
+您可以创建一个ECMA脚本，该脚本选择分配了&#x200B;**参与者步骤**&#x200B;生成的工作项的用户。 脚本必须包含一个名为`getParticipant`的函数，该函数不需要参数，并返回一个`String`，该包含用户或组的ID。
 
 脚本位于JCR存储库中，并从中执行。
 
@@ -817,7 +817,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    下面是我们的示例自定义步骤的结果：
 
-   ![wf-34](assets/wf-34.png)
+   ![wf-36](assets/wf-34.png)
 
    >[!CAUTION]
    >
@@ -858,7 +858,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
 1. 您现在可以打开一个工作流模型进行编辑。 在步骤浏览器中，您可以进行筛选，以查看&#x200B;**我的自定义步骤**:
 
-   ![wf-34](assets/wf-36.png)
+   ![wf-36](assets/wf-36.png)
 
    将&#x200B;**我的自定义步骤**&#x200B;拖到模型上会显示卡：
 

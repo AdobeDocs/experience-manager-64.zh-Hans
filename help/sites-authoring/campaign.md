@@ -133,7 +133,7 @@ ht-degree: 76%
    >
    >如果属性中的个性化字段在编辑器内呈灰显状态，请重新检查您的配置。
 
-   ![chlimage_1-29](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21.png)
 
 1. 打开屏幕左侧的组件面板，从下拉菜单中选择&#x200B;**Adobe CampaignNewsletter**&#x200B;以查找这些组件。
 
@@ -212,7 +212,7 @@ ht-degree: 76%
 
 1. 要预览个性化，请单击/点按工具栏中的相应图标以打开 ContextHub。现在，个性化字段标记已替换为选定人物的种子数据。请查看在 ContextHub 中切换人物时变量是如何调整的。
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
 1. 您可以查看来自 Adobe Campaign 的与当前选定人物关联的种子数据。为此，请单击/点按 ContextHub 栏中的 Adobe Campaign 模块。此时会打开一个对话框，其中显示了当前配置文件的所有种子数据。同样，在切换到其他人物时，这些数据会相应地调整。
 

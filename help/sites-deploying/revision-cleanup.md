@@ -1,6 +1,6 @@
 ---
-title: 修订清理
-seo-title: 修订清理
+title: 修订版清理
+seo-title: 修订版清理
 description: 了解如何使用AEM 6.3中的“修订清理”功能。
 seo-description: 了解如何使用AEM 6.3中的“修订清理”功能。
 uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 修订清理{#revision-cleanup}
+# 修订版清理{#revision-cleanup}
 
 ## 简介 {#introduction}
 

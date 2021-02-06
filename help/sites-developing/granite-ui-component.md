@@ -58,7 +58,7 @@ Granite UI提供一系列设计用于表单的组件；在Granite UI词汇中，
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * 代码示例[](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * 代码示例](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)[
 
 * `granite/ui/components/foundation/form`
 

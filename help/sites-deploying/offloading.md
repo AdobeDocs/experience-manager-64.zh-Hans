@@ -86,7 +86,7 @@ Sling JobManager和JobConsumer支持创建在拓扑中处理的作业：
 
    将出现参与拓扑的群集。
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+   ![chlimage_1-191](assets/chlimage_1-111.png)
 
 1. 单击某个群集可查看群集中实例的列表及其ID、当前状态和Leader状态。
 1. 单击实例ID以查看更详细的属性。
@@ -102,7 +102,7 @@ Sling JobManager和JobConsumer支持创建在拓扑中处理的作业：
 1. 在浏览器中打开Web控制台。 ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. 单击“主”>“拓扑管理”。
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### 配置拓扑成员关系{#configuring-topology-membership}
 
@@ -238,7 +238,7 @@ Apache Sling Job Consumer Manager服务提供主题允许列表和阻止列表�
 
 创建在实例之间传输作业负载以进行卸载的复制代理。 下图显示了从作者卸载到工作实例所需的代理。 作者的Sling ID为1，工作实例的Sling ID为2:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 此设置需要以下三个代理：
 

@@ -34,7 +34,7 @@ ht-degree: 0%
 * 对于使用[XML模式](#xml-schema-af)的自适应表单，请使用与XML模式结构兼容的预填XML。
 * 对于使用[JSON模式符](/help/forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms)的自适应表单，请使用符合JSON模式的预填JSON。
 * 对于使用FDM模式的自适应表单，请使用符合FDM模式的预填JSON。
-* 对于没有表单模型[的自适应表单，没有绑定数据。 ](/help/forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p)每个字段都是未绑定的字段，并使用未绑定的XML预填充。
+* 对于没有表单模型](/help/forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p)的自适应表单，没有绑定数据。 [每个字段都是未绑定的字段，并使用未绑定的XML预填充。
 
 ### 示例预填XML结构{#sample-prefill-xml-structure}
 
@@ -339,7 +339,7 @@ prefill page component.zip
 
 ## AEM Forms自定义预填服务{#aem-forms-custom-prefill-service}
 
-您可以在场景中使用自定义预填服务，在场景中，您经常从预定义的源读取数据。 预填服务从定义的数据源读取数据，并用预填数据文件的内容预填自适应表单的字段。 它还可以帮助您将预先填写的数据与自适应表单永久关联。
+您可以在场景中使用自定义预填服务，在场景中，您经常从预定义的源读取数据。 预填服务从定义的数据源读取数据，并用预填数据文件的内容预填自适应表单的字段。 它还可以帮助您将预填数据与自适应表单永久关联。
 
 ### 创建并运行预填服务{#create-and-run-a-prefill-service}
 

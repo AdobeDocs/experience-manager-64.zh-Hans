@@ -191,11 +191,11 @@ Forms服务可以计算用户在表单中输入的值并显示结果。 要计�
 
    * 要检索发布到Java Servlet的表单数据，请使用其构造函数创建`BLOB`对象。
    * 使用`javax.servlet.http.HttpServletResponse`对象的`getInputStream`方法创建`java.io.InputStream`对象。
-   * 使用`java.io.ByteArrayOutputStream`对象的构造函数并传递`java.io.InputStream`对象的长度，创建&lt;a0/>对象。
+   * 使用`java.io.ByteArrayOutputStream`对象的构造函数并传递`java.io.InputStream`对象的长度，创建对象。
    * 将`java.io.InputStream`对象的内容复制到`java.io.ByteArrayOutputStream`对象中。
    * 通过调用`java.io.ByteArrayOutputStream`对象的`toByteArray`方法创建字节数组。
    * 通过调用`setBinaryData`方法并将字节数组作为参数进行传递来填充`BLOB`对象。
-   * 使用`RenderOptionsSpec`对象的构造函数创建&lt;a0/>对象。 通过调用`RenderOptionsSpec`对象的`setLocale`方法并传递指定区域设置值的字符串值来设置区域设置值。
+   * 使用`RenderOptionsSpec`对象的构造函数创建对象。 通过调用`RenderOptionsSpec`对象的`setLocale`方法并传递指定区域设置值的字符串值来设置区域设置值。
    * 调用`FormsServiceClient`对象的`processFormSubmission`方法并传递以下值：
 
       * 包含表单数据的`BLOB`对象。

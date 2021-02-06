@@ -32,7 +32,7 @@ AEM优惠 WebDAV支持，可显示和编辑存储库内容。 通过WebDAV连接
 http://localhost:4502
 ```
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
 此URL在从操作系统级别连接时提供对默认工作区(`crx.default`)的WebDAV访问。 虽然对于用户来说更简单，但它并没有赋予他们指定工作区名称的额外灵活性，这可以使用额外的[WebDAV URL](/help/sites-administering/webdav-access.md#webdav-urls)来完成。
 

@@ -1101,7 +1101,7 @@ myObject对象具有以下值：
 
 允许您注册商店候选者并获取注册的商店候选者。
 
-### 函数(ContextHub.Utils.storeConapits){#functions-contexthub-utils-storecandidates}
+### 函数(ContextHub.Utils.storeConpaits){#functions-contexthub-utils-storecandidates}
 
 #### getRegisteredCanapites(storeType){#getregisteredcandidates-storetype}
 

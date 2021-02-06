@@ -93,7 +93,7 @@ ht-degree: 5%
    <td>关闭<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>1</td> 
+   <td>3</td> 
    <td>致命<br type="_moz" /> </td> 
   </tr> 
   <tr> 
@@ -101,7 +101,7 @@ ht-degree: 5%
    <td>错误<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>3</td> 
+   <td>1</td> 
    <td>警告<br type="_moz" /> </td> 
   </tr> 
   <tr> 

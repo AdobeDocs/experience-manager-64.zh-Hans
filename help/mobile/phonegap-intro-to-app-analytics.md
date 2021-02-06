@@ -59,7 +59,7 @@ Adobe移动分析SDK提供以下内容：
 
 **入门项** 目：AEM管理员需要配置AdobeMobile Services云配置， [如下所述](#amscloudserviceconfig)。
 
-开发人员负责根据需要将分析添加到AEM Mobile应用[，以跟踪、报告和了解用户如何与移动应用内容互动以及衡量关键生命周期指标，如启动、应用程序停留时间和崩溃率。](/help/mobile/phonegap-add-analytics-to-apps.md)
+开发人员负责根据需要将分析添加到AEM Mobile应用](/help/mobile/phonegap-add-analytics-to-apps.md)，以跟踪、报告和了解用户如何与移动应用内容互动以及衡量关键生命周期指标，如启动、应用程序停留时间和崩溃率。[
 
 ## 对于管理员——配置AdobeMobile ServicesCloud Service{#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 

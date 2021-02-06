@@ -211,7 +211,7 @@ AEM提供可扩展的genericstore和genericstoreproperties上下文存储组件�
 
 编辑Client Context时，上下文存储组件显示在Sidekick中。 与所有组件一样，Client Context组件的`componentGroup`和`jcr:title`属性决定组件的组和名称。
 
-默认情况下，所有属性值为`componentGroup`的组件都显示在Sidekick中。 `Client Context`如果对`componentGroup`属性使用不同的值，则必须使用设计模式将组件手动添加到Sidekick。
+默认情况下，所有属性值为`Client Context`的组件都显示在Sidekick中。 `componentGroup`如果对`componentGroup`属性使用不同的值，则必须使用设计模式将组件手动添加到Sidekick。
 
 #### 上下文存储组件实例{#context-store-component-instances}
 

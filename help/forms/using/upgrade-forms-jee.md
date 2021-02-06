@@ -1,6 +1,6 @@
 ---
-title: 升级到AEM 6.4Forms
-seo-title: 升级到AEM 6.4Forms
+title: 升级到 AEM 6.4 Forms
+seo-title: 升级到 AEM 6.4 Forms
 description: '您可以从AEM 6.1Forms、AEM 6.2Forms和LiveCycleES4 SP1直接升级到6.3Forms。 '
 seo-description: '您可以从AEM 6.1Forms、AEM 6.2Forms和LiveCycleES4 SP1直接升级到6.3Forms。 '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77

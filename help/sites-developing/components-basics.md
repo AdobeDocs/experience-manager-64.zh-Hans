@@ -196,7 +196,7 @@ AEM组件的结构强大而灵活，主要考虑事项有：
 
       * `icon.png` -此组件的图标。
       * `thumbnail.png` -如果此组件列在段落系统中，则显示的图像。
-   * 触屏UI
+   * 触屏 UI
 
       * 有关详细信息，请参阅触控UI中的[组件图标](/help/sites-developing/components-basics.md#component-icon-in-touch-ui)部分。
 

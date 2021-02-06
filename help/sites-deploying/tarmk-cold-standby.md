@@ -304,7 +304,7 @@ Tar Micro Kernel的冷待机容量允许一个或多个备用AEM实例连接到�
    ```
 
 1. 向负载平衡器添加新的主映像。
-1. 创建并开始新的备用实例。 有关详细信息，请参阅上面的创建AEM TarMK冷备用设置[的过程。](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
+1. 创建并开始新的备用实例。 有关详细信息，请参阅上面的创建AEM TarMK冷备用设置](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)的过程。[
 
 ## 将修补程序应用于冷待机设置{#applying-hotfixes-to-a-cold-standby-setup}
 
@@ -361,7 +361,7 @@ Tar Micro Kernel的冷待机容量允许一个或多个备用AEM实例连接到�
 
 ## 冷备用存储库维护{#cold-standby-repository-maintenance}
 
-### 修订清理{#revision-clean}
+### 修订版清理 {#revision-clean}
 
 >[!CAUTION]
 >

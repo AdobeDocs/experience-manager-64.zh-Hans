@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 23%
+ht-degree: 25%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 23%
 
 * [将Dynamic Media资产添加到网页](adding-dynamic-media-assets-to-pages.md)
 * [在网页上嵌入视频查看器或图像查看器](embed-code.md)
-* [在 Dynamic Media 中激活热链接保护](https://helpx.adobe.com/experience-manager/6-4/assets/using/hotlink-protection.html)
+* [在 Dynamic Media 中激活热链接保护](https://helpx.adobe.com/cn/experience-manager/6-4/assets/using/hotlink-protection.html)
 * 将数字不可见水印(Digimarc)与Dynamic Media（即将推出）集成
 * [将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)
 * [为响应式网站传送优化的图像](responsive-site.md)

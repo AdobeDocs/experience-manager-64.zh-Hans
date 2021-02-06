@@ -93,9 +93,9 @@ ht-degree: 0%
 1. 创建Forms、输出和文档管理对象
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`FormsServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`FormsServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
    * 使用`OutputClient`对象的构造函数创建`ServiceClientFactory`对象。
-   * 使用`DocumentManagementServiceClientImpl`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocumentManagementServiceClientImpl`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 使用Forms服务检索表单数据
 

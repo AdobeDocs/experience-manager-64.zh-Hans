@@ -114,7 +114,7 @@ Sling Resource Merager提供访问和合并资源的服务。 它为以下两者
 
       然后根据需要更新属性`jcr:title`。
 
-* 覆盖
+* 替代
 
    * 文本控制台的触屏启用对话框的定义在以下位置进行定义：
 
@@ -253,7 +253,7 @@ Sling Resource Merager包括两个自定义资源提供商——一个用于叠�
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
-* 覆盖：
+* 替代:
 
    * 目的：根据超类型合并资源
    * 装载点：`/mnt/overide`
@@ -271,7 +271,7 @@ Sling Resource Merager包括两个自定义资源提供商——一个用于叠�
    * [自定义控制台](/help/sites-developing/customizing-consoles-touch.md)
    * [自定义页面创作](/help/sites-developing/customizing-page-authoring-touch.md)
 
-* 覆盖：
+* 替代:
 
    * [配置页面属性](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
 

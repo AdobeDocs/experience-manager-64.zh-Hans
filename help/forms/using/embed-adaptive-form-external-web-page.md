@@ -1,6 +1,6 @@
 ---
-title: 在外部网页中嵌入自适应表单
-seo-title: 在外部网页中嵌入自适应表单
+title: 将自适应表单嵌入到外部网页中
+seo-title: 将自适应表单嵌入到外部网页中
 description: 了解如何在外部网页中嵌入自适应表单
 seo-description: 了解如何在外部HTML网页中嵌入自适应表单
 uuid: c612ca3b-62f7-4021-939b-e0c05dbbf0d7
@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1054'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 在外部网页中嵌入自适应表单{#embed-adaptive-form-in-external-web-page}
+# 将自适应表单嵌入到外部网页中{#embed-adaptive-form-in-external-web-page}
 
 了解如何在外部网页中嵌入自适应表单
 

@@ -132,7 +132,7 @@ Adobe Campaign允许您直接在Adobe Experience Manager管理电子邮件投放
 
 1. 单击&#x200B;**安装标准包**，然后选择&#x200B;**AEM Integration**&#x200B;包。
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. 单击&#x200B;**下一步**，然后单击&#x200B;**开始**。
 

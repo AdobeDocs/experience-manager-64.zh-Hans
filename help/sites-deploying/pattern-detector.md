@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ## 如何设置 {#how-to-set-up}
 
-模式检测器作为[一个软件包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)单独发布，该软件包在从6.1到6.5的任何源AEM版本上工作，目标是AEM 6.5升级。 它可以使用[包管理器](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html)进行安装。
+模式检测器作为[一个软件包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)单独发布，该软件包在从6.1到6.5的任何源AEM版本上工作，目标是AEM 6.5升级。 它可以使用[包管理器](https://helpx.adobe.com/cn/experience-manager/6-5/sites/administering/using/package-manager.html)进行安装。
 
 ## 使用方法 {#how-to-use}
 

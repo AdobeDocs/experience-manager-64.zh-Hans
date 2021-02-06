@@ -49,7 +49,7 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 `Repository`实例表示CRX存储库。 使用`Repository`实例建立与存储库的会话。 要创建会话，请调用`Repository`实例的`login`方法并传递`javax.jcr.SimpleCredentials`对象。 `login`方法返回`javax.jcr.Session`实例。
 
-使用`SimpleCredentials`对象的构造函数并传递以下字符串值可创建&lt;a0/>对象：
+使用`SimpleCredentials`对象的构造函数并传递以下字符串值可创建对象：
 
 * 用户名；
 * 相应的密码

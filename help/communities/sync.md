@@ -80,7 +80,7 @@ ht-degree: 2%
 
 ### 用户发布内容{#user-posts-content-on-publish}
 
-对于用户生成的内容(UGC)，在发布实例上输入的数据通过配置的SRP[进行访问。](srp-config.md)
+对于用户生成的内容(UGC)，在发布实例上输入的数据通过配置的SRP](srp-config.md)进行访问。[
 
 ## 最佳实践{#bestpractices}
 
@@ -96,7 +96,7 @@ ht-degree: 2%
 
 1. 确保已安装最新代码：
 
-   * [AEM平台更新](https://helpx.adobe.com/cn/experience-manager/kb/aem62-available-hotfixes.html)
+   * [AEM平台更新](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
    * [AEM Communities更新](deploy-communities.md#latestfeaturepack)
 
 必须进行以下配置才能在AEM Communities启用用户同步。 确保这些配置正确，以防止sling内容分发失败。

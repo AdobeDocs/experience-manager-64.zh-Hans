@@ -174,7 +174,7 @@ AEM 3D（版本3.0）的安装和配置涉及以下事项：
 
    在logo-sphere.fbx页面的右上角附近，单击“舞台聚焦”图标以展开下拉菜单，然后选择`stage-spotlights.fbx`。
 
-   ![chlimage_1-376](assets/chlimage_1-375.png)
+   ![chlimage_1-375](assets/chlimage_1-375.png)
 
 1. 从&#x200B;**[!UICONTROL 舞台聚焦]**&#x200B;下拉列表中，选择`stage-helipad.fbx`。
 

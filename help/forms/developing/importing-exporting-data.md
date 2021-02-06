@@ -156,16 +156,16 @@ ht-degree: 0%
 1. 创建表单数据集成服务客户端。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`FormDataIntegrationClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`FormDataIntegrationClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 引用PDF表单。
 
-   * 使用`java.io.FileInputStream`对象的构造函数创建&lt;a0/>对象。 传递一个指定PDF表单位置的字符串值。
+   * 使用`java.io.FileInputStream`对象的构造函数创建对象。 传递一个指定PDF表单位置的字符串值。
    * 使用`com.adobe.idp.Document`构造函数创建存储PDF表单的`com.adobe.idp.Document`对象。 将包含PDF表单的`java.io.FileInputStream`对象传递给构造函数。
 
 1. 引用XML数据源。
 
-   * 使用`java.io.FileInputStream`对象的构造函数创建一个&lt;a0/>对象，并传递一个字符串值，它指定要导入表单的XML文件的位置。
+   * 使用`java.io.FileInputStream`对象的构造函数创建一个对象，并传递一个字符串值，它指定要导入表单的XML文件的位置。
    * 使用`com.adobe.idp.Document`构造函数创建用于存储表单数据的`com.adobe.idp.Document`对象。 将包含表单数据的`java.io.FileInputStream`对象传递给构造函数。
 
 1. 将数据导入PDF表单。
@@ -219,7 +219,7 @@ ht-degree: 0%
 
 1. 引用PDF表单。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 此`BLOB`对象用于存储PDF表单。
+   * 使用`BLOB`对象的构造函数创建对象。 此`BLOB`对象用于存储PDF表单。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它指定PDF表单的位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
@@ -227,7 +227,7 @@ ht-degree: 0%
 
 1. 引用XML数据源。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 此`BLOB`对象用于存储导入到表单中的数据。
+   * 使用`BLOB`对象的构造函数创建对象。 此`BLOB`对象用于存储导入到表单中的数据。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它指定包含要导入数据的XML文件的位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
@@ -244,9 +244,9 @@ ht-degree: 0%
 
 1. 将PDF表单另存为PDF文件。
 
-   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个表示PDF文件的文件位置的字符串值，创建一个&lt;a0/>对象。
+   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个表示PDF文件的文件位置的字符串值，创建一个对象。
    * 创建一个字节数组，用于存储`importData`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`字段的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -326,11 +326,11 @@ ht-degree: 0%
 1. 创建表单数据集成服务客户端。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`FormDataIntegrationClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`FormDataIntegrationClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 引用PDF表单。
 
-   * 使用`java.io.FileInputStream`对象的构造函数创建一个&lt;a0/>对象，并传递一个字符串值，它指定要导出数据的PDF表单的位置。
+   * 使用`java.io.FileInputStream`对象的构造函数创建一个对象，并传递一个字符串值，它指定要导出数据的PDF表单的位置。
    * 使用`com.adobe.idp.Document`构造函数创建存储PDF表单的`com.adobe.idp.Document`对象。 将包含PDF表单的`java.io.FileInputStream`对象传递给构造函数。
 
 1. 从PDF表单导出数据。
@@ -377,7 +377,7 @@ ht-degree: 0%
 
 1. 引用PDF表单。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 此`BLOB`对象用于存储从中导出数据的PDF表单。
+   * 使用`BLOB`对象的构造函数创建对象。 此`BLOB`对象用于存储从中导出数据的PDF表单。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它指定PDF表单的位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -389,9 +389,9 @@ ht-degree: 0%
 
 1. 将PDF表单另存为PDF文件。
 
-   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个表示XML文件位置的字符串值，创建一个&lt;a0/>对象。
+   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个表示XML文件位置的字符串值，创建一个对象。
    * 创建一个字节数组，用于存储`exportData`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`字段的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入XML文件。
 
 **另请参阅**

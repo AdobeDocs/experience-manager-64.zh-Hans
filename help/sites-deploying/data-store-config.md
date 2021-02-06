@@ -145,7 +145,7 @@ customBlobStore=B"false"
 
 可以将AEM配置为在Amazon的简单存储服务(S3)中存储数据。 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID进行配置。
 
-为了启用S3数据存储功能，需要下载并安装包含S3数据存储连接器的功能包。 转至[Adobe存储库](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)，从功能包的1.8.x版本下载最新版本（例如，com.adobe.granite.oak.s3connector-1.8.0.zip）。 此外，您还需要下载并安装[AEM 6.4 Service Pack发行说明](https://helpx.adobe.com/experience-manager/6-4/release-notes/feature-packs-release-notes.html)页面中列出的最新AEM service pack。
+为了启用S3数据存储功能，需要下载并安装包含S3数据存储连接器的功能包。 转至[Adobe存储库](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)，从功能包的1.8.x版本下载最新版本（例如，com.adobe.granite.oak.s3connector-1.8.0.zip）。 此外，您还需要下载并安装[AEM 6.4 Service Pack发行说明](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/feature-packs-release-notes.html)页面中列出的最新AEM service pack。
 
 >[!NOTE]
 >

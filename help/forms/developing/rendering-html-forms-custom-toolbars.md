@@ -218,11 +218,11 @@ fscCSS是与特定节点关联的样式表。 CSS文件中的样式指定工具�
 1. 创建FormsJava API对象
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`FormsServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`FormsServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 引用自定义fscmenu XML文件
 
-   * 使用`HTMLRenderSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`HTMLRenderSpec`对象的构造函数创建对象。
    * 要呈现带有工具栏的HTML表单，请调用`HTMLRenderSpec`对象的`setHTMLToolbar`方法并传递`HTMLToolbar`枚举值。 例如，要显示垂直HTML工具栏，请传递`HTMLToolbar.Vertical`。
    * 通过调用`HTMLRenderSpec`对象的`setToolbarURI`方法并传递指定XML文件URI位置的字符串值，指定fscmenu XML文件的位置。
    * 如果适用，请通过调用`HTMLRenderSpec`对象的`setLocale`方法并传递指定区域设置值的字符串值来设置区域设置值。 默认值为英语。
@@ -278,7 +278,7 @@ fscCSS是与特定节点关联的样式表。 CSS文件中的样式指定工具�
 
 1. 引用自定义fscmenu XML文件
 
-   * 使用`HTMLRenderSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`HTMLRenderSpec`对象的构造函数创建对象。
    * 要呈现带有工具栏的HTML表单，请调用`HTMLRenderSpec`对象的`setHTMLToolbar`方法并传递`HTMLToolbar`枚举值。 例如，要显示垂直HTML工具栏，请传递`HTMLToolbar.Vertical`。
    * 通过调用`HTMLRenderSpec`对象的`setToolbarURI`方法并传递指定XML文件URI位置的字符串值，指定fscmenu XML文件的位置。
    * 如果适用，请通过调用`HTMLRenderSpec`对象的`setLocale`方法并传递指定区域设置值的字符串值来设置区域设置值。 默认值为英语。

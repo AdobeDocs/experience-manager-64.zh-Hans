@@ -74,7 +74,7 @@ REST(REpresentational State Transfer)是指World Wide Web所基于的软件体�
 
 要了解Apache Sling请求解析的关键方面是请求如何主要映射到内容存储库中的特定资源、请求的附加属性以及这些内容对象的属性如何确定将调用哪些应用程序代码来呈现内容，以及/apps中的代码如何覆盖/libs中的代码。
 
-### 快速启动{#quickstart}
+### 快速入门 {#quickstart}
 
 没有第三步：要安装和运行，只需下载并多次单击快速启动JAR文件。 没有第三步。 任何其他可选功能只需从“包共享”中安装相应的包即可。
 

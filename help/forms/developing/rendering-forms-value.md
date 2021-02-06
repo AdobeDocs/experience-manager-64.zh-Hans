@@ -115,7 +115,7 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 1. 参考表单设计
 
    * 创建一个`java.io.FileInputStream`对象，该对象通过使用其构造函数并传递指定XDP文件位置的字符串值来表示要呈现的表单设计。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 按值呈现表单
 
@@ -165,8 +165,8 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 
 1. 参考表单设计
 
-   * 使用`java.io.FileInputStream`对象的构造函数创建&lt;a0/>对象。 传递一个指定XDP文件位置的字符串值。
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储使用密码加密的PDF文档。
+   * 使用`java.io.FileInputStream`对象的构造函数创建对象。 传递一个指定XDP文件位置的字符串值。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储使用密码加密的PDF文档。
    * 创建存储`java.io.FileInputStream`对象内容的字节数组。 通过使用`available`方法获取`java.io.FileInputStream`对象的大小，可以确定字节数组的大小。
    * 通过调用`java.io.FileInputStream`对象的`read`方法并传递字节数组，用流数据填充字节数组。
    * 通过调用`setBinaryData`方法并传递字节数组来填充`BLOB`对象。

@@ -1,6 +1,6 @@
 ---
-title: 升级到AEM 6.4Forms
-seo-title: 升级到AEM 6.4Forms
+title: 升级到 AEM 6.4 Forms
+seo-title: 升级到 AEM 6.4 Forms
 description: '您可以从AEM 6.1Forms、AEM 6.2Forms和LiveCycleES4 SP1直接升级到6.3Forms。 '
 seo-description: '您可以从AEM 6.1Forms、AEM 6.2Forms和LiveCycleES4 SP1直接升级到6.3Forms。 '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 3%
+ht-degree: 9%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
       * [AEM 6.2 发行说明](https://helpx.adobe.com/cn/experience-manager/6-2/release-notes.html)
       * [AEM 6.3 发行说明](https://helpx.adobe.com/cn/experience-manager/6-3/release-notes.html)
-      * [AEM Susement Hub](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html)
+      * [AEM Susement Hub](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)
    1. 准备源实例以进行升级。 有关详细步骤，请参阅[升级到AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance)。
    1. 下载[AEM 6.4 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software)。
    1. **(仅限基于Unix/Linux的** 安装)如果您使用UNIX或Linux作为基础操作系统，请打开终端窗口，导览至包含crx-quickstart的文件夹，然后运行以下命令：
@@ -50,13 +50,13 @@ ht-degree: 3%
 
 1. 安装AEM Forms加载项包。 这些步骤如下所示：
 
-   1. 打开[软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID才能登录软件分发。
-   1. 点按标题菜单中的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
+   1. 打开 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登录 Software Distribution。
+   1. 点按标题菜单中的 **[!UICONTROL Adobe Experience Manager]**。
    1. 在&#x200B;**[!UICONTROL 过滤器]**&#x200B;部分中：
       1. 从&#x200B;**[!UICONTROL 解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Forms]**。
       1. 选择包的版本和类型。 您还可以使用&#x200B;**[!UICONTROL 搜索下载]**&#x200B;选项筛选结果。
    1. 点按适用于您的操作系统的程序包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后点按&#x200B;**[!UICONTROL 下载]**。
-   1. 打开[包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)并单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
+   1. 打开[包管理器](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/administering/contentmanagement/package-manager.html)，并单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
    1. 选择软件包，然后单击&#x200B;**[!UICONTROL 安装]**。
 
       您还可以使用[AEM Forms版本](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)文章中列出的直接链接下载包。

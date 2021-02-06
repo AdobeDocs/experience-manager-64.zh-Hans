@@ -39,7 +39,7 @@ ht-degree: 0%
 
 在“模型”控制台中，将显示所有具有&#x200B;**内容片段模型**&#x200B;属性的文件夹。 通过&#x200B;**工具**、**资产**、**内容片段模型**&#x200B;进行导航；例如，`http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`。
 
-用户可以使用](/help/assets/content-fragments-models.md#creating-a-content-fragment-model)创建模型&#x200B;**向导（使用控制台中的**&#x200B;创建&#x200B;**）创建内容片段模型[。**
+用户可以使用&#x200B;**创建模型**&#x200B;向导（使用控制台中的&#x200B;**创建**）创建内容片段模型](/help/assets/content-fragments-models.md#creating-a-content-fragment-model)。[
 
 >[!CAUTION]
 >

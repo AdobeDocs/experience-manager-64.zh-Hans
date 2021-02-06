@@ -132,7 +132,7 @@ ht-degree: 0%
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
-   Commendergence Management内置了210个特殊字符。 管理员可以通过自定义[添加对更多／自定义特殊字符的支持。](/help/forms/using/custom-special-characters.md)
+   Commendergence Management内置了210个特殊字符。 管理员可以通过自定义](/help/forms/using/custom-special-characters.md)添加对更多／自定义特殊字符的支持。[
 
 1. 要在可编辑的内嵌模块中突出显示\突出显示部分文本，请选择文本，然后点按高亮颜色。
 
@@ -251,7 +251,7 @@ ht-degree: 0%
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   将出现“起草字母名称”对话框，其中带有字母实例id。 您可以选择编辑此ID。 记下字母Id，然后点按&#x200B;**完成**。 以后可以使用此ID重新加载草稿字母[。](submit-letter-topostprocess.md#reloaddraft)
+   将出现“起草字母名称”对话框，其中带有字母实例id。 您可以选择编辑此ID。 记下字母Id，然后点按&#x200B;**完成**。 以后可以使用此ID重新加载草稿字母](submit-letter-topostprocess.md#reloaddraft)。[
 
 1. 要将字母预览为拼合的PDF，并在提交时使用精确的布局和分页符，请点按(![预览](assets/preview.png))预览。
 

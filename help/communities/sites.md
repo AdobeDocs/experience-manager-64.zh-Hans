@@ -101,4 +101,4 @@ ht-degree: 3%
 
 在主[站点模板控制台](#site-templates-console)中查看站点模板时，可以选择现有的站点模板进行编辑。
 
-此过程提供与创建站点模板[相同的面板。](#create-site-template)
+此过程提供与创建站点模板](#create-site-template)相同的面板。[

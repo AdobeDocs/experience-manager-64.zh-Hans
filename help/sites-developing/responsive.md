@@ -228,7 +228,7 @@ JSP脚本生成引用样式表的以下HTML代码：
 * 类型: `String[]`
 * 值: `/etc/mobile/groups/responsive`
 
-使用“工具”控制台创建和编辑设备组[。](/help/sites-developing/groupfilters.md)
+使用“工具”控制台创建和编辑设备组](/help/sites-developing/groupfilters.md)。[
 
 >[!NOTE]
 >

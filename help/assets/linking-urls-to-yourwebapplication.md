@@ -191,7 +191,7 @@ Dynamic Media支持静态资产的投放，静态资产是除图像和视频之�
 
 1. 按照以下顺序合并之前复制的所有片段以创建字符串：
 
-   &lt;>>&lt;>>&lt;>>&lt;>>`video asset path``video service URL``protocol selector``customer name`
+   &lt;>>&lt;>>&lt;>>&lt;>>`video service URL``protocol selector``customer name``video asset path`
 
    例如，使用这些步骤中示例中复制的信息，字符串将显示如下：
 

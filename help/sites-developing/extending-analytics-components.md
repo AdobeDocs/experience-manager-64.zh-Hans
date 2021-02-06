@@ -131,7 +131,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 使您的AEM组件能够与Adobe Analytics框架进行交互。 然后，配置您的框架，以便Adobe Analytics跟踪组件数据。
 
-编辑框架时，与Adobe Analytics框架交互的组件会显示在SideKick中。 将组件拖动到框架后，将显示组件属性，然后您可以使用Adobe Analytics属性映射它们。 （请参阅[为基本跟踪设置框架](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework)。）
+在编辑框架时，与Adobe Analytics框架交互的组件显示在SideKick中。 将组件拖动到框架后，将显示组件属性，然后您可以使用Adobe Analytics属性映射它们。 （请参阅[为基本跟踪设置框架](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework)。）
 
 当组件有名为`analytics`的子节点时，组件可以与Adobe Analytics框架进行交互。 `analytics`节点具有以下属性：
 

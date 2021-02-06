@@ -107,7 +107,7 @@ ht-degree: 0%
 
 自适应表单提供了多个具有内置验证功能的组件，例如，电子邮件和数字字段，您可以将这些字段用于常见用例。 对高级用例使用规则编辑器，例如，当数据库返回零(0)条记录（无记录）时，显示错误消息。
 
-下面的过程说明了如何创建规则，以在表单中输入的客户ID在数据库中不存在时显示错误消息。 该规则还将焦点置于客户ID字段并重置该字段。 该规则使用表单数据模型服务[的dataIntegrationUtils API，检查数据库中是否存在客户ID。](/help/forms/using/invoke-form-data-model-services.md)
+下面的过程说明了如何创建规则，以在表单中输入的客户ID在数据库中不存在时显示错误消息。 该规则还将焦点置于客户ID字段并重置该字段。 该规则使用表单数据模型服务](/help/forms/using/invoke-form-data-model-services.md)的dataIntegrationUtils API，检查数据库中是否存在客户ID。[
 
 1. 点按&#x200B;**[!UICONTROL 客户ID]**&#x200B;字段，然后点按`Edit Rules`图标。 “规则编辑器”(Rule Editor)窗口将打开。
 1. 点按&#x200B;**[!UICONTROL +创建]**&#x200B;图标以添加规则。 它打开可视编辑器。

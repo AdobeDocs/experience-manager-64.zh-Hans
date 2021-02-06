@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
 # 内容{#http-delivery-of-content}的HTTP2投放
 
-Adobe兴奋地宣布推出HTTP/2投放的内容，同时提高性能的整体优势。
+Adobe 很高兴地宣布推出 HTTP/2 内容交付功能，这意味着性能将全面提升。
 
 ## 什么是HTTP/2?{#what-is-http}
 

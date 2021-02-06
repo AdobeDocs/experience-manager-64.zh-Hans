@@ -1,6 +1,6 @@
 ---
-title: 查询生成器API
-seo-title: 查询生成器API
+title: 查询生成器 API
+seo-title: 查询生成器 API
 description: 资产共享查询生成器的功能通过Java API和REST API公开。
 seo-description: 资产共享查询生成器的功能通过Java API和REST API公开。
 uuid: 6928c3e9-96a1-44ad-9785-350d95f1869a
@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# 查询生成器API{#query-builder-api}
+# 查询生成器 API{#query-builder-api}
 
 [资产共享查询生成器](/help/assets/assets-finder-editor.md)的功能通过Java API和REST API公开。 本节介绍这些API。
 

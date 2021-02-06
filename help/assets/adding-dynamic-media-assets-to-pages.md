@@ -237,7 +237,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 > 
 >要避免此问题，请确保AEM Sites用户具有访问资产的必要权限。
 
-![chlimage_1-541](assets/chlimage_1-541.png)
+![chlimage_1-540](assets/chlimage_1-541.png)
 
 您可以通过在组件中单击&#x200B;**[!UICONTROL 编辑]**，来编辑以下&#x200B;**[!UICONTROL 常规]**&#x200B;设置。
 

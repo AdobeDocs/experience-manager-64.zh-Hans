@@ -195,7 +195,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 使用配置{#using-configurations}
 
-AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置，如上例中所述。[](#developer-example)
+AEM中的配置基于Sling上下文感知配置。 Sling捆绑包提供可用于获取上下文感知配置的服务API。 上下文感知配置是与内容资源或资源树相关的配置，如上例中所述。](#developer-example)[
 
 有关上下文感知配置、示例以及如何使用这些配置的更多详细信息，请[参阅Sling文档。](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 

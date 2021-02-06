@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 23607a6b2e74b50befe2fa19b868a0e4d561b0d8
 workflow-type: tm+mt
 source-wordcount: '882'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 设置事务报告{#setting-up-transaction-reports}
 
-事务报表功能是AEM forms add-on包的一部分。 有关在所有作者实例和发布实例上安装加载项包的信息，请参阅[安装和配置AEM forms](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)。 安装AEM forms加载项包后，请执行以下操作：
+事务报表功能是AEM forms add-on包的一部分。 有关在所有作者实例和发布实例上安装加载项包的信息，请参阅[安装和配置AEM forms](https://helpx.adobe.com/cn/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)。 安装AEM forms加载项包后，请执行以下操作：
 
 * 在所有发布实例上启用反向复制
 * 启用事务报表

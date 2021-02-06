@@ -64,7 +64,7 @@ AEM 3D包含一个AEM Sites组件，可用于在网页上实现3D模型的交互
 
 1. 点按加号图标以打开&#x200B;**[!UICONTROL 组件]**&#x200B;列表。
 
-1. 将&#x200B;**[!UICONTROL 3D查看器]**&#x200B;组件&#x200B;]**列表从**[!UICONTROL &#x200B;组件&lt;a3/>拖动到页面上希望显示3D查看器的位置。
+1. 将&#x200B;**[!UICONTROL 3D查看器]**&#x200B;组件&#x200B;]**列表从**[!UICONTROL &#x200B;组件拖动到页面上希望显示3D查看器的位置。
 
 ## 配置3D组件{#configuring-the-d-component}
 

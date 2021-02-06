@@ -101,7 +101,7 @@ Forms门户允许您在本地AEM存储库、远程AEM存储库或数据库中存
 
 Forms门户提供开箱即用服务(API)，以在本地和远程AEM Forms发布实例的crx-repository上存储数据。 您可以用自定义实现替换默认功能，如[配置草稿和提交的存储服务](/help/forms/using/configuring-draft-submission-storage.md)文章中所述。 有关在安全位置存储内容的自定义实现所需方法的详细信息，请参见[自定义草稿和提交数据服务](/help/forms/using/custom-draft-submission-data-services.md)和[草稿和提交组件的自定义存储。](/help/forms/using/adding-custom-storage-provider-forms.md)
 
-AEM Forms文档提供了将草稿和提交组件与数据库[集成的示例。 ](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html)您可以使用示例实现来开发您自己的自定义实现。
+AEM Forms文档提供了将草稿和提交组件与数据库](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html)集成的示例。 [您可以使用示例实现来开发您自己的自定义实现。
 
 ## 相关文章
 

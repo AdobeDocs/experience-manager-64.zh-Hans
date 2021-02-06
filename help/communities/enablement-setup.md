@@ -58,7 +58,7 @@ ht-degree: 1%
 
 ## 配置Enablement Features {#configure-enablement-features}
 
-要遵循本教程，必须正确安装和配置enablement[，这需要第三方产品，如MySQL和FFmpeg。](enablement.md)
+要遵循本教程，必须正确安装和配置enablement](enablement.md)，这需要第三方产品，如MySQL和FFmpeg。[
 
 ## 配置 Analytics {#configure-analytics}
 
@@ -120,7 +120,7 @@ ht-degree: 1%
 >
 >如果在创建之后创建了这些教程，则在创建成员时可以将它们添加为&#x200B;*Enablement Tutorial成员组*&#x200B;的成员。
 >
->相反，稍后会将它们分配给成员组[。](enablement-create-site.md#assignuserstocommunityenablemembersgroup)
+>相反，稍后会将它们分配给成员组](enablement-create-site.md#assignuserstocommunityenablemembersgroup)。[
 
 ### Riley Taylor —— 登记者{#riley-taylor-enrollee}
 

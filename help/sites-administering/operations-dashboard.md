@@ -569,7 +569,7 @@ UI可用于通过在屏幕左上角的搜索框中键入筛选条件来筛选表
 
 ### 修订清理 {#revision-clean-up}
 
-有关为AEM 6.4执行修订清理的详细信息，请参阅此专用文章[。](/help/sites-deploying/revision-cleanup.md)
+有关为AEM 6.4执行修订清理的详细信息，请参阅此专用文章](/help/sites-deploying/revision-cleanup.md)。[
 
 ### Lucene 二进制文件清理 {#lucene-binaries-cleanup}
 
@@ -702,7 +702,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 >[!NOTE]
 >
->您还可以[观看此视频](https://video.tv.adobe.com/v/21340?captions=chi_hans)，了解“系统概述”仪表板的简介。
+>您还可以[观看此视频](https://video.tv.adobe.com/v/21340)，了解“系统概述”仪表板的简介。
 
 ### 如何访问{#how-to-access}
 

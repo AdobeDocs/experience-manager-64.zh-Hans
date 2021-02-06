@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ### 一般注意事项{#general-considerations}
 
-* 当您使用数据库提供程序（非DB2）时，域ID最多可包含50个字节。 如果您使用单字节ASCII字符，则限制为50个字符。 如果域标识符包含多字节字符，则此限制会降低。 例如，如果创建的域的标识符包含3字节字符，则限制为16个字符。 此外，不能创建包含4字节字符的域。 如果创建的域ID超过此限制，AEM表单将处于不稳定状态。 要从此不稳定状态中恢复，请参阅本页上的“删除包含扩展或多字节字符[的域”。](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)
+* 当您使用数据库提供程序（非DB2）时，域ID最多可包含50个字节。 如果您使用单字节ASCII字符，则限制为50个字符。 如果域标识符包含多字节字符，则此限制会降低。 例如，如果创建的域的标识符包含3字节字符，则限制为16个字符。 此外，不能创建包含4字节字符的域。 如果创建的域ID超过此限制，AEM表单将处于不稳定状态。 要从此不稳定状态中恢复，请参阅本页上的“删除包含扩展或多字节字符](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)的域”。[
 * 可在AEM表单中创建的企业域和本地域的数量取决于每个域ID的长度。 在添加企业或混合域时，用户管理会更新AEM表单配置文件(config.xml)的AuthProviders节点中的configInstance字符串。 configInstance字符串包含与授权提供程序关联的所有域的绝对路径的冒号分隔列表。 此字符串的大小限制为8192个字符。 当达到该限制时，无法创建其他域。
 
 ### 使用DB2 {#considerations-when-using-db2}时的注意事项
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 将MySQL用作AEM表单数据库时，有以下限制：
 
-* 域ID和域名仅使用单字节(ASCII)字符。 如果使用扩展ASCII字符，AEM表单将处于不稳定状态，并且如果尝试删除域，可能会引发异常。 要从这种不稳定状态中恢复，请参阅本页上的“删除包含扩展或多字节字符[的域”主题。](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)
+* 域ID和域名仅使用单字节(ASCII)字符。 如果使用扩展ASCII字符，AEM表单将处于不稳定状态，并且如果尝试删除域，可能会引发异常。 要从这种不稳定状态中恢复，请参阅本页上的“删除包含扩展或多字节字符](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)的域”主题。[
 * 不能创建两个名称相同但大小写不同的域。 例如，当名为&#x200B;*adobe*&#x200B;的域已存在时，尝试创建名为&#x200B;*Adobe*&#x200B;的域会导致错误。
 * 用户管理不能区分两个域名，这两个域名仅在使用扩展字符时有所不同。 例如，如果创建名为&#x200B;*abcde*&#x200B;的域和名为*âbcdè *的域，则它们被视为相同。
 

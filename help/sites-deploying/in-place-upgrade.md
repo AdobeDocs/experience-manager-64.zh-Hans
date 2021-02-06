@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 升级前步骤{#pre-upgrade-steps}
 
-在执行升级之前，必须完成几个步骤。 有关详细信息，请参阅[升级代码和自定义](/help/sites-deploying/upgrading-code-and-customizations.md)和[升级前维护任务](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，确保您的系统满足新版AEM的要求。 了解模式检测器如何帮助您评估升级的复杂性，另请参阅计划升级[的升级范围和要求部分以了解详细信息。](/help/sites-deploying/upgrade-planning.md)
+在执行升级之前，必须完成几个步骤。 有关详细信息，请参阅[升级代码和自定义](/help/sites-deploying/upgrading-code-and-customizations.md)和[升级前维护任务](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，确保您的系统满足新版AEM的要求。 了解模式检测器如何帮助您评估升级的复杂性，另请参阅计划升级](/help/sites-deploying/upgrade-planning.md)的升级范围和要求部分以了解详细信息。[
 
 ## 迁移先决条件{#migration-prerequisites}
 

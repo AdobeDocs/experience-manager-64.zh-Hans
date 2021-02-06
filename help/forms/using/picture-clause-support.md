@@ -163,7 +163,7 @@ HTML5表单支持数字图片符号。 但是，PDF forms和HTMLForms在支持�
    <td><br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>。</td> 
+   <td>.</td> 
    <td>当前区域设置的十进制数。</td> 
    <td><br type="_moz" /> </td> 
   </tr>

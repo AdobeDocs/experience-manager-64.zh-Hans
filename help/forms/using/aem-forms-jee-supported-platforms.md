@@ -417,7 +417,7 @@ Adobe Experience Manager Forms需要运行Java虚拟机，该虚拟机由Java开
  <tbody> 
   <tr> 
    <td><strong>产品<br /> </strong></td> 
-   <td><strong>版本</strong></td> 
+   <td><strong>版本号</strong></td> 
   </tr> 
   <tr> 
    <td>IBM Content Manager Server</td> 
@@ -781,7 +781,7 @@ AEM Forms应用程序可用于以下平台：
 
 >[!NOTE]
 >
->Adobe将在2020年底[停止更新和分发Flash Player。](https://theblog.adobe.com/adobe-flash-update/)
+>Adobe将在2020年底](https://theblog.adobe.com/adobe-flash-update/)停止更新和分发Flash Player。[
 
 ### Adobe文档Security Extension for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 

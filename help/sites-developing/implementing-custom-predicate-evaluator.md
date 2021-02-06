@@ -173,7 +173,7 @@ pom.xml
 >
 >`PredicateEvaluator`的名称是谓词名称，在构建查询时使用它。
 
-1. 覆盖：
+1. 替代:
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)

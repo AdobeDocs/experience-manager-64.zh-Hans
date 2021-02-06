@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 | 产品 | Livefyre功能包2.0.6 |
 |--- |--- |
-| 版本 | 2.0.6 |
+| 版本号 | 2.0.6 |
 | 类型 | 功能版本 |
-| 日期 | 2018年8月31日 |
+| 日期 | 2018 年 8 月 31 日 |
 | 下载 URL | 与管理员联系 |
 | 兼容性 (*) | AEM 6.4 SP1、6.4、6.3 GA和6.2 SP1 |
 | 描述 | 此软件包允许您将Livefyre行业领先的特选功能与AEM实例相集成，使您能够在几分钟内将宝贵的用户生成内容(UGC)从社交网络发布到您的站点。 |

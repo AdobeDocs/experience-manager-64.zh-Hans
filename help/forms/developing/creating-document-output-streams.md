@@ -224,16 +224,16 @@ ht-degree: 0%
 1. 引用XML数据源。
 
    * 创建一个`java.io.FileInputStream`对象，它表示用于通过使用PDF文档的构造函数并传递一个指定XML文件位置的字符串值来填充该XML数据源。
-   * 使用`com.adobe.idp.Document`对象的构造函数创建&lt;a0/>对象。 传递`java.io.FileInputStream`对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数创建对象。 传递`java.io.FileInputStream`对象。
 
 1. 设置PDF运行时选项。
 
-   * 使用`PDFOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFOutputOptionsSpec`对象的构造函数创建对象。
    * 通过调用`PDFOutputOptionsSpec`对象的`setFileURI`方法设置文件URI选项。 传递一个字符串值，它指定输出服务生成的PDF文件的位置。 “文件URI”选项与承载AEM Forms的J2EE应用程序服务器（而非客户端计算机）相关。
 
 1. 设置渲染运行时选项。
 
-   * 使用`RenderOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`RenderOptionsSpec`对象的构造函数创建对象。
    * 通过调用`RenderOptionsSpec`对象的`setCacheEnabled`并传递`true`来缓存表单设计以改进输出服务的性能。
 
    >[!NOTE]
@@ -316,7 +316,7 @@ ht-degree: 0%
 
 1. 引用XML数据源。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储将与PDF文档合并的XML数据。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储将与PDF文档合并的XML数据。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示包含表单数据的XML文件的文件位置。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -324,13 +324,13 @@ ht-degree: 0%
 
 1. 设置PDF运行时选项
 
-   * 使用`PDFOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFOutputOptionsSpec`对象的构造函数创建对象。
    * 通过为`PDFOutputOptionsSpec`对象的`fileURI`数据成员指定一个字符串值来设置“文件URI”选项，该字符串值指定Output服务生成的PDF文件的位置。 “文件URI”选项与承载AEM Forms的J2EE应用程序服务器（而非客户端计算机）相关。
 
 1. 设置渲染运行时选项。
 
-   * 使用`RenderOptionsSpec`对象的构造函数创建&lt;a0/>对象。
-   * 将表单设计缓存到`RenderOptionsSpec`对象的`cacheEnabled`数据成员中，以便将值`true`指定给&lt;a1/>对象的&lt;a2/>数据成员，从而提高输出服务的性能。
+   * 使用`RenderOptionsSpec`对象的构造函数创建对象。
+   * 将表单设计缓存到`RenderOptionsSpec`对象的`cacheEnabled`数据成员中，以便将值`true`指定给对象的数据成员，从而提高输出服务的性能。
 
    >[!NOTE]
    >
@@ -366,7 +366,7 @@ ht-degree: 0%
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示包含结果数据的XML文件位置。 确保文件扩展名为。xml。
    * 创建一个字节数组，它存储`BLOB`对象的数据内容，该对象使用`OutputServiceService`对象的`generatePDFOutput`方法（第八个参数）填充结果数据。 通过获取`BLOB`对象的`MTOM` `field`的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入XML文件。
 
    另请参阅
@@ -489,16 +489,16 @@ PDF/A文档必须使用在表单设计中指定的字体，且无法替换字体
 1. 引用XML数据源。
 
    * 创建一个`java.io.FileInputStream`对象，它表示用于填充PDF/A文档的XML数据源，方法是使用它的构造函数并传递一个指定XML文件位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置PDF/A运行时选项。
 
-   * 使用`PDFOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFOutputOptionsSpec`对象的构造函数创建对象。
    * 通过调用`PDFOutputOptionsSpec`对象的`setFileURI`方法设置文件URI选项。 传递一个字符串值，它指定输出服务生成的PDF文件的位置。 “文件URI”选项与承载AEM Forms的J2EE应用程序服务器（而非客户端计算机）相关。
 
 1. 设置渲染运行时选项。
 
-   * 使用`RenderOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`RenderOptionsSpec`对象的构造函数创建对象。
    * 通过调用`RenderOptionsSpec`对象的`setPDFAConformance`方法并传递指定符合性级别的`PDFAConformance`枚举值，设置`PDFAConformance`值。 例如，要指定符合性级别A，请传递`PDFAConformance.A`。
    * 通过调用`RenderOptionsSpec`对象的`setPDFARevisionNumber`方法并传递`PDFARevisionNumber.Revision_1`来设置`PDFARevisionNumber`值。
 
@@ -574,7 +574,7 @@ PDF/A文档必须使用在表单设计中指定的字体，且无法替换字体
 
 1. 引用XML数据源。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储将与PDF/A文档合并的数据。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储将与PDF/A文档合并的数据。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示要加密的PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -582,12 +582,12 @@ PDF/A文档必须使用在表单设计中指定的字体，且无法替换字体
 
 1. 设置PDF/A运行时选项。
 
-   * 使用`PDFOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFOutputOptionsSpec`对象的构造函数创建对象。
    * 通过为`PDFOutputOptionsSpec`对象的`fileURI`数据成员指定一个字符串值来设置“文件URI”选项，该字符串值指定Output服务生成的PDF文件的位置。 “文件URI”选项与承载AEM Forms的J2EE应用程序服务器相关，而与客户端计算机无关
 
 1. 设置渲染运行时选项。
 
-   * 使用`RenderOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`RenderOptionsSpec`对象的构造函数创建对象。
    * 通过为`RenderOptionsSpec`对象的`PDFAConformance`数据成员分配`PDFAConformance`枚举值来设置`PDFAConformance`值。 例如，要指定符合性级别A，请为此数据成员分配`PDFAConformance.A`。
    * 通过为`RenderOptionsSpec`对象的`PDFARevisionNumber`数据成员分配`PDFARevisionNumber`枚举值来设置`PDFARevisionNumber`值。 将`PDFARevisionNumber.Revision_1`分配给此数据成员。
 
@@ -617,7 +617,7 @@ PDF/A文档必须使用在表单设计中指定的字体，且无法替换字体
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示包含结果数据的XML文件位置。 确保文件扩展名为。xml。
    * 创建一个字节数组，它存储`BLOB`对象的数据内容，该对象使用`OutputServiceService`对象的`generatePDFOutput`方法（第八个参数）填充结果数据。 通过获取`BLOB`对象的`MTOM`字段的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入XML文件。
 
 **另请参阅**
@@ -700,7 +700,7 @@ PDF/A文档必须使用在表单设计中指定的字体，且无法替换字体
 
    * 创建包含连接属性的`ServiceClientFactory`对象。 （请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。）
    * 使用`OutputClient`对象的构造函数创建`ServiceClientFactory`对象。
-   * 使用`DocumentManagementServiceClientImpl`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocumentManagementServiceClientImpl`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 从Content Services检索表单设计（已弃用）。
 
@@ -807,7 +807,7 @@ PDF/A文档必须使用在表单设计中指定的字体，且无法替换字体
 
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示交互式PDF文档的文件位置以及打开文件的模式。
    * 创建一个字节数组，用于存储从`generatePDFOutput2`方法检索的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -900,7 +900,7 @@ ResourceRepositoryClient
 
    * 创建包含连接属性的`ServiceClientFactory`对象。 （请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。）
    * 使用`OutputClient`对象的构造函数创建`ServiceClientFactory`对象。
-   * 使用`DocumentManagementServiceClientImpl`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocumentManagementServiceClientImpl`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 从AEM Forms存储库检索表单设计。
 
@@ -1133,7 +1133,7 @@ ResourceRepositoryClient
 
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示交互式PDF文档的文件位置以及打开文件的模式。
    * 创建一个字节数组，用于存储从`generatePDFOutput2`方法检索的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -1238,11 +1238,11 @@ ResourceRepositoryClient
 1. 引用XML数据源。
 
    * 创建一个`java.io.FileInputStream`对象，它表示使用其构造函数并传递一个指定XML文件位置的字符串值来填充文档的XML数据源。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置打印到文件所需的打印运行时选项。
 
-   * 使用`PrintedOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PrintedOutputOptionsSpec`对象的构造函数创建对象。
    * 通过调用PrintedOutputOptionsSpec对象的`setFileURI`方法并传递一个字符串值来指定文件，该字符串值表示文件的名称和位置。 例如，如果希望输出服务打印到位于C:\Adobe的名为* MortgageForm.ps*的PostScript文件，请指定C:\\Adobe\MortgageForm.ps。
    * 通过调用`PrintedOutputOptionsSpec`对象的`setCopies`方法并传递表示副本数的整数值，指定要打印的副本数。
 
@@ -1306,15 +1306,15 @@ ResourceRepositoryClient
 
 1. 引用XML数据源。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储表单数据。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储表单数据。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值指定包含表单数据的XML文件的位置。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`binaryData`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`binaryData`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 设置打印到文件所需的打印运行时选项。
 
-   * 使用`PrintedOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PrintedOutputOptionsSpec`对象的构造函数创建对象。
    * 通过为`PrintedOutputOptionsSpec`对象的`fileURI`数据成员指定表示文件位置和名称的字符串值来指定文件。 例如，如果希望输出服务打印到位于C:\Adobe中的名为&#x200B;*MortgageForm.ps*&#x200B;的PostScript文件，请指定C:\\Adobe\MortgageForm.ps。
    * 通过为`PrintedOutputOptionsSpec`对象的`copies`数据成员分配一个整数值来指定要打印的副本数。
 
@@ -1336,7 +1336,7 @@ ResourceRepositoryClient
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示包含结果数据的XML文件位置。 确保文件扩展名为XML。
    * 创建一个字节数组，它存储`BLOB`对象的数据内容，该对象使用`OutputServiceService`对象的`generatePDFOutput`方法（第八个参数）填充结果数据。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入XML文件。
 
 **另请参阅**
@@ -1527,7 +1527,7 @@ ResourceRepositoryClient
 1. 引用XML数据源
 
    * 创建一个`java.io.FileInputStream`对象，它表示使用其构造函数并传递一个指定XML文件位置的字符串值来填充文档的XML数据源。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置打印运行时选项
 
@@ -1593,7 +1593,7 @@ ResourceRepositoryClient
 
 1. 引用XML数据源。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储表单数据。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储表单数据。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它指定包含表单数据的XML文件的位置。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，确定字节数组长度。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -1601,7 +1601,7 @@ ResourceRepositoryClient
 
 1. 设置打印运行时选项。
 
-   使用`PrintedOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。 例如，可以通过为`PrintedOutputOptionsSpec`对象的`copies`数据成员指定一个整数值来指定要打印的副本数。
+   使用`PrintedOutputOptionsSpec`对象的构造函数创建对象。 例如，可以通过为`PrintedOutputOptionsSpec`对象的`copies`数据成员指定一个整数值来指定要打印的副本数。
 
    >[!NOTE]
    >
@@ -1818,19 +1818,19 @@ ResourceRepositoryClient
 
 1. 引用XML数据源
 
-   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定XML文件位置的字符串值，创建一个&lt;a0/>对象，它表示包含多个记录的XML数据源。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定XML文件位置的字符串值，创建一个对象，它表示包含多个记录的XML数据源。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置PDF运行时选项
 
-   * 使用`PDFOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFOutputOptionsSpec`对象的构造函数创建对象。
    * 通过调用`PDFOutputOptionsSpec`对象的`setGenerateManyFiles`方法设置“Many Files”（多个文件）选项。 例如，传递值`true`以指示Output服务为XML数据源中的每条记录创建单独的PDF文件。 (如果通过`false`，输出服务将生成包含所有记录的单个PDF文档)。
    * 通过调用`PDFOutputOptionsSpec`对象的`setFileUri`方法并传递一个字符串值来设置文件URI选项，该字符串值指定输出服务生成的文件的位置。 “文件URI”选项与承载AEM Forms的J2EE应用程序服务器（而非客户端计算机）相关。
    * 通过调用`OutputOptionsSpec`对象的`setRecordName`方法并传递一个字符串值来设置“记录名称”选项，该字符串值指定用于分隔数据记录的数据源中的XML元素名称。 (例如，请考虑本节前面显示的XML数据源。 用于分隔数据记录的XML元素的名称为LoanRecord)。
 
 1. 设置渲染运行时选项
 
-   * 使用`RenderOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`RenderOptionsSpec`对象的构造函数创建对象。
    * 通过调用`RenderOptionsSpec`对象的`setCacheEnabled`并传递`Boolean`值`true`来缓存表单设计以改进输出服务的性能。
 
 1. 生成多个PDF文件
@@ -1888,7 +1888,7 @@ ResourceRepositoryClient
 
 1. 引用XML数据源。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储包含多个记录的表单数据。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储包含多个记录的表单数据。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示包含多个记录的XML文件的文件位置。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -1896,7 +1896,7 @@ ResourceRepositoryClient
 
 1. 设置PDF运行时选项。
 
-   * 使用`PDFOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFOutputOptionsSpec`对象的构造函数创建对象。
    * 通过为`OutputOptionsSpec`对象的`generateManyFiles`数据成员分配布尔值来设置“多文件”选项。 例如，将值`true`指定给此数据成员，以指示输出服务为XML数据源中的每条记录创建单独的PDF文件。 （如果将`false`分配给此数据成员，则输出服务将生成包含所有记录的单个PDF。）
    * 通过为`OutputOptionsSpec`对象的`fileURI`数据成员指定指定输出服务生成的文件位置的字符串值，来设置文件URI选项。 “文件URI”选项与承载AEM Forms的J2EE应用程序服务器（而非客户端计算机）相关。
    * 通过在数据源中指定指定XML元素名称的字符串值来设置记录名称选项，该名称将数据记录分隔到`OutputOptionsSpec`对象的`recordName`数据成员。
@@ -1904,8 +1904,8 @@ ResourceRepositoryClient
 
 1. 设置渲染运行时选项。
 
-   * 使用`RenderOptionsSpec`对象的构造函数创建&lt;a0/>对象。
-   * 将表单设计缓存到`RenderOptionsSpec`对象的`cacheEnabled`数据成员中，以便将值`true`指定给&lt;a1/>对象的&lt;a2/>数据成员，从而提高输出服务的性能。
+   * 使用`RenderOptionsSpec`对象的构造函数创建对象。
+   * 将表单设计缓存到`RenderOptionsSpec`对象的`cacheEnabled`数据成员中，以便将值`true`指定给对象的数据成员，从而提高输出服务的性能。
 
 1. 生成多个PDF文件。
 
@@ -1925,7 +1925,7 @@ ResourceRepositoryClient
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示包含结果数据的XML文件位置。 确保文件扩展名为。xml。
    * 创建一个字节数组，它存储`BLOB`对象的数据内容，该对象使用`OutputServiceService`对象的`generatePDFOutput`方法（第八个参数）填充结果数据。 通过获取`BLOB`对象的`binaryData`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入XML文件。
 
 **另请参阅**
@@ -2035,11 +2035,11 @@ ResourceRepositoryClient
 1. 引用XML数据源。
 
    * 创建一个`java.io.FileInputStream`对象，它表示用于通过使用PDF文档的构造函数并传递一个指定XML文件位置的字符串值来填充该XML数据源。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 定义搜索规则。
 
-   * 使用`Rule`对象的构造函数创建&lt;a0/>对象。
+   * 使用`Rule`对象的构造函数创建对象。
    * 通过调用`Rule`对象的`setPattern`方法并传递指定文本模式的字符串值来定义文本模式。
    * 通过调用`Rule`对象的`setForm`方法定义相应的表单设计。 传递指定表单设计名称的字符串值。
 
@@ -2053,14 +2053,14 @@ ResourceRepositoryClient
 
 1. 设置PDF运行时选项。
 
-   * 使用`PDFOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFOutputOptionsSpec`对象的构造函数创建对象。
    * 通过调用`PDFOutputOptionsSpec`对象的`setFileURI`方法，指定输出服务生成的PDF文件的名称和位置。 传递一个指定PDF文件位置的字符串值。 “文件URI”选项与承载AEM Forms的J2EE应用程序服务器（而非客户端计算机）相关。
    * 设置通过调用`PDFOutputOptionsSpec`对象的`setRules`方法定义的规则。 传递包含`Rule`对象的`java.util.List`对象。
    * 通过调用`PDFOutputOptionsSpec`对象的`setLookAhead`方法，设置扫描所定义文本模式的字节数。 传递一个表示字节数的整数值。
 
 1. 设置渲染运行时选项。
 
-   * 使用`RenderOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`RenderOptionsSpec`对象的构造函数创建对象。
    * 通过调用`RenderOptionsSpec`对象的`setCacheEnabled`并传递`true`，缓存表单设计以提高输出服务的性能。
 
 1. 生成PDF文档。
@@ -2121,7 +2121,7 @@ ResourceRepositoryClient
 
 1. 引用XML数据源。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储将与PDF文档合并的数据。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储将与PDF文档合并的数据。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示要加密的PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -2129,7 +2129,7 @@ ResourceRepositoryClient
 
 1. 定义搜索规则。
 
-   * 使用`Rule`对象的构造函数创建&lt;a0/>对象。
+   * 使用`Rule`对象的构造函数创建对象。
    * 通过为`Rule`对象的`pattern`数据成员指定指定文本模式的字符串值来定义文本模式。
    * 通过为`Rule`对象的`form`数据成员指定指定表单设计的字符串值来定义相应的表单设计。
 
@@ -2143,7 +2143,7 @@ ResourceRepositoryClient
 
 1. 设置PDF运行时选项
 
-   * 使用`PDFOutputOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFOutputOptionsSpec`对象的构造函数创建对象。
    * 通过为`PDFOutputOptionsSpec`对象的`fileURI`数据成员分配一个字符串值来设置文件URI选项，该字符串值指定Output服务生成的PDF文件的位置。 “文件URI”选项与承载AEM Forms的J2EE应用程序服务器（而非客户端计算机）相关。
    * 通过指定一个整数值来设置复制选项，该整数值指定输出服务为`PDFOutputOptionsSpec`对象的`copies`数据成员生成的复制数。
    * 通过将存储规则的`MyArrayOf_xsd_anyType`对象分配给`PDFOutputOptionsSpec`对象的`rules`数据成员来设置您定义的规则。
@@ -2151,8 +2151,8 @@ ResourceRepositoryClient
 
 1. 设置渲染运行时选项
 
-   * 使用`RenderOptionsSpec`对象的构造函数创建&lt;a0/>对象。
-   * 将表单设计缓存到`true`对象的`RenderOptionsSpec`数据成员中，以提高输出服务的性能。`cacheEnabled`
+   * 使用`RenderOptionsSpec`对象的构造函数创建对象。
+   * 将表单设计缓存到`RenderOptionsSpec`对象的`cacheEnabled`数据成员中，以提高输出服务的性能。`true`
 
    >[!NOTE]
    >
@@ -2184,7 +2184,7 @@ ResourceRepositoryClient
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示包含结果数据的XML文件位置。 确保文件扩展名为XML。
    * 创建一个字节数组，它存储`BLOB`对象的数据内容，该对象使用`OutputServiceService`对象的`generatePDFOutput`方法（第八个参数）填充结果数据。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入XML文件。
 
 **另请参阅**
@@ -2278,7 +2278,7 @@ ResourceRepositoryClient
 1. 检索交互式PDF文档。
 
    * 创建一个`java.io.FileInputStream`对象，该对象使用其构造函数并传递一个字符串值来表示要转换的交互式PDF文档，该字符串值指定交互式PDF文件的位置。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 转换PDF文档。
 
@@ -2336,11 +2336,11 @@ ResourceRepositoryClient
 
 1. 检索交互式PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储交互式PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储交互式PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示交互式PDF文档的文件位置。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`MTOM`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`MTOM`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 转换PDF文档。
 
@@ -2360,7 +2360,7 @@ ResourceRepositoryClient
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示非交互式PDF文档的文件位置。
    * 创建一个字节数组，用于存储`transformPDF`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**

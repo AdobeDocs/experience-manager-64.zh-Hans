@@ -230,7 +230,7 @@ AEM附带一个示例搜索组件，该组件可根据给定条件在Salesforce�
 
 1. 将Salesforce搜索组件拖至页面（前提是已启用它）。 要启用它，请转至“设计”模式，并将其添加到相应区域)。
 
-   ![chlimage_1-29](assets/chlimage_1-29.jpeg)
+   ![chlimage_1-21](assets/chlimage_1-29.jpeg)
 
 1. 打开搜索组件并指定搜索参数，然后单击&#x200B;**确定。**
 

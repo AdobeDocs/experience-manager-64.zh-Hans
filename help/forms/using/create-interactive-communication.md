@@ -185,7 +185,7 @@ ht-degree: 2%
 
    ![Web频道预览](assets/webchannelpreview.png)
 
-此外，您还可以使用代理UI[准备和发送交互式通信。](/help/forms/using/prepare-send-interactive-communication.md)
+此外，您还可以使用代理UI](/help/forms/using/prepare-send-interactive-communication.md)准备和发送交互式通信。[
 
 ## 在交互通信中配置属性{#configuring-properties-in-interactive-communication}
 

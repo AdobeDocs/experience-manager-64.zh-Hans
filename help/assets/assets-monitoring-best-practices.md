@@ -1,5 +1,5 @@
 ---
-title: 资产监控最佳实践
+title: Assets 监控最佳实践
 description: 部署AEM实例后监控其环境和性能的最佳实践。
 contentOwner: AG
 translation-type: tm+mt

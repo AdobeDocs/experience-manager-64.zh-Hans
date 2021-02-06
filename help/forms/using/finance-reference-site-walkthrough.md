@@ -160,7 +160,7 @@ We.Finance收到Sarah提交的信用卡申请。 任务被分配给Gloria Rios�
 
 当Sarah填写并提交信用卡应用程序时，将在Gloria的AEM收件箱中创建Forms Workflow触发器和任务。
 
-AEM FormsOSGi提供以表单为中心的工作流，使您能够构建基于表单的自适应工作流。 这些工作流可用于审核和批准、业务流程流、开始文档服务、与Adobe Sign签名工作流集成等。 有关详细信息，请参阅OSGi[上以Forms为中心的工作流。](/help/forms/using/aem-forms-workflow.md)
+AEM FormsOSGi提供以表单为中心的工作流，使您能够构建基于表单的自适应工作流。 这些工作流可用于审核和批准、业务流程流、开始文档服务、与Adobe Sign签名工作流集成等。 有关详细信息，请参阅OSGi](/help/forms/using/aem-forms-workflow.md)上以Forms为中心的工作流。[
 
 下图描述了处理信用卡应用程序并生成应用程序PDF输出的AEM工作流。
 
@@ -412,7 +412,7 @@ Sarah选择申请住房抵押，并单击住房抵押计算器结果上的&#x200
 
 转至`https://[server]:[port]/content/we-finance/global/en/all-forms.html`并单击“Home Mortgage Application（家庭抵押应用程序）”上的&#x200B;**Apply now**&#x200B;按钮。 填写“入门”选项卡中的详细信息，尝试其他选项，然后提交应用程序。
 
-请确保在应用程序中指定有效的电子邮件ID，以便在收件箱中接收确认邮件。
+请确保在应用程序中指定有效的电子邮件ID，以便在您的收件箱中接收确认邮件。
 
 ### We.Finance接收应用程序{#approving_the_application-1}
 
@@ -434,7 +434,7 @@ Gloria打开任务，单击“需要更多信息”，并对缺少的政府ID发
 
 当Sarah填写并提交住房抵押申请时，将在Gloria的AEM收件箱中创建Forms Workflow触发器和任务。 当Gloria查看应用程序并请求更多信息时，该任务将分配给John Doe。 当John Doe附加该ID并重新提交该应用程序时，它将分配给Gloria。 这在与按揭贷款应用程序关联的AEM工作流中定义。
 
-AEM FormsOSGi提供以表单为中心的工作流，使您能够构建基于表单的自适应工作流。 这些工作流可用于审核和批准、业务流程流、开始文档服务、与Adobe Sign签名工作流集成等。 有关详细信息，请参阅OSGi[上以Forms为中心的工作流。](/help/forms/using/aem-forms-workflow.md)
+AEM FormsOSGi提供以表单为中心的工作流，使您能够构建基于表单的自适应工作流。 这些工作流可用于审核和批准、业务流程流、开始文档服务、与Adobe Sign签名工作流集成等。 有关详细信息，请参阅OSGi](/help/forms/using/aem-forms-workflow.md)上以Forms为中心的工作流。[
 
 下图描述了与按揭贷款应用程序关联的AEM工作流。
 

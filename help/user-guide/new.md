@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 4c1b1210503dc535585ae8912a7b94b88d1604cf
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 23%
+ht-degree: 29%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Experience Manager(AEM)是一个基于Web的客户端——服务器系统
 * [AEM 6.5](https://helpx.adobe.com/cn/support/experience-manager/6-5.html)
 * [AEM 6.3](https://helpx.adobe.com/cn/support/experience-manager/6-3.html)
 * [AEM 6.2](https://helpx.adobe.com/cn/support/experience-manager/6-2.html)**
-* [AEM 6.1](https://docs.adobe.com/docs/zh-cn/aem/6-1.html)**
+* [AEM 6.1](https://docs.adobe.com/docs/cn/aem/6-1.html)**
 * [AEM 6.0](https://docs.adobe.com/docs/cn/aem/6-0.html)**
 * [AEM 5.6.1](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
 * [AEM 5.6](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**

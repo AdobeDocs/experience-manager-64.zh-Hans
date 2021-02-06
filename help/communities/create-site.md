@@ -215,7 +215,7 @@ ht-degree: 1%
 >在创作实例上，从主菜单
 >
 >1. 导航到&#x200B;**[!UICONTROL 工具>操作>复制]**&#x200B;菜单
->1. 选择作者&#x200B;**[!UICONTROL 上的代理]**
+>1. 选择作者&#x200B;]**上的代理**[!UICONTROL 
 >1. 选择&#x200B;**[!UICONTROL 默认代理（发布）]**
 >1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;旁边，选择&#x200B;**[!UICONTROL 编辑]**
 >1. 在“代理设置”的弹出对话框中，选择“传输”选项卡
@@ -266,7 +266,7 @@ ht-degree: 1%
 
 ## 配置身份验证错误{#configure-for-authentication-error}
 
-在配置站点并将其推送到发布后，在发布实例上配置登录映射[(](sites-console.md#configure-for-authentication-error))。 `Adobe Granite Login Selector Authentication Handler`优点是，当登录信用输入不正确时，身份验证错误将重新显示社区站点的登录页面并显示错误消息。
+在配置站点并将其推送到发布后，在发布实例上配置登录映射](sites-console.md#configure-for-authentication-error)(`Adobe Granite Login Selector Authentication Handler`)。 [优点是，当登录信用输入不正确时，身份验证错误将重新显示社区站点的登录页面并显示错误消息。
 
 将`Login Page Mapping`添加为
 

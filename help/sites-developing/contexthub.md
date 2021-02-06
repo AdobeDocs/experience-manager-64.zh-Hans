@@ -45,7 +45,7 @@ ContextHub在客户端上存储持续的上下文数据。 ContextHub Javascript
 
 ## 分段 {#segmentation}
 
-ContextHub包含一个分段引擎，它管理区段并确定为当前上下文解析哪些区段。 定义了多个区段。 您可以使用Javascript API确定已解析的段[。](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments)
+ContextHub包含一个分段引擎，它管理区段并确定为当前上下文解析哪些区段。 定义了多个区段。 您可以使用Javascript API确定已解析的段](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments)。[
 
 ## 演示文稿 {#presentation}
 

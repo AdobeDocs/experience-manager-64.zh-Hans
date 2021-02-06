@@ -64,7 +64,7 @@ Adobe Experience Manager(AEM)资产通过[!DNL Adobe I/O]配置了品牌门户�
 
 有关详细说明，请参阅
 
-* [AEM 6.4 Service Pack 发行说明](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [AEM 6.4 Service Pack 发行说明](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 **如果您** 找不到最新的AEM包或服务包，请与客户服务部门联系。
 

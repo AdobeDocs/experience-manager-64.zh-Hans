@@ -108,12 +108,12 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能使您的组织能
 1. 创建一个Acrobat Reader DC扩展Client对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`ReaderExtensionsServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`ReaderExtensionsServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索PDF文档。
 
    * 使用PDF文档的构造函数并传递一个指定PDF文档位置的字符串值，创建一个表示PDF的`java.io.FileInputStream`对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 指定要应用的使用权限。
 
@@ -122,7 +122,7 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能使您的组织能
 
 1. 将使用权限应用于PDF文档。
 
-   * 使用`ReaderExtensionsOptionSpec`对象的构造函数创建&lt;a0/>对象。 此对象包含Acrobat Reader DC扩展服务所需的运行时选项。 调用此构造函数时，必须指定以下值：
+   * 使用`ReaderExtensionsOptionSpec`对象的构造函数创建对象。 此对象包含Acrobat Reader DC扩展服务所需的运行时选项。 调用此构造函数时，必须指定以下值：
 
       * `UsageRights`对象，其中包含要应用于文档的使用权限。
       * 一个字符串值，它指定用户在Adobe Reader7.x中打开启用权限的PDF文档时看到的消息。此消息未在Adobe Reader8.0中显示。
@@ -177,11 +177,11 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能使您的组织能
 
 1. 检索PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储应用了使用权限的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储应用了使用权限的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
-   * 通过为`MTOM`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`MTOM`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 指定要应用的使用权限。
 
@@ -190,7 +190,7 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能使您的组织能
 
 1. 将使用权限应用于PDF文档。
 
-   * 使用`ReaderExtensionsOptionSpec`对象的构造函数创建&lt;a0/>对象。 此对象包含Acrobat Reader DC扩展服务所需的运行时选项。
+   * 使用`ReaderExtensionsOptionSpec`对象的构造函数创建对象。 此对象包含Acrobat Reader DC扩展服务所需的运行时选项。
    * 将`UsageRights`对象指定给`ReaderExtensionsOptionSpec`对象的`usageRights`数据成员。
    * 为`ReaderExtensionsOptionSpec`对象的`message`文档成员指定一个字符串值，该值指定用户在Adobe Reader打开启用权限的PDF时看到的消息。
    * 通过调用`ReaderExtensionsServiceClient`对象的`applyUsageRights`方法并传递以下值，将使用权限应用于PDF文档:
@@ -206,7 +206,7 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能使您的组织能
 
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示启用权限的PDF文档的文件位置。
    * 创建一个字节数组，用于存储`applyUsageRights`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -279,12 +279,12 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能使您的组织能
 
 1. 创建一个Acrobat Reader DC扩展Client对象。
 
-   使用`ReaderExtensionsServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ReaderExtensionsServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 检索PDF文档。
 
-   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个&lt;a0/>对象，它表示启用权限的PDF文档。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个对象，它表示启用权限的PDF文档。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 从PDF文档中删除使用权限。
 
@@ -332,11 +332,11 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能使您的组织能
 
 1. 检索PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储启用权限的PDF文档，从中删除了使用权限。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储启用权限的PDF文档，从中删除了使用权限。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`MTOM`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`MTOM`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 从PDF文档中删除使用权限。
 
@@ -344,9 +344,9 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能使您的组织能
 
 1. 将使用权限应用于PDF文档。
 
-   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个表示PDF文件位置的字符串值，创建一个&lt;a0/>对象。
+   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个表示PDF文件位置的字符串值，创建一个对象。
    * 创建一个字节数组，用于存储`removeUsageRights`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
 
 **另请参阅**
 
@@ -417,12 +417,12 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能使您的组织能
 
 1. 创建一个Acrobat Reader DC扩展Client对象。
 
-   使用`ReaderExtensionsServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ReaderExtensionsServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 检索PDF文档。
 
    * 使用`java.io.FileInputStream`对象的构造函数并传递一个字符串值，该字符串值指定启用权限的PDF文档的位置，以创建表示启用权限的PDF文档的对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 从PDF文档中删除使用权限。
 
@@ -467,11 +467,11 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能使您的组织能
 
 1. 检索PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储启用权限的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储启用权限的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示启用权限的PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`MTOM`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`MTOM`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 从PDF文档中删除使用权限。
 

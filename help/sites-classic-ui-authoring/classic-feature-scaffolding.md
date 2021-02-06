@@ -96,7 +96,7 @@ scaffold由一个表单组成要创建页面的每段内容都有一个字段，
 
 注意此字段的 name 属性。它具有值
 
-。/jcr:content/par/text/text
+./jcr:content/par/text/text
 
 这是当基架用于创建页面时，将向其写入此字段内容的属性的名称。此属性以相对路径表示，从表示要创建页面的节点开始。它指定 text 属性，此属性位于 text 节点之下，此节点位于 par 节点之下，而 par 节点自身又是页面节点下 jcr:content 节点的子项。
 

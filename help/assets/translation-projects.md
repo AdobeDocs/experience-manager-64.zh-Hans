@@ -97,7 +97,7 @@ ht-degree: 23%
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. 要导航到文件夹，请选择语言副本，然后单击“资产&#x200B;**[!UICONTROL 中显示”。]**
+1. 要导航到文件夹，请选择语言副本，然后单击“资产&#x200B;]**中显示”。**[!UICONTROL 
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 

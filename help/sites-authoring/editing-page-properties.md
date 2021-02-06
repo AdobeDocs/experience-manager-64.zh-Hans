@@ -84,7 +84,7 @@ ht-degree: 89%
 
    允许您输入此页面的虚 URL，以便使用更短并且/或者含意更清楚的 URL。
 
-   例如，如果对于网站h `ttp://example.com,`，虚URL设置为w `elcome`，且路径/ `v1.0/startpage`标识的页面为h &lt;a2/>，则h `ttp://example.com/welcome`将是h `ttp://example.com/content/v1.0/startpage`的虚URL
+   例如，如果对于网站h `ttp://example.com,`，虚URL设置为w `elcome`，且路径/ `v1.0/startpage`标识的页面为h ，则h `ttp://example.com/welcome`将是h `ttp://example.com/content/v1.0/startpage`的虚URL
 
    >[!CAUTION]
    >

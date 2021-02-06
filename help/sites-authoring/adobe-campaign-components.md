@@ -40,7 +40,7 @@ ht-degree: 70%
 
 各组件如下图所示：
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ### 标题(活动){#heading-campaign}
 
@@ -51,7 +51,7 @@ ht-degree: 70%
 
 您可以直接编辑&#x200B;**标题（营销活动）**&#x200B;组件。留空将使用页面标题。
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 您可以配置以下各项：
 

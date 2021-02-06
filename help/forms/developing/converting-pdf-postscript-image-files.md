@@ -109,11 +109,11 @@ ht-degree: 0%
 1. 创建转换PDF客户端。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`ConvertPdfServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`ConvertPdfServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 引用PDF文档转换为PostScript文件。
 
-   * 使用`java.io.FileInputStream`对象的构造函数创建一个&lt;a0/>对象，并传递一个字符串值，它指定要转换的PDF文档的位置。
+   * 使用`java.io.FileInputStream`对象的构造函数创建一个对象，并传递一个字符串值，它指定要转换的PDF文档的位置。
    * 使用`com.adobe.idp.Document`构造函数创建存储PDF文档的`com.adobe.idp.Document`对象。 传递包含PDF文档的`java.io.FileInputStream`对象。
 
 1. 设置转换运行时选项。
@@ -172,7 +172,7 @@ ht-degree: 0%
 
 1. 引用PDF文档转换为PostScript文件。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储转换为PostScript文件的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储转换为PostScript文件的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示要转换的PDF文档的文件位置，以及在中打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并将字节数组、开始位置和流长度传递给读取，用流数据填充字节数组。
@@ -196,7 +196,7 @@ ht-degree: 0%
 
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示PS文件的文件位置。
    * 创建一个字节数组，用于存储`encryptPDFUsingPassword`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`字段的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PostScript文件。
 
 **另请参阅**
@@ -273,16 +273,16 @@ ht-degree: 0%
 1. 创建转换PDF客户端。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`ConvertPdfServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`ConvertPdfServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索要转换的PDF文档。
 
    * 创建一个`java.io.FileInputStream`对象，它使用其构造函数并传递一个指定PDF文档位置的字符串值来表示要转换的PDF文档。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置运行时选项。
 
-   * 使用`ToImageOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`ToImageOptionsSpec`对象的构造函数创建对象。
    * 根据需要调用属于此对象的方法。 例如，通过调用`setImageConvertFormat`方法并传递指定格式类型的`ImageConvertFormat`枚举值来设置图像类型。
 
    >[!NOTE]
@@ -333,7 +333,7 @@ ht-degree: 0%
 
 1. 检索要转换的PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 此`BLOB`对象用于存储PDF表单。
+   * 使用`BLOB`对象的构造函数创建对象。 此`BLOB`对象用于存储PDF表单。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它指定PDF表单的位置以及在中打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
@@ -341,7 +341,7 @@ ht-degree: 0%
 
 1. 设置运行时选项。
 
-   * 使用`ToImageOptionsSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`ToImageOptionsSpec`对象的构造函数创建对象。
    * 根据需要调用属于此对象的方法。 例如，通过调用`setImageConvertFormat`方法并传递指定格式类型的`ImageConvertFormat`明细列表值来设置图像类型。
 
    >[!NOTE]

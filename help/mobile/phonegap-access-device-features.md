@@ -30,7 +30,7 @@ ht-degree: 2%
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-这些设备API组件的源代码在Github[上可用。](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components)
+这些设备API组件的源代码在Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components)上可用。[
 
 有关每个API的使用的详细信息，我建议查看[Cordova插件文档](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html)。
 

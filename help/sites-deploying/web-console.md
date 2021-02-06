@@ -77,7 +77,7 @@ Web控制台优惠一系列用于维护OSGi包的选项卡，包括：
 
 从列表中选择任何条目将显示与该配置相关的参数：
 
-![chlimage_1-29](assets/chlimage_1-21.png)
+![chlimage_1-21](assets/chlimage_1-21.png)
 
 然后，您可以根据需要更新参数，并：
 

@@ -280,13 +280,13 @@ XML数据源用于预填充具有固定布局和可流动布局的表单。 但�
 
    * 通过调用`javax.xml.transform.Transformer`对象的静态`newInstance`方法创建`javax.xml.transform.Transformer`对象。
    * 通过调用`TransformerFactory`对象的`newTransformer`方法创建`Transformer`对象。
-   * 使用`ByteArrayOutputStream`对象的构造函数创建&lt;a0/>对象。
-   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数创建`org.w3c.dom.Document`对象，并传递在步骤1中创建的&lt;a1/>对象。
-   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数并传递`ByteArrayOutputStream`对象，创建&lt;a0/>对象。
+   * 使用`ByteArrayOutputStream`对象的构造函数创建对象。
+   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数创建`org.w3c.dom.Document`对象，并传递在步骤1中创建的对象。
+   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数并传递`ByteArrayOutputStream`对象，创建对象。
    * 通过调用`javax.xml.transform.Transformer`对象的`transform`方法并传递`javax.xml.transform.dom.DOMSource`和`javax.xml.transform.stream.StreamResult`对象，填充Java `ByteArrayOutputStream`对象。
    * 创建一个字节数组，并将`ByteArrayOutputStream`对象的大小分配给字节数组。
    * 通过调用`ByteArrayOutputStream`对象的`toByteArray`方法填充字节数组。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递字节数组，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递字节数组，创建对象。
 
 1. 渲染预填充的表单
 
@@ -357,13 +357,13 @@ XML数据源用于预填充具有固定布局和可流动布局的表单。 但�
 
    * 通过调用`javax.xml.transform.Transformer`对象的静态`newInstance`方法创建`javax.xml.transform.Transformer`对象。
    * 通过调用`TransformerFactory`对象的`newTransformer`方法创建`Transformer`对象。
-   * 使用`ByteArrayOutputStream`对象的构造函数创建&lt;a0/>对象。
-   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数创建`org.w3c.dom.Document`对象，并传递在步骤1中创建的&lt;a1/>对象。
-   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数并传递`ByteArrayOutputStream`对象，创建&lt;a0/>对象。
+   * 使用`ByteArrayOutputStream`对象的构造函数创建对象。
+   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数创建`org.w3c.dom.Document`对象，并传递在步骤1中创建的对象。
+   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数并传递`ByteArrayOutputStream`对象，创建对象。
    * 通过调用`javax.xml.transform.Transformer`对象的`transform`方法并传递`javax.xml.transform.dom.DOMSource`和`javax.xml.transform.stream.StreamResult`对象，填充Java `ByteArrayOutputStream`对象。
    * 创建一个字节数组，并将`ByteArrayOutputStream`对象的大小分配给字节数组。
    * 通过调用`ByteArrayOutputStream`对象的`toByteArray`方法填充字节数组。
-   * 使用`BLOB`对象的构造函数创建`setBinaryData`对象并调用其&lt;a1/>方法并传递字节数组。
+   * 使用`BLOB`对象的构造函数创建`setBinaryData`对象并调用其方法并传递字节数组。
 
 1. 渲染预填充的表单
 

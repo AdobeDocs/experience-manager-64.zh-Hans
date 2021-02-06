@@ -105,7 +105,7 @@ AEM表单存储库存储对GDS和内容数据库根目录（对于内容服务�
 
 IBM拥有一套工具和帮助系统来帮助数据库管理员管理其备份和恢复任务:
 
-* IBM DB2 Archive Log Accelerator（请参阅《IBM DB2 Archive Log Accelerator for z/OS用户指南》[。）](https://publib.boulder.ibm.com/infocenter/dzichelp/v2r2/topic/com.ibm.db2tools.alc.doc.ug/alcugb20.pdf?noframes=true)
+* IBM DB2 Archive Log Accelerator（请参阅《IBM DB2 Archive Log Accelerator for z/OS用户指南》](https://publib.boulder.ibm.com/infocenter/dzichelp/v2r2/topic/com.ibm.db2tools.alc.doc.ug/alcugb20.pdf?noframes=true)。）[
 * IBM DB2数据存档专家（请参阅[IBM DB2数据存档专家用户指南和参考](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true)。）
 
 DB2具有将数据库备份到Tivoli存储管理器的内置功能。 通过使用Tivoli存储管理器， DB2备份可以存储在其他介质或本地硬盘上。

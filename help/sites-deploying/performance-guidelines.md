@@ -57,7 +57,7 @@ ht-degree: 5%
    <td><p>属性</p> </td> 
    <td><p>Apache</p> </td> 
    <td><p>Edge</p> </td> 
-   <td><p>目标</p> </td> 
+   <td><p>Target</p> </td> 
   </tr> 
   <tr> 
    <td><p>资产</p> </td> 
@@ -71,7 +71,7 @@ ht-degree: 5%
    <td><p>Lucene</p> </td> 
    <td><p>IIS</p> </td> 
    <td><p>IE</p> </td> 
-   <td><p>分析</p> </td> 
+   <td><p>Analytics</p> </td> 
   </tr> 
   <tr> 
    <td><p>社区</p> </td> 
@@ -431,7 +431,7 @@ Adobe建议TarMK成为所有部署方案（针对AEM作者实例和发布实例�
 
 ### TarMK设置指南{#tarmk-settings-guideline}
 
-为获得良好性能，您应遵循下面的设置准则。 有关如何更改设置的说明，请参阅此页[。](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+为获得良好性能，您应遵循下面的设置准则。 有关如何更改设置的说明，请参阅此页](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)。[
 
 <table> 
  <tbody> 
@@ -541,7 +541,7 @@ Adobe建议TarMK成为所有部署方案（针对AEM作者实例和发布实例�
 
 ### MongoMK设置准则{#mongomk-settings-guidelines}
 
-为获得良好性能，您应遵循下面的设置准则。 有关如何更改设置的说明，请参阅此页[。](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+为获得良好性能，您应遵循下面的设置准则。 有关如何更改设置的说明，请参阅此页](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)。[
 
 <table> 
  <tbody> 
@@ -584,7 +584,7 @@ Adobe建议TarMK成为所有部署方案（针对AEM作者实例和发布实例�
   <tr> 
    <td>DocumentNodeStoreService</td> 
    <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td> 
-   <td><p>2048</p> <p>35(25)</p> <p>20(10)</p> <p>30(5)</p> <p>十(3)</p> <p>4(4)</p> <p>。/cache,size=2048,binary=0,-compact,-compress</p> </td> 
+   <td><p>2048</p> <p>35(25)</p> <p>20(10)</p> <p>30(5)</p> <p>十(3)</p> <p>4(4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td> 
    <td><p>缓存的默认大小设置为256 MB。</p> <p>影响执行缓存失效所花费的时间。</p> </td> 
   </tr> 
   <tr> 

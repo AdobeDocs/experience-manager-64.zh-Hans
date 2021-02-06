@@ -253,7 +253,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 ## 配置文本样式{#textstyles}
 
-作者可以应用样式来更改部分文本的外观。 这些样式基于您在CSS样式表中预定义的CSS类。 格式化内容使用`class`属性包含在`span`标记中以引用CSS类。 例如：
+作者可以应用样式来更改部分文本的外观。 样式基于您在CSS样式表中预定义的CSS类。 格式化内容使用`class`属性包含在`span`标记中以引用CSS类。 例如：
 
 `<span class=monospaced>Monospaced Text Here</span>`
 

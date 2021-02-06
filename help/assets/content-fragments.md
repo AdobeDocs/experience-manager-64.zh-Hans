@@ -216,7 +216,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
    * 这是片段外部的内容，但与片段的编辑相关。 通常是图像、视频或其他片段。
    * 将片段添加到页面时，集合中的单个资产可用于页面编辑器中的片段。 这意味着它们是可选的，具体取决于特定渠道的要求。
-   * 资产通过集合[与片段关联；关联的集合允许作者决定在创作页面时要使用哪些资产。](content-fragments-assoc-content.md)
+   * 资产通过集合](content-fragments-assoc-content.md)与片段关联；关联的集合允许作者决定在创作页面时要使用哪些资产。[
 
       * 集合可以通过模板、默认内容或作者在片段创作过程中与片段关联。
       * [资产(DAM)](managing-collections-touch-ui.md) 集合是片段关联内容的基础。
@@ -278,13 +278,13 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 * **内容模型**
 
    * 启用[，然后使用工具](content-fragments-models.md)创建。
-   * 创建结构化片段[时需要。](content-fragments-managing.md#creating-content-fragments)
+   * 创建结构化片段](content-fragments-managing.md#creating-content-fragments)时需要。[
    * 定义片段的结构（标题、内容元素、标记定义）。
    * 内容模型定义需要标题和一个数据元素；其他一切都是可选的。 模型定义片段和默认内容的最小范围（如果适用）。 创作片段内容时，作者无法更改定义的结构。
 
 * **片段模板**
 
-   * 创建简单片段[时需要。](content-fragments-managing.md#creating-content-fragments)
+   * 创建简单片段](content-fragments-managing.md#creating-content-fragments)时需要。[
    * 通常在项目实施过程中开发[;创作时无法创建。](/help/sites-developing/content-fragment-templates.md)
    * 定义简单片段的基本属性（标题、文本元素数量、标记定义）。
    * 模板定义需要一个标题和一个文本元素；其他一切都是可选的。 模板定义片段和默认内容的最小范围（如果适用）。 作者稍后可以扩展片段，使其超出模板中定义的范围。
@@ -292,7 +292,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 * **内容片段组件**
 
    * 有助于以HTML和／或JSON格式传送片段。
-   * 在页面[上引用片段时需要。](/help/sites-authoring/content-fragments.md)
+   * 在页面](/help/sites-authoring/content-fragments.md)上引用片段时需要。[
    * 负责片段的布局和投放;即渠道。
    * 片段需要一个或多个专用组件来定义布局，并提供一些或所有元素／变量和相关内容。
    * 在创作过程中将片段拖到页面上将自动关联所需的组件。

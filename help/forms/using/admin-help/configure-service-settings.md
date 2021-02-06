@@ -731,7 +731,7 @@ PDFG清除扫描秒数的默认值为`43200`（12小时）。 作业过期秒数
 
 例如，如果2009年7月17日晚上8点，并且您指定`C:/Test/WF0/failure/%Y/%M/%D/%H/`，则结果文件夹为`C:/Test/WF0/failure/2009/07/17/20`。
 
-如果路径不是绝对的，而是相对的，则在监视的文件夹内创建该文件夹。 有关文件模式的详细信息，请参阅[关于文件模式](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns)。
+如果路径不是绝对的，而是相对的，则在监视的文件夹内创建文件夹。 有关文件模式的详细信息，请参阅[关于文件模式](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns)。
 
 >[!NOTE]
 >

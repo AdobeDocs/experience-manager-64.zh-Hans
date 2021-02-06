@@ -1,6 +1,6 @@
 ---
 description: 'Experience League的Dynamic Media通讯是月刊。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media经典，以便您能够立即开始实现价值。 此一站式商店时事通讯中提供宝贵的知识构建资源，包括如何制作视频、解决方案概述，以及介绍一些主要功能，如图像预设、查看器预设、视频用户档案等。 '
-keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
+keywords: 动态媒体；新闻快讯；产品更新；提示与技巧；事件；客户成功；博客；博客；图像；视频；功能
 seo-description: 此一站式商店新闻快讯中提供相关知识构建资源，包括如何制作视频、解决方案概述，以及介绍一些主要功能，如图像预设、查看器预设、视频用户档案等。
 seo-title: 'AdobeDynamic Media通讯 '
 solution: Dynamic Media Classic
@@ -8,7 +8,7 @@ title: Dynamic Media通讯
 translation-type: tm+mt
 source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1206'
 ht-degree: 0%
 
 ---

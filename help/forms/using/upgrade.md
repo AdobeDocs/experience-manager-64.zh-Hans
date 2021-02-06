@@ -1,6 +1,6 @@
 ---
-title: 升级到AEM 6.4Forms
-seo-title: 升级到AEM 6.4Forms
+title: 升级到 AEM 6.4 Forms
+seo-title: 升级到 AEM 6.4 Forms
 description: '您可以从AEM 6.1Forms、AEM 6.2Forms和LiveCycleES4 SP1直接升级到6.3Forms。 '
 seo-description: '您可以从AEM 6.1Forms、AEM 6.2Forms和LiveCycleES4 SP1直接升级到6.3Forms。 '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 12a4785fe83c319e3b91bbdf4ae8cb5745f4f187
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# 升级到AEM 6.4Forms{#upgrade-to-aem-forms}
+# 升级到 AEM 6.4 Forms{#upgrade-to-aem-forms}
 
 AEM 6.4Forms包含若干新功能和增强功能，可简化表单和通信的创建、管理和用户体验。 要了解AEM 6.4Forms的所有新增功能和增强功能，请参阅[新增功能摘要文档](/help/forms/using/whats-new.md)。
 

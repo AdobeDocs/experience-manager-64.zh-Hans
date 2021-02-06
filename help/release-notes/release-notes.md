@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '2844'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 25%
 
 | 产品 | Adobe Experience Manager |
 |---|---|
-| 版本 | 6.4 |
+| 版本号 | 6.4 |
 | 类型 | 主要版本 |
-| 公开发行日期 | 2018年4月4日 |
-| 推荐更新 | 请参阅[AEM发行版和更新](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html) |
+| 公开发行日期 | 2018 年 4 月 4 日 |
+| 推荐更新 | 请参阅[AEM发行版和更新](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) |
 
 ### 相关事项 {#trivia}
 
@@ -138,7 +138,7 @@ AEM 6.4完成对下一代组件模型的转换。 AEM 6.3中引入的核心组�
 
 AEM Screens所代表的是在所有营销渠道（包括数字标牌和自助终端网络）中提供一致的信息。 AEM 6.4增加了在Microsoft Windows和Google Chrome OS硬件上运行Signage Player的支持。 此外，还提供了对远程设备管理和计划(渠道组)的增强。
 
-有关Screens更新的详细信息，请参阅[《AEM Screens用户指南》](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)。
+有关Screens更新的详细信息，请参阅[《AEM Screens用户指南》](https://docs.adobe.com/content/help/zh-Hans/experience-manager-screens/user-guide/aem-screens-introduction.html)。
 
 ### Experience Manager Communities {#experience-manager-communities}
 

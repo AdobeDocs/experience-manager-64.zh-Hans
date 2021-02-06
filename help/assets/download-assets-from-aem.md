@@ -73,6 +73,6 @@ ht-degree: 8%
 >[!MORELIKETHIS]
 >
 >* [下载受DRM保护的资源](drm.md)。
->* [在Win或Mac桌面上使用Experience Manager桌面应用程序下载资源](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)。
+>* [在Win或Mac桌面上使用Experience Manager桌面应用程序下载资源](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)。
 >* [从支持的Adobe应用程序中使用Adobe Creative Cloud资产链接下载资产](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)。
 

@@ -1,6 +1,6 @@
 ---
-title: SAML 2.0身份验证处理程序
-seo-title: SAML 2.0身份验证处理程序
+title: SAML 2.0 身份验证处理程序
+seo-title: SAML 2.0 身份验证处理程序
 description: 了解AEM中的SAML 2.0身份验证处理程序。
 seo-description: 了解AEM中的SAML 2.0身份验证处理程序。
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 9f8ee3448abeb9a2f4de09b6ccc2f29b00b44fe5
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# SAML 2.0身份验证处理程序{#saml-authentication-handler}
+# SAML 2.0 身份验证处理程序{#saml-authentication-handler}
 
 AEM随[SAML](http://saml.xml.org/saml-specifications)身份验证处理程序提供。 此处理函数使用`HTTP POST`绑定支持[ SAML](http://saml.xml.org/saml-specifications) 2.0身份验证请求协议(Web-SSO用户档案)。
 

@@ -175,7 +175,7 @@ Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hob
 
    ![2_testformproperties](assets/2_testformproperties.png)
 
-1. 右键单击为测试表单创建的文件夹（此处为testForm），然后选择&#x200B;**[!UICONTROL 创建>创建文件]**。 将文件命名为scriptingTest.js，并将以下代码添加到文件中，然后单击“保存全部”。****
+1. 右键单击为测试表单创建的文件夹（此处为testForm），然后选择&#x200B;**[!UICONTROL 创建>创建文件]**。 将文件命名为scriptingTest.js，并将以下代码添加到文件中，然后单击“保存全部”。]****[!UICONTROL 
 
    要使用以下代码测试另一个自适应表单，请更改&#x200B;**navigateTo**（第11、36和62行）中表单的路径和名称以及相应的测试用例。 有关用于测试表单和表单对象不同方面的API的详细信息，请参阅[Calvin API](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)。
 

@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -35,7 +35,7 @@ AEM 6.4除了在AEM 6.3中推出的智能标记外，还引入了基于人工智
 * 智能内容服务学习客户的业务分类，并使用它除通用标记外，还使用客户相关标记自动标记数字资产。 它显着提高了资产的可发现性，并缩短了上市时间。
 * Adobe Sensei为智能内容服务提供了强大动力，它使您能够针对您的业务分类训练图像识别算法。 此内容智能随后可用于对类似资产应用相关标记。
 
-要使用AEM Assets增强智能标记，请安装AEM 6.4](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html)的[最新服务包。
+要使用AEM Assets增强智能标记，请安装AEM 6.4](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)的[最新服务包。
 
 ## 智能翻译搜索(由Adobe Sensei提供支持){#smart-translation-search-powered-by-adobe-sensei}
 
@@ -139,7 +139,7 @@ AEM 6.4包含一套功能，支持各种分层存储首选项并实施生命周�
 
 Dynamic Media6.4版支持新模式——在该模式下，主控资产通过AEM Assets网络UI上传和管理，而Dynamic Media云投放服务在后台处理动态演绎版和其他动态媒体功能。
 
-在此模式中(首先推出[AEM 6.3功能包14410和18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html))，用户可以使用现代的AEM AssetsWeb UI从端到端资源管理和动态媒体功能中受益，同时仍可利用与Dynamic Media经典(Scene7)向后兼容的投放服务，包括投放URL，但未更改。
+在此模式中(首先推出[AEM 6.3功能包14410和18912](https://helpx.adobe.com/cn/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html))，用户可以使用现代的AEM AssetsWeb UI从端到端资源管理和动态媒体功能中受益，同时仍可利用与Dynamic Media经典(Scene7)向后兼容的投放服务，包括投放URL，但未更改。
 
 此外，AEM 6.4引入了以Adobe Sensei为后盾的新增功能、对VR和3D等新兴媒体的增强、Dynamic Media查看器以及交互式图像和传送横幅中的体验片段支持。
 
@@ -152,7 +152,7 @@ Dynamic Media6.4版支持新模式——在该模式下，主控资产通过AEM 
 
 另请参阅[将Dynamic Media资产添加到页面](../assets/adding-dynamic-media-assets-to-pages.md)文档，进一步了解如何将智能裁剪与Dynamic Media组件结合使用。
 
-### 智能图像处理 {#smart-imaging}
+### 智能成像 {#smart-imaging}
 
 * 智能图像处理利用每个用户独特的查看特性自动提供为其体验优化的图像，从而获得更好的性能和参与度。
 * 图像会根据浏览器功能自动转换为不同格式。

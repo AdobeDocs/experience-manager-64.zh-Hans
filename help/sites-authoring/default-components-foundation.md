@@ -65,7 +65,7 @@ ht-degree: 83%
 
 您可以为链接定义标题和描述。
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-111](assets/chlimage_1-191.png)
 
 ### 自适应图像 {#adaptive-image}
 
@@ -723,7 +723,7 @@ Flash 组件允许您加载 Flash 影片。您可以从内容查找器中将 Fla
 ### Slideshow  {#slideshow}
 
 >[!CAUTION]
->此基础组件已被弃用。Adobe 建议改用[轮播核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)。
+>此基础组件已被弃用。Adobe 建议改用[轮播核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/carousel.html)。
 
 >[!CAUTION]
 >

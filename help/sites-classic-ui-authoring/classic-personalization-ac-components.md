@@ -24,7 +24,7 @@ ht-degree: 77%
 
 ## Adobe Campaign 新闻稿组件  {#adobe-campaign-newsletter-components}
 
-所有营销活动组件均遵循[电子邮件模板的最佳实践](/help/sites-administering/best-practices-for-email-templates.md)中列出的最佳实践，并且均基于 Adobe 标记语言 [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html)。
+所有营销活动组件均遵循[电子邮件模板的最佳实践](/help/sites-administering/best-practices-for-email-templates.md)中列出的最佳实践，并且均基于 Adobe 标记语言 [HTL](https://helpx.adobe.com/cn/experience-manager/htl/using/overview.html)。
 
 如果打开的新闻稿/电子邮件已配置为与 Adobe Campaign 集成，您应会在 **Adobe Campaign 新闻稿**&#x200B;部分看到以下组件：
 
@@ -38,7 +38,7 @@ ht-degree: 77%
 
 以下部分介绍了这些组件。
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### 标题(活动){#heading-campaign}
 

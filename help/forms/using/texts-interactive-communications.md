@@ -215,7 +215,7 @@ ht-degree: 0%
 
 ![textbackgroundcolorapplied-1](assets/textbackgroundcolorapplied-1.png)
 
-您可以直接点按“基本颜色”调色板中存在的基本颜色&#x200B;**`[A]`**，或在使用滑块&#x200B;**`[B]`**&#x200B;选择&#x200B;**后点按**&#x200B;选择&lt;a2/>以选择相应的颜色阴影。
+您可以直接点按“基本颜色”调色板中存在的基本颜色&#x200B;**`[A]`**，或在使用滑块&#x200B;**`[B]`**&#x200B;选择&#x200B;**后点按**&#x200B;选择以选择相应的颜色阴影。
 
 或者，您也可以转到高级选项卡，选择适当的色相、明度和饱和度&#x200B;**`[C]`**&#x200B;以创建精确的颜色，然后点按选择&#x200B;**`[D]`**&#x200B;以应用颜色以高亮显示文本。
 
@@ -247,7 +247,7 @@ ht-degree: 0%
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 
-文本编辑器内置了对210个特殊字符的支持。 管理员可以通过自定义[添加对更多／自定义特殊字符的支持。](/help/forms/using/custom-special-characters.md)
+文本编辑器内置了对210个特殊字符的支持。 管理员可以通过自定义](/help/forms/using/custom-special-characters.md)添加对更多／自定义特殊字符的支持。[
 
 ## 搜索并替换文本{#search-features}
 

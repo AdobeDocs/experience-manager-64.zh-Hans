@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
    电子邮件通知模板是[HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email)。 您可以用自定义代码替换现有的html代码以更改模板的外观。
 
-1. 保存文件。 现在，自定义模板已准备就绪。
+1. 保存文件。现在，自定义模板已准备就绪。
 
 ## 创建电子邮件模板{#create-an-email-template}
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
    电子邮件通知模板是[HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email)。 可向文件添加自定义HTML代码以创建新模板。
 
-1. 保存文件。 模板已准备好在分配任务步骤中使用。
+1. 保存文件。模板已准备好在分配任务步骤中使用。
 
 ## 在分配任务步骤{#use-an-email-template-in-an-assign-task-step}中使用电子邮件模板
 

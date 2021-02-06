@@ -89,7 +89,7 @@ GITHUB上的代码
 
 1. 选择一个或多个要转换的对话框，然后单击或点按&#x200B;**转换X对话框**&#x200B;以开始转换过程。
 
-   ![chlimage_1-29](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21.png)
 
 1. 所选对话框将列出其转换结果。 如果转换成功，则行包含链接，用于视图转换的对话框或以CRXDE Lite打开它。
 

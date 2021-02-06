@@ -27,7 +27,7 @@ AEM与[Search&amp;Promote](https://www.adobe.com/solutions/testing-targeting/sea
 * 利用Search&amp;Promote的远程控制功能执行产品源的按需或计划请求
 * 不同Search&amp;Promote帐户的源生成，配置为云服务配置。
 
-您需要有一个有效帐户并配置到Search&amp;Promote[的连接。 ](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote)您还必须验证您使用的[数据中心](/help/sites-administering/search-and-promote.md#configuring-the-data-center)是否正确，并确保已配置**远程服务器URI **。
+您需要有一个有效帐户并配置到Search&amp;Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote)的连接。 [您还必须验证您使用的[数据中心](/help/sites-administering/search-and-promote.md#configuring-the-data-center)是否正确，并确保已配置**远程服务器URI **。
 
 ## 设置产品源{#set-up-the-product-feed}
 
@@ -82,7 +82,7 @@ AEM与[Search&amp;Promote](https://www.adobe.com/solutions/testing-targeting/sea
 
 1. 选中&#x200B;**[!UICONTROL 启用计划]**&#x200B;框。
 1. 选择&#x200B;**[!UICONTROL 计划]**。 它是实际的馈源生成计划。
-1. 启用或不启用&#x200B;**[!UICONTROL 按需索引。]**&#x200B;此功能用于手动调用Search&amp;Promote索引。 如果选中“请求完整产品源&#x200B;**[!UICONTROL ”,Search&amp;Promote将请求完整产品源。]**&#x200B;否则，请求增量产品源。
+1. 启用或不启用&#x200B;**[!UICONTROL 按需索引。]**&#x200B;此功能用于手动调用Search&amp;Promote索引。 如果选中“请求完整产品源&#x200B;]**”,Search&amp;Promote将请求完整产品源。**[!UICONTROL &#x200B;否则，请求增量产品源。
 
    >[!NOTE]
    >

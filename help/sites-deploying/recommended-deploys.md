@@ -136,7 +136,7 @@ MicroKernel在AEM 6.4中充当持久性管理器。根据实例的用途和您�
 
 您可以使用这些决策表来确定哪种部署类型最适合您的需求。
 
-Adobe强烈建议TarMK成为客户在所有部署方案（AEM作者实例和发布实例除外）中使用的默认持久性技术。
+Adobe强烈建议TarMK成为客户在所有部署方案（AEM作者实例和发布实例除外）中使用的默认持久性技术，下面概述的用例除外。
 
 ### 在创作实例{#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}上选择AEM MongoMK而不是TarMK的例外
 

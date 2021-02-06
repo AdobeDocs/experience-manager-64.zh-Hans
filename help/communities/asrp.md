@@ -49,7 +49,7 @@ ht-degree: 2%
 
 * 从全局导航：**[!UICONTROL 工具>社区>存储配置]**
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![chlimage_1-311](assets/chlimage_1-310.png)
 
 * 选择&#x200B;**[!UICONTROL Adobe存储资源提供程序(ASRP)]**
 * 以下信息来自供应过程

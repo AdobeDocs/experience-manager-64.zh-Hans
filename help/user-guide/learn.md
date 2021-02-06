@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 27%
+ht-degree: 29%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Forms 将表单创作、管理和发布与通信管理功能、文档安全�
 
 ## AEM Screens {#aem-screens}
 
-Screens是一项Adobe Experience Manager功能，允许您发布动态和交互式数字体验以及与各种屏幕相关的交互，并结合一个全面的数字营销平台。  [了解更多.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Screens是一项Adobe Experience Manager功能，允许您发布动态和交互式数字体验以及与各种屏幕相关的交互，并结合一个全面的数字营销平台。  [了解更多.](https://docs.adobe.com/content/help/zh-Hans/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 

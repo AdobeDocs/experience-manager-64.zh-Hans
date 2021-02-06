@@ -56,7 +56,7 @@ MSM在源资产及其Live Copy之间保持实时关系，以便：
 
 * **恢复：** 恢复Live关系，以便Live Copy再次开始从源接收更新。请参阅[恢复操作](#suspend-and-resume-relationship)。
 
-* **重置：重** 置操作会通过覆盖任何本地更改，使Live Copy再次成为源的副本。它还会删除继承取消并重置所有元数据字段的继承。 要在将来进行本地修改，您必须再次取消特定字段的继承。 请参阅对LC[的本地修改。](#make-local-modifications-to-live-copy)
+* **重置：重** 置操作会通过覆盖任何本地更改，使Live Copy再次成为源的副本。它还会删除继承取消并重置所有元数据字段的继承。 要在将来进行本地修改，您必须再次取消特定字段的继承。 请参阅对LC](#make-local-modifications-to-live-copy)的本地修改。[
 
 * **分离：** 不可撤消地删除Live Copy资产／文件夹的Live关系。分离操作后，Live Copy永远无法接收源的更新，并且它不再是Live Copy了。 请参阅[删除关系](#remove-live-relationship)。
 
@@ -273,7 +273,7 @@ Live Copy和源是可以作为数字资产在一定程度上进行管理的资�
 
 在更多情况下，“资产”为MSM与“站点”功能的MSM行为相匹配。 需要注意的主要区别是：
 
-* 在站点中，您可以比较蓝图及其Live Copy，但是在资产中无法将源与其Live Copy进行比较。
+* 在站点中，您可以比较蓝图及其Live Copy，但是资产中无法将源与其Live Copy进行比较。
 * 网站通常有子项，但资产则没有。 创建单个资产的Live Copy时，不提供包含或排除子项的选项。
 * MSM for Assets不支持删除创建站点向导中的章节步骤。
 * 对于资产，MSM不支持在页面属性（触屏优化UI）上配置MSM锁。

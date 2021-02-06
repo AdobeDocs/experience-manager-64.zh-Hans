@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ AEM提供多种工具和资源，用于创建工作流模型、开发工作流�
 * [扩展工作流功能](/help/sites-developing/workflows-customizing-extending.md)
 * [以编程方式与工作流交互](/help/sites-developing/workflows-program-interaction.md)
 * [工作流步骤参考](/help/sites-developing/workflows-step-ref.md)
-* [工作流进程参考](/help/sites-developing/workflows-process-ref.md)
+* [工作流过程参考](/help/sites-developing/workflows-process-ref.md)
 * [工作流最佳实践](/help/sites-developing/workflows-best-practices.md)
 
 >[!NOTE]
@@ -139,7 +139,7 @@ AEM提供多种工具和资源，用于创建工作流模型、开发工作流�
 
    工作流在AEM的先前版本中创建。 这些组件可以在升级过程中保留，也可以作为上一版本的工作流包导出，然后导入到新版本中。
 
-### 临时工作流{#transient-workflows}
+### 瞬态工作流 {#transient-workflows}
 
 标准工作流在执行时保存运行时（历史记录）信息。 您还可以将工作流模型定义为&#x200B;**Tranient**&#x200B;以避免此类历史记录被保留。 这用于性能调整，因为它节省／避免了用于保持信息的时间／资源。
 

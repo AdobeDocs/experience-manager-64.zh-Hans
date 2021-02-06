@@ -12,14 +12,14 @@ translation-type: tm+mt
 source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1065'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
 # SPA AEM快速入门——角度{#getting-started-with-spas-in-aem-angular}
 
-单页应用程序(SPA)可以为网站用户优惠引人入胜的体验。 开发人员希望能够使用SPA框架构建站点，而作者希望无缝编辑AEM中的内容，使用SPA框架构建站点。
+单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用SPA框架构建站点，而作者希望无缝编辑AEM中的内容，使用SPA框架构建站点。
 
 SPA创作功能优惠了在AEM内支持SPA的一个全面的解决方案。 本文介绍了Angular框架上简化的SPA应用程序，并解释了它是如何组合在一起的，使您能快速与自己的SPA一起运行。
 

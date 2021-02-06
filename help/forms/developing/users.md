@@ -168,11 +168,11 @@ ht-degree: 0%
 
 1. 创建DirectoryManagerServices客户端。
 
-   使用`DirectoryManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`DirectoryManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 定义用户信息。
 
-   * 使用`UserImpl`对象的构造函数创建&lt;a0/>对象。
+   * 使用`UserImpl`对象的构造函数创建对象。
    * 通过调用`UserImpl`对象的`setDomainName`方法来设置demain名称。 传递指定域名的字符串值。
    * 通过调用`UserImpl`对象的`setPrincipalType`方法来设置主体类型。 传递指定用户类型的字符串值。 例如，可以指定`USER`。
    * 通过调用`UserImpl`对象的`setUserid`方法设置用户标识符值。 传递指定用户标识符值的字符串值。 例如，可以指定`wblue`。
@@ -195,7 +195,7 @@ ht-degree: 0%
 
 1. 验证是否已添加用户。
 
-   * 使用`PrincipalSearchFilter`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PrincipalSearchFilter`对象的构造函数创建对象。
    * 通过调用`PrincipalSearchFilter`对象的`setUserId`方法设置用户标识符值。 传递表示用户标识符值的字符串值。
    * 调用`DirectoryManagerServiceClient`对象的`findPrincipals`方法并传递`PrincipalSearchFilter`对象。 此方法返回一个`java.util.List`实例，其中每个元素都是一个`User`对象。 在`java.util.List`实例中迭代以找到用户。
 
@@ -236,7 +236,7 @@ ht-degree: 0%
 
 1. 定义用户信息。
 
-   * 使用`UserImpl`对象的构造函数创建&lt;a0/>对象。
+   * 使用`UserImpl`对象的构造函数创建对象。
    * 通过为`UserImpl`对象的`domainName`字段指定字符串值来设置demain名称。
    * 通过为`UserImpl`对象的`principalType`字段指定字符串值来设置主体类型。 例如，可以指定`USER`。
    * 通过为`UserImpl`对象的`userid`字段指定字符串值来设置用户标识符值。
@@ -255,7 +255,7 @@ ht-degree: 0%
 
 1. 验证是否已添加用户。
 
-   * 使用`PrincipalSearchFilter`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PrincipalSearchFilter`对象的构造函数创建对象。
    * 通过将表示用户标识符值的字符串值分配给`PrincipalSearchFilter`对象的`userId`字段，设置用户的用户标识符值。
    * 调用`DirectoryManagerServiceClient`对象的`findPrincipals`方法并传递`PrincipalSearchFilter`对象。 此方法返回`MyArrayOfUser`集合对象，其中每个元素都是`User`对象。 对`MyArrayOfUser`集合进行迭代以找到用户。
 
@@ -318,11 +318,11 @@ ht-degree: 0%
 
 1. 创建DirectoryManagerService客户端。
 
-   使用`DirectoryManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`DirectoryManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 指定要删除的用户。
 
-   * 使用`PrincipalSearchFilter`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PrincipalSearchFilter`对象的构造函数创建对象。
    * 通过调用`PrincipalSearchFilter`对象的`setUserId`方法设置用户标识符值。 传递表示用户标识符值的字符串值。
    * 调用`DirectoryManagerServiceClient`对象的`findPrincipals`方法并传递`PrincipalSearchFilter`对象。 此方法返回一个`java.util.List`实例，其中每个元素都是一个`User`对象。 对`java.util.List`实例进行迭代以找到要删除的用户。
 
@@ -365,7 +365,7 @@ ht-degree: 0%
 
 1. 指定要删除的用户。
 
-   * 使用`PrincipalSearchFilter`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PrincipalSearchFilter`对象的构造函数创建对象。
    * 通过为`PrincipalSearchFilter`对象的`userId`字段指定字符串值来设置用户标识符值。
    * 调用`DirectoryManagerServiceClient`对象的`findPrincipals`方法并传递`PrincipalSearchFilter`对象。 此方法返回`MyArrayOfUser`集合对象，其中每个元素都是`User`对象。 对`MyArrayOfUser`集合进行迭代以找到用户。 从`MyArrayOfUser`集合对象检索的`User`对象用于删除用户。
 
@@ -450,11 +450,11 @@ ht-degree: 0%
 
 1. 创建DirectoryManagerService客户端。
 
-   使用`DirectoryManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`DirectoryManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 确定组是否存在。
 
-   * 使用`PrincipalSearchFilter`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PrincipalSearchFilter`对象的构造函数创建对象。
    * 通过调用`PrincipalSearchFilter`对象的`setPrincipalType`对象来设置主体类型。 传递值`com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`。
    * 通过调用`PrincipalSearchFilter`对象的`setSpecificDomainName`对象来设置域。 传递指定域名的字符串值。
    * 要查找组，请调用`DirectoryManagerServiceClient`对象的`findPrincipals`方法（主体可以是组）。 传递指定主体类型和域名的`PrincipalSearchFilter`对象。 此方法返回一个`java.util.List`实例，其中每个元素都是一个`Group`实例。 每个组实例都符合使用`PrincipalSearchFilter`对象指定的筛选器。
@@ -471,7 +471,7 @@ ht-degree: 0%
 
 1. 对组执行操作。
 
-   * 使用`PrincipalSearchFilter`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PrincipalSearchFilter`对象的构造函数创建对象。
    * 通过调用`PrincipalSearchFilter`对象的`setUserId`方法设置用户标识符值。 传递表示用户标识符值的字符串值。
    * 调用`DirectoryManagerServiceClient`对象的`findPrincipals`方法并传递`PrincipalSearchFilter`对象。 此方法返回一个`java.util.List`实例，其中每个元素都是一个`User`对象。 在`java.util.List`实例中迭代以找到用户。
    * 通过调用`DirectoryManagerServiceClient`对象的`addPrincipalToLocalGroup`方法将用户添加到组。 传递`User`对象的`getOid`方法的返回值。 传递`Group`对象的`getOid`方法的返回值（使用表示新组的`Group`实例）。
@@ -541,7 +541,7 @@ ht-degree: 0%
 
 1. 创建DirectoryManagerService客户端。
 
-   使用`DirectoryManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。 有关信息，请参阅[设置连接属性&#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*。*
+   使用`DirectoryManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。 有关信息，请参阅[设置连接属性&#x200B;](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*。*
 
 1. 调用相应的用户或组操作。
 
@@ -650,7 +650,7 @@ ht-degree: 0%
 
 1. 创建AuthorizationManagerService客户端。
 
-   使用`AuthorizationManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`AuthorizationManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 调用相应的角色或权限操作。
 
@@ -807,7 +807,7 @@ ht-degree: 0%
 
 1. 创建AuthenticationManagerServices客户端。
 
-   使用`AuthenticationManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`AuthenticationManagerServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 调用身份验证操作。
 
@@ -870,7 +870,7 @@ ht-degree: 0%
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>客户端应用程序请求AEM Forms执行同步操作。</p></td> 
   </tr> 
   <tr> 
@@ -878,7 +878,7 @@ ht-degree: 0%
    <td><p>AEM Forms执行同步操作。</p></td> 
   </tr> 
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>用户信息已更新。</p></td> 
   </tr> 
   <tr> 
@@ -938,7 +938,7 @@ ht-degree: 0%
 
 1. 创建UserManagerUtilServiceClient客户端。
 
-   使用`UserManagerUtilServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`UserManagerUtilServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 指定企业域。
 

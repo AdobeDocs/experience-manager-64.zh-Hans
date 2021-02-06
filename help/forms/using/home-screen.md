@@ -29,7 +29,7 @@ ht-degree: 0%
 ![Forms应用程序主](assets/home-screen-1.png)
 [屏幕单击可放大](assets/home-screen-1-1.png)
 
-1. **菜单按钮**:点按菜 **** 单按钮以导航到任务、Forms、输出框和设置。如果您的AEM Forms应用程序已连接到AEM FormsJEE服务器，则可以看到任务选项。 任务选项还存储从流程中的任务创建的草稿。 对于AEM FormsOSGi服务器，任务选项处于隐藏状态。 发件箱存储保存的表单和草稿，然后再与服务器同步。 当应用程序与服务器[同步时，Outbox中所有保存的表单和草稿都上传到AEM Forms服务器。 ](/help/forms/using/sync-app.md)有关“设置”的信息，请参阅[“更新常规设置”](/help/forms/using/update-general-settings.md)。
+1. **菜单按钮**:点按菜 **** 单按钮以导航到任务、Forms、输出框和设置。如果您的AEM Forms应用程序已连接到AEM FormsJEE服务器，则可以看到任务选项。 任务选项还存储从流程中的任务创建的草稿。 对于AEM FormsOSGi服务器，任务选项处于隐藏状态。 发件箱存储保存的表单和草稿，然后再与服务器同步。 当应用程序与服务器](/help/forms/using/sync-app.md)同步时，Outbox中所有保存的表单和草稿都上传到AEM Forms服务器。 [有关“设置”的信息，请参阅[“更新常规设置”](/help/forms/using/update-general-settings.md)。
 1. **任务或表单**:点按要处理的列出任务或表单。
 1. **水平省略号**:表示可对表单执行操作。点击省略号可显示作者提供的操作和描述。 点按省略号时，将显示&#x200B;**删除草稿**&#x200B;和&#x200B;**完整**&#x200B;选项。
 1. **刷新图标**:点按刷新图标，将您的应用程序与AEM Forms服务器同步。

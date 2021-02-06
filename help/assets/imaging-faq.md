@@ -1,6 +1,6 @@
 ---
-title: 智能图像处理
-seo-title: 智能图像处理
+title: 智能成像
+seo-title: 智能成像
 description: 智能图像处理利用每个用户独特的查看特性自动提供为其体验优化的正确图像，从而获得更好的性能和参与度。
 seo-description: 智能图像处理利用每个用户独特的查看特性自动提供为其体验优化的正确图像，从而获得更好的性能和参与度。
 uuid: c11e52ba-8d64-4dc5-b30a-fc10c2b704e5
@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# 智能图像处理 {#smart-imaging}
+# 智能成像 {#smart-imaging}
 
 ## 什么是“智能成像”?{#what-is-smart-imaging}
 

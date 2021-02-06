@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->已弃用AEM到Creative Cloud文件夹共享功能。 Adobe强烈建议使用较新的功能，如[Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)或[AEM桌面应用程序](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)。 了解有关[AEM和Creative Cloud集成最佳实践的更多信息](/help/assets/aem-cc-integration-best-practices.md)。
+>已弃用AEM到Creative Cloud文件夹共享功能。 Adobe强烈建议使用较新的功能，如[Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)或[AEM桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)。 了解有关[AEM和Creative Cloud集成最佳实践的更多信息](/help/assets/aem-cc-integration-best-practices.md)。
 
 Adobe Experience Manager(AEM)可以配置为允许AEM Assets的用户与Creative Cloud用户共享文件夹，这样，在Creative Cloud资产服务中，这些用户便可以作为共享文件夹。 该功能可用于创意团队和AEM Assets用户之间交换文件，尤其是当创意用户无权访问AEM Assets实例（他们不在企业网络中）时。
 

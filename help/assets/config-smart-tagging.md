@@ -35,7 +35,7 @@ ht-degree: 34%
 
 * 您的组织已启用智能内容服务。
 
-要启用增强的智能标记，除上述功能外，还要安装最新的[Experience Manager服务包](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html)。
+要启用增强的智能标记，除上述功能外，还要安装最新的[Experience Manager服务包](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)。
 
 ## 创建智能内容服务配置以获取公共证书{#obtain-public-certificate}
 
@@ -93,7 +93,7 @@ ht-degree: 34%
 
 ## 创建Adobe开发者控制台集成{#create-adobe-i-o-integration}
 
-要使用智能内容服务API，请在Adobe开发者控制台中创建集成，以获取[!UICONTROL API密钥](在Adobe开发者控制台集成的[!UICONTROL 客户端ID]字段中生成)、[!UICONTROL 技术帐户ID]、[!UICONTROL 组织[!UICONTROL &lt;a10/>资产智能标记服务设置]中云配置的ID]和[!UICONTROL 客户端机密]。[!DNL Experience Manager]
+要使用智能内容服务API，请在Adobe开发者控制台中创建集成，以获取[!UICONTROL API密钥](在Adobe开发者控制台集成的[!UICONTROL 客户端ID]字段中生成)、[!UICONTROL 技术帐户ID]、[!UICONTROL 组织[!UICONTROL [!DNL Experience Manager]资产智能标记服务设置]中云配置的ID]和[!UICONTROL 客户端机密]。
 
 1. 在浏览器中访问 [https://console.adobe.io](https://console.adobe.io/)。选择相应的帐户并验证关联的组织角色是否为系统管理员。
 

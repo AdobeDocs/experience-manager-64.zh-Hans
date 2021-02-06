@@ -169,7 +169,7 @@ include语句属于`<html>`脚本的`<head>`部分。 默认&#x200B;**`foundatio
 * 单击&#x200B;**[!UICONTROL 创建包]**
 
    * 包名称: `an-scf-sandbox-minimal-pkg`
-   * 版本: `0.1`
+   * 版本号: `0.1`
    * 组：&lt;leave as default>
    * 单击&#x200B;**[!UICONTROL 确定]**
 

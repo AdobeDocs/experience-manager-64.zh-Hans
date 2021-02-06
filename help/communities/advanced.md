@@ -32,7 +32,7 @@ ht-degree: 1%
 
 设置高级评分与基本评分基本相同：
 
-* 基本和高级评分和徽章规则以相同方式应用于内容[](implementing-scoring.md#apply-rules-to-content)
+* 基本和高级评分和徽章规则以相同方式应用于内容](implementing-scoring.md#apply-rules-to-content)[
    * 基本和高级评分和徽章规则可应用于相同内容
 * [为组件启用标记](implementing-scoring.md#enable-badges-for-component) 一般
 

@@ -274,7 +274,7 @@ function check(){
 
 要创建对话框，请执行以下操作：
 
-* 确定结果数据将存储在有效负荷[中的位置。](#dialog-participant-step-storing-data-in-the-payload)
+* 确定结果数据将存储在有效负荷](#dialog-participant-step-storing-data-in-the-payload)中的位置。[
 * [定义对话框；这包括定义用于收集（和保存）数据的字段](#dialog-participant-step-dialog-definition)。
 
 #### 对话框参与者步骤——在有效负荷{#dialog-participant-step-storing-data-in-the-payload}中存储数据

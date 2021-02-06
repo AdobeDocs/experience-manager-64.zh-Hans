@@ -164,7 +164,7 @@ OSGi和AEM FormsJEE工作流(JEE流程管理方面的AEM Forms)上以表单为�
    <td>支持<sup>[2]</sup></td> 
   </tr>
   <tr>
-   <td>Document Services</td> 
+   <td>文档服务</td> 
    <td>支持<sup>[3]</sup></td> 
    <td>支持<sup>[3]</sup></td> 
   </tr>

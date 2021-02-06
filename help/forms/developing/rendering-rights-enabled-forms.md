@@ -102,7 +102,7 @@ Forms服务可以呈现对其应用了使用权的表单。 使用权限与默�
 
 1. 设置使用权限运行时选项
 
-   * 使用`ReaderExtensionSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`ReaderExtensionSpec`对象的构造函数创建对象。
    * 通过调用`ReaderExtensionSpec`对象的`setReCredentialAlias`方法指定凭据的别名，并指定表示别名值的字符串值。
    * 通过调用属于`ReaderExtensionSpec`对象的相应方法来设置每个使用权限。 但是，只有在引用的凭据允许您设置使用权限时，才可设置此权限。 也就是说，如果凭据不允许您设置，则无法设置使用权限。 例如。 要设置允许用户填写表单字段并保存表单的使用权限，请调用`ReaderExtensionSpec`对象的`setReFillIn`方法并传递`true`。
 
@@ -155,7 +155,7 @@ Forms服务可以呈现对其应用了使用权的表单。 使用权限与默�
 
 1. 设置使用权限运行时选项
 
-   * 使用`ReaderExtensionSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`ReaderExtensionSpec`对象的构造函数创建对象。
    * 通过调用`ReaderExtensionSpec`对象的`setReCredentialAlias`方法指定凭据的别名，并指定表示别名值的字符串值。
    * 通过调用属于`ReaderExtensionSpec`对象的相应方法来设置每个使用权限。 但是，只有在引用的凭据允许您设置使用权限时，才可设置此权限。 也就是说，如果凭据不允许您设置，则无法设置使用权限。 要设置允许用户填写表单字段并保存表单的使用权限，请调用`ReaderExtensionSpec`对象的`setReFillIn`方法并传递`true`。
 

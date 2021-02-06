@@ -28,7 +28,7 @@ Adobe Experience Manager(AEM)使用[ExtJS](https://www.sencha.com/)构件库，�
 
 有关AEM中所有可用构件的完整引用，请参阅[构件API文档](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)或现有xtypes](/help/sites-developing/xtypes.md)的[列表。 此外，[Sencha](https://www.sencha.com/products/extjs/examples/)站点上还提供了许多说明如何使用ExtJS框架的示例，该站点是框架的所有者。
 
-本页对如何使用和扩展构件提供了一些见解。 它首先描述如何在页面[中包含客户端代码。 ](#including-the-client-sided-code-in-a-page)然后，它描述了为说明一些基本用途和扩展而创建的一些示例组件。 这些组件在&#x200B;**包共享**&#x200B;上的&#x200B;**使用ExtJS构件**&#x200B;包中可用。
+本页对如何使用和扩展构件提供了一些见解。 它首先描述如何在页面](#including-the-client-sided-code-in-a-page)中包含客户端代码。 [然后，它描述了为说明一些基本用途和扩展而创建的一些示例组件。 这些组件在&#x200B;**包共享**&#x200B;上的&#x200B;**使用ExtJS构件**&#x200B;包中可用。
 
 该包包括以下示例：
 

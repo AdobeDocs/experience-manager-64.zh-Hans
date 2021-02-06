@@ -248,7 +248,7 @@ ht-degree: 4%
       | **名称** | **类型** | **值** |
       |---|---|---|
       | fieldLabel | 字符串 | 收件人的位置（或要为字段指定的名称）。 |
-      | 名称 | 字符串 | 。/extendedproperties/GeogralLocation |
+      | 名称 | 字符串 | ./extendedproperties/GeogralLocation |
       | renderReadOnly | 布尔型 | 真 |
       | sling:resourceType | 字符串 | /libs/granite/ui/components/coral/foundation/form/textfield |
 
@@ -417,7 +417,7 @@ ht-degree: 4%
       | **名称** | **类型** | **值** |
       |---|---|---|
       | fieldLabel | 字符串 | 收件人的位置（或要为字段指定的名称）。 |
-      | 名称 | 字符串 | 。/extendedproperties/GeoLocation |
+      | 名称 | 字符串 | ./extendedproperties/GeoLocation |
       | renderReadOnly | 布尔型 | 真 |
       | sling:resourceType | 字符串 | granite/ui/components/coral/foundation/form/textfield |
 

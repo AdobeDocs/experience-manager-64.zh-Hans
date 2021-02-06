@@ -166,11 +166,11 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 1. 单击或点按添加和页面／资产。
 
-   ![chlimage_1-248](assets/chlimage_1-247.png)
+   ![chlimage_1-247](assets/chlimage_1-247.png)
 
 1. 选择要添加的分支的最上方的项目，然后单击或点按复选标记图标。 您可以进行多选。
 
-   ![chlimage_1-248](assets/chlimage_1-248.png)
+   ![chlimage_1-247](assets/chlimage_1-248.png)
 
 1. 或者，您也可以选择搜索图标，轻松查找要添加到翻译作业的页面或资产。
 
@@ -395,7 +395,7 @@ AEM会检测是为内容的初始翻译创建翻译项目，还是更新已翻�
 
 ## 创建语言副本的结构{#creating-the-structure-of-a-language-copy}
 
-填充您的语言副本，使其包含您正在翻译的主控语言的内容。 在填充语言副本之前，必须先创建语言副本的语言根[。](/help/sites-administering/tc-prep.md#creating-a-language-root)
+填充您的语言副本，使其包含您正在翻译的主控语言的内容。 在填充语言副本之前，必须先创建语言副本的语言根](/help/sites-administering/tc-prep.md#creating-a-language-root)。[
 
 1. 使用“站点”控制台选择您用作源的主控语言的语言根。 例如，要翻译Geometrixx演示站点的英语页面，请选择“内容”>“Geometrixx演示站点”>“英语”。
 1. 在工具栏中，单击或点按引用。

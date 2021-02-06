@@ -24,7 +24,7 @@ ht-degree: 1%
 AEM Communities使用电子邮件
 
 * [社区通知](notifications.md)
-* [社区订阅](subscriptions.md)
+* [Communities 订阅](subscriptions.md)
 
 默认情况下，电子邮件功能不起作用，因为它需要SMTP服务器和SMTP用户的规范。
 

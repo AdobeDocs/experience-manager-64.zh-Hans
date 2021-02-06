@@ -1,5 +1,5 @@
 ---
-title: 资产网络注意事项
+title: Assets 网络注意事项
 description: 在设计AEM Assets部署时讨论网络考虑事项。
 contentOwner: AG
 translation-type: tm+mt

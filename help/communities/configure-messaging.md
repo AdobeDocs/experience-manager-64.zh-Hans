@@ -133,7 +133,7 @@ ht-degree: 0%
 
 取消继承后，可以选择`configure`图标以打开配置对话框。
 
-![chlimage_1-481](assets/chlimage_1-401.png)
+![chlimage_1-401](assets/chlimage_1-401.png)
 
 #### 基本选项卡{#basic-tab-1}
 

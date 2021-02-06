@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # AEM Forms {#aem-forms}
 
-本节介绍AEM 6.4Forms版本的亮点。 有关所有新增功能的详细说明，请参阅AEM 6.4Forms[中新增功能和增强功能的摘要。](/help/forms/using/whats-new.md)
+本节介绍AEM 6.4Forms版本的亮点。 有关所有新增功能的详细说明，请参阅AEM 6.4Forms](/help/forms/using/whats-new.md)中新增功能和增强功能的摘要。[
 
 ## 多渠道交互通信{#multi-channel-interactive-communications}
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 * 刷新表单数据模型的数据源定义以反映后端数据源中的更改
 * 将触屏UI界面用于数据源配置
 
-## 工作流现代化和移动工作人员支持{#workflow-modernization-and-mobile-worker-support}
+## 工作流程现代化和移动工作人员支持{#workflow-modernization-and-mobile-worker-support}
 
 * 用于设计工作流模型的触摸界面
 * 能够通过工作流步骤调用表单数据模型操作

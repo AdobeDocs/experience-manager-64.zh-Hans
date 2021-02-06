@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 workflow-type: tm+mt
 source-wordcount: '2199'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # 开发SPA for AEM{#developing-spas-for-aem}
 
-单页应用程序(SPA)可以为网站用户优惠引人入胜的体验。 开发人员希望能够使用SPA框架构建站点，而作者希望无缝编辑AEM中的内容，以便使用此类框架构建站点。
+单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用SPA框架构建站点，而作者希望无缝编辑AEM中的内容，以便使用此类框架构建站点。
 
 本文介绍了在让前端开发者开发SPA for AEM时应考虑的重要问题，并概述了AEM的体系结构以及部署SPA on AEM的方法。
 
@@ -168,7 +168,7 @@ SPA只应依赖内容的动态呈现。 这是AEM获取和呈现内容结构的�
 
    `ModelRouter`的当前版本仅支持使用指向Sling Model入口点的实际资源路径的URL。 它不支持使用虚URL或别名。
 
-   可以禁用`ModelRouter`或将&lt;a0/>配置为忽略常规列表。
+   可以禁用`ModelRouter`或将配置为忽略常规列表。
 
 ## AEM-不可知{#aem-agnostic}
 

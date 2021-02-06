@@ -104,7 +104,7 @@ Forms服务创建一个表单数据流，您必须将其写入客户端Web浏览
 
 1. 设置客户端渲染运行时选项
 
-   * 使用`PDFFormRenderSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFFormRenderSpec`对象的构造函数创建对象。
    * 通过调用`PDFFormRenderSpec`对象的`setRenderAtClient`方法并传递枚举值`RenderAtClient.Yes`来设置`RenderAtClient`运行时选项。
 
 1. 在客户端渲染表单
@@ -152,7 +152,7 @@ Forms服务创建一个表单数据流，您必须将其写入客户端Web浏览
 
 1. 设置客户端渲染运行时选项
 
-   * 使用`PDFFormRenderSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFFormRenderSpec`对象的构造函数创建对象。
    * 通过调用`PDFFormRenderSpec`对象的`setRenderAtClient`方法并传递字符串值`RenderAtClient.Yes`，设置`RenderAtClient` run-time选项。
 
 1. 在客户端渲染表单

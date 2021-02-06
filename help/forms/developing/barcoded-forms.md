@@ -117,12 +117,12 @@ ht-degree: 0%
 
 1. 创建条形码表单客户端API对象
 
-   使用`BarcodedFormsServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`BarcodedFormsServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 获取包含条形码数据的PDF表单
 
    * 创建一个`java.io.FileInputStream`对象，它使用其构造函数并传递一个指定PDF文档位置的字符串值，来表示包含条形码数据的PDF表单。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 从PDF表单解码数据
 
@@ -185,11 +185,11 @@ ht-degree: 0%
 
 1. 获取包含条形码数据的PDF表单
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储包含条形码的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储包含条形码的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`binaryData`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`binaryData`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 从PDF表单解码数据
 
@@ -227,7 +227,7 @@ ht-degree: 0%
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示受保护PDF文档的文件位置。
    * 创建一个字节数组，用于存储`encryptPDFUsingPassword`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`binaryData`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**

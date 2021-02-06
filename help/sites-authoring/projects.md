@@ -40,7 +40,7 @@ ht-degree: 87%
 * [使用项目工作流](/help/sites-authoring/projects-with-workflows.md)
 * [创意项目和 PIM 集成](/help/sites-authoring/managing-product-information.md)
 
-## “项目”控制台{#projects-console}
+## “项目”控制台  {#projects-console}
 
 在“项目”控制台中，您可以访问和管理 AEM 中的项目。
 

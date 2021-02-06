@@ -35,7 +35,7 @@ Adobe建议您通过[现有的AEM-Adobe Analytics集成](/help/sites-administeri
 
 在AEM中，此处在Sidekick中显示的&#x200B;**行动动员**&#x200B;组件- **ClickThroughLink**&#x200B;和&#x200B;**GraphicalLink**&#x200B;可映射到Adobe Analytics变量。
 
-![chlimage_1-29](assets/chlimage_1-21.jpeg)
+![chlimage_1-21](assets/chlimage_1-21.jpeg)
 
 ### 将登陆页组件映射到Adobe Analytics{#mapping-landing-page-components-to-adobe-analytics}
 

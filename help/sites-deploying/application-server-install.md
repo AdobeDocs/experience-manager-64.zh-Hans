@@ -107,7 +107,7 @@ AEM是一个要部署的战争文件。
 
    * 让AEM对用户进行身份验证的一种方法是禁用WebSphere服务器的全局管理安全性，这样做：转至“安全”->“全局安全”并取消选中“启用管理安全”复选框，保存并重新启动服务器。
 
-* 设置 `"JAVA_OPTS= -Xmx2048m"`
+* set `"JAVA_OPTS= -Xmx2048m"`
 * 如果要使用上下文根= /安装AEM，则必须先更改现有默认Web应用程序的上下文根
 
 **部署AEM Web应用程序**
@@ -136,7 +136,7 @@ AEM是一个要部署的战争文件。
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-如果使用deployment-scanner安装AEM web应用程序，则最好在实例的xml文件中为该设置`deployment-timeout,`属性（如`deployment-timeout`）:`configuration/standalone.xml)`
+如果使用deployment-scanner安装AEM web应用程序，则最好在实例的xml文件中为该设置`deployment-timeout`属性（如`configuration/standalone.xml)`）:`deployment-timeout,`
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">

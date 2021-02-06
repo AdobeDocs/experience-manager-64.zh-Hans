@@ -68,7 +68,7 @@ AEM Uberjar将所有AEM API作为单个依赖项包含在Maven项目的`pom.xml`
 
 ### 停止使用管理资源解析程序{#phase-out-use-of-administrative-resource-resolver}
 
-通过`SlingRepository.loginAdministrative()`和`ResourceResolverFactory.getAdministrativeResourceResolver()`使用管理会话在AEM 6.0之前的代码库中非常普遍。由于这些方法提供的访问级别过于广泛，因此已因安全原因而弃用。 [在Sling的未来版本中，将删除这些方法](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication)。强烈建议重新构建任何代码以改用服务用户。 有关服务用户以及如何逐步淘汰管理会话的更多信息，请参阅[。](/help/sites-administering/security-service-users.md#how-to-phase-out-admin-sessions)
+通过`SlingRepository.loginAdministrative()`和`ResourceResolverFactory.getAdministrativeResourceResolver()`使用管理会话在AEM 6.0之前的代码库中非常普遍。由于这些方法提供的访问级别过于广泛，因此已因安全原因而弃用。 [在Sling的未来版本中，将删除这些方法](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication)。强烈建议重新构建任何代码以改用服务用户。 有关服务用户以及如何逐步淘汰管理会话的更多信息，请参阅](/help/sites-administering/security-service-users.md#how-to-phase-out-admin-sessions)。[
 
 ### 查询和Oak索引{#queries-and-oak-indexes}
 

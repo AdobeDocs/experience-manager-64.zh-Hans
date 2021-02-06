@@ -1,8 +1,8 @@
 ---
-title: AEM Livefyre菜谱
-seo-title: AEM Livefyre菜谱
-description: '关于Adobe Experience ManagerLivefyre常见用例的分步说明。 '
-seo-description: '关于Adobe Experience ManagerLivefyre常见用例的分步说明。 '
+title: AEM Livefyre 指南
+seo-title: AEM Livefyre 指南
+description: '关于 Adobe Experience Manager Livefyre 常见用例的分步说明。 '
+seo-description: '关于 Adobe Experience Manager Livefyre 常见用例的分步说明。 '
 uuid: 78695a63-fca6-4990-9755-0aeaae4a7f64
 contentOwner: alba
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
 
-# AEM Livefyre菜谱{#aem-livefyre-recipes}
+# AEM Livefyre 指南{#aem-livefyre-recipes}
 
-关于Adobe Experience ManagerLivefyre常见用例的分步说明。
+关于 Adobe Experience Manager Livefyre 常见用例的分步说明。
 
 ## 使用现成的Livefyre AEM组件创建UGC，使用Livefyre Media Wall {#curate-ugc-using-the-out-of-the-box-livefyre-aem-components-and-display-using-livefyre-media-wall}进行显示
 

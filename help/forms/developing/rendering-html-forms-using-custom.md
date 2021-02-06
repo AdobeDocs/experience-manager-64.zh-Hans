@@ -102,11 +102,11 @@ Forms服务以静默方式解析自定义CSS文件。 即，Forms服务不会报
 1. 创建FormsJava API对象
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`FormsServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`FormsServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 引用CSS文件
 
-   * 使用`HTMLRenderSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`HTMLRenderSpec`对象的构造函数创建对象。
    * 要呈现使用自定义CSS文件的HTML表单，请调用`HTMLRenderSpec`对象的`setCustomCSSURI`方法并传递一个字符串值，它指定CSS文件的位置和名称。
 
 1. 渲染HTML表单
@@ -158,7 +158,7 @@ Forms服务以静默方式解析自定义CSS文件。 即，Forms服务不会报
 
 1. 引用CSS文件
 
-   * 使用`HTMLRenderSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`HTMLRenderSpec`对象的构造函数创建对象。
    * 要呈现使用自定义CSS文件的HTML表单，请调用`HTMLRenderSpec`对象的`setCustomCSSURI`方法并传递一个字符串值，它指定CSS文件的位置和名称。
 
 1. 渲染HTML表单

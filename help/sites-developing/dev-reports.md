@@ -183,7 +183,7 @@ AEM提供了[标准报告](/help/sites-administering/reporting.md)的选择，�
 
    根据[列类型](#column-specific-definitions)自动选择值提取器。 它们用于从基础JCR查询读取值并从中创建结果集；之后，可再进行进一步处理。 例如，对于`diff`类型，值提取器读取两个属性，计算单个值，然后将其添加到结果集。 无法配置值提取器。
 
-1. 对于包含原始数据的初始结果集，应用初始过滤[（](#column-specific-definitions)raw *阶段）。*
+1. 对于包含原始数据的初始结果集，应用初始过滤](#column-specific-definitions)（*raw*&#x200B;阶段）。[
 
 1. 值为[预处理](#processing-queue);定义为&#x200B;*apply*&#x200B;阶段。
 
@@ -691,11 +691,11 @@ N:definitions
 
    * `apply`
 
-      初始预处理阶段（处理队列的表示中的步骤3[）。](#processing-queue)
+      初始预处理阶段（处理队列的表示中的步骤3](#processing-queue)）。[
 
    * `applyAfter`
 
-      在预处理后应用（处理队列的表示中[步骤9）。](#processing-queue)
+      在预处理后应用（处理队列的表示中](#processing-queue)步骤9）。[
 
 #### 解析器{#resolvers}
 
@@ -771,7 +771,7 @@ N:data
 
 您可以指定以下任一选项，以便在预处理过程中使用：
 
-* [查找并替](#preprocessing-find-and-replace-patterns)
+* [查找和替](#preprocessing-find-and-replace-patterns)
 换模式找到时，指定的模式(定义为常规表达式)将被另一个模式替换；例如，这可用于提取原始文件的子字符串。
 
 * [数据类型格式化程序](#preprocessing-data-type-formatters)

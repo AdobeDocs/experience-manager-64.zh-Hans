@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -50,5 +50,5 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关详细介绍构建电子商务提供商的所有步骤的完整文章，请参阅[创建自定义Adobe Experience Manager6.2电子商务提供商](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)。
+>有关详细介绍构建电子商务提供商的所有步骤的完整文章，请参阅[创建自定义Adobe Experience Manager6.2电子商务提供商](https://helpx.adobe.com/cn/experience-manager/using/ecommerce62.html)。
 

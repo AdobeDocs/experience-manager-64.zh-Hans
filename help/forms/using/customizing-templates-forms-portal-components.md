@@ -88,7 +88,7 @@ Forms门户为占位符提供显示自定义/OOTB元数据的语法。 在显示
 
 每个占位符都有一个独占的OOTB元数据集。 要在表单的特定位置显示自定义元数据，请在该位置添加&#x200B;**$metadata_prop属性**。
 
-*在示例中，元数据属性用于多个实例。例如，它用于&#x200B;**description**、**name**、**formUrl**、**htmlStyle**、**pdfUrl**、**pdfStyle**和&lt;a11/>a12/>路径&#x200B;**。***
+*在示例中，元数据属性用于多个实例。例如，它用于&#x200B;**description**、**name**、**formUrl**、**htmlStyle**、**pdfUrl**、**pdfStyle**和&#x200B;**a12/>路径**。*
 
 ## 开箱即用的元数据{#out-of-the-box-metadata}
 

@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 17%
+ht-degree: 28%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 17%
 
 ## 主要AEM文章
 
-* [AEM 快速入门](https://helpx.adobe.com/experience-manager/get-started.html)
+* [AEM 快速入门](https://helpx.adobe.com/cn/experience-manager/get-started.html)
 * [AEM 6.4 发行说明](/help/release-notes/home.md)
 * [近期文档更新](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM 安全核对清单](/help/sites-administering/security-checklist.md)

@@ -96,7 +96,7 @@ ht-degree: 0%
 
 **保存已拆卸的PDF文档**
 
-所有已拆卸的PDF文档都会返回到集合对象中。 对集合对象进行迭代，并将每个PDF文档另存为PDF文件。
+所有已拆卸的PDF文档都会在集合对象中返回。 对集合对象进行迭代，并将每个PDF文档另存为PDF文件。
 
 **另请参阅**
 
@@ -143,18 +143,18 @@ ht-degree: 0%
 
    * 通过调用`javax.xml.transform.Transformer`对象的静态`newInstance`方法创建`javax.xml.transform.Transformer`对象。
    * 通过调用`TransformerFactory`对象的`newTransformer`方法创建`Transformer`对象。
-   * 使用`ByteArrayOutputStream`对象的构造函数创建&lt;a0/>对象。
-   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数创建&lt;a0/>对象。 传递表示DDX文档的`org.w3c.dom.Document`对象。
-   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数并传递`ByteArrayOutputStream`对象，创建&lt;a0/>对象。
+   * 使用`ByteArrayOutputStream`对象的构造函数创建对象。
+   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数创建对象。 传递表示DDX文档的`org.w3c.dom.Document`对象。
+   * 使用`javax.xml.transform.dom.DOMSource`对象的构造函数并传递`ByteArrayOutputStream`对象，创建对象。
    * 通过调用`javax.xml.transform.Transformer`对象的`transform`方法填充Java `ByteArrayOutputStream`对象。 传递`javax.xml.transform.dom.DOMSource`和`javax.xml.transform.stream.StreamResult`对象。
    * 创建一个字节数组，并将`ByteArrayOutputStream`对象的大小分配给字节数组。
    * 通过调用`ByteArrayOutputStream`对象的`toByteArray`方法填充字节数组。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递字节数组，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递字节数组，创建对象。
 
 1. 参考PDF文档进行反汇编。
 
    * 使用`HashMap`构造函数创建用于存储输入PDF文档的`java.util.Map`对象。
-   * 使用`java.io.FileInputStream`对象的构造函数创建一个&lt;a0/>对象，并将PDF文档的位置传递给反汇编。
+   * 使用`java.io.FileInputStream`对象的构造函数创建一个对象，并将PDF文档的位置传递给反汇编。
    * 创建`com.adobe.idp.Document`对象。 将包含PDF文档的`java.io.FileInputStream`对象传递到反汇编。
    * 通过调用`put`方法并传递以下参数，向`java.util.Map`对象添加一个条目：
 
@@ -219,7 +219,7 @@ ht-degree: 0%
 
 1. 创建DDX文档。
 
-   * 使用`System.Xml.XmlElement`对象的构造函数创建&lt;a0/>对象。
+   * 使用`System.Xml.XmlElement`对象的构造函数创建对象。
    * 通过调用`XmlElement`对象的`CreateElement`方法，创建DDX文档的根元素。 此方法创建一个表示根元素的`Element`对象。 将表示元素名称的字符串值传递给`CreateElement`方法。 通过调用DDX元素的`SetAttribute`方法来设置其值。 最后，通过调用`XmlElement`对象的`AppendChild`方法，将元素追加到DDX文档。 将DDX对象作为参数进行传递。 以下几行代码显示此应用程序逻辑：
 
       ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
@@ -234,7 +234,7 @@ ht-degree: 0%
 
 1. 转换DDX文档。
 
-   * 使用`System.IO.MemoryStream`对象的构造函数创建&lt;a0/>对象。
+   * 使用`System.IO.MemoryStream`对象的构造函数创建对象。
    * 使用表示DDX文档的`XmlElement`对象，用DDX文档填充`MemoryStream`对象。 调用`XmlElement`对象的`Save`方法并传递`MemoryStream`对象。
    * 创建一个字节数组，并用位于`MemoryStream`对象中的数据填充它。 以下代码显示此应用程序逻辑：
 
@@ -244,7 +244,7 @@ ht-degree: 0%
 
 1. 参考PDF文档进行反汇编。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储输入的PDF文档。 此`BLOB`对象作为参数传递给`invokeOneDocument`。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储输入的PDF文档。 此`BLOB`对象作为参数传递给`invokeOneDocument`。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示输入PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。

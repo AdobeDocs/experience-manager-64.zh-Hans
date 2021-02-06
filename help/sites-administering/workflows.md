@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 您的组织已建立的业务流程可以表示为工作流。 例如，发布网站内容的过程通常包括由不同的利益相关方批准和注销等步骤。 这些过程可以作为AEM工作流实施并应用于内容页面和资产。
 
-* [开始工作流](/help/sites-administering/workflows-starting.md)
+* [启动工作流](/help/sites-administering/workflows-starting.md)
 * [管理工作流实例](/help/sites-administering/workflows-administering.md)
-* [管理对工作流的访问](/help/sites-administering/workflows-managing.md)
+* [管理对工作流的访问权限](/help/sites-administering/workflows-managing.md)
 
 >[!NOTE]
 >

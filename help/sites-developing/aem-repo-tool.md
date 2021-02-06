@@ -1,6 +1,6 @@
 ---
-title: AEM Repo工具
-seo-title: AEM Repo工具
+title: AEM Repo 工具
+seo-title: AEM Repo 工具
 description: AEM Repo Tool是一种简单的解决方案，可通过与FTP类似的命令行在本地文件系统和AEM服务器之间传输JCR内容。 AEM Repo Tool与Jackrabbit FileVault工具类似，但速度更快，相关性最小，是一个简单的bash脚本。
 seo-description: AEM Repo Tool是一种简单的解决方案，可通过与FTP类似的命令行在本地文件系统和AEM服务器之间传输JCR内容。 AEM Repo Tool与Jackrabbit FileVault工具类似，但速度更快，相关性最小，是一个简单的bash脚本。
 uuid: 6c4a3504-e8e8-46c0-83cb-c18d9791f93e
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# AEM Repo Tool{#aem-repo-tool}
+# AEM Repo 工具{#aem-repo-tool}
 
 AEM Repo Tool是一种简单的解决方案，可通过与FTP类似的命令行在本地文件系统和AEM服务器之间传输JCR内容。 AEM Repo Tool与[Jackrabbit FileVault工具](/help/sites-developing/ht-vlttool.md)类似，但速度更快，相关性最小，是一个简单的bash脚本。
 

@@ -69,7 +69,7 @@ AEM中慢查询有3种主要分类，按严重性列出：
 
 解释所有查询并确保他们解析为符合查询属性限制的索引。
 
-* 理想的查询计划涵盖的所有属性限制为`indexRules`，对于查询中最紧密的属性限制至少为&lt;a0/>。
+* 理想的查询计划涵盖的所有属性限制为`indexRules`，对于查询中最紧密的属性限制至少为。
 * 对结果进行排序的查询应解析为具有按设置`orderable=true.`的属性排序的索引规则的Lucene属性索引
 
 #### 例如，默认`cqPageLucene`没有`jcr:content/cq:tags` {#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}的索引规则

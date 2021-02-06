@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 workflow-type: tm+mt
 source-wordcount: '1711'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 # SPA和服务器端渲染{#spa-and-server-side-rendering}
 
 >[!NOTE]
->单页应用程序(SPA)编辑器功能需要[AEM 6.4 service pack 2](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/sp-release-notes.html)或更高版本。
+>单页应用程序(SPA)编辑器功能需要[AEM 6.4 service pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)或更高版本。
 >
 >SPA编辑器是需要SPA框架的客户端渲染（例如，React或Angular）的项目的推荐解决方案。
 

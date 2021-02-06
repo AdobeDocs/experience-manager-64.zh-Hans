@@ -61,7 +61,7 @@ ht-degree: 5%
    1. [文档片段](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. 预览打印和Web渠道，并根据需要编辑交互式通信。
-1. 代理使用代理UI来准备交互式通信[，以将其发送到收件人/后期进程。](/help/forms/using/prepare-send-interactive-communication.md)
+1. 代理使用代理UI来准备交互式通信](/help/forms/using/prepare-send-interactive-communication.md)，以将其发送到收件人/后期进程。[
 
 ### 构建基块 {#buildingblocks}
 

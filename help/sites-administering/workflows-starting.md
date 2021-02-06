@@ -1,6 +1,6 @@
 ---
-title: 开始工作流
-seo-title: 开始工作流
+title: 启动工作流
+seo-title: 启动工作流
 description: 了解如何开始AEM的工作流。
 seo-description: 了解如何开始AEM的工作流。
 uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# 开始工作流{#starting-workflows}
+# 启动工作流{#starting-workflows}
 
 在管理工作流时，您可以使用各种方法开始他们：
 

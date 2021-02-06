@@ -325,7 +325,7 @@ ht-degree: 1%
 
    * 自动化测试策略
    * 自动化流程到[将应用程序从开发移到测试，然后再到生产](/help/managing/enterprise-devops.md#code-movement)
-   * 将内容从生产移动到测试和开发的自动化流程[](/help/managing/enterprise-devops.md#content-movement)
+   * 将内容从生产移动到测试和开发的自动化流程](/help/managing/enterprise-devops.md#content-movement)[
 
 * **迁移**
 

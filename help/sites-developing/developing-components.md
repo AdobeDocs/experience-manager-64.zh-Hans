@@ -115,7 +115,7 @@ AEM组件用于保存、格式化和呈现网页上提供的内容。
 
 您可以配置组件的编辑行为，包括组件可用的操作、就地编辑器的特性以及与组件上的事件相关的监听器等属性。 该配置对于触屏优化UI和经典UI都是通用的，尽管有某些特定的差异。
 
-通过在组件节点（类型`cq:Component`）下添加`cq:editConfig`类型`cq:EditConfig`的[节点，并添加特定属性和子节点，配置组件的&lt;a0/>编辑行为。](/help/sites-developing/components-basics.md#edit-behavior)
+通过在组件节点（类型`cq:Component`）下添加`cq:editConfig`类型`cq:EditConfig`的[节点，并添加特定属性和子节点，配置组件的](/help/sites-developing/components-basics.md#edit-behavior)编辑行为。
 
 ## 配置预览行为{#configuring-the-preview-behavior}
 
@@ -363,7 +363,7 @@ Granite UI和Granite UI组件（等效于构件）中的字段验证是使用`fo
 
 ## 启用组件并将其添加到段落系统{#enabling-and-adding-your-component-to-the-paragraph-system}
 
-开发组件后，需要启用该组件以在相应的段落系统中使用，以便在所需的页面上使用它。
+开发组件后，需要启用该组件以在相应的段落系统中使用，以便在所需的页面上使用。
 
 可通过以下任一方式执行此操作：
 

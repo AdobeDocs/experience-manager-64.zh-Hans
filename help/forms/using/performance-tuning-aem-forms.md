@@ -1,6 +1,6 @@
 ---
-title: AEM Forms服务器的性能调整
-seo-title: AEM Forms服务器的性能调整
+title: AEM Forms 服务器性能优化
+seo-title: AEM Forms 服务器性能优化
 description: 要使AEM Forms以最佳方式运行，您可以微调缓存设置和JVM参数。 此外，使用Web服务器可以增强AEM Forms部署的性能。
 seo-description: 要使AEM Forms以最佳方式运行，您可以微调缓存设置和JVM参数。 此外，使用Web服务器可以增强AEM Forms部署的性能。
 uuid: 77eaeecc-ca52-4d3d-92e6-1ab4d91b9edd
@@ -12,12 +12,12 @@ translation-type: tm+mt
 source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# AEM Forms服务器{#performance-tuning-of-aem-forms-server}的性能调整
+# AEM Forms 服务器性能优化 {#performance-tuning-of-aem-forms-server}
 
 本文讨论您可以实施的战略和最佳实践，以减少瓶颈并优化AEM Forms部署的性能。
 

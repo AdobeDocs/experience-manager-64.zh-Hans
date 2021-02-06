@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -50,7 +50,7 @@ AEM Content Services设计为在AEM关注网页之外对内容进行投放和描
 
 1. 将提供以下内容：
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
 您也可以通过专门定位结构化内容片段来提供其内容。
 
@@ -86,7 +86,7 @@ AEM Content Services设计为在AEM关注网页之外对内容进行投放和描
 
    * [资产 HTTP API](/help/assets/mac-api-assets.md)
 
-* Sling Models:
+* Sling 模型:
 
    * [Sling模型——自130年起将模型类与资源类型关联](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 

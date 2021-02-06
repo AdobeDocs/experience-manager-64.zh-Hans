@@ -72,7 +72,7 @@ ht-degree: 0%
 
 1. [创建翻](/help/sites-administering/tc-manage.md) 译项目以收集要翻译的内容并准备翻译过程。
 
-1. 使用转换项目管理内容转换过程[。](/help/sites-administering/tc-manage.md)
+1. 使用转换项目管理内容转换过程](/help/sites-administering/tc-manage.md)。[
 
 >[!NOTE]
 >

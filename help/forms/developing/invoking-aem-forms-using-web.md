@@ -129,7 +129,7 @@ AEM Forms支持以下Web服务标准：
    <td><p><code>http://localhost:8080/soap/services/ RepositoryService?wsdl</code></p></td> 
   </tr> 
   <tr> 
-   <td><p>Rights Management </p></td> 
+   <td><p>权限管理 </p></td> 
    <td><p><code>http://localhost:8080/soap/services/ RightsManagementService?wsdl</code></p></td> 
   </tr> 
   <tr> 
@@ -659,15 +659,15 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
 1. 创建客户端Microsoft .NET项目。 在客户端项目中引用Microsoft .NET客户端程序集。 还引用`System.Web.Services`。
 1. 使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建一个`MyApplication_EncryptDocumentService`对象。
 1. 使用`System.Net.NetworkCredential`对象设置`MyApplication_EncryptDocumentService`对象的`Credentials`属性。 在`System.Net.NetworkCredential`构造函数中，指定AEM表单用户名和相应的口令。 设置身份验证值，使您的。NET客户端应用程序能够与AEM Forms成功交换SOAP消息。
-1. 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储到`MyApplication/EncryptDocument`进程的PDF文档传递。
+1. 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储到`MyApplication/EncryptDocument`进程的PDF文档传递。
 1. 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示PDF文档的文件位置以及打开文件的模式。
 1. 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
 1. 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
-1. 通过为`binaryData`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+1. 通过为`binaryData`对象的属性指定字节数组的内容，填充`BLOB`对象。
 1. 通过调用`MyApplication_EncryptDocumentService`对象的`invoke`方法并传递包含PDF文档的`BLOB`对象来调用`MyApplication/EncryptDocument`进程。 此过程在`BLOB`对象中返回加密的PDF文档。
-1. 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值来创建一个&lt;a0/>对象，该字符串值表示密码加密文档的文件位置。
+1. 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值来创建一个对象，该字符串值表示密码加密文档的文件位置。
 1. 创建一个字节数组，用于存储`MyApplicationEncryptDocumentService`对象的`invoke`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`binaryData`数据成员的值，填充字节数组。
-1. 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+1. 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
 1. 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组内容写入PDF文件。
 
 ### 使用Java代理类和Base64编码{#invoking-a-service-using-java-proxy-classes-and-base64-encoding}调用服务
@@ -689,7 +689,7 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
 
    到Java客户端项目的类路径中。
 
-1. 使用`MyApplicationEncryptDocumentService`对象的构造函数创建&lt;a0/>对象。
+1. 使用`MyApplicationEncryptDocumentService`对象的构造函数创建对象。
 1. 通过调用`MyApplicationEncryptDocumentService`对象的`getEncryptDocument`方法创建`MyApplicationEncryptDocument`对象。
 1. 通过为以下数据成员分配值来设置调用AEM Forms所需的连接值：
 
@@ -712,9 +712,9 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. 通过使用`java.io.FileInputStream`对象的构造函数创建&lt;a1/>对象，检索要发送到`MyApplication/EncryptDocument`进程的PDF文档。 传递一个指定PDF文档位置的字符串值。
+1. 通过使用`java.io.FileInputStream`对象的构造函数创建对象，检索要发送到`MyApplication/EncryptDocument`进程的PDF文档。 传递一个指定PDF文档位置的字符串值。
 1. 创建一个字节数组，并用`java.io.FileInputStream`对象的内容填充它。
-1. 使用`BLOB`对象的构造函数创建&lt;a0/>对象。
+1. 使用`BLOB`对象的构造函数创建对象。
 1. 通过调用`setBinaryData`方法并传递字节数组来填充`BLOB`对象。 `BLOB`对象的`setBinaryData`是使用Base64编码时要调用的方法。 请参阅在服务请求中提供BLOB对象。
 1. 通过调用`MyApplicationEncryptDocument`对象的`invoke`方法调用`MyApplication/EncryptDocument`进程。 传递包含PDF文档的`BLOB`对象。 invoke方法返回一个`BLOB`对象，它包含已加密的PDF文档。
 1. 通过调用`BLOB`对象的`getBinaryData`方法，创建包含已加密PDF文档的字节数组。
@@ -818,7 +818,7 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
     b.ReaderQuotas.MaxArrayLength = 4000000;
    ```
 
-1. 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储PDF文档，以传递到`MyApplication/EncryptDocument`进程。
+1. 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储PDF文档，以传递到`MyApplication/EncryptDocument`进程。
 1. 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示PDF文档的文件位置以及打开文件的模式。
 1. 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
 1. 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
@@ -826,7 +826,7 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
 1. 通过调用`MyApplication_EncryptDocumentClient`对象的`invoke`方法调用`MyApplication/EncryptDocument`进程。 传递包含PDF文档的`BLOB`对象。 此过程在`BLOB`对象中返回加密的PDF文档。
 1. 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示受保护PDF文档的文件位置。
 1. 创建一个字节数组，用于存储`invoke`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-1. 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+1. 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
 1. 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 >[!NOTE]
@@ -885,7 +885,7 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
 
    到Java客户端项目的类路径中。
 
-1. 使用`MyApplicationEncryptDocumentService`对象的构造函数创建&lt;a0/>对象。
+1. 使用`MyApplicationEncryptDocumentService`对象的构造函数创建对象。
 1. 通过调用`MyApplicationEncryptDocumentService`对象的`getEncryptDocument`方法创建`MyApplicationEncryptDocument`对象。
 1. 通过为以下数据成员分配值来设置调用AEM Forms所需的连接值：
 
@@ -908,10 +908,10 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. 通过使用`java.io.File`对象的构造函数创建&lt;a1/>对象，检索要发送到`MyApplication/EncryptDocument`进程的PDF文档。 传递一个指定PDF文档位置的字符串值。
+1. 通过使用`java.io.File`对象的构造函数创建对象，检索要发送到`MyApplication/EncryptDocument`进程的PDF文档。 传递一个指定PDF文档位置的字符串值。
 1. 使用`FileDataSource`构造函数创建`javax.activation.DataSource`对象。 传递`java.io.File`对象。
-1. 使用`javax.activation.DataHandler`对象的构造函数并传递`javax.activation.DataSource`对象，创建&lt;a0/>对象。
-1. 使用`BLOB`对象的构造函数创建&lt;a0/>对象。
+1. 使用`javax.activation.DataHandler`对象的构造函数并传递`javax.activation.DataSource`对象，创建对象。
+1. 使用`BLOB`对象的构造函数创建对象。
 1. 通过调用`setSwaRef`方法并传递`javax.activation.DataHandler`对象，填充`BLOB`对象。
 1. 通过调用`MyApplicationEncryptDocument`对象的`invoke`方法并传递包含PDF文档的`BLOB`对象来调用`MyApplication/EncryptDocument`进程。 invoke方法返回一个`BLOB`对象，该对象包含加密的PDF文档。
 1. 通过调用`BLOB`对象的`getSwaRef`方法填充`javax.activation.DataHandler`对象。
@@ -976,13 +976,13 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
 1. 引用Microsoft .NET客户端程序集。 创建客户端Microsoft .NET项目。 在客户端项目中引用Microsoft .NET客户端程序集。 还引用`System.Web.Services`。
 1. 使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建一个`MyApplication_EncryptDocumentService`对象。
 1. 使用`System.Net.NetworkCredential`对象设置`MyApplication_EncryptDocumentService`对象的`Credentials`属性。 在`System.Net.NetworkCredential`构造函数中，指定AEM表单用户名和相应的口令。 设置身份验证值，使您的。NET客户端应用程序能够与AEM Forms成功交换SOAP消息。
-1. 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于将数据传递给`MyApplication/EncryptDocument`进程。
+1. 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于将数据传递给`MyApplication/EncryptDocument`进程。
 1. 为`BLOB`对象的`remoteURL`数据成员分配一个字符串值，它指定要传递到`MyApplication/EncryptDocument`服务的PDF文档的URI位置。
 1. 通过调用`MyApplication_EncryptDocumentService`对象的`invoke`方法并传递`BLOB`对象来调用`MyApplication/EncryptDocument`进程。 此过程在`BLOB`对象中返回加密的PDF文档。
-1. 使用`System.UriBuilder`对象的构造函数并传递返回的`BLOB`对象的`remoteURL`数据成员的值，创建&lt;a0/>对象。
+1. 使用`System.UriBuilder`对象的构造函数并传递返回的`BLOB`对象的`remoteURL`数据成员的值，创建对象。
 1. 将`System.UriBuilder`对象转换为`System.IO.Stream`对象。 (此列表后面的C#快速开始说明了如何执行此任务。)
 1. 创建一个字节数组，并用位于`System.IO.Stream`对象中的数据填充它。
-1. 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+1. 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
 1. 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组内容写入PDF文件。
 
 ### 通过HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}使用Java代理类和BLOB数据调用服务
@@ -1008,7 +1008,7 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
 
    到Java客户端项目的类路径中。
 
-1. 使用`MyApplicationEncryptDocumentService`对象的构造函数创建&lt;a0/>对象。
+1. 使用`MyApplicationEncryptDocumentService`对象的构造函数创建对象。
 1. 通过调用`MyApplicationEncryptDocumentService`对象的`getEncryptDocument`方法创建`MyApplicationEncryptDocument`对象。
 1. 通过为以下数据成员分配值来设置调用AEM Forms所需的连接值：
 
@@ -1031,12 +1031,12 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
     ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.PASSWORD_PROPERTY, password);
    ```
 
-1. 使用`BLOB`对象的构造函数创建&lt;a0/>对象。
+1. 使用`BLOB`对象的构造函数创建对象。
 1. 通过调用`setRemoteURL`方法填充`BLOB`对象。 传递一个字符串值，它指定要传递到`MyApplication/EncryptDocument`服务的PDF文档的URI位置。
 1. 通过调用`MyApplicationEncryptDocument`对象的`invoke`方法并传递包含PDF文档的`BLOB`对象来调用`MyApplication/EncryptDocument`进程。 此过程在`BLOB`对象中返回加密的PDF文档。
 1. 创建一个字节数组以存储表示加密的PDF文档的数据流。 调用`BLOB`对象的`getRemoteURL`方法（使用`invoke`方法返回的`BLOB`对象）。
-1. 使用`java.io.File`对象的构造函数创建&lt;a0/>对象。 此对象表示加密的PDF文档。
-1. 使用`java.io.FileOutputStream`对象的构造函数并传递`java.io.File`对象，创建&lt;a0/>对象。
+1. 使用`java.io.File`对象的构造函数创建对象。 此对象表示加密的PDF文档。
+1. 使用`java.io.FileOutputStream`对象的构造函数并传递`java.io.File`对象，创建对象。
 1. 调用`java.io.FileOutputStream`对象的`write`方法。 传递包含表示加密PDF文档的数据流的字节数组。
 
 ## 使用DIME {#invoking-aem-forms-using-dime}调用AEM Forms
@@ -1109,14 +1109,14 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
 1. 创建一个Microsoft .NET项目，它允许您使用DIME调用Forms服务。 确保包含Web服务增强2.0并创建对AEM Forms服务的Web引用。
 1. 在设置对`MyApplication/EncryptDocument`进程的Web引用后，使用其默认构造函数创建一个`EncryptDocumentServiceWse`对象。
 1. 将`EncryptDocumentServiceWse`对象的`Credentials`数据成员设置为`System.Net.NetworkCredential`值，该值指定AEM表单用户名和口令值。
-1. 使用`Microsoft.Web.Services2.Dime.DimeAttachment`对象的构造函数并传递以下值，创建&lt;a0/>对象：
+1. 使用`Microsoft.Web.Services2.Dime.DimeAttachment`对象的构造函数并传递以下值，创建对象：
 
    * 指定GUID值的字符串值。 可以通过调用`System.Guid.NewGuid.ToString`方法获取GUID值。
    * 指定内容类型的字符串值。 由于此过程需要PDF文档，请指定`application/pdf`。
    * `TypeFormat`明细列表值。 指定`TypeFormat.MediaType`。
    * 一个字符串值，它指定要传递到AEM Forms进程的PDF文档的位置。
 
-1. 使用`BLOB`对象的构造函数创建&lt;a0/>对象。
+1. 使用`BLOB`对象的构造函数创建对象。
 1. 通过将`Microsoft.Web.Services2.Dime.DimeAttachment`对象的`Id`数据成员值分配给`BLOB`对象的`attachmentID`数据成员，将DIME附件添加到`BLOB`对象。
 1. 调用`EncryptDocumentServiceWse.RequestSoapContext.Attachments.Add`方法并传递`Microsoft.Web.Services2.Dime.DimeAttachment`对象。
 1. 通过调用`EncryptDocumentServiceWse`对象的`invoke`方法并传递包含DIME附件的`BLOB`对象来调用`MyApplication/EncryptDocument`进程。 此过程在`BLOB`对象中返回加密的PDF文档。
@@ -1124,8 +1124,8 @@ Adobe开发人员网站包含以下文章，其中讨论使用Web服务API调用
 1. 对位于`EncryptDocumentServiceWse.ResponseSoapContext.Attachments`的附件进行迭代，并使用附件标识符值获取加密的PDF文档。
 1. 通过获取`Attachment`对象的`Stream`数据成员的值，获取`System.IO.Stream`对象。
 1. 创建一个字节数组并将该字节数组传递给`System.IO.Stream`对象的`Read`方法。 此方法使用表示加密的PDF文档的数据流填充字节数组。
-1. 通过调用`System.IO.FileStream`对象的构造函数并传递一个表示PDF文件位置的字符串值，创建一个&lt;a0/>对象。 此对象表示加密的PDF文档。
-1. 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+1. 通过调用`System.IO.FileStream`对象的构造函数并传递一个表示PDF文件位置的字符串值，创建一个对象。 此对象表示加密的PDF文档。
+1. 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
 1. 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 ### 创建使用DIME {#creating-apache-axis-java-proxy-classes-that-use-dime}的Apache Axis Java代理类
@@ -1138,14 +1138,14 @@ Apache Axis WSDL2Java工具生成JAVA文件，其中包含用于向服务发送S
 
 1. 使用Apache Axis创建使用`MyApplication/EncryptDocument`服务WSDL的Java代理类。 （请参阅[使用Apache Axis](#creating-java-proxy-classes-using-apache-axis)创建Java代理类。）
 1. 将Java代理类包含到类路径中。
-1. 使用`MyApplicationEncryptDocumentServiceLocator`对象的构造函数创建&lt;a0/>对象。
-1. 使用`URL`对象的构造函数并传递指定AEM Forms服务WSDL定义的字符串值，创建&lt;a0/>对象。 确保在SOAP端点URL的末尾指定`?blob=dime`。 例如，使用
+1. 使用`MyApplicationEncryptDocumentServiceLocator`对象的构造函数创建对象。
+1. 使用`URL`对象的构造函数并传递指定AEM Forms服务WSDL定义的字符串值，创建对象。 确保在SOAP端点URL的末尾指定`?blob=dime`。 例如，使用
 
    ```as3
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=dime.
    ```
 
-1. 通过调用`EncryptDocumentSoapBindingStub`对象的构造函数并传递`MyApplicationEncryptDocumentServiceLocator`对象和`URL`对象，创建&lt;a0/>对象。
+1. 通过调用`EncryptDocumentSoapBindingStub`对象的构造函数并传递`MyApplicationEncryptDocumentServiceLocator`对象和`URL`对象，创建对象。
 1. 通过调用`EncryptDocumentSoapBindingStub`对象的`setUsername`和`setPassword`方法设置AEM表单用户名和密码值。
 
    ```as3
@@ -1154,10 +1154,10 @@ Apache Axis WSDL2Java工具生成JAVA文件，其中包含用于向服务发送S
    ```
 
 1. 通过创建`java.io.File`对象检索要发送到`MyApplication/EncryptDocument`服务的PDF文档。 传递指定PDF文档位置的字符串值。
-1. 使用`javax.activation.DataHandler`对象的构造函数创建`javax.activation.FileDataSource`对象。 可以使用`javax.activation.FileDataSource`对象的构造函数并传递表示PDF文档的`java.io.File`对象来创建&lt;a0/>对象。
+1. 使用`javax.activation.DataHandler`对象的构造函数创建`javax.activation.FileDataSource`对象。 可以使用`javax.activation.FileDataSource`对象的构造函数并传递表示PDF文档的`java.io.File`对象来创建对象。
 1. 使用`org.apache.axis.attachments.AttachmentPart`对象的构造函数创建`javax.activation.DataHandler`对象。
 1. 通过调用`EncryptDocumentSoapBindingStub`对象的`addAttachment`方法并传递`org.apache.axis.attachments.AttachmentPart`对象来连接附件。
-1. 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 通过调用`BLOB`对象的`setAttachmentID`方法并传递附件标识符值，用附件标识符值填充`BLOB`对象。 可通过调用`org.apache.axis.attachments.AttachmentPart`对象的`getContentId`方法来获取此值。
+1. 使用`BLOB`对象的构造函数创建对象。 通过调用`BLOB`对象的`setAttachmentID`方法并传递附件标识符值，用附件标识符值填充`BLOB`对象。 可通过调用`org.apache.axis.attachments.AttachmentPart`对象的`getContentId`方法来获取此值。
 1. 通过调用`EncryptDocumentSoapBindingStub`对象的`invoke`方法调用`MyApplication/EncryptDocument`进程。 传递包含DIME附件的`BLOB`对象。 此过程在`BLOB`对象中返回加密的PDF文档。
 1. 通过调用返回的`BLOB`对象的`getAttachmentID`方法获取附件标识符值。 此方法返回一个字符串值，它表示返回的附件的标识符值。
 1. 通过调用`EncryptDocumentSoapBindingStub`对象的`getAttachments`方法检索附件。 此方法返回一个`Objects`的数组，它表示附件。
@@ -1165,8 +1165,8 @@ Apache Axis WSDL2Java工具生成JAVA文件，其中包含用于向服务发送S
 1. 通过调用`org.apache.axis.attachments.AttachmentPart`对象的`getDataHandler`方法，获取与附件关联的`javax.activation.DataHandler`对象。
 1. 通过调用`javax.activation.DataHandler`对象的`getInputStream`方法获取`java.io.FileStream`对象。
 1. 创建一个字节数组并将该字节数组传递给`java.io.FileStream`对象的`read`方法。 此方法使用表示加密的PDF文档的数据流填充字节数组。
-1. 使用`java.io.File`对象的构造函数创建&lt;a0/>对象。 此对象表示加密的PDF文档。
-1. 使用`java.io.FileOutputStream`对象的构造函数并传递`java.io.File`对象，创建&lt;a0/>对象。
+1. 使用`java.io.File`对象的构造函数创建对象。 此对象表示加密的PDF文档。
+1. 使用`java.io.FileOutputStream`对象的构造函数并传递`java.io.File`对象，创建对象。
 1. 调用`java.io.FileOutputStream`对象的`write`方法并传递包含表示已加密PDF文档的数据流的字节数组。
 
 **另请参阅**
@@ -1284,7 +1284,7 @@ AEM表单用户的标识可以通过使用密钥签名的SAML断言来表示。 
 
 **注册处理程序**
 
-要向Axis注册处理程序，请创建一个client-config.wsdd文件。 默认情况下，Axis会查找具有此名称的文件。 以下XML代码是client-config.wsdd文件的示例。 有关详细信息，请参阅Axis文档。
+要向Axis注册处理程序，请创建client-config.wsdd文件。 默认情况下，Axis会查找具有此名称的文件。 以下XML代码是client-config.wsdd文件的示例。 有关详细信息，请参阅Axis文档。
 
 ```as3
  <deployment xmlns="https://xml.apache.org/axis/wsdd/" xmlns:java="https://xml.apache.org/axis/wsdd/providers/java"> 
@@ -1511,7 +1511,7 @@ WSE体系结构使用策略、断言和SecurityToken数据类型。 对于Web服
 * 应用程序管理器
 * 目录管理器
 * Distiller
-* Rights Management
+* 权限管理
 * 文档管理
 
 ### J2EE应用程序服务器{#differences-in-j2ee-application-servers}中的差异

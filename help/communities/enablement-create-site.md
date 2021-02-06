@@ -258,7 +258,7 @@ Id（可选）在启用报告中包含视频心跳分析时必 [需的](analytic
 
 ### 配置身份验证错误{#configure-for-authentication-error}
 
-在配置站点并将其推送到发布后，在发布实例上配置登录映射[(](sites-console.md#configure-for-authentication-error))。 `Adobe Granite Login Selector Authentication Handler`优点是，当登录信用输入不正确时，身份验证错误将重新显示社区站点的登录页面并显示错误消息。
+在配置站点并将其推送到发布后，在发布实例上配置登录映射](sites-console.md#configure-for-authentication-error)(`Adobe Granite Login Selector Authentication Handler`)。 [优点是，当登录信用输入不正确时，身份验证错误将重新显示社区站点的登录页面并显示错误消息。
 
 将`Login Page Mapping`添加为
 

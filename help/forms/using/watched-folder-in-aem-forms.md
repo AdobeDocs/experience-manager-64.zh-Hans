@@ -333,7 +333,7 @@ processWorkflowContext()的参数是com.adobe.aemfd.watchfolder.workflow.api.Wor
 * getMetadata:返回元数据变量的值。 变量将传递到WorkflowContextService.execute()方法。
 * getCommittedVariables:返回表示由前一步骤设置的变量的只读对象映射。 如果在以前的任何步骤中未修改变量，则会返回配置监视文件夹时指定的默认值。
 * getCommittedResults:返回只读文档图。 该映射表示由前些步骤生成的输出文件。
-* setVariable:WorkflowContextProcessor实现使用变量来操作表示在步骤之间流动的自定义动态数据的变量。 变量的名称和类型与配置“监视文件夹”[期间指定的变量的名称相同。 ](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)要更改变量的值，请使用非null值调用setVariable API。 要删除变量，请调用值为null的setVariable()。
+* setVariable:WorkflowContextProcessor实现使用变量来操作表示在步骤之间流动的自定义动态数据的变量。 变量的名称和类型与配置“监视文件夹”](/help/forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)期间指定的变量的名称相同。 [要更改变量的值，请使用非null值调用setVariable API。 要删除变量，请调用值为null的setVariable()。
 
 还提供以下ProcessorContext API:
 

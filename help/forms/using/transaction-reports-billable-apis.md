@@ -154,7 +154,7 @@ AEM Forms提供多个API来提交表单、处理文档和渲染文档。 某些A
  </tbody>
 </table>
 
-### 输出服务{#output-service}
+### 输出服务 {#output-service}
 
 <table> 
  <tbody>
@@ -494,7 +494,7 @@ AEM Forms提供多个API来提交表单、处理文档和渲染文档。 某些A
 
 ## 将收费API记录为自定义代码{#recording-billable-apis-as-transactions-for-custom-code}的事务处理
 
-诸如提交PDF表单、使用代理UI预览交互式通信、使用非标准表单提交和自定义实施等操作不作为事务处理入账。 AEM Forms提供API来记录此类操作（如事务）。 您可以从自定义实现调用API以记录事务[。](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg)
+诸如提交PDF表单、使用代理UI预览交互式通信、使用非标准表单提交和自定义实施等操作不作为事务处理入账。 AEM Forms提供API来记录此类操作（如事务）。 您可以从自定义实现调用API以记录事务](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg)。[
 
 ## 相关文章{#related-articles}
 

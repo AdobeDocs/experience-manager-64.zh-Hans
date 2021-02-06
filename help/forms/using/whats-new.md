@@ -170,7 +170,7 @@ Forms的作者和开发者可以创建表单数据模型的计算属性。 它�
 
 ![aem-forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
 
-借助以Forms为中心的AEM工作流功能，您可以快速为OSGi堆栈上的各种任务构建和部署工作流。 您不再需要在JEE堆栈上安装可用的流程管理功能，从而简化了部署并消除了应用程序服务器和基础架构成本。 有关详细信息，请参阅OSGi[上以Forms为中心的工作流。](/help/forms/using/aem-forms-workflow.md)
+借助以Forms为中心的AEM工作流功能，您可以快速为OSGi堆栈上的各种任务构建和部署工作流。 您不再需要在JEE堆栈上安装可用的流程管理功能，从而简化了部署并消除了应用程序服务器和基础架构成本。 有关详细信息，请参阅OSGi](/help/forms/using/aem-forms-workflow.md)上以Forms为中心的工作流。[
 
 以下是以Forms为中心的AEM工作流的增强功能：·
 

@@ -35,7 +35,7 @@ ht-degree: 1%
 考虑您将使用的AEM的功能以及对您的设计的影响；例如：
 
 * [商务](/help/sites-administering/ecommerce.md)
-* [屏幕](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [屏幕](https://docs.adobe.com/content/help/zh-Hans/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [资产](/help/assets/assets.md)
 * [标记](/help/sites-administering/tags.md)
 * [多站点管理与翻译](/help/sites-administering/msm-and-translation.md)

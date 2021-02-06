@@ -86,7 +86,7 @@ sh./scripts/cloud-scripts/zkcli.sh \\
 [https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 使用:\
-。/bin/solr create \\
+./bin/solr create \\
 -c *mycollection-name*\\
 -d *config-dir* \\
 -n *myconfig-name* \\
@@ -203,8 +203,8 @@ Solr 5的标准MLS文件(模式.xml、solrconfig.xml)
 1. 以独立模式安装Solr
 1. 如果运行Solr5，请创建集合1（与Solr4相似）:
 
-   * 。/bin/solr开始
-   * 。/bin/solr create_core -c collection1 -d sample_techproducts_configs
+   * ./bin/solr开始
+   * ./bin/solr create_core -c collection1 -d sample_techproducts_configs
 
 1. 备份Solr配置目录中的&#x200B;**模式**&#x200B;和&#x200B;**solrconfig.xml**，如：
 
@@ -290,8 +290,8 @@ Solr 5的标准MLS文件(模式.xml、solrconfig.xml)
 * 以独立模式安装Solr
 * 如果运行Solr5，请创建集合1（与Solr4相似）:
 
-   * 。/bin/solr开始
-   * 。/bin/solr create_core -c collection1 -d sample_techproducts_configs
+   * ./bin/solr开始
+   * ./bin/solr create_core -c collection1 -d sample_techproducts_configs
 
 * 运行安装脚本：安装[-v 4|5] [-d solhome] [-c集合路径]
 其中：

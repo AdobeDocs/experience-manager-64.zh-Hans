@@ -111,7 +111,7 @@ MySQL Workbench提供了用于执行SQL脚本的UI，这些脚本安装模式和
 
 打开Communities连接以安装数据库。
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 ### 获取SQL脚本{#obtain-the-sql-script}
 
@@ -179,7 +179,7 @@ SQL脚本从AEM存储库获取：
 * 找到`Day Commons JDBC Connections Pool`
 * 选择`+`图标以创建新连接配置
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
 * 输入以下值：
 

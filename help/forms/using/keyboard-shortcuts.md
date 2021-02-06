@@ -335,7 +335,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 格式化 {#formatting}
+### 格式 {#formatting}
 
 <table> 
  <tbody>

@@ -114,7 +114,7 @@ AMS已配置完毕，现在是时候在Adobe移动仪表板中关联移动应用
 
 在AEM Mobile应用程序内创作目标内容的过程与创作AEM Sites类似：
 
-有关在AEM[中创作目标内容的完整概述，请参阅此处](/help/sites-authoring/personalization.md)
+有关在AEM](/help/sites-authoring/personalization.md)中创作目标内容的完整概述，请参阅此处[
 
 ## 对于开发人员{#for-developers}
 

@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -25,13 +25,13 @@ AEM Forms提供AEM Forms应用的完整源代码。 该源包含构建自定义A
 
 要获取AEM Forms应用程序源，请执行以下步骤：
 
-1. 打开[软件分发](https://experience.adobe.com/downloads)。 您需要Adobe ID才能登录软件分发。
-1. 点按标题菜单中的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
+1. 打开 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登录 Software Distribution。
+1. 点按标题菜单中的 **[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL 过滤器]**&#x200B;部分中：
    1. 从&#x200B;**[!UICONTROL 解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Forms]**。
    2. 选择包的版本和类型。 您还可以使用&#x200B;**[!UICONTROL 搜索下载]**&#x200B;选项筛选结果。
 1. 点按适用于您的操作系统的程序包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后点按&#x200B;**[!UICONTROL 下载]**。
-1. 打开[包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)并单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
+1. 打开[包管理器](https://docs.adobe.com/content/help/zh-Hans/experience-manager-65/administering/contentmanagement/package-manager.html)，并单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
 1. 选择软件包，然后单击&#x200B;**[!UICONTROL 安装]**。
 
 下图显示了`adobe-lc-mobileworkspace-src-<version>.zip`的提取内容。
@@ -91,7 +91,7 @@ AEM Forms提供AEM Forms应用的完整源代码。 该源包含构建自定义A
 
    ![dontremindmeagainfolterproject](assets/dontremindmeagainforthisproject.png)
 
-1. 成功构建Gradle后，将显示以下屏幕。 将相应的设备或模拟器与系统连接，然后单击“运行Android™**[!UICONTROL ”。]**
+1. 成功构建Gradle后，将显示以下屏幕。 将相应的设备或模拟器与系统连接，然后单击“运行Android™]**”。**[!UICONTROL 
 
    ![格拉克莱孔索尔](assets/gradleconsole.png)
 

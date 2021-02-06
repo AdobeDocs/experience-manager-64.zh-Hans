@@ -84,7 +84,7 @@ ht-degree: 0%
 
 1. 完成所有部分后，单击&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 另存为]**&#x200B;并提供设置的名称。
 
-可以自定义对各种文件类型的支持。 (请参见](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)使用AEM表单进行编程[中的“添加对附加本机文件格式的支持[”。)](https://www.adobe.com/go/learn_lc_programming_11)
+可以自定义对各种文件类型的支持。 (请参见[使用AEM表单进行编程](https://www.adobe.com/go/learn_lc_programming_11)中的“添加对附加本机文件格式的支持](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)”。)[
 
 ## 更改默认设置{#change-the-default-settings}
 

@@ -118,12 +118,12 @@ ht-degree: 0%
 1. 创建签名客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 获取添加签名字段的PDF文档
 
    * 创建一个`java.io.FileInputStream`对象，它通过使用其构造函数并传递一个指定PDF文档位置的字符串值来表示要向其添加签名字段的PDF文档。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 添加签名字段
 
@@ -179,11 +179,11 @@ ht-degree: 0%
 
 1. 获取添加签名字段的PDF文档
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储将包含签名字段的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储将包含签名字段的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`MTOM`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`MTOM`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 添加签名字段
 
@@ -200,9 +200,9 @@ ht-degree: 0%
 
 1. 将PDF文档另存为PDF文件
 
-   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示将包含签名字段的PDF文档的文件位置以及打开文件的模式，创建一个&lt;a0/>对象。
+   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示将包含签名字段的PDF文档的文件位置以及打开文件的模式，创建一个对象。
    * 创建一个字节数组，用于存储`addSignatureField`方法返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`binaryData`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -277,12 +277,12 @@ ht-degree: 0%
 1. 创建签名客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 获取包含签名字段的PDF文档
 
-   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个&lt;a0/>对象，它表示包含签名字段的PDF文档。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个对象，它表示包含签名字段的PDF文档。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 检索签名字段名称
 
@@ -326,7 +326,7 @@ ht-degree: 0%
 
 1. 获取包含签名字段的PDF文档
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储包含签名字段的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储包含签名字段的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -445,19 +445,19 @@ ht-degree: 0%
 1. 创建签名客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 获取包含要修改的签名字段的PDF文档
 
    * 创建一个`java.io.FileInputStream`对象，它表示包含要修改的签名字段的PDF文档，方法是使用其构造函数并传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置字典值
 
-   * 使用`PDFSignatureFieldProperties`对象的构造函数创建&lt;a0/>对象。 `PDFSignatureFieldProperties`对象存储签名字段锁定字典和种子值字典信息。
-   * 使用`PDFSeedValueOptionSpec`对象的构造函数创建&lt;a0/>对象。 此对象允许您设置种子值字典值。
+   * 使用`PDFSignatureFieldProperties`对象的构造函数创建对象。 `PDFSignatureFieldProperties`对象存储签名字段锁定字典和种子值字典信息。
+   * 使用`PDFSeedValueOptionSpec`对象的构造函数创建对象。 此对象允许您设置种子值字典值。
    * 通过调用`PDFSeedValueOptionSpec`对象的`setMdpValue`方法并传递`MDPPermissions.NoChanges`文档值，禁止对PDF明细列表进行更改。
-   * 使用`FieldMDPOptionSpec`对象的构造函数创建&lt;a0/>对象。 此对象允许您设置签名字段锁定字典值。
+   * 使用`FieldMDPOptionSpec`对象的构造函数创建对象。 此对象允许您设置签名字段锁定字典值。
    * 通过调用`FieldMDPOptionSpec`对象的`setMdpValue`方法并传递`FieldMDPAction.ALL`文档值，锁定PDF明细列表中的所有字段。
    * 通过调用`PDFSignatureFieldProperties`对象的`setSeedValue`方法并传递`PDFSeedValueOptionSpec`对象，设置种子值字典信息。
    * 通过调用`PDFSignatureFieldProperties`对象的`setFieldMDP`方法并传递`FieldMDPOptionSpec`对象，设置签名字段锁定字典信息。
@@ -508,7 +508,7 @@ ht-degree: 0%
 
 1. 获取包含要修改的签名字段的PDF文档
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储包含要修改的签名字段的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储包含要修改的签名字段的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -516,10 +516,10 @@ ht-degree: 0%
 
 1. 设置字典值
 
-   * 使用`PDFSignatureFieldProperties`对象的构造函数创建&lt;a0/>对象。 此对象存储签名字段锁定字典和种子值字典信息。
-   * 使用`PDFSeedValueOptionSpec`对象的构造函数创建&lt;a0/>对象。 此对象允许您设置种子值字典值。
+   * 使用`PDFSignatureFieldProperties`对象的构造函数创建对象。 此对象存储签名字段锁定字典和种子值字典信息。
+   * 使用`PDFSeedValueOptionSpec`对象的构造函数创建对象。 此对象允许您设置种子值字典值。
    * 通过将`MDPPermissions.NoChanges`文档值分配给`PDFSeedValueOptionSpec`对象的`mdpValue`明细列表成员，禁止对PDF进行更改。
-   * 使用`FieldMDPOptionSpec`对象的构造函数创建&lt;a0/>对象。 此对象允许您设置签名字段锁定字典值。
+   * 使用`FieldMDPOptionSpec`对象的构造函数创建对象。 此对象允许您设置签名字段锁定字典值。
    * 通过将`FieldMDPAction.ALL`文档值分配给`FieldMDPOptionSpec`对象的`mdpValue`明细列表成员，锁定PDF中的所有字段。
    * 通过将`PDFSeedValueOptionSpec`对象分配给`PDFSignatureFieldProperties`对象的`seedValue`数据成员来设置种子值字典信息。
    * 通过将`FieldMDPOptionSpec`对象分配给`PDFSignatureFieldProperties`对象的`fieldMDP`数据成员来设置签名字段锁定字典信息。
@@ -542,7 +542,7 @@ ht-degree: 0%
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示将包含签名字段的PDF文档的文件位置以及打开文件的模式。
    * 创建一个字节数组，用于存储`addSignatureField`方法返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -704,12 +704,12 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 1. 创建签名客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 获取PDF文档进行签名
 
    * 创建一个`java.io.FileInputStream`对象，它表示要通过使用其构造函数进行数字签名的PDF文档，并传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 签署PDF文档
 
@@ -771,7 +771,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
 1. 获取PDF文档进行签名
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储已签名的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储已签名的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示要签名的PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -783,7 +783,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
    * 一个`BLOB`对象，它表示要签名的PDF文档。
    * 一个字符串值，它表示将包含数字签名的签名字段的名称。
-   * 一个`Credential`对象，它表示用于对PDF文档进行数字签名的凭据。 使用`Credential`对象的构造函数创建一个&lt;a0/>对象，并通过为`Credential`对象的`alias`属性指定别名。
+   * 一个`Credential`对象，它表示用于对PDF文档进行数字签名的凭据。 使用`Credential`对象的构造函数创建一个对象，并通过为`Credential`对象的`alias`属性指定别名。
    * 一个`HashAlgorithm`对象，它指定一个静态数据成员，该成员表示用于摘要PDF文档的哈希算法。 例如，可指定`HashAlgorithm.SHA1`使用SHA1算法。
    * 一个布尔值，它指定是否使用哈希算法。
    * 一个字符串值，它表示PDF文档被数字签名的原因。
@@ -801,7 +801,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示已签名PDF文档的文件位置以及打开文件的模式。
    * 创建一个字节数组，用于存储`sign`方法返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -909,15 +909,15 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 1. 创建Forms和签名客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
-   * 使用`FormsServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
+   * 使用`FormsServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 使用Forms服务获取交互式表单
 
    * 创建一个`java.io.FileInputStream`对象，它表示要使用其构造函数传递给Forms服务的PDF文档。 传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
    * 创建一个`java.io.FileInputStream`对象，它表示包含表单文档的XML，使用其构造函数将表单数据传递给Forms服务。 传递一个指定XML文件位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
    * 创建用于设置运行时选项的`PDFFormRenderSpec`对象。 调用`PDFFormRenderSpec`对象的`setGenerateServerAppearance`方法并传递`true`。
    * 调用`FormsServiceClient`对象的`renderPDFForm2`方法并传递以下值：
 
@@ -1000,12 +1000,12 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
 1. 使用Forms服务获取交互式表单
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储已签名的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储已签名的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示要签名的PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
    * 通过为`MTOM`属性指定字节数组的内容，填充`BLOB`对象。
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储表单数据。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储表单数据。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示包含表单数据的XML文件的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -1030,7 +1030,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
    * 一个`BLOB`对象，它表示要签名的PDF文档。 使用Forms服务返回的`BLOB`实例。
    * 表示已签名的签名字段名称的字符串值。
-   * 一个`Credential`对象，它表示用于对PDF文档进行数字签名的凭据。 使用`Credential`对象的构造函数创建一个&lt;a0/>对象，并通过为`Credential`对象的`alias`属性指定别名。
+   * 一个`Credential`对象，它表示用于对PDF文档进行数字签名的凭据。 使用`Credential`对象的构造函数创建一个对象，并通过为`Credential`对象的`alias`属性指定别名。
    * 一个`HashAlgorithm`对象，它指定一个静态数据成员，该成员表示用于摘要PDF文档的哈希算法。 例如，可指定`HashAlgorithm.SHA1`使用SHA1算法。
    * 一个布尔值，它指定是否使用哈希算法。
    * 一个字符串值，它表示PDF文档被数字签名的原因。
@@ -1048,7 +1048,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示已签名PDF文档的文件位置以及打开文件的模式。
    * 创建一个字节数组，用于存储`sign`方法返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -1165,12 +1165,12 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 1. 创建签名客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 获取PDF文档以验证
 
    * 创建一个`java.io.FileInputStream`对象，它表示要验证的PDF文档，方法是使用其构造函数并传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 验证PDF文档
 
@@ -1235,7 +1235,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
 1. 获取PDF文档以验证
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储已验证的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储已验证的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示要验证的PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -1247,7 +1247,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
    * 表示要认证的PDF文档的`BLOB`对象。
    * 表示将包含签名的签名字段名称的字符串值。
-   * 一个`Credential`对象，它表示用于验证PDF文档的凭据。 使用`Credential`对象的构造函数创建一个&lt;a0/>对象，并通过为`Credential`对象的`alias`属性指定别名。
+   * 一个`Credential`对象，它表示用于验证PDF文档的凭据。 使用`Credential`对象的构造函数创建一个对象，并通过为`Credential`对象的`alias`属性指定别名。
    * 一个`HashAlgorithm`对象，它指定一个静态数据成员，它表示用于摘要PDF文档的哈希算法。 例如，可指定`HashAlgorithm.SHA1`使用SHA1算法。
    * 一个布尔值，它指定是否使用哈希算法。
    * 一个字符串值，它表示PDF文档通过认证的原因。
@@ -1256,7 +1256,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
    * `MDPPermissions`对象的静态数据成员，它指定可对使签名失效的PDF文档执行的操作。
    * 一个布尔值，它指定是否使用作为前一个参数值传递的`MDPPermissions`对象。
    * 一个字符串值，用于解释使签名失效的操作。
-   * 控制已验证签名外观的`PDFSignatureAppearanceOptions`对象。 使用`PDFSignatureAppearanceOptions`对象的构造函数创建&lt;a0/>对象。 您可以通过设置签名的一个数据成员来修改签名的外观。
+   * 控制已验证签名外观的`PDFSignatureAppearanceOptions`对象。 使用`PDFSignatureAppearanceOptions`对象的构造函数创建对象。 您可以通过设置签名的一个数据成员来修改签名的外观。
    * 一个`System.Boolean`对象，它指定是否对签署方的证书执行吊销检查。 如果此吊销检查已完成，则会将其嵌入签名中。 默认为 `false`.
    * 一个`System.Boolean`对象，它指定是否锁定正在验证的签名字段。 如果字段已锁定，则签名字段将标记为只读，其属性将无法修改，并且没有所需权限的任何人都无法清除该字段。 默认为 `false`.
    * 一个`System.Boolean`对象，它指定签名字段是否已锁定。 即，如果将`true`传递给上一个参数，则将`true`传递给此参数。
@@ -1270,7 +1270,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示将包含已验证的PDF文档的PDF文档的文件位置以及打开文件的模式。
    * 创建一个字节数组，用于存储`certify`方法返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`binaryData`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -1402,16 +1402,16 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 1. [创建签名客户端](#unresolvedlink-lc-si)
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 获取包含签名的PDF文档以验证
 
    * 创建一个`java.io.FileInputStream`对象，它表示包含要使用其构造函数验证的签名的PDF文档。 传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置PKI运行时选项
 
-   * 使用`PKIOptions`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PKIOptions`对象的构造函数创建对象。
    * 通过调用`PKIOptions`对象的`setVerificationTime`方法并传递指定验证时间的`VerificationTime`明细列表值来设置验证时间。
    * 通过调用`PKIOptions`对象的`setRevocationCheckStyle`方法并传递指定是否执行吊销检查的`RevocationCheckStyle`明细列表值，设置吊销检查选项。
 
@@ -1472,7 +1472,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
 1. 获取包含签名的PDF文档以验证
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储包含要验证的数字或认证签名的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储包含要验证的数字或认证签名的PDF文档。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示已签名PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
@@ -1480,7 +1480,7 @@ PDF文档通过公钥技术进行签名。 签署方有两个密钥：公钥和�
 
 1. 设置PKI运行时选项
 
-   * 使用`PKIOptions`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PKIOptions`对象的构造函数创建对象。
    * 通过为`PKIOptions`对象的`verificationTime`数据成员分配一个指定验证时间的`VerificationTime`明细列表值来设置验证时间。
    * 通过为`PKIOptions`对象的`revocationCheckStyle`数据成员分配一个指定是否执行吊销检查的`RevocationCheckStyle`明细列表值，设置吊销检查选项。
 
@@ -1620,16 +1620,16 @@ AEM Forms提供验证PDF文档中所有数字签名的方法。 假定PDF文档�
 1. 创建签名客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 获取包含要验证的签名的PDF文档
 
    * 创建一个`java.io.FileInputStream`对象，它表示包含多个数字签名的PDF文档，并使用其构造函数进行验证。 传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置PKI运行时选项
 
-   * 使用`PKIOptions`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PKIOptions`对象的构造函数创建对象。
    * 通过调用`PKIOptions`对象的`setVerificationTime`方法并传递指定验证时间的`VerificationTime`明细列表值来设置验证时间。
    * 通过调用`PKIOptions`对象的`setRevocationCheckStyle`方法并传递指定是否执行吊销检查的`RevocationCheckStyle`明细列表值，设置吊销检查选项。
 
@@ -1687,7 +1687,7 @@ AEM Forms提供验证PDF文档中所有数字签名的方法。 假定PDF文档�
 
 1. 获取包含要验证的签名的PDF文档
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象存储包含多个要验证的数字签名的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象存储包含多个要验证的数字签名的PDF文档。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
@@ -1695,7 +1695,7 @@ AEM Forms提供验证PDF文档中所有数字签名的方法。 假定PDF文档�
 
 1. 设置PKI运行时选项
 
-   * 使用`PKIOptions`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PKIOptions`对象的构造函数创建对象。
    * 通过为`PKIOptions`对象的`verificationTime`数据成员分配一个指定验证时间的`VerificationTime`明细列表值来设置验证时间。
    * 通过为`PKIOptions`对象的`revocationCheckStyle`数据成员分配一个指定是否执行吊销检查的`RevocationCheckStyle`明细列表值，设置吊销检查选项。
 
@@ -1793,12 +1793,12 @@ AEM Forms提供验证PDF文档中所有数字签名的方法。 假定PDF文档�
 1. 创建签名客户端。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`SignatureServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 获取包含要删除的签名的PDF文档
 
    * 创建一个`java.io.FileInputStream`对象，它表示包含要删除的签名的PDF文档，方法是使用它的构造函数并传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 从签名字段中删除数字签名
 
@@ -1851,11 +1851,11 @@ AEM Forms提供验证PDF文档中所有数字签名的方法。 假定PDF文档�
 
 1. 获取包含要删除的签名的PDF文档
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储包含要删除的数字签名的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储包含要删除的数字签名的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示已签名PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
-   * 通过为`MTOM`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`MTOM`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 从签名字段中删除数字签名
 
@@ -1870,7 +1870,7 @@ AEM Forms提供验证PDF文档中所有数字签名的方法。 假定PDF文档�
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置（包含空签名字段）以及打开文件的模式。
    * 创建一个字节数组，用于存储`sign`方法返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**

@@ -96,7 +96,7 @@ ht-degree: 0%
 
 1. 设置性能运行时选项
 
-   * 使用`PDFFormRenderSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFFormRenderSpec`对象的构造函数创建对象。
    * 通过调用`PDFFormRenderSpec`对象的`setCacheEnabled`方法并传递`true`来设置表单缓存选项。
    * 通过调用`PDFFormRenderSpec`对象的`setLinearizedPDF`方法并传递`true.`来设置线性化选项
 
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 1. 设置性能运行时选项
 
-   * 使用`PDFFormRenderSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFFormRenderSpec`对象的构造函数创建对象。
    * 通过调用`PDFFormRenderSpec`对象的`setCacheEnabled`方法并传递true来设置表单缓存选项。
    * 通过调用`PDFFormRenderSpec`对象的`setStandAlone`方法并传递true来设置独立选项。
    * 通过调用`PDFFormRenderSpec`对象的`setLinearizedPDF`方法并传递true来设置线性化选项。

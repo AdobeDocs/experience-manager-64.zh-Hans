@@ -1,6 +1,6 @@
 ---
-title: 管理对工作流的访问
-seo-title: 管理对工作流的访问
+title: 管理对工作流的访问权限
+seo-title: 管理对工作流的访问权限
 description: 了解如何管理对工作流的访问。
 seo-description: 了解如何管理对工作流的访问。
 uuid: 58f79b89-fe56-4565-a869-8179c1ac68de
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 管理对工作流的访问{#managing-access-to-workflows}
+# 管理对工作流的访问权限{#managing-access-to-workflows}
 
 根据用户帐户配置ACL以允许（或禁用）启动和参与工作流。
 

@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # 已知问题 {#known-issues}
 
-本页保留Adobe Experience Manager6.4在2018年4月发布的一列表已知问题。 有关已知问题的详细信息，请[联系支持部门](https://helpx.adobe.com/cn/support/experience-manager.html)。
+本页保留Adobe Experience Manager6.4在2018年4月发布的一列表已知问题。 有关已知问题的详细信息，请[联系支持部门](https://helpx.adobe.com/support/experience-manager.html)。
 
 ## 混合设备{#hybrid-devices}
 

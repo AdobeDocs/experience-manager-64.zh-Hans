@@ -175,7 +175,7 @@ AEM配置为将三个服务之一用于推送通知：
    <table> 
     <tbody> 
      <tr> 
-     <td><p> </p> <p>{</p> <p> “版本”:《2012-10-17》,</p> <p> "语句": [</p> <p> {</p> <p> "操作": [</p> <p> "mobileanalytics:PutEvents",</p> <p> “cognito sync:*”,</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS：订阅"</p> <p> ],</p> <p> “效果”:“允许”,</p> <p> "资源": [</p> <p> "*"</p> <p> _</p> <p> }</p> <p> _</p> <p>}</p> <p> </p> </td> 
+     <td><p> </p> <p>{</p> <p> “版本”:《2012-10-17》,</p> <p> "语句": [</p> <p> {</p> <p> "操作": [</p> <p> "mobileanalytics:PutEvents",</p> <p> “cognito sync:*”,</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS：订阅"</p> <p> ],</p> <p> “效果”:“允许”,</p> <p> "资源": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td> 
      </tr> 
     </tbody> 
     </table>
@@ -353,7 +353,7 @@ CRXDE Lite:
 
 1. 单击&#x200B;**推送通知**&#x200B;拼贴右上角的添加符号以打开&#x200B;**创建通知向导**。
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. 单击链接路径中的浏览图标，向用户显示应用程序的内容结构。
 

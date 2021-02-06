@@ -36,7 +36,7 @@ ht-degree: 5%
 
 纵横比和关键字条件都适用于资产详细信息页面和&#x200B;**[!UICONTROL 全景媒体]** 组件的全景资产。
 
-要上传资产以用于全景图像查看器，请参阅[上传资产](managing-assets-touch-ui.md#uploading-assets)。
+要上传资产以用于全景图图像查看器，请参阅[上传资产](managing-assets-touch-ui.md#uploading-assets)。
 
 ## 配置Dynamic Media经典{#configuring-dynamic-media-classic-scene}
 

@@ -89,107 +89,107 @@ Adobe开发人员网站包含以下讨论使用Java API调用AEM Forms服务的�
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
    <td><p>必须始终包含在Java客户端应用程序的类路径中。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
    <td><p>必须始终包含在Java客户端应用程序的类路径中。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
    <td><p>必须始终包含在Java客户端应用程序的类路径中。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk//client-libs/&lt;app server=""&gt;</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk//client-libs/&lt;app server=""&gt;<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>调用Application Manager服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>调用Assembler服务时需要。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>调用备份和还原服务API时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>调用条形码表单服务时需要。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>调用转换PDF服务时需要。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>需要调用Distiller服务。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>调用DocConverter服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>调用文档管理服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
    <td><p>调用加密服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-forms-client.jar</p></td>
    <td><p>需要调用Forms服务。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-formdataintegration-client.jar</p></td>
    <td><p>调用表单数据集成服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generatepdf-client.jar</p></td>
    <td><p>调用“生成PDF”服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generate3dpdf-client.jar</p></td>
    <td><p>调用“生成3D PDF”服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-jobmanager-client-sdk.jar</p></td>
    <td><p>调用作业管理器服务时需要。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-output-client.jar</p></td>
    <td><p>调用输出服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-pdfutility-client.jar</p></td>
    <td><p>调用PDF实用程序或XMP实用程序服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-reader-extensions-client.jar</p></td>
    <td><p>调用Acrobat Reader DC扩展服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
    <td><p>调用存储库服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs\thirdparty</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs\thirdparty<i></i></p></td>
   </tr>
   <tr>
    <td>
@@ -204,22 +204,22 @@ Adobe开发人员网站包含以下讨论使用Java API调用AEM Forms服务的�
      <li><p>xsdlib.jar</p></li>
     </ul></td>
    <td><p>调用Rights Management服务时需要。</p><p>如果AEM Forms部署在JBoss上，请包含所有这些文件。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p><p>JBoss特定的lib目录</p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p><p>JBoss特定的lib目录</p></td>
   </tr>
   <tr>
    <td><p>adobe-signatures-client.jar</p></td>
    <td><p>调用签名服务时需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-taskmanager-client-sdk.jar</p></td>
    <td><p>调用任务管理器服务时需要。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-truststore-client.jar</p></td>
    <td><p>调用信任存储服务时需要。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
  </tbody>
 </table>
@@ -261,7 +261,7 @@ Adobe开发人员网站包含以下讨论使用Java API调用AEM Forms服务的�
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
    <td><p>如果使用SOAP模式调用AEM Forms，请包括这些JAR文件。</p> </td>
-   <td><p>&lt;&gt;install directory<em>&gt;/sdk/client-libs/thirdparty</em></p> </td>
+   <td><p>&lt;&gt;install directory</em>&gt;/sdk/client-libs/thirdparty<em></em></p> </td>
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
@@ -462,7 +462,7 @@ Adobe开发人员网站包含以下讨论使用Java API调用AEM Forms服务的�
 
 要设置连接属性，请执行以下任务:
 
-1. 使用`java.util.Properties`对象的构造函数创建&lt;a0/>对象。
+1. 使用`java.util.Properties`对象的构造函数创建对象。
 1. 要设置`DSC_DEFAULT_EJB_ENDPOINT`连接属性，请调用`java.util.Properties`对象的`setProperty`方法并传递以下值：
 
    * `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT`明细列表值
@@ -972,7 +972,7 @@ AEM Forms服务操作可通过使用服务的强类型API（称为Java客户端�
 
 要执行服务操作，请调用属于Java对象的方法。 Java客户端库包含通常将一对一与服务操作映射的方法。 使用Java客户端库时，设置所需的连接属性。 （请参阅[设置连接属性](invoking-aem-forms-using-java.md#setting-connection-properties)。）
 
-在设置连接属性后，创建一个`ServiceClientFactory`对象，该对象用于实例化Java对象，它允许您调用服务。 每个具有Java客户端库的服务都有一个对应的客户端对象。 例如，要调用存储库服务，请使用`ResourceRepositoryClient`对象的构造函数创建一个&lt;a0/>对象，并传递`ServiceClientFactory`对象。 `ServiceClientFactory`对象负责维护调用AEM Forms服务所需的连接设置。
+在设置连接属性后，创建一个`ServiceClientFactory`对象，该对象用于实例化Java对象，它允许您调用服务。 每个具有Java客户端库的服务都有一个对应的客户端对象。 例如，要调用存储库服务，请使用`ResourceRepositoryClient`对象的构造函数创建一个对象，并传递`ServiceClientFactory`对象。 `ServiceClientFactory`对象负责维护调用AEM Forms服务所需的连接设置。
 
 虽然获取`ServiceClientFactory`通常速度较快，但首次使用工厂时会涉及一些开销。 此对象经过优化以便重用，因此，在创建多个Java客户端对象时，尽可能使用相同的`ServiceClientFactory`对象。 即，不要为您创建的每个客户端库对象单独创建`ServiceClientFactory`对象。
 
@@ -987,8 +987,8 @@ AEM Forms服务操作可通过使用服务的强类型API（称为Java客户端�
 1. 在Java项目的类路径中包含客户端JAR文件，如adobe-repository-client.jar。 有关这些文件的位置的信息，请参见[包括AEM FormsJava库文件](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 1. 设置调用服务所需的连接属性。
 1. 通过调用`ServiceClientFactory`对象的静态`createInstance`方法并传递包含连接属性的`java.util.Properties`对象，创建`ServiceClientFactory`对象。
-1. 使用`ResourceRepositoryClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。 使用`ResourceRepositoryClient`对象调用存储库服务操作。
-1. 使用`RepositoryInfomodelFactoryBean`对象的构造函数创建&lt;a0/>对象，并传递`null`。 通过此对象，可创建一个`Resource`对象，它表示已添加到存储库的内容。
+1. 使用`ResourceRepositoryClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。 使用`ResourceRepositoryClient`对象调用存储库服务操作。
+1. 使用`RepositoryInfomodelFactoryBean`对象的构造函数创建对象，并传递`null`。 通过此对象，可创建一个`Resource`对象，它表示已添加到存储库的内容。
 1. 通过调用`RepositoryInfomodelFactoryBean`对象的`newImage`方法并传递以下值，创建`Resource`对象：
 
    * 通过指定`new Id()`的唯一ID值。
@@ -1041,8 +1041,8 @@ AEM Forms服务操作可通过使用服务的强类型API（称为Java客户端�
 
 1. 在Java项目的类路径中包含客户端JAR文件，如adobe-livecycle-client.jar。 (请参阅[包括AEM FormsJava库文件](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。)
 1. 创建包含连接属性的`ServiceClientFactory`对象。 （请参阅[设置连接属性](invoking-aem-forms-using-java.md#setting-connection-properties)。）
-1. 使用`ServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。 `ServiceClient`对象允许您调用服务操作。 它处理任务，如查找、调度和路由调用请求。
-1. 使用`java.util.HashMap`对象的构造函数创建&lt;a0/>对象。
+1. 使用`ServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。 `ServiceClient`对象允许您调用服务操作。 它处理任务，如查找、调度和路由调用请求。
+1. 使用`java.util.HashMap`对象的构造函数创建对象。
 1. 调用每个输入参数的`java.util.HashMap`对象的`put`方法，以传递给长寿命进程。 由于`MyApplication/EncryptDocument`短时进程需要一个类型为`Document`的输入参数，因此只需调用`put`方法一次，如以下示例所示。
 
    ```as3

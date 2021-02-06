@@ -51,7 +51,7 @@ AEM附带其他有助于开发的工具：
 * [如何使用VLT工具](/help/sites-developing/ht-vlttool.md)
 * [如何使用代理服务器工具](/help/sites-developing/ht-proxy-server.md)
 * [对话框转换工具](/help/sites-developing/dialog-conversion.md)
-* [AEM Repo工具](/help/sites-developing/aem-repo-tool.md)
+* [AEM Repo 工具](/help/sites-developing/aem-repo-tool.md)
 
 用于促进新项目创建的工具：
 

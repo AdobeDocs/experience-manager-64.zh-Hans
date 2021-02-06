@@ -83,7 +83,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   使用`PDFUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`PDFUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 调用PDF到XDP转换操作
 
@@ -170,7 +170,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   使用`PDFUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`PDFUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 调用XDP到PDF的转换操作
 
@@ -257,7 +257,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   使用`PDFUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`PDFUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 调用属性检索操作
 
@@ -374,11 +374,11 @@ PDF实用程序服务设置指定的保存模式后，将PDF文档传递给另�
 
 1. 创建PDFUtilityService客户端
 
-   使用`PDFUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`PDFUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 设置保存模式
 
-   * 使用`PDFUtilitySaveMode`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFUtilitySaveMode`对象的构造函数创建对象。
    * 通过调用`PDFUtilitySaveMode`对象的`setSaveStyle`方法并传递指定保存模式的字符串值来设置保存模式。 例如，要保存以便快速查看Web，请传递`FAST_WEB_VIEW`。
 
 1. 调用保存样式操作
@@ -418,7 +418,7 @@ PDF实用程序服务设置指定的保存模式后，将PDF文档传递给另�
 
 1. 设置保存模式
 
-   * 使用`PDFUtilitySaveMode`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFUtilitySaveMode`对象的构造函数创建对象。
    * 通过为`PDFUtilitySaveMode`对象的指定保存模式的`saveStyle`方法指定字符串值来设置保存模式。 例如，要保存以便快速查看Web，请指定`FAST_WEB_VIEW`。
 
 1. 调用保存样式操作
@@ -491,7 +491,7 @@ PDF实用程序服务设置指定的保存模式后，将PDF文档传递给另�
 
 1. 创建PDFUtilityService客户端
 
-   使用`PDFUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`PDFUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 调用PDF到XDP转换操作
 

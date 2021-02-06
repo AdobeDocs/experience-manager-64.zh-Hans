@@ -76,7 +76,7 @@ AEM 中的 Teaser 由若干部分组成：
   </tr> 
   <tr> 
    <td>C1</td> 
-   <td>T1</td> 
+   <td>T3</td> 
    <td>S1、S2</td> 
    <td>企业、营销</td> 
   </tr> 
@@ -93,7 +93,7 @@ AEM 中的 Teaser 由若干部分组成：
    <td><br /> </td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T4</td> 
    <td>S2、S5</td> 
    <td><br /> </td> 
@@ -140,8 +140,8 @@ AEM 中的 Teaser 由若干部分组成：
    <td>生成的Clickstream得分 </td> 
   </tr> 
   <tr> 
-   <td>C1</td> 
-   <td>T1</td> 
+   <td>C3</td> 
+   <td>T3</td> 
    <td>S1、S2</td> 
    <td>企业、营销</td> 
    <td>是</td> 
@@ -158,7 +158,7 @@ AEM 中的 Teaser 由若干部分组成：
    <td><br /> </td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T3</td> 
    <td>S3、S4</td> 
    <td><br /> </td> 
@@ -185,7 +185,7 @@ AEM 中的 Teaser 由若干部分组成：
    <td>3</td> 
   </tr> 
   <tr> 
-   <td>C1 </td> 
+   <td>C3 </td> 
    <td>T6</td> 
    <td>S6</td> 
    <td>企业</td> 

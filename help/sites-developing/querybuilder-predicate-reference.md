@@ -370,7 +370,7 @@ group.2_group.type=dam:Asset
 
 * **操作**
 
-   &quot; `equals`&quot;（对于exactmatch，默认值）,&quot; `unequals`&quot;（对于不等式比较）,&quot; `like`&quot;（对于使用`jcr:like` xpath函数）,&quot; `not`&quot;（对于不匹配）,&quot; &lt;a4/>&quot;(例如 &quot; `not(@prop)`&quot;（在xpath中，值参数将被忽略）或&quot; `exists`&quot;（值可以为true —— 属性必须存在，默认值——或false —— 与&quot; `not`&quot;相同）
+   &quot; `equals`&quot;（对于exactmatch，默认值）,&quot; `unequals`&quot;（对于不等式比较）,&quot; `like`&quot;（对于使用`jcr:like` xpath函数）,&quot; `not`&quot;（对于不匹配）,&quot; &quot;(例如 &quot; `not(@prop)`&quot;（在xpath中，值参数将被忽略）或&quot; `exists`&quot;（值可以为true —— 属性必须存在，默认值——或false —— 与&quot; `not`&quot;相同）
 
 * **深度**
 

@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## http://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-310](assets/chlimage_1-311.png)
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 ## 匿名站点访客{#anonymous-site-visitor}
 
@@ -205,7 +205,7 @@ ht-degree: 0%
 
 指定用户名、电子邮件和密码后，选择`Sign Up`将创建用户并允许其签名。
 
-登录后，显示的第一页即为其`Profile`页面，他们可以对其进行个性化设置。
+登录后，显示的第一页是其`Profile`页，他们可以对其进行个性化设置。
 
 ![chlimage_1-325](assets/chlimage_1-325.png)
 

@@ -129,7 +129,7 @@ AEM Communities通过[现成API](/help/communities/user-ugc-management-service.m
 
 AEM Forms包括捕获、处理和存储数据以编排业务流程和完成数字交易的组件和工作流。 不同的组件使用不同的数据存储，并允许与自定义数据存储集成。 以下文档介绍了访问和处理用户数据以支持组件数据保护和隐私（例如，GDPR或CCPA）工作流的过程和准则。
 
-* [Forms门户](/help/forms/using/forms-portal-handling-user-data.md)
+* [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
 * [通信管理](/help/forms/using/correspondence-management-handling-user-data.md)
 * [与Adobe Sign集成](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [以Forms为中心的OSGi工作流](/help/forms/using/forms-workflow-osgi-handling-user-data.md)

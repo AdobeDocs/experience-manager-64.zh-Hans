@@ -30,7 +30,7 @@ cURL是用于执行URL操作的开放源代码命令行工具。 它支持各种
 
 cURL是使用URL语法获取或发送数据的成熟且广泛使用的工具，最初于1997年发布。 名称cURL最初是指“请参阅URL”。
 
-由于构建AEM的Sling框架具有RESTful性质，因此大多数任务可以简化为URL调用，该调用可以用cURL执行。 [内容处](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) 理任务(如激活页面、启动工作流)以及 [操作](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 任务（如包管理和管理用户）可以使用cURL实现自动化。此外，您还可以为AEM中的大多数任务创建您自己的cURL[命令。](/help/sites-administering/curl.md#building-a-curl-ready-aem-command)
+由于构建AEM的Sling框架具有RESTful性质，因此大多数任务可以简化为URL调用，该调用可以用cURL执行。 [内容处](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) 理任务(如激活页面、启动工作流)以及 [操作](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 任务（如包管理和管理用户）可以使用cURL实现自动化。此外，您还可以为AEM中的大多数任务创建您自己的cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command)命令。[
 
 >[!NOTE]
 >

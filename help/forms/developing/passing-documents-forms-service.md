@@ -85,7 +85,7 @@ AEM Forms服务向客户端设备（通常是Web浏览器）提供交互式PDF f
 
    * 创建包含连接属性的`ServiceClientFactory`对象。 （请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。）
    * 使用`FormsServiceClient`对象的构造函数创建`ServiceClientFactory`对象。
-   * 使用`DocumentManagementServiceClientImpl`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocumentManagementServiceClientImpl`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 从Content Services检索表单设计（已弃用）
 
@@ -192,7 +192,7 @@ AEM Forms服务向客户端设备（通常是Web浏览器）提供交互式PDF f
    * 通过获取`FormsResult`对象的`outputContent`字段的值，创建包含表单数据的`BLOB`对象。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示交互式PDF文档的文件位置以及打开文件的模式。
    * 创建一个字节数组，用于存储从`FormsResult`对象检索的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**

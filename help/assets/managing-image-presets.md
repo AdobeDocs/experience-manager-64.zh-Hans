@@ -469,7 +469,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets方面，主要�
    opac=50
    ```
 
-   ![chlimage_1-503](assets/chlimage_1-503.png)
+   ![chlimage_1-505](assets/chlimage_1-503.png)
 
 ## 编辑图像预设{#modifying-image-presets}
 

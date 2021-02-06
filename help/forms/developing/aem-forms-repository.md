@@ -135,7 +135,7 @@ ht-degree: 0%
 
 1. 创建服务客户端
 
-   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 创建文件夹
 
@@ -275,7 +275,7 @@ ht-degree: 0%
 
 1. 创建服务客户端
 
-   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 为资源指定目标文件夹的URI
 
@@ -420,7 +420,7 @@ ht-degree: 0%
 
 1. 创建服务客户端
 
-   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 指定文件夹路径
 
@@ -537,7 +537,7 @@ ht-degree: 0%
 
 1. 创建服务客户端
 
-   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 指定要读取的资源的URI
 
@@ -647,7 +647,7 @@ ht-degree: 0%
 
 1. 创建服务客户端
 
-   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 检索要更新的资源
 
@@ -794,7 +794,7 @@ ht-degree: 0%
 
 1. 创建服务客户端
 
-   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 指定搜索的目标文件夹
 
@@ -916,7 +916,7 @@ ht-degree: 0%
 
 1. 创建服务客户端
 
-   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 指定要关联的资源的URI
 
@@ -1065,7 +1065,7 @@ ht-degree: 0%
 
 1. 创建服务客户端
 
-   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 指定要锁定的资源的URI
 
@@ -1207,7 +1207,7 @@ ht-degree: 0%
 
 1. 创建服务客户端
 
-   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`ResourceRepositoryClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 指定要删除的资源的URI
 

@@ -266,7 +266,7 @@ static.css文件和图像示例
    * **[!UICONTROL 类型]**:字符串
    * **[!UICONTROL 值]**:/etc/designs/mywebsite
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. 在新的Web浏览器选项卡或窗口中，打开[http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html)以查看产品页面：
 
@@ -470,7 +470,7 @@ static.css文件和图像示例
 1. 保存更改。
 1. 在浏览器中，重新加载&#x200B;**[!UICONTROL 产品]**&#x200B;页面。 顶部导航如下所示：
 
-   ![chlimage_1-115](assets/chlimage_1-115.png)
+   ![chlimage_1-114](assets/chlimage_1-115.png)
 
 #### 使用字幕{#enhancing-pages-with-subtitles}增强页面
 
@@ -480,7 +480,7 @@ static.css文件和图像示例
 1. 在Sidekick **[!UICONTROL Page]**&#x200B;选项卡上，单击&#x200B;**[!UICONTROL Page Properties]**。
 1. 在对话框的&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡上，展开&#x200B;**[!UICONTROL 更多标题和说明]**，对于&#x200B;**[!UICONTROL 子标题]**&#x200B;属性，键入`what we do`。 单击&#x200B;**[!UICONTROL 确定]**。
 1. 重复上述步骤，将关于我们的服务&#x200B;**的子标题**&#x200B;添加到&#x200B;**[!UICONTROL 服务]**&#x200B;页面。
-1. 重复上述步骤，将我们获得的信任&#x200B;**添加到**&#x200B;客户&#x200B;**[!UICONTROL 页面。]**
+1. 重复上述步骤，将我们获得的信任&#x200B;**添加到**[!UICONTROL &#x200B;客户&#x200B;]**页面。**
 
    **提示：** 在CRXDE Lite中，选择/content/mywebsite/cn/products/jcr:content节点以查看是否添加了子标题属性。
 
@@ -793,7 +793,7 @@ static.css文件和图像示例
    | 名称 | 类型 | 值 |
    |---|---|---|
    | fieldLabel | 字符串 | 列表根的路径 |
-   | name | 字符串 | 。/listroot |
+   | name | 字符串 | ./listroot |
    | xtype | 字符串 | textfield |
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
@@ -919,9 +919,9 @@ static.css文件和图像示例
 
    | 名称 | 类型 | 值 |
    |---|---|---|
-   | fileNameParameter | 字符串 | 。/imageName |
-   | fileReferenceParameter | 字符串 | 。/imageReference |
-   | 名称 | 字符串 | 。/图像 |
+   | fileNameParameter | 字符串 | ./imageName |
+   | fileReferenceParameter | 字符串 | ./imageReference |
+   | 名称 | 字符串 | ./图像 |
    | 页面 | 字符串 | 图像 |
    | xtype | 字符串 | html5smartimage |
 
@@ -1193,7 +1193,7 @@ public class img_GET extends AbstractImageServlet {
 |---|---|---|
 | 接受 | 字符串 | image/(gif | jpeg | png) |
 | 组 | 字符串 | 媒体 |
-| propertyName | 字符串 | 。/imageReference |
+| propertyName | 字符串 | ./imageReference |
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
@@ -1498,7 +1498,7 @@ public class img_GET extends AbstractImageServlet {
 1. 在Sidekick上，单击三角形以返回&#x200B;**[!UICONTROL 编辑]**&#x200B;模式。
 1. 将&#x200B;**[!UICONTROL My Search]**&#x200B;组件从Sidekick拖到parsys帧中。 如下所示：
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. 导航到&#x200B;**[!UICONTROL 产品]**&#x200B;页面。 在输入框中搜索客户并按&#x200B;**[!UICONTROL Enter]**。 您将被重定向到&#x200B;**[!UICONTROL 搜索]**&#x200B;页面。 切换到&#x200B;**[!UICONTROL 预览]**&#x200B;模式：输出的格式与以下内容类似：
 

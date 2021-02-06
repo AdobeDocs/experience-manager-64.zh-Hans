@@ -112,13 +112,13 @@ ht-degree: 0%
 
    ![特殊字符](assets/specialcharacters.png)
 
-   Commendergence Management内置了210个特殊字符。 管理员可以通过自定义[添加对更多／自定义特殊字符的支持。](/help/forms/using/custom-special-characters.md)
+   Commendergence Management内置了210个特殊字符。 管理员可以通过自定义](/help/forms/using/custom-special-characters.md)添加对更多／自定义特殊字符的支持。[
 
 1. 要在可编辑的内嵌模块中突出显示\突出显示部分文本，请选择文本，然后点按高亮颜色。
 
    ![应用了textbackgroundcolor](assets/textbackgroundcolorapplied.png)
 
-   您可以直接点按“基本颜色”调色板中存在的基本颜色&#x200B;**`[A]`**，或在使用滑块&#x200B;**`[B]`**&#x200B;选择&#x200B;**后点按**&#x200B;选择&lt;a2/>以选择相应的颜色阴影。
+   您可以直接点按“基本颜色”调色板中存在的基本颜色&#x200B;**`[A]`**，或在使用滑块&#x200B;**`[B]`**&#x200B;选择&#x200B;**后点按**&#x200B;选择以选择相应的颜色阴影。
 
    或者，您也可以转到高级选项卡，选择适当的色相、明度和饱和度&#x200B;**`[C]`**&#x200B;以创建精确的颜色，然后点按选择&#x200B;**`[D]`**&#x200B;以应用颜色以高亮显示文本。
 
@@ -340,7 +340,7 @@ ht-degree: 0%
 
 ## 布局片段 {#layoutfragments}
 
-布局片段基于在Designer中创建的XDP。 要创建布局片段，您需要创建XDP并将它们上传到AEM Forms[。](/help/forms/using/import-export-forms-templates.md)
+布局片段基于在Designer中创建的XDP。 要创建布局片段，您需要创建XDP并将它们上传到AEM Forms](/help/forms/using/import-export-forms-templates.md)。[
 
 一个或多个布局片段可以构成字母的一部分并定义这些部分的图形布局。 布局片段可以包含典型的表单字段（如地址和引用编号）和表示目标区域的空子表单。 此外，布局片段允许您创建表并将其插入字母中。
 

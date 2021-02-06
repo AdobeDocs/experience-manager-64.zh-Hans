@@ -213,7 +213,7 @@ SQL脚本是使用创作实例上的CRXDE Lite获取的。 必须安装[SCORM包
 
 安装[SCORM包](deploy-communities.md#scorm-package)时，此配置存在。
 
-所有发布和作者实例都指向同一个MySQL服务器。
+所有发布和作者实例都指向同一MySQL服务器。
 
 当MySQL运行于不同于AEM的服务器上时，必须在ScormEngine服务中指定服务器主机名来代替“localhost”，该服务通常从[JDBC连接](#configure-jdbc-connections)配置中填充。
 

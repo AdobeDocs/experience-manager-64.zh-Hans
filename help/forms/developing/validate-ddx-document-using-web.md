@@ -45,11 +45,11 @@ ht-degree: 0%
 
 1. 引用现有DDX文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储DDX文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储DDX文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示DDX文档的文件位置以及在中打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`MTOM`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`MTOM`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 设置运行时选项以验证DDX文档。
 
@@ -69,10 +69,10 @@ ht-degree: 0%
 
 1. 将验证结果保存在日志文件中。
 
-   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值来创建一个&lt;a0/>对象，该字符串值表示日志文件的文件位置以及在中打开文件的模式。 确保文件扩展名为。xml。
+   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值来创建一个对象，该字符串值表示日志文件的文件位置以及在中打开文件的模式。 确保文件扩展名为。xml。
    * 通过获取`AssemblerResult`对象的`jobLog`数据成员的值，创建存储日志信息的`BLOB`对象。
    * 创建存储`BLOB`对象内容的字节数组。 通过获取`BLOB`对象的`MTOM`字段的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
    >[!NOTE]

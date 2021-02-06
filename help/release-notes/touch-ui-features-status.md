@@ -1,6 +1,6 @@
 ---
-title: 触屏UI功能状态
-seo-title: 触屏UI功能状态
+title: 触屏 UI 功能状态
+seo-title: 触屏 UI 功能状态
 description: 特定于Adobe Experience Manager6.3触屏UI的发行说明。
 seo-description: 特定于Adobe Experience Manager6.3触屏UI的发行说明。
 uuid: dc335334-6c50-4cee-8a2e-183958742686
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
 
-# 触屏UI功能状态{#touch-ui-feature-status}
+# 触屏 UI 功能状态 {#touch-ui-feature-status}
 
 >[!CAUTION]
 >
@@ -338,12 +338,12 @@ ht-degree: 14%
   <tr>
    <td>复制页面</td> 
    <td>已删除<br /> </td> 
-   <td>使用站点管理员复制页面<a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">。</a><br /> </td> 
+   <td>使用站点管理员复制页面</a>。<br /><a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page"> </a></td> 
   </tr>
   <tr>
    <td>移动页面</td> 
    <td>已删除</td> 
-   <td>使用站点管理员移动页面<a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">。</a><br /> </td> 
+   <td>使用站点管理员移动页面</a>。<br /><a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page"> </a></td> 
   </tr>
   <tr>
    <td>删除页面</td> 
@@ -368,12 +368,12 @@ ht-degree: 14%
   <tr>
    <td>恢复版本</td> 
    <td>已删除</td> 
-   <td>使用站点管理员恢复版本<a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">。</a></td> 
+   <td>使用站点管理员恢复版本</a>。<a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version"></a></td> 
   </tr>
   <tr>
    <td>切换启动项</td> 
    <td>已删除</td> 
-   <td>使用站点管理员在启动项<a href="/help/sites-authoring/launches-promoting.md">之间切换。</a><br /> </td> 
+   <td>使用站点管理员在启动项</a>之间切换。<br /><a href="/help/sites-authoring/launches-promoting.md"> </a></td> 
   </tr>
   <tr>
    <td>翻译页面</td> 

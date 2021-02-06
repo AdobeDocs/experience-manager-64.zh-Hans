@@ -73,7 +73,7 @@ ht-degree: 1%
 
 1. 输入页面作者可识别的&#x200B;**[!UICONTROL 标题]**，输入唯一的&#x200B;**[!UICONTROL 名称]**，然后点按&#x200B;**[!UICONTROL 创建]**。
 
-   此外，新创建的配置显示在&#x200B;]**Cloud Services仪表板**[!UICONTROL  AdobeSearch&amp;Promote项&lt;a2/>可用配置&#x200B;**[!UICONTROL 下。]**
+   此外，新创建的配置显示在&#x200B;**[!UICONTROL Cloud Services仪表板]** AdobeSearch&amp;Promote项&#x200B;**[!UICONTROL 可用配置]**&#x200B;下。
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 

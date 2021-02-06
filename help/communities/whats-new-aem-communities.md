@@ -89,7 +89,7 @@ AEM Communities允许在单次操作中创建[多语言社区站点](create-site
 
 ### 从站点控制台{#delete-community-sites-from-sites-console}中删除社区站点
 
-AEM 6.4 Communities在“社区站点”控制台中的现有社区站点上提供“删除站点”图标。 这样，只需单击一下，即可删除站点[和相关项。](create-site.md)
+AEM 6.4 Communities在“社区站点”控制台中的现有社区站点上提供“删除站点”图标。 这样，只需单击一下，即可删除站点](create-site.md)和相关项。[
 
 ![站点操作](assets/siteactions.png)
 

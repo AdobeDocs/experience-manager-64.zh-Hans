@@ -463,7 +463,7 @@ Facebook和Twitter的后续步骤相同：
    * **[!UICONTROL indexPath]**:/oak:index/ntBaseLucene-oauth
    * **[!UICONTROL name]**:oauthid-123xxxx
    * **[!UICONTROL 重新索引]**:真
-   * **[!UICONTROL reindexCount]**:1
+   * **[!UICONTROL reindexCount]**:3
 
 1. 在节点/oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties下：
 

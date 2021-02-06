@@ -160,7 +160,7 @@ XMP实用程序服务可以从PDF文档检索和保存XMP元数据，并将XMP�
 
 1. 创建XMPUtilityService客户端
 
-   使用`XMPUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`XMPUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 调用XMP元数据导入操作
 
@@ -277,7 +277,7 @@ XMP实用程序服务可以从PDF文档检索和保存XMP元数据，并将XMP�
 
 1. 创建XMPUtilityService客户端
 
-   使用`XMPUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`XMPUtilityServiceClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 调用XMP元数据导入操作
 

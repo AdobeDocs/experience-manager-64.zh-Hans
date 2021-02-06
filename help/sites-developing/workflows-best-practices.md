@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 在配置工作流程（自定义和／或现成流程）时，应牢记以下几点：
 
-### 临时工作流{#transient-workflows}
+### 瞬态工作流 {#transient-workflows}
 
 要优化高摄取负载，可将[工作流定义为临时](/help/sites-developing/workflows.md#transient-workflows)。
 

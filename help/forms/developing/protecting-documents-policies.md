@@ -222,7 +222,7 @@ ht-degree: 0%
 1. 创建文档安全客户端API对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 设置策略的属性。
 
@@ -291,7 +291,7 @@ ht-degree: 0%
 
 1. 设置策略的属性。
 
-   * 使用`PolicySpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PolicySpec`对象的构造函数创建对象。
    * 通过为`PolicySpec`对象的`name`数据成员分配字符串值来设置策略的名称。
    * 通过为`PolicySpec`对象的`description`数据成员分配字符串值来设置策略的说明。
    * 通过为`PolicySpec`对象的`policySetName`数据成员分配字符串值，设置策略将属于的策略集。 必须指定现有策略集名称。 （可以为此参数值指定`null`，以将策略添加到&#x200B;*My Policys*。）
@@ -381,7 +381,7 @@ ht-degree: 0%
 1. 创建文档安全客户端API对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索现有策略。
 
@@ -490,7 +490,7 @@ ht-degree: 0%
 1. 创建文档安全客户端API对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 删除策略。
 
@@ -607,12 +607,12 @@ ht-degree: 0%
 1. 创建文档安全客户端API对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索PDF文档。
 
    * 使用PDF文档的构造函数创建一个`java.io.FileInputStream`对象。 传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 将现有策略应用于PDF文档。
 
@@ -677,7 +677,7 @@ ht-degree: 0%
 
 1. 检索PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储应用策略的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储应用策略的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，确定字节数组大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
@@ -704,7 +704,7 @@ ht-degree: 0%
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示受策略保护的PDF文档的文件位置。
    * 创建一个字节数组，用于存储`protectDocument`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **代码示例**
@@ -771,12 +771,12 @@ ht-degree: 0%
 1. 创建文档安全客户端API对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索受策略保护的PDF文档。
 
-   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个表示受策略保护的PDF文档的&lt;a0/>对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个表示受策略保护的PDF文档的对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 从PDF文档中删除策略。
 
@@ -822,7 +822,7 @@ ht-degree: 0%
 
 1. 检索受策略保护的PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储受策略保护的PDF文档，从中删除策略。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储受策略保护的PDF文档，从中删除策略。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -836,7 +836,7 @@ ht-degree: 0%
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示不安全的PDF文档的文件位置。
    * 创建一个字节数组，用于存储`removePolicySecurity`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`字段的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
 
 **代码示例**
 
@@ -913,12 +913,12 @@ ht-degree: 0%
 1. 创建文档安全客户端API对象
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索受策略保护的PDF文档
 
-   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个&lt;a0/>对象，它表示受策略保护的PDF文档。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个对象，它表示受策略保护的PDF文档。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 撤销受策略保护的文档
 
@@ -965,7 +965,7 @@ ht-degree: 0%
 
 1. 检索受策略保护的PDF文档
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储已撤销的受策略保护的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储已撤销的受策略保护的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示要撤销的受策略保护的PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -1049,12 +1049,12 @@ ht-degree: 0%
 1. 创建文档安全客户端API对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索已吊销的PDF文档的许可证标识符。
 
-   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个表示已吊销的PDF文档的&lt;a0/>对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数并传递一个指定PDF文档位置的字符串值，创建一个表示已吊销的PDF文档的对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
    * 通过调用`DocumentSecurityClient`对象的`getDocumentManager`方法创建`DocumentManager`对象。
    * 通过调用`DocumentManager`对象的`getLicenseId`方法并传递表示已吊销文档的`com.adobe.idp.Document`对象，检索已吊销文档的许可证标识符值。 此方法返回表示许可证标识符的字符串值。
 
@@ -1097,7 +1097,7 @@ ht-degree: 0%
 
 1. 检索已吊销的PDF文档的许可证标识符。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储已撤销的PDF文档，恢复对其访问。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储已撤销的PDF文档，恢复对其访问。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示已撤销的PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -1181,12 +1181,12 @@ Inspect使用文档安全服务API(Java)创建受策略保护的PDF文档:
 1. 创建文档安全客户端API对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。 （请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。）
-   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索受策略保护的文档进行检查。
 
-   * 使用`java.io.FileInputStream`对象的构造函数创建一个&lt;a0/>对象，它表示受策略保护的PDF文档。 传递一个指定PDF文档位置的字符串值。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数创建一个对象，它表示受策略保护的PDF文档。 传递一个指定PDF文档位置的字符串值。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. Inspect文档。
 
@@ -1231,7 +1231,7 @@ Inspect使用文档安全服务API（web服务）创建受策略保护的PDF文�
 
 1. 检索受策略保护的文档进行检查。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储要检查的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储要检查的PDF文档。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示PDF文档的文件位置以及在中打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
@@ -1402,7 +1402,7 @@ Inspect使用文档安全服务API（web服务）创建受策略保护的PDF文�
 1. 创建文档安全客户端API对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 设置水印属性
 
@@ -1548,7 +1548,7 @@ Inspect使用文档安全服务API（web服务）创建受策略保护的PDF文�
 1. 创建文档安全客户端API对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索要修改的水印。
 
@@ -1676,7 +1676,7 @@ Rights Management服务在特定操作发生时跟踪这些操作，如将策略
 
 1. 创建Rights Management客户端API对象
 
-   使用`DocumentSecurityClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的&lt;a1/>对象。
+   使用`DocumentSecurityClient`对象的构造函数创建一个`ServiceClientFactory`对象，并传递一个包含连接属性的对象。
 
 1. 指定要搜索的事件
 
@@ -1726,7 +1726,7 @@ Rights Management服务在特定操作发生时跟踪这些操作，如将策略
 
 1. 指定要搜索的事件
 
-   * 使用`EventSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`EventSpec`对象的构造函数创建对象。
    * 通过将`EventSpec`对象的`firstTime.date`数据成员设置为`DataTime`实例，以指定发生事件的时间段的开始，该实例表示发生事件时的日期范围的开始。
    * 将值`true`指定给`EventSpec`对象的`firstTime.dateSpecified`数据成员。
    * 通过使用`DataTime`实例设置`EventSpec`对象的`lastTime.date`数据成员，指定发生事件的时间段的结束，该实例表示发生事件时的日期范围的结束。
@@ -2008,12 +2008,12 @@ Rights Management服务在特定操作发生时跟踪这些操作，如将策略
 1. 创建文档安全客户端API对象。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocumentSecurityClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索Word文档。
 
    * 通过使用Word文档的构造函数并传递一个指定Word文档位置的字符串值，创建一个表示Word的`java.io.FileInputStream`对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 将现有策略应用于Word文档。
 
@@ -2071,7 +2071,7 @@ Rights Management服务在特定操作发生时跟踪这些操作，如将策略
 
 1. 检索Word文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储应用策略的Word文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储应用策略的Word文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示Word文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，确定字节数组大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
@@ -2098,7 +2098,7 @@ Rights Management服务在特定操作发生时跟踪这些操作，如将策略
 
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示受策略保护的Word文档的文件位置。
    * 创建一个字节数组，用于存储`protectDocument`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入Word文件。
 
 **代码示例**
@@ -2164,12 +2164,12 @@ Rights Management服务在特定操作发生时跟踪这些操作，如将策略
 1. 创建文档安全客户端API对象
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`RightsManagementClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 检索受策略保护的Word文档
 
    * 创建一个`java.io.FileInputStream`对象，它使用其构造函数并传递一个指定Word文档位置的字符串值来表示受策略保护的Word文档。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 从Word文档中删除策略
 
@@ -2215,7 +2215,7 @@ Rights Management服务在特定操作发生时跟踪这些操作，如将策略
 
 1. 检索受策略保护的Word文档
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储从中删除策略的受策略保护的Word文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储从中删除策略的受策略保护的Word文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示Word文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -2227,9 +2227,9 @@ Rights Management服务在特定操作发生时跟踪这些操作，如将策略
 
 1. 保存不安全的Word文档
 
-   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值来创建一个&lt;a0/>对象，该字符串值表示不安全的Word文档的文件位置。
+   * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值来创建一个对象，该字符串值表示不安全的Word文档的文件位置。
    * 创建一个字节数组，用于存储`removePolicySecurity`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`字段的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
 
 **代码示例**
 

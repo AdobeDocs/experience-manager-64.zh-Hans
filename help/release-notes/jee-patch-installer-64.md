@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 610e9a54adad3abdfecb8b2c4da67d677f75175e
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 1%
+ht-degree: 24%
 
 ---
 
@@ -29,13 +29,13 @@ AEM 6.4FormsJEE修补程序安装程序包含AEM 6.4FormsJEE所有组件在发�
 
 ## 安装和配置修补程序{#installing-and-configuring-the-patch}
 
-1. 备份&lt;*AEM_forms_root*/deploy文件夹。 如果您决定卸载快速修复，则此操作是必需的。
+1. 备份&lt;*AEM_forms_root*/deploy文件夹。 如果您决定卸载快速修补程序，则必须执行此操作。
 1. 停止应用程序服务器。
-1. 将修补程序安装程序存档文件解压到硬盘。
+1. 将补丁安装程序存档文件提取到硬盘驱动器。
 1. 在根据您所使用的操作系统命名的目录中：
 
-   * **Windows导**
-航到硬盘上安装介质或文件夹中复制安装程序的相应目录，然后多次单击 
+   * **Windows**
+导览至硬盘上的安装介质或文件夹中的相应目录，然后多次单击 
 `aemforms64_cfp_install.exe` 文件。
 
       * （Windows 32位）`Windows\Disk1\InstData\VM`
@@ -51,13 +51,13 @@ AIXNavigate到相应的目录，并从命令提示符键入
          ```
          AIX/Disk1/InstData/VM
          ```
-   这将启动一个安装向导，指导您完成安装。
+   这会启动安装向导，引导您完成安装。
 
-1. 在“简介”面板上，单击&#x200B;**[!UICONTROL 下一步]**。
+1. 在“Introduction”面板上，单击 **[!UICONTROL Next]**。
 1. 在“选择安装文件夹”屏幕上，验证显示的默认位置是否适用于您的现有安装，或单击&#x200B;**[!UICONTROL 浏览]**&#x200B;选择安装AEM表单的备用文件夹，然后单击&#x200B;**[!UICONTROL 下一步]**。
 
-1. 阅读“快速修复补丁程序摘要”信息，然后单击&#x200B;**[!UICONTROL 下一步]**。
-1. 阅读“预安装摘要”信息，然后单击“安装&#x200B;****”。
+1. 阅读“Quick Fix Patch Summary”信息，然后单击 **[!UICONTROL Next]**。
+1. 阅读“Pre-Installation Summary”信息，然后单击 **[!UICONTROL Install]**。
 1. 安装完成后，单击**[!UICONTROL Next]**，将快速修复更新应用于已安装的文件。
 1. [仅限] Windows执行以下步骤之一：
 
@@ -67,15 +67,15 @@ AIXNavigate到相应的目录，并从命令提示符键入
       * ConfigurationManager.lax
       * ConfigurationManager_IPv6.lax
 
-1. （仅基于Unix）默认情况下，开始配置管理器复选框处于选中状态。 单击&#x200B;**[!UICONTROL 完成]**&#x200B;以运行Configuration Manager。
+1. （仅基于Unix）默认情况下，开始配置管理器复选框处于选中状态。 单击 **[!UICONTROL Done]** 以运行配置管理器。
 
-   要稍后运行Configuration Manager，请在单击“完成”之前取消选择“开始配置管理器”选项。 您以后可以使用`[AEM_forms_root]/configurationManager/bin`目录中的相应脚本开始Configuration Manager。
+   要稍后运行配置管理器，请先取消选择 Start Configuration Manager 选项，然后再单击 Done。您以后可以使用`[AEM_forms_root]/configurationManager/bin`目录中的相应脚本开始Configuration Manager。
 
 1. 根据您的应用程序服务器，选择以下文档之一，然后按照&#x200B;*配置和部署AEM表单*&#x200B;部分中的说明操作。
 
-   * [为JBoss安装和部署AEM表单](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
-   * [安装和配置AEM forms for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
-   * [安装和配置AEM forms for WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
+   * [为JBoss安装和部署AEM表单](http://www.adobe.com/go/learn_aemforms_installJBoss_64_cn)
+   * [安装和配置AEM forms for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_cn)
+   * [安装和配置AEM forms for WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_cn)
 
 1. （仅限JBoss）安装修补程序并配置服务器后，删除JBoss应用程序服务器的tmp和工作目录。
 
@@ -93,7 +93,7 @@ AIXNavigate到相应的目录，并从命令提示符键入
 
 ## 受影响的模块{#impacted-modules}
 
-* Document Services
+* 文档服务
 * 文档安全
 * Foundation JEE
 * PDFG 服务

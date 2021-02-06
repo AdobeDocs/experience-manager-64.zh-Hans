@@ -1,6 +1,6 @@
 ---
-title: 与Livefyre集成
-seo-title: 与Livefyre集成
+title: 与 Livefyre 集成
+seo-title: 与 Livefyre 集成
 description: 了解如何将Livefyre的行业领先的特选功能与AEM 6.4实例相集成，使您能够在几分钟内将宝贵的用户生成内容(UGC)从社交网络发布到您的网站。
 seo-description: 了解如何将Livefyre与AEM 6.4集成和使用。
 uuid: c355705d-6e0f-4a33-aa1f-d2d1c818aac0
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# 与Livefyre集成{#integrating-with-livefyre}
+# 与 Livefyre 集成{#integrating-with-livefyre}
 
 了解如何将Livefyre的行业领先的特选功能与AEM 6.4实例相集成，使您能够在几分钟内将宝贵的用户生成内容(UGC)从社交网络发布到您的网站。
 
@@ -47,7 +47,7 @@ AEM 6.4附带预安装的Livefyre功能包1.2.6。 此包仅包括与AEM Sites�
 
    您的Livefyre-AEM包现已安装。 在开始使用集成功能之前，必须先配置AEM才能使用Livefyre。
 
-   有关功能包的详细信息和发行说明，请参阅[功能包](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html)。
+   有关功能包的详细信息和发行说明，请参阅[功能包](https://helpx.adobe.com/cn/experience-manager/6-3/release-notes/feature-packs-release-notes.html)。
 
 ### 将AEM配置为使用Livefyre:创建配置文件夹{#configure-aem-to-use-livefyre-create-a-configuration-folder}
 

@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# 社区组控制台{#community-groups-console}
+# 社区组控制台 {#community-groups-console}
 
 当社区站点的[模板结构](sites-console.md#step1)包括[组函数](functions.md#groups-function)时，“组”控制台提供创建社区组的权限。
 
@@ -57,7 +57,7 @@ ht-degree: 1%
    * 社区站点的结构必须包括组功能
    * 这些屏幕截图来自在发布](published-site.md)上创建组[之后的入门教程。
 
-![chlimage_1-135](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 选择&#x200B;**[!UICONTROL Groups文件夹]**&#x200B;以将其打开。
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 
 #### 社区组品牌{#community-group-branding}
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+![chlimage_1-133](assets/chlimage_1-135.png)
 
 社区站点品牌是显示为每个页面顶部标题的图像。 可以显示组的横幅，该横幅不同于其他网站页面。
 

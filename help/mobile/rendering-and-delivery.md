@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,7 @@ AEM还通过Sling支持开发和部署自定义sling渲染器以完全控制渲�
 
 ## 请求JSON {#requesting-json}
 
-使用&#x200B;**&lt;RESOURCE.caas[。&lt;export-config>.][&lt;export-config>.] jsonto请求JSON。**
+使用&#x200B;**&lt;RESOURCE.caas[。&lt;export-config>.][&lt;export-config>.** jsonto请求JSON。]
 
 <table>
  <tbody>

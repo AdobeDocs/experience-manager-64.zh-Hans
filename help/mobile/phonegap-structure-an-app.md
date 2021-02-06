@@ -56,7 +56,7 @@ AEM Mobile项目涉及各种内容类型，包括页面、JavaScript和CSS客户
 
 每个AEM Mobile应用程序都包含一个目录，其中存放PhoneGap [命令行界面](https://github.com/phonegap/phonegap-cli)和[PhoneGap内部版本](https://build.phonegap.com/)使用的配置文件，以便将Web内容转换为可运行的应用程序。 例如，在Geometrixx示例中，此目录(/content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-content)作为Shell的一部分；由于它仅包含无法通过无线更新的内容（如处理设备API的插件和应用程序本身的配置），因此作出了设计决定。
 
-在此目录中，您还会找到许多[Cordova挂钩](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide)，这些挂钩可用于安装插件、将资源文件放置到其平台特定位置以及作为构建的一部分执行的其他操作。 注意：作为下载每个插件作为内部版本的一部分的替代方法，您可以按照Kitchen Sink应用程序的模式进行操作，并将插件源代码[包含在应用程序项目的其余部分中。](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins)
+在此目录中，您还会找到许多[Cordova挂钩](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide)，这些挂钩可用于安装插件、将资源文件放置到其平台特定位置以及作为构建的一部分执行的其他操作。 注意：作为下载每个插件作为内部版本的一部分的替代方法，您可以按照Kitchen Sink应用程序的模式进行操作，并将插件源代码](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins)包含在应用程序项目的其余部分中。[
 
 ## 后续步骤 {#the-next-steps}
 

@@ -1,6 +1,6 @@
 ---
-title: 迁移AEM Forms资产和文档
-seo-title: 迁移AEM Forms资产和文档
+title: 迁移 AEM Forms 资产和文档
+seo-title: 迁移 AEM Forms 资产和文档
 description: 迁移实用程序允许您将AEM Forms资产和文档从AEM 6.3Forms或先前版本迁移到AEM 6.4Forms。
 seo-description: 迁移实用程序允许您将AEM Forms资产和文档从AEM 6.3Forms或先前版本迁移到AEM 6.4Forms。
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
@@ -14,12 +14,12 @@ translation-type: tm+mt
 source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1872'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
-# 迁移AEM Forms资产和文档{#migrate-aem-forms-assets-and-documents}
+# 迁移 AEM Forms 资产和文档 {#migrate-aem-forms-assets-and-documents}
 
 迁移实用程序将[自适应Forms资产](/help/forms/using/introduction-forms-authoring.md)、[云配置](/help/sites-developing/extending-cloud-config.md)和[对应管理资产](/help/forms/using/cm-overview.md)从先前版本中使用的格式转换为AEM 6.4Forms使用的格式。 运行迁移实用程序时，将迁移以下内容：
 
@@ -40,13 +40,13 @@ ht-degree: 1%
 
 如果您执行了就地升级，则升级实例已包含资产和文档。 但是，在使用资产和文档之前，您需要安装[AEMFD兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)（包括通信管理兼容性包）
 
-然后，您需要通过运行迁移实用程序[更新资产和文档。](#runningmigrationutility)
+然后，您需要通过运行迁移实用程序](#runningmigrationutility)更新资产和文档。[
 
 **如果安装不当**
 
 如果安装不当（新安装），则在您使用资源和文档之前，您需要安装[AEMFD兼容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)（包括通信管理兼容性包）。
 
-然后，您需要在新设置上导入您的资产包（zip或cmp），然后通过运行迁移实用程序[更新资产和文档。 ](#runningmigrationutility)由于[向后兼容性相关](/help/sites-deploying/backward-compatibility.md)的更改，crx-repository中几个文件夹的位置会发生更改。 手动将依赖项（自定义库和资源）从以前的设置导出并导入到新环境。
+然后，您需要在新设置上导入您的资产包（zip或cmp），然后通过运行迁移实用程序](#runningmigrationutility)更新资产和文档。 [由于[向后兼容性相关](/help/sites-deploying/backward-compatibility.md)的更改，crx-repository中几个文件夹的位置会发生更改。 手动将依赖项（自定义库和资源）从以前的设置导出并导入到新环境。
 
 ## 在继续迁移前阅读{#prerequisites}
 

@@ -433,7 +433,7 @@ cURL -i -XPOST-H *header* -u *signin * -F *operation * -F *badge * *member-用�
 
 
 
-### 示例: {#examples}
+### 示例：{#examples}
 
 #### 分配审查方徽章{#assign-a-moderator-badge}
 

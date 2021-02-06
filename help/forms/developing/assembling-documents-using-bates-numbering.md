@@ -138,7 +138,7 @@ Assembler服务返回包含作业结果的集合对象。 您可以提取生成�
 1. 引用现有DDX文档。
 
    * 通过使用DDX文档的构造函数并传递一个指定DDX文件位置的字符串值，创建一个表示DDX文件的`java.io.FileInputStream`对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 参考输入PDF文档。
 
@@ -208,7 +208,7 @@ Assembler服务返回包含作业结果的集合对象。 您可以提取生成�
 
 1. 引用现有DDX文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储DDX文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储DDX文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示DDX文档的文件位置以及在中打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
@@ -220,7 +220,7 @@ Assembler服务返回包含作业结果的集合对象。 您可以提取生成�
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示输入PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，用流数据填充字节数组。 传递要读取的字节数组、开始位置和流长度。
-   * 通过为`MTOM`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`MTOM`对象的属性指定字节数组的内容，填充`BLOB`对象。
    * 创建`MyMapOf_xsd_string_To_xsd_anyType`对象。 此集合对象用于存储输入的PDF文档。
    * 对于每个输入PDF文档，创建一个`MyMapOf_xsd_string_To_xsd_anyType_Item`对象。 例如，如果使用两个输入PDF文档，则创建两个`MyMapOf_xsd_string_To_xsd_anyType_Item`对象。
    * 为`MyMapOf_xsd_string_To_xsd_anyType_Item`对象的`key`字段指定表示键名的字符串值。 此值必须与在DDX文档中指定的PDF源元素值匹配。 (对每个输入的PDF任务执行此文档。)

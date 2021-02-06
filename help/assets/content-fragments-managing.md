@@ -120,7 +120,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->其中许多是[资产](managing-assets-touch-ui.md)和／或[桌面应用程序](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)的标准操作。
+>其中许多是[资产](managing-assets-touch-ui.md)和／或[桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)的标准操作。
 
 ## 打开片段编辑器{#opening-the-fragment-editor}
 
@@ -167,7 +167,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->还可以从时间轴[创建、比较和还原版本。](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)
+>还可以从时间轴](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)创建、比较和还原版本。[
 
 编辑器有两个选项：
 

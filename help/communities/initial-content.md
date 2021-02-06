@@ -40,7 +40,7 @@ ht-degree: 4%
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
-   切换到经典UI的功能必须由管理员[启用。](../../help/sites-administering/enable-classic-ui.md)
+   切换到经典UI的功能必须由管理员](../../help/sites-administering/enable-classic-ui.md)启用。[
 
 1. 从[经典UI欢迎页面](http://localhost:4502/welcome.html)中，选择&#x200B;**[!UICONTROL 网站]**。
 

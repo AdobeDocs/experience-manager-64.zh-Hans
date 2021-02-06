@@ -34,7 +34,7 @@ ht-degree: 72%
 
 要创建区段，请执行以下操作：
 
-1. 打开位于&#x200B;**&lt;host>&lt;a2/>&lt;port>/miscadmin#/etc/segmentation**&#x200B;的[分段控制台。](http://localhost:4502/miscadmin#/etc/segmentation)
+1. 打开位于&#x200B;**&lt;host>](http://localhost:4502/miscadmin#/etc/segmentation)&lt;port>/miscadmin#/etc/segmentation**&#x200B;的[分段控制台。
 1. 创建新页面并输入标题——例如，**AC区段** —— 并选择&#x200B;**区段(Adobe Campaign)**&#x200B;模板。
 1. 在左侧的树视图中选择已创建的页面。
 1. 创建一个区段（例如定位男性用户），方法是在您创建的名为“Male”的区段下创建一个新页面，然后选择&#x200B;**区段 (Adobe Campaign)** 模板。

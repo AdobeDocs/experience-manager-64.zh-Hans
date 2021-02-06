@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
 source-wordcount: '1361'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 3%
 
 ## 启用同步{#enable-synchronization}
 
-1. 使用过程[的最后一步中提到的下列方法之一显示公钥向Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud)添加新配置。 单击&#x200B;**[!UICONTROL 显示公钥]**。
+1. 使用过程[的最后一步中提到的以下方法之一显示公钥。向Marketing Cloud](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud)添加新配置。 单击&#x200B;**[!UICONTROL 显示公钥]**。
 
    ![chlimage_1-292](assets/chlimage_1-292.png)
 
@@ -176,6 +176,6 @@ AEM AssetsMarketing Cloud同步的设计方式是，上传资产的用户计算�
 例如，如果资产是从AEM Assets（本地）实例上传的，则来自此实例对资产所做的更改会传播到Marketing Cloud实例。 但是，从Marketing Cloud实例对同一资产所做的更改不会传播到AEM实例，从Marketing Cloud上传的资产也会传播到实例，反之亦然。
 
 >[!MORELIKETHIS]
-* [AEM和Creative Cloud集成最佳实践](../assets/aem-cc-integration-best-practices.md)
-* [AEM到Creative Cloud文件夹共享最佳实践](../assets/aem-cc-folder-sharing-best-practices.md)
+* [AEM 与 Creative Cloud 集成最佳实践](../assets/aem-cc-integration-best-practices.md)
+* [AEM 至 Creative Cloud 文件夹共享最佳实践](../assets/aem-cc-folder-sharing-best-practices.md)
 

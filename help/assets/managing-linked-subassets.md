@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '1386'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Assets支持&#x200B;**双向引用**。 您可以在已上传文件的资产
 
 您可以从 Adobe Illustrator 文件中引用现有的 AEM Assets。
 
-1. 使用[AEM桌面应用程序](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)将AEM Assets存储库作为驱动器装载到本地计算机上。 在已装载的驱动器中，导航到要引用的资产所在的位置。
+1. 使用[AEM桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)将AEM Assets存储库作为驱动器装载到本地计算机上。 在已装载的驱动器中，导航到要引用的资产所在的位置。
 1. 将资产从安装的驱动器拖到 Illustrator 文件。
 1. 将Illustrator文件保存到已装载的驱动器，或将[上载](managing-assets-touch-ui.md#uploading-assets)保存到AEM存储库。
 1. 该工作流完成后，转到资产的详细信息页面。 对现有AEM资产的引用列在&#x200B;**[!UICONTROL 引用]**&#x200B;列的&#x200B;**[!UICONTROL 依赖项]**&#x200B;下。

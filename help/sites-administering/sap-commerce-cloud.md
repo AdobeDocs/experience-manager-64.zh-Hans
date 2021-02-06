@@ -161,7 +161,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您可以通过实现自己的导入处理程序[自定义此过程。](#configure-the-import-structure)
+>您可以通过实现自己的导入处理程序](#configure-the-import-structure)自定义此过程。[
 
 可以为以下对象配置导入时要生成的结构：
 

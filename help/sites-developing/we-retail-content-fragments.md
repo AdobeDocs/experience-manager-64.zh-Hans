@@ -61,7 +61,7 @@ We.Retail中有几个示例内容片段；通过&#x200B;**资产**、**文件**�
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-在此，您可以使用选项卡（左侧面板）编辑和管理[片段：](/help/assets/content-fragments.md)
+在此，您可以使用选项卡（左侧面板）编辑和管理](/help/assets/content-fragments.md)片段：[
 
 ![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png)
 

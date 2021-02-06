@@ -188,16 +188,16 @@ ht-degree: 0%
 1. 引用现有DDX文档。
 
    * 通过使用DDX文档的构造函数并传递一个指定DDX文件位置的字符串值，创建一个表示DDX文件的`java.io.FileInputStream`对象。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 引用添加书签的PDF文档。
 
-   * 使用`java.io.FileInputStream`对象的构造函数并传递PDF文档的位置，创建&lt;a0/>对象。
+   * 使用`java.io.FileInputStream`对象的构造函数并传递PDF文档的位置，创建对象。
    * 使用其构造函数创建`com.adobe.idp.Document`对象，并传递包含PDF文档的`java.io.FileInputStream`对象。
 
 1. 引用书签XML文档。
 
-   * 使用`java.io.FileInputStream`对象的构造函数创建一个&lt;a0/>对象，并传递表示书签XML文档的XML文件的位置。
+   * 使用`java.io.FileInputStream`对象的构造函数创建一个对象，并传递表示书签XML文档的XML文件的位置。
    * 创建`com.adobe.idp.Document`对象，并传递包含PDF文档的`java.io.FileInputStream`对象。
 
 1. 将PDF文档和书签XML文档添加到Map集合。
@@ -271,7 +271,7 @@ ht-degree: 0%
 
 1. 引用现有DDX文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储DDX文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储DDX文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示DDX文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -279,7 +279,7 @@ ht-degree: 0%
 
 1. 引用添加书签的PDF文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储输入的PDF。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储输入的PDF。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示输入PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
@@ -287,7 +287,7 @@ ht-degree: 0%
 
 1. 引用书签XML文档。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储书签XML文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储书签XML文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示输入PDF文档的文件位置以及打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。

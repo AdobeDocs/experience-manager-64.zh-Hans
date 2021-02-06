@@ -1,5 +1,5 @@
 ---
-title: 资产卸载最佳实践
+title: Assets 卸载最佳实践
 description: 在AEM Assets为卸载资产摄取和复制工作流推荐的使用案例和最佳实践。
 contentOwner: AG
 translation-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# 资产卸载最佳实践{#assets-offloading-best-practices}
+# Assets 卸载最佳实践 {#assets-offloading-best-practices}
 
 >[!WARNING]
 >

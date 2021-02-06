@@ -135,7 +135,7 @@ ht-degree: 0%
 
 ### 在文本{#specialcharacters}中插入特殊字符
 
-代理UI内置了对210个特殊字符的支持。 管理员可以通过自定义[添加对更多／自定义特殊字符的支持。](/help/forms/using/custom-special-characters.md)
+代理UI内置了对210个特殊字符的支持。 管理员可以通过自定义](/help/forms/using/custom-special-characters.md)添加对更多／自定义特殊字符的支持。[
 
 #### 附件投放{#attachmentdelivery}
 

@@ -98,7 +98,7 @@ Distiller®服务将PostScript®、封装的PostScript(EPS)和PRN文件转换为
 1. 检索要转换的文件。
 
    * 创建一个`java.io.FileInputStream`对象，该对象使用其构造函数并传递一个指定文件位置的字符串值来表示要转换的文件。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 调用PDF创建操作。
 
@@ -163,11 +163,11 @@ Distiller®服务将PostScript®、封装的PostScript(EPS)和PRN文件转换为
 
 1. 检索要转换的文件。
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 此`BLOB`对象用于存储要转换为PDF文档的文件。
+   * 使用`BLOB`对象的构造函数创建对象。 此`BLOB`对象用于存储要转换为PDF文档的文件。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示文件位置和在中打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`MTOM`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`MTOM`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 调用PDF创建操作。
 
@@ -186,7 +186,7 @@ Distiller®服务将PostScript®、封装的PostScript(EPS)和PRN文件转换为
 
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，它表示已签名PDF文档的文件位置以及打开文件的模式。
    * 创建一个字节数组，用于存储`CreatePDF2`方法返回的`BLOB`对象的内容（输出参数）。 通过获取`BLOB`对象的`MTOM`数据成员的值，填充字节数组。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**

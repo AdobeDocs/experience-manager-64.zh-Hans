@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 workflow-type: tm+mt
 source-wordcount: '2012'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # SPA简介和演练{#spa-introduction-and-walkthrough}
 
-单页应用程序(SPA)可以为网站用户优惠引人入胜的体验。 开发人员希望能够使用SPA框架构建站点，而作者希望无缝编辑AEM中的内容，以便使用此类框架构建站点。
+单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用SPA框架构建站点，而作者希望无缝编辑AEM中的内容，以便使用此类框架构建站点。
 
 SPA Editor优惠了在AEM内支持SPA的全面解决方案。 本文将逐步介绍如何使用基本的SPA应用程序进行创作，并说明它与基础的AEM SPA编辑器的关系。
 
@@ -126,7 +126,7 @@ SPA的主要思想是减少对服务器的调用和依赖，以最大限度地�
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
    >[!NOTE]
-   >有关就地文本编辑器和SPA的更多信息，请参见[SPA编辑器概述](spa-overview.md#requirements-limitations)。
+   >有关就地文本编辑器和SPA的更多信息，请参见[SPA Editor概述](spa-overview.md#requirements-limitations)。
 
 1. 使用资产浏览器将新图像拖放到图像组件中。
 

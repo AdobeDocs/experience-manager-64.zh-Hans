@@ -270,7 +270,7 @@ Forms在Web浏览器中显示(与Adobe Reader或Acrobat相对)，符合必填字
 
 1. 设置HTML运行时选项
 
-   * 使用`HTMLRenderSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`HTMLRenderSpec`对象的构造函数创建对象。
    * 要呈现带有工具栏的HTML表单，请调用`HTMLRenderSpec`对象的`setHTMLToolbar`方法并传递`HTMLToolbar`枚举值。 例如，要显示垂直HTML工具栏，请传递`HTMLToolbar.Vertical`。
    * 要设置HTML表单的区域设置值，请调用`HTMLRenderSpec`对象的`setLocale`方法并传递一个指定区域设置值的字符串值。 （这是可选设置。）
    * 要在完整HTML标记中呈现HTML表单，请调用`HTMLRenderSpec`对象的`setOutputType`方法并传递`OutputType.FullHTMLTags`。 （这是可选设置。）
@@ -327,7 +327,7 @@ Forms在Web浏览器中显示(与Adobe Reader或Acrobat相对)，符合必填字
 
 1. 设置HTML运行时选项
 
-   * 使用`HTMLRenderSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`HTMLRenderSpec`对象的构造函数创建对象。
    * 要呈现带有工具栏的HTML表单，请调用`HTMLRenderSpec`对象的`setHTMLToolbar`方法并传递`HTMLToolbar`枚举值。 例如，要显示垂直HTML工具栏，请传递`HTMLToolbar.Vertical`。
    * 要设置HTML表单的区域设置值，请调用`HTMLRenderSpec`对象的`setLocale`方法并传递一个指定区域设置值的字符串值。 有关详细信息，请参阅[AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
    * 要在完整HTML标记中呈现HTML表单，请调用`HTMLRenderSpec`对象的`setOutputType`方法并传递`OutputType.FullHTMLTags`。

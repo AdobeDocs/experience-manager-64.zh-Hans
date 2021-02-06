@@ -22,7 +22,7 @@ ht-degree: 0%
 
 可以配置在Workbench中创建的流程，以便通过代表性状态转移(REST)请求调用它们。 REST请求从HTML页发送。 即，您可以使用REST请求从网页直接调用Forms进程。 例如，可以打开网页的新实例。 然后，您可以调用Forms进程，并加载呈现的PDF文档，其中包含在HTTPPOST请求中发送的数据。
 
-存在两种类型的HTML客户端。 第一个HTML客户端是使用JavaScript编写的AJAX客户端。 第二个客户端是包含提交按钮的HTML表单。 基于HTML的客户端应用程序并非唯一可能的REST客户端。 任何支持HTTP请求的客户端应用程序都可以使用REST调用调用服务。 例如，您可以通过从PDF表单调用REST来调用服务。 (请参阅从Acrobat[调用MyApplication/EncryptDocument进程。)](#rest-invocation-examples)
+存在两种类型的HTML客户端。 第一个HTML客户端是使用JavaScript编写的AJAX客户端。 第二个客户端是包含提交按钮的HTML表单。 基于HTML的客户端应用程序并非唯一可能的REST客户端。 任何支持HTTP请求的客户端应用程序都可以使用REST调用调用服务。 例如，您可以通过从PDF表单调用REST来调用服务。 (请参阅从Acrobat](#rest-invocation-examples)调用MyApplication/EncryptDocument进程。)[
 
 使用REST请求时，建议您不要直接调用Forms服务。 而是调用在Workbench中创建的进程。 创建用于调用REST的流程时，请使用程序化开始点。 在这种情况下，将自动添加REST端点。 有关在Workbench中创建流程的信息，请参阅[使用Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)。
 

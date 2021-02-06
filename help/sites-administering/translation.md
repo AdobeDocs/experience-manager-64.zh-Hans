@@ -34,7 +34,7 @@ ht-degree: 0%
 1. [确定要翻译的](/help/sites-administering/tc-rules.md) 内容类型。
 1. [通过创作语](/help/sites-administering/tc-prep.md) 言主控和创建语言副本的根页面，准备翻译内容。
 1. [创建翻](/help/sites-administering/tc-manage.md) 译项目以收集要翻译的内容并准备翻译过程。
-1. 使用转换项目管理内容转换过程[。](/help/sites-administering/tc-manage.md)
+1. 使用转换项目管理内容转换过程](/help/sites-administering/tc-manage.md)。[
 
 如果您的翻译服务提供商不提供与AEM集成的连接器，AEM支持手动提取和以XML格式重新插入翻译内容。
 

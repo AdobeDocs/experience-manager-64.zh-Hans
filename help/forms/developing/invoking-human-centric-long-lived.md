@@ -164,8 +164,8 @@ Java servlet执行以下任务:
 1. 在Java项目的类路径中包含客户端JAR文件，如adobe-livecycle-client.jar。 有关这些文件的位置的信息，请参见[包括AEM FormsJava库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 1. 检索从HTML页面提交的名称、电话和金额值。 使用这些值动态创建发送到`FirstAppSolution/PreLoanProcess`进程的XML数据源。 可以使用`org.w3c.dom`类创建XML数据源（此应用程序逻辑如下面的代码示例所示）。
 1. 创建包含连接属性的`ServiceClientFactory`对象。 （请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。）
-1. 使用`ServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。 `ServiceClient`对象允许您调用服务操作。 它处理任务，如查找、调度和路由调用请求。
-1. 使用`java.util.HashMap`对象的构造函数创建&lt;a0/>对象。
+1. 使用`ServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。 `ServiceClient`对象允许您调用服务操作。 它处理任务，如查找、调度和路由调用请求。
+1. 使用`java.util.HashMap`对象的构造函数创建对象。
 1. 调用每个输入参数的`java.util.HashMap`对象的`put`方法，以传递给长寿命进程。 请确保指定进程的输入参数的名称。 由于`FirstAppSolution/PreLoanProcess`进程需要一个类型为`XML`（名为`formData`）的输入参数，因此只需调用`put`方法一次。
 
    ```as3
@@ -494,7 +494,7 @@ ASP.NET应用程序执行以下任务:
 **添加服务引用：**
 
 1. 在“项目”菜单中，选择&#x200B;**添加服务引用**。
-1. 在&#x200B;**Address**&#x200B;对话框中，指定作业管理器服务的WSDL。
+1. 在&#x200B;**地址**&#x200B;对话框中，指定作业管理器服务的WSDL。
 
    ```as3
     https://hiro-xp:8080/soap/services/JobManager?WSDL&lc_version=9.0.1
@@ -620,7 +620,7 @@ ASP.NET应用程序执行以下任务:
 1. 通过调用`FirstAppSolution_PreLoanProcessClient`对象的`invoke_Async`方法调用`FirstAppSolution/PreLoanProcess`进程。 此方法返回一个字符串值，它表示长寿命进程的调用标识符值。
 1. 使用is构造函数创建`JobManagerClient`。 （请确保已设置对作业管理器服务的服务引用。）
 1. 重复步骤1-5。 为步骤2指定以下URL:`https://hiro-xp:8080/soap/services/JobManager?blob=mtom`。
-1. 使用`JobId`对象的构造函数创建&lt;a0/>对象。
+1. 使用`JobId`对象的构造函数创建对象。
 1. 使用`FirstAppSolution_PreLoanProcessClient`对象的`invoke_Async`方法的返回值设置`JobId`对象的`id`数据成员。
 1. 为`JobId`对象的`persistent`数据成员指定`value` true。
 1. 通过调用`JobManagerService`对象`getStatus`方法并传递`JobId`对象，创建`JobStatus`对象。

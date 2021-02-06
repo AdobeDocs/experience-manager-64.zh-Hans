@@ -124,7 +124,7 @@ AEM中提供以下Dynamic Media经典组件：
 
 ### 所有Dynamic Media经典组件{#settings-common-to-all-scene-components}的通用设置
 
-尽管配置选项不同，但以下是所有[!UICONTROL Dynamic Media经典]组件的通用选项：
+尽管配置选项不同，但以下各项对于所有[!UICONTROL Dynamic Media经典]组件是通用的：
 
 * **[!UICONTROL 文件]**
 引用浏览到要引用的文件。文件引用显示资产URL，但不一定是完整的Dynamic Media经典URL（包括URL命令和参数）。 不能在此字段中添加Dynamic Media经典URL命令和参数。 必须使用组件中的相应功能才能添加这些命令和参数。

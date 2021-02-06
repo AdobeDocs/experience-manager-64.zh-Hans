@@ -384,7 +384,7 @@ ht-degree: 3%
 
 ![siteactions-2](assets/siteactions-2.png)
 
-当用鼠标悬停在站点上或触摸站点卡时，显示允许以创作模式[、](#authoring-site-content)打开站点属性进行修改的图标[、](#modifying-site-properties)发布站点[、](#publishing-the-site)导出站点[和](#exporting-the-site)删除站点[。](#deleting-the-site)
+当用鼠标悬停在站点上或触摸站点卡时，显示允许以创作模式](#authoring-site-content)、[打开站点属性进行修改的图标](#modifying-site-properties)、[发布站点](#publishing-the-site)、[导出站点](#exporting-the-site)和[删除站点](#deleting-the-site)。[
 
 ## 创作站点内容{#authoring-site-content}
 
@@ -522,7 +522,7 @@ ENABLEMENT面板允许访问在社区站点创建过程中提供的设置。
 
 发布新社区站点后，新成员组(在发布环境创建用户组)将具有为各种管理和成员角色设置的相应权限。
 
-为成员组创建的名称包括&#x200B;*站点名称*&#x200B;在[步骤1](#step13asitetemplate)中为站点指定的&lt;a0/>站点名称&lt;a1/>（显示在URL中的名称）以及唯一ID，以避免与社区站点和组冲突，这些站点和组具有不同的社区站点根的站点名称。
+为成员组创建的名称包括&#x200B;*站点名称*&#x200B;在[步骤1](#step13asitetemplate)中为站点指定的站点名称（显示在URL中的名称）以及唯一ID，以避免与社区站点和组冲突，这些站点和组具有不同的社区站点根的站点名称。
 
 例如，如果标题为“入门教程”的站点的名称为“参与”，则版主的用户组将为：
 

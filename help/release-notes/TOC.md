@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 26%
+ht-degree: 36%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 26%
 + [AEM 6.4概述](home.md)
 + [一般发行说明](release-notes.md)
 + [Service Pack发行说明](sp-release-notes.md)
-+ [累积修复包发行说明](cfp-release-notes.md)
++ [累积修补程序包发行说明](cfp-release-notes.md)
 + [AEM Sites 发行说明](sites.md)
 + [AEM Assets 发行说明](assets.md)
 + [AEM Forms 发行说明](forms.md)
@@ -29,7 +29,7 @@ ht-degree: 26%
 + [已弃用和已删除的功能](deprecated-removed-features.md)
 + [已知问题](known-issues.md)
 + [AEM Foundation和Repository](wcm-platform.md)
-+ [触屏UI功能状态](touch-ui-features-status.md)
++ [触屏 UI 功能状态](touch-ui-features-status.md)
 + [CRX2OAK迁移工具](crx2oak.md)
 + [智能内容服务发行说明](smart-content-service-release-notes.md)
 + [Livefyre功能包2.0.6发行说明](livefyre-feature-pack-206.md)

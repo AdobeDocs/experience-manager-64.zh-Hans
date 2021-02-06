@@ -167,7 +167,7 @@ TarMK的在线索引重新索引比上面描述的在线TarkMK重新索引更快
 >
 >ACS Ensure Index是社区支持的项目，不受Adobe支持。
 
-这允许通过内容包进行索引定义，稍后通过将重新索引标志设置为`true`来重新索引索引。 这适用于重新建立索引不需要很长时间的较小设置。
+这允许通过内容包进行索引定义，稍后通过将重新索引标志设置为`true`来重新索引。 这适用于重新建立索引不需要很长时间的较小设置。
 
 有关详细信息，请参阅[ACS Ensure Index文档](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html)。
 

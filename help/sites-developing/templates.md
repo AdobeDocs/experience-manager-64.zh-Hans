@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 workflow-type: tm+mt
 source-wordcount: '982'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -83,7 +83,7 @@ AEM现在优惠了两种用于创建页面的基本模板类型：
 >
 >[AEM ](modernization-tools.md) Modernizationtools可以帮助您将静态模板迁移到可编辑模板。
 
-### 模板可用性{#template-availability}
+### 模板可用性 {#template-availability}
 
 >[!CAUTION]
 >
@@ -99,7 +99,7 @@ AEM现在优惠了两种用于创建页面的基本模板类型：
 >
 有关示例，请参阅We.Retail:`/content/we-retail/jcr:content`
 >
->属性`allowedPaths`、`allowedParents`和`allowedChildren`也可以放在模板上，以定义更复杂的规则。 但是，如果可能，如果需要进一步限制允许的模板，则在站点的子部分上进一步定义&#x200B;*属性会更简单。*`cq:allowedTemplates`
+>属性`allowedPaths`、`allowedParents`和`allowedChildren`也可以放在模板上，以定义更复杂的规则。 但是，如果可能，如果需要进一步限制允许的模板，则在站点的子部分上进一步定义`cq:allowedTemplates`属性会更简单。**
 >
 >另一个优势是，作者可以在&#x200B;**页面属性**&#x200B;的&#x200B;**高级**&#x200B;选项卡中更新`cq:allowedTemplates`属性。 其他模板属性无法使用（标准）UI进行更新，因此需要开发人员为每次更改维护规则和代码部署。
 

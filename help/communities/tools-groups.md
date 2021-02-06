@@ -97,4 +97,4 @@ ht-degree: 2%
 
 编辑组模板不会影响已通过模板创建的社区站点。 可以直接[编辑社区站点](sites-console.md#modify-structure)的结构。
 
-此过程提供与创建组模板[相同的面板。](#create-goup-template)
+此过程提供与创建组模板](#create-goup-template)相同的面板。[

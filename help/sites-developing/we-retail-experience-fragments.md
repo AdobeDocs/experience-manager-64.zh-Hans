@@ -45,7 +45,7 @@ ht-degree: 38%
 
 ## 在We.Retail {#where-to-use-experience-fragments-in-we-retail}中使用体验片段的位置
 
-您可以在全局导航中的&#x200B;**站点**&#x200B;下的[任何页面](/help/sites-authoring/editing-content.md)上使用您的&lt;a0/>体验片段](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment)（与任何其他组件一样）。[
+您可以在全局导航中的&#x200B;**站点**&#x200B;下的[任何页面](/help/sites-authoring/editing-content.md)上使用您的[体验片段](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment)（与任何其他组件一样）。
 
 ## 更多信息 {#further-information}
 

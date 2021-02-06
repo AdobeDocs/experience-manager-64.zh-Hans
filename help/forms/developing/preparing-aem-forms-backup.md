@@ -234,7 +234,7 @@ ht-degree: 0%
    将`ServiceClientFactory`对象和BackupService客户端API对象结合使用。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。 （请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。）
-   * 使用`BackupService`对象的构造函数创建`ServiceClientFactory`对象，并将&lt;a1/>对象作为参数进行传递。
+   * 使用`BackupService`对象的构造函数创建`ServiceClientFactory`对象，并将对象作为参数进行传递。
 
 1. 进入备份模式
 

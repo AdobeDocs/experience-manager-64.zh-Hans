@@ -40,7 +40,7 @@ ht-degree: 2%
 
 * 如果未使用默认端口(4502、4503)，则[配置复制代理](#replication-agents-on-author)
 * [复制加密密钥](#replicate-the-crypto-key)
-* 如果支持全球化，则设置自动翻译[](../../help/sites-administering/translation.md)
+* 如果支持全球化，则设置自动翻译](../../help/sites-administering/translation.md)[
 
    （提供开发的示例设置）
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
          * UGC从未复制
          * UGC仅在输入它的AEM实例或群集上可见
-      * 默认为JSRP
+      * 默认值为JSRP
 
    对于&#x200B;**[启用功能](overview.md#enablement-community)**
 
@@ -97,7 +97,7 @@ AEM 6.4 Communities GA包括Communities包。 要了解对AEM 6.4 [Communities](
 
 从AEM 6.3开始，对Communities的更新作为AEM累积修复包和服务包的一部分提供。
 
-有关AEM 6.4的最新更新，请务必检查[Adobe Experience Manager6.4累积修复包和服务包](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html)。
+有关AEM 6.4的最新更新，请务必检查[Adobe Experience Manager6.4累积修复包和服务包](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)。
 
 ### 版本历史记录{#version-history}
 

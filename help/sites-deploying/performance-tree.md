@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '1207'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 4%
 
 ### 章节 4 {#section-3}
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 ### 第5节{#section-4}
 
@@ -199,7 +199,7 @@ ht-degree: 4%
      <li><a href="/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing">并发工作流处理</a></li> 
      <li><a href="/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow">为特定工作流配置队列</a></li> 
      <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">定期清除工作流实例</a></li> 
-     <li><a href="/help/sites-developing/workflows.md#transient-workflows">临时工作流</a><br /> </li> 
+     <li><a href="/help/sites-developing/workflows.md#transient-workflows">瞬态工作流</a><br /> </li> 
     </ul> <p> </p> </td> 
   </tr> 
   <tr> 

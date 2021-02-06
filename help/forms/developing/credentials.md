@@ -106,11 +106,11 @@ ht-degree: 0%
 1. 创建凭据服务客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`CredentialServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`CredentialServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 引用凭据
 
-   * 使用`java.io.FileInputStream`对象的构造函数创建&lt;a0/>对象。 传递一个指定凭据位置的字符串值。
+   * 使用`java.io.FileInputStream`对象的构造函数创建对象。 传递一个指定凭据位置的字符串值。
    * 使用`com.adobe.idp.Document`构造函数创建存储凭据的`com.adobe.idp.Document`对象。 将包含凭据的`java.io.FileInputStream`对象传递给构造函数。
 
 1. 执行导入操作
@@ -190,7 +190,7 @@ ht-degree: 0%
 1. 创建凭据服务客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`CredentialServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`CredentialServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 执行删除操作
 

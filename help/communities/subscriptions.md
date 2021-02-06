@@ -1,6 +1,6 @@
 ---
-title: 社区订阅
-seo-title: 社区订阅
+title: Communities 订阅
+seo-title: Communities 订阅
 description: '社区成员通过电子邮件与其他成员互动 '
 seo-description: '社区成员通过电子邮件与其他成员互动 '
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 workflow-type: tm+mt
 source-wordcount: '361'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 社区订阅{#communities-subscriptions}
+# Communities 订阅 {#communities-subscriptions}
 
 ## 概述 {#overview}
 

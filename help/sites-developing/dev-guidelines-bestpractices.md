@@ -166,6 +166,6 @@ XSSAPI备忘单。
 
 ### 在Java进程{#open-files-in-the-java-process}中打开文件
 
-由于AEM可以访问大量文件，因此建议为AEM显式配置Java进程[打开的文件数。](/help/sites-deploying/configuring.md#open-files-in-the-java-process)
+由于AEM可以访问大量文件，因此建议为AEM显式配置Java进程](/help/sites-deploying/configuring.md#open-files-in-the-java-process)打开的文件数。[
 
 为最大限度地减少此问题的发展，应确保尽可能快（有意义）正确关闭任何打开的文件。

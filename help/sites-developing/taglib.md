@@ -596,7 +596,7 @@ Sling标签库包含有用的Sling函数。
 
 * 当前ResourceResolver对象。 它与slingRequest.getResourceResolver()相同
 
-。**sling**
+.**sling**
 
 * 一个SlingScriptHelper对象，包含脚本的简便方法，主要是sling.include(&#39;/some/other/resource&#39;)，用于在此响应中包含其他资源的响应(例如， 嵌入标题html片段)和sling.getService(foo.bar.Service.class)，以检索Sling（类表示法，具体取决于脚本语言）中提供的OSGi服务。
 

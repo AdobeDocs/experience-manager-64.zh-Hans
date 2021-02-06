@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
 source-wordcount: '1835'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 6%
 * [AEM平台简介](/help/sites-deploying/platform.md)
 * [性能指南](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile 入门](/help/mobile/getting-started-aem-mobile.md)
-* [什么是AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [什么是AEM Screens?](https://docs.adobe.com/content/help/zh-Hans/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## 基本概念{#basic-concepts}
 

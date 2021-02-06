@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 手动与自动模型路由{#manual-vs-automatic-model-routing}
 
-`ModelRouter`自动获取模型的片段。 但是，作为任何自动化工具集，它都有局限性。 如果需要，可以禁用`ModelRouter`或将&lt;a0/>配置为使用元属性忽略路径(请参阅[SPA页面组件](/help/sites-developing/spa-page-component.md)文档的元属性部分)。 然后，前端开发者可以使用`getData()`函数请求`PageModelManager`加载任何给定的模型片段，从而实现自己的模型路由层。
+`ModelRouter`自动获取模型的片段。 但是，作为任何自动化工具集，它都有局限性。 如果需要，可以禁用`ModelRouter`或将配置为使用元属性忽略路径(请参阅[SPA页面组件](/help/sites-developing/spa-page-component.md)文档的元属性部分)。 然后，前端开发者可以使用`getData()`函数请求`PageModelManager`加载任何给定的模型片段，从而实现自己的模型路由层。
 
 >[!NOTE]
 >

@@ -111,16 +111,16 @@ PDF/A-1规范包含两个符合性级别，即A和B。二者之间的主要区�
 1. 创建DocConvert客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`DocConverterServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocConverterServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 引用PDF文档以转换为PDF/A文档
 
    * 创建一个`java.io.FileInputStream`对象，该对象使用其构造函数并传递一个指定PDF文件位置的字符串值来表示要转换的PDF文档。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置跟踪信息
 
-   * 使用`PDFAConversionOptionSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFAConversionOptionSpec`对象的构造函数创建对象。
    * 通过调用`PDFAConversionOptionSpec`对象的`setLogLevel`方法并传递指定跟踪级别的字符串值来设置信息跟踪级别。 例如，传递值`FINE`。 有关不同值的信息，请参见[AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)中的`setLogLevel`方法。
 
 1. 转换文档
@@ -164,15 +164,15 @@ PDF/A-1规范包含两个符合性级别，即A和B。二者之间的主要区�
 
 1. 引用PDF文档以转换为PDF/A文档
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储转换为PDF/A文档的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储转换为PDF/A文档的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及在中打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`binaryData`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`binaryData`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 设置跟踪信息
 
-   * 使用`PDFAConversionOptionSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFAConversionOptionSpec`对象的构造函数创建对象。
    * 通过为`PDFAConversionOptionSpec`对象的`logLevel`数据成员指定指定跟踪级别的值来设置信息跟踪级别。 例如，将值`FINE`分配给此数据成员。
 
 1. 转换文档
@@ -189,7 +189,7 @@ PDF/A-1规范包含两个符合性级别，即A和B。二者之间的主要区�
    * 通过获取`PDFAConversionResult`对象的`PDFADocument`文档成员的值，创建存储PDF/A数据的`BLOB`对象。
    * 创建一个字节数组，用于存储使用`PDFAConversionResult`对象返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`binaryData`数据成员的值，填充字节数组。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF/A文档的文件位置。
-   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建&lt;a0/>对象。
+   * 通过调用`System.IO.BinaryWriter`对象的构造函数并传递`System.IO.FileStream`对象，创建对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
@@ -269,16 +269,16 @@ PDF/A-1规范包含两个符合性级别，即A和B。二者之间的主要区�
 1. 创建DocConvert客户端
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
-   * 使用`DocConverterServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建&lt;a0/>对象。
+   * 使用`DocConverterServiceClient`对象的构造函数并传递`ServiceClientFactory`对象，创建对象。
 
 1. 参考用于确定PDF/A兼容性的PDF文档
 
    * 创建一个`java.io.FileInputStream`对象，该对象使用其构造函数并传递一个指定PDF文件位置的字符串值来表示要转换的PDF文档。
-   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建&lt;a0/>对象。
+   * 使用`com.adobe.idp.Document`对象的构造函数并传递`java.io.FileInputStream`对象，创建对象。
 
 1. 设置运行时选项
 
-   * 使用`PDFAValidationOptionSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFAValidationOptionSpec`对象的构造函数创建对象。
    * 通过调用`PDFAValidationOptionSpec`对象的`setCompliance`方法并传递`PDFAValidationOptionSpec.Compliance.PDFA_1B`来设置规范级别。
    * 通过调用`PDFAValidationOptionSpec`对象的`setLogLevel`方法并传递指定跟踪级别的字符串值来设置信息跟踪级别。 例如，传递值`FINE`。 有关不同值的信息，请参见[AEM FormsAPI参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)中的`setLogLevel`方法。
 
@@ -317,15 +317,15 @@ PDF/A-1规范包含两个符合性级别，即A和B。二者之间的主要区�
 
 1. 参考用于确定PDF/A兼容性的PDF文档
 
-   * 使用`BLOB`对象的构造函数创建&lt;a0/>对象。 `BLOB`对象用于存储转换为PDF/A文档的PDF文档。
+   * 使用`BLOB`对象的构造函数创建对象。 `BLOB`对象用于存储转换为PDF/A文档的PDF文档。
    * 通过调用`System.IO.FileStream`对象的构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及在中打开文件的模式。
    * 创建存储`System.IO.FileStream`对象内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性，可以确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、开始位置和流长度，用流数据填充字节数组。
-   * 通过为`binaryData`对象的&lt;a1/>属性指定字节数组的内容，填充`BLOB`对象。
+   * 通过为`binaryData`对象的属性指定字节数组的内容，填充`BLOB`对象。
 
 1. 设置运行时选项
 
-   * 使用`PDFAValidationOptionSpec`对象的构造函数创建&lt;a0/>对象。
+   * 使用`PDFAValidationOptionSpec`对象的构造函数创建对象。
    * 通过将`PDFAValidationOptionSpec`对象的`compliance`数据成员赋值`PDFAConversionOptionSpec_Compliance.PDFA_1B`来设置规范级别。
    * 通过将`PDFAValidationOptionSpec`对象的`resultLevel`数据成员赋值`PDFAValidationOptionSpec_ResultLevel.DETAILED`来设置信息跟踪级别。
 

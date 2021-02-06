@@ -76,7 +76,7 @@ ht-degree: 2%
 
 1. 确保已安装最新代码：
 
-* [AEM平台更新](https://helpx.adobe.com/cn/experience-manager/kb/aem62-available-hotfixes.html)
+* [AEM平台更新](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
 * [AEM Communities更新](/help/communities/deploy-communities.md#latest-releases)
 
 ### 1. Apache Sling Distribution Agent —— 同步代理工厂{#apache-sling-distribution-agent-sync-agents-factory}

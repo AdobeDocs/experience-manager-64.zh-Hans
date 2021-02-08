@@ -54,20 +54,17 @@ ht-degree: 2%
 >
 >* [MSM](/help/sites-administering/msm.md) 管理从蓝图(如全局主控)到语言边界内的Live Copy（如本地站点）的翻译内容的部署。
 >* AEM的[translation](/help/sites-administering/translation.md)集成功能与第三方翻译管理服务相结合，管理语言并将内容翻译成这些不同的语言。
-
 >
->
-对于更高级的用例，MSM也可以跨语言母版使用。
+>对于更高级的用例，MSM也可以跨语言母版使用。
 
 >[!NOTE]
 >
 >对于所有用例，建议阅读以下最佳实践：
 >
 >* [MSM的最佳实践](/help/sites-administering/msm-best-practices.md);特别是：
-   >
-   >   
-   * [创建站点](/help/sites-administering/msm-best-practices.md#create-site)
-   >   * [MSM和多语言网站](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>   * [创建站点](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [MSM和多语言网站](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [翻译最佳实践](/help/sites-administering/tc-bp.md)
 

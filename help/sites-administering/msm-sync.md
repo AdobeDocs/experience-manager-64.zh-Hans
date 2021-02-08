@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: 38c713b2c5aa93805b10bbb60c0dbdfa24872eb1
 workflow-type: tm+mt
-source-wordcount: '2671'
-ht-degree: 77%
+source-wordcount: '2705'
+ht-degree: 76%
 
 ---
 
@@ -29,7 +29,11 @@ ht-degree: 77%
 
 本部分提供有关已安装转出配置、其所使用的同步操作以及如何在需要时创建自定义配置的信息。
 
-### 转出触发器  {#rollout-triggers}
+>[!CAUTION]
+>
+>建议更新或更改现成（已安装）转出配置&#x200B;**不**。 如果对自定义实时操作有要求，则应在自定义转出配置中添加该操作。
+
+### 转出触发器 {#rollout-triggers}
 
 每个转出配置都使用一个可执行转出的转出触发器。转出配置可以使用以下触发器之一：
 

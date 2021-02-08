@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
+source-git-commit: 42d5a1875d78fdec1be0bb22d8ec8de2e56256ec
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 55%
@@ -79,7 +79,7 @@ AEM 中含有 100 多个 Dynamic Media 图像传送命令，可用于微调和�
 
 将 monochrome 参数设置保留为 0。
 
-### JPEF 压缩的最佳实践 (&amp;qlt=) {#best-practices-for-jpef-compression-qlt}
+### JPEG压缩的最佳实践(&amp;qlt=){#best-practices-for-compression-qlt}
 
 * 此参数控制 JPG 编码质量。值越大表示图像质量越高，但文件也越大；反之，值越小表示图像质量越低，但文件也越小。此参数的范围是 0-100。
 * 要优化质量，切勿将该参数值设置为 100。设置为 90 或 95 与设置为 100 几乎没有什么区别，但是设置为 100 会不必要地增加图像文件的大小。因此，要优化质量，同时避免图像文件过大，请将`qlt=<value>`设置为90或95。

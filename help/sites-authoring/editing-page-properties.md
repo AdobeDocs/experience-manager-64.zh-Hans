@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 89%
+source-wordcount: '1774'
+ht-degree: 84%
 
 ---
 
@@ -52,6 +52,15 @@ ht-degree: 89%
 
    指示在生成的站点的页面导航中是显示还是隐藏页面。
 
+* **品牌化**
+
+   通过将品牌辅助信息附加到每个页面标题，跨页面应用一致的品牌标识。 此功能要求使用[核心组件版本2.14.0或更高版本的页面组件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+
+   * **覆盖**  — 选中可定义此页上的品牌辅助信息区。
+      * 除非任何子页面也设置了&#x200B;**Override**&#x200B;值，否则该值将由其继承。
+   * **覆盖值**  — 要附加到页面标题的品牌辅助信息区文本。
+      * 该值将附加到管道字符（如“循环托斯卡纳”）之后的页面标题 |始终为WKND做好准备”
+
 * **页面标题**
 
    要在页面中使用的标题。通常由标题组件使用。如果留空，则将使用&#x200B;**标题**。
@@ -84,7 +93,7 @@ ht-degree: 89%
 
    允许您输入此页面的虚 URL，以便使用更短并且/或者含意更清楚的 URL。
 
-   例如，如果对于网站h `ttp://example.com,`，虚URL设置为w `elcome`，且路径/ `v1.0/startpage`标识的页面为h ，则h `ttp://example.com/welcome`将是h `ttp://example.com/content/v1.0/startpage`的虚URL
+   例如，如果对于网站h `ttp://example.com,`，虚URL设置为w `elcome`，且路径/ `v1.0/startpage`标识的页面，则h `ttp://example.com/welcome`将是h `ttp://example.com/content/v1.0/startpage`的虚URL
 
    >[!CAUTION]
    >
@@ -122,7 +131,7 @@ ht-degree: 89%
    >
    >例如：如果您为节点 `/content/we-retail/spanish` 定义别名 `latin-lang`，则可以通过 `/content/we-retail/latin-language` 访问此页面。
    >
-   >有关更多详细信息，请参阅[SEO和URL管理最佳实践下的本地化页面名称](/help/managing/seo-and-url-management.md#localized-page-names)
+   >有关更多详细信息，请参阅[SEO和URL管理最佳实践](/help/managing/seo-and-url-management.md#localized-page-names)下的本地化页面名称
 
 * **允许的模板**
 
@@ -136,7 +145,7 @@ ht-degree: 89%
 
    >[!CAUTION]
    >
-   >**[权限](/help/sites-authoring/editing-page-properties.md#permissions)**&#x200B;选项卡允许根据存在`granite:AuthenticationRequired`混音来编辑CUG配置。 如果使用已弃用的CUG配置配置页面权限，则根据存在cq:cugEnabled属性，在&#x200B;**身份验证要求**&#x200B;下将显示一条警告消息，该选项将不可编辑，[权限](/help/sites-authoring/editing-page-properties.md#permissions)也将不可编辑。
+   >**[权限](/help/sites-authoring/editing-page-properties.md#permissions)**&#x200B;选项卡允许根据`granite:AuthenticationRequired`混音的存在编辑CUG配置。 如果使用已弃用的CUG配置配置页面权限，则在存在cq:cugEnabled属性的情况下，将在&#x200B;**身份验证要求**&#x200B;下显示一条警告消息，并且该选项将不可编辑，[权限](/help/sites-authoring/editing-page-properties.md#permissions)也将不可编辑。
    >
    >
    >对于此类情况，必须在[经典 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) 中编辑 CUG 权限。
@@ -198,7 +207,7 @@ ht-degree: 89%
 
    >[!CAUTION]
    >
-   >**权限**&#x200B;选项卡允许根据存在`granite:AuthenticationRequired`混音来编辑CUG配置。 如果页面权限是使用已弃用的 CUG 配置来配置的，则在存在 `cq:cugEnabled` 属性的情况下，将会显示一条警告消息，且 CUG 权限将不可编辑，同时[高级](/help/sites-authoring/editing-page-properties.md#advanced)选项卡上的“身份验证要求”也将不可编辑。
+   >**权限**&#x200B;选项卡允许根据`granite:AuthenticationRequired`混音的存在编辑CUG配置。 如果页面权限是使用已弃用的 CUG 配置来配置的，则在存在 `cq:cugEnabled` 属性的情况下，将会显示一条警告消息，且 CUG 权限将不可编辑，同时[高级](/help/sites-authoring/editing-page-properties.md#advanced)选项卡上的“身份验证要求”也将不可编辑。
    >
    >
    >对于此类情况，必须在[经典 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) 中编辑 CUG 权限。

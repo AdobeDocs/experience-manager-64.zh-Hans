@@ -3,10 +3,10 @@ title: 时间轴中的活动流
 description: '本文介绍如何在时间轴上显示资产的活动日志。 '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 51%
+source-wordcount: '216'
+ht-degree: 49%
 
 ---
 
@@ -28,19 +28,19 @@ ht-degree: 51%
 
 时间轴中显示的活动日志是从 CRX 中的 `/var/audit/com.day.cq.dam/content/dam` 位置获取的，日志文件就存储在该位置。
 
-此外，当上传新资产或通过 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [AEM 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)修改现有资产并签入 AEM 时，会记录时间轴活动。
+此外，当上传新资产或通过 [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 或 [AEM 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)修改现有资产并签入 AEM 时，会记录时间轴活动。
 
 >[!NOTE]
 >
->临时工作流不会显示在时间轴中，因为没有为这些工作流保存历史记录信息。
+>临时工作流不会显示在时间轴中，因为没有保存这些工作流的历史记录信息。
 
-要视图活动流，请对资产执行一个或多个操作，选择资产，然后从GlobalNav列表中选择&#x200B;**[!UICONTROL 时间轴]**。
+要视图活动流，请对资产执行一个或多个操作，选择资产，然后从GlobalNav列表中选择&#x200B;**[!UICONTROL Timeline]**。
 
-![时间轴-3](assets/timeline-3.png)
+![时间轴–3](assets/timeline-3.png)
 
 时间轴显示您对资产所执行操作的活动流。
 
-![活动流](assets/activity_stream.png)
+![活动_stream](assets/activity_stream.png)
 
 >[!NOTE]
 >

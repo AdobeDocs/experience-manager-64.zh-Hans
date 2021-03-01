@@ -105,7 +105,7 @@ ht-degree: 16%
       + [SPA简介和演练](spa-walkthrough.md)
       + [SPA WKND教程](spa-wknd.md)
       + [AEM中的SPA入门 — 反应](spa-getting-started-react.md)
-      + [AEM中的SPA入门 — 角度](spa-getting-started-angular.md)
+      + [AEM中的SPA入门 — Angular](spa-getting-started-angular.md)
       + [为 SPA 实施 React 组件](spa-implementing-react-component.md)
       + [SPA深潜](spa-deep-dives.md)
       + [SPA Editor概述](spa-overview.md)

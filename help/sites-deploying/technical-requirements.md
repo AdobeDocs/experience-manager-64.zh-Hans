@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
+source-git-commit: 95b5e70c1b474d4d207a5a33e8d1ab8ef39685b6
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3271'
 ht-degree: 2%
 
 ---
@@ -636,7 +636,6 @@ x86
 * 32位为16 GB磁盘空间，64位操作系统为20 GB磁盘空间
 * 图形内存 — 128 MB GPU（建议使用256 MB）
 * 2.35 GB可用硬盘空间
-* DVD-ROM驱动器
 * 1024 X 768像素或更高的显示器分辨率
 * 视频硬件加速（可选）
 * Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC

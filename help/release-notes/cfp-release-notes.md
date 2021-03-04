@@ -4,9 +4,9 @@ description: 特定于Adobe Experience Manager 6.4累积修复包的发行说明
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3a8fefc8a580d41d327cf7acbf8e4b0440fea604
+source-git-commit: 7c19ef4a56fbfaa2f43b71e4dc48c79f797f32a8
 workflow-type: tm+mt
-source-wordcount: '4432'
+source-wordcount: '4680'
 ht-degree: 15%
 
 ---
@@ -32,7 +32,13 @@ AEM Cumulative Fix Pack 6.4.8.4是自2020年3月AEM 6.4 Service Pack 8(6.4.8.0)�
 
 AEM 6.4.8.4是依赖于AEM 6.4 Service Pack 8的累积修补程序包(CFP)。 在安装AEM 6.4 Service Pack 8之后安装CFP。
 
-在AEM 6.4.8.4中，内置存储库(Apache Jackrabbit Oak)已更新至版本1.8.24。
+[!DNL Adobe Experience Manager] 6.4.8.4中引入的主要功能和增强功能包括：
+
+* 在执行PDFG转换时，能够启用或禁用[!DNL Experience Manager Forms]注册表更改。
+
+* 对表单数据模型中基于SOAP的Web服务进行基于X-509证书的身份验证。
+
+* 内置存储库 (Apache Jackrabbit Oak) 已更新至版本 1.8.24。
 
 有关CFP和其他类型版本的信息，请参阅[AEM Update Release Vehicle Definitions](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html?lang=en)
 
@@ -69,6 +75,20 @@ Adobe Experience Manager 6.4.8.4修复了以下问题。
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] 在计划的 [!DNL Experience Manager] 累积修补程序包发行日期后一周发布附加组件包。
+
+**通信管理**
+
+* 编辑字母时，具有条件的模块加载时间较长(NPR-35326)。
+
+* 编辑字母时，内容和数据绑定不显示在用户界面(CQ-4312905)上。
+
+**文档服务**
+
+* 在将[!DNL JAVA]升级到[!DNL JDK1.8.0_261](NPR-35761、NPR-35848)后无法组合PDF。
+
+**Foundation JEE**
+
+* 在[!DNL Forms]工作流中编辑任务通知时，无法保存该通知(CQ-4315055)。
 
 有关安全更新的信息，请参阅[Experience Manager安全公告页](https://helpx.adobe.com/security/products/experience-manager.html)。
 
@@ -164,7 +184,7 @@ Adobe Experience Manager 6.4.8.3修复了以下问题。
 
 * 从ES3迁移资产时，资产包括两个不可编辑的默认条件(NPR-34971)。
 
-**Foundation JEE**
+**JEE基金会**
 
 * 将[!DNL AEM Forms]用户从Flash迁移到HTML(CQ-4304075)。
 
@@ -493,6 +513,26 @@ AEM 6.4.8.4包含新版Dynamic Media查看器(5.10.1)，可在“图像预设”
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] 在计划的 [!DNL Experience Manager] 累积修补程序包发行日期后一周发布附加组件包。
+
+>[!NOTE]
+>
+>如果您未使用 AEM Forms，请跳过。AEM Forms 中的修复通过单独的附加包来交付。
+
+1. 确保您已安装AEM Cumulative Fix Pack。
+1. 下载操作系统[AEM Forms发行版](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates)中列出的相应表单加载项包。
+1. 按照[安装AEM forms add-on包](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package)中所述安装表单加载项包。
+
+### 安装AEM Forms JEE安装程序{#install-aem-forms-jee-installer}
+
+>[!NOTE]
+>
+>如果您未在 JEE 上使用 AEM Forms，请跳过。AEM Forms JEE 中的修复通过单独的安装程序来交付。
+
+有关安装AEM Forms JEE的累积安装程序和部署后配置的信息，请参阅[AEM Forms JEE Patch Installer](jee-patch-installer-64.md)。
+
+>[!NOTE]
+>
+>在JEE上安装Experience Manager Forms的累积安装程序后，请安装最新的Forms加载项包，从`crx-repository\install`文件夹中删除Forms加载项包，然后重新启动服务器。
 
 ### Uber Jar {#uber-jar}
 

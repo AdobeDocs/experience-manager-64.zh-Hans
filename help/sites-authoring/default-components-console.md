@@ -1,7 +1,7 @@
 ---
 title: 组件控制台
 seo-title: 组件控制台
-description: 'null'
+description: 组件控制台
 seo-description: 'null'
 uuid: 308b7fa1-9525-43f3-8c15-1076485b3f8c
 contentOwner: Chris Bohnert
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '263'
 ht-degree: 93%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 93%
 
 组件控制台允许您浏览针对实例定义的所有组件，并查看每个组件的关键信息。
 
-它可以从&#x200B;**工具** -> **常规** -> **组件**&#x200B;访问。 在控制台中，卡片视图和列表视图均可用。 由于组件没有树结构，因此列视图不可用。
+它可从&#x200B;**Tools** -> **General** -> **Components**&#x200B;访问。 在控制台中，卡片视图和列表视图均可用。 由于组件没有树结构，因此列视图不可用。
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 

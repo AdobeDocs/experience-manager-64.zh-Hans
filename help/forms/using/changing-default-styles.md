@@ -8,11 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a9ab5a78-2add-46e1-a8f2-444d0f25f43a
+feature: 移动设备表单
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: '339'
+ht-degree: 1%
 
 ---
 
@@ -21,11 +22,11 @@ ht-degree: 0%
 
 使用HTML5功能渲染HTML5表单，使用CSS完成渲染表单的样式设置。 HTML5表单的默认外观与其PDF再现类似。 开发人员可以使用自定义CSS更改HTML5表单的默认外观。
 
-本文提供更改HTML5表单样式的分步信息，[样式简介](/help/forms/using/css-styles.md)文章包含有关HTML5表单各种样式方面的详细信息。 确保在执行本文所述的步骤之前阅读样式文章的简介。
+本文提供了更改HTML5表单样式的分步信息，[样式简介](/help/forms/using/css-styles.md)文章包含有关HTML5表单各种样式方面的详细信息。 确保在执行本文中提到的步骤之前阅读样式文章的简介。
 
 以下两幅图像显示了默认样式和自定义样式之间的差异。
 
-![图片-002-small](assets/pictures-002-small.png)
+![pictures-002-small](assets/pictures-002-small.png)
 
 ## 设置表单样式{#style-your-forms}
 
@@ -35,20 +36,20 @@ ht-degree: 0%
 
 1. **创建用于设置HTML5表单样式的CSS样式表**
 
-   导览至创建用户档案渲染器的文件夹，并创建CSS样式表文件。 要执行的步骤包括
+   导览至创建用户档案呈示器的文件夹，并创建CSS样式表文件。 要执行的步骤包括
 
-   1. 右键单击文件夹，然后从菜单中选择&#x200B;**create** -> **创建文件**
-   要了解要在HTML5表单中为特定组件创建哪些CSS类，请参阅[样式简介](/help/forms/using/css-styles.md)。
+   1. 右键单击文件夹，然后从菜单中选择&#x200B;**create** -> **create File**
+   要了解为HTML5表单中的特定组件创建哪些CSS类，请参阅[样式简介](/help/forms/using/css-styles.md)。
 
-1. **在用户档案渲染器中包含样式表**
+1. **在用户档案 Renderer中包含样式表**
 
    在CRX DE中打开“用户档案渲染器”页（jsp文件），并在XFA客户端库正下方的页面中包含CSS文件。 执行这些步骤以将CSS文件包含在用户档案中。
 
-   1. 在渲染器页面中搜索以下行：
+   1. 在呈示器页面中搜索以下行：
 
       &lt;cq:includeclientlib categories=&quot;xfaforms.profile&quot; />
 
-   1. 在上面的行下面插入以下内容，以包含样式表：
+   1. 在上面的行下面插入以下内容以包含样式表：
 
       &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; />
 

@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -21,11 +22,11 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-在“创建通信”UI中，代理用户将通信预览为最终形状，在最终形状下发送给后期处理，例如用于电子邮件或打印。
+在“创建通信”UI中，代理用户以最终形式预览通信，将通信发送到后期处理，例如用于电子邮件或打印。
 
-为防止未授权使用此预览，组织可以在PDF上加上水印。 默认水印为“预览”，它显示在PDF中。
+为防止未授权使用此预览，组织可以在Adobe PDF上加上水印。 默认水印为“预览”，显示在PDF中。
 
-要在预览PDF中启用水印，请在&#x200B;**[!UICONTROL 对应管理配置]**`https://[server]:[port]/system/console/configMgr`中选择&#x200B;**[!UICONTROL 在预览期间应用水印]**&#x200B;选项。
+要在预览 PDF中启用水印，请在&#x200B;**[!UICONTROL 对应管理配置]**&#x200B;的`https://[server]:[port]/system/console/configMgr`中选择&#x200B;**[!UICONTROL 在预览期间应用水印]**&#x200B;选项。
 
 ![default-watermark](assets/default-watermark.png)
 
@@ -34,7 +35,7 @@ ht-degree: 0%
 ## 在“创建对应UI {#customizewatermark-}”中自定义PDF预览中的水印
 
 1. 转到`https://[server]:[port]/[ContextPath]/crx/de`并以管理员身份登录。
-1. 在apps文件夹中，创建一个名为&#x200B;**[!UICONTROL previewwatermark]**&#x200B;的文件夹，其路径／结构与libs文件夹中的previewwatermark文件夹类似：
+1. 在apps文件夹中，创建一个名为&#x200B;**[!UICONTROL previewwatermark]**&#x200B;的文件夹，其路径/结构与libs文件夹中的previewwatermark文件夹类似：
 
    1. 右键单击以下路径的**previewwatermark **文件夹，然后选择&#x200B;**叠加节点**:
 
@@ -42,7 +43,7 @@ ht-degree: 0%
 
    1. 确保“叠加节点”对话框具有以下值：
 
-      **路径：** /libs/fd/cm/configFiles/previewwatermark
+      **路径** :/libs/fd/cm/configFiles/previewwatermark
 
       **叠加位置** :/apps/
 
@@ -52,14 +53,14 @@ ht-degree: 0%
       >
       >请勿在/libs分支中进行更改。 您所做的任何更改都可能会丢失，因为只要您：
       >
-      >* 在实例上升级
+      >* 在您的实例上升级
       >* 应用热修复
       >* 安装功能包
 
 
-   1. 单击&#x200B;**确定**，然后单击&#x200B;**保存全部**。 在指定路径中创建&#x200B;**[!UICONTROL previewwatermark]**&#x200B;文件夹。
+   1. 单击&#x200B;**确定**，然后单击&#x200B;**保存全部**。 将在指定路径中创建&#x200B;**[!UICONTROL previewwatermark]**&#x200B;文件夹。
 
-1. 将ddx文件从“/libs/fd/cm/configFiles/previewwatermark”文件夹复制并粘贴到“/apps/fd/cm/configFiles/previewwatermark”文件夹，然后单击&#x200B;**[!UICONTROL 保存全部]**。
+1. 将dx文件从“/libs/fd/cm/configFiles/previewwatermark”文件夹复制并粘贴到“/apps/fd/cm/configFiles/previewwatermark”文件夹，然后单击&#x200B;**[!UICONTROL 保存全部]**。
 1. 在/apps/fd/cm/configFiles/previewwatermark/下的ddx文件中进行所需的更改。
 
    ```

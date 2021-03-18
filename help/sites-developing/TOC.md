@@ -6,16 +6,19 @@ audience: end-user
 user-guide-title: AEM 6.4 Developing 用户指南
 breadcrumb-title: Developing 指南
 user-guide-description: 本指南介绍如何构建 AEM 实例。
+feature-set: Experience Manager Sites
+feature: 开发
+role: 开发人员
 translation-type: tm+mt
-source-git-commit: 5a9cdf29ca7331cdae5c0905b20a76f7124f3dd4
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '887'
 ht-degree: 16%
 
 ---
 
 
-# AEM 6.4 Developing 用户指南  {#developing}
+# AEM 6.4 Developing 用户指南 {#developing}
 
 + [开发用户指南概述](home.md)
 + 开发人员简介{#introduction}

@@ -1,7 +1,7 @@
 ---
 title: SPA和服务器端渲染
 seo-title: SPA和服务器端渲染
-description: 'null'
+description: '"SPA和服务器端渲染"'
 seo-description: 'null'
 uuid: fbf7d0d1-865d-45d2-aeec-a7e3caf3fcb2
 contentOwner: bohnert
@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 translation-type: tm+mt
-source-git-commit: 226cd6688a579409371cb17f6ba31548bee312b3
+source-git-commit: 160cc2669ac19aacdce5e96d1ba1eb4bafcb6d58
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 1%
+source-wordcount: '1714'
+ht-degree: 0%
 
 ---
 

@@ -7,10 +7,11 @@ uuid: 292217c2-8110-4232-a78b-edea212765d2
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
+feature: 表单数据模型
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1421'
 ht-degree: 0%
 
 ---
@@ -22,23 +23,23 @@ ht-degree: 0%
 
 ![](do-not-localize/data-integeration.png)
 
-AEM Forms数据集成允许您配置和连接不同的数据源。 现成支持以下类型。 但是，只需少量自定义，您也可以集成其他数据源。
+AEM Forms数据集成允许您配置和连接到不同的数据源。 现成支持以下类型。 但是，只需少量自定义，您也可以集成其他数据源。
 
-* 关系数据库- MySQL、Microsoft SQL Server、IBM DB2和OracleRDBMS。
+* 关系数据库 — MySQL、Microsoft SQL Server、IBM DB2和Oracle RDBMS。
 * AEM用户用户档案
 * REST风格的Web服务
 * 基于SOAP的Web服务
 * OData服务
 
-数据集成支持OAuth2.0、基本身份验证和API密钥现成身份验证类型，并允许为访问Web服务实现自定义身份验证。 在AEM Cloud Services中配置了RESTful、基于SOAP和OData服务时，在AEM Web控制台中配置关系用户档案库的JDBC和AEM用户的连接器。
+数据集成支持OAuth2.0、基本身份验证和API密钥现成身份验证类型，并允许为访问Web服务实施自定义身份验证。 在AEM Cloud Services中配置RESTful、基于SOAP和OData服务时，在AEM Web控制台中配置关系数据库的JDBC和AEM用户用户档案的连接器。
 
 ## 配置关系数据库{#configure-relational-database}
 
 您可以使用AEM Web Console配置配置关系数据库。 执行以下操作：
 
 1. 转到位于`https://[server]:[host]/system/console/configMgr`的AEM Web控制台。
-1. 查找&#x200B;**[!UICONTROL Apache Sling Connection池化DataSource]**&#x200B;配置。 点击以在编辑模式下打开配置。
-1. 在配置对话框中，指定要配置的数据库的详细信息，如：
+1. 查找&#x200B;**[!UICONTROL Apache Sling Connection Pooled DataSource]**&#x200B;配置。 点按可在编辑模式下打开配置。
+1. 在“配置”对话框中，指定要配置的数据库的详细信息，例如：
 
    * 数据源的名称
    * 存储数据源名称的数据源服务属性
@@ -51,12 +52,12 @@ AEM Forms数据集成允许您配置和连接不同的数据源。 现成支持�
    >请确保在配置数据源之前加密敏感信息，如口令。 要加密：
    >
    >1. 转到 `https://[server]:[port]/system/console/crypto`.
-   >1. 在&#x200B;**[!UICONTROL 纯文本]**&#x200B;字段中，指定要加密的口令或任何字符串，然后单击&#x200B;**[!UICONTROL Protect]**。
+   >1. 在&#x200B;**[!UICONTROL 纯文本]**&#x200B;字段中，指定要加密的密码或任何字符串，然后单击&#x200B;**[!UICONTROL Protect]**。
 
    >
-   >加密的文本将显示在可在配置中指定的受保护文本字段中。
+   >加密的文本将显示在“受保护文本”字段中，您可以在配置中指定该字段。
 
-1. 启用&#x200B;**[!UICONTROL “借取时测试”]**&#x200B;或&#x200B;**[!UICONTROL “返回时测试”]**，以指定在从池借取对象或从池返回对象之前，验证对象。
+1. 启用&#x200B;**[!UICONTROL “借取时测试”]**&#x200B;或“返回时测试”**[!UICONTROL ，以指定在从池借取对象或将对象返回池之前，验证对象。]**
 1. 在&#x200B;**[!UICONTROL 验证查询]**&#x200B;字段中指定SQL SELECT查询，以验证池中的连接。 查询必须至少返回一行。 根据您的数据库，指定以下任一选项：
 
    * 选择1（MySQL和MS SQL）
@@ -66,10 +67,10 @@ AEM Forms数据集成允许您配置和连接不同的数据源。 现成支持�
 
 ## 配置AEM用户用户档案{#configure-aem-user-profile}
 
-您可以使用AEM Web Console中的用户用户档案连接器配置配置AEM用户用户档案。 执行以下操作：
+您可以使用AEM Web Console中的用户用户档案连接器配置配置来配置AEM用户用户档案。 执行以下操作：
 
 1. 转到位于`https://[server]:[host]/system/console/configMgr`的AEM Web控制台。
-1. 查找&#x200B;**[!UICONTROL AEM Forms数据集成——用户用户档案连接器配置]**&#x200B;并点按以在编辑模式下打开配置。
+1. 查找&#x200B;**[!UICONTROL AEM Forms用户档案集成 — 用户数据连接器配置]**，然后点击以在编辑模式下打开配置。
 1. 在“用户用户档案连接器配置”对话框中，可以添加、删除或更新用户用户档案属性。 指定的属性将可用于表单数据模型中。 使用以下格式指定用户用户档案属性：
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -91,11 +92,11 @@ AEM Forms数据集成允许您配置和连接不同的数据源。 现成支持�
 >
 >为RESTful、SOAP和OData服务配置云服务，需要配置云服务文件夹。
 
-AEM中的所有云服务配置都整合在AEM存储库的`/conf`文件夹中。 默认情况下，`conf`文件夹包含`global`文件夹，您可以在其中创建云服务配置。 但是，您需要手动为云配置启用它。 您还可以在`conf`中创建其他文件夹，以创建和组织云服务配置。
+AEM中的所有云服务配置都整合在AEM存储库的`/conf`文件夹中。 默认情况下，`conf`文件夹包含`global`文件夹，您可以在其中创建云服务配置。 但是，您需要为云配置手动启用它。 您还可以在`conf`中创建其他文件夹，以创建和组织云服务配置。
 
 要为云服务配置配置文件夹，请执行以下操作：
 
-1. 转至&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。
+1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。
    * 有关详细信息，请参阅[配置浏览器文档](/help/sites-administering/configurations.md)。
 1. 执行以下操作以启用云配置的全局文件夹，或跳过此步骤，为云服务配置创建和配置其他文件夹。
 
@@ -109,19 +110,19 @@ AEM中的所有云服务配置都整合在AEM存储库的`/conf`文件夹中。 
 
 ## 配置RESTful Web服务{#configure-restful-web-services}
 
-REST风格的Web服务可在Swagger定义文件中使用JSON格式的[Swagger规范](https://swagger.io/specification/)或YAML格式进行描述。 要在AEM云服务中配置RESTful Web服务，请确保文件系统上有Swagger文件或文件托管的URL。
+RESTful Web服务可在Swagger定义文件中使用JSON格式的[Swagger规范](https://swagger.io/specification/)或YAML格式进行描述。 要在AEM云服务中配置RESTful Web服务，请确保您的文件系统上有Swagger文件或文件托管的URL。
 
 执行以下操作以配置RESTful服务：
 
-1. 转至&#x200B;**[!UICONTROL 工具>Cloud Services>数据源]**。 点按以选择要在其中创建云配置的文件夹。
+1. 转到&#x200B;**[!UICONTROL 工具>Cloud Services>数据源]**。 点按以选择要在其中创建云配置的文件夹。
 
-   有关为云服务配置创建和配置文件夹的信息，请参阅[为云服务配置配置配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder)。
+   有关为云服务配置创建和配置文件夹的信息，请参阅[为云服务配置配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder)。
 
-1. 点按&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据源配置对话框]**。 指定配置的名称和标题（可选），从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL RESTful服务]**，选择浏览并选择配置的缩略图，然后点按&#x200B;**[!UICONTROL 下一页]**。
+1. 点按&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据源配置对话框]**。 指定配置的名称和标题（可选），从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL RESTful服务]**，选择浏览并选择配置的缩略图，然后点按&#x200B;**[!UICONTROL 下一步]**。
 1. 为RESTful服务指定以下详细信息：
 
-   * 从Swagger源下拉列表中选择URL或“文件”，然后相应地指定Swagger URL到Swagger定义文件或从本地文件系统上传Swagger文件。
-   * 选择身份验证类型（无、OAuth2.0、基本身份验证、API密钥或自定义身份验证）以访问RESTful服务，并相应地提供身份验证详细信息。
+   * 从“Swagger源”下拉菜单中选择“URL”或“文件”，然后相应地指定Swagger URL到Swagger定义文件，或从本地文件系统上传Swagger文件。
+   * 选择身份验证类型（无、OAuth2.0、基本身份验证、API密钥或自定义身份验证）以访问RESTful服务，并相应地提供身份验证的详细信息。
 
 1. 点按&#x200B;**[!UICONTROL 创建]**&#x200B;以创建RESTful服务的云配置。
 
@@ -129,19 +130,19 @@ REST风格的Web服务可在Swagger定义文件中使用JSON格式的[Swagger规
 
 使用[Web服务描述语言(WSDL)规范](https://www.w3.org/TR/wsdl)描述基于SOAP的Web服务。 要在AEM云服务中配置基于SOAP的Web服务，请确保您具有Web服务的WSDL URL，并执行以下操作：
 
-1. 转至&#x200B;**[!UICONTROL 工具>Cloud Services>数据源]**。 点按以选择要在其中创建云配置的文件夹。
+1. 转到&#x200B;**[!UICONTROL 工具>Cloud Services>数据源]**。 点按以选择要在其中创建云配置的文件夹。
 
-   有关为云服务配置创建和配置文件夹的信息，请参阅[为云服务配置配置配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder)。
+   有关为云服务配置创建和配置文件夹的信息，请参阅[为云服务配置配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder)。
 
-1. 点按&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据源配置对话框]**。 指定配置的名称和标题（可选），从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL SOAP Web服务]**，选择浏览并选择配置的缩略图，然后点按&#x200B;**[!UICONTROL 下一页]**。
+1. 点按&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据源配置对话框]**。 指定配置的名称和标题（可选），从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL SOAP Web服务]**，选择浏览并选择配置的缩略图，然后点按&#x200B;**[!UICONTROL 下一个]**。
 1. 为SOAP Web服务指定以下内容：
 
    * Web服务的WSDL URL。
-   * 服务端点. 在此字段中指定一个值以覆盖WSDL中提及的服务端点。
+   * 服务端点. 在此字段中指定一个值，以覆盖在WSDL中指定的服务端点。
    * 选择身份验证类型（无、OAuth2.0、基本身份验证、自定义身份验证或X509令牌）以访问SOAP服务，并相应地提供身份验证的详细信息。
 
-      如果选择X509令牌作为身份验证类型，请配置X509证书。 有关详细信息，请参阅[设置证书](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)。
-在**[!UICONTROL 密钥别名]**&#x200B;字段中指定X509证书的KeyStore别名。 在&#x200B;**[!UICONTROL Time To Live]**&#x200B;字段中指定验证请求保持有效的时间（以秒为单位）。 （可选）选择对邮件正文或时间戳标题进行签名，或者同时对两者进行签名。
+      如果选择“X509令牌”作为身份验证类型，请配置X509证书。 有关详细信息，请参阅[设置证书](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)。
+在**[!UICONTROL 键别名]**&#x200B;字段中指定X509证书的KeyStore别名。 在&#x200B;**[!UICONTROL “Time To Live]**”字段中指定验证请求保持有效的时间（以秒为单位）。 （可选）选择对邮件正文或时间戳标题进行签名，或者同时对两者进行签名。
 
 1. 点按&#x200B;**[!UICONTROL 创建]**&#x200B;以创建SOAP Web服务的云配置。
 
@@ -153,11 +154,11 @@ OData服务由其服务根URL标识。 要在AEM云服务中配置OData服务，
 >
 >有关配置Microsoft Dynamics 365的分步指南（联机或本地），请参阅[Microsoft Dynamics OData配置](/help/forms/using/ms-dynamics-odata-configuration.md)。
 
-1. 转至&#x200B;**[!UICONTROL 工具>Cloud Services>数据源]**。 点按以选择要在其中创建云配置的文件夹。
+1. 转到&#x200B;**[!UICONTROL 工具>Cloud Services>数据源]**。 点按以选择要在其中创建云配置的文件夹。
 
-   有关为云服务配置创建和配置文件夹的信息，请参阅[为云服务配置配置配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder)。
+   有关为云服务配置创建和配置文件夹的信息，请参阅[为云服务配置配置文件夹](/help/forms/using/configure-data-sources.md#cloud-folder)。
 
-1. 点按&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据源配置对话框]**。 指定配置的名称和标题（可选），从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL OData服务]**，选择浏览并选择配置的缩略图，然后点按&#x200B;**[!UICONTROL 下一页]**。
+1. 点按&#x200B;**[!UICONTROL 创建]**&#x200B;以打开&#x200B;**[!UICONTROL 创建数据源配置对话框]**。 指定配置的名称和标题（可选），从&#x200B;**[!UICONTROL 服务类型]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL OData服务]**，选择浏览并选择配置的缩略图，然后点按&#x200B;**[!UICONTROL 下一步]**。
 1. 为OData服务指定以下详细信息：
 
    * 要配置的OData服务的服务根URL。
@@ -165,7 +166,7 @@ OData服务由其服务根URL标识。 要在AEM云服务中配置OData服务，
 
    >[!NOTE]
    >
-   >必须选择OAuth 2.0身份验证类型，以使用OData端点作为服务根连接Microsoft Dynamics服务。
+   >必须选择OAuth 2.0身份验证类型，才能使用OData端点作为服务根连接Microsoft Dynamics服务。
 
 1. 点按&#x200B;**创建**&#x200B;以创建OData服务的云配置。
 

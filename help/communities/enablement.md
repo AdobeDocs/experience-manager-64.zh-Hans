@@ -1,6 +1,6 @@
 ---
-title: 配置Enablement Features
-seo-title: 配置Enablement Features
+title: 配置启用功能
+seo-title: 配置启用功能
 description: 在社区中配置启用功能
 seo-description: 在社区中配置启用功能
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
+role: 管理员
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '449'
 ht-degree: 5%
 
 ---
@@ -24,31 +25,31 @@ ht-degree: 5%
 
 启用功能提供了创建[启用社区](overview.md#enablement-community)的能力。
 
-* 此功能需要额外的许可才能用于生产环境。
+* 此功能需要在生产环境中使用额外的许可。
 
 使用支持功能需要：
 
 安装：
 
-* **SCORMSharable**
-内容对象参考模型(SCORM)是电子教学标准和规范的集合。SCORM还定义如何将内容打包到可转让的ZIP文件中。
+* **SCORMSharable Content Object**
+Reference Model(SCORM)是电子教学的一系列标准和规范。SCORM还定义如何将内容打包到可传输的ZIP文件中。
 
 * **MySQLMySQL**
-是一个关系报告库，主要用于SCORM跟踪和Enablement的数据，以及用于跟踪视频进度的表。SCORM for enablement功能包需要MySQL JDBC驱动程序。
+是一个关系数据库，主要用于SCORM跟踪和报告数据（用于Enablement）以及用于跟踪视频进度的表。SCORM for enablement功能包需要MySQL JDBC驱动程序。
 
 * **FFmpegFFmpeg**
-是用于转换音频和视频并实现流化的解决方案，安装后用于对视频资产进行正确 [的转码](../../help/sites-authoring/default-components-foundation.md#video)。对于Enablement Communities，它在创作环境中用于获取已上传资源的元数据，并在列出资源时生成要显示的缩略图。
+是用于转换和流式传输音频和视频的解决方案，安装后用于对视频资产进行正确 [的转码](../../help/sites-authoring/default-components-foundation.md#video)。对于Enablement Communities，在创作环境中使用它获取已上传资源的元数据，并在列出资源时生成要显示的缩略图。
 
 设置：
 
 * **社区**
-管理者对于启用社区，仅 
-`Community Enablement Managers` 可以为用户组分配角色，其 `*Community Site* Enablement Manager`权限可能包括发布环境中的内容创建、分配和成员管理。
+管理者对于教育社区，仅 
+`Community Enablement Managers` 可以为用户组分配角色，其权 `*Community Site* Enablement Manager`限可能包括内容创建、分配和发布环境中的成员管理。
 
-可选配置：
+以下项的可选配置：
 
 * **Adobe**
-分析与Adobe Analytics的集成添加了全面的报告功能，并支持将视频心跳添加到Analytics中。
+Analytics与Adobe Analytics的集成添加了全面的报告功能，并支持将视频心率添加到Analytics中。
 
 * **Dispatcher**
 
@@ -58,10 +59,10 @@ ht-degree: 5%
 
 每个步骤都链接到提供必要详细信息的文档。
 
-**在所有作者／发布实例上：**
+**在所有作者/发布实例上：**
 
-1. **[为MySQLUse Web Console安](deploy-communities.md#jdbc-driver-for-mysql)**
-装JDBC驱动程序（捆绑包）:安装 *http://localhost:4502/system/console/*
+1. **[为MySQLUse Web Console(](deploy-communities.md#jdbc-driver-for-mysql)**
+包)安装JDBC驱动程序：安装 *http://localhost:4502/system/console/*
  Bundles安 ** 装SCORM包之前
 
 1. **[安装SCORM包](deploy-communities.md#scorm-package)**
@@ -81,7 +82,7 @@ ht-degree: 5%
 
 1. **[安装FFmpeg](ffmpeg.md)**
 
-**在所有作者／发布实例上：**
+**在所有作者/发布实例上：**
 
 1. **[配置JDBC连接](mysql.md#configure-jdbc-connections)**
 池使用Web控制台(configMgr): 
@@ -95,20 +96,20 @@ ht-degree: 5%
 过滤器使用Web控制台(configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-**在创作实例上：**
+**在创作实例中：**
 
-1. （*可选*）**[配置分析服务](analytics.md)**
+1. （*可选*）**[配置Analytics服务](analytics.md)**
 使用工具、部署、Cloud Services控制台： 
 *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[配置](ffmpeg.md#configure-ffmpeg-transcoding-service)**
-FFmpeg使用工作流／模型控制台
+FFmpeg使用工作流/模型控制台
 
 1. **[启用隧道](deploy-communities.md#tunnel-service-on-author)**
 服务使用Web控制台(configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[创建社区](users.md#creating-community-members)** 管理员对于创作环境，请使用经典UI安全控制台： *http://localhost:4502/*
+1. **[创建社区管](users.md#creating-community-members)** 理员对于创作环境，请使用经典UI安全控制台： *http://localhost:4502/*
 useradmincreate用户（路径= /home/users/community）
 
    * 将成员添加到以下组：

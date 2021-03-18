@@ -1,33 +1,34 @@
 ---
-title: Dynamic Media6.4
-seo-title: Dynamic Media6.4
-description: 了解如何进行必要的更改，以便迁移到AEM 6.4 for Dynamic Media的新存储库结构。
-seo-description: 了解如何进行必要的更改，以便迁移到AEM 6.4 for Dynamic Media的新存储库结构。
+title: Dynamic Media 6.4中的存储库重构
+seo-title: Dynamic Media 6.4中的存储库重构
+description: 了解如何进行必要的更改以迁移到适用于Dynamic Media的AEM 6.4中的新存储库结构。
+seo-description: 了解如何进行必要的更改以迁移到适用于Dynamic Media的AEM 6.4中的新存储库结构。
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
+feature: 升级
 translation-type: tm+mt
-source-git-commit: 5dce4bcf4b10cce65798fd142a3eeb1956caf726
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '441'
 ht-degree: 4%
 
 ---
 
 
-# Dynamic Media6.4{#dynamic-media-repository-restructuring-in-aem}存储库重组
+# Dynamic Media在AEM 6.4{#dynamic-media-repository-restructuring-in-aem}中重组存储库
 
-如AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的父[存储库重组页所述，升级到AEM 6.4的客户应使用此页评估与影响Dynamic Media解决方案的存储库更改相关的工作。 某些更改需要在AEM 6.4升级过程中进行工作，而其他更改则可推迟到6.5升级。
+如AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的父级[存储库重组页所述，升级到AEM 6.4的客户应使用此页评估与影响Dynamic Media解决方案的存储库更改相关的工作。 某些更改需要在AEM 6.4升级过程中进行工作，而其他更改可推迟到6.5升级。
 
 **6.5升级之前**
 
 * [自定义自适应视频编码配置](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#custom-adaptive-video-encoding-configurations)
 * [Dynamic Media(DMS7)云配置](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
 * [Dynamic Media(DM Hybrid)Cloud Service配置](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
-* [Dynamic Media- YouTubeCloud Service配置](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
-* [杂项](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
+* [Dynamic Media - YouTubeCloud Service配置](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
+* [Misc](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
 ## 6.5之前的升级{#prior-to-upgrade}
 
@@ -45,7 +46,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>重组指导</strong></td> 
-   <td><p>您可以运行以下迁移脚本迁移到新位置：</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>或者，您也可以在AEM UI中编辑配置，更改将保存到新位置。</p> </td> 
+   <td><p>可以运行以下迁移脚本迁移到新位置：</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>或者，您也可以在AEM UI中编辑配置，更改将保存到新位置。</p> </td> 
   </tr>
   <tr>
    <td><strong>注释</strong></td> 
@@ -71,7 +72,7 @@ ht-degree: 4%
    <td><p>客户可以在以下位置运行迁移脚本：<br /> </p> 
     <ul> 
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
-     <li>重新启动Dynamic MediaOSGi捆绑。</li> 
+     <li>重新启动Dynamic Media OSGi捆绑。</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -95,7 +96,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>重组指导</strong></td> 
-   <td><p>您可以运行以下迁移脚本以与最新型号保持一致：</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td> 
+   <td><p>您可以运行以下迁移脚本以与最新模型对齐：</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td> 
   </tr>
   <tr>
    <td><strong>注释</strong></td> 
@@ -104,7 +105,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### Dynamic Media- YouTubeCloud Service配置{#youtubecloudserviceconfiguration}
+### Dynamic Media - YouTubeCloud Service配置{#youtubecloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -118,7 +119,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>重组指导</strong></td> 
-   <td><p>1.从YouTube<br /> 2取消发布所有视频。 使用新的TouchUI（从<code>/conf</code>）创建YouTube配置，包括从旧位置<br /> 3复制所有渠道。 将所有视频发布回YouTube。</p> <p>此工作流会生成新的YouTube URL。 如果在创建新的TouchUI YouTube配置之前未取消发布，则“属性”下将列出多个YouTube URL，因为如果有机会，重新创建的渠道将再次发布。 这意味着您的URL将列在“属性”下。</p> </td> 
+   <td><p>1.从YouTube<br />取消发布所有视频2。 使用新的TouchUI（从<code>/conf</code>）创建YouTube配置，包括从旧位置<br /> 3复制所有渠道。 将所有视频发布回YouTube。</p> <p>此工作流会生成新的YouTube URL。 如果在创建新的TouchUI YouTube配置之前未取消发布，则“属性”下将列出多个YouTube URL，因为如果有机会，重新创建的渠道将再次发布。 这意味着您的URL将列在“属性”下。</p> </td> 
   </tr>
   <tr>
    <td><strong>注释</strong></td> 

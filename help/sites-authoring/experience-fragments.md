@@ -1,7 +1,7 @@
 ---
 title: 体验片段
 seo-title: 体验片段
-description: 'null'
+description: 体验片段
 seo-description: 'null'
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
-source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1312'
 ht-degree: 83%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 83%
 
 >[!CAUTION]
 >
->从WKND站点拍下以下屏幕截图，将Adobe Experience Manager用作Cloud Service。
+>以下屏幕截图是从WKND站点拍摄的，将Adobe Experience Manager用作Cloud Service。
 
 ![体验片段的文件夹](assets/xf-folders.png)
 
@@ -108,7 +108,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->也可以为实例](#configure-allowed-templates-instance)配置[允许的模板，但建议使用&#x200B;**不**&#x200B;此方法，因为升级时可能会覆盖这些值。
+>也可以为实例](#configure-allowed-templates-instance)配置[允许的模板，但建议&#x200B;**不**&#x200B;使用此方法，因为升级时可能会覆盖这些值。
 
 ### 为文件夹配置允许的模板 {#configure-allowed-templates-folder}
 
@@ -133,7 +133,7 @@ ht-degree: 83%
 
 >[!CAUTION]
 >
->不建议使用此方法更改&#x200B;**[!UICONTROL 允许的模板]**，因为指定的模板可能会在升级时被覆盖。
+>不建议使用此方法更改&#x200B;**[!UICONTROL 允许的模板]**，因为在升级时可能会覆盖指定的模板。
 >
 >此对话框仅供参考之用。
 
@@ -185,7 +185,7 @@ ht-degree: 83%
 
 以下示例过程说明了如何为产品创建 Teaser：
 
-1. 从[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)拖放&#x200B;**[!UICONTROL 类别Teaser]**。
+1. 从[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)中拖放&#x200B;**[!UICONTROL 类别Teaser]**。
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
@@ -291,13 +291,13 @@ ht-degree: 83%
 
 使用URL中的`.plain.`选择器，可以访问纯HTML再现。
 
-可以从浏览器访问，但其主要用途是允许其他应用程序（例如，第三方Web应用程序、自定义移动实施）仅使用URL直接访问体验片段的内容。
+可以从浏览器访问，但其主要用途是允许其他应用程序（例如，第三方Web应用程序、自定义移动实施）仅使用URL直接访问Experience Fragment的内容。
 
 纯HTML再现将协议、主机和上下文路径添加到以下路径：
 
 * 类型：`src`、`href`或`action`
 
-* 或结束于：`-src`或`-href`
+* 或结尾：`-src`或`-href`
 
 例如：
 
@@ -305,7 +305,7 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->链接始终引用发布实例。 这些链接旨在由第三方使用，因此始终从发布实例调用链接，而不是从作者调用。
+>链接始终引用发布实例。 它们旨在由第三方使用，因此始终从发布实例调用链接，而不是从作者调用。
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
@@ -313,5 +313,5 @@ ht-degree: 83%
 
 默认情况下，将以 HTML 格式提供体验片段。这可以由 AEM 和相似的第三方渠道使用。
 
-对于出口至Adobe Target，使用HTML。 请参阅 [Target 与体验片段集成](/help/sites-administering/experience-fragments-target.md)，以获取完整信息。
+要导出到Adobe Target，使用HTML。 请参阅 [Target 与体验片段集成](/help/sites-administering/experience-fragments-target.md)，以获取完整信息。
 

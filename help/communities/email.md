@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
+role: 管理员
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '830'
 ht-degree: 1%
 
 ---
@@ -30,13 +31,13 @@ AEM Communities使用电子邮件
 
 >[!CAUTION]
 >
->通知和订阅的电子邮件只能在[主发布者](deploy-communities.md#primary-publisher)上配置。
+>通知和订阅的电子邮件必须仅在[主发布者](deploy-communities.md#primary-publisher)上配置。
 
 ## 默认邮件服务配置{#default-mail-service-configuration}
 
 通知和订阅均需要默认邮件服务。
 
-* 在主发布者上
+* 在主发行商上
 * 以管理员权限登录
 * 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)
 
@@ -45,9 +46,9 @@ AEM Communities使用电子邮件
 * 找到`Day CQ Mail Service`
 * 选择编辑图标
 
-这基于[配置电子邮件通知](../../help/sites-administering/notification.md)的文档，但有区别的是，字段`"From" address`是&#x200B;*不是必需的*，应留空。
+这基于[配置电子邮件通知](../../help/sites-administering/notification.md)的文档，但有一个不同之处，即字段`"From" address`是&#x200B;*不是必需的，应留空。*
 
-例如（仅为说明目的而填写值）:
+例如（仅为说明目的而用值填充）：
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -60,14 +61,14 @@ AEM Communities使用电子邮件
 * **[!UICONTROL SMTP密码]**: *（必需）* SMTP用户的口令。
 
 * **[!UICONTROL “发件人”地址]**:留空
-* **[!UICONTROL SMTP使用SSL]**:如果选中，将发送安全电子邮件。确保端口设置为465或SMTP服务器需要。
+* **[!UICONTROL SMTP使用SSL]**:如果选中，将发送安全电子邮件。确保端口设置为465或SMTP服务器所需的端口。
 * **[!UICONTROL 调试电子邮件]**:如果选中，则启用SMTP服务器交互的日志记录。
 
 ## AEM Communities电子邮件配置{#aem-communities-email-configuration}
 
-配置[默认邮件服务](#default-mail-service-configuration)后，发行版中包含的`AEM Communities Email Reply Configuration` OSGi配置的两个现有实例将开始工作。
+配置[默认邮件服务](#default-mail-service-configuration)后，发行版中包含的`AEM Communities Email Reply Configuration` OSGi配置的两个现有实例将变为可用。
 
-允许通过电子邮件回复时，只需进一步配置订阅的实例。
+在允许通过电子邮件回复时，只需进一步配置订阅实例。
 
 1. ` [email](#configuration-for-notifications)` 实例
 
@@ -79,7 +80,7 @@ AEM Communities使用电子邮件
 
 要访问Communities电子邮件配置实例：
 
-* 在主发布者上
+* 在主发行商上
 * 以管理员权限登录
 * 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)
 
@@ -89,7 +90,7 @@ AEM Communities使用电子邮件
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
-### 通知配置{#configuration-for-notifications}
+### 通知{#configuration-for-notifications}的配置
 
 `AEM Communities Email Reply Configuration` OSGi config和“名称”电子邮件的实例用于通知功能。 此功能不包括电子邮件回复。
 
@@ -99,13 +100,13 @@ AEM Communities使用电子邮件
 * 选择编辑图标
 * 验证&#x200B;**名称**&#x200B;是否为`email`
 
-* 验证&#x200B;**通过回复电子邮件创建帖子**&#x200B;是否为`unchecked`
+* 验证&#x200B;**从回复电子邮件**&#x200B;创建帖子是否为`unchecked`
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
 ### 订阅{#configuration-for-subscriptions}的配置
 
-对于社区订阅，可以启用或禁用成员通过回复电子邮件来发布内容的功能。
+对于“社区”订阅，可以启用或禁用成员通过回复电子邮件来发布内容的功能。
 
 * 找到`AEM Communities Email Reply Configuration`
 * 选择编辑图标
@@ -113,23 +114,23 @@ AEM Communities使用电子邮件
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-* **[!UICONTROL 名称]** : *（必需）* `subscriptions-email`。请勿编辑。
+* **[!UICONTROL 名称]** : *（必需）* `subscriptions-email`。不要编辑。
 
 * **[!UICONTROL 通过回复电子邮件创建帖子]**:如果选中，订阅电子邮件的收件人可以通过发送回复来发布内容。选中默认值。
-* **[!UICONTROL 将跟踪的ID添加到标题]**:默认值为 `Reply-To`。
+* **[!UICONTROL 将跟踪ID添加到标题]**:默认为 `Reply-To`。
 
-* **[!UICONTROL 主题的最大长度]**:如果跟踪器ID添加到主题行，则这是主题的最大长度（不包括跟踪的ID），之后将裁切它。请注意，这应尽可能小，以避免跟踪的ID信息丢失。 默认值为200。
-* **[!UICONTROL 电子邮件“发件人”地址]**: *（必需）* 通知电子邮件的发送地址。可能与为[默认邮件服务](#configuredefaultmailservice)指定的&#x200B;**SMTP用户**&#x200B;相同。 默认值为`no-reply@example.com`。
+* **[!UICONTROL 主题的最大长度]**:如果将跟踪器ID添加到主题行，则这是主题的最大长度（不包括跟踪器ID），之后将裁切它。请注意，这应尽可能小，以避免丢失跟踪的ID信息。 默认为200。
+* **[!UICONTROL 电子邮件“发件人”地址]**: *（必需）* 发送通知电子邮件的地址。可能为[默认邮件服务](#configuredefaultmailservice)指定的相同&#x200B;**SMTP用户**。 默认值为`no-reply@example.com`。
 
-* **[!UICONTROL 答复分隔符]**:如果将跟踪器ID添加到回复标题，则将使用此分隔符。默认值为`+`（加号）。
+* **[!UICONTROL Reply-to-Delimiter]**:如果将跟踪器ID添加到“回复”标题，则将使用此分隔符。默认值为`+`（加号）。
 
-* **[!UICONTROL 主题中的跟踪器ID前缀]**:如果跟踪器ID添加到主题行，则将使用此前缀。默认值为`post#`。
+* **[!UICONTROL 主题中的跟踪器ID前缀]**:如果将跟踪器ID添加到主题行，将使用此前缀。默认值为`post#`。
 
-* **[!UICONTROL 消息正文中的跟踪器ID前缀]**:如果跟踪器ID添加到消息正文，则将使用此前缀。默认值为`Please do not remove this:`。
+* **[!UICONTROL 消息正文中的跟踪器ID前缀]**:如果将跟踪器ID添加到消息正文，则将使用此前缀。默认值为`Please do not remove this:`。
 
 * **[!UICONTROL 以HTML形式发送电子邮件]**:如果选中，则电子邮件的“内容类型”将设置为 `"text/html;charset=utf-8"`。选中默认值。
 
-* **[!UICONTROL 默认用户名]**:此名称将不用于姓名用户。默认值为`no-reply@example.com`。
+* **[!UICONTROL 默认用户名]**:此名称将不用于任何姓名用户。默认值为`no-reply@example.com`。
 
 * **[!UICONTROL 模板根路径]**:电子邮件是使用存储在此根路径中的模板构建的。默认值为`/etc/community/templates/subscriptions-email`。
 
@@ -139,7 +140,7 @@ AEM Communities使用电子邮件
 
 ### 添加新轮询导入程序{#add-new-polling-importer}
 
-* 在主发布者上
+* 在主发行商上
 * 以管理员权限登录
 * 浏览至轮询导入程序控制台
 例如，[http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
@@ -153,9 +154,9 @@ AEM Communities使用电子邮件
 
 * **[!UICONTROL 导入到路径]**(&amp;A);: *（必需）* 通过 `/content/usergenerated/mailFolder/postEmails`
 浏览到 
-`postEmails`文件夹，然后选择 **确定**
+`postEmails`文件夹，然后选 **择确定**
 
-* **[!UICONTROL 更新时间间隔（秒）]**: *（可选）* 为默认邮件服务配置的邮件服务器可能要求更新时间间隔值。例如，Gmail可能需要`300`的间隔。
+* **[!UICONTROL 更新间隔（秒）]**: *（可选）为* 默认邮件服务配置的邮件服务器可能要求更新时间间隔值。例如，Gmail可能需要`300`的间隔。
 
 * **[!UICONTROL 登录]**: *（可选）*
 
@@ -169,18 +170,18 @@ AEM Communities使用电子邮件
 
 使用[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* 在主发布者上
+* 在主发行商上
 * 以管理员权限登录
 * 浏览至[https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importers/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling)
 * 选择新创建的配置
 * 修改以下属性
 
    * **feedType**:替换 `pop3s` 为  **`emailreply`**
-   * **源**:将源协议替 `pop3s://` 换  **`emailreply://`**
+   * **来源**:将源协议替 `pop3s://` 换  **`emailreply://`**
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
-红色三角形表示修改的属性。 请确保保存更改：
+红色三角形表示修改的属性。 请务必保存更改：
 
 * 选择&#x200B;**[!UICONTROL 保存全部]**
 

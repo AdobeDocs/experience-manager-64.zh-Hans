@@ -1,18 +1,19 @@
 ---
 title: 标记控制台
 seo-title: 标记控制台
-description: 社区徽章控制台允许您添加自定义徽章，当会员获得（奖励）或在社区中承担特定角色（分配）时，这些徽章可显示给会员
-seo-description: 社区徽章控制台允许您添加自定义徽章，当会员获得（奖励）或在社区中承担特定角色（分配）时，这些徽章可显示给会员
+description: 社区徽章控制台允许您添加自定义徽章，这些徽章可在会员获得（获得）或在社区中承担特定角色（分配）时为会员显示
+seo-description: 社区徽章控制台允许您添加自定义徽章，这些徽章可在会员获得（获得）或在社区中承担特定角色（分配）时为会员显示
 uuid: 9eeba240-f0d4-4937-baba-8bac0e0b2a36
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
+role: 管理员
 translation-type: tm+mt
-source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 4%
 
 ---
@@ -22,11 +23,11 @@ ht-degree: 4%
 
 ## 关于标记{#about-badges}
 
-社区徽章控制台提供添加自定义徽章的功能，这些徽章可在会员获得（奖励）或在社区中承担特定角色（分配）时为其显示。
+社区徽章控制台提供添加自定义徽章的功能，这些徽章可在会员获得（授予）或在社区中承担特定角色（分配）时为会员显示。
 
 ### 徽章可见性{#badge-visibility}
 
-目前，社区会员获得或分配的徽章将与其姓名和头像一起出现在以下位置：
+当前，社区会员赚取或分配的徽章将与其姓名和头像一起出现在以下位置：
 
 * 个人资料
 * [论坛](forum.md)
@@ -38,7 +39,7 @@ ht-degree: 4%
 
 * 从全局导航：**[!UICONTROL 工具>社区>标记]**
 
-此控制台显示当前可用的标记，以及可从中添加新标记。
+此控制台显示当前可用的标记以及可从中添加新标记。
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 
@@ -60,7 +61,7 @@ ht-degree: 4%
 
 * **[!UICONTROL 显示名称]**
 
-   （*可选*）要在UI中显示徽章的名称。 默认值是为`Name`输入的未更改文本。
+   （*可选*）要在UI中显示的徽章名称。 默认值是为`Name`输入的未更改文本。
 
 * **[!UICONTROL 描述]**
 
@@ -70,4 +71,4 @@ ht-degree: 4%
 
 有关设置得分和徽章规则的详细信息，请参阅[得分和徽章](implementing-scoring.md)。
 
-有关管理成员的标记，请参阅[成员控制台](members.md)。
+有关管理成员的徽章，请参阅[成员控制台](members.md)。

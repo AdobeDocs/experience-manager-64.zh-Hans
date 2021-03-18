@@ -2,19 +2,22 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Adobe Experience Manager6.4发行说明
+user-guide-title: Adobe Experience Manager 6.4发行说明
 breadcrumb-title: 发行说明
 user-guide-description: 在发行说明中了解AEM 6.4的最新新增功能。
+feature-set: Experience Manager
+feature: 发行信息
+role: 领导者，架构师，开发人员，数据架构师，数据工程师，管理员，业务从业者
 translation-type: tm+mt
-source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 36%
+source-wordcount: '103'
+ht-degree: 33%
 
 ---
 
 
-# Adobe Experience Manager6.4发行说明{#release-notes}
+# Adobe Experience Manager 6.4发行说明{#release-notes}
 
 + [AEM 6.4概述](home.md)
 + [一般发行说明](release-notes.md)
@@ -23,7 +26,7 @@ ht-degree: 36%
 + [AEM Sites 发行说明](sites.md)
 + [AEM Assets 发行说明](assets.md)
 + [AEM Forms 发行说明](forms.md)
-+ [AEM FormsJEE修补程序安装程序](jee-patch-installer-64.md)
++ [AEM Forms JEE修补程序安装程序](jee-patch-installer-64.md)
 + [AEM Communities 发行说明](communities-release-notes.md)
 + [AEM 3D发行说明](aem3d-release-notes.md)
 + [已弃用和已删除的功能](deprecated-removed-features.md)

@@ -1,18 +1,19 @@
 ---
 title: 资源映射
 seo-title: 资源映射
-description: 了解如何通过使用资源映射为AEM定义重定向、虚URL和虚拟主机。
-seo-description: 了解如何通过使用资源映射为AEM定义重定向、虚URL和虚拟主机。
+description: 了解如何使用资源映射定义AEM的重定向、虚URL和虚拟主机。
+seo-description: 了解如何使用资源映射定义AEM的重定向、虚URL和虚拟主机。
 uuid: 33de7e92-8144-431b-badd-e6a667cd78e1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
+feature: 配置
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
@@ -20,14 +21,14 @@ ht-degree: 1%
 
 # 资源映射{#resource-mapping}
 
-资源映射用于为AEM定义重定向、虚URL和虚拟主机。
+资源映射用于定义AEM的重定向、虚URL和虚拟主机。
 
-例如，您可以使用这些映射：
+例如，您可以使用这些映射来：
 
-* 为所有请求添加`/content`前缀，使内部结构在访客到您网站时隐藏。
+* 在所有请求前面添加`/content`前缀，以使内部结构在访客到您网站时处于隐藏状态。
 * 定义重定向，以便将发往网站`/content/en/gateway`页面的所有请求重定向到`https://gbiv.com/`。
 
-一个可能的HTTP映射[用/content](#configuring-an-internal-redirect-to-content)为localhost:4503的所有请求添加前缀。 这样的映射可用于在允许的情况下将内部结构从访客隐藏到网站：
+一个可能的HTTP映射[用/content](#configuring-an-internal-redirect-to-content)将所有请求前缀为localhost:4503。 这样的映射可用于隐藏内部结构，使其从访客隐藏到网站，因为它允许：
 
 `localhost:4503/content/geometrixx/en/products.html`
 
@@ -47,29 +48,29 @@ ht-degree: 1%
 
 ## 查看映射定义{#viewing-mapping-definitions}
 
-这些映射构成两个列表,JCR资源解析程序将对它们进行评估（从上到下）以找到匹配项。
+这些映射构成两个列表,JCR资源解析程序将计算（自上而下）以查找匹配项。
 
-这些列表可以在Felix控制台的&#x200B;**JCR ResourceResolver**&#x200B;选项下查看（连同配置信息）;例如，`https://<host>:<port>/system/console/jcrresolver`:
+这些列表可以在Felix控制台的&#x200B;**JCR ResourceResolver**&#x200B;选项下查看（连同配置信息）；例如，`https://<host>:<port>/system/console/jcrresolver`:
 
 * 配置
 
-   显示当前配置（如[Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md)所定义）。
+   显示当前配置（如[Apache Sling资源解析器](/help/sites-deploying/osgi-configuration-settings.md)所定义）。
 
 * 配置测试
 
    这允许您输入URL或资源路径。 单击&#x200B;**解析**&#x200B;或&#x200B;**映射**&#x200B;以确认系统将如何转换条目。
 
 * **解析程**
-序映射条目ResourceResolver.resolve方法用于将URL映射到资源的条目列表。
+序映射条目ResourceResolver.resolve方法用于将URL映射到资源的条目的列表。
 
 * **映射映**
 射条目ResourceResolver.map方法用于将资源路径映射到URL的条目的列表。
 
-这两个列表显示各种条目，包括应用程序定义为默认值的条目。 这些URL通常旨在简化用户的URL。
+两个列表显示各种条目，包括应用程序定义为默认值的条目。 这些URL通常旨在简化用户的URL。
 
-列表将与请求匹配的常规表达式&#x200B;**模式**&#x200B;与定义要实施的重定向的&#x200B;**替换**&#x200B;配对。
+列表将与请求匹配的常规表达式&#x200B;**模式**&#x200B;与定义要施加的重定向的&#x200B;**替换**&#x200B;配对。
 
-例如，:
+例如：
 
 **图案** `^[^/]+/[^/]+/welcome$`
 
@@ -77,7 +78,7 @@ ht-degree: 1%
 
 **替换** `/libs/cq/core/content/welcome.html`.
 
-要重定向请求，请执行以下操作：
+要重定向请求：
 
 `http://localhost:4503/welcome`
 
@@ -85,7 +86,7 @@ ht-degree: 1%
 
 `http://localhost:4503/libs/cq/core/content/welcome.html`
 
-在存储库中创建新的映射定义。
+将在存储库内创建新的映射定义。
 
 >[!NOTE]
 >
@@ -97,11 +98,11 @@ ht-degree: 1%
 
 `/etc/map/http`
 
-这是定义HTTP协议的映射时使用的结构。 可以在`/etc/map`下为要映射的任何其它协议创建其他文件夹(`sling:Folder`)。
+这是定义HTTP协议的映射时使用的结构。 可在`/etc/map`下为要映射的任何其他协议创建其他文件夹(`sling:Folder`)。
 
-### 配置内部重定向到/content {#configuring-an-internal-redirect-to-content}
+### 配置到/content {#configuring-an-internal-redirect-to-content}的内部重定向
 
-要创建将任何请求作为前缀的映射，请使用`/content`将任何请求添加到http://localhost:4503/:
+要创建将任何请求作为前缀的映射，请使用`/content`:
 
 1. 使用CRXDE导航到`/etc/map/http`。
 
@@ -136,9 +137,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关sling属性的可用信息以及如何配置这些属性的详细信息，请参阅Sling文档中的[资源](https://sling.apache.org/site/mappings-for-resource-resolution.html)。
+>请参阅Sling文档中的[资源](https://sling.apache.org/site/mappings-for-resource-resolution.html)，进一步了解可用的sling属性以及如何配置这些属性。
 
 >[!NOTE]
 >
->您可以使用`/etc/map.publish`保存发布环境的配置。 然后，必须复制这些资源，并为发布环境的[Apache Sling资源解析器](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)的&#x200B;**映射位置**&#x200B;配置新位置(`/etc/map.publish`)。
+>可使用`/etc/map.publish`保存发布环境的配置。 然后，必须复制这些资源，并为发布环境的[Apache Sling资源解析程序](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)的&#x200B;**映射位置**&#x200B;配置的新位置(`/etc/map.publish`)。
 

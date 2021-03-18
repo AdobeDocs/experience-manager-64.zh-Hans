@@ -8,11 +8,12 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
+feature: 自适应表单
 translation-type: tm+mt
-source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 7%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +31,7 @@ AEM Forms允许您根据用户的角色或功能限制规则编辑器对用户�
 1. 以管理员身份登录AEM Forms。
 1. 在创作实例中，单击![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager >工具![hammer](assets/hammer.png) >操作> Web控制台。 Web控制台将在新窗口中打开。
 
-   ![1](assets/1.png)
+   ![3](assets/1.png)
 
 1. 在“Web控制台窗口”中，找到并单击&#x200B;**[!UICONTROL 自适应表单和交互式通信Web渠道配置]**。 **[!UICONTROL 出现“自适应表单和交互式通信Web渠道]** 配置”对话框。请勿更改任何值，然后单击&#x200B;**[!UICONTROL 保存]**。
 

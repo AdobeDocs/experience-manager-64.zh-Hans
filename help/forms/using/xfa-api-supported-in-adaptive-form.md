@@ -7,10 +7,11 @@ uuid: 2f976de3-2cdf-4bbb-acd1-048a498930f0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
+feature: 自适应表单
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '702'
 ht-degree: 5%
 
 ---
@@ -24,9 +25,9 @@ ht-degree: 5%
 
 * 执行在XDP文件中的事件上定义的脚本。
 * 捕获XDP文件中字段的默认值和行为属性。
-* 执行XDP文件中定义的验证脚本。
+* 执行在XDP文件中定义的验证脚本。
 
-当基于XDP文件创建自适应表单时，将在表单创作UI中自动填充属性、事件和验证。 但是，表单作者可以覆盖其中的一些元素，以创建替代体验。
+在基于XDP文件创建自适应表单时，属性、事件和验证会在表单创作UI中自动填充。 但是，表单作者可以覆盖其中的一些元素，以创建替代体验。
 
 本文列表支持自适应表单中接受的XFA事件、属性和验证，并说明如何在自适应表单中覆盖它们。
 
@@ -55,11 +56,11 @@ ht-degree: 5%
    <td><p>下拉列表</p> </td> 
   </tr>
   <tr>
-   <td><p>日期／时间字段 </p> </td> 
+   <td><p>日期/时间字段 </p> </td> 
    <td><p>日期选取器</p> </td> 
   </tr>
   <tr>
-   <td><p>签名涂写</p> </td> 
+   <td><p>签名Scribble</p> </td> 
    <td><p>潦草签名</p> </td> 
   </tr>
   <tr>
@@ -113,23 +114,23 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>somExpression </p> </td> 
-   <td><p>以自适应形式映射到“绑定引用”(bindRef)属性。</p> </td> 
+   <td><p>映射到自适应形式的“绑定引用”(bindRef)属性。</p> </td> 
   </tr>
   <tr>
    <td><p>存在 </p> </td> 
-   <td><p>映射到自适应表单中的可见属性。 您可以使用“可见性”表达式覆盖它。</p> </td> 
+   <td><p>映射到自适应表单中的可见属性。 可以使用“可见性”(Visibility)表达式覆盖它。</p> </td> 
   </tr>
   <tr>
    <td><p>访问 </p> </td> 
-   <td><p>映射到自适应表单中的启用属性。 您可以使用访问表达式覆盖它。</p> </td> 
+   <td><p>映射到自适应表单中的enabled属性。 您可以使用“访问”表达式覆盖它。</p> </td> 
   </tr>
   <tr>
    <td><p>辅助功能：角色 </p> </td> 
    <td><p>映射到自适应表单中的角色属性。</p> </td> 
   </tr>
   <tr>
-   <td><p>辅助功能：speatPriority </p> </td> 
-   <td><p>以自适应形式映射到speakPriority属性。</p> </td> 
+   <td><p>辅助功能：seatPriority </p> </td> 
+   <td><p>映射到自适应表单中的seekPriority属性。</p> </td> 
   </tr>
   <tr>
    <td><p>辅助功能：speakText</p> </td> 
@@ -145,14 +146,14 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>displayFormat<em>（所有字段类型）</em></p> </td> 
-   <td><p>以自适应形式映射到显示模式。</p> </td> 
+   <td><p>以自适应形式映射到显示图案。</p> </td> 
   </tr>
   <tr>
    <td><p>rawValue<em>（所有字段类型）</em></p> </td> 
    <td><p>映射到自适应表单中的值属性。</p> </td> 
   </tr>
   <tr>
-   <td><p>项<em>(列表框，复选框)</em></p> </td> 
+   <td><p>项目<em>(列表框，复选框)</em></p> </td> 
    <td><p>映射到自适应表单中的选项属性。 您可以使用“选项”表达式覆盖它。</p> </td> 
   </tr>
   <tr>
@@ -161,7 +162,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>multiline<em>（文本字段）</em></p> </td> 
-   <td><p>映射到自适应表单中的允许多行属性。</p> </td> 
+   <td><p>映射到自适应表单中的“允许多行”属性。</p> </td> 
   </tr>
   <tr>
    <td><p>fracDigit<em>（数字字段，小数字字段）</em></p> </td> 
@@ -194,11 +195,11 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>计算</p> </td> 
-   <td><p>以自适应形式映射到“计算表达式”。</p> </td> 
+   <td><p>映射到自适应表单中的“计算表达式”。</p> </td> 
   </tr>
   <tr>
    <td><p>验证 </p> </td> 
-   <td><p>以自适应形式映射到验证表达式。</p> </td> 
+   <td><p>映射到自适应表单中的验证表达式。</p> </td> 
   </tr>
   <tr>
    <td><p>validationState </p> </td> 
@@ -266,5 +267,5 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->您不能覆盖绑定到XFA复选框的自适应表单单选按钮和复选框组的必需属性。
+>您无法覆盖绑定到XFA复选框的自适应表单单选按钮和复选框组的必需属性。
 

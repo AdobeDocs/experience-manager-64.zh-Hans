@@ -1,7 +1,7 @@
 ---
 title: 在设计模式中配置组件
 seo-title: 在设计模式中配置组件
-description: 'null'
+description: 在设计模式中配置组件
 seo-description: 'null'
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '911'
 ht-degree: 85%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 85%
 >
 >设计模式仅适用于存储为(`/etc`)下的内容的设计配置。
 >
->从AEM 6.4开始，建议将设计作为配置数据存储在`/apps`下，以支持连续部署方案。 存储在`/apps`下的设计在运行时不可编辑，非管理员用户将无法使用此类模板的设计模式。
+>从AEM 6.4开始，建议将设计作为配置数据存储在`/apps`下，以支持连续部署方案。 存储在`/apps`下的设计在运行时不可编辑，非管理员用户将无法使用设计模式来管理此类模板。
 
 这涉及到添加或删除在页面的段落系统中允许使用的组件。段落系统 (`parsys`) 本身是一个复合组件，其中包含其他段落组件。段落系统允许作者向页面中添加不同类型的组件，并包含所有其他段落组件。每个段落类型表示为一个组件。
 
@@ -92,7 +92,7 @@ ht-degree: 85%
 
    **允许的组件**
 
-   在&#x200B;**允许的组件**&#x200B;选项卡上，定义可用于parsys的组件。
+   在&#x200B;**允许的组件**&#x200B;选项卡上，您可以定义可用于parsys的组件。
 
    * 这些组件按其组件组分组，各组可以展开和折叠。
    * 可以通过选中组名称选择整个组，通过取消选中全部取消选择。
@@ -126,7 +126,7 @@ ht-degree: 85%
 
    ![](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
-   在设计对话框中，可以根据可用的设计参数配置组件。
+   在设计对话框中，您可以根据可用的设计参数配置组件。
 
    ![screen_shot_2018-03-22at103530](assets/screen_shot_2018-03-22at103530.png)
 

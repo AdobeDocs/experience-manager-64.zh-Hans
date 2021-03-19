@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
+feature: 升级
 translation-type: tm+mt
-source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -20,17 +21,17 @@ ht-degree: 0%
 
 # 应用程序服务器安装的升级步骤{#upgrade-steps-for-application-server-installations}
 
-本节介绍更新AEM以安装Application Server所需遵循的过程。
+本节介绍更新AEM Server安装所需的步骤。
 
-此过程中的所有示例都将JBoss用作应用程序服务器，并暗示您已部署了可工作版本的AEM。 该过程用于文档从&#x200B;**AEM 5.6版到6.3**&#x200B;执行的升级。
+此过程中的所有示例都使用JBoss作为应用程序服务器，并暗示您已部署了可工作版本的AEM。 该过程用于将从&#x200B;**AEM 5.6版到6.3**&#x200B;执行的升级文档。
 
-1. 首先，开始JBoss。 在大多数情况下，可以通过从终端运行以下命令来运行`standalone.sh`启动脚本：
+1. 首先，开始JBoss。 在大多数情况下，可以通过从终端运行此命令来运行`standalone.sh`启动脚本：
 
    ```shell
    jboss-install-folder/bin/standalone.sh
    ```
 
-1. 如果AEM 5.6已部署，请运行以下项来检查捆绑包是否正常运行：
+1. 如果已部署AEM 5.6，请运行以下命令检查捆绑包是否正常运行：
 
    ```shell
    wget https://<serveraddress:port>/cq/system/console/bundles
@@ -86,9 +87,9 @@ ht-degree: 0%
    mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
    ```
 
-1. 接下来，您需要创建包含将与新升级实例一起使用的OSGi配置的文件夹。 更具体地说，需要在&#x200B;**crx-quickstart**&#x200B;下创建名为install的文件夹。
+1. 接下来，您需要创建包含将与新升级实例一起使用的OSGi配置的文件夹。 具体而言，需要在&#x200B;**crx-quickstart**&#x200B;下创建名为install的文件夹。
 
-1. 现在，创建将与AEM 6.3一起使用的节点存储和数据存储。可以通过创建以下名称的文件来实现此目的：在&#x200B;**crx-quickstart\install**&#x200B;下：
+1. 现在，创建将与AEM 6.3一起使用的节点存储和数据存储。可以通过在&#x200B;**crx-quickstart\install**&#x200B;下创建具有以下名称的两个文件来执行此操作：
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
@@ -96,7 +97,7 @@ ht-degree: 0%
 
    这两个文件将配置AEM以使用TarMK节点存储和文件数据存储。
 
-1. 编辑配置文件，使其准备就绪。 更具体地说：
+1. 编辑配置文件，使其随时可用。 更具体地说：
 
    * 将以下代码行添加到&#x200B;**org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
@@ -109,25 +110,25 @@ ht-degree: 0%
        minRecordLength=4096
       ```
 
-1. 通过运行以删除crx2运行模式：
+1. 通过运行以下命令删除crx2运行模式：
 
    ```shell
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. 您现在需要更改AEM 6.3 war文件中的运行模式。 为此，首先创建一个临时文件夹，用于容纳AEM 6.3战争。 此示例中文件夹的名称将为&#x200B;**temp**。 复制完war文件后，从temp文件夹内运行以提取其内容：
+1. 您现在需要更改AEM 6.3 war文件中的运行模式。 为此，首先创建一个临时文件夹，用于容纳AEM 6.3战争。 此示例中文件夹的名称将为&#x200B;**temp**。 复制war文件后，从temp文件夹内运行以提取其内容：
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. 提取内容后，转到&#x200B;**WEB-INF**&#x200B;文件夹并编辑`web.xml`文件以更改运行模式。 要查找在XML中设置它们的位置，请查找`sling.run.modes`字符串。 找到它后，请更改下一行代码中的运行模式，默认情况下，该模式设置为作者：
+1. 提取内容后，转到&#x200B;**WEB-INF**&#x200B;文件夹并编辑`web.xml`文件以更改运行模式。 要查找在XML中设置它们的位置，请查找`sling.run.modes`字符串。 找到后，在下一行代码中更改运行模式，默认情况下，该模式设置为作者：
 
    ```shell
    <param-value >author</param-value>
    ```
 
-1. 更改上述作者值，并将运行模式设置为：author,crx3,crx3tar最后的代码块应当如下：
+1. 更改上述创作值，并将运行模式设置为：author，crx3,crx3tar最终的代码块应当如下：
 
    ```
    <init-param>

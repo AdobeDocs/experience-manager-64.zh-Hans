@@ -5,12 +5,15 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4经典UI创作用户指南
 breadcrumb-title: 经典UI创作指南
-user-guide-description: 本指南介绍在经典用户界面中在AEM中进行创作的概念。
+user-guide-description: 本指南涵盖在经典用户界面中的AEM中进行创作的概念。
+feature-set: Experience Manager Sites
+feature: 创作
+role: 业务从业者
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 83%
+source-wordcount: '322'
+ht-degree: 82%
 
 ---
 
@@ -78,7 +81,7 @@ ht-degree: 83%
    + [使用 Adobe Campaign](classic-personalization-ac.md)
    + [Adobe Campaign 组件](classic-personalization-ac-components.md)
    + [定位您的 Adobe Campaign](classic-personalization-ac-target.md)
-+ 在经典UI中创作资产{#assets}
++ 经典UI中的资产创作{#assets}
    + [处理资产](classicui-assets.md)
    + [关于使用 IBL 舞台](classicui-stages-aem3d-ibl.md)
    + [渲染 3D 资产](classicui-rendering-3d.md)
@@ -86,7 +89,7 @@ ht-degree: 83%
    + [传送 Dynamic Media 资产](dynamic-media-assets-delivering.md)
    + [使用 Autodesk Maya 和 Mental Ray 设置标准舞台](classicui-stages-aem3d-ad-mr.md)
    + [将 Dynamic Media 资产添加到页面](dynamic-media-assets-adding-to-page.md)
-   + [将Dynamic Media经典(Scene7)功能添加到页面](manage-assets-classic-s7.md)
+   + [将Dynamic Media Classic(Scene7)功能添加到页面](manage-assets-classic-s7.md)
    + [使用 Dynamic Media](dynamic-media-assets.md)
    + [使用 3D 资产](classicui-3dassets.md)
    + [视频](manage-assets-classic-s7-video.md)

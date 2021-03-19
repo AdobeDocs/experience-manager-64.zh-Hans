@@ -1,38 +1,39 @@
 ---
-title: Forms6.4中的存储库重组
-seo-title: Forms6.4中的存储库重组
-description: 了解如何进行必要的更改，以便迁移到AEM 6.4 for Forms的新存储库结构。
-seo-description: 了解如何进行必要的更改，以便迁移到AEM 6.4 for Forms的新存储库结构。
+title: Forms 6.4中的存储库重组
+seo-title: Forms 6.4中的存储库重组
+description: 了解如何进行必要的更改以迁移到适用于Forms的AEM 6.4中的新存储库结构。
+seo-description: 了解如何进行必要的更改以迁移到适用于Forms的AEM 6.4中的新存储库结构。
 uuid: e60830d4-23ca-4be9-941a-ee4abe4786a6
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
+feature: 升级
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '555'
 ht-degree: 7%
 
 ---
 
 
-# Forms6.4{#forms-repository-restructuring-in-aem}中的存储库重组
+# Forms 6.4{#forms-repository-restructuring-in-aem}中的存储库重构
 
-如AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的父[存储库重组页所述，升级到AEM 6.4的客户应使用此页评估与影响AEM Forms解决方案的存储库更改相关的工作。 某些更改需要在AEM 6.4升级过程中进行工作，而其他更改则可推迟到6.5升级。
+如AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的父级[存储库重组页所述，升级到AEM 6.4的客户应使用此页评估与影响AEM Forms解决方案的存储库更改相关的工作。 某些更改需要在AEM 6.4升级过程中进行工作，而其他更改可推迟到6.5升级。
 
 **升级6.4**
 
-* [杂项](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
+* [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
 
 **6.5升级之前**
 
 * [EchosignCloud Service配置](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#echosign-cloud-service-configuration)
 * [RecaptchaCloud Service配置](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#recaptcha-cloud-service-configurations)
 * [TypekitCloud Service配置](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
-* [杂项](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
+* [Misc](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
 
-## 升级6.4 {#with-upgrade}
+## 使用6.4升级{#with-upgrade}
 
 ### Misc {#misc}
 
@@ -45,49 +46,49 @@ ht-degree: 7%
 | **上一个位置** | `/etc/clientlibs/fd/rte` |
 |---|---|
 | **新位置** | `/libs/fd/rte` |
-| **重组指导** | 对于客户端库中可以通过绝对路径引用的资源，您需要在新资产中使用较新路径。 |
+| **重组指导** | 对于客户端库中可通过绝对路径引用的资源，您需要在新资源中使用较新的路径。 |
 | **注释** | 不适用 |
 
 | **上一个位置** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **新位置** | `/libs/fd/af/authoring/clientlibs` |
-| **重组指导** | 对于客户端库中可以通过绝对路径引用的资源，您需要在新资产中使用较新路径。 |
+| **重组指导** | 对于客户端库中可通过绝对路径引用的资源，您需要在新资源中使用较新的路径。 |
 | **注释** | 不适用 |
 
 | **上一个位置** | `/etc/clientlibs/fd/xfaforms` |
 |---|---|
 | **新位置** | `/libs/fd/xfaforms/clientlibs/` |
-| **重组指导** | 对于客户端库中可以通过绝对路径引用的资源，您需要在新资产中使用较新路径。 |
+| **重组指导** | 对于客户端库中可通过绝对路径引用的资源，您需要在新资源中使用较新的路径。 |
 | **注释** | 不适用 |
 
 | **上一个位置** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **新位置** | `/libs/fd/af/runtime/clientlibs` |
-| **重组指导** | 对于客户端库中可以通过绝对路径引用的资源，您需要在新资产中使用较新路径。 |
+| **重组指导** | 对于客户端库中可通过绝对路径引用的资源，您需要在新资源中使用较新的路径。 |
 | **注释** | 不适用 |
 
 | **上一个位置** | `/etc/clientlibs/fd/af` |
 |---|---|
 | **新位置** | `/libs/fd/af/runtime/clientlibs` |
-| **重组指导** | 对于客户端库中可以通过绝对路径引用的资源，您需要在新资产中使用较新路径。 |
+| **重组指导** | 对于客户端库中可通过绝对路径引用的资源，您需要在新资源中使用较新的路径。 |
 | **注释** | 不适用 |
 
 | **上一个位置** | `/etc/clientlibs/fd/expeditor` |
 |---|---|
 | **新位置** | `/libs/fd/expeditor/clientlibs` |
-| **重组指导** | 对于客户端库中可以通过绝对路径引用的资源，您需要在新资产中使用较新路径。 |
+| **重组指导** | 对于客户端库中可通过绝对路径引用的资源，您需要在新资源中使用较新的路径。 |
 | **注释** | 不适用 |
 
 | **上一个位置** | `/etc/clientlibs/fd/fmaddon` |
 |---|---|
 | **新位置** | `/libs/fd/fmaddon` |
-| **重组指导** | 从不建议或支持更改这些clientlib。 如果对这些clientlibs进行了修改，则应回滚这些修改以使用AEM提供的代码。 |
+| **重组指导** | 从不建议或支持更改这些clientlib。 如果对这些clientlibs进行了修改，则应回滚以使用AEM提供的代码。 |
 | **注释** | 不适用 |
 
 | **上一个位置** | `/etc/aep` |
 |---|---|
 | **新位置** | `/var/fd/content/annotations` |
-| **重组指导** | 从不建议或支持更改这些clientlib。 如果对这些clientlibs进行了修改，则应回滚这些修改以使用AEM提供的代码。 |
+| **重组指导** | 从不建议或支持更改这些clientlib。 如果对这些clientlibs进行了修改，则应回滚以使用AEM提供的代码。 |
 | **注释** | 不适用 |
 
 ## 6.5之前的升级{#prior-to-upgrade}

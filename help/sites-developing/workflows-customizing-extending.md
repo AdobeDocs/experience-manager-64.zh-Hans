@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: ce24fdb79fe7636951490ea01967787fa28d712e
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3586'
 ht-degree: 1%
 
 ---
@@ -858,7 +858,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
 1. 您现在可以打开工作流模型进行编辑。 在步骤浏览器中，您可以进行筛选，以查看&#x200B;**我的自定义步骤**:
 
-   ![wf-36](assets/wf-36.png)
+   ![wf-34](assets/wf-36.png)
 
    将&#x200B;**我的自定义步骤**&#x200B;拖动到模型上会显示卡：
 
@@ -1039,7 +1039,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >
 >经典UI模型编辑器对话框仍可与标准的触屏优化UI编辑器一起使用。
 >
->如果要将经典UI步骤对话框升级到标准UI对话框，则AEM具有[对话框转换](/help/sites-developing/dialog-conversion.md)工具。 转换后，某些情况下仍可对对话框进行手动改进。
+>如果要将经典UI步骤对话框升级到标准UI对话框，AEM会提供[现代化工具](/help/sites-developing/modernization-tools.md)。 转换后，某些情况下仍可对对话框进行手动改进。
 >
 >* 如果升级的对话框为空，您可以查看`/libs`中的对话框，这些对话框的功能与如何提供解决方案的示例类似。 例如：
    >

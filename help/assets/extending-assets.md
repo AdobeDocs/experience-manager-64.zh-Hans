@@ -1,19 +1,21 @@
 ---
 title: 自定义和扩展资产
-description: 了解自定义和扩展资产共享和资产编辑器的方式，它们为用户提供了专门定制的界面和功能集。
+description: 了解如何自定义和扩展资产共享和资产编辑器，它们为用户提供了专门定制的界面和功能集。
 contentOwner: AG
+feature: Developer Tools
+role: 开发人员
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 0%
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
 
 # 自定义和扩展资产{#customizing-and-extending-assets}
 
-资产编辑器是Adobe企业经理(AEM)网站的用户用来查找、视图和操作存储库中的数字资产的主要访问点。
+资产编辑器是Adobe Enterprise Manager(AEM)网站的用户用来查找、视图和操作存储库中的数字资产的主要访问点。
 
 作为AEM开发人员，您可以通过多种方式自定义和扩展资产编辑器，为用户提供专门定制的界面和功能集。
 
@@ -30,12 +32,12 @@ ht-degree: 0%
 
 资产编辑器外观的以下方面可自定义：
 
-* 徽标：您可以向界面添加您自己组织的徽标。
+* 徽标：您可以将您自己组织的徽标添加到界面中。
 * 颜色和字体：您可以更改界面中使用的颜色和字体。
 * HTML代码：要进行更彻底的自定义，您可以更改定义界面的底层HTML代码。
 
 ## 自定义演绎版{#customizing-renditions}
 
-在AEM Assets语言中，演绎版是显示资产的表单。 通常，特定资产可能具有多个演绎版。 例如，全彩图像可能具有一个原始大小的再现，另一个是缩小大小的再现，另一个是缩小并转换为灰度的再现。
+在AEM Assets术语中，演绎版是显示资产的表单。 通常，特定资产可能具有多个演绎版。 例如，全彩色图像可能具有一个原始大小的再现，另一个以缩小大小，另一个以缩小大小缩放并转换为灰度。
 
-特定资产可用的演绎版可以进行自定义并创建新的演绎版。
+特定资产可用的演绎版可以进行自定义，也可以创建新的演绎版。

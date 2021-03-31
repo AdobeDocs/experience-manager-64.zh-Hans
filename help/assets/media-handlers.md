@@ -2,10 +2,12 @@
 title: 使用媒体处理程序和工作流处理资源
 description: 了解各种媒体处理程序以及如何在工作流中使用它们对资源执行任务。
 contentOwner: AG
+feature: 工作流，演绎版
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: b6342b79e964daf1a05bb9ccfad06d8edaca4312
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2232'
 ht-degree: 3%
 
 ---

@@ -2,10 +2,12 @@
 title: 使用Creative Cloud共享AEM Assets文件夹
 description: 允许Adobe Experience Manager Assets用户与Adobe Creative Cloud用户交换资产文件夹的配置和最佳实践。
 contentOwner: AG
+feature: 协作
+role: 业务从业者，管理员
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---

@@ -2,10 +2,12 @@
 title: Assets 指南
 description: 本指南涵盖所有AEM Assets任务，如如何创建、管理、交付和优化数字资产。
 user-guide-title: Assets 指南
+feature: 资产管理
+role: 业务从业者，架构师，管理员
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '323'
 ht-degree: 25%
 
 ---

@@ -2,10 +2,12 @@
 title: 管理复合资产并生成子资产。
 description: 了解如何从InDesign、Adobe Illustrator和Photoshop文件中创建对AEM资产的引用。 还了解如何使用页面查看器功能来视图多页文件的各个页面，包括PDF、INDD、PPT、PPTX和AI文件。
 contentOwner: AG
+feature: 资产管理
+role: 业务从业者，管理员
 translation-type: tm+mt
-source-git-commit: dc9ba70161f81578899416064bd03fdabe0bed5a
+source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1415'
 ht-degree: 5%
 
 ---

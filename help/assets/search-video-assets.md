@@ -1,11 +1,13 @@
 ---
 title: 搜索视频资产
-description: 使用关键字、文件属性（如Mime类型、大小或最近修改的时间戳）快速在AEM Assets找到您的文件。
+description: 使用关键字、文件属性（如Mime类型、大小或最近修改的时间戳）在AEM Assets中快速查找您的文件。
 contentOwner: AG
+feature: 视频，搜索
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '582'
 ht-degree: 45%
 
 ---
@@ -15,13 +17,13 @@ ht-degree: 45%
 
 要节省浏览可能数百个视频所需的时间和精力，请使用关键字、文件属性（如文件类型）或最近修改的时间戳来快速查找您的文件。
 
-如果您没有看到要查找的文件，可以单击搜索结果底部的选项之一来更改整个搜索范围。 例如，如果在文档库中搜索文件但找不到它，则可单击“库”将搜索范围扩展到其余库。 有关更多信息，请参阅[查找文件或文件夹](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder)。
+如果未看到要查找的文件，可单击搜索结果底部的选项之一来更改整个搜索范围。 例如，如果在文档库中搜索文件但找不到该文件，则可以单击“库”将搜索范围扩展到其余库。 有关更多信息，请参阅[查找文件或文件夹](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder)。
 
 您可以根据以下一个或多个属性搜索数字资产：
 
 | 搜索字段 | 搜索属性值 |
 |---|---|
-| Mime 类型 | [!UICONTROL 图像]、 [!UICONTROL 文档]、 [!UICONTROL 多媒]体 [!UICONTROL 、]存档或其他。 |
+| Mime 类型 | [!UICONTROL 图像]、 [!UICONTROL 文档]、多 [!UICONTROL 媒体]、 [!UICONTROL 存]档或其它。 |
 | [!UICONTROL 上次修改时间] | “小时”、“天”、“周”、“月”或“年”。 |
 | [!UICONTROL 文件大小] | “小”、“中”或“大”。 |
 | [!UICONTROL 发布状态] | “已发布”或“已取消发布”。 |
@@ -30,8 +32,8 @@ ht-degree: 45%
 | [!UICONTROL 样式] | “彩色”或“黑白”。 |
 | 视屏高度 | 指定为最小值和最大值。值仅存储在视频演绎版的元数据中。 |
 | 视频宽度 | 指定为最小值和最大值。值仅存储在视频演绎版的元数据中。 |
-| 视频格式 | DVI、Flash、MPEG4、MPEG、OGG Theora、QuickTime、Windows Media。值存储在源视频和任何再现的元数据中。 |
-| 视频编解码器 | x264.值仅存储在视频演绎版的元数据中。 |
+| 视频格式 | DVI、Flash、MPEG4、MPEG、OGG Theora、QuickTime、Windows Media.Value存储在源视频和任何再现的元数据中。 |
+| 视频编解码器 | x264.Value仅存储在视频演绎版的元数据中。 |
 | 视频比特率 | 指定为最小值和最大值。值仅存储在视频演绎版的元数据中。 |
 | 音频编解码器 | Libvorbis、Lame Mp3、AAC Encoding.Value仅存储在视频演绎版的元数据中。 |
 | 音频比特率 | 指定为最小值和最大值。值仅存储在视频演绎版的元数据中。 |

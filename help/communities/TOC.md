@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Communities 用户指南
@@ -7,9 +7,9 @@ breadcrumb-title: Communities 指南
 user-guide-description: 创建在线体验，如论坛、用户组、学习资源和其他社交功能。
 feature-set: Experience Manager
 feature: 社区
-role: 业务从业者
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
+source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 12%

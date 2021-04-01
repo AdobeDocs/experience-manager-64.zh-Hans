@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
@@ -8,12 +8,12 @@ breadcrumb-title: 经典UI创作指南
 user-guide-description: 本指南涵盖在经典用户界面中的AEM中进行创作的概念。
 feature-set: Experience Manager Sites
 feature: 创作
-role: 业务从业者
+role: 商务从业人员
 translation-type: tm+mt
-source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
+source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 

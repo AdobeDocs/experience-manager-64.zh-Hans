@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
+exl-id: 074ab20f-02df-4f9e-9512-93a76f5d234f
+feature: 3D资产
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '850'
 ht-degree: 52%
 
 ---
-
 
 # 关于使用 IBL 舞台 {#about-working-with-ibl-stages}
 
@@ -29,19 +31,19 @@ AEM 3D 支持基于图像的照明 (IBL)，以便使用内置的 Adobe Rapid Ref
 目前，AEM 3D 仅支持 32 位 TIFF。如有必要，请使用 Adobe Photoshop 或类似工具在 Adobe Photoshop TIFF 导出对话框中采用以下设置将 HDR 图像转换为 TIFF：
 
 * **[!UICONTROL 位深度]** - 32位（浮点）
-* **[!UICONTROL 像素顺序]** -隔行(RGBRGB)
+* **[!UICONTROL 像素顺序]**  — 交错(RGBRGB)
 * **[!UICONTROL 图像压缩]** - LZW
 * **[!UICONTROL 字节顺序]** - IBM PC
 
 虽然通常情况下 IBL 舞台使用单个 HDR 图像便已足够，但 AEM 3D 允许使用最多三个不同的图像，从而增强对 IBL 效果的控制：
 
-* **扩散照明环境图** 像——此类图像应为HDR图像，但可能相对较小，因为在将图像用于扩散照明之前，会对图像进行大量过滤。
-* **反射环境图像** -此类图像用于在对象表面中创建反射。它可以是标准 8 位 RGB 图像，该图像的大小和分辨率提供所需的反射质量和锐化。如果指定了 HDR 图像，AEM 3D 会预先使用专有算法将其转换为 8 位 RGB。
-* **背景环境图** 像——此类图像用作背景。它可以是标准 8 位 RGB 图像，并且应当具有舞台背景所需的大小/分辨率/细节级别。如果指定了 HDR 图像，AEM 3D 会使用专有算法将其转换为 8 位 RGB。
+* **扩散照明环境图像**  — 此类图像应为HDR图像，但可能相对较小，因为在将图像用于扩散照明之前，会对图像进行大量过滤。
+* **反射环境图像**  — 此类图像用于在对象表面中创建反射。它可以是标准 8 位 RGB 图像，该图像的大小和分辨率提供所需的反射质量和锐化。如果指定了 HDR 图像，AEM 3D 会预先使用专有算法将其转换为 8 位 RGB。
+* **背景环境图像**  — 此类图像用作背景。它可以是标准 8 位 RGB 图像，并且应当具有舞台背景所需的大小/分辨率/细节级别。如果指定了 HDR 图像，AEM 3D 会使用专有算法将其转换为 8 位 RGB。
 
 >[!NOTE]
 >
->该算法对某些IBL图像可能存在一定的困难。 该问题可能会导致预览或使用 Rapid Refine 进行渲染时背景过亮或过度饱和。在这种情况下，Adobe 建议您使用 Photoshop 或类似工具手动将 IBL 图像转换为 8 位 RGB 图像。然后，单独上传此图像并将其作为背景环境图像附加到舞台。扩散照明和反射环境图像必须始终为 32 位 TIFF。
+>对于某些IBL图像，转换算法可能存在一定的困难。 该问题可能会导致预览或使用 Rapid Refine 进行渲染时背景过亮或过度饱和。在这种情况下，Adobe 建议您使用 Photoshop 或类似工具手动将 IBL 图像转换为 8 位 RGB 图像。然后，单独上传此图像并将其作为背景环境图像附加到舞台。扩散照明和反射环境图像必须始终为 32 位 TIFF。
 
 ## 调整 IBL 舞台外观 {#adjusting-the-ibl-stage-appearance}
 
@@ -55,35 +57,35 @@ AEM 3D 支持基于图像的照明 (IBL)，以便使用内置的 Adobe Rapid Ref
   </tr> 
   <tr> 
    <td>IBL Sun详细信息</td> 
-   <td><p>允许您调整模拟太阳的补充光源的方向和强度。 <span class="diff-html-added">该光源增加照明亮度并使物体将投影投射到地面上。使用 Rapid Refine 进行渲染时，支持使用 Google Chrome 预览投影；但是，目前不支持使用其他浏览器进行预览。</span></p> 
+   <td><p>允许您调整模拟太阳的补充光源的方向和强度。 <span class="diff-html-added">该光源增加照明亮度并使物体将投影投射到地平面上。使用 Rapid Refine 进行渲染时，支持使用 Google Chrome 预览投影；但是，目前不支持使用其他浏览器进行预览。</span></p> 
     <ul> 
-     <li><strong>lat</strong>  —— 太阳光源的垂直<code>0.0</code>位置(<code>1.0</code>-)。<br /> 设置为 <code>0.0</code> 水平线(扩散照明环境图像的垂直中心); <code>1.0</code> 位于最高点(扩散照明环境图像的上边缘)。</li> 
-     <li><strong>long</strong>  —— 太阳光源的水平<code>0.0</code>位置(<code>1.0</code>-)。<br /> 设置为0.0时，左边对应；1.0对应于扩散照明环境图像的右边缘。<br /> </li> 
-     <li><strong>亮</strong> -太阳光源的亮度。增加此值可使太阳光源变亮；减少此值可使太阳光源变暗。<br /> 设置为关闭 <code>0</code> 补充照明并禁用投影。该参数不影响环境反射。<br /> </li> 
+     <li><strong>lat</strong>  — 太阳光源的垂直<code>0.0</code>位<code>1.0</code>置。<br /> 设置位 <code>0.0</code> 于地平线(扩散照明环境图像的垂直中心); <code>1.0</code> 位于高峰(扩散照明环境图像的上边缘)。</li> 
+     <li><strong>long</strong>  — 太阳光源的水平<code>0.0</code>位<code>1.0</code>置。<br /> 设置为0.0时，左边对应；1.0对应于扩散照明环境图像的右边缘。<br /> </li> 
+     <li><strong>亮</strong>  — 太阳光源的亮度。增加此值可使太阳光源变亮；减少此值可使太阳光源变暗。<br /> 设置为关闭 <code>0</code> 补充照明并禁用投影。该参数不影响环境反射。<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>IBL相机高度</td> 
-   <td>如果IBL背景在地平线附近出现扭曲，可以通过调整此属性来减少或消除扭曲。<br /> </td> 
+   <td>如果IBL背景在地平线附近出现扭曲，则可以通过调整此属性来减少或消除扭曲。<br /> </td> 
   </tr> 
   <tr> 
    <td>环境照明</td> 
-   <td><p><span class="diff-html-added">可控制扩散照明。 如果扩散照明环境图像异常明亮或黑暗（例如夜景），您可能需要手动调整此属性以纠正照明亮度。</span></p> 
+   <td><p><span class="diff-html-added">允许您控制扩散照明。 如果扩散照明环境图像异常明亮或黑暗（例如夜景），您可能需要手动调整此属性以纠正照明亮度。</span></p> 
     <ul> 
-     <li><strong>r、g、b</strong> -当前未使用。</li> 
-     <li><strong>bright</strong> -亮 <span class="diff-html-added">度倍增器。增加或减少此值可提高或降低总体照明强度（基本 IBL 照明和太阳光源的亮度）。</span></li> 
+     <li><strong>r、g、b</strong>  — 当前未使用</li> 
+     <li><strong>亮度</strong>  — 亮 <span class="diff-html-added">度倍增器。增加或减少此值可提高或降低总体照明强度（基本 IBL 照明和太阳光源的亮度）。</span></li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 增加IBL级{#increasing-the-spherical-background-diameter-of-an-ibl-stage}的球体背景直径
+## 增加IBL级{#increasing-the-spherical-background-diameter-of-an-ibl-stage}的球面背景直径
 
-IBL舞台使用默认直径20米的球形背景图像。 这种舞台对于10米以内的物体很好。 但是，如果显示的对象较大，则可以增加IBL舞台的球背景直径。
+IBL舞台使用默认直径为20米的球形背景图像。 这种舞台对10米以下的物体很有用。 但是，如果显示的对象较大，则可以增加IBL舞台的球面背景直径。
 
-**要增加IBL级的球背景直径**:
+**要增加IBL舞台的球面背景直径**:
 
-1. 在CRXDE Lite中，导航到要增大其球背景直径的舞台。 例如，
+1. 在CRXDE Lite中，导航到要增加其球面背景直径的舞台。 例如，
 
    `/content/dam/test3d/stage-helipad.fbx`
 
@@ -92,7 +94,6 @@ IBL舞台使用默认直径20米的球形背景图像。 这种舞台对于10米
 
    为提高渲染效率，Adobe建议将此值限制为要在舞台上显示的最大对象的大约最大尺寸。
 
-   例如，如果`dam:gPlaneRadius=20000`，则长度为20米的喷射平面模型显示良好。
+   例如，如果`dam:gPlaneRadius=20000`，则长度为20米的喷气式飞机模型显示良好。
 
-1. 在CRXDE Lite页的左上角附近，点按&#x200B;**[!UICONTROL 全部保存]**。
-
+1. 在CRXDE Lite页面的左上角附近，点按&#x200B;**[!UICONTROL 全部保存]**。

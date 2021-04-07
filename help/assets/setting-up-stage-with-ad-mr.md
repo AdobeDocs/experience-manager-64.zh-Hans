@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: da8fc33b-84ae-4ead-87bb-5a7870a38b1f
+exl-id: facd0411-8a3c-4b1a-af9d-0d59e0399b2c
+feature: 3D资产
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 77%
 
 ---
-
 
 # 使用 Autodesk Maya 和 Mental Ray 设置标准舞台 {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
 
@@ -33,7 +35,7 @@ ht-degree: 77%
 
 1. 如果需要，创建一个地平面，并应用合适的材料。
 
-   Adobe 建议您将地平面设置为单面。这样做可确保在AEM 3D中从下方视图资产，而无需地面隐藏资产。
+   Adobe 建议您将地平面设置为单面。这样做可确保您能够在AEM 3D中从下方视图资产，而地平面不会隐藏资产。
 
 1. （可选）创建并配置相机。
 
@@ -43,15 +45,15 @@ ht-degree: 77%
 
    根据以下建议配置渲染设置：
 
-   * **[!UICONTROL 公用选]** 项卡
+   * **[!UICONTROL “公用”]** 选项卡
 
-      取消选中所有可渲染相机的&#x200B;**[!UICONTROL Alpha渠道（遮罩）]**&#x200B;复选框。
+      取消选中所有可渲染相机的&#x200B;**[!UICONTROL Alpha渠道（蒙版）]**&#x200B;复选框。
 
    * **[!UICONTROL “质量”选项卡]**
 
       * **[!UICONTROL 整体]** `- 0.5` 质量或更低
       * **[!UICONTROL 间接扩散(GI)模式]** -  `Final Gather`
-      * **[!UICONTROL 滤镜大小]** - `2.0`,  `2.0`
+      * **[!UICONTROL 滤镜大小]** -  `2.0`、  `2.0`
    * 以您希望使用的典型图像大小渲染场景。如果需要，优化灯光或优化渲染设置，或者同时执行这两项操作，以便达到所需的效果。
 
       请注意，通过 Mental Ray 使用基于图像的照明进行渲染时，速度会非常缓慢且会消耗大量 CPU。Adobe 建议您配置最低质量设置，该设置仍能生成所需的渲染质量。
@@ -66,6 +68,5 @@ ht-degree: 77%
 
    如果未在 AEM 服务器上配置 Autodesk® Maya®，请从 Maya 中导出 FBX，然后再将其上传到 AEM。
 
-1. 在 AEM 中打开资产属性。将&#x200B;**[!UICONTROL Title]**&#x200B;设置为将在&#x200B;**[!UICONTROL 舞台选择器]**&#x200B;下拉列表中显示的合适字符串。 确认将&#x200B;**[!UICONTROL 类]**&#x200B;设置为 **[!UICONTROL 3D 舞台]**。保存并退出。
+1. 在 AEM 中打开资产属性。将&#x200B;**[!UICONTROL Title]**&#x200B;设置为将在&#x200B;**[!UICONTROL 舞台选择器]**&#x200B;下拉列表中显示的适当字符串。 确认将&#x200B;**[!UICONTROL 类]**&#x200B;设置为 **[!UICONTROL 3D 舞台]**。保存并退出。
 1. 打开一个 3D 资产，选择新舞台，并验证它是否按预期方式进行预览和渲染。
-

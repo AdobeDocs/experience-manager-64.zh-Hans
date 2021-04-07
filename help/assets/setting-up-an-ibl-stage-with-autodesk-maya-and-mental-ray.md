@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
+exl-id: ecb489e2-fd6f-4163-9739-5d7ff497d305
+feature: 3D资产
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 70%
+source-wordcount: '543'
+ht-degree: 69%
 
 ---
-
 
 # 使用 Autodesk Maya 和 Mental Ray 设置 IBL 舞台 {#setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray}
 
@@ -41,7 +43,7 @@ ht-degree: 70%
 1. 设置地平面。
 
    * 创建一个合适的平面用作地平面，并调整其大小以使其适合 IBL 球，同时穿过坐标原点。
-   * 将&#x200B;**[!UICONTROL Use Background]**&#x200B;材料连接到地平面，并将其命名为`AdobeUseBackground`，然后将其连接到地平面对象。
+   * 将&#x200B;**[!UICONTROL 使用背景]**&#x200B;材料附加到地平面，并将其命名为`AdobeUseBackground`并将其附加到地平面对象。
 
 1. （可选）创建并配置相机。
 
@@ -51,15 +53,15 @@ ht-degree: 70%
 
    根据以下建议配置&#x200B;**[!UICONTROL 渲染设置]**。
 
-   * **[!UICONTROL 公用选]** 项卡
+   * **[!UICONTROL “公用”]** 选项卡
 
-      取消选中所有&#x200B;**[!UICONTROL 可渲染相机]**&#x200B;的&#x200B;**[!UICONTROL Alpha渠道（遮罩）]**&#x200B;复选框。
+      取消选中所有&#x200B;**[!UICONTROL 可渲染相机]**&#x200B;的&#x200B;**[!UICONTROL Alpha渠道（蒙版）]**&#x200B;复选框。
 
    * **[!UICONTROL “质量”选项卡]**
 
       * **总体质量** - `0.5` 或更少
       * **间接扩散(GI)模式** -  `Final Gather`
-      * **滤镜大小** - `2.0`,  `2.0`
+      * **滤镜大小** -  `2.0`、  `2.0`
    * 以您希望使用的典型图像大小渲染场景。如果需要，优化灯光或优化渲染设置，或者同时执行这两项操作，以便达到所需的效果。
 
       请注意，通过 Mental Ray 使用基于图像的照明进行渲染时，速度会非常缓慢且会消耗大量 CPU。Adobe 建议您配置最低质量设置，该设置仍能生成所需的渲染质量。
@@ -79,7 +81,6 @@ ht-degree: 70%
 
    AEM 3D 可能检测不到舞台中已配置的 IBL 图像。在这种情况下，您必须手动解析缺失的依赖关系。您可以为每个缺失的依赖关系分配先前上传的相同 IBL PTIFF 图像。或者，您也可以分配不同的图像以进一步控制 IBL 效果。解析依赖关系后，请确保点按&#x200B;**[!UICONTROL 保存]**&#x200B;以启动重新处理。
 
-1. 在 AEM 中打开资产属性。将&#x200B;**[!UICONTROL Title]**&#x200B;设置为将在&#x200B;**[!UICONTROL 舞台选择器]**&#x200B;下拉列表中显示的合适字符串。 确认将&#x200B;**[!UICONTROL 类]**&#x200B;设置为 **[!UICONTROL 3D 舞台]**。保存并退出。
+1. 在 AEM 中打开资产属性。将&#x200B;**[!UICONTROL Title]**&#x200B;设置为将在&#x200B;**[!UICONTROL 舞台选择器]**&#x200B;下拉列表中显示的适当字符串。 确认将&#x200B;**[!UICONTROL 类]**&#x200B;设置为 **[!UICONTROL 3D 舞台]**。保存并退出。
 
 1. 打开一个 3D 资产，选择新舞台，并验证它是否按预期方式进行预览和渲染。
-

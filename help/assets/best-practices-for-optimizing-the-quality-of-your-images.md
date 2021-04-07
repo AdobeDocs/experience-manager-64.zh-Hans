@@ -1,18 +1,20 @@
 ---
 title: 优化图像质量的最佳实践
-description: 了解优化动态媒体中图像质量的最佳实践
+description: 了解在Dynamic Media中优化图像质量的最佳实践
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
+feature: 资产管理，演绎版
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 42d5a1875d78fdec1be0bb22d8ec8de2e56256ec
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1466'
 ht-degree: 55%
 
 ---
-
 
 # 优化图像质量的最佳实践 {#best-practices-for-optimizing-the-quality-of-your-images}
 
@@ -29,20 +31,20 @@ AEM 中含有 100 多个 Dynamic Media 图像传送命令，可用于微调和�
 * 通常情况下，JPG 在压缩摄影图像时保真度会比合成图像更高，具有清晰的边缘和对比度。
 * 如果您的图像包含透明度，请使用 PNG，因为 JPG 不支持透明度。
 
-作为图像格式的最佳实践，请使用最常见的设置`&fmt=JPG`进行开始。
+作为图像格式的最佳实践，使用最常见的设置`&fmt=JPG`进行开始。
 
 ## 图像大小的最佳实践 {#best-practices-for-image-size}
 
 动态缩减图像大小是最常见的任务之一。这涉及到指定大小，以及（可选）指定用于缩小图像的缩减采样模式。
 
 * 对于图像大小调整，最佳且最直接的方法是使用`&wid=<value>`和`&hei=<value>,`或仅使用`&hei=<value>`。 这些参数会根据宽高比自动设置图像宽度。
-* `&resMode=<value>`控制用于缩减采样的算法。开始`&resMode=sharp2`。 使用此值可提供最佳图像质量。虽然使用缩减采样`value =bilin`速度更快，但通常会导致出现锯齿伪像。
+* `&resMode=<value>`控制用于缩减采样的算法。开始`&resMode=sharp2`。 使用此值可提供最佳图像质量。虽然使用缩减像素采样`value =bilin`速度更快，但通常会导致出现锯齿伪像。
 
 作为调整图像大小的最佳实践，请使用`&wid=<value>&hei=<value>&resMode=sharp2`或`&hei=<value>&resMode=sharp2`
 
 ## 图像锐化的最佳实践 {#best-practices-for-image-sharpening}
 
-在控制网站中的图像时，图像锐化是最复杂的方面，很容易出现多种错误。请花时间参考[AdobeDynamic Media经典图像质量和锐化最佳实践指南](/help/assets/assets/sharpening_images.pdf)(同样适用于AEM)，进一步了解AEM中锐化和USM锐化的工作原理。
+在控制网站中的图像时，图像锐化是最复杂的方面，很容易出现多种错误。请参阅[适用于AEM的《Adobe Dynamic Media经典图像质量和锐化最佳实践》指南](/help/assets/assets/sharpening_images.pdf)，花时间进一步了解AEM中锐化和USM锐化的工作原理。
 
 另请参阅[使用USM锐化锐化图像](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)。
 
@@ -50,22 +52,22 @@ AEM 中含有 100 多个 Dynamic Media 图像传送命令，可用于微调和�
 
 有两种可用的图像锐化方法：
 
-* 简单锐化(`&op_sharpen`)-简单锐化与在Photoshop使用的锐化滤镜类似，在动态调整大小后，简单锐化将基本锐化应用于图像的最终视图。 但是，用户不能对这种方法进行配置。最佳实践是，除非需要，否则不使用&amp;op_sharpen。
+* 简单锐化(`&op_sharpen`) — 简单锐化与Photoshop中使用的锐化滤镜类似，它会在动态调整大小后对图像的最终视图应用基本锐化。 但是，用户不能对这种方法进行配置。最佳实践是，除非另有要求，否则不使用&amp;op_sharpen。
 * USM锐化(`&op_USM`)- USM锐化是行业标准的锐化滤镜。 最佳实践是按照下面的准则，使用 USM 锐化来锐化图像。您可以通过 USM 锐化控制下面的三个参数：
 
-   * `&op_sharpen=`amount,radius,threshold
+   * `&op_sharpen=`amount，radius，threshold
 
       * **[!UICONTROL amount]** （0-5，效果的强度。）
-      * **[!UICONTROL radius]** （0-250，锐化对象周围绘制的“锐化线”宽度，以像素为单位。）
+      * **[!UICONTROL radius]** （0-250，在锐化对象周围绘制的“锐化线条”的宽度，以像素为单位。）
 
-             请记住，radius和amount参数相辅相成。减少半径可以通过增加数量来补偿。radius允许进行更精细的控制，低值仅锐化边缘像素，高值锐化较宽范围的像素。
+             请记住，radius和amount参数相辅相成。减少半径可以通过增加数量来补偿。“半径”允许进行更精细的控制，较低值仅锐化边缘像素，而较高值锐化较宽范围的像素。
          
-      * **[!UICONTROL threshold]** （0-255，效果的灵敏度）。
+      * **[!UICONTROL threshold]** （0-255，效果的敏感度。）
 
              此参数确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素，而滤镜会锐化这些像素。 **[!UICONTROL threshold]**参数有助于避免过度锐化颜色相似的区域，如肤色。 例如，阈值为12时，会忽略肤色亮度的细微变化，以避免添加“杂色”，同时仍会为高对比度区域添加边缘对比度，如睫毛与皮肤相遇的地方。
          
-         有关如何设置这三个参数（包括与滤镜一起使用的最佳实践）的详细信息，请参阅[AdobeDynamic Media经典图像质量和锐化最佳实践指南](/help/assets/assets/sharpening_images.pdf)(同样适用于AEM)。
-   * AEM还允许您控制第四个参数：monochrome(0,1)。 此参数确定是使用值0分别将USM锐化应用于每个颜色组件，还是使用值1将USM锐化应用于图像亮度／强度。
+         有关如何设置这三个参数的详细信息（包括与滤镜一起使用的最佳实践），请参阅[《Adobe Dynamic Media经典图像质量和锐化最佳实践指南》](/help/assets/assets/sharpening_images.pdf)(同样适用于AEM上的Dynamic Media)。
+   * AEM还允许您控制第四个参数：monochrome(0,1)。 此参数确定是将USM锐化分别应用于每个颜色组件（使用值0），还是应用于图像亮度/强度（使用值1）。
 
 
 作为最佳实践，应首先开始设置 USM 锐化 radius 参数。您可以先使用以下 radius 设置：
@@ -79,25 +81,25 @@ AEM 中含有 100 多个 Dynamic Media 图像传送命令，可用于微调和�
 
 将 monochrome 参数设置保留为 0。
 
-### JPEG压缩的最佳实践(&amp;qlt=){#best-practices-for-compression-qlt}
+### JPEG压缩(&amp;qlt=){#best-practices-for-compression-qlt}的最佳实践
 
 * 此参数控制 JPG 编码质量。值越大表示图像质量越高，但文件也越大；反之，值越小表示图像质量越低，但文件也越小。此参数的范围是 0-100。
-* 要优化质量，切勿将该参数值设置为 100。设置为 90 或 95 与设置为 100 几乎没有什么区别，但是设置为 100 会不必要地增加图像文件的大小。因此，要优化质量，同时避免图像文件过大，请将`qlt=<value>`设置为90或95。
+* 要优化质量，切勿将该参数值设置为 100。设置为 90 或 95 与设置为 100 几乎没有什么区别，但是设置为 100 会不必要地增加图像文件的大小。因此，要优化质量，但避免图像文件过大，请将`qlt=<value>`设置为90或95。
 * 要优化较小的图像文件大小，但将图像质量保持在可接受的水平，请将`qlt=<value>`设置为80。 低于70到75的值会导致图像质量显着下降。
-* 作为最佳实践，若要保持在中间，请将`qlt=<value>`设置为85以保持在中间。
+* 作为最佳实践，要保持在中间，请将`qlt=<value>`设置为85以保持在中间。
 * 使用`qlt=`中的色度标志
 
-   * `qlt=`参数有第二个设置，允许您使用值`,1`打开RGB色度缩减采样，或使用值`,0`关闭。
-   * 要保持其简单性，已关闭RGB色度缩减采样的开始(`,0`)。 此设置通常会提高图像质量，尤其是对于具有大量清晰边缘和对比度的合成图像。
+   * `qlt=`参数还有另一个设置，允许您使用值`,1`打开RGB色度缩减采样，或使用值`,0`关闭。
+   * 要保持简单，请关闭RGB色度缩减采样的开始(`,0`)。 此设置通常会提高图像质量，尤其是对于具有大量清晰边缘和对比度的合成图像。
 
 作为JPG压缩的最佳实践，请使用`&qlt=85,0`。
 
 ## JPEG 大小调整的最佳实践 (&amp;jpegSize=) {#best-practices-for-jpeg-sizing-jpegsize}
 
-jpegSize是一个有用的参数，可确保图像不会超过某个大小，以便投放到内存有限的设备。
+jpegSize是一个有用的参数，可以确保图像不会超过某个大小，以便投放到内存有限的设备。
 
-* 此参数以千字节为单位进行设置(`jpegSize=<size_in_kilobytes>`)。 它定义图像投放允许的最大大小。
-* `&jpegSize=` 与JPG压缩参数交互 `&qlt=`。如果具有指定JPG压缩参数(`&qlt=`)的JPG响应未超过jpegSize值，则图像将按照定义以`&qlt=`返回。 否则，`&qlt=`会逐渐减小，直到图像符合允许的最大大小，或直到系统确定它不能适应并返回错误。
+* 此参数以千字节(`jpegSize=<size_in_kilobytes>`)为单位设置。 它为图像投放定义允许的最大大小。
+* `&jpegSize=` 与JPG压缩参数交互 `&qlt=`。如果具有指定JPG压缩参数(`&qlt=`)的JPG响应未超过jpegSize值，则将按照定义以`&qlt=`返回图像。 否则，`&qlt=`会逐渐减小，直到图像符合允许的最大大小，或直到系统确定它无法适应并返回错误。
 
 作为最佳实践，如果要将JPG图像传送到内存有限的设备，请设置`&jpegSize=`并添加参数`&qlt=`。
 
@@ -116,5 +118,5 @@ jpegSize是一个有用的参数，可确保图像不会超过某个大小，以
 在您试验的过程中，以下一般建议对于优化工作流也很有帮助：
 
 * 直接在URL上实时尝试和测试不同的参数。
-* 作为最佳实践，请记住，您可以将Dynamic Media图像服务命令分组到图像预设中。 图像预设基本上是具有自定义预设名称（如`$thumb_low$`和`&product_high$`）的URL命令宏。 URL 路径中的自定义预设名称会调用这些预设。这类功能可帮助您针对网站中图像的不同使用模式来管理命令和质量设置，并缩短 URL 的整体长度。
-* AEM 还提供了更高级的图像质量调整方法，例如在摄取时应用锐化图像。对于高级用例，如果这可能是进一步调整和优化渲染结果的选项，[Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)可以帮助您进行自定义分析和最佳实践。
+* 作为最佳实践，请记住，您可以将Dynamic Media图像服务命令分组到图像预设中。 图像预设基本上就是具有自定义预设名称（如`$thumb_low$`和`&product_high$`）的URL命令宏。 URL 路径中的自定义预设名称会调用这些预设。这类功能可帮助您针对网站中图像的不同使用模式来管理命令和质量设置，并缩短 URL 的整体长度。
+* AEM 还提供了更高级的图像质量调整方法，例如在摄取时应用锐化图像。对于高级用例，如果这可能是进一步调整和优化渲染结果的选项，[Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)可帮助您进行自定义分析和最佳实践。

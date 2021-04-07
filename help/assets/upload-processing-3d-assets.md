@@ -9,26 +9,28 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
+exl-id: 4b8b0247-0978-40b5-92e2-319cfa44b34e
+feature: 3D资产
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '868'
 ht-degree: 66%
 
 ---
-
 
 # 关于 AEM 中 3D 资产的上传和处理 {#about-the-uploading-and-processing-of-d-assets-in-aem}
 
 >[!IMPORTANT]
 >
->AEM 6.4中不再支持AEM 3D。 Adobe建议您将[AEM中的3D资源功能用作Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更高版本。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)。
+>不再支持AEM 6.4中的AEM 3D。 Adobe建议您使用[AEM中的3D资源功能作为Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更高版本。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)。
 
 可使用标准上传或同步机制将 3D 资产及其关联的引用文件纳入 AEM Assets。
 
 请参阅[上传资产](managing-assets-touch-ui.md#uploading-assets)。
 
-Adobe建议您在上传主3D模型文件之前或同时上传所有引用的文件。 但是，这并不作为一项要求。
+Adobe建议您在上传主3D模型文件之前或同时上传所有引用文件。 但是，这并不作为一项要求。
 
 上传完成后，您的 3D 文件会进行转换，并且还会应用其他处理以准备好资产进行查看和渲染。
 
@@ -57,19 +59,19 @@ Adobe建议您在上传主3D模型文件之前或同时上传所有引用的文�
 
 通常，转换和处理 3D 文件会消耗服务器上的大量 CPU 和内存资源。此操作还会花费大量时间。处理时间通常会根据模型的大小和服务器的功能而大不相同。例如，少于 10 万个人脸的典型小模型通常在不到一分钟内便可进行查看；在 2-3 分钟内即可完全处理。然而，拥有超过一百万个人脸的大模型则可能需要几十分钟才能完全处理。
 
-转换、处理和渲染作业会按需要排队，以防止严重减缓服务器速度。消息“正在等待处理……” 上传资产时，卡片视图符&#x200B;]**有时会显示。**[!UICONTROL &#x200B;此状态表示必须先完成其他处理或渲染作业，才会处理当前资产。
+转换、处理和渲染作业会按需要排队，以防止严重减缓服务器速度。消息“正在等待处理……” 在您上传资产时，卡片视图&#x200B;]**有时会显示在**[!UICONTROL &#x200B;中。 此状态表示必须先完成其他处理或渲染作业，才会处理当前资产。
 
-机制可用于限制CPU用于摄取处理和渲染。 有关如何配置CPU限制的信息，请参见[高级配置设置](advanced-config-3d.md)。
+机制可用于限制CPU对摄取处理和渲染的使用。 有关如何配置CPU限制的信息，请参见[高级配置设置](advanced-config-3d.md)。
 
 ## 监测您上传的 3D 文件的处理状态 {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-仅在&#x200B;**[!UICONTROL 卡视图]**&#x200B;中，处理状态和进度会作为进度横幅显示在资产卡上。 每个上传的3D模型通常经历以下4-6个有序处理阶段：
+仅在&#x200B;**[!UICONTROL 卡视图]**&#x200B;中，处理状态和进度将作为进度横幅显示在资产卡上。 通常，每个上传的3D模型都会经历以下4-6个有序处理阶段：
 
 <table> 
  <tbody> 
   <tr> 
    <td><strong>处理阶段</strong><br /> </td> 
-   <td><strong>处理名称</strong></td> 
+   <td><strong>正在处理名称</strong></td> 
    <td><strong>描述</strong></td> 
   </tr> 
   <tr> 
@@ -90,7 +92,7 @@ Adobe建议您在上传主3D模型文件之前或同时上传所有引用的文�
   <tr> 
    <td>4</td> 
    <td>创建地阴影</td> 
-   <td>可选。允许您在3D对象下方的地面上生成环境遮挡投影。 请参阅<a href="/help/assets/advanced-config-3d.md">高级配置设置</a>以启用或禁用此处理。</td> 
+   <td>可选。允许您在3D对象下方的地平面上生成环境遮挡投影。 请参阅<a href="/help/assets/advanced-config-3d.md">高级配置设置</a>以启用或禁用此处理。</td> 
   </tr> 
   <tr> 
    <td>5<br /> </td> 
@@ -104,7 +106,7 @@ Adobe建议您在上传主3D模型文件之前或同时上传所有引用的文�
   </tr> 
   <tr> 
    <td>7<br /> </td> 
-   <td>等待处理</td> 
+   <td>正在等待处理</td> 
    <td>当其他3D资产具有处理优先级时显示。 例如，存在之前已上传但尚未完成处理的资产时。</td> 
   </tr> 
  </tbody> 
@@ -112,5 +114,4 @@ Adobe建议您在上传主3D模型文件之前或同时上传所有引用的文�
 
 >[!NOTE]
 >
->您可以在&#x200B;**[!UICONTROL 详细视图]**&#x200B;中视图3D资产，或在创建预览阶段完成后渲染它。 您无需等待所有处理阶段完成。
-
+>您可以在&#x200B;**[!UICONTROL 详细信息视图]**&#x200B;中视图3D资产，或在创建预览阶段完成后渲染它。 您无需等待所有处理阶段完成。

@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
+exl-id: 088d32a8-a47e-4ae6-a171-8d327d3dac64
+feature: 3D资产
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '350'
 ht-degree: 33%
 
 ---
-
 
 # 解析文件依赖关系 {#resolving-file-dependencies}
 
@@ -39,23 +41,22 @@ ht-degree: 33%
    * **浏览到依赖关系并将其选中**。（此选项假定您已上传依赖关系文件。）
 
       1. 点按红色路径左侧的&#x200B;**[!UICONTROL 文件浏览]**&#x200B;图标。
-      1. 在&#x200B;**[!UICONTROL 选择内容]**&#x200B;页面上，导航到缺少的文件，然后点按文件卡以选择它。
+      1. 在&#x200B;**[!UICONTROL 选择内容]**&#x200B;页面上，导航到缺少的文件，然后点按文件卡以将其选中。
       1. 在&#x200B;**[!UICONTROL 选择内容]**&#x200B;页面的左上角，点按&#x200B;**[!UICONTROL 关闭]**（X图标）以返回至&#x200B;**[!UICONTROL 视图属性]**&#x200B;页面。
    * **上传依赖关系**。（此选项假定您尚未上传缺少的文件。）
 
       1. 请注意缺少的路径和文件名。
       1. 在属性页面的右上角附近，点按&#x200B;**[!UICONTROL 关闭]**。
 
-   上传文件后，返回至&#x200B;**[!UICONTROL 视图属性>依赖项]**&#x200B;页。 新上传的资产现在将正确列为引用的资产。
+   上传文件后，返回至&#x200B;**[!UICONTROL 视图属性>依赖项]**&#x200B;页面。 新上传的资产现在将正确列为引用的资产。
 
    * **忽略依赖关系**。
 
-      如果不再需要缺少的依赖关系，请在&#x200B;**[!UICONTROL 引用的资产]**&#x200B;列下缺少文件左侧的文本字段中键入`n/a`以便AEM 3D忽略该文件。
+      如果不再需要缺少的依赖关系，请在&#x200B;**[!UICONTROL 引用的资产]**&#x200B;列下，在缺少文件左侧的文本字段中键入`n/a`，以便AEM 3D忽略该文件。
 
 
 
 1. 在&#x200B;**[!UICONTROL 视图属性]**&#x200B;页面的右上角附近，点按&#x200B;**[!UICONTROL 保存]**。
 1. 点按&#x200B;**[!UICONTROL 关闭]**&#x200B;以返回至&#x200B;**[!UICONTROL 卡视图]**。
 
-   资产会使用新解析的依赖关系自动重新处理。
-
+   资产会自动使用新解析的依赖关系进行重新处理。

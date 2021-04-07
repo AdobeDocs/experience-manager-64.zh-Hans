@@ -1,72 +1,74 @@
 ---
-title: Dynamic Media-Scene7模式疑难解答
-description: 诊断Dynamic Media-Scene7运行模式。
+title: 疑难解答Dynamic Media - Scene7模式
+description: 疑难解答Dynamic Media - Scene7运行模式。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
+feature: 疑难解答
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1296'
 ht-degree: 1%
 
 ---
 
+# 疑难解答Dynamic Media - Scene7模式{#troubleshooting-dynamic-media-scene-mode}
 
-# 诊断Dynamic Media-Scene7模式{#troubleshooting-dynamic-media-scene-mode}
-
-以下文档描述了Dynamic Media运行&#x200B;**dynamicmedia_scene7**&#x200B;运行模式的疑难解答。
+以下文档介绍了Dynamic Media运行&#x200B;**dynamicmedia_scene7**&#x200B;运行模式的疑难解答。
 
 ## 设置和配置{#setup-and-configuration}
 
-通过执行以下操作，确保正确设置Dynamic Media:
+通过执行以下操作，确保Dynamic Media已正确设置：
 
-* 开始命令包含`-r dynamicmedia_scene7` runmode参数。
-* 任何AEM 6.4累积修复包(CFP)都是先在&#x200B;*之前*&#x200B;安装的，后面是任何可用的Dynamic Media功能包。
-* 安装可选功能包18912。
+* 开始 up命令包含`-r dynamicmedia_scene7` runmode参数。
+* 任何AEM 6.4累积修复包(CFP)都是先在&#x200B;*之前安装的，然后再安装任何可用的Dynamic Media功能包。*
+* 已安装可选功能包18912。
 
-   此可选功能包用于FTP支持，或者如果您要将资产从Dynamic Media经典迁移到Dynamic Media。
+   此可选功能包用于FTP支持，或者如果您要将资产从Dynamic Media Classic迁移到Dynamic Media。
 
 * 导航到Cloud Services用户界面，确认预配的帐户显示在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下。
 * 确保已启用&#x200B;**[!UICONTROL Dynamic Media资产激活(scene7)]**&#x200B;复制代理。
 
    此复制代理位于作者的&#x200B;**[!UICONTROL 代理]**&#x200B;下。
 
-## 常规（所有资产）{#general-all-assets}
+## 常规（所有资源）{#general-all-assets}
 
 以下是所有资源的一些一般提示和技巧。
 
 ### 资产同步状态属性{#asset-synchronization-status-properties}
 
-可以在CRXDE Lite中查看以下资产属性，以确认资产从AEM成功同步到Dynamic Media:
+可以在CRXDE Lite中查看以下资产属性，以确认将资产从AEM成功同步到Dynamic Media:
 
 | **属性** | **示例** | **描述** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | `a|364266` | 该节点链接到Dynamic Media的一般指示符。 |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishComplete]** 或错误文本 | 资产上传到Dynamic Media的状态。 |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | `a|364266` | 节点已链接到Dynamic Media的常规指示器。 |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishCompleteor]** 错误文本 | 资产上传到Dynamic Media的状态。 |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | 必须填充才能生成Dynamic Media远程资产的URL。 |
-| `<object_node>/jcr:content/dam:lastSyncStatus` | `success` 或 `failed:<error text>` | 集（旋转集、图像集等）、图像预设、查看器预设、资产的图像映射更新或已编辑图像的同步状态。 |
+| `<object_node>/jcr:content/dam:lastSyncStatus` | `success` 或 `failed:<error text>` | 集（旋转集、图像集等）、图像预设、查看器预设、资产的图像映射更新或已编辑的图像的同步状态。 |
 
-### 同步记录{#synchronization-logging}
+### 同步日志记录{#synchronization-logging}
 
-同步错误和问题记录在`error.log`(AEM服务器目录`/crx-quickstart/logs/`)中。 可以使用足够的日志记录来确定大多数问题的根本原因，但是您可以通过Sling控制台([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog))在`com.adobe.cq.dam.ips`包上增加到DEBUG的日志记录，以收集更多信息。
+同步错误和问题记录在`error.log`(AEM服务器目录`/crx-quickstart/logs/`)中。 可以使用足够的日志记录来确定大多数问题的根本原因，但您可以通过Sling Console([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog))将记录增加到`com.adobe.cq.dam.ips`包上的DEBUG以收集更多信息。
 
 ### 移动、复制或删除{#move-copy-delete}
 
 在执行移动、复制或删除操作之前，请执行以下操作：
 
-* 对于图像和视频，在执行移动、复制或删除操作之前，请先确认存在`<object_node>/jcr:content/metadata/dam:scene7ID`值。
+* 对于图像和视频，在执行移动、复制或删除操作之前，请确认存在`<object_node>/jcr:content/metadata/dam:scene7ID`值。
 * 对于图像预设和查看器预设，在执行移动、复制或删除操作之前，请先确认存在`https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata`值。
 * 如果缺少上述元数据值，您需要在移动、复制或删除操作之前重新上传资产。
 
 ### 版本控件{#version-control}
 
-替换现有的Dynamic Media资产（名称和位置相同）时，您可以选择保留两个资产或替换或创建一个版本：
+替换现有Dynamic Media资产（同名和位置）时，您可以选择保留两个资产或替换或创建一个版本：
 
-* 同时保留这两个属性将为已发布的资产URL创建一个具有唯一名称的新资产。 例如，**[!UICONTROL image.jpg]**&#x200B;是原始资产，**[!UICONTROL image1.jpg]**&#x200B;是新上传的资产。
+* 同时保留这两个选项将为已发布的资产URL创建一个具有唯一名称的新资产。 例如，**[!UICONTROL image.jpg]**&#x200B;是原始资产，**[!UICONTROL image1.jpg]**&#x200B;是新上传的资产。
 
-* 在Dynamic Media-Scene7模式投放中不支持创建版本。 新版本将替换投放中的现有资产。
+* Dynamic Media - Scene7模式投放中不支持创建版本。 新版本将替换投放中的现有资产。
 
 ## 图像和集{#images-and-sets}
 
@@ -86,44 +88,44 @@ ht-degree: 1%
      <li><p>转到CRX/DE:</p> 
       <ul> 
        <li>检查JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>中的预设是否已定义。 请注意，如果您从AEM 6.x升级到6.4并选择退出迁移，则此位置适用。 否则，位置为<code>/conf/global/settings/dam/dm/presets/viewer</code>。</li> 
-       <li>检查以确保JCR中的资产在元数据下具有<code>dam:scene7FileStatus</code><strong> </strong>显示为<code>PublishComplete</code>。</li> 
+       <li>检查以确保JCR中的资产在“Metadata”（元数据）下具有<code>dam:scene7FileStatus</code><strong> </strong>，显示为<code>PublishComplete</code>。</li> 
       </ul> </li> 
     </ol> </td> 
-   <td><p>刷新页面／导航到其他页面并返回（需要重新编译侧边栏JSP）</p> <p>如果这行不通：</p> 
+   <td><p>刷新页面/导航到其他页面并返回（需要重新编译边栏JSP）</p> <p>如果这行不通：</p> 
     <ul> 
      <li>发布资产。</li> 
-     <li>重新上传资产并发布它。</li> 
+     <li>重新上传资产并发布。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>在永久加载时，集编辑器中的资产选择器卡住</td> 
+   <td>集编辑器中的资产选择器卡在永久加载中</td> 
    <td><p>6.4中要修复的已知问题</p> </td> 
    <td><p>关闭选择器并重新打开它。</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>在</strong> 编辑集时选择资产后，“选择”按钮不处于活动状态</td> 
+   <td><strong>在</strong> 编辑资产集时选择资产后，“选择”按钮不处于活动状态</td> 
    <td><p> </p> <p>6.4中要修复的已知问题</p> <p> </p> </td> 
-   <td><p>首先在资产选择器中单击另一个文件夹，然后返回以选择资产。</p> </td> 
+   <td><p>首先单击资产选择器中的其他文件夹，然后返回以选择资产。</p> </td> 
   </tr> 
   <tr> 
-   <td>在幻灯片之间切换后，旋转热点移动</td> 
+   <td>在幻灯片之间切换后，轮盘热点四处移动</td> 
    <td><p>检查所有幻灯片的大小是否相同。</p> </td> 
    <td><p>仅对传送使用大小相同的图像。</p> </td> 
   </tr> 
   <tr> 
-   <td>图像与Dynamic Media查看器不预览</td> 
-   <td><p>检查资产是否包含元数据属性(CRXDE Lite)中的<code>dam:scene7File</code></p> </td> 
+   <td>图像不与Dynamic Media查看器预览</td> 
+   <td><p>检查资产是否在元数据属性(CRXDE Lite)中包含<code>dam:scene7File</code></p> </td> 
    <td><p>检查所有资产是否已完成处理。</p> </td> 
   </tr> 
   <tr> 
-   <td>上传的资产不会显示在资产选择器中</td> 
-   <td><p>检查资产的属性<code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code>(CRXDE Lite)</p> </td> 
+   <td>上传的资产不显示在资产选择器中</td> 
+   <td><p>检查资产具有属性<code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code>(CRXDE Lite)</p> </td> 
    <td><p>检查所有资产是否已完成处理。</p> </td> 
   </tr> 
   <tr> 
    <td>卡上的横幅视图在资产尚未开始处理时显示<strong>New</strong></td> 
    <td>检查资产<code>jcr:content</code> &gt; <code>dam:assetState</code> =如果<code>unprocessed</code>未被工作流拾取。</td> 
-   <td>等待工作流选取资产。</td> 
+   <td>等待工作流拾取资产。</td> 
   </tr> 
   <tr> 
    <td>图像或图像集不显示查看器URL或嵌入代码</td> 
@@ -135,7 +137,7 @@ ht-degree: 1%
 
 ## 视频 {#video}
 
-如果您对视频有问题，请参阅以下疑难解答指南。
+如果您对视频有任何问题，请参阅以下疑难解答指南。
 
 <table> 
  <tbody> 
@@ -154,10 +156,10 @@ ht-degree: 1%
     </ul> </td> 
    <td> 
     <ol> 
-     <li>为文件夹分配视频用户档案。</li> 
+     <li>将视频用户档案分配给文件夹。</li> 
      <li>编辑视频用户档案以包含多个编码预设。</li> 
      <li>等待视频完成处理。</li> 
-     <li>如果重新加载视频，请确保Dynamic Media编码视频工作流未运行。<br /> </li> 
+     <li>要重新加载视频，请确保Dynamic Media编码视频工作流未运行。<br /> </li> 
      <li>重新上传视频。</li> 
     </ol> </td> 
   </tr> 
@@ -173,12 +175,12 @@ ht-degree: 1%
     <ol> 
      <li>使用<span class="kbd">-r dynamicmedia_scene7</span>检查AEM实例</li> 
      <li>检查Cloud Services下的Dynamic Media配置是否正确设置。</li> 
-     <li>检查文件夹是否包含视频用户档案。 另外，检查视频用户档案。</li> 
+     <li>检查文件夹是否包含视频用户档案。 此外，检查视频用户档案。</li> 
     </ol> </td> 
   </tr> 
   <tr> 
-   <td>视频处理过长</td> 
-   <td><p>要确定视频编码是否仍在进行中或是否已进入失败状态：</p> 
+   <td>视频处理时间过长</td> 
+   <td><p>要确定视频编码是否仍在进行中或是否已进入失败状态，请执行以下操作：</p> 
     <ul> 
      <li>检查视频状态<code>http://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <span class="kbd">dam:assetState</span></li> 
      <li>从工作流控制台<code>http://localhost:4502/libs/cq/workflow/content/console.html</code> &gt;实例、存档、失败选项卡中监视视频。</li> 
@@ -186,7 +188,7 @@ ht-degree: 1%
    <td> </td> 
   </tr> 
   <tr> 
-   <td>视频再现缺失</td> 
+   <td>缺少视频再现</td> 
    <td><p>上传视频时，但没有编码的演绎版：</p> 
     <ul> 
      <li>检查文件夹是否分配了视频用户档案。</li> 
@@ -194,7 +196,7 @@ ht-degree: 1%
     </ul> </td> 
    <td> 
     <ol> 
-     <li>为文件夹分配视频用户档案。</li> 
+     <li>将视频用户档案分配给文件夹。</li> 
      <li>等待视频完成处理。<br /> </li> 
     </ol> </td> 
   </tr> 
@@ -203,7 +205,7 @@ ht-degree: 1%
 
 ## 查看器 {#viewers}
 
-如果查看器有问题，请参阅以下疑难解答指南。
+如果您与查看器有问题，请参阅以下疑难解答指南。
 
 <table> 
  <tbody> 
@@ -214,23 +216,23 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td>查看器预设未发布</td> 
-   <td><p>继续执行示例管理器诊断页面： <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>观察计算值。 正确运行时，您应当看到：</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:配置Dynamic Media云设置后，查看器资源可能需要大约10分钟才能同步。</p> <p>如果未激活的资产仍保留，请单击<strong>列表所有未激活的资产</strong>按钮以查看详细信息。</p> </td> 
+   <td><p>继续执行示例管理器诊断页： <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>观察计算值。 正确操作时，您应看到：</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:配置Dynamic Media云设置后，可能需要大约10分钟才能同步查看器资源。</p> <p>如果未激活的资产仍保留，请单击<strong>列表所有未激活的资产</strong>按钮中的任一按钮以查看详细信息。</p> </td> 
    <td> 
     <ol> 
      <li>在管理工具中导航到查看器预设列表: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li> 
      <li>选择所有查看器预设，然后单击<strong>发布</strong>。</li> 
-     <li>导航回示例管理器，并观察未激活的资产计数现在为零。</li> 
+     <li>导航回示例管理器，观察未激活的资产计数现在为零。</li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td>查看器预设图稿会从资产详细信息中的预览或复制URL/嵌入代码返回404</td> 
-   <td><p>在CRXDE Lite中，请执行以下操作：</p> 
+   <td><p>在CRXDE Lite中，执行以下操作：</p> 
     <ol> 
-     <li>导览至您的Dynamic Media同步文件夹中的<code>&lt;sync-folder&gt;/_CSS/_OOTB</code>文件夹（例如<code>/content/dam/_CSS/_OOTB</code>）,</li> 
+     <li>导航到Dynamic Media sync文件夹中的<code>&lt;sync-folder&gt;/_CSS/_OOTB</code>文件夹（例如<code>/content/dam/_CSS/_OOTB</code>），</li> 
      <li>查找有问题的资产的元数据节点（例如<code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>）。</li> 
-     <li>检查是否存在<code>dam:scene7*</code>属性。 如果资产已成功同步并发布，您会看到<code>dam:scene7FileStatus</code>集设置为<strong>PublishComplete</strong>。</li> 
-     <li>尝试通过连接以下属性和字符串文字的值直接从Dynamic Media请求图稿 
+     <li>检查是否存在<code>dam:scene7*</code>属性。 如果资产已成功同步并发布，您会看到<code>dam:scene7FileStatus</code>集为<strong>PublishComplete</strong>。</li> 
+     <li>尝试通过连接以下属性和字符串文本的值直接从Dynamic Media请求图稿 
       <ul> 
        <li><code>dam:scene7Domain</code></li> 
        <li><code>"is/content"</code></li> 
@@ -239,7 +241,7 @@ ht-degree: 1%
        <li>示例: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li> 
       </ul> </li> 
     </ol> </td> 
-   <td><p>如果示例资产或查看器预设图稿尚未同步或发布，则重新启动整个复制／同步过程：</p> 
+   <td><p>如果示例资产或查看器预设图稿尚未同步或发布，请重新启动整个复制/同步过程：</p> 
     <ol> 
      <li>导航到CRXDE Lite。 
       <ul> 
@@ -247,15 +249,14 @@ ht-degree: 1%
       </ul> </li> 
      <li>导航到CRX包管理器：<code>http://localhost:4502/crx/packmgr/</code><a href="http://localhost:4502/crx/packmgr/"></a> 
       <ol> 
-       <li>在列表中搜索查看器包(它开始<span class="kbd">cq-dam-scene7-viewers-content</span>)</li> 
+       <li>以列表方式搜索查看器包(它使用<span class="kbd">cq-dam-scene7-viewers-content</span>开始)</li> 
        <li>单击<strong>重新安装</strong>。</li> 
       </ol> </li> 
-     <li>在“Cloud Services”下，导航到“Dynamic Media配置”页，然后打开Dynamic Media- S7配置的配置对话框。 
+     <li>在“Cloud Services”下，导航到Dynamic Media配置页，然后打开Dynamic Media - S7配置的配置对话框。 
       <ul> 
-       <li>不进行更改，单击<strong>保存</strong>。 这会再次触发逻辑以创建和同步示例资产、查看器预设CSS和图稿。<br /> <br /> </li> 
+       <li>不进行更改，单击<strong>保存</strong>。 这会再次触发创建和同步示例资产、查看器预设CSS和图稿的逻辑。<br /> <br /> </li> 
       </ul> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
 </table>
-

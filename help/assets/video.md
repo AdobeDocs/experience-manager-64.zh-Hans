@@ -923,7 +923,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    * 首先，确定您是否需要`&preset`参数。
 
-      如果`config2`参数为`companypreset`，则&#x200B;*not*&#x200B;需要`&preset=parameter`。
+      如果`config2`参数为`companypreset`，则&#x200B;*不*&#x200B;需要`&preset=parameter`。
 
       如果 `config2` 是其他任何内容，请将预设参数设置为与 `config2` 参数相同。例如，如果`config2=companypreset-2`，则将`&param2=companypreset-2`添加到AppMeasurmentBridge.jsp URL。
 

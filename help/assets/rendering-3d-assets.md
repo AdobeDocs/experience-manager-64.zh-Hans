@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5b044519-d034-4f05-98c5-f1b299a3ea37
+exl-id: 3eecec53-0b39-4783-8730-f08705183941
+feature: 3D资产
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '702'
 ht-degree: 65%
 
 ---
-
 
 # 渲染 3D 资产 {#rendering-d-assets}
 
@@ -38,7 +40,7 @@ ht-degree: 65%
 
 Rapid Refine 渲染器通常需要数分钟才能渲染较大的图像。但是，第三方渲染器在配置为获取最高质量时，通常需要很多分钟，甚至长达数小时。
 
-转换、处理和渲染作业会根据需要在服务器上排队，以防止服务器过载。卡片视图中最近上传的资产会显示消息“正在等待渲染...”。此状态表示必须完成其他处理或渲染作业，才能完成当前渲染作业开始。
+转换、处理和渲染作业会根据需要在服务器上排队，以防止服务器过载。卡片视图中最近上传的资产会显示消息“正在等待渲染...”。此状态表示必须完成其他处理或渲染作业，才能完成当前渲染作业的开始。
 
 >[!NOTE]
 >
@@ -51,14 +53,14 @@ Rapid Refine 渲染器通常需要数分钟才能渲染较大的图像。但是�
    请参阅[查看 3D 资产](viewing-3d-assets.md)。
 
 1. 在 Adobe Experience Manager 中的&#x200B;**[!UICONTROL 导航]**&#x200B;页面上，点按&#x200B;**[!UICONTROL 资产]**。
-1. 在页面的右上角附近，从&#x200B;**[!UICONTROL 视图]**&#x200B;下拉列表中，点按&#x200B;**[!UICONTROL 卡视图]**。
+1. 在页面右上角附近，从&#x200B;**[!UICONTROL 视图]**&#x200B;下拉列表中，点按&#x200B;**[!UICONTROL 卡视图]**。
 1. 导航到要渲染的3D对象。
 1. 点按 3D 对象的卡片以在资产详细信息页面中打开它。
 1. 在页面的左上角附近，点按下拉列表，然后选择&#x200B;**[!UICONTROL 渲染]**。
 
    ![chlimage_1-369](assets/chlimage_1-369.png)
 
-1. 在资产详细信息页面的右上角附近，点按&#x200B;**[!UICONTROL 舞台选择器]**&#x200B;图标（聚焦），然后选择您要应用于3D对象的具有背景和光线的舞台名称。
+1. 在资产详细信息页面的右上角附近，点按&#x200B;**[!UICONTROL 舞台选择器]**&#x200B;图标（聚光灯），然后选择要应用于3D对象的具有背景和光照的舞台名称。
 
    请参阅[关于在 AEM 3D 中使用舞台](about-the-use-of-stages-in-aem-3d.md)。
 
@@ -76,7 +78,7 @@ Rapid Refine 渲染器通常需要数分钟才能渲染较大的图像。但是�
 
    * 在&#x200B;**[!UICONTROL 宽度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;字段中，输入要渲染图像的像素宽度和高度。
    * 在&#x200B;**[!UICONTROL 图像名称]**&#x200B;字段中，输入渲染后图像的名称。
-   * 在&#x200B;**[!UICONTROL 导出路径]**&#x200B;字段中，输入要存储渲染后的图像的路径。 或者，点按&#x200B;**[!UICONTROL 浏览]**&#x200B;图标并导航到某个位置。
+   * 在&#x200B;**[!UICONTROL 导出路径]**&#x200B;字段中，输入要存储渲染后图像的路径。 或者，点按&#x200B;**[!UICONTROL 浏览]**&#x200B;图标并导航到某个位置。
    * （可选）选中或取消选中“覆盖现有图像]e **”复选框。**[!UICONTROL 
 
 1. 在资产详细信息页面的右上角附近，点按&#x200B;**[!UICONTROL 相机选择器]**&#x200B;图标。 选择要对渲染后的图像应用的相机视图。
@@ -89,5 +91,4 @@ Rapid Refine 渲染器通常需要数分钟才能渲染较大的图像。但是�
 
 1. 点按&#x200B;**[!UICONTROL 开始渲染]**&#x200B;以开始渲染过程。
 
-   此时会临时显示一条消息，指示渲染已开始。为方便起见，此消息还包含指向所选输出文件夹的链接，以便您直接导航到该文件夹。
-
+   此时会临时显示一条消息，指示渲染已开始。为方便起见，此消息还包含指向所选输出文件夹的链接，以便您能够直接导航到该文件夹。

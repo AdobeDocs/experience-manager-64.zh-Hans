@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
+exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
+feature: 资产管理
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 25%
 
 ---
-
 
 # 传送 Dynamic Media 资产 {#delivering-dynamic-media-assets}
 
@@ -29,11 +31,11 @@ ht-degree: 25%
 
    * 将视频或图像嵌入您的网站。
    * 将URL关联到您的Web应用程序。当您希望以弹出窗口或模态窗口的形式传送视频播放器时，可使用链接。
-   * 如果您的站点是响应式的，您可以[传送优化的图像。](responsive-site.md)
+   * 如果您的站点是响应式的，则您可以[传送优化的图像。](responsive-site.md)
 
 >[!NOTE]
 >
->智能成像可以与现有图像预设配合使用，并在投放的最后一毫秒使用智能功能根据浏览器或网络连接速度进一步减小图像文件大小。 有关详细信息，请参阅[智能成像](imaging-faq.md)。
+>智能成像功能可以与您现有的图像预设配合使用，并在投放的最后一毫秒使用智能功能根据浏览器或网络连接速度进一步减小图像文件大小。 有关详细信息，请参阅[智能成像](imaging-faq.md)。
 
 有关更多信息，请参阅下列主题：
 
@@ -49,6 +51,6 @@ ht-degree: 25%
 
 ## HTTP/2投放Dynamic Media资源{#http-delivery-of-dynamic-media-assets}
 
-AEM现在支持通过HTTP/2投放所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 随后，将通过HTTP/2协议传送已发布的资产。 此投放方法改进了浏览器和服务器通信的方式，使您的所有Dynamic Media资源都能得到更好的响应和加载时间。
+AEM现在支持通过HTTP/2投放所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，通过HTTP/2协议传送已发布的资产。 此投放方法改进了浏览器和服务器通信的方式，使您的所有Dynamic Media资源都能得到更好的响应和加载时间。
 
-请参阅[HTTP/2投放内容常见问题](/help/sites-administering/scene7-http2faq.md)以了解更多信息。
+有关详细信息，请参阅[HTTP/2内容常见问题解答投放](/help/sites-administering/scene7-http2faq.md)。

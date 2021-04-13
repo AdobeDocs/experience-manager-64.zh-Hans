@@ -4,15 +4,15 @@ description: 了解各种资源管理和编辑任务，您可以使用AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
 feature: 资产管理，搜索，演绎版，协作
-role: 商务从业人员
+role: Business Practitioner
+exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
 workflow-type: tm+mt
-source-wordcount: '10046'
+source-wordcount: '10083'
 ht-degree: 6%
 
 ---
-
 
 # 管理您的数字资产{#managing-assets-with-the-touch-optimized-ui}
 
@@ -519,11 +519,11 @@ PSD(Photoshop 文档)文件最常用于创建图像模板。 在上传PSD文件�
 
    >[!NOTE]
    >
-   >如果您从演绎版面板中选 **[!UICONTROL 择了演绎版]** ，工具栏会更改上下文并仅显示与演绎版相关的那些操作。 不显示&#x200B;**[!UICONTROL 上载演绎版]**&#x200B;图标等选项。 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
+   >如果从&#x200B;**[!UICONTROL “演绎版”]**&#x200B;面板选择演绎版，则工具栏更改上下文并仅显示与该演绎版相关的那些操作。不显示&#x200B;**[!UICONTROL 上载演绎版]**&#x200B;图标等选项。 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
 
    您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的尺寸。 根据您指定的尺寸，AEM Assets显示尺寸精确或最接近的再现。
 
-   要在资产详细信息级别配置图像的演绎版尺寸，请叠加&#x200B;**[!UICONTROL renditionpicker]**&#x200B;节点`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`并配置width属性的值。 配置属性大 **[!UICONTROL 小（长）(以KB]** )代替宽度，以根据图像大小在资产详细信息页面上自定义再现。 对于基于大小的自定义，如果匹配的演绎版的大小大于原始格式，则属性&#x200B;**[!UICONTROL preferOriginal]**&#x200B;会为原始格式分配首选项。
+   要在资产详细信息级别配置图像的演绎版尺寸，请叠加&#x200B;**[!UICONTROL renditionpicker]**&#x200B;节点`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`并配置width属性的值。 配置属性&#x200B;**[!UICONTROL 大小（长）(以 KB 计）]**&#x200B;代替宽度，以根据图像大小在资源详细信息页面上自定义演绎版。对于基于大小的自定义，如果匹配的演绎版的大小大于原始格式，则属性&#x200B;**[!UICONTROL preferOriginal]**&#x200B;会为原始格式分配首选项。
 
    同样，您也可以通过覆盖`libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`来自定义&#x200B;**[!UICONTROL 注释]**&#x200B;页面图像。
 
@@ -571,48 +571,33 @@ PSD(Photoshop 文档)文件最常用于创建图像模板。 在上传PSD文件�
 
 请参阅[从AEM](download-assets-from-aem.md)下载资源
 
-## 发布资产{#publishing-assets}
+## 发布和取消发布资产{#publish-assets}
 
-如果您发布的资产正在处理，则仅会发布原始内容。 缺少再现。 等待处理完成，然后在处理完成后发布或重新发布资产。
+在[!DNL Experience Manager]作者上传、处理或编辑您的资产后，您会将该资产发布到发布服务器。 发布后，资产将公开可用。 取消发布操作从发布服务器中删除了资产，但未从创作服务器中删除。
 
-如果要发布的文件夹包含空文件夹，则不会发布空文件夹。
+有关特定于[!DNL Dynamic Media]的信息，请参阅[发布 [!DNL Dynamic Media] 资产](publishing-dynamicmedia-assets.md)。
 
-有关Dynamic Media的详细信息，请参阅[发布Dynamic Media资产](publishing-dynamicmedia-assets.md)。
+1. 导航到要发布或要从发布环境（取消发布）中删除的资产或资产文件夹的位置。
 
-**要发布资产**:
+1. 选择要取消发布的资产或文件夹，然后单击工具栏中的&#x200B;**[!UICONTROL 管理发布]** ![管理发布选项](assets/do-not-localize/globe-publication.png)选项。 或者，要快速发布，请从工具栏中选择&#x200B;**[!UICONTROL 快速发布]**&#x200B;选项。 如果要发布的文件夹包含空文件夹，则不会发布空文件夹。
 
-1. 导航到要发布的资产/文件夹所在的位置
+1. 根据需要选择&#x200B;**[!UICONTROL Publish]**&#x200B;或&#x200B;**[!UICONTROL Unpublish]**&#x200B;选项。
 
-1. 从资产卡中选择&#x200B;**[!UICONTROL 发布]**&#x200B;快速操作，或选择资产并点按工具栏中的&#x200B;**[!UICONTROL 快速发布]**&#x200B;图标。
-1. 如果资产引用了其他资产，向导中便会列出这些引用。仅显示自上次发布或取消发布后未发布或已修改的引用。 选择要发布的引用。
+   ![取消发布操作](assets/unpublish_action.png)
+   *图：发布和取消发布选项以及计划选项。*
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+1. 选择&#x200B;**[!UICONTROL Now]**&#x200B;立即对资产执行操作，或选择&#x200B;**[!UICONTROL 稍后]**&#x200B;计划操作。 如果选择&#x200B;**[!UICONTROL 稍后]**&#x200B;选项，请选择日期和时间。 单击&#x200B;**[!UICONTROL 下一步]**。
 
-1. 点按&#x200B;**[!UICONTROL 发布]**&#x200B;以确认资产的激活。
+1. 发布时，如果资产引用了其他资产，向导中便会列出这些引用。 仅显示自上次发布后未发布或修改的引用。 选择要发布的引用。
 
-## 取消发布资产{#unpublishing-assets}
+1. 取消发布时，如果资产引用了其他资产，请选择您要取消发布的引用。 单击&#x200B;**[!UICONTROL 取消发布]**。 在确认对话框中，单击&#x200B;**[!UICONTROL 取消]**&#x200B;以停止操作，或单击&#x200B;**[!UICONTROL 取消发布]**&#x200B;以确认资产将在指定日期取消发布。
 
-取消发布复杂资产时，仅取消发布该资产。请避免取消发布引用，因为可能其他已发布的资产也引用了这些内容。
+了解与发布或取消发布资产或文件夹相关的以下限制和提示：
 
-**要取消发布资产**:
-
-1. 导航到要从发布环境（取消发布）中删除的资产或资产文件夹的位置。
-
-1. 选择要取消发布的资产或文件夹，然后点按工具栏中的&#x200B;**[!UICONTROL 管理发布]**&#x200B;图标。
-
-   ![manage_publication](assets/manage_publication.png)
-
-1. 从列表中选择&#x200B;**[!UICONTROL 取消发布]**&#x200B;操作。
-
-   ![unpublish_action](assets/unpublish_action.png)
-
-1. 要稍后取消发布资产，请选择&#x200B;**[!UICONTROL 稍后取消发布]**，然后选择取消发布资产的日期。
-1. 计划一个资产在发布环境中不再可用的日期。
-1. 如果资产引用了其他资产，请选择要取消发布的引用。点按&#x200B;**[!UICONTROL 取消发布]**。
-1. 在确认对话框中，执行下列操作之一：
-
-   * 点按&#x200B;**[!UICONTROL 取消]**&#x200B;以停止操作
-   * 点按&#x200B;**[!UICONTROL 取消发布]**&#x200B;以确认在指定日期已取消发布资产(在发布环境中不再可用)。
+* [!UICONTROL 管理发布]选项仅对具有复制权限的用户帐户可用。
+* 取消发布复杂资产时，仅取消发布资产。 请避免取消发布引用，因为其他已发布的资产可能会引用这些内容。
+* 未发布空文件夹。
+* 如果您发布的资产正在处理，则仅会发布原始内容。 缺少再现。 等待处理完成，然后在处理完成后发布或重新发布资产。
 
 ## 创建已关闭的用户组{#closed-user-group}
 
@@ -766,7 +751,7 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
    * [快速操作](managing-assets-touch-ui.md#quick-actions)
    * 在选择资产或导航到资产页面后从工具栏中
 
-   ![chlimage_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. 在时间轴底部的&#x200B;**[!UICONTROL 注释]**&#x200B;框中添加注释。或者，在图像上标出一个区域，并在&#x200B;**[!UICONTROL 添加注释]**&#x200B;对话框中添加注释。
 

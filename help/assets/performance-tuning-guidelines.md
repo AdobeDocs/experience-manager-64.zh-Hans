@@ -2,8 +2,8 @@
 title: 资产性能调整指南
 description: 围绕AEM配置、硬件、软件和网络组件的更改等重点领域，旨在消除瓶颈并优化AEM Assets性能。
 contentOwner: AG
-feature: 资产管理
-role: 架构师，管理员
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

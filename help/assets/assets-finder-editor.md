@@ -2,8 +2,8 @@
 title: 创建和配置资产编辑器页面
 description: 了解如何创建自定义资产编辑器页面和同时编辑多个资产。
 contentOwner: AG
-feature: 开发人员工具，资产管理
-role: 业务从业者，管理员
+feature: Developer Tools,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

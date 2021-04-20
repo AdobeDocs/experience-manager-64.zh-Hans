@@ -2,8 +2,8 @@
 title: 元数据架构参考
 description: '了解描述资产元数据的标准惯例，包括都柏林核心、IPTC和其他元数据模式。 '
 contentOwner: AG
-feature: 元数据
-role: 业务从业者，管理员
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 批量编辑多个资产和收藏集的元数据
 description: 了解如何同时编辑许多资产和收藏集的元数据，以快速传播常见的元数据更改。
 contentOwner: AG
-feature: 资产管理，元数据，集合
-role: 商务从业人员
+feature: Asset Management,Metadata,Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

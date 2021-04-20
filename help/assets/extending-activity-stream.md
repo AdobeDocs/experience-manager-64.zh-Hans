@@ -2,8 +2,8 @@
 title: 将资产与活动流集成
 description: 介绍AEM的录制功能以及如何配置AEM以录制特定事件。
 contentOwner: AG
-feature: 资产管理
-role: 开发人员
+feature: Asset Management
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 资产选择器
 description: 了解如何使用资产选择器在Adobe Experience Manager(AEM)资产中搜索、筛选、浏览和提取资产的元数据。 还了解如何自定义资产选择器界面。
 contentOwner: AG
-feature: 资产管理，元数据，搜索
-role: 商务从业人员
+feature: Asset Management,Metadata,Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

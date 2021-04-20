@@ -2,7 +2,7 @@
 title: 安全核对清单
 seo-title: 安全核对清单
 description: 了解配置和部署AEM时的各种安全注意事项。
-feature: 安全
+feature: Security
 seo-description: 了解配置和部署AEM时的各种安全注意事项。
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service

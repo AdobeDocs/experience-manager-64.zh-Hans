@@ -2,7 +2,7 @@
 title: AEM和Creative Cloud集成最佳实践
 description: 将AEM部署与Adobe Creative Cloud集成以简化资产传输工作流并实现最高效率的最佳实践
 contentOwner: AG
-feature: 协作，Adobe资产链接，桌面应用程序
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: Business Practitioner,Administrator
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
 translation-type: tm+mt

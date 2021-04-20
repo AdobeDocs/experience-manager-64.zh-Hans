@@ -2,8 +2,8 @@
 title: 在AEM中搜索资产
 description: 了解如何使用“过滤器”面板在AEM中查找所需的资源，以及如何使用显示在搜索中的资源。
 contentOwner: AG
-feature: 搜索，元数据
-role: 商务从业人员
+feature: Search,Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

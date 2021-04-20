@@ -2,8 +2,8 @@
 title: 资产代理开发
 description: '代理是使用代理Worker处理作业的AEM实例。 了解如何配置AEM代理、支持的操作、代理组件，以及如何开发自定义代理Worker。 '
 contentOwner: AG
-feature: 资产处理
-role: 管理员、架构师
+feature: Asset Processing
+role: Administrator, Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

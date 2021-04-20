@@ -2,8 +2,8 @@
 title: 处理资产以完成业务流程、进行审计、实现法规遵从性并保持基本的完整性
 description: 资产处理功能，可转换格式、创建演绎版、管理资产、验证资产和运行工作流。
 contentOwner: AG
-feature: 工作流，演绎版
-role: 业务从业者，管理员
+feature: Workflow,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

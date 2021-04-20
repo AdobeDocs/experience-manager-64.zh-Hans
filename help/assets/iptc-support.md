@@ -2,8 +2,8 @@
 title: 支持IPTC元数据
 description: 了解Adobe Experience Manager(AEM)资产如何支持通过Adobe Bridge和其他创意应用程序添加到资产的IPTC元数据、创意评级和关键字。
 contentOwner: AG
-feature: 元数据
-role: 业务从业者，管理员，领导者
+feature: Metadata
+role: Business Practitioner,Administrator,Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

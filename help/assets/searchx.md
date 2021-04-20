@@ -2,8 +2,8 @@
 title: 扩展资产搜索
 description: 将AEM Assets的搜索功能扩展至开箱即用式按字符串搜索资产之外。
 contentOwner: AG
-feature: 搜索
-role: 开发人员
+feature: Search
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

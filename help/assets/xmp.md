@@ -2,8 +2,8 @@
 title: XMP 元数据
 description: 了解AEM Assets用于元数据管理的XMP（可扩展元数据平台）元数据标准。 XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
 contentOwner: AG
-feature: 元数据
-role: 业务从业者，管理员
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 创建翻译项目
 description: 了解如何在AEM中创建翻译项目。
 contentOwner: AG
-feature: 翻译
-role: 架构师，管理员
+feature: Translation
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

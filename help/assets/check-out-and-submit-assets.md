@@ -2,8 +2,8 @@
 title: 登记和注销您的数字资产，以便进行编辑
 description: 了解如何签出资产进行编辑，并在更改完成后重新签入。
 contentOwner: AG
-feature: 资产管理
-role: 商务从业人员
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

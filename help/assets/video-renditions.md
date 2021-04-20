@@ -2,8 +2,8 @@
 title: 视频演绎版
 description: 视频演绎版
 contentOwner: AG
-feature: 视频，演绎版
-role: 商务从业人员
+feature: Video,Renditions
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

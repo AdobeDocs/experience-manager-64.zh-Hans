@@ -2,8 +2,8 @@
 title: 资源文件格式最佳实践
 description: AEM Assets中文件支持的最佳实践。
 contentOwner: AG
-feature: 资源管理，开发人员工具
-role: 管理员
+feature: Asset Management,Developer Tools
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

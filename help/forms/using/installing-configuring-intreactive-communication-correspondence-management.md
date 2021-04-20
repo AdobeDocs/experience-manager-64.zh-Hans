@@ -6,7 +6,7 @@ seo-description: '安装和配置AEM Forms Interactive Communications，以创�
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
-role: 管理员
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

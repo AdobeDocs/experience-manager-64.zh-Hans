@@ -2,8 +2,8 @@
 title: GQL全文搜索
 description: 浏览AEM Assets中的GQL全文搜索功能。 使用它可以根据特定元数据（如标题、描述和作者姓名）搜索资产。
 contentOwner: AG
-feature: 搜索，元数据
-role: 商务从业人员
+feature: Search,Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

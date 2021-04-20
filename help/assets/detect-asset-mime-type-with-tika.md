@@ -2,8 +2,8 @@
 title: 使用Apache Tika检测MIME类型的数字资产
 description: 启用Apache Tika以帮助AEM Assets在上传操作（而非文件扩展名）期间检测内容流中的MIME类型资产。
 contentOwner: AG
-feature: 元数据，开发人员工具，资产管理
-role: 管理员，架构师
+feature: Metadata,Developer Tools,Asset Management
+role: Administrator,Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

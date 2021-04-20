@@ -2,7 +2,7 @@
 title: 配置资产上传限制
 description: 了解如何配置Adobe Experience Manager(AEM)资产以限制用户可以上传的资产（文件）类型。
 contentOwner: AG
-feature: 上传，资产摄取，资产管理
+feature: Upload,Asset Ingestion,Asset Management
 role: Administrator,Architect
 exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
 translation-type: tm+mt

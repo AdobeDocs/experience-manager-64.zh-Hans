@@ -2,8 +2,8 @@
 title: AEM Assets 主页体验
 description: 个性化AEM Assets主页，获得丰富的欢迎屏幕体验，包括有关资产的近期活动的快照。
 contentOwner: AG
-feature: 开发人员工具，资产管理
-role: 管理员，业务从业者
+feature: Developer Tools,Asset Management
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

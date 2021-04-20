@@ -2,8 +2,8 @@
 title: 使用资产分析的演示包
 description: 使用演示包，让Adobe资产洞察能够从网页捕获数据并生成洞察。
 contentOwner: AG
-feature: 资产分析，资产报表
-role: 业务从业者，管理员
+feature: Asset Insights,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

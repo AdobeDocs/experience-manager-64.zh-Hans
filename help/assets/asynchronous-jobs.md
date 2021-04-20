@@ -2,8 +2,8 @@
 title: 在 [!DNL Adobe Experience Manager]中配置异步操作。
 description: 异步完成某些资源密集型任务以优化 [!DNL Experience Manager Assets]中的性能。
 contentOwner: AG
-feature: 资产管理
-role: 商务从业人员
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: AEM 6中的审核日志维护
 seo-title: AEM 6中的审核日志维护
 description: 了解AEM中的审核日志维护。
-feature: 运营
+feature: Operations
 seo-description: 了解AEM中的审核日志维护。
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User

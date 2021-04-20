@@ -8,7 +8,7 @@ user-guide-title: Adobe Experience Manager 6.4 Forms 指南
 breadcrumb-title: Forms 指南
 user-guide-description: 创建、管理、发布和更新数字表单。
 feature-set: Experience Manager Forms
-role: 商务从业人员
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ title: 使用 Brand Portal 配置 AEM Assets
 description: '了解如何通过Brand Portal配置AEM Assets，以将资产和集合发布到Brand Portal。 '
 contentOwner: VG
 feature: Brand Portal
-role: 管理员
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

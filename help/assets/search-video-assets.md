@@ -2,8 +2,8 @@
 title: 搜索视频资产
 description: 使用关键字、文件属性（如Mime类型、大小或最近修改的时间戳）在AEM Assets中快速查找您的文件。
 contentOwner: AG
-feature: 视频，搜索
-role: 商务从业人员
+feature: Video,Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

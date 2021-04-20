@@ -2,8 +2,8 @@
 title: 搜索 Facet
 description: 本文介绍如何在AEM中创建、修改和使用搜索彩块化。
 contentOwner: AG
-feature: 搜索
-role: 管理员，开发人员
+feature: Search
+role: Administrator,Developer
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

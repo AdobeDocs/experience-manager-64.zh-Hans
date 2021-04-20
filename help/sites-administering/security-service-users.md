@@ -2,7 +2,7 @@
 title: AEM中的服务用户
 seo-title: AEM中的服务用户
 description: 了解AEM中的服务用户。
-feature: 安全
+feature: Security
 seo-description: 了解AEM中的服务用户。
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
 contentOwner: User

@@ -2,8 +2,8 @@
 title: 将资源批量迁移到Adobe Experience Manager Assets
 description: 如何将资产引入AEM、应用元数据、生成演绎版以及激活资产以发布实例。
 contentOwner: AG
-feature: 迁移、演绎版、资产管理
-role: 架构师，管理员
+feature: Migration,Renditions,Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

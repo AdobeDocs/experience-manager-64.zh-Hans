@@ -2,8 +2,8 @@
 title: 使用元数据用户档案将默认元数据应用于文件夹中的所有资产
 description: 了解资产的元数据用户档案。 了解如何创建元数据用户档案并将其应用到文件夹资产。
 contentOwner: AG
-feature: 元数据
-role: 业务从业者，管理员
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

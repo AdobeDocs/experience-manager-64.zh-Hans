@@ -2,8 +2,8 @@
 title: 使用资产分析功能跟踪图像的使用情况
 description: 通过资产分析功能，您可以跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用情况统计。
 contentOwner: AG
-feature: 资产分析，资产报表
-role: 业务从业者，管理员
+feature: Asset Insights,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

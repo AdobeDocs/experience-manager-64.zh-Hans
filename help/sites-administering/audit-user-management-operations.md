@@ -2,7 +2,7 @@
 title: 如何在AEM中审计用户管理操作
 seo-title: 如何在AEM中审计用户管理操作
 description: 了解如何在AEM中审核用户管理操作。
-feature: 运营
+feature: Operations
 seo-description: 了解如何在AEM中审核用户管理操作。
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User

@@ -2,8 +2,8 @@
 title: 使用AEM管理资产的最佳实践
 description: 根据AEM Assets部署以及用于收集和处理资源的功能，确定并遵循可在负载下增强系统稳定性和性能的最佳实践。
 contentOwner: AG
-feature: 资产管理
-role: 架构师，管理员
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ title: 将文件夹发布到 Brand Portal
 description: 了解如何将资产发布和取消发布到Brand Portal。
 contentOwner: VG
 feature: Brand Portal
-role: 业务从业者
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

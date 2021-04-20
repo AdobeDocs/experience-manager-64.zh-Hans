@@ -2,8 +2,8 @@
 title: 如何编辑或添加元数据
 description: 了解AEM Assets中的资产元数据以及编辑资产元数据的各种方式。
 contentOwner: AG
-feature: 元数据
-role: 业务从业者，管理员
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

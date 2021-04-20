@@ -3,7 +3,7 @@ title: 自定义和扩展资产
 description: 了解如何自定义和扩展资产共享和资产编辑器，它们为用户提供了专门定制的界面和功能集。
 contentOwner: AG
 feature: Developer Tools
-role: 开发人员
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

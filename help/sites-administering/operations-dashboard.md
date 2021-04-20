@@ -2,7 +2,7 @@
 title: 操作仪表板
 seo-title: 操作仪表板
 description: 了解如何使用“操作”仪表板。
-feature: 运营
+feature: Operations
 seo-description: 了解如何使用“操作”仪表板。
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino

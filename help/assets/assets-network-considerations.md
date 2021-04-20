@@ -3,7 +3,7 @@ title: Assets 网络注意事项
 description: 在设计AEM Assets部署时讨论网络注意事项。
 contentOwner: AG
 feature: Developer Tools
-role: 架构师，管理员
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 有效翻译资产的最佳实践
 description: 有效管理资产的最佳实践，可同步各种翻译版本并简化翻译工作流。
 contentOwner: AG
-feature: 翻译
-role: 业务从业者，管理员
+feature: Translation
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

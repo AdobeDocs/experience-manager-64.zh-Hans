@@ -2,8 +2,8 @@
 title: 多语言资产
 description: 了解如何自动工作流资产的翻译，包括二进制文件、元数据和标记，以及多种语言。
 contentOwner: AG
-feature: 资产管理
-role: 管理员
+feature: Asset Management
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

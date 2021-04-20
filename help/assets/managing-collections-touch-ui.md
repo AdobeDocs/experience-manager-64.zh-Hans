@@ -3,8 +3,8 @@ title: 管理资产收藏集
 description: 了解管理资产集合的任务，如创建、视图、删除、编辑和下载集合。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 收藏集
-role: 商务从业人员
+feature: Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

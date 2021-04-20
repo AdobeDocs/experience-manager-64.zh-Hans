@@ -2,8 +2,8 @@
 title: 增强了AEM中的资源排序
 description: 了解AEM Assets如何通过服务器端排序一次性对文件夹资产或搜索查询进行排序，而不是在客户端成批排序。
 contentOwner: AG
-feature: 搜索
-role: 商务从业人员
+feature: Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

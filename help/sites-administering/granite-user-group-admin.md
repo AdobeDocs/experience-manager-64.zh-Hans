@@ -2,7 +2,7 @@
 title: Granite Operations — 用户和组管理
 seo-title: Granite Operations — 用户和组管理
 description: 了解Granite用户和组管理。
-feature: 安全
+feature: Security
 seo-description: 了解Granite用户和组管理。
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino

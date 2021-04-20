@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4经典UI创作用户指南
 breadcrumb-title: 经典UI创作指南
 user-guide-description: 本指南涵盖在经典用户界面中的AEM中进行创作的概念。
 feature-set: Experience Manager Sites
-feature: 创作
-role: 商务从业人员
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

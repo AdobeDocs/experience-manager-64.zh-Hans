@@ -2,8 +2,8 @@
 title: 准备要翻译的资产
 description: 创建语言根文件夹，为翻译多语言资产做准备。
 contentOwner: AG
-feature: 项目，翻译
-role: 业务从业者，管理员
+feature: Projects,Translation
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

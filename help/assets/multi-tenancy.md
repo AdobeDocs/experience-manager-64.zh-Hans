@@ -2,8 +2,8 @@
 title: 集合、片段和片段模板的多租赁
 description: 根据客户组织隔离CRX存储库中的内容，以防止未经授权的访问。
 contentOwner: AG
-feature: 收藏集
-role: 架构师，管理员，领导者
+feature: Collections
+role: Architect,Administrator,Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: 用户管理和安全
 seo-title: 用户管理和安全
 description: 了解AEM中的用户管理和安全。
-feature: 安全
+feature: Security
 seo-description: 了解AEM中的用户管理和安全。
 uuid: f14619a1-d21f-465c-b79b-c98da1f1c016
 contentOwner: msm-service

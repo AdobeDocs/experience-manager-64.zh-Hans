@@ -2,8 +2,8 @@
 title: 相关资产
 description: 了解如何关联共享某些共同属性的资产。 您还可以使用该功能在资产之间创建源/派生关系。
 contentOwner: AG
-feature: 资产管理、协作
-role: 商务从业人员
+feature: Asset Management,Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

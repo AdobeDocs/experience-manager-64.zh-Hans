@@ -2,8 +2,8 @@
 title: 组织您的数字资产
 description: 使用Experience Manager整理您的数字资产、图像、文件、文件夹等。
 contentOwner: AG
-feature: 资产管理，搜索
-role: 商务从业人员
+feature: Asset Management,Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

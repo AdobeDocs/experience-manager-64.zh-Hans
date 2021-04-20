@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4 Developing 用户指南
 breadcrumb-title: Developing 指南
 user-guide-description: 本指南介绍如何构建 AEM 实例。
 feature-set: Experience Manager Sites
-feature: 开发
-role: 开发人员
+feature: Developing
+role: Developer
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

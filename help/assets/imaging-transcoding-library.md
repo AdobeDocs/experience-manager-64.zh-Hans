@@ -2,8 +2,8 @@
 title: 图像转码库
 description: 了解如何配置和使用Adobe的图像转码库，它是一款可以执行核心图像处理功能的图像处理解决方案，包括编码、转码、图像重新取样和图像大小调整。
 contentOwner: AG
-feature: 演绎版，开发人员工具，资产处理
-role: 管理员
+feature: Renditions,Developer Tools,Asset Processing
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ title: 扩展资产编辑器
 description: 了解如何使用自定义组件扩展资产编辑器的功能。
 contentOwner: AG
 feature: Developer Tools
-role: 业务从业者，管理员
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -8,10 +8,10 @@ user-guide-description: 在发行说明中了解AEM 6.4的最新新增功能。
 feature: 发行信息
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 29fe63a731d33afa0d6492e0e4ef94064097ae1a
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 37%
+source-wordcount: '89'
+ht-degree: 39%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 37%
 + [AEM Forms 发行说明](forms.md)
 + [AEM Forms JEE修补程序安装程序](jee-patch-installer-64.md)
 + [AEM Communities 发行说明](communities-release-notes.md)
-+ [AEM 3D发行说明](aem3d-release-notes.md)
 + [已弃用和已删除的功能](deprecated-removed-features.md)
 + [已知问题](known-issues.md)
 + [AEM Foundation和Repository](wcm-platform.md)

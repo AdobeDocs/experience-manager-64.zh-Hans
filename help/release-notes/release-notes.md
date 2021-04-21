@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
+exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
 translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2813'
 ht-degree: 28%
 
 ---
-
 
 # Adobe Experience Manager 6.4 的一般发行说明 {#general-release-notes-for-adobe-experience-manager}
 
@@ -27,7 +27,7 @@ ht-degree: 28%
 | 版本号 | 6.4 |
 | 类型 | 主要版本 |
 | 公开发行日期 | 2018 年 4 月 4 日 |
-| 建议的更新 | 请参阅[ AEM版本和更新](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) |
+| 建议的更新 | 请参阅[ AEM版本和更新](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html) |
 
 ### 相关事项 {#trivia}
 
@@ -247,14 +247,6 @@ Smart Crop由Adobe Sensei提供支持，可自动提供图像的无损裁剪，�
 包括全景和VR在内的新查看器使您能够提供更令人痴迷的体验。
 
 有关详细信息，请参阅[全景图像](/help/assets/panoramic-images.md)文档。
-
-**3D资产**
-
-与[Adobe Dimension CC](https://www.adobe.com/products/dimension.html)(用于创作3D体验的Creative Cloud应用程序)的新集成。
-
-请参阅[使用3D资产](/help/assets/assets-3d.md)文档以了解更多信息。
-
-![do-not-localize/3d](assets/do-not-localize/3d.png)
 
 ### Experience Manager Forms {#experience-manager-forms}
 

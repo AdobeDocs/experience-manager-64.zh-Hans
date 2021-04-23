@@ -2,16 +2,16 @@
 title: 使用链接共享资产
 description: 将资产、文件夹和收藏集共享为URL。
 contentOwner: AG
-feature: Link Sharing,Asset Management
+feature: 链接共享，资产管理
 role: Business Practitioner
+exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: 340061de4dc6d99e9d960613202a869ba50ed6a5
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 8%
+source-wordcount: '1024'
+ht-degree: 7%
 
 ---
-
 
 # 通过链接{#asset-link-sharing}共享资产
 
@@ -28,26 +28,11 @@ ht-degree: 8%
 要为要与用户共享的资产生成URL，请使用“链接共享”对话框。 具有管理员权限或具有`/var/dam/share`位置读取权限的用户可以视图与他们共享的链接。
 
 1. 在[!DNL Assets]用户界面中，选择要作为链接共享的资产。
-1. 在工具栏中，单击&#x200B;**[!UICONTROL 共享链接]** ![共享资产图标](assets/assets_share.png)。
-
-   单击[!UICONTROL 共享]后将创建的链接会提前显示在[!UICONTROL 共享链接]字段中。 链接的默认过期时间为一天。
+1. 在工具栏中，单击&#x200B;**[!UICONTROL 共享链接]** ![共享资产图标](assets/assets_share.png)。 单击&#x200B;**[!UICONTROL 共享]**&#x200B;后将创建的链接会提前显示在[!UICONTROL 共享链接]字段中。 单击&#x200B;**[!UICONTROL 提交]**&#x200B;后，链接才会创建。
 
    ![与链接共享对话框](assets/chlimage_1-542.png)
 
    *图：将资产共享为链接的对话框。*
-
-   >[!NOTE]
-   >
-   >如果要将[!DNL Experience Manager]作者部署中的链接共享到外部实体，请确保仅为`GET`请求提供以下URL（用于链接共享）。 出于安全原因阻止其他URL。
-   >
-   >* `http://[aem_server]:[port]/linkshare.html`
-   >* `http://[aem_server]:[port]/linksharepreview.html`
-   >* `http://[aem_server]:[port]/linkexpired.html`
-
-
-1. 在[!DNL Experience Manager]接口中，访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]**。
-
-1. 打开&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;配置，并修改&#x200B;**[!UICONTROL Domains]**&#x200B;字段中针对`local`、`author`和`publish`提及的值的以下属性。 对于`local`和`author`属性，请分别提供本地实例和作者实例的URL。 如果运行单个[!DNL Experience Manager]作者实例，`local`和`author`属性的值相同。 对于Publish实例，请提供[!DNL Experience Manager]发布实例的URL。
 
 1. 在&#x200B;**[!UICONTROL 链接共享]**&#x200B;对话框的电子邮件地址框中，键入要与其共享链接的用户的电子邮件 ID。您可以添加一个或多个用户。
 
@@ -62,7 +47,7 @@ ht-degree: 8%
 1. 在&#x200B;**[!UICONTROL 主题]**&#x200B;框中，为您要共享的资产输入主题。
 1. 在&#x200B;**[!UICONTROL 消息]**&#x200B;框中，输入可选消息。
 
-1. 在&#x200B;**[!UICONTROL Expiration]**&#x200B;字段中，指定链接停止工作的过期日期和时间。 默认情况下，过期日期设置为您共享链接后一周的时间。
+1. 在&#x200B;**[!UICONTROL Expiration]**&#x200B;字段中，指定链接停止工作的过期日期和时间。 链接的默认过期时间为一天。
 
    ![设置共享链接的过期日期](assets/chlimage_1-544.png)
 
@@ -70,11 +55,7 @@ ht-degree: 8%
 
 1. 单击&#x200B;**[!UICONTROL 共享]**。系统会显示一条消息，确认已通过电子邮件将链接共享给用户。
 
-1. 要视图共享的资产，请单击发送给用户的电子邮件中的链接。 共享资产显示在[!UICONTROL Adobe Marketing Cloud]页面中。
-
-   ![共享资源在Adobe Marketing Cloud中可用](assets/chlimage_1-545.png)
-
-1. 要生成资产的预览，请单击共享的资产。 要关闭预览并返回至&#x200B;**[!UICONTROL Marketing Cloud]**&#x200B;页面，请单击工具栏上的&#x200B;**[!UICONTROL 返回]**。 如果已共享文件夹，请单击&#x200B;**[!UICONTROL 父文件夹]**&#x200B;返回到父文件夹。
+1. 要视图共享的资产，请单击发送给用户的电子邮件中的链接。 要生成资产的预览，请单击共享的资产。 要关闭预览，请单击&#x200B;**[!UICONTROL 返回]**。 如果已共享文件夹，请单击&#x200B;**[!UICONTROL 父文件夹]**&#x200B;返回到父文件夹。
 
    ![chlimage_1-546](assets/chlimage_1-546.png)
 
@@ -103,7 +84,7 @@ ht-degree: 8%
 
    ![chlimage_1-548](assets/chlimage_1-548.png)
 
-1. 单击/点按&#x200B;**[!UICONTROL 保存]**。
+1. 单击&#x200B;**[!UICONTROL 保存]**。
 
 ## 配置最大数据大小{#configure-maximum-data-size}
 
@@ -124,3 +105,10 @@ ht-degree: 8%
 * 如果您无法发送包含共享资产链接的电子邮件，或者如果其他用户无法接收您的电子邮件，请咨询您的[!DNL Experience Manager]管理员（如果[电子邮件服务](#configure-day-cq-mail-service)已配置或未配置）。
 * 如果您无法使用链接共享功能共享资产，请确保您具有相应的权限。 请参阅[共享资产](#share-assets)。
 * 如果共享资源被移动到其他位置，其链接将停止工作。 重新创建链接并与用户重新共享。
+
+* 如果要将[!DNL Experience Manager]作者部署中的链接共享到外部实体，请确保仅针对`GET`请求公开以下用于链接共享的URL。 出于安全原因阻止其他URL。
+
+   * `http://[aem_server]:[port]/linkshare.html`
+   * `http://[aem_server]:[port]/linksharepreview.html`
+   * `http://[aem_server]:[port]/linkexpired.html`
+   在[!DNL Experience Manager]接口中，访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]**。 打开&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;配置，并修改&#x200B;**[!UICONTROL Domains]**&#x200B;字段中针对`local`、`author`和`publish`提及的值的以下属性。 对于`local`和`author`属性，分别提供本地实例和作者实例的URL。 如果运行单个[!DNL Experience Manager]作者实例，请对`local`和`author`属性使用相同的值。 对于Publish实例，请提供[!DNL Experience Manager] Publish实例的URL。

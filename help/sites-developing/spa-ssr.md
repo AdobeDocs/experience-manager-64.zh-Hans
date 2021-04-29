@@ -9,19 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
+exl-id: 89e45231-885a-4d35-839b-2b50239503ad
 translation-type: tm+mt
-source-git-commit: 160cc2669ac19aacdce5e96d1ba1eb4bafcb6d58
+source-git-commit: cc31f2fa2f79154749776260f7621f6631e9db4a
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1781'
 ht-degree: 0%
 
 ---
 
-
 # SPA和服务器端渲染{#spa-and-server-side-rendering}
 
 >[!NOTE]
->单页应用程序(SPA)编辑器功能需要[AEM 6.4 service pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)或更高版本。
+>单页应用程序(SPA)编辑器功能需要[AEM 6.4 service pack 2](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/sp-release-notes.html)或更高版本。
 >
 >对于需要基于SPA框架的客户端渲染(例如，响应或Angular)的项目，建议使用SPA Editor。
 
@@ -64,7 +64,9 @@ SSR通常在以下任一问题有明确的“是”时提供一些值：
 
 >[!NOTE]
 >
->Adobe建议为每个AEM环境（创作、发布、舞台等）使用一个单独的Adobe I/O Runtime实例。
+>Adobe建议每个环境（舞台、生产、测试等）使用单独的Adobe I/O Runtime工作区。 这允许使用部署到不同环境的不同版本的单个应用程序的典型系统开发生命周期(SDLC)模式。 有关详细信息，请参阅Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md)的文档[CI/CD。
+>
+>每个实例（创作、发布）不需要单独的工作区，除非每个实例类型的运行时实现存在差异。
 
 ## 远程内容渲染器配置{#remote-content-renderer-configuration}
 

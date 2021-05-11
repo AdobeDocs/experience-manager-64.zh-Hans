@@ -8,14 +8,14 @@ contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 role: Administrator
+exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: 4598602f75c0cd477e4d898700735c6cd5be175a
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1836'
 ht-degree: 4%
 
 ---
-
 
 # 安装和配置数据捕获功能{#install-and-configure-data-capture-capabilities}
 
@@ -206,11 +206,10 @@ AEM Forms与Adobe Analytics集成，允许您捕获和跟踪已发布表单和�
 
 AEM forms与Adobe Marketing Cloud解决方案Adobe Target集成，跨多个数字渠道提供个性化、引人入胜的客户体验。 要使用Adobe Target测试自适应表单，[将Adobe Target与AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)集成。
 
-## 后续步骤{#next-steps}
+## 下面的步骤 {#next-steps}
 
 您已配置了环境以使用AEM Forms数据捕获功能。 现在，使用该功能的后续步骤是：
 
 * [创建您的第一个自适应表单](/help/forms/using/create-your-first-adaptive-form.md)
 * [创建您的第一个PDF表单](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/designer-quickstart.pdf)
 * [HTML5 Forms简介](/help/forms/using/introduction.md)
-

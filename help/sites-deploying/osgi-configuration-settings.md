@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: 配置
+exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
+source-git-commit: 1242b301d82402c28a9c070fad024b823f8cef45
 workflow-type: tm+mt
-source-wordcount: '3806'
+source-wordcount: '3561'
 ht-degree: 0%
 
 ---
-
 
 # OSGi配置设置{#osgi-configuration-settings}
 
@@ -440,29 +439,6 @@ AEM中有[两个UI](/help/sites-authoring/select-ui.md)可用：
 有关详细信息，请参阅[版本清除](/help/sites-deploying/version-purging.md)。
 
 **Day CQ Workflow Email Notification Service(日CQ工** 作流电子邮件通知服务)为工作流发送的通知配置电子邮件设置。
-
-**Day CQSE HTTP** Service控制CQ Servlet引擎：
-
-* **NIO for HTTP**，是否将NIO用于HTTP。默认设置为 true。仅在启用HTTP时使用。
-* **连接超时**，连接超时（以毫秒为单位）。此属性同时适用于HTTP和HTTPS连接。 默认为60秒。
-
-* **启用HTTPS，** 是否启用HTTPS。默认为false。
-* **会话超时**，以分钟为单位指定的HTTP会话的默认生存时间。如果超时为0或更小，则会话永远不会超时。 默认为10分钟。
-* **调试日志**，是否写入DEBUG级别消息。默认为false。
-* **请求缓冲区大小**，以字节为单位的请求缓冲区的大小。默认为8KB。
-* **最大线程数**，用于处理请求的最大线程数。默认为200。
-
-以下属性仅在启用HTTPS时适用。
-
-* **HTTPS端口**，用于侦听HTTPS请求的端口。默认为 433.
-* **NIO for HTTPS**，是否将NIO用于HTTP。默认为NIO for HTTP属性的值。
-* **Keystore**，用于HTTPS的Keystore的绝对路径。启用HTTPS时需要。
-* **密钥库密码**，用于访问密钥库的密码。
-* **密钥别名**，密钥库中密钥的别名。
-* **Key Password**, Password to unlock the secret key in the Keystore.
-* **客户端证书**，客户端提供有效证书的要求。默认为无。
-
-另请参阅[启用HTTP over SSL](/help/sites-administering/ssl-by-default.md)，以了解有关SSL相关选项的详细信息以及有关如何为CQSE启用HTTPS的完整说明。
 
 **CQ重写器HTML分析器工厂**
 

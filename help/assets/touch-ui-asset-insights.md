@@ -1,29 +1,28 @@
 ---
 title: 使用资产分析功能跟踪图像的使用情况
-description: 通过资产分析功能，您可以跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用情况统计。
+description: 资产分析功能可让您跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用统计数据。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 资产分析，资产报表
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 9%
+source-wordcount: '794'
+ht-degree: 8%
 
 ---
 
-
-# 资产分析 {#asset-insights}
+# 资产分析{#asset-insights}
 
 了解资产分析功能如何让您跟踪第三方网站、营销活动和Adobe创意解决方案中使用的资产的用户评级和使用情况统计数据。
 
-通过资产分析功能，您可以跟踪第三方网站、营销活动和Adobe的创意解决方案中使用的资产的用户评级和使用情况统计信息，从而获得有关其性能和受欢迎程度的洞察。
+通过资产分析功能，您可以跟踪第三方网站、营销活动和Adobe的创意解决方案中使用的资产的用户评级和使用情况统计信息，从而获得有关资产性能和受欢迎程度的洞察。
 
 资产分析可捕获用户活动详细信息，例如资产的评级、点击次数和展示次数（资产在网站上加载的次数）。 它会根据这些统计信息为资产分配分数。 您可以使用分数和绩效统计信息来选择热门资产，以将其纳入目录、营销活动等。 您甚至可以根据这些统计信息为资产制定存档和许可证续订策略。
 
 要使资产分析从网站捕获资产的使用情况统计信息，您必须在网站代码中包含资产的嵌入代码。
 
-要让资产分析显示资产的使用情况统计信息，请首先配置该功能以从[!DNL Adobe Analytics]获取报告数据。 有关详细信息，请参阅[配置资产分析](touch-ui-configuring-asset-insights.md)。
+要让资产分析显示资产的使用情况统计信息，请首先配置该功能以从[!DNL Adobe Analytics]获取报告数据。 有关详细信息，请参阅[配置资产分析](touch-ui-configuring-asset-insights.md)。 要使用此功能，请单独购买[!DNL Adobe Analytics]许可证。 [!DNL Managed Services]上的客户会收到与[!DNL Experience Manager]绑定的[!DNL Analytics]许可证。 请参阅[Managed Services产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)。
 
 >[!NOTE]
 >
@@ -52,7 +51,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >由于资产分析功能通常会定期从Adobe Analytics获取解决方案数据，因此解决方案部分可能不会显示最新数据。 显示数据的时间段取决于资产分析运行以检索Analytics数据的提取操作的计划。
+   >“资产分析”功能会定期从[!DNL Adobe Analytics]中获取解决方案数据，解决方案部分可能不显示最新数据。 显示数据的时间段取决于资产分析运行以检索[!DNL Analytics]数据的提取操作的计划。
 
 1. 要以图形方式查看一段时间内资产的性能统计信息，请在&#x200B;**[!UICONTROL 性能统计信息]**&#x200B;部分中选择时间段。包括点击次数和印象在内的详细信息将显示为图形的趋势线。
 
@@ -62,7 +61,7 @@ ht-degree: 9%
    >
    >与“解决方案”部分中的数据不同，“性能统计”部分显示最新数据。
 
-1. 要获取包含在网站中的资产的嵌入代码以获取性能数据，请点按/单击资产缩略图下方的&#x200B;**[!UICONTROL 获取嵌入代码]**。 有关如何在第三方网页中包含嵌入代码的详细信息，请参阅[在网页中使用页面跟踪器和嵌入代码](touch-ui-using-page-tracker.md)。
+1. 要获取包含在网站中的资产的嵌入代码以获取性能数据，请单击资产缩略图下方的&#x200B;**[!UICONTROL 获取嵌入代码]**。 有关如何在第三方网页中包含嵌入代码的详细信息，请参阅[在网页中使用页面跟踪器和嵌入代码](touch-ui-using-page-tracker.md)。
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 

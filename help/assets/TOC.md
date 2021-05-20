@@ -6,16 +6,15 @@ audience: end-user
 user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 创建、管理、交付和优化数字资产。
-translation-type: tm+mt
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '625'
 ht-degree: 50%
 
 ---
 
 
-# Assets 指南  {#assets}
+# Assets 指南 {#assets}
 
 + [资产用户指南](home.md)
 + [AEM 6.4 Assets发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
@@ -48,7 +47,7 @@ ht-degree: 50%
    + [应用 Dynamic Media 图像预设](image-presets.md)
    + [Dynamic Media 视频配置文件](video-profiles.md)
    + [Dynamic Media 图像配置文件](image-profiles.md)
-   + [智能图像处理](imaging-faq.md)
+   + [智能成像](imaging-faq.md)
    + [视频](s7-video.md)
    + [将Dynamic Media Classic功能添加到您的页面](scene7.md)
    + [HTTP2 内容交付](http2.md)
@@ -155,7 +154,7 @@ ht-degree: 50%
    + [从 AEM 下载资产](download-assets-from-aem.md)
    + [异步操作](asynchronous-jobs.md)
    + [Lightbox](touch-ui-light-box.md)
-   + [通过DTM启用资产分析](touch-ui-using-dtm-for-asset-insights.md)
+   + [通过DTM实现资产洞察](touch-ui-using-dtm-for-asset-insights.md)
    + [配置资产分析](touch-ui-configuring-asset-insights.md)
    + [将翻译云服务应用到文件夹](transition-cloud-services.md)
    + [在网页中使用页面跟踪器和嵌入代码](touch-ui-using-page-tracker.md)

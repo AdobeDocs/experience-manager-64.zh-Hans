@@ -3,11 +3,10 @@ title: 使用AEM Assets管理您的数字资产
 description: 了解各种资源管理和编辑任务，您可以使用AEM Assets的触屏优化用户界面执行这些操作
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Search,Renditions,Collaboration
+feature: 资产管理，搜索，演绎版，协作
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-translation-type: tm+mt
-source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '10083'
 ht-degree: 6%
@@ -368,7 +367,7 @@ PSD(Photoshop 文档)文件最常用于创建图像模板。 在上传PSD文件�
 
 1. 在&#x200B;**[!UICONTROL 标记]**&#x200B;字段中，选择一个或多个标记。 要添加自定义标记，请在框中键入标记名称，然后按&#x200B;**[!UICONTROL Enter]**。 新标记保存在AEM中。
 
-   YouTube要求发布标记，并有指向YouTube的链接（如果可以找到合适的链接）。
+   YouTube要求发布标记，并有指向YouTube的链接（如果找到合适的链接）。
 要创建标记，您需要CRX存储库中`/content/cq:tags/default`的写入权限。
 
 1. 要为资产提供评级，请点按&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡，然后点按相应位置的星形以分配所需的评级。
@@ -710,7 +709,7 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-## 使用时间轴{#timeline}
+## 使用时间轴 {#timeline}
 
 通过&#x200B;**[!UICONTROL 时间轴]**，可以视图选定项目的各种事件，如资产的活动工作流、注释、注释、活动日志和版本。
 
@@ -729,7 +728,7 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 
    ![timeline_options](assets/timeline_options.png)
 
-## 添加注释{#annotating}
+## 添加注释 {#annotating}
 
 注释是指添加到图像或视频的评论或解释性说明。注释使营销人员能够协作并留下有关资产的反馈。
 
@@ -943,7 +942,7 @@ AEM Assets界面中的编辑工具允许您对图像资源执行小型编辑作�
 
 请参阅[将工作流应用于AEM资产](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)。
 
-## 关于集合{#collections}
+## 关于集合 {#collections}
 
 收藏集是一组有序的资产。使用集合在用户之间共享资产。
 

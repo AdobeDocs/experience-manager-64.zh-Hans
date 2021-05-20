@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: 升级
+exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 3%
 
 ---
-
 
 # 升级到AEM 6.4{#upgrading-to-aem}
 
@@ -51,7 +50,7 @@ ht-degree: 3%
 
 AEM 6.0引入了新的Jackrabbit Oak存储库。 持久性管理器由[微内核](/help/sites-deploying/recommended-deploys.md)替换。 从6.1版开始，不再支持CRX2。 需要运行名为crx2oak的迁移工具，才能从5.6.1实例迁移CRX2存储库。 有关详细信息，请参阅[使用CRX2OAK迁移工具](/help/sites-deploying/using-crx2oak.md)。
 
-如果要使用资产分析，并且您是从AEM 6.2以前的版本升级，则必须迁移资产，并通过JMX bean生成ID。 在我们的内部测试中，一个TarMK环境上的12.5万个资源在一小时内完成迁移，但结果可能有所不同。
+如果要使用资产分析，并且您是从AEM 6.2之前的版本升级，则必须迁移资产，并通过JMX bean生成ID。 在我们的内部测试中，一个TarMK环境上的12.5万个资源在一小时内完成迁移，但结果可能有所不同。
 
 AEM 6.3为`SegmentNodeStore`引入了一种新格式，这是TarMK实现的基础。 如果您从AEM 6.3以前的版本升级，则需要在升级过程中进行存储库迁移，这涉及系统停机。
 
@@ -90,4 +89,3 @@ crx2oak工具命令行使用选项已更改为适合自动化，并支持更多�
 最后，在6.4开发周期中，可持续升级（请参阅[可持续升级](/help/sites-deploying/sustainable-upgrades.md)）下引入的功能可帮助您遵循最佳实践，使未来升级更高效、更无缝。
 
 ![6_4_upgrade_overviewproftwork-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-

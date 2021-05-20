@@ -1,17 +1,16 @@
 ---
-title: 通过DTM启用资产分析
+title: 通过DTM实现资产洞察
 description: 了解如何使用Adobe Dynamic Tag Management(DTM)启用资产分析。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 资产分析，资产报表
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
-
 
 # 通过DTM {#enabling-asset-insights-through-dtm}启用资产分析
 
@@ -19,7 +18,7 @@ Adobe动态标签管理是一种激活数字营销工具的工具。 免费提�
 
 >[!CAUTION]
 >
->Adobe DTM已弃用，支持Adobe Experience Platform Launch，并且很快将达到[生命结束](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建议您[使用Launch获取资产分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)。
+>Adobe DTM已弃用，支持Adobe Experience Platform Launch，并且很快将达到[生命结束](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建议您[使用Launch for assets insights](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)。
 
 执行以下步骤以通过DTM启用资产分析：
 

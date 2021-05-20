@@ -2,16 +2,15 @@
 title: 配置资产分析
 description: 了解如何在AEM Assets中配置资产分析。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 资产分析，资产报表
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '241'
 ht-degree: 10%
 
 ---
-
 
 # 配置资产分析{#configuring-asset-insights}
 
@@ -31,7 +30,7 @@ Adobe Experience Manager(AEM) Assets会从Adobe Analytics中获取由第三方�
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. 单击／点按 **[!UICONTROL 身份验证]**。
-1. 在AEM验证您的凭据后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择Adobe Analytics报表包，您希望资产分析从中获取数据。 单击&#x200B;**[!UICONTROL 添加]**。
+1. 在AEM验证您的凭据后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择一个Adobe Analytics报表包，以便让资产分析从中获取数据。 单击&#x200B;**[!UICONTROL 添加]**。
 1. AEM设置报表包后，单击/点按&#x200B;**[!UICONTROL 完成]**。
 
 ## 页面跟踪器{#page-tracker}

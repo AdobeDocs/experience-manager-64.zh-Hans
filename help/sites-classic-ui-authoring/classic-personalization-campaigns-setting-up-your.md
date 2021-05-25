@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 41727155-2a67-44b6-b925-22001891a348
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2289'
 ht-degree: 94%
 
 ---
-
 
 # 设置您的营销活动{#setting-up-your-campaign}
 
@@ -38,15 +37,15 @@ ht-degree: 94%
 * 如果创建新闻稿：
 
    1. [创建新闻稿体验](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience)。
-   1. [向新闻稿中添加内容](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)。
-   1. [对新闻稿进行个性化设置](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)。
+   1. [向新闻稿中添加内容。](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+   1. [对新闻稿进行个性化设置。](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
    1. [创建引人注目的新闻稿登陆页面](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage)。
    1. 向订阅者或潜在客户[发送新闻稿](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters)。
 
 * 如果创建 Adobe Target（以前称为 Test&amp;Target）选件：
 
    1. [创建 Adobe Target 选件体验](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience)。
-   1. [与 Adobe Target 集成](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)。
+   1. [与 Adobe Target 集成。](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -112,7 +111,7 @@ ht-degree: 94%
 创建新体验的步骤取决于体验类型：
 
 * [创建 Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
-* [创建新闻稿](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
+* [创建 Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
 * [创建 Adobe Target 选件](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetoffer)
 
 >[!NOTE]
@@ -132,14 +131,14 @@ ht-degree: 94%
 
 * [新闻稿](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)：
 
-   * [向新闻稿中添加内容](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)。
-   * [对新闻稿进行个性化设置](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)。
+   * [向新闻稿中添加内容。](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+   * [对新闻稿进行个性化设置。](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
    * 向订阅者或潜在客户[发送新闻稿](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters)。
    * [创建引人注目的新闻稿登陆页面](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage)。
 
 * [Adobe Target 选件](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers)：
 
-   * [与 Adobe Target 集成](/help/sites-administering/target.md)。
+   * [与 Adobe Target 集成。](/help/sites-administering/target.md)
 
 ### 添加新触点 {#adding-a-new-touchpoint}
 
@@ -232,7 +231,7 @@ ht-degree: 94%
    >
    >CSV 列表中的第一行为预定义标签，必须严格按以下示例写入：
    >
-   >`email,givenName,familyName` -例如，如 `givenname`果编写为，系统将无法识别它。
+   >`email,givenName,familyName`  — 例如，如 `givenname`果写为，系统将无法识别。
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -256,7 +255,7 @@ ht-degree: 94%
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. 在&#x200B;**工具**&#x200B;菜单中，选择&#x200B;**添加到列表...** **添加到列表**窗口将打开。
+1. 在&#x200B;**工具**&#x200B;菜单中，选择&#x200B;**添加到列表...** 将打开**添加到列表**窗口。
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -400,4 +399,3 @@ ht-degree: 94%
    ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
 
 1. 单击&#x200B;**关闭**&#x200B;返回 MCM。
-

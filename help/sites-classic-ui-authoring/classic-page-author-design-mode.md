@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 93f98f7b-7ab8-4d9c-b179-dc99b80ffc91
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: af6c383b-f8fd-442c-8fc5-3cdd40657c6a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 92%
 
 ---
-
 
 # 在设计模式中配置组件{#configuring-components-in-design-mode}
 
@@ -50,7 +49,7 @@ ht-degree: 92%
 
    ![](do-not-localize/chlimage_1.png)
 
-1. 单击段落系统上的&#x200B;**编辑**（**par**&#x200B;的设计）。
+1. 单击段落系统（**段落设计**）上的&#x200B;**编辑**。
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -74,7 +73,7 @@ ht-degree: 92%
 
 1. 您可以配置组件的设计。
 
-   例如，如果单击图像组件（**图像设计**）上的&#x200B;**编辑**，则可以配置组件特定参数：
+   例如，如果单击图像组件（**图像设计**）上的&#x200B;**编辑**，则可以配置组件特定的参数：
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -83,4 +82,3 @@ ht-degree: 92%
 1. 在设计模式下，Sidekick 会最小化。通过单击箭头，可以最大化 Sidekick 并返回编辑模式：
 
    ![](do-not-localize/sidekick-collapsed-1.png)
-

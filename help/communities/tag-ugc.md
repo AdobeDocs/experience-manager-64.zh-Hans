@@ -1,8 +1,8 @@
 ---
 title: 标记用户生成的内容
 seo-title: 标记用户生成的内容
-description: 为用户生成的内容(UGC)添加标签是社区成员如何帮助其他成员搜索内容
-seo-description: 为用户生成的内容(UGC)添加标签是社区成员如何帮助其他成员搜索内容
+description: 标记用户生成的内容(UGC)是社区成员如何帮助其他成员搜索内容的方式
+seo-description: 标记用户生成的内容(UGC)是社区成员如何帮助其他成员搜索内容的方式
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,24 +10,23 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 834df392-df38-498c-9e2a-489484e20e0a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 4%
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
-
 
 # 标记用户生成的内容{#tagging-user-generated-content}
 
 ## 概述 {#overview}
 
-标记用户生成的内容(UGC)是社区成员帮助其他成员搜索内容的方法。
+标记用户生成的内容(UGC)是社区成员帮助其他成员搜索内容的一种方式。
 
-通常，标记由作者和管理员在创作环境中应用。 标记UGC的独特之处在于UGC标记由发布环境中的社区成员应用。
+通常，标记由作者和管理员在创作环境中应用。 标记UGC是唯一的，因为UGC标记由社区成员在发布环境中应用。
 
-标签命名空间和分类对于这两个应用程序是相同的。
+标记命名空间和分类对于两个应用程序都是相同的。
 
 ## 社区功能{#communities-features}
 
@@ -43,19 +42,18 @@ ht-degree: 4%
 
 有关创建和管理标记命名空间和分类的信息，请参阅[管理标记](../../help/sites-administering/tags.md#tagging-console)。
 
-有关开发人员信息，请参阅[Tag Essentials](tag.md)。
+有关开发人员信息，请参阅[Tag Essentials](tag.md) 。
 
-请参阅[使用社交标记云](tagcloud.md)，将社交标记云组件添加到页面以便于使用应用的标记搜索发布的UGC。
+请参阅[使用Social标签云](tagcloud.md) ，以了解如何将Social标签云组件添加到页面，以便于使用所应用的标签搜索已发布的UGC。
 
 ### 标记权限{#tag-permissions}
 
-默认权限设置为不允许发布环境中的所有人读取标记命名空间。
+默认权限设置为不允许发布环境中的每个人读取标记命名空间。
 
-由于标记在发布环境应用于UGC，因此需要为社区成员启用读取权限，以使他们能够选择要应用的标记。
+由于标记在发布环境中应用于UGC，因此需要为社区成员启用读取权限，以便他们能够选择要应用的标记。
 
 请参阅[设置标记权限](../../help/sites-administering/tags.md#setting-tag-permissions)。
 
-以下是当管理员对组`*Community Engage Members*`的`/etc/tag/discussions`应用读取权限时，CRXDE中显示的方式。
+以下是管理员对组`*Community Engage Members*`的`/etc/tag/discussions`应用读取权限时CRXDE中显示的方式。
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
-

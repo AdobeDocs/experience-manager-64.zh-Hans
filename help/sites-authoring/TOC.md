@@ -8,7 +8,6 @@ breadcrumb-title: Authoring 指南
 user-guide-description: 了解在 AEM 中创建内容、进行编辑创作的主要概念。
 feature: 创作
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
 workflow-type: tm+mt
 source-wordcount: '293'
@@ -19,11 +18,11 @@ ht-degree: 88%
 
 # AEM 6.4 Authoring 用户指南 {#authoring}
 
-+ [创作用户指南概述](home.md)
++ [Authoring用户指南概述](home.md)
 + AEM创作{#essentials}的基本任务、工具和概念
    + [创作的首要步骤](first-steps.md)
    + [页面创作快速指南](qg-page-authoring.md)
-   + [创作的概念](author.md)
+   + [创作概念](author.md)
    + [基本操作](basic-handling.md)
    + [搜索](search.md)
    + [配置帐户环境](user-properties.md)
@@ -55,7 +54,7 @@ ht-degree: 88%
    + [组件控制台](default-components-console.md)
    + [响应式布局](responsive-layout.md)
    + [内容分析](content-insights.md)
-   + [创建无障碍内容（WCAG 2.0 合规性）](creating-accessible-content.md)
+   + [创建辅助内容（WCAG 2.0 符合性）](creating-accessible-content.md)
    + [基架](scaffolding.md)
    + [在设计模式中配置组件](default-components-designmode.md)
    + [基础组件](default-components-foundation.md)

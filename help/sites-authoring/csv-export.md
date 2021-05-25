@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 52eb9c2f-ce29-4622-8726-802ac40246d4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 78%
 
 ---
-
 
 # 导出到 CSV{#export-to-csv}
 
@@ -56,17 +55,16 @@ ht-degree: 78%
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-在浏览&#x200B;**站点**&#x200B;控制台时，可以使用创建&#x200B;**CSV导出**&#x200B;选项(在列表视图下):它是&#x200B;**创建**&#x200B;下拉菜单的选项：
+在浏览&#x200B;**Sites**&#x200B;控制台（在“列表”视图中）时，可以使用创建&#x200B;**CSV导出**&#x200B;选项：它是&#x200B;**创建**&#x200B;下拉菜单的一个选项：
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 要创建 CSV 导出，请执行以下操作：
 
 1. 必要时，打开&#x200B;**站点**&#x200B;控制台并导航到所需的位置。
-1. 在工具栏中，选择&#x200B;**创建**，然后选择&#x200B;**CSV导出**&#x200B;以打开向导：
+1. 从工具栏中，选择&#x200B;**创建**，然后选择&#x200B;**CSV导出**&#x200B;以打开向导：
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 
 1. 选择需要导出的属性。
 1. 选择&#x200B;**创建**。
-

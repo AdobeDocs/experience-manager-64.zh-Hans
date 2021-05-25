@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
-translation-type: tm+mt
-source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
+exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 84%
 
 ---
-
 
 # 编辑页面属性{#editing-page-properties}
 
@@ -54,12 +53,12 @@ ht-degree: 84%
 
 * **品牌化**
 
-   通过将品牌辅助信息附加到每个页面标题，跨页面应用一致的品牌标识。 此功能要求使用[核心组件版本2.14.0或更高版本的页面组件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   通过在每个页面标题后附加一个品牌辅助信息，在页面中应用一致的品牌标识。 此功能需要使用[核心组件2.14.0版或更高版本中的页面组件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 
-   * **覆盖**  — 选中可定义此页上的品牌辅助信息区。
-      * 除非任何子页面也设置了&#x200B;**Override**&#x200B;值，否则该值将由其继承。
-   * **覆盖值**  — 要附加到页面标题的品牌辅助信息区文本。
-      * 该值将附加到管道字符（如“循环托斯卡纳”）之后的页面标题 |始终为WKND做好准备”
+   * **覆盖**  — 选中以定义此页面上的品牌概要信息。
+      * 任何子页面都将继承该值，除非它们还设置了其&#x200B;**Override**&#x200B;值。
+   * **覆盖值**  — 要附加到页面标题的品牌辅助信息的文本。
+      * 该值会在管道字符（如“循环托斯卡纳”）后附加到页面标题中 |始终为WKND做好准备”
 
 * **页面标题**
 
@@ -93,7 +92,7 @@ ht-degree: 84%
 
    允许您输入此页面的虚 URL，以便使用更短并且/或者含意更清楚的 URL。
 
-   例如，如果对于网站h `ttp://example.com,`，虚URL设置为w `elcome`，且路径/ `v1.0/startpage`标识的页面，则h `ttp://example.com/welcome`将是h `ttp://example.com/content/v1.0/startpage`的虚URL
+   例如，如果对于网站h `ttp://example.com,`，将路径/ `v1.0/startpage`标识的页面的虚URL设置为w `elcome`，则h `ttp://example.com/welcome`将为h `ttp://example.com/content/v1.0/startpage`的虚URL
 
    >[!CAUTION]
    >
@@ -131,7 +130,7 @@ ht-degree: 84%
    >
    >例如：如果您为节点 `/content/we-retail/spanish` 定义别名 `latin-lang`，则可以通过 `/content/we-retail/latin-language` 访问此页面。
    >
-   >有关更多详细信息，请参阅[SEO和URL管理最佳实践](/help/managing/seo-and-url-management.md#localized-page-names)下的本地化页面名称
+   >有关更多详细信息，请参阅“SEO和URL管理最佳实践”下的[本地化的页面名称](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **允许的模板**
 
@@ -145,7 +144,7 @@ ht-degree: 84%
 
    >[!CAUTION]
    >
-   >**[权限](/help/sites-authoring/editing-page-properties.md#permissions)**&#x200B;选项卡允许根据`granite:AuthenticationRequired`混音的存在编辑CUG配置。 如果使用已弃用的CUG配置配置页面权限，则在存在cq:cugEnabled属性的情况下，将在&#x200B;**身份验证要求**&#x200B;下显示一条警告消息，并且该选项将不可编辑，[权限](/help/sites-authoring/editing-page-properties.md#permissions)也将不可编辑。
+   >通过&#x200B;**[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)**&#x200B;选项卡，可以根据`granite:AuthenticationRequired` mixin的存在来编辑CUG配置。 如果使用已弃用的CUG配置配置了页面权限，则在存在cq:cugEnabled属性的情况下，将在&#x200B;**Authentication Requirement**&#x200B;下显示一条警告消息，且该选项将不可编辑，也将不可编辑[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)。
    >
    >
    >对于此类情况，必须在[经典 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) 中编辑 CUG 权限。
@@ -158,7 +157,7 @@ ht-degree: 84%
 
    指定导出配置。
 
-### 缩略图  {#thumbnail}
+### 缩略图 {#thumbnail}
 
 1. **页面缩略图**
 
@@ -207,7 +206,7 @@ ht-degree: 84%
 
    >[!CAUTION]
    >
-   >**权限**&#x200B;选项卡允许根据`granite:AuthenticationRequired`混音的存在编辑CUG配置。 如果页面权限是使用已弃用的 CUG 配置来配置的，则在存在 `cq:cugEnabled` 属性的情况下，将会显示一条警告消息，且 CUG 权限将不可编辑，同时[高级](/help/sites-authoring/editing-page-properties.md#advanced)选项卡上的“身份验证要求”也将不可编辑。
+   >通过&#x200B;**Permissions**&#x200B;选项卡，可以根据`granite:AuthenticationRequired` mixin的存在来编辑CUG配置。 如果页面权限是使用已弃用的 CUG 配置来配置的，则在存在 `cq:cugEnabled` 属性的情况下，将会显示一条警告消息，且 CUG 权限将不可编辑，同时[高级](/help/sites-authoring/editing-page-properties.md#advanced)选项卡上的“身份验证要求”也将不可编辑。
    >
    >
    >对于此类情况，必须在[经典 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) 中编辑 CUG 权限。
@@ -275,7 +274,7 @@ ht-degree: 84%
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. 选择&#x200B;**打开属性**，此时将打开一个可用于编辑属性的对话框，这些属性按相应的选项卡进行排序。 工具栏右侧还提供以下按钮：
+1. 选择&#x200B;**打开属性** ，此时将打开一个用于编辑属性的对话框，这些属性按相应的选项卡进行排序。 工具栏右侧还提供以下按钮：
 
    * **取消**
    * **保存并关闭**
@@ -347,4 +346,3 @@ ht-degree: 84%
 >[!NOTE]
 >
 >可以对页面组件进行配置，以指定可批量编辑的字段。请参阅[配置页面以批量编辑页面属性](/help/sites-developing/bulk-editing.md)。
-

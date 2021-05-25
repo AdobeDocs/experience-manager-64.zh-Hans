@@ -10,20 +10,19 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 4b9d2f5f-aae7-4366-b6a6-a8277155cee9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 92%
 
 ---
 
-
 # 创建启动项{#creating-launches}
 
 可创建启动项，以允许更新现有网页的新版本，以便将来激活。创建启动项时，需要指定标题和源页面：
 
-* 标题显示在[引用](/help/sites-authoring/author-environment-tools.md#references)边栏中，作者可从中访问这些标题以对其进行处理。
+* 标题会显示在[引用](/help/sites-authoring/author-environment-tools.md#references)边栏中，作者可以从中访问这些标题以对其进行处理。
 * 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
 * 默认情况下，[Live Copy](/help/sites-administering/msm.md) 会在源页面发生更改时自动更新启动页面。您可以指定创建一个静态副本，以防止自动更改。
 
@@ -135,7 +134,7 @@ ht-degree: 92%
 
 #### 创建嵌套启动项 -“启动项”控制台 {#creating-a-nested-launch-launches-console}
 
-从&#x200B;**启动项**&#x200B;控制台创建嵌套启动项与创建任何其他形式的启动项基本相同，但您需要导航到启动项分支`/content/launches`:
+从&#x200B;**启动项**&#x200B;控制台创建嵌套启动项与创建任何其他形式的启动项基本相同，但需要导航到启动项分支`/content/launches`的情况除外：
 
 1. 在&#x200B;**启动项**&#x200B;控制台中，选择&#x200B;**创建**。
 1. 选择 **添加页面**，然后通过在筛选器中指定来导航到启动 `/content/launches` 项分支。 选择所需的启动项，并通过选择进 **行确认**:
@@ -170,4 +169,3 @@ ht-degree: 92%
 >[!CAUTION]
 >
 >删除启动项时，将会删除该启动项本身及其所有下级嵌套启动项。
-

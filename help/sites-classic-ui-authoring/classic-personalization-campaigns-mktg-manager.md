@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 63bf891c-572a-40e0-945f-d20a0a029224
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 94%
 
 ---
-
 
 # 使用营销活动管理器{#working-with-the-marketing-campaign-manager}
 
@@ -49,13 +48,13 @@ ht-degree: 94%
       选择特定的区段将打开区段定义页面。
 
    * [报告](/help/sites-administering/reporting.md)\
-      AEM提供不同的报告，帮助您分析和监视实例的状态。 此 MCM 窗格列出了相应报表。
+      AEM提供了不同的报表，以帮助您分析和监视实例的状态。 此 MCM 窗格列出了相应报表。
 
       选择报表将打开报表页面。
 
    * [营销活动](#campaigns)
 
-      此窗格列表您的活动体验，如[newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)和[teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)。
+      此窗格列出了您的营销活动体验，如[newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)和[teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)。
 
 * **[潜在客户](#leads)**
 
@@ -75,7 +74,7 @@ ht-degree: 94%
 
 功能板显示了四个窗格，分别为您提供了有关（潜在客户）列表、区段、报表和营销活动的概述。可以在此处访问这些内容的基本功能。
 
-![mcm_仪表板](assets/mcm_dashboard.png)
+![mcm_dashboard](assets/mcm_dashboard.png)
 
 ## 潜在客户 {#leads}
 
@@ -119,7 +118,7 @@ ht-degree: 94%
 
 要访问现有营销活动，请在 MCM 中单击&#x200B;**营销活动**。
 
-![screen_shot_2012-02-21at1106pm](assets/screen_shot_2012-02-21at11106pm.png)
+![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
 * **在左边窗格中**：
 
@@ -186,7 +185,7 @@ ht-degree: 94%
 
    您可以在此处：
 
-   * 创建&#x200B;**新……**&#x200B;体验；例如，Adobe Target优惠、teaser和newsletter。
+   * 创建&#x200B;**新建……**&#x200B;体验；例如，Adobe Target选件、Teaser和新闻稿。
    * **编辑**&#x200B;特定的 Teaser 页面或新闻稿的详细信息（也可以使用双击）。
    * 为特定的 Teaser 页面或新闻稿定义&#x200B;**属性...**。
    * **模拟**&#x200B;体验（teaser 页面或 newsletter）的外观。
@@ -211,4 +210,3 @@ ht-degree: 94%
 在 MCM 中，单击&#x200B;**营销活动**。确保列表视图处于激活状态，然后选择所需的营销活动体验，并选择&#x200B;**分析...**。将会显示一段时间内的页面展示图。
 
 ![mcm_campaignanyze](assets/mcm_campaignanalyze.png)
-

@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
-translation-type: tm+mt
-source-git-commit: 8326ee711558a390f79fc185fc37bbbb3097e309
+exl-id: 846a925a-673e-4051-a673-1a9236701f0a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 81%
 
 ---
 
-
 # 使用标记 {#using-tags}
 
 标记是用于对网站中的内容进行分类的简单快捷方法。可以将标记视为可附加到页面、资产或其他内容，以便在进行搜索时能够找到该内容及相关内容的关键字或标签。
 
-* 有关创建和管理标记以及已应用哪些内容标记的信息，请参阅[管理标记](/help/sites-administering/tags.md)。
-* 请参阅[开发人员标记](/help/sites-developing/tags.md)，以了解有关标记框架以及在自定义应用程序中包括和扩展标记的信息。
+* 请参阅[管理标记](/help/sites-administering/tags.md) ，以了解有关创建和管理标记以及已对哪些内容应用标记的信息。
+* 请参阅[面向开发人员的标记](/help/sites-developing/tags.md) ，以了解有关标记框架以及在自定义应用程序中包括和扩展标记的信息。
 
 ## 使用标记的十大理由 {#ten-reasons-to-use-tagging}
 
@@ -53,7 +52,7 @@ ht-degree: 81%
 
 在创作环境中，作者可以通过访问页面属性并在&#x200B;**标记/关键字**&#x200B;字段中输入一个或多个标记来应用标记。
 
-要应用[预定义标记](/help/sites-administering/tags.md)，请在&#x200B;**页面属性**&#x200B;窗口中使用&#x200B;**标记**&#x200B;字段和&#x200B;**选择标记**&#x200B;窗口。 **标准标记**&#x200B;选项卡是默认的命名空间，这意味着分类前面没有 `namespace-string:` 前缀。
+要应用预定义的[标记](/help/sites-administering/tags.md)，请在&#x200B;**页面属性**&#x200B;窗口中使用&#x200B;**标记**&#x200B;字段和&#x200B;**选择标记**&#x200B;窗口。 **标准标记**&#x200B;选项卡是默认的命名空间，这意味着分类前面没有 `namespace-string:` 前缀。
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -77,7 +76,7 @@ ht-degree: 81%
 
 ## 标记云 {#tag-clouds}
 
-标记云显示一组标记，用于当前页面、整个网站或最常访问的标记。 标记云是突出显示用户感兴趣的问题的一种方法。用于显示标记的文本大小因标记的用途而异。
+标记云会显示一组标记，用于当前页面、整个网站或最常访问的标记。 标记云是突出显示用户感兴趣的问题的一种方法。用于显示标记的文本大小因标记的用途而异。
 
 [标记云](/help/sites-authoring/default-components-foundation.md#tag-cloud)组件（通用组件组）用于向页面添加标记云。
 
@@ -87,7 +86,6 @@ ht-degree: 81%
 
 ### 使用搜索组件  {#using-search-component}
 
-将[搜索组件](/help/sites-authoring/default-components-foundation.md#search)添加到页面可提供搜索功能，该功能包括标记，并且可用于创作和发布环境。
+将[搜索组件](/help/sites-authoring/default-components-foundation.md#search)添加到页面可提供搜索功能，该功能包含标记，并且可在创作和发布环境中使用。
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
-

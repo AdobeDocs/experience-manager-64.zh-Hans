@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 997040d4-cf8f-4240-8423-a98d562aae02
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 59%
 
 ---
 
-
 # 选择您的 UI{#selecting-your-ui}
 
-由于触屏优化UI将取代经典UI,AEM实例的用户或管理员必须主动决定继续使用经典UI。 由于经典UI不再进行维护，因此创作用户无法简单地从经典UI切换到触屏优化UI中的等效UI。
+由于触屏优化UI取代了经典UI，因此AEM实例的用户或管理员必须做出积极决定，以继续使用经典UI。 由于经典UI不再进行维护，因此创作用户无法简单地从经典UI切换到触屏UI中的等效UI。
 
 为了创作用户方便起见，触屏优化 UI 允许在必要时切换到经典 UI。有关详细信息，请参阅标准创作文档中的[选择您的 UI](/help/sites-authoring/select-ui.md)。
 
@@ -28,7 +27,7 @@ ht-degree: 59%
 >
 >对于从以前版本升级而来的实例，页面创作将继续使用经典 UI。
 >
->升级后，页面创作不会自动切换到触屏优化UI，但您可以使用&#x200B;**WCM创作UI模式服务**（`AuthoringUIMode`服务）的[OSGi配置](/help/sites-deploying/configuring-osgi.md)进行配置。 请参阅[编辑器的 UI 重写](#uioverridesfortheeditor)。
+>升级后，页面创作不会自动切换到触屏优化UI，但您可以使用&#x200B;**WCM创作UI模式服务**（`AuthoringUIMode`服务）的[OSGi配置](/help/sites-deploying/configuring-osgi.md)对此进行配置。 请参阅[编辑器的 UI 重写](#uioverridesfortheeditor)。
 
 ## 配置实例的默认 UI {#configuring-the-default-ui-for-your-instance}
 

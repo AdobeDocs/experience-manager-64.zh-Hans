@@ -1,6 +1,6 @@
 ---
-title: 使用资产分析的演示包
-description: 使用演示包，让Adobe资产洞察能够从网页捕获数据并生成洞察。
+title: 使用资产分析演示包
+description: 使用演示包，可启用Adobe资产分析，以从中捕获数据并为网页生成分析。
 contentOwner: AG
 feature: 资产分析，资产报表
 role: Business Practitioner,Administrator
@@ -12,13 +12,13 @@ ht-degree: 2%
 
 ---
 
-# 使用资产分析的演示包{#using-demo-package-for-asset-insights}
+# 使用资产分析演示包{#using-demo-package-for-asset-insights}
 
-使用演示包，您可以启用Adobe资产分析，以从示例网页捕获数据并生成洞察。
+使用演示包，您可以启用Adobe资产分析，以从中捕获数据并为示例网页生成分析。
 
-## 将AEM Assets Insights与示例网页{#using-aem-assets-insights-with-sample-web-page}结合使用
+## 将AEM Assets分析与示例网页{#using-aem-assets-insights-with-sample-web-page}结合使用
 
-1. 使用[配置资产分析](touch-ui-configuring-asset-insights.md)中的说明配置资产分析。
+1. 按照[配置资产分析](touch-ui-configuring-asset-insights.md)中的说明配置资产分析。
 1. 从下面下载示例AEM Assets包，并从CRXDE包管理器安装该包。
 
 [获取文件](assets/insightsdemo.zip)
@@ -27,12 +27,12 @@ ht-degree: 2%
 
 [获取文件](assets/demosite.zip)
 
-1. 单击网页，在Web浏览器中将其打开。
+1. 单击网页以在Web浏览器中将其打开。
 
    >[!CAUTION]
    >
-   >将网页配置为从localhost服务器加载资源。 如果服务器正在运行，则在网页的HTML内容中将服务器地址从localhost更改为服务器地址。
+   >网页配置为从本地主机服务器加载资产。 如果服务器在其他位置运行，请在网页的HTML内容中将服务器地址从localhost更改为服务器地址。
 
    >[!NOTE]
    >
-   >外部网页可以是AEM本身。
+   >外部网页可以位于AEM中。

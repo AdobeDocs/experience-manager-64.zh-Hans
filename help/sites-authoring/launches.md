@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: a6dca5d7-21b5-4a7f-9e83-b0f5ea77bc88
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 96%
 
 ---
-
 
 # 启动项概述{#launches}
 
@@ -42,7 +41,7 @@ ht-degree: 96%
 * [编辑启动项](/help/sites-authoring/launches-editing.md)
 * [提升启动项](/help/sites-authoring/launches-promoting.md)
 
-## 启动项 - 事件的顺序  {#launches-the-order-of-events}
+## 启动项 - 事件的顺序 {#launches-the-order-of-events}
 
 启动项允许您有效地为将来发布的一个或多个激活网页开发内容。
 
@@ -101,7 +100,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->创建和编辑启动项需要对`/content/launches`的访问权限——与默认组`content-authors`的权限相同。
+>创建和编辑启动项需要具有`/content/launches`的访问权限 — 与默认组`content-authors`的访问权限相同。
 >
 >如果您遇到任何问题，请联系您的系统管理员。
 
@@ -113,7 +112,7 @@ ht-degree: 96%
 
 * 或者直接通过 [http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html) 访问
 
-## 引用（站点控制台）中的启动项{#launches-in-references-sites-console}
+## 引用（站点控制台）{#launches-in-references-sites-console}中的启动项
 
 1. 在&#x200B;**站点**&#x200B;控制台中，导航到启动项的源。
 1. 打开&#x200B;**引用**&#x200B;边栏并选择源页面。
@@ -124,4 +123,3 @@ ht-degree: 96%
 1. 点按/单击相应的启动项，此时将显示可执行的操作列表：
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
-

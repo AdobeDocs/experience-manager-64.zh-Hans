@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
-translation-type: tm+mt
-source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 95%
 
 ---
-
 
 # 页面差异{#page-diff}
 
@@ -28,7 +27,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 >
->如果运行的版本早于AEM 6.4.3，则用户必须对节点`/content/versionhistory`具有&#x200B;**修改／创建／删除**&#x200B;权限才能使用该功能。
+>如果您运行的版本低于AEM 6.4.3，则用户必须对节点`/content/versionhistory`具有&#x200B;**修改/创建/删除**&#x200B;权限，才能使用该功能。
 >
 >请参阅[开发和页面差异](/help/sites-developing/pagediff.md#operation-details)，以了解有关此功能的更多技术详细信息。
 
@@ -111,4 +110,3 @@ ht-degree: 95%
 >[!NOTE]
 >
 >有关页面差异机制的操作以及可能影响页面差异的限制的更多详细信息，请参阅此功能的[开发人员文档](/help/sites-developing/pagediff.md)。
-

@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
-translation-type: tm+mt
-source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+exl-id: 6480a0ba-ff65-42af-a14f-ce9fdbb7945f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 95%
 
 ---
-
 
 # 处理任务{#working-with-tasks}
 
@@ -56,7 +55,7 @@ ht-degree: 95%
 
 #### 任务详细信息 {#task-details}
 
-有关特定任务的详细信息，请在任务列表中点按／单击任务，然后打开**任务详细信息**。
+有关特定任务的详细信息，请在任务列表中，点按/单击该任务，然后打开**任务详**。
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 

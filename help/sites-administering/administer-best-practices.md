@@ -1,22 +1,21 @@
 ---
 title: 最佳实践
-description: 了解由Adobe工程和咨询团队汇编的Adobe Experience Manager最佳做法，帮助管理员快速入门。
+description: 了解由Adobe工程和咨询团队编译的Adobe Experience Manager最佳实践，以帮助管理员快速入门并运行。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 8c41dba4-bedc-4747-b67d-fd89d71c8b2c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 13%
 
 ---
 
-
 # 最佳实践{#best-practices}
 
-最佳实践介绍了如何以最高效、最有效的方式开发、管理或使用AEM。 这些主题涵盖 AEM 中的多个区域，此外还将不断增加新的主题。
+最佳实践介绍如何以最有效、最有效的方式开发、管理或使用AEM。 这些主题涵盖 AEM 中的多个区域，此外还将不断增加新的主题。
 
 目前已经有针对以下区域的最佳实践文档：
 
@@ -33,34 +32,34 @@ ht-degree: 13%
 
 ## 资产 {#assets}
 
-有关资产(包括Dynamic Media功能和Dynamic Media经典集成)的最佳实践，请参阅以下主题：
+以下主题介绍了有关资产(包括Dynamic Media功能和Dynamic Media Classic集成)的最佳实践：
 
 <table> 
  <tbody>
   <tr>
-   <td>围绕资产的不同方面的最佳实践，可在负载下增强系统稳定性和性能</td> 
+   <td>围绕Assets的不同领域的最佳实践，以增强负载下的系统稳定性和性能</td> 
    <td><a href="/help/assets/organize-assets.md">用于资产的最佳实践</a></td> 
-   <td>包括指向资产不同区域的最佳实践指南的链接。 经过审核，您将拥有构建和管理企业资产管理系统的知识和工具。</td> 
+   <td>包括指向资产不同区域最佳实践指南的链接。 在审核了这些信息后，您将拥有构建和管理企业资产管理系统的知识和工具。</td> 
   </tr>
   <tr>
    <td>如何组织内容（文件夹层次结构）</td> 
    <td><a href="/help/assets/organize-assets.md">文件管理最佳实践</a></td> 
-   <td>许多处理用户档案都基于文件夹，因为视频、元数据、图像处理始终应用于文件夹。 此最佳实践文档描述了如何定义和设置文件夹层次结构，因为层次结构对内容的处理方式有很大影响。 </td> 
+   <td>大多数处理配置文件都基于文件夹，因为视频、元数据和图像处理始终应用于文件夹。 此最佳实践文档介绍了如何定义和设置文件夹层次结构，因为该层次结构对内容的处理方式有重大影响。 </td> 
   </tr>
   <tr>
-   <td>整合Dynamic Media经典和AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">将Dynamic Media经典与AEM集成的最佳实践</a></td> 
-   <td><p>介绍何时打开轮询导入程序、如何测试集成以及何时使用内容浏览器还是直接上传到资产。</p> </td> 
+   <td>集成Dynamic Media Classic和AEM</td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">将Dynamic Media Classic与AEM集成的最佳实践</a></td> 
+   <td><p>介绍何时打开轮询导入器、如何测试集成，以及何时使用内容浏览器，何时直接上传到资产。</p> </td> 
   </tr>
   <tr>
    <td>图像预设选项</td> 
    <td>了解<a href="/help/assets/managing-image-presets.md#understanding-image-presets">图像预设</a>和<a href="/help/assets/managing-image-presets.md#image-preset-options">图像预设最佳实践</a></td> 
-   <td>在<a href="/help/assets/managing-image-presets.md">管理图像预设</a>的文档中，以下主题介绍了哪些图像预设以及有关选择图像预设选项的最佳实践。</td> 
+   <td>在<a href="/help/assets/managing-image-presets.md">管理图像预设</a>的文档中，以下主题介绍了图像预设的含义以及有关选择图像预设选项的最佳实践。</td> 
   </tr>
   <tr>
-   <td>Dynamic Media与Dynamic Media经典的直接整合</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Dynamic Media经典/AEM集成与Dynamic Media</a></td> 
-   <td>描述何时最好使用Dynamic Media解决方案、何时将S7与AEM集成或何时同时使用两者。</td> 
+   <td>Dynamic Media与与Dynamic Media Classic的直接集成</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Dynamic Media Classic/AEM集成与Dynamic Media</a></td> 
+   <td>描述何时最好使用Dynamic Media解决方案，何时将S7与AEM集成，或何时同时使用这两者。</td> 
   </tr>
  </tbody>
 </table>
@@ -72,19 +71,19 @@ ht-degree: 13%
 <table> 
  <tbody>
   <tr>
-   <td>遵守GDPR</td> 
-   <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites遵守GDPR</a></td> 
-   <td>欧洲合并的《数据隐私权一般数据保护规定》自2018年5月起生效。 AEM Sites符合GDPR。 本页将引导客户完成在AEM Sites处理GDPR请求的过程。 它描述了存储的私有数据的位置，以及如何手动或使用代码删除这些数据。</td> 
+   <td>GDPR合规</td> 
+   <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites GDPR合规</a></td> 
+   <td>欧盟的《数据隐私权通用数据保护条例》已于2018年5月正式生效。 AEM Sites符合GDPR。 本页面将指导客户完成在AEM Sites中处理GDPR请求的过程。 它描述了存储的专用数据的位置，以及如何手动或使用代码删除这些数据。</td> 
   </tr>
   <tr>
-   <td>定义实例的默认UI。</td> 
-   <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">配置实例的默认UI</a></p> </td> 
-   <td>AEM有两个UI:触屏优化和经典。 本节详细介绍如何为实例定义默认UI。</td> 
+   <td>为实例定义默认UI。</td> 
+   <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">为实例配置默认UI</a></p> </td> 
+   <td>AEM有两个UI:触控优化和经典。 本节详细介绍如何为实例定义默认UI。</td> 
   </tr>
   <tr>
    <td>多站点管理</td> 
    <td><a href="/help/sites-administering/msm-best-practices.md">MSM最佳实践</a></td> 
-   <td>使用MSM自动进行内容部署的最佳实践。 </td> 
+   <td>使用MSM自动部署内容的最佳实践。 </td> 
   </tr>
   <tr>
    <td>翻译内容</td> 
@@ -98,9 +97,8 @@ ht-degree: 13%
   </tr>
   <tr>
    <td>工作流</td> 
-   <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">工作流最佳实践——配置</a></td> 
-   <td>工作流使您能够实现Adobe Experience Manager(AEM)活动的自动化，并能够代表AEM环境中大量的处理，因此强烈建议仔细规划和配置您的工作流实施。</td> 
+   <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">工作流最佳实践 — 配置</a></td> 
+   <td>工作流使您能够自动执行Adobe Experience Manager(AEM)活动，并且可以代表AEM环境中发生的大量处理，因此强烈建议仔细规划和配置工作流实施。</td> 
   </tr>
  </tbody>
 </table>
-

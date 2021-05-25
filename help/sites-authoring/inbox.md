@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
-translation-type: tm+mt
-source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+exl-id: 9037f21c-5392-4322-af0d-7e220c810954
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 95%
 
 ---
-
 
 # 您的收件箱{#your-inbox}
 
@@ -46,11 +45,9 @@ ht-degree: 95%
 >有关这些项目类型的更多信息，另请参阅：
 >
 >* [项目](/help/sites-authoring/touch-ui-managing-projects.md)
->* [项目 - 处理任务](/help/sites-authoring/task-content.md)
->* [工作流](/help/sites-authoring/workflows.md)
->* [表单](/help/forms/home.md)
-
->
+* [项目 - 处理任务](/help/sites-authoring/task-content.md)
+* [工作流](/help/sites-authoring/workflows.md)
+* [表单](/help/forms/home.md)
 
 
 
@@ -61,8 +58,7 @@ ht-degree: 95%
 ![wf-80](assets/wf-80.png)
 
 >[!NOTE]
->
->某些操作也将显示在[相应资源的卡片视图](/help/sites-authoring/basic-handling.md#card-view)中。
+某些操作也将显示在[相应资源的卡片视图](/help/sites-authoring/basic-handling.md#card-view)中。
 
 ## 现成的管理任务   {#out-of-the-box-administrative-tasks}
 
@@ -87,8 +83,7 @@ AEM 预先加载了四项分配给管理员用户组的现成任务。
    ![wf-79](assets/wf-79.png)
 
 >[!NOTE]
->
->收件箱作为控制台运行，因此当您完成操作后，可使用[全局导航](/help/sites-authoring/basic-handling.md#global-navigation)或[搜索](/help/sites-authoring/search.md)导航到其他位置。
+收件箱作为控制台运行，因此当您完成操作后，可使用[全局导航](/help/sites-authoring/basic-handling.md#global-navigation)或[搜索](/help/sites-authoring/search.md)导航到其他位置。
 
 ### 收件箱 - 列表视图 {#inbox-list-view}
 
@@ -144,7 +139,7 @@ AEM 预先加载了四项分配给管理员用户组的现成任务。
 
    这些操作适用于该项目，具体包括：
 
-   * **完成**&#x200B;操作;例如，任务或工作流项。
+   * **完成**&#x200B;操作;例如，任务或工作流项目。
    * **重新分配**/**委派**&#x200B;项目。
    * **打开**&#x200B;项目；根据项目类型，此操作可以：
 
@@ -156,10 +151,8 @@ AEM 预先加载了四项分配给管理员用户组的现成任务。
    * 从该项目创建一个项目.
 
    >[!NOTE]
-   >
-   >有关更多信息，请参阅：
-   >
-   >* 工作流项目 - [参与工作流](/help/sites-authoring/workflows-participating.md)
+   有关更多信息，请参阅：
+   * 工作流项目 - [参与工作流](/help/sites-authoring/workflows-participating.md)
 
 
 1. 根据所选项目，将会启动相应的操作；例如：
@@ -201,7 +194,7 @@ AEM 预先加载了四项分配给管理员用户组的现成任务。
 
    * **高级**
 
-      * **名称**:这将用于形成URL;如果为空，则它将基于&#x200B;**标题**。
+      * **名称**:此URL将用于形成URL;如果留空，则将基于&#x200B;**标题**。
 
    ![wf-87](assets/wf-87.png)
 
@@ -214,10 +207,8 @@ AEM 预先加载了四项分配给管理员用户组的现成任务。
 1. 通过点按/单击缩略图选择相应的任务。
 
    >[!NOTE]
-   >
-   >只有使用&#x200B;**收件箱**&#x200B;的&#x200B;**创建**&#x200B;选项创建的任务才能用于创建项目。
-   >
-   >不能使用工作项（来自工作流）创建项目。
+   只有使用&#x200B;**收件箱**&#x200B;的&#x200B;**创建**&#x200B;选项创建的任务才能用于创建项目。
+   不能使用工作项（来自工作流）创建项目。
 
 1. 从工具栏中选择“**创建项目**”以打开向导。
 1. 选择相应的模板，然后选择&#x200B;**下一步**。
@@ -234,8 +225,7 @@ AEM 预先加载了四项分配给管理员用户组的现成任务。
 
       * **名称**
    >[!NOTE]
-   >
-   >有关完整信息，请参阅[创建项目](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project)。
+   有关完整信息，请参阅[创建项目](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project)。
 
 1. 选择&#x200B;**创建**&#x200B;以确认操作。
 
@@ -254,6 +244,4 @@ AEM 预先加载了四项分配给管理员用户组的现成任务。
    ![wf-89](assets/wf-89.png)
 
    >[!NOTE]
-   >
-   >通过[视图设置](#inbox-view-settings)，您还可以在使用[列表视图](#inbox-list-view)时配置排序顺序。
-
+   通过[视图设置](#inbox-view-settings)，您还可以在使用[列表视图](#inbox-list-view)时配置排序顺序。

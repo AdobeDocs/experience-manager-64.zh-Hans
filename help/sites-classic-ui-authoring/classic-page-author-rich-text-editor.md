@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 44cd0092-de40-4a72-a682-1e8f5906b2e5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 90%
 
 ---
-
 
 # 富文本编辑器{#rich-text-editor}
 
@@ -60,7 +59,7 @@ ht-degree: 90%
 
 ## 富文本编辑器的功能  {#features-of-the-rich-text-editor}
 
-富文本编辑器提供了一系列功能，这些[取决于单个组件的配置](/help/sites-administering/rich-text-editor.md)。这些功能可用于触屏优化UI和经典UI。
+富文本编辑器提供了一系列功能，这些功能[取决于单个组件的配置](/help/sites-administering/rich-text-editor.md)。这些功能同时适用于触屏优化UI和经典UI。
 
 ### 基本字符格式 {#basic-character-formats}
 
@@ -134,7 +133,7 @@ AEM 会按时间顺序保留您在当前组件中过去 50 次操作的记录。
 >
 >50 次是默认的任务数量。您的安装可以使用不同的值。
 
-### 对齐 {#alignment}
+### 对齐方式 {#alignment}
 
 ![](do-not-localize/cq55_rte_alignment.png)
 
@@ -160,7 +159,7 @@ AEM 会按时间顺序保留您在当前组件中过去 50 次操作的记录。
 
 只需将光标置于列表中，然后选择其他样式即可更改列表样式。子列表也可以具有不同于包含列表的样式。在创建子列表（通过缩进）后，即可应用样式。
 
-![cq55_rte_列表_use](assets/cq55_rte_lists_use.png)
+![cq55_rte_lits_use](assets/cq55_rte_lists_use.png)
 
 ### 链接 {#links}
 
@@ -184,14 +183,14 @@ AEM 会按时间顺序保留您在当前组件中过去 50 次操作的记录。
 
 >[!NOTE]
 >
->URI 可以为您的安装配置的任何协议作为前缀。在标准安装中，这些是`https://`、`ftp://`和`mailto:`。 将拒绝并非为您的安装配置的协议，并将其标记为无效。
+>URI 可以为您的安装配置的任何协议作为前缀。在标准安装中，这些参数分别为`https://`、`ftp://`和`mailto:`。 将拒绝并非为您的安装配置的协议，并将其标记为无效。
 
 
 要中断链接，请将光标置于链接文本中的任意位置并单击&#x200B;**取消链接**&#x200B;图标：
 
 ![](do-not-localize/chlimage_1-13.png)
 
-### 锚点  {#anchors}
+### 锚点 {#anchors}
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
@@ -259,7 +258,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 
    >[!NOTE]
    >
-   >尽管RTE中有可用的表，但在创建表时，建议使用&#x200B;**表**&#x200B;组件。
+   >尽管RTE中提供了表，但在创建表时，建议使用&#x200B;**Table**&#x200B;组件。
 
 在&#x200B;**文本**&#x200B;和&#x200B;**表**&#x200B;组件中，可通过单击表中的上下文菜单（通常是鼠标右键按钮）使用表功能；例如：
 
@@ -354,8 +353,8 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 * **宽度**
 * **高度**
 * **水平对齐** - 左对齐、居中对齐或右对齐
-* **垂直对齐** -顶部、中间、底部或基线
-* **单元格类型** -数据或标题
+* **垂直对齐**  — 顶部、中间、底部或基线
+* **单元格类型**  — 数据或标题
 * **应用到：**
    * 单一单元格
    * 整行
@@ -385,7 +384,7 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 
 #### 合并单元格 {#merge-cells}
 
-![cq55_rte_](assets/cq55_rte_cellmerge.png) ![cellmergeq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
+![cq55_rte_cellmergecq](assets/cq55_rte_cellmerge.png) ![55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * 如果您选择了一组单元格，可以将这些单元格合并为一个。
 * 如果您只选择了一个单元格，可以将其与右侧或下方的单元格合并。
@@ -449,4 +448,3 @@ AEM 提供了&#x200B;**查找**&#x200B;和&#x200B;**替换**（查找并替换�
 >[!CAUTION]
 >
 >离开源模式时，AEM 将进行某些验证检查（例如，确保文本正确包含/嵌套在块中）。这会导致更改您的编辑。
-

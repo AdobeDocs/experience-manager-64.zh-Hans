@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
-translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+exl-id: 843cf933-d8a1-407d-9468-1a6409110f81
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 93%
 
 ---
 
-
 # 使用工作流{#working-with-workflows}
 
-通过 AEM 工作流，您可以自动完成对页面或资产执行的一系列步骤。例如，在发布时，编辑者必须在站点管理员激活页面之前审查内容。自动完成此示例的工作流会通知每个参加者何时需要执行其所需的工作：
+通过 AEM 工作流，您可以自动完成对页面或资产执行的一系列步骤。例如，在发布时，编辑者必须在站点管理员激活页面之前审查内容。自动执行此示例的工作流会通知每个参与者何时需要执行其所需工作：
 
 1. 作者将工作流应用于页面。
 1. 编辑者收到一个工作项，指示他们需要审查页面内容。完成后，他们指示自己的工作项已完成。
@@ -35,4 +34,3 @@ ht-degree: 93%
 
 * [将工作流应用于页面](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
 * [参与工作流](/help/sites-classic-ui-authoring/classic-workflows-participating.md)
-

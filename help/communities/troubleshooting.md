@@ -1,41 +1,40 @@
 ---
 title: 疑难解答
 seo-title: 疑难解答
-description: 包含已知问题的社区疑难解答
-seo-description: 包含已知问题的社区疑难解答
+description: 社区故障诊断（包括已知问题）
+seo-description: 社区故障诊断（包括已知问题）
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
-translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
 
 ---
 
-
 # 疑难解答 {#troubleshooting}
 
-本节包含共同关注和已知问题。
+本节包含一些常见问题和已知问题。
 
 ## 已知问题 {#known-issues}
 
-### 调度程序重取失败{#dispatcher-refetch-fails}
+### Dispatcher重取失败{#dispatcher-refetch-fails}
 
-当将Dispatcher 4.1.5与较新版本的Jetty一起使用时，重取可能导致在等待请求超时后“无法从远程服务器接收响应”。
+将Dispatcher 4.1.5与较新版本的Jetty一起使用时，重新获取可能会在等待请求超时后导致“无法从远程服务器接收响应”。
 
-使用Dispatcher 4.1.6或更高版本可解决此问题。
+使用Dispatcher 4.1.6或更高版本将解决此问题。
 
 ### 从CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}升级后无法访问论坛帖子
 
-如果在CQ 5.4上创建了论坛并发布了主题，然后将站点升级到AEM 5.6.1或更高版本，则尝试视图现有帖子可能会导致页面上出错：
+如果在CQ 5.4上创建论坛并发布了主题，然后将网站升级到AEM 5.6.1或更高版本，则尝试查看现有帖子可能会导致页面上出现错误：
 
-非法图案字符“a”\
-无法向此服务器上的/content/demoforums/forum-test.html发送请求
+非法模式字符“a”\
+无法向此服务器上的/content/demoforums/forum-test.html提供请求
 
 日志包含以下内容：
 
@@ -46,32 +45,32 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.call(DefaultSlingScri
 at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScript.java:171)
 ```
 
-问题是com.day.cq.commons.date.RelativeTimeFormat的格式字符串在5.4和5.5之间发生了更改，因此不再接受“ago”的“a”。
+问题在于com.day.cq.commons.date.RelativeTimeFormat的格式字符串在5.4和5.5之间发生了更改，以便不再接受“ago”的“a”。
 
-因此，使用RelativeTimeFormat()API的任何代码都需要更改
+因此，使用RelativeTimeFormat()API的任何代码都需要进行更改
 
 * 发件人: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * 收件人: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-创作和发布失败有所不同。 创作时，它将失败且不显示论坛主题。 在发布时，它会在页面上引发错误。
+创作和发布失败的情况不同。 创作时，该过程会静默失败，而且只会不显示论坛主题。 在发布时，它会在页面上引发错误。
 
-有关详细信息，请参阅[com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API。
+有关更多信息，请参阅[com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API 。
 
 ## 常见问题{#common-concerns}
 
-### 日志中的警告：已弃用Handlebars {#warning-in-logs-handlebars-deprecated}
+### 日志中的警告：已弃用的Handlebars {#warning-in-logs-handlebars-deprecated}
 
-在启动期间（不是第1次启动，但之后每次启动），日志中可能会显示以下警告：
+在启动期间（不是第1次，但是之后每次启动），日志中可能会显示以下警告：
 
 * 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jkank.handlebars.Handlebars Helper &#39;i18n&#39;已被“com.adobe.cq.social.handlebars.I18nHelper@15bac645”替换
 
-此警告可以安全地忽略，因为[SCF](scf.md#handlebarsjavascripttemplatinglanguage)使用的jkank.handlebars.Handlebars是自己的i18n帮助程序。 在开始时，它将替换为AEM特定的[i18n帮助程序](handlebars-helpers.md#i-n)。 此警告由第三方库生成，以确认覆盖现有帮助程序。
+此警告可以安全地忽略，因为[SCF](scf.md#handlebarsjavascripttemplatinglanguage)使用的jkank.handlebars.Handlebars随其i18n帮助程序实用程序一起提供。 启动时，它被替换为特定于AEM的[i18n帮助程序](handlebars-helpers.md#i-n)。 此警告由第三方库生成，用于确认覆盖现有帮助程序。
 
 ### 日志中的警告：OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
-发布大量社交社区论坛主题可能会导致OakResourceListener processOsgiEventQueue中大量的警告和信息日志。
+发布大量社交社区论坛主题可能会从OakResourceListener processOsgiEventQueue中生成大量警告和信息日志。
 
-这些警告可以安全地忽略。
+可以安全地忽略这些警告。
 
 ```xml
 23.04.2014 14:21:18.900 *WARN* [pool-5-thread-3] org.apache.sling.jcr.resource.internal.OakResourceListener processOsgiEventQueue: Resource at /var/search-collections/ugc-sc/_m.frq/jcr:content not found, which is not expected for an added or modified node
@@ -84,7 +83,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 ### 日志中出错：IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}的NoClassDefFoundError
 
-将AEM 5.6.1 GA升级到最新的cq-socialcommunities-pkg-1.4.x或AEM 6.0会在启动过程中导致日志文件中出现错误，该情况将解析自身，从重新启动时未看到错误就可以证明这一点。
+将AEM 5.6.1 GA升级到最新的cq-socialcommunities-pkg-1.4.x或AEM 6.0时，在启动期间，如果某个条件会自行解析，则日志文件中会出现错误，这是重新启动时未看到的错误所证明的。
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException

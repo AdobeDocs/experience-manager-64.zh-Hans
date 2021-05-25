@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction, page-authoring
 content-type: reference
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
-translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+exl-id: 88976f08-c003-4b8f-87c5-38b592fc9921
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 93%
 
 ---
-
 
 # 创作的首要步骤{#first-steps-for-authors}
 
@@ -24,7 +23,7 @@ ht-degree: 93%
 
 它涵盖以下内容：
 
-* [入门](#getting-started):详细介绍创建和发布首个页面所需的基本事件序列。
+* [快速入门](#getting-started):详细介绍创建和发布首个页面所需的一系列基本事件。
 
 * [其他操作](#further-actions):继续执行您在创作时可以使用的许多其他操作。
 
@@ -58,7 +57,7 @@ ht-degree: 93%
 * [锁定页面](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [解锁页面](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
-### 发布页面  {#publishing-a-page}
+### 发布页面 {#publishing-a-page}
 
 完成页面编辑之后，您将需要[发布（或激活）页面](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10)，以便网站的访客可以使用该内容。
 

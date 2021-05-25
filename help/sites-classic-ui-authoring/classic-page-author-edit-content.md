@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 2d0f11ac-f24b-431e-9076-3e6099eab4ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 98%
 
 ---
-
 
 # 编辑页面内容{#editing-page-content}
 
@@ -30,7 +29,7 @@ ht-degree: 98%
 >
 >如果您遇到任何问题，我们建议您与系统管理员联系。
 
-## Sidekick  {#sidekick}
+## Sidekick {#sidekick}
 
 在创作页面时，Sidekick 是一项重要工具。创作页面时 Sidekick 将处于浮动状态，所以始终可见。
 
@@ -307,4 +306,3 @@ AEM 会按照您执行操作的顺序来存储这些操作的历史记录。所�
 >[!NOTE]
 >
 >对文件和图像的更改执行撤消和重做操作需要特殊的权限。另外，文件和图像更改的撤消历史记录至少可以保留 10 个小时。但在超过此时间后，将无法保证可以撤消这些更改。您的管理员可以提供权限并更改 10 个小时的默认保留时间。
-

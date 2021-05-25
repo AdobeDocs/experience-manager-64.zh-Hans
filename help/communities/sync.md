@@ -1,8 +1,8 @@
 ---
-title: 社区用户同步
-seo-title: 社区用户同步
-description: 用户同步的工作方式
-seo-description: 用户同步的工作方式
+title: Communities用户同步
+seo-title: Communities用户同步
+description: 用户同步的工作原理
+seo-description: 用户同步的工作原理
 uuid: 5b9bb7b6-9238-41f6-81da-84b9a303b9e2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,26 +10,25 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 3a8e8fef-9aef-4b9d-8b0b-e76aa2962b61
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2507'
 ht-degree: 2%
 
 ---
 
-
-# 社区用户同步{#communities-user-synchronization}
+# Communities用户同步{#communities-user-synchronization}
 
 ## 简介 {#introduction}
 
-在AEM Communities中，从发布环境（取决于配置的权限）中，*站点访客*&#x200B;可成为&#x200B;*成员*，创建&#x200B;*用户组*，并编辑其&#x200B;*成员用户档案*。
+在AEM Communities中，从发布环境（取决于配置的权限）中，*站点访客*&#x200B;可以成为&#x200B;*成员*，创建&#x200B;*用户组*，并编辑其&#x200B;*成员配置文件*。
 
-*用* 户数据是指用户、用户 *配置*&#x200B;文件和 *用* 户组 **。
+*用* 户数据是用于指代用 *户*、用户 *配置* 文件和 *用户组*&#x200B;的术语。
 
-*会* 员资格是指在发布环境 ** 中注册的用户，而不是在创作环境中注册的用户。
+** 会员资格是一个术语，用 ** 于指在发布环境中注册的用户，而不是在创作环境中注册的用户。
 
-有关用户数据的详细信息，请访问[管理用户和用户组](users.md)。
+有关用户数据的更多信息，请访问[管理用户和用户组](users.md)。
 
 ## 跨发布场同步用户{#synchronizing-users-across-a-publish-farm}
 
@@ -37,9 +36,9 @@ ht-degree: 2%
 
 在创作环境中创建的大多数用户数据都打算保留在创作环境中，并且不会同步或复制到发布实例。
 
-当[topology](topologies.md)是[发布场](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)时，在一个发布实例上进行的注册和修改需要与其它发布实例同步。 成员需要能够登录并查看其任何发布节点上的数据。
+当[拓扑](topologies.md)是[发布场](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)时，对一个发布实例进行的注册和修改需要与其他发布实例同步。 成员需要能够登录并查看其任何发布节点上的数据。
 
-启用用户同步后，会自动在场中的发布实例中同步用户数据。
+启用用户同步后，将在场中的发布实例之间自动同步用户数据。
 
 ### 用户同步设置说明{#user-sync-setup-instructions}
 
@@ -47,123 +46,123 @@ ht-degree: 2%
 
 * [用户同步](../../help/sites-administering/sync.md)
 
-## 用户在后台同步{#user-sync-in-the-background}
+## 后台{#user-sync-in-the-background}中的用户同步
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
-* **VLT包**:是一个zip文件，其中包含在发布者上完成的所有更改，这些更改需要在发布者之间分发。发布者上的更改生成由更改事件侦听器选取的事件。 这将创建一个包含所有更改的vlt包。
+* **VLT包**:是一个zip文件，其中包含在发布者上所做的所有更改，需要在发布者之间分发。发布者上的更改会生成由更改事件侦听器选取的事件。 这会创建一个包含所有更改的vlt包。
 
-* **分发包**:包含Sling的分发信息。这是有关内容需要分发的位置以及上次分发的时间的信息。
+* **分发包**:包含Sling的分发信息。这是有关内容需要分发的位置以及内容最后分发的时间的信息。
 
-## 当…… {#what-happens-when}
+## ... {#what-happens-when}时会发生什么情况
 
-### 从“社区站点”控制台{#publish-site-from-communities-sites-console}发布站点
+### 从社区站点控制台{#publish-site-from-communities-sites-console}发布站点
 
-在创作时，当从[社区站点控制台](sites-console.md)发布社区站点时，效果是[复制](../../help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents)关联的页面，Sling分发动态创建的社区用户组，包括其成员身份。
+在作者中，从[社区站点控制台](sites-console.md)发布社区站点时，其效果是[复制](../../help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents)关联的页面，并Sling分发动态创建的社区用户组，包括其成员资格。
 
-### 用户已在发布{#user-is-created-or-edits-profile-on-publish}时创建或编辑用户档案
+### 在发布{#user-is-created-or-edits-profile-on-publish}时创建或编辑用户配置文件
 
-根据设计，在发布环境（例如通过自注册、社交登录、LDAP身份验证）中创建的用户和用户档案不会显示在创作环境中。
+根据设计，在发布环境中创建的用户和配置文件（例如，通过自注册、社交登录、LDAP身份验证）不会显示在创作环境中。
 
-当拓扑为[发布场](topologies.md)且用户同步已正确配置时，使用Sling分发在发布场中同步&#x200B;*用户*&#x200B;和&#x200B;*用户用户档案*。
+当拓扑为[发布场](topologies.md)且用户同步配置正确时，将使用Sling分发在发布场中同步&#x200B;*用户*&#x200B;和&#x200B;*用户配置文件*。
 
 ### 在发布{#new-community-group-is-created-on-publish}时创建新社区组
 
-虽然从发布实例启动，但实际上在创作实例上会创建社区组（这会导致新站点页面和新用户组）。
+尽管从发布实例启动，但社区组创建（这会导致新站点页面和新用户组）实际上会发生在创作实例上。
 
-在此过程中，新站点页面将复制到所有发布实例。 动态创建的社区用户组及其成员为Sling，已分发到所有发布实例。
+在此过程中，新站点页面会复制到所有发布实例。 动态创建的社区用户组及其成员身份将Sling分发到所有发布实例。
 
-### 用户或用户组是使用安全控制台{#users-or-user-groups-are-created-using-security-console}创建的
+### 使用安全控制台{#users-or-user-groups-are-created-using-security-console}创建用户或组
 
 根据设计，在发布环境中创建的用户数据不会显示在创作环境中，反之亦然。
 
-当使用[用户管理和安全](../../help/sites-administering/security.md)控制台在发布环境中添加新用户时，用户同步会将新用户及其组成员身份与其他发布实例同步（如果需要）。 用户同步还将同步通过安全控制台创建的用户组。
+如果使用[用户管理和安全](../../help/sites-administering/security.md)控制台在发布环境中添加新用户，则用户同步会将新用户及其组成员资格与其他发布实例同步（如果需要）。 用户同步还将同步通过安全控制台创建的用户组。
 
-### 用户在发布上发布内容{#user-posts-content-on-publish}
+### 用户在发布{#user-posts-content-on-publish}时发布内容
 
 对于用户生成的内容(UGC)，在发布实例上输入的数据通过配置的SRP](srp-config.md)进行访问。[
 
-## 最佳实践{#bestpractices}
+## 最佳实践 {#bestpractices}
 
-默认情况下，用户同步为&#x200B;**disabled**。 启用用户同步涉及修改&#x200B;*现有* OSGi配置。 不应因启用用户同步而添加新配置。
+默认情况下，用户同步为&#x200B;**disabled**。 启用用户同步涉及修改&#x200B;*现有* OSGi配置。 由于启用了用户同步，因此不应添加新配置。
 
-用户同步依赖于作者环境来管理用户数据分发，即使用户数据不是在作者身上创建的。
+用户同步依赖于创作环境来管理用户数据分发，即使用户数据不是在创作时创建的。
 
 **前提条件**
 
-1. 如果用户和用户组已在某个发布者上创建，建议在配置和启用用户同步之前，[手动将用户数据同步](../../help/sites-administering/sync.md#manually-syncing-users-and-user-groups)到所有发布者。
+1. 如果已在一个发布者上创建了用户和组，则建议在配置和启用用户同步之前，[手动将](../../help/sites-administering/sync.md#manually-syncing-users-and-user-groups)用户数据同步到所有发布者。
 
-   启用用户同步后，仅会同步新创建的用户和用户组。
+   启用用户同步后，仅会同步新创建的用户和组。
 
 1. 确保已安装最新代码：
 
-   * [AEM平台更新](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+   * [AEM平台更新](https://helpx.adobe.com/cn/experience-manager/kb/aem62-available-hotfixes.html)
    * [AEM Communities更新](deploy-communities.md#latestfeaturepack)
 
-在AEM Communities上启用用户同步时，必须进行以下配置。 确保这些配置正确，以防止sling内容分发失败。
+要在AEM Communities上启用用户同步，必须进行以下配置。 确保这些配置正确无误，以防止Sling内容分发失败。
 
 ### Apache Sling Distribution Agent — 同步代理工厂{#apache-sling-distribution-agent-sync-agents-factory}
 
-此配置可获取要在发布者之间同步的内容。 配置位于作者实例上。 作者必须跟踪所有存在的发布者，并在何处同步所有信息。
+此配置会在发布者中获取要同步的内容。 配置位于创作实例上。 作者必须跟踪所有位于其中的发布者以及同步所有信息的位置。
 
-配置中的默认值针对单个发布实例。 由于用户同步对同步多个发布实例（如发布场）很有用，因此需要向配置中添加其他发布实例。
+配置中的默认值适用于单个发布实例。 由于用户同步对同步多个发布实例（例如，对于发布场）非常有用，因此需要将其他发布实例添加到配置中。
 
 **内容如何同步？**
 
-创作实例ping发布器的导出器端点。 每当在特定发布者(n)上创建或更新用户时，作者将从其导出者端点获取内容，并[将内容](sync.md#main-pars-image-1413756164)推送至其他发布者（n-1，即与从中获取内容的发布者不同）。
+创作实例ping发布者的导出程序端点。 每当在特定发布者(n)上创建或更新用户时，作者都会从其导出者端点获取内容，并且[会将内容](sync.md#main-pars-image-1413756164)推送至其他发布者（n-1，即从中获取内容的发布者之外）。
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
 ### 配置Apache Sling同步代理配置
 
-在AEM作者实例上：
+在AEM创作实例上：
 
 1. 使用管理员权限登录。
 1. 访问[Web控制台](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html)。
 
-   例如，[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
-1. 找到&#x200B;**[!UICONTROL Apache Sling Distribution Agent - Sync Agents Factory]**。
+   例如， [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
+1. 找到&#x200B;**[!UICONTROL Apache Sling Distribution Agent — 同步代理工厂]**。
 
-   * 选择要打开进行编辑的现有配置（铅笔图标）。
+   * 选择要打开以进行编辑的现有配置（铅笔图标）。
    * 验证名称：**`socialpubsync`.**
-   * 选中&#x200B;**[!UICONTROL 已启用]**&#x200B;复选框。
+   * 选中&#x200B;**[!UICONTROL Enabled]**&#x200B;复选框。
    * 选择&#x200B;**[!UICONTROL 使用多个队列]**。
-   * 指定&#x200B;**[!UICONTROL 导出器端点]**&#x200B;和&#x200B;**[!UICONTROL 导入器端点]**（可以添加更多导出器和导入器端点）。
+   * 指定&#x200B;**[!UICONTROL 导出程序端点]**&#x200B;和&#x200B;**[!UICONTROL 导入程序端点]**（可以添加更多导出程序和导入程序端点）。
 
-      这些端点定义了您要从何处获取内容以及要推送内容的位置。 作者从指定的导出器端点获取内容，并将内容推送到发布者（除其从中获取内容的发布者之外）。
+      这些端点定义您要从何处获取内容以及要将内容推送到何处。 作者从指定的导出程序端点获取内容，并将内容推送到发布者（而不是从中获取内容的发布者）。
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Adobe Granite分发 — 加密密码传输机密提供程序{#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### AdobeGranite分发 — 加密密码传输密钥提供程序{#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
-它使作者能够识别授权用户，即具有从作者同步用户数据到发布的权限。
+它使作者能够识别已授权的用户，即有权将用户数据从作者同步到发布。
 
-在所有发布实例上创建的[授权用户](../../help/sites-administering/sync.md#createauthuser)可帮助发布者与作者连接并在作者上配置Sling分发。 此授权用户具有所有必需的[ACL](../../help/sites-administering/sync.md#howtoaddacl)。
+在所有发布实例上创建的[授权用户](../../help/sites-administering/sync.md#createauthuser)可帮助发布者与作者连接并配置作者上的Sling分发。 此授权用户具有所有必需的[ACL](../../help/sites-administering/sync.md#howtoaddacl)。
 
-只要要在发布者上安装数据或从发布者获取数据，作者就会使用此配置中设置的凭据（用户名和密码）与发布者连接。
+每当要在发布器上安装数据或从发布器获取数据时，作者都会使用此配置中设置的凭据（用户名和密码）与发布器连接。
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
-### 使用授权用户将作者与发布者连接
+### 使用授权用户将作者与发布者连接起来
 
-在AEM作者实例上：
+在AEM创作实例上：
 
 1. 使用管理员权限登录。
 1. 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)。
 
-   例如，[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
-1. 找到&#x200B;**[!UICONTROL AdobeGranite分发 — 加密密码传输机密提供程序]**。
-1. 选择要打开进行编辑的现有配置（铅笔图标）。
+   例如， [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
+1. 找到&#x200B;**[!UICONTROL AdobeGranite分发 — 加密密码传输密钥提供程序]**。
+1. 选择要打开以进行编辑的现有配置（铅笔图标）。
 
    验证属性`name:` **`socialpubsync`\- `publishUser` .**
 1. 将用户名和密码设置为[授权用户](../../help/sites-administering/sync.md#createauthorizeduser)。
 
-   例如，**`usersync`\-admin**
+   例如， **`usersync`\-admin**
 
-   ![花岗石 — 帕斯沃德 — trans](assets/granite-paswrd-trans.png)
+   ![granite-paswrd-trans](assets/granite-paswrd-trans.png)
 
 ### Apache Sling Distribution Agent — 队列代理工厂{#apache-sling-distribution-agent-queue-agents-factory}
 
-此配置用于配置要在发布者之间同步的数据。 当在&#x200B;**[!UICONTROL 允许的根]**&#x200B;中指定的路径中创建/更新数据时，将激活“var/community/distribution/diff”，创建的复制程序从发布者中读取数据并将其安装到其他发布者。
+此配置用于配置要在发布者之间同步的数据。 在&#x200B;**[!UICONTROL 允许的根]**&#x200B;中指定的路径中创建/更新数据时，将激活“var/community/distribution/diff”，并且创建的复制程序从发布者中获取数据，并将其安装到其他发布者。
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
@@ -174,21 +173,21 @@ ht-degree: 2%
 1. 使用管理员权限登录。
 1. 访问[Web控制台](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html)。
 
-   例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)。
+   例如， [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)。
 1. 找到&#x200B;**[!UICONTROL Apache Sling Distribution Agent - Queue Agents Factory]**。
-1. 选择要打开进行编辑的现有配置（铅笔图标）。
+1. 选择要打开以进行编辑的现有配置（铅笔图标）。
 
-   验证名称：`socialpubsync` \-reverse.
-1. 选中&#x200B;**[!UICONTROL 已启用]**&#x200B;复选框并保存。
+   验证名称：`socialpubsync` \-reverse。
+1. 选中&#x200B;**[!UICONTROL Enabled]**&#x200B;复选框并保存。
 1. 指定要在&#x200B;**[!UICONTROL 允许的根]**&#x200B;中复制的节点路径。
-1. 对每个`publish`实例重复上述步骤。
+1. 对每个`publish`实例重复执行上述步骤。
 
-   ![队列 — 代理 — 事实](assets/queue-agents-fact.png)
+   ![queue-agents-fact](assets/queue-agents-fact.png)
 
 ### AdobeGranite分布 — 差异观察器工厂{#adobe-granite-distribution-diff-observer-factory}
 
-此配置可同步不同发行商的组成员关系。\
-如果更改某个发布者中某个组的成员关系不更新其其他发布者的成员关系，则确保将&#x200B;**ref:members**&#x200B;添加到&#x200B;**已查找的属性名称**。
+此配置会在发布者之间同步组成员资格。\
+如果更改某个发布者中某个组的成员资格不会更新其他发布者的组成员资格，请确保将&#x200B;**ref:members**&#x200B;添加到&#x200B;**已查找的属性名称**&#x200B;中。
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
@@ -199,60 +198,60 @@ ht-degree: 2%
 1. 使用管理员权限登录。
 1. 访问[Web控制台](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/configuring-osgi.html)。
 
-   例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)。
-1. 找到&#x200B;**[!UICONTROL Adobe花岗岩分布 — 差异观察器工厂]**。
-1. 选择要打开进行编辑的现有配置（铅笔图标）。
+   例如， [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)。
+1. 找到&#x200B;**[!UICONTROL AdobeGranite Distribution - Diff Observer Factory]**。
+1. 选择要打开以进行编辑的现有配置（铅笔图标）。
 
    验证&#x200B;**[!UICONTROL 代理名称]**:`socialpubsync` \-reverse&amp;ast;&amp;ast;。
-1. 选中&#x200B;**[!UICONTROL 已启用]**&#x200B;复选框。
-1. 将&#x200B;**rep`:members`**&#x200B;指定为&#x200B;**[!UICONTROL 中propertyName的`description`，查找属性名称]**，然后指定为“保存”。
+1. 选中&#x200B;**[!UICONTROL Enabled]**&#x200B;复选框。
+1. 将&#x200B;**rep`:members`**&#x200B;指定为`description` ，以在&#x200B;**[!UICONTROL 已查找的属性名称]**&#x200B;中将propertyName指定为，然后进行保存。
 
    ![diff-obs](assets/diff-obs.png)
 
-### Apache Sling分发触发器 — 计划触发器工厂{#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### Apache Sling Distribution Trigger — 计划触发器工厂{#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-此配置允许您配置轮询间隔（在轮询间隔后，发布者被ping并由作者提取更改）以在发布者之间同步更改。
+此配置允许您配置轮询间隔（在轮询间隔后，发布者会被Ping并由作者提取更改）以在发布者之间同步更改。
 
-作者每30秒对发布者进行一次投票（默认）。 如果文件夹&#x200B;*/var/sling/distribution/packages/ socialpubsync - vlt /shared*&#x200B;中存在任何包，则它将获取这些包并将其安装到其他发布者。
+作者每30秒对发布者进行一次轮询（默认）。 如果文件夹&#x200B;*/var/sling/distribution/packages/ socialpubsync - vlt /shared*&#x200B;中存在任何包，则它将获取这些包并将其安装在其他发布者上。
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
 ### 更改轮询间隔
 
-在AEM作者实例上：
+在AEM创作实例上：
 
 1. 使用管理员权限登录。
 1. 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)，例如[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 1. 找到&#x200B;**[!UICONTROL Apache Sling Distribution Trigger - Scheduled Triggers Factory]**
 
-   * 选择要打开进行编辑的现有配置（铅笔图标）
+   * 选择要打开以进行编辑的现有配置（铅笔图标）
    * 验证`Name:` **`socialpubsync`\-scheduled-trigger**
-   * 将“间隔”（以秒为单位）设置为所需的间隔并保存。
+   * 将间隔（以秒为单位）设置为所需的间隔并保存。
 
    ![计划触发器](assets/scheduled-trigger.png)
 
 ### AEM Communities用户同步侦听器{#aem-communities-user-sync-listener}
 
-有关Sling分发中订阅和后续内容存在差异的问题，请检查是否设置了&#x200B;**[!UICONTROL AEM Communities用户同步侦听器]**&#x200B;配置中的以下属性：
+对于Sling分发中订阅和后续内容存在差异的问题，请检查是否在&#x200B;**[!UICONTROL AEM Communities用户同步侦听器]**&#x200B;配置中设置了以下属性：
 
 * NodeTypes
 * 可忽略属性
 * 可忽略节点
-* DistributedFolders
+* 分布式文件夹
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
-### 同步订阅、跟踪和通知
+### 要同步订阅、跟踪和通知，请执行以下操作
 
 在每个AEM发布实例上：
 
 1. 使用管理员权限登录。
-1. 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)。 例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)。
+1. 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)。 例如， [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)。
 1. 找到&#x200B;**[!UICONTROL AEM Communities用户同步侦听器]**。
-1. 选择要打开进行编辑的现有配置（铅笔图标）。
+1. 选择要打开以进行编辑的现有配置（铅笔图标）。
 
    验证名称：**`socialpubsync`\-scheduled-trigger**
-1. 设置以下&#x200B;**`NodeTypes`**:
+1. 设置以下&#x200B;**`NodeTypes`** :
 
    rep:User
 
@@ -266,10 +265,10 @@ ht-degree: 2%
 
    sling:OrderedFolder
 
-   此属性中指定的节点类型将同步，并且通知信息（后面是博客和配置）将在不同的发布者之间同步。
-1. 添加要在&#x200B;**[!UICONTROL DistributedFolders]**&#x200B;中同步的所有文件夹。 例如，
+   此属性中指定的节点类型将同步，并且通知信息（后跟的博客和配置）将在不同的发布者之间同步。
+1. 添加所有要在&#x200B;**[!UICONTROL DistributedFolders]**&#x200B;中同步的文件夹。 例如，
 
-   细分/评分
+   区段/评分
 
    社交/关系
 
@@ -281,15 +280,15 @@ ht-degree: 2%
 
    系统
 
-   rep `:cache`（由于我们使用粘性会话，因此不需要将此节点同步到其他发布者）
+   rep `:cache`（由于我们使用置顶会话，因此无需将此节点同步到不同的发布者）
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
 ### 唯一Sling ID {#unique-sling-id}
 
-AEM作者实例使用Sling ID来标识数据来自何处以及它需要（或不需要）将包发送回哪些发布商。
+AEM创作实例使用Sling ID来识别数据的来源，以及数据需要（或不需要）将包发送回的发布者。
 
-确保发布场中的所有发布者都具有唯一的Sling ID。 如果Sling ID对于发布场中的多个发布实例是相同的，则用户同步将失败。 由于作者不知道从何处获取包以及安装包的位置。
+确保发布场中的所有发布者都具有唯一的Sling ID。 如果发布场中多个发布实例的Sling ID相同，则用户同步将失败。 由于作者不知道从何处获取包以及在何处安装包。
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
@@ -297,14 +296,14 @@ AEM作者实例使用Sling ID来标识数据来自何处以及它需要（或不
 
 在每个发布实例上：
 
-1. 浏览至[https://_host:port_/system/console/status-slingsettings](http://localhost:4503/system/console/status-slingsettings)。
+1. 浏览到[https://_host:port_/system/console/status-slingsettings](http://localhost:4503/system/console/status-slingsettings)。
 1. 检查&#x200B;**[!UICONTROL Sling ID]**&#x200B;的值。
 
-   ![斯林](assets/slingid.png)
+   ![slingid](assets/slingid.png)
 
    如果发布实例的Sling ID与任何其他发布实例的Sling ID匹配，则：
 
-1. 停止具有匹配Sling ID的发布实例之一。
+1. 停止一个具有匹配Sling ID的发布实例。
 1. 在`crx-quickstart/launchpad/felix`目录中，搜索并删除名为_sling.id.file的文件。
 
    *例如，在Linux系统上：*
@@ -315,33 +314,33 @@ AEM作者实例使用Sling ID来标识数据来自何处以及它需要（或不
 
    `use windows explorer and search for _sling.id.file_`
 
-1. 开始发布实例。 启动时，将为其分配新的Sling ID。
-1. 验证&#x200B;**[!UICONTROL Sling ID]**&#x200B;现在是否唯一。
+1. 启动发布实例。 启动时，会为其分配一个新的Sling ID。
+1. 验证&#x200B;**[!UICONTROL Sling ID]**&#x200B;现在是唯一的。
 
 重复这些步骤，直到所有发布实例都具有唯一的Sling ID。
 
-### Vault Package Builder工厂{#vault-package-builder-factory}
+### 电子仓库包生成器工厂{#vault-package-builder-factory}
 
-要正确同步更新，必须修改Vault包生成器以进行用户同步。\
-在`/home/users`中，将创建`/rep:cache`节点。 它是一个缓存，用于查找如果我们查询节点的主名称，则可以直接使用此缓存。
+要正确同步更新，必须修改电子仓库包生成器以进行用户同步。\
+在`/home/users`中创建`/rep:cache`节点。 它是一个缓存，用于查找如果我们查询某个节点的主体名称，则可以直接使用此缓存。
 
-如果`rep:cache `节点在发布者之间同步，则用户同步可以停止。
+如果跨发布者同步`rep:cache `节点，则用户同步可能会停止。
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
-### 确保在发布者之间正确同步更新
+### 确保更新在发布者之间正确同步
 
 在每个AEM发布实例上：
 
 1. 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)，例如[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)。
-1. 找到&#x200B;**[!UICONTROL Apache Sling Distribution Packaging - Vault Package Builder Factory Builder名称]**:socialpubsync-vlt
+1. 找到&#x200B;**[!UICONTROL Apache Sling Distribution Packaging - Vault Package Builder Factory Builder名称]**:socialpubsync-vlt。
 1. 选择编辑图标。
-1. 添加两个包过滤器:
+1. 添加两个包过滤器：
 
    * `/home/users|-.\*/.tokens`
    * `/home/users|**+**.\*/rep:cache`
 1. 策略处理
-   * 要用新节点覆盖现有的rep `:policy`节点，请添加第三个包过滤器：
+   * 要使用新节点覆盖现有的rep `:policy`节点，请添加第三个包过滤器：
 
       `/home/users|**+**.\*/rep:policy`
    * 要防止策略被分发，请设置
@@ -350,24 +349,24 @@ AEM作者实例使用Sling ID来标识数据来自何处以及它需要（或不
 
 ![vault-package-builder-factory](assets/vault-package-builder-factory.png)
 
-## 对AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}中的Sling分发进行疑难解答
+## 对AEM Communities中的Sling分发进行故障诊断{#troubleshoot-sling-distribution-in-aem-communities}
 
 如果Sling分发失败，请尝试以下调试步骤：
 
-1. **检查添加 [的配置是否不正确](../../help/sites-administering/sync.md#improperconfig)。** 请确保不添加或编辑多个配置，而应编辑现有的默认配置。
-1. **检查配置**。确保在您的AEM作者实例中正确设置了所有[配置](sync.md#bestpractices)，如[最佳实践](sync.md#main-pars-header-863110628)中所述。
+1. **检查是否 [添加了错误配置](../../help/sites-administering/sync.md#improperconfig)。** 请确保未添加或编辑多个配置，而是应编辑现有的默认配置。
+1. **检查配置**。请确保按照[最佳实践](sync.md#main-pars-header-863110628)中所述，在AEM创作实例中正确设置了所有[配置](sync.md#bestpractices)。
 1. **检查授权用户权限**。如果包安装不正确，请检查在第一个Publish实例中创建的[授权用户](../../help/sites-administering/sync.md#createauthuser)是否具有正确的ACL。
 
-   要验证此配置，请改为将作者实例上的[已创建的授权用户](../../help/sites-administering/sync.md#createauthuser)[AdobeGranite分发 — 加密密码传输机密提供程序](../../help/sites-administering/sync.md#adobegraniteencpasswrd)配置更改为使用管理员用户凭据。 现在，请尝试再次安装包。 如果用户同步与管理员凭据配合工作，则表示创建的发布用户没有适当的ACL。
+   要验证此配置，请改为[已创建的授权用户](../../help/sites-administering/sync.md#createauthuser)，以更改创作实例上的[AdobeGranite分发 — 加密密码传输密钥提供程序](../../help/sites-administering/sync.md#adobegraniteencpasswrd)配置，以使用管理员用户凭据。 现在，再次尝试安装包。 如果用户同步与管理员凭据的同步正常，则意味着创建的发布用户没有适当的ACL。
 
-1. **检查差异观察器工厂配置**。例如，如果发布场中只有特定节点未同步 — 组成员未同步 — 则确保启用[AdobeGranite分布 — 差异观察器工厂](../../help/sites-administering/sync.md#diffobserver)配置，并在&#x200B;**查找的属性名称**&#x200B;中设置&#x200B;**rep:members**。
-1. **检查AEM Communities用户同步监听器配置。** 如果创建的用户已同步，但订阅和后续操作不起作用，请确保AEM Communities用户同步监听器配置具有：
+1. **检查差异观察器工厂配置**。如果只有特定节点未在发布场之间同步 — 例如，组成员未同步 — 请确保启用[AdobeGranite分发 — 差异观察器工厂](../../help/sites-administering/sync.md#diffobserver)配置，并在&#x200B;**已查找的属性名称**&#x200B;中设置&#x200B;**rep:members**。
+1. **检查AEM Communities用户同步侦听器配置。** 如果已创建的用户已同步，但订阅和以下内容无法正常工作，请确保AEM Communities用户同步侦听器配置已：
 
    * 节点类型 — 设置为&#x200B;**rep:User、nt:unstructured**、**nt:resource**、**rep:ACL**、**sling:Folder**&#x200B;和&#x200B;**sling:OrderedFolder**
    * 可忽略节点 — 设置为&#x200B;**.tokens**、**system**&#x200B;和&#x200B;**rep:cache**
-   * “已分发文件夹” — 设置为要分发的文件夹
+   * 分布式文件夹 — 设置为要分发的文件夹
 
-1. **检查在发布实例上创建用户时生成的日志**。如果上述配置设置得当，但用户同步不起作用，则检查创建用户时生成的日志。
+1. **检查在发布实例上创建用户时生成的日志**。如果已正确设置上述配置，但用户同步仍无法正常工作，请检查在用户创建时生成的日志。
 
    检查日志的顺序是否相同，如下所示：
 
@@ -383,25 +382,23 @@ AEM作者实例使用Sling ID来标识数据来自何处以及它需要（或不
    15.05.2016 18:33:02.273 *INFO* [sling-oak-observation-7430] org.apache.jackrabbit.vault.packaging.impl.JcrPackageDefinitionImpl unwrapping package sling/distribution:socialpubsync-vlt_1463337182039_f34f4fa6-10b9-42eb-8740-4da9d4d38f99:0.0.1
    ```
 
-   要调试：
+   要进行调试，请执行以下操作：
 
    1. 禁用用户同步：
-   1. 在AEM作者实例上，使用管理员权限登录。
+   1. 在AEM创作实例上，使用管理员权限登录。
 
-      1. 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)。 例如，[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
+      1. 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)。 例如， [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
       1. 找到配置&#x200B;**[!UICONTROL Apache Sling Distribution Agent - Sync Agent Factory]**。
 
-      1. 取消选中&#x200B;**[!UICONTROL 已启用]**&#x200B;复选框。
-      在禁用创作实例上的用户同步时，会禁用（导出器和导入器）终结点，并且创作实例是静态的。 作者未ping或获取&#x200B;**[!UICONTROL vlt]**&#x200B;包。
+      1. 取消选中&#x200B;**[!UICONTROL Enabled]**&#x200B;复选框。
+      在创作实例上禁用用户同步时，会禁用（导出程序和导入程序）端点，并且创作实例是静态的。 作者不会ping或获取&#x200B;**[!UICONTROL vlt]**&#x200B;包。
 
-      现在，如果用户是在发布实例上创建的，则&#x200B;**[!UICONTROL vlt]**&#x200B;包是在&#x200B;*/var/sling/distribution/packages/ socialpubsync - vlt /data*&#x200B;节点中创建的。 如果作者将这些包推送到其他服务。 您可以下载并提取此数据以检查将哪些所有属性推送到其他服务。
+      现在，如果在发布实例上创建用户，则会在&#x200B;*/var/sling/distribution/packages/ socialpubsync - vlt /data*&#x200B;节点中创建&#x200B;**[!UICONTROL vlt]**&#x200B;包。 如果作者将这些包推送到其他服务，则会将其推送到其他服务。 您可以下载并提取此数据，以检查将哪些所有属性推送到其他服务。
 
    1. 转到发布者，然后在发布者上创建用户。 因此，会创建事件。
-   1. 检查在用户创建时创建的日志[顺序。](sync.md#troubleshoot-sling-distribution-in-aem-communities)
+   1. 检查在用户创建时创建的日志](sync.md#troubleshoot-sling-distribution-in-aem-communities)的[顺序。
    1. 检查是否在`/var/sling/distribution/packages/socialpubsync-vlt/data`上创建了&#x200B;**[!UICONTROL vlt]**&#x200B;包。
-   1. 现在，在AEM作者实例上启用用户同步。
-   1. 在发布者上，在&#x200B;**[!UICONTROL Apache Sling Distribution Agent - Sync Agent Factory]**&#x200B;中更改导出器或导入器终结点。
+   1. 现在，在AEM创作实例上启用用户同步。
+   1. 在发布者上，在&#x200B;**[!UICONTROL Apache Sling Distribution Agent - Sync Agent Factory]**&#x200B;中更改导出程序或导入程序端点。
 
-      我们可以下载并提取包数据，以检查将哪些所有属性推送给其他发布者以及哪些数据丢失。
-
-
+      我们可以下载并提取包数据，以检查将哪些属性推送到其他发布者，以及哪些数据丢失。

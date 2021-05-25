@@ -1,32 +1,31 @@
 ---
-title: 使用Apache Tika检测MIME类型的数字资产
-description: 启用Apache Tika以帮助AEM Assets在上传操作（而非文件扩展名）期间检测内容流中的MIME类型资产。
+title: 使用Apache Tika检测数字资产的MIME类型
+description: 启用Apache Tika以帮助AEM Assets在上传操作期间（而不是文件扩展名）从内容流中检测MIME类型的资产。
 contentOwner: AG
-feature: Metadata,Developer Tools,Asset Management
+feature: 元数据，开发人员工具，资产管理
 role: Administrator,Architect
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '202'
 ht-degree: 3%
 
 ---
 
+# 使用Apache Tika检测数字资产的MIME类型{#detecting-mime-type-of-assets-using-apache-tika}
 
-# 使用Apache Tika检测数字资产{#detecting-mime-type-of-assets-using-apache-tika}的MIME类型
+通常，Adobe Experience Manager(AEM)Assets会检测您从其文件扩展名上传的资产的MIME类型。 如果您使用Apache Tika上传资产，则在上传操作期间，AEM Assets会从内容流中检测其MIME类型，而不是文件扩展名。
 
-通常，Adobe Experience Manager(AEM)资产会检测您从其文件扩展名上传的资产的MIME类型。 如果您使用Apache Tika上传资产，AEM Assets会在上传操作（而非文件扩展名）期间从内容流中检测其MIME类型。
-
-默认情况下，此功能处于禁用状态。 要启用该功能，请从Configuration Manager中配置&#x200B;**Day CQ DAM Mime类型**&#x200B;服务。
+此功能默认处于禁用状态。 要启用该功能，请从Configuration Manager中配置&#x200B;**Day CQ DAM Mime Type**&#x200B;服务。
 
 >[!NOTE]
 >
 >使用Apache Tika库的MIME类型检测是一项资源密集型操作。
 
 1. 转到`https://[AEM_server]:[port]/system/console/configMgr`以打开Configuration Manager Web控制台。
-1. 在服务列表中，找到&#x200B;**[!UICONTROL Day CQ DAM Mime类型服务]**&#x200B;并点按/单击其旁边的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标以在编辑模式下打开它。
+1. 在服务列表中，找到&#x200B;**[!UICONTROL Day CQ DAM Mime类型服务]**，然后点按/单击服务旁边的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标，以在编辑模式下将其打开。
 
-1. 选择&#x200B;**[!UICONTROL 从内容]**&#x200B;检测MIME选项，以启用对已上传资产的分析，以在忽略文件扩展名时确定其MIME类型。 默认情况下，此选项处于未选中状态。
+1. 选择&#x200B;**[!UICONTROL 从内容中检测MIME]**&#x200B;选项，以启用解析已上传资产以确定其MIME类型，同时忽略文件扩展名。 默认情况下，此选项处于取消选中状态。
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 

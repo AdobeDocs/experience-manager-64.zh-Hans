@@ -5,10 +5,9 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4经典UI创作用户指南
 breadcrumb-title: 经典UI创作指南
-user-guide-description: 本指南涵盖在经典用户界面中的AEM中进行创作的概念。
+user-guide-description: 本指南介绍在经典用户界面中在AEM中创作的概念。
 feature: 创作
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
 source-wordcount: '273'
@@ -40,7 +39,7 @@ ht-degree: 80%
    + [编辑页面属性](classic-page-author-edit-page-properties.md)
    + [编辑页面时添加注释](classic-page-author-annotations.md)
    + [解决 AEM 中有关创作方面的问题](classic-page-author-troubleshooting.md)
-   + [创建无障碍内容（WCAG 2.0 合规性）](classic-page-author-accessible-content.md)
+   + [创建辅助内容（WCAG 2.0 符合性）](classic-page-author-accessible-content.md)
    + [创作适用于移动设备的页面](classic-feature-mobile.md)
    + [用于创作页面的组件](classic-page-author-edit-mode.md)
    + [编辑页面时的键盘快捷键](classic-page-author-keyboard-shortcuts.md)
@@ -81,7 +80,7 @@ ht-degree: 80%
    + [Adobe Campaign 组件](classic-personalization-ac-components.md)
    + [定位您的 Adobe Campaign](classic-personalization-ac-target.md)
 + 经典UI中的资产创作{#assets}
-   + [处理资产](classicui-assets.md)
+   + [使用资产](classicui-assets.md)
    + [传送 Dynamic Media 资产](dynamic-media-assets-delivering.md)
    + [将 Dynamic Media 资产添加到页面](dynamic-media-assets-adding-to-page.md)
    + [将Dynamic Media Classic(Scene7)功能添加到页面](manage-assets-classic-s7.md)

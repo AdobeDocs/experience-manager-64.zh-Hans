@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9f208b13-08eb-4305-b712-379e9b9b041e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 99%
 
 ---
-
 
 # 编辑启动项{#editing-launches}
 
@@ -103,4 +102,3 @@ Live copy用于将源分 *支中的**内容同步到启动分支* （以使启�
 从“引用”选项卡中选择特定启动项时，将会显示状态（请参阅[“引用”（“站点”控制台）中的启动项](/help/sites-authoring/launches.md#launches-in-references-sites-console)）。
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
-

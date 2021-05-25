@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 3be35bb8-3485-42a6-8195-c3e95d097856
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 83%
 
 ---
 
-
 # 跟踪弹回的电子邮件{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->Adobe不打算进一步增强对AEM SMTP服务发送的打开／弹回电子邮件的跟踪。
+>Adobe不打算进一步增强对AEM SMTP服务发送的打开/弹回电子邮件的跟踪。
 >
 >建议[利用Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md)。
 
@@ -55,7 +54,7 @@ Feed Importer 允许您将外部源的内容多次导入到您的存储库中。
 
    **POP3 配置属性：**
 
-   `pop3.leave.on.server`:定义是否在服务器上保留消息。设置为 true 会将邮件保留在服务器上，设置为 false 则不会保留。默认设置为 true。
+   `pop3.leave.on.server`:定义是否将消息保留在服务器上。设置为 true 会将邮件保留在服务器上，设置为 false 则不会保留。默认设置为 true。
 
    **POP3 示例：**
 
@@ -69,7 +68,7 @@ Feed Importer 允许您将外部源的内容多次导入到您的存储库中。
 
    `imap.flag.SEEN`:将新的/未查看的消息设置为 false，将已读消息设置为 true
 
-   有关标记的完整列表，请参见[https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html)。
+   有关标记的完整列表，请参阅[https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html)。
 
    **IMAP 示例：**
 
@@ -86,7 +85,7 @@ Feed Importer 允许您将外部源的内容多次导入到您的存储库中。
 
 配置新闻稿服务：
 
-1. 在位于`<host>:<port>/system/console/configMgr`的OSGi控制台中，导航至&#x200B;**MCM Newsletter**。
+1. 在位于`<host>:<port>/system/console/configMgr`的OSGi控制台中，导航到&#x200B;**MCM Newsletter**。
 
 1. 配置服务并在结束时保存更改。
 

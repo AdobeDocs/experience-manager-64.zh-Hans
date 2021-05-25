@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 163a4887-7c33-4305-8c48-882630f2caa1
-translation-type: tm+mt
-source-git-commit: a87e078e1a8f49dc899ce9b160d789cb254338e2
+exl-id: c63e44e7-cc89-4fa0-8ba4-460d682df601
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 96%
 
 ---
-
 
 # 页面创作快速指南{#quick-guide-to-authoring-pages}
 
@@ -66,7 +65,7 @@ ht-degree: 96%
 >有许多键盘快捷键可帮助您更轻松地创作体验。
 >
 >* [编辑页面时的键盘快捷键](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
->* [控制台的键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md)
+* [控制台的键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## 查找页面 {#finding-your-page}
@@ -107,8 +106,7 @@ ht-degree: 96%
 
       * 卡片上将覆盖一个勾号，表示已选择该页面。
    >[!NOTE]
-   >
-   >进入选择模式后，**选择**&#x200B;图标（勾号）将变为&#x200B;**取消选择**&#x200B;图标（叉号）。
+   进入选择模式后，**选择**&#x200B;图标（勾号）将变为&#x200B;**取消选择**&#x200B;图标（叉号）。
 
 1. 列表视图：
 
@@ -168,8 +166,7 @@ ht-degree: 96%
 
       * 通过点按或单击打开组件工具栏。根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
       >[!NOTE]
-      >
-      >您可以将组件&#x200B;**粘贴**&#x200B;到同一页面或其他页面。如果在剪切/复制操作之前粘贴到已打开的其他页面，则表明该页面需要刷新。
+      您可以将组件&#x200B;**粘贴**&#x200B;到同一页面或其他页面。如果在剪切/复制操作之前粘贴到已打开的其他页面，则表明该页面需要刷新。
 
    * [删除](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)组件：
 
@@ -186,8 +183,7 @@ ht-degree: 96%
    * 使用&#x200B;**编辑**&#x200B;下拉选择器返回编辑模式（或选择其他模式）。
 
    >[!NOTE]
-   >
-   >要使用内容中的链接导航，您必须使用[预览模式](/help/sites-authoring/editing-content.md#preview-mode)。
+   要使用内容中的链接导航，您必须使用[预览模式](/help/sites-authoring/editing-content.md#preview-mode)。
 
 ## 编辑页面属性  {#editing-the-page-properties}
 
@@ -259,8 +255,7 @@ ht-degree: 96%
 
       * 系统将要求您确认该操作。
    >[!NOTE]
-   >
-   >快速操作中并未提供“删除”操作。
+   快速操作中并未提供“删除”操作。
 
 ## 锁定页面（然后解锁）{#locking-your-page-then-unlocking}
 
@@ -318,5 +313,3 @@ ht-degree: 96%
    * **显示差异**
 
       * 将打开该页面，并突出显示（两个版本之间的）差异。
-
-

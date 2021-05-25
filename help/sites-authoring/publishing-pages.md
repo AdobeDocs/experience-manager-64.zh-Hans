@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
-translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
 source-wordcount: '1631'
@@ -39,7 +38,7 @@ ht-degree: 87%
    >
    >
 * **复制**
-   >  这些是描述数据（例如，页面内容、文件、代码、用户评论）从一个环境移动到另一个的技术术语，例如在发布或反向复制用户评论时。
+   >  这些是技术术语，用于描述数据（例如页面内容、文件、代码、用户评论）从一个环境移动到另一个环境（例如在发布或反向复制用户评论时）的移动。
 >
 
 
@@ -100,7 +99,7 @@ ht-degree: 87%
 * [快速发布](/help/sites-authoring/publishing-pages.md#quick-publish)
 * [管理发布](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### 快速发布  {#quick-publish}
+#### 快速发布 {#quick-publish}
 
 **快速发布**&#x200B;适用于一些简单的情况，可立即发布选定的页面，而无需进行任何进一步的交互。正因为这一点，任何未发布的引用也将被自动发布。
 
@@ -110,7 +109,7 @@ ht-degree: 87%
 
    ![screen_shot_2018-03-21at153115](assets/screen_shot_2018-03-21at153115.png)
 
-1. 在“快速发布”对话框中，单击&#x200B;**发布**&#x200B;以确认发布，或单击&#x200B;**取消**&#x200B;以取消。 请记住，任何未发布的引用也将被自动发布。
+1. 在“快速发布”对话框中，单击&#x200B;**Publish**&#x200B;以确认发布，或单击&#x200B;**Cancel**&#x200B;以取消发布。 请记住，任何未发布的引用也将被自动发布。
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
@@ -197,7 +196,7 @@ ht-degree: 87%
 
    >[!NOTE]
    >
-   >将根据用户可能拥有也可能没有的权限显示&#x200B;**工作流**&#x200B;步骤。有关详细信息，请参阅本页](/help/sites-authoring/publishing-pages.md)上的[上一条关于发布权限的说明，以及[管理对工作流的访问](/help/sites-administering/workflows-managing.md)和[将工作流应用到页面](/help/sites-authoring/workflows-applying.md)。
+   >将根据用户可能拥有也可能没有的权限显示&#x200B;**工作流**&#x200B;步骤。有关详细信息，请参阅此页面](/help/sites-authoring/publishing-pages.md)上有关发布权限的[前一注释，以及[管理对工作流的访问](/help/sites-administering/workflows-managing.md)和[将工作流应用到页面](/help/sites-authoring/workflows-applying.md)。
 
    资源将按触发的工作流分组，并且每组都提供了用于执行以下操作的选项：
 
@@ -205,7 +204,7 @@ ht-degree: 87%
    * 保留工作流包，前提是工作流具有[多资源支持](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)。
    * 在选择保留工作流包的选项时，定义工作流包的标题。
 
-   单击&#x200B;**发布**&#x200B;或**稍后发布**以完成发布。
+   单击&#x200B;**Publish**&#x200B;或**稍后发布**以完成发布。
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -218,7 +217,7 @@ ht-degree: 87%
 * [从页面编辑器中](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [从站点控制台中](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### 从编辑器中取消发布  {#unpublishing-from-the-editor}
+### 从编辑器中取消发布 {#unpublishing-from-the-editor}
 
 在编辑页面时，如果您希望取消发布该页面，请选择&#x200B;**页面信息**&#x200B;菜单中的&#x200B;**取消发布页面**，这与[发布页面](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)非常类似。
 
@@ -264,7 +263,7 @@ ht-degree: 87%
 
    请记住，您还可以通过&#x200B;**已发布引用**&#x200B;选项查看要发布的引用。
 
-1. [按正规方式继续管理发](#manage-publication) 布向导，以完成树的发布或取消发布。
+1. [按照标准继续“管理发](#manage-publication) 布”向导，以完成发布或取消发布树的过程。
 
 ## 确定发布状态 {#determining-publication-status}
 

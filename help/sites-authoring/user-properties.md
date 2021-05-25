@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
-translation-type: tm+mt
-source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 95%
 
 ---
 
-
 # 配置帐户环境{#configuring-your-account-environment}
 
 AEM 提供了配置帐户和创作环境某些方面的功能。
 
-使用[header](/help/sites-authoring/basic-handling.md#the-header)和关联的[我的首选项](#my-preferences)对话框中的[用户](/help/sites-authoring/user-properties.md#user-settings)选项，可以修改用户选项。
+使用[标题](/help/sites-authoring/basic-handling.md#the-header)和关联的[我的首选项](#my-preferences)对话框中的[User](/help/sites-authoring/user-properties.md#user-settings)选项，可以修改用户选项。
 
 ## 用户设置 {#user-settings}
 
@@ -108,4 +107,3 @@ AEM 提供了配置帐户和创作环境某些方面的功能。
 * **启用资产主页**
 
    仅当系统管理员为整个组织启用了资产主页体验时，此选项才可用。
-

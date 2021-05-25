@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: a4f0f0c4-3050-4348-8d51-2ca91839208c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 98%
 
 ---
-
 
 # 参与工作流{#participating-in-workflows}
 
@@ -56,7 +55,7 @@ ht-degree: 98%
 
 * 当向您或者您所属的组分配了工作流中的某个工作项时，该工作项会显示在您的 AEM 工作流收件箱中。
 
-   ![工作流收件箱](assets/workflowinbox.png)
+   ![workflowinbox](assets/workflowinbox.png)
 
 ### 完成参与者步骤 {#completing-a-participant-step}
 
@@ -65,7 +64,7 @@ ht-degree: 98%
 1. 选择工作流步骤，然后单击顶部导航栏中的&#x200B;**完成**&#x200B;按钮。
 1. 在显示的对话框中，选择&#x200B;**下一步**；也就是接下来要执行的步骤。下拉列表会显示所有适当的目标。您还可以输入&#x200B;**评论**。
 
-   ![工作流程完整](assets/workflowcomplete.png)
+   ![工作流完成](assets/workflowcomplete.png)
 
    列出的步骤数取决于工作流模型的设计。
 
@@ -78,7 +77,7 @@ ht-degree: 98%
 1. 单击顶部导航栏中的&#x200B;**委派**&#x200B;按钮。
 1. 在显示的对话框中，使用下拉列表选择要将工作项委派到的&#x200B;**用户**。您还可以添加&#x200B;**评论**。
 
-   ![工作流委派](assets/workflowdelegate.png)
+   ![workflowdelegate](assets/workflowdelegate.png)
 
 1. 单击&#x200B;**确定**&#x200B;以确认该操作。
 
@@ -92,4 +91,3 @@ ht-degree: 98%
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. 单击“确定”以确认该操作。
-

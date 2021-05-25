@@ -1,5 +1,5 @@
 ---
-title: 请勿发布，但请勿DELETE自定义内容片段模型
+title: 请勿发布，但不DELETE自定义内容片段模型
 seo-title: 自定义内容片段模型
 description: 可以自定义和扩展内容片段模型。
 seo-description: 可以自定义和扩展内容片段模型。
@@ -8,7 +8,6 @@ uuid: 5bcfb5d8-37d4-4a0e-882d-bc8a1bac6ba7
 contentOwner: aheimoz
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
-translation-type: tm+mt
 source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '598'
@@ -23,13 +22,13 @@ ht-degree: 0%
 
 `granite/ui/components/foundation/form/formbuilder`
 
-此组件具有渲染模型编辑器的拖放界面所需的工具，并包含每种工具的数据类型和属性。
+此组件具有渲染模型编辑器的拖放界面所必需的工具，以及每种编辑器的数据类型和属性。
 
 ## 位置 {#locations}
 
-模型在`/conf`下保存并创建，位于启用了[内容片段模型属性](/help/assets/content-fragments-models.md#enable-content-fragment-models)的文件夹下。 此设置也可在&#x200B;**配置属性**&#x200B;中查看，可从&#x200B;**[配置浏览器](/help/sites-administering/configurations.md)**&#x200B;访问。
+模型在`/conf`下保存并创建，在启用了[内容片段模型属性](/help/assets/content-fragments-models.md#enable-content-fragment-models)的文件夹下。 此设置也可在&#x200B;**配置属性**&#x200B;中查看，可从&#x200B;**[配置浏览器](/help/sites-administering/configurations.md)**&#x200B;访问。
 
-1. 通过&#x200B;**工具**、**常规**、**配置浏览器**导航到浏览器
+1. 通过&#x200B;**Tools**、**General**、**Configuration Browser**导航到浏览器
 例如， 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
 
@@ -37,19 +36,19 @@ ht-degree: 0%
 
    例如，`global`的属性：`http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
 
-在“模型”控制台中，将显示所有具有&#x200B;**内容片段模型**&#x200B;属性的文件夹。 通过&#x200B;**工具**、**资产**、**内容片段模型**&#x200B;进行导航；例如，`http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`。
+在模型控制台中，将显示具有&#x200B;**内容片段模型**&#x200B;属性的所有文件夹。 通过&#x200B;**工具**、**资产**、**内容片段模型**&#x200B;进行导航；例如，`http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`。
 
 用户可以使用&#x200B;**创建模型**&#x200B;向导（使用控制台中的&#x200B;**创建**）创建内容片段模型](/help/assets/content-fragments-models.md#creating-a-content-fragment-model)。[
 
 >[!CAUTION]
 >
->您&#x200B;***必须***&#x200B;不要更改`/libs`路径中的任何内容。
+>***必须***&#x200B;不更改`/libs`路径中的任何内容。
 >
 >这是因为下次升级实例时，`/libs`的内容会被覆盖（应用修补程序或功能包时，可能会被覆盖）。
 
 ## 模型{#structure-of-a-model}的结构
 
-向导将创建具有此结构的条目：
+向导将创建一个具有此结构的条目：
 
 ![cf-54](assets/cf-54.png)
 
@@ -61,10 +60,10 @@ ht-degree: 0%
 
    每个模型都包含一个`jcr:content`节点，该节点：
 
-   * 包含有关模型的信息属性，如`jcr:title`、`lastModified`、`lastModifiedBy`
-   * 通常`sling:ResourceType`为`dam/cfm/models/console/components/data/entity/default`,
+   * 包含有关模型的信息属性，例如`jcr:title`、`lastModified`、`lastModifiedBy`
+   * 通常具有`dam/cfm/models/console/components/data/entity/default`的`sling:ResourceType`,
 
-      `sling:ResourceSuperType`/`dam/cfm/models/console/components/data/entity`
+      `dam/cfm/models/console/components/data/entity`的`sling:ResourceSuperType`
 
 * `model`
 
@@ -72,26 +71,26 @@ ht-degree: 0%
 
 * `items`
 
-   在`items`节点下，将保存添加到模型的所有数据类型（在模型编辑器中拖放）。 每个项目都有一个随机节点名称，但为了使内容片段编辑器能与此模型一起使用，每个项目都必须具有`name`属性。 此外，在此节点上，将保存特定数据类型的所有配置属性，包括呈现组件所需的默认属性。
+   在`items`节点下，将保存添加到模型的所有数据类型（在模型编辑器中拖放）。 每个项目都有一个随机的节点名称，但为了使内容片段编辑器能够与此模型一起使用，每个项目必须具有`name`属性。 此外，在此节点上，还会保存特定数据类型的所有配置属性，包括呈现组件所需的默认属性。
 
 >[!CAUTION]
 >
->在模型编辑器中拖放的所有数据类型都必须由用户输入`name`属性，因此，已实例化&#x200B;**。**
+>在模型编辑器中拖放的所有数据类型，因此实例化后，**必须**&#x200B;具有用户输入的`name`属性。
 >
->在模型编辑器的&#x200B;**属性**&#x200B;选项卡中，它被视为&#x200B;**属性名称&amp;ast;**。
+>在模型编辑器的&#x200B;**Properties**&#x200B;选项卡中，此参数被视为&#x200B;**属性名称&amp;ast;**。
 
-## 模型编辑器{#structure-of-the-model-editor}的结构
+## 模型编辑器的结构{#structure-of-the-model-editor}
 
 **内容片段模型编辑器**&#x200B;包含两个部分：
 
 * 左侧的预览或视图面板，您可以在其中放置项目。 此功能：
 
-   * 显示实例化的&#x200B;**数据类型**&#x200B;的预览。
-   * 允许在模型编辑器中进行订购。
+   * 显示已实例化的&#x200B;**数据类型**&#x200B;的预览。
+   * 允许在模型编辑器中进行排序。
 
 * 右侧面板中的&#x200B;**数据类型**/**属性**&#x200B;选项卡。 此功能：
 
-   * 显示可拖动和实例化的列表数据类型。
+   * 显示可拖动和实例化的数据类型列表。
    * 对于现成的模型编辑器，列表位于：
 
       `/libs/settings/dam/cfm/models/formbuilderconfig/datatypes`
@@ -100,11 +99,11 @@ ht-degree: 0%
       This node contains all the data types currently supported in the model editor. For more information on how to configure the data types, see [Customizing Data Types for Content Fragment Models](/help/sites-developing/customizing-content-fragment-model-data-types.md).
       -->
 
-   * 所有呈现的数据类型都有两个脚本标签，当实例化时，这些标签将形成视图（左侧呈现的组件）和&#x200B;**属性**&#x200B;标签，后者定义用户可以为给定组件定义的属性。
+   * 所有渲染的数据类型都具有两个脚本标记，在实例化后，这些脚本标记将构成视图（左侧渲染的组件），以及&#x200B;**Properties**&#x200B;选项卡，该选项卡定义用户可以为给定组件定义的属性。
 
 >[!CAUTION]
 >
->您&#x200B;***必须***&#x200B;不要更改`/libs`路径中的任何内容。
+>***必须***&#x200B;不更改`/libs`路径中的任何内容。
 >
 >这是因为下次升级实例时，`/libs`的内容会被覆盖（应用修补程序或功能包时，可能会被覆盖）。
 
@@ -112,13 +111,13 @@ ht-degree: 0%
 The properties on the right side define a form that is submitted directly into JCR under `/conf`; see the path in the example [Structure of a Model](/help/sites-developing/customizing-content-fragment-models.md#structure-of-a-model).
 -->
 
-实例化数据类型时，会为每个需要在内容片段中呈现组件的属性创建HTML输入。 例如，这些包括：
+实例化数据类型后，将为组件需要在内容片段中呈现的每个属性创建HTML输入。 例如，这些参数包括：
 
-* **属性名称&amp;ast;** ( `name`)-充当组件的标识符
+* **属性名称(&amp;A);** ( `name`) — 用作组件的标识符
 
-* **Render As** ( `metaType`)-键入要呈现的组件将作为
+* **呈现方式** ( `metaType`) — 键入要呈现为的组件
 
-* **Description** ( `fieldDescription`)-内容片段中组件的说明
+* **描述** ( `fieldDescription`) — 内容片段中组件的描述
 
-* 等。
+* 等等。
 

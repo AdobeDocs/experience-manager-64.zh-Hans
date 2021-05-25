@@ -9,29 +9,28 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: fbb9044a-a737-45f6-8062-0ef5424a92f8
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f60beaae-4082-4165-8a37-9d9c94e360b2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
-
 # 配置AEM DS设置{#configuring-aem-ds-settings}
 
-本文介绍如何配置&#x200B;**AEM DS设置服务**。 此设置可用于多种情况，例如：
+本文介绍了如何配置&#x200B;**AEM DS设置服务**。 此设置可用于多种情况，例如：
 
 * 在通信管理中
 
    * 用于配置AEM Forms工作流
-   * 使用表单门户远程保存草稿/提交时
+   * 使用Forms门户远程保存草稿/提交时
 
 * 在自适应表单中，当从发布实例提交自适应表单时
 
 以下是配置&#x200B;**[!UICONTROL AEM DS设置]**&#x200B;的步骤：
 
-1. 使用以下URL在发布实例上打开Configuration Manager:
+1. 使用URL在发布实例上打开配置管理器：
 
    *http://localhost:port/system/console/configMgr*。
 
@@ -47,13 +46,13 @@ ht-degree: 0%
 
 1. 在相应的字段中添加以下信息：
 
-   **[!UICONTROL 处理服务器URL]**:处理服务器是需要触发Forms或AEM工作流的服务器。这可以与AEM作者实例的URL或其他服务器URL(即http:// localhost:port/)相同。
+   **[!UICONTROL 处理服务器URL]**:处理服务器是需要触发Forms或AEM工作流的服务器。这可以与AEM创作实例的URL或其他服务器URL(即http:// localhost:port/)相同。
 
-   **[!UICONTROL 处理服务器用户名]**:工作流用户的用 [户名（基于使用的服务器URL）]
+   **[!UICONTROL 处理服务器用户名]**:工作流用户的用 [户名（基于所使用的服务器URL）]
 
-   **[!UICONTROL 处理服务器密码]**:工作流用户的口令
+   **[!UICONTROL 处理服务器密码]**:工作流用户的密码
 
    >[!NOTE]
    >
-   >* 在使用Forms或AEM工作流时，在从发布服务器提交任何内容之前，必须配置DS设置服务。 否则，提交表格将失败。
+   >* 使用Forms或AEM工作流时，在从发布服务器提交任何内容之前，必须配置DS设置服务。 否则，《表》报送失败。
 

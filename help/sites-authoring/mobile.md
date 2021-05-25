@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 97f0b0d2-7d7b-4a90-a4e5-348a306e1622
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 89%
 
 ---
-
 
 # 创作适用于移动设备的页面{#authoring-a-page-for-mobile-devices}
 
@@ -26,9 +25,9 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。(请参阅[为不同渠道创建Live Copy](/help/sites-administering/msm-livecopy.md)。)
+>要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。（请参阅[为不同渠道创建Live Copy](/help/sites-administering/msm-livecopy.md)。）
 >
->AEM 开发人员可以创建新设备组。(请参阅[创建设备组过滤器](/help/sites-developing/groupfilters.md)。)
+>AEM 开发人员可以创建新设备组。（请参阅[创建设备组过滤器](/help/sites-developing/groupfilters.md)。）
 
 请使用以下过程来创作移动页面：
 
@@ -46,4 +45,3 @@ ht-degree: 89%
 >[!NOTE]
 >
 >从移动设备中请求创作实例上的页面时，会禁用模拟器。
-

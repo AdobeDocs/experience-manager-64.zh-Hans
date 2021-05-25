@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9f57087f-895d-43b9-9b6a-9cfb4c794c7b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1507'
 ht-degree: 78%
 
 ---
-
 
 # 基架{#scaffolding}
 
@@ -39,7 +38,7 @@ ht-degree: 78%
 
 ![howscaffold_work](assets/howscaffolds_work.png)
 
-scaffold由一个表单组成要创建页面的每段内容都有一个字段，以及四个重要参数组成，这些参数可通过scaffold页面的&#x200B;**页面属性**&#x200B;进行访问。
+基架由一个表单和四个重要参数组成，表单中包含将构成要创建页面的每段内容的字段，这些参数可通过基架页面的&#x200B;**页面属性**&#x200B;访问。
 
 ![pageprops](assets/pageprops.png)
 
@@ -49,18 +48,18 @@ scaffold由一个表单组成要创建页面的每段内容都有一个字段，
 * **说明**：显示在基架页面的标题下方。
 * **目标模板**：这是此基架在创建新页面时要使用的模板。在本示例中使用的是 *Geometrrixx 内容页面*&#x200B;模板。
 
-* **目标路径**：这是此基架要在其下创建新页面的父页面的路径。在此示例中，路径为&#x200B;*/content/geometrixx/cn/news*。
+* **目标路径**：这是此基架要在其下创建新页面的父页面的路径。在此示例中，路径为&#x200B;*/content/geometrixx/en/news*。
 
 基架的主体是表单。当用户希望使用基架创建页面时，他需要填充表单并单击底部的“创建&#x200B;**”。在上面的&#x200B;**新闻**&#x200B;示例中，表单具有以下字段：
 
 * **标题**：这是要创建页面的名称。每个基架都具有此字段。
 * **文本**：此字段对应生成页面上的文本组件。
-* **图像**:此字段与生成页面上的图像组件相对应。
+* **图像**:此字段对应于生成页面上的图像组件。
 * **图像/高级**：**标题**：图像的标题。
 
 * **图像/高级**：**替代文本**：图像的替代文本。
 
-* **图像／高级**: **描述**:图像的描述。
+* **图像/高级**: **描述**:图像的描述。
 
 * **图像/高级**：**尺寸**：图像的尺寸。
 
@@ -68,15 +67,15 @@ scaffold由一个表单组成要创建页面的每段内容都有一个字段，
 
 ## 创建基架  {#creating-a-scaffold}
 
-要创建新基架，请转至&#x200B;**工具**&#x200B;控制台，然后转至&#x200B;**默认页面基架**&#x200B;并创建新页面。 单个页面模板类型将可用，即&#x200B;*Scaffolding模板。*
+要创建新基架，请转到&#x200B;**工具**&#x200B;控制台，然后转到&#x200B;**默认页面基架**&#x200B;并创建新页面。 将提供单页模板类型，即&#x200B;*基架模板。*
 
-*转到新页&#x200B;**面**的页面属性并设置标题文本、说明*、*目标模板*&#x200B;和目标路径(如&#x200B;*****上所述)。*
+*转到新页&#x200B;**面**的页面属性，并设置标题文本**、描述**、目标模板**和目标路径**，如上所述。*
 
-*接下来，您必须定义此scaffold将创建的页面的结构。 为此，请进入scaffold页面的设计模式。 随即显示一个链接，允许您在&#x200B;**对话框编辑器**&#x200B;中编辑 scaffold。
+*接下来，您必须定义此基架将创建的页面的结构。 为此，请进入基架页面的设计模式。 随即显示一个链接，允许您在&#x200B;**对话框编辑器**&#x200B;中编辑 scaffold。
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
-使用对话框编辑器，您可以指定每次使用此scaffold创建新页面时将创建的属性。
+使用对话框编辑器，您可以指定每次使用此基架创建新页面时将创建的属性。
 
 基架对话框定义的工作方式与组件类似（请参阅[组件](/help/sites-developing/components.md)）。但还是存在一些重要差异：
 
@@ -88,11 +87,11 @@ scaffold由一个表单组成要创建页面的每段内容都有一个字段，
 
 现在，单击对话框字段&#x200B;**对话框>选项卡面板>文本>文本**，如下所示：
 
-![textedit](assets/textedit.png)
+![文本编辑](assets/textedit.png)
 
 此字段的属性列表将显示在对话框编辑器的右侧，如下所示：
 
-![列表属性](assets/list_of_properties.png)
+![list_of_properties](assets/list_of_properties.png)
 
 注意此字段的 name 属性。它具有值
 
@@ -107,25 +106,25 @@ scaffold由一个表单组成要创建页面的每段内容都有一个字段，
 
 请注意，在普通的组件对话框中，您不必指定此信息，因为它是隐式的，对话框已绑定到特定的组件。
 
-要指定这两类信息，可使用隐藏字段。单击第一个隐藏字段&#x200B;**对话框>选项卡面板>文本>隐藏**，如下所示：
+要指定这两类信息，可使用隐藏字段。单击第一个隐藏字段&#x200B;**对话框>选项卡面板>文本>隐藏的**，如下所示：
 
 ![隐藏](assets/hidden.png)
 
 此隐藏字段的属性如下所示：
 
-![hidden_列表_props](assets/hidden_list_props.png)
+![hidden_list_props](assets/hidden_list_props.png)
 
 此隐藏字段的 name 属性为
 
 `./jcr:content/par/text/textIsRich`
 
-这是用于解释存储在`./jcr:content/par/text/text.`的文本字符串的布尔属性
+这是用于解释存储在`./jcr:content/par/text/text.`中的文本字符串的布尔属性
 
 因为我们知道文本应解释为富文本，所以我们将此字段的 `value` 属性指定为 `true`。
 
 >[!CAUTION]
 >
->对话框编辑器允许用户更改对话框定义中现有&#x200B;*属性的值。*&#x200B;要添加新属性，用户必须使用 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)。例如，在使用对话框编辑器将新的隐藏字段添加到对话框定义时，它没有 *value* 属性（即名为“value”的属性）。如果涉及的隐藏字段需要设置默认的 *value* 属性，则必须使用其中一个 CRX 工具手动添加此属性。通过对话框编辑器本身无法添加该值。然而，此属性一旦存在，即可使用对话框编辑器编辑其值。
+>对话框编辑器允许用户更改对话框定义中&#x200B;*现有*&#x200B;属性的值。 要添加新属性，用户必须使用 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)。例如，在使用对话框编辑器将新的隐藏字段添加到对话框定义时，它没有 *value* 属性（即名为“value”的属性）。如果涉及的隐藏字段需要设置默认的 *value* 属性，则必须使用其中一个 CRX 工具手动添加此属性。通过对话框编辑器本身无法添加该值。然而，此属性一旦存在，即可使用对话框编辑器编辑其值。
 
 可通过单击查看第二个隐藏字段，如下所示：
 
@@ -133,7 +132,7 @@ scaffold由一个表单组成要创建页面的每段内容都有一个字段，
 
 此隐藏字段的属性如下所示：
 
-![hidden_列表_props2](assets/hidden_list_props2.png)
+![hidden_list_props2](assets/hidden_list_props2.png)
 
 此隐藏字段的 name 属性为
 
@@ -143,7 +142,7 @@ scaffold由一个表单组成要创建页面的每段内容都有一个字段，
 
 `foundation/components/textimage`
 
-&quot;这指定用于呈现此段落文本内容的组件是&#x200B;*文本图像*&#x200B;组件。 使用另一个隐藏字段中指定的`isRichText`布尔值，组件可以按所需方式呈现存储在`./jcr:content/par/text/text`的实际文本字符串。
+&quot;这指定用于呈现此段落文本内容的组件是&#x200B;*文本图像*&#x200B;组件。 如果使用在另一个隐藏字段中指定的`isRichText`布尔值，组件可以按所需的方式呈现存储在`./jcr:content/par/text/text`上的实际文本字符串。
 
 ## 使用 MSM 继承的基架 {#scaffolding-with-msm-inheritance}
 
@@ -154,7 +153,7 @@ scaffold由一个表单组成要创建页面的每段内容都有一个字段，
 * 锁符号（对于大多数组件；例如文本和标题）
 * 包含文本&#x200B;**单击以取消继承**&#x200B;的蒙版（对于图像组件）
 
-这表明，在取消继承之前，无法编辑组件。
+这表示在取消继承之前，无法编辑组件。
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -173,5 +172,4 @@ scaffold由一个表单组成要创建页面的每段内容都有一个字段，
 
 >[!NOTE]
 >
->如果继承在页面级别取消（从页面属性的Live Copy选项卡），则所有组件都将在&#x200B;**Scaffolding**&#x200B;模式下进行编辑（它们将以解锁状态显示）。
-
+>如果在页面级别取消继承（从“页面属性”的“Live Copy”选项卡中），则所有组件都将在&#x200B;**Scaffolding**&#x200B;模式下可编辑（它们将以解锁状态显示）。

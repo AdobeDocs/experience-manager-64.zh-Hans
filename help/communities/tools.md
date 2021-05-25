@@ -1,6 +1,6 @@
 ---
-title: 社区工具
-seo-title: 社区工具
+title: Communities工具
+seo-title: Communities工具
 description: 如何访问“社区工具”控制台
 seo-description: 如何访问“社区工具”控制台
 uuid: 3172fe00-7132-4cee-9fd1-b6f96eb43200
@@ -11,20 +11,19 @@ content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: de11be58-b576-4d06-b446-52b4013aae9a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
-
 # 社区工具{#communities-tools}
 
-在创作时，要访问“社区工具”控制台：
+在创作时，要访问社区工具控制台，请执行以下操作：
 
-* 从全局导航：**[!UICONTROL 工具>社区]**
+* 从全局导航：**[!UICONTROL 工具> Communities]**
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
@@ -33,6 +32,5 @@ ht-degree: 0%
 * [社区功能](functions.md) — 用于创建和管理社区功能的控制台
 * [存储配置](srp-config.md)  — 用于配置和选择默认SRP的 [控制台](working-with-srp.md)
 
-* [组件指南](components-guide.md)  — 打开一个交互式站点，该站点允许对SCF组件的工作方式以及配置或自定义它们的方式进行试验。
-* [标记](badges.md)  — 可从中添加自定义标记以用于评分和标记规 [则的控制台](implementing-scoring.md)
-
+* [组件指南](components-guide.md)  — 打开一个交互式站点，该站点允许对SCF组件的工作方式以及配置或自定义组件的方式进行实验。
+* [徽章](badges.md)  — 可从中添加自定义徽章以用于评分和徽章 [规则的控制台](implementing-scoring.md)

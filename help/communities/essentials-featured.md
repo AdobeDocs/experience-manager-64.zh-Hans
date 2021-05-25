@@ -1,6 +1,6 @@
 ---
-title: 特色内容基础
-seo-title: 特色内容基础
+title: 特色内容要点
+seo-title: 特色内容要点
 description: 使用功能内容
 seo-description: 使用功能内容
 uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
@@ -9,22 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 4805db0f-18d2-4bbc-a4d6-eaafa7a4c152
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 5%
 
 ---
 
+# 特色内容要点{#featured-content-essentials}
 
-# 特色内容基础工具{#featured-content-essentials}
+本页提供了使用特色内容的基本信息。
 
-本页提供处理特色内容的基本信息。
+与将帖子固定到论坛顶部不同，此功能允许在社区站点的任何位置突出显示内容。
 
-与将帖子固定到论坛顶部相比，此功能允许在社区站点的任何位置突出显示内容。
-
-## 客户端{#essentials-for-client-side}的必备工具
+## 客户端{#essentials-for-client-side}的要点
 
 <table> 
  <tbody>
@@ -59,4 +58,4 @@ ht-degree: 5%
 
 ### 文件库功能 {#file-library-function}
 
-包含[特色内容函数](functions.md#featured-content-function)的社区站点结构包括已配置的`featured content`组件。
+包含[特色内容函数](functions.md#featured-content-function)的社区站点结构，包括已配置的`featured content`组件。

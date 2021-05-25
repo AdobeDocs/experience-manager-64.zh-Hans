@@ -1,8 +1,8 @@
 ---
-title: Application Manager客户端JavaAPI快速开始(SOAP)
-seo-title: Application Manager客户端JavaAPI快速开始(SOAP)
-description: 使用Application Manager客户端创建应用程序版本、导出应用程序、导入应用程序、获取AEM Forms应用程序、获取应用程序、获取应用程序状态、预览AEM Forms和更高版本的应用程序归档，以及删除AEM Forms应用程序归档。
-seo-description: 使用Application Manager客户端创建应用程序版本、导出应用程序、导入应用程序、获取AEM Forms应用程序、获取应用程序、获取应用程序状态、预览AEM Forms和更高版本的应用程序归档，以及删除AEM Forms应用程序归档。
+title: 应用程序管理器客户端JavaAPI快速入门(SOAP)
+seo-title: 应用程序管理器客户端JavaAPI快速入门(SOAP)
+description: 使用Application Manager客户端创建应用程序版本、导出应用程序、导入应用程序、获取AEM Forms应用程序、获取应用程序、获取应用程序状态、预览AEM Forms和更高版本的应用程序存档，以及删除AEM Forms应用程序存档。
+seo-description: 使用Application Manager客户端创建应用程序版本、导出应用程序、导入应用程序、获取AEM Forms应用程序、获取应用程序、获取应用程序状态、预览AEM Forms和更高版本的应用程序存档，以及删除AEM Forms应用程序存档。
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
 content-type: reference
@@ -10,42 +10,41 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8369beeb-4628-40ea-9167-717f112768da
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
 
+# 应用程序管理器客户端JavaAPI快速启动(SOAP){#application-manager-client-javaapi-quick-start-soap}
 
-# Application Manager客户端JavaAPI快速开始(SOAP){#application-manager-client-javaapi-quick-start-soap}
+以下Java API快速入门(SOAP)适用于应用程序管理器客户端。
 
-以下Java API快速开始(SOAP)可用于Application Manager客户端。
+[快速入门（SOAP模式）：使用Java API创建应用程序版本](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[快速开始（SOAP模式）：使用Java API创建应用程序版本](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API导出应用程序](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[快速开始（SOAP模式）：使用Java API导出应用程序](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API导入应用程序](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[快速开始（SOAP模式）：使用Java API导入应用程序](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API获取AEM Forms应用程序](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[快速开始（SOAP模式）：使用Java API获取AEM Forms应用程序](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API获取应用程序](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[快速开始（SOAP模式）：使用Java API获取应用程序](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API获取应用程序的状态](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[快速开始（SOAP模式）：使用Java API获取应用程序状态](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[快速入门（SOAP模式）：使用Java API预览AEM Forms和更高版本的应用程序存档](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[快速开始（SOAP模式）：使用Java API预览AEM Forms和更高版本的应用程序存档](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
-
-[快速开始（SOAP模式）：使用Java API删除AEM Forms应用程序存档](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API删除AEM Forms应用程序存档](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
 AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置为SOAP。
 
 >[!NOTE]
 >
->“使用AEM Forms进行编程”中的快速开始基于JBoss和Windows操作系统上部署的Forms服务器。 但是，如果您使用的是其他操作系统，如Unix，则使用适用操作系统支持的路径替换特定于窗口的路径。 同样，如果您使用的是另一台J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>“使用AEM Forms进行编程”中的快速入门是基于JBoss和Windows操作系统上部署的Forms服务器。 但是，如果您使用的是其他操作系统（如Unix），请将特定于窗口的路径替换为适用操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
-## 快速开始（SOAP模式）：使用Java API {#quick-start-soap-mode-creating-application-version-using-the-java-api}创建应用程序版本
+## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-creating-application-version-using-the-java-api}创建应用程序版本
 
 以下Java代码示例使用JAVA API创建应用程序。
 
@@ -144,7 +143,7 @@ public class CreateApplicationVersion_SOAP {
 }
 ```
 
-## 快速开始（SOAP模式）：使用Java API {#quick-start-soap-mode-exporting-applications-using-the-java-api}导出应用程序
+## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-exporting-applications-using-the-java-api}导出应用程序
 
 以下Java代码示例使用JAVA API导出应用程序。
 
@@ -247,13 +246,13 @@ public class ExportLCA_SOAP {
 }
 ```
 
-## 快速开始（SOAP模式）：使用Java API {#quick-start-soap-mode-importing-applications-using-the-java-api}导入应用程序
+## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-importing-applications-using-the-java-api}导入应用程序
 
 以下Java代码示例使用JAVA API导入应用程序。
 
 >[!NOTE]
 >
->Java API importApplication()用较新的应用程序替换同名的现有应用程序。 要更新现有应用程序，请使用API importApplication()代替API updateApplication()。
+>Java API importApplication()用较新的应用程序替换具有相同名称的现有应用程序。 要更新现有应用程序，请使用API importApplication()代替API updateApplication()。
 
 ```as3
 /* 
@@ -334,7 +333,7 @@ public class ImportLCA_SOAP {
 }
 ```
 
-## 快速开始（SOAP模式）：使用Java API {#quick-start-soap-mode-getting-a-application-using-the-java-api}获取应用程序
+## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-getting-a-application-using-the-java-api}获取应用程序
 
 以下Java代码示例使用Java API获取应用程序。
 
@@ -441,11 +440,11 @@ public class GetApplication_SOAP {
 }
 ```
 
-## 快速开始（SOAP模式）：使用Java API {#quick-start-soap-mode-getting-the-applications-using-the-java-api}获取应用程序
+## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-getting-the-applications-using-the-java-api}获取应用程序
 
 以下Java代码示例使用Java API获取应用程序。
 
-***注**:获取AEM Forms Application API、getApplications()只返回已部署的应用程序。*
+***note**:获取AEM Forms应用程序API、getApplications()，只返回已部署的应用程序。*
 
 ```as3
 /* 
@@ -540,7 +539,7 @@ public class GetApplications_SOAP {
 }
 ```
 
-## 快速开始（SOAP模式）：使用Java API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}获取应用程序状态
+## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}获取应用程序状态
 
 ```as3
 /* 
@@ -645,7 +644,7 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## 快速开始（SOAP模式）：使用Java API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}预览LiveCycle ES2和更高版本的应用程序归档文件
+## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}预览LiveCycleES2及更高版本的应用程序存档
 
 以下Java代码示例用于使用Java API预览AEM Forms和更高版本的应用程序存档。
 
@@ -724,7 +723,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## 快速开始（SOAP模式）：使用Java API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}删除应用程序存档
+## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}删除应用程序存档
 
 以下Java代码示例用于删除应用程序存档。
 
@@ -819,4 +818,3 @@ public class DeleteApplication_SOAP {
     } 
 }
 ```
-

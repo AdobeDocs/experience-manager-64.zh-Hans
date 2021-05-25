@@ -1,26 +1,25 @@
 ---
 title: AEM 6.4用户指南中心
 seo-title: AEM 6.4用户指南中心
-description: 概述了解、安装、管理和使用AEM 6.4的所有基本资源
-seo-description: 概述了解、安装、管理和使用AEM 6.4的所有基本资源
+description: 概述了了解、安装、管理和使用AEM 6.4的所有基本资源
+seo-description: 概述了了解、安装、管理和使用AEM 6.4的所有基本资源
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
+exl-id: dbeb093b-489b-46c3-b136-e33a430793e0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 27%
 
 ---
 
-
-# AEM 6.4用户指南集线器{#aem-64-user-guide}
+# AEM 6.4用户指南中心{#aem-64-user-guide}
 
 ## 简介 {#introduction}
 
 | [首要步骤](https://helpx.adobe.com/cn/experience-manager/get-started.html) | [功能视频](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html) | [发行说明](https://helpx.adobe.com/cn/experience-manager/6-5/release-notes.html) |
 |:-:|:-:|:-:|
-| 探索AEM入门教程和文章 | 精选视频，重点介绍6.4新增功能 | 了解AEM 6.4的新增功能 |
+| 了解有关AEM快速入门的教程和文章 | 精选视频，重点介绍6.4的新增功能 | 了解AEM 6.4的新增功能 |
 
 ## 用户指南和资源{#user-guides-and-resources}
 
@@ -38,14 +37,14 @@ ht-degree: 27%
 
 ## 联系人选项{#contact-options}
 
-支持代表可通过以下方式获得协助支持：
+支持代表可通过以下方式获得辅助支持：
 
 * Web:Experience Manager支持门户
 * 电话：[查找您所在区域的电话号码。](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)
 
 >[!NOTE]
 >
->不确定您是否是&#x200B;**支持委托**? 了解此[用户类型是否适用于您](https://helpx.adobe.com/experience-cloud/supported-users.html)，并了解我们的[企业支持条款](https://helpx.adobe.com/support/programs/enterprise-support-terms.html)。
+>不确定您是否是&#x200B;**支持委托**? 了解此[用户类型是否适用于您](https://helpx.adobe.com/experience-cloud/supported-users.html)，并了解我们的[企业支持术语](https://helpx.adobe.com/support/programs/enterprise-support-terms.html)。
 
 ## 社区 {#community}
 

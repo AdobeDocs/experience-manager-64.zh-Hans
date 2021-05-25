@@ -1,31 +1,30 @@
 ---
-title: 为表单制表人项目添加自定义操作
-seo-title: 为表单制表人项目添加自定义操作
-description: 表单开发人员可以在表单门户页面上为表单列表添加更多操作。 默认情况下，表单列表允许您访问、填写和提交表单。
-seo-description: 表单开发人员可以在表单门户页面上为表单列表添加更多操作。 默认情况下，表单列表允许您访问、填写和提交表单。
+title: 对表单制表符项目添加自定义操作
+seo-title: 对表单制表符项目添加自定义操作
+description: 表单开发人员可以在表单门户页面上的表单列表中添加更多操作。 默认情况下，表单列表允许您访问、填写并提交表单。
+seo-description: 表单开发人员可以在表单门户页面上的表单列表中添加更多操作。 默认情况下，表单列表允许您访问、填写并提交表单。
 uuid: 02c64f7d-f726-4a5b-a303-ec96934e9c01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 0e0a9b6b-fd2f-4cec-b233-500c940ee4d5
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: d8f60be3-474a-4dd1-aaa5-7b6a97e1a9bd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
 
+# 对表单制表符项目{#adding-custom-action-on-form-lister-items}添加自定义操作
 
-# 对表单制表人项目{#adding-custom-action-on-form-lister-items}添加自定义操作
+在AEM Forms中，您可以创建一个列出可用表单的门户页面。 默认情况下，您可以在门户页面上搜索和列出表单。 您可以打开表单以填写并提交信息。 对于门户页面上列出的表单，现成只提供渲染操作。 要详细了解门户页面上的可用操作，请参阅[创建表单门户页面](/help/forms/using/creating-form-portal-page.md)。
 
-在AEM Forms，您可以创建一个列出可用表单的门户页面。 默认情况下，您可以在门户页面上搜索和列表表单。 您可以打开表单以填写和提交信息。 对于门户页面上列出的表单，仅开箱即用提供渲染操作。 要详细了解门户页面上的可用操作，请参阅[创建表单门户页面](/help/forms/using/creating-form-portal-page.md)。
+您可以向门户页面添加其他选项。 可以通过自定义表单门户的模板来自定义这些选项或操作。
 
-可向门户页面添加其他选项。 可以通过自定义表单门户的模板自定义这些选项或操作。
+本文展示了如何直接从表单门户页面创建按钮以发送表单链接。 此自定义要求更新搜索和制表器组件的模板。
 
-本文介绍如何直接从表单门户页面创建按钮以发送表单链接。 此自定义操作需要更新搜索和制表人组件的模板。
-
-向模板添加操作所需的代码在下面提供。 代码片断中的`onclick`属性具有通过电子邮件发送表单链接的脚本。
+向模板添加操作所需的代码在下面提供。 代码片段中的`onclick`属性具有通过电子邮件发送表单链接的脚本。
 
 ```mxml
 <div class="__FP_boxes-container __FP_single-color">
@@ -46,9 +45,8 @@ ht-degree: 0%
 </div>
 ```
 
-您可以在自定义模板中添加类似操作。 要定义JavaScript函数，请在页面级脚本上添加该函数，并将其与必需的HTML元素链接。 在上例中，`onclick`表达式是链接函数。
+您可以在自定义模板中添加类似操作。 要定义JavaScript函数，请在页面级脚本中添加该函数，并将其与必需的HTML元素链接。 在上例中，`onclick`表达式是链接的函数。
 
 对模板进行编辑后，示例门户页面包含一个按钮，用于通过电子邮件发送表单的链接，如下所示。
 
 ![email](assets/email.png)
-

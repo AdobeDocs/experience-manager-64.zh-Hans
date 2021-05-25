@@ -5,28 +5,27 @@ description: AEM 6.4基本功能概述
 seo-description: AEM 6.4基本功能概述
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 37%
 
 ---
 
-
 # AEM 6.4功能用户指南{#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[进一步了解Adobe Experience Manager6.4的安装、部署和架构](/help/sites-deploying/home.md)，包括Adobe Managed Services云部署。
+[进一步了解Adobe Experience Manager 6.4的安装、部署和架构](/help/sites-deploying/home.md)，包括我们的Adobe Managed Services云部署。
 
 [了解如何管理AEM项目](/help/managing/home.md)。
 
 ## AEM Sites {#aem-sites}
 
-[了解在AEM中创建内容和创作的主要概念](/help/sites-authoring/home.md)。
+[了解在AEM中创建内容和进行创作的关键概念](/help/sites-authoring/home.md)。
 
-[了解管理AEM](/help/sites-administering/home.md)。
+[了解如何管理AEM](/help/sites-administering/home.md)。
 
 ## AEM Assets {#aem-assets}
 

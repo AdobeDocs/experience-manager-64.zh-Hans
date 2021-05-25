@@ -1,6 +1,6 @@
 ---
-title: 创作的概念
-seo-title: 创作的概念
+title: 创作概念
+seo-title: 创作概念
 description: 在 AEM 中进行创作的概念
 seo-description: 在 AEM 中进行创作的概念
 uuid: 824c8b91-07c7-471b-b3aa-5a73d6d48414
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
-translation-type: tm+mt
-source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
+exl-id: 23e30de9-1a30-484a-b370-f9f0d45b4e41
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 86%
 
 ---
-
 
 # 创作和发布的概念{#authoring}
 
@@ -70,7 +69,7 @@ AEM 提供了两种环境：
 
 通常，发布环境位于内网与外网的“隔离区”中；换句话说，可用于 Internet，但不再处于内部网络的完全保护之下。
 
-如果 AEM 站点是一个[社区站点](/help/communities/overview.md)或包含[社区组件](/help/communities/author-communities.md)，则已登录的网站访客（成员）可以与社区功能交互。例如，他们可以发布到论坛、发布评论或关注其他成员。 成员可以被授予执行各种活动的权限，但这些活动通常仅限于在创作环境中执行，例如创建新页面（社区组）、博客文章，以及审核其他成员的帖子。
+如果 AEM 站点是一个[社区站点](/help/communities/overview.md)或包含[社区组件](/help/communities/author-communities.md)，则已登录的网站访客（成员）可以与社区功能交互。例如，他们可以发布到论坛、发表评论或关注其他成员。 成员可以被授予执行各种活动的权限，但这些活动通常仅限于在创作环境中执行，例如创建新页面（社区组）、博客文章，以及审核其他成员的帖子。
 
 >[!NOTE]
 >
@@ -85,7 +84,7 @@ AEM 提供了两种环境：
    >
    >
 * **复制**
-   >  这些是用于指示数据（例如页面内容、文件、代码、用户评论）从一个环境到另一个的移动的技术术语；例如，在发布或反向复制用户注释时。
+   >  这些是用于指示数据（例如页面内容、文件、代码、用户评论）从一个环境移动到另一个环境的技术术语；例如，在发布或反向复制用户评论时。
 >
 
 

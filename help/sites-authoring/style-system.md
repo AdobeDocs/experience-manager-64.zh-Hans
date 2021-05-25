@@ -8,14 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
-translation-type: tm+mt
-source-git-commit: bdc44635cfb874c5f5f4033debb15799cbafcd5a
+exl-id: 8d7282dd-1e21-4862-af04-0daaea431e2c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 96%
 
 ---
-
 
 # 样式系统{#style-system}
 
@@ -112,7 +111,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->配置为组件策略的样式属性的CSS类（以及任何必要的Javascript）必须部署为[客户端库](/help/sites-developing/clientlibs.md)才能使用。
+>配置为组件策略的样式属性的CSS类（以及任何必需的Javascript）必须部署为[客户端库](/help/sites-developing/clientlibs.md)才能正常工作。
 
 ## 设置 {#setup}
 

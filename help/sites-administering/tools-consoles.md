@@ -1,27 +1,26 @@
 ---
 title: 工具控制台
-description: 了解Adobe Experience Manager各地不同的工具控制台。
+description: 了解整个Adobe Experience Manager中的不同工具控制台。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 7566e1bc-8571-4b3c-b420-4324026bd4dd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 34%
 
 ---
 
-
 # 工具控制台{#tools-consoles}
 
-**工具**&#x200B;控制台让您可以访问一些专用工具，这些工具有助于您管理网站、数字资产及内容存储库的其他方面。**工具**&#x200B;控制台目前有两种不同的版本，具体取决于您所使用的UI:
+**工具**&#x200B;控制台让您可以访问一些专用工具，这些工具有助于您管理网站、数字资产及内容存储库的其他方面。目前，根据您所使用的UI，有两种类型的&#x200B;**工具**&#x200B;控制台：
 
-* [工具——经典UI](#tools-classic-ui)
-* [工具——触屏优化UI](#tools-touch-optimized-ui)
+* [工具 — 经典UI](#tools-classic-ui)
+* [工具 — 触屏优化UI](#tools-touch-optimized-ui)
 
-## 工具——经典UI {#tools-classic-ui}
+## 工具 — 经典UI {#tools-classic-ui}
 
 <table> 
  <tbody> 
@@ -38,17 +37,17 @@ ht-degree: 34%
   <tr> 
    <td>Client Context配置<br /> </td> 
    <td> </td> 
-   <td><a href="/help/sites-developing/client-context.md">Client Context</a>表示动态组合的用户数据集合。 此处保留默认和营销云配置。<br /> </td> 
+   <td><a href="/help/sites-developing/client-context.md">Client Context</a>表示动态组合的用户数据集合。 此处保留了默认和marketing cloud配置。<br /> </td> 
   </tr> 
   <tr> 
    <td>Cloud Services配置<br /> </td> 
    <td> </td> 
-   <td>保存与<a href="/help/sites-administering/marketing-cloud.md">集成Adobe Marketing Cloud</a>相关的配置。</td> 
+   <td>保存与<a href="/help/sites-administering/marketing-cloud.md">与Adobe Marketing Cloud集成</a>相关的配置。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">商务</a></td> 
    <td> </td> 
-   <td>提供对导入器和各种产品数据的访问。</td> 
+   <td>提供对导入程序和各种产品数据的访问权限。</td> 
   </tr> 
   <tr> 
    <td>DAM -Digital Rights Management<br /> </td> 
@@ -56,54 +55,54 @@ ht-degree: 34%
    <td>提供对数字权限信息和许可证的访问。</td> 
   </tr> 
   <tr> 
-   <td>DAM —— 运行状况检查器<br /> </td> 
+   <td>DAM — 运行状况检查程序<br /> </td> 
    <td> </td> 
-   <td>比较<code>/var/dam</code>和<code>/content/dam</code>并检查<br />是否存在任何不一致。 随后可以同步或删除列出的所有文件／文件夹。 文件夹比较的节点类型可在Web控制台中进行配置。</td> 
+   <td>比较<code>/var/dam</code>和<code>/content/dam</code>并检查<br />是否存在任何不一致。 随后可以同步或删除列出的任何文件/文件夹。 文件夹比较的节点类型可在Web控制台中进行配置。</td> 
   </tr> 
   <tr> 
    <td>DAM -AdobeIndesign<br /> </td> 
    <td> </td> 
-   <td>用于与AdobeIndesign结合使用的脚本。</td> 
+   <td>用于与InDesign结合使用的Adobe。</td> 
   </tr> 
   <tr> 
-   <td>DAM —— 视频用户档案<br /> </td> 
+   <td>DAM — 视频配置文件<br /> </td> 
    <td> </td> 
-   <td>用于ffmpeg转码的可配置用户档案。</td> 
+   <td>用于ffmpeg转码的可配置配置文件。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">功能板</a></td> 
    <td> </td> 
-   <td>允许您创建报告仪表板;这为定义显示统一数据的页面提供了一种可自定义的方式。</td> 
+   <td>用于创建报表功能板；这为定义显示统一数据的页面提供了一种可自定义的方式。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">设计</a></td> 
    <td> </td> 
-   <td>保留定义的设计列表，包括要使用的图形和css文件。</td> 
+   <td>包含定义的设计列表，包括要使用的图形和css文件。</td> 
   </tr> 
   <tr> 
    <td>自定义文档</td> 
    <td> </td> 
-   <td>用于扩展文档和联机帮助。</td> 
+   <td>在扩展文档和在线帮助时使用。</td> 
   </tr> 
   <tr> 
    <td>表单提交</td> 
    <td> </td> 
-   <td>保留收到的表单提交的列表。</td> 
+   <td>保存收到的表单提交列表。</td> 
   </tr> 
   <tr> 
-   <td>导入器- <a href="/help/sites-administering/bulk-editor.md">批量编辑器</a></td> 
+   <td>导入器 — <a href="/help/sites-administering/bulk-editor.md">批量编辑器</a></td> 
    <td> </td> 
-   <td>允许您搜索项目并批量编辑它们。 您还可以将内容（批量）导出并导入到存储库中。</td> 
+   <td>允许您搜索项目并批量对其进行编辑。 您还可以（批量）将内容导出和导入存储库。</td> 
   </tr>
   <tr> 
-   <td>导入程序- Feed Importer</td> 
+   <td>导入器 — 馈送导入器</td> 
    <td> </td> 
-   <td><p>Feed Importer是一个框架，可将外部源中的内容重复导入到您的存储库中。 Feed Importer的想法是以指定的时间间隔轮询远程资源，分析它，并在内容存储库中创建表示远程资源内容的节点。</p> </td> 
+   <td><p>馈送导入器是一个框架，可将外部源中的内容重复导入您的存储库。 馈送导入器的构思是以指定的间隔轮询远程资源，以对其进行解析，并在内容存储库中创建表示远程资源内容的节点。</p> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/external-link-checker.md">外部链接检查程序</a></td> 
    <td> </td> 
-   <td>扫描AEM实例中的所有内容页面并检查任何外部链接。 将显示有效和无效链接列表。</td> 
+   <td>扫描AEM实例中的所有内容页面，并检查任何外部链接。 此时将显示有效和无效链接的列表。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/mobile.md">移动设备</a></td> 
@@ -113,7 +112,7 @@ ht-degree: 34%
   <tr> 
    <td><a href="/help/sites-administering/msm.md">MSM</a></td> 
    <td> </td> 
-   <td>处理多语言和跨国内容，帮助您在集中品牌和本地化内容之间取得平衡。</td> 
+   <td>处理多语言和跨国内容，帮助您在集中品牌策略与本地化内容之间实现平衡。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/notification.md">通知</a></td> 
@@ -123,22 +122,22 @@ ht-degree: 34%
   <tr> 
    <td><a href="/help/sites-administering/package-manager.md">包</a></td> 
    <td> </td> 
-   <td>指向“包管理器”的替代链接，其中显示已为AEM WCM加载的包。 与CRX的包管理器中显示的信息相似。</td> 
+   <td>包管理器的替代链接，用于显示为AEM WCM加载的包。 与CRX的包管理器中显示的信息类似。</td> 
   </tr> 
   <tr> 
-   <td>复制- <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">复制代理</a></td> 
+   <td>复制 — <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">复制代理</a></td> 
    <td> </td> 
-   <td>用于在发布页面时将数据从作者复制到发布，或通过反向复制将用户注释从发布环境返回到作者。</td> 
+   <td>用于在发布页面时将数据从创作复制到发布，或通过反向复制将数据从发布环境返回给创作的用户评论。</td> 
   </tr> 
   <tr> 
-   <td>导入器- <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">激活树</a></td> 
+   <td>导入程序 — <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">激活树</a></td> 
    <td> </td> 
    <td>在“网站”选项卡中，可以激活单个页面。如果已经输入或更新大量内容页面（所有内容页面都驻留在同一根页面下），则可以更轻松地通过一个操作来激活整个树。也可以通过“练习”来模拟激活和突出显示要激活的页面。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/reporting.md">报告</a></td> 
    <td> </td> 
-   <td>AEM提供一系列自定义报告，允许您创建自定义报告和／或开发您自己的报告。</td> 
+   <td>AEM提供一系列自定义报表，允许您创建自定义报表和/或开发您自己的报表。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/scaffolding.md">默认页面基架</a></td> 
@@ -146,14 +145,14 @@ ht-degree: 34%
    <td>使用基架，您可以创建一个表单（即基架），其中包含的字段反映您要用于页面的结构，然后使用此表单轻松创建基于此结构的页面。</td> 
   </tr> 
   <tr> 
-   <td>安全性- <a href="/help/sites-administering/notification.md">自助服务配置</a> </td> 
+   <td>安全性 — <a href="/help/sites-administering/notification.md">自助服务配置</a> </td> 
    <td> </td> 
-   <td>允许您配置用户在创建帐户或重置口令时自动收到的电子邮件以及确认已重置的口令。</td> 
+   <td>允许您配置用户在创建帐户或重置密码时自动收到的电子邮件，以及确认已重置的密码。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">分段</a></td> 
    <td> </td> 
-   <td>站点访客在访问站点时的兴趣和目标各不相同。了解这些目标并满足预期是在线营销活动的一个重要成功因素。分段通过分析和表征访客的详细信息来帮助实现此目的。<br /> </td> 
+   <td>站点访客在访问站点时的兴趣和目标各不相同。了解这些目标并满足预期是在线营销活动的一个重要成功因素。分段可通过分析访客的详细信息并描述其特征来帮助实现这一点。<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
@@ -171,29 +170,29 @@ ht-degree: 34%
    <td>没有与此条目相关的活动功能。</td> 
   </tr> 
   <tr> 
-   <td>版本控制- <a href="/help/sites-deploying/version-purging.md">清除版本</a></td> 
+   <td>版本控制 — <a href="/help/sites-deploying/version-purging.md">清除版本</a></td> 
    <td> </td> 
    <td>允许您根据需要清除页面版本。</td> 
   </tr> 
   <tr> 
    <td>虚拟存储库</td> 
    <td> </td> 
-   <td>您可以使用工作区装载功能设置虚拟存储库，以提供支持JCR的内容应用程序，以简化对基于CRX和JCR连接器的JCR内容基础架构的访问。</td> 
+   <td>您可以使用工作区装载功能设置虚拟存储库，以便为启用了JCR的内容应用程序提供基于CRX和JCR连接器的JCR内容基础架构的简化访问。</td> 
   </tr> 
   <tr> 
-   <td>口语</td> 
+   <td>关注词</td> 
    <td> </td> 
-   <td>已弃用. 请参阅<a href="/help/communities/moderate-ugc.md#watchwords">协调社区内容</a></td> 
+   <td>已弃用. 请参阅<a href="/help/communities/moderate-ugc.md#watchwords">审核社区内容</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">工作流</a></td> 
    <td> </td> 
-   <td>工作流可以控制页面或数字资产上支持任何编辑流程的一系列操作。</td> 
+   <td>工作流可控制页面或数字资产上支持任何编辑流程的一系列操作。</td> 
   </tr> 
  </tbody> 
 </table>
 
-## 工具——触屏优化UI {#tools-touch-optimized-ui}
+## 工具 — 触屏优化UI {#tools-touch-optimized-ui}
 
 <table> 
  <tbody> 
@@ -225,7 +224,7 @@ ht-degree: 34%
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-authoring/task-content.md">收件箱</a></td> 
-   <td>管理收件箱项目。</td> 
+   <td>管理您的收件箱项目。</td> 
   </tr> 
   <tr> 
    <td>运营</td> 
@@ -255,7 +254,7 @@ ht-degree: 34%
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-deploying/replication.md">复制</a></td> 
-   <td>创建和管理多个网站。</td> 
+   <td>创建并管理多个网站。</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -342,5 +341,4 @@ ht-degree: 34%
 
 >[!NOTE]
 >
->以上某些选项实际链接到经典UI。
-
+>上述某些选项实际上会链接到经典UI。

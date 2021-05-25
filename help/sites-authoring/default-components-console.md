@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: fa583a06-e75c-41de-a977-7e459ab8bca9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 93%
 
 ---
 
-
 # 组件控制台{#components-console}
 
 组件控制台允许您浏览针对实例定义的所有组件，并查看每个组件的关键信息。
 
-它可从&#x200B;**Tools** -> **General** -> **Components**&#x200B;访问。 在控制台中，卡片视图和列表视图均可用。 由于组件没有树结构，因此列视图不可用。
+它可以从&#x200B;**Tools** -> **General** -> **Components**&#x200B;访问。 在控制台中，卡片视图和列表视图均可用。 由于组件没有树结构，因此列视图不可用。
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -74,4 +73,3 @@ ht-degree: 93%
    如果开发人员提供了[组件相关文档](/help/sites-developing/developing-components.md#documenting-your-component)，则该文档将会显示在&#x200B;**文档**&#x200B;选项卡中。如果没有可用文档，则不会显示&#x200B;**文档**&#x200B;选项卡。
 
    ![chlimage_1-305](assets/chlimage_1-305.png)
-

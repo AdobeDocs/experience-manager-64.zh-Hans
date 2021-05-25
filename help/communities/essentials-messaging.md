@@ -1,28 +1,27 @@
 ---
-title: Messaging Essentials
-seo-title: Messaging Essentials
-description: 消息组件概述
-seo-description: 消息组件概述
+title: 消息传送要点
+seo-title: 消息传送要点
+description: 消息传送组件概述
+seo-description: 消息传送组件概述
 uuid: 53711f4d-6bbc-4be9-aefe-4e75a81cd67f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: c6ad3c2b-8776-4ec4-99da-ab73ecc61153
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 2%
 
 ---
 
+# 消息传送要点{#messaging-essentials}
 
-# Messaging Essentials {#messaging-essentials}
+本页记录了有关使用消息传送组件在网站上包含消息传送功能的详细信息。
 
-本页文档了使用消息组件在网站上包含消息传递功能的详细信息。
-
-## 客户端{#essentials-for-client-side}的必备工具
+## 客户端{#essentials-for-client-side}的要点
 
 **撰写消息**
 
@@ -46,16 +45,16 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td><strong>属性</strong></td> 
-   <td>请参阅<a href="configure-messaging.md">配置消息</a></td> 
+   <td>请参阅<a href="configure-messaging.md">配置消息传送</a></td> 
   </tr> 
   <tr> 
-   <td><strong>管理员配置</strong></td> 
-   <td><a href="messaging.md">配置消息传递</a></td> 
+   <td><strong>管理配置</strong></td> 
+   <td><a href="messaging.md">配置消息传送</a></td> 
   </tr> 
  </tbody> 
 </table>
 
-**邮件列表** （针对收件箱、已发送和垃圾桶）
+**消息列表** （用于收件箱、已发送和垃圾桶）
 
 <table> 
  <tbody> 
@@ -77,32 +76,32 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td><strong>属性</strong></td> 
-   <td>请参阅<a href="configure-messaging.md">配置消息</a></td> 
+   <td>请参阅<a href="configure-messaging.md">配置消息传送</a></td> 
   </tr> 
   <tr> 
-   <td><strong>管理员配置</strong></td> 
-   <td><a href="messaging.md">配置消息传递</a></td> 
+   <td><strong>管理配置</strong></td> 
+   <td><a href="messaging.md">配置消息传送</a></td> 
   </tr> 
  </tbody> 
 </table>
 
 另请参阅[客户端自定义](client-customize.md)
 
-## 服务器端{#essentials-for-server-side}的必备工具
+## 服务器端{#essentials-for-server-side}的要点
 
-* [配置消息传递](configure-messaging.md)
+* [配置消息传送](configure-messaging.md)
 
-* [用于SCF组](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) 件的消息客户端API
+* [用于SCF组件](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) 的消息传送客户端API
 
-* [服务](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) 的消息传递API
+* [服务](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) 的消息传送API
 
-* [消息终结点](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [消息端点](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 
 * [服务器端自定义](server-customize.md)
 
 >[!CAUTION]
 >
->对于以下MessageBuilder方法，字符串参数必须*不包含尾随斜杠“/”:
+>对于以下MessageBuilder方法，String参数必须*不*包含尾随斜杠“/”：
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
@@ -119,36 +118,36 @@ ht-degree: 2%
 
 ### 社区站点 {#community-site}
 
-使用向导创建的社区站点结构将在选中时包含消息功能。 请参阅[社区站点控制台](sites-console.md#user-management)的`User Management`设置。
+使用向导创建的社区站点结构将在选择时包含消息传送功能。 请参阅[社区站点控制台](sites-console.md#user-management)的`User Management`设置。
 
-### 示例代码：收到的消息通知{#sample-code-message-received-notification}
+### 示例代码：消息收到通知{#sample-code-message-received-notification}
 
-社交消息功能为操作抛出事件，例如`send`、`marking read`、`marking delete`。 可以捕获这些事件并对事件中包含的数据采取操作。
+社交消息功能引发操作事件，例如`send`、`marking read`、`marking delete`。 可以捕获这些事件并对事件中包含的数据执行相应操作。
 
-以下示例是事件处理函数，它监听`message sent`事件，并使用`Day CQ Mail Service`向所有消息收件人发送电子邮件。
+以下示例是一个事件处理程序，它监听`message sent`事件，并使用`Day CQ Mail Service`向所有消息收件人发送电子邮件。
 
-要试用服务器端示例脚本，您需要开发环境和构建OSGi捆绑包的能力。
+要尝试服务器端示例脚本，您需要开发环境并能够构建OSGi包。
 
 1. 以管理员身份登录` [CRXDE|Lite](http://localhost:4502/crx/de)`
-1. 在`/apps/engage/install`中创建具有任意名称的`bundle node`，如
+1. 在`/apps/engage/install`中创建具有任意名称的`bundle node`，例如
 
-   * **[!UICONTROL 符号名称]**:com.engage.media.social.messaging.MessagingNotification
+   * **[!UICONTROL 符号名称]**:com.engage.media.social.messaging.messagingNotification
    * **[!UICONTROL 名称]**:入门教程消息通知
-   * **[!UICONTROL 描述]**:向用户发送电子邮件通知的示例服务在用户收到消息时
+   * **[!UICONTROL 描述]**:向用户发送电子邮件通知的示例服务
    * **[!UICONTROL 包]**:  `com.engage.media.social.messaging.notification`
 
 1. 导航至 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
 
    1. 删除自动创建的`Activator.java`类
    1. 创建类`MessageEventHandler.java`
-   1. 将下面的代码复制／粘贴到`MessageEventHandler.java`中
+   1. 将以下代码复制/粘贴到`MessageEventHandler.java`中
 
-1. 单击&#x200B;**[!UICONTROL 保存全部]**
-1. 导航到`/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`并添加在`MessageEventHandler.java`代码中编写的所有导入语句。
-1. 构建捆绑包
-1. 确保`Day CQ Mail Service`OSGi服务已配置
-1. 以一个演示用户身份登录并向另一个用户发送电子邮件
-1. 收件人应收到有关新邮件的电子邮件
+1. 单击&#x200B;**[!UICONTROL Save All]**
+1. 导航到`/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`并按照`MessageEventHandler.java`代码中的说明添加所有import语句。
+1. 构建包
+1. 确保配置了`Day CQ Mail Service`OSGi服务
+1. 以演示用户身份登录，并向其他用户发送电子邮件
+1. 收件人应收到一封关于新消息的电子邮件
 
 #### MessageEventHandler.java {#messageeventhandler-java}
 
@@ -241,4 +240,3 @@ public class MessagingEventHandler implements EventHandler {
     }
 }
 ```
-

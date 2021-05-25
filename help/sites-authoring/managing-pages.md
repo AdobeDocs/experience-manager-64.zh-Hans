@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
-translation-type: tm+mt
-source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+exl-id: 0182155a-0156-458c-b89b-35ab3e27819e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2307'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
-
 
 # 创建和组织页面{#creating-and-organizing-pages}
 
@@ -43,9 +42,9 @@ ht-degree: 93%
 
 网站结构可以被视为包含内容页面的树结构。这些内容页面的名称用于组成 URL，而标题则会在查看页面内容时显示出来。
 
-下面显示了We.Retail站点的一个示例，在该示例中，可访问远足短裤页面(`desert-sky-shorts`):
+以下显示了We.Retail网站的一个示例，该示例中访问了徒步短裤页面(`desert-sky-shorts`):
 
-* 作者环境:`http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+* 创作环境：`http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * 发布环境: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
@@ -111,7 +110,7 @@ ht-degree: 93%
 >
 >另请注意，某些浏览器（例如旧版本的 IE）只能接受一定长度的 URL，因此还有技术原因需缩短页面名称。
 
-创建新页面时，AEM将[根据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证页面名称。
+创建新页面时，AEM将根据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证页面名称。[
 
 允许使用的字符最少包括：
 
@@ -171,7 +170,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 ### 组件 {#components}
 
-组件是AEM提供的元素，以便您能够添加特定类型的内容。AEM附带一系列[现成组件](/help/sites-authoring/default-components-console.md)，它们提供全面的功能。这些包括：
+组件是 AEM 提供的元素，因此您可以添加特定类型的内容。 AEM附带一系列[现成组件](/help/sites-authoring/default-components-console.md)，这些组件提供了全面的功能。这些功能包括：
 
 * 文本
 * 图像
@@ -302,7 +301,7 @@ AEM 附带了一些现成的模板。可用模板取决于单个网站。关键�
 
 >[!NOTE]
 >
->页面只能移动到允许使用该页面所基于的模板的位置。有关详细信息，请参阅[模板可用性](/help/sites-developing/templates.md#template-availability)。
+>页面只能移动到允许使用该页面所基于的模板的位置。有关更多信息，请参阅[模板可用性](/help/sites-developing/templates.md#template-availability)。
 
 移动或重命名页面的过程基本相同，都由同一个向导来处理。通过此向导，您可以：
 
@@ -381,7 +380,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
    * **是否要在删除前存档页面？** - 如果选中此项，则在删除时会创建选定要删除页面的版本。
       * [日后可以恢复这些版本。](/help/sites-authoring/working-with-page-versions.md)
       * 无法还原没有先前版本的已删除页面。
-      * 此选项仅从AEM版本6.4.7.0提供。
+      * 此选项仅在AEM版本6.4.7.0中可用。
    * **取消**&#x200B;可中止操作
    * **删除**&#x200B;可确认操作：
 
@@ -423,4 +422,3 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
 1. 选择&#x200B;**创建**&#x200B;以创建文件夹。
-

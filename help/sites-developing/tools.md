@@ -1,22 +1,21 @@
 ---
 title: 测试和跟踪工具
 seo-title: 测试和跟踪工具
-description: AEM为测试组件UI提供了框架，并为测试和调试组件提供了机制
-seo-description: AEM为测试组件UI提供了框架，并为测试和调试组件提供了机制
+description: AEM提供了组件UI测试框架以及组件测试和调试机制
+seo-description: AEM提供了组件UI测试框架以及组件测试和调试机制
 uuid: 29c43202-0a4e-41ba-9176-92fa77c627d5
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
-translation-type: tm+mt
-source-git-commit: 60f36a33471dbbd9ca877dbbedc82ade606a125c
+exl-id: 9387cdb4-f8de-4229-90d1-59218ac17561
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
 
 ---
-
 
 # 测试和跟踪工具{#testing-and-tracking-tools}
 
@@ -27,25 +26,25 @@ AEM提供：
 * [用于测试组件UI的框架](/help/sites-developing/hobbes.md)。
 * [用于测试和调试组件的机制](/help/sites-developing/developer-mode.md)。
 
-以下是两个开放源测试工具：
+以下是两个开源测试工具：
 
 **硒**
 
-Selenium用于在浏览器中对每个活动使用一个用户进行功能测试。 它将测试步骤（单击）记录为HTML表或Java类。
+Selenium用于在每个活动有一个用户的浏览器中进行功能测试。 它将测试步骤（点击）记录为HTML表或Java类。
 
-有关详细信息，请参阅[https://www.seleniumhq.org/](https://www.seleniumhq.org/)。
+有关更多信息，请参阅[https://www.seleniumhq.org/](https://www.seleniumhq.org/)。
 
 **JMeter**
 
 JMeter用于跟踪请求，可用于功能、性能和压力测试。
 
-有关详细信息，请参阅[http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/)。
+有关更多信息，请参阅[http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/)。
 
 还有许多专有工具可用于自动化测试和管理测试计划。
 
 ## 跟踪 {#tracking}
 
-可轻松使用以下工具。 但是，在所有情况下，一个关键问题是项目团队的所有成员（合作伙伴和客户）都可以获得数据。
+以下工具可轻松使用。 但是，在所有情况下，一个关键问题是向项目团队的所有成员（合作伙伴和客户）提供数据。
 
 **布吉利亚**
 
@@ -53,15 +52,15 @@ JMeter用于跟踪请求，可用于功能、性能和压力测试。
 
 **电子表格**
 
-尽管电子表格并非专门用于缺陷跟踪工具，但经常出于这个目的而滥用，因为它们易于理解，并且大多数用户都有其功能的经验。
+尽管电子表格并非特别是错误跟踪工具，但经常出于此目的而被滥用，因为电子表格易于理解，并且大多数用户都有其功能经验。
 
-如果这些用于跟踪，则：
+如果用于跟踪，则：
 
 * 应该保持简单。
-* 个别电子表格的数量应保持在最小。
-* 它们必须定期更新。
-* 只应保留一个主控副本，每个人都应知道主控副本的位置。
-* 所有项目成员都应可以访问它们。
-* 如果安全性是问题(通常在大型公司发生)，并且不能进行通用访问，则只要所有人都知道这些是副本并且无法更新，就可以分发副本。
+* 单个电子表格的数量应保持在最低水平。
+* 必须定期更新。
+* 只应维护一个主控副本，每个人都应知道主控副本的位置。
+* 所有项目成员都可以访问它们。
+* 如果安全性是一个问题（通常发生在大公司）并且无法进行通用访问，则只要每个人都知道这些是副本，并且无法更新，就可以分发副本。
 
-还有许多专有工具用于跟踪错误和功能要求。
+同样，还有许多专有工具可用于跟踪错误和功能要求。

@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: 36e00fc0-310c-4dc5-b1d7-68185fa27c30
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 100%
 
 ---
-
 
 # 通过内容片段进行页面创作{#page-authoring-with-content-fragments}
 
@@ -30,4 +29,3 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 >在经典 UI 中，并非内容片段管理的全部功能均可用。请参阅标准创作文档中的[通过内容片段进行页面创作](/help/sites-authoring/content-fragments.md)。
 >
 >内容片段组件可在经典 UI Sidekick 中见到，但是进一步的功能不可用。
-

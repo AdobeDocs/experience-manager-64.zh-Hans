@@ -1,26 +1,25 @@
 ---
 title: SEO 和 URL 管理最佳实践
 seo-title: SEO 和 URL 管理最佳实践
-description: 了解SEO最佳实践和建议，以便在AEM实施时实现这些目标。
-seo-description: 了解SEO最佳实践和建议，以便在AEM实施时实现这些目标。
+description: 了解SEO最佳实践以及在AEM实施中实现这些最佳实践的建议。
+seo-description: 了解SEO最佳实践以及在AEM实施中实现这些最佳实践的建议。
 uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
-translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+exl-id: d45fe856-4709-437b-b193-e8243a695d2c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3117'
 ht-degree: 97%
 
 ---
 
-
 # SEO 和 URL 管理最佳实践{#seo-and-url-management-best-practices}
 
-搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，需要解决许多AEM项目的SEO问题。
+搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，需要解决许多AEM项目中的SEO问题。
 
 本文档首先介绍了一些 [SEO 最佳实践](#seo-best-practices)以及在 AEM 实施上实现这些最佳实践的建议。然后，本文档更深入地介绍了第一节中提出的一些更加[复杂的实施步骤](#aem-configurations)。
 
@@ -218,7 +217,7 @@ Resource myPage = req.getResource();
 
 >[!NOTE]
 >
-> 在编辑页面属性](/help/sites-authoring/editing-page-properties.md#advanced)时，可以使用[别名属性设置`sling:alias`属性
+> 在编辑Page Properties](/help/sites-authoring/editing-page-properties.md#advanced)时，可以使用[Alias属性设置`sling:alias`属性
 
 #### /etc/map {#etc-map}
 
@@ -236,7 +235,7 @@ Resource myPage = req.getResource();
 
    (`resource.resolver.map.location`)
 
-* 默认值：
+* 默认为：
 
    `/etc/map`
 

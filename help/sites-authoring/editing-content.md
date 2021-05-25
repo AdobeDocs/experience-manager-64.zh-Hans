@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 07da66ab-dd5e-4ca8-ac6d-76fc81875fd9
-translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+exl-id: 26d1dea8-c225-4ef3-8429-bab585341c70
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 94%
 
 ---
-
 
 # 编辑页面内容{#editing-page-content}
 
@@ -42,7 +41,7 @@ ht-degree: 94%
 
 根据页面配置，用户可以通过页面工具栏访问相应的功能。
 
-![screen_shot_2018-03-22at11338](assets/screen_shot_2018-03-22at111338.png)
+![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
 
 工具栏允许访问许多选项。根据您当前的上下文和配置，某些选项可能不可用。
 
@@ -68,13 +67,13 @@ ht-degree: 94%
 
    打开 [Context Hub](/help/sites-authoring/ch-previewing.md)。仅在预览模式下可用。
 
-   ![screen_shot_2018-03-22at11543](assets/screen_shot_2018-03-22at111543.png)
+   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
 * **页面标题**
 
    它是纯信息性的。
 
-   ![screen_shot_2018-03-22at11554](assets/screen_shot_2018-03-22at111554.png)
+   ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
 
 * **模式选择器**
 
@@ -98,7 +97,7 @@ ht-degree: 94%
 
 如果页面是一个[工作流](/help/sites-authoring/workflows.md)或多个工作流的一部分，则在编辑该页面时，将在屏幕顶部的通知栏中显示此信息。
 
-![screen_shot_2018-03-22at11739](assets/screen_shot_2018-03-22at111739.png)
+![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -106,9 +105,9 @@ ht-degree: 94%
 
 通知会列出正在针对页面运行的工作流。如果用户参与了当前工作流步骤，还可以使用[影响工作流状态](/help/sites-authoring/workflows-participating.md)和获取更多工作流相关信息的选项，例如：
 
-* **完成** -打开完成工 **作项** 对话框
+* **完成**  — 打开完成工 **作项** 对话框
 
-* **委派** -打开“完成工 **作项”** 对话框
+* **委派**  — 打开完成工 **作项** 对话框
 
 * **查看详细信息** - 打开工作流的&#x200B;**详细信息**&#x200B;窗口
 
@@ -411,7 +410,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->“布局”操作仅限用于选定的组件。例如，如果您正在编辑一个组件的布局，然后单击另一个组件，则新选择的组件将显示标准编辑工具栏（而非布局工具栏），大小调整手柄以及模拟器工具栏将消失。
+>“布局”操作仅限用于选定的组件。例如，如果您正在编辑一个组件的布局，然后单击另一个组件，则会为新选择的组件显示标准编辑工具栏（而非布局工具栏），大小调整手柄以及模拟器工具栏将消失。
 >
 >如果您需要编辑影响到多个组件的总体页面布局，请切换到[布局模式](/help/sites-authoring/responsive-layout.md)。
 
@@ -447,13 +446,13 @@ ht-degree: 94%
 
    配置对话框。例如，“继承的段落系统”：
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
 ## 编辑页面模板 {#editing-the-page-template}
 
 如果页面基于[可编辑的模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以通过选择[“页面信息”菜单](/help/sites-authoring/author-environment-tools.md#page-information)中的&#x200B;**编辑模板**，轻松地切换到[模板编辑器](/help/sites-authoring/templates.md#editing-templates-template-authors)。
 
-如果页面基于[静态模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以使用工具栏上的[页面模式选择器](/help/sites-authoring/author-environment-tools.md#page-modes)切换至[设计模式](/help/sites-authoring/default-components-designmode.md)，以启用／禁用要在页面上使用的组件。
+如果页面基于[静态模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以使用工具栏上的[页面模式选择器](/help/sites-authoring/author-environment-tools.md#page-modes)切换到[设计模式](/help/sites-authoring/default-components-designmode.md)，以启用/禁用组件以在页面上使用。
 
 您在[列视图](/help/sites-authoring/basic-handling.md#column-view)或[列表视图](/help/sites-authoring/basic-handling.md#list-view)中选择页面时，可以轻松地查看该页面所基于的模板。
 
@@ -504,7 +503,7 @@ ht-degree: 94%
 
 进行创作时，可以使用页面编辑器右上角的图标进入预览模式：
 
-![chlimage_1-247](assets/chlimage_1-248.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 ### 查看已发布的项目 {#view-as-published}
 
@@ -562,7 +561,7 @@ AEM 允许您锁定页面，这样其他人就无法修改页面内容。当您�
 >
 >也可使用[键盘快捷键](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` 撤消页面编辑操作。
 >
->键盘快捷键`Ctrl-Y`也可用于重做页面编辑操作。
+>也可使用键盘快捷键`Ctrl-Y`重做页面编辑操作。
 
 >[!NOTE]
 >
@@ -607,4 +606,3 @@ AEM 会按照您执行操作的顺序来存储这些操作的历史记录，这�
 >[!NOTE]
 >
 >对文件和图像进行更改的历史记录将保留至少 10 个小时。但在超过此时间后，将无法保证可以撤消这些更改。您的管理员可以更改 10 个小时的默认保留时间。
-

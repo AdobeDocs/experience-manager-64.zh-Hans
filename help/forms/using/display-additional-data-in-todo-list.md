@@ -1,42 +1,41 @@
 ---
 title: 在ToDo列表中显示其他数据
 seo-title: 在ToDo列表中显示其他数据
-description: 如何自定义LiveCycleAEM Forms工作区的待办事项列表的显示，以显示除默认值之外的更多信息。
-seo-description: 如何自定义LiveCycleAEM Forms工作区的待办事项列表的显示，以显示除默认值之外的更多信息。
+description: 如何自定义LiveCycleAEM Forms工作区的待办事项列表的显示，以显示默认工作区以外的更多信息。
+seo-description: 如何自定义LiveCycleAEM Forms工作区的待办事项列表的显示，以显示默认工作区以外的更多信息。
 uuid: 4c678d9c-7794-4b62-8705-d62c7780c13f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
-translation-type: tm+mt
-source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+exl-id: 42d8472d-0eab-4cf9-a7c3-bf2775ee6bec
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
 
 ---
 
-
 # 在ToDo列表{#displaying-additional-data-in-todo-list}中显示其他数据
 
-默认情况下，AEM Forms工作区待办事项列表显示任务显示名称和说明。 但是，您可以添加其他信息，如创建日期、截止日期。 您还可以添加图标并更改显示屏的样式。
+默认情况下，AEM Forms工作区待办事项列表会显示任务显示名称和说明。 但是，您可以添加其他信息，如创建日期、截止日期。 您还可以添加图标并更改显示的样式。
 
 ![查看显示默认配置的HTML工作区待办事项选项卡](assets/html-todo-list.png)
 
-本文详细介绍了在ToDo列表中为每个任务添加要显示的信息的步骤。
+本文详细介绍了在“待办事项”列表中为每项任务添加要显示的信息的步骤。
 
-## 可以添加的内容{#what-can-be-added}
+## 可添加的内容{#what-can-be-added}
 
-可以添加服务器发送的`task.json`中的可用信息。 该信息可以添加为纯文本，也可以使用样式设置信息的格式。
+您可以在服务器发送的`task.json`中添加可用信息。 该信息可以添加为纯文本，也可以使用样式来设置信息的格式。
 
-有关JSON对象描述的详细信息，请参阅[此](/help/forms/using/html-workspace-json-object-description.md)文章。
+有关JSON对象描述的更多信息，请参阅[此](/help/forms/using/html-workspace-json-object-description.md)文章。
 
-## 显示任务{#displaying-information-on-a-task}上的信息
+## 显示任务{#displaying-information-on-a-task}的信息
 
 1. 按照[AEM Forms工作区自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)操作。
-1. 要显示任务的附加信息，必须在`translation.json`的任务块中添加相应的键值对。
+1. 要显示任务的其他信息，必须在`translation.json`的任务块中添加相应的键值对。
 
-   例如，更改`/apps/ws/locales/en-US/translation.json`表示英语：
+   例如，对英语更改`/apps/ws/locales/en-US/translation.json`:
 
    ```
    "task" : {
@@ -112,7 +111,7 @@ ht-degree: 0%
    >
    >为所有支持的语言添加相应的键值对。
 
-1. 例如，在任务块中添加信息：
+1. 例如，在任务块内添加信息：
 
    ```
    "stepname" : {
@@ -137,7 +136,7 @@ ht-degree: 0%
 
 ## 在HTML模板{#adding-entry-in-the-html-template}中添加条目
 
-最后，您需要在开发包中包含要添加到任务的每个属性的条目。 要创建一个，请参阅构建AEM Forms工作区代码。
+最后，您需要在开发包中为要添加到任务的每个属性包含一个条目。 要创建工作区，请参阅构建AEM Forms工作区代码。
 
 1. 复制 `task.html`:
 

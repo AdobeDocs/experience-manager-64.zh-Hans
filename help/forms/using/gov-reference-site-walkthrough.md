@@ -1,144 +1,143 @@
 ---
-title: We.Gov参考站点演练
-seo-title: We.Gov参考站点演练
-description: '请访问We.Gov参考网站演练，了解AEM Forms如何帮助政府管理个人信息。 '
-seo-description: '请访问We.Gov参考网站演练，了解AEM Forms如何帮助政府管理个人信息。 '
+title: We.Gov引用站点演练
+seo-title: We.Gov引用站点演练
+description: '请参阅We.Gov参考站点演练，了解AEM Forms如何帮助政府管理个人信息。 '
+seo-description: '请参阅We.Gov参考站点演练，了解AEM Forms如何帮助政府管理个人信息。 '
 uuid: 348f9067-28b5-47ed-8e83-0dbadeff0854
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 25a6d702-9995-4c63-99d8-3e5d710bb0c4
-translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+exl-id: c8ebd18b-fa24-4264-bd17-f553a2a784d9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2737'
 ht-degree: 0%
 
 ---
 
-
-# We.Gov参考站点演练{#we-gov-reference-site-walkthrough}
+# We.Gov引用站点演练{#we-gov-reference-site-walkthrough}
 
 ## 先决条件{#pre-requisite}
 
-按照[设置和配置AEM Forms参考站点](/help/forms/using/setup-reference-sites.md)中的说明设置您的We.Gov参考站点。
+按照[设置和配置AEM Forms引用站点](/help/forms/using/setup-reference-sites.md)中所述设置您的We.Gov引用站点。
 
-## 参考站点方案{#reference-site-scenario}
+## 引用站点方案{#reference-site-scenario}
 
-We.Gov是一个州立组织，允许养父母在收养孩子时报到抚养孩子。 该站点管理以下内容：
+We.Gov是一个国有组织，允许养父母在收养孩子时报养子女。 网站可管理以下内容：
 
 * 申请人、养父母的资格
-* 申请人的个人和专业详细信息（如果申请人有资格获得儿童支持）
-* 被收养儿童的个人详情
+* 申请人的个人和专业细节（如果申请人有资格获得儿童抚养费）
+* 收养儿童的个人细节
 
-   申请人可以提供多个子项的详细信息
-* 申请人可在其中获得子女支持福利的银行帐户详细信息
-* 收回应用程序费
+   申请人可以提供一个以上子女的详细信息
+* 申请人可领取子女抚养费的银行账户详情
+* 收回申请费
 * 应用程序评估
-* 申请的批准
-* 与申请人的自动通信
+* 批准申请
+* 自动与申请人沟通
 
-申请提交并支付费用后，申请人将收到来自组织的一封电子邮件，其中附有提交申请的确认书。
+申请提交并支付费用后，申请人会收到组织发来的一封电子邮件，其中附有所提交申请的确认。
 
-We.Gov组织收到该应用程序。 组织会对申请进行评估，并批准正版申请。
+We.Gov组织接收应用程序。 该组织会对申请进行评估，并批准正版的申请。
 
-申请获得批准后，申请人会从We.Gov网站收到一封电子邮件。 电子邮件中的&#x200B;**视图文档**&#x200B;选项链接到具有申请人注册详细信息的文档。
+申请获得批准后，申请人会从We.Gov网站收到一封电子邮件。 电子邮件中的&#x200B;**查看文档**&#x200B;选项链接到包含申请人注册详细信息的文档。
 
-以下信息图显示了We.Gov参考站点方案的分步工作流程。
+以下信息图显示了We.Gov引用网站方案的分步工作流程。
 
 ![workflow_aem_gov_2](assets/workflow_aem_gov_2.png)
 
-此方案涉及以下角色：
+方案涉及以下角色：
 
-* 萨拉·罗斯，要求抚养孩子的养父母
-* 乔，收养的孩子
-* We.Gov审批部门主管Gloria Rios
-* 负责应用评估的现场代理Conard Simms
+* 萨拉·罗斯，一位要求抚养孩子的养父母
+* 乔，领养的孩子
+* We.Gov审批部门负责人Gloria Rios
+* 负责申请评估的现场代理Conard Simms
 
-## Sarah开始进行资格检查{#sarah-initiates-her-eligibility-check}
+## Sarah将启动资格检查{#sarah-initiates-her-eligibility-check}
 
-申请人可以检查申请儿童支持福利的资格。 该站点允许用户回答问题，以便确定他们的应用程序是否有资格享受优惠。 养父母莎拉是申请者。 资格表是We.Gov站点的儿童支持申请服务的一部分。 要检查她的资格，Sarah单击We.Gov网站上的&#x200B;**[!UICONTROL “儿童支持”]**。 在“子支持”页面中，Sarah单击&#x200B;**[!UICONTROL 检查您的资格]**。
+申请人可以检查申请儿童抚养费的资格。 该网站允许用户回答问题，以便确定其应用程序是否符合福利条件。 养父母莎拉是养父母的潜在申请人。 资格表是We.Gov网站的“儿童支持申请”服务的一部分。 为了检查她的资格，Sarah点击了We.Gov网站上的&#x200B;**[!UICONTROL 儿童支持]**。 在“子项支持”页面中，Sarah单击&#x200B;**[!UICONTROL 检查您的资格]**。
 
-除了上述方法之外，Sarah还可以单击主页上的&#x200B;**[!UICONTROL 开始]**。 Sarah被导航到“所有应用程序”页，在该页上，她可以单击“**[!UICONTROL Application for Child Support Services]**”下的“应用”。 然后，Sarah将进入资格检查。
+除了上述方法之外，Sarah还可以单击主页上的&#x200B;**[!UICONTROL Get Started]**。 Sarah导航到“所有应用程序”页面，在该页面中，她可以单击&#x200B;**[!UICONTROL Application for Child Support Services]**&#x200B;下的“应用”。 然后，莎拉被带到资格检查。
 
-在“检查子级支持资格”页面中，Sarah会被询问一组问题，以确定她是否有资格享受子级支持福利。 通过这些问题，她被问到：
+在“检查子女支持资格”页面中，向Sarah提出一系列问题，以确定她是否有资格享受子女支持福利。 通过这套问题，她被问到：
 
-* 如果她是孩子的监护人
+* 如果她是孩子的监护父母
 * 如果她和孩子生活在GX状态
 * 儿童的年龄组和儿童的教育。
 
-Sarah回答这些问题，并验证其资格。 她的答案决定她是否有资格获得儿童抚养权。
+莎拉回答了这些问题，她的资格已得到验证。 她的回答决定了她是否有资格获得儿童抚养费。
 
-Sarah被告知她有资格获得儿童支持，申请费为25美元。
+Sarah被告知她有资格获得儿童抚养费，申请费为25美元。
 
 ### 工作原理{#how-it-works}
 
-Sarah的资格通过使用规则编辑器创建的资格障碍进行验证。 规则编辑器允许您指定在申请人填写申请表之前满足的条件。 当申请人Sarah符合所有资格条件时，她将登录申请表。
+Sarah的资格通过使用规则编辑器创建的资格障碍进行验证。 规则编辑器允许您指定在申请人填写申请表之前满足的条件。 当申请人Sarah符合所有资格条件时，她就登上了申请表。
 
-资格检查是子支持应用程序自适应表单的一部分。 规则在以下情况下验证资格：
+资格检查是子支持申请自适应表的一部分。 规则将在以下情况下验证资格：
 
 * 申请人是监护人的父母
-* 申请人和儿童处于GX状态
-* 申请人负责儿童的日常护理
-* 儿童获得支助服务的年龄在16岁以下。
+* 申请人和儿童留在GX状态
+* 申请人对儿童进行日常照料
+* 获得支助服务的儿童年龄在16岁以下。
 
-### 亲自查看{#see-it-yourself}
+### 自己看{#see-it-yourself}
 
-在浏览器中，打开`https://<hostname>:<PublishPort>/content/we-gov/en.html`。 在We.Gov站点中，单击“子支持”。 在“子支持”页面中，单击“检查您的资格”。
+在浏览器中，打开`https://<hostname>:<PublishPort>/content/we-gov/en.html`。 在We.Gov网站中，单击子项支持。 在“子项支持”页面中，单击检查您的资格。
 
-要查看规则：
+要查看规则，请执行以下操作：
 
-1. 在创作实例的编辑模式下打开表单。 URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`.
-1. 选择一个组件，然后单击![edit-rules](assets/edit-rules.png)。
+1. 在创作实例上以编辑模式打开表单。 URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`.
+1. 选择组件并单击![edit-rules](assets/edit-rules.png)。
 
-   此时将打开规则编辑器，列出表单中应用的所有规则。
+   此时将打开规则编辑器，其中列出了表单中应用的所有规则。
 
 1. 在左侧面板中，单击规则`passMsg`和`failMsg`以了解资格检查的工作方式。
 
-## Sarah开始她的儿童支持申请{#sarah-starts-her-application-for-child-support}
+## Sarah启动她的儿童支持申请{#sarah-starts-her-application-for-child-support}
 
-Sarah在被告知她有资格获得儿童支持后，单击&#x200B;**[!UICONTROL 开始应用程序]**。\
-在“子项支持服务应用程序”页中，Sarah在以下各节中提供了详细信息：
+Sarah在被告知她有资格获得儿童抚养费后，单击&#x200B;**[!UICONTROL 启动应用程序]**。\
+在“子项支持服务应用程序”页面中，Sarah提供了以下部分的详细信息：
 
-* **[!UICONTROL 关于申请人]**:让Sarah在本节中提供详细信息。
+* **[!UICONTROL 关于申请人]**:让Sarah在此部分中提供详细信息。
 
-* **[!UICONTROL 子信息]**:让Sarah提供儿童信息，该信息由支持服务覆盖。
+* **[!UICONTROL 子信息]**:让Sarah提供儿童信息，该信息由支持服务提供。
 
-* **[!UICONTROL 付款]**:让Sarah提供她的银行详细信息，We.Gov可以在其中按月支付支持赔偿。
+* **[!UICONTROL 付款]**:让莎拉提供她的银行详情，We.Gov可以在这些银行存放每月的支持补偿。
 
-* **[!UICONTROL 费用支付]**:让Sarah提供她的信用卡详细信息以支付申请费。
+* **[!UICONTROL 费用支付]**:让Sarah提供她的信用卡详细信息，以支付申请费。
 
-默认情况下，Sarah将转至&#x200B;**[!UICONTROL 关于申请人]**&#x200B;部分。
+默认情况下，Sarah会转到&#x200B;**[!UICONTROL About Applicant]**&#x200B;部分。
 
 ![桌面上的子支持应用程序](assets/desktop.png)
 
-Sarah可以随时单击&#x200B;**[!UICONTROL 稍后回来]**&#x200B;并继续使用她的应用程序。 当她单击&#x200B;**[!UICONTROL 稍后回来]**&#x200B;时，她的进度将保存为草稿，并且她可以选择通过电子邮件发送草稿。
+Sarah随时可以单击&#x200B;**[!UICONTROL 稍后返回]**，然后使用其应用程序继续。 当她单击&#x200B;**[!UICONTROL 稍后返回]**&#x200B;时，她的进度将保存为草稿，并且她可以选择通过电子邮件发送草稿。
 
-当她单击&#x200B;**[!UICONTROL “发送电子邮件”]**&#x200B;时，她会收到一封电子邮件，其中包含指向表单草稿的链接。
+当她单击&#x200B;**[!UICONTROL 发送电子邮件]**&#x200B;时，她会收到一封电子邮件，其中包含指向其表单草稿的链接。
 
-We.Gov网站上的子支持表单使用自适应表单。 她可以使用电子邮件中的链接，并在移动设备上填写表单。
+We.Gov网站上的子支持表单使用自适应表单。 她可以使用电子邮件中的链接，并在移动设备上填写表格。
 
 >[!NOTE]
 >
->“从电子邮件继续”工作流仅适用于已登录的用户。 在参考站点场景中，确保添加了用户Sarah Rose。 Sarah的登录凭据为`srose/password`。
+>从电子邮件继续工作流仅适用于已登录的用户。 在参考站点方案中，确保添加了用户Sarah Rose。 Sarah的登录凭据为`srose/password`。
 
 ![mob1](assets/mob1.png)
 
-Sarah可以在任何部分提供详细信息，但只有在所有部分提供所需信息后，才接受申请费。 如果申请不支付费用，则该申请不完整，标有星号的字段为必填字段。
+Sarah可以在任何部分提供详细信息，但只有在所有部分都提供必需的信息后，才会接受申请费。 没有付费的应用程序不完整，并且需要标有星号的字段。
 
-### <strong>Sarah提供她的信息</strong> {#strong-sarah-provides-her-information-strong}
+### <strong>莎拉提供她的信息</strong> {#strong-sarah-provides-her-information-strong}
 
-在Sarah单击&#x200B;**[!UICONTROL “开始申请]**”后，她将转到“儿童支持服务申请”页的“申请人信息”部分。 在“申请人信息”下，Sarah浏览标签并为申请提供个人信息。 她单击&#x200B;**[!UICONTROL Next]**&#x200B;浏览选项卡。
+在Sarah单击&#x200B;**[!UICONTROL 启动申请]**&#x200B;后，她将转到“申请儿童支持服务”页面的“申请人信息”部分。 在“申请人信息”下，Sarah浏览选项卡，并为申请提供个人信息。 她单击&#x200B;**[!UICONTROL Next]**&#x200B;以浏览选项卡。
 
-在“申请人信息”下，她需要在以下选项卡下提供详细信息：
+在“申请人信息”下，要求她在以下选项卡下提供详细信息：
 
 * **[!UICONTROL 基本信息]**
 
-在“基本信息”下，Sarah提供她的身份验证和个人信息。 Sarah的个人信息包括她的姓名、电子邮件ID和社会保险号。
+在“基本信息”下，Sarah提供了她的身份证明和个人信息。 Sarah的个人信息包括她的姓名、电子邮件ID和社保号码。
 
 * **[!UICONTROL 关系]**
 
-   在“关系”下，Sarah输入有关婚姻状况的信息。
+   在“关系”下，莎拉输入了她婚姻状况的信息。
 
 * **[!UICONTROL 附加信息]**
 
@@ -146,38 +145,38 @@ Sarah可以在任何部分提供详细信息，但只有在所有部分提供所
 
 ### Sarah提供子项信息{#sarah-provides-child-information}
 
-Sarah提供个人信息并单击&#x200B;**[!UICONTROL Next]**&#x200B;后，她将转到“子信息”部分。
+在Sarah提供其个人信息并单击&#x200B;**[!UICONTROL Next]**&#x200B;后，将转到“子信息”部分。
 
-在“子信息”部分中，她提供以下详细信息：
+在“子项信息”部分，她提供了以下详细信息：
 
-* 申请儿童支助服务的儿童数
-* 儿童姓名、社会保险号、出生日期和出生地
+* 申请儿童支助服务的儿童人数
+* 儿童的姓名、社会保障号码、出生日期和出生地
 
-如果Sarah选择多个孩子，她会得到额外的表格，表格中包含相同的详细信息。\
-莎拉选择她的独生子乔，并输入他的名字。
+如果莎拉选择多个孩子，她会获得额外的表格，表格中的细节与她的表格相同。\
+莎拉选择她的独生子乔，然后输入他的名字。
 
 ### Sarah提供付款信息{#sarah-provides-payment-information}
 
-在Sarah提供被收养儿童（或儿童）的信息并单击&#x200B;**[!UICONTROL Next]**&#x200B;后，她将转到&#x200B;**[!UICONTROL 付款信息]**&#x200B;部分。
+在Sarah提供被收养的子女的信息并点击&#x200B;**[!UICONTROL Next]**&#x200B;后，她将转到&#x200B;**[!UICONTROL 付款信息]**&#x200B;部分。
 
-在“付款信息”部分中，她提供了银行帐户详细信息，可在其中获得儿童支持福利。\
-她输入她10位的银行帐号。
+在“付款信息”部分中，她提供了银行帐户详细信息，可在其中获得子女支持福利。\
+她输入了她10位的银行帐号。
 
-## Sarah支付申请费并签署表格{#sarah-pays-the-application-fee-and-signs-the-form}
+## Sarah支付申请费并签字{#sarah-pays-the-application-fee-and-signs-the-form}
 
-在Sarah同意申请的条款和条件后，她支付申请费25美元。 处理申请需要支付申请费。\
-Sarah输入她的信用卡详细信息并单击&#x200B;**[!UICONTROL 立即付款]**。 支付费用后，将显示PDF版本的应用程序并带有签名字段。
+莎拉同意申请的条款和条件后，她支付了25美元的申请费。 处理她的申请需要支付申请费。\
+Sarah输入她的信用卡详细信息并单击&#x200B;**[!UICONTROL 立即付款]**。 支付费用后，将显示应用程序的PDF版本，并带有签名字段。
 
 ![sarah-sign-1](assets/sarah-sign-1.png)
 
-Sarah可以选择输入、使用draw进行手写、插入签名图像，或使用手机的触摸屏来绘制签名。 Sarah键入自己的姓名并单击“单击以签名”。
+Sarah可以选择输入、使用绘图进行手写、插入签名图像，或者使用手机触摸屏来绘制她的签名。 Sarah键入她的姓名并单击“点击以签名”。
 
-她的申请被提交到We.Gov网站。
+她的申请已提交到We.Gov网站。
 
 ### <strong>Sarah收到确认电子邮件</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
-Sarah支付申请费后，她会从We.Gov网站收到一封确认电子邮件。\
-We.Gov处理申请，Sarah被告知，在申请获得批准后，她将每月获得报酬。
+Sarah支付申请费后，她会收到We.Gov网站发来的确认电子邮件。\
+We.Gov处理申请，Sarah被告知，她在申请获得批准后将每月获得赔偿。
 
 ![sarah-ack-email](assets/sarah-ack-email.png)
 
@@ -185,19 +184,19 @@ We.Gov处理申请，Sarah被告知，在申请获得批准后，她将每月获
 
 子支持应用程序使用顶部选项卡、向导和折叠面板等面板布局的组合来创建体验。 它使用名为We.Gov子模板的表单模板。
 
-申请人可以跨部分移动以填写表单的不同组件。 申请人填写表单、提交表单、同意条款和条件并支付费用时，将启动自定义工作流。 自定义工作流向确认提交申请的申请人发送自动电子邮件。 申请书转送组织有关部门核准。
+申请人可以跨部分移动，以填写表单的不同部分。 当申请人填写表格、提交表格、同意条款和条件并支付费用时，将启动自定义工作流。 自定义工作流向确认提交申请的申请人发送自动电子邮件。 申请转送组织有关部门核准。
 
-表单的布局在Gov子支持服务主题中指定。 样式包括组件样式、页面背景、组件错误状态格式和字体样式。
+表单的布局在Gov子项支持服务主题中指定。 样式包括组件样式、页面背景、组件的错误状态格式和字体样式。
 
-资格检查使用在表单中指定的规则。 它使用下面指定的有效性检查：
+资格检查使用表单中指定的规则。 它使用下面指定的有效性检查：
 
 `SHOW passMsgWHEN (Does the child live in the state of GX? is equal to Yes) AND (Do you live in the state of GX? is equal to Yes) AND ( (Who has the main day-to-day care of the child? is equal to You) AND (Are you: is equal to The custodial parent) ) AND (Is the child you are applying for: is equal to Under 16 years) ELSE Hide`
 
 `HIDE failMsg WHEN (Does the child lives in the state of GX? is equal to Yes) AND ( (Do you live in the state of GX? is equal to Yes) AND (Who has the main day-to-day care of the child? is equal to You) ) AND (Is the child you are applying for: is equal to Under 16 years) AND (Are you: is equal to The custodial parent) ELSE Show`
 
-### 亲自查看{#see-it-yourself-1}
+### 自己看{#see-it-yourself-1}
 
-在您的浏览器中，打开`https://<hostname>:<PublishPort>/content/forms/af/we-gov/child-support/css.html`并填写所需的信息。 在填写所需信息、支付费用并签署文档后提交申请时，您会收到确认电子邮件。
+在浏览器中，打开`https://<hostname>:<PublishPort>/content/forms/af/we-gov/child-support/css.html`并填写所需信息。 在填写所需信息、支付费用并签署文档后提交申请时，您会收到确认电子邮件。
 
 请在此处查看We.Gov子模板：`https://<hostname>:<AuthorPort>/editor.html/conf/we-gov/settings/wcm/templates/we-gov-child-template/structure.html`
 
@@ -209,124 +208,124 @@ We.Gov处理申请，Sarah被告知，在申请获得批准后，她将每月获
 
    URL: `https://<hostname>:<AuthorPort>/editor.html/content/forms/af/we-gov/child-support/css.html`
 
-1. 选择一个组件，然后点按![edit-rules](assets/edit-rules.png)。 所有规则都列在规则编辑器中，包括上面列出的规则。
+1. 选择组件，然后点按![edit-rules](assets/edit-rules.png)。 所有规则都在规则编辑器中列出，包括上面列出的规则。
 
 ## Gloria接收应用程序{#gloria-receives-the-application}
 
-We.Gov的审批主管Gloria可以视图、批准或拒绝提交的申请。 AEM Inbox使她能够在一个位置查看所有提交的应用程序。
+We.Gov审批负责人Gloria可以查看、批准或拒绝提交的申请。 AEM收件箱可让她在一个位置查看所有提交的应用程序。
 
 ### 工作原理{#how-it-works-2}
 
-当Sarah填充并提交子支持应用程序时，将创建该应用程序的PDF或文档记录并发送到Gloria Rios的收件箱。 Gloria可以视图提交的申请，并接受或拒绝它。
+当Sarah填写并提交子支持应用程序时，将创建应用程序的PDF或记录文档，并将其发送到Gloria Rios的收件箱。 Gloria可以查看提交的申请，并接受或拒绝。
 
-### 亲自查看{#see-it-yourself-2}
+### 自己看{#see-it-yourself-2}
 
-打开页面 `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. 在该页上，点按&#x200B;**[!UICONTROL 登录]**，选中&#x200B;**[!UICONTROL 以代表身份登录]**&#x200B;复选框，使用grios/password作为Gloria Rios的用户名／密码登录AEM收件箱。 出现子支持应用程序。 有关使用AEM收件箱管理以表单为中心的工作流任务的信息，请参阅[在AEM收件箱中管理Forms应用程序和任务](/help/forms/using/manage-applications-inbox.md)。
+打开页面 `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. 在页面上，点按&#x200B;**[!UICONTROL 登录]**，选中&#x200B;**[!UICONTROL 登录为代表]**&#x200B;复选框，使用grios/password作为Gloria Rios的用户名/密码登录到AEM收件箱。 出现子支持应用程序。 有关使用AEM收件箱执行以表单为中心的工作流任务的信息，请参阅[在AEM收件箱中管理Forms应用程序和任务](/help/forms/using/manage-applications-inbox.md)。
 
-![We.Gov refsite中的Gloria收件箱](assets/gloria-inbox.png)
+![We.Gov refsite中Gloria的收件箱](assets/gloria-inbox.png)
 
-Gloria可以从应用程序仪表板查看、批准或拒绝应用程序。
+Gloria可以在应用程序仪表板中查看、批准或拒绝应用程序。
 
 ### 工作原理{#how-it-works-3}
 
-We.Gov的审批主管Gloria打开了她的AEM收件箱。 她在列表任务时看到了评论任务。 她打开，视图评论任务。
+We.Gov审批负责人Gloria打开了她的AEM收件箱。 她在任务列表中看到一个审阅任务。 她打开并查看审阅任务。
 
-她看到表单的PDF中填满了Sarah与Sarah上传的文档一起输入的详细信息。\
-Gloria可以批准或拒绝该应用程序。 但是，Gloria单击&#x200B;**[!UICONTROL “需要评估”]**&#x200B;以对应用程序进行评估。
+她看到表格的PDF文件，里面填满了Sarah输入的详细信息以及Sarah上传的文件。\
+Gloria可以批准或拒绝该申请。 但是，Gloria单击&#x200B;**[!UICONTROL 评估要求]**&#x200B;以评估申请。
 
-![Gloria发送评估](assets/gloria-sends-assessment.png)
+![gloria-sends-assessment](assets/gloria-sends-assessment.png)
 
-Sarah的应用程序是AEM工作流程的一个起点。 在提交子支持应用程序表单时，它将启动AEM工作流。 AEM工作流程为Gloria创建一个任务，它显示在她的AEM收件箱中。 当Gloria请求现场评估时，将为现场代理创建新任务。
+Sarah的应用程序是AEM工作流的起点。 在提交子支持应用程序表单时，它会启动AEM工作流。 AEM工作流会为Gloria创建一个任务，该任务会显示在其AEM收件箱中。 当Gloria请求现场评估时，将为现场代理创建新任务。
 
-### 亲自查看{#see-it-yourself-3}
+### 自己看{#see-it-yourself-3}
 
-如果配置完成，AEM工作流会在提交表单后立即开始。 使用Gloria的凭据登录到收件箱。
+如果配置完成，则在提交表单后，AEM工作流会立即启动。 使用Gloria的凭据登录收件箱。
 
-访问位于https://&lt;***hostname***>的收件箱：&lt;***PublishPort***/content/we-gov/en.html。 在页面上，点按&#x200B;**[!UICONTROL 登录]**，选中&#x200B;**[!UICONTROL 作为代表登录]**&#x200B;复选框，使用Gloria的默认凭据：
+访问位于https://***hostname***>的收件箱：***PublishPort***>/content/we-gov/en.html。 在页面上，点按&#x200B;**[!UICONTROL 登录]**，选中&#x200B;**[!UICONTROL 登录为代表]**&#x200B;复选框，使用Gloria的默认凭据：
 
 * 用户名：格里奥
-* 密码：口令
+* 密码：密码
 
-在她的AEM收件箱中，Sarah的应用程序被添加为评论任务。 选择任务，然后单击“**需要评估**”以继续执行下一步。
+在她的AEM收件箱中，Sarah的应用程序将添加为审阅任务。 选择任务，然后单击&#x200B;**需要评估**&#x200B;以继续执行下一步。
 
 ### Conard获取评估任务{#conard-assessment-task}
 
-当Gloria单击&#x200B;**[!UICONTROL “需要评估”]**&#x200B;时，Conard将在其AEM收件箱中获得审阅任务。 任务是AEM工作流模型中定义的下一步。 他看到评论任务并打开它。
+当Gloria单击&#x200B;**[!UICONTROL 评估必需]**&#x200B;时，Conard将在其AEM收件箱中获取审阅任务。 任务是在工作流模型中定义的AEM工作流的下一步。 他看到审阅任务并打开它。
 
 Conard将获取申请人评估任务，如下所示。
 
 ![conrad-inbox](assets/conrad-inbox.png)
 
-子支持评估是与任务关联的表单。 他得到了莎拉的详细信息，以及支持文档(附在任务详细信息中)。 Conard将填写设备上的字段中的评估表单并提交以重新评估。
+子支持评估是与任务关联的表单。 他得到了莎拉的细节，以及支持文件（附在任务细节中）。 Conard在设备上填写字段中的评估表单，并提交以进行重新评估。
 
-Conard验证了Sarah提供的所有细节，Sarah签署了评估书。 AEM Forms可以获取地点和时间戳，并将其添加到签名中。
+Conard核实了Sarah提供的所有细节，Sarah签了评估书。 AEM Forms可以获取位置和时间戳，并将它们添加到签名中。
 
-![submit-for-reevaluation](assets/submit-for-re-evaluation.png)
+![提交以供重新评估](assets/submit-for-re-evaluation.png)
 
-Conard单击&#x200B;**[!UICONTROL 提交以重新评估]**,AEM工作流将评估提交给We.Gov组织。
+控制台单击&#x200B;**[!UICONTROL 提交以进行重新评估]**,AEM工作流将评估提交给We.Gov组织。
 
 ### 工作原理{#how-it-works-4}
 
-当Gloria请求评估时，将启动AEM工作流中的下一步，并将评估任务添加到Conard的收件箱中。 康纳德是现场工作者角色。
+当Gloria请求评估时，将启动AEM工作流中的下一步，并将评估任务添加到Conard的收件箱中。 康纳德是现场工作人员。
 
-康纳德拜访了莎拉的住处，确认了莎拉提供的信息是真实的，并填写了评估表。 Conard可以访问Sarah填写的完整表单的PDF。
+康纳德拜访了莎拉的住处，核实了莎拉提供的信息是真实的，并填写了评估表。 Conard可以访问Sarah填写的完整表单的PDF。
 
-### 亲自查看{#see-it-yourself-4}
+### 自己看{#see-it-yourself-4}
 
 在平板电脑上打开AEM收件箱，然后使用Conard的凭据登录。
 
 Conard的默认凭据为：
 
 * 用户名：csimms
-* 密码：口令
+* 密码：密码
 
-您可以在收件箱中看到新的评估请求任务。 提交完成的评估并继续执行下一步。
+您可以在收件箱中看到新的“评估请求”任务。 提交已完成的评估并继续执行下一步。
 
-### Gloria审查评估并批准应用程序{#gloria-reviews-the-assessment-and-approves-the-application}
+### Gloria审查评估并批准申请{#gloria-reviews-the-assessment-and-approves-the-application}
 
-在Conard提交评估后，Gloria在其收件箱中看到“审阅”任务。 她选择并打开&#x200B;**[!UICONTROL Review]**。
+在Conard提交评估后，Gloria会在其收件箱中看到“审阅”任务。 她选择并打开&#x200B;**[!UICONTROL Review]**。
 
-![gloriabox-1](assets/gloriainbox-1.png)
+![gloriinbox-1](assets/gloriainbox-1.png)
 
-在“任务详细信息”下，Gloria将Last Action Taked视为“Submit for Re-evaluation”（由Conard提交）。 格洛丽亚看到科纳德·西姆斯评估了申请。
+在“任务详细信息”下，Gloria将“上次采取的操作”视为“提交以进行重新评估”（由Conard）。 格洛丽亚认为科纳德·西姆斯评估了申请。
 
-![光荣授权](assets/gloriaapproves.png)
+![格洛里韦特](assets/gloriaapproves.png)
 
 ### 工作原理{#how-it-works-5}
 
-在Conard提交评估后，Gloria在其收件箱中看到“审阅”任务。 她选择并打开“审阅”。 在“任务详细信息”下，Gloria看到Conard的评估评论，即“一切按顺序找到”。
+在Conard提交评估后，Gloria会在其收件箱中看到“审阅”任务。 她选择并打开“审阅”。 在“任务详细信息”下，Gloria看到Conard的评估评论，即“发现的所有内容都按顺序排列”。
 
 格洛丽亚批准了申请。
 
-### 亲自查看{#see-it-yourself-5}
+### 自己看{#see-it-yourself-5}
 
-打开收件箱，然后使用Gloria的凭据登录。 名为“审阅”的新任务会显示在收件箱中。
+打开收件箱，然后使用Gloria的凭据登录。 收件箱中会显示一个名为Review的新任务。
 
-打开任务以查看上次执行的操作的状态。 根据评估批准申请。
+打开任务以查看“上次执行的操作”的状态。 根据评估，批准申请。
 
 ## Sarah收到一封批准电子邮件{#sarah-receives-an-approval-email}
 
-Gloria批准该申请后，Sarah收到We.Gov发来的一封电子邮件，表明她的申请已获得批准。
+Gloria批准该申请后，Sarah收到We.Gov发来的一封电子邮件，表明她的申请获得批准。
 
-电子邮件中的&#x200B;**[!UICONTROL 视图文档]**&#x200B;按钮链接到她的注册详细信息。 Sarah单击&#x200B;**[!UICONTROL 视图文档。]**
+电子邮件中的&#x200B;**[!UICONTROL 查看文档]**&#x200B;按钮可链接到其注册详细信息。 Sarah单击&#x200B;**[!UICONTROL 查看文档。]**
 
-![approval-agtrory-kit-email](assets/approval-enrolment-kit-email.png)
+![approval-registration-kit-email](assets/approval-enrolment-kit-email.png)
 
-登记文档列表详细信息，如参考ID、子项涵盖、开始日期、银行帐户号、付款频率和付款金额。
+登记单据列出诸如参考ID、子项覆盖、启动日期、银行帐号、付款频率和付款金额等详细信息。
 
-![sarah-enrment-details](assets/sarah-enrollment-details.png)
+![sarah-enrollment-details](assets/sarah-enrollment-details.png)
 
-Sarah可以视图她在同一页面上传的文档。
+Sarah可以查看她在同一页面上上传的文档。
 
-![上传的文档](assets/uploaded-documents.png)
+![已上传文档](assets/uploaded-documents.png)
 
 ### 工作原理{#how-it-works-6}
 
 Gloria批准该应用程序后，Sarah会收到一封自动电子邮件，其中包含指向注册文档的链接。
 
-注册文档是一种交互式通信，可在任何设备上查看。 它包含儿童支持服务的详细信息以及Sarah提供的信息。
+注册文档是交互式通信，可在任何设备上查看。 它包含儿童支持服务的细节，以及Sarah提供的信息。
 
-### 亲自查看{#see-it-yourself-6}
+### 自己看{#see-it-yourself-6}
 
 检查您为自动电子邮件配置的电子邮件客户端，其中包含指向注册文档的链接。
 
@@ -334,32 +333,31 @@ Gloria批准该应用程序后，Sarah会收到一封自动电子邮件，其中
 
 ## We.Gov分析应用程序{#we-gov-analyzes-the-performance-of-the-application}的性能
 
-We.Gov会不时检查其子支持服务应用程序的性能，以检查客户可能面临的任何问题。 他们使用此分析对儿童支持服务应用程序中所需的更改做出明智决策，以增强用户体验、降低表单弃用率，从而提高转化率。 他们利用AEM Forms和Adobe Analytics的融合来分析。 以下图像描绘了其分析仪表板。
+We.Gov会不时检查其子支持服务应用程序的性能，以检查客户可能遇到的任何问题。 他们利用此分析对子支持服务应用程序中所需的更改做出明智决策，以增强用户体验，降低表单放弃率，从而提高转化。 他们利用AEM Forms与Adobe Analytics的集成进行分析。 下图描述了其分析功能板。
 
-![child-support-analytics-仪表板](assets/child-support-analytics-dashboard.png)
+![child-support-analytics-dashboard](assets/child-support-analytics-dashboard.png)
 
 ### 工作原理{#how-it-works-7}
 
-使用Adobe Analytics跟踪子支持服务应用程序表单的性能指标。 有关配置Adobe Analytics和查看报告的详细信息，请参阅[配置表单和文档的分析](/help/forms/using/configure-analytics-forms-documents.md)。
+使用Adobe Analytics跟踪子支持服务应用程序表单的性能量度。 有关配置Adobe Analytics和查看报表的更多信息，请参阅[为表单和文档配置分析](/help/forms/using/configure-analytics-forms-documents.md)。
 
-### 亲自查看{#see-it-yourself-7}
+### 自己看{#see-it-yourself-7}
 
-为了视图和浏览分析报告，我们将在参考站点为子支持服务应用程序提供种子数据。 在使用种子数据之前，请参阅[配置分析](/help/forms/using/setup-reference-sites.md#configureanalytics)。 在创作实例中执行以下步骤，将报表视图为种子数据：
+为了便于您查看和浏览分析报告，我们将在参考站点中为子支持服务应用程序提供种子数据。 在使用种子数据之前，请参阅[配置Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics)。 在创作实例中执行以下步骤以查看包含种子数据的报表：
 
-1. 转到位于https://&lt;*hostname*&#x200B;的&#x200B;**[!UICONTROL Forms和文档]** UI:&lt;*AuthorPort*/aem/forms.html/content/dam/formsanddocuments。
+1. 转到&#x200B;**[!UICONTROL Forms &amp; Documents]** UI，网址为https://&lt;*hostname*>:*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments。
 
-1. 单击打开&#x200B;**We.Gov**&#x200B;文件夹。
-1. 选择&#x200B;**[!UICONTROL 子支持服务应用程序]**&#x200B;自适应表单，然后单击工具栏中的&#x200B;**[!UICONTROL 启用分析]**。
+1. 单击以打开&#x200B;**We.Gov**&#x200B;文件夹。
+1. 选择&#x200B;**[!UICONTROL 子支持服务应用程序]**&#x200B;自适应表单，然后单击工具栏中的&#x200B;**[!UICONTROL 启用Analytics]**。
 
-1. 再次选择表单，然后单击工具栏中的&#x200B;**[!UICONTROL 分析报告]**&#x200B;以生成报告。 您最初会看到一个空白报告。
+1. 再次选择表单，然后单击工具栏中的&#x200B;**[!UICONTROL Analytics报表]**&#x200B;以生成报表。 您最初会看到一个空白报表。
 
-要使用种子数据生成分析报告，请执行以下操作：
+要生成包含种子数据的分析报表，请执行以下操作：
 
-1. 在CRXDE lite的地址浏览器中，键入：**/apps/we-gov/demo-artifacts/analyticsTestData/Child支持服务分析测试数据**
+1. 在CRXDE Lite的地址浏览器中，键入：**/apps/we-gov/demo-artics/analyticsTestData/Child支持服务Analytics测试数据**
 1. 在左侧目录结构中选择种子数据。
-1. 多次单击所选文件以在右侧面板中打开其内容。
+1. 双击所选文件以在右侧面板中打开其内容。
 1. 复制测试数据文件中的所有内容。
 1. 在CRXDE中，导航到：**/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsevendays**
-1. 在“Properties（属性）”下的“Analyticsdata（分析数据）”字段中，粘贴测试数据文件的复制内容。
-1. 现在，再次为&#x200B;**[!UICONTROL 子支持服务应用程序]**&#x200B;生成分析报告。 您可以在生成的报告中查看种子数据。
-
+1. 在属性下的Analyticsdata字段中，粘贴测试数据文件的复制内容。
+1. 现在，再次为&#x200B;**[!UICONTROL 子支持服务应用程序]**&#x200B;生成分析报表。 您可以在生成的报表中查看种子数据。

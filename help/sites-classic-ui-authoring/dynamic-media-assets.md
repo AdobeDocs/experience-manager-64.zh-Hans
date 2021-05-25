@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
-translation-type: tm+mt
-source-git-commit: 4ae3c1dc9af8a9d4a3cdb8a30ed8d898e1079ce6
+exl-id: 3db8153c-eb0c-4767-b7cf-10fb858468b7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 88%
 
 ---
-
 
 # 使用 Dynamic Media{#working-with-dynamic-media}
 
@@ -28,5 +27,4 @@ Dynamic Media 在经典 UI 中不可用。请参阅针对触屏优化用户界�
 
 >[!NOTE]
 >
->如果您使用Dynamic Media，则如果[将Dynamic Media经典集成到AEM&lt;a](/help/sites-administering/scene7.md)，则不能同时使用自动上传。 请参阅[启用Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media)。 默认情况下，Dynamic Media 处于禁用状态。
-
+>如果您使用的是Dynamic Media，则当[将Dynamic Media Classic集成到AEM](/help/sites-administering/scene7.md)时，无法同时使用可用的自动上传。 请参阅[启用Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media)。 默认情况下，Dynamic Media 处于禁用状态。

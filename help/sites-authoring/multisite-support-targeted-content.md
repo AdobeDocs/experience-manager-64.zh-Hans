@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: adf7c1d3-5e3d-42b7-b1e1-ae6980b08a90
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2906'
 ht-degree: 93%
 
 ---
-
 
 # 在多个站点中使用目标内容{#working-with-targeted-content-in-multisites}
 
@@ -45,7 +44,7 @@ ht-degree: 93%
 
 目标内容的多站点支持功能是开箱即用式功能，利用此功能，您可以将目标内容从通过 MSM 管理的主页面推送到本地 Live Copy，还可以管理对此类内容的全局修改和本地修改。
 
-在&#x200B;**Area**&#x200B;中管理。 区域可将在不同站点中使用的目标内容（活动、体验和选件）分隔开来，并提供基于 MSM 的机制，以创建并管理目标内容的继承以及站点继承。如此一来，您就不必按照 6.2 之前的 AEM 版本中的要求，在继承的站点中重新创建目标内容。
+可以在&#x200B;**Area**&#x200B;中管理此内容。 区域可将在不同站点中使用的目标内容（活动、体验和选件）分隔开来，并提供基于 MSM 的机制，以创建并管理目标内容的继承以及站点继承。如此一来，您就不必按照 6.2 之前的 AEM 版本中的要求，在继承的站点中重新创建目标内容。
 
 在某个区域中，只有链接到该区域的活动才会被推送到 Live Copy。默认情况下，主区域将处于选定状态。创建其他区域后，您可以将这些区域链接到站点或页面，以指示要推送的目标内容。
 
@@ -57,6 +56,7 @@ ht-degree: 93%
 >
 >* 使用转出或 Live Copy 时，需要获得 MSM 许可。
 >* 使用同步到 Adobe Target 的功能时，需要获得 Adobe Target 许可。
+
 >
 
 
@@ -79,7 +79,7 @@ ht-degree: 93%
    * 站点 A 链接到区域 X
    * 站点 B 也链接到区域 X
 
-* 通过MSM从另一个站点继承的不同目标内容&#x200B;**&#x200B;集——内容可以从主控单向转出到Live Copy。 例如：
+* 通过MSM从其他站点继承的不同目标内容&#x200B;**&#x200B;集 — 内容可以从主控单向转出到Live Copy。 例如：
 
    * 站点 A 链接到区域 X
    * 站点 B 链接到区域 Y（该区域是区域 X 的 Live Copy）
@@ -90,7 +90,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->有关此功能的更多技术说明，请参阅[如何构建目标内容的多站点管理](/help/sites-authoring/technical-multisite-targeted.md)。
+>有关此功能的技术性更详细的介绍，请参阅[如何构建目标内容的多站点管理](/help/sites-authoring/technical-multisite-targeted.md)。
 
 ## 示例：根据地域定位内容 {#example-targeting-content-based-on-geography}
 
@@ -131,7 +131,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->有关此功能的更多技术说明，请参阅[如何构建目标内容的多站点管理](/help/sites-authoring/technical-multisite-targeted.md)。
+>有关此功能的技术性更详细的介绍，请参阅[如何构建目标内容的多站点管理](/help/sites-authoring/technical-multisite-targeted.md)。
 
 ### 创建新区域与创建新区域作为 Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
@@ -141,7 +141,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->当页面是链接到区域的Live Copy，而该区域本身是链接到页面蓝图的区域的Live Copy时，默认转出会触发目标内容的后续转出。
+>当页面是链接到某个区域的Live Copy，而该区域本身是链接到页面Blueprint的区域的Live Copy时，默认转出会触发目标内容的后续转出。
 
 例如，下图中有四个站点，其中两个站点共享主区域（以及该区域中的所有活动）；还有一个站点的区域是其他区域的 Live Copy，因此会在转出后共享活动；最后一个站点完全独立（因此其活动需要一个单独的区域）。
 
@@ -220,7 +220,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->引用同一区域的页面或站点使用&#x200B;*相同*&#x200B;的共享活动、体验和优惠集。 编辑由多个站点共享的活动、体验或选件会影响所有站点。
+>引用相同区域的页面或站点使用的是&#x200B;*same*&#x200B;一组共享的活动、体验和选件。 编辑由多个站点共享的活动、体验或选件会影响所有站点。
 
 要将站点链接到区域，请执行以下操作：
 
@@ -249,6 +249,7 @@ ht-degree: 93%
 >
 >* 您只能在活动中暂停或分离 Live Copy。
 >* 要扩展继承的活动，无需暂停或分离 Live Copy。您始终可以为该活动创建&#x200B;**新的**&#x200B;本地体验和选件。如果您想要修改现有活动，则需要暂停继承。
+
 >
 
 
@@ -301,7 +302,6 @@ ht-degree: 93%
 
 要删除区域，请执行以下操作：
 
-1. 导航到&#x200B;**个性化** > **活动**&#x200B;或&#x200B;**优惠**，然后导航到您的品牌。
+1. 导航至&#x200B;**Personalization** > **Activities**&#x200B;或&#x200B;**Offers**，然后导航至您的品牌。
 1. 点按或单击要删除的区域旁边的图标。
 1. 点按或单击&#x200B;**删除**，并确认要删除该区域。
-

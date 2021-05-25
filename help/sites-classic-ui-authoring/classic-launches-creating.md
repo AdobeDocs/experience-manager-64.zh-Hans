@@ -10,20 +10,19 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 2f5c022e-bd98-4912-9409-d08137a1caf1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 92%
 
 ---
 
-
 # 创建启动项{#creating-launches}
 
 可创建启动项，以允许更新现有网页的新版本，以便将来激活。创建启动项时，需要指定标题和源页面：
 
-* 标题显示在&#x200B;**Sidekick**&#x200B;中，作者可以从中访问这些标题以对其进行处理。
+* 标题会显示在&#x200B;**Sidekick**&#x200B;中，作者可以从中访问这些标题以对其进行处理。
 * 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
 * 默认情况下，[Live Copy](/help/sites-administering/msm.md) 会在源页面发生更改时自动更新启动页面。您可以指定创建一个静态副本，以防止自动更改。
 
@@ -59,4 +58,3 @@ ht-degree: 92%
    >[!CAUTION]
    >
    >在删除嵌套启动项时，应先删除较低的级别。
-

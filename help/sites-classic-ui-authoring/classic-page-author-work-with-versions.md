@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: 407287cf-8096-40ee-971c-006d876ba4e4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 90%
 
 ---
-
 
 # 处理页面版本{#working-with-page-versions}
 
@@ -36,7 +35,7 @@ ht-degree: 90%
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. 输入&#x200B;**评论**（可选）。
-1. 要设置版本的标签（可选），请单击&#x200B;**更多>>**&#x200B;按钮并设置&#x200B;**标签**&#x200B;来命名版本。如果未设置标签，则版本是自动递增的编号。
+1. 要为版本设置标签（可选），请单击&#x200B;**更多>>**&#x200B;按钮，然后设置&#x200B;**标签**&#x200B;以命名版本。如果未设置标签，则版本是自动递增的编号。
 1. 单击&#x200B;**创建版本**。 页面上随即显示一条灰显的消息；例如：
 
    版本 1.2，创建对象：衬衫。
@@ -65,7 +64,7 @@ ht-degree: 90%
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. 选择**恢复版本……**列表当前文件夹中的文档版本。即使页面已被删除，也会列出最后一个版本：
+1. 选择**恢复版本……**列出当前文件夹中文档的版本。即使页面已被删除，也会列出最后一个版本：
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -93,17 +92,17 @@ ht-degree: 90%
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
 1. 选择要进行比较的版本，然后单击&#x200B;**差异**&#x200B;按钮。
-1. 当前版本与选定版本之间的差异显示如下：
+1. 当前版本与选定版本之间的差异将如下所示：
 
    * 删除的文本为红色并带有删划线。
    * 添加的文本为绿色并突出显示。
    * 添加或删除的图像会带有绿色边框。
 
-   ![chlimage_1-106](assets/chlimage_1-105.png)
+   ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. 在 Sidekick 中，选择&#x200B;**恢复版本**&#x200B;子选项卡，然后单击 **&lt;&lt; 返回**&#x200B;按钮以显示当前版本。
 
-## 时间扭曲  {#timewarp}
+## 时间扭曲 {#timewarp}
 
 时间扭曲是一项功能，旨在模拟过去特定时间某个页面的&#x200B;***已发布***&#x200B;状态。
 
@@ -128,7 +127,7 @@ ht-degree: 90%
 
 1. 打开&#x200B;**版本控制**&#x200B;选项卡，然后单击&#x200B;**时间扭曲**（在 Sidekick 的底部附近）。将显示以下对话框：
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![chlimage_1-105](assets/chlimage_1-106.png)
 
 1. 使用日期和时间选择器，指定您所需的日期/时间，然后单击&#x200B;**转到**。
 
@@ -194,4 +193,4 @@ ht-degree: 90%
 
 >[!CAUTION]
 >
->时间扭曲是一种工具，可帮助作者理解和创建其内容。 而不是用作审查日志或用于法律目的。
+>时间扭曲旨在作为一种工具，帮助作者理解和创建其内容。 而不是用作审查日志或用于法律目的。

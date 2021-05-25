@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 94%
 
 ---
 
-
 # 电子邮件营销{#e-mail-marketing}
 
 >[!NOTE]
 >
->Adobe不打算进一步增强AEM SMTP服务发送的打开／弹回电子邮件。\
+>Adobe不打算进一步增强AEM SMTP服务发送的打开/弹回电子邮件。\
 >建议[利用Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md)。
 
 电子邮件营销（例如新闻稿）是所有市场营销的重要组成部分，因为您可以通过这种方式将内容推送到您的潜在客户。在 AEM 中，您可以根据现有 AEM 内容创建新闻稿，也可以添加特定于新闻稿的新内容。
@@ -90,7 +89,7 @@ ht-degree: 94%
 
    * **描述**
 
-      新闻稿的说明。
+      新闻稿的描述。
 
    * **开启时间**
 
@@ -146,7 +145,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->在发送新闻稿之前，请检查位于`http://localhost:4502/system/console/configMgr`的Day CQ Link Externalizer的OSGi配置。
+>在发送新闻稿之前，请检查`http://localhost:4502/system/console/configMgr`处的Day CQ Link Externalizer的OSGi配置。
 >
 >默认情况下，参数的值为 `localhost:4502`，并且如果运行实例的端口发生更改，将无法完成操作。
 
@@ -229,7 +228,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->在发送新闻稿之前，请检查位于`http://localhost:4502/system/console/configMgr`的Day CQ Link Externalizer的OSGi配置。
+>在发送新闻稿之前，请检查`http://localhost:4502/system/console/configMgr`处的Day CQ Link Externalizer的OSGi配置。
 >
 >默认情况下，参数的值为 `localhost:4502`，并且如果运行实例的端口发生更改，将无法完成操作。
 
@@ -302,4 +301,3 @@ ht-degree: 94%
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
 1. 在 Geometrixx 新闻稿的&#x200B;**注册**&#x200B;字段中，输入您的电子邮件地址并单击&#x200B;**注册**。现在，您已订阅 Newsletter。
-

@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 84db73b0-1bc3-4c39-9bc2-0840e24832b0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 78%
 
 ---
-
 
 # 最佳实践{#best-practices}
 
@@ -55,7 +54,7 @@ ht-degree: 78%
   <tr>
    <td>动态图像处理</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">动态图像处理最佳实践</a></td> 
-   <td><p>介绍在使用Dynamic Media功能或与Dynamic Media集成时，如何锐化图像以获得最佳效果以及优化图像质量的最佳方法。</p> </td> 
+   <td><p>介绍在使用Dynamic Media功能或与Dynamic Media集成时，如何锐化图像以获得最佳效果，以及如何以最佳方式优化图像质量。</p> </td> 
   </tr>
   <tr>
    <td>多语言资产</td> 
@@ -71,8 +70,8 @@ ht-degree: 78%
 
 |  |  |  |
 |---|---|---|
-| 创作工具 | [创作环境和工具](/help/sites-authoring/author-environment-tools.md) | 概述用于创作页面的工具。 |
-| 组织页面 | [创建和组织页面](/help/sites-authoring/managing-pages.md) | 提供如何最好地组织页面（包括命名惯例）的概述。 |
+| 创作工具 | [创作环境和工具](/help/sites-authoring/author-environment-tools.md) | 提供页面创作工具的概述。 |
+| 组织页面 | [创建和组织页面](/help/sites-authoring/managing-pages.md) | 提供有关如何对页面进行最佳组织的概述，包括命名约定。 |
 
 ## 表单 {#forms}
 

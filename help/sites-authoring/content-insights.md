@@ -2,21 +2,20 @@
 title: 内容分析
 seo-title: 内容分析
 description: 内容分析使用 Web 分析和 SEO 推荐提供有关页面性能的信息
-seo-description: 内容分析 使用Web分析和SEO推荐提供有关页面性能的信息
+seo-description: 内容分析 提供有关使用Web分析和SEO推荐执行页面性能的信息
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 54ec1b84-bee2-4c1f-acbc-8e6bd0d76c87
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 94%
 
 ---
-
 
 # 内容分析{#content-insight}
 
@@ -51,7 +50,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->内容分析报表要求您的管理员将 AEM 与 SiteCatalyst、Target 和 BrightEdge 集成在一起。请参阅[与SightCatalyst](/help/sites-administering/adobeanalytics.md)集成、[与Adobe Target](/help/sites-administering/target.md)集成以及[与BrightEdge](/help/sites-administering/brightedge.md)集成。
+>内容分析报表要求您的管理员将 AEM 与 SiteCatalyst、Target 和 BrightEdge 集成在一起。请参阅[与SightCatalyst集成](/help/sites-administering/adobeanalytics.md)、[与Adobe Target集成](/help/sites-administering/target.md)和[与BrightEdge集成](/help/sites-administering/brightedge.md)。
 
 ## “查看次数”报表{#the-views-report}
 
@@ -99,4 +98,3 @@ ht-degree: 94%
 该报表使您能够创建任务，以便做出改进来提高页面可查找性。推荐指示已创建相关任务来实施推荐。请参阅[为 SEO 推荐分配任务](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations)。
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
-

@@ -1,63 +1,62 @@
 ---
 title: 文件夹元数据架构
-description: 本文介绍如何在AEM Assets中为资产文件夹创建元数据模式
+description: 本文介绍了如何在AEM Assets中为资产文件夹创建元数据架构
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
-feature: Metadata
+feature: 元数据
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1086'
 ht-degree: 18%
 
 ---
 
-
 # 文件夹元数据架构 {#folder-metadata-schema}
 
-本文介绍如何在AEM Assets中为资产文件夹创建元数据模式。
+本文介绍了如何在AEM Assets中为资产文件夹创建元数据架构。
 
-Adobe Experience Manager(AEM)“资产”允许您为资产文件夹创建元数据模式，这些元数据定义了在文件夹属性页面中显示的布局和元数据。
+Adobe Experience Manager(AEM)Assets允许您为资产文件夹创建元数据架构，该架构定义文件夹属性页面中显示的布局和元数据。
 
 >[!NOTE]
 >
->此功能需要AEM 6.4并且至少部署了Service Pack 2。 有关AEM 6.4 Service Pack的详细信息，请参阅这些[发行说明](/help/release-notes/sp-release-notes.md)。
+>此功能需要至少部署Service Pack 2的AEM 6.4。 有关AEM 6.4 Service Pack的详细信息，请参阅以下[发行说明](/help/release-notes/sp-release-notes.md)。
 
-## 添加文件夹元数据模式表单{#add-a-folder-metadata-schema-form}
+## 添加文件夹元数据架构表单{#add-a-folder-metadata-schema-form}
 
-使用文件夹元数据模式Forms编辑器创建和编辑文件夹的元数据模式。
+使用文件夹元数据架构Forms编辑器为文件夹创建和编辑元数据架构。
 
 1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 文件夹元数据架构]**。
-1. 在“文件夹元数据模式Forms”页中，点按/单击&#x200B;**[!UICONTROL 创建]**。
-1. 指定表单的名称，然后点按/单击&#x200B;**[!UICONTROL 创建]**。 新的模式表单列在模式 Forms页面中。
+1. 在文件夹元数据架构Forms页面中，点按/单击&#x200B;**[!UICONTROL 创建]**。
+1. 指定表单的名称，然后点按/单击&#x200B;**[!UICONTROL 创建]**。 新架构表单列在架构Forms页面中。
 
-## 编辑文件夹元数据模式表单{#edit-folder-metadata-schema-forms}
+## 编辑文件夹元数据架构表单{#edit-folder-metadata-schema-forms}
 
-您可以编辑新添加的或现有的元数据模式表单，其中包括：
+您可以编辑新添加的或现有的元数据架构表单，其中包括：
 
 * 选项卡
 * 选项卡中的表单项目
 
-您可以将这些表单项映射到/配置到CRX存储库中元数据节点内的字段。 可以向元数据架构表单中添加新的选项卡或表单项目。
+您可以将这些表单项目映射/配置到CRX存储库元数据节点中的字段。 可以向元数据架构表单中添加新的选项卡或表单项目。
 
-1. 在模式 Forms页面中，选择您创建的表单，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标。
-1. 在“文件夹元数据模式编辑器”页中，点按/单击&#x200B;**[!UICONTROL +]**&#x200B;图标，向表单中添加一个选项卡。 要重命名选项卡，请点按/单击默认名称，并在&#x200B;**[!UICONTROL 设置]**&#x200B;下指定新名称。
+1. 在架构Forms页面中，选择您创建的表单，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标。
+1. 在文件夹元数据架构编辑器页面中，点按/单击&#x200B;**[!UICONTROL +]**&#x200B;图标，以向表单添加选项卡。 要重命名选项卡，请点按/单击默认名称，然后在&#x200B;**[!UICONTROL Settings]**&#x200B;下指定新名称。
 
    ![custom_tab](assets/custom_tab.png)
 
    要添加更多选项卡，请点按/单击&#x200B;**[!UICONTROL +]**&#x200B;图标。 点按/单击&#x200B;**[!UICONTROL X]**&#x200B;以删除选项卡。
 
-1. 在活动选项卡中，从&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡添加一个或多个组件。
+1. 在活动选项卡中，从&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中添加一个或多个组件。
 
    ![adding_components](assets/adding_components.png)
 
-   如果您创建多个选项卡，请点按/单击特定选项卡以添加组件。
+   如果创建多个选项卡，请点按/单击某个特定选项卡以添加组件。
 
-1. 要配置组件，请选择该组件并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中修改其属性。
+1. 要配置组件，请选择该组件并在&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡中修改其属性。
 
-   如果需要，请从&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中删除组件。
+   如果需要，请从&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡中删除组件。
 
    ![configure_properties](assets/configure_properties.png)
 
@@ -65,7 +64,7 @@ Adobe Experience Manager(AEM)“资产”允许您为资产文件夹创建元数
 
 ### 用于构建表单的组件{#components-to-build-forms}
 
-**[!UICONTROL 构建表单]**&#x200B;选项卡列表了您在文件夹元数据模式表单中使用的表单项。 **[!UICONTROL 设置]**&#x200B;选项卡显示您在&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中选择的每个项目的属性。 以下是&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中可用的表单项的列表:
+**[!UICONTROL 构建表单]**&#x200B;选项卡列出了您在文件夹元数据架构表单中使用的表单项目。 **[!UICONTROL 设置]**&#x200B;选项卡显示您在&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中选择的每个项目的属性。 以下是&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中可用的表单项目列表：
 
 | 组件名称 | 描述 |
 |---|---|
@@ -80,50 +79,50 @@ Adobe Experience Manager(AEM)“资产”允许您为资产文件夹创建元数
 
 ### 编辑表单项{#editing-form-items}
 
-要编辑表单项的属性，请点按/单击组件，然后在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中编辑以下所有或一个子集的属性。
+要编辑表单项的属性，请点按/单击组件，并在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中编辑以下属性的全部或子集。
 
-**[!UICONTROL 字段标签]**:在文件夹的属性页面上显示的元数据属性的名称。
+**[!UICONTROL 字段标签]**:文件夹的属性页面上显示的元数据属性的名称。
 
-**[!UICONTROL 映射到属性]**:此属性指定保存文件夹节点的CRX存储库中文件夹节点的相对路径。它开始为&quot;**。/**&quot;，表示路径位于文件夹的节点下。
+**[!UICONTROL 映射到属性]**:此属性指定保存文件夹节点的CRX存储库中文件夹节点的相对路径。以“**”开头。/**&quot;，表示路径位于文件夹的节点下。
 
 以下是此属性的有效值：
 
-* `./jcr:content/metadata/dc:title`:将该值作为属性存储在文件夹的元数据节点 `dc:title`。
+* `./jcr:content/metadata/dc:title`:将该值作为属性存储在文件夹的元数据节点 `dc:title`中。
 
-* `./jcr:created`:在文件夹的节点显示JCR属性。如果您在CRXDE中配置这些属性，Adobe建议您将它们标记为“禁用编辑”，因为它们受保护。 否则，在保存资产的属性时，会出现错误“ `Asset(s) failed to modify`”。
+* `./jcr:created`:在文件夹的节点上显示JCR属性。如果在CRXDE中配置这些属性，则Adobe建议您将它们标记为“禁用编辑”，因为它们是受保护属性。 否则，在保存资产属性时，会出现错误“ `Asset(s) failed to modify`”。
 
-要确保在元数据模式表单中正确显示组件，请勿在属性路径中包含空格。
+要确保组件在元数据架构表单中正确显示，请勿在属性路径中包含空格。
 
-**[!UICONTROL JSON路径]**:使用它可指定JSON文件的路径，在该路径中可指定选项的键值对。
+**[!UICONTROL JSON路径]**:使用它可指定JSON文件的路径，您可以在该路径中为选项指定键值对。
 
-**[!UICONTROL 占位符]**:使用此属性可指定与元数据属性相关的相关占位符文本。
+**[!UICONTROL 占位符]**:使用此属性可指定与元数据属性相关的占位符文本。
 
-**[!UICONTROL 选择]**:使用此属性可指定列表中的选项。
+**[!UICONTROL 选项]**:使用此属性可在列表中指定选项。
 
 **[!UICONTROL 描述]**：使用此属性可添加对元数据组件的简短描述。
 
-**[!UICONTROL 类]**:属性关联的对象类。
+**[!UICONTROL 类]**:属性与关联的对象类。
 
-## 删除文件夹元数据模式表单{#delete-folder-metadata-schema-forms}
+## 删除文件夹元数据架构表单{#delete-folder-metadata-schema-forms}
 
-您可以从“文件夹元数据”模式“Forms”页面中删除文件夹元数据模式表单。 要删除表单，请选择该表单，然后点按/单击工具栏中的删除图标。
+您可以从文件夹元数据架构Forms页面中删除文件夹元数据架构表单。 要删除某个表单，请将其选中，然后点按/单击工具栏中的删除图标。
 
 ![delete_form](assets/delete_form.png)
 
-## 分配文件夹元数据模式{#assign-a-folder-metadata-schema}
+## 分配文件夹元数据架构{#assign-a-folder-metadata-schema}
 
-您可以从“文件夹元数据模式”Forms页面或在创建文件夹时，将文件夹元数据模式分配给文件夹。
+您可以从文件夹元数据架构Forms页面或在创建文件夹时，将文件夹元数据架构分配给文件夹。
 
-如果为文件夹配置元数据模式，则模式表单的路径将存储在文件夹节点的`folderMetadataSchema`属性中。*/jcr:content*。
+如果为文件夹配置元数据架构，则架构表单的路径将存储在下文件夹节点的`folderMetadataSchema`属性中。*/jcr:content*。
 
-### 从“文件夹元数据”模式页{#assign-to-a-schema-from-the-folder-metadata-schema-page}分配给模式
+### 从“文件夹元数据架构”页面{#assign-to-a-schema-from-the-folder-metadata-schema-page}中分配给架构
 
 1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 文件夹元数据架构]**。
-1. 从“文件夹元数据模式Forms”页面中，选择要应用到文件夹的模式表单。
+1. 从文件夹元数据架构Forms页面中，选择要应用于文件夹的架构表单。
 1. 在工具栏中，点按/单击&#x200B;**[!UICONTROL 应用到文件夹]**。
 
-1. 选择要应用模式的文件夹，然后单击/点按&#x200B;**[!UICONTROL 应用]**。 如果已在文件夹上应用元数据模式，则会显示一条警告消息，通知您将覆盖现有的元数据模式。 点按/单击&#x200B;**[!UICONTROL 覆盖]**。
-1. 打开应用元数据模式的文件夹的元数据属性。
+1. 选择要应用架构的文件夹，然后单击/点按&#x200B;**[!UICONTROL 应用]**。 如果已在文件夹上应用元数据架构，则会出现一条警告消息，告知您将要覆盖现有元数据架构。 点按/单击&#x200B;**[!UICONTROL 覆盖]**。
+1. 打开应用元数据架构的文件夹的元数据属性。
 
    ![folder_properties](assets/folder_properties.png)
 
@@ -131,20 +130,20 @@ Adobe Experience Manager(AEM)“资产”允许您为资产文件夹创建元数
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
-### 在创建文件夹{#assign-a-schema-when-creating-a-folder}时分配模式
+### 创建文件夹{#assign-a-schema-when-creating-a-folder}时分配架构
 
-您可以在创建文件夹时分配文件夹元数据模式。 如果系统中至少存在一个文件夹元数据模式，则在&#x200B;**[!UICONTROL 创建文件夹]**&#x200B;对话框中会显示额外的列表。 您可以选择所需的模式。 默认情况下，不选择模式。
+在创建文件夹时，您可以分配文件夹元数据架构。 如果系统中至少存在一个文件夹元数据架构，则在&#x200B;**[!UICONTROL 创建文件夹]**&#x200B;对话框中会显示一个额外的列表。 您可以选择所需的架构。 默认情况下，未选择架构。
 
-1. 在AEM Assets用户界面中，点按/单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
+1. 在AEM Assets用户界面中，点按/单击工具栏中的&#x200B;**[!UICONTROL 创建]** 。
 1. 指定文件夹的标题和名称。
-1. 从“文件夹元数据模式”列表中，选择所需的模式。 然后，点按/单击&#x200B;**[!UICONTROL 创建]**。
+1. 从文件夹元数据架构列表中，选择所需的架构。 然后，点按/单击&#x200B;**[!UICONTROL 创建]**。
 
-   ![select_模式](assets/select_schema.png)
+   ![select_schema](assets/select_schema.png)
 
-1. 打开应用元数据模式的文件夹的元数据属性。
+1. 打开应用元数据架构的文件夹的元数据属性。
 1. 要查看文件夹元数据字段，请点按/单击&#x200B;**[!UICONTROL 文件夹元数据]**&#x200B;选项卡。
 
-## 使用文件夹元数据模式{#use-the-folder-metadata-schema}
+## 使用文件夹元数据架构{#use-the-folder-metadata-schema}
 
 打开使用文件夹元数据架构配置的文件夹属性。文件夹属性页面中将显示&#x200B;**[!UICONTROL 文件夹元数据]**。要查看文件夹元数据架构表单，请选择此选项卡。
 

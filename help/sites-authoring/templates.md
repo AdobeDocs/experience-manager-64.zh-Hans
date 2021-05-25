@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
-translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+exl-id: 2af8eaed-3963-4016-9efa-a630d16a982b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 96%
 
 ---
-
 
 # 创建页面模板  {#creating-page-templates}
 
@@ -41,7 +40,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->AEM 6.4.5.0或更高版本才能将可编辑模板与[SPA Editor](/help/sites-developing/spa-overview.md)一起使用。
+>要将可编辑的模板与[SPA Editor](/help/sites-developing/spa-overview.md)结合使用，需要AEM 6.4.5.0或更高版本。
 
 >[!NOTE]
 >
@@ -49,7 +48,7 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->使用&#x200B;**模板控制台**&#x200B;创建的页面和模板不能与经典UI一起使用，因此不支持这样的使用。
+>使用&#x200B;**模板控制台**&#x200B;创建的页面和模板不适用于经典UI，因此不支持此类使用。
 
 ## 开始之前 {#before-you-start}
 
@@ -112,7 +111,7 @@ ht-degree: 96%
    * 此类模板[由开发人员提供](/help/sites-developing/page-templates-static.md)，因此不能由作者创建或编辑。
    * 可复制此类模板，以创建新页面，但是创建之后，页面与模板之间不存在动态连接（即使已注册模板名称来获取相关信息）。
    * 可使用[设计模式](/help/sites-authoring/default-components-designmode.md)来保留设计属性。
-   * 由于编辑静态模板是开发人员的专享任务，请参阅开发人员文档[页面模板——静态](/help/sites-developing/page-templates-static.md)以了解更多信息。
+   * 由于编辑静态模板是开发人员的专有任务，因此有关详细信息，请参阅开发人员文档[页面模板 — 静态](/help/sites-developing/page-templates-static.md) 。
 
 按照定义，“模板”控制台和模板编辑器只允许创建和编辑可编辑的模板。因此，本文档将专门重点介绍可编辑的模板。
 
@@ -272,7 +271,7 @@ ht-degree: 96%
    >
    >如果&#x200B;**允许的模板**&#x200B;列表为空，则树会向上追溯，直到找到值/列表。
    >
-   >请参阅[模板可用性](/help/sites-developing/templates.md#template-availability) —— 允许的模板原则保持不变。
+   >请参阅[模板可用性](/help/sites-developing/templates.md#template-availability) — 对允许的模板适用的原则与此相同。
 
 1. 单击&#x200B;**保存**，以保存对页面属性所做的更改。
 
@@ -549,7 +548,7 @@ ht-degree: 96%
       * 已输入的内容会被视为初始内容，因此仅在&#x200B;**初始内容**&#x200B;模式下可见。
    * 无法移动、剪切或删除已解锁组件的父组件。
 
-   ![chlimage_1-375](assets/chlimage_1-376.png)
+   ![chlimage_1-376](assets/chlimage_1-376.png)
 
    这包括解锁容器组件，以便在初始内容模式或生成的页面 **中添加其他组件** 。 如果在解锁容器之前已将组件／内容添加到容器，则这些组件／内容在结构模式下不再显示，但将以初始内容模式 **显示****** 。 在&#x200B;**“结构”模式**&#x200B;下，只会显示容器组件本身，及其&#x200B;**允许的组件**&#x200B;列表。
 
@@ -724,4 +723,3 @@ ht-degree: 96%
 
 1. 为特定于站点的模板[创建您自己的文件夹](#creating-a-template-folder-admin)。
 1. 从&#x200B;**模板**&#x200B;控制台[发布您的模板](#publishing-a-template-template-author)。
-

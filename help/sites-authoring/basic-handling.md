@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
-translation-type: tm+mt
-source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
+exl-id: 9abef452-b435-4419-895c-083cae6cd7d2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2764'
 ht-degree: 93%
 
 ---
-
 
 # 基本操作 {#basic-handling}
 
@@ -54,7 +53,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-单击或点按&#x200B;**，收到！**&#x200B;可转到概述的下一个页面。单击或点按&#x200B;**关闭**，或者单击或点按概述对话框外部以关闭。
+单击或点按&#x200B;**获取！**&#x200B;可转到概述的下一个页面。单击或点按&#x200B;**关闭** ，或单击或点按概述对话框外部可关闭。
 
 该概述将在您下次访问控制台时重新启动，除非您选中&#x200B;**不再显示此对话框**&#x200B;选项。
 
@@ -190,7 +189,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   仅在列表视图中可用。有关详细信息，请参阅[列表视图](#list-view)。
+   仅在列表视图中可用。有关更多信息，请参阅[列表视图](#list-view)。
 
 * **创建**&#x200B;按钮
 
@@ -246,7 +245,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
    >有关所有键盘快捷键的概述，请参阅以下文档：
    >
    >* [用于编辑页面的键盘快捷键](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >* [控制台的键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md)
+   * [控制台的键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## “操作”工具栏{#actions-toolbar}
@@ -266,8 +265,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 ![screen_shot_2018-03-23at104827](assets/screen_shot_2018-03-23at104827.png)
 
 >[!NOTE]
->
->各个可用图标根据相应控制台/功能/方案提供。
+各个可用图标根据相应控制台/功能/方案提供。
 
 ## 快速操作  {#quick-actions}
 
@@ -289,8 +287,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 * [列表视图](#list-view)
 
 >[!NOTE]
->
->默认情况下，AEM Assets 不会在 UI 中将资产的原始呈现版本显示为任何视图中的缩略图。如果您是管理员，可以使用叠加来配置 AEM Assets，以将原始呈现版本显示为缩略图。
+默认情况下，AEM Assets 不会在 UI 中将资产的原始呈现版本显示为任何视图中的缩略图。如果您是管理员，可以使用叠加来配置 AEM Assets，以将原始呈现版本显示为缩略图。
 
 ### 选择资源  {#selecting-resources}
 
@@ -326,7 +323,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
    <td>
     <ul> 
      <li>桌面：<br />单击卡</li> 
-     <li>移动设备：<br />点击卡</li> 
+     <li>移动设备：<br />点按卡</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -363,7 +360,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 
 1. 在选择了某个资源后，顶部标题被[操作工具栏](#actions-toolbar)覆盖，通过该工具栏可访问当前适用于选定资源的操作。
 
-   要退出选择模式，请选择右上方的&#x200B;**X**。
+   要退出选择模式，请选择右上角的&#x200B;**X**。
 
 ### 列视图 {#column-view}
 
@@ -441,7 +438,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
       * 再次单击或点按此复选框可取消选择全部。
 
 
-* 使用位于“视图”按钮下的“**视图设置**”选项选择要显示的列。 可以显示以下列：
+* 使用位于“视图”按钮下方的**查看设置**选项选择要显示的列。 可以显示以下列：
 
    * **名称** - 页面名称，在多语言创作环境中非常有用，因为它是页面 URL 的一部分，无论用户使用何种语言，都不会发生更改
    * **修改时间** - 上次修改日期和上次修改用户
@@ -458,8 +455,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 * 可使用列表中每个项目最右侧的点状垂直栏更改项目的顺序。
 
 >[!NOTE]
->
->只有在 `jcr:primaryType` 值为 `sling:OrderedFolder` 的已排序文件夹内才能更改顺序。
+只有在 `jcr:primaryType` 值为 `sling:OrderedFolder` 的已排序文件夹内才能更改顺序。
 
 ![screen_shot_2018-03-23at110113](assets/screen_shot_2018-03-23at110113.png)
 
@@ -484,8 +480,7 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 如果选择“仅限内容”，则只会显示边栏图标。如果选择其他任何选项，则边栏图标旁边会显示选项名称。
 
 >[!NOTE]
->
->可使用[键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md)快速地在各边栏显示选项之间进行切换。
+可使用[键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md)快速地在各边栏显示选项之间进行切换。
 
 ### 内容树 {#content-tree}
 
@@ -496,10 +491,8 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 ![screen_shot_2018-03-21at100858](assets/screen_shot_2018-03-21at100858.png)
 
 >[!NOTE]
->
->在层次结构视图中选择某个条目后，可以使用箭头键在层次结构中快速导航。
->
->有关更多信息，请参阅[键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md)。
+在层次结构视图中选择某个条目后，可以使用箭头键在层次结构中快速导航。
+有关更多信息，请参阅[键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md)。
 
 ### 时间轴 {#timeline}
 
@@ -549,4 +542,3 @@ AEM 启用了针对触屏的用户界面。触屏界面允许您使用触屏，�
 这将打开一个与[搜索](/help/sites-authoring/search.md)类似的面板，其中已设置相应的位置筛选器，允许您进一步筛选希望查看的内容。
 
 ![screen_shot_2018-03-23at111509](assets/screen_shot_2018-03-23at111509.png)
-

@@ -9,18 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 79d426a6-bad5-4f6d-a027-ca935576bcb9
-translation-type: tm+mt
-source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+exl-id: 07f143cc-4ba4-4b34-bb6d-641691a1afa7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 84%
 
 ---
 
-
 # 传送 Dynamic Media 资产{#delivering-dynamic-media-assets}
 
-您如何交付Dynamic Media资产（包括视频和图像）取决于网站的实施方式。
+如何交付Dynamic Media资产（包括视频和图像）取决于网站的实施方式。
 
 通过 Dynamic Media，您可以选择以下方式：
 
@@ -30,4 +29,3 @@ ht-degree: 84%
 有关更多信息，请参阅下列主题：
 
 * [将 Dynamic Media 资产添加到页面](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
-

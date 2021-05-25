@@ -1,8 +1,8 @@
 ---
 title: 适用于社区的FFmpeg
 seo-title: 适用于社区的FFmpeg
-description: 如何为社区安装和配置FFmpeg
-seo-description: 如何为社区安装和配置FFmpeg
+description: 如何安装和配置用于社区的FFmpeg
+seo-description: 如何安装和配置用于社区的FFmpeg
 uuid: ef2f821c-70e9-4889-a8d7-a93b10a1d428
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,31 +10,30 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 9ed54ee3-3509-4a43-a710-90f4543ccaf3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 1%
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
-
-# 社区{#ffmpeg-for-communities}的FFmpeg
+# 用于社区的FFmpeg {#ffmpeg-for-communities}
 
 ## 概述 {#overview}
 
-FFmpeg是用于转换和流式传输音频和视频的解决方案，安装后可用于对[视频资产](../../help/sites-authoring/default-components-foundation.md#video)进行正确转码以及AEM Communities的启用功能。
+FFmpeg是用于转换和流式传输音频和视频的解决方案，安装后，可用于对[视频资产](../../help/sites-authoring/default-components-foundation.md#video)进行正确转码，以及AEM Communities的启用功能。
 
-在创作环境中使用FFmpeg获取上传的启用资源的元数据，并在列出启用资源时生成要显示的缩略图。
+FFmpeg可在创作环境中用来获取已上传启用资源的元数据，并在列出启用资源时生成要显示的缩略图。
 
 ## 安装 FFmpeg {#installing-ffmpeg}
 
-FFmpeg应安装在承载AEM *author*&#x200B;实例的服务器上。
+应在托管AEM *author*&#x200B;实例的服务器上安装FFmpeg。
 
 1. 转到[https://www.ffmpeg.org](https://www.ffmpeg.org/)
-1. 下载适用于您的特定环境（Macintosh、Windows或Linux）的最新版FFmpeg
+1. 下载适用于您的特定环境（Macintosh、Windows或Linux）的FFmpeg最新版本
 
-   * 由于旧版本中存在安全漏洞，因此务必使FFmpeg保持最新
+   * 由于旧版本中存在安全漏洞，请务必使FFmpeg保持为最新
 
 1. 按照操作系统的说明安装FFmpeg。
 
@@ -48,27 +47,26 @@ FFmpeg应安装在承载AEM *author*&#x200B;实例的服务器上。
 
 默认情况下，安装FFmpeg后，会根据DAM更新资产工作流定义配置多个演绎版（转码）。
 
-由于转码占用CPU大量，建议修改目标再现的列表。 在大多数情况下，无需转码。
+由于转码占用大量CPU，因此建议修改目标演绎版列表。 在大多数情况下，无需转码。
 
-要修改DAM更新资产工作流，并在此示例中，请关闭转码：
+要修改DAM更新资产工作流，并在本例中，关闭转码，请执行以下操作：
 
-* 以管理权限登录创作实例
+* 使用管理权限登录到创作实例
 * 从全局导航：**[!UICONTROL 工具>工作流>模型]**
 * 找到&#x200B;**[!UICONTROL DAM更新资产]**
-* 多次 — 单击以打开要在经典UI中编辑的工作流
+* 双击以打开要在经典UI中编辑的工作流
 
    生成位置：[http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* 多次 — 单击&#x200B;**[!UICONTROL FFmpeg转码]**&#x200B;步骤以访问“步骤属性”对话框
-* 在&#x200B;**[!UICONTROL 进程]**&#x200B;选项卡下：
+* 双击&#x200B;**[!UICONTROL FFmpeg转码]**&#x200B;步骤以访问步骤属性对话框
+* 在&#x200B;**[!UICONTROL Process]**&#x200B;选项卡下：
 
-   * **[!UICONTROL 文章]**:清除所有条目以禁用转码默认值：  `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL 参数]**:清除所有条目以禁用转码默认值：  `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
 ![chlimage_1-372](assets/chlimage_1-372.png)
 
-* 选择&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭`Step Properties`对话框
+* 选择&#x200B;**[!UICONTROL OK]**&#x200B;以关闭`Step Properties`对话框
 
 * 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存`DAM Update Asset`工作流
 
    （左上角）
-

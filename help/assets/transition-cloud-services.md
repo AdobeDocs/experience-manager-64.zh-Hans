@@ -2,44 +2,43 @@
 title: 将翻译云服务应用到文件夹
 description: 将翻译云服务应用到文件夹
 contentOwner: AG
-feature: Translation
+feature: 翻译
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 55%
 
 ---
 
-
 # 将翻译云服务应用到文件夹{#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager(AEM)允许您从您选择的翻译提供商那里获得基于云的翻译服务，以确保根据您的要求翻译您的资产。
+Adobe Experience Manager(AEM)允许您从所选翻译提供商那里使用基于云的翻译服务，以确保根据您的要求对资产进行翻译。
 
-您可以将翻译云服务直接应用到您的资产文件夹，以便在翻译工作流中使用。
+您可以将翻译云服务直接应用到您的资产文件夹，以便在翻译工作流程中使用这些服务。
 
 ## 应用翻译服务{#applying-the-translation-services}
 
 将翻译云服务直接应用到您的资产文件夹，无需在创建或更新翻译工作流时配置翻译服务。
 
-1. 从资产用户界面中，选择要应用翻译服务的文件夹。
+1. 从资产UI中，选择要将翻译服务应用到的文件夹。
 1. 在工具栏中，单击/点按&#x200B;**[!UICONTROL 属性]**&#x200B;图标，以显示&#x200B;**[!UICONTROL 文件夹属性]**&#x200B;页面。
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. 导航到&#x200B;**[!UICONTROL 云服务]**&#x200B;选项卡。
-1. 从“Cloud Service配置”列表中，选择所需的翻译提供程序。 例如，如果要使用Microsoft的转换服务，请选择&#x200B;**[!UICONTROL Microsoft Translator]**。
+1. 从Cloud Service配置列表中，选择所需的翻译提供程序。 例如，如果要使用Microsoft的翻译服务，请选择&#x200B;**[!UICONTROL Microsoft Translator]**。
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-1. 为翻译提供者选择连接器。
+1. 为翻译提供程序选择连接器。
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
 1. 在工具栏中，单击/点按&#x200B;**[!UICONTROL 保存]**，然后单击&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭对话框。翻译服务将应用于文件夹。
 
-## 应用自定义转换连接器{#applying-custom-translation-connector}
+## 应用自定义翻译连接器{#applying-custom-translation-connector}
 
 如果要为要在翻译工作流程中使用的翻译服务应用自定义连接器。要应用自定义连接器，请首先从“包管理器”安装连接器。然后，从云服务控制台配置连接器。配置连接器后，该连接器会显示在[应用翻译服务](transition-cloud-services.md#applying-the-translation-services)中所述的“云服务”选项卡的连接器列表中。应用自定义连接器并运行翻译工作流后，翻译项目的&#x200B;**[!UICONTROL 翻译摘要]**&#x200B;拼贴会在&#x200B;**[!UICONTROL 提供程序]**&#x200B;和&#x200B;**[!UICONTROL 方法]**&#x200B;标题下显示连接器详细信息。
 
@@ -49,7 +48,7 @@ Adobe Experience Manager(AEM)允许您从您选择的翻译提供商那里获得
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 单击/点按&#x200B;**[!UICONTROL 立即配置]**&#x200B;链接以打开&#x200B;**[!UICONTROL 创建配置]**&#x200B;对话框。
+1. 单击/点按&#x200B;**[!UICONTROL Configure now]**&#x200B;链接以打开&#x200B;**[!UICONTROL Create Configuration]**&#x200B;对话框。
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 

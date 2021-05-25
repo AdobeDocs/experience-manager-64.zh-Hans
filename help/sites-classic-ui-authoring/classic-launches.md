@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
-translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+exl-id: e1e5dc83-2f9c-4c8d-a031-5ded3f1316a1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 74%
 
 ---
-
 
 # 启动项{#launches}
 
@@ -26,7 +25,7 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->在标准创作文档中的[启动项](/help/sites-authoring/launches.md)中详细描述了启动项的原理。
+>在标准创作文档的[Launchs](/help/sites-authoring/launches.md)下，详细描述了启动项的原理。
 >
 >有关在经典UI中使用启动项的特定信息，请参阅以下文档以及[创建启动项](/help/sites-classic-ui-authoring/classic-launches-creating.md)、[编辑启动项](/help/sites-classic-ui-authoring/classic-launches-editing.md)和[提升启动项](/help/sites-classic-ui-authoring/classic-launches-promoting.md)。
 
@@ -34,4 +33,4 @@ ht-degree: 74%
 >
 >无法在经典 UI 中对启动项使用多个源分支。
 
-“启动项”控制台可通过[http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)直接访问
+可以通过[http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)直接访问启动项控制台

@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: 6969dc5e-f7fa-495e-8ddf-8123ca2bc9a6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 96%
 
 ---
-
 
 # 编辑页面属性{#editing-page-properties}
 
@@ -82,7 +81,7 @@ ht-degree: 96%
 
    允许您为此页面输入虚 URL。通过这种方式，您可以使用更短并且含意更清楚的 URL。
 
-   例如，如果对于网站h `ttp://example.com,`，虚URL设置为w `elcome`，且路径/ `v1.0/startpage`标识的页面为h ，则h `ttp://example.com/welcome`将是h `ttp://example.com/content/v1.0/startpage`的虚URL
+   例如，如果对于网站h `ttp://example.com,`，将路径/ `v1.0/startpage`标识的页面的虚URL设置为w `elcome`，则h `ttp://example.com/welcome`将为h `ttp://example.com/content/v1.0/startpage`的虚URL
 
    >[!CAUTION]
    >
@@ -134,7 +133,7 @@ ht-degree: 96%
 
    指定导出配置。
 
-### 缩略图  {#thumbnail}
+### 缩略图 {#thumbnail}
 
 * **页面缩略图**
 
@@ -195,4 +194,3 @@ ht-degree: 96%
    这会打开一个包含多个选项卡的对话框。
 
 1. 进行所需的更改，然后单击“**确定**”以保存。
-

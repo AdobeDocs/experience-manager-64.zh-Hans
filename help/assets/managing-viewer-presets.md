@@ -11,9 +11,8 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
-feature: Viewer Presets
+feature: 查看器预设
 role: Administrator,Business Practitioner
-translation-type: tm+mt
 source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
 source-wordcount: '4236'
@@ -23,32 +22,32 @@ ht-degree: 21%
 
 # 管理Dynamic Media查看器预设{#managing-viewer-presets}
 
-Dynamic Media查看器预设是一组设置，这些设置决定用户如何在其计算机屏幕和移动设备上视图富媒体资产。 如果您是管理员，则可以创建查看器预设。您可以设置一系列查看器配置选项。例如，可以更改查看器的显示大小或缩放行为。
+Dynamic Media查看器预设是一组设置，用于确定用户在其计算机屏幕和移动设备上查看富媒体资产的方式。 如果您是管理员，则可以创建查看器预设。您可以设置一系列查看器配置选项。例如，可以更改查看器的显示大小或缩放行为。
 
-有关创建和自定义您自己的HTML5查看器预设的说明，请参阅Adobe Dynamic Media *HTML5查看器SDK API文档*。 SDK可在嵌入SDK本身的IS发布服务器上使用。 每个库版本都包含其自己的SDK文档。
+有关创建和自定义您自己的HTML5查看器预设的说明，请参阅AdobeDynamic Media *HTML5查看器SDK API文档*。 该SDK位于嵌入在SDK中的IS发布服务器上。 每个库版本都包含其自己的SDK文档。
 
 路径: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 例如，3.10 SDK:[https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-另请参阅[《Adobe Dynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
+另请参阅《[AdobeDynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
 
-本节介绍如何创建、编辑和管理查看器预设。 无论您何时对资产进行预览，您都可以将查看器预设应用到资产。 请参阅[应用查看器预设](viewer-presets.md)。
+本节介绍如何创建、编辑和管理查看器预设。 无论您何时预览资产，都可以将查看器预设应用到资产。 请参阅[应用查看器预设](viewer-presets.md)。
 
 >[!NOTE]
 >
->请注意，编辑任何&#x200B;*预定义的现成查看器预设*&#x200B;都不是受支持的方案。 如果您尝试编辑现成的查看器预设，系统会提示您使用新名称保存查看器预设。
+>请注意，不支持编辑任何&#x200B;*预定义的现成查看器预设*。 如果您尝试编辑现成的查看器预设，系统会提示您使用新名称保存查看器预设。
 
-## 查看器{#keyboard-accessibility-for-viewers}的键盘可访问性
+## 查看器的键盘辅助功能{#keyboard-accessibility-for-viewers}
 
-所有现成查看器都支持键盘辅助功能。
+所有现成的查看器都支持键盘辅助功能。
 
-另请参阅[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
+另请参阅[键盘可访问性和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
 ## 管理Dynamic Media查看器预设{#managing-presets}
 
-您可以通过点按&#x200B;**[!UICONTROL 工具>资产>查看器预设]**&#x200B;在AEM中添加、编辑、删除、发布、取消发布和预览查看器预设。
+您可以通过点按&#x200B;**[!UICONTROL 工具>资产>查看器预设]**，在AEM中添加、编辑、删除、发布、取消发布和预览查看器预设。
 
-![工具 — 资源](assets/tools-assets.png)
+![tools-assets](assets/tools-assets.png)
 
 >[!NOTE]
 >
@@ -56,20 +55,20 @@ Dynamic Media查看器预设是一组设置，这些设置决定用户如何在�
 
 ## 查看器支持响应式设计网页{#viewer-support-for-responsive-designed-web-pages}
 
-不同的网页有不同的需求。 例如，有时您希望网页提供链接，在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，可能需要将HTML5查看器直接嵌入到托管页面。 在后一种情况下，网页可能具有静态布局。 或者，它可以是&#x200B;*响应式*，并在不同设备上显示不同的内容，或者对于不同的浏览器窗口大小显示不同的内容。 为满足这些需求，Dynamic Media附带的所有预定义、现成的HTML5查看器都支持静态网页和响应式设计网页。
+不同的网页有不同的需求。 例如，有时您希望网页提供一个链接，以在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，可能需要直接将HTML5查看器嵌入到托管页面。 在后一种情况下，网页可以具有静态布局。 或者，它可以是&#x200B;*响应式*，并在不同设备上显示，或者针对不同的浏览器窗口大小显示不同。 为了满足这些需求，Dynamic Media附带的所有预定义现成HTML5查看器都支持静态网页和响应式设计的网页。
 
-有关如何将响应式查看器嵌入网页的详细信息，请参阅&#x200B;*图像服务API帮助*&#x200B;中的[响应式图像库](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)。
+有关如何将响应式查看器嵌入网页的更多信息，请参阅&#x200B;*图像服务API帮助*&#x200B;中的[响应式图像库](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)。
 
 >[!NOTE]
 >
->请注意，在首次使用所有开箱即用的查看器之前，必须先发布这些查看器。\
+>请注意，在首次使用所有现成查看器之前，必须先发布这些查看器。\
 >请参阅[发布查看器预设。](#publishing-viewer-presets)
 
 ## 查看器预设系统兼容性{#viewer-preset-system-compatibility}
 
 Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容：
 
-* 桌面
+* 台式机
 * Apple iPhone
 * Apple iPad
 * Android智能手机
@@ -78,93 +77,93 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
 ### 查看器预设的富媒体类型{#rich-media-types-for-viewer-presets}
 
-管理员在创建新查看器预设时可以添加和自定义以下富媒体类型。
+管理员在创建新查看器预设时，可以添加和自定义以下富媒体类型。
 
 | 富媒体类型 | 描述 |
 |:---|:---|
-| **轮播集** | 热点或图像映射，或两者都添加到一系列两个或多个图像中。 客户可以向左或向右平移图像，然后单击图像上的热点以了解详细信息，或直接从网站的类别、主页或登陆页购买。 |
+| **轮播集** | 热点或图像映射，或两者都添加到两个或更多图像的系列中。 客户可以向左或向右平移图像，然后单击图像上的热点以获取更多详细信息，或直接从网站的类别、主页或登陆页面购买。 |
 | **弹出缩放** | 在原始图像旁边显示缩放区域的副本图像。没有可用的控件 - 用户在要查看的区域上方移动选择。 |
 |  | 在决定此查看器的整体带宽使用率时，请考虑到主图像和弹出图像都在查看器中呈现。主图像的大小（暂存宽度和暂存高度）和缩放因子决定弹出图像的大小。为避免弹出图像过大，请平衡这两个值：如果主图像较大，请减小缩放因子的值。（弹出宽度和弹出高度决定弹出窗口的大小，但它们不决定在查看器中呈现的弹出图像的大小。） |
 |  | 例如，如果主图像的大小是 350 X 350 像素，缩放因子为 3，则生成的弹出图像的大小就是 1050 X 1050 像素。如果主图像的大小是 300 X 300 像素，缩放因子为 4，则弹出图像的大小就是 1200 X 1200 像素。根据 JPEG 质量设置（建议的设置在 80 到 90 之间），您可以显著减小文件的大小。建议的缩放因子为 2.5 到 4，具体视主图像的大小而定。 |
-| **内联缩放** | 在原始查看器中显示缩放区域的图像。 没有可使用的控件。 即，用户在要视图的区域上移动选区。 |
+| **内联缩放** | 在原始查看器中显示缩放区域的图像。 没有可使用的控件。 也就是说，用户会在要查看的区域上移动所做的选择。 |
 | **图像集** | 在“图像集”查看器中，用户可以通过单击缩略图，查看项目的不同视图或颜色变量。此查看器还提供了用于仔细检查图像的缩放工具。 |
-| **交互式图像** | 热点会添加到图像的某些部分，然后客户可以单击这些部分来获取更多详细信息，或直接从网站的类别、主页或登陆页购买。 |
-| **交互式视频** | 缩略图会添加到视频中的时间轴区段，然后客户可以单击该区段以获取更多详细信息或直接从网站的类别、主页或登陆页购买。 |
+| **交互式图像** | 热点会添加到图像的某些部分，随后客户可以单击这些部分以获取更多详细信息，或直接从网站的类别、主页或登陆页面购买。 |
+| **交互式视频** | 缩略图会添加到视频中的时间轴区段，客户随后可以单击该区段以获取更多详细信息，或直接从网站的类别、主页或登陆页面购买。 |
 | **混合媒体** | 在一个查看器中显示不同类型的媒体。您可以包含旋转集、图像集、图像和视频。 |
-| **全景图像** | 全景图像和全景VR查看器渲染球面全景图像，让用户在360°的房间、财产、位置或风景的观看体验中沉浸于其中。 |
-|  | 要使上传的图像符合球面全景，它必须具有以下任一项或两项： <ul><li>宽高比为2:1。</li><li>使用关键字标记为等长方形、球面和全景图或球面和全景图。 请参阅[使用标记](../sites-authoring/tags.md)。</li></ul> |
-|  | 长宽比和关键字条件都适用于资产详细信息页面和“全景媒体”WCM组件的全景资产。 |
-|  | 重要说明：此查看器仅在Dynamic Media - Scene7模式下可用。 |
+| **全景图像** | 全景图像和全景VR查看器可渲染球面全景图像，以让用户沉浸在房间、属性、位置或景观的360°观看体验中。 |
+|  | 要使上传的图像符合球面全景图的条件，该图像必须具有以下任一项或两项： <ul><li>宽高比为2:1。</li><li>使用等矩形关键字标记，或者使用球面和全景关键字标记，或者使用球面和全景关键字标记。 请参阅[使用标记](../sites-authoring/tags.md)。</li></ul> |
+|  | 纵横比和关键字条件都适用于资产详细信息页面和“全景媒体”WCM组件的全景资产。 |
+|  | 重要信息：此查看器仅在Dynamic Media - Scene7模式下可用。 |
 | **旋转集** | 提供图像的不同视图，以便用户可以旋转对象来从不同的侧边和角度进行检查。 |
-| **视频** | 使用渐进式或自适应比特率流播放视频。 自适应比特率流会自动执行设备和带宽检测，以正确的格式提供正确质量的视频。 |
-| **垂直缩放** | 利用垂直缩放查看器，您可以最大化产品图像的查看体验，为用户提供最佳的产品展示效果。 色板的垂直位置如下所示： <ul><li>确保色板位于折叠上方。 使用水平色板(具体取决于用户的桌面屏幕大小)时，只有用户向下滚动页面后，才能显示色板。 通过将色板垂直放置在查看器中，可确保无论用户的屏幕大小如何，色板都可见。</li><li>最大化主图像大小。 使用水平色板时，必须在页面上保留空间，以确保它们可见。 此定位缩小了主图像的大小。 但是，对于垂直色板布局，您无需分配此空间。 因此，您可以最大化主图像大小。</li></ul> |
+| **视频** | 使用渐进式比特率流或自适应比特率流播放视频。 自适应比特率流自动执行设备和带宽检测，以正确的格式提供正确质量的视频。 |
+| **垂直缩放** | 通过垂直缩放查看器，您可以最大化产品图像查看体验，从而为用户提供产品的最佳呈现方式。 色板的垂直位置可执行以下操作： <ul><li>确保色板位于折页上方。 使用水平色板时，根据用户的桌面屏幕大小，在用户向下滚动页面之前，不会显示色板。 通过将色板垂直放置在查看器中，可确保无论用户的屏幕大小如何，都可以看到这些色板。</li><li>最大化主图像大小。 使用水平色板时，必须保留页面上的空间，以确保它们可见。 此定位缩小了主图像的大小。 但是，使用垂直色板布局时，您无需分配此空间。 因此，您可以最大化主图像大小。</li></ul> |
 | **缩放** | 用户可以通过单击该选项来缩放区域。用户可以单击相应控件来放大图像、缩小图像以及将图像重置为默认大小。 |
 
-## 列表现成的查看器预设{#list-of-out-of-the-box-viewer-presets}
+## 现成查看器预设列表{#list-of-out-of-the-box-viewer-presets}
 
-下表列出了Dynamic Media附带的所有预定义现成查看器预设。
+下表标识了Dynamic Media附带的所有预定义现成查看器预设。
 
 另请参阅[实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)。
 
 有关查看器支持的Web浏览器和操作系统版本的信息，您可以查看查看器发行说明。
 
-请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)的目录中的&#x200B;*查看器发行说明*。
+请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)目录中的&#x200B;*查看器发行说明*。
 
 >[!NOTE]
 >
->Dynamic Media中的所有现成查看器预设均已激活（开启），但您必须发布它们。\
+>Dynamic Media中所有现成的查看器预设均已激活（开启），但您必须发布它们。\
 >请参阅[发布查看器预设](#publishing-viewer-presets)。
 >
->您创建和添加的任何新查看器预设都必须同时激活&#x200B;*和*。\
+>您创建和添加的任何新查看器预设都必须同时激活&#x200B;*和*&#x200B;发布。\
 >请参阅[激活或取消激活查看器预设](#activating-or-deactivating-viewer-presets)和[发布查看器预设](#publishing-viewer-presets)。
 
 | 查看器预设标题 | 类型 | CSS 文件名称 |
 |:---|:---|:---|
-| 传送_点线_暗 | 传送(_S) | html5_carouselviewer_dotted_dark.css |
-| 传送_点线_光 | 传送(_S) | html5_carouselviewer_dotted_light.css |
-| 传送_数值_深 | 传送(_S) | html5_carouselviewer_numeric_dark.css |
-| 传送_数值_光 | 传送(_S) | html5_carouselviewer_numeric_light.css |
-| 弹出 | 弹出缩放 | html5_flyoutviewer.css |
+| 轮播_点线_深色 | 轮播(_S) | html5_carouselviewer_dotted_dark_css |
+| 轮播_虚线_光 | 轮播(_S) | html5_carouselviewer_dotted_light.css |
+| 轮播_数值_深色 | 轮播(_S) | html5_carouselviewer_numeric_dark_css |
+| 轮播_数值_光 | 轮播(_S) | html5_carouselviewer_numeric_light.css |
+| 弹出 | Flyout_Zoom | html5_flyoutviewer.css |
 | ImageSet_dark | 图像集 | html5_zoomviewer_dark.css |
 | ImageSet_light | 图像集 | html5_zoomviewer_light.css |
 | InlineMixedMedia_dark | 混合媒体 | html5_inlinemixedmediaviewer_dark.css |
 | InlineMixedMedia_light | 混合媒体 | html5_inlinemixedmediaviewer_light.css |
-| InlineZoom | 弹出缩放 | html5_inlinezoomviewer.css |
+| InlineZoom | Flyout_Zoom | html5_inlinezoomviewer.css |
 | MixedMedia_dark | 混合媒体 | html5_mixedmediaviewer_dark.css |
-| 混合媒体_light | 混合媒体 | html5_mixedmediaviewer_light.css |
-| PanoramicImage | 全景图(_I) | html5_panoramicimage.css |
-| PanoramicImageVR | 全景图(_I) | html5_panoramicimage.css |
+| MixedMedia_light | 混合媒体 | html5_mixedmediaviewer_light.css |
+| 全景图像 | 全景图像(_I) | html5_panoramicimage.css |
+| 全景图像VR | 全景图像(_I) | html5_panoramicimage.css |
 | Shoppable_Banner | Interactive_Image | html5_interactiveimage.css |
-| Shoppable_Video_dark | Interactive_Video | html5_interactivevideoviewer_dark.css |
+| Shoppable_Video_dark | Interactive_Video | html5_interactivevideoviewer_dark_css |
 | Shoppable_Video_light | Interactive_Video | html5_interactivevideover_light.css |
 | SpinSet_dark | 旋转集 | html5_spinviewer_dark.css |
 | SpinSet_light | 旋转集 | html5_spinviewer_light.css |
 | 视频（包括对隐藏式字幕的支持） | 视频 | html5_videoviewer.css |
 | Video_social（包括对隐藏式字幕和社交媒体的支持） | 视频 | html5_videoviewersocial.css |
-| 深缩(_D) | 缩放 | html5_basiczoomviewer_dark.css |
-| 缩放(_L) | 缩放 | html5_basiczoomviewer_light.css |
+| Zoom_dark | 缩放 | html5_basiczoomviewer_dark.css |
+| Zoom_light | 缩放 | html5_basiczoomviewer_light.css |
 | ZoomVertical_dark | 垂直缩放 | html5_zoomverticalviewer_dark.css |
 | ZoomVertical_light | 垂直缩放 | html5_zoomverticalviewer_light.css |
 
 ### 支持的移动查看器手势矩阵{#supported-mobile-viewers-gestures-matrix}
 
-下表标识了iOS、Android 2.x和Android 3.x设备支持的移动查看器手势。
+下表标识了iOS、Android 2.x和Android 3.x设备上支持的移动查看器手势。
 
 | 手势 | 弹出缩放 | 缩放 | 旋转 |
 |---|---|---|---|
 | **拖动** | 平移 | 平移 | 平移 |
 | **点按** | 显示弹出窗口 | 显示或隐藏用户界面 | 显示或隐藏用户界面 |
-| **多次点击** | 不适用 | 放大或重置 | 放大或重置 |
-| **开合** | 不适用 | 放大（仅限iOS和Android 3x） | 放大（仅限iOS和Android 3x） |
+| **双击** | 不适用 | 放大或重置 | 放大或重置 |
+| **捏开** | 不适用 | 放大（仅限iOS和Android 3x） | 放大（仅限iOS和Android 3x） |
 | **捏合关闭** | 不适用 | 缩小（仅限iOS和Android 3x） | 缩小（仅限iOS和Android 3x） |
 | **轻扫** | 滚动色板条 | 滚动图像 | 旋转 |
 | **弗里克** | 滚动色板条 | 滚动图像 | 旋转 |
 
 ## 增加显示{#increasing-the-number-of-viewer-presets-that-display}的Dynamic Media查看器预设数
 
-在从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资产时，AEM会显示各种查看器预设。 您可以增加或减少显示的查看器数量。
+从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资产时，AEM会显示各种查看器预设。 您可以增加或减少显示的查看器数量。
 
-**要增加显示的Dynamic Media查看器预设数目，请执行以下操作**:
+**要增加显示的Dynamic Media查看器预设数，请执行以下操作**:
 
 1. 导航到&#x200B;**[!UICONTROL CRXDE Lite]**([http://localhost:4502/crx/de](http://localhost:4502/crx/de))。
 1. 导航到位于`/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`的查看器预设列表节点
@@ -176,73 +175,73 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
-1. 在&#x200B;**[!UICONTROL limit]**&#x200B;属性中，将数字更改为所需数字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
+1. 在&#x200B;**[!UICONTROL limit]**&#x200B;属性中，将数字更改为所需的数字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. 点按&#x200B;**[!UICONTROL 保存全部]**。
 
 ## 创建新的Dynamic Media查看器预设{#creating-a-new-viewer-preset}
 
-通过创建查看器预设，您可以将各种设置应用于视图并与资产交互。 但是，您无需创建新的查看器预设。 您可以根据需要使用AEM Assets附带的默认现成查看器预设。
+通过创建查看器预设，您可以应用各种设置来查看资产并与之交互。 但是，您无需创建新的查看器预设。 如果您愿意，可以使用AEM Assets附带的默认现成查看器预设。
 
-如果选择创建新的查看器预设，则在保存该查看器预设后，查看器的状态将在&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面中自动激活（设置为&#x200B;**On**）。 此状态意味着无论您何时预览图像或视频，都可以在&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;组件和&#x200B;**[!UICONTROL Interactive Media]**&#x200B;组件中看到该状态。
+如果选择创建新的查看器预设，则在保存该查看器预设后，该查看器的状态将在&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面中自动激活（设置为&#x200B;**On**）。 此状态表示它显示在&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;组件和&#x200B;**[!UICONTROL Interactive Media]**&#x200B;组件中，以及在您预览图像或视频时。
 
-某些查看器预设具有可影响查看器的使用和整体行为的专用设置。 根据您所创建的查看器预设，您可能需要了解这些特殊注意事项。
+某些查看器预设具有可影响查看器的使用和整体行为的排他设置。 根据您创建的查看器预设，您可能需要注意这些特殊注意事项。
 
 请参阅[创建交互式查看器预设的特殊注意事项](#special-considerations-for-creating-an-interactive-viewer-preset)。
 
-请参阅[创建传送横幅查看器预设的特殊注意事项](#special-considerations-for-creating-a-carousel-banner-viewer-preset)。
+请参阅[创建轮播横幅查看器预设的特殊注意事项](#special-considerations-for-creating-a-carousel-banner-viewer-preset)。
 
-**要创建新的Dynamic Media查看器预设，请执行以下操作**:
+**要创建新的Dynamic Media查看器预设**:
 
-1. 在AEM的左上角，点按AEM徽标，然后在左边栏中，点按&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
+1. 点按AEM左上角的AEM徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
 
    ![查看器预设](assets/viewerpresets.png)
 
 1. 在&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面的工具栏中，点按&#x200B;**[!UICONTROL 创建]**。
 1. 在&#x200B;**[!UICONTROL 新查看器预设]**&#x200B;对话框的&#x200B;**[!UICONTROL 预设名称]**&#x200B;字段中，输入新预设的名称。请谨慎选择该名称，因为在您点按&#x200B;**[!UICONTROL 创建]**&#x200B;后，将再也不能编辑该名称。
 
-   在以后的这些步骤中保存预设时，该名称会显示在“查看器预设”页面的&#x200B;**[!UICONTROL 预设标题]**&#x200B;列标题下。
+   在稍后的这些步骤中保存预设时，该名称会显示在“查看器预设”页面的&#x200B;**[!UICONTROL 预设标题]**&#x200B;列标题下。
 
-1. 在&#x200B;**[!UICONTROL 富媒体类型]**&#x200B;下拉菜单中，选择要创建的查看器预设类型，然后在页面的右上角，点按&#x200B;**[!UICONTROL 创建]**。
+1. 在&#x200B;**[!UICONTROL 富媒体类型]**&#x200B;下拉菜单中，选择要创建的查看器预设类型，然后点按页面右上角的&#x200B;**[!UICONTROL 创建]**。
 
    请参阅[查看器预设的富媒体类型](#rich-media-types-for-viewer-presets)。
 
 1. 在&#x200B;**编辑查看器预设**&#x200B;页面上，点按&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡。
 1. 执行下列操作之一：
 
-   * 在&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单中，选择要自定义其可视设计的组件。 或者，您也可以点按查看器中的任何可视元素，以将其选中进行配置。
+   * 在&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单中，选择要自定义其可视设计的组件。 或者，您也可以点按查看器中的任何可视元素以选择进行配置。
 
-      通过可视编辑器，您可以查看特定属性对样式的影响。 只需设置或调整任何属性，即可使用编辑器左侧的范例即时查看它对查看器产生的影响。
+      通过可视编辑器，您可以查看特定属性对样式有何影响。 只需设置或调整任何属性，即可使用编辑器左侧的示例立即查看该属性对查看器有何影响。
 
-      [查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的任意“自定义&#x200B;*&lt;viewer_name>*&#x200B;查看器”帮助主题中介绍了每种类型的查看器预设的CSS样式属性。
+      [查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的任意“自定义&#x200B;*&lt;viewer_name>*&#x200B;查看器”帮助主题中介绍了每种类型查看器预设的CSS样式属性。
 
-      例如，如果要创建类型为`Mixed_Media`的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)以获取每个属性的列表和说明。
+      例如，如果要创建类型为`Mixed_Media`的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) ，以获取每个属性的列表和说明。
 
-   * 如果您在单独的CSS文件中定义了样式设置，则可以将CSS文件上传到AEM Assets。 点按&#x200B;**[!UICONTROL 选定类型]**&#x200B;下方的&#x200B;**[!UICONTROL 导入CSS]**（您可能需要向上滚动可视编辑器以查看它）以查找已上载的CSS文件并将其与查看器预设关联。
+   * 如果您在单独的CSS文件中定义了样式设置，则可以将CSS文件上传到AEM Assets。 点按&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单（可能需要向上滚动可视编辑器才能看到它）下的&#x200B;**[!UICONTROL 导入CSS]**，以查找上传的CSS文件并将其与查看器预设关联。
 
-      导入CSS文件时，可视编辑器会检查CSS是否使用了正确的查看器标记。 例如，如果要创建缩放查看器，则必须使用父查看器元素上定义的查看器类名`.s7mixedmediaviewer`定义导入的所有CSS规则。
+      导入CSS文件时，可视编辑器会检查CSS是否使用正确的查看器标记。 例如，如果要创建缩放查看器，则必须使用在父查看器元素上定义的查看器类名称`.s7mixedmediaviewer`定义所有导入的CSS规则。
 
-      只要为给定查看器正确定义CSS标记，就可以导入任意手工CSS。 (在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中介绍了CSS标记。 例如，如果要阅读有关缩放查看器的CSS标记的信息，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，可视编辑器可能不理解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可以工作。
+      只要为给定查看器正确定义CSS标记，就可以导入任意手工CSS。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中进行了描述。 例如，如果要阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，可视编辑器可能无法理解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可以工作。
    >[!NOTE]
    >
    >如果您希望直接在其原始表单中编辑 CSS，请点按“选定类型”下拉菜单下的&#x200B;**[!UICONTROL 显示/隐藏 CSS]**（您可能需要向上滚动可视编辑器才能看到此选项）。****
    >
-   >与可视编辑器一样，当您在CSS中直接更改属性时，您可以立即看到它对查看器范例产生了什么效果。 而且，同一属性会在可视编辑器中同时自动更新。 因此，您可以使用原始CSS编辑器或可视编辑器，或同时使用两者。
+   >与可视编辑器一样，当您直接在CSS中更改属性时，您可以立即查看该属性对查看器示例有何影响。 而且，该同一属性会在可视化编辑器中同时自动更新。 因此，您可以使用原始CSS编辑器或可视编辑器，或者两者交替使用。
 
    >[!NOTE]
    >
-   >对于按钮图稿，选择2x图像并上传高分辨率图稿。 处理交互式图像和购物横幅时，您还可以从各种现成的热点按钮中进行选择。
+   >对于按钮图稿，选择2x图像并上传高分辨率艺术品。 使用交互式图像和购物横幅时，您还可以从各种现成的热点按钮中进行选择。
 
-1. （可选）在&#x200B;**[!UICONTROL 编辑查看器预设]**&#x200B;页面顶部附近，点按&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**&#x200B;以唯一定义不同设备和屏幕类型的可视样式。
+1. （可选）在&#x200B;**[!UICONTROL 编辑查看器预设]**&#x200B;页面顶部附近，点按&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**，为不同设备和屏幕类型唯一定义可视样式。
 1. 在&#x200B;**[!UICONTROL 编辑查看器预设]**&#x200B;页面上，点按&#x200B;**行为**&#x200B;选项卡。 或者，您也可以点按或单击查看器中的任何可视元素，以选择进行配置。
 1. 从&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单中，选择要更改其行为的组件。
 
-   可视编辑器中的许多组件都有与其关联的详细说明。 当您展开组件以显示其关联参数时，这些说明会显示在蓝色框中。
+   可视化编辑器中的许多组件都有与其关联的详细说明。 当您展开组件以显示其关联参数时，这些描述会显示在蓝色框中。
 
    有些“查看器类型”具有的组件允许您在 **IS 命令**&#x200B;文本字段中指定“图像提供”命令。有关可使用的命令列表，请参阅[图像提供 API 参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
 
    >[!NOTE]
    >
-   >**如果您使用触控设备，如手机或平板电脑……**
+   >**如果您使用的是触控设备，如手机或平板电脑……**
    >
    >在文本字段中键入值后，点按用户界面中的其他位置，以提交所做的更改并关闭虚拟键盘。如果您点按 **[!UICONTROL Enter]**，则不会执行任何操作。
 
@@ -251,29 +250,29 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
    请参阅[发布查看器预设](#publishing-viewer-presets)。
 
-## 创建交互式查看器预设{#special-considerations-for-creating-an-interactive-viewer-preset}的特殊注意事项
+## 创建交互式查看器预设的特殊注意事项{#special-considerations-for-creating-an-interactive-viewer-preset}
 
-**关于面板中图像缩览图的显示模式**
+**关于面板中图像缩略图的显示模式**
 
-在创建或编辑交互式视频查看器预设时，您可以选择在&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡下的&#x200B;**[!UICONTROL 选定组件]**&#x200B;下拉菜单中选择`InteractiveSwatches`时使用的&#x200B;**[!UICONTROL 显示模式]**&#x200B;设置。 您选择的显示模式会影响在播放视频时缩略图的显示方式和显示时间。 您可以选择`segment`显示模式（默认）或`continuous`显示模式。
+创建或编辑交互式视频查看器预设时，可以选择在&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡下的&#x200B;**[!UICONTROL 选定组件]**&#x200B;下拉菜单中选择`InteractiveSwatches`时要使用的&#x200B;**[!UICONTROL 显示模式]**&#x200B;设置。 您选择的显示模式会影响视频播放时缩略图的显示方式和显示时间。 您可以选择`segment`显示模式（默认）或`continuous`显示模式。
 
 | 显示模式 | 描述 |
 |---|---|
-| [!UICONTROL 区段] | [!UICONTROL 区] 段是现成的交互式视频查看器预设Shoppable_Video_light和Shoppable_Video_dark的默认显示模式，以及您自己创建的任何交互式视频查看器预设。 |
-|  | 在此模式中，如果分配给视频区段的缩略图数少于显示面板中的可见点数，则不会提取下一个或上一个子区段的缩略图以填充面板中的任何空白点。 也就是说，它会保留分配给特定视频区段的色板的显示。 |
-| [!UICONTROL 连续] | 在[!UICONTROL 连续]显示模式中，如果区段中缩略图的数量小于面板中可见缩略图的数量，则查看器在显示最后一个缩略图时会自动包括显示下一个区段或上一个区段的缩略图。 |
+| [!UICONTROL 区段] |  区段是现成交互式视频查看器预设Shoppable_Video_light和Shoppable_Video_dark的默认显示模式，以及您自己创建的任何交互式视频查看器预设。 |
+|  | 在此模式下，如果分配给视频区段的缩略图数量少于显示面板中的可见点数，则不会提取下一个或上一个子区段的缩略图以填充面板中的任何空白点。 即，它保留分配给特定视频区段的色板的显示。 |
+| [!UICONTROL 连续] | 在[!UICONTROL 连续]显示模式下，如果区段中缩略图的数量小于面板中可见缩略图的数量，则在显示最后一个缩略图时，查看器会自动包含来自下一个区段或上一个区段的缩略图显示。 |
 
 **关于交互式视频查看器中的自动滚动行为**
 
 交互式视频查看器中缩略图的自动滚动行为与您选择的显示模式无关。
 
-在创建或编辑交互式视频查看器预设时，您可以从&#x200B;**[!UICONTROL Behavior]**&#x200B;选项卡访问&#x200B;**[!UICONTROL 自动滚动]**。 在“行为”选项卡的&#x200B;**[!UICONTROL 选定的组件]**&#x200B;下拉菜单中，点按 **[!UICONTROL InteractiveSwatches]**。**[!UICONTROL 自动滚动]**&#x200B;复选框列在“IS命令”文本字段的下方。
+创建或编辑交互式视频查看器预设时，您可以从&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡中访问&#x200B;**[!UICONTROL 自动滚动]**。 在“行为”选项卡的&#x200B;**[!UICONTROL 选定的组件]**&#x200B;下拉菜单中，点按 **[!UICONTROL InteractiveSwatches]**。**[!UICONTROL 自动滚动]**&#x200B;复选框列在IS命令文本字段的下方。
 
 如果在查看器预设中禁用&#x200B;**[!UICONTROL 自动滚动]**（清除复选框），则在用户播放视频时，该面板仅显示整个视频长度的第一个缩略图。但是，如果需要，用户可以使用向上和向下箭头图标手动滚动缩略图。
 
 在查看器预设中启用（选择）**[!UICONTROL 自动滚动]**&#x200B;后，在视频播放过程中，分配给视频区段的缩略图图像会在区段开始时滚动到视图中。但是，在某些情况下，区段内某些缩略图的显示时间是其之前或之后缩略图显示时间的两倍。发生此行为的原因是区段中缩略图的数量大于面板中可见缩略图的数量，且不可平均分割。
 
-为说明这一点，假定您有一个30秒的视频区段。 在30秒内总共有9个缩略图可显示。 您的浏览器的大小调整到显示面板中有四个可见的缩略图位置。 30秒视频时间段被分成三个子段。 下表显示了对给定时间子区段显示哪些缩略图的划分：
+为了说明这一点，假设您有一个30秒的视频区段。 此外，30秒内共显示9个缩略图。 您的浏览器的大小调整为显示面板中有四个可见的缩略图位置。 30秒视频时间段分为三个子段。 下表显示了在给定时间子区段中显示哪些缩略图的划分：
 
 | **视频子区段** | **子区段时间（以秒为单位）** | **面板中可见的缩略图** |
 |---|---|---|
@@ -281,13 +280,13 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 | 2 | 10-20 | 4，5，6，7 |
 | 3 | 20-30 | 6，7，8，9 |
 
-视频子区段3没有超出分配给它的缩略图。 另请注意，缩略图 4、6 和 7 在面板中出现的时间是其他缩略图的两倍。
+视频子区段3不会超出分配给它的缩略图。 另请注意，缩略图 4、6 和 7 在面板中出现的时间是其他缩略图的两倍。
 
-查看器根据可用位置的数量，根据面板中显示的缩略图数量，遵循以下逻辑：
+查看器根据可用位置数量在面板中显示缩略图数量的逻辑如下：
 
-* 子区段数=舍入到下一个子区段（缩略图数量/缩略图面板中可见的插槽数，视浏览器窗口大小而定）。
+* 子区段数量=舍入到下一个子区段（缩略图数量/缩略图面板中的可见版块数量，具体取决于浏览器窗口大小）。
 
-   使用上表中的示例，9个缩略图/ 4个插槽= 2.25;查看器逻辑将其舍入为3个子段。
+   使用上表中的示例，9个缩略图/ 4个版块= 2.25;查看器逻辑会将其舍入为3个子区段。
 
 * 缩略图数量=舍入到下一个缩略图（缩略图数量/视频子区段数量）。
 
@@ -295,44 +294,44 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
 * 子区段的持续时间=视频总持续时间/视频子区段的数量。
 
-   使用上表中的示例，30秒/ 3个视频子段=每个视频子段的10秒显示。
+   使用上表中的示例， 30秒/ 3个视频子区段=每个视频子区段的10秒显示。
 
-### 创建传送横幅查看器预设的特殊注意事项{#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+### 创建轮播横幅查看器预设的特殊注意事项{#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
-创建传送横幅查看器预设时，可通过以下方式更改热点的样式：
+创建轮播横幅查看器预设时，可以按如下方式访问更改热点样式：
 
 |  | **描述** | **操作** |
 |---|---|---|
-| **热点图标** | 更改用于热点的图标 | 要更改热点图标图像，请在&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选定组件]**&#x200B;中，点按&#x200B;**[!UICONTROL ImageMapEffect]**。 在&#x200B;**[!UICONTROL 图标]**&#x200B;下，选择&#x200B;**[!UICONTROL 背景]**，并在&#x200B;**[!UICONTROL 图像]**&#x200B;字段中导航到所需的背景图像。 |
+| **热点图标** | 更改用于热点的图标 | 要更改热点图标图像，请在&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选定组件]**&#x200B;中，点按&#x200B;**[!UICONTROL ImageMapEffect]**。 在&#x200B;**[!UICONTROL 图标]**&#x200B;下，选择&#x200B;**[!UICONTROL 背景]**，然后在&#x200B;**[!UICONTROL 图像]**&#x200B;字段中导航到所需的背景图像。 |
 
 ## 激活或取消激活Dynamic Media查看器预设{#activating-or-deactivating-viewer-presets}
 
-用户界面中可用的查看器预设取决于哪些查看器预设在创作模式下处于活动状态。 默认情况下，在创建查看器预设后，查看器预设为&#x200B;*On*。 如果关闭预设，您将不会在“创作”模式下看到它。 如果预设已发布。 无论是打开还是关闭，始终都会发布它。 如果列表变得过于笨拙，或者您不希望某个查看器预设可供使用，您可能希望取消激活查看器预设。
+用户界面中可用的查看器预设取决于哪些查看器预设在创作模式下处于活动状态。 默认情况下，查看器预设在创建后为&#x200B;*On*。 如果关闭预设，则在“创作”模式下将看不到该预设。 如果预设已发布。 无论是打开还是关闭，都会始终发布该内容。 如果列表变得太笨重，或者您不希望某个查看器预设可供使用，您可能需要停用查看器预设。
 
-**要激活或取消激活Dynamic Media查看器预设**:
+**要激活或停用Dynamic Media查看器预设，请执行以下操作**:
 
-1. 在AEM的左上角，点按AEM徽标，然后在左边栏中，点按&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
-1. 在&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面的&#x200B;**[!UICONTROL 状态]**&#x200B;列标题下，点按切换键以激活或取消激活查看器预设。
+1. 点按AEM左上角的AEM徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
+1. 在&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面的&#x200B;**[!UICONTROL 状态]**&#x200B;列标题下，点按切换开关以激活或停用查看器预设。
 
-   激活的查看器预设可在右侧蓝色框内进行切换；停用的查看器预设可让切换显示在灰色浅框内的左侧。
+   已激活的查看器预设在右侧蓝色框中显示切换开关；已停用的查看器预设的切换开关会显示在灰色浅框中的左侧。
 
 ## 发布Dynamic Media查看器预设{#publishing-viewer-presets}
 
-激活（或将&#x200B;*打开*）查看器预设的状态意味着查看器预设在Dynamic Media组件、交互式媒体组件中以及每次视图资产时都可见。
+激活（或打开&#x200B;**）查看器预设的状态意味着查看器预设在Dynamic Media组件、交互式媒体组件中以及每当您查看资产时都可见。
 
-但是，要传送带有查看器预设的资产，还必须发布查看器预设。 必须激活&#x200B;*和*&#x200B;所有查看器预设，才能获取资产的URL或嵌入代码。 您必须激活并发布Dynamic media附带的所有现成查看器预设。 您创建和添加的自定义查看器预设将自动激活，但也必须发布。
+但是，要交付带有查看器预设的资产，还必须发布查看器预设。 必须激活&#x200B;*和*&#x200B;并发布所有查看器预设，才能获取资产的URL或嵌入代码。 您必须激活并发布Dynamic media附带的所有现成查看器预设。 您创建和添加的自定义查看器预设将自动激活，但也必须发布。
 
 请参阅[激活或取消激活查看器预设](#activating-or-deactivating-viewer-presets)。
 
 另请参阅[预览资产](previewing-assets.md)。
 
-**要发布Dynamic Media查看器预设**:
+**要发布Dynamic Media查看器预设**，请执行以下操作：
 
-1. 在AEM的左上角，点按AEM徽标，然后在左边栏中，点按&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
+1. 点按AEM左上角的AEM徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
 1. 选择要发布的一个或多个查看器预设。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 发布]**&#x200B;图标。
 
-## 对Dynamic Media查看器预设{#sorting-viewer-presets}排序
+## 为Dynamic Media查看器预设排序{#sorting-viewer-presets}
 
 **要对Dynamic Media查看器预设进行排序**:
 
@@ -341,18 +340,18 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
 ## 编辑Dynamic Media查看器预设{#editing-viewer-presets}
 
-请注意，编辑任何&#x200B;*预定义的现成查看器预设*&#x200B;都不是受支持的方案。 如果您编辑现成的查看器预设，系统会提示您用新名称保存该查看器预设。
+请注意，不支持编辑任何&#x200B;*预定义的现成查看器预设*。 如果您编辑现成的查看器预设，系统会提示您使用新名称保存该查看器预设。
 
 **要编辑Dynamic Media查看器预设**:
 
-1. 在AEM的左上角，点按AEM徽标，然后在左边栏中，点按&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
-1. 选中查看器预设标题左侧的框，以选择预设。
+1. 点按AEM左上角的AEM徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
+1. 选中查看器预设标题左侧的框以选择预设。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 编辑]**。
-1. 在&#x200B;**[!UICONTROL “编辑查看器预设”]**&#x200B;页面上，对查看器预设进行所需的更改。
+1. 在&#x200B;**[!UICONTROL 编辑查看器预设]**&#x200B;页面上，对查看器预设进行所需的更改。
 1. 执行下列操作之一：
 
-   * 点按&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改并返回至&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面。
-   * 点按&#x200B;**[!UICONTROL 取消]**&#x200B;可撤消您所做的任何更改，并返回至&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面。
+   * 点按&#x200B;**[!UICONTROL Save]**&#x200B;以保存所做更改并返回到&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面。
+   * 点按&#x200B;**[!UICONTROL 取消]**，撤消您所做的任何更改并返回到&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面。
 
 ## 删除自定义Dynamic Media查看器预设{#deleting-custom-viewer-presets}
 
@@ -360,8 +359,8 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
 **要删除自定义Dynamic Media查看器预设**:
 
-1. 在AEM的左上角，点按AEM徽标，然后在左边栏中，点按&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
-1. 在“**[!UICONTROL 查看器预设]**”页面上，选中&#x200B;**[!UICONTROL 预设标题]**，然后点按&#x200B;**[!UICONTROL 垃圾桶]**&#x200B;图标。
+1. 点按AEM左上角的AEM徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具>资产>查看器预设]**。
+1. 在&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面上，选中&#x200B;**[!UICONTROL 预设标题]**，然后点按&#x200B;**[!UICONTROL 垃圾桶]**&#x200B;图标。
 1. 点按&#x200B;**[!UICONTROL 删除]**。
 
 ## 将Dynamic Media查看器预设应用到资产{#applying-a-viewer-preset-to-an-asset}
@@ -370,18 +369,18 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
 **要将Dynamic Media查看器预设应用到资产，请执行以下操作**:
 
-1. 打开资产，然后在页面左上角附近，点按下拉菜单，然后选择&#x200B;**[!UICONTROL 查看器]**。
+1. 打开资产，然后点按页面左上角附近的下拉菜单，然后选择&#x200B;**[!UICONTROL 查看器]**。
 
    >[!NOTE]
    >
    >如果已发布资产和选定的查看器，则在选择查看器预设后 **[!UICONTROL 将显示]** “ **[!UICONTROL URL]** ”和“嵌入”按钮。
 
-1. 从左侧窗格中选择一个查看器预设，以将其应用于资产。
+1. 从左窗格中选择一个查看器预设，以将其应用到资产。
 
    您可以[复制URL以与其他用户共享](linking-urls-to-yourwebapplication.md)。
 
-## 使用Dynamic Media查看器预设{#delivering-assets-with-viewer-presets}传送资产
+## 使用Dynamic Media查看器预设传送资产{#delivering-assets-with-viewer-presets}
 
 要获取查看器预设的 URL，请参阅[将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)。另请参阅[将视频查看器嵌入网页](embed-code.md)。
 
-如果您使用AEM作为WCM，则可以直接在页面上使用查看器预设添加资产。 请参阅[将Dynamic Media资产添加到页面](adding-dynamic-media-assets-to-pages.md)。
+如果您使用AEM作为WCM，则可以直接在页面上使用查看器预设添加资产。 请参阅[将Dynamic Media Assets添加到页面](adding-dynamic-media-assets-to-pages.md)。

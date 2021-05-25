@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 1ab81235-2627-4304-bbf2-71598de948db
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 93%
 
 ---
-
 
 # 创建有效的新闻稿登陆页面{#creating-an-effective-newsletter-landing-page}
 
@@ -31,7 +30,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
->Adobe不打算进一步增强此功能(管理潜在客户和列表)。\
+>Adobe不打算进一步增强此功能（管理潜在客户和列表）。\
 >建议利用[Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md)。
 
 ## 为新闻稿创建列表 {#creating-a-list-for-the-newsletter}

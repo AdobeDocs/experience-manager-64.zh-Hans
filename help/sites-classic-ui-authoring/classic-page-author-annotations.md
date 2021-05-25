@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
-translation-type: tm+mt
-source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
+exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 95%
 
 ---
-
 
 # 编辑页面时添加注释{#annotations-when-editing-a-page}
 
@@ -39,7 +38,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->根据您的要求，您还可以开发一个工作流，在添加、更新或删除注释时发送通知。
+>根据您的要求，您还可以开发一个工作流，用于在添加、更新或删除注释时发送通知。
 
 ## 注释 {#annotations}
 
@@ -53,7 +52,7 @@ ht-degree: 95%
 
 对将注释附加到的段落执行的任何复制、剪切或删除操作也会包含注释（包括相关草图）；对于复制或剪切操作，注释（和相关草图）的位置会保留其与原始段落的相对位置。
 
-通过拖动注释的右下角，还可以增大或减小注释的大小。
+通过拖动注释的右下角，可以增加或减少其大小。
 
 为便于跟踪，页脚行将指示创建注释的用户以及日期。后续作者可以编辑同一注释（将更新页脚）或为同一段落创建新注释。
 
@@ -107,4 +106,3 @@ ht-degree: 95%
 
 * 如果移动或复制段落，则同时会移动或复制任何相关注释及其草图；它们相对于段落的位置将保持不变。
 * 如果删除注释，则也会删除附加到该注释的所有草图。
-

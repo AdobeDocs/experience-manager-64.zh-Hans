@@ -1,6 +1,6 @@
 ---
-title: 添加客户端库
-seo-title: 添加客户端库
+title: 添加Clientlibs
+seo-title: 添加Clientlibs
 description: 添加ClientLibraryFolder
 seo-description: 添加ClientLibraryFolder
 uuid: cdc1d258-2011-4517-9206-dd2b5d1f7e0d
@@ -9,24 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
-translation-type: tm+mt
-source-git-commit: 805e4411930749ff4b6b05ea4a8b87b4f96d72fd
+exl-id: 9b8c3d1c-a9b1-4dde-9044-46c8f2b22c22
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 1%
 
 ---
 
-
 # 添加Clientlibs {#add-clientlibs}
 
 ## 添加ClientLibraryFolder(clientlibs){#add-a-clientlibraryfolder-clientlibs}
 
-创建名为`clientlibs`的ClientLibraryFolder，其中将包含用于呈现站点页面的JS和CSS。
+创建名为`clientlibs`的ClientLibraryFolder，其中将包含用于呈现网站页面的JS和CSS。
 
-赋予此客户端库的`categories`属性值是用于从内容页面直接包含此clientlib或将其嵌入到其他clientlib的标识符。
+给予此客户端库的`categories`属性值是用于从内容页面直接包含此clientlib或将其嵌入到其他clientlib中的标识符。
 
-1. 使用&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;展开`/etc/designs`
+1. 使用&#x200B;**[!UICONTROL CRXDE Lite]**，展开`/etc/designs`
 
 1. 右键单击`an-scf-sandbox`并选择`Create Node`
 
@@ -41,11 +40,11 @@ ht-degree: 1%
 
 * 名称：**[!UICONTROL 类别]**
 * 类型：**[!UICONTROL 字符串]**
-* 值：**[!UICONTROL apps.an scf-sandbox]**
-* 单击&#x200B;**[!UICONTROL 添加]**
-* 单击&#x200B;**[!UICONTROL 保存全部]**
+* 值：**[!UICONTROL apps.anscf-sandbox]**
+* 单击&#x200B;**[!UICONTROL Add]**
+* 单击&#x200B;**[!UICONTROL Save All]**
 
-注意：用“apps”预先呈现类别价值。 是用于将“拥有的应用程序”标识为位于/apps文件夹（而非/libs）中的约定。  重要：添加占位符`js.txt`和`css.txt`文件。 （没有它们，它不是正式的cq:ClientLibraryFolder。）
+注意：使用“apps”为类别值添加前缀。 是将“拥有的应用程序”标识为位于/apps文件夹中，而不是/libs中的约定。  重要信息：添加占位符`js.txt`和`css.txt`文件。 （没有cq:ClientLibraryFolder，它不是正式的。）
 
 
 1. 右键单击&#x200B;**`/etc/designs/an-scf-sandbox/clientlibs`**
@@ -55,11 +54,11 @@ ht-degree: 1%
 1. 选择&#x200B;**[!UICONTROL 创建文件……]**
 1. 输入&#x200B;**[!UICONTROL 名称]**:`js.txt`
 
-1. 单击&#x200B;**[!UICONTROL 保存全部]**
+1. 单击&#x200B;**[!UICONTROL Save All]**
 
 ![chlimage_1-221](assets/chlimage_1-221.png)
 
-css.txt和js.txt的第一行标识了从中找到以下一列表文件的基本位置。
+css.txt和js.txt的第一行用于标识可从中找到以下文件列表的基本位置。
 
 尝试将css.txt的内容设置为：
 
@@ -68,7 +67,7 @@ css.txt和js.txt的第一行标识了从中找到以下一列表文件的基本�
  style.css
 ```
 
-然后，在名为style.css的clientlibs下创建一个文件，并将内容设置为：
+然后，在名为style.css的clientlibs下创建文件，并将内容设置为：
 
 `body {`
 
@@ -76,15 +75,15 @@ css.txt和js.txt的第一行标识了从中找到以下一列表文件的基本�
 
 `}`
 
-## 嵌入SCF客户端库{#embed-scf-clientlibs}
+## 嵌入SCF Clientlibs {#embed-scf-clientlibs}
 
-在`clientlibs`节点的&#x200B;**[!UICONTROL 属性]**&#x200B;选项卡中，输入多值字符串属性&#x200B;**[!UICONTROL embed]**。 这将为SCF组件](client-customize.md#clientlibs-for-scf)嵌入必需的[客户端库(clientlibs)。 在本教程中，我们将添加社区组件所需的许多客户端库。
+在&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡的`clientlibs`节点中，输入多值String属性&#x200B;**[!UICONTROL embed]**。 这将为SCF组件](client-customize.md#clientlibs-for-scf)嵌入必需的[客户端库(clientlibs)。 在本教程中，我们将为社区组件添加许多必需的clientlib。
 
-**请注** 意，这可能是生产站点所需的方法，也可能不是，因为每个页面下载的客户端库的方便性与大小／速度之间存在着差异。
+**** 请注意，这可能是生产站点所需的方法，也可能不是，因为考虑到了方便性与为每个页面下载的clientlib的大小/速度。
 
-如果仅在一个页面上使用一个功能，则可以直接在页面上包含该功能的完整clientlib，例如，&lt;% ui:includeClientLib类别=cq.social.hbs.forum&quot; %>
+如果只在一个页面上使用一项功能，则可以直接在页面上包含该功能的完整clientlib，例如&lt;% ui:includeClientLib类别=cq.social.hbs.forum&quot; %>
 
-在这种情况下，我们将其全部包含在内，因此我们更希望使用更基本的SCF客户端，即作者的客户端库：
+在本例中，我们将全部包含在内，因此，我们希望使用更基本的SCF clientlib，即作者clientlib:
 
 * 名称: **`embed`**
 * 类型: **`String`**
@@ -94,7 +93,7 @@ css.txt和js.txt的第一行标识了从中找到以下一列表文件的基本�
 
    *&lt;enter> 将弹出对话框*
 
-   *单击&#x200B;**[每]**个条目后的+可添加以下clientlib类别:*
+   *单击每&#x200B;**[个条目后面的+]**可添加以下clientlib类别：*
 
    * **`cq.ckeditor`**
    * **`cq.social.author.hbs.comments`**
@@ -104,40 +103,40 @@ css.txt和js.txt的第一行标识了从中找到以下一列表文件的基本�
    * **`cq.social.author.hbs.voting`**
    * 单击&#x200B;**[!UICONTROL 确定]**
 
-* 单击&#x200B;**[!UICONTROL 保存全部]**
+* 单击&#x200B;**[!UICONTROL Save All]**
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-这是`/etc/designs/an-scf-sandbox/clientlibs`现在在存储库中的显示方式：
+下面显示了`/etc/designs/an-scf-sandbox/clientlibs`在存储库中的显示方式：
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-## 在PlayPage模板{#include-clientlibs-in-playpage-template}中包含Clientlibs
+## 在PlayPage模板{#include-clientlibs-in-playpage-template}中包含Clientlib
 
-如果页面中不包含`apps.an-scf-sandbox` ClientLibraryFolder类别，则SCF组件将无法正常工作，也无法设置样式，因为必需的Javascript和样式将不可用。
+如果页面上没有`apps.an-scf-sandbox` ClientLibraryFolder类别，则SCF组件将无法正常工作，也无法按照必需的Javascript设置样式，并且样式将不可用。
 
-例如，如果不包括clientlib，则SCF注释组件将显示为未设置样式：
+例如，如果不包含clientlibs，则SCF注释组件将显示为未设置样式：
 
 ![chlimage_1-224](assets/chlimage_1-224.png)
 
-包含apps.an-scf-sandbox clientlibs后，SCF注释组件将显示样式：
+在包含apps.an-scf-sandbox clientlibs后，SCF评论组件会显示样式：
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-include语句属于`<html>`脚本的`<head>`部分。 默认&#x200B;**`foundation head.jsp`**&#x200B;包含可以覆盖的脚本：**`headlibs.jsp`**。
+include语句属于`<html>`脚本的`<head>`部分。 默认的&#x200B;**`foundation head.jsp`**&#x200B;包含一个可以覆盖的脚本：**`headlibs.jsp`**。
 
 **复制headlibs.jsp并包含clientlibs:**
 
 1. 使用&#x200B;**[!UICONTROL CRXDE Lite]**，选择&#x200B;**`/libs/foundation/components/page/headlibs.jsp`**
-1. 右键单击并选择&#x200B;**[!UICONTROL 复制]**（或从工具栏中选择复制）
+1. 右键单击并选择&#x200B;**[!UICONTROL Copy]**（或从工具栏中选择Copy）
 1. 选择 **`/apps/an-scf-sandbox/components/playpage`**
 1. 右键单击并选择&#x200B;**[!UICONTROL 粘贴]**（或从工具栏中选择粘贴）
-1. 多次单击&#x200B;**`headlibs.jsp`**&#x200B;以打开它
+1. 双击&#x200B;**`headlibs.jsp`**&#x200B;以将其打开
 1. 在文件末尾附加以下行
 
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. 单击&#x200B;**[!UICONTROL 保存全部]**
+1. 单击&#x200B;**[!UICONTROL Save All]**
 
 
 ```xml
@@ -150,19 +149,19 @@ include语句属于`<html>`脚本的`<head>`部分。 默认&#x200B;**`foundatio
 <ui:includeClientLib categories="apps.an-scf-sandbox"/>
 ```
 
-在浏览器中加载您的网站并查看背景是否不是蓝色阴影。
+在浏览器中加载您的网站，并查看背景是否不是蓝色阴影。
 
 [http://localhost:4502/content/an-scf-sandbox/en/play.html](http://localhost:4502/content/an-scf-sandbox/en/play.html)
 
 ![chlimage_1-226](assets/chlimage_1-226.png)
 
-## 保存您的工作到{#saving-your-work-so-far}
+## 到目前为止正在保存您的工作{#saving-your-work-so-far}
 
-此时，存在极简的沙箱，可能值得保存为包，这样，在播放时，如果存储库损坏并想要开始，您可以关闭服务器，重命名或删除文件夹crx-quickstart/，打开服务器，上传并安装此保存的包，无需重复这些最基本的步骤。
+此时，存在一个极简主义的沙箱，可能值得另存为一个包，这样在播放时，如果您的存储库已损坏并且您希望重新开始，您就可以关闭服务器、重命名或删除文件夹crx-quickstart/、打开服务器、上载并安装此保存的包，并且不必重复这些最基本的步骤。
 
-此包存在于[为迫不及待地跳入和开始播放的用户创建示例页面](create-sample-page.md)教程中……
+[创建示例页面](create-sample-page.md)教程中存在此包，教程针对的是那些迫不及待地想要跳入并开始播放的用户……
 
-要创建包，请执行以下操作：
+要创建资源包，请执行以下操作：
 
 
 * 从&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;中，单击[包图标](http://localhost:4502/crx/packmgr/)
@@ -170,25 +169,25 @@ include语句属于`<html>`脚本的`<head>`部分。 默认&#x200B;**`foundatio
 
    * 包名称: `an-scf-sandbox-minimal-pkg`
    * 版本号: `0.1`
-   * 组：&lt;leave as default>
+   * 群组：&lt;保留为默认值>
    * 单击&#x200B;**[!UICONTROL 确定]**
 
 * 单击&#x200B;**[!UICONTROL 编辑]**
 
-   * 选择&#x200B;**[!UICONTROL 过滤器]**&#x200B;选项卡
+   * 选择&#x200B;**[!UICONTROL Filters]**&#x200B;选项卡
 
-      * 单击&#x200B;**[!UICONTROL 添加过滤器]**
-      * 根路径：&lt;浏览至`/apps/an-scf-sandbox`
-      * 单击&#x200B;**[!UICONTROL 完成]**
-      * 单击&#x200B;**[!UICONTROL 添加过滤器]**
-      * 根路径：&lt;浏览至`/etc/designs/an-scf-sandbox`
-      * 单击&#x200B;**[!UICONTROL 完成]**
-      * 单击&#x200B;**[!UICONTROL 添加过滤器]**
-      * 根路径：&lt;浏览至`/content/an-scf-sandbox`
-      * 单击&#x200B;**[!UICONTROL 完成]**
-   * 单击&#x200B;**[!UICONTROL 保存]**
+      * 单击&#x200B;**[!UICONTROL Add filter]**
+      * 根路径：&lt;浏览`/apps/an-scf-sandbox`>
+      * 单击&#x200B;**[!UICONTROL Done]**
+      * 单击&#x200B;**[!UICONTROL Add filter]**
+      * 根路径：&lt;浏览`/etc/designs/an-scf-sandbox`>
+      * 单击&#x200B;**[!UICONTROL Done]**
+      * 单击&#x200B;**[!UICONTROL Add filter]**
+      * 根路径：&lt;浏览`/content/an-scf-sandbox`>
+      * 单击&#x200B;**[!UICONTROL Done]**
+   * 单击&#x200B;**[!UICONTROL Save]**
 
 
 * 单击&#x200B;**[!UICONTROL Build]**
 
-现在，您可以选择&#x200B;**[!UICONTROL 下载]**&#x200B;将其保存到磁盘并在其他位置选择&#x200B;**[!UICONTROL 上传包]**，还可以选择&#x200B;**[!UICONTROL 更多>复制]**，以便将沙箱推送到本地主机发布实例以扩展沙箱领域。
+现在，您可以选择&#x200B;**[!UICONTROL Download]**&#x200B;将其保存到磁盘，然后选择其他位置的&#x200B;**[!UICONTROL Upload Package]**，还可以选择&#x200B;**[!UICONTROL More > Replicate]**，以将沙盒推送到本地主机发布实例以扩展沙盒的领域。

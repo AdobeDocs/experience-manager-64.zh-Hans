@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
-feature: Content Fragments
+feature: 内容片段
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '470'
@@ -24,43 +23,43 @@ ht-degree: 12%
 
 >[!CAUTION]
 >
->某些内容片段功能要求应用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md)。
+>某些内容片段功能需要应用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md)。
 
 ## 权限 — 删除或不删除{#permissions-delete-or-not-delete}
 
-删除内容的功能非常强大，但可能非常敏感，许多行业需要限制和控制这些权限的分配方式。
+删除内容的功能非常强大，但可能很敏感，许多行业都需要限制和控制这些权限的分配方式。
 
 关于删除权限，内容片段必须考虑在两个级别：
 
 1. **内容片段作为单个实体。**
 
-   * **用例**:需要编辑/更新内容片段并删除整 **个片段的用户**。
-   * **权限**:可以 [](/help/sites-administering/security.md#actions) 通过“用 [户”和/或“组管理”来分配“删除”权限](/help/sites-administering/security.md#managing-permissions)。
+   * **用例**:需要编辑/更新内容片段 — 和删除 **整个片段的用户**。
+   * **权限**:可以 [](/help/sites-administering/security.md#actions) 通过用户 [和/或群组管理来分配“删除”权限](/help/sites-administering/security.md#managing-permissions)。
 
-1. **组成内容片段的多个子实体；例如，variations， sub-nodes。**
+1. **构成内容片段的多个子实体；例如，变体、子节点。**
 
-   内容片段编辑器的基本操作要求可以删除这种临时子元素。 例如，当操作变量时；此外，在编辑元数据或管理关联的内容时也是如此。
+   内容片段编辑器的基本操作要求可以删除此类临时子元素。 例如，在处理变量时；在编辑元数据或管理关联的内容时，也可以。
 
-   * **用例**:需要编辑/更新内容片段的用户，不 **允许删除整个片段**。
+   * **用例**:需要编辑/更新内容片段的用户 —  **不允许删除整个片段**。
    * **权限**:请参 [阅仅编辑器功能所需的权限](content-fragments-delete.md#permissions-required-for-editor-functionality-only)。
 
 >[!NOTE]
 >
->当用户没有任何[删除](/help/sites-administering/security.md#actions)权限时，内容片段编辑器以&#x200B;*只读*&#x200B;模式运行。
+>当用户没有任何[Delete](/help/sites-administering/security.md#actions)权限时，内容片段编辑器将以&#x200B;*只读*&#x200B;模式运行。
 
 >[!NOTE]
 >
->另请参阅[如何审核AEM](/help/sites-administering/audit-user-management-operations.md)中的用户管理操作。
+>另请参阅[如何在AEM](/help/sites-administering/audit-user-management-operations.md)中审核用户管理操作。
 
-## 仅编辑器功能所需的权限{#permissions-required-for-editor-functionality-only}
+## 仅{#permissions-required-for-editor-functionality-only}编辑器功能所需的权限
 
 对于需要编辑／更新内容片段的用户， **不允许他们删除整个片段**，必须分配特定权限，因为内容片段编辑器的基本操作要求可以删除临时子元素。
 
-例如，当操作变量时；此外，在编辑元数据或管理关联的内容时也是如此。
+例如，在处理变量时；在编辑元数据或管理关联的内容时，也可以。
 
 >[!NOTE]
 >
->编辑/更新内容片段所需的删除权限包括在通过“用户”和/或“组管理”分配的“删除”权限[中。](/help/sites-administering/security.md#managing-permissions)
+>编辑/更新内容片段所需的删除权限包含在通过“用户”和/或“组管理”分配的“删除”权限[中。](/help/sites-administering/security.md#managing-permissions)
 
 编辑/更新片段所需的权限需要应用于包含内容片段的节点或相应的父节点（在`/content/dam`下的任何级别）。 当分配给此类父节点时，权限将应用于该分支中的所有节点。
 
@@ -70,15 +69,15 @@ ht-degree: 12%
 
 >[!CAUTION]
 >
->也可以设置`/content/dam`的权限，因为所有内容片段都存储在此处。
+>也可以对`/content/dam`设置权限，因为此处存储了所有内容片段。
 >
->但是，此操作也会将相同的删除权限应用于&#x200B;*all*&#x200B;其他资产类型。
+>但是，此操作也会将相同的删除权限应用于&#x200B;*所有*&#x200B;其他资产类型。
 
-允许特定用户和/或组编辑/更新内容片段的先决条件是：
+允许特定用户和/或群组编辑/更新内容片段的先决条件是：
 
 >[!NOTE]
 >
->此列表显示所需的所有权限，而不仅仅是删除权限。
+>此列表显示所需的所有权限，而不只是删除权限。
 
 * 对于内容片段节点或文件夹：
 
@@ -86,16 +85,16 @@ ht-degree: 12%
 
 * 对于所有内容片段的`jcr:content`节点：
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` 和  `jcr:removeChildNodes`
+   * `jcr:addChildNodes`、 `jcr:modifyProperties` 和  `jcr:removeChildNodes`
 
-* 对于所有内容片段`jcr:content`下的所有节点：
+* 对于所有内容片段的`jcr:content`以下的所有节点：
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties` 和 `jcr:removeChildNodes`,  `jcr:removeNode`
+   * `jcr:addChildNodes`、 `jcr:modifyProperties` 和 `jcr:removeChildNodes`、  `jcr:removeNode`
 
-这些`remove`权限必须使用访问控制列表在CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management)内进行[管理。
+这些`remove`权限必须使用CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management)中的访问控制列表进行[管理。
 
-`add`和`modify`权限也可以在CRXDE Lite中管理，或使用用户管理控制台。
+`add`和`modify`权限也可以在CRXDE Lite中管理，或使用用户管理控制台管理。
 
-例如，组`content-authors-no-delete`的`remove`权限定义：
+例如，对组`content-authors-no-delete`的`remove`权限的定义：
 
 ![cf-delete-03](assets/cf-delete-03.png)

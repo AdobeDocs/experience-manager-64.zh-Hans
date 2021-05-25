@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: 2df7c08f-db17-4666-ba39-e81cc2e656d7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 96%
 
 ---
-
 
 # 处理页面版本{#working-with-page-versions}
 
@@ -127,7 +126,7 @@ ht-degree: 96%
 
 1. 选择&#x200B;**与当前比较**。此时将打开[页面差异](/help/sites-authoring/page-diff.md)，并显示存在的差异。
 
-## 时间扭曲  {#timewarp}
+## 时间扭曲 {#timewarp}
 
 时间扭曲是一项功能，旨在模拟过去特定时间某个页面的&#x200B;*已发布*&#x200B;状态。
 
@@ -168,4 +167,4 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->时间扭曲是一种工具，可帮助作者理解和创建其内容。 而不是用作审查日志或用于法律目的。
+>时间扭曲旨在作为一种工具，帮助作者理解和创建其内容。 而不是用作审查日志或用于法律目的。

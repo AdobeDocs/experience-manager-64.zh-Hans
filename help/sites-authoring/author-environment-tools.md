@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 5bb5f984-f741-4185-acb0-ffcf7e116875
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 93%
 
 ---
-
 
 # 创作环境和工具{#authoring-the-environment-and-tools}
 
@@ -71,9 +70,9 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 * **移动设备（例如 iPad）**
 
-   组件浏览器完全覆盖了所编辑的页面。
+   组件浏览器完全覆盖正在编辑的页面。
 
-   要向页面添加组件，请按住所需的组件并向右移动——组件浏览器将关闭以再次显示页面——您可以在页面中放置组件。
+   要向页面添加组件，请长按所需的组件并将其向右移动 — 组件浏览器将关闭以再次显示页面 — 您可以在该页面中放置组件。
 
    ![screen_shot_2018-03-22at141752](assets/screen_shot_2018-03-22at141752.png)
 
@@ -140,7 +139,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * 名称
 * 路径
 * 资产类型，例如图像、手稿、文档、视频、页面、段落和产品
-* 资源特性，如方向（纵向、横向、正方形）和样式（颜色、单色、灰度）
+* 资产特性，如方向（纵向、横向、正方形）和样式（颜色、单色、灰度）
 
    * 仅适用于某些资产类型
 
@@ -269,9 +268,9 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 例如，在适当时，**页面信息**&#x200B;还有以下选项：
 
 * [提升启动项](/help/sites-authoring/launches-promoting.md)，如果该页面是启动项。
-* [编辑](/help/sites-authoring/templates.md) 模板(如果页面基于可编辑的模 [板)](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [编辑](/help/sites-authoring/templates.md) 模板(如果页面基于可编辑的 [模板)](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [在经典UI](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) 中打开如果管理员 [启用了此选项](/help/sites-administering/enable-classic-ui-editor.md)
+* [在经典UI中](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) 打开如果管理员 [已启用此选项](/help/sites-administering/enable-classic-ui-editor.md)
 
 另外，在适当时，**页面信息**&#x200B;还允许访问分析和建议。
 

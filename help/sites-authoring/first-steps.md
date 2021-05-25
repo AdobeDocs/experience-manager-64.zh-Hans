@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
-translation-type: tm+mt
-source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+exl-id: c4b0211f-aaaf-44e5-89bb-6b951dbdb98f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 93%
 
 ---
-
 
 # 创作的首要步骤{#first-steps-for-authors}
 
@@ -24,9 +23,9 @@ ht-degree: 93%
 
 它涵盖以下内容：
 
-* [入门](#getting-started) -详细介绍创建和发布首个页面所需的基本事件序列。
+* [入门](#getting-started)  — 详细介绍创建和发布首个页面所需的一系列基本事件。
 
-* [其他操作](#further-actions) -继续执行您在创作时可以使用的许多其他操作。
+* [其他操作](#further-actions)  — 接下来，您可以在创作时使用的许多其他操作。
 
 ## 概述 {#overview}
 
@@ -61,7 +60,7 @@ ht-degree: 93%
 * [使用预览模式](/help/sites-authoring/editing-content.md#preview-mode)（预先查看发布时的外观）
 * [锁定页面](/help/sites-authoring/editing-content.md#locking-a-page)
 
-### 发布页面  {#publishing-a-page}
+### 发布页面 {#publishing-a-page}
 
 完成页面编辑之后，您将需要[发布（或激活）页面](/help/sites-authoring/publishing-pages.md)，以便网站的访客可以使用该内容。
 

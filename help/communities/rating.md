@@ -9,32 +9,31 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
-translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+exl-id: 1de28140-5334-4ca2-a476-5ad253809808
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 1%
 
 ---
 
-
 # 使用评级{#using-ratings}
 
-`Rating`组件单独使用，或与其他Communities功能结合使用。 此组件允许已登录的社区成员通过对内容进行评级来表达其意见。
+`Rating`组件是独立使用的，也可与其他Communities功能结合使用。 此组件允许已登录的社区成员通过对内容进行评级来表达其意见。
 
 ## 向页面{#adding-a-rating-to-a-page}添加评级
 
-要在创作模式下将`Rating`组件添加到页面，请找到组件`Communities / Rating`并将其拖动到页面上的位置，如要对成员进行评级的相对于功能的位置。
+要在创作模式下将`Rating`组件添加到页面，请找到组件`Communities / Rating`并将其拖动到页面上的位置，如相对于要评级的成员的功能的位置。
 
-有关必要的信息，请访问[社区组件基础知识](basics.md)。
+有关必要信息，请访问[社区组件基础知识](basics.md)。
 
-当包含[必需的客户端库](rating-basics.md#essentials-for-client-side)时，将显示`Rating`组件。
+当包含[所需的客户端库](rating-basics.md#essentials-for-client-side)时，将显示`Rating`组件。
 
 ![chlimage_1-493](assets/chlimage_1-493.png)
 
-## 配置等级{#configuring-rating}
+## 配置评级{#configuring-rating}
 
-选择要访问的已放置`Rating`组件，然后选择打开编辑对话框的`Configure`图标。
+选择要访问的已放置的`Rating`组件，然后选择`Configure`图标以打开编辑对话框。
 
 ![chlimage_1-494](assets/chlimage_1-494.png)
 
@@ -42,19 +41,19 @@ ht-degree: 1%
 
 ![chlimage_1-495](assets/chlimage_1-495.png)
 
-**[!UICONTROL Tally Name]**
-(*必需*)唯一标识此实例 `Rating`的简单名称。必须为存储库的有效节点名称。
+**[!UICONTROL 计数名称]**
+(*必需*)唯一标识此实 `Rating`例的简单名称。必须是存储库的有效节点名称。
 
-## 站点访客体验{#site-visitor-experience}
+## 网站访客体验{#site-visitor-experience}
 
 ### 成员 {#members}
 
-每个成员只允许一个等级。 会员可随时更改其评级。
+每个成员只允许一个评级。 会员可随时更改其评级。
 
 ### 匿名 {#anonymous}
 
-不支持匿名发布评级。 站点访客必须注册（成为会员）并登录才能参加。
+不支持匿名发布评级。 网站访客必须注册（成为会员）并登录以参与。
 
 ## 附加信息 {#additional-information}
 
-有关开发人员的详细信息，请参阅[ Rating Essentials](rating-basics.md)页面。
+有关更多信息，请参阅[Rating Essentials](rating-basics.md)页面，供开发人员使用。

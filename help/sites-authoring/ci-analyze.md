@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
-translation-type: tm+mt
-source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+exl-id: dc24edaf-ca1d-4a6b-a2dc-86677267e18d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 94%
 
 ---
-
 
 # 分析页面性能{#analyzing-page-performance}
 
@@ -111,4 +110,4 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->创建的任务还包括应用SEO推荐的页面的路径。
+>创建的任务还包括应用SEO推荐的页面路径。

@@ -9,43 +9,41 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
-feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: PDF 生成器
+exl-id: 6942b6fc-8d04-429f-8433-1ab74c68fcc1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
-
 # 配置回退字体{#configuring-fallback-fonts}
 
-您可以手动配置FontManagerResources.properties文件，将默认AEM表单字体映射到回退（或替换）（如果服务器上没有默认字体）。 此属性文件位于adobe-fontmanager.jar文件中。
+您可以手动配置FontManagerResources.properties文件，以将默认的AEM表单字体映射到回退（或替换）（如果服务器上没有默认字体）。 此属性文件位于adobe-fontmanager.jar文件中。
 
 >[!NOTE]
 >
->回退字体配置也适用于汇编器服务。
+>回退字体配置也适用于汇编程序服务。
 
-1. 导航到&#x200B;*[aem-forms root]*/configurationManager/export目录中的adobe-livecycle-*[appserver]*.ear文件，制作备份副本，并取消打包原始文件。
+1. 导航到&#x200B;*[aem-forms根]*/configurationManager/export目录中的adobe-livecycle-*[appserver]*.ear文件，创建备份副本，并取消原始文件的打包。
 1. 找到adobe-fontmanager.jar文件并将其解包。
 1. 找到FontManagerResources.properties文件，并在文本编辑器中将其打开。
-1. 根据需要修改“常规”和“回退”字体位置和名称，并保存文件。
+1. 根据需要修改通用字体和回退字体位置和名称，并保存文件。
 
-   FontManagerResources.properties文件中的字体项相对于&#x200B;*[aem-forms root]*/fonts目录。 如果指定的字体不是默认的AEM表单字体，则必须在此目录结构中（在现有目录中或新创建的目录中）安装这些字体。
+   FontManagerResources.properties文件中的字体条目与&#x200B;*[aem-forms根]*/fonts目录相关。 如果指定的字体不是默认的AEM表单字体，则必须在此目录结构中（在现有目录中或新创建的目录中）安装这些字体。
 
    >[!NOTE]
    >
-   >如果指定的字体或默认字体不包含特定的Unicode字符，或者如果该字符不可用，则根据以下优先级从回退字体中提取该字符：
+   >如果指定的字体或默认字体不包含特定的unicode字符，或者如果不可用，则根据以下优先级从回退字体中提取该字符：
 
    * 特定于区域设置的字体
-   * 如果未设置区域设置，则ROOT字体
+   * 未设置区域设置时的根字体
    * 通用字体，按回退表中的顺序集搜索
 
 1. 重新打包adobe-fontmanager.jar文件。
-1. 重新打包adobe-livecycle-*[appserver]*.ear文件，然后手动或通过运行Configuration Manager重新部署它。
+1. 重新打包adobe-livecycle-*[appserver]*.ear文件，然后手动或通过运行Configuration Manager重新部署该文件。
 
 >[!NOTE]
 >
->请勿使用Configuration Manager重新打包adobe-livecycle-[appserver].ear文件，因为它将用AEM表单默认值覆盖您的修改。
-
+>请勿使用Configuration Manager重新打包adobe-livecycle-[appserver].ear文件，因为它将使用AEM表单默认值覆盖您的修改。

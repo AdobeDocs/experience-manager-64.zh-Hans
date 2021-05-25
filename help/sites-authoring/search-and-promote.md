@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 50ba6a09-d6cb-4ec0-8a0f-af0da8cc3d2d
-translation-type: tm+mt
-source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+exl-id: 735e5880-3226-4b2a-81f7-b8b4baa0d1ec
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 79%
 
 ---
-
 
 # 向页面添加Search&amp;Promote功能{#adding-search-promote-features-to-your-page}
 
@@ -31,5 +30,4 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->有关将 Search&amp;Promote 功能添加到您的页面的详细信息，请参阅经典 UI 创作文档。有关详细信息，请参阅[向页面添加搜索和提升功能](/help/sites-classic-ui-authoring/classic-feature-search-promote.md)。
-
+>有关将 Search&amp;Promote 功能添加到您的页面的详细信息，请参阅经典 UI 创作文档。有关更多信息，请参阅[将Search &amp; Promote功能添加到页面](/help/sites-classic-ui-authoring/classic-feature-search-promote.md)。

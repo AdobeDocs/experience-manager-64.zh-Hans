@@ -1,41 +1,40 @@
 ---
 title: 搜索视频资产
-description: 使用关键字、文件属性（如Mime类型、大小或最近修改的时间戳）在AEM Assets中快速查找您的文件。
+description: 使用关键字、文件属性（如Mime类型、大小或最近修改的时间戳）可快速在AEM Assets中查找您的文件。
 contentOwner: AG
-feature: Video,Search
+feature: 视频，搜索
 role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '580'
 ht-degree: 45%
 
 ---
 
-
 # 搜索视频资产 {#searching-video-assets}
 
-要节省浏览可能数百个视频所需的时间和精力，请使用关键字、文件属性（如文件类型）或最近修改的时间戳来快速查找您的文件。
+为了节省时间和精力，不必浏览可能数百个视频，请使用关键字、文件属性（如文件类型）或最近修改的时间戳来快速查找您的文件。
 
-如果未看到要查找的文件，可单击搜索结果底部的选项之一来更改整个搜索范围。 例如，如果在文档库中搜索文件但找不到该文件，则可以单击“库”将搜索范围扩展到其余库。 有关更多信息，请参阅[查找文件或文件夹](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder)。
+如果未看到要查找的文件，则可以单击搜索结果底部的选项之一，以更改搜索的整个范围。 例如，如果您在“文档”库中搜索文件，但找不到该文件，则可以单击“库”以将搜索扩展到其余库。 有关更多信息，请参阅[查找文件或文件夹](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder)。
 
 您可以根据以下一个或多个属性搜索数字资产：
 
 | 搜索字段 | 搜索属性值 |
 |---|---|
-| Mime 类型 | [!UICONTROL 图像]、 [!UICONTROL 文档]、多 [!UICONTROL 媒体]、 [!UICONTROL 存]档或其它。 |
+| Mime 类型 | [!UICONTROL 图像]、 [!UICONTROL 文档]、 [!UICONTROL 多媒体]、 [!UICONTROL 存档]或其他。 |
 | [!UICONTROL 上次修改时间] | “小时”、“天”、“周”、“月”或“年”。 |
 | [!UICONTROL 文件大小] | “小”、“中”或“大”。 |
 | [!UICONTROL 发布状态] | “已发布”或“已取消发布”。 |
-| [!UICONTROL 批准状] 态 | “已批准”或“已拒绝”。 |
+|  ApprovalStatus | “已批准”或“已拒绝”。 |
 | [!UICONTROL 方向] | “水平”、“垂直”或“正方形”。 |
 | [!UICONTROL 样式] | “彩色”或“黑白”。 |
 | 视屏高度 | 指定为最小值和最大值。值仅存储在视频演绎版的元数据中。 |
 | 视频宽度 | 指定为最小值和最大值。值仅存储在视频演绎版的元数据中。 |
-| 视频格式 | DVI、Flash、MPEG4、MPEG、OGG Theora、QuickTime、Windows Media.Value存储在源视频和任何再现的元数据中。 |
-| 视频编解码器 | x264.Value仅存储在视频演绎版的元数据中。 |
+| 视频格式 | DVI、Flash、MPEG4、MPEG、OGG Theora、QuickTime、Windows Media.Value存储在源视频和任何演绎版的元数据中。 |
+| 视频编解码器 | x264.Value仅存储在视频呈现的元数据中。 |
 | 视频比特率 | 指定为最小值和最大值。值仅存储在视频演绎版的元数据中。 |
-| 音频编解码器 | Libvorbis、Lame Mp3、AAC Encoding.Value仅存储在视频演绎版的元数据中。 |
+| 音频编解码器 | Libvorbis、Lame Mp3、AAC Encoding.Value仅存储在视频呈现的元数据中。 |
 | 音频比特率 | 指定为最小值和最大值。值仅存储在视频演绎版的元数据中。 |
 
 1. 在 **[!UICONTROL Experience Manager]** 页面的左边栏中，点按&#x200B;**[!UICONTROL 资产]**。
@@ -46,18 +45,18 @@ ht-degree: 45%
 1. 在工具栏中，点按“搜索”图标（放大镜）。
 1. 通过执行以下任一操作，搜索视频资产：
 
-   * 使用关键字搜索
+   * 使用关键词搜索
 
-      在“输入关键字”字段中，开始键入，然后按Enter。
+      在“输入关键词”字段中，开始键入内容，然后按Enter。
 
       此时会根据您键入的关键字筛选当前视图。如果您键入的关键字与文件的名称、元数据标记或其他属性匹配，搜索结果中便会显示这些文件。
 
    * 使用属性搜索
 
-      要根据视频类型等属性搜索视频文件，可以通过选择视频或音频属性来缩小搜索范围。 例如，展开“视频格式”下拉列表，然后选中一个或多个值。某些属性要求输入最小值和最大值。
+      要根据视频类型等属性搜索视频文件，您可以通过选择视频或音频属性来缩小搜索范围。 例如，展开“视频格式”下拉列表，然后选中一个或多个值。某些属性要求输入最小值和最大值。
 
-   * 使用关键字和属性进行搜索
+   * 使用关键词和属性搜索
 
-      输入关键字，而不是按Enter，展开视频或音频属性列表，然后设置所需的值。
+      输入关键字，但不按Enter，而是展开视频或音频属性列表，然后设置所需的值。
 
 1. （可选）在页面底部附近，点按&#x200B;**[!UICONTROL 保存智能收藏集]**，然后输入搜索的名称。如果您希望使保存的搜索可供 Adobe Experience Manager 帐户的其他用户使用，请选中&#x200B;**[!UICONTROL 公共]**。如果您希望该搜索仅供您自己在登录到帐户时使用，请取消选中该选项。点按&#x200B;**[!UICONTROL 保存]**。

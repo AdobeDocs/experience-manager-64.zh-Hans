@@ -32,14 +32,15 @@ ht-degree: 2%
 >本页应结合以下内容阅读：
 >* [重用内容：多站点管理器](/help/sites-administering/msm.md)。
 >* AEM 6.4中的站点存储库重组：
-   >   * [多站点管理器Blueprint配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
+>   * [多站点管理器Blueprint配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
    * [多站点管理器转出配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
-创作网站时会使用多站点管理器及其API，因此这些管理器仅用于在创作环境中使用。
+>
+>创作网站时会使用多站点管理器及其API，因此这些管理器仅用于在创作环境中使用。
 
-## Java API {#overview-of-the-java-api}概述
+## Java API概述 {#overview-of-the-java-api}
 
 多站点管理包含以下包：
 
@@ -146,7 +147,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 ```
 
 >[!NOTE]
-`Resource`参数可以是不适应`Node`对象的`null`或`Resources`对象，如[`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html)对象。
+>
+>`Resource`参数可以是不适应`Node`对象的`null`或`Resources`对象，如[`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html)对象。
 
 ## 创建新的转出配置{#creating-a-new-rollout-configuration}
 
@@ -158,7 +160,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 在 Blueprint 或 Live Copy 页面上设置转出配置时，您可以使用该新转出配置。
 
 >[!NOTE]
-另请参阅自定义转出的[最佳实践](/help/sites-administering/msm-best-practices.md#customizing-rollouts)。
+>
+>另请参阅自定义转出的[最佳实践](/help/sites-administering/msm-best-practices.md#customizing-rollouts)。
 
 ### 创建转出配置{#create-the-rollout-configuration}
 
@@ -171,12 +174,16 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
-这是您项目的自定义版本：
-   `/libs/msm/wcm/rolloutconfigs`
+   >
+   >这是您项目的自定义版本：
+   >`/libs/msm/wcm/rolloutconfigs`
+
 如果这是您的第一个配置，则必须创建。
 
    >[!NOTE]
-   您不得更改/libs路径中的任何内容。
+   >
+   >您不得更改/libs路径中的任何内容。
+
 这是因为/libs的内容在您下次升级实例时被覆盖（而且当您应用修补程序或功能包时，很可能会被覆盖）。
 配置和其他更改的推荐方法是：
    * 在/apps下重新创建所需项（即/libs中存在的项）
@@ -273,7 +280,7 @@ GITHUB上的代码
 
 1. 启动Eclipse并[导入Maven项目](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse)。
 
-### 向POM文件{#add-dependencies-to-the-pom-file}添加依赖项
+### 向POM文件添加依赖项{#add-dependencies-to-the-pom-file}
 
 添加依赖项，以便Eclipse编译器可以引用`LiveActionFactory`代码中使用的类。
 
@@ -635,7 +642,7 @@ MSM使用存储的语言和国家/地区代码列表来确定与页面语言版�
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-## 在页面属性（触屏优化UI）{#configuring-msm-locks-on-page-properties-touch-enabled-ui}上配置MSM锁定
+## 在页面属性（触屏优化UI）上配置MSM锁定{#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
 创建自定义页面资产时，您可能需要考虑新资产是否有资格转出到任何Live Copy。
 
@@ -686,7 +693,9 @@ MSM使用存储的语言和国家/地区代码列表来确定与页面语言版�
 
 
 >[!NOTE]
-cq-msm-lockable适用于要编辑的资源的第一个子级别，并且它在任何更深层的上级级别上不起作用，无论该值是定义为绝对值还是相对值。
+>
+>cq-msm-lockable适用于要编辑的资源的第一个子级别，并且它在任何更深层的上级级别上不起作用，无论该值是定义为绝对值还是相对值。
 
 >[!NOTE]
-重新启用继承时，Live Copy页面属性不会自动与源属性同步。 如果需要，您可以手动请求同步。
+>
+>重新启用继承时，Live Copy页面属性不会自动与源属性同步。 如果需要，您可以手动请求同步。

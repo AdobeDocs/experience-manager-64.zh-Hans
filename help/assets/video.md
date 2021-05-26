@@ -29,7 +29,6 @@ ht-degree: 24%
 >
 >* 请参阅配置Dynamic Media — 混合模式中的[配置Dynamic MediaCloud Services。](/help/assets/config-dynamic.md)
 >* 请参阅[配置Dynamic Media - Scene7模式](config-dms7.md)和[Dynamic Media - Scene7模式疑难解答](troubleshoot-dms7.md)
-
 >
 
 
@@ -175,7 +174,7 @@ Dynamic Media HTML5视频查看器预设是强大的视频播放器。您可以�
 
 另请参阅《 查看器参考指南》中的“[关于 HTML5 查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)”。
 
-### 使用HTML5视频查看器{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}在台式计算机和移动设备上播放视频
+### 使用HTML5视频查看器在台式计算机和移动设备上播放视频{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 对于桌面和移动设备自适应视频流播放，用于比特率切换的视频基于自适应视频集中的所有MP4视频。
 
@@ -547,7 +546,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    现在，您将添加标记以进行发布。
 
-### 添加用于发布{#adding-tags-for-publishing}的标记
+### 添加用于发布的标记{#adding-tags-for-publishing}
 
 要将视频发布到YouTube,AEM会将标记关联到一个或多个YouTube渠道。 要添加用于发布的标记，请参阅[管理标记](/help/sites-administering/tags.md)。
 
@@ -563,7 +562,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    现在，您将在AEM中设置YouTube。
 
-### 在AEM {#setting-up-youtube-in-aem}中设置YouTube
+### 在AEM中设置YouTube {#setting-up-youtube-in-aem}
 
 1. 点按AEM左上角的AEM徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具>部署>Cloud Services]**。
 1. 在&#x200B;**[!UICONTROL 第三方服务]**&#x200B;标题的YouTube下，点按&#x200B;**[!UICONTROL Configure now]**。
@@ -782,7 +781,6 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
    >* Apache Sling作业队列配置
    >* AdobeGranite工作流外部进程作业处理程序
    >* Granite工作流超时队列
-
    > 
    >在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
 
@@ -815,7 +813,6 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
    >* Apache Sling作业队列配置
    >* AdobeGranite工作流外部进程作业处理程序
    >* Granite工作流超时队列
-
    >
    >在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
 
@@ -899,7 +896,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 1. 在列出顶级已发布视频的表中，点按视频名称以播放视频，还可以查看该视频的受众保留（流失）报表。
 
-### 查看基于您使用Dynamic Media HTML5查看器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}创建的视频查看器的视频报表
+### 查看基于您使用Dynamic Media HTML5查看器SDK创建的视频查看器的视频报表 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 如果您使用的是Dynamic Media提供的现成视频查看器，或者如果您基于现成视频查看器创建了自定义查看器预设，则无需执行其他步骤即可查看视频报表。 但是，如果您基于HTML5查看器SDK API创建了自己的视频查看器，请执行以下步骤以确保您的视频查看器将跟踪事件发送到Dynamic Media视频报表。
 
@@ -958,6 +955,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
+
    appMeasurementBridge 对象具备内置的跟踪功能。但是，您可以提供自己的对象来支持多个跟踪系统或其他功能。
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
@@ -1021,7 +1019,7 @@ Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）�
 
       记下描述路径末尾的`,1`。 紧随路径中.vtt文件扩展名后，您可以选择启用（打开）或禁用（关闭）视频播放器栏上的隐藏式字幕按钮，方法是分别将设置为`,1`或`,0`。
 
-## 向视频{#adding-chapter-markers-to-video}添加章节标记
+## 向视频添加章节标记{#adding-chapter-markers-to-video}
 
 您可以通过向单个视频或自适应视频集添加章节标记，来更轻松地观看和导航长形视频。 当用户播放视频时，他们可以点按视频时间轴上的章节标记（也称为视频清理器），以轻松导航到其目标点，或立即跳转到新内容、演示、教程等。
 
@@ -1035,7 +1033,7 @@ Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）�
 
 您可以使用以下示例作为创建包含章节导航的WebVTT文件所使用的格式示例：
 
-### 带有视频章节导航{#webvtt-file-with-video-chapter-navigation}的WebVTT文件
+### 带有视频章节导航的WebVTT文件{#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT 

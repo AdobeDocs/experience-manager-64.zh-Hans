@@ -41,7 +41,6 @@ ht-degree: 84%
 >
 >* [如何将工作流应用于 DAM 资产](/help/assets/assets-workflow.md)。
 >* [使用项目工作流](/help/sites-authoring/projects-with-workflows.md)。
-
 >
 
 
@@ -108,6 +107,7 @@ ht-degree: 84%
    * **包标题**
 
       * 您可以指定包标题以便进行识别。
+
    >[!NOTE]
    >
    >为“ **多资源支持”配置了工作流并选择了多个资源时** ,“保留工作流包”选项可用。[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)

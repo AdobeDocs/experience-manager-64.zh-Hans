@@ -39,25 +39,27 @@ ht-degree: 1%
 >电子商务框架可与以下内容一起使用：
 >
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   >
-   >
-* [SAPCommerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
+>
+>* [SAPCommerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
 
 * [SalesforceCommerce Cloud](https://github.com/adobe/commerce-salesforce)
 
 
 
 >[!CAUTION]
-[电子商务集成框架](https://www.adobe.com/solutions/web-experience-management/commerce.html)是AEM附加组件。
-您的销售代表将能够根据相应的引擎提供完整的详细信息。
+>
+>[电子商务集成框架](https://www.adobe.com/solutions/web-experience-management/commerce.html)是AEM附加组件。
+>您的销售代表将能够根据相应的引擎提供完整的详细信息。
 
 >[!CAUTION]
-该框架为您自己的项目提供了基本要求。
-要使框架符合您的规范，始终需要进行一定量的开发工作。
+>
+>该框架为您自己的项目提供了基本要求。
+>要使框架符合您的规范，始终需要进行一定量的开发工作。
 
 >[!CAUTION]
-标准AEM安装包括通用AEM(JCR)电子商务实施。
-此功能当前用于演示目的，或根据您的要求作为自定义实施的基本基础。
+>
+>标准AEM安装包括通用AEM(JCR)电子商务实施。
+>此功能当前用于演示目的，或根据您的要求作为自定义实施的基本基础。
 
 为了优化操作，AEM和电子商务引擎都集中在自己的专业领域。 信息在两者之间实时传输；例如：
 
@@ -92,7 +94,8 @@ ht-degree: 1%
 
 
 >[!NOTE]
-具体详细信息取决于电子商务引擎和项目实施。
+>
+>具体详细信息取决于电子商务引擎和项目实施。
 
 提供了许多现成的AEM组件来使用集成层。 目前，这些服务包括：
 
@@ -121,10 +124,11 @@ AEM eCommerce通过电子商务引擎实施：
 
 
 >[!NOTE]
-标准AEM安装包括通用AEM(JCR)电子商务实施。
-此功能当前用于演示目的，或根据您的要求作为自定义实施的基本基础。
-在AEM中使用基于JCR的通用开发实现的AEM eCommerce包括：
-* 一个独立的AEM原生电子商务示例，用于说明API的使用。 它可用于控制产品数据、购物车和结账，以及与现有数据显示和营销活动结合使用。 在这种情况下，产品数据库存储在AEM的本机存储库(Adobe的[JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)实施)中。\
+>
+>标准AEM安装包括通用AEM(JCR)电子商务实施。
+>此功能当前用于演示目的，或根据您的要求作为自定义实施的基本基础。
+>在AEM中使用基于JCR的通用开发实现的AEM eCommerce包括：
+>* 一个独立的AEM原生电子商务示例，用于说明API的使用。 它可用于控制产品数据、购物车和结账，以及与现有数据显示和营销活动结合使用。 在这种情况下，产品数据库存储在AEM的本机存储库(Adobe的[JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)实施)中。\
    标准AEM安装包含[通用电子商务实施](/help/sites-administering/generic.md)的基础知识。
 
 
@@ -146,7 +150,8 @@ AEM当前提供两个商务提供程序示例：
 尽管通常，项目需要开发他们自己的自定义商务提供商，以特定于其PIM和产品数据架构。
 
 >[!NOTE]
-geometrixx导入程序使用CSV文件；其实施上方的注释中提供了已接受的架构（允许使用自定义属性）的描述。
+>
+>geometrixx导入程序使用CSV文件；其实施上方的注释中提供了已接受的架构（允许使用自定义属性）的描述。
 
 [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html)维护（通过[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)）[ProductImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)和[CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)接口的实施列表。 导入程序向导的&#x200B;**导入程序/商务提供程序**&#x200B;下拉字段中列出了这些内容（使用`commerceProvider`属性作为名称）。
 
@@ -495,8 +500,9 @@ AEM支持多种语言的产品内容。 在请求数据时，集成框架会从�
 然而，这是一种取舍。 您将无法在AEM中自定义产品信息，将使用标准模板（为您的网站定义）。
 
 >[!NOTE]
-如果导入的大目录没有代理页面，则不会遇到任何问题。
-您可以随时从一种方法转换到另一种方法。 您还可以转换目录的子部分。
+>
+>如果导入的大目录没有代理页面，则不会遇到任何问题。
+>您可以随时从一种方法转换到另一种方法。 您还可以转换目录的子部分。
 
 ## 促销和凭单{#promotions-and-vouchers}
 
@@ -524,7 +530,8 @@ AEM支持多种语言的产品内容。 在请求数据时，集成框架会从�
 * 凭单没有其自己的开启和关闭日期/时间，但使用其父营销活动的日期/时间。
 
 >[!NOTE]
-AEM使用术语&#x200B;**Voucher**，这与术语&#x200B;**Coupon**&#x200B;同义。
+>
+>AEM使用术语&#x200B;**Voucher**，这与术语&#x200B;**Coupon**&#x200B;同义。
 
 ### 促销活动 {#promotions}
 
@@ -576,7 +583,8 @@ AEM使用术语&#x200B;**Voucher**，这与术语&#x200B;**Coupon**&#x200B;同�
    在体验之外，因此从不自动触发(即：基于分段)。 但是，它被凭证引用，该凭证可在文章促销活动中的几个体验中找到。 将这些凭单代码输入购物车将导致触发促销活动。
 
 >[!NOTE]
-[hybris ](https://www.hybris.com/modules/promotion) promotion和 [hybris ](https://www.hybris.com/en/modules/voucher) voucherscover影响购物车并与定价相关的所有内容。促销活动特定的营销内容（如横幅等）不属于促销活动的一部分。
+>
+>[hybris ](https://www.hybris.com/modules/promotion) promotion和 [hybris ](https://www.hybris.com/en/modules/voucher) voucherscover影响购物车并与定价相关的所有内容。促销活动特定的营销内容（如横幅等）不属于促销活动的一部分。
 
 ## 个性化 {#personalization}
 
@@ -604,8 +612,9 @@ AEM使用术语&#x200B;**Voucher**，这与术语&#x200B;**Coupon**&#x200B;同�
 使用电子商务引擎时，AEM仅存储帐户ID和密码（可选为用户组）。 所有其他信息都存储在电子商务引擎中。
 
 >[!NOTE]
-使用电子商务引擎时，您需要确保为登录AEM实例的用户创建的帐户被复制（例如，通过工作流）到与该引擎通信的任何其他AEM实例。
-否则，这些其他AEM实例也将尝试为引擎中的相同用户创建帐户。 这些操作将失败，并且引擎中出现`DuplicateUidException`。
+>
+>使用电子商务引擎时，您需要确保为登录AEM实例的用户创建的帐户被复制（例如，通过工作流）到与该引擎通信的任何其他AEM实例。
+>否则，这些其他AEM实例也将尝试为引擎中的相同用户创建帐户。 这些操作将失败，并且引擎中出现`DuplicateUidException`。
 
 ### 客户注册{#customer-sign-up}
 
@@ -614,7 +623,8 @@ AEM使用术语&#x200B;**Voucher**，这与术语&#x200B;**Coupon**&#x200B;同�
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
 >[!NOTE]
-还支持匿名购物车和结账。
+>
+>还支持匿名购物车和结账。
 
 ### 客户登录{#customer-sign-in}
 
@@ -653,7 +663,8 @@ AEM使用术语&#x200B;**Voucher**，这与术语&#x200B;**Coupon**&#x200B;同�
 您可以单击&#x200B;**添加新地址……**&#x200B;在通讯簿中添加新地址。 它会打开一个您可以填写的表单，然后单击&#x200B;**添加地址**。
 
 >[!NOTE]
-您可以在通讯簿中输入多个地址。
+>
+>您可以在通讯簿中输入多个地址。
 
 购物车结账时，会使用通讯簿：
 
@@ -681,7 +692,8 @@ AEM使用术语&#x200B;**Voucher**，这与术语&#x200B;**Coupon**&#x200B;同�
 * 执行结帐以下单
 
 >[!NOTE]
-根据您的实例地址信息或客户注册的配置，可能需要在结帐前进行注册。
+>
+>根据您的实例地址信息或客户注册的配置，可能需要在结帐前进行注册。
 
 ### 注册购物者{#registered-shoppers}
 
@@ -721,13 +733,16 @@ AEM使用术语&#x200B;**Voucher**，这与术语&#x200B;**Coupon**&#x200B;同�
 * 再次登录为`Allison Parker` — 她的产品已恢复
 
 >[!NOTE]
-匿名购物车只能在同一台计算机/浏览器上还原。
+>
+>匿名购物车只能在同一台计算机/浏览器上还原。
 
 >[!NOTE]
-不建议使用`admin`帐户测试恢复购物车内容，因为这可能与电子商务引擎的`admin`帐户（例如hybris）冲突。
+>
+>不建议使用`admin`帐户测试恢复购物车内容，因为这可能与电子商务引擎的`admin`帐户（例如hybris）冲突。
 
 >[!NOTE]
-hybris可配置为在定义的时间段后删除挂起的购物车。
+>
+>hybris可配置为在定义的时间段后删除挂起的购物车。
 
 在结账前，价格变动会在发生时反映（在两个系统中）。
 
@@ -802,8 +817,9 @@ hybris可配置为在定义的时间段后删除挂起的购物车。
    用于在发货时跟踪订单的链接。
 
 >[!NOTE]
-创建顺序向导中使用的字段取决于是否为位置定义了触屏优化基架。 在通用示例中，可在以下位置找到该示例：\
-`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
+>
+>创建顺序向导中使用的字段取决于是否为位置定义了触屏优化基架。 在通用示例中，可在以下位置找到该示例：\
+>`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 在AEM中保留订单后，“订单”控制台将显示每个订单的以下内容：
 
@@ -840,7 +856,7 @@ hybris可配置为在定义的时间段后删除挂起的购物车。
 
 支付卡行业(PCI)的复杂性可以实现。
 
-### 订单{#confirmation-of-order}的确认
+### 订单的确认{#confirmation-of-order}
 
 订单在屏幕上得到确认，并可通过[订单跟踪](#order-tracking)进行跟踪。
 

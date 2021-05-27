@@ -33,7 +33,7 @@ ht-degree: 2%
 >* [重用内容：多站点管理器](/help/sites-administering/msm.md)。
 >* AEM 6.4中的站点存储库重组：
 >   * [多站点管理器Blueprint配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
-   * [多站点管理器转出配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
+>   * [多站点管理器转出配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
@@ -177,17 +177,15 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    >
    >这是您项目的自定义版本：
    >`/libs/msm/wcm/rolloutconfigs`
-
-如果这是您的第一个配置，则必须创建。
+   >如果这是您的第一个配置，则必须创建。
 
    >[!NOTE]
    >
    >您不得更改/libs路径中的任何内容。
-
-这是因为/libs的内容在您下次升级实例时被覆盖（而且当您应用修补程序或功能包时，很可能会被覆盖）。
-配置和其他更改的推荐方法是：
-   * 在/apps下重新创建所需项（即/libs中存在的项）
-   * 在/apps中进行任何更改
+   >这是因为/libs的内容在您下次升级实例时被覆盖（而且当您应用修补程序或功能包时，很可能会被覆盖）。
+   >配置和其他更改的推荐方法是：
+   >* 在/apps下重新创建所需项（即/libs中存在的项）
+   >* 在/apps中进行任何更改
 
 
 1. 在此&#x200B;**Create**&#x200B;下，创建具有以下属性的节点：

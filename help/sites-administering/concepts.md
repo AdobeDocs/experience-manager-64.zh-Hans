@@ -129,7 +129,7 @@ AEM eCommerce通过电子商务引擎实施：
 >此功能当前用于演示目的，或根据您的要求作为自定义实施的基本基础。
 >在AEM中使用基于JCR的通用开发实现的AEM eCommerce包括：
 >* 一个独立的AEM原生电子商务示例，用于说明API的使用。 它可用于控制产品数据、购物车和结账，以及与现有数据显示和营销活动结合使用。 在这种情况下，产品数据库存储在AEM的本机存储库(Adobe的[JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)实施)中。\
-   标准AEM安装包含[通用电子商务实施](/help/sites-administering/generic.md)的基础知识。
+>标准AEM安装包含[通用电子商务实施](/help/sites-administering/generic.md)的基础知识。
 
 
 

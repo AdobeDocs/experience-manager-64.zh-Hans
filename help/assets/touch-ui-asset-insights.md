@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 资产分析，资产报表
 role: Business Practitioner,Administrator
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '798'
 ht-degree: 8%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 要使资产分析从网站中捕获资产的使用情况统计信息，您必须在网站代码中包含资产的嵌入代码。
 
-要让资产分析显示资产的使用情况统计信息，请首先配置功能以从[!DNL Adobe Analytics]获取报表数据。 有关详细信息，请参阅[配置资产分析](touch-ui-configuring-asset-insights.md)。 要使用此功能，请单独购买[!DNL Adobe Analytics]许可证。 [!DNL Managed Services]上的客户将收到与[!DNL Experience Manager]捆绑在一起的[!DNL Analytics]许可证。 请参阅[Managed Services产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)。
+要让资产分析显示资产的使用情况统计信息，请首先配置功能以从[!DNL Adobe Analytics]获取报表数据。 有关详细信息，请参阅[配置资产分析](touch-ui-configuring-asset-insights.md)。 要在内部部署安装中使用此功能，请单独购买[!DNL Adobe Analytics]许可证。 [!DNL Managed Services]上的客户将收到与[!DNL Experience Manager]捆绑在一起的[!DNL Analytics]许可证。 请参阅[Managed Services产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)。
 
 >[!NOTE]
 >

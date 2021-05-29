@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: 配置，Scene7模式
 role: Administrator,Business Practitioner,Developer
-source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
+source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5594'
 ht-degree: 4%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 4%
 
 >[!WARNING]
 >
->Dynamic Media - Scene7模式仅适用于&#x200B;*Experience Manager创作实例*。 因此，必须在Experience Manager创作实例上配置`runmode=dynamicmedia_scene7`，而不是&#x200B;*Experience Manager发布实例。*
+>Dynamic Media - Scene7模式仅适用于&#x200B;*Experience Manager创作实例*。 因此，在Experience Manager创作实例上配置`runmode=dynamicmedia_scene7`，在Experience Manager发布实例上配置&#x200B;*不*。
 
 要启用Dynamic Media，必须在终端窗口中输入以下命令，从命令行中使用`dynamicmedia_scene7`运行模式启动Experience Manager（使用的示例端口为4502）：
 

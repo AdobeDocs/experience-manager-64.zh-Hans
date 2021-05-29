@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: 配置，Scene7模式
 role: Administrator,Business Practitioner,Developer
-source-git-commit: a9ae157512127f27dd54063fe4e3c61b5f83b74e
+source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
 workflow-type: tm+mt
 source-wordcount: '5596'
 ht-degree: 4%
@@ -33,11 +33,11 @@ ht-degree: 4%
 
 ## 在Scene7模式下启用Dynamic Media {#enabling-dynamic-media-in-scene-mode}
 
-[默认情况下，Dynamic Media 处于禁用状态。](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)要利用Dynamic Media功能，必须启用它。
+[默认情况下，Dynamic Media 处于禁用状态。](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html)要利用Dynamic Media功能，您必须启用它。
 
->[!NOTE]
+>[!WARNING]
 >
->Dynamic Media - Scene7模式仅适用于Experience Manager创作实例。 因此，必须在Experience Manager创作实例上配置`runmode=dynamicmedia_scene7`，而不是Experience Manager发布实例。
+>Dynamic Media - Scene7模式仅适用于&#x200B;*Experience Manager创作实例*。 因此，必须在Experience Manager创作实例上配置`runmode=dynamicmedia_scene7`，而不是&#x200B;*Experience Manager发布实例。*
 
 要启用Dynamic Media，必须在终端窗口中输入以下命令，从命令行中使用`dynamicmedia_scene7`运行模式启动Experience Manager（使用的示例端口为4502）：
 
@@ -77,7 +77,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 **要配置Dynamic MediaCloud Services:**
 
-1. 在Experience Manager中，点按Experience Manager徽标以访问全局导航控制台，然后点按工具图标，然后点按&#x200B;**[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media配置]**。
+1. 在您的Experience Manager创作实例中，点按Experience Manager徽标以访问全局导航控制台，然后点按工具图标，然后点按&#x200B;**[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media配置]**。
 1. 在Dynamic Media配置浏览器页面的左窗格中，点按&#x200B;**[!UICONTROL 全局]**，然后点按&#x200B;**[!UICONTROL 创建]**。 请勿点按或选择[!UICONTROL global]左侧的文件夹图标。
 1. 在[!UICONTROL 创建Dynamic Media配置]页面上，输入标题、Dynamic Media帐户电子邮件地址和密码。 选择您所在的地区。 此信息通过您的配置电子邮件中的Adobe提供给您。 如果您未收到电子邮件，请联系Adobe客户关怀。
 
@@ -266,7 +266,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
 1. 在刚刚添加的空文本字段中键入`DWG=image/vnd.dwg`。
 
-   示例`DWG=image/vnd.dwg`仅供说明之用。 您在此处添加的MIME类型可以是任何其他不支持的格式。
+   示例`DWG=image/vnd.dwg`仅用于演示目的。 您在此处添加的MIME类型可以是任何其他不支持的格式。
 
    ![MIME类型添加示例](assets/2019-08-02_16-36-36.png)
 
@@ -306,7 +306,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
 **配置默认命名**
 
-创建默认命名约定，以在任何批集预设方法中使用该命名约定。 在批量集预设定义中选择的默认命名约定可能是贵公司需要批量生成集的全部内容。 将创建批集预设，以使用您定义的默认命名约定。 如果公司定义的默认命名存在例外，您可以为特定内容集创建任意数量的批量集预设，并使用所需的替代自定义命名约定。
+创建默认命名约定，以在任何批集预设方法中使用该命名约定。 在批量集预设定义中选择的默认命名约定可能是贵公司生成批量集所需的全部内容。 将创建批集预设，以使用您定义的默认命名约定。 如果公司定义的默认命名存在例外，您可以为特定内容集创建任意数量的批量集预设，并使用所需的替代自定义命名约定。
 
 虽然使用批量集预设功能不需要设置默认的命名约定，但您可以使用它来定义要分组到一组中的命名约定的任意多个元素。 这样做有助于简化批量集创建过程。
 
@@ -444,7 +444,7 @@ spin-01-01
 
    `\w+-\w+-C(\d+)`
 
-   请记住，这些表达式只是用于说明的示例。 您可以根据需要创建正则表达式。
+   请记住，这些表达式只是用于演示目的的示例。 您可以根据需要创建正则表达式。
 
    >[!NOTE]
    >

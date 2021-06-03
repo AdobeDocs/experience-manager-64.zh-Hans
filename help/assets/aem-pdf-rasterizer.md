@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 开发人员工具，演绎版
 role: Developer,Administrator
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9fb023c504d8696517e7fdad61241c3d49166daa
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Adobe建议为以下内容使用PDF光栅器库：
 
 与现成输出相比，使用PDF光栅器生成的缩略图和预览在质量上更好，因此可以跨设备提供一致的查看体验。 Adobe PDF光栅化器库不支持任何颜色空间转换。 它始终输出为RGB，而不考虑源文件的色彩空间。
 
-1. 在[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)的[!DNL Adobe Experience Manager]部署中安装PDF光栅化器包。
+1. 在[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip)的[!DNL Adobe Experience Manager]部署中安装PDF光栅化器包。
 
    >[!NOTE]
    >

@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '528'
 ht-degree: 8%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 8%
 
 这些网站仅适用于客户。如果您是客户并需要访问，请联系您的Adobe客户经理。
 
-* [产品访问](https://login.marketing.adobe.com)
+* [产品访问](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [产品下载：licensing.adobe.com](https://licensing.adobe.com/).
 * 产品更新、修补程序和软件包，以获取[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)上的其他功能。
 * [通过Admin Console提供客户支持](https://adminconsole.adobe.com/)。有关更多信息，请参阅[新Adobe客户支持体验](https://docs.adobe.com/content/help/en/customer-one/using/home.html)。

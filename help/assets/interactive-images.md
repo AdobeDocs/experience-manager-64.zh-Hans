@@ -12,9 +12,9 @@ discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
 feature: 交互式图像
 role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '4298'
+source-wordcount: '4261'
 ht-degree: 18%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 18%
 
 通过转到以下内容，查看上述网页上的交互式图像的实际操作情况：
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
 ## 观看如何创建交互式图像横幅{#watch-how-interactive-image-banners-are-created}
 
@@ -41,7 +41,7 @@ ht-degree: 18%
 
 请查找某些“快速入门”任务中的&#x200B;**示例**&#x200B;标题。本指南包含一个简短教程，该教程基于以下尚未添加交互式图像的网页示例：
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 本教程有助于说明在您的网站上集成交互式图像的步骤。
 
@@ -163,7 +163,7 @@ ht-degree: 18%
 
 您可以将上述三个示例中所用的方法运用到演示网页：
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 演示网页包含多个产品缩略图，每个缩略图都有一个标有&#x200B;**[!UICONTROL See More]**&#x200B;的“Quickview”按钮。 如果Web浏览器的调试工具仍处于激活状态，请单击每个按钮并记下记录的概览URL。 激活页面上所有四个可用的产品概览后，您会向后端发出以下概览请求列表：
 
@@ -359,7 +359,7 @@ d.（可选）要删除热点，请在图像上将其选中，然后点按**[!UI
 
 以演示网站为例：
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 请注意，三位男士的照片是静态的 `IMG` 标记：
 
@@ -369,7 +369,7 @@ d.（可选）要删除热点，请在图像上将其选中，然后点按**[!UI
 
 集成过程很简单，只需删除 `IMG` 标记并将其替换为从 AEM Assets 中复制的嵌入代码即可。您可以通过下面的 URL 查看最终效果，即页面上会显示带有三个圆形热点的交互式购物图像：
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
 >
@@ -518,7 +518,7 @@ loadQuickView(quickViewUrl);
 
 具有完全集成的交互式图像的最终演示网站如下所示：
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
 ## 使用概览创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
 

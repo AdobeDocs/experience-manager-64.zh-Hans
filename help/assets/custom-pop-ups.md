@@ -12,14 +12,14 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
 feature: 配置
 role: Administrator,Business Practitioner,Developer
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 3%
+source-wordcount: '1047'
+ht-degree: 2%
 
 ---
 
-# 使用概览创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
+# 使用概览{#using-quickviews-to-create-custom-pop-ups}创建自定义弹出窗口
 
 默认的概览用于电子商务体验，其中会显示一个弹出窗口，其中包含产品信息以促进购买。 但是，您可以触发要在弹出窗口中显示的自定义内容。 根据您使用的查看器，此功能允许用户单击热点、缩略图图像或图像映射以查看信息或相关内容。
 
@@ -31,7 +31,7 @@ Dynamic Media中的以下查看器支持概览：
 
 虽然每个查看器的功能不同，但在所有三个受支持的查看器中，创建概览的过程都是相同的。
 
-**要使用概览创建自定义弹出窗口，**
+**要使用概览创建自定义弹出窗口，请执行以下操作：**
 
 1. 为上传的资产创建概览。
 

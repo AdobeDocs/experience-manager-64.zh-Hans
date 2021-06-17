@@ -9,9 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 0%
 
 ---
@@ -279,7 +279,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 基础[`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)库及其[`ModelRouter`](/help/sites-developing/spa-routing.md)模块（默认启用）负责预取和提供对与给定资源路径关联的模型的访问权限。
 
-两个实体与路由概念相关，但[`ModelRouter`](/help/sites-developing/spa-routing.md)仅负责将[&#39;PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)加载到与当前应用程序状态结构同步的数据模型中。
+两个实体与路由概念相关，但[`ModelRouter`](/help/sites-developing/spa-routing.md)仅负责使[`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)加载与当前应用程序状态同步的数据模型。
 
 有关更多信息，请参阅文章[SPA Model Routing](/help/sites-developing/spa-routing.md)。
 

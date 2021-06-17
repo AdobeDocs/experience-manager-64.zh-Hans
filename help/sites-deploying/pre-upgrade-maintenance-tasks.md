@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 feature: 升级
 exl-id: f146cb2f-ee77-4c99-8dff-446cdb3a7797
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
 source-wordcount: '2179'
 ht-degree: 0%
@@ -133,7 +133,7 @@ AEM应在开始升级之前完全备份。 确保备份您的存储库、应用�
   <tr> 
    <td><code>RevisionCleanupTask</code></td> 
    <td>crx3</td> 
-   <td>对于AEM 6.0到6.2上的TarMK实例，请手动运行离线修订清理。</td> 
+   <td>对于AEM 6.0到6.2上的TarMK实例，请手动运行离线修订版清理。</td> 
   </tr> 
   <tr> 
    <td><code>com.day.cq.audit.impl.AuditLogMaintenanceTask</code></td> 
@@ -325,8 +325,10 @@ AEM应在开始升级之前完全备份。 确保备份您的存储库、应用�
 
 如果发生这种情况，升级将失败，并出现如下消息：
 
-`ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
-java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.`
+```
+ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
+java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.
+```
 
 要解决此问题，请确保执行以下操作：
 

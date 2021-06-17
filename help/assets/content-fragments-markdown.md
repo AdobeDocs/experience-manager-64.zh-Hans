@@ -12,9 +12,9 @@ discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: 内容片段
 role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '556'
 ht-degree: 4%
 
 ---
@@ -177,7 +177,7 @@ ht-degree: 4%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-要指示代码跨度，请用反勾号(&#39;)将代码换行。 与预格式化的代码块不同，代码范围表示普通段落中的代码。
+要指示代码跨度，请用反勾号(&amp;grave;)将代码换行。 与预格式化的代码块不同，代码范围表示普通段落中的代码。
 
 例如：
 

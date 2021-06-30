@@ -6,20 +6,20 @@ mini-toc-levels: 1
 feature: 资产管理，搜索，演绎版，协作
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 04f14a57fcdc5890fe78118536cc52988a2124c3
 workflow-type: tm+mt
-source-wordcount: '10083'
+source-wordcount: '10131'
 ht-degree: 6%
 
 ---
 
-# 管理数字资产{#managing-assets-with-the-touch-optimized-ui}
+# 管理数字资产 {#managing-assets-with-the-touch-optimized-ui}
 
 了解使用AEM Assets的触屏优化用户界面可以执行的各种资产管理和编辑任务。
 
 本文介绍了如何使用Adobe Experience Manager(AEM)Assets触屏优化用户界面来管理和编辑资产。 有关用户界面的基本知识，请参阅[触屏UI的基本操作](/help/sites-authoring/basic-handling.md)。 要管理内容片段，请参阅[管理内容片段](content-fragments-managing.md)资产。
 
-## 创建文件夹{#create-folders}
+## 创建文件夹 {#create-folders}
 
 组织资产集合（例如，所有`Nature`图像）时，可以创建文件夹以将它们保持在一起。 您可以使用文件夹对资产进行分类和组织。 AEM Assets不要求您组织文件夹中的资产以更好地工作。
 
@@ -39,7 +39,7 @@ ht-degree: 6%
 * 资产文件名不得包含`* / : [ \ \ ] | # % { } ? &`
 * 资产文件夹名称不得包含`* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
-## 上传资产{#uploading-assets}
+## 上传资产 {#uploading-assets}
 
 您可以从本地文件夹或网络驱动器将各种类型的资产（包括图像、PDF文件、RAW文件等）上传到AEM Assets。
 
@@ -99,7 +99,7 @@ ht-degree: 6%
    >
    >如果启用了&#x200B;**[!UICONTROL 资产分析]**&#x200B;以通过Adobe Analytics跟踪展示次数/点击次数，则此重新生成的资产ID将使Adobe Analytics上为资产捕获的数据失效。
 
-   如果您上传的资产存在于AEM Assets中，则&#x200B;**[!UICONTROL 检测到的重复项]**&#x200B;对话框会警告您正在尝试上传重复的资产。 仅当现有资产的二进制文件的SHA 1校验和值与您上传资产的校验和值匹配时，才会显示该对话框。 在这种情况下，资产名称并不重要。 换言之，如果资产的二进制文件的SHA 1值相同，则甚至可以针对名称不同的资产显示该对话框。
+   如果您上传的资产存在于AEM Assets中，则&#x200B;**[!UICONTROL 检测到的重复项]**&#x200B;对话框会警告您正在尝试上传重复的资产。 仅当现有资产的二进制文件的SHA 1校验和值与您上传资产的校验和值匹配时，才会显示该对话框。 在这种情况下，资产名称并不重要。 换言之，如果资产的二进制文件的SHA 1值相同，则甚至可以针对名称不同的资产显示对话框。
 
    >[!NOTE]
    >
@@ -127,7 +127,7 @@ ht-degree: 6%
 
    如果您在上传文件之前取消上传操作，AEM Assets将停止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
 
-### 串行上传{#serial-uploads}
+### 串行上传 {#serial-uploads}
 
 批量上传大量资产会消耗大量系统资源，这可能会对AEM部署的性能产生负面影响。 潜在的瓶颈可能是您的Internet连接、磁盘上的读写操作、Web浏览器对并发POST上传请求数的限制。 批量上传操作可能会失败或提前终止。 换言之，AEM资产在摄取大量文件时可能会丢失某些文件，或者完全无法摄取任何文件。
 
@@ -135,7 +135,7 @@ ht-degree: 6%
 
 默认情况下，会启用资产的序列上传。 要禁用该功能并允许并发上传，请在CRXDe中叠加`fileupload`节点，并将`parallelUploads`属性的值设置为`true`。
 
-### 使用FTP {#uploading-assets-using-ftp}上传资产
+### 使用FTP上传资产 {#uploading-assets-using-ftp}
 
 Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上传大资产(> 1 GB)或上传整个文件夹和子文件夹，则应使用FTP。 您甚至可以设置FTP上传以按定期计划进行。
 
@@ -171,7 +171,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上传
 
    要取消正在进行的上载作业，请点按&#x200B;**[!UICONTROL 持续时间]**&#x200B;时间旁边的&#x200B;**[!UICONTROL 取消]**。
 
-#### 上载作业选项{#upload-job-options}
+#### 上载作业选项 {#upload-job-options}
 
 | 上传选项 | 子选项 | 描述 |
 |---|---|---|
@@ -192,7 +192,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上传
 |  | 视频选项 | 您可以通过选择视频预设来对视频文件进行转码。<br> 请参 [阅设置eVideo上传选项](#setting-evideo-upload-options)。 |
 |  | 批次集预设 | 要从上传的文件创建图像集或旋转集，请单击要使用的预设的活动列。 您可以选择多个预设。 您可以在Dynamic Media Classic的“应用程序设置/批集预设”页面中创建预设。<br> 请参 [阅配置批集预设以自动生成图像集和旋转集，以了](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 解有关创建批集预设的更多信息。<br> 请参 [阅在上传时设置批集预设](#setting-batch-set-presets-at-upload)。 |
 
-#### 在上传{#setting-image-editing-options-at-upload}时设置图像编辑选项
+#### 在上传时设置图像编辑选项 {#setting-image-editing-options-at-upload}
 
 在上传图像文件（包括AI、EPS和PSD文件）时，可以在&#x200B;**[!UICONTROL 上传作业选项]**&#x200B;对话框中执行以下编辑操作：
 
@@ -216,7 +216,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上传
 |  | 填充方法 | 必填.<br> 从您设置的“角”位置控制像素透明度。<br> 您可以从以下填充方法中进行选择： <ul><li>**Flood Fill**  — 将与您指定并与之连接的“角”匹配的所有像素变为透明。</li><li>**匹配像素**  — 将所有匹配的像素设置为透明，而不管它们在图像上的位置。</li></ul> |
 |  | 容差 | 可选。<br> 根据您设置的“角”位置控制像素颜色匹配中允许的变化量。<br> 使用0.0值与像素颜色完全匹配，或者使用1.0值最大可变。 |
 
-#### 设置PostScript和Illustrator上传选项{#setting-postscript-and-illustrator-upload-options}
+#### 设置PostScript和Illustrator上传选项 {#setting-postscript-and-illustrator-upload-options}
 
 上传PostScript(EPS)或Illustrator(AI)图像文件时，可以采用各种方式设置它们的格式。 您可以栅格化文件、维护透明背景、选择分辨率和选择色彩空间。 PostScript选项和Illustrator选项下的“上传作业选项”对话框中提供了用于设置PostScript和Illustrator文件格式的选项。
 
@@ -231,7 +231,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上传
 |  | 强制为CMYK | 转换为CMYK色彩空间。 |
 |  | 强制作为灰度 | 转换为灰度色彩空间。 |
 
-#### 设置Photoshop上传选项{#setting-photoshop-upload-options}
+#### 设置Photoshop上传选项 {#setting-photoshop-upload-options}
 
 PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时，可以从文件自动创建图像模板（在“上传”屏幕上选择“创建模板”选项）。
 
@@ -255,7 +255,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 |  | Photoshop和层名称 | 在PSD文件后面命名图像，后跟图层名称或图层编号。 如果PSD文件中的层名称是缺省的Photoshop层名称，则使用层编号。 例如，在名为SpringAd的PSD文件中，名为Price Tag的层被命名为Spring Ad_Price Tag。 缺省名称为Layer 2的层称为Spring Ad_2。 |
 | 锚点 |  | 指定如何在模板中定位图像，这些模板是从PSD文件生成的分层组合生成的。 默认情况下，锚点为中心。 无论替换图像的长宽比如何，中心锚点都允许替换图像最好地填充相同的空间。 引用模板和使用参数替换时，具有不同方面的图像会替换此图像，因此，当引用模板和使用参数替换时，会有效地占用相同的空间。 如果您的应用程序需要替换图像来填充模板中分配的空间，请更改为其他设置。 |
 
-#### 设置PDF上传选项{#setting-pdf-upload-options}
+#### 设置PDF上传选项 {#setting-pdf-upload-options}
 
 上传PDF文件时，可以采用多种格式设置其格式。 您可以裁剪其页面、提取搜索词、输入每英寸像素的分辨率并选择色彩空间。 PDF文件通常包含裁切边距、裁切标记、注册标记和其他打印机标记。 在上传PDF文件时，您可以从页面的两侧裁剪这些标记。
 
@@ -278,7 +278,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 |  | 强制为CMYK | 转换为CMYK色彩空间。 |
 |  | 强制作为灰度 | 转换为灰度色彩空间。 |
 
-#### 设置eVideo上传选项{#setting-evideo-upload-options}
+#### 设置eVideo上传选项 {#setting-evideo-upload-options}
 
 您可以通过从各种视频预设中进行选择来对视频文件进行转码。
 
@@ -290,19 +290,19 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 |  | 移动设备 | 创建MP4文件，以在iPhone或Android移动设备上交付。选择一个或多个具有所需分辨率大小和目标数据速率的纵横比。 |
 |  | 平板电脑 | 创建MP4文件，以在iPad或Android平板电脑设备上交付。选择一个或多个具有所需分辨率大小和目标数据速率的纵横比。 |
 
-#### 在上传时设置批集预设{#setting-batch-set-presets-at-upload}
+#### 在上传时设置批集预设 {#setting-batch-set-presets-at-upload}
 
 如果要根据上传的图像自动创建图像集或旋转集，请单击要使用的预设的&#x200B;**[!UICONTROL 活动]**&#x200B;列。 您可以选择多个预设。
 
 请参阅[将批集预设配置为自动生成图像集和旋转集](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) ，以了解有关创建批集预设的更多信息。
 
-### 流式上传{#streamed-uploads}
+### 流式上传 {#streamed-uploads}
 
 如果您上传大量资产，则对AEM服务器的I/O调用会急剧增加，这会降低上传效率，甚至会导致其超时。 AEM Assets支持流式上传资产。 流式上传在上传操作期间减少了磁盘I/O，方法是在将磁盘复制到存储库之前，避免将资产存储在服务器上的临时文件夹中。 相反，数据会直接传输到存储库。 这样，上传大型资产的时间和超时的可能性就会减少。 流式上传默认在AEM Assets中启用。
 
 对于在JEE服务器上运行的AEM，如果Servlet-api版本低于3.1，则将禁用流上传。
 
-### 提取包含资产{#extract-zip-archive-containing-assets}的ZIP存档
+### 提取包含资产的ZIP存档 {#extract-zip-archive-containing-assets}
 
 您可以像上传任何其他受支持的资产一样上传ZIP存档。 相同的文件名规则适用于ZIP文件。 AEM允许您将ZIP存档提取到DAM位置。
 
@@ -320,7 +320,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 * 不能同时选择两个ZIP文件并解压缩它们。 一次只能提取一个ZIP存档。
 
-## 预览资产{#previewing-assets}
+## 预览资产 {#previewing-assets}
 
 **要预览资产**:
 
@@ -389,7 +389,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 1. 点按&#x200B;**[!UICONTROL 保存并关闭]**。
 1. 导航到资产UI。 编辑后的元数据属性（包括标题、描述、评级等）会显示在卡片视图的资产卡片上，以及列表视图的相关列下。
 
-## 复制资产{#copying-assets}
+## 复制资产 {#copying-assets}
 
 复制资产或文件夹时，会复制整个资产或文件夹及其内容结构。 复制的资产或文件夹会复制在目标位置。 不会更改源位置的资产。
 
@@ -425,7 +425,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
    >
    >在粘贴操作完成之前，工具栏中会显示&#x200B;**[!UICONTROL 粘贴]**&#x200B;图标。
 
-## 移动和重命名资产{#moving-or-renaming-assets}
+## 移动和重命名资产 {#moving-or-renaming-assets}
 
 将资产（或文件夹）移动到其他位置后，与复制资产时不会复制资产（或文件夹）。 资产（或文件夹）将放置在目标位置，并从源位置中删除。 您还可以在将资产移动到新位置时对其重命名。 如果您将已发布的资产移动到其他位置，则可以选择重新发布资产。 默认情况下，对已发布资产执行移动操作时会自动取消发布该资产。 如果作者在移动资产时选择[!UICONTROL Republish]选项，则会重新发布已移动的资产。
 
@@ -474,7 +474,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
    如果您没有更新引用，则引用将继续指向资产的上一个路径。 如果调整引用，它们将更新为新的资产路径。
 
-### 使用拖动操作{#move-using-drag}移动资产
+### 使用拖动操作移动资产 {#move-using-drag}
 
 您可以通过将资产（或文件夹）拖动到目标位置，而不是使用用户界面中的[!UICONTROL 移动]选项，将资产（或文件夹）移动到同级文件夹。 但是，此操作只能在列表视图中执行。
 
@@ -482,7 +482,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 ![通过拖动资产将资产移入同级文件夹](assets/move-by-drag.gif)
 
-## 管理演绎版{#managing-renditions}
+## 管理演绎版 {#managing-renditions}
 
 1. 您可以为资产添加或删除演绎版，但原始形式除外。导航到您要为其添加或删除演绎版的资产所在的位置。
 
@@ -536,7 +536,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 有关子资产的信息，请参阅[管理子资产](managing-linked-subassets.md)。
 
-## 删除资产{#deleting-assets}
+## 删除资产 {#deleting-assets}
 
 要解析或删除其他页面中的传入引用，请在删除资产之前更新相关引用。
 
@@ -570,7 +570,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 请参阅[从AEM](download-assets-from-aem.md)下载资产
 
-## 发布和取消发布资产{#publish-assets}
+## 发布和取消发布资产 {#publish-assets}
 
 在[!DNL Experience Manager]作者上传、处理或编辑资产后，您需要将资产发布到发布服务器。 发布后，资产将公开可用。 取消发布操作会从发布服务器中删除资产，但不会从创作服务器中删除资产。
 
@@ -598,7 +598,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 * 未发布空文件夹。
 * 如果您发布的资产正在处理，则只会发布原始内容。 缺少演绎版。 等待处理完成，然后在处理完成后发布或重新发布资产。
 
-## 创建已关闭的用户组{#closed-user-group}
+## 创建已关闭的用户组 {#closed-user-group}
 
 CUG（已关闭的用户组）用于限制对从AEM发布的特定资产文件夹的访问权限。 如果您为文件夹创建CUG，则对该文件夹（包括文件夹资产和子文件夹）的访问权限将仅限于分配的成员或组。 要访问文件夹，用户必须使用其安全凭据登录。
 
@@ -630,14 +630,14 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 这是因为AEM Assets会等到超时时间段（默认为1小时）到期，然后运行后台作业来为所有新上传/更新的资产的元数据编制索引，并将其添加到建议列表中。
 
-## 使用快速操作{#quick-actions}
+## 使用快速操作 {#quick-actions}
 
 快速操作图标一次只能用于单个资产。根据您的设备，执行以下操作以显示快速操作图标：
 
 * 触控设备：触摸并按住。 例如，在iPad上，您可以点按并按住资产，以便显示快速操作。
 * 非触控设备：悬停指针。 例如，在桌面设备上，如果将指针悬停在资产缩略图上，则会显示快速操作栏。
 
-### 导航到资产并选择资产{#navigating-and-selecting-assets}
+### 导航到并选择资产 {#navigating-and-selecting-assets}
 
 您可以使用&#x200B;**[!UICONTROL 选择]**&#x200B;图标，查看、导航和选择具有任何可用视图（卡片、列、列表）的资产。 **** “选择”在卡片视图中显示为快速操作。
 
@@ -653,7 +653,7 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 有关更多信息，请参阅[查看和选择资源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)。
 
-## 编辑图像{#editing-images}
+## 编辑图像 {#editing-images}
 
 利用AEM Assets界面中的编辑工具，可对图像资产执行小型编辑作业。 您可以裁剪、旋转、翻转和对图像执行其他编辑作业。 您还可以将图像映射添加到资产。
 
@@ -779,7 +779,15 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-### 查看保存的注释{#viewing-saved-annotations}
+### 查看保存的注释 {#viewing-saved-annotations}
+
+一次只能查看一个注释。
+
+>[!NOTE]
+>
+>如果您选择多个批注，则用户界面上将显示最新的批注。
+>
+>仅支持多选将注释资产打印为PDF。
 
 1. 要查看资产的已保存注释，请导航到资产的位置，然后打开资产页面。
 
@@ -797,11 +805,15 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 1. 点按&#x200B;**[!UICONTROL 删除]**&#x200B;以删除特定注释。
 
-### 打印批注{#printing-annotations}
+### 打印批注 {#printing-annotations}
 
 如果资产具有批注或者已经受过审阅工作流，您可以将资产以及批注和审阅状态打印为PDF文件，以供离线审阅。
 
 您还可以选择仅打印批注或审阅状态。
+
+>[!NOTE]
+>
+>在以PDF格式打印注释的资产时，您可以选择多个批注。
 
 长批注可能无法在PDF文件中正确呈现。 为了获得最佳渲染效果，Adobe建议您将注释限制为50个词。
 
@@ -876,7 +888,7 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 1. 通过将font-family参数设置为`Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`来配置注释PDF文件。 此配置默认可用，适用于所有欧洲和CJK语言。
 1. 如果您选择的语言与步骤2中提到的语言不同，请在默认字体系列后附加一个适当（以逗号分隔）的条目。
 
-## 创建资产版本控制{#asset-versioning}
+## 创建资产版本控制 {#asset-versioning}
 
 版本控制创建数字资产在某个特定时间点的快照。版本控制有助于在以后将资产恢复到以前的状态。 例如，如果要撤消对资产所做的更改，请恢复该资产未经编辑的版本。
 
@@ -938,7 +950,7 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
    ![compare_versions](assets/compare_versions.png)
 
-### 在资产{#starting-a-workflow-on-an-asset}上启动工作流
+### 在资产上启动工作流 {#starting-a-workflow-on-an-asset}
 
 请参阅[将工作流应用到AEM资产](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)。
 

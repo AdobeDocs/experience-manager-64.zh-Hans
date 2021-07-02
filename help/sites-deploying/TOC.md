@@ -8,10 +8,10 @@ breadcrumb-title: Deploying 指南
 user-guide-description: 详细了解 Adobe Experience Manager 6.4 的安装、部署和架构，包括我们的 Adobe Managed Services 云部署。
 feature: 部署
 role: Architect
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 18%
+source-wordcount: '373'
+ht-degree: 17%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 18%
    + [一致性和遍历检查](consistency-check.md)
    + [性能准则](performance-guidelines.md)
    + [性能优化](configuring-performance.md)
-   + [Assets性能指南](assets-performance-sizing.md)
+   + [Assets性能指南](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
    + [配置操作方法文章](ht-deploy.md)
    + [删除Geometrixx站点](removing-the-geometrixx-sites.md)
    + [配置Web控制台](configuring-web-console.md)
@@ -85,7 +85,7 @@ ht-degree: 18%
    + [AEM 6.4中的存储库重组](repository-restructuring.md)
    + [AEM 6.4中的常用存储库重组](all-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4中的站点存储库重组](sites-repository-restructuring-in-aem-6-4.md)
-   + [AEM 6.4中的资产存储库重组](assets-repository-restructuring-in-aem-6-4.md)
+   + [AEM 6.4中的资产存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
    + [Dynamic Media 6.4中的存储库重组](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Forms 6.4中的存储库重组](forms-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4中的电子商务存储库重组](ecommerce-repository-restructuring-in-aem-6-4.md)

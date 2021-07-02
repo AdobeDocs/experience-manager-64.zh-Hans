@@ -5,18 +5,18 @@ contentOwner: AG
 feature: 资产管理
 role: Leader,Architect,Business Practitioner
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 38%
+source-wordcount: '863'
+ht-degree: 39%
 
 ---
 
-# 关于[!DNL Adobe Experience Manager Assets]作为DAM解决方案{#about-assets}
+# 关于[!DNL Adobe Experience Manager Assets]作为DAM解决方案 {#about-assets}
 
 [!DNL Assets] 是一款数字资产管理(DAM)工具，是该平台必不可少的一 [!DNL Experience Manager] 部分，可让您的企业管理和分发数字资产。组织内的用户可以管理、存储和访问多种类型的数字资产，如图像、视频、文档、音频剪辑、3D文件和富媒体，以在Web上使用、在打印中使用和用于数字分发。
 
-## 什么是数字资产管理？{#what-is-digital-asset-management}
+## 什么是数字资产管理？ {#what-is-digital-asset-management}
 
 [!DNL Assets] 允许在整个企业范围内共享和分发某组织的关键数字资产。组织内的用户可以通过 Web 界面（或者 CIFS 或 WebDAV 文件夹）存储、管理和访问数字资产，例如图像、图表、音频、视频和文档。
 
@@ -41,24 +41,24 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 ![screen_shot_2012-04-17at20214pm](assets/screen_shot_2012-04-17at20214pm.png) -->
 
-### 数字资产管理与图像组件{#digital-asset-management-versus-image-component}
+### 数字资产管理与图像组件 {#digital-asset-management-versus-image-component}
 
 在确定是将图像放入DAM存储库还是使用图像组件时，请考虑图像生命周期：
 
 * 如果图像的生命周期与页面相同，请使用图像组件。
 * 如果图像具有单独的生命周期，例如，如果您使用图像两次或在 WCM 之外使用图像，则使用 [!DNL Assets].
 
-## 什么是数字资产？{#what-are-digital-assets}
+## 什么是数字资产？ {#what-are-digital-assets}
 
 资产是指数字文档、图像、视频或音频（或其中任一部分），它们可以具有多个演绎版，并且可以具有子资产（例如，photoshop文件中的图层、PowerPoint文件中的幻灯片、PDF中的页面、ZIP中的文件）。
 
-资产本质上是一个具有元数据、演绎版和子资产的二进制文件。有关详细信息，请参阅 [DAM 性能指南](/help/sites-deploying/assets-performance-sizing.md)。
+资产本质上是一个具有元数据、演绎版和子资产的二进制文件。有关详细信息，请参阅 [DAM 性能指南](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)。
 
 >[!CAUTION]
 >
 >上传和/或编辑大量资产（特别是图像）可能会影响[!DNL Experience Manager]部署的性能。
 
-### [!DNL Experience Manager Assets] 术语  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] 术语 {#aem-assets-terminology}
 
 在[!DNL Experience Manager]中使用数字资产时，您需要了解以下术语：
 
@@ -78,7 +78,7 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 * **子资产**:子资产是构成资产的资产，例如，PDF文件中 [!DNL Adobe Photoshop] 的文件或页面中的层。在[!DNL Assets]中，您可以像管理资产一样管理子资产。
 
-### 如何处理数字资产{#how-to-work-with-assets}
+### 如何处理数字资产 {#how-to-work-with-assets}
 
 您可以对资产或收藏集执行操作。这些操作包括创建或修改资产、收藏集和演绎版。您对资产执行的许多基本操作（上传、删除、更新、保存子资产）都会触发预配置的工作流。 这些操作将在[!DNL Assets]中自动打开，并在[!DNL Assets]媒体处理程序中详细描述。
 
@@ -91,7 +91,7 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 当然，您也可以手动应用工作流。请参阅 [ Assets 媒体处理程序](media-handlers.md)，以获取默认工作流的列表。
 
-## [!DNL Experience Manager Assets] 和  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] 和 [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
 有关差异的信息，请参阅[资产和Media Library](medialibrary.md)。
 

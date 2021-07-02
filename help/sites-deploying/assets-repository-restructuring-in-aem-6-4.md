@@ -10,34 +10,34 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: 升级
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1139'
 ht-degree: 2%
 
 ---
 
-# AEM 6.4{#assets-repository-restructuring-in-aem}中的资产存储库重组
+# AEM 6.4中的资产存储库重组{#assets-repository-restructuring-in-aem}
 
 如AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的父[存储库重组页面中所述，升级到AEM 6.4的客户应使用此页面评估与影响AEM Assets解决方案的存储库更改相关的工作量。 某些更改在AEM 6.4升级过程中需要工作，而其他更改可能会推迟到6.5升级。
 
 **升级6.4版**
 
-* [杂项](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [杂项](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 **6.5升级之前**
 
-* [资产/收集事件电子邮件通知模板](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [经典资产共享设计](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [下载资产电子邮件通知模板](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [DRM许可证示例](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
+* [资产/收集事件电子邮件通知模板](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [经典资产共享设计](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [下载资产电子邮件通知模板](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [DRM许可证示例](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-* [链接共享电子邮件通知模板](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [InDesign工作流脚本](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [视频转码配置](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [杂项](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [链接共享电子邮件通知模板](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [InDesign工作流脚本](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [视频转码配置](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [杂项](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-## 使用6.4升级{#with-upgrade}
+## 升级6.4版 {#with-upgrade}
 
 ### 杂项 {#misc}
 
@@ -62,9 +62,9 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 在6.5升级之前{#prior-to-upgrade}
+## 6.5升级之前 {#prior-to-upgrade}
 
-### 资产/收集事件电子邮件通知模板{#asset-collection-event-e-mail-notification-template}
+### 资产/收集事件电子邮件通知模板 {#asset-collection-event-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -97,7 +97,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 经典资产共享设计{#classic-asset-share-designs}
+### 经典资产共享设计 {#classic-asset-share-designs}
 
 <table> 
  <tbody> 
@@ -127,7 +127,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 下载资产电子邮件通知模板{#download-asset-e-mail-notification-template}
+### 下载资产电子邮件通知模板 {#download-asset-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -160,7 +160,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### DRM许可证示例{#example-drm-licenses}
+### DRM许可证示例 {#example-drm-licenses}
 
 | **上一位置** | `/etc/dam/drm/licenses/` |
 |---|---|
@@ -168,7 +168,7 @@ ht-degree: 2%
 | **重组指导** | 不适用 |
 | **注释** | 不适用 |
 
-### 链接共享电子邮件通知模板{#link-share-e-mail-notification-template}
+### 链接共享电子邮件通知模板 {#link-share-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -201,7 +201,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### InDesign工作流脚本{#indesign-workflow-scripts}
+### InDesign工作流脚本 {#indesign-workflow-scripts}
 
 <table> 
  <tbody> 
@@ -235,7 +235,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 视频转码配置{#video-transcoding-configurations}
+### 视频转码配置 {#video-transcoding-configurations}
 
 <table> 
  <tbody> 
@@ -262,7 +262,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 查看器预设配置{#viewer-preset-configurations}
+### 查看器预设配置 {#viewer-preset-configurations}
 
 <table> 
  <tbody> 

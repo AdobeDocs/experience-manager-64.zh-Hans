@@ -8,7 +8,7 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: 资产管理，视频
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1795b0faed0570e8130c1ba60de07bda49db8fde
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 15%
@@ -44,7 +44,7 @@ AEM Assets会为扩展名为MP4的视频资产生成预览。 如果资产的格
 除了AEM Assets配置之外，还要更改以下配置以上传大型资产：
 
 * 增加令牌过期时间。 请参阅`https://[aem_server]:[port]/system/console/configMgr`的Web控制台中的[!UICONTROL AdobeGranite CSRF Servlet]。 有关更多信息，请参阅[CSRF保护](/help/sites-developing/csrf-protection.md)。
-* 在Dispatcher配置中增加`receiveTimeout`。 有关更多信息，请参阅[Experience ManagerDispatcher配置](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)。
+* 在Dispatcher配置中增加`receiveTimeout`。 有关更多信息，请参阅[Experience ManagerDispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#renders-options)。
 
 >[!NOTE]
 >

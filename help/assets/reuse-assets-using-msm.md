@@ -4,16 +4,16 @@ description: 在从派生并链接到父资产的多个页面/文件夹中使用
 contentOwner: AG
 mini-toc-levels: 1
 feature: 资产管理，多站点管理器
-role: Business Practitioner,Administrator,Architect
+role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 9%
 
 ---
 
-# 为[!DNL Assets] {#reuse-assets-using-msm-for-assets}使用MSM重复使用资产
+# 使用MSM为[!DNL Assets]重用资产 {#reuse-assets-using-msm-for-assets}
 
 [!DNL Adobe Experience Manager]中的多站点管理器(MSM)功能使用户能够重复使用一次创作的内容，并在多个Web位置中重复使用。 与MSM一样，数字资产也可用于[!DNL Assets]功能。 对[!DNL Assets]使用MSM，您可以：
 
@@ -25,9 +25,9 @@ ht-degree: 9%
 
 要将MSM用于[!DNL Assets]，请至少安装[!DNL Experience Manager] 6.4 Service Pack 5。 有关更多信息，请参阅[最新Service Pack的发行说明](/help/release-notes/sp-release-notes.md)。
 
-## 了解优势和概念{#understand-benefits-concepts}
+## 了解优势和概念 {#understand-benefits-concepts}
 
-### 其工作方式及优势{#how-it-works-the-benefits}
+### 工作原理和优势 {#how-it-works-the-benefits}
 
 要了解在多个Web位置中重复使用相同内容（文本和资产）的使用方案，请参阅[可能的MSM方案](/help/sites-administering/msm.md)。 [!DNL Experience Manager] 在原始资产及其链接的副本(称为Live Copy(LC))之间维护一个链接。维护的链接允许将集中的更改推送到多个Live Copy。 这样可以在消除管理重复副本的限制的同时，更快地进行更新。 变化的传播是无误的和集中的。 利用功能，可以腾出空间进行仅限于选定Live Copy的更新。 用户可以分离链接（即中断继承），并在下次更新主副本并转出更改时，进行不被覆盖的本地编辑。 可以对一些选定的元数据字段或整个资产进行分离。 它允许灵活地在本地更新最初从主副本继承的资产。
 
@@ -37,7 +37,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 
 * 您可以通过暂停Live关系来更新Live Copy，也可以删除一些有限字段的继承。 对源的修改将不再应用于Live Copy。
 
-### 资产术语{#glossary-msm-for-assets}的MSM术语表
+### MSM资产术语表 {#glossary-msm-for-assets}
 
 * **来源：** 原始资产或文件夹。从中派生Live Copy的主副本。
 
@@ -59,7 +59,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 
 * **分离：** 不可撤消地删除Live Copy资产/文件夹的Live关系。分离操作后，Live Copy将永远无法从源接收更新，并且不再是Live Copy。 请参阅[remove relationship](#remove-live-relationship)。
 
-## 创建资产{#create-live-copy-asset}的Live Copy
+## 创建资产的Live Copy {#create-live-copy-asset}
 
 要从一个或多个源资产或文件夹创建Live Copy，请执行以下任一操作：
 
@@ -91,7 +91,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 >
 >移动源或Live Copy时，这些关系会保留。 删除Live Copy后，这些关系将被删除。
 
-## 查看源和Live Copy的各种属性和状态{#view-properties-statuses-source-and-lc}
+## 查看源和Live Copy的各种属性和状态 {#view-properties-statuses-source-and-lc}
 
 您可以从AEM用户界面的各个区域查看Live Copy的信息和与MSM相关的状态，如关系、同步、转出等。 以下两种方法适用于资产和文件夹：
 
@@ -102,7 +102,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 >
 >要检查几个单独的Live Copy的状态，请使用第一个方法检查&#x200B;**[!UICONTROL Properties]**&#x200B;页面。 要检查多个Live Copy的状态，请使用第二个方法检查&#x200B;**[!UICONTROL 关系状态]**&#x200B;页面。
 
-### Live Copy的信息和状态{#information-status-of-one-lc}
+### Live Copy的信息和状态 {#information-status-of-one-lc}
 
 要检查Live Copy资产或文件夹的信息和状态，请执行以下步骤。
 
@@ -112,7 +112,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 1. 如果子资产借用Live Copy配置，则可以启用或禁用。
 1. 您可以选择Live Copy的选项，以从父项继承转出配置或更改配置。
 
-### 文件夹{#information-status-of-all-lcs-of-folder}的所有Live Copy的信息和状态
+### 文件夹所有Live Copy的信息和状态 {#information-status-of-all-lcs-of-folder}
 
 [!DNL Experience Manager] 提供了一个控制台，用于检查源文件夹所有Live Copy的状态。此控制台显示所有子资产的状态。
 
@@ -126,7 +126,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 >
 >您可以快速查看其他文件夹的Live Copy状态，而无需浏览太多。 从&#x200B;**[!UICONTROL Live Copy概述]**&#x200B;界面的中上部更改文件夹。
 
-### 源{#quick-actions-from-references-rail-for-source}的“引用”边栏中的快速操作
+### 从源的“引用”边栏中快速执行操作 {#quick-actions-from-references-rail-for-source}
 
 对于源资产或文件夹，您可以看到以下信息，并直接从“引用”边栏中执行以下操作：
 
@@ -144,7 +144,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 
 ![对于特定的Live Copy，在选择源资产时，可以从引用边栏访问暂停关系或更改转出配置的选项](assets/lc_edit_referencerail.png)
 
-### Live Copy {#quick-actions-from-references-rail-for-live-copy}的“引用”边栏中的快速操作
+### Live Copy的“引用”边栏中的快速操作 {#quick-actions-from-references-rail-for-live-copy}
 
 对于Live Copy资产或文件夹，您可以看到以下信息，并直接从“引用”边栏中执行以下操作：
 
@@ -160,7 +160,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 
 修改源后，可以使用同步操作或转出操作将更改传播到Live Copy。 要了解这两个操作之间的差异，请参阅[术语表](#glossary-msm-for-assets)。
 
-### 转出操作{#rollout-action}
+### 转出操作 {#rollout-action}
 
 您可以从源资产启动转出操作，并更新所有或几个选定的Live Copy。
 
@@ -178,7 +178,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 
 ![将源的修改转出到选定的Live Copy](assets/lc_rollout_dialog.png)
 
-### 关于同步操作{#about-synchronize-action}
+### 关于同步操作 {#about-synchronize-action}
 
 同步操作仅将源中的修改提取到选定的Live Copy。 同步操作会尊重并维护在取消继承后完成的本地修改。 不会覆盖本地修改，并且取消的继承也不会重新建立。 您可以通过三种方式启动同步操作。
 
@@ -200,7 +200,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 >
 >如果关系暂停，则同步操作在工具栏中不可用。 虽然同步操作在[!UICONTROL 引用]边栏中可用，但即使成功转出，修改也不会传播。
 
-## 暂停和恢复关系{#suspend-and-resume-relationship}
+## 暂停和恢复关系 {#suspend-and-resume-relationship}
 
 您可以暂时暂停关系，以阻止Live Copy接收对源资产或文件夹所做的修改。 还可以恢复Live Copy的关系，以开始从源接收修改。
 
@@ -208,7 +208,7 @@ MSM会在源资产及其Live Copy之间维护实时关系，以便：
 
 或者，您也可以从 **[!UICONTROL Live Copy 概述]**&#x200B;控制台快速暂停或恢复 Live Copy 文件夹中多个资产的关系。请参阅[对 Live Copy 文件夹中的许多资产执行操作](#take-actions-on-many-assets-in-lcfolder)。
 
-## 对Live Copy {#make-local-modifications-to-live-copy}进行本地修改
+## 对Live Copy进行本地修改 {#make-local-modifications-to-live-copy}
 
 Live Copy是创建时原始源的副本。 Live Copy的元数据值继承自源。 元数据字段单独维护与源资产相应字段的继承。
 
@@ -218,7 +218,7 @@ Live Copy是创建时原始源的副本。 Live Copy的元数据值继承自源�
 
 ![重置操作会覆盖本地编辑内容，并将Live Copy的部分源与其源进行连接](assets/lc_reset.png)
 
-## 删除实时关系{#remove-live-relationship}
+## 删除实时关系 {#remove-live-relationship}
 
 您可以使用“分离”操作完全删除源与Live Copy之间的关系。 分离后，Live Copy将成为独立的资产或文件夹。 它在分离后立即在AEM界面中显示为新资产。 要从Live Copy的源中分离Live Copy，请执行以下步骤。
 
@@ -232,7 +232,7 @@ Live Copy是创建时原始源的副本。 Live Copy的元数据值继承自源�
 
 或者，您也可以从&#x200B;**[!UICONTROL Live Copy概述]**&#x200B;控制台中快速分离Live Copy文件夹中的多个资产。 请参阅[对 Live Copy 文件夹中的许多资产执行操作](#take-actions-on-many-assets-in-lcfolder)。
 
-## 对Live Copy文件夹{#take-actions-on-many-assets-in-lcfolder}中的许多资产执行操作
+## 对Live Copy文件夹中的许多资产执行操作 {#take-actions-on-many-assets-in-lcfolder}
 
 如果您在Live Copy文件夹中包含多个资产，则对每个资产启动操作可能会非常繁琐。 您可以从Live Copy控制台快速对许多资产启动基本操作。 上述方法可继续用于单个资产。
 
@@ -241,7 +241,7 @@ Live Copy是创建时原始源的副本。 Live Copy的元数据值继承自源�
 1. 在此功能板中，从 Live Copy 文件夹中选择 Live Copy 资产。单击工具栏中的所需操作。可用的操作包括&#x200B;**[!UICONTROL Edit]**、**[!UICONTROL Synchronize]**、**[!UICONTROL Reset]**、**[!UICONTROL Suspend]**&#x200B;和&#x200B;**[!UICONTROL Detach]**。 您可以对任意数量的Live Copy文件夹中与选定源文件夹存在Live关系的任何资产快速启动这些操作。
    ![从Live Copy概述控制台轻松更新Live Copy文件夹中的许多资产](assets/lc_console_update_assets.png)
 
-## 扩展资产{#extend-msm-for-assets}的MSM
+## 扩展资产的MSM {#extend-msm-for-assets}
 
 AEM允许您使用MSM Java API扩展功能。 对于Assets，扩展的工作方式与与MSM for Site的工作方式相同。 有关详细信息，请参阅[扩展MSM](../sites-developing/extending-msm.md)以及以下部分，以了解有关特定任务的信息：
 
@@ -257,7 +257,7 @@ AEM允许您使用MSM Java API扩展功能。 对于Assets，扩展的工作方�
 >* 对于资产，MSM不支持在页面属性（触屏UI）上配置MSM锁定。
 
 
-## 资产管理任务对Live Copy的影响{#impact-of-asset-management-tasks-on-live-copies}
+## 资产管理任务对Live Copy的影响 {#impact-of-asset-management-tasks-on-live-copies}
 
 Live Copy和源是可在一定程度上作为数字资产进行管理的资产或文件夹。 AEM中的某些资产管理任务对Live Copy有特定影响。
 
@@ -278,7 +278,7 @@ Live Copy和源是可在一定程度上作为数字资产进行管理的资产�
 * 对于资产，MSM不支持在页面属性（触屏UI）上配置MSM锁定。
 * 对于MSM for Assets，请仅使用标准转出配置。 其他转出配置不适用于MSM for Assets。
 
-## 资产的MSM限制{#limitations-of-msm-for-assets}
+## 资产的MSM限制 {#limitations-of-msm-for-assets}
 
 以下是MSM对资产的限制。
 

@@ -3,16 +3,16 @@ title: 资产性能调整指南
 description: 围绕AEM配置、硬件、软件和网络组件的更改，以消除瓶颈并优化AEM Assets性能的关键重点领域。
 contentOwner: AG
 feature: 资产管理
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3208'
 ht-degree: 0%
 
 ---
 
-# 资产性能调整指南{#assets-performance-tuning-guide}
+# 资产性能调整指南 {#assets-performance-tuning-guide}
 
 Adobe Experience Manager(AEM)资产设置包含许多硬件、软件和网络组件。 根据您的部署方案，您可能需要对硬件、软件和网络组件进行特定配置更改，以消除性能瓶颈。
 
@@ -28,7 +28,7 @@ AEM Assets性能不佳可能会影响用户在交互式性能、资产处理、�
 
 虽然AEM在许多平台上受支持，但Adobe在Linux和Windows上发现对本机工具的最大支持，这有助于获得最佳性能并简化实施。 理想情况下，您应该部署64位操作系统，以满足AEM Assets部署的高内存要求。 与任何AEM部署一样，您应尽可能实施TarMK。 虽然TarMK无法扩展到单个创作实例之外，但发现它的性能优于MongoMK。 您可以添加TarMK卸载实例，以提高AEM Assets部署的工作流处理能力。
 
-### 临时文件夹{#temp-folder}
+### 临时文件夹 {#temp-folder}
 
 要缩短资产上传时间，请对Java temp目录使用高性能存储。 在Linux和Windows上，可使用RAM驱动器或SSD。 在基于云的环境中，可以使用等效的高速存储类型。 例如，在Amazon EC2中，[临时驱动器](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)驱动器可用于temp文件夹。
 
@@ -47,13 +47,13 @@ mkfs -q /dev/ram1 800000
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
-## Java配置{#java-configuration}
+## Java配置 {#java-configuration}
 
-### Java版本{#java-version}
+### Java版本 {#java-version}
 
 由于Oracle自2015年4月起已停止发布Java 7更新，因此Adobe建议在Java 8上部署AEM Assets。 在某些情况下，它显示性能有所改善。
 
-### JVM参数{#jvm-parameters}
+### JVM参数 {#jvm-parameters}
 
 您应设置以下JVM参数：
 
@@ -63,13 +63,13 @@ mkfs -q /dev/ram1 800000
 * `-Dupdate.limit`=250000
 * `-Doak.fastQuerySize`=true
 
-## 数据存储和内存配置{#data-store-and-memory-configuration}
+## 数据存储和内存配置 {#data-store-and-memory-configuration}
 
-### 文件数据存储配置{#file-data-store-configuration}
+### 文件数据存储配置 {#file-data-store-configuration}
 
 建议所有AEM Assets用户将数据存储与区段存储分离。 此外，配置`maxCachedBinarySize`和`cacheSizeInMB`参数有助于最大化性能。 将`maxCachedBinarySize`设置为可在缓存中保存的最小文件大小。 指定用于`cacheSizeInMB`内数据存储的内存内缓存大小。 Adobe建议将此值设置为堆总大小的2-10%之间。 但是，负载/性能测试有助于确定理想的设置。
 
-### 配置缓冲的图像缓存的最大大小{#configure-the-maximum-size-of-the-buffered-image-cache}
+### 配置缓冲的图像缓存的最大大小 {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 在将大量资产上传到Adobe Experience Manager时，为了允许内存消耗出现意外峰值并防止JVM在出现OutOfMemoryErrors时失败，请减小已配置的缓冲图像缓存的最大大小。 例如，您的系统堆（ — `Xmx`参数）最大为5 GB，Oak BlobCache设置为1 GB，文档缓存设置为2 GB。 在这种情况下，缓冲的缓存将最大占用1.25 GB和内存，这将仅保留0.75 GB的内存，以备出现意外峰值。
 
@@ -77,11 +77,11 @@ mkfs -q /dev/ram1 800000
 
 从AEM 6.1 SP1中，如果您使用`sling:osgiConfig`节点来配置此属性，请确保将数据类型设置为Long。 有关更多详细信息，请参阅[CQBufferedImageCache在资产上传](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)期间使用堆。
 
-### 共享数据存储{#shared-data-stores}
+### 共享数据存储 {#shared-data-stores}
 
 实施S3或共享文件数据存储有助于在大规模实施中节省磁盘空间并提高网络吞吐量。 有关使用共享数据存储的利弊的更多信息，请参阅[资产大小调整指南](assets-sizing-guide.md)。
 
-### S3数据存储{#s-data-store}
+### S3数据存储 {#s-data-store}
 
 以下S3数据存储配置(`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`)帮助将12.8 TB的二进制大对象(BLOB)从现有文件数据存储中提取到客户站点的S3数据存储中：
 
@@ -106,7 +106,7 @@ accessKey=<snip>
  migrateFailuresCount=400
 ```
 
-## 网络优化{#network-optimization}
+## 网络优化 {#network-optimization}
 
 Adobe建议启用HTTPS，因为许多公司都有可嗅探HTTP流量的防火墙，这会对上传和损坏文件造成不利影响。 对于大文件上传，请确保用户已通过有线连接连接到网络，因为WiFi网络会迅速饱和。 有关确定网络瓶颈的准则，请参阅[资产大小调整指南](assets-sizing-guide.md)。 要通过分析网络拓扑来评估网络性能，请参阅[资产网络注意事项](assets-network-considerations.md)。
 
@@ -119,7 +119,7 @@ Adobe建议启用HTTPS，因为许多公司都有可嗅探HTTP流量的防火墙
 
 ## 工作流 {#workflows}
 
-### 临时工作流{#transient-workflows}
+### 瞬态工作流 {#transient-workflows}
 
 尽可能将DAM更新资产工作流设置为“临时”。 该设置可显着减少处理工作流所需的开销，因为在这种情况下，工作流不需要通过常规的跟踪和存档流程。
 
@@ -148,7 +148,7 @@ Adobe建议启用HTTPS，因为许多公司都有可嗅探HTTP流量的防火墙
 
    例如，在运行大量非瞬态工作流（创建工作流实例节点）后，您可以在临时基础上运行[ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html)。 它会立即删除冗余的已完成工作流实例，而不是等待AdobeGranite工作流清除计划程序运行。
 
-### 最大并行作业数{#maximum-parallel-jobs}
+### 最大并行作业数 {#maximum-parallel-jobs}
 
 默认情况下，AEM运行的并行作业数上限等于服务器上处理器数。 此设置的问题在于，在负载过重时，所有处理器都被DAM更新资产工作流占用，从而减慢UI响应速度，并阻止AEM运行其他可保护服务器性能和稳定性的进程。 最好通过执行以下步骤将此值设置为服务器上可用处理器的一半：
 
@@ -164,7 +164,7 @@ Adobe建议启用HTTPS，因为许多公司都有可嗅探HTTP流量的防火墙
 
 从AEM 6.2开始，借助AEM 6.1的功能包，您可以通过无二进制复制来执行卸载。 在此模型中，创作实例共享公共数据存储，并且只通过转发复制来回发送元数据。 虽然此方法与共享文件数据存储非常适用，但S3数据存储可能存在问题。 由于后台写入线程可能会导致延迟，因此在卸载作业开始之前资产可能尚未写入数据存储。
 
-### DAM更新资产配置{#dam-update-asset-configuration}
+### DAM更新资产配置 {#dam-update-asset-configuration}
 
 DAM更新资产工作流包含为任务配置的完整步骤套件，例如Dynamic Media Classic PTIFF生成和InDesign Server集成。 但是，大多数用户可能不需要执行其中的几个步骤。 Adobe建议您创建DAM更新资产工作流模型的自定义副本，并删除任何不必要的步骤。 在这种情况下，请更新DAM更新资产的启动器，以指向新模型。
 
@@ -178,7 +178,7 @@ DAM更新资产工作流包含为任务配置的完整步骤套件，例如Dynam
 >
 >如果磁盘空间有限，并且集中运行DAM更新资产工作流，请考虑更频繁地计划垃圾收集任务。
 
-#### 运行时再现生成{#runtime-rendition-generation}
+#### 运行时呈现版本生成 {#runtime-rendition-generation}
 
 客户在其网站中使用各种大小和格式的图像，或将其分发给业务合作伙伴。 由于每个演绎版都会增加资产在存储库中的占用空间，因此Adobe建议谨慎使用此功能。 为了减少处理和存储图像所需的资源量，您可以在运行时生成这些图像，而不是在摄取期间作为演绎版生成这些图像。
 
@@ -273,7 +273,7 @@ To disable Page Extraction:
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
-### XMP写回{#xmp-writeback}
+### XMP写回 {#xmp-writeback}
 
 每当在AEM中修改元数据时，XMP写回会更新原始资产，这会导致以下结果：
 
@@ -289,7 +289,7 @@ To disable Page Extraction:
 
 在将资产复制到大量发布实例（例如在Sites实施中）时，Adobe建议您使用链复制。 在这种情况下，创作实例会复制到单个发布实例，而该实例又会复制到其他发布实例，从而释放创作实例。
 
-### 配置链复制{#configure-chain-replication}
+### 配置链复制 {#configure-chain-replication}
 
 1. 选择要将复制链接到的发布实例
 1. 在该发布实例上，添加指向其他发布实例的复制代理
@@ -299,13 +299,13 @@ To disable Page Extraction:
 >
 >Adobe不建议自动激活资产。 但是，如果需要，Adobe建议将此操作作为工作流的最后一步，通常是DAM更新资产。
 
-## 搜索索引{#search-indexes}
+## 搜索索引 {#search-indexes}
 
 确保实施最新的Service Pack和与性能相关的修补程序，因为它们通常包括对系统索引的更新。 请参阅[性能调整提示 | 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) ，用于某些可应用的索引优化，具体取决于您的AEM版本。
 
 为经常运行的查询创建自定义索引。 有关详细信息，请参阅[用于分析慢速查询的方法](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)和[编制自定义索引](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的其他分析，请参阅[查询和索引的最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 
-### Lucene索引配置{#lucene-index-configurations}
+### Lucene索引配置 {#lucene-index-configurations}
 
 可以对Oak索引配置进行一些优化，以帮助提高AEM Assets性能：
 
@@ -372,23 +372,23 @@ To disable Page Extraction:
 
 [获取文件](assets/disable_indexingbinarytextextraction-10.zip)
 
-### 猜测总计{#guess-total}
+### 猜测总计 {#guess-total}
 
 在创建生成大结果集的查询时，请使用`guessTotal`参数以避免在运行这些查询时内存使用率过高。
 
 ## 已知问题 {#known-issues}
 
-### 大文件{#large-files}
+### 大文件 {#large-files}
 
 在AEM中，存在两个与大文件相关的主要已知问题。 当文件大小超过2 GB时，冷备用同步可能会出现内存不足的情况。 在某些情况下，它会阻止备用同步运行。 在其他情况下，它会导致主实例崩溃。 此方案适用于AEM中任何大于2GB的文件，包括内容包。
 
 同样，当文件在使用共享S3数据存储时达到2GB大小时，文件从缓存完全保留到文件系统可能需要一些时间。 因此，在使用无二进制复制时，可能在复制完成之前没有保留二进制数据。 这种情况可能会导致问题，特别是当数据的可用性很重要时（例如在卸载场景中）。
 
-## 性能测试{#performance-testing}
+## 性能测试 {#performance-testing}
 
 对于每个AEM部署，都应建立一个性能测试机制，以便快速发现和解决瓶颈。 以下是需要重点关注的一些关键方面。
 
-### 网络测试{#network-testing}
+### 网络测试 {#network-testing}
 
 对于客户涉及的所有网络性能问题，请执行以下任务：
 
@@ -398,14 +398,14 @@ To disable Page Extraction:
 * 使用网络基准工具
 * 针对调度程序进行测试
 
-### AEM实例测试{#aem-instance-testing}
+### AEM实例测试 {#aem-instance-testing}
 
 为了通过高效的CPU利用和负载共享来最大限度地减少延迟并实现高吞吐量，请定期监控AEM实例的性能。 特别是：
 
 * 针对AEM实例运行加载测试
 * 监控上传性能和UI响应性
 
-## AEM Assets性能检查表{#aem-assets-performance-checklist}
+## AEM Assets性能核对表 {#aem-assets-performance-checklist}
 
 * 启用HTTPS以绕过任何公司HTTP流量探查器。
 * 使用有线连接上传大量资产。

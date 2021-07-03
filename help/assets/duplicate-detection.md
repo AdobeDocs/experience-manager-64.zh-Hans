@@ -3,9 +3,9 @@ title: 启用重复项检测功能
 description: 了解如何在AEM中启用重复资产的检测。
 contentOwner: AG
 feature: 资产管理，资产报表
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 138cf649-9e21-415e-9861-b07caacc85db
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 3%

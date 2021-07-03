@@ -3,9 +3,9 @@ title: 组织您的数字资产
 description: 使用Experience Manager整理数字资产、图像、文件、文件夹等。
 contentOwner: AG
 feature: 资产管理，搜索
-role: Business Practitioner
+role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Microsoft Office和PDF文档的所有数字资产、元数据和内容都会被�
 
 AEM Assets支持多种内容组织方式。 您可以使用文件夹以分层方式组织它们，或者使用例如标记以无序、临时的方式组织它们。 用户可以在DAM资产编辑器中编辑标记，其中显示子资产、演绎版和元数据。
 
-## 组织文件夹{#organize-using-folders}中的资产
+## 在文件夹中组织资产 {#organize-using-folders}
 
 组织资产的最基本方式是将这些资产保存在文件夹中。 它类似于在本地文件系统的文件夹中组织文件。 有关如何创建和管理文件夹的更多信息，请参阅[管理资产](managing-assets-touch-ui.md)。 如何命名文件和文件夹、如何排列子文件夹以及如何处理这些文件夹中的文件，可能会对这些资产的处理方式产生重大影响。 通过使用一致且适当的文件和文件夹命名策略以及良好的元数据实践，您可以充分利用数字资产存储库。
 
@@ -38,7 +38,7 @@ AEM Assets支持多种内容组织方式。 您可以使用文件夹以分层方
 * 创建不太可能更改的文件夹目录，以便任何自定义或自动操作都可以继续运行。 例如，分配的处理配置文件可继续工作。
 * 如果资产已发布，则您可以使用AEM将资产移动到其他文件夹，并从新位置重新发布，则原始已发布的资产位置以及新重新发布的资产仍然可用。但是，原始发布的资产是&#x200B;*丢失的*&#x200B;到AEM，无法取消发布。 因此，作为最佳实践，请先取消发布资产，然后将其移动到其他文件夹。
 
-## 使用标记{#use-tags-to-organize-assets}组织资产
+## 使用标记组织资产 {#use-tags-to-organize-assets}
 
 使用标记作为元数据，您可以轻松搜索资产、使用搜索结果创建收藏集、提升某些资产的搜索排名，以及利用Adobe Sensei的AI算法进行资产发现。
 
@@ -50,7 +50,7 @@ Adobe Experience Manager Assets使用自学算法创建高度描述性的标记�
 * [编辑资产元数据](meta-edit.md)
 * [资产中增强的智能标记](enhanced-smart-tags.md)
 
-## 组织为集合{#organize-as-collections}
+## 组织为收藏集 {#organize-as-collections}
 
 通过Experience Manager资产中的资产收藏集，您可以简化在用户之间创建、编辑和共享资产的功能。 根据您使用收藏集的方式创建多种类型的收藏集，包括包含资产、文件夹和收藏集的静态引用列表的收藏集，以及根据搜索条件提取资产的收藏集。  您还可以使用不同位置的资产创建收藏集，并与具有不同访问、查看和编辑权限级别的多个用户共享这些收藏集。
 
@@ -61,7 +61,7 @@ Any hints/recommendations of when to use what method of organizing? Some example
 Add back links to blog posts by marketing?
 -->
 
-## 组织资产以使用用户档案{#organize-to-use-profiles}
+## 组织资产以使用用户档案 {#organize-to-use-profiles}
 
 处理配置文件包含资产处理命令，这些命令会应用于上传到预定义文件夹的资产。 配置文件用于自动处理文件夹或新上传资产的内容。 您可以利用用户档案更好地组织资产。
 

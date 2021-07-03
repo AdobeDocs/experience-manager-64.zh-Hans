@@ -12,15 +12,15 @@ discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
 feature: 查看器预设
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 21%
 
 ---
 
-# 管理Dynamic Media查看器预设{#managing-viewer-presets}
+# 管理Dynamic Media查看器预设 {#managing-viewer-presets}
 
 Dynamic Media查看器预设是一组设置，用于确定用户在其计算机屏幕和移动设备上查看富媒体资产的方式。 如果您是管理员，则可以创建查看器预设。您可以设置一系列查看器配置选项。例如，可以更改查看器的显示大小或缩放行为。
 
@@ -37,13 +37,13 @@ Dynamic Media查看器预设是一组设置，用于确定用户在其计算机�
 >
 >请注意，不支持编辑任何&#x200B;*预定义的现成查看器预设*。 如果您尝试编辑现成的查看器预设，系统会提示您使用新名称保存查看器预设。
 
-## 查看器的键盘辅助功能{#keyboard-accessibility-for-viewers}
+## 查看器的键盘辅助功能 {#keyboard-accessibility-for-viewers}
 
 所有现成的查看器都支持键盘辅助功能。
 
 另请参阅[键盘可访问性和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
-## 管理Dynamic Media查看器预设{#managing-presets}
+## 管理Dynamic Media查看器预设 {#managing-presets}
 
 您可以通过点按&#x200B;**[!UICONTROL 工具>资产>查看器预设]**，在AEM中添加、编辑、删除、发布、取消发布和预览查看器预设。
 
@@ -53,7 +53,7 @@ Dynamic Media查看器预设是一组设置，用于确定用户在其计算机�
 >
 >默认情况下，当您在资产的详细信息视图中选择查看器时，系统会显示15个查看器预设。 您可以提高此限制。请参阅[增加显示的查看器预设数量](#increasing-the-number-of-viewer-presets-that-display)。
 
-## 查看器支持响应式设计网页{#viewer-support-for-responsive-designed-web-pages}
+## 查看器支持响应式设计的网页 {#viewer-support-for-responsive-designed-web-pages}
 
 不同的网页有不同的需求。 例如，有时您希望网页提供一个链接，以在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，可能需要直接将HTML5查看器嵌入到托管页面。 在后一种情况下，网页可以具有静态布局。 或者，它可以是&#x200B;*响应式*，并在不同设备上显示，或者针对不同的浏览器窗口大小显示不同。 为了满足这些需求，Dynamic Media附带的所有预定义现成HTML5查看器都支持静态网页和响应式设计的网页。
 
@@ -64,7 +64,7 @@ Dynamic Media查看器预设是一组设置，用于确定用户在其计算机�
 >请注意，在首次使用所有现成查看器之前，必须先发布这些查看器。\
 >请参阅[发布查看器预设。](#publishing-viewer-presets)
 
-## 查看器预设系统兼容性{#viewer-preset-system-compatibility}
+## 查看器预设系统兼容性  {#viewer-preset-system-compatibility}
 
 Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容：
 
@@ -75,7 +75,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 * Android平板电脑
 * 对于视频，为[Blackberry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)提供了对MP4播放的额外支持。
 
-### 查看器预设的富媒体类型{#rich-media-types-for-viewer-presets}
+### 查看器预设的富媒体类型 {#rich-media-types-for-viewer-presets}
 
 管理员在创建新查看器预设时，可以添加和自定义以下富媒体类型。
 
@@ -99,7 +99,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 | **垂直缩放** | 通过垂直缩放查看器，您可以最大化产品图像查看体验，从而为用户提供产品的最佳呈现方式。 色板的垂直位置可执行以下操作： <ul><li>确保色板位于折页上方。 使用水平色板时，根据用户的桌面屏幕大小，在用户向下滚动页面之前，不会显示色板。 通过将色板垂直放置在查看器中，可确保无论用户的屏幕大小如何，都可以看到这些色板。</li><li>最大化主图像大小。 使用水平色板时，必须保留页面上的空间，以确保它们可见。 此定位缩小了主图像的大小。 但是，使用垂直色板布局时，您无需分配此空间。 因此，您可以最大化主图像大小。</li></ul> |
 | **缩放** | 用户可以通过单击该选项来缩放区域。用户可以单击相应控件来放大图像、缩小图像以及将图像重置为默认大小。 |
 
-## 现成查看器预设列表{#list-of-out-of-the-box-viewer-presets}
+## 现成查看器预设列表 {#list-of-out-of-the-box-viewer-presets}
 
 下表标识了Dynamic Media附带的所有预定义现成查看器预设。
 
@@ -145,7 +145,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 | ZoomVertical_dark | 垂直缩放 | html5_zoomverticalviewer_dark.css |
 | ZoomVertical_light | 垂直缩放 | html5_zoomverticalviewer_light.css |
 
-### 支持的移动查看器手势矩阵{#supported-mobile-viewers-gestures-matrix}
+### 支持的移动查看器手势矩阵 {#supported-mobile-viewers-gestures-matrix}
 
 下表标识了iOS、Android 2.x和Android 3.x设备上支持的移动查看器手势。
 
@@ -159,7 +159,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 | **轻扫** | 滚动色板条 | 滚动图像 | 旋转 |
 | **弗里克** | 滚动色板条 | 滚动图像 | 旋转 |
 
-## 增加显示{#increasing-the-number-of-viewer-presets-that-display}的Dynamic Media查看器预设数
+## 增加显示的Dynamic Media查看器预设数 {#increasing-the-number-of-viewer-presets-that-display}
 
 从&#x200B;**[!UICONTROL 详细信息视图>查看器]**&#x200B;查看资产时，AEM会显示各种查看器预设。 您可以增加或减少显示的查看器数量。
 
@@ -178,7 +178,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 1. 在&#x200B;**[!UICONTROL limit]**&#x200B;属性中，将数字更改为所需的数字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. 点按&#x200B;**[!UICONTROL 保存全部]**。
 
-## 创建新的Dynamic Media查看器预设{#creating-a-new-viewer-preset}
+## 创建新的Dynamic Media查看器预设 {#creating-a-new-viewer-preset}
 
 通过创建查看器预设，您可以应用各种设置来查看资产并与之交互。 但是，您无需创建新的查看器预设。 如果您愿意，可以使用AEM Assets附带的默认现成查看器预设。
 
@@ -250,7 +250,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
    请参阅[发布查看器预设](#publishing-viewer-presets)。
 
-## 创建交互式查看器预设的特殊注意事项{#special-considerations-for-creating-an-interactive-viewer-preset}
+## 创建交互式查看器预设的特殊注意事项 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **关于面板中图像缩略图的显示模式**
 
@@ -296,7 +296,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
    使用上表中的示例， 30秒/ 3个视频子区段=每个视频子区段的10秒显示。
 
-### 创建轮播横幅查看器预设的特殊注意事项{#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+### 创建轮播横幅查看器预设的特殊注意事项 {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 创建轮播横幅查看器预设时，可以按如下方式访问更改热点样式：
 
@@ -304,7 +304,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 |---|---|---|
 | **热点图标** | 更改用于热点的图标 | 要更改热点图标图像，请在&#x200B;**[!UICONTROL 外观]**&#x200B;选项卡的&#x200B;**[!UICONTROL 选定组件]**&#x200B;中，点按&#x200B;**[!UICONTROL ImageMapEffect]**。 在&#x200B;**[!UICONTROL 图标]**&#x200B;下，选择&#x200B;**[!UICONTROL 背景]**，然后在&#x200B;**[!UICONTROL 图像]**&#x200B;字段中导航到所需的背景图像。 |
 
-## 激活或取消激活Dynamic Media查看器预设{#activating-or-deactivating-viewer-presets}
+## 激活或停用Dynamic Media查看器预设 {#activating-or-deactivating-viewer-presets}
 
 用户界面中可用的查看器预设取决于哪些查看器预设在创作模式下处于活动状态。 默认情况下，查看器预设在创建后为&#x200B;*On*。 如果关闭预设，则在“创作”模式下将看不到该预设。 如果预设已发布。 无论是打开还是关闭，都会始终发布该内容。 如果列表变得太笨重，或者您不希望某个查看器预设可供使用，您可能需要停用查看器预设。
 
@@ -315,7 +315,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
    已激活的查看器预设在右侧蓝色框中显示切换开关；已停用的查看器预设的切换开关会显示在灰色浅框中的左侧。
 
-## 发布Dynamic Media查看器预设{#publishing-viewer-presets}
+## 发布Dynamic Media查看器预设 {#publishing-viewer-presets}
 
 激活（或打开&#x200B;**）查看器预设的状态意味着查看器预设在Dynamic Media组件、交互式媒体组件中以及每当您查看资产时都可见。
 
@@ -331,14 +331,14 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 1. 选择要发布的一个或多个查看器预设。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 发布]**&#x200B;图标。
 
-## 为Dynamic Media查看器预设排序{#sorting-viewer-presets}
+## 为Dynamic Media查看器预设排序 {#sorting-viewer-presets}
 
 **要对Dynamic Media查看器预设进行排序**:
 
 1. 点按 AEM 左上角的 AEM 徽标，然后点按左边栏中的&#x200B;**工具**（锤子图标）**[!UICONTROL > Assets > 查看器预设]**。
 1. 单击&#x200B;**[!UICONTROL 预设标题]**、**[!UICONTROL 类型]**、**[!UICONTROL 已发布]**&#x200B;或&#x200B;**[!UICONTROL 状态]**&#x200B;来按列标题进行排序。例如，单击&#x200B;**[!UICONTROL 类型]**&#x200B;按字母顺序或反向字母顺序对查看器预设类型进行排序。
 
-## 编辑Dynamic Media查看器预设{#editing-viewer-presets}
+## 编辑Dynamic Media查看器预设 {#editing-viewer-presets}
 
 请注意，不支持编辑任何&#x200B;*预定义的现成查看器预设*。 如果您编辑现成的查看器预设，系统会提示您使用新名称保存该查看器预设。
 
@@ -353,7 +353,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
    * 点按&#x200B;**[!UICONTROL Save]**&#x200B;以保存所做更改并返回到&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面。
    * 点按&#x200B;**[!UICONTROL 取消]**，撤消您所做的任何更改并返回到&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面。
 
-## 删除自定义Dynamic Media查看器预设{#deleting-custom-viewer-presets}
+## 删除自定义Dynamic Media查看器预设 {#deleting-custom-viewer-presets}
 
 您可以删除已创建并添加到Dynamic Media的查看器预设。
 
@@ -363,7 +363,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 1. 在&#x200B;**[!UICONTROL 查看器预设]**&#x200B;页面上，选中&#x200B;**[!UICONTROL 预设标题]**，然后点按&#x200B;**[!UICONTROL 垃圾桶]**&#x200B;图标。
 1. 点按&#x200B;**[!UICONTROL 删除]**。
 
-## 将Dynamic Media查看器预设应用到资产{#applying-a-viewer-preset-to-an-asset}
+## 将Dynamic Media查看器预设应用到资产 {#applying-a-viewer-preset-to-an-asset}
 
 如果已发布资产和选定的查看器，则在选择查看器预设后 **[!UICONTROL 将显示]** “ **[!UICONTROL URL]** ”和“嵌入”按钮。
 
@@ -379,7 +379,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
    您可以[复制URL以与其他用户共享](linking-urls-to-yourwebapplication.md)。
 
-## 使用Dynamic Media查看器预设传送资产{#delivering-assets-with-viewer-presets}
+## 使用Dynamic Media查看器预设传送资产 {#delivering-assets-with-viewer-presets}
 
 要获取查看器预设的 URL，请参阅[将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)。另请参阅[将视频查看器嵌入网页](embed-code.md)。
 

@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
 feature: 工作流，资产管理，演绎版
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 11%
 
 ---
 
-# 关于用于处理元数据、图像和视频的配置文件{#profiles-for-processing-metadata-images-and-videos}
+# 关于用于处理元数据、图像和视频的配置文件 {#profiles-for-processing-metadata-images-and-videos}
 
 配置文件是用于将哪些选项应用于已上传到文件夹的资产的方法。 例如，您可以指定特定的元数据配置文件和视频编码配置文件，并将这些配置文件应用到您上传的视频资产。您还可以指定特定的图像配置文件，并将配置文件应用到图像资产，以便对图像资产进行适当的裁剪。
 
@@ -37,7 +37,7 @@ ht-degree: 11%
 >
 >即使在两个文件夹之间移动资产时，也是如此，因为这两个文件夹分配了相同的配置文件。
 
-## 重新处理文件夹{#reprocessing-assets}中的资产
+## 重新处理文件夹中的资产 {#reprocessing-assets}
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ ht-degree: 11%
 
    要监视工作流或检查其进度，请从AEM主控制台页面中，单击&#x200B;**[!UICONTROL 工具>工作流]**。 在工作流实例页面上，选择一个工作流。 在菜单栏上，单击&#x200B;**[!UICONTROL 打开历史记录]**。 您还可以从同一工作流实例页面中终止、暂停或重命名选定的工作流。
 
-### 调整重新处理工作流的批处理大小{#adjusting-load}
+### 调整重新处理工作流的批处理大小 {#adjusting-load}
 
 （可选）重新处理工作流中的默认批大小为每个作业50个资产。 此最佳批处理大小受平均资产大小和运行重新处理的资产的mime类型的约束。 值越高，表示在单个重新处理作业中将包含许多文件。 因此，处理横幅会在AEM资产上停留较长时间。 但是，如果平均文件大小为1 MB或更小，则建议将该值增加到几百，但最大不超过1000。 如果平均文件大小为数百MB，则Adobe建议您将批处理大小减少到10。
 

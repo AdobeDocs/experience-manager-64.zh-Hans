@@ -3,16 +3,16 @@ title: 创建翻译项目
 description: 了解如何在AEM中创建翻译项目。
 contentOwner: AG
 feature: 翻译
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1935'
 ht-degree: 23%
 
 ---
 
-# 创建翻译项目{#creating-translation-projects}
+# 创建翻译项目 {#creating-translation-projects}
 
 要创建语言副本，请触发资产UI中引用边栏下可用的以下语言副本工作流之一：
 
@@ -32,7 +32,7 @@ ht-degree: 23%
 >
 >如果您为复杂资产(如PDF和InDesign文件)启动翻译工作流，则不会提交其子资产或演绎版（如果有）以进行翻译。
 
-## 创建和翻译工作流{#create-and-translate-workflow}
+## 创建和翻译工作流 {#create-and-translate-workflow}
 
 您可以使用创建和翻译工作流首次为特定语言生成语言副本。 工作流提供了以下选项：
 
@@ -280,7 +280,7 @@ ht-degree: 23%
 1. 单击／点按 **[!UICONTROL 开始]**。
 1. 请参阅[添加到现有翻译项目](translation-projects.md#add-to-existing-translation-project)的步骤9-14，以完成其余步骤。
 
-## 创建临时语言副本{#creating-temporary-language-copies}
+## 创建临时语言副本 {#creating-temporary-language-copies}
 
 当您运行翻译工作流以使用原始资产的编辑版本更新语言副本时，现有语言副本将保留，直到您批准已翻译的资产为止。 AEM Assets会将新翻译的资产存储在临时位置，并在您明确批准资产后更新现有语言副本。 如果您拒绝资产，语言副本将保持不变。
 

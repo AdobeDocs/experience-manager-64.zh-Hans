@@ -7,15 +7,15 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: 7cd62a2f-f7c9-40b1-bcd4-5853dadabf1b
 feature: 查看器预设
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 44%
 
 ---
 
-# 应用Dynamic Media查看器预设{#applying-viewer-presets}
+# 应用Dynamic Media查看器预设 {#applying-viewer-presets}
 
 查看器预设是一组设置，用于确定用户在其计算机屏幕和移动设备上查看富媒体资产的方式。您可以将管理员创建的任何查看器预设应用到资产。
 
@@ -26,7 +26,7 @@ ht-degree: 44%
 您可能不需要发布查看器预设，具体取决于您使用的发布模式。
 如果查看器预设有任何问题，请参阅[Dynamic Media故障诊断 — Scene7](troubleshoot-dms7.md#viewers)。
 
-## 将Dynamic Media查看器预设应用到资产{#applying-a-viewer-preset-to-an-asset}
+## 将Dynamic Media查看器预设应用到资产 {#applying-a-viewer-preset-to-an-asset}
 
 1. 打开资产，并点按左边栏中的&#x200B;**[!UICONTROL 查看器]**。
 

@@ -3,16 +3,16 @@ title: 从 [!DNL Adobe Experience Manager]下载数字资产。
 description: 了解如何从 [!DNL Adobe Experience Manager] 下载资产，以及启用或禁用下载功能。
 contentOwner: AG
 feature: 资产管理，资产分发
-role: Business Practitioner
+role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 8%
 
 ---
 
-# 从[!DNL Adobe Experience Manager] {#download-assets-from-aem}下载资产
+# 从[!DNL Adobe Experience Manager]下载资产 {#download-assets-from-aem}
 
 您可以下载资产，包括静态和动态演绎版。 或者，您也可以直接从[!DNL Adobe Experience Manager Assets]发送包含指向资产链接的电子邮件。 下载的资产会打包在 ZIP 文件中。对于导出作业，压缩的 ZIP 文件大小最大为 1 GB。每个导出作业最多允许资产总数为500个。
 

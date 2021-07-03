@@ -7,15 +7,15 @@ topic-tags: administering
 content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
 feature: 视频配置文件，视频
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 39%
 
 ---
 
-# Dynamic Media视频配置文件{#video-profiles}
+# Dynamic Media视频配置文件 {#video-profiles}
 
 Dynamic Media 附带预定义的自适应视频编码配置文件。此现成配置文件中的设置经过优化，可为客户提供最佳的查看体验。 如果您使用自适应视频编码配置文件对主视频进行编码，则在播放视频时，视频播放器会根据客户的 Internet 连接速度，自动调整视频流的质量。这被称为自适应流播放。
 
@@ -92,7 +92,7 @@ Dynamic Media 附带预定义的自适应视频编码配置文件。此现成配
  </tbody> 
 </table>
 
-## 为自适应流播放创建Dynamic Media视频编码配置文件{#creating-a-video-encoding-profile-for-adaptive-streaming}
+## 为自适应流播放创建Dynamic Media视频编码配置文件 {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media已附带预定义的自适应视频编码配置文件，该配置文件是一组适用于MP4 H.264的视频上传设置，已针对最佳观看体验进行了优化。您可以在上传视频时使用此用户档案。
 
@@ -155,7 +155,7 @@ Dynamic Media已附带预定义的自适应视频编码配置文件，该配置�
 
 您还可以查看`error.log`文件以监视编码作业的进度、查看编码是否完成或查看任何作业错误。 `error.log`位于安装AEM实例的`logs`文件夹中。
 
-## 为渐进式流播放创建Dynamic Media视频编码配置文件{#creating-a-video-encoding-profile-for-progressive-streaming}
+## 为渐进式流播放创建Dynamic Media视频编码配置文件 {#creating-a-video-encoding-profile-for-progressive-streaming}
 
 如果选择不使用自适应流播放的编码选项 ****，请注意，您添加到配置文件的所有编码预设都将被视为单个比特率流播放或渐进式视频交付的单个视频演绎版。 此外，不会进行验证，以确保所有视频呈现具有相同的纵横比。
 
@@ -265,7 +265,7 @@ Dynamic Media已附带预定义的自适应视频编码配置文件，该配置�
 
 1. 在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;页面的左上角，点按&#x200B;**[!UICONTROL 后台]**&#x200B;图标以返回到AEM。
 
-### 编辑Dynamic Media视频编码配置文件{#editing-a-video-encoding-profile}
+### 编辑Dynamic Media视频编码配置文件 {#editing-a-video-encoding-profile}
 
 您可以编辑您创建的任何视频编码配置文件，以在该配置文件中添加、编辑或删除视频预设。
 
@@ -291,7 +291,7 @@ Dynamic Media已附带预定义的自适应视频编码配置文件，该配置�
 
 1. 在该页面的右上角，点按&#x200B;**[!UICONTROL 保存]**。
 
-### 复制Dynamic Media视频编码配置文件{#copying-a-video-encoding-profile}
+### 复制Dynamic Media视频编码配置文件 {#copying-a-video-encoding-profile}
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > Assets > 视频配置文件]**。
 1. 在&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;页面上，选中一个视频配置文件名称。
@@ -306,14 +306,14 @@ Dynamic Media已附带预定义的自适应视频编码配置文件，该配置�
 
 1. 在该页面的右上角，点按&#x200B;**[!UICONTROL 保存]**。
 
-### 删除Dynamic Media视频编码配置文件{#deleting-a-video-encoding-profile}
+### 删除Dynamic Media视频编码配置文件 {#deleting-a-video-encoding-profile}
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > Assets > 视频配置文件]**。
 1. 在&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;页面上，选中一个或多个视频配置文件名称。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 删除]**。
 1. 点按&#x200B;**[!UICONTROL 确定]**。
 
-## 将Dynamic Media视频配置文件应用到文件夹{#applying-a-video-profile-to-folders}
+## 将Dynamic Media视频配置文件应用到文件夹 {#applying-a-video-profile-to-folders}
 
 当您将视频配置文件分配给文件夹之后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。这就意味着您只能为每个文件夹分配一个视频配置文件。因此，您在上传、存储、使用资产以及将资产存档的过程中，请妥善安排文件夹结构。
 
@@ -325,19 +325,19 @@ Dynamic Media已附带预定义的自适应视频编码配置文件，该配置�
 
 您可以将视频配置文件应用到特定文件夹或全局应用到所有资产。
 
-### 将视频配置文件应用到特定文件夹{#applying-video-profiles-to-specific-folders}
+### 将视频配置文件应用到特定文件夹 {#applying-video-profiles-to-specific-folders}
 
 您可以从“工具”菜单中将视频配置文件应用到 **[!UICONTROL 文件夹]** ，或者如果您在文件夹中，也可以从“属 **[!UICONTROL 性”]**。 本节将介绍这两种将视频配置文件应用到文件夹的方法。
 
 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-#### 将Dynamic Media视频配置文件从Profiles用户界面{#applying-video-profiles-to-folders-from-profiles-user-interface}应用到文件夹
+#### 从“配置文件”用户界面将Dynamic Media视频配置文件应用到文件夹 {#applying-video-profiles-to-folders-from-profiles-user-interface}
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > Assets > 视频配置文件]**。
 1. 选择您要应用到一个或多个文件夹的视频配置文件。
 1. 点按&#x200B;**[!UICONTROL 将配置文件应用到文件夹]**，然后选择一个或多个用于接收新上传资产的文件夹，然后点按&#x200B;**[!UICONTROL 应用]**。如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-#### 从“属性” {#applying-video-profiles-to-folders-from-properties}将Dynamic Media视频配置文件应用到文件夹
+#### 从“属性”将Dynamic Media视频配置文件应用到文件夹 {#applying-video-profiles-to-folders-from-properties}
 
 1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL Assets]**，然后导航到要将视频配置文件应用到的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按&#x200B;**[!UICONTROL 属性]**。
@@ -345,7 +345,7 @@ Dynamic Media已附带预定义的自适应视频编码配置文件，该配置�
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 
-### 全局应用Dynamic Media视频配置文件{#applying-a-video-profile-globally}
+### 全局应用Dynamic Media视频配置文件 {#applying-a-video-profile-globally}
 
 除了将配置文件应用到文件夹之外，您还可以全局应用一个配置文件，以便任何文件夹中上传到AEM资产的任何内容都会应用选定的配置文件。
 
@@ -357,13 +357,13 @@ Dynamic Media已附带预定义的自适应视频编码配置文件，该配置�
 
 ![chlimage_1-519](assets/chlimage_1-519.png)
 
-## 从文件夹{#removing-a-video-profile-from-folders}中删除Dynamic Media视频配置文件
+## 将Dynamic Media视频配置文件从文件夹删除 {#removing-a-video-profile-from-folders}
 
 当您将视频配置文件从文件夹删除之后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。但是，此前对文件夹中的文件所做的处理均予以保留。
 
 您可以从“工具”菜单中将视频配置文件从文件夹删除 **** ，如果您在文件夹中，也可以从“文件夹设 **[!UICONTROL 置”中删除]**。 本节将介绍这两种将视频配置文件从文件夹删除的方法。
 
-### 通过Profiles用户界面{#removing-video-profiles-from-folders-via-profiles-user-interface}将Dynamic Media视频配置文件从文件夹删除
+### 通过Profiles用户界面将Dynamic Media视频配置文件从文件夹删除 {#removing-video-profiles-from-folders-via-profiles-user-interface}
 
 1. 点按 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > Assets > 视频配置文件]**。
 1. 选择您要从一个或多个文件夹删除的视频配置文件。
@@ -371,7 +371,7 @@ Dynamic Media已附带预定义的自适应视频编码配置文件，该配置�
 
    如果视频配置文件的名称不再出现在文件夹名称的下方，则可以确定该视频配置文件不再应用于该文件夹。
 
-### 通过属性{#removing-video-profiles-from-folders-via-properties}将Dynamic Media视频配置文件从文件夹删除
+### 通过属性将Dynamic Media视频配置文件从文件夹删除 {#removing-video-profiles-from-folders-via-properties}
 
 1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL Assets]**，然后导航到您要将视频配置文件从中删除的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按&#x200B;**[!UICONTROL 属性]**。

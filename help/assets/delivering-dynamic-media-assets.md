@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
 feature: 资产管理
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 25%
@@ -48,7 +48,7 @@ ht-degree: 25%
 * [使 CDN 缓存内容无效](invalidate-cdn-cached-content.md)
 * [使用规则集转换 URL](using-rulesets-to-transform-urls.md)
 
-## HTTP/2交付Dynamic Media资产{#http-delivery-of-dynamic-media-assets}
+## HTTP/2交付Dynamic Media资产 {#http-delivery-of-dynamic-media-assets}
 
 AEM现在支持通过HTTP/2交付所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，将通过HTTP/2协议来交付已发布的资产。 这种交付方法改进了浏览器和服务器通信的方式，从而可以缩短所有Dynamic Media资产的响应和加载时间。
 

@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
 feature: 组件
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2826'
 ht-degree: 34%
@@ -29,7 +29,7 @@ ht-degree: 34%
 >
 >您必须先发布资产，然后才能将资产添加到AEM中的页面。 请参阅[发布Dynamic Media Assets](publishing-dynamicmedia-assets.md)。
 
-## 将Dynamic Media组件添加到页面{#adding-a-dynamic-media-component-to-a-page}
+## 将Dynamic Media组件添加到页面 {#adding-a-dynamic-media-component-to-a-page}
 
 向页面添加Dynamic Media组件与向任何页面添加组件相同。 以下各节详细介绍了Dynamic Media组件。
 
@@ -49,7 +49,7 @@ ht-degree: 34%
 1. 将鼠标指针直接悬停在组件上。 当组件被蓝色框包围时，点按一次以显示组件的工具栏。 点按&#x200B;**[!UICONTROL 配置]**（扳手）图标。
 1. [根据需要](#dynamic-media-components) 编辑组件，然后单击复选标记以保存更改。
 
-### 启用Dynamic Media组件{#enabling-dynamic-media-components}
+### 启用Dynamic Media组件 {#enabling-dynamic-media-components}
 
 如果没有可添加到页面的Dynamic Media组件，则可能意味着您需要首先启用要使用的组件。
 
@@ -76,7 +76,7 @@ ht-degree: 34%
 
 1. 在页面顶部附近的工具栏右侧，从下拉列表中，点按&#x200B;**[!UICONTROL 初始内容]**，然后按[将Dynamic Media组件照常添加到页面](#adding-a-dynamic-media-component-to-a-page)。
 
-## 本地化Dynamic Media组件{#localizing-dynamic-media-components}
+## 本地化Dynamic Media组件 {#localizing-dynamic-media-components}
 
 您可以通过以下两种方式之一将Dynamic Media组件本地化：
 
@@ -90,7 +90,7 @@ ht-degree: 34%
    >
    >请注意，并非&#x200B;**[!UICONTROL 语言]**&#x200B;菜单中提供的所有语言当前都分配了令牌。
 
-## Dynamic Media组件{#dynamic-media-components}
+## Dynamic Media组件 {#dynamic-media-components}
 
 Dynamic Media和交互式媒体位于[!UICONTROL 组件]中的[!UICONTROL Dynamic Media]选项卡下。 对于任何交互式资产（例如交互式视频、交互式图像或传送集），请使用[!UICONTROL 交互式媒体]组件。对于所有其他 Dynamic Media 资产，请使用 Dynamic Media 组件。
 
@@ -121,7 +121,7 @@ Dynamic Media组件是智能的 — 根据您添加的是图像还是视频，�
 
 
 
-#### 处理图像时  {#when-working-with-images}
+#### 处理图像时 {#when-working-with-images}
 
 Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和混合媒体集。您可以缩放图像，并在适当的情况下在旋转集内旋转图像，或从其他类型的集合中选择图像。
 
@@ -194,7 +194,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 * **** 宽度高 ****
 度如果您希望视频具有固定大小，请输入以像素为单位的值。将这两个值留空会使视频成为自适应资产。
 
-#### 使用智能裁剪{#when-working-with-smart-crop}时
+#### 使用智能裁剪时 {#when-working-with-smart-crop}
 
 使用Dynamic Media组件将智能裁剪图像资产添加到您的网页。 编辑该组件时，您可以选择使用预定义的视频查看器预设，以在页面上播放视频。
 
@@ -226,7 +226,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 * **** 高度和 ****
 宽度如果您希望智能裁剪图像具有固定大小，请输入以像素为单位的值。将这两个值留空会使视频成为自适应资产。
 
-### 交互式媒体组件{#interactive-media-component}
+### 交互式媒体组件 {#interactive-media-component}
 
 交互式媒体组件适用于具有交互功能的资产，例如热点或图像映射。如果您具有交互式图像、交互式视频或传送横幅，请使用交互式媒体组件。
 
@@ -262,7 +262,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 * **[!UICONTROL 显示产]**
 品表单默认情况下，未选择此值。产品表单包含所有产品变量，例如大小和颜色。清除复选标记不会显示产品变量。
 
-### 全景媒体组件{#panoramic-media-component}
+### 全景媒体组件 {#panoramic-media-component}
 
 全景媒体组件适用于那些球面全景图像的资产。 此类图像可提供360°的房间、属性、位置或景观观看体验。 要使图像符合球面全景，它必须具有以下任一或两者：
 
@@ -280,7 +280,7 @@ Dynamic Media 组件允许您添加动态图像，包括图像集、旋转集和
 
 如果您要查找的查看器预设不可见，请勾选以确保该查看器预设已发布。 您必须先发布查看器预设，然后才能使用这些预设。 请参阅[管理查看器预设](managing-viewer-presets.md)。
 
-### 使用HTTP/2交付Dynamic Media资产{#using-http-to-delivery-dynamic-media-assets}
+### 使用HTTP/2交付Dynamic Media资产 {#using-http-to-delivery-dynamic-media-assets}
 
 HTTP/2是经过更新的新Web协议，可改进浏览器和服务器的通信方式。 它提供了更快的信息传输，并降低了所需的处理能力。 现在，Dynamic Media资产的交付可以通过HTTP/2进行，从而提供更好的响应和加载时间。
 

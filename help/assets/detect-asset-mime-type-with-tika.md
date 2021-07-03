@@ -3,16 +3,16 @@ title: 使用Apache Tika检测数字资产的MIME类型
 description: 启用Apache Tika以帮助AEM Assets在上传操作期间（而不是文件扩展名）从内容流中检测MIME类型的资产。
 contentOwner: AG
 feature: 元数据，开发人员工具，资产管理
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 3%
 
 ---
 
-# 使用Apache Tika检测数字资产的MIME类型{#detecting-mime-type-of-assets-using-apache-tika}
+# 使用Apache Tika检测数字资产的MIME类型 {#detecting-mime-type-of-assets-using-apache-tika}
 
 通常，Adobe Experience Manager(AEM)Assets会检测您从其文件扩展名上传的资产的MIME类型。 如果您使用Apache Tika上传资产，则在上传操作期间，AEM Assets会从内容流中检测其MIME类型，而不是文件扩展名。
 

@@ -7,8 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
 feature: 全景图像
-role: Business Practitioner
-source-git-commit: 489a4b42bdd5895186ba885b9a1dc33b49427e8d
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 5%
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 ![全景图像2](assets/panoramic-image2.png)
 
-## 上传资产以与全景图像查看器{#uploading-assets-for-use-with-the-panoramic-image-viewer}一起使用
+## 上传资产以与全景图像查看器一起使用 {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 要将上传的资产限定为要与全景图像查看器一起使用的球形全景图像，该资产必须具有以下任一项或两项：
 
@@ -68,7 +68,7 @@ ht-degree: 5%
 
 1. 在右下角，点按&#x200B;**[!UICONTROL 关闭]**。
 
-### 对全景媒体组件{#troubleshooting-the-panoramic-media-wcm-component}进行故障诊断
+### 全景媒体组件故障诊断 {#troubleshooting-the-panoramic-media-wcm-component}
 
 如果将图像放入WCM中的&#x200B;**[!UICONTROL 全景媒体]**&#x200B;组件中，并折叠了组件占位符，则可能需要对以下问题进行故障诊断：
 
@@ -78,10 +78,10 @@ ht-degree: 5%
 * 对于受污染的画布错误，请为图像资产的先前请求设置&#x200B;**[!UICONTROL 规则集定义文件路径和无效CTN]** 。
 * 如果图像请求的大小超过支持的限制后图像质量变得很低，请检查&#x200B;**[!UICONTROL JPEG编码属性>质量]**&#x200B;设置是否不为空。 **[!UICONTROL Quality]**&#x200B;字段的典型设置为`95`。 您可以在&#x200B;**[!UICONTROL 图像服务器发布]**&#x200B;页面上找到该设置。 要访问该页面，请参阅[配置Dynamic Media Classic](#configuring-dynamic-media-classic-scene)。
 
-## 预览全景图像{#previewing-panoramic-images}
+## 预览全景图像 {#previewing-panoramic-images}
 
 请参阅[预览资产](previewing-assets.md)。
 
-## 发布全景图像{#publishing-panoramic-images}
+## 发布全景图像 {#publishing-panoramic-images}
 
 请参阅[发布资产](publishing-dynamicmedia-assets.md)。

@@ -3,16 +3,16 @@ title: 串联元数据
 description: 本文介绍了如何为资产定义级联元数据。
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 13%
 
 ---
 
-# 串联元数据{#cascading-metadata}
+# 串联元数据 {#cascading-metadata}
 
 本文介绍了如何为资产定义级联元数据。
 
@@ -33,7 +33,7 @@ ht-degree: 13%
 * 根据其他字段中指定的值更改特定字段显示的选项。
 * 根据其他字段中指定的值，在特定字段中设置默认元数据值。
 
-## 在AEM {#configure-cascading-metadata-in-aem}中配置级联元数据
+## 在AEM中配置级联元数据 {#configure-cascading-metadata-in-aem}
 
 假设您想要根据所选资产类型显示级联元数据。 一些示例
 

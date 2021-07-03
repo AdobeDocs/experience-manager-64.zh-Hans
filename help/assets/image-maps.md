@@ -3,16 +3,16 @@ title: 添加图像映射
 description: 了解如何将超链接的图像映射添加到图像资产。
 contentOwner: AG
 feature: 资产管理
-role: Business Practitioner, Administrator
+role: User,Admin
 exl-id: d6b04891-12d3-4255-a156-2e9000474fd1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
-# 添加图像映射{#adding-image-maps}
+# 添加图像映射 {#adding-image-maps}
 
 了解如何将超链接的图像映射添加到图像资产。
 

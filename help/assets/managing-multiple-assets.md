@@ -3,16 +3,16 @@ title: 批量编辑多个资产和收藏集的元数据
 description: 了解如何同时编辑多个资产和收藏集的元数据，以快速传播常见的元数据更改。
 contentOwner: AG
 feature: 资产管理，元数据，收藏集
-role: Business Practitioner
+role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 18%
 
 ---
 
-# 管理多个资产和收藏集{#managing-multiple-assets-and-collections}
+# 管理多个资产和收藏集 {#managing-multiple-assets-and-collections}
 
 了解如何同时编辑多个资产和收藏集的元数据，以快速传播常见的元数据更改。
 
@@ -29,7 +29,7 @@ AdobeEnterprise Manager(AEM)Assets允许您同时编辑多个资产的元数据�
 >
 >批量编辑方法适用于文件夹或收藏集中的可用资产。 对于跨文件夹提供的资产或符合通用标准的资产，可以从资产搜索结果中批量更新元数据。
 
-## 编辑多个资产的元数据属性{#editing-metadata-properties-of-multiple-assets}
+## 编辑多个资产的元数据属性 {#editing-metadata-properties-of-multiple-assets}
 
 1. 在Assets用户界面中，导航到要编辑的资产所在的位置。
 1. 选择要编辑其通用属性的资产。
@@ -45,7 +45,7 @@ AdobeEnterprise Manager(AEM)Assets允许您同时编辑多个资产的元数据�
 >
 >对于单值字段，即使选择&#x200B;**[!UICONTROL 追加模式]**，新元数据也不会追加到字段中的现有值中。
 
-## 配置批量元数据更新限制{#configure-limit-for-bulk-metadata-update}
+## 配置批量元数据更新限制 {#configure-limit-for-bulk-metadata-update}
 
 为防止出现类似DOS的情况，AEM会限制Sling请求中支持的参数数量。 一次更新多个资产的元数据时，您可能会达到限制，并且不会为更多资产更新元数据。 AEM在日志中生成以下警告：
 

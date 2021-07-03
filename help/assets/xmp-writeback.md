@@ -3,9 +3,9 @@ title: XMP 写回到演绎版
 description: 了解XMP写回功能如何将资产的元数据更改传播到资产的所有或特定演绎版。
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 4%
@@ -28,7 +28,7 @@ XMP写回功能允许您将元数据更改传播到资产的所有演绎版或�
 
 但是，[!DNL Experience Manager Assets]不会自动将任何元数据更改传播到资产的演绎版。 请参阅[如何启用XMP写回](#enabling-xmp-writeback)。
 
-## 启用XMP写回{#enabling-xmp-writeback}
+## 启用XMP写回 {#enabling-xmp-writeback}
 
 要在上传元数据更改时将其传播到资产的演绎版，请在Configuration Manager中修改&#x200B;**Adobe CQ DAM演绎版制作器**&#x200B;配置。
 
@@ -38,7 +38,7 @@ XMP写回功能允许您将元数据更改传播到资产的所有演绎版或�
 
    ![chlimage_1-346](assets/chlimage_1-346.png)
 
-## 为特定呈现版本{#enabling-xmp-writeback-for-specific-renditions}启用XMP写回
+## 为特定呈现版本启用XMP写回 {#enabling-xmp-writeback-for-specific-renditions}
 
 要让XMP写回功能将元数据更改传播到选定的演绎版，请将这些演绎版指定到DAM元数据写回工作流的XMP写回流程工作流步骤。 默认情况下，此步骤配置为原始演绎版。
 
@@ -63,7 +63,7 @@ PTIFF呈现仅在Dynamic Media混合模式下本地创建和存储。 保存工�
 >
 >有关支持的平台的更多信息，请参阅[XMP元数据回写先决条件](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)。
 
-## 筛选XMP元数据{#filtering-xmp-metadata}
+## 过滤XMP元数据 {#filtering-xmp-metadata}
 
 [!DNL Experience Manager Assets] 支持对XMP元数据的属性/节点进行阻止列表和允许列表筛选，这些属性/节点从资产二进制文件中读取，并在摄取资产时存储在JCR中。
 

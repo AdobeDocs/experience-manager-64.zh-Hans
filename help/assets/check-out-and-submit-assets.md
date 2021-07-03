@@ -3,16 +3,16 @@ title: 签入和签出数字资产以进行编辑
 description: 了解如何签出要编辑的资产，并在更改完成后重新签入它们。
 contentOwner: AG
 feature: 资产管理
-role: Business Practitioner
+role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 4%
 
 ---
 
-# 资产{#check-in-and-check-out-files-in-assets}中的签入和签出文件
+# Assets中的签入和签出文件 {#check-in-and-check-out-files-in-assets}
 
 Adobe Experience Manager(AEM)Assets允许您签出要编辑的资产，并在完成更改后重新签入。 签出资产后，只有您才能编辑、注释、发布、移动或删除资产。 签出资产会锁定资产。 在您将资产签回AEM Assets之前，其他用户无法对资产执行任何这些操作。 但是，他们仍可以更改锁定资产的元数据。
 
@@ -20,7 +20,7 @@ Adobe Experience Manager(AEM)Assets允许您签出要编辑的资产，并在完
 
 此功能有助于防止其他用户覆盖作者所做的更改，在作者所做的更改中，多个用户会跨团队协作进行编辑工作流。
 
-## 签出资产{#checking-out-assets}
+## 结帐资产 {#checking-out-assets}
 
 1. 从资产UI中，选择要签出的资产。 您还可以选择多个要签出的资产。
 
@@ -60,7 +60,7 @@ Adobe Experience Manager(AEM)Assets允许您签出要编辑的资产，并在完
 
    修改后的资产将签入AEM Assets，以供其他用户编辑。
 
-## 强制签入{#forced-check-in}
+## 强制签入 {#forced-check-in}
 
 管理员可以签入其他用户签出的资产。
 

@@ -7,8 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: 旋转集
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1845'
 ht-degree: 28%
@@ -29,7 +29,7 @@ ht-degree: 28%
 >
 >有关Assets用户界面的信息，请参阅[使用触屏UI](managing-assets-touch-ui.md)管理资产。
 
-## 快速入门：旋转集{#quick-start-spin-sets}
+## 快速入门：旋转集 {#quick-start-spin-sets}
 
 要快速设置并运行旋转集，请遵循以下工作流：
 
@@ -143,7 +143,7 @@ ht-degree: 28%
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。您新创建的旋转集将显示在创建该旋转集的文件夹中。
 
-## 查看旋转集{#viewing-spin-sets}
+## 查看旋转集 {#viewing-spin-sets}
 
 您可以在用户界面中创建旋转集，也可以使用[批集预设](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)自动创建旋转集。 但是，使用批集预设创建的集合，请&#x200B;*不*&#x200B;显示在用户界面中。 您可以通过三种不同方式访问通过批集预设方式创建的集。 （即使您在用户界面中创建旋转集，这些方法也可用）。
 

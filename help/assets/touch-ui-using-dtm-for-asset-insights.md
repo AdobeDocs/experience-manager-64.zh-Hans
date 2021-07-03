@@ -3,16 +3,16 @@ title: 通过DTM启用资产分析
 description: 了解如何使用Adobe动态标签管理(DTM)来启用资产分析。
 contentOwner: AG
 feature: 资产分析，资产报表
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 0%
 
 ---
 
-# 通过DTM启用资产分析{#enabling-asset-insights-through-dtm}
+# 通过DTM启用资产分析 {#enabling-asset-insights-through-dtm}
 
 Adobe动态标签管理是一款可激活您的数字营销工具的工具。 该服务免费提供给Adobe Analytics客户。 您可以自定义跟踪代码，以启用第三方CMS解决方案来使用资产分析，也可以使用DTM插入资产分析标记。 仅支持并提供图像分析。
 

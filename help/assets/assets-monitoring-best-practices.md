@@ -3,16 +3,16 @@ title: Assets 监控最佳实践
 description: 部署AEM实例后监控其环境和性能的最佳实践。
 contentOwner: AG
 feature: 资产管理
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 0%
 
 ---
 
-# 资产监控最佳实践{#assets-monitoring-best-practices}
+# Assets 监控最佳实践 {#assets-monitoring-best-practices}
 
 从Adobe Experience Manager(AEM)Assets的角度来看，监测应包括观察和报告以下流程和技术：
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 通常，AEM Assets可以通过两种方式进行监控：实时监控和长期监控。
 
-## 实时监视{#live-monitoring}
+## 实时监控 {#live-monitoring}
 
 您应在开发的性能测试阶段或高负载情况下执行实时监控，以了解环境的性能特性。 通常，应使用一套工具执行实时监视。 以下是一些建议：
 
@@ -53,15 +53,15 @@ ht-degree: 0%
 
 ![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png)
 
-## 长期监控{#long-term-monitoring}
+## 长期监测 {#long-term-monitoring}
 
 对AEM实例的长期监控包括对实时监控的相同部分进行较长时间的监控。 它还包括定义特定于您的环境的警报。
 
-### 日志聚合和报告{#log-aggregation-and-reporting}
+### 日志聚合和报告 {#log-aggregation-and-reporting}
 
 有几种可用于聚合日志的工具，例如Splunk(TM)和Elastic Search/Logstash/Kabana(ELK)。 要评估AEM实例的正常运行时间，您务必要了解特定于您系统的日志事件并基于这些事件创建警报。 了解您的开发和操作实践有助于您更好地了解如何调整日志聚合过程以生成关键警报。
 
-### 环境监控{#environment-monitoring}
+### 环境监控 {#environment-monitoring}
 
 环境监控包括监控以下内容：
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 您需要外部工具(如NewRelic(TM)和AppDynamics(TM))来监控每个项目。 使用这些工具，您可以定义特定于您系统的警报，例如系统利用率高、工作流备份、运行状况检查失败或未经身份验证的网站访问。 Adobe不推荐任何特定工具而不是其他工具。 找到适合您的工具，并利用它监控所讨论的项目。
 
-#### 内部应用程序监控{#internal-application-monitoring}
+#### 内部应用程序监控 {#internal-application-monitoring}
 
 内部应用程序监控包括监控构成AEM堆栈的应用程序组件（包括JVM、内容存储库），以及通过在平台上构建的自定义应用程序代码进行监控。 通常，它通过JMX Mbeans执行，而JMX Mbeans可以由许多常用的监控解决方案(如SolarWinds(TM)、 HP OpenView(TM)、Hyperic(TM)、Zabbix(TM)等)直接监控。 对于不支持直接连接到JMX的系统，您可以编写shell脚本以提取JMX数据，并以它们本身理解的格式将其公开给这些系统。
 
@@ -185,7 +185,7 @@ AEM还通过JMX公开一组统计和操作。 这些功能有助于评估系统�
    * 警报阈值：状态不正常时
    * 警报定义：日志文件中存在错误。 有关问题原因的更多信息，请查看日志属性。
 
-## 常见问题和决议{#common-issues-and-resolutions}
+## 常见问题和解决方案  {#common-issues-and-resolutions}
 
 在监控过程中，如果您遇到问题，可以执行以下一些故障诊断任务来解决AEM实例的常见问题：
 

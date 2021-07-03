@@ -3,16 +3,16 @@ title: 资产代理开发
 description: '代理是使用代理工作程序处理作业的AEM实例。 了解如何配置AEM代理、支持的操作、代理组件，以及如何开发自定义代理工作程序。 '
 contentOwner: AG
 feature: 资产处理
-role: Administrator, Architect
+role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
 
 ---
 
-# 资产代理开发{#assets-proxy-development}
+# 资产代理开发 {#assets-proxy-development}
 
 Adobe Experience Manager(AEM)Assets使用代理来分发特定任务的处理过程。
 
@@ -20,11 +20,11 @@ Adobe Experience Manager(AEM)Assets使用代理来分发特定任务的处理过
 
 当代理是单独的AEM实例时，这有助于减少AEM创作实例的负载。 默认情况下，AEM Assets会在同一JVM（通过代理外部化）中执行资产处理任务，以减少AEM创作实例的负载。
 
-## 代理（HTTP访问）{#proxy-http-access}
+## 代理（HTTP访问） {#proxy-http-access}
 
 将HTTP Servlet配置为在以下位置接受处理作业时，可通过HTTP Servlet使用代理：`/libs/dam/cloud/proxy`。 此Servlet通过已发布的参数创建Sling作业。 然后，该任务将添加到代理作业队列并连接到相应的代理工作程序。
 
-### 支持的操作{#supported-operations}
+### 支持的操作 {#supported-operations}
 
 * `job`
 
@@ -70,7 +70,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
     http://localhost:4502/libs/dam/cloud/proxy
 ```
 
-### 代理工作程序{#proxy-worker}
+### 代理工作程序 {#proxy-worker}
 
 代理工作程序是负责处理作业并创建结果的处理器。 工作程序驻留在代理实例上，必须实施[sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html)才能被识别为代理工作程序。
 
@@ -131,7 +131,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
  final String value = cloudConfig.get("someProperty", "defaultValue");
 ```
 
-### 开发自定义代理工作程序{#developing-a-customized-proxy-worker}
+### 开发自定义代理工作程序 {#developing-a-customized-proxy-worker}
 
 [IDS代理工作程序](indesign.md)是AEM Assets代理工作程序的一个示例，该代理工作程序已经提供现成的，用于外包Indesign资产的处理。
 

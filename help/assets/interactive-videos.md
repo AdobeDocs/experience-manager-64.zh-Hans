@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: 交互式视频，视频
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5975'
 ht-degree: 26%
@@ -25,7 +25,7 @@ ht-degree: 26%
 
 另请参阅[交互式图像](interactive-images.md)。
 
-## 交互式视频正在使用{#interactive-video-in-action}
+## 交互式视频的实际操作情况 {#interactive-video-in-action}
 
 要查看交互式购物视频的实际操作情况，请单击[实时演示](https://landing.adobe.com/zh-Hans/na/dynamic-media/ctir-2755/live-demos.html)，滚动到页面上的&#x200B;**[!UICONTROL 购物视频]**&#x200B;标题，然后单击购物视频。
 
@@ -41,7 +41,7 @@ ht-degree: 26%
 >
 >如果您创建交互式视频以在用户单击缩略图时启动网页，则某些设备将阻止打开弹出网页。 在这种情况下，您必须更改设备上的弹出窗口阻止程序设置。 例如，在Apple iPhone 6上，点按&#x200B;**[!UICONTROL 设置]** > **Safari** > **阻止弹出窗口**，然后将控件滑动到&#x200B;**[!UICONTROL 关闭]**。 现在，当您播放交互式视频并单击缩略图时，如果要打开弹出窗口，系统会提示您。 如果接受，则会打开网页。
 
-## 观看如何创建交互式视频{#watch-how-interactive-videos-are-created}
+## 观看如何创建交互式视频 {#watch-how-interactive-videos-are-created}
 
 观看有关[如何创建交互式视频](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)的 7 分 30 秒视频演练[](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA)。
 \
@@ -103,7 +103,7 @@ ht-degree: 26%
 
    如果您使用的是第三方WCM（Web内容管理器），则必须将新的交互式视频与您网站上使用的现有概览实施相集成。 请参阅[将交互式视频与现有概览](#integrating-an-interactive-video-with-an-existing-quickview)集成。
 
-## （可选）识别概览变量{#optional-identifying-quickview-variables}
+## （可选）识别概览变量 {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 仅当满足以下条件时，才需要执行此任务：
@@ -232,7 +232,7 @@ ht-degree: 26%
 
 您现在可以上传视频及其关联的缩略图资产。
 
-## （可选）创建交互式视频查看器预设{#optional-creating-an-interactive-video-viewer-preset}
+## （可选）创建交互式视频查看器预设 {#optional-creating-an-interactive-video-viewer-preset}
 
 如果您打算使用默认的现成交互式视频查看器预设类型`Shoppable_Video_dark`或`Shoppable_Video_light`中的任一类型，则可以跳过此任务并继续下一步。
 
@@ -489,7 +489,7 @@ ht-degree: 26%
       在时间轴上，点按要分成两半的区段，然后点按工具栏上的&#x200B;**[!UICONTROL 拆分区段]** 。
 
       选择两个或更多区段会禁用&#x200B;**[!UICONTROL 拆分区段]**&#x200B;功能。
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    将选定的10秒区段拆分为两个区段，每个区段为5秒。
 
@@ -516,11 +516,11 @@ ht-degree: 26%
 
    在添加时间轴区段并发布交互式视频后，您便可以将其添加到您的现有网站登录页面。请参阅[将交互式视频与您的网站集成。](#integrating-an-interactive-video-with-your-website)
 
-## 发布交互式视频资产{#publishing-interactive-video-assets}
+## 发布交互式视频资产 {#publishing-interactive-video-assets}
 
 有关如何发布交互式视频资产的详细信息，请参阅[发布资产](publishing-dynamicmedia-assets.md)。
 
-## 将交互式视频与您的网站集成{#integrating-an-interactive-video-with-your-website}
+## 将交互式视频与您的网站集成 {#integrating-an-interactive-video-with-your-website}
 
 现在，在上传视频、向视频添加时间轴区段并发布交互式视频后，您便可以将其添加到您的现有网站。
 
@@ -585,7 +585,7 @@ ht-degree: 26%
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## 将交互式视频与现有概览{#integrating-an-interactive-video-with-an-existing-quickview}集成
+## 将交互式视频与现有概览集成 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 此任务仅在您是独立的AEM Assets客户时才适用。

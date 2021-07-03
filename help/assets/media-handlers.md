@@ -3,16 +3,16 @@ title: 使用媒体处理程序和工作流处理资产
 description: 了解各种媒体处理程序以及如何在工作流中使用它们对资产执行任务。
 contentOwner: AG
 feature: 工作流，演绎版
-role: Business Practitioner
+role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 3%
 
 ---
 
-# 使用媒体处理程序和工作流处理资产{#processing-assets-using-media-handlers-and-workflows}
+# 使用媒体处理程序和工作流处理资产 {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager Assets提供了一组用于处理资产的默认工作流和媒体处理程序。 工作流定义了典型的资产管理和处理任务，然后将特定任务委派给媒体处理程序，例如缩略图生成或元数据提取。
 
@@ -28,7 +28,7 @@ Adobe Experience Manager Assets提供了一组用于处理资产的默认工作�
 >
 >请参阅[资产支持的格式](assets-formats.md)页面，以了解Experience Manager资产支持的所有格式以及每种格式支持的功能的说明。
 
-## 默认媒体处理程序{#default-media-handlers}
+## 默认媒体处理程序 {#default-media-handlers}
 
 以下媒体处理程序在Experience Manager资产中可用，并处理最常见的MIME类型：
 
@@ -60,7 +60,7 @@ Adobe Experience Manager Assets提供了一组用于处理资产的默认工作�
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## 在工作流中使用媒体处理程序对资产{#using-media-handlers-in-workflows-to-perform-tasks-on-assets}执行任务
+## 在工作流中使用媒体处理程序对资产执行任务 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 媒体处理程序是与工作流一起使用的服务。
 
@@ -70,7 +70,7 @@ Experience Manager具有一些用于处理资产的默认工作流。 要查看�
 
 以下示例显示如何增强&#x200B;**[!UICONTROL AEM Assets同步]**&#x200B;工作流，以便为除PDF文档外的所有资产生成子资产。
 
-### 禁用/启用媒体处理程序{#disabling-enabling-a-media-handler}
+### 禁用/启用媒体处理程序 {#disabling-enabling-a-media-handler}
 
 可以通过Apache Felix Web管理控制台禁用或启用媒体处理程序。 禁用媒体处理程序后，不会对资产执行其任务。
 
@@ -81,11 +81,11 @@ Experience Manager具有一些用于处理资产的默认工作流。 要查看�
 1. 刷新页面：媒体处理程序旁会显示一个图标，指示它已禁用。
 1. 要启用媒体处理程序，请单击媒体处理程序名称旁边的&#x200B;**[!UICONTROL 启用]**。
 
-### 创建媒体处理程序{#creating-a-new-media-handler}
+### 创建媒体处理程序 {#creating-a-new-media-handler}
 
 要支持新媒体类型或对资产执行特定任务，需要创建媒体处理程序。 本节介绍如何继续。
 
-#### 重要类和接口{#important-classes-and-interfaces}
+#### 重要类和接口 {#important-classes-and-interfaces}
 
 开始实施的最佳方式是继承提供的抽象实施，该实施会处理大多数事务并提供合理的默认行为：`com.day.cq.dam.core.AbstractAssetHandler`类。
 
@@ -126,7 +126,7 @@ package my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;tr
 * `com.day.cq.dam.core.AbstractAssetHandler` 类：此类用作所有其他资产处理程序实现的基础，并提供常用功能。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` 类：该类用作所有其他资产处理程序实现的基础，并为子资产提取提供常用功能以及常用功能。
 
-#### 示例：创建特定的文本处理程序{#example-create-a-specific-text-handler}
+#### 示例：创建特定文本处理程序 {#example-create-a-specific-text-handler}
 
 在此部分中，您将创建一个特定的文本处理程序，该处理程序生成带有水印的缩略图。
 
@@ -438,7 +438,7 @@ package my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;tr
 1. 复制包`myBundle-0.0.1-SNAPSHOT.jar`并将其存储在`/apps/myApp/install`下（例如，使用WebDAV）。 新文本处理程序现在在Experience Manager中处于活动状态。
 1. 在浏览器中，打开Apache Felix Web管理控制台。 选择“组件”选项卡并禁用默认文本处理程序`com.day.cq.dam.core.impl.handler.TextHandler`。
 
-## 基于命令行的媒体处理程序{#command-line-based-media-handler}
+## 基于命令行的媒体处理程序 {#command-line-based-media-handler}
 
 Experience Manager允许您在工作流中运行任何命令行工具，以转换资产（如ImageMagick）并将新演绎版添加到资产。 在托管Experience Manager服务器的磁盘上安装命令行工具，并向工作流添加和配置流程步骤。 调用的过程（称为`CommandLineProcess`）会根据特定的MIME类型进行筛选，并基于新呈现版本创建多个缩略图。
 
@@ -463,7 +463,7 @@ Experience Manager允许您在工作流中运行任何命令行工具，以转�
 * 删除临时目录。
 * 根据这些演绎版创建缩略图（如果已指定）。 缩略图的数量和维度由步骤的参数定义。
 
-### 使用ImageMagick {#an-example-using-imagemagick}的示例
+### 使用ImageMagick的示例 {#an-example-using-imagemagick}
 
 以下示例显示如何设置命令行流程步骤。 每次将具有MIME类型gif或tiff的资产添加到Experience Manager服务器的`/content/dam`时，原始资产的翻转图像会与另外三个缩略图（140x100、48x48和10x250）一起创建。
 
@@ -499,7 +499,7 @@ Experience Manager允许您在工作流中运行任何命令行工具，以转�
 1. 转到&#x200B;**[!UICONTROL CQ5 DAM]**&#x200B;控制台，例如`http://localhost:4502/libs/wcm/core/content/damadmin.html`。
 1. 打开资产`myImage.tiff`，并验证已创建翻转的图像和三个缩略图。
 
-#### 配置CommandLineProcess进程步骤{#configuring-the-commandlineprocess-process-step}
+#### 配置CommandLineProcess进程步骤 {#configuring-the-commandlineprocess-process-step}
 
 本节介绍如何设置 **[!UICONTROL 的]**&#x200B;进程参数`CommandLineProcess`。使用逗号分隔[!UICONTROL Process Arguments]的值，并且不要以空格开头值。
 

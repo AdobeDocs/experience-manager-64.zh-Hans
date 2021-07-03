@@ -3,9 +3,9 @@ title: 搜索 Facet
 description: 本文介绍了如何在AEM中创建、修改和使用搜索彩块化。
 contentOwner: AG
 feature: 搜索
-role: Administrator,Developer
+role: Admin,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2538'
 ht-degree: 34%
@@ -135,7 +135,7 @@ ht-degree: 34%
 1. 在&#x200B;**描述**&#x200B;字段中，输入可选描述，然后单击&#x200B;**[!UICONTROL 完成]**。
 1. 导航到“搜索”面板。“选项”谓词已添加到&#x200B;**搜索**&#x200B;面板。 **[!UICONTROL 文件类型]**&#x200B;的选项显示为复选框。
 
-## 添加多值属性谓词{#adding-a-multi-value-property-predicate}
+## 添加多值属性谓词 {#adding-a-multi-value-property-predicate}
 
 使用多值属性谓词，您可以搜索资产以查找多个值。 假设您在AEM Assets中拥有多个产品的图像，并且每个图像的元数据都包含与产品关联的SKU编号。 您可以使用此谓词根据多个SKU编号搜索产品图像。
 
@@ -148,7 +148,7 @@ ht-degree: 34%
 1. 导航到 Assets 用户界面中的“过滤器”面板。**[!UICONTROL 多值属性]**&#x200B;谓词已添加到面板。
 1. 在由分隔符分隔的多值字段中指定多个值并执行搜索。 此谓词会获取与您指定的值精确匹配的文本。
 
-## 添加标记谓词{#adding-a-tags-predicate}
+## 添加“标记”谓词 {#adding-a-tags-predicate}
 
 利用标记谓词，可对资产执行基于标记的搜索。 默认情况下，AEM Assets会根据您指定的标记搜索资产中一个或多个标记匹配项。 换句话说，搜索查询使用指定的标记执行OR操作。 但是，您可以使用“匹配所有标记”选项来搜索包含您指定的所有标记的资产。
 

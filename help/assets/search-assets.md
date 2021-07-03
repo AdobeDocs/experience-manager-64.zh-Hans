@@ -3,16 +3,16 @@ title: 在AEM中搜索资产
 description: 了解如何使用“过滤器”面板在AEM中查找所需的资产，以及如何使用搜索中显示的资产。
 contentOwner: AG
 feature: 搜索，元数据
-role: Business Practitioner
+role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 1%
 
 ---
 
-# 在AEM {#search-assets-in-aem}中搜索资产
+# 在AEM中搜索资产 {#search-assets-in-aem}
 
 了解如何使用“过滤器”面板在AEM中查找所需的资产，以及如何使用搜索中显示的资产。
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
    ![number_of_searches](assets/number_of_searches.png)
 
-## 搜索文件类型{#search-for-file-types}
+## 搜索文件类型 {#search-for-file-types}
 
 “过滤器”面板有助于为您的搜索体验添加更多粒度，并使搜索功能更加通用。 您可以轻松地向下展开到所需的详细级别。
 
@@ -62,13 +62,13 @@ ht-degree: 1%
 
 ![文档](assets/documents.png)
 
-## 根据文件大小{#search-based-on-file-size}进行搜索
+## 根据文件大小进行搜索 {#search-based-on-file-size}
 
 使用&#x200B;**文件大小**&#x200B;谓词，可根据资产的大小搜索资产。 您可以为大小范围指定下限和上限，以缩小搜索范围。 您还可以指定度量单位，例如千字节、兆字节等。
 
 ![unit_of_measure](assets/unit_of_measure.png)
 
-## 根据上次修改资产的时间进行搜索{#search-based-on-when-assets-are-last-modified}
+## 根据上次修改资产的时间进行搜索 {#search-based-on-when-assets-are-last-modified}
 
 如果您管理正在进行的资产或监控审核工作流，则可以搜索资产的上次修改时间（基于准确的时间戳）。 例如，指定修改资产之前或之后的日期。
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 
 ![timestamp](assets/timestamp.png)
 
-## 根据状态{#search-based-on-status}进行搜索
+## 基于状态搜索 {#search-based-on-status}
 
 使用&#x200B;**状态**&#x200B;谓词，可根据各种类型的状态（如发布、批准、结帐和到期）搜索资产。
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 ![审批](assets/approval.png)
 
-## 根据分析数据{#search-based-on-insights-data}进行搜索
+## 根据分析数据进行搜索 {#search-based-on-insights-data}
 
 使用&#x200B;**分析**&#x200B;谓词，根据从各种创意应用程序获取的资产使用情况统计信息来搜索资产。 使用情况数据按以下类别分组：
 

@@ -3,16 +3,16 @@ title: 图像转码库
 description: 了解如何配置和使用Adobe的图像转码库，该库是一款图像处理解决方案，可执行核心的图像处理功能，包括编码、转码、图像重新采样和图像大小调整。
 contentOwner: AG
 feature: 演绎版，开发人员工具，资产处理
-role: Administrator
+role: Admin
 exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
 
 ---
 
-# 映像转码库{#imaging-transcoding-library}
+# 图像转码库 {#imaging-transcoding-library}
 
 Adobe的图像转码库是一款专有的图像处理解决方案，可执行核心的图像处理功能，包括：
 
@@ -32,7 +32,7 @@ Adobe的图像转码库是一款专有的图像处理解决方案，可执行核
 * **高吞吐量：** 响应时间较短，吞吐量始终高于ImageMagick。因此，图像转码库应该可以减少用户的等待时间和托管成本。
 * **通过并发负载实现更好的扩展：** 成像转码库在并发负载条件下性能最佳。它提供高吞吐量，并具有最佳CPU性能、内存使用率和低响应时间，这有助于降低托管成本。
 
-## 支持的平台{#supported-platforms}
+## 支持的平台 {#supported-platforms}
 
 图像转码库仅适用于RHEL 7和CentOS 7分发版。
 
@@ -70,11 +70,11 @@ Adobe的图像转码库是一款专有的图像处理解决方案，可执行核
  -output <fileName>
 ```
 
-## 配置映像转码库{#configuring-imaging-transcoding-library}
+## 配置图像转码库 {#configuring-imaging-transcoding-library}
 
 要配置ITL处理，请创建配置文件并更新工作流以执行该文件。
 
-### 为提取的包{#create-conf-file}创建配置文件
+### 为提取的包创建配置文件 {#create-conf-file}
 
 要配置库，请创建一个.conf文件，以通过以下步骤指示库。 您需要管理员或根权限。
 
@@ -105,7 +105,7 @@ Adobe的图像转码库是一款专有的图像处理解决方案，可执行核
 
 1. 要确保路径的值设置为`.`，请使用`echo $LD_LIBRARY_PATH`命令。 输出应该只为`.`。 如果未将值设置为`.`，请重新启动会话。
 
-### 配置DAM更新资产工作流{#configure-dam-asset-update-workflow}
+### 配置DAM更新资产工作流 {#configure-dam-asset-update-workflow}
 
 更新[!UICONTROL DAM更新资产]工作流，以使用库处理图像。
 

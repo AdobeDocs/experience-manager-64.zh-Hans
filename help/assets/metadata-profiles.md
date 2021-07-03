@@ -3,9 +3,9 @@ title: 使用元数据配置文件将默认元数据应用到文件夹中的所�
 description: 了解资产的元数据配置文件。 了解如何创建元数据配置文件并将其应用到文件夹资产。
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 35%
@@ -16,7 +16,7 @@ ht-degree: 35%
 
 通过元数据配置文件，您可以将默认元数据应用到文件夹中的资产。创建元数据配置文件并将其应用到文件夹。您随后上传到文件夹的任何资产都会继承您在元数据配置文件中配置的默认元数据。
 
-## 添加元数据配置文件{#adding-a-metadata-profile}
+## 添加元数据配置文件 {#adding-a-metadata-profile}
 
 1. 点按或单击AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>元数据配置文件]**，然后点按&#x200B;**[!UICONTROL 创建]**。
 1. 输入元数据配置文件的标题（例如示例元数据），然后单击&#x200B;**[!UICONTROL Submit]**。 此时会显示元数据配置文件的&#x200B;**[!UICONTROL 编辑表单]**。
@@ -61,7 +61,7 @@ ht-degree: 35%
 
    ![chlimage_1-485](assets/chlimage_1-485.png)
 
-## 复制元数据配置文件{#copying-a-metadata-profile}
+## 复制元数据配置文件 {#copying-a-metadata-profile}
 
 1. 从&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面中，选择要复制的配置文件。
 
@@ -73,7 +73,7 @@ ht-degree: 35%
 
    ![chlimage_1-487](assets/chlimage_1-487.png)
 
-## 删除元数据配置文件{#deleting-a-metadata-profile}
+## 删除元数据配置文件 {#deleting-a-metadata-profile}
 
 1. 在&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面中，选择要删除的配置文件。
 
@@ -82,7 +82,7 @@ ht-degree: 35%
 1. 单击工具栏中的&#x200B;**[!UICONTROL 删除元数据配置文件]**。
 1. 在对话框中，单击&#x200B;**[!UICONTROL Delete]**&#x200B;以确认删除操作。 元数据配置文件将从列表中删除。
 
-## 将元数据配置文件应用到文件夹{#applying-a-metadata-profile-to-folders}
+## 将元数据配置文件应用到文件夹 {#applying-a-metadata-profile-to-folders}
 
 当您将元数据配置文件分配给文件夹之后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。这就意味着您只能为每个文件夹分配一个元数据配置文件。因此，您在上传、存储、使用资产以及将资产存档的过程中，请妥善安排文件夹结构。
 
@@ -94,13 +94,13 @@ ht-degree: 35%
 
 您可以将元数据配置文件应用到特定文件夹或全局应用到所有资产。
 
-### 将元数据配置文件应用到特定文件夹{#applying-metadata-profiles-to-specific-folders}
+### 将元数据配置文件应用到特定文件夹 {#applying-metadata-profiles-to-specific-folders}
 
 您可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中将元数据配置文件应用到文件夹，或者如果您在文件夹中，也可以直接从&#x200B;**[!UICONTROL 属性]**&#x200B;中应用。本节将介绍如何通过这两种方式将元数据配置文件应用到文件夹。
 
 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-#### 从配置文件用户界面{#applying-metadata-profiles-to-folders-from-profiles-user-interface}将元数据配置文件应用到文件夹
+#### 从配置文件用户界面将元数据配置文件应用到文件夹 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具> Assets >元数据配置文件]**。
 1. 选择您要应用到一个或多个文件夹的元数据配置文件。
@@ -109,7 +109,7 @@ ht-degree: 35%
 
 1. 点按&#x200B;**[!UICONTROL 将元数据配置文件应用到文件夹]**，然后选择一个或多个用于接收新上传资产的文件夹，然后点按&#x200B;**[!UICONTROL 完成]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-#### 从属性{#applying-metadata-profiles-to-folders-from-properties}将元数据配置文件应用到文件夹
+#### 从“属性”将元数据配置文件应用到文件夹 {#applying-metadata-profiles-to-folders-from-properties}
 
 1. 在左边栏中，点按&#x200B;**[!UICONTROL Assets]**，然后导航到要将元数据配置文件应用到的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按&#x200B;**[!UICONTROL 属性]**。
@@ -120,7 +120,7 @@ ht-degree: 35%
 
    如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-### 全局应用元数据配置文件{#applying-a-metadata-profile-globally}
+### 全局应用元数据配置文件 {#applying-a-metadata-profile-globally}
 
 除了将配置文件应用到文件夹之外，您还可以全局应用一个配置文件，以便任何文件夹中上传到AEM资产的任何内容都会应用选定的配置文件。 要全局应用元数据配置文件，请执行以下步骤：
 
@@ -134,13 +134,13 @@ ht-degree: 35%
 
       ![chlimage_1-493](assets/chlimage_1-493.png)
 
-## 从文件夹{#removing-a-metadata-profile-from-folders}中删除元数据配置文件
+## 从文件夹删除元数据配置文件 {#removing-a-metadata-profile-from-folders}
 
 当您将元数据配置文件从文件夹删除之后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。但是，此前对文件夹中的文件所做的处理均予以保留。
 
 您可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中的文件夹删除元数据配置文件，或者如果您在文件夹中，也可以直接从&#x200B;**[!UICONTROL 属性]**&#x200B;中删除。本节将介绍如何通过这两种方式将元数据配置文件从文件夹中删除。
 
-### 通过配置文件用户界面{#removing-metadata-profiles-from-folders-via-profiles-user-interface}将元数据配置文件从文件夹删除
+### 通过配置文件用户界面将元数据配置文件从文件夹删除 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 要通过配置文件用户界面将元数据配置文件从文件夹删除，请执行以下步骤：
 
@@ -150,7 +150,7 @@ ht-degree: 35%
 
    如果元数据配置文件的名称不再出现在文件夹名称的下方，则可以确定该元数据配置文件不再应用于该文件夹。
 
-### 通过属性{#removing-metadata-profiles-from-folders-via-properties}将元数据配置文件从文件夹删除
+### 通过属性将元数据配置文件从文件夹删除 {#removing-metadata-profiles-from-folders-via-properties}
 
 1. 点按AEM徽标，然后导航&#x200B;**[!UICONTROL Assets]**，然后导航到您要将元数据配置文件从中删除的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按&#x200B;**[!UICONTROL 属性]**。

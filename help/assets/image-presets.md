@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 exl-id: 07a4f315-a60e-456b-b02d-035b3f6ad9ad
 feature: 图像预设
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 39%
 
 ---
 
-# 应用Dynamic Media图像预设{#applying-image-presets}
+# 应用Dynamic Media图像预设 {#applying-image-presets}
 
 图像预设使资产能够动态传送不同大小、不同格式或具有动态生成的其他图像属性的图像。在导出图像时，您可以选择预设，这也会根据管理员指定的规范来重新设置图像的格式。
 

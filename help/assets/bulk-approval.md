@@ -3,9 +3,9 @@ title: 审核文件夹资产和收藏集
 description: 为文件夹或收藏集中的资产设置审核工作流，并与审阅人或创意合作伙伴共享该工作流，以寻求反馈。
 contentOwner: AG
 feature: 协作、收藏集
-role: Business Practitioner
+role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 24%
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM)Assets允许您为文件夹或收藏集中的资产
 
 审核人员完成审核（批准或拒绝资产）后，您会收到审核完成通知。
 
-## 为文件夹{#creating-a-review-task-for-folders}创建审核任务
+## 为文件夹创建审核任务 {#creating-a-review-task-for-folders}
 
 1. 从Assets用户界面中，选择要为其创建审核任务的文件夹。
 1. 在工具栏中，点按/单击&#x200B;**[!UICONTROL 创建审核任务]**&#x200B;图标，以打开&#x200B;**[!UICONTROL 审核任务]**&#x200B;页面。如果您在工具栏中看不到该图标，请点按/单击&#x200B;**[!UICONTROL 更多]**，然后选择该图标。
@@ -72,7 +72,7 @@ Adobe Experience Manager(AEM)Assets允许您为文件夹或收藏集中的资产
 
    ![review_status_listview](assets/review_status_listview.png)
 
-## 为集合{#creating-a-review-task-for-collections}创建审核任务
+## 为集合创建审核任务 {#creating-a-review-task-for-collections}
 
 1. 从收藏集页面中，选择要为其创建审阅任务的收藏集。
 1. 在工具栏中，点按/单击&#x200B;**[!UICONTROL 创建审核任务]**&#x200B;图标，以打开&#x200B;**[!UICONTROL 审核任务]**&#x200B;页面。如果您在工具栏中看不到该图标，请点按/单击&#x200B;**[!UICONTROL 更多]**，然后选择该图标。

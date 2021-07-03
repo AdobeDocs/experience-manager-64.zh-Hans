@@ -3,9 +3,9 @@ title: Lightbox
 description: 了解AEM Assets中的Lightbox。
 contentOwner: AG
 feature: 开发人员工具，演绎版
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 28%
@@ -35,7 +35,7 @@ Lightbox 是一种特殊类型的收藏集，使用它可以轻松访问资产�
    >
    >尽管灯箱类似于收藏集，但您通常无法对收藏集执行所有操作。 例如，您无法删除、共享或查看 Lightbox 的设置。此外，您还无法将其添加到其他收藏集。但是，您可以编辑 Lightbox 中的资产。
 
-## 从Lightbox {#removing-assets-from-lightbox}中删除资产
+## 从Lightbox中删除资产 {#removing-assets-from-lightbox}
 
 1. 导航到收藏集控制台，点按/单击Lightbox以查看其资产。
 1. 选择要删除的资产。

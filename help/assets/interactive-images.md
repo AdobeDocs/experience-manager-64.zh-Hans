@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
 feature: 交互式图像
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '4261'
 ht-degree: 18%
@@ -31,11 +31,11 @@ ht-degree: 18%
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
-## 观看如何创建交互式图像横幅{#watch-how-interactive-image-banners-are-created}
+## 观看如何创建交互式图像横幅 {#watch-how-interactive-image-banners-are-created}
 
 观看有关如何创建交互式图像横幅的](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)的10分33秒演练。 [您还将了解如何预览、编辑和传送交互式图像横幅。
 
-## 快速入门：交互式图像{#quick-start-interactive-images}
+## 快速入门：交互式图像 {#quick-start-interactive-images}
 
 以下工作流分步描述旨在帮助您在AEM Assets中快速启动并运行交互式图像。
 
@@ -75,7 +75,7 @@ ht-degree: 18%
    * 如果您使用AEM Assets和Dynamic Media独立版，则必须在您的网站上复制嵌入代码，然后将其与现有概览相集成。 请参阅[将交互式图像与您的网站集成](#integrating-an-interactive-image-with-your-website)。
    * 如果您使用的是第三方WCM（Web内容管理器），则必须将新的交互式视频与您网站上使用的现有概览实施相集成。 请参阅[将交互式图像与现有概览](#integrating-an-interactive-image-with-an-existing-quickview)集成。
 
-## （可选）识别热点变量{#optional-identifying-hotspot-variables}
+## （可选）识别热点变量 {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ ht-degree: 18%
 
 现在，您便可以使用 AEM Assets 中的交互式购物图像功能，上传图像横幅并向其添加热点。
 
-## （可选）创建交互式图像查看器预设{#optional-creating-an-interactive-image-viewer-preset}
+## （可选）创建交互式图像查看器预设 {#optional-creating-an-interactive-image-viewer-preset}
 
 您可以选择使用默认附带的名为&#x200B;**[!UICONTROL Shoppable_Banner]**&#x200B;的现成交互式图像查看器预设。AEM Assets 或者，您也可以创建自己的自定义查看器预设，以用于交互式图像。
 
@@ -319,7 +319,7 @@ d.（可选）要删除热点，请在图像上将其选中，然后点按**[!UI
    >
    >如果您正在使用热点编辑交互式图像并裁剪图像，则热点会被删除。
 
-### （可选）预览交互式图像{#optional-previewing-interactive-images}
+### （可选）预览交互式图像 {#optional-previewing-interactive-images}
 
 您可以使用“预览”来查看交互式图像对客户的呈现效果，并测试图像的热点以确保它们的行为符合预期。
 
@@ -335,11 +335,11 @@ d.（可选）要删除热点，请在图像上将其选中，然后点按**[!UI
 1. 在&#x200B;**[!UICONTROL 查看器]**&#x200B;列表中，点按&#x200B;**[!UICONTROL Shoppable_Banner]**&#x200B;或您创建的交互式图像查看器预设的名称。
 1. 点按图像上的热点以测试其关联的操作。
 
-## 发布交互式图像资产{#publishing-interactive-image-assets}
+## 发布交互式图像资产 {#publishing-interactive-image-assets}
 
 有关如何发布交互式图像资产的详细信息，请参阅[发布资产](publishing-dynamicmedia-assets.md)。
 
-## 将交互式图像与您的网站集成{#integrating-an-interactive-image-with-your-website}
+## 将交互式图像与您的网站集成 {#integrating-an-interactive-image-with-your-website}
 
 现在，在上传横幅图像、将热点添加到图像并发布交互式图像后，您便可以将其添加到您的网站页面。
 
@@ -383,7 +383,7 @@ d.（可选）要删除热点，请在图像上将其选中，然后点按**[!UI
 
 现在，您可以将交互式图像与网站上的现有概览相集成。
 
-## 将交互式图像与现有概览{#integrating-an-interactive-image-with-an-existing-quickview}集成
+## 将交互式图像与现有概览集成 {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >

@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
 feature: 资产管理，开发人员工具
-role: Business Practitioner
+role: User
 exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 您也可以将这些格式的输出下载到本地系统。
 
-## 创建宣传资料{#creating-a-collateral}
+## 创建宣传资料 {#creating-a-collateral}
 
 假设您想要创建数字可打印宣传资料（如宣传册、传单和广告等），以便在即将开展的活动中进行宣传，并与全球直销店共享。 根据模板创建宣传资料有助于跨渠道提供统一的客户体验。 设计人员可以使用创意解决方案(如InDesign)创建促销活动模板（单页或多页），并为您将模板上传到AEM Assets。 在创建宣传资料之前，请预先将一个或多个INDD模板上传到Experience Manager并提供。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 1. （可选）单击/点按&#x200B;**[!UICONTROL 标签]**&#x200B;字段旁边的&#x200B;**[!UICONTROL 标签]**&#x200B;图标，然后为手册选择一个或多个标签。 单击/点按&#x200B;**[!UICONTROL Confirm]**&#x200B;以确认您的选择。
 
-   ![chlimage_1-311](assets/chlimage_1-310.png)
+   ![chlimage_1-310](assets/chlimage_1-310.png)
 
 1. 单击&#x200B;**[!UICONTROL 创建]**。对话框确认创建了新手册。 单击/点按&#x200B;**[!UICONTROL 打开]**&#x200B;以在编辑模式下打开手册。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## 编辑宣传资料{#editing-a-collateral}
+## 编辑宣传资料 {#editing-a-collateral}
 
 您可以在创建宣传资料后立即对其进行编辑。 或者，您也可以从模板页面或资产页面中打开该模板。
 
@@ -166,7 +166,7 @@ ht-degree: 0%
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
-## 合并宣传资料{#merge-collateral}
+## 合并抵押品 {#merge-collateral}
 
 
 1. 单击或点按&#x200B;**[!UICONTROL 工具>资产]**。

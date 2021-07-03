@@ -3,16 +3,16 @@ title: 多语言资产
 description: 了解如何自动将资产（包括二进制文件、元数据和标记）转换为多种语言的工作流。
 contentOwner: AG
 feature: 资产管理
-role: Administrator
+role: Admin
 exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
 
-# 多语言资产{#multilingual-assets}
+# 多语言资产 {#multilingual-assets}
 
 Adobe Experience Manager(AEM)Assets允许您自动执行资产（包括二进制文件、元数据和标记）的翻译工作流，以生成其他语言的资产，以供在多语言项目中使用。
 

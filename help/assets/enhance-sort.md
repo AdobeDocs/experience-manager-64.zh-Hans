@@ -3,16 +3,16 @@ title: 增强了AEM中资产的排序
 description: 了解AEM Assets如何通过服务器端排序来一次对文件夹资产或搜索查询进行排序，而不是在客户端按批次对它们进行排序。
 contentOwner: AG
 feature: 搜索
-role: Business Practitioner
+role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 3%
 
 ---
 
-# 增强了AEM中资产的排序{#enhanced-sorting-of-assets-in-aem}
+# 增强了AEM中资产的排序 {#enhanced-sorting-of-assets-in-aem}
 
 了解AEM Assets如何通过服务器端排序来一次对文件夹资产或搜索查询进行排序，而不是在客户端按批次对它们进行排序。
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 AEM Assets通过服务器端排序来一次对文件夹或搜索查询中的整个资产集（无论资产大小）进行排序，而不是在客户端按批次对它们进行排序。 这样，预取的结果可以快速显示在用户界面上，使排序操作更加响应快捷。
 
-## 在列表视图{#sorting-assets-in-list-view}中对资产进行排序
+## 在列表视图中对资产排序 {#sorting-assets-in-list-view}
 
 AEM Assets允许您根据以下字段对文件夹资产进行排序：
 
@@ -53,7 +53,7 @@ AEM Assets允许您根据以下字段对文件夹资产进行排序：
 >
 >要对`Name`或`Title`列中的值进行排序，请叠加`/libs/dam/gui/content/commons/availablecolumns`并将`sortable`的值更改为`True`。
 
-## 对搜索结果中的资产排序{#sorting-assets-in-search-results}
+## 在搜索结果中对资产进行排序 {#sorting-assets-in-search-results}
 
 您可以根据以下字段对搜索结果进行排序：
 
@@ -73,7 +73,7 @@ AEM Assets允许您根据以下字段对文件夹资产进行排序：
 
    ![chlimage_1-398](assets/chlimage_1-398.png)
 
-## 在时间轴{#sorting-assets-in-timeline}中对资产进行排序
+## 在时间轴中对资产排序 {#sorting-assets-in-timeline}
 
 AEM Assets允许您按时间顺序对时间轴条目（如批注、版本、工作流和活动）进行排序。
 

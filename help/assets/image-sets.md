@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: 图像集
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 42%
@@ -88,7 +88,7 @@ ht-degree: 42%
 
 如果您在创建集时遇到问题，请参阅[疑难解答Dynamic Media - Scene7模式](troubleshoot-dms7.md#images-and-sets)中的图像和集。
 
-## 在图像集中上传资产{#uploading-assets-in-image-sets}
+## 在图像集中上传资产 {#uploading-assets-in-image-sets}
 
 首先为图像集上传图像。由于用户可以在图像集查看器中缩放图像，因此在选择图像时，请考虑缩放因素。确保图像的最大尺寸至少为2000像素。图像集支持很多种图像文件格式，但建议使用无损的 TIFF、PNG 和 EPS 图像。
 
@@ -173,7 +173,7 @@ ht-degree: 42%
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。您新创建的图像集会显示在创建时所用的文件夹中。
 
-## 查看图像集{#viewing-image-sets}
+## 查看图像集 {#viewing-image-sets}
 
 您可以在用户界面中创建图像集，也可以使用[批量集预设](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)自动创建图像集。
 

@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 6198e613-a867-49a8-b9a5-a05e7889821c
 exl-id: f9bb59f6-39a5-4804-8abe-12783d4162c9
 feature: 配置
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 1%
 
 ---
 
-# 安装批量资产迁移功能包18912 {#installing-feature-pack}
+# 安装用于批量资产迁移的功能包18912 {#installing-feature-pack}
 
 功能包18912的安装是&#x200B;_可选_。
 

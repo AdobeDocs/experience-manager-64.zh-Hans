@@ -11,19 +11,19 @@ content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
 feature: 资产管理
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 2%
 
 ---
 
-# HTTP2内容交付{#http-delivery-of-content}
+# HTTP2内容交付 {#http-delivery-of-content}
 
 Adobe 很高兴地宣布推出 HTTP/2 内容交付功能，这意味着性能将全面提升。
 
-## 什么是HTTP/2?{#what-is-http}
+## 什么是HTTP/2? {#what-is-http}
 
 HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信息，同时降低所需的处理能力。
 
@@ -31,7 +31,7 @@ HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信�
 
 [https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
 
-## 迁移到HTTP/2进行内容交付有哪些主要优势？{#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
+## 迁移到HTTP/2进行内容交付有哪些主要优势？ {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
 性能改进因以下因素而异：网站代码、使用Dynamic Media的方式、消费者的设备、屏幕和位置等。
 
@@ -44,7 +44,7 @@ Adobe自己的测试产生了以下结果：
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## 我是否有资格切换到HTTP/2?{#am-i-eligible-to-switch-over-to-http}
+## 我是否有资格切换到HTTP/2? {#am-i-eligible-to-switch-over-to-http}
 
 要使用HTTP/2，您必须满足以下要求：
 
@@ -56,7 +56,7 @@ Adobe自己的测试产生了以下结果：
 
    如果您没有专用域，Adobe将安排您在2018年过渡到HTTP/2。
 
-## 为我的Dynamic Media帐户启用HTTP/2的过程是什么？{#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
+## 为我的Dynamic Media帐户启用HTTP/2的过程是什么？ {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
 您必须启动请求，以切换到HTTP/2;它不会自动为您完成。
 
@@ -78,7 +78,7 @@ Adobe自己的测试产生了以下结果：
       对于Firefox和Chrome，有一个名为“HTTP/2和SPDY指示器”的扩展。 浏览器仅安全支持http/2，因此需要使用https调用URL进行验证。 如果支持http/2，则扩展将以蓝色Flash符号和标题“X-Firefox-Spdy”的形式指示该事件：&quot;h2&quot;。
 
 
-## 我何时可以转换到HTTP/2?{#when-can-i-expect-to-be-transitioned-over-to-http}
+## 我何时可以转换到HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
 将按技术支持接收请求的顺序处理请求。
 
@@ -86,13 +86,13 @@ Adobe自己的测试产生了以下结果：
 >
 >可能会有较长的前置时间，因为过渡到HTTP/2涉及清除缓存。 因此，一次只能处理少数客户过渡。
 
-## 迁移到HTTP/2有哪些风险？{#what-are-the-risks-with-moving-to-http}
+## 迁移到HTTP/2有哪些风险？ {#what-are-the-risks-with-moving-to-http}
 
 过渡到HTTP/2会清除CDN中的缓存，因为它涉及到迁移到新的CDN配置。
 
 非缓存内容会直接点击Adobe的源服务器，直到再次重建缓存为止。 因此，Adobe计划一次处理一些客户过渡，以便在从我们的来源提取请求时保持可接受的性能。
 
-## 如何验证URL或网站是否已通过HTTP/2激活？{#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## 如何验证URL或网站是否已通过HTTP/2激活？ {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 由于浏览器未声明这一事实，因此需要下载扩展。
 

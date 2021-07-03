@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 feature: 智能标记，搜索
-role: Business Practitioner
+role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 15%
@@ -18,7 +18,7 @@ ht-degree: 15%
 
 # 增强型智能标记 {#enhanced-smart-tags}
 
-## 增强型智能标记概述{#overview-of-enhanced-smart-tags}
+## 增强型智能标记概述 {#overview-of-enhanced-smart-tags}
 
 处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 基本上，它包括员工、合作伙伴和客户通常用来引用和搜索特定类别数字资产的关键词列表。 使用分类控制的词汇标记资产可确保通过基于标记的搜索轻松识别和检索资产。
 
@@ -62,7 +62,7 @@ ht-degree: 15%
 >
 >如果您使用的是AEM 6.3或更低版本，并且需要为资产提供自动标记服务，请参阅[智能标记](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)。 智能标记不使用AI功能，因此不如增强型智能标记功能准确。
 
-## 审核资产和标记{#reviewing-assets-and-tags}
+## 审核资产和标记 {#reviewing-assets-and-tags}
 
 载入后，您首先需要确定一组标记，以在您的业务环境中最好地描述这些图像。
 
@@ -80,7 +80,7 @@ ht-degree: 15%
 
 
 
-## 培训智能内容服务{#training-the-smart-content-service}
+## 培训智能内容服务 {#training-the-smart-content-service}
 
 为使智能内容服务能够识别您的业务分类，请在一组资产上运行该分类，这些资产已经包含与您的业务相关的标记。 培训后，该服务可以对类似的资产集应用相同的分类。
 
@@ -92,7 +92,7 @@ ht-degree: 15%
 >
 >培训工作流仅在文件夹上运行。
 
-### 定期培训{#periodic-training}
+### 定期培训 {#periodic-training}
 
 您可以启用智能内容服务，以便对文件夹中的资产和关联的标记进行定期培训。 打开资产文件夹的属性页面，在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡下选择&#x200B;**[!UICONTROL 启用智能标记]**，然后保存更改。
 
@@ -100,7 +100,7 @@ ht-degree: 15%
 
 为文件夹选择此选项后，AEM会自动运行培训工作流，以对文件夹资产及其标记上的智能内容服务进行培训。 默认情况下，培训工作流每周在星期六凌晨12:30运行。
 
-### 按需培训{#on-demand-training}
+### 按需培训 {#on-demand-training}
 
 您可以根据需要从工作流控制台中培训智能内容服务。
 
@@ -115,7 +115,7 @@ ht-degree: 15%
 >
 >在处理文件夹中的资产以进行培训后，只会在后续培训周期中处理已修改的资产。
 
-### 查看培训报告{#viewing-training-reports}
+### 查看培训报告 {#viewing-training-reports}
 
 要检查是否在资产培训集中的标记上对智能内容服务进行了培训，请从报表控制台中查看培训工作流报表。
 
@@ -132,7 +132,7 @@ ht-degree: 15%
 
 1. 要下载报表，请从列表中选择该报表，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 下载]**&#x200B;图标。 报表将下载为Excel文件。
 
-## 自动标记资产{#tagging-assets-automatically}
+## 自动标记资产 {#tagging-assets-automatically}
 
 在培训了智能内容服务后，您可以触发标记工作流，以自动对其他相似资产集应用适当的标记。
 
@@ -142,13 +142,13 @@ ht-degree: 15%
 >
 >标记工作流可在资产和文件夹上运行。
 
-### 定期标记{#periodic-tagging}
+### 定期标记 {#periodic-tagging}
 
 您可以启用智能内容服务来定期标记文件夹中的资产。 打开资产文件夹的属性页面，在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡下选择&#x200B;**[!UICONTROL 启用智能标记]**，然后保存更改。
 
 为文件夹选择此选项后，智能内容服务会自动为文件夹中的资产添加标记。 默认情况下，标记工作流每天中午12:00运行。
 
-### 按需标记{#on-demand-tagging}
+### 按需标记 {#on-demand-tagging}
 
 您可以从以下内容触发标记工作流，以便立即标记您的资产：
 
@@ -159,7 +159,7 @@ ht-degree: 15%
 >
 >如果您从时间轴运行标记工作流，则一次最多可以对15个资产应用标记。
 
-#### 从工作流控制台中标记资产{#tagging-assets-from-the-workflow-console}
+#### 从工作流控制台中标记资产 {#tagging-assets-from-the-workflow-console}
 
 1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具 > 工作流 > 模式]**。
 1. 从&#x200B;**[!UICONTROL 工作流模型]**&#x200B;页面中，选择 **[!UICONTROL DAM 智能标记资产]**&#x200B;工作流，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 启动工作流]**。
@@ -173,7 +173,7 @@ ht-degree: 15%
 
    导航到资产文件夹并查看标记，以验证智能内容服务是否正确标记了您的资产。 有关详细信息，请参阅[管理智能标记](managing-smart-tags.md)。
 
-#### 从时间轴{#tagging-assets-from-the-timeline}标记资产
+#### 从时间轴中标记资产 {#tagging-assets-from-the-timeline}
 
 1. 从Assets用户界面中，选择包含要应用智能标记的资产或特定资产的文件夹。
 1. 点按/单击GlobalNav图标，然后打开时间轴。

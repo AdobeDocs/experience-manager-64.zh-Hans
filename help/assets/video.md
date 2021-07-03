@@ -7,8 +7,8 @@ topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: 视频
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '10393'
 ht-degree: 24%
@@ -19,7 +19,7 @@ ht-degree: 24%
 
 本节介绍如何在 Dynamic Media 中处理视频。
 
-## 快速入门：视频{#quick-start-videos}
+## 快速入门：视频 {#quick-start-videos}
 
 以下工作流分步描述旨在帮助您在Dynamic Media中快速设置并运行自适应视频集。每个步骤之后都会交叉引用主题标题，您可以在其中找到更多信息。
 
@@ -29,6 +29,7 @@ ht-degree: 24%
 >
 >* 请参阅配置Dynamic Media — 混合模式中的[配置Dynamic MediaCloud Services。](/help/assets/config-dynamic.md)
 >* 请参阅[配置Dynamic Media - Scene7模式](config-dms7.md)和[Dynamic Media - Scene7模式疑难解答](troubleshoot-dms7.md)
+
 >
 
 
@@ -70,11 +71,10 @@ ht-degree: 24%
 
          [查看视频演绎版](video-renditions.md)
 
-         [管理视频演绎版](managing-assets-touch-ui.md#managing-renditions)
+[管理视频演绎版](managing-assets-touch-ui.md#managing-renditions)
 
       * [管理查看器预设](managing-viewer-presets.md)
       * [发布资产](publishing-dynamicmedia-assets.md)
-      
    * 处理视频元数据
 
       * 查看编码视频呈现的属性，如帧速率、音频和视频比特率以及编解码器：
@@ -83,11 +83,10 @@ ht-degree: 24%
 
       * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
 
-         [编辑视频属性](managing-assets-touch-ui.md#editing-properties)
+[编辑视频属性](managing-assets-touch-ui.md#editing-properties)
 
       * [管理数字资产的元数据](metadata.md)
       * [元数据架构](metadata-schemas.md)
-      
    * 审阅、批准和批注视频
 
       * [对视频添](managing-video-assets.md#annotating-video-assets) 加注释 [或对资产添加注释](managing-assets-touch-ui.md#annotating)
@@ -117,7 +116,7 @@ ht-degree: 24%
 
 
 
-## 在Dynamic Media中处理视频{#working-with-video-in-dynamic-media}
+## 在Dynamic Media中使用视频 {#working-with-video-in-dynamic-media}
 
 Dynamic Media中的视频是一个端到端解决方案，可轻松发布高质量自适应视频，以便在多个屏幕（包括桌面设备、iOS、Android、Blackberry和Windows移动设备）上进行流播放。自适应视频集是同一视频的一组版本，这些版本以不同的比特率和格式进行编码，如400 kbps、800 kbps和1000 kbps。台式计算机或移动设备会检测可用带宽。
 
@@ -164,7 +163,7 @@ Dynamic Media支持为MP4 H.264视频播放移动设备视频。您可以在以�
 
 另请参阅《AdobeDynamic Media查看器参考指南》中的[关于HTML5查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only)。
 
-## 最佳实践：使用HTML5视频查看器{#best-practice-using-the-html-video-viewer}
+## 最佳实践：使用HTML5视频查看器 {#best-practice-using-the-html-video-viewer}
 
 Dynamic Media HTML5视频查看器预设是强大的视频播放器。您可以使用它们来避免与HTML5视频播放相关的许多常见问题，以及与移动设备相关的问题，例如缺少自适应流播放交付和桌面浏览器访问能力有限。
 
@@ -176,7 +175,7 @@ Dynamic Media HTML5视频查看器预设是强大的视频播放器。您可以�
 
 另请参阅《 查看器参考指南》中的“[关于 HTML5 查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)”。
 
-### 使用HTML5视频查看器在台式计算机和移动设备上播放视频{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### 使用HTML5视频查看器在台式计算机和移动设备上播放视频 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 对于桌面和移动设备自适应视频流播放，用于比特率切换的视频基于自适应视频集中的所有MP4视频。
 
@@ -263,13 +262,13 @@ HLS（HTTP实时流播放）是Apple的自适应视频流播放标准，可根�
  </tbody>
 </table>
 
-## Dynamic Media视频解决方案的架构{#architecture-of-dynamic-media-video-solution}
+## Dynamic Media视频解决方案的架构 {#architecture-of-dynamic-media-video-solution}
 
 下图显示了视频创作的整个工作流，在此流程中，视频通过 DMGateway 上传并编码，然后进行发布以供公众观看。
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
-## 视频的混合发布架构{#hybrid-publishing-architecture-for-videos}
+## 视频的混合发布架构 {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
@@ -384,7 +383,7 @@ HLS（HTTP实时流播放）是Apple的自适应视频流播放标准，可根�
 | 720p | 720 | 大型屏幕 |
 | 1080p | 1080 | 高清晰度大型屏幕 |
 
-### Fps（每秒帧数）{#fps-frames-per-second}
+### Fps（每秒帧数） {#fps-frames-per-second}
 
 在美国和日本，大多数视频以 29.97 帧/秒 (fps) 的速率拍摄；在欧洲，大多数视频以 25 fps 的速率拍摄。电影是以 24 fps 的速率拍摄。
 
@@ -461,7 +460,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 您还可以[取消发布视频以将其从 YouTube 中删除](#unpublishing-videos-to-remove-them-from-youtube)。
 
-### 配置Google Cloud设置{#configuring-google-cloud-settings}
+### 配置Google Cloud设置 {#configuring-google-cloud-settings}
 
 要发布到YouTube，您需要Google帐户。 如果您拥有GMAIL帐户，则您已拥有Google帐户。 如果您没有Google帐户，则可以轻松创建一个帐户。 您需要该帐户，因为您需要凭据才能将视频资产发布到YouTube。 如果已创建帐户，请跳过此任务并继续到[创建YouTube渠道](#creating-a-youtube-channel)。
 
@@ -526,7 +525,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    现在，您将创建一个YouTube渠道。
 
-### 创建YouTube渠道{#creating-a-youtube-channel}
+### 创建YouTube渠道 {#creating-a-youtube-channel}
 
 将视频发布到YouTube要求您拥有一个或多个渠道。 如果已创建YouTube渠道，则可以跳过此任务，转到&#x200B;**添加标记以进行发布**。
 
@@ -548,13 +547,13 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    现在，您将添加标记以进行发布。
 
-### 添加用于发布的标记{#adding-tags-for-publishing}
+### 添加标记以进行发布 {#adding-tags-for-publishing}
 
 要将视频发布到YouTube,AEM会将标记关联到一个或多个YouTube渠道。 要添加用于发布的标记，请参阅[管理标记](/help/sites-administering/tags.md)。
 
 或者，如果您打算在AEM中使用默认标记，则可以跳过此任务，转到[启用YouTube发布复制代理](#enabling-the-youtube-publish-replication-agent)。
 
-### 启用YouTube Publish复制代理{#enabling-the-youtube-publish-replication-agent}
+### 启用YouTube Publish复制代理 {#enabling-the-youtube-publish-replication-agent}
 
 1. 点按AEM左上角的AEM徽标，然后点按左边栏中的&#x200B;**[!UICONTROL 工具>部署>复制>作者上的代理]**。
 1. 在&#x200B;**[!UICONTROL 创作代理]**&#x200B;页面上，点按&#x200B;**[!UICONTROL YouTube发布(youtube)]**。
@@ -609,7 +608,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    现在，您将视频发布到YouTube渠道。
 
-### （可选）自动设置已上传视频的默认YouTube属性{#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### （可选）自动设置已上传视频的默认YouTube属性 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 您可以在上传视频时自动设置YouTube属性。 要实现此目的，请在AEM中创建元数据处理配置文件。
 
@@ -704,7 +703,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    您可以选择验证已在YouTube渠道上发布的视频。
 
-### （可选）验证已发布到 YouTube 上的视频{#optional-verifying-the-published-video-on-youtube}
+### （可选）验证已发布到 YouTube 上的视频 {#optional-verifying-the-published-video-on-youtube}
 
 您可以监控YouTube发布（或取消发布）的进度。
 
@@ -748,11 +747,11 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 1. 在资产选择模式下，选择一个或多个已发布的视频资产。
 1. 在工具栏中，点按&#x200B;**[!UICONTROL 取消发布>取消发布]**。
 
-## 监控视频编码和YouTube发布进度{#monitoring-video-encoding-and-youtube-publishing-progress}
+## 监控视频编码和YouTube发布进度 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 当您将新视频上传到应用了视频编码的文件夹，或将视频发布到youtube时，可以通过多种方式监控视频编码/youtube发布的进展情况（或失败）。 实际的YouTube发布进度仅可通过日志获取，但是以下过程中所述的其他方式列出发布进度是否失败或成功。 此外，当YouTube发布工作流或视频编码完成或中止时，您可能会收到电子邮件通知。
 
-### 监控进度{#monitoring-progress}
+### 监控进度 {#monitoring-progress}
 
 要监视进度(包括编码失败/YouTube发布)，请执行以下操作：
 
@@ -783,6 +782,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
    >* Apache Sling作业队列配置
    >* AdobeGranite工作流外部进程作业处理程序
    >* Granite工作流超时队列
+
    > 
    >在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
 
@@ -815,6 +815,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
    >* Apache Sling作业队列配置
    >* AdobeGranite工作流外部进程作业处理程序
    >* Granite工作流超时队列
+
    >
    >在这些配置中 **[!UICONTROL ，您可以调]**&#x200B;整重试 **[!UICONTROL 、]**&#x200B;重试延迟 **[!UICONTROL ,]** 以及超时。
 
@@ -827,7 +828,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 1. 您可能会收到有关工作流作业中止或失败的电子邮件通知。 管理员可配置这些电子邮件通知。
 请参阅[配置电子邮件通知](#configuring-e-mail-notifications)。
 
-#### 配置电子邮件通知{#configuring-e-mail-notifications}
+#### 配置电子邮件通知 {#configuring-e-mail-notifications}
 
 您可能需要管理权限才能访问&#x200B;**[!UICONTROL 工具]**&#x200B;菜单。
 
@@ -898,7 +899,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 1. 在列出顶级已发布视频的表中，点按视频名称以播放视频，还可以查看该视频的受众保留（流失）报表。
 
-### 查看基于您使用Dynamic Media HTML5查看器SDK创建的视频查看器的视频报表 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### 根据您使用Dynamic Media HTML5查看器SDK创建的视频查看器查看视频报表 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 如果您使用的是Dynamic Media提供的现成视频查看器，或者如果您基于现成视频查看器创建了自定义查看器预设，则无需执行其他步骤即可查看视频报表。 但是，如果您基于HTML5查看器SDK API创建了自己的视频查看器，请执行以下步骤以确保您的视频查看器将跟踪事件发送到Dynamic Media视频报表。
 
@@ -957,12 +958,11 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
-
    appMeasurementBridge 对象具备内置的跟踪功能。但是，您可以提供自己的对象来支持多个跟踪系统或其他功能。
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-## 向视频添加字幕{#adding-captions-to-video}
+## 在视频中添加字幕 {#adding-captions-to-video}
 
 您可以通过向单个视频或自适应视频集中添加字幕来将视频的覆盖范围扩展到全球市场。 通过添加字幕，您无需对音频进行调音，也无需使用母语人士为每个不同语言重新录制音频。 视频以录制的语言播放。 出现外语字幕，使不同语言的人仍然能够理解音频部分。
 
@@ -1021,7 +1021,7 @@ Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）�
 
       记下描述路径末尾的`,1`。 紧随路径中.vtt文件扩展名后，您可以选择启用（打开）或禁用（关闭）视频播放器栏上的隐藏式字幕按钮，方法是分别将设置为`,1`或`,0`。
 
-## 向视频添加章节标记{#adding-chapter-markers-to-video}
+## 向视频添加章节标记 {#adding-chapter-markers-to-video}
 
 您可以通过向单个视频或自适应视频集添加章节标记，来更轻松地观看和导航长形视频。 当用户播放视频时，他们可以点按视频时间轴上的章节标记（也称为视频清理器），以轻松导航到其目标点，或立即跳转到新内容、演示、教程等。
 
@@ -1035,7 +1035,7 @@ Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）�
 
 您可以使用以下示例作为创建包含章节导航的WebVTT文件所使用的格式示例：
 
-### 带有视频章节导航的WebVTT文件{#webvtt-file-with-video-chapter-navigation}
+### 带有视频章节导航的WebVTT文件 {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT 
@@ -1103,7 +1103,7 @@ Cost-efficient access to rapidly evolving technology.
      </tbody> 
     </table>
 
-## 关于视频缩略图{#about-video-thumbnails}
+## 关于视频缩略图 {#about-video-thumbnails}
 
 您可以从Dynamic Media自动生成的十个缩略图中选择一个，以将其添加到您的视频中。 当在AEM Sites、AEM Mobile或AEM Screens的创作环境中将视频资产与Dynamic Media组件一起使用时，视频播放器会显示您选择的缩略图。 缩略图用作最能反映整个视频内容的静态图片，进一步鼓励用户点按“播放”按钮。
 
@@ -1117,7 +1117,7 @@ Cost-efficient access to rapidly evolving technology.
 >
 >自定义视频缩略图仅在运行Dynamic Media — 混合模式时可用。
 
-### 添加视频缩略图{#adding-a-video-thumbnail}
+### 添加视频缩略图 {#adding-a-video-thumbnail}
 
 1. 导航到您要添加视频缩略图的已上传视频资产。
 1. 在资产选择模式下，从&#x200B;**[!UICONTROL 列表视图]**&#x200B;或&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，点按视频资产。
@@ -1136,7 +1136,7 @@ Cost-efficient access to rapidly evolving technology.
 
    请参阅[配置生成视频缩略图的默认时间间隔](#configuring-the-default-time-interval-that-video-thumbnails-are-generated)。
 
-#### 配置生成视频缩略图的默认时间间隔{#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
+#### 配置生成视频缩略图的默认时间间隔 {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
 当您配置并保存新的默认时间间隔时，您所做的更改会自动仅应用于您将来上传的视频。 它不会自动将新的默认设置应用于您之前上传的视频。 对于现有视频，必须重新生成缩略图。
 
@@ -1162,7 +1162,7 @@ Cost-efficient access to rapidly evolving technology.
 
    请参阅[添加视频缩略图。](#adding-a-video-thumbnail)
 
-### 添加自定义视频缩略图{#adding-a-custom-video-thumbnail}
+### 添加自定义视频缩略图 {#adding-a-custom-video-thumbnail}
 
 >[!NOTE]
 >

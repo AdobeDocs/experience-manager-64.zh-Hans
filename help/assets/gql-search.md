@@ -3,16 +3,16 @@ title: GQL全文搜索
 description: 浏览AEM Assets中的GQL全文搜索功能。 可使用它根据特定元数据（如标题、描述和作者名称）搜索资产。
 contentOwner: AG
 feature: 搜索，元数据
-role: Business Practitioner
+role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 30%
+source-wordcount: '879'
+ht-degree: 31%
 
 ---
 
-# GQL全文搜索{#gql-full-text-search}
+# GQL全文搜索 {#gql-full-text-search}
 
 浏览AEM Assets中的GQL全文搜索功能。 可使用它根据特定元数据（如标题、描述和作者名称）搜索资产。
 
@@ -22,7 +22,7 @@ ht-degree: 30%
 
 例如，要搜索标题为“Target”的资产，请执行以下步骤：
 
-## 搜索资产{#searching-assets}
+## 搜索资产 {#searching-assets}
 
 1. 在Assets用户界面的工具栏中，单击或点按&#x200B;**[!UICONTROL 搜索]**&#x200B;图标，以显示Omnisearch框。
 
@@ -63,10 +63,10 @@ GQL全文搜索功能允许您根据以下元数据属性搜索资产。属性�
 | [!UICONTROL 版权所有者] | copyrightowner:&quot;Adobe Systems&quot; |
 | [!UICONTROL 参与者] | 参与者：John |
 | [!UICONTROL 使用条款] | usageterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL 创建时间] | created:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL 创建时间] | 已创建:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL 过期日期] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL 开始时间] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL 结束时间] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL 结束时间] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL 时间范围] （过期日期、开始时间、结束时间） | facet字段：下限……上限 |
 | [!UICONTROL 路径] | /content/dam/&lt;folder name> |
 | [!UICONTROL PDF 标题] | pdftitle:&quot;Adobe Document&quot; |
@@ -120,7 +120,7 @@ title:&quot;Reynolds&quot;
 
 全文搜索还支持诸如 — 、^等运算符。 要将这些字母作为字符串文字搜索，请用双引号将搜索表达式引住。 例如，使用“Notebook - Beauty”而不是“Notebook - Beauty”。
 
-## 提升搜索{#boosting-search}
+## 提升搜索 {#boosting-search}
 
 您可以提高特定资产的关键词相关性，以帮助根据关键词提高搜索量。 换言之，在您基于这些关键词进行搜索时，向其促销特定关键词的图像会显示在搜索结果的顶部。
 

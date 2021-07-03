@@ -7,8 +7,8 @@ topic-tags: managing-assets
 content-type: reference
 exl-id: 081e7db0-95cc-4260-8f08-318cd7d9d5b4
 feature: 视频
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1604'
 ht-degree: 29%
@@ -45,7 +45,7 @@ Scene7 视频组件支持以下格式：
 * F4V H.264
 * MP4 H.264
 
-## 确定要将视频上传到的位置  {#deciding-where-to-upload-your-video}
+## 确定要将视频上传到的位置 {#deciding-where-to-upload-your-video}
 
 确定要将视频资产上传到的位置取决于以下因素：
 
@@ -54,7 +54,7 @@ Scene7 视频组件支持以下格式：
 
 如果上述任一问题的答案为“是”或两个问题的答案都为“是”，请将您的视频直接上传到 Adobe DAM。如果两个问题的答案都为“否”，请将您的视频直接上传到Dynamic Media Classic。 接下来的部分将介绍每个方案的工作流程。
 
-### 如果您要直接将视频上传到AdobeDAM {#if-you-are-uploading-your-video-directly-to-adobe-dam}
+### 如果您直接将视频上传到AdobeDAM {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
 如果您需要为资产提供工作流或版本控制，请先上传到AdobeDAM。 下面是建议的工作流：
 
@@ -93,13 +93,13 @@ Scene7 视频组件支持以下格式：
 
 1. 选定的编码配置文件会自动应用于上传到您为此 Scene7 云配置设置的 CQ DAM 目标文件夹的所有视频。您可以根据需要设置多个具有不同目标文件夹的 Scene7 云配置，以便应用不同的编码配置文件。
 
-## 更新查看器和编码预设  {#updating-viewer-and-encoding-presets}
+## 更新查看器和编码预设 {#updating-viewer-and-encoding-presets}
 
 如果在Scene7中更新了Experience Manager中的视频预设，则需要更新查看器和编码预设。 在这种情况下，导航到云配置中的Scene7配置，然后单击&#x200B;**[!UICONTROL 更新查看器和编码预设]**。
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## 将主控视频从AdobeDAM {#uploading-your-master-video}上传到Scene7
+## 将主控视频从AdobeDAM上传到Scene7 {#uploading-your-master-video}
 
 1. 导航到在其中为云配置设置了 Scene7 编码配置文件的 CQ DAM 目标文件夹。
 1. 单击&#x200B;**[!UICONTROL 上传]**&#x200B;以上传主视频。DAM更新资产工作流完成后，视频上传和编码将完成，并且&#x200B;**[!UICONTROL 发布到Scene7]**&#x200B;带有复选标记。
@@ -124,11 +124,11 @@ Scene7 视频组件仅适用于 Scene7 视频。基础组件可处理从Experien
 >
 >S7视频组件现成使用通用视频配置文件。 但是，您可以在Experience Manager中获取基于HTML5的视频播放器。 简单地复制现成HTML5视频播放器的嵌入代码，并将其放入Experience Manager页面。
 
-## Experience Manager视频组件{#aem-video-component}
+## Experience Manager视频组件 {#aem-video-component}
 
 即使建议使用Scene7视频组件来查看Scene7视频，为了内容完整起见，也应将Scene7视频与基础视频组件结合使用。
 
-### Experience Manager视频与Scene7视频比较{#aem-video-and-scene-video-comparison}
+### Experience Manager视频与Scene7视频比较 {#aem-video-and-scene-video-comparison}
 
 下表简要比较了Experience Manager基础视频组件与Scene7视频组件之间支持的功能：
 
@@ -140,7 +140,7 @@ Scene7 视频组件仅适用于 Scene7 视频。基础组件可处理从Experien
 | 可扩展性 | 是 | 是（带有[HTML5查看器SDK API文档](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)） |
 | 移动视频 | 是 | 是 |
 
-### 设置  {#setting-up}
+### 设置 {#setting-up}
 
 #### 创建视频配置文件 {#creating-video-profiles}
 
@@ -168,7 +168,7 @@ Scene7 视频组件仅适用于 Scene7 视频。基础组件可处理从Experien
 
    对要在视频组件中使用的云配置中选定的所有编码预设重复此步骤。
 
-#### 配置设计{#configuring-design}
+#### 配置设计 {#configuring-design}
 
 **[!UICONTROL Foundation Video]**&#x200B;组件必须了解用于构建视频源列表的视频配置文件。 打开视频组件设计对话框，并配置组件设计以使用新的视频配置文件。
 

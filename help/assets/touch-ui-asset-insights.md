@@ -3,16 +3,16 @@ title: 使用资产分析功能跟踪图像的使用情况
 description: 资产分析功能允许您跟踪用户评级以及在第三方网站、营销活动和Adobe的创意解决方案中使用的图像的使用情况统计信息。
 contentOwner: AG
 feature: 资产分析，资产报表
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: af2d14f92efb88143ccefe7fe29f83ae515e5981
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 8%
 
 ---
 
-# 资产分析{#asset-insights}
+# 资产分析 {#asset-insights}
 
 了解资产分析功能如何让您跟踪用户评级和第三方网站、营销活动和Adobe创意解决方案中使用的资产使用情况统计信息。
 
@@ -28,7 +28,7 @@ ht-degree: 8%
 >
 >仅支持对图像提供分析。
 
-## 查看资产{#viewing-statistics-for-an-asset}的统计信息
+## 查看资产的统计信息 {#viewing-statistics-for-an-asset}
 
 您可以从元数据页面查看资产分析得分。
 
@@ -65,7 +65,7 @@ ht-degree: 8%
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
-## 查看资产的聚合统计信息{#viewing-aggregate-statistics-for-assets}
+## 查看资产的汇总统计信息 {#viewing-aggregate-statistics-for-assets}
 
 您可以使用&#x200B;**[!UICONTROL 分析视图]**&#x200B;同时查看文件夹中所有资产的分数。
 
@@ -73,7 +73,7 @@ ht-degree: 8%
 1. 点按/单击工具栏中的布局图标，然后选择&#x200B;**[!UICONTROL 分析视图]**。
 1. 页面会显示资产的使用情况分数。 比较各个资产的评级并进行分析。
 
-## 计划后台作业{#scheduling-background-job}
+## 计划后台作业 {#scheduling-background-job}
 
 资产分析会定期从Adobe Analytics报表包中获取资产的使用情况数据。 默认情况下，资产分析会在凌晨2点运行一个后台作业，以获取数据。 但是，您可以通过从Web控制台中配置&#x200B;**[!UICONTROL Adobe CQ DAM资产性能报表同步作业]**&#x200B;服务来修改频率和时间。
 

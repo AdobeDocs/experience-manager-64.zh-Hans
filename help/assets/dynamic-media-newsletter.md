@@ -1,5 +1,5 @@
 ---
-description: 'Experience League的Dynamic Media快讯是每月的快讯。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您能够立即开始实现价值。 本一站式商店快讯中提供了宝贵的知识构建资源，包括如何制作视频、解决方案概述，以及介绍一些关键特性和功能（如图像预设、查看器预设、视频配置文件等）。 '
+description: '按Experience League划分的Dynamic Media新闻稿是每月的新闻稿。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您能够立即开始实现价值。 本一站式商店快讯中提供了宝贵的知识构建资源，包括如何制作视频、解决方案概述，以及介绍一些关键特性和功能（如图像预设、查看器预设、视频配置文件等）。 '
 keywords: Dynamic Media；新闻稿；产品更新；提示和技巧；事件；客户成功；博客；博客；图像；视频；功能
 seo-description: 本一站式商店快讯中提供了相关知识构建资源，包括视频操作、解决方案概述，以及一些关键特性和功能（如图像预设、查看器预设、视频配置文件等）的简介。
 seo-title: 'AdobeDynamic Media新闻稿 '
@@ -7,8 +7,8 @@ solution: Dynamic Media Classic
 title: Dynamic Media新闻稿
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: 协作，Dynamic Media Classic
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # ![Dynamic Media时事通讯徽标](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-Experience League每月发布的Dynamic Media时事通讯旨在帮助您快速了解Dynamic Media和Dynamic Media Classic，以便您能够立即开始实现价值。
+按Experience League划分的每月Dynamic Media新闻稿旨在帮助您快速了解Dynamic Media和Dynamic Media Classic，以便您能够立即开始实现价值。
 
 在这期一站式商店快讯中，您会发现一些宝贵的知识构建资源，如操作方法视频、解决方案概述，以及介绍该解决方案的一些主要特性和功能，如图像预设、查看器预设、视频配置文件等。
 
@@ -49,7 +49,7 @@ Experience League每月发布的Dynamic Media时事通讯旨在帮助您快速�
    * 了解在这个充满挑战的时代，您的富媒体投资可以提供三种帮助。
    * 注册网络研讨会，了解如何通过智能成像减轻页面加载量。
    * 观看Dynamic Media Classic的按需技能培养网络研讨会。
-   * 观看2020年在线Adobe峰会的Dynamic Media会议。
+   * 查看2020年在线Adobe Summit中的Dynamic Media会议。
    * 进一步了解我们的免费Dynamic Media Classic审核。
    * 会见客户成功服务高级项目经理John Monroe。
 
@@ -62,7 +62,7 @@ Experience League每月发布的Dynamic Media时事通讯旨在帮助您快速�
    在此问题中：
 
    * 参加新的技能培养网络研讨会，并转型为Dynamic Media Classic专家。
-   * 看看在2020年Adobe峰会上，您将在哪里找到Dynamic Media。
+   * 在2020Adobe Summit找到Dynamic Media。
    * 了解如何使用Dynamic Media的裁剪魔力。
    * 利用免费审核，帮助您从Dynamic Media Classic中获得更多价值。
    * 了解Dynamic Media Classic的新用户界面。
@@ -97,7 +97,7 @@ Experience League每月发布的Dynamic Media时事通讯旨在帮助您快速�
    * 一篇CMSwire文章，可帮助您了解如何更新富媒体策略以满足当今客户的期望。
    * 访问技能培养系列中有关Dynamic Media的按需网络研讨会。
    * 会见Adobe Experience Manager网站可靠性工程部经理Nick Peters。
-   * 在Experience League上快速了解Dynamic Media和Dynamic Media Classic。
+   * 在Experience League中加快Dynamic Media和Dynamic Media Classic的运行速度。
 
 * **[2019年9月，09期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
 
@@ -108,7 +108,7 @@ Experience League每月发布的Dynamic Media时事通讯旨在帮助您快速�
    * 第二次机会观看最近两次技能培养网络研讨会。
    * 观看有关保护您的数字资产免受盗版侵害的按需网络研讨会。
    * 会见Adobe Experience Manager资产高级产品营销经理Bridget Roman。
-   * 在Experience League上快速了解Dynamic Media和Dynamic Media Classic。
+   * 在Experience League中加快Dynamic Media和Dynamic Media Classic的运行速度。
 
 * **[2019年8月，08期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**
 
@@ -116,7 +116,7 @@ Experience League每月发布的Dynamic Media时事通讯旨在帮助您快速�
 
    * 探索仅当您升级到Dynamic Media时才可用的有价值的功能。
    * 了解网络研讨会系列，旨在帮助您快速了解Adobe Experience Manager Assets和Dynamic Media。
-   * 从Experience League的Dynamic Media中开始获取价值。
+   * 开始您的旅程，从Dynamic Media获取Experience League价值。
    * 今年9月将推出一款功能强大的集成，让您能够分析访客与富媒体的交互方式。
    * 会见Dynamic Media技术支持部的PieterJan Pieper。
 

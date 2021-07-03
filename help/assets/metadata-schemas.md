@@ -3,9 +3,9 @@ title: 元数据架构
 description: '元数据架构定义属性页面的布局以及为资产显示的元数据属性。 了解如何创建自定义元数据架构、编辑元数据架构，以及如何将元数据架构应用到资产。  '
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 23%
@@ -54,7 +54,7 @@ ht-degree: 23%
 >
 >要查看架构表单的子表单，请单击/点按架构表单名称。
 
-## 添加元数据架构表单{#adding-a-metadata-schema-form}
+## 添加元数据架构表单 {#adding-a-metadata-schema-form}
 
 1. 要将自定义模板添加到列表，请单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
 
@@ -66,7 +66,7 @@ ht-degree: 23%
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
-## 编辑元数据架构表单{#editing-metadata-schema-forms}
+## 编辑元数据架构表单 {#editing-metadata-schema-forms}
 
 可以编辑新添加的或现有的元数据架构表单。元数据架构表单包含以下内容：
 
@@ -87,7 +87,7 @@ ht-degree: 23%
 
 1. 要配置组件，请选择该组件并在&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡中修改其属性。
 
-### “构建表单”选项卡内的组件{#components-within-the-build-form-tab}
+### “构建表单”选项卡内的组件 {#components-within-the-build-form-tab}
 
 **[!UICONTROL 构建表单]**&#x200B;选项卡列出了您在架构表单中使用的表单项目。 **[!UICONTROL 设置]**&#x200B;选项卡提供您在&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中选择的每个项目的属性。 下表列出了&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中可用的表单项目：
 
@@ -108,7 +108,7 @@ ht-degree: 23%
 | [!UICONTROL 资产评级] | 添加以显示资产评级选项。 |
 | [!UICONTROL 上下文元数据] | 添加可控制资产属性页面中其他元数据选项卡的显示。 |
 
-### 编辑元数据组件{#editing-the-metadata-component}
+### 编辑元数据组件 {#editing-the-metadata-component}
 
 要编辑表单上元数据组件的属性，请单击该组件，并在&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡中编辑以下所有属性或其子集。
 
@@ -158,11 +158,11 @@ ht-degree: 23%
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-### 在JSON文件{#specifying-properties-in-json-file}中指定属性
+### 在JSON文件中指定属性 {#specifying-properties-in-json-file}
 
 您还可以通过指定相应的键值对在 JSON 文件中定义选项，而不是为&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中的选项指定属性。在 **[!UICONTROL JSON 路径]**&#x200B;字段中指定 JSON 文件的路径。
 
-### 在架构表单{#adding-deleting-a-tab-in-the-schema-form}中添加或删除选项卡
+### 在架构表单中添加或删除选项卡 {#adding-deleting-a-tab-in-the-schema-form}
 
 通过架构编辑器，可以添加或删除选项卡。默认架构表单包括&#x200B;**[!UICONTROL 基本]**、**[!UICONTROL 高级]**、**[!UICONTROL IPTC]** 和 **[!UICONTROL IPTC 扩展]**&#x200B;选项卡（默认情况下）。
 
@@ -172,7 +172,7 @@ ht-degree: 23%
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-## 删除元数据架构表单{#deleting-metadata-schema-forms}
+## 删除元数据架构表单 {#deleting-metadata-schema-forms}
 
 AEM 仅允许您删除自定义架构表单。您无法删除默认的架构表单/模板。但是，您可以删除对这些表单所做的任何自定义更改。
 
@@ -186,15 +186,15 @@ AEM 仅允许您删除自定义架构表单。您无法删除默认的架构表�
 >
 >您无法删除AEM Assets中现成的元数据架构表单。
 
-## MIME类型{#schema-forms-for-mime-types}的架构表单
+## MIME类型的架构表单 {#schema-forms-for-mime-types}
 
 AEM Assets为各种开箱即用的MIME类型提供默认表单。 但是，您可以为各种MIME类型的资产添加自定义表单。
 
-### 为MIME类型{#adding-new-forms-for-mime-types}添加新表单
+### 为MIME类型添加新表单 {#adding-new-forms-for-mime-types}
 
 在相应的表单类型下创建新表单。例如，要为`image/png`子类型添加新模板，请在`image`表单下创建表单。 架构表单的标题是子类型名称。在这种情况下，标题为`png`。
 
-### 对各种MIME类型{#using-an-existing-schema-template-for-various-mime-types}使用现有架构模板
+### 对各种MIME类型使用现有架构模板 {#using-an-existing-schema-template-for-various-mime-types}
 
 您可以为不同的 MIME 类型使用现有模板。例如，对于MIME类型为`image/png`的资产，请使用`image/jpeg`表单。
 
@@ -221,11 +221,11 @@ AEM Assets 映射以下 MIME 类型和架构表单：
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
 
-## 授予对元数据架构{#granting-access-to-metadata-schemas}的访问权限
+## 授予对元数据架构的访问权限 {#granting-access-to-metadata-schemas}
 
 元数据架构功能仅供管理员使用。 但是，管理员可以通过提供对`/conf`文件夹的&#x200B;**[!UICONTROL 创建]**、**[!UICONTROL 修改]**&#x200B;和&#x200B;**[!UICONTROL 删除]**&#x200B;权限，来为非管理员用户提供访问权限。
 
-## 应用特定于文件夹的元数据{#applying-folder-specific-metadata}
+## 应用特定于文件夹的元数据 {#applying-folder-specific-metadata}
 
 AEM Assets允许您定义元数据架构的变体，并将其应用到特定文件夹。
 
@@ -263,7 +263,7 @@ AEM Assets允许您定义元数据架构的变体，并将其应用到特定文�
 1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭成功消息。
 1. 导航到应用已修改元数据架构的文件夹。
 
-## 定义必需元数据{#defining-mandatory-metadata}
+## 定义必需元数据 {#defining-mandatory-metadata}
 
 您可以在文件夹级别定义必填字段，该字段对上传到该文件夹的资产强制执行。 如果您为之前定义的必填字段上传缺少元数据的资产，则卡片视图的资产中会显示缺少元数据的可视指示。
 
@@ -284,7 +284,7 @@ AEM Assets允许您定义元数据架构的变体，并将其应用到特定文�
 
 1. 导航到文件夹，并上传某些资产，其中缺少您添加到自定义表单的必填字段的元数据。 资产的卡片视图会显示一则消息，其中显示必填字段缺少的元数据。
 
-   ![chlimage_1-112](assets/chlimage_1-192.png)
+   ![chlimage_1-192](assets/chlimage_1-192.png)
 
 1. （可选）访问`http://[server]:[port]/system/console/components/`。 配置并启用默认禁用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`组件。 设置AEM检查资产上元数据有效性的频率。
 此配置会将属性`hasValidMetadata`添加到资产的jcr:content。 使用此属性，AEM可以过滤搜索结果。

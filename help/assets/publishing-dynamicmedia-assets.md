@@ -7,8 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: ebe30c07-1d76-4338-b301-49591f981688
 feature: 资产管理
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 21%
@@ -44,7 +44,7 @@ ht-degree: 21%
 
 有关发布集或资产的详细信息，请参阅[发布资产。](managing-assets-touch-ui.md)
 
-## HTTP/2交付Dynamic Media资产{#http-delivery-of-dynamic-media-assets}
+## HTTP/2交付Dynamic Media资产 {#http-delivery-of-dynamic-media-assets}
 
 AEM现在支持通过HTTP/2交付所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，将通过HTTP/2协议来交付已发布的资产。 这种交付方法改进了浏览器和服务器通信的方式，从而可以缩短所有Dynamic Media资产的响应和加载时间。
 

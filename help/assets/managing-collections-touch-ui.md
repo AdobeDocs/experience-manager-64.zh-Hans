@@ -4,9 +4,9 @@ description: 了解管理资产收藏集的任务，如创建、查看、删除�
 contentOwner: AG
 mini-toc-levels: 1
 feature: 收藏集
-role: Business Practitioner
+role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2329'
 ht-degree: 22%
@@ -26,15 +26,15 @@ ht-degree: 22%
 * 包含资产、文件夹和其他收藏集的静态引用列表的收藏集。
 * 一种智能收藏集，可根据搜索条件动态包含资产。
 
-## 访问收藏集控制台{#navigating-the-collections-console}
+## 访问收藏集控制台 {#navigating-the-collections-console}
 
 要打开&#x200B;**[!UICONTROL 收藏集]**，请点按或单击Experience Manager徽标。 在导航页面中，转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 收藏集]**。
 
-## 创建集合{#creating-a-collection}
+## 创建收藏集 {#creating-a-collection}
 
 您可以创建包含[静态引用](#creating-a-collection-with-static-references)的集合，也可以基于基于[搜索条件的筛选器](#creating-a-smart-collection)。 您还可以从灯箱创建收藏集。
 
-### 创建包含静态引用{#creating-a-collection-with-static-references}的集合
+### 创建包含静态引用的集合 {#creating-a-collection-with-static-references}
 
 您可以创建包含静态引用的收藏集，例如包含对资产、文件夹、收藏集、旋转集和图像集的引用的收藏集。
 
@@ -56,7 +56,7 @@ ht-degree: 22%
 
    要将资产添加到收藏集，请导航到资产用户界面。 有关详细信息，请参阅[将资产添加到收藏集](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection)。
 
-### 使用dropzone {#create-collections-using-dropzone}创建收藏集
+### 使用拖放区创建收藏集 {#create-collections-using-dropzone}
 
 您可以将资产从资产UI拖到收藏集。 您还可以创建收藏集的副本，并将资产拖动到此处。
 
@@ -80,7 +80,7 @@ ht-degree: 22%
 1. 在&#x200B;**[!UICONTROL 创建新收藏集]**&#x200B;对话框中，指定收藏集的名称。如果希望所有用户都可以访问该收藏集，请选择&#x200B;**[!UICONTROL 公共收藏集]**。
 1. 点按/单击&#x200B;**[!UICONTROL 继续]**&#x200B;以创建集合。
 
-### 创建智能收藏集{#creating-a-smart-collection}
+### 创建智能收藏集 {#creating-a-smart-collection}
 
 智能收藏集使用搜索条件动态填充资产。 您可以仅使用文件，而不使用文件夹或文件和文件夹来创建智能收藏集。
 
@@ -111,9 +111,9 @@ ht-degree: 22%
 
    “创建智能选 **[!UICONTROL 择”按钮的标签会变]** 为“编 **[!UICONTROL 辑智能选择”]**。 要编辑智能收藏集的设置，请从“文件和文 **[!UICONTROL 件夹]** ”列 **[!UICONTROL 表中选择“文件]** ”。 然后，点按／单击编辑 **[!UICONTROL 智能选择]** 按钮。
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
-## 将资产添加到集合{#adding-assets-to-a-collection}
+## 将资产添加到收藏集 {#adding-assets-to-a-collection}
 
 您可以将资产添加到包含一系列引用的资产或文件夹的收藏集中。智能收藏集可使用搜索查询来填充资产。因此，对资产和文件夹的静态引用不适用于此类收藏集。
 
@@ -127,13 +127,13 @@ ht-degree: 22%
 
 1. 点按/单击&#x200B;**[!UICONTROL 添加]**，然后关闭确认消息。 资产会添加到收藏集。
 
-## 编辑智能收藏集{#editing-a-smart-collection}
+## 编辑智能收藏集 {#editing-a-smart-collection}
 
 智能收藏集是通过保存搜索来构建的，因此您可以通过修改[保存的搜索](#editing-saved-searches)的搜索参数来更改其内容。
 
 1. 在Assets用户界面中，点按/单击工具栏中的搜索图标。
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. 将光标置于Omnisearch框中，按Return键。
 
@@ -157,7 +157,7 @@ ht-degree: 22%
 
 1. 在确认对话框中，点按/单击&#x200B;**[!UICONTROL 保存]**&#x200B;以完成该过程。
 
-## 查看和编辑集合元数据{#viewing-and-editing-collection-metadata}
+## 查看和编辑集合元数据 {#viewing-and-editing-collection-metadata}
 
 收藏集元数据由与收藏集相关的数据组成，其中包括添加的任何标记。
 
@@ -165,7 +165,7 @@ ht-degree: 22%
 1. 在&#x200B;**[!UICONTROL 收藏集元数据]**&#x200B;页面中，从&#x200B;**[!UICONTROL 基本]**&#x200B;和&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡中查看收藏集元数据。
 1. 根据需要修改元数据，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存更改。
 
-### 批量编辑多个集合的元数据{#editing-collection-metadata-in-bulk}
+### 批量编辑多个收藏集的元数据 {#editing-collection-metadata-in-bulk}
 
 您可以同时编辑多个收藏集的元数据。 此功能可帮助您快速在多个集合中复制常用元数据。
 
@@ -193,19 +193,19 @@ ht-degree: 22%
 >
 >批量编辑方法适用于收藏集中的可用资产。 对于跨文件夹提供的资产或符合常用条件的资产，可以在搜索这些资产后批量更新元数据。
 
-## 搜索集合{#searching-collections}
+## 搜索收藏集 {#searching-collections}
 
 您可以从“收藏集”控制台中搜索收藏集。在Omnisearch框中使用关键字搜索时，AEM Assets会搜索收藏集名称、元数据和添加到收藏集的标记。
 
 如果您从顶级搜索收藏集，则搜索结果中只返回单个收藏集。 收藏集中的资产或文件夹将被排除。 在所有其他情况下（例如，在单个收藏集或文件夹层次结构中），都会返回所有相关的资产、文件夹和收藏集。
 
-## 在收藏集中搜索{#searching-within-collections}
+## 在收藏集中搜索 {#searching-within-collections}
 
 在收藏集控制台中，点按/单击收藏集以将其打开。
 
 在收藏集中，AEM资产搜索仅限于您正在查看的收藏集中的资产（及其标记和元数据）。 在文件夹中搜索时，将返回当前文件夹中所有匹配的资产和子文件夹。 在收藏集中搜索时，只会返回与收藏集直接成员匹配的资产、文件夹和其他收藏集。
 
-## 编辑集合设置{#editing-collection-settings}
+## 编辑收藏集设置 {#editing-collection-settings}
 
 您可以编辑收藏集设置（如标题和描述），或向收藏集添加成员。
 
@@ -214,7 +214,7 @@ ht-degree: 22%
 
 1. 要保存更改，请点按/单击&#x200B;**[!UICONTROL 保存]**。
 
-## 删除集合{#deleting-a-collection}
+## 删除集合 {#deleting-a-collection}
 
 1. 从收藏集控制台中，选择一个或多个收藏集，然后点按/单击工具栏中的删除图标。
 
@@ -224,7 +224,7 @@ ht-degree: 22%
    >
    >您也可以通过[删除保存的搜索](#deleting-saved-searches)来删除智能收藏集。
 
-## 下载集合{#downloading-a-collection}
+## 下载收藏集 {#downloading-a-collection}
 
 下载收藏集时，会下载收藏集内整个资产层次结构，包括文件夹和子收藏集。
 
@@ -234,7 +234,7 @@ ht-degree: 22%
 
    选择要下载的收藏集时，将下载该收藏集下的完整文件夹层次结构。 要将您下载的每个收藏集（包括嵌套在父收藏集下的子收藏集中的资产）包含在单个文件夹中，请选择&#x200B;**[!UICONTROL 为每个资产创建单独的文件夹]**。
 
-## 创建嵌套集合{#creating-nested-collections}
+## 创建嵌套收藏集 {#creating-nested-collections}
 
 您可以将一个收藏集添加到另一个收藏集中，从而创建嵌套式收藏集。
 
@@ -260,7 +260,7 @@ ht-degree: 22%
 
 ![saved_searches_list](assets/saved_searches_list.png)
 
-### 创建保存的搜索{#creating-saved-searches}
+### 创建保存的搜索 {#creating-saved-searches}
 
 创建智能收藏集时将创建保存的搜索。智能收藏集会自动添加到&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表。收藏集的“保存的搜索”查询将保存在crxde的`dam:query`属性中的相对位置`/content/dam/collections/`。 对于可保存的搜索和列表中显示的已保存搜索，没有任何限制。
 
@@ -268,11 +268,11 @@ ht-degree: 22%
 >
 >您可以像共享静态收藏集一样共享智能收藏集。
 
-### 编辑保存的搜索{#editing-saved-searches}
+### 编辑保存的搜索 {#editing-saved-searches}
 
 编辑保存的搜索与编辑智能收藏集相同。 有关详细信息，请参阅[编辑智能收藏集](/help/assets/managing-collections-touch-ui.md#editing-a-smart-collection)。
 
-### 删除保存的搜索{#deleting-saved-searches}
+### 删除保存的搜索 {#deleting-saved-searches}
 
 1. 在Assets用户界面中，点按/单击工具栏中的搜索图标。
 
@@ -288,7 +288,7 @@ ht-degree: 22%
 
 1. 在对话框中，点按/单击&#x200B;**[!UICONTROL 删除]**&#x200B;以删除保存的搜索。
 
-## 对集合{#running-a-workflow-on-a-collection}执行工作流
+## 对集合执行工作流 {#running-a-workflow-on-a-collection}
 
 您可以为收藏集中的资产运行工作流。 如果收藏集包含嵌套收藏集，则工作流还会在嵌套收藏集中的资产上运行。 但是，如果收藏集和嵌套收藏集包含重复的资产，则此类资产的工作流仅运行一次。
 

@@ -6,20 +6,20 @@ uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
 feature: 标记，元数据，智能标记
-role: Business Practitioner
+role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 10%
 
 ---
 
-# 智能内容服务培训指南{#smart-content-service-training-guidelines}
+# 智能内容服务培训准则 {#smart-content-service-training-guidelines}
 
 为了能够有效地标记您的品牌图像，智能内容服务要求培训图像符合特定准则。
 
-## 培训准则{#guidelines-for-training}
+## 培训准则 {#guidelines-for-training}
 
 为获得最佳结果，培训集中的图像应符合以下准则：
 

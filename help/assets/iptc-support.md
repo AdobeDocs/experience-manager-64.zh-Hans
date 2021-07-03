@@ -3,16 +3,16 @@ title: 支持IPTC元数据
 description: 了解Adobe Experience Manager(AEM)Assets如何支持通过Adobe Bridge和其他创意应用程序添加到资产中的IPTC元数据、创意评级和关键词。
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator,Leader
+role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 7%
 
 ---
 
-# 支持IPTC元数据{#support-for-iptc-metadata}
+# 支持IPTC元数据 {#support-for-iptc-metadata}
 
 了解Adobe Experience Manager(AEM)Assets如何支持通过Adobe Bridge和其他创意应用程序添加到资产中的IPTC元数据、创意评级和关键词。
 
@@ -33,7 +33,7 @@ Adobe Experience Manager(AEM)Assets支持广泛用于描述资产的IPTC元数�
 1. 根据需要编辑ITPC扩展元数据属性。
 1. 点按/单击&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;以保存更改。
 
-## 创意评分支持{#creative-rating-support}
+## 创意评分支持 {#creative-rating-support}
 
 除了显示单个用户评级和聚合评级之外，“属性”页面现在还显示通过Adobe Bridge和其他创意应用程序为资产分配的评级
 
@@ -43,7 +43,7 @@ Adobe Experience Manager(AEM)Assets支持广泛用于描述资产的IPTC元数�
 
 但是，此属性当前没有编入索引，以避免与用户所做的自定义更改发生任何冲突。
 
-## 关键词支持{#keyword-support}
+## 关键词支持 {#keyword-support}
 
 属性页面的&#x200B;**[!UICONTROL IPTC]**&#x200B;选项卡还显示通过Adobe Bridge和其他创意应用程序添加到资产的关键词。 您还可以编辑这些关键词，并从&#x200B;**[!UICONTROL IPTC]**&#x200B;选项卡添加更多关键词。
 

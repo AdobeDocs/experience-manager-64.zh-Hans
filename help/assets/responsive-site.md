@@ -8,8 +8,8 @@ content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 exl-id: 36bb526c-a6d9-4296-8318-97ac72d6b3ba
 feature: 发布
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 35%
@@ -49,7 +49,7 @@ ht-degree: 35%
 1. 在&#x200B;**[!UICONTROL 嵌入响应式图像]**&#x200B;对话框中，选择并复制响应式代码文本，然后将其粘贴到您的网站中，以访问响应式资产。
 1. 编辑嵌入代码中的默认断点，以直接与响应式网站的代码断点相匹配。此外，还应测试不同页面断点处使用的不同图像分辨率。
 
-## 使用HTTP/2交付Dynamic Media资产{#using-http-to-delivery-your-dynamic-media-assets}
+## 使用HTTP/2交付Dynamic Media资产 {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2是经过更新的新Web协议，可改进浏览器和服务器的通信方式。 它提供了更快的信息传输，并降低了所需的处理能力。 HTTP/2支持交付Dynamic Media资产，从而提供更好的响应和加载时间。
 

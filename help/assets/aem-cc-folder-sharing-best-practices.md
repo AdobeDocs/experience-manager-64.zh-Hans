@@ -3,16 +3,16 @@ title: 将AEM Assets文件夹与Creative Cloud共享
 description: 允许Adobe Experience Manager Assets用户与Adobe Creative Cloud用户交换资产文件夹的配置和最佳实践。
 contentOwner: AG
 feature: 协作
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 0%
 
 ---
 
-# AEM到Creative Cloud文件夹共享最佳实践{#aem-to-creative-cloud-folder-sharing-best-practices}
+# AEM到Creative Cloud文件夹共享最佳实践 {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
@@ -44,7 +44,7 @@ AEM到Creative Cloud的文件夹共享依赖于AEM Assets和Creative Cloud帐户
 * **Creative Cloud资产Web服务** (存储和Creative Cloud文件Web UI):在这里，与其共享了AEM Assets文件夹的特定Creative Cloud用户将能够接受邀请并在其Creative Cloud帐户存储中查看该文件夹。
 * **Creative Cloud桌面应用程序**:（可选）允许通过与Creative Cloud资产存储同步，从创意用户的桌面直接访问共享文件夹/文件。
 
-## 特性和限制{#characteristics-and-limitations}
+## 特征和限制 {#characteristics-and-limitations}
 
 * **更改的单向传播：** 文件更改仅沿一个方向传播 — 从最初创建（上传）资产的系统(AEM或Creative Cloud资产)传播。该集成不会在两个系统之间提供完全自动的双向同步。
 
@@ -59,7 +59,7 @@ AEM到Creative Cloud的文件夹共享依赖于AEM Assets和Creative Cloud帐户
 * **网络和带宽：** 共享文件夹中的文件和所有更新需要通过网络在系统之间传输。您应确保仅共享相关文件和更新。
 * **文件夹类型**:不支持共享类型的 `sling:OrderedFolder`Assets文件夹。如果要共享文件夹，则在AEM Assets中创建文件夹时，请勿选择“已排序”选项。
 
-## 最佳实践{#best-practices}
+## 最佳实践 {#best-practices}
 
 利用AEM到Creative Cloud文件夹共享的最佳实践包括：
 

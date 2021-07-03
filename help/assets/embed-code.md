@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
 feature: 组件
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 28%
 
 ---
 
-# 在网页{#embedding-the-video-or-image-viewer-on-a-web-page}上嵌入Dynamic Media视频或图像查看器
+# 在网页上嵌入Dynamic Media视频或图像查看器 {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 当您想 **[!UICONTROL 要播放视频或查看嵌入到网页中的资产时]** ，请使用嵌入代码功能。 将嵌入代码复制到剪贴板，以便将其粘贴到网页中。 不允许在“嵌入代码”对 **[!UICONTROL 话框中编辑代码]** 。
 
@@ -57,7 +57,7 @@ ht-degree: 28%
 1. 在&#x200B;**[!UICONTROL 嵌入代码]**&#x200B;对话框中，将整个代码复制到剪贴板，然后点按&#x200B;**[!UICONTROL 关闭]**。
 1. 将嵌入代码粘贴到网页中。
 
-## 使用HTTP/2传送Dynamic Media资产{#using-http-to-deliver-your-dynamic-media-assets}
+## 使用HTTP/2交付Dynamic Media资产 {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2是经过更新的新Web协议，可改进浏览器和服务器的通信方式。 它提供了更快的信息传输，并降低了所需的处理能力。 现在，Dynamic Media资产的交付可以通过HTTP/2进行，从而提供更好的响应和加载时间。
 

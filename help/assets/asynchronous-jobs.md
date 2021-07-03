@@ -3,16 +3,16 @@ title: 在 [!DNL Adobe Experience Manager]中配置异步操作。
 description: 异步完成一些资源密集型任务以优化 [!DNL Experience Manager Assets]中的性能。
 contentOwner: AG
 feature: 资产管理
-role: Business Practitioner
+role: User
 exl-id: 0abdfe87-d932-41dd-b1e6-9f5fa5b924fe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 22%
 
 ---
 
-# 异步操作{#asynchronous-operations}
+# 异步操作 {#asynchronous-operations}
 
 为了减少对性能的不利影响，[!DNL Adobe Experience Manger Assets]异步处理某些长时间运行且资源密集型资产操作。 异步处理包括将多个任务排入队列，并最终以序列方式执行这些任务，但以系统资源的可用性为前提。 这些操作包括：
 
@@ -26,7 +26,7 @@ ht-degree: 22%
 >
 >默认情况下，[!DNL Assets]任务并行执行。 如果`N`是CPU核心的数量，则默认情况下，`N/2`任务可以并行执行。 要对任务队列使用自定义设置，请从[!UICONTROL Web控制台]修改&#x200B;**[!UICONTROL 异步操作默认队列]**&#x200B;配置。 有关更多信息，请参阅[队列配置](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations)。
 
-## 监视异步操作的状态{#monitoring-the-status-of-asynchronous-operations}
+## 监视异步操作的状态 {#monitoring-the-status-of-asynchronous-operations}
 
 每当[!DNL Assets]异步处理操作时，您都会在[!DNL Experience Manager] [收件箱](/help/sites-authoring/inbox.md)中通过电子邮件收到通知。 要查看异步操作状态的详细信息，请导航到&#x200B;**[!UICONTROL 异步作业状态]**&#x200B;页面。
 
@@ -55,7 +55,7 @@ ht-degree: 22%
    >
    >如果任务的状态为活动或已排队，则无法删除该任务。
 
-## 清除已完成的任务{#purge-completed-tasks}
+## 清除已完成的任务 {#purge-completed-tasks}
 
 [!DNL Experience Manager Assets] 每天1时执行清除任务，以删除已完成且已超过一天的异步任务。
 
@@ -70,7 +70,7 @@ ht-degree: 22%
 
    ![计划清除异步任务的配置](assets/purge_job.png)
 
-## 为异步删除操作配置阈值{#configure-thresholds-for-asynchronous-delete-operations}
+## 为异步删除操作配置阈值 {#configure-thresholds-for-asynchronous-delete-operations}
 
 如果要删除的资产或文件夹数量超过设置的阈值数，将异步执行删除操作。
 
@@ -80,7 +80,7 @@ ht-degree: 22%
 
    ![设置任务删除资产的阈值限制](assets/delete_threshold.png)
 
-## 为异步移动操作配置阈值{#configure-thresholds-for-asynchronous-move-operations}
+## 为异步移动操作配置阈值 {#configure-thresholds-for-asynchronous-move-operations}
 
 如果要移动的资产、文件夹或引用数量超过设置的阈值数，将异步执行移动操作。
 

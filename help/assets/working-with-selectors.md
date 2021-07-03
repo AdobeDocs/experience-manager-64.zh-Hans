@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
 feature: 选择器
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 20%
@@ -33,7 +33,7 @@ ht-degree: 20%
 
 当您选择热点或图像映射转到的位置（而不是手动输入）时，您将使用选择器。 仅当您是AEM Sites客户时，网站选择器才起作用。 产品选择器还需要AEM Commerce。
 
-## 选择产品{#selecting-products}
+## 选择产品 {#selecting-products}
 
 当您希望热点或图像映射提供到产品目录中特定产品的概览时，请使用产品选择器来选择产品。
 
@@ -71,9 +71,9 @@ ht-degree: 20%
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## 选择站点{#selecting-sites}
+## 选择站点 {#selecting-sites}
 
-当您希望热点或图像映射链接到在AEM网站中管理的网页时，可使用站点选择器来选择网页。
+当您希望热点或图像映射链接到在AEM网站中管理的网页时，请使用站点选择器来选择网页。
 
 1. 导航到传送集、交互式图像或交互式视频，然后点按“ **[!UICONTROL Actions]** ”（操作）选项卡（仅当您定义了热点或图像映射时可用）。
 

@@ -3,16 +3,16 @@ title: 使用智能内容服务配置资产标记。
 description: 了解如何使用智能内容服务在 [!DNL Adobe Experience Manager]中配置智能标记和增强智能标记。
 contentOwner: AG
 feature: 智能标记，标记
-role: Administrator
+role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 34%
 
 ---
 
-# 使用智能内容服务{#configure-asset-tagging-using-the-smart-content-service}配置资产标记
+# 使用智能内容服务配置资产标记 {#configure-asset-tagging-using-the-smart-content-service}
 
 您可以使用[!DNL Adobe Developer Console]将[!DNL Adobe Experience Manager]与智能内容服务相集成。 使用此配置可从[!DNL Experience Manager]内访问智能内容服务。
 
@@ -38,7 +38,7 @@ ht-degree: 34%
 
 要启用增强型智能标记，除了上述功能外，还请安装最新的[Experience Manager服务包](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html)。
 
-## 创建智能内容服务配置以获取公共证书{#obtain-public-certificate}
+## 创建智能内容服务配置以获取公共证书 {#obtain-public-certificate}
 
 公共证书允许您在[!DNL Adobe Developer Console]上验证配置文件。
 
@@ -92,7 +92,7 @@ ht-degree: 34%
 
 1. 访问[https://console.adobe.io](https://console.adobe.io)，然后导航到&#x200B;**[!UICONTROL Integrations]**&#x200B;页面上的现有智能内容服务。 上传新证书。 有关更多信息，请参阅[创建Adobe开发人员控制台集成](#create-adobe-i-o-integration)中的说明。
 
-## 创建Adobe开发人员控制台集成{#create-adobe-i-o-integration}
+## 创建Adobe开发人员控制台集成 {#create-adobe-i-o-integration}
 
 要使用智能内容服务API，请在Adobe开发人员控制台中创建集成，以获取[!UICONTROL API密钥](在Adobe开发人员控制台集成的[!UICONTROL 客户端ID]字段中生成)、 [!UICONTROL 技术帐户ID]、 [!UICONTROL 组织ID]和[!UICONTROL 客户端密钥A9&lt;A9/>，以用于&lt;A10/>智能资产设置&lt;A11&lt;A12/>中的云配置1/>。][!DNL Experience Manager]
 
@@ -116,7 +116,7 @@ ht-degree: 34%
 
    *图：Adobe开发人员控制台中的集成详细信息*
 
-## 配置智能内容服务{#configure-smart-content-service}
+## 配置智能内容服务 {#configure-smart-content-service}
 
 要配置集成，请使用Adobe开发人员控制台集成中的[!UICONTROL 技术帐户ID]、[!UICONTROL 组织ID]、[!UICONTROL 客户端密钥]和[!UICONTROL 客户端ID]字段值。 创建智能标记云配置后，可以对[!DNL Experience Manager]部署中的API请求进行身份验证。
 
@@ -149,7 +149,7 @@ ht-degree: 34%
 
    验证结果将显示在同一对话框中。
 
-## 在DAM更新资产工作流中启用智能标记（可选）{#enable-smart-tagging-in-the-update-asset-workflow-optional}
+## 在DAM更新资产工作流中启用智能标记（可选） {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
 1. 在[!DNL Experience Manager]中，转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。
 

@@ -3,16 +3,16 @@ title: Assets 网络注意事项
 description: 讨论设计AEM Assets部署时的网络注意事项。
 contentOwner: AG
 feature: Developer Tools
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 0%
 
 ---
 
-# 资产网络注意事项{#assets-network-considerations}
+# 资产网络注意事项 {#assets-network-considerations}
 
 了解网络与了解Adobe Experience Manager(AEM)资产一样重要。 网络可能会影响上传、下载和用户体验。 绘制网络拓扑图有助于确定网络中必须修复的瓶颈点和次优化区域，以提高网络性能和用户体验。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 * 定义AEM网络接口的同时使用者
 * 定义的AEM实例工作流
 
-## 从客户端设备到公司网络的连接{#connectivity-from-the-client-device-to-the-corporate-network}
+## 从客户端设备到公司网络的连接 {#connectivity-from-the-client-device-to-the-corporate-network}
 
 首先，绘制单个客户端设备与公司网络之间的连接图。 在此阶段，识别共享资源，如WiFi连接，其中多个用户访问同一点或以太网交换机以上传和下载资产。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 右侧显示的计算机在VPN上的公司网络上游有限，速度为1 Mbps。 1Mbps连接的用户体验与1Gbps连接的用户体验有很大不同。 根据用户与之交互的资产的大小，其VPN上行链路可能不足以完成任务。
 
-## 公司网络的拓扑{#topology-of-the-corporate-network}
+## 公司网络的拓扑 {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 从示例图中，您可以得出六台设备共享概念性的10Mbps通道。 根据杠杆资产的规模，这可能不足以满足用户的预期。
 
-## AEM环境的拓扑{#topology-of-the-aem-environment}
+## AEM环境的拓扑 {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
@@ -77,7 +77,7 @@ AEM实例与多个服务共享其1Gbps连接。 从网络拓扑的角度来看�
 
 从客户端设备到AEM实例查看网络时，最小的选择点似乎是10Mbit企业防火墙限制。 您可以在[资产大小调整指南](assets-sizing-guide.md)的大小调整计算器中使用这些值来确定用户体验。
 
-## 已定义AEM实例{#defined-workflows-of-the-aem-instance}的工作流
+## 定义的AEM实例工作流 {#defined-workflows-of-the-aem-instance}
 
 考虑网络性能时，考虑系统中将发生的工作流和发布可能很重要。 此外，您使用的S3或其他网络连接存储和I/O请求会消耗网络带宽。 因此，即使在完全优化的网络中，性能也可能受到磁盘I/O的限制。
 

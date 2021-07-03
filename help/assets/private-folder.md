@@ -3,9 +3,9 @@ title: 专用文件夹共享
 description: 了解如何在Adobe Experience Manager(AEM)Assets中创建专用文件夹，并将其与其他用户共享，以及如何为其分配各种权限。
 contentOwner: AG
 feature: 协作
-role: Business Practitioner
+role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 26%

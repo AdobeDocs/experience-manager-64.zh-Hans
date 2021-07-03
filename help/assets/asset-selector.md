@@ -3,16 +3,16 @@ title: 资产选择器
 description: 了解如何使用资产选择器在Adobe Experience Manager(AEM)Assets中搜索、筛选、浏览和获取资产的元数据。 另外，了解如何自定义资产选择器界面。
 contentOwner: AG
 feature: 资产管理，元数据，搜索
-role: Business Practitioner
+role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 1%
 
 ---
 
-# 资产选择器{#asset-selector}
+# 资产选择器 {#asset-selector}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 您可以将任何网页（不管它是否是CQ容器的一部分）与资产选择器(`https://[AEM_server]:[port]/aem/assetpicker.html`)集成。
 
-## 上下文参数{#contextual-parameters}
+## 上下文参数 {#contextual-parameters}
 
 您可以在URL中传递以下请求参数，以在特定上下文中启动资产选择器：
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 | assettype(S) | 图像、文档、多媒体、存档 | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives`</li> | 使用此选项可根据传递的值筛选资产类型。 |
 | mimetype | 资产的mimetype(`/jcr:content/metadata/dc:format`)（也支持通配符） | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&?mimetype=*png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation`</li>  <li>`http://localhost:4502/aem/assetpicker?viewmode=search&mimetype=*presentation&mimetype=*png`</li></ul> | 使用它可以根据MIME类型筛选资产 |
 
-## 使用资产选择器{#using-the-asset-selector}
+## 使用资产选择器 {#using-the-asset-selector}
 
 1. 要访问资产选择器界面，请转到`https://[AEM_server]:[port]/aem/assetpicker`。
 1. 导航到所需的文件夹，然后选择一个或多个资产。

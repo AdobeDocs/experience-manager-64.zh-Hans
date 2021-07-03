@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 feature: 资产管理
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 0%
@@ -57,11 +57,11 @@ ht-degree: 0%
 
 [获取文件](assets/disk_sizing_tool.xlsx)
 
-### 共享数据存储{#shared-datastores}
+### 共享数据存储 {#shared-datastores}
 
 对于大型数据存储，您可以通过网络连接驱动器上的共享文件数据存储或通过S3数据存储来实施共享数据存储。 在这种情况下，单个实例无需维护二进制文件的副本。 此外，共享数据存储有助于无二进制复制，并有助于减少将资产复制到发布环境或卸载实例的带宽。
 
-#### 用例{#use-cases}
+#### 用例 {#use-cases}
 
 数据存储可以在主创作实例和备用创作实例之间共享，以使用在主实例中所做的更改来最小化更新备用实例所花费的时间。 Adobe建议在主创作实例和卸载创作实例之间共享数据存储，以减少工作流卸载中的开销。 您还可以在创作实例和发布实例之间共享数据存储，以在复制过程中最大限度地减少流量。
 
@@ -69,19 +69,19 @@ ht-degree: 0%
 
 由于存在某些缺陷，因此在任何情况下都不建议共享数据存储。
 
-#### 单点故障{#single-point-of-failure}
+#### 单点故障 {#single-point-of-failure}
 
 共享数据存储，在基础架构中引入单点故障。 假设您的系统有一个作者实例和两个发布实例，每个实例都有其自己的数据存储。 如果其中任何一个崩溃，则另外两个仍可以继续运行。 但是，如果共享数据存储，则单个磁盘故障可能会破坏整个基础架构。 因此，请确保您维护共享数据存储的备份，您可以在其中快速还原数据存储。
 
 与常规的磁盘架构相比，部署用于共享数据存储的AWS S3服务会显着降低故障概率，因此，这是首选。
 
-#### 复杂性增加{#increased-complexity}
+#### 复杂性增加 {#increased-complexity}
 
 共享数据存储还增加了操作的复杂性，如垃圾收集。 通常，只需单击一次即可启动独立数据存储的垃圾收集。 但是，共享数据存储除了在单个节点上运行实际集合之外，还需要对使用数据存储的每个成员执行标记扫描操作。
 
 对于AWS操作，实施单个中心位置（通过S3），而不是构建EBS卷的RAID阵列，可以显着抵消系统的复杂性和操作风险。
 
-#### 性能问题{#performance-concerns}
+#### 性能问题 {#performance-concerns}
 
 共享数据存储要求将二进制文件存储在所有实例之间共享的网络挂载驱动器上。 由于这些二进制文件是通过网络访问的，因此系统性能会受到不利影响。 使用快速网络连接到快速磁盘阵列可以部分减轻影响。 但是，这个建议很昂贵。 对于AWS操作，所有磁盘都是远程的，需要网络连接。 临时卷在实例启动或停止时丢失数据。
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 后台写入线程会引入S3实现中的延迟。 备份过程必须考虑此延迟和任何卸载过程。 开始卸载作业时，S3中可能不存在S3资产。 此外，进行备份时， Lucene索引可能仍不完整。 它适用于写入S3数据存储并从其他实例访问的任何时间敏感文件。
 
-### 节点存储/文档存储{#node-store-document-store}
+### 节点存储/文档存储 {#node-store-document-store}
 
 由于以下资源消耗，因此很难获得NodeStore或DocumentStore的精确大小调整图：
 
@@ -132,7 +132,7 @@ AEM Assets有许多用例，它们使网络性能比我们的许多AEM项目更�
 
 此外，您还可以在配置管理器中编辑`com.day.cq.dam.commons.handler.StandardImageHandler`组件的阈值大小属性，以使用大于零的中间临时文件。
 
-## 资产最大数量{#maximum-number-of-assets}
+## 最大资产数 {#maximum-number-of-assets}
 
 <!-- Currently, Adobe has not tested the system for loading greater than 8 million assets. There are limitations both on the number of documents that can exist in an Oak repository and the number of files that can exist in a datastore.
 
@@ -144,6 +144,6 @@ While the limit for the number of nodes in a repository has not been determined,
 
 由于像素大小等其他因素影响处理，因此很难准确估计支持为AEM设置特定堆的现成TIFF文件(OOTB)的大小。 AEM可以处理大小为255 MB的文件，但无法处理大小为18 MB的文件，因为与前者相比，后者包含异常高的像素数。
 
-## 资产大小{#size-of-assets}
+## 资产大小 {#size-of-assets}
 
 默认情况下，AEM允许您上传文件大小高达2 GB的资产。 要在AEM中上传超大资产，请参阅[上传超大资产的配置](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)。

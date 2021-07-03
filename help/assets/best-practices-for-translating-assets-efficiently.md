@@ -3,16 +3,16 @@ title: 有效翻译资产的最佳实践
 description: 有效管理资产的最佳实践，可同步各种翻译版本并简化翻译工作流程。
 contentOwner: AG
 feature: 翻译
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 1%
 
 ---
 
-# 高效翻译资产的最佳实践{#best-practices-for-translating-assets-efficiently}
+# 高效翻译资产的最佳实践 {#best-practices-for-translating-assets-efficiently}
 
 Adobe Experience Manager(AEM)Assets支持多语言工作流，用于将数字资产的二进制文件、元数据和标记翻译为多个区域设置，并管理已翻译的资产。 有关详细信息，请参阅[多语言资产](multilingual-assets.md)。
 

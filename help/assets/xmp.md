@@ -3,12 +3,12 @@ title: XMP 元数据
 description: 了解AEM Assets用于元数据管理的XMP（可扩展元数据平台）元数据标准。 XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
 contentOwner: AG
 feature: 元数据
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '816'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
@@ -20,7 +20,7 @@ XMP（可扩展元数据平台）是 AEM Assets 用来进行所有元数据管�
 
 Adobe 支持 [XMP 规范](https://www.adobe.com/devnet/xmp.html)。
 
-## 什么是XMP?{#what-is-xmp}
+## 什么是 XMP？ {#what-is-xmp}
 
 AEM Assets本身支持XMP — 由Adobe带头的可扩展元数据平台。XMP是用于处理和存储数字资产中标准化的专有元数据的标准。XMP旨在成为允许多个应用程序有效处理元数据的通用标准。
 
@@ -37,7 +37,7 @@ XMP中的元数据由一组属性组成。这些属性始终与\
 
 Adobe 首先在 Adobe Acrobat 软件产品中引入了 XMP 标准。此后，XMP 标准逐渐被广泛采用。
 
-### XMP生态系统{#xmp-ecosystem}
+### XMP生态系统 {#xmp-ecosystem}
 
 XMP 定义了一个可与任何定义的元数据项集一起使用的[元数据](https://en.wikipedia.org/wiki/Metadata)模型。XMP 还为基本属性定义了一个特定的[架构[，这些基本属性可用于记录资源经过多个处理步骤的历史记录：从拍摄、](https://en.wikipedia.org/wiki/XML_schema)扫描](https://en.wikipedia.org/wiki/Image_scanner)或创作为文本，到照片编辑步骤（如[裁剪](https://en.wikipedia.org/wiki/Cropping_%28image%29)或颜色调整），再到组合到最终图像中。XMP 允许每个软件程序或设备向数字资源添加其自己的信息，该信息可保留在最终的数字文件中。
 

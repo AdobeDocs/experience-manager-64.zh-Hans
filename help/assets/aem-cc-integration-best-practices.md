@@ -3,16 +3,16 @@ title: AEM和Creative Cloud集成最佳实践
 description: 将AEM部署与Adobe Creative Cloud集成以简化资产传输工作流程并实现最高效率的最佳实践
 contentOwner: AG
 feature: 协作，Adobe资产链接，桌面应用程序
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3576'
 ht-degree: 16%
 
 ---
 
-# AEM和Creative Cloud集成最佳实践{#aem-and-creative-cloud-integration-best-practices}
+# AEM和Creative Cloud集成最佳实践 {#aem-and-creative-cloud-integration-best-practices}
 
 <!-- TBD: Reconcile with 6.5 article that's ahead of this article now in terms of content streamlining and structuring.
 -->
@@ -27,7 +27,7 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 >
 >AEM到Creative Cloud文件夹共享已弃用，本指南不再涵盖。 Adobe建议使用较新的功能(如[Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)或[AEM桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html))，为创意用户提供对AEM中管理资产的访问权限。
 
-## 创意人员、营销人员和DAM用户的协作需求{#collaboration-needs-of-creatives-marketers-and-dam-users}
+## 创意人员、营销人员和DAM用户的协作需求 {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
 | 要求 | 用例 | 涉及的曲面 |
 |---|---|---|
@@ -35,7 +35,7 @@ Adobe Creative Cloud为创意团队提供解决方案和服务生态系统，以
 | 从Adobe Stock提供高质量、可随时使用的资产 | 营销人员通过协助资产采购和发现来帮助加快内容创建流程。 创意专业人士可直接在其创意工具中使用已批准的资产。 | AEM Assets;Adobe Stock市场；元数据字段 |
 | 按组织分发和共享资产 | 内部部门/地方分支机构和外部合作伙伴、分销商和代理使用由父组织共享的已批准资产。 该组织希望安全、无缝地共享所创建的资产，以便更广泛地重复使用。 | Brand Portal、资产共享共用 |
 
-## Adobe产品支持协作需求{#adobe-offerings-to-support-the-collaboration-need}
+## Adobe服务以支持协作需求 {#adobe-offerings-to-support-the-collaboration-need}
 
 | 参与角色的价值主张 | Adobe服务 | 涉及的曲面 |
 |---|---|---|
@@ -96,9 +96,9 @@ The terms used in this document may have a different meaning in other contexts. 
 * AEM [链接共享](/help/assets/link-sharing.md)以使用链接共享临时资产。
 * [AEM Assets Web](/help/assets/managing-assets-touch-ui.md) 与外部用户区域进行界面，这些区域由AEM访问控制设置保护，并进行必要的IT/网络配置调整，使这些外部用户可以访问AEM。
 
-## 关键概念和用例{#key-concepts-and-use-cases}
+## 关键概念和用例 {#key-concepts-and-use-cases}
 
-### 常用术语{#glossary-of-common-terms}词汇表
+### 常用术语表 {#glossary-of-common-terms}
 
 * **正在进行的工作或正在进行的创意工作 (WIP)：**&#x200B;资产生命周期中的一个阶段，在此阶段中，资产会经历多次更改，通常尚未准备好与更广的团队共享。
 * **创意就绪资产：**&#x200B;已准备好与更广的团队共享的资产，或者已经由创意团队选择/批准与营销或 LOB 团队共享的资产。
@@ -110,7 +110,7 @@ The terms used in this document may have a different meaning in other contexts. 
 * **创意用户：**&#x200B;使用 Creative Cloud 应用程序和服务创建数字资产的创意专业人士。在某些情况下，创意用户可能是使用 Creative Cloud 但不创建数字资产的创意团队成员（如创意总监或创意团队经理）。
 * **DAM 用户：** DAM 系统的典型用户。根据组织的不同，DAM 用户可以是营销或非营销用户，例如业务线 (LOB) 用户、管理员、销售人员等。
 
-### 使用AEM与Creative Cloud集成{#considerations-when-using-aem-and-creative-cloud-integration}时的注意事项
+### 使用AEM和Creative Cloud集成时的注意事项 {#considerations-when-using-aem-and-creative-cloud-integration}
 
 * 请参阅[桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * 请参阅[Adobe Stock集成](aem-assets-adobe-stock.md)
@@ -125,7 +125,7 @@ The terms used in this document may have a different meaning in other contexts. 
 * **了解资产生命周期：**&#x200B;了解组织中不同团队处理资产的方式
 * **谨慎处理对资产的频繁保存：** Adobe Asset Link 通过 PS、AI、ID 为您提供相关服务。对于其他应用程序，除非您需要在 DAM 中完成所有更改，否则不要在映射/共享文件夹中执行正在进行的任务
 
-### 从AEM Assets访问Adobe Stock资产{#access-to-adobe-stock-assets-from-aem-assets}
+### 从AEM Assets访问Adobe Stock资产 {#access-to-adobe-stock-assets-from-aem-assets}
 
 [AEM和Adobe Stock](/help/assets/aem-assets-adobe-stock.md) 集成使AEM用户能够从Adobe Stock中搜索、预览、许可和保存资产，并将资产保存到AEM中。授权和保存的Adobe Stock资产已选择Stock元数据，该元数据可用于使用额外的过滤器搜索它们。
 
@@ -142,11 +142,11 @@ The terms used in this document may have a different meaning in other contexts. 
 TBD: A condensed version of the below content is better placed in the Adobe DAM article.
 -->
 
-## 关于在DAM {#about-storing-assets-in-a-dam}中存储资产
+## 关于在DAM中存储资产 {#about-storing-assets-in-a-dam}
 
 要在创意团队和营销/业务线(LOB)团队之间设计一个高效的工作流并选择最佳支持功能，请务必了解资产何时以及为何存储在DAM中。
 
-### 为何资产存储在DAM {#why-assets-are-stored-in-dam}中
+### 资产为何存储在DAM中 {#why-assets-are-stored-in-dam}
 
 将资产存储在DAM中，可轻松访问和查找资产。 它可确保组织或生态系统（包括合作伙伴、客户等）中的众多用户都能够利用资产。
 
@@ -156,7 +156,7 @@ TBD: A condensed version of the below content is better placed in the Adobe DAM 
 
 通常，存储所有资产和更新是不可取的。 例如，如果对特定资产的更新质量不佳，并且消耗了过多的资源，则资产可能不会存储在DAM中。
 
-### 资产存储在DAM {#when-assets-are-stored-in-dam}中时
+### 资产存储在DAM中时 {#when-assets-are-stored-in-dam}
 
 创意团队（和组织）通常对在资产生命周期的每个阶段存储资产不感兴趣。 例如，在以下情况下，它们会避免存储资产：
 
@@ -170,7 +170,7 @@ TBD: A condensed version of the below content is better placed in the Adobe DAM 
 * 创意团队预先选择的资产
 * 根据特定合同或协议（例如，从RAW文件转换的JPG文件、PSD原始文件的TIFF/图像），由营销部门使用或请求的特定资产格式
 
-### 资产更新存储在DAM {#when-updates-to-assets-are-stored-in-dam}中时
+### 资产更新存储在DAM中时 {#when-updates-to-assets-are-stored-in-dam}
 
 作为规则，只应将与更广泛的DAM用户集相关的资产更新存储在DAM中。 它可确保用户（营销和类似功能）在DAM资产时间轴中仅看到相关版本。
 
@@ -183,17 +183,17 @@ TBD: A condensed version of the below content is better placed in the Adobe DAM 
 * 在准备好进行营销审核之前，已上传资产的早期版本
 * 在创作团队确定资产已准备就绪之前，在进行中的阶段中经常对资产进行创意更改
 
-### 用户对DAM {#user-access-to-dam}的访问权限
+### 用户对DAM的访问权限 {#user-access-to-dam}
 
 AEM Assets根据用户对AEM Assets部署的访问权限支持两种类型的用户。 通常，企业网络（防火墙）内的用户可以直接访问DAM。 企业网络外的其他用户将无法直接访问。 用户类型从技术角度决定可以使用哪些集成。
 
-#### 直接访问DAM {#creative-users-with-direct-access-to-dam}的创意用户
+#### 直接访问DAM的创意用户 {#creative-users-with-direct-access-to-dam}
 
 通常，已载入内部网络的内部创意团队或代理/创意专业人士有权访问DAM实例，包括AEM登录。
 
 在这种情况下，AEM桌面应用程序有助于您轻松访问最终/已批准的资产，并允许您将创意就绪资产保存到DAM。
 
-#### 无权访问DAM的创意用户{#creative-users-without-access-to-dam}
+#### 无权访问DAM的创意用户 {#creative-users-without-access-to-dam}
 
 无法直接访问DAM实例的外部代理和自由职业者可能需要访问已批准的资产或希望将其新设计添加到DAM。
 
@@ -205,11 +205,11 @@ AEM Assets根据用户对AEM Assets部署的访问权限支持两种类型的用
 
 * 要提供对一些资产的访问，请执行以下操作：除了AEM Assets Brand Portal或资产共享之外，还可以使用与Adobe Creative Cloud共享AEM文件夹。 请注意，此集成存在某些限制，本文将详细介绍这些限制。
 
-### 用例{#use-cases}
+### 用例 {#use-cases}
 
 以下用例描述了DAM与设计人员桌面之间的各种工作流类型。
 
-#### 使用DAM {#creating-new-designs-using-assets-from-dam}中的资产创建新设计
+#### 使用DAM中的资产创建新设计 {#creating-new-designs-using-assets-from-dam}
 
 下图说明了数字资产生命周期。 它描述了创意用户和DAM用户（营销人员、LOB用户）如何利用现有资产，并使用这些资产创建更多资产，并发送这些资产以供审批。
 
@@ -230,7 +230,7 @@ AEM Assets根据用户对AEM Assets部署的访问权限支持两种类型的用
 * 对WIP文件使用专用存储区/系统(如Adobe Creative Cloud Assets同步文件夹):与DAM用户无关的频繁更新最好由专用系统处理，而不是从AEM Assets内部处理。 可以使用Adobe Creative Cloud桌面应用程序将WIP资产同步到本地磁盘，并保存在本地存储上，等等。
 * 对上传到DAM的最终资产和资产使用单独的文件夹/共享：为清楚起见，最终资产应具有自己的映射/共享文件夹（上面的“最终”示例），并且要上传回DAM的资产应具有自己的（“创意就绪”）
 
-#### 更改DAM {#changing-existing-assets-managed-in-dam}中管理的现有资产
+#### 更改DAM中管理的现有资产 {#changing-existing-assets-managed-in-dam}
 
 在某些情况下，DAM中的资产可能需要进行更改。 示例包括：
 
@@ -285,13 +285,13 @@ And it will be updated for DA2.0 best practices after 6.5 repo is available for 
 >
 >根据您的业务要求，您还可以使用自定义Uploader。
 
-#### 直接从桌面{#managing-digital-assets-directly-from-desktop}管理数字资产
+#### 直接从桌面管理数字资产 {#managing-digital-assets-directly-from-desktop}
 
 如果您使用“网络文件共享”管理数字资产，则只需使用由AEM桌面应用程序映射的网络共享即可被视为一种便捷的替代方法。 从网络文件共享进行转换时，请记住，AEM Web UI提供了丰富的数字资产管理功能，这些功能远远超出了网络共享上的可能功能（搜索、收藏集、元数据、协作、预览等），AEM桌面应用程序提供了一个便捷的链接，用于将服务器端DAM存储库与桌面上的工作连接起来。
 
 避免使用AEM桌面应用程序直接在AEM Assets的网络共享中管理资产。 例如，避免使用AEM桌面应用程序移动/复制多个文件。 请改用AEM Assets Web UI将文件夹从Finder/Explorer拖至网络共享，或使用AEM Assets文件夹上传功能。
 
-#### 资产迁移{#asset-migration}
+#### 资产迁移 {#asset-migration}
 
 要规划和执行从现有系统到新系统的资产迁移，或迁移存储在服务器上的大量资产，请参阅[迁移指南](/help/assets/assets-migration-guide.md)。 AEM桌面应用程序和AEM到Creative Cloud的集成不支持此类迁移。 由于要摄取的资产量很大，并且对元数据映射、转换和摄取有其他要求，因此迁移应使用不同的工具和方法来处理。
 

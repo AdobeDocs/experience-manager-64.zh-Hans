@@ -8,9 +8,9 @@ breadcrumb-title: Deploying 指南
 user-guide-description: 详细了解 Adobe Experience Manager 6.4 的安装、部署和架构，包括我们的 Adobe Managed Services 云部署。
 feature: 部署
 role: Architect
-source-git-commit: 19c3ecc20d78f40a2fa49f804baf232db7483afc
+source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '375'
 ht-degree: 17%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 17%
    + [一致性和遍历检查](consistency-check.md)
    + [性能准则](performance-guidelines.md)
    + [性能优化](configuring-performance.md)
-   + [Assets性能指南](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/assets-performance-sizing.html)
+   + [Assets性能指南](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
    + [配置操作方法文章](ht-deploy.md)
    + [删除Geometrixx站点](removing-the-geometrixx-sites.md)
    + [配置Web控制台](configuring-web-console.md)

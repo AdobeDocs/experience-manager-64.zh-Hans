@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
-role: Administrator
+role: Admin
 exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 1%
 
 ---
 
-# 审核社区内容{#moderating-community-content}
+# 审核社区内容 {#moderating-community-content}
 
 ## 概述 {#overview}
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 
    发布环境中的审核可由管理员和社区审核者直接在发布内容的页面上执行。
 
-## 审核操作{#moderation-actions}
+## 审核操作 {#moderation-actions}
 
 可对发布内容(UGC)执行的操作会因用户身份和环境而异。 下表使用以下术语根据用户身份描述各种角色：
 
@@ -132,7 +132,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-### 编辑/删除{#edit-delete}
+### 编辑/删除 {#edit-delete}
 
 帖子发布后，创建者、管理员或社区审查者可以编辑或删除该帖子。
 
@@ -154,7 +154,7 @@ ht-degree: 1%
 
 审核者可能不允许UGC在已发布的网站上保持可见。 对于管理员和社区审核者而言，该帖子仍然可用，并且会添加垃圾信息注释。
 
-### 关闭/重新打开{#close-reopen}
+### 关闭/重新打开 {#close-reopen}
 
 “关闭”操作在整个对话线程（论坛主题或初始评论）中运行，并且包含所有后续帖子或回复。
 
@@ -164,7 +164,7 @@ ht-degree: 1%
 
 管理员或社区审核者可以执行关闭/重新打开操作。
 
-### 标记/取消标记{#flag-unflag}
+### 标记/取消标记 {#flag-unflag}
 
 标记是任何已登录成员（内容的创建者除外）的一种方式，用于指示帖子内容存在问题。 标记后，将显示一个取消标记图标，允许同一成员取消标记内容。
 
@@ -176,7 +176,7 @@ ht-degree: 1%
 
 “允许”操作是已标记、拒绝或未在预审核系统中批准的UGC选项。 “允许”操作将清除任何已标记或已拒绝/垃圾邮件状态，并存档任何已标记的数据。
 
-## 常见审核概念{#common-moderation-concepts}
+## 常见审核概念 {#common-moderation-concepts}
 
 ### 预审核 {#premoderation}
 
@@ -188,7 +188,7 @@ UGC经过预审核后，在审核操作批准之前，不会在已发布的网�
 
 * [论坛](forum.md)、 [构思](ideation-feature.md)、 [QnA](working-with-qna.md)和日历设置 [](calendar.md)  **** 选项卡，选中 **[!UICONTROL 已审核]**
 
-### 垃圾邮件检测{#spam-detection}
+### 垃圾邮件检测 {#spam-detection}
 
 垃圾邮件检测是一项自动审核功能，可通过将提交的用户生成的内容标记为垃圾邮件，过滤掉不可期待的内容。 启用后，它会根据预先配置的垃圾词集合来识别用户生成的内容是否为垃圾邮件。 默认的垃圾邮件词位于
 
@@ -240,7 +240,7 @@ UGC经过预审核后，在审核操作批准之前，不会在已发布的网�
 
 AEM Communities提供*watchword analyzer *作为评估[情绪](#sentiment)过程中的步骤。 关注词对情绪值的贡献是对已发布内容中使用的负面和正面关注词以及禁止的词语进行比较所致。
 
-#### 配置情绪和关注词{#configure-sentiment-and-watchwords}
+#### 配置情绪和关注词 {#configure-sentiment-and-watchwords}
 
 可以自定义正面和负面关键词列表，因为它可以是情绪规则。
 
@@ -276,7 +276,7 @@ AEM Communities提供*watchword analyzer *作为评估[情绪](#sentiment)过程
 
 ![crxde](assets/crxde.png)
 
-### 审核者权限{#moderator-permissions}
+### 审核者权限 {#moderator-permissions}
 
 以下权限在分配给同一资源时统称为&#x200B;**`moderator permissions`**:
 

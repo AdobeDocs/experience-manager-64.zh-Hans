@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
+role: Admin
 exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 9%
 
 ---
 
-# 在OSGi {#upgrade-to-aem-forms-osgi}上升级到AEM 6.4 Forms
+# 在OSGi上升级到AEM 6.4 Forms {#upgrade-to-aem-forms-osgi}
 
 根据您的环境，使用以下升级路径之一。
 

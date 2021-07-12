@@ -6,8 +6,8 @@ user-guide-title: Adobe Experience Manager 6.4发行说明
 breadcrumb-title: 发行说明
 user-guide-description: 在发行说明中了解AEM 6.4的最新新增功能。
 feature: 发行信息
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
-source-git-commit: 29fe63a731d33afa0d6492e0e4ef94064097ae1a
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 39%
@@ -15,7 +15,7 @@ ht-degree: 39%
 ---
 
 
-# Adobe Experience Manager 6.4发行说明{#release-notes}
+# Adobe Experience Manager 6.4发行说明 {#release-notes}
 
 + [AEM 6.4概述](home.md)
 + [常规发行说明](release-notes.md)

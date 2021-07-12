@@ -8,20 +8,20 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
-role: Administrator
+role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 1%
 
 ---
 
-# JEE上的AEM Forms支持的平台{#supported-platforms-for-aem-forms-on-jee}
+# JEE上的AEM Forms支持的平台 {#supported-platforms-for-aem-forms-on-jee}
 
 ## 支持的平台 {#supported-platforms}
 
-### 支持级别{#support-levels}
+### 支持级别 {#support-levels}
 
 AEM Forms on JEE服务器可以使用支持的操作系统、应用程序服务器、数据库、数据库驱动程序、 JDK、LDAP服务器和电子邮件服务器的任意组合进行设置。
 
@@ -61,14 +61,14 @@ Adobe建议进行这些配置，并作为标准软件维护协议的一部分提
  </tbody> 
 </table>
 
-### 不支持的配置{#unsupported-configurations}
+### 不支持的配置 {#unsupported-configurations}
 
 | 支持级别 | 描述 |
 |---|---|
 | E:预计会正常工作 | 配置预计可正常工作，并且没有相反的报告。 |
 | Z:不支持 | 不支持配置。 Adobe不会就配置是否正常进行任何声明，也不支持配置。 |
 
-### Java虚拟机(JVM){#java-virtual-machines-jvm}
+### Java虚拟机(JVM) {#java-virtual-machines-jvm}
 
 Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开发工具包(JDK)分发提供。 Adobe Experience Manager使用以下版本的Java虚拟机：
 
@@ -101,9 +101,9 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 
 
 
-### 数据库和CRX持久性{#databases-and-crx-persistence}
+### 数据库和CRX持久性 {#databases-and-crx-persistence}
 
-#### AEM持久性支持{#aem-persistence-support}
+#### AEM持久性支持 {#aem-persistence-support}
 
 <table> 
  <tbody> 
@@ -151,7 +151,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 * 文档安全模块不使用内容存储库。 这意味着，如果您仅使用文档安全，并且不打算使用HTML工作区、HTML5表单或自适应表单，则不要安装内容存储库。
 * AEM Forms on JEE支持Oracle多租户架构。
 
-#### 数据库支持{#database-support}
+#### 数据库支持 {#database-support}
 
 <table> 
  <tbody> 
@@ -188,7 +188,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
  </tbody> 
 </table>
 
-### 数据库驱动程序{#database-drivers}
+### 数据库驱动程序 {#database-drivers}
 
 <table> 
  <tbody> 
@@ -220,7 +220,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
  </tbody> 
 </table>
 
-### 应用程序服务器{#application-servers}
+### 应用程序服务器 {#application-servers}
 
 <table> 
  <tbody> 
@@ -251,9 +251,9 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 >
 >IBM® WebSphere®群集仅在网络部署版本中受支持。
 
-### 服务器操作系统{#server-operating-systems}
+### 服务器操作系统 {#server-operating-systems}
 
-#### 生产环境{#production-environments}
+#### 生产环境 {#production-environments}
 
 <table> 
  <tbody> 
@@ -309,11 +309,11 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 >
 >JEE上的AEM Forms仅支持64位操作系统。
 
-#### 虚拟化环境{#virtualized-environment}
+#### 虚拟化环境 {#virtualized-environment}
 
 您可以在物理机或虚拟环境的JEE上运行AEM Forms。 但是，如果您在虚拟环境中遇到与AEM Forms有关的任何问题，请尝试在物理计算机上复制该问题。 如果物理计算机上的问题仍然存在，请联系Adobe支持以获取解决方案。 如果问题不在物理计算机上复制，请与虚拟环境供应商联系。
 
-#### 开发环境{#development-environments}
+#### 开发环境 {#development-environments}
 
 <table> 
  <tbody> 
@@ -339,7 +339,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 
 
 
-### 受支持服务器平台{#exceptions-to-supported-server-platforms}的例外情况
+### 受支持服务器平台的例外情况 {#exceptions-to-supported-server-platforms}
 
 在选择平台以在JEE服务器上设置AEM Forms时，请考虑以下例外情况。
 
@@ -366,7 +366,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 * JEE上的AEM Forms不支持群集环境中的MySQL数据库。
 * 在Weblogic上配置包JDBC模块时，RDBMK不适用于DB2、MYSQL、MS SQL和Oracle数据库。
 
-### LDAP服务器（可选）{#ldap-servers-optional}
+### LDAP服务器（可选） {#ldap-servers-optional}
 
 <table> 
  <tbody> 
@@ -405,13 +405,13 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
  </tbody> 
 </table>
 
-### 电子邮件服务器（可选）{#email-servers-optional}
+### 电子邮件服务器（可选） {#email-servers-optional}
 
 * IBM Lotus Domino 9.0
 * Microsoft Exchange 2013
 * Microsoft Office 365
 
-### 内容管理器和相应的连接器{#content-managers-and-corresponding-connectors}
+### 内容管理器和相应的连接器 {#content-managers-and-corresponding-connectors}
 
 <table> 
  <tbody> 
@@ -442,7 +442,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
  </tbody> 
 </table>
 
-### 支持Cordova {#support-for-cordova}
+### 支持科尔多瓦 {#support-for-cordova}
 
 AEM Forms应用程序现在支持Apache Cordova。 以下是支持的特定于平台的Cordova版本：
 
@@ -451,7 +451,7 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是支持的特定于�
 * Cordova Android 6.0.0
 * Cordova Windows 4.4.3
 
-### 对PDF生成器{#software-support-for-pdf-generator}的软件支持
+### 对PDF生成器的软件支持 {#software-support-for-pdf-generator}
 
 <table> 
  <tbody> 
@@ -528,7 +528,7 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是支持的特定于�
 
 
 
-### 辅助功能支持的例外{#exceptions-to-accessibility-support}
+### 无障碍支持例外 {#exceptions-to-accessibility-support}
 
 AEM Forms的以下子系统不符合[508](https://www.section508.gov/):
 
@@ -537,9 +537,9 @@ AEM Forms的以下子系统不符合[508](https://www.section508.gov/):
 * 通信管理创作UI
 * 管理UI（管理控制台UI）
 
-## JEE上AEM Forms的系统要求{#system-requirements-for-aem-forms-on-jee}
+## JEE上AEM Forms的系统要求 {#system-requirements-for-aem-forms-on-jee}
 
-### 最低硬件要求{#minimum-hardware-requirements}
+### 最低硬件要求 {#minimum-hardware-requirements}
 
 <table> 
  <tbody> 
@@ -585,7 +585,7 @@ AEM Forms的以下子系统不符合[508](https://www.section508.gov/):
 * [JEE部署中单服务器AEM Forms的系统要求](https://www.adobe.com/go/learn_aemforms_sysreq_single_64)
 * [JEE部署上群集AEM Forms的系统要求](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_64)
 
-## JEE上AEM Forms的支持客户端{#supported-clients-for-aem-forms-on-jee}
+## JEE上AEM Forms的受支持客户端 {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
 
@@ -708,7 +708,7 @@ AEM Forms的以下子系统不符合[508](https://www.section508.gov/):
 >* Safari仅在Macintosh OS X上受支持。
 
 
-#### 移动设备客户端{#mobile-clients}
+#### 移动设备客户端 {#mobile-clients}
 
 <table> 
  <tbody> 
@@ -747,9 +747,9 @@ AEM Forms的以下子系统不符合[508](https://www.section508.gov/):
 
 
 
-### AEM Forms应用程序{#aem-forms-workspace-app}
+### AEM Forms应用程序 {#aem-forms-workspace-app}
 
-#### 移动设备支持{#mobile-device-support}
+#### 移动设备支持 {#mobile-device-support}
 
 AEM Forms应用程序在以下平台上可用：
 
@@ -759,7 +759,7 @@ AEM Forms应用程序在以下平台上可用：
 | Google Android | Android 4.4(Android Kit Kat)及更高版本&#x200B;*[API级别19及更高版本]*。 AEM Forms应用在7英寸和10英寸的三星Galaxy平板电脑、7英寸的Google Nexus平板电脑和流行智能手机上获得认证。 |
 | Microsoft Windows | 运行Microsoft Windows 10操作系统的Microsoft Surface设备、平板电脑、笔记本电脑和台式机。 |
 
-### AdobeFlash Player{#adobe-flash-player}
+### AdobeFlash Player {#adobe-flash-player}
 
 <table> 
  <tbody> 
@@ -782,13 +782,13 @@ AEM Forms应用程序在以下平台上可用：
 
 单击[此处](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html)查看AdobeDocument Security Extension for Microsoft® Office的系统要求。
 
-### 客户端支持的例外{#exceptions-to-client-support}
+### 客户支持例外 {#exceptions-to-client-support}
 
 除Reader和Acrobat之外，所有指定的客户端软件都不支持Microsoft® Windows® 2012。
 
 此外，JEE上的AEM Forms还支持受支持软件的指定主要和次要版本的更新、修补程序和修补程序包。 但是，除非另外指定，否则不支持更新到下一个主版本或次版本。
 
-## 第三方修补程序支持策略{#third-party-patch-support-policy}
+## 第三方修补程序支持策略 {#third-party-patch-support-policy}
 
 JEE上AEM Forms的第三方软件要求记录在其各自产品文档的“系统要求”部分。 所有文档均可从[https://adobe.com/go/learn_aemforms_documentation_64](https://adobe.com/go/learn_aemforms_documentation_64)访问。
 

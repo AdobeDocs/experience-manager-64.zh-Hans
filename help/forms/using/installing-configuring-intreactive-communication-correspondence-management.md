@@ -6,16 +6,16 @@ seo-description: '安装和配置AEM Forms交互式通信，以创建业务信�
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
-role: Administrator
+role: Admin
 exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 6%
 
 ---
 
-# 安装和配置交互式通信{#install-and-configure-interactive-communications}
+# 安装和配置交互式通信 {#install-and-configure-interactive-communications}
 
 ## 简介 {#introduction}
 
@@ -27,7 +27,7 @@ AEM Form能够集中创建、汇编、管理和交付安全的交互式文档，
 
 AEM Forms是一个功能强大的企业级平台。 交互式通信只是AEM Forms的一项功能。 有关功能的完整列表，请参阅[AEM Forms简介](/help/forms/using/introduction-aem-forms.md)。
 
-## 部署拓扑{#deployment-topology}
+## 部署拓扑 {#deployment-topology}
 
 AEM Forms附加组件包是部署在AEM上的应用程序。 要运行交互式通信功能，您至少需要一个AEM创作和处理实例。 以下拓扑是指示性拓扑，用于运行AEM Forms交互式通信、通信管理、AEM Forms数据捕获以及基于OSGi功能的以Forms为中心的工作流。 有关拓扑的详细信息，请参阅[AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)的架构和部署拓扑。
 
@@ -35,7 +35,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 要运行交互式�
 
 AEM Forms交互式通信在AEM Forms的创作实例上运行管理、创作和代理用户界面。 Publish实例托管最终版本的交互式通信，最终用户可以使用这些通信。
 
-## 系统要求{#system-requirements}
+## 系统要求 {#system-requirements}
 
 在开始安装和配置AEM Forms的交互式通信和通信管理功能之前，请确保：
 
@@ -84,7 +84,7 @@ AEM Forms交互式通信在AEM Forms的创作实例上运行管理、创作和�
  </tbody> 
 </table>
 
-## 安装AEM Forms附加组件包{#install-aem-forms-add-on-package}
+## 安装AEM Forms附加组件包 {#install-aem-forms-add-on-package}
 
 AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含AEM Forms交互式通信、通信管理和其他功能。 请执行以下步骤以安装附加组件包：
 
@@ -102,13 +102,13 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含AEM For
 1. 安装包后，系统会提示您重新启动AEM实例。 **不要立即重新启动服务器。** 在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止出现在 [AEM-Installation-Directory]/crx-quickstart/logs/error.log文件中，并且日志稳定。
 1. 对所有创作实例和发布实例重复步骤1-7。
 
-## 安装后配置{#post-installation-configurations}
+## 安装后配置 {#post-installation-configurations}
 
 AEM Forms有一些必选配置。 强制配置包括配置BouncyCastle库和序列化代理。 可选配置包括配置调度程序和Adobe Target。
 
-### 强制安装后配置{#mandatory-post-installation-configurations}
+### 强制的安装后配置 {#mandatory-post-installation-configurations}
 
-#### 配置RSA和BouncyCastle库{#configure-rsa-and-bouncycastle-libraries}
+#### 配置RSA和BouncyCastle库  {#configure-rsa-and-bouncycastle-libraries}
 
 对所有创作实例和发布实例执行以下步骤以引导委派库：
 
@@ -133,7 +133,7 @@ AEM Forms有一些必选配置。 强制配置包括配置BouncyCastle库和序�
 1. 保存并关闭文件，然后启动AEM实例。
 1. 对所有创作实例和发布实例重复步骤1-4。
 
-#### 配置序列化代理{#configure-the-serialization-agent}
+#### 配置序列化代理 {#configure-the-serialization-agent}
 
 对所有创作实例和发布实例执行以下步骤，将包添加到允许列表:
 
@@ -142,9 +142,9 @@ AEM Forms有一些必选配置。 强制配置包括配置BouncyCastle库和序�
 1. 将&#x200B;**sun.util.calendar**&#x200B;包添加到&#x200B;****&#x200B;允许列表字段中。 单击保存。
 1. 对所有创作实例和发布实例重复步骤1-3。
 
-### 可选的安装后配置{#optional-post-installation-configurations}
+### 可选的安装后配置 {#optional-post-installation-configurations}
 
-#### 安装兼容包{#install-compatibility-package}
+#### 安装兼容包 {#install-compatibility-package}
 
 在AEM 6.4 Forms中创建客户通信的默认方法是推荐的交互式通信方法。 如果您已从以前的版本升级或迁移，并计划继续使用字母（通信管理），请安装[AEMFD兼容包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
 
@@ -177,7 +177,7 @@ Dispatcher正在为AEM缓存和负载平衡工具。 AEM Dispatcher还有助于�
 
 AEM forms与Adobe Marketing Cloud解决方案Adobe Target集成，以跨多个数字渠道提供个性化且引人入胜的客户体验。 要使用Adobe Target个性化交互式通信，请[将Adobe Target与AEM Forms集成](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)。
 
-#### 为表单数据模型{#configure-ssl-communcation-for-form-data-model}配置SSL通信
+#### 为表单数据模型配置SSL通信  {#configure-ssl-communcation-for-form-data-model}
 
 您可以为表单数据模型启用SSL通信。 要为表单数据模型启用SSL通信，请在启动任何AEM Forms实例之前，将证书添加到所有实例的Java信任存储区。 您可以运行以下命令来添加证书：
 

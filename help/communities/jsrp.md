@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
-role: Administrator
+role: Admin
 exl-id: 73c59497-43fe-4e15-afda-e3cf5264696e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
 
 ---
 
-# JSRP - JCR存储资源提供程序{#jsrp-jcr-storage-resource-provider}
+# JSRP - JCR存储资源提供程序 {#jsrp-jcr-storage-resource-provider}
 
 ## 关于JSRP {#about-jsrp}
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 * 选择&#x200B;**[!UICONTROL JCR存储资源提供程序(JSRP)]**
 * 选择&#x200B;**[!UICONTROL Submit]**
 
-### 发布配置{#publishing-the-configuration}
+### 发布配置 {#publishing-the-configuration}
 
 虽然JSRP是默认配置，但要确保在发布环境中设置相同的配置：
 
@@ -59,7 +59,7 @@ ht-degree: 0%
    * 选择&#x200B;**[!UICONTROL 激活]**
 
 
-## 管理用户数据{#managing-user-data}
+## 管理用户数据 {#managing-user-data}
 
 有关&#x200B;*用户*、*用户配置文件*&#x200B;和&#x200B;*用户组*&#x200B;的信息，请访问
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ## 疑难解答 {#troubleshooting}
 
-### UGC在JCR {#ugc-not-visible-in-jcr}中不可见
+### UGC在JCR中不可见 {#ugc-not-visible-in-jcr}
 
 通过检查存储选项的配置，确保JSRP配置为默认提供程序。 默认情况下，存储资源提供程序为JSRP。
 
@@ -79,11 +79,11 @@ ht-degree: 0%
    * 不包含[srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc)节点，这表示存储提供程序是JSRP
    * 如果srpc节点存在并且包含节点[defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration)，则默认配置的属性应将JSRP定义为默认提供程序
 
-### UGC在创作实例{#ugc-not-visible-on-author-instance}上不可见
+### UGC在创作实例上不可见 {#ugc-not-visible-on-author-instance}
 
 这不是错误。 JSRP的一个特点是，在发布环境中输入的社区内容仅在发布环境中可见。
 
-### UGC在发布实例{#ugc-not-visible-on-publish-instance}上不可见
+### UGC在发布实例上不可见 {#ugc-not-visible-on-publish-instance}
 
 如果单个发布实例或已部署发布群集，请按照[UGC Not Visible in JCR](#ugc-not-visible-in-jcr)的说明操作。
 

@@ -10,16 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
+role: Admin
 exl-id: 0a0222e7-ca30-4603-94ad-582005b2de11
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 1%
 
 ---
 
-# 配置电子邮件{#configuring-email}
+# 配置电子邮件 {#configuring-email}
 
 AEM Communities使用电子邮件
 
@@ -32,7 +32,7 @@ AEM Communities使用电子邮件
 >
 >通知和订阅的电子邮件必须仅在[主发布者](deploy-communities.md#primary-publisher)上配置。
 
-## 默认邮件服务配置{#default-mail-service-configuration}
+## 默认邮件服务配置 {#default-mail-service-configuration}
 
 通知和订阅均需要默认邮件服务。
 
@@ -63,7 +63,7 @@ AEM Communities使用电子邮件
 * **[!UICONTROL SMTP使用SSL]**:如果选中，将发送安全电子邮件。确保将端口设置为465或SMTP服务器所需的端口。
 * **[!UICONTROL 调试电子邮件]**:如果选中此项，则启用SMTP服务器交互的日志记录。
 
-## AEM Communities电子邮件配置{#aem-communities-email-configuration}
+## AEM Communities电子邮件配置 {#aem-communities-email-configuration}
 
 配置[默认邮件服务](#default-mail-service-configuration)后，此版本中包含的`AEM Communities Email Reply Configuration` OSGi配置的两个现有实例即可正常运行。
 
@@ -89,7 +89,7 @@ AEM Communities使用电子邮件
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
-### 通知配置{#configuration-for-notifications}
+### 通知配置 {#configuration-for-notifications}
 
 带有“名称”电子邮件的`AEM Communities Email Reply Configuration` OSGi配置的实例用于通知功能。 此功能不包括电子邮件回复。
 
@@ -103,7 +103,7 @@ AEM Communities使用电子邮件
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
-### 订阅配置{#configuration-for-subscriptions}
+### 订阅配置 {#configuration-for-subscriptions}
 
 对于社区订阅，可以启用或禁用成员通过回复电子邮件来发布内容的功能。
 
@@ -133,11 +133,11 @@ AEM Communities使用电子邮件
 
 * **[!UICONTROL 模板根路径]**:电子邮件是使用存储在此根路径中的模板生成的。默认值为`/etc/community/templates/subscriptions-email`。
 
-## 配置轮询导入程序{#configure-polling-importer}
+## 配置轮询导入程序 {#configure-polling-importer}
 
 要将电子邮件引入存储库，必须配置轮询导入器并在存储库中手动配置其属性。
 
-### 添加新的轮询导入程序{#add-new-polling-importer}
+### 添加新轮询导入程序 {#add-new-polling-importer}
 
 * 在主发布者上
 * 使用管理员权限登录
@@ -163,7 +163,7 @@ AEM Communities使用电子邮件
 
 * 选择&#x200B;**[!UICONTROL OK]**
 
-### 调整新轮询导入程序{#adjust-protocol-for-new-polling-importer}的协议
+### 调整新轮询导入程序的协议 {#adjust-protocol-for-new-polling-importer}
 
 保存新的轮询配置后，需要进一步修改订阅电子邮件导入器的属性，以便将协议从`POP3`更改为`emailreply`
 

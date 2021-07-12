@@ -3,9 +3,9 @@ title: 使用 Brand Portal 配置 AEM Assets
 description: '了解如何使用Brand Portal配置AEM Assets，以将资产和收藏集发布到Brand Portal。 '
 contentOwner: VG
 feature: Brand Portal
-role: Administrator
+role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 37%
@@ -228,7 +228,7 @@ IMS 配置包括两个步骤：
 
 1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。将创建云配置。您的AEM Assets创作实例现已与Brand Portal租户集成。
 
-### 测试配置{#test-integration}
+### 测试配置 {#test-integration}
 
 1. 登录AEM Assets创作实例
 
@@ -281,14 +281,14 @@ Brand Portal已成功配置为您的AEM Assets创作实例。 您现在可以：
 * [将收藏集从 AEM Assets 发布到 Brand Portal](../assets/brand-portal-publish-collection.md)
 * [配置资](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) 产源，以便Brand Portal用户能够将资产贡献和发布到AEM Assets。
 
-## 升级配置{#upgrade-integration-64}
+## 升级配置 {#upgrade-integration-64}
 
 按照所列顺序执行以下步骤以升级现有配置：
 1. [验证正在运行的作业](#verify-jobs)
 1. [删除现有配置](#delete-existing-configuration)
 1. [创建配置](#configure-new-integration-64)
 
-### 验证正在运行的作业{#verify-jobs}
+### 验证正在运行的作业 {#verify-jobs}
 
 在进行任何修改之前，请确保您的AEM Assets创作实例上未运行任何发布作业。 为此，您可以验证所有四个复制代理，并确保队列是理想/空的。
 
@@ -310,7 +310,7 @@ Brand Portal已成功配置为您的AEM Assets创作实例。 您现在可以：
 
    ![](assets/test-integration3.png)
 
-### 删除现有配置{#delete-existing-configuration}
+### 删除现有配置 {#delete-existing-configuration}
 
 删除现有配置时，必须运行以下检查列表。
 * 删除所有四个复制代理

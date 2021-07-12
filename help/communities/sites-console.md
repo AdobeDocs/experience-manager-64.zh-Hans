@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
-role: Administrator
+role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3241'
 ht-degree: 3%
 
 ---
 
-# 社区站点控制台{#communities-sites-console}
+# 社区站点控制台 {#communities-sites-console}
 
 社区站点控制台提供对以下项的访问：
 
@@ -50,7 +50,7 @@ ht-degree: 3%
 * 识别[社区管理员](users.md#creating-community-members)
 * [为社交登](social-login.md#adobe-granite-oauth-authentication-handler) 录启用OAuth处理程序
 
-## 访问社区站点控制台{#accessing-communities-sites-console}
+## 访问社区站点控制台 {#accessing-communities-sites-console}
 
 在创作环境中，要访问社区站点控制台，请执行以下操作：
 
@@ -66,7 +66,7 @@ ht-degree: 3%
 
 ![chlimage_1-448](assets/chlimage_1-448.png)
 
-## 网站创建{#site-creation}
+## 网站创建 {#site-creation}
 
 站点创建控制台提供了根据所选[社区站点模板](sites.md)和设置来分步组合站点功能的方法。
 
@@ -76,7 +76,7 @@ ht-degree: 3%
 
 创建过程是一系列步骤，这些步骤以面板的形式呈现，其中包含要配置的一组特征（以子面板的形式呈现）。 在最后步骤中提交站点之前，可以前进到&#x200B;**下一步**&#x200B;步骤或&#x200B;**上一步。**
 
-### 步骤1:网站模板{#step-site-template}
+### 步骤1:网站模板 {#step-site-template}
 
 ![新站点模板](assets/newsitetemplate.png)
 
@@ -108,11 +108,11 @@ ht-degree: 3%
 
 选择&#x200B;**[!UICONTROL Next]**
 
-### 步骤2:设计{#step-design}
+### 步骤2:设计 {#step-design}
 
 “设计”面板包含2个用于选择主题和品牌横幅的子面板：
 
-#### 社区站点主题{#community-site-theme}
+#### 社区站点主题 {#community-site-theme}
 
 ![sitetheme-1](assets/sitetheme-1.png)
 
@@ -122,7 +122,7 @@ ht-degree: 3%
 
 社区网站发布后，可以[编辑属性](#modifying-site-properties)并选择其他主题。
 
-#### 社区网站品牌{#community-site-branding}
+#### 社区网站品牌化 {#community-site-branding}
 
 ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -141,7 +141,7 @@ ht-degree: 3%
 
 选择&#x200B;**[!UICONTROL 下一步]**。
 
-### 步骤3:设置{#step-settings}
+### 步骤3:设置 {#step-settings}
 
 “设置”面板包含多个子面板，这些子面板显示要在移至创建站点的最后一步之前配置的功能。
 
@@ -165,7 +165,7 @@ ht-degree: 3%
 >
 >这是通过为创作环境启用` [AEM Communities Publish Tunnel Service](deploy-communities.md#tunnel-service-on-author)`来完成的。
 
-#### 用户管理{#user-management}
+#### 用户管理 {#user-management}
 
 ![createsitesettings-1](assets/createsitesettings-1.png)
 
@@ -361,7 +361,7 @@ ht-degree: 3%
 
 选择&#x200B;**[!UICONTROL 下一步]**。
 
-### 步骤4:创建社区站点{#step-create-communities-site}
+### 步骤4:创建社区站点 {#step-create-communities-site}
 
 如果需要进行任何调整，请使用&#x200B;**Back**&#x200B;按钮进行调整。
 
@@ -386,7 +386,7 @@ ht-degree: 3%
 
 将鼠标悬停在网站上或触摸网站卡片时，会显示允许[在创作模式下编辑网站的图标](#authoring-site-content)、[打开网站属性以进行修改](#modifying-site-properties)、[发布网站](#publishing-the-site)、[导出网站](#exporting-the-site)和[删除网站](#deleting-the-site)。
 
-## 创作网站内容{#authoring-site-content}
+## 创作网站内容 {#authoring-site-content}
 
 ![chlimage_1-460](assets/chlimage_1-460.png)
 
@@ -398,7 +398,7 @@ ht-degree: 3%
 >
 >如果不熟悉AEM，请查看有关[基本操作](../../help/sites-authoring/basic-handling.md)和[页面创作快速指南的文档](../../help/sites-authoring/qg-page-authoring.md)。
 
-## 修改站点属性{#modifying-site-properties}
+## 修改网站属性 {#modifying-site-properties}
 
 ![chlimage_1-462](assets/chlimage_1-462.png)
 
@@ -408,7 +408,7 @@ ht-degree: 3%
 
 ![chlimage_1-463](assets/chlimage_1-463.png)
 
-### 修改基本{#modify-basic}
+### 修改基本 {#modify-basic}
 
 基本面板允许修改
 
@@ -421,7 +421,7 @@ ht-degree: 3%
 
 而是可以修改社区站点的[STRUCTURE](#modify-structure)。
 
-### 修改结构{#modify-structure}
+### 修改结构 {#modify-structure}
 
 “结构”面板允许修改最初从所选社区站点模板创建的结构。 从面板，可以
 
@@ -458,11 +458,11 @@ ht-degree: 3%
 >
 >必须先包含并列出任何其他函数，如[page函数](functions.md#page-function)。
 
-#### 示例：向社区站点结构添加目录函数{#example-adding-a-catalog-function-to-a-community-site-structure}
+#### 示例：向社区站点结构添加目录函数 {#example-adding-a-catalog-function-to-a-community-site-structure}
 
 ![chlimage_1-464](assets/chlimage_1-464.png)
 
-### 修改设计{#modify-design}
+### 修改设计 {#modify-design}
 
 “设计”面板允许应用新主题：
 
@@ -470,7 +470,7 @@ ht-degree: 3%
 * [社区站点品牌化](#community-site-branding)
    * 滚动到面板底部以更改品牌图像
 
-### 修改设置{#modify-settings}
+### 修改设置 {#modify-settings}
 
 “设置”面板允许访问社区站点创建步骤3的子面板下的大多数设置：
 
@@ -481,17 +481,17 @@ ht-degree: 3%
 * [Analytics](#analytics)
 * [翻译](#translation)
 
-### 修改缩略图{#modify-thumbnail}
+### 修改缩略图 {#modify-thumbnail}
 
 缩略图面板允许上传图像以在社区站点控制台中表示站点。
 
-### 修改启用{#modify-enablement}
+### 修改启用 {#modify-enablement}
 
 启用面板允许访问在社区站点创建期间提供的设置。
 
 请参阅[ENABLEMENT](#enablement)说明。
 
-## 发布网站{#publishing-the-site}
+## 发布网站 {#publishing-the-site}
 
 在新创建或修改社区站点后，可以通过选择`Publish Site`图标来发布（激活）该站点，该图标将鼠标悬停在该站点上方。
 
@@ -501,24 +501,24 @@ ht-degree: 3%
 
 ![chlimage_1-466](assets/chlimage_1-466.png)
 
-### 使用嵌套群组{#publishing-with-nested-groups}发布
+### 使用嵌套群组发布 {#publishing-with-nested-groups}
 
 发布社区站点后，必须单独发布使用[组控制台](groups.md)创建的每个子社区（嵌套组）。
 
-## 导出站点{#exporting-the-site}
+## 导出网站 {#exporting-the-site}
 
 ![chlimage_1-467](assets/chlimage_1-467.png)
 
 选择将鼠标悬停在站点上的导出图标，以创建社区站点的包，该包既存储在[包管理器](../../help/sites-administering/package-manager.md)中，又已下载。\
 请注意，网站包中未包含UGC。
 
-## 删除站点{#deleting-the-site}
+## 删除网站 {#deleting-the-site}
 
 ![deleteicon-1](assets/deleteicon-1.png)
 
 要删除社区站点，请选择删除站点图标，该图标将鼠标悬停在社区站点控制台中的站点上。 此操作会删除与网站关联的所有项目，如UGC、用户组、资产和数据库记录。
 
-## 已创建社区用户组{#created-community-user-groups}
+## 创建的社区用户组 {#created-community-user-groups}
 
 发布新社区站点后，新的成员组（在发布环境中创建用户组）将拥有为各种管理角色和成员角色设置的适当权限。
 
@@ -541,7 +541,7 @@ ht-degree: 3%
 
 创建后，应将应用的[Facebook云服务](social-login.md#createafacebookcloudservice)配置为将用户添加到此组。
 
-## 验证错误{#configure-for-authentication-error}的配置
+## 验证错误配置 {#configure-for-authentication-error}
 
 默认情况下，当用户输入错误的凭据且无法登录时，社区站点将重定向到示例登录页面。 [生产服务器](../../help/sites-administering/production-ready.md)上不存在此登录示例。
 
@@ -566,7 +566,7 @@ ht-degree: 3%
 
 ![chlimage_1-468](assets/chlimage_1-468.png)
 
-### 测试身份验证重定向{#test-authentication-redirection}
+### 测试身份验证重定向 {#test-authentication-redirection}
 
 在使用社区站点的登录页面映射配置的同一AEM发布实例上：
 
@@ -580,7 +580,7 @@ ht-degree: 3%
 
 ![chlimage_1-469](assets/chlimage_1-469.png)
 
-## 从主站点控制台{#accessing-community-sites-from-main-sites-console}访问社区站点
+## 从主站点控制台访问社区站点 {#accessing-community-sites-from-main-sites-console}
 
 从全局导航站点控制台中，社区站点位于`Community Sites`文件夹中。
 

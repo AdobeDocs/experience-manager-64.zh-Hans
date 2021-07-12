@@ -3,9 +3,9 @@ title: 将收藏集发布到 Brand Portal
 description: 了解如何将收藏集发布和取消发布到Brand Portal。
 contentOwner: VG
 feature: Brand Portal
-role: Business Practitioner
+role: User
 exl-id: c2c6759e-f763-405e-9e45-5a90b9d32df2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 21%
@@ -24,7 +24,7 @@ ht-degree: 21%
 >
 >如果包含内容片段的收藏集从AEM创作发布到Brand Portal，则文件夹（内容片段除外）的所有内容都将复制到Brand Portal界面。
 
-## 将集合发布到Brand Portal {#publish-a-collection-to-brand-portal}
+## 将收藏集发布到Brand Portal {#publish-a-collection-to-brand-portal}
 
 1. 在AEM Assets UI中，点按/单击AEM徽标。 然后，从&#x200B;**[!UICONTROL 导航]**&#x200B;页面中，转到&#x200B;**[!UICONTROL Assets >收藏集]**。
 2. 从收藏集控制台中，选择要发布到Brand Portal的收藏集。

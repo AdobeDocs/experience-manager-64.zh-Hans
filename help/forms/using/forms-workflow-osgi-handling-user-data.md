@@ -7,16 +7,16 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-role: Administrator
+role: Admin
 exl-id: 65c13bc8-da82-4c4b-b014-341ce1b59b71
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
 
 ---
 
-# OSGi上以Forms为中心的工作流 |处理用户数据{#forms-centric-workflows-on-osgi-handling-user-data}
+# OSGi上以Forms为中心的工作流 |处理用户数据 {#forms-centric-workflows-on-osgi-handling-user-data}
 
 以Forms为中心的AEM工作流使您能够自动处理以Forms为中心的真实业务流程。 工作流由一系列步骤组成，这些步骤按关联工作流模型中指定的顺序执行。 每个步骤都执行特定操作，如将任务分配给用户或发送电子邮件。 工作流可以与存储库、用户帐户和服务中的资产进行交互。 因此，工作流可以协调涉及任何方面的复杂Experience Manager。
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 有关以Forms为中心的AEM工作流和功能的更多信息，请参阅OSGi](/help/forms/using/aem-forms-workflow.md)上以Forms为中心的工作流。[
 
-## 用户数据和数据存储{#user-data-and-data-stores}
+## 用户数据和数据存储 {#user-data-and-data-stores}
 
 触发工作流时，将自动为工作流实例生成有效负载。 每个工作流实例都会分配一个唯一的实例ID和关联的有效负载ID。 有效负载包含与工作流实例关联的用户和表单数据的存储库位置。 此外，工作流实例的草稿和历史数据也存储在AEM存储库中。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->创建工作流或应用程序时，您可以配置不同的位置来存储负载、草稿和历史数据。 要识别工作流或应用程序存储数据的位置，请查看工作流。
+>在创建工作流或应用程序时，您可以配置不同的位置来存储负载、草稿和历史数据。 要识别工作流或应用程序存储数据的位置，请查看工作流。
 
 <table> 
  <tbody> 
@@ -70,7 +70,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-## 访问和删除用户数据{#access-and-delete-user-data}
+## 访问和删除用户数据 {#access-and-delete-user-data}
 
 您可以从存储库中的工作流实例中访问和删除用户数据。 要实现此目的，您必须知道与用户关联的工作流实例的实例ID。 您可以使用启动工作流实例的用户的用户名或工作流实例的当前代理人的用户名来查找工作流实例的实例ID。
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 >
 >AEM Forms应用程序还会在离线模式下存储数据。 工作流实例的数据可能存储在单个设备上的本地，并在应用程序与服务器同步时被提交到Forms服务器。
 
-### 删除用户数据{#delete-user-data}
+### 删除用户数据 {#delete-user-data}
 
 您必须是AEM管理员，才能通过执行以下步骤从工作流实例中删除用户数据：
 

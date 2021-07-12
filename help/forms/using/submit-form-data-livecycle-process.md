@@ -8,20 +8,20 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 03619a67-d1ea-4b80-b1a6-0c65a9e9212f
-role: Administrator
+role: Admin
 exl-id: 260e405e-f59c-4aea-b83f-53ee103df94e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
 
 ---
 
-# 将AEM Forms配置为在JEE进程{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}上将表单数据提交到AEM Forms
+# 配置AEM Forms以在JEE流程中将表单数据提交到AEM Forms {#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
 自适应表单支持将数据提交到JEE上的AEM Forms进程，以便进一步处理。 它允许您使用提交的表单中提供的数据，在JEE上触发AEM Forms进程。 请执行以下步骤，使您的AEM Forms实例能够在JEE流程中向AEM Forms提交自适应表单：
 
-## 配置AEM Forms服务器{#configure-your-aem-forms-server}
+## 配置AEM Forms服务器 {#configure-your-aem-forms-server}
 
 请执行以下步骤，使您的AEM表单服务器能够向JEE服务器上的AEM Forms提交数据：
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ![AdobeLiveCycle客户端SDK配置](assets/clientsdkconfiguration.jpg)
 
-## 使用进程字段{#map-data-with-process-fields}映射数据
+## 使用流程字段映射数据 {#map-data-with-process-fields}
 
 配置AEM Forms后，将数据XML和附件从提交的表单映射到JEE流程中AEM Forms的字段。 要执行此操作：
 

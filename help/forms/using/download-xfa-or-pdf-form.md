@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
-role: Administrator
+role: Admin
 exl-id: 68d881c6-7507-4018-b40e-205604221d0c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
 
 ---
 
-# 下载XFA或PDF表单模板{#download-an-xfa-or-a-pdf-form-template}
+# 下载XFA或PDF表单模板 {#download-an-xfa-or-a-pdf-form-template}
 
 如名称所示，下载操作允许您将表单从存储库导出到本地系统。 与上传操作结合使用，此操作可帮助您将表单从一个存储库迁移到另一个存储库。
 
@@ -31,7 +31,7 @@ AEM Forms支持单独或在包含一个或多个受支持表单的文件夹中�
 
 除了这些资产之外，如果文件夹中存在`Resource`类型的资产，您还可以下载该资产。 提供此功能后，您可以下载XFA表单引用的资源以及表单。
 
-## 下载一个或多个表单{#download-one-or-more-forms}
+## 下载一个或多个表单 {#download-one-or-more-forms}
 
 1. 登录到位于`https://<server>:<port>/aem/forms.html`的AEM Forms用户界面。
 
@@ -49,9 +49,9 @@ AEM Forms支持单独或在包含一个或多个受支持表单的文件夹中�
 
    如果您正在下载文件夹，则文件夹内受支持的资产会按其现有层次结构进行下载。
 
-   ZIP文件会保存到您系统上的`Downloads`文件夹中。
+   ZIP文件将保存到您系统上的`Downloads`文件夹中。
 
-## 上传操作{#related-considerations-for-the-upload-operation}的相关注意事项
+## 上传操作的相关注意事项 {#related-considerations-for-the-upload-operation}
 
 * 您可以将ZIP文件上传到同一存储库或其他存储库中的任何其他位置
 * 文件夹中资产的层次结构将在上传操作期间保留

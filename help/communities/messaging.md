@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
-role: Administrator
+role: Admin
 exl-id: 0e906f67-b908-4c41-b243-e4f90100ce5d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
 
 ---
 
-# 配置消息{#configuring-messaging}
+# 配置消息传送 {#configuring-messaging}
 
 ## 概述 {#overview}
 
@@ -30,19 +30,19 @@ AEM Communities的消息传送功能允许已登录的网站访客（成员）�
 
 有关开发人员的其他信息，请参阅[Messaging Essentials](essentials-messaging.md)。
 
-## 消息传送操作服务{#messaging-operations-service}
+## 报文传送操作服务 {#messaging-operations-service}
 
 [AEM Communities Messaging Operations Service](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl)标识了处理与消息相关请求的端点、服务应用于存储消息的文件夹，以及如果消息可能包含文件附件，则允许使用哪些文件类型。
 
 对于使用[Communities Sites控制台](sites-console.md)创建的社区站点，服务的实例已存在，收件箱设置为`/mail/community/inbox`。
 
-### 社区消息传送操作服务{#community-messaging-operations-service}
+### Community Messaging Operations Service {#community-messaging-operations-service}
 
 如下所示，对于使用[站点创建向导](sites-console.md)创建的站点，该服务的配置存在。 通过选择配置旁边的铅笔图标，可以查看或编辑配置：
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-### 新配置{#new-configuration}
+### 新配置 {#new-configuration}
 
 要添加新配置，请选择服务名称旁边的加号“**+**”图标：
 

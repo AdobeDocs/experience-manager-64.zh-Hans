@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
-role: Administrator
+role: Admin
 exl-id: 6a610e9d-beec-486d-b1d2-78b5fec44c52
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 1%
 
 ---
 
-# 配置自适应表单缓存{#configure-adaptive-forms-cache}
+# 配置自适应表单缓存 {#configure-adaptive-forms-cache}
 
 缓存是一种缩短数据访问时间、减少延迟和提高输入/输出(I/O)速度的机制。 自适应表单缓存仅存储自适应表单的HTML内容和JSON结构，而不保存任何预填充数据。 这有助于减少在客户端上渲染自适应表单或文档所需的时间。 它专为自适应表单而设计，并且还支持自适应文档。
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 >
 >在开发自定义组件时，在用于开发的服务器上，保持禁用自适应表单缓存。
 
-## 配置缓存{#configure-the-cache}
+## 配置缓存 {#configure-the-cache}
 
 执行以下步骤以配置自适应表单缓存：
 

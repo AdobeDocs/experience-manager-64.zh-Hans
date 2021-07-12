@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
-role: Administrator
+role: Admin
 exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 9%
 
 ---
 
-# 安装兼容包{#compatibility-package}
+# 安装兼容包 {#compatibility-package}
 
 在AEM Forms 6.4上安装兼容包，允许您使用AEM Forms 6.3中的通信管理资产以及已弃用的自适应表单模板和页面
 
@@ -35,7 +35,7 @@ AEMFD兼容包允许您在AEM Forms 6.4上使用AEM Forms 6.3和6.2中的以下�
 
 有关更多信息，请参阅[通过安装兼容包](/help/forms/using/compatibility-package.md#assetsmadecompatible)与AEM Forms 6.4兼容的资产。
 
-## 在AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}中添加对AEM Forms 6.3和6.2资产的支持
+## 在AEM Forms 6.4中添加对AEM Forms 6.3和6.2资产的支持 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 执行升级后，请执行以下操作以安装AEMFD兼容包，并使资产与6.4兼容：
 

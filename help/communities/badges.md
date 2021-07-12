@@ -9,22 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
-role: Administrator
+role: Admin
 exl-id: b6aa9d73-4e20-446a-a1fc-78f8968d6844
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 4%
 
 ---
 
-# 徽章控制台{#badges-console}
+# 徽章控制台 {#badges-console}
 
-## 关于徽章{#about-badges}
+## 关于徽章 {#about-badges}
 
 社区徽章控制台提供了添加自定义徽章的功能，当会员获得（授予）或在社区中承担特定角色（分配）时，可向其显示自定义徽章。
 
-### 徽章可见性{#badge-visibility}
+### 徽章可见性 {#badge-visibility}
 
 目前，社区成员获得或分配的徽章将与其姓名和头像一起显示在以下位置：
 

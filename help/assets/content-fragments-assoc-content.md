@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 exl-id: af4f25d4-a784-47fe-bca4-75c8d373f7d2
 feature: 内容片段
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 22%
@@ -27,7 +27,7 @@ ht-degree: 22%
 
 关联内容提供了连接，以便在将资产（即，可选）添加到内容页面时，可以（可选）与片段一起使用。 通过[提供在页面](/help/sites-authoring/content-fragments.md#using-associated-content)上使用内容片段时要访问的资产范围，从而实现了灵活性，同时还有助于缩短搜索相应资产所需的时间。
 
-## 添加关联内容{#adding-associated-content}
+## 添加关联内容 {#adding-associated-content}
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ ht-degree: 22%
 
    ![cfm-6420-05](assets/cfm-6420-05.png)
 
-## 编辑关联内容{#editing-associated-content}
+## 编辑关联内容 {#editing-associated-content}
 
 关联收藏集后，您可以：
 

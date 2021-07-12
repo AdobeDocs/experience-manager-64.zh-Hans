@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: 内容片段
-role: Business Practitioner
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 4%
@@ -41,7 +41,7 @@ ht-degree: 4%
 * [代码块](/help/assets/content-fragments-markdown.md#code-blocks)
 * [反斜线转义](/help/assets/content-fragments-markdown.md#backslash-escapes)
 
-## 标题符号{#heading-notation}
+## 标题符号 {#heading-notation}
 
 要通过在标题前面放置井号(#)来创建标题，请执行以下操作： 一个哈希标记(#)用于H1，两个哈希标记(##)用于H2等。 您最多可以使用6个哈希标记。 例如：
 
@@ -61,7 +61,7 @@ ht-degree: 4%
 
     `-------------`
 
-## 段落和换行符{#paragraphs-and-line-breaks}
+## 段落和换行符 {#paragraphs-and-line-breaks}
 
 段落只是一行或多行连续的文本，用一行或多行空白行分隔。 空行是只包含空格或制表符的行。 不应使用空格或制表符缩进普通段落。
 
@@ -107,7 +107,7 @@ ht-degree: 4%
 * 后跟一组方括号，其中包含图像的alt属性文本；
 * 后跟一组括号（包含图像的URL或路径），以及一个可选的标题属性，它用双引号或单引号括起来。
 
-引用样式图像的语法如下：
+引用样式图像具有以下语法：
 
     `![Alt text][id]`
 
@@ -115,7 +115,7 @@ ht-degree: 4%
 
     `[id]: url/to/image "Optional title attribute"`
 
-## 块引号{#block-quotes}
+## 块引号 {#block-quotes}
 
 可以在文本前添加>符号来引用文本。 例如：
 
@@ -183,7 +183,7 @@ ht-degree: 4%
 
     ``Use the `printf()` function.``
 
-## 代码块{#code-blocks}
+## 代码块 {#code-blocks}
 
 代码块通常用于说明源代码。 您可以通过使用制表符缩进代码，或者最少使用4个空格来创建代码块。 例如：
 
@@ -191,7 +191,7 @@ ht-degree: 4%
 
         `This is a code block.`
 
-## 反斜线转义{#backslash-escapes}
+## 反斜线转义 {#backslash-escapes}
 
 您可以使用反斜杠转义生成在格式语法中具有特殊含义的文字字符。 例如，如果您想要在单词周围加上文字星号（而不是HTML &lt;em>标记），则可以在星号之前使用反斜杠，如下所示：
 

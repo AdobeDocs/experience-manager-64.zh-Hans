@@ -9,22 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
-role: Administrator
+role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%
 
 ---
 
-# 上下文审核{#in-context-moderation}
+# 上下文审核 {#in-context-moderation}
 
 对于AEM Communities，审核可由管理员和受信任的社区成员直接在发布社区内容的页面上执行。
 
 使用[审核控制台](moderation.md)时，显示的内容信息包括指向已发布页面的链接，以便访问审核上下文关联时可用的其他审核操作。
 
-## 审核操作{#moderation-actions}
+## 审核操作 {#moderation-actions}
 
 有关[审核操作](moderate-ugc.md#moderation-actions)的说明，请访问审核概述。
 
@@ -48,7 +48,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
 
 有关社区用户组的更多信息，请访问[管理用户和用户组](users.md)。
 
-### 创建论坛帖子{#create-the-forum-posts}
+### 创建论坛帖子 {#create-the-forum-posts}
 
 * 以丽贝卡·拉森(rebekah.larsen@trashymail.com)的身份登录
 
@@ -86,7 +86,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
    * 选择回复
    * 选择注销
 
-### 匿名网站访客(#5){#anonymous-site-visitor}
+### 匿名网站访客(#5) {#anonymous-site-visitor}
 
 以下是未登录(5)的网站访客查看的论坛视图。
 
@@ -94,7 +94,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
 
 ![chlimage_1](assets/chlimage_1.png)
 
-### 新成员(#4){#new-member}
+### 新成员(#4) {#new-member}
 
 在创作时，以管理员身份登录，使用[成员控制台](members.md)将Boyd Larsen(boyd.larsen@dodgit.com)添加为community-engage-members组的新成员，然后注销。
 
@@ -133,7 +133,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
 
 ![moderationconsole-publish](assets/moderationconsole-publish.png)
 
-### 社区主持人(#2){#community-moderator}
+### 社区主持人(#2) {#community-moderator}
 
 以社区主持人Aaron McDonald(aaron.mcdonal@mailinator.com)的身份登录，通过选择论坛，然后为蜂鸟帖子阅读更多内容来访问主题。
 
@@ -156,7 +156,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
 
 ![审核者访问](assets/moderatoraccess.png)
 
-### 内容作者(#1){#content-author}
+### 内容作者(#1) {#content-author}
 
 以Rebekah Larsen(rebekah.larsen@mailinator.com)的身份登录，他是社区成员，发起了主题，通过选择论坛访问主题，然后为蜂鸟帖子阅读更多内容。
 

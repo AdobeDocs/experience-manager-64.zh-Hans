@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4经典UI创作用户指南
 breadcrumb-title: 经典UI创作指南
 user-guide-description: 本指南介绍在经典用户界面中在AEM中创作的概念。
 feature: 创作
-role: Business Practitioner
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 80%
@@ -16,7 +16,7 @@ ht-degree: 80%
 ---
 
 
-# AEM 6.4经典UI创作用户指南{#classic-ui}
+# AEM 6.4经典UI创作用户指南 {#classic-ui}
 
 + [经典UI创作指南概述](home.md)
 + 经典UI创作简介{#introduction}

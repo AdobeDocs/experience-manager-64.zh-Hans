@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
-role: Administrator
+role: Admin
 exl-id: 2007336d-d75c-4e01-af81-181751c04cfe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2542'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 >
 >用于创建[社区站点](sites-console.md)、[社区站点模板](sites.md)、[社区组模板](tools-groups.md)和[社区功能](functions.md)的控制台仅供在创作环境中使用。
 
-## 社区功能控制台{#community-functions-console}
+## 社区功能控制台 {#community-functions-console}
 
 在创作环境中，访问社区功能控制台
 
@@ -38,13 +38,13 @@ ht-degree: 2%
 
 ![chlimage_1-379](assets/chlimage_1-379.png)
 
-## 预建函数{#pre-built-functions}
+## 预建函数 {#pre-built-functions}
 
 以下是随AEM Communities一起提供的功能的简要描述。 每个函数都由一个或多个AEM页面组成，这些页面包含将社区组件连接在一起的功能，该功能可轻松地并入到[社区站点模板](sites.md)中。
 
 社区站点模板为社区站点提供了结构，包括登录、用户配置文件、通知、消息、站点菜单、搜索、主题和品牌功能。
 
-### 标题和URL设置{#title-and-url-settings}
+### 标题和URL设置 {#title-and-url-settings}
 
 **** 标题和 **** URL是所有社区功能的通用属性。
 
@@ -161,7 +161,7 @@ ht-degree: 2%
    * 如果未选中，则可以选择社区站点允许的一个或多个命名空间。
    * 默认选中。
 
-### 特色内容函数{#featured-content-function}
+### 特色内容功能 {#featured-content-function}
 
 特色内容函数是一个页面，其中[特色内容组件](featured.md)配置为允许添加和删除评论。
 
@@ -201,7 +201,7 @@ ht-degree: 2%
 * **[!UICONTROL 允许特]**
 色内容如果选中此选项，则创意可被识别为特色 [内容](featured.md)。默认选中。
 
-### 组函数{#groups-function}
+### 组函数 {#groups-function}
 
 >[!CAUTION]
 >
@@ -337,7 +337,7 @@ QnA函数是一个具有[QnA组件](working-with-qna.md)的页面，该组件配
 
 在`AEM Blueprint`面板上，可以选择作为社区函数基础实现的Blueprint。
 
-社区功能是一个由一个或多个页面组成的迷你网站，预先连接成网页以包含到社区网站中，包括登录、用户配置文件、通知、消息、网站菜单、搜索、主题和品牌策略功能。 创建函数后，可以在创作编辑模式下打开函数](#open-community-function)并自定义页面和/或组件设置。[
+社区功能是一个由一个或多个页面组成的迷你网站，预先连线以包含到社区网站中，包括登录、用户配置文件、通知、消息、网站菜单、搜索、主题和品牌策略功能。 创建函数后，可以在创作编辑模式下打开函数](#open-community-function)并自定义页面和/或组件设置。[
 
 由于社区函数是作为[blueprint](../../help/sites-administering/msm-livecopy.md#creatingablueprint)的[Live Copy](../../help/sites-administering/msm.md#live-copies)实施的，因此可以转出对函数所做的更改，该函数会影响从包含该函数的[社区站点模板](sites.md)或[社区组模板](tools-groups.md)创建的所有社区站点页面。 还可以将页面与其父Blueprint取消关联，以便进行页面级别的修改。
 

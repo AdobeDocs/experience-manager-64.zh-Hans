@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
-role: Administrator
+role: Admin
 exl-id: 136c0913-c8b8-451d-bb28-3c3285c172a1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 2%
 
 ---
 
-# ASRP -Adobe存储资源提供程序{#asrp-adobe-storage-resource-provider}
+# ASRP -Adobe存储资源提供程序 {#asrp-adobe-storage-resource-provider}
 
 ## 关于ASRP {#about-asrp}
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 * 从全局导航：**[!UICONTROL 工具>社区>存储配置]**
 
-![chlimage_1-311](assets/chlimage_1-310.png)
+![chlimage_1-310](assets/chlimage_1-310.png)
 
 * 选择&#x200B;**[!UICONTROL Adobe存储资源提供程序(ASRP)]**
 * 以下信息来自配置过程
@@ -84,23 +84,23 @@ ht-degree: 2%
 
 * 最后，确保将链接外部化](#externalize-links)可从数据中心路由配置文件数据的网站URL。[
 
-### 复制加密密钥{#replicate-the-crypto-key}
+### 复制加密密钥 {#replicate-the-crypto-key}
 
 消费者密钥和密钥已加密。 为了正确加密/解密密钥，所有AEM实例上的主Granite Crypto密钥必须相同。
 
 按照[复制加密密钥](deploy-communities.md#replicate-the-crypto-key)中的说明操作。
 
-### 将链接外部化{#externalize-links}
+### 将链接外部化 {#externalize-links}
 
 要获取正确的配置文件和配置文件图像链接，请务必正确地[配置链接外部器](../../help/sites-developing/externalizer.md)。
 
 请确保将域设置为可从数据中心URL（ASRP端点）路由的URL。
 
-### 时间同步{#time-synchronization}
+### 时间同步 {#time-synchronization}
 
 要使用ASRP端点进行身份验证成功，运行托管AEM Communities的计算机必须进行时间同步，例如使用[网络时间协议(NTP)](https://www.ntp.org/)。
 
-### 发布配置{#publishing-the-configuration}
+### 发布配置 {#publishing-the-configuration}
 
 ASRP必须被标识为所有创作实例和发布实例上的公共存储。
 
@@ -117,7 +117,7 @@ ASRP必须被标识为所有创作实例和发布实例上的公共存储。
    * 选择&#x200B;**[!UICONTROL 激活]**
 
 
-## 从AEM 6.0 {#upgrading-from-aem}升级
+## 从AEM 6.0升级 {#upgrading-from-aem}
 
 >[!CAUTION]
 >
@@ -127,7 +127,7 @@ ASRP必须被标识为所有创作实例和发布实例上的公共存储。
 
 由于新的存储结构，从社交社区升级到社区时，必须按照[升级](upgrade.md#adobe-cloud-storage)说明操作。
 
-## 管理用户数据{#managing-user-data}
+## 管理用户数据 {#managing-user-data}
 
 有关&#x200B;*用户*、*用户配置文件*&#x200B;和&#x200B;*用户组*&#x200B;的信息，请访问
 
@@ -136,23 +136,23 @@ ASRP必须被标识为所有创作实例和发布实例上的公共存储。
 
 ## 疑难解答 {#troubleshooting}
 
-### 升级{#ugc-disappears-after-upgrade}后UGC消失
+### 升级后UGC消失 {#ugc-disappears-after-upgrade}
 
 如果从现有AEM 6.0社交社区站点升级，请务必按照[升级说明](upgrade.md#adobe-cloud-storage)进行升级，否则UGC将&#x200B;*显示*&#x200B;丢失。
 
-### 身份验证错误{#authentication-errors}
+### 身份验证错误 {#authentication-errors}
 
 如果收到针对数据中心URL的身份验证错误，且AEM error.log包含有关过时时间戳的消息，则请验证是否正在进行时间同步。
 
 建议使用诸如[网络时间协议(NTP)](https://www.ntp.org/)之类的工具来对所有AEM创作和发布服务器进行时间同步。
 
-### 新内容未在搜索中显示{#new-content-does-not-appear-in-searches}
+### 搜索中不显示新内容 {#new-content-does-not-appear-in-searches}
 
 Adobe云存储基础架构使用&#x200B;*最终一致性*&#x200B;来帮助实现其扩展和性能目标。 因此，新内容不会立即可用，并且可能需要几秒钟才能在搜索结果中显示。
 
 虽然会监控影响最终一致性的间隔，但如果搜索中需要超过几秒钟的时间才能显示新内容，请联系您的客户代表。
 
-### ASRP {#ugc-not-visible-in-asrp}中不显示UGC
+### UGC在ASRP中不可见 {#ugc-not-visible-in-asrp}
 
 通过检查存储选项的配置，确保ASRP已配置为默认提供程序。 默认情况下，存储资源提供程序是JSRP，而不是ASRP。
 

@@ -9,20 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
+role: Admin
 exl-id: e41eb0fa-ae88-44d5-9181-0d925b8b62c6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 0%
 
 ---
 
-# 升级到JEE上的AEM 6.4 Forms {#upgrade-to-aem-forms-jee}
+# 在JEE上升级到AEM 6.4 Forms {#upgrade-to-aem-forms-jee}
 
 根据您的环境，使用以下升级路径之一。
 
-## JEE上的AEM 6.2 Forms或JEE上的AEM 6.3 Forms > JEE上的AEM 6.4 Forms {#aem-forms-jee-62-63-to-64}
+## AEM 6.2 Forms on JEE，或AEM 6.3 Forms on JEE > AEM 6.4 Forms on JEE {#aem-forms-jee-62-63-to-64}
 
 请执行以下步骤，将JEE上的现有AEM 6.2 Forms或JEE上的AEM 6.3 Forms升级到JEE上的AEM 6.4 Forms:
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 无法直接从LiveCycleES2、LiveCycleES3、AEM 6.0 Forms、AEM 6.1 Forms升级到AEM 6.4 Forms。 您可以执行到一个或多个版本的LiveCycle或AEM Forms的中间升级，然后从AEM 6.4 Forms升级。 有关中间版本和相应升级说明的列表，请参阅[选择升级路径](upgrade.md)。
 
-## LiveCycleJEE上的ES4 SP1 > AEM 6.4 Forms {#livecycle-es4sp1-forms-jee}
+## LiveCycleES4 SP1 > JEE上的AEM 6.4 Forms {#livecycle-es4sp1-forms-jee}
 
 在JEE上将LiveCycleES4 SP1升级到AEM 6.4 Forms是一个非就地升级，因为它涉及将资产和数据从以前的版本迁移到受支持的应用程序服务器、操作系统和数据库的新实例（新版本）。
 

@@ -8,20 +8,20 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
-role: Administrator
+role: Admin
 exl-id: 7f1c4bac-accf-43e4-9439-89c5420d50f2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-# 配置同步调度程序{#configuring-the-synchronization-scheduler}
+# 配置同步调度程序 {#configuring-the-synchronization-scheduler}
 
 默认情况下，同步计划程序每3分钟运行一次，以通过LiveCycle工作台11同步存储库中修改和更新的所有资产。 同步过程完成后，包含表单和资源的应用程序将在AEM Forms用户界面中可见。
 
-## 更改同步调度程序{#change-interval-of-the-synchronization-scheduler}的间隔
+## 更改同步调度程序的间隔 {#change-interval-of-the-synchronization-scheduler}
 
 执行以下步骤以更改同步调度程序的间隔：
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
    频率的单位是分钟。 例如，要将调度程序配置为每60分钟运行一次，请指定60。
 
-## 正在同步资产{#synchronizing-assets}
+## 同步资产 {#synchronizing-assets}
 
 您可以使用&#x200B;**从存储库同步资产**&#x200B;选项来手动同步资产。 请执行以下步骤以手动同步资产：
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    **图：** *“同步”对话框*
 
-## 同步错误疑难解答{#troubleshooting-synchronization-error}
+## 同步错误疑难解答 {#troubleshooting-synchronization-error}
 
 您可以在工作流设计器(LiveCycle工作台)中创建新应用程序。
 

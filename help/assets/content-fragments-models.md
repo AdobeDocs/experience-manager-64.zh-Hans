@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 exl-id: 39ed07ec-54a6-4387-8435-e891726c411c
 feature: 内容片段
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 13%
@@ -26,7 +26,7 @@ ht-degree: 13%
 
 内容片段模型定义[内容片段](content-fragments.md)的内容结构。
 
-## 启用内容片段模型{#enable-content-fragment-models}
+## 启用内容片段模型 {#enable-content-fragment-models}
 
 >[!CAUTION]
 >
@@ -37,7 +37,7 @@ ht-degree: 13%
 * 在配置管理器中启用内容片段模型的使用
 * 将配置应用到Assets文件夹
 
-### 在配置管理器{#enable-content-fragment-models-in-configuration-manager}中启用内容片段模型
+### 在配置管理器中启用内容片段模型 {#enable-content-fragment-models-in-configuration-manager}
 
 要[创建新的内容片段模型](#creating-a-content-fragment-model)，您&#x200B;**必须**&#x200B;首先使用配置管理器启用它们：
 
@@ -53,13 +53,13 @@ ht-degree: 13%
 
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以保存定义。
 
-### 将配置应用到Assets文件夹{#apply-the-configuration-to-your-assets-folder}
+### 将配置应用到您的Assets文件夹 {#apply-the-configuration-to-your-assets-folder}
 
 为内容片段模型启用配置&#x200B;**[!UICONTROL 全局]**&#x200B;后，用户创建的任何模型都可以在任何Assets文件夹中使用。
 
 要将其他配置（即不包括全局配置）与类似的 Assets 文件夹一起使用，您必须定义连接。可使用&#x200B;**[!UICONTROL 云服务]**&#x200B;选项卡（位于相应文件夹的&#x200B;**[!UICONTROL 文件夹属性]**&#x200B;中）中的&#x200B;**[!UICONTROL 配置]**&#x200B;完成来此操作。
 
-## 创建内容片段模型{#creating-a-content-fragment-model}
+## 创建内容片段模型 {#creating-a-content-fragment-model}
 
 1. 导航到&#x200B;**[!UICONTROL 工具]**、**[!UICONTROL 资产]**，然后打开&#x200B;**[!UICONTROL 内容片段模型]**。
 1. 导航到适合您的[配置](#enable-content-fragment-models)的文件夹。
@@ -75,7 +75,7 @@ ht-degree: 13%
 
 1. 使用&#x200B;**[!UICONTROL Create]**&#x200B;保存空模型。 将显示一条消息，指示操作成功，您可以选择&#x200B;**[!UICONTROL 打开]**&#x200B;以立即编辑模型，或选择&#x200B;**[!UICONTROL 完成]**&#x200B;以返回到控制台。
 
-## 定义内容片段模型{#defining-your-content-fragment-model}
+## 定义内容片段模型 {#defining-your-content-fragment-model}
 
 内容片段模型有效地定义了生成的内容片段的结构。 使用模型编辑器，您可以添加和配置必填字段：
 
@@ -119,7 +119,7 @@ ht-degree: 13%
 
    ![cfm-6420-14](assets/cfm-6420-14.png)
 
-## 删除内容片段模型{#deleting-a-content-fragment-model}
+## 删除内容片段模型 {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 >
@@ -136,7 +136,7 @@ ht-degree: 13%
    >
    >如果引用了模型，则会发出警告。 采取适当措施。
 
-## 发布内容片段模型{#publishing-a-content-fragment-model}
+## 发布内容片段模型 {#publishing-a-content-fragment-model}
 
 在发布任何相关内容片段时/之前，需要发布内容片段模型。
 

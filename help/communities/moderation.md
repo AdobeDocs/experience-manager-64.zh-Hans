@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
-role: Administrator
+role: Admin
 exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 3%
 
 ---
 
-# 审核控制台{#moderation-console}
+# 审核控制台 {#moderation-console}
 
 在AEM Communities中，管理员和社区审核者（分配为审核者的受信任社区成员）可以在创作和发布环境中批量审核社区内容[审核](moderate-ugc.md)。
 
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 只有以管理员或` [moderator permissions](in-context.md#identifyingtrustedmembers)`的成员身份登录后，才能执行审核任务。
 
-## 发布环境访问{#publish-environment-access}
+## 发布环境访问 {#publish-environment-access}
 
 从已发布的社区站点访问审核控制台时，会通过管理链接，该链接在社区审核者登录时显示。
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 ![moderationconsole-publish](assets/moderationconsole-publish.png)
 
-## 创作环境访问{#author-environment-access}
+## 创作环境访问 {#author-environment-access}
 
 在创作环境中，访问审核控制台
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 * **[工具栏](#toolbar)**
 * **[内容区域](#content-area)**
 
-### 顶部导航栏{#top-navigation-bar}
+### 顶部导航栏 {#top-navigation-bar}
 
 对于所有控制台，顶部导航栏都是常量。 有关更多信息，请参阅[基本操作](../../help/sites-authoring/basic-handling.md)。
 
@@ -107,7 +107,7 @@ ht-degree: 3%
 >
 >内容区域具有&#x200B;*无限滚动*，这意味着它允许您继续滚动直到内容结束。 即使在滚动时，工具栏仍会停留在内容区域上方的固定可见位置。
 
-### 筛选器边栏{#filter-rail}
+### 过滤器边栏 {#filter-rail}
 
 ![chlimage_1-472](assets/chlimage_1-472.png)
 
@@ -171,7 +171,7 @@ ht-degree: 3%
 
 ![内容类型](assets/content-types.png)
 
-#### 其他内容类型{#additional-content-types}
+#### 其他内容类型 {#additional-content-types}
 
 要添加要筛选的其他资源，请执行以下操作：
 
@@ -229,7 +229,7 @@ ht-degree: 3%
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-## 审核操作{#moderation-actions}
+## 审核操作 {#moderation-actions}
 
 [审核](moderate-ugc.md#moderation-actions) 操作可在内容区域中或查看内容详细信息时对一个或多个选择执行。
 
@@ -237,7 +237,7 @@ ht-degree: 3%
 
 要审核内容区域中的单个帖子，请将鼠标悬停在该帖子上（桌面），或按住该帖子（移动设备）上的手指，以便在帖子上显示按钮。 对单个内容详细信息进行操作时，只有删除操作会提示进行确认。
 
-### 审核多个帖子{#moderating-multiple-posts}
+### 审核多个帖子 {#moderating-multiple-posts}
 
 通过单击帖子上的`Select`图标进入批量选择模式：
 
@@ -255,7 +255,7 @@ ht-degree: 3%
 
 ![批量审核](assets/bulkmoderate.png)
 
-### 审核单个帖子{#moderating-a-single-post}
+### 审核单个帖子 {#moderating-a-single-post}
 
 在单选模式下，可以
 
@@ -286,7 +286,7 @@ ht-degree: 3%
 
 #### 允许 {#allow}
 
-![chlimage_1-401](assets/chlimage_1-481.png)
+![chlimage_1-481](assets/chlimage_1-481.png)
 
 处理单个帖子时，当该帖子被标记或拒绝时，将显示允许图标。 如果已标记，则选择允许将清除所有标记。
 

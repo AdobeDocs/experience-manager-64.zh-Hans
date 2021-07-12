@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4 Administering 用户指南
 breadcrumb-title: Administering 指南
 user-guide-description: 了解如何管理 AEM。
 feature: 管理
-role: Administrator
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+role: Admin
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 18%

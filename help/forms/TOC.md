@@ -7,8 +7,8 @@ audience: end-user
 user-guide-title: Adobe Experience Manager 6.4 Forms 指南
 breadcrumb-title: Forms 指南
 user-guide-description: 创建、管理、发布和更新数字表单。
-role: Business Practitioner
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '3730'
 ht-degree: 3%

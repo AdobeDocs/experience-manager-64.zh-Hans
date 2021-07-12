@@ -7,16 +7,16 @@ uuid: ce253b5a-eeb2-47d2-a6c9-e6f59384159a
 contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
-role: Administrator
+role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-source-git-commit: 4598602f75c0cd477e4d898700735c6cd5be175a
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1836'
 ht-degree: 4%
 
 ---
 
-# 安装和配置数据捕获功能{#install-and-configure-data-capture-capabilities}
+# 安装和配置数据捕获功能 {#install-and-configure-data-capture-capabilities}
 
 安装和配置自适应表单、PDF forms和HTML5 Forms。 配置Adobe Analytics和Adobe Target以提供自适应表单，以分析表单的使用情况并根据用户的配置文件确定目标用户。
 
@@ -32,13 +32,13 @@ AEM Forms提供了一组从最终用户获取数据的表单：自适应表单�
 
 AEM Forms是一个功能强大的企业级平台，而数据捕获(自适应表单、PDF forms和HTML5 Forms)只是AEM Forms的一项功能。 有关功能的完整列表，请参阅[AEM Forms简介](/help/forms/using/introduction-aem-forms.md)。
 
-## 部署拓扑{#deployment-topology}
+## 部署拓扑 {#deployment-topology}
 
 AEM Forms附加组件包是部署在AEM上的应用程序。 要运行AEM Forms数据捕获功能，您至少需要一个AEM创作实例和AEM发布实例。 建议使用以下拓扑来运行AEM Forms AEM Forms数据捕获功能。 有关拓扑的详细信息，请参阅[AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)的架构和部署拓扑。
 
 ![推荐拓扑](assets/recommended-topology.png)
 
-## 系统要求{#system-requirements}
+## 系统要求 {#system-requirements}
 
 在开始安装和配置数据捕获功能AEM Forms之前，请确保：
 
@@ -87,7 +87,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 要运行AEM Forms�
  </tbody> 
 </table>
 
-## 安装AEM Forms附加组件包{#install-aem-forms-add-on-package}
+## 安装AEM Forms附加组件包 {#install-aem-forms-add-on-package}
 
 AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含AEM Forms数据捕获和其他功能。 请执行以下步骤以安装附加组件包：
 
@@ -105,13 +105,13 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含AEM For
 1. 安装包后，系统会提示您重新启动AEM实例。 **不要立即重新启动服务器。** 在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止出现在 [AEM-Installation-Directory]/crx-quickstart/logs/error.log文件中，并且日志稳定。
 1. 对所有创作实例和发布实例重复步骤1-7。
 
-## 安装后配置{#post-installation-configurations}
+## 安装后配置 {#post-installation-configurations}
 
 AEM Forms有一些必选配置。 强制配置包括配置BouncyCastle库和序列化代理。 可选配置包括配置调度程序、Forms门户、Adobe Sign、Adobe Analytics和Adobe Target。
 
-### 强制安装后配置{#mandatory-post-installation-configurations}
+### 强制的安装后配置 {#mandatory-post-installation-configurations}
 
-#### 配置RSA和BouncyCastle库{#configure-rsa-and-bouncycastle-libraries}
+#### 配置RSA和BouncyCastle库  {#configure-rsa-and-bouncycastle-libraries}
 
 对所有创作实例和发布实例执行以下步骤以引导委派库：
 
@@ -136,7 +136,7 @@ AEM Forms有一些必选配置。 强制配置包括配置BouncyCastle库和序�
 1. 保存并关闭文件，然后启动AEM实例。
 1. 对所有创作实例和发布实例重复步骤1-4。
 
-#### 配置序列化代理{#configure-the-serialization-agent}
+#### 配置序列化代理 {#configure-the-serialization-agent}
 
 对所有创作实例和发布实例执行以下步骤，将包添加到允许列表:
 
@@ -145,7 +145,7 @@ AEM Forms有一些必选配置。 强制配置包括配置BouncyCastle库和序�
 1. 将&#x200B;**[!UICONTROL sun.util.calendar]**&#x200B;包添加到&#x200B;****&#x200B;允许列表字段中。 单击&#x200B;**[!UICONTROL 保存]**。
 1. 对所有创作实例和发布实例重复步骤1-3。
 
-### 可选的安装后配置{#optional-post-installation-configurations}
+### 可选的安装后配置 {#optional-post-installation-configurations}
 
 #### 配置Dispatcher {#configure-dispatcher}
 
@@ -163,7 +163,7 @@ Dispatcher正在为AEM缓存和负载平衡工具。 AEM Dispatcher还有助于�
 
    以管理员身份登录到Apache Felix配置管理器。 配置管理器的默认URL为`https://[server]:[port_number]/system/console/configMgr`。 在&#x200B;**[!UICONTROL Configurations]**&#x200B;菜单中，选择&#x200B;**[!UICONTROL Apache Sling反向链接过滤器]**&#x200B;选项。 在允许主机字段中，输入Dispatcher的主机名以允许它作为反向链接，然后单击&#x200B;**[!UICONTROL Save]**。 条目的格式为`https://[server]:[port]`。
 
-#### 配置缓存{#configure-cache}
+#### 配置缓存 {#configure-cache}
 
 缓存是一种缩短数据访问时间、减少延迟并提高输入/输出(I/O)速度的机制。 自适应表单缓存仅存储自适应表单的HTML内容和JSON结构，而不保存任何预填充数据。 这有助于减少渲染自适应表单所需的时间。
 
@@ -179,7 +179,7 @@ Dispatcher正在为AEM缓存和负载平衡工具。 AEM Dispatcher还有助于�
    >
    >要禁用缓存，请将“自适应Forms数”字段中的值设置为&#x200B;**0**。 当禁用或更改缓存配置时，将重置缓存，并从缓存中删除所有表单和文档。
 
-#### 为表单数据模型{#configure-ssl-communcation-for-form-data-model}配置SSL通信
+#### 为表单数据模型配置SSL通信 {#configure-ssl-communcation-for-form-data-model}
 
 您可以为表单数据模型启用SSL通信。 要为表单数据模型启用SSL通信，请在启动任何AEM Forms实例之前，将证书添加到所有实例的Java信任存储区。 您可以运行以下命令来添加证书：&quot;
 

@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
 feature: 内容片段
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 15%
@@ -48,7 +48,7 @@ ht-degree: 15%
 >
 >发布和/或引用片段后，当作者打开片段进行再次编辑时，AEM将显示警告。 这是为了警告，对片段所做的更改也会影响引用的页面。
 
-## 创作内容{#authoring-your-content}
+## 创作内容 {#authoring-your-content}
 
 打开内容片段进行编辑时，默认情况下将打开&#x200B;**变量**&#x200B;选项卡。 在此，您可以为主控或您拥有的任何变体创作内容。 您可以：
 
@@ -73,7 +73,7 @@ ht-degree: 15%
 
    ![cfm-6420-16](assets/cfm-6420-16.png)
 
-### 全屏编辑器{#full-screen-editor}
+### 全屏编辑器 {#full-screen-editor}
 
 编辑多行文本字段时，可以打开全屏编辑器：
 
@@ -164,17 +164,17 @@ ht-degree: 15%
 >
 >如果在&#x200B;**富文本**&#x200B;和&#x200B;**标记**&#x200B;之间切换，您可能会在“引述块”和“代码块”中遇到意料之外的体验效果，因为这两种格式在处理方式上可能有所不同。
 
-### 查看关键统计信息{#viewing-key-statistics}
+### 查看关键统计信息 {#viewing-key-statistics}
 
 当打开全屏编辑器时，**文本统计信息**&#x200B;操作将显示有关文本的一系列信息。例如：
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
-### 上传内容{#uploading-content}
+### 上传内容 {#uploading-content}
 
 为简化内容片段创作过程，您可以上传在外部编辑器中准备的文本，并将其直接添加到片段中。
 
-### 摘要文本{#summarizing-text}
+### 摘要文本 {#summarizing-text}
 
 摘要文本旨在帮助用户将其文本的长度减少为预定义的单词数，同时保留关键点和总体含义。
 
@@ -223,7 +223,7 @@ ht-degree: 15%
 
 1. 选择&#x200B;**[!UICONTROL Amsuraize]**&#x200B;以确认更改。
 
-### 对内容片段{#annotating-a-content-fragment}添加注释
+### 对内容片段添加注释 {#annotating-a-content-fragment}
 
 要对片段添加注释：
 
@@ -237,7 +237,7 @@ ht-degree: 15%
 
 1. 关闭全屏编辑器并&#x200B;**[!UICONTROL 保存]**&#x200B;片段。
 
-### 查看、编辑和删除批注{#viewing-editing-deleting-annotations}
+### 查看、编辑和删除批注 {#viewing-editing-deleting-annotations}
 
 注释:
 
@@ -255,7 +255,7 @@ ht-degree: 15%
 
 * 可以在[时间轴](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)中查看和删除选定片段。
 
-### 将资产插入片段{#inserting-assets-into-your-fragment}
+### 将资产插入片段 {#inserting-assets-into-your-fragment}
 
 要简化内容片段创作过程，您可以直接将[Assets](managing-assets-touch-ui.md)（图像）添加到片段中。
 
@@ -293,9 +293,9 @@ ht-degree: 15%
    >* **标记**：资产将不可见，但在您恢复为&#x200B;**富文本**&#x200B;时仍将存在。
 
 
-## 管理变量{#managing-variations}
+## 管理变量 {#managing-variations}
 
-### 创建变量{#creating-a-variation}
+### 创建变体 {#creating-a-variation}
 
 变体允许您获取&#x200B;**主控**&#x200B;内容，并根据不同用途（如果需要）对其进行更改。
 
@@ -311,7 +311,7 @@ ht-degree: 15%
    >
    >创建新变体时，复制的变量始终为&#x200B;**主控**，而不是当前打开的变体。
 
-### 编辑变量{#editing-a-variation}
+### 编辑变量 {#editing-a-variation}
 
 在执行以下任一操作后，您可以对变体内容进行更改：
 
@@ -320,7 +320,7 @@ ht-degree: 15%
 
 ![cfm-6420-26](assets/cfm-6420-26.png)
 
-### 重命名变量{#renaming-a-variation}
+### 重命名变量 {#renaming-a-variation}
 
 要重命名现有变量，请执行以下操作：
 
@@ -336,7 +336,7 @@ ht-degree: 15%
 >
 >这仅影响变量&#x200B;**Title**。
 
-### 删除变量{#deleting-a-variation}
+### 删除变量 {#deleting-a-variation}
 
 要删除现有变量，请执行以下操作：
 
@@ -350,7 +350,7 @@ ht-degree: 15%
 >
 >无法删除&#x200B;**主控**。
 
-### 与主控{#synchronizing-with-master}同步
+### 与主控同步 {#synchronizing-with-master}
 
 **** 母版是内容片段的一个组成部分，从定义上讲，它包含内容的主控副本，而变体则包含该内容的各个更新和定制版本。更新主控时，这些更改也可能与变体相关，因此需要传播到这些变体中。
 

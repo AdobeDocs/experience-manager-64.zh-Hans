@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
-role: Administrator
+role: Admin
 exl-id: ac399a66-0f3b-4f95-969e-a4109c260d1d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 >
 >用于创建[社区站点](sites-console.md)、[社区站点模板](sites.md)、[社区组模板](tools-groups.md)和[社区功能](functions.md)的控制台仅供在创作环境中使用。
 
-## 组模板控制台{#group-templates-console}
+## 组模板控制台 {#group-templates-console}
 
 在创作环境中，访问组模板控制台
 
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 ![组板](assets/groupstemplate.png)
 
-## 创建组模板{#create-goup-template}
+## 创建组模板 {#create-goup-template}
 
 要开始创建新组模板，请选择&#x200B;**[!UICONTROL 创建]**
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 将所有所需函数放入模板生成器区域并进行配置后，选择右上角的&#x200B;**[!UICONTROL Save]**。
 
-## 编辑组模板{#edit-group-template}
+## 编辑组模板 {#edit-group-template}
 
 在主[“组模板”控制台](#group-templates-console)中查看社区组时，可以选择现有的组模板进行编辑。
 

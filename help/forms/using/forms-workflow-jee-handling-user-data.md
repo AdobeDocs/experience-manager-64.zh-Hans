@@ -7,16 +7,16 @@ uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
-role: Administrator
+role: Admin
 exl-id: 8cbace00-c354-4f37-a781-04cadd441419
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 0%
 
 ---
 
-# Forms JEE工作流 |处理用户数据{#forms-jee-workflows-handling-user-data}
+# Forms JEE工作流 |处理用户数据 {#forms-jee-workflows-handling-user-data}
 
 AEM Forms JEE工作流提供了用于设计、创建和管理业务流程的工具。 工作流进程由一系列按指定顺序执行的步骤组成。 每个步骤都执行特定操作，如将任务分配给用户或发送电子邮件。 流程可以与资产、用户帐户和服务进行交互，并且可以使用以下任一方法触发：
 
@@ -28,11 +28,11 @@ AEM Forms JEE工作流提供了用于设计、创建和管理业务流程的工�
 
 有关创建AEM Forms JEE工作流流程的更多信息，请参阅[Workbench帮助](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf)。
 
-## 用户数据和数据存储{#user-data-and-data-stores}
+## 用户数据和数据存储 {#user-data-and-data-stores}
 
 当触发某个进程并且该进程继续运行时，该进程会捕获有关该进程参与者的数据、参与者在与该进程关联的表单中输入的数据以及添加到表单的附件。 数据存储在AEM Forms JEE服务器数据库中，如果配置，某些数据（如附件）将存储在全局文档存储(GDS)目录中。 GDS目录可以在共享文件系统或数据库上配置。
 
-## 访问和删除用户数据{#access-and-delete-user-data}
+## 访问和删除用户数据 {#access-and-delete-user-data}
 
 在触发进程时，将生成唯一的进程实例ID和长时间调用ID，并将其与进程实例关联。 您可以基于长时间调用ID访问和删除进程实例的数据。 您可以使用提交其任务的进程启动器或进程参与者的用户名推断进程实例的长期调用ID。
 
@@ -42,7 +42,7 @@ AEM Forms JEE工作流提供了用于设计、创建和管理业务流程的工�
 * **从发布AEM实例启动的进程**:从AEM发布实例触发的所有进程实例不会捕获有关启动器的信息。但是，用户数据可以以与进程关联的形式捕获，该形式存储在工作流变量中。
 * **通过电子邮件启动的流程**:发件人的电子邮件ID将作为属性捕获到数据库表的不透明blob列 `tb_job_instance` 中，该列不能直接查询。
 
-### 在已知工作流启动器或参与者{#initiator-participant}时标识进程实例ID
+### 在已知工作流启动器或参与者时标识进程实例ID {#initiator-participant}
 
 执行以下步骤以标识工作流启动器或参与者的流程实例ID:
 

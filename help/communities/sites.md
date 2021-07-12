@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
+role: Admin
 exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 3%
@@ -26,7 +26,7 @@ ht-degree: 3%
 >
 >用于创建[社区站点](sites-console.md)、[社区站点模板](sites.md)、[社区组模板](tools-groups.md)和[社区功能](functions.md)的控制台仅供在创作环境中使用。
 
-## 站点模板控制台{#site-templates-console}
+## 站点模板控制台 {#site-templates-console}
 
 在创作环境中，访问社区站点控制台
 
@@ -42,7 +42,7 @@ ht-degree: 3%
 
 这将显示包含3个子面板的站点编辑器面板：
 
-### 基本信息{#basic-info}
+### 基本信息 {#basic-info}
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -83,7 +83,7 @@ ht-degree: 3%
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-### 组函数{#group-templates-for-groups-function}的组模板
+### 组功能的组模板 {#group-templates-for-groups-function}
 
 在站点模板中包含组功能时，配置要求指定在发布环境中创建新组时允许的组模板选项。
 
@@ -97,7 +97,7 @@ ht-degree: 3%
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
-## 编辑站点模板{#edit-site-template}
+## 编辑站点模板 {#edit-site-template}
 
 在主[站点模板控制台](#site-templates-console)中查看站点模板时，可以选择现有的站点模板进行编辑。
 

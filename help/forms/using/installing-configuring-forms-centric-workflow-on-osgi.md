@@ -6,16 +6,16 @@ seo-description: '安装和配置AEM Forms交互式通信，以创建业务信�
 uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
-role: Administrator
+role: Admin
 exl-id: 308b106f-4c5a-49d6-a7f6-c1e8a0bf62e9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 5%
 
 ---
 
-# 在OSGi {#installing-and-configuring-forms-centric-workflow-on-osgi}上安装和配置以Forms为中心的工作流
+# 在OSGi上安装和配置以Forms为中心的工作流 {#installing-and-configuring-forms-centric-workflow-on-osgi}
 
 ## 简介 {#introduction}
 
@@ -33,7 +33,7 @@ AEM Forms是一个功能强大的企业级平台。 在OSGi上以Forms为中心�
 >
 >比较后，如果选择在JEE堆栈上安装进程管理功能，请参阅[在JEE上安装或升级AEM Forms](/help/forms/home.md) ，以了解有关安装和配置JEE堆栈和进程管理功能的详细信息。
 
-## 部署拓扑{#deployment-topology}
+## 部署拓扑 {#deployment-topology}
 
 AEM Forms附加组件包是部署在AEM上的应用程序。 您至少需要一个AEM作者或处理实例（生产作者）才能基于OSGi功能运行以Forms为中心的工作流。 处理实例是[经过硬化的AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md)实例。 请勿对生产作者执行任何实际创作操作，如创建工作流或自适应表单。
 
@@ -43,7 +43,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 您至少需要一�
 
 AEM Forms Forms中心的工作流在OSGi的创作实例上运行AEM收件箱和AEM工作流模型创建UI。
 
-## 系统要求{#system-requirements}
+## 系统要求 {#system-requirements}
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ AEM Forms Forms中心的工作流在OSGi的创作实例上运行AEM收件箱和A
  </tbody>
 </table>
 
-## 安装AEM Forms附加组件包{#install-aem-forms-add-on-package}
+## 安装AEM Forms附加组件包 {#install-aem-forms-add-on-package}
 
 AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含有关OSGi和其他功能的以Forms为中心的工作流。 请执行以下步骤以安装附加组件包：
 
@@ -114,13 +114,13 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含有关O
 1. 安装包后，系统会提示您重新启动AEM实例。 **不要立即重新启动服务器。** 在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止出现在 [AEM-Installation-Directory]/crx-quickstart/logs/error.log文件中，并且日志稳定。
 1. 对所有创作实例和发布实例重复步骤1-7。
 
-## 安装后配置{#post-installation-configurations}
+## 安装后配置 {#post-installation-configurations}
 
 AEM Forms有一些必选配置。 强制配置包括配置BouncyCastle库和序列化代理。 可选配置包括配置调度程序和Adobe Target。
 
-### 强制安装后配置{#mandatory-post-installation-configurations}
+### 强制的安装后配置 {#mandatory-post-installation-configurations}
 
-#### 配置RSA和BouncyCastle库{#configure-rsa-and-bouncycastle-libraries}
+#### 配置RSA和BouncyCastle库  {#configure-rsa-and-bouncycastle-libraries}
 
 对所有创作实例和发布实例执行以下步骤以引导委派库：
 
@@ -145,7 +145,7 @@ AEM Forms有一些必选配置。 强制配置包括配置BouncyCastle库和序�
 1. 保存并关闭文件，然后启动AEM实例。
 1. 对所有创作实例和发布实例重复步骤1-4。
 
-#### 配置序列化代理{#configure-the-serialization-agent}
+#### 配置序列化代理 {#configure-the-serialization-agent}
 
 对所有创作实例和发布实例执行以下步骤，将包添加到允许列表:
 
@@ -154,7 +154,7 @@ AEM Forms有一些必选配置。 强制配置包括配置BouncyCastle库和序�
 1. 将&#x200B;**sun.util.calendar**&#x200B;包添加到&#x200B;****&#x200B;允许列表字段中。 单击保存。
 1. 对所有创作实例和发布实例重复步骤1-3。
 
-### 可选的安装后配置{#optional-post-installation-configurations}
+### 可选的安装后配置 {#optional-post-installation-configurations}
 
 #### 配置Dispatcher {#configure-dispatcher}
 
@@ -172,7 +172,7 @@ Dispatcher正在为AEM缓存和负载平衡工具。 AEM Dispatcher还有助于�
 
    以管理员身份登录到Apache Felix配置管理器。 配置管理器的默认URL为`https://[server]:[port_number]/system/console/configMgr`。 在&#x200B;**Configurations**&#x200B;菜单中，选择&#x200B;**Apache Sling反向链接过滤器**&#x200B;选项。 在允许主机字段中，输入Dispatcher的主机名以允许它作为反向链接，然后单击&#x200B;**Save**。 条目的格式为`https://[server]:[port]`。
 
-#### 配置缓存{#configure-cache}
+#### 配置缓存 {#configure-cache}
 
 缓存是一种缩短数据访问时间、减少延迟并提高输入/输出(I/O)速度的机制。 自适应表单缓存仅存储自适应表单的HTML内容和JSON结构，而不保存任何预填充数据。 这有助于减少渲染自适应表单所需的时间。
 

@@ -8,22 +8,22 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
-role: Administrator
+role: Admin
 exl-id: 6c989701-10c7-466e-b3e5-008a6d377574
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-# 创建新文件夹以对表单{#create-new-folders-to-categorize-forms}进行分类
+# 创建新文件夹以对表单进行分类 {#create-new-folders-to-categorize-forms}
 
 您可以使用文件夹更好地组织资产。 由于AEM Forms支持多种类型的资产（表单模板、PDF、文档、资源和自适应表单，以及各种元数据），因此您可以使用文件夹根据所需的条件对表单进行分类。
 
 AEM Forms允许您更改文件夹的标题。 标题与存储库中存储文件夹的节点名称不同。 标题而是作为文件夹的元数据进行维护。 如果更改文件夹的标题，则文件夹内存在的任何资产的路径都不会受到影响。
 
-## 创建文件夹{#create-a-folder}
+## 创建文件夹 {#create-a-folder}
 
 您可以通过以下方式之一在AEM Forms中创建文件夹：
 
@@ -50,7 +50,7 @@ AEM Forms允许您更改文件夹的标题。 标题与存储库中存储文件�
 
    如果存在具有指定名称的文件夹，则提交会失败，并出现错误。 您可以通过将鼠标悬停在名称字段旁边显示的错误![aem6forms_error_alert](assets/aem6forms_error_alert.png)图标上来查看错误消息。
 
-### 编辑文件夹标题{#edit-the-folder-title-br}
+### 编辑文件夹标题 {#edit-the-folder-title-br}
 
 1. 选择要编辑其标题的文件夹。
 1. 单击工具栏中的编辑![aem6forms_edit](assets/aem6forms_edit.png)图标。

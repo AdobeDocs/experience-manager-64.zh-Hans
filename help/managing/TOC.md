@@ -6,8 +6,8 @@ user-guide-title: AEM 6.4 Managing 用户指南
 breadcrumb-title: Managing 指南
 user-guide-description: 了解如何管理 AEM 项目。
 feature: 部署
-role: Business Practitioner
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 61%

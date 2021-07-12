@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
 feature: 内容片段
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 7%
@@ -67,7 +67,7 @@ Adobe Experience Manager(AEM)内容片段允许您设计、创建、策划和[�
 
 然后，可以组合这些内容片段以通过各种渠道提供体验。
 
-## 内容片段和内容服务{#content-fragments-and-content-services}
+## 内容片段和内容服务 {#content-fragments-and-content-services}
 
 AEM Content Services旨在对AEM中/从中提供的内容的描述和交付进行归纳，使其不仅仅限于网页。
 
@@ -106,7 +106,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 >
 >AEM还支持片段内容的翻译。 有关更多信息，请参阅[为内容片段创建翻译项目](creating-translation-projects-for-content-fragments.md) 。
 
-## 内容片段{#types-of-content-fragment}的类型
+## 内容片段的类型 {#types-of-content-fragment}
 
 内容片段可以是：
 
@@ -142,7 +142,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 
 * 独立于投放机制（即页面、渠道）。
 
-### 可视资产{#fragments-with-visual-assets}的片段
+### 包含可视资产的片段 {#fragments-with-visual-assets}
 
 为了让作者更好地控制其内容，可以将图像添加到内容片段和/或与其集成。
 
@@ -172,7 +172,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 不提供为特定片段批准的概念。
    * 有关更多信息，请参阅[资产浏览器](/help/sites-authoring/author-environment-tools.md#assets-browser)。
 
-### 内容片段的组成部分{#constituent-parts-of-a-content-fragment}
+### 内容片段的组成部分 {#constituent-parts-of-a-content-fragment}
 
 内容片段资产由以下部分（直接或间接）组成：
 
@@ -259,7 +259,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 可以是[Amsuglated](content-fragments-variations.md#summarizing-text)，以快速将文本截断为预定义的长度。
    * 可在片段编辑器的[Variations](content-fragments-variations.md)选项卡下找到。
 
-### 使用内容片段创作页面时的中间内容{#in-between-content-when-page-authoring-with-content-fragments}
+### 使用内容片段创作页面时的中间内容 {#in-between-content-when-page-authoring-with-content-fragments}
 
 中间内容：
 
@@ -272,7 +272,7 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
 >
 >中间内容是页面内容。它不会存储在内容片段中。
 
-### 片段{#required-by-fragments}所需
+### 片段必需 {#required-by-fragments}
 
 要创建、编辑和使用内容片段，您还需要：
 
@@ -298,11 +298,11 @@ AEM内容片段可用于描述和管理结构化内容。 结构化内容在可�
    * 片段需要一个或多个专用组件来定义布局并交付部分或全部元素/变体和关联内容。
    * 在创作中将片段拖动到页面上将自动关联所需的组件。
 
-## 用法示例{#example-usage}
+## 使用示例 {#example-usage}
 
 片段及其元素和变量可用于为多个渠道创建一致的内容。 在设计片段时，您需要考虑将在何处使用的内容。
 
-### We.Retail示例{#we-retail-sample}
+### We.Retail示例 {#we-retail-sample}
 
 示例片段可在以下位置查看：
 

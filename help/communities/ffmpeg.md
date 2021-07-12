@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
-role: Administrator
+role: Admin
 exl-id: 9ed54ee3-3509-4a43-a710-90f4543ccaf3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%
 
 ---
 
-# 用于社区的FFmpeg {#ffmpeg-for-communities}
+# 适用于社区的FFmpeg {#ffmpeg-for-communities}
 
 ## 概述 {#overview}
 
@@ -43,7 +43,7 @@ FFmpeg可在创作环境中用来获取已上传启用资源的元数据，并�
 
    * 例如，`ffmpeg -version`
 
-## 配置FFmpeg转码服务{#configure-ffmpeg-transcoding-service}
+## 配置FFmpeg转码服务 {#configure-ffmpeg-transcoding-service}
 
 默认情况下，安装FFmpeg后，会根据DAM更新资产工作流定义配置多个演绎版（转码）。
 

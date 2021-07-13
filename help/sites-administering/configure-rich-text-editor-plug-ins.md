@@ -1,16 +1,17 @@
 ---
 title: 配置富文本编辑器插件
-description: 了解如何配置AEM富文本编辑器插件以启用各个功能。
+description: 了解如何配置Adobe Experience Manager富文本编辑器插件以启用各个功能。
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: ec5154eb517740f5888dc44ad0e932d9ee469be6
 workflow-type: tm+mt
-source-wordcount: '4204'
+source-wordcount: '4216'
 ht-degree: 3%
 
 ---
 
-# 配置富文本编辑器插件{#configure-the-rich-text-editor-plug-ins}
+
+# 配置富文本编辑器插件 {#configure-the-rich-text-editor-plug-ins}
 
 RTE功能通过一系列插件提供，每个插件都具有features属性。 您可以配置一个或多个RTE功能，以启用或禁用该功能属性。 本文介绍了如何具体配置RTE插件。
 
@@ -18,7 +19,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 >[!NOTE]
 >
->使用CRXDE Lite时，建议使用“全部保存”定期保存更改。
+>使用CRXDE Lite时，建议使用[!UICONTROL Save All]选项定期保存更改。
 
 ## 激活插件并配置功能属性 {#activateplugin}
 
@@ -28,7 +29,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 >[!NOTE]
 >
->为避免在本文中出现重复，相应的rtePlugins节点称为&#x200B;*rtePlugins-node*>。
+>相应的`rtePlugins`节点称为`<rtePlugins-node>`，以避免在本文中出现重复。
 
 1. 使用CRXDE Lite，找到项目的文本组件。
 1. 在配置任何RTE插件之前，创建`<rtePlugins-node>`的父节点（如果不存在）：
@@ -51,7 +52,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
    * **名称** `rtePlugins`
    * **类型** `nt:unstructured`
 
-1. 为要激活的每个插件创建一个节点：
+1. 在下面，为要激活的每个插件创建一个节点：
 
    * **类型** `nt:unstructured`
    * **** 命名所需插件的插件ID
@@ -87,7 +88,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
  </tbody> 
 </table>
 
-## 了解Findreplace插件{#understand--findreplace-plugin}
+## 了解findreplace插件 {#understand--findreplace-plugin}
 
 `findreplace`插件不需要任何配置。 它开箱即用。
 
@@ -101,11 +102,11 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 * **浏览器模式**:使用浏览器的默认粘贴实施粘贴文本。它不是推荐的方法，因为它可能会引入不需要的标记。
 
-* **纯文本模式**:将剪贴板内容粘贴为纯文本。在AEM组件中插入之前，它会删除复制内容中的所有样式和格式元素。
+* **纯文本模式**:将剪贴板内容粘贴为纯文本。在[!DNL Experience Manager]组件中插入之前，会删除复制内容中的所有样式和格式元素。
 
 * **MS Word模式**:从MS Word复制时，粘贴带格式的文本（包括表格）。不支持从其他源（如网页或MS Excel）复制和粘贴文本，并仅保留部分格式。
 
-### 配置RTE工具栏{#configure-paste-options-available-on-the-rte-toolbar}上的“粘贴”选项
+### 配置RTE工具栏上的粘贴选项  {#configure-paste-options-available-on-the-rte-toolbar}
 
 在RTE工具栏中，您可以为作者提供以下三个图标中的一些、全部或全部都不提供：
 
@@ -117,14 +118,11 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 要配置RTE以显示所需的图标，请执行以下步骤。
 
-1. 导航到组件；例如：
-
-   `/apps/<myProject>/components/text`
-
+1. 导航到您的组件，例如`/apps/<myProject>/components/text`。
 1. 导航到节点`rtePlugins/edit`。 如果节点不存在，请参阅[激活插件](#activateplugin)。
 1. 在`edit`节点上创建`features`属性，并添加一个或多个功能。 保存所有更改。
 
-### 配置粘贴(Ctrl+V)图标和快捷键{#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}的行为
+### 配置“粘贴”(Ctrl+V)图标和快捷键的行为 {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
 可以使用以下步骤预配置&#x200B;**[!UICONTROL 粘贴(Ctrl+V)]**&#x200B;图标的行为。 此配置还定义作者用于粘贴内容的键盘快捷键Ctrl+V的行为。
 
@@ -178,55 +176,21 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
    所有属性都为&#x200B;**Type** `Boolean`，因此在相应的&#x200B;**Value**&#x200B;中，您可以选择或删除复选标记以启用或禁用该功能。
 
    >[!NOTE]
-   如果未明确定义，则使用默认值true，并接受格式。
+   >
+   >如果未明确定义，则使用默认值true，并接受格式。
 
-1. 也可以使用一系列其他属性或节点来定义其他格式，这些属性或节点也应用于`htmlPasteRules`节点：
+1. 也可以使用一系列其他属性或节点来定义其他格式，这些属性或节点也应用于`htmlPasteRules`节点。 保存所有更改。
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>属性</strong></td> 
-   <td><strong>类型</strong></td> 
-   <td><strong>描述</strong></td> 
-  </tr> 
-  <tr> 
-   <td>allowBlockTags</td> 
-   <td>String[]</td> 
-   <td><p>定义允许的块标记列表。</p> <p>可能的块标记包括（其中包括）：</p> 
-    <ul> 
-     <li>标题(h1、h2、h3)</li> 
-     <li>(p)段</li> 
-     <li>列表(ol、ul)</li> 
-     <li>表(table)</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>fallbackBlockTag</td> 
-   <td>字符串</td> 
-   <td><p>定义块标记，该标记用于任何具有未包含在allowBlockTags中的块标记的块。</p> <p> p在大多数情况下都足够。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>表</td> 
-   <td>nt:unstructured</td> 
-   <td><p>定义粘贴表时的行为。<br /> </p> <p>此节点必须具有属性<code>allow</code>（类型<code>Boolean</code>）以定义是否允许粘贴表。</p> <p>如果将<code>allow</code>设置为<code>false</code>，则必须指定属性<code>ignoreMode</code>（类型<code> String</code>）以定义如何处理粘贴的表内容。 <code>ignoreMode</code>的有效值为：</p> 
-    <ul> 
-     <li><code>remove</code>:删除表内容。</li> 
-     <li><code>paragraph</code>:将表格单元格转换为段落。</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>列表</td> 
-   <td>nt：非结构化</td> 
-   <td><p>定义粘贴列表时的行为。<br /> </p> <p>必须具有属性<code>allow</code>（类型<code>Boolean</code>）以定义是否允许粘贴列表。</p> <p>如果将<code>allow</code>设置为<code>false</code>，则必须指定属性<code>ignoreMode</code>（类型<code>String</code>）以定义如何处理粘贴的任何列表内容。 <code>ignoreMode</code>的有效值为：</p> 
-    <ul> 
-     <li><code>remove</code>:删除列表内容。</li> 
-     <li><code>paragraph</code>:将列表项转换为段落。</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+您可以将以下属性用于`htmlPasteRules`。
 
-有效`htmlPasteRules`结构的示例：
+| 属性 | 类型 | 描述 |
+|---|---|---|
+| `allowBlockTags` | 字符串 | 定义允许的块标记列表。 一些可能的块标记包括： <ul> <li>标题(h1、h2、h3)</li> <li>(p)段</li> <li>列表(ol、ul)</li> <li>表(table)</li> </ul> |
+| `fallbackBlockTag` | 字符串 | 定义块标记，该标记用于任何具有未包含在`allowBlockTags`中的块标记的块。 `p` 在大多数情况下都足够了。 |
+| 表 | nt:unstructured | 定义粘贴表时的行为。 此节点必须具有属性`allow`（类型Boolean）以定义是否允许粘贴表。 如果将允许设置为`false`，则必须指定属性`ignoreMode`（类型字符串）以定义粘贴表内容的处理方式。 `ignoreMode`的有效值为： <ul> <li>`remove`:删除表内容。</li> <li>`paragraph`:将表格单元格转换为段落。</li> </ul> |
+| 列表 | nt：非结构化 | 定义粘贴列表时的行为。 必须具有属性`allow`（类型Boolean）来定义是否允许粘贴列表。 如果将`allow`设置为`false`，则必须指定属性`ignoreMode`（类型字符串）以定义如何处理粘贴的任何列表内容。 `ignoreMode`的有效值为： <ul><li> `remove`:删除列表内容。</li> <li>`paragraph`:将列表项转换为段落。</li> </ul> |
+
+以下是有效`htmlPasteRules`结构的示例。
 
 ```xml
 "htmlPasteRules": {
@@ -248,13 +212,9 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 }
 ```
 
-1. 保存所有更改。
-
 ## 配置文本样式 {#textstyles}
 
-作者可以应用样式来更改部分文本的外观。 样式基于您在CSS样式表中预定义的CSS类。 使用`class`属性将风格化内容包含在`span`标记中以引用CSS类。 例如：
-
-`<span class=monospaced>Monospaced Text Here</span>`
+作者可以应用样式来更改部分文本的外观。 样式基于您在CSS样式表中预定义的CSS类。 使用`class`属性将风格化内容包含在`span`标记中以引用CSS类。 例如，`<span class=monospaced>Monospaced Text Here</span>`。
 
 首次启用“样式”插件后，没有可用的默认样式。 弹出列表为空。 要为作者提供样式，请执行以下操作：
 
@@ -262,10 +222,11 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 * 指定样式表的位置。
 * 指定可从“样式”下拉列表中选择的各个样式。
 
-对于以后（重新）的配置，例如要添加更多样式，请仅按照说明引用新样式表并指定其他样式。
+对于以后的配置，假设要添加更多样式，请仅按照说明引用新样式表并指定其他样式。
 
 >[!NOTE]
-还可以为[表或表单元格](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)定义样式。 这些配置需要单独的过程。
+>
+>您可以为[表或表单元格](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)定义样式。 这些配置需要单独的过程。
 
 ### 启用样式下拉选择器列表 {#styleselectorlist}
 
@@ -281,7 +242,8 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 1. 保存所有更改。
 
 >[!NOTE]
-启用“样式”插件后，“样式”下拉列表将显示在编辑对话框中。 但是，该列表为空，因为未配置样式。
+>
+>启用“样式”插件后，“样式”下拉列表将显示在编辑对话框中。 但是，该列表为空，因为未配置样式。
 
 ### 指定样式表位置 {#locationofstylesheet}
 
@@ -295,17 +257,22 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
    * **值** 要包含的每个样式表的路径和文件名。使用存储库路径。
 
    >[!NOTE]
-   您可以在以后任何时间添加对其他样式表的引用。
+   >
+   >您可以在以后任何时间添加对其他样式表的引用。
 
 1. 保存所有更改。
 
 >[!NOTE]
-在对话框中使用RTE（经典UI）时，您可能需要指定针对富文本编辑而优化的样式表。 由于技术限制，编辑器中丢失了CSS上下文，因此您可能希望模拟此上下文以改进所见即所得(WYSIWYG)体验。
-富文本编辑器使用ID为`CQrte`的容器DOM元素，该元素可用于提供不同的样式以用于查看和编辑：
-`#CQ td {`
-` // defines the style for viewing }`
-`#CQrte td {`
-` // defines the style for editing }`
+>
+>在对话框中使用RTE（经典UI）时，您可能需要指定针对富文本编辑而优化的样式表。 由于技术限制，编辑器中丢失了CSS上下文，因此您可能希望模拟此上下文以改进所见即所得(WYSIWYG)体验。
+>
+>富文本编辑器使用ID为`CQrte`的容器DOM元素，该元素可用于提供不同的样式以用于查看和编辑：
+>
+>`#CQ td {`
+>` // defines the style for viewing }`
+>
+>`#CQrte td {`
+>` // defines the style for editing }`
 
 ### 在弹出列表中指定可用的样式 {#stylesindropdown}
 
@@ -341,10 +308,12 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 在RTE中创作的任何文本都放置在块标记中，默认值为`<p>`。 通过启用`paraformat`插件，您可以使用下拉选择列表指定可分配给段落的其他块标记。 段落格式通过分配正确的块标记来确定段落类型。 作者可以使用格式选择器选择和分配它们。 示例块标记包括标准段落&lt;p>和标题&lt;h1>、&lt;h2>等。
 
 >[!CAUTION]
-此插件不适用于结构复杂的内容，如列表或表。
+>
+>此插件不适用于结构复杂的内容，如列表或表。
 
 >[!NOTE]
-如果无法将块标记（例如&lt;hr>标记）分配给段落，则它对于段落格式插件不是有效用例。
+>
+>如果无法将块标记（例如&lt;hr>标记）分配给段落，则它对于段落格式插件不是有效用例。
 
 首次启用“段落格式”插件后，不提供默认的“段落格式”。 弹出列表为空。 要为作者提供段落格式，请执行以下操作：
 
@@ -457,9 +426,9 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 保存属性后，表示的字符将显示在CRXDE中。 请参阅下面的“一半”示例。 重复上述步骤，为作者提供更多特殊字符。
 
-![在CRXDE中，添加一个要在RTE工具栏中提供的字符](assets/chlimage_1-412.png)
+![在CRXDE中，添加一个要在RTE工具栏中使用的字符。在CRXDE](assets/chlimage_1-412.png "中，添加一个要在RTE工具栏中使用的字符")
 
-在CRXDE中，添加一个要在RTE工具栏中提供的字符
+
 
 ### 定义字符范围 {#definerangechar}
 
@@ -578,7 +547,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 激活拼写检查插件后，RTE会对每种相应语言使用字典。 然后，根据网站的语言选择子树的语言属性或从URL中提取语言；例如。 将`/en/`分支检查为英语，将`/de/`分支检查为德语。
 
 >[!NOTE]
-如果尝试检查未安装的语言，则会看到消息`Spell checking failed`。 标准字典与相应的自述文件一起位于`/libs/cq/spellchecker/dictionaries`。 请勿修改文件。
+如果试图检查未安装的语言，则会看到消息`Spell checking failed`。 标准字典与相应的自述文件一起位于`/libs/cq/spellchecker/dictionaries`。 请勿修改文件。
 
 标准AEM安装包括美式英语(`en_us`)和英式英语(`en_gb`)的字典。 要添加更多字典，请执行以下步骤。
 
@@ -738,7 +707,7 @@ RTE允许作者撤消或重做上次所做的一些编辑。 默认情况下，�
 
          * **名称** `targetInternal`
          * **类型** `String`
-         * **** 值内部链接的目标(仅在“模式”为时使 `auto`用)
+         * **** 值内部链接的目标(仅在模式为时使 `auto`用)
       * 外部链接的目标：
 
          * **名称** `targetExternal`

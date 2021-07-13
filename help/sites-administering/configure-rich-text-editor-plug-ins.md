@@ -3,9 +3,9 @@ title: 配置富文本编辑器插件
 description: 了解如何配置Adobe Experience Manager富文本编辑器插件以启用各个功能。
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
-source-git-commit: ec5154eb517740f5888dc44ad0e932d9ee469be6
+source-git-commit: 9d1d6357c79e864e1fef89f713534dd074cf20ab
 workflow-type: tm+mt
-source-wordcount: '4216'
+source-wordcount: '4210'
 ht-degree: 3%
 
 ---
@@ -76,7 +76,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
   <tr> 
    <td><strong>类型</strong></td> 
    <td>字符串</td> 
-   <td>String[](多字符串；将类型设置为字符串，然后单击多CRXDE Lite)</td> 
+   <td>字符串(多字符串；将类型设置为字符串，然后单击多CRXDE Lite)</td> 
    <td>字符串</td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
  </tbody> 
 </table>
 
-## 了解findreplace插件 {#understand--findreplace-plugin}
+## 了解findreplace插件 {#understand-findreplace-plugin}
 
 `findreplace`插件不需要任何配置。 它开箱即用。
 
@@ -96,7 +96,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 单击“查找”(Find)后，“查找和替换”(Find and Replace)对话框将变得透明，单击“替换”(Replace)后，对话框将变得不透明。 这允许作者查看作者将替换的文本。 如果用户单击“全部替换”，则对话框将关闭并显示已进行替换的数量。
 
-## 配置粘贴模式 {#pastemodes}
+## 配置粘贴模式 {#paste-modes}
 
 使用RTE时，作者可以以以下三种模式之一粘贴内容：
 
@@ -106,7 +106,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 * **MS Word模式**:从MS Word复制时，粘贴带格式的文本（包括表格）。不支持从其他源（如网页或MS Excel）复制和粘贴文本，并仅保留部分格式。
 
-### 配置RTE工具栏上的粘贴选项  {#configure-paste-options-available-on-the-rte-toolbar}
+### 配置RTE工具栏上的粘贴选项  {#configure-paste-options-toolbar}
 
 在RTE工具栏中，您可以为作者提供以下三个图标中的一些、全部或全部都不提供：
 
@@ -122,7 +122,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 1. 导航到节点`rtePlugins/edit`。 如果节点不存在，请参阅[激活插件](#activateplugin)。
 1. 在`edit`节点上创建`features`属性，并添加一个或多个功能。 保存所有更改。
 
-### 配置“粘贴”(Ctrl+V)图标和快捷键的行为 {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
+### 配置“粘贴”(Ctrl+V)图标和快捷键的行为 {#configure-paste-icon-shortcut}
 
 可以使用以下步骤预配置&#x200B;**[!UICONTROL 粘贴(Ctrl+V)]**&#x200B;图标的行为。 此配置还定义作者用于粘贴内容的键盘快捷键Ctrl+V的行为。
 
@@ -141,14 +141,14 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
    * **类型** `String`
    * **** Value所需粘贴模式之 `browser`一， `plaintext`或 `wordhtml`。
 
-### 配置粘贴内容时允许的格式 {#pasteformats}
+### 配置粘贴内容时允许的格式 {#paste-formats}
 
 可以进一步配置粘贴为Microsoft-Word(`paste-wordhtml`)模式，以便您能够明确定义从其他程序（如Microsoft Word）在AEM中粘贴时允许使用的样式。
 
 例如，如果在AEM中粘贴时只允许使用粗体格式和列表，则可以过滤掉其他格式。 这称为可配置粘贴过滤，可用于以下两项：
 
-* [文本](#pastemodes)
-* [链接](#linkstyles)
+* [文本](#paste-modes)
+* [链接](#link-styles)
 
 对于链接，您还可以定义自动接受的协议。
 
@@ -212,7 +212,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 }
 ```
 
-## 配置文本样式 {#textstyles}
+## 配置文本样式 {#text-styles}
 
 作者可以应用样式来更改部分文本的外观。 样式基于您在CSS样式表中预定义的CSS类。 使用`class`属性将风格化内容包含在`span`标记中以引用CSS类。 例如，`<span class=monospaced>Monospaced Text Here</span>`。
 
@@ -226,9 +226,9 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 >[!NOTE]
 >
->您可以为[表或表单元格](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)定义样式。 这些配置需要单独的过程。
+>您可以为[表或表单元格](/help/sites-administering/configure-rich-text-editor-plug-ins.md#table-styles)定义样式。 这些配置需要单独的过程。
 
-### 启用样式下拉选择器列表 {#styleselectorlist}
+### 启用样式下拉选择器列表 {#style-selector-list}
 
 这是通过启用样式插件来完成的。
 
@@ -245,7 +245,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 >
 >启用“样式”插件后，“样式”下拉列表将显示在编辑对话框中。 但是，该列表为空，因为未配置样式。
 
-### 指定样式表位置 {#locationofstylesheet}
+### 指定样式表位置 {#location-stylesheet}
 
 然后，指定要引用的样式表的位置：
 
@@ -262,21 +262,19 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 1. 保存所有更改。
 
->[!NOTE]
->
->在对话框中使用RTE（经典UI）时，您可能需要指定针对富文本编辑而优化的样式表。 由于技术限制，编辑器中丢失了CSS上下文，因此您可能希望模拟此上下文以改进所见即所得(WYSIWYG)体验。
->
->富文本编辑器使用ID为`CQrte`的容器DOM元素，该元素可用于提供不同的样式以用于查看和编辑：
->
->`#CQ td {`
->` // defines the style for viewing }`
->
->`#CQrte td {`
->` // defines the style for editing }`
+在对话框（经典UI）中使用RTE时，可以指定为富文本编辑而优化的样式表。 由于技术限制，编辑器中会丢失CSS上下文，因此您可以模拟此上下文以改进所见即所得(WYSIWYG)体验。 富文本编辑器使用ID为`CQrte`的容器DOM元素，该元素可用于提供不同的样式以用于查看和编辑：
 
-### 在弹出列表中指定可用的样式 {#stylesindropdown}
+```TXT
+#CQ td {
+// defines the style for viewing }
 
-1. 在组件定义中，导航到在[启用样式下拉选择器](#styleselectorlist)中创建的节点`<rtePlugins-node>/styles`。
+#CQrte td {
+// defines the style for editing }
+```
+
+### 在弹出列表中指定可用的样式 {#styles-popup-list}
+
+1. 在组件定义中，导航到在[启用样式下拉选择器](#style-selector-list)中创建的节点`<rtePlugins-node>/styles`。
 1. 在节点`styles`下，创建新节点（也称为`styles`）以保存要提供的列表：
 
    * **名称** `styles`
@@ -303,7 +301,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
    对每个必需的样式重复上述步骤。
 
-## 配置段落格式 {#paraformats}
+## 配置段落格式 {#para-formats}
 
 在RTE中创作的任何文本都放置在块标记中，默认值为`<p>`。 通过启用`paraformat`插件，您可以使用下拉选择列表指定可分配给段落的其他块标记。 段落格式通过分配正确的块标记来确定段落类型。 作者可以使用格式选择器选择和分配它们。 示例块标记包括标准段落&lt;p>和标题&lt;h1>、&lt;h2>等。
 
@@ -322,9 +320,9 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 对于以后（重新）的配置，例如要添加更多格式，请仅按照说明的相关部分操作。
 
-### 启用“格式”下拉选择器 {#formatselectorlist}
+### 启用“格式”下拉选择器 {#format-selector-list}
 
-首先启用参数格式插件：
+首先启用`paraformat`插件：
 
 1. 在组件中，导航到节点`<rtePlugins-node>/paraformat`。 如果节点不存在，请创建节点。 有关更多详细信息，请参阅[激活插件](#activateplugin)。
 1. 在`paraformat`节点上创建`features`属性：
@@ -345,11 +343,11 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 >[!CAUTION]
 配置RTE的段落格式时，请勿删除段落标记&lt;p>作为格式选项。 如果删除了&lt;p>标记，则内容作者将无法选择&#x200B;**段落格式**&#x200B;选项，即使配置了其他格式也是如此。
 
-### 指定可用的段落格式 {#paraformatsindropdown}
+### 指定可用的段落格式 {#para-formats-popup}
 
 段落格式可通过以下方式供选择：
 
-1. 在组件定义中，导航到在[启用格式下拉选择器](#styleselectorlist)中创建的节点`<rtePlugins-node>/paraformat`。
+1. 在组件定义中，导航到在[启用格式下拉选择器](#style-selector-list)中创建的节点`<rtePlugins-node>/paraformat`。
 1. 在`paraformat`节点下创建新节点，以保存格式列表：
 
    * **名称** `formats`
@@ -381,7 +379,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 >[!CAUTION]
 如果定义自定义格式，则会删除默认格式（`<p>`、`<h1>`、`<h2>`和`<h3>`）。 重新创建`<p>`格式，因为它是默认格式。
 
-## 配置特殊字符 {#spchar}
+## 配置特殊字符 {#special-char}
 
 在标准AEM安装中，当为特殊字符(`specialchars`)启用`misctools`插件时，会立即提供默认选项供使用；例如，版权和商标符号。
 
@@ -390,7 +388,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 >[!CAUTION]
 添加自己的特殊字符将覆盖默认选择。 如果需要，请（重新）在您自己的选择中定义这些字符。
 
-### 定义单个字符 {#definesinglechar}
+### 定义单个字符 {#define-single-char}
 
 1. 在组件中，导航到节点`<rtePlugins-node>/misctools`。 如果节点不存在，请创建节点。 有关更多详细信息，请参阅[激活插件](#activateplugin)。
 1. 在`misctools`节点上创建`features`属性：
@@ -430,9 +428,9 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 
 
-### 定义字符范围 {#definerangechar}
+### 定义字符范围 {#define-range-char}
 
-1. 使用[定义单个字符](#definesinglechar)中的步骤1至3。
+1. 使用[定义单个字符](#define-single-char)中的步骤1至3。
 1. 在`chars`下，添加一个新节点以保存字符范围的定义：
 
    * **** 名称可以指定名称，但应反映字符范围；例如，铅笔。
@@ -462,7 +460,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
          *RTE中提供的特殊字符会在弹出窗口中向作者显示*
 
-## 配置表样式 {#tablestyles}
+## 配置表样式 {#table-styles}
 
 样式通常应用于文本，但样式集也可以应用于表格或几个表格单元格。 此类样式可供作者从单元格属性或表属性对话框的样式选择器框中创建。 在文本组件（或衍生组件）内编辑表时（而不是在标准的表组件中编辑表时），可以使用样式。
 
@@ -488,12 +486,12 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
       * `cellprops` 以允许编辑单元格属性，包括样式。
 
 
-1. 定义CSS样式表的位置以引用它们。 请参阅[指定样式表的位置](#locationofstylesheet)，因为这与定义文本](#textstyles)的样式时的位置相同。 [如果您定义了其他样式，则可以定义该位置。
+1. 定义CSS样式表的位置以引用它们。 请参阅[指定样式表的位置](#location-stylesheet)，因为这与定义文本](#text-styles)的样式时的位置相同。 [如果您定义了其他样式，则可以定义该位置。
 1. 在`table`节点下，创建新节点（根据需要）：
 
    * 要定义整个表的样式（位于&#x200B;**表属性**&#x200B;下）：
 
-      * **名称** `tableStyles`
+      * **名称** `table-styles`
       * **类型** `cq:WidgetCollection`
    * 要定义单个单元格的样式（位于&#x200B;**单元格属性**&#x200B;下）：
 
@@ -501,7 +499,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
       * **类型** `cq:WidgetCollection`
 
 
-1. 创建新节点(在`tableStyles`或`cellStyles`节点下（视情况而定）以表示单个样式：
+1. 创建新节点(在`table-styles`或`cellStyles`节点下（视情况而定）以表示单个样式：
 
    * **** 您可以指定名称，但名称应反映样式。
    * **类型** `nt:unstructured`
@@ -524,25 +522,25 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 
 对每个必需的样式重复上述步骤。
 
-### 在表中配置隐藏的标题以辅助功能 {#hiddenheader}
+### 在表中配置隐藏的标题以辅助功能 {#hidden-header}
 
 有时，您可能会创建列标题中不带可视文本的数据表，这假定列与其他列的可视关系暗示了标题的用途。 在这种情况下，必须在标题单元格的单元格内提供隐藏的内部文本，以允许屏幕阅读器和其他辅助技术帮助具有各种需求的读者了解列的用途。
 
 为了增强此类情况下的辅助功能，RTE支持隐藏的标头单元格。 此外，它还提供与表中隐藏标题相关的配置设置。 这些设置允许您在编辑和预览模式下对隐藏的标题应用CSS样式。 要帮助作者在编辑模式下识别隐藏的标题，请在代码中包含以下参数：
 
-* `hiddenHeaderEditingCSS`:指定编辑RTE时，在隐藏标题单元格中应用的CSS类的名称。
-* `hiddenHeaderEditingStyle`:指定编辑RTE时对隐藏标题单元格应用的样式字符串。
+* `hidden-headerEditingCSS`:指定编辑RTE时，在隐藏标题单元格中应用的CSS类的名称。
+* `hidden-headerEditingStyle`:指定编辑RTE时对隐藏标题单元格应用的样式字符串。
 
 如果您在代码中同时指定CSS和样式字符串，则CSS类将优先于样式字符串，并可能会覆盖样式字符串所做的任何配置更改。
 
 要帮助作者在预览模式下对隐藏的标题应用CSS，您可以在代码中包含以下参数：
 
-* `hiddenHeaderClassName`:指定在预览模式下对隐藏的标题单元格应用的CSS类的名称。
-* `hiddenHeaderStyle`:指定在预览模式下应用于隐藏标题单元格的样式字符串。
+* `hidden-headerClassName`:指定在预览模式下对隐藏的标题单元格应用的CSS类的名称。
+* `hidden-headerStyle`:指定在预览模式下应用于隐藏标题单元格的样式字符串。
 
 如果您在代码中同时指定CSS和样式字符串，则CSS类将优先于样式字符串，并可能会覆盖样式字符串所做的任何配置更改。
 
-## 为拼写检查程序添加字典 {#adddict}
+## 为拼写检查程序添加字典 {#add-dict}
 
 激活拼写检查插件后，RTE会对每种相应语言使用字典。 然后，根据网站的语言选择子树的语言属性或从URL中提取语言；例如。 将`/en/`分支检查为英语，将`/de/`分支检查为德语。
 
@@ -570,7 +568,7 @@ RTE功能通过一系列插件提供，每个插件都具有features属性。 �
 RTE拼写检查程序可按需使用。 在您开始键入文本时，它不会自动运行。 要运行拼写检查程序，请单击工具栏中的[!UICONTROL Spellchecker]。 RTE会检查单词拼写，并突出显示拼写错误的单词。
 如果合并拼写检查器建议的任何更改，则文本更改和拼写错误的单词的状态将不再突出显示。 要运行拼写检查程序，请再次点按/单击拼写检查程序按钮。
 
-## 为撤消和重做操作配置历史记录大小 {#undohistory}
+## 为撤消和重做操作配置历史记录大小 {#undo-history}
 
 RTE允许作者撤消或重做上次所做的一些编辑。 默认情况下，历史记录中会存储50个编辑内容。 您可以根据需要配置此值。
 
@@ -586,20 +584,20 @@ RTE允许作者撤消或重做上次所做的一些编辑。 默认情况下，�
 
 1. 保存更改。
 
-## 配置选项卡大小 {#tabsize}
+## 配置选项卡大小 {#tab-size}
 
 当在任何文本中按制表符时，会插入预定义的空格数；默认情况下，这是三个非中断空格和一个空格。 要定义制表符大小，请执行以下操作：
 
 1. 在组件中，导航到节点`<rtePlugins-node>/keys`。 如果节点不存在，请创建节点。 有关更多详细信息，请参阅[激活插件](#activateplugin)。
 1. 在`keys`节点上创建属性：
 
-   * **名称** `tabSize`
+   * **名称** `tab-size`
    * **类型** `String`
    * **** 值要用于制表符的空格字符数
 
 1. 保存更改。
 
-## 设置缩进边距 {#indentmargin}
+## 设置缩进边距 {#indent-margin}
 
 启用缩进（默认）后，您可以定义缩进大小：
 
@@ -613,7 +611,7 @@ RTE允许作者撤消或重做上次所做的一些编辑。 默认情况下，�
    * **类型**: `Long`
    * **值**:缩进边距所需的像素数
 
-## 配置可编辑空间的高度 {#editablespace}
+## 配置可编辑空间的高度 {#editable-space}
 
 您可以定义组件对话框中显示的可编辑空间的高度：
 
@@ -631,7 +629,7 @@ RTE允许作者撤消或重做上次所做的一些编辑。 默认情况下，�
 >[!NOTE]
 仅当在对话框中使用RTE时（在经典UI中不是就地编辑），才适用此选项。
 
-## 配置链接的样式和协议 {#linkstyles}
+## 配置链接的样式和协议 {#link-styles}
 
 在AEM中添加链接时，您可以定义：
 

@@ -3,12 +3,12 @@ description: '按Experience League划分的Dynamic Media新闻稿是每月的新
 keywords: Dynamic Media；新闻稿；产品更新；提示和技巧；事件；客户成功；博客；博客；图像；视频；功能
 seo-description: 本一站式商店快讯中提供了相关知识构建资源，包括视频操作、解决方案概述，以及一些关键特性和功能（如图像预设、查看器预设、视频配置文件等）的简介。
 seo-title: 'AdobeDynamic Media新闻稿 '
-solution: Dynamic Media Classic
+solution: Experience Manager, Dynamic Media Classic
 title: Dynamic Media新闻稿
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: 协作，Dynamic Media Classic
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0d660388cd0fbbf98076610d18c19f480c75ef11
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%

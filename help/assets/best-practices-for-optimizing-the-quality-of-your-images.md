@@ -8,9 +8,9 @@ content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
 feature: 资产管理，演绎版
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1464'
 ht-degree: 55%
 
 ---
@@ -45,7 +45,7 @@ AEM 中含有 100 多个 Dynamic Media 图像传送命令，可用于微调和�
 
 在控制网站中的图像时，图像锐化是最复杂的方面，很容易出现多种错误。请参阅[AdobeDynamic Media经典图像质量和锐化最佳实践](/help/assets/assets/sharpening_images.pdf)指南(适用于AEM)，请花时间详细了解AEM中锐化和USM锐化的工作原理。
 
-另请参阅[使用USM锐化锐化图像](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)。
+另请参阅[使用USM锐化锐化图像](https://helpx.adobe.com/photoshop/using/adjusting-image-sharpness-blur.html)。
 
 通过 AEM，可以在摄取、传送或同时在这两个过程中锐化图像。但是，在大多数情况下，应只使用一种方法锐化图像，而不要同时使用两种方法。通常，在传送过程中通过 URL 锐化图像可实现最佳效果。
 

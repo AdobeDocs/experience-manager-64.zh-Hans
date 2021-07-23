@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 工作流，演绎版
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 3%
@@ -37,7 +37,7 @@ Adobe Experience Manager Assets提供了一组用于处理资产的默认工作�
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>重要信息</b> — 上传MP3文件时，会使用第三方库](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html)处理该文件[。 如果MP3具有可变比特率(VBR)，则库会计算非精确的近似长度。 |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>重要信息</b> — 上传MP3文件时，会使用第三方库](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html)处理该文件[。 如果MP3具有可变比特率(VBR)，则库会计算非精确的近似长度。 |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | 图像/图片 |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -446,8 +446,8 @@ Experience Manager允许您在工作流中运行任何命令行工具，以转�
 
 * 使用[ImageMagick](https://www.imagemagick.org/script/index.php)和[Ghostscript](https://www.ghostscript.com/)的EPS和AI转换
 * 使用[FFmpeg](https://ffmpeg.org/)进行FLV视频转码
-* 使用[LAME](http://lame.sourceforge.net/)的MP3编码
-* 使用[SOX](http://sox.sourceforge.net/)进行音频处理
+* 使用[LAME](https://lame.sourceforge.net/)的MP3编码
+* 使用[SOX](https://sox.sourceforge.net/)进行音频处理
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 资产处理
 role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -108,7 +108,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 >[!NOTE]
 >
->[`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html)下提供了有关代理API的引用文档。
+>[`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/commons/proxy/package-summary.html)下提供了有关代理API的引用文档。
 
 代理和代理工作程序配置均可通过云服务配置来使用，这些配置可从AEM Assets **Tools**&#x200B;控制台或`/etc/cloudservices/proxy`下访问。 对于特定于工作程序的配置详细信息（例如，`/etc/cloudservices/proxy/workername`），每个代理工作程序应在`/etc/cloudservices/proxy`下添加一个节点。
 

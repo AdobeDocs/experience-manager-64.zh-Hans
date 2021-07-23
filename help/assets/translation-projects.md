@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 翻译
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1942'
 ht-degree: 23%
 
 ---
@@ -313,4 +313,4 @@ ht-degree: 23%
 
 1. 导航到资产控制台，然后打开每个已翻译资产的属性页面，以查看已翻译的元数据。
 
-有关如何高效翻译资产元数据的提示，请参阅[5有效翻译元数据的步骤](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)。
+有关如何高效翻译资产元数据的提示，请参阅此存档页面，内容涉及有效翻译元数据](https://web.archive.org/web/20181217033517/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)的[5个步骤。

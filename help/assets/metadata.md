@@ -5,14 +5,14 @@ contentOwner: AG
 feature: 标记，元数据
 role: Architect, Leader
 exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1398'
 ht-degree: 15%
 
 ---
 
-# 管理数字资产的元数据{#managing-metadata-for-digital-assets}
+# 管理数字资产的元数据 {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] 保留每个资产的元数据。它允许更轻松地对资产进行分类和组织，并帮助正在查找特定资产的用户。 元数据管理能够从上传到[!DNL Experience Manager Assets]的文件中提取元数据，与创作工作流集成。 通过使用资产保留和管理元数据的功能，您可以根据资产的元数据自动组织和处理资产。
 
@@ -67,7 +67,7 @@ ht-degree: 15%
 
 手动创建描述性元数据信息的成本很高。 因此，制定标准以简化跨软件系统和组织的元数据交换。 [!DNL Experience Manager Assets] 支持元数据管理的所有相关标准。
 
-## 编码标准{#encoding-standards}
+## 编码标准 {#encoding-standards}
 
 在文件中嵌入元数据的方法有多种。 支持一系列编码标准选项：
 
@@ -100,11 +100,11 @@ Exif的一个主要限制是一些常见的图像文件格式（如BMP、GIF或P
 
 Exif定义的元数据字段通常具有技术性，在描述性元数据管理中的用法有限。 因此，[!DNL Experience Manager Assets]提供了将Exif属性映射到[常用元数据架构](metadata-schemas.md)和[XMP](xmp-writeback.md)的功能。
 
-### 其他元数据{#other-metadata}
+### 其他元数据 {#other-metadata}
 
 可以从文件中嵌入的其他元数据包括[!DNL Microsoft Word]、[!DNL PowerPoint]、[!DNL Excel]等。
 
-## 元数据架构{#metadata-schemata}
+## 元数据架构 {#metadata-schemata}
 
 元数据架构是预定义的元数据属性定义集，可在各种应用程序中使用。 属性始终与资产关联，这意味着这些属性是“关于”资源的。
 
@@ -112,7 +112,7 @@ Exif定义的元数据字段通常具有技术性，在描述性元数据管理�
 
 下面列出了支持的元数据架构。
 
-### 标准元数据{#standard-metadata}
+### 标准元数据 {#standard-metadata}
 
 * DC - [!DNL Dublin Core]是一组重要且广泛使用的元数据。
 * DICOM - 医学数字成像和通信.
@@ -121,7 +121,7 @@ Exif定义的元数据字段通常具有技术性，在描述性元数据管理�
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpBJ`  — 基本工作单。
 
-### 特定于应用程序的元数据{#application-specific-metadata}
+### 特定于应用程序的元数据 {#application-specific-metadata}
 
 特定于应用程序的元数据包括技术和描述性元数据。 如果您使用此类元数据，其他应用程序可能无法使用该元数据。 例如，其他图像渲染应用程序可能无法访问[!DNL Adobe Photoshop]元数据。 您可以创建一个工作流步骤，以将特定于应用程序的属性更改为标准属性。
 
@@ -137,7 +137,7 @@ Exif定义的元数据字段通常具有技术性，在描述性元数据管理�
 * PDF和PDF/X。
 * Photoshop和psAux - [!DNL Adobe Photoshop]。
 
-### Digital Rights Management元数据{#digital-rights-management-metadata}
+### Digital Rights Management元数据 {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights]。
@@ -147,26 +147,26 @@ Exif定义的元数据字段通常具有技术性，在描述性元数据管理�
 * PUR - PRISM使用权限。
 * `xmpPlus`  — 将PLUS与XMP集成。
 
-### 特定于摄影的元数据{#photography-specific-metadata}
+### 特定于摄影的元数据 {#photography-specific-metadata}
 
 * Exif — 相机的技术信息，包括GPS位置。
 * CRS - [!DNL Camera Raw]架构。
 * `iptc4xmpCore` 和 `iptc4xmpExt`.
 * TIFF — 图像元数据（不仅适用于TIFF图像）。
 
-### 特定于打印的元数据{#print-specific-metadata}
+### 特定于打印的元数据 {#print-specific-metadata}
 
 * PDF和PDF/X - Adobe PDF和第三方应用程序。
-* PRISM - [发布行业标准元数据的要求](https://www.prismstandard.org)。
+* PRISM - [发布行业标准元数据的要求](http://www.prismstandard.org/specifications/)。
 * XMP - [!DNL Extensible Metadata Platform]。
 * `xmpPG`  — 分页文本的XMP元数据。
 
-### 特定于多媒体的元数据{#multimedia-specific-metadata}
+### 特定于多媒体的元数据 {#multimedia-specific-metadata}
 
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM`  — 媒体管理。
 
-## 元数据驱动的工作流{#metadata-driven-workflows}
+## 元数据驱动的工作流 {#metadata-driven-workflows}
 
 创建元数据驱动的工作流可以帮助您实现某些流程的自动化，从而提高效率。 在元数据驱动的工作流中，工作流管理系统会读取该工作流，然后相应地执行某些预定义操作。例如，以下是可以利用元数据驱动的工作流实现的功能：
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 元数据
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 88%
@@ -22,7 +22,7 @@ ht-degree: 88%
 
 都柏林核心元数据元素集 (DCMES) 很简单，共包含 15 个元数据元素，如下表所示。每个都柏林核心元素都是可选元素，并且可以重复。您可以视需要为特定于媒体类型的元数据添加或删除都柏林核心元数据信息。
 
-除了 DCMES 之外，都柏林核心计划还创建了其他一些元数据元素。有关详细信息，请查看[都柏林核心计划](http://dublincore.org/)。
+除了 DCMES 之外，都柏林核心计划还创建了其他一些元数据元素。有关详细信息，请查看[都柏林核心计划](https://dublincore.org/)。
 
 | 属性 | 描述 |
 |---|---|

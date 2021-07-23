@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 资产管理
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 0%
@@ -34,12 +34,12 @@ ht-degree: 0%
 您应在开发的性能测试阶段或高负载情况下执行实时监控，以了解环境的性能特性。 通常，应使用一套工具执行实时监视。 以下是一些建议：
 
 * [可视化VM](https://visualvm.github.io/):Visual VM允许您查看详细的Java VM信息，包括CPU使用率、Java内存使用率。此外，它还允许您对在实例上运行的代码进行采样和评估。
-* [顶部](http://man7.org/linux/man-pages/man1/top.1.html):顶部是一个Linux命令，用于打开一个功能板，其中显示使用情况统计信息，包括CPU、内存和IO使用情况。它提供了实例中所发生情况的高级概述。
+* [顶部](https://man7.org/linux/man-pages/man1/top.1.html):顶部是一个Linux命令，用于打开一个功能板，其中显示使用情况统计信息，包括CPU、内存和IO使用情况。它提供了实例中所发生情况的高级概述。
 * [顶部](https://hisham.hm/htop/):Htop是一个交互式进程查看器。除了Top提供的功能外，它还提供详细的CPU和内存使用情况。 Htop可以在大多数使用`yum install htop`或`apt-get install htop`的Linux系统上安装。
 
 * [Iotop](http://guichaz.free.fr/iotop/):Iotop是有关磁盘IO使用情况的详细功能板。它显示一些条形和米表，这些条形和米表描述了使用磁盘IO的流程及其使用量。 使用`yum install iotop`或`apt-get install iotop`的大多数Linux系统上都可以安装Iotop。
 
-* [Iftop](http://www.ex-parrot.com/pdw/iftop/):Iftop显示有关以太网/网络使用的详细信息。Iftop显示使用以太网的实体的每个通信通道统计信息以及它们使用的带宽量。 Iftop可以在大多数使用`yum install iftop`或`apt-get install iftop`的Linux系统上安装。
+* [Iftop](https://www.ex-parrot.com/pdw/iftop/):Iftop显示有关以太网/网络使用的详细信息。Iftop显示使用以太网的实体的每个通信通道统计信息以及它们使用的带宽量。 Iftop可以在大多数使用`yum install iftop`或`apt-get install iftop`的Linux系统上安装。
 
 * Java飞行记录器(JFR):oracle中的商业工具，您可以在非生产环境中自由使用。 有关更多详细信息，请参阅[如何使用Java飞行记录器诊断CQ运行时问题](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)。
 * AEM error.log文件：您可以调查AEM error.log文件，以获取系统中记录的错误的详细信息。 使用命令`tail -F quickstart/logs/error.log`来识别您应该调查的错误。

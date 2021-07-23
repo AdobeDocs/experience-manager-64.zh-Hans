@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: 视频
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '10393'
+source-wordcount: '10335'
 ht-degree: 24%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 24%
 
          [查看视频演绎版](video-renditions.md)
 
-         [管理视频演绎版](managing-assets-touch-ui.md#managing-renditions)
+[管理视频演绎版](managing-assets-touch-ui.md#managing-renditions)
 
       * [管理查看器预设](managing-viewer-presets.md)
       * [发布资产](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ ht-degree: 24%
 
       * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
 
-         [编辑视频属性](managing-assets-touch-ui.md#editing-properties)
+[编辑视频属性](managing-assets-touch-ui.md#editing-properties)
 
       * [管理数字资产的元数据](metadata.md)
       * [元数据架构](metadata-schemas.md)
@@ -276,12 +276,12 @@ HLS（HTTP实时流播放）是Apple的自适应视频流播放标准，可根�
 
 如果您已启用 Dynamic Media 并设置了视频云服务，则 **[!UICONTROL Dynamic Media 编码视频]**&#x200B;工作流会对视频进行编码。此工作流会捕获工作流进程历史记录和失败信息。请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。如果您已启用Dynamic Media并设置了视频云服务，则在您上传视频时，**[!UICONTROL Dynamic Media编码视频]**&#x200B;工作流将自动生效。 (如果您没有使用Dynamic Media，则&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流将生效。)
 
-以下是关于源视频文件编码的最佳实践提示。
+<!-- DEAD ARTICLE AND VIDEO LINK The following are best-practice tips for encoding source video files.
 
-有关视频编码的建议，请参阅以下资源：
+For advice about video encoding, see the following:
 
-* 文章：*流播放 101：基础知识 - 编解码器、带宽、数据率和分辨率：*[www.adobe.com/go/learn_s7_streaming101_cn](https://www.adobe.com/go/learn_s7_streaming101_en)。
-* 视频：*视频编码基础知识：*[www.adobe.com/go/learn_s7_encoding_cn](https://www.adobe.com/go/learn_s7_encoding_en)。
+* Article: *Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution:* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
+* Video: *Video Encoding Basics:* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
 ### 源视频文件 {#source-video-files}
 

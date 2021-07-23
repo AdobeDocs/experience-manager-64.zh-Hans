@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 资产分析，资产报表
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -115,4 +115,4 @@ Adobe动态标签管理是一款可激活您的数字营销工具的工具。 �
    * 通过查询`satelliteLib`所有可用的SiteCatalyst引擎，可检索AppMeasurement对象。 如果配置了多个标记，请相应地更改数组选择器的索引。 数组中的条目按DTM界面中可用的SiteCatalyst工具排序。
 
 1. 保存并关闭代码编辑器窗口，然后在工具配置中保存更改。
-1. 在&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡中，批准两个待批准。 DTM标记已准备好插入您的网页。 有关如何在网页中插入DTM标记的详细信息，请参阅[在自定义页面模板中集成DTM](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/)。
+1. 在&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡中，批准两个待批准。 DTM标记已准备好插入您的网页。 有关如何在网页中插入DTM标记的详细信息，请参阅关于[在自定义页面模板中集成DTM的存档页面](https://web.archive.org/web/20180816221834/https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template)。

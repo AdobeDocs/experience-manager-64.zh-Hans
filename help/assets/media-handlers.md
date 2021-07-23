@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 工作流，演绎版
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2227'
 ht-degree: 3%
 
 ---
@@ -442,7 +442,7 @@ package my.own.stuff;/&amp;ast;&amp;ast;&amp;ast;@scr.component inherit=&quot;tr
 
 Experience Manager允许您在工作流中运行任何命令行工具，以转换资产（如ImageMagick）并将新演绎版添加到资产。 在托管Experience Manager服务器的磁盘上安装命令行工具，并向工作流添加和配置流程步骤。 调用的过程（称为`CommandLineProcess`）会根据特定的MIME类型进行筛选，并基于新呈现版本创建多个缩略图。
 
-可以自动在Experience Manager资产中运行和存储以下转化：
+以下转化可以自动运行并存储在[!DNL Experience Manager Assets]中：
 
 * 使用[ImageMagick](https://www.imagemagick.org/script/index.php)和[Ghostscript](https://www.ghostscript.com/)的EPS和AI转换
 * 使用[FFmpeg](https://ffmpeg.org/)进行FLV视频转码

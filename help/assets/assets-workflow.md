@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 工作流，演绎版
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1035'
 ht-degree: 2%
 
 ---
@@ -96,7 +96,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 
 ## 自动启动有条件处理资产的工作流 {#auto-execute-workflow-on-some-assets}
 
-管理员可以配置工作流，以根据预定义的条件自动执行和处理资产。 例如，对于业务线用户和营销人员而言，该功能对于在特定文件夹上创建自定义工作流非常有用。 假设某机构照片拍摄的所有资产都可以添加水印，或者可以处理由自由人上传的所有资产以创建特定演绎版。
+管理员可以配置工作流，以根据预定义的条件自动执行和处理资产。 例如，对于业务线用户和营销人员而言，该功能对于在特定文件夹上创建自定义工作流非常有用。 假设某个机构照片拍摄的所有资产都可以添加水印，或者可以处理由自由职业者上传的所有资产以创建特定演绎版。
 
 对于工作流模型，用户可以创建用于执行该模型的工作流启动器。 工作流启动器监视内容存储库中的更改，并在满足预定义条件时执行工作流。 管理员可以向营销人员提供创建工作流和配置启动器的访问权限。 用户可以修改默认的[!UICONTROL DAM更新资产]工作流，以添加处理特定资产所需的额外步骤。 工作流会对所有新上传的资产执行。 使用以下方法之一限制对特定资产执行额外步骤：
 
@@ -114,5 +114,4 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 * [创建工作流模型并扩展工作流功能](/help/sites-developing/workflows.md)
 * [执行工作流的方法](/help/sites-administering/workflows-starting.md)
 * [工作流最佳实践](/help/sites-developing/workflows-best-practices.md)
-* [有关使用工作流修改资产的社区文章](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 工作流，演绎版
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
+source-git-commit: bc27dee618ee57dc188c7f35a1af4d1dba80cf1b
 workflow-type: tm+mt
 source-wordcount: '2227'
 ht-degree: 3%
@@ -446,8 +446,8 @@ Experience Manager允许您在工作流中运行任何命令行工具，以转�
 
 * 使用[ImageMagick](https://www.imagemagick.org/script/index.php)和[Ghostscript](https://www.ghostscript.com/)的EPS和AI转换
 * 使用[FFmpeg](https://ffmpeg.org/)进行FLV视频转码
-* 使用[LAME](https://lame.sourceforge.net/)的MP3编码
-* 使用[SOX](https://sox.sourceforge.net/)进行音频处理
+* 使用[LAME](https://lame.sourceforge.io)的MP3编码
+* 使用[SOX](https://sox.sourceforge.io)进行音频处理
 
 >[!NOTE]
 >

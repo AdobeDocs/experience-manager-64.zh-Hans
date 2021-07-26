@@ -71,7 +71,7 @@ ht-degree: 24%
 
          [查看视频演绎版](video-renditions.md)
 
-[管理视频演绎版](managing-assets-touch-ui.md#managing-renditions)
+         [管理视频演绎版](managing-assets-touch-ui.md#managing-renditions)
 
       * [管理查看器预设](managing-viewer-presets.md)
       * [发布资产](publishing-dynamicmedia-assets.md)
@@ -83,7 +83,7 @@ ht-degree: 24%
 
       * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
 
-[编辑视频属性](managing-assets-touch-ui.md#editing-properties)
+         [编辑视频属性](managing-assets-touch-ui.md#editing-properties)
 
       * [管理数字资产的元数据](metadata.md)
       * [元数据架构](metadata-schemas.md)

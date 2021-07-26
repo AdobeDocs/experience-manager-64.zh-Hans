@@ -10,7 +10,7 @@ discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: 配置，混合模式
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 1%
@@ -801,7 +801,7 @@ AEM 6.4及更高版本将此预设保存在`/conf/global/settings/dam/dm/presets
 >[!NOTE]
 Dynamic Media在启用](#enabling-dynamic-media)后即可使用[。 但是，您可以选择通过配置Dynamic Media Image Server以满足特定规范或要求来微调安装。
 
-**先决条件**: __ 在配置Dynamic Media Image Server之前，请确保您的Windows虚拟机包含Microsoft Visual C++库的安装。运行Dynamic Media Image Server时需要这些库。 您可以在此处[下载Microsoft Visual C++ 2010 Redistributable Package(x64)](https://www.microsoft.com/en-us/download/details.aspx?id=14632)。
+**先决条件**: __ 在配置Dynamic Media Image Server之前，请确保您的Windows虚拟机包含Microsoft Visual C++库的安装。运行Dynamic Media Image Server时需要这些库。 您可以在此处[下载Microsoft Visual C++ 2010 Redistributable Package(x64)](https://www.microsoft.com/en-us/download/details.aspx?id=26999)。
 
 **要配置Dynamic Media图像服务器设置**:
 

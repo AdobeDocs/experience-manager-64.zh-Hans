@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 94%
@@ -45,7 +45,7 @@ ht-degree: 94%
 >
 >如果没有先将新闻稿发布到发布实例，或发布实例不可用，则以下操作将失败：更新电子邮件提供商、执行试运行，或发送新闻稿。请务必发布您的新闻稿，并确保发布实例已启动且正在运行。
 
-## 创建新闻稿体验  {#creating-a-newsletter-experience}
+## 创建新闻稿体验 {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
@@ -189,8 +189,6 @@ ht-degree: 94%
 
    ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
 
-1. 
-
    1. 输入&#x200B;**发件人**&#x200B;电子邮件地址
    1. 根据需要修改电子邮件的&#x200B;**主题**。
    1. 从下拉列表中选择一个&#x200B;**默认收件人列表**&#x200B;列表。
@@ -236,7 +234,7 @@ ht-degree: 94%
 >
 >如果没有先将新闻稿发布到发布实例，或发布实例不可用，则以下操作将失败：更新电子邮件提供商、执行试运行，或发送新闻稿。请务必发布您的新闻稿，并确保发布实例已启动且正在运行。
 
-### 从营销活动发送新闻稿  {#sending-newsletters-from-a-campaign}
+### 从营销活动发送新闻稿 {#sending-newsletters-from-a-campaign}
 
 要从营销活动中发出新闻稿，请执行以下操作：
 
@@ -262,7 +260,7 @@ ht-degree: 94%
    >
    >确保您是收件人之一，以此确保收到 Newsletter。
 
-### 从列表发送 Newsletter  {#sending-newsletters-from-a-list}
+### 从列表发送 Newsletter {#sending-newsletters-from-a-list}
 
 要从列表中发出新闻稿，请执行以下操作：
 
@@ -292,7 +290,7 @@ ht-degree: 94%
 
 此部分介绍如何订阅新闻稿。
 
-### 订阅新闻稿  {#subscribing-to-a-newsletter-1}
+### 订阅新闻稿 {#subscribing-to-a-newsletter-1}
 
 订阅 Newsletter（以 Geometrixx 网站为例）：
 

@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
 feature: 交互式通信
 exl-id: a689aead-7b39-4d66-8922-ae8910c5e9ef
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '2251'
 ht-degree: 0%
 
 ---
 
-# 交互式通信中的文本{#texts-in-interactive-communications}
+# 互动交流中的文本 {#texts-in-interactive-communications}
 
 创建和编辑要在交互式通信中使用的文本文档片段 — 文本是用于构建交互式通信的四种类型的文档片段之一。 其他三个包括条件、列表和布局片段。
 
@@ -88,8 +88,6 @@ ht-degree: 0%
 
 * 要允许代理在代理UI中编辑FDM属性的值，同时[使用代理UI准备和发送交互式通信](/help/forms/using/prepare-send-interactive-communication.md)，请点按该属性的&#x200B;**`[D]`**&#x200B;锁定图标，并确保该属性处于解锁状态。 属性的默认状态已锁定，且代理无法在代理UI中编辑该属性。
 
-* 
-
 您还可以使用表单数据模型属性来构建用于显示或隐藏部分内容的规则。 有关更多信息，请参阅[在文本中创建规则](#rules) 。
 
 ## 在文本文档片段中创建和使用变量 {#variables}
@@ -104,7 +102,7 @@ ht-degree: 0%
 
 创建或编辑文本文档片段时，可以创建和插入变量。 您创建的变量显示在代理UI的“数据”选项卡中。 代理在[使用代理UI](/help/forms/using/prepare-send-interactive-communication.md)准备和发送交互式通信时指定变量的值。
 
-### 创建变量{#create-variables}
+### 创建变量 {#create-variables}
 
 1. 在左窗格中，点按&#x200B;**[!UICONTROL 变量]**。
 
@@ -146,7 +144,7 @@ ht-degree: 0%
 * 关联的表单数据模型的属性
 * 您可能已在文本中创建的任何变量
 
-### 在文本{#create-rules-in-text}中创建规则
+### 以文本形式创建规则 {#create-rules-in-text}
 
 1. 创建或编辑文本时，请选择要使用规则条件化的文本字符串、段落或内容。
 
@@ -249,7 +247,7 @@ ht-degree: 0%
 
 文本编辑器内置了对210个特殊字符的支持。 管理员可以通过自定义](/help/forms/using/custom-special-characters.md)添加对更多/自定义特殊字符的支持。[
 
-## 搜索和替换文本{#search-features}
+## 搜索和替换文本 {#search-features}
 
 使用包含大量文本的文本文档片段时，需要搜索特定的文本字符串。 您可能还需要将特定文本字符串替换为替换字符串。
 

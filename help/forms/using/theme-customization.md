@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 exl-id: fb1e0bec-c943-4468-920d-8ef360a01365
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
-# 主题自定义{#theme-customization}
+# 主题自定义 {#theme-customization}
 
 您可以自定义HTML代码和CSS文件，以便为AEM Forms应用程序提供特定于组织的不同外观。 例如，您可以更改任务的背景颜色和高度或“起点”。 以下示例提供了更改说明：
 

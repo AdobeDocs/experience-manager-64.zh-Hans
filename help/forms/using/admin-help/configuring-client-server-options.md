@@ -9,21 +9,21 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
-feature: 文档安全
+feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '10283'
 ht-degree: 0%
 
 ---
 
-# 配置文档安全服务器{#configure-the-document-security-server}
+# 配置文档安全服务器 {#configure-the-document-security-server}
 
 1. 在管理控制台中，单击服务>文档安全>配置>服务器配置。
 1. 配置设置，然后单击确定。
 
-## 服务器配置设置{#server-configuration-settings}
+## 服务器配置设置 {#server-configuration-settings}
 
 **基本URL:** 基本文档安全URL，包含服务器名称和端口。附加到基础的信息会创建连接URL。 例如，附加了/edc/Main.do以访问网页。 用户还通过此URL响应外部用户注册邀请。
 
@@ -70,15 +70,15 @@ ht-degree: 0%
 
 **启用客户端凭据缓存：** 选择此选项可允许用户缓存其凭据（用户名和密码）。缓存用户的凭据时，无需在每次打开文档或单击Adobe Acrobat中“管理安全策略”页面上的“刷新”按钮时输入其凭据。 您可以指定用户必须再次提供其凭据的间隔天数。 将天数设置为0可无限期地缓存凭据。
 
-## 配置文档安全用户和管理员{#configuring-document-security-users-and-administrators}
+## 配置文档安全用户和管理员 {#configuring-document-security-users-and-administrators}
 
-### 为管理员分配文档安全角色{#assigning-document-security-roles-to-administrators}
+### 为管理员分配文档安全角色 {#assigning-document-security-roles-to-administrators}
 
 您的AEM表单环境包含一个或多个具有创建用户和组相应权限的管理员用户。 如果贵组织使用文档安全，则还必须至少分配一位管理员，以管理受邀用户和本地用户。
 
 管理员还必须具有管理控制台用户角色才能访问管理控制台。 （请参阅[创建和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。）
 
-### 配置可见用户和组{#configuring-visible-users-and-groups}
+### 配置可见用户和组 {#configuring-visible-users-and-groups}
 
 要在策略用户搜索期间查看选定域中的用户和组，超级管理员或策略集管理员必须选择域并将其添加到每个策略集的可见用户和组列表（在用户管理中创建）。
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 1. 导航至服务>文档安全>配置>我的策略，然后单击可见的用户和组选项卡。
 1. 单击添加域，然后根据需要添加现有域。
 
-## 添加扩展身份验证提供程序{#add-the-extended-authentication-provider}
+## 添加扩展身份验证提供程序 {#add-the-extended-authentication-provider}
 
 AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 执行以下步骤：
 
@@ -107,7 +107,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 1. 从“服务器配置”页启用扩展身份验证。 请参阅[服务器配置设置](configuring-client-server-options.md#server-configuration-settings)。
 1. 在用户管理配置文件中添加所需的SSO重定向URL。 请参阅[为扩展身份验证添加SSO重定向URL](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication)。
 
-### 为扩展身份验证{#add-sso-redirect-urls-for-extended-authentication}添加SSO重定向URL
+### 添加用于扩展身份验证的SSO重定向URL {#add-sso-redirect-urls-for-extended-authentication}
 
 启用扩展身份验证后，在Acrobat XI或ReaderXI中打开策略保护文档的用户将获得用于身份验证的对话框。 此对话框加载您在文档安全服务器设置中指定为扩展身份验证登陆URL的HTML页面。 请参阅[服务器配置设置](configuring-client-server-options.md#server-configuration-settings)。
 
@@ -128,7 +128,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 1. 保存文件，然后从“手动配置”页面导入更新的文件：在管理控制台中，单击设置>用户管理>配置>导入和导出配置文件。
 
-## 配置脱机安全性{#configuring-offline-security}
+## 配置离线安全性 {#configuring-offline-security}
 
 文档安全提供了在没有Internet或网络连接的情况下脱机使用受策略保护的文档的功能。 此功能要求策略允许脱机访问，如[指定用户和组的文档权限](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups)中所述。 在脱机使用具有此策略的文档之前，收件人必须在联机时打开该文档，并在出现提示时单击“是”启用脱机访问。 也可请求收件人验证其身份。 然后，收件人可以在策略中指定的脱机租用期内脱机使用文档。
 
@@ -136,7 +136,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 由于允许脱机访问的文档需要在脱机存储文件的计算机上缓存关键材料，因此，如果未经授权的用户能够获取关键材料，则文件可能会受到损害。 为了弥补这种可能性，提供了计划和手动密钥滚动选项，您可以对其进行配置以防止未经授权的人使用密钥访问文档。
 
-### 设置默认的脱机租用期{#set-a-default-offline-lease-period}
+### 设置默认的脱机租用期 {#set-a-default-offline-lease-period}
 
 受策略保护文档的收件人可以将文档脱机处理，时间为策略中指定的天数。 在最初将文档与文档安全性同步之后，收件人可以脱机使用它，直到脱机租用期到期。 当租赁期到期时，收件人必须联机并登录以与文档安全同步，以继续使用文档。
 
@@ -146,7 +146,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 1. 在“默认离线租赁期”框中，键入离线租赁期的天数。
 1. 单击确定。
 
-### 管理密钥转换{#manage-key-rollovers}
+### 管理密钥转换 {#manage-key-rollovers}
 
 文档安全使用加密算法和许可证来保护文档。 当对文档进行加密时，文档安全会生成并管理一个名为&#x200B;*DocKey*&#x200B;的解密密钥，该密钥将传递给客户端应用程序。 如果保护文档的策略允许脱机访问，则还会为每个对文档具有脱机访问权限的用户生成名为&#x200B;*主密钥*&#x200B;的脱机密钥。
 
@@ -186,7 +186,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 1. 单击“立即滚动”键，然后单击“确定”。
 1. 等待大约10分钟。
 
-## 配置事件审核和隐私设置{#configuring-event-auditing-and-privacy-settings}
+## 配置事件审核和隐私设置 {#configuring-event-auditing-and-privacy-settings}
 
 文档安全可以审核和记录与与受策略保护的文档、策略、管理员和服务器的交互相关的事件的信息。 您可以配置事件审核，还可以指定要审核的事件类型。 要审核特定文档的事件，还必须启用策略上的审核选项。
 
@@ -199,7 +199,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 * 用户事件，如外部用户邀请和注册、激活和停用的用户帐户、用户密码的更改以及配置文件更新
 * AEM表单事件，如版本不匹配、目录服务器和授权提供程序不可用以及服务器配置更改
 
-### 启用或禁用事件审核{#enable-or-disable-event-auditing}
+### 启用或禁用事件审核 {#enable-or-disable-event-auditing}
 
 您可以启用和禁用对与服务器、受策略保护的文档、策略、策略集和用户相关的事件的审核。 启用事件审核后，您可以选择审核所有可能的事件，也可以选择要审核的特定事件。
 
@@ -220,7 +220,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 >
 >使用网页时，请避免使用浏览器按钮，如“返回”按钮、“刷新”按钮以及“返回”或“向前”箭头，因为此操作可能会导致不需要的数据捕获和数据显示问题。
 
-### 启用或禁用隐私通知{#enable-or-disable-privacy-notification}
+### 启用或禁用隐私通知 {#enable-or-disable-privacy-notification}
 
 您可以启用和禁用隐私通知消息。 启用隐私通知时，当收件人尝试打开受策略保护的文档时，会显示一条消息。 通知用户文档使用情况正在审核中。 您还可以指定一个URL，用户可以使用该URL查看隐私政策页面（如果有）。
 
@@ -238,7 +238,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 >
 >禁用隐私声明不会禁用文档使用情况审核。 通过扩展使用情况跟踪支持的开箱即用审核操作和自定义操作仍然可以收集用户行为信息。
 
-### 导入自定义审核事件类型{#import-a-custom-audit-event-type}
+### 导入自定义审核事件类型 {#import-a-custom-audit-event-type}
 
 如果您使用支持审核其他事件（如特定于特定文件类型的事件）的文档安全启用应用程序，则Adobe合作伙伴可以为您提供自定义审核事件，您可以将这些事件导入到文档安全中。 仅当Adobe合作伙伴向您提供了自定义事件类型时，才使用此功能。
 
@@ -247,13 +247,13 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 1. 如果找到相同的事件代码和命名空间组合，则导入会覆盖服务器上的现有自定义审核事件类型。
 1. 单击确定。
 
-### 删除自定义审核事件类型{#delete-a-custom-audit-event-type}
+### 删除自定义审核事件类型 {#delete-a-custom-audit-event-type}
 
 1. 在管理控制台中，单击服务>文档安全>配置>事件管理。
 1. 选中要删除的自定义审核事件类型旁边的复选框，然后单击删除。
 1. 单击确定。
 
-### 导出审核事件{#export-audit-events}
+### 导出审核事件 {#export-audit-events}
 
 您可以将审核事件导出到文件以进行存档。
 
@@ -268,7 +268,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 1. 单击导出。 如果要取消导出，请单击“取消导出”。 如果其他用户计划了导出，则在导出完成之前，“取消导出”按钮将不可用。 如果其他用户计划了导出，则“取消导出”按钮将不可用。 要检查计划的“导出”或“删除”是否已启动或已完成，请单击“刷新”。
 
-### 删除审核事件{#delete-audit-events}
+### 删除审核事件 {#delete-audit-events}
 
 您可以删除超过指定天数的审核事件。
 
@@ -276,7 +276,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 1. 在“删除审核事件”下，在“删除审核事件早于”框中指定天数。
 1. 单击删除。单击导出。 如果要取消删除，请单击“取消删除”。 如果其他用户计划了删除，则取消删除按钮在导出完成之前不可用。 如果其他用户计划了导出，则“取消删除”按钮将不可用。 要检查计划的删除是否已启动或已完成，请单击刷新。
 
-### 事件审核选项{#event-auditing-options}
+### 事件审核选项 {#event-auditing-options}
 
 您可以启用和禁用事件审核，并指定要审核的事件类型。
 
@@ -372,7 +372,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 **服务器配置更改：** 对通过网页或通过导入config.xml文件手动完成的服务器配置进行的更改。这包括对基本URL、会话超时、登录锁定、目录设置、密钥转换、用于外部注册的SMTP服务器设置、水印配置、显示选项等的更改。
 
-## 配置扩展的使用情况跟踪{#configuring-extended-usage-tracking}
+## 配置扩展的使用情况跟踪 {#configuring-extended-usage-tracking}
 
 文档安全可以跟踪对受保护文档可能执行的各种自定义事件。 您可以在全局级别或策略级别启用对文档安全服务器中事件的跟踪。 然后，您可以设置一个JavaScript来捕获在受保护的PDF文档中执行的特定操作，例如单击按钮或保存文档。 此使用情况数据将作为键值对中的XML文件发送，您可以使用该文件进行进一步分析。 访问受保护文档的最终用户可以允许或拒绝从客户端应用程序进行此类跟踪。
 
@@ -380,7 +380,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 启用跟踪后，所有随后创建的策略都将默认启用跟踪。 在服务器上启用跟踪之前创建的策略将需要手动更新。
 
-### 启用或禁用扩展的使用情况跟踪{#enable-or-disable-extended-usage-tracking}
+### 启用或禁用扩展的使用情况跟踪 {#enable-or-disable-extended-usage-tracking}
 
 在开始之前，请确保已启用“服务器审核”。 有关审核的更多信息，请参阅[配置事件审核和隐私设置](configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings)。
 
@@ -390,12 +390,12 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 要查看跟踪的事件，您可以使用“事件”页面上的“文档事件”过滤器。 使用JavaScript跟踪的事件将标记为详细使用情况跟踪。 有关事件的更多信息，请参阅[监视事件](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) 。
 
-## 配置文档安全显示设置{#configure-document-security-display-settings}
+## 配置文档安全显示设置 {#configure-document-security-display-settings}
 
 1. 在管理控制台中，单击服务>文档安全>配置>显示选项。
 1. 配置设置，然后单击确定。
 
-### 显示设置{#display-settings}
+### 显示设置 {#display-settings}
 
 **要显示搜索结果的行：** 执行搜索时在页面上显示的行数。
 
@@ -423,7 +423,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 **仅显示受信任的凭据发行者：** 如果选择此选项，则客户端应用程序仅向用户显示AEM表单配置为信任的凭据发行者的证书（请参阅管理证书和凭据）。如果未选择此选项，则会向用户显示用户系统上所有证书的列表。
 
-## 配置动态水印{#configure-dynamic-watermarks}
+## 配置动态水印 {#configure-dynamic-watermarks}
 
 使用文档安全性，您可以为动态水印选项配置默认设置，在创建策略时可以应用该设置。 *水印*&#x200B;是文档中文本叠加的图像。 它有助于跟踪文档的内容，并有助于识别内容的非法使用。
 
@@ -435,7 +435,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 请注意，动态水印与用户可直接添加到Acrobat中文档的水印不同。 结果，在受策略保护的文档中可以有两个水印。
 
-### 创建水印{#considerations-when-creating-watermarks}时的注意事项
+### 创建水印时的注意事项 {#considerations-when-creating-watermarks}
 
 您可以创建具有多个水印元素的动态水印，每个元素都指定为文本或PDF。 在水印中最多可以包含五个元素。
 
@@ -458,7 +458,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 * 在指定水印元素的位置时，请确保最多一个元素具有相同的位置。 如果两个水印元素具有相同的位置，如中心，则它们会在文档上出现重叠，并按顺序添加到水印中。
 * 指定字体大小和类型时，请确保文本的长度在页面中完全可见。 文本内容会滚动到新行中，因此您希望在边距中显示的水印内容可能会与页面上的内容区域重叠。 但是，如果文档在Acrobat 9中打开，则超出单行的文本会被截断。
 
-### 动态水印的限制{#limitations-of-dynamic-watermarks}
+### 动态水印的限制 {#limitations-of-dynamic-watermarks}
 
 某些客户端应用程序可能不支持动态水印。 请参阅相应的Acrobat Reader DC扩展帮助。 此外，请记住以下支持动态水印的Acrobat版本：
 
@@ -472,7 +472,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 * Acrobat 9.0及更早版本Acrobat 9.0及更早版本不支持动态水印中的策略名称。 如果Acrobat 9.0打开一个受策略保护的文档，其中包含策略名称和其他动态数据的动态水印，则该水印将显示为不包含策略名称。 如果动态水印仅包含策略名称，则Acrobat会显示错误消息
 
-### 添加动态水印模板{#add-a-dynamic-watermark-template}
+### 添加动态水印模板 {#add-a-dynamic-watermark-template}
 
 您可以创建动态水印模板。 这些模板仍可用作管理员或用户创建的策略的配置选项。
 
@@ -520,14 +520,14 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 1. 单击水印元素下的&#x200B;**New**&#x200B;以根据需要添加更多水印元素。
 1. 单击确定。
 
-### 编辑动态水印模板{#edit-a-dynamic-watermark-template}
+### 编辑动态水印模板 {#edit-a-dynamic-watermark-template}
 
 1. 在管理控制台中，单击服务>文档安全>配置>水印。
 1. 在列表中单击相应的水印。
 1. 在“编辑水印”页面上，根据需要更改设置。
 1. 单击确定。
 
-### 删除动态水印模板{#delete-a-dynamic-watermark-template}
+### 删除动态水印模板 {#delete-a-dynamic-watermark-template}
 
 删除动态水印时，该动态水印不再可添加到新策略中。 但是，水印会保留在当前使用该水印的现有策略上，并且当前受保护策略的文档会继续显示动态水印，直到您或用户编辑包含已删除水印的策略为止。 编辑策略后，将不再应用水印。 出现一条消息，指示策略上的现有水印已被删除，用户可以选择另一个水印来替换它。
 
@@ -535,7 +535,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 1. 选中相应水印旁边的复选框，然后单击删除。
 1. 单击确定。
 
-## 配置受邀用户注册{#configuring-invited-user-registration}
+## 配置受邀用户注册 {#configuring-invited-user-registration}
 
 您组织外部的用户可以使用文档安全进行注册。 注册并激活其帐户的受邀用户可以使用其电子邮件地址和注册时创建的密码登录以记录安全性。 已注册的受邀用户可以使用他们有权使用的受策略保护的文档。
 
@@ -573,7 +573,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 1. （可选）在“内置注册”下，选择“是”以启用此选项。 如果不启用内置注册，则必须设置自己的用户注册系统。
 1. 单击确定。
 
-### 排除或包含外部用户或组{#exclude-or-include-an-external-user-or-group}
+### 排除或包含外部用户或群组 {#exclude-or-include-an-external-user-or-group}
 
 您可以限制某些外部用户或用户组使用文档安全性进行注册。 例如，此选项对于允许访问特定用户组但排除属于该组的特定个人非常有用。
 
@@ -583,7 +583,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 **包含：** 键入要包含的用户或组的电子邮件地址。要包含多个用户或组，请在新行上键入每个电子邮件地址。 要包含属于某个特定域的所有用户，请输入通配符和域名。 例如，要在example.com域中包含所有用户，请输入&amp;ast;.example.com。
 
-### 服务器和注册帐户参数{#server-and-registration-account-parameters}
+### 服务器和注册帐户参数 {#server-and-registration-account-parameters}
 
 以下设置位于“受邀用户注册”页面的“常规设置”区域。
 
@@ -627,7 +627,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 >
 >如果您对“受邀用户注册”选项进行了任何更改，则config.xml文件将被覆盖，并且TLS将被停用。 如果覆盖更改，您需要执行上述步骤以重新激活对“已邀请用户注册”的TLS支持。
 
-### 注册邀请电子邮件设置{#registration-invitation-email-settings}
+### 注册邀请电子邮件设置 {#registration-invitation-email-settings}
 
 当您创建新的受邀用户帐户或现有用户添加之前未注册或受邀注册到策略的外部收件人时，文档安全会自动发出注册邀请电子邮件。 该电子邮件包含一个链接，收件人可使用该链接访问注册页面并输入个人帐户信息，包括用户名和密码。 密码可以是八个字符的任意组合。
 
@@ -643,7 +643,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 **消息：** 在消息正文中显示的邀请用户注册的文本。
 
-### 激活电子邮件设置{#activation-email-settings}
+### 激活电子邮件设置 {#activation-email-settings}
 
 在受邀用户注册后，文档安全会发送一封激活电子邮件。 激活电子邮件包含指向帐户激活页面的链接，用户可在该页面激活其帐户。 激活帐户后，用户可以使用其电子邮件地址和注册时创建的密码登录以记录安全性。
 
@@ -663,7 +663,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 **消息：** 消息正文中显示的用于指示需要激活收件人用户帐户的消息文本。您可能还希望包含诸如如何联系管理员以获取新密码等信息。
 
-### 配置密码重置电子邮件{#configure-a-password-reset-email}
+### 配置密码重置电子邮件 {#configure-a-password-reset-email}
 
 如果必须重置受邀用户的密码，则会生成一封确认电子邮件，邀请用户选择新密码。 无法确定用户的密码；如果用户忘记了该设置，则必须重置该设置。
 
@@ -675,7 +675,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 **消息：** 消息正文中显示的用于指示已重置收件人外部用户密码的消息文本。
 
-## 允许用户和组创建策略{#enable-users-and-groups-to-create-policies}
+## 允许用户和组创建策略 {#enable-users-and-groups-to-create-policies}
 
 “配置”页面包含指向“我的策略”页面的链接，在该页面中，您可以指定哪些最终用户可以创建我的策略，以及哪些用户和组在搜索结果中可见。 “我的策略”页面包含两个选项卡：
 
@@ -685,7 +685,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 在授予用户创建自定义策略的权限之前，请考虑您希望各个用户拥有的访问权限或控制权限。 此外，还请考虑在使用户和组对搜索可见时，您希望其显示的情况。
 
-### 指定可以创建策略的用户和组{#specify-users-and-groups-who-can-create-policies}
+### 指定可以创建策略的用户和组 {#specify-users-and-groups-who-can-create-policies}
 
 以管理员身份指定哪些用户和组可以创建自定义策略。 此权限可以在用户和群组级别设置。 搜索功能可在用户管理数据库中搜索用户和组。
 
@@ -701,14 +701,14 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 您选定的用户和组现在具有创建自定义策略的权限。
 
-### 从用户或组{#remove-the-create-custom-policies-permission-from-a-user-or-group}中删除创建自定义策略权限
+### 从用户或组中删除创建自定义策略权限 {#remove-the-create-custom-policies-permission-from-a-user-or-group}
 
 1. 在文档安全页面上，单击配置>我的策略。
 1. 在“我的策略”页面上，单击创建策略选项卡。 将显示有权创建自定义策略的用户和组。
 1. 选中要从此权限中删除的用户和组旁边的复选框。
 1. 单击删除，然后单击确定。
 
-### 指定在搜索中可见的用户和组{#specify-users-and-groups-that-are-visible-in-searches}
+### 指定在搜索中可见的用户和组 {#specify-users-and-groups-that-are-visible-in-searches}
 
 当用户管理其自定义策略时，他们可以搜索要添加到其策略中的用户和组。 您必须指定在这些搜索中显示用户和组的域。
 
@@ -716,7 +716,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 1. 在“我的策略”页面上，单击可见的用户和群组选项卡。
 1. 要使域中的用户和组可见，请单击添加域，选择域，然后单击添加。 要删除域，请选中域名旁边的复选框，然后单击删除。
 
-## 手动编辑文档安全配置文件{#manually-editing-the-document-security-configuration-file}
+## 手动编辑文档安全配置文件 {#manually-editing-the-document-security-configuration-file}
 
 您可以导入和导出存储在文档安全数据库中的配置信息。 例如，当您从暂存环境移动到生产环境时，您可能希望创建配置信息的备份副本，或者您可能希望编辑只能配置为编辑此文件的高级选项。
 
@@ -749,12 +749,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 1. 单击浏览以转到配置文件，然后单击导入。 不能直接在“文件名”(File Name)框中键入路径。
 1. 单击确定。
 
-1. 
-1. 
-1. 
-1. 
-
-### 指定离线同步的超时时间段{#specify-a-timeout-period-for-offline-synchronization}
+### 指定离线同步的超时时间段 {#specify-a-timeout-period-for-offline-synchronization}
 
 文档安全允许用户在未连接到文档安全服务器时打开并使用受保护的文档。 用户的客户端应用程序必须定期与服务器同步，以保留离线使用的有效文档。 当用户首次打开受保护的文档时，系统会询问他们的计算机是否应被授权执行定期客户端同步。
 
@@ -772,7 +767,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 1. 导入配置文件。 （请参阅[手动编辑文档安全配置文件](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
 
-### 拒绝特定应用程序的文档安全服务{#denying-document-security-services-for-specific-applications}
+### 拒绝特定应用程序的文档安全服务 {#denying-document-security-services-for-specific-applications}
 
 您可以配置文档安全性，以拒绝对满足特定条件的应用程序提供服务。 标准可以指定单个属性（如平台名称），也可以指定多组属性。 此功能可帮助您控制必须处理的请求文档安全性。 以下是此功能的一些应用程序：
 
@@ -947,7 +942,7 @@ Acrobat Reader DC Extensions for Microsoft Office是与Microsoft Word、Microsof
  </node
 ```
 
-### 更改水印配置参数{#change-the-watermark-configuration-parameters}
+### 更改水印配置参数 {#change-the-watermark-configuration-parameters}
 
 默认情况下，您最多可以在水印中指定五个元素。 此外，要用作水印的PDF文档的最大文件大小限制为100KB。 您可以在config.xml文件中更改这些参数。
 
@@ -968,7 +963,7 @@ Acrobat Reader DC Extensions for Microsoft Office是与Microsoft Word、Microsof
 
 1. 导入配置文件。 （请参阅[手动编辑文档安全配置文件](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
 
-### 禁用外部链接{#disabling-external-links}
+### 禁用外部链接 {#disabling-external-links}
 
 许多文档安全用户在使用Right Management用户界面时，无法访问外部链接，如&#x200B;**www.adobe.com**:
 
@@ -987,7 +982,7 @@ Acrobat Reader DC Extensions for Microsoft Office是与Microsoft Word、Microsof
 
 1. 导入配置文件。 （请参阅[手动编辑文档安全配置文件](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
 
-### 为传输层安全(TLS){#configuration-to-enable-smtp-for-transport-layer-security-tls}启用SMTP的配置
+### 为传输层安全(TLS)启用SMTP的配置 {#configuration-to-enable-smtp-for-transport-layer-security-tls}
 
 对config.xml所做的以下更改为“受邀用户注册”功能启用了TLS支持。
 
@@ -1004,7 +999,7 @@ Acrobat Reader DC Extensions for Microsoft Office是与Microsoft Word、Microsof
 1. 保存`config.xml`。
 1. 导入配置文件。 （请参阅[手动编辑文档安全配置文件](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
 
-### 禁用文档安全文档{#disable-soap-endpoints-for-document-security-documents}的SOAP端点
+### 禁用文档安全文档的SOAP端点 {#disable-soap-endpoints-for-document-security-documents}
 
 对config.xml进行了以下更改，以禁用文档安全文档的SOAP端点。
 

@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 创建、管理、交付和优化数字资产。
-source-git-commit: 0d660388cd0fbbf98076610d18c19f480c75ef11
+source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 50%
+source-wordcount: '626'
+ht-degree: 49%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 50%
    + [添加图像映射](image-maps.md)
    + [使用MSM重复使用资产](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Experience League 发布的 Dynamic Media 新闻稿](dynamic-media-newsletter.md)
+   + [Dynamic Media新闻稿存档(按Experience League)](dynamic-media-newsletter.md)
    + [设置 Dynamic Media](administering-dynamic-media.md)
    + [使用 Dynamic Media](dynamic-media.md)
    + [配置 Dynamic Media — Scene7 模式](config-dms7.md)

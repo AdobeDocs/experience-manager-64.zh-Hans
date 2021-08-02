@@ -10,7 +10,7 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: 5c78edf8-148f-41a3-8b11-c1dada34090e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 4%
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 * 启用资源（请参阅[标记启用资源](/help/communities/functions.md#catalog-function)）
 
-## 标记功能{#tag-features}
+## 标记功能 {#tag-features}
 
 AEM中标记的一些功能包括：
 
@@ -58,7 +58,7 @@ AEM中标记的一些功能包括：
    * 确保将标记与使用这些标记的页面一起打包
    * 确保[标记权限](#setting-tag-permissions)启用读取访问权限
 
-## 标记控制台{#tagging-console}
+## 标记控制台 {#tagging-console}
 
 标记控制台用于创建和管理标记及其分类。 一个目标是避免拥有许多与基本相同的内容相关的类似标记：例如，页面和页面，鞋和鞋。
 
@@ -76,7 +76,7 @@ AEM中标记的一些功能包括：
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsole.png)
 
-### 创建命名空间{#creating-a-namespace}
+### 创建命名空间 {#creating-a-namespace}
 
 要创建新命名空间，请选择&#x200B;**`Create Namespace`**&#x200B;图标。
 
@@ -97,7 +97,7 @@ AEM中标记的一些功能包括：
 
 * 选择&#x200B;**创建**
 
-### 对标记{#operations-on-tags}的操作
+### 标记操作 {#operations-on-tags}
 
 选择命名空间或其他标记可执行以下操作：
 
@@ -117,7 +117,7 @@ AEM中标记的一些功能包括：
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
-### 选择命名空间标记{#selecting-a-namespace-tag}
+### 选择命名空间标记 {#selecting-a-namespace-tag}
 
 首次选择时，如果命名空间不包含任何标记，则属性将显示在右侧，否则将显示子标记。 选定的每个标记将显示其包含的标记或其属性（如果没有子标记）。
 
@@ -125,7 +125,7 @@ AEM中标记的一些功能包括：
 
 ![chlimage_1-186](assets/chlimage_1-186.png) ![chlimage_1-187](assets/chlimage_1-187.png)
 
-### 查看标记属性{#viewing-tag-properties}
+### 查看标记属性 {#viewing-tag-properties}
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
@@ -133,7 +133,7 @@ AEM中标记的一些功能包括：
 
 ![chlimage_1-109](assets/chlimage_1-189.png)
 
-### 显示标记引用{#showing-tag-references}
+### 显示标记引用 {#showing-tag-references}
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
@@ -147,9 +147,9 @@ AEM中标记的一些功能包括：
 
 将鼠标悬停在参照上时，参照的路径将显示为工具提示。
 
-![chlimage_1-112](assets/chlimage_1-192.png)
+![chlimage_1-192](assets/chlimage_1-192.png)
 
-### 创建标记{#creating-tags}
+### 创建标记 {#creating-tags}
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -205,7 +205,6 @@ AEM中标记的一些功能包括：
 命名为最初显示当前 
 `name`标记的标记。可以输入新的`name`。
 
-* 
 * 选择&#x200B;**Save**
 
 ### 合并标记 {#merging-tags}
@@ -239,7 +238,7 @@ intoBrowse以选择要合并到中的标记的路径。
 
 要发布分类（命名空间和子标记），最佳做法是创建命名空间的[包](/help/sites-administering/package-manager.md)（请参阅[分类根节点](/help/sites-developing/framework.md#taxonomy-root-node)）。 在创建资源包之前，请确保[将权限](#setting-tag-permissions)应用到命名空间。
 
-### 取消发布标记{#unpublishing-tags}
+### 取消发布标记 {#unpublishing-tags}
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
@@ -251,7 +250,7 @@ intoBrowse以选择要合并到中的标记的路径。
 
 选择命名空间或其他标记后，选择**`Delete`**图标将从创作环境中永久删除该标记。 如果标记已发布，则也会从发布环境中将其删除。 如果所选标记是容器标记，则其所有子标记也将被删除。
 
-## 设置标记权限{#setting-tag-permissions}
+## 设置标记权限 {#setting-tag-permissions}
 
 标记权限为[&#39;secure（默认）&#39;](/help/sites-administering/production-ready.md);发布环境的最佳实践，它要求明确允许标记具有读取权限。 基本上，这是通过在创作上设置权限后创建标记命名空间包，并在所有发布实例上安装该包来完成的。
 

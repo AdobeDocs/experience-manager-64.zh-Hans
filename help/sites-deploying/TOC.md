@@ -8,9 +8,9 @@ breadcrumb-title: Deploying 指南
 user-guide-description: 详细了解 Adobe Experience Manager 6.4 的安装、部署和架构，包括我们的 Adobe Managed Services 云部署。
 feature: 部署
 role: Architect
-source-git-commit: 5b0eef590f9a0c709fa21b8dbcf6a2f286a20237
+source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '373'
 ht-degree: 17%
 
 ---
@@ -56,11 +56,11 @@ ht-degree: 17%
    + [卸载作业](offloading.md)
    + [单点登录](single-sign-on.md)
    + [资源映射](resource-mapping.md)
-   + [启用HTTP Over SSL](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/ssl-by-default.html)
+   + [启用HTTP Over SSL](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/ssl-by-default.html)
    + [一致性和遍历检查](consistency-check.md)
    + [性能准则](performance-guidelines.md)
    + [性能优化](configuring-performance.md)
-   + [Assets性能指南](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en)
+   + [Assets性能指南](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html)
    + [配置操作方法文章](ht-deploy.md)
    + [删除Geometrixx站点](removing-the-geometrixx-sites.md)
    + [配置Web控制台](configuring-web-console.md)

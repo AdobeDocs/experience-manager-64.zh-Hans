@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: 视频
 role: User
-source-git-commit: d5b4f559b20c8671bd648d240b54cb65f73fd222
+source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
 workflow-type: tm+mt
-source-wordcount: '10377'
+source-wordcount: '10387'
 ht-degree: 23%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 23%
 
          [查看视频演绎版](video-renditions.md)
 
-         [管理视频演绎版](managing-assets-touch-ui.md#managing-renditions)
+[管理视频演绎版](managing-assets-touch-ui.md#managing-renditions)
 
       * [管理查看器预设](managing-viewer-presets.md)
       * [发布资产](publishing-dynamicmedia-assets.md)
@@ -85,7 +85,7 @@ ht-degree: 23%
 
       * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
 
-         [编辑视频属性](managing-assets-touch-ui.md#editing-properties)
+[编辑视频属性](managing-assets-touch-ui.md#editing-properties)
 
       * [管理数字资产的元数据](metadata.md)
       * [元数据架构](metadata-schemas.md)
@@ -1034,7 +1034,7 @@ Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）�
 >
 >使用的视频播放器必须支持使用章节标记。 Dynamic Media视频播放器确实支持章节标记，但使用第三方视频播放器可能不支持。
 
-如果需要，您可以创建带有章节的自定义视频查看器并为其添加品牌标识，而不是使用视频查看器预设。 有关使用章节导航创建您自己的HTML5查看器的说明，请在AdobeHTML5查看器SDK API中，引用类`s7sdk.video.VideoPlayer`和`s7sdk.video.VideoScrubber`下的标题“Customizing Behavior Using Modifiers”（使用修饰符自定义行为）。 请参阅[HTML5查看器SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html))文档。
+如果需要，您可以创建带有章节的自定义视频查看器并为其添加品牌标识，而不是使用视频查看器预设。 有关使用章节导航创建您自己的HTML5查看器的说明，请在AdobeHTML5查看器SDK API中，引用类`s7sdk.video.VideoPlayer`和`s7sdk.video.VideoScrubber`下的标题“Customizing Behavior Using Modifiers”（使用修饰符自定义行为）。 请参阅[HTML5查看器SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)文档。
 
 为视频创建章节列表的方式与创建字幕的方式大致相同。 即，创建一个WebVTT文件。 但是，请注意，此文件必须与您可能还在使用的任何WebVTT字幕文件分开；不能将字幕和章节合并到一个WebVTT文件中。
 

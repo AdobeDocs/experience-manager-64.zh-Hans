@@ -1,12 +1,12 @@
 ---
+title: Dynamic Media新闻稿存档
 description: '按Experience League存档的Dynamic Media新闻稿是每月一次的新闻稿。 它旨在帮助您快速掌握Dynamic Media和Dynamic Media Classic，以便您能够立即实现价值。 已存档的快讯包含宝贵的知识建设资源，这些资源可在此一站式商店快讯中提供，该快讯现已停止。 存档的新闻稿包括操作方法视频和解决方案概述。 此外，还介绍了图像预设、查看器预设和视频配置文件等关键特性和功能。  '
 keywords: Dynamic Media；新闻稿；产品更新；提示和技巧；事件；客户成功；博客；博客；图像；视频；功能
 solution: Experience Manager, Dynamic Media Classic
-title: Dynamic Media新闻稿存档
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: 协作，Dynamic Media Classic
 role: Admin,User
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 77d312235854e85b2a486365092fbe8a802faccf
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 0%
@@ -54,10 +54,6 @@ ht-degree: 0%
    * 查看2020年在线Adobe Summit中的Dynamic Media会议。
    * 进一步了解免费的Dynamic Media Classic审核。
    * 会见客户成功服务高级项目经理John Monroe。
-
-<!--     >[!IMPORTANT]
-    >
-    >We want to make sure we are only sending the Dynamic Media newsletter to those who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[2020年2月，第2期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 

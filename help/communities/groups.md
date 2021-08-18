@@ -12,9 +12,9 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1638'
 ht-degree: 1%
 
 ---
@@ -100,7 +100,7 @@ ht-degree: 1%
 
 ![社区组主题](assets/communitygrouptheme.png)
 
-该框架使用[TwitterBootstrap](https://twitterbootstrap.org/)为网站引入响应式灵活设计。 可以选择多个预加载的Bootstrap主题之一来设置所选社区组模板的样式，或者可以上传Bootstrap主题。
+该框架使用`Twitter Bootstrap`为网站引入响应式灵活设计。 可以选择多个预加载的Bootstrap主题之一来设置所选社区组模板的样式，或者可以上传Bootstrap主题。
 
 选择后，将使用不透明的蓝色复选标记覆盖主题。
 

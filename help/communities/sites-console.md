@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3237'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 3%
 
 ![sitetheme-1](assets/sitetheme-1.png)
 
-该框架使用[TwitterBootstrap](https://twitterbootstrap.org/)为网站引入响应式灵活设计。 可以选择多个预加载的Bootstrap主题之一来设置所选社区站点模板的样式，或者可以上传Bootstrap主题。
+该框架使用`Twitter Bootstrap`为网站引入响应式灵活设计。 可以选择多个预加载的Bootstrap主题之一来设置所选社区站点模板的样式，或者可以上传Bootstrap主题。
 
 选择后，将使用不透明的蓝色复选标记覆盖主题。
 

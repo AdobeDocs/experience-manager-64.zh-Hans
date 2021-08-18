@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2145'
 ht-degree: 2%
 
 ---
 
-# 部署社区{#deploying-communities}
+# 部署社区 {#deploying-communities}
 
 ## 前提条件 {#prerequisites}
 
@@ -31,7 +31,7 @@ ht-degree: 2%
    * [用于MSRP的MongoDB](msrp.md)
    * [适用于ASRP的Adobe云](asrp.md)
 
-## 安装核对清单{#installation-checklist}
+## 安装核对清单 {#installation-checklist}
 
 **对于 [AEM平台](../../help/sites-deploying/deploy.md#what-is-aem)**
 
@@ -88,21 +88,21 @@ ht-degree: 2%
 
 
 
-## 最新版本{#latest-releases}
+## 最新版本 {#latest-releases}
 
 AEM 6.4 Communities GA包含Communities包。 要了解AEM 6.4 [Communities](/help/release-notes/release-notes.md#experience-manager-communities)的更新，请参阅[AEM 6.4发行说明](/help/release-notes/release-notes.md#release-information)。
 
-### AEM 6.4更新{#aem-updates}
+### AEM 6.4更新 {#aem-updates}
 
 从AEM 6.3开始，对Communities的更新将作为AEM累积修补程序包和Service Pack的一部分提供。
 
 有关AEM 6.4的最新更新，请务必检查[Adobe Experience Manager 6.4累积修补程序包和Service Pack](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html)。
 
-### 版本历史记录{#version-history}
+### 版本历史记录 {#version-history}
 
 与AEM 6.4及更高版本一样，AEM Communities功能和修补程序是AEM Communities累积修补程序包和Service Pack的一部分。 因此，没有单独的功能包。
 
-### MySQL {#jdbc-driver-for-mysql}的JDBC驱动程序
+### MySQL的JDBC驱动程序 {#jdbc-driver-for-mysql}
 
 “两个社区”功能使用MySQL数据库：
 
@@ -137,11 +137,11 @@ AEM 6.4 Communities GA包含Communities包。 要了解AEM 6.4 [Communities](/he
 
 有关安装包的更多信息，请参阅[Web控制台](/help/sites-deploying/web-console.md#bundles)页面。
 
-#### 示例：已安装的MySQL连接器包{#example-installed-mysql-connector-bundle}
+#### 示例：已安装的MySQL连接器包 {#example-installed-mysql-connector-bundle}
 
 ![chlimage_1-410](assets/chlimage_1-410.png)
 
-### SCORM包{#scorm-package}
+### SCORM包 {#scorm-package}
 
 可共享内容对象引用模型(SCORM)是用于电子学习的标准和规范的集合。 SCORM还定义如何将内容打包到可传输的ZIP文件中。
 
@@ -182,7 +182,7 @@ AEM 6.4 Communities GA包含Communities包。 要了解AEM 6.4 [Communities](/he
 1. 监视`engine_upgrade.log`文件，以了解任何类型的错误和模式升级状态。
 1. 在发布者的`https://<hostname>:<port>/system/console/configMgr`中，在CSRF筛选器的&#x200B;**[!UICONTROL 排除的路径]**&#x200B;属性中添加`/content/communities/scorm/RecordResults`。
 
-### SCORM日志记录{#scorm-logging}
+### SCORM日志记录 {#scorm-logging}
 
 安装后，所有启用活动都会被垂直记录到系统控制台。
 
@@ -196,14 +196,15 @@ AEM 6.4 Communities GA包含Communities包。 要了解AEM 6.4 [Communities](/he
 
 高级MLS下载（也称为“第二阶段”）可从Adobe存储库中获取：
 
-* [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
+* AEM-SOLR-MLS-phasetwo
+要获取高级MLS包，请参阅文档部署部分的[AEM高级MLS](deploy-communities.md#aem-advanced-mls) 。
 
    * 1.2.40版，2016年4月6日
    * 下载AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
 有关详细信息和安装信息，请访问[Solr Configuration](solr.md) for SRP。
 
-### 关于包共享{#about-links-to-package-share}的链接
+### 关于包共享的链接 {#about-links-to-package-share}
 
 **包在AdobeAEM Cloud中可见**
 
@@ -224,7 +225,7 @@ AEM 6.4 Communities GA包含Communities包。 要了解AEM 6.4 [Communities](/he
 
 有关更多信息，请访问[如何使用包](../../help/sites-administering/package-manager.md#package-share)。
 
-## 建议的部署{#recommended-deployments}
+## 推荐的部署 {#recommended-deployments}
 
 在AEM Communities中，公共存储用于存储用户生成的内容(UGC)，通常称为[存储资源提供程序(SRP)](working-with-srp.md)。 推荐的部署中心是为公共存储选择SRP选项。
 
@@ -242,7 +243,7 @@ AEM 6.4 Communities GA包含Communities包。 要了解AEM 6.4 [Communities](/he
 
 ## 配置 {#configurations}
 
-### 主发布者{#primary-publisher}
+### 主发布者 {#primary-publisher}
 
 如果选择的部署是[发布场](topologies.md#tarmk-publish-farm)，则对于不应出现在所有实例上的活动(例如依赖于&#x200B;**notifications**&#x200B;或&#x200B;**Adobe Analytics**&#x200B;的功能)，必须将一个AEM发布实例标识为&#x200B;**`primary publisher`**。
 
@@ -264,7 +265,7 @@ AEM 6.4 Communities GA包含Communities包。 要了解AEM 6.4 [Communities](/he
 * 取消选中&#x200B;**[!UICONTROL Primary Publisher]**&#x200B;框
 * 选择&#x200B;**[!UICONTROL Save]**
 
-### 创作{#replication-agents-on-author}上的复制代理
+### 创作上的复制代理 {#replication-agents-on-author}
 
 复制用于在发布环境中创建的站点内容（如社区组），以及使用[tunnel service](#tunnel-service-on-author)从创作环境中管理成员和成员组。
 
@@ -291,15 +292,15 @@ AEM 6.4 Communities GA包含Communities包。 要了解AEM 6.4 [Communities](/he
 
 下图显示了将端口从4503更改为6103的结果：
 
-#### 默认代理（发布）{#default-agent-publish}
+#### 默认代理（发布） {#default-agent-publish}
 
 ![chlimage_1-412](assets/chlimage_1-412.png)
 
-#### 反向复制代理（发布反向）{#reverse-replication-agent-publish-reverse}
+#### 反向复制代理（发布反向） {#reverse-replication-agent-publish-reverse}
 
 ![chlimage_1-413](assets/chlimage_1-413.png)
 
-### 创作{#tunnel-service-on-author}上的隧道服务
+### 作者的隧道服务 {#tunnel-service-on-author}
 
 使用创作环境创建站点](sites-console.md)、[修改站点属性](sites-console.md#modifying-site-properties)或[管理社区成员](members.md)时，必须访问在发布环境中注册的成员（用户），而不是在创作中注册的用户。[
 
@@ -324,7 +325,7 @@ AEM 6.4 Communities GA包含Communities包。 要了解AEM 6.4 [Communities](/he
 
 ![chlimage_1-414](assets/chlimage_1-414.png)
 
-### 复制加密密钥{#replicate-the-crypto-key}
+### 复制加密密钥 {#replicate-the-crypto-key}
 
 AEM Communities有两项功能，要求所有AEM服务器实例使用相同的加密密钥。 这些参数为[Analytics](analytics.md)和[ASRP](asrp.md)。
 
@@ -364,7 +365,7 @@ AEM Communities有两项功能，要求所有AEM服务器实例使用相同的�
 >
 >如果已配置基于加密密钥的其他安全功能，则复制加密密钥可能会损坏配置。 如需帮助，请[联系客户关怀团队](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。
 
-#### 存储库复制{#repository-replication}
+#### 存储库复制 {#repository-replication}
 
 与AEM 6.2及更早版本一样，将关键材料存储在存储库中，可通过在每个AEM实例（创建初始存储库）的首次启动时指定以下系统属性来保留：
 
@@ -387,7 +388,7 @@ AEM Communities有两项功能，要求所有AEM服务器实例使用相同的�
 
 ![chlimage_1-415](assets/chlimage_1-415.png)
 
-#### 刷新Granite加密包{#refresh-the-granite-crypto-bundle}
+#### 刷新Granite加密包 {#refresh-the-granite-crypto-bundle}
 
 * 在每个发布实例上，访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)
 
@@ -408,7 +409,7 @@ AEM Communities有两项功能，要求所有AEM服务器实例使用相同的�
 
 特别是，在`RedirectMatch`中要小心使用正确的服务器名称，而不是`localhost`。
 
-#### httpd.conf示例{#httpd-conf-sample}
+#### httpd.conf示例 {#httpd-conf-sample}
 
 ```shell
 <IfModule alias_module>
@@ -434,7 +435,7 @@ AEM Communities有两项功能，要求所有AEM服务器实例使用相同的�
 * [为社区配置Dispatcher](dispatcher.md)
 * [已知问题](troubleshooting.md#dispatcher-refetch-fails)
 
-## 相关社区文档{#related-communities-documentation}
+## 相关社区文档 {#related-communities-documentation}
 
 * 访问[管理社区站点](administer-landing.md) ，了解有关创建社区站点、配置社区站点模板、审核社区内容、管理成员和配置消息传送的信息。
 

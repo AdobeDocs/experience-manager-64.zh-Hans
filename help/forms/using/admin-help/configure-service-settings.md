@@ -1,8 +1,8 @@
 ---
 title: 配置服务设置
-seo-title: 配置服务设置
+seo-title: Configure service settings
 description: 了解如何配置服务设置。
-seo-description: 了解如何配置服务设置。
+seo-description: Learn how to configure service settings.
 uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: be1f8c59-b5d8-4d87-af7b-1034d73e7e83
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10710'
+source-wordcount: '10683'
 ht-degree: 0%
 
 ---
 
-# 配置服务设置{#configure-service-settings}
+# 配置服务设置 {#configure-service-settings}
 
 您可以使用“服务管理”页面为AEM表单中的每个服务配置设置。 可用设置因所配置的服务而异。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 1. 单击保存以保存更改，或单击取消以放弃更改。
 1. 选中服务名称旁边的复选框，然后单击“启动”以重新启动服务。
 
-## 审核工作流服务设置{#audit-workflow-service-settings}
+## 审核工作流服务设置 {#audit-workflow-service-settings}
 
 Workbench提供了在进程实例运行时记录它们，然后播放它们以观察进程行为的功能。 （请参阅[Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_63)。） 为了节省表单服务器文件系统上的空间，您可以限制存储的进程记录数据量。 您可以配置审核工作流服务(`AuditWorkflowService`)的以下属性：
 
@@ -44,7 +44,7 @@ Workbench提供了在进程实例运行时记录它们，然后播放它们以�
 
 **MaxNumberOfRecordingEntries:** 可为每个记录存储的最大数据条目数。数据条目是有关流程中操作的信息。 为每次操作执行存储多个条目，例如操作是否启动、操作是否完成以及通向操作的路由是否完成。 当进程可能包括许多操作执行（例如，遇到无休止循环）时，此属性非常有用。 默认值为 50。
 
-## 条形码表单服务设置{#barcoded-forms-service-settings}
+## 条形码表单服务设置 {#barcoded-forms-service-settings}
 
 条形码表单服务`(BarcodedFormsService)`从扫描的图像中提取条形码数据。 该服务接受条形码表单（TIFF或PDF）作为输入，并提取由条形码编码的数据的机器表示。
 
@@ -66,7 +66,7 @@ Workbench提供了在进程实例运行时记录它们，然后播放它们以�
 
 **数据源名称：** 用于维护有关批处理作业的状态和历史记录信息的数据源名称。指定的数据源必须支持全局(XA)事务。
 
-## Central Migration Bridge服务（已弃用）设置{#central-migration-bridge-service-settings}
+## Central Migration Bridge服务（已弃用）设置 {#central-migration-bridge-service-settings}
 
 中央迁移桥服务(`CentralMigrationBridge`)调用Adobe Central Pro Output Server（中央）功能的子集，该子集包括JFMERGE、JFTRANS和XMLIMPORT命令。 Central Migration Bridge服务操作允许您在AEM表单中重复使用以下中央资产：
 
@@ -80,7 +80,7 @@ Workbench提供了在进程实例运行时记录它们，然后播放它们以�
 
 **中央安装目录：** 安装Adobe中心5.7的目录。
 
-## 用于EMC Documentum服务设置的内容存储库连接器{#content-repository-connector-for-emc-documentum-service-settings}
+## 用于EMC Documentum服务设置的内容存储库连接器 {#content-repository-connector-for-emc-documentum-service-settings}
 
 Content Repository Connector for EMC Documentum服务(`EMCDocumentumContentRepositoryConnector`)允许您创建与Documentum存储库中存储的内容交互的流程。
 
@@ -94,7 +94,7 @@ Content Repository Connector for EMC Documentum服务(`EMCDocumentumContentRepos
 
 此设置的默认值为`/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects`。
 
-## IBM FileNet服务设置的内容存储库连接器{#content-repository-connector-for-ibm-filenet-service-settings}
+## 用于IBM FileNet服务设置的内容存储库连接器 {#content-repository-connector-for-ibm-filenet-service-settings}
 
 Content Repository Connector for IBM FileNet允许您创建与IBM FileNet存储库中存储的内容交互的流程。
 
@@ -108,7 +108,7 @@ Content Repository Connector for IBM FileNet允许您创建与IBM FileNet存储�
 
 此设置的默认值为`/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects`。
 
-## 转换PDF服务设置{#convert-pdf-service-settings}
+## 转换PDF服务设置 {#convert-pdf-service-settings}
 
 “转换PDF”服务(`ConvertPdfService`)会将PDF文档转换为PostScript和多种图像格式（JPEG、JPEG 2000、PNG和TIFF）。 将PDF文档转换为PostScript对于在任何PostScript打印机上进行基于服务器的无人值守打印非常有用。 在内容管理系统中存档不支持PDF文档的文档时，将PDF文档转换为多页TIFF文件非常实用。
 
@@ -122,7 +122,7 @@ Content Repository Connector for IBM FileNet允许您创建与IBM FileNet存储�
 
 **事务超时（秒）：** 基础事务提供程序在回退正在结束此操作的事务之前应等待的秒数。如果传播了现有的事务上下文，则将忽略此值。 默认值为 180。
 
-**用于平滑的阈值分辨率(dpi):** 图像分辨率，在该分辨率下，如果为这些元素选择了“对这些元素应用平滑”选项，则文本、线条和图像将应用平滑（或消除锯齿）。
+**用于平滑的阈值分辨率(dpi):** 图像分辨率，在该分辨率下，如果为这些元素选择了“对这些元素应用平滑”选项，则文本、线条和图像会应用平滑（或消除锯齿）。
 
 **对文本应用平滑处理：** 控制文本的消除锯齿功能。要禁用文本平滑功能，并使用屏幕放大镜使文本更清晰、更易阅读，请清除此复选框。
 
@@ -130,7 +130,7 @@ Content Repository Connector for IBM FileNet允许您创建与IBM FileNet存储�
 
 **对图像应用平滑处理：** 应用平滑处理以最大限度地减少图像中的突然更改。
 
-## Distiller服务设置{#distiller-service-settings}
+## Distiller服务设置 {#distiller-service-settings}
 
 Distiller服务(`DistillerService`)通过网络将PostScript、封装的PostScript(EPS)和PRN文件转换为PDF文件。
 
@@ -154,11 +154,11 @@ Distiller服务(`DistillerService`)通过网络将PostScript、封装的PostScri
 
 **池大小：** 池的初始大小。部署Distiller服务时，此数字用于确定创建并分配给空闲池（等待调用请求）的服务实现实例数。 然后，服务容器可以立即响应调用请求，而无需首先初始化服务实例。
 
-## 文档管理服务设置{#document-management-service-settings}
+## 文档管理服务设置 {#document-management-service-settings}
 
 >[!NOTE]
 >
->Adobe®LiveCycle® Content Services ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 内容服务（已弃用）支持将于12/31/2014终止。 请参阅[Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。 要了解有关配置Content Services的信息（已弃用），请参阅[管理Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)。
+>Adobe®LiveCycle® Content Services ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 内容服务（已弃用）支持将于12/31/2014终止。 请参阅[Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
 
 文档管理服务(`DocumentManagementService`)使流程能够使用由内容服务（已弃用）提供的内容管理功能。 文档管理操作提供在内容管理系统中维护空间和内容所需的基本任务。 此类任务的示例包括：复制、删除、移动、检索和存储内容，创建空格和关联，以及获取和设置内容属性。
 
@@ -168,7 +168,7 @@ Distiller服务(`DistillerService`)通过网络将PostScript、封装的PostScri
 
 **HTTP端口：** 用于访问Content Services的端口（已弃用）。默认值为 8080。
 
-## 电子邮件服务设置{#email-service-settings}
+## 电子邮件服务设置 {#email-service-settings}
 
 电子邮件通常用于分发内容或在自动化流程中提供状态信息。 电子邮件服务(`EmailService`)使进程能够从POP3或IMAP服务器接收电子邮件，并向SMTP服务器发送电子邮件。
 
@@ -208,7 +208,7 @@ Distiller服务(`DistillerService`)通过网络将PostScript、封装的PostScri
 * 如果使用安全套接字层协议，请选择SSL。
 * 如果使用传输层安全性，请选择TLS。
 
-## 加密服务设置{#encryption-service-settings}
+## 加密服务设置 {#encryption-service-settings}
 
 加密服务(`EncryptionService`)允许您加密和解密文档。 文档加密后，其内容将变得不可读。 授权用户可以解密文档以获得对内容的访问。 如果PDF文档使用密码进行加密，则用户必须指定打开密码，才能在Adobe Reader或Adobe Acrobat中查看该文档。 同样，如果PDF文档使用证书进行加密，则用户必须使用与用于加密PDF文档的证书（私钥）对应的公共密钥解密PDF文档。
 
@@ -228,7 +228,7 @@ Distiller服务(`DistillerService`)通过网络将PostScript、封装的PostScri
 
 **兼容性模式：**
 
-## FTP服务设置{#ftp-service-settings}
+## FTP服务设置 {#ftp-service-settings}
 
 FTP服务(`FTP`)使进程能够与FTP服务器进行交互。 FTP服务操作可以从FTP服务器检索文件，将文件放置到FTP服务器，以及从FTP服务器删除文件。 例如，诸如从流程生成的报表之类的文档可以存储在FTP服务器上进行分发。 或者，外部系统可以根据流程中的先前步骤生成某些文件。 在该过程的后续步骤中，文件可被传输到远程位置。
 
@@ -242,7 +242,7 @@ FTP服务(`FTP`)使进程能够与FTP服务器进行交互。 FTP服务操作可
 
 **默认密码：** 与指定的用户名一起使用的密码，用于在FTP服务器上进行身份验证。
 
-## 生成PDF服务设置{#generate-pdf-service-settings}
+## 生成PDF服务设置 {#generate-pdf-service-settings}
 
 “生成PDF”服务(`GeneratePDFService`)将各种本机格式的文件转换为PDF文档，并将PDF文档转换为多种文件格式。
 
@@ -284,7 +284,7 @@ FTP服务(`FTP`)使进程能够与FTP服务器进行交互。 FTP服务操作可
 
 如果首次转化尝试所用时间小于指定的超时持续时间，则重试PDF转化。 例如，如果超时时长为270秒，且首次尝试使用时长为200秒，则PDF生成器将重新尝试转换。 如果首次尝试本身耗用了270秒，则不会重试转换。
 
-## 指南ES4实用程序服务设置{#guides-es4-utilities-service-settings}
+## 指南ES4实用程序服务设置 {#guides-es4-utilities-service-settings}
 
 创建指南时，指南中嵌入了一些资源，如指南定义。 资源也可以作为对本地存储或AEM Forms服务器上应用程序资产的引用而存在。 本指南不包含数据，提交位置和输入的值不适合所有外部环境。
 
@@ -325,7 +325,7 @@ FTP服务(`FTP`)使进程能够与FTP服务器进行交互。 FTP服务操作可
 
 **macKeySeed:** 用于生成安全URL的种子值。如果选项为，则不会刷新键。 在不同服务器上设置相同的种子将导致这些服务器生成兼容的安全URL。 如果负载平衡器后面使用了多个表单服务器，则此功能可能会很有用。 输入字符和数字的随机序列作为种子。
 
-### 在服务器群集{#using-guides-in-a-server-cluster}中使用指南
+### 在服务器群集中使用指南 {#using-guides-in-a-server-cluster}
 
 在不使用置顶会话的服务器群集中渲染指南失败，并出现空指针异常。 参考线请求可利用安全URL，默认情况下，这些URL对于在其上生成的服务器是唯一的。 在使用粘性会话的群集中，当请求命中群集中的节点后，该会话或用户的所有后续请求都将专门路由到该服务器，一切正常。 在不使用置顶会话的群集中，后续请求可能会点击群集中的任何服务器。 如果请求点击的服务器不是原始服务器，则它们无法解析安全URL。
 
@@ -337,7 +337,7 @@ macKeySeed值是用于生成安全URL的随机数生成器的种子。 设置此
 
 必须重新启动群集，因为macSeedValue在系统启动时为只读。 所有节点都需要重新启动才能读取该值，因为它们会单独使用该值来使用种子值初始化其内部随机数。
 
-## JDBC服务设置{#jdbc-service-settings}
+## JDBC服务设置 {#jdbc-service-settings}
 
 JDBC服务(`JdbcService`)使进程能够与数据库交互。
 
@@ -345,7 +345,7 @@ JDBC服务可使用以下设置。
 
 **datasourceName:** 一个字符串值，表示用于连接到数据库服务器的数据源的JNDI名称。数据源必须在托管表单服务器的应用程序服务器上定义。 默认值是AEM表单数据库的数据源的JNDI名称。
 
-## JMS服务设置{#jms-service-settings}
+## JMS服务设置 {#jms-service-settings}
 
 JMS服务(`JMS`)允许与Java消息系统(JMS)提供程序进行交互，这些提供程序实现了点对点消息和发布/订阅消息。
 
@@ -383,7 +383,7 @@ JMS服务(`JMS`)允许与Java消息系统(JMS)提供程序进行交互，这些�
 
 `name1=value1;name2=value2`
 
-## LDAP服务设置{#ldap-service-settings}
+## LDAP服务设置 {#ldap-service-settings}
 
 LDAP服务(`LDAPService`)提供查询LDAP目录的操作。 LDAP目录通常用于存储有关组织中的人员、组和服务的信息。
 
@@ -407,7 +407,7 @@ LDAP服务可使用以下设置。
 
 `property=value;property=value;...`
 
-## Microsoft SharePoint配置服务设置{#microsoft-sharepoint-configuration-service-settings}
+## Microsoft SharePoint配置服务设置 {#microsoft-sharepoint-configuration-service-settings}
 
 Microsoft SharePoint配置服务`(MSSharePointConfigService)`允许您为具有模拟权限的AEM Forms用户指定凭据。 有关模拟权限的信息，请参阅[为Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)配置连接器。
 
@@ -450,7 +450,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **删除时Android划出：** 指定在Android设备上发生策略冲突时的情况。选择此选项后，帐户将被删除。 如果未选择此选项，则会删除存储的帐户密码和缓存数据。 在用户修复策略违规之前，不会再进行同步尝试。
 
-## 输出服务设置{#output-service-settings}
+## 输出服务设置 {#output-service-settings}
 
 输出服务`(OutputService)`允许您将XML表单数据与在AEM Forms Designer中创建的表单设计合并，以下格式之一创建文档输出流：
 
@@ -471,9 +471,9 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **交易超时（秒）：** 基础交易提供程序在回退正在结束此操作的交易之前等待的秒数。如果传播了现有的事务上下文，则忽略此值。
 
-处理大型数据文件或在繁忙的服务器上操作时，可能需要增加输出服务超时。 要更改超时值，请确保硬件服务器具有足够的内存，并且内存可用于Java应用程序服务器堆。 默认值为 `180`.
+处理大型数据文件或在繁忙的服务器上操作时，可能需要增加输出服务超时。 要更改超时值，请确保硬件服务器具有足够的内存，并且内存可用于Java应用程序服务器堆。 默认值为 `180`。
 
-## PDFG配置服务设置{#pdfg-config-service-settings}
+## PDFG配置服务设置 {#pdfg-config-service-settings}
 
 以下设置可用于PDFG配置服务(`PDFGConfigService`)。
 
@@ -505,7 +505,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **默认区域设置：** 用于覆盖部署“生成PDF”服务的服务器的默认区域设置（国家/地区+语言）。如果此参数未指定，则默认区域设置将从部署服务的操作系统中确定。 此参数控制将错误消息返回到API的语言。
 
-## 表单工作流数据服务设置{#forms-workflow-data-services-service-settings}
+## 表单工作流数据服务设置 {#forms-workflow-data-services-service-settings}
 
 以下服务扩展了数据服务，并公开了工作区用于与服务器通信的汇编程序。 请勿更改这些服务的配置选项，除非Adobe支持部门指示您这样做。 这些服务不用于直接访问：
 
@@ -513,7 +513,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 * `ProcessManagementLcdsPropertyService`
 * `ProcessManagementLcdsTaskService`
 
-## 远程服务设置{#remoting-service-settings}
+## 远程服务设置 {#remoting-service-settings}
 
 大多数服务都经过了配置，以便您可以通过(AEM表单已弃用)AEM Forms Remoting访问它们。 有关(AEM表单已弃用)AEM Forms Remoting的信息，请参阅[使用AEM Forms编程](https://adobe.com/go/learn_aemforms_programming_63)。
 
@@ -523,7 +523,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **允许序列化不可序列化类：** 大多数AEM表单端点只允许将可序列化类用于调用。在较旧版本中，远程处理端点允许将不可序列化的类用于从基于Flex的客户端调用。 为防止APS11-15中描述的安全漏洞，已更改此漏洞。 如果要继续将不可序列化类与Flex远程处理端点一起使用，请选中此复选框。
 
-## 存储库服务设置{#repository-service-settings}
+## 存储库服务设置 {#repository-service-settings}
 
 存储库服务(`RepositoryService`)向AEM表单提供资源存储和管理服务。 当开发人员创建应用程序时，他们可以在存储库中部署资产，而不是在文件系统上部署资产。 资产可以包含任何类型的宣传资料，包括XML表单、PDF forms(包括Acrobat表单)、表单片段、图像、配置文件、策略、SWF文件、DDX文件、XML架构、WSDL文件和测试数据。
 
@@ -535,7 +535,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **提供程序服务：** 用作存储提供程序的服务的名称。默认值为RepositoryProviderService。
 
-## 签名服务设置{#signature-service-settings}
+## 签名服务设置 {#signature-service-settings}
 
 签名服务(`SignatureService`)使贵组织能够保护其分发和接收的Adobe PDF文档的安全和隐私。 此服务使用数字签名和认证来确保文档不被更改。 更改文档会破坏其签名。 由于安全功能应用于文档本身，因此文档在整个生命周期内都保持安全并受到控制；在防火墙之外，在离线下载时以及将防火墙提交回您的组织时。
 
@@ -575,7 +575,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **证书生命周期缓存：** 在线或通过其他方式在缓存中检索的证书的生命周期。默认值为1天。
 
-### 传输选项{#transport-options}
+### 传输选项 {#transport-options}
 
 **代理主机：** 代理主机的URL。仅在提供了一些有效值时才使用。 没有默认值。
 
@@ -591,7 +591,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **套接字超时：** 发生套接字超时（等待数据传输时）之前等待的最长时间，以秒为单位。最小值为1，最大值为3600。 默认值为 30。
 
-### 路径验证选项{#path-validation-options}
+### 路径验证选项 {#path-validation-options}
 
 **需要显式策略：** 指定路径是否必须对与签名者证书的信任锚点关联的至少一个证书策略有效。默认值为false。
 
@@ -609,7 +609,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **在链构建过程中需要有效的证书签名：** 指定链构建器是否需要对用于构建链的证书进行有效签名。选中此复选框后，链生成器将不会在证书上生成具有无效RSA签名的链。 考虑链CA > ICA > EE ，其中CA在ICA上的签名无效。 如果此设置为true，则链式构建将在ICA处停止，并且CA将不会包含在链中。 如果此设置为false，则会生成完整的3证书链。 此设置不影响DSA签名。 默认值为false。
 
-### 时间戳提供程序选项{#timestamp-provider-options}
+### 时间戳提供程序选项 {#timestamp-provider-options}
 
 **TSP服务器URL:** 默认时间戳提供程序的URL。仅在提供了一些有效值时才使用。 没有默认值。
 
@@ -629,7 +629,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **忽略时间戳服务器扩展**:选择“忽 **略时间戳服务器** 扩展”选项，以阻止AEM Forms服务器与指定的时间戳服务器联系。选择选项有助于避免由于AEM Forms和时间戳服务器之间的连接超时而导致的进程失败。
 
-### 证书吊销列表选项{#certificate-revocation-list-options}
+### 证书吊销列表选项 {#certificate-revocation-list-options}
 
 **请首先查阅本地URI:** 指定是否应优先于证书中指定的任何位置，以便进行吊销检查，在本地URI或CRL查找中提供的CRL位置。默认值为false。
 
@@ -645,7 +645,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **在CRL中需要AKI扩展：** 指定是否必须在CRL中包含Authority Key Identifier扩展。默认值为false。
 
-### 联机证书状态协议选项{#online-certificate-status-protocol-options}
+### 联机证书状态协议选项 {#online-certificate-status-protocol-options}
 
 **OCSP服务器URL:** 默认OCSP服务器的URL。是否使用通过此URL指定的OCSP服务器取决于URL To Consult Options设置。 没有默认值。
 
@@ -671,7 +671,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **需要OCSP ISIS-MTT CertHash扩展：** 指定OCSP响应中是否必须包含证书公钥哈希扩展。默认值为false。
 
-### 用于调试{#error-handling-options-for-debugging}的错误处理选项
+### 用于调试的错误处理选项 {#error-handling-options-for-debugging}
 
 **在下次调用API时清除证书缓存：** 指定在调用下次签名服务操作时是否清除证书缓存。调用操作后，此选项将设置回false。 默认值为false。
 
@@ -679,7 +679,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **在下次调用API时清除OCSP缓存：** 指定在调用下一个签名服务操作时是否清除OCSP缓存。调用操作后，此选项将设置回false。 默认值为false。
 
-## 已监视文件夹服务设置{#watched-folder-service-settings}
+## 监视的文件夹服务设置 {#watched-folder-service-settings}
 
 监视文件夹服务(`WatchedFolder`)配置所有监视文件夹端点的通用属性。 它还为监视文件夹端点提供默认值。 （请参阅[配置监视文件夹端点](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)。） 外部客户端应用程序不会调用它，也不会在Workbench中创建的进程中使用它。
 
@@ -744,7 +744,7 @@ Microsoft SharePoint配置服务可使用以下设置：
 
 **限制：** 选择此选项后，将限制AEM表单在任何给定时间处理的已监视文件夹作业的数量。“批处理大小”值确定最大作业数（请参阅关于限制）。
 
-## Web服务设置{#web-service-service-settings}
+## Web服务设置 {#web-service-service-settings}
 
 Web服务(`WebService`)使进程能够调用Web服务操作。
 
@@ -776,7 +776,7 @@ Web服务服务可使用以下设置。
 * cms
 * jceks
 
-## XSLT转换服务设置{#xslt-transformation-service-settings}
+## XSLT转换服务设置 {#xslt-transformation-service-settings}
 
 XSLT转换服务(`XSLTService`)使进程能够对XML文档应用可扩展样式表语言转换(XSLT)。
 
@@ -784,13 +784,13 @@ XSLT转换服务(`XSLTService`)使进程能够对XML文档应用可扩展样式�
 
 **工厂名称：** 用于执行XSLT转换的Java类的完全限定名称。如果未指定任何值，则使用在运行表单服务器的Java虚拟机中配置的默认工厂。
 
-## 修改服务{#modifying-security-settings-for-a-service}的安全设置
+## 修改服务的安全设置 {#modifying-security-settings-for-a-service}
 
 表单服务器允许您为每项服务配置安全设置，从而允许您在逐项服务级别配置细粒度访问控制。
 
 将安装默认安全配置文件，然后可以对其进行配置以满足您的系统需求。 每个安全配置文件都有一个关联的域，并在用户级别或组级别创建。
 
-### 修改服务{#modify-security-settings-for-a-service}的安全设置
+### 修改服务的安全设置 {#modify-security-settings-for-a-service}
 
 1. 在管理控制台中，单击服务>应用程序和服务>服务管理。
 1. 在“服务管理”页面上，单击要配置的服务。
@@ -837,16 +837,16 @@ XSLT转换服务(`XSLTService`)使进程能够对XML文档应用可扩展样式�
 
 1. 单击添加。
 
-### 从安全配置文件{#remove-the-principal-from-a-security-profile}中删除主体
+### 从安全配置文件中删除主体 {#remove-the-principal-from-a-security-profile}
 
 1. 在“服务管理”页面上，选择要配置的服务。
 1. 单击&#x200B;**Security**&#x200B;选项卡，选择要删除的安全配置文件，然后单击&#x200B;**Remove**。
 
-## 为服务{#configuring-pooling-for-a-service}配置池
+## 配置服务池 {#configuring-pooling-for-a-service}
 
 每个服务都可以利用池功能来处理传入的调用请求。 使用服务池可确保服务实例一次由单个线程调用，并在调用请求中重复使用，这可能会提高性能。 您还可以使用池来指定最大异步服务实例选项，该选项允许服务限制并行处理的请求数。
 
-### 启用池{#enable-pooling}
+### 启用池 {#enable-pooling}
 
 1. 在管理控制台中，单击服务>应用程序和服务>服务管理。
 1. 在“服务管理”页面上，单击要配置的服务。
@@ -858,7 +858,7 @@ XSLT转换服务(`XSLTService`)使进程能够对XML文档应用可扩展样式�
 1. 在调用等待超时框中，输入等待服务对调用请求可用的毫秒数。 如果未为此设置指定值，则默认值为0，这会导致没有等待时间。
 1. 单击保存。
 
-### 删除池{#remove-pooling}
+### 删除池 {#remove-pooling}
 
 1. 在管理控制台中，单击服务>应用程序和服务>服务管理。
 1. 在“服务管理”页面上，单击要配置的服务。

@@ -1,8 +1,8 @@
 ---
 title: 迁移 AEM Forms 资产和文档
-seo-title: 迁移 AEM Forms 资产和文档
+seo-title: Migrate AEM Forms assets and documents
 description: 迁移实用程序允许您将AEM Forms资产和文档从AEM 6.3 Forms或更早版本迁移到AEM 6.4 Forms。
-seo-description: 迁移实用程序允许您将AEM Forms资产和文档从AEM 6.3 Forms或更早版本迁移到AEM 6.4 Forms。
+seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -12,10 +12,10 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 4%
+source-wordcount: '1829'
+ht-degree: 2%
 
 ---
 
@@ -38,13 +38,13 @@ ht-degree: 4%
 
 **在就地升级时**
 
-如果您执行就地升级，则已升级的实例已具有资产和文档。 但是，在使用资产和文档之前，您需要安装[AEMFD兼容包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)（包括通信管理兼容包）
+如果您执行就地升级，则已升级的实例已具有资产和文档。 但是，在使用资产和文档之前，您需要安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)（包括通信管理兼容包）
 
 然后，您需要通过运行迁移实用程序](#runningmigrationutility)的[来更新资产和文档。
 
 **如果安装不当**
 
-如果安装过程不当（新），则在使用资产和文档之前，您需要安装[AEMFD兼容包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)（包括通信管理兼容包）。
+如果安装过程不当（新），则在使用资产和文档之前，您需要安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)（包括通信管理兼容包）。
 
 然后，您需要在新设置中导入资产包（zip或cmp），然后通过[运行迁移实用程序](#runningmigrationutility)更新资产和文档。 由于[向后兼容性相关的](/help/sites-deploying/backward-compatibility.md)更改，crx-repository中一些文件夹的位置发生了更改。 手动将依赖项（自定义库和资产）从以前的设置导出到新环境。
 
@@ -107,15 +107,12 @@ ht-degree: 4%
    >可以通过在自适应Forms编辑器的规则编辑器中打开这些组件来迁移这些组件。
    >
    >* 要在自定义组件中迁移规则和脚本（从6.3升级时不需要），请点按自适应Forms自定义组件迁移，然后在下一个屏幕中，点按开始迁移。 迁移了以下内容：
-      >
-      >  
-   * 使用规则编辑器（6.1 FP1及更高版本）创建的规则和脚本
+   >
+   >  * 使用规则编辑器（6.1 FP1及更高版本）创建的规则和脚本
    >  * 使用6.1及更低版本UI中的“脚本”选项卡创建的脚本
    >* 要迁移模板（从6.3升级时不需要），请点按自适应Forms模板迁移，然后在下一个屏幕中，点按开始迁移。 迁移了以下内容：
-
-      >
-      >  
-   * 旧模板 — 在使用AEM 6.1 Forms或更早版本的/apps下创建的自适应表单模板。 这包括模板组件中定义的脚本。
+   >
+   >  * 旧模板 — 在使用AEM 6.1 Forms或更早版本的/apps下创建的自适应表单模板。 这包括模板组件中定义的脚本。
    >  * 新模板 — 使用/conf下的模板编辑器创建的自适应表单模板。 这包括迁移使用规则编辑器创建的规则和脚本。
 
 

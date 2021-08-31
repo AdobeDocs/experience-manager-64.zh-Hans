@@ -1,24 +1,24 @@
 ---
 title: 在自适应表单中使用Adobe Sign
-seo-title: 在自适应表单中使用Adobe Sign
+seo-title: Using Adobe Sign in an adaptive form
 description: '为自适应表单启用电子签名(Adobe Sign)工作流，以自动执行签名工作流，简化单个和多签名流程，以及通过移动设备对表单进行电子签名。 '
-seo-description: 为自适应表单启用电子签名(Adobe Sign)工作流，以自动执行签名工作流，简化单个和多签名流程，以及通过移动设备对表单进行电子签名。
+seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
 uuid: 9c65dc44-c1a5-44df-8659-6efbe347575b
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
-feature: 自适应Forms,Adobe Sign
+feature: Adaptive Forms, Adobe Sign
 exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '3596'
+source-wordcount: '3562'
 ht-degree: 0%
 
 ---
 
-# 在自适应表单{#using-adobe-sign-in-an-adaptive-form}中使用Adobe Sign
+# 在自适应表单中使用Adobe Sign {#using-adobe-sign-in-an-adaptive-form}
 
 为自适应表单启用电子签名(Adobe Sign)工作流，以自动执行签名工作流，简化单个和多签名流程，以及通过移动设备对表单进行电子签名。
 
@@ -49,7 +49,7 @@ Adobe Sign与AEM Forms的集成支持：
 * 确保将AEM Forms云服务配置为使用Adobe Sign。 有关详细信息，请参阅[将Adobe Sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md)。
 * 请准备好签名者列表。 您至少需要每个签名者的电子邮件地址。
 
-## 为自适应表单{#configure-adobe-sign-for-an-adaptive-form}配置Adobe Sign
+## 为自适应表单配置Adobe Sign {#configure-adobe-sign-for-an-adaptive-form}
 
 执行以下步骤来配置自适应表单的Adobe Sign:
 
@@ -69,7 +69,7 @@ Adobe Sign与AEM Forms的集成支持：
 
 [为Adobe创建自适应表单](/help/forms/using/working-with-adobe-sign.md#create-an-adaptive-form-for-adobe-sign) 描述了创建基本自适应表单的步骤。请参阅[创建自适应表单](/help/forms/using/creating-adaptive-form.md) ，以了解创建自适应表单时可用的其他选项。
 
-#### 为Adobe Sign创建自适应表单{#create-an-adaptive-form-for-adobe-sign}
+#### 为Adobe Sign创建自适应表单 {#create-an-adaptive-form-for-adobe-sign}
 
 执行以下步骤为Adobe Sign创建自适应表单：
 
@@ -211,7 +211,7 @@ Adobe Sign具有可放置在自适应表单上的各个字段。 这些字段接
 
 您的表单签名体验已准备就绪。 您可以预览表单以验证签名体验。 在发布的表单上，当签名者收到通过电子邮件进行签名的表单时，会显示Adobe Sign块字段。 此体验也称为表单外签名体验。 您还可以为第一个签名者配置表单内签名体验，有关详细步骤，请参阅[创建表单内签名体验](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience)。
 
-## 为自适应表单{#configure-cloud-signatures-for-an-adaptive-form}配置云签名
+## 为自适应表单配置云签名 {#configure-cloud-signatures-for-an-adaptive-form}
 
 基于云的数字签名或远程签名是新一代的数字签名，可跨桌面、移动设备和Web使用，并满足签名者身份验证的最高级别合规性和保证。 您可以使用基于云的数字签名对自适应表单进行签名。
 
@@ -248,7 +248,7 @@ Adobe Sign具有可放置在自适应表单上的各个字段。 这些字段接
    * [为自适应表单选择提交操作](#selectsubmitactionforanadaptiveform)
 
 
-## 创建表单内签名体验{#create-in-form-signing-experience}
+## 创建表单内签名体验 {#create-in-form-signing-experience}
 
 用户在填写表单时，还可以对自适应表单进行签名。 此体验也称为表单内签名体验。 表单内签名体验仅适用于多个签名者环境中的第一个歌手。 执行以下步骤为自适应表单创建表单内签名体验：
 
@@ -257,7 +257,7 @@ Adobe Sign具有可放置在自适应表单上的各个字段。 这些字段接
 
 ![表单签名体验](assets/in-form-signing-experience.png)
 
-### 添加并配置签名步骤组件{#add-and-configure-the-signature-step-component}
+### 添加和配置签名步骤组件 {#add-and-configure-the-signature-step-component}
 
 使用“签名步骤”组件提供一个用于以电子方式对填写的表单进行签名的区域。 呈现包含签名步骤组件的部分时，会显示填写表单的可签名PDF版本。 签名步骤组件占用表单的全宽。 建议在包含签名步骤组件的部分上不要包含任何其他组件。
 
@@ -283,7 +283,7 @@ Adobe Sign具有可放置在自适应表单上的各个字段。 这些字段接
    >* Adobe Sign启用的自适应表单不支持使用签名步骤组件在部分或面板上使用提交按钮。 您可以在手动提交的签名步骤之后添加摘要步骤，或在使用[Adobe Sign配置服务](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status)设置的间隔后触发自动提交。
 
 
-### 配置感谢页面或摘要步骤组件{#configure-the-thank-you-page-or-summary-step-component}
+### 配置感谢页面或摘要步骤组件 {#configure-the-thank-you-page-or-summary-step-component}
 
 **摘要步骤**&#x200B;组件自动提交表单，在自定义的“摘要”页面中填充信息，并显示已提交表单的摘要。 它还会获取返回图中的所需信息。 摘要步骤组件具有可用于表单的全宽。 建议在包含摘要步骤组件的部分上不要包含任何其他组件。
 
@@ -301,7 +301,7 @@ Adobe Sign具有可放置在自适应表单上的各个字段。 这些字段接
 
 **问：我能否在自适应表单的静态文本组件中使用Adobe Sign文本标记？**
 
-**答案：** 是的，您可以在文本组件中使用文本标记，将Adobe Sign字段添加到已启用的自 [适应表单“记录文档”](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) （仅限自动生成的记录文档选项）。要了解创建文本标记的过程和规则，请参阅[Adobe Sign文档](https://helpx.adobe.com/sign/help/text-tags.html)。 另请注意，自适应表单对文本标记的支持有限。 您可以使用文本标记仅创建Adobe Sign块支持的字段。
+**答案：** 是的，您可以在文本组件中使用文本标记，将Adobe Sign字段添加到已启用的自 [适应表单“记录文档”](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) （仅限自动生成的记录文档选项）。要了解创建文本标记的过程和规则，请参阅[Adobe Sign文档](https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/admin-set-up/advanced-tasks-admins/adobe-sign-text-tagging.html)。 另请注意，自适应表单对文本标记的支持有限。 您可以使用文本标记仅创建Adobe Sign块支持的字段。
 
 **问：AEM Forms提供了Adobe Sign块和签名步骤组件。能否同时在自适应表单中使用？**
 

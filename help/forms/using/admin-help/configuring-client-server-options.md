@@ -1,8 +1,8 @@
 ---
 title: 配置客户端和服务器选项
-seo-title: 配置客户端和服务器选项
+seo-title: Configuring client and server optionsn
 description: 了解如何配置各种客户端和服务器选项，如服务器配置设置、文档安全角色和事件审核。
-seo-description: 了解如何配置各种客户端和服务器选项，如服务器配置设置、文档安全角色和事件审核。
+seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
 uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10250'
 ht-degree: 0%
 
 ---
@@ -554,7 +554,7 @@ AEM Forms提供了一个可针对您的环境进行自定义的示例配置。 �
 
 注册电子邮件包含指向注册页面的链接以及有关如何注册的信息。 在受邀用户进行注册后，文档安全会发出一封激活电子邮件，其中包含指向激活页面的链接。 激活后，该帐户将一直有效，直到您将其停用或删除为止。
 
-如果启用内置注册，则只需指定一次SMTP服务器、注册电子邮件详细信息、访问功能和重置密码电子邮件信息。 在启用内置注册之前，请确保您已在“用户管理”中创建了一个本地域，该域已将“文档安全邀请用户”角色分配给贵组织中的相应用户和组。 （请参阅[添加本地域](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)和[创建和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。） 如果您不使用内置注册，则必须使用AEM Forms SDK创建自己的用户注册系统。 请参阅[使用AEM表单编程](https://www.adobe.com/go/learn-aemforms-programming-63)中有关“为AEM表单开发SPI”的帮助。 如果不使用内置注册选项，建议您在激活电子邮件和客户端登录屏幕上配置消息，以通知用户如何与管理员联系以获取新密码或其他信息。
+如果启用内置注册，则只需指定一次SMTP服务器、注册电子邮件详细信息、访问功能和重置密码电子邮件信息。 在启用内置注册之前，请确保您已在“用户管理”中创建了一个本地域，该域已将“文档安全邀请用户”角色分配给贵组织中的相应用户和组。 （请参阅[添加本地域](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)和[创建和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。） 如果您不使用内置注册，则必须使用AEM Forms SDK创建自己的用户注册系统。 请参阅[使用AEM表单编程](/help/forms/developing/introducing-java-api-soap-quick.md)中有关“为AEM表单开发SPI”的帮助。 如果不使用内置注册选项，建议您在激活电子邮件和客户端登录屏幕上配置消息，以通知用户如何与管理员联系以获取新密码或其他信息。
 
 **启用并配置邀请的用户注册**
 

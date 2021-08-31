@@ -1,24 +1,24 @@
 ---
 title: 创建书信
-seo-title: 创建书信
+seo-title: Create Letter
 description: '本主题介绍了创建信件、向其添加数据模块和附件以及在通信管理中预览信件的步骤。 '
-seo-description: '本主题介绍了创建信件、向其添加数据模块和附件以及在通信管理中预览信件的步骤。 '
+seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
-feature: 通信管理
+feature: Correspondence Management
 exl-id: 8fa14b30-013c-4a23-bebf-2262e8212461
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '3989'
 ht-degree: 2%
 
 ---
 
 # 创建书信 {#create-letter}
 
-## 通信管理工作流{#correspondence-management-workflow}
+## 通信管理工作流 {#correspondence-management-workflow}
 
 通信管理工作流包含四个阶段：
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 1. 信件创建
 1. 后处理
 
-### 模板创建{#template-creation}
+### 模板创建 {#template-creation}
 
 下图显示了创建通信模板的典型工作流。
 
@@ -45,11 +45,11 @@ ht-degree: 2%
 
 1. 作者预览信件并提交该信件以进行后处理。 有关[后处理](/help/forms/using/submit-letter-topostprocess.md)的更多信息。
 
-#### 使用随通信管理{#using-letter-templates-provided-with-correspondence-management}提供的信件模板
+#### 使用随通信管理提供的信件模板 {#using-letter-templates-provided-with-correspondence-management}
 
 您可以选择修改和重用通信管理提供的模板，而不是从头开始创建布局模板。 您可以使用设计工具快速修改模板的品牌策略以及数据和内容字段，以满足您组织的需求。 有关通信管理模板的更多信息，请参阅[参考信件模板](/help/forms/using/reference-cm-layout-templates.md)。
 
-### 文档片段创建{#document-fragment-creation}
+### 文档片段创建 {#document-fragment-creation}
 
 文档片段是通信的可重用部件\组件，您可以使用它撰写信件\通信。
 
@@ -67,27 +67,27 @@ ht-degree: 2%
 
 条件允许您根据提供的数据定义在通信创建时包含的内容。 该条件用控制变量描述。 变量可以是数据字典元素或占位符。 添加条件时，您可以选择根据控制变量具有的值包含资产。 条件具有基于表达式的单个输出。 根据当前条件变量，第一个表达式为true。 其值将成为条件的输出。
 
-#### 布局片段{#layout-fragment}
+#### 布局片段 {#layout-fragment}
 
 布局片段是可在一个或多个字母中使用的布局。 布局片段用于创建可重复的模式，特别是动态表。 布局可以包含典型的表单字段，如“地址”和“引用编号”。 它还包含表示目标区域的空子形式。 布局(XDP)在Designer中创建，然后将[上传到Forms和Documents](/help/forms/using/get-xdp-pdf-documents-aem.md)。
 
-### 创建信件{#letter-creation}
+### 信件创建 {#letter-creation}
 
 有两种方法可生成发送给客户的通信：用户驱动和系统驱动。
 
-#### 用户驱动{#user-driven}
+#### 用户驱动 {#user-driven}
 
 面向客户的员工（如理赔调整员或案例工作人员）可以创建自定义的通信。 使用简单直观的信件填写界面，企业用户可以在信件中添加可选文本，在实时预览信件的同时个性化可编辑内容。 然后，他们可以将自定义通信提交到后端流程。
 
 ![用户驱动的自定义通信](assets/02.png)
 
-#### 系统驱动{#system-driven}
+#### 系统驱动 {#system-driven}
 
 由事件触发器驱动，可自动生成通信。 例如，将预定义模板与公民数据合并，生成向公民发送的提醒通知以提示她提前纳税。 最终信件可通过电子邮件发送、打印、传真或存档。
 
 ![系统驱动通信](assets/us_cm_generate.png)
 
-### 后处理{#post-processing}
+### 后处理 {#post-processing}
 
 最终通信可以发送到后端进程进行后处理。 通信可以是：
 
@@ -97,13 +97,13 @@ ht-degree: 2%
 1. 已转换为可搜索的PDF文档，其中包含用于存档和审核目的的所有必需元数据。
 1. 包含在PDFPortfolio中，其中包含更多文档，如营销材料。 然后，PDFPortfolio可作为最终通信发送。
 
-### 通信管理解决方案架构{#correspondence-management-solution-architecture}
+### 通信管理解决方案架构 {#correspondence-management-solution-architecture}
 
 下图概述了信件解决方案的示例架构。
 
 ![信件解决方案架构](assets/us_cm_architecture_es3.png)
 
-## 解构字母{#deconstructing-a-letter}
+## 解构信件 {#deconstructing-a-letter}
 
 本取消通知文档是典型通信的示例：
 
@@ -144,7 +144,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 在构建信件之前分析该信件{#analyze-a-letter-before-you-construct-it}
+## 在构建信件之前分析该信件 {#analyze-a-letter-before-you-construct-it}
 
 分析每封信件，以找出构成该信件的各个部分。 应用程序专家将分析生成的对应。
 
@@ -164,7 +164,7 @@ ht-degree: 2%
 * 方案还提供：项目所需的技能集和工具。
 * 规划实施的最佳实践。 “高级实施概述。
 
-## 执行分析的好处{#benefits-of-performing-the-analysis}
+## 执行分析的好处 {#benefits-of-performing-the-analysis}
 
 **内容** 重用您拥有生成通信所需新内容的综合列表。许多内容（如页眉、页脚、免责声明和简介）对于许多字母都是通用的，并且可以在不同的字母之间重复使用。 所有此类通用内容都可由专家创建并批准一次，然后在许多信件中重复使用。
 
@@ -174,7 +174,7 @@ ht-degree: 2%
 
 **估计信件的复** 杂性确定创建特定通信的复杂程度非常重要。此分析有助于确定创建信件模板所需的时间和技能集。 这反过来有助于估计实施信件解决方案的资源和成本。
 
-## 通信复杂性{#correspondence-complexity}
+## 通信复杂性 {#correspondence-complexity}
 
 通过分析以下参数，可以确定通信的复杂性：
 
@@ -217,7 +217,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 创建信件{#overview-of-creating-a-letter}概述
+## 创建信件概述 {#overview-of-creating-a-letter}
 
 1. 选择用作信件基础的相应布局并创建信件。
 1. 向信件中添加数据模块或布局片段并对其进行配置。
@@ -231,15 +231,15 @@ ht-degree: 2%
 * [兼容包](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)。安装兼容包以查看&#x200B;**Forms**&#x200B;页面上的&#x200B;**字母**&#x200B;选项。
 
 * 字母XDP([layout](/help/forms/using/document-fragments.md))。
-* 构成信件部分的其他XDP（[布局片段](/help/forms/using/document-fragments.md)）。 在[Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/)中创建XDP\布局。
+* 构成信件部分的其他XDP（[布局片段](/help/forms/using/document-fragments.md)）。 在[Designer](http://www.adobe.com/go/learn_aemforms_designer_64)中创建XDP\布局。
 
 * 相关的[数据字典](/help/forms/using/data-dictionary.md)（可选）。
 * 要在通信中使用的[数据模块](/help/forms/using/document-fragments.md)。
 * [测](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) 试数据包含导入测试数据的XML文件。如果您使用数据字典，则需要测试数据。
 
-## 创建信件模板{#create-a-letter-template}
+## 创建信件模板 {#create-a-letter-template}
 
-### 选择布局并输入字母属性{#select-a-layout-and-enter-the-letter-properties}
+### 选择布局并输入信件属性 {#select-a-layout-and-enter-the-letter-properties}
 
 1. 选择&#x200B;**Forms** > **字母**。
 
@@ -268,7 +268,7 @@ ht-degree: 2%
 
    **下一步**:点按打 **开**&#x200B;时，通信管理会显示布局的表示形式，其中列出了布局(XDP)中的所有组件。继续插入[数据模块和布局片段并配置它们](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p)。
 
-### 在信件中插入数据模块和布局片段并对其进行配置{#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
+### 在信件中插入数据模块和布局片段并对其进行配置 {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
 创建通信后，您点按打开，通信管理会显示布局的表示形式，其中列出了布局(XDP)中的所有子表单/目标区域。 在每个目标区域中，您可以选择插入数据模块或布局片段（然后在布局片段中插入数据模块）。
 
@@ -341,7 +341,7 @@ ht-degree: 2%
 
 1. 指定链接后，点按&#x200B;**Next**。 通信管理会显示“附件”屏幕。
 
-### 设置附件{#set-up-the-attachments}
+### 设置附件 {#set-up-the-attachments}
 
 1. 选择&#x200B;**添加资产**。
 1. 在选择资产屏幕中，点按要与信件一起附加的资产，然后点按&#x200B;**完成**。 您需要先将资产上传到资产。 建议您仅附加PDF和Microsoft Office文档，但也可以附加图像。 有关在DAM中上传资产的更多信息，请参阅[上传资产](/help/assets/managing-assets-touch-ui.md)。
@@ -355,7 +355,7 @@ ht-degree: 2%
 
 在通信管理中创建信件模板后，最终用户/代理/声明调整器可以在CCR用户界面中打开信件，并通过输入数据、设置内容和管理附件来创建通信。 有关更多信息，请参阅[创建通信](/help/forms/using/create-correspondence.md)。
 
-## 每个字段{#types-of-linkage-available-for-each-of-the-fields}可用的链接类型
+## 每个字段可用的链接类型 {#types-of-linkage-available-for-each-of-the-fields}
 
 下表描述了可用于各种类型字段的链接类型。
 

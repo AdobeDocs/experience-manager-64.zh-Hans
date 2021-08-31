@@ -1,22 +1,22 @@
 ---
 title: Microsoft Dynamics OData配置
-seo-title: Microsoft Dynamics ODta配置
+seo-title: Microsoft Dynamics ODtata configuration
 description: 通过表单数据模型利用、集成和使用在线和本地Microsoft Dynamics服务。
-seo-description: 了解如何通过表单数据模型利用集成并使用在线和本地Microsoft Dynamics服务。
+seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
 uuid: c9b2764f-9127-4a99-a469-b6ebcdee8fdf
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
-feature: 表单数据模型
+feature: Form Data Model
 exl-id: 18df57b6-789a-4b61-9418-fa12294b226f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
 
-# Microsoft Dynamics OData配置{#microsoft-dynamics-odata-configuration}
+# Microsoft Dynamics OData配置 {#microsoft-dynamics-odata-configuration}
 
 通过表单数据模型利用、集成和使用在线和本地Microsoft Dynamics服务。
 
@@ -35,7 +35,7 @@ AEM Forms附加组件包还包含引用OData配置，您可以利用这些配置
 * MS Dynamics ODataCloud Service（OData服务）
 * 使用预配置的Microsoft Dynamics实体和服务来构建数据模型。
 
-只有将AEM实例的运行模式设置为`samplecontent`（默认）时，您的AEM Forms实例上才提供具有预配置的Microsoft Dynamics实体和服务的ODataCloud Service和表单数据模型。 有关为AEM实例配置运行模式的更多信息，请参阅[运行模式](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html)。
+只有将AEM实例的运行模式设置为`samplecontent`（默认）时，您的AEM Forms实例上才提供具有预配置的Microsoft Dynamics实体和服务的ODataCloud Service和表单数据模型。 有关为AEM实例配置运行模式的更多信息，请参阅[运行模式](/help/sites-deploying/configure-runmodes.md)。
 
 ## 前提条件 {#prerequisites}
 
@@ -49,7 +49,7 @@ AEM Forms附加组件包还包含引用OData配置，您可以利用这些配置
 
 * [已在Microsoft Azure Active Directory中注册Microsoft Dynamics联机服务的应用程序](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory)。记下注册服务的客户端ID（也称为应用程序ID）值和客户端密钥。 在[为Microsoft Dynamics服务](/help/forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service)配置云服务时，会使用这些值。
 
-## 为已注册的Microsoft Dynamics应用程序{#set-reply-url-for-registered-microsoft-dynamics-application}设置回复URL
+## 为已注册的Microsoft Dynamics应用程序设置回复URL {#set-reply-url-for-registered-microsoft-dynamics-application}
 
 请执行以下操作，为已注册的Microsoft Dynamics应用程序设置“回复URL”：
 
@@ -65,7 +65,7 @@ AEM Forms附加组件包还包含引用OData配置，您可以利用这些配置
 
 1. 保存配置。
 
-## 为IFD {#configure-microsoft-dynamics-for-ifd}配置Microsoft Dynamics
+## 为IFD配置Microsoft Dynamics {#configure-microsoft-dynamics-for-ifd}
 
 Microsoft Dynamics使用基于声明的身份验证来向外部用户提供对Microsoft Dynamics CRM服务器上数据的访问。 要启用此功能，请执行以下操作，为面向Internet的部署(IFD)配置Microsoft Dynamics，并配置声明设置。
 
@@ -85,7 +85,7 @@ Microsoft Dynamics使用基于声明的身份验证来向外部用户提供对Mi
 
    有关详细信息，请参阅[本地CRM(IFD)](https://msdn.microsoft.com/sl-si/library/dn531010(v=crm.7).aspx#bkmk_ifd)应用程序注册。
 
-## 在AD FS计算机{#configure-oauth-client-on-ad-fs-machine}上配置OAuth客户端
+## 在AD FS计算机上配置OAuth客户端 {#configure-oauth-client-on-ad-fs-machine}
 
 执行以下操作，以在Active Directory联合身份验证服务(AD FS)计算机上注册OAuth客户端，并在AD FS计算机上授予访问权限：
 
@@ -116,7 +116,7 @@ Microsoft Dynamics使用基于声明的身份验证来向外部用户提供对Mi
 
 1. Microsoft Dynamics使用HTTPS协议。 要从Forms服务器调用AD FS端点，请在运行AEM Forms的计算机上使用`keytool`命令将Microsoft Dynamics站点证书安装到Java证书存储区。
 
-## 为Microsoft Dynamics服务配置云服务{#configure-cloud-service-for-your-microsoft-dynamics-service}
+## 为您的Microsoft Dynamics服务配置云服务 {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
 **MS Dynamics ODataCloud Service（OData服务）**&#x200B;配置附带默认的OData配置。 要将其配置为与Microsoft Dynamics服务连接，请执行以下操作。
 
@@ -138,7 +138,7 @@ Microsoft Dynamics使用基于声明的身份验证来向外部用户提供对Mi
 
 MS Dynamics ODataCloud Service（OData服务）云服务已配置并与您的Dynamics服务连接。
 
-## 创建表单数据模型{#create-form-data-model}
+## 创建表单数据模型 {#create-form-data-model}
 
 安装AEM Forms包时，表单数据模型&#x200B;**Microsoft Dynamics FDM**&#x200B;将部署在AEM实例上。 默认情况下，表单数据模型使用在MS Dynamics ODataCloud Service（OData服务）中配置的Microsoft Dynamics服务作为其数据源。
 

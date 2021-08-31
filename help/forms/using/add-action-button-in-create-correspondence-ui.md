@@ -1,23 +1,23 @@
 ---
 title: 在创建通信UI中添加自定义操作/按钮
-seo-title: 在创建通信UI中添加自定义操作/按钮
+seo-title: Add custom action/button in Create Correspondence UI
 description: 了解如何在创建通信UI中添加自定义操作/按钮
-seo-description: 了解如何在创建通信UI中添加自定义操作/按钮
+seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: e3609371-caaa-4efe-8f63-4d982cd456ab
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
-feature: 通信管理
+feature: Correspondence Management
 exl-id: 5bcb26dc-aeb7-4a81-b905-23c8fb05d6d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1855'
 ht-degree: 1%
 
 ---
 
-# 在创建通信UI {#add-custom-action-button-in-create-correspondence-ui}中添加自定义操作/按钮
+# 在创建通信UI中添加自定义操作/按钮 {#add-custom-action-button-in-create-correspondence-ui}
 
 ## 概述 {#overview}
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 * CRX和JavaScript知识
 * LiveCycle服务器
 
-## 方案：在创建通信用户界面中创建按钮以发送信件以供审阅{#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## 方案：在创建通信用户界面中创建按钮以发送信件以供审阅 {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 在创建通信用户界面中添加包含操作的按钮（此处为发送信件供审阅）包括：
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 1. 向按钮添加操作处理
 1. 添加LiveCycle流程以启用操作“处理”
 
-### 将按钮添加到创建通信用户界面{#add-the-button-to-the-create-correspondence-user-interface}
+### 将按钮添加到“创建通信”用户界面 {#add-the-button-to-the-create-correspondence-user-interface}
 
 1. 转到`https://[server]:[port]/[ContextPath]/crx/de`并以管理员身份登录。
 1. 在apps文件夹中，创建一个名为`defaultApp`的文件夹，其路径/结构与defaultApp文件夹（位于配置文件夹中）类似。 请按照以下步骤创建文件夹：
@@ -123,7 +123,7 @@ ht-degree: 1%
 
 1. 单击&#x200B;**[!UICONTROL Save All]**。
 
-#### 在/apps分支{#create-a-locale-folder-with-properties-file-in-the-apps-branch}中创建包含属性文件的区域设置文件夹
+#### 在/apps分支中使用属性文件创建区域设置文件夹 {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 ACMExtensionsMessages.properties文件包含“创建通信”用户界面中各个字段的标签和工具提示消息。 要使自定义操作/按钮正常工作，请在/apps分支中复制此文件。
 
@@ -161,7 +161,7 @@ ACMExtensionsMessages.properties文件包含“创建通信”用户界面中各
 
 1. 单击&#x200B;**[!UICONTROL Save All]**。
 
-#### 重新启动Adobe资产编辑器构建基块包{#restart-the-adobe-asset-composer-building-block-bundle}
+#### 重新启动Adobe资产编辑器构建基块包 {#restart-the-adobe-asset-composer-building-block-bundle}
 
 在进行每次服务器端更改后，重新启动Adobe资产编辑器构建基块包。 在此方案中，服务器端的acmExtensionsConfig.xml和ACMExtensionsMessages.properties文件会进行编辑，因此Adobe资产编辑器构建基块包需要重新启动。
 
@@ -177,7 +177,7 @@ ACMExtensionsMessages.properties文件包含“创建通信”用户界面中各
 
 重新启动Adobe资产编辑器构建基块包后，自定义按钮会显示在创建通信用户界面中。 您可以在创建通信用户界面中打开信件以预览自定义按钮。
 
-### 向按钮{#add-action-handling-to-the-button}添加操作处理
+### 向按钮添加操作处理 {#add-action-handling-to-the-button}
 
 默认情况下，“创建通信”用户界面在cm.domain.js文件中的以下位置实施了ActionHandler:
 
@@ -322,7 +322,7 @@ ACMExtensionsMessages.properties文件包含“创建通信”用户界面中各
       '</div>';
       ```
 
-### 添加LiveCycle进程以启用操作<span class="acrolinxCursorMarker"></span>处理{#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### 添加LiveCycle进程以启用操作<span class="acrolinxCursorMarker"></span>处理 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 在此方案中，请启用以下组件，这些组件是附加的components.zip文件的一部分：
 
@@ -333,7 +333,7 @@ ACMExtensionsMessages.properties文件包含“创建通信”用户界面中各
 
 [获取文件](assets/components.zip)
 
-#### 配置LiveCycle服务器以运行LCA进程{#configure-the-livecycle-server-to-run-the-lca-process}
+#### 配置LiveCycle服务器以运行LCA进程 {#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
@@ -352,7 +352,7 @@ LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据�
 
    ![AdobeLiveCycle客户端SDK配置](assets/3_clientsdkconfiguration.png)
 
-#### 安装LiveCycle存档(LCA){#install-livecycle-archive-lca}
+#### 安装LiveCycle存档(LCA) {#install-livecycle-archive-lca}
 
 启用电子邮件服务流程所需的LiveCycle流程。
 
@@ -380,7 +380,7 @@ LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据�
 
 1. 单击&#x200B;**[!UICONTROL 导入]**。
 
-#### 将ServiceName添加到列入允许列表已的服务列表{#adding-servicename-to-the-allowlisted-service-list}
+#### 将ServiceName添加到列入允许列表的服务列表 {#adding-servicename-to-the-allowlisted-service-list}
 
 在AEM服务器中提及要访问AEM服务器的LiveCycle服务。
 
@@ -391,7 +391,7 @@ LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据�
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-#### 配置电子邮件服务{#configure-the-email-service}
+#### 配置电子邮件服务 {#configure-the-email-service}
 
 在此方案中，为使通信管理能够发送电子邮件，请在LiveCycle服务器中配置电子邮件服务。
 
@@ -405,7 +405,7 @@ LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据�
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-#### 配置DSC服务{#configure-the-dsc-service}
+#### 配置DSC服务 {#configure-the-dsc-service}
 
 要使用通信管理API，请下载`DSCSample.jar`（作为`components.zip`的一部分附加在本文档中）并将其上载到LiveCycle服务器。 将`DSCSample.jar`文件上传到LiveCycle服务器后，AEM服务器会使用`DSCSample.jar`文件访问renderLetter API。
 
@@ -424,11 +424,11 @@ LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据�
 
    >[!NOTE]
    >
-   >每次在服务器端进行任何更改时，请重新启动LiveCycle服务器。 有关创建您自己的LiveCycle组件的信息，请参阅[通过自定义DSC开发扩展LiveCycleES软件](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)。
+   >每次在服务器端进行任何更改时，请重新启动服务器。
 
    `DSCSample.jar`文件使用`renderLetter` API。 有关renderLetter API的更多信息，请参阅[Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
 
-#### 将DSC导入LiveCyle {#import-dsc-to-livecyle}
+#### 在JEE上将DSC导入AEM Forms {#import-dsc-to-livecyle}
 
 `DSCSample.jar` 文件使用API `renderLetter` 从C作为输入的XML数据中将字母渲染为PDF字节。有关renderLetter和其他API的更多信息，请参阅[Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
 
@@ -440,7 +440,7 @@ LCA进程在LiveCycle服务器上运行，需要服务器地址和登录凭据�
 1. 通过文件浏览器选择`DSCSample.jar`文件，然后单击&#x200B;**[!UICONTROL 打开]**。
 1. 右键单击&#x200B;**[!UICONTROL RenderWrapper]**&#x200B;并选择&#x200B;**[!UICONTROL 启动组件]**。 如果组件启动，则组件名称旁边会显示一个绿色箭头。
 
-## 发送信件以供审阅{#send-letter-for-review}
+## 发送信件供审阅 {#send-letter-for-review}
 
 在配置了用于发送信件以供审阅的操作和按钮后：
 

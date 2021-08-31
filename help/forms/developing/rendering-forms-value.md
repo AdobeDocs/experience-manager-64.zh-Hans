@@ -1,8 +1,8 @@
 ---
 title: 按值呈现Forms
-seo-title: 按值呈现Forms
+seo-title: Rendering Forms By Value
 description: 使用Forms API(Java)通过Java API和Web服务API来按值呈现表单。
-seo-description: 使用Forms API(Java)通过Java API和Web服务API来按值呈现表单。
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: 50c34781-45e3-4255-a997-44f694527c92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
 
-# 按值{#rendering-forms-by-value}呈现Forms
+# 按值呈现Forms {#rendering-forms-by-value}
 
 通常，在Designer中创建的表单设计会通过引用Forms服务来传递。 表单设计可能较大，因此，通过引用传递它们更为有效，从而避免必须按值封送表单设计字节。 Forms服务还可以缓存表单设计，以便在缓存时，不必持续读取表单设计。
 
@@ -45,7 +45,7 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 >
 >有关Forms服务的更多信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
-## 步骤{#summary-of-steps}的摘要
+## 步骤摘要 {#summary-of-steps}
 
 要按值渲染表单，请执行以下步骤：
 
@@ -77,7 +77,7 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 
 >[!NOTE]
 >
->如果要在表单中显示数据，必须在`xfa:datasets`元素中指定数据。 有关XFA架构的信息，请转到[https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html)。
+>如果要在表单中显示数据，必须在`xfa:datasets`元素中指定数据。 有关XFA架构的信息，请转到[https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf)。
 
 **将表单数据流写入客户端Web浏览器**
 
@@ -99,7 +99,7 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 
 [创建可渲染Forms的Web应用程序](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## 使用Java API {#render-a-form-by-value-using-the-java-api}按值呈现表单
+## 使用Java API按值呈现表单 {#render-a-form-by-value-using-the-java-api}
 
 使用Forms API(Java)按值呈现表单：
 
@@ -150,7 +150,7 @@ Forms服务还可以解析表单设计中链接内容的位置。 例如，从�
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 使用Web服务API {#render-a-form-by-value-using-the-web-service-api}按值呈现表单
+## 使用Web服务API按值呈现表单 {#render-a-form-by-value-using-the-web-service-api}
 
 使用Forms API（Web服务）按值呈现表单：
 

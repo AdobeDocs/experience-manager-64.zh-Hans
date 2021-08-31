@@ -1,16 +1,16 @@
 ---
 title: 安装和配置文档服务
-seo-title: 安装和配置文档服务
+seo-title: Installing and configuring document services
 description: 安装AEM Forms文档服务以创建、组合、分发、存档PDF文档、添加数字签名以限制对文档的访问，以及对条形码表单进行解码。
-seo-description: 安装AEM Forms文档服务以创建、组合、分发、存档PDF文档、添加数字签名以限制对文档的访问，以及对条形码表单进行解码。
+seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4251'
 ht-degree: 2%
 
 ---
@@ -85,7 +85,6 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，运行AEM 
 >* 在基于UNIX的操作系统上，PDF生成器支持WebKit和PhantomJS转换路由，以将HTML文件转换为PDF文档。
 
 >
-
 
 
 ### 基于UNIX的操作系统的额外要求 {#extrarequirements}
@@ -208,7 +207,6 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，运行AEM 
 >
 
 
-
 安装Acrobat后，打开Microsoft Word。 在&#x200B;**Acrobat**&#x200B;选项卡上，单击&#x200B;**创建PDF**，然后将计算机上可用的.doc或.docx文件转换为PDF文档。 如果转换成功，AEM Forms便可将Acrobat与PDF生成器服务结合使用。
 
 ### 设置环境变量 {#setup-environment-variables}
@@ -260,8 +258,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，运行AEM 
 >* 如果您在基于UNIX的平台上使用OpenOffice，请运行以下命令以设置路径变量：
 
 >
->  
-`export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### （仅适用于IBM WebSphere）配置IBM SSL套接字提供程序 {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -340,7 +337,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，运行AEM 
 
    1. Microsoft建议在修改注册表之前先备份该注册表。 有关详细步骤，请参阅[如何在Windows](https://support.microsoft.com/en-us/help/322756)中备份和恢复注册表。
    1. 打开Microsoft Windows Registry编辑器。 要打开注册表编辑器，请转到“开始”>“运行”，键入regedit，然后单击“确定”。
-   1. 导航至 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. 确保将EnableLUA的值设置为0（零）。
+   1. 导航到 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`。确保将EnableLUA的值设置为0（零）。
    1. 确保将&#x200B;**EnableLUA**&#x200B;的值设置为0（零）。 如果值不为0，请将值更改为0。 关闭注册表编辑器。
 
 1. 重新启动计算机。
@@ -385,7 +382,6 @@ PDF生成器服务提供WebKit、WebCapture和PhantomJS路由或方法，以将H
 >* 每当将新字体安装到字体文件夹时，请重新启动AEM Forms实例。
 
 >
-
 
 
 ## 安装AEM Forms附加组件包 {#install-aem-forms-add-on-package}
@@ -440,7 +436,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含AEM For
 
 ### 配置本地用户帐户以运行PDF生成器服务  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-运行PDF生成器服务需要本地用户帐户。 有关创建本地用户的步骤，请参阅[在Windows中创建用户帐户](https://support.microsoft.com/en-us/help/13951/windows-create-user-account)或[在基于UNIX的平台中创建用户帐户](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html)。
+运行PDF生成器服务需要本地用户帐户。 有关创建本地用户的步骤，请参阅[在Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account)中创建用户帐户或在基于UNIX的平台中创建用户帐户。
 
 1. 打开[AEM Forms PDF生成器配置](http://localhost:4502/libs/fd/pdfg/config/ui.html)页面。
 
@@ -509,7 +505,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含AEM For
       >
       >如果系统就绪工具报告pdfgen.api文件在acrobat插件文件夹中不可用，请将pdfgen.api文件从`[extracted-adobe-aemfd-pdfg-common-pkg]\plugins\x86_win32`目录复制到`[Acrobat_root]\Acrobat\plug_ins`目录。
 
-   1. 导航至 `[Path_of_reports_folder]`. 打开SystemReadinessTool.html文件。 验证报告并修复上述问题。
+   1. 导航到 `[Path_of_reports_folder]`。打开SystemReadinessTool.html文件。 验证报告并修复上述问题。
 
 ### （仅限Windows）配置HTML到PDF转换的主路由 {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
@@ -599,7 +595,7 @@ DocAssurance服务可以对PDF文档应用使用权限。 要对PDF文档应用�
 
 * 在基于UNIX的操作系统上，执行以下操作以查找任何缺少的库：
 
-1. 导航至 `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
+1. 导航到 `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`。
 
 1. 运行以下命令以列出PhantomJS在从HTML转换到PDF时需要的所有库。
 

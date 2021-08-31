@@ -1,8 +1,8 @@
 ---
 title: 管理证书和凭据的基础知识
-seo-title: 管理证书和凭据的基础知识
+seo-title: Basics of managing certificates and credentials
 description: 了解管理证书和凭据的基础知识。
-seo-description: 了解管理证书和凭据的基础知识。
+seo-description: Learn about the basics of managing certificates and credentials.
 uuid: f421e206-e7b5-416c-b9fb-974094f10a66
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 exl-id: 4817d150-9bfe-4cb9-8f06-6ff4eaaa6f55
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
-# 管理证书和凭据的基础知识{#basics-of-managing-certificates-and-credentials}
+# 管理证书和凭据的基础知识 {#basics-of-managing-certificates-and-credentials}
 
 *凭据*&#x200B;包含签名或标识文档所需的私钥信息。 *证书*&#x200B;是您为信任配置的公钥信息。 AEM表单用于以下几个目的：
 
@@ -35,7 +35,7 @@ AEM表单不提供任何用于生成键对的选项。 但是，您可以使用J
 
 [https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html](https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html)
 
-[https://blogs.adobe.com/livecycle/2010/01/creating_ssl_keys_and_certific.html](https://blogs.adobe.com/livecycle/2010/01/creating_ssl_keys_and_certific.html)
+[https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
 支持以下签名类型，并可将其导入AEM表单：
 

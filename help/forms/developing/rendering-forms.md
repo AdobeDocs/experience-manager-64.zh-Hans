@@ -1,8 +1,8 @@
 ---
 title: 呈现Forms
-seo-title: 呈现Forms
+seo-title: Rendering Forms
 description: 使用Forms服务创建交互式数据捕获客户端应用程序，以验证、处理、转换和交付通常在Designer中创建的表单。 表单作者可以开发单个表单设计，Forms服务可在各种浏览器环境中以PDF、SWF或HTML格式呈现该设计。
-seo-description: 使用Forms服务创建交互式数据捕获客户端应用程序，以验证、处理、转换和交付通常在Designer中创建的表单。 表单作者可以开发单个表单设计，Forms服务可在各种浏览器环境中以PDF、SWF或HTML格式呈现该设计。
+seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: 61d63c89-26e8-4a50-b6a3-1bcf1a1b4c54
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,3 @@ ht-degree: 0%
 * 计算表单数据。 （请参阅[计算表单数据](/help/forms/developing/calculating-form-data.md)。）
 * 优化应用程序。 (请参阅[优化Forms服务的性能](/help/forms/developing/optimizing-performance-forms-service.md)。)
 
-   ***提示&#x200B;**:Adobe开发人员网站包含以下文章，讨论如何创建调用Forms服务和呈现表单的ASP.NET应用程序。请参阅[创建表单渲染ASP.NET应用程序](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)。*

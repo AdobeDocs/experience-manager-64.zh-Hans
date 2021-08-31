@@ -1,22 +1,22 @@
 ---
 title: 设置和配置AEM Forms引用站点
-seo-title: 设置和配置AEM Forms引用站点
+seo-title: Set up and configure AEM Forms reference sites
 description: AEM Forms参考网站展示了如何使用AEM Forms在组织中实施端到端工作流。
-seo-description: AEM Forms参考网站展示了如何使用AEM Forms在组织中实施端到端工作流。
+seo-description: AEM Forms reference sites showcase how you can use AEM Forms to implement end-to-end workflow in an organization.
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2911'
 ht-degree: 2%
 
 ---
 
-# 设置和配置AEM Forms引用站点{#set-up-and-configure-aem-forms-reference-sites}
+# 设置和配置AEM Forms引用站点 {#set-up-and-configure-aem-forms-reference-sites}
 
 AEM Forms提供参考站点实施，以演示AEM Forms如何帮助金融服务行业和政府组织在任何设备上随时随地将其复杂交易转换为简单而引人入胜的数字体验。
 
@@ -40,7 +40,7 @@ We.Finance和We.Gov参考网站利用真实的用例与现有和潜在客户进�
 
 * 与Adobe Sign集成，以安全地签署和提交自适应表单。
 
-## 设置引用站点{#prerequisites-and-steps-to-set-up-reference-sites}的先决条件和步骤
+## 设置引用站点的先决条件和步骤 {#prerequisites-and-steps-to-set-up-reference-sites}
 
 在设置引用站点之前，请确保您具有以下内容：
 
@@ -153,7 +153,7 @@ We.Finance和We.Gov参考网站利用真实的用例与现有和潜在客户进�
 
 ## 配置Day CQ Link Externalizer配置 {#externalizer}
 
-在AEM中，**Externalizer**&#x200B;是一种OSGI服务，它允许您以编程方式转换资源路径(例如，/path/to/my/page)通过预配置的DNS来预定路径，从而将其置于外部和绝对URL(例如https://www.mycompany.com/path/to/my/page)中。 请参阅[外部化URL](/help/sites-developing/externalizer.md)。
+在AEM中， **Externalizer**&#x200B;是一项OSGI服务，它允许您通过预配置的DNS来预定路径，以编程方式将资源路径（例如/path/to/my/page）转换为外部和绝对URL(例如https://www.mycompany.com/path/to/my/page)。 请参阅[外部化URL](/help/sites-developing/externalizer.md)。
 
 >[!CAUTION]
 >
@@ -262,7 +262,7 @@ AEM DS服务设置是引用站点用例中用于电子邮件通信的发布实�
    * 转到&#x200B;**[!UICONTROL Sales > We.Finance Auto Insurance]**，然后单击&#x200B;**[!UICONTROL Import]**。
    * 转到&#x200B;**[!UICONTROL Sales > We.Finance Home Mortgage]**&#x200B;并单击&#x200B;**[!UICONTROL Import]**。
 
-## 为Microsoft Dynamics {#configure-oauth-cloud-service-for-microsoft-dynamics}配置OAuth云服务
+## 为Microsoft Dynamics配置OAuth云服务 {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
 在AEM Forms中配置OAuth云服务，以启用AEM Forms与Microsoft Dynamics之间的通信。 执行以下步骤以在AEM创作和发布实例上配置OAuthCloud Service:
 
@@ -289,7 +289,7 @@ AEM DS服务设置是引用站点用例中用于电子邮件通信的发布实�
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
 
-## 配置参考站点Adobe Sign云服务{#sign-service}
+## 配置参考站点Adobe Sign云服务 {#sign-service}
 
 在创作实例和发布实例上执行以下操作：
 
@@ -322,7 +322,7 @@ AEM DS服务设置是引用站点用例中用于电子邮件通信的发布实�
 1. 保存设置。
 1. （**仅创作实例**）转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL 数据源]** > **[!UICONTROL 全局]**。 选择&#x200B;**[!UICONTROL roi-rest]**&#x200B;并点按&#x200B;**[!UICONTROL 属性]**。 点按&#x200B;**[!UICONTROL 身份验证设置]**，并将&#x200B;**[!UICONTROL 身份验证类型]**&#x200B;设置为&#x200B;**[!UICONTROL 基本身份验证]**。 指定`admin`/ `admin`作为访问服务的用户名/密码。 点按&#x200B;**[!UICONTROL 保存并关闭]**。
 
-## 与Marketing Cloud{#integrate-with-marketing-cloud}集成
+## 与Marketing Cloud集成 {#integrate-with-marketing-cloud}
 
 您可以将AEM Forms与Adobe Analytics和Adobe Target集成。 虽然Adobe Analytics可以帮助您生成报表并分析自适应表单的性能，但Adobe Target可以帮助您提供个性化体验并执行自适应表单的A/B测试。
 
@@ -383,7 +383,7 @@ AEM Forms与Adobe Analytics集成允许您监控和分析客户与表单和文�
 
 信用卡应用程序和住房抵押贷款应用程序用例演示了如何执行A/B测试并展示用于演示目的的报告。 有关演练，请参阅[We.Finance引用站点演练](/help/forms/using/finance-reference-site-walkthrough.md)。
 
-## 下一步{#next-step}
+## 下一步 {#next-step}
 
 现在，您都可以浏览参考站点。 有关参考站点工作流和步骤的更多信息，请参阅：
 

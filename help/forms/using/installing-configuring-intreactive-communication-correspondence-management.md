@@ -1,17 +1,17 @@
 ---
 title: 安装和配置交互式通信
-seo-title: 安装和配置交互式通信
+seo-title: Install and configure Interactive Communications
 description: '安装和配置AEM Forms交互式通信，以创建业务信函、文档、声明、福利通知、营销邮件、账单和欢迎工具包。 '
-seo-description: '安装和配置AEM Forms交互式通信，以创建业务信函、文档、声明、福利通知、营销邮件、账单和欢迎工具包。 '
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
 role: Admin
 exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 6%
+source-wordcount: '1386'
+ht-degree: 5%
 
 ---
 
@@ -146,7 +146,7 @@ AEM Forms有一些必选配置。 强制配置包括配置BouncyCastle库和序�
 
 #### 安装兼容包 {#install-compatibility-package}
 
-在AEM 6.4 Forms中创建客户通信的默认方法是推荐的交互式通信方法。 如果您已从以前的版本升级或迁移，并计划继续使用字母（通信管理），请安装[AEMFD兼容包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
+在AEM 6.4 Forms中创建客户通信的默认方法是推荐的交互式通信方法。 如果您已从以前的版本升级或迁移，并计划继续使用字母（通信管理），请安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
 
 AEMFD兼容包允许您在AEM 6.4 Forms上使用AEM 6.3 Forms和AEM 6.2 Forms中的以下资产：
 
@@ -155,9 +155,9 @@ AEMFD兼容包允许您在AEM 6.4 Forms上使用AEM 6.3 Forms和AEM 6.2 Forms中
 * 数据字典
 * 自适应表单已弃用的模板和页面
 
-#### 配置Dispatcher {#configure-dispatcher}
+#### 配置 Dispatcher {#configure-dispatcher}
 
-Dispatcher正在为AEM缓存和负载平衡工具。 AEM Dispatcher还有助于保护AEM服务器免受攻击。 您可以将Dispatcher与企业级Web服务器结合使用，以提高AEM实例的安全性。 如果您使用[Dispatcher](https://helpx.adobe.com/cn/experience-manager/dispatcher/using/dispatcher-configuration.html)，则为AEM Forms执行以下配置：
+Dispatcher正在为AEM缓存和负载平衡工具。 AEM Dispatcher还有助于保护AEM服务器免受攻击。 您可以将Dispatcher与企业级Web服务器结合使用，以提高AEM实例的安全性。 如果您使用[Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)，则为AEM Forms执行以下配置：
 
 1. 配置对AEM Forms的访问：
 

@@ -1,8 +1,8 @@
 ---
 title: 在JEE环境中强化AEM Forms
-seo-title: 在JEE环境中强化AEM Forms
+seo-title: Hardening Your AEM Forms on JEE Environment
 description: 了解各种安全强化设置，以增强在企业内部网中运行的JEE上的AEM Forms的安全性。
-seo-description: 了解各种安全强化设置，以增强在企业内部网中运行的JEE上的AEM Forms的安全性。
+seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7347'
+source-wordcount: '7304'
 ht-degree: 1%
 
 ---
@@ -632,7 +632,7 @@ JEE Web应用程序上每个AEM Forms的以下应用程序根URL。 您应该配
 
 跨站点请求伪造(CSRF)攻击利用网站对用户的信任来传输未经授权和无意的命令。 攻击的设置方式是：在网页中包含链接或脚本，或在电子邮件中包含URL，以访问用户已经通过身份验证的其他网站。
 
-例如，您可能在同时浏览其他网站的同时登录到管理控制台。 其中一个网页可以包括具有`src`属性的HTML图像标记，该属性针对受害者网站上的服务器端脚本。 攻击网站利用Web浏览器提供的基于Cookie的会话身份验证机制，可以向此受害服务器端脚本发送恶意请求，伪装成合法用户。 有关更多示例，请参阅[https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples)。
+例如，您可能在同时浏览其他网站的同时登录到管理控制台。 其中一个网页可以包括具有`src`属性的HTML图像标记，该属性针对受害者网站上的服务器端脚本。 攻击网站利用Web浏览器提供的基于Cookie的会话身份验证机制，可以向此受害服务器端脚本发送恶意请求，伪装成合法用户。
 
 CSRF具有以下共性：
 
@@ -674,7 +674,7 @@ AEM Forms on JEE使用反向链接过滤器功能阻止CSRF攻击。 本节使�
 
 ### 管理反向链接过滤 {#managing-referer-filtering}
 
-AEM Forms on JEE提供了反向链接过滤器，用于指定允许访问您的服务器资源的反向链接。 默认情况下，反向链接过滤器不会过滤使用安全HTTP方法(例如GET)的请求，除非将&#x200B;*CSRF_CHECK_GETS*&#x200B;设置为true。 如果允许的反向链接条目的端口号设置为0，则JEE上的AEM Forms将允许来自该主机的具有反向链接的所有请求，而不考虑端口号。 如果未指定端口号，则仅允许从默认端口80(HTTP)或端口443(HTTPS)发出请求。 如果删除了允许的反向链接列表中的所有条目，则会禁用反向链接过滤。
+AEM Forms on JEE提供了反向链接过滤器，用于指定允许访问您的服务器资源的反向链接。 默认情况下，反向链接过滤器不会过滤使用安全HTTP方法(例如，GET)的请求，除非将&#x200B;*CSRF_CHECK_GETS*&#x200B;设置为true。 如果允许的反向链接条目的端口号设置为0，则JEE上的AEM Forms将允许来自该主机的具有反向链接的所有请求，而不考虑端口号。 如果未指定端口号，则仅允许从默认端口80(HTTP)或端口443(HTTPS)发出请求。 如果删除了允许的反向链接列表中的所有条目，则会禁用反向链接过滤。
 
 首次安装Document Services时，将使用安装Document Services的服务器的地址更新允许的反向链接列表。 服务器的条目包括服务器名称、IPv4地址、启用IPv6时的IPv6地址、环回地址和本地主机条目。 主机操作系统会返回添加到允许的反向链接列表的名称。 例如，IP地址为10.40.54.187的服务器将包含以下条目：`https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`。 对于由主机操作系统重新调整的任何不合格名称（没有IPv4地址、IPv6地址或合格域名的名称），允许列表不会更新。 修改允许的反向链接列表以适合您的业务环境。 请勿在生产环境中使用默认允许的反向链接列表部署表单服务器。 修改任何允许的反向链接、反向链接例外或URI后，确保重新启动服务器以使更改生效。
 
@@ -697,7 +697,7 @@ AEM Forms on JEE提供了用于管理允许的反向链接异常列表和允许�
 
 有关API的更多信息，请参阅* Jee API参考上的AEM Forms* 。
 
-在全局级别使用&#x200B;***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION***&#x200B;列表，以定义适用于所有应用程序的例外。 此列表仅包含具有绝对路径(例如，`/index.html`)或相对路径(例如`/sample/`)。 您还可以在相对URI(例如，`/sample/(.)*`。
+在全局级别使用&#x200B;***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION***&#x200B;列表，以定义适用于所有应用程序的例外。 此列表仅包含具有绝对路径（例如`/index.html`）或相对路径（例如`/sample/`）的URI。 您还可以在相对URI的末尾附加正则表达式，例如`/sample/(.)*`。
 
 ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION***&#x200B;列表ID在`com.adobe.idp.um.api`命名空间的`UMConstants`类中定义为常量，该类位于`adobe-usermanager-client.jar`中。 您可以使用AEM Forms API创建、修改或编辑此列表。 例如，要创建全局允许的反向链接例外列表，请使用：
 

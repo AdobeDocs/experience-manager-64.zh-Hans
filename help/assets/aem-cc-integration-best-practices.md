@@ -2,12 +2,12 @@
 title: AEM和Creative Cloud集成最佳实践
 description: 将AEM部署与Adobe Creative Cloud集成以简化资产传输工作流程并实现最高效率的最佳实践
 contentOwner: AG
-feature: 协作，Adobe资产链接，桌面应用程序
+feature: Collaboration,Adobe Asset Link,Desktop App
 role: User,Admin
 exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3566'
 ht-degree: 16%
 
 ---
@@ -112,7 +112,7 @@ The terms used in this document may have a different meaning in other contexts. 
 
 ### 使用AEM和Creative Cloud集成时的注意事项 {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* 请参阅[桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* 请参阅[桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * 请参阅[Adobe Stock集成](aem-assets-adobe-stock.md)
 * 请参阅[Adobe资产链接](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -201,7 +201,7 @@ AEM Assets根据用户对AEM Assets部署的访问权限支持两种类型的用
 
 使用以下策略提供对最终/已批准资产的访问权限：
 
-* 要提供对大量资产的访问，请执行以下操作：使用[AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=en)，或客户在AEM发布基础架构上实施[资产共享](assets-finder-editor.md)
+* 要提供对大量资产的访问，请执行以下操作：使用[AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)，或客户在AEM发布基础架构上实施[资产共享](assets-finder-editor.md)
 
 * 要提供对一些资产的访问，请执行以下操作：除了AEM Assets Brand Portal或资产共享之外，还可以使用与Adobe Creative Cloud共享AEM文件夹。 请注意，此集成存在某些限制，本文将详细介绍这些限制。
 

@@ -6,12 +6,12 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
-feature: 全景图像
+feature: Panoramic Images
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 5%
+source-wordcount: '581'
+ht-degree: 4%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 5%
 
 要使全景图像查看器在AEM中正常工作，您必须将全景图像查看器预设与特定于Dynamic Media Classic和Dynamic Media Classic的元数据同步，以便查看器预设在JCR中进行更新。 要实现此目的，请按照以下方式配置Dynamic Media Classic:
 
-1. [登录到每个公司帐户的Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) 桌面应用程序。
+1. [登录到每个公司帐户的Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) 桌面应用程序。
 
 1. 在页面的右上角附近，单击&#x200B;**[!UICONTROL 设置>应用程序设置>发布设置>图像服务器]**。
 1. 在&#x200B;**[!UICONTROL 图像服务器发布]**&#x200B;页面上，从顶部附近的&#x200B;**[!UICONTROL 发布上下文]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 图像服务]**。

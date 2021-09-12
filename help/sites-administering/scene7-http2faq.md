@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2da4c0b3-119e-436e-9f03-f794283e9a37
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '784'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Adobe很兴奋地宣布推出HTTP/2内容交付。 使用HTTP/2时，您会注意到整体性能有所提高。
 
-## 什么是HTTP/2?{#what-is-http}
+## 什么是HTTP/2? {#what-is-http}
 
 HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信息，同时降低所需的处理能力。
 
@@ -25,7 +25,7 @@ HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信�
 
 [https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
 
-## 迁移到HTTP/2进行内容交付有哪些主要优势？{#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
+## 迁移到HTTP/2进行内容交付有哪些主要优势？ {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
 性能改进因以下因素而异：网站代码、使用Dynamic Media的方式、消费者的设备、屏幕和位置等。
 
@@ -38,7 +38,7 @@ Adobe自己的测试产生了以下结果：
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
-## 我是否有资格切换到HTTP/2?{#am-i-eligible-to-switch-over-to-http}
+## 我是否有资格切换到HTTP/2? {#am-i-eligible-to-switch-over-to-http}
 
 要使用HTTP/2，您必须满足以下要求：
 
@@ -46,9 +46,9 @@ Adobe自己的测试产生了以下结果：
 * 将Adobe捆绑的CDN（内容交付网络）用作Dynamic Media Classic许可证的一部分。
 * 使用专用域（即`images.company.com`或`mycompany.scene7.com`），而不使用通用的Dynamic Media Classic域（即`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
-   要查找您的域，请通过[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)登录到您的帐户。 然后点按&#x200B;**[!UICONTROL 设置>应用程序设置>常规设置]**。 查找标有&#x200B;**Published Server Name**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以在此过渡中请求移至您自己的自定义域。
+   要查找您的域，请通过[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)登录到您的帐户。 然后点按&#x200B;**[!UICONTROL 设置>应用程序设置>常规设置]**。 查找标有&#x200B;**Published Server Name**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以在此过渡中请求移至您自己的自定义域。
 
-## 为我的Dynamic Media Classic帐户启用HTTP/2的过程是什么？{#what-is-the-process-for-enabling-http-for-my-scene-account}
+## 为我的Dynamic Media Classic帐户启用HTTP/2的过程是什么？ {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
 1. 您必须[使用Admin Console创建支持案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)，并请求切换到HTTP/2;它不会自动为您完成。
 1. 在支持案例中提供以下信息：
@@ -56,21 +56,21 @@ Adobe自己的测试产生了以下结果：
    * 主要联系人姓名、电子邮件和电话号码。
    * 要过渡到HTTP2的所有域。 即`images.company.com`或`mycompany.scene7.com`。
 
-      要查找您的域，请通过[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)登录到您的帐户。 然后点按&#x200B;**[!UICONTROL 设置>应用程序设置>常规设置]**。 查找标有&#x200B;**[!UICONTROL Published Server Name.]**&#x200B;的字段
+      要查找您的域，请通过[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)登录到您的帐户。 然后点按&#x200B;**[!UICONTROL 设置>应用程序设置>常规设置]**。 查找标有&#x200B;**[!UICONTROL Published Server Name.]**&#x200B;的字段
    单击&#x200B;**[!UICONTROL 设置 > 应用程序设置 > 常规设置]**。查找标有&#x200B;**[!UICONTROL Published Server Name]**&#x200B;的字段。
 
    * 确认您对富媒体请求使用安全HTTPS。
    * 验证您是否通过Adobe使用CDN，以及是否通过直接关系进行管理。
    * 验证您使用的是专用域。 即`images.company.com`或`mycompany.scene7.com`，而不是通用的Dynamic Media域，如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`。
 
-      要查找您的域，请通过[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)登录到您的帐户。 然后点按&#x200B;**[!UICONTROL 设置>应用程序设置>常规设置]**。 查找标记为&#x200B;**[!UICONTROL Published Server Name的字段。]** 如果您当前使用的是通用Dynamic Media域，则可以在此过渡中请求移至您自己的自定义域。
+      要查找您的域，请通过[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)登录到您的帐户。 然后点按&#x200B;**[!UICONTROL 设置>应用程序设置>常规设置]**。 查找标记为&#x200B;**[!UICONTROL Published Server Name的字段。]** 如果您当前使用的是通用Dynamic Media域，则可以在此过渡中请求移至您自己的自定义域。
    1. 技术支持将您根据请求提交的顺序添加到HTTP/2客户等待列表。
    1. 当Adobe准备好处理您的请求时，支持团队将与您联系以协调过渡并设置目标日期。
    1. 完成后，系统会通知您，并可以验证是否成功过渡到HTTP2。
 
 
 
-## 我何时可以转换到HTTP/2?{#when-can-i-expect-to-be-transitioned-over-to-http}
+## 我何时可以转换到HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
 请求的处理顺序与技术支持部门接收请求的顺序一致。
 
@@ -78,12 +78,12 @@ Adobe自己的测试产生了以下结果：
 >
 >可能会有较长的前置时间，因为过渡到HTTP/2涉及清除缓存。 因此，一次只能处理少数客户过渡。
 
-## 迁移到HTTP/2有哪些风险？{#what-are-the-risks-with-moving-to-http}
+## 迁移到HTTP/2有哪些风险？ {#what-are-the-risks-with-moving-to-http}
 
 过渡到HTTP/2会清除CDN中的缓存，因为它涉及到迁移到新的CDN配置。
 
 非缓存内容会直接点击Adobe的源服务器，直到再次重建缓存为止。 因此，Adobe计划一次处理一些客户过渡，以便在从我们的来源提取请求时保持可接受的性能。
 
-## 如何验证URL或网站是否已通过HTTP/2激活？{#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
+## 如何验证URL或网站是否已通过HTTP/2激活？ {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
 您需要下载外部版本才能与Web浏览器一起使用。 对于Firefox和Chrome，有一个名为&#x200B;**[!UICONTROL HTTP/2和SPDY Indicator]**&#x200B;的扩展。 浏览器仅安全支持HTTP/2，因此需要通过HTTPS调用URL进行验证。 如果支持HTTP/2，则扩展将以蓝色Flash符号和标题“X-Firefox-Spdy”的形式指示此参数：&quot;h2&quot;。

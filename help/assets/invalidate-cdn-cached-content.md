@@ -1,8 +1,8 @@
 ---
 title: 使 CDN 缓存内容无效
-seo-title: 使 CDN 缓存内容无效
+seo-title: Invalidating your CDN cached content
 description: 通过使CDN（内容交付网络）缓存内容失效，您可以快速更新由Dynamic Media交付的资产，而无需等待缓存过期。
-seo-description: 通过使CDN（内容交付网络）缓存内容失效，您可以快速更新由Dynamic Media交付的资产，而无需等待缓存过期。
+seo-description: Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
 uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 exl-id: 335c7a78-a00f-451b-8e53-225830d429c6
-feature: 资产管理，CDN缓存
+feature: Asset Management,CDN Cache
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 28%
+source-wordcount: '638'
+ht-degree: 29%
 
 ---
 
@@ -29,7 +29,7 @@ Dynamic Media资产由CDN缓存以便快速交付。 但是，当您对资产进
 
 1. 登录到Dynamic Media Classic桌面应用程序。
 
-   [Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)
+   [Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)
 
    您的凭据和登录是在配置时由Adobe提供的。 如果您没有此信息，请联系技术支持。
 

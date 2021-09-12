@@ -2,12 +2,12 @@
 title: 将AEM Assets文件夹与Creative Cloud共享
 description: 允许Adobe Experience Manager Assets用户与Adobe Creative Cloud用户交换资产文件夹的配置和最佳实践。
 contentOwner: AG
-feature: 协作
+feature: Collaboration
 role: User,Admin
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ AEM到Creative Cloud的文件夹共享依赖于AEM Assets和Creative Cloud帐户
 该集成包含以下元素：
 
 * **AEM Assets** server部署在企业网络（托管服务或内部部署）中：在此处启动文件夹共享。
-* **Adobe Marketing Cloud Assets核心服务**:在AEM和Creative Cloud存储服务之间充当中介。使用集成的公司管理员需要在Marketing Cloud组织与AEM Assets实例之间建立信任关系。 它们还[定义了已批准的Creative Cloud协作者](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets)列表，AEM Assets用户也可以共享文件夹以提高安全性。
+* **Adobe Marketing Cloud Assets核心服务**:在AEM和Creative Cloud存储服务之间充当中介。使用集成的公司管理员需要在Marketing Cloud组织与AEM Assets实例之间建立信任关系。 它们还[定义了已批准的Creative Cloud协作者](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html#assets)列表，AEM Assets用户也可以共享文件夹以提高安全性。
 * **Creative Cloud资产Web服务** (存储和Creative Cloud文件Web UI):在这里，与其共享了AEM Assets文件夹的特定Creative Cloud用户将能够接受邀请并在其Creative Cloud帐户存储中查看该文件夹。
 * **Creative Cloud桌面应用程序**:（可选）允许通过与Creative Cloud资产存储同步，从创意用户的桌面直接访问共享文件夹/文件。
 

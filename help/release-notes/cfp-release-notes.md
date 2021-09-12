@@ -4,22 +4,22 @@ description: 特定于Adobe Experience Manager 6.4累积修补程序包的发行
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '4680'
-ht-degree: 15%
+source-wordcount: '4676'
+ht-degree: 16%
 
 ---
 
 # AEM 6.4 累积修补程序包发行说明 {#aem-cumulative-fix-pack-release-notes}
 
-## 发行信息 {#release-information}
+## 版本信息 {#release-information}
 
 <!-- TBD: Update the SD URL. -->
 
 | 产品 | **Adobe Experience Manager (AEM) 6.4** |
 |---|---|
-| 版本号 | 6.4.8.4 |
+| 版本 | 6.4.8.4 |
 | 类型 | 累积修补程序包 |
 | 日期 | 2021 年 2 月 25 日 |
 | 先决条件 | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
@@ -39,7 +39,7 @@ AEM 6.4.8.4是依赖于AEM 6.4 Service Pack 8的累积修补程序包(CFP)。 �
 
 * 内置存储库 (Apache Jackrabbit Oak) 已更新至版本 1.8.24。
 
-有关CFP和其他发行版类型的信息，请参阅[AEM更新版本发行方式定义](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html?lang=en)
+有关CFP和其他发行版类型的信息，请参阅[AEM更新版本发行方式定义](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.4提供了以下问题的修复。
 
@@ -460,7 +460,7 @@ Adobe Experience Manager 6.4.8.1提供了对以下问题的修复。
 >
 >Adobe 建议不要移除或卸载 AEM 6.4.8.4 包。
 
-### 安装累积修补程序包{#install-cumulative-fix-pack}
+### 安装累积修补程序包 {#install-cumulative-fix-pack}
 
 执行以下步骤以在现有 AEM 6.4.8.0 实例上安装累积修补程序包：
 
@@ -490,7 +490,7 @@ B.使用包管理器](https://helpx.adobe.com/cn/experience-manager/aem-previous
 
 ### 验证安装 {#validate-install}
 
-1. “产品信息”页面(*/system/console/productinfo*)现在应在“已安装的产品”下显示更新的版本字符串“Adobe Experience Manager，版本6.4.8.4”。
+1. 现在，产品信息页面 (*/system/console/productinfo*) 应该在“已安装的产品”下显示更新的版本字符串“Adobe Experience Manager，版本 6.4.8.4”。
 1. 所有 OSGi 包在 OSGi 控制台中均为“活动”或“片段”（使用 Web 控制台：/system/console/bundles）。
 1. OSGi包org.apache.jackrabbit.oak-core的版本为1.8.17或更高版本(使用Web控制台：/system/console/bundles)。
 
@@ -499,7 +499,7 @@ B.使用包管理器](https://helpx.adobe.com/cn/experience-manager/aem-previous
 >[!NOTE]
 >成功安装包后，会显示一条信息性消息，指示已成功安装内容包，例如&#x200B;**&quot;Content Package AEM-6.4-Service-Pack-8已成功安装。&quot;**
 
-### 更新Dynamic Media查看器(5.10.1){#update-dynamic-media-viewers}
+### 更新Dynamic Media查看器(5.10.1) {#update-dynamic-media-viewers}
 
 AEM 6.4.8.4包含新版Dynamic Media查看器(5.10.1)，该查看器支持在“图像预设”页面上检查重复名称。 建议Dynamic Media客户运行以下命令，以将现成的查看器预设调至最新状态。
 
@@ -518,10 +518,10 @@ AEM 6.4.8.4包含新版Dynamic Media查看器(5.10.1)，该查看器支持在“
 >如果您未使用 AEM Forms，请跳过。AEM Forms 中的修复通过单独的附加包来交付。
 
 1. 确保已安装AEM累积修补程序包。
-1. 下载适用于您的操作系统的[AEM Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates)中列出的相应Forms附加组件包。
+1. 下载适用于您的操作系统的[AEM Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates)中列出的相应Forms附加组件包。
 1. 按照[安装AEM Forms附加组件包](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package)中所述安装Forms附加组件包。
 
-### 安装AEM Forms JEE安装程序{#install-aem-forms-jee-installer}
+### 安装AEM Forms JEE安装程序 {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
@@ -584,7 +584,7 @@ AEM 6.4.8.4 中包含的内容包列表
 * [AEM 6.4 发行说明](../release-notes/release-notes.md)
 * [AEM 产品页面](https://www.adobe.com/solutions/web-experience-management.html)
 * [AEM 6.4 文档](https://helpx.adobe.com/cn/support/experience-manager/6-4.html)
-* 订阅 [Adobe 产品更新早知道](https://www.adobe.com/subscription/priority-product-update.html)
+* 订阅 [Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
 
 ## 受限的网站 {#restricted-sites-new}
 

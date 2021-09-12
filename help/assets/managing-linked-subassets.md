@@ -2,12 +2,12 @@
 title: 管理复合资产并生成子资产。
 description: 了解如何从AEM、Adobe Illustrator和Photoshop文件中创建对InDesign资产的引用。 另外，了解如何使用页面查看器功能查看多页文件（包括PDF、INDD、PPT、PPTX和AI文件）的各个页面。
 contentOwner: AG
-feature: 资产管理
+feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1408'
 ht-degree: 5%
 
 ---
@@ -119,7 +119,7 @@ AEM Assets支持&#x200B;**双向引用**。 您可以在上传文件的资产详
 
 以下选项在工具栏、左边栏和“页面查看器”控件中可用：
 
-* **[!UICONTROL 桌面]** 操作，以使用AEM桌面应用程序打开或显示特定的子资产。如果您使用的是AEM桌面应用程序，请参阅如何[配置桌面操作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2)。
+* **[!UICONTROL 桌面]** 操作，以使用AEM桌面应用程序打开或显示特定的子资产。如果您使用的是AEM桌面应用程序，请参阅如何[配置桌面操作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
 
 * **** 属性选项会打开  特定子资产的属性页面。
 

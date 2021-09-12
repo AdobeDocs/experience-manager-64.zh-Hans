@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
-feature: 视频
+feature: Video
 role: User
-source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '10387'
+source-wordcount: '10384'
 ht-degree: 23%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 23%
 >* 请参阅[配置Dynamic Media - Scene7模式](config-dms7.md)和[Dynamic Media - Scene7模式疑难解答](troubleshoot-dms7.md)
 
 >
-
 
 
 1. 通过执行以下操作，**上传 Dynamic Media 视频**：
@@ -73,7 +72,7 @@ ht-degree: 23%
 
          [查看视频演绎版](video-renditions.md)
 
-         [管理视频演绎版](managing-assets-touch-ui.md#managing-renditions)
+[管理视频演绎版](managing-assets-touch-ui.md#managing-renditions)
 
       * [管理查看器预设](managing-viewer-presets.md)
       * [发布资产](publishing-dynamicmedia-assets.md)
@@ -85,7 +84,7 @@ ht-degree: 23%
 
       * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
 
-         [编辑视频属性](managing-assets-touch-ui.md#editing-properties)
+[编辑视频属性](managing-assets-touch-ui.md#editing-properties)
 
       * [管理数字资产的元数据](metadata.md)
       * [元数据架构](metadata-schemas.md)
@@ -163,7 +162,7 @@ Dynamic Media支持为MP4 H.264视频播放移动设备视频。您可以在以�
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-另请参阅《AdobeDynamic Media查看器参考指南》中的[关于HTML5查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only)。
+另请参阅《AdobeDynamic Media查看器参考指南》中的[关于HTML5查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
 
 ## 最佳实践：使用HTML5视频查看器 {#best-practice-using-the-html-video-viewer}
 
@@ -357,13 +356,13 @@ For advice about video encoding, see the following:
 | 2000 | 典型的宽带桌面连接。对于此连接，目标数据率范围为800-2000 Kbps，大多数目标数据率平均为1200-1500 Kbps。 |
 | 5000 | 典型高宽带连接。不建议在此较高范围下进行编码，因为大多数用户并不具备此速度的视频传送条件。 |
 
-### 分辨率 {#resolution}
+### 解决方法 {#resolution}
 
 **分辨率**&#x200B;以像素为单位描述视频文件的高度和宽度。大多数源视频以高分辨率存储（例如，1920 x 1080）。出于流播放目的，源视频会压缩至较低分辨率（640 x 480 或更低）。
 
 分辨率和数据率是两个相互关联、密不可分的因素，它们决定着视频质量。为保持同等的视频质量，视频文件的像素数越高（分辨率越高），数据率就必须越高。例如，考虑分辨率分别为 320 x 240 和 640 x 480 的视频文件的每帧像素数：
 
-| 分辨率 | 每帧像素数 |
+| 解决方法 | 每帧像素数 |
 |--- |--- |
 | 320 x 240 | 76,800 |
 | 640 x 480 | 307,200 |
@@ -379,7 +378,7 @@ For advice about video encoding, see the following:
 
 在为主视频文件选择（或创建）视频编码预设时，请使用此表来确定正确的分辨率：
 
-| 分辨率 | 高度（像素） | 屏幕大小 |
+| 解决方法 | 高度（像素） | 屏幕大小 |
 |--- |--- |--- |
 | 240p | 240 | 微型屏幕 |
 | 300p | 300 | 通常用于移动设备的小型屏幕 |
@@ -413,7 +412,7 @@ For advice about video encoding, see the following:
    <th><p>高度比</p> </th> 
   </tr>
   <tr> 
-   <td><p>源</p> </td> 
+   <td><p>来源</p> </td> 
    <td><p>1920 x 1080</p> </td> 
    <td><p>1</p> </td> 
    <td><p>1</p> </td> 
@@ -502,7 +501,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    `https://<servername.domain>:<port_number>`
 
-   例如，`https://1a2b3c.mycompany.com:4321`
+   例如, `https://1a2b3c.mycompany.com:4321`
 
    **注意**:上述路径示例仅供说明之用。
 
@@ -510,7 +509,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    `https://<servername.domain>:<port#>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   例如，`https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   例如, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    **注意**:上述路径示例仅供说明之用。
 

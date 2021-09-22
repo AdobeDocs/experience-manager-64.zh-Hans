@@ -1,6 +1,6 @@
 ---
 title: 智能成像
-description: 智能成像功能利用每个用户独特的观看特性自动提供针对其体验优化的正确图像，从而提高性能和参与度。
+description: 智能成像功能可应用每位用户独特的观看特性，自动为其体验优化的正确图像提供服务，从而提高性能和参与度。
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: e43e25fa1d0df2c2b5b72e49c5a54ca88c000ad2
+source-git-commit: cab72662c62dbc6caa05265b350aed26f21e6824
 workflow-type: tm+mt
-source-wordcount: '2547'
+source-wordcount: '2561'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ Smart Imaging还通过与Adobe一流的高级CDN服务完全集成而带来的�
 
 最新版智能成像中的增强功能：
 
-* 利用最新的智能成像功能改进了网页的Google SEO排名。
+* 针对使用最新智能成像的网页，改进了Google SEO排名。
 * 立即提供优化内容（在运行时）。
 * 使用Adobe Sensei技术根据图像请求中指定的质量(qlt)进行转换。
 * 可以使用“bfc”URL参数关闭智能成像。
@@ -193,7 +193,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 | Europe, Middle East, Africa | 13 Aug 2021 |
 | Asia-Pacific | 22 Jul 2021 | -->
 
-1. [使用Admin Console创建支持案例。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [使用Admin Console创建支持案例。](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
 1. 在支持案例中提供以下信息：
 
    1. 主要联系人姓名、电子邮件、电话。
@@ -237,7 +237,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 在初始过渡期间，非缓存图像会直接点击Adobe的源服务器，直到再次重建缓存为止。 因此，Adobe计划一次处理一些客户过渡，以便在从Adobe的来源提取请求时保持可接受的性能。 对于大多数客户而言，可在约1到2天内在CDN重新完全构建缓存。
 
-## 如何验证智能成像是否按预期工作？  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
+## 如何验证智能成像是否按预期工作？ {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. 在您的帐户配置了智能成像后，请在浏览器上加载Dynamic Media Classic/Dynamic Media图像URL。
 1. 在浏览器中单击&#x200B;**[!UICONTROL 查看]** > **[!UICONTROL 开发人员]** > **[!UICONTROL 开发人员工具]**&#x200B;以打开Chrome开发人员窗格。 或者，选择您选择的任何浏览器开发人员工具。
@@ -258,11 +258,11 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 ## 是否可以针对任何请求关闭智能成像？ {#turning-off-smart-imaging}
 
-是. 您可以通过向URL添加修饰符`bfc=off`来关闭智能成像。
+是。您可以通过向URL添加修饰符`bfc=off`来关闭智能成像。
 
 ## 我是否可以请求在公司级别关闭DPR和网络优化？ {#dpr-companylevel-turnoff}
 
-是. 要在贵公司禁用DPR和网络优化，请创建一个支持案例，如本主题前面所述。
+是。要在贵公司禁用DPR和网络优化，请创建一个支持案例，如本主题前面所述。
 
 ## 提供了哪些“调整”功能？ 是否可以定义任何设置或行为？ (#tuning-settings)
 
@@ -281,3 +281,9 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 * Experience Manager站点核心组件默认配置以进行DPR优化。 为避免因服务器端智能成像DPR优化而出现超大图像，应始终将`dpr=off`添加到Experience Manager站点核心组件Dynamic Media图像中。
 * 默认情况下，为了优化DPR，配置了Dynamic Media Foundation组件，以避免因服务器端智能成像DPR优化而出现过大的图像，将始终向Dynamic Media Foundation组件图像中添加`dpr=off`。 即使客户在DM Foundation组件中取消选择DPR优化，服务器端智能成像DPR也不会生效。 总之，在DM Foundation组件中，DPR优化仅基于DM Foundation组件级别设置生效。
 * 任何查看器端DPR优化都与服务器端智能成像DPR优化协同工作，并且不会导致图像过大。 换言之，无论DPR由查看器处理（例如仅在启用了缩放功能的查看器中的主视图），都不会触发服务器端智能成像DPR值。 同样，无论查看器元素（如色板和缩略图）没有DPR处理，都会触发服务器端智能成像DPR值。
+
+>[!MORELIKETHIS]
+>
+>* [使用下一代图像格式WebP和AVIF优化图像。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
+

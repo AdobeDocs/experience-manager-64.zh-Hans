@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Developing 用户指南
 breadcrumb-title: Developing 指南
 user-guide-description: 本指南介绍如何构建 AEM 实例。
-feature: 开发
+feature: Developing
 role: Developer
-source-git-commit: 1ecb63f849f9f6167dddd4053267ae89577659fc
+source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 16%
@@ -31,7 +31,7 @@ ht-degree: 16%
    + [CSRF保护框架](csrf-protection.md)
    + [数据建模 — 大卫·纽谢勒的模型](model-data.md)
    + [参与AEM](contributing-to-cq.md)
-   + [安全](security.md)
+   + [安全性](security.md)
    + [参考资料](reference-materials.md)
    + [创建功能齐全的网站（经典UI）](website.md)
    + [设计和设计器（经典UI）](designer.md)
@@ -100,7 +100,7 @@ ht-degree: 16%
       + [使用xtype（经典UI）](xtypes.md)
       + [开发Forms（经典UI）](developing-forms.md)
 + 无外设体验管理{#headless}
-   + [无头和混合AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [无头和混合AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [为组件启用JSON导出](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + 单页应用程序{#spas}
       + [SPA简介和演练](spa-walkthrough.md)
@@ -214,7 +214,7 @@ ht-degree: 16%
    + [代码缺陷](code-pitfalls.md)
    + [OSGi包](osgi-bundles.md)
    + [JCR集成](jcr-integration.md)
-   + [代码样本](code-samples.md)
+   + [代码示例](code-samples.md)
    + [慢速查询疑难解答](troubleshooting-slow-queries.md)
 + 移动 Web{#mobileweb}
    + [移动 Web](mobile-web.md)

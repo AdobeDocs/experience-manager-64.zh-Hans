@@ -1,8 +1,8 @@
 ---
 title: 开发和扩展工作流
-seo-title: 开发和扩展工作流
+seo-title: Developing and Extending Workflows
 description: AEM提供了多种工具和资源，用于创建工作流模型、开发工作流步骤以及以编程方式与工作流交互
-seo-description: AEM提供了多种工具和资源，用于创建工作流模型、开发工作流步骤以及以编程方式与工作流交互
+seo-description: AEM provides several tools and resources for creating workflow models, developing workflow steps, and for programmatically interacting with workflows
 uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 4f9bd75c-9d54-4cd6-9d73-5d580be5a9e8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 608c0fbd7eb0fc06fccf8cbcaebf874bff36d5e0
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1512'
 ht-degree: 3%
 
 ---
@@ -48,12 +48,11 @@ AEM提供了多种工具和资源，用于创建工作流模型、开发工作�
 >
 
 
-
 ## 模型 {#model}
 
 `WorkflowModel`表示工作流的定义（模型）。 它由`WorkflowNodes`和`WorkflowTransitions`组成。 过渡连接节点并定义&#x200B;*流量*。 “模型”(Model)始终具有起始节点和结束节点。
 
-### 运行时模型{#runtime-model}
+### 运行时模型 {#runtime-model}
 
 工作流模型已进行版本控制。 运行工作流实例时，它将使用（并保留）工作流的运行时模型（在工作流启动时可用）。
 
@@ -120,7 +119,7 @@ AEM提供了多种工具和资源，用于创建工作流模型、开发工作�
 
 将`WorkItems`直接分配给用户帐户或分配给它们所属的组。
 
-### 工作流类型{#workflow-types}
+### 工作流类型 {#workflow-types}
 
 工作流有各种类型的工作流，如工作流模型控制台中所示：
 
@@ -164,7 +163,6 @@ AEM提供了多种工具和资源，用于创建工作流模型、开发工作�
 >
 
 
-
 >[!CAUTION]
 >
 >在临时工作流中，您不应使用&#x200B;**跳转步骤**。
@@ -187,7 +185,7 @@ AEM提供了多种工具和资源，用于创建工作流模型、开发工作�
 >
 >有关更多详细信息，请参阅[为多资源支持配置工作流](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)。
 
-### 工作流阶段{#workflow-stages}
+### 工作流阶段 {#workflow-stages}
 
 工作流阶段有助于在处理任务时可视化工作流的进度。 它们可用于提供工作流处理过程的概述，例如，当运行工作流时，用户可以查看&#x200B;**Stage**（与单个步骤相反）描述的进度。
 
@@ -217,6 +215,6 @@ AEM提供了多种工具和资源，用于创建工作流模型、开发工作�
 
 创建新表单时，表单提交可轻松与工作流模型关联；例如，将内容存储在存储库的特定位置，或通知用户表单提交及其内容。
 
-### 工作流和翻译{#workflows-and-translation}
+### 工作流和翻译 {#workflows-and-translation}
 
 工作流也是[Translation](/help/sites-administering/translation.md)流程的一个组成部分。

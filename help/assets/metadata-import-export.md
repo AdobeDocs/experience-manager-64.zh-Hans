@@ -2,12 +2,12 @@
 title: 批量元数据导入和导出
 description: 本文介绍了如何批量导入和导出元数据。
 contentOwner: AG
-feature: 元数据
+feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '640'
 ht-degree: 9%
 
 ---
@@ -36,7 +36,7 @@ AEM Assets允许您使用CSV文件批量导入资产元数据。 您可以通过
    | [!UICONTROL 批量大小] | 要为其导入元数据的批次中的资产数量。 默认值为 50。最大值为100。 |
    | [!UICONTROL 字段分隔符] | 默认值为`,` — 逗号。 您可以指定任何其他字符。 |
    | [!UICONTROL 多值分隔符] | 元数据值的分隔符。 默认值为`|` — 管道。 |
-   | [!UICONTROL 启动工作流] | 默认为False。 如果设置为true，则`DAM Metadata WriteBack Workflow`(将元数据写入二进制XMP数据)的“启动器”设置有效。 启用启动工作流会对系统性能产生影响。 |
+   | [!UICONTROL 启动工作流] | 默认为False。 如果设置为true，则默认设置对`DAM Metadata WriteBack Workflow`(将元数据写入二进制XMP数据)有效。 启用工作流会对系统产生性能影响。 |
    | [!UICONTROL 资产路径列名称] | 为包含资产的CSV文件定义列名称。 |
 
 1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 导入]** 。 导入元数据后，系统会向您的通知收件箱发送通知。 导航到资产属性页面，并验证是否为资产正确导入了元数据值。

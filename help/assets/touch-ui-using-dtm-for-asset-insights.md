@@ -2,12 +2,12 @@
 title: 通过DTM启用资产分析
 description: 了解如何使用Adobe动态标签管理(DTM)来启用资产分析。
 contentOwner: AG
-feature: 资产分析，资产报表
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Adobe动态标签管理是一款可激活您的数字营销工具的工具。 �
 
 >[!CAUTION]
 >
->AdobeDTM已弃用，支持Adobe Experience Platform Launch，并且很快将结束[生命周期](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建议您[使用Launch进行资产分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)。
+>AdobeDTM已弃用，支持[!DNL Adobe Experience Platform]，并且很快将结束[生命周期](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建议您[对资产分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)使用 [!DNL Adobe Experience Platform] 。
 
 执行以下步骤以通过DTM启用资产分析：
 
-1. 点按/单击AEM徽标，然后转到&#x200B;**[!UICONTROL 工具>资产>分析配置]**。
+1. 点按/单击AEM徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 分析配置]**。
 1. [使用DTM配置AEM实例Cloud Service](../sites-administering/dtm.md)
 
    在您登录到[https://dtm.adobe.com](https://dtm.adobe.com/)并从“配置文件”图标访问&#x200B;**[!UICONTROL 帐户设置]**&#x200B;后，API令牌才应该可用。 从资产分析的角度来看，不需要执行此步骤，因为AEM Sites与资产分析的集成仍在进行中。

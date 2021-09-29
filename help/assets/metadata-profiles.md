@@ -2,12 +2,12 @@
 title: 使用元数据配置文件将默认元数据应用到文件夹中的所有资产
 description: 了解资产的元数据配置文件。 了解如何创建元数据配置文件并将其应用到文件夹资产。
 contentOwner: AG
-feature: 元数据
+feature: Metadata
 role: User,Admin
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1226'
 ht-degree: 35%
 
 ---
@@ -18,14 +18,14 @@ ht-degree: 35%
 
 ## 添加元数据配置文件 {#adding-a-metadata-profile}
 
-1. 点按或单击AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>元数据配置文件]**，然后点按&#x200B;**[!UICONTROL 创建]**。
+1. 点按或单击[!DNL Experience Manager]徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>元数据配置文件]**，然后点按&#x200B;**[!UICONTROL 创建]**。
 1. 输入元数据配置文件的标题（例如示例元数据），然后单击&#x200B;**[!UICONTROL Submit]**。 此时会显示元数据配置文件的&#x200B;**[!UICONTROL 编辑表单]**。
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
 
 1. 单击某个组件，并在&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡中配置其属性。例如，单击&#x200B;**[!UICONTROL 描述]**&#x200B;组件并编辑其属性。
 
-   ![chlimage_1-401](assets/chlimage_1-481.png)
+   ![chlimage_1-481](assets/chlimage_1-481.png)
 
    编辑&#x200B;**[!UICONTROL Description]**&#x200B;组件的以下属性：
 
@@ -34,7 +34,7 @@ ht-degree: 35%
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
-   您为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;指定的值会作为属性存储在资产的元数据节点下。例如，如果您指定`/jcr:content/metadata/dc:desc` 作为映射到属 **[!UICONTROL 性的名称]**,AEM Assets会将该值存 `dc:desc` 储在资产的元数据节点。
+   您为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;指定的值会作为属性存储在资产的元数据节点下。例如，如果您指定`/jcr:content/metadata/dc:desc` 作为映射到属 **[!UICONTROL 性的名称]**, [!DNL Experience Manager] 资产会将该值存储 `dc:desc` 在资产的元数据节点。
 
    * **[!UICONTROL 默认值]**：使用此属性可为元数据组件添加默认值。例如，如果您指定“我的描述”，则会将该值分配给资产元数据节点的属性`dc:desc`。
 
@@ -102,7 +102,7 @@ ht-degree: 35%
 
 #### 从配置文件用户界面将元数据配置文件应用到文件夹 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具> Assets >元数据配置文件]**。
+1. 点按[!DNL Experience Manager]徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>元数据配置文件]**。
 1. 选择您要应用到一个或多个文件夹的元数据配置文件。
 
    ![chlimage_1-490](assets/chlimage_1-490.png)
@@ -122,7 +122,7 @@ ht-degree: 35%
 
 ### 全局应用元数据配置文件 {#applying-a-metadata-profile-globally}
 
-除了将配置文件应用到文件夹之外，您还可以全局应用一个配置文件，以便任何文件夹中上传到AEM资产的任何内容都会应用选定的配置文件。 要全局应用元数据配置文件，请执行以下步骤：
+除了将配置文件应用到文件夹之外，您还可以全局应用一个配置文件，以便任何文件夹中上传到[!DNL Experience Manager]资产的任何内容都会应用选定的配置文件。 要全局应用元数据配置文件，请执行以下步骤：
 
 1. 执行下列操作之一：
 
@@ -144,7 +144,7 @@ ht-degree: 35%
 
 要通过配置文件用户界面将元数据配置文件从文件夹删除，请执行以下步骤：
 
-1. 点按AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具> Assets >元数据配置文件]**。
+1. 点按[!DNL Experience Manager]徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>元数据配置文件]**。
 1. 选择您要从一个或多个文件夹删除的元数据配置文件。
 1. 点按&#x200B;**[!UICONTROL 从文件夹删除元数据配置文件]**，选择一个或多个要从中删除配置文件的文件夹，然后点按&#x200B;**[!UICONTROL 完成]**。
 
@@ -152,7 +152,7 @@ ht-degree: 35%
 
 ### 通过属性将元数据配置文件从文件夹删除 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. 点按AEM徽标，然后导航&#x200B;**[!UICONTROL Assets]**，然后导航到您要将元数据配置文件从中删除的文件夹。
+1. 点按[!DNL Experience Manager]徽标，然后导航&#x200B;**[!UICONTROL Assets]**，然后导航到要从中删除元数据配置文件的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;选项卡，然后从下拉菜单中选择&#x200B;**[!UICONTROL 无]**。 点按&#x200B;**[!UICONTROL 保存]**。
 

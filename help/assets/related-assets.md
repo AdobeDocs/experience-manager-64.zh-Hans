@@ -2,19 +2,19 @@
 title: 相关资产
 description: 了解如何关联共享某些共同属性的资产。 您还可以使用该功能在资产之间创建源/派生关系。
 contentOwner: AG
-feature: 资产管理，协作
+feature: Asset Management,Collaboration
 role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
 
 # 相关资产 {#related-assets}
 
-Adobe Experience Manager(AEM)Assets允许您使用相关资产功能根据组织的需求手动关联资产。 例如，您可以将许可证文件与类似主题上的资产或图像/视频相关联。 您可以与共享某些公共属性的资产相关联。 您还可以使用该功能在资产之间创建源/派生关系。 例如，如果您有一个从INDD文件生成的PDF文件，则可以将PDF文件与其源INDD文件相关联。
+Adobe Experience Manager Assets允许您使用相关资产功能根据贵组织的需求手动关联资产。 例如，您可以将许可证文件与类似主题上的资产或图像/视频相关联。 您可以与共享某些公共属性的资产相关联。 您还可以使用该功能在资产之间创建源/派生关系。 例如，如果您有一个从INDD文件生成的PDF文件，则可以将PDF文件与其源INDD文件相关联。
 
 这样，您就可以灵活地将低分辨率文件（例如PDF/JPG）共享给供应商/代理，并仅应请求提供高分辨率文件（例如INDD）。
 
@@ -65,11 +65,11 @@ Adobe Experience Manager(AEM)Assets允许您使用相关资产功能根据组织
 
 ## 折算相关资产 {#translating-related-assets}
 
-使用相关资产功能在资产之间创建源/派生关系在翻译工作流程中也很有帮助。 当您对派生资产运行翻译工作流时，AEM Assets会自动获取源文件引用的任何资产并包含该资产进行翻译。 这样，源资产引用的资产与源资产和派生资产一起进行折算。 例如，假定您的英语副本包含派生资产及其源文件，如所示。
+使用相关资产功能在资产之间创建源/派生关系在翻译工作流程中也很有帮助。 当您对派生资产运行翻译工作流时， [!DNL Experience Manager]资产会自动获取源文件引用的任何资产，并包含该资产进行翻译。 这样，源资产引用的资产与源资产和派生资产一起进行折算。 例如，假定您的英语副本包含派生资产及其源文件，如所示。
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-如果源文件与另一个资产相关，则AEM Assets会获取引用的资产，并将其包含在内以进行翻译。
+如果源文件与另一个资产相关，[!DNL Experience Manager]资产会获取引用的资产，并将其包含在其中以进行翻译。
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 

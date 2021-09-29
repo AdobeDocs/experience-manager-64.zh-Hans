@@ -1,20 +1,20 @@
 ---
 title: 专用文件夹共享
-description: 了解如何在Adobe Experience Manager(AEM)Assets中创建专用文件夹，并将其与其他用户共享，以及如何为其分配各种权限。
+description: 了解如何在Adobe Experience Manager Assets中创建专用文件夹，并将其与其他用户共享，以及如何为他们分配各种权限。
 contentOwner: AG
-feature: 协作
+feature: Collaboration
 role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 26%
+source-wordcount: '445'
+ht-degree: 20%
 
 ---
 
 # 专用文件夹共享 {#private-folder-sharing}
 
-您可以在Adobe Experience Manager(AEM)Assets用户界面中创建专供您使用的专用文件夹。 您可以将此专用文件夹共享给其他用户，并为其分配各种权限。 根据您分配的权限级别，用户可以在文件夹中执行各种任务，例如查看文件夹中的资产或编辑资产。
+您可以在Adobe Experience Manager Assets用户界面中创建专供您使用的专用文件夹。 您可以将此专用文件夹共享给其他用户，并为其分配各种权限。 根据您分配的权限级别，用户可以在文件夹中执行各种任务，例如查看文件夹中的资产或编辑资产。
 
 1. 在“资产”控制台中，点按/单击工具栏中的&#x200B;**[!UICONTROL 创建]** ，然后从菜单中选择&#x200B;**[!UICONTROL 文件夹]**。
 
@@ -44,9 +44,9 @@ ht-degree: 26%
    >
    >对于您向其共享文件夹的用户，您可以分配各种角色，例如“编辑者”‘、“所有者”或“查看者”。如果为用户分配“所有者”角色，则用户对该文件夹具有“编辑者”权限。 此外，用户还可以与他人共享该文件夹。 如果您为用户分配了“编辑者”角色，则用户可以编辑您专用文件夹中的资产。 如果您为用户分配了“查看者”角色，用户就只能查看您专用文件夹中的资产。
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。根据您分配的角色，用户在登录 AEM Assets 时便会被分配一组针对您的专用文件夹所拥有的权限。
+1. 单击&#x200B;**[!UICONTROL 保存]**。根据您分配的角色，用户在登录到[!DNL Experience Manager]资产时，会为您的专用文件夹分配一组权限。
 1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭确认消息。
-1. 您向用户共享文件夹时，用户会收到共享通知。使用用户的凭据登录AEM Assets以查看通知。
+1. 您向用户共享文件夹时，用户会收到共享通知。使用用户的凭据登录[!DNL Experience Manager]资产以查看通知。
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 

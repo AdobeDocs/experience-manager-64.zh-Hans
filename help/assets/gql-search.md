@@ -1,20 +1,20 @@
 ---
 title: GQL全文搜索
-description: 浏览AEM Assets中的GQL全文搜索功能。 可使用它根据特定元数据（如标题、描述和作者名称）搜索资产。
+description: 浏览 [!DNL Experience Manager] Assets中的GQL全文搜索功能。 可使用它根据特定元数据（如标题、描述和作者名称）搜索资产。
 contentOwner: AG
-feature: 搜索，元数据
+feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '873'
 ht-degree: 31%
 
 ---
 
 # GQL全文搜索 {#gql-full-text-search}
 
-浏览AEM Assets中的GQL全文搜索功能。 可使用它根据特定元数据（如标题、描述和作者名称）搜索资产。
+浏览[!DNL Experience Manager] Assets中的GQL全文搜索功能。 可使用它根据特定元数据（如标题、描述和作者名称）搜索资产。
 
 通过 GQL 全文搜索功能，您可以根据标题、描述和作者等特定元数据来搜索资产。
 
@@ -38,7 +38,7 @@ ht-degree: 31%
 
    ![gql_search](assets/gql_search.png)
 
-1. 按&#x200B;**[!UICONTROL Enter]**。 AEM Assets用户界面仅显示其标题与“Target”完全匹配的资产。
+1. 按&#x200B;**[!UICONTROL Enter]**。 [!DNL Assets]用户界面仅显示标题与“Target”完全匹配的资产。
 
 GQL全文搜索功能允许您根据以下内容搜索资产：
 
@@ -112,7 +112,6 @@ title:&quot;Reynolds&quot;
 >不能将属性路径、限制、大小和orderby与任何其他属性绑定。
 >
 >用户生成属性的关键字是其属性编辑器中的字段标签（以小写形式显示），并删除空格。
-
 
 >[!NOTE]
 >

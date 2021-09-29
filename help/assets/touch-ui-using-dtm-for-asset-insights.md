@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,10 @@ Adobe动态标签管理是一款可激活您的数字营销工具的工具。 �
 
 执行以下步骤以通过DTM启用资产分析：
 
-1. 点按/单击AEM徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 分析配置]**。
-1. [使用DTM配置AEM实例Cloud Service](../sites-administering/dtm.md)
+1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 分析配置]**。
+1. [使用DTM配置 [!DNL Experience Manager] 实例Cloud Service](../sites-administering/dtm.md)
 
-   在您登录到[https://dtm.adobe.com](https://dtm.adobe.com/)并从“配置文件”图标访问&#x200B;**[!UICONTROL 帐户设置]**&#x200B;后，API令牌才应该可用。 从资产分析的角度来看，不需要执行此步骤，因为AEM Sites与资产分析的集成仍在进行中。
+   在您登录到[https://dtm.adobe.com](https://dtm.adobe.com/)并从“配置文件”图标访问&#x200B;**[!UICONTROL 帐户设置]**&#x200B;后，API令牌才应该可用。 从资产分析的角度来看，不需要执行此步骤，因为[!DNL Experience Manager Sites]与资产分析的集成仍在进行中。
 
 1. 登录到[https://dtm.adobe.com](https://dtm.adobe.com/)，然后根据需要选择公司。
 1. 创建/打开现有Web属性
@@ -43,7 +43,7 @@ Adobe动态标签管理是一款可激活您的数字营销工具的工具。 �
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. 点按/单击AEM徽标，然后转到&#x200B;**[!UICONTROL 工具> Assets]**。
+1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具> Assets]**。
 1. 点按/单击&#x200B;**[!UICONTROL 分析页面跟踪器]**，复制跟踪器代码，然后将其粘贴到您在步骤6中打开的“脚本”对话框中。 保存更改。
 
    >[!NOTE]

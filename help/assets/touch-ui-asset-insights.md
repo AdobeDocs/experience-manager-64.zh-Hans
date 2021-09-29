@@ -2,13 +2,13 @@
 title: 使用资产分析功能跟踪图像的使用情况
 description: 资产分析功能允许您跟踪用户评级以及在第三方网站、营销活动和Adobe的创意解决方案中使用的图像的使用情况统计信息。
 contentOwner: AG
-feature: 资产分析，资产报表
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 8%
+source-wordcount: '793'
+ht-degree: 7%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 8%
 
 资产分析会定期从Adobe Analytics报表包中获取资产的使用情况数据。 默认情况下，资产分析会在凌晨2点运行一个后台作业，以获取数据。 但是，您可以通过从Web控制台中配置&#x200B;**[!UICONTROL Adobe CQ DAM资产性能报表同步作业]**&#x200B;服务来修改频率和时间。
 
-1. 点按 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具 > 操作 > Web Console]**。
+1. 点按[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具>操作> Web Console]**。
 1. 打开&#x200B;**[!UICONTROL Adobe CQ DAM资产性能报表同步作业]**&#x200B;服务配置。
 
    ![chlimage_1-304](assets/chlimage_1-304.png)

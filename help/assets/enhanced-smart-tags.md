@@ -6,13 +6,13 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: 智能标记，搜索
+feature: Smart Tags,Search
 role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 15%
+source-wordcount: '1514'
+ht-degree: 14%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 15%
 
 在后台，智能内容服务使用Adobe Sensei的AI框架，根据您的标记结构和业务分类培训其图像识别算法。 然后，可使用此内容智能对不同的资产集应用相关标记。
 
-智能内容服务是在[!DNL Adobe I/O]上托管的云服务。 要在Adobe Experience Manager(AEM)中使用它，系统管理员必须将您的AEM实例与[!DNL Adobe I/O]集成。
+智能内容服务是在[!DNL Adobe I/O]上托管的云服务。 要在Adobe Experience Manager中使用它，系统管理员必须将您的[!DNL Experience Manager]实例与[!DNL Adobe I/O]集成。
 
 总之，以下是使用智能内容服务的主要步骤：
 
@@ -52,15 +52,11 @@ ht-degree: 15%
 
 ## 入门 {#onboarding}
 
-智能内容服务可作为AEM的加载项进行购买。 购买后，系统会向贵组织的管理员发送一封电子邮件，其中包含指向[!DNL Adobe I/O]的链接。
+智能内容服务可作为[!DNL Experience Manager]的附加组件进行购买。 购买后，系统会向贵组织的管理员发送一封电子邮件，其中包含指向[!DNL Adobe I/O]的链接。
 
-管理员可以按照链接将智能内容服务与AEM集成。 要将服务与AEM Assets集成，请参阅[配置智能标记](config-smart-tagging.md)。
+管理员可以按照链接将智能内容服务与[!DNL Experience Manager]集成。 要将服务与[!DNL Experience Manager]资产集成，请参阅[配置智能标记](config-smart-tagging.md)。
 
-管理员配置服务并在AEM中添加用户时，载入过程即已完成。
-
->[!NOTE]
->
->如果您使用的是AEM 6.3或更低版本，并且需要为资产提供自动标记服务，请参阅[智能标记](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)。 智能标记不使用AI功能，因此不如增强型智能标记功能准确。
+管理员配置服务并在[!DNL Experience Manager]中添加用户时，载入过程即会完成。
 
 ## 审核资产和标记 {#reviewing-assets-and-tags}
 
@@ -77,7 +73,6 @@ ht-degree: 15%
 >1. 首次培训智能内容服务时，Adobe建议您至少在两个不同的标记上对其进行培训。
 
 >
-
 
 
 ## 培训智能内容服务 {#training-the-smart-content-service}
@@ -98,13 +93,13 @@ ht-degree: 15%
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-为文件夹选择此选项后，AEM会自动运行培训工作流，以对文件夹资产及其标记上的智能内容服务进行培训。 默认情况下，培训工作流每周在星期六凌晨12:30运行。
+为文件夹选择此选项后，[!DNL Experience Manager]会自动运行培训工作流，以针对文件夹资产及其标记培训智能内容服务。 默认情况下，培训工作流每周在星期六凌晨12:30运行。
 
 ### 按需培训 {#on-demand-training}
 
 您可以根据需要从工作流控制台中培训智能内容服务。
 
-1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具 > 工作流 > 模式]**。
+1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具>工作流>模型]**。
 1. 从&#x200B;**[!UICONTROL 工作流模型]**&#x200B;页面中，选择&#x200B;**[!UICONTROL 智能标记培训]**&#x200B;工作流，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 启动工作流]**。
 1. 在&#x200B;**[!UICONTROL 运行工作流]**&#x200B;对话框中，浏览到有效负荷文件夹，该文件夹包含用于培训服务的标记资产。
 1. 指定工作流的标题并添加注释。 然后，点按/单击&#x200B;**[!UICONTROL 运行]**。 将提交资产和标记以供培训。
@@ -119,7 +114,7 @@ ht-degree: 15%
 
 要检查是否在资产培训集中的标记上对智能内容服务进行了培训，请从报表控制台中查看培训工作流报表。
 
-1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具 > Assets > 报表]**。
+1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具>资产>报表]**。
 1. 在&#x200B;**[!UICONTROL 资产报表]**&#x200B;页面中，点按/单击&#x200B;**[!UICONTROL 创建]**。
 1. 选择&#x200B;**[!UICONTROL 智能标记培训]**&#x200B;报表，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 下一步]**。
 1. 指定报表的标题和描述。在&#x200B;**[!UICONTROL 计划报告]**&#x200B;下，保持选中&#x200B;**[!UICONTROL 立即]**&#x200B;选项。如果要安排以后的计划报告，请选择&#x200B;**[!UICONTROL 稍后]**，然后指定日期和时间。然后，点按/单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
@@ -161,7 +156,7 @@ ht-degree: 15%
 
 #### 从工作流控制台中标记资产 {#tagging-assets-from-the-workflow-console}
 
-1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具 > 工作流 > 模式]**。
+1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具>工作流>模型]**。
 1. 从&#x200B;**[!UICONTROL 工作流模型]**&#x200B;页面中，选择 **[!UICONTROL DAM 智能标记资产]**&#x200B;工作流，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 启动工作流]**。
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)

@@ -2,12 +2,12 @@
 title: 组织您的数字资产
 description: 使用Experience Manager整理数字资产、图像、文件、文件夹等。
 contentOwner: AG
-feature: 资产管理，搜索
+feature: Asset Management,Search
 role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 Microsoft Office和PDF文档的所有数字资产、元数据和内容都会被提取并进行搜索。 搜索允许对资产进行复杂的筛选，并完全尊重正确的权限。 在数字资产管理的元数据中，元数据有详细的介绍。
 
-AEM Assets支持多种内容组织方式。 您可以使用文件夹以分层方式组织它们，或者使用例如标记以无序、临时的方式组织它们。 用户可以在DAM资产编辑器中编辑标记，其中显示子资产、演绎版和元数据。
+[!DNL Experience Manager] 资产支持多种内容组织方式。您可以使用文件夹以分层方式组织它们，或者使用例如标记以无序、临时的方式组织它们。 用户可以在DAM资产编辑器中编辑标记，其中显示子资产、演绎版和元数据。
 
 ## 在文件夹中组织资产 {#organize-using-folders}
 
@@ -36,7 +36,7 @@ AEM Assets支持多种内容组织方式。 您可以使用文件夹以分层方
    * **基于日期的文件夹**  — 包含基于创建日期或上次修改日期的数字资产。
 
 * 创建不太可能更改的文件夹目录，以便任何自定义或自动操作都可以继续运行。 例如，分配的处理配置文件可继续工作。
-* 如果资产已发布，则您可以使用AEM将资产移动到其他文件夹，并从新位置重新发布，则原始已发布的资产位置以及新重新发布的资产仍然可用。但是，原始发布的资产是&#x200B;*丢失的*&#x200B;到AEM，无法取消发布。 因此，作为最佳实践，请先取消发布资产，然后将其移动到其他文件夹。
+* 如果资产已发布，则使用[!DNL Experience Manager]将资产移动到其他文件夹，并从新位置重新发布，则原始发布的资产位置以及新重新发布的资产仍可用。 但是，原始发布的资产是&#x200B;*丢失的*&#x200B;到[!DNL Experience Manager]，无法取消发布。 因此，作为最佳实践，请先取消发布资产，然后将其移动到其他文件夹。
 
 ## 使用标记组织资产 {#use-tags-to-organize-assets}
 

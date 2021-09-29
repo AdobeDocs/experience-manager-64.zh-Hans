@@ -1,24 +1,24 @@
 ---
 title: 资产性能调整指南
-description: 围绕AEM配置、硬件、软件和网络组件的更改，以消除瓶颈并优化AEM Assets性能的关键重点领域。
+description: ' [!DNL Experience Manager] configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of [!DNL Experience Manager] Assets的关键焦点区域。'
 contentOwner: AG
-feature: 资产管理
+feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '3208'
+source-wordcount: '3151'
 ht-degree: 0%
 
 ---
 
 # 资产性能调整指南 {#assets-performance-tuning-guide}
 
-Adobe Experience Manager(AEM)资产设置包含许多硬件、软件和网络组件。 根据您的部署方案，您可能需要对硬件、软件和网络组件进行特定配置更改，以消除性能瓶颈。
+Adobe Experience Manager Assets设置包含许多硬件、软件和网络组件。 根据您的部署方案，您可能需要对硬件、软件和网络组件进行特定配置更改，以消除性能瓶颈。
 
-此外，确定并遵守某些硬件和软件优化准则有助于构建一个良好的基础，使您的AEM Assets部署能够满足对性能、可扩展性和可靠性的期望。
+此外，确定并遵守某些硬件和软件优化准则有助于构建一个良好的基础，使您的[!DNL Experience Manager]资产部署能够满足对性能、可扩展性和可靠性的期望。
 
-AEM Assets性能不佳可能会影响用户在交互式性能、资产处理、下载速度等方面的体验。
+[!DNL Experience Manager]资产性能不佳可能会影响用户在交互式性能、资产处理、下载速度等方面的体验。
 
 事实上，性能优化是您在为任何项目建立目标量度之前执行的一项基本任务。
 
@@ -26,7 +26,7 @@ AEM Assets性能不佳可能会影响用户在交互式性能、资产处理、�
 
 ## 平台 {#platform}
 
-虽然AEM在许多平台上受支持，但Adobe在Linux和Windows上发现对本机工具的最大支持，这有助于获得最佳性能并简化实施。 理想情况下，您应该部署64位操作系统，以满足AEM Assets部署的高内存要求。 与任何AEM部署一样，您应尽可能实施TarMK。 虽然TarMK无法扩展到单个创作实例之外，但发现它的性能优于MongoMK。 您可以添加TarMK卸载实例，以提高AEM Assets部署的工作流处理能力。
+虽然在许多平台上都支持[!DNL Experience Manager] ，但Adobe在Linux和Windows上发现对本机工具的最大支持，这有助于实现最佳性能并简化实施过程。 理想情况下，您应该部署64位操作系统，以满足[!DNL Experience Manager]资产部署的高内存要求。 与任何[!DNL Experience Manager]部署一样，您应尽可能实施TarMK。 虽然TarMK无法扩展到单个创作实例之外，但发现它的性能优于MongoMK。 您可以添加TarMK卸载实例，以提高[!DNL Experience Manager]资产部署的工作流处理能力。
 
 ### 临时文件夹 {#temp-folder}
 
@@ -51,7 +51,7 @@ mkfs -q /dev/ram1 800000
 
 ### Java版本 {#java-version}
 
-由于Oracle自2015年4月起已停止发布Java 7更新，因此Adobe建议在Java 8上部署AEM Assets。 在某些情况下，它显示性能有所改善。
+由于Oracle自2015年4月起已停止发布Java 7更新，因此Adobe建议在Java 8上部署[!DNL Experience Manager]资产。 在某些情况下，它显示性能有所改善。
 
 ### JVM参数 {#jvm-parameters}
 
@@ -67,7 +67,7 @@ mkfs -q /dev/ram1 800000
 
 ### 文件数据存储配置 {#file-data-store-configuration}
 
-建议所有AEM Assets用户将数据存储与区段存储分离。 此外，配置`maxCachedBinarySize`和`cacheSizeInMB`参数有助于最大化性能。 将`maxCachedBinarySize`设置为可在缓存中保存的最小文件大小。 指定用于`cacheSizeInMB`内数据存储的内存内缓存大小。 Adobe建议将此值设置为堆总大小的2-10%之间。 但是，负载/性能测试有助于确定理想的设置。
+建议所有[!DNL Experience Manager]资产用户将数据存储与区段存储分开。 此外，配置`maxCachedBinarySize`和`cacheSizeInMB`参数有助于最大化性能。 将`maxCachedBinarySize`设置为可在缓存中保存的最小文件大小。 指定用于`cacheSizeInMB`内数据存储的内存内缓存大小。 Adobe建议将此值设置为堆总大小的2-10%之间。 但是，负载/性能测试有助于确定理想的设置。
 
 ### 配置缓冲的图像缓存的最大大小 {#configure-the-maximum-size-of-the-buffered-image-cache}
 
@@ -75,7 +75,7 @@ mkfs -q /dev/ram1 800000
 
 在OSGi Web控制台中配置缓冲的缓存大小。 在`https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`处，以字节为单位设置属性`cq.dam.image.cache.max.memory`。 例如，1073741824为1 GB(1024 x 1024 x 1024 = 1 GB)。
 
-从AEM 6.1 SP1中，如果您使用`sling:osgiConfig`节点来配置此属性，请确保将数据类型设置为Long。 有关更多详细信息，请参阅[CQBufferedImageCache在资产上传](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)期间使用堆。
+从[!DNL Experience Manager] 6.1 SP1中，如果使用`sling:osgiConfig`节点来配置此属性，请确保将数据类型设置为Long。 有关更多详细信息，请参阅[CQBufferedImageCache在资产上传](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)期间使用堆。
 
 ### 共享数据存储 {#shared-data-stores}
 
@@ -110,10 +110,10 @@ accessKey=<snip>
 
 Adobe建议启用HTTPS，因为许多公司都有可嗅探HTTP流量的防火墙，这会对上传和损坏文件造成不利影响。 对于大文件上传，请确保用户已通过有线连接连接到网络，因为WiFi网络会迅速饱和。 有关确定网络瓶颈的准则，请参阅[资产大小调整指南](assets-sizing-guide.md)。 要通过分析网络拓扑来评估网络性能，请参阅[资产网络注意事项](assets-network-considerations.md)。
 
-网络优化策略主要取决于可用带宽的数量和AEM实例的负载。 常用配置选项（包括防火墙或代理）可帮助提高网络性能。 请牢记以下要点：
+网络优化策略主要取决于可用带宽量和[!DNL Experience Manager]实例的负载。 常用配置选项（包括防火墙或代理）可帮助提高网络性能。 请牢记以下要点：
 
-* 根据您的实例类型（小、中、大），确保您有足够的网络带宽用于AEM实例。 如果AEM托管在AWS上，则适当的带宽分配尤为重要。
-* 如果您的AEM实例托管在AWS上，则您可以通过使用通用的扩展策略来获益。 如果用户期望获得高负载，请更新实例的大小。 为适中/低负载减小其大小。
+* 根据您的实例类型（小、中、大），确保您的[!DNL Experience Manager]实例有足够的网络带宽。 如果在AWS上托管[!DNL Experience Manager]，则适当的带宽分配尤为重要。
+* 如果您的[!DNL Experience Manager]实例托管在AWS上，则您可以通过使用通用的扩展策略来获益。 如果用户期望获得高负载，请更新实例的大小。 为适中/低负载减小其大小。
 * HTTPS:大多数用户具有可嗅探HTTP流量的防火墙，这可能会对上传操作期间文件的上传甚至文件损坏产生不利影响。
 * 大文件上传：确保用户有与网络的有线连接（WiFi连接快速饱和）。
 
@@ -125,9 +125,9 @@ Adobe建议启用HTTPS，因为许多公司都有可嗅探HTTP流量的防火墙
 
 >[!NOTE]
 >
->在AEM 6.3中，默认情况下，DAM更新资产工作流设置为“临时”。在这种情况下，您可以跳过以下过程。
+>默认情况下，在[!DNL Experience Manager] 6.3中，DAM更新资产工作流设置为“临时”。在这种情况下，您可以跳过以下过程。
 
-1. 在要配置的AEM实例上打开`http://localhost:4502/miscadmin`。
+1. 在要配置的[!DNL Experience Manager]实例上打开`http://localhost:4502/miscadmin`。
 
 1. 在导航树中，展开&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL dam]**。
 1. 双击&#x200B;**[!UICONTROL DAM更新资产]**。
@@ -136,7 +136,7 @@ Adobe建议启用HTTPS，因为许多公司都有可嗅探HTTP流量的防火墙
 
    >[!NOTE]
    >
-   >某些功能不支持临时工作流。 如果您的AEM Assets部署需要这些功能，请勿配置临时工作流。
+   >某些功能不支持临时工作流。 如果您的[!DNL Experience Manager]资产部署需要这些功能，请勿配置临时工作流。
 
    如果不能使用临时工作流，请定期运行工作流清除，以删除已存档的DAM更新资产工作流，以确保系统性能不会下降。
 
@@ -150,9 +150,9 @@ Adobe建议启用HTTPS，因为许多公司都有可嗅探HTTP流量的防火墙
 
 ### 最大并行作业数 {#maximum-parallel-jobs}
 
-默认情况下，AEM运行的并行作业数上限等于服务器上处理器数。 此设置的问题在于，在负载过重时，所有处理器都被DAM更新资产工作流占用，从而减慢UI响应速度，并阻止AEM运行其他可保护服务器性能和稳定性的进程。 最好通过执行以下步骤将此值设置为服务器上可用处理器的一半：
+默认情况下，[!DNL Experience Manager]运行的最大并行作业数等于服务器上的处理器数。 此设置的问题在于，在负载过重时，所有处理器都被DAM更新资产工作流占用，从而减慢UI响应速度，并阻止[!DNL Experience Manager]运行其他可保护服务器性能和稳定性的进程。 最好通过执行以下步骤将此值设置为服务器上可用处理器的一半：
 
-1. 在AEM作者中，转到[http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent)。
+1. 在[!DNL Experience Manager]作者中，转到[http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent)。
 1. 单击与您的实施相关的每个工作流队列上的编辑，例如Granite Transient工作流队列。
 1. 更改“最大并行作业数”的值，然后单击“保存”。
 
@@ -162,7 +162,7 @@ Adobe建议启用HTTPS，因为许多公司都有可嗅探HTTP流量的防火墙
 
 对于大量资源密集型工作流或工作流（如视频转码），您可以将DAM更新资产工作流卸载到第二个创作实例。 通常，卸载的问题是，通过卸载工作流处理而保存的任何加载都会被实例之间来回复制内容的成本所抵销。
 
-从AEM 6.2开始，借助AEM 6.1的功能包，您可以通过无二进制复制来执行卸载。 在此模型中，创作实例共享公共数据存储，并且只通过转发复制来回发送元数据。 虽然此方法与共享文件数据存储非常适用，但S3数据存储可能存在问题。 由于后台写入线程可能会导致延迟，因此在卸载作业开始之前资产可能尚未写入数据存储。
+从[!DNL Experience Manager] 6.2开始，使用[!DNL Experience Manager] 6.1的功能包，可以使用无二进制复制执行卸载。 在此模型中，创作实例共享公共数据存储，并且只通过转发复制来回发送元数据。 虽然此方法与共享文件数据存储非常适用，但S3数据存储可能存在问题。 由于后台写入线程可能会导致延迟，因此在卸载作业开始之前资产可能尚未写入数据存储。
 
 ### DAM更新资产配置 {#dam-update-asset-configuration}
 
@@ -184,7 +184,7 @@ DAM更新资产工作流包含为任务配置的完整步骤套件，例如Dynam
 
 许多Sites客户实施了一个图像Servlet，在请求时调整图像大小并裁剪图像，这会对发布实例造成额外负载。 但是，只要可以缓存这些图像，挑战就可以缓解。
 
-另一种方法是使用Dynamic Media Classic技术完全放弃图像处理。 此外，您还可以部署Brand Portal，它不仅负责从AEM基础架构生成演绎版，还负责整个发布层。
+另一种方法是使用Dynamic Media Classic技术完全放弃图像处理。 此外，您还可以部署Brand Portal，它不仅从[!DNL Experience Manager]基础架构接管再现生成责任，还接管整个发布层。
 
 #### ImageMagick {#imagemagick}
 
@@ -209,13 +209,13 @@ DAM更新资产工作流包含为任务配置的完整步骤套件，例如Dynam
 
 >[!CAUTION]
 >
->如果ImageMagick使用所有可用磁盘空间，则配置不当可能会使服务器不稳定。 使用ImageMagick处理大型文件所需的策略更改可能会影响AEM性能。 有关更多信息，请参阅[安装和配置ImageMagick](best-practices-for-imagemagick.md)。
+>如果ImageMagick使用所有可用磁盘空间，则配置不当可能会使服务器不稳定。 使用ImageMagick处理大型文件所需的策略更改可能会影响[!DNL Experience Manager]性能。 有关更多信息，请参阅[安装和配置ImageMagick](best-practices-for-imagemagick.md)。
 
 >[!NOTE]
 >
 >ImageMagick `policy.xml`和`configure.xml`文件可在`/usr/lib64/ImageMagick-*/config/`下找到，而不是`/etc/ImageMagick/`下找到。 有关配置文件位置的详细信息，请参阅[ImageMagick文档](https://www.imagemagick.org/script/resources.php)。
 
-如果您在Adobe Managed Services(AMS)上使用AEM，请在计划处理大量大型PSD或PSB文件时联系Adobe客户关怀团队。 Experience Manager可能无法处理超过30000 x 23000像素的高分辨率PSB文件。
+如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，请联系Adobe客户关怀团队，如果您计划处理大量大型PSD或PSB文件。 Experience Manager可能无法处理超过30000 x 23000像素的高分辨率PSB文件。
 
 <!-- 
 
@@ -307,12 +307,12 @@ To disable Page Extraction:
 
 ### Lucene索引配置 {#lucene-index-configurations}
 
-可以对Oak索引配置进行一些优化，以帮助提高AEM Assets性能：
+可以对Oak索引配置进行一些优化，以帮助提高[!DNL Experience Manager]资产性能：
 
 更新LuceneIndexProvider配置：
 
 1. 导航到/system/console/configMgrorg.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService
-1. 在AEM 6.2之前的版本中启用&#x200B;**[!UICONTROL CopyOnRead 、 CopyOnWrite和预取索引文件]**。在AEM 6.2及更高版本中默认启用这些值。
+1. 在低于[!DNL Experience Manager] 6.2的版本中启用&#x200B;**[!UICONTROL CopyOnRead 、 CopyOnWrite和预取索引文件]**。在[!DNL Experience Manager] 6.2及更高版本中默认启用这些值。
 
 更新索引配置以缩短重新索引时间：
 
@@ -367,7 +367,7 @@ To disable Page Extraction:
 
 如果您的用户不需要搜索资产内容（例如搜索PDF文档中包含的文本），则可以禁用此功能以提高索引性能。
 
-1. 转到AEM包管理器/crx/packmgr/index.jsp
+1. 转到[!DNL Experience Manager]包管理器/crx/packmgr/index.jsp
 1. 上载并安装以下包
 
 [获取文件](assets/disable_indexingbinarytextextraction-10.zip)
@@ -380,13 +380,13 @@ To disable Page Extraction:
 
 ### 大文件 {#large-files}
 
-在AEM中，存在两个与大文件相关的主要已知问题。 当文件大小超过2 GB时，冷备用同步可能会出现内存不足的情况。 在某些情况下，它会阻止备用同步运行。 在其他情况下，它会导致主实例崩溃。 此方案适用于AEM中任何大于2GB的文件，包括内容包。
+在AEM中，存在两个与大文件相关的主要已知问题。 当文件大小超过2 GB时，冷备用同步可能会出现内存不足的情况。 在某些情况下，它会阻止备用同步运行。 在其他情况下，它会导致主实例崩溃。 此方案适用于[!DNL Experience Manager]中任何大于2GB的文件，包括内容包。
 
 同样，当文件在使用共享S3数据存储时达到2GB大小时，文件从缓存完全保留到文件系统可能需要一些时间。 因此，在使用无二进制复制时，可能在复制完成之前没有保留二进制数据。 这种情况可能会导致问题，特别是当数据的可用性很重要时（例如在卸载场景中）。
 
 ## 性能测试 {#performance-testing}
 
-对于每个AEM部署，都应建立一个性能测试机制，以便快速发现和解决瓶颈。 以下是需要重点关注的一些关键方面。
+对于每个[!DNL Experience Manager]部署，建立一个性能测试机制，以便快速识别和解决瓶颈。 以下是需要重点关注的一些关键方面。
 
 ### 网络测试 {#network-testing}
 
@@ -398,14 +398,14 @@ To disable Page Extraction:
 * 使用网络基准工具
 * 针对调度程序进行测试
 
-### AEM实例测试 {#aem-instance-testing}
+### [!DNL Experience Manager] 实例测试 {#aem-instance-testing}
 
-为了通过高效的CPU利用和负载共享来最大限度地减少延迟并实现高吞吐量，请定期监控AEM实例的性能。 特别是：
+为了通过高效的CPU利用和负载共享将延迟降至最低并实现高吞吐量，请定期监控[!DNL Experience Manager]实例的性能。 特别是：
 
-* 针对AEM实例运行加载测试
+* 对[!DNL Experience Manager]实例运行负载测试
 * 监控上传性能和UI响应性
 
-## AEM Assets性能核对表 {#aem-assets-performance-checklist}
+## [!DNL Experience Manager] 资产性能检查列表 {#aem-assets-performance-checklist}
 
 * 启用HTTPS以绕过任何公司HTTP流量探查器。
 * 使用有线连接上传大量资产。
@@ -420,4 +420,4 @@ To disable Page Extraction:
 * 优化Lucene索引配置。
 * 使用最新的Service Pack和修补程序优化索引。 请咨询Adobe客户关怀团队，了解是否存在任何其他可用的索引优化。
 * 使用`guessTotal`优化查询性能。
-* 如果将AEM配置为从文件内容中检测文件类型(通过在[!UICONTROL AEM Web Console]中配置[!UICONTROL Day CQ DAM Mime Type Service])，则在非高峰时间会批量上传许多文件，因为该操作占用大量资源。
+* 如果配置[!DNL Experience Manager]以从文件内容中检测文件类型（通过在[!UICONTROL [!DNL Experience Manager]Web控制台]中配置[!UICONTROL Day CQ DAM Mime Type Service]），则在非高峰时间会批量上传许多文件，因为该操作占用大量资源。

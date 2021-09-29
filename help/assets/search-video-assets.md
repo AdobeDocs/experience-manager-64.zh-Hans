@@ -1,13 +1,13 @@
 ---
 title: 搜索视频资产
-description: 使用关键字、文件属性（如Mime类型、大小或最近修改的时间戳）可快速在AEM Assets中查找您的文件。
+description: 使用关键字、文件属性（如Mime类型、大小或最近修改的时间戳），可在 [!DNL Experience Manager] Assets中快速查找文件。
 contentOwner: AG
-feature: 视频，搜索
+feature: Video,Search
 role: User
 exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 45%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 45%
 | [!UICONTROL 发布状态] | “已发布”或“已取消发布”。 |
 |  ApprovalStatus | “已批准”或“已拒绝”。 |
 | [!UICONTROL 方向] | “水平”、“垂直”或“正方形”。 |
-| [!UICONTROL 样式] | “彩色”或“黑白”。 |
+| [!UICONTROL Style] | “彩色”或“黑白”。 |
 | 视屏高度 | 指定为最小值和最大值。值仅存储在视频演绎版的元数据中。 |
 | 视频宽度 | 指定为最小值和最大值。值仅存储在视频演绎版的元数据中。 |
 | 视频格式 | DVI、Flash、MPEG4、MPEG、OGG Theora、QuickTime、Windows Media.Value存储在源视频和任何演绎版的元数据中。 |

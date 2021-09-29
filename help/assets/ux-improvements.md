@@ -1,28 +1,28 @@
 ---
 title: Assets中的用户体验增强功能
-description: 本文介绍了AEM 6.4 Assets中的用户体验改进。
+description: 本文介绍了 [!DNL Experience Manager] 6.4 Assets中的用户体验改进。
 contentOwner: AG
-feature: 发行信息
+feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---
 
 # Assets中的用户体验增强功能 {#user-experience-enhancements-in-assets}
 
-AEM 6.4 Assets包括多项可用性改进，可提供无缝的用户体验并提高工作效率。 您能够创建/管理上市内容的速度的提高提高了业务的内容速度。
+[!DNL Experience Manager] 6.4 Assets包括多项可用性改进，可提供无缝的用户体验并提高工作效率。您能够创建/管理上市内容的速度的提高提高了业务的内容速度。
 
 该界面响应更快，可帮助您高效管理大量资产组合。 您可以快速搜索、显示、排序和顺利滚动很长的项目列表。
 
-您可以个性化各种视图 — 卡片视图、列表视图和列视图。 例如，您可以配置要在卡片视图中显示的缩略图大小。 对于列表视图，您可以配置要在列表中为资产显示的详细信息级别。 AEM 6.4 Assets包含一个新的树视图，通过该视图，您可以方便地浏览资产存储库并查找资产。
+您可以个性化各种视图 — 卡片视图、列表视图和列视图。 例如，您可以配置要在卡片视图中显示的缩略图大小。 对于列表视图，您可以配置要在列表中为资产显示的详细信息级别。 [!DNL Experience Manager] 6.4 Assets包含一个新的树视图，通过该视图，您可以方便地浏览资产存储库并查找资产。
 
 ## 延迟加载 {#lazy-loading}
 
-在AEM 6.4 Assets中浏览/搜索资产时，一次最多会显示200个资产。 您可以更快地滚动浏览结果，在浏览很长的结果列表时尤其有用。 由于一次加载的资产数量很大，因此浏览体验会很流畅。
+在[!DNL Experience Manager] 6.4资产中浏览/搜索资产时，一次最多会显示200个资产。 您可以更快地滚动浏览结果，在浏览很长的结果列表时尤其有用。 由于一次加载的资产数量很大，因此浏览体验会很流畅。
 
 如果您点按/单击资产以查看其详细信息页面，则只需点按/单击工具栏中的“返回”按钮，即可返回到结果页面。
 
@@ -66,7 +66,7 @@ AEM 6.4 Assets包括多项可用性改进，可提供无缝的用户体验并提
 
 ## 树视图 {#tree-view}
 
-AEM 6.4 Assets包含树视图，通过该视图，您可以方便地浏览资产层次结构并导航到所需的资产或文件夹。
+[!DNL Experience Manager] 6.4资产包括树视图，通过该视图，您可以方便地浏览资产层次结构并导航到所需的资产或文件夹。
 
 要打开树视图，请点按/单击`Assets UI`中的GlobalNav图标，然后从菜单中选择&#x200B;**[!UICONTROL 内容树]**。
 

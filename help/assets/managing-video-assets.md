@@ -8,20 +8,20 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Asset Management,Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '787'
 ht-degree: 15%
 
 ---
 
 # 管理视频资产 {#managing-video-assets}
 
-了解如何在Adobe Experience Manager(AEM)资产中管理和编辑视频资产。 此外，如果您获得使用Dynamic Media的许可，请参阅[Dynamic Media视频文档](video.md)。
+了解如何在Adobe Experience Manager Assets中管理和编辑视频资产。 此外，如果您获得使用Dynamic Media的许可，请参阅[Dynamic Media视频文档](video.md)。
 
 ## 上传和预览视频资产 {#uploading-and-previewing-video-assets}
 
-AEM Assets会为扩展名为MP4的视频资产生成预览。 如果资产的格式不是MP4，请安装FFmpeg包以生成预览。 FFmpeg创建OGG和MP4类型的视频演绎版。 您可以在AEM Assets用户界面中预览这些演绎版。
+[!DNL Experience Manager] 资产会为扩展名为MP4的视频资产生成预览。如果资产的格式不是MP4，请安装FFmpeg包以生成预览。 FFmpeg创建OGG和MP4类型的视频演绎版。 您可以在[!DNL Experience Manager] Assets用户界面中预览这些演绎版。
 
 1. 在数字资产文件夹或子文件夹中，导航到要添加数字资产的位置。
 1. 要上传资产，请单击或点按工具栏中的&#x200B;**[!UICONTROL 创建]**，然后选择&#x200B;**[!UICONTROL 文件]**。 或者，直接将其拖放到资产区域。 有关上传操作的详细信息，请参阅[上传资产](managing-assets-touch-ui.md#uploading-assets)。
@@ -39,16 +39,16 @@ AEM Assets会为扩展名为MP4的视频资产生成预览。 如果资产的格
 
 ## 上传大于2 GB的资产的配置 {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-默认情况下，由于文件大小限制，AEM Assets不允许您上传任何大于2 GB的资产。 但是，您可以进入CRXDE Lite并在`/apps`目录下创建一个节点，以覆盖此限制。 节点必须具有相同的节点名称、目录结构和类似的节点顺序属性。
+默认情况下，由于文件大小限制，[!DNL Experience Manager]资产不允许您上传任何大于2 GB的资产。 但是，您可以进入CRXDE Lite并在`/apps`目录下创建一个节点，以覆盖此限制。 节点必须具有相同的节点名称、目录结构和类似的节点顺序属性。
 
-除了AEM Assets配置之外，还要更改以下配置以上传大型资产：
+除了[!DNL Experience Manager]资产配置之外，还要更改以下配置以上传大型资产：
 
 * 增加令牌过期时间。 请参阅`https://[aem_server]:[port]/system/console/configMgr`的Web控制台中的[!UICONTROL AdobeGranite CSRF Servlet]。 有关更多信息，请参阅[CSRF保护](/help/sites-developing/csrf-protection.md)。
 * 在Dispatcher配置中增加`receiveTimeout`。 有关更多信息，请参阅[Experience ManagerDispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)。
 
 >[!NOTE]
 >
->AEM Classic用户界面没有2 GB的文件大小限制。 此外，大型视频的端对端工作流不完全支持。
+>[!DNL Experience Manager] Classic用户界面没有2 GB的文件大小限制。 此外，大型视频的端对端工作流不完全支持。
 
 要配置更高的文件大小限制，请在`/apps`目录中执行以下步骤。
 

@@ -1,22 +1,22 @@
 ---
-title: AEM Assets支持的文件格式
-description: AEM Assets支持的文件格式、MIME类型列表以及每种格式支持的功能。
+title: ' [!DNL Experience Manager] Assets中支持的文件格式'
+description: Assets支持的文件格式、MIME类型列表以及每种格式支持的功能。
 contentOwner: AG
-feature: 资产管理，演绎版
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1635'
 ht-degree: 23%
 
 ---
 
-# AEM Assets支持的文件格式 {#assets-supported-formats}
+# [!DNL Adobe Experience Manager Assets]中支持的文件格式 {#assets-supported-formats}
 
-AEM Assets支持多种文件格式，每种功能都支持不同的MIME类型。
+[!DNL Experience Manager Assets] 支持多种文件格式，每种功能都支持不同的MIME类型。
 
-要将AEM Assets与其他符合标准的数字资产管理(DAM)解决方案和桌面软件集成，请使用Adobe的可扩展元数据平台(XMP)。
+要将[!DNL Assets]与其他符合标准的数字资产管理(DAM)解决方案和桌面软件集成，请使用Adobe的可扩展元数据平台(XMP)。
 
 使用图例了解支持级别。
 
@@ -111,7 +111,7 @@ Adobe图像转码库是一款图像处理解决方案，可执行核心的图像
 
 ## Camera Raw {#supported-camera-raw}
 
-Adobe Camera Raw库允许AEM Assets摄取原始图像。 请参阅[Camera Raw支持](camera-raw.md)。
+Adobe Camera Raw库允许[!DNL Assets]摄取原始图像。 请参阅[Camera Raw支持](camera-raw.md)。
 
 ## 文档格式 {#supported-document-formats}
 
@@ -148,7 +148,7 @@ Dynamic Media功能支持的文档格式如下：
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HTML |  |  |  |  |  |
-| RTF |  |  |  |  |  |
+| TTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
 | XLS |  |  |  |  |  |
 | XLSX |  |  |  |  |  |
@@ -244,7 +244,7 @@ Dynamic Media功能支持的文档格式如下：
 
 ## 支持的MIME类型 {#supported-mime-types}
 
-默认情况下，AEM会使用文件扩展名检测文件类型。 AEM可从文件内容中检测到它。 对于后者，在AEM Web控制台中选择[!UICONTROL Day CQ DAM Mime类型服务]中的[!UICONTROL 从内容中检测MIME]选项。
+默认情况下，[!DNL Experience Manager]会使用文件扩展名检测文件类型。 [!DNL Experience Manager] 可以从文件内容中检测到它。对于后者，在[!DNL Experience Manager]Web控制台中，选择[!UICONTROL Day CQ DAM Mime类型服务]中的[!UICONTROL 从内容中检测MIME]选项。
 
 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`的CRXDE Lite中提供了支持的MIME类型列表。
 
@@ -290,13 +290,13 @@ Dynamic Media功能支持的文档格式如下：
 | PPT | application/vnd.ms-powerpoint |  |  |
 | PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
-| RTF | application/rtf |  |  |
+| TTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | application/x-shockwave-flash |  |  |
 | TAR | application/x-tar |  |  |
 | TIF / TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| RTF | application/x-font-ttf |  |  |
+| TTF | application/x-font-ttf |  |  |
 | VOB | 视频/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |

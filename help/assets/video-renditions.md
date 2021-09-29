@@ -2,19 +2,19 @@
 title: 视频演绎版
 description: 视频演绎版
 contentOwner: AG
-feature: 视频，演绎版
+feature: Video,Renditions
 role: User
 exl-id: 9fc93034-e83a-42b5-901d-7867b4a850a8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '220'
 ht-degree: 5%
 
 ---
 
 # 视频演绎版 {#video-renditions}
 
-Adobe Experience Manager(AEM)Assets可为各种格式（包括OGG、FLV等）的视频资产生成视频演绎版。
+Adobe Experience Manager Assets可为各种格式（包括OGG、FLV等）的视频资产生成视频演绎版。
 
 AEM Assets 支持媒体资产的静态和动态演绎版（DM 编码的演绎版）。
 

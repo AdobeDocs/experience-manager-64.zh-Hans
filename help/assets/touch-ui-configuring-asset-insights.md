@@ -1,20 +1,20 @@
 ---
 title: 配置资产分析
-description: 了解如何在AEM Assets中配置资产分析。
+description: 了解如何在 [!DNL Experience Manager] 资产中配置资产分析。
 contentOwner: AG
-feature: 资产分析，资产报表
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '230'
 ht-degree: 10%
 
 ---
 
 # 配置资产分析 {#configuring-asset-insights}
 
-Adobe Experience Manager(AEM)Assets会从Adobe Analytics中获取由第三方网站使用的AEM资产的使用情况数据。 要使资产分析能够检索此数据并生成分析，请首先配置该功能以与Adobe Analytics集成。
+Adobe Experience Manager Assets会从Adobe Analytics中获取第三方网站使用的[!DNL Experience Manager]资产的使用情况数据。 要使资产分析能够检索此数据并生成分析，请首先配置该功能以与Adobe Analytics集成。
 
 >[!NOTE]
 >
@@ -30,12 +30,12 @@ Adobe Experience Manager(AEM)Assets会从Adobe Analytics中获取由第三方网
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. 单击／点按 **[!UICONTROL 身份验证]**。
-1. 在AEM验证您的凭据后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择一个Adobe Analytics报表包，您可以从中获取资产分析数据。 单击&#x200B;**[!UICONTROL 添加]**。
-1. 在AEM设置您的报表包后，单击/点按&#x200B;**[!UICONTROL 完成]**。
+1. 在[!DNL Experience Manager]验证您的凭据后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择一个Adobe Analytics报表包，您可以从中获取资产分析数据。 单击&#x200B;**[!UICONTROL 添加]**。
+1. 在[!DNL Experience Manager]设置报表包后，单击/点按&#x200B;**[!UICONTROL 完成]**。
 
 ## 页面跟踪器 {#page-tracker}
 
-配置Analytics帐户后，将为您生成页面跟踪器代码。 要启用资产分析来跟踪第三方网站中使用的AEM资产，请在网站代码中包含页面跟踪器代码。 使用AEM Assets中的页面跟踪器实用程序生成页面跟踪器代码。 有关如何在第三方网页中包含页面跟踪器代码的更多信息，请参阅[在网页中使用页面跟踪器和嵌入代码](touch-ui-using-page-tracker.md)。
+配置Analytics帐户后，将为您生成页面跟踪器代码。 要启用资产分析以跟踪第三方网站中使用的[!DNL Experience Manager]资产，请在网站代码中包含页面跟踪器代码。 在[!DNL Experience Manager]资产中使用页面跟踪器实用程序生成页面跟踪器代码。 有关如何在第三方网页中包含页面跟踪器代码的更多信息，请参阅[在网页中使用页面跟踪器和嵌入代码](touch-ui-using-page-tracker.md)。
 
 1. 在AEM中，单击&#x200B;**[!UICONTROL 工具> Assets]**。
 

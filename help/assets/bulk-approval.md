@@ -2,12 +2,12 @@
 title: 审核文件夹资产和收藏集
 description: 为文件夹或收藏集中的资产设置审核工作流，并与审阅人或创意合作伙伴共享该工作流，以寻求反馈。
 contentOwner: AG
-feature: 协作、收藏集
+feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '811'
 ht-degree: 24%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 24%
 
 为文件夹或收藏集中的资产设置审核工作流，并与审阅人或创意合作伙伴共享该工作流，以寻求反馈。
 
-Adobe Experience Manager(AEM)Assets允许您为文件夹或收藏集中的资产设置临时审核工作流，并与审阅人或创意合作伙伴共享该工作流以寻求反馈。
+Adobe Experience Manager Assets允许您为文件夹或收藏集中的资产设置临时审阅工作流，并与审阅人或创意合作伙伴共享该工作流以寻求反馈。
 
 您可以将审核工作流与项目关联或创建独立的审核任务。
 
@@ -52,7 +52,7 @@ Adobe Experience Manager(AEM)Assets允许您为文件夹或收藏集中的资产
    ![review_name](assets/review_name.png)
 
 1. 点按／单 **[!UICONTROL 击提交]**，然后点按／单 **[!UICONTROL 击完成]** ，关闭确认消息。 新任务的通知将发送给审批者。
-1. 以审批者身份登录AEM Assets，然后导航到资产UI。 要批准资产，请单击/点按&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
+1. 以审批者身份登录到[!DNL Experience Manager]资产，然后导航到资产UI。 要批准资产，请单击/点按&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
 
    ![通知](assets/notification.png)
 
@@ -96,7 +96,7 @@ Adobe Experience Manager(AEM)Assets允许您为文件夹或收藏集中的资产
    ![task_details-collection](assets/task_details-collection.png)
 
 1. 点按／单 **[!UICONTROL 击提交]**，然后点按／单 **[!UICONTROL 击完成]** ，关闭确认消息。 新任务的通知将发送给审批者。
-1. 以审批者身份登录AEM Assets，然后导航到资产控制台。 要批准资产，请点按/单击&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
+1. 以审批者身份登录到[!DNL Experience Manager]资产，然后导航到资产控制台。 要批准资产，请点按/单击&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
 1. 在&#x200B;**[!UICONTROL 审查任务]**&#x200B;页面中，检查审查任务的详细信息，然后点按/单击&#x200B;**[!UICONTROL 审查]**。
 1. 收藏集中的所有资产都会在审核页面上可见。 选择资产，然后点按/单击&#x200B;**[!UICONTROL 批准/拒绝]**&#x200B;图标，以批准或拒绝资产（根据需要）。
 

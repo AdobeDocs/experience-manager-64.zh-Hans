@@ -1,44 +1,44 @@
 ---
-title: 安装和配置ImageMagick以与AEM Assets配合使用
+title: 安装并配置ImageMagick以与 [!DNL Experience Manager] Assets配合使用
 description: 了解ImageMagick软件、如何安装它、设置命令行处理步骤，以及使用它编辑、撰写和从图像生成缩略图。
 contentOwner: AG
-feature: 演绎版，开发人员工具
+feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
-# 安装和配置ImageMagick以与AEM Assets配合使用 {#install-and-configure-imagemagick-to-work-with-aem-assets}
+# 安装并配置ImageMagick以与[!DNL Experience Manager Assets]配合使用 {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick是用于创建、编辑、合成或转换位图图像的软件插件。 它可以以各种格式（超过200种）读写图像，包括PNG、JPEG、JPEG-2000、GIF、TIFF、DPX、EXR、WebP、Postscript、PDF和SVG。 使用ImageMagick调整图像大小、翻转、镜像、旋转、扭曲、剪切和变换图像。 您还可以使用ImageMagick调整图像颜色、应用各种特殊效果，或绘制文本、线、多边形、省略号和曲线。
 
-使用命令行中的Adobe Experience Manager(AEM)媒体处理程序，通过ImageMagick处理图像。 要使用ImageMagick处理各种文件格式，请参阅[资产文件格式最佳实践](assets-file-format-best-practices.md)。 要了解所有支持的文件格式，请参阅[资产支持的格式](assets-formats.md)。
+使用命令行中的Adobe Experience Manager媒体处理程序通过ImageMagick处理图像。 要使用ImageMagick处理各种文件格式，请参阅[资产文件格式最佳实践](assets-file-format-best-practices.md)。 要了解所有支持的文件格式，请参阅[资产支持的格式](assets-formats.md)。
 
-要使用ImageMagick处理大型文件，请考虑比通常的内存要求高、IM策略所需的潜在更改以及对性能的总体影响。 内存要求取决于各种因素，如分辨率、位深度、颜色配置文件和文件格式。 如果您打算使用ImageMagick处理非常大的文件，请正确为AEM服务器设置基准。 最后提供了一些有用的资源。
+要使用ImageMagick处理大型文件，请考虑比通常的内存要求高、IM策略所需的潜在更改以及对性能的总体影响。 内存要求取决于各种因素，如分辨率、位深度、颜色配置文件和文件格式。 如果您打算使用ImageMagick处理非常大的文件，请为[!DNL Experience Manager]服务器正确设置基准。 最后提供了一些有用的资源。
 
 >[!NOTE]
 >
->如果您在Adobe Managed Services(AMS)上使用AEM，请在计划处理大量大型PSD或PSB文件时联系Adobe客户关怀团队。 Experience Manager可能无法处理超过30000 x 23000像素的高分辨率PSB文件。
+>如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，请联系Adobe客户关怀团队，如果您计划处理大量大型PSD或PSB文件。 Experience Manager可能无法处理超过30000 x 23000像素的高分辨率PSB文件。
 
 ## 安装ImageMagick {#installing-imagemagick}
 
 ImageMagic安装文件的多个版本可用于各种操作系统。 为您的操作系统使用相应的版本。
 
 1. 下载适用于您的操作系统的相应[ImageMagick安装文件](https://www.imagemagick.org/script/download.php)。
-1. 要在托管AEM服务器的磁盘上安装ImageMagick，请启动安装文件。
+1. 要在托管[!DNL Experience Manager]服务器的磁盘上安装ImageMagick，请启动安装文件。
 
 1. 将路径环境变量设置为ImageMagic安装目录。
 1. 要检查安装是否成功，请执行`identify -version`命令。
 
 ## 设置命令行处理步骤 {#set-up-the-command-line-process-step}
 
-您可以为特定用例设置命令行流程步骤。 每次在AEM服务器上向`/content/dam`添加JPEG图像文件时，请执行以下步骤以生成翻转图像和缩略图（140x100、48x48、319x319和1280）：
+您可以为特定用例设置命令行流程步骤。 每次在[!DNL Experience Manager]服务器上的`/content/dam`中添加JPEG图像文件时，请执行以下步骤以生成翻转图像和缩略图（140x100、48x48、319x319和1280）：
 
-1. 在AEM服务器上，转到工作流控制台(`https://[aem_server]:[Port]/workflow`)，然后打开&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流模型。
+1. 在[!DNL Experience Manager]服务器上，转到工作流控制台(`https://[aem_server]:[Port]/workflow`)，然后打开&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流模型。
 1. 从&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流模型中，打开&#x200B;**[!UICONTROL EPS缩略图（由ImageMagick提供支持）]**&#x200B;步骤。
 1. 在&#x200B;**[!UICONTROL 参数选项卡]**&#x200B;中，将`image/jpeg`添加到&#x200B;**[!UICONTROL Mime类型]**&#x200B;列表。
 
@@ -73,7 +73,7 @@ ImageMagic安装文件的多个版本可用于各种操作系统。 为您的操
    ![web_enabled](assets/web_enabled.png)
 
 1. 保存工作流。
-1. 要检查ImageMagic是否能够正确处理图像，请将JPG图像上传到AEM Assets。 验证是否为翻转图像生成了演绎版。
+1. 要检查ImageMagic是否能够正确处理图像，请将JPG图像上传到[!DNL Assets]。 验证是否为翻转图像生成了演绎版。
 
 ## 缓解安全漏洞 {#mitigating-security-vulnerabilities}
 
@@ -88,10 +88,10 @@ ImageMagic安装文件的多个版本可用于各种操作系统。 为您的操
 
 >[!MORELIKETHIS]
 >
->* [使用AEM Assets处理各种文件格式的最佳实践](assets-file-format-best-practices.md)
-* [ImageMagick的命令行选项](https://www.imagemagick.org/script/command-line-options.php)
-* [ImageMagick用法的基本和高级示例](https://www.imagemagick.org/Usage/)
-* [ImageMagick的资产性能调整](performance-tuning-guidelines.md)
-* [AEM Assets支持的文件格式的完整列表](assets-formats.md)
-* [了解文件格式以及图像的内存开销](https://www.scantips.com/basics1d.html)
+>* [使用 [!DNL Assets]](assets-file-format-best-practices.md)
+>* [ImageMagick的命令行选项](https://www.imagemagick.org/script/command-line-options.php)
+>* [ImageMagick用法的基本和高级示例](https://www.imagemagick.org/Usage/)
+>* [ImageMagick的资产性能调整](performance-tuning-guidelines.md)
+>* [支持的文件格式的完整列表 [!DNL Assets]](assets-formats.md)
+>* [了解文件格式以及图像的内存开销](https://www.scantips.com/basics1d.html)
 

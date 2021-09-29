@@ -1,22 +1,22 @@
 ---
 title: 支持IPTC元数据
-description: 了解Adobe Experience Manager(AEM)Assets如何支持通过Adobe Bridge和其他创意应用程序添加到资产中的IPTC元数据、创意评级和关键词。
+description: 了解Adobe Experience Manager Assets如何支持通过Adobe Bridge和其他创意应用程序添加到资产的IPTC元数据、创意评级和关键词。
 contentOwner: AG
-feature: 元数据
+feature: Metadata
 role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '364'
 ht-degree: 7%
 
 ---
 
 # 支持IPTC元数据 {#support-for-iptc-metadata}
 
-了解Adobe Experience Manager(AEM)Assets如何支持通过Adobe Bridge和其他创意应用程序添加到资产中的IPTC元数据、创意评级和关键词。
+了解Adobe Experience Manager Assets如何支持通过Adobe Bridge和其他创意应用程序添加到资产的IPTC元数据、创意评级和关键词。
 
-Adobe Experience Manager(AEM)Assets支持广泛用于描述资产的IPTC元数据标准。 这样，AEM Assets就可以在包括摄影师、创意机构、图书馆、博物馆等在内的各方中增强对其图像的接受。
+Adobe Experience Manager Assets支持广泛用于描述资产的IPTC元数据标准。 这样，[!DNL Experience Manager Assets]就可以增强各方对其图像的接受，包括摄影师、创意机构、图书馆、博物馆等。
 
 资产的默认元数据架构现在整合了IPTC核心和IPTC扩展元数据架构，以定义全面的元数据属性，从而让用户能够添加有关图像中显示的人员、位置和产品的准确可靠数据。 它还支持有关创建图像的日期、名称和标识符，以及灵活的权限信息表达方式。
 

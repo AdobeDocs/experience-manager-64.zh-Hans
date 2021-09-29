@@ -2,13 +2,13 @@
 title: 元数据架构
 description: '元数据架构定义属性页面的布局以及为资产显示的元数据属性。 了解如何创建自定义元数据架构、编辑元数据架构，以及如何将元数据架构应用到资产。  '
 contentOwner: AG
-feature: 元数据
+feature: Metadata
 role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 23%
+source-wordcount: '2524'
+ht-degree: 22%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 23%
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   要修改资产的MIME类型，请使用自定义元数据架构表单或修改现有表单。 有关更多信息，请参阅[编辑元数据架构Forms](metadata-schemas.md#editing-metadata-schema-forms)。 如果您修改特定MIME类型的元数据架构，则将修改当前MIME类型资产和所有资产子类型的资产的属性页面布局。 例如，修改`default/image`下的`jpeg`架构，只会修改MIME类型为`IMAGE/JPEG`的资产的元数据布局（资产属性）。 但是，如果您编辑默认架构，则所做的更改将修改所有类型资产的元数据布局。
+   要修改资产的MIME类型，请使用自定义元数据架构表单或修改现有表单。 有关更多信息，请参阅[编辑元数据架构Forms](metadata-schemas.md#editing-metadata-schema-forms) 。 如果您修改特定MIME类型的元数据架构，则将修改当前MIME类型资产和所有资产子类型的资产的属性页面布局。 例如，修改`default/image`下的`jpeg`架构，只会修改MIME类型为`IMAGE/JPEG`的资产的元数据布局（资产属性）。 但是，如果您编辑默认架构，则所做的更改将修改所有类型资产的元数据布局。
 
 ## 元数据架构表单 {#default-metadata-schema-forms}
 
@@ -174,7 +174,7 @@ ht-degree: 23%
 
 ## 删除元数据架构表单 {#deleting-metadata-schema-forms}
 
-AEM 仅允许您删除自定义架构表单。您无法删除默认的架构表单/模板。但是，您可以删除对这些表单所做的任何自定义更改。
+[!DNL Experience Manager] 允许您仅删除自定义架构表单。您无法删除默认的架构表单/模板。但是，您可以删除对这些表单所做的任何自定义更改。
 
 要删除某个表单，请选择该表单，然后单击&#x200B;**[!UICONTROL 删除]**&#x200B;图标。
 
@@ -184,11 +184,11 @@ AEM 仅允许您删除自定义架构表单。您无法删除默认的架构表�
 
 >[!NOTE]
 >
->您无法删除AEM Assets中现成的元数据架构表单。
+>您无法删除[!DNL Experience Manager]资产中现成的元数据架构表单。
 
 ## MIME类型的架构表单 {#schema-forms-for-mime-types}
 
-AEM Assets为各种开箱即用的MIME类型提供默认表单。 但是，您可以为各种MIME类型的资产添加自定义表单。
+[!DNL Experience Manager] Assets可为各种开箱即用的MIME类型提供默认表单。但是，您可以为各种MIME类型的资产添加自定义表单。
 
 ### 为MIME类型添加新表单 {#adding-new-forms-for-mime-types}
 
@@ -205,7 +205,7 @@ AEM Assets为各种开箱即用的MIME类型提供默认表单。 但是，您�
 | `exposedmimetype` | 要映射的现有表单的名称 | `String` | `image/jpeg` |
 | `mimetypes` | 使用`exposedmimetype`属性中定义的表单的MIME类型列表 | `String` | `image/png` |
 
-AEM Assets 映射以下 MIME 类型和架构表单：
+[!DNL Experience Manager] Assets 映射以下 MIME 类型和架构表单：
 
 | 架构表单 | MIME类型 |
 |---|---|
@@ -227,7 +227,7 @@ AEM Assets 映射以下 MIME 类型和架构表单：
 
 ## 应用特定于文件夹的元数据 {#applying-folder-specific-metadata}
 
-AEM Assets允许您定义元数据架构的变体，并将其应用到特定文件夹。
+[!DNL Experience Manager] 资产允许您定义元数据架构的变体，并将其应用到特定文件夹。
 
 例如，您可以定义默认元数据架构的变体并将其应用到文件夹。 应用修改后的架构时，它会覆盖原始的默认元数据架构，该架构已应用于文件夹中的资产。
 
@@ -239,7 +239,7 @@ AEM Assets允许您定义元数据架构的变体，并将其应用到特定文�
 
 如果文件夹具有子文件夹，则子文件夹中的资产将继承子文件夹级别应用的架构的元数据（如果在子文件夹级别应用其他架构）。 但是，如果子文件夹级别未应用架构或相同架构，则子文件夹资产将从父文件夹级别应用的架构继承元数据。
 
-1. 单击 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > Assets > 元数据架构]**。此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
+1. 单击[!DNL Experience Manager]徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>元数据架构]**。 此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
 1. 选中表单前面的复选框（例如默认的元数据表单），然后单击或点按&#x200B;**[!UICONTROL 复制]**&#x200B;图标，并将其另存为自定义表单。 为表单指定自定义名称，例如`my_default`。 或者，您也可以创建自定义表单。
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
@@ -269,9 +269,9 @@ AEM Assets允许您定义元数据架构的变体，并将其应用到特定文�
 
 >[!NOTE]
 >
->根据其他字段的值，可以将元数据字段定义为必填字段。 在“卡片”视图中，AEM不会显示有关此类必需元数据字段缺少元数据的警告消息。
+>根据其他字段的值，可以将元数据字段定义为必填字段。 在“卡片”视图中，[!DNL Experience Manager]不显示有关此类必需元数据字段缺少元数据的警告消息。
 
-1. 单击 AEM 徽标，然后导航到&#x200B;**[!UICONTROL 工具 > Assets > 元数据架构]**。此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
+1. 单击[!DNL Experience Manager]徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>元数据架构]**。 此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
 1. 将默认元数据表单另存为自定义表单。 例如，将其另存为`my_default`。
 
    ![chlimage_1-109](assets/chlimage_1-189.png)
@@ -286,8 +286,8 @@ AEM Assets允许您定义元数据架构的变体，并将其应用到特定文�
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-1. （可选）访问`http://[server]:[port]/system/console/components/`。 配置并启用默认禁用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`组件。 设置AEM检查资产上元数据有效性的频率。
-此配置会将属性`hasValidMetadata`添加到资产的jcr:content。 使用此属性，AEM可以过滤搜索结果。
+1. （可选）访问`http://[server]:[port]/system/console/components/`。 配置并启用默认禁用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`组件。 设置一个频度，在该频率下[!DNL Experience Manager]会检查资产上元数据的有效性。
+此配置会将属性`hasValidMetadata`添加到资产的jcr:content。 使用此属性，[!DNL Experience Manager]可以筛选搜索结果。
 
 >[!NOTE]
 >
@@ -295,4 +295,4 @@ AEM Assets允许您定义元数据架构的变体，并将其应用到特定文�
 
 >[!CAUTION]
 >
->元数据验证检查占用大量资源，可能会影响系统性能。 相应地计划检查。 如果AEM部署存在性能问题，请尝试禁用此作业。
+>元数据验证检查占用大量资源，可能会影响系统性能。 相应地计划检查。 如果[!DNL Experience Manager]部署存在性能问题，请尝试禁用此作业。

@@ -2,13 +2,13 @@
 title: 图像转码库
 description: 了解如何配置和使用Adobe的图像转码库，该库是一款图像处理解决方案，可执行核心的图像处理功能，包括编码、转码、图像重新采样和图像大小调整。
 contentOwner: AG
-feature: 演绎版，开发人员工具，资产处理
+feature: Renditions,Developer Tools,Asset Processing
 role: Admin
 exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 1%
+source-wordcount: '958'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ Adobe的图像转码库是一款专有的图像处理解决方案，可执行核
 >
 >不支持Mac OS和其他*nix分发（例如，Debian和Ubuntu）。
 
-## 使用 {#usage}
+## 用途 {#usage}
 
 映像转码库的命令行参数可以包括以下内容：
 
@@ -78,7 +78,7 @@ Adobe的图像转码库是一款专有的图像处理解决方案，可执行核
 
 要配置库，请创建一个.conf文件，以通过以下步骤指示库。 您需要管理员或根权限。
 
-1. 从Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)下载[映像转码库包，然后使用包管理器安装它。 该包与AEM 6.5兼容。
+1. 从Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)下载[映像转码库包，然后使用包管理器安装它。 该包与[!DNL Experience Manager] 6.5兼容。
 
 1. 要了解`com.day.cq.dam.cq-dam-switchengine`的包ID，请登录到Web控制台，然后点按&#x200B;**[!UICONTROL OSGi >包]**。 或者，要打开包控制台，请访问`https://[aem_server:[port]/system/console/bundles/` URL。 找到`com.day.cq.dam.cq-dam-switchengine`包及其ID。
 
@@ -109,7 +109,7 @@ Adobe的图像转码库是一款专有的图像处理解决方案，可执行核
 
 更新[!UICONTROL DAM更新资产]工作流，以使用库处理图像。
 
-1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具 > 工作流 > 模式]**。
+1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具>工作流>模型]**。
 
 1. 从&#x200B;**[!UICONTROL 工作流模型]**&#x200B;页面中，在编辑模式下打开&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流模型。
 

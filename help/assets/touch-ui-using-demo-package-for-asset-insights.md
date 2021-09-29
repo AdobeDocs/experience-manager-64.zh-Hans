@@ -2,12 +2,12 @@
 title: 使用资产分析演示包
 description: 使用演示包，可启用Adobe资产分析，以从中捕获数据并为网页生成分析。
 contentOwner: AG
-feature: 资产分析，资产报表
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: c6d321f5-4c48-47f2-bff1-c4da988c0e84
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '162'
 ht-degree: 2%
 
 ---
@@ -16,10 +16,10 @@ ht-degree: 2%
 
 使用演示包，您可以启用Adobe资产分析，以从中捕获数据并为示例网页生成分析。
 
-## 将AEM Assets分析与示例网页结合使用  {#using-aem-assets-insights-with-sample-web-page}
+## 将[!DNL Experience Manager]资产分析与示例网页结合使用  {#using-aem-assets-insights-with-sample-web-page}
 
 1. 按照[配置资产分析](touch-ui-configuring-asset-insights.md)中的说明配置资产分析。
-1. 从下面下载示例AEM Assets包，并从CRXDE包管理器安装该包。
+1. 从下面下载示例[!DNL Experience Manager] Assets包，然后从CRXDE包管理器安装该包。
 
 [获取文件](assets/insightsdemo.zip)
 
@@ -35,4 +35,4 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >外部网页可以位于AEM中。
+   >外部网页本身可以是[!DNL Experience Manager]。

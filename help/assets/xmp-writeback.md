@@ -2,12 +2,12 @@
 title: XMP 写回到演绎版
 description: 了解XMP写回功能如何将资产的元数据更改传播到资产的所有或特定演绎版。
 contentOwner: AG
-feature: 元数据
+feature: Metadata
 role: User,Admin
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '775'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ XMP写回功能允许您将元数据更改传播到资产的所有演绎版或�
 
 ![元数据](assets/metadata.png)
 
-在这种情况下，AEM Assets会将对资产层级中存储的资产元数据的`dc:title`参数中的&#x200B;**[!UICONTROL Title]**&#x200B;属性所做的更改保存下来。
+在这种情况下， [!DNL Experience Manager]资产会在资产层次结构中存储的资产元数据的`dc:title`参数中，保存对&#x200B;**[!UICONTROL Title]**&#x200B;属性所做的更改。
 
 ![metadata_stored](assets/metadata_stored.png)
 
@@ -67,13 +67,13 @@ PTIFF呈现仅在Dynamic Media混合模式下本地创建和存储。 保存工�
 
 [!DNL Experience Manager Assets] 支持对XMP元数据的属性/节点进行阻止列表和允许列表筛选，这些属性/节点从资产二进制文件中读取，并在摄取资产时存储在JCR中。
 
-通过使用阻止列表进行筛选，您可以导入所有XMP元数据属性，但指定用于排除的属性除外。 但是，对于具有大量XMP元数据的资产类型（例如，1000个节点，其属性为10,000），要筛选的节点名称并不总是预先知道。 如果使用阻止列表进行过滤可导入大量具有大量XMP元数据的资产，则AEM实例或群集可能会遇到稳定性问题，例如观察队列阻塞。
+通过使用阻止列表进行筛选，您可以导入所有XMP元数据属性，但指定用于排除的属性除外。 但是，对于具有大量XMP元数据的资产类型（例如，1000个节点，其属性为10,000），要筛选的节点名称并不总是预先知道。 如果使用阻止列表进行筛选可导入大量具有大量XMP元数据的资产，则[!DNL Experience Manager]实例或群集可能会遇到稳定性问题，例如观察队列阻塞。
 
 通过允许列表过滤XMP元数据可通过允许您定义要导入的XMP属性来解决此问题。 这样，任何其他或未知的XMP属性都将被忽略。 为了向后兼容，您可以将其中某些属性添加到使用阻止列表的过滤器中。
 
 >[!NOTE]
 >
->筛选仅适用于资产二进制文件中从XMP源派生的属性。 对于从非XMP源（如EXIF和IPTC格式）派生的属性，筛选不起作用。 例如，资产创建日期存储在EXIF TIFF中名为`CreateDate`的属性中。 AEM将此值存储在名为`exif:DateTimeOriginal`的元数据字段中。 由于源是非XMP源，因此无法对此属性进行筛选。
+>筛选仅适用于资产二进制文件中从XMP源派生的属性。 对于从非XMP源（如EXIF和IPTC格式）派生的属性，筛选不起作用。 例如，资产创建日期存储在EXIF TIFF中名为`CreateDate`的属性中。 [!DNL Experience Manager] 将此值存储在名为的元数据字段中 `exif:DateTimeOriginal`。由于源是非XMP源，因此无法对此属性进行筛选。
 
 1. 从`https://[aem_server]:[port]/system/console/configMgr`中打开配置管理器。
 1. 打开&#x200B;**[!UICONTROL Adobe CQ DAM XmpFilter]**&#x200B;配置。

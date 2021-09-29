@@ -1,13 +1,13 @@
 ---
 title: Assets 卸载最佳实践
-description: 在AEM Assets中卸载资产摄取和复制工作流的建议用例和最佳实践。
+description: 在 [!DNL Experience Manager] Assets中卸载资产摄取和复制工作流的建议用例和最佳实践。
 contentOwner: AG
-feature: 资产管理
+feature: Asset Management
 role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->此功能已从AEM 6.4开始弃用，并在AEM 6.5中删除。请相应地进行计划。
+>此功能从[!DNL Experience Manager] 6.4开始被弃用，在[!DNL Experience Manager] 6.5中被删除。请相应地进行计划。
 
-在Adobe Experience Manager(AEM)资产中处理大文件和运行工作流可能会占用大量CPU、内存和I/O资源。 特别是，资产的大小、工作流、用户数量和资产摄取频率都可能会影响系统的整体性能。 资源密集型操作包括AEM资产摄取和复制工作流。 在单个AEM创作实例上大量使用这些工作流可能会对创作效率产生不利影响。
+在Adobe Experience Manager Assets中处理大文件和运行工作流可能会占用大量CPU、内存和I/O资源。 特别是，资产的大小、工作流、用户数量和资产摄取频率都可能会影响系统的整体性能。 资源密集型操作包括资产摄取和复制工作流。 在单个创作实例上大量使用这些工作流可能会对创作效率产生不利影响。
 
 将这些任务卸载到专用的工作器实例可以减少CPU、内存和IO开销。 通常，卸载的思想是将消耗大量CPU/内存/IO资源的任务分发到专用工作器实例。 以下部分包括建议的资产卸载用例。
 
-## AEM Assets卸载 {#aem-assets-offloading}
+## [!DNL Experience Manager Assets] 卸载 {#aem-assets-offloading}
 
-AEM Assets实施了用于卸载的特定于本机资产的工作流扩展。 它以卸载框架提供的通用工作流扩展为基础，但在实施中包含其他特定于资产的功能。 资产卸载的目标是对上传的资产高效运行DAM更新资产工作流。 资产卸载使您能够更好地控制摄取工作流。
+[!DNL Experience Manager] 资产会实施用于卸载的特定于本机资产的工作流扩展。它以卸载框架提供的通用工作流扩展为基础，但在实施中包含其他特定于资产的功能。 资产卸载的目标是对上传的资产高效运行DAM更新资产工作流。 资产卸载使您能够更好地控制摄取工作流。
 
-## AEM Assets卸载组件 {#aem-assets-offloading-components}
+## [!DNL Experience Manager] 资产卸载组件 {#aem-assets-offloading-components}
 
 下图描述了资产卸载流程中的主要组件：
 
@@ -40,7 +40,7 @@ DAM更新资产卸载工作流在用户上传资产的主（作者）服务器�
 
 作业管理器将新作业分配给工作器实例。 在设计分发机制时，务必要考虑主题启用。 只能将作业分配到启用了作业主题的实例。 在主系统上禁用主题`com/adobe/granite/workflow/offloading`，并在工作器上启用该主题，以确保将作业分配给工作器。
 
-### AEM卸载 {#aem-offloading}
+### [!DNL Experience Manager] 卸载 {#aem-offloading}
 
 卸载框架标识了分配给工作实例的工作流卸载作业，并使用复制将它们物理地传输到工作器，包括其有效负载（例如，要摄取的图像）。
 
@@ -50,7 +50,7 @@ DAM更新资产卸载工作流在用户上传资产的主（作者）服务器�
 
 ## Sling拓扑 {#sling-topology}
 
-Sling拓扑对AEM实例进行分组，使它们能够相互感知，而不依赖于底层持久性。 Sling拓扑的这一特性允许您为非群集、群集和混合场景创建拓扑。 实例可向整个拓扑公开属性。 框架提供用于侦听拓扑（实例和属性）中更改的回调。 Sling拓扑为Sling分布式作业提供了基础。
+Sling拓扑对[!DNL Experience Manager]实例进行分组，使它们能够相互感知，与底层持久性无关。 Sling拓扑的这一特性允许您为非群集、群集和混合场景创建拓扑。 实例可向整个拓扑公开属性。 框架提供用于侦听拓扑（实例和属性）中更改的回调。 Sling拓扑为Sling分布式作业提供了基础。
 
 ### Sling分布式作业 {#sling-distributed-jobs}
 
@@ -89,7 +89,7 @@ Sling分布式作业提供作业和分发框架。 Granite卸载仅负责将作�
 
 ### 建议的资产卸载部署 {#recommended-assets-offloading-deployment}
 
-使用AEM和Oak，可能存在多种部署方案。 对于资产卸载，建议使用共享数据存储进行基于TarMK的部署。 下图概述了建议的部署：
+使用[!DNL Experience Manager]和Oak，可能会出现多种部署方案。 对于资产卸载，建议使用共享数据存储进行基于TarMK的部署。 下图概述了建议的部署：
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 

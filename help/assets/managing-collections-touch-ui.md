@@ -3,12 +3,12 @@ title: 管理资产收藏集
 description: 了解管理资产收藏集的任务，如创建、查看、删除、编辑和下载收藏集。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 收藏集
+feature: Collections
 role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2326'
 ht-degree: 22%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 22%
 
 1. 在Assets用户界面中，点按/单击工具栏中的搜索图标。
 
-   ![chlimage_1-115](assets/chlimage_1-114.png)
+   ![chlimage_1-114](assets/chlimage_1-114.png)
 
 1. 将光标置于Omnisearch框中，按Return键。
 
@@ -195,7 +195,7 @@ ht-degree: 22%
 
 ## 搜索收藏集 {#searching-collections}
 
-您可以从“收藏集”控制台中搜索收藏集。在Omnisearch框中使用关键字搜索时，AEM Assets会搜索收藏集名称、元数据和添加到收藏集的标记。
+您可以从“收藏集”控制台中搜索收藏集。在Omnisearch框中使用关键字搜索时， [!DNL Experience Manager]资产会搜索收藏集名称、元数据以及添加到收藏集的标记。
 
 如果您从顶级搜索收藏集，则搜索结果中只返回单个收藏集。 收藏集中的资产或文件夹将被排除。 在所有其他情况下（例如，在单个收藏集或文件夹层次结构中），都会返回所有相关的资产、文件夹和收藏集。
 
@@ -203,7 +203,7 @@ ht-degree: 22%
 
 在收藏集控制台中，点按/单击收藏集以将其打开。
 
-在收藏集中，AEM资产搜索仅限于您正在查看的收藏集中的资产（及其标记和元数据）。 在文件夹中搜索时，将返回当前文件夹中所有匹配的资产和子文件夹。 在收藏集中搜索时，只会返回与收藏集直接成员匹配的资产、文件夹和其他收藏集。
+在收藏集中，搜索仅限于您正在查看的收藏集中的资产（及其标记和元数据）。 在文件夹中搜索时，将返回当前文件夹中所有匹配的资产和子文件夹。 在收藏集中搜索时，只会返回与收藏集直接成员匹配的资产、文件夹和其他收藏集。
 
 ## 编辑收藏集设置 {#editing-collection-settings}
 
@@ -305,5 +305,5 @@ ht-degree: 22%
 >[!MORELIKETHIS]
 >
 >* [配置Experience Manager资产电子邮件通知](/help/sites-administering/notification.md#assetsconfig)
-* [为收藏集创建审核任务](bulk-approval.md)
+>* [为收藏集创建审核任务](bulk-approval.md)
 

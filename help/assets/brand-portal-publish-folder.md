@@ -5,24 +5,24 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: f41ab750-5780-42ae-a131-5bc748280215
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 28%
+source-wordcount: '552'
+ht-degree: 27%
 
 ---
 
 # 将文件夹发布到 Brand Portal {#publish-folders-to-brand-portal}
 
-作为Adobe Experience Manager(AEM)Assets管理员，您可以将资产和文件夹发布到您组织的AEM Assets Brand Portal实例（或将发布工作流安排到稍后的日期/时间）。 但是，您必须先将AEM Assets与Brand Portal集成。 有关详细信息，请参阅[使用 Brand Portal 配置 AEM Assets](configure-aem-assets-with-brand-portal.md)。
+作为Adobe Experience Manager Assets管理员，您可以将资产和文件夹发布到您组织的[!DNL Experience Manager Assets Brand Portal]实例（或将发布工作流安排到稍后的日期/时间）。 但是，您必须先将[!DNL Experience Manager Assets]与[!DNL Brand Portal]集成。 有关详细信息，请参阅[使用Brand Portal](configure-aem-assets-with-brand-portal.md)配置 [!DNL Experience Manager Assets] 。
 
 发布资产或文件夹后，Brand Portal中的用户便可以使用该资产或文件夹。
 
-如果您随后在AEM Assets中对原始资产或文件夹进行了修改，则在重新发布该资产或文件夹之前，所做的更改不会反映在Brand Portal中。 此功能可确保在 Brand Portal 中不会出现进行中的更改。只有管理员发布的已批准更改才会出现在 Brand Portal 中。
+如果您随后对[!DNL Assets]中的原始资产或文件夹进行了修改，则在重新发布资产或文件夹之前，这些更改不会反映在Brand Portal中。 此功能可确保在 Brand Portal 中不会出现进行中的更改。只有管理员发布的已批准更改才会出现在 Brand Portal 中。
 
 ## 将文件夹发布到 Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. 在AEM Assets界面中，将鼠标悬停在所需的文件夹上，然后从快速操作中选择&#x200B;**[!UICONTROL 发布]**&#x200B;选项。
+1. 在[!DNL Assets]界面中，将鼠标悬停在所需文件夹上，然后从快速操作中选择&#x200B;**[!UICONTROL 发布]**&#x200B;选项。
 
    或者，选择所需的文件夹并执行进一步的步骤。
 
@@ -57,11 +57,11 @@ ht-degree: 28%
 
 ## 从 Brand Portal 取消发布文件夹 {#unpublish-folders-from-brand-portal}
 
-您可以通过从AEM创作实例中取消发布已发布到Brand Portal的任何资产文件夹，来删除该文件夹。 取消发布原始文件夹后，Brand Portal 用户将无法再使用其副本。
+您可以通过从[!DNL Experience Manager]创作实例中取消发布已发布到Brand Portal的任何资产文件夹，来删除该文件夹。 取消发布原始文件夹后，Brand Portal 用户将无法再使用其副本。
 
 您可以选择快速从Brand Portal中取消发布文件夹，或安排在稍后的日期和时间取消发布文件夹。 要从 Brand Portal 取消发布资产文件夹，请执行以下操作：
 
-1. 从AEM创作实例的AEM Assets界面中，选择要取消发布的文件夹。
+1. 从[!DNL Experience Manager]创作实例的[!DNL Assets]界面中，选择要取消发布的文件夹。
 
    ![publish2bp-1](assets/publish2bp-1.png)
 

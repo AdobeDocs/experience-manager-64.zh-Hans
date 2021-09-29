@@ -2,12 +2,12 @@
 title: 处理资产以完成业务流程、进行审核、实现法规遵从性并保持基本的健全性
 description: 资产处理功能：转换格式、创建演绎版、管理资产、验证资产，以及运行工作流。
 contentOwner: AG
-feature: 工作流，演绎版
+feature: Workflow,Renditions
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 2%
 >
 >如果经典UI中可用的工作流在触屏优化UI中不可用，例如[!UICONTROL 请求激活]和[!UICONTROL 请求取消激活]，请参阅[创建工作流模型](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui)。
 
-## 将工作流应用到AEM资产 {#apply-a-workflow-to-an-aem-asset}
+## 将工作流应用于[!DNL Experience Manager]资产 {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -111,7 +111,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 >[!MORELIKETHIS]
 >
 >* [应用和参与工作流](/help/sites-authoring/workflows.md)
-* [创建工作流模型并扩展工作流功能](/help/sites-developing/workflows.md)
-* [执行工作流的方法](/help/sites-administering/workflows-starting.md)
-* [工作流最佳实践](/help/sites-developing/workflows-best-practices.md)
+>* [创建工作流模型并扩展工作流功能](/help/sites-developing/workflows.md)
+>* [执行工作流的方法](/help/sites-administering/workflows-starting.md)
+>* [工作流最佳实践](/help/sites-developing/workflows-best-practices.md)
 

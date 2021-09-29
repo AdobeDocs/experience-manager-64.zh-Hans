@@ -5,12 +5,12 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-feature: 工作流，资产管理，演绎版
+feature: Workflow,Asset Management,Renditions
 role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1374'
 ht-degree: 11%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 11%
 
 创建元数据、图像或视频配置文件后，您需要将其分配给一个或多个文件夹，以用作新上传资产的目标。
 
-有关在AEM Assets中使用用户档案的一个重要概念是，将用户档案分配给文件夹。 配置文件中包括元数据配置文件形式的设置，以及视频配置文件或图像配置文件。 这些设置会处理文件夹及其任何子文件夹的内容。 因此，您如何为文件和文件夹命名、如何排列子文件夹、如何处理这些文件夹中的文件，都会极大地影响配置文件对这些资产的处理。通过使用一致、适当的文件和文件夹命名策略，以及良好的元数据实践，您可以充分利用数字资产集合，并确保通过正确的配置文件处理正确的文件。有关示例，请参阅[使用文件夹](organize-assets.md#organize-using-folders)组织资产。
+有关[!DNL Experience Manager]资产中使用配置文件的一个重要概念是，将配置文件分配给文件夹。 配置文件中包括元数据配置文件形式的设置，以及视频配置文件或图像配置文件。 这些设置会处理文件夹及其任何子文件夹的内容。 因此，您如何为文件和文件夹命名、如何排列子文件夹、如何处理这些文件夹中的文件，都会极大地影响配置文件对这些资产的处理。通过使用一致、适当的文件和文件夹命名策略，以及良好的元数据实践，您可以充分利用数字资产集合，并确保通过正确的配置文件处理正确的文件。有关示例，请参阅[使用文件夹](organize-assets.md#organize-using-folders)组织资产。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->仅适用于AEM 6.4.7.0或更高版本中的&#x200B;*Dynamic Media - Scene7模式*。
+>仅适用于&#x200B;*Dynamic Media - Scene7模式*&#x200B;在[!DNL Experience Manager] 6.4.7.0或更高版本中。
 
 您可以重新处理文件夹中的资产，该文件夹中已有您稍后更改的现有处理配置文件。
 
@@ -84,11 +84,11 @@ ht-degree: 11%
 
 1. 单击&#x200B;**[!UICONTROL 开始]**，然后单击&#x200B;**[!UICONTROL 确认]**。
 
-   要监视工作流或检查其进度，请从AEM主控制台页面中，单击&#x200B;**[!UICONTROL 工具>工作流]**。 在工作流实例页面上，选择一个工作流。 在菜单栏上，单击&#x200B;**[!UICONTROL 打开历史记录]**。 您还可以从同一工作流实例页面中终止、暂停或重命名选定的工作流。
+   要监视工作流或检查其进度，请从[!DNL Experience Manager]主控制台页面中，单击&#x200B;**[!UICONTROL 工具>工作流]**。 在工作流实例页面上，选择一个工作流。 在菜单栏上，单击&#x200B;**[!UICONTROL 打开历史记录]**。 您还可以从同一工作流实例页面中终止、暂停或重命名选定的工作流。
 
 ### 调整重新处理工作流的批处理大小 {#adjusting-load}
 
-（可选）重新处理工作流中的默认批大小为每个作业50个资产。 此最佳批处理大小受平均资产大小和运行重新处理的资产的mime类型的约束。 值越高，表示在单个重新处理作业中将包含许多文件。 因此，处理横幅会在AEM资产上停留较长时间。 但是，如果平均文件大小为1 MB或更小，则建议将该值增加到几百，但最大不超过1000。 如果平均文件大小为数百MB，则Adobe建议您将批处理大小减少到10。
+（可选）重新处理工作流中的默认批大小为每个作业50个资产。 此最佳批处理大小受平均资产大小和运行重新处理的资产的mime类型的约束。 值越高，表示在单个重新处理作业中将包含许多文件。 因此，处理横幅会在[!DNL Experience Manager]资产上停留较长时间。 但是，如果平均文件大小为1 MB或更小，则建议将该值增加到几百，但最大不超过1000。 如果平均文件大小为数百MB，则Adobe建议您将批处理大小减少到10。
 
 **（可选）调整重新处理工作流的批大小**
 
@@ -138,5 +138,5 @@ ht-degree: 11%
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
 1. On the menu bar of the CRXDE Lite page, tap **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main AEM console
+1. In the upper-left corner of the page, tap **[!UICONTROL CRXDE Lite]** to return to the main [!DNL Experience Manager] console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model. -->

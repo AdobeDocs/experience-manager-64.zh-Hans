@@ -2,19 +2,19 @@
 title: 有效翻译资产的最佳实践
 description: 有效管理资产的最佳实践，可同步各种翻译版本并简化翻译工作流程。
 contentOwner: AG
-feature: 翻译
+feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
 # 高效翻译资产的最佳实践 {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager(AEM)Assets支持多语言工作流，用于将数字资产的二进制文件、元数据和标记翻译为多个区域设置，并管理已翻译的资产。 有关详细信息，请参阅[多语言资产](multilingual-assets.md)。
+Adobe Experience Manager Assets支持多语言工作流，用于将数字资产的二进制文件、元数据和标记翻译为多个区域设置，并管理已翻译的资产。 有关详细信息，请参阅[多语言资产](multilingual-assets.md)。
 
 为了有效管理资产以确保不同翻译版本保持同步，请在运行翻译工作流之前创建资产的[语言副本](preparing-assets-for-translation.md)。
 
@@ -43,7 +43,7 @@ Adobe Experience Manager(AEM)Assets支持多语言工作流，用于将数字资
 
 1. 启用&#x200B;*设置上次修改日期*&#x200B;工作流。
 
-   *DAM MetaData Writeback*&#x200B;工作流配置资产的上次修改日期。 由于您在步骤2中禁用此工作流，AEM Assets将无法再保持资产的上次修改日期为最新。 因此，请启用&#x200B;*设置上次修改日期*&#x200B;工作流，以确保资产的上次修改日期为最新日期。 具有过期的上次修改日期的资产可能会导致错误。
+   *DAM MetaData Writeback*&#x200B;工作流配置资产的上次修改日期。 由于您在步骤2中禁用此工作流，[!DNL Experience Manager Assets]无法再使资产的上次修改日期保持为最新。 因此，请启用&#x200B;*设置上次修改日期*&#x200B;工作流，以确保资产的上次修改日期为最新日期。 具有过期的上次修改日期的资产可能会导致错误。
 
 1. [配置翻译集成框架以](/help/sites-administering/tc-tic.md) 停止翻译资产二进制文件。取消选择资产选项卡下的“翻译资产”选项，以停止翻译资产二进制文件。
 1. 使用[多语言资产工作流](multilingual-assets.md)翻译资产元数据/标记。

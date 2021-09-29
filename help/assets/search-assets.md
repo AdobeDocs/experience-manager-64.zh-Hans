@@ -1,20 +1,20 @@
 ---
 title: 在AEM中搜索资产
-description: 了解如何使用“过滤器”面板在AEM中查找所需的资产，以及如何使用搜索中显示的资产。
+description: 了解如何使用过滤器面板在 [!DNL Experience Manager] 中查找所需的资产，以及如何使用搜索中显示的资产。
 contentOwner: AG
-feature: 搜索，元数据
+feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
 
-# 在AEM中搜索资产 {#search-assets-in-aem}
+# 在[!DNL Experience Manager]中搜索资产 {#search-assets-in-aem}
 
-了解如何使用“过滤器”面板在AEM中查找所需的资产，以及如何使用搜索中显示的资产。
+了解如何使用过滤器面板在[!DNL Experience Manager]中查找所需的资产，以及如何使用搜索中显示的资产。
 
 使用“过滤器”面板可搜索资产、文件夹、标记和元数据。 您可以使用通配符星号搜索字符串的部分内容。
 

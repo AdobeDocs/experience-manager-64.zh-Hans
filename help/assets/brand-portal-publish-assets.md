@@ -5,26 +5,26 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 36%
+source-wordcount: '403'
+ht-degree: 30%
 
 ---
 
 # 将资产发布到 Brand Portal {#publish-assets-to-brand-portal}
 
-作为Adobe Experience Manager(AEM)Assets管理员，您可以将资产发布到您组织的AEM Assets Brand Portal实例（或将发布工作流安排到稍后的日期/时间）。 但是，您必须先使用Brand Portal配置AEM Assets。 有关详细信息，请参阅[使用 Brand Portal 配置 AEM Assets](configure-aem-assets-with-brand-portal.md)。
+作为Adobe Experience Manager Assets管理员，您可以将资产发布到您组织的[!DNL Experience Manager Assets Brand Portal]实例（或将发布工作流安排到稍后的日期/时间）。 但是，您必须首先使用[!DNL Brand Portal]配置[!DNL Assets]。 有关详细信息，请参阅[使用 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)配置 [!DNL Assets] 。
 
 发布资产后，Brand Portal中的用户便可以使用该资产。
 
-如果您随后在AEM Assets中对原始资产进行了修改，则在重新发布资产之前，这些更改不会反映在Brand Portal中。 此功能可确保在 Brand Portal 中不会出现进行中的更改。只有管理员发布的已批准更改才会出现在 Brand Portal 中。
+如果您随后在[!DNL Assets]中对原始资产进行了修改，则在重新发布资产之前，这些更改不会反映在Brand Portal中。 此功能可确保在 Brand Portal 中不会出现进行中的更改。只有管理员发布的已批准更改才会出现在 Brand Portal 中。
 
-复制成功后，您可以将资产、文件夹和收藏集发布到Brand Portal。 要将资产发布到Brand Portal，请执行以下步骤：
+复制成功后，您可以将资产、文件夹和收藏集发布到[!DNL Brand Portal]。 要将资产发布到Brand Portal，请执行以下步骤：
 
 >[!NOTE]
 >
->Adobe 建议实施错峰发布，最好在非高峰时段发布，这样 AEM 作者就不会占用过多的资源。
+>Adobe建议错开发布，最好在非高峰时间发布，这样[!DNL Experience Manager]作者就不会占用过多的资源。
 
 1. 在“资产”控制台中，将鼠标悬停在所需的资产上，然后从快速操作中选择&#x200B;**[!UICONTROL 发布]**&#x200B;选项。
 

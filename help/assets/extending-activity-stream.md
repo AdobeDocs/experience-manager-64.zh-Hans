@@ -1,26 +1,26 @@
 ---
 title: 将资产与活动流集成
-description: 介绍AEM的记录功能以及如何配置AEM以记录特定事件。
+description: 描述 [!DNL Experience Manager] and how to configure [!DNL Experience Manager] 用于记录特定事件的记录功能。
 contentOwner: AG
-feature: 资产管理
+feature: Asset Management
 role: Developer
 exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-# 将资产与活动流{#integrating-assets-with-activity-stream}集成
+# 将资产与活动流集成 {#integrating-assets-with-activity-stream}
 
-Adobe Experience Manager(AEM)Assets用户可执行多项操作，例如创建、上传和删除资产。 可以记录这些操作，以便提供用户所执行操作的历史记录。 本节介绍AEM的记录功能以及如何配置AEM以记录特定事件。
+Adobe Experience Manager Assets用户可执行多项操作，例如创建、上传和删除资产。 可以记录这些操作，以便提供用户所执行操作的历史记录。 本节介绍[!DNL Experience Manager]的记录功能以及如何配置[!DNL Experience Manager]以记录特定事件。
 
-## 性能注意事项和默认行为{#performance-considerations-and-default-behavior}
+## 性能注意事项和默认行为 {#performance-considerations-and-default-behavior}
 
-例如，此集成可能占用CPU和磁盘空间，而执行批量导入时则会占用这些空间。 因此，默认情况下会禁用AEM Assets与活动流的集成。
+例如，此集成可能占用CPU和磁盘空间，而执行批量导入时则会占用这些空间。 由于这些原因，默认情况下会禁用[!DNL Experience Manager]资产与活动流的集成。
 
-## 支持的操作事件{#supported-action-events}
+## 支持的操作事件 {#supported-action-events}
 
 可以将以下事件配置为记录：
 
@@ -40,9 +40,9 @@ Adobe Experience Manager(AEM)Assets用户可执行多项操作，例如创建、
 * 更新了子资产(SUBASSET_UPDATED)
 * 已删除子资产(SUBASSET_REMOVED)
 
-## 配置AEM Assets事件记录{#configuring-aem-assets-events-recording}
+## 配置[!DNL Assets]事件记录 {#configuring-aem-assets-events-recording}
 
-[Web控制台](/help/sites-deploying/configuring-osgi.md)提供对AEM Assets事件记录器调整的访问。 要配置AEM Assets事件记录器，请按照以下步骤继续操作：
+[Web控制台](/help/sites-deploying/configuring-osgi.md)提供对[!DNL Assets]事件记录器调整的访问。 要配置[!DNL Assets]事件记录器，请按照以下步骤继续操作：
 
 1. 导航到&#x200B;**[!UICONTROL Web控制台]**
 
@@ -56,6 +56,6 @@ Adobe Experience Manager(AEM)Assets用户可执行多项操作，例如创建、
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-## 读取记录的事件{#reading-recorded-events}
+## 读取记录的事件 {#reading-recorded-events}
 
 记录的事件将存储为活动。 您可以使用[ActivityManager API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)以编程方式读取它们。

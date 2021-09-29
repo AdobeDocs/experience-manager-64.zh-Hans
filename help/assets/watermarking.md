@@ -2,12 +2,12 @@
 title: 向数字资产添加水印
 description: 了解如何使用水印功能向资产添加数字水印。
 contentOwner: AG
-feature: 资产管理
+feature: Asset Management
 role: User,Admin
 exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '319'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] 允许您向资产添加数字水印，以帮助用户验证资产的真实性和版权所有权。[!DNL Experience Manager Assets] 支持在PNG和JPEG文件中用作水印的文本。
 
-Adobe Experience Manager(AEM)Assets允许您向图像添加数字水印，以帮助用户验证资产的真实性和版权所有权。 AEM Assets支持在PNG和JPEG文件中用作水印的文本。
+Adobe Experience Manager Assets允许您向图像添加数字水印，以帮助用户验证资产的真实性和版权所有权。 [!DNL Experience Manager] 资产支持用作PNG和JPEG文件上水印的文本。
 
 要对资产应用水印，请在[!UICONTROL DAM更新资产]工作流中添加水印步骤。
 
@@ -37,9 +37,9 @@ Adobe Experience Manager(AEM)Assets允许您向图像添加数字水印，以帮
    ![在资产的添加水印步骤中提供参数](assets/arguments_add_watermark_aem_assets.png)
 
 1. 使用水印步骤保存 **[!UICONTROL DAM 更新资产]**&#x200B;工作流。
-1. 从AEM用户界面中，上传示例资产。 在您在上述步骤中配置的位置，水印会以字体大小、颜色等显示。
+1. 从[!DNL Experience Manager]用户界面中，上传示例资产。 在您在上述步骤中配置的位置，水印会以字体大小、颜色等显示。
 
-要以编程方式或使用动态信息对PDF文档进行水印，请考虑使用[AEM Document Services](/help/forms/using/overview-aem-document-services.md)产品。
+要以编程方式或使用动态信息对PDF文档进行水印，请考虑使用[[!DNL Experience Manager] Document Services](/help/forms/using/overview-aem-document-services.md)产品。
 
 ## 提示和限制 {#tips-limitations}
 

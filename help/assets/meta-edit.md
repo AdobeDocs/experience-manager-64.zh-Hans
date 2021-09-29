@@ -1,13 +1,13 @@
 ---
 title: 如何编辑或添加元数据
-description: 了解AEM Assets中的资产元数据，以及编辑资产元数据的各种方式。
+description: 了解 [!DNL Experience Manager] 资产中的资产元数据，以及编辑资产元数据的各种方式。
 contentOwner: AG
-feature: 元数据
+feature: Metadata
 role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '479'
 ht-degree: 8%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 元数据是有关可搜索资产的其他信息。 在您上传图像时，系统会自动提取该图像。 您可以编辑现有元数据或向现有字段添加新元数据属性（例如，当元数据字段为空时）。
 
-由于公司需要可控且可靠的元数据词汇，因此AEM Assets不允许临时添加新的元数据属性。 尽管作者无法为资产添加新的元数据字段，但开发人员可以。 请参阅[为资产创建新元数据属性](meta-edit.md#editing-metadata-schema)。
+由于公司需要可控且可靠的元数据词汇，因此[!DNL Experience Manager]资产不允许临时添加新的元数据属性。 尽管作者无法为资产添加新的元数据字段，但开发人员可以。 请参阅[为资产创建新元数据属性](meta-edit.md#editing-metadata-schema)。
 
 ## 编辑资产的元数据 {#editing-metadata-for-an-asset}
 
@@ -28,7 +28,7 @@ ht-degree: 8%
    * 从资产缩略图中，选择&#x200B;**[!UICONTROL 查看属性]**&#x200B;快速操作。
    * 在资产页面中，单击/点按工具栏中的&#x200B;**[!UICONTROL 查看属性]**&#x200B;图标![信息图标](assets/do-not-localize/info_icon.png)。
 
-   资产页面会显示资产的所有元数据。 此元数据在上传（摄取）到AEM Assets后会自动提取。
+   资产页面会显示资产的所有元数据。 此元数据在上传（摄取）到[!DNL Experience Manager]资产后会自动提取。
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -46,7 +46,7 @@ ht-degree: 8%
 
 有关如何编辑元数据架构的详细信息，请参阅[编辑元数据架构表单](metadata-schemas.md#editing-metadata-schema-forms)。
 
-## 在AEM中注册自定义命名空间 {#registering-a-custom-namespace-within-aem}
+## 在[!DNL Experience Manager]中注册自定义命名空间 {#registering-a-custom-namespace-within-aem}
 
 您可以在AEM中添加自己的命名空间。 正如存在预定义的命名空间（如cq、jcr和sling）一样，您也可以拥有用于存储库元数据和xml处理的命名空间。
 

@@ -1,27 +1,27 @@
 ---
-title: 使用AEM Assets管理您的数字资产
-description: 了解使用AEM Assets的触屏优化用户界面可以执行的各种资产管理和编辑任务
+title: 使用 [!DNL Experience Manager] 资产管理数字资产
+description: 了解使用 [!DNL Experience Manager] Assets的触屏优化用户界面可以执行的各种资产管理和编辑任务
 contentOwner: AG
 mini-toc-levels: 1
-feature: 资产管理，搜索，演绎版，协作
+feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '10131'
+source-wordcount: '10078'
 ht-degree: 6%
 
 ---
 
 # 管理数字资产 {#managing-assets-with-the-touch-optimized-ui}
 
-了解使用AEM Assets的触屏优化用户界面可以执行的各种资产管理和编辑任务。
+了解使用[!DNL Experience Manager] Assets的触屏优化用户界面可以执行的各种资产管理和编辑任务。
 
-本文介绍了如何使用Adobe Experience Manager(AEM)Assets触屏优化用户界面来管理和编辑资产。 有关用户界面的基本知识，请参阅[触屏UI的基本操作](/help/sites-authoring/basic-handling.md)。 要管理内容片段，请参阅[管理内容片段](content-fragments-managing.md)资产。
+本文介绍了如何使用Adobe Experience Manager Assets触屏优化用户界面管理和编辑资产。 有关用户界面的基本知识，请参阅[触屏UI的基本操作](/help/sites-authoring/basic-handling.md)。 要管理内容片段，请参阅[管理内容片段](content-fragments-managing.md)资产。
 
 ## 创建文件夹 {#create-folders}
 
-组织资产集合（例如，所有`Nature`图像）时，可以创建文件夹以将它们保持在一起。 您可以使用文件夹对资产进行分类和组织。 AEM Assets不要求您组织文件夹中的资产以更好地工作。
+组织资产集合（例如，所有`Nature`图像）时，可以创建文件夹以将它们保持在一起。 您可以使用文件夹对资产进行分类和组织。 [!DNL Experience Manager] 资产不要求您组织文件夹中的资产以更好地运行。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 6%
 
 ## 上传资产 {#uploading-assets}
 
-您可以从本地文件夹或网络驱动器将各种类型的资产（包括图像、PDF文件、RAW文件等）上传到AEM Assets。
+您可以将各种类型的资产（包括图像、PDF文件、RAW文件等）从本地文件夹或网络驱动器上传到[!DNL Experience Manager]资产。
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ ht-degree: 6%
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-   要取消持续上传，请单击进度栏旁边的`X`按钮。 取消上传操作后，AEM Assets会删除部分上传的资产部分。
+   要取消持续上传，请单击进度栏旁边的`X`按钮。 取消上传操作后，[!DNL Experience Manager]资产会删除部分上传的资产部分。
 
    恢复上传的功能在低带宽情况和网络故障中特别有用，在这些情况下，上传大型资产需要较长时间。 您可以暂停上传操作，稍后在情况好转时继续。 恢复时，上传会从暂停之处开始。
 
-   在上传操作期间，AEM会将上传的资产部分作为数据块存储在CRX存储库中。 上传完成后，AEM会将这些区块整合到存储库中的单个数据块中。
+   在上传操作期间，[!DNL Experience Manager]会将上传的资产部分作为数据块保存到CRX存储库中。 上传完成后，[!DNL Experience Manager]会将这些区块合并到存储库中的单个数据块中。
 
    要为未完成的区块上载作业配置清理任务，请转到`https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`。
 
@@ -99,7 +99,7 @@ ht-degree: 6%
    >
    >如果启用了&#x200B;**[!UICONTROL 资产分析]**&#x200B;以通过Adobe Analytics跟踪展示次数/点击次数，则此重新生成的资产ID将使Adobe Analytics上为资产捕获的数据失效。
 
-   如果您上传的资产存在于AEM Assets中，则&#x200B;**[!UICONTROL 检测到的重复项]**&#x200B;对话框会警告您正在尝试上传重复的资产。 仅当现有资产的二进制文件的SHA 1校验和值与您上传资产的校验和值匹配时，才会显示该对话框。 在这种情况下，资产名称并不重要。 换言之，如果资产的二进制文件的SHA 1值相同，则甚至可以针对名称不同的资产显示对话框。
+   如果您上传的资产存在于[!DNL Experience Manager]资产中，则&#x200B;**[!UICONTROL 检测到的重复项]**&#x200B;对话框会警告您正在尝试上传重复的资产。 仅当现有资产的二进制文件的SHA 1校验和值与您上传资产的校验和值匹配时，才会显示该对话框。 在这种情况下，资产名称并不重要。 换言之，如果资产的二进制文件的SHA 1值相同，则甚至可以针对名称不同的资产显示该对话框。
 
    >[!NOTE]
    >
@@ -107,9 +107,9 @@ ht-degree: 6%
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
-   点按&#x200B;**[!UICONTROL Keep]**&#x200B;以在AEM Assets中保留重复的资产。 点按&#x200B;**[!UICONTROL 删除]**&#x200B;以删除您上传的重复资产。
+   点按&#x200B;**[!UICONTROL Keep]** ，以在[!DNL Experience Manager]资产中保留重复的资产。 点按&#x200B;**[!UICONTROL 删除]**&#x200B;以删除您上传的重复资产。
 
-   AEM Assets可阻止您在资产的文件名中使用禁止字符上传资产。 如果您尝试上传包含不允许的字符的资产，AEM Assets会显示一条警告消息，说明文件名中存在禁止的字符，并停止上传，直到您删除这些字符或上传时使用允许的名称为止。
+   [!DNL Experience Manager] 资产可阻止您在资产的文件名中使用禁止使用的字符上传资产。如果您尝试上传包含不允许的字符的资产， [!DNL Experience Manager]资产会显示一条警告消息，说明文件名中存在禁止的字符，并停止上传，直到您删除这些字符或上传时使用允许的名称为止。
 
    为了适合贵组织的特定文件命名约定，您可以在&#x200B;**[!UICONTROL 上传资产]**&#x200B;对话框中为上传的文件指定长名称。
 
@@ -125,13 +125,13 @@ ht-degree: 6%
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-   如果您在上传文件之前取消上传操作，AEM Assets将停止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
+   如果您在上传文件之前取消上传操作， [!DNL Experience Manager]资产将停止上传当前文件并刷新内容。 但是，不会删除已上传的文件。
 
 ### 串行上传 {#serial-uploads}
 
-批量上传大量资产会消耗大量系统资源，这可能会对AEM部署的性能产生负面影响。 潜在的瓶颈可能是您的Internet连接、磁盘上的读写操作、Web浏览器对并发POST上传请求数的限制。 批量上传操作可能会失败或提前终止。 换言之，AEM资产在摄取大量文件时可能会丢失某些文件，或者完全无法摄取任何文件。
+批量上传大量资产会消耗大量系统资源，这可能会对[!DNL Experience Manager]部署的性能产生不利影响。 潜在的瓶颈可能是您的Internet连接、磁盘上的读写操作、Web浏览器对并发POST上传请求数的限制。 批量上传操作可能会失败或提前终止。 换言之， [!DNL Experience Manager]资产在摄取大量文件时可能会丢失某些文件，或完全无法摄取任何文件。
 
-为了克服这种情况，AEM Assets在批量上传操作期间一次摄取一个资产（串行上传），而不是同时摄取所有资产。
+为了克服这种情况，[!DNL Experience Manager]资产在批量上传操作期间一次摄取一个资产（串行上传），而不是同时摄取所有资产。
 
 默认情况下，会启用资产的序列上传。 要禁用该功能并允许并发上传，请在CRXDe中叠加`fileupload`节点，并将`parallelUploads`属性的值设置为`true`。
 
@@ -145,9 +145,9 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上传
 
 >[!NOTE]
 >
->要在AEM作者上通过Dynamic Media中的FTP上传资产 — 请在上安装Scene7模式安装功能包(FP)18912。 联系Adobe客户关怀团队以访问FP-18912并完成FTP帐户的设置。 请参阅[安装批量资产迁移功能包18912](/help/assets/bulk-ingest-migrate.md)。
+>要在[!DNL Experience Manager]作者的Dynamic Media -Scene7模式安装功能包(FP)18912中通过FTP上传资产，请执行以下操作： 联系Adobe客户关怀团队以访问FP-18912并完成FTP帐户的设置。 请参阅[安装批量资产迁移功能包18912](/help/assets/bulk-ingest-migrate.md)。
 >
->如果您使用FTP上传资产，则会忽略AEM中指定的上传设置。 而是使用Dynamic Media Classic中定义的文件处理规则。
+>如果您使用FTP上传资产，则会忽略[!DNL Experience Manager]中指定的上传设置。 而是使用Dynamic Media Classic中定义的文件处理规则。
 
 **使用FTP上传资产**
 
@@ -167,7 +167,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上传
 1. 在&#x200B;**[!UICONTROL 上传作业选项]**&#x200B;对话框的右下角，点按&#x200B;**[!UICONTROL 保存]**。
 1. 在&#x200B;**[!UICONTROL Upload]**&#x200B;页面的右下角，点按&#x200B;**[!UICONTROL Submit Upload]**。
 
-   要查看上传进度，请在全局导航栏中，点按&#x200B;**[!UICONTROL 作业]**。 **[!UICONTROL 作业]**&#x200B;页面显示上传进度。 您可以随时继续在AEM中工作并返回到Dynamic Media Classic中的“作业”页面，以查看正在进行的作业。
+   要查看上传进度，请在全局导航栏中，点按&#x200B;**[!UICONTROL 作业]**。 **[!UICONTROL 作业]**&#x200B;页面显示上传进度。 您可以继续在[!DNL Experience Manager]中工作，并随时返回到Dynamic Media Classic中的“作业”页面，以查看正在进行的作业。
 
    要取消正在进行的上载作业，请点按&#x200B;**[!UICONTROL 持续时间]**&#x200B;时间旁边的&#x200B;**[!UICONTROL 取消]**。
 
@@ -177,11 +177,11 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上传
 |---|---|---|
 | 作业名称 |  | 在文本字段中预填充的默认名称包括用户输入的名称部分以及日期和时间戳。 您可以使用默认名称或输入您自己为此上载作业创建的名称。 <br>作业以及其他上传和发布作业会记录在“作业”页面上，您可以在该页面中检查作业的状态。 |
 | 上传后发布 |  | 自动发布您上传的资产。 |
-| 在任意文件夹中覆盖相同的基本资产名称，而不考虑扩展名 |  | 如果希望上传的文件替换具有相同名称的现有文件，请选择此选项。 此选项的名称可能不同，具体取决于&#x200B;**[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]** > **[!UICONTROL 上传到应用程序]** > **[!UICONTROL 覆盖图像]**&#x200B;中的设置。 |
+| 在任意文件夹内，使用相同的基本资源名称（不论扩展名是什么）进行覆盖 |  | 如果希望上传的文件替换具有相同名称的现有文件，请选择此选项。 此选项的名称可能不同，具体取决于&#x200B;**[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]** > **[!UICONTROL 上传到应用程序]** > **[!UICONTROL 覆盖图像]**&#x200B;中的设置。 |
 | 上传时解压缩ZIP或TAR文件 |  |  |
 | 作业选项 |  | 点按/单击&#x200B;**[!UICONTROL 作业选项]**&#x200B;以打开[!UICONTROL 上传作业选项]对话框，然后选择影响整个上传作业的选项。 所有文件类型的这些选项都是相同的。<br>您可以从“应用程序常规设置”页面开始，选择上传文件的默认选项。要打开此页，请选择&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]**。 点按&#x200B;**[!UICONTROL 默认上传选项]**&#x200B;按钮以打开[!UICONTROL 上传作业选项]对话框。 |
 |  | 当 | 选择一次性或定期。 要设置循环作业，请选择重复选项（每日、每周、每月或自定义）以指定希望FTP上传作业何时重复。 然后根据需要指定计划选项。 |
-|  | 包含子文件夹 | 上传您要上传的文件夹中的所有子文件夹。 您上传的文件夹及其子文件夹的名称会自动输入到AEM Assets中。 |
+|  | 包含子文件夹 | 上传您要上传的文件夹中的所有子文件夹。 您上传的文件夹及其子文件夹的名称会自动输入到[!DNL Experience Manager]资产中。 |
 |  | 裁剪选项 | 要从图像的侧边手动裁剪，请选择“裁剪”菜单，然后选择“手动”。 然后，输入要从图像的任何一侧或每一侧裁剪的像素数。 裁剪的图像多少取决于图像文件中的 ppi（每英寸像素数）设置。例如，如果图像显示 150 ppi，您在“顶部”、“右”、“底部”和“左”文本框中分别输入 75，则会从每个侧边裁剪半英寸。<br> 要自动从图像裁剪空白像素，请打开“裁剪”菜单，选择“手动”，然后在“顶部”、“右”、“底部”和“左”字段中输入像素测量值以从侧边裁剪。您还可以在“裁剪”菜单中选择“裁切”，然后选择以下选项：<br> **根据** <ul><li>**颜色**  — 选择“颜色”选项。然后，选择“角”菜单，并选择图像的角，其颜色最能代表要裁剪的空格颜色。</li><li>**透明度**  — 选择“透明度”选项。<br> **容差**  — 拖动滑块以指定0到1的容差。对于基于颜色的修剪，指定0以仅当像素与您在图像角部选择的颜色完全匹配时，才裁剪像素。接近1的数字允许更多颜色差异。<br>对于基于透明度的裁切，请指定0，以仅在像素是透明的情况下裁剪像素。接近1的数字使透明度更高。</li></ul><br>请注意，这些裁剪选项是无损的。 |
 |  | 颜色配置文件选项 | 在创建用于交付的优化文件时，选择颜色转换：<ul><li>默认颜色保留：当图像包含色彩空间信息时，保持源图像的色彩；没有颜色转换。 如今，几乎所有图像都已嵌入相应的颜色配置文件。 但是，如果CMYK源图像不包含嵌入的颜色配置文件，则颜色将转换为sRGB（标准红绿蓝）颜色空间。 sRGB是在网页上显示图像的推荐颜色空间。</li><li>保留原始色彩空间：保留原始颜色，点上不进行任何颜色转换。 对于没有嵌入颜色配置文件的图像，可使用“发布”设置中配置的默认颜色配置文件完成任何颜色转换。 颜色配置文件可能与使用此选项创建的文件中的颜色不一致。 因此，我们鼓励您使用默认颜色保留选项。</li><li>自定义从>自定义至<br>打开菜单，以便您选择“从中转换”和“转换为色彩空间”。 此高级选项将覆盖嵌入到源文件中的任何颜色信息。 如果您提交的所有图像都包含不正确或缺少的颜色配置文件数据，请选择此选项。</li></ul> |
 |  | 图像编辑选项 | 您可以在图像中保留剪贴蒙版，并选择颜色配置文件。<br> 请参 [阅在上传时设置图像编辑选项](#setting-image-editing-options-at-upload)。 |
@@ -224,7 +224,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上传
 |---|---|---|
 | 正在处理 |  | 选择&#x200B;**[!UICONTROL 光栅化]**&#x200B;以将文件中的矢量图形转换为位图格式。 |
 | 在渲染的图像中维护透明背景 |  | 保持文件的背景透明度。 |
-| 分辨率 |  | 确定分辨率设置。 此设置确定文件中每英寸显示的像素数。 |
+| 解决方法 |  | 确定分辨率设置。 此设置确定文件中每英寸显示的像素数。 |
 | 色彩空间 |  | 选择“色彩空间”菜单，然后从以下色彩空间选项中进行选择： |
 |  | 自动检测 | 保留文件的色彩空间。 |
 |  | 强制为RGB | 转换为RGB色彩空间。 |
@@ -248,7 +248,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 | 维护图层 |  | 将PSD中的图层（如果有）拆分为单个资产。 资产层仍与PSD关联。 可通过在“详细信息”视图中打开PSD文件并选择图层面板来查看它们。 |
 | 创建模板 |  | 从PSD文件中的层创建模板。 |
 | 提取文本 |  | 提取文本，以便用户在查看器中搜索文本。 |
-| 将图层扩展到背景大小 |  | 将撕裂图像层的大小扩展到背景层的大小。 |
+| 将图层扩展至背景大小 |  | 将撕裂图像层的大小扩展到背景层的大小。 |
 | 层命名 |  | PSD文件中的图层将作为单独的图像上传。 |
 |  | 层名称 | 在PSD文件中将图像命名为图层名称之后的图像。 例如，原始PSD文件中名为“价格标签”的图层将变为名为“价格标签”的图像。 但是，如果PSD文件中的层名称是默认的Photoshop层名称（背景、层1、层2等），则图像的命名将以PSD文件中的层编号而不是默认层名称来命名。 |
 |  | Photoshop和层号 | 在PSD文件中将图像命名为图层编号之后的图像，而忽略原始图层名称。 图像以Photoshop文件名和附加的图层编号命名。 例如，名为Spring Ad.psd的文件的第二层名为Spring Ad_2，即使它在Photoshop中具有非默认名称。 |
@@ -271,12 +271,12 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 | 提取 | 搜索词 | 从PDF文件中提取单词，以便在eCatalog查看器中按关键字搜索文件。 |
 |  | 链接 | 从PDF文件中提取链接，并将其转换为在eCatalog查看器中使用的图像映射。 |
 | 从多页面PDF自动生成eCatalog |  | 自动从PDF文件创建eCatalog。 eCatalog以您上传的PDF文件命名。 （仅当您在上传PDF文件时栅格化该文件时，此选项才可用。） |
-| 分辨率 |  | 确定分辨率设置。 此设置确定PDF文件中每英寸显示的像素数。 默认为 150。 |
+| 解决方法 |  | 确定分辨率设置。 此设置确定PDF文件中每英寸显示的像素数。 默认为 150。 |
 | 色彩空间 |  | 选择“色彩空间”菜单，然后为PDF文件选择色彩空间。 大多数PDF文件都具有RGB和CMYK彩色图像。 RGB色彩空间是联机查看的首选方式。 |
 |  | 自动检测 | 保留PDF文件的色彩空间。 |
-|  | 强制为RGB | 转换为RGB色彩空间。 |
-|  | 强制为CMYK | 转换为CMYK色彩空间。 |
-|  | 强制作为灰度 | 转换为灰度色彩空间。 |
+|  | 强制渲染为 RGB | 转换为RGB色彩空间。 |
+|  | 强制渲染为 CMYK | 转换为CMYK色彩空间。 |
+|  | 强制渲染为灰度 | 转换为灰度色彩空间。 |
 
 #### 设置eVideo上传选项 {#setting-evideo-upload-options}
 
@@ -298,17 +298,17 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 ### 流式上传 {#streamed-uploads}
 
-如果您上传大量资产，则对AEM服务器的I/O调用会急剧增加，这会降低上传效率，甚至会导致其超时。 AEM Assets支持流式上传资产。 流式上传在上传操作期间减少了磁盘I/O，方法是在将磁盘复制到存储库之前，避免将资产存储在服务器上的临时文件夹中。 相反，数据会直接传输到存储库。 这样，上传大型资产的时间和超时的可能性就会减少。 流式上传默认在AEM Assets中启用。
+如果您上传大量资产，对[!DNL Experience Manager]服务器的I/O调用会急剧增加，这会降低上传效率，甚至会导致其超时。 [!DNL Experience Manager] 资产支持流式上传资产。流式上传在上传操作期间减少了磁盘I/O，方法是在将磁盘复制到存储库之前，避免将资产存储在服务器上的临时文件夹中。 相反，数据会直接传输到存储库。 这样，上传大型资产的时间和超时的可能性就会减少。 默认情况下，在[!DNL Experience Manager]资产中启用流式上传。
 
-对于在JEE服务器上运行的AEM，如果Servlet-api版本低于3.1，则将禁用流上传。
+对于在Servlet-api版本小于3.1的JEE服务器上运行的[!DNL Experience Manager]，将禁用流上传。
 
 ### 提取包含资产的ZIP存档 {#extract-zip-archive-containing-assets}
 
-您可以像上传任何其他受支持的资产一样上传ZIP存档。 相同的文件名规则适用于ZIP文件。 AEM允许您将ZIP存档提取到DAM位置。
+您可以像上传任何其他受支持的资产一样上传ZIP存档。 相同的文件名规则适用于ZIP文件。 [!DNL Experience Manager] 用于将ZIP存档提取到DAM位置。
 
 一次选择一个ZIP存档，单击&#x200B;**[!UICONTROL 提取存档]**，然后选择目标文件夹。 选择一个选项以处理冲突（如果有）。 如果目标文件夹中已存在ZIP文件中的资产，则可以选择以下选项之一：跳过提取、替换现有文件、重命名以保留两个资产或创建新版本。
 
-提取完成后，AEM会在通知区域通知您。 在AEM提取邮政编码时，您可以在不中断提取的情况下返回工作。
+提取完成后，[!DNL Experience Manager]会在通知区域通知您。 在[!DNL Experience Manager]提取ZIP时，您可以返回工作，而不中断提取。
 
 ![ZIP提取通知](assets/zip_extract_notification.png)
 
@@ -413,7 +413,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
    >[!NOTE]
    >
-   >如果您在同一位置复制资产，AEM 会自动生成该名称的变体。例如，如果您复制的资产名为“Square”，AEM 会自动为其副本生成名称“Square1”。
+   >如果您在同一位置复制资产，[!DNL Experience Manager]会自动生成该名称的变体。 例如，如果复制名为“Square”的资产，[!DNL Experience Manager]会自动为其副本生成标题Square1。
 
 1. 点按工具栏中的&#x200B;**[!UICONTROL 粘贴]**&#x200B;资产图标：
 
@@ -500,7 +500,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
    >[!NOTE]
    >
-   >默认情况下，AEM Assets不会在预览模式下显示资产的原始演绎版。 如果您是管理员，则可以使用叠加图来配置AEM Assets，以便在预览模式下显示原始演绎版。
+   >默认情况下， [!DNL Experience Manager]资产在预览模式下不显示资产的原始演绎版。 如果您是管理员，则可以使用叠加来配置[!DNL Experience Manager]资产，以在预览模式下显示原始演绎版。
 
 1. 选择一个演绎版以进行查看或删除。
 
@@ -520,7 +520,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
    >
    >如果从&#x200B;**[!UICONTROL “演绎版”]**&#x200B;面板选择演绎版，则工具栏更改上下文并仅显示与该演绎版相关的那些操作。未显示选项，如&#x200B;**[!UICONTROL 上传演绎版]**&#x200B;图标。 要在工具栏中查看这些选项，请导航到资产的详细信息页面。
 
-   您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的维度。 根据您指定的维度，AEM Assets会显示具有精确或最接近维度的演绎版。
+   您可以配置要在图像或视频资产的详细信息页面中显示的演绎版的维度。 根据您指定的维度， [!DNL Experience Manager]资产会显示具有精确或最接近维度的演绎版。
 
    要在资产详细信息级别配置图像的演绎版尺寸，请叠加&#x200B;**[!UICONTROL renditionpicker]**&#x200B;节点`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`并配置width属性的值。 配置属性&#x200B;**[!UICONTROL 大小（长）(以 KB 计）]**&#x200B;代替宽度，以根据图像大小在资源详细信息页面上自定义演绎版。对于基于大小的自定义，如果匹配的再现的大小大于原始再现，则属性&#x200B;**[!UICONTROL preferOriginal]**&#x200B;会为原始再现分配首选项。
 
@@ -615,10 +615,10 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
    ![login_page](assets/login_page.png)
 
-   如果未指定登录页面的路径，则AEM会在发布实例中显示默认的登录页面。
+   如果未指定登录页面的路径，[!DNL Experience Manager]将显示发布实例中的默认登录页面。
 
 1. 发布文件夹，然后尝试从发布实例访问该文件夹。 将显示登录屏幕。
-1. 如果您是CUG成员，请输入您的安全凭据。 在AEM对您进行身份验证后，文件夹即会显示。
+1. 如果您是CUG成员，请输入您的安全凭据。 在[!DNL Experience Manager]验证您身份后，文件夹即会显示。
 
 ## 搜索资产 {#searching-assets}
 
@@ -628,7 +628,7 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 对于最近上传的资产，在Omnisearch框中键入内容时显示的建议列表中不会立即显示其元数据（包括标题、标记等）。
 
-这是因为AEM Assets会等到超时时间段（默认为1小时）到期，然后运行后台作业来为所有新上传/更新的资产的元数据编制索引，并将其添加到建议列表中。
+这是因为[!DNL Experience Manager]资产会等待超时期（默认为1小时）到期，然后再运行后台作业来索引所有新上传/更新资产的元数据，并将其添加到建议列表中。
 
 ## 使用快速操作 {#quick-actions}
 
@@ -655,7 +655,7 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 ## 编辑图像 {#editing-images}
 
-利用AEM Assets界面中的编辑工具，可对图像资产执行小型编辑作业。 您可以裁剪、旋转、翻转和对图像执行其他编辑作业。 您还可以将图像映射添加到资产。
+[!DNL Experience Manager]资产界面中的编辑工具允许您对图像资产执行小型编辑作业。 您可以裁剪、旋转、翻转和对图像执行其他编辑作业。 您还可以将图像映射添加到资产。
 
 以下格式的文件支持图像编辑功能：
 
@@ -715,7 +715,7 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 在[收藏集控制台](managing-collections-touch-ui.md#navigating-the-collections-console)中， **[!UICONTROL 显示所有]**&#x200B;列表提供了仅查看注释和工作流的选项。 此外，时间轴仅对控制台中列出的顶级收藏集显示。 如果您在任何收藏集中导航，则不会显示该收藏集。
 
-**** 时间轴包含特 [定于内容片段的多个选项](content-fragments-managing.md#timeline-for-content-fragments);此功能需 [要AEM 6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md) 或更高版本。
+**** 时间轴包含特 [定于内容片段的多个选项](content-fragments-managing.md#timeline-for-content-fragments);此功能需 [[!DNL Experience Manager] 要安装6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md) 或更高版本。
 
 **要使用时间轴**，请执行以下操作：
 
@@ -732,9 +732,9 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 注释是指添加到图像或视频的评论或解释性说明。通过注释，营销人员能够协作并提供有关资产的反馈。
 
-视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。AEM Assets支持的视频格式取决于浏览器。
+视频注释功能仅在提供 HTML5 兼容视频格式的浏览器上受支持。[!DNL Experience Manager]资产支持的视频格式取决于浏览器。
 
-对于内容片段，在编辑器](content-fragments-variations.md#annotating-a-content-fragment)中创建[注释；此功能需要[AEM 6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md)或更高版本。
+对于内容片段，在编辑器](content-fragments-variations.md#annotating-a-content-fragment)中创建[注释；此功能需要[[!DNL Experience Manager] 6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md)或更高版本。
 
 在保存注释之前，您可以添加多个注释。
 
@@ -769,7 +769,7 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 1. 点按&#x200B;**[!UICONTROL 关闭]**&#x200B;以退出&#x200B;**[!UICONTROL 注释]**&#x200B;模式。
-1. 要查看通知，请使用Aaron MacDonald的凭据登录AEM Assets，然后点按&#x200B;**[!UICONTROL Notifications]**&#x200B;图标以查看通知。
+1. 要查看通知，请使用Aaron MacDonald的凭据登录到[!DNL Experience Manager]资产，然后点按&#x200B;**[!UICONTROL 通知]**&#x200B;图标以查看通知。
 
 1. 要选择不同的颜色以便区分不同的用户，请点按&#x200B;**[!UICONTROL 配置文件]**&#x200B;图标，然后点按&#x200B;**[!UICONTROL 我的首选项]**。
 
@@ -861,12 +861,12 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
    返回到渲染的PDF文件并刷新它。 刷新后的PDF将反映您所做的更改。
 
-**要以外语打印批注**:如果资产包含外语（特别是非拉丁语言）的批注，则必须首先在AEM服务器上配置CQ-DAM-Handler-Gibson字体管理器服务，才能打印这些批注。在配置CQ-DAM-Handler-Gibson字体管理器服务时，请提供所需语言字体所在的路径。
+**要以外语打印批注**:如果资产包含外语（特别是非拉丁语）的批注，则必须首先在服务器上配置CQ-DAM-Handler-Gibson字体管理器服务， [!DNL Experience Manager] 才能打印这些批注。在配置CQ-DAM-Handler-Gibson字体管理器服务时，请提供所需语言字体所在的路径。
 
 1. 从URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl)中打开&#x200B;**[!UICONTROL CQ-DAM-Handler-Gibson字体管理器服务]**&#x200B;配置页。
 1. 要配置&#x200B;**[!UICONTROL CQ-DAM-Handler-Gibson字体管理器服务]**，请执行下列操作之一：
 
-   * 在&#x200B;**[!UICONTROL System Fonts]**&#x200B;目录选项中，指定系统上字体目录的完整路径。 例如，如果您是Mac用户，则可以在&#x200B;**[!UICONTROL System Fonts]**&#x200B;目录选项中将路径指定为`/Library/Fonts`。 AEM从此目录中获取字体。
+   * 在&#x200B;**[!UICONTROL System Fonts]**&#x200B;目录选项中，指定系统上字体目录的完整路径。 例如，如果您是Mac用户，则可以在&#x200B;**[!UICONTROL System Fonts]**&#x200B;目录选项中将路径指定为`/Library/Fonts`。 [!DNL Experience Manager] 从此目录中获取字体。
    * 在&#x200B;**[!UICONTROL crx-quickstart]**&#x200B;文件夹内创建名为&#x200B;**fonts**&#x200B;的目录。 **[!UICONTROL CQ-DAM-Handler-Gibson字体管理器服]** 务会自动获取位置的字体 `crx-quickstart/fonts`。您可以从&#x200B;**[!UICONTROL Adobe服务器字体]**&#x200B;目录选项中覆盖此默认路径。
    * 为系统中的字体创建新文件夹，并将所需的字体存储在该文件夹中。 然后，在&#x200B;**[!UICONTROL Customer Fonts]**&#x200B;目录选项中指定该文件夹的完整路径。
 
@@ -875,9 +875,9 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
    * 在font-family选项中包含字符串`<font_family_name_of_custom_font, sans-serif>`。 例如，如果要在CJK（中文、日文和韩文）中打印注释，请在字体系列选项中包含字符串`Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`。 如果要在印地语中打印注释，请下载相应的字体，并将字体系列配置为Arial Unicode MS、Noto Sans、Noto Sans CJK JP、Noto Sans Devanagari、san-serif。
 
-1. 重新启动AEM实例。
+1. 重新启动[!DNL Experience Manager]实例。
 
-以下是如何配置AEM以在CJK（中文、日语和韩语）中打印注释的示例：
+以下是如何配置[!DNL Experience Manager]以在CJK（中文、日文和韩文）中打印注释的示例：
 
 1. 从以下链接下载Google Noto CJK字体，并将其存储在“字体管理器”服务中配置的字体目录中。
 
@@ -894,9 +894,9 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 以下是创建版本的情景：
 
-* 您可以在其他应用程序中修改图像并上传到AEM Assets。 将创建图像的某个版本，以便不会覆盖原始图像。
+* 您可以在其他应用程序中修改图像，并上传到[!DNL Experience Manager]资产。 将创建图像的某个版本，以便不会覆盖原始图像。
 * 您可以编辑资产的元数据。
-* 您可以使用AEM桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建一个新版本。
+* 您使用[!DNL Experience Manager]桌面应用程序签出现有资产并保存更改。 每次保存资产时，都会创建一个新版本。
 
 您还可以通过工作流启用自动版本控制。 为资产创建版本时，元数据和演绎版会与该版本一起保存。 演绎版是相同图像的替代呈现形式，例如上传的JPEG文件的PNG演绎版。
 
@@ -952,7 +952,7 @@ CUG是一种限制对资产访问的额外方式。 您还可以为文件夹配�
 
 ### 在资产上启动工作流 {#starting-a-workflow-on-an-asset}
 
-请参阅[将工作流应用到AEM资产](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)。
+请参阅[将工作流应用到 [!DNL Experience Manager] 资产](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)。
 
 ## 关于收藏集 {#collections}
 

@@ -2,13 +2,13 @@
 title: 元数据架构参考
 description: '了解描述资产元数据的标准惯例，包括都柏林核心、IPTC和其他元数据架构。 '
 contentOwner: AG
-feature: 元数据
+feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 88%
+source-wordcount: '392'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 88%
 
 ## 都柏林核心 {#dublin-core}
 
-都柏林核心元数据提供了一个用于描述资产的标准化惯例集，可使资产更易于查找。在AEM Assets中，都柏林核心可描述数字资产，包括视频、声音、图像和文档。
+都柏林核心元数据提供了一个用于描述资产的标准化惯例集，可使资产更易于查找。在[!DNL Experience Manager]资产中，都柏林核心可描述数字资产，包括视频、声音、图像和文档。
 
 都柏林核心元数据元素集 (DCMES) 很简单，共包含 15 个元数据元素，如下表所示。每个都柏林核心元素都是可选元素，并且可以重复。您可以视需要为特定于媒体类型的元数据添加或删除都柏林核心元数据信息。
 
@@ -31,7 +31,7 @@ ht-degree: 88%
 | creator | 负责创建内容的个人或公司。 |
 | date | 与资产关联的日期或时间段。 |
 | 描述 | 关于资产的详细信息。 |
-| format | 资产的文件格式、物理介质或尺寸。AEM使用dc:format表示资产的mime类型。 |
+| format | 资产的文件格式、物理介质或尺寸。[!DNL Experience Manager] 使用 dc:format 表示资产的 mime 类型。 |
 | 标识符 | 资产的唯一参考。 |
 | 语言 | 资产的语言（例如，en 表示英语）。 |
 | publisher | 负责使资产进入可用状态的个人或公司。 |

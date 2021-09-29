@@ -1,8 +1,8 @@
 ---
 title: 在网页上嵌入Dynamic Media视频或图像查看器
-seo-title: 在网页上嵌入Dynamic Media视频或图像查看器
+seo-title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: 了解如何在网页上嵌入Dynamic Media视频或图像
-seo-description: 了解如何在网页上嵌入Dynamic Media视频或图像
+seo-description: Learn how to embed Dynamic media video or images on a web page
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: 组件
+feature: Components
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 28%
+source-wordcount: '367'
+ht-degree: 30%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 28%
 
 当您想 **[!UICONTROL 要播放视频或查看嵌入到网页中的资产时]** ，请使用嵌入代码功能。 将嵌入代码复制到剪贴板，以便将其粘贴到网页中。 不允许在“嵌入代码”对 **[!UICONTROL 话框中编辑代码]** 。
 
-仅当&#x200B;_未_&#x200B;使用AEM作为WCM时，才嵌入URL。 如果您使用AEM作为WCM，请[直接在页面上添加资产。](adding-dynamic-media-assets-to-pages.md)
+仅当&#x200B;_未_&#x200B;使用[!DNL Experience Manager]作为WCM时，才嵌入URL。 如果您使用[!DNL Experience Manager]作为WCM，则[可以直接在页面上添加资产。](adding-dynamic-media-assets-to-pages.md)
 
 请参阅[将URL关联到您的Web应用程序。](linking-urls-to-yourwebapplication.md)
 

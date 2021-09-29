@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Developer Tools
 role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '691'
 ht-degree: 13%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 13%
 
 [创建和配置资产编辑器页面](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)中介绍了使用预定义编辑组件配置编辑器的相关内容。
 
-除了使用预先存在的编辑器组件外，Adobe Experience Manager(AEM)开发人员还可以创建他们自己的组件。
+除了使用预先存在的编辑器组件之外，Adobe Experience Manager开发人员还可以创建他们自己的组件。
 
 ## 创建资产编辑器模板 {#creating-an-asset-editor-template}
 
@@ -30,9 +30,9 @@ geometrixx中包含以下示例页面：
 
 ### 配置Clientlib {#configuring-clientlib}
 
-AEM Assets组件使用WCM edit clientlib的扩展。 clientlib通常在`init.jsp`中加载。
+[!DNL Experience Manager Assets] 组件使用WCM edit clientlib的扩展。clientlib通常在`init.jsp`中加载。
 
-与默认的clientlib加载（在核心的`init.jsp`中）相比，AEM Assets模板必须具有以下内容：
+与默认的clientlib加载（在核心的`init.jsp`中）相比，[!DNL Assets]模板必须具有以下内容：
 
 * 模板必须包含`cq.dam.edit` clientlib（而不是`cq.wcm.edit`）。
 
@@ -42,7 +42,7 @@ AEM Assets组件使用WCM edit clientlib的扩展。 clientlib通常在`init.jsp
 
 ### 配置JS操作 {#configuring-js-actions}
 
-某些AEM Assets组件需要在`component.js`中定义的JS函数。 将此文件复制到组件目录并链接它。
+某些[!DNL Assets]组件需要在`component.js`中定义的JS函数。 将此文件复制到组件目录并链接它。
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -52,7 +52,7 @@ AEM Assets组件使用WCM edit clientlib的扩展。 clientlib通常在`init.jsp
 
 ### 其他样式表 {#additional-style-sheets}
 
-某些AEM Assets组件使用AEM小组件库。 要在内容上下文中正确呈现，必须加载其他样式表。 标记操作组件需要再一个。
+某些[!DNL Assets]组件使用[!DNL Experience Manager]小组件库。 要在内容上下文中正确呈现，必须加载其他样式表。 标记操作组件需要再一个。
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">

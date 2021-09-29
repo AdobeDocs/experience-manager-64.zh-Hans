@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
-feature: 智能标记，标记，搜索
+feature: Smart Tags,Tagging,Search
 role: User
 exl-id: 05f43e43-ac72-4ab1-a373-687c137d2bed
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '456'
 ht-degree: 2%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 2%
 1. 单击／点按 **[!UICONTROL 保存]**，然后单击／点按确 **[!UICONTROL 定]** ，关闭成功对话框。
 1. 导航到图像的属性页面。 请注意，为您提升的标记分配了高相关性，因此，在搜索结果中显示的较高。
 
-## 了解包含智能标记的AEM搜索结果 {#understand-search-results-with-smart-tags}
+## 了解带有智能标记的[!DNL Experience Manager]搜索结果 {#understand-search-results-with-smart-tags}
 
-默认情况下，AEM搜索会将搜索词与`AND`子句组合在一起。 使用智能标记不会更改此默认行为。 使用智能标记可添加额外的`OR`子句，以查找应用智能标记中的任何搜索词。 例如，请考虑搜索`woman running`。 默认情况下，元数据中仅具有`woman`或仅具有`running`关键字的资产不会显示在搜索结果中。 但是，此类搜索查询中会显示使用智能标记标记为`woman`或`running`的资产。 所以搜索结果是，
+默认情况下，[!DNL Experience Manager]搜索将搜索词与`AND`子句组合在一起。 使用智能标记不会更改此默认行为。 使用智能标记可添加额外的`OR`子句，以查找应用智能标记中的任何搜索词。 例如，请考虑搜索`woman running`。 默认情况下，元数据中仅具有`woman`或仅具有`running`关键字的资产不会显示在搜索结果中。 但是，此类搜索查询中会显示使用智能标记标记为`woman`或`running`的资产。 所以搜索结果是，
 
 * 元数据中同时具有`woman`和`running`关键字的资产。
 * 使用任一关键字标记的资产智能。

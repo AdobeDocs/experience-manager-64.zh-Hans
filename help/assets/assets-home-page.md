@@ -1,26 +1,26 @@
 ---
-title: AEM Assets主页体验
-description: 将AEM Assets主页个性化，以提供丰富的欢迎屏幕体验，包括有关资产近期活动的快照。
+title: '[!DNL Experience Manager Assets] 主页体验'
+description: 个性化资产主页，以获得丰富的欢迎屏幕体验，包括有关资产近期活动的快照。
 contentOwner: AG
-feature: 开发人员工具，资产管理
+feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '557'
 ht-degree: 1%
 
 ---
 
-# AEM Assets主页体验 {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] 主页体验 {#aem-assets-home-page-experience}
 
-将AEM Assets主页个性化，以提供丰富的欢迎屏幕体验，包括有关资产近期活动的快照。
+将[!DNL Experience Manager Assets]主页个性化，以获得丰富的欢迎屏幕体验，包括有关资产近期活动的快照。
 
-Adobe Experience Manager(AEM)资产主页提供了丰富且个性化的欢迎屏幕体验，其中包括最近查看或上传的资产等活动的快照。
+[!DNL Adobe Experience Manager Assets]主页提供了丰富且个性化的欢迎屏幕体验，其中包括最近查看或上传的资产等活动的快照。
 
 默认情况下，资产主页处于禁用状态。 要启用此功能，请执行以下步骤：
 
-1. 要访问AEM Configuration Manager，请单击&#x200B;**[!UICONTROL 工具>操作> Web控制台]**。
+1. 要访问[!DNL Experience Manager]配置管理器，请单击&#x200B;**[!UICONTROL 工具>操作> Web控制台]**。
 1. 打开&#x200B;**Day CQ DAM事件记录器**&#x200B;服务。
 1. 选择&#x200B;**[!UICONTROL 启用此服务]**&#x200B;以启用活动记录。
 
@@ -70,7 +70,7 @@ Adobe Experience Manager(AEM)资产主页提供了丰富且个性化的欢迎屏
 
 **最近**:此部 **分** 下的“最近查看”小组件显示登录用户最近访问的实体，包括文件夹、收藏集和项目。
 
-**发现**:此部 **** 分下的新小组件显示最近上传到AEM Assets实例的资产和演绎版。
+**发现**:此部 **** 分下的新小组件会显示最近上传到实例的资产和演 [!DNL Assets] 绎版。
 
 要启用清除用户活动数据的功能，请从配置管理器中启用&#x200B;**DAM事件清除服务**。 启用此服务后，系统将删除超过指定数量的登录用户活动。
 
@@ -78,7 +78,7 @@ Adobe Experience Manager(AEM)资产主页提供了丰富且个性化的欢迎屏
 
 >[!NOTE]
 >
->启用Day CQ DAM事件记录器和DAM事件清除服务可增加对JCR的写入操作和搜索索引，这会显着增加AEM服务器上的负载。 AEM服务器上的额外负载可能会影响其性能。
+>启用Day CQ DAM事件记录器和DAM事件清除服务可增加对JCR的写入操作和搜索索引，这会显着增加[!DNL Experience Manager]服务器上的负载。 [!DNL Experience Manager]服务器上的额外负载可能会影响其性能。
 
 >[!CAUTION]
 >

@@ -1,20 +1,20 @@
 ---
 title: 资产文件格式最佳实践
-description: 有关AEM Assets中文件支持的最佳实践。
+description: ' [!DNL Experience Manager] Assets中文件支持的最佳实践。'
 contentOwner: AG
-feature: 资产管理，开发人员工具
+feature: Asset Management,Developer Tools
 role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
 
 # 资产文件格式最佳实践 {#assets-file-format-best-practices}
 
-AEM Assets支持许多专有和第三方文件格式库，以满足用户的各种文件支持要求。 支持的Adobe库包括Adobe Camera Raw、Gibson、Adobe PDF Rasterizer和Adobe InDesign Server。 此外，AEM Assets还支持第三方库，包括ImageMagick、TwelveMones等。
+[!DNL Experience Manager Assets] 支持许多专有和第三方文件格式库，以满足用户的各种文件支持要求。支持的Adobe库包括Adobe Camera Raw、Gibson、Adobe PDF Rasterizer和Adobe InDesign Server。 此外，[!DNL Assets]还支持第三方库，包括ImageMagick、TwelveMones等。
 
 有关支持的文件格式，请参阅[资产支持的格式](assets-formats.md)。
 
@@ -27,7 +27,7 @@ AEM Assets支持许多专有和第三方文件格式库，以满足用户的各�
 
 Adobe Camera Raw库支持将CMYK颜色配置文件作为输入。 但是，它以RGB色彩空间生成输出，并且仅支持JPEG格式的输出。 缩略图中不保留源文件色彩空间（例如CMYK）。
 
-有关更多信息，请参阅AEM Assets中的[Camera Raw支持](camera-raw.md)。
+有关更多信息，请参阅[!DNL Assets]中的[Camera Raw支持](camera-raw.md)。
 
 ## Adobe PDF光栅器库 {#adobe-pdf-rasterizer-library}
 
@@ -41,7 +41,7 @@ Adobe Camera Raw库支持将CMYK颜色配置文件作为输入。 但是，它�
 
 ## Adobe InDesign服务器 {#adobe-indesign-cc-server}
 
-Adobe建议您使用Adobe InDesign服务器提取特定于Adobe InDesign的呈现版本，如IDML和HTML。 有关更多信息，请参阅[将AEM资产添加为Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)中的引用。
+Adobe建议您使用Adobe InDesign服务器提取特定于Adobe InDesign的呈现版本，如IDML和HTML。 有关更多信息，请参阅[将 [!DNL Experience Manager] 资产添加为Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)中的引用。
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -58,7 +58,7 @@ Adobe建议在以下情况下使用ImageMagick库：
 * 保持透明度
 * 处理PSD和PSB文件
 
-要了解如何在AEM中设置ImageMagic库，请参阅[使用ImageMagick](media-handlers.md#an-example-using-imagemagick)。 有关最佳用法，请参阅[配置ImageMagick](best-practices-for-imagemagick.md)的最佳实践。
+要了解如何在[!DNL Experience Manager]中设置ImageMagic库，请参阅[使用ImageMagick](media-handlers.md#an-example-using-imagemagick)。 有关最佳用法，请参阅[配置ImageMagick](best-practices-for-imagemagick.md)的最佳实践。
 
 ## 图像转码库 {#image-transcoding-library}
 

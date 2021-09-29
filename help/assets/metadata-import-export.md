@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 9%
 
 ---
 
 # 批量元数据导入和导出 {#bulk-metadata-import-and-export}
 
-AEM Assets允许您使用CSV文件批量导入资产元数据。 您可以通过导入CSV文件，对最近上传的资产或现有资产进行批量更新。 您还可以以CSV格式从第三方系统批量摄取资产元数据。
+[!DNL Experience Manager] 资产允许您使用CSV文件批量导入资产元数据。您可以通过导入CSV文件，对最近上传的资产或现有资产进行批量更新。 您还可以以CSV格式从第三方系统批量摄取资产元数据。
 
 ## 导入元数据 {#import-metadata}
 
@@ -56,7 +56,7 @@ AEM Assets允许您使用CSV文件批量导入资产元数据。 您可以通过
 * 测试或审核元数据以确保合规性。
 * 将元数据外部化以实现单独的本地化。
 
-您可以以CSV格式导出多个资产的元数据。 元数据是异步导出的，不会影响系统性能。 要导出元数据，AEM会遍历资产节点`jcr:content/metadata`及其子节点的属性，并将元数据属性导出为CSV文件。
+您可以以CSV格式导出多个资产的元数据。 元数据是异步导出的，不会影响系统性能。 要导出元数据，[!DNL Experience Manager]会遍历资产节点`jcr:content/metadata`及其子节点的属性，并在CSV文件中导出元数据属性。
 
 要批量导出多个资产的元数据，请执行以下步骤：
 

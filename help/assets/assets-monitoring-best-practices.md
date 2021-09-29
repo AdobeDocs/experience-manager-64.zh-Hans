@@ -1,20 +1,20 @@
 ---
 title: Assets 监控最佳实践
-description: 部署AEM实例后监控其环境和性能的最佳实践。
+description: 部署 [!DNL Experience Manager] 实例后监控其环境和性能的最佳实践。
 contentOwner: AG
-feature: 资产管理
+feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: 4048c4c76a892e3bb32dbbeef140b5dc9ebffad3
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1745'
 ht-degree: 0%
 
 ---
 
 # Assets 监控最佳实践 {#assets-monitoring-best-practices}
 
-从Adobe Experience Manager(AEM)Assets的角度来看，监测应包括观察和报告以下流程和技术：
+从Adobe Experience Manager资产的角度来看，监测应包括观察和报告以下流程和技术：
 
 * 系统CPU
 * 系统内存使用
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 * OSGi控制台运行状况检查
 
-通常，AEM Assets可以通过两种方式进行监控：实时监控和长期监控。
+通常，可通过两种方式监控[!DNL Assets]：实时监控和长期监控。
 
 ## 实时监控 {#live-monitoring}
 
@@ -42,10 +42,10 @@ ht-degree: 0%
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/):Iftop显示有关以太网/网络使用的详细信息。Iftop显示使用以太网的实体的每个通信通道统计信息以及它们使用的带宽量。 Iftop可以在大多数使用`yum install iftop`或`apt-get install iftop`的Linux系统上安装。
 
 * Java飞行记录器(JFR):oracle中的商业工具，您可以在非生产环境中自由使用。 有关更多详细信息，请参阅[如何使用Java飞行记录器诊断CQ运行时问题](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)。
-* AEM error.log文件：您可以调查AEM error.log文件，以获取系统中记录的错误的详细信息。 使用命令`tail -F quickstart/logs/error.log`来识别您应该调查的错误。
+* [!DNL Experience Manager] error.log文件：您可以调查error. [!DNL Experience Manager] log文件，以了解系统中记录的错误的详细信息。使用命令`tail -F quickstart/logs/error.log`来识别您应该调查的错误。
 * [工作流控制台](../sites-administering/workflows.md):利用工作流控制台监控滞后或卡住的工作流。
 
-通常，您会结合使用这些工具来全面了解AEM实例的性能。
+通常，您会结合使用这些工具来全面了解[!DNL Experience Manager]实例的性能。
 
 >[!NOTE]
 >
@@ -55,11 +55,11 @@ ht-degree: 0%
 
 ## 长期监测 {#long-term-monitoring}
 
-对AEM实例的长期监控包括对实时监控的相同部分进行较长时间的监控。 它还包括定义特定于您的环境的警报。
+对[!DNL Experience Manager]实例的长期监控涉及对实时监控的相同部分进行较长时间的监控。 它还包括定义特定于您的环境的警报。
 
 ### 日志聚合和报告 {#log-aggregation-and-reporting}
 
-有几种可用于聚合日志的工具，例如Splunk(TM)和Elastic Search/Logstash/Kabana(ELK)。 要评估AEM实例的正常运行时间，您务必要了解特定于您系统的日志事件并基于这些事件创建警报。 了解您的开发和操作实践有助于您更好地了解如何调整日志聚合过程以生成关键警报。
+有几种可用于聚合日志的工具，例如Splunk(TM)和Elastic Search/Logstash/Kabana(ELK)。 要评估[!DNL Experience Manager]实例的正常运行时间，您务必要了解特定于系统的日志事件并基于这些事件创建警报。 了解您的开发和操作实践有助于您更好地了解如何调整日志聚合过程以生成关键警报。
 
 ### 环境监控 {#environment-monitoring}
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 #### 内部应用程序监控 {#internal-application-monitoring}
 
-内部应用程序监控包括监控构成AEM堆栈的应用程序组件（包括JVM、内容存储库），以及通过在平台上构建的自定义应用程序代码进行监控。 通常，它通过JMX Mbeans执行，而JMX Mbeans可以由许多常用的监控解决方案(如SolarWinds(TM)、 HP OpenView(TM)、Hyperic(TM)、Zabbix(TM)等)直接监控。 对于不支持直接连接到JMX的系统，您可以编写shell脚本以提取JMX数据，并以它们本身理解的格式将其公开给这些系统。
+内部应用程序监控包括监控构成[!DNL Experience Manager]堆栈的应用程序组件，包括JVM、内容存储库，以及通过平台上构建的自定义应用程序代码进行监控。 通常，它通过JMX Mbeans执行，而JMX Mbeans可以由许多常用的监控解决方案(如SolarWinds(TM)、 HP OpenView(TM)、Hyperic(TM)、Zabbix(TM)等)直接监控。 对于不支持直接连接到JMX的系统，您可以编写shell脚本以提取JMX数据，并以它们本身理解的格式将其公开给这些系统。
 
 默认情况下，不启用对JMX Mbean的远程访问。 有关通过JMX进行监控的更多信息，请参阅[使用JMX技术进行监控和管理](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html)。
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 **JVM监控**
 
-与任何基于Java的应用程序堆栈一样，AEM取决于通过基础Java虚拟机提供给它的资源。 您可以通过JVM公开的Platform MXBean来监控其中许多资源的状态。 有关MXBean的更多信息，请参阅[使用平台MBean服务器和平台MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html)。
+与任何基于Java的应用程序堆栈一样， [!DNL Experience Manager]取决于通过底层Java虚拟机提供给它的资源。 您可以通过JVM公开的Platform MXBean来监控其中许多资源的状态。 有关MXBean的更多信息，请参阅[使用平台MBean服务器和平台MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html)。
 
 以下是一些可监控JVM的基线参数：
 
@@ -106,11 +106,11 @@ ht-degree: 0%
 * 警报阈值：当线程数大于基线的150%时。
 * 警报定义：要么存在一个活跃的失控过程，要么低效操作消耗了大量资源。 分析线程转储以得到定义。
 
-**AEM监控**
+**[!DNL Experience Manager]监测**
 
-AEM还通过JMX公开一组统计和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前发现它们。 有关更多信息，请参阅AEM JMX MBean上的[文档](/help/sites-administering/jmx-console.md)。
+[!DNL Experience Manager] 还通过JMX公开一组统计和操作。这些功能有助于评估系统运行状况，并在潜在问题影响用户之前发现它们。 有关更多信息，请参阅[!DNL Experience Manager] JMX MBean上的[文档](/help/sites-administering/jmx-console.md) 。
 
-以下是一些可以监视的基线参数，用于AEM:
+以下是一些可监视[!DNL Experience Manager]的基线参数：
 
 复制代理
 
@@ -187,13 +187,13 @@ AEM还通过JMX公开一组统计和操作。 这些功能有助于评估系统�
 
 ## 常见问题和解决方案  {#common-issues-and-resolutions}
 
-在监控过程中，如果您遇到问题，可以执行以下一些故障诊断任务来解决AEM实例的常见问题：
+在监控过程中，如果您遇到问题，可以执行以下一些故障诊断任务来解决[!DNL Experience Manager]实例的常见问题：
 
 * 如果使用TarMK，请经常运行焦油压缩。 有关更多详细信息，请参阅[维护存储库](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)。
 * 检查`OutOfMemoryError`日志。 有关详细信息，请参阅[分析内存问题](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)。
 * 检查日志中是否有对未索引查询、树遍历或索引遍历的任何引用。 这表示未编入索引的查询或索引不足的查询。 有关优化查询和索引性能的最佳实践，请参阅[查询和索引的最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 * 使用工作流控制台验证工作流是否按预期执行。 如有可能，将多个工作流精简为单个工作流。
 * 重新审视实时监控，并寻找任何特定资源的其他瓶颈或高消费者。
-* 调查来自客户端网络的出口点和指向AEM实例网络（包括调度程序）的入口点。 这些往往是瓶颈领域。 有关更多信息，请参阅[资产网络注意事项](assets-network-considerations.md)。
-* 更新您的AEM服务器的大小。 您的AEM实例可能大小不足。 Adobe客户关怀团队可以帮助您确定您的服务器是否太小。
+* 调查来自客户端网络的出口点和到[!DNL Experience Manager]实例网络（包括调度程序）的入口点。 这些往往是瓶颈领域。 有关更多信息，请参阅[资产网络注意事项](assets-network-considerations.md)。
+* 更新[!DNL Experience Manager]服务器的大小。 您的[!DNL Experience Manager]实例的大小可能不足。 Adobe客户关怀团队可以帮助您确定您的服务器是否太小。
 * 检查`access.log`和`error.log`文件，以查找在出现问题时的条目。 查找可能指示自定义代码异常的模式。 将它们添加到您监视的事件列表。

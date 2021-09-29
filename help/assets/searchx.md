@@ -1,28 +1,28 @@
 ---
 title: 扩展资产搜索
-description: 将AEM Assets的搜索功能扩展到按字符串进行的现成资产搜索之外。
+description: 扩展 [!DNL Experience Manager] 资产的搜索功能，使其不再按字符串进行现成资产搜索。
 contentOwner: AG
-feature: 搜索
+feature: Search
 role: Developer
 exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '820'
 ht-degree: 15%
 
 ---
 
-# 扩展资产搜索{#extending-assets-search}
+# 扩展资产搜索 {#extending-assets-search}
 
-您可以扩展Adobe Experience Manager(AEM)Assets搜索功能。 AEM Assets开箱即用地按字符串搜索资产。
+您可以扩展Adobe Experience Manager Assets搜索功能。 [!DNL Experience Manager]资产会按字符串搜索资产。
 
 通过QueryBuilder界面进行搜索，以便可以使用多个谓词自定义搜索。 您可以在以下目录中叠加默认的谓词集：`/apps/dam/content/search/searchpanel/facets`。
 
-您还可以向AEM Assets管理员面板添加其他选项卡。
+您还可以向[!DNL Experience Manager]资产管理面板添加其他选项卡。
 
 >[!CAUTION]
 >
->自AEM 6.4起，弃用经典UI。 有关公告，请参阅[已弃用和已删除的功能](../release-notes/deprecated-removed-features.md)。 我们鼓励您使用触屏UI。 有关自定义，请参阅[搜索Facet](search-facets.md)。
+>从[!DNL Experience Manager] 6.4开始，弃用经典UI。 有关公告，请参阅[已弃用和已删除的功能](../release-notes/deprecated-removed-features.md)。 我们鼓励您使用触屏UI。 有关自定义，请参阅[搜索Facet](search-facets.md)。
 
 ## 覆盖 {#overlaying}
 
@@ -34,10 +34,9 @@ ht-degree: 15%
 >
 >默认情况下，/ `apps`下的目录结构不存在，需要创建。 确保节点类型与/ `libs`下的节点类型匹配。
 
+## 添加选项卡 {#adding-tabs}
 
-## 添加选项卡{#adding-tabs}
-
-您可以通过在AEM Assets管理员中配置其他搜索选项卡来添加其他搜索选项卡。 要创建其他选项卡，请执行以下操作：
+您可以通过在[!DNL Experience Manager]资产管理员中配置其他搜索选项卡来添加其他搜索选项卡。 要创建其他选项卡，请执行以下操作：
 
 1. 创建文件夹结构`/apps/wcm/core/content/damadmin/tabs,`（如果不存在），然后从`/libs/wcm/core/content/damadmin`复制`tabs`节点并粘贴该节点。
 1. 根据需要创建并配置第二个选项卡。
@@ -46,17 +45,17 @@ ht-degree: 15%
    >
    >创建第二个siteadminsearchpanel时，请务必设置`id`属性以防止表单冲突。
 
-## 创建自定义谓词{#creating-custom-predicates}
+## 创建自定义谓词 {#creating-custom-predicates}
 
-AEM Assets附带一组预定义谓词，可用于自定义资产共享页面。 以这种方式自定义资产共享的相关内容，请参见[创建和配置资产共享页面](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)。
+[!DNL Experience Manager] 资产附带一组预定义谓词，可用于自定义资产共享页面。以这种方式自定义资产共享的相关内容，请参见[创建和配置资产共享页面](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)。
 
-除了使用预先存在的谓词之外，AEM开发人员还可以使用[查询生成器API](/help/sites-developing/querybuilder-api.md)创建自己的谓词。
+除了使用预先存在的谓词之外，[!DNL Experience Manager]开发人员还可以使用[查询生成器API](/help/sites-developing/querybuilder-api.md)创建自己的谓词。
 
 创建自定义谓词需要有关[Widget框架](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)的基本知识。
 
 最佳做法是复制并调整现有谓词。 示例谓词位于`/libs/cq/search/components/predicates`中。
 
-### 示例：构建简单属性谓词{#example-build-a-simple-property-predicate}
+### 示例：构建简单属性谓词 {#example-build-a-simple-property-predicate}
 
 要构建属性谓词，请执行以下操作：
 
@@ -152,7 +151,7 @@ AEM Assets附带一组预定义谓词，可用于自定义资产共享页面。 
    >
    >搜索时，请务必准确键入术语，包括正确的大小写。
 
-### 示例：构建简单的组谓词{#example-build-a-simple-group-predicate}
+### 示例：构建简单的组谓词 {#example-build-a-simple-group-predicate}
 
 要构建组谓词，请执行以下操作：
 
@@ -254,7 +253,7 @@ AEM Assets附带一组预定义谓词，可用于自定义资产共享页面。 
 1. 导航到浏览器，然后在示例页面（例如`press.html`）上切换到设计模式，并为谓词段落系统启用新组件（例如，**left**）。
 1. 在&#x200B;**编辑**&#x200B;模式下，新组件现在在Sidekick中可用（可在&#x200B;**Search**&#x200B;组中找到）。 在&#x200B;**谓词**&#x200B;列中插入组件。
 
-### 已安装的谓词小组件{#installed-predicate-widgets}
+### 已安装的谓词小组件 {#installed-predicate-widgets}
 
 以下谓词可用作预配置的ExtJS小组件。
 
@@ -302,8 +301,8 @@ AEM Assets附带一组预定义谓词，可用于自定义资产共享页面。 
 | searchCallback | 函数 | 回调以触发搜索。 默认为 `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | 数字 | searchCallback触发之前的超时。 默认为800毫秒 |
 
-## 自定义搜索结果{#customizing-search-results}
+## 自定义搜索结果 {#customizing-search-results}
 
-资产共享页面上搜索结果的显示方式受所选镜头的控制。 AEM Assets提供了一组可用于自定义资产共享页面的预定义镜头。 以这种方式自定义资产共享的相关内容，请参见[创建和配置资产共享页面](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)。
+资产共享页面上搜索结果的显示方式受所选镜头的控制。 [!DNL Experience Manager] 资产附带一组可用于自定义资产共享页面的预定义镜头。以这种方式自定义资产共享的相关内容，请参见[创建和配置资产共享页面](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)。
 
-除了使用预先存在的镜头之外，AEM开发人员还可以创建自己的镜头。
+除了使用预先存在的镜头外，[!DNL Experience Manager]开发人员还可以创建自己的镜头。

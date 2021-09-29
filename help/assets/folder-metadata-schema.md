@@ -1,34 +1,34 @@
 ---
 title: 文件夹元数据架构
-description: 本文介绍了如何在AEM Assets中为资产文件夹创建元数据架构
+description: 本文介绍了如何在 [!DNL Experience Manager] Assets中为资产文件夹创建元数据架构
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
-feature: 元数据
+feature: Metadata
 role: User,Admin
 exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 18%
+source-wordcount: '1076'
+ht-degree: 16%
 
 ---
 
 # 文件夹元数据架构 {#folder-metadata-schema}
 
-本文介绍了如何在AEM Assets中为资产文件夹创建元数据架构。
+本文介绍了如何在[!DNL Experience Manager]资产中为资产文件夹创建元数据架构。
 
-Adobe Experience Manager(AEM)Assets允许您为资产文件夹创建元数据架构，该架构定义文件夹属性页面中显示的布局和元数据。
+Adobe Experience Manager Assets允许您为资产文件夹创建元数据架构，该架构可定义文件夹属性页面中显示的布局和元数据。
 
 >[!NOTE]
 >
->此功能需要至少部署Service Pack 2的AEM 6.4。 有关AEM 6.4 Service Pack的详细信息，请参阅以下[发行说明](/help/release-notes/sp-release-notes.md)。
+>此功能需要[!DNL Experience Manager] 6.4并且至少部署了Service Pack 2。 有关[!DNL Experience Manager] 6.4 Service Pack的详细信息，请参阅以下[发行说明](/help/release-notes/sp-release-notes.md)。
 
 ## 添加文件夹元数据架构表单 {#add-a-folder-metadata-schema-form}
 
 使用文件夹元数据架构Forms编辑器为文件夹创建和编辑元数据架构。
 
-1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 文件夹元数据架构]**。
+1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]**> **[!UICONTROL 文件夹元数据架构]**。
 1. 在文件夹元数据架构Forms页面中，点按/单击&#x200B;**[!UICONTROL 创建]**。
 1. 指定表单的名称，然后点按/单击&#x200B;**[!UICONTROL 创建]**。 新架构表单列在架构Forms页面中。
 
@@ -117,7 +117,7 @@ Adobe Experience Manager(AEM)Assets允许您为资产文件夹创建元数据架
 
 ### 从“文件夹元数据架构”页面中分配给架构 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. 点按/单击 AEM 徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 文件夹元数据架构]**。
+1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 文件夹元数据架构]**。
 1. 从文件夹元数据架构Forms页面中，选择要应用于文件夹的架构表单。
 1. 在工具栏中，点按/单击&#x200B;**[!UICONTROL 应用到文件夹]**。
 
@@ -134,7 +134,7 @@ Adobe Experience Manager(AEM)Assets允许您为资产文件夹创建元数据架
 
 在创建文件夹时，您可以分配文件夹元数据架构。 如果系统中至少存在一个文件夹元数据架构，则在&#x200B;**[!UICONTROL 创建文件夹]**&#x200B;对话框中会显示一个额外的列表。 您可以选择所需的架构。 默认情况下，未选择架构。
 
-1. 在AEM Assets用户界面中，点按/单击工具栏中的&#x200B;**[!UICONTROL 创建]** 。
+1. 在[!DNL Assets]用户界面中，点按/单击工具栏中的&#x200B;**[!UICONTROL 创建]** 。
 1. 指定文件夹的标题和名称。
 1. 从文件夹元数据架构列表中，选择所需的架构。 然后，点按/单击&#x200B;**[!UICONTROL 创建]**。
 

@@ -1,13 +1,13 @@
 ---
 title: 资产选择器
-description: 了解如何使用资产选择器在Adobe Experience Manager(AEM)Assets中搜索、筛选、浏览和获取资产的元数据。 另外，了解如何自定义资产选择器界面。
+description: 了解如何使用资产选择器搜索、筛选、浏览和获取Adobe Experience Manager Assets中资产的元数据。 另外，了解如何自定义资产选择器界面。
 contentOwner: AG
-feature: 资产管理，元数据，搜索
+feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在以前版本的AEM中，资产选择器名为[资产选取器](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)。
+>在以前版本的[!DNL Experience Manager]中，资产选择器名为[资产选取器](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)。
 
 资产选择器允许您浏览、搜索和筛选[!DNL Adobe Experience Manager]资产中的资产。 您还可以使用资产选择器获取您选择的资产的元数据。 要自定义资产选择器界面，您可以使用支持的请求参数启动该界面。 这些参数用于为特定方案设置资产选择器的上下文。
 

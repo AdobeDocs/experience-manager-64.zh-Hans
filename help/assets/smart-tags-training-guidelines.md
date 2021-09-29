@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: 标记，元数据，智能标记
+feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '455'
 ht-degree: 10%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 10%
 
 ![示例图像以说明培训准则](assets/do-not-localize/coherence.png)
 
-**覆盖范围**:培训中的图像应该有足够的多样性。其理念是提供几个但相当多样化的示例，以便AEM学会专注于正确的事情。 如果您对视觉上不相似的图像应用相同的标记，请至少包含每种类型的五个示例。
+**覆盖范围**:培训中的图像应该有足够的多样性。其理念是提供一些但相当多样化的示例，以便[!DNL Experience Manager]学习将注意力集中在正确的事情上。 如果您对视觉上不相似的图像应用相同的标记，请至少包含每种类型的五个示例。
 
 例如，对于标记&#x200B;*model-down-pose*，为服务包含更多与下面突出显示的图像类似的培训图像，以便在标记期间更准确地识别类似图像。
 
@@ -53,7 +53,7 @@ ht-degree: 10%
 
 * 无法识别图像中的细微差异。 例如，纤薄的衬衫与普通的衬衫。
 * 无法根据图像的微小模式/部分来识别标记。 例如，T恤上的徽标。
-* 在支持AEM的区域环境中支持标记。 有关语言列表，请参阅[智能内容服务发行说明](/help/release-notes/smart-content-service-release-notes.md)。
+* 在支持[!DNL Experience Manager]的区域环境中支持标记。 有关语言列表，请参阅[智能内容服务发行说明](/help/release-notes/smart-content-service-release-notes.md)。
 
 要使用智能标记（常规或增强）搜索资产，请使用资产全屏搜索（全文搜索）。 智能标记没有单独的搜索谓词。
 

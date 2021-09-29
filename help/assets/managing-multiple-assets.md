@@ -2,12 +2,12 @@
 title: 批量编辑多个资产和收藏集的元数据
 description: 了解如何同时编辑多个资产和收藏集的元数据，以快速传播常见的元数据更改。
 contentOwner: AG
-feature: 资产管理，元数据，收藏集
+feature: Asset Management,Metadata,Collections
 role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '433'
 ht-degree: 18%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 18%
 
 了解如何同时编辑多个资产和收藏集的元数据，以快速传播常见的元数据更改。
 
-AdobeEnterprise Manager(AEM)Assets允许您同时编辑多个资产的元数据，以便您能够快速将常见的元数据更改批量传播到资产。 您还可以批量编辑多个收藏集的元数据。
+AdobeEnterprise Manager Assets允许您同时编辑多个资产的元数据，以便您能够快速将常见的元数据更改批量传播到资产。 您还可以批量编辑多个收藏集的元数据。
 
 使用属性页面对多个资产或收藏集执行元数据更改：
 
@@ -47,7 +47,7 @@ AdobeEnterprise Manager(AEM)Assets允许您同时编辑多个资产的元数据�
 
 ## 配置批量元数据更新限制 {#configure-limit-for-bulk-metadata-update}
 
-为防止出现类似DOS的情况，AEM会限制Sling请求中支持的参数数量。 一次更新多个资产的元数据时，您可能会达到限制，并且不会为更多资产更新元数据。 AEM在日志中生成以下警告：
+为防止出现类似DOS的情况，[!DNL Experience Manager]会限制Sling请求中支持的参数数。 一次更新多个资产的元数据时，您可能会达到限制，并且不会为更多资产更新元数据。 [!DNL Experience Manager] 在日志中生成以下警告：
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 

@@ -2,19 +2,19 @@
 title: 时间轴中的活动流
 description: '本文介绍了如何在时间轴上显示资产的活动日志。 '
 contentOwner: AG
-feature: 资产管理
+feature: Asset Management
 role: User,Admin
 exl-id: 52fa2d59-177f-49ca-a480-7213ce0ca7d7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 48%
+source-wordcount: '211'
+ht-degree: 36%
 
 ---
 
 # 时间轴中的活动流 {#activity-stream-in-timeline}
 
-这项功能可将资产的活动日志显示在时间轴上。如果您在Adobe Experience Manager(AEM)资产中执行以下任何与资产相关的操作，活动流功能会更新时间轴以反映该活动。
+这项功能可将资产的活动日志显示在时间轴上。如果您在[!DNL Adobe Experience Manager Assets]中执行以下任何与资产相关的操作，活动流功能会更新时间轴以反映该活动。
 
 活动流中记录以下操作：
 
@@ -29,7 +29,7 @@ ht-degree: 48%
 
 时间轴中显示的活动日志是从 CRX 中的 `/var/audit/com.day.cq.dam/content/dam` 位置获取的，日志文件就存储在该位置。
 
-此外，当上传新资产或通过 [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 或 [AEM 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)修改现有资产并签入 AEM 时，会记录时间轴活动。
+此外，当上传新资产或通过[Adobe资产链接](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)或[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)修改现有资产并签入Experience Manager时，将记录时间轴活动。
 
 >[!NOTE]
 >

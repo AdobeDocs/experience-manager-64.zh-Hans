@@ -1,30 +1,30 @@
 ---
 title: XMP 元数据
-description: 了解AEM Assets用于元数据管理的XMP（可扩展元数据平台）元数据标准。 XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
+description: 了解 [!DNL Experience Manager] Assets用于元数据管理的XMP（可扩展元数据平台）元数据标准。 XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
 contentOwner: AG
-feature: 元数据
+feature: Metadata
 role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 75%
+source-wordcount: '810'
+ht-degree: 76%
 
 ---
 
 # XMP 元数据 {#xmp-metadata}
 
-XMP（可扩展元数据平台）是 AEM Assets 用来进行所有元数据管理的元数据标准。XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
+XMP（可扩展元数据平台）是[!DNL Experience Manager]资产用于所有元数据管理的元数据标准。 XMP 为在各种应用程序中创建、处理和交换元数据提供了一种标准格式。
 
-除了提供可嵌入到所有文件格式的通用元数据编码外，XMP还提供丰富的[内容模型](xmp.md#xmp-core-concepts)，并且受Adobe](xmp.md#advantages-of-xmp)和其他公司的支持[，因此XMP和AEM Assets的用户拥有强大的基础平台。
+除了提供可嵌入到所有文件格式的通用元数据编码外，XMP还提供丰富的[内容模型](xmp.md#xmp-core-concepts)，并且受Adobe](xmp.md#advantages-of-xmp)和其他公司的支持[，因此XMP用户与[!DNL Experience Manager] Assets的结合拥有强大的基础平台。
 
 Adobe 支持 [XMP 规范](https://www.adobe.com/devnet/xmp.html)。
 
 ## 什么是 XMP？ {#what-is-xmp}
 
-AEM Assets本身支持XMP — 由Adobe带头的可扩展元数据平台。XMP是用于处理和存储数字资产中标准化的专有元数据的标准。XMP旨在成为允许多个应用程序有效处理元数据的通用标准。
+[!DNL Experience Manager] Assets 在本机支持由 Adobe 率先推出的 XMP，即可扩展元数据平台。XMP 是一项用于处理和存储数字资产中的标准化专有元数据的标准。XMP 旨在形成通用标准，从而让多个应用程序能够高效地处理元数据。
 
-例如，专业生产人士可以使用 Adobe 应用程序中内置的 XMP 支持，在多种文件格式之间传递信息。AEM Assets 存储库会提取 XMP 元数据，用它来管理内容生命周期，并提供创建自动化工作流的能力。
+例如，专业生产人士可以使用 Adobe 应用程序中内置的 XMP 支持，在多种文件格式之间传递信息。[!DNL Experience Manager]资产存储库会提取XMP元数据，并使用该元数据来管理内容生命周期，并提供创建自动化工作流的功能。
 
 XMP 通过提供数据模型、存储模型和架构，使元数据的定义、创建和处理方式实现标准化。本节将介绍所有这些概念。
 

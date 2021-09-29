@@ -2,12 +2,12 @@
 title: '管理 [!DNL Adobe Experience Manager Assets]中的资产。 [!DNL Adobe Stock] '
 description: 从 [!DNL Adobe Experience Manager]内搜索、获取、许可和管理 [!DNL Adobe Stock] 资产。 将授权资产用作任何其他数字资产。
 contentOwner: AG
-feature: 搜索，Adobe Stock
+feature: Search,Adobe Stock
 role: User,Admin
 exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1114'
 ht-degree: 13%
 
 ---
@@ -32,13 +32,13 @@ ht-degree: 13%
 
 ### 创建IMS配置 {#create-an-ims-configuration}
 
-1. 在[!DNL Experience Manager]用户界面中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全]** > **[!UICONTROL AdobeIMS配置]**。 单击&#x200B;**[!UICONTROL 创建]**，然后选择&#x200B;**[!UICONTROL 云解决方案]** > **[!UICONTROL Adobe Stock]**。
+1. 在[!DNL Experience Manager]用户界面中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全]** > **[!UICONTROL Adobe IMS配置]**。 单击&#x200B;**[!UICONTROL 创建]**，然后选择&#x200B;**[!UICONTROL 云解决方案]** > **[!UICONTROL Adobe Stock]**。
 1. 重复使用现有证书或选择&#x200B;**[!UICONTROL 创建新证书]**。
-1. 单击&#x200B;**[!UICONTROL 创建证书]**。创建后，下载公钥。 单击&#x200B;**[!UICONTROL 下一步]**。保持[!UICONTROL AdobeIMS技术帐户配置]屏幕打开，以便不久提供所需的值。
+1. 单击&#x200B;**[!UICONTROL 创建证书]**。创建后，下载公钥。 单击&#x200B;**[!UICONTROL 下一步]**。保持[!UICONTROL Adobe IMS技术帐户配置]屏幕打开状态，以便不久提供所需的值。
 1. 访问[Adobe开发人员控制台](https://console.adobe.io)。 确保您的帐户拥有需要集成的组织的管理员权限。
 1. 单击&#x200B;**[!UICONTROL 创建新项目]**，然后单击&#x200B;**[!UICONTROL 添加API]**。 从可供您使用的API列表中选择&#x200B;**[!UICONTROL Adobe Stock]**。 选择[!UICONTROL OAUTH 2.0 Web]。
 1. 提供&#x200B;**[!UICONTROL 默认重定向URI]**&#x200B;和&#x200B;**[!UICONTROL 重定向URI模式]**&#x200B;值。 单击&#x200B;**[!UICONTROL 保存配置的 API]**。复制生成的ID和密钥。
-1. 在[!UICONTROL AdobeIMS技术帐户配置]屏幕中，在标题为&#x200B;**[!UICONTROL Title]**、**[!UICONTROL 授权服务器]**、**[!UICONTROL API密钥]**、**[!UICONTROL 客户端密钥]**&#x200B;和&#x200B;**[!UICONTROL 负载]**&#x200B;的框中提供值。 有关这些值的详细信息，请参阅[JWT身份验证快速入门](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)。
+1. 在[!UICONTROL Adobe IMS技术帐户配置]屏幕中，在标题为&#x200B;**[!UICONTROL Title]**、**[!UICONTROL 授权服务器]**、**[!UICONTROL API密钥]**、**[!UICONTROL 客户端密钥]**&#x200B;和&#x200B;**[!UICONTROL 负载]**&#x200B;的框中提供值。 有关这些值的详细信息，请参阅[JWT身份验证快速入门](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)。
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
@@ -123,7 +123,7 @@ ht-degree: 13%
 
 >[!MORELIKETHIS]
 >
->* [有关将Adobe Stock资产与Experience Manager资产结合使用的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [Adobe Stock企业计划帮助](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
->* [Adobe Stock常见问题解答](https://helpx.adobe.com/stock/faq.html)
+>* [有关将资产与 [!DNL Adobe Stock]  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] 企业计划帮助](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
+>* [[!DNL Adobe Stock] 常见问题解答](https://helpx.adobe.com/stock/faq.html)
 

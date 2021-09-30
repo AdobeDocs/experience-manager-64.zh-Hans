@@ -1,8 +1,8 @@
 ---
 title: 升级到 AEM 6.4 Communities
-seo-title: 升级到 AEM 6.4 Communities
+seo-title: Upgrading to AEM 6.4 Communities
 description: 如何从早期版本升级到AEM 6.4 Communities
-seo-description: 如何从早期版本升级到AEM 6.4 Communities
+seo-description: How to upgrade from an earlier version to AEM 6.4 Communities
 uuid: c6c2846e-38d4-4e99-9038-bfb486afd8b9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: 0f82e82cf6e09a2734893a98d67ed1a84b1fec5e
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 3%
+source-wordcount: '664'
+ht-degree: 1%
 
 ---
 
@@ -51,17 +51,17 @@ ht-degree: 3%
 
 因此，能够指示ASRP使用`AEM 6.0 compatability-mode`访问UGC。
 
-对于所有AEM 6.3创作和发布实例
+对于所有AEM 6.3创作和发布实例：
 
-1. 使用管理员权限登录
-2. 配置[ASRP](asrp.md)
-3. 请按照以下步骤使预先存在的UGC可见：
-i.例如，浏览到Web控制台
-   [https://&lt;host>:&lt;port>/system/console/](http://localhost:4502/system/console/configMgr)
-configMgrii。找到**[!UICONTROL AEM Communities实用程序]**配置
-三。 选择以展开配置面板
-   * *取消选中* **`Cloud Storage`**
-   * 选择&#x200B;**[!UICONTROL Save]**
+1. 使用管理员权限登录并配置[ASRP](asrp.md)。
+1. 请按照以下步骤使现有UGC可见：
+
+   i.浏览到Web控制台。 默认URL为
+   `https://localhost:4502/system/console/configMgr`。
+
+   ii. 找到&#x200B;**[!UICONTROL AEM Communities实用程序]**&#x200B;配置，然后选择以展开配置面板。
+
+   三。 取消选中&#x200B;**[!UICONTROL 云存储]** ，然后单击&#x200B;**[!UICONTROL 保存]**。
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 

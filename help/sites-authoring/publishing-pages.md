@@ -1,18 +1,18 @@
 ---
 title: 发布页面
-seo-title: 发布页面
+seo-title: Publishing Pages
 description: 发布页面
-seo-description: 'null'
+seo-description: null
 uuid: 1222859d-ef8d-462e-a125-b76e6cfec26d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 87%
+source-wordcount: '1680'
+ht-degree: 84%
 
 ---
 
@@ -31,16 +31,13 @@ ht-degree: 87%
 >
 >* **发布/取消发布**
    >  这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
-   >
-   >
-* **激活／取消激活**
+>
+>* **激活／取消激活**
    >  这两个术语与发布/取消发布同义。
-   >
-   >
-* **复制**
+>
+>* **复制**
    >  这些是技术术语，用于描述数据（例如页面内容、文件、代码、用户评论）从一个环境移动到另一个环境（例如在发布或反向复制用户评论时）的移动。
 >
-
 
 
 >[!NOTE]
@@ -52,7 +49,6 @@ ht-degree: 87%
 >* 将显示一条简短的消息，通知您工作流已经触发。
 
 >
-
 
 
 ## 发布页面 {#publishing-pages-2}
@@ -92,6 +88,10 @@ ht-degree: 87%
 >
 >从编辑器中发布是一种简单的发布方式，即只会发布选定的一个或多个页面，而不会发布任何子页面。
 
+>[!NOTE]
+>
+>无法发布编辑器中由[别名](/help/sites-authoring/editing-page-properties.md#advanced)访问的页面。 编辑器中的发布选项仅适用于通过实际路径访问的页面。
+
 ### 从控制台中发布 {#publishing-from-the-console}
 
 站点控制台中有两个用于发布的选项：
@@ -119,7 +119,7 @@ ht-degree: 87%
 >
 >“快速发布”是一种简单的发布方式，即只会发布选定的一个或多个页面，而不会发布任何子页面。
 
-#### 管理发布  {#manage-publication}
+#### 管理发布 {#manage-publication}
 
 与“快速发布”相比，**管理发布**&#x200B;提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
 
@@ -221,7 +221,11 @@ ht-degree: 87%
 
 在编辑页面时，如果您希望取消发布该页面，请选择&#x200B;**页面信息**&#x200B;菜单中的&#x200B;**取消发布页面**，这与[发布页面](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)非常类似。
 
-### 从控制台中取消发布  {#unpublishing-from-the-console}
+>[!NOTE]
+>
+>无法取消发布编辑器中由[别名](/help/sites-authoring/editing-page-properties.md#advanced)访问的页面。 编辑器中的发布选项仅适用于通过实际路径访问的页面。
+
+### 从控制台中取消发布 {#unpublishing-from-the-console}
 
 正如[使用“管理发布”选项发布页面](/help/sites-authoring/publishing-pages.md#manage-publication)一样，也可以使用它来取消发布页面。
 

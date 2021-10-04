@@ -1,8 +1,8 @@
 ---
 title: 编辑页面属性
-seo-title: 编辑页面属性
+seo-title: Editing Page Properties
 description: 为页面定义所需的属性
-seo-description: 为页面定义所需的属性
+seo-description: Define the required properties for a page
 uuid: c0386cd6-ca01-4741-b8c8-36edb66e50ef
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 84%
+source-wordcount: '1789'
+ht-degree: 81%
 
 ---
 
@@ -116,7 +116,7 @@ ht-degree: 84%
 
    指示此页面应自动重定向到的页面。
 
-* **设计**
+* **Design**
 
    指示要用于此页面的[设计](/help/sites-developing/designer.md)。
 
@@ -124,13 +124,10 @@ ht-degree: 84%
 
    指定要用于此页面的别名。
 
-   >[!NOTE]
-   >
-   > 别名会设置 `sling:alias` 属性以定义资源的别名（这仅会影响资源，不会影响路径）。
-   >
-   >例如：如果您为节点 `/content/we-retail/spanish` 定义别名 `latin-lang`，则可以通过 `/content/we-retail/latin-language` 访问此页面。
-   >
-   >有关更多详细信息，请参阅“SEO和URL管理最佳实践”下的[本地化的页面名称](/help/managing/seo-and-url-management.md#localized-page-names)
+   * 例如，如果为页面`/content/wknd/us/en/magazine/members-only`定义别名`private`，则也可以通过`/content/wknd/us/en/magazine/private`访问此页面。
+   * 创建别名会在页面节点上设置`sling:alias`属性，这仅会影响资源，而不会影响存储库路径。
+   * 无法发布编辑器中别名访问的页面。 [编辑](/help/sites-authoring/publishing-pages.md) 器中的发布选项仅适用于通过实际路径访问的页面。
+   * 有关更多详细信息，请参阅“SEO和URL管理最佳实践”下的[本地化的页面名称](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **允许的模板**
 
@@ -221,13 +218,13 @@ ht-degree: 84%
 
    在[多站点管理](/help/sites-administering/msm.md)中为 Blueprint 页面定义属性。控制将修改传播到 Live Copy 的情况。
 
-### Live Copy  {#live-copy}
+### Live Copy {#live-copy}
 
 * **Live Copy**
 
    在[多站点管理](/help/sites-administering/msm.md)中为 Live Copy 页面定义属性。控制将从 Blueprint 中传播修改的情况。
 
-### 站点结构  {#site-structure}
+### 站点结构 {#site-structure}
 
 * 提供具有全站点功能的页面的链接，例如&#x200B;**注册页面**、**脱机页面**&#x200B;以及其他。
 

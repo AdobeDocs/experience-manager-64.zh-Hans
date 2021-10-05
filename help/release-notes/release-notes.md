@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2751'
 ht-degree: 27%
 
 ---
@@ -117,7 +117,7 @@ Adobe Experience Manager 6.4 的平台建立在基于 OSGi 的框架（Apache Sl
 
 **[内容片段](/help/assets/content-fragments.md)**
 
-6.4中的新增功能包括可视化的[内容模型](/help/assets/content-fragments-models.md)编辑器和新的[可配置组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)，可提供灵活的HTML输出和要包含在内容服务中的JSON。
+6.4中的新增功能包括可视的[内容模型](/help/assets/content-fragments-models.md)编辑器和新的[可配置组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html)，可提供灵活的HTML输出，以及要包含在内容服务中的JSON。
 
 **体验片段**
 
@@ -131,7 +131,7 @@ Adobe Experience Manager 6.4 的平台建立在基于 OSGi 的框架（Apache Sl
 
 AEM 6.4完成对下一代组件模型的转换。 AEM 6.3中引入的核心组件概念，现在与样式系统结合使用，为构建新站点和扩展现有站点提供了一种有效的方法。
 
-建议的教程，用于了解如何充分利用新的组件模型：[AEM Sites入门 — WKND教程](https://docs.adobe.com/content/help/zh-Hans/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+建议的教程，用于了解如何充分利用新的组件模型：[AEM Sites入门 — WKND教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 #### Screens 加载项 {#screens-add-on}
 
@@ -187,7 +187,7 @@ AEM 6.4为资产引入了多项新功能和增强功能，包括经过改进的�
 
 **Adobe Asset Link**
 
-企业Creative Cloud中的Adobe资产链接可简化内容创建过程中创意人员和营销人员之间的协作。 它是企业Creative Cloud中的一项新本机功能，可将Photoshop CC、Illustrator CC和InDesignCC连接到AEM，而创意人员无需离开自己选择的工具。
+企业Creative Cloud中的Adobe资产链接可简化内容创建过程中创意人员和营销人员之间的协作。 它是企业Creative Cloud中新的本机功能，可将Photoshop、Illustrator和InDesign与AEM连接在一起，而创意人员不必离开自己选择的工具。
 
 要了解有关此功能、先决条件以及如何访问此功能的更多信息，请参阅[Adobe资产链接](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)。
 
@@ -255,7 +255,7 @@ AEM 6.4 Forms 中引入了一些新增功能和增强功能。主要功能包括
 * 从业务应用程序预填交互式通信
 * 工作流现代化和移动工作人员支持
 * 延迟加载片段
-* 从LiveCycle到Experience ManagerForms 6.4的单跳升级
+* 从LiveCycle到Experience Manager Forms 6.4的单跳升级
 
 有关[AEM Forms](forms.md)发行说明页面的更多详细信息。 另请参阅AEM 6.4 Forms中的[新增功能和增强功能摘要](/help/forms/using/whats-new.md) ，以了解有关新增和改进功能及文档资源的信息。
 

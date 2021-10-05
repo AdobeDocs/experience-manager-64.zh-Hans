@@ -1,10 +1,10 @@
 ---
 title: 配置AEM Assets与Experience Cloud集成
 description: 了解如何配置AEM Assets与Experience Cloud的集成。
-feature: 资产管理
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 2%
@@ -54,7 +54,7 @@ ht-degree: 2%
 1. 从&#x200B;**[!UICONTROL 范围]**&#x200B;列表中，选择&#x200B;**[!UICONTROL dam-read]**、**[!UICONTROL dam-sync]**、**[!UICONTROL dam-write]**&#x200B;和&#x200B;**[!UICONTROL cc-share]**。
 1. 单击&#x200B;**[!UICONTROL 创建]**。系统会显示一条消息，通知已创建应用程序。
 
-   ![成功创建应用程序以将AEM Assets与AdobeCC集成的通知](assets/chlimage_1-289.png)
+   ![成功创建应用程序以将AEM Assets与Adobe Creative Cloud集成的通知](assets/chlimage_1-289.png)
 
 1. 复制为新应用程序生成的&#x200B;**[!UICONTROL 应用程序ID]**。
 
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 1. 在&#x200B;**[!UICONTROL 创建配置]**&#x200B;对话框中，指定新配置的标题和名称，然后单击&#x200B;**[!UICONTROL 创建]**。
 
-   ![命名新配置以集成AEM Assets和CC](assets/cloudservices_configure_mc.png)
+   ![命名新配置以集成AEM Assets和Creative Cloud](assets/cloudservices_configure_mc.png)
 
 1. 在&#x200B;**[!UICONTROL 租户URL]**&#x200B;字段中，指定AEM Assets的URL。 过去，如果URL被定义为`https://<tenant_id>.marketing.adobe.com`，则将其更改为`https://<tenant_id>.experiencecloud.adobe.com`。
 
@@ -164,5 +164,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [资产和Creative Cloud集成最佳实践](/help/assets/aem-cc-integration-best-practices.md)
-* [资产到Creative Cloud文件夹共享最佳实践](/help/assets/aem-cc-folder-sharing-best-practices.md)
+>* [资产到Creative Cloud文件夹共享最佳实践](/help/assets/aem-cc-folder-sharing-best-practices.md)
 

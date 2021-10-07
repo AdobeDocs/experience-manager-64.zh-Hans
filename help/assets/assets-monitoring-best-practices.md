@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 0%
@@ -195,5 +195,5 @@ ht-degree: 0%
 * 使用工作流控制台验证工作流是否按预期执行。 如有可能，将多个工作流精简为单个工作流。
 * 重新审视实时监控，并寻找任何特定资源的其他瓶颈或高消费者。
 * 调查来自客户端网络的出口点和到[!DNL Experience Manager]实例网络（包括调度程序）的入口点。 这些往往是瓶颈领域。 有关更多信息，请参阅[资产网络注意事项](assets-network-considerations.md)。
-* 更新[!DNL Experience Manager]服务器的大小。 您的[!DNL Experience Manager]实例的大小可能不足。 Adobe客户关怀团队可以帮助您确定您的服务器是否太小。
+* 更新[!DNL Experience Manager]服务器的大小。 您的[!DNL Experience Manager]实例的大小可能不足。 Adobe客户支持可以帮助您确定您的服务器是否太小。
 * 检查`access.log`和`error.log`文件，以查找在出现问题时的条目。 查找可能指示自定义代码异常的模式。 将它们添加到您监视的事件列表。

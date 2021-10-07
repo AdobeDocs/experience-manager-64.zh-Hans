@@ -2,10 +2,10 @@
 title: 已弃用和已删除的功能
 description: 以下发行说明特定于 Adobe Experience Manager 6.4 中已弃用和已删除功能。
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: af7bced72b8043d4460b575dc62c64f188575452
+source-git-commit: dcc36e499517f3f35d5f1d849802c4a5c35121bd
 workflow-type: tm+mt
 source-wordcount: '1310'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 ## 已弃用功能 {#deprecated-features}
 
-下表列出了AEM 6.4中标记为已弃用的特性和功能。通常，计划在未来版本中删除的特性会首先设置为已弃用，并提供替代功能。
+下表列出了AEM 6.4中标记为已弃用的特性和功能。通常，计划在未来版本中删除的特性首先设置为已弃用，并提供替代功能。
 
 建议客户检查其当前部署中是否使用了此类特性/功能，然后制定相应的计划以将其实施更改为使用提供的备选方案。
 
@@ -151,16 +151,16 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 | 区域 | 功能 | 替换 |
 |---|---|---|
-| 与[!DNL Experience Cloud]集成 | 您可以通过[!DNL Adobe I/O]配置，将资产与[!DNL Experience Cloud]同步。 [!DNL Adobe Experience Cloud] 以前称为 [!DNL Adobe Marketing Cloud]。 | 如果您有任何疑问，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=General#support)。 |
+| 与[!DNL Experience Cloud]集成 | 您可以通过[!DNL Adobe I/O]配置，将资产与[!DNL Experience Cloud]同步。 [!DNL Adobe Experience Cloud] 以前称为 [!DNL Adobe Marketing Cloud]。 | 如果您有任何查询，请联系[Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。 |
 | Analytics Activity Map | AEM 中包含的 Activity Map 的版本。 | 由于 Adobe Analytics API 中的安全性更改，无法再使用 AEM 中包含的 Activity Map 版本。现在，应使用Adobe Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap插件。 |
 | 组件 — Forms | 表单验证码（基础/组件/表单/验证码） | 请改用ReCaptcha by Google组件 |
 | 组件 | 幻灯片放映（基础/组件/幻灯片放映） | 无替换项 |
 | 组件 | Flash(foundation/components/flash) | 无替换项 |
-| 组件 | 删除了对在视频组件中播放SWF文件(foundation/components/video)的支持 | 使用基于无闪存的视频格式。 |
+| 组件 | 删除了对视频组件（基础/组件/视频）中播放SWF文件的支持 | 使用基于无闪存的视频格式。 |
 | 组件 | 产品表(commerce/components/product_table) | 无替换项 |
 | 任务管理 | 经典UI任务管理(/libs/cq/taskmanagement/content/taskmanager.html) | 自6.0起已弃用。请使用与工作流UI结合的新任务管理。 |
 | 工作流 | 5.6 - 6.2 之间使用的通知 UI  (/libs/cq/workflow/content/notifications.html) | 工作流收件箱 /aem/inbox |
-| 表单 | Export PDF到PDF/E-1格式（使用PDF生成器）已被删除。 | PDF生成器继续支持将PDF导出为PDF/A-1a/b、PDF/A-2a/b和PDF/A-3a/b格式。 |
+| 表单 | Export PDF到PDF/E-1格式(使用PDF生成器)已被删除。 | PDF生成器继续支持将PDF导出为PDF/A-1a/b、PDF/A-2a/b和PDF/A-3a/b格式。 |
 | 表单 | 删除了对文档片段中图像的支持。 | 交互式通信提供了直接在打印和Web渠道中使用图像的功能。 |
 | 表单 | 无法就地升级 | 不提供异地升级支持 |
 | 表单 | TarMK到DocumentMK迁移的边级 | 您可以从旧系统中导出数据，然后在全新安装的系统中导入。 有关详细说明，请参阅JEE上的AEM Forms升级文档 |
@@ -168,9 +168,9 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 表单 | 删除了对在文档片段组件中使用DAM图像的支持。 | 您可以在交互式通信的打印渠道中使用图像和图表组件。 如果您在自适应表单中使用自适应文档的文档片段组件，则它在升级到AEM 6.4 Forms后停止工作。 |
 | 表单 | 删除了自适应文档功能 | 您可以使用交互式通信功能创建打印和基于Web的通信。 如果您使用自适应文档，请安装兼容包以继续使用现有的自适应文档 |
 | 表单 | 在特定于JEE的登陆页面上删除了AEM Forms。 | AEM Forms on JEE登录页面已替换为AEM登录页面(/aem/start.html) |
-| 表单 | 删除了对默认验证码的支持 | 使用Google提供的reCAPTCHA服务。 |
+| 表单 | 删除了对默认验证码的支持 | 使用由Google提供的reCAPTCHA服务。 |
 | 表单 | 删除了对AEM Designer中Flash字段的支持。 AEM Designer不允许编辑表单中使用的Flash字段。 | 您可以使用为以前版本发布的AEM Designer来编辑此类表单。 |
-| 社区 | 已删除对验证码的支持。 | 使用自定义验证码集成（例如Google的reCAPTCHA）进行验证。 |
+| 社区 | 已删除对验证码的支持。 | 使用自定义验证码集成(例如Google的reCAPTCHA)进行验证。 |
 
 ## 针对下一个发行版的预先宣布 {#pre-announcement-for-next-release}
 

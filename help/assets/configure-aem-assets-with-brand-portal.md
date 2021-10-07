@@ -5,7 +5,7 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
 workflow-type: tm+mt
 source-wordcount: '1646'
 ht-degree: 37%
@@ -67,7 +67,7 @@ Adobe Experience Manager Assets通过[!DNL Adobe I/O]使用Brand Portal进行配
 
 * [AEM 6.4 Service Pack 发行说明](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**如果找** 不到最新的AEM包或Service Pack，请联系客户关怀团队。
+**如果您** 找不到最新的AEM包或Service Pack，请联系客户支持。
 
 ## 创建配置 {#configure-new-integration-64}
 
@@ -98,7 +98,7 @@ IMS 配置包括两个步骤：
 
 1. 登录AEM Assets创作实例
 默认URL:http://本地主机：4502/aem/start.html
-1. 在&#x200B;**Tools** ![Tools](assets/tools.png)面板中，导航到&#x200B;**[!UICONTROL Security]** >> **[!UICONTROL AdobeIMS配置]**。
+1. 在&#x200B;**Tools** ![Tools](assets/tools.png)面板中，导航到&#x200B;**[!UICONTROL Security]** >> **[!UICONTROL Adobe IMS配置]**。
 
    ![Adobe IMS 帐户配置 UI](assets/ims-config1.png)
 

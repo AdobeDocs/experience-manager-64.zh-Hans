@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ImageMagick是用于创建、编辑、合成或转换位图图像的软件插件
 
 >[!NOTE]
 >
->如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，请联系Adobe客户关怀团队，如果您计划处理大量大型PSD或PSB文件。 Experience Manager可能无法处理超过30000 x 23000像素的高分辨率PSB文件。
+>如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，如果您计划处理大量大型PSD或PSB文件，请联系Adobe客户支持。 Experience Manager可能无法处理超过30000 x 23000像素的高分辨率PSB文件。
 
 ## 安装ImageMagick {#installing-imagemagick}
 
@@ -39,7 +39,7 @@ ImageMagic安装文件的多个版本可用于各种操作系统。 为您的操
 您可以为特定用例设置命令行流程步骤。 每次在[!DNL Experience Manager]服务器上的`/content/dam`中添加JPEG图像文件时，请执行以下步骤以生成翻转图像和缩略图（140x100、48x48、319x319和1280）：
 
 1. 在[!DNL Experience Manager]服务器上，转到工作流控制台(`https://[aem_server]:[Port]/workflow`)，然后打开&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流模型。
-1. 从&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流模型中，打开&#x200B;**[!UICONTROL EPS缩略图（由ImageMagick提供支持）]**&#x200B;步骤。
+1. 从&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流模型中，打开&#x200B;**[!UICONTROL EPS缩略图（由ImageMagick提供）]**&#x200B;步骤。
 1. 在&#x200B;**[!UICONTROL 参数选项卡]**&#x200B;中，将`image/jpeg`添加到&#x200B;**[!UICONTROL Mime类型]**&#x200B;列表。
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)

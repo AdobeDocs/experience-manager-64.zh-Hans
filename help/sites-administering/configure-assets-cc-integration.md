@@ -4,7 +4,7 @@ description: 了解如何配置AEM Assets与Experience Cloud的集成。
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->此功能已在AEM Assets中弃用。 在[AEM和Creative Cloud集成最佳实践](/help/assets/aem-cc-integration-best-practices.md)中查找替换项。 如果您有任何查询，请[联系Adobe客户关怀团队](https://www.adobe.com/cn/account/sign-in.supportportal.html)。
+>此功能已在AEM Assets中弃用。 在[AEM和Creative Cloud集成最佳实践](/help/assets/aem-cc-integration-best-practices.md)中查找替换项。 如果您有任何查询，请[联系Adobe客户支持](https://www.adobe.com/cn/account/sign-in.supportportal.html)。
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-287.png)

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 8%
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->以下资产迁移工具未包含在Adobe Experience Manager中。 Adobe客户关怀团队不支持这些工具。
+>以下资产迁移工具未包含在Adobe Experience Manager中。 Adobe客户支持不支持这些工具。
 >
 >* ACS [!DNL Experience Manager]工具标签生成器
 >* ACS [!DNL Experience Manager]工具CSV资产导入程序

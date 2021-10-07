@@ -1,18 +1,18 @@
 ---
 title: 配置Dynamic Media — 混合模式
-seo-title: 配置Dynamic Media — 混合模式
+seo-title: Configuring Dynamic Media - Hybrid mode
 description: 了解如何配置Dynamic Media — 混合模式。
-seo-description: 了解如何配置Dynamic Media — 混合模式。
+seo-description: Learn how to configure Dynamic Media - Hybrid mode.
 uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
-feature: 配置，混合模式
+feature: Configuration,Hybrid Mode
 role: Admin,User,Developer
-source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
-source-wordcount: '7796'
+source-wordcount: '7780'
 ht-degree: 1%
 
 ---
@@ -250,11 +250,11 @@ Dynamic Media图像交付的工作方式是：从AEM创作中发布图像资产�
 
 ### 设置身份验证 {#setting-up-authentication}
 
-您需要在作者上设置复制身份验证，才能将图像复制到Dynamic Media图像交付服务。 为此，请获取一个KeyStore，然后将其保存在&#x200B;**[!UICONTROL dynamic-media-replication]**&#x200B;用户下，并对其进行配置。 在配置过程中，公司管理员应收到一封欢迎电子邮件，其中包含KeyStore文件和必要的凭据。 如果您未收到此邮件，请联系客户关怀团队。
+您需要在作者上设置复制身份验证，才能将图像复制到Dynamic Media图像交付服务。 为此，请获取一个KeyStore，然后将其保存在&#x200B;**[!UICONTROL dynamic-media-replication]**&#x200B;用户下，并对其进行配置。 在配置过程中，公司管理员应收到一封欢迎电子邮件，其中包含KeyStore文件和必要的凭据。 如果您未收到此邮件，请联系客户支持。
 
 **要设置身份验证**:
 
-1. 如果您尚未获得KeyStore文件和密码，请联系客户关怀团队。 这是配置的一部分，它会将密钥关联到您的帐户。
+1. 如果您尚未获得KeyStore文件和密码，请联系客户支持。 这是配置的一部分，它会将密钥关联到您的帐户。
 1. 在AEM中，点按AEM徽标以访问全局导航控制台，然后点按&#x200B;**[!UICONTROL 工具>安全>用户]**。
 1. 在“用户管理”页面上，导航到&#x200B;**[!UICONTROL dynamic-media-replication]**&#x200B;用户，然后点按以打开。
 
@@ -275,9 +275,9 @@ Dynamic Media图像交付的工作方式是：从AEM创作中发布图像资产�
 
    * 在&#x200B;**[!UICONTROL New Alias]**&#x200B;字段中，输入稍后在复制配置中使用的别名的名称；例如， **replication**。
    * 点按&#x200B;**[!UICONTROL KeyStore文件]**。 导航到通过Adobe提供给您的KeyStore文件，将其选中，然后点按&#x200B;**[!UICONTROL Open]**。
-   * 在&#x200B;**[!UICONTROL KeyStore File Password]**&#x200B;字段中，输入KeyStore File密码。 这是您在步骤5中创建的KeyStore密码&#x200B;_不_，但是是在预配期间发送给您的欢迎电子邮件中提供的KeyStore文件密码Adobe。 如果您未收到KeyStore文件密码，请联系Adobe客户关怀团队。
-   * 在&#x200B;**[!UICONTROL 私钥密码]**&#x200B;字段中，输入私钥密码（可能与上一步中提供的私钥密码相同）。 Adobe在预配期间向您发送的欢迎电子邮件中提供私钥密码。 如果您未收到私钥密码，请联系Adobe客户关怀。
-   * 在&#x200B;**[!UICONTROL 私钥别名]**&#x200B;字段中，输入私钥别名。 例如，`companyname-alias`。 Adobe在预配期间向您发送的欢迎电子邮件中提供私钥别名。 如果您未收到私钥别名，请联系Adobe客户关怀。
+   * 在&#x200B;**[!UICONTROL KeyStore File Password]**&#x200B;字段中，输入KeyStore File密码。 这是您在步骤5中创建的KeyStore密码&#x200B;_不_，但是是在预配期间发送给您的欢迎电子邮件中提供的KeyStore文件密码Adobe。 如果您未收到KeyStore文件密码，请联系Adobe客户支持。
+   * 在&#x200B;**[!UICONTROL 私钥密码]**&#x200B;字段中，输入私钥密码（可能与上一步中提供的私钥密码相同）。 Adobe在预配期间向您发送的欢迎电子邮件中提供私钥密码。 如果您未收到私钥密码，请联系Adobe客户支持。
+   * 在&#x200B;**[!UICONTROL 私钥别名]**&#x200B;字段中，输入私钥别名。 例如, `companyname-alias`. Adobe在预配期间向您发送的欢迎电子邮件中提供私钥别名。 如果您未收到私钥别名，请联系Adobe客户支持。
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -294,7 +294,7 @@ Dynamic Media图像交付的工作方式是：从AEM创作中发布图像资产�
 
    * **[!UICONTROL 已启用]**  — 选中此复选框可启用复制代理。
    * **[!UICONTROL 区域]**  — 设置为相应的区域：北美洲、欧洲或亚洲
-   * **[!UICONTROL 租户ID]**  — 此值是发布到复制服务的公司/租户的名称。此值是Adobe在配置期间发送给您的欢迎电子邮件中提供的租户ID。 如果您未收到此信息，请联系Adobe客户关怀。
+   * **[!UICONTROL 租户ID]**  — 此值是发布到复制服务的公司/租户的名称。此值是Adobe在配置期间发送给您的欢迎电子邮件中提供的租户ID。 如果您未收到此信息，请联系Adobe客户支持。
    * **[!UICONTROL 密钥存储别名]**  — 此值与在设置身份验证中生成密钥时设置的**新别名** [值相同](#setting-up-authentication);例如 `replication`。（请参阅[设置身份验证](#setting-up-authentication)中的步骤7。）
    * **[!UICONTROL 密钥存储密码]**  — 这是您在点按创建密钥存储时创建的 **[!UICONTROL KeyStore密码]**。Adobe不提供此密码。 请参阅[设置身份验证](#setting-up-authentication)的步骤5。
 
@@ -682,7 +682,7 @@ AEM 6.4及更高版本将此预设保存在`/conf/global/settings/dam/dm/presets
    <td><p>以<strong>image/</strong>开头</p> <p>包含<strong>application/</strong>，以<strong>set</strong>结尾。</p> <p>以<strong>video/</strong>开头</p> </td> 
    <td><p>您可以将传输URI配置为指向您的AEM发布服务器，而不是AdobeDynamic Media云复制服务URL。 设置此过滤器后，Dynamic Media Classic将能够交付资产，而不是AEM发布实例。</p> <p>现成的“filter-images”、“filter-sets”和“filter-video”将：</p> 
     <ul> 
-     <li>包括PTIFF图像、代理视频演绎版和用于复制的元数据。 但是，由于运行AEM - Dynamic Media Classic集成的用户在JCR中不存在这些函数，因此JCR无法有效地执行任何操作。</li> 
+     <li>包括PTIFF图像、代理视频演绎版和用于复制的元数据。 但是，由于运行AEM - Dynamic Media Classic集成的用户在JCR中不存在这些函数，因此JCR会无效执行任何操作。</li> 
      <li>从复制中排除原始图像、静态图像呈现、原始视频和静态缩略图呈现。 相反，Dynamic Media Classic将交付图像和视频资产。</li> 
     </ul> </td> 
   </tr> 
@@ -784,13 +784,13 @@ AEM 6.4及更高版本将此预设保存在`/conf/global/settings/dam/dm/presets
  </tbody> 
 </table>
 
-导航至 `content/dam/<locate_your_asset>/jcr:content/renditions`.
+导航到 `content/dam/<locate_your_asset>/jcr:content/renditions`。
 
 下图是资产演绎版的示例。
 
 ![chlimage_1-513](assets/chlimage_1-513.png)
 
-使用上例，如果您只想复制PTIFF(Pyramid TIFF)，则可以输入`+cqdam,*`，其中包含以`cqdam`开头的所有演绎版。 在示例中，该呈现版本为`cqdam.pyramid.tiff`。
+使用上例，如果您只想复制PTIFF(金字塔TIFF)，则可以输入`+cqdam,*`，其中包含以`cqdam`开头的所有演绎版。 在示例中，该呈现版本为`cqdam.pyramid.tiff`。
 
 如果只想复制原件，则输入`+original`。
 
@@ -869,13 +869,13 @@ Dynamic Media在启用](#enabling-dynamic-media)后即可使用[。 但是，您
    | **属性** | **默认值** | **描述** |
    |---|---|---|
    | **[!UICONTROL 已启用缓存]** | 已选中 | 是否启用响应缓存。 |
-   | **[!UICONTROL 缓存根]** | 缓存 | 响应缓存文件夹的一个或多个路径。 相对路径针对内部s7成像包文件夹进行解析。 |
+   | **[!UICONTROL 缓存根]** | cache | 响应缓存文件夹的一个或多个路径。 相对路径针对内部s7成像包文件夹进行解析。 |
    | **[!UICONTROL 缓存最大大小]** | 200000000 | 响应缓存的最大大小（以字节为单位）。 |
    | **[!UICONTROL 缓存最大条目数]** | 100000 | 缓存中允许的最大条目数。 |
 
 ### 默认清单设置 {#default-manifest-settings}
 
-默认清单允许您配置用于生成Dynamic Media投放响应的默认清单。 您可以微调质量（JPEG质量、分辨率、重新取样模式）、缓存（过期），并阻止渲染太大的图像(defaultpix、defaultthumbpix、maxpix)。
+默认清单允许您配置用于生成Dynamic Media投放响应的默认清单。 您可以微调质量(JPEG质量、分辨率、重新取样模式)、缓存（过期），并阻止渲染太大的图像(defaultpix、defaultthumbpix、maxpix)。
 
 默认清单配置的位置取自&#x200B;**[!UICONTROL Adobe CQ Scene7 PlatformServer]**&#x200B;包的&#x200B;**[!UICONTROL 目录根]**&#x200B;默认值。 默认情况下，此值位于&#x200B;**[!UICONTROL 工具>常规>CRXDE Lite]**&#x200B;中的以下路径：
 
@@ -903,7 +903,7 @@ Dynamic Media在启用](#enabling-dynamic-media)后即可使用[。 但是，您
   <tr> 
    <td>bkgcolor</td> 
    <td>FFFFFF</td> 
-   <td><p>默认背景颜色。 用于填充不包含实际图像数据的回复图像任何区域的RGB值。</p> <p>另请参阅图像提供API中的<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html">BkgColor</a>。</p> </td> 
+   <td><p>默认背景颜色。 RGB值，用于填充回复图像中不包含实际图像数据的任何区域。</p> <p>另请参阅图像提供API中的<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html">BkgColor</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>defaultpix</td> 
@@ -918,12 +918,12 @@ Dynamic Media在启用](#enabling-dynamic-media)后即可使用[。 但是，您
   <tr> 
    <td>过期</td> 
    <td>36000000</td> 
-   <td><p>默认的客户端缓存生存时间。 提供默认过期时间间隔，以防特定目录记录不包含有效的目录：：过期值。</p> <p>实数，0或更大。 自生成回复数据后到期的毫秒数。 设置为0时，将始终立即使回复图像过期，这会有效地禁用客户端缓存。 默认情况下，此值设置为10小时，这意味着如果发布了新图像，则旧图像需要10小时才能离开用户的缓存。 如果您需要尽早清除缓存，请联系客户关怀团队。</p> <p>另请参阅图像提供API中的<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">过期</a>。</p> </td> 
+   <td><p>默认的客户端缓存生存时间。 提供默认过期时间间隔，以防特定目录记录不包含有效的目录：：过期值。</p> <p>实数，0或更大。 自生成回复数据后到期的毫秒数。 设置为0时，将始终立即使回复图像过期，这会有效地禁用客户端缓存。 默认情况下，此值设置为10小时，这意味着如果发布了新图像，则旧图像需要10小时才能离开用户的缓存。 如果您需要更快清除缓存，请联系客户支持。</p> <p>另请参阅图像提供API中的<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">过期</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>jpegquality</td> 
    <td>80</td> 
-   <td><p>默认JPEG编码属性。 指定JPEG回复图像的默认属性。</p> <p>整数和标记，以逗号分隔。 第一个值在1.100范围内，用于定义质量。 对于正常行为，第二个值可以为0，或者为1以禁用JPEG编码器通常使用的RGB色度下采样。</p> <p>另请参阅图像提供API中的<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a>。</p> </td> 
+   <td><p>默认JPEG编码属性。 指定JPEG回复图像的默认属性。</p> <p>整数和标记，以逗号分隔。 第一个值在1.100范围内，用于定义质量。 对于正常行为，第二个值可以为0，或者为1以禁用RGB色度下采样(通常由JPEG编码器使用)。</p> <p>另请参阅图像提供API中的<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>maxpix</td> 
@@ -952,7 +952,7 @@ Dynamic Media在启用](#enabling-dynamic-media)后即可使用[。 但是，您
 
 Dynamic Media色彩管理允许您为预览资产校正颜色。
 
-通过颜色校正，摄取的资产会在生成的金字塔TIFF呈现版本中保留其色彩空间（RGB、CMYK、灰色）和嵌入的色彩配置文件。 当您请求动态呈现时，图像颜色会校正到目标颜色空间中。 您可以在JCR的Dynamic Media发布设置中配置输出颜色配置文件。
+通过颜色校正，摄取的资产会在生成的金字塔TIFF呈现版本中保留其色彩空间(RGB、CMYK、灰色)和嵌入的颜色配置文件。 当您请求动态呈现时，图像颜色会校正到目标颜色空间中。 您可以在JCR的Dynamic Media发布设置中配置输出颜色配置文件。
 
 Adobe色彩管理使用ICC配置文件，这是由国际色彩联盟(ICC)定义的格式。
 
@@ -1086,12 +1086,12 @@ Adobe色彩管理使用ICC配置文件，这是由国际色彩联盟(ICC)定义�
       <tr> 
       <td>AppleRGB</td> 
       <td>RGB</td> 
-      <td>Apple RGB</td> 
+      <td>AppleRGB</td> 
       </tr> 
       <tr> 
       <td>CIERGB</td> 
       <td>RGB</td> 
-      <td>CIE RGB</td> 
+      <td>CIERGB</td> 
       </tr> 
       <tr> 
       <td>CoatedFogra27</td> 
@@ -1111,7 +1111,7 @@ Adobe色彩管理使用ICC配置文件，这是由国际色彩联盟(ICC)定义�
       <tr> 
       <td>ColorMatchRGB</td> 
       <td>RGB</td> 
-      <td>颜色匹配RGB</td> 
+      <td>ColorMatchRGB</td> 
       </tr> 
       <tr> 
       <td>EuropeISOCoated</td> 
@@ -1171,7 +1171,7 @@ Adobe色彩管理使用ICC配置文件，这是由国际色彩联盟(ICC)定义�
       <tr> 
       <td>ProPhoto</td> 
       <td>RGB</td> 
-      <td>ProPhoto RGB</td> 
+      <td>ProPhotoRGB</td> 
       </tr> 
       <tr> 
       <td>PS4Default</td> 
@@ -1248,7 +1248,7 @@ Adobe色彩管理使用ICC配置文件，这是由国际色彩联盟(ICC)定义�
 * 为RGB和CMYK图像启用颜色校正。
 * 假定没有颜色配置文件的RGB图像位于`sRGB`颜色空间中。
 * 假定没有颜色配置文件的CMYK图像位于`WebCoated`色彩空间中。
-* 返回RGB输出的动态呈现，以`sRGB`颜色空间返回。
+* 返回RGB输出的动态演绎版，以`sRGB`颜色空间返回。
 * 返回CMYK输出的动态呈现，以`WebCoated`色彩空间返回。
 
 ## 传送资产 {#delivering-assets}

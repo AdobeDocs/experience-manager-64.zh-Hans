@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '3151'
 ht-degree: 0%
@@ -112,8 +112,8 @@ Adobe建议启用HTTPS，因为许多公司都有可嗅探HTTP流量的防火墙
 
 网络优化策略主要取决于可用带宽量和[!DNL Experience Manager]实例的负载。 常用配置选项（包括防火墙或代理）可帮助提高网络性能。 请牢记以下要点：
 
-* 根据您的实例类型（小、中、大），确保您的[!DNL Experience Manager]实例有足够的网络带宽。 如果在AWS上托管[!DNL Experience Manager]，则适当的带宽分配尤为重要。
-* 如果您的[!DNL Experience Manager]实例托管在AWS上，则您可以通过使用通用的扩展策略来获益。 如果用户期望获得高负载，请更新实例的大小。 为适中/低负载减小其大小。
+* 根据您的实例类型（小、中、大），确保您的[!DNL Experience Manager]实例有足够的网络带宽。 如果在AWS上托管[!DNL Experience Manager] ，则分配足够的带宽就显得尤为重要。
+* 如果您的[!DNL Experience Manager]实例托管在AWS上，则使用通用的缩放策略可以使您受益。 如果用户期望获得高负载，请更新实例的大小。 为适中/低负载减小其大小。
 * HTTPS:大多数用户具有可嗅探HTTP流量的防火墙，这可能会对上传操作期间文件的上传甚至文件损坏产生不利影响。
 * 大文件上传：确保用户有与网络的有线连接（WiFi连接快速饱和）。
 
@@ -215,7 +215,7 @@ DAM更新资产工作流包含为任务配置的完整步骤套件，例如Dynam
 >
 >ImageMagick `policy.xml`和`configure.xml`文件可在`/usr/lib64/ImageMagick-*/config/`下找到，而不是`/etc/ImageMagick/`下找到。 有关配置文件位置的详细信息，请参阅[ImageMagick文档](https://www.imagemagick.org/script/resources.php)。
 
-如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，请联系Adobe客户关怀团队，如果您计划处理大量大型PSD或PSB文件。 Experience Manager可能无法处理超过30000 x 23000像素的高分辨率PSB文件。
+如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，如果您计划处理大量大型PSD或PSB文件，请联系Adobe客户支持。 Experience Manager可能无法处理超过30000 x 23000像素的高分辨率PSB文件。
 
 <!-- 
 
@@ -365,7 +365,7 @@ To disable Page Extraction:
 
 禁用Lucene文本提取：
 
-如果您的用户不需要搜索资产内容（例如搜索PDF文档中包含的文本），则可以禁用此功能以提高索引性能。
+如果您的用户不需要搜索资产内容(例如搜索PDF文档中包含的文本)，则可以通过禁用此功能来提高索引性能。
 
 1. 转到[!DNL Experience Manager]包管理器/crx/packmgr/index.jsp
 1. 上载并安装以下包
@@ -418,6 +418,6 @@ To disable Page Extraction:
 * 从DAM更新资产工作流中删除不必要的步骤。
 * 配置工作流和版本清除。
 * 优化Lucene索引配置。
-* 使用最新的Service Pack和修补程序优化索引。 请咨询Adobe客户关怀团队，了解是否存在任何其他可用的索引优化。
+* 使用最新的Service Pack和修补程序优化索引。 请咨询Adobe客户支持，以了解可能提供的任何其他索引优化。
 * 使用`guessTotal`优化查询性能。
 * 如果配置[!DNL Experience Manager]以从文件内容中检测文件类型（通过在[!UICONTROL [!DNL Experience Manager]Web控制台]中配置[!UICONTROL Day CQ DAM Mime Type Service]），则在非高峰时间会批量上传许多文件，因为该操作占用大量资源。

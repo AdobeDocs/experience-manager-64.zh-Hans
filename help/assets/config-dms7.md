@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '5589'
 ht-degree: 4%
@@ -63,7 +63,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## （可选）安装用于批量资产迁移的功能包18912 {#installing-feature-pack}
 
-功能包18912允许您通过FTP批量摄取资产，或在Experience Manager上将资产从Dynamic Media — 混合模式或Dynamic Media Classic迁移到Dynamic Media -Scene7模式。 可从Adobe Professional Services购买。
+功能包18912允许您通过FTP批量摄取资产，或在Experience Manager上将资产从Dynamic Media — 混合模式或Dynamic Media Classic迁移到Dynamic Media - Scene7模式。 可从Adobe Professional Services购买。
 
 有关更多信息，请参阅[安装批量资产迁移功能包18912](bulk-ingest-migrate.md)。
 
@@ -79,7 +79,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 1. 在您的Experience Manager创作实例中，点按Experience Manager徽标以访问全局导航控制台，然后点按工具图标，然后点按&#x200B;**[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media配置]**。
 1. 在Dynamic Media配置浏览器页面的左窗格中，点按&#x200B;**[!UICONTROL 全局]**，然后点按&#x200B;**[!UICONTROL 创建]**。 请勿点按或选择[!UICONTROL global]左侧的文件夹图标。
-1. 在[!UICONTROL 创建Dynamic Media配置]页面上，输入标题、Dynamic Media帐户电子邮件地址和密码。 选择您所在的地区。 此信息通过您的配置电子邮件中的Adobe提供给您。 如果您未收到电子邮件，请联系Adobe客户关怀。
+1. 在[!UICONTROL 创建Dynamic Media配置]页面上，输入标题、Dynamic Media帐户电子邮件地址和密码。 选择您所在的地区。 此信息通过您的配置电子邮件中的Adobe提供给您。 如果您未收到电子邮件，请联系Adobe客户支持。
 
    点按&#x200B;**[!UICONTROL 连接到Dynamic Media]**。
 
@@ -159,11 +159,11 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 #### 配置应用程序常规设置 {#configuring-application-general-settings}
 
-要打开“[!UICONTROL 应用程序常规设置]”页面，请在Dynamic Media Classic全局导航栏中，点按&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
+要打开“[!UICONTROL 应用程序常规设置]”页，请在Dynamic Media Classic全局导航栏中，点按&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
 
 **[!UICONTROL 服务器]**  — 在进行帐户配置时，Dynamic Media会自动为您的公司提供分配的服务器。这些服务器用于为您的网站和应用程序构建URL字符串。 这些URL调用特定于您的帐户。 请勿更改任何服务器名称，除非Experience Manager支持明确指示执行此操作。
 
-**[!UICONTROL 覆盖图像]**  - Dynamic Media不允许两个文件具有相同的名称。每个项目的URL ID（文件名减去扩展名）必须唯一。 以下选项指定了如何上传替换资产：是替换原始内容还是变为重复内容。 重复资产将使用“–1”重命名（例如，chair.tif将chair-1.tif重命名）。 这些选项会影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件不同的资产（例如JPG、TIF或PNG）。
+**[!UICONTROL 覆盖图像]**  - Dynamic Media不允许两个文件具有相同的名称。每个项目的URL ID（文件名减去扩展名）必须唯一。 以下选项指定了如何上传替换资产：是替换原始内容还是变为重复内容。 重复资产将使用“–1”重命名（例如，chair.tif将chair-1.tif重命名）。 这些选项会影响上传到与原始文件夹不同的文件夹的资产，或文件扩展名与原始文件夹不同的资产(例如JPG、TIF或PNG)。
 
 * **[!UICONTROL 在当前文件夹中覆盖，基本图像名称/扩展名相同]**  — 此选项是最严格的替换规则。它要求您将替换图像上传到与原始图像相同的文件夹，并且替换图像的文件扩展名与原始图像相同。 如果未满足这些要求，则会创建重复项。
 
@@ -182,11 +182,11 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 #### 配置色彩管理 {#configuring-color-management}
 
-Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校正，摄取的资产会保留其色彩空间（RGB、CMYK、灰色）和嵌入的色彩配置文件。 请求动态呈现时，会使用CMYK、RGB或“灰色”输出将图像颜色校正为目标颜色空间。 请参阅[配置图像预设](managing-image-presets.md)。
+Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校正，摄取的资产会保留其色彩空间(RGB、CMYK、灰色)和嵌入的色彩配置文件。 请求动态呈现时，图像颜色会使用CMYK、RGB或灰色输出校正为目标颜色空间。 请参阅[配置图像预设](managing-image-presets.md)。
 
 **要配置默认颜色属性，以便在请求图像时启用颜色校正，请执行以下操作：**
 
-1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后使用在配置期间提供的凭据登录到您的帐户。 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]**。
+1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后使用配置期间提供的凭据登录到您的帐户。 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]**。
 1. 展开&#x200B;**[!UICONTROL 发布设置]**&#x200B;区域，然后选择&#x200B;**[!UICONTROL 图像服务器]**。设置发布实例的默认设置时，将&#x200B;**[!UICONTROL 发布上下文]**&#x200B;设置为&#x200B;**[!UICONTROL 图像提供]**。
 1. 滚动到必须更改的属性。 例如，**[!UICONTROL 色彩管理属性]**&#x200B;区域中的属性。
 
@@ -194,7 +194,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
    * [!UICONTROL CMYK默认色彩空间]  — 默认CMYK颜色配置文件的名称
    * [!UICONTROL 灰阶默认颜色空间]  — 默认灰色配置文件的名称
-   * [!UICONTROL RGB默认色彩空间]  — 默认RGB颜色配置文件的名称
+   * [!UICONTROL RGB默认颜色空间]  — 默认RGB颜色配置文件的名称
    * [!UICONTROL 颜色转换渲染意图]  — 指定渲染意图。可接受的值为`perceptual`、`relative` `colometric`、`saturation`和`absolute colometric`。 Adobe建议将`relative`作为默认值。
 
 1. 点按&#x200B;**[!UICONTROL 保存]**。
@@ -206,7 +206,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 * 为RGB和CMYK图像启用颜色校正。
 * 假定没有颜色配置文件的RGB图像位于`sRGB`颜色空间中。
 * 假定没有颜色配置文件的CMYK图像位于`WebCoated`色彩空间中。
-* 返回RGB输出的动态呈现，在`sRGB`色彩空间中返回。
+* 返回RGB输出的动态演绎版，将其以`sRGB`颜色空间返回。
 * 返回CMYK输出的动态呈现，以`WebCoated`色彩空间返回。
 
 #### 编辑支持的格式的MIME类型 {#editing-mime-types-for-supported-formats}
@@ -244,7 +244,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 
 #### 为不支持的格式添加自定义MIME类型 {#adding-custom-mime-types-for-unsupported-formats}
 
-您可以为Experience Manager资产中不支持的格式添加自定义MIME类型。 要确保您在CRXDE Lite中添加的任何新节点不会被Experience Manager删除，请将MIME类型移到&#x200B;**[!UICONTROL image_]**&#x200B;之前，并将其启用值设置为&#x200B;**[!UICONTROL false]**。
+您可以为Experience Manager Assets中不支持的格式添加自定义MIME类型。 要确保您在CRXDE Lite中添加的任何新节点不会被Experience Manager删除，请将MIME类型移到&#x200B;**[!UICONTROL image_]**&#x200B;之前，并将其启用值设置为&#x200B;**[!UICONTROL false]**。
 
 **要为不支持的格式添加自定义MIME类型，请执行以下操作：**
 
@@ -472,7 +472,7 @@ spin-01-01
 
 #### 更新预定义的作业参数以处理不同的文件格式
 
-您可以在上传文件时调整作业参数以加快处理速度。 例如，如果上传PSD文件，但不希望将它们作为模板进行处理，则可以将图层提取设置为false(off)。 在这种情况下，调整的作业参数如下所示：`process=None&createTemplate=false`。
+您可以在上传文件时调整作业参数以加快处理速度。 例如，如果您上传PSD文件，但不希望将它们作为模板进行处理，则可以将层提取设置为false(off)。 在这种情况下，调整的作业参数如下所示：`process=None&createTemplate=false`。
 
 如果确实要打开模板创建，请使用以下参数：`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`。
 
@@ -492,7 +492,7 @@ Adobe建议对PDF、PostScript®和PSD文件使用以下“已调整”的作业
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-要更新其中的任何参数，请按照[启用基于MIME类型的Assets/Dynamic Media Classic上传作业参数支持](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)中的步骤操作。
+要更新其中的任何参数，请按照[启用基于MIME类型的Assets/Dynamic Media Classic上传作业参数support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)中的步骤操作。
 
 #### 更新Granite Transient工作流队列 {#updating-the-granite-transient-workflow-queue}
 
@@ -542,7 +542,7 @@ Granite工作流队列用于非临时工作流。 在Dynamic Media中，它用�
 
 #### 更新Scene7上传连接 {#updating-the-scene-upload-connection}
 
-Scene7上传连接设置可将Experience Manager资产同步到Dynamic Media Classic服务器。
+Scene7上传连接设置可将Experience Manager Assets同步到Dynamic Media Classic服务器。
 
 **要更新Scene7上传连接，请执行以下操作：**
 

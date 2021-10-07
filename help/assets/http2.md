@@ -1,8 +1,8 @@
 ---
 title: HTTP2内容交付
-seo-title: HTTP2内容交付
+seo-title: HTTP2 Delivery of Content
 description: HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信息，同时降低所需的处理能力。
-seo-description: HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信息，同时降低所需的处理能力。
+seo-description: HTTP/2 improves the way browsers and servers communicate, allowing for faster transfer of information while reducing the amount of needed processing power.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
-feature: 资产管理
+feature: Asset Management
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '705'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信�
 
 Adobe自己的测试产生了以下结果：
 
-* 对于图像，响应时间缩短了7%-28%，具体取决于设备和浏览器。 在iOS设备上，性能提升最为显着。
+* 对于图像，响应时间缩短了7%-28%，具体取决于设备和浏览器。 性能提升最显着的是iOS设备。
 * 对于查看器，加载时间性能提高了15%。
 
 以下演示说明了HTTP/1加载与HTTP/2加载之间的区别：
@@ -60,7 +60,7 @@ Adobe自己的测试产生了以下结果：
 
 您必须启动请求，以切换到HTTP/2;它不会自动为您完成。
 
-1. 启动技术支持请求以切换到HTTP2。 请参阅[访问AEM支持门户](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)。
+1. 启动技术支持请求以切换到HTTP2。 请参阅[访问客户支持门户](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)。
 
    1. 在支持请求中提供以下信息：
 

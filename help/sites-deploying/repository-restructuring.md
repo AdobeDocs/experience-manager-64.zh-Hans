@@ -1,19 +1,19 @@
 ---
 title: AEM 6.4中的存储库重组
-seo-title: AEM 6.4中的存储库重组
+seo-title: Repository Restructuring in AEM 6.4
 description: 了解AEM 6.4中存储库重组的基础知识和推理
-seo-description: 了解AEM 6.4中存储库重组的基础知识和推理
+seo-description: Learn about the basics and reasoning behind the repository restructuring in AEM 6.4
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: 升级
+feature: Upgrading
 exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
-source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -44,12 +44,12 @@ ht-degree: 0%
 
 * [所有AEM解决方案共有的存储库重组](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [AEM Sites存储库重组](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [AEM Assets存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [AEM Assets存储库重组](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
 * [AEM Assets Dynamic Media存储库重组](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [AEM Forms存储库重组](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [AEM Communities存储库重组](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
 * [AEM Commerce存储库重组](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-4.md)
 
-每个页面都包含两个对应于必要更改的紧急程度的部分。 在AEM 6.4升级项目中，应处理“升级版本6.4”部分下的任何内容。 “6.5升级之前”下的任何内容都可以选择性地推迟到升级后执行。
+每个页面都包含两个对应于必要更改的紧急程度的部分。 在AEM 6.4升级项目中，应处理“升级版本6.4”部分下的任何内容。 “6.5升级之前”下的任何内容都可以选择推迟到升级后执行。
 
 页面上的每个条目都包含一个“重组指南”字段，该字段详细介绍了与新的6.4存储库模型保持一致的建议技术策略，以便为以前位于/etc文件夹下的内容引用新位置。 附加的“注释”字段提供了任何其他有用的上下文。

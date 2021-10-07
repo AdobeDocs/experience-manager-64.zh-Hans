@@ -1,18 +1,18 @@
 ---
 title: 用户、组和访问权限管理
-seo-title: 用户、组和访问权限管理
+seo-title: User, Group and Access Rights Administration
 description: 了解AEM中的用户、组和访问权限管理。
-feature: 安全
-seo-description: 了解AEM中的用户、组和访问权限管理。
+feature: Security
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
 exl-id: 9c14e57b-019e-45ae-9e96-40424fa609c2
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3120'
 ht-degree: 0%
 
 ---
@@ -59,15 +59,15 @@ ht-degree: 0%
 
 CRX允许您配置用户帐户和组帐户的访问权限。 评估的基本原则同样适用于这两者。
 
-## 如何评估访问权限{#how-access-rights-are-evaluated}
+## 如何评估访问权限 {#how-access-rights-are-evaluated}
 
 >[!NOTE]
 >
->CRX实施由JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html)定义的[访问控制。
+>CRX实施由JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)定义的[访问控制。
 >
 >CRX存储库的标准安装配置为使用基于资源的访问控制列表。 这是JSR-283访问控制的一个可能实施，也是Jackrabbit提供的一个实施。
 
-### 主体和承担者{#subjects-and-principals}
+### 主体与主体 {#subjects-and-principals}
 
 CRX在评估访问权限时使用两个关键概念：
 
@@ -91,7 +91,7 @@ CRX在评估访问权限时使用两个关键概念：
       分配给用户所属的任何组的所有权限。
    然后，结果用于允许或拒绝对所请求资源的访问。
 
-#### 编译主题{#compiling-the-list-of-access-rights-for-a-subject}的访问权限列表
+#### 编制主题访问权列表 {#compiling-the-list-of-access-rights-for-a-subject}
 
 在CRX中，主题取决于：
 
@@ -114,8 +114,7 @@ CRX在评估访问权限时使用两个关键概念：
 >
 
 
-
-### 解析请求和访问权限{#resolving-request-and-access-rights}
+### 解决请求和访问权限 {#resolving-request-and-access-rights}
 
 当CRX处理该请求时，它会将来自主题的访问请求与存储库节点上的访问控制列表进行比较：
 
@@ -123,7 +122,7 @@ CRX在评估访问权限时使用两个关键概念：
 
 ![chlimage_1-308](assets/chlimage_1-308.png)
 
-### 优先级顺序{#order-of-precedence}
+### 优先顺序 {#order-of-precedence}
 
 对CRX中的访问权限进行评估的方式如下：
 
@@ -212,7 +211,7 @@ CRX在评估访问权限时使用两个关键概念：
  </tbody> 
 </table>
 
-## 用户管理{#user-administration}
+## 用户管理 {#user-administration}
 
 **用户管理**&#x200B;使用标准对话框。
 
@@ -235,7 +234,7 @@ CRX在评估访问权限时使用两个关键概念：
 使用此帐户访问CRX时需要密码。
 
 * ****
-ntlmhashAutomatically assigned for each new account and updated when the password changed.
+ntlmhash自动为每个新帐户分配，并在密码更改时更新。
 
 * 您可以通过定义名称、类型和值来添加新属性。 对于每个新属性，单击“保存”（绿色勾号）。
 
@@ -251,7 +250,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 
 如果某个帐户模拟另一个帐户，则很难查看。 日志文件不包含有关事件发生模拟的事实的信息。 因此，如果用户B模拟用户A，则所有事件看起来都像是用户A个人执行的。
 
-### 创建用户帐户{#creating-a-user-account}
+### 创建用户帐户 {#creating-a-user-account}
 
 1. 打开&#x200B;**用户管理**&#x200B;对话框。
 1. 单击&#x200B;**创建用户**。
@@ -279,8 +278,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 >
 
 
-
-### 更新用户帐户{#updating-a-user-account}
+### 更新用户帐户 {#updating-a-user-account}
 
 1. 使用&#x200B;**用户管理**&#x200B;对话框打开所有帐户的列表视图。
 
@@ -289,7 +287,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 1. 进行更改，然后单击该条目的“保存”（绿色勾号）。
 1. 单击&#x200B;**关闭**&#x200B;以完成，或单击&#x200B;**列表……**&#x200B;返回所有用户帐户的列表。
 
-### 删除用户帐户{#removing-a-user-account}
+### 删除用户帐户 {#removing-a-user-account}
 
 1. 使用&#x200B;**用户管理**&#x200B;对话框打开所有帐户的列表视图。
 
@@ -302,7 +300,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 >
 >不会删除访问权限条目。 这可确保历史完整性。
 
-### 定义属性{#defining-properties}
+### 定义属性 {#defining-properties}
 
 您可以为新帐户或现有帐户定义&#x200B;**属性**:
 
@@ -314,15 +312,15 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 
 可以使用垃圾桶符号删除现有属性。
 
-除密码外，属性无法编辑，必须删除并重新创建。
+除“密码”外，属性无法编辑，必须删除并重新创建。
 
-#### 更改密码{#changing-the-password}
+#### 更改密码 {#changing-the-password}
 
 **Password**&#x200B;是一个特殊属性，可通过单击&#x200B;**Change Password**&#x200B;链接来更改该属性。
 
 您还可以从CRX Explorer的&#x200B;**Security**&#x200B;菜单中更改您自己的用户帐户的密码。
 
-### 定义模拟器{#defining-an-impersonator}
+### 定义模拟器 {#defining-an-impersonator}
 
 您可以为新帐户或现有帐户定义模拟器：
 
@@ -333,7 +331,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 
 1. 为新属性单击“保存”（绿色勾号）。
 
-## 组管理{#group-administration}
+## 群组管理 {#group-administration}
 
 **组管理**&#x200B;使用标准对话框。
 
@@ -347,14 +345,14 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 **属性**
 
 * ****
-群组帐户的GroupIDShort名称。
+组帐户的GroupIDShort名称。
 
 * **主**
 体名称组帐户的全文名称。
 
 * 您可以通过定义名称、类型和值来添加新属性。 对于每个新属性，单击“保存”（绿色勾号）。
 * ****
-成员您可以添加用户或其他群组作为此群组的成员。
+成员您可以添加用户或其他组作为此组的成员。
 
 **群组** 成员资格此设置显示当前群组帐户所属的所有群组。“继承”列指示因其他组的成员资格而继承的成员资格。
 
@@ -368,7 +366,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 >
 >在任何资产文件夹上为用户分配了“所有者”、“编辑者”或“查看者”角色后，系统都会创建一个新组。 组名称的格式为`mac-default-<foldername>`，适用于定义角色的每个文件夹。
 
-### 创建组帐户{#creating-a-group-account}
+### 创建群组帐户 {#creating-a-group-account}
 
 1. 打开&#x200B;**组管理**&#x200B;对话框。
 1. 单击&#x200B;**创建组**。
@@ -384,7 +382,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
    1. 请参阅&#x200B;**组成员资格**。
    1. 管理&#x200B;**成员**。
 
-### 更新组帐户{#updating-a-group-account}
+### 更新群组帐户 {#updating-a-group-account}
 
 1. 使用&#x200B;**Group Administration**&#x200B;对话框打开所有帐户的列表视图。
 
@@ -393,7 +391,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 1. 进行更改，然后单击该条目的“保存”（绿色勾号）。
 1. 单击&#x200B;**关闭**&#x200B;以完成，或单击&#x200B;**列表……**&#x200B;返回所有组帐户的列表。
 
-### 删除组帐户{#removing-a-group-account}
+### 删除组帐户 {#removing-a-group-account}
 
 1. 使用&#x200B;**Group Administration**&#x200B;对话框打开所有帐户的列表视图。
 
@@ -406,7 +404,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 >
 >不会删除访问权限条目。 这可确保历史完整性。
 
-### 定义属性{#defining-properties-1}
+### 定义属性 {#defining-properties-1}
 
 您可以为新帐户或现有帐户定义属性：
 
@@ -432,7 +430,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 
 或删除具有垃圾桶符号的现有成员。
 
-## 访问权限管理{#access-right-management}
+## 访问权限管理 {#access-right-management}
 
 使用CRXDE Lite的&#x200B;**访问控制**&#x200B;选项卡，您可以定义访问控制策略并分配相关权限。
 
@@ -455,7 +453,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 * **有效访问控**
 制策略这些是现在对任何访问请求生效的访问控制策略。它们显示从本地策略和从父级继承的任何策略派生的聚合策略。
 
-### 策略选择{#policy-selection}
+### 策略选择 {#policy-selection}
 
 可以为以下项选择策略：
 
@@ -467,7 +465,7 @@ ntlmhashAutomatically assigned for each new account and updated when the passwor
 `jcr:namespaceManagement` 权限，仅与存储库相关，而与节点无关。
 
 * ****
-Principal（主体）在存储库中注册的主体。
+主体在存储库中注册的主体。
 
    您可以键入&#x200B;**Principal**&#x200B;名称，也可以单击字段右侧的图标以打开&#x200B;**选择Principal**&#x200B;对话框。
 
@@ -578,7 +576,7 @@ Principal（主体）在存储库中注册的主体。
  </tbody> 
 </table>
 
-### 正在注册新权限{#registering-new-privileges}
+### 注册新权限 {#registering-new-privileges}
 
 您还可以注册新权限：
 
@@ -592,7 +590,7 @@ Principal（主体）在存储库中注册的主体。
 
 1. 单击&#x200B;**确定**&#x200B;进行保存。该权限现在可供选择。
 
-### 添加访问控制条目{#adding-an-access-control-entry}
+### 添加访问控制条目 {#adding-an-access-control-entry}
 
 1. 选择您的资源并打开&#x200B;**访问控制**&#x200B;选项卡。
 
@@ -621,7 +619,7 @@ Principal（主体）在存储库中注册的主体。
 
 CRX将验证您的选择；对于给定的主体，给定节点上存在（最多）1个拒绝和1个允许条目。 该实施始终清除冗余条目，并确保允许条目和拒绝条目中未列出相同的权限。
 
-### 订购本地访问控制策略{#ordering-local-access-control-policies}
+### 订购本地访问控制策略 {#ordering-local-access-control-policies}
 
 列表中的顺序指示应用策略的顺序。
 
@@ -631,13 +629,13 @@ CRX将验证您的选择；对于给定的主体，给定节点上存在（最�
 
 1. **Local**&#x200B;和&#x200B;**有效访问控制策略**&#x200B;的表中都将显示更改。
 
-### 删除访问控制策略{#removing-an-access-control-policy}
+### 删除访问控制策略 {#removing-an-access-control-policy}
 
 1. 在&#x200B;**本地访问控制策略**&#x200B;的表中，单击条目右侧的红色图标(-)。
 
 1. 将从&#x200B;**Local**&#x200B;和&#x200B;**有效访问控制策略**&#x200B;的表中删除该条目。
 
-### 测试访问控制策略{#testing-an-access-control-policy}
+### 测试访问控制策略 {#testing-an-access-control-policy}
 
 1. 从CRXDE Lite工具栏中选择&#x200B;**工具**，然后选择&#x200B;**测试访问控制……**。
 

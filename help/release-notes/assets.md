@@ -2,7 +2,7 @@
 title: AEM Assets 发行说明
 seo-title: AEM Assets
 description: 特定于Adobe Experience Manager 6.4 Assets的发行说明。
-seo-description: 特定于Adobe Experience Manager 6.4 Assets的发行说明。
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
 uuid: f5e7608d-f906-4a35-b442-899703de3587
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,7 +12,7 @@ discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
 source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1647'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ AEM 6.4 Assets中的主要功能、亮点和增强功能在这些发行说明中
 
 要详细了解该功能、先决条件以及如何访问该功能，请参阅[Adobe资产链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)页面。
 
-## 增强型智能标记(由Adobe Sensei提供支持){#enhanced-smart-tags-powered-by-adobe-sensei}
+## 增强型智能标记(由Adobe Sensei提供支持) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
 AEM 6.4除了AEM 6.3中启动的智能标记之外，还引入了基于人工智能的增强型智能标记功能。
 
@@ -36,7 +36,7 @@ AEM 6.4除了AEM 6.3中启动的智能标记之外，还引入了基于人工智
 
 要使用AEM Assets增强型智能标记，请安装AEM 6.4](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html)的最新Service Pack [。
 
-## 智能翻译搜索(由Adobe Sensei提供支持){#smart-translation-search-powered-by-adobe-sensei}
+## 智能翻译搜索(由Adobe Sensei提供支持) {#smart-translation-search-powered-by-adobe-sensei}
 
 AEM 6.4引入了智能翻译搜索功能，以支持多语言搜索方案。 现在，跨多个区域设置的全球分散团队客户可以访问不同语言的搜索功能，而无需执行成本高昂且耗时的翻译工作流程。
 
@@ -44,7 +44,7 @@ AEM 6.4引入了智能翻译搜索功能，以支持多语言搜索方案。 现
 * 智能标记以英语生成，并可以机器翻译成其他语言。
 * 多语言搜索是使用支持50多种语言的开源库Apache Joshua构建的。
 
-## 用户体验{#user-experience}
+## 用户体验 {#user-experience}
 
 AEM 6.4在浏览、搜索、多页面资产和管理工具方面提供了显着的用户体验改进。 详细信息如下：
 
@@ -60,7 +60,7 @@ AEM 6.4在浏览、搜索、多页面资产和管理工具方面提供了显着�
 
 * 新的“返回搜索”按钮，能够导航到搜索项目并返回到搜索结果中的相同位置，而无需再次运行搜索查询。
 * 新的搜索结果计数可显示搜索结果的数量。
-* 改进了文件类型搜索过滤器，与以前的图像、文档、多媒体选项相比，该过滤器能够根据细粒度mime类型（如JPG、PNG和PSD）筛选搜索结果。
+* 改进了“文件类型搜索过滤器”，与以前的图像、文档、多媒体选项相比，它能够根据细粒度MIME类型(如JPG、PNG和PSD)筛选搜索结果。
 * 改进了具有准确时间戳而不是先前时间滑块功能的搜索过滤器。
 
 多页面资产改进
@@ -120,7 +120,7 @@ AEM桌面应用程序已更新至版本1.8，该版本与AEM 6.4兼容。AEM桌�
 * [用户指南](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)，面向使用应用程序的最终用户。
 * [安装指南](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html)，旨在帮助管理员设置AEM和AEM桌面应用程序以便协同工作
 
-## 分层存储{#tiered-storage}
+## 分层存储 {#tiered-storage}
 
 AEM 6.4包含一组功能，这些功能支持各种分层存储首选项并实施生命周期规则。 存储选项还支持（但不限于）公共云 — AWS或Azure。
 
@@ -134,7 +134,7 @@ AEM 6.4包含一组功能，这些功能支持各种分层存储首选项并实�
 * 在AEM 6.4中，已关闭的用户组或CUG提供了一种方法来限制发布实例上对文件夹的访问，该方法是一个触屏UI选项，用于通过文件夹级别的文件夹属性页面添加主体，并将其应用于内部的所有文件夹和子文件夹/资产。
 * 在发布模式下，如果配置了CUG并在文件夹上启用了授权，则当用户尝试访问该文件夹时，会将用户重定向到登录页面。 因此，授权用户只能在成功登录后才能访问文件夹及其资产。 因此，CUG会限制除选定承担者外的每个人对内容存储库中给定树的读取访问权限。
 
-## Dynamic Media附加组件{#dynamic-media-add-on}
+## Dynamic Media附加组件 {#dynamic-media-add-on}
 
 Dynamic Media 6.4中的Dynamic Media支持一种新模式，在该模式中，主控资产通过AEM Assets web UI上传和管理，而云交付服务会在后台处理动态演绎版和其他动态媒体功能。
 
@@ -142,7 +142,7 @@ Dynamic Media 6.4中的Dynamic Media支持一种新模式，在该模式中，�
 
 此外，AEM 6.4还引入了由Adobe Sensei提供支持的新功能、对VR和3D等新兴媒体的增强、Dynamic Media查看器，以及对交互式图像和传送横幅中的体验片段的支持。
 
-### 智能裁剪(由Adobe Sensei提供支持){#smart-crop-powered-by-adobe-sensei}
+### 智能裁剪(由Adobe Sensei提供支持) {#smart-crop-powered-by-adobe-sensei}
 
 * 智能裁剪可自动提供图像的无损裁剪以保留响应式设计的目标点。 您可以预览裁剪的建议，并在必要时手动调整这些建议。
 * 此功能还支持为产品图像自动生成色板。 自动生成色板有助于将颜色色板、图案色板或两者自动添加到产品图像。
@@ -159,7 +159,7 @@ Dynamic Media 6.4中的Dynamic Media支持一种新模式，在该模式中，�
 
 请参阅[智能成像](../assets/imaging-faq.md)文档，以了解更多信息。
 
-### 新兴媒体和查看器增强功能{#emerging-media-amp-viewer-enhancements}
+### 新兴媒体和查看器增强功能 {#emerging-media-amp-viewer-enhancements}
 
 * 支持新查看器，为用户提供更好、沉浸式的体验。
 * 全景查看器有助于吸引用户，并提供更好体验文件室场景、属性、位置和景观的功能。 请参阅[全景图像](../assets/panoramic-images.md)文档以了解相关信息。

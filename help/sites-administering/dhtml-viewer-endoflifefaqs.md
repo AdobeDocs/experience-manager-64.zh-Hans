@@ -7,18 +7,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 exl-id: 7a9d6e97-2592-43cb-b5ab-4238409bd7f3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 9%
 
 ---
 
-# DHTML查看器生命周期终止{#dhtml-viewer-end-of-life-}
+# DHTML查看器生命周期终止 {#dhtml-viewer-end-of-life-}
 
 自2014年1月31日起，DHTML查看器平台正式终止使用。
 
-有关最新支持的查看器，请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
+有关最新支持的查看器，请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)。
 
 <!-- **What is the change?**
 

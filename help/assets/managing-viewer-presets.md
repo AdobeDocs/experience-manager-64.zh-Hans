@@ -1,8 +1,8 @@
 ---
 title: 管理Dynamic Media查看器预设
-seo-title: 管理Dynamic Media查看器预设
+seo-title: Managing Dynamic Media viewer presets
 description: 如何创建和管理Dynamic Media查看器预设
-seo-description: 如何创建和管理Dynamic Media查看器预设
+seo-description: How to create and manage Dynamic Media viewer presets
 uuid: 31ef7a4e-2053-43b5-ac6c-cdc4b30c3914
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
-feature: 查看器预设
+feature: Viewer Presets
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
-source-wordcount: '4236'
+source-wordcount: '4220'
 ht-degree: 21%
 
 ---
@@ -29,7 +29,7 @@ Dynamic Media查看器预设是一组设置，用于确定用户在其计算机�
 路径: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 例如，3.10 SDK:[https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-另请参阅《[AdobeDynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
+另请参阅《[AdobeDynamic Media查看器参考指南》](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)。
 
 本节介绍如何创建、编辑和管理查看器预设。 无论您何时预览资产，都可以将查看器预设应用到资产。 请参阅[应用查看器预设](viewer-presets.md)。
 
@@ -55,7 +55,7 @@ Dynamic Media查看器预设是一组设置，用于确定用户在其计算机�
 
 ## 查看器支持响应式设计的网页 {#viewer-support-for-responsive-designed-web-pages}
 
-不同的网页有不同的需求。 例如，有时您希望网页提供一个链接，以在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，可能需要直接将HTML5查看器嵌入到托管页面。 在后一种情况下，网页可以具有静态布局。 或者，它可以是&#x200B;*响应式*，并在不同设备上显示，或者针对不同的浏览器窗口大小显示不同。 为了满足这些需求，Dynamic Media附带的所有预定义现成HTML5查看器都支持静态网页和响应式设计的网页。
+不同的网页有不同的需求。 例如，有时您希望网页提供一个链接，以在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，可能需要直接将HTML5查看器嵌入到托管页面。 在后一种情况下，网页可以具有静态布局。 或者，它可以是&#x200B;*响应式*，并在不同设备上显示，或者针对不同的浏览器窗口大小显示不同。 为了满足这些需求，Dynamic Media附带的所有预定义开箱即用的HTML5查看器都支持静态网页和响应式设计的网页。
 
 有关如何将响应式查看器嵌入网页的更多信息，请参阅&#x200B;*图像服务API帮助*&#x200B;中的[响应式图像库](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)。
 
@@ -69,8 +69,8 @@ Dynamic Media查看器预设是一组设置，用于确定用户在其计算机�
 Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容：
 
 * 台式机
-* Apple iPhone
-* Apple iPad
+* AppleiPhone
+* AppleiPad
 * Android智能手机
 * Android平板电脑
 * 对于视频，为[Blackberry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)提供了对MP4播放的额外支持。
@@ -107,7 +107,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
 有关查看器支持的Web浏览器和操作系统版本的信息，您可以查看查看器发行说明。
 
-请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)目录中的&#x200B;*查看器发行说明*。
+请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)目录中的&#x200B;*查看器发行说明*。
 
 >[!NOTE]
 >
@@ -154,8 +154,8 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 | **拖动** | 平移 | 平移 | 平移 |
 | **点按** | 显示弹出窗口 | 显示或隐藏用户界面 | 显示或隐藏用户界面 |
 | **双击** | 不适用 | 放大或重置 | 放大或重置 |
-| **捏开** | 不适用 | 放大（仅限iOS和Android 3x） | 放大（仅限iOS和Android 3x） |
-| **捏合关闭** | 不适用 | 缩小（仅限iOS和Android 3x） | 缩小（仅限iOS和Android 3x） |
+| **捏开** | 不适用 | 放大(仅iOS和Android 3x) | 放大(仅iOS和Android 3x) |
+| **捏合关闭** | 不适用 | 缩小(仅限iOS和Android 3x) | 缩小(仅限iOS和Android 3x) |
 | **轻扫** | 滚动色板条 | 滚动图像 | 旋转 |
 | **弗里克** | 滚动色板条 | 滚动图像 | 旋转 |
 
@@ -212,7 +212,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
       通过可视编辑器，您可以查看特定属性对样式有何影响。 只需设置或调整任何属性，即可使用编辑器左侧的示例立即查看该属性对查看器有何影响。
 
-      [查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的任意“自定义&#x200B;*&lt;viewer_name>*&#x200B;查看器”帮助主题中介绍了每种类型查看器预设的CSS样式属性。
+      [查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)中的任意“自定义&#x200B;*&lt;viewer_name>*&#x200B;查看器”帮助主题中介绍了每种类型查看器预设的CSS样式属性。
 
       例如，如果要创建类型为`Mixed_Media`的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) ，以获取每个属性的列表和说明。
 
@@ -220,7 +220,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
       导入CSS文件时，可视编辑器会检查CSS是否使用正确的查看器标记。 例如，如果要创建缩放查看器，则必须使用在父查看器元素上定义的查看器类名称`.s7mixedmediaviewer`定义所有导入的CSS规则。
 
-      只要为给定查看器正确定义CSS标记，就可以导入任意手工CSS。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中进行了描述。 例如，如果要阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，可视编辑器可能无法理解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可以工作。
+      只要为给定查看器正确定义CSS标记，就可以导入任意手工CSS。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)中的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中进行了描述。 例如，如果要阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，可视编辑器可能无法理解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可以工作。
    >[!NOTE]
    >
    >如果您希望直接在其原始表单中编辑 CSS，请点按“选定类型”下拉菜单下的&#x200B;**[!UICONTROL 显示/隐藏 CSS]**（您可能需要向上滚动可视编辑器才能看到此选项）。****
@@ -258,7 +258,7 @@ Dynamic Media附带的所有现成查看器预设都与以下系统完全兼容�
 
 | 显示模式 | 描述 |
 |---|---|
-| [!UICONTROL 区段] |  区段是现成交互式视频查看器预设Shoppable_Video_light和Shoppable_Video_dark的默认显示模式，以及您自己创建的任何交互式视频查看器预设。 |
+| [!UICONTROL 区段] |  对现成交互式视频查看器预设Shoppable_Video_light和Shoppable_Video_dark的默认显示模式以及您自行创建的任何交互式视频查看器预设进行分段。 |
 |  | 在此模式下，如果分配给视频区段的缩略图数量少于显示面板中的可见点数，则不会提取下一个或上一个子区段的缩略图以填充面板中的任何空白点。 即，它保留分配给特定视频区段的色板的显示。 |
 | [!UICONTROL 连续] | 在[!UICONTROL 连续]显示模式下，如果区段中缩略图的数量小于面板中可见缩略图的数量，则在显示最后一个缩略图时，查看器会自动包含来自下一个区段或上一个区段的缩略图显示。 |
 

@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 创建、管理、交付和优化数字资产。
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 49%
+source-wordcount: '636'
+ht-degree: 48%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 49%
    + [使 CDN 缓存内容无效](invalidate-cdn-cached-content.md)
    + [安装用于批量资产迁移的功能包18912](bulk-ingest-migrate.md)
    + [使用选择器](working-with-selectors.md)
-+ 扩展资产{#extending}
++ 扩展资产 {#extending}
    + [自定义和扩展资产](extending-assets.md)
    + [使用媒体处理程序和工作流处理资产](media-handlers.md)
    + [扩展资产搜索](searchx.md)
@@ -81,7 +81,7 @@ ht-degree: 49%
    + [扩展资产编辑器](asseteditorx.md)
    + [资产 HTTP API](mac-api-assets.md)
    + [资产代理开发](proxy.md)
-+ 管理资产{#administer}
++ 管理资产 {#administer}
    + [资产支持的格式](assets-formats.md)
    + [搜索 Facet](search-facets.md)
    + [管理资产的元数据](metadata.md)
@@ -138,7 +138,7 @@ ht-degree: 49%
    + [内容片段 - 删除注意事项](content-fragments-delete.md)
    + [内容片段 — Markdown](content-fragments-markdown.md)
    + [为内容片段创建翻译项目](creating-translation-projects-for-content-fragments.md)
-+ 管理资产{#managing}
++ 管理资产 {#managing}
    + [使用针对触摸优化的用户界面管理资产](managing-assets-touch-ui.md)
    + [管理多个资产和收藏集](managing-multiple-assets.md)
    + [资产选择器](asset-selector.md)
@@ -165,3 +165,7 @@ ht-degree: 49%
    + [专用文件夹共享](private-folder.md)
    + [智能内容服务培训准则](smart-tags-training-guidelines.md)
    + [视频演绎版](video-renditions.md)
++ 与其他解决方案集成 {#integrations}
+   + [集成 [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [安装 [!DNL enhanced connector] 表示 [!DNL Workfront]](workfront-connector-install.md)
+   + [配置 [!DNL enhanced connector] 表示 [!DNL Workfront]](workfront-connector-configure.md)

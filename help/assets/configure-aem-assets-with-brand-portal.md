@@ -5,7 +5,7 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
+source-git-commit: a50cd2b50191b86ac27cc228944c6c9e917b08cb
 workflow-type: tm+mt
 source-wordcount: '1646'
 ht-degree: 37%
@@ -14,11 +14,11 @@ ht-degree: 37%
 
 # 使用 Brand Portal 配置 AEM Assets {#configure-integration-64}
 
-Adobe Experience Manager Assets通过[!DNL Adobe I/O]使用Brand Portal进行配置，以获取IMS令牌以授权您的Brand Portal租户。
+Adobe Experience Manager Assets通过 [!DNL Adobe I/O]，可获取IMS令牌以授权您的Brand Portal租户。
 
 >[!NOTE]
 >
->AEM 6.4.8.0及更高版本支持通过[!DNL Adobe I/O]配置AEM Assets与Brand Portal。
+>通过配置AEM Assets与Brand Portal [!DNL Adobe I/O] 在AEM 6.4.8.0及更高版本上受支持。
 >
 >以前，Brand Portal是通过旧版OAuth网关在经典UI中配置的，该网关使用JWT令牌交换获取IMS访问令牌以进行授权。
 
@@ -26,12 +26,12 @@ Adobe Experience Manager Assets通过[!DNL Adobe I/O]使用Brand Portal进行配
 >
 >***仅适用于现有客户***
 >
->建议继续使用现有的旧版OAuth网关配置。 如果旧版OAuth网关配置出现问题，请删除现有配置并通过[!DNL Adobe I/O]创建新配置。
+>建议继续使用现有的旧版OAuth网关配置。 如果旧版OAuth网关配置出现问题，请删除现有配置，然后通过 [!DNL Adobe I/O].
 
 此帮助描述了以下两个用例：
 
-* [新配置](#configure-new-integration-64):如果您是新的Brand Portal用户，并且想要使用Brand Portal配置AEM Assets创作实例，则可以在上创建新配 [!DNL Adobe I/O]置。
-* [升级配置](#upgrade-integration-64):如果您是现有Brand Portal用户，且在旧版OAuth网关上使用Brand Portal配置了AEM Assets创作实例，则建议删除现有配置并在上创建新配 [!DNL Adobe I/O]置。
+* [新配置](#configure-new-integration-64):如果您是新的Brand Portal用户，并且想要使用Brand Portal配置AEM Assets创作实例，则可以在 [!DNL Adobe I/O].
+* [升级配置](#upgrade-integration-64):如果您是现有Brand Portal用户，且在旧版OAuth网关上使用Brand Portal配置了AEM Assets创作实例，则建议删除现有配置并在 [!DNL Adobe I/O].
 
 提供的信息基于以下假设：阅读本帮助的任何人都熟悉以下技术：
 
@@ -55,11 +55,11 @@ Adobe Experience Manager Assets通过[!DNL Adobe I/O]使用Brand Portal进行配
 
 建议让AEM 6.4来设置AEM创作实例。 如果您没有启动并运行AEM，请从以下位置下载它：
 
-* 如果您是现有AEM客户，请从[Adobe授权网站](http://licensing.adobe.com)下载AEM 6.4。
+* 如果您是现有AEM客户，请从下载AEM 6.4 [Adobe许可网站](http://licensing.adobe.com).
 
-* 如果您是Adobe合作伙伴，请使用[Adobe合作伙伴培训计划](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)请求AEM 6.4。
+* 如果您是Adobe合作伙伴，请使用 [Adobe合作伙伴培训计划](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) 请求AEM 6.4。
 
-下载AEM后，有关设置AEM创作实例的说明，请参阅[部署和维护](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall)。
+下载AEM后，有关设置AEM创作实例的说明，请参阅 [部署和维护](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall).
 
 ### 下载并安装AEM最新Service Pack {#servicepack}
 
@@ -67,14 +67,14 @@ Adobe Experience Manager Assets通过[!DNL Adobe I/O]使用Brand Portal进行配
 
 * [AEM 6.4 Service Pack 发行说明](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**如果您** 找不到最新的AEM包或Service Pack，请联系客户支持。
+**联系客户支持** 如果您找不到最新的AEM包或Service Pack。
 
 ## 创建配置 {#configure-new-integration-64}
 
 如果您是首次使用Brand Portal配置AEM Assets，请按照列出的顺序执行以下步骤：
 
 1. [获取公共证书](#public-certificate)
-1. [ [!DNL Adobe I/O] Createintegration](#createnewintegration)
+1. [创建 [!DNL Adobe I/O] 集成](#createnewintegration)
 1. [创建 IMS 帐户配置](#create-ims-account-configuration)
 1. [配置云服务](#configure-the-cloud-service)
 1. [测试配置](#test-integration)
@@ -94,11 +94,10 @@ IMS 配置包括两个步骤：
 
 ### 获取公共证书 {#public-certificate}
 
-公共证书允许您在[!DNL Adobe I/O]上验证配置文件。
+公共证书允许您在 [!DNL Adobe I/O].
 
-1. 登录AEM Assets创作实例
-默认URL:http://本地主机：4502/aem/start.html
-1. 在&#x200B;**Tools** ![Tools](assets/tools.png)面板中，导航到&#x200B;**[!UICONTROL Security]** >> **[!UICONTROL Adobe IMS配置]**。
+1. 登录AEM Assets创作实例默认URL:http://本地主机：4502/aem/start.html
+1. 从 **工具** ![工具](assets/tools.png) 面板，导航到 **[!UICONTROL 安全性]** >> **[!UICONTROL Adobe IMS配置]**.
 
    ![Adobe IMS 帐户配置 UI](assets/ims-config1.png)
 
@@ -118,7 +117,7 @@ IMS 配置包括两个步骤：
 
    ![创建证书](assets/ims-config2.png)
 
-1. 单击&#x200B;**[!UICONTROL 下载公钥]**，然后将 *AEM-Adobe-IMS.crt* 证书文件保存到您的计算机上。该证书文件用于[create [!DNL Adobe I/O] integration](#createnewintegration)。
+1. 单击&#x200B;**[!UICONTROL 下载公钥]**，然后将 *AEM-Adobe-IMS.crt* 证书文件保存到您的计算机上。证书文件用于 [创建 [!DNL Adobe I/O] 集成](#createnewintegration).
 
    ![下载证书](assets/ims-config3.png)
 
@@ -126,13 +125,13 @@ IMS 配置包括两个步骤：
 
    在&#x200B;**帐户**&#x200B;选项卡中，您可以创建 Adobe IMS 帐户，但您需要集成详细信息。暂时保持此页面打开。
 
-   打开新选项卡和[创建 [!DNL Adobe I/O] 集成](#createnewintegration) ，以获取IMS帐户配置的集成详细信息。
+   打开新选项卡并 [创建 [!DNL Adobe I/O] 集成](#createnewintegration) 以获取IMS帐户配置的集成详细信息。
 
-### 创建[!DNL Adobe I/O]集成 {#createnewintegration}
+### 创建 [!DNL Adobe I/O] 集成 {#createnewintegration}
 
 [!DNL Adobe I/O] 集成可生成 API 密钥、客户端密钥和有效负荷 (JWT)，这是设置 IMS 帐户配置所必需的。
 
-1. 使用Brand Portal租户的IMS组织的系统管理员权限登录到[!DNL Adobe I/O]控制台。
+1. 登录 [!DNL Adobe I/O] 对Brand Portal租户的IMS组织具有系统管理员权限的控制台。
 
    默认 URL：[https://console.adobe.io/](https://console.adobe.io/)
 
@@ -185,7 +184,7 @@ IMS 配置包括两个步骤：
 
    在&#x200B;**[!UICONTROL 授权服务器]**&#x200B;中，输入 URL：[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   粘贴您在[Create [!DNL Adobe I/O] integration](#createnewintegration)末尾复制的API密钥、客户端密钥和JWT有效负荷。
+   粘贴您在 [创建 [!DNL Adobe I/O] 集成](#createnewintegration).
 
    单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -212,7 +211,7 @@ IMS 配置包括两个步骤：
 1. 登录AEM Assets创作实例
 
    默认URL:http://本地主机：4502/aem/start.html
-1. 在&#x200B;**Tools** ![Tools](assets/tools.png)面板中，导航到&#x200B;**[!UICONTROL Cloud Services>>AEM Brand Portal]**。
+1. 从 **工具** ![工具](assets/tools.png) 面板，导航到 **[!UICONTROL Cloud Services>>AEM Brand Portal]**.
 
    此时将打开 Brand Portal 的“配置”页面。
 
@@ -234,13 +233,13 @@ IMS 配置包括两个步骤：
 
    默认URL:http://本地主机：4502/aem/start.html
 
-1. 在&#x200B;**Tools** ![Tools](assets/tools.png)面板中，导航到&#x200B;**[!UICONTROL Deployment >> Replication]**。
+1. 从 **工具** ![工具](assets/tools.png) 面板，导航到 **[!UICONTROL 部署>>复制]**.
 
    ![](assets/test-integration1.png)
 
 1. 复制页面打开。
 
-   单击&#x200B;**[!UICONTROL 作者的代理]**。
+   单击 **[!UICONTROL 作者代理]**.
 
    ![](assets/test-integration2.png)
 
@@ -257,7 +256,7 @@ IMS 配置包括两个步骤：
    >
    >复制代理并行工作并平均共享作业分配，从而将发布速度提高了原速度的四倍。 配置云服务后，无需进行其他配置即可启用默认激活的复制代理，以启用多个资产的并行发布。
 
-1. 要验证AEM Assets作者与Brand Portal之间的连接，请单击&#x200B;**[!UICONTROL 测试连接]**。
+1. 要验证AEM Assets作者与Brand Portal之间的连接，请单击 **[!UICONTROL 测试连接]**.
 
    ![](assets/test-integration4.png)
 
@@ -272,18 +271,19 @@ IMS 配置包括两个步骤：
    >
    >请避免禁用任何复制代理，因为这可能会导致某些资产的复制失败。
    >
-   >确保将所有四个复制代理都配置为避免超时错误。 请参阅[并行发布到Brand Portal时出现的问题疑难解答](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout)。
+   >确保将所有四个复制代理都配置为避免超时错误。 请参阅 [并行发布到Brand Portal故障诊断问题](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Brand Portal已成功配置为您的AEM Assets创作实例。 您现在可以：
 
 * [将资产从 AEM Assets 发布到 Brand Portal](../assets/brand-portal-publish-assets.md)
 * [将文件夹从 AEM Assets 发布到 Brand Portal](../assets/brand-portal-publish-folder.md)
 * [将收藏集从 AEM Assets 发布到 Brand Portal](../assets/brand-portal-publish-collection.md)
-* [配置资](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) 产源，以便Brand Portal用户能够将资产贡献和发布到AEM Assets。
+* [配置资产源](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) 使Brand Portal用户能够向AEM Assets投稿和发布资产。
 
 ## 升级配置 {#upgrade-integration-64}
 
 按照所列顺序执行以下步骤以升级现有配置：
+
 1. [验证正在运行的作业](#verify-jobs)
 1. [删除现有配置](#delete-existing-configuration)
 1. [创建配置](#configure-new-integration-64)
@@ -296,23 +296,24 @@ Brand Portal已成功配置为您的AEM Assets创作实例。 您现在可以：
 
    默认URL:http://本地主机：4502/aem/start.html
 
-1. 在&#x200B;**Tools** ![Tools](assets/tools.png)面板中，导航到&#x200B;**[!UICONTROL Deployment >> Replication]**。
+1. 从 **工具** ![工具](assets/tools.png) 面板，导航到 **[!UICONTROL 部署>>复制]**.
 
 1. 复制页面打开。
 
-   单击&#x200B;**[!UICONTROL 作者的代理]**。
+   单击 **[!UICONTROL 作者代理]**.
 
    ![](assets/test-integration2.png)
 
 1. 找到Brand Portal租户的复制代理。
 
-   请确保所有复制代理的&#x200B;**队列都为Idle**，则未激活任何发布作业。
+   确保 **队列空闲** 对于所有复制代理，没有发布作业处于活动状态。
 
    ![](assets/test-integration3.png)
 
 ### 删除现有配置 {#delete-existing-configuration}
 
 删除现有配置时，必须运行以下检查列表。
+
 * 删除所有四个复制代理
 * 删除云服务
 * 删除MAC用户
@@ -323,20 +324,20 @@ Brand Portal已成功配置为您的AEM Assets创作实例。 您现在可以：
 
    默认URL:http://本地主机：4502/crx/de/index.jsp
 
-1. 导航到`/etc/replications/agents.author`并删除Brand Portal租户的所有四个复制代理。
+1. 导航到 `/etc/replications/agents.author` 并删除您的Brand Portal租户的所有四个复制代理。
 
    ![](assets/delete-replication-agent.png)
 
-1. 导航到`/etc/cloudservices/mediaportal`并删除&#x200B;**Cloud Service配置**。
+1. 导航到 `/etc/cloudservices/mediaportal` 并删除 **Cloud Service配置**.
 
    ![](assets/delete-cloud-service.png)
 
-1. 导航到`/home/users/mac`并删除Brand Portal租户的&#x200B;**MAC用户**。
+1. 导航到 `/home/users/mac` 并删除 **Mac用户** 你的Brand Portal租户。
 
    ![](assets/delete-mac-user.png)
 
 
-您现在可以在[!DNL Adobe I/O]上的AEM 6.4创作实例上[创建配置](#configure-new-integration-64)。
+您现在可以 [创建配置](#configure-new-integration-64) 在AEM 6.4创作实例上 [!DNL Adobe I/O].
 
 
 

@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 7f4e44eb75ccae4a9ab1d95171b95a5e9fe48f64
+source-git-commit: 18ab491812b1bcc8ceee14e311bd15c0c8dd32fa
 workflow-type: tm+mt
-source-wordcount: '10383'
+source-wordcount: '10401'
 ht-degree: 23%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 23%
       * 了解有关[组织数字资产](organize-assets.md)的更多信息。
    * 将主源视频上传到文件夹。 将视频添加到文件夹后，这些视频会根据您分配给文件夹的视频处理配置文件进行编码。
 
-      * Dynamic Media主要支持长度为30分钟的简短视频。
+      * Dynamic Media主要支持长度最长为30分钟且最小分辨率大于50 x 50的短格式视频。
       * 您可以上传每个最大15 GB的视频文件。
       * [上传视频](managing-video-assets.md#uploading-and-previewing-video-assets)。
       * 了解有关[支持的输入文件格式](assets-formats.md#supported-multimedia-formats)的更多信息。
@@ -288,7 +288,7 @@ For advice about video encoding, see the following:
 
 在对视频文件进行编码时，请尽可能使用最高质量的源视频文件。避免使用先前已编码的视频文件，因为这样的文件已经压缩，进一步编码会导致创建的视频质量不佳。
 
-* Dynamic Media主要支持长度为30分钟的简短视频。
+* Dynamic Media主要支持长度最长为30分钟且最小分辨率大于50 x 50的短格式视频。
 * 您可以上载每个最大15 GB的主源视频文件。
 
 下表说明了在编码之前，源视频文件应具有的建议大小、宽高比和最低比特率。

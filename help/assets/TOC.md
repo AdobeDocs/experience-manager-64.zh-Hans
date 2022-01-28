@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 创建、管理、交付和优化数字资产。
-source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
+source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 48%
+source-wordcount: '639'
+ht-degree: 51%
 
 ---
 
@@ -27,19 +27,19 @@ ht-degree: 48%
    + [GQL 全文搜索](gql-search.md)
    + [多语言资产](multilingual-assets.md)
    + [在AEM Assets中使用Adobe Stock资产](aem-assets-adobe-stock.md)
-   + [审核文件夹资产和收藏集](bulk-approval.md)
+   + [审核文件夹资源和收藏集](bulk-approval.md)
    + [时间轴中的活动流](activity-stream.md)
    + [处理资产](assets-workflow.md)
    + [添加图像映射](image-maps.md)
-   + [使用MSM重复使用资产](reuse-assets-using-msm.md)
+   + [使用 MSM 重用资源](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Dynamic Media新闻稿存档(按Experience League)](dynamic-media-newsletter.md)
+   + [Experience League 存档的 Dynamic Media 新闻稿](dynamic-media-newsletter.md)
    + [设置 Dynamic Media](administering-dynamic-media.md)
    + [使用 Dynamic Media](dynamic-media.md)
    + [配置 Dynamic Media — Scene7 模式](config-dms7.md)
    + [配置Dynamic Media — 混合模式](config-dynamic.md)
    + [Dynamic Media - Scene7模式故障诊断](troubleshoot-dms7.md)
-   + [管理 Dynamic Media 资产](managing-assets.md)
+   + [管理 Dynamic Media 资源](managing-assets.md)
    + [优化图像质量的最佳实践](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [管理 Dynamic Media 查看器预设](managing-viewer-presets.md)
    + [应用 Dynamic Media 查看器预设](viewer-presets.md)
@@ -49,7 +49,6 @@ ht-degree: 48%
    + [Dynamic Media 图像配置文件](image-profiles.md)
    + [智能成像](imaging-faq.md)
    + [视频](s7-video.md)
-   + [将Dynamic Media Classic功能添加到页面](scene7.md)
    + [HTTP2 内容交付](http2.md)
    + [传送 Dynamic Media 资产](delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中激活热链接保护](hotlink-protection.md)
@@ -65,6 +64,7 @@ ht-degree: 48%
    + [为响应式网站传送优化的图像](responsive-site.md)
    + [预览 Dynamic Media 资产](previewing-assets.md)
    + [将 Dynamic Media 资产添加到页面](adding-dynamic-media-assets-to-pages.md)
+   + [将Dynamic Media Classic组件添加到页面](scene7.md)
    + [在网页上嵌入动态视频或图像查看器](embed-code.md)
    + [将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)
    + [使用规则集转换 URL](using-rulesets-to-transform-urls.md)
@@ -79,7 +79,7 @@ ht-degree: 48%
    + [安装和配置ImageMagick以与AEM Assets配合使用](best-practices-for-imagemagick.md)
    + [将资产与活动流集成](extending-activity-stream.md)
    + [扩展资产编辑器](asseteditorx.md)
-   + [资产 HTTP API](mac-api-assets.md)
+   + [资源 HTTP API](mac-api-assets.md)
    + [资产代理开发](proxy.md)
 + 管理资产 {#administer}
    + [资产支持的格式](assets-formats.md)
@@ -87,10 +87,10 @@ ht-degree: 48%
    + [管理资产的元数据](metadata.md)
    + [XMP 写回到演绎版](xmp-writeback.md)
    + [资产链接共享](link-sharing.md)
-   + [资产报表](asset-reports.md)
+   + [资源报表](asset-reports.md)
    + [增强型智能标记](enhanced-smart-tags.md)
    + [用于处理元数据、图像和视频的配置文件](processing-profiles.md)
-   + [串联元数据](cascading-metadata.md)
+   + [级联元数据](cascading-metadata.md)
    + [创建和配置资产编辑器页面](assets-finder-editor.md)
    + [资产大小调整指南](assets-sizing-guide.md)
    + [元数据架构参考](meta-ref.md)
@@ -167,6 +167,6 @@ ht-degree: 48%
    + [智能内容服务培训准则](smart-tags-training-guidelines.md)
    + [视频演绎版](video-renditions.md)
 + 与其他解决方案集成 {#integrations}
-   + [集成 [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [安装 [!DNL enhanced connector] 表示 [!DNL Workfront]](workfront-connector-install.md)
-   + [配置 [!DNL enhanced connector] 表示 [!DNL Workfront]](workfront-connector-configure.md)
+   + [与 [!DNL Adobe Workfront] 集成](workfront-integrations.md)
+   + [为 [!DNL Workfront] 安装 [!DNL enhanced connector] ](workfront-connector-install.md)
+   + [为 [!DNL Workfront] 配置 [!DNL enhanced connector] ](workfront-connector-configure.md)

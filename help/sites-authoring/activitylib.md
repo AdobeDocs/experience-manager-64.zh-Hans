@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 exl-id: 269eee08-5fca-4621-a56e-93db9361fa64
-source-git-commit: b926143f7b5eb6b40796bf41d1fb94f56c7f77a7
+source-git-commit: 1c9da35f65b6b9edacc3d5529ee80e7be94495d2
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 85%
+source-wordcount: '2001'
+ht-degree: 84%
 
 ---
 
@@ -96,7 +96,7 @@ ht-degree: 85%
 
 要添加活动，请执行以下操作：
 
-1. 单击或点按要为其创建活动的品牌，然后依次单击或点按&#x200B;**创建**、**创建活动**。如果您正在编辑，请选择活动，然后单击或点按 **编辑**.
+1. 单击或点按要为其创建活动的品牌，然后单击或点按 **创建** 然后 **创建活动**. 如果您正在编辑，请选择活动，然后单击或点按 **编辑**.
 1. 提供以下信息，然后单击或点按&#x200B;**下一步**：
 
    * 活动的名称。

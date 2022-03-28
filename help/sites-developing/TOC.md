@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4 Developing 用户指南
 breadcrumb-title: Developing 指南
 user-guide-description: 本指南介绍如何构建 AEM 实例。
 feature: Developing
 role: Developer
-source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 16%
+ht-degree: 26%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 16%
 
 + [开发用户指南概述](home.md)
 + 开发人员简介{#introduction}
-   + [AEM Sites 开发入门- WKND 教程](getting-started.md)
+   + [AEM Sites 开发入门 - WKND 教程](getting-started.md)
    + [AEM核心概念](the-basics.md)
    + [AEM触屏UI的结构](touch-ui-structure.md)
    + [AEM触屏UI的概念](touch-ui-concepts.md)
@@ -51,11 +51,11 @@ ht-degree: 16%
    + [创建新的Granite UI字段组件](granite-ui-component.md)
    + 查询生成器{#query-builder}
       + [为查询生成器实施自定义谓词计算器](implementing-custom-predicate-evaluator.md)
-      + [查询生成器谓词引用](querybuilder-predicate-reference.md)
+      + [查询生成器谓词参考](querybuilder-predicate-reference.md)
       + [查询生成器 API](querybuilder-api.md)
    + 标记{#tagging}
       + [标记](tags.md)
-      + [AEM Tagging Framework](framework.md)
+      + [AEM 标记框架](framework.md)
       + [将标记构建到AEM应用程序](building.md)
    + [自定义错误处理程序显示的页面](customizing-errorhandler-pages.md)
    + [自定义节点类型](custom-nodetypes.md)
@@ -79,8 +79,8 @@ ht-degree: 16%
    + [AEM组件 — 基础知识](components-basics.md)
    + [开发AEM组件](developing-components.md)
    + [开发AEM组件 — 代码示例](developing-components-samples.md)
-   + [内容服务的JSON导出程序](json-exporter.md)
-   + [为组件启用JSON导出](json-exporter-components.md)
+   + [内容服务的 JSON 导出器](json-exporter.md)
+   + [为组件启用 JSON 导出](json-exporter-components.md)
    + [图像编辑器](image-editor.md)
    + [修饰标记](decoration-tag.md)
    + [使用隐藏条件](hide-conditions.md)
@@ -99,21 +99,21 @@ ht-degree: 16%
       + [使用和扩展小组件（经典UI）](widgets.md)
       + [使用xtype（经典UI）](xtypes.md)
       + [开发Forms（经典UI）](developing-forms.md)
-+ 无外设体验管理{#headless}
++ Headless 体验管理{#headless}
    + [无头和混合AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [为组件启用JSON导出](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
+   + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + 单页应用程序{#spas}
-      + [SPA简介和演练](spa-walkthrough.md)
-      + [SPA WKND教程](spa-wknd.md)
+      + [SPA 简介和演练](spa-walkthrough.md)
+      + [SPA WKND 教程](spa-wknd.md)
       + [AEM - React中的SPA快速入门](spa-getting-started-react.md)
       + [AEM SPA快速入门 — Angular](spa-getting-started-angular.md)
       + [为 SPA 实施 React 组件](spa-implementing-react-component.md)
-      + [SPA深潜](spa-deep-dives.md)
-      + [SPA编辑器概述](spa-overview.md)
-      + [开发SPA for AEM](spa-architecture.md)
+      + [SPA 深入了解](spa-deep-dives.md)
+      + [SPA 编辑器概述](spa-overview.md)
+      + [为 AEM 开发 SPA](spa-architecture.md)
       + [SPA Blueprint](spa-blueprint.md)
-      + [SPA页面组件](spa-page-component.md)
-      + [适用于SPA的动态模型到组件映射](spa-dynamic-model-to-component-mapping.md)
+      + [SPA 页面组件](spa-page-component.md)
+      + [对组件映射进行动态建模 for SPA](spa-dynamic-model-to-component-mapping.md)
       + [SPA模型路由](spa-routing.md)
       + [SPA和Adobe Experience Platform Launch集成](spa-launch.md)
       + [SPA和服务器端渲染](spa-ssr.md)
@@ -135,16 +135,16 @@ ht-degree: 16%
    + [如何使用VLT工具](ht-vlttool.md)
    + [如何使用代理服务器工具](ht-proxy-server.md)
    + [AEM Brackets扩展](aem-brackets.md)
-   + [AEM Developer Tools for Eclipse](aem-eclipse.md)
+   + [适用于 Eclipse 的 AEM 开发人员工具](aem-eclipse.md)
    + [AEM Repo 工具](aem-repo-tool.md)
 + 个性化{#personlization}
    + [ContextHub](contexthub.md)
    + [ContextHub Javascript API参考](contexthub-api.md)
-   + [扩展ContextHub](ch-extend.md)
+   + [扩展 ContextHub](ch-extend.md)
    + [将ContextHub添加到页面和访问存储](ch-adding.md)
    + [ContextHub存储候选示例](ch-samplestores.md)
    + [ContextHub UI模块类型示例](ch-samplemodules.md)
-   + [ContextHub诊断](ch-diagnostics.md)
+   + [ContextHub 诊断](ch-diagnostics.md)
    + [针对目标内容进行开发](target.md)
    + ClientContext{#client-context}
       + [Client Context详细信息](client-context.md)
@@ -164,7 +164,7 @@ ht-degree: 16%
       + [工作流最佳实践](workflows-best-practices.md)
       + [工作流过程参考](workflows-process-ref.md)
    + [扩展多站点管理器](extending-msm.md)
-   + 跟踪和Analytics{#extending-analytics}
+   + 跟踪和分析{#extending-analytics}
       + [扩展事件跟踪](extending-analytics.md)
       + [将Adobe Analytics跟踪添加到组件](extending-analytics-components.md)
       + [自定义Adobe Analytics框架](extending-analytics-framework.md)
@@ -173,7 +173,7 @@ ht-degree: 16%
       + [云服务配置](extending-cloud-config.md)
       + [创建自定义Cloud Service](extending-cloud-config-custom-cloud.md)
    + [创建自定义扩展](extending-campaign-extensions.md)
-   + 表单{#extending-forms}
+   + Forms{#extending-forms}
       + [创建自定义表单映射](extending-campaign-form-mapping.md)
       + [使用Adobe Campaign表单组件创建自定义AEM页面模板](extending-campaign-custom-template.md)
       + [请求分析脚本](analyze-request.md)
@@ -202,7 +202,7 @@ ht-degree: 16%
    + [开发最佳实践](development-practices.md)
    + [内容架构](content-architecture.md)
    + [软件架构](software-architecture.md)
-   + We.Retail引用实施{#we-retail}
+   + We.Retail参考实施{#we-retail}
       + [We.Retail参考实施](we-retail.md)
       + [在We.Retail中尝试内容片段](we-retail-content-fragments.md)
       + [在We.Retail中试用核心组件](we-retail-core-components.md)
@@ -220,5 +220,5 @@ ht-degree: 16%
    + [移动 Web](mobile-web.md)
    + [创建设备组过滤器](groupfilters.md)
    + [网页响应式设计](responsive.md)
-   + [为移动设备创建站点](mobile.md)
+   + [为Mobile设备创建站点](mobile.md)
    + [模拟器](emulators.md)

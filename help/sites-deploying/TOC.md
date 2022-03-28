@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.4
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4 Deploying 指南
 breadcrumb-title: Deploying 指南
 user-guide-description: 详细了解 Adobe Experience Manager 6.4 的安装、部署和架构，包括我们的 Adobe Managed Services 云部署。
 feature: Deploying
 role: Architect
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 17%
+ht-degree: 21%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 17%
 # AEM 6.4 Deploying用户指南 {#deploying}
 
 + [Deploying用户指南](home.md)
-+ AEM平台{#introduction}简介
++ AEM平台简介 {#introduction}
    + [AEM平台简介](platform.md)
    + [技术要求](technical-requirements.md)
    + [AEM 6.4中的存储元素](storage-elements-in-aem-6.md)
@@ -81,7 +81,7 @@ ht-degree: 17%
    + [升级代码和自定义](upgrading-code-and-customizations.md)
    + [应用程序服务器安装的升级步骤](app-server-upgrade.md)
    + [升级后卸载的过时包列表](obsolete-bundles.md)
-+ 存储库重组{#restructuring}
++ 存储库重构 {#restructuring}
    + [AEM 6.4中的存储库重组](repository-restructuring.md)
    + [AEM 6.4中的常用存储库重组](all-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4中的站点存储库重组](sites-repository-restructuring-in-aem-6-4.md)

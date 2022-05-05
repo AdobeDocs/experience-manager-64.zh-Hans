@@ -1,8 +1,8 @@
 ---
 title: 控制台的键盘快捷键
-seo-title: 控制台的键盘快捷键
+seo-title: Keyboard Shortcuts for Consoles
 description: 创作时使用这些键盘快捷键可以节省时间
-seo-description: 创作时使用这些键盘快捷键可以节省时间
+seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: 8249fd48-38af-4bf7-8dcc-2f63db6750b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: beb6e3ccc5cbef044f8b91d327c0361c881ccd72
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 | 控制台 | `?` | 键盘快捷键帮助 |
 |  | `/` | 调用[搜索](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | 切换要查看的[边栏选择器](/help/sites-authoring/basic-handling.md#rail-selector)选项 |
-|  | &grave; | 隐藏边栏 |
+|  | ``` ` ``` | 隐藏边栏 |
 |  | `e` | 编辑 |
 |  | `p` | 属性 |
 |  | `m` | 移动 |

@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Manager 6.4发行说明
-seo-title: AEM 6.4 发行说明
+seo-title: AEM 6.4 Release Notes
 description: AEM 发行说明涵盖有关最新版 AEM 的重要信息，包括新增功能、受支持的平台、已弃用和已删除的功能以及已知问题。
-seo-description: AEM 发行说明涵盖有关最新版 AEM 的重要信息，包括新增功能、受支持的平台、已弃用和已删除的功能以及已知问题。
+seo-description: The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.
 exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 48%
+source-wordcount: '373'
+ht-degree: 42%
 
 ---
 
@@ -41,16 +41,16 @@ AEM 发行说明涵盖有关最新版 AEM 的重要信息，包括新增功能�
 ## 关键AEM资源
 
 * [AEM教程](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Dispatcher用户指南](https://docs.adobe.com/content/help/zh-Hans/experience-manager-dispatcher/using/dispatcher.html)
+* [Dispatcher用户指南](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL用户指南](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)
 * [核心组件用户指南](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
 * [GDPR 就绪](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社区论坛](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 
-## 版权、许可证和免责声明{#copyright-licenses-and-disclaimers}
+## 版权、许可和免责声明 {#copyright-licenses-and-disclaimers}
 
-有关详细信息，请参阅[https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/cn/legal/terms/enterprise-licensing.html)
+有关详细信息，请参阅 [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/cn/legal/terms/enterprise-licensing.html)
 
-第三方许可证通知：[https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
+第三方许可证通知： [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

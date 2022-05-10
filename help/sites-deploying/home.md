@@ -1,15 +1,15 @@
 ---
 title: AEM 6.4 Deploying用户指南
-seo-title: AEM 6.4 Deploying用户指南
-description: '本指南涵盖所有AEM部署任务，如安装和部署AEM。 '
-seo-description: '涵盖所有AEM部署任务，例如安装和部署AEM。 '
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+seo-title: AEM 6.4 Deploying User Guide
+description: 本指南涵盖所有AEM部署任务，如安装和部署AEM。
+seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM.
+exl-id: ff85787a-1203-4620-bf14-1b09893c3be8
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 32%
+source-wordcount: '341'
+ht-degree: 31%
 
 ---
-
 
 # AEM 6.4 Deploying用户指南
 
@@ -26,7 +26,7 @@ ht-degree: 32%
 
 | 用户指南 | 描述 |
 |--- |---|
-| [发行说明](/help/release-notes/home.md) | 提供有关最新版AEM的重要信息，包括新增功能、受支持的平台、已弃用和已删除的功能以及已知问题。 |
+| [发行说明](/help/release-notes/home.md) | 提供有关最新版本AEM的重要信息，包括新增功能、受支持的平台、已弃用和已删除的功能以及已知问题。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何创建、管理、交付和优化数字资产。 |
 | [Forms用户指南](/help/forms/home.md) | 本指南介绍如何创建、管理、发布和更新数字表单。 |
 | [Communities用户指南](/help/communities/home.md) | 创建在线体验，如论坛、用户组、学习资源和其他社交功能。 |
@@ -43,10 +43,10 @@ ht-degree: 32%
 ## 关键AEM资源
 
 * [AEM教程](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Dispatcher用户指南](https://docs.adobe.com/content/help/zh-Hans/experience-manager-dispatcher/using/dispatcher.html)
+* [Dispatcher用户指南](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL用户指南](https://docs.adobe.com/content/help/zh-Hans/experience-manager-htl/using/overview.html)
 * [核心组件用户指南](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/zh-Hans/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
 * [GDPR 就绪](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社区论坛](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

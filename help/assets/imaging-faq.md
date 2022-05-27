@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
+source-git-commit: 50d6ca4d7ead2b132f185590554d00c518fab996
 workflow-type: tm+mt
-source-wordcount: '3518'
+source-wordcount: '3519'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ DPR和网络带宽值基于检测到的捆绑CDN的客户端值。 这些值有�
 
 ## 智能成像的工作原理是什么？ {#how-does-smart-imaging-work}
 
-当消费者请求图像时，智能成像会检查用户特征，并根据使用中的浏览器转换为适当的图像格式。 执行这些格式转换的方式不会降低视觉保真度。 智能成像可根据浏览器功能以下方式自动将图像转换为不同格式。
+当消费者请求图像时，智能成像会检查用户特征，并根据使用中的浏览器将其转换为适当的图像格式。 执行这些格式转换的方式不会降低视觉保真度。 智能成像可根据浏览器功能以下方式自动将图像转换为不同格式。
 
 * 如果浏览器支持格式，则自动转换为AVIF
 * 如果AVIF转换不利或浏览器不支持AVIF，则自动转换为WebP

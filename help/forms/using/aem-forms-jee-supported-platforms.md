@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 393f665774a482e953e2594404ab22f7ce0bb259
+source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3330'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,6 @@ AEM Forms on JEE服务器可以使用支持的操作系统、应用程序服务�
 >
 >* 有关受支持服务器平台的例外的完整列表，请参阅 [受支持服务器平台的例外情况](#exceptions-to-supported-server-platforms).
 >* AEM Forms on JEE仅支持受支持操作系统和应用程序的英语、法语、德语和日语版本。
-
 >
 
 
@@ -95,7 +94,6 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 >
 >* JEE上的AEM Forms仅支持生产环境中的64位JVM。
 >* 建议跟踪Java供应商提供的安全公告，以确保生产环境的安全和安全，并安装最新的Java更新。
-
 >
 
 
@@ -197,13 +195,18 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
   </tr> 
   <tr> 
    <td>MySQL</td> 
-   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.30-bin.jar（版本5.1.30）</p> </td> 
+   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar（版本5.1.44）</p> </td> 
    <td><p>在JEE安装中随AEM Forms提供</p> </td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server<br /> </td> 
-   <td><p>Microsoft® SQL Server JDBC驱动程序6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Microsoft® SQL Server JDBC驱动程序6.2.1.0（已弃用） <br /> </p> <p>sqljdbc6.jar</p> </td> 
    <td><p>在JEE安装中随AEM Forms提供。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Microsoft SQL Server<br /> </td> 
+   <td><p>Microsoft® SQL Server JDBC驱动程序6.2.2.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>从Microsoft网站下载。</p> </td> 
   </tr> 
   <tr> 
    <td>Oracle</td> 
@@ -332,7 +335,6 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 >
 >* JEE上的AEM Forms仅支持64位操作系统。
 >* PDF生成器服务在Windows 10上不受支持。
-
 >
 
 
@@ -520,7 +522,6 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是支持的特定于�
 >* AIX上已弃用HTML2PDF服务。
 >* OCRPDF、Optimize PDF和Export PDF功能仅在Windows上受支持。
 >* Acrobat版本与AEM Forms捆绑在一起，以启用PDF生成器功能。 在AEM Forms许可证有效期内，捆绑版本只应通过AEM Forms以编程方式访问，以便与AEM FormsPDF生成器一起使用。 有关更多信息，请参阅根据您的部署对AEM Forms产品进行描述([内部部署](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 或 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-
 >
 
 
@@ -738,7 +739,6 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是支持的特定于�
 >[!NOTE]
 >
 >* Forms Portal仅在iPad上的Safari上受支持。
-
 >
 
 

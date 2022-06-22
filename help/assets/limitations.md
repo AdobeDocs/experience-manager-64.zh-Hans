@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: de466dda2dcafd4c7ba002e91133e975e07b392e
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '163'
 ht-degree: 3%
 
 ---
@@ -34,9 +34,11 @@ ht-degree: 3%
 | **图像集**  — 每个集的重复资产数 | 无重复项 | 100 | 20 |
 | **图像集**  — 每组图像的最大数量 | 每组5-10张图像 | 1000 |
 | **旋转集**  — 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 |
-| **PDF**  — 要考虑提取的PDF的最大页面数 |  | 5000（用于新上传） | 100 |
 
+<!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
+
+
 
 <!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
 

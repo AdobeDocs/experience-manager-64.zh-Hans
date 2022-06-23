@@ -8,7 +8,7 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 27%
@@ -31,7 +31,7 @@ ht-degree: 27%
 
 在创建旋转集时，Adobe建议遵循以下最佳实践，并强制实施以下限制：
 
-| 限制类型 | 最佳实践 | 已实施的限制 |
+| 限制类型 | 最佳实践 | 规定的限制 |
 | --- | --- | --- |
 | 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 |
 
@@ -117,7 +117,7 @@ ht-degree: 27%
 
 在创建旋转集时，Adobe建议遵循以下最佳实践，并强制实施以下限制：
 
-| 限制类型 | 最佳实践 | 已实施的限制 |
+| 限制类型 | 最佳实践 | 规定的限制 |
 | --- | --- | --- |
 | 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 |
 

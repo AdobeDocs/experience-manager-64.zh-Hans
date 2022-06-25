@@ -6,9 +6,9 @@ feature: Asset Management,Search,Renditions,Collaboration
 role: User
 mini-toc-levels: 4
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 3d1ec43235fab1b5657dcb42037f7f3184a63d62
+source-git-commit: 14633d278f1e6fe7c1a47168006b8387c150e63d
 workflow-type: tm+mt
-source-wordcount: '10139'
+source-wordcount: '10145'
 ht-degree: 6%
 
 ---
@@ -187,7 +187,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上传
 |  | 图像编辑选项 | 您可以在图像中保留剪贴蒙版，并选择颜色配置文件。<br> 请参阅 [在上传时设置图像编辑选项](#setting-image-editing-options-at-upload). |
 |  | Postscript选项 | 您可以栅格化PostScript®文件、裁剪文件、维护透明背景、选择分辨率和选择色彩空间。<br> 请参阅 [设置PostScript和Illustrator上传选项](#setting-postscript-and-illustrator-upload-options). |
 |  | Photoshop选项 | 您可以从Adobe® Photoshop®文件创建模板、维护图层、指定图层的命名方式、提取文本，以及指定图像如何定位到模板中。<br> 请注意，AEM不支持模板。<br> 请参阅 [设置Photoshop上传选项](#setting-photoshop-upload-options). |
-|  | PDF选项 | 您可以栅格化文件、提取搜索词和链接、自动生成eCatalog、设置分辨率并选择色彩空间。<br> 请注意， AEM不支持eCatalog。 <br> 请参阅 [设置PDF上载选项&#x200B;](#setting-pdf-upload-options)<br>**注意**:要考虑提取的PDF的最大页面数是5000，用于新上载。 2022年12月31日，此限制将更改为100页。 另请参阅 [Dynamic Media限制](/help/assets/limitations.md). |
+|  | PDF选项 | 您可以栅格化文件、提取搜索词和链接、自动生成eCatalog、设置分辨率并选择色彩空间。<br> 请注意， AEM不支持eCatalog。 <br> 请参阅 [设置PDF上载选项&#x200B;](#setting-pdf-upload-options)<br>**注意**:要考虑提取的PDF的最大页面数是5000，用于新上载。 2022年12月31日，此限制将更改为100页(适用于所有PDF)。 另请参阅 [Dynamic Media限制](/help/assets/limitations.md). |
 |  | Illustrator选项 | 您可以栅格化Adobe Illustrator®文件、维护透明背景、选择分辨率和选择色彩空间。<br> 请参阅 [设置PostScript和Illustrator上传选项](#setting-postscript-and-illustrator-upload-options). |
 |  | 视频选项 | 您可以通过选择视频预设来对视频文件进行转码。<br> 请参阅 [设置eVideo上传选项](#setting-evideo-upload-options). |
 |  | 批次集预设 | 要从上传的文件创建图像集或旋转集，请单击要使用的预设的活动列。 您可以选择多个预设。 您可以在Dynamic Media Classic的“应用程序设置/批集预设”页面中创建预设。<br> 请参阅 [配置批集预设以自动生成图像集和旋转集](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 以了解有关创建批集预设的更多信息。<br> 请参阅 [在上传时设置批集预设](#setting-batch-set-presets-at-upload). |
@@ -259,7 +259,7 @@ PSD(Photoshop文档)文件最常用于创建图像模板。 上传PSD文件时�
 
 上传PDF文件时，可以采用各种方式设置其格式。 您可以裁剪其页面、提取搜索词、输入每英寸像素的分辨率并选择色彩空间。 PDF文件通常包含裁切边距、裁切标记、注册标记和其他打印机标记。 在上传PDF文件时，您可以从页面的两侧裁剪这些标记。
 
-要考虑提取的PDF的最大页面数是5000，用于新上载。 2022年12月31日，此限制将更改为100页。 另请参阅 [Dynamic Media限制](/help/assets/limitations.md).
+要考虑提取的PDF的最大页面数是5000，用于新上载。 2022年12月31日，此限制将更改为100页(适用于所有PDF)。 另请参阅 [Dynamic Media限制](/help/assets/limitations.md).
 
 >[!NOTE]
 >

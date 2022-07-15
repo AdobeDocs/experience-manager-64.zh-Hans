@@ -6,12 +6,12 @@ audience: admin-user
 user-guide-title: AEM 6.4 Administering 用户指南
 breadcrumb-title: Administering 指南
 user-guide-description: 了解如何管理 AEM。
-feature: 管理
+feature: Administering
 role: Admin
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 18%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,22 +19,22 @@ ht-degree: 18%
 # AEM 6.4 Administering 用户指南 {#administering}
 
 + [Administering用户指南概述](home.md)
-+ 站点功能{#introduction}
++ 站点功能 {#introduction}
    + [网站管理](msm-and-translation.md)
-   + [重用内容：多站点管理器和Live Copy](msm.md)
-   + [Live Copy概述控制台](msm-livecopy-overview.md)
+   + [重用内容：多站点管理器和 Live Copy](msm.md)
+   + [Live Copy 概述控制台](msm-livecopy-overview.md)
    + [配置 Live Copy 同步](msm-sync.md)
-   + [创建和同步Live Copy](msm-livecopy.md)
-   + [MSM转出冲突](msm-rollout-conflicts.md)
-   + [MSM最佳实践](msm-best-practices.md)
+   + [创建并同步 Live Copy](msm-livecopy.md)
+   + [MSM 转出冲突](msm-rollout-conflicts.md)
+   + [MSM 最佳实践](msm-best-practices.md)
    + [翻译多语言站点的内容](translation.md)
    + [管理翻译项目](tc-manage.md)
-   + [识别要翻译的内容](tc-rules.md)
-   + [准备翻译内容](tc-prep.md)
+   + [标识要翻译的内容](tc-rules.md)
+   + [准备内容以进行翻译](tc-prep.md)
    + [使用经典UI创建语言根](tc-lroot-classic.md)
-   + [连接到Microsoft Translator](tc-msconf.md)
+   + [连接到 Microsoft Translator](tc-msconf.md)
    + [配置翻译集成框架](tc-tic.md)
-   + [语言副本向导](tc-wizard.md)
+   + [语言复制向导](tc-wizard.md)
    + [翻译增强功能](tc-enhancements.md)
    + [翻译最佳实践](tc-bp.md)
    + [配置和配置浏览器](configurations.md)
@@ -70,14 +70,14 @@ ht-degree: 18%
    + [启动工作流](workflows-starting.md)
    + [配置富文本编辑器插件](configure-rich-text-editor-plug-ins.md)
    + [Admin Console](enable-classic-ui-admin.md)
-+ 安全 {#security}
++ 安全性 {#security}
    + [用户管理和安全](security.md)
    + [用户、组和访问权限管理](user-group-ac-admin.md)
    + [安全检查列表](security-checklist.md)
    + [OWASP前10](owasp-top10.md)
    + [在生产就绪模式下运行AEM](production-ready.md)
    + [身份管理](identity-management.md)
-   + [AdobeAEM Managed Services的IMS身份验证和Admin Console支持](ims-config-and-admin-console.md)
+   + [对AEM Managed Services的Adobe IMS身份验证和Admin Console支持](ims-config-and-admin-console.md)
    + [创建封闭用户组](cug.md)
    + [在AEM中缓解序列化问题](mitigating-serialization-issues.md)
    + [用户同步](sync.md)
@@ -97,10 +97,10 @@ ht-degree: 18%
    + [内容处置过滤器](content-disposition-filter.md)
 + 个性化 {#personalization}
    + [个性化](personalization.md)
-   + [配置ContextHub](contexthub-config.md)
+   + [配置 ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [营销活动](campaigns.md)
-   + [使用ContextHub配置分段](segmentation.md)
+   + [使用 ContextHub 配置分段](segmentation.md)
    + [配置分段](campaign-segmentation.md)
    + [为登陆页面扩展和配置设计导入程序](extending-the-design-importer-for-landingpages.md)
    + [将登陆页面与Adobe Analytics集成](integrating-landing-pages-with-adobe-analytics.md)
@@ -119,9 +119,9 @@ ht-degree: 18%
    + [与 Livefyre 集成](livefyre.md)
    + [与 Adobe Analytics 集成](adobeanalytics.md)
    + [连接到Adobe Analytics和创建框架](adobeanalytics-connect.md)
-   + [为Adobe Analytics配置链接跟踪](adobeanalytics-link.md)
-   + [使用Adobe Analytics属性映射组件数据](adobeanalytics-mapping.md)
-   + [为Adobe Analytics配置视频跟踪](adobeanalytics-video.md)
+   + [为 Adobe Analytics 配置链接跟踪](adobeanalytics-link.md)
+   + [建立组件数据与 Adobe Analytics 属性的映射](adobeanalytics-mapping.md)
+   + [为 Adobe Analytics 配置视频跟踪](adobeanalytics-video.md)
    + [HTTP2 内容交付常见问题解答](scene7-http2faq.md)
    + [Adobe Campaign集成故障诊断](troubleshooting-campaignintegration.md)
    + [SharePoint连接器许可证、版权声明和免责声明](sharepoint-connector-licenses.md)
@@ -133,7 +133,7 @@ ht-degree: 18%
    + [Flash 查看器生命周期终止通知](flash-viewers-eol.md)
    + [与Adobe Creative Cloud集成](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [产品信息源](product-feed.md)
-   + [与Adobe动态标签管理集成](dtm.md)
+   + [与AdobeDynamic Tag Management集成](dtm.md)
    + [选择加入Adobe Analytics和Adobe Target](opt-in.md)
    + [AEM门户和Portlet](aem-as-portal.md)
    + [与Dynamic Media Classic集成](scene7.md)
@@ -149,14 +149,14 @@ ht-degree: 18%
    + [与Adobe Marketing Cloud集成](marketing-cloud.md)
    + [手动配置与Adobe Target的集成](target-configuring.md)
    + [与Adobe Target集成的先决条件](target-requirements.md)
-   + [Adobe分类](adobeanalytics-classifications.md)
+   + [Adobe 分类](adobeanalytics-classifications.md)
    + [与AdobeSearch&amp;Promote集成](search-and-promote.md)
    + [解决方案集成](integration.md)
    + [Target与体验片段集成](experience-fragments-target.md)
 + 最佳实践 {#bestpractices}
    + [最佳实践](administer-best-practices.md)
    + [翻译最佳实践](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html)
-   + [MSM最佳实践](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html)
+   + [MSM 最佳实践](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html)
    + [AEM Sites - GDPR就绪](gdpr-compliance-sites.md)
    + [为AEM Foundation处理GDPR请求](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM Commerce - GDPR就绪](https://experienceleague.adobe.com/docs/experience-manager-64/administering/ecommerce/gdpr-compliance-commerce.html)

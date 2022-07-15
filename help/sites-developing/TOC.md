@@ -10,8 +10,8 @@ feature: Developing
 role: Developer
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 26%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -220,5 +220,5 @@ ht-degree: 26%
    + [移动 Web](mobile-web.md)
    + [创建设备组过滤器](groupfilters.md)
    + [网页响应式设计](responsive.md)
-   + [为Mobile设备创建站点](mobile.md)
+   + [为移动设备创建站点](mobile.md)
    + [模拟器](emulators.md)

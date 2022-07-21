@@ -1,16 +1,17 @@
 ---
 title: Dynamic Media限制
-description: '了解在创建图像集、旋转集或上传PDF时的最佳实践和强制限制。 另外，了解不支持的Web浏览器和Dynamic Media查看器的操作系统组合。 '
+description: 了解在创建图像集、旋转集或上传PDF时的最佳实践和强制限制。 另外，了解不支持的Web浏览器和Dynamic Media查看器的操作系统组合。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
+source-git-commit: efe93bcf60e0b71fded10ccb77da38c789e08ef9
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,11 +21,10 @@ ht-degree: 6%
 
 本主题包括以下部分：
 
-* Dynamic Media对资产类型的最佳实践和强制限制
+* [Dynamic Media对资产类型的最佳实践和强制限制](#best-practice-enforced-limits)
+* [Dynamic Media查看器不支持的Web浏览器和操作系统组合](#unsupported-browser-os)
 
-<!-- * Unsupported web browser and operating system combinations for Dynamic Media Viewers -->
-
-## Dynamic Media对资产类型的最佳实践和强制限制
+## Dynamic Media对资产类型的最佳实践和强制限制 {#best-practice-enforced-limits}
 
 在您创建旋转集或图像集，或上传PDF以进行页面提取时，Adobe会推荐以下最佳实践并强制实施以下限制：
 
@@ -36,21 +36,18 @@ ht-degree: 6%
 | **旋转集**  — 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 | 不适用 |
 | **PDF**  — 要考虑提取的PDF的最大页面数 |  | 5000（用于新上传） | 100(适用于所有PDF) |
 
-<!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
+## Dynamic Media查看器不支持的Web浏览器和操作系统组合 {#unsupported-browser-os}
 
-
-<!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
-
-Dynamic Media Viewers do not support following combinations of web browser and operating system.
+Dynamic Media查看器不支持以下Web浏览器和操作系统组合。
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
 * Internet Explorer 11 + Windows Phone 8.1
-* Internet Explorer 11 + Windows Phone 8.1 Update
+* Internet Explorer 11 + Windows Phone 8.1更新
 * Safari 6 + iOS 6.0.1
 * Safari 7 + iOS 7.1
-* Safari 7 + macOS X 10.9 Mavericks
+* Safari 7 + OS X 10.9小牛队
 * Safari 8 + iOS 8.4
-* Safari 8 + macOS X 10.10 Yosemite -->
+* Safari 8 + OS X 10.10 Yosemite

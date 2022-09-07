@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 4fdb290ddd7493a7ddbe399ebb76189718cff989
+source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
 workflow-type: tm+mt
-source-wordcount: '5614'
+source-wordcount: '5619'
 ht-degree: 4%
 
 ---
@@ -93,8 +93,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
       >[!IMPORTANT]
       >
-      >在Experience Manager实例上，仅支持Cloud Services中的一个Dynamic Media配置；请勿添加多个配置。 Experience Manager实例上的多个Dynamic Media配置是 _not_ 受Adobe支持或推荐。<!-- CQDOC-19579 and CQDOC-19612 -->
-   * **[!UICONTROL 公司根文件夹路径]**
+      >在Experience Manager实例上，仅支持Cloud Services中的一个Dynamic Media配置；请勿添加多个配置。 Experience Manager实例上的多个Dynamic Media配置是 *not* 受Adobe支持或推荐。<!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL 公司根文件夹路径]**  — 您公司的根文件夹路径。
    * **[!UICONTROL 发布资产]**  — 选项 **[!UICONTROL 立即]** 是指上传资产后，系统会摄取资产并立即提供URL/嵌入。 发布资产无需用户干预。 选项 **[!UICONTROL 激活时]** 表示在提供URL/嵌入链接之前，必须先明确发布资产。
    * **[!UICONTROL 安全预览服务器]**  — 用于指定安全演绎版预览服务器的URL路径。 也就是说，在生成演绎版后，Experience Manager可以安全地访问和预览远程Dynamic Media演绎版(不会将二进制文件发送回Experience Manager实例)。
 

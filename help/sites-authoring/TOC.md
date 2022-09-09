@@ -8,7 +8,7 @@ breadcrumb-title: Authoring 指南
 user-guide-description: 了解在 AEM 中创建内容、进行编辑创作的主要概念。
 feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -78,7 +78,6 @@ ht-degree: 0%
    + [内容分析](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [分析页面性能](ci-analyze.md)
    + [查看页面分析数据](pa-using.md)
-   + [将 Search&amp;Promote 功能添加到您的页面](search-and-promote.md)
 + 个性化 {#personalization}
    + [个性化](personalization.md)
    + [使用 ContextHub 数据预览页面](ch-previewing.md)

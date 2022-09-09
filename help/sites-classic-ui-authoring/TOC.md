@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.4经典UI创作用户指南
 breadcrumb-title: 经典UI创作指南
 user-guide-description: 本指南介绍在经典用户界面中在AEM中创作的概念。
-feature: 创作
+feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 80%
+source-wordcount: '265'
+ht-degree: 79%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 80%
 # AEM 6.4经典UI创作用户指南 {#classic-ui}
 
 + [经典UI创作指南概述](home.md)
-+ 经典UI创作简介{#introduction}
++ 经典UI创作简介 {#introduction}
    + [创作的首要步骤](classic-page-author-first-steps.md)
    + [在经典 UI 中进行创作](classicui.md)
    + [使用创作环境](author-env.md)
-   + [基本操作](author-env-basic-handling.md)
+   + [基本处理](author-env-basic-handling.md)
    + [配置帐户环境](author-env-user-props.md)
    + [选择您的 UI](author-env-select-ui.md)
    + [搜索](author-env-search.md)
@@ -50,7 +50,6 @@ ht-degree: 80%
    + [使用标记](classic-feature-tags.md)
    + [基架](classic-feature-scaffolding.md)
    + [在设计模式中配置组件](classic-page-author-design-mode.md)
-   + [将 Search&amp;Promote 功能添加到您的页面](classic-feature-search-promote.md)
    + [组件](classic-page-author-default-components.md)
 + 工作流 {#workflows}
    + [参与工作流](classic-workflows-participating.md)
@@ -79,7 +78,7 @@ ht-degree: 80%
    + [使用 Adobe Campaign](classic-personalization-ac.md)
    + [Adobe Campaign 组件](classic-personalization-ac-components.md)
    + [定位您的 Adobe Campaign](classic-personalization-ac-target.md)
-+ 经典UI中的资产创作{#assets}
++ 经典UI中的资产创作 {#assets}
    + [使用资产](classicui-assets.md)
    + [传送 Dynamic Media 资产](dynamic-media-assets-delivering.md)
    + [将 Dynamic Media 资产添加到页面](dynamic-media-assets-adding-to-page.md)

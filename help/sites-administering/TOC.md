@@ -8,10 +8,10 @@ breadcrumb-title: Administering 指南
 user-guide-description: 了解如何管理 AEM。
 feature: Administering
 role: Admin
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '641'
+ht-degree: 35%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 0%
    + [安全检查列表](security-checklist.md)
    + [OWASP前10](owasp-top10.md)
    + [在生产就绪模式下运行AEM](production-ready.md)
-   + [身份管理](identity-management.md)
+   + [Identity Management](identity-management.md)
    + [对AEM Managed Services的Adobe IMS身份验证和Admin Console支持](ims-config-and-admin-console.md)
    + [创建封闭用户组](cug.md)
    + [在AEM中缓解序列化问题](mitigating-serialization-issues.md)
@@ -122,17 +122,16 @@ ht-degree: 0%
    + [为 Adobe Analytics 配置链接跟踪](adobeanalytics-link.md)
    + [建立组件数据与 Adobe Analytics 属性的映射](adobeanalytics-mapping.md)
    + [为 Adobe Analytics 配置视频跟踪](adobeanalytics-video.md)
-   + [HTTP2 内容交付常见问题解答](scene7-http2faq.md)
+   + [HTTP2 内容投放常见问题解答](scene7-http2faq.md)
    + [Adobe Campaign集成故障诊断](troubleshooting-campaignintegration.md)
    + [SharePoint连接器许可证、版权声明和免责声明](sharepoint-connector-licenses.md)
    + [SharePoint Connector](sharepoint-connector.md)
    + [DHTML 查看器生命周期结束常见问题解答](dhtml-viewer-endoflifefaqs.md)
-   + [与Adobe Campaign Classic集成](campaignonpremise.md)
+   + [与 Adobe Campaign Classic 集成](campaignonpremise.md)
    + [相关社区文章](related-community-articles.md)
    + [与Adobe Campaign Standard集成](campaignstandard.md)
    + [Flash 查看器生命周期终止通知](flash-viewers-eol.md)
    + [与Adobe Creative Cloud集成](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
-   + [产品信息源](product-feed.md)
    + [与AdobeDynamic Tag Management集成](dtm.md)
    + [选择加入Adobe Analytics和Adobe Target](opt-in.md)
    + [AEM门户和Portlet](aem-as-portal.md)
@@ -150,7 +149,6 @@ ht-degree: 0%
    + [手动配置与Adobe Target的集成](target-configuring.md)
    + [与Adobe Target集成的先决条件](target-requirements.md)
    + [Adobe 分类](adobeanalytics-classifications.md)
-   + [与AdobeSearch&amp;Promote集成](search-and-promote.md)
    + [解决方案集成](integration.md)
    + [Target与体验片段集成](experience-fragments-target.md)
 + 最佳实践 {#bestpractices}

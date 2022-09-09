@@ -1,20 +1,20 @@
 ---
 title: 电子商务
-seo-title: 电子商务
-description: 'AEM eCommerce可帮助营销人员在Web、移动和社交接触点中提供品牌化的个性化购物体验。 '
-seo-description: 'AEM eCommerce可帮助营销人员在Web、移动和社交接触点中提供品牌化的个性化购物体验。 '
+seo-title: eCommerce
+description: AEM eCommerce可帮助营销人员在Web、移动和社交接触点中提供品牌化的个性化购物体验。
+seo-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
 uuid: 14af7a3a-7211-4a56-aeef-1603128d5d8a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
-feature: 商务集成框架
+feature: Commerce Integration Framework
 exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 2%
+source-wordcount: '756'
+ht-degree: 3%
 
 ---
 
@@ -31,12 +31,12 @@ Adobe提供了商务集成框架的两个版本：
 |  | CIF上线 | CIF云 |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | 支持的 AEM 版本 | AEM on-prem或AMS 6.x | AEM AMS 6.4和6.5 |
-| 后端 | - AEM、Java <br> — 整体集成、预构建映射（模板）<br> - JCR存储库 | -Magento<br>- Java和Javascript <br> — 无商务数据存储在JCR存储库中 |
+| 后端 | - AEM、Java <br>  — 整体集成、预构建映射（模板）<br> - JCR存储库 | -Magento <br>- Java和Javascript <br>- JCR存储库中未存储商务数据 |
 | 前端 | AEM服务器端渲染的页面 | 混合页面应用程序（混合渲染） |
-| 产品目录 | - AEM <br>中的产品导入器、编辑器、缓存 — 具有AEM或代理页面的常规目录 |  — 无产品导入<br> — 通用模板<br> — 通过连接器按需数据 |
-| 可扩展性 |  — 最多可支持数百万种产品（取决于用例）<br> - Dispatcher上的缓存 |  — 无卷限制<br> - Dispatcher或CDN上的缓存 |
+| 产品目录 |  — 产品导入器，编辑器，AEM中的缓存 <br> — 包含AEM或代理页面的常规目录 |  — 无产品导入 <br> — 通用模板 <br> — 通过连接器按需数据 |
+| 可扩展性 |  — 最多可支持数百万种产品（取决于用例） <br> - Dispatcher上的缓存 |  — 无卷限制 <br> — 在Dispatcher或CDN上缓存 |
 | 标准化数据模型 | 否 | 是，MagentoGraphQL架构 |
-| 可用性 | 是：<br> - SAPCommerce Cloud(扩展已更新以支持AEM 6.4和Hybris 5（默认），并维护与Hybris 4 <br> - SalesforceCommerce Cloud(连接器开源支持AEM 6.4)的兼容性 | 是，可通过GitHub通过开源。 <br> Magento Commerce(支持Magento2.3.2（默认）并与Magento2.3.1兼容)。 |
+| 可用性 | 是：<br> - SAPCommerce Cloud(扩展已更新以支持AEM 6.4和Hybris 5（默认），并维护与Hybris 4的兼容性 <br>- SalesforceCommerce Cloud(连接器开源支持AEM 6.4) | 是，可通过GitHub通过开源。 <br> Magento Commerce(支持Magento2.3.2（默认）并与Magento2.3.1兼容)。 |
 | 何时使用 | 有限用例：对于可能需要导入小型静态目录的情况 | 大多数用例中的首选解决方案 |
 
 电子商务与产品信息管理(PIM)一起处理网站的活动，重点是通过在线商店销售产品：
@@ -63,15 +63,15 @@ AEM eCommerce可帮助营销人员在Web、移动和社交接触点中提供品�
 
 >[!NOTE]
 >
->要将集成框架与外部电子商务提供程序结合使用，您首先需要安装所需的包。 有关更多信息，请参阅[部署eCommerce](/help/sites-deploying/ecommerce.md)。
+>要将集成框架与外部电子商务提供程序结合使用，您首先需要安装所需的包。 有关更多信息，请参阅 [部署eCommerce](/help/sites-deploying/ecommerce.md).
 >
->有关扩展电子商务功能的信息，请参阅[开发电子商务](/help/sites-developing/ecommerce.md)。
+>有关扩展电子商务功能的信息，请参阅 [发展电子商务](/help/sites-developing/ecommerce.md).
 
-## 主要功能{#main-features}
+## 主要功能 {#main-features}
 
 AEM电子商务提供：
 
-* 许多&#x200B;**现成的AEM组件**&#x200B;以说明可为项目实现的目标：
+* 数量 **开箱即用的AEM组件** 为了说明项目可以实现的目标：
 
    * 产品显示
    * 购物车
@@ -86,24 +86,24 @@ AEM电子商务提供：
    >
    >AEM提供的集成框架还允许您为独立于特定电子商务引擎的商务功能构建其他AEM组件。
 
-* **搜索**  — 使用以下任一方式：
+* **搜索**  — 使用以下任一方法：
 
    * AEM搜索
    * 电子商务系统的探索
-   * 第三方搜索(如Search&amp;Promote)
+   * 第三方搜索
    * 或两者的组合。
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-* 使用AEM功能&#x200B;**在多个渠道（无论是整个浏览器窗口还是移动设备）上显示您的内容**。 这会以访客所需的格式交付内容。
+* 使用AEM功能 **在多个渠道中展示内容**，可以是整个浏览器窗口或移动设备。 这会以访客所需的格式交付内容。
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-* 能够根据[AEM电子商务框架&#x200B;](#the-framework)**开发您自己的集成实施。**
+* 能够 **根据 [AEM电子商务框架](#the-framework)**.
 
    当前可用的两个实施都基于相同的基础构建 — 基于常规API（框架）。 实施新集成仅涉及实施集成所需的功能。 前端组件可供任何新实施使用，因为它们使用的是接口（因此与实施无关）。
 
-* 根据购物者数据和活动&#x200B;**开发**&#x200B;体验驱动型商务的可能性。 这样，您就可以了解许多情景：
+* 发展的可能性 **基于购物者数据和活动的体验驱动型商务**. 这样，您就可以了解许多情景：
 
    * 例如，当总订单超过特定金额时，可能会降低运输成本。
    * 另一种方法可能允许您提供使用用户档案数据（例如位置）的季节性选件。 然后，可根据其他因素在必要时再次突出显示这些内容。
@@ -122,9 +122,9 @@ AEM电子商务提供：
    * 完整订单历史记录
    * 快速目录更新
 
-## 框架{#the-framework}
+## 框架 {#the-framework}
 
-[Concepts](/help/sites-administering/concepts.md)部分更详细地介绍了框架，但以下部分提供了框架的高级、高速视图：
+的 [概念](/help/sites-administering/concepts.md) 部分更详细地介绍了框架，但以下部分提供了框架的高级、高速视图：
 
 ### 什么？ {#what}
 

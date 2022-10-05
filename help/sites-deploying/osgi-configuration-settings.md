@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
+source-git-commit: b06865e213fd20ed328104642eda812d4dfe43ed
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3461'
 ht-degree: 0%
 
 ---
@@ -284,7 +284,7 @@ OSGi &quot;*提供标准化的基元，允许应用程序从可重用的小组�
 
 >[!CAUTION]
 >
->更改 **缩小** 或 **Gzip** 您还需要删除 `/var/clientlibs`. 这是Clientlibs的缓存版本，将在下次请求时重新构建。
+>更改 **缩小** 或 **Gzip** 您还需要删除clientlibs缓存的内容。 请参阅 [知识库文章](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) 以了解详细信息。
 
 >[!NOTE]
 >

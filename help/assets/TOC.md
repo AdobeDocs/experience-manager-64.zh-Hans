@@ -8,8 +8,8 @@ breadcrumb-title: Assets 指南
 user-guide-description: 创建、管理、交付和优化数字资产。
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '649'
+ht-degree: 52%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
    + [HTTP2 内容交付](http2.md)
    + [传送 Dynamic Media 资产](delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中激活热链接保护](hotlink-protection.md)
-   + [Dynamic Media限制](limitations.md)
+   + [Dynamic Media 限制](limitations.md)
    + [图像集](image-sets.md)
    + [混合媒体集](mixed-media-sets.md)
    + [旋转集](spin-sets.md)
@@ -92,7 +92,7 @@ ht-degree: 0%
    + [资源报表](asset-reports.md)
    + [增强型智能标记](enhanced-smart-tags.md)
    + [用于处理元数据、图像和视频的配置文件](processing-profiles.md)
-   + [级联元数据](cascading-metadata.md)
+   + [层叠元数据](cascading-metadata.md)
    + [创建和配置资产编辑器页面](assets-finder-editor.md)
    + [资产大小调整指南](assets-sizing-guide.md)
    + [元数据架构参考](meta-ref.md)
@@ -135,10 +135,10 @@ ht-degree: 0%
    + [使用内容片段](content-fragments.md)
    + [管理内容片段](content-fragments-managing.md)
    + [内容片段模型](content-fragments-models.md)
-   + [变量 - 创作片段内容](content-fragments-variations.md)
+   + [变量 – 创作片段内容](content-fragments-variations.md)
    + [内容片段关联内容](content-fragments-assoc-content.md)
-   + [元数据 - 片段属性](content-fragments-metadata.md)
-   + [内容片段 - 删除注意事项](content-fragments-delete.md)
+   + [元数据 – 片段属性](content-fragments-metadata.md)
+   + [内容片段 – 删除注意事项](content-fragments-delete.md)
    + [内容片段 — Markdown](content-fragments-markdown.md)
    + [为内容片段创建翻译项目](creating-translation-projects-for-content-fragments.md)
 + 管理资产 {#managing}

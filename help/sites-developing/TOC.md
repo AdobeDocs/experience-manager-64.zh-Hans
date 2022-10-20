@@ -10,8 +10,8 @@ feature: Developing
 role: Developer
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '886'
+ht-degree: 26%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 + [开发用户指南概述](home.md)
 + 开发人员简介{#introduction}
-   + [AEM Sites 开发入门 - WKND 教程](getting-started.md)
+   + [AEM站点开发入门 – WKND 教程](getting-started.md)
    + [AEM核心概念](the-basics.md)
    + [AEM触屏UI的结构](touch-ui-structure.md)
    + [AEM触屏UI的概念](touch-ui-concepts.md)
@@ -170,7 +170,7 @@ ht-degree: 0%
       + [自定义Adobe Analytics框架](extending-analytics-framework.md)
       + [为Analytics实施服务器端页面命名](extending-analytics-pa-naming.md)
    + 云服务{#extending-cloud-services}
-      + [云服务配置](extending-cloud-config.md)
+      + [Cloud Service 配置](extending-cloud-config.md)
       + [创建自定义Cloud Service](extending-cloud-config-custom-cloud.md)
    + [创建自定义扩展](extending-campaign-extensions.md)
    + Forms{#extending-forms}

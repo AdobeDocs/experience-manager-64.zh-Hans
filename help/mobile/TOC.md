@@ -9,8 +9,8 @@ feature: Mobile
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '331'
+ht-degree: 12%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 0%
    + [将Adobe Analytics添加到移动应用程序](phonegap-add-analytics-to-apps.md)
    + [移动设备应用程序的页面模板](phonegap-apps-arch-page-templates.md)
    + [配置Adobe TargetCloud Service](aem-mobile-configuring-cloud-service.md)
-   + [单页应用程序](phonegap-single-page-applications.md)
+   + [单页面应用程序](phonegap-single-page-applications.md)
    + [存储库中的模型](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/administering/administer-mobile-apps.html)
    + [启动AEM PhoneGap](starting-aem-phonegap-app.md)
    + [测试移动设备应用程序](develop-mobile-apps-testing.md)

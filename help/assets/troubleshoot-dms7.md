@@ -9,7 +9,7 @@ exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Troubleshooting
 role: Admin,User
 mini-toc-levels: 3
-source-git-commit: 39518ffbbcd1368cff02c356246dc5b430cc14d6
+source-git-commit: 48e75239b9934ebe6c3c0d4f76b7990372646f23
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 1%
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 | **属性** | **示例** | **描述** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | `a|364266` | 节点已链接到Dynamic Media的常规指示符。 |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | `a\|364266` | 节点已链接到Dynamic Media的常规指示符。 |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishComplete]** 或错误文本 | 资产上传到Dynamic Media的状态。 |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | 必须填充才能生成指向Dynamic Media远程资产的URL。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | `success` 或 `failed:<error text>` | 集（旋转集、图像集等）、图像预设、查看器预设、资产的图像映射更新或已编辑图像的同步状态。 |

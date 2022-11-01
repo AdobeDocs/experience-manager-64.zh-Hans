@@ -7,7 +7,7 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: dba3b09035e6ffafd1681b370e3a10a76564bf65
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '4637'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Forms Workflow步骤 {#forms-workflow-steps}
 
-Forms工作流步骤在AEM工作流中执行特定于AEM Forms的操作。 这些步骤允许您在OSGi上快速构建基于以Forms为中心的自适应表单工作流。 这些工作流可用于开发基本的审核和批准工作流、内部和跨防火墙的业务流程。 您还可以使用Forms Workflow步骤来启动文档服务、与Adobe Sign签名工作流集成，以及执行其他AEM Forms操作。 您需要 [AEM Forms附加组件](https://www.adobe.com/go/learn_aemforms_documentation_63) 以在工作流中使用这些步骤。
+Forms工作流步骤在AEM工作流中执行特定于AEM Forms的操作。 这些步骤允许您在OSGi上快速构建基于以Forms为中心的自适应表单工作流。 这些工作流可用于开发基本的审核和批准工作流、内部和跨防火墙的业务流程。 您还可以使用Forms Workflow步骤来启动文档服务、与Acrobat Sign签名工作流集成，以及执行其他AEM Forms操作。 您需要 [AEM Forms附加组件](https://www.adobe.com/go/learn_aemforms_documentation_63) 以在工作流中使用这些步骤。
 
 ## 分配任务步骤 {#assign-task-step}
 
@@ -214,11 +214,11 @@ Forms工作流步骤在AEM工作流中执行特定于AEM Forms的操作。 这�
 
 ## “签名文档”步骤 {#sign-document-step}
 
-通过“签名文档”步骤，您可以使用Adobe Sign来签署文档。 “签名文档”步骤具有以下属性：
+通过“签名文档”步骤，您可以使用Acrobat Sign来签署文档。 “签名文档”步骤具有以下属性：
 
 * **协议名称：** 指定协议的标题。 协议名称将成为发送给签名者的电子邮件的主题和正文文本的一部分。
 * **区域设置：** 指定电子邮件和验证选项的语言。
-* **Adobe Sign云配置**:选择Adobe Sign云配置。 如果尚未为AEM Forms配置Adobe Sign，请参阅 [将Adobe Sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+* **Acrobat Sign云配置**:选择Acrobat Sign云配置。 如果尚未为AEM Forms配置Acrobat Sign，请参阅 [将Acrobat Sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **待签名文档：** 您可以从相对于有效负荷的位置选择文档，使用有效负荷作为文档，或指定文档的绝对路径。
 * **输入附件路径：** 选择附件。 这些附件包含在签名文档中。 您可以将附件保留在相对于有效负载的位置，或指定附件的绝对路径。
@@ -234,8 +234,8 @@ Forms工作流步骤在AEM工作流中执行特定于AEM Forms的操作。 这�
 * **选择签名者：** 指定为文档选择签名者的方法。 您可以动态地将工作流分配给用户或组，或手动添加签名者的详细信息。
 * **用于选择签名者的脚本或服务：** 仅当在选择签名者字段中选择了动态选项时，该选项才可用。 您可以指定ECMAScript或服务来为文档选择签名者和验证选项。
 
-* **签名者详细信息：** 仅当在选择签名者字段中选择了手动选项时，该选项才可用。 指定电子邮件地址并选择可选的验证机制。 在选择两步验证机制之前，请确保为已配置的Adobe Sign帐户启用相应的验证选项。
-* **状态变量：** 启用Adobe Sign的文档将文档的签名状态存储在变量中。 指定状态变量的名称(adobeSignStatus)。 在CRXDE中，可以在/etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData包含变量的状态。
+* **签名者详细信息：** 仅当在选择签名者字段中选择了手动选项时，该选项才可用。 指定电子邮件地址并选择可选的验证机制。 在选择两步验证机制之前，请确保为已配置的Acrobat Sign帐户启用相应的验证选项。
+* **状态变量：** 启用Acrobat Sign的文档将文档的签名状态存储在变量中。 指定状态变量的名称(adobeSignStatus)。 在CRXDE中，可以在/etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData包含变量的状态。
 * **签名文档路径：** 指定保留已签名文档的位置。 您可以选择覆盖有效负载文件，或将已签名文档放置在有效负载目录中的某个位置。
 
 ## 文档服务步骤 {#document-services-steps}

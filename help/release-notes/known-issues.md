@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 4%
 * **Omnisearch:** 左边栏谓词与Omnisearch服务器请求一起获取(GRANITE-20524)
 * **Omnisearch:** Omnisearch不支持上下文路径(GRANITE-16044)
 
-## 资产 {#assets}
+## Assets {#assets}
 
 * **搜索**:如果搜索字符串以空格开头，则搜索不返回任何结果 [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
@@ -133,14 +133,14 @@ ht-degree: 4%
 
 (CQ-4238462)
 
-### Adobe Sign集成
+### Acrobat Sign集成
 
-* Adobe Sign计划程序间歇性停止工作，因此表单待处理符号不会移至提交。 要解决此问题，请重新启动 **Apache Sling调度程序支持** 从AEM web控制台中捆绑到https://[*服务器*]:[*端口*]/system/console/bundles。
+* Acrobat Sign计划程序间歇性停止工作，因此表单待处理符号不会移至提交。 要解决此问题，请重新启动 **Apache Sling调度程序支持** 从AEM web控制台捆绑包(https://)[*服务器*]:[*端口*]/system/console/bundles。
 
 ### 自适应Forms创作
 
 * 自适应表单中的图表组件占用的空间比通常多。
 * 在Forms Manager UI中保存自适应表单、自适应表单片段或交互式通信的属性时，会返回异常。
 * 在 Android 6.0 Samsung 设备上不接受为自适应表单文本框指定的最大字符数。(Ref# CQ-4235205)
-* 当您从Apple iOS设备提交包含标准HTML上载字段的表单时，有时不会发送文件内容，而在另一端会收到0字节的文件。 Apple iOS 15.1已修复该问题。
+* 在从 Apple iOS 设备提交包含标准 HTML 上传字段的表单时，有时不会发送文件内容，而在另一端会收到一个 0 字节的文件。Apple iOS 15.1 修复了此问题。
 

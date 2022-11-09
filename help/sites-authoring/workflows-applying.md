@@ -1,25 +1,25 @@
 ---
 title: 将工作流应用于页面
-seo-title: 将工作流应用于页面
-description: 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
-seo-description: 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
+seo-title: Applying Workflows to Pages
+description: 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。。
+seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
 uuid: 8a1d16f8-69fc-4e3a-b72a-b799ea381024
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
 exl-id: 05c52802-adfd-4b5f-a273-d6a261a00659
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 84%
+source-wordcount: '647'
+ht-degree: 99%
 
 ---
 
 # 将工作流应用于页面{#applying-workflows-to-pages}
 
-在创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
+进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
 
 在应用工作流时，您需要指定以下信息：
 
@@ -44,12 +44,11 @@ ht-degree: 84%
 >
 
 
-
 >[!NOTE]
 >
 >AEM 管理员可以[使用其他几种方法来启动工作流](/help/sites-administering/workflows-starting.md)。
 
-## 从“站点”控制台启动工作流  {#starting-a-workflow-from-the-sites-console}
+## 从“站点”控制台启动工作流 {#starting-a-workflow-from-the-sites-console}
 
 您可以从以下任一项中启动工作流：
 
@@ -60,30 +59,30 @@ ht-degree: 84%
 
 * [在“创建工作流”向导中指定工作流详细信息](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 从“站点”工具栏启动工作流  {#starting-a-workflow-from-the-sites-toolbar}
+### 从“站点”工具栏启动工作流 {#starting-a-workflow-from-the-sites-toolbar}
 
-您可以从&#x200B;**Sites**&#x200B;控制台的工具栏启动工作流：
+您可以从&#x200B;**站点**&#x200B;控制台的工具栏中启动工作流：
 
 1. 导航到所需的页面并选择该页面。
 
-1. 从工具栏的&#x200B;**创建**&#x200B;选项中，您现在可以选择&#x200B;**工作流**。
+1. 现在，您可以从工具栏的&#x200B;**创建**&#x200B;选项中选择&#x200B;**工作流**。
 
    ![screen_shot_2019-03-06at121237pm](assets/screen_shot_2019-03-06at121237pm.png)
 
 1. **创建工作流**&#x200B;向导将帮助您[指定工作流详细信息](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 从时间轴启动工作流  {#starting-a-workflow-from-the-timeline}
+### 从时间线启动工作流 {#starting-a-workflow-from-the-timeline}
 
-您可以从&#x200B;**时间轴**&#x200B;中启动要应用于所选资源的工作流。
+您可以从&#x200B;**时间线**&#x200B;中启动要应用于所选资源的工作流。
 
-1. [选择资](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) 源并打 [开时间轴](/help/sites-authoring/basic-handling.md#timeline) （或打开时间轴，然后选择资源）。
+1. [选择资源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)，然后打开[时间线](/help/sites-authoring/basic-handling.md#timeline)（或打开时间线，然后选择资源）。
 1. 可以使用评论字段中的箭头显示&#x200B;**启动工作流**：
 
    ![wf-51](assets/wf-51.png)
 
 1. **创建工作流**&#x200B;向导将帮助您[指定工作流详细信息](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 在“创建工作流”向导中指定工作流详细信息  {#specifying-workflow-details-in-the-create-workflow-wizard}
+### 在“创建工作流”向导中指定工作流详细信息 {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 **创建工作流**&#x200B;向导将帮助您选择工作流并指定所需的详细信息。
 
@@ -107,27 +106,27 @@ ht-degree: 84%
    * **包标题**
 
       * 您可以指定包标题以便进行识别。
-
    >[!NOTE]
    >
-   >为“ **多资源支持”配置了工作流并选择了多个资源时** ,“保留工作流包”选项可用。[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
+   >为多资源支持配置了工作流并选择了多个资源时，**保留工作流包**&#x200B;选项可用。[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
 
-   完成后，使用&#x200B;**下一步**&#x200B;以继续。
+   完成后，单击&#x200B;**下一步**&#x200B;继续。
 
    ![wf-52](assets/wf-52.png)
 
 1. 在&#x200B;**范围**&#x200B;步骤中，您可以选择：
 
-   * **添加** 内容以打开路径浏 [览](/help/sites-authoring/author-environment-tools.md#path-browser) 器并选择其他资源；在浏览器中，单击/点按选 **** 择，以将内容添加到工作流实例。
+   * **添加内容**&#x200B;以打开[路径浏览器](/help/sites-authoring/author-environment-tools.md#path-browser)并选择其他资源；在浏览器中，单击/点按&#x200B;**选择**&#x200B;以将内容添加到工作流实例。
    * 现有资源以查看其他操作：
 
       * **包括子项**，指定将该资源的子项包含在工作流中。
 
+
          系统将打开一个对话框，允许您根据以下各项优化选择：
 
-         * 仅包括下级子项。
-         * 仅包括已修改的页面。
-         * 仅包括已发布的页面。
+         * 仅包括下级子项.
+         * 仅包括已修改的页面.
+         * 仅包括已发布的页面.
 
          指定的任何子项都会添加到将应用工作流的资源列表中。
 
@@ -137,11 +136,11 @@ ht-degree: 84%
 
    >[!NOTE]
    >
-   >如果添加其他资源，则可以使用“返回 **”** ，在“属性”步骤中调整“ **保留工作流包** ”的 **设置** 。
+   >如果添加其他资源，则可以使用&#x200B;**返回**，在&#x200B;**属性**&#x200B;步骤中调整&#x200B;**保留工作流包**&#x200B;的设置。
 
-1. 使用&#x200B;**创建**&#x200B;关闭向导并创建工作流实例。 “站点”控制台中随即会显示一则通知。
+1. 使用&#x200B;**创建**&#x200B;关闭向导并创建工作流实例。“站点”控制台中随即会显示一则通知。
 
-## 从页面编辑器启动工作流  {#starting-a-workflow-from-the-page-editor}
+## 从页面编辑器启动工作流 {#starting-a-workflow-from-the-page-editor}
 
 编辑页面时，您可以从工具栏中选择&#x200B;**页面信息**。下拉菜单中包含&#x200B;**启动工作流**&#x200B;选项。此选项将打开一个对话框，您可以在其中指定所需的工作流，如果需要，还可以指定标题：
 

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '21547'
+source-wordcount: '21517'
 ht-degree: 27%
 
 ---
@@ -1291,7 +1291,7 @@ AEM 6.4.2.0的一些主要功能亮点包括：
 * 添加了对MongoDB Enterprise 3.6的支持。
 * 站点页面编辑器添加了对上下文内编辑和组合的支持，这些组件在React或Angular中与 <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>.
 * 内容片段增强功能：添加了在文本字段中添加注释以及版本并排比较的功能。
-* 添加了 [与Adobe Stock集成](/help/assets/aem-assets-adobe-stock.md) 以便用户可以直接从AEM用户界面搜索、预览、保存和许可Adobe Stock资产。 有关更多详细信息，请参阅 [将Adobe Stock资产与AEM Assets结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
+* 添加了 [与Adobe Stock集成](/help/assets/aem-assets-adobe-stock.md) 以便用户可以直接从AEM用户界面搜索、预览、保存和许可Adobe Stock资产。 有关更多详细信息，请参阅 [将Adobe Stock资产与AEM Assets结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * 添加了对动态条件元架构的支持以及为资产文件夹设置元数据架构的功能。
 * 在每个组件中添加了配置，以启用/禁用文件夹缩略图创建/更新功能。
 * 增强了页面创作中的图像编辑器功能。
@@ -1338,7 +1338,7 @@ AEM 6.4.2.0的一些主要功能亮点包括：
 * 开/关时间存储在crx/de中，但在页面属性UI控制台中不会获取相同的内容。 NPR-25154：适用于 CQ-4243431 的修补程序
 * 样式系统会中断对话框的初始属性值。 NPR-25648：适用于 CQ-4250073 的修补程序
 * 在cq:htmlTag节点中定义cq:tagName属性时，如果组件是通过JSP包含的，则不会考虑标记名称。 NPR-24154：适用于 CQ-4244120 的修补程序
-* 对于 Parsys 嵌套组件，始终从多个可用组件中应用第一个（具有最少的嵌套路径）令人满意的设计。有关更多信息，请参阅[设计路径解析](https://docs.adobe.com/content/help/zh-Hans/experience-manager-64/developing/platform/templates/page-templates-static.html)。NPR-24973：适用于 CQ-4246276 的修补程序
+* 对于 Parsys 嵌套组件，始终从多个可用组件中应用第一个（具有最少的嵌套路径）令人满意的设计。有关更多信息，请参阅[设计路径解析](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/templates/page-templates-static.html)。NPR-24973：适用于 CQ-4246276 的修补程序
 * 将文本粘贴到RTE组件中时，会显示一个弹出对话框，但未正确呈现。 NPR-24895：适用于 CQ-4245901 的修补程序
 * (RTE)必填字段指示器存在性能问题。 NPR-24894：适用于 CQ-4241895 的修补程序
 * （页面组件）向Parsys添加组件会从右侧被裁剪掉，并出现设备框架宽度。 NPR-25536：适用于 CQ-4238224 的修补程序
@@ -1553,7 +1553,7 @@ AEM 6.4.2.0 Forms 的重要功能亮点包括：
 * 为用户添加了对多个服务使用相同WSDL文件的功能。
 * 从日期选取器下拉列表中删除了不支持的时间戳模式。
 * 添加了对在OSGi中埋藏xfaf和pdf的支持。
-* 添加了对使用 [交易报告能力](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) 内部部署时。
+* 添加了对使用 [交易报告能力](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) 内部部署时。
 * 添加了在条件规则编辑器中不显示子变量的代码。
 
 **Forms 附加组件包**
@@ -1656,17 +1656,17 @@ AEM 6.4.2.0 Forms 的重要功能亮点包括：
 
 **资产**
 
-* 添加了 [与Adobe Stock集成](/help/assets/aem-assets-adobe-stock.md) 以便用户可以直接从AEM用户界面搜索、预览、保存和许可Adobe Stock资产。 有关更多详细信息，请参阅 [将Adobe Stock资产与AEM资产结合使用](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779：适用于 CQ-30857 的修补程序
+* 添加了 [与Adobe Stock集成](/help/assets/aem-assets-adobe-stock.md) 以便用户可以直接从AEM用户界面搜索、预览、保存和许可Adobe Stock资产。 有关更多详细信息，请参阅 [将Adobe Stock资产与AEM资产结合使用](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779：适用于 CQ-30857 的修补程序
 * 添加了对动态条件元架构的支持。 有关更多信息，请参阅 [串联元数据](/help/assets/cascading-metadata.md). NPR-25189：适用于 CQ-4237413 的修补程序
 * 对内容片段启用了“资产下载”选项。 有关更多信息，请参阅 [资产报表](/help/assets/asset-reports.md). NPR-25186：适用于 CQ-4237410 的修补程序
 * 能够为资产文件夹设置元数据架构。 有关更多信息，请参阅 [文件夹元数据架构](/help/assets/folder-metadata-schema.md) 并参考 [配置设置](#configuration-settings-required-for-npr) 安装AEM 6.4.2.0后。 NPR-21268：适用于 CQ-4221574 的修补程序
 
 **站点**
 
-* 允许编辑没有删除权限的内容片段。 有关更多信息，请参阅 [自定义和扩展内容片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793：适用于 CQ-4248750 的修补程序
-* 添加了对内容片段添加注释的功能。 有关更多信息，请参阅 [变体创作片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188：适用于 CQ-4235336 的修补程序
-* 版本控制：并排比较内容片段。 有关更多信息，请参阅 [管理内容片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187：适用于 CQ-4237412 的修补程序
-* 支持到AEM 6.4.2.0的图像编辑器增强功能。有关更多信息，请参阅 [图像编辑器](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24467
+* 允许编辑没有删除权限的内容片段。 有关更多信息，请参阅 [自定义和扩展内容片段](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793：适用于 CQ-4248750 的修补程序
+* 添加了对内容片段添加注释的功能。 有关更多信息，请参阅 [变体创作片段](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188：适用于 CQ-4235336 的修补程序
+* 版本控制：并排比较内容片段。 有关更多信息，请参阅 [管理内容片段](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187：适用于 CQ-4237412 的修补程序
+* 支持到AEM 6.4.2.0的图像编辑器增强功能。有关更多信息，请参阅 [图像编辑器](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24467
 
 **包含的OSGi包和内容包**
 
@@ -1900,7 +1900,7 @@ AEM 6.4.1.0可以安装在AEM 6.4 GA上。 Service Pack的一些主要亮点包�
 
 **DAM — 智能标记**
 
-* 引入 [增强的智能标记](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
+* 引入 [增强的智能标记](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
 
 **表单**
 
@@ -1908,7 +1908,7 @@ AEM 6.4.1.0可以安装在AEM 6.4 GA上。 Service Pack的一些主要亮点包�
 
 AEM Forms 的主要功能亮点包括：
 
-* AEM Forms介绍 [交易报告能力](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) 跟踪和保留已提交表单、已处理文档和已呈现文档等交易记录在AEM Forms部署中的计数。 它提供了有关产品使用情况的分析，并帮助企业用户了解数字处理量。
+* AEM Forms介绍 [交易报告能力](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) 跟踪和保留已提交表单、已处理文档和已呈现文档等交易记录在AEM Forms部署中的计数。 它提供了有关产品使用情况的分析，并帮助企业用户了解数字处理量。
 * 启用了对XML表单的PDF/UA支持。
 * 为Clientlib添加了allowProxy = true **aemfd.ccm.channel.contentpage**
 * 更新了代码，以便按“包含”而非“等于”方式进行高级标题搜索。
@@ -2066,12 +2066,12 @@ AEM Forms 的主要功能亮点包括：
 
 **资产**
 
-* 添加了增强型智能标记的功能。 有关更多信息，请参阅 [增强的智能标记](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951：适用于 CQ-4234883 的修补程序
+* 添加了增强型智能标记的功能。 有关更多信息，请参阅 [增强的智能标记](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951：适用于 CQ-4234883 的修补程序
 * 在InDesign中引入了AEM Assets引用。 有关更多信息，请参阅 [AEM Assets引用InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
 
 **站点**
 
-* （页面创作）图像编辑器增强功能。 有关更多信息，请参阅 [图像编辑器](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24267：适用于 CQ-4245502 的修补程序
+* （页面创作）图像编辑器增强功能。 有关更多信息，请参阅 [图像编辑器](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24267：适用于 CQ-4245502 的修补程序
 
 **包含的 OSGi 包和内容包**
 
@@ -2172,7 +2172,7 @@ B.使用 [包管理器中的HTTP API](/help/sites-administering/package-manager.
 
 1. 确保您已安装了 AEM Service Pack。
 1. 下载列于的相应Forms附加组件包 [AEM Forms版本](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 操作系统。
-1. 按照 [安装AEM Forms附加组件包](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. 按照 [安装AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### 安装AEM Forms JEE安装程序 {#install-aem-forms-jee-installer}
 
@@ -2227,7 +2227,7 @@ B.使用 [包管理器中的HTTP API](/help/sites-administering/package-manager.
 | 区域 | 功能 | 替换 | 版本号 |
 |---|---|---|---|
 | 资产 | 管理子资产的标记操作 | 无替换项 | AEM 6.4.2.0 |
-| 资产和 Creative Cloud 集成 | AEM 6.2 中引入了 [AEM 到 Creative Cloud 的文件夹共享](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，以便创意用户可以从 AEM 访问资产。在 Creative Cloud 应用程序中发布的新功能“Adobe 资产链接”提供了更佳的用户体验，能够直接从 Photoshop、InDesign 和 Illustrator 中轻松访问 AEM Assets。Adobe 不会再进一步增强文件夹共享功能。虽然AEM中包含该功能，但强烈建议客户使用替换。 | Adobe资产链接或桌面应用程序。 有关更多信息，请参阅 [AEM Creative Cloud 集成](/help/assets/aem-cc-integration-best-practices.md)一文。 | AEM 6.4.4.0 |
+| 资产和 Creative Cloud 集成 | AEM 6.2 中引入了 [AEM 到 Creative Cloud 的文件夹共享](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，以便创意用户可以从 AEM 访问资产。在 Creative Cloud 应用程序中发布的新功能“Adobe 资产链接”提供了更佳的用户体验，能够直接从 Photoshop、InDesign 和 Illustrator 中轻松访问 AEM Assets。Adobe 不会再进一步增强文件夹共享功能。虽然AEM中包含该功能，但强烈建议客户使用替换。 | Adobe资产链接或桌面应用程序。 有关更多信息，请参阅 [AEM Creative Cloud 集成](/help/assets/aem-cc-integration-best-practices.md)一文。 | AEM 6.4.4.0 |
 
 ### 已知问题 {#known-issues}
 
@@ -2273,4 +2273,4 @@ AEM 6.4.8.0 中包含的内容包列表
 
 * [产品下载：licensing.adobe.com](https://licensing.adobe.com/).
 * 产品更新、修补程序和软件包，以获取 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [通过Admin Console提供客户支持](https://adminconsole.adobe.com/). 有关更多信息，请参阅 [新的Adobe客户支持体验](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [通过Admin Console提供客户支持](https://adminconsole.adobe.com/). 有关更多信息，请参阅 [新的Adobe客户支持体验](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

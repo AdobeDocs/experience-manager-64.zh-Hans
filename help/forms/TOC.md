@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.4 Forms 指南
 breadcrumb-title: Forms 指南
 user-guide-description: 创建、管理、发布和更新数字表单。
 role: User
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3721'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 4%
 
 + [AEM 6.4 Forms指南](home.md)
 + 发行说明 {#release-notes-new-features}
-   + [发行说明](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
+   + [发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [新增功能摘要](using/whats-new.md)
-   + [已弃用功能](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [已弃用功能](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
 + 快速入门 {#getting-started}
    + [AEM Forms简介](using/introduction-aem-forms.md)
    + [创作自适应表单简介](using/introduction-forms-authoring.md)
@@ -573,8 +573,8 @@ ht-degree: 4%
    + [进程报表中的临时查询](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [流程报告疑难解答](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + 开发人员参考 {#developer-reference}
-   + [开发人员基础知识](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [HTML 模板语言](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [开发人员基础知识](https://experienceleague.adobe.com/docs/experience-manager-64/developing/home.html)
+   + [HTML 模板语言](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)
    + [AEM插件调试自适应表单](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API参考](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [AEM Forms on JEE Java API参考](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)

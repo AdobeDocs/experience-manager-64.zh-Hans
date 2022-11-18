@@ -1,8 +1,8 @@
 ---
-title: 组件 概述
-seo-title: 组件
+title: 组件概述
+seo-title: Components
 description: 组件是模块化单元，可以实现在网站上显示内容的特定功能
-seo-description: 组件是模块化单元，可以实现在网站上显示内容的特定功能
+seo-description: Components are modular units which realize specific functionality to present your content on your website
 uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,18 +10,18 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 3444d7df-fc43-4383-87b0-0f00fef116bc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '589'
 ht-degree: 7%
 
 ---
 
 # 组件概述{#components-overview}
 
-本页概述了Adobe Experience Manager(AEM)组件，例如用于页面创作的[组件](/help/sites-authoring/default-components-foundation.md)。
+本页概述Adobe Experience Manager(AEM)组件，例如 [用于页面创作](/help/sites-authoring/default-components-foundation.md).
 
-## 什么是组件？{#what-exactly-is-a-component}
+## 什么是组件？ {#what-exactly-is-a-component}
 
 * 模块化单元，可实现在网站上呈现内容的特定功能。
 * 可重复使用。
@@ -32,7 +32,7 @@ ht-degree: 7%
 * 拥有标准化的用户界面。
 * 具有可配置的编辑行为。
 * 使用基于Granite UI组件使用子元素构建的对话框
-* 使用[HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html)（推荐）或JSP进行开发。
+* 使用 [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) （推荐）或JSP。
 * 可以开发以创建可扩展默认功能的自定义组件。
 
 由于组件是模块化的，因此您可以：
@@ -46,54 +46,54 @@ ht-degree: 7%
 
 * 是资源类型。
 * 是完全实现特定功能的脚本集合。
-* 可以在&#x200B;*isolation*&#x200B;中运行，即在AEM或门户中运行。
+* 可以在中运行 *隔离*，即在AEM或门户中。
 
-## AEM {#out-of-the-box-components-within-aem}内的现成组件
+## AEM中的现成组件 {#out-of-the-box-components-within-aem}
 
-AEM附带多种[现成组件](/help/sites-authoring/default-components.md)，这些组件提供了以下综合功能：
+AEM附带多种 [开箱即用的组件](/help/sites-authoring/default-components.md) 提供全面功能，包括：
 
 * 段落系统 ( `parsys`)
-* 页面（`responsivegrid` — 仅限触屏优化UI）
+* 页面( `responsivegrid`  — 仅限触屏优化UI)
 * 文本
-* 图像，并附加文本
+* 图像，带有随附的文本
 * 工具栏
 
-[示例We.Retail网站](/help/sites-developing/we-retail.md)中提供的组件及其用法说明了如何实施和使用组件。 这些组件提供了所有源代码，可以按原样使用，也可以用作修改或扩展组件的起点。
+提供的组件及其在 [示例We.Retail网站](/help/sites-developing/we-retail.md) 提供了如何实施和使用组件的说明。 这些组件提供了所有源代码，可以按原样使用，也可以用作修改或扩展组件的起点。
 
-### 核心组件和基础组件{#core-components-and-foundation-components}
+### 核心组件和基础组件 {#core-components-and-foundation-components}
 
 提供了两组Adobe提供的AEM组件：
 
-* [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [基础组件](/help/sites-authoring/default-components-foundation.md)
 
-**核心** 组件已在AEM 6.3中引入，并提供了灵活且功能丰富的创作功能。[We.Retail参考站点](/help/sites-developing/we-retail.md)说明了核心组件的使用方式，并说明了组件开发的当前最佳实践。
+**核心组件** 已在AEM 6.3中引入，并提供了灵活且功能丰富的创作功能。 的 [We.Retail参考网站](/help/sites-developing/we-retail.md) 说明核心组件的使用方式，并代表组件开发的当前最佳实践。
 
-**基础** 组件已在AEM中提供了许多版本，并且在标准AEM安装中现成可用。尽管仍受支持，但大多数已弃用，不再进行增强，并且基于旧版技术。
+**基础组件** 已在许多版本的AEM中提供，并且在标准AEM安装中现成可用。 尽管仍受支持，但大多数已弃用，不再进行增强，并且基于旧版技术。
 
 >[!NOTE]
 >
->[核心](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) 组件代表了组件设计和开发的当前最佳实践，可用作参考实施。
+>[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 代表组件设计和开发的当前最佳实践，并用作参考实施。
 >
->[AEM现代化工](modernization-tools.md) 具扫描可帮助迁移到核心组件。
+>[AEM现代化工具](modernization-tools.md) 有助于迁移到核心组件。
 
-### 查看可用组件{#viewing-available-components}
+### 查看可用组件 {#viewing-available-components}
 
-有关AEM实例中所有可用组件的概述，请使用[组件控制台](/help/sites-authoring/default-components-console.md)。
+要概述AEM实例中的所有可用组件，请使用 [组件控制台](/help/sites-authoring/default-components-console.md).
 
 或者，您还可以使用CRXDE Lite获取存储库中所有可用组件的列表。
 
-1. 在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;中，从工具栏中选择&#x200B;**[!UICONTROL 工具]**，然后选择&#x200B;**[!UICONTROL 查询]**，以打开&#x200B;**[!UICONTROL 查询]**&#x200B;选项卡。
+1. 在 **[!UICONTROL CRXDE Lite]**，选择 **[!UICONTROL 工具]** ，然后 **[!UICONTROL 查询]**，以打开 **[!UICONTROL 查询]** 选项卡。
 
-1. 在&#x200B;**[!UICONTROL Query]**&#x200B;选项卡中，选择`XPath`作为&#x200B;**[!UICONTROL Type]**。
+1. 在 **[!UICONTROL 查询]** 选项卡，选择 `XPath` as **[!UICONTROL 类型]**.
 
 1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;输入字段中，输入以下字符串：
 
    `//element(*, cq:Component)`
 
-1. 单击&#x200B;**[!UICONTROL 执行]**&#x200B;并列出组件。
+1. 单击 **[!UICONTROL 执行]** 和组件列出。
 
-## 其他资源{#further-reading}
+## 其他资源 {#further-reading}
 
 以下页面提供了有关开发这些组件和其他组件的更多详细信息：
 
@@ -106,7 +106,7 @@ AEM附带多种[现成组件](/help/sites-authoring/default-components.md)，这
 * [内容片段的组件](/help/sites-developing/components-content-fragments.md)
 * [以JSON格式获取页面信息](/help/sites-developing/pageinfo.md)
 * [组件国际化](/help/sites-developing/i18n.md)
-* [核心组件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [使用隐藏条件](/help/sites-developing/hide-conditions.md)
 * 经典 UI
 

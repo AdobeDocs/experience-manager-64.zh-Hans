@@ -2,9 +2,9 @@
 title: 已弃用和已删除的功能
 description: 以下发行说明特定于 Adobe Experience Manager 6.4 中已弃用和已删除功能。
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: dcc36e499517f3f35d5f1d849802c4a5c35121bd
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1308'
 ht-degree: 26%
 
 ---
@@ -36,9 +36,9 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 门户Director | Portal Director是一组功能，它允许通过Portlet在第三方服务器中托管AEM内容。 Adobe不打算进一步增强下面所列位置下的Portal Director功能。 AEM 6.4包含Portal Director，从早期版本升级的客户可以继续按原样使用它。 请注意，弃用Portal Direct时仍完全支持。 <ul><li>/libs/portal/director</li></ul> | Adobe不打算提供替换。 |
 | Portlet组件 | /foundation/components/portlet下的Portlet组件允许将AEM中的JSR Portlet作为组件进行托管。 Adobe不打算进一步增强Portlet组件功能。 AEM 6.4包含Portlet组件，从早期版本升级的客户可以按原样继续使用它。 请注意，Portlet组件在弃用时仍完全受支持。 | Adobe不打算提供替换。 |
 | 表单 | 已弃用对Adobe中心迁移桥服务的支持，因为不再支持Adobe中心产品。 | 无替换项 |
-| 表单 | 已在查询和操作选项中弃用JSONObject 。 已弃用以下API: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | 使用`IValueMap` API |
+| 表单 | 已在查询和操作选项中弃用JSONObject 。 已弃用以下API: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | 使用 `IValueMap` API |
 | 表单 | 已弃用的Central Migration Bridge服务。 | 不提供任何替换。 |
-| 资产 | 从AEM 6.4开始，已弃用Assets卸载。 |  |
+| Assets | 从AEM 6.4开始，已弃用Assets卸载。 |  |
 | 开发人员 | Lodash/下划线客户端库。 Adobe不打算进一步维护和更新作为分发版（快速入门）一部分提供的Lodash/下划线客户端库 | Adobe建议仍要求代码使用长划线/下划线的客户将其添加到项目代码库中。 |
 
 <!-- Original HTML table that came from helpx during migration.
@@ -146,13 +146,12 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 ## 已删除功能 {#removed-features}
 
-下表列出了从AEM 6.4中删除的特性和功能。以前版本的这些功能标记为
-已弃用。
+下表列出了从AEM 6.4中删除的特性和功能。以前版本将这些功能标记为已弃用。
 
 | 区域 | 功能 | 替换 |
 |---|---|---|
-| 与[!DNL Experience Cloud]集成 | 您可以通过[!DNL Adobe I/O]配置，将资产与[!DNL Experience Cloud]同步。 [!DNL Adobe Experience Cloud] 以前称为 [!DNL Adobe Marketing Cloud]。 | 如果您有任何查询，请联系[Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。 |
-| Analytics Activity Map | AEM 中包含的 Activity Map 的版本。 | 由于 Adobe Analytics API 中的安全性更改，无法再使用 AEM 中包含的 Activity Map 版本。现在，应使用Adobe Analytics](https://docs.adobe.com/content/help/zh-Hans/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap插件。 |
+| 与[!DNL Experience Cloud] 集成  | 您可以将资产与 [!DNL Experience Cloud] 使用配置 [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] 以前称为 [!DNL Adobe Marketing Cloud]. | 如果您有任何疑问，请联系 [Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support). |
+| Analytics Activity Map | AEM 中包含的 Activity Map 的版本。 | 由于 Adobe Analytics API 中的安全性更改，无法再使用 AEM 中包含的 Activity Map 版本。的 [由Adobe Analytics提供的ActivityMap插件](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 现在应使用。 |
 | 组件 — Forms | 表单验证码（基础/组件/表单/验证码） | 请改用ReCaptcha by Google组件 |
 | 组件 | 幻灯片放映（基础/组件/幻灯片放映） | 无替换项 |
 | 组件 | Flash(foundation/components/flash) | 无替换项 |
@@ -179,4 +178,4 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 区域 | 功能 | 公告 |
 |---|---|---|
 | 浏览器支持 | Microsoft Internet Explorer | AEM 6.4是支持Microsoft Internet Explorer 11的最新版本。 |
-| Foundation | UI 框架 | Adobe将在2019年弃用Coral UI 2组件。 AEM 6.4完全基于Coral UI 3(在AEM 6.2中引入)。 Adobe建议已使用Coral 2构建自定义UI的客户和合作伙伴将这些UI重构到Coral 3。 Adobe提供了将Coral 2对话框转换为Coral 3的工具 — [阅读更多。](/help/sites-developing/modernization-tools.md) |
+| Foundation | UI 框架 | Adobe将在2019年弃用Coral UI 2组件。 AEM 6.4完全基于Coral UI 3(在AEM 6.2中引入)。 Adobe建议已使用Coral 2构建自定义UI的客户和合作伙伴将这些UI重构到Coral 3。 Adobe提供了将Coral 2对话框转换为Coral 3的工具 —  [了解更多。](/help/sites-developing/modernization-tools.md) |

@@ -1,13 +1,13 @@
 ---
 title: 使用 Brand Portal 配置 AEM Assets
-description: '了解如何使用Brand Portal配置AEM Assets，以将资产和收藏集发布到Brand Portal。 '
+description: 了解如何使用Brand Portal配置AEM Assets，以将资产和收藏集发布到Brand Portal。
 contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: a50cd2b50191b86ac27cc228944c6c9e917b08cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1642'
 ht-degree: 37%
 
 ---
@@ -271,14 +271,14 @@ IMS 配置包括两个步骤：
    >
    >请避免禁用任何复制代理，因为这可能会导致某些资产的复制失败。
    >
-   >确保将所有四个复制代理都配置为避免超时错误。 请参阅 [并行发布到Brand Portal故障诊断问题](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >确保将所有四个复制代理都配置为避免超时错误。 请参阅 [并行发布到Brand Portal故障诊断问题](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Brand Portal已成功配置为您的AEM Assets创作实例。 您现在可以：
 
 * [将资产从 AEM Assets 发布到 Brand Portal](../assets/brand-portal-publish-assets.md)
 * [将文件夹从 AEM Assets 发布到 Brand Portal](../assets/brand-portal-publish-folder.md)
 * [将收藏集从 AEM Assets 发布到 Brand Portal](../assets/brand-portal-publish-collection.md)
-* [配置资产源](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) 使Brand Portal用户能够向AEM Assets投稿和发布资产。
+* [配置资产源](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans) 使Brand Portal用户能够向AEM Assets投稿和发布资产。
 
 ## 升级配置 {#upgrade-integration-64}
 

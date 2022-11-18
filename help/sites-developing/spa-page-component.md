@@ -1,25 +1,25 @@
 ---
-title: SPA页面组件
-seo-title: SPA页面组件
-description: 在SPA中，页面组件不提供其子组件的HTML元素，而是将其委派给SPA框架。 本文档介绍如何使SPA的页面组件具有唯一性。
-seo-description: 在SPA中，页面组件不提供其子组件的HTML元素，而是将其委派给SPA框架。 本文档介绍如何使SPA的页面组件具有唯一性。
+title: SPA 页面组件
+seo-title: SPA Page Component
+description: 在SPA中，页面组件不提供其子组件的HTML元素，而是将其委派到SPA框架。 本文档介绍如何使SPA的页面组件具有唯一性。
+seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 uuid: 12f1f9b4-0d3c-40db-8465-dee0bd178d40
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+exl-id: 04520447-6ea8-4190-8dc3-46bb23f74c0c
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 1%
+source-wordcount: '742'
+ht-degree: 3%
 
 ---
 
+# SPA 页面组件{#spa-page-component}
 
-# SPA页面组件{#spa-page-component}
-
-在SPA中，页面组件不提供其子组件的HTML元素，而是将其委派给SPA框架。 本文档介绍如何使SPA的页面组件具有唯一性。
+在SPA中，页面组件不提供其子组件的HTML元素，而是将其委派到SPA框架。 本文档介绍如何使SPA的页面组件具有唯一性。
 
 >[!NOTE]
 >
@@ -29,24 +29,24 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-SPA的页面组件不会通过JSP或HTL文件和资源对象提供其子组件的HTML元素。 此操作将委派给SPA框架。 子组件的表示形式将作为JSON数据结构（即模型）获取。 然后，将根据提供的JSON模型，将SPA组件添加到页面。 因此，页面组件初始主体组合与预呈现的HTML对应组合不同。
+SPA的HTML组件不会通过JSP或HTL文件和资源对象提供其子组件的页面元素。 此操作将委派给SPA框架。 子组件的表示形式将作为JSON数据结构（即模型）获取。 然后，将根据提供的JSON模型，将SPA组件添加到页面。 因此，页面组件初始主体构成与其预呈现的HTML对应体不同。
 
-## 页面模型管理{#page-model-management}
+## 页面模型管理 {#page-model-management}
 
-页面模型的解析和管理被委派给提供的[ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)模块。 当SPA初始化以获取初始页面模型并注册模型更新时，它必须与`PageModelManager`模块进行交互 — 大多数情况下，当作者通过页面编辑器编辑页面时会生成该模块。 `PageModelManager`可由SPA项目作为npm包访问。 `PageModelManager`是AEM和SPA之间的解释器，适用于随SPA一起使用。
+页面模型之解决方案及管理乃委派予提供 [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) 模块。 SPA必须与 `PageModelManager` 模块，以获取初始页面模型并注册模型更新 — 大多数情况下，作者通过页面编辑器编辑页面时会生成该模块。 的 `PageModelManager` 可由SPA项目作为npm包访问。 作为AEM和SPA之间的解释器， `PageModelManager` 将随SPA一起使用。
 
-要创作页面，必须添加名为`cq.authoring.pagemodel.messaging`的客户端库，以在SPA和页面编辑器之间提供通信渠道。 如果SPA页面组件从页面wcm/core组件继承，则可以使用以下选项来使`cq.authoring.pagemodel.messaging`客户端库类别可用：
+要允许创作页面，客户端库名为 `cq.authoring.pagemodel.messaging` 必须添加才能在SPA和页面编辑器之间提供通信渠道。 如果SPA页面组件从页面wcm/核心组件继承，则可以使用以下选项来 `cq.authoring.pagemodel.messaging` 客户端库类别可用：
 
 * 如果模板是可编辑的，请将客户端库类别添加到页面策略中。
-* 使用页面组件的`customfooterlibs.html`添加客户端库类别。
+* 使用 `customfooterlibs.html` 的子目录访问。
 
-请不要忘记将`cq.authoring.pagemodel.messaging`类别的包含限制为页面编辑器的上下文。
+不要忘记限制 `cq.authoring.pagemodel.messaging` 类别。
 
-## 通信数据类型{#communication-data-type}
+## 通信数据类型 {#communication-data-type}
 
-通信数据类型在AEM页面组件中使用`data-cq-datatype`属性设置一个HTML元素。 将通信数据类型设置为JSON时，GET请求会命中组件的Sling模型端点。 在页面编辑器中发生更新后，更新组件的JSON表示形式将发送到页面模型库。 然后，页面模型库会向SPA发出更新警告。
+通信数据类型在AEM页面组件中使用 `data-cq-datatype` 属性。 将通信数据类型设置为JSON时，GET请求会命中组件的Sling模型端点。 在页面编辑器中发生更新后，更新组件的JSON表示形式将发送到页面模型库。 然后，页面模型库会向SPA发出更新警告。
 
-**SPA页面组件 —`body.html`**
+**SPA 页面组件 -`body.html`**
 
 ```
 <div id="page"></div>
@@ -54,7 +54,7 @@ SPA的页面组件不会通过JSP或HTL文件和资源对象提供其子组件�
 
 除了作为不延迟生成DOM的最佳实践之外，SPA框架还要求在主体末尾添加脚本。
 
-**SPA页面组件 —`customfooterlibs.html`**
+**SPA 页面组件 -`customfooterlibs.html`**
 
 ```
 <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"></sly>
@@ -65,7 +65,7 @@ SPA的页面组件不会通过JSP或HTL文件和资源对象提供其子组件�
 
 描述SPA内容的元资源属性：
 
-**SPA页面组件 —`customheaderlibs.html`**
+**SPA 页面组件 -`customheaderlibs.html`**
 
 ```
 <meta property="cq:datatype" data-sly-test="${wcmmode.edit || wcmmode.preview}" content="JSON"/>
@@ -84,27 +84,27 @@ SPA的页面组件不会通过JSP或HTL文件和资源对象提供其子组件�
 ## 元属性 {#meta-properties}
 
 * `cq:wcmmode`:编辑器的WCM模式（例如，页面、模板）
-* `cq:pagemodel_root_url`:应用程序根模型的URL。直接访问子页面时至关重要，因为子页面模型是应用程序根模型的片段。 然后，[`PageModelManager`](/help/sites-developing/spa-page-component.md)系统地将应用程序初始模型重新组合为从其根入口点进入应用程序。
+* `cq:pagemodel_root_url`:应用程序根模型的URL。 直接访问子页面时至关重要，因为子页面模型是应用程序根模型的片段。 的 [`PageModelManager`](/help/sites-developing/spa-page-component.md) 然后系统地将应用程序初始模型重新组合为从其根入口点进入应用程序。
 
-* `cq:pagemodel_router`:启用或禁用 [`ModelRouter`](/help/sites-developing/spa-routing.md) 库的 `PageModelManager` 功能
+* `cq:pagemodel_router`:启用或禁用 [`ModelRouter`](/help/sites-developing/spa-routing.md) 的 `PageModelManager` 库
 
-* `cq:pagemodel_route_filters`:以逗号分隔的列表或正则表达式来提供必须忽略 [`ModelRouter`](/help/sites-developing/spa-routing.md) 的路由。
+* `cq:pagemodel_route_filters`:用于提供路由的逗号分隔列表或正则表达式 [`ModelRouter`](/help/sites-developing/spa-routing.md) 必须忽略。
 
 >[!CAUTION]
 >
 >本文档仅将We.Retail Journal应用程序用于演示目的。 它不应用于任何项目工作。
 >
->任何AEM项目都应使用[AEM项目原型](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/developing/archetype/overview.html)，该原型支持使用React或Angular的SPA项目并利用SPA SDK。AEM上的所有SPA项目都应基于SPA Starter Kit的Maven原型。
+>任何AEM项目都应利用 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用SPA或Angular的SPA项目并利用SPA SDK。AEM上的所有项目都应基于SPA Starter Kit的Maven Archetype。
 
-## 页面编辑器叠加同步{#page-editor-overlay-synchronization}
+## 页面编辑器叠加同步 {#page-editor-overlay-synchronization}
 
-由`cq.authoring.page`类提供的相同变异观测器保证叠加的同步。
+叠加的同步由提供的相同的突变观测器保证 `cq.authoring.page` 类别。
 
-## Sling模型JSON导出的结构配置{#sling-model-json-exported-structure-configuration}
+## Sling模型JSON导出的结构配置 {#sling-model-json-exported-structure-configuration}
 
 启用路由功能后，假设由于AEM导航组件的JSON导出，SPA的JSON导出包含不同的应用程序路由。 可以通过以下两个属性在AEM根页面内容策略中配置SPA导航组件的JSON输出：
 
 * `structureDepth`:与导出的树深度对应的编号
 * `structurePatterns`:与要导出的页面对应的regex数组的正则表达式
 
-这可以显示在`/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`的SPA示例内容中。
+这可以显示在的SPA示例内容中 `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.

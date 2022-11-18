@@ -1,17 +1,17 @@
 ---
-title: AEM 6.4 累积修补程序包发行说明
+title: AEM 6.4 累积修订包发行说明
 description: 特定于Adobe Experience Manager 6.4累积修补程序包的发行说明。
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 1d5d2ef3840a40df7c3b223c7b5835e41553e9f1
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '4693'
-ht-degree: 15%
+source-wordcount: '4681'
+ht-degree: 16%
 
 ---
 
-# AEM 6.4 累积修补程序包发行说明 {#aem-cumulative-fix-pack-release-notes}
+# AEM 6.4 累积修订包发行说明 {#aem-cumulative-fix-pack-release-notes}
 
 ## 版本信息 {#release-information}
 
@@ -20,7 +20,7 @@ ht-degree: 15%
 | 产品 | **Adobe Experience Manager (AEM) 6.4** |
 |---|---|
 | 版本 | 6.4.8.4 |
-| 类型 | 累积修补程序包 |
+| 类型 | 累积修订包 |
 | 日期 | 2021 年 2 月 25 日 |
 | 先决条件 | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
 | 下载 URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-4.0.zip) |
@@ -43,7 +43,7 @@ AEM 6.4.8.4是依赖于AEM 6.4 Service Pack 8的累积修补程序包(CFP)。 �
 
 Adobe Experience Manager 6.4.8.4提供了以下问题的修复。
 
-### 站点 {#sites-6484}
+### Sites {#sites-6484}
 
 * 安装Experience ManagerService Pack 6.4.8.2后，用户无法编辑内容片段模型，并会体验到以下错误：
 
@@ -91,11 +91,11 @@ Adobe Experience Manager 6.4.8.4提供了以下问题的修复。
 
 **AEMForms-6.4.0-0027中已修复的问题**
 
-* （仅限JEE）针对Apache Log4j2报告的关键安全漏洞(CVE-2021-44228和CVE-2021-45046)。
+* （仅限 JEE）针对 Apache Log4j2 报告的严重安全漏洞（CVE-2021-44228 和 CVE-2021-45046）。
 
 有关安全更新的信息，请参阅 [Experience Manager安全公告页](https://helpx.adobe.com/security/products/experience-manager.html).
 
-## 以前的累积修补程序包中包含的修补程序和功能包 {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
+## 以前的累积修订包中包含的修补程序和功能包 {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
 ### Adobe Experience Manager 6.4.8.3 {#experience-manager-6483}
 
@@ -105,7 +105,7 @@ AEM 6.4.8.3是依赖于AEM 6.4 Service Pack 8的累积修补程序包(CFP)。 �
 
 在AEM 6.4.8.3中，内置存储库(Apache Jackrabbit Oak)已更新至版本1.8.23。
 
-有关CFP和其他发行版类型的信息，请参阅 [AEM更新版本发行方式定义](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+有关CFP和其他发行版类型的信息，请参阅 [AEM更新版本发行方式定义](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.3提供了以下问题的修复。
 
@@ -199,7 +199,7 @@ AEM 6.4.8.2是依赖于AEM 6.4 Service Pack 8的累积修补程序包(CFP)。 �
 
 在AEM 6.4.8.2中，内置存储库(Apache Jackrabbit Oak)已更新至版本1.8.22。
 
-有关CFP和其他发行版类型的信息，请参阅 [AEM更新版本发行方式定义](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+有关CFP和其他发行版类型的信息，请参阅 [AEM更新版本发行方式定义](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2提供了以下问题的修复。
 
@@ -229,7 +229,7 @@ Adobe Experience Manager 6.4.8.2提供了以下问题的修复。
 * 向客户端发送信息时，不会针对各种组件对用户输入进行适当的编码(NPR-33696)。
 * 以 `childrenlist.html` 显示HTML页面，而不是404响应。 此类URL容易遭受跨站点脚本攻击(NPR-33441)。
 
-#### 资产 {#assets-6482}
+#### Assets {#assets-6482}
 
 * 上传的PDF文件的文本提取不起作用，且对PDF文件中某些词语的全文搜索无法获取该PDF文件(NPR-34165)。
 
@@ -345,7 +345,7 @@ AEM 6.4.8.1的一些主要功能亮点包括：
 * 删除了与Adobe Experience Manager的包共享集成。
 * 内置存储库 (Apache Jackrabbit Oak) 已更新至版本 1.8.21。
 
-有关CFP和其他发行版类型的信息，请参阅 [AEM更新版本发行方式定义](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+有关CFP和其他发行版类型的信息，请参阅 [AEM更新版本发行方式定义](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1提供了对以下问题的修复。
 
@@ -381,7 +381,7 @@ Adobe Experience Manager 6.4.8.1提供了对以下问题的修复。
 
 * 选择从通知收件箱中查看任务时，不会触发延迟加载，并且显示的资产不超过100个(NPR-32749)。
 
-* 由于coral-info中的更改，指向共享收藏集的链接页面断开(NPR-32510)。
+* 由于coral-info中的更改，指向共享收藏集的链接页面被损坏(NPR-32510)。
 
 * 批量上传时的资产处理卡住(CQ-4293916)。
 
@@ -523,7 +523,7 @@ AEM 6.4.8.4包含新版Dynamic Media查看器(5.10.1)，该查看器支持在“
 
 1. 确保已安装AEM累积修补程序包。
 1. 下载列于的相应Forms附加组件包 [AEM Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) 操作系统。
-1. 按照 [安装AEM Forms附加组件包](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. 按照 [安装AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### 安装AEM Forms JEE安装程序 {#install-aem-forms-jee-installer}
 
@@ -563,7 +563,7 @@ AEM 6.4.8.4包含新版Dynamic Media查看器(5.10.1)，该查看器支持在“
 | 区域 | 功能 | 替换 | 版本号 |
 |---|---|---|---|
 | 资产 | 管理子资产的标记操作 | 无替换项 | AEM 6.4.2.0 |
-| 资产和 Creative Cloud 集成 | AEM 6.2 中引入了 [AEM 到 Creative Cloud 的文件夹共享](https://docs.adobe.com/content/help/zh-Hans/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，以便创意用户可以从 AEM 访问资产。在 Creative Cloud 应用程序中发布的新功能“Adobe 资产链接”提供了更佳的用户体验，能够直接从 Photoshop、InDesign 和 Illustrator 中轻松访问 AEM Assets。Adobe 不会再进一步增强文件夹共享功能。虽然AEM中包含该功能，但强烈建议客户使用替换。 | Adobe资产链接或桌面应用程序。 有关更多信息，请参阅 [AEM Creative Cloud 集成](/help/assets/aem-cc-integration-best-practices.md)一文。 | AEM 6.4.4.0 |
+| 资产和 Creative Cloud 集成 | AEM 6.2 中引入了 [AEM 到 Creative Cloud 的文件夹共享](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，以便创意用户可以从 AEM 访问资产。在 Creative Cloud 应用程序中发布的新功能“Adobe 资产链接”提供了更佳的用户体验，能够直接从 Photoshop、InDesign 和 Illustrator 中轻松访问 AEM Assets。Adobe 不会再进一步增强文件夹共享功能。虽然AEM中包含该功能，但强烈建议客户使用替换。 | Adobe资产链接或桌面应用程序。 有关更多信息，请参阅 [AEM Creative Cloud 集成](/help/assets/aem-cc-integration-best-practices.md)一文。 | AEM 6.4.4.0 |
 
 ## 已知问题 {#known-issues}
 
@@ -595,4 +595,4 @@ AEM 6.4.8.4 中包含的内容包列表
 这些网站仅适用于客户。如果您是客户并且需要访问，请联系您的 Adobe 客户经理。
 
 * [产品下载：licensing.adobe.com](https://licensing.adobe.com/)
-* [联系客户支持](https://docs.adobe.com/content/help/en/customer-one/using/home.html)
+* [联系客户支持](https://experienceleague.adobe.com/docs/customer-one/using/home.html)

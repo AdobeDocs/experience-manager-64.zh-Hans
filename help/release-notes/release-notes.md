@@ -1,7 +1,7 @@
 ---
 title: Adobe Experience Manager 6.4 的一般发行说明
 seo-title: Release Notes
-description: 'Adobe Experience Manager 6.4发行说明，其中概述了发行信息、新增功能、安装方式和详细的更改列表。 '
+description: Adobe Experience Manager 6.4发行说明，其中概述了发行信息、新增功能、安装方式和详细的更改列表。
 seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: 722a82c1048105c18d59dfc35815548f9b7eace4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '2751'
-ht-degree: 27%
+source-wordcount: '2729'
+ht-degree: 30%
 
 ---
 
@@ -117,7 +117,7 @@ Adobe Experience Manager 6.4 的平台建立在基于 OSGi 的框架（Apache Sl
 
 **[内容片段](/help/assets/content-fragments.md)**
 
-6.4中的新增内容是一个可视化图表 [内容模型](/help/assets/content-fragments-models.md) 编辑和新 [可配置组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/components/content-fragment-component.html) 提供灵活的HTML输出和JSON，以将其包含在内容服务中。
+6.4中的新增内容是一个可视化图表 [内容模型](/help/assets/content-fragments-models.md) 编辑和新 [可配置组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans) 提供灵活的HTML输出和JSON，以将其包含在内容服务中。
 
 **体验片段**
 
@@ -131,13 +131,13 @@ Adobe Experience Manager 6.4 的平台建立在基于 OSGi 的框架（Apache Sl
 
 AEM 6.4完成对下一代组件模型的转换。 AEM 6.3中引入的核心组件概念，现在与样式系统结合使用，为构建新站点和扩展现有站点提供了一种有效的方法。
 
-建议的教程，用于了解如何充分利用新的组件模型： [AEM Sites入门 — WKND教程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+建议的教程，用于了解如何充分利用新的组件模型： [AEM Sites入门 — WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
 
 #### Screens 加载项 {#screens-add-on}
 
 AEM Screens代表的是在所有营销渠道（包括数字标牌和亭亭网络）中提供一致的信息。 AEM 6.4新增了对在Microsoft Windows和Google Chrome OS硬件上运行标牌播放器的支持。 此外，还增强了远程设备管理和计划（渠道组）。
 
-有关Screens更新的更多信息，请参阅 [AEM Screens用户指南](https://docs.adobe.com/content/help/zh-Hans/experience-manager-screens/user-guide/aem-screens-introduction.html).
+有关Screens更新的更多信息，请参阅 [AEM Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 ### Experience Manager Communities {#experience-manager-communities}
 
@@ -173,7 +173,7 @@ AEM 6.4 Communities公开 [开箱即用API](/help/communities/user-ugc-managemen
 
 **[一键删除社区站点和群组](/help/communities/groups.md)**
 
-从全局导航中导航时，删除图标现在在相应的网站和群组上可用。 使用此图标可删除与网站或群组关联的所有项目和内容，并删除所有用户关联。 要了解有关此功能的更多信息，请参阅 [管理社区站点](/help/communities/create-site.md#main-pars-text-fe17) 和 [管理社区组](/help/communities/groups.md#main-pars-text-5e8c).
+从全局导航中导航时，删除图标现在在相应的站点和组上可用。 使用此图标可删除与网站或群组关联的所有项目和内容，并删除所有用户关联。 要了解有关此功能的更多信息，请参阅 [管理社区站点](/help/communities/create-site.md#main-pars-text-fe17) 和 [管理社区组](/help/communities/groups.md#main-pars-text-5e8c).
 
 #### 对启用的增强 {#enhancements-to-enablement}
 
@@ -189,15 +189,15 @@ AEM 6.4为资产引入了多项新功能和增强功能，包括经过改进的�
 
 企业Creative Cloud中的Adobe资产链接可简化内容创建过程中创意人员与营销人员之间的协作。 它是企业Creative Cloud中新的本机功能，可将Photoshop、Illustrator和InDesign与AEM连接在一起，而创意人员不必离开自己选择的工具。
 
-要详细了解此功能、先决条件以及如何访问此功能，请参阅 [Adobe资产链接](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+要详细了解此功能、先决条件以及如何访问此功能，请参阅 [Adobe资产链接](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html).
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
 **AEM 桌面应用程序**
 
-AEM桌面应用程序已更新到版本1.8，与AEM 6.4兼容。AEM桌面应用程序的完整更改列表在专用 [AEM桌面应用程序发行说明](https://docs.adobe.com/content/help/zh-Hans/experience-manager-desktop-app/using/release-notes.html) 文档。
+AEM桌面应用程序已更新到版本1.8，与AEM 6.4兼容。AEM桌面应用程序的完整更改列表在专用 [AEM桌面应用程序发行说明](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) 文档。
 
-自AEM 6.3版本以来引入的改进包括能够在后台上传分层文件夹，新增了用于监视资产后台操作的UI，增强了缓存、联网和登录功能，以及总体稳定性改进。 该文档还包含 [最佳实践指南](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+自AEM 6.3版本以来引入的改进包括能够在后台上传分层文件夹，新增了用于监视资产后台操作的UI，增强了缓存、联网和登录功能，以及总体稳定性改进。 该文档还包含 [最佳实践指南](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html).
 
 **Adobe Sensei服务**
 
@@ -219,7 +219,7 @@ AEM桌面应用程序已更新到版本1.8，与AEM 6.4兼容。AEM桌面应用�
 
 **Brand Portal**
 
-在元数据、报表、数字权限、登录体验和发布资产分发性能等方面进行了各种增强。 要了解新增的增强功能和功能，请参阅 [AEM Assets Brand Portal的新增功能](https://docs.adobe.com/content/help/zh-Hans/experience-manager-brand-portal/using/introduction/whats-new.html).
+在元数据、报表、数字权限、登录体验和发布资产分发性能等方面进行了各种增强。 要了解新增的增强功能和功能，请参阅 [AEM Assets Brand Portal的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 #### Dynamic Media附加组件 {#dynamic-media-add-on}
 
@@ -263,7 +263,7 @@ AEM 6.4 Forms 中引入了一些新增功能和增强功能。主要功能包括
 
 您可以将 Livefyre 与 AEM 6.4 实例集成。有关如何将 Livefyre 与 AEM 集成的信息位于此处：
 
-* [集成 Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
+* [集成 Livefyre](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html)
 
 ### 利用以客户为中心的开发 {#leverage-customer-focused-development}
 
@@ -279,13 +279,13 @@ Adobe 实施了多种规程和流程来对以客户为中心的错误解决方�
 
 * 独立的快速入门：cq-quickstart-6.4.0.jar
 * 应用程序服务器快速启动：cq-quickstart-6.4.0.war
-* 适用于各种Web服务器和平台的Dispatcher 4.3.1或更高版本。 请参阅 [下载链接](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html).
+* 适用于各种Web服务器和平台的Dispatcher 4.3.1或更高版本。 请参阅 [下载链接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html).
 * 适用于Eclipse IDE的插件。 [了解更多并下载](/help/sites-developing/aem-eclipse.md).
 
 * Brackets代码编辑器的扩展。 [了解更多并下载](/help/sites-developing/aem-brackets.md).
 * Maven/Gradle依赖关系。 请参阅 [下载链接](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/).
 
-**站点**
+**Sites**
 
 * 核心组件（[GitHub 项目](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)）
 * We.Retail 参考实施（[了解更多](/help/sites-developing/we-retail.md)）
@@ -300,15 +300,15 @@ Adobe 实施了多种规程和流程来对以客户为中心的错误解决方�
 
 * [AEM现代化工具](/help/sites-developing/modernization-tools.md) 将经典UI组件迁移到Coral 3
 
-**资源**
+**Assets**
 
-* Adobe Experience Manager桌面应用程序([阅读更多](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) 和 [下载](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
+* Adobe Experience Manager桌面应用程序([阅读更多](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) 和 [下载](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html))
 
 * 用于添加增强的PDF光栅器([阅读更多](/help/assets/aem-pdf-rasterizer.md) 和 [下载](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
 * 用于添加扩展 RAW 图像支持的软件包（[了解更多](/help/assets/camera-raw.md)）
 
-**Forms**
+**表单**
 
 * 用于 AEM Forms 功能的软件包:
 
@@ -377,4 +377,4 @@ Adobe 不断评估产品中的功能，以便随着时间的推移，计划使�
 
 * [产品下载：licensing.adobe.com](https://licensing.adobe.com/).
 * 产品更新、修补程序和软件包，以获取 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [通过Admin Console提供客户支持](https://adminconsole.adobe.com/). 有关更多信息，请参阅 [新的Adobe客户支持体验](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [通过Admin Console提供客户支持](https://adminconsole.adobe.com/). 有关更多信息，请参阅 [新的Adobe客户支持体验](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

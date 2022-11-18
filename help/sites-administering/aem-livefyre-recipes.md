@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 exl-id: 2e06d1c8-e7c0-41ce-8799-9e762663eded
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1452'
 ht-degree: 4%
 
 ---
@@ -40,15 +40,15 @@ Livefyre Adobe Experience Manager包适用于AEM 6.1、6.2 SP1、6.3、6.4和6.4
 **方法1:Designer应用程序实施**
 
 * **什么：** 最简单、最快速的Livefyre应用程序集成方法。 您可以设计、配置和生成自定义的JavaScript嵌入代码，以便在几分钟内将媒体涂鸦墙应用程序集成到页面上。
-* **操作方法：**  [创建、预览、发布和嵌入媒体涂鸦墙应用程序](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
+* **操作方法：**  [创建、预览、发布和嵌入媒体涂鸦墙应用程序](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
 * **示例：** [https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
 
 **方法2:SDK实施**
 
-* **什么：** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) 是网站上支持应用程序和身份验证的核心库。 它定义了 *window.Livefyre* 对象和单一公共方法， *Livefyre.require*，可用于加载其他Livefyre JavaScript库，这些库有助于嵌入Livefyre应用程序并与第三方用户身份验证平台集成。
+* **什么：** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) 是网站上支持应用程序和身份验证的核心库。 它定义了 *window.Livefyre* 对象和单一公共方法， *Livefyre.require*，可用于加载其他Livefyre JavaScript库，这些库有助于嵌入Livefyre应用程序并与第三方用户身份验证平台集成。
 
-* **如何**: [使用Livefyre JavaScript SDK的streamhub-wallpackage](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-media-wall-integration.html)
+* **如何**: [使用Livefyre JavaScript SDK的streamhub-wallpackage](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-media-wall-integration.html)
 
 * **示例**: [https://codepen.io/dharafyre/pen/KZKBNv?editors=1010](https://codepen.io/dharafyre/pen/KZKBNv?editors=1010)
 
@@ -56,7 +56,7 @@ Livefyre Adobe Experience Manager包适用于AEM 6.1、6.2 SP1、6.3、6.4和6.4
 
 **方法3:API实施**
 
-* 要创建自定义体验和数据可视化图表，可以使用 [Bootstrap和流API](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+* 要创建自定义体验和数据可视化图表，可以使用 [Bootstrap和流API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
 确保跟进 [Twitter](https://developer.twitter.com/en/developer-terms/display-requirements.html), [Facebook](https://en.facebookbrand.com/guidelines/brand)和 [Instagram](https://en.instagram-brand.com/) 为UGC构建UI时显示准则。
 
@@ -65,7 +65,7 @@ Livefyre Adobe Experience Manager包适用于AEM 6.1、6.2 SP1、6.3、6.4和6.4
 对于需要身份验证的Media Wall集成，请参阅：
 
 * [自定义单点登录集成](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) for AEM Identity Management
-* [身份集成](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 适用于第三方身份验证平台
+* [身份集成](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 适用于第三方身份验证平台
 
 ### 用例概述 {#use-case-overview}
 
@@ -76,7 +76,7 @@ Livefyre Adobe Experience Manager包适用于AEM 6.1、6.2 SP1、6.3、6.4和6.4
 1. [快速入门](https://helpx.adobe.com/cn/experience-manager/6-3/sites/administering/using/livefyre.html)
 1. [配置AEM以使用Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
 1. [将AEM Media Wall组件拖放到页面上](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
-1. [配置流并添加规则以策划UGC并在媒体墙组件上显示](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)
+1. [配置流并添加规则以策划UGC并在媒体墙组件上显示](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html)
 
 有关流式UGC的培训视频，请参阅 [在Adobe Experience Manager Livefyre中创建自动内容流并搜索社交内容](https://helpx.adobe.com/experience-manager/tutorials.html).
 
@@ -85,9 +85,9 @@ Livefyre Adobe Experience Manager包适用于AEM 6.1、6.2 SP1、6.3、6.4和6.4
 * [CNN媒体之墙](https://edition.cnn.com/specials/nepal-earthquake-media-wall)
 * [PGA巡回赛媒体墙](https://www.pgatour.com/social-hub.html)
 
-要创建自定义体验和数据可视化图表，可以使用 [Bootstrap和流API](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+要创建自定义体验和数据可视化图表，可以使用 [Bootstrap和流API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-有关需要身份验证的Livefyre应用程序，请参阅 [身份集成](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 适用于第三方身份验证平台。
+有关需要身份验证的Livefyre应用程序，请参阅 [身份集成](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 适用于第三方身份验证平台。
 
 * [PGA巡回赛媒体墙](https://www.pgatour.com/social-hub.html)
 * [超时](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
@@ -105,18 +105,18 @@ Livefyre Adobe Experience Manager包适用于AEM 6.1、6.2 SP1、6.3、6.4和6.4
 **方法1:Designer应用程序实施**
 
 * **什么：** 最简单、最快速的Livefyre应用程序集成方法。 您可以设计、配置和生成自定义的JavaScript嵌入代码，以便在几分钟内将媒体涂鸦墙应用程序集成到页面上。
-* **操作方法：** [创建、预览、发布和嵌入注释应用程序](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
+* **操作方法：** [创建、预览、发布和嵌入注释应用程序](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
 * **示例：** [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
 **方法2:SDK实施**
 
-* **什么：** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) 是网站上支持应用程序和身份验证的核心库。 它定义了 *window.Livefyre* 对象和单一公共方法， *Livefyre.require*，可用于加载其他Livefyre JavaScript库，这些库有助于嵌入Livefyre应用程序并与第三方用户身份验证平台集成。
+* **什么：** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) 是网站上支持应用程序和身份验证的核心库。 它定义了 *window.Livefyre* 对象和单一公共方法， *Livefyre.require*，可用于加载其他Livefyre JavaScript库，这些库有助于嵌入Livefyre应用程序并与第三方用户身份验证平台集成。
 
 * **操作方法：**
 
-   * 使用创建收藏集/应用程序 [CollectionMeta令牌](https://docs.adobe.com/content/help/en/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
-   * 集成 [评论应用程序](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/comments/c-comments-integration.html) 使用Livefyre.js嵌入代码结构将内容放入网站中。
+   * 使用创建收藏集/应用程序 [CollectionMeta令牌](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
+   * 集成 [评论应用程序](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/comments/c-comments-integration.html) 使用Livefyre.js嵌入代码结构将内容放入网站中。
 
 * **示例：**  [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
@@ -124,12 +124,12 @@ Livefyre Adobe Experience Manager包适用于AEM 6.1、6.2 SP1、6.3、6.4和6.4
 
 **方法3:API实施**
 
-* 要创建自定义体验和数据可视化图表，可以使用 [Bootstrap和流API](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
+* 要创建自定义体验和数据可视化图表，可以使用 [Bootstrap和流API](https://experienceleague.adobe.com/docs/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
 ### 评论应用程序身份验证集成 {#comments-app-authentication-integration}
 
 * [自定义单点登录集成](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) for AEM Identity Management
-* [身份集成](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 适用于第三方身份验证平台
+* [身份集成](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 适用于第三方身份验证平台
 
 
 ## 使用Livefyre AEM Assets集成在AEM Assets中导入UGC {#use-livefyre-aem-assets-integration-to-import-ugc-in-aem-assets}
@@ -168,12 +168,12 @@ Livefyre Adobe Experience Manager包适用于AEM 6.1、6.2 SP1、6.3、6.4和6.4
 
 **方法1:SDK实施**
 
-* **什么：** [Livefyre.js](https://docs.adobe.com/content/help/en/livefyre/implementation/c-livefyre_js.html) 是网站上支持应用程序和身份验证的核心库。 它定义了 *window.Livefyre* 对象和单一公共方法， *Livefyre.require*，可用于加载其他Livefyre JavaScript库，这些库有助于嵌入Livefyre应用程序并与第三方用户身份验证平台集成。
+* **什么：** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) 是网站上支持应用程序和身份验证的核心库。 它定义了 *window.Livefyre* 对象和单一公共方法， *Livefyre.require*，可用于加载其他Livefyre JavaScript库，这些库有助于嵌入Livefyre应用程序并与第三方用户身份验证平台集成。
 
 * **操作方法：**
 
-   * 创建审阅 [CollectionMeta令牌](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-reviews-integration.html) ，以指定要在审阅集合中存储的元数据。
-   * 集成 [审阅应用程序](https://docs.adobe.com/content/help/en/livefyre/implementation/app-integrations/c-reviews-integration.html) 使用 *Livefyre.js* 嵌入代码结构
+   * 创建审阅 [CollectionMeta令牌](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) ，以指定要在审阅集合中存储的元数据。
+   * 集成 [审阅应用程序](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) 使用 *Livefyre.js* 嵌入代码结构
 
 * **示例：**  [https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
 
@@ -188,7 +188,7 @@ Livefyre Adobe Experience Manager包适用于AEM 6.1、6.2 SP1、6.3、6.4和6.4
 ### 评论应用程序身份验证集成 {#comments-app-authentication-integration-1}
 
 * [自定义单点登录集成](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) for AEM Identity Management
-* [身份集成](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) 适用于第三方身份验证平台
+* [身份集成](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html) 适用于第三方身份验证平台
 
 ### 客户示例 {#customer-examples-2}
 

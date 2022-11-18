@@ -4,9 +4,9 @@ seo-title: Developing AEM Components
 description: AEM组件用于保存、格式化和渲染网页上提供的内容。
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3477'
+source-wordcount: '3475'
 ht-degree: 2%
 
 ---
@@ -427,7 +427,7 @@ GITHUB上的代码
 
 >[!NOTE]
 >
->现在，使用 [核心组件](https://docs.adobe.com/content/help/zh-Hans/experience-manager-core-components/using/introduction.html) 和可编辑的模板。 请参阅 [创建页面模板](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 有关定义与给定媒体类型自动关联的组件的详细信息。
+>现在，使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 和可编辑的模板。 请参阅 [创建页面模板](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 有关定义与给定媒体类型自动关联的组件的详细信息。
 
 ## 使用AEM Brackets扩展 {#using-the-aem-brackets-extension}
 

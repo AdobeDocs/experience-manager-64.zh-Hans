@@ -8,9 +8,9 @@ breadcrumb-title: Administering 指南
 user-guide-description: 了解如何管理 AEM。
 feature: Administering
 role: Admin
-source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '639'
 ht-degree: 35%
 
 ---
@@ -131,7 +131,7 @@ ht-degree: 35%
    + [相关社区文章](related-community-articles.md)
    + [与Adobe Campaign Standard集成](campaignstandard.md)
    + [Flash 查看器生命周期终止通知](flash-viewers-eol.md)
-   + [与Adobe Creative Cloud集成](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
+   + [与Adobe Creative Cloud集成](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [与AdobeDynamic Tag Management集成](dtm.md)
    + [选择加入Adobe Analytics和Adobe Target](opt-in.md)
    + [AEM门户和Portlet](aem-as-portal.md)

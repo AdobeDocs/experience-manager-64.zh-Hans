@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
-source-git-commit: 50d4228ab922a5e09eabd0f718b6712db5b86bde
+source-git-commit: 1ba7f15afbb8dc74499ea57bd775473b5ef650ef
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 5%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 5%
 
 | 资产 — 限制类型 | 最佳实践 | 规定的限制 | 2022年12月31日的上限变更 |
 | --- | --- | --- | --- |
-| **图像**  — 每个图像的智能作物数量 | 5 | 100 | 20 |
+| **图像**  — 每个图像的智能作物数量 | 5 | 100 | 不适用 |
 | **所有集**  — 每个集的重复资产数 | 无重复项 | 20 | 不适用 |
 | **所有集**  — 每组资产的最大数量 | 每组5-10张图像 | 1000 | 不适用 |
 | **旋转集**  — 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 | 不适用 |

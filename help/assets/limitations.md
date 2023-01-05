@@ -8,10 +8,10 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
-source-git-commit: 3b90e6ca311f5477d359d4623f666e4c2ea02524
+source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '235'
+ht-degree: 3%
 
 ---
 
@@ -28,13 +28,13 @@ ht-degree: 6%
 
 在您创建旋转集或图像集，或上传PDF以进行页面提取时，Adobe会推荐以下最佳实践并强制实施以下限制：
 
-| 资产 — 限制类型 | 最佳实践 | 规定的限制 | 2022年12月31日的上限变更 |
-| --- | --- | --- | --- |
-| **图像**  — 每个图像的智能作物数量 | 5 | 100 | 不适用 |
-| **所有集**  — 每个集的重复资产数 | 无重复项 | 20 | 不适用 |
-| **所有集**  — 每组资产的最大数量 | 每组5-10张图像 | 1000 | 不适用 |
-| **旋转集**  — 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 | 不适用 |
-| **PDF**  — 要考虑提取的PDF的最大页面数 |  | 5000（用于新上传） | 100(适用于所有PDF) |
+| 资产 — 限制类型 | 最佳实践 | 规定的限制 |
+| --- | --- | --- |
+| **图像**  — 每个图像的智能作物数量 | 5 | 100 |
+| **所有集**  — 每个集的重复资产数 | 无重复项 | 20 |
+| **所有集**  — 每组资产的最大数量 | 每组5-10张图像 | 1000 |
+| **旋转集**  — 每个2D集的最大行/列数 | 每套12-18页图片 | 1000 |
+| **PDF**  — 要考虑提取的PDF的最大页面数 |  | 100(适用于所有PDF) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 

@@ -135,7 +135,7 @@ ht-degree: 52%
    + [使用内容片段](content-fragments.md)
    + [管理内容片段](content-fragments-managing.md)
    + [内容片段模型](content-fragments-models.md)
-   + [变量 – 创作片段内容](content-fragments-variations.md)
+   + [变体 – 创作片段内容](content-fragments-variations.md)
    + [内容片段关联内容](content-fragments-assoc-content.md)
    + [元数据 – 片段属性](content-fragments-metadata.md)
    + [内容片段 – 删除注意事项](content-fragments-delete.md)

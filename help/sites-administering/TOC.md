@@ -142,7 +142,7 @@ ht-degree: 35%
    + [电子邮件模板最佳实践](best-practices-for-email-templates.md)
    + [目录制作者](catalog-producer.md)
    + [与Silverpop Engage集成](silverpop.md)
-   + [与Adobe Campaign集成](campaign.md)
+   + [与 Adobe Campaign 集成](campaign.md)
    + [与ExactTarget集成](exacttarget.md)
    + [Analytics与外部提供程序](external-providers.md)
    + [与Adobe Marketing Cloud集成](marketing-cloud.md)

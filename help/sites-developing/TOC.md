@@ -8,9 +8,9 @@ breadcrumb-title: Developing 指南
 user-guide-description: 本指南介绍如何构建 AEM 实例。
 feature: Developing
 role: Developer
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '869'
 ht-degree: 26%
 
 ---
@@ -121,7 +121,6 @@ ht-degree: 26%
    + [HTTP API](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html)
    + [内容片段](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
    + [体验片段](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/experience-fragments.html)
-   + [了解AEM中的内容片段和内容服务](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + 开发工具{#devtools}
    + [开发工具](dev-tools.md)
    + [AEM 现代化工具](modernization-tools.md)
@@ -222,3 +221,8 @@ ht-degree: 26%
    + [网页响应式设计](responsive.md)
    + [为移动设备创建站点](mobile.md)
    + [模拟器](emulators.md)
+
+<!--
+Deleted link to broken helpx video:
+    + [Understanding Content Fragments and Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
+-->

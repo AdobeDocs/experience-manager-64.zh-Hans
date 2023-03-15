@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: 199ee2b38cbffc2b97e0fd3c25d828a7e5718bf3
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 1%
+source-wordcount: '1771'
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ SSR通常在以下任一问题出现明确的“是”时提供一些值：
 
 >[!NOTE]
 >
->Adobe建议每个环境（暂存、生产、测试等）单独使用Adobe I/O Runtime工作区。 这允许使用典型的系统开发生命周期(SDLC)模式，将单个应用程序的不同版本部署到不同的环境。 查看文档 [用于项目Firefly应用的CI/CD](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) 以了解更多信息。
+>Adobe建议每个环境（暂存、生产、测试等）单独使用Adobe I/O Runtime工作区。 这允许使用典型的系统开发生命周期(SDLC)模式，将单个应用程序的不同版本部署到不同的环境。 查看文档 [适用于项目应用程序生成器应用程序的CI/CD](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) 以了解更多信息。
 >
 >除非每个实例类型的运行时实施存在差异，否则不需要每个实例（创作、发布）单独的工作区。
 
@@ -145,7 +145,7 @@ AEM中的SPA的SSR需要Adobe I/O Runtime，这用于渲染应用程序内容服
 >的 [We.Retail Journal应用程序](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) 仅用于演示目的，因此使用Node.js作为简单示例，而不是推荐的Adobe I/O Runtime。 不应将此示例用于任何项目工作。
 
 >[!NOTE]
->任何AEM项目都应利用 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用React或Angular的SPA项目并利用SPA SDK。
+>任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ## 使用Node.js {#using-node-js}
 
@@ -190,7 +190,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 必须按照部分中的所述配置默认处理程序 [远程内容渲染器配置](#remote-content-renderer-configuration).
 
-###  远程内容渲染器使用情况 {#usage}
+###远程内容渲染器使用情况 {#usage}
 
 要让Servlet获取并返回一些可插入页面的内容，请执行以下操作：
 

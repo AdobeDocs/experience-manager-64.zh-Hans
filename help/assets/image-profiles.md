@@ -1,8 +1,8 @@
 ---
-title: Dynamic Media图像配置文件
-seo-title: Dynamic Media image profiles
-description: 创建包含USM锐化设置、智能裁剪或智能色板设置（或同时包含这两种设置）的图像配置文件，然后将该配置文件应用到图像资产文件夹。
-seo-description: Create image profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
+title: Dynamic Media 图像配置文件
+seo-title: Dynamic Media Image Profiles
+description: 创建包含USM锐化设置、智能裁剪或智能色板设置（或同时包含这两种设置）的图像配置文件，然后将该配置文件应用到图像资产的文件夹。
+seo-description: Create Image Profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -12,14 +12,14 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
+source-git-commit: c413f31498cdccf8ceea4afc225c570a40ba1819
 workflow-type: tm+mt
-source-wordcount: '2893'
-ht-degree: 20%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Dynamic Media图像配置文件 {#image-profiles}
+# Dynamic Media 图像配置文件 {#image-profiles}
 
 上传图像时，您可以通过将图像配置文件应用到文件夹，在上传时自动裁剪图像。
 
@@ -44,18 +44,21 @@ ht-degree: 20%
 
 <!-- CQDOC-16069 for paragraph directly below -->
 
-智能裁切坐标取决于宽高比。 也就是说，对于图像配置文件中的各种智能裁剪设置，如果图像配置文件中添加的维度的宽高比相同，则会将相同的宽高比发送到Dynamic Media。 因此，Adobe建议您使用相同的裁剪区域。 这样做可确保不会对图像配置文件中使用的不同维度产生影响。
+智能裁切坐标取决于宽高比。 也就是说，对于图像配置文件中的每个智能裁剪设置，如果图像配置文件中添加的尺寸的宽高比相同，则会将相同的宽高比发送到Dynamic Media。 因此，Adobe建议您使用相同的裁剪区域。 这样做可确保对图像配置文件中使用的不同维度不会产生任何影响。
 
-请注意，您创建的每个智能裁剪生成都需要额外的处理。 例如，添加五个以上的智能裁剪长宽比可能会导致资产摄取速度缓慢。 它还可能增加系统的负载。 由于您可以在文件夹级别应用智能裁剪，因此Adobe建议您在文件夹上使用智能裁剪 *仅* 需要的地方。
+您创建的每个智能裁剪生成都需要额外的处理。 例如，添加五个以上的智能裁剪长宽比可能会导致资产摄取速度缓慢。 它还可能增加系统的负载。 由于您可以在文件夹级别应用智能裁剪，因此Adobe建议您在文件夹上使用智能裁剪 *仅* 需要的地方。
 
 **在图像配置文件中定义智能裁剪的准则**
 为了控制智能裁剪的使用情况，并优化农作物的加工时间和存储，Adobe建议遵循以下准则和提示：
 
-* 避免创建宽度和高度值相同的重复智能裁剪配置文件。
-* 根据裁剪尺寸而不是最终使用情况来命名智能裁剪。 这样做有助于优化在多个页面上使用单个维度的重复项。
+* 要对图像资产应用智能裁剪的图像资产必须至少50 x 50像素或更大。 &lt;!— CQDOC-20087>
+* 不允许使用包含重复智能裁剪尺寸的图像配置文件。 &lt;!— CQDOC-20087>
+* 不允许设置智能裁剪选项的重复命名图像配置文件。 &lt;!— CQDOC-20087>
 * 为特定文件夹和子文件夹创建按页面/资产类型的图像配置文件，而不是应用到所有文件夹或所有资产的通用智能裁剪配置文件。
-* 应用到子文件夹的图像配置文件会覆盖应用到该文件夹的图像配置文件。
+* 您应用到子文件夹的图像配置文件会覆盖应用到该文件夹的图像配置文件。
 * 理想情况下，每张图像拥有10-15种智能作物，以优化屏幕比例和处理时间。
+<!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
 
 您有两个图像裁剪选项可供您选择。 您还可以选择自动创建颜色和图像色板，或跨目标分辨率保留裁剪内容。
 
@@ -91,7 +94,7 @@ ht-degree: 20%
   <tr> 
    <td>颜色和图像样本</td> 
    <td>批量为每个图像生成一个图像样本。</td> 
-   <td><p><strong>注意</strong>:Dynamic Media Classic不支持智能色板。</p> <p>自动从显示颜色或纹理的产品图像中定位并生成高质量样本。</p> <p>要使用颜色和图像色板，请选择 <strong>智能裁剪</strong> 从“裁剪选项”下拉列表中，然后在“颜色”和“图像色板”的右侧，启用（打开）该功能。 在“宽度”和“高度”文本框中输入像素值。</p> <p>虽然所有图像裁剪都可以从演绎版边栏中获取，但样本仅通过复制URL功能来使用。 请注意，必须使用您自己的查看组件在网站上渲染色板。 (传送横幅是例外。 Dynamic Media为轮播横幅中使用的色板提供查看组件。)</p> <p><strong>使用图像色板</strong></p> <p>图像样本的URL非常简单。 即：</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>where <code>:Swatch</code> 会附加到资产请求中。</p> <p><strong>使用颜色色板</strong></p> <p>要使用颜色色板，请 <code>req=userdata</code> 请求，其中包含以下内容：</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>例如，以下是Dynamic Media Classic中的色板资产：</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>下面是色板资产的相应 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>的 <code>req=userdata</code> 响应如下：</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>注意</strong>:Dynamic Media Classic不支持智能色板。</p> <p>自动从显示颜色或纹理的产品图像中定位并生成高质量样本。</p> <p>要使用颜色和图像色板，请选择 <strong>智能裁剪</strong> 从“裁剪选项”下拉列表中，然后在“颜色”和“图像色板”的右侧，启用（打开）该功能。 在“宽度”和“高度”文本框中输入像素值。</p> <p>虽然所有图像裁剪都可以从演绎版边栏中获取，但样本仅通过复制URL功能来使用。 您需要使用自己的查看组件在网站上渲染色板。 (此规则的例外是传送横幅。 Dynamic Media为轮播横幅中使用的色板提供查看组件。)</p> <p><strong>使用图像色板</strong></p> <p>图像样本的URL非常简单：</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>where <code>:Swatch</code> 会附加到资产请求中。</p> <p><strong>使用颜色色板</strong></p> <p>要使用颜色色板，请 <code>req=userdata</code> 请求，其中包含以下内容：</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>例如，以下是Dynamic Media Classic中的色板资产：</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>下面是色板资产的相应 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>的 <code>req=userdata</code> 响应如下：</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -100,10 +103,10 @@ ht-degree: 20%
 
 ## USM 锐化 {#unsharp-mask}
 
-您使用 **钝化蒙版** 对最终的缩减采样图像微调锐化滤镜效果。您可以控制效果的强度、效果的半径（以像素为单位）以及将被忽略的对比度阈值。此效果使用与Adobe Photoshop的“钝化蒙版”滤镜相同的选项。
+您使用 **钝化蒙版** 对最终的缩减采样图像微调锐化滤镜效果。 您可以控制效果的强度、效果的半径（以像素为单位）以及被忽略的对比度阈值。 此效果使用与Adobe Photoshop的“钝化蒙版”滤镜相同的选项。
 
 >[!NOTE]
-USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩小演绎版。 这意味着PTIFF中最大大小的演绎版不受USM锐化影响，而较小的演绎版（如缩略图）会发生更改（并将显示USM锐化）。
+USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩小演绎版。 这意味着PTIFF中最大大小的演绎版不受USM锐化影响，而较小的演绎版（如缩略图）会发生更改（并显示USM锐化）。
 
 在 **钝化蒙版**，则具有以下筛选选项：
 
@@ -137,10 +140,10 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 **创建Dynamic Media图像配置文件**:
 
 1. 点按AEM徽标，然后导航到 **[!UICONTROL 工具>资产>图像配置文件]**.
-1. 点按 **[!UICONTROL 创建]** 添加新图像配置文件。
+1. 点按 **[!UICONTROL 创建]** 添加图像配置文件。
 1. 输入USM锐化、裁切或色板的配置文件名称和值，或同时输入两者。
 
-   您可能会发现使用特定于其预期目的的配置文件名称非常有用。 例如，如果要创建仅生成色板的配置文件(即，禁用（关闭）“智能裁剪”，启用（打开）“颜色和图像色板”)，则可以使用配置文件名称“智能色板”。
+   您可能会发现使用特定于其预期目的的配置文件名称非常有用。 例如，如果要创建仅生成色板的配置文件（其中禁用了智能裁切并启用了颜色和图像色板），则可以使用配置文件名称“智能色板”。
 
    另请参阅[智能裁切和智能色板选项](#crop-options)和[钝化蒙版](#unsharp-mask)。
 
@@ -151,7 +154,7 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 ## 编辑或删除Dynamic Media图像配置文件 {#editing-or-deleting-image-profiles}
 
 1. 点按AEM徽标，然后导航到 **[!UICONTROL 工具>资产>图像配置文件]**.
-1. 选择要编辑或删除的图像配置文件。要编辑图像配置文件，请选择&#x200B;**[!UICONTROL 编辑图像处理配置文件]**。要删除它，请选择 **[!UICONTROL 删除图像处理配置文件]**.
+1. 选择要编辑或删除的图像配置文件。 要编辑图像配置文件，请选择&#x200B;**[!UICONTROL 编辑图像处理配置文件]**。要删除它，请选择 **[!UICONTROL 删除图像处理配置文件]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -159,32 +162,32 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 
 ## 将Dynamic Media图像配置文件应用到文件夹 {#applying-an-image-profile-to-folders}
 
-当您将图像配置文件分配给文件夹之后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。这就意味着您只能为每个文件夹分配一个图像配置文件。因此，您在上传、存储、使用资产以及将资产存档的过程中，请妥善安排文件夹结构。
+当您将图像配置文件分配给文件夹后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。 此工作流意味着您只能向文件夹分配一个图像配置文件。 因此，您在上传、存储、使用资产以及将资产存档的过程中，请妥善安排文件夹结构。
 
-如果您为文件夹分配了一个不同的图像配置文件，新配置文件就会取代之前的配置文件。此前存在的文件夹资产将保持不变。此后添加到该文件夹的资产将会应用新的配置文件。
+如果您为文件夹分配了其他图像配置文件，则新配置文件会覆盖之前的配置文件。以前存在的文件夹资产将保持不变。新配置文件会应用于稍后添加到文件夹的资产。
 
-为文件夹分配了配置文件的文件夹会在用户界面中的卡片中显示配置文件的名称。
+在用户界面中，如果文件夹分配了配置文件，则卡片中会显示该配置文件的名称。
 
-在向现有图像配置文件添加智能裁剪时，您需要重新触发 [DAM更新资产工作流](assets-workflow.md) 如果要为资产存储库中的现有资产生成裁剪，请执行以下操作：
+向现有图像配置文件添加智能裁剪时，必须检索 [DAM更新资产工作流](assets-workflow.md) 如果要为资产存储库中的现有资产生成裁剪，请执行以下操作：
 
-您可以将图像配置文件应用到特定文件夹，也可以全局应用到所有资产。
+您可以将图像配置文件应用到特定文件夹或全局应用到所有资产。
 
 ### 将Dynamic Media图像配置文件应用到特定文件夹 {#applying-image-profiles-to-specific-folders}
 
-您可以从“工具”菜单中将图像配置文件应用到 **[!UICONTROL 文件夹]** ，或者如果您在文件夹中，也可以从“属 **[!UICONTROL 性”]**。 本节将介绍这两种将图像配置文件应用到文件夹的方法。
+您可以在 **[!UICONTROL 工具]** 菜单，或者如果您在文件夹中， **[!UICONTROL 属性]**. 本节将介绍这两种将图像配置文件应用到文件夹的方法。
 
 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
 #### 从“配置文件”用户界面将Dynamic Media图像配置文件应用到文件夹 {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. 点按AEM徽标，然后导航到 **[!UICONTROL 工具>资产>图像配置文件]**.
-1. 选择您要应用到一个或多个文件夹的图像配置文件。
+1. 选择要应用于一个或多个文件夹的图像配置文件。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
 1. 点按 **[!UICONTROL 将处理配置文件应用到文件夹]** ，然后选择一个或多个用于接收新上传资产的文件夹，然后点按/单击 **[!UICONTROL 应用]**. 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
 
-#### 从“属性”将Dynamic Media图像配置文件应用到文件夹 {#applying-image-profiles-to-folders-from-properties}
+#### 将Dynamic Media图像配置文件从属性应用到文件夹 {#applying-image-profiles-to-folders-from-properties}
 
 1. 点按AEM徽标，然后导航到 **[!UICONTROL 资产]**. 然后，导航到要将图像配置文件应用到的文件夹的父文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按 **[!UICONTROL 属性]**.
@@ -194,7 +197,7 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 
 ### 全局应用Dynamic Media图像配置文件 {#applying-an-image-profile-globally}
 
-除了将配置文件应用到文件夹之外，您还可以全局应用一个配置文件，以便任何文件夹中上传到AEM资产的任何内容都会应用选定的配置文件。
+除了将配置文件应用到文件夹之外，您还可以全局应用一个配置文件，以便任何文件夹中上传到AEM Assets的任何内容都会应用选定的配置文件。
 
 **全局应用Dynamic Media图像配置文件**:
 
@@ -219,16 +222,15 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 
 编辑智能裁剪并保存后，所做的更改会传播到您对特定图像使用裁剪的所有位置。
 
-如果需要，您可以重新运行智能裁剪以再次生成其他裁剪。
+如有必要，您可以重新运行智能裁剪以再次生成其他裁剪。
 
 另请参阅 [编辑多幅图像的智能裁剪或智能色板](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
 **编辑单个图像的智能裁剪或智能色板**:
 
 1. 点按AEM徽标，然后导航到 **[!UICONTROL 资产]**，然后转到应用了智能裁剪或智能色板图像配置文件的文件夹。
-
 1. 点按文件夹以打开其内容。
-1. 点按要调整其智能裁剪或智能色板的图像。
+1. 使用您要调整的智能裁剪或智能色板点按图像。
 1. 在工具栏中，点按 **[!UICONTROL 智能裁剪]**.
 
 1. 执行以下操作之一：
@@ -246,7 +248,7 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 
 编辑智能裁剪并保存后，所做的更改会传播到您对特定图像使用裁剪的所有位置。
 
-如果需要，您可以重新运行智能裁剪以再次生成其他裁剪。
+如有必要，您可以重新运行智能裁剪以再次生成其他裁剪。
 
 **编辑多幅图像的智能裁剪或智能色板**:
 
@@ -293,21 +295,21 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 
 ## 从文件夹删除图像配置文件 {#removing-an-image-profile-from-folders}
 
-当您将图像配置文件从文件夹删除之后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。但是，此前对文件夹中的文件所做的处理均予以保留。
+当您将图像配置文件从文件夹删除后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。但是，对文件夹中已发生的文件的任何处理均将保持不变。
 
-您可以从“工具”菜单中的文件夹删除图像配置文件；如果您在 **[!UICONTROL 文件夹中]** ，也可以从“属性”中 **[!UICONTROL 删除]**。 本节将介绍这两种将图像配置文件从文件夹删除的方法。
+您可以从 **[!UICONTROL 工具]** 菜单，或者如果您在文件夹中， **[!UICONTROL 属性]**. 本节将介绍这两种将图像配置文件从文件夹删除的方法。
 
 ### 通过Profiles用户界面将Dynamic Media图像配置文件从文件夹删除 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. 点按AEM徽标，然后导航到 **[!UICONTROL 工具>资产>图像配置文件]**.
-1. 选择您要从一个或多个文件夹删除的图像配置文件。
+1. 选择要从一个或多个文件夹中删除的图像配置文件。
 1. 点按&#x200B;**[!UICONTROL 从文件夹删除处理配置文件]**，然后选择一个或多个要从中删除配置文件的文件夹，然后点按&#x200B;**[!UICONTROL 删除]**。
 
-   如果图像配置文件的名称不再出现在文件夹名称的下方，则可以确定该图像配置文件不再应用于该文件夹。
+   您可以确认图像配置文件不再应用于文件夹，因为文件夹名称的下方不再显示该名称。
 
 ### 通过属性将Dynamic Media图像配置文件从文件夹删除 {#removing-image-profiles-from-folders-via-properties}
 
-1. 点按AEM徽标并导航 **[!UICONTROL 资产]** 然后转到要将图像配置文件从中删除的文件夹。
+1. 点按AEM徽标并导航 **[!UICONTROL 资产]** ，然后转到要从中删除图像配置文件的文件夹。
 1. 在文件夹中，点按复选标记以将其选中，然后点按 **[!UICONTROL 属性]**.
 1. 选择 **[!UICONTROL 图像配置文件]** 选项卡。
 1. 从 **[!UICONTROL 配置文件名称]** 下拉列表中，选择 **[!UICONTROL 无]**，然后点按 **[!UICONTROL 保存并关闭]**.

@@ -12,10 +12,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 1bda0ff04752dec663f251d28a4274599fd0e17d
+source-git-commit: 56d711eb5aa87a2aa4c5476bae0627afccc579d1
 workflow-type: tm+mt
-source-wordcount: '2885'
-ht-degree: 12%
+source-wordcount: '2924'
+ht-degree: 7%
 
 ---
 
@@ -51,12 +51,21 @@ ht-degree: 12%
 **在图像配置文件中定义智能裁剪的准则**
 为了控制智能裁剪的使用情况，并优化农作物的加工时间和存储，Adobe建议遵循以下准则和提示：
 
-* 要对图像资产应用智能裁剪的图像资产必须至少50 x 50像素或更大。 <!-- CQDOC-20087 -->
-* 不允许使用包含重复智能裁剪尺寸的图像配置文件。 <!-- CQDOC-20087 -->
-* 不允许设置智能裁剪选项的重复命名图像配置文件。 <!-- CQDOC-20087 -->
+* 避免创建宽度和高度值相同的重复智能裁剪配置文件。
+* 根据裁剪尺寸而不是最终使用情况来命名智能裁剪。 这样做有助于优化在多个页面上使用单个维度的重复项。
+* 为特定文件夹和子文件夹创建按页面/资产类型的图像配置文件，而不是应用到所有文件夹或所有资产的通用智能裁剪配置文件。
+* 应用到子文件夹的图像配置文件会覆盖应用到该文件夹的图像配置文件。
 * 为特定文件夹和子文件夹创建按页面/资产类型的图像配置文件，而不是应用到所有文件夹或所有资产的通用智能裁剪配置文件。
 * 您应用到子文件夹的图像配置文件会覆盖应用到该文件夹的图像配置文件。
 * 理想情况下，每张图像拥有10-15种智能作物，以优化屏幕比例和处理时间。
+
+<!--
+* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
+* An Image Profile that contains duplicate smart crop dimensions is not permitted. CQDOC-20087
+* Duplicate named Image Profiles that have smart crop options set are not permitted. CQDOC-20087
+* Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
+* An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
+* Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time. -->
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
@@ -77,7 +86,7 @@ ht-degree: 12%
   <tr> 
    <td>像素裁剪</td> 
    <td>仅基于维度批量裁剪图像。</td> 
-   <td><p>要使用此选项，请选择 <strong>像素裁剪</strong> 从“裁剪选项”下拉列表中。</p> <p>要从图像的侧边进行裁剪，请输入要从图像的任一侧边或各个侧边裁剪的像素数。裁剪的图像多少取决于图像文件中的 ppi（每英寸像素数）设置。</p> <p>图像配置文件像素裁切按以下方式呈现：<br /> </p> 
+   <td><p>要使用此选项，请选择 <strong>像素裁剪</strong> 从“裁剪选项”下拉列表中。</p> <p>要从图像的侧边进行裁剪，请输入要从图像的任意侧边或每侧进行裁剪的像素数。 裁剪图像的多少取决于图像文件中的ppi（像素/英寸）设置。</p> <p>图像配置文件像素裁切按以下方式呈现：<br /> </p> 
     <ul> 
      <li>值包括“顶部”、“底部”、“左”和“右”。</li> 
      <li>左上角被视为0,0，并且从此处计算像素裁剪。</li> 
@@ -118,7 +127,7 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
   </tr> 
   <tr> 
    <td>数量</td> 
-   <td>控制应用于边缘像素的对比度量。 默认值为1.75。对于高分辨率图像，最高可将其增加到5。 可以考虑使用数量来衡量滤镜强度。范围为0-5。</td> 
+   <td>控制应用于边缘像素的对比度量。 默认值为1.75。对于高分辨率图像，最高可将其增加到5。 将“数量”视为过滤强度的度量。 范围为0-5。</td> 
   </tr> 
   <tr> 
    <td>半径</td> 
@@ -131,7 +140,7 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
  </tbody> 
 </table>
 
-有关“锐化”的信息，请参阅[锐化图像](/help/assets/assets/sharpening_images.pdf)。
+有关锐化的描述，请参阅 [锐化图像](/help/assets/assets/sharpening_images.pdf).
 
 ## 创建Dynamic Media图像配置文件 {#creating-image-profiles}
 
@@ -149,22 +158,22 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 
    ![农作物](assets/crop.png)
 
-1. 点按&#x200B;**[!UICONTROL 保存]**。此时新创建的配置文件会显示在可用配置文件列表中。
+1. 点按 **[!UICONTROL 保存]**. 新创建的用户档案将显示在可用用户档案列表中。
 
 ## 编辑或删除Dynamic Media图像配置文件 {#editing-or-deleting-image-profiles}
 
 1. 点按AEM徽标，然后导航到 **[!UICONTROL 工具>资产>图像配置文件]**.
-1. 选择要编辑或删除的图像配置文件。 要编辑图像配置文件，请选择&#x200B;**[!UICONTROL 编辑图像处理配置文件]**。要删除它，请选择 **[!UICONTROL 删除图像处理配置文件]**.
+1. 选择要编辑或删除的图像配置文件。 要编辑它，请选择 **[!UICONTROL 编辑图像处理配置文件]**. 要删除它，请选择 **[!UICONTROL 删除图像处理配置文件]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. 如果是进行编辑操作，请保存更改。如果是进行删除操作，请确认您要删除配置文件。
+1. 如果进行编辑，请保存更改。 如果删除，请确认您要删除该用户档案。
 
 ## 将Dynamic Media图像配置文件应用到文件夹 {#applying-an-image-profile-to-folders}
 
-当您将图像配置文件分配给文件夹后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。 此工作流意味着您只能向文件夹分配一个图像配置文件。 因此，您在上传、存储、使用资产以及将资产存档的过程中，请妥善安排文件夹结构。
+当您将图像配置文件分配给文件夹后，该文件夹中的所有子文件夹都会自动继承父文件夹的配置文件。 此工作流意味着您只能向文件夹分配一个图像配置文件。 因此，请仔细考虑上传、存储、使用和存档资产所在的文件夹结构。
 
-如果您为文件夹分配了其他图像配置文件，则新配置文件会覆盖之前的配置文件。以前存在的文件夹资产将保持不变。新配置文件会应用于稍后添加到文件夹的资产。
+如果您为文件夹分配了其他图像配置文件，则新配置文件会覆盖之前的配置文件。 以前存在的文件夹资产将保持不变。 新配置文件会应用于稍后添加到文件夹的资产。
 
 在用户界面中，如果文件夹分配了配置文件，则卡片中会显示该配置文件的名称。
 
@@ -233,7 +242,7 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 1. 使用您要调整的智能裁剪或智能色板点按图像。
 1. 在工具栏中，点按 **[!UICONTROL 智能裁剪]**.
 
-1. 执行以下操作之一：
+1. 执行以下任一操作：
 
    * 在页面的右上角附近，向左或向右拖动滑块条以分别增加或减少图像显示。
    * 在图像上，拖动角手柄以调整裁剪或色板可查看区域的大小。
@@ -291,11 +300,11 @@ USM锐化仅应用于PTIFF（金字塔tiff）中缩减采样率超过50%的缩�
 
 
 
-1. 在页面的右上角附近，点按&#x200B;**[!UICONTROL 保存]**。然后点按 **[!UICONTROL 关闭]** ，以返回到资产文件夹。
+1. 在页面的右上角附近，点按 **[!UICONTROL 保存]**. 然后点按 **[!UICONTROL 关闭]** ，以返回到资产文件夹。
 
 ## 从文件夹删除图像配置文件 {#removing-an-image-profile-from-folders}
 
-当您将图像配置文件从文件夹删除后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。但是，对文件夹中已发生的文件的任何处理均将保持不变。
+当您将图像配置文件从文件夹删除后，该文件夹中的所有子文件夹都会自动删除从父文件夹继承的配置文件。 但是，对文件夹中已发生的文件的任何处理均将保持不变。
 
 您可以从 **[!UICONTROL 工具]** 菜单，或者如果您在文件夹中， **[!UICONTROL 属性]**. 本节将介绍这两种将图像配置文件从文件夹删除的方法。
 

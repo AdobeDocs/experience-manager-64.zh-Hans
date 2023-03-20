@@ -3,15 +3,15 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: AEM 6.4 Deploying 指南
-breadcrumb-title: Deploying 指南
+user-guide-title: AEM 6.4 部署指南
+breadcrumb-title: 部署指南
 user-guide-description: 详细了解 Adobe Experience Manager 6.4 的安装、部署和架构，包括我们的 Adobe Managed Services 云部署。
 feature: Deploying
 role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 21%
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 21%
    + [技术要求](technical-requirements.md)
    + [AEM 6.4中的存储元素](storage-elements-in-aem-6.md)
    + [AEM with MongoDB](aem-with-mongodb.md)
-+ 部署 AEM {#deploying}
++ 部署AEM {#deploying}
    + [部署和维护](deploy.md)
    + [推荐的部署](recommended-deploys.md)
    + [应用程序服务器安装](application-server-install.md)

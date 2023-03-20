@@ -4,14 +4,14 @@ product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4 Developing 用户指南
-breadcrumb-title: Developing 指南
+breadcrumb-title: 开发指南
 user-guide-description: 本指南介绍如何构建 AEM 实例。
 feature: Developing
 role: Developer
 source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
 workflow-type: tm+mt
 source-wordcount: '869'
-ht-degree: 26%
+ht-degree: 25%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 26%
 
 + [开发用户指南概述](home.md)
 + 开发人员简介{#introduction}
-   + [AEM站点开发入门 – WKND 教程](getting-started.md)
+   + [AEM Sites 开发快速入门 – WKND 教程](getting-started.md)
    + [AEM核心概念](the-basics.md)
    + [AEM触屏UI的结构](touch-ui-structure.md)
    + [AEM触屏UI的概念](touch-ui-concepts.md)
@@ -215,8 +215,8 @@ ht-degree: 26%
    + [JCR集成](jcr-integration.md)
    + [代码示例](code-samples.md)
    + [慢速查询疑难解答](troubleshooting-slow-queries.md)
-+ 移动 Web{#mobileweb}
-   + [移动 Web](mobile-web.md)
++ 移动Web{#mobileweb}
+   + [移动Web](mobile-web.md)
    + [创建设备组过滤器](groupfilters.md)
    + [网页响应式设计](responsive.md)
    + [为移动设备创建站点](mobile.md)

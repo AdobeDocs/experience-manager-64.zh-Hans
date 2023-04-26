@@ -9,7 +9,7 @@ user-guide-description: 创建、管理、交付和优化数字资产。
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 52%
+ht-degree: 44%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 52%
 + 使用AEM Assets {#using}
    + [AEM Assets主页体验](assets-home-page.md)
    + [在AEM中搜索资产](search-assets.md)
-   + [GQL 全文搜索](gql-search.md)
+   + [GQL全文搜索](gql-search.md)
    + [多语言资产](multilingual-assets.md)
    + [在AEM Assets中使用Adobe Stock资产](aem-assets-adobe-stock.md)
    + [审核文件夹资源和收藏集](bulk-approval.md)
@@ -81,13 +81,13 @@ ht-degree: 52%
    + [安装和配置ImageMagick以与AEM Assets配合使用](best-practices-for-imagemagick.md)
    + [将资产与活动流集成](extending-activity-stream.md)
    + [扩展资产编辑器](asseteditorx.md)
-   + [资源 HTTP API](mac-api-assets.md)
+   + [Assets HTTP API](mac-api-assets.md)
    + [资产代理开发](proxy.md)
 + 管理资产 {#administer}
    + [资产支持的格式](assets-formats.md)
    + [搜索 Facet](search-facets.md)
    + [管理资产的元数据](metadata.md)
-   + [XMP 写回到演绎版](xmp-writeback.md)
+   + [XMP写回到演绎版](xmp-writeback.md)
    + [资产链接共享](link-sharing.md)
    + [资源报表](asset-reports.md)
    + [增强型智能标记](enhanced-smart-tags.md)
@@ -102,7 +102,7 @@ ht-degree: 52%
    + [Assets迁移指南](assets-migration-guide.md)
    + [XMP 元数据](xmp.md)
    + [资产网络注意事项](assets-network-considerations.md)
-   + [AEM Assets 与 AEM MediaLibrary](medialibrary.md)
+   + [AEM Assets与AEM MediaLibrary](medialibrary.md)
    + [使用PDF光栅器](aem-pdf-rasterizer.md)
    + [配置资产上传限制](configuring-asset-upload-restrictions.md)
    + [AEM和Creative Cloud集成最佳实践](aem-cc-integration-best-practices.md)
@@ -114,8 +114,8 @@ ht-degree: 52%
    + [Assets 卸载最佳实践](assets-offloading-best-practices.md)
    + [资产文件格式最佳实践](assets-file-format-best-practices.md)
    + [Assets 监控最佳实践](assets-monitoring-best-practices.md)
-   + [Camera Raw 支持](camera-raw.md)
-   + [使用 Apache Tika 检测 MIME 类型的资产](detect-asset-mime-type-with-tika.md)
+   + [Camera Raw支持](camera-raw.md)
+   + [使用Apache Tika检测资产的MIME类型](detect-asset-mime-type-with-tika.md)
    + [图像转码库](imaging-transcoding-library.md)
    + [支持IPTC元数据](iptc-support.md)
    + [元数据架构](metadata-schemas.md)
@@ -142,7 +142,7 @@ ht-degree: 52%
    + [内容片段 — Markdown](content-fragments-markdown.md)
    + [为内容片段创建翻译项目](creating-translation-projects-for-content-fragments.md)
 + 管理资产 {#managing}
-   + [使用针对触摸优化的用户界面管理资产](managing-assets-touch-ui.md)
+   + [使用触屏优化UI管理资产](managing-assets-touch-ui.md)
    + [管理多个资产和收藏集](managing-multiple-assets.md)
    + [资产选择器](asset-selector.md)
    + [管理收藏集](managing-collections-touch-ui.md)
@@ -156,7 +156,7 @@ ht-degree: 52%
    + [准备翻译资产](preparing-assets-for-translation.md)
    + [从 AEM 下载资产](download-assets-from-aem.md)
    + [异步操作](asynchronous-jobs.md)
-   + [Lightbox](touch-ui-light-box.md)
+   + [灯箱](touch-ui-light-box.md)
    + [通过DTM启用资产分析](touch-ui-using-dtm-for-asset-insights.md)
    + [配置资产分析](touch-ui-configuring-asset-insights.md)
    + [将翻译云服务应用到文件夹](transition-cloud-services.md)

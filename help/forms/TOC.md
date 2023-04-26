@@ -148,7 +148,7 @@ ht-degree: 4%
    + [在AEM站点页面中嵌入自适应表单或交互式通信](using/embed-adaptive-form-aem-sites.md)
    + [将自适应表单嵌入到外部网页中](using/embed-adaptive-form-external-web-page.md)
    + [自适应表单组件的内联样式](using/inline-style-adaptive-forms.md)
-   + [多步表单序列简介](using/introduction-form-sequence.md)
+   + [多步骤表单序列简介](using/introduction-form-sequence.md)
    + [自适应表单的布局功能](using/layout-capabilities-adaptive-forms.md)
    + [AEM Forms中的占位符文本](using/placeholder-text-in-aem-forms-.md)
    + [预览表单](using/previewing-forms.md)
@@ -564,7 +564,7 @@ ht-degree: 4%
    + 系统信息服务 {#system-information-service}
       + [设置系统信息服务](/help/forms/using/admin-help/set-system-information-service.md)
       + [系统信息服务API](/help/forms/using/admin-help/system-information-service-apis.md)
-+ 进程报告 {#process-reporting}
++ 流程报告 {#process-reporting}
    + [流程报告简介](/help/forms/using/process-reporting/introduction-process-reporting.md)
    + [流程报告入门](/help/forms/using/process-reporting/install-start-process-reporting.md)
    + [流程报表的工作原理](/help/forms/using/process-reporting/process-reporting-architecture.md)

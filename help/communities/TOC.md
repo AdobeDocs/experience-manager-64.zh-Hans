@@ -10,7 +10,7 @@ role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 12%
+ht-degree: 9%
 
 ---
 
@@ -22,8 +22,8 @@ ht-degree: 12%
    + [社区站点](administer-landing.md)
    + [AEM Communities概述](overview.md)
    + [AEM 6.4 Communities的新增功能](whats-new-aem-communities.md)
-   + [AEM Communities 发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
-   + [AEM Communities 快速入门](getting-started.md)
+   + [AEM Communities发行说明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
+   + [开始使用AEM Communities](getting-started.md)
    + [AEM Communities启用入门](getting-started-enablement.md)
    + [初始设置](setup.md)
    + [创作新社区站点](create-site.md)
@@ -35,7 +35,7 @@ ht-degree: 12%
    + [体验已发布的启用网站](enablement-published-site.md)
 + 部署 {#deploy}
    + [部署社区](deploy-communities.md)
-   + [升级到 AEM 6.4 Communities](upgrade.md)
+   + [升级到AEM 6.4 Communities](upgrade.md)
    + [推荐的社区拓扑](topologies.md)
    + [为社区配置Dispatcher](dispatcher.md)
 + 管理 {#administer}

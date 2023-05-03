@@ -7,7 +7,7 @@ exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
 source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 45%
+ht-degree: 39%
 
 ---
 
@@ -19,7 +19,7 @@ AEM 发行说明涵盖有关最新版 AEM 的重要信息，包括新增功能�
 
 * [AEM入门](https://helpx.adobe.com/cn/experience-manager/get-started.html)
 * [近期文档更新](https://helpx.adobe.com/experience-manager/documentation-updates.html)
-* [AEM 安全核对清单](/help/sites-administering/security-checklist.md)
+* [AEM安全检查列表](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4用户指南
 
@@ -28,7 +28,7 @@ AEM 发行说明涵盖有关最新版 AEM 的重要信息，包括新增功能�
 | [Assets 用户指南](/help/assets/home.md) | 创建、管理、交付和优化数字资产。 |
 | [Forms用户指南](/help/forms/home.md) | 本指南介绍如何创建、管理、发布和更新数字表单。 |
 | [Communities用户指南](/help/communities/home.md) | 创建在线体验，如论坛、用户组、学习资源和其他社交功能。 |
-| [Administering 指南](/help/sites-administering/home.md) | 了解如何管理 AEM |
+| [Administering 指南](/help/sites-administering/home.md) | 了解如何管理AEM |
 | [Authoring 指南](/help/sites-authoring/home.md) | 本指南介绍了在AEM中创作的概念。 |
 | [经典UI创作指南](/help/sites-classic-ui-authoring/home.md) | 本指南介绍在经典用户界面的AEM中创作的概念。 |
 | [Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | 了解用于发布动态和交互式数字体验的数字标牌解决方案。 |
@@ -40,16 +40,16 @@ AEM 发行说明涵盖有关最新版 AEM 的重要信息，包括新增功能�
 ## 关键AEM资源
 
 * [AEM教程](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Dispatcher用户指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)
+* [Dispatcher用户指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL用户指南](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hans)
 * [核心组件用户指南](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hans?lang=en)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
 * [GDPR 就绪](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社区论坛](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 
 ## 版权、许可和免责声明 {#copyright-licenses-and-disclaimers}
 
-有关详细信息，请参阅 [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/cn/legal/terms/enterprise-licensing.html)
+有关详细信息，请参阅 [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
 第三方许可证通知： [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

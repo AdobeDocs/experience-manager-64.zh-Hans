@@ -1,20 +1,24 @@
 ---
 title: Assets中的用户体验增强功能
-description: 本文介绍了 [!DNL Experience Manager] 6.4 Assets中的用户体验改进。
+description: 本文介绍了 [!DNL Experience Manager] 6.4资产。
 contentOwner: AG
 feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '677'
 ht-degree: 1%
 
 ---
 
 # Assets中的用户体验增强功能 {#user-experience-enhancements-in-assets}
 
-[!DNL Experience Manager] 6.4 Assets包括多项可用性改进，可提供无缝的用户体验并提高工作效率。您能够创建/管理上市内容的速度的提高提高了业务的内容速度。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+[!DNL Experience Manager] 6.4 Assets包括多项可用性改进，可提供无缝的用户体验并提高工作效率。 您能够创建/管理上市内容的速度的提高提高了业务的内容速度。
 
 该界面响应更快，可帮助您高效管理大量资产组合。 您可以快速搜索、显示、排序和顺利滚动很长的项目列表。
 
@@ -22,7 +26,7 @@ ht-degree: 1%
 
 ## 延迟加载 {#lazy-loading}
 
-在[!DNL Experience Manager] 6.4资产中浏览/搜索资产时，一次最多会显示200个资产。 您可以更快地滚动浏览结果，在浏览很长的结果列表时尤其有用。 由于一次加载的资产数量很大，因此浏览体验会很流畅。
+当您在 [!DNL Experience Manager] 6.4资产，一次最多显示200个资产。 您可以更快地滚动浏览结果，在浏览很长的结果列表时，这特别有用。 由于一次加载的资产数量很大，因此浏览体验会很流畅。
 
 如果您点按/单击资产以查看其详细信息页面，则只需点按/单击工具栏中的“返回”按钮，即可返回到结果页面。
 
@@ -32,11 +36,11 @@ ht-degree: 1%
 
 要在卡片视图中调整缩略图大小，请执行以下步骤：
 
-1. 点按/单击工具栏中的布局图标，然后选择&#x200B;**[!UICONTROL 查看设置]**&#x200B;选项。
+1. 点按/单击工具栏中的布局图标，然后选择 **[!UICONTROL 查看设置]** 选项。
 
    ![view_settings](assets/view_settings.png)
 
-1. 从&#x200B;**[!UICONTROL 查看设置]**&#x200B;对话框中，选择所需的缩略图大小，然后点按/单击&#x200B;**[!UICONTROL 更新]**。
+1. 从 **[!UICONTROL 查看设置]** 对话框，选择所需的缩略图大小，然后点按/单击 **[!UICONTROL 更新]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
@@ -54,13 +58,13 @@ ht-degree: 1%
 
 ![list_view](assets/list_view.png)
 
-您可以选择配置要显示的详细信息量。 点按/单击布局图标，选择&#x200B;**[!UICONTROL 查看设置]**&#x200B;选项，然后指定您希望在&#x200B;**[!UICONTROL 查看设置]**&#x200B;对话框中显示的列。
+您可以选择配置要显示的详细信息量。 点按/单击布局图标，选择 **[!UICONTROL 查看设置]** ，并指定要在 **[!UICONTROL 查看设置]** 对话框。
 
 ![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## 列视图改进 {#column-view-improvements}
 
-除了卡片视图和列表视图之外，您现在还可以从列视图导航到资产的详细信息页面。 从列视图中选择资产，然后点按/单击资产快照下的&#x200B;**[!UICONTROL 更多详细信息]**。
+除了卡片视图和列表视图之外，您现在还可以从列视图导航到资产的详细信息页面。 从列视图中选择资产，然后点按/单击 **[!UICONTROL 更多详细信息]** 在资产快照下。
 
 ![更多信息](assets/more_details.png)
 
@@ -68,7 +72,7 @@ ht-degree: 1%
 
 [!DNL Experience Manager] 6.4资产包括树视图，通过该视图，您可以方便地浏览资产层次结构并导航到所需的资产或文件夹。
 
-要打开树视图，请点按/单击`Assets UI`中的GlobalNav图标，然后从菜单中选择&#x200B;**[!UICONTROL 内容树]**。
+要打开树视图，请点按/单击 `Assets UI`，然后选择 **[!UICONTROL 内容树]** 中。
 
 ![content_tree](assets/content_tree.png)
 
@@ -88,7 +92,7 @@ ht-degree: 1%
 |---|---|
 | [!UICONTROL 卡片视图] | 点按/单击资产拼贴。 |
 | [!UICONTROL 列表视图] | 点按/单击列表中资产所对应的行条目。 |
-| [!UICONTROL 列视图] | 点按/单击资产快照中的&#x200B;**[!UICONTROL 更多详细信息]**&#x200B;按钮。 |
+| [!UICONTROL 列视图] | 点按/单击 **[!UICONTROL 更多详细信息]** 按钮。 |
 
 使用上一步/下一步按钮可在资产之间来回移动。
 

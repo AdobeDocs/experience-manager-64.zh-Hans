@@ -8,14 +8,18 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5619'
-ht-degree: 4%
+source-wordcount: '5655'
+ht-degree: 3%
 
 ---
 
 # 配置 Dynamic Media — Scene7 模式 {#configuring-dynamic-media-scene-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 如果您使用为不同环境（如开发、暂存和实时生产）设置的Adobe Experience Manager，则必须为每个环境配置Dynamic MediaCloud Services。
 
@@ -33,7 +37,7 @@ ht-degree: 4%
 
 ## 在Scene7模式下启用Dynamic Media {#enabling-dynamic-media-in-scene-mode}
 
-[默认情况下，Dynamic Media 处于禁用状态。](https://www.adobe.com/marketing-cloud/enterprise-content-management/dynamic-media.html)要利用Dynamic Media功能，您必须启用它。
+[Dynamic Media](https://www.adobe.com/marketing-cloud/enterprise-content-management/dynamic-media.html) 默认情况下处于禁用状态。 要利用Dynamic Media功能，您必须启用它。
 
 >[!WARNING]
 >
@@ -107,7 +111,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-1. 点按&#x200B;**[!UICONTROL 保存]**。
+1. 点按 **[!UICONTROL 保存]**.
 1. 要在发布Dynamic Media内容之前安全预览内容，您必须“”允许列表Experience Manager创作实例才能连接到Dynamic Media:
 
    * 打开 [Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。 您的凭据和登录详细信息由Adobe在配置时提供。 如果您没有此信息，请联系技术支持。
@@ -115,7 +119,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * 在图像服务器发布页面的发布上下文下拉列表中，选择 **[!UICONTROL 测试图像提供]**.
    * 对于客户端地址过滤器，点按 **[!UICONTROL 添加]**.
    * 要启用（打开）地址，请选中复选框。 输入Experience Manager创作实例的IP地址（而非Dispatcher IP）。
-   * 点按&#x200B;**[!UICONTROL 保存]**。
+   * 点按 **[!UICONTROL 保存]**.
 
 您现在已完成基本配置；您已准备好使用Dynamic Media - Scene7模式。
 
@@ -201,7 +205,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
    * [!UICONTROL RGB默认色彩空间]  — 默认RGB颜色配置文件的名称
    * [!UICONTROL 颜色转换渲染意图]  — 指定渲染意图。 可接受的值为 `perceptual`, `relative` `colometric`, `saturation`和 `absolute colometric`. Adobe建议 `relative` 作为默认设置。
 
-1. 点按&#x200B;**[!UICONTROL 保存]**。
+1. 点按 **[!UICONTROL 保存]**.
 
 例如，可以将 **[!UICONTROL RGB 默认色彩空间]**&#x200B;设置为 `sRGB`，将 **[!UICONTROL CMYK 默认色彩空间]**&#x200B;设置为 `WebCoated`。
 
@@ -222,7 +226,7 @@ Dynamic Media色彩管理允许您对资产进行颜色校正。 通过颜色校
 * 将Adobe Illustrator文件(.AI)或Adobe Photoshop封装的PostScript®文件(.EPS)栅格化。
 * [视频配置文件](/help/assets/video-profiles.md) 和 [图像配置文件](/help/assets/image-profiles.md) 可以分别用于定义视频和图像的处理。
 
-请参阅[上传资产](managing-assets-touch-ui.md#uploading-assets)。
+请参阅 [上传资产](managing-assets-touch-ui.md#uploading-assets).
 
 **要编辑支持格式的mime类型，请执行以下操作：**
 
@@ -520,7 +524,7 @@ Granite传输工作流队列用于 **[!UICONTROL DAM更新资产]** 工作流。
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. 点按&#x200B;**[!UICONTROL 保存]**。
+1. 点按 **[!UICONTROL 保存]**.
 
 #### 更新Granite工作流队列 {#updating-the-granite-workflow-queue}
 
@@ -542,7 +546,7 @@ Granite工作流队列用于非临时工作流。 在Dynamic Media中，它使�
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-1. 点按&#x200B;**[!UICONTROL 保存]**。
+1. 点按 **[!UICONTROL 保存]**.
 
 #### 更新Scene7上传连接 {#updating-the-scene-upload-connection}
 
@@ -561,7 +565,7 @@ Scene7上传连接设置可将Experience Manager Assets同步到Dynamic Media Cl
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. 点按&#x200B;**[!UICONTROL 保存]**。
+1. 点按 **[!UICONTROL 保存]**.
 
 ### （可选）筛选用于复制的资产 {#optional-filtering-assets-for-replication}
 

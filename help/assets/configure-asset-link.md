@@ -4,15 +4,19 @@ description: 配置Experience Manager Assets以与Adobe资产链接扩展一起�
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-source-git-commit: 227b929c7eecb4fa65f5c50fffc5d9ed802411e1
+exl-id: 6d9a954f-433d-41ec-9bb9-45e857890aba
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3135'
+source-wordcount: '3171'
 ht-degree: 1%
 
 ---
 
-
 # 为Adobe资产链接配置Experience Manager Assets {#adobe-asset-link}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 [Adobe资产链接(AAL)](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html) 简化了内容创建过程中创意人员与营销人员之间的协作。 它可将Adobe Experience Manager Assets与Creative Cloud桌面应用程序Adobe InDesign、Adobe Photoshop和Adobe Illustrator关联。 通过Adobe资产链接面板，创意人员无需离开他们最熟悉的创意应用程序即可访问和修改存储在AEM Assets中的内容。
 
@@ -34,7 +38,7 @@ ht-degree: 1%
 |--- |--- |
 | 资产链接默认有效 | Experience Manager6.4.4和6.4.6或更高版本。 </br> Adobe建议安装最新版本 [Experience Manager服务包(SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) 使用AAL之前。 |
 | 资产链接在安装包后可正常工作 | 对于Experience Manager6.4.0 - 6.4.3，请安装 [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) 包。 |
-| Adobe Stock 集成 | Experience Manager6.4.2或更高版本 |
+| Adobe Stock集成 | Experience Manager6.4.2或更高版本 |
 | 可视或相似度搜索 | NA |
 
 
@@ -291,12 +295,7 @@ Experience Manager提供仅用于放置(FPO)的演绎版。 这些FPO呈现文�
 
 >[!MORELIKETHIS]
 >
->* [关于 Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [关于 Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
 >* [在Creative Cloud桌面应用程序中使用资产链接并管理资产](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [配置Adobe Experience Manager Assetsas a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-
-
-
-
-
+>* [配置Adobe Experience Manager Assetsas a Cloud Service](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html).
 

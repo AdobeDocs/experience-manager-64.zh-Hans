@@ -1,24 +1,28 @@
 ---
-title: '在电子邮件通知中使用元数据 '
-seo-title: '在电子邮件通知中使用元数据 '
+title: 在电子邮件通知中使用元数据
+seo-title: Use metadata in an email notification
 description: 使用元数据在表单工作流电子邮件通知中填充信息
-seo-description: 使用元数据在表单工作流电子邮件通知中填充信息
+seo-description: Use metadata to populate information in a forms workflow email notification
 uuid: 17e018c9-6bf8-4042-bba9-4ebe449304ac
 topic-tags: publish
 discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
 exl-id: 248c5adf-23e9-463f-9f29-869ae2426c22
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '938'
 ht-degree: 1%
 
 ---
 
-# 在电子邮件通知{#use-metadata-in-an-email-notification}中使用元数据
+# 在电子邮件通知中使用元数据  {#use-metadata-in-an-email-notification}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 使用元数据在表单工作流电子邮件通知中填充信息
 
-您可以使用“分配任务”步骤创建任务并将任务分配给用户或组。 将任务分配给用户或组后，将向定义的用户或定义组的每个成员发送电子邮件通知。 典型的[电子邮件通知](/help/forms/using/use-custom-email-template-assign-task-step.md)包含已分配任务的链接以及与任务相关的信息。
+您可以使用“分配任务”步骤创建任务并将任务分配给用户或组。 将任务分配给用户或组后，将向定义的用户或定义组的每个成员发送电子邮件通知。 典型的 [电子邮件通知](/help/forms/using/use-custom-email-template-assign-task-step.md) 包含已分配任务的链接以及与任务相关的信息。
 
 您可以在电子邮件模板中使用元数据动态填充电子邮件通知中的信息。 例如，在运行时（生成电子邮件通知时）会动态选择以下电子邮件通知中的标题、描述、到期日期、优先级、工作流和最后日期的值。
 
@@ -97,7 +101,7 @@ message=<html><body>\n\
 </html>\n\
 ```
 
-## 在电子邮件通知{#using-system-generated-metadata-in-an-email-notification}中使用系统生成的元数据
+## 在电子邮件通知中使用系统生成的元数据 {#using-system-generated-metadata-in-an-email-notification}
 
 AEM Forms应用程序提供了一些开箱即用的元数据变量（键值对）。 您可以在电子邮件模板中使用这些变量。 变量的值基于关联的表单应用程序。 下表列出了所有现成可用的元数据变量：
 
@@ -150,15 +154,15 @@ AEM Forms应用程序提供了一些开箱即用的元数据变量（键值对�
  </tbody> 
 </table>
 
-## 在电子邮件通知{#using-custom-metadata-in-an-email-notification}中使用自定义元数据
+## 在电子邮件通知中使用自定义元数据 {#using-custom-metadata-in-an-email-notification}
 
 您还可以在电子邮件通知中使用自定义元数据。 自定义元数据除包含系统生成的元数据之外，还包含其他信息。 例如，从数据库检索的策略详细信息。 您可以使用ECMAScript或OSGi包在crx-repository中添加自定义元数据：
 
-### 使用ECMAScript添加自定义元数据{#use-ecmascript-to-add-custom-metadata}
+### 使用ECMAScript添加自定义元数据  {#use-ecmascript-to-add-custom-metadata}
 
-[](https://en.wikipedia.org/wiki/ECMAScript) ECMAScriptis是一种脚本语言。它用于客户端脚本和服务器应用程序。 执行以下步骤以使用ECMAScript为电子邮件模板添加自定义元数据：
+[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) 是一种脚本语言。 它用于客户端脚本和服务器应用程序。 执行以下步骤以使用ECMAScript为电子邮件模板添加自定义元数据：
 
-1. 使用管理帐户登录到CRX DE。 URL为`https://[server]:[port]/crx/de/index.jsp`
+1. 使用管理帐户登录到CRX DE。 URL为 `https://[server]:[port]/crx/de/index.jsp`
 
 1. 导航到/apps/fd/dashboard/scripts/metadataScripts。 创建扩展名为.ecma的文件。 例如， usermetadata.ecma
 
@@ -186,20 +190,20 @@ AEM Forms应用程序提供了一些开箱即用的元数据变量（键值对�
 
    如果未指定标题，“自定义元数据”字段将显示ECMAScript文件的完整路径。 执行以下步骤为脚本指定有意义的标题：
 
-   1. 展开脚本节点，右键单击&#x200B;**[!UICONTROL jcr:content]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL Mixins]**。
-   1. 在“编辑混合”对话框中键入mix:title ，然后单击&#x200B;**+**。
+   1. 展开脚本节点，右键单击 **[!UICONTROL jcr:content]** 节点，然后单击 **[!UICONTROL 混合]**.
+   1. 在“编辑混合”对话框中键入mix:title ，然后单击 **+**.
    1. 添加具有以下值的属性。
 
       | 名称 | jcr:title |
       |---|---|
       | 类型 | 字符串 |
-      | 值 | 指定脚本的标题。 例如，策略持有者的自定义元数据。 指定的值显示在分配任务步骤中。 |
+      | 价值 | 指定脚本的标题。 例如，策略持有者的自定义元数据。 指定的值显示在分配任务步骤中。 |
 
-### 使用OSGi包和Java接口添加自定义元数据{#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### 使用OSGi包和Java界面添加自定义元数据 {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
 您可以使用WorkitemUserMetadataService Java界面为电子邮件模板添加自定义元数据。 您可以创建使用WorkitemUserMetadataService Java界面的OSGi包，并将其部署到AEM Forms服务器。 它使元数据可供在分配任务步骤中进行选择。
 
-要使用Java界面创建OSGi包，请将[AEM Forms客户端SDK](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) jar和[granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)文件添加为OSGi包项目的外部依赖项。 可以使用任何Java IDE创建OSGi包。 以下过程提供了使用Eclipse创建OSGi包的步骤：
+要使用Java界面创建OSGi包，请添加 [AEM Forms客户端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 罐子 [花岗岩](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 文件作为OSGi包项目的外部依赖项。 可以使用任何Java IDE创建OSGi包。 以下过程提供了使用Eclipse创建OSGi包的步骤：
 
 1. 打开Eclipse IDE。 导航到文件>新建项目。
 

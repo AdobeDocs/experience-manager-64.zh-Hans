@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: a69ff832-7955-4b10-b47f-287ac385b786
 exl-id: e330a8e8-4d55-4723-921b-812cb243f420
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 0%
+source-wordcount: '1580'
+ht-degree: 3%
 
 ---
 
 # 创建和管理自适应表单的A/B测试 {#create-and-manage-a-b-test-for-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview-br}
 
@@ -34,31 +38,31 @@ AEM Forms与Adobe Marketing Cloud解决方案Adobe Target集成，以跨多个�
 
 要将AEM与Target集成，请确保您拥有有效的Adobe Target帐户。 在Adobe Target注册后，您会收到一个客户端代码。 您需要客户端代码、与Target帐户关联的电子邮件以及将AEM与Target连接的密码。
 
-客户端代码可标识Adobe Target客户帐户，并在调用Adobe Target服务器时在URL中用作子域。 在继续操作之前，请登录到[https://experience.adobe.com/](https://experience.adobe.com/)，如果您有权访问，请查看[!UICONTROL 快速访问]部分中的[!DNL Adobe Target]选项。
+客户端代码可标识Adobe Target客户帐户，并在调用Adobe Target服务器时在URL中用作子域。 继续之前，请登录到 [https://experience.adobe.com/](https://experience.adobe.com/) 如果您有权访问，请查看 [!DNL Adobe Target] 选项 [!UICONTROL 快速访问] 中。
 
 ### 在AEM Forms中集成Target {#integrate-target-in-aem-forms}
 
 执行以下步骤，将正在运行的Target服务器与AEM Forms集成：
 
-1. 在AEM服务器上，转到https://*hostname*>:*port*>/libs/cq/core/content/tools/cloudservices.html。
-1. 在&#x200B;**Adobe Target**&#x200B;部分中，单击&#x200B;**显示配置**，然后单击&#x200B;**+**&#x200B;图标以添加新配置。
+1. 在AEM服务器上，转到https://&lt;*主机名*>:&lt;*端口*>/libs/cq/core/content/tools/cloudservices.html。
+1. 在 **Adobe Target** ，单击 **显示配置** 然后 **+** 图标以添加新配置。
 
-   如果您是首次配置target，请单击&#x200B;**Configure Now**。
+   如果您是首次配置target，请单击 **立即配置**.
 
-1. 在创建配置对话框中，为配置指定&#x200B;**标题**&#x200B;和可选的&#x200B;**名称**。
+1. 在创建配置对话框中，指定 **标题** （可选） **名称** ，以用于配置。
 1. 单击&#x200B;**创建**。此时将打开编辑组件对话框。
 1. 指定您的Target帐户详细信息，如客户端代码、电子邮件和密码。
-1. 从“API类型”下拉列表中选择&#x200B;**Rest**。
-1. 单击&#x200B;**连接到Adobe Target**&#x200B;以初始化与Target的连接。 如果连接成功，则会显示“连接成功”消息。 在消息上单击&#x200B;**OK**，然后在对话框上单击&#x200B;**OK**。 Target帐户已配置。
-1. 按照[Add a framework](/help/sites-administering/target.md)中所述创建Target框架。
-1. 转到https://*hostname*>:*port*>/system/console/configMgr。
-1. 单击&#x200B;**AEM Forms Target配置**。
-1. 选择&#x200B;**目标框架**。
-1. 在&#x200B;**目标URL**&#x200B;字段中，指定将运行A/B测试的所有URL。 例如， https://*hostname*>:&lt;*端口*>/(适用于OSGi上的AEM Forms服务器)或https://&lt;*主机名*>:*端口*>/lc/(适用于JEE上的AEM Forms服务器)。
+1. 选择 **Rest** 从“API类型”下拉列表中。
+1. 单击&#x200B;**连接到 Adobe Target** 可初始化与 Target 的连接。如果连接成功，则将显示消息连接成功。单击消息上的&#x200B;**确定**，然后单击对话框上的&#x200B;**确定**。Target帐户已配置。
+1. 按照 [添加框架](/help/sites-administering/target.md).
+1. 转到https://&lt;*主机名*>:&lt;*端口*>/system/console/configMgr。
+1. 单击 **AEM Forms Target配置**.
+1. 选择 **Target框架**.
+1. 在 **目标URL** 字段中，指定将运行A/B测试的所有URL。 例如， https://&lt;*主机名*>:&lt;*端口*>/ for AEM Forms server on OSGi或https://&lt;*主机名*>:&lt;*端口*>/lc/，用于JEE上的AEM Forms服务器。
 
-   假定您要为发布实例配置Target URL，并且客户可以使用主机名或IP地址访问该URL，则您需要同时配置为Target URL — 使用主机名和IP地址。 如果您仅配置其中一个URL，则不会为来自其他URL的客户运行A/B测试。 单击&#x200B;**+**&#x200B;以指定多个URL。
+   假定您要为发布实例配置Target URL，并且客户可以使用主机名或IP地址访问该URL，则您需要同时配置为Target URL — 使用主机名和IP地址。 如果您仅配置其中一个URL，则不会为来自其他URL的客户运行A/B测试。 单击 **+** 以指定多个URL。
 
-1. 单击&#x200B;**保存**。
+1. 单击“**保存**”。
 
 您的Target服务器已与AEM Forms集成。 现在，如果您拥有使用Adobe Target的完整许可证，则可以启用A/B测试。
 
@@ -66,7 +70,7 @@ AEM Forms与Adobe Marketing Cloud解决方案Adobe Target集成，以跨多个�
 
 `parameter -Dabtesting.enabled=true java -Xmx2048m -XX:MaxPermSize=512M -jar -Dabtesting.enabled=true`
 
-如果AEM实例在JBoss上运行，从`jboss\bin\standalone.conf.bat`文件的整套服务中启动，请在以下条目中添加 — Dabtesting.enabled=true参数：
+如果AEM实例在JBoss上运行，则在 `jboss\bin\standalone.conf.bat` 文件中，添加 — Dabtesting.enabled=true参数：
 
 `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
@@ -74,22 +78,22 @@ AEM Forms与Adobe Marketing Cloud解决方案Adobe Target集成，以跨多个�
 
 >[!NOTE]
 >
->如果您稍后更新配置的Target URL，请确保更新任何正在运行的A/B测试，以便它们指向当前URL。 有关更新A/B测试的信息，请参阅[更新A/B测试](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p)。
+>如果您稍后更新配置的Target URL，请确保更新任何正在运行的A/B测试，以便它们指向当前URL。 有关更新A/B测试的信息，请参阅 [更新A/B测试](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
 
 ## 在AEM中创建受众 {#create-audiences-within-aem}
 
 AEM允许您创建受众，并将其用于A/B测试。 您在AEM中创建的受众在AEM Forms中可用。 执行以下步骤以在AEM中创建受众：
 
-1. 在创作实例中，点按&#x200B;**Adobe Experience Manager** > **个性化** > **受众**。
+1. 在创作实例中，点按 **Adobe Experience Manager** > **个性化** > **受众**.
 
-1. 在“受众”页面中，点按&#x200B;**创建受众>创建目标受众**。
-1. 在Adobe Target配置对话框中，选择Target配置，然后单击&#x200B;**确定**。
+1. 在受众页面中，点按 **创建受众>创建目标受众**.
+1. 在Adobe Target配置对话框中，选择Target配置并单击 **确定**.
 1. 在创建新受众页面中，创建规则。 规则允许您对受众进行分类。 例如，您要根据操作系统对受众进行分类。 受众A来自Windows，受众B来自Linux。
 
-   * 要根据Windows对受众进行分类，请在规则#1中，选择&#x200B;**OS**&#x200B;属性类型。 从时间下拉菜单中，选择&#x200B;**Windows**。
-   * 要根据Linux对受众进行分类，请在规则#2中，选择&#x200B;**OS**&#x200B;属性类型。 从“When（时间）”下拉菜单中，选择&#x200B;**Linux**，然后单击&#x200B;**Next**。
+   * 要根据Windows对受众进行分类，请在规则#1中，选择 **操作系统** 属性类型。 从时间下拉菜单中，选择 **Windows**.
+   * 要根据Linux对受众进行分类，请在规则#2中，选择 **操作系统** 属性类型。 从时间下拉菜单中，选择 **Linux**，然后单击 **下一个**.
 
-1. 指定已创建受众的名称，然后单击&#x200B;**保存**。
+1. 指定创建的受众的名称，然后单击 **保存**.
 
 在为表单配置A/B测试时，您可以选择受众，如下所示。
 
@@ -97,21 +101,21 @@ AEM允许您创建受众，并将其用于A/B测试。 您在AEM中创建的受�
 
 执行以下步骤为自适应表单创建A/B测试。
 
-1. 转到&#x200B;**Forms &amp; Documents**(https://*hostname*>):*port*>/aem/forms.html/content/dam/formsanddocuments。
+1. 转到 **Forms和文档** https://&lt;*主机名*>:&lt;*端口*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. 导航到包含自适应表单的文件夹。
-1. 单击工具栏中的&#x200B;**选择**&#x200B;工具，然后选择自适应表单。
-1. 单击工具栏中的&#x200B;**更多**，然后选择&#x200B;**配置A/B测试**。 此时会打开配置A/B测试页面。
+1. 单击 **选择** 工具，然后选择自适应表单。
+1. 单击 **更多** 在工具栏中，选择 **配置A/B测试**. 此时会打开配置A/B测试页面。
 
 [ ](assets/ab-test-configure-1.png)
 
-1. 为A/B测试指定&#x200B;**活动名称**。
+1. 指定 **活动名称** A/B测试。
 
-1. 从“受众”下拉列表中，选择您要向其提供表单不同体验的受众。 例如，使用Chrome的&#x200B;**访客**。 受众列表由配置的Target服务器填充。
+1. 从“受众”下拉列表中，选择您要向其提供表单不同体验的受众。 例如， **使用Chrome的访客**. 受众列表由配置的Target服务器填充。
 
-1. 在体验A和B的&#x200B;**体验分发**&#x200B;字段中，以百分比形式指定分发，以确定体验在总受众中的分发。 例如，如果您为体验A和B分别指定40、60，则体验A将提供给40%的受众，其余60%的受众将看到体验B。
-1. 单击&#x200B;**配置**。 将显示一个对话框，确认创建A/B测试。
-1. 单击&#x200B;**编辑体验B**&#x200B;以在编辑模式下打开自适应表单。 修改表单以创建与默认体验A不同的体验。体验B中允许的可能变体包括：
+1. 在 **Experience Distribution** 体验A和B的字段中，以百分比形式指定分布，以确定体验在总受众中的分布。 例如，如果您为体验A和B分别指定40、60，则体验A将提供给40%的受众，其余60%的受众将看到体验B。
+1. 单击 **配置**. 将显示一个对话框，确认创建A/B测试。
+1. 单击 **编辑体验B** 以在编辑模式下打开自适应表单。 修改表单以创建与默认体验A不同的体验。体验B中允许的可能变体包括：
 
    * CSS或样式
    * 不同面板或同一面板中的字段顺序
@@ -122,7 +126,7 @@ AEM允许您创建受众，并将其用于A/B测试。 您在AEM中创建的受�
    * 验证（客户端和服务器端）
    * 体验B的主题。（您可以为体验B选择替代主题）
 
-1. 转到Forms和文档UI，选择自适应表单，单击&#x200B;**更多**，然后选择&#x200B;**启动A/B测试**。
+1. 转到Forms和文档UI，选择自适应表单，单击 **更多**，然后选择 **开始A/B测试**.
 
 您的A/B测试现在正在运行，并且将根据指定的分发随机向指定的受众提供体验。
 
@@ -132,22 +136,22 @@ AEM允许您创建受众，并将其用于A/B测试。 您在AEM中创建的受�
 
 1. 在Forms和文档UI中，导航到包含运行A/B测试的自适应表单的文件夹。
 1. 选择自适应表单。
-1. 单击&#x200B;**更多**，然后选择&#x200B;**编辑A/B测试**。 此时会打开更新A/B测试页面。
+1. 单击 **更多** 然后选择 **编辑A/B测试**. 此时会打开更新A/B测试页面。
 
 1. 根据需要更新受众和体验分发。
-1. 单击&#x200B;**Update**。
+1. 单击&#x200B;**更新**。
 
 ## 查看和分析A/B测试报告 {#view-and-analyze-a-b-test-report}
 
 在允许A/B测试在所需的时间段内运行后，您可以生成报表并检查哪个体验改善了转化。 您可以将性能较好的体验声明为入选者，或选择运行另一个A/B测试。 为此，请执行以下步骤：
 
-1. 选择自适应表单，单击&#x200B;**更多**，然后单击&#x200B;**A/B测试报表**。 随即会显示报表。
+1. 选择自适应表单，单击 **更多**，然后单击 **A/B测试报告**. 随即会显示报表。
 
 [ ](assets/ab-test-report-1.png)
 
 1. 分析报表，并查看您是否有足够的数据点来声明哪个体验的入选效果最好。 您可以选择继续同一A/B测试更长时间，或声明入选者并结束A/B测试。
-1. 要声明入选者并结束A/B测试，请单击报表仪表板上的&#x200B;**结束A/B测试**&#x200B;按钮。 出现一个对话框，提示您将两个体验之一声明为入选者。 选择一个入选者并确认结束A/B测试。
+1. 要声明入选者并结束A/B测试，请单击 **结束A/B测试** 按钮。 出现一个对话框，提示您将两个体验之一声明为入选者。 选择一个入选者并确认结束A/B测试。
 
-   或者，您也可以先通过单击相应体验的&#x200B;**声明入选者**&#x200B;按钮来声明入选者。 它会提示您确认入选者。 单击&#x200B;**Yes**&#x200B;以结束A/B测试。
+   或者，您也可以先通过单击 **声明入选者** 按钮。 它会提示您确认入选者。 单击 **是** 结束A/B测试。
 
 如果您选择体验A作为入选者，则A/B测试将结束，并且今后，只会向所有受众提供体验A。

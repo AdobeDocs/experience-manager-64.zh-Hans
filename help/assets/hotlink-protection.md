@@ -12,17 +12,21 @@ discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 exl-id: 9e27d45e-1d72-4663-a2c5-2ec48f2b23c4
 feature: Asset Management
 role: Admin,User
-source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 7%
+source-wordcount: '205'
+ht-degree: 11%
 
 ---
 
 # 在 Dynamic Media 中激活热链接保护 {#activating-hotlink-protection-in-dynamic-media}
 
-热链接是指第三方网站使用HTML代码显示您网站中的图像。 每次请求图片时，他们都会使用您的带宽，因为访客的浏览器直接从您的服务器访问图片。 热链接&#x200B;*protection*&#x200B;是一种方法，用于阻止其他网站直接链接到您网页上的图片、CSS或JavaScript。 这种防护措施有助于减少您的Dynamic Media帐户下不必要的带宽使用。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-[Adobe客](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) 户支持可以在CDN级别配置反向链接过滤器，以便仅将Dynamic Media内容提供给域中允许网站列表上的网站。
+热链接是指第三方网站使用HTML代码显示您网站中的图像。 每次请求图片时，他们都会使用您的带宽，因为访客的浏览器直接从您的服务器访问图片。 热链接 *保护* 是一种方法，用于阻止其他网站直接链接到您网页上的图片、CSS或JavaScript。 这种防护措施有助于减少您的Dynamic Media帐户下不必要的带宽使用。
+
+[Adobe客户支持](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) 可以在CDN级别配置反向链接过滤器，以便Dynamic Media内容仅提供给域允许网站列表上的网站。
 
 热链接保护要求您使用Adobe的捆绑CDN。 要激活热链接保护，管理员必须创建支持票证以请求对您的Dynamic Media帐户进行配置更改。 激活热链接保护无需额外费用。

@@ -2,14 +2,18 @@
 title: Adobe内容包Maven插件
 description: 使用内容包Maven插件部署AEM应用程序
 exl-id: 106a677b-7c89-4fbc-bb96-eaa3dfa71b58
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 9%
+source-wordcount: '193'
+ht-degree: 10%
 
 ---
 
 # Adobe内容包Maven插件 {#adobe-content-package-maven-plugin}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 使用Adobe内容包Maven插件将包部署和管理任务集成到您的Maven项目中。
 

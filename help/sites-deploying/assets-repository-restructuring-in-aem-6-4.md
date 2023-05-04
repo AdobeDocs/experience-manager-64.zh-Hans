@@ -10,16 +10,20 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: Upgrading
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1149'
 ht-degree: 2%
 
 ---
 
 # AEM 6.4中的资产存储库重组{#assets-repository-restructuring-in-aem}
 
-如AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的父[存储库重组页面中所述，升级到AEM 6.4的客户应使用此页面评估与影响AEM Assets解决方案的存储库更改相关的工作量。 某些更改在AEM 6.4升级过程中需要工作，而其他更改可能会推迟到6.5升级。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+如父项中所述 [AEM 6.4中的存储库重组](/help/sites-deploying/repository-restructuring.md) 页面，升级到AEM 6.4的客户应使用此页面来评估与影响AEM Assets解决方案的存储库更改相关的工作量。 某些更改在AEM 6.4升级过程中需要工作，而其他更改可能会推迟到6.5升级。
 
 **升级6.4版**
 
@@ -80,13 +84,13 @@ ht-degree: 2%
    <td><strong>重组指导</strong></td> 
    <td><p>如果客户修改了电子邮件模板，请执行以下操作以便与新存储库结构保持一致：</p> 
     <ol> 
-     <li><code>/libs/settings/dam/notification</code>电子邮件模板应从<strong><code>/etc/notification/email/default</code></strong>复制到<strong><code>/apps/settings/notification/email/default</code></strong> 
+     <li>的 <code>/libs/settings/dam/notification</code> 电子邮件模板应从 <strong><code>/etc/notification/email/default</code></strong> to <strong><code>/apps/settings/notification/email/default</code></strong> 
       <ol> 
-       <li>由于目标位于<strong> <code>/apps</code></strong>中，因此应在SCM中保留此更改。</li> 
+       <li>因为目标位于<strong> <code>/apps</code></strong> 应在SCM中保留此更改。</li> 
       </ol> </li> 
-     <li>删除文件夹：<strong><code>/etc/dam/notification/email/default</code></strong>。<br /> 
+     <li>删除文件夹： <strong><code>/etc/dam/notification/email/default</code></strong> 电子邮件模板之后。<br /> 
       <ol> 
-       <li>如果未对<strong> <code>/etc/notification/email/default</code></strong>下的电子邮件模板进行任何更新，则可以删除该文件夹，因为作为AEM 6.4安装的一部分，原始电子邮件模板位于<strong><code>/libs/settings/notification/email/default</code></strong>下。</li> 
+       <li>如果未对<strong> <code>/etc/notification/email/default</code></strong>，则由于原始电子邮件模板位于下，因此可以删除该文件夹 <strong><code>/libs/settings/notification/email/default</code></strong> 作为AEM 6.4安装的一部分。</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
@@ -113,12 +117,12 @@ ht-degree: 2%
    <td><strong>重组指导</strong></td> 
    <td><p>对于在SCM中管理且未在运行时通过设计对话框写入的任何设计，请执行以下操作以与最新型号保持一致：</p> 
     <ol> 
-     <li>将设计从“上一位置”复制到<code>/apps</code>下的“新位置”。</li> 
-     <li>将设计中的任何CSS、JavaScript和静态资源转换为具有<code>allowProxy = true</code>的<a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a>。</li> 
-     <li>通过<strong>AEM &gt; DAM管理员&gt;资产共享页面&gt;页面属性&gt;高级选项卡&gt;设计字段</strong>更新对<code>cq:designPath</code>属性中上一位置的引用。</li> 
+     <li>将设计从“上一位置”复制到 <code>/apps</code>.</li> 
+     <li>将设计中的任何CSS、JavaScript和静态资源转换为 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a> with <code>allowProxy = true</code>.</li> 
+     <li>更新对 <code>cq:designPath</code> 属性通过 <strong>AEM &gt; DAM管理员&gt;资产共享页面&gt;页面属性&gt;高级选项卡&gt;设计字段</strong>.</li> 
      <li>更新引用“上一位置”的任何页面以使用新的“客户端库”类别。 这需要更新页面实施代码。</li> 
-     <li>更新Dispatcher规则，以允许通过<code>/etc.clientlibs/</code>代理Servlet提供客户端库。</li> 
-    </ol> <p>对于任何未在SCM中管理的设计，以及通过设计对话框修改的运行时，请勿将可授权设计移出<code>/etc</code>。</p> </td> 
+     <li>更新Dispatcher规则，以允许通过 <code>/etc.clientlibs/</code> 代理servlet。</li> 
+    </ol> <p>对于任何未在SCM中管理的设计，以及通过设计对话框修改的运行时，请勿将可授权设计移出 <code>/etc</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>注释</strong></td> 
@@ -141,21 +145,21 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td><strong>重组指导</strong></td> 
-   <td><p>如果电子邮件模板（<strong>downloadasset</strong>或<strong>transientworkflowcompleted</strong>）已修改，请按照以下步骤与新结构保持一致：</p> 
+   <td><p>如果电子邮件模板(<strong>下载资产</strong> 或 <strong>transitworkflowcompleted</strong>)进行了修改，然后按照以下过程与新结构保持一致：</p> 
     <ol> 
-     <li>更新的电子邮件模板应从<strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong>复制到<strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong> 
+     <li>更新的电子邮件模板应从 <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> to <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong> 
       <ol> 
-       <li>由于目标位于<strong> <code>/apps</code></strong>中，因此应在SCM中保留此更改。</li> 
+       <li>因为目标位于<strong> <code>/apps</code></strong> 应在SCM中保留此更改。</li> 
       </ol> </li> 
-     <li>删除文件夹：<code>/etc/dam/workflow/notification/email/downloadasset </code>在电子邮件模板中移动后。<br /> 
+     <li>删除文件夹： <code>/etc/dam/workflow/notification/email/downloadasset </code>电子邮件模板之后。<br /> 
       <ol> 
-       <li>如果未对<strong> <code>/etc</code></strong>下的电子邮件模板进行任何更新，则可以删除该文件夹，因为作为AEM 6.4安装的一部分，原始电子邮件模板位于<strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong>下。</li> 
+       <li>如果未对<strong> <code>/etc</code></strong>，则由于原始电子邮件模板位于下，因此可以删除该文件夹 <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> 作为AEM 6.4安装的一部分。</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td><strong>注释</strong></td> 
-   <td>虽然在技术上支持<code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>进行查找（优先于/apps通过常规的Sling CAConfig查找，但在<code>/etc</code>之后），模板可以放置在<code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>中。 但是，不建议这样做，因为没有运行时UI来促进电子邮件模板的编辑。</td> 
+   <td>While <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> 在技术上支持查找(优先于通过常规Sling CAConfig查找的/apps，但优先于 <code>/etc</code>)可以将模板放置在 <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. 但是，不建议这样做，因为没有运行时UI来促进电子邮件模板的编辑。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -184,19 +188,19 @@ ht-degree: 2%
    <td><strong>重组指导</strong></td> 
    <td><p>如果客户修改了电子邮件模板，则要与新的存储库结构保持一致：</p> 
     <ol> 
-     <li>更新的电子邮件模板应从<strong><code>/etc/dam/adhocassetshare</code></strong>复制到<strong><code>/apps/settings/dam/adhocassetshare</code></strong> 
+     <li>更新的电子邮件模板应从 <strong><code>/etc/dam/adhocassetshare</code></strong> to <strong><code>/apps/settings/dam/adhocassetshare</code></strong> 
       <ol> 
-       <li>由于目标位于<strong> <code>/apps</code></strong>中，因此应在SCM中保留此更改。</li> 
+       <li>因为目标位于<strong> <code>/apps</code></strong> 应在SCM中保留此更改。</li> 
       </ol> </li> 
-     <li>删除文件夹：<strong><code>/etc/dam/adhocassetshare</code></strong>。<br /> 
+     <li>删除文件夹： <strong><code>/etc/dam/adhocassetshare</code></strong> 电子邮件模板之后。<br /> 
       <ol> 
-       <li>如果未对<strong> <code>/etc</code></strong>下的电子邮件模板进行任何更新，则可以删除该文件夹，因为作为AEM 6.4安装的一部分，原始电子邮件模板位于<strong><code>/libs/settings/dam/adhocassetshare</code></strong>下。</li> 
+       <li>如果未对<strong> <code>/etc</code></strong>，则由于原始电子邮件模板位于下，因此可以删除该文件夹 <strong><code>/libs/settings/dam/adhocassetshare</code></strong> 作为AEM 6.4安装的一部分。</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td><strong>注释</strong></td> 
-   <td>虽然在技术上支持<code>/conf/global/settings/dam/adhocassetshare</code>进行查找（它优先于通过常规的Sling CAConfig查找在<code>/apps</code>之前，但在<code>/etc</code>之后），但模板可以放置在<code>/conf/global/settings/dam/adhocassetshare</code>中。 但是，不建议这样做，因为没有运行时UI来便于编辑电子邮件模板</td> 
+   <td>While <code>/conf/global/settings/dam/adhocassetshare</code> 在技术上支持查找(优先于 <code>/apps</code> ，但在 <code>/etc</code>)，则模板可以放置在 <code>/conf/global/settings/dam/adhocassetshare</code>. 但是，不建议这样做，因为没有运行时UI来便于编辑电子邮件模板</td> 
   </tr> 
  </tbody> 
 </table>
@@ -217,20 +221,20 @@ ht-degree: 2%
    <td><strong>重组指导</strong></td> 
    <td><p>要与新的存储库结构保持一致，请执行以下操作：</p> 
     <ol> 
-     <li>将所有自定义或修改的脚本从<strong><code>/etc/dam/indesign/scripts</code></strong>复制到<strong><code>/apps/settings/dam/indesign/scripts</code></strong><br /> 
+     <li>从以下位置复制所有自定义或修改的脚本 <strong><code>/etc/dam/indesign/scripts</code></strong> to <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br /> 
       <ol> 
-       <li>只有作为AEM提供的未修改脚本复制新的或已修改的脚本，才能通过AEM 6.4中的<strong><code>/libs/settings</code></strong>获取</li> 
+       <li>只有作为AEM提供的未修改脚本复制新的或已修改的脚本，才能通过 <strong><code>/libs/settings</code></strong> 在AEM 6.4中</li> 
       </ol> </li> 
      <li>找到使用媒体提取流程WF步骤的所有工作流模型和 
       <ol> 
-       <li>对于工作流步骤的每个实例，更新配置中的路径，以根据需要明确指向<strong> <code>/apps/settings/dam/indesign/scripts</code></strong>或<strong><code>/libs/settings/dam/indesign/scripts</code></strong>下的正确脚本。</li> 
+       <li>对于工作流步骤的每个实例，更新配置中的路径，以明确指向<strong> <code>/apps/settings/dam/indesign/scripts</code></strong> 或 <strong><code>/libs/settings/dam/indesign/scripts</code></strong> 酌情。</li> 
       </ol> </li> 
-     <li>完全删除<strong> <code>/etc/dam/indesign/scripts</code></strong>。</li> 
+     <li>删除<strong> <code>/etc/dam/indesign/scripts</code></strong> 完全。</li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td><strong>注释</strong></td> 
-   <td>建议将自定义脚本存储在<code>/apps</code>下，因为这是应存储代码的位置。</td> 
+   <td>建议将自定义脚本存储在 <code>/apps</code>，因为这是应存储代码的位置。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -249,9 +253,9 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td><strong>重组指导</strong></td> 
-   <td><p>需要在相应的<code>/apps</code>或<code>/conf</code>路径下剪切并粘贴项目级别的自定义设置。</p> <p>要与AEM 6.4存储库结构保持一致，请执行以下操作：</p> 
+   <td><p>需要剪切并粘贴项目级别的自定义项，这些自定义项位于对等项下 <code>/apps</code> 或 <code>/conf</code> 路径（如果适用）。</p> <p>要与AEM 6.4存储库结构保持一致，请执行以下操作：</p> 
     <ol> 
-     <li>将任何已修改的视频配置从<code>/etc/dam/video</code>复制到 <code>/apps/settings/dam/video</code></li> 
+     <li>从以下位置复制任何修改的视频配置 <code>/etc/dam/video</code> to <code>/apps/settings/dam/video</code></li> 
      <li>删除 <code>/etc/dam/video</code></li> 
     </ol> </td> 
   </tr> 
@@ -278,9 +282,9 @@ ht-degree: 2%
    <td><strong>重组指导</strong></td> 
    <td><p>对于开箱即用的查看器预设，该查看器预设将仅在新位置中可用。</p> <p>对于自定义查看器预设：</p> 
     <ul> 
-     <li>您必须运行迁移脚本才能将节点从<code>/etc</code>移动到<code>/conf</code>。 脚本位于<em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
+     <li>您必须运行迁移脚本才能将节点从 <code>/etc</code> to <code>/conf</code>. 脚本位于 <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
      <li>或者，您也可以编辑配置，这些配置将自动保存到新位置。</li> 
-    </ul> <p>请注意，您不必调整其copyURL/embed代码即可指向<code>/conf</code>。 对<code>/etc</code>的现有请求将被重新路由到<code>/conf</code>中的正确内容。</p> </td> 
+    </ul> <p>请注意，您不必调整其copyURL/嵌入代码即可指向 <code>/conf</code>. 对 <code>/etc</code> 将被重新路由到 <code>/conf</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>注释</strong></td> 
@@ -303,7 +307,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td><strong>重组指导</strong></td> 
-   <td><p>使用<code>/etc.clientlibs/</code>允许代理前缀调整任何引用以指向<code>/libs</code>下的新资源。</p> <p>最后，通过从中删除迁移的clientlib的文件夹来进行清理 <code>/etc/clientlibs/foundation/</code></p> </td> 
+   <td><p>调整任何参照，以指向 <code>/libs</code> 使用 <code>/etc.clientlibs/</code> 允许代理前缀。</p> <p>最后，通过从中删除迁移的clientlib的文件夹来进行清理 <code>/etc/clientlibs/foundation/</code></p> </td> 
   </tr> 
   <tr> 
    <td><strong>注释</strong></td> 

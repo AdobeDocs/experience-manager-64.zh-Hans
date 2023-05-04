@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3460'
+source-wordcount: '3496'
 ht-degree: 0%
 
 ---
 
 # OSGi配置设置{#osgi-configuration-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 [OSGi](https://www.osgi.org/) 是AEM技术堆栈中的一个基本元素。 它用于控制AEM的复合包及其配置。
 

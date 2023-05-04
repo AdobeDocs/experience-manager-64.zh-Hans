@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 exl-id: b77d0e6b-3005-4dba-8e88-70b4d04b1eba
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 1%
+source-wordcount: '571'
+ht-degree: 2%
 
 ---
 
 # 在We.Retail中试用核心组件{#trying-out-core-components-in-we-retail}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 核心组件是现代的灵活组件，具有轻松的扩展性，并允许将简单集成到项目中。 核心组件是围绕几项主要设计原则构建的，这些原则包括HTL、可用性、现成可配置性、版本控制和可扩展性。 We.Retail已基于核心组件构建。
 

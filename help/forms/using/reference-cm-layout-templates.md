@@ -1,7 +1,7 @@
 ---
 title: 参考信模板
 seo-title: Reference letter templates
-description: 'AEM Forms提供了通信管理信件布局模板，您可以使用这些模板快速创建信件。 '
+description: AEM Forms提供了通信管理信件布局模板，您可以使用这些模板快速创建信件。
 seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -9,20 +9,24 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 exl-id: 319db420-3318-4ef7-be2b-1ff2b1c08563
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '508'
 ht-degree: 1%
 
 ---
 
 # 参考信模板 {#reference-letter-templates}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 在“通信管理”中，信件模板包含典型的表单字段、页眉和页脚等布局功能以及用于内容放置的空“目标区域”。
 
-通信管理在AEM Forms包[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)中提供信件模板。 有关安装包的信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。 您可以根据品牌和业务需求在Designer中自定义模板。 该包包含以下模板：
+通信管理在AEM Forms包中提供信件模板 [AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). 有关安装包的信息，请参阅 [如何使用包](/help/sites-administering/package-manager.md). 您可以根据品牌和业务需求在Designer中自定义模板。 该包包含以下模板：
 
-* 经典
+* Classic
 * 经典Simple
 * 平衡左
 * 平衡权
@@ -45,13 +49,13 @@ ht-degree: 1%
 
 安装AEM-FORMS.-6.3-REFERENCE-LAYOUT-TEMPLATES包后，模板将列在templates-folder中
 
-## 经典 {#classic}
+## Classic {#classic}
 
 Classic模板顶部带有徽标，适合用于普通专业信件。
 
-![经典](assets/classic.png)
+![classic](assets/classic.png)
 
-使用经典模板创建的信件的PDF预览
+PDF预览使用经典模板创建的信件
 
 ## 经典Simple {#classic-simple}
 
@@ -59,7 +63,7 @@ Classic模板顶部带有徽标，适合用于普通专业信件。
 
 ![联系信息片段](assets/classicsimple.png)
 
-使用经典简单模板创建的信件的PDF预览
+PDF预览使用经典简单模板创建的信件
 
 ## 平衡左 {#balanced-left}
 
@@ -67,7 +71,7 @@ Classic模板顶部带有徽标，适合用于普通专业信件。
 
 ![平衡左](assets/balancedleft.png)
 
-使用“平衡的左侧”模板创建的信件的PDF预览
+PDF预览使用“平衡的左侧”模板创建的信件
 
 ## 平衡权 {#balanced-right}
 
@@ -75,7 +79,7 @@ Classic模板顶部带有徽标，适合用于普通专业信件。
 
 ![平衡](assets/balancedright.png)
 
-使用平衡右侧模板创建的信件的PDF预览
+PDF预览使用平衡右侧模板创建的信件
 
 ## 左视 {#visual-left}
 
@@ -83,7 +87,7 @@ Classic模板顶部带有徽标，适合用于普通专业信件。
 
 ![visualleft](assets/visualleft.png)
 
-使用可视化左侧模板创建的信件的PDF预览
+PDF预览使用可视化左侧模板创建的信件
 
 ## 可视顶部 {#visual-top}
 
@@ -91,7 +95,7 @@ Classic模板顶部带有徽标，适合用于普通专业信件。
 
 ![可视化图表](assets/visualtop.png)
 
-使用可视化顶部模板创建的信件的PDF预览
+PDF预览使用可视化顶部模板创建的信件
 
 ## Visual Top - Classic {#visual-top-classic}
 
@@ -99,4 +103,4 @@ Visual Top - Classic模板在页面顶部有一个标题，且其中带有公司
 
 ![visualtopclassic](assets/visualtopclassic.png)
 
-使用Visual Top - Classic模板创建的信件的PDF预览
+PDF预览使用Visual Top - Classic模板创建的信件

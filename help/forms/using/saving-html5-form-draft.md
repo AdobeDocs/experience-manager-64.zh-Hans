@@ -1,38 +1,42 @@
 ---
 title: 将HTML5表单另存为草稿
-seo-title: 将HTML5表单另存为草稿
-description: 将HTML5表单另存为草稿，然后在稍后阶段继续填写表单。
-seo-description: 将HTML5表单另存为草稿，然后在稍后阶段继续填写表单。
+seo-title: Saving an HTML5 form as a draft
+description: 将HTML5表单另存为草稿，然后在以后的阶段继续填写表单。
+seo-description: Save an HTML5 form as a draft and resume filling the form at a later stage.
 uuid: 70cd5f6f-f125-470c-8cee-ee14d2127713
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
-feature: 移动设备表单
+feature: Mobile Forms
 exl-id: 8e4ffda9-ea92-4abc-8746-5d1852e4599b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 5%
+source-wordcount: '336'
+ht-degree: 6%
 
 ---
 
-# 将HTML5表单另存为草稿{#saving-an-html-form-as-a-draft}
+# 将HTML5表单另存为草稿 {#saving-an-html-form-as-a-draft}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 您可以将HTML5表单另存为草稿，然后在以后的阶段继续填写表单。 Forms Portal允许任何用户保存和恢复HTML5表单。 要启用另存为草稿功能，请将以下配置添加到配置文件节点：
 
-## 允许“另存为草稿”功能{#custom-profile-to-allow-save-as-draft-feature}的自定义配置文件
+## 允许“另存为草稿”功能的自定义配置文件 {#custom-profile-to-allow-save-as-draft-feature}
 
-AEM Forms现成提供一个&#x200B;**另存为草稿**&#x200B;配置文件。 您可以渲染具有另存为草稿配置文件的表单，以启用HTML5表单的草稿功能。 您可以在[Forms Manager](/help/forms/using/introduction-managing-forms.md)中为表单指定HTML呈现配置文件。
+开箱即用，AEM Forms提供 **另存为草稿** 配置文件。 您可以渲染具有另存为草稿配置文件的表单，以为HTML5表单启用草稿功能。 您可以在中为表单指定HTML渲染配置文件 [Forms Manager](/help/forms/using/introduction-managing-forms.md).
 
-要为现有[自定义配置文件](/help/forms/using/custom-profile.md)启用另存为草稿功能，请将以下属性添加到自定义配置文件节点：
+为现有的 [自定义用户档案](/help/forms/using/custom-profile.md)，将以下属性添加到自定义配置文件节点：
 
 <table> 
  <tbody> 
   <tr> 
    <td><strong>属性名称</strong></td> 
    <td><strong>类型</strong></td> 
-   <td><strong>值</strong></td> 
+   <td><strong>价值</strong></td> 
    <td><strong>描述</strong></td> 
   </tr> 
   <tr> 
@@ -50,9 +54,9 @@ AEM Forms现成提供一个&#x200B;**另存为草稿**&#x200B;配置文件。 �
  </tbody> 
 </table>
 
-## 草稿存储和列表{#drafts-storage-and-listing}
+## 草稿存储和列表 {#drafts-storage-and-listing}
 
-为表单启用另存为草稿功能后；保存表单后，它会列在[草稿和提交组件](/help/forms/using/draft-submission-component.md)中。 您可以从草稿和提交组件中检索并开始填写已保存的表单。
+为表单启用另存为草稿功能后；保存表单后，该表单将列在 [草稿和提交组件](/help/forms/using/draft-submission-component.md). 您可以从草稿和提交组件中检索并开始填写已保存的表单。
 
 要为草稿和提交组件启用表单列表，请将以下属性添加到配置文件节点：
 
@@ -61,16 +65,16 @@ AEM Forms现成提供一个&#x200B;**另存为草稿**&#x200B;配置文件。 �
   <tr> 
    <td><strong>属性名称</strong></td> 
    <td><strong>类型</strong></td> 
-   <td><strong>值</strong></td> 
+   <td><strong>价值</strong></td> 
    <td><strong>描述</strong></td> 
   </tr> 
   <tr> 
    <td>fp.enablePortalSubmit</td> 
    <td>字符串</td> 
    <td>true</td> 
-   <td>使草稿和表单在提交后列在<br />Forms Portal的“草稿和提交”组件中</td> 
+   <td>启用要在<br /> Forms Portal提交后的草稿和提交组件</td> 
   </tr> 
  </tbody> 
 </table>
 
-默认情况下，AEM Forms会将与表单的草稿和提交相关联的用户数据存储在Publish实例的/content/forms/fp节点中。 您可以添加自定义存储提供程序，有关详细信息，请参阅[草稿和提交组件的自定义存储](/help/forms/using/adding-custom-storage-provider-forms.md)。
+默认情况下，AEM Forms会将与表单的草稿和提交相关联的用户数据存储在Publish实例的/content/forms/fp节点中。 您可以添加自定义存储提供程序，有关详细信息，请参阅 [草稿和提交组件的自定义存储](/help/forms/using/adding-custom-storage-provider-forms.md).

@@ -1,8 +1,8 @@
 ---
 title: 凭据服务Java API快速启动(SOAP)
-seo-title: 凭据服务Java API快速启动(SOAP)
+seo-title: Credential Service Java API QuickStart(SOAP)
 description: 使用凭据服务Java API导入和删除凭据。
-seo-description: 使用凭据服务Java API导入和删除凭据。
+seo-description: Use the Credential Service Java API to import and delete credentials.
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 role: Developer
 exl-id: a81b2360-9d17-46c7-9443-51b366b0724a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 0%
+source-wordcount: '260'
+ht-degree: 1%
 
 ---
 
-# 凭据服务Java API快速入门(SOAP){#credential-service-java-api-quickstart-soap}
+# 凭据服务Java API快速入门(SOAP) {#credential-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 Java API快速入门(SOAP)可用于凭据服务。
 
@@ -30,15 +34,15 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->“使用AEM表单进行编程”中的快速入门基于JBoss和Windows操作系统上部署的FormsServer。 但是，如果您使用的是其他操作系统（如Unix），请将特定于Windows的路径替换为适用操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>“使用AEM表单进行编程”中的快速入门基于JBoss和Windows操作系统上部署的FormsServer。 但是，如果您使用的是其他操作系统（如Unix），请将特定于Windows的路径替换为适用操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
 >无法使用Web服务执行凭据服务操作。
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-importing-credentials-using-the-java-api}导入凭据
+## 快速入门（SOAP模式）：使用Java API导入凭据 {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-以下代码示例根据名为&#x200B;*cred.p12*&#x200B;的文件导入凭据。 用于导入凭据的别名值为`Secure`。 （请参阅[使用信任管理器API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)导入凭据。）
+以下代码示例导入基于名为 *cred.p12*. 用于导入凭据的别名值为 `Secure`. (请参阅 [使用信任管理器API导入凭据](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```as3
  /* 
@@ -137,9 +141,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}删除凭据
+## 快速入门（SOAP模式）：使用Java API删除凭据 {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-以下代码示例基于别名值&#x200B;*secure*&#x200B;删除凭据。 （请参阅[使用信任管理器API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api)删除凭据。）
+以下代码示例基于别名值删除凭据 *安全*. (请参阅 [使用信任管理器API删除凭据](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```as3
  /* 

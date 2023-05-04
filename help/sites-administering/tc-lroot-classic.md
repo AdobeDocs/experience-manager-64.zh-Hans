@@ -1,32 +1,36 @@
 ---
 title: 使用经典UI创建语言根
-seo-title: 使用经典UI创建语言根
+seo-title: Creating a Language Root Using the Classic UI
 description: 了解如何使用经典UI创建语言根。
-seo-description: 了解如何使用经典UI创建语言根。
+seo-description: Learn how to create a language root using the Classic UI.
 uuid: d44a51a0-1507-4838-851c-cacff48ad825
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
-feature: 语言复制
+feature: Language Copy
 exl-id: 316903a8-22cf-45e6-a9f3-ac1d75beddec
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 2%
+source-wordcount: '352'
+ht-degree: 1%
 
 ---
 
 # 使用经典UI创建语言根{#creating-a-language-root-using-the-classic-ui}
 
-以下过程使用经典UI创建站点的语言根。 有关更多信息，请参阅[创建语言根](/help/sites-administering/tc-prep.md#creating-a-language-root)。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+以下过程使用经典UI创建站点的语言根。 有关更多信息，请参阅 [创建语言根](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. 在网站控制台的网站树中，选择站点的根页面。 ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. 添加表示网站语言版本的新子页面：
 
    1. 单击新建>新建页面。
-   1. 在对话框中，指定标题和名称。 名称的格式必须为`<language-code>`或`<language-code>_<country-code>`，例如en、en_US、en_us、en_GB、en_gb。
+   1. 在对话框中，指定标题和名称。 名称的格式必须为 `<language-code>` 或 `<language-code>_<country-code>`，例如en_US、en_us、en_GB、en_gb。
 
       * 支持的语言代码为小写，由ISO-639-1定义的双字母代码
       * 受支持的国家/地区代码为小写或大写，由ISO 3166定义的双字母代码

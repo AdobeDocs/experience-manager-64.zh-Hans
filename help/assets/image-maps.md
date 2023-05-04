@@ -2,52 +2,56 @@
 title: 添加图像映射
 description: 了解如何将超链接的图像映射添加到图像资产。
 contentOwner: AG
-feature: 资产管理
+feature: Asset Management
 role: User,Admin
 exl-id: d6b04891-12d3-4255-a156-2e9000474fd1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 0%
+source-wordcount: '324'
+ht-degree: 1%
 
 ---
 
 # 添加图像映射 {#adding-image-maps}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 了解如何将超链接的图像映射添加到图像资产。
 
 图像映射允许您添加一个或多个与其他超链接功能类似的超链接区域。
 
-1. 执行以下任一操作以打开&#x200B;**[!UICONTROL 就地图像编辑器]**:
+1. 执行以下任一操作以打开 **[!UICONTROL 就地图像编辑器]**:
 
-   * 使用快速操作，点按&#x200B;**[!UICONTROL 卡片]**&#x200B;视图中资产上显示的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标。 在列表视图中，选择资产，然后点按工具栏中的&#x200B;**编辑**&#x200B;图标。
+   * 使用快速操作，点按 **[!UICONTROL 编辑]** 图标 **[!UICONTROL 卡片]** 中。 在列表视图中，选择资产，然后点按 **编辑** 图标。
 
       >[!NOTE]
       >
-      >快速操作在&#x200B;**[!UICONTROL 列表]**&#x200B;视图中不可用。
+      >快速操作在 **[!UICONTROL 列表]** 中。
 
-   * 在&#x200B;**[!UICONTROL 卡片]**&#x200B;或&#x200B;**[!UICONTROL 列表]**&#x200B;视图中，选择资产，然后点按工具栏上的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标。
-   * 点按资产页面中的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标。
+   * 在 **[!UICONTROL 卡片]** 或 **[!UICONTROL 列表]** 查看，选择资产并点按 **[!UICONTROL 编辑]** 图标。
+   * 点按 **[!UICONTROL 编辑]** 图标。
 
       ![chlimage_1-420](assets/chlimage_1-420.png)
 
-1. 要插入图像映射，请点按工具栏中的&#x200B;**[!UICONTROL 启动映射]**&#x200B;图标。
+1. 要插入图像映射，请点按 **[!UICONTROL 启动映射]** 图标。
 
    ![chlimage_1-421](assets/chlimage_1-421.png)
 
-1. 选择图像映射的形状。 所选形状的热点将放置在图像上。
+1. 选择图像映射的形状。 所选形状的热点位于图像上。
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. 点按热点，然后输入URL和替换文本。 从&#x200B;**[!UICONTROL Target]**&#x200B;列表中，指定您希望在何处显示图像映射，例如同一选项卡、新选项卡或iFrame。 例如，输入`https://www.adobe.com`作为URL，输入`Adobe website`作为替换文本，并从&#x200B;**[!UICONTROL Target]**&#x200B;列表中指定&#x200B;**[!UICONTROL 新选项卡]** ，以便在新选项卡中打开图像映射。
+1. 点按热点，然后输入URL和替换文本。 从 **[!UICONTROL Target]** 列表中，指定您希望显示图像映射的位置，例如同一选项卡、新选项卡或iFrame。 例如，输入 `https://www.adobe.com` 作为URL， `Adobe website` 替换为替换文本，并指定 **[!UICONTROL 新建选项卡]** 从 **[!UICONTROL Target]** 列表，以便在新选项卡中打开图像映射。
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. 点按&#x200B;**[!UICONTROL Confirm]**&#x200B;图标，然后点按工具栏中的&#x200B;**[!UICONTROL 完成]**&#x200B;图标以保存更改。
+1. 点按 **[!UICONTROL 确认]** 图标，然后点按 **[!UICONTROL 完成]** 图标以保存更改。
 
    ![chlimage_1-424](assets/chlimage_1-424.png)
 
-   要删除图像映射，请点按热点，然后点按&#x200B;**[!UICONTROL 删除]**&#x200B;图标。
+   要删除图像映射，请点按热点，然后点按 **[!UICONTROL 删除]** 图标。
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
@@ -55,4 +59,4 @@ ht-degree: 0%
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   如果启用了Dynamic Media选项，请导航到资产编辑器，然后点按&#x200B;**[!UICONTROL 映射]**&#x200B;图标以查看所有应用的图像映射。
+   如果启用了Dynamic Media选项，请导航到资产编辑器，然后点按 **[!UICONTROL 地图]** 图标以查看所有应用的图像映射。

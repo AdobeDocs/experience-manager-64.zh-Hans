@@ -10,14 +10,18 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3350bb2d-78a7-45e2-9816-0277a40d3986
 exl-id: f55a774e-db41-465e-843c-a876a4f14997
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1237'
 ht-degree: 5%
 
 ---
 
 # 针对目标内容进行开发{#developing-for-targeted-content}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本节介绍有关开发与内容定位一起使用的组件的主题。
 
@@ -220,7 +224,7 @@ JSP会将所需的Analytics Javascript对象和引用添加到客户端Javascrip
 
 * 名称: `cq:disableTargeting`
 * 类型: `Boolean`
-* 值: `True`
+* 价值: `True`
 
 例如，要禁用Geometrixx演示网站页面标题组件的定位，请将属性添加到 `/apps/geometrixx/components/title/cq:editConfig` 节点。
 

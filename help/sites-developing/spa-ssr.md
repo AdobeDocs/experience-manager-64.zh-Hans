@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-source-git-commit: 199ee2b38cbffc2b97e0fd3c25d828a7e5718bf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1807'
 ht-degree: 2%
 
 ---
 
 # SPA和服务器端渲染{#spa-and-server-side-rendering}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >单页应用程序(SPA)编辑器功能需要 [AEM 6.4 service pack 2](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/sp-release-notes.html) 或更新版本。
@@ -190,7 +194,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 必须按照部分中的所述配置默认处理程序 [远程内容渲染器配置](#remote-content-renderer-configuration).
 
-### 远程内容渲染器使用情况 {#usage}
+###远程内容渲染器使用情况 {#usage}
 
 要让Servlet获取并返回一些可插入页面的内容，请执行以下操作：
 

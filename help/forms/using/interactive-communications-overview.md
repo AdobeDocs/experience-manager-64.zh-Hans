@@ -1,22 +1,26 @@
 ---
 title: 交互式通信概述
-seo-title: 交互式通信概述
+seo-title: Interactive Communications Overview
 description: 本文包括概述、示例用例、创建工作流，以及交互式通信和信件之间的差异。
-seo-description: 交互式通信关键功能、示例用例、创建工作流，以及交互式通信和通信管理之间的差异
+seo-description: Interactive Communication key capabilities, sample use cases, creation workflow, and differences between Interactive Communication and Correspondence Management
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 386fc8b2-c92d-4731-8445-1bb6af54fd98
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 5%
+source-wordcount: '542'
+ht-degree: 6%
 
 ---
 
-# 交互式通信概述{#interactive-communications-overview}
+# 交互式通信概述 {#interactive-communications-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本文包括概述、示例用例、创建工作流，以及交互式通信和信件之间的差异。
 
@@ -24,7 +28,7 @@ ht-degree: 5%
 
 交互式通信可以集中管理安全、个性化和交互式信函的创建、编排和交付，例如商务信函、文档、声明、福利通知、营销邮件、账单和欢迎资料包。
 
-## 关键功能{#key-capabilities}
+## 关键功能 {#key-capabilities}
 
 以下是交互式通信的关键功能：
 
@@ -35,32 +39,32 @@ ht-degree: 5%
 * 代理用户界面显示交互式通信的打印和Web预览
 * 拖放组件以快速构建打印和Web渠道
 
-## 示例用例{#sample-use-case}
+## 示例用例 {#sample-use-case}
 
-信用卡客户[欢迎工具包](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough)示例用例展示了交互式通信的功能。
+的 [信用卡客户欢迎工具包](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) 示例用例展示了交互式通信的功能。
 
-## 交互式通信创建{#interactive-communication-creation}
+## 交互式通信创建  {#interactive-communication-creation}
 
 ![interactive_communication-01](assets/interactive_communication-01.jpg)
 
 ### 工作流 {#workflow}
 
-要创建交互式通信，请准备好[用于交互式通信的构建基块](#buildingblocks)，然后完成以下步骤：
+要创建交互式通信，请使用 [构件](#buildingblocks) ，然后完成以下步骤：
 
-1. 选择[创建交互式通信](/help/forms/using/create-interactive-communication.md)。
+1. 选择 [创建交互式通信](/help/forms/using/create-interactive-communication.md).
 
-1. 指定[表单数据模型](/help/forms/using/data-integration.md)、预填充服务以及[打印和Web渠道模板](/help/forms/using/web-channel-print-channel.md)。 您可以选择从打印渠道生成Web渠道。
+1. 指定 [表单数据模型](/help/forms/using/data-integration.md)、预填充服务和 [打印和Web渠道模板](/help/forms/using/web-channel-print-channel.md). 您可以选择从打印渠道生成Web渠道。
 
-1. 使用[拖放界面](/help/forms/using/introduction-interactive-communication-authoring.md)，根据需要添加要打印的文档片段、图像、组件和交互式通信的Web渠道。
+1. 使用 [拖放界面](/help/forms/using/introduction-interactive-communication-authoring.md)，根据需要添加要打印的文档片段、图像、组件和交互式通信的Web渠道。
 1. 为插入的组件配置属性，如下所示：
 
    1. 图像
-   1. [表](/help/forms/using/create-interactive-communication.md#tables) （包括布局片段）
+   1. [表格](/help/forms/using/create-interactive-communication.md#tables) （包括布局片段）
    1. [图表](/help/forms/using/chart-component-interactive-communications.md)
    1. [文档片段](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. 预览打印和Web渠道，并根据需要编辑交互式通信。
-1. 代理使用代理UI来准备交互式通信](/help/forms/using/prepare-send-interactive-communication.md)，以将其发送到收件人/后处理。[
+1. 代理使用代理UI [准备交互式通信](/help/forms/using/prepare-send-interactive-communication.md) ，以将其发送到收件人/帖子进程。
 
 ### 构建基块 {#buildingblocks}
 
@@ -70,11 +74,11 @@ ht-degree: 5%
 * [打印和Web渠道模板](/help/forms/using/web-channel-print-channel.md)
 * [文档片段](/help/forms/using/document-fragments.md)
 * 图像
-* [](/help/forms/using/themes.md) Web渠道主题
+* [主题](/help/forms/using/themes.md) （对于Web渠道）
 
-## 交互式通信与通信管理{#interactive-communications-vs-correspondence-management}
+## 交互式通信与通信管理 {#interactive-communications-vs-correspondence-management}
 
-交互式通信是创建客户通信的默认和推荐方法。 要继续使用在AEM 6.3 Forms和AEM 6.2 Forms中创建的字母，您需要[安装兼容包](/help/forms/using/compatibility-package.md)。 以下是交互式通信和信件功能的比较。
+交互式通信是创建客户通信的默认和推荐方法。 要继续使用在AEM 6.3 Forms和AEM 6.2 Forms中创建的字母，您需要 [安装兼容包](/help/forms/using/compatibility-package.md). 以下是交互式通信和信件功能的比较。
 
 <table> 
  <tbody>
@@ -89,7 +93,7 @@ ht-degree: 5%
    <td>打印</td> 
   </tr>
   <tr>
-   <td>架构</td> 
+   <td>Schema</td> 
    <td>表单数据模型 </td> 
    <td>数据字典 </td> 
   </tr>

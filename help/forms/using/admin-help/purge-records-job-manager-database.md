@@ -1,8 +1,8 @@
 ---
 title: 从作业管理器数据库中清除记录
-seo-title: 从作业管理器数据库中清除记录
+seo-title: Purge records from the Job Manager database
 description: 大流程数据可能会降低AEM表单性能。 最好在不再需要记录时清除流程数据。
-seo-description: 大流程数据可能会降低AEM表单性能。 最好在不再需要记录时清除流程数据。
+seo-description: Large process data can result in lower AEM forms performance. It is good practice to purge process data when records are no longer necessary.
 uuid: cf214498-36e9-4dcc-b4d4-e7c46f80dbab
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,22 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 exl-id: be2e2a4b-5aac-4612-81b6-b4bbb3036d77
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---
 
-# 从作业管理器数据库{#purge-records-from-the-job-manager-database}中清除记录
+# 从作业管理器数据库中清除记录 {#purge-records-from-the-job-manager-database}
 
-在调用长生命周期进程时生成的进程数据可能会过大，从而降低AEM表单性能并使用不必要的磁盘空间。 最好在不再需要记录时清除流程数据。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-您可以使用管理控制台执行一次性清除过时记录，或计划定期自动清除。 [清除流程数据](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)中讨论了清除过时记录的其他方法。
+在调用长生命周期进程时生成的进程数据可能会变得过大，从而降低AEM表单性能并使用不必要的磁盘空间。 最好在不再需要记录时清除流程数据。
+
+您可以使用管理控制台执行一次性清除过时记录，或计划定期自动清除。 清除过时记录的其他方法在 [清除流程数据](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
 **访问“作业清除调度程序”页**
 
@@ -54,7 +58,7 @@ ht-degree: 0%
 **配置自动清除计划**
 
 1. 选择“重复间隔”，并指定两次清除之间间隔的天数或周数。
-1. 在“清除已完成的记录筛选器”区域中，指定记录被视为已过时并准备清除的天数或周数。 不能将值设置为`0`。
+1. 在“清除已完成的记录筛选器”区域中，指定记录被视为已过时并准备清除的天数或周数。 您无法将值设置为 `0`.
 
    >[!NOTE]
    >

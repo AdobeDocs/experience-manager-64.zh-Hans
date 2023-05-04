@@ -9,22 +9,26 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: Image Presets
 role: Admin,User
-source-git-commit: 78e187855845046071bc7f22cd7d491d48568336
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3835'
-ht-degree: 24%
+source-wordcount: '3871'
+ht-degree: 7%
 
 ---
 
 # 管理Dynamic Media图像预设 {#managing-image-presets}
 
-图像预设使AEM Assets能够动态地传送不同大小、不同格式或具有其他动态生成的图像属性的图像。 每个图像预设都代表一组预定义的大小调整和格式设置命令，以用于显示图像。在创建图像预设时，您需要选择图像传送的大小。此外，还需要选择格式设置命令，以确保传送供查看的图像时，显示优化的图像外观。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-管理员可以创建用于导出资产的预设。在导出图像时，用户可以选择预设，此操作也将调整图像的格式，使其符合管理员指定的规范。
+图像预设使AEM Assets能够动态地传送不同大小、不同格式或具有其他动态生成的图像属性的图像。 每个图像预设都代表一组预定义的大小调整和格式设置命令，用于显示图像。 在创建图像预设时，您可以选择图像交付的大小。 您还可以选择格式设置命令，以便在传送图像以供查看时优化图像的外观。
 
-您还可以创建响应式图像预设。如果对资产应用响应式图像预设，则资产会根据查看资产时所使用的设备或屏幕大小而相应发生更改。除了“RGB”或“灰色”之外，您还可以将图像预设配置为在色彩空间中使用CMYK。
+管理员可以创建用于导出资产的预设。 用户在导出图像时可以选择预设，这也会按照管理员指定的规范来重新设置图像的格式。
 
-本节将介绍如何创建、修改和通常管理图像预设。 无论您何时预览图像，都可以对图像应用图像预设。请参阅 [应用图像预设](image-presets.md).
+您还可以创建响应式图像预设。 如果您将响应式图像预设应用于资产，则资产会根据查看资产时所使用的设备或屏幕大小而发生更改。 除了“RGB”或“灰色”之外，您还可以将图像预设配置为在色彩空间中使用CMYK。
+
+本节将介绍如何创建、修改和通常管理图像预设。 无论您何时预览图像，都可以将图像预设应用到图像。 请参阅 [应用图像预设](image-presets.md).
 
 >[!NOTE]
 >
@@ -32,13 +36,13 @@ ht-degree: 24%
 
 ## 了解Dynamic Media图像预设 {#understanding-image-presets}
 
-与软件宏一样，图像预设是一组预定义的大小调整和格式设置命令，这些命令以名称保存。 为了解图像预设的工作方式，假定您的网站要求每个产品图像在桌面设备和移动设备上传送时均以不同的大小和格式显示。
+与软件宏一样，图像预设是一组预定义的大小调整和格式设置命令，这些命令以名称保存。 为了了解图像预设的工作方式，假定您的网站要求每个产品图像在桌面和移动设备交付中以不同的大小、不同格式和压缩率显示。
 
-您可以创建两个图像预设：一个适用于桌面版的500 x 500像素，而适用于移动版的150 x 150像素。您可以创建两个图像预设，一个称为 *放大* 以500x500像素显示图像，称为 *缩略图* 以150 x 150像素显示图像。要传送大图和缩略图大小的图像，AEM会查找“放大图像预设”和“缩略图图像预设”的定义。 然后，AEM 会根据每种“图像预设”的尺寸和格式规范，动态地生成相应的图像。
+您可以创建两个图像预设：一个适用于桌面版的500 x 500像素，而适用于移动版的150 x 150像素。 您可以创建两个图像预设，一个称为 *放大* 以500x500像素显示图像，称为 *缩略图* 以150 x 150像素显示图像。 要传送大图和缩略图大小的图像，AEM会查找“放大图像预设”和“缩略图图像预设”的定义。 然后，AEM会根据每个图像预设的大小和格式规范动态生成图像。
 
-如果图像在动态传送时大小大幅缩减，图像可能会丢失锐化和细节。由于这一原因，每个图像预设中都包含格式控制，以在传送图像时将其优化为特定大小。这些控制可确保图像在传送到网站或应用程序时具有锐化、清晰的效果。
+如果图像在动态传送时大小减小，则图像可能会丢失锐化和细节。 因此，每个图像预设都包含格式控件，用于在以特定大小传送图像时优化图像。 这些控件可确保在将图像传送到您的网站或应用程序时，图像清晰明了。
 
-管理员可以创建图像预设。要创建图像预设，您可以从头开始创建，也可以通过现有图像预设创建，然后使用新名称对其保存。
+管理员可以创建图像预设。 要创建图像预设，您可以从头开始，也可以从现有图像预设开始，然后使用新名称保存。
 
 ## 管理Dynamic Media图像预设 {#managing-image-presets-1}
 
@@ -79,7 +83,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
 
 1. 在 **[!UICONTROL DAM更新资产]** 工作流， **[!UICONTROL 栅格化PDF/AI图像预览呈现版本]** 流程组件使用配置的分辨率将原始资产的第一页栅格化为 `cqdam.preview.png` 演绎版。
 
-1. 的 `cqdam.preview.png` 然后，演绎版将由 **[!UICONTROL Dynamic Media处理图像资产]** 工作流中的流程组件。
+1. 的 `cqdam.preview.png` 然后，演绎版会由 **[!UICONTROL Dynamic Media处理图像资产]** 工作流中的流程组件。
 
 >[!NOTE]
 >
@@ -116,12 +120,12 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
   </tr> 
   <tr> 
    <td>最大宽度</td>
-   <td>2048年</td>
+   <td>2048</td>
    <td>生成的预览呈现版本的最大宽度（以像素为单位）。<br/> </td>
   </tr> 
   <tr> 
    <td>最大高度</td>
-   <td>2048年</td>
+   <td>2048</td>
    <td>生成的预览呈现版本的最大高度（以像素为单位）。<br/> </td>
   </tr> 
   <tr> 
@@ -235,7 +239,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
 
 >[!NOTE]
 >
->如果您使用Internet Explorer 9，则创建的预设在保存后不会立即显示在预设列表中。 要解决此问题，请禁用 IE9 的缓存。
+>如果您使用Internet Explorer 9，则创建的预设在保存后不会立即显示在预设列表中。 要解决此问题，请禁用IE9的缓存。
 
 如果您打算支持摄取AI、PDF和EPS文件，以便生成这些文件格式的动态呈现版本，则可能需要在创建图像预设之前查看以下信息。\
 请参阅 [Adobe Illustrator(AI)、Postscript(EPS)和PDF文件格式](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
@@ -250,7 +254,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
 
 1. 在AEM中，点按AEM徽标以访问全局导航控制台。
 1. 点按 **[!UICONTROL 工具]** 图标，然后导航到 **[!UICONTROL 资产>图像预设]**.
-1. 点按&#x200B;**[!UICONTROL 创建]**。
+1. 点按 **[!UICONTROL 创建]**.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -262,19 +266,19 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
 
    ![chlimage_1-497](assets/chlimage_1-497.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 单击“**[!UICONTROL 保存]**”。
 
 ### 创建响应式图像预设 {#creating-a-responsive-image-preset}
 
-要创建响应式图像预设，请执行[创建图像预设](#creating-image-presets)中的步骤。在&#x200B;**[!UICONTROL 编辑图像预设]**&#x200B;窗口中输入高度和宽度时，请清除这两个字段的值，并将其保留为空。
+要创建响应式图像预设，请执行 [创建图像预设](#creating-image-presets). 在 **[!UICONTROL 编辑图像预设]** 窗口中，拭除这些值并将其留空。
 
-将这两个字段保留为空就是告诉 AEM 此图像预设为响应式。您可以视需要调整其他值。
+将它们留空会告知AEM此图像预设是响应式的。 您可以根据需要调整其他值。
 
 ![chlimage_1-498](assets/chlimage_1-498.png)
 
 >[!NOTE]
 >
->要在将图像预设应用到资产时显示 **[!UICONTROL URL]** 和 **[!UICONTROL RESS]** 按钮，必须先发布资产。
+>为了查看 **[!UICONTROL URL]** 和 **[!UICONTROL RESS]** 按钮时，必须发布资产。
 >
 >在Dynamic Media - Scene7模式下，图像预设和图像资产会自动发布。
 >
@@ -282,13 +286,13 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
 
 ### “图像预设”选项 {#image-preset-options}
 
-在创建或编辑图像预设时，您可以使用本节介绍的几种选项。此外，Adobe还建议使用以下三个 *最佳实践* 选项选择开始：
+创建或编辑图像预设时，您可以使用此部分中描述的选项。 此外，Adobe还建议使用以下三个 *最佳实践* 选项选择开始：
 
-* **[!UICONTROL 格式]** (**[!UICONTROL 基本]** 选项卡) — 选择 **[!UICONTROL JPEG]** 或其他符合您要求的格式。所有Web浏览器都支持JPEG图像格式；它可以在小文件大小和图像质量之间实现良好的平衡。但是，JPEG格式图像使用有损压缩方案，如果压缩设置太低，则该压缩方案可能会引入不需要的图像伪影。 因此，Adobe 建议将压缩质量设置为 75。此设置在图像质量和小文件大小之间提供了良好的平衡。
+* **[!UICONTROL 格式]** (**[!UICONTROL 基本]** 选项卡) — 选择 **[!UICONTROL JPEG]** 或其他符合您要求的格式。 所有 Web 浏览器都支持 JPEG 图像格式；它可以在小文件大小和图像质量之间实现良好的平衡。但是，JPEG 格式图像使用有损压缩方案，如果压缩设置太低，则会引入不需要的图像伪影。因此，Adobe 建议将压缩质量设置为 75。此设置在图像质量和小文件大小之间提供了良好的平衡。
 * **[!UICONTROL 启用简单锐化]**  — 不选择 **[!UICONTROL 启用简单锐化]** （此锐化滤镜提供的控件比“USM锐化”设置少。）
 * **[!UICONTROL 锐化：重新取样模式]**  — 选择 **[!UICONTROL 锐化2]**.
 
-#### “基本”选项卡选项 {#basic-tab-options}
+#### 基本选项卡选项 {#basic-tab-options}
 
 <table> 
  <tbody> 
@@ -298,43 +302,49 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
   </tr> 
   <tr> 
    <td><strong>名称</strong></td>
-   <td>输入一个描述性名称，不加任何空格。在名称中包含图像大小规格可帮助用户识别此图像预设。</td>
+   <td>请输入一个描述性名称，且不含任何空格。在名称中包含图像大小规格可帮助用户识别此图像预设。</td>
   </tr>
   <tr> 
    <td><strong>宽度和高度</strong></td>
-   <td>输入传送图像时所用的像素大小。宽度和高度必须大于 0 像素。如果任一值为 0，则无法创建预设。如果两个值均为空，则表示已经创建了响应式图像预设。</td>
+   <td>输入传送图像的大小（以像素为单位）。 宽度和高度必须大于0像素。 如果任一值为0，则不会创建预设。 如果两个值均为空，则会创建响应式图像预设。</td>
   </tr> 
   <tr> 
    <td><strong>格式</strong></td>
-   <td><p>从菜单中选择一个格式。</p> <p>选择 <strong>JPEG</strong> 可提供以下更多选项。</p>
+   <td><p>从菜单中选择格式。</p> <p>选择 <strong>JPEG</strong> 提供了以下其他选项：</p>
     <ul> 
-     <li><strong>质量</strong>  — 控制JPEG压缩级别。此设置会影响文件大小和图像质量。JPEG质量比例为1-100。拖动滑块时，比例可见。</li> 
-     <li><strong>启用JPG色度缩减采样</strong>  — 由于眼睛对高频颜色信息的敏感程度低于高频亮度，JPEG图像将图像信息分为亮度和颜色分量。当JPEG图像被压缩时，亮度分量将保留全分辨率，而颜色分量则通过将像素组平均在一起来缩减采样。缩减采样会将数据量减少一半或三分之一，几乎不会影响感知质量。缩减采样不适用于灰度图像。此技术可减少对对比度高的图像（例如，叠加有文本的图像）有用的压缩量。</li>
+     <li><strong>质量</strong>  — 控制JPEG压缩级别。 此设置会影响文件大小和图像质量。 JPEG质量比例尺为1-100。 拖动滑块时，可看到缩放比例。</li> 
+     <li><strong>启用JPG色度缩减采样</strong>  — 由于眼睛对高频颜色信息的敏感程度低于高频亮度，JPEG图像将图像信息分为亮度和颜色分量。 当JPEG图像被压缩时，亮度分量将保留全分辨率，而颜色分量则通过将像素组平均在一起来缩减采样。 缩减采样会将数据量减少一半或三分之一，几乎不会影响感知质量。 缩减采样不适用于灰度图像。 此技术可减少对对比度高的图像（例如，叠加有文本的图像）有用的压缩量。</li>
     </ul>
     <div>
-      选择 <strong>GIF</strong> 或<strong>带有 Alpha 的 GIF</strong> 可提供以下更多 <strong>GIF 颜色量化</strong>选项：
+      选择
+     <strong>GIF</strong> 或
+     <strong>GIFAlpha</strong> 提供这些附加
+     <strong>GIF颜色量化</strong> 选项：
     </div>
     <ul> 
-     <li><strong>类型 </strong> — 选择 <strong>自适应</strong> （默认）、 <strong>Web</strong>或 <strong>Macintosh</strong>.如果您选择 <strong>GIFAlpha</strong>，则“ Macintosh”选项不可用。</li>
+     <li><strong>类型 </strong> — 选择 <strong>自适应</strong> （默认）、 <strong>Web</strong>或 <strong>Macintosh</strong>. 如果您选择 <strong>GIFAlpha</strong>，则“ Macintosh”选项不可用。</li>
      <li><strong>Dither</strong>  — 选择 <strong>扩散</strong> 或 <strong>关闭</strong>.</li>
-     <li><strong>颜色数目</strong> - 输入介于 2 到 256 之间的一个数字。</li>
-     <li><strong>颜色列表</strong> - 输入一个以逗号分隔的列表。例如，对于白色、灰色和黑色，输入 000000,888888,ffffff。</li>
+     <li><strong>颜色数量 </strong> — 输入一个介于2到256之间的数字。</li>
+     <li><strong>颜色列表</strong>  — 输入以逗号分隔的列表。 例如，对于白色、灰色和黑色，输入000000,888888,ffffff。</li>
     </ul> 
     <div>
-      选择 <strong>PDF</strong>、<strong>TIFF</strong> 或<strong>带有 Alpha 的 TIFF</strong> 可提供以下更多选项：
+      选择
+     <strong>PDF</strong>,
+     <strong>TIFF</strong>或
+     <strong>TIFFAlpha</strong> 提供了以下其他选项：
     </div>
     <ul>
-     <li><strong>压缩</strong> - 选择一种压缩算法。“PDF”的算法选项有<strong>无</strong>、<strong>Zip</strong> 和 <strong>Jpeg</strong>；对于“TIFF”，压缩算法选项有<strong>无</strong>、<strong>LZW</strong>、<strong>Jpeg</strong> 和 <strong>Zip</strong>；对于“带有 Alpha 的 TIFF”，压缩算法选项有<strong>无</strong>、<strong>LZW</strong> 和 <strong>Zip</strong>。</li>
-    </ul> <p>如果选择 <strong>PNG</strong>、<strong>带有 Alpha 的 PNG</strong>，或者选择 <strong>EPS</strong>，则不提供其他选项。</p> </td>
+     <li><strong>压缩</strong>  — 选择压缩算法。 PDF的算法选项包括 <strong>无</strong>, <strong>Zip</strong>和 <strong>Jpeg</strong>;TIFF <strong>无</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>和 <strong>Zip</strong>;和AlphaTIFF <strong>无</strong>, <strong>LZW</strong>和 <strong>Zip</strong>.</li>
+    </ul> <p>选择 <strong>PNG</strong>, <strong>带Alpha的PNG，</strong> 或 <strong>EPS</strong> 不提供其他选项。</p> </td>
   </tr>
   <tr>
    <td><strong>锐化</strong></td>
-   <td>选择<strong>启用简单锐化</strong>选项可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </td>
+   <td>选择 <strong>启用简单锐化</strong> 选项，以在进行所有缩放后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </td>
   </tr>
  </tbody>
 </table>
 
-#### “高级”选项卡选项 {#advanced-tab-options}
+#### 高级选项卡选项 {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -370,16 +380,16 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
   </tr>
   <tr>
    <td><strong>锐化类型</strong></td>
-   <td><p>选择<strong>无</strong>、<strong>锐化</strong>或 <strong>USM 锐化</strong>。 </p>
+   <td><p>选择 <strong>无</strong>, <strong>锐化</strong>或 <strong>钝化蒙版</strong>. </p>
     <ul>
-     <li>选择<strong>无</strong>可禁用锐化。</li>
-     <li>选择<strong>锐化</strong>可在执行所有缩放操作后对图像应用基本锐化滤镜。锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </li>
-     <li>选择<strong> 钝化蒙版</strong> 对最终的缩减采样图像微调锐化滤镜效果。您可以控制效果的强度、效果的半径（以像素为单位）以及将被忽略的对比度阈值。此效果使用与Photoshop的“钝化蒙版”滤镜相同的选项。</li>
-    </ul> <p>在 <strong>USM 锐化</strong>中，您可以设置以下选项：</p>
+     <li>选择 <strong>无</strong> 禁用锐化。</li>
+     <li>选择 <strong>锐化 </strong>在进行所有缩放后，对图像应用基本锐化滤镜。 锐化有助于弥补在以不同大小显示图像时可能产生的模糊。 </li>
+     <li>选择<strong> 钝化蒙版</strong> 对最终的缩减采样图像微调锐化滤镜效果。 您可以控制效果的强度、效果的半径（以像素为单位）以及将被忽略的对比度阈值。 此效果使用与 Photoshop 的“钝化蒙蔽”滤镜相同的选项。</li>
+    </ul> <p>在 <strong>钝化蒙版</strong>，您可以使用以下选项：</p>
     <ul> 
      <li><strong>金额</strong>  — 控制对边缘像素应用的对比度量。 默认的实数值为1.0。对于高分辨率图像，最高可将其增加到5.0。请考虑使用“数量”来测量滤镜强度。</li>
-     <li><strong>半径</strong>  — 确定边缘像素周围影响锐化的像素数。 对于高分辨率图像，请输入一个介于1到2之间的实数。 低值仅锐化边缘像素；高值可锐化较宽范围的像素。 正确的值取决于图像大小。</li>
-     <li><strong>阈值</strong>  — 确定在应用USM锐化滤镜时要忽略的对比度范围。换句话说，此选项确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素并进行锐化。 为避免引入杂色，请尝试使用2到20之间的整数值。 </li>
+     <li><strong>半径</strong>  — 确定边缘像素周围影响锐化的像素数。 对于高分辨率图像，请输入一个介于1到2之间的实数。 低值仅锐化边缘像素；高值可锐化较宽范围的像素。 正确的值取决于图像的大小。</li>
+     <li><strong>阈值</strong>  — 确定在应用USM锐化滤镜时要忽略的对比度范围。 换句话说，此选项确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素并进行锐化。 为避免引入杂色，请尝试使用2到20之间的整数值。 </li>
      <li><strong>应用于</strong>  — 确定钝化是否适用于每种颜色或亮度。</li>
     </ul>
     <div>
@@ -389,18 +399,18 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
   </tr>
   <tr>
    <td><strong>重新取样模式</strong></td>
-   <td>选择一个<strong>重新取样模式</strong>选项。在缩减像素采样时，这些选项会锐化图像：
+   <td>选择 <strong>重新取样模式</strong> 选项。 在缩减像素采样时，以下选项会锐化图像：
     <ul>
      <li><strong>双线性</strong>  — 最快的重新取样方法。会出现一些锯齿伪像。</li>
      <li><strong>两次立方</strong>  — 提高CPU使用率，但生成较锐利的图像，出现的锯齿伪像较少。</li>
      <li><strong>锐化2</strong>  — 生成的结果比两次立方比较锐利，但CPU成本更高。</li>
      <li><strong>双锐</strong>  — 选择Photoshop默认重采样器以减小图像大小，该方法称为 <strong>双比克锐化</strong> 在Adobe Photoshop。</li>
-     <li><strong>每种颜色</strong>和<strong>亮度</strong> - 每种方法均可基于颜色或亮度。默认情况下将选择<strong>每种颜色</strong>。</li>
+     <li><strong>每种颜色</strong> 和 <strong>亮度</strong>  — 每种方法都可以基于颜色或亮度。 默认情况下 <strong>每种颜色</strong> 中。</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>打印分辨率</strong></td>
-   <td>选择此图像的打印分辨率；默认值为 72 像素。</td>
+   <td>选择打印此图像的分辨率；默认为72像素。</td>
   </tr>
   <tr>
    <td><strong>图像修饰符</strong></td>
@@ -423,7 +433,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
 
 除了 **[!UICONTROL 基本]** 和 **[!UICONTROL 高级]** 选项卡上，您可以定义图像修饰符，以便在定义图像预设时提供更多选项。 图像渲染依赖于Dynamic Media图像渲染API。 API在 [HTTP协议参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html).
 
-下面的一些基本示例显示了可以使用图像修饰符实现的操作。
+以下是一些使用图像修饰符可以执行的操作的基本示例。
 
 >[!NOTE]
 >
@@ -437,7 +447,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
 
    ![chlimage_1-499](assets/chlimage_1-499.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html) - 向图像应用模糊滤镜。
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html)  — 对图像应用模糊滤镜。
 
    ```xml
    &op_blur=25
@@ -445,7 +455,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
 
    ![chlimage_1-500](assets/chlimage_1-500.png)
 
-* 组合命令 - op_blur 和 op-invert
+* 组合命令 — op_blur和op-invert
 
    ```xml
    &op_invert=1&op_blur=25
@@ -461,7 +471,7 @@ Adobe Illustrator的文件格式是PDF的变体。 在AEM Assets，主要区别�
 
    ![chlimage_1-502](assets/chlimage_1-502.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html) - 调整图像不透明度。可用于降低前景不透明度。
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  — 调整图像不透明度。 用于降低前景不透明度。
 
    ```xml
    opac=50

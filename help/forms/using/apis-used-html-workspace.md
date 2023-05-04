@@ -1,22 +1,26 @@
 ---
 title: 在AEM Forms工作区中使用的API
-seo-title: 在AEM Forms工作区中使用的API
+seo-title: APIs used in AEM Forms workspace
 description: 公共Java和JavaScript API以及LiveCycleAEM Forms工作区的方法，已公开以进行自定义和自动化。
-seo-description: 公共Java和JavaScript API以及LiveCycleAEM Forms工作区的方法，已公开以进行自定义和自动化。
+seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 1d74fdb9-c118-45f7-93c6-116cacb2f1c4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 0%
+source-wordcount: '1033'
+ht-degree: 1%
 
 ---
 
-# AEM Forms工作区{#apis-used-in-aem-forms-workspace}中使用的API
+# 在AEM Forms工作区中使用的API {#apis-used-in-aem-forms-workspace}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 以下API在AEM Forms工作区中使用。
 

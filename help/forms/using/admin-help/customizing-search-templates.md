@@ -1,8 +1,8 @@
 ---
 title: 自定义搜索模板
-seo-title: 自定义搜索模板
+seo-title: Customizing search templates
 description: 您可以创建搜索模板，以在工作区中使用，从“待办事项”和“跟踪”页面搜索流程实例。 您还可以编辑或删除现有搜索模板。
-seo-description: 您可以创建搜索模板，以在工作区中使用，从“待办事项”和“跟踪”页面搜索流程实例。 您还可以编辑或删除现有搜索模板。
+seo-description: You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
 uuid: 2043ba8a-07f0-4054-af3c-f3a14c2183ab
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: 5230222b-53f8-414c-aaa1-848d6e9369e8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
 
-# 自定义搜索模板{#customizing-search-templates}
+# 自定义搜索模板 {#customizing-search-templates}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 您可以创建搜索模板，以在工作区中使用，从“待办事项”和“跟踪”页面搜索流程实例。 您还可以编辑或删除现有搜索模板。
 
@@ -29,14 +33,14 @@ ht-degree: 0%
 >
 >保存搜索模板时，必须为其指定唯一名称。 否则，现有模板可能会被覆盖，而不会出现警告消息。
 
-## 创建简单的搜索模板{#create-a-simple-search-template}
+## 创建简单的搜索模板 {#create-a-simple-search-template}
 
 1. 在管理控制台中，单击服务>工作区>搜索模板。
 1. 在“标识”选项卡的“搜索模板描述”框中，提供模板的用途。
 1. （可选）单击标准选项卡，然后为模板指定搜索标准。
 1. 单击保存选项卡，输入模板的唯一名称，然后单击保存。
 
-## 创建或编辑搜索模板{#create-or-edit-a-search-template}
+## 创建或编辑搜索模板 {#create-or-edit-a-search-template}
 
 1. 在管理控制台中，单击服务>工作区>搜索模板。
 1. （可选）如果您正在编辑现有模板或使用现有模板作为新模板的基础，请从“搜索模板名称”列表中选择该模板。
@@ -46,9 +50,9 @@ ht-degree: 0%
 
    * 在“标准”(Criteria)选项卡的顶部，选择“流程元素”或“任务元素”。
 
-      **提示**: *如果您之前选择了“流程名称”元素并指定了一个流程，则该流程中定义的所有“流程变量”也可供选择。*
+      **笔尖**: *如果您之前选择了“流程名称”元素并指定了一个流程，则该流程中定义的所有“流程变量”也可供选择。*
 
-      **提示**: *如果选择任务可见元素，则用户将能够从搜索结果中删除已完成的任务。*
+      **笔尖**: *如果选择“任务可见”元素，则用户将能够从搜索结果中删除已完成的任务。*
 
       所选元素的搜索标准字段显示在标准选项卡的底部。
 
@@ -58,9 +62,9 @@ ht-degree: 0%
       * （可选）要允许用户在工作区中更改操作数值，请选择允许用户更改操作数。
       * （可选）要允许用户更改关系运算符，请选择允许用户选择其他关系运算符。 在显示的列表中，选择用户可用的运算符。
 
-      **提示**: *如果选择“流程名称”作为元素，则可以单击操作数字段旁边的图标以显示列表，在列表中可以选择在表单服务器上运行的流程。选择某个流程后，该流程中定义的任何流程变量都可以在“标准”选项卡顶部的“流程变量”下进行选择。*
+      **笔尖**: *如果选择“流程名称”作为元素，则可以单击操作数字段旁边的图标以显示列表，在列表中可以选择在表单服务器上运行的流程。 选择某个流程后，该流程中定义的任何流程变量均可在“标准”选项卡顶部的“流程变量”下进行选择。*
 
-      **提示**: *您可以通过单击元素搜索条件旁边的删除图标，从搜索模板中删除元素。*
+      **笔尖**: *您可以通过单击元素搜索条件旁边的删除图标，从搜索模板中删除元素。*
 
 
 1. （可选）对于要在搜索结果中显示的每个列标题，单击布局选项卡并执行以下步骤：
@@ -83,7 +87,7 @@ ht-degree: 0%
 1. （可选）如果创建新搜索模板，请为其指定唯一名称。 如果未指定唯一名称，则可能会覆盖现有模板。
 1. 单击Save按钮。
 
-## 删除搜索模板{#delete-a-search-template}
+## 删除搜索模板 {#delete-a-search-template}
 
 1. 在“标识”选项卡上，从“搜索模板名称”列表中选择一个名称。
 1. 单击“删除此模板”，然后单击“确定”。

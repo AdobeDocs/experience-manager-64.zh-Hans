@@ -1,22 +1,26 @@
 ---
 title: 使用sendToPrinter API
-seo-title: 使用sendToPrinter API
+seo-title: Using the sendToPrinter API
 description: 使用sendToPrinter服务将文档发送到打印机。
-seo-description: 使用sendToPrinter服务将文档发送到打印机。
+seo-description: Using the sendToPrinter service to send a document to printer.
 uuid: c6a3fe8d-ec19-4350-b4a6-4c3d1971b501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 exl-id: 89b6c8b4-4872-4bf5-a543-f33a1660636e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 13%
+source-wordcount: '398'
+ht-degree: 14%
 
 ---
 
 # 使用sendToPrinter API {#using-the-sendtoprinter-api}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
@@ -34,7 +38,7 @@ ht-degree: 13%
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
    * **CIFS**:输出服务支持通用Internet文件系统(CIFS)打印协议。
 
-## 使用SendToPrinter服务{#using-sendtoprinter-service}
+## 使用SendToPrinter服务 {#using-sendtoprinter-service}
 
 下表列出：
 
@@ -61,12 +65,12 @@ ht-degree: 13%
 | CIFS | 无效 | 任意 | 使用CIFS打印时出现未知错误。 |
 | CIFS | 空 | 任意 | 表示必需参数sPrintServerUri不能为空的异常。 |
 
-## 身份验证支持{#authentication-support}
+## 身份验证支持 {#authentication-support}
 
 仅CIFS打印支持身份验证。 要进行身份验证，请在PrinterSpec中提供用户名/密码/域。 您可以通过执行以下步骤，使用AEM Granite CyprotoSupport服务加密密码：
 
-1. 转到https://&lt;server>:&lt;port>/system/console。
+1. 转到https://&lt;server>:&lt;port>/system/console.
 
-1. 转到&#x200B;**[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**。
+1. 转到 **[!UICONTROL 主要]** > **[!UICONTROL 加密支持]**.
 
-1. 输入一些纯文本，然后单击&#x200B;**[!UICONTROL Protect]**。
+1. 输入一些纯文本，然后单击 **[!UICONTROL Protect]**.

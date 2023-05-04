@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2911'
-ht-degree: 2%
+source-wordcount: '2947'
+ht-degree: 3%
 
 ---
 
 # 设置和配置AEM Forms引用站点 {#set-up-and-configure-aem-forms-reference-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM Forms提供参考站点实施，以演示AEM Forms如何帮助金融服务行业和政府组织在任何设备上随时随地将其复杂交易转换为简单而引人入胜的数字体验。
 
@@ -31,7 +35,7 @@ We.Finance和We.Gov参考网站利用真实的用例与现有和潜在客户进�
 * 高级用户数据管理和处理功能。
 * 与Acrobat Sign集成，以安全地签署和提交自适应表单。
 * 与Adobe Target集成，以提供有针对性的推荐并执行A/B测试，从而最大限度地提高表单投资回报率。
-* 与Adobe Analytics集成，以衡量表单或营销活动的效果并做出明智的决策。
+* 与Adobe Analytics集成，以衡量表单或营销策划的效果并做出明智的决策。
 * 增强表单填写体验。
 
 参考站点提供了可重复使用的资产，您可以将这些资产用作模板来创建自己的资产。
@@ -46,7 +50,7 @@ We.Finance和We.Gov参考网站利用真实的用例与现有和潜在客户进�
 
 * **AEM essentials**
 
-   AEM快速入门、AEM Forms附加组件包和引用站点包。 请参阅 [AEM Forms版本](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 有关附加组件和引用站点包的详细信息。
+   AEM快速入门、AEM Forms附加组件包和引用站点包。 请参阅 [AEM Forms版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 有关附加组件和引用站点包的详细信息。
 
 * **SMTP服务**
 您可以使用任何SMTP服务。
@@ -174,7 +178,7 @@ We.Finance和We.Gov参考网站利用真实的用例与现有和潜在客户进�
    * 在发布实例上，指定创作URL和发布URL。
 
 1. 在创作实例和发布实例上，确保在“域”字段中指定本地服务器URL。
-1. 点按&#x200B;**[!UICONTROL 保存]**。等待一段时间，以便所有服务都重新启动。
+1. 点按 **[!UICONTROL 保存]**. 等待一段时间，以便所有服务都重新启动。
 
 ## 配置Day CQ Mail Service {#cqmail}
 
@@ -185,7 +189,7 @@ We.Finance和We.Gov参考网站利用真实的用例与现有和潜在客户进�
 1. 转到OSGi配置： https://&lt;*主机名>*:&lt;*端口>*/system/console/configMgr。
 1. 查找并点按 **[!UICONTROL Day CQ Mail Service]** 以将其打开进行配置。
 1. 提供SMTP服务器主机名和端口值。
-1. 点按&#x200B;**[!UICONTROL 保存]**。
+1. 点按 **[!UICONTROL 保存]**.
 
 >[!NOTE]
 >
@@ -287,7 +291,7 @@ AEM DS服务设置是引用站点用例中用于电子邮件通信的发布实�
    >
    >上述调度程序配置每两分钟检查一次Acrobat Sign服务的状态。
 
-1. 点按&#x200B;**[!UICONTROL 保存]**。
+1. 点按 **[!UICONTROL 保存]**.
 
 ## 配置参考站点Acrobat Sign云服务 {#sign-service}
 
@@ -310,7 +314,7 @@ AEM DS服务设置是引用站点用例中用于电子邮件通信的发布实�
 1. 转到AEM Web配置控制台(位于 `https://[server]:[port]/system/console/configMgr`.
 1. 查找并点按 **[!UICONTROL Forms通用配置服务]** 以将其打开进行配置。
 1. 配置 **[!UICONTROL 允许]** 字段 **[!UICONTROL 所有用户]**.
-1. 点按&#x200B;**[!UICONTROL 保存]**。
+1. 点按 **[!UICONTROL 保存]**.
 
 ## 修改表单数据模型的Rest服务 {#fdm}
 

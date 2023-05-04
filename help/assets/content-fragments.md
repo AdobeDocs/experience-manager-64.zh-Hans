@@ -12,14 +12,18 @@ discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 76%
+source-wordcount: '2020'
+ht-degree: 75%
 
 ---
 
 # 使用内容片段 {#working-with-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -38,7 +42,7 @@ Adobe Experience Manager(AEM)内容片段允许您设计、创建、策划和 [�
 
 * [内容片段模型](content-fragments-models.md) – 启用、创建和定义模型
 
-* [变量 – 创作片段内容](content-fragments-variations.md) – 创作片段内容并创建主控
+* [变体 – 创作片段内容](content-fragments-variations.md) – 创作片段内容并创建主控
 
 * [Markdown](content-fragments-markdown.md) – 使用片段的 markdown 语法
 
@@ -87,7 +91,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 >
 >**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-authoring/experience-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
 >
->* **内容片段**&#x200B;是可编辑内容，主要为文本和相关图像。它们是纯内容，不带有任何设计和布局。
+>* **内容片段**&#x200B;是可编辑内容，主要为文本和相关图像。它们是纯内容，无需设计和布局。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
@@ -298,7 +302,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 ## 使用示例 {#example-usage}
 
-片段及其元素和变量可用于为多个渠道创建一致的内容。 在设计片段时，您需要考虑将在何处使用的内容。
+片段及其元素和变体可用于为多个渠道创建一致的内容。 在设计片段时，您需要考虑将在何处使用的内容。
 
 ### We.Retail示例 {#we-retail-sample}
 

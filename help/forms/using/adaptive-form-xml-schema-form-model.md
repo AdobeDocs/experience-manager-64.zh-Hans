@@ -1,32 +1,36 @@
 ---
 title: 使用XML架构创建自适应表单
-seo-title: 使用XML架构创建自适应表单
+seo-title: Creating adaptive forms using XML Schema
 description: 自适应表单可以使用XML架构作为表单模型，从而允许您利用现有XSD模板创建自适应表单。 您可以将XSD中的架构元素拖放到自适应表单上。
-seo-description: 自适应表单可以使用XML架构作为表单模型，从而允许您利用现有XSD模板创建自适应表单。 您可以将XSD中的架构元素拖放到自适应表单上。
+seo-description: Adaptive forms can use XML schema as form model, allowing you to leverage existing XSD templates to create adaptive forms. You can drag-and-drop schema elements from XSD onto your adaptive form.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
-feature: 自适应表单
+feature: Adaptive Forms
 exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1080'
 ht-degree: 6%
 
 ---
 
-# 使用XML架构{#creating-adaptive-forms-using-xml-schema}创建自适应表单
+# 使用XML架构创建自适应表单 {#creating-adaptive-forms-using-xml-schema}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 前提条件 {#prerequisites}
 
 使用XML架构作为其表单模型来创作自适应表单需要对XML架构有基本的了解。 此外，还建议在阅读本文之前阅读以下内容。
 
 * [创建自适应表单](/help/forms/using/creating-adaptive-form.md)
-* [XML 架构](https://www.w3.org/TR/xmlschema-2/)
+* [XML架构](https://www.w3.org/TR/xmlschema-2/)
 
-## 使用XML架构作为表单模型{#using-an-xml-schema-as-form-model}
+## 使用XML架构作为表单模型 {#using-an-xml-schema-as-form-model}
 
 AEM Forms支持使用现有XML架构作为表单模型来创建自适应表单。 此XML架构表示组织内的后端系统生成或使用数据的结构。
 
@@ -81,7 +85,7 @@ XML元素与自适应表单组件的映射如下所示：
  </tbody> 
 </table>
 
-## XML架构{#sample-xml-schema}示例
+## 示例XML架构 {#sample-xml-schema}
 
 以下是XML架构的示例。
 
@@ -129,7 +133,7 @@ XML元素与自适应表单组件的映射如下所示：
 >
 >确保XML架构只有一个根元素。 不支持具有多个根元素的XML架构。
 
-## 使用XML架构{#adding-special-properties-to-fields-using-xml-schema}向字段添加特殊属性
+## 使用XML架构向字段添加特殊属性 {#adding-special-properties-to-fields-using-xml-schema}
 
 您可以将以下属性添加到XML架构元素，以向关联的自适应表单的字段添加特殊属性。
 
@@ -142,7 +146,7 @@ XML元素与自适应表单组件的映射如下所示：
   </tr> 
   <tr> 
    <td><code>use=required </code></td> 
-   <td>将字段标记为必填字段<br /> </td> 
+   <td>将字段标记为必填<br /> </td> 
    <td>属性</td> 
   </tr> 
   <tr> 
@@ -170,12 +174,10 @@ XML元素与自适应表单组件的映射如下所示：
 >
 >* 将元素名称的第一个字符大写
 >* 在驼峰式大小写边界处插入空格。
-
 >
->
-例如，如果添加`userFirstName`架构元素，则在自适应表单中生成的标题为`User First Name`。
+>例如，如果您将 `userFirstName` 架构元素中，自适应表单中生成的描述为 `User First Name`.
 
-## 限制自适应表单组件{#limit-acceptable-values-for-an-adaptive-form-component}的可接受值
+## 限制自适应表单组件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
 
 您可以向XML架构元素添加以下限制，以限制自适应表单组件可接受的值：
 
@@ -221,7 +223,7 @@ XML元素与自适应表单组件的映射如下所示：
   </tr> 
   <tr> 
    <td><p><code>exclusiveMaximum</code></p> </td> 
-   <td><p>布尔型</p> </td> 
+   <td><p>布尔值</p> </td> 
    <td><p>如果为true，则在表单组件中指定的数值或日期必须小于为maximum属性指定的数值或日期。</p> <p>如果为false，则表单组件中指定的数值或日期必须小于或等于为最大属性指定的数值或日期。</p> </td> 
    <td> 
     <ul> 
@@ -232,7 +234,7 @@ XML元素与自适应表单组件的映射如下所示：
   </tr> 
   <tr> 
    <td><p><code>exclusiveMinimum</code></p> </td> 
-   <td><p>布尔型</p> </td> 
+   <td><p>布尔值</p> </td> 
    <td><p>如果为true，则表单组件中指定的数值或日期必须大于为最小属性指定的数值或日期。</p> <p>如果为false，则表单组件中指定的数值或日期必须大于或等于为最小属性指定的数值或日期。</p> </td> 
    <td> 
     <ul> 
@@ -293,21 +295,21 @@ XML元素与自适应表单组件的映射如下所示：
 
 **如何知道树中的哪个元素与哪个XML元素相关联？**
 
-在内容查找器中双击某个元素时，弹出窗口会显示一个字段名称和一个名为`bindRef`的属性。 此属性将树元素映射到架构中的元素或属性。
+在内容查找器中双击某个元素时，弹出窗口会显示一个字段名称和一个名为 `bindRef`. 此属性将树元素映射到架构中的元素或属性。
 
 ![XML架构元素的bindref字段](assets/dblclick.png)
 
-bindRef</code>字段显示树元素与架构中元素或属性之间的关联。
+bindRef</code> 字段显示树元素与架构中的元素或属性之间的关联。
 
 >[!NOTE]
 >
->属性的`bindRef`值中有一个`@`符号，用于与元素区分开来。 例如，`/config/projectDetails/@duration`。
+>属性具有 `@` 符号 `bindRef`值，以便与元素区分开来。 例如：`/config/projectDetails/@duration`。
 
 **为什么我无法为可重复的子表单（minOccours或maxOccurs值大于1）拖动子表单的单个元素（从任何复杂类型生成的结构）？**
 
 在可重复的子表单中，您必须使用完整的子表单。 如果只希望选择字段，请使用整个结构并删除不需要的字段。
 
-**我在内容查找器中有一个很长的复杂结构。如何查找特定元素？**
+**我在内容查找器中有一个很长的复杂结构。 如何查找特定元素？**
 
 您有两个选项：
 
@@ -316,4 +318,4 @@ bindRef</code>字段显示树元素与架构中元素或属性之间的关联。
 
 **什么是bindRef?**
 
-`bindRef`是自适应表单组件与架构元素或属性之间的连接。 它指示`XPath`，在输出XML中，可从此组件或字段捕获的值可用。 从预填充（预填充）XML中预填充字段值时，也会使用`bindRef`。
+A `bindRef` 是自适应表单组件与架构元素或属性之间的连接。 它决定了 `XPath` 其中，从此组件或字段捕获的值在输出XML中可用。 A `bindRef`从预填充（预填充）XML预填充字段值时，也会使用。

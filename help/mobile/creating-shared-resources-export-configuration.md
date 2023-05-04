@@ -1,8 +1,8 @@
 ---
 title: 创建共享资源导出配置
-seo-title: 创建共享资源导出配置
+seo-title: Creating Shared Resources Export Configuration
 description: 可查看本页以了解有关将共享资源从Adobe Experience Manager(AEM)导出以上传到AEM Mobile的信息。
-seo-description: 可查看本页以了解有关将共享资源从Adobe Experience Manager(AEM)导出以上传到AEM Mobile的信息。
+seo-description: Follow this page to learn about exporting shared resources from Adobe Experience Manager (AEM) for upload to AEM Mobile.
 uuid: 99b8ff94-8135-4643-a15b-aa6fb91f5401
 contentOwner: User
 content-type: reference
@@ -10,34 +10,38 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 1edf6c76-ccb1-40b6-bdf6-924f1461cd28
 exl-id: 92ee8c25-9f11-4743-a8e6-1f4986d09a6a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 0%
+source-wordcount: '338'
+ht-degree: 2%
 
 ---
 
 # 创建共享资源导出配置{#creating-shared-resources-export-configuration}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
 >**先决条件**:
 >
->要了解有关创建和修改共享资源的信息，请参阅[内容同步](/help/mobile/mobile-ondemand-contentsync.md)以了解基本概念。
+>要了解有关创建和修改共享资源的信息，请参阅 [内容同步](/help/mobile/mobile-ondemand-contentsync.md) 了解基本概念。
 
 AEM Mobile用户使用“内容同步”将实时内容导出为静态内容以供在移动设备应用程序中使用，当内容从AEM Mobile上传到Mobile On-Demand Services时，会执行此导出。
 
-上表中提到的属性&#x200B;***dps-exportTemplate***&#x200B;定义应用程序导出配置的路径。 设置此属性可创建和修改共享资源。
+资产 ***dps-exportTemplate*** 上表中所述，定义应用程序导出配置的路径。 设置此属性可创建和修改共享资源。
 
 以下资源介绍如何从Adobe Experience Manager(AEM)导出共享资源以上传到AEM Mobile。
 
-共享的HTML资源允许文章共享HTML资源，否则，这些资源将需要针对所有文章进行复制，并且可以包含图标、字体、Javascript和CSS。
+共享HTML资源允许文章共享HTML资源，否则，这些资源将需要针对所有文章进行重复，并且可以包含图标、字体、Javascript和Css。
 
-应将&#x200B;**&lt;dps-exportTemplate>/dps-HTMLResources>**&#x200B;中的内容同步配置配置为导出设备上属性静态渲染所需的所有内容和文章。
+内容同步配置位于 **&lt;dps-exporttemplate>/dps-HTMLResources>** 应配置为导出设备上属性静态渲染所需的所有内容和文章。
 
 >[!CAUTION]
 >
@@ -46,15 +50,13 @@ AEM Mobile用户使用“内容同步”将实时内容导出为静态内容以�
 >* 安装了示例内容
 >* 运行AEM实例
 >* 未配置自定义上下文或其他端口
-
 >
-
 
 
 要查看共享资源示例，请参阅以下步骤：
 
 1. 在AEM服务器上打开CRXDE Lite。
-1. 浏览此路径&#x200B;*[/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*，以查看共享资源示例。
+1. 浏览到此路径 *[/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*，以查看共享资源的示例。
 
    您可以查看创建共享资源所需的所有属性，如下图所示：
 

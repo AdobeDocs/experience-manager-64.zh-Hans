@@ -1,23 +1,27 @@
 ---
 title: AEM Forms键盘快捷键
-seo-title: AEM Forms键盘快捷键
+seo-title: AEM Forms Keyboard Shortcuts
 description: 本文列出了可与Windows和Macintosh操作系统的“自适应表单编辑器”、“主题编辑器”、“内容浏览器”和“通信管理”一起使用的键盘快捷键。
-seo-description: 本文列出了可与自适应表单编辑器、主题编辑器、内容浏览器和通信管理一起使用的键盘快捷键。
+seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
-feature: 自适应表单
+feature: Adaptive Forms
 exl-id: 08cf95bc-3417-48d4-9df2-5bd56797bc5d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 4%
+source-wordcount: '1183'
+ht-degree: 2%
 
 ---
 
-# AEM Forms键盘快捷键{#aem-forms-keyboard-shortcuts}
+# AEM Forms键盘快捷键 {#aem-forms-keyboard-shortcuts}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本文列出了可与Windows和Macintosh操作系统的“自适应表单编辑器”、“主题编辑器”、“内容浏览器”和“通信管理”一起使用的键盘快捷键。
 
@@ -29,32 +33,30 @@ ht-degree: 4%
 | 关闭所选自适应表单组件的属性浏览器 | Ctrl+Alt+W | Command+Alt+W |
 | 在属性浏览器中保存所选自适应表单组件的更改 | Ctrl+S | Command+S |
 | 编辑所选自适应表单组件的规则 | Ctrl+Alt+Enter | Command+Alt+Return |
-| 在预览模式和当前选定的模式（例如，编辑、基架等）之间切换 | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
-| 撤消最后一次更改 | Ctrl+Z | Ctrl+Z&amp;Amp;ast; |
-| 重做最后一次更改 | Ctrl+Y | Ctrl+Y&amp;Amp;ast; |
+| 在预览模式和当前选定的模式（例如，编辑、基架等）之间切换 | Ctrl+Shift+M | Ctrl+Shift+M&amp;Ast; |
+| 撤消最后一次更改 | Ctrl+Z | Ctrl+Z&amp;Ast; |
+| 重做最后一次更改 | Ctrl+Y | Ctrl+Y&amp;Ast; |
 | 选择多个组件 | 按住Shift并单击 | 按住Shift并单击 |
-| 复制所选组件 | Ctrl-C | Ctrl-C&amp;Amp;ast; |
-| 剪切选定的组件。 剪切组件在粘贴到新位置之前不会消失。 | Ctrl-X | Ctrl-X&amp;Amp;ast; |
+| 复制所选组件 | Ctrl-C | Ctrl-C&amp;Ast; |
+| 剪切选定的组件。 剪切组件在粘贴到新位置之前不会消失。 | Ctrl-X | Ctrl-X&amp;Ast; |
 | 粘贴组件 | Ctrl+V | Ctrl+V |
-| 删除选定的组件 | Ctrl+Del | Ctrl+Del&amp;ast; |
+| 删除选定的组件 | Ctrl+Del | Ctrl+Del&amp;Ast; |
 | 删除选定的组件 | Ctrl+Backspace | Ctrl+Backspace&amp;ast; |
-| 在预览模式下使用富文本编辑器组件时，将文本设为粗体 | Ctrl+B | Ctrl+B&amp;Amp;ast; |
-| 在预览模式下使用富文本编辑器组件时，将文本设置为斜体 | Ctrl+I | Ctrl+I&amp;Amp;ast; |
-| 在预览模式下使用富文本编辑器组件时，将文本设为粗体 | Ctrl+U | Ctrl+U&amp;Amp;ast; |
+| 在预览模式下使用富文本编辑器组件时，将文本设为粗体 | Ctrl+B | Ctrl+B&amp;Ast; |
+| 在预览模式下使用富文本编辑器组件时，将文本设置为斜体 | Ctrl+I | Ctrl+I&amp;Ast; |
+| 在预览模式下使用富文本编辑器组件时，将文本设为粗体 | Ctrl+U | Ctrl+U&amp;Ast; |
 
 >[!NOTE]
 >
->标有“&amp;ast；”的快捷键可同时在Mac OS中使用Ctrl和Command键。
+>标有“&amp;ast；”的快捷键可同时使用Mac OS上的Ctrl和Command键。
 
 >[!NOTE]
 >
 >在桌面设备上进行多选：
 >
 >* Windows:按住Ctrl并单击所需的组件。
->* MAC OS:按住Command并单击所需的组件。
-
+>* Mac OS:按住Command并单击所需的组件。
 >
-
 
 
 ## 主题编辑器  {#themeeditor}
@@ -63,13 +65,13 @@ ht-degree: 4%
 |---|---|---|
 | 打开主题中选定组件的属性浏览器 | Alt+Enter | Alt+返回 |
 | 关闭主题中选定组件的属性浏览器 | Ctrl+Alt+W | Command+Alt+W |
-| 撤消最后一次更改 | Ctrl+Z | Ctrl+Z&amp;Amp;ast; |
-| 重做最后一次更改 | Ctrl+Y | Ctrl+Y&amp;Amp;ast; |
-| 在属性浏览器中保存对主题中选定组件所做的更改 | Ctrl+S | Ctrl+S&amp;Amp;ast; |
+| 撤消最后一次更改 | Ctrl+Z | Ctrl+Z&amp;Ast; |
+| 重做最后一次更改 | Ctrl+Y | Ctrl+Y&amp;Ast; |
+| 在属性浏览器中保存对主题中选定组件所做的更改 | Ctrl+S | Ctrl+S&amp;Ast; |
 
 >[!NOTE]
 >
->标有“&amp;ast；”的快捷键可同时在Mac OS中使用Ctrl和Command键。
+>标有“&amp;ast；”的快捷键可同时使用Mac OS上的Ctrl和Command键。
 
 ## 内容浏览器  {#contentbrowser}
 
@@ -89,10 +91,10 @@ ht-degree: 4%
 
 本部分列出了可在通信管理文本编辑器中使用的各种键盘和辅助工具快捷键。 在以下情况下，您可以使用这些快捷键：
 
-* 创建或编辑[Text](document-fragments.md)资产
-* 在[创建通信](/help/forms/using/create-correspondence.md)时，点按相关的“编辑”图标(![edittextmodule](assets/edittextmodule.png))后编辑文本模块。
+* 创建或编辑 [文本](document-fragments.md) 资产
+* 在点按相关的编辑图标( ![edittextmodule](assets/edittextmodule.png))when [创建通信](/help/forms/using/create-correspondence.md).
 
-### 选择文本并移动光标在{#text-selection-and-moving-the-cursor-around}周围
+### 文本选择和移动光标 {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
@@ -129,7 +131,7 @@ ht-degree: 4%
   <tr>
    <td><p>将光标移到下一个单词的开头</p> </td> 
    <td><p>Ctrl+向右箭头键</p> </td> 
-   <td>Option+向右箭头<em><sup>[1]</sup></em></td> 
+   <td>Option+向右箭头键 <em><sup>[1]</sup></em></td> 
   </tr>
   <tr>
    <td><p>将光标移动到前一个单词的开头</p> </td> 
@@ -210,7 +212,7 @@ ht-degree: 4%
 </table>
 
 
-### 文本对齐方式{#text-alignment}
+### 文本对齐方式 {#text-alignment}
 
 <table> 
  <tbody>
@@ -242,7 +244,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 撤消和重做操作{#undo-and-redo-actions}
+### 撤消和重做操作 {#undo-and-redo-actions}
 
 <table> 
  <tbody>
@@ -252,7 +254,7 @@ ht-degree: 4%
    <th><strong>Mac OS上的快捷键</strong><br /> </th> 
   </tr>
   <tr>
-   <td><p>撤消 </p> </td> 
+   <td><p>还原 </p> </td> 
    <td><p>Ctrl+Z</p> </td> 
    <td>Command+Z / Ctrl+Command+Z</td> 
   </tr>
@@ -264,7 +266,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 更改字体大小{#changing-font-size}
+### 更改字体大小 {#changing-font-size}
 
 <table> 
  <tbody>
@@ -286,7 +288,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 删除单词{#deleting-a-word}
+### 删除单词 {#deleting-a-word}
 
 <table> 
  <tbody>
@@ -308,7 +310,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 复制并粘贴{#copy-and-paste}
+### 复制并粘贴 {#copy-and-paste}
 
 <table> 
  <tbody>

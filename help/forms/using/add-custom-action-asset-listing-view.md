@@ -1,23 +1,27 @@
 ---
 title: 向资产列表视图添加自定义操作
-seo-title: 向资产列表视图添加自定义操作
+seo-title: Add custom action to the Asset Listing view
 description: 本文将讲授如何向资产列表视图添加自定义操作
-seo-description: 本文将讲授如何向资产列表视图添加自定义操作
+seo-description: This article teaches how to add custom action to the Asset Listing view
 uuid: 72ce6c24-2758-4888-b797-1b134acc54d2
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
-feature: 通信管理
+feature: Correspondence Management
 exl-id: 00b3efc5-ef1c-4b9d-957d-2eda01c0b985
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1383'
-ht-degree: 2%
+source-wordcount: '1396'
+ht-degree: 3%
 
 ---
 
-# 将自定义操作添加到资产列表视图{#add-custom-action-to-the-asset-listing-view}
+# 向资产列表视图添加自定义操作 {#add-custom-action-to-the-asset-listing-view}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
@@ -28,7 +32,7 @@ ht-degree: 2%
 * 一个或多个资产类型或字母
 * 在选择单个、多个资产/字母时执行（操作/命令变为活动状态），或者不选择
 
-通过向信件的资产列表视图添加“下载平面PDF”命令的情景演示了此自定义设置。 此自定义方案允许用户下载单个选定信件的平面PDF。
+此自定义通过向信件的资产列表视图添加“下载平面PDF”命令的情景进行演示。 此自定义方案允许用户下载单个选定信件的平面PDF。
 
 ### 前提条件 {#prerequisites}
 
@@ -38,17 +42,17 @@ ht-degree: 2%
 * JavaScript
 * Java
 
-## 方案：在信件列表用户界面中添加命令以下载信件的平面PDF版本 {#addcommandtoletters}
+## 方案：向信件列表用户界面添加命令以下载信件的平面PDF版本 {#addcommandtoletters}
 
-以下步骤将命令“Download Flat PDF”（下载平面PDF）添加到信件的资产列表视图，并允许用户下载所选信件的平面PDF。 通过将这些步骤与相应的代码和参数结合使用，您可以为其他资产添加一些其他功能，如数据字典或文本。
+以下步骤将命令“下载平面PDF”添加到信件的资产列表视图，并允许用户下载所选信件的平面PDF。 通过将这些步骤与相应的代码和参数结合使用，您可以为其他资产添加一些其他功能，如数据字典或文本。
 
-要自定义通信管理，以允许用户下载扁平的字母PDF，请完成以下步骤：
+要自定义通信管理以允许用户下载扁平的信件PDF，请完成以下步骤：
 
-1. 转到`https://[server]:[port]/[ContextPath]/crx/de`并以管理员身份登录。
+1. 转到 `https://[server]:[port]/[ContextPath]/crx/de` 和以管理员身份登录。
 
 1. 在apps文件夹中，使用以下步骤创建一个名为items的文件夹，其路径/结构与位于选择文件夹中的items文件夹类似：
 
-   1. 右键单击以下路径中的&#x200B;**[!UICONTROL items]**&#x200B;文件夹，然后选择&#x200B;**[!UICONTROL 覆盖节点]**:
+   1. 右键单击 **[!UICONTROL 项目]** 文件夹，然后选择 **[!UICONTROL 覆盖节点]**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -67,33 +71,33 @@ ht-degree: 2%
 
       **[!UICONTROL 位置：]** /apps/
 
-      **[!UICONTROL 匹配节点类型：]** 已选定
+      **[!UICONTROL 匹配节点类型：]** 已选择
 
       ![覆盖节点](assets/2_createnodedownloadflatpdf.png)
 
    1. 单击&#x200B;**[!UICONTROL 确定]**。文件夹结构将在应用程序文件夹中创建。
 
-      单击&#x200B;**[!UICONTROL Save All]**。
+      单击 **[!UICONTROL 全部保存]**.
 
 1. 在新创建的项目文件夹下，为特定资产中的自定义按钮/操作添加一个节点(示例：downloadFlatPDF)，请执行以下步骤：
 
-   1. 右键单击&#x200B;**[!UICONTROL items]**&#x200B;文件夹，然后选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 创建节点]**。
+   1. 右键单击 **[!UICONTROL 项目]** 文件夹，选择 **[!UICONTROL 创建]** > **[!UICONTROL 创建节点]**.
 
-   1. 确保“创建节点”对话框具有以下值，然后单击&#x200B;**[!UICONTROL OK]**:
+   1. 确保“创建节点”对话框具有以下值，然后单击 **[!UICONTROL 确定]**:
 
       **[!UICONTROL 名称：]** downloadFlatPDF（或要为此属性提供的名称）
 
-      **[!UICONTROL 类型：]** nt:unstructured
+      **[!UICONTROL 类型：]** nt：非结构化
 
    1. 单击您创建的新节点（此处为downloadFlatPDF）。 CRX显示节点的属性。
-   1. 将以下属性添加到节点（此处为downloadFlatPDF），然后单击&#x200B;**[!UICONTROL Save All]**:
+   1. 将以下属性添加到节点（此处为downloadFlatPDF）并单击 **[!UICONTROL 全部保存]**:
 
    <table> 
     <tbody> 
     <tr> 
     <td><strong>名称</strong></td> 
     <td><strong>类型</strong></td> 
-    <td><strong>值和描述</strong></td> 
+    <td><strong>价值 和描述</strong></td> 
     </tr> 
     <tr> 
     <td>class</td> 
@@ -103,12 +107,12 @@ ht-degree: 2%
     <tr> 
     <td>foundation-collection-action</td> 
     <td>字符串</td> 
-    <td><p>{"target":"。cq-manageasset-admin-childpages", "activeSelectionCount":"single","type":"LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong>可以是单个或多个资产，以允许选择一个或多个要执行自定义操作的资产。</p> <p><strong></strong> 类型是以下一个或多个（以逗号分隔多个条目）：字母、文本、列表、条件、数据字典</p> </td> 
+    <td><p>{"target":"。cq-manageasset-admin-childpages", "activeSelectionCount":"single","type":"LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> 可以是单个或多个，以允许选择一个或多个要执行自定义操作的资产。</p> <p><strong>type</strong> 可以是以下一个或多个（用逗号分隔多个条目）：字母、文本、列表、条件、数据字典</p> </td> 
     </tr> 
     <tr> 
     <td>图标</td> 
     <td>字符串</td> 
-    <td>icon-download<br /> <br />通信管理在命令/菜单的左侧显示的图标。 有关可用的不同图标和设置，请参阅<a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI图标文档</a>.<br /> </td> 
+    <td>图标下载<br /> <br /> 通信管理在命令/菜单的左侧显示的图标。 有关可用的不同图标和设置，请参阅 <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI图标文档</a>.<br /> </td> 
     </tr> 
     <tr> 
     <td>jcr:primaryType</td> 
@@ -126,21 +130,21 @@ ht-degree: 2%
     <td>granite/ui/components/endor/actionbar/button</td> 
     </tr> 
     <tr> 
-    <td>文本</td> 
+    <td>text</td> 
     <td>字符串</td> 
-    <td>下载平面PDF（或任何其他标签）<br /> <br />资产列表界面中显示的命令</td> 
+    <td>下载平面PDF（或任何其他标签）<br /> <br /> 在“资产列表”界面中显示的命令</td> 
     </tr> 
     <tr> 
-    <td>页面</td> 
+    <td>标题</td> 
     <td>字符串</td> 
-    <td>下载所选信件的平面PDF（或任何其他标签/Alt文本）<br /> <br />标题是用户将鼠标悬停在自定义命令上时通信管理显示的替换文本。</td> 
+    <td>下载所选信件的平面PDF（或任何其他标签/替换文本）<br /> <br /> 标题是用户将鼠标悬停在自定义命令上时通信管理显示的替换文本。</td> 
     </tr> 
     </tbody> 
     </table>
 
 1. 在apps文件夹中，使用以下步骤创建一个名为js的文件夹，其路径/结构与管理文件夹中的项目文件夹类似：
 
-   1. 右键单击以下路径中的&#x200B;**[!UICONTROL js]**&#x200B;文件夹，然后选择&#x200B;**[!UICONTROL 覆盖节点]**:&quot;
+   1. 右键单击 **[!UICONTROL js]** 文件夹，然后选择 **[!UICONTROL 覆盖节点]**:&quot;
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -150,13 +154,13 @@ ht-degree: 2%
 
       **[!UICONTROL 位置：]** /apps/
 
-      **[!UICONTROL 匹配节点类型：]** 已选定
+      **[!UICONTROL 匹配节点类型：]** 已选择
 
-   1. 单击&#x200B;**[!UICONTROL 确定]**。文件夹结构将在应用程序文件夹中创建。 单击&#x200B;**[!UICONTROL Save All]**。
+   1. 单击&#x200B;**[!UICONTROL 确定]**。文件夹结构将在应用程序文件夹中创建。 单击 **[!UICONTROL 全部保存]**.
 
 1. 在js文件夹中，使用用于按钮操作处理的代码，创建一个名为formaction.js的文件：
 
-   1. 右键单击以下路径中的&#x200B;**[!UICONTROL js]**&#x200B;文件夹，然后选择&#x200B;**[!UICONTROL 创建>创建文件]**:
+   1. 右键单击 **[!UICONTROL js]** 文件夹，然后选择 **[!UICONTROL 创建>创建文件]**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -167,7 +171,7 @@ ht-degree: 2%
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js/formaction.js`
 
-      然后，将以下代码附加到formaction.js文件（位于/apps分支下）的末尾，然后单击&#x200B;**[!UICONTROL 保存全部]**:
+      然后，将以下代码附加到formaction.js文件（位于/apps分支下）的末尾，然后单击 **[!UICONTROL 全部保存]**:
 
       ```
       /* Action url for xml file to be added.*/
@@ -230,7 +234,7 @@ ht-degree: 2%
 
 1. 在apps文件夹中，使用以下步骤创建一个名为items的文件夹，其路径/结构与位于actionhandlers文件夹中的items文件夹类似：
 
-   1. 右键单击以下路径中的&#x200B;**[!UICONTROL items]**&#x200B;文件夹，然后选择&#x200B;**[!UICONTROL 覆盖节点]**:
+   1. 右键单击 **[!UICONTROL 项目]** 文件夹，然后选择 **[!UICONTROL 覆盖节点]**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
@@ -240,25 +244,25 @@ ht-degree: 2%
 
       **[!UICONTROL 位置：]** /apps/
 
-      **[!UICONTROL 匹配节点类型：]** 已选定
+      **[!UICONTROL 匹配节点类型：]** 已选择
 
    1. 单击&#x200B;**[!UICONTROL 确定]**。文件夹结构将在应用程序文件夹中创建。
 
-   1. 单击&#x200B;**[!UICONTROL Save All]**。
+   1. 单击 **[!UICONTROL 全部保存]**.
 
 1. 在新创建的项目节点下，为特定资产中的自定义按钮/操作添加一个节点(示例：letterpdfdownloader)来执行以下步骤：
 
-   1. 右键单击项目文件夹，然后选择&#x200B;**[!UICONTROL 创建>创建节点]**。
+   1. 右键单击项目文件夹并选择 **[!UICONTROL 创建>创建节点]**.
 
-   1. 确保“创建节点”对话框具有以下值，然后单击&#x200B;**[!UICONTROL OK]**:
+   1. 确保“创建节点”对话框具有以下值，然后单击 **[!UICONTROL 确定]**:
 
-      **[!UICONTROL 名称：]** letterpdfdownloader（或要为此属性提供的名称）必须唯一。如果您在此处使用其他名称，请在formaction.js文件的ACTION_URL变量中指定相同的名称。)
+      **[!UICONTROL 名称：]** letterpdfdownloader（或要为此属性提供的名称）必须唯一。 如果您在此处使用其他名称，请在formaction.js文件的ACTION_URL变量中指定相同的名称。)
 
-      **[!UICONTROL 类型：]** nt:unstructured
+      **[!UICONTROL 类型：]** nt：非结构化
 
    1. 单击您创建的新节点（此处为downloadFlatPDF）。 CRX显示节点的属性。
 
-   1. 将以下属性添加到节点（此处为letterpdfdownloader），然后单击&#x200B;**[!UICONTROL Save All]**:
+   1. 将以下属性添加到节点（此处为letterpdfdownloader），然后单击 **[!UICONTROL 全部保存]**:
 
       | **名称** | **类型** | **值** |
       |---|---|---|
@@ -268,18 +272,18 @@ ht-degree: 2%
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. 右键单击以下路径中的&#x200B;**[!UICONTROL admin]**&#x200B;文件夹，然后选择&#x200B;**[!UICONTROL 创建>创建文件]**:
+   1. 右键单击 **[!UICONTROL 管理员]** 文件夹，然后选择 **[!UICONTROL 创建>创建文件]**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
       将文件命名为POST.jsp。 (文件名只需为POST.jsp。)
 
-   1. 双击&#x200B;**[!UICONTROL POST.jsp]**&#x200B;文件以在CRX中打开它。
-   1. 将以下代码添加到POST.jsp文件中，然后单击&#x200B;**[!UICONTROL Save All]**:
+   1. 双击 **[!UICONTROL POST.jsp]** 文件以在CRX中将其打开。
+   1. 将以下代码添加到POST.jsp文件中，然后单击 **[!UICONTROL 全部保存]**:
 
-      此代码专用于信件呈现服务。 对于任何其他资产，将该资产的Java库添加到此代码中。 有关AEM Forms API的更多信息，请参阅[AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en)。
+      此代码专用于信件呈现服务。 对于任何其他资产，将该资产的Java库添加到此代码中。 有关AEM Forms API的更多信息，请参阅 [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en).
 
-      有关AEM库的更多信息，请参阅AEM [组件](/help/sites-developing/components.md)。
+      有关AEM库的更多信息，请参阅AEM [组件](/help/sites-developing/components.md).
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */            
@@ -346,26 +350,26 @@ ht-degree: 2%
       %>
       ```
 
-## 使用自定义功能{#download-flat-pdf-of-a-letter-using-the-custom-functionality}下载信件的平面PDF
+## 使用自定义功能下载信件的平面PDF {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
 添加自定义功能下载信件的平面PDF后，您可以使用以下步骤下载所选信件的平面PDF版本：
 
-1. 转到`https://[server]:[port]/[ContextPath]/projects.html`并登录。
+1. 转到 `https://[server]:[port]/[ContextPath]/projects.html` 并登录。
 
-1. 选择&#x200B;**[!UICONTROL Forms >字母]**。 通信管理列出了系统中可用的信件。
-1. 单击&#x200B;**[!UICONTROL 选择]**，然后单击字母将其选中。
-1. 选择&#x200B;**[!UICONTROL 更多]** > &lt;下载平面PDF>（使用本文中的说明创建的自定义功能）。 将显示“下载PDF格式的信件”对话框。
+1. 选择 **[!UICONTROL Forms >字母]**. 通信管理列出了系统中可用的信件。
+1. 单击 **[!UICONTROL 选择]** 然后单击信件以将其选中。
+1. 选择 **[!UICONTROL 更多]** > &lt;download flat=&quot;&quot; pdf=&quot;&quot;> （使用本文中的说明创建的自定义功能）。 将显示“以PDF形式下载信件”对话框。
 
-   菜单项名称、功能和替换文本是根据在[Scenario中创建的自定义项来设置的：向“信件列表”用户界面添加命令，以下载PDF格式的信件版本。](#addcommandtoletters)
+   菜单项名称、功能和替换文本是根据 [方案：向信件列表用户界面添加命令以下载信件的平面PDF版本。](#addcommandtoletters)
 
    ![自定义功能：下载平面PDF](assets/5_downloadflatpdf.png)
 
-1. 在“以PDF格式下载信件”对话框中，选择要从中填充PDF中数据的相关XML。
+1. 在以PDF形式下载信件对话框中，选择要从中填充PDF数据的相关XML。
 
    >[!NOTE]
    >
-   >在将信件下载为平面PDF之前，您可以使用&#x200B;**[!UICONTROL 创建报告]**&#x200B;选项创建包含信件中数据的XML文件。
+   >在将信件下载为平面PDF之前，您可以使用 **[!UICONTROL 创建报表]** 选项。
 
-   ![以PDF格式下载信件](assets/6_downloadflatpdf.png)
+   ![将信件下载为PDF](assets/6_downloadflatpdf.png)
 
-   这封信以平面PDF形式下载到您的计算机。
+   这封信以平面PDF下载到你的电脑。

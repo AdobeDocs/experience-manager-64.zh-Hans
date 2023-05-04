@@ -1,8 +1,8 @@
 ---
 title: 设计和设计人员
-seo-title: 设计和设计人员
-description: 您需要为网站创建设计，并在AEM中使用Designer实现
-seo-description: 您需要为网站创建设计，并在AEM中使用Designer实现
+seo-title: Designs and the Designer
+description: 您需要为网站创建设计，而在AEM中，使用Designer来创建设计
+seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
 uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,34 +10,38 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: 8a4fc7c7-03bc-44db-93f1-dbd76fc9dbd7
-source-git-commit: 9ae048ca2811a56c5d6f0b2415fcfcccc4384dbf
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 0%
+source-wordcount: '398'
+ht-degree: 1%
 
 ---
 
-# 设计和设计器{#designs-and-the-designer}
+# 设计和设计人员{#designs-and-the-designer}
 
 >[!CAUTION]
 >
->本文介绍了如何基于经典UI创建网站。 Adobe建议为您的网站利用最新的AEM技术，详情请参阅[AEM Sites开发入门](/help/sites-developing/getting-started.md)一文。
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-Designer用于使用AEM中的[经典UI](/help/release-notes/touch-ui-features-status.md)为您的网站创建设计。
+>[!CAUTION]
+>
+>本文介绍了如何基于经典UI创建网站。 Adobe建议将最新的AEM技术用于您的网站，如文章中所述 [开发入门AEM Sites](/help/sites-developing/getting-started.md).
+
+设计器用于使用 [经典UI](/help/release-notes/touch-ui-features-status.md) 在AEM中。
 
 >[!NOTE]
 >
->有关Web无障碍的更多信息，请参阅[AEM和Web无障碍准则](/help/managing/web-accessibility.md)。
+>有关Web辅助功能的更多信息，请参阅 [AEM和Web无障碍准则](/help/managing/web-accessibility.md).
 
-## 使用Designer {#using-the-designer}
+## 使用设计器 {#using-the-designer}
 
-可以在&#x200B;**工具**&#x200B;选项卡的&#x200B;**designs**&#x200B;部分中定义您的设计：
+您的设计可在 **设计** 部分 **工具** 选项卡：
 
 ![screen_shot_2012-02-01at30237pm](assets/screen_shot_2012-02-01at30237pm.png)
 
 在此，您可以创建存储设计所需的结构，然后上传所需的级联样式表和图像。
 
-设计存储在`/apps/<your-project>`下。 要用于网站的设计路径是使用`jcr:content`节点的`cq:designPath`属性指定的。
+设计存储在 `/apps/<your-project>`. 要用于网站的设计路径，使用 `cq:designPath` 属性 `jcr:content` 节点。
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -45,7 +49,7 @@ Designer用于使用AEM中的[经典UI](/help/release-notes/touch-ui-features-st
 >
 >在设计模式下对页面所做的所有更改都会保留在网站设计节点下方，并自动应用于具有相同设计的所有页面。
 
-## 您需要的{#what-you-will-need}
+## 您需要的 {#what-you-will-need}
 
 要实现您的设计，您需要：
 
@@ -53,9 +57,9 @@ Designer用于使用AEM中的[经典UI](/help/release-notes/touch-ui-features-st
 
 **图像**  — 用于背景、按钮等功能的任何图像。
 
-### 设计网站{#considerations-when-designing-your-website}时的注意事项
+### 设计网站时的注意事项 {#considerations-when-designing-your-website}
 
-在开发网站时，强烈建议在`/apps/<your-project>`下存储图像和CSS文件，以便您能够根据当前设计（如以下代码片段所述）引用资源。
+在开发网站时，强烈建议在 `/apps/<your-project>` 这样，您就可以根据当前设计引用资源，如以下代码片段所述。
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
@@ -64,6 +68,6 @@ Designer用于使用AEM中的[经典UI](/help/release-notes/touch-ui-features-st
 上例提供了以下几项优势：
 
 * 组件的外观可能因使用不同设计路径的每个网站而异。
-* 只需将设计路径指向站点根目录下从`design/v1`到`design/v2.`的其他节点，即可轻松完成网站的重新设计
+* 只需将设计路径指向网站根目录的其他节点(从 `design/v1` to `design/v2.`
 
-* `/etc/designs` 和是 `/content` 浏览器唯一看到保护您的外部用户的外部URL，外部用户对树下的内容感到 `/apps` 好奇。上述URL优势还有助于系统管理员设置更好的安全性，因为您将资产的泄露限制在几个不同的位置。
+* `/etc/designs` 和 `/content` 是浏览器唯一看到的外部URL，用于保护您的外部用户对您下面的内容有所了解 `/apps` 树。 上述URL优势还有助于系统管理员设置更好的安全性，因为您将资产的泄露限制在几个不同的位置。

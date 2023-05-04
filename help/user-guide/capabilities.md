@@ -6,14 +6,18 @@ seo-description: An overview of the essential capabilities of AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 43%
+source-wordcount: '159'
+ht-degree: 36%
 
 ---
 
 # AEM 6.4功能用户指南 {#aem-64-capabilities-user-guides}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## AEM Foundation {#aem-foundation}
 

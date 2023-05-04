@@ -1,51 +1,53 @@
 ---
-title: 发布 Dynamic Media 资产
+title: 发布Dynamic Media Assets
 description: 如何发布Dynamic Media资产，包括这些资产的HTTP/2交付。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: ebe30c07-1d76-4338-b301-49591f981688
-feature: 资产管理
+feature: Asset Management
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 21%
+source-wordcount: '445'
+ht-degree: 9%
 
 ---
 
-# 发布 Dynamic Media 资产 {#publishing-dynamic-media-assets}
+# 发布Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-您可以通过选择Dynamic Media资产并点按&#x200B;**[!UICONTROL 发布]**&#x200B;来发布该资产。 发布Dynamic Media资产后，您便可以通过URL或嵌入方式将其包含在网页中。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-您还可以立即发布上传的资产，无需任何用户干预。 请参阅[配置Dynamic Media - Scene7模式](config-dms7.md)。
+您可以通过选择Dynamic Media资产并点按 **[!UICONTROL 发布]**. 发布Dynamic Media资产后，您便可以通过URL或嵌入方式将其包含在网页中。
+
+您还可以立即发布上传的资产，无需任何用户干预。 请参阅 [配置Dynamic Media - Scene7模式](config-dms7.md).
 
 在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，资产名称的正下方会显示一个小地球图标，指示资产已发布。在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
 
 >[!NOTE]
 >
->如果资产已发布，则您可以使用AEM将资产移动到其他文件夹，并从新位置重新发布，则原始已发布的资产位置以及新重新发布的资产仍然可用。但是，原始已发布的资产将“丢失”到AEM，无法取消发布。因此，作为最佳实践，请先取消发布资产，然后再将资产移动到其他文件夹。
+>如果资产已发布，则您可以使用AEM将资产移动到其他文件夹，并从新位置重新发布，则原始已发布的资产位置以及新重新发布的资产仍然可用。 但是，原始已发布的资产将“丢失”到AEM，无法取消发布。 因此，作为最佳实践，请先取消发布资产，然后再将资产移动到其他文件夹。
 
-如果您打算在对视频资产进行编码后立即发布这些资产，请确保编码已完成。当视频仍在编码时，系统会告知您视频处理工作流正在进行中。视频编码完成后，您应该能够预览视频演绎版。此时，您便可以安全地发布视频，而不会出现任何发布错误。
+如果您打算在对视频资产进行编码后立即发布这些资产，请确保编码已完成。 当视频仍在编码时，系统会告知您视频处理工作流正在进行中。 视频编码完成后，您应该能够预览视频演绎版。 此时，您便可以安全地发布视频，而不会出现任何发布错误。
 
-另请参阅[将 URL 关联到您的 Web 应用程序](linking-urls-to-yourwebapplication.md)。
+另请参阅 [将URL关联到您的Web应用程序](linking-urls-to-yourwebapplication.md).
 
-另请参阅[在网页上嵌入视频查看器。](embed-code.md)
+另请参阅 [在网页上嵌入视频查看器。](embed-code.md)
 
 >[!NOTE]
 >
->* 要使用 URL，必须先发布资产。如果资产未发布，您便无法将 URL 复制并粘贴到 Web 浏览器。
+>* 必须发布资产才能使用URL。 如果资产未发布，则无法将URL复制并粘贴到Web浏览器中。
 >* 必须激活并发布图像预设和查看器预设才能进行实时交付。
-
 >
 
 
-
-有关发布集或资产的详细信息，请参阅[发布资产。](managing-assets-touch-ui.md)
+有关发布集或资产的详细信息，请参阅 [发布资产。](managing-assets-touch-ui.md)
 
 ## HTTP/2交付Dynamic Media资产 {#http-delivery-of-dynamic-media-assets}
 
 AEM现在支持通过HTTP/2交付所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可与接受托管资产的任何应用程序集成。 然后，将通过HTTP/2协议来交付已发布的资产。 这种交付方法改进了浏览器和服务器通信的方式，从而可以缩短所有Dynamic Media资产的响应和加载时间。
 
-请参阅[HTTP/2内容交付常见问题解答](/help/sites-administering/scene7-http2faq.md)以了解更多信息。
+请参阅 [HTTP/2内容交付常见问题解答](/help/sites-administering/scene7-http2faq.md) 以了解更多。

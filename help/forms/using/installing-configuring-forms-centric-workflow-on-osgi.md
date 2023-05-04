@@ -8,14 +8,18 @@ topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
 role: Admin
 exl-id: 308b106f-4c5a-49d6-a7f6-c1e8a0bf62e9
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 7%
+source-wordcount: '1645'
+ht-degree: 6%
 
 ---
 
 # 在OSGi上安装和配置以Forms为中心的工作流 {#installing-and-configuring-forms-centric-workflow-on-osgi}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 简介 {#introduction}
 
@@ -109,7 +113,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含有关O
 1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)，并单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
 1. 选择包并单击 **[!UICONTROL 安装]**.
 
-   您还可以通过 [AEM Forms版本](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 文章。
+   您还可以通过 [AEM Forms版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 文章。
 
 1. 安装包后，系统会提示您重新启动AEM实例。 **不要立即重新启动服务器。** 在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止显示在 [AEM-Installation-Directory]/crx-quickstart/logs/error.log文件和日志稳定。
 1. 对所有创作实例和发布实例重复步骤1-7。
@@ -166,7 +170,7 @@ Dispatcher正在为AEM缓存和负载平衡工具。 AEM Dispatcher还有助于�
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   保存并关闭文件。 有关过滤器的详细信息，请参阅 [Dispatcher文档](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   保存并关闭文件。 有关过滤器的详细信息，请参阅 [Dispatcher文档](https://helpx.adobe.com/cn/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. 配置反向链接过滤器服务：
 
@@ -176,7 +180,7 @@ Dispatcher正在为AEM缓存和负载平衡工具。 AEM Dispatcher还有助于�
 
 缓存是一种缩短数据访问时间、减少延迟并提高输入/输出(I/O)速度的机制。 自适应表单缓存仅存储自适应表单的HTML内容和JSON结构，而不保存任何预填充数据。 这有助于减少渲染自适应表单所需的时间。
 
-* 使用自适应表单缓存时，使用 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) 缓存自适应表单的客户端库（CSS和JavaScript）。
+* 使用自适应表单缓存时，使用 [AEM Dispatcher](https://helpx.adobe.com/cn/experience-manager/dispatcher/using/dispatcher-configuration.html) 缓存自适应表单的客户端库（CSS和JavaScript）。
 * 在开发自定义组件时，在用于开发的服务器上保持禁用自适应表单缓存。
 
 执行以下步骤以配置自适应表单缓存：
@@ -196,7 +200,7 @@ Acrobat Sign为自适应表单启用电子签名工作流。 电子签名改进�
 
 要将Acrobat Sign与AEM Forms结合使用， [将Acrobat Sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
-## 下面的步骤 {#next-steps}
+## 后续步骤 {#next-steps}
 
 您已配置一个环境，以在OSGi功能上使用以Forms为中心的工作流。 现在，使用该功能的步骤是：
 

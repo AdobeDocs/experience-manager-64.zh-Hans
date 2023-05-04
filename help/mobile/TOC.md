@@ -7,10 +7,11 @@ breadcrumb-title: Mobile 指南
 user-guide-description: 创建和管理移动应用程序的内容。
 feature: Mobile
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 12%
+ht-degree: 10%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 12%
 
 + [Mobile用户指南概述](home.md)
 + AEM Mobile简介 {#introduction}
-   + [AEM Mobile 入门](getting-started-aem-mobile.md)
+   + [开始使用AEM Mobile](getting-started-aem-mobile.md)
    + [AEM Mobile On-Demand](getting-started-aem-mobile-on-demand.md)
    + [移动应用程序](mobile-apps.md)
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)

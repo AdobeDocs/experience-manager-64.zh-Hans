@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
 exl-id: ae0463de-271f-47c0-b947-f6d149ded8ab
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '945'
 ht-degree: 5%
 
 ---
 
 # 设置Visual Studio项目并构建Windows应用程序 {#set-up-the-visual-studio-project-and-build-the-windows-app}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM Forms提供AEM Forms应用程序的完整源代码。 该源包含用于构建自定义工作区应用程序的所有组件。 源代码存档， `adobe-lc-mobileworkspace-src-<version>.zip`是 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 软件包。
 
@@ -85,11 +89,11 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 该源包含用于构�
 
 1. 在“创建应用程序包”向导中，选择天气或您不希望将应用程序上传到Windows应用商店，然后单击 **下一个**.
 
-   ![createapppackage向导1](assets/createapppackageswizard1.png)
+   ![createapppackageswizard1](assets/createapppackageswizard1.png)
 
 1. 根据需要，在参数中进行更改，例如应用程序内部版本的版本和输出位置。
 
-   ![createapppackage向导2](assets/createapppackageswizard2.png)
+   ![createapppackageswizard2](assets/createapppackageswizard2.png)
 
 1. 构建项目后，您可以使用以下方法安装应用程序：
 

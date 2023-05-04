@@ -5,21 +5,25 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: c6d321f5-4c48-47f2-bff1-c4da988c0e84
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 2%
+source-wordcount: '198'
+ht-degree: 4%
 
 ---
 
 # 使用资产分析演示包 {#using-demo-package-for-asset-insights}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 使用演示包，您可以启用Adobe资产分析，以从中捕获数据并为示例网页生成分析。
 
-## 将[!DNL Experience Manager]资产分析与示例网页结合使用  {#using-aem-assets-insights-with-sample-web-page}
+## 使用 [!DNL Experience Manager] 包含示例网页的资产分析  {#using-aem-assets-insights-with-sample-web-page}
 
-1. 按照[配置资产分析](touch-ui-configuring-asset-insights.md)中的说明配置资产分析。
-1. 从下面下载示例[!DNL Experience Manager] Assets包，然后从CRXDE包管理器安装该包。
+1. 按照 [配置资产分析](touch-ui-configuring-asset-insights.md).
+1. 下载示例 [!DNL Experience Manager] 下面的资产包，并从CRXDE包管理器安装该包。
 
 [获取文件](assets/insightsdemo.zip)
 
@@ -35,4 +39,4 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >外部网页本身可以是[!DNL Experience Manager]。
+   >外部网页可以位于 [!DNL Experience Manager] 自己。

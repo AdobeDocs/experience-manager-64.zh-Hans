@@ -1,8 +1,8 @@
 ---
 title: 使用停止的操作和分支
-seo-title: 使用停止的操作和分支
+seo-title: Working with stalled operations and branches
 description: “停止的操作”页和“停止的分支”页显示已停止的进程。
-seo-description: “停止的操作”页和“停止的分支”页显示已停止的进程。
+seo-description: The Stalled Operations page and the Stalled Branches page show the processes that have stalled.
 uuid: 5f6202b0-79c2-4c3c-847a-236c0366e60b
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 exl-id: 04a832d5-1ab5-4db3-b185-57fba21eb839
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
-# 使用停止的操作和分支{#working-with-stalled-operations-and-branches}
+# 使用停止的操作和分支 {#working-with-stalled-operations-and-branches}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 “停止的操作”页和“停止的分支”页显示已停止的进程。 当执行操作期间或之后发生错误或由于进程中蓄意停止操作而导致错误时，进程可能会停止：
 
@@ -32,11 +36,11 @@ ht-degree: 0%
 
 **状态：** 对于已停止的项目，始终处于停止状态。
 
-**错误：** 对问题的简短描述。
+**错误：** 问题的简短描述。
 
-**进程ID:** 在实例化进程时（即，当用户或自动步骤启动进程时），工作流分配的正整数。您可以使用此标识符在流程实例的生命周期中跟踪该实例。
+**进程ID:** 工作流在实例化进程时分配的正整数（即，当用户或自动步骤启动进程时）。 您可以使用此标识符在流程实例的生命周期中跟踪该实例。
 
-**进程名称 — 版本：** 在Workbench中分配的进程的名称。
+**进程名称 — 版本：** 在Workbench中分配的流程的名称。
 
 **停止日期：** 操作或分支停止的日期和时间。
 
@@ -45,7 +49,7 @@ ht-degree: 0%
 * 选择一个错误以查看有关该错误的详细信息。 选择错误时，将显示“错误详细信息”页面。
 * 终止或重试停止的操作或重试停止的分支。
 
-## 终止或重试停止的操作或分支{#terminating-or-retrying-stalled-operations-or-branches}
+## 终止或重试停止的操作或分支 {#terminating-or-retrying-stalled-operations-or-branches}
 
 在“停止的操作”页上，您可以终止显示的流程实例。
 
@@ -55,17 +59,17 @@ ht-degree: 0%
 
 重试操作时，将发送Forms工作流请求以重新启动操作。 如果导致进程停止的错误已修复且重试请求成功，则进程从停止点开始再次运行，其状态将变为“正在运行”。 如果无法重新启动该操作，则它仍保持STALLED状态，您可能需要终止该操作。
 
-### 终止停止的操作{#terminate-a-stalled-operation}
+### 终止停止的操作 {#terminate-a-stalled-operation}
 
 1. 在管理控制台中，单击服务>表单工作流>停止操作错误。
 1. 在“停止的操作”页上，选择要终止的项目，然后单击终止。
 
-### 重试停止的操作或分支{#retry-a-stalled-operation-or-branch}
+### 重试停止的操作或分支 {#retry-a-stalled-operation-or-branch}
 
 1. 在管理控制台中，单击“服务”>“表单工作流”，然后单击“停止操作错误”或“停止的分支错误”。
 1. 在“停止的操作”或“停止的分支”页面上，选择要重试的项目，然后单击“重试”。
 
-## 查看有关停止操作或分支{#viewing-error-details-about-stalled-operations-or-branches}的错误详细信息
+## 查看有关停止操作或分支的错误详细信息 {#viewing-error-details-about-stalled-operations-or-branches}
 
 如果从“停止操作”或“停止的分支”页上的停止项目列表中选择错误，则会显示“错误详细信息”页，其中显示有关错误的详细信息，可帮助您解决问题。
 
@@ -73,14 +77,14 @@ ht-degree: 0%
 
 您还可以从“错误详细信息”页中终止或重试停止的操作，并重试停止的分支。
 
-## 当呈报用户不存在{#process-does-not-stall-when-escalation-user-does-not-exist}时，进程不会停止
+## 当呈报用户不存在时，进程不会停止 {#process-does-not-stall-when-escalation-user-does-not-exist}
 
 当将AEM Forms用户服务中的“分配任务”操作配置为在特定时间段后将任务呈报给其他用户，并且在“分配任务”操作执行后但在呈报发生之前删除呈报用户时，会发生错误。
 
 出现这种情况时，流程和任务的状态在配置的升级时间不会更改，并且升级不会发生，但进程不会停止。 服务器日志中显示以下消息：
 
-&quot;为呈报指定的主体对于taskID无效：*数字*，指定的队列：*number*。&quot;
+&quot;为呈报指定的主体对于taskID无效： *数字*，指定队列： *数字*.&quot;
 
 如果在生成任务之前（在“分配任务”操作执行之前）删除呈报用户，则进程会停止或引发InvalidPrincipal异常事件。
 
-为防止出现此问题，在删除用户时，请搜索属于该用户的任务并相应地处理这些任务。 （请参阅[处理任务](/help/forms/using/admin-help/tasks.md#working-with-tasks)。）
+为防止出现此问题，在删除用户时，请搜索属于该用户的任务并相应地处理这些任务。 (请参阅 [处理任务](/help/forms/using/admin-help/tasks.md#working-with-tasks).)

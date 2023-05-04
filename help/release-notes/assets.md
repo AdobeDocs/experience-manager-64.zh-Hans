@@ -1,5 +1,5 @@
 ---
-title: AEM Assets 发行说明
+title: AEM Assets发行说明
 seo-title: AEM Assets
 description: 特定于Adobe Experience Manager 6.4 Assets的发行说明。
 seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 2%
+source-wordcount: '1677'
+ht-degree: 1%
 
 ---
 
-# AEM Assets 发行说明 {#aem-assets-release-notes}
+# AEM Assets发行说明 {#aem-assets-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM 6.4 Assets中的主要功能、亮点和增强功能在这些发行说明中进行了介绍。 有关详细信息，请遵循提供的链接。
 
@@ -84,7 +88,7 @@ AEM 6.4包含多种高级元数据管理功能，可大规模管理元数据，�
 * 新增了批量元数据导入功能，可导入CSV文件以添加新元数据，从而一次性更新多个资产的现有元数据。 此操作是异步的，不会影响系统性能。 完成后，将通过AEM通知系统通知用户。
 * 使用元数据架构工具新增了级联和上下文元数据。 现在，可以定义依赖关系链和字段之间的值映射。 您还可以定义显示/隐藏元数据表单字段的上下文。 这样，您就可以随时根据其他字段中的值显示相关字段。
 
-## 报告 {#reports}
+## 报表 {#reports}
 
 AEM 6.4提供了显着的资产报告增强功能：
 
@@ -103,7 +107,7 @@ AEM 6.4提供了显着的资产报告增强功能：
 * **报表改进**:提供了三份OOTB报告：下载、发布和链接共享。
 * **基于DRM的限制**:授权资产过期后，将无法再从Brand Portal下载。
 
-## AEM 桌面应用程序 {#aem-desktop-app}
+## AEM桌面应用程序 {#aem-desktop-app}
 
 AEM桌面应用程序已更新到版本1.8，该版本与AEM 6.4兼容。AEM桌面应用程序的完整更改列表在专用的 [AEM桌面应用程序发行说明](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) 文档。\
 以下是自AEM 6.3发布以来AEM桌面应用程序亮点列表：

@@ -1,8 +1,8 @@
 ---
 title: AEM Forms关于OSGi组和权限
-seo-title: AEM Forms关于OSGi组和权限
+seo-title: AEM Forms on OSGi Groups and Privileges
 description: 将用户分配到组以在OSGi中管理AEM Forms
-seo-description: 将用户分配到组以在OSGi中管理AEM Forms
+seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,20 +11,24 @@ topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 role: Admin
 exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '290'
+ht-degree: 3%
 
 ---
 
 # AEM Forms关于OSGi组和权限 {#aem-forms-on-osgi-groups-and-privileges}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 将用户分配到组以在OSGi中管理AEM Forms
 
-您可以[创建组](/help/sites-administering/user-group-ac-admin.md#group-administration)，并将策略和[用户](/help/sites-administering/user-group-ac-admin.md#user-administration)分配给AEM中的组。 这些策略控制属于组的用户的权限。
+您可以 [创建组](/help/sites-administering/user-group-ac-admin.md#group-administration) 并分配策略和 [用户](/help/sites-administering/user-group-ac-admin.md#user-administration) 到AEM中的组。 这些策略控制属于组的用户的权限。
 
-安装[AEM Forms附加组件包](/help/forms/using/installing-configuring-aem-forms-osgi.md)后，本文中提到的组（如forms-user和forms-power-user）将自动可用于分配。 下表列出了用户在OSGi上可根据组分配为AEM Forms执行的任务：
+安装后 [AEM Forms附加组件包](/help/forms/using/installing-configuring-aem-forms-osgi.md)，本文中提及的组（如forms-user和forms-power-user）可自动进行分配。 下表列出了用户在OSGi上可根据组分配为AEM Forms执行的任务：
 
 <table> 
  <tbody>
@@ -63,7 +67,7 @@ ht-degree: 1%
     </ul> </td> 
   </tr>
   <tr>
-   <td>模板作者<sup>[2]</sup></td> 
+   <td>模板 — 作者 <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>创建和预览自适应表单或交互式通信模板</li> 

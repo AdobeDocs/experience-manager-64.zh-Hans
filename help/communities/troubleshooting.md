@@ -1,8 +1,8 @@
 ---
 title: 疑难解答
-seo-title: 疑难解答
+seo-title: Troubleshooting
 description: 社区故障诊断（包括已知问题）
-seo-description: 社区故障诊断（包括已知问题）
+seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 1%
+source-wordcount: '403'
+ht-degree: 2%
 
 ---
 
 # 疑难解答 {#troubleshooting}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本节包含一些常见问题和已知问题。
 
@@ -54,7 +58,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 创作和发布失败的情况不同。 创作时，该过程会静默失败，而且只会不显示论坛主题。 在发布时，它会在页面上引发错误。
 
-有关更多信息，请参阅[com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API 。
+请参阅 [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API以了解更多信息。
 
 ## 共同关切 {#common-concerns}
 
@@ -62,9 +66,9 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 在启动期间（不是第1次，但是之后每次启动），日志中可能会显示以下警告：
 
-* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jkank.handlebars.Handlebars Helper &#39;i18n&#39;已被替换为“com.adobe.cq.social.handlebars.I18nHelper@15bac645”
+* 11.04.2014 08:38:07.223 **警告** [FelixStartLevel]com.github.jkank.handlebars.Handlebars Helper &#39;i18n&#39;已被“com.adobe.cq.social.handlebars.I18nHelper@15bac645”替换
 
-此警告可以安全地忽略，因为[SCF](scf.md#handlebarsjavascripttemplatinglanguage)使用的jkank.handlebars.Handlebars随其i18n帮助程序实用程序一起提供。 启动时，它被替换为特定于AEM的[i18n帮助程序](handlebars-helpers.md#i-n)。 此警告由第三方库生成，用于确认覆盖现有帮助程序。
+作为jkank.handlebars.Handlebars(由 [SCF](scf.md#handlebarsjavascripttemplatinglanguage)，随其自身的i18n帮助程序实用程序一起提供。 在启动时，它将被替换为特定于AEM的 [i18n助手](handlebars-helpers.md#i-n). 此警告由第三方库生成，用于确认覆盖现有帮助程序。
 
 ### 日志中的警告：OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

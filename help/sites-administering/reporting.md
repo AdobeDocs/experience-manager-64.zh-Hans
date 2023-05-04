@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
-source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2898'
 ht-degree: 6%
 
 ---
 
 # 报告 {#reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 为了帮助您监视和分析实例的状态，AEM提供了一系列默认报表选项，这些报表可根据您的各个要求进行配置：
 
@@ -169,7 +173,7 @@ ht-degree: 6%
 
 * **间隔**
 
-   可以选择月、周、日、小时来进行报表的规模和汇总。
+   可以选择月、周、日、小时，以进行报表的规模和汇总。
 
    例如，如果每日快照在2011年2月可用：
 

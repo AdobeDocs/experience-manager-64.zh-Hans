@@ -1,8 +1,8 @@
 ---
 title: 应用程序管理器服务JavaAPI快速入门(SOAP)
-seo-title: 应用程序管理器服务JavaAPI快速入门(SOAP)
+seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
 description: 使用应用程序管理器服务，使用Java API快速入门部署和删除应用程序。
-seo-description: 使用应用程序管理器服务，使用Java API快速入门部署和删除应用程序。
+seo-description: Use the Application Manager service to deploy and remove applications using the Java API Quick Start.
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 role: Developer
 exl-id: 1d93a7c2-631a-4cf7-938f-0133536c7e09
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 0%
+source-wordcount: '247'
+ht-degree: 2%
 
 ---
 
-# 应用程序管理器服务JavaAPI快速启动(SOAP){#application-manager-service-javaapi-quick-start-soap}
+# 应用程序管理器服务JavaAPI快速入门(SOAP) {#application-manager-service-javaapi-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 Java API快速入门(SOAP)可用于应用程序管理器服务。
 
@@ -34,11 +38,11 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->使用AEM表单进行编程中的Java API(SOAP)快速入门基于Forms（如果您使用的是其他操作系统，如Unix），则使用适用操作系统支持的路径替换特定于Windows的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>使用AEM表单进行编程中的Java API(SOAP)快速入门基于Forms（如果您使用的是其他操作系统，如Unix），则使用适用操作系统支持的路径替换特定于Windows的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-deploying-applications-using-the-java-api}部署应用程序
+## 快速入门（SOAP模式）：使用Java API部署应用程序 {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
-以下Java代码示例基于名为&#x200B;*EncryptDocument.lca*&#x200B;的现有LCA文件导入应用程序。
+以下Java代码示例基于名为的现有LCA文件导入应用程序 *EncryptDocument.lca*.
 
 ```as3
  /* 
@@ -138,9 +142,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-removing-an-application-using-the-java-api}删除应用程序
+## 快速入门（SOAP模式）：使用Java API删除应用程序 {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-以下Java代码示例删除了名为&#x200B;*EncryptDocument*&#x200B;的应用程序。
+以下Java代码示例将删除名为 *EncryptDocument*.
 
 ```as3
  /* 

@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: dfc6a660-e6b3-4395-a555-f4cf8f3fed91
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1224'
 ht-degree: 5%
 
 ---
 
 # 性能树{#performance-tree}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 范围 {#scope}
 
@@ -254,12 +258,12 @@ ht-degree: 5%
   <tr> 
    <td><strong>步骤 34</strong></td> 
    <td>升级Dispatcher版本</td> 
-   <td><p>您可以在此位置下载最新的Dispatcher版本：</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">跟踪链接</a></p> </td> 
+   <td><p>您可以在此位置下载最新的Dispatcher版本：</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">关注链接</a></p> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 35</strong></td> 
    <td>配置Dispatcher</td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">配置Dispatcher</a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/cn/experience-manager/dispatcher/using/dispatcher-configuration.html">配置Dispatcher</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>步骤 36</strong></td> 

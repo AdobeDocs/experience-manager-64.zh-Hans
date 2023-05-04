@@ -1,22 +1,26 @@
 ---
 title: 交易报表概述
-seo-title: 交易报表概述
+seo-title: Transaction Reports Overview
 description: 保留提交的所有表单、交互式通信渲染、转换为一种格式的文档，等等
-seo-description: 保留提交的所有表单、交互式通信渲染、转换为一种格式的文档，等等
+seo-description: Keep a count of all the forms submitted, interactive communication rendered, Documents converted to one format to another, and more
 uuid: b40220e6-88c8-4507-b228-6c57d9b54422
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 1fb11e02-d8f1-41a0-8e23-cb890b4e2244
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+exl-id: a545aa0a-9d71-48ba-ba3e-ed30a7e34f3d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 0%
+source-wordcount: '606'
+ht-degree: 1%
 
 ---
 
+# 交易报表概述 {#transaction-reports-overview}
 
-# 事务报表概述{#transaction-reports-overview}
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 保留提交的所有表单、交互式通信渲染、转换为一种格式的文档，等等
 
@@ -28,9 +32,9 @@ ht-degree: 0%
 * 交互式通信的打印版或Web版的再现
 * 将文档从一种文件格式转换为另一种文件格式
 
-有关被视为交易的详细信息，请参阅[计费API](/help/forms/using/transaction-reports-billable-apis.md)。
+有关被视为交易的内容的更多信息，请参阅 [计费API](/help/forms/using/transaction-reports-billable-apis.md).
 
-默认情况下，事务记录处于禁用状态。 您可以从AEM Web控制台中[启用事务记录](/help/forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports)。 您可以查看有关创作、处理或发布实例的事务报表。 查看所有交易汇总的作者或处理实例的交易报表。 查看发布实例上的事务报表，了解仅在运行报表的发布实例上发生的所有事务的计数。
+默认情况下，事务记录处于禁用状态。 您可以 [启用交易记录](/help/forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) 从AEM Web Console中。 您可以查看有关创作、处理或发布实例的事务报表。 查看有关所有交易汇总的作者或处理实例的交易报表。 查看发布实例上的事务报表，了解仅在运行报表的发布实例上发生的所有事务的计数。
 
 请勿在同一AEM实例上创作内容（创建自适应表单、交互式通信、主题和其他创作活动）和处理文档（使用工作流、文档服务和其他处理活动）。 对于用于创作内容的AEM Forms服务器，请禁用交易记录。 为用于处理文档的AEM Forms服务器启用事务记录。
 
@@ -40,9 +44,9 @@ ht-degree: 0%
 
 诸如提交PDF表单、使用代理UI预览交互式通信或使用非标准表单提交方法之类的操作不会计为交易。 AEM Forms提供了用于记录此类交易的API。 从自定义实施中调用API以记录交易。
 
-## 支持的拓扑{#supported-topology}
+## 支持的拓扑 {#supported-topology}
 
-交易报表仅在OSGi环境的AEM Forms上可用。 它支持创作发布、创作处理发布以及仅处理拓扑。 例如，请参阅[AEM Forms](/help/forms/using/transaction-reports-overview.md)的架构和部署拓扑。
+交易报表仅在OSGi环境的AEM Forms上可用。 它支持创作发布、创作处理发布以及仅处理拓扑。 例如，请参阅 [AEM Forms的架构和部署拓扑](/help/forms/using/transaction-reports-overview.md).
 
 事务计数会从发布实例反向复制到创作实例或处理实例。 下面显示了一个指示性的作者发布拓扑：
 
@@ -52,17 +56,16 @@ ht-degree: 0%
 >
 >AEM Forms事务报表不支持仅包含发布实例的拓扑。
 
-### 使用事务报表{#guidelines-for-using-transaction-reports}的准则
+### 使用交易报表的准则 {#guidelines-for-using-transaction-reports}
 
 * 禁用所有创作实例的事务报表，因为创作实例的报表包括在创作活动期间注册的事务。
-* 在创作实例上启用&#x200B;**仅显示发布事务**&#x200B;选项，以查看所有发布实例的累积事务。 您还可以仅查看每个发布实例的事务报表，以查看该特定发布实例的实际事务报表。
+* 启用 **仅显示来自发布的事务** 选项来查看所有发布实例的累积事务。 您还可以仅查看每个发布实例的事务报表，以查看该特定发布实例的实际事务报表。
 * 请勿使用创作实例来运行工作流和处理文档。
 * 在使用事务报告之前，如果您具有包含发布服务器的主题，请确保为所有发布实例启用了反向复制。
 * 事务数据会从发布实例反向复制到仅对应的创作或处理实例。 创作或处理实例无法进一步将数据复制到其他实例。 例如，如果您具有创作处理 — 发布拓扑，则聚合事务数据将仅复制到处理实例。
 
-## 相关文章{#related-articles}
+## 相关文章 {#related-articles}
 
 * [查看和了解交易报表](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [交易报表计费API](/help/forms/using/transaction-reports-billable-apis.md)
 * [记录自定义实施的交易](/help/forms/using/record-transaction-custom-implementation.md)
-

@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 1%
+source-wordcount: '593'
+ht-degree: 2%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets] 主页体验 {#aem-assets-home-page-experience}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 个性化 [!DNL Experience Manager Assets] 提供丰富的欢迎屏幕体验的主页，包括有关资产近期活动的快照。
 

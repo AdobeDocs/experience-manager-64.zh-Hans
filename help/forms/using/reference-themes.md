@@ -1,23 +1,27 @@
 ---
 title: 参考主题
 seo-title: Reference Themes
-description: 'AEM Forms提供了自适应表单主题，您可以从Software Distribution获取这些主题，并使用它们来设置表单样式。 '
+description: AEM Forms提供了自适应表单主题，您可以从Software Distribution获取这些主题，并使用它们来设置表单样式。
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
 
 # 参考主题 {#reference-themes}
 
-[](/help/forms/using/themes.md) 它们允许您在不了解CSS的情况下设置表单样式。除了默认主题之外，您还可以通过安装[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)来获取以下主题：
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+[主题](/help/forms/using/themes.md) 允许您在不深入了解CSS的情况下设置表单样式。 除了默认主题之外，您还可以通过安装[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
 
 * 柏利
 * 执行
@@ -34,13 +38,13 @@ ht-degree: 0%
 
 此包中包含的主题是响应式的，这些主题中的样式是为移动设备和桌面显示屏定义的。 各种设备上的大多数现代浏览器都可以轻松渲染使用其中一个主题应用的表单。
 
-有关安装软件包的更多信息，请参阅[如何使用软件包](/help/sites-administering/package-manager.md)。
+有关安装包的更多信息，请参阅 [如何使用包](/help/sites-administering/package-manager.md).
 
 ## 柏利 {#beryl}
 
-[We.Gov自适应表单](/help/forms/using/gov-reference-site-walkthrough.md)使用Beryl主题，并强调背景图像、透明度和大型平面图标的使用。 在下面的屏幕截图中，您可以看到Beryl主题的外观，以及它如何增强表单的样式。
-![Beryl主](assets/beryl.png)
-[题单击可放大](assets/beryl-1.png)
+柏力主题由 [We.Gov自适应表单](/help/forms/using/gov-reference-site-walkthrough.md)，并强调背景图像、透明度和大型平面图标的使用。 在下面的屏幕截图中，您可以看到Beryl主题的外观，以及它如何增强表单的样式。
+![柏力主题](assets/beryl.png)
+[单击放大](assets/beryl-1.png)
 
 ## 执行 {#exec}
 

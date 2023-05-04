@@ -5,19 +5,23 @@ contentOwner: AG
 feature: Upload,Asset Ingestion,Asset Management
 role: Admin,Architect
 exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '252'
 ht-degree: 31%
 
 ---
 
 # 配置资产上传限制 {#configuring-asset-upload-restrictions}
 
-您可以配置Adobe Experience Manager Assets，以限制用户可以上传的资产（文件）类型。 此功能可帮助您消除用户以不需要的格式上传资产或上传任何恶意文件的可能性。 `Day CQ DAM Asset Upload Restriction`服务允许您控制用户可上传的文件类型。 默认情况下，[!DNL Experience Manager]资产允许用户上传所有MIME类型的资产。 但是，您可以配置该服务，以限制用户仅上传特定MIME类型的文件。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-1. 要打开Configuration Manager Web控制台，请访问`https://[AEM_server]:[port]/system/console/configMgr`。
-1. 在编辑模式下打开&#x200B;**[!UICONTROL Day CQ DAM资产上传限制]**&#x200B;服务。 默认情况下，选中&#x200B;**允许所有MIME**&#x200B;选项，该选项允许用户上传所有MIME类型的文件。
+您可以配置Adobe Experience Manager Assets，以限制用户可以上传的资产（文件）类型。 此功能可帮助您消除用户以不需要的格式上传资产或上传任何恶意文件的可能性。 的 `Day CQ DAM Asset Upload Restriction` 服务允许您控制用户可上传的文件类型。 默认情况下， [!DNL Experience Manager] 资产允许用户上传所有MIME类型的资产。 但是，您可以配置该服务，以限制用户仅上传特定MIME类型的文件。
+
+1. 要打开Configuration Manager Web控制台，请访问 `https://[AEM_server]:[port]/system/console/configMgr`.
+1. 打开 **[!UICONTROL Day CQ DAM资产上传限制]** 服务。 默认情况下， **允许所有MIME** 选项，该选项允许用户上传所有MIME类型的文件。
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 

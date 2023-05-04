@@ -12,14 +12,18 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 2%
+source-wordcount: '1865'
+ht-degree: 1%
 
 ---
 
 # 迁移 AEM Forms 资产和文档 {#migrate-aem-forms-assets-and-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 迁移实用程序将 [自适应Forms资产](/help/forms/using/introduction-forms-authoring.md), [云配置](/help/sites-developing/extending-cloud-config.md)和 [通信管理资产](/help/forms/using/cm-overview.md) 从早期版本中使用的格式到AEM 6.4 Forms中使用的格式。 运行迁移实用程序时，将迁移以下内容：
 
@@ -173,4 +177,4 @@ ht-degree: 2%
    1. 在Forms用户界面中上传XFA。
 
 1. 在迁移之前，发布之前在之前的系统中发布的所有资产。 迁移实用程序仅更新创作实例上的资产，并更新发布实例上发布资产所需的资产。
-1. 在AEM Forms 6.4中，表单用户组的某些权限发生了更改。 如果您希望任何用户能够上传包含脚本的XDP和自适应Forms，或者使用代码编辑器，则需要将它们添加到支持表单的用户组。 同样，模板作者无法再在规则编辑器中使用代码编辑器。 为使用户能够使用代码编辑器，请将他们添加到 af-template-script-writers 组。有关将用户添加到群组的说明，请参阅 [管理用户和用户组](/help/communities/users.md).
+1. 在AEM Forms 6.4中，表单用户组的某些权限发生了更改。 如果您希望任何用户能够上传包含脚本的XDP和自适应Forms，或者使用代码编辑器，则需要将它们添加到支持表单的用户组。 同样，模板作者无法再在规则编辑器中使用代码编辑器。 为使用户能够使用代码编辑器，请将它们添加到af-template-script-writers组。 有关将用户添加到群组的说明，请参阅 [管理用户和用户组](/help/communities/users.md).

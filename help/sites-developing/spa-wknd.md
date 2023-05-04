@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
 exl-id: 6ec7f037-3582-49ce-9297-6acd01283949
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '175'
 ht-degree: 17%
 
 ---
 
 # SPA WKND 教程{#spa-wknd-tutorial}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 通过本多部分教程，您可以领导您完成项目设置、组件映射、前端开发工具和应用程序路由来实施您自己的SPA，从而沉浸在SPA开发中。
 

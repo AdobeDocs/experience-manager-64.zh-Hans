@@ -11,14 +11,18 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: 2194bbbb-22d9-4422-aefb-9651fd795ca3
-source-git-commit: aa70ce1b05353e0d6f234c59df673486c8fa5082
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3894'
+source-wordcount: '3930'
 ht-degree: 6%
 
 ---
 
 # HTML5表单的脚本支持 {#scripting-support-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 HTML5表单中支持的JavaScript、FormCalc属性和方法如下所示：
 
@@ -720,7 +724,7 @@ HTML5表单中支持的JavaScript、FormCalc属性和方法如下所示：
    <td> </td> 
   </tr> 
   <tr> 
-   <td>字幕</td> 
+   <td>caption</td> 
    <td>标题对象描述与表单设计对象关联的描述性标签。</td> 
    <td> </td> 
   </tr> 
@@ -735,7 +739,7 @@ HTML5表单中支持的JavaScript、FormCalc属性和方法如下所示：
    <td>不支持在运行时设置值</td> 
   </tr> 
   <tr> 
-   <td>选定</td> 
+   <td>值</td> 
    <td>值对象将封装单个数据内容单位。<br /> </td> 
    <td> </td> 
   </tr> 
@@ -908,7 +912,7 @@ HTML5表单中支持的JavaScript、FormCalc属性和方法如下所示：
    <td>无</td> 
   </tr> 
   <tr> 
-   <td>mandatory</td> 
+   <td>强制</td> 
    <td>为字段指定nullTest值。</td> 
    <td>无</td> 
   </tr> 
@@ -948,7 +952,7 @@ HTML5表单中支持的JavaScript、FormCalc属性和方法如下所示：
    <td>无</td> 
   </tr> 
   <tr> 
-   <td>字幕</td> 
+   <td>caption</td> 
    <td>标题对象描述与表单设计对象关联的描述性标签。<br /> </td> 
    <td>无</td> 
   </tr> 
@@ -1124,7 +1128,7 @@ FormCalc是一种特定于XFA的语言，用于创建以电子表单为中心的
   <tr> 
    <td><strong>类别 </strong></td> 
    <td><strong>描述 </strong></td> 
-   <td><strong>示例 </strong></td> 
+   <td><strong>样本 </strong></td> 
   </tr> 
   <tr> 
    <td>简单表达式</td> 
@@ -1182,7 +1186,7 @@ FormCalc是一种特定于XFA的语言，用于创建以电子表单为中心的
    1. Ceil()
    1. 计数()
    1. Floor()
-   1. 最大()
+   1. Max()
    1. 最小()
    1. Mod()
    1. Round()

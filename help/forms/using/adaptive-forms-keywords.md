@@ -1,22 +1,26 @@
 ---
 title: 自适应表单关键词
-seo-title: 自适应表单关键词
+seo-title: Adaptive forms keywords
 description: 您不能在自适应表单中将这些保留字用作标识符。
-seo-description: 您不能在自适应表单中将这些保留字用作标识符。
+seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-feature: 自适应表单
+feature: Adaptive Forms
 exl-id: 45578c86-6ec8-4f9c-92d9-e2f28f989fd3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 5%
+source-wordcount: '244'
+ht-degree: 6%
 
 ---
 
-# 自适应表单关键词{#adaptive-forms-keywords}
+# 自适应表单关键词 {#adaptive-forms-keywords}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 自适应表单关键字是预定义的保留标识符，对自适应表单具有特殊含义。 您不能在自适应表单中将这些关键词用作标识符。 下表列出了作为自适应表单保留标识符的所有关键词。
 
@@ -58,7 +62,7 @@ ht-degree: 5%
    <td><p>实例</p> </td> 
   </tr>
   <tr>
-   <td><p>页面</p> </td> 
+   <td><p>标题</p> </td> 
    <td><p>resolveNode</p> </td> 
    <td><p>syncXFAProps</p> </td> 
   </tr>
@@ -78,7 +82,7 @@ ht-degree: 5%
    <td><p>子项</p> </td> 
   </tr>
   <tr>
-   <td><p>选定</p> </td> 
+   <td><p>值</p> </td> 
    <td><p>autoSaveInfo</p> </td> 
    <td><p>setAttribute</p> </td> 
   </tr>
@@ -103,7 +107,7 @@ ht-degree: 5%
    <td><p>name</p> </td> 
   </tr>
   <tr>
-   <td><p>mandatory</p> </td> 
+   <td><p>强制</p> </td> 
    <td><p>面板</p> </td> 
    <td><p>templateId</p> </td> 
   </tr>
@@ -130,7 +134,7 @@ ht-degree: 5%
   <tr>
    <td><p>宽度</p> </td> 
    <td><p>buttonText</p> </td> 
-   <td><p>索引</p> </td> 
+   <td><p>index</p> </td> 
   </tr>
   <tr>
    <td><p>高度</p> </td> 
@@ -240,4 +244,4 @@ ht-degree: 5%
  </tbody>
 </table>
 
-除了上面列出的关键字外，请避免使用与[自适应表单JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63)类似的名称。
+除了上面列出的关键词外，请避免使用与 [自适应表单JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).

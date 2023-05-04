@@ -1,8 +1,8 @@
 ---
 title: WCAG 2.0快速指南
-seo-title: WCAG 2.0快速指南
+seo-title: Quick Guide to WCAG 2.0
 description: 阅读WCAG 2.0无障碍准则的快速概述。
-seo-description: 阅读WCAG 2.0无障碍准则的快速概述。
+seo-description: Read a quick overview of the WCAG 2.0 accessibility guidelines.
 uuid: a5cf463e-89e9-4cc0-9c91-69a1fd3d8ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,18 +10,22 @@ topic-tags: managing-accessibility
 content-type: reference
 discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
 exl-id: 80edcd53-bc3c-4f61-8dfb-c592e7e51f60
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1708'
 ht-degree: 82%
 
 ---
 
-# WCAG 2.0{#quick-guide-to-wcag}快速指南
+# WCAG 2.0快速指南{#quick-guide-to-wcag}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 开发AEM是为了最大限度地遵守Web内容无障碍准则：
 
-[Web内容无障碍准则版本2.0(WCAG2)](https://www.w3.org/TR/WCAG/)是由[万维网联盟(W3C)](https://www.w3.org/)根据其[Web无障碍计划(WAI)](https://www.w3.org/WAI/)制定的一组国际公认准则。
+的 [Web内容无障碍准则版本2.0(WCAG2)](https://www.w3.org/TR/WCAG/) 是国际公认的准则 [万维网联盟(W3C)](https://www.w3.org/) 在 [Web无障碍倡议(WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.0 包含一系列非技术层面的准则及成功标准，旨在确保残障人士能够访问并使用 Web 内容。这些准则和成功标准向 Web 内容作者、设计人员和开发人员提供建议，确保他们创作的资源可尽可能多地供更多人访问，而无论他们具有任何缺陷；例如，视觉障碍、听力损失、学习困难、年龄限制等。
 
@@ -35,11 +39,11 @@ WCAG 2.0 包含一系列非技术层面的准则及成功标准，旨在确保�
 
 WCAG 2.0 的目的是提供以下准则：
 
-* 与技术无关：****
+* 是 **与技术无关：**
 
-   换句话说，准则可以应用于各种Web内容格式，而不仅仅是HTML。 因此，WCAG 2.0 可以涵盖由 PDF、Flash、JavaScript 和其他当前和未来 Web 技术生成或提供的内容。这旨在解决WCAG 1.0的一个公认弱点，即它以HTML为主，而牺牲其他Web内容格式。
+   换言之，准则可应用于各种Web内容格式，而不仅仅是HTML。 因此，WCAG 2.0 可以涵盖由 PDF、Flash、JavaScript 和其他当前和未来 Web 技术生成或提供的内容。这旨在解决WCAG 1.0中公认的缺陷，因为WCAG 1.0以牺牲其他Web内容格式为代价来HTML内容。
 
-* 是&#x200B;**可测试的：**
+* 是 **可测试：**
 
    每个准则的编写方式都是这样的，即可对其进行客观测试，以确保一组无障碍专家一般都同意已满足该准则要求。 无障碍准则的一个挑战是，虽然一些准则在技术上可以测试，但另一些准则需要人为判断来确定是否成功达到了准则要求。WCAG 2.0的编写目的是减少某些WCAG 1.0准则和检查点中存在的主观性。
 
@@ -91,7 +95,7 @@ WCAG 2.0包含四个用于无障碍设计的关键原则。 这四个关键原�
 ### WCAG 2.0 资源 {#wcag-resources}
 
 * [所有WCAG 2.0相关文档的概要](https://www.w3.org/WAI/intro/wcag.php);
-* [解释不同组件之间的关系](https://www.w3.org/WAI/intro/wcag20);
+* [不同组件之间如何关联的说明](https://www.w3.org/WAI/intro/wcag20);
 * [WCAG 2.0 常见问题解答](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 
 ### 用于 WCAG 2.0 的技术 {#techniques-for-wcag}
@@ -134,7 +138,7 @@ WCAG 2.1 是指一系列文档，它提供了一些建议可帮助读者理解�
 * 成功标准的目的；
 * 如何满足成功标准的一般示例；
 * 有关如何满足成功标准的相关（非 W3C）资源；
-* 技术与失败：如何满足成功标准的具体详细示例（详见下文）
+* 技术与失败：如何满足成功标准的具体详细示例（详见下文）；
 * 关键术语 - 理解成功标准的重要术语的术语表。
 
 示例可在[了解成功标准 1.1.1（“非文本内容”）](https://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/text-equiv-all.html)中找到。

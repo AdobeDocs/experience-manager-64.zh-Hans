@@ -1,8 +1,8 @@
 ---
 title: 代理服务器工具(proxy.jar)
-seo-title: 代理服务器工具(proxy.jar)
+seo-title: Proxy Server Tool (proxy.jar)
 description: 了解AEM中的代理服务器工具。
-seo-description: 了解AEM中的代理服务器工具。
+seo-description: Learn about the Proxy Server Tool in AEM.
 uuid: 9a095b12-1d54-4b79-b0c5-d973f16479d3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
 exl-id: fb96ed26-b5b6-4afc-a820-3ef45a9f3abd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1197'
 ht-degree: 0%
 
 ---
 
 # 代理服务器工具(proxy.jar){#proxy-server-tool-proxy-jar}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 代理服务器充当在客户机和服务器之间中继请求的中间服务器。 代理服务器会跟踪所有客户端与服务器的交互，并输出整个TCP通信的日志。 这样，您就可以准确监控所发生的情况，而无需访问主服务器。
 
@@ -35,7 +39,7 @@ ht-degree: 0%
 
 例如，可以在通过TCP/IP网络通信的任意两个应用程序之间放置代理服务器；例如，Web浏览器和AEM。 这允许您监视请求AEM页面时发生的确切情况。
 
-## 启动代理服务器工具{#starting-the-proxy-server-tool}
+## 启动代理服务器工具 {#starting-the-proxy-server-tool}
 
 该工具可在AEM安装的/opt/helpers文件夹中找到。 要启动该活动，请键入：
 
@@ -45,13 +49,13 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 ### 选项 {#options}
 
-* **q（静默模式）** 不将请求写入控制台窗口。如果您不想减慢连接速度，或者如果将输出记录到文件（请参阅 — logfile选项），请使用此选项。
-* **b（二进制模式）** 如果要在流量中查找特定的字节组合，请启用二进制模式。然后，输出将包含十六进制和字符输出。
-* **t（时间戳日志条目）** 向每个日志输出添加一个时间戳。时间戳以秒为单位，因此可能不适合检查单个请求。 如果您在较长的时间段内使用代理服务器，则可使用它查找在特定时间发生的事件。
-* **日志 &lt;filename> 文件（写入日志文件）** 将客户端 — 服务器对话写入日志文件。此参数也可在安静模式下工作。
-* **i(添 &lt;numindentions> 加缩进)** 为了更好的可读性，会缩进每个活动连接。默认为16级。 （proxy.jar版本1.16中的新增功能）。
+* **q（安静模式）** 不会将请求写入控制台窗口。 如果您不想减慢连接速度，或者如果将输出记录到文件（请参阅 — logfile选项），请使用此选项。
+* **b（二进制模式）** 如果要在流量中查找特定的字节组合，请启用二进制模式。 然后，输出将包含十六进制和字符输出。
+* **t（时间戳日志条目）** 向每个日志输出添加时间戳。 时间戳以秒为单位，因此可能不适合检查单个请求。 如果您在较长的时间段内使用代理服务器，则可使用它查找在特定时间发生的事件。
+* **日志文件 &lt;filename> （写入日志文件）** 将客户端 — 服务器对话写入日志文件。 此参数也可在安静模式下工作。
+* **i &lt;numindentions> （添加缩进）** 每个活动连接都会缩进，以提高可读性。 默认为16级。 （proxy.jar版本1.16中的新增功能）。
 
-## 代理服务器工具{#uses-of-the-proxy-server-tool}的使用
+## 代理服务器工具的使用 {#uses-of-the-proxy-server-tool}
 
 以下情景说明了可以使用代理服务器工具的一些目的：
 
@@ -63,7 +67,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**检查标头及其值** 以下日志条目示例显示服务器能够建立保持活动连接，并且内容长度标头已正确设置：
+**检查标题及其值** 以下日志条目示例显示服务器能够建立保持活动连接，并且内容长度标头已正确设置：
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -73,7 +77,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **检查“保持活动状态”是否有效**
 
-**保留 —** 保留 — 保留意味着客户端重新使用与服务器的连接来传输多个文件（页面代码、图片、样式表等）。如果没有保持活动状态，客户必须为每个请求建立新连接。
+**保持活动状态** 是指客户端重新使用与服务器的连接来传输多个文件（页面代码、图片、样式表等）。 如果没有保持活动状态，客户必须为每个请求建立新连接。
 
 要检查保持活动状态是否有效，请执行以下操作：
 
@@ -99,7 +103,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 1. 等待或写入访问日志到文件中 — 每个条目都有时间戳。
 1. 当请求开始挂起时，您可以看到有多少个连接处于打开状态，以及哪个请求会导致问题。
 
-## 日志消息{#the-format-of-log-messages}的格式
+## 日志消息的格式 {#the-format-of-log-messages}
 
 proxy.jar生成的日志条目均具有以下格式：
 
@@ -115,7 +119,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 
 * C表示此条目来自客户端（它是对网页的请求）
 * 0是连接号（连接计数器从0开始）
-* # 00000字节流中的偏移。 这是第一个条目，因此偏移为0。
+* #00000字节流中的偏移。 这是第一个条目，因此偏移为0。
 * [GET &lt;?>] 是请求的内容，在示例中为一个HTTP头(url)。
 
 当连接关闭时，将记录以下信息：
@@ -127,7 +131,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 这显示在第6个连接上以平均速度在客户端和服务器之间传递的字节数。
 
-## 日志输出{#an-example-of-log-output}的示例
+## 日志输出示例 {#an-example-of-log-output}
 
 我们将审核一个简单的模板，该模板可根据要求生成以下代码：
 
@@ -224,7 +228,7 @@ C-0-Finished: 516 bytes (0.0 kb/s)
 S-0-Finished: 374 bytes (0.0 kb/s)
 ```
 
-现在，连接1的输出开始，连接1将下载HTML代码中包含的图像：
+现在，连接1的输出将开始，连接1将下载HTML代码中包含的图像：
 
 ```xml
 C-1-#000000 -> [GET /author/logo.gif HTTP/1.1 ]

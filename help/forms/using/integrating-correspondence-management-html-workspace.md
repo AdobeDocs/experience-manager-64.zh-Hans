@@ -1,21 +1,25 @@
 ---
 title: 在AEM Forms工作区中集成第三方应用程序
-seo-title: 在AEM Forms工作区中集成第三方应用程序
+seo-title: Integrating third-party applications in AEM Forms workspace
 description: 如何在AEM Forms工作区中集成诸如通信管理之类的第三方应用程序。
-seo-description: 如何在AEM Forms工作区中集成诸如通信管理之类的第三方应用程序。
+seo-description: How-to integrate third-party apps like Correspondence Management in AEM Forms workspace.
 uuid: 9649157c-fe28-43bf-a7d3-52ed55a0bf4f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 exl-id: 4df9a16c-0853-4bbf-81bb-1856ab55c5ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 0%
+source-wordcount: '659'
+ht-degree: 1%
 
 ---
 
-# 在AEM Forms工作区中集成第三方应用程序{#integrating-third-party-applications-in-aem-forms-workspace}
+# 在AEM Forms工作区中集成第三方应用程序 {#integrating-third-party-applications-in-aem-forms-workspace}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM Forms工作区支持对表单和文档的任务分配和完成活动进行管理。 这些表单和文档可以是XDP Forms、Flex®表单或已以XDP、PDF、HTML或Flex格式呈现的指南（已弃用）。
 
@@ -23,28 +27,28 @@ AEM Forms工作区支持对表单和文档的任务分配和完成活动进行�
 
 例如，让我们将通信管理视为与AEM Forms工作区集成的示例候选项。 通信管理具有“信件”的概念，可以呈现并允许执行操作。
 
-## 创建通信管理资产{#create-correspondence-management-assets}
+## 创建通信管理资产 {#create-correspondence-management-assets}
 
-首先，创建在AEM Forms工作区中呈现的示例通信管理模板。 有关更多详细信息，请参阅[创建信件模板](/help/forms/using/create-letter.md)。
+首先，创建在AEM Forms工作区中呈现的示例通信管理模板。 有关更多详细信息，请参阅 [创建信件模板](/help/forms/using/create-letter.md).
 
-在通信管理模板的URL中访问该模板，以验证通信管理模板是否可以成功呈现。 URL的模式与`https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`类似
+在通信管理模板的URL中访问该模板，以验证通信管理模板是否可以成功呈现。 URL的模式与 `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
-其中，`encodedLetterId`是URL编码的字母Id。 在Workbench中为工作区任务定义渲染进程时，指定相同的字母ID。
+where `encodedLetterId` 是URL编码的字母Id。 在Workbench中为工作区任务定义渲染进程时，指定相同的字母ID。
 
-## 创建任务以在AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}中呈现和提交信件
+## 创建任务以在AEM Workspace中呈现和提交信件 {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 在执行这些步骤之前，请确保您是以下组的成员：
 
 * cm-agent-users
 * 工作区用户
 
-有关更多信息，请参阅[添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md)。
+有关更多信息，请参阅 [添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md).
 
 请按照以下步骤创建任务，以在AEM Workspace中渲染和提交信件：
 
 1. 启动Workbench。 以管理员身份登录到localhost。
-1. 单击“文件”>“新建”>“应用程序”。 在“应用程序名称”字段中，输入`CMDemoSample`，然后单击“完成”。
-1. 选择`CMDemoSample/1.0`并右键单击`NewProcess`。 在名称字段中，输入`CMRenderer`，然后单击“完成”。
+1. 单击“文件”>“新建”>“应用程序”。 在“应用程序名称”字段中，输入 `CMDemoSample` 然后单击“完成”。
+1. 选择 `CMDemoSample/1.0` 并右键单击 `NewProcess`. 在名称字段中，输入 `CMRenderer` 然后单击“完成”。
 1. 拖动“起始点”活动选取器并对其进行配置：
 
    1. 在演示数据中，选择使用CRX资产。
@@ -55,7 +59,7 @@ AEM Forms工作区支持对表单和文档的任务分配和完成活动进行�
 
       ![信笺](assets/lettertab.png)
 
-   1. 选择相应的信件并单击&#x200B;**确定**。
+   1. 选择相应的信件并单击 **确定**.
 
 1. 单击管理操作配置文件。 此时将显示“管理操作配置文件”对话框。 确保已正确选择渲染进程和提交进程。
 1. 要使用数据XML文件打开信件，请浏览并选择准备数据进程中的相应数据文件。
@@ -100,13 +104,13 @@ AEM Forms工作区支持对表单和文档的任务分配和完成活动进行�
    }
    ```
 
-   [获取](assets/dscsample.zip)
-文件下载DSC:上面附加的文件中提供 `DSCSample.zip` 了示例DSC。下载并解压缩`DSCSample.zip`文件。 在使用DSC服务之前，您需要对其进行配置。 有关信息，请参阅[配置DSC服务](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)。
+   [获取文件](assets/dscsample.zip)
+下载DSC:在 `DSCSample.zip` 文件。 下载并解压缩 `DSCSample.zip` 文件。 在使用DSC服务之前，您需要对其进行配置。 有关信息，请参阅 [配置DSC服务](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
-   在“定义活动”对话框中，选择相应的活动，如getLetterInstanceInfo ，然后单击&#x200B;**确定**。
+   在定义活动对话框中，选择相应的活动（如getLetterInstanceInfo），然后单击 **确定**.
 
 1. 部署应用程序。 如果系统提示签入并保存资产。
-1. 登录到位于`https://[server]:[port]/lc/content/ws`的AEM Forms工作区。
+1. 登录到AEM Forms工作区： `https://[server]:[port]/lc/content/ws`.
 1. 打开您添加的任务，CMRenderer。 出现“Correspondence Management（通信管理）”信件。
 
    ![cminworkspace](assets/cminworkspace.png)

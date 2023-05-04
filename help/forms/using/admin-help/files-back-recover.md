@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2178'
 ht-degree: 0%
 
 ---
 
 # 要备份和恢复的文件 {#files-to-back-up-and-recover}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 以下各节对必须备份的应用程序和数据文件进行了更详细的描述。
 
@@ -29,19 +33,19 @@ ht-degree: 0%
 
 ## 全局文档存储目录 {#global-document-storage-directory}
 
-GDS是用于存储进程内使用的长生命周期文件的目录。 长存留期文件的生命周期旨在跨越AEM表单系统的一次或多次启动，并且可能跨越数天甚至数年。 这些长期使用的文件可以包含PDF、策略和表单模板。 长期文件是许多AEM表单部署整体状态的关键部分。 如果某些或所有长期存在的文档丢失或损坏，则表单服务器可能会变得不稳定。
+GDS是用于存储进程内使用的长生命周期文件的目录。 长存留期文件的生命周期旨在跨越AEM表单系统的一次或多次启动，并且可能跨越数天甚至数年。 这些长期存在的文件可以包含PDF、策略和表单模板。 长期文件是许多AEM表单部署整体状态的关键部分。 如果某些或所有长期存在的文档丢失或损坏，则表单服务器可能会变得不稳定。
 
 异步作业调用的输入文档也存储在GDS中，并且必须可用于处理请求。 因此，必须考虑托管GDS并采用独立磁盘冗余阵列(RAID)或其他技术的文件系统的可靠性，以满足您的质量和服务级别要求。
 
-GDS的位置在AEM表单安装过程中或稍后使用管理控制台来确定。 除了为GDS保留高可用性位置外，您还可以为文档启用数据库存储。 请参见[将数据库用于文档存储时的备份选项](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)。
+GDS的位置在AEM表单安装过程中或稍后使用管理控制台来确定。 除了为GDS保留高可用性位置外，您还可以为文档启用数据库存储。 请参阅 [数据库用于文档存储时的备份选项](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
 
 ### GDS位置 {#gds-location}
 
 如果在安装期间将位置设置留空，则该位置默认为应用程序服务器安装下的目录。 必须备份应用程序服务器的以下目录：
 
-* (JBoss)`[appserver root]/server/[server]/svcnative/DocumentStorage`
-* (WebLogic)`[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage`
-* (WebSphere)`[appserver root]/installedApps/adobe/[server]/DocumentStorage`
+* (JBoss) `[appserver root]/server/[server]/svcnative/DocumentStorage`
+* (WebLogic) `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage`
+* (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
 
 如果将GDS位置更改为非默认位置，则可以按如下方式确定该位置：
 
@@ -50,7 +54,7 @@ GDS的位置在AEM表单安装过程中或稍后使用管理控制台来确定�
 
 在群集环境中，GDS通常指向网络上共享的目录，该目录可供每个群集节点读/写访问。
 
-如果原始位置不再可用，则在恢复期间，GDS的位置可能会发生更改。 （请参阅[在恢复期间更改GDS位置](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)。）
+如果原始位置不再可用，则在恢复期间，GDS的位置可能会发生更改。 (请参阅 [在恢复期间更改GDS位置](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
 
 ### 数据库用于文档存储时的备份选项 {#backup-options-when-database-is-used-for-document-storage}
 
@@ -80,7 +84,7 @@ AEM Forms Workspace与(JEE上的AEM表单已弃用)Flex Workspace的功能相匹
 >
 >AEM Forms版本已弃用Flex Workspace。
 
-它允许在客户端上管理任务，而无需Flash Player和Adobe Reader。 除了PDF forms和Flex表单之外，它还方便了HTML Forms的呈现。
+它允许在客户端上管理任务，而无需Flash Player和Adobe Reader。 除了PDF forms和Flex表单外，它还方便了HTMLForms的呈现。
 
 ## AEM forms数据库 {#aem-forms-database}
 
@@ -92,7 +96,7 @@ AEM Forms数据库存储对GDS和内容存储根目录（用于内容服务）�
 
 >[!NOTE]
 >
->Adobe®LiveCycle® Content Services ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 内容服务（已弃用）支持将于12/31/2014终止。 请参阅[Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
+>Adobe®LiveCycle® Content Services ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 内容服务（已弃用）支持将于12/31/2014终止。 请参阅 [Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -105,19 +109,19 @@ AEM Forms数据库存储对GDS和内容存储根目录（用于内容服务）�
 IBM有一套工具和帮助系统来帮助数据库管理员管理其备份和恢复任务：
 
 * IBM DB2 Archive Log Accelerator
-* IBM DB2 Data Archive专家（请参阅[IBM DB2 Data Archive Expert User&#39;s Guide and Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true)。）
+* IBM DB2数据存档专家(请参阅 [IBM DB2数据存档专家用户指南和参考](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true).)
 
 DB2具有将数据库备份到Tivoli Storage Manager的内置功能。 使用Tivoli Storage Manager , DB2备份可以存储在其他介质或本地硬盘上。
 
-有关DB2数据库备份和恢复的详细信息，请参阅[为DB2](https://publib.boulder.ibm.com/infocenter/db2luw/v9/index.jsp?topic=/com.ibm.db2.udb.admin.doc/doc/c0005945.htm)制定备份和恢复策略。
+有关DB2数据库备份和恢复的详细信息，请参见 [为DB2制定备份和恢复策略](https://publib.boulder.ibm.com/infocenter/db2luw/v9/index.jsp?topic=/com.ibm.db2.udb.admin.doc/doc/c0005945.htm).
 
 ### Oracle {#oracle}
 
-使用快照备份或配置Oracle数据库以在存档日志模式下运行。 (请参阅[Oracle备份：简介](https://www.databasedesign-resource.com/oracle-backup.md)。) 有关备份和恢复Oracle数据库的更多信息，请访问以下站点：
+使用快照备份或配置Oracle数据库以在存档日志模式下运行。 (请参阅 [Oracle备份：简介](https://www.databasedesign-resource.com/oracle-backup.md).) 有关备份和恢复Oracle数据库的更多信息，请访问以下站点：
 
-[Oracle备份和恢复：](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) 更详细地说明备份和恢复的概念以及使用Recovery Manager(RMAN)进行备份、恢复和报告的最常用技术，并提供有关如何规划备份和恢复策略的更多信息。
+[Oracle备份和恢复：](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) 更详细地解释了备份和恢复的概念以及使用Recovery Manager(RMAN)进行备份、恢复和报告的最常用技术，并提供了有关如何规划备份和恢复策略的更多信息。
 
-[Oracle数据库备份和恢复用户指南：](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) 提供有关RMAN体系结构、备份和恢复概念和机制、高级恢复技术（如时间点恢复和数据库闪回功能）以及备份和恢复性能调整的深入信息。它还包括使用主机操作系统设施而不是RMAN的用户管理的备份和恢复。 此卷对于备份和恢复更复杂的数据库部署以及高级恢复方案至关重要。
+[Oracle数据库备份和恢复用户指南：](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) 提供有关RMAN体系结构、备份和恢复概念和机制、高级恢复技术（如时间点恢复和数据库闪回功能）以及备份和恢复性能调整的深入信息。 它还包括使用主机操作系统设施而不是RMAN的用户管理的备份和恢复。 此卷对于备份和恢复更复杂的数据库部署以及高级恢复方案至关重要。
 
 [Oracle数据库备份和恢复参考：](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) 提供有关所有RMAN命令的语法和语义的完整信息，并描述可用于报告备份和恢复活动的数据库视图。
 
@@ -130,11 +134,11 @@ SQL Server还提供了两种备份和恢复工具：
 * SQL Server Management Studio(GUI)
 * T-SQL（命令行）
 
-有关更多信息，请参阅[备份和还原](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx)。
+有关更多信息，请参阅 [备份和恢复](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
-使用MySQLAdmin或在Windows中修改INI文件，以配置MySQL数据库以二进制日志模式运行。 （请参阅[MySQL二进制日志记录](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)。） InnoBase软件还提供了MySQL的热备份工具。 （请参阅[Innobase热备份](https://www.innodb.com/hot-backup/features.md)。）
+使用MySQLAdmin或在Windows中修改INI文件，以配置MySQL数据库以二进制日志模式运行。 (请参阅 [MySQL二进制日志记录](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) InnoBase软件还提供了MySQL的热备份工具。 (请参阅 [Innobase热备份](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >
@@ -142,9 +146,9 @@ SQL Server还提供了两种备份和恢复工具：
 >
 >`binlog_format=mixed log-bin=logname`
 
-您可以使用mysqldump实用程序获取完整的数据库备份。 需要完整备份，但并不总是方便。 它们会生成大型备份文件，并且需要一些时间才能生成。 要执行增量备份，请确保您使用 — `log-bin`选项启动服务器，如上一节中所述。 每次MySQL服务器重新启动时，它都会停止写入当前二进制日志，创建新日志，然后从此开始，新日志将变为当前日志。 可以使用`FLUSH LOGS SQL`命令手动强制交换机。 在第一次完全备份后，使用mysqladmin实用程序和`flush-logs`命令完成后续增量备份，该命令将创建下一个日志文件。
+您可以使用mysqldump实用程序获取完整的数据库备份。 需要完整备份，但并不总是方便。 它们会生成大型备份文件，并且需要一些时间才能生成。 要执行增量备份，请确保您以 `log-bin` 选项。 每次MySQL服务器重新启动时，它都会停止写入当前二进制日志，创建一个新日志，然后从此开始，新日志将变为当前日志。 您可以使用 `FLUSH LOGS SQL` 命令。 在首次完全备份后，使用mysqladmin实用程序和 `flush-logs` 命令，该命令将创建下一个日志文件。
 
-请参阅[备份策略摘要](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html)。
+请参阅 [备份策略摘要](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
 ```as3
 binlog_format=mixed 
@@ -159,7 +163,7 @@ log-bin=logname
 
 安装Content Services（已弃用）时，将创建Content Storage Root目录。 内容存储根目录的位置在AEM表单安装过程中确定。
 
-内容存储根目录的默认位置为&#x200B;*[aem-forms根]*/lccs_data。
+内容存储根目录的默认位置是 *[aem-forms根]*/lccs_data。
 
 备份位于内容存储根目录中的以下目录：
 
@@ -177,11 +181,11 @@ log-bin=logname
 
 在群集环境中安装Content Services（已弃用）时，Content Storage Root目录将拆分为两个单独的目录：
 
-**内容存储根目录：** 通常是可供群集中所有节点读/写访问的共享网络目录
+**内容存储根目录：** 通常，可对群集中所有节点读/写的共享网络目录
 
 **索引根目录：** 在群集中每个节点上创建的目录，始终具有相同的路径和目录名称
 
-内容存储根目录的默认位置为&#x200B;*[GDS root]*/lccs_data，其中&#x200B;*[GDS root]*&#x200B;是[GDS位置](files-back-recover.md#gds-location)中描述的位置。 备份位于内容存储根目录中的以下目录：
+内容存储根目录的默认位置是 *[GDS根]*/lccs_data，其中 *[GDS根]* 是 [GDS位置](files-back-recover.md#gds-location). 备份位于内容存储根目录中的以下目录：
 
 /audit.contentstore
 
@@ -193,7 +197,7 @@ log-bin=logname
 
 如果/backup-lucene-indexes目录不存在，请备份/lucene-indexes目录，该目录也位于内容存储根目录中。 如果/backup-lucene-indexes目录存在，请不要备份/lucene-indexes目录，因为它可能会导致错误。
 
-索引根目录的默认位置是每个节点上的&#x200B;*[aem-forms根]*/lucene-indexes。
+索引根目录的默认位置为 *[aem-forms根]*/lucene-indexes on each node.
 
 ## 客户安装的字体 {#customer-installed-fonts}
 
@@ -201,6 +205,6 @@ log-bin=logname
 
 >[!NOTE]
 >
->默认情况下，随AEM Forms一起安装的Adobe字体位于[aem-forms根]/fonts目录中。
+>默认情况下，随AEM Forms一起安装的Adobe字体位于 [aem-forms根]/fonts目录。
 
 如果要重新初始化主机上的操作系统，并且希望使用先前操作系统的字体，则还应备份系统字体目录的内容。 （有关具体说明，请参阅操作系统的文档）。

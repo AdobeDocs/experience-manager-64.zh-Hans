@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 feature: Multi Site Manager
 exl-id: 13d044bd-fa61-4e24-ac1d-69a6f10847a4
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4006'
-ht-degree: 44%
+source-wordcount: '4042'
+ht-degree: 43%
 
 ---
 
 # 创建并同步 Live Copy{#creating-and-synchronizing-live-copies}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 您可以从页面或Blueprint配置创建Live Copy，然后管理继承和同步。
 
@@ -570,7 +574,7 @@ Blueprint页面（在Blueprint配置中引用）为您提供了使用当前(Blue
 
 1. 两个页面（Live Copy和Blueprint）将并排打开。
 
-   有关使用此功能的完整信息，请参阅[页面差异](/help/sites-authoring/page-diff.md)。
+   有关使用此功能的完整信息，请参阅 [页面差异](/help/sites-authoring/page-diff.md).
 
 ## 分离 Live Copy {#detaching-a-live-copy}
 

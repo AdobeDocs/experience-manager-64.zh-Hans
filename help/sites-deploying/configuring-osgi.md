@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 977d07d2-36cf-4799-bcfe-991cf89a612a
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1970'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
 
 # 配置OSGi{#configuring-osgi}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 [OSGi](https://www.osgi.org/) 是Adobe Experience Manager(AEM)技术堆栈中的一个基本元素。 它用于控制AEM的复合包及其配置。
 
@@ -194,7 +198,7 @@ Web控制台不显示您所做的更改已保存在存储库中的位置，但�
    * `config`  — 用于所有运行模式
    * `config.author`  — 对于创作环境
    * `config.publish`  — 对于发布环境
-   * `config.<run-mode>`  — 酌情
+   * `config.<run-mode>` - 酌情
 
 1. 是否 **配置** 或 **工厂配置** 必需。
 1. 要配置的各个参数；包括需要重新创建的任何现有参数定义。

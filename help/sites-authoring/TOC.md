@@ -8,10 +8,11 @@ breadcrumb-title: Authoring 指南
 user-guide-description: 了解在 AEM 中创建内容、进行编辑创作的主要概念。
 feature: Authoring
 role: User
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 87%
+ht-degree: 57%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 87%
 
 + [Authoring用户指南概述](home.md)
 + AEM创作的基本任务、工具和概念 {#essentials}
-   + [创作的首要步骤](first-steps.md)
+   + [作者的首要步骤](first-steps.md)
    + [页面创作快速指南](qg-page-authoring.md)
    + [创作概念](author.md)
    + [基本处理](basic-handling.md)
@@ -28,24 +29,24 @@ ht-degree: 87%
    + [配置帐户环境](user-properties.md)
    + [您的收件箱](inbox.md)
    + [键盘快捷键 （在控制台中）](keyboard-shortcuts.md)
-   + [选择您的 UI](select-ui.md)
+   + [选择您的UI](select-ui.md)
 + 创作 {#authoring}
    + [创作环境和工具](author-environment-tools.md)
-   + [编辑页面时添加注释](annotations.md)
+   + [编辑页面时的注释](annotations.md)
    + [创建和组织页面](managing-pages.md)
    + [编辑页面内容](editing-content.md)
    + [使用富文本编辑器创作内容](rich-text-editor.md)
    + [编辑页面属性](editing-page-properties.md)
    + [发布页面](publishing-pages.md)
-   + [通过内容片段进行页面创作](content-fragments.md)
+   + [使用内容片段进行页面创作](content-fragments.md)
    + [体验片段](experience-fragments.md)
    + [导出到 CSV](csv-export.md)
    + [组件](default-components.md)
-   + [创作适用于移动设备的页面](mobile.md)
+   + [为移动设备创作页面](mobile.md)
    + [解决 AEM 中有关创作方面的问题](troubleshooting.md)
    + [编辑页面时的键盘快捷键](page-authoring-keyboard-shortcuts.md)
    + [最佳实践](best-practices.md)
-+ 站点和页面功能 {#siteandpage}
++ 网站和页面功能 {#siteandpage}
    + [使用标记](tags.md)
    + [创建页面模板](templates.md)
    + [样式系统](style-system.md)
@@ -56,13 +57,13 @@ ht-degree: 87%
    + [内容分析](content-insights.md)
    + [创建辅助内容（WCAG 2.0 符合性）](creating-accessible-content.md)
    + [基架](scaffolding.md)
-   + [在设计模式中配置组件](default-components-designmode.md)
+   + [在设计模式下配置组件](default-components-designmode.md)
    + [基础组件](default-components-foundation.md)
 + 项目 {#projects}
    + [项目](projects.md)
    + [管理项目](touch-ui-managing-projects.md)
    + [处理任务](task-content.md)
-   + [创意项目和 PIM 集成](managing-product-information.md)
+   + [创意项目和PIM集成](managing-product-information.md)
    + [使用项目工作流](projects-with-workflows.md)
 + 启动项 {#launches}
    + [启动项](launches.md)
@@ -89,8 +90,8 @@ ht-degree: 87%
    + [创建和管理选件](offerlib.md)
    + [了解分段](segmentation-overview.md)
 + AEM和Adobe Campaign {#aem-adobe-campaign}
-   + [使用 Adobe Campaign](adobe-campaign.md)
-   + [使用 Adobe Campaign Classic 和 Adobe Campaign Standard](campaign.md)
-   + [定位您的 Adobe Campaign](target-adobe-campaign.md)
-   + [在 AEM 中创建 Adobe Campaign 表单](adobe-campaign-forms.md)
-   + [Adobe Campaign 组件](adobe-campaign-components.md)
+   + [使用Adobe Campaign](adobe-campaign.md)
+   + [使用Adobe Campaign Classic和Adobe Campaign Standard](campaign.md)
+   + [定位Adobe Campaign](target-adobe-campaign.md)
+   + [在AEM中创建Adobe Campaign Forms](adobe-campaign-forms.md)
+   + [Adobe Campaign组件](adobe-campaign-components.md)

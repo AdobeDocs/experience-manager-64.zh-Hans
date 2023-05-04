@@ -4,14 +4,18 @@ seo-title: Developing AEM Components
 description: AEM组件用于保存、格式化和渲染网页上提供的内容。
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3475'
+source-wordcount: '3511'
 ht-degree: 2%
 
 ---
 
 # 开发AEM组件{#developing-aem-components}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM组件用于保存、格式化和渲染网页上提供的内容。
 
@@ -135,7 +139,7 @@ AEM组件用于保存、格式化和渲染网页上提供的内容。
 
    * 在所有云解决方案中提供一致的UI
    * [AEM触屏优化UI的概念 — Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Coral UI 指南](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Coral用户界面指南](https://helpx.adobe.com/cn/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Granite用户界面
 
@@ -263,7 +267,7 @@ newComponent (cq:Component)
 1. 使用给定的CSS类标记您的字段( *钩钩*)。
 1. 在客户端库中定义一个挂接到该CSS类名称的JS侦听器（这可确保自定义逻辑的范围仅限您的字段，并且不会影响其他相同类型的字段）。
 
-要实现此目的，您需要了解要与之交互的底层小组件库。 请参阅 [Coral用户界面文档](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 以确定要对哪个事件做出反应。 这与您过去使用ExtJS执行的过程非常相似：找到给定小组件的文档页面，然后查看其事件API的详细信息。
+要实现此目的，您需要了解要与之交互的底层小组件库。 请参阅 [Coral用户界面文档](https://helpx.adobe.com/cn/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) 以确定要对哪个事件做出反应。 这与您过去使用ExtJS执行的过程非常相似：找到给定小组件的文档页面，然后查看其事件API的详细信息。
 
 有关示例，请参阅：
 

@@ -1,8 +1,8 @@
 ---
-title: 与Adobe Campaign集成
-seo-title: 与Adobe Campaign集成
+title: 与 Adobe Campaign 集成
+seo-title: Integrating with Adobe Campaign
 description: 了解如何将AEM与Adobe Campaign集成。
-seo-description: 了解如何将AEM与Adobe Campaign集成。
+seo-description: Learn how to integrate AEM with Adobe Campaign.
 uuid: 6113279e-d1f5-46c3-ac94-50270fa55060
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: 482c5889-d756-428b-bf0c-38c372e3c8b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 24%
+source-wordcount: '175'
+ht-degree: 7%
 
 ---
 
-# 与Adobe Campaign集成{#integrating-with-adobe-campaign}
+# 与 Adobe Campaign 集成{#integrating-with-adobe-campaign}
 
-Adobe Campaign 是一套解决方案，允许您在所有在线渠道和离线渠道之间个性化并提交营销活动。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+Adobe Campaign是一套解决方案，允许您在所有在线和离线渠道之间个性化和交付促销活动。
 
 您可以将此版本的AEM与以下某个版本的Adobe Campaign集成：
 
@@ -35,4 +39,4 @@ Adobe Campaign 是一套解决方案，允许您在所有在线渠道和离线�
 
 >[!NOTE]
 >
->要查看相关的AEM社区文章，请参阅：[集成Adobe Experience Manager和Adobe Campaign Standard以创建Newletter](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)。
+>要查看相关的AEM社区文章，请参阅： [集成Adobe Experience Manager和Adobe Campaign Standard以创建Newleter](https://helpx.adobe.com/experience-manager/using/aem_campaign.html).

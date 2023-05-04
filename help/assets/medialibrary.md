@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 0%
+source-wordcount: '572'
+ht-degree: 1%
 
 ---
 
@@ -22,6 +22,10 @@ Define what is not included
 -->
 
 # 将Media Library用于基本资产管理 {#manage-assets-using-media-library}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 [!DNL Adobe Experience Manager] platform提供了不同的资产管理功能。 Media Library允许用户将少量资产上传到存储库、搜索和使用网页中的资产，并完成资产上的简单资产管理任务。
 
@@ -58,7 +62,7 @@ Media Library广泛涵盖以下用例：
 要使用Media Library功能，您可以使用默认 [!DNL Experience Manager] 用户界面。 Media Library是 [!DNL Experience Manager Sites] 无需安装单独的界面或附加组件。 使用现有界面，Media Library用户有权完成以下任务：
 
 * 创建文件夹以组织资产。
-* 上传资产。
+* 上传资源.
 * 发布资产。
 * 编辑、移动和复制资产。
 * 浏览、过滤和搜索（包括相似性搜索）资产。

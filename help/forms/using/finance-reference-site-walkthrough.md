@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '9201'
+source-wordcount: '9237'
 ht-degree: 0%
 
 ---
 
 # We.Finance参考站点演练 {#we-finance-reference-site-walkthrough}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 先决条件 {#pre-requisites}
 
@@ -163,7 +167,7 @@ AEM Forms on OSGi提供了以表单为中心的工作流，允许您构建基于
 
 下图描述了处理信用卡应用程序并生成应用程序PDF输出的AEM工作流。
 
-![workflow](assets/workflow.png)
+![工作流](assets/workflow.png)
 
 #### 亲眼看看 {#see-it-yourself-2}
 
@@ -295,7 +299,7 @@ We.Finance会不时检查其信用卡申请的绩效，以检查客户可能遇�
 1. 从“受众”下拉列表中，选择您要向其提供表单不同体验的受众。 例如， **使用Chrome的访客**.
 1. 在 **[!UICONTROL Experience Distribution]** 体验A和B的字段中，以百分比形式指定分布，以确定体验在总受众中的分布。 例如，如果您为体验A和B分别指定40、60，则体验A将提供给40%的受众，其余60%的受众将看到体验B。
 1. 单击 **配置**. 将显示一个对话框，确认创建A/B测试。
-1. 单击&#x200B;**完成**。
+1. 单击 **完成**.
 1. 选择 **信用卡申请** 表单并单击 **编辑**. 它提供了打开其中一个体验的选项。 单击 **体验B**. 在编辑模式下将打开表单。
 
 1. 根据需要修改表单，以创建与默认体验A不同的体验。
@@ -362,7 +366,7 @@ We.Finance住房抵押方案涉及以下角色：
 
 莎拉选择申请住房抵押贷款和点击 **[!UICONTROL 立即申请]** 房屋抵押贷款计算结果。 它打开了房屋抵押申请。
 
-如果Sarah正在从移动设备访问住房抵押应用程序，则会在优化后可在移动设备上查看的视图中打开该应用程序表单。 在此视图中，应用程序表单一次呈现一个部分。 它使Sarah能够在浏览申请表时逐步查看和提供信息。
+如果Sarah正从其移动设备访问住房抵押应用程序，则会在优化后可在移动设备上查看的视图中打开该应用程序表单。 在此视图中，应用程序表单一次呈现一个部分。 它使Sarah能够在浏览申请表时逐步查看和提供信息。
 
 下图显示了Sarah在移动设备上浏览住房抵押申请时的工作流。
 
@@ -547,7 +551,7 @@ We.Finance会不时检查其抵押申请的绩效，以检查客户可能遇到�
 1. 从“受众”下拉列表中，选择您要向其提供表单不同体验的受众。 例如， **使用Chrome的访客**.
 1. 在 **Experience Distribution** 体验A和B的字段中，以百分比形式指定分布，以确定体验在总受众中的分布。 例如，如果您为体验A和B分别指定40、60，则体验A将提供给40%的受众，其余60%的受众将看到体验B。
 1. 单击 **配置**. 将显示一个对话框，确认创建A/B测试。
-1. 单击&#x200B;**完成**。
+1. 单击 **完成**.
 1. 选择 **住房抵押申请** 自适应表单并单击 **编辑**. 它提供了打开其中一个体验的选项。 单击 **体验B**. 在编辑模式下将打开表单。
 
 1. 根据需要修改表单，以创建与默认体验A不同的体验。
@@ -795,7 +799,7 @@ We.Finance Wealth Management方案涉及以下角色：
 
 莎拉·罗丝正计划投资一只共同基金。 她是We.Finance的现有客户，因此访问We.Finance门户以探索可用的共同基金。 她进入财富管理部，打开We.Finance蓝筹股增长基金页面。 本页包含招股说明书的链接，其中包含有关当前和历史价格、月度表现、行业多元化、开支、费用、税金以及有关基金的更多信息的详细信息。
 
-![幻灯片1](assets/slide1.png)
+![slide1](assets/slide1.png)
 
 #### 工作原理 {#how-it-works-17}
 

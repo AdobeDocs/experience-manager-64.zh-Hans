@@ -1,8 +1,8 @@
 ---
 title: JSRP - JCR存储资源提供程序
-seo-title: JSRP - JCR存储资源提供程序
+seo-title: JSRP - JCR Storage Resource Provider
 description: JSRP通常最适合一个发布实例和一个创作实例的演示或开发环境
-seo-description: JSRP通常最适合一个发布实例和一个创作实例的演示或开发环境
+seo-description: JSRP is generally best suited for demonstration or development environments of one publish instance and one author instance
 uuid: 358a43c1-4137-4300-8443-c0d7166968ad
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 role: Admin
 exl-id: 73c59497-43fe-4e15-afda-e3cf5264696e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 0%
+source-wordcount: '477'
+ht-degree: 1%
 
 ---
 
 # JSRP - JCR存储资源提供程序 {#jsrp-jcr-storage-resource-provider}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 关于JSRP {#about-jsrp}
 
@@ -26,7 +30,7 @@ ht-degree: 0%
 
 由于部署的简单性，JSRP通常最适合一个发布实例和一个创作实例的演示或开发环境。
 
-另请参阅[SRP选项的特性](working-with-srp.md#characteristics-of-srp-options)和[推荐的拓扑](topologies.md)。
+另请参阅 [SRP选项的特点](working-with-srp.md#characteristics-of-srp-options) 和 [推荐的拓扑](topologies.md).
 
 ## 配置 {#configuration}
 
@@ -34,16 +38,16 @@ ht-degree: 0%
 
 默认情况下，JSRP是UGC的存储选项。
 
-[存储配置控制台](srp-config.md)允许选择默认存储配置，该配置标识要使用的SRP实施。
+的 [存储配置控制台](srp-config.md) 允许选择默认存储配置，该配置标识要使用的SRP实施。
 
 在创作环境中，要访问存储配置控制台
 
-* 从全局导航：**[!UICONTROL 工具>社区>存储配置]**
+* 从全局导航： **[!UICONTROL 工具>社区>存储配置]**
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
-* 选择&#x200B;**[!UICONTROL JCR存储资源提供程序(JSRP)]**
-* 选择&#x200B;**[!UICONTROL Submit]**
+* 选择 **[!UICONTROL JCR存储资源提供程序(JSRP)]**
+* 选择 **[!UICONTROL 提交]**
 
 ### 发布配置 {#publishing-the-configuration}
 
@@ -51,17 +55,17 @@ ht-degree: 0%
 
 * 作者：
 
-   * 从全局导航：**[!UICONTROL 工具>部署>复制]**
-   * 选择&#x200B;**[!UICONTROL 激活树]**
+   * 从全局导航： **[!UICONTROL 工具>部署>复制]**
+   * 选择 **[!UICONTROL 激活树]**
    * **[!UICONTROL 开始路径]**:
 
-      * 浏览到`/conf/global/settings/community/srpc/`
-   * 选择&#x200B;**[!UICONTROL 激活]**
+      * 浏览到 `/conf/global/settings/community/srpc/`
+   * 选择 **[!UICONTROL 激活]**
 
 
 ## 管理用户数据 {#managing-user-data}
 
-有关&#x200B;*用户*、*用户配置文件*&#x200B;和&#x200B;*用户组*&#x200B;的信息，请访问
+有关 *用户*, *用户配置文件* 和 *用户组*，通常在发布环境中输入，访问
 
 * [用户同步](sync.md)
 * [管理用户和用户组](users.md)
@@ -74,10 +78,10 @@ ht-degree: 0%
 
 在所有创作和发布AEM实例上，重新访问存储配置控制台或检查AEM存储库：
 
-* 在JCR中，如果[/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
+* 在JCR中，如果 [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * 不包含[srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc)节点，这表示存储提供程序是JSRP
-   * 如果srpc节点存在并且包含节点[defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration)，则默认配置的属性应将JSRP定义为默认提供程序
+   * 不包含 [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) 节点，表示存储提供程序是JSRP
+   * 如果srpc节点存在并包含节点 [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration)，默认配置的属性应将JSRP定义为默认提供程序
 
 ### UGC在创作实例上不可见 {#ugc-not-visible-on-author-instance}
 
@@ -85,7 +89,7 @@ ht-degree: 0%
 
 ### UGC在发布实例上不可见 {#ugc-not-visible-on-publish-instance}
 
-如果单个发布实例或已部署发布群集，请按照[UGC Not Visible in JCR](#ugc-not-visible-in-jcr)的说明操作。
+如果是单个发布实例或部署了发布群集，请按照 [UGC在JCR中不可见](#ugc-not-visible-in-jcr).
 
 如果部署了发布场，则JSRP的一个特点是，社区内容仅在发布到的发布实例上可见。
 

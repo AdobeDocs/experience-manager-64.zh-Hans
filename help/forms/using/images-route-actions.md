@@ -1,36 +1,40 @@
 ---
 title: 自定义路由操作中使用的图像
-seo-title: 自定义路由操作中使用的图像
+seo-title: Customize images used in route actions
 description: 如何在LiveCycleAEM Forms工作区中自定义路由操作中使用的图像。
-seo-description: 如何在LiveCycleAEM Forms工作区中自定义路由操作中使用的图像。
+seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 7b1f60e7-c8fa-43b6-bef4-88b42e7bbc36
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 0%
+source-wordcount: '344'
+ht-degree: 1%
 
 ---
 
-# 自定义路由操作{#customize-images-used-in-route-actions}中使用的图像
+# 自定义路由操作中使用的图像 {#customize-images-used-in-route-actions}
 
-要自定义路由操作中使用的图像，请执行[自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)中描述的步骤，然后执行本文中描述的步骤。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-## 路由操作的图像{#images-for-route-actions}
+要自定义在路由操作中使用的图像，请执行 [自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md) 执行本文所述的步骤。
+
+## 用于路由操作的图像 {#images-for-route-actions}
 
 1. 在CSS中为新路由操作的以下位置添加定义图像的样式：
 
    `/apps/ws/css/newStyle.css`
 
-   例如：添加名为`myStyle1`的新样式，如下所示，并使用WebDAV客户端将图像文件`myStyleIcon1.png`上传到`/apps/ws/image`s文件夹。
+   例如：添加名为 `myStyle1`如下所示，并上传图像文件 `myStyleIcon1.png` 到 `/apps/ws/image`使用WebDAV客户端的文件夹。
 
    >[!NOTE]
    >
-   >有关WebDAV访问的更多信息，请参阅[https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html)。
+   >有关WebDAV访问的更多信息，请参阅 [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    >[!NOTE]
    >
@@ -44,13 +48,13 @@ ht-degree: 0%
        }
    ```
 
-## 任务列表任务操作弹出窗口{#task-list-task-action-popup}
+## 任务列表任务操作弹出窗口 {#task-list-task-action-popup}
 
-1. 创建任务列表操作弹出窗口，请参阅[构建AEM Forms工作区代码](introduction-customizing-html-workspace.md#building-html-workspace-code)。 需要使用开发包。
+1. 创建任务列表操作弹出窗口，请参阅 [构建AEM Forms工作区代码](introduction-customizing-html-workspace.md#building-html-workspace-code). 需要使用开发包。
 
-1. 将`/libs/ws/js/runtime/templates/task.html`复制到`/apps/ws/js/runtime/templates/task.html`。
+1. 复制 `/libs/ws/js/runtime/templates/task.html` to `/apps/ws/js/runtime/templates/task.html`.
 
-1. 如果CSS样式的名称与来自服务器的路由操作名称相同，请在`/apps/ws/js/runtime/templates/task.html`中修改以下代码：
+1. 如果CSS样式的名称与来自服务器的路由操作名称相同，请在 `/apps/ws/js/runtime/templates/task.html`:
 
    ```
    <%if(routeList == null){%>
@@ -80,7 +84,7 @@ ht-degree: 0%
                <%}%>
    ```
 
-1. 如果CSS样式的名称与来自服务器的路由操作名称不同，请在`/apps/ws/js/runtime/templates/task.html`中修改以下代码。 它会添加`if-else` servlet条件的堆栈，以使用路由操作名称映射样式。
+1. 如果CSS样式的名称与来自服务器的路由操作名称不同，请在 `/apps/ws/js/runtime/templates/task.html`. 它会添加 `if-else` servlet条件以使用路由操作名称映射样式。
 
 ```
 <%if(routeList == null){%>
@@ -116,11 +120,11 @@ To
             <%}%>
 ```
 
-## 任务详细信息任务操作弹出窗口{#task-details-task-action-popup}
+## “任务详细信息”任务操作弹出窗口 {#task-details-task-action-popup}
 
-1. 将`/libs/ws/js/runtime/templates/taskdetails.html`复制到`/apps/ws/js/runtime/templates/taskdetails.html`。
+1. 复制 `/libs/ws/js/runtime/templates/taskdetails.html` to `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. 如果CSS样式的名称与来自服务器的路由操作名称相同，请在`/apps/ws/js/runtime/templates/taskdetails.html`中修改以下代码：
+1. 如果CSS样式的名称与来自服务器的路由操作名称相同，请在 `/apps/ws/js/runtime/templates/taskdetails.html`:
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -140,7 +144,7 @@ To
                        <%}%>
    ```
 
-1. 如果CSS样式的名称与来自服务器的路由操作名称不同，请在`/apps/ws/js/runtime/templates/taskdetails.html`中修改以下代码。 它会添加一个`if-else` servlet条件堆栈，以使用路由操作名称映射样式。
+1. 如果CSS样式的名称与来自服务器的路由操作名称不同，请在 `/apps/ws/js/runtime/templates/taskdetails.html`. 它会添加一堆 `if-else` servlet条件以使用路由操作名称映射样式。
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -168,7 +172,7 @@ To
                <%}%>
    ```
 
-1. 打开`/apps/ws/js/registry.js`进行编辑，并查找以下文本：\
+1. 打开 `/apps/ws/js/registry.js` 进行编辑和查找以下文本：\
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. 将文本替换为以下内容：\

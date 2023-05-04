@@ -10,14 +10,18 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: c27eb771-d390-4534-8e67-f1277550e760
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: '373'
+ht-degree: 1%
 
 ---
 
 # HTML5表单的屏幕阅读器 {#screen-readers-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 HTML5表单组件将XFA表单模板渲染为HTML5格式。 支持HTML5的所有标准浏览器都可以渲染这些表单。 为支持PDF和HTML5表单中的类似PDF forms捕获体验，HTML5表单中保留了数据的布局。
 

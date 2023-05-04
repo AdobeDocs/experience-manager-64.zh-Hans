@@ -1,24 +1,28 @@
 ---
 title: 大容量安全信息传送
-seo-title: 大容量安全信息传送
+seo-title: High-volume secure information delivery
 description: 文档安全支持将许可证与用户关联，而不是与批量生产环境中的文档关联。
-seo-description: 文档安全支持将许可证与用户关联，而不是与批量生产环境中的文档关联。
+seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
 uuid: 9747d283-506c-434e-9850-e50b95290cc8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
-feature: 文档安全
+feature: Document Security
 exl-id: 78fc7c4a-a634-4628-927a-c9622bdc13fc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 0%
+source-wordcount: '360'
+ht-degree: 1%
 
 ---
 
-# 大容量安全信息传递{#high-volume-secure-information-delivery}
+# 大容量安全信息传送 {#high-volume-secure-information-delivery}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 在大规模生产环境中，例如为电信公司生成安全的每月发票的环境中，创建特定于每个文档的许可证可以成为资源密集型过程。 在这种情况下，文档安全支持将许可证与用户关联，而不是与文档关联。 为用户生成的许可证用于为该用户保护的所有文档。
 
@@ -30,4 +34,4 @@ ht-degree: 0%
 
 只有通过文档安全Java SDK才支持创建抽象策略。 但是，您可以从文档安全网页的抽象策略管理您创建的策略。 使用此方法创建的策略的行为与从文档安全网页创建的策略相同。
 
-有关更多信息，请参阅[使用AEM表单进行编程](https://www.adobe.com/go/learn_aemforms_programming_63) 。
+请参阅 [使用AEM表单进行编程](https://www.adobe.com/go/learn_aemforms_programming_63) 以了解更多信息。

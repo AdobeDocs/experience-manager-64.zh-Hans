@@ -10,14 +10,18 @@ topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 646146b1-55bf-4d13-ba3d-2e9bdfd8d8af
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '662'
 ht-degree: 2%
 
 ---
 
 # 使用隐藏条件{#using-hide-conditions}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 隐藏条件可用于确定是否渲染组件资源。 例如，模板作者配置核心组件时 [列表组件](https://helpx.adobe.com/experience-manager/core-components/using/list.html) 在 [模板编辑器](/help/sites-authoring/templates.md) 并决定禁用基于子页面构建列表的选项。 在设计对话框中禁用此选项会设置一个属性，以便在呈现列表组件时，将评估隐藏条件，并且不显示显示子页面的选项。
 

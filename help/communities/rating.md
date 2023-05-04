@@ -1,8 +1,8 @@
 ---
 title: 使用评级
-seo-title: 使用评级
+seo-title: Using Ratings
 description: 向页面添加评级组件
-seo-description: 向页面添加评级组件
+seo-description: Adding a Rating component to a page
 uuid: a986970b-1221-4648-9a69-410f4480e0ae
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,41 +10,45 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 exl-id: 1de28140-5334-4ca2-a476-5ad253809808
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 1%
+source-wordcount: '242'
+ht-degree: 3%
 
 ---
 
-# 使用评级{#using-ratings}
+# 使用评级 {#using-ratings}
 
-`Rating`组件是独立使用的，也可与其他Communities功能结合使用。 此组件允许已登录的社区成员通过对内容进行评级来表达其意见。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-## 向页面{#adding-a-rating-to-a-page}添加评级
+的 `Rating`组件可单独使用，也可与其他社区功能结合使用。 此组件允许已登录的社区成员通过对内容进行评级来表达其意见。
 
-要在创作模式下将`Rating`组件添加到页面，请找到组件`Communities / Rating`并将其拖动到页面上的位置，如相对于要评级的成员的功能的位置。
+## 向页面添加评级 {#adding-a-rating-to-a-page}
 
-有关必要信息，请访问[社区组件基础知识](basics.md)。
+添加 `Rating`组件到创作模式下的页面，找到组件 `Communities / Rating` 并将其拖动到页面上的适当位置，如相对于要评级的成员的特征的位置。
 
-当包含[所需的客户端库](rating-basics.md#essentials-for-client-side)时，将显示`Rating`组件。
+有关必要信息，请访问 [社区组件基础知识](basics.md).
+
+当 [所需的客户端库](rating-basics.md#essentials-for-client-side) 包含，这是 `Rating` 组件。
 
 ![chlimage_1-493](assets/chlimage_1-493.png)
 
-## 配置评级{#configuring-rating}
+## 配置评级 {#configuring-rating}
 
-选择要访问的已放置的`Rating`组件，然后选择`Configure`图标以打开编辑对话框。
+选择已放置的 `Rating` 要访问和选择的组件 `Configure` 图标，打开编辑对话框。
 
 ![chlimage_1-494](assets/chlimage_1-494.png)
 
-在&#x200B;**[!UICONTROL 文本和标签]**&#x200B;选项卡下，指定评级的内部标识符。
+在 **[!UICONTROL 文本和标签]** 选项卡，您可以指定评级的内部标识符。
 
 ![chlimage_1-495](assets/chlimage_1-495.png)
 
 **[!UICONTROL 计数名称]**
-(*必需*)唯一标识此实 `Rating`例的简单名称。必须是存储库的有效节点名称。
+(*必需*)的简单名称 `Rating`用于唯一标识此实例。 必须是存储库的有效节点名称。
 
-## 网站访客体验{#site-visitor-experience}
+## 网站访客体验 {#site-visitor-experience}
 
 ### 成员 {#members}
 
@@ -56,4 +60,4 @@ ht-degree: 1%
 
 ## 附加信息 {#additional-information}
 
-有关更多信息，请参阅[Rating Essentials](rating-basics.md)页面，供开发人员使用。
+有关 [评级要点](rating-basics.md) 页面。

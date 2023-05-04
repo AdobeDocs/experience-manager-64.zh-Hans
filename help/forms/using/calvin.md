@@ -1,29 +1,33 @@
 ---
 title: 自动测试自适应表单
-seo-title: 自动测试自适应表单
+seo-title: Automate testing of adaptive forms
 description: 使用Calvin，您可以在CRXDE中创建测试用例，并直接在Web浏览器中运行用户界面测试，以彻底测试您的自适应表单。
-seo-description: 使用Calvin，您可以在CRXDE中创建测试用例，并直接在Web浏览器中运行用户界面测试，以彻底测试您的自适应表单。
+seo-description: Using Calvin you can create test cases in CRXDE and run UI tests directly in the web browser to thoroughly test your adaptive forms.
 uuid: 2a89d1c0-58f6-4bbf-a367-5fe659851c13
 contentOwner: gtalwar
 content-type: reference
 topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
-feature: 自适应表单
+feature: Adaptive Forms
 exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 1%
+source-wordcount: '1289'
+ht-degree: 2%
 
 ---
 
-# 自动测试自适应表单{#automate-testing-of-adaptive-forms}
+# 自动测试自适应表单 {#automate-testing-of-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
 自适应表单是客户交互的必备组件。 测试自适应表单时务必要进行每项更改，例如推出新的修补程序包或更改表单中的规则。 但是，功能测试自适应表单及其中的每个字段可能很繁琐。
 
-Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hobbes](/help/sites-developing/hobbes.md)的用户界面来运行测试，并提供以下工具：
+Calvin允许您在Web浏览器中自动测试自适应表单。 卡尔文利用 [霍布斯](/help/sites-developing/hobbes.md)用于运行测试的用户界面，并提供了以下工具：
 
 * 用于创建测试的JavaScript API。
 * 用于运行测试的用户界面。
@@ -57,7 +61,7 @@ Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hob
    <td><p>表达式规则</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>与表单对象（如计算、可见）关联的表达式在退出字段后执行脚本，在执行相关UI操作后执行这些表达式吗？<br /> </li> 
+     <li>与表单对象（如计算、可见、退出字段后执行脚本）关联的表达式是否在执行相关UI操作后执行？<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -88,36 +92,36 @@ Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hob
 
 在使用本文创建测试用例之前，您需要了解以下信息：
 
-* 使用[Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)创建测试包并执行测试用例
+* 使用创建测试包和执行测试用例 [霍布斯](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
 * [Hobbes JavaScript API](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
 * [Calvin JavaScript API](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## 示例：使用霍布斯作为测试框架{#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}为自适应表单创建测试套件
+## 示例：使用Hobbes作为测试框架，为自适应表单创建测试套件 {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
 以下示例将指导您创建一个测试套件，用于测试多个自适应表单。 您需要为每个需要测试的表单创建单独的测试案例。 通过执行与以下步骤类似的步骤并在步骤11中修改JavaScript代码，您可以创建自己的测试包来测试自适应表单。
 
-1. 在Web浏览器中转到CRXDE Lite:`https://[server]:[port]/crx/de`。
-1. 右键单击/etc/clientlibs子文件夹，然后单击&#x200B;**[!UICONTROL 创建>创建节点]**。 输入名称（此处为afTestRegistration），将节点类型指定为cq:ClientLibraryFolder，然后单击&#x200B;**[!UICONTROL 确定]**。
+1. 在Web浏览器中转到CRXDE Lite: `https://[server]:[port]/crx/de`.
+1. 右键单击/etc/clientlibs子文件夹，然后单击 **[!UICONTROL 创建>创建节点]**. 输入名称（此处为afTestRegistration），将节点类型指定为cq:ClientLibraryFolder，然后单击 **[!UICONTROL 确定]**.
 
    clientlibs文件夹包含应用程序（JS和Init）的注册方面。 建议您在clientlibs文件夹中注册所有特定于表单的霍布斯测试套件对象。
 
-1. 在新创建的节点（此处为afTestRegistration）中指定以下属性值，然后单击&#x200B;**[!UICONTROL Save All]**。 这些属性可帮助霍布斯将文件夹识别为测试文件。 要将此客户端库作为其他客户端库中的依赖项重复使用，请将其命名为granite.testing.calvin.tests。
+1. 在新创建的节点（此处为afTestRegistration）中指定以下属性值，然后单击 **[!UICONTROL 全部保存]**. 这些属性可帮助霍布斯将文件夹识别为测试文件。 要将此客户端库作为其他客户端库中的依赖项重复使用，请将其命名为granite.testing.calvin.tests。
 
 <table> 
  <tbody> 
   <tr> 
    <td>属性</td> 
    <td>类型</td> 
-   <td>值</td> 
+   <td>价值</td> 
   </tr> 
   <tr> 
    <td><p>类别</p> </td> 
-   <td><p>String[]</p> </td> 
+   <td><p>字符串[]</p> </td> 
    <td><p>granite.testing.hobbes.tests， granite.testing.calvin.tests</p> </td> 
   </tr> 
   <tr> 
    <td><p>依赖</p> </td> 
-   <td><p>String[]</p> </td> 
+   <td><p>字符串[]</p> </td> 
    <td><p>granite.testing.hobbes.testrunner， granite.testing.calvin， apps.testframework.all</p> </td> 
   </tr> 
  </tbody> 
@@ -129,7 +133,7 @@ Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hob
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. 右键单击测试节点（此处为&#x200B;**afTestRegistration）**，然后单击&#x200B;**[!UICONTROL 创建>创建文件]**。 将文件命名为js.txt，然后单击&#x200B;**[!UICONTROL 确定]**。
+1. 右键单击测试节点(此处为 **afTestRegistration)** 然后单击 **[!UICONTROL 创建>创建文件]**. 将文件命名为js.txt，然后单击 **[!UICONTROL 确定]**.
 1. 在js.txt文件中，添加以下文本：
 
    ```
@@ -137,9 +141,9 @@ Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hob
    js.txt
    ```
 
-1. 单击&#x200B;**[!UICONTROL 全部保存]**，然后关闭js.txt文件。
-1. 右键单击测试节点（此处为&#x200B;**afTestRegistration）**，然后单击&#x200B;**[!UICONTROL 创建>创建文件]**。 将文件命名为init.js，然后单击&#x200B;**[!UICONTROL 确定]**。
-1. 将以下代码复制到init.js文件中，然后单击&#x200B;**[!UICONTROL Save All]**:
+1. 单击 **[!UICONTROL 全部保存]** 然后，关闭js.txt文件。
+1. 右键单击测试节点(此处为 **afTestRegistration)** 单击 **[!UICONTROL 创建>创建文件]**. 将文件命名为init.js，然后单击 **[!UICONTROL 确定]**.
+1. 将以下代码复制到init.js文件中，然后单击 **[!UICONTROL 全部保存]**:
 
    ```
    (function(window, hobs) {
@@ -155,9 +159,9 @@ Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hob
    }(window, window.hobs));
    ```
 
-   以上代码将创建一个名为&#x200B;**自适应表单 — 演示测试**&#x200B;的测试包。 要创建具有不同名称的测试包，请相应地更改名称。
+   上述代码将创建一个名为 **自适应表单 — 演示测试**. 要创建具有不同名称的测试包，请相应地更改名称。
 
-1. 单击&#x200B;**[!UICONTROL 创建]** > **创建节点**&#x200B;以在clientlib文件夹下为要测试的每个表单创建一个节点。 此示例使用名为&#x200B;**testForm**&#x200B;的节点来测试名为&#x200B;**testForm** `.`的自适应表单。请指定以下属性并单击&#x200B;**[!UICONTROL OK]**:
+1. 单击 **[!UICONTROL 创建]** > **创建节点** 为要测试的每个表单在clientlib文件夹下创建节点。 此示例使用名为的节点 **testForm** 测试名为的自适应表单 **testForm** `.`指定以下属性并单击 **[!UICONTROL 确定]**:
 
    * 名称：testForm（您的表单名称）
    * 类型：cq:ClientLibraryFolder
@@ -166,7 +170,7 @@ Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hob
 
    | **属性** | **类型** | **值** |
    |---|---|---|
-   | 类别 | String[] | granite.testing.hobbes.tests， granite.testing.hobbes.test.testForm |
+   | 类别 | 字符串[] | granite.testing.hobbes.tests， granite.testing.hobbes.test.testForm |
    | 依赖 | 字符串[] | granite.testing.calvin.tests |
 
    >[!NOTE]
@@ -175,9 +179,9 @@ Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hob
 
    ![2_testformproperties](assets/2_testformproperties.png)
 
-1. 右键单击为测试表单创建的文件夹（此处为testForm），然后选择&#x200B;**[!UICONTROL 创建>创建文件]**。 将文件命名为scriptingTest.js，并将以下代码添加到文件中，然后单击&#x200B;**[!UICONTROL 全部保存。]**
+1. 右键单击为测试表单创建的文件夹（此处为testForm），然后选择 **[!UICONTROL 创建>创建文件]**. 将文件命名为scriptingTest.js，并将以下代码添加到该文件中，然后单击 **[!UICONTROL 全部保存。]**
 
-   要使用以下代码来测试另一个自适应表单，请更改&#x200B;**navigateTo**（行11、36和62）中表单的路径和名称以及相应的测试用例。 有关用于测试表单和表单对象不同方面的API的更多信息，请参阅[Calvin API](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)。
+   要使用以下代码测试其他自适应表单，请在 **navigateTo** （第11、36和62行）和相应的测试用例。 有关用于测试表单和表单对象不同方面的API的更多信息，请参阅 [Calvin API](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```
    (function(window, hobs) {
@@ -271,21 +275,21 @@ Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hob
     }(window, window.hobs));
    ```
 
-   将创建测试用例。 继续运行测试案例，通过Hobbes测试自适应表单。 有关运行测试案例的步骤，请参阅[使用自动测试在UI中测试中执行测试](/help/sites-developing/hobbes.md)。
+   将创建测试用例。 继续运行测试案例，通过Hobbes测试自适应表单。 有关运行测试案例的步骤，请参阅 [使用自动测试在测试您的用户界面中执行测试](/help/sites-developing/hobbes.md).
 
 您还可以在附加的文件SampleTestPackage.zip中安装包，以获得与示例中所述步骤相同的结果：使用霍布斯作为测试框架，为自适应表单创建测试套件。
 
 [获取文件](assets/sampletestpackage.zip)
 
-## 使用自动测试{#testing-your-ui-using-automated-tests}测试您的UI
+## 使用自动测试来测试您的用户界面 {#testing-your-ui-using-automated-tests}
 
-### 运行单个测试包{#running-a-single-test-suite}
+### 运行单个测试包 {#running-a-single-test-suite}
 
 测试包可以单独运行。 运行测试包时，页面会随测试用例及其操作的执行而发生更改，并且结果会在测试完成后显示。 图标指示结果。
 
-复选标记图标表示通过的测试：![复选标记](assets/checkmark.png)
+复选标记图标表示通过的测试： ![复选标记](assets/checkmark.png)
 
-“X”图标表示测试失败：![cross](assets/cross.png)
+“X”图标表示测试失败： ![交叉](assets/cross.png)
 
 要运行测试包，请执行以下操作：
 
@@ -305,7 +309,7 @@ Calvin允许您在Web浏览器中自动测试自适应表单。 Calvin利用[Hob
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-测试AEM自适应表单的步骤与测试AEM UI的步骤类似。 有关测试自适应表单的更多信息，请参阅[测试UI](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html)中的以下主题：
+测试AEM自适应表单的步骤与测试AEM UI的步骤类似。 有关测试自适应表单的更多信息，请参阅 [测试您的UI](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html):
 
 * 查看测试包
 * 运行多个测试

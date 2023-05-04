@@ -1,8 +1,8 @@
 ---
 title: 社区组控制台
-seo-title: 社区组控制台
+seo-title: Community Groups Console
 description: “组”控制台允许您创建社区组
-seo-description: “组”控制台允许您创建社区组
+seo-description: Groups console lets you create Community groups
 uuid: 7dac2d1b-78fc-4b39-a2cb-100f1e220c23
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,22 +12,26 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1664'
 ht-degree: 1%
 
 ---
 
 # 社区组控制台 {#community-groups-console}
 
-当社区站点的[模板结构](sites-console.md#step1)包含[组函数](functions.md#groups-function)时，“组”控制台将提供创建社区组的访问权限。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-* 组可以嵌套在其他组中。 当新组](tools-groups.md)的[结构包含组函数时，会发生这种情况。
+当社区站点的 [模板结构](sites-console.md#step1) 包括 [组函数](functions.md#groups-function).
+
+* 组可以嵌套在其他组中。 当 [新组的结构](tools-groups.md) 包含组函数。
 * 仅对于创作环境，有一个与站点创建向导类似的组创建向导。
 * 向社区站点结构或社区组结构添加群组功能时，可以配置成员是否可以从发布环境创建群组。
 
-在包含的三个组模板中，只有`Reference Group`模板的结构中包含组函数。
+在包含的三个组模板中，仅 `Reference Group` 模板在其结构中包含组函数。
 
 社区组的几个方面包括：
 
@@ -37,29 +41,29 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在[存在社区组控制台之前在发布环境中创建的社区组](https://helpx.adobe.com/in/experience-manager/6-3/communities/using/version-history.html#FeaturePack1FP1)将不会在社区组控制台中列出，因此，无法使用控制台进行修改。
+>在发布环境中创建的社区组，位于 [社区组控制台的存在性](https://helpx.adobe.com/in/experience-manager/6-3/communities/using/version-history.html#FeaturePack1FP1)，将不会在社区组控制台中列出，因此，无法使用控制台进行修改。
 
 >[!NOTE]
 >
->此群组控制台只能从社区站点控制台访问，不要与成员[群组控制台](members.md)混淆，以管理成员群组。
+>此群组控制台只能从社区站点控制台访问，不要与成员混淆 [“组”控制台](members.md) 用于管理成员组。
 >
->成员组是在发布环境中注册的用户组，使用[tunnel service](deploy-communities.md#tunnel-service-on-author)从创作环境访问。
+>成员组是在发布环境中注册并使用 [隧道服务](deploy-communities.md#tunnel-service-on-author).
 
 ## 组创建 {#group-creation}
 
 要访问“组”控制台，请执行以下操作：
 
 * 在创作时，使用管理员权限登录
-* 从全局导航：**[!UICONTROL 社区>站点]**
+* 从全局导航： **[!UICONTROL 社区>站点]**
 * 选择现有社区站点文件夹以将其打开
 * 在文件夹中选择社区站点的实例
 
    * 社区站点的结构必须包括组功能
-   * 这些屏幕截图来自[在publish](published-site.md)上创建组后的“快速入门”教程
+   * 以下屏幕截图来自以下内容的快速入门教程 [在发布时创建组](published-site.md)
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 
-选择&#x200B;**[!UICONTROL Groups文件夹]**&#x200B;以将其打开。
+选择 **[!UICONTROL 组文件夹]** 打开它。
 
 打开后，所有现有的组（无论是在创作时创建还是发布时创建）都会显示。
 
@@ -67,7 +71,7 @@ ht-degree: 1%
 
 ![chlimage_1-134](assets/chlimage_1-134.png)
 
-* 选择&#x200B;**[!UICONTROL 创建组]**&#x200B;按钮
+* 选择 **[!UICONTROL 创建群组]** 按钮
 
 ### 步骤1:社区组模板 {#step-community-group-template}
 
@@ -80,19 +84,19 @@ ht-degree: 1%
 * **[!UICONTROL 社区组描述]**:群组的描述。
 * **[!UICONTROL 社区组根]**:组的根路径。
 
-   默认根是父站点，但根可以移动到网站中的任何位置。 不建议更改。
+   默认根是父站点，但该根可以移动到网站中的任何位置。 不建议更改。
 
-* **[!UICONTROL 其他可用的社区组语言]** 菜单：使用下拉菜单选择可用的社区组语言。该菜单显示创建父社区站点的所有语言。 用户可以在这些语言中进行选择，以在此单步中的多个区域设置中创建组。 在相应社区站点的“组”控制台中，会以多种指定语言创建同一组。
+* **[!UICONTROL 其他可用的社区组语言]** 菜单：使用下拉菜单选择可用的社区组语言。 该菜单显示创建父社区站点的所有语言。 用户可以在这些语言中进行选择，以在此单步中的多个区域设置中创建组。 在相应社区站点的“组”控制台中，会以多种指定语言创建同一组。
 
 * **[!UICONTROL 社区组名称]**:在URL中显示的组根页面的名称
 
    * 请仔细检查该名称，因为创建组后，该名称不容易更改
-   * 基本URL将显示在`Community Group Name`的下方
+   * 基本URL将显示在 `Community Group Name`
    * 对于有效的URL，附加“.html”
 
-      *例如*、  `http://localhost:4502/content/sites/mysight/en/mygroup.html`
+      *例如*, `http://localhost:4502/content/sites/mysight/en/mygroup.html`
 
-* **[!UICONTROL 社区组模]** 板菜单：使用下拉菜单选择可用的社 [区组模板](tools.md)。
+* **[!UICONTROL 社区组模板]** 菜单：使用下拉菜单选择可用的 [社区组模板](tools.md).
 
 ### 步骤2:设计 {#step-design}
 
@@ -100,17 +104,17 @@ ht-degree: 1%
 
 ![社区组主题](assets/communitygrouptheme.png)
 
-该框架使用`Twitter Bootstrap`为网站引入响应式灵活设计。 可以选择多个预加载的Bootstrap主题之一来设置所选社区组模板的样式，或者可以上传Bootstrap主题。
+框架使用 `Twitter Bootstrap` 为网站引入响应式灵活设计。 可以选择多个预加载的Bootstrap主题之一来设置所选社区组模板的样式，或者可以上传Bootstrap主题。
 
 选择后，将使用不透明的蓝色复选标记覆盖主题。
 
 可以选择与父网站主题不同的主题。
 
-社区网站发布后，可以[编辑属性](#modifying-group-properties)并选择其他主题。
+发布社区网站后，可以 [编辑属性](#modifying-group-properties) 并选择其他主题。
 
 #### 社区团体品牌化 {#community-group-branding}
 
-![chlimage_1-133](assets/chlimage_1-135.png)
+![chlimage_1-135](assets/chlimage_1-135.png)
 
 社区网站品牌化是在每个页面顶部显示为标题的图像。 可以显示与其他网站页面不同的群组的横幅。
 
@@ -148,11 +152,11 @@ ht-degree: 1%
    如果选择，则社区组为公共组。 站点成员可以参与群组并发布帖子，而无需明确加入群组。 已选中默认值。
 * 必需成员资格
 
-   如果选择，则社区组为打开的组。 社区站点成员可以查看组的内容，但必须加入组才能发布内容。 通过选择发布环境中的`Join`按钮来加入成员。 未选择默认值。
+   如果选择，则社区组为打开的组。 社区站点成员可以查看组的内容，但必须加入组才能发布内容。 通过选择 `Join` 按钮。 未选择默认值。
 
 * 受限制的成员资格
 
-   如果选中，则社区组为秘密组。 必须明确邀请社区成员。 将在搜索框中输入受邀成员。 稍后可以使用创作环境的[成员和组控制台](members.md)添加成员。 未选择默认值。
+   如果选中，则社区组为秘密组。 必须明确邀请社区成员。 将在搜索框中输入受邀成员。 稍后可以使用 [“成员”和“组”控制台](members.md) 创作环境。 未选择默认值。
 
 #### 缩略图 {#thumbnail}
 
@@ -160,7 +164,7 @@ ht-degree: 1%
 
 缩略图是在创作和发布时针对组显示的图像。
 
-组图像的最佳大小为170 x 90像素，采用支持的图像格式（如JPG或PNG）。
+组图像的最佳大小为170 x 90像素，采用支持的图像格式(如JPG或PNG)。
 
 如果未添加图像，则会显示默认图像。
 
@@ -170,9 +174,9 @@ ht-degree: 1%
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
-如果需要进行任何调整，请使用&#x200B;**Back**&#x200B;按钮进行调整。
+如果需要进行任何调整，请使用 **返回** 按钮来制作它们。
 
-选择并启动&#x200B;**创建**&#x200B;后，创建组的过程将无法中断。
+一次 **创建** 选择并启动后，创建组的过程将无法中断。
 
 完成该过程后，新子社区站点（组）的卡片将显示在社区站点组控制台中，作者可以在此控制台中添加页面内容，或者管理员可以修改站点的属性。
 
@@ -180,7 +184,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->该组以所有语言创建，如[步骤1中指定：在相应社区站点的“社区组”控制台中，使用其他可用社区组语言的社区组模板](groups.md#step1communitygrouptemplate)。
+>将按照 [步骤1:社区组模板](groups.md#step1communitygrouptemplate) 在相应的社区站点的“社区组”控制台中，显示其他可用的社区组语言。
 
 ## 创作组内容 {#authoring-group-content}
 
@@ -194,7 +198,7 @@ ht-degree: 1%
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
-以下属性的详细信息与[组创建](#group-creation)部分中提供的描述匹配。 无论是在发布环境还是创作环境中创建，都可以修改任何嵌套群组。
+以下属性的详细信息与 [组创建](#group-creation) 中。 无论是在发布环境还是创作环境中创建，都可以修改任何嵌套群组。
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -209,18 +213,18 @@ ht-degree: 1%
 
 选择其他社区组模板对现有社区组站点不会产生任何影响，因为模板和站点之间没有任何连接。
 
-可以修改子社区的[STRUCTURE](#modify-structure)。
+相反， [结构](#modify-structure) 可以修改子社区。
 
 ### 修改结构 {#modify-structure}
 
 “结构”面板允许修改最初从从创作或发布环境创建子社区站点时所选的社区组模板创建的结构。 从面板，可以
 
-* 将附加的[社区函数](functions.md)拖放到站点结构中
+* 拖放其他 [社区功能](functions.md) 进入网站结构
 * 在站点结构中社区功能的实例上：
 
    * **`gear icon`**
 
-      编辑设置，包括显示标题和URL名称以及[特权成员组](users.md#privilegedmembersgroups)
+      编辑设置，包括显示标题和URL名称，以及 [特权成员组](users.md#privilegedmembersgroups)
 
    * **`trashcan icon`**
 
@@ -238,9 +242,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->组函数必须&#x200B;*不*&#x200B;是站点结构中的&#x200B;*第一个函数，也不是唯一的*&#x200B;函数。
+>组函数必须 *not* be *第一，也是唯一* 函数。
 >
->必须先包含并列出任何其他函数，如[page函数](functions.md#page-function)。
+>任何其他函数，例如 [页面函数](functions.md#page-function)，必须先包含并列出。
 
 #### 示例：向子社区（组）结构添加日历功能 {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
 
@@ -257,21 +261,21 @@ ht-degree: 1%
 
 ### 修改设置 {#modify-settings}
 
-“设置”面板允许添加社区[审核者](#moderation)。
+“设置”面板允许添加社区 [审核者](#moderation).
 
 ### 修改成员资格 {#modify-membership}
 
-[MEMBERSHIP](#membership)面板仅供参考。 无论是可选的、必需的还是受限的，都无法更改已建立的组成员资格类型。
+的 [会员资格](#membership) 面板仅供参考。 无论是可选的、必需的还是受限的，都无法更改已建立的组成员资格类型。
 
 ### 修改缩略图 {#modify-thumbnail}
 
-通过[THUMBNAIL](#thumbnail)面板，可以上传图像，以在发布环境以及创作环境的社区站点的“组”控制台中将社区组表示给站点访客。
+的 [缩略图](#thumbnail) 面板允许上传图像，以在发布环境以及创作环境的社区站点的“组”控制台中将社区组表示为站点访客。
 
 ## 发布群组 {#publishing-the-group}
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
-新建或修改社区组后，可以通过选择`Publish Site`图标来发布（激活）该组。
+在新创建或修改社区组后，可以通过选择 `Publish Site` 图标。
 
 成功发布群组后，将显示一条消息：
 

@@ -1,8 +1,8 @@
 ---
 title: 推荐的社区拓扑
-seo-title: 推荐的社区拓扑
+seo-title: Recommended Topologies for Communities
 description: 如何处理用户生成的内容(UGC)
-seo-description: 如何处理用户生成的内容(UGC)
+seo-description: How to approach the handling of user-generated content (UGC)
 uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 exl-id: 0bdb3063-7333-487b-947f-3fe29c6a6eef
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 1%
+source-wordcount: '585'
+ht-degree: 2%
 
 ---
 
-# 社区{#recommended-topologies-for-communities}的推荐拓扑
+# 推荐的社区拓扑 {#recommended-topologies-for-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 自AEM Communities 6.1起，已采用一种独特的方法来处理网站访客（成员）从发布环境提交的用户生成内容(UGC)。
 
@@ -25,43 +29,43 @@ ht-degree: 1%
 
 AEM平台使用一个节点存储，该存储会将站点内容从作者复制到发布，而AEM Communities则会为从未复制的UGC使用一个通用存储。
 
-对于常用的UGC存储，需要选择[存储资源提供程序(SRP)](working-with-srp.md)。 建议的选项包括：
+对于常用的UGC商店，需要选择 [存储资源提供程序(SRP)](working-with-srp.md). 建议的选项包括：
 
 * [DSRP — 关系数据库存储资源提供程序](dsrp.md)
 * [MSRP - MongoDB存储资源提供程序](msrp.md)
 * [ASRP -Adobe存储资源提供程序](asrp.md)
 
-另一个SRP选项[JSRP - JCR存储资源提供程序](jsrp.md)不支持创作环境和发布环境的通用UGC存储，以便两者都访问。
+另一个SRP选项， [JSRP - JCR存储资源提供程序](jsrp.md)，不支持创作和发布环境使用通用UGC存储来两者访问。
 
 需要公共存储会导致以下推荐的拓扑结果。
 
 >[!NOTE]
 >
->对于AEM Communities，从不复制[UGC](working-with-srp.md#ugc-never-replicated)。
+>对于AEM Communities, [UGC从未复制](working-with-srp.md#ugc-never-replicated).
 >
->当部署不包含[公共存储](working-with-srp.md)时，UGC将仅在输入UGC的AEM发布或创作实例上可见。
+>当部署不包含 [公用商店](working-with-srp.md)，则UGC将仅在输入UGC的AEM发布或创作实例中可见。
 
 >[!NOTE]
 >
->有关AEM平台的更多信息，请参阅[推荐部署](../../help/sites-deploying/recommended-deploys.md)和[AEM平台简介](../../help/sites-deploying/data-store-config.md)。
+>有关AEM平台的更多信息，请参阅 [推荐的部署](../../help/sites-deploying/recommended-deploys.md) 和 [AEM平台简介](../../help/sites-deploying/data-store-config.md).
 
-## 用于生产{#for-production}
+## 用于生产 {#for-production}
 
 为UGC建立公共存储库是必不可少的，因此基础部署取决于其支持公共存储的能力。
 
 两个示例：
 
-1) 如果UGC的预期卷高且可能有本地MongoDB实例，则选择为[MSRP](msrp.md)。
+1) 如果UGC的预期卷较高，并且可以使用本地MongoDB实例，则选择 [MSRP](msrp.md).
 
-2) 为了优化页面内容的性能，选择[发布场](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)和[ASRP](asrp.md)可通过相对简单的操作来优化UGC的缩放比例。
+2) 为了优化页面内容的性能，请选择 [发布场](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) 和 [ASRP](asrp.md) 通过相对简单的操作，可以实现UGC的最佳缩放。
 
 对于这两种情况，部署可能基于任何OAK微内核。
 
-要选择适当的公用商店，请仔细考虑每个商店的唯一[特性](working-with-srp.md#characteristics-of-srp-options)。
+要选择适当的公用商店，请仔细考虑 [特征](working-with-srp.md#characteristics-of-srp-options) 每个的。
 
-有关Oak微核的更多详细信息，请访问[推荐部署](../../help/sites-deploying/recommended-deploys.md)。
+有关Oak微核的更多详细信息，请访问 [推荐的部署](../../help/sites-deploying/recommended-deploys.md).
 
-### TarMK发布场{#tarmk-publish-farm}
+### TarMK发布场 {#tarmk-publish-farm}
 
 当拓扑为发布场时，相关重要主题为
 
@@ -84,11 +88,11 @@ AEM平台使用一个节点存储，该存储会将站点内容从作者复制�
 | TarMK场（默认） | JCR | JCR | JSRP | 否 |
 | Oak群集 | JCR | JCR | JSRP | 仅发布环境选项 |
 
-## 用于开发{#for-development}
+## 用于开发 {#for-development}
 
-对于非生产环境，[JSRP](jsrp.md)可以简化使用一个创作实例和一个发布实例来设置开发环境的过程。
+对于非生产环境， [JSRP](jsrp.md) 使用一个创作实例和一个发布实例来设置开发环境非常简单。
 
-如果为生产选择[ASRP](asrp.md)、[DSRP](dsrp.md)或[MSRP](msrp.md)，则还可以使用Adobe按需存储或MongoDB来设置类似的开发环境。 有关示例，请参阅[HowTo Setup MongoDB for Demo](demo-mongo.md)。
+如果选择 [ASRP](asrp.md), [DSRP](dsrp.md) 或 [MSRP](msrp.md) 对于生产，还可以使用Adobe按需存储或MongoDB设置类似的开发环境。 有关示例，请参阅 [如何为演示设置MongoDB](demo-mongo.md).
 
 ## 引用 {#references}
 

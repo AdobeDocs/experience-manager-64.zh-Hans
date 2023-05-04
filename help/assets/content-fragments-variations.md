@@ -1,5 +1,5 @@
 ---
-title: 变量 – 创作片段内容
+title: 变体 – 创作片段内容
 seo-title: Variations - Authoring Fragment Content
 description: 变量允许您为片段创作内容，然后根据用途创建该内容的变量（如果需要）。
 seo-description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
@@ -12,14 +12,18 @@ discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1738'
-ht-degree: 85%
+source-wordcount: '1774'
+ht-degree: 83%
 
 ---
 
-# 变量 – 创作片段内容 {#variations-authoring-fragment-content}
+# 变体 – 创作片段内容 {#variations-authoring-fragment-content}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -91,7 +95,7 @@ ht-degree: 85%
 * 选择 [格式](#formats) ([富文本](#rich-text), [纯文本](#plain-text), [Markdown](#markdown))
 * [显示文本统计信息](#viewing-key-statistics)
 * [上传内容](#uploading-content)
-* [与主要内容同步](#synchronizing-with-master)（编辑变量时）
+* [与主要内容同步](#synchronizing-with-master)（编辑变体时）
 * [总结文本](#summarizing-text)
 * [注释](content-fragments-variations.md#annotating-a-content-fragment) 您的文本
 
@@ -203,7 +207,7 @@ ht-degree: 85%
 >
 
 
-1. 选择&#x200B;**[!UICONTROL 主要变量]**&#x200B;或所需的变量。
+1. 选择&#x200B;**[!UICONTROL 主要变体]**&#x200B;或所需的变体。
 1. 打开全屏编辑器。
 
 1. 从工具栏中选择&#x200B;**[!UICONTROL “摘要文本”]**。
@@ -225,7 +229,7 @@ ht-degree: 85%
 
 要对片段添加注释：
 
-1. 选择&#x200B;**[!UICONTROL 主要变量]**&#x200B;或所需的变量。
+1. 选择&#x200B;**[!UICONTROL 主要变体]**&#x200B;或所需的变体。
 1. 打开全屏编辑器。
 1. 选择一些文本。 的 **[!UICONTROL 注释]** 图标将变为可用。
 
@@ -320,7 +324,7 @@ ht-degree: 85%
 
 ### 重命名变体 {#renaming-a-variation}
 
-要重命名现有变量，请执行以下操作：
+要重命名现有变体，请执行以下操作：
 
 1. 打开片段，然后从侧面板中选择&#x200B;**[!UICONTROL “变体”]**。
 1. 选择所需的变体。
@@ -358,7 +362,7 @@ ht-degree: 85%
 >
 >同步仅可将更改从&#x200B;***母版**复制到变体*。
 >
->将仅同步变量的当前元素。
+>将仅同步变体的当前元素。
 >
 >同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
 >

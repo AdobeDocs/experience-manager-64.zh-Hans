@@ -1,8 +1,8 @@
 ---
 title: 报表控制台
-seo-title: 报表控制台
+seo-title: Reports Console
 description: 了解如何访问报告
-seo-description: 了解如何访问报告
+seo-description: Learn how to access reports
 uuid: 580f5eb8-24b2-4404-90d4-81f7108d1ee6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
 role: Admin
 exl-id: 766711ea-f3d3-49ab-8346-4e4477c261bd
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 5%
+source-wordcount: '587'
+ht-degree: 6%
 
 ---
 
 # 报表控制台 {#reports-console}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
@@ -26,11 +30,11 @@ ht-degree: 5%
 
 通常，各种报告包括：
 
-* [工作总揽报表](#assignments-report)  — 对于启 [用社区](overview.md#enablement-community)，提供学习者在其工作总揽上的进度概述，包括实施SCORM标准时的关联得分
-* [查看次数报表](#views-report)  — 提供了一个图表，其中显示了社区成员和网站访客对任何社区网站的内容查看次数
-* [帖子报表](#posts-report)  — 提供按社区成员到任何社区站点的各种类型帖子的图表
+* [分配报表](#assignments-report)  — 对于 [启用社区](overview.md#enablement-community)，提供学习者分配进度的概述，包括实施SCORM标准时的关联分数
+* [查看报表](#views-report)  — 提供任何社区站点的社区成员和站点访客查看内容的图表
+* [帖子报表](#posts-report)  — 提供社区成员向任何社区站点发布的各种类型帖子的图表
 
-启用[Adobe Analytics](sites-console.md#analytics)后，报表将包含一段时间内每个启用资源的查看次数、播放次数、评论次数和评级
+When [Adobe Analytics已启用](sites-console.md#analytics)，报表将包括一段时间内每个启用资源的查看次数、播放次数、评论次数和评级
 
 表格报表可以导出为.csv格式，以供后续处理。
 
@@ -38,7 +42,7 @@ ht-degree: 5%
 
 ### 社区站点报告 {#reports-for-community-sites}
 
-* 从全局导航：**[!UICONTROL 导航>社区>报表]**
+* 从全局导航： **[!UICONTROL 导航>社区>报表]**
 * 选择
    * **[!UICONTROL 指定报表]**
       * 为选定的社区站点、用户或组和分配生成报告
@@ -50,11 +54,11 @@ ht-degree: 5%
 
 ### 有关启用资源和学习路径的报表 {#reports-for-enablement-resources-and-learning-paths}
 
-* 从全局导航：**[!UICONTROL 导航>社区>资源]**
+* 从全局导航： **[!UICONTROL 导航>社区>资源]**
 * 选择现有的启用社区站点
-   * 选择&#x200B;**[!UICONTROL 报表]**&#x200B;图标以生成涵盖所有启用资源的报表
+   * 选择 **[!UICONTROL 报表]** 图标以生成涵盖所有启用资源的报表
    * 选择启用学习路径
-   * 选择&#x200B;**[!UICONTROL 报表]**&#x200B;图标以生成报表
+   * 选择 **[!UICONTROL 报表]** 图标为生成报表
       * 包含的支持资源
       * 分配到学习路径的学习者
 * 这些报表提供：
@@ -65,7 +69,7 @@ ht-degree: 5%
       * 评论次数
       * 给定星级
 
-有关更多详细信息，请参阅资源控制台的[报表部分](resources.md#report)。
+有关更多详细信息，请参阅 [报表部分](resources.md#report) 的子菜单。
 
 ## 指定报表 {#assignments-report}
 
@@ -77,16 +81,15 @@ ht-degree: 5%
 
 为报表选择标准：
 
-* ****
-网站选择一个支持社区网站
+* **[!UICONTROL 网站]**
+选择启用社区网站
 * **[!UICONTROL 用户或组]**
    * 选择用户以为一个学习者生成报告
-   * 选择“组”以为学习者组生成报告
-隧道服务将从发布环境访问成员和成员组
-* ****
-分配从分配给选定学习者的支持资源中进行选择
+   * 选择“组”以为学习者组生成报告隧道服务将从发布环境访问成员和成员组
+* **[!UICONTROL 分配]**
+从分配给选定学习者的支持资源中进行选择
 
-选择&#x200B;**[!UICONTROL 生成]**&#x200B;以创建报表：
+选择 **[!UICONTROL 生成]** 要创建报表，请执行以下操作：
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -98,18 +101,17 @@ ht-degree: 5%
 
 为报表选择标准：
 
-* ****
-站点选择社区站点
-* **[!UICONTROL 内容]**
-类型可以选择所有内容或选择网站上存在的功能之一
-* 时间范围
-选择以下选项之一：
+* **[!UICONTROL 网站]**
+选择社区站点
+* **[!UICONTROL 内容类型]**
+可以选择“所有内容”或选择网站上存在的功能之一
+* 时间范围选择以下选项之一：
    * 过去 7 天
    * 过去 30 天
    * 过去 90 天
    * 去年
 
-选择&#x200B;**[!UICONTROL 生成]**&#x200B;以创建报表：
+选择 **[!UICONTROL 生成]** 要创建报表，请执行以下操作：
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -121,18 +123,17 @@ ht-degree: 5%
 
 为报表选择标准：
 
-* ****
-站点选择社区站点
-* **[!UICONTROL 内容]**
-类型可以选择所有内容或选择网站上存在的功能之一
-* 时间范围
-选择以下选项之一：
+* **[!UICONTROL 网站]**
+选择社区站点
+* **[!UICONTROL 内容类型]**
+可以选择“所有内容”或选择网站上存在的功能之一
+* 时间范围选择以下选项之一：
    * 过去 7 天
    * 过去 30 天
    * 过去 90 天
    * 去年
 
-选择&#x200B;**[!UICONTROL 生成]**&#x200B;以创建报表：
+选择 **[!UICONTROL 生成]** 要创建报表，请执行以下操作：
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 

@@ -1,24 +1,28 @@
 ---
 title: 在AEM中搜索资产
-description: 了解如何使用过滤器面板在 [!DNL Experience Manager] 中查找所需的资产，以及如何使用搜索中显示的资产。
+description: 了解如何在 [!DNL Experience Manager] ，以及如何使用搜索中显示的资产。
 contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '585'
+ht-degree: 3%
 
 ---
 
-# 在[!DNL Experience Manager]中搜索资产 {#search-assets-in-aem}
+# 在 [!DNL Experience Manager] 中搜索资源 {#search-assets-in-aem}
 
-了解如何使用过滤器面板在[!DNL Experience Manager]中查找所需的资产，以及如何使用搜索中显示的资产。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+了解如何在 [!DNL Experience Manager] ，以及如何使用搜索中显示的资产。
 
 使用“过滤器”面板可搜索资产、文件夹、标记和元数据。 您可以使用通配符星号搜索字符串的部分内容。
 
-“过滤器”面板提供了多种选项，可用于以多种方式（而不是通用分类顺序）搜索资产和文件夹。
+“过滤器”面板提供了多种选项，可用于以多种方式而不是按常规分类顺序搜索资产和文件夹。
 
 您可以根据以下选项（谓词）进行搜索：
 
@@ -29,13 +33,13 @@ ht-degree: 1%
 * 状态
 * 方向
 * 样式
-* 分析
+* 见解
 
 <!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
-您可以使用[搜索彩块化](search-facets.md)自定义“过滤器”面板，并添加/删除搜索谓词。 要显示“过滤器”面板，请执行以下步骤：
+您可以使用自定义过滤器面板和添加/删除搜索谓词 [搜索彩块化](search-facets.md). 要显示“过滤器”面板，请执行以下步骤：
 
-1. 在Assets用户界面中，点按/单击工具栏中的![search_icon](assets/search_icon.png) ，以显示Omnisearch框。
+1. 在Assets用户界面中，点按/单击 ![search_icon](assets/search_icon.png) 来显示Omnisearch框。
 1. 输入搜索词并按Enter。 或者，只需按Enter键，而不输入任何搜索词。 请勿输入任何前导空格，否则搜索将不起作用。
 
 1. 点按/单击GlobalNav图标。 此时将显示“过滤器”面板。
@@ -50,7 +54,7 @@ ht-degree: 1%
 
 “过滤器”面板有助于为您的搜索体验添加更多粒度，并使搜索功能更加通用。 您可以轻松地向下展开到所需的详细级别。
 
-例如，如果要查找图像，请使用&#x200B;**[!UICONTROL 文件类型]**&#x200B;谓词选择要位图图像还是矢量图像。
+例如，如果您要查找图像，请使用 **[!UICONTROL 文件类型]** 此谓词用于选择是要位图图像还是矢量图像。
 
 ![image_type](assets/image_type.png)
 
@@ -58,13 +62,13 @@ ht-degree: 1%
 
 ![mime_type](assets/mime_type.png)
 
-同样，在搜索文档时，您可以指定格式，例如PDF或MS Word。
+同样，在搜索文档时，可以指定格式，例如PDF或MS Word。
 
 ![文档](assets/documents.png)
 
 ## 根据文件大小进行搜索 {#search-based-on-file-size}
 
-使用&#x200B;**文件大小**&#x200B;谓词，可根据资产的大小搜索资产。 您可以为大小范围指定下限和上限，以缩小搜索范围。 您还可以指定度量单位，例如千字节、兆字节等。
+使用 **文件大小** 此谓词用于根据资产的大小搜索资产。 您可以为大小范围指定下限和上限，以缩小搜索范围。 您还可以指定度量单位，例如千字节、兆字节等。
 
 ![unit_of_measure](assets/unit_of_measure.png)
 
@@ -80,7 +84,7 @@ ht-degree: 1%
 
 ## 基于状态搜索 {#search-based-on-status}
 
-使用&#x200B;**状态**&#x200B;谓词，可根据各种类型的状态（如发布、批准、结帐和到期）搜索资产。
+使用 **状态** 此谓词用于根据各种类型的状态（如发布、批准、结帐和到期）搜索资产。
 
 ![状态](assets/status.png)
 
@@ -94,11 +98,11 @@ ht-degree: 1%
 
 ## 根据分析数据进行搜索 {#search-based-on-insights-data}
 
-使用&#x200B;**分析**&#x200B;谓词，根据从各种创意应用程序获取的资产使用情况统计信息来搜索资产。 使用情况数据按以下类别分组：
+使用 **分析** 此谓词用于根据从各种创意应用程序获取的资产使用情况统计信息来搜索资产。 使用情况数据按以下类别分组：
 
 * 使用分数
 * 展示次数
-* 点击量
+* 单击次数
 * 显示资产的媒体渠道
 
 ![洞察](assets/insights.png)

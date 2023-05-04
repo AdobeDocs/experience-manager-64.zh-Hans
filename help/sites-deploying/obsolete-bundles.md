@@ -1,24 +1,28 @@
 ---
 title: 升级后卸载的过时包列表
-seo-title: 升级后卸载的过时包列表
+seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: 详细列出了升级到AEM 6.3时自动卸载的包。
-seo-description: 详细列出了升级到AEM 6.3时自动卸载的包。
+seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
-feature: 升级
+feature: Upgrading
 exl-id: 0f075a01-f286-4e16-9061-4e902c553eb9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '203'
 ht-degree: 2%
 
 ---
 
 # 升级后卸载的过时包列表{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >

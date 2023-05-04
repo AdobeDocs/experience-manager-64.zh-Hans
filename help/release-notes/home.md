@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Release Notes
 description: AEM 发行说明涵盖有关最新版 AEM 的重要信息，包括新增功能、受支持的平台、已弃用和已删除的功能以及已知问题。
 seo-description: The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.
 exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 39%
+source-wordcount: '380'
+ht-degree: 37%
 
 ---
 
 # Adobe Experience Manager 6.4发行说明
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM 发行说明涵盖有关最新版 AEM 的重要信息，包括新增功能、受支持的平台、已弃用和已删除的功能以及已知问题。
 

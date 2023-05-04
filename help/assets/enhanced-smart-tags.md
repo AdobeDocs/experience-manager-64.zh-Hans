@@ -9,14 +9,18 @@ discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 feature: Smart Tags,Search
 role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1550'
 ht-degree: 14%
 
 ---
 
 # 增强型智能标记 {#enhanced-smart-tags}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 增强型智能标记概述 {#overview-of-enhanced-smart-tags}
 
@@ -32,11 +36,11 @@ ht-degree: 14%
 
 在后台，智能内容服务使用Adobe Sensei的AI框架，根据您的标记结构和业务分类培训其图像识别算法。 然后，可使用此内容智能对不同的资产集应用相关标记。
 
-智能内容服务是在[!DNL Adobe I/O]上托管的云服务。 要在Adobe Experience Manager中使用它，系统管理员必须将您的[!DNL Experience Manager]实例与[!DNL Adobe I/O]集成。
+智能内容服务是托管在 [!DNL Adobe I/O]. 要在Adobe Experience Manager中使用它，系统管理员必须将 [!DNL Experience Manager] 实例 [!DNL Adobe I/O].
 
 总之，以下是使用智能内容服务的主要步骤：
 
-* 入门
+* 入门培训
 * 审核资产和标记（分类定义）
 * 培训智能内容服务
 * 自动标记
@@ -45,31 +49,31 @@ ht-degree: 14%
 
 ## 前提条件 {#prerequisites}
 
-在使用智能内容服务之前，请确保满足以下条件以在[!DNL Adobe I/O]上创建集成：
+在使用智能内容服务之前，请确保满足以下条件在 [!DNL Adobe I/O]:
 
 * 具备拥有组织管理员权限的 Adobe ID 帐户。
 * 已为您的组织启用智能内容服务。
 
-## 入门 {#onboarding}
+## 入门培训 {#onboarding}
 
-智能内容服务可作为[!DNL Experience Manager]的附加组件进行购买。 购买后，系统会向贵组织的管理员发送一封电子邮件，其中包含指向[!DNL Adobe I/O]的链接。
+智能内容服务可作为的加载项进行购买 [!DNL Experience Manager] . 购买后，系统会向贵组织的管理员发送一封电子邮件，其中包含指向 [!DNL Adobe I/O].
 
-管理员可以按照链接将智能内容服务与[!DNL Experience Manager]集成。 要将服务与[!DNL Experience Manager]资产集成，请参阅[配置智能标记](config-smart-tagging.md)。
+管理员可以按照链接将智能内容服务与 [!DNL Experience Manager] . 将服务与 [!DNL Experience Manager] 资产，请参阅 [配置智能标记](config-smart-tagging.md).
 
-管理员配置服务并在[!DNL Experience Manager]中添加用户时，载入过程即会完成。
+当管理员配置服务并将用户添加到 [!DNL Experience Manager] .
 
 ## 审核资产和标记 {#reviewing-assets-and-tags}
 
 载入后，您首先需要确定一组标记，以在您的业务环境中最好地描述这些图像。
 
-接下来，查看图像以识别最能代表您产品以满足特定业务需求的图像集。 确保策划集中的资产符合[智能内容服务培训准则](smart-tags-training-guidelines.md)。
+接下来，查看图像以识别最能代表您产品以满足特定业务需求的图像集。 确保策划集中的资产符合 [智能内容服务培训指南](smart-tags-training-guidelines.md).
 
 将资产添加到文件夹中，并从属性页面将标记应用于每个资产。 然后，在此文件夹上运行培训工作流。 经过策划的资产集使智能内容服务能够使用您的分类定义有效地培训更多资产。
 
 >[!NOTE]
 >
 >1. 培训是一个不可撤消的过程。 Adobe建议您在对标记培训智能内容服务之前，先查看策划资产集中的标记。
->1. 在开始任何标记的培训之前，请阅读[智能内容服务培训指南](smart-tags-training-guidelines.md)。
+>1. 请阅读 [智能内容服务培训指南](smart-tags-training-guidelines.md) 开始任何标记的培训之前。
 >1. 首次培训智能内容服务时，Adobe建议您至少在两个不同的标记上对其进行培训。
 
 >
@@ -89,20 +93,20 @@ ht-degree: 14%
 
 ### 定期培训 {#periodic-training}
 
-您可以启用智能内容服务，以便对文件夹中的资产和关联的标记进行定期培训。 打开资产文件夹的属性页面，在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡下选择&#x200B;**[!UICONTROL 启用智能标记]**，然后保存更改。
+您可以启用智能内容服务，以便对文件夹中的资产和关联的标记进行定期培训。 打开资产文件夹的属性页面，选择 **[!UICONTROL 启用智能标记]** 下 **[!UICONTROL 详细信息]** ，然后保存更改。
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-为文件夹选择此选项后，[!DNL Experience Manager]会自动运行培训工作流，以针对文件夹资产及其标记培训智能内容服务。 默认情况下，培训工作流每周在星期六凌晨12:30运行。
+为文件夹选择此选项后， [!DNL Experience Manager] 自动运行培训工作流，以在文件夹资产及其标记上培训智能内容服务。 默认情况下，培训工作流每周在星期六凌晨12:30运行。
 
 ### 按需培训 {#on-demand-training}
 
 您可以根据需要从工作流控制台中培训智能内容服务。
 
-1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具>工作流>模型]**。
+1. 点按/单击 [!DNL Experience Manager] 徽标，然后转到 **[!UICONTROL 工具>工作流>模型]**.
 1. 从&#x200B;**[!UICONTROL 工作流模型]**&#x200B;页面中，选择&#x200B;**[!UICONTROL 智能标记培训]**&#x200B;工作流，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 启动工作流]**。
-1. 在&#x200B;**[!UICONTROL 运行工作流]**&#x200B;对话框中，浏览到有效负荷文件夹，该文件夹包含用于培训服务的标记资产。
-1. 指定工作流的标题并添加注释。 然后，点按/单击&#x200B;**[!UICONTROL 运行]**。 将提交资产和标记以供培训。
+1. 在 **[!UICONTROL 运行工作流]** 对话框中，浏览到包含标记资产的有效负荷文件夹，以培训服务。
+1. 指定工作流的标题并添加注释。 然后，点按/单击 **[!UICONTROL 运行]**. 将提交资产和标记以供培训。
 
    ![workflow_dialog](assets/workflow_dialog.png)
 
@@ -114,7 +118,7 @@ ht-degree: 14%
 
 要检查是否在资产培训集中的标记上对智能内容服务进行了培训，请从报表控制台中查看培训工作流报表。
 
-1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具>资产>报表]**。
+1. 点按/单击 [!DNL Experience Manager] 徽标，然后转到 **[!UICONTROL 工具>资产>报表]**.
 1. 在&#x200B;**[!UICONTROL 资产报表]**&#x200B;页面中，点按/单击&#x200B;**[!UICONTROL 创建]**。
 1. 选择&#x200B;**[!UICONTROL 智能标记培训]**&#x200B;报表，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 下一步]**。
 1. 指定报表的标题和描述。在&#x200B;**[!UICONTROL 计划报告]**&#x200B;下，保持选中&#x200B;**[!UICONTROL 立即]**&#x200B;选项。如果要安排以后的计划报告，请选择&#x200B;**[!UICONTROL 稍后]**，然后指定日期和时间。然后，点按/单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
@@ -125,7 +129,7 @@ ht-degree: 14%
 
    如果在此报表中未看到标记，请再次为这些标记运行培训工作流。
 
-1. 要下载报表，请从列表中选择该报表，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 下载]**&#x200B;图标。 报表将下载为Excel文件。
+1. 要下载报表，请从列表中选择该报表，然后点按/单击 **[!UICONTROL 下载]** 图标。 报表将下载为Excel文件。
 
 ## 自动标记资产 {#tagging-assets-automatically}
 
@@ -139,7 +143,7 @@ ht-degree: 14%
 
 ### 定期标记 {#periodic-tagging}
 
-您可以启用智能内容服务来定期标记文件夹中的资产。 打开资产文件夹的属性页面，在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡下选择&#x200B;**[!UICONTROL 启用智能标记]**，然后保存更改。
+您可以启用智能内容服务来定期标记文件夹中的资产。 打开资产文件夹的属性页面，选择 **[!UICONTROL 启用智能标记]** 下 **[!UICONTROL 详细信息]** ，然后保存更改。
 
 为文件夹选择此选项后，智能内容服务会自动为文件夹中的资产添加标记。 默认情况下，标记工作流每天中午12:00运行。
 
@@ -147,8 +151,8 @@ ht-degree: 14%
 
 您可以从以下内容触发标记工作流，以便立即标记您的资产：
 
-* “工作流”控制台
-* 时间轴
+* 工作流控制台
+* 时间线
 
 >[!NOTE]
 >
@@ -156,28 +160,28 @@ ht-degree: 14%
 
 #### 从工作流控制台中标记资产 {#tagging-assets-from-the-workflow-console}
 
-1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具>工作流>模型]**。
+1. 点按/单击 [!DNL Experience Manager] 徽标，然后转到 **[!UICONTROL 工具>工作流>模型]**.
 1. 从&#x200B;**[!UICONTROL 工作流模型]**&#x200B;页面中，选择 **[!UICONTROL DAM 智能标记资产]**&#x200B;工作流，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 启动工作流]**。
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
-1. 在&#x200B;**[!UICONTROL 运行工作流]**&#x200B;对话框中，浏览到包含要自动应用标记的资产的有效负荷文件夹。
-1. 指定工作流的标题和可选注释。 然后，点按/单击&#x200B;**[!UICONTROL 运行]**。
+1. 在 **[!UICONTROL 运行工作流]** 对话框中，浏览到包含要自动应用标记的资产的有效负荷文件夹。
+1. 指定工作流的标题和可选注释。 然后，点按/单击 **[!UICONTROL 运行]**.
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   导航到资产文件夹并查看标记，以验证智能内容服务是否正确标记了您的资产。 有关详细信息，请参阅[管理智能标记](managing-smart-tags.md)。
+   导航到资产文件夹并查看标记，以验证智能内容服务是否正确标记了您的资产。 有关详细信息，请参阅 [管理智能标记](managing-smart-tags.md).
 
 #### 从时间轴中标记资产 {#tagging-assets-from-the-timeline}
 
 1. 从Assets用户界面中，选择包含要应用智能标记的资产或特定资产的文件夹。
 1. 点按/单击GlobalNav图标，然后打开时间轴。
-1. 点按/单击底部的箭头，然后点按/单击&#x200B;**[!UICONTROL 启动工作流]**。
+1. 点按/单击底部的箭头，然后点按/单击 **[!UICONTROL 启动工作流]**.
 
    ![start_workflow](assets/start_workflow.png)
 
-1. 选择&#x200B;**[!UICONTROL DAM智能标记资产]**&#x200B;工作流，并指定工作流的标题。
-1. 点按/单击&#x200B;**[!UICONTROL 开始]**。 工作流会将您的标记应用于资产。 导航到资产文件夹并查看标记，以验证智能内容服务是否正确标记了您的资产。 有关详细信息，请参阅[管理智能标记](managing-smart-tags.md)。
+1. 选择 **[!UICONTROL DAM智能标记资产]** 工作流，并为工作流指定标题。
+1. 点按/单击 **[!UICONTROL 开始]**. 工作流会将您的标记应用于资产。 导航到资产文件夹并查看标记，以验证智能内容服务是否正确标记了您的资产。 有关详细信息，请参阅 [管理智能标记](managing-smart-tags.md).
 
 >[!NOTE]
 >

@@ -5,14 +5,18 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 37%
+source-wordcount: '1678'
+ht-degree: 36%
 
 ---
 
 # 使用 Brand Portal 配置 AEM Assets {#configure-integration-64}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager Assets通过 [!DNL Adobe I/O]，可获取IMS令牌以授权您的Brand Portal租户。
 
@@ -65,7 +69,7 @@ Adobe Experience Manager Assets通过 [!DNL Adobe I/O]，可获取IMS令牌以�
 
 有关详细说明，请参阅
 
-* [AEM 6.4 Service Pack 发行说明](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [AEM 6.4 Service Pack发行说明](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 **联系客户支持** 如果您找不到最新的AEM包或Service Pack。
 

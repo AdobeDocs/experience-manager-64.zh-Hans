@@ -1,28 +1,32 @@
 ---
 title: 使用API在网页上列出表单
-seo-title: 使用API在网页上列出表单
+seo-title: Listing forms on a web page using APIs
 description: 以编程方式查询Forms Manager，以检索过滤的表单列表并在您自己的网页上显示。
-seo-description: 以编程方式查询Forms Manager，以检索过滤的表单列表并在您自己的网页上显示。
+seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
-source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+exl-id: e42b7cdf-9a70-4ff6-8283-7bbc3690ca05
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 1%
+source-wordcount: '729'
+ht-degree: 2%
 
 ---
 
+# 使用API在网页上列出表单 {#listing-forms-on-a-web-page-using-apis}
 
-# 使用API在网页上列出表单{#listing-forms-on-a-web-page-using-apis}
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该API查询和检索一组符合搜索条件的表单。 您可以使用API根据各种过滤器搜索表单。 响应对象包含表单属性、属性和表单的渲染端点。
 
-要使用REST API搜索表单，请使用下面描述的查询参数，向位于`https://[server]:[port]/libs/fd/fm/content/manage.json`的服务器发送GET请求。
+要使用REST API搜索表单，请向服务器发送GET请求，地址为 `https://[server]:[port]/libs/fd/fm/content/manage.json` 查询参数。
 
-## 查询参数{#query-parameters}
+## 查询参数 {#query-parameters}
 
 <table>
  <tbody>
@@ -32,9 +36,9 @@ AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该A
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>指定要调用的函数。 要搜索表单，请将<code>func </code>属性的值设置为<code>searchForms</code>。</p> <p>例如， <code class="code">
+   <td><p>指定要调用的函数。 要搜索表单，请设置 <code>func </code>属性 <code>searchForms</code>.</p> <p>例如， <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong>注意：</strong> <em>此参数是必选项。</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>注意：</strong> <em>此参数是必选参数。</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -49,7 +53,7 @@ AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该A
     </ul> </td>
   </tr>
   <tr>
-   <td>relation<br /> </td>
+   <td>关系<br /> </td>
    <td>指定要获取的相关资产以及搜索结果。 您可以选择以下选项之一来获取相关资产：
     <ul>
      <li><strong>NO_RELATION</strong>:请勿获取相关资产。</li>
@@ -77,9 +81,9 @@ AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该A
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>在上述示例中， </p>
     <ul>
-     <li><strong>名称</strong>:指定要搜索的属性的名称。</li>
+     <li><strong>name</strong>:指定要搜索的属性的名称。</li>
      <li><strong>值</strong>:指定要搜索的属性的值。</li>
-     <li><strong>运算符</strong>:指定在搜索时要应用的运算符。支持以下运算符：
+     <li><strong>运算符</strong>:指定在搜索时要应用的运算符。 支持以下运算符：
       <ul>
        <li>EQ — 等于 </li>
        <li>NEQ — 不等于</li>
@@ -105,8 +109,8 @@ AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该A
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>名称</strong>:指定用于对搜索结果排序的属性的名称。</li>
-     <li><strong>标准</strong>:指定结果的顺序。顺序属性接受以下值：
+     <li><strong>name</strong>:指定用于对搜索结果排序的属性的名称。</li>
+     <li><strong>标准</strong>:指定结果的顺序。 顺序属性接受以下值：
       <ul>
        <li>ASC — 使用ASC以升序排列结果。<br /> </li>
        <li>DES — 使用DES以降序排列结果。</li>
@@ -115,7 +119,7 @@ AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该A
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>指定是否检索二进制内容。 <code>includeXdp</code>属性适用于<code>FORM</code>、<code>PDFFORM</code>和<code>PRINTFORM</code>类型的资产。</td>
+   <td>指定是否检索二进制内容。 的 <code>includeXdp</code> 属性适用于类型的资产 <code>FORM</code>, <code>PDFFORM</code>和 <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
@@ -124,7 +128,7 @@ AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该A
  </tbody>
 </table>
 
-## 示例请求{#sample-request}
+## 示例请求 {#sample-request}
 
 ```
 func : searchForms
@@ -144,7 +148,7 @@ statements: [{"name":"name","value":"*Claim.xdp","operator":"CONTAINS"},
 orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 ```
 
-## 示例响应{#sample-response}
+## 示例响应 {#sample-response}
 
 ```
 [

@@ -1,22 +1,26 @@
 ---
 title: 访问和填写已发布的表单
-seo-title: 访问和填写已发布的表单
+seo-title: Accessing and filling published forms
 description: Forms门户为Web开发人员提供了组件，用于在使用Adobe Experience Manager(AEM)创作的网站上创建和自定义表单门户。
-seo-description: Forms门户为Web开发人员提供了组件，用于在使用Adobe Experience Manager(AEM)创作的网站上创建和自定义表单门户。
+seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 uuid: dd03a9de-b412-4d7b-befe-981cb3aa8d0a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 0452062d-cf85-4009-a0a5-a1e891192ea8
 exl-id: d68806f8-8ed8-4aff-9724-bafbe2b1f18e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
 
-# 访问和填写已发布的表单{#accessing-and-filling-published-forms}
+# 访问和填写已发布的表单 {#accessing-and-filling-published-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 在以表单为中心的门户部署设置中，表单开发和门户开发是两个不同的活动。 在表单设计人员在存储库中设计和存储表单时， Web开发人员会创建一个Web应用程序，以列出表单并处理提交。 然后，Forms将复制到Web层，因为表单存储库与Web应用程序之间没有通信。
 
@@ -24,24 +28,24 @@ ht-degree: 0%
 
 Forms Portal减少了管理开销和生产延迟。 它为Web开发人员提供了组件，用于在使用Adobe Experience Manager(AEM)创作的网站上创建和自定义表单门户。
 
-有关表单门户及其功能的更多信息，请参阅[在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md)。
+有关表单门户及其功能的更多信息，请参阅 [在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md).
 
-## Forms Portal入门{#getting-started-with-forms-portal}
+## Forms Portal快速入门 {#getting-started-with-forms-portal}
 
-导航到已发布的表单门户页面。 有关创建Forms门户页面的更多信息，请参阅[创建Forms门户页面](/help/forms/using/creating-form-portal-page.md)。
+导航到已发布的表单门户页面。 有关创建表单门户页面的更多信息，请参阅 [创建表单门户页面](/help/forms/using/creating-form-portal-page.md).
 
 Roms Portal的Search和Lister组件显示AEM Server的Publish实例上可用的表单。 此列表包含创作表单门户页面时过滤器中定义的所有表单或表单。 表单门户页面与类似，如下图所示：
 
-![示例表单门户页 ](assets/forms-portal-page.png)
-**面图：** *示例表单门户页面*
+![表单门户页面示例 ](assets/forms-portal-page.png)
+**图：** *表单门户页面示例*
 
-### 搜索和制表人{#search-and-lister}
+### 搜索和Lister {#search-and-lister}
 
 搜索和制表人组件允许您向表单门户添加以下功能：
 
 * 在面板、卡片或网格视图中列出现成可用的表单。 它还支持Forms Manager中特定文件夹中的自定义模板列表表单。
 * 指定表单的呈现方式 — HTML5、PDF或两者。
-* 指定PDF和XFA表单的呈现方式 — HTML5、PDF或两者。 非XFA表单为HTML5。
+* 指定PDF和XFA表单的呈现方式 — HTML5、PDF或两者。 非XFA表单作为HTML5。
 * 允许根据条件（如表单属性、元数据和标记）搜索表单。
 * 将表单数据提交到Servlet。
 * 使用自定义样式表(CSS)自定义门户的外观。
@@ -54,23 +58,23 @@ Roms Portal的Search和Lister组件显示AEM Server的Publish实例上可用的�
 
 通过全文搜索，您可以查找并列出基于指定关键词的表单。
 
-![高级搜索对](assets/search-panel.png)
-**话框图：** *高级搜索对话框*
+![高级搜索对话框](assets/search-panel.png)
+**图：** *高级搜索对话框*
 
 “高级搜索”允许您根据指定的表单属性搜索表单。 与全文搜索相比，这提供了更具体的结果。 高级搜索包括基于标记、属性（如“作者”、“描述”和“标题”）、修改日期和全文的搜索。
 
 Lister根据搜索参数显示表单。 搜索结果中的每个表单都会显示一个图标，该图标已添加到关联表单的超链接。 您可以单击图标以打开并使用关联的表单。
 
-### 填写表单{#filling-a-form}
+### 填写表单 {#filling-a-form}
 
-![自适应表单示](assets/filling_a_form.png)
-**例图：** *自适应表单示例*
+![自适应表单示例](assets/filling_a_form.png)
+**图：** *自适应表单示例*
 
 可以从页面搜索和Lister组件中随表单一起提供的链接访问表单。
 
 每个表单都包含帮助信息，使用户能够填写表单。
 
-#### 草稿和提交{#drafts-and-submission}
+#### 草稿和提交 {#drafts-and-submission}
 
 用户可以通过单击保存按钮来保存表单草稿。 这允许用户在提交表单之前的一段时间内处理表单。
 
@@ -80,16 +84,16 @@ Lister根据搜索参数显示表单。 搜索结果中的每个表单都会显�
 
 >[!NOTE]
 >
->仅当将自适应表单的提交操作配置为Forms Portal提交操作时，提交的表单才会显示在已提交的Forms选项卡中。 有关提交操作的更多信息，请参阅[配置提交操作](/help/forms/using/configuring-submit-actions.md)。
+>仅当将自适应表单的提交操作配置为Forms Portal提交操作时，提交的表单才会显示在已提交的Forms选项卡中。 有关提交操作的更多信息，请参阅 [配置提交操作](/help/forms/using/configuring-submit-actions.md).
 
-![草稿和提交](assets/draft-submission.png)
-**组件图：** *草稿和提交组件*
+![草稿和提交组件](assets/draft-submission.png)
+**图：** *草稿和提交组件*
 
-## 使用提交的表单数据{#start-a-new-form-using-submitted-form-data}启动新表单
+## 使用提交的表单数据启动新表单 {#start-a-new-form-using-submitted-form-data}
 
 您需要经常填写和提交某些表单。 例如，每年提交个人纳税申报表。 在这种情况下，虽然每次填写表格时，某些信息都会发生变化，但大多数信息与个人和家庭的详细信息没有变化。 但是，您仍需要从头开始再次填写整个表单。
 
-AEM Forms可帮助优化表单填写体验，并显着减少填写和再次提交表单的时间。 最终用户可以使用已提交表单中的数据启动新表单。 此功能内置于[草稿和提交组件](/help/forms/using/draft-submission-component.md)中。 在将草稿和提交组件添加到表单门户页面并发布该组件后，最终用户将在已提交的Forms和草稿Forms选项卡中找到一个选项，以使用已提交表单中的数据开始新表单。 下图突出显示了该选项。
+AEM Forms可帮助优化表单填写体验，并显着减少填写和再次提交表单的时间。 最终用户可以使用已提交表单中的数据启动新表单。 此功能内置于 [草稿和提交组件](/help/forms/using/draft-submission-component.md). 在将草稿和提交组件添加到表单门户页面并发布该组件后，最终用户将在已提交的Forms和草稿Forms选项卡中找到一个选项，以使用已提交表单中的数据开始新表单。 下图突出显示了该选项。
 
 ![start-a-new-form](assets/start-a-new-form.png)
 

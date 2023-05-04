@@ -1,39 +1,43 @@
 ---
 title: 在HTML5表单中创建自定义外观
-seo-title: 在HTML5表单中创建自定义外观
+seo-title: Create custom appearances in HTML5 forms
 description: 您可以将自定义小组件插入到移动设备Forms。 您可以扩展现有的jQuery小组件，或开发您自己的自定义小组件。
-seo-description: 您可以将自定义小组件插入到移动设备Forms。 您可以扩展现有的jQuery小组件，或开发您自己的自定义小组件。
+seo-description: You can plug in custom widgets to a Mobile Forms. You can extend existing jQuery Widgets or develop your own custom widgets.
 uuid: afb16f42-e404-478b-82dd-4b5b59c4f184
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
-feature: 移动设备表单
+feature: Mobile Forms
 exl-id: e9e53b6d-6403-4d37-bac1-efaff0317f34
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 0%
+source-wordcount: '676'
+ht-degree: 1%
 
 ---
 
-# 在HTML5表单中创建自定义外观{#create-custom-appearances-in-html-forms}
+# 在HTML5表单中创建自定义外观 {#create-custom-appearances-in-html-forms}
 
-您可以将自定义小组件插入到移动设备Forms。 您可以扩展现有的jQuery小组件，或使用外观框架开发您自己的自定义小组件。 XFA引擎使用各种小组件，有关详细信息，请参阅[自适应表单和HTML5表单的外观框架](/help/forms/using/introduction-widgets.md)。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-![默认和自定义小组件](assets/custom-widgets.jpg)
-**Figure的示例：** *默认和自定义小组件的示例*
+您可以将自定义小组件插入到移动设备Forms。 您可以扩展现有的jQuery小组件，或使用外观框架开发您自己的自定义小组件。 XFA引擎使用各种小组件，请参阅 [自适应表单和HTML表单的外观框架5](/help/forms/using/introduction-widgets.md) 以了解详细信息。
 
-## 将自定义小组件与HTML5表单{#integrating-custom-widgets-with-html-forms}集成
+![默认和自定义小组件的示例](assets/custom-widgets.jpg)
+**图：** *默认和自定义小组件的示例*
+
+## 将自定义小组件与HTML5表单集成 {#integrating-custom-widgets-with-html-forms}
 
 ### 创建用户档案  {#create-a-profile-nbsp}
 
-您可以创建配置文件或选择现有配置文件以添加自定义小组件。 有关创建用户档案的更多信息，请参阅[创建自定义用户档案](/help/forms/using/custom-profile.md)。
+您可以创建配置文件或选择现有配置文件以添加自定义小组件。 有关创建用户档案的更多信息，请参阅 [创建自定义用户档案](/help/forms/using/custom-profile.md).
 
-### 创建小组件{#create-a-widget}
+### 创建小组件 {#create-a-widget}
 
-HTML5表单提供了小组件框架的实施，可扩展以创建新小组件。 该实施是一个jQuery小组件&#x200B;*abstractWidget*，可扩展以编写新小组件。 只有扩展/覆盖上述功能，新小组件才能正常工作。
+HTML5表单提供了小组件框架的实施，可扩展以创建新小组件。 实施是一个jQuery小组件 *abstractWidget* 可以扩展为编写新小组件。 只有扩展/覆盖上述功能，新小组件才能正常工作。
 
 <table> 
  <tbody> 
@@ -43,11 +47,11 @@ HTML5表单提供了小组件框架的实施，可扩展以创建新小组件。
   </tr> 
   <tr> 
    <td>render</td> 
-   <td>呈现函数返回小组件默认HTML元素的jQuery对象。 默认的HTML元素应为可聚焦类型。 例如，&lt;a&gt;、&lt;input&gt;和&lt;li&gt;。 返回的元素将用作$userControl。 如果$userControl指定了上述约束，则AbstractWidget类的函数可按预期工作，否则某些常用API（焦点、单击）需要更改。 </td> 
+   <td>呈现函数返回小组件默认HTML元素的jQuery对象。 默认HTML元素应为可聚焦类型。 例如， &lt;a&gt;, &lt;input&gt;和 &lt;li&gt;. 返回的元素将用作$userControl。 如果$userControl指定了上述约束，则AbstractWidget类的函数可按预期工作，否则某些常用API（焦点、单击）需要更改。 </td> 
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>返回将HTML事件转换为XFA事件的映射。 <br /> {<br /> blur:XFA_EXIT_EVENT，<br /> }<br /> 此示例显示模糊是HTML事件，XFA_EXIT_EVENT是对应的XFA事件。 </td> 
+   <td>返回将HTML事件转换为XFA事件的映射。 <br /> {<br /> 模糊：XFA_EXIT_EVENT，<br /> }<br /> 此示例显示模糊是HTML事件，XFA_EXIT_EVENT是相应的XFA事件。 </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -68,7 +72,7 @@ HTML5表单提供了小组件框架的实施，可扩展以创建新小组件。
  </tbody> 
 </table>
 
-要创建您自己的小组件，请在上面创建的配置文件中，包含JavaScript文件的引用，该文件包含被覆盖的函数和新添加的函数。 例如，*sliderNumericFieldWidget*&#x200B;是用于数字字段的小组件。 要在用户档案的标题部分中使用小组件，请加入以下行：
+要创建您自己的小组件，请在上面创建的配置文件中，包含JavaScript文件的引用，该文件包含被覆盖的函数和新添加的函数。 例如， *sliderNumericFieldWidget* 是用于数字字段的小组件。 要在用户档案的标题部分中使用小组件，请加入以下行：
 
 ```
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -76,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### 使用XFA脚本引擎注册自定义小组件  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-自定义小组件代码准备就绪后，使用`registerConfig`API for [Form Bridge](/help/forms/using/form-bridge-apis.md)向脚本引擎注册小组件。 它将widgetConfigObject作为输入。
+在自定义小组件代码准备就绪后，使用 `registerConfig`API [表单桥](/help/forms/using/form-bridge-apis.md). 它将widgetConfigObject作为输入。
 
 ```
 window.formBridge.registerConfig("widgetConfig",

@@ -10,14 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
-source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 81%
+source-wordcount: '1825'
+ht-degree: 58%
 
 ---
 
 # 编辑页面属性{#editing-page-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 您可以为页面定义所需的属性。这些属性会因页面性质而异。例如，某些页面可能会连接到 Live Copy，而其他页面则可能不会，Live Copy 信息将在适当情况下才可用。
 
@@ -29,15 +33,15 @@ ht-degree: 81%
 
 * **标题**
 
-   页面的标题会显示在各种不同的位置。例如，**网站**&#x200B;选项卡列表和&#x200B;**站点**&#x200B;卡片/列表视图。
+   页面的标题会显示在不同的位置。 例如， **网站** 选项卡列表和 **站点** 卡片/列表视图。
 
    这是必填字段。
 
 * **标记**
 
-   在此，可以通过更新选择框中的列表在页面中添加或删除标记：
+   在此，您可以通过更新选择框中的列表在页面中添加或删除标记：
 
-   * 选择标记后，它会列在选择框下。您可以使用“x”从此列表中删除标记。
+   * 选择标记后，它会列在选择框下。您可以使用“x”从此列表中移除标记。
    * 可通过在空白选择框中键入名称输入全新标记。
 
       * 按 Enter 将创建新标记。
@@ -53,38 +57,38 @@ ht-degree: 81%
 
 * **品牌化**
 
-   通过在每个页面标题后附加一个品牌辅助信息，在页面中应用一致的品牌标识。 此功能需要使用[核心组件2.14.0版或更高版本中的页面组件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+   通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
 
-   * **覆盖**  — 选中以定义此页面上的品牌概要信息。
-      * 任何子页面都将继承该值，除非它们还设置了其&#x200B;**Override**&#x200B;值。
-   * **覆盖值**  — 要附加到页面标题的品牌辅助信息的文本。
-      * 该值会在管道字符（如“循环托斯卡纳”）后附加到页面标题中 |始终为WKND做好准备”
+   * **覆盖** – 选中可在此页面上定义品牌概要。
+      * 该值将由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
+   * **覆盖值** – 要附加到页面标题的品牌概要的文本。
+      * 该值附加到页面标题后的竖线字符后，例如“骑行 Tuscany | 始终准备好使用 WKND”
 
 * **页面标题**
 
-   要在页面中使用的标题。通常由标题组件使用。如果留空，则将使用&#x200B;**标题**。
+   要在页面上使用的标题。 通常由标题组件使用。如果留空，则将使用&#x200B;**标题**。
 
 * **导航标题**
 
-   您可以指定单独的标题以便在导航中使用（例如，如果您想用一种更加简洁明了的说法）。如果留空，则将使用&#x200B;**标题**。
+   您可以指定单独的标题以在导航中使用（例如，如果您希望某些内容能更加简洁）。 如果为空，则 **标题** 中，将使用。
 
 * **子标题**
 
-   要在页面中使用的子标题。
+   要在页面上使用的子标题。
 
 * **描述**
 
-   页面及其用途的描述，或要添加的任何其他详细信息。
+   您对页面的描述、用途或要添加的任何其他详细信息。
 
 * **开始时间**
 
-   将激活已发布页面的日期和时间。发布后，此页面在指定时间之前将一直保持休眠。
+   激活已发布页面的日期和时间。 发布后，此页面在指定的时间之前将保持休眠。
 
-   对于要立即发布的页面，将这些字段保留为空（正常情况）。
+   对于要立即发布的页面，请将这些字段留空（正常情况）。
 
 * **结束时间**
 
-   将取消激活已发布页面的时间。
+   将停用已发布页面的时间。
 
    再次将这些字段留空以便立即执行操作。
 
@@ -92,7 +96,7 @@ ht-degree: 81%
 
    允许您输入此页面的虚 URL，以便使用更短并且/或者含意更清楚的 URL。
 
-   例如，如果对于网站h `ttp://example.com,`，将路径/ `v1.0/startpage`标识的页面的虚URL设置为w `elcome`，则h `ttp://example.com/welcome`将为h `ttp://example.com/content/v1.0/startpage`的虚URL
+   例如，如果虚URL设置为w `elcome`到路径/标识的页面 `v1.0/startpage`网站h `ttp://example.com,` 然后 `ttp://example.com/welcome`应该是h的虚URL `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -118,33 +122,33 @@ ht-degree: 81%
 
 * **Design**
 
-   指示要用于此页面的[设计](/help/sites-developing/designer.md)。
+   指示 [设计](/help/sites-developing/designer.md) 用于此页面。
 
 * **别名**
 
-   指定要用于此页面的别名。
+   指定要用于此页的别名。
 
-   * 例如，如果为页面`/content/wknd/us/en/magazine/members-only`定义别名`private`，则也可以通过`/content/wknd/us/en/magazine/private`访问此页面。
-   * 创建别名会在页面节点上设置`sling:alias`属性，这仅会影响资源，而不会影响存储库路径。
-   * 无法发布编辑器中别名访问的页面。 [编辑](/help/sites-authoring/publishing-pages.md) 器中的发布选项仅适用于通过实际路径访问的页面。
-   * 有关更多详细信息，请参阅“SEO和URL管理最佳实践”下的[本地化的页面名称](/help/managing/seo-and-url-management.md#localized-page-names)
+   * 例如，如果您定义的别名为 `private` 的 `/content/wknd/us/en/magazine/members-only`，则也可以通过访问此页面 `/content/wknd/us/en/magazine/private`.
+   * 创建别名将设置页面节点上的 `sling:alias` 属性，这只会影响资源，而不会影响存储库路径。
+   * 无法发布编辑器中按别名处理的页面。编辑器中的[发布选项](/help/sites-authoring/publishing-pages.md)仅适用于通过其实际路径访问的页面。
+   * 有关更多详细信息，请参阅 [“SEO和URL管理最佳实践”下的本地化页面名称](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **允许的模板**
 
-   [定义将在此子分支内可用的模板列表](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author)。
+   [定义可用的模板列表](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author) 在此子分支中。
 
 * **身份验证要求**
 
-   启用（或禁用）身份验证来访问页面。
+   启用（或禁用）身份验证以访问页面。
 
-   可以在此处随指定的登录页面一起设置进行身份验证的要求。已关闭的用户组在&#x200B;**[权限](/help/sites-authoring/editing-page-properties.md#permissions)**&#x200B;选项卡上定义。
+   此处可以设置进行身份验证的要求以及指定的登录页面。 页面的已关闭的用户组在&#x200B;**[权限](/help/sites-authoring/editing-page-properties.md#permissions)**&#x200B;选项卡上定义。
 
    >[!CAUTION]
    >
-   >通过&#x200B;**[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)**&#x200B;选项卡，可以根据`granite:AuthenticationRequired` mixin的存在来编辑CUG配置。 如果使用已弃用的CUG配置配置了页面权限，则在存在cq:cugEnabled属性的情况下，将在&#x200B;**Authentication Requirement**&#x200B;下显示一条警告消息，且该选项将不可编辑，也将不可编辑[Permissions](/help/sites-authoring/editing-page-properties.md#permissions)。
+   >的 **[权限](/help/sites-authoring/editing-page-properties.md#permissions)** 选项卡，允许根据 `granite:AuthenticationRequired` 混合。 如果页面权限是使用已弃用的CUG配置配置的，则在存在cq:cugEnabled属性的情况下，将在 **身份验证要求** 选项将不可编辑， [权限](/help/sites-authoring/editing-page-properties.md#permissions) 可编辑。
    >
    >
-   >对于此类情况，必须在[经典 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) 中编辑 CUG 权限。
+   >在这种情况下，必须在 [经典UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 * **登录页面**
 
@@ -158,7 +162,7 @@ ht-degree: 81%
 
 1. **页面缩略图**
 
-   显示页面缩略图图像。您可以：
+   显示页面缩略图图像。 您可以：
 
    * **生成预览**
 
@@ -172,18 +176,18 @@ ht-degree: 81%
 
 * **社交媒体共享**
 
-   定义页面上可用的共享选项。显示可用于[共享核心组件](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html)的选项。
+   定义页面上可用的共享选项。 显示可供 [共享核心组件](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
 
-   * **为 Facebook 启用用户共享**
-   * **为 Pinterest 启用用户共享**
-   * **首选体验片段变量**
-定义用于为页面生成元数据的体验片段变量
+   * **为Facebook启用用户共享**
+   * **为Pinterest启用用户共享**
+   * **首选体验片段变体**
+定义用于为页面生成元数据的体验片段变体
 
-### 云服务 {#cloud-services}
+### Cloud Service {#cloud-services}
 
-* **云服务**
+* **Cloud Service**
 
-   为[云服务](/help/sites-developing/extending-cloud-config.md)定义属性。
+   为定义属性 [云服务](/help/sites-developing/extending-cloud-config.md).
 
 ### 个性化 {#personalization}
 
@@ -203,26 +207,26 @@ ht-degree: 81%
 
    >[!CAUTION]
    >
-   >通过&#x200B;**Permissions**&#x200B;选项卡，可以根据`granite:AuthenticationRequired` mixin的存在来编辑CUG配置。 如果页面权限是使用已弃用的 CUG 配置来配置的，则在存在 `cq:cugEnabled` 属性的情况下，将会显示一条警告消息，且 CUG 权限将不可编辑，同时[高级](/help/sites-authoring/editing-page-properties.md#advanced)选项卡上的“身份验证要求”也将不可编辑。
+   >的 **权限** 选项卡，允许根据 `granite:AuthenticationRequired` 混合。 如果页面权限是使用已弃用的CUG配置配置的，则 `cq:cugEnabled` 属性中，将显示一条警告消息，且CUG权限将不可编辑，并且 [高级](/help/sites-authoring/editing-page-properties.md#advanced) 选项卡。
    >
    >
-   >对于此类情况，必须在[经典 UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) 中编辑 CUG 权限。
+   >在这种情况下，必须在 [经典UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >“权限”选项卡不允许创建空 CUG 组，这可用作拒绝每个用户访问的简单方式。为此，必须使用 CRX 资源管理器。有关详细信息，请参阅文档[用户、组和访问权限管理](/help/sites-administering/user-group-ac-admin.md)。
+   >“权限”选项卡不允许创建空的CUG组，通过此选项卡可以简单地拒绝每个用户的访问。 要执行此操作，必须使用CRX Explorer。 查看文档 [用户、组和访问权限管理](/help/sites-administering/user-group-ac-admin.md) 以了解更多信息。
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   在[多站点管理](/help/sites-administering/msm.md)中为 Blueprint 页面定义属性。控制将修改传播到 Live Copy 的情况。
+   为 [多站点管理](/help/sites-administering/msm.md). 控制将修改传播到Live Copy的情况。
 
 ### Live Copy {#live-copy}
 
 * **Live Copy**
 
-   在[多站点管理](/help/sites-administering/msm.md)中为 Live Copy 页面定义属性。控制将从 Blueprint 中传播修改的情况。
+   为 [多站点管理](/help/sites-administering/msm.md). 控制将从Blueprint中传播修改的情况。
 
 ### 站点结构 {#site-structure}
 
@@ -230,21 +234,21 @@ ht-degree: 81%
 
 ## 编辑页面属性 {#editing-page-properties-2}
 
-您可以通过以下方式定义页面属性：
+您可以定义页面属性：
 
 * 从&#x200B;**站点**&#x200B;控制台中：
 
    * [创建一个新页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)（一部分属性）
    * 单击或点按&#x200B;**属性**
 
-      * 单个页面
+      * 单页面
       * 多个页面（只有一部分属性可用于整体编辑）
 
-* 在页面编辑器中：
+* 从页面编辑器中：
 
    * 使用&#x200B;**页面信息**（然后&#x200B;**打开属性**）
 
-### 从“站点”控制台中 - 单个页面 {#from-the-sites-console-single-page}
+### 从“站点”控制台中 – 单个页面 {#from-the-sites-console-single-page}
 
 单击或点按&#x200B;**属性**&#x200B;以定义页面属性：
 
@@ -259,7 +263,7 @@ ht-degree: 81%
 
 1. 查看或编辑所需的属性。
 
-1. 然后，使用&#x200B;**保存**&#x200B;以保存您的更新，接着使用&#x200B;**关闭**&#x200B;以返回到控制台。
+1. 然后，使用&#x200B;**保存**&#x200B;来保存您的更新，接着使用&#x200B;**关闭**&#x200B;返回到控制台。
 
 ### 编辑页面时 {#when-editing-a-page}
 
@@ -271,31 +275,31 @@ ht-degree: 81%
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. 选择&#x200B;**打开属性** ，此时将打开一个用于编辑属性的对话框，这些属性按相应的选项卡进行排序。 工具栏右侧还提供以下按钮：
+1. 选择 **打开属性** 此时将打开一个用于编辑属性的对话框，这些属性按相应的选项卡进行排序。 工具栏右侧还提供以下按钮：
 
    * **取消**
    * **保存并关闭**
 
 1. 使用&#x200B;**保存并关闭**&#x200B;按钮以保存更改。
 
-### 从“站点”控制台中 - 多个页面 {#from-the-sites-console-multiple-pages}
+### 从“站点”控制台中 – 多个页面 {#from-the-sites-console-multiple-pages}
 
-从“站 **点** ”控制台中，您可以选择多个页面，然后使用&#x200B;**查看属性** ，以查看和／或编辑页面属性。 这称为批量编辑页面属性。
+从&#x200B;**“站点”**&#x200B;控制台中，您可以选择多个页面，然后使用&#x200B;**查看属性**，查看和／或编辑页面属性。 这称为批量编辑页面属性。
 
 >[!NOTE]
 >
->也可以对资产使用批量编辑属性功能。其操作大体相同，只有少数几点差别。有关详细信息，请参阅[编辑多个资产的属性](/help/assets/managing-multiple-assets.md)。
+>也可以对资产使用批量编辑属性功能。其操作大体相同，只有少数几点差别。请参阅 [编辑多个资产的属性](/help/assets/managing-multiple-assets.md) 以了解详细信息。
 >
->还有一个[批量编辑器](/help/sites-administering/bulk-editor.md)，通过该编辑器，您可以使用 GQL（Google 查询语言）从多个页面中搜索内容，接着直接在批量编辑器中编辑内容，然后将更改保存到原始页面中。
+>还有 [批量编辑器](/help/sites-administering/bulk-editor.md)，允许您使用GQL(Google查询语言)从多个页面中搜索内容，然后直接在批量编辑器中编辑内容，然后将更改保存到原始页面。
 
 可以通过多种方法选择要批量编辑的多个页面，这些方法包括：
 
-* 在浏览&#x200B;**站点**&#x200B;控制台时
+* 在浏览 **Sites** 控制台时
 * 在使用&#x200B;**搜索**&#x200B;找到一组页面后
 
 ![screen_shot_2018-03-22at100039](assets/screen_shot_2018-03-22at100039.png)
 
-选择页面，然后单击或点按&#x200B;**属性**&#x200B;选项后，将显示批量属性：
+选择页面，然后单击或点按 **属性** 选项时，将显示批量属性：
 
 ![screen_shot_2018-03-22at100114](assets/screen_shot_2018-03-22at100114.png)
 
@@ -310,14 +314,14 @@ ht-degree: 81%
 
 * **查看**
 
-   在查看多个页面的“页面属性”时，您可以看到：
+   查看多个页面的“页面属性”时，您可以看到：
 
    * 受影响的页面列表
 
       * 您可以根据需要进行选择/取消选择
    * 选项卡
 
-      * 与查看单个页面的属性时一样，这些属性按选项卡进行排序。
+      * 与查看单页面的属性时一样，这些属性按选项卡进行排序。
    * 一部分属性
 
       * 将显示所有选定页面的可用属性，这些属性已明确定义为可批量编辑。
@@ -331,15 +335,15 @@ ht-degree: 81%
 
 * **编辑**
 
-   在编辑多个页面的页面属性时：
+   编辑多个页面的“页面属性”时：
 
    * 您可以更新可用字段中的值。
 
       * 当您选择&#x200B;**完成**&#x200B;时，新值将会应用于所有选定页面。
       * 当字段有多个值时（例如“标记”），您可以附加一个新值，也可以删除相同的值。
-   * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如，文本 `<Mixed Entries>`。编辑此类字段时应格外小心，以防数据丢失。
+   * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如，文本 `<Mixed Entries>`。编辑此类字段时应当谨慎，以防数据丢失。
 
 
 >[!NOTE]
 >
->可以对页面组件进行配置，以指定可批量编辑的字段。请参阅[配置页面以批量编辑页面属性](/help/sites-developing/bulk-editing.md)。
+>可以对页面组件进行配置，以指定可批量编辑的字段。请参阅 [配置页面以批量编辑页面属性](/help/sites-developing/bulk-editing.md).

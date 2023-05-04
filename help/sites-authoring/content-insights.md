@@ -1,8 +1,8 @@
 ---
 title: 内容分析
-seo-title: 内容分析
-description: 内容分析使用 Web 分析和 SEO 推荐提供有关页面性能的信息
-seo-description: 内容分析 提供有关使用Web分析和SEO推荐执行页面性能的信息
+seo-title: Content Insight
+description: 内容分析使用Web分析和SEO推荐提供有关页面性能的信息
+seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,91 +10,95 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 54ec1b84-bee2-4c1f-acbc-8e6bd0d76c87
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 94%
+source-wordcount: '557'
+ht-degree: 1%
 
 ---
 
 # 内容分析{#content-insight}
 
-内容分析使用 Web 分析和 SEO 推荐提供有关页面性能的信息。使用内容分析可决定如何修改页面，或了解以前所做的更改使性能发生何种变化。对于您创作的每个页面，您都可以打开内容分析来分析页面。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+内容分析使用Web分析和SEO推荐提供有关页面性能的信息。 使用内容分析可决定如何修改页面，或了解以前的更改对性能有何影响。 对于您创作的每个页面，都可以打开内容分析来分析该页面。
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-“内容分析”页面的布局会根据您所用设备的屏幕尺寸和方向进行相应更改。
+“内容分析”页面的布局会根据您所使用的设备的屏幕尺寸和方向而发生更改。
 
 ## 报表数据
 
-“内容分析”页面包含使用 Adobe SiteCatalyst、Adobe Target、Adobe Social 和 BrightEdge 数据的报表：
+“内容分析”页面包含使用Adobe SiteCatalyst、Adobe Target、Adobe Social和BrightEdge数据的报表：
 
-* SiteCatalyst：提供以下量度的报表：
+* SiteCatalyst:以下量度的报表可用：
 
    * 页面查看次数
    * 页面平均逗留时间
    * 源
 
-* Target：关于您的页面包含其选件的营销活动的报表。
-* BrightEdge：关于可提高页面对搜索引擎的可见性的页面功能，以及应当实施的推荐功能的报表。
+* 目标：您的页面包含选件的营销活动报表。
+* BrightEdge:报告可提高页面对搜索引擎的可见性的页面功能，并推荐应该实施的功能。
 
-请参阅[打开页面的分析和推荐](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page)。
+请参阅 [为页面打开Analytics和Recommendations](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
-## 报表时间段
+## 报告期
 
-报表会显示您控制的一段时间的数据。调整报表时间段时，报表会自动使用该时间段的数据进行刷新。可视提示会指示页面版本的更改时间，以便您可以比较每个版本的性能。
+报表显示您控制的一段时间的数据。 在调整报表时段时，报表会自动刷新该时段的数据。 可视提示指示页面版本发生更改的时间，以便您可以比较每个版本的性能。
 
-您还可以指定报表数据的粒度，例如您可以查看每日、每周、每月或每年的数据。
+您还可以指定报告数据的粒度，例如，您可以查看每日、每周、每月或每年的数据。
 
-请参阅[更改报表时间段](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period)。
+请参阅 [更改报告期](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
 
 >[!NOTE]
 >
->内容分析报表要求您的管理员将 AEM 与 SiteCatalyst、Target 和 BrightEdge 集成在一起。请参阅[与SightCatalyst集成](/help/sites-administering/adobeanalytics.md)、[与Adobe Target集成](/help/sites-administering/target.md)和[与BrightEdge集成](/help/sites-administering/brightedge.md)。
+>内容分析报表要求您的管理员将AEM与SiteCatalyst、Target和BrightEdge集成。 请参阅 [与SightCatalyst集成](/help/sites-administering/adobeanalytics.md), [与Adobe Target集成](/help/sites-administering/target.md)和 [与BrightEdge集成](/help/sites-administering/brightedge.md).
 
-## “查看次数”报表{#the-views-report}
+## 查看次数报表 {#the-views-report}
 
-“查看次数”报表包含以下用于评估页面流量的功能：
+查看次数报表包含以下用于评估页面流量的功能：
 
-* 报表时间段内页面的总查看次数。
-* 报表时间段内查看次数的图表：
+* 报告时段内某个页面的查看总数。
+* 报告时段内查看次数的图表：
 
-   * 总查看次数。
-   * 独特访客数。
+   * 查看总数。
+   * 独特访客。
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## “页面平均参与”报表{#the-page-average-engaged-report}
+## 页面平均参与量报表 {#the-page-average-engaged-report}
 
 “页面平均参与”报表包含以下用于评估页面有效性的功能：
 
-* 页面在整个报表时间段内保持打开的平均时间。
-* 报表时间段内页面查看平均时长的图表。
+* 整个报表时段内页面保持打开状态的平均时间。
+* 报表时段内页面查看平均长度的图表。
 
 ![chlimage_1-313](assets/chlimage_1-313.png)
 
-## “源”报表{#the-sources-report}
+## 源报表 {#the-sources-report}
 
-“源”报表指示用户导航到页面的方式，例如从搜索引擎结果或使用已知的 URL 进行导航。
+“源”报表指示用户如何从搜索引擎结果或使用已知URL导航到页面。
 
 ![chlimage_1-314](assets/chlimage_1-314.png)
 
-## “跳出次数”报表{#the-bounces-report}
+## 跳出次数报表 {#the-bounces-report}
 
-“跳出次数”报表包含一个图表，显示在选定报表时间段内页面发生的跳出次数。
+“跳出次数”报表包含一个图表，其中显示了在选定报告时段内某个页面发生的跳出次数。
 
 ![chlimage_1-315](assets/chlimage_1-315.png)
 
-## “&lt;营销活动名称> 活动”报表{#the-campaign-activity-report}
+## 促销活动报表 {#the-campaign-activity-report}
 
-对于页面处于激活状态的每个营销活动，均会显示一个名为“*&lt;营销活动名称>* 活动”的报表。该报表显示了为其提供选件的每个区段的页面展示次数和转化次数。
+对于页面处于活动状态的每个营销活动，都会显示一个名为 *营销活动名称* 活动。 报表显示每个提供了选件的区段的页面展示次数和转化次数。
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-## “SEO 推荐”报表{#the-seo-recommendations-report}
+## SEO Recommendations报表 {#the-seo-recommendations-report}
 
-“SEO 推荐”报表包含页面的 BrightEdge 分析结果。该报表是页面功能的核对清单，用于指示页面包含和未包含的哪些功能可最大限度地提高使用搜索引擎的可查找性。
+SEO Recommendations报表包含页面的BrightEdge分析结果。 报表是页面功能的核对清单，用于指示页面包含和不包含哪些功能，以便使用搜索引擎最大限度地提高可查找性。
 
-该报表使您能够创建任务，以便做出改进来提高页面可查找性。推荐指示已创建相关任务来实施推荐。请参阅[为 SEO 推荐分配任务](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations)。
+利用报表，可创建任务，以便进行改进以提高页面可查找性。 Recommendations表示已为实施建议创建任务。 请参阅 [为SEO Recommendations分配任务](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

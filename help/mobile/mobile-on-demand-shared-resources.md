@@ -1,8 +1,8 @@
 ---
 title: 上传共享资源
-seo-title: 上传共享资源
+seo-title: Uploading Shared Resources
 description: 内容管理操作是帮助在应用程序中创建和管理内容的构建基块。 可查看本页以了解有关上传共享资源的信息。
-seo-description: 内容管理操作是帮助在应用程序中创建和管理内容的构建基块。 可查看本页以了解有关上传共享资源的信息。
+seo-description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn about uploading shared resources.
 uuid: f3595299-1279-4b94-9a49-9d1893250549
 contentOwner: User
 content-type: reference
@@ -10,47 +10,51 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 958461b0-4cbb-452b-88ea-9b98ada14750
 exl-id: 94ac30a5-6ac8-4bbf-8ea6-e10bc7db4f31
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 0%
+source-wordcount: '322'
+ht-degree: 2%
 
 ---
 
-# 上传共享资源{#uploading-shared-resources}
+# 上传共享资源 {#uploading-shared-resources}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
 
 内容管理操作是帮助在应用程序中创建和管理内容的构建基块。 将对应用程序内的内容执行以下操作。
 
 >[!NOTE]
 >
->要了解有关AEM Mobile应用程序设计注意事项的更多信息，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)。
+>要了解有关AEM Mobile应用程序设计注意事项的更多信息，请参阅 [AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 中。
 
 >[!CAUTION]
 >
 >您必须先关联Mobile On-Demand连接。
 
-## 上传共享资源{#uploading-shared-resources-1}
+## 上传共享资源 {#uploading-shared-resources-1}
 
 通常，所有作者甚至应用程序中的内容都必须具有相同的外观和感觉，例如文章。 因此，让脚本、css和字体可供所有人使用至关重要。 此操作会将此类共享资源发送到Mobile On-Demand，然后Mobile On-Demand会根据需要使用该资源。
 
-在配置应用程序并将其关联到云配置后，您可以上传共享资源。 有关将应用程序关联到云配置的详细步骤，请单击[此处](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)。
+在配置应用程序并将其关联到云配置后，您可以上传共享资源。 有关将应用程序关联到云配置的详细步骤，请单击 [此处](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
 >[!NOTE]
 >
->共享资源使用ContentSync收集所有不同的资源。 有关更多详细信息，请参阅[Mobile with ContentSync](/help/mobile/mobile-ondemand-contentsync.md) 。
+>共享资源使用ContentSync收集所有不同的资源。 请参阅 [具有ContentSync的移动设备](/help/mobile/mobile-ondemand-contentsync.md) 以了解更多详细信息。
 
 请按照以下步骤上载文章的共享资源：
 
-1. 从&#x200B;**管理文章**&#x200B;拼贴中选择文章。
-1. 单击&#x200B;**上传共享资源**&#x200B;以上传共享的HTML资源。
+1. 从中选择文章 **管理文章** 拼贴。
+1. 单击 **上传共享资源** 上传共享HTML资源。
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-### 下一步{#the-next-step}
+### 下一步 {#the-next-step}
 
 了解有关创建和发布内容的信息后，请参阅
 

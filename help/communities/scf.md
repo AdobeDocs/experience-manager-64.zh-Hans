@@ -1,8 +1,8 @@
 ---
 title: 社交组件框架
-seo-title: 社交组件框架
+seo-title: Social Component Framework
 description: 社交组件框架(SCF)简化了配置、自定义和扩展社区组件的过程
-seo-description: 社交组件框架(SCF)简化了配置、自定义和扩展社区组件的过程
+seo-description: The social component framework (SCF) simplifies the process of configuring, customizing, and extending Communities components
 uuid: 23b4418d-b91c-46fc-bf42-1154ef79fe5a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,27 +10,31 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 0%
+source-wordcount: '1524'
+ht-degree: 1%
 
 ---
 
 # 社交组件框架 {#social-component-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 社交组件框架(SCF)简化了在服务器端和客户端上配置、自定义和扩展社区组件的过程。
 
 该框架的好处：
 
 * **功能**:80%的用例无需自定义即可轻松实现开箱即用的集成
-* **可设置外观**:一致地使用HTML属性来设置CSS样式
+* **斯金纳布尔**:一致地使用HTML属性来设置CSS样式
 * **可扩展**:组件实施是面向对象的，并且轻松利用业务逻辑 — 易于在服务器上添加增量业务登录
 * **灵活**:易于覆盖和自定义的简单无逻辑Javascript模板
-* **可访问**:HTTP API支持从任何客户端（包括移动设备应用程序）发布内容
-* **便携**:集成/嵌入任何基于任何技术构建的网页
+* **无障碍**:HTTP API支持从任何客户端（包括移动设备应用程序）发布内容
+* **便携式**:集成/嵌入任何基于任何技术构建的网页
 
-使用交互式[社区组件指南](components-guide.md)浏览创作或发布实例。
+使用交互式浏览创作或发布实例 [社区组件指南](components-guide.md).
 
 ## 概述 {#overview}
 
@@ -51,18 +55,18 @@ SocialComponent API可以扩展，以提供客户端为视图层或HTTP客户端
 要自定义或扩展组件，您只需将叠加和扩展写入/apps目录，这简化了升级到未来版本的过程。
 
 * 用于外观设计
-   * 只有[CSS需要编辑](client-customize.md#skinning-css)
+   * 仅 [CSS需要编辑](client-customize.md#skinning-css)
 * 外观
    * 更改JS模板和CSS
 * 外观和UX
-   * 更改JS模板、CSS和[扩展/覆盖Javascript](client-customize.md#extending-javascript)
+   * 更改JS模板、CSS和 [扩展/覆盖Javascript](client-customize.md#extending-javascript)
 * 修改JS模板或GET端点的可用信息
-   * 扩展[SocialComponent](server-customize.md#socialcomponent-interface)
+   * 扩展 [SocialComponent](server-customize.md#socialcomponent-interface)
 * 在操作期间添加自定义处理
-   * 编写[OperationExtension](server-customize.md#operationextension-class)
+   * 编写 [OperationExtension](server-customize.md#operationextension-class)
 * 添加新的自定义操作
-   * 创建新的[Sling后操作](server-customize.md#postoperation-class)
-   * 根据需要使用现有的[OperationServices](server-customize.md#operationservice-class)
+   * 新建 [Sling后操作](server-customize.md#postoperation-class)
+   * 使用现有 [OperationServices](server-customize.md#operationservice-class) 根据需要
    * 添加Javascript代码，以根据需要从客户端调用操作
 
 ## 服务器端框架 {#server-side-framework}
@@ -73,9 +77,9 @@ SocialComponent API可以扩展，以提供客户端为视图层或HTTP客户端
 
 Java API提供易于继承或子类化的抽象类和接口。
 
-在[服务器端自定义](server-customize.md)页面中介绍了主类。
+主要类在 [服务器端自定义](server-customize.md) 页面。
 
-请访问[存储资源提供程序概述](srp.md)以了解如何使用UGC。
+访问 [存储资源提供程序概述](srp.md) 以了解如何与UGC合作。
 
 ### HTTP API {#http-api}
 
@@ -83,14 +87,14 @@ HTTP API支持轻松自定义和选择PhoneGap应用程序、本机应用程序�
 
 ### HTTP API -GET请求 {#http-api-get-requests}
 
-对于每个SocialComponent，框架都提供基于HTTP的API端点。 通过使用“.social.json”选择器+扩展向资源发送GET请求来访问端点。 使用Sling，将请求传递到`DefaultSocialGetServlet`。
+对于每个SocialComponent，框架都提供基于HTTP的API端点。 通过使用“.social.json”选择器+扩展向资源发送GET请求来访问端点。 使用Sling，会将请求转发给 `DefaultSocialGetServlet`.
 
 不为目标组件考虑 `DefaultSocialGetServlet`
 
-1. 将资源(resourceType)传递到`SocialComponentFactoryManager`，并接收能够选择表示资源的`SocialComponent`的SocialComponentFactory。
+1. 将资源(resourceType)传递到 `SocialComponentFactoryManager`并接收能够选择 `SocialComponent`表示资源。
 
-1. 调用工厂并接收能够处理资源和请求的`SocialComponent`。
-1. 调用`SocialComponent`，该函数处理请求并返回结果的JSON表示形式。
+1. 调用工厂并接收 `SocialComponent`能够处理资源和请求。
+1. 调用 `SocialComponent`，用于处理请求并返回结果的JSON表示形式。
 1. 将JSON响应返回给客户端。
 
 **`GET Request`**
@@ -113,23 +117,23 @@ HTTP API支持轻松自定义和选择PhoneGap应用程序、本机应用程序�
 
 ### 存储资源提供程序(SRP) {#storage-resource-provider-srp}
 
-要了解如何处理存储在[社区内容存储](working-with-srp.md)中的UGC，请参阅
+要了解如何处理存储在 [社区内容存储](working-with-srp.md)，请参阅
 
 * [存储资源提供程序概述](srp.md)  — 简介和存储库使用概述
-* [SRP和UGC Essentials](srp-and-ugc.md)  - SRP API实用程序方法和示例
+* [SRP和UGC要点](srp-and-ugc.md) - SRP API实用程序方法和示例
 * [使用SRP访问UGC](accessing-ugc-with-srp.md)  — 编码准则
 
 ### 服务器端自定义 {#server-side-customizations}
 
-访问[服务器端自定义](server-customize.md) ，以了解有关自定义服务器端社区组件的业务逻辑和行为的信息。
+访问 [服务器端自定义](server-customize.md) 有关自定义服务器端社区组件的业务逻辑和行为的信息。
 
 ## Handlebars JS模板语言 {#handlebars-js-templating-language}
 
-在新框架中，更显着的更改之一是使用[Handlebars JS](https://handlebarsjs.com/)模板语言(HBS)，这是一种用于服务器客户端渲染的常用开源技术。
+新框架中更显着的更改之一是使用 [Handlebars JS](https://handlebarsjs.com/) 模板语言(HBS)，一种用于服务器客户端渲染的常用开源技术。
 
 HBS脚本简单、无逻辑、可在服务器和客户端上编译、易于覆盖和自定义，并且与客户端UX自然绑定，因为HBS支持客户端渲染。
 
-该框架提供了几个[Handlebars帮助程序](handlebars-helpers.md)，在开发SocialComponents时非常有用。
+该框架提供了以下几项 [Handlebars帮助程序](handlebars-helpers.md) 在开发SocialComponents时非常有用。
 
 在服务器上，当Sling解析GET请求时，它会标识将用于响应请求的脚本。 如果脚本是HBS模板(.hbs),Sling会将请求委派给Handlebars引擎。 然后，Handlebars引擎将从相应的SocialComponentFactory中获取SocialComponent，构建上下文并渲染HTML。
 
@@ -143,9 +147,9 @@ Handlebars(HBS)模板文件(.hbs)类似于.jsp和.html模板文件，不同之�
 
 ### 添加或包含社区组件 {#add-or-include-a-communities-component}
 
-大多数社区组件必须&#x200B;*添加*&#x200B;作为Sling可寻址资源。 在模板中，可以选择一些社区组件作为非现有资源&#x200B;*包含*，以允许动态包含和自定义用户生成内容(UGC)的写入位置。
+大多数社区组件必须 *添加* 作为Sling可寻址资源。 可以选择以下社区组件 *包含* 在模板中作为非现有资源，以允许动态包含和自定义用户生成内容(UGC)的写入位置。
 
-无论哪种情况，组件的[所需客户端库](clientlibs.md)都必须存在。
+无论哪种情况，组件的 [必需客户端库](clientlibs.md) 也必须存在。
 
 **添加组件**
 
@@ -155,24 +159,24 @@ Handlebars(HBS)模板文件(.hbs)类似于.jsp和.html模板文件，不同之�
 
 **包含组件**
 
-包括组件是指在模板中添加对[&quot;非现有&quot;资源](srp.md#for-non-existing-resources-ners)（无JCR节点）的引用的过程，例如使用脚本语言。
+包括组件是指向 [“非现有”资源](srp.md#for-non-existing-resources-ners) （无JCR节点），例如使用脚本语言。
 
 自AEM 6.1起，如果组件是动态包含的而不是添加的，则可以在创作*设计*模式中编辑组件的属性。
 
 只能动态包含一些选定的AEM Communities组件。 它们是：
 
 * [评论](essentials-comments.md)
-* [评级](rating-basics.md)
+* [评分](rating-basics.md)
 * [审核](reviews-basics.md)
 * [投票](essentials-voting.md)
 
-[社区组件指南](components-guide.md)允许将可包含的组件从添加切换为包含。
+的 [社区组件指南](components-guide.md) 允许将可包含的组件从添加切换到包含。
 
-**使用Handlebarstemplating** 语言时，将使用include helper通过指定其resourceType来 [包](handlebars-helpers.md#include) 括非现有资源：
+**使用Handlebars时** 模板语言，非现有资源则使用 [包含帮助程序](handlebars-helpers.md#include) 通过指定其resourceType:
 
 `{{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}`
 
-**使用JSP**&#x200B;时，将使用标记cq:include [](../../help/sites-developing/taglib.md#lt-cq-include)包含资源：
+**使用JSP时**，则使用标记包含资源 [cq:include](../../help/sites-developing/taglib.md#lt-cq-include):
 
 ```
 <cq:include path="votes" 
@@ -181,17 +185,17 @@ Handlebars(HBS)模板文件(.hbs)类似于.jsp和.html模板文件，不同之�
 
 >[!NOTE]
 >
->要动态地向页面添加组件，而不是在模板中添加或包含组件，请参阅[组件侧加载](sideloading.md)。
+>要将组件动态添加到页面，而不是在模板中添加或包含组件，请参阅 [组件侧加载](sideloading.md).
 
 ### Handlebars Helpers {#handlebars-helpers}
 
-请参阅[SCF Handlebars Helpers](handlebars-helpers.md) ，以获取SCF中提供的自定义帮助器的列表和说明。
+请参阅 [SCF Handlebars Helpers](handlebars-helpers.md) 有关SCF中提供的自定义帮助程序的列表和说明。
 
 ## 客户端框架 {#client-side-framework}
 
 ### 模型视图Javascript框架 {#model-view-javascript-framework}
 
-该框架包含[Backbone.js](https://www.backbonejs.org/)的扩展，后者是一个模型视图的JavaScript框架，旨在促进开发丰富的交互式组件。 面向对象的性质支持可扩展/可重用框架。 通过HTTP API简化了客户端与服务器之间的通信。
+该框架包括 [Backbone.js](https://www.backbonejs.org/)，是一种模型视图的JavaScript框架，用于促进开发丰富的交互式组件。 面向对象的性质支持可扩展/可重用框架。 通过HTTP API简化了客户端与服务器之间的通信。
 
 该框架利用服务器端Handlebars模板来为客户端渲染组件。 这些模型基于由HTTP API生成的JSON响应。 视图将自身绑定到由Handlebars模板生成的HTML，并提供交互性。
 
@@ -205,10 +209,10 @@ Handlebars(HBS)模板文件(.hbs)类似于.jsp和.html模板文件，不同之�
 
 ### 客户端自定义 {#client-side-customizations}
 
-要自定义客户端上社区组件的外观和行为，请引用[客户端自定义](client-customize.md)，其中包含有关以下内容的信息：
+要自定义客户端上社区组件的外观和行为，请参考 [客户端自定义](client-customize.md)，其中包括以下信息：
 
 * [叠加](client-customize.md#overlays)
-* [扩展](client-customize.md#extensions)
+* [扩展名](client-customize.md#extensions)
 * [HTML标记](client-customize.md#htmlmarkup)
 * [设置CSS外观](client-customize.md#skinning-css)
 * [扩展Javascript](client-customize.md#extending-javascript)
@@ -216,10 +220,10 @@ Handlebars(HBS)模板文件(.hbs)类似于.jsp和.html模板文件，不同之�
 
 ## 功能和组件要点 {#feature-and-component-essentials}
 
-[功能和组件要点](essentials.md)部分中介绍了开发人员的基本信息。
+有关开发人员的基本信息，请参阅 [功能和组件要点](essentials.md) 中。
 
-可在[编码准则](code-guide.md)部分找到其他开发人员信息。
+其他开发人员信息可在 [编码准则](code-guide.md) 中。
 
 ## 疑难解答 {#troubleshooting}
 
-[疑难解答](troubleshooting.md)部分介绍了常见问题和已知问题。
+有关常见问题和已知问题，请参见 [疑难解答](troubleshooting.md) 中。

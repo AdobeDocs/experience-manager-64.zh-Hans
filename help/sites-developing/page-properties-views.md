@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 25dad368-8227-424d-960b-1664d8e20a21
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 1%
+source-wordcount: '515'
+ht-degree: 2%
 
 ---
 
 # 自定义页面属性的视图{#customizing-views-of-page-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 每个页面都有一组 [属性](/help/sites-authoring/editing-page-properties.md) 用户可以查看和编辑；创建页面（创建视图）时需要使用其中一些组件，以后可以查看和编辑（编辑视图）其他组件。 这些页面属性由对话框( `cq:dialog`)。
 

@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 feature: Adaptive Forms
 exl-id: 4b6d3533-cd1f-4944-b580-49fd90fcf87a
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2053'
 ht-degree: 0%
 
 ---
 
 # 创建自适应表单 {#creating-an-adaptive-form}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## <strong>创建自适应表单</strong> {#strong-create-an-adaptive-form-strong}
 
@@ -55,7 +59,7 @@ ht-degree: 0%
 
    您可以在 **[!UICONTROL 表单模型]** 选项卡 **[!UICONTROL 添加属性]** 页面。 默认情况下，所选的表单模型为 **[!UICONTROL 无]**.
 
-1. 点按&#x200B;**创建**。随即会创建一个自适应表单，并出现一个用于打开表单以进行编辑的对话框。
+1. 点按 **创建**. 随即会创建一个自适应表单，并出现一个用于打开表单以进行编辑的对话框。
 
    指定完所有属性后，单击 **[!UICONTROL 创建]**. 随即会创建一个自适应表单，并出现一个用于打开表单以进行编辑的对话框。
 

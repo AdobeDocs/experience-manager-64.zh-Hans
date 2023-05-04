@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 6abadd53-dab1-4e3b-84d8-10374e8a305c
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2179'
-ht-degree: 44%
+source-wordcount: '2215'
+ht-degree: 40%
 
 ---
 
 # 手动配置与Adobe Target的集成 {#manually-configuring-the-integration-with-adobe-target}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 您可以修改在使用向导时执行的选择加入向导配置，也可以不使用向导手动与Adobe Target集成。
 
@@ -204,10 +208,10 @@ AT.js 对 mbox.js 库进行了多项改进：
 
 >[!NOTE]
 可用的活动类型由以下因素决定：
-* 如果对 AEM 端上用来连接到 Adobe Target 的 Adobe Target 租户 (clientcode) 启用了 **xt_only** 选项，则您&#x200B;**只**&#x200B;能在 AEM 中创建 XT 活动。
-* 如果&#x200B;**未**&#x200B;对 Adobe Target 租户 (clientcode) 启用 **xt_only** 选项，则可以在 AEM 中创建 XT 活动&#x200B;**和** A/B 活动。
+* 如果 **xt_only** 选项，则可以在AEM端用于连接到Adobe Target的Adobe Target租户(clientcode)上创建 **仅** AEM中的XT活动。
+* 如果 **xt_only** 选项 **not** 在Adobe Target租户(clientcode)上启用，然后您可以创建 **both** AEM中的XT和A/B活动。
 >
-**另请注意：****xt_only** 选项是对特定 Target 租户 (clientcode) 应用的设置，只能直接在 Adobe Target 中进行修改。您无法在 AEM 中启用或禁用此选项。
+**其他注释：** **xt_only** 选项是对特定Target租户(clientcode)应用的设置，只能在Adobe Target中直接修改。 您无法在 AEM 中启用或禁用此选项。
 
 ### 将Target框架与您的站点关联 {#associating-the-target-framework-with-your-site}
 

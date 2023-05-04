@@ -10,14 +10,18 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: 3611cfe5-a3bd-4f46-8949-8f13e1bceb4d
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1915'
 ht-degree: 9%
 
 ---
 
 # 自定义节点类型{#custom-node-types}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 由于AEM基于Sling并使用JCR存储库，因此这两种存储库提供的节点类型可供使用：
 
@@ -79,7 +83,7 @@ ht-degree: 9%
 
 **描述**
 
-定义`commentattachment`节点的节点类型
+定义 `commentattachment` 节点
 
 **定义**
 
@@ -108,7 +112,7 @@ ht-degree: 9%
 
 **描述**
 
-以十进制度(DD)定义地理位置的混合
+以十进制度(DD)定义地理位置的混音符
 
 * `@prop latitude`  — 使用小数度以双精度编码的纬度
 * `@prop longitude`  — 使用小数度以双精度编码
@@ -165,7 +169,7 @@ ht-degree: 9%
 * `@prop jcr:description`  — 此页面的描述。
 * `@prop cq:template`  — 用于创建页面的模板的路径。
 * `@prop cq:allowedTemplates`  — 用于确定允许模板的路径的正则表达式列表。
-* `@prop pageTitle`  — 标题通常显示在标 `<title>` 记中。
+* `@prop pageTitle`  — 标题通常显示在 `<title>` 标记。
 * `@prop navTitle`  — 导航中通常使用的标题。
 * `@prop hideInNav`  — 指定是否应在导航中隐藏页面。
 * `@prop onTime`  — 此页面生效的时间。
@@ -201,7 +205,7 @@ ht-degree: 9%
 * `@node jcr:content`  — 新页面的默认内容。
 * `@node icon.png`  — 保存特征图标的文件。
 * `@node thumbnail.png`  — 保存特征缩略图像的文件。
-* `@node workflows`  — 自动分配工作流配置。配置将遵循以下结构：
+* `@node workflows`  — 自动分配工作流配置。 配置将遵循以下结构：
    * `+ workflows`
       * `+ name1`
          * `- cq:path`
@@ -236,18 +240,18 @@ ht-degree: 9%
 * `@prop dialogPath`  — 主对话框路径（对话框的替代方法）。
 * `@node design_dialog`  — 设计对话框。
 * `@prop cq:cellName`  — 设计单元格的名称。
-* `@prop cq:isContainer`  — 指示这是否是容器组件。这会强制使用子组件的单元格名称而不是路径名称。 例如，`parsys`是容器组件。 如果未定义此值，则根据存在`cq:childEditConfig`进行检查。
-* `@prop cq:noDecoration`  — 如果为true，则包含此组 `div` 件时不会绘制装饰标签。
+* `@prop cq:isContainer`  — 指示这是否是容器组件。 这会强制使用子组件的单元格名称而不是路径名称。 例如， `parsys` 是容器组件。 如果未定义此值，则根据 `cq:childEditConfig`.
+* `@prop cq:noDecoration`  — 如果为true，则无装饰 `div` 包含此组件时，将会绘制标记。
 * `@node cq:editConfig`  — 定义编辑栏参数的配置。
 * `@node cq:childEditConfig`  — 子组件继承的编辑配置。
-* `@node cq:htmlTag`  — 定义在包含组件时添加到“周围”标 `div` 记的其他标记属性。
+* `@node cq:htmlTag`  — 定义添加到“周围”的其他标记属性 `div` 标记。
 * `@node icon.png` — 保存特征图标的文件。
 * `@node thumbnail.png`  — 保存特征缩略图像的文件。
 * `@prop allowedParents`  — 用于确定允许作为父组件的组件的路径的正则表达式模式。
 * `@prop allowedChildren`  — 用于确定允许作为子组件的组件的路径的正则表达式模式。
 * `@node virtual`  — 包含反映用于组件拖放的虚拟组件的子节点。
 * `@prop componentGroup`  — 用于组件拖放的组件组名称。
-* `@node cq:infoProviders`  — 包含子节点，每个子节点都 `className` 具有引用的属 `PageInfoProvider`性。
+* `@node cq:infoProviders`  — 包含子节点，每个子节点都具有属性 `className` 是指 `PageInfoProvider`.
 
 **定义**
 
@@ -301,7 +305,7 @@ ht-degree: 9%
 * `@prop cq:actions` — 操作列表（编辑栏按钮或菜单项）。
 * `@node cq:actionConfigs`  — 用于编辑栏或菜单项的小组件配置。
 * `@prop cq:emptyText`  — 如果没有可视内容，则显示文本。
-* `@node cq:dropTargets`  — 节点集 `{@link cq:DropTargetConfig}` 合。
+* `@node cq:dropTargets`  — 集合 `{@link cq:DropTargetConfig}` 节点。
 
 **定义**
 
@@ -320,7 +324,7 @@ ht-degree: 9%
 
 配置组件的一个放置目标。 此节点的名称将用作拖放的ID。
 
-* `@prop accept`  — 此下拉目标接受的mime类型列表；例如  `["image/*"]`
+* `@prop accept`  — 此下拉目标接受的mime类型列表；例如 `["image/*"]`
 * `@prop groups`  — 接受源的拖放组列表。
 * `@prop propertyName`  — 用于存储引用的属性的名称。
 
@@ -448,7 +452,7 @@ DAM资产。
 
 **描述**
 
-`cq:attributes` 是ContentBus版本标记的节点类型。此节点仅具有一系列属性；其中，有三个是预定义的“已创建”、“csd”和“时间戳”。
+`cq:attributes` 是ContentBus版本标记的节点类型。 此节点仅具有一系列属性；其中，有三个是预定义的“已创建”、“csd”和“时间戳”。
 
 * `@prop created (long) mandatory copy`  — 创建版本信息的时间戳，通常是签入以前版本的时间或创建页面的时间。
 * `@prop csd (string) mandatory copy` - csd标准属性，页面节点cq:csd属性的副本
@@ -467,13 +471,13 @@ DAM资产。
 
 **描述**
 
-节点类型`cq:contentPage`包含ContentBus内容页面的属性和子节点定义。 仅当将此混合类型添加到`cq:page`类型的节点时，节点才会变为ContentBus内容页面。
+节点类型 `cq:contentPage` 包含ContentBus内容页面的属性和子节点定义。 仅当将此混合类型添加到类型的节点时 `cq:page`，则节点会变为ContentBus内容页面。
 
-`cq:Cq4ContentPage`中的项为：
+中的项目 `cq:Cq4ContentPage` 为：
 
 * `@prop cq:csd`  — 页面的ContentBusCSD。
-* `@node cq:content`  — 页面内容。如果页面节点处于“现有且不含内容”或“已删除”状态，则此子节点不存在。
-* `@node cq:attributes`  — 页面属性的列表，以前称为版本标记。对于cq:contentPage类型，此节点是必填的。 当页面为节点时，属性节点会进行版本控制。
+* `@node cq:content`  — 页面内容。 如果页面节点处于“现有且不含内容”或“已删除”状态，则此子节点不存在。
+* `@node cq:attributes`  — 页面属性的列表，以前称为版本标记。 对于cq:contentPage类型，此节点是必填的。 当页面为节点时，属性节点会进行版本控制。
 
 **定义**
 
@@ -490,8 +494,8 @@ DAM资产。
 轮询配置。
 
 * `@prop source (String) mandatory`  — 数据源URI，这是必需的，不得为空
-* `@prop target (String)`  — 存储从数据源检索的数据的目标位置。这是可选的，默认为cq:PollConfig节点。
-* `@prop interval (Long)`  — 轮询数据源中新数据或更新数据的间隔，以秒为单位。这是可选的，默认为30分钟（1800秒）。
+* `@prop target (String)`  — 存储从数据源检索的数据的目标位置。 这是可选的，默认为cq:PollConfig节点。
+* `@prop interval (Long)`  — 轮询数据源中新数据或更新数据的间隔，以秒为单位。 这是可选的，默认为30分钟（1800秒）。
 * [为Adobe Experience Manager创建自定义数据导入器服务](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **定义**
@@ -631,7 +635,7 @@ Blueprint操作
 
 * `[cq:BlueprintAction] > nt:unstructured`
 
-## 平台 {#platform}
+## Platform {#platform}
 
 ### cq：控制台 {#cq-console}
 
@@ -818,7 +822,7 @@ Blueprint操作
 
 **描述**
 
-添加用户可修改的`cq:userContent`子节点。 每个用户都将拥有自己的`cq:userContent/<userid>`子节点，该子节点通常具有mixin `cq:UserTaggable`。
+添加 `cq:userContent` 用户可修改的子节点。 每个用户将拥有自己的 `cq:userContent/<userid>` 子节点，通常具有mixin `cq:UserTaggable`.
 
 **定义**
 
@@ -826,7 +830,7 @@ Blueprint操作
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-扩展变体，更明确地定义`cq:userContent`树
+扩展变体，更明确地定义 `cq:userContent` 树
 
 * `[cq:AllowsUserContent]`
    * `mixin`

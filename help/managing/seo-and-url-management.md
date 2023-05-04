@@ -1,8 +1,8 @@
 ---
-title: SEO 和 URL 管理最佳实践
-seo-title: SEO 和 URL 管理最佳实践
+title: SEO和URL管理最佳实践
+seo-title: SEO and URL Management Best Practices
 description: 了解SEO最佳实践以及在AEM实施中实现这些最佳实践的建议。
-seo-description: 了解SEO最佳实践以及在AEM实施中实现这些最佳实践的建议。
+seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
 uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,14 +10,18 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 exl-id: d45fe856-4709-437b-b193-e8243a695d2c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3117'
-ht-degree: 97%
+source-wordcount: '3133'
+ht-degree: 96%
 
 ---
 
-# SEO 和 URL 管理最佳实践{#seo-and-url-management-best-practices}
+# SEO和URL管理最佳实践{#seo-and-url-management-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，需要解决许多AEM项目中的SEO问题。
 
@@ -110,7 +114,7 @@ ht-degree: 97%
 * 允许您在调度程序上缓存页面，这通常会提高安全性。
 * 允许您直接寻址内容，而不是让通用的 Servlet 来检索内容。这可让您体验到应用于存储库的 ACL 以及应用于调度程序的过滤器带来的好处。
 
-#### 使用 Servlet 选择器 {#using-selectors-for-servlets}
+#### 为 Servlet 使用选择器 {#using-selectors-for-servlets}
 
 在编写 Servlet 时，AEM 提供两个选项：
 
@@ -119,7 +123,7 @@ ht-degree: 97%
 
 以下示例说明了如何注册 Servlet 才能做到既遵循这两种模式又获得使用 Sling Servlet 的好处。
 
-#### Bin Servlet（下一级）{#bin-servlets-one-level-down}
+#### Bin Servlet（下一级） {#bin-servlets-one-level-down}
 
 Bin Servlet 遵循许多开发人员惯用的 J2EE 编程模式。Servlet 在特定路径下注册（对于 AEM，该路径通常位于 `/bin` 下），您可以从查询字符串中提取所需的请求参数。
 
@@ -146,7 +150,7 @@ String myParam = req.getParameter("myParam");
 * 如果要保护此 Servlet 的安全，您需要在 Servlet 中实施自己的自定义安全逻辑。
 * 必须（仔细）配置调度程序以公开 `/bin/myApp/myServlet`。仅公开 `/bin` 可能会允许访问某些不应对站点访客开放的 Servlet。
 
-#### Sling servlet（下一级）{#sling-servlets-one-level-down}
+#### Sling servlet（下一级） {#sling-servlets-one-level-down}
 
 Sling Servlet 允许您以相反的方式注册 Servlet。您无需寻址 Servlet 并根据查询参数指定希望该 Servlet 呈现的内容，而是寻址所需内容并根据 Sling 选择器指定应呈现相应内容的 Servlet。
 
@@ -179,7 +183,7 @@ Resource myPage = req.getResource();
 
 本节会回顾 AEM 中用于管理 URL 并以更易读和 SEO 友好的方式向用户展示这些 URL 的可用选项。
 
-#### 虚 URL{#vanity-urls}
+#### 虚 URL {#vanity-urls}
 
 如果作者出于促销目的，希望从另一个位置访问页面，则 AEM 逐页定义的虚 URL 可能会有用。要为页面添加虚 URL，请在&#x200B;**[!UICONTROL 站点]**&#x200B;控制台中导航到该页面，并编辑页面属性。在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡的底部，您会看到可添加虚 URL 的部分。请记住，通过多个 URL 访问特定页面会分割该页面的 SEO 价值，因此，应向页面添加规范 URL 标记以避免出现此问题。
 
@@ -217,7 +221,7 @@ Resource myPage = req.getResource();
 
 >[!NOTE]
 >
-> 在编辑Page Properties](/help/sites-authoring/editing-page-properties.md#advanced)时，可以使用[Alias属性设置`sling:alias`属性
+> 的 `sling:alias` 属性可以使用 [编辑页面属性时的别名属性](/help/sites-authoring/editing-page-properties.md#advanced)
 
 #### /etc/map {#etc-map}
 
@@ -332,7 +336,7 @@ Resource myPage = req.getResource();
 
 `href` 可以是相对位置或绝对位置。该代码应包含在页面标记中，以确定页面的规范 URL 并输出此标记。
 
-### 将调度程序配置为不区分大小写 {#configuring-the-dispatcher-for-case-insensitivity}
+### 将 Dispatcher 配置为不区分大小写 {#configuring-the-dispatcher-for-case-insensitivity}
 
 最佳实践是使用小写字母来提供所有页面。但是，您不希望当用户在 URL 中使用大写字母访问您的网站时得到 404 错误。因此，Adobe 建议您在 Apache HTTP Server 配置中添加重写规则，以将所有传入的 URL 映射为小写。此外，必须为内容作者提供使用小写字母创建页面的培训。
 
@@ -363,9 +367,9 @@ Disallow: /
 
 或者，在实时环境中，您可以选择禁止某些不希望索引的路径。
 
-将 `robots.txt` 文件放在站点根目录时应当注意，调度程序刷新请求可能会清除此文件，同时 URL 映射可能会将该站点根目录放置在与 Apache HTTP Server 配置中定义的 `DOCROOT` 不同的位置。因此，通常将该文件放在站点根目录下的作者实例上，并将其复制到发布实例。
+将 `robots.txt` 文件放在站点根目录时应当注意，调度程序刷新请求可能会清除此文件，同时 URL 映射可能会将该站点根目录放置在与 Apache HTTP Server 配置中定义的 `DOCROOT` 不同的位置。因此，通常将该文件放在站点根目录的作者实例上，并将其复制到发布实例。
 
-### 在 AEM 上构建 XML 站点地图 {#building-an-xml-sitemap-on-aem}
+### 在 AEM 上构建 XML Sitemap {#building-an-xml-sitemap-on-aem}
 
 爬取程序使用 XML 站点地图来更好地理解网站的结构。虽然提供站点地图无法保证会提高 SEO 排名，但这是公认的最佳实践。您可以在 Web 服务器上手动维护要用作站点地图的 XML 文件，但我们建议以编程方式生成站点地图，这种方法可确保当作者创建新内容时，站点地图会自动反映内容更改。
 

@@ -1,8 +1,8 @@
 ---
 title: 文档管理服务（已弃用）Java API快速入门(SOAP)
-seo-title: 文档管理服务（已弃用）Java API快速入门(SOAP)
+seo-title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
 description: 使用Document Management Service Java API创建Content Services空间、删除Content Services空间、向Content Services添加内容、从Content Services中检索内容、移动Content Services内容、列出Content Services内容、搜索Content Services内容并设置Content Services权限。
-seo-description: 使用Document Management Service Java API创建Content Services空间、删除Content Services空间、向Content Services添加内容、从Content Services中检索内容、移动Content Services内容、列出Content Services内容、搜索Content Services内容并设置Content Services权限。
+seo-description: Use the Document Management Service Java API to create Content Services spaces, delete Content Services spaces, Add content to Content Services, retrieve content from Content Services, move Content Services content, list Content Services content, search Content Services content, and set Content Services permissions.
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
 exl-id: 5ffd9600-03ec-4fd5-abb1-a8d9adefe6f3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
 
-# 文档管理服务（已弃用）Java API快速入门(SOAP){#document-management-service-deprecated-java-api-quick-start-soap}
+# 文档管理服务（已弃用）Java API快速入门(SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 以下快速入门适用于文档管理服务（已弃用）。
 
@@ -46,9 +50,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->“使用AEM表单进行编程”中的快速入门基于JBoss和Windows操作系统上部署的Forms服务器。 但是，如果您使用的是其他操作系统（如UNIX），请将特定于窗口的路径替换为适用操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>“使用AEM表单进行编程”中的快速入门基于JBoss和Windows操作系统上部署的Forms服务器。 但是，如果您使用的是其他操作系统（如UNIX），请将特定于窗口的路径替换为适用操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 快速入门（SOAP模式）：使用Java API创建内容服务空间（已弃用）{#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
+## 快速入门（SOAP模式）：使用Java API创建内容服务空间（已弃用） {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
 以下Java代码示例在公司主页中创建一个名为*Test Directory *的新空间。 新空间的标识值将写入控制台。
 
@@ -144,7 +148,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API删除内容服务内容（已弃用）{#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## 快速入门（SOAP模式）：使用Java API删除内容服务内容（已弃用） {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 以下Java代码示例会删除名为/Company Home/Test Directory的空格。
 
@@ -244,9 +248,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API向内容服务添加内容（已弃用）{#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
+## 快速入门（SOAP模式）：使用Java API向内容服务添加内容（已弃用） {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-以下Java代码示例将名为&#x200B;*MortgageForm.pdf*&#x200B;的PDF文件添加到名为/Company Home/Test Directory的文件夹中。 已设置创建者和描述属性。 新内容的标识值将写入控制台。
+以下Java代码示例添加了一个名为的PDF文件 *MortgageForm.pdf* 到名为/Company Home/Test Directory的文件夹。 已设置创建者和描述属性。 新内容的标识值将写入控制台。
 
 ```as3
  /* 
@@ -367,9 +371,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API从内容服务中检索内容（已弃用）{#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## 快速入门（SOAP模式）：使用Java API从内容服务中检索内容（已弃用） {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-以下Java代码示例从/Company Home中检索名为&#x200B;*MortgageForm.pdf*&#x200B;的PDF文件。 该PDF文件将保存到本地文件系统中，名为&#x200B;*UpdatedMortgageForm.pdf*。
+以下Java代码示例检索名为的PDF文件 *MortgageForm.pdf* 从/公司主页。 PDF文件将保存到本地文件系统并命名 *UpdatedMortgageForm.pdf*.
 
 ```as3
  /* 
@@ -473,9 +477,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API移动内容服务内容（已弃用）{#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
+## 快速入门（SOAP模式）：使用Java API移动内容服务内容（已弃用） {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-以下Java代码示例将名为&#x200B;*MortgageForm.pdf*&#x200B;的PDF文件从/Company Home/Test Directory移至/Company Home。 移动内容的标识值将写入控制台。
+以下Java代码示例移动了名为的PDF文件 *MortgageForm.pdf* 从/Company Home/Test Directory到/Company Home。 移动内容的标识值将写入控制台。
 
 ```as3
  /* 
@@ -574,7 +578,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API列出内容服务内容（已弃用）{#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## 快速入门（SOAP模式）：使用Java API列出内容服务内容（已弃用） {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
 以下Java代码示例列出了位于/Company Home中的内容。 将显示每个节点类型和节点名称。
 
@@ -687,7 +691,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API搜索内容服务内容（已弃用）{#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## 快速入门（SOAP模式）：使用Java API搜索内容服务内容（已弃用） {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
 以下Java代码会在/Company Home中搜索包含MortgageForm文本的文档。 此外，还会搜索子文件夹。
 
@@ -797,9 +801,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API设置内容服务权限（已弃用）{#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
+## 快速入门（SOAP模式）：使用Java API设置内容服务权限（已弃用） {#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated}
 
-以下Java代码示例为名为tony blue的用户设置权限。 指定的域是默认域。 已指定Consumer权限，节点为`/Company Home/Test Directory`。
+以下Java代码示例为名为tony blue的用户设置权限。 指定的域是默认域。 已指定Consumer权限，并且节点为 `/Company Home/Test Directory`.
 
 ```as3
  /* 
@@ -907,9 +911,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API创建关联（已弃用）{#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
+## 快速入门（SOAP模式）：使用Java API创建关联（已弃用） {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
-以下Java代码创建XML数据文件与PDF表单的关联。 此类关联名为LinkedBy。PDF文档必须具有可链接的方面。
+以下Java代码创建XML数据文件与PDF表单的关联。 此类型的关联名为LinkedBy。PDF文档必须具有可链接的方面。
 
 ```as3
  /* 

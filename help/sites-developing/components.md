@@ -1,7 +1,7 @@
 ---
 title: 组件概述
 seo-title: Components
-description: 组件是模块化单元，可以实现在网站上显示内容的特定功能
+description: 组件是模块化单元，可实施特定功能以在您的网站上展示您的内容
 seo-description: Components are modular units which realize specific functionality to present your content on your website
 uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
@@ -10,22 +10,26 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 3444d7df-fc43-4383-87b0-0f00fef116bc
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 7%
+source-wordcount: '625'
+ht-degree: 49%
 
 ---
 
 # 组件概述{#components-overview}
 
-本页概述Adobe Experience Manager(AEM)组件，例如 [用于页面创作](/help/sites-authoring/default-components-foundation.md).
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+此页面概述了 Adobe Experience Manager (AEM) 组件，例如那些[用于页面创作](/help/sites-authoring/default-components-foundation.md)的组件。
 
 ## 什么是组件？ {#what-exactly-is-a-component}
 
-* 模块化单元，可实现在网站上呈现内容的特定功能。
-* 可重复使用。
-* 开发为存储库一个文件夹内的自含单元。
+* 模块化单元，可实施特定功能以在您的网站上展示您的内容。
+* 可重用的。
+* 作为存储库的一个文件夹中的独立单元开发。
 * 没有隐藏的配置文件。
 * 可以包含其他组件。
 * 可以在任何AEM系统内的任何位置运行。 这些组件也可限制在特定组件下运行。
@@ -33,19 +37,19 @@ ht-degree: 7%
 * 具有可配置的编辑行为。
 * 使用基于Granite UI组件使用子元素构建的对话框
 * 使用 [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) （推荐）或JSP。
-* 可以开发以创建可扩展默认功能的自定义组件。
+* 可以开发以创建扩展默认功能的自定义组件。
 
 由于组件是模块化的，因此您可以：
 
 * 在本地实例上开发新组件。
-* 将其部署到测试环境。
-* 将其部署到实时创作环境，在该环境中，作者和/或管理员可以添加和配置内容。
-* 将其部署到实时发布环境，在该环境中，访客可使用这些环境向网站的访客呈现内容。 某些组件（例如，社区组件）也接受用户的输入。
+* 将它部署到测试环境。
+* 将它部署到实时创作环境，作者和/或管理员可在该环境中添加和配置内容。
+* 将它部署到实时发布环境，它在该环境中用于为您网站的访客呈现内容。某些组件（例如，社区组件）也接受用户的输入。
 
-每个AEM组件：
+每个 AEM 组件：
 
-* 是资源类型。
-* 是完全实现特定功能的脚本集合。
+* 是一种资源类型。
+* 是一个完全实施特定功能的脚本的集合。
 * 可以在中运行 *隔离*，即在AEM或门户中。
 
 ## AEM中的现成组件 {#out-of-the-box-components-within-aem}
@@ -58,7 +62,7 @@ AEM附带多种 [开箱即用的组件](/help/sites-authoring/default-components
 * 图像，带有随附的文本
 * 工具栏
 
-提供的组件及其在 [示例We.Retail网站](/help/sites-developing/we-retail.md) 提供了如何实施和使用组件的说明。 这些组件提供了所有源代码，可以按原样使用，也可以用作修改或扩展组件的起点。
+提供的组件及其在 [示例We.Retail网站](/help/sites-developing/we-retail.md) 提供了如何实施和使用组件的说明。 这些组件随所有源代码一起提供，可以按原样使用或用作已修改或扩展的组件的起点。
 
 ### 核心组件和基础组件 {#core-components-and-foundation-components}
 
@@ -73,25 +77,25 @@ AEM附带多种 [开箱即用的组件](/help/sites-authoring/default-components
 
 >[!NOTE]
 >
->[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 代表组件设计和开发的当前最佳实践，并用作参考实施。
+>[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 代表组件设计和开发的当前最佳实践，并用作参考实施。
 >
 >[AEM现代化工具](modernization-tools.md) 有助于迁移到核心组件。
 
 ### 查看可用组件 {#viewing-available-components}
 
-要概述AEM实例中的所有可用组件，请使用 [组件控制台](/help/sites-authoring/default-components-console.md).
+有关 AEM 实例中的所有可用组件的概述，请使用[组件控制台](/help/sites-authoring/default-components-console.md)。
 
-或者，您还可以使用CRXDE Lite获取存储库中所有可用组件的列表。
+或者，您也可以使用 CRXDE Lite 获取存储库中所有可用组件的列表。
 
-1. 在 **[!UICONTROL CRXDE Lite]**，选择 **[!UICONTROL 工具]** ，然后 **[!UICONTROL 查询]**，以打开 **[!UICONTROL 查询]** 选项卡。
+1. 在 **[!UICONTROL CRXDE Lite]** 中，从工具栏中选择&#x200B;**[!UICONTROL 工具]**，然后选择&#x200B;**[!UICONTROL 查询]**，这将打开&#x200B;**[!UICONTROL 查询]**&#x200B;选项卡。
 
-1. 在 **[!UICONTROL 查询]** 选项卡，选择 `XPath` as **[!UICONTROL 类型]**.
+1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;选项卡中，选择 `XPath` 作为&#x200B;**[!UICONTROL 类型]**。
 
 1. 在&#x200B;**[!UICONTROL 查询]**&#x200B;输入字段中，输入以下字符串：
 
    `//element(*, cq:Component)`
 
-1. 单击 **[!UICONTROL 执行]** 和组件列出。
+1. 单击&#x200B;**[!UICONTROL 执行]**，这将列出组件。
 
 ## 其他资源 {#further-reading}
 
@@ -106,7 +110,7 @@ AEM附带多种 [开箱即用的组件](/help/sites-authoring/default-components
 * [内容片段的组件](/help/sites-developing/components-content-fragments.md)
 * [以JSON格式获取页面信息](/help/sites-developing/pageinfo.md)
 * [组件国际化](/help/sites-developing/i18n.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [使用隐藏条件](/help/sites-developing/hide-conditions.md)
 * 经典 UI
 

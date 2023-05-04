@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3330'
+source-wordcount: '3366'
 ht-degree: 1%
 
 ---
 
 # JEE上的AEM Forms支持的平台 {#supported-platforms-for-aem-forms-on-jee}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 支持的平台 {#supported-platforms}
 
@@ -73,7 +77,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong>平台</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>支持级别</strong></p> </th> 
    <th><p><strong>支持的修补程序定义</strong></p> </th> 
   </tr> 
@@ -104,7 +108,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>平台</strong></p> </td> 
+   <td><p><strong>Platform</strong></p> </td> 
    <td><p><strong> 描述</strong></p> </td> 
    <td><p><strong>支持级别</strong></p> </td> 
   </tr> 
@@ -152,7 +156,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>平台</strong></p> </td> 
+   <td><p><strong>Platform</strong></p> </td> 
    <td><p><strong> 描述</strong></p> </td> 
    <td><p><strong>支持级别AEM 6.4</strong></p> </td> 
    <td><p><strong>JEE上的支持级别AEM Forms 6.4</strong></p> </td> 
@@ -190,7 +194,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
  <tbody> 
   <tr> 
    <th>数据库 </th> 
-   <th><p><strong>平台</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>支持的修补程序定义</strong></p> </th> 
   </tr> 
   <tr> 
@@ -226,7 +230,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong> 平台</strong></p> </td> 
+   <td><p><strong> Platform</strong></p> </td> 
    <td><p><strong>支持级别</strong></p> </td> 
    <td><p><strong>支持的修补程序定义</strong></p> </td> 
   </tr> 
@@ -259,7 +263,7 @@ Adobe Experience Manager Forms要求运行Java虚拟机，该虚拟机由Java开
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong> 平台</strong></p> </th> 
+   <th><p><strong> Platform</strong></p> </th> 
    <th><p><strong>支持级别</strong></p> </th> 
    <th><p><strong>支持的修补程序定义</strong></p> </th> 
   </tr> 
@@ -541,7 +545,7 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是支持的特定于�
 <table> 
  <tbody> 
   <tr> 
-   <td>平台</td> 
+   <td>Platform</td> 
    <td>最低硬件要求</td> 
   </tr> 
   <tr> 
@@ -593,7 +597,7 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是支持的特定于�
 <table> 
  <tbody> 
   <tr> 
-   <th><p><strong>平台</strong></p> </th> 
+   <th><p><strong>Platform</strong></p> </th> 
    <th><p><strong>支持的修补程序定义</strong></p> </th> 
   </tr> 
   <tr> 
@@ -748,7 +752,7 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是支持的特定于�
 
 AEM Forms应用程序在以下平台上可用：
 
-| **平台** | **支持的设备** |
+| **Platform** | **支持的设备** |
 |---|---|
 | AppleiOS | 运行iOS 15.1及更高版本的Apple iPhone、iPad、iPad Air和iPad mini。 |
 | Google Android | Android 4.4(Android Kit Kat)及更高版本 *[API级别19及更高版本]*. AEM Forms应用在7英寸和10英寸的三星Galaxy平板电脑、7英寸的Google Nexus平板电脑和流行智能手机上获得认证。 |

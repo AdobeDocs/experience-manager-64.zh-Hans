@@ -1,24 +1,28 @@
 ---
 title: 性能准则
-seo-title: 性能准则
+seo-title: Performance Guidelines
 description: 本文提供了有关如何优化AEM部署性能的一般准则。
-seo-description: 本文提供了有关如何优化AEM部署性能的一般准则。
+seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
 uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
-feature: 配置
+feature: Configuring
 exl-id: ee86b1b9-68fb-4311-bf5f-6151dd94d3b0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2994'
+source-wordcount: '3012'
 ht-degree: 5%
 
 ---
 
-# 性能指南{#performance-guidelines}
+# 性能准则{#performance-guidelines}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本页提供了有关如何优化AEM部署的一般准则。 如果您是初次使用AEM，请先查看以下页面，然后再开始阅读性能指南：
 
@@ -37,7 +41,7 @@ ht-degree: 5%
    <td><p><strong>操作系统</strong></p> </td> 
    <td><p><strong>应用程序服务器</strong></p> </td> 
    <td><p><strong>JRE</strong></p> </td> 
-   <td><p><strong>安全</strong></p> </td> 
+   <td><p><strong>安全性</strong></p> </td> 
    <td><p><strong>微内核</strong></p> </td> 
    <td><p><strong>数据存储</strong></p> </td> 
    <td><p><strong>索引</strong></p> </td> 
@@ -46,21 +50,21 @@ ht-degree: 5%
    <td><p><strong>Marketing Cloud</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p>站点</p> </td> 
+   <td><p>Sites</p> </td> 
    <td><p>非HA</p> </td> 
    <td><p>Windows</p> </td> 
    <td><p>CQSE</p> </td> 
    <td><p>Oracle</p> </td> 
    <td><p>LDAP</p> </td> 
    <td><p>焦油</p> </td> 
-   <td><p>区段</p> </td> 
+   <td><p>市场细分</p> </td> 
    <td><p>属性</p> </td> 
    <td><p>Apache</p> </td> 
    <td><p>Edge</p> </td> 
-   <td><p>Target</p> </td> 
+   <td><p>目标</p> </td> 
   </tr> 
   <tr> 
-   <td><p>资产</p> </td> 
+   <td><p>Assets</p> </td> 
    <td><p>Publish-HA</p> </td> 
    <td><p>Solaris</p> </td> 
    <td><p>WebLogic</p> </td> 
@@ -71,7 +75,7 @@ ht-degree: 5%
    <td><p>Lucene</p> </td> 
    <td><p>IIS</p> </td> 
    <td><p>IE</p> </td> 
-   <td><p>Analytics</p> </td> 
+   <td><p>分析</p> </td> 
   </tr> 
   <tr> 
    <td><p>社区</p> </td> 
@@ -88,7 +92,7 @@ ht-degree: 5%
    <td><p>营销活动</p> </td> 
   </tr> 
   <tr> 
-   <td><p>表单</p> </td> 
+   <td><p>Forms</p> </td> 
    <td><p>创作卸载</p> </td> 
    <td><p>HP-UX</p> </td> 
    <td><p>Tomcat</p> </td> 
@@ -127,7 +131,7 @@ ht-degree: 5%
    <td><p> </p> </td> 
    <td><p> </p> </td> 
    <td><p> </p> </td> 
-   <td><p>资产</p> </td> 
+   <td><p>Assets</p> </td> 
   </tr> 
   <tr> 
    <td><p>商务</p> </td> 
@@ -200,7 +204,7 @@ ht-degree: 5%
    <td><p> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>屏幕</p> </td> 
+   <td><p>Screens</p> </td> 
    <td><p> </p> </td> 
    <td><p> </p> </td> 
    <td><p> </p> </td> 
@@ -262,43 +266,43 @@ ht-degree: 5%
 >
 >性能指南主要适用于AEM Sites。
 
-## 何时使用性能指南{#when-to-use-the-performance-guidelines}
+## 何时使用性能指南 {#when-to-use-the-performance-guidelines}
 
 您应在以下情况下使用性能准则：
 
-* **首次部署**:当计划首次部署AEM Sites或资产时，请务必了解配置微内核、节点存储和数据存储时可用的选项（与默认设置相比）。例如，将TarMK的数据存储的默认设置更改为文件数据存储。
-* **升级到新版本**:升级到新版本时，了解与运行环境相比的性能差异非常重要。例如，从AEM 6.1升级到6.2，或从AEM 6.0 CRX2升级到6.2 OAK。
-* **响应时间缓慢**:如果所选Nodestore架构不符合您的要求，则了解与其他拓扑选项相比的性能差异将非常重要。例如，部署TarMK而不是MongoMK，或使用文件数据存储而不是Amazon S3或Microsoft Azure数据存储。
-* **添加更多作者**:如果推荐的TarMK拓扑不符合性能要求，并且升级创作节点已达到最大可用容量，则务必要了解与将MongoMK与三个或更多创作节点结合使用相比的性能差异。例如，部署MongoMK而不是TarMK。
-* **添加更多内容**:如果推荐的数据存储架构不符合您的要求，则了解与其他数据存储选项相比的性能差异将非常重要。示例：使用Amazon S3或Microsoft Azure数据存储，而不是文件数据存储。
+* **首次部署**:当计划首次部署AEM Sites或资产时，请务必了解配置微内核、节点存储和数据存储时可用的选项（与默认设置相比）。 例如，将TarMK的数据存储的默认设置更改为文件数据存储。
+* **升级到新版本**:升级到新版本时，了解与运行环境相比的性能差异非常重要。 例如，从AEM 6.1升级到6.2，或从AEM 6.0 CRX2升级到6.2 OAK。
+* **响应时间较慢**:如果所选Nodestore架构不符合您的要求，则了解与其他拓扑选项相比的性能差异将非常重要。 例如，部署TarMK而不是MongoMK，或使用文件数据存储而不是Amazon S3或Microsoft Azure数据存储。
+* **添加更多作者**:如果推荐的TarMK拓扑不符合性能要求，并且升级创作节点已达到最大可用容量，则务必要了解与将MongoMK与三个或更多创作节点结合使用相比的性能差异。 例如，部署MongoMK而不是TarMK。
+* **添加更多内容**:如果推荐的数据存储架构不符合您的要求，则了解与其他数据存储选项相比的性能差异将非常重要。 示例：使用Amazon S3或Microsoft Azure数据存储，而不是文件数据存储。
 
 ## 简介 {#introduction}
 
 本章概述AEM架构及其最重要的组件。 它还提供了开发准则，并描述了TarMK和MongoMK基准测试中使用的测试方案。
 
-### AEM平台{#the-aem-platform}
+### AEM平台 {#the-aem-platform}
 
 AEM平台包含以下组件：
 
 ![chlimage_1](assets/chlimage_1.png)
 
-有关AEM平台的更多信息，请参阅[什么是AEM](/help/sites-deploying/deploy.md#what-is-aem)。
+有关AEM平台的更多信息，请参阅 [什么是AEM](/help/sites-deploying/deploy.md#what-is-aem).
 
-### AEM架构{#the-aem-architecture}
+### AEM架构 {#the-aem-architecture}
 
-AEM部署有三个重要的构建块。 **创作实例**，内容作者、编辑者和批准者使用该实例创建和审阅内容。 内容获得批准后，会发布到名为&#x200B;**Publish Instance**&#x200B;的第二个实例类型，最终用户可从中访问该实例。 第三个构建基块是&#x200B;**Dispatcher**，该模块用于处理缓存和URL过滤，并安装在Web服务器上。 有关AEM架构的其他信息，请参阅[典型部署方案](/help/sites-deploying/deploy.md#typical-deployment-scenarios)。
+AEM部署有三个重要的构建块。 的 **创作实例** 内容作者、编辑者和批准者用于创建和审阅内容。 内容获得批准后，会发布到名为的第二个实例类型 **发布实例** 最终用户访问页面的位置。 第三个建筑块是 **Dispatcher** 该模块用于处理缓存和URL过滤，并安装在web服务器上。 有关AEM架构的其他信息，请参阅 [典型部署方案](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
 
-### 微内核{#micro-kernels}
+### 微核 {#micro-kernels}
 
-微内核在AEM中充当持久性管理器。 有三种类型的微内核与AEM一起使用：TarMK、MongoDB和关系数据库（受限制支持）。 请根据您的实例目的和所考虑的部署类型，选择符合您需求的部署。有关微内核的其他信息，请参阅[推荐部署](/help/sites-deploying/recommended-deploys.md)页面。
+微内核在AEM中充当持久性管理器。 有三种类型的微内核与AEM一起使用：TarMK、MongoDB和关系数据库（受限制支持）。 根据实例的用途和您考虑的部署类型，选择一个满足您需求的部署。 有关微内核的其他信息，请参阅 [推荐的部署](/help/sites-deploying/recommended-deploys.md) 页面。
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
 ### Nodestore {#nodestore}
 
-在AEM中，二进制数据可以独立于内容节点进行存储。 存储二进制数据的位置称为&#x200B;**数据存储**，而内容节点和属性的位置称为&#x200B;**节点存储**。
+在AEM中，二进制数据可以独立于内容节点进行存储。 存储二进制数据的位置称为 **数据存储**，而内容节点和属性的位置称为 **节点存储**.
 
 >[!NOTE]
 >
@@ -306,27 +310,27 @@ AEM部署有三个重要的构建块。 **创作实例**，内容作者、编辑
 
 >[!CAUTION]
 >
->关系数据库微内核受到限制支持。 在使用此类型的微内核之前，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。
+>关系数据库微内核受到限制支持。 联系人 [Adobe客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html) 使用此类微内核之前。
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
-### 数据存储{#data-store}
+### 数据存储 {#data-store}
 
 在处理大量二进制文件时，建议使用外部数据存储而不是默认的节点存储，以便最大化性能。 例如，如果您的项目需要大量的媒体资产，则在文件或Azure/S3数据存储下存储这些资产将比直接在MongoDB中存储更快地访问它们。
 
-有关可用配置选项的更多详细信息，请参阅[配置节点和数据存储](/help/sites-deploying/data-store-config.md)。
+有关可用配置选项的更多详细信息，请参阅 [配置节点和数据存储](/help/sites-deploying/data-store-config.md).
 
 >[!NOTE]
 >
->Adobe建议选择在Azure或Amazon Web Services(AWS)上使用Adobe Managed Services部署AEM的选项，在该选项中，客户将从具备在这些云计算环境中部署和操作AEM的经验和技能的团队中获益。 请参阅我们的[有关Adobe Managed Services的其他文档](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)。
+>Adobe建议选择使用Adobe Managed Services在Azure或Amazon Web Services(AWS)上部署AEM的选项，在该选项中，客户将从具备在这些云计算环境中部署和操作AEM的经验和技能的团队中受益。 请看我们的 [关于Adobe Managed Services的其他文档](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 >
->有关如何在Azure或AWS上部署AEM的建议，我们强烈建议在Adobe托管服务之外直接与云提供商或我们选择的支持在云环境中部署AEM的合作伙伴之一合作。 选定的云提供商或合作伙伴负责规模调整规范、设计和实施他们将支持的架构，以满足您的特定性能、负载、可扩展性和安全要求。
+>有关如何在Adobe托管服务之外的Azure或AWS上部署AEM的建议，我们强烈建议直接与云提供商或我们选择的支持在云环境中部署AEM的合作伙伴之一合作。 选定的云提供商或合作伙伴负责规模调整规范、设计和实施他们将支持的架构，以满足您的特定性能、负载、可扩展性和安全要求。
 >
->有关其他详细信息，还请参见[技术要求](/help/sites-deploying/technical-requirements.md#supported-platforms)页面。
+>有关其他详细信息，另请参阅 [技术要求](/help/sites-deploying/technical-requirements.md#supported-platforms) 页面。
 
 ### 搜索 {#search-features}
 
-此部分中列出的是与AEM一起使用的自定义索引提供程序。 要了解有关索引的更多信息，请参阅[Oak查询和索引](/help/sites-deploying/queries-and-indexing.md)。
+此部分中列出的是与AEM一起使用的自定义索引提供程序。 要了解有关索引的更多信息，请参阅 [Oak查询和索引](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
 >
@@ -334,9 +338,9 @@ AEM部署有三个重要的构建块。 **创作实例**，内容作者、编辑
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-### 开发准则{#development-guidelines}
+### 开发准则 {#development-guidelines}
 
-您应该针对AEM开发，以实现&#x200B;**性能和可扩展性**。 以下是您可以遵循的一些最佳实践：
+您应该针对AEM开发 **性能和可扩展性**. 以下是您可以遵循的一些最佳实践：
 
 **DO**
 
@@ -363,15 +367,15 @@ AEM部署有三个重要的构建块。 **创作实例**，内容作者、编辑
    * 服务跟踪器
    * 直接访问OSGi服务注册表
 
-有关在AEM上进行开发的更多详细信息，请参阅[开发 — 基础知识](/help/sites-developing/the-basics.md)。 有关其他最佳实践，请参阅[开发最佳实践](/help/sites-developing/best-practices.md)。
+有关在AEM上开发的更多详细信息，请阅读 [开发 — 基础知识](/help/sites-developing/the-basics.md). 有关其他最佳实践，请参阅 [开发最佳实践](/help/sites-developing/best-practices.md).
 
-### 基准方案{#benchmark-scenarios}
+### 基准方案 {#benchmark-scenarios}
 
 >[!NOTE]
 >
 >此页面上显示的所有基准测试都已在实验室设置中执行。
 
-下面详述的测试方案用于TarMK、MongoMk和TarMK与MongoMk章节的基准部分。 要查看特定基准测试使用的方案，请阅读[技术规范](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark)表中的方案字段。
+下面详述的测试方案用于TarMK、MongoMk和TarMK与MongoMk章节的基准部分。 要查看特定基准测试使用的方案，请阅读 [技术规范](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) 表。
 
 **单个产品方案**
 
@@ -401,13 +405,13 @@ AEM Sites +资产：
 
 Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布实例）中使用的默认持久性技术。
 
-有关TarMK的更多信息，请参阅[部署方案](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)和[Tar存储](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage)。
+有关TarMK的更多信息，请参阅 [部署方案](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 和 [焦油存储](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
-### TarMK最低架构指南{#tarmk-minimum-architecture-guidelines}
+### TarMK最低架构准则 {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
 >
->下面介绍的最低架构准则适用于生产环境和高流量站点。 运行AEM所需的&#x200B;****[最低规范](/help/sites-deploying/technical-requirements.md#prerequisites)。
+>下面介绍的最低架构准则适用于生产环境和高流量站点。 这些是 **not** the [最小规格](/help/sites-deploying/technical-requirements.md#prerequisites) 运行AEM时需要。
 
 要在使用TarMK时获得良好性能，您应从以下架构开始：
 
@@ -419,7 +423,7 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
 
 >[!NOTE]
 >
->如果共享文件数据存储，则应将无二进制复制设置为&#x200B;**ON**。
+>应转换无二进制复制 **开** 文件数据存储共享时。
 
 **AEM Sites的Tar架构准则**
 
@@ -429,16 +433,16 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
-### TarMK设置指南{#tarmk-settings-guideline}
+### TarMK设置准则 {#tarmk-settings-guideline}
 
-为获得良好性能，您应遵循下面介绍的设置准则。 有关如何更改设置的说明，请[参阅此页面](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)。
+为获得良好性能，您应遵循下面介绍的设置准则。 有关如何更改设置的说明，请 [请参阅此页面](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
 <table> 
  <tbody> 
   <tr> 
    <td><strong>设置</strong></td> 
    <td><strong>参数</strong></td> 
-   <td><strong>值</strong></td> 
+   <td><strong>价值</strong></td> 
    <td><strong>描述</strong></td> 
   </tr> 
   <tr> 
@@ -463,13 +467,13 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
    <td>Lucene索引配置</td> 
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td> 
    <td><p>启用</p> <p>启用</p> <p>启用</p> </td> 
-   <td>有关可用参数的更多详细信息，请参阅<a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">此页</a>。</td> 
+   <td>有关可用参数的更多详细信息，请参阅 <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">本页</a>.</td> 
   </tr> 
   <tr> 
    <td>数据存储= S3数据存储</td> 
    <td><p><code>maxCachedBinarySize</code></p> <p><code>cacheSizeInMB</code></p> </td> 
    <td><p>1048576(1MB)或更小</p> <p>最大堆大小的2-10%</p> </td> 
-   <td>另请参阅<a href="/help/sites-deploying/data-store-config.md#data-store-configurations">数据存储配置</a>。</td> 
+   <td>另请参阅 <a href="/help/sites-deploying/data-store-config.md#data-store-configurations">数据存储配置</a>.</td> 
   </tr> 
   <tr> 
    <td>DAM更新资产工作流</td> 
@@ -486,9 +490,9 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
  </tbody> 
 </table>
 
-### TarMK性能基准{#tarmk-performance-benchmark}
+### TarMK性能基准 {#tarmk-performance-benchmark}
 
-#### 技术规范{#technical-specifications}
+#### 技术规范 {#technical-specifications}
 
 基准测试是按照以下规范执行的：
 
@@ -506,7 +510,7 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
 | 数据存储 | 文件DS |
 | 方案 | 单个产品：资产/ 30个并发线程 |
 
-#### 性能标记结果{#performance-bechmark-results}
+#### 性能标记结果 {#performance-bechmark-results}
 
 >[!NOTE]
 >
@@ -518,9 +522,9 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
 
 与TarMK相比，选择MongoMK持久性后端的主要原因是横向缩放实例。 这意味着始终运行两个或多个活动创作实例，并将MongoDB用作持久性存储系统。 运行多个创作实例的需求通常是由于单个服务器的CPU和内存容量（支持所有并发创作活动）不再可持续所致。
 
-有关TarMK的更多信息，请参阅[部署方案](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)和[Mongo存储](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage)。
+有关TarMK的更多信息，请参阅 [部署方案](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 和 [Mongo存储](/help/sites-deploying/storage-elements-in-aem-6.md#mongo-storage).
 
-### MongoMK最低架构指南{#mongomk-minimum-architecture-guidelines}
+### MongoMK最低架构准则 {#mongomk-minimum-architecture-guidelines}
 
 要在使用MongoMK时获得良好性能，您应从以下架构开始：
 
@@ -535,13 +539,13 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
 
 >[!NOTE]
 >
->如果共享文件数据存储，则应将无二进制复制设置为&#x200B;**ON**。
+>应转换无二进制复制 **开** 文件数据存储共享时。
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-### MongoMK设置指南{#mongomk-settings-guidelines}
+### MongoMK设置准则 {#mongomk-settings-guidelines}
 
-为获得良好性能，您应遵循下面介绍的设置准则。 有关如何更改设置的说明，请[参阅此页面](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)。
+为获得良好性能，您应遵循下面介绍的设置准则。 有关如何更改设置的说明，请 [请参阅此页面](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
 <table> 
  <tbody> 
@@ -573,18 +577,18 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
    <td>Lucene索引配置</td> 
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td> 
    <td><p>启用</p> <p>启用</p> <p>启用</p> </td> 
-   <td>有关可用参数的更多详细信息，请参阅<a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">此页面</a>。</td> 
+   <td>有关可用参数的更多详细信息，请参阅 <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">本页</a>.</td> 
   </tr> 
   <tr> 
    <td>数据存储= S3数据存储</td> 
    <td><p><code>maxCachedBinarySize</code></p> <p><code>cacheSizeInMB</code></p> </td> 
    <td><p>1048576(1MB)或更小</p> <p>最大堆大小的2-10%</p> </td> 
-   <td>另请参阅<a href="/help/sites-deploying/data-store-config.md#data-store-configurations">数据存储配置</a>。</td> 
+   <td>另请参阅 <a href="/help/sites-deploying/data-store-config.md#data-store-configurations">数据存储配置</a>.</td> 
   </tr> 
   <tr> 
    <td>DocumentNodeStoreService</td> 
    <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td> 
-   <td><p>2048年</p> <p>35(25)</p> <p>20(10)</p> <p>30(5)</p> <p>10(3)</p> <p>4(4)</p> <p>./cache，size=2048,binary=0,-compact，-compress</p> </td> 
+   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>。/cache，size=2048,binary=0,-compact，-compress</p> </td> 
    <td><p>缓存的默认大小设置为256 MB。</p> <p>会影响执行缓存失效所花费的时间。</p> </td> 
   </tr> 
   <tr> 
@@ -596,9 +600,9 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
  </tbody> 
 </table>
 
-### MongoMK性能基准{#mongomk-performance-benchmark}
+### MongoMK性能基准 {#mongomk-performance-benchmark}
 
-### 技术规范{#technical-specifications-1}
+### 技术规范 {#technical-specifications-1}
 
 基准测试是按照以下规范执行的：
 
@@ -616,7 +620,7 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
 | 数据存储 | 文件DS | 不适用 |
 | 方案 | 单个产品：资产/ 30个并发线程 | 单个产品：资产/ 30个并发线程 |
 
-### 性能基准结果{#performance-benchmark-results}
+### 性能基准结果 {#performance-benchmark-results}
 
 >[!NOTE]
 >
@@ -630,15 +634,15 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
 
 与TarMK相比，选择MongoMK持久性后端的主要原因是横向缩放实例。 这意味着始终运行两个或多个活动创作实例，并将MongoDB用作持久性存储系统。 运行多个创作实例的需求通常是由于单个服务器的CPU和内存容量（支持所有并发创作活动）已不再可持续。
 
-有关TarMK与MongoMK的更多详细信息，请参阅[推荐部署](/help/sites-deploying/recommended-deploys.md#microkernels-which-one-to-use)。
+有关TarMK与MongoMK的更多详细信息，请参阅 [推荐的部署](/help/sites-deploying/recommended-deploys.md#microkernels-which-one-to-use).
 
-### TarMK与MongoMk准则{#tarmk-vs-mongomk-guidelines}
+### TarMK与MongoMk准则 {#tarmk-vs-mongomk-guidelines}
 
 **TarMK的好处**
 
 * 专为内容管理应用程序而构建
 * 文件始终保持一致，并且可以使用任何基于文件的备份工具进行备份
-* 提供故障转移机制 — 有关更多详细信息，请参阅[冷备用](/help/sites-deploying/tarmk-cold-standby.md)
+* 提供故障转移机制 — 请参阅 [冷待机](/help/sites-deploying/tarmk-cold-standby.md) 更多详细信息
 * 提供高性能、可靠的数据存储，并且运营开销最小
 * 降低总体拥有成本（总拥有成本）
 
@@ -650,13 +654,13 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
 * 每日的页面编辑量：在数十万或更多
 * 每日搜索量：以万计甚至更多
 
-### TarMK与MongoMK基准{#tarmk-vs-mongomk-benchmarks}
+### TarMK与MongoMK基准 {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
 >
 >下面显示的数字已被标准化为1作为基准，而不是实际吞吐量数。
 
-### 情景1技术规范{#scenario-technical-specifications}
+### 情景1技术规范 {#scenario-technical-specifications}
 
 <table> 
  <tbody> 
@@ -735,11 +739,11 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
  </tbody> 
 </table>
 
-### 情景1性能基准结果{#scenario-performance-benchmark-results}
+### 情景1性能基准结果 {#scenario-performance-benchmark-results}
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
-### 情景2技术规范{#scenario-technical-specifications-1}
+### 情景2技术规范 {#scenario-technical-specifications-1}
 
 >[!NOTE]
 >
@@ -822,39 +826,39 @@ Adobe建议将TarMK作为客户在所有部署方案（AEM创作实例和发布�
  </tbody> 
 </table>
 
-### 情景2性能基准结果{#scenario-performance-benchmark-results-1}
+### 情景2性能基准结果 {#scenario-performance-benchmark-results-1}
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-### AEM Sites和Assets的架构可扩展性准则{#architecture-scalability-guidelines-for-aem-sites-and-assets}
+### AEM Sites和Assets的架构可扩展性准则 {#architecture-scalability-guidelines-for-aem-sites-and-assets}
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-## 性能指南摘要{#summary-of-performance-guidelines}
+## 性能准则摘要  {#summary-of-performance-guidelines}
 
 本页介绍的准则可概括如下：
 
-* **对于大多数客户** 而言，TarMK与文件数据库是推荐的架构：
+* **带有文件数据存储的TarMK** 是大多数客户推荐的架构：
 
    * 最小拓扑：一个创作实例、两个发布实例、两个Dispatcher
    * 如果共享文件数据存储，则打开无二进制复制
 
-* **MongoMK with File Datastore是** 创作层的水平可扩展性推荐的架构：
+* **带有文件数据存储的MongoMK** 是创作层的水平可扩展性推荐的架构：
 
    * 最小拓扑：三个创作实例、三个MongoDB实例、两个Publish实例、两个Dispatcher
    * 如果共享文件数据存储，则打开无二进制复制
 
-* **** 节点应存储在本地磁盘上，而不是网络连接存储(NAS)上
-* 使用&#x200B;**Amazon S3**&#x200B;时：
+* **Nodestore** 应存储在本地磁盘上，而不是网络连接存储(NAS)上
+* 使用 **Amazon S3**:
 
    * Amazon S3数据存储在创作层和发布层之间共享
    * 必须打开无二进制复制
    * 数据存储垃圾收集要求在所有创作和发布节点上先运行一次，然后在创作上再运行一次
 
-* **除了基于最常见搜索的现成索引之外，还应** 创建自定义索引
+* **除了开箱即用索引之外，还应创建自定义索引** 基于最常见的搜索
 
    * Lucene索引应用于自定义索引
 
-* **自定义工作流可以显着提高性能**，例如，删除“更新资产”工作流中的视频步骤，禁用未使用的监听器等。
+* **自定义工作流可以显着提高性能**&#x200B;例如，删除“更新资产”工作流中的视频步骤，禁用未使用的侦听器，等等。
 
-有关更多详细信息，请参阅[推荐的部署](/help/sites-deploying/recommended-deploys.md)页面。
+有关更多详细信息，请参阅 [推荐的部署](/help/sites-deploying/recommended-deploys.md) 页面。

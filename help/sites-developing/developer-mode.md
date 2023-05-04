@@ -10,14 +10,18 @@ topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 exl-id: 733eddf1-48f9-45c2-a1b4-138cf32b4b59
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '722'
 ht-degree: 1%
 
 ---
 
 # 开发人员模式{#developer-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 在AEM中编辑页面时， [模式](/help/sites-authoring/author-environment-tools.md#page-modes) 包括开发人员模式。 这会打开一个侧面板，其中包含多个选项卡，用于向开发人员提供有关当前页面的信息。 这三个选项卡是：
 
@@ -33,7 +37,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->开发人员模式：
+>开发人员架构:
 >
 >* 仅在触屏UI中可用（编辑页面时）。
 >* 在移动设备上或桌面上的小窗口上不可用（由于空间限制）。

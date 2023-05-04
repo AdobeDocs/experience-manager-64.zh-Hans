@@ -1,8 +1,8 @@
 ---
 title: 任务管理器服务Java API快速启动(SOAP)
-seo-title: 任务管理器服务Java API快速启动(SOAP)
+seo-title: Task Manager Service Java API QuickStart(SOAP)
 description: 使用任务管理器服务来分配任务、锁定任务、检索分配给用户的任务、从任务中检索表单数据、修改表单数据、检索文件附件和检索任务信息。
-seo-description: 使用任务管理器服务来分配任务、锁定任务、检索分配给用户的任务、从任务中检索表单数据、修改表单数据、检索文件附件和检索任务信息。
+seo-description: Use the Task Manager service to assign tasks, lock tasks, retrieve tasks assigned to users, retrieve form data from tasks, modify form data, retrieve file attachments, and retrieve task information.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 role: Developer
 exl-id: 302b38e9-71fc-4e83-af01-856d7bd9af40
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
-# 任务管理器服务Java API快速启动(SOAP){#task-manager-service-java-api-quickstart-soap}
+# 任务管理器服务Java API快速启动(SOAP) {#task-manager-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 任务管理器服务提供以下快速入门。
 
@@ -40,13 +44,13 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->您无法使用Web服务API搜索分配给用户的任务。 原因是您无法调用`taskList`方法，这是执行此任务所必需的方法调用。
+>您无法使用Web服务API搜索分配给用户的任务。 原因是您无法调用 `taskList` 方法，这是执行此任务所必需的方法调用。
 
 >[!NOTE]
 >
->位于“使用AEM Forms进行编程”中的“快速入门”基于Forms服务器操作系统。 但是，如果您使用的是其他操作系统（如UNIX），请将特定于Windows的路径替换为适用操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>位于“使用AEM Forms进行编程”中的“快速入门”基于Forms服务器操作系统。 但是，如果您使用的是其他操作系统（如UNIX），请将特定于Windows的路径替换为适用操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}分配任务
+## 快速入门（SOAP模式）：使用Java API分配任务 {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
 以下Java代码示例为名为Tony Blue的用户分配任务。
 
@@ -179,7 +183,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}锁定任务
+## 快速入门（SOAP模式）：使用Java API锁定任务 {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
 以下Java代码示例锁定与任务标识符值2对应的任务。
 
@@ -268,9 +272,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}检索分配给用户的任务
+## 快速入门（SOAP模式）：使用Java API检索分配给用户的任务 {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-以下Java代码示例检索分配给名为&#x200B;*tony blue*&#x200B;的用户的所有任务。 请注意，此用户是在连接属性中指定的。 将显示有关返回任务的信息，如其标识符值和描述。
+以下Java代码示例可检索分配给名为的用户的所有任务 *托尼蓝*. 请注意，此用户是在连接属性中指定的。 将显示有关返回任务的信息，如其标识符值和描述。
 
 ```as3
  /* 
@@ -394,9 +398,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  }
 ```
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}从任务中检索表单数据
+## 快速入门（SOAP模式）：使用Java API从任务检索表单数据 {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
-以下Java代码示例从标识符值为304的任务中检索表单数据。 表单数据将写入名为&#x200B;*FormData.xml*&#x200B;的XML文件，该文件位于C:\Adobe。
+以下Java代码示例从标识符值为304的任务中检索表单数据。 表单数据将写入名为的XML文件 *FormData.xml* 位于C:\Adobe。
 
 ```as3
  /* 
@@ -500,9 +504,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}修改表单数据
+## 快速入门（SOAP模式）：使用Java API修改表单数据 {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-以下Java代码示例使用位于&#x200B;*FormData.xml*&#x200B;文件中的数据更新表单。
+以下Java代码示例使用位于 *FormData.xml* 文件。
 
 ```as3
  /* 
@@ -610,7 +614,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}从任务中检索文件附件
+## 快速入门（SOAP模式）：使用Java API从任务中检索文件附件 {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
 
 以下Java代码示例可检索文件附件。 每个文件附件都另存为TXT文件。
 
@@ -714,9 +718,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}检索任务信息
+## 快速入门（SOAP模式）：使用Java API检索任务信息 {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-以下Java代码示例检索基于名为&#x200B;*MortgageLoan - Prebuilt*&#x200B;的进程的所有任务。 检查每个返回任务的状态，以确保该任务已完成。 系统会检索并显示完成任务的用户名称和完成任务的日期等信息。
+以下Java代码示例可检索基于名为的进程的所有任务 *抵押贷款 — 预建*. 检查每个返回任务的状态，以确保该任务已完成。 系统会检索并显示完成任务的用户名称和完成任务的日期等信息。
 
 ```as3
  /* 

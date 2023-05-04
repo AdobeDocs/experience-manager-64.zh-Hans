@@ -1,8 +1,8 @@
 ---
 title: 工作流步骤参考
-seo-title: 工作流步骤参考
+seo-title: Workflow Step Reference
 description: 工作流步骤参考
-seo-description: 'null'
+seo-description: null
 uuid: 72a64495-d1b1-49e7-8257-d6b2ed36961c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 exl-id: dfa39c6c-7a1a-4aa4-a72d-caa5e3ebf4a8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2833'
-ht-degree: 2%
+source-wordcount: '2865'
+ht-degree: 3%
 
 ---
 
 # 工作流步骤参考{#workflow-step-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 工作流模型由各种类型的一系列步骤组成。 根据类型，可以使用参数和脚本配置和扩展这些步骤，以提供所需的功能和控制。
 
@@ -28,17 +32,17 @@ ht-degree: 2%
 >有关模块的特定步骤，另请参阅：
 >
 >* [AEM Forms工作流步骤参考](/help/forms/using/aem-forms-workflow-step-reference.md)
-* [使用媒体处理程序和工作流处理资产](/help/assets/media-handlers.md)
-
+>* [使用媒体处理程序和工作流处理资产](/help/assets/media-handlers.md)
+>
 
 
 ## 步骤属性 {#step-properties}
 
-每个步骤组件都有一个&#x200B;**[!UICONTROL 步骤属性]**&#x200B;对话框，通过该对话框可定义和编辑所需的属性。
+每个步骤组件都有 **[!UICONTROL 步骤属性]** 对话框，可定义和编辑所需的属性。
 
-### 步骤属性 — “常用”选项卡{#step-properties-common-tab}
+### 步骤属性 — “常用”选项卡 {#step-properties-common-tab}
 
-在“属性”对话框的&#x200B;**[!UICONTROL Common]**&#x200B;选项卡上，以下属性组合可用于大多数工作流步骤组件：
+以下属性的组合适用于 **[!UICONTROL 常用]** 选项卡：
 
 * **[!UICONTROL 标题]**
 
@@ -50,13 +54,13 @@ ht-degree: 2%
 
 * **[!UICONTROL 工作流暂存]**
 
-   一个下拉选择器，用于将[Stage](/help/sites-developing/workflows.md#workflow-stages)应用到该步骤。
+   要应用 [阶段](/help/sites-developing/workflows.md#workflow-stages) 中。
 
 * **[!UICONTROL 超时]**
 
    此步骤在其后将“超时”的时段。
 
-   您可以在以下两种方式中进行选择：**[!UICONTROL Off]**、**[!UICONTROL Immediate]**、**[!UICONTROL 1h]**、**[!UICONTROL 6h]**、**[!UICONTROL 12h]**、**[!UICONTROL 24h]**。
+   您可以在以下两种方式中进行选择： **[!UICONTROL 关闭]**, **[!UICONTROL 立即]**, **[!UICONTROL 1小时]**, **[!UICONTROL 6小时]**, **[!UICONTROL 12小时]**, **[!UICONTROL 24小时]**.
 
 * **[!UICONTROL 超时处理程序]**
 
@@ -68,31 +72,31 @@ ht-degree: 2%
 
    选择此选项可在执行后自动将工作流推进到下一步。 如果未选择，则实施脚本必须处理工作流进度。
 
-#### 步骤属性 — “用户/组”选项卡{#step-properties-user-group-tab}
+#### 步骤属性 — “用户/组”选项卡 {#step-properties-user-group-tab}
 
-属性对话框的&#x200B;**[!UICONTROL 用户/组]**&#x200B;选项卡上的以下属性可用于许多工作流步骤组件：
+以下属性适用于 **[!UICONTROL 用户/组]** 选项卡：
 
 * **[!UICONTROL 通过电子邮件通知用户]**
 
    * 当工作流到达步骤时，您可以通过向参与者发送电子邮件来通知他们。
-   * 如果启用，则会向属性&#x200B;**[!UICONTROL User/Group]**&#x200B;定义的用户发送电子邮件；如果定义了组，则会向组的每个成员发送电子邮件。
+   * 如果启用，则会向属性定义的用户发送电子邮件 **[!UICONTROL 用户/组]** 或，如果定义了组，则发送给组的每个成员。
 
 * **[!UICONTROL 用户/组]**
 
    * 利用下拉选择框，可导航和选择用户或组。
    * 如果您将步骤分配给特定用户，则只有该用户才能对该步骤执行操作。
-   * 如果您将该步骤分配给整个组，则当工作流到达此步骤时，此组中的所有用户将在其&#x200B;**[!UICONTROL 工作流收件箱]**&#x200B;中执行操作。
-   * 有关更多信息，请参阅[参与工作流](/help/sites-authoring/workflows-participating.md) 。
+   * 如果您将步骤分配给整个组，则当工作流到达此步骤时，此组中的所有用户都将在其 **[!UICONTROL 工作流收件箱]**.
+   * 请参阅 [参与工作流](/help/sites-authoring/workflows-participating.md) 以了解更多信息。
 
 ## AND 拆分 {#and-split}
 
-**[!UICONTROL AND Split]**&#x200B;在工作流中创建拆分，在该拆分之后，两个分支将处于活动状态。 您可以根据需要向每个分支添加工作流步骤。 此步骤允许您在工作流中引入多个处理路径。 例如，您可以允许并行执行某些审核步骤，从而节省时间。
+的 **[!UICONTROL 和拆分]** 在工作流中创建一个拆分，在该拆分之后，两个分支将处于活动状态。 您可以根据需要向每个分支添加工作流步骤。 此步骤允许您在工作流中引入多个处理路径。 例如，您可以允许并行执行某些审核步骤，从而节省时间。
 
 ![wf-26](assets/wf-26.png)
 
-### AND拆分 — 配置{#and-split-configuration}
+### 和拆分 — 配置 {#and-split-configuration}
 
-* 编辑&#x200B;**[!UICONTROL AND Split]**&#x200B;属性：
+* 编辑 **[!UICONTROL 和拆分]** 属性：
 
    * **[!UICONTROL 拆分名称]**:为说明性目的指定名称。
    * 选择所需的分支数量；2、3、4或5。
@@ -103,13 +107,13 @@ ht-degree: 2%
 
 ## 容器步骤 {#container-step}
 
-**[!UICONTROL 容器]**&#x200B;步骤将启动作为子工作流运行的另一个工作流模型。
+A **[!UICONTROL 容器]** 步骤将启动作为子工作流运行的另一个工作流模型。
 
-此&#x200B;**[!UICONTROL 容器]**&#x200B;允许您重复使用工作流模型以实施常见的步骤序列。 例如，翻译工作流模型可用于多个编辑工作流。
+此 **[!UICONTROL 容器]** 允许您重复使用工作流模型来实施常见的步骤序列。 例如，翻译工作流模型可用于多个编辑工作流。
 
 ![wf-28](assets/wf-28.png)
 
-### 容器步骤 — 配置{#container-step-configuration}
+### 容器步骤 — 配置 {#container-step-configuration}
 
 要配置该步骤，请编辑并使用以下选项卡：
 
@@ -120,36 +124,37 @@ ht-degree: 2%
 
 ## 跳转步骤 {#goto-step}
 
-通过&#x200B;**[!UICONTROL 跳转步骤]**，您可以根据ECMAScript的结果，指定要执行的工作流模型中的下一步：
+的 **[!UICONTROL 跳转步骤]** 允许您根据ECMAScript的结果，指定要执行的工作流模型中的下一步：
 
-* `true`:转到 **[!UICONTROL 步骤]** 完成，工作流引擎执行指定的步骤。
+* `true`:的 **[!UICONTROL 跳转步骤]** 完成并工作流引擎执行指定的步骤。
 
-* `false`:“转 **[!UICONTROL 到]** 步骤”和常规路由逻辑确定要执行的下一步。
+* `false`:的 **[!UICONTROL 跳转步骤]** 完成，普通路由逻辑确定要执行的下一步。
 
-**[!UICONTROL 转到步骤]**&#x200B;允许您在工作流模型中实施高级路由结构。 例如，要实现循环，可以定义&#x200B;**[!UICONTROL 跳转步骤]**&#x200B;以执行工作流中的前一步骤，脚本将评估循环条件。
+的 **[!UICONTROL 跳转步骤]** 允许您在工作流模型中实施高级路由结构。 例如，要实施循环，请 **[!UICONTROL 跳转步骤]** 可定义为在工作流中执行前一步，脚本将评估循环条件。
 
-### 转到步骤 — 配置{#goto-step-configuration}
+### 转到步骤 — 配置 {#goto-step-configuration}
 
 要配置该步骤，请编辑并使用以下选项卡：
 
 * [**[!UICONTROL 通用]**](#step-properties-common-tab)
 * **[!UICONTROL 进程]**
 
-   * **[!UICONTROL 要转到]**&#x200B;的步骤：选择要执行的步骤。
-   * **[!UICONTROL 脚本路径]**:确定是否执行跳转步骤的ECMAScript **[!UICONTROL 路径]**。
-   * **[!UICONTROL 脚本]**:用于确定是否执行跳转步 **[!UICONTROL 骤的ECMAScript]**。
+   * **[!UICONTROL 要转到的步骤]**:选择要执行的步骤。
+   * **[!UICONTROL 脚本路径]**:用于确定是否执行 **[!UICONTROL 跳转步骤]**.
+   * **[!UICONTROL 脚本]**:用于确定是否执行 **[!UICONTROL 跳转步骤]**.
 
 >[!CAUTION]
-指定&#x200B;**[!UICONTROL 脚本路径]**&#x200B;或&#x200B;**[!UICONTROL 脚本]**。 两个选项不能同时使用。 如果为这两个属性指定值，则该步骤将使用&#x200B;**[!UICONTROL 脚本路径]**。
+>
+>指定 **[!UICONTROL 脚本路径]** 或 **[!UICONTROL 脚本]**. 两个选项不能同时使用。 如果为这两个属性指定值，则该步骤将使用 **[!UICONTROL 脚本路径]**.
 
-#### 模拟环{#simulating-a-for-loop}的
+#### 模拟用于循环的 {#simulating-a-for-loop}
 
 模拟for循环要求您保持已发生循环迭代次数的计数：
 
 * 计数通常表示在工作流中执行操作的项目的索引。
 * 计数将作为循环的退出条件进行评估。
 
-例如，要实施对多个JCR节点执行操作的工作流，可以使用循环计数器作为节点的索引。 要保留计数，请在工作流实例的数据映射中存储`integer`值。 使用&#x200B;**[!UICONTROL 转到步骤]**&#x200B;的脚本递增计数并将计数与退出条件进行比较。
+例如，要实施对多个JCR节点执行操作的工作流，可以使用循环计数器作为节点的索引。 要保留计数，请存储 `integer` 值。 使用 **[!UICONTROL 跳转步骤]** 递增计数并将计数与退出条件进行比较。
 
 ```
 function check(){
@@ -177,16 +182,17 @@ function check(){
 
 ## OR 拆分 {#or-split}
 
-**[!UICONTROL OR Split]**&#x200B;在工作流中创建拆分，在该拆分之后，只有一个分支处于活动状态。 通过此步骤，您可以在工作流中引入条件处理路径。 您可以根据需要向每个分支添加工作流步骤。
+的 **[!UICONTROL 或拆分]** 在工作流中创建一个拆分，在该拆分之后，只有一个分支将处于活动状态。 通过此步骤，您可以在工作流中引入条件处理路径。 您可以根据需要向每个分支添加工作流步骤。
 
 >[!NOTE]
-有关创建OR拆分的其他信息，请参阅：[https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
+>
+>有关创建OR拆分的其他信息，请参阅： [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
 
 ![wf-29](assets/wf-29.png)
 
-### OR拆分 — 配置{#or-split-configuration}
+### OR拆分 — 配置 {#or-split-configuration}
 
-* 编辑&#x200B;**[!UICONTROL OR Split]**&#x200B;属性：
+* 编辑 **[!UICONTROL 或拆分]** 属性：
 
    * **[!UICONTROL 通用]**
 
@@ -195,33 +201,37 @@ function check(){
 
       * **[!UICONTROL 脚本路径]**:包含脚本的文件的路径。
       * **[!UICONTROL 脚本]**:在框中添加脚本。
-      * **[!UICONTROL 默认路由]**:当多个分支的计算结果为true时，将遵循默认分支。您只能指定一个分支作为默认分支。
+      * **[!UICONTROL 默认路由]**:当多个分支的计算结果为true时，将遵循默认分支。 您只能指定一个分支作为默认分支。
 
    >[!NOTE]
-   每个分支都有一个单独的选项卡：
-   * 每个分支的脚本每次计算一个。
-   * 从左到右评估分支。
-   * 将执行计算为true的第一个脚本。
-   * 如果没有分支的计算结果为true，则工作流不会前进。
+   >
+   >每个分支都有一个单独的选项卡：
+   >
+   >* 每个分支的脚本每次计算一个。
+   >* 从左到右评估分支。
+   >* 将执行计算为true的第一个脚本。
+   >* 如果没有分支的计算结果为true，则工作流不会前进。
 
 
    >[!CAUTION]
-   指定&#x200B;**[!UICONTROL 脚本路径]**&#x200B;或&#x200B;**[!UICONTROL 脚本]**。 两个选项不能同时使用。 如果为这两个属性指定值，则该步骤将使用&#x200B;**[!UICONTROL 脚本路径]**。
+   >
+   >指定 **[!UICONTROL 脚本路径]** 或 **[!UICONTROL 脚本]**. 两个选项不能同时使用。 如果为这两个属性指定值，则该步骤将使用 **[!UICONTROL 脚本路径]**.
 
    >[!NOTE]
-   请参阅[为OR Split定义规则](/help/sites-developing/workflows-models.md#example-defining-a-rule-for-an-or-split)。
+   >
+   >请参阅 [为OR拆分定义规则](/help/sites-developing/workflows-models.md#example-defining-a-rule-for-an-or-split).
 
 * 根据需要将工作流步骤添加到分支。
 
-## 参与者步骤和选择者{#participant-steps-and-choosers}
+## 参与者步骤和选择者 {#participant-steps-and-choosers}
 
 ### 参与者步骤 {#participant-step}
 
-**[!UICONTROL 参与者步骤]**&#x200B;允许您为特定操作分配所有权。 仅当用户手动确认该步骤时，工作流才会继续。 当您希望某人对工作流执行操作时，会使用此插件；例如，审核步骤。
+A **[!UICONTROL 参与者步骤]** 允许您为特定操作分配所有权。 仅当用户手动确认该步骤时，工作流才会继续。 当您希望某人对工作流执行操作时，会使用此插件；例如，审核步骤。
 
 虽然与用户授权不直接相关，但在分配操作时必须考虑用户授权；用户必须有权访问工作流有效负载页面。
 
-#### 参与者步骤 — 配置{#participant-step-configuration}
+#### 参与者步骤 — 配置 {#participant-step-configuration}
 
 要配置该步骤，请编辑并使用以下选项卡：
 
@@ -229,24 +239,27 @@ function check(){
 * [**[!UICONTROL 用户/组]**](#step-properties-user-group-tab)
 
 >[!NOTE]
-在以下情况下，始终会通知工作流启动器：
-* 工作流已完成（已完成）。
-* 工作流已中止（终止）。
-
+>
+>在以下情况下，始终会通知工作流启动器：
+>
+>* 工作流已完成（已完成）。
+>* 工作流已中止（终止）。
+>
 
 
 >[!NOTE]
-需要配置某些属性才能启用电子邮件通知。 您还可以自定义电子邮件模板或为新语言添加电子邮件模板。 请参阅[配置电子邮件通知](/help/sites-administering/notification.md)以在AEM中配置电子邮件通知。
+>
+>需要配置某些属性才能启用电子邮件通知。 您还可以自定义电子邮件模板或为新语言添加电子邮件模板。 请参阅 [配置电子邮件通知](/help/sites-administering/notification.md) 用于在AEM中配置电子邮件通知。
 
 ### 对话框参与者步骤 {#dialog-participant-step}
 
-使用&#x200B;**[!UICONTROL 对话框参与者步骤]**&#x200B;从分配了工作项的用户那里收集信息。 此步骤对于收集稍后在工作流中使用的少量数据非常有用。
+使用 **[!UICONTROL 对话框参与者步骤]** 从分配了工作项的用户那里收集信息。 此步骤对于收集稍后在工作流中使用的少量数据非常有用。
 
-完成该步骤后，**[!UICONTROL 完成工作项]**&#x200B;对话框包含您在对话框中定义的字段。 在字段中收集的数据将存储在工作流有效负载的节点中。 随后，后续工作流步骤可以从存储库中读取值。
+完成该步骤后， **[!UICONTROL 完成工作项]** 对话框包含您在对话框中定义的字段。 在字段中收集的数据将存储在工作流有效负载的节点中。 随后，后续工作流步骤可以从存储库中读取值。
 
 要配置该步骤，请指定要将工作项分配到的组或用户，以及对话框的路径。
 
-#### 对话框参与者步骤 — 配置{#dialog-participant-step-configuration}
+#### 对话框参与者步骤 — 配置 {#dialog-participant-step-configuration}
 
 要配置该步骤，请编辑并使用以下选项卡：
 
@@ -254,18 +267,18 @@ function check(){
 * [**[!UICONTROL 用户/组]**](#step-properties-user-group-tab)
 * **[!UICONTROL 对话框]**
 
-   * **[!UICONTROL 对话框路径**]:您创建的[对话框的](#dialog-participant-step-creating-a-dialog)对话框节点的路径。
+   * **[!UICONTROL 对话框路径**]:的对话框节点的路径 [对话框创建](#dialog-participant-step-creating-a-dialog).
 
 #### 对话框参与者步骤 — 创建对话框{#dialog-participant-step-creating-a-dialog}
 
 要创建对话框，请执行以下操作：
 
-* 确定结果数据将存储在有效负载](#dialog-participant-step-storing-data-in-the-payload)中的[位置。
-* [定义对话框；这包括定义用于收集（和保存）数据的字段](#dialog-participant-step-dialog-definition)。
+* 确定结果数据的位置 [存储在有效负载中](#dialog-participant-step-storing-data-in-the-payload).
+* [定义对话框；这包括定义用于收集（和保存）数据的字段](#dialog-participant-step-dialog-definition).
 
-#### 对话框参与者步骤 — 在负载{#dialog-participant-step-storing-data-in-the-payload}中存储数据
+#### 对话框参与者步骤 — 在有效负载中存储数据 {#dialog-participant-step-storing-data-in-the-payload}
 
-您可以在工作流有效负荷或工作项元数据中存储小组件数据。 小组件节点的`name`属性的格式决定了数据存储的位置。
+您可以在工作流有效负荷或工作项元数据中存储小组件数据。 的格式 `name` 小组件节点的属性决定数据存储的位置。
 
 * **[!UICONTROL 使用有效负载存储数据]**
 
@@ -273,7 +286,7 @@ function check(){
 
       `./jcr:content/nodename`
 
-   * 数据存储在有效负载节点的`nodename`属性中。 如果节点不包含该属性，则会创建该属性。
+   * 数据存储在 `nodename` 有效负载节点的属性。 如果节点不包含该属性，则会创建该属性。
    * 当与有效负载一起存储时，具有相同有效负载的对话框的后续使用将覆盖属性的值。
 
 * **[!UICONTROL 将数据与工作项一起存储]**
@@ -282,9 +295,9 @@ function check(){
 
       `nodename`
 
-   * 数据存储在工作项`metadata`的`nodename`属性中。 如果随后使用了相同有效负载的对话框，则保留数据。
+   * 数据存储在 `nodename` 工作项的属性 `metadata`. 如果随后使用了相同有效负载的对话框，则保留数据。
 
-#### 对话框参与者步骤 — 对话框定义{#dialog-participant-step-dialog-definition}
+#### 对话框参与者步骤 — 对话框定义 {#dialog-participant-step-dialog-definition}
 
 1. **[!UICONTROL 对话框结构]**
 
@@ -308,17 +321,18 @@ function check(){
    ```
 
    >[!NOTE]
-   有关详细信息，请参阅[创建和配置对话框](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)。
+   >
+   >有关详细信息，请参阅 [创建和配置对话框](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
 
 1. **[!UICONTROL 对话框路径属性]**
 
-   **[!UICONTROL 对话参与者步骤]**&#x200B;具有&#x200B;**[!UICONTROL 对话路径]**&#x200B;属性（以及[参与者步骤](#participant-step)的属性）。 **[!UICONTROL Dialog Path]**&#x200B;属性的值是对话框`dialog`节点的路径。
+   的 **[!UICONTROL 对话框参与者步骤]** 具有 **[!UICONTROL 对话框路径]** 资产(与 [参与者步骤](#participant-step))。 的值 **[!UICONTROL 对话框路径]** 属性是 `dialog` 的子代码。
 
-   例如，该对话框包含在节点中存储的名为`EmailWatch`的组件中：
+   例如，对话框包含在名为 `EmailWatch` 节点中存储的值：
 
    `/apps/myapp/workflows/dialogs`
 
-   对于触屏UI， **[!UICONTROL Dialog Path]**&#x200B;属性使用以下值：
+   对于触屏UI，会将以下值用于 **[!UICONTROL 对话框路径]** 属性：
 
    `/apps/myapp/workflow/dialogs/EmailWatch/cq:dialog`
 
@@ -326,7 +340,7 @@ function check(){
 
 1. **示例对话框定义**
 
-   以下XML代码段表示一个对话框，该对话框将`String`值存储在有效负载内容的`watchEmail`节点中。 标题节点表示[TextField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html)组件：
+   以下XML代码段表示用于存储 `String` 值 `watchEmail` 有效负载内容的节点。 标题节点表示 [文本字段](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) 组件：
 
    ```xml
    jcr:primaryType="nt:unstructured" 
@@ -360,42 +374,45 @@ function check(){
 
 ### 动态参与者步骤 {#dynamic-participant-step}
 
-**[!UICONTROL 动态参与者步骤]**&#x200B;组件与&#x200B;**[!UICONTROL 参与者步骤]**&#x200B;类似，其差异在运行时自动选择参与者。
+的 **[!UICONTROL 动态参与者步骤]** 组件类似于 **[!UICONTROL 参与者步骤]** 在运行时自动选择参与者时的差异。
 
-要配置该步骤，请选择&#x200B;**[!UICONTROL 参与者选择器]**，该选择器标识要将工作项分配到的参与者，并选择一个对话框。
+要配置该步骤，请选择 **[!UICONTROL 参与者选择器]** 用于标识要将工作项分配到的参与者，以及对话框。
 
-#### 动态参与者步骤 — 配置{#dynamic-participant-step-configuration}
+#### 动态参与者步骤 — 配置 {#dynamic-participant-step-configuration}
 
 要配置该步骤，请编辑并使用以下选项卡：
 
 * [**[!UICONTROL 通用]**](#step-properties-common-tab)
 * **[!UICONTROL 参与者选择器]**
 
-   * **[!UICONTROL 参与者选择器]**:您创建的参 [与者选择器的名称](#dynamic-participant-step-developing-the-participant-chooser)。
+   * **[!UICONTROL 参与者选择器]**:的名称 [您创建的参与者选择器](#dynamic-participant-step-developing-the-participant-chooser).
    * **[!UICONTROL 参数]**:任何必需的参数。
    * **[!UICONTROL 电子邮件]**:是否应向用户发送电子邮件通知。
 
 * **[!UICONTROL 对话框]**
 
-   * **[!UICONTROL 对话框路径]**:您创建的对话框对话框节 [点的路径(与对话框参 **与者步骤**&#x200B;一样)](#dialog-participant-step-creating-a-dialog)。
+   * **[!UICONTROL 对话框路径]**:的对话框节点的路径 [对话框(与 **对话框参与者步骤**)](#dialog-participant-step-creating-a-dialog).
 
-#### 动态参与者步骤 — 开发参与者选择器{#dynamic-participant-step-developing-the-participant-chooser}
+#### 动态参与者步骤 — 开发参与者选择器 {#dynamic-participant-step-developing-the-participant-chooser}
 
-创建参与者选择器。 因此，您可以使用任何选择逻辑或条件。 例如，您的参与者选择者可以选择工作项目最少的用户（在组内）。 您可以创建任意数量的参与者选择器，以便与工作流模型中&#x200B;**动态参与者步骤**&#x200B;组件的不同实例一起使用。
+创建参与者选择器。 因此，您可以使用任何选择逻辑或条件。 例如，您的参与者选择者可以选择工作项目最少的用户（在组内）。 您可以创建任意数量的参与者选择器，以用于 **动态参与者步骤** 组件。
 
 创建OSGi服务或ECMAScript，以选择用户将工作项分配到的。
 
 * **[!UICONTROL ECMAscript]**
 
-   脚本必须包含名为getParticiant的函数，该函数将用户ID返回为`String`值。 将自定义脚本存储在中，例如`/apps/myapp/workflow/scripts`文件夹或子文件夹中。
+   脚本必须包含名为getParticiant的函数，该函数将用户ID作为 `String` 值。 将自定义脚本存储在 `/apps/myapp/workflow/scripts` 文件夹或子文件夹。
 
    标准AEM实例中包含一个示例脚本：
 
    `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
    >[!CAUTION]
-   *必须*&#x200B;不更改`/libs`路径中的任何内容。
-   这是因为下次升级实例时，`/libs`的内容会被覆盖（应用修补程序或功能包时，可能会被覆盖）。
+   >
+   >您 *必须* 不会更改 `/libs` 路径。
+   >
+   >
+   >这是因为 `/libs` 在下次升级实例时被覆盖（在应用修补程序或功能包时可能会被覆盖）。
 
    此脚本将选择工作流启动器作为参与者：
 
@@ -406,29 +423,34 @@ function check(){
    ```
 
    >[!NOTE]
-   **[!UICONTROL 工作流启动器参与者选择器]**&#x200B;组件扩展&#x200B;**[!UICONTROL 动态参与者步骤]**&#x200B;并使用此脚本作为步骤实施。
+   >
+   >的 **[!UICONTROL 工作流启动器参与者选择器]** 组件 **[!UICONTROL 动态参与者步骤]** 并使用此脚本作为步骤实施。
 
 * **[!UICONTROL OSGi服务]**
 
-   服务必须实施[com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html)接口。 界面定义以下成员：
+   服务必须实施 [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) 界面。 界面定义以下成员：
 
-   * `SERVICE_PROPERTY_LABEL` 字段：使用此字段可指定参与者选择器的名称。该名称显示在&#x200B;**[!UICONTROL 动态参与者步骤]**&#x200B;属性的可用参与者选择器列表中。
+   * `SERVICE_PROPERTY_LABEL` 字段：使用此字段可指定参与者选择器的名称。 该名称显示在 **[!UICONTROL 动态参与者步骤]** 属性。
    * `getParticipant` 方法：将动态解析的主体ID返回为 `String` 值。
 
    >[!CAUTION]
-   `getParticipant`方法返回动态解析的主体ID。 可以是组ID或用户ID。
-   但是，当返回参与者列表时，组ID只能用于&#x200B;**[!UICONTROL 参与者步骤]**。 对于&#x200B;**[!UICONTROL 动态参与者步骤]**，将返回空列表，该列表不能用于委派。
+   >
+   >的 `getParticipant` 方法返回动态解析的主体id。 可以是组ID或用户ID。
+   >
+   >
+   >但是，组ID只能用于 **[!UICONTROL 参与者步骤]**，返回参与者列表时。 对于 **[!UICONTROL 动态参与者步骤]** 返回空列表，该列表不能用于委派。
 
-   要使您的实施对&#x200B;**[!UICONTROL 动态参与者步骤]**&#x200B;组件可用，请将您的Java类添加到导出服务的OSGi包中，然后将该包部署到AEM服务器。
+   使实施可用于 **[!UICONTROL 动态参与者步骤]** 组件，将您的Java类添加到导出服务的OSGi包中，然后将该包部署到AEM服务器。
 
    >[!NOTE]
-   **[!UICONTROL 随机参与]** 者选择是一种可选择随机用户( `com.day.cq.workflow.impl.process.RandomParticipantChooser`)的示例服务。**[!UICONTROL 随机参与者选择器]**&#x200B;步骤组件示例扩展了&#x200B;**[!UICONTROL 动态参与者步骤]**，并将此服务用作步骤实施。
+   >
+   >**[!UICONTROL 随机参与者选择器]** 是选择随机用户( `com.day.cq.workflow.impl.process.RandomParticipantChooser`)。 的 **[!UICONTROL 随机参与者选择器]** 步骤组件示例扩展 **[!UICONTROL 动态参与者步骤]** 并使用此服务作为步骤实施。
 
-#### 动态参与者步骤 — 参与者选择器服务示例{#dynamic-participant-step-example-participant-chooser-service}
+#### 动态参与者步骤 — 参与者选择器服务示例 {#dynamic-participant-step-example-participant-chooser-service}
 
-以下Java类实现`ParticipantStepChooser`接口。 类返回启动工作流的参与者的名称。 该代码使用的逻辑与示例脚本(`initator-participant-chooser.ecma`)使用的逻辑相同。
+以下Java类实现 `ParticipantStepChooser` 界面。 类返回启动工作流的参与者的名称。 该代码使用与示例脚本( `initator-participant-chooser.ecma`)。
 
-`@Property`注释将`SERVICE_PROPERTY_LABEL`字段的值设置为`Workflow Initiator Participant Chooser`。
+的 `@Property` 注释设置 `SERVICE_PROPERTY_LABEL` 字段 `Workflow Initiator Participant Chooser`.
 
 ```java
 package com.adobe.example;
@@ -467,22 +489,23 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 }
 ```
 
-在&#x200B;**[!UICONTROL 动态参与者步骤]**&#x200B;属性对话框中，**[!UICONTROL 参与者选择器]**&#x200B;列表包含表示此服务的项目`Workflow Initiator Participant Chooser (script)`。
+在 **[!UICONTROL 动态参与者步骤]** 属性对话框， **[!UICONTROL 参与者选择器]** 列表包含项目 `Workflow Initiator Participant Chooser (script)`，表示此服务。
 
-“启动工作流模型时，日志会指示启动工作流的用户的ID以及为该工作项分配的用户。 在此示例中，`admin`用户启动了工作流。
+“启动工作流模型时，日志会指示启动工作流的用户的ID以及为该工作项分配的用户。 在本例中， `admin` 用户启动了工作流。
 
 `13.09.2015 15:48:53.037 *INFO* [10.176.129.223 [1347565733037] POST /etc/workflow/instances HTTP/1.1] com.adobe.example.InitiatorParticipantChooser Assigning Dynamic Participant Step work item to admin`
 
 ### 表单参与者步骤 {#form-participant-step}
 
-**[!UICONTROL 表单参与者步骤]**&#x200B;在打开工作项时显示表单。 当用户填写并提交表单时，字段数据将存储在工作流有效负载的节点中。
+的 **[!UICONTROL 表单参与者步骤]** 在打开工作项时显示表单。 当用户填写并提交表单时，字段数据将存储在工作流有效负载的节点中。
 
 要配置该步骤，请指定要将工作项分配到的组或用户，以及表单的路径。
 
 >[!CAUTION]
-本节介绍用于页面创作的基础组件](/help/sites-authoring/default-components-foundation.md#form)的[Forms部分。
+>
+>本节介绍 [用于页面创作的基础组件的Forms部分](/help/sites-authoring/default-components-foundation.md#form).
 
-#### 表单参与者步骤 — 配置{#form-participant-step-configuration}
+#### 表单参与者步骤 — 配置 {#form-participant-step-configuration}
 
 要配置该步骤，请编辑并使用以下选项卡：
 
@@ -490,76 +513,76 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [**[!UICONTROL 用户/组]**](#step-properties-user-group-tab)
 * **[!UICONTROL 表单]**
 
-   * **[!UICONTROL 表单路径]**:创建表单 [的路径](#form-participant-step-creating-the-form)。
+   * **[!UICONTROL 表单路径]**:路径 [创建的表单](#form-participant-step-creating-the-form).
 
-#### 表单参与者步骤 — 创建表单{#form-participant-step-creating-the-form}
+#### 表单参与者步骤 — 创建表单 {#form-participant-step-creating-the-form}
 
-创建表单以正常与&#x200B;**[!UICONTROL 表单参与者步骤]**&#x200B;一起使用。 但是，表单参与者步骤的表单必须具有以下配置：
+创建用于 **[!UICONTROL 表单参与者步骤]** 正常。 但是，表单参与者步骤的表单必须具有以下配置：
 
-* 表单&#x200B;]**组件的**[!UICONTROL &#x200B;开始必须将&#x200B;**[!UICONTROL Action Type]**&#x200B;属性设置为`Edit Workflow Controlled Resource(s)`。
+* 的 **[!UICONTROL 表单开始]** 组件必须具有 **[!UICONTROL 操作类型]** 属性设置为 `Edit Workflow Controlled Resource(s)`.
 
-* 表单&#x200B;]**组件的**[!UICONTROL &#x200B;开始必须具有`Form Identifier`属性的值。
+* 的 **[!UICONTROL 表单开始]** 组件必须具有 `Form Identifier` 属性。
 
-* 表单组件必须将&#x200B;**元素名称**&#x200B;属性设置为存储字段数据的节点的路径。 路径必须在工作流有效负载内容中找到节点。 值使用以下格式：
+* 表单组件必须具有 **元素名称** 属性设置为存储字段数据的节点的路径。 路径必须在工作流有效负载内容中找到节点。 值使用以下格式：
 
    `./jcr:content/path_to_node`
 
-* 表单必须包含&#x200B;**[!UICONTROL 工作流提交按钮]**&#x200B;组件。 您不会配置组件的任何属性。
+* 表单必须包含 **[!UICONTROL 工作流提交按钮]** 组件。 您不会配置组件的任何属性。
 
-工作流的要求决定了字段数据存储的位置。 例如，字段数据可用于配置页面内容的属性。 **[!UICONTROL 元素名称]**&#x200B;属性的以下值将字段数据存储为`jcr:content`节点`redirectTarget`属性的值：
+工作流的要求决定了字段数据存储的位置。 例如，字段数据可用于配置页面内容的属性。 的以下值 **[!UICONTROL 元素名称]** 属性将字段数据存储为 `redirectTarget` 属性 `jcr:content` 节点：
 
 `./jcr:content/redirectTarget`
 
-在以下示例中，字段数据用作有效负载页面上&#x200B;**[!UICONTROL Text]**&#x200B;组件的内容：
+在以下示例中，字段数据用作 **[!UICONTROL 文本]** 有效负载页面上的组件：
 
 `./jcr:content/par/text_3/text`
 
-&quot;第一个示例可用于`cq:Page`组件呈现的任何页面。 仅当有效负载页面包含ID为`text_3`的&#x200B;**Text**&#x200B;组件时，才能使用第二个示例。
+“第一个示例可用于 `cq:Page` 组件呈现。 仅当有效负载页面包含 **文本** ID为 `text_3`.
 
 表单可以位于存储库中的任意位置，但必须授权工作流用户读取表单。
 
 ### 随机参与者选择器 {#random-participant-chooser}
 
-**[!UICONTROL 随机参与者选择器]**&#x200B;步骤是一个参与者选择器，用于将生成的工作项分配给从列表中随机选择的用户。
+的 **[!UICONTROL 随机参与者选择器]** 步骤是参与者选择器，用于将生成的工作项分配给从列表中随机选择的用户。
 
 ![wf-31](assets/wf-31.png)
 
-#### 随机参与者选择器 — 配置{#random-participant-chooser-configuration}
+#### 随机参与者选择器 — 配置 {#random-participant-chooser-configuration}
 
 要配置该步骤，请编辑并使用以下选项卡：
 
 * [**[!UICONTROL 通用]**](#step-properties-common-tab)
 * **[!UICONTROL 参数]**
 
-   * **[!UICONTROL 参与者]**:指定可供选择的用户列表。要将用户添加到列表，请单击&#x200B;**[!UICONTROL 添加项目]**，然后键入用户节点的主路径或用户ID。 用户的顺序不会影响为工作项目分配的可能性。
+   * **[!UICONTROL 参与者]**:指定可供选择的用户列表。 要将用户添加到列表，请单击 **[!UICONTROL 添加项目]** 并键入用户节点或用户ID的主路径。 用户的顺序不会影响为工作项目分配的可能性。
 
 ### 工作流发起者参与人选择器 {#workflow-initiator-participant-chooser}
 
-**[!UICONTROL 工作流启动器参与者选择器]**&#x200B;步骤是一个参与者选择器，用于将生成的工作项分配给启动工作流的用户。 除&#x200B;**[!UICONTROL Common]**&#x200B;属性外，没有其他属性可用于配置。
+的 **[!UICONTROL 工作流启动器参与者选择器]** 步骤是一个参与者选择器，用于将生成的工作项分配给启动工作流的用户。 除 **[!UICONTROL 常用]** 属性。
 
-#### 工作流启动器参与者选择器 — 配置{#workflow-initiator-participant-chooser-configuration}
+#### 工作流启动器参与者选择器 — 配置 {#workflow-initiator-participant-chooser-configuration}
 
 要配置该步骤，请使用以下选项卡进行编辑：
 
 * [**[!UICONTROL 通用]**](#step-properties-common-tab)
 
-## 进程步骤 {#process-step}
+## 流程步骤 {#process-step}
 
-**[!UICONTROL 处理步骤]**&#x200B;运行ECMAScript或调用OSGi服务以执行自动处理。
+A **[!UICONTROL 流程步骤]** 运行ECMAScript或调用OSGi服务以执行自动处理。
 
 ![wf-32](assets/wf-32.png)
 
-### 流程步骤 — 配置{#process-step-configuration}
+### 流程步骤 — 配置 {#process-step-configuration}
 
 要配置该步骤，请编辑并使用以下选项卡：
 
 * [**[!UICONTROL 通用]**](#step-properties-common-tab)
 * **[!UICONTROL 进程]**
 
-   * **[!UICONTROL 流程]**:要执行的进程实施。使用下拉菜单选择ECMAScript或OSGi服务。 有关信息:
+   * **[!UICONTROL 进程]**:要执行的进程实施。 使用下拉菜单选择ECMAScript或OSGi服务。 有关信息:
 
-      * 有关标准的ECMAScript和OSGi服务，请参阅[流程步骤的内置流程](/help/sites-developing/workflows-process-ref.md)。
-      * 为&#x200B;**[!UICONTROL 进程]**&#x200B;步骤创建ECMAScript，请参阅[使用ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)实施进程步骤。
-      * 为&#x200B;**[!UICONTROL 进程]**&#x200B;步骤创建OSGi服务，请参阅[使用Java类](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)实施进程步骤。
-   * **[!UICONTROL 处理程序高级]**:选择此选项可在执行后自动将工作流推进到下一步。如果未选择，则实施脚本必须处理工作流进度。
+      * 标准ECMAScript和OSGi服务，请参阅 [用于流程步骤的内置流程](/help/sites-developing/workflows-process-ref.md).
+      * 创建ECMAScripts **[!UICONTROL 进程]** 步骤，请参阅 [使用ECMAScript实施流程步骤](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+      * 为 **[!UICONTROL 进程]** 步骤，请参阅 [使用Java类实施流程步骤](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+   * **[!UICONTROL 处理程序高级]**:选择此选项可在执行后自动将工作流推进到下一步。 如果未选择，则实施脚本必须处理工作流进度。
    * **[!UICONTROL 参数]**:要传递到进程的参数。

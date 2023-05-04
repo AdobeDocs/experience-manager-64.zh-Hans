@@ -1,8 +1,8 @@
 ---
 title: 社交图要点
-seo-title: 社交图要点
+seo-title: Social Graph Essentials
 description: 以下组件概述
-seo-description: 以下组件概述
+seo-description: follow component and following component overview
 uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,22 +10,26 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 exl-id: 55aa015e-e0e4-411e-8e28-75006ae3090b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '305'
 ht-degree: 3%
 
 ---
 
-# 社交图要点{#social-graph-essentials}
+# 社交图要点 {#social-graph-essentials}
 
-社区成员能够遵循[活动](essentials-activities.md)并遵循，这一能力通过两个部分建立：
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-`follow`组件必须与其他资源关联，并且此关联已针对[社区站点](overview.md#communitiessites)中的现有社区成员和功能建立。
+社区成员遵循的能力 [活动](essentials-activities.md) 并通过两个部分建立：
 
-`following`组件列出当前成员之后或当前成员后面的成员。 该社区网站的用户配置文件中包含成员之间的关系社交图。
+的 `follow`组件必须与其他资源关联，并且已为 [社区网站](overview.md#communitiessites).
 
-## 客户端{#essentials-for-client-side}的要点
+的 `following`组件列出当前成员之后或当前成员后面的成员。 该社区网站的用户配置文件中包含成员之间的关系社交图。
+
+## 客户端要点 {#essentials-for-client-side}
 
 ### 关注 {#following}
 
@@ -53,20 +57,20 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong> 属性</strong></td> 
-   <td>请参阅<a href="socialgraph.md">使用社交图</a></td> 
+   <td>请参阅 <a href="socialgraph.md">使用社交图</a></td> 
   </tr>
   <tr>
-   <td><strong> 可选<br />属性</strong></td> 
+   <td><strong> 可选<br /> 属性</strong></td> 
    <td>
     <ul> 
      <li>名称: <strong><code>outgoing</code></strong></li> 
-     <li>类型：布尔型</li> 
-     <li>值:<br /> 
+     <li>类型：布尔值</li> 
+     <li>价值:<br /> 
       <ul> 
-       <li><i>true - </i>组 <code>following</code> 件将列出当前已登录成员的成员 <code>follows</code></li> 
-       <li><i>false  </i> — 组 <code>following</code> 件将列出当前已登 <code>follow </code>录成员的成员</li> 
+       <li><i>true </i>- <code>following</code> 组件将列出当前已登录成员的成员 <code>follows</code></li> 
+       <li><i>false </i>- <code>following</code> 组件将列出 <code>follow </code>当前已登录的会员</li> 
       </ul> </li> 
-    </ul> <p>如果缺少属性，则默认为<i>true</i>。 当前，无法在创作模式下使用编辑对话框设置此属性。 必须使用<a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>将属性添加到<code>following </code>节点的实例中。</p> </td> 
+    </ul> <p>默认为 <i>true</i> 属性缺失时。 当前，无法在创作模式下使用编辑对话框设置此属性。 必须将资产添加到的实例 <code>following </code>节点使用 <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -81,7 +85,7 @@ ht-degree: 3%
 
 * [客户端自定义](client-customize.md)
 
-## 服务器端{#essentials-for-server-side}的要点
+## 服务器端要点 {#essentials-for-server-side}
 
 * [社交图API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 

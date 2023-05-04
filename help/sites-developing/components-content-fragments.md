@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 exl-id: 516c1561-5c13-4301-8009-9b021087cec7
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '968'
 ht-degree: 3%
 
 ---
 
 # 内容片段的组件{#components-for-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -32,7 +36,7 @@ ht-degree: 3%
 
 请参阅 [内容片段管理API — 客户端](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side).
 
-## 用于创作页面的组件 {#components-for-page-authoring}
+## 页面创作组件 {#components-for-page-authoring}
 
 >[!CAUTION]
 >
@@ -40,7 +44,7 @@ ht-degree: 3%
 >
 >本节详细介绍交付用于内容片段的原始组件(**内容片段** 在 **常规** 组)。
 
-Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创建和管理](/help/assets/content-fragments.md)。这允许您创建渠道中性内容，以及各种（特定于渠道的）变量。[然后，在创作内容页面时，您可以使用这些片段及其变体](/help/sites-authoring/content-fragments.md). 您还可以通过 [将其从资产浏览器拖到页面](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) （对于其他基于资产的组件，例如基础组件图像）。 现成的内容片段组件仅显示一个 [元素](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) 引用内容片段的URL。 使用组件对话框，您可以定义 [元素、变体和片段段落范围](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) 页面上显示的内容。
+Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创建和管理](/help/assets/content-fragments.md)。这允许您创建渠道中性内容，以及各种（特定于渠道的）变体。[然后，在创作内容页面时，您可以使用这些片段及其变体](/help/sites-authoring/content-fragments.md). 您还可以通过 [将其从资产浏览器拖到页面](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) （对于其他基于资产的组件，例如基础组件图像）。 现成的内容片段组件仅显示一个 [元素](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) 引用内容片段的URL。 使用组件对话框，您可以定义 [元素、变体和片段段落范围](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) 页面上显示的内容。
 
 >[!NOTE]
 >

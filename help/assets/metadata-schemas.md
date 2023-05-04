@@ -1,54 +1,58 @@
 ---
 title: 元数据架构
-description: '元数据架构定义属性页面的布局以及为资产显示的元数据属性。 了解如何创建自定义元数据架构、编辑元数据架构，以及如何将元数据架构应用到资产。  '
+description: 元数据架构定义属性页面的布局以及为资产显示的元数据属性。 了解如何创建自定义元数据架构、编辑元数据架构，以及如何将元数据架构应用到资产。
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 22%
+source-wordcount: '2560'
+ht-degree: 11%
 
 ---
 
 # 元数据架构 {#metadata-schemas}
 
-在[!DNL Experience Manager Assets]中，元数据架构定义属性页面的布局以及为使用特定架构的资产显示的元数据属性。 元数据属性包括标题、描述、MIME类型、标记等。 您可以使用元数据架构Forms编辑器来修改现有架构或添加自定义元数据架构。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+在 [!DNL Experience Manager Assets]，元数据架构定义属性页面的布局以及为使用特定架构的资产显示的元数据属性。 元数据属性包括标题、描述、MIME类型、标记等。 您可以使用元数据架构Forms编辑器来修改现有架构或添加自定义元数据架构。
 
 要查看和编辑资产的属性页面，请执行以下步骤：
 
-1. 单击或点按卡片视图中资产拼贴快速操作中的&#x200B;**[!UICONTROL 查看属性]** 。
+1. 单击或点按 **[!UICONTROL 查看属性]** 从“卡片”视图中对资产拼贴执行快速操作。
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-   或者，选择一个资产，然后单击或点按工具栏中的&#x200B;**[!UICONTROL 属性]**&#x200B;图标。
+   或者，选择一个资产，然后单击或点按 **[!UICONTROL 属性]** 图标。
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. 您可以在可用选项卡下编辑各种可编辑的元数据属性。 但是，您无法在属性页面的[!UICONTROL 基本]选项卡中修改资产[!UICONTROL 类型]。
+1. 您可以在可用选项卡下编辑各种可编辑的元数据属性。 但是，您无法修改资产 [!UICONTROL 类型] 在 [!UICONTROL 基本] 选项卡。
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   要修改资产的MIME类型，请使用自定义元数据架构表单或修改现有表单。 有关更多信息，请参阅[编辑元数据架构Forms](metadata-schemas.md#editing-metadata-schema-forms) 。 如果您修改特定MIME类型的元数据架构，则将修改当前MIME类型资产和所有资产子类型的资产的属性页面布局。 例如，修改`default/image`下的`jpeg`架构，只会修改MIME类型为`IMAGE/JPEG`的资产的元数据布局（资产属性）。 但是，如果您编辑默认架构，则所做的更改将修改所有类型资产的元数据布局。
+   要修改资产的MIME类型，请使用自定义元数据架构表单或修改现有表单。 请参阅 [编辑元数据架构Forms](metadata-schemas.md#editing-metadata-schema-forms) 以了解更多信息。 如果您修改特定MIME类型的元数据架构，则将修改当前MIME类型资产和所有资产子类型的资产的属性页面布局。 例如，修改 `jpeg` 模式 `default/image` 仅修改MIME类型资产的元数据布局（资产属性） `IMAGE/JPEG`. 但是，如果您编辑默认架构，则所做的更改将修改所有类型资产的元数据布局。
 
 ## 元数据架构表单 {#default-metadata-schema-forms}
 
-要查看表单/模板列表，请在[!DNL Experience Manager]界面中导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**。
+要查看表单/模板列表，请在 [!DNL Experience Manager] 界面导航到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**.
 
 [!DNL Experience Manager] 提供了以下元数据架构表单模板：
 
 | 模板 |  | 描述 |
 |---|---|---|
 | [!UICONTROL 默认] |  | 资产的基本元数据架构表单。 |
-|  | 以下子表单继承[!UICONTROL default]表单的属性： |  |
+|  | 以下子表单将继承 [!UICONTROL 默认] 表单： |  |
 |  | <ul><li> [!UICONTROL dm_video]</li></ul> | Dynamic Media视频的架构表单。 |
-|  | <ul><li> [!UICONTROL 图像]</li></ul> | 此架构表单用于MIME类型为“image”（例如image/jpeg、image/png等）的资产。 <br> 图像  表单具有以下子表单模板： <ul><li> [!UICONTROL jpeg]:子类型为jpeg [!UICONTROL 的资产的架构]表单。</li> <li>[!UICONTROL tiff]:子类型为tiff的资产的架构 [!UICONTROL 表单]。</li></ul> |
+|  | <ul><li> [!UICONTROL 图像]</li></ul> | 此架构表单用于MIME类型为“image”（例如image/jpeg、image/png等）的资产。 <br> 的 [!UICONTROL 图像] 表单具有以下子表单模板： <ul><li> [!UICONTROL jpeg]:子类型资产的架构表单 [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]:子类型资产的架构表单 [!UICONTROL tiff].</li></ul> |
 |  | <ul><li> [!UICONTROL 应用程序]</li></ul> | 此架构表单用于MIME类型为“application”的资产，例如application/pdf、application/ zip，等等。 <br>[!UICONTROL pdf]:子类型为pdf的资产的架构表单。 |
 |  | <ul><li>[!UICONTROL 视频]</li></ul> | 此架构表单用于MIME类型为“video”（例如video/avi、video/mp4等）的资产。 |
 | [!UICONTROL 收藏集] |  | 集合的架构表单。 |
 | [!UICONTROL contentfragment] |  | 内容片段的架构表单。 |
-| [!UICONTROL 表单] |  | 此架构表单与[Adobe Experience Manager Forms](/help/forms/home.md)相关。 |
+| [!UICONTROL 表单] |  | 此模式表单与 [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >
@@ -56,28 +60,28 @@ ht-degree: 22%
 
 ## 添加元数据架构表单 {#adding-a-metadata-schema-form}
 
-1. 要将自定义模板添加到列表，请单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
+1. 要向列表添加自定义模板，请单击 **[!UICONTROL 创建]** 中。
 
    >[!NOTE]
    >
    >未编辑的模板会在其前面显示一个锁图标。 如果自定义任何模板，则模板前的锁定图标会消失。
 
-1. 在对话框中，输入架构表单的标题，然后单击&#x200B;**[!UICONTROL 创建]**&#x200B;以完成表单创建过程。
+1. 在对话框中，输入架构表单的标题，然后单击 **[!UICONTROL 创建]** 完成表单创建过程。
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## 编辑元数据架构表单 {#editing-metadata-schema-forms}
 
-可以编辑新添加的或现有的元数据架构表单。元数据架构表单包含以下内容：
+您可以编辑新添加的或现有的元数据架构表单。 元数据架构表单包含以下内容：
 
 * 选项卡
-* 选项卡中的表单项目
+* 选项卡中的表单项目。
 
 您可以将这些表单项目映射/配置到CRX存储库元数据节点中的字段。
 
-可以向元数据架构表单中添加新的选项卡或表单项目。从父级派生的选项卡和表单项目处于锁定状态。 无法从子级别更改它们。
+您可以向元数据架构表单中添加新选项卡或表单项目。 从父级派生的选项卡和表单项目处于锁定状态。 不能在子级别更改它们。
 
-1. 在&#x200B;**[!UICONTROL 架构Forms]**&#x200B;页面中，选中表单前面的复选框，然后单击工具栏上的&#x200B;**[!UICONTROL 编辑]** 。
+1. 在 **[!UICONTROL 架构Forms]** 页面，选中表单前面的复选框，然后单击 **[!UICONTROL 编辑]** 中。
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -85,42 +89,42 @@ ht-degree: 22%
 
    ![chlimage_1-176](assets/chlimage_1-176.png)
 
-1. 要配置组件，请选择该组件并在&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡中修改其属性。
+1. 要配置组件，请选择该组件，然后在 **[!UICONTROL 设置]** 选项卡。
 
-### “构建表单”选项卡内的组件 {#components-within-the-build-form-tab}
+### “构建表单”选项卡中的组件 {#components-within-the-build-form-tab}
 
-**[!UICONTROL 构建表单]**&#x200B;选项卡列出了您在架构表单中使用的表单项目。 **[!UICONTROL 设置]**&#x200B;选项卡提供您在&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中选择的每个项目的属性。 下表列出了&#x200B;**[!UICONTROL 构建表单]**&#x200B;选项卡中可用的表单项目：
+的 **[!UICONTROL 构建表单]** 选项卡列出了您在架构表单中使用的表单项目。 的 **[!UICONTROL 设置]** 选项卡提供了您在 **[!UICONTROL 构建表单]** 选项卡。 下表列出了 **[!UICONTROL 构建表单]** 选项卡：
 
 | 组件名称 | 描述 |
 |---|---|
-| [!UICONTROL 章节标题] | 添加一系列常用组件的章节标题。 |
-| [!UICONTROL 单行文本] | 添加单行文本属性。它将作为字符串存储。 |
-| [!UICONTROL 多值文本] | 添加多值文本属性。它将作为字符串数组存储。 |
+| [!UICONTROL 章节标题] | 为常用组件列表添加区域标题。 |
+| [!UICONTROL 单行文本] | 添加单行文本属性。 它将存储为字符串。 |
+| [!UICONTROL 多值文本] | 添加多值文本属性。 它将存储为字符串数组。 |
 | [!UICONTROL 数字] | 添加数字组件。 |
 | [!UICONTROL 日期] | 添加日期组件。 |
 | [!UICONTROL 下拉列表] | 添加下拉列表。 |
-| [!UICONTROL 标准标记] | 添加标记。 |
+| [!UICONTROL 标准标记] | 添加标记. |
 | [!UICONTROL 智能标记] | 通过自动添加元数据标记来添加以增强搜索功能。 |
-| [!UICONTROL 隐藏字段] | 添加隐藏字段。在保存资产时，该字段将作为 POST 参数发送。 |
-| [!UICONTROL 资产引用对象] | 添加此组件可查看该资产所引用的其他资产的列表。 |
-| [!UICONTROL 资产引用] | 添加此组件可显示引用该资产的其他资产的列表。 |
-| [!UICONTROL 产品引用] | 添加此组件可显示与该资产关联的产品的列表。 |
+| [!UICONTROL 隐藏字段] | 添加隐藏字段。 在保存资产时，它将作为POST参数发送。 |
+| [!UICONTROL 资产引用对象] | 添加此组件可查看资产引用的资产列表。 |
+| [!UICONTROL 资产引用] | 添加，以显示引用该资产的资产列表。 |
+| [!UICONTROL 产品参考] | 添加以显示与资产链接的产品列表。 |
 | [!UICONTROL 资产评级] | 添加以显示资产评级选项。 |
 | [!UICONTROL 上下文元数据] | 添加可控制资产属性页面中其他元数据选项卡的显示。 |
 
 ### 编辑元数据组件 {#editing-the-metadata-component}
 
-要编辑表单上元数据组件的属性，请单击该组件，并在&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡中编辑以下所有属性或其子集。
+要编辑表单上元数据组件的属性，请单击该组件，然后在 **[!UICONTROL 设置]** 选项卡。
 
 **字段标签**:资产的属性页面上显示的元数据属性的名称。
 
-**映射到属性**:此属性指定资产节点在CRX存储库中保存的相对路径/名称。该路径以`./`开头，因为这表示路径位于资产的节点下。
+**映射到属性**:此属性指定资产节点在CRX存储库中保存的相对路径/名称。 开始于 `./` 因为这表示路径位于资产的节点下。
 
 以下是此属性的有效值：
 
 * `./jcr:content/metadata/dc:title`：将该值作为属性 `dc:title` 存储在资产的元数据节点中。
 
-* `./jcr:created`:在资产的节点上显示JCR属性。如果您在视图属性上配置这些属性，我们建议您将这些属性标记为“禁用编辑”，因为它们是受保护属性。否则，在保存资产属性时，错误[!UICONTROL 资产修改]结果失败。
+* `./jcr:created`:在资产的节点上显示JCR属性。 如果您在视图属性上配置这些属性，我们建议您将这些属性标记为“禁用编辑”，因为它们是受保护属性。否则，错误 [!UICONTROL 未能修改资产] 结果。
 
 要确保组件在元数据架构表单中正确显示，属性路径不应包含任何空格。
 
@@ -130,21 +134,21 @@ ht-degree: 22%
 
 **禁用编辑**:使用此属性可使元数据属性在属性页面上不可编辑。
 
-**在“只读”中显示空字段**:标记此属性可在属性页面上显示元数据属性，即使此属性没有值也是如此。默认情况下，当元数据属性没有值时，该属性不会列在属性页面上。
+**以只读方式显示空字段**:标记此属性可在属性页面上显示元数据属性，即使此属性没有值也是如此。 默认情况下，当元数据属性没有值时，该属性不会列在属性页面上。
 
 **按顺序显示列表**:使用此属性可显示有序的选项列表
 
-**选项**:使用此属性可指定列表中的选项
+**选择**:使用此属性可指定列表中的选项
 
-**描述**：使用此属性可添加对元数据组件的简短描述。
+**描述** :使用此属性可为元数据组件添加简短描述。
 
 **类**:属性与关联的对象类。
 
-**删除** 图标单击此图标可从架构表单中删除组件。
+**“删除”图标** 单击此图标可从架构表单中删除组件。
 
 >[!NOTE]
 >
->隐藏字段组件不包含这些属性。 相反，它包含属性，如属性名称、值、字段标签和描述。 无论何时保存资产，都会将“隐藏字段”组件的值作为 POST 参数进行发送。该组件的值不会作为资产的元数据进行保存。
+>隐藏字段组件不包含这些属性。 相反，它包含属性，如属性名称、值、字段标签和描述。 每当保存资产时，隐藏字段组件的值都会作为POST参数发送。 它不会另存为资产的元数据。
 
 如果选择&#x200B;**[!UICONTROL 必需]**&#x200B;选项，则可以搜索缺少必需元数据的资产。从&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中，展开&#x200B;**[!UICONTROL 元数据验证]**&#x200B;谓词，然后选择&#x200B;**[!UICONTROL 无效]**&#x200B;选项。搜索结果中显示的资产缺少您通过架构表单配置的必需元数据。
 
@@ -168,15 +172,15 @@ ht-degree: 22%
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
-单击`+`在架构表单上添加新选项卡。默认情况下，新选项卡的名称为`Unnamed-1`。您可以从&#x200B;**[!UICONTROL Settings]**&#x200B;选项卡中修改名称。 单击`X`以删除选项卡。
+单击 `+` 在架构表单上添加新选项卡。 默认情况下，新选项卡的名称为 `Unnamed-1`. 您可以从 **[!UICONTROL 设置]** 选项卡。 单击 `X` 删除选项卡。
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
 ## 删除元数据架构表单 {#deleting-metadata-schema-forms}
 
-[!DNL Experience Manager] 允许您仅删除自定义架构表单。您无法删除默认的架构表单/模板。但是，您可以删除对这些表单所做的任何自定义更改。
+[!DNL Experience Manager] 允许您仅删除自定义架构表单。 它不允许您删除默认架构表单/模板。 但是，您可以删除这些表单中的任何自定义更改。
 
-要删除某个表单，请选择该表单，然后单击&#x200B;**[!UICONTROL 删除]**&#x200B;图标。
+要删除表单，请选择一个表单，然后单击 **[!UICONTROL 删除]** 图标。
 
 >[!NOTE]
 >
@@ -184,28 +188,28 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->您无法删除[!DNL Experience Manager]资产中现成的元数据架构表单。
+>您无法删除 [!DNL Experience Manager] 资产。
 
 ## MIME类型的架构表单 {#schema-forms-for-mime-types}
 
-[!DNL Experience Manager] Assets可为各种开箱即用的MIME类型提供默认表单。但是，您可以为各种MIME类型的资产添加自定义表单。
+[!DNL Experience Manager] Assets可为各种开箱即用的MIME类型提供默认表单。 但是，您可以为各种MIME类型的资产添加自定义表单。
 
 ### 为MIME类型添加新表单 {#adding-new-forms-for-mime-types}
 
-在相应的表单类型下创建新表单。例如，要为`image/png`子类型添加新模板，请在`image`表单下创建表单。 架构表单的标题是子类型名称。在这种情况下，标题为`png`。
+在相应的表单类型下创建新表单。例如，要为 `image/png` 子类型，在 `image` 表单。 架构表单的标题是子类型名称。在这种情况下，标题为 `png`.
 
 ### 对各种MIME类型使用现有架构模板 {#using-an-existing-schema-template-for-various-mime-types}
 
-您可以为不同的 MIME 类型使用现有模板。例如，对于MIME类型为`image/png`的资产，请使用`image/jpeg`表单。
+您可以将现有模板用于其他MIME类型。 例如，使用 `image/jpeg` MIME类型资产的表单 `image/png`.
 
-在这种情况下，请在CRX存储库的`/etc/dam/metadataeditor/mimetypemappings`处创建新节点。 指定节点的名称并定义以下属性：
+在这种情况下，请在 `/etc/dam/metadataeditor/mimetypemappings` 在CRX存储库中。 指定节点的名称并定义以下属性：
 
-| 名称 | 描述 | 类型 | 值 |
+| 名称 | 描述 | 类型 | 价值 |
 |---|---|---|---|
 | `exposedmimetype` | 要映射的现有表单的名称 | `String` | `image/jpeg` |
-| `mimetypes` | 使用`exposedmimetype`属性中定义的表单的MIME类型列表 | `String` | `image/png` |
+| `mimetypes` | 使用 `exposedmimetype` 属性 | `String` | `image/png` |
 
-[!DNL Experience Manager] Assets 映射以下 MIME 类型和架构表单：
+[!DNL Experience Manager] 资产会映射以下MIME类型和架构表单：
 
 | 架构表单 | MIME类型 |
 |---|---|
@@ -217,13 +221,13 @@ ht-degree: 22%
 | application/x-MixedMediaSet | Multipart/Related; type=application/x-MixedMediaSet |
 | video/quicktime | video/x-quicktime |
 | video/mpeg4 | video/mp4 |
-| video/avi | video/avi、video/msvideo、video/x-msvideo |
+| video/avi | video/avi， video/msvideo， video/x-msvideo |
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
 
 ## 授予对元数据架构的访问权限 {#granting-access-to-metadata-schemas}
 
-元数据架构功能仅供管理员使用。 但是，管理员可以通过提供对`/conf`文件夹的&#x200B;**[!UICONTROL 创建]**、**[!UICONTROL 修改]**&#x200B;和&#x200B;**[!UICONTROL 删除]**&#x200B;权限，来为非管理员用户提供访问权限。
+元数据架构功能仅供管理员使用。 但是，管理员可以通过提供 **[!UICONTROL 创建]**, **[!UICONTROL 修改]**&#x200B;和 **[!UICONTROL 删除]** 权限 `/conf` 文件夹。
 
 ## 应用特定于文件夹的元数据 {#applying-folder-specific-metadata}
 
@@ -239,28 +243,28 @@ ht-degree: 22%
 
 如果文件夹具有子文件夹，则子文件夹中的资产将继承子文件夹级别应用的架构的元数据（如果在子文件夹级别应用其他架构）。 但是，如果子文件夹级别未应用架构或相同架构，则子文件夹资产将从父文件夹级别应用的架构继承元数据。
 
-1. 单击[!DNL Experience Manager]徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>元数据架构]**。 此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
-1. 选中表单前面的复选框（例如默认的元数据表单），然后单击或点按&#x200B;**[!UICONTROL 复制]**&#x200B;图标，并将其另存为自定义表单。 为表单指定自定义名称，例如`my_default`。 或者，您也可以创建自定义表单。
+1. 单击 [!DNL Experience Manager] 徽标，然后导航到 **[!UICONTROL 工具> Assets >元数据架构]**. 此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
+1. 选中表单前面的复选框（例如默认元数据表单），然后单击或点按 **[!UICONTROL 复制]** 图标，并将其另存为自定义表单。 为表单指定自定义名称，例如 `my_default`. 或者，您也可以创建自定义表单。
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. 在&#x200B;**[!UICONTROL 元数据架构Forms]**&#x200B;页面中，选择`my_default`表单，然后单击&#x200B;**[!UICONTROL 编辑]**。
+1. 在 **[!UICONTROL 元数据架构Forms]** 页面，选择 `my_default` 表单，然后单击 **[!UICONTROL 编辑]**.
 
-1. 在&#x200B;**[!UICONTROL 元数据架构编辑器]**&#x200B;页面中，向架构表单中添加文本字段。 例如，添加标签为&#x200B;**[!UICONTROL Category]**&#x200B;的字段。
+1. 在 **[!UICONTROL 元数据架构编辑器]** 页面，向架构表单中添加文本字段。 例如，添加带有标签的字段 **[!UICONTROL 类别]**.
 
    ![chlimage_1-186](assets/chlimage_1-186.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在&#x200B;**[!UICONTROL 元数据架构Forms]**&#x200B;页面中。
-1. 单击/点按工具栏中的&#x200B;**[!UICONTROL 应用到文件夹]** ，以将自定义元数据应用到文件夹。
+1. 单击“**[!UICONTROL 保存]**”。修改后的表单列在 **[!UICONTROL 元数据架构Forms]** 页面。
+1. 单击/点按 **[!UICONTROL 应用到文件夹]** 将自定义元数据应用到文件夹。
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
 
-1. 选择要应用已修改架构的文件夹，然后单击/点按&#x200B;**[!UICONTROL 应用]**。
+1. 选择要应用已修改架构的文件夹，然后单击/点按 **[!UICONTROL 应用]**.
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. 如果文件夹应用了其他元数据架构，则会显示一条消息，警告您将要覆盖现有的元数据架构。 单击&#x200B;**[!UICONTROL 覆盖]**。
-1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭成功消息。
+1. 如果文件夹应用了其他元数据架构，则会显示一条消息，警告您将要覆盖现有的元数据架构。 单击 **[!UICONTROL 覆盖]**.
+1. 单击 **[!UICONTROL 确定]** 以关闭成功消息。
 1. 导航到应用已修改元数据架构的文件夹。
 
 ## 定义必需元数据 {#defining-mandatory-metadata}
@@ -269,30 +273,30 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->根据其他字段的值，可以将元数据字段定义为必填字段。 在“卡片”视图中，[!DNL Experience Manager]不显示有关此类必需元数据字段缺少元数据的警告消息。
+>根据其他字段的值，可以将元数据字段定义为必填字段。 在卡片视图中， [!DNL Experience Manager] 不显示有关此类必填元数据字段缺少元数据的警告消息。
 
-1. 单击[!DNL Experience Manager]徽标，然后导航到&#x200B;**[!UICONTROL 工具>资产>元数据架构]**。 此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
-1. 将默认元数据表单另存为自定义表单。 例如，将其另存为`my_default`。
+1. 单击 [!DNL Experience Manager] 徽标，然后导航到 **[!UICONTROL 工具> Assets >元数据架构]**. 此时会显示&#x200B;**[!UICONTROL 元数据架构表单]**&#x200B;页面。
+1. 将默认元数据表单另存为自定义表单。 例如，将其另存为 `my_default`.
 
-   ![chlimage_1-109](assets/chlimage_1-189.png)
+   ![chlimage_1-189](assets/chlimage_1-189.png)
 
-1. 编辑自定义表单。 添加必填字段。 例如，添加&#x200B;**Category**&#x200B;字段，并将该字段设为必填字段。
+1. 编辑自定义表单。 添加必填字段。 例如，添加 **类别** 字段，并将字段设为必填字段。
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单列在&#x200B;**[!UICONTROL 元数据架构Forms]**&#x200B;页面中。 要将自定义元数据应用到文件夹，请选择表单，然后单击/点按工具栏中的&#x200B;**[!UICONTROL 应用到文件夹]** 。
+1. 单击“**[!UICONTROL 保存]**”。修改后的表单列在 **[!UICONTROL 元数据架构Forms]** 页面。 要将自定义元数据应用到文件夹，请选择表单，然后单击/点按 **[!UICONTROL 应用到文件夹]** 中。
 
 1. 导航到文件夹，并上传某些资产，其中缺少您添加到自定义表单的必填字段的元数据。 资产的卡片视图会显示一则消息，其中显示必填字段缺少的元数据。
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-1. （可选）访问`http://[server]:[port]/system/console/components/`。 配置并启用默认禁用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`组件。 设置一个频度，在该频率下[!DNL Experience Manager]会检查资产上元数据的有效性。
-此配置会将属性`hasValidMetadata`添加到资产的jcr:content。 使用此属性，[!DNL Experience Manager]可以筛选搜索结果。
+1. （可选）访问 `http://[server]:[port]/system/console/components/`. 配置和启用 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 默认禁用的组件。 设置频率 [!DNL Experience Manager] 检查资产上元数据的有效性。
+此配置会添加一个属性 `hasValidMetadata` 至jcr:assets的内容。 使用此资产， [!DNL Experience Manager] 可以过滤搜索结果。
 
 >[!NOTE]
 >
->如果在计划检查后添加资产，则在进行下一次计划检查之前，不会将资产标记为`hasValidMetadata`。 资产不会显示在中间搜索结果中。
+>如果在计划检查后添加了资产，则该资产不会标记为 `hasValidMetadata` 直到进行下一次计划检查。 资产不会显示在中间搜索结果中。
 
 >[!CAUTION]
 >
->元数据验证检查占用大量资源，可能会影响系统性能。 相应地计划检查。 如果[!DNL Experience Manager]部署存在性能问题，请尝试禁用此作业。
+>元数据验证检查占用大量资源，可能会影响系统性能。 相应地计划检查。 如果 [!DNL Experience Manager] 部署存在性能问题，请尝试禁用此作业。

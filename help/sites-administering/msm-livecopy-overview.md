@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 96238d40-c19a-4c1f-9400-c7bb8636b448
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 28%
+source-wordcount: '570'
+ht-degree: 27%
 
 ---
 
 # Live Copy 概述控制台{#live-copy-overview-console}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 的 **Live Copy概述** 允许您：
 

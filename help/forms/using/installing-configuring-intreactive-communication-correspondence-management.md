@@ -8,14 +8,18 @@ topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
 role: Admin
 exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1420'
 ht-degree: 5%
 
 ---
 
 # 安装和配置交互式通信 {#install-and-configure-interactive-communications}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 简介 {#introduction}
 
@@ -97,7 +101,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含AEM For
 1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)，并单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
 1. 选择包并单击 **[!UICONTROL 安装]**.
 
-   您还可以通过 [AEM Forms版本](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 文章。
+   您还可以通过 [AEM Forms版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 文章。
 
 1. 安装包后，系统会提示您重新启动AEM实例。 **不要立即重新启动服务器。** 在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止显示在 [AEM-Installation-Directory]/crx-quickstart/logs/error.log文件和日志稳定。
 1. 对所有创作实例和发布实例重复步骤1-7。
@@ -165,7 +169,7 @@ Dispatcher正在为AEM缓存和负载平衡工具。 AEM Dispatcher还有助于�
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   保存并关闭文件。 有关过滤器的详细信息，请参阅 [Dispatcher文档](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   保存并关闭文件。 有关过滤器的详细信息，请参阅 [Dispatcher文档](https://helpx.adobe.com/cn/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. 配置反向链接过滤器服务：
 
@@ -183,7 +187,7 @@ AEM forms与Adobe Marketing Cloud解决方案Adobe Target集成，以跨多个�
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
-## 下面的步骤 {#next-steps}
+## 后续步骤 {#next-steps}
 
 您已将环境配置为使用交互式通信和通信管理功能。 现在，使用该功能的步骤是：
 

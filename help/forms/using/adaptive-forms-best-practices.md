@@ -9,14 +9,18 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4144'
 ht-degree: 0%
 
 ---
 
 # 使用自适应表单的最佳实践 {#best-practices-for-working-with-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
@@ -55,7 +59,7 @@ Adobe Experience Manager(AEM)表单可帮助您将复杂的事务转换为简单
 * 自适应表单模板是一个专用的AEM页面，用于定义自适应表单的结构和页眉和页脚信息。 模板已为自适应表单预配置了布局、样式和基本结构。 AEM Forms提供了现成的模板和组件，您可以使用这些模板和组件创作自适应表单。 但是，您可以根据需要创建自定义模板和组件。 建议收集对自适应表单中所需的其他模板和组件的要求。 有关详细信息，请参阅 [自定义自适应表单和组件](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
 * AEM Forms允许您根据以下表单模型创建自适应表单。 表单模型充当表单与AEM系统之间数据交换的接口，并为自适应表单内外的数据流提供基于XML的结构。 此外，表单模型以模式和XFA约束的形式对自适应表单施加规则和约束。
 
-   * **无**:使用此选项创建的自适应表单不使用任何表单模型。 从这种表单生成的数据XML具有平坦结构，其中具有字段和相应的值。
+   * **无**:使用此选项创建的自适应表单不使用任何表单模型。 从此类表单生成的数据 XML 具有带字段和相应值的平面结构。
    * **XML或JSON架构**:XML和JSON架构表示组织内的后端系统生成或使用数据的结构。 您可以将架构与自适应表单相关联，并使用其元素向自适应表单添加动态内容。 架构的元素位于内容浏览器的“数据模型对象”选项卡中，用于创作自适应表单。 您可以拖放架构元素以构建表单。
    * **XFA表单模板**:如果您在基于XFA的HTML5表单中进行了投资，则它是理想的表单模型。 它提供了一种将基于XFA的表单转换为自适应表单的直接方法。 任何现有的XFA规则都将保留在关联的自适应表单中。 生成的自适应表单支持XFA构建，如验证、事件、属性和模式。
    * **表单数据模型**:如果您希望集成后端系统(如数据库、Web服务和AEM用户配置文件)以预填充自适应表单并将提交的表单数据写回后端系统，则它是首选的表单模型。 通过表单数据模型编辑器，您可以在表单数据模型中定义和配置实体和服务，以用于创建自适应表单。 有关更多信息，请参阅 [AEM Forms数据集成](/help/forms/using/data-integration.md).

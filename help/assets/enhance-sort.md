@@ -1,24 +1,28 @@
 ---
 title: 增强了AEM中资产的排序
-description: '了解资产如何部署服务器端排序，以便一次对文件夹资产或搜索查询进行排序，而不是在客户端按批次对它们进行排序。 [!DNL Experience Manager] '
+description: 了解如何 [!DNL Experience Manager] 资产通过服务器端排序来一次性对文件夹资产或搜索查询进行排序，而不是在客户端对资产进行批量排序。
 contentOwner: AG
 feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 3%
+source-wordcount: '469'
+ht-degree: 4%
 
 ---
 
-# 增强了[!DNL Experience Manager]中资产的排序 {#enhanced-sorting-of-assets-in-aem}
+# 增强了中资产的排序 [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-了解[!DNL Experience Manager]资产如何部署服务器端排序，以便一次对文件夹资产或搜索查询进行排序，而不是在客户端按批次对资产进行排序。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+了解如何 [!DNL Experience Manager] 资产通过服务器端排序来一次性对文件夹资产或搜索查询进行排序，而不是在客户端对资产进行批量排序。
 
 增强了Adobe Experience Manager Assets的搜索功能，以便在文件夹列表视图和搜索结果页面中高效地对大量资产进行排序。 您还可以对时间轴条目进行排序。
 
-[!DNL Experience Manager] 资产通过服务器端排序来一次对文件夹或搜索查询中的整个资产集（无论资产大小）进行排序，而不是在客户端对它们进行批量排序。这样，预取的结果可以快速显示在用户界面上，使排序操作更加响应快捷。
+[!DNL Experience Manager] 资产通过服务器端排序来一次对文件夹或搜索查询中的整个资产集（无论资产大小）进行排序，而不是在客户端对它们进行批量排序。 这样，预取的结果可以快速显示在用户界面上，使排序操作更加响应快捷。
 
 ## 在列表视图中对资产排序 {#sorting-assets-in-list-view}
 
@@ -28,11 +32,11 @@ ht-degree: 3%
 * 状态
 * 类型
 * 大小
-* 评级
+* 评分
 * 修改日期
 * 发布日期
 * 用途
-* 点击量
+* 单击次数
 * 展示次数
 * 已签出
 
@@ -51,7 +55,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->要对`Name`或`Title`列中的值进行排序，请叠加`/libs/dam/gui/content/commons/availablecolumns`并将`sortable`的值更改为`True`。
+>对 `Name` 或 `Title`列，叠加 `/libs/dam/gui/content/commons/availablecolumns` 并更改 `sortable` to `True`.
 
 ## 在搜索结果中对资产进行排序 {#sorting-assets-in-search-results}
 
@@ -78,14 +82,14 @@ ht-degree: 3%
 [!DNL Assets] 允许您按时间顺序对时间轴条目（如批注、版本、工作流和活动）进行排序。
 
 1. 从资产UI中，选择要为其显示时间轴的资产。
-1. 单击/点按全局导航图标，然后选择&#x200B;**[!UICONTROL 时间轴]**。
+1. 单击/点按全局导航图标，然后选择 **[!UICONTROL 时间轴]**.
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. 在时间轴中，从列表中选择一个条目。 例如，选择&#x200B;**[!UICONTROL Comments]**&#x200B;以显示与资产关联的注释列表。
+1. 在时间轴中，从列表中选择一个条目。 例如，选择 **[!UICONTROL 评论]** 以显示与资产关联的注释列表。
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. 单击/点按&#x200B;**[!UICONTROL Date]**&#x200B;标签旁边的&#x200B;**[!UICONTROL 排序]**&#x200B;图标。 根据您的选择，这些注释会按时间顺序/时间顺序排列，按时间顺序或时间顺序将其添加到资产中。
+1. 单击/点按 **[!UICONTROL 排序]** 图标 **[!UICONTROL 日期]** 标签。 根据您的选择，这些注释会按时间顺序/时间顺序排列，按时间顺序或时间顺序将其添加到资产中。
 
-   ![chlimage_1-481](assets/chlimage_1-401.png)
+   ![chlimage_1-401](assets/chlimage_1-401.png)

@@ -12,14 +12,18 @@ discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 0%
+source-wordcount: '1004'
+ht-degree: 1%
 
 ---
 
 # 为内容片段创建翻译项目 {#creating-translation-projects-for-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 除了资产之外，Adobe Experience Manager(AEM)资产还支持 [内容片段](content-fragments.md) （包括变体）。 在内容片段上运行语言副本工作流无需其他优化。 在每个工作流中，都会发送整个内容片段以进行翻译。
 

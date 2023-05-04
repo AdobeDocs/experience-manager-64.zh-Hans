@@ -1,8 +1,8 @@
 ---
 title: 使用预检预览
-seo-title: 使用预检预览
+seo-title: Previewing with Preflight
 description: 本页介绍了使用预检应用程序进行预览。
-seo-description: 借助Mobile On Demand Preflight应用程序，您可以查看您有权访问的所有项目。 请阅读本页以了解有关此内容的更多信息。
+seo-description: With the Mobile On Demand Preflight app, you can view all projects to which you have access. Follow this page to learn more about this.
 uuid: bea83055-8172-4634-88ec-5d3f163ad8e0
 contentOwner: User
 content-type: reference
@@ -10,20 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 1eb9f997-70ff-4309-a219-87ef56b723e5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 2%
 
 ---
 
-# 使用预检{#previewing-with-preflight}预览
+# 使用预检预览 {#previewing-with-preflight}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本页介绍了使用预检应用程序进行预览。
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
 
 对整个应用程序执行以下操作。
 
@@ -31,25 +35,25 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Preflight应用程序在性质上与PhoneGap Enterprise查看器类似。
+>Preflight应用程序与PhoneGap Enterprise查看器在性质上相似。
 
-## 使用预检{#previewing-with-preflight-1}预览
+## 使用预检预览 {#previewing-with-preflight-1}
 
 1. 在移动设备中，从目录中选择您的移动按需应用程序。
-1. 单击&#x200B;**管理文章**（或横幅/收藏集）拼贴中的省略号(...)。
-1. 从操作栏中选择&#x200B;**Preflight**。
-1. 在对话框中单击&#x200B;**激活预检**。
+1. 单击 **管理文章** （或横幅/收藏集）拼贴。
+1. 选择 **预检** 中。
+1. 单击 **激活预检** 对话框。
 1. 现在，您的应用程序就可以在Mobile On-Demand Preflight应用程序上进行预览。
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->AEM Preflight应用程序用于预览内容和浏览页面。 要深入了解Preflight应用程序，请单击[此处](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html)。
+>AEM Preflight应用程序用于预览内容和浏览页面。 要深入了解Preflight应用程序，请单击 [此处](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
 >
->AEM Preflight应用程序位于[iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8)、[Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en)和[Windows应用商店](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq)中。
+>AEM Preflight应用程序在 [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), [Google Play商店](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en)和 [Windows应用商店](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq).
 
-### 提前{#getting-ahead}
+### 抢滩 {#getting-ahead}
 
 如果您仍需要有关创作内容的更多信息，请参阅以下资源以在AEM Mobile应用程序中创建和管理内容：
 

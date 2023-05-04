@@ -1,8 +1,8 @@
 ---
 title: 草稿和提交组件的自定义存储
-seo-title: 草稿和提交组件的自定义存储
+seo-title: Custom storage for drafts and submissions component
 description: 请参阅如何自定义草稿和提交的用户数据存储。
-seo-description: 请参阅如何自定义草稿和提交的用户数据存储。
+seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,31 +10,35 @@ topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
 exl-id: 22f78940-de5f-4e16-b1f8-c3762d81802b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 1%
+source-wordcount: '347'
+ht-degree: 2%
 
 ---
 
-# 草稿和提交组件的自定义存储{#custom-storage-for-drafts-and-submissions-component}
+# 草稿和提交组件的自定义存储 {#custom-storage-for-drafts-and-submissions-component}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
 AEM Forms允许您将表单另存为草稿。 草稿功能允许您维护正在进行的表单，您可以从任何设备完成并稍后提交该表单。
 
-默认情况下，AEM Forms会将与表单草稿和提交相关的用户数据存储在Publish实例的`/content/forms/fp`节点中。 此外，AEM Forms门户组件还提供数据服务，您可以使用这些数据服务来自定义存储草稿和提交用户数据的实施。 例如，您可以将用户数据存储在数据存储中。
+默认情况下，AEM Forms会在 `/content/forms/fp` 节点。 此外，AEM Forms门户组件还提供数据服务，您可以使用这些数据服务来自定义存储草稿和提交用户数据的实施。 例如，您可以将用户数据存储在数据存储中。
 
 ## 前提条件  {#prerequisites}
 
-* 启用[forms门户组件](/help/forms/using/enabling-forms-portal-components.md)
-* 创建[forms门户页面](/help/forms/using/creating-form-portal-page.md)
-* 为表单门户启用[自适应表单](/help/forms/using/draft-submission-component.md)
-* 了解自定义存储的[实施详细信息](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* 启用 [表单门户组件](/help/forms/using/enabling-forms-portal-components.md)
+* 创建 [表单门户页面](/help/forms/using/creating-form-portal-page.md)
+* 启用 [表单门户自适应表单](/help/forms/using/draft-submission-component.md)
+* 学习 [自定义存储的实施详细信息](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
-## 草稿数据服务{#draft-data-service}
+## 草稿数据服务 {#draft-data-service}
 
-要自定义草稿的用户数据存储，您需要实施`DraftDataService`界面的所有方法。 以下示例代码介绍了方法和参数。
+要自定义草稿的用户数据存储，您需要实施 `DraftDataService` 界面。 以下示例代码介绍了方法和参数。
 
 ```java
 /**
@@ -97,9 +101,9 @@ public interface DraftDataService {
 }
 ```
 
-## 提交数据服务{#submission-data-service}
+## 提交数据服务 {#submission-data-service}
 
-要自定义提交用户数据的存储，您需要实施`SubmitDataService`界面的所有方法。 以下示例代码介绍了方法和参数。
+要自定义提交用户数据的存储，您需要实施 `SubmitDataService` 界面。 以下示例代码介绍了方法和参数。
 
 ```java
 /**

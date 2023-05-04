@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
 feature: Commerce Integration Framework
 exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2912'
-ht-degree: 5%
+source-wordcount: '2948'
+ht-degree: 3%
 
 ---
 
 # 管理通用电子商务{#administering-generic-ecommerce}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM通用解决方案提供了管理存储库中保存的商务信息的方法（而不是使用外部电子商务引擎）。 这包括：
 
@@ -175,7 +179,7 @@ AEM通用解决方案提供了管理存储库中保存的商务信息的方法�
 #### 编辑产品信息 — 触屏优化UI {#editing-product-information-touch-optimized-ui}
 
 1. 使用 **产品** 控制台(通过 **商务**)导航到您的产品信息。
-1. 使用以下任何一种方式：
+1. 使用：
 
    * [快速操作](/help/sites-authoring/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
@@ -334,7 +338,7 @@ AEM通用解决方案提供了管理存储库中保存的商务信息的方法�
 >对于特殊情况，AEM还支持直接从产品数据发布。
 
 1. 使用 **产品** 控制台(通过 **商务**)导航到您的产品信息。
-1. 使用以下任何一种方式：
+1. 使用：
 
    * [快速操作](/help/sites-authoring/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
@@ -377,7 +381,7 @@ AEM通用解决方案提供了管理存储库中保存的商务信息的方法�
 >
 >另请阅读 [AEM中的事件处理](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
 
-### 添加到购物车图像链接 {#image-with-add-to-cart-links}
+### 添加到购物车链接的图像 {#image-with-add-to-cart-links}
 
 通过添加到购物车链接的图像组件，您可以通过创建与图像上的产品链接的热点来快速将产品添加到购物车。
 
@@ -457,9 +461,9 @@ AEM通用解决方案提供了管理存储库中保存的商务信息的方法�
 
 要生成目录，请执行以下操作：
 
-1. 打开“站点”控制台（例如，[http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)）。
+1. 打开站点控制台(例如， [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content))。
 1. 导航到要创建新页面的位置。
-1. 要打开选项列表，请使用“**创建**”图标：
+1. 要打开选项列表，请使用 **创建** 图标：
 
    ![](do-not-localize/chlimage_1-23.png)
 
@@ -520,7 +524,7 @@ AEM通用解决方案提供了管理存储库中保存的商务信息的方法�
 
 1. 导航到 **目录** 控制台，通过 **商务**.
 1. 导航到要转出的目录。
-1. 使用以下任何一种方式：
+1. 使用：
 
    * [快速操作](/help/sites-authoring/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
@@ -598,7 +602,7 @@ AEM通用解决方案提供了管理存储库中保存的商务信息的方法�
 
    指定 **促销类型**, **折扣类型**, **折扣值** 和任何其他字段。
 
-1. 单击&#x200B;**确定**&#x200B;进行保存。
+1. 单击 **确定** 保存。
 
 1. 您现在可以激活促销活动，以便购物者在发布实例上看到该促销活动。
 
@@ -614,7 +618,7 @@ AEM通用解决方案提供了管理存储库中保存的商务信息的方法�
 1. 单击&#x200B;**创建**。新的凭单页面将显示在右侧窗格中。
 
 1. 双击打开新凭证页面，然后单击 **编辑** ，以根据需要配置信息。
-1. 单击&#x200B;**确定**&#x200B;进行保存。
+1. 单击 **确定** 保存。
 
 1. 您现在可以激活您的优惠券，以便购物者在发布实例上的购物车中使用该优惠券。
 
@@ -676,7 +680,7 @@ AEM通用解决方案提供了管理存储库中保存的商务信息的方法�
 #### 编辑订单信息 — 触屏优化UI {#editing-order-information-touch-optimized-ui}
 
 1. 使用 **订单数** 控制台导航到订单。
-1. 使用以下任何一种方式：
+1. 使用：
 
    * [快速操作](/help/sites-authoring/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)

@@ -1,25 +1,29 @@
 ---
 title: Dynamic Media 6.4中的存储库重组
-seo-title: Dynamic Media 6.4中的存储库重组
+seo-title: Dynamic Media repository restructuring in AEM 6.4
 description: 了解如何进行必要的更改，以便迁移到AEM 6.4 for Dynamic Media中的新存储库结构。
-seo-description: 了解如何进行必要的更改，以便迁移到AEM 6.4 for Dynamic Media中的新存储库结构。
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: 升级
+feature: Upgrading
 exl-id: 1323ee60-c80c-4eed-b3e5-aa0f0c07e6ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 4%
+source-wordcount: '449'
+ht-degree: 5%
 
 ---
 
-# Dynamic Media存储库重组(AEM 6.4{#dynamic-media-repository-restructuring-in-aem})
+# Dynamic Media 6.4中的存储库重组{#dynamic-media-repository-restructuring-in-aem}
 
-如AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的父[存储库重组页面中所述，升级到AEM 6.4的客户应使用此页面评估与影响Dynamic Media解决方案的存储库更改相关的工作量。 某些更改在AEM 6.4升级过程中需要工作，而其他更改可能会推迟到6.5升级。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+如父项中所述 [AEM 6.4中的存储库重组](/help/sites-deploying/repository-restructuring.md) 页面，升级到AEM 6.4的客户应使用此页面来评估与影响Dynamic Media解决方案的存储库更改相关的工作量。 某些更改在AEM 6.4升级过程中需要工作，而其他更改可能会推迟到6.5升级。
 
 **6.5升级之前**
 
@@ -29,9 +33,9 @@ ht-degree: 4%
 * [Dynamic Media - YouTubeCloud Service配置](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
 * [杂项](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
-## 在6.5升级之前{#prior-to-upgrade}
+## 6.5升级之前 {#prior-to-upgrade}
 
-### 自定义自适应视频编码配置{#custom-adaptive-video-encoding-configurations}
+### 自定义自适应视频编码配置  {#custom-adaptive-video-encoding-configurations}
 
 <table> 
  <tbody>
@@ -54,7 +58,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### Dynamic Media(DMS7)云配置{#dynamic-media-dms-cloud-configuration}
+### Dynamic Media(DMS7)云配置 {#dynamic-media-dms-cloud-configuration}
 
 <table> 
  <tbody>
@@ -118,7 +122,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>重组指导</strong></td> 
-   <td><p>1.取消发布YouTube<br /> 2中的所有视频。 使用新的TouchUI（从<code>/conf</code>）创建YouTube配置，包括从旧位置<br /> 3复制所有通道。 将所有视频发布回YouTube。</p> <p>此工作流会生成新的YouTube URL。 如果在创建新的触屏UI YouTube配置之前未取消发布，则“属性”下将列出多个YouTube URL，因为如果有机会，重新创建的渠道将再次发布。 这表示您的“属性”下将列出无用的URL。</p> </td> 
+   <td><p>1.从YouTube取消发布所有视频<br /> 2. 使用新的触屏UI创建YouTube配置(从 <code>/conf</code>)，包括从旧位置复制所有渠道<br /> 3. 将所有视频发布回YouTube。</p> <p>此工作流会生成新的YouTube URL。 如果在创建新的触屏UI YouTube配置之前未取消发布，则“属性”下将列出多个YouTube URL，因为如果有机会，重新创建的渠道将再次发布。 这表示您的“属性”下将列出无用的URL。</p> </td> 
   </tr>
   <tr>
    <td><strong>注释</strong></td> 

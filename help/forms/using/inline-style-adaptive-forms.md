@@ -1,31 +1,35 @@
 ---
 title: 自适应表单组件的内联样式
-seo-title: 自适应表单组件的内联CSS属性
+seo-title: Inline CSS properties for adaptive form components
 description: 虽然您可以在自适应表单上应用自定义样式，但也可以在自适应表单的各个组件上应用内联CSS属性。
-seo-description: 虽然您可以在自适应表单上应用自定义样式，但也可以在自适应表单的各个组件上应用内联CSS属性。
+seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
-feature: 自适应表单
+feature: Adaptive Forms
 exl-id: 8e7ba9d2-207f-419b-bcd5-74ba9b14ab92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '562'
 ht-degree: 3%
 
 ---
 
-# 自适应表单组件的内联样式{#inline-styling-of-adaptive-form-components}
+# 自适应表单组件的内联样式 {#inline-styling-of-adaptive-form-components}
 
-您可以通过使用[主题编辑器](/help/forms/using/themes.md)指定样式来定义自适应表单的整体外观和样式。 此外，您还可以将内联CSS样式应用于单个自适应表单组件，并即时预览更改。 内联样式会覆盖主题中提供的样式。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-## 应用内联CSS属性{#apply-inline-css-properties}
+您可以通过使用指定样式来定义自适应表单的整体外观和样式 [主题编辑器](/help/forms/using/themes.md). 此外，您还可以将内联CSS样式应用于单个自适应表单组件，并即时预览更改。 内联样式会覆盖主题中提供的样式。
+
+## 应用内联CSS属性 {#apply-inline-css-properties}
 
 要向组件添加内联样式，请执行以下操作：
 
-1. 在表单编辑器中打开表单，然后将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中，点按![Canvas-down-down-load](assets/canvas-drop-down.png) > **Style**。
-1. 在页面中选择一个组件，然后点按编辑按钮![edit-button](assets/edit-button.png)。 在侧栏中打开样式属性。
+1. 在表单编辑器中打开表单，然后将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中，点按 ![画布下拉列表](assets/canvas-drop-down.png) > **样式**.
+1. 在页面中选择组件，然后点按编辑按钮 ![edit-button](assets/edit-button.png). 在侧栏中打开样式属性。
 
    您还可以从侧栏的表单层次结构树中选择组件。 表单层次结构树在侧栏中可用作表单对象。
 
@@ -43,9 +47,9 @@ ht-degree: 3%
    * 高级（允许您为组件编写自定义CSS）
 
 1. 同样，您也可以将样式应用于组件的其他部分，如小组件、题注和帮助。
-1. 点按&#x200B;**完成**&#x200B;以确认更改，或点按&#x200B;**取消**&#x200B;以放弃更改。
+1. 点按 **完成** 确认更改或 **取消** 以放弃更改。
 
-## 示例：字段组件{#example-inline-styles-for-a-field-component}的内联样式
+## 示例：字段组件的内联样式 {#example-inline-styles-for-a-field-component}
 
 以下图像描述了将内联样式应用于文本字段前后的文本字段。
 
@@ -60,7 +64,7 @@ ht-degree: 3%
   <tr> 
    <td><p>选择器</p> </td> 
    <td><p>CSS属性</p> </td> 
-   <td><p>值</p> </td> 
+   <td><p>价值</p> </td> 
    <td><p>效果</p> </td> 
   </tr> 
   <tr> 
@@ -96,8 +100,8 @@ ht-degree: 3%
  </tbody> 
 </table>
 
-![应用内联样式后的文本框样](assets/applied-style.png)
-**式图：** *应用内联样式属性后的文本框组件*
+![应用内联样式后的文本框样式](assets/applied-style.png)
+**图：** *应用内联样式属性后的文本框组件*
 
 按照上述步骤，您可以选择其他组件（如面板、提交按钮和单选按钮）并设置其样式。
 

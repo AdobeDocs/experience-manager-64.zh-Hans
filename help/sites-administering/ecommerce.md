@@ -11,16 +11,20 @@ content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 feature: Commerce Integration Framework
 exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 3%
+source-wordcount: '792'
+ht-degree: 2%
 
 ---
 
 # 电子商务{#ecommerce}
 
-* [概念 ](/help/sites-administering/concepts.md)
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+* [概念](/help/sites-administering/concepts.md)
 * [管理（一般）](/help/sites-administering/generic.md)
 * [SAPCommerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
 * [SalesforceCommerce Cloud](https://github.com/adobe/commerce-salesforce)

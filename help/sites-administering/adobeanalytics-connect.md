@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 exl-id: 654387e3-d837-4bde-a9e4-962862ad69e9
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1570'
 ht-degree: 8%
 
 ---
 
 # 连接到Adobe Analytics和创建框架{#connecting-to-adobe-analytics-and-creating-frameworks}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 要在Adobe Analytics中跟踪来自AEM页面的Web数据，请创建Adobe Analytics Cloud服务配置和Adobe Analytics框架：
 
@@ -186,7 +190,7 @@ AEM默认使用圣何塞(https://api.omniture.com/admin/1.4/rest/)数据中心�
 1. 然后，您可以使用适当的工具检查对Adobe Analytics发出的调用；例如， [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 1. 使用提供的示例，调用应包含eVar7中输入的值（即茄子），事件列表应包含event3。
 
-### 页面查看次数 {#page-views}
+### 页面视图 {#page-views}
 
 当页面与Adobe Analytics框架关联时，“站点”控制台的“列表”视图中会显示页面查看次数。
 

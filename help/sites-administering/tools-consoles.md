@@ -6,16 +6,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 7566e1bc-8571-4b3c-b420-4324026bd4dd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 34%
+source-wordcount: '911'
+ht-degree: 20%
 
 ---
 
 # 工具控制台{#tools-consoles}
 
-**工具**&#x200B;控制台让您可以访问一些专用工具，这些工具有助于您管理网站、数字资产及内容存储库的其他方面。目前，根据您所使用的UI，有两种类型的&#x200B;**工具**&#x200B;控制台：
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+**工具**&#x200B;控制台让您可以访问一些专用工具，这些工具有助于您管理网站、数字资产及内容存储库的其他方面。目前有两种 **工具** 控制台取决于您所使用的UI:
 
 * [工具 — 经典UI](#tools-classic-ui)
 * [工具 — 触屏优化UI](#tools-touch-optimized-ui)
@@ -35,14 +39,14 @@ ht-degree: 34%
    <td>用于管理多个站点的集中点。</td> 
   </tr> 
   <tr> 
-   <td>Client Context配置<br /> </td> 
+   <td>客户端上下文配置<br /> </td> 
    <td> </td> 
-   <td><a href="/help/sites-developing/client-context.md">Client Context</a>表示动态组合的用户数据集合。 此处保留了默认和marketing cloud配置。<br /> </td> 
+   <td>的 <a href="/help/sites-developing/client-context.md">Client Context</a> 表示动态组合的用户数据集合。 此处保留了默认和Marketing Cloud配置。<br /> </td> 
   </tr> 
   <tr> 
-   <td>Cloud Services配置<br /> </td> 
+   <td>云服务配置<br /> </td> 
    <td> </td> 
-   <td>保存与<a href="/help/sites-administering/marketing-cloud.md">与Adobe Marketing Cloud集成</a>相关的配置。</td> 
+   <td>保持与 <a href="/help/sites-administering/marketing-cloud.md">与Adobe Marketing Cloud集成</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">商务</a></td> 
@@ -57,10 +61,10 @@ ht-degree: 34%
   <tr> 
    <td>DAM — 运行状况检查程序<br /> </td> 
    <td> </td> 
-   <td>比较<code>/var/dam</code>和<code>/content/dam</code>并检查<br />是否存在任何不一致。 随后可以同步或删除列出的任何文件/文件夹。 文件夹比较的节点类型可在Web控制台中进行配置。</td> 
+   <td>比较 <code>/var/dam</code> 和 <code>/content/dam</code> 和检查<br /> 任何不一致的问题。 随后可以同步或删除列出的任何文件/文件夹。 文件夹比较的节点类型可在Web控制台中进行配置。</td> 
   </tr> 
   <tr> 
-   <td>DAM -AdobeIndesign<br /> </td> 
+   <td>DAM -Adobe设计<br /> </td> 
    <td> </td> 
    <td>用于与InDesign结合使用的Adobe。</td> 
   </tr> 
@@ -90,7 +94,7 @@ ht-degree: 34%
    <td>保存收到的表单提交列表。</td> 
   </tr> 
   <tr> 
-   <td>导入器 — <a href="/help/sites-administering/bulk-editor.md">批量编辑器</a></td> 
+   <td>导入程序 —  <a href="/help/sites-administering/bulk-editor.md">批量编辑器</a></td> 
    <td> </td> 
    <td>允许您搜索项目并批量对其进行编辑。 您还可以（批量）将内容导出和导入存储库。</td> 
   </tr>
@@ -125,39 +129,39 @@ ht-degree: 34%
    <td>包管理器的替代链接，用于显示为AEM WCM加载的包。 与CRX的包管理器中显示的信息类似。</td> 
   </tr> 
   <tr> 
-   <td>复制 — <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">复制代理</a></td> 
+   <td>复制 —  <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">复制代理</a></td> 
    <td> </td> 
    <td>用于在发布页面时将数据从创作复制到发布，或通过反向复制将数据从发布环境返回给创作的用户评论。</td> 
   </tr> 
   <tr> 
-   <td>导入程序 — <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">激活树</a></td> 
+   <td>导入程序 —  <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">激活树</a></td> 
    <td> </td> 
-   <td>在“网站”选项卡中，可以激活单个页面。如果已经输入或更新大量内容页面（所有内容页面都驻留在同一根页面下），则可以更轻松地通过一个操作来激活整个树。也可以通过“练习”来模拟激活和突出显示要激活的页面。</td> 
+   <td>在网站选项卡中，您可以激活各个页面。 当您输入或更新了大量内容页面（所有内容页面都驻留在同一根页面下）后，在一个操作中激活整个树会比较容易。 您还可以执行练习来模拟激活并突出显示要激活的页面。</td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/reporting.md">报告</a></td> 
+   <td><a href="/help/sites-administering/reporting.md">报表</a></td> 
    <td> </td> 
    <td>AEM提供一系列自定义报表，允许您创建自定义报表和/或开发您自己的报表。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/scaffolding.md">默认页面基架</a></td> 
    <td> </td> 
-   <td>使用基架，您可以创建一个表单（即基架），其中包含的字段反映您要用于页面的结构，然后使用此表单轻松创建基于此结构的页面。</td> 
+   <td>使用基架，您可以创建表单（基架），其中的字段反映您需要的页面结构，然后使用此表单轻松地基于此结构创建页面。</td> 
   </tr> 
   <tr> 
-   <td>安全性 — <a href="/help/sites-administering/notification.md">自助服务配置</a> </td> 
+   <td>安全性 —  <a href="/help/sites-administering/notification.md">自助服务配置 </a> </td> 
    <td> </td> 
    <td>允许您配置用户在创建帐户或重置密码时自动收到的电子邮件，以及确认已重置的密码。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">分段</a></td> 
    <td> </td> 
-   <td>站点访客在访问站点时的兴趣和目标各不相同。了解这些目标并满足预期是在线营销活动的一个重要成功因素。分段可通过分析访客的详细信息并描述其特征来帮助实现这一点。<br /> </td> 
+   <td>网站访客访问网站时的兴趣和目标各不相同。 了解这些目标并满足预期是在线营销的重要成功因素。 分段可通过分析访客的详细信息并描述其特征，帮助实现这一点。<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>默认SRP配置。 请参阅<a href="/help/communities/srp-config.md">存储配置</a>控制台。</td> 
+   <td>默认SRP配置。 请参阅 <a href="/help/communities/srp-config.md">存储配置</a> 控制台。</td> 
   </tr> 
   <tr> 
    <td>任务管理</td> 
@@ -170,7 +174,7 @@ ht-degree: 34%
    <td>没有与此条目相关的活动功能。</td> 
   </tr> 
   <tr> 
-   <td>版本控制 — <a href="/help/sites-deploying/version-purging.md">清除版本</a></td> 
+   <td>版本控制 —  <a href="/help/sites-deploying/version-purging.md">清除版本</a></td> 
    <td> </td> 
    <td>允许您根据需要清除页面版本。</td> 
   </tr> 
@@ -182,7 +186,7 @@ ht-degree: 34%
   <tr> 
    <td>关注词</td> 
    <td> </td> 
-   <td>已弃用. 请参阅<a href="/help/communities/moderate-ugc.md#watchwords">审核社区内容</a></td> 
+   <td>已弃用. 请参阅 <a href="/help/communities/moderate-ugc.md#watchwords">审核社区内容</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">工作流</a></td> 
@@ -243,7 +247,7 @@ ht-degree: 34%
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">云服务</a></td> 
+   <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Cloud Service</a></td> 
    <td>连接到 Adobe Marketing Cloud.</td> 
   </tr> 
   <tr> 
@@ -258,7 +262,7 @@ ht-degree: 34%
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/reporting.md">报告</a></td> 
+   <td><a href="/help/sites-administering/reporting.md">报表</a></td> 
    <td>创建和监测自定义报告.<br /> </td> 
   </tr> 
   <tr> 

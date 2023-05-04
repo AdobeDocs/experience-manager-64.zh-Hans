@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 exl-id: 4817d150-9bfe-4cb9-8f06-6ff4eaaa6f55
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 0%
+source-wordcount: '375'
+ht-degree: 1%
 
 ---
 
 # 管理证书和凭据的基础知识 {#basics-of-managing-certificates-and-credentials}
 
-*凭据*&#x200B;包含签名或标识文档所需的私钥信息。 *证书*&#x200B;是您为信任配置的公钥信息。 AEM表单用于以下几个目的：
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-* Acrobat Reader DC扩展使用凭据来启用PDF文档中的Adobe Reader使用权限。 (请参阅[配置凭据以与Acrobat Reader DC扩展一起使用](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)。)
-* 您可以将Rights Management配置为显示凭据，以便仅从受信任的发行商在Acrobat中使用。 (请参阅[配置Rights Management显示设置](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)。) 证书中必须存在通用名称(CN)。
-* 签名服务访问证书和凭据。 有关签名服务的详细信息，请参阅[服务引用](https://www.adobe.com/go/learn_aemforms_services_63)。
+A *凭据* 包含签名或识别文档所需的私钥信息。 A *证书* 是您为信任配置的公钥信息。 AEM表单用于以下几个目的：
+
+* Acrobat Reader DC扩展使用凭据来启用PDF文档中的Adobe Reader使用权限。 (请参阅 [配置用于Acrobat Reader DC扩展的凭据](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
+* 您可以将Rights Management配置为显示凭据，以便仅从受信任的发行商在Acrobat中使用。 (请参阅 [配置Rights Management显示设置](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) 证书中必须存在通用名称(CN)。
+* 签名服务访问证书和凭据。 有关签名服务的详细信息，请参阅 [服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **生成对键**
 

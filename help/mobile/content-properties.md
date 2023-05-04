@@ -1,8 +1,8 @@
 ---
 title: 内容属性和节点
-seo-title: 内容属性和节点
-description: '可查看本页以了解内容属性和节点。  '
-seo-description: '可查看本页以了解内容属性和节点。  '
+seo-title: Content Properties and Nodes
+description: 可查看本页以了解内容属性和节点。
+seo-description: Follow this page to learn about content properties and nodes.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
 content-type: reference
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 exl-id: 85a367fe-a124-42af-ae3e-fe4d10425ea1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '391'
 ht-degree: 20%
 
 ---
 
-# 内容属性和节点{#content-properties-and-nodes}
+# 内容属性和节点 {#content-properties-and-nodes}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
 
 文章、横幅和收藏集在AEM中显示为cq:Pages。
 
@@ -29,7 +33,7 @@ ht-degree: 20%
 
 下表介绍了内容属性和节点。
 
-## 常用集成属性{#common-integration-properties}
+## 常用集成属性 {#common-integration-properties}
 
 | **属性名称** | **类型** | **默认值或预期值** | **描述** |
 |---|---|---|---|
@@ -40,7 +44,7 @@ ht-degree: 20%
 | dps-lastUploaded | 日期 |  | 上次从AEM上传到AEM Mobile的日期 |
 | dps-lastUploadedBy | 字符串：userid |  | 执行从AEM到AEM Mobile的上次上传请求的id用户 |
 
-## 核心元数据属性{#core-metadata-properties}
+## 核心元数据属性 {#core-metadata-properties}
 
 | 属性名称 | 类型 | 默认值或预期值 |
 |--- |--- |--- |
@@ -50,7 +54,7 @@ ht-degree: 20%
 | dps-shortAbstract | 字符串 |  |
 | dps-department | 字符串 |  |
 | dps-category | 字符串 |  |
-| dps-keywords | String[] |  |
+| dps-keywords | 字符串[] |  |
 | dps-internalKeywords | 字符串[] |  |
 | dps-imporant | 字符串[] | {&quot;low&quot;、&quot;normal&quot;、&quot;high&quot;}的重要性 |
 
@@ -60,7 +64,7 @@ ht-degree: 20%
 |---|---|---|
 | dps-author | 字符串 |  |
 | dps-authorURL | 字符串 |  |
-| dps-hideFromBrowsePage | 布尔型 |  |
+| dps-hideFromBrowsePage | 布尔值 |  |
 | dps-access | 字符串 | ProtectedAccess来自{&quot;protected&quot;、&quot;metered&quot;、&quot;free&quot;} |
 | **Social** |  |  |
 | dps-socialShareURL | 字符串 |  |
@@ -80,14 +84,14 @@ ht-degree: 20%
 |--- |--- |--- |
 | dps-productId | 字符串 |  |
 | dps-readingPosition | 字符串 | 从{&quot;reset&quot;,&quot;retain&quot;} |
-| dps-horizontalSwipe | 布尔型 |  |
-| dps-allowDownload | 布尔型 |  |
+| dps-horizontalSwipe | 布尔值 |  |
+| dps-allowDownload | 布尔值 |  |
 | dps-openDefault | 字符串 | 从{&quot;browsePage&quot;,&quot;contentView&quot;} |
 | dps-layout | 字符串 |  |
 
-## 内容节点{#content-nodes}
+## 内容节点 {#content-nodes}
 
-### 公共节点{#common-nodes}
+### 公共节点 {#common-nodes}
 
 | 节点名称 | 类型 | 默认值或预期值 | 描述 |
 |--- |--- |--- |--- |

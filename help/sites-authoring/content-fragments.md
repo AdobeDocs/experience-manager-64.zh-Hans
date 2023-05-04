@@ -1,8 +1,8 @@
 ---
-title: 通过内容片段进行页面创作
-seo-title: 通过内容片段进行页面创作
-description: 通过 AEM 内容片段，您可以设计、创建、管理和使用独立于页面的内容
-seo-description: 通过 AEM 内容片段，您可以设计、创建、管理和使用独立于页面的内容
+title: 使用内容片段进行页面创作
+seo-title: Page Authoring with Content Fragments
+description: AEM内容片段允许您设计、创建、策划和使用独立于页面的内容
+seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
 uuid: 66ccdff8-1658-4374-8562-97f81f434488
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,26 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
 exl-id: bbe4ae86-e9b8-4c3f-ada3-82470e371c4e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 98%
+source-wordcount: '1189'
+ht-degree: 88%
 
 ---
 
-# 通过内容片段进行页面创作{#page-authoring-with-content-fragments}
+# 使用内容片段进行页面创作{#page-authoring-with-content-fragments}
 
 >[!CAUTION]
 >
->某些内容片段功能需要应用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md)。
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+>[!CAUTION]
+>
+>某些内容片段功能需要应用 [AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md).
 
 Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创建和管理](/help/assets/content-fragments.md)。
 
-这允许您创建渠道中性内容，以及各种（特定于渠道的）变量。您随后可以在创作内容页面时使用这些片段及其变量。
+这允许您创建渠道中性内容，以及各种（特定于渠道的）变体。您随后可以在创作内容页面时使用这些片段及其变体。
 
 结构化内容片段与更新的 JSON 导出程序结合使用时，还可用于通过 Content Services 将 AEM 内容传送到 AEM 页面以外的渠道。
 
@@ -33,7 +37,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 >
 >**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-authoring/experience-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
 >
->* **内容片段**&#x200B;是可编辑的内容，主要为文本和相关图像。它们是纯内容，不带有任何设计和布局。
+>* **内容片段**&#x200B;是可编辑内容，主要为文本和相关图像。它们是纯内容，无需设计和布局。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
@@ -55,7 +59,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 * **撰稿人**
 
    * 在 AEM 内容片段编辑器中编写。
-   * 可以创建内容变量。
+   * 可以创建内容变体。
    * 可以将相关内容与内容片段关联。
    * 可以使用版本控制/工作流。
    * 可以共享内容片段。
@@ -63,12 +67,12 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 * **生成器和旅行管理器**
 
-   * 从 AEM 内的预定义片段和具有创作功能的变量中选择。
+   * 从 AEM 内的预定义片段和具有创作功能的变体中选择。
    * 可以依赖始终保持最新的片段和关联内容，因为撰稿人和创意人员会在集中管理的片段和资产中进行更新。
    * 可以依赖为了相关性而进行管理的关联媒体内容。
-   * 可以快速创建随机内容变量，同时仍然确保这些变量在片段中受到集中管理。
+   * 可以快速创建随机内容变体，同时仍然确保这些变体在片段中受到集中管理。
 
-## 将内容片段添加到您的页面  {#adding-a-content-fragment-to-your-page}
+## 将内容片段添加到您的页面 {#adding-a-content-fragment-to-your-page}
 
 1. 打开您的页面进行编辑。
 
@@ -83,7 +87,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
    >
    >备选方法是将特定的内容片段直接拖到页面上。这将自动创建关联的组件（内容片段）。
 
-1. 最初，将显示&#x200B;**[!UICONTROL 主]**&#x200B;元素和&#x200B;**[!UICONTROL 母版]**（变量）中的内容。您可以根据需要[选择其他元素和/或变量](#selecting-the-element-or-variation)。
+1. 最初，将显示&#x200B;**[!UICONTROL 主]**&#x200B;元素和&#x200B;**[!UICONTROL 母版]**（变体）中的内容。您可以根据需要[选择其他元素和/或变体](#selecting-the-element-or-variation)。
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -95,7 +99,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
    >* [编辑页面内容](/help/sites-authoring/editing-content.md)
 
 
-## 选择元素或变量 {#selecting-the-element-or-variation}
+## 选择元素或变体 {#selecting-the-element-or-variation}
 
 打开片段的&#x200B;**[!UICONTROL 配置]**&#x200B;对话框以配置片段在当前页面上使用。该对话框取决于所使用的组件。
 
@@ -112,21 +116,21 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 * **[!UICONTROL 元素]**
 
-   * 默认的&#x200B;**[!UICONTROL 主元素]**&#x200B;将始终可用。
-   * 如果片段是通过适当的模板创建的，将有可选择的元素可用。
+   * 默认 **[!UICONTROL 主要]** 将始终可用。
+   * 如果片段是使用适当的模板创建的，则将有可用的选项。
 
    >[!NOTE]
    >
-   >有哪些元素可用取决于所使用的模板。
+   >可用的元素取决于所使用的模板。
 
-* **[!UICONTROL 变量]**
+* **[!UICONTROL 变体]**
 
    * 默认主 **[!UICONTROL 视图]** 将始终可用。
-   * 如果变量是为片段而创建的，将有可选择的变量可用。
+   * 如果变体是为片段而创建的，将有可选择的变体可用。
 
-* **[!UICONTROL 段落]**：指定要包含的段落范围：
+* **[!UICONTROL 段落]**:指定要包括的段落范围：
 
-   * **[!UICONTROL 全部]**
+   * **[!UICONTROL 所有]**
    * **[!UICONTROL 范围]**：例如 `1`、`3-5`、`9-*`
 
       * **[!UICONTROL 将标题处理为它们自己的段落]**
@@ -141,7 +145,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 >
 >通常情况下，编辑片段源将会影响引用该内容片段的所有页面。
 
-## 添加中间内容  {#adding-in-between-content}
+## 添加中间内容 {#adding-in-between-content}
 
 当指定的内容片段被添加到页面时，在片段的每个 HTML 段落之间（和顶部/底部）会有一个&#x200B;**[!UICONTROL 将组件拖动到此处]**&#x200B;占位符。
 
@@ -162,19 +166,22 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 >[!NOTE]
 >
 >您还可以[在片段本身中插入可视资产（图像）](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment)。
+>
 >在片段本身中插入的可视资产会附加到片段中的前一段落后面。这意味着无法在可视资产与前一段落之间放置中间内容。
 
 >[!CAUTION]
 >
 >在将中间内容添加到页面上的内容片段之后，更改基础内容片段的结构（例如在内容片段编辑器中）可能会导致错误/意外的结果。
+>
 >在发生此问题时，中间内容会按原样保留：
+>
 >* 中间组件在片段流的组件序列中具有一个绝对位置。即使片段中段落的内容发生更改，此位置也不会变化。\
->   这可能使其看起来像是相对位置发生了更改一样，因为中间段落与它们旁边的（片段）段落之间没有上下文关系。
+   >  这可能使其看起来像是相对位置发生了更改一样，因为中间段落与它们旁边的（片段）段落之间没有上下文关系。
 >* 除非两个段落结构产生冲突；在这种情况下，将不会显示中间内容（尽管它在内部依然存在）。
 >
 
 
-## 使用关联内容  {#using-associated-content}
+## 使用关联内容 {#using-associated-content}
 
 如果您有与[内容片段关联的](/help/assets/content-fragments-assoc-content.md)[内容](/help/assets/content-fragments.md) ，则这些资产将从侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是中间内容的[特殊内容源](#adding-in-between-content)。
 
@@ -194,14 +201,14 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 ## 插入到片段中的资产 {#assets-inserted-into-the-fragment}
 
-如果[已在片段本身中插入资产（例如图像）](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment)，则页面编辑器中用于编辑这些资产的选项会受到限制。
+如果 [已在片段本身中插入资产（例如图像）](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment)，则页面编辑器中用于编辑这些资产的选项会受到限制。
 
 例如，您可以对图像执行以下操作
 
-* 裁剪、旋转或翻转图像。
+* 裁切、旋转或翻转图像。
 * 添加标题或替换文本。
 * 指定大小。
-* 您还可以配置布局。
+* 您还可以配置版面。
 
 移动、复制和删除等其他更改必须在片段编辑器中进行。
 

@@ -4,14 +4,18 @@ seo-title: Security
 description: 应用程序安全性在开发阶段启动
 seo-description: Application Security starts during the development phase
 exl-id: 22c48f8c-38df-4c9b-88cf-67f6ae46e7e1
-source-git-commit: 70d86d2a8c9654a52a2d2c4a000cc101c54a4552
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 0%
+source-wordcount: '462'
+ht-degree: 1%
 
 ---
 
 # 安全性{#security}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 应用程序安全性在开发阶段启动。 Adobe建议应用以下安全最佳实践。
 

@@ -1,18 +1,22 @@
 ---
-title: 审核文件夹资产和收藏集
+title: 审核文件夹资源和收藏集
 description: 为文件夹或收藏集中的资产设置审核工作流，并与审阅人或创意合作伙伴共享该工作流，以寻求反馈。
 contentOwner: AG
 feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 24%
+source-wordcount: '847'
+ht-degree: 22%
 
 ---
 
-# 审核文件夹资产和收藏集 {#review-folder-assets-and-collections}
+# 审核文件夹资源和收藏集 {#review-folder-assets-and-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 为文件夹或收藏集中的资产设置审核工作流，并与审阅人或创意合作伙伴共享该工作流，以寻求反馈。
 
@@ -31,17 +35,17 @@ Adobe Experience Manager Assets允许您为文件夹或收藏集中的资产设�
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. （可选）从&#x200B;**[!UICONTROL 项目]**&#x200B;列表中，选择要将审核任务关联到的项目。 默认情况下，选中&#x200B;**[!UICONTROL None]**&#x200B;选项。 如果不想将任何项目与审核任务关联，请保留此选择。
+1. （可选）从 **[!UICONTROL 项目]** 列表中，选择要将审核任务关联到的项目。 默认情况下， **[!UICONTROL 无]** 选项。 如果不想将任何项目与审核任务关联，请保留此选择。
 
    >[!NOTE]
    >
-   >只有您具有编辑器级别权限（或更高级别）的项目才会显示在&#x200B;**[!UICONTROL 项目]**&#x200B;列表中。
+   >只有您具有编辑者级别权限（或更高级别）的项目才会显示在 **[!UICONTROL 项目]** 列表。
 
-1. 输入审核任务的名称，然后从&#x200B;**[!UICONTROL 分配给]**&#x200B;列表中选择审批者。
+1. 输入审核任务的名称，然后从 **[!UICONTROL 分配给]** 列表。
 
    >[!NOTE]
    >
-   >在&#x200B;**[!UICONTROL Assign To]**&#x200B;列表中，选定项目的成员/组可作为批准者。
+   >选定项目的成员/组在 **[!UICONTROL 分配给]** 列表。
 
 1. 输入审核任务的说明、任务优先级和到期日期。
 
@@ -52,7 +56,7 @@ Adobe Experience Manager Assets允许您为文件夹或收藏集中的资产设�
    ![review_name](assets/review_name.png)
 
 1. 点按／单 **[!UICONTROL 击提交]**，然后点按／单 **[!UICONTROL 击完成]** ，关闭确认消息。 新任务的通知将发送给审批者。
-1. 以审批者身份登录到[!DNL Experience Manager]资产，然后导航到资产UI。 要批准资产，请单击/点按&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
+1. 登录到 [!DNL Experience Manager] 资产作为审批者，并导航到资产UI。 要批准资产，请单击/点按 **[!UICONTROL 通知]** 图标，然后从列表中选择审核任务。
 
    ![通知](assets/notification.png)
 
@@ -61,10 +65,10 @@ Adobe Experience Manager Assets允许您为文件夹或收藏集中的资产设�
 
    ![review_task](assets/review_task.png)
 
-1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 完成]**&#x200B;图标。在对话框中，输入注释，然后点按/单击&#x200B;**[!UICONTROL 完成]**&#x200B;以确认。
+1. 点按/单击 **[!UICONTROL 完成]** 图标。 在对话框中，输入评论，然后点按/单击  **[!UICONTROL 完成]** 确认。
 1. 导航到资产UI，然后打开文件夹。 资产的批准状态图标会同时显示在卡片视图和列表视图中。
 
-   **卡片视图**
+   **信息卡视图**
 
    ![chlimage_1-404](assets/chlimage_1-404.png)
 
@@ -79,33 +83,33 @@ Adobe Experience Manager Assets允许您为文件夹或收藏集中的资产设�
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. （可选）从&#x200B;**[!UICONTROL 项目]**&#x200B;列表中，选择要将审核任务关联到的项目。 默认情况下，选中&#x200B;**[!UICONTROL None]**&#x200B;选项。 如果不想将任何项目与审核任务关联，请保留此选择。
+1. （可选）从 **[!UICONTROL 项目]** 列表中，选择要将审核任务关联到的项目。 默认情况下， **[!UICONTROL 无]** 选项。 如果不想将任何项目与审核任务关联，请保留此选择。
 
    >[!NOTE]
    >
-   >只有您具有编辑器级别权限（或更高级别）的项目才会显示在&#x200B;**[!UICONTROL 项目]**&#x200B;列表中。
+   >只有您具有编辑者级别权限（或更高级别）的项目才会显示在 **[!UICONTROL 项目]** 列表。
 
-1. 输入审核任务的名称，然后从&#x200B;**[!UICONTROL 分配给]**&#x200B;列表中选择审批者。
+1. 输入审核任务的名称，然后从 **[!UICONTROL 分配给]** 列表。
 
    >[!NOTE]
    >
-   >在&#x200B;**[!UICONTROL Assign To]**&#x200B;列表中，选定项目的成员/组可作为批准者。
+   >选定项目的成员/组在 **[!UICONTROL 分配给]** 列表。
 
 1. 输入审核任务的说明、任务优先级和到期日期。
 
    ![task_details-collection](assets/task_details-collection.png)
 
 1. 点按／单 **[!UICONTROL 击提交]**，然后点按／单 **[!UICONTROL 击完成]** ，关闭确认消息。 新任务的通知将发送给审批者。
-1. 以审批者身份登录到[!DNL Experience Manager]资产，然后导航到资产控制台。 要批准资产，请点按/单击&#x200B;**[!UICONTROL 通知]**&#x200B;图标，然后从列表中选择审核任务。
+1. 登录到 [!DNL Experience Manager] 资产作为审批者，并导航到资产控制台。 要批准资产，请点按/单击 **[!UICONTROL 通知]** 图标，然后从列表中选择审核任务。
 1. 在&#x200B;**[!UICONTROL 审查任务]**&#x200B;页面中，检查审查任务的详细信息，然后点按/单击&#x200B;**[!UICONTROL 审查]**。
-1. 收藏集中的所有资产都会在审核页面上可见。 选择资产，然后点按/单击&#x200B;**[!UICONTROL 批准/拒绝]**&#x200B;图标，以批准或拒绝资产（根据需要）。
+1. 收藏集中的所有资产都会在审核页面上可见。 选择资产，然后点按/单击 **[!UICONTROL 批准/拒绝]** 图标以批准或拒绝资产。
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. 点按/单击工具栏中的&#x200B;**[!UICONTROL 完成]**&#x200B;图标。在对话框中，输入注释，然后点按/单击&#x200B;**[!UICONTROL 完成]**&#x200B;以确认。
+1. 点按/单击 **[!UICONTROL 完成]** 图标。 在对话框中，输入评论，然后点按/单击 **[!UICONTROL 完成]** 确认。
 1. 导航到收藏集控制台并打开收藏集。 资产的批准状态图标会同时显示在卡片视图和列表视图中。
 
-   **卡片视图**
+   **信息卡视图**
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 

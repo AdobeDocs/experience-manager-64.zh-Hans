@@ -1,22 +1,26 @@
 ---
 title: 使用JSON模式创建自适应表单
-seo-title: 使用JSON模式创建自适应表单
-description: '自适应表单可以使用JSON模式作为表单模型，从而允许您利用现有JSON模式创建自适应表单。 '
-seo-description: '自适应表单可以使用JSON模式作为表单模型，从而允许您利用现有JSON模式创建自适应表单。 '
+seo-title: Creating adaptive forms using JSON Schema
+description: 自适应表单可以使用JSON模式作为表单模型，从而允许您利用现有JSON模式创建自适应表单。
+seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
-feature: 自适应表单
+feature: Adaptive Forms
 exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 3%
+source-wordcount: '1243'
+ht-degree: 4%
 
 ---
 
-# 使用JSON模式{#creating-adaptive-forms-using-json-schema}创建自适应表单
+# 使用JSON模式创建自适应表单 {#creating-adaptive-forms-using-json-schema}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 前提条件 {#prerequisites}
 
@@ -25,9 +29,9 @@ ht-degree: 3%
 * [创建自适应表单](/help/forms/using/creating-adaptive-form.md)
 * [JSON架构](https://json-schema.org/)
 
-## 使用JSON模式作为表单模型{#using-a-json-schema-as-form-model}
+## 使用JSON模式作为表单模型  {#using-a-json-schema-as-form-model}
 
-AEM Forms支持使用现有JSON模式作为表单模型来创建自适应表单。 此JSON模式表示组织内的后端系统在其中生成或使用数据的结构。 您使用的JSON架构应符合[v4规范](https://json-schema.org/draft-04/schema)。
+AEM Forms支持使用现有JSON模式作为表单模型来创建自适应表单。 此JSON模式表示组织内的后端系统在其中生成或使用数据的结构。 您使用的JSON架构应与 [v4规范](https://json-schema.org/draft-04/schema).
 
 使用JSON架构的主要功能包括：
 
@@ -66,16 +70,16 @@ JSON元素与自适应表单组件的映射如下所示：
    <td><br /> <br /> 文本字段<br /> <br /> <br /> </td> 
   </tr> 
   <tr> 
-   <td>number属性<br /> </td> 
-   <td>子类型设置为float<br />的数值字段 </td> 
+   <td>数字属性<br /> </td> 
+   <td>子类型设置为浮点的数值字段<br /> </td> 
   </tr> 
   <tr> 
    <td>整数属性<br /> </td> 
-   <td>子类型设置为integer<br />的数字字段 </td> 
+   <td>子类型设置为整数的数字字段<br /> </td> 
   </tr> 
   <tr> 
    <td>布尔属性<br /> </td> 
-   <td>切换<br /> </td> 
+   <td>开关<br /> </td> 
   </tr> 
   <tr> 
    <td>对象属性<br /> </td> 
@@ -88,7 +92,7 @@ JSON元素与自适应表单组件的映射如下所示：
  </tbody> 
 </table>
 
-### 常用架构属性{#common-schema-properties}
+### 常见架构属性 {#common-schema-properties}
 
 自适应表单使用JSON模式中可用的信息来映射每个生成的字段。 特别是：
 
@@ -98,13 +102,13 @@ JSON元素与自适应表单组件的映射如下所示：
 * maxLength属性设置为文本字段组件的maxlength属性。
 * “数值”框组件使用最小、最大、exclusiveMinimum和exclusiveMaximum属性。
 * 为了支持DatePicker组件的范围，还提供了其他JSON架构属性minDate和maxDate。
-* minItems和maxItems属性用于限制可添加或从面板组件中删除的项目/字段数。
+* minItems和maxItems属性用于限制可从面板组件添加或删除的项目/字段数。
 * readOnly属性可设置自适应表单组件的只读属性。
 * 必需属性将自适应表单字段标记为必填字段，而对于面板（其中类型是对象），最终提交的JSON数据具有对应于该对象的空值的字段。
 * 模式属性设置为自适应表单中的验证模式（正则表达式）。
-* JSON架构文件的扩展名必须保留为.schema.json。 例如， &lt;filename>.schema.json。
+* JSON架构文件的扩展名必须保留为.schema.json。 例如， &lt;filename>.schema.json.
 
-## JSON架构{#sample-json-schema}示例
+## JSON架构示例 {#sample-json-schema}
 
 以下是JSON模式的示例。
 
@@ -286,7 +290,7 @@ JSON元素与自适应表单组件的映射如下所示：
 }
 ```
 
-### 可重用架构定义{#reusable-schema-definitions}
+### 可重用架构定义 {#reusable-schema-definitions}
 
 定义键用于标识可重用的架构。 可重用架构定义用于创建片段。 它类似于在XSD中标识复杂类型。 下面提供了一个具有定义的JSON模式示例：
 
@@ -317,9 +321,9 @@ JSON元素与自适应表单组件的映射如下所示：
 
 上例定义了客户记录，其中每个客户都同时具有送货地址和帐单地址。 两个地址的结构相同 — 地址具有街道地址、城市地址和州地址 — 因此最好不要重复这些地址。 此外，还可以轻松添加和删除字段，以便将来进行任何更改。
 
-## 在JSON架构定义{#pre-configuring-fields-in-json-schema-definition}中预配置字段
+## 在JSON架构定义中预配置字段 {#pre-configuring-fields-in-json-schema-definition}
 
-您可以使用&#x200B;**aem:afProperties**&#x200B;属性预配置JSON架构字段以映射到自定义自适应表单组件。 下面列出了一个示例：
+您可以使用 **aem:afProperties** 属性来预配置要映射到自定义自适应表单组件的JSON架构字段。 下面列出了一个示例：
 
 ```
 {
@@ -339,7 +343,7 @@ JSON元素与自适应表单组件的映射如下所示：
 }
 ```
 
-## 限制自适应表单组件{#limit-acceptable-values-for-an-adaptive-form-component}的可接受值
+## 限制自适应表单组件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
 
 您可以向JSON架构元素添加以下限制，以限制自适应表单组件可接受的值：
 
@@ -375,7 +379,7 @@ JSON元素与自适应表单组件的映射如下所示：
   </tr> 
   <tr> 
    <td><p><code>exclusiveMaximum</code></p> </td> 
-   <td><p>布尔型</p> </td> 
+   <td><p>布尔值</p> </td> 
    <td><p>如果为true，则在表单组件中指定的数值或日期必须小于为maximum属性指定的数值或日期。</p> <p>如果为false，则表单组件中指定的数值或日期必须小于或等于为最大属性指定的数值或日期。</p> </td> 
    <td> 
     <ul> 
@@ -386,7 +390,7 @@ JSON元素与自适应表单组件的映射如下所示：
   </tr> 
   <tr> 
    <td><p><code>exclusiveMinimum</code></p> </td> 
-   <td><p>布尔型</p> </td> 
+   <td><p>布尔值</p> </td> 
    <td><p>如果为true，则表单组件中指定的数值或日期必须大于为最小属性指定的数值或日期。</p> <p>如果为false，则表单组件中指定的数值或日期必须大于或等于为最小属性指定的数值或日期。</p> </td> 
    <td> 
     <ul> 
@@ -437,7 +441,7 @@ JSON元素与自适应表单组件的映射如下所示：
  </tbody> 
 </table>
 
-## 不支持的构造{#non-supported-constructs}
+## 不支持的构造  {#non-supported-constructs}
 
 自适应表单不支持以下JSON模式构建：
 
@@ -452,7 +456,7 @@ JSON元素与自适应表单组件的映射如下所示：
 
 在可重复的子表单中，您必须使用完整的子表单。 如果只希望选择字段，请使用整个结构并删除不需要的字段。
 
-**我在内容查找器中有一个很长的复杂结构。如何查找特定元素？**
+**我在内容查找器中有一个很长的复杂结构。 如何查找特定元素？**
 
 您有两个选项：
 

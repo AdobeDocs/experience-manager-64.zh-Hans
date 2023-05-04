@@ -1,22 +1,26 @@
 ---
 title: 基于XDP的自适应表单中的XFA支持
-seo-title: 基于XDP的自适应表单中的XFA支持
+seo-title: XFA support in XDP-based adaptive forms
 description: 列出自适应表单中支持的XFA事件、属性、脚本和验证。
-seo-description: 列出自适应表单中支持的XFA事件、属性、脚本和验证。
+seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
 uuid: 2f976de3-2cdf-4bbb-acd1-048a498930f0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
-feature: 自适应表单
+feature: Adaptive Forms
 exl-id: 86596819-8108-409e-af14-4634e8a1959d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '719'
 ht-degree: 5%
 
 ---
 
-# 基于XDP的自适应表单{#xfa-support-in-xdp-based-adaptive-forms}中支持XFA
+# 基于XDP的自适应表单中的XFA支持 {#xfa-support-in-xdp-based-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 简介 {#introduction}
 
@@ -30,7 +34,7 @@ ht-degree: 5%
 
 本文列出了自适应表单中受支持的XFA事件、属性和验证，并说明如何在自适应表单中覆盖它们。
 
-## 自适应表单{#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}中支持的XFA元素及其映射
+## 自适应表单中支持的XFA元素及其映射 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### 字段 {#fields}
 
@@ -140,39 +144,39 @@ ht-degree: 5%
    <td><p>在自适应表单中映射到简短描述属性。</p> </td> 
   </tr>
   <tr>
-   <td><p>题注<em>（所有字段类型）</em></p> </td> 
+   <td><p>字幕<em> （所有字段类型）</em></p> </td> 
    <td><p>在自适应表单中映射到标题属性。</p> </td> 
   </tr>
   <tr>
-   <td><p>displayFormat<em>（所有字段类型）</em></p> </td> 
+   <td><p>displayFormat<em> （所有字段类型）</em></p> </td> 
    <td><p>在自适应表单中映射到显示模式。</p> </td> 
   </tr>
   <tr>
-   <td><p>rawValue<em>（所有字段类型）</em></p> </td> 
+   <td><p>rawValue<em> （所有字段类型）</em></p> </td> 
    <td><p>映射到自适应表单中的值属性。</p> </td> 
   </tr>
   <tr>
-   <td><p>项目<em>（列表框，复选框）</em></p> </td> 
+   <td><p>项目<em> （列表框、复选框）</em></p> </td> 
    <td><p>在自适应表单中映射到options属性。 您可以使用“选项”表达式覆盖它。</p> </td> 
   </tr>
   <tr>
-   <td><p>maxChar<em>（文本字段）</em></p> </td> 
+   <td><p>maxChar<em> （文本字段）</em></p> </td> 
    <td><p>在自适应表单中映射到允许的最大字符数属性。</p> </td> 
   </tr>
   <tr>
-   <td><p>多行<em>（文本字段）</em></p> </td> 
+   <td><p>多线<em> （文本字段）</em></p> </td> 
    <td><p>在自适应表单中映射到允许多行属性。</p> </td> 
   </tr>
   <tr>
-   <td><p>fracDigit<em>（数字字段，小数字段）</em></p> </td> 
+   <td><p>fracDigit<em> （数字字段、小数字段）</em></p> </td> 
    <td><p>在自适应表单中映射到Frac digits属性。</p> </td> 
   </tr>
   <tr>
-   <td><p>leadDigit<em>（数字字段，小数字段）</em></p> </td> 
+   <td><p>leadDigit<em> （数字字段、小数字段）</em></p> </td> 
    <td><p>在自适应表单中映射到潜在客户位数属性。</p> </td> 
   </tr>
   <tr>
-   <td><p>multiSelect<em>（列表框）</em></p> </td> 
+   <td><p>multiSelect<em> （列表框）</em></p> </td> 
    <td><p>映射到自适应表单中允许多个选择属性。</p> </td> 
   </tr>
  </tbody>
@@ -247,7 +251,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>必需(nullTest)</p> </td> 
-   <td><p>mandatory </p> </td> 
+   <td><p>强制 </p> </td> 
   </tr>
   <tr>
    <td><p>空消息(nullTestMessage) </p> </td> 

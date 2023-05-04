@@ -1,8 +1,8 @@
 ---
 title: 在AEM Forms中获取XDP和PDF文档
-seo-title: 在AEM Forms中获取XDP和PDF文档
+seo-title: Getting XDP and PDF documents in AEM Forms
 description: AEM Forms允许您上传表单和受支持的资产，以便与自适应表单结合使用。 您还可以通过ZIP批量上传表单和相关资源。
-seo-description: AEM Forms允许您上传表单和受支持的资产，以便与自适应表单结合使用。 您还可以通过ZIP批量上传表单和相关资源。
+seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: c2a86d89-0c56-4d29-932a-dd09277fa7cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,18 @@ topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
 role: Admin
 exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
 # 在AEM Forms中获取XDP和PDF文档 {#getting-xdp-and-pdf-documents-in-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
@@ -25,23 +29,23 @@ ht-degree: 0%
 
 * 表单模板（XFA表单）
 * PDF forms
-* 文档（平面PDF文档）
+* 文档(平面PDF文档)
 
-您可以单独或以ZIP存档形式上传受支持的资产类型。 您只能上传`Resource`类型的资产，并在ZIP存档中与XFA表单一起上传。
+您可以单独或以ZIP存档形式上传受支持的资产类型。 您可以上传类型的资产 `Resource`，仅与ZIP存档中的XFA表单一起使用。
 
 >[!NOTE]
 >
->确保您是`form-power-users`组的成员，才能上传XDP文件。 请联系您的管理员以成为组的成员。
+>确保您是 `form-power-users` 组，以便能够上传XDP文件。 请联系您的管理员以成为组的成员。
 
 ## 上传表单 {#uploading-forms}
 
-1. 通过访问`https://[server]:[port]/aem/forms.html`登录AEM Forms用户界面。
+1. 通过访问 `https://[server]:[port]/aem/forms.html`.
 1. 导航到要上传表单的文件夹，或包含表单的文件夹。
-1. 在操作工具栏中，点按&#x200B;**创建>文件上传**。
+1. 在操作工具栏中，点按 **创建>文件上传**.
 
    ![“创建”下的“来自本地存储的文件”选项](assets/step.png)
 
-1. “上传表单”或“包”对话框允许您浏览并选择要上传的文件。 文件浏览器仅显示支持的文件格式（ZIP、XDP和PDF）。
+1. “上传表单”或“包”对话框允许您浏览并选择要上传的文件。 文件浏览器仅显示支持的文件格式(ZIP、XDP和PDF)。
 
    >[!NOTE]
    >
@@ -67,15 +71,15 @@ AEM Forms服务器允许您运行JavaScript代码。 恶意JavaScript代码可�
 
 默认情况下，受保护模式处于打开状态。 如有必要，您可以禁用受保护模式：
 
-1. 以管理员身份登录AEM Web Console。 URL为`https://[server]:[port]/system/console/configMgr`
+1. 以管理员身份登录AEM Web Console。 URL为 `https://[server]:[port]/system/console/configMgr`
 1. 打开移动Forms配置进行编辑。
-1. 取消选择“受保护模式”选项，然后单击&#x200B;**Save**。 已禁用受保护模式。
+1. 取消选择“保护模式”选项，然后单击 **保存**. 已禁用受保护模式。
 
 ## 更新引用的XFA表单 {#updating-referenced-xfa-forms}
 
 在AEM Forms中，XFA表单模板可以由自适应表单或其他XFA表单模板引用。 此外，模板可以引用资源或其他XFA模板。
 
-引用XFA的自适应表单的字段与XFA中的可用字段绑定。 更新表单模板时，关联的自适应表单会尝试与XFA同步。 有关更多详细信息，请参阅[将自适应表单与关联的XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)同步。
+引用XFA的自适应表单的字段与XFA中的可用字段绑定。 更新表单模板时，关联的自适应表单会尝试与XFA同步。 有关更多详细信息，请参阅 [将自适应表单与关联的XFA同步](/help/forms/using/synchronizing-adaptive-forms-xfa.md).
 
 删除表单模板会损坏从属自适应表单或表单模板。 这种自适应表单有时被非正式地称为肮脏表单。 在AEM Forms用户界面中，您可以通过以下两种方式找到脏表单。
 
@@ -85,6 +89,6 @@ AEM Forms服务器允许您运行JavaScript代码。 恶意JavaScript代码可�
 
 ![更新关联的XFA后，自适应表单不同步的警告](assets/dirtyaf.png)
 
-将维护一个标志，以指示自适应表单是否脏。 此信息可在表单属性页面上和表单元数据一起使用。 仅对于脏自适应表单，元数据属性`Model Refresh`显示`Recommended`值。
+将维护一个标志，以指示自适应表单是否脏。 此信息可在表单属性页面上和表单元数据一起使用。 仅对于脏自适应表单，元数据属性 `Model Refresh` 显示 `Recommended` 值。
 
 ![表示自适应表单与XFA模型不同步](assets/model-refresh.png)

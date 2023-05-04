@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 66c19394-9d2f-4bdd-9c17-f0ec8090f0b4
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 11%
+source-wordcount: '785'
+ht-degree: 8%
 
 ---
 
 # We.Retail参考实施{#we-retail-reference-implementation}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 简介 {#introduction}
 
@@ -31,7 +35,7 @@ We.Retail利用最新的AEM技术，例如HTL、响应式布局、可编辑的�
 
 作为AEM标准参考实施，We.Retail展示了AEM的一些最强大功能。
 
-| **功能** | **描述** | **有兴趣吗？** |
+| **专题** | **描述** | **有兴趣吗？** |
 |---|---|---|
 | [全球化网站结构](/help/sites-administering/tc-bp.md) | We.Retail包含实时复制到特定于国家/地区的网站中的语言母版。 | [试试看！](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [响应式布局](/help/sites-authoring/responsive-layout.md) | 所有页面都具有响应式布局，可根据屏幕和设备大小动态进行调整。 | [试试看！](/help/sites-developing/we-retail-responsive-layout.md) |
@@ -41,7 +45,7 @@ We.Retail利用最新的AEM技术，例如HTL、响应式布局、可编辑的�
 | [社区站点](/help/communities/overview.md) | 允许访客加入社区讨论、阅读博客等 |  |
 | [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) | 所有组件都基于新的核心组件，并且更易用，用户可开箱即用地配置 | [试试看！](/help/sites-developing/we-retail-core-components.md) |
 | [内容片段](/help/assets/content-fragments.md) | “We.Retail体验”部分展示了通过内容片段重用内容的强大功能。 | [试试看！](/help/sites-developing/we-retail-content-fragments.md) |
-| [体验片段](/help/sites-authoring/experience-fragments.md) | 体验片段是由一个或多个组件构成的组件组，包括可在页面内引用的内容和布局。 | [试试看！](/help/sites-developing/we-retail-experience-fragments.md) |
+| [体验片段](/help/sites-authoring/experience-fragments.md) | 体验片段是由一个或多个组件组成的组，这些组件包括可在页面中引用的内容和布局。 | [试试看！](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## 快速入门 {#getting-started}
 
@@ -79,7 +83,7 @@ We.Retail在技术上更加稳健，利用最新的AEM技术更灵活、更具�
 * **可用** 表示在示例内容中找到该功能的示例。
 * **不可用** 表示该功能的示例在示例内容中不可用，但并不表示该功能本身不可用。
 
-| **功能** | **We.Retail** | **Geometrixx** |
+| **专题** | **We.Retail** | **Geometrixx** |
 |---|---|---|
 | 全球化网站结构 | 将语言母版实时复制到特定于国家/地区的站点 | 不可用 |
 | 内容片段 | 可用 | 不可用 |
@@ -88,12 +92,12 @@ We.Retail在技术上更加稳健，利用最新的AEM技术更灵活、更具�
 | 可编辑模板 | 适用于所有页面 | 不可用 |
 | HTL | 所有组件 | 有限 |
 | 定位 | 适用于所有页面 | 仅Geometrixx Outdoors |
-| 屏幕 | 可用 | 不可用 |
+| Screens | 可用 | 不可用 |
 | 移动设备 | 不可用 | 可用 |
 | 手稿 | 不可用 | 可用 |
 | 轮播、下载、图表组件 | 不可用 | 可用 |
 | 列控件 | 替换为布局容器 | 可用 |
-| 表单 | 不可用 | 可用 |
+| Forms | 不可用 | 可用 |
 | 营销活动 | 无电子邮件示例 | 可用 |
 
 >[!NOTE]

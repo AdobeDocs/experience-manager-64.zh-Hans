@@ -1,8 +1,8 @@
 ---
 title: 组件侧加载
-seo-title: 组件侧加载
+seo-title: Component Sideloading
 description: 将网页设计为简单的单页应用程序时，如果该应用程序会根据网站访客选择的内容动态更改显示的内容，则社区组件会侧加载非常有用
-seo-description: 将网页设计为简单的单页应用程序时，如果该应用程序会根据网站访客选择的内容动态更改显示的内容，则社区组件会侧加载非常有用
+seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 exl-id: 12fdc503-29b6-4970-a883-c22162f7a9eb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 0%
+source-wordcount: '441'
+ht-degree: 1%
 
 ---
 
-# 组件侧加载{#component-sideloading}
+# 组件侧加载 {#component-sideloading}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
@@ -33,7 +37,7 @@ ht-degree: 0%
 
 1. [将组件添加到DOM](#dynamically-add-component-to-dom)
 
-1. [使用以下](#sideload-by-invoking-scf) 两种方法之一侧载组件：
+1. [侧载组件](#sideload-by-invoking-scf) 使用以下两种方法之一：
 
 * [动态包含](#dynamic-inclusion)
    * 引导所有动态添加的组件
@@ -42,21 +46,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->不支持对[非现有资源](scf.md#add-or-include-a-communities-component)进行侧加载。
+>副加载 [非现有资源](scf.md#add-or-include-a-communities-component) 不支持。
 
 ## 将组件动态添加到DOM {#dynamically-add-component-to-dom}
 
 无论组件是动态包含的还是动态加载的，都必须先将其添加到DOM中。
 
-添加SCF组件时，最常用的标记是DIV标记，但也可能使用其他标记。 由于SCF仅在页面最初加载时才检查DOM，因此在明确调用SCF之前，DOM的这一附加内容不会被注意。
+添加SCF组件时，最常用的标记是DIV标记，但也可以使用其他标记。 由于SCF仅在页面最初加载时才检查DOM，因此在明确调用SCF之前，DOM的这一附加内容不会被注意。
 
 无论使用什么标记，元素都必须至少符合正常的SCF根元素模式，方法是包含以下两个属性：
 
-* **data-component-id添**
-加的组件的有效路径
+* **data-component-id**
+添加的组件的有效路径
 
-* **data-scf-**
-componentrentresourceType组件
+* **数据 — scf-component**
+组件的resourceType
 
 以下是添加的注释组件的一个示例：
 
@@ -69,9 +73,9 @@ componentrentresourceType组件
 </div>
 ```
 
-## 通过调用SCF {#sideload-by-invoking-scf}进行侧载
+## 通过调用SCF进行侧载 {#sideload-by-invoking-scf}
 
-### 动态包含{#dynamic-inclusion}
+### 动态包含 {#dynamic-inclusion}
 
 动态包含使用引导请求，导致SCF检查DOM并引导页面上找到的所有SCF组件。
 
@@ -79,7 +83,7 @@ componentrentresourceType组件
 
 $(document)。trigger(SCF.events.BOOTSTRAP_REQUEST);
 
-### 动态加载{#dynamic-loading}
+### 动态加载 {#dynamic-loading}
 
 动态加载可以控制对SCF组件的加载。
 
@@ -87,4 +91,4 @@ $(document)。trigger(SCF.events.BOOTSTRAP_REQUEST);
 
 SCF.addComponent(document.getElementById(*someId*));
 
-其中&#x200B;*someId*&#x200B;是&#x200B;**data-component-id**&#x200B;属性的值。
+其中 *someId* 是 **data-component-id** 属性。

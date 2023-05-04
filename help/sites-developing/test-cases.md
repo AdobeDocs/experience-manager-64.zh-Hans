@@ -1,8 +1,8 @@
 ---
 title: 定义测试案例
-seo-title: 定义测试案例
+seo-title: Defining your Test Cases
 description: 您的测试用例应基于用例和详细要求规范
-seo-description: 您的测试用例应基于用例和详细要求规范
+seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
 uuid: 82dff825-da58-49a2-bf35-f5bb905e523d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
 exl-id: ad529be3-9d31-492f-943f-ef3e99e13586
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 0%
+source-wordcount: '565'
+ht-degree: 1%
 
 ---
 
-# 定义测试用例{#defining-your-test-cases}
+# 定义测试案例{#defining-your-test-cases}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 您的测试案例应基于：
 
@@ -39,7 +43,7 @@ ht-degree: 0%
 
 自动化测试用例的前景显然具有吸引力，因为它可以消除重复性任务。
 
-## 手动测试与自动测试{#manual-versus-automated-tests}
+## 手动测试与自动测试 {#manual-versus-automated-tests}
 
 但是，自动化测试案例是一项重大投资，因此应考虑以下某些方面：
 
@@ -48,21 +52,19 @@ ht-degree: 0%
 * 只对大项目是可行的。
 * 当为测试或在长期发行计划中生成多个版本时，这是好事。
 
-## 测试特定方面{#testing-specific-aspects}
+## 测试特定方面 {#testing-specific-aspects}
 
 在测试AEM时，需要特别注意的一些特定详细信息：
 
 创作和发布环境
 
-尽管在[Environments](/help/sites-developing/the-basics.md#environments)中已涵盖，但是，有必要强调AEM在测试方面的决定性因素。
+不过， [环境](/help/sites-developing/the-basics.md#environments) 在测试方面，需要强调AEM的决定因素。
 
 您必须将AEM视为两个应用程序：
 
-* **创作**环境
-此实例允许作者输入和发布内容。
+* the **作者** 环境此实例允许作者输入和发布内容。
 这有一小组（呃）可预测的用户，对于这些用户而言，特定功能和性能至关重要。
-* **发布**环境
-此实例以其发布的形式显示网站，供访客访问。
+* the **发布** 环境此实例以其发布的形式显示网站，供访客访问。
 这通常有更大的一组用户，其中流量并非总是100%可预测。 在响应请求时，性能仍然至关重要。 还必须考虑缓存和负载平衡。
 
 尽管软件与此相同，但它们：
@@ -87,17 +89,17 @@ ht-degree: 0%
 
 测试很困难（缓存发生在不同级别和不同位置），且必须使用黑匣子进行。 要测试的关键方面包括：
 
-* **准确性**;确保网站访客能够看到内容更新。
+* **准确度**;确保网站访客能够看到内容更新。
 * **连续性**;确保当一台服务器关闭时网站仍然可用。
-* **** ClustersClusters用于提供：
-   * ****
-故障转移如果一台服务器出现故障，群集中的其他服务器将接管处理。
-   * ****
-具有完全故障转移的PerformanceLoad平衡可提高群集的性能。
+* **聚类** 群集用于提供：
+   * **故障转移**
+如果一台服务器出现故障，则群集中的其他服务器将接管处理。
+   * **性能**
+具有完全故障转移的负载平衡可提高群集的性能。
 
 当用于客户项目时，必须测试群集以确认配置的正确操作。
 
-## 测试第三方软件{#testing-third-party-software}
+## 测试第三方软件 {#testing-third-party-software}
 
 任何与AEM接口的第三方软件都将在详细要求规范中引用。
 

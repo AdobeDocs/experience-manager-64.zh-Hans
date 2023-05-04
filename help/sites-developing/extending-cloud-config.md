@@ -6,20 +6,24 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 4%
 
 ---
 
 # Cloud Service 配置{#cloud-service-configurations}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 配置旨在提供用于存储服务配置的逻辑和结构。
 
 您可以扩展现有实例以创建您自己的配置。
 
-## 概念  {#concepts}
+## 概念 {#concepts}
 
 在开发配置时使用的原则基于以下概念：
 
@@ -175,7 +179,7 @@ propertyname
    <td>要自动包含在页面中的组件的引用路径。<br /> 此插件可用于其他功能和JS包含项。<br /> 这包括页面上的组件，其中<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> 包含(通常在 <code>body</code> 标记)。<br /> 对于Analytics和Target，我们使用此功能包含其他功能，例如用于跟踪访客行为的JavaScript调用。</td> 
   </tr> 
   <tr> 
-   <td>描述</td> 
+   <td>说明</td> 
    <td>服务的简短描述。<br /> </td> 
   </tr> 
   <tr> 

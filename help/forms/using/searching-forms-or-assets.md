@@ -1,8 +1,8 @@
 ---
 title: 搜索表单和资产
-seo-title: 搜索表单和资产
+seo-title: Searching for forms and assets
 description: 您可以使用AEM搜索在AEM实例中搜索表单和资产。 通过基本和高级搜索，您可以快速找到资产。
-seo-description: 您可以使用AEM搜索在AEM实例中搜索表单和资产。 通过基本和高级搜索，您可以快速找到资产。
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: db6970aa-910a-4190-9790-9ffbbdc8adcc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,20 +10,24 @@ topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 role: Admin
 exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '720'
 ht-degree: 4%
 
 ---
 
 # 搜索表单和资产 {#searching-for-forms-and-assets}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 您可以使用文本字符串或文本字符串以及通配符搜索表单或表单资产。 您还可以使用“搜索”面板中各个类别中提供的标准来缩小搜索范围。
 
 当您选择一个或多个标准并指定文本字符串时，将返回文本和标准的交集作为搜索结果。 搜索结果与提供的表单和资产元数据一样好。
 
-单击![aem6forms_search](assets/aem6forms_search.png)以显示或隐藏搜索面板。
+单击 ![aem6forms_search](assets/aem6forms_search.png)，以显示或隐藏搜索面板。
 
 ## 基本搜索 {#basic-search}
 
@@ -37,10 +41,10 @@ Adobe Experience Manager会搜索元数据属性中输入的文本，并返回�
 
 * 使用表单和资产元数据属性进行搜索。
 * 如果键入多个词，则搜索操作将匹配要搜索的完整文本。
-* 搜索不区分大小写。 例如，在键入`geometrixx`时，标题为`Geometrixx`、`GEOMETRIXX`和`GeoMetRixx`的资产会显示在搜索结果中。
+* 搜索不区分大小写。 例如，在您键入 `geometrixx`，带有标题的资产 `Geometrixx`, `GEOMETRIXX`和 `GeoMetRixx` 会显示在搜索结果中。
 
 * 不支持单词的部分匹配。 要使用部分字符串进行搜索，请使用&amp;ast;通配符。 但是，如果搜索查询与一个完整单词匹配，则会显示相应的表单或资产。
-* 在搜索期间，会遵守并且不会裁切额外的空格。 例如，`My form`与`My form`不同。
+* 在搜索期间，会遵守并且不会裁切额外的空格。 例如， `My form` 与的搜索查询不同 `My form`.
 
 * 如果元数据属性中字段的数据和显示值不同，则不能将显示值用作搜索参数。 例如，您无法根据状态（如“已修改”或“已发布”）进行搜索，因为这些属性以不同的格式存储。
 
@@ -90,7 +94,7 @@ Adobe Experience Manager会搜索元数据属性中输入的文本，并返回�
    <td>在所有表单模板中搜索。<br /> </td> 
   </tr>
   <tr>
-   <td>PDF Form</td> 
+   <td>PDF表单</td> 
    <td>搜索所有PDF文档。</td> 
   </tr>
   <tr>

@@ -1,8 +1,8 @@
 ---
 title: 开发工具
-seo-title: 开发工具
+seo-title: Development Tools
 description: 要开发JCR、Apache Sling或AEM应用程序，可使用许多工具集
-seo-description: 要开发JCR、Apache Sling或AEM应用程序，可使用许多工具集
+seo-description: To develop your JCR, Apache Sling or AEM applications, a number of tool sets are available
 uuid: 1bee3a52-5d76-4b0c-a222-a02e12ff3a43
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,34 +10,38 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 exl-id: 3c18feab-97a6-49f2-96be-7e7458199f5d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 3%
+source-wordcount: '428'
+ht-degree: 4%
 
 ---
 
 # 开发工具{#development-tools}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 要开发JCR、Apache Sling或AEM应用程序，可使用以下工具集：
 
-* 一组由[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)和WebDAV组成。 CRXDE Lite已嵌入到CRX/AEM中，允许您在浏览器中执行标准开发任务。 通过CRXDE Lite，您可以在记录和集成SVN时创建和编辑文件(如.jsp和.java)、文件夹、模板、组件、对话框、节点、属性和包。
+* 一组，由 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 和WebDAV。 CRXDE Lite已嵌入到CRX/AEM中，允许您在浏览器中执行标准开发任务。 通过CRXDE Lite，您可以在记录和集成SVN时创建和编辑文件(如.jsp和.java)、文件夹、模板、组件、对话框、节点、属性和包。
 
-   当您无法直接访问CRX/AEM服务器、通过扩展或修改现成组件和Java包来开发应用程序时，或者当您不需要专用调试器、代码完成和语法突出显示时，建议使用CRXDE Lite。
+   当您无法直接访问CRX/AEM服务器、通过扩展或修改现成组件和Java包来开发应用程序时，或者您不需要专用的调试器、代码完成和语法突出显示时，建议使用CRXDE Lite。
 
-* 一组由集成开发环境组成(例如：[Eclipse](/help/sites-developing/howto-projects-eclipse.md)或[IntelliJ](/help/sites-developing/ht-intellij.md))，一种生成工具(例如：[Apache Maven](/help/sites-developing/ht-projects-maven.md))、FileVault(由Adobe开发，用于将存储库映射到文件系统、版本控制系统(例如：Subversion)，错误跟踪器系统(例如：Jira)，一个中央依赖关系管理系统(例如：Apache Archiva)和构建自动化系统(例如：Apache Continuum)。
+* 一组由集成开发环境组成(例如： [Eclipse](/help/sites-developing/howto-projects-eclipse.md) 或 [IntelliJ](/help/sites-developing/ht-intellij.md))，构建工具(例如： [阿帕奇·马文](/help/sites-developing/ht-projects-maven.md)), FileVault由Adobe开发，用于将存储库映射到文件系统、版本控制系统(例如：Subversion)，错误跟踪器系统(例如：Jira)，一个中央依赖关系管理系统(例如：Apache Archiva)和构建自动化系统(例如：Apache Continuum)。
 
    此设置允许您将应用程序（内容、代码、配置）完全集成到任何开发环境和进程中。不同元素之间的链接是通过FileVault对存储库的文件系统表示，因为上述所有开发工具都可以处理文件。
 
-## 集成开发环境的扩展{#extensions-for-integrated-development-environments}
+## 集成开发环境的扩展 {#extensions-for-integrated-development-environments}
 
 Adobe发布了以下扩展：
 
 * [AEM Eclipse扩展](/help/sites-developing/aem-eclipse.md)
 * [AEM Brackets扩展](/help/sites-developing/aem-brackets.md)
-* [AEM IntelliJ扩展](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) （从Headwire）
+* [AEM IntelliJ扩展](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) （从头线）
 
-### 其他工具{#other-tools}
+### 其他工具 {#other-tools}
 
 AEM随其他便利开发的工具一起提供：
 

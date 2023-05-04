@@ -1,8 +1,8 @@
 ---
 title: 监控AEM Forms部署
-seo-title: 监控AEM Forms部署
+seo-title: Monitoring AEM forms deployments
 description: 您可以从系统级别和内部级别监控AEM表单部署。 通过本文档了解有关监控AEM表单部署的更多信息。
-seo-description: 您可以从系统级别和内部级别监控AEM表单部署。 通过本文档了解有关监控AEM表单部署的更多信息。
+seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
 content-type: reference
@@ -10,27 +10,31 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: d2cd532b-4086-4553-ac26-f311da6d5ca9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
 
-# 监控AEM表单部署{#monitoring-aem-forms-deployments}
+# 监控AEM Forms部署 {#monitoring-aem-forms-deployments}
 
-您可以从系统级别和内部级别监控AEM表单部署。 您可以使用诸如HP OpenView、IBM Tivoli和CA UniCenter等专业管理工具以及名为&#x200B;*JConsole*&#x200B;的第三方JMX监视器来专门监视Java活动。 实施监控策略可提高AEM表单部署的可用性、可靠性和性能。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-有关监控AEM表单部署的更多信息，请参阅[监控AEM表单部署的技术指南](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf)。
+您可以从系统级别和内部级别监控AEM表单部署。 您可以使用诸如HP OpenView、IBM Tivoli和CA UniCenter等专业管理工具，以及名为 *JConsole* 来专门监视Java活动。 实施监控策略可提高AEM表单部署的可用性、可靠性和性能。
 
-## 使用MBeans {#monitoring-using-mbeans}进行监控
+有关监控AEM表单部署的更多信息，请参阅 [用于监控AEM表单部署的技术指南](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
+
+## 使用MBean进行监控 {#monitoring-using-mbeans}
 
 AEM Forms提供两个注册的MBean，用于提供导航和统计信息。 以下是唯一支持集成和检查的MBean:
 
 * **服务统计：** 此MBean提供有关服务名称及其版本的信息。
-* **操作统计：** 此MBean提供每个表单服务器服务的统计信息。在这里，管理员可以获取有关特定服务的信息，如调用时间、错误数等。
+* **运算统计：** 此MBean提供每个表单服务器服务的统计信息。 在这里，管理员可以获取有关特定服务的信息，如调用时间、错误数等。
 
-### ServiceStatticMbean公共接口{#servicestatisticmbean-public-interfaces}
+### ServiceStatticMbean公共接口 {#servicestatisticmbean-public-interfaces}
 
 出于测试目的，可以访问ServiceStatistic MBean的以下公共接口：
 
@@ -40,7 +44,7 @@ AEM Forms提供两个注册的MBean，用于提供导航和统计信息。 以�
  public int getMinorVersion();
 ```
 
-### OperationStatitucMbean公共接口{#operationstatisticmbean-public-interfaces}
+### OperationStatitucMbean公共接口 {#operationstatisticmbean-public-interfaces}
 
 可以访问OperationStatistic MBean的以下公共接口以进行测试：
 
@@ -68,15 +72,15 @@ AEM Forms提供两个注册的MBean，用于提供导航和统计信息。 以�
  public void setExceptionMessage(String errorMessage);
 ```
 
-### MBean树和操作统计数据{#mbean-tree-operation-statistics}
+### MBean树和操作统计信息 {#mbean-tree-operation-statistics}
 
 使用JMX控制台(JConsole)，可以获取OperationStatistic MBean中的统计信息。 这些统计信息是MBean的属性，可以在以下层次结构树下导航：
 
 **MBean树**
 
-**Adobe域名：** 取决于应用程序服务器。如果应用程序服务器未定义域，则默认为adobe.com。
+**Adobe域名：** 取决于应用程序服务器。 如果应用程序服务器未定义域，则默认为adobe.com。
 
-**ServiceType:** AdobeService是用于列出所有服务的名称。
+**服务类型：** AdobeService是用于列出所有服务的名称。
 
 **AdobeServiceName:** 服务名称或服务ID。
 
@@ -84,11 +88,11 @@ AEM Forms提供两个注册的MBean，用于提供导航和统计信息。 以�
 
 **操作统计**
 
-**调用时间：** 执行方法所花费的时间。这不包括序列化请求、从客户端传输到服务器并反序列化请求的时间。
+**调用时间：** 执行方法所花费的时间。 这不包括序列化请求、从客户端传输到服务器并反序列化请求的时间。
 
 **调用计数：** 调用服务的次数。
 
-**平均调用时间：** 自服务器启动以来已执行的所有调用的平均时间。
+**平均调用时间：** 自服务器启动以来执行的所有调用的平均时间。
 
 **最大调用时间：** 自服务器启动以来执行的最长调用的持续时间。
 
@@ -96,15 +100,15 @@ AEM Forms提供两个注册的MBean，用于提供导航和统计信息。 以�
 
 **例外计数：** 导致失败的调用次数。
 
-**异常消息：** 上次发生异常的错误消息。
+**异常消息：** 上次出现异常的错误消息。
 
-**上次采样日期时间：** 上次调用的日期。
+**上次取样日期时间：** 上次调用的日期。
 
 **时间单位：** 默认值为毫秒。
 
 要启用JMX监控，应用程序服务器通常需要一些配置。 有关具体信息，请参阅您的应用程序服务器文档。
 
-### 如何设置开放JMX访问{#examples-of-how-to-set-up-open-jmx-access}的示例
+### 如何设置开放JMX访问的示例 {#examples-of-how-to-set-up-open-jmx-access}
 
 **JBoss 4.0.3/4.2.0 — 配置JVM启动**
 
@@ -119,7 +123,7 @@ AEM Forms提供两个注册的MBean，用于提供导航和统计信息。 以�
 
 **WebLogic 9.2 /10 — 配置JVM启动**
 
-1. 编辑位于* [WebLogic主页]*/user_projects/domains/Adobe_Live_Cycle/bin下的startWebLogic.bat文件。
+1. 编辑位于*下的startWebLogic.bat文件 [WebLogic主页]*/user_projects/domains/Adobe_Live_Cycle/bin。
 1. 找到JAVA_OPTS行并添加以下内容：
 
    ```as3
@@ -145,7 +149,7 @@ AEM Forms提供两个注册的MBean，用于提供导航和统计信息。 以�
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
-1. 在/opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties文件(或&lt;Your Websphere JRE>/ lib/management/management.properties)中添加或取消注释以下三行：
+1. 在/opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties文件(或 &lt;your websphere=&quot;&quot; jre=&quot;&quot;>/ lib/management/management.properties):
 
    ```as3
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect  

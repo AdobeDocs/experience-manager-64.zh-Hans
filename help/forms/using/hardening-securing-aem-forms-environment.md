@@ -1,21 +1,25 @@
 ---
 title: 在OSGi环境中强化和保护AEM表单
-seo-title: 在OSGi环境中强化和保护AEM表单
+seo-title: Hardening and Securing AEM forms on OSGi environment
 description: 了解在OSGi服务器上保护AEM Forms的建议和最佳实践。
-seo-description: 了解在OSGi服务器上保护AEM Forms的建议和最佳实践。
+seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: ba3b380a-b391-44a0-884b-e57c3cb14013
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 0%
+source-wordcount: '1479'
+ht-degree: 1%
 
 ---
 
 # 在OSGi环境中强化和保护AEM表单 {#hardening-and-securing-aem-forms-on-osgi-environment}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 了解在OSGi服务器上保护AEM Forms的建议和最佳实践。
 
@@ -63,7 +67,7 @@ AEM Forms是高度可自定义的，并且可以在许多不同的环境中工�
     </ul> </td> 
   </tr>
   <tr>
-   <td>HTML5 表单</td> 
+   <td>HTML5表单</td> 
    <td>
     <ul> 
      <li>/content/forms/formsets/profiles/</li> 
@@ -145,16 +149,16 @@ AEM Forms将数据存储到预定义位置和临时文件夹。 您应该保护�
 
 您可以将存储服务配置为通过线路发送到处理群集，而无需在发布节点上本地保存任何内容。 处理群集位于专用防火墙后的安全区域中，并且数据保持安全。
 
-使用AEM DS设置服务的处理服务器的凭据将数据从发布节点发布到处理服务器。 建议使用对处理服务器存储库具有读写访问权限的受限非管理用户的凭据。 有关更多信息，请参阅[为草稿和提交配置存储服务](/help/forms/using/configuring-draft-submission-storage.md)。
+使用AEM DS设置服务的处理服务器的凭据将数据从发布节点发布到处理服务器。 建议使用对处理服务器存储库具有读写访问权限的受限非管理用户的凭据。 有关更多信息，请参阅 [为草稿和提交配置存储服务](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### 由表单数据模型(FDM)处理的安全数据 {#secure-data-handled-by-form-data-model-fdm}
 
 使用具有最低所需权限的用户帐户来配置表单数据模型(FDM)的数据源。 使用管理帐户可以为未经授权的用户提供对元数据和架构实体的公开访问。\
-数据集成还提供了授权FDM服务请求的方法。 您可以插入执行前和执行后授权机制来验证请求。 在预填表单、提交表单以及通过规则调用服务时，会生成服务请求。
+数据集成还提供了授权FDM服务请求的方法。 您可以插入执行前和执行后授权机制来验证请求。 在预填表单、提交表单和通过规则调用服务时，会生成服务请求。
 
-**预处理授权：** 您可以在执行请求之前，使用预处理授权来验证请求的真实性。您可以使用输入、服务和请求详细信息来允许或停止执行请求。 如果停止执行，则可返回数据集成异常OPERATION_ACCESS_DENIED。 您还可以在发送客户端请求以执行之前对其进行修改。 例如，更改输入并添加其他信息。
+**预处理授权：** 您可以在执行请求之前使用预处理授权来验证请求的真实性。 您可以使用输入、服务和请求详细信息来允许或停止执行请求。 如果停止执行，则可返回数据集成异常OPERATION_ACCESS_DENIED。 您还可以在发送客户端请求以执行之前对其进行修改。 例如，更改输入并添加其他信息。
 
-**后处理授权：** 在将结果返回给请求者之前，您可以使用后处理授权来验证和控制结果。您还可以过滤、修剪和插入附加数据到结果。
+**流程后授权：** 在将结果返回给请求者之前，您可以使用后处理授权来验证和控制结果。 您还可以过滤、修剪和插入附加数据到结果。
 
 ### 限制用户访问 {#limit-user-access}
 
@@ -198,4 +202,4 @@ AEM Forms将数据存储到预定义位置和临时文件夹。 您应该保护�
 
 ### 使用AEM最佳实践保护AEM Forms环境 {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-本文档提供了特定于AEM Forms环境的说明。 您应确保基础AEM安装在部署时是安全的。 有关详细说明，请参阅[AEM安全检查列表](/help/sites-administering/security-checklist.md)文档。
+本文档提供了特定于AEM Forms环境的说明。 您应确保基础AEM安装在部署时是安全的。 有关详细说明，请参阅 [AEM安全检查列表](/help/sites-administering/security-checklist.md) 文档。

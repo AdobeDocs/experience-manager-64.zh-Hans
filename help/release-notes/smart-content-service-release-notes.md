@@ -8,14 +8,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 11%
+source-wordcount: '341'
+ht-degree: 4%
 
 ---
 
 # 智能内容服务发行说明 {#smart-content-service-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 智能内容服务概述以及与服务相关的已知问题。
 
@@ -36,12 +40,12 @@ ht-degree: 11%
 
 ## 链接 {#links}
 
-* [adobe.com 上的 Adobe Experience Manager 产品页面](https://www.adobe.com/marketing-cloud/experience-manager.html)
+* [Adobe Experience Manager adobe.com上的产品页](https://www.adobe.com/marketing-cloud/experience-manager.html)
 * [增强型智能标记文档](/help/assets/enhanced-smart-tags.md)
 
 ## 产品访问和支持（受限网站） {#product-access-and-support-restricted-sites}
 
-这些网站仅适用于客户。如果您是客户并需要访问，请联系您的Adobe客户经理。
+这些网站仅供客户使用。 如果您是客户并需要访问，请联系您的Adobe客户经理。
 
 * [产品访问](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [产品下载：licensing.adobe.com](https://licensing.adobe.com/).

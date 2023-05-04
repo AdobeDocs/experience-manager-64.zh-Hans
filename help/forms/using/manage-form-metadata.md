@@ -1,8 +1,8 @@
 ---
 title: 管理表单元数据
-seo-title: 管理表单元数据
+seo-title: Manage form metadata
 description: 元数据可以更轻松地对资产进行分类和组织，并帮助正在查找特定资产的用户。
-seo-description: 元数据可以更轻松地对资产进行分类和组织，并帮助正在查找特定资产的用户。
+seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 uuid: cdb5cb52-5b93-4d99-bd97-fba017406316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,14 +10,18 @@ topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
 role: Admin
 exl-id: d10bc3e9-66a6-4cb2-b484-da338259f1c8
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2009'
 ht-degree: 1%
 
 ---
 
 # 管理表单元数据 {#manage-form-metadata}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述  {#overview-nbsp}
 
@@ -25,7 +29,7 @@ ht-degree: 1%
 
 AEM Forms默认为每种资产类型提供一组定义的元数据。 除了默认元数据之外，您还可以向每种资产类型添加自定义元数据。 AEM Forms还为您提供了有效创建、管理和交换表单所有这些元数据的正确方法。
 
-如果您是开发人员或网站所有者，则可以自定义Forms Portal(AEM Forms的最终用户界面)，以反映您在组织中使用的元数据。 有关Forms Portal的更多信息，请参阅[在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md)。
+如果您是开发人员或网站所有者，则可以自定义Forms Portal(AEM Forms的最终用户界面)，以反映您在组织中使用的元数据。 有关Forms Portal的更多信息，请参阅 [在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md).
 
 ## AEM Forms中的元数据  {#metadata-in-aem-forms-nbsp}
 
@@ -37,7 +41,7 @@ AEM Forms支持以下资产类型：
 
 * 表单模板（XFA表单）
 * PDF forms
-* 文档（平面PDF）
+* 文档(平面PDF)
 * 自适应表单
 * 资源
 * XFS
@@ -50,7 +54,7 @@ AEM Forms支持以下资产类型：
  <tbody> 
   <tr> 
    <td><strong>属性名称</strong></td> 
-   <td><strong>资产类型</strong></td> 
+   <td><strong>资源类型</strong></td> 
    <td><strong>描述</strong><br /> </td> 
   </tr> 
   <tr> 
@@ -86,7 +90,7 @@ AEM Forms支持以下资产类型：
    <td>一个只读值，指定上次修改资产的时间。</td> 
   </tr> 
   <tr> 
-   <td>作者</td> 
+   <td>创作</td> 
    <td>除资源外</td> 
    <td><p>基于表单类型自动计算的只读值。</p> 
     <ul> 
@@ -131,7 +135,7 @@ AEM Forms支持以下资产类型：
   <tr> 
    <td>HTML渲染配置文件</td> 
    <td>表单模板</td> 
-   <td>以HTML格式渲染表单模板时使用的HTML渲染配置文件。</td> 
+   <td>以HTML格式呈现表单模板时使用的HTML渲染配置文件。</td> 
   </tr> 
   <tr> 
    <td>呈现格式</td> 
@@ -140,7 +144,7 @@ AEM Forms支持以下资产类型：
     <ul> 
      <li>HTML</li> 
      <li>PDF</li> 
-     <li>两者</li> 
+     <li> 双向</li> 
     </ul> <p>此选项用于限制仅在对最终用户可见的表单门户上呈现格式。</p> </td> 
   </tr> 
   <tr> 
@@ -155,7 +159,7 @@ AEM Forms支持以下资产类型：
     <ul> 
      <li>指：当前表单引用的资产。</li> 
      <li>引用者：指流动资产的资产。</li> 
-    </ul> <p>这些资产显示为链接，单击即可直接访问它们的元数据。<br /> </p> </td> 
+    </ul> <p>这些资产会显示为链接，单击即可直接访问其元数据。<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>表单模型(XDP/XSD)选择</td> 
@@ -181,21 +185,21 @@ AEM Forms支持以下资产类型：
 
 1. 使用以下方法之一打开属性页面：
 
-   1. 单击“快速操作”中的查看属性![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png)图标。
+   1. 单击View Properties ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) 图标。
 
       >[!NOTE]
       >
       >快速操作是指将鼠标悬停在缩略图上时显示的操作项目。
 
-   1. 选择表单，然后单击工具栏中显示的查看属性![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png)图标。
-   1. 当不在选择模式下时，通过单击表单缩略图导航到表单详细信息页面。 现在，单击右上角的![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png)眼睛图标，然后单击右下方列表中的“属性”。
+   1. 选择表单，然后单击查看属性 ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) 图标。
+   1. 当不在选择模式下时，通过单击表单缩略图导航到表单详细信息页面。 现在，单击 ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) 右上方的“眼睛”图标，然后单击该图标下方列表中的“属性”。
 
 1. 打开的属性页面会显示一个架构，其中仅包含那些包含某些值的元数据属性。
 
    属性页面的工具栏包含两个操作图标：
 
-   * 编辑：![aem6forms_edit](assets/aem6forms_edit.png)编辑元数据属性值
-   * 查看：![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png)导航到表单详细信息页面，该页面会在预览模式下打开表单。
+   * 编辑： ![aem6forms_edit](assets/aem6forms_edit.png) 编辑元数据属性值
+   * 查看： ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) 导航到表单详细信息页面，该页面会在预览模式下打开表单。
 
    内容部分分为两部分：
 
@@ -211,7 +215,7 @@ AEM Forms支持以下资产类型：
 
 1. 按照上一节中所述的步骤，打开可在其中查看所选表单现有元数据的属性页面。
 
-1. 在工具栏中，单击编辑图标![aem6forms_edit](assets/aem6forms_edit.png) ，将页面模式从只读更改为读/写。
+1. 在工具栏中，单击编辑图标 ![aem6forms_edit](assets/aem6forms_edit.png) 将页面的模式从只读更改为读/写。
 
 1. 打开的属性页面包含一个架构，其中包含可编辑的输入字段和静态文本的混合内容。
 
@@ -221,8 +225,8 @@ AEM Forms支持以下资产类型：
 
    此页面的工具栏包含两个与查看模式不同的操作图标：
 
-   * 取消：![aem6forms_close](assets/aem6forms_close.svg_w24.png)取消迄今为止对元数据属性值所做的任何更改
-   * 完成：![aem6forms_check](assets/aem6forms_check.png)保存迄今为止对元数据属性值所做的所有更改
+   * 取消： ![aem6forms_close](assets/aem6forms_close.svg_w24.png) 取消迄今为止对元数据属性值所做的任何更改
+   * 完成： ![aem6forms_check](assets/aem6forms_check.png) 保存迄今为止对元数据属性值所做的所有更改
 
    这两个操作都会将用户引导回包含更新值的属性页面的只读模式。
 
@@ -230,32 +234,30 @@ AEM Forms支持以下资产类型：
 
 属性页面中的左侧面板显示表单的缩略图。 默认情况下，显示的缩略图是在表单创建（自适应表单）或表单上传时生成的缩略图。
 
-对于所有表单类型，您都可以选择通过单击&#x200B;**[!UICONTROL 上传图像]**&#x200B;并从本地目录浏览图像文件来上传图像。 选定的图像将用作缩略图，而不是默认的缩略图。
+对于所有表单类型，您可以选择通过单击 **[!UICONTROL 上传图像]** 和从本地目录浏览图像文件。 选定的图像将用作缩略图，而不是默认的缩略图。
 
-对于自适应表单，提供了额外的功能，该功能允许用户生成缩略图作为当前自适应表单预览的快照。 由于AEM Forms还支持自适应表单的创作，因此每当您更改自适应表单时，自适应表单的预览可能会发生更改。 生成缩略图的功能可帮助您根据当前预览状态为自适应表单获取新的缩略图。 单击&#x200B;**[!UICONTROL 生成预览]**&#x200B;以执行此操作。
+对于自适应表单，提供了额外的功能，该功能允许用户生成缩略图作为当前自适应表单预览的快照。 由于AEM Forms还支持自适应表单的创作，因此每当您更改自适应表单时，自适应表单的预览可能会发生更改。 生成缩略图的功能可帮助您根据当前预览状态为自适应表单获取新的缩略图。 单击 **[!UICONTROL 生成预览]** 来执行这项行动。
 
 >[!NOTE]
 >
 >* 缩览图使用方形图像。 当您使用非方形图像并在列表视图中查看缩略图时，缩略图会被剪贴。
 >* 上传或生成新图像后，缩略图将被此图像替换，无法重置为之前的图像。
-
 >
-
 
 
 ## 添加自定义元数据  {#add-custom-metadata-nbsp}
 
 除了开箱即用提供的元数据之外，AEM Forms还支持新的自定义元数据。
 
-提供了一种工具（元数据架构编辑器），用于定义元数据布局的架构；即，表单&#x200B;**[!UICONTROL Properties]**&#x200B;页面中显示内容的布局。 利用元数据架构编辑器，可添加或修改资产的自定义架构。
+提供了一种工具（元数据架构编辑器），用于定义元数据布局的架构；即， **[!UICONTROL 属性]** 页面。 利用元数据架构编辑器，可添加或修改资产的自定义架构。
 
 AEM Forms在此工具中公开了支持的表单类型的元数据架构。 这样，您就可以访问这些架构，并使用元数据架构编辑器中提供的功能来添加自定义属性。
 
 ### 导航元数据架构编辑器  {#navigate-the-metadata-schema-editor-nbsp}
 
-1. 导航到&#x200B;**[!UICONTROL 工具>资产>元数据架构]**。
+1. 导航到 **[!UICONTROL 工具> Assets >元数据架构]**.
 
-1. 从列出的架构表单中，单击&#x200B;**[!UICONTROL forms]**。
+1. 单击 **[!UICONTROL 表单]** 从列出的架构表单中。
 
 1. 在打开的列表中，单击要为其添加自定义元数据的资产类型。
 
@@ -263,9 +265,9 @@ AEM Forms在此工具中公开了支持的表单类型的元数据架构。 这�
    >
    >这些架构包含现成提供的元数据属性，这些属性不得更改/编辑（选中复选框，然后单击工具栏中的编辑），以避免出现功能问题。
 
-1. 单击的任何资产类型都会打开包含`extendedmetadata`选项的列表。 编辑此架构。
+1. 单击的任何资产类型都会打开一个包含 `extendedmetadata` 选项。 编辑此架构。
 
-1. 选中`extendedmetadata`旁边的复选框，然后单击工具栏中显示的编辑![aem6forms_edit](assets/aem6forms_edit.png)图标。
+1. 选中旁边的复选框 `extendedmetadata` ，然后单击编辑 ![aem6forms_edit](assets/aem6forms_edit.png) 图标。
 
 1. AEM Forms会打开选定资产类型的元数据架构编辑器/表单生成器（在本例中为自适应表单）。
 
@@ -279,14 +281,14 @@ AEM Forms在此工具中公开了支持的表单类型的元数据架构。 这�
 
    1. 您可以通过单击+符号添加其他选项卡。
 
-   1. 您可以添加所需类型的自定义字段，方法是将&#x200B;**[!UICONTROL 构建表单]**&#x200B;部分中的字段组件拖动到架构页面。
-   1. 单击该字段后，可在&#x200B;**[!UICONTROL Settings]**&#x200B;部分下提供此字段的规范。
+   1. 您可以通过从 **[!UICONTROL 构建表单]** 部分。
+   1. 此字段的规范可在 **[!UICONTROL 设置]** 中，将会在页面上显示该对话框。
 
 ### 在架构编辑器中添加自定义元数据属性  {#add-custom-metadata-property-in-schema-editor-nbsp}
 
 1. 导航到要在其中添加自定义属性的选项卡（现有或新）。
 
-1. 将所需类型的组件从&#x200B;**[!UICONTROL 构建表单]**&#x200B;部分拖至左侧面板，并放置在方便的位置。
+1. 从 **[!UICONTROL 构建表单]** 区域，并放置在方便的位置。
 
    >[!NOTE]
    >
@@ -295,7 +297,7 @@ AEM Forms在此工具中公开了支持的表单类型的元数据架构。 这�
 1. 单击之前拖动的组件。 在右侧面板中打开的设置选项卡中，填写以下字段的信息：
 
    1. 指定字段标签，该标签将用作架构中放置的字段上方的显示名称(例如：部门)
-   1. 在映射到属性字段下，您可以看到预填充的值&#x200B;**`。/jcr:content/metadata/default`**。 将“**default**”更改为所需的属性名称，该属性名称用于将属性存储在crx存储库中(例如：&#39;。/jcr:content/metadata/department&#39;)
+   1. 在映射到属性字段下，您可以看到一个预填充的值 **&#39;。/jcr:content/metadata/default`**. 更改“**默认**“ ”到所需的属性名称，该属性名称用于将属性存储在crx存储库中(例如：&#39;。/jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
@@ -306,10 +308,10 @@ AEM Forms在此工具中公开了支持的表单类型的元数据架构。 这�
 
    1. 根据需要填写其他设置。 例如：如果要将字段设为必填字段，请选择“必填”选项。
 
-   1. 要删除添加的字段，请选择该字段，然后单击删除![delete-1](assets/delete-1.png)图标。
+   1. 要删除添加的字段，请选择该字段，然后单击删除 ![delete-1](assets/delete-1.png) 图标。
 
 1. 如有必要，请按照步骤1-3添加其他属性。
-1. 进行所有更改后，单击&#x200B;**完成**。
+1. 单击 **完成** 进行所有更改之后。
 
    您已成功添加自定义元数据属性。
 

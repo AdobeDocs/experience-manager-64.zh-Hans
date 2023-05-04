@@ -1,31 +1,35 @@
 ---
-title: '关于文档安全 '
-seo-title: '关于文档安全 '
+title: 关于文档安全
+seo-title: About document security
 description: 了解如何使用文档安全功能创建、存储和应用预定义的保密设置，以及安全地分发您的信息。
-seo-description: 了解如何使用文档安全功能创建、存储和应用预定义的保密设置，以及安全地分发您的信息。
+seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
 uuid: 31b0c24f-a588-44f7-a9ba-e9780e82c066
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 46847c9f-c66d-46fa-8ff5-a99d2462c099
-feature: 文档安全
+feature: Document Security
 exl-id: fa62a521-1a0b-4856-acc6-71c51ad9e527
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 0%
+source-wordcount: '2560'
+ht-degree: 1%
 
 ---
 
-# 关于文档安全{#about-document-security}
+# 关于文档安全 {#about-document-security}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 文档安全确保只有授权用户才能使用您的文档。 使用文档安全，您可以安全地分发您以支持格式保存的任何信息。 支持的文件格式包括：
 
 * Adobe PDF文件
 * Microsoft® Word、Excel和PowerPoint文件
 
-有关策略如何保护受支持文件类型的更多信息，请参阅[其他文档安全信息](https://www.adobe.com/go/learn_aemforms_doc_security_63)。
+有关策略如何保护受支持文件类型的详细信息，请参阅 [其他文档安全信息](https://www.adobe.com/go/learn_aemforms_doc_security_63).
 
 使用文档安全性，您可以轻松地创建、存储文档并对文档应用预定义的保密设置。 为防止信息在您的范围之外传播，您还可以监控和控制在您分发文档后收件人如何使用您的文档。
 
@@ -33,9 +37,9 @@ ht-degree: 0%
 
 文档安全用户通过最终用户网页创建策略。 管理员使用文档安全网页创建包含可供所有授权用户使用的共享策略的策略集。
 
-虽然策略以文档安全性存储，但您可以通过客户端应用程序将它们应用到文档。 *Acrobat Help*&#x200B;中详细描述了如何将策略应用于PDF文档。 使用其他应用程序（如Microsoft Office）来应用策略的说明，请参见应用程序的&#x200B;*Acrobat Reader DC扩展帮助*。
+虽然策略以文档安全性存储，但您可以通过客户端应用程序将它们应用到文档。 如何将策略应用于PDF文档，详见 *Acrobat帮助*. 使用其他应用程序(如Microsoft Office)来应用策略的记录在 *Acrobat Reader DC扩展帮助* 中。
 
-将策略应用于文档时，策略中指定的机密性设置将保护文档包含的信息。 保密性设置还可保护PDF文档中的任何文件（文本、音频或视频）。 您可以将受策略保护的文档分发给受策略授权的收件人。
+将策略应用于文档时，策略中指定的机密性设置将保护文档包含的信息。 机密性设置还可保护PDF文档中的任何文件（文本、音频或视频）。 您可以将受策略保护的文档分发给受策略授权的收件人。
 
 **文档访问控制和审核**
 
@@ -47,9 +51,9 @@ ht-degree: 0%
 
 文档安全包括服务器和用户界面：
 
-**服务器：** 文档安全通过中心组件执行事务，如用户身份验证、策略的实时管理和应用保密性。服务器还为策略、审计记录和其他相关信息提供中央存储库。
+**服务器：** 文档安全通过中心组件执行事务，如用户验证、策略的实时管理和保密性应用。 服务器还为策略、审计记录和其他相关信息提供中央存储库。
 
-**网页：** 在此界面中创建策略、管理受策略保护的文档并监视与受策略保护的文档关联的事件。管理员还可以配置全局选项（如受邀用户的用户身份验证、审核和消息传送），并管理受邀的用户帐户。
+**网页：** 创建策略、管理受策略保护的文档并监视与受策略保护的文档关联的事件的界面。 管理员还可以配置全局选项（如受邀用户的用户身份验证、审核和消息传送），并管理受邀的用户帐户。
 
 ![rm_psworkflow](assets/rm_psworkflow.png)
 
@@ -60,7 +64,7 @@ ht-degree: 0%
 1. 收件人在相应的客户端应用程序中打开文档。 收件人可以根据其策略使用文档。
 1. 文档所有者、策略集协调者或管理员可以使用网页跟踪文档并修改对文档的访问权限。
 
-## 关于文档安全用户{#about-document-security-users}
+## 关于文档安全用户 {#about-document-security-users}
 
 各种类型的用户使用文档安全功能完成不同的任务：
 
@@ -146,9 +150,9 @@ ht-degree: 0%
 * 文档安全查看服务器事件
 * 文档安全更改策略所有者
 
-## 策略和受策略保护的文档{#policies-and-policy-protected-documents}
+## 策略和受策略保护的文档 {#policies-and-policy-protected-documents}
 
-*policy*&#x200B;定义一组保密设置以及可以访问应用了策略的文档的用户。 策略还允许动态更改文档的权限。 它为文档保护人授予更改机密性设置的权限，以撤消对文档的访问权限或切换策略。
+A *策略* 定义一组保密性设置以及可以访问应用策略的文档的用户。 策略还允许动态更改文档的权限。 它为文档保护人授予更改机密性设置的权限，以撤消对文档的访问权限或切换策略。
 
 使用Adobe Acrobat® Pro和Acrobat Standard，可以将策略保护应用于PDF文档。 策略保护可以应用于其他文件类型，如Microsoft Word、Excel和PowerPoint文件，方法是使用安装了相应Acrobat Reader DC扩展的客户端应用程序。
 
@@ -165,7 +169,7 @@ ht-degree: 0%
 用户和管理员通过文档安全网页创建策略。 一次只能对文档应用一个策略。 您可以使用以下方法之一来应用策略：
 
 * 在Acrobat或其他客户端应用程序中打开文档，然后选择一个策略以保护文档。
-* 在Microsoft Outlook中以电子邮件附件形式发送文档。 在这种情况下，您可以从策略列表中选择策略，或选择Acrobat使用一组默认保密设置创建的自动生成策略，以仅保护电子邮件收件人的文档。
+* 在Microsoft Outlook中以电子邮件附件的形式发送文档。 在这种情况下，您可以从策略列表中选择策略，或选择Acrobat使用一组默认保密设置创建的自动生成策略，以仅保护电子邮件收件人的文档。
 
 可以使用客户端应用程序从文档中删除策略。
 
@@ -181,7 +185,7 @@ ht-degree: 0%
 
 如果启用了离线使用，则收件人还可以在策略中指定的时间段内脱机使用受策略保护的文档（没有活动的Internet或网络连接）。
 
-### 受策略保护的文档的工作原理{#how-policy-protected-documents-work}
+### 受策略保护的文档的工作方式 {#how-policy-protected-documents-work}
 
 要打开和使用受策略保护的文档，策略必须包括您作为收件人的姓名，并且您必须拥有有效的文档安全帐户。 对于PDF文档，您需要Acrobat或Adobe Reader®。 对于其他文件类型，您需要为安装了Acrobat Reader DC扩展名的文件提供相应的应用程序。
 
@@ -202,15 +206,15 @@ ht-degree: 0%
 
 如果策略允许脱机访问，则还可以脱机使用受策略保护的文档（无Internet或网络连接）。 必须先登录文档安全才能同步文档。 然后，您可以在策略中指定的脱机租用期内使用文档。
 
-脱机租用期结束时，您必须再次将文档与文档安全同步，方法是联机并打开受策略保护的文档，或者使用客户端应用程序中的命令。 (有关详细信息，请参阅&#x200B;*Acrobat Help*&#x200B;或相应的&#x200B;*Acrobat Reader DC扩展帮助*。)
+脱机租用期结束时，您必须再次将文档与文档安全同步，方法是联机并打开受策略保护的文档，或者使用客户端应用程序中的命令。 (请参阅 *Acrobat帮助* 或适当 *Acrobat Reader DC扩展帮助* ()
 
 如果使用“保存”或“另存为”菜单命令保存受策略保护的文档的副本，则将自动为新文档应用并强制执行该策略。 此外，还将审核并记录诸如尝试打开新文档之类的事件，以供原始文档使用。
 
-## 策略集{#policy-sets}
+## 策略集 {#policy-sets}
 
-*策略* 集用于对一组具有共同业务目的的策略进行分组。然后，系统中的部分用户可以使用这些策略集。
+*策略集* 用于对一组具有共同业务目的的策略进行分组。 然后，系统中的部分用户可以使用这些策略集。
 
-每个策略集可以具有一个或多个关联的策略集协调器。 策略集协调员是管理员或具有其他权限的用户。 *策略集协调器*&#x200B;通常是组织中最能创作特定策略集中策略的专家。
+每个策略集可以具有一个或多个关联的策略集协调器。 策略集协调员是管理员或具有其他权限的用户。 的 *策略集协调器* 通常是组织中最擅长创作特定策略集中策略的专家。
 
 策略集协调员可以执行以下任务：
 
@@ -226,4 +230,4 @@ ht-degree: 0%
 
 策略集通常通过指定域中哪些用户或组可以使用策略集中的策略来保护文档，从而对有限数量的用户可用。
 
-安装文档安全后，将创建一个名为&#x200B;*全局策略集*&#x200B;的默认策略集。 安装软件的管理员将管理此策略设置。
+安装文档安全后，将创建一个默认策略集，名为 *全局策略集*. 安装软件的管理员将管理此策略设置。

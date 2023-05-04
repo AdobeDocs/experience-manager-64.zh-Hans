@@ -7,14 +7,18 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 7d2cf3d6-0dd3-4ce2-be9e-5d8b65a9edab
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
 
 # 使用离线重新索引以减少升级期间的停机时间 {#offline-reindexing-to-reduce-downtime-during-upgrades}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 简介 {#introduction}
 

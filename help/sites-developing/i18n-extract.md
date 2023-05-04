@@ -1,8 +1,8 @@
 ---
 title: 提取字符串以进行翻译
-seo-title: 提取字符串以进行翻译
+seo-title: Extracting Strings for Translating
 description: 使用xgettext-maven-plugin从源代码中提取需要翻译的字符串
-seo-description: 使用xgettext-maven-plugin从源代码中提取需要翻译的字符串
+seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
 uuid: 2c586ecb-8494-4f8f-b31a-1ed73644d611
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 50c2479b-72b6-42fa-8e48-45c8e9596161
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 0%
+source-wordcount: '512'
+ht-degree: 1%
 
 ---
 
-# 提取字符串以翻译{#extracting-strings-for-translating}
+# 提取字符串以进行翻译{#extracting-strings-for-translating}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 使用xgettext-maven-plugin从需要翻译的源代码中提取字符串。 Maven插件会将字符串提取到您发送以进行翻译的XLIFF文件。 字符串将从以下位置提取：
 
@@ -25,7 +29,7 @@ ht-degree: 0%
 * Javascript源文件
 * SVN资源（JCR节点）的XML表示
 
-## 配置字符串提取{#configuring-string-extraction}
+## 配置字符串提取 {#configuring-string-extraction}
 
 配置xgettext-maven-plugin工具如何为您的项目提取字符串。
 
@@ -45,7 +49,7 @@ ht-degree: 0%
 /potentials { }
 ```
 
-| 区域 | 描述 |
+| 分区 | 描述 |
 |---|---|
 | /filter | 标识要解析的文件。 |
 | /parsers/vaultxml | 配置对保管库文件的解析。 标识包含外部字符串和本地化提示的JCR节点。 还标识要忽略的JCR节点。 |
@@ -53,7 +57,7 @@ ht-degree: 0%
 | /parsers/regexp | 配置对Java、JSP和ExtJS模板文件的解析。 您无需更改此部分。 |
 | /potents | 用于检测要国际化的字符串的公式。 |
 
-### 标识要解析的文件{#identifying-the-files-to-parse}
+### 标识要解析的文件 {#identifying-the-files-to-parse}
 
 i18n.any文件的/filter部分标识xgettext-maven-plugin工具解析的文件。 添加多个包含和排除规则，以分别标识已解析和忽略的文件。 您应包括所有文件，然后排除您不想解析的文件。 通常，您会排除不对UI做出贡献的文件类型，或者排除定义UI但未翻译的文件。 包含和排除规则的格式如下：
 
@@ -99,7 +103,7 @@ i18n.any文件的/filter部分标识xgettext-maven-plugin工具解析的文件�
  </tbody> 
 </table>
 
-### 提取字符串{#extracting-the-strings}
+### 提取字符串  {#extracting-the-strings}
 
 无POM:
 
@@ -133,10 +137,10 @@ mvn -N com.adobe.granite.maven:xgettext-maven-plugin:1.2.2:extract  -Dxgettext.v
 mvn xgettext:extract
 ```
 
-### 输出文件{#output-files}
+### 输出文件 {#output-files}
 
 * `raw.xliff`:提取字符串
-* `warn.log`:警告（如果有），如果API `CQ.I18n.getMessage()` 使用不正确。这些操作始终需要修复，然后重新运行。
+* `warn.log`:警告（如果有），如果 `CQ.I18n.getMessage()` API使用不正确。 这些操作始终需要修复，然后重新运行。
 
 * `parserwarn.log`:解析器警告（如果有），例如js解析器问题
 * `potentials.xliff`:未提取的“潜在”候选项，但可能是需要翻译的人类可读字符串（可以忽略，仍会产生大量误报）

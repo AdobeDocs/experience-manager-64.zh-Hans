@@ -1,7 +1,7 @@
 ---
 title: 兼容包
 seo-title: Compatibility Package
-description: '在AEM Forms 6.4上安装兼容包，允许您使用AEM Forms 6.3中的通信管理资产以及已弃用的自适应表单模板和页面 '
+description: 在AEM Forms 6.4上安装兼容包，允许您使用AEM Forms 6.3中的通信管理资产以及已弃用的自适应表单模板和页面
 seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.3 and deprecated adaptive forms templates and pages
 uuid: e50b1ff9-c357-422a-8da8-a791ff805317
 contentOwner: gtalwar
@@ -11,20 +11,24 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
 role: Admin
 exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 2%
+source-wordcount: '380'
+ht-degree: 3%
 
 ---
 
 # 安装兼容包 {#compatibility-package}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 在AEM Forms 6.4上安装兼容包，允许您使用AEM Forms 6.3中的通信管理资产以及已弃用的自适应表单模板和页面
 
 ## 概述 {#overview}
 
-在AEM Forms 6.4中创建客户通信的默认和推荐方法是交互式通信。要继续使用AEM 6.3 Forms和AEM 6.2 Forms中的字母，您需要安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
+交互式通信是在AEM Forms 6.4中创建客户通信的默认和推荐方法。要继续使用AEM 6.3 Forms和AEM 6.2 Forms中的字母，您需要安装 [AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 AEMFD兼容包允许您在AEM Forms 6.4上使用AEM Forms 6.3和6.2中的以下资产：
 
@@ -33,22 +37,22 @@ AEMFD兼容包允许您在AEM Forms 6.4上使用AEM Forms 6.3和6.2中的以下�
 * 数据字典
 * 自适应表单已弃用的模板和页面
 
-有关更多信息，请参阅[通过安装兼容包](/help/forms/using/compatibility-package.md#assetsmadecompatible)与AEM Forms 6.4兼容的资产。
+有关更多信息，请参阅 [通过安装兼容包，与AEM Forms 6.4兼容的资产](/help/forms/using/compatibility-package.md#assetsmadecompatible).
 
 ## 在AEM Forms 6.4中添加对AEM Forms 6.3和6.2资产的支持 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 执行升级后，请执行以下操作以安装AEMFD兼容包，并使资产与6.4兼容：
 
-确保已预安装[AEM兼容包](/help/sites-deploying/backward-compatibility.md)。
+确保您具有 [AEM兼容包](/help/sites-deploying/backward-compatibility.md) 预安装。
 
-1. 安装[兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
+1. 安装 [兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-   有关上载和安装包的详细信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。
+   有关上传和安装包的更多信息，请参阅 [如何使用包](/help/sites-administering/package-manager.md).
 
 1. 日志稳定后，重新启动服务器。
 1. 使用迁移实用程序使资产与6.4兼容。
 
-   有关更多信息，请参阅[迁移实用程序](/help/forms/using/migration-utility.md)。
+   有关更多信息，请参阅 [迁移实用程序](/help/forms/using/migration-utility.md).
 
 ## 通过安装兼容包，与AEM Forms 6.4兼容的资产 {#assetsmadecompatible}
 

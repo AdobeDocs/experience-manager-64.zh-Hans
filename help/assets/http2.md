@@ -12,14 +12,18 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
 feature: Asset Management
 role: Admin,User
-source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 2%
+source-wordcount: '741'
+ht-degree: 3%
 
 ---
 
 # HTTP2内容交付 {#http-delivery-of-content}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 Adobe 很高兴地宣布推出 HTTP/2 内容交付功能，这意味着性能将全面提升。
 
@@ -60,7 +64,7 @@ Adobe自己的测试产生了以下结果：
 
 您必须启动请求，以切换到HTTP/2;它不会自动为您完成。
 
-1. 启动技术支持请求以切换到HTTP2。 请参阅[访问客户支持门户](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)。
+1. 启动技术支持请求以切换到HTTP2。 请参阅 [访问客户支持门户](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. 在支持请求中提供以下信息：
 

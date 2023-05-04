@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: bd65633e85226659df99da1d3834fa18a89de11e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 32%
+source-wordcount: '1340'
+ht-degree: 31%
 
 ---
 
 # 使用智能内容服务配置资产标记 {#configure-asset-tagging-using-the-smart-content-service}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 您可以集成 [!DNL Adobe Experience Manager] 与智能内容服务结合使用 [!DNL Adobe Developer Console]. 使用此配置可从中访问智能内容服务 [!DNL Experience Manager].
 
@@ -59,7 +63,7 @@ ht-degree: 32%
 
    **[!UICONTROL 服务 URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   例如：`https://smartcontent.adobe.io/apac`。您可以指定 `na`, `emea`，或 `apac` 作为托管Experience Manager创作实例的区域。
+   例如， `https://smartcontent.adobe.io/apac`. 您可以指定 `na`, `emea`，或 `apac` 作为托管Experience Manager创作实例的区域。
 
    >[!NOTE]
    >

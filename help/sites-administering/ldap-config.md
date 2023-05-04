@@ -10,14 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 1e329725-538a-4058-8832-4eba036f7972
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1684'
 ht-degree: 0%
 
 ---
 
 # 使用AEM 6配置LDAP {#configuring-ldap-with-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 LDAP( **L**&#x200B;八八 **D**&#x200B;记录 **A**&#x200B;访问 **P**&#x200B;协议)用于访问集中目录服务。 这有助于减少管理用户帐户所需的工作量，因为多个应用程序都可以访问这些帐户。 其中一个LDAP服务器是Active Directory。 LDAP通常用于实现单点登录，该单点登录允许用户在登录一次后访问多个应用程序。
 

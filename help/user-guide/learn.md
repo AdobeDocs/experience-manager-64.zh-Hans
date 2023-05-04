@@ -6,14 +6,18 @@ seo-description: An description of the essential capabilities of AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: 5cb966c3-1e19-47c8-a691-067f6d4680c0
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 32%
+source-wordcount: '432'
+ht-degree: 9%
 
 ---
 
 # 了解AEM 6.4功能 {#learn-about-aem-64-capabilities}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## AEM Sites {#aem-sites}
 
@@ -21,30 +25,30 @@ AEM Sites是AdeobeExperience Manager内的一个内容管理系统，它为您�
 
 ## AEM Assets {#aem-assets}
 
-借助 AEM Assets，您的组织可以通过多租户云平台，轻松地创建、管理、传送和优化数字资产。[深入了解我们关于AEM Assets的一些新增视频功能教程。](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
+AEM Assets让您的组织能够通过多租户云平台轻松创建、管理、交付和优化数字资产。 [深入了解我们关于AEM Assets的一些新增视频功能教程。](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 
-* [使用 AEM Assets](/help/assets/managing-assets-touch-ui.md)
+* [使用AEM Assets](/help/assets/managing-assets-touch-ui.md)
 * [使用 Dynamic Media](/help/assets/dynamic-media.md)
-* [AEM Assets 发行说明](/help/release-notes/assets.md)
+* [AEM Assets发行说明](/help/release-notes/assets.md)
 
 ## AEM Forms {#aem-forms}
 
-AEM 提供了一种简单易用的解决方案，可用于创建、管理、发布和更新复杂的数字表单，同时与后端进程、业务规则和数据相集成。
+AEM提供了一个易于使用的解决方案，用于在与后端流程、业务规则和数据集成的同时，创建、管理、发布和更新复杂的数字表单。
 
-AEM Forms 将表单创作、管理和发布与通信管理功能、文档安全性和集成分析相结合，从而打造极具吸引力的端到端体验。[深入了解我们为AEM Forms提供的一些新视频功能教程。](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
+AEM Forms将表单创作、管理和发布与通信管理功能、文档安全和集成分析相结合，以创建引人入胜的端到端体验。 [深入了解我们为AEM Forms提供的一些新视频功能教程。](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/overview.html)
 
-* [AEM Forms 快速入门](/help/forms/using/introduction-aem-forms.md)
-* [AEM Forms 新增功能](/help/forms/using/whats-new.md)
-* [AEM Forms 的架构和拓扑](/help/forms/using/aem-forms-architecture-deployment.md)
-* [AEM Forms 性能调整](/help/forms/using/performance-tuning-aem-forms.md)
+* [开始使用AEM Forms](/help/forms/using/introduction-aem-forms.md)
+* [AEM Forms的新增功能](/help/forms/using/whats-new.md)
+* [AEM Forms中的架构和拓扑](/help/forms/using/aem-forms-architecture-deployment.md)
+* [性能优化AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
 
 ## AEM Screens {#aem-screens}
 
-Screens是一项Adobe Experience Manager功能，它允许您与全面的数字营销平台一起发布涉及不同屏幕类型的动态交互式数字体验和交互。  [了解更多.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Screens是一项Adobe Experience Manager功能，它允许您与全面的数字营销平台一起发布涉及不同屏幕类型的动态交互式数字体验和交互。  [了解详情.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
-社区是一种Adobe Experience Manager功能，可帮助您创建在线社区体验，包括论坛、用户组、学习资源和对客户、员工和您的品牌有价值的其他社交功能。 [了解更多.](https://business.adobe.com/products/experience-manager/sites/aem-sites.html)
+社区是一种Adobe Experience Manager功能，可帮助您创建在线社区体验，包括论坛、用户组、学习资源和对客户、员工和您的品牌有价值的其他社交功能。 [了解详情.](https://business.adobe.com/products/experience-manager/sites/aem-sites.html)
 
 ## AEM Livefyre {#aem-livefyre}
 

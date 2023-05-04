@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Translation
 role: Admin
 exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 55%
+source-wordcount: '431'
+ht-degree: 51%
 
 ---
 
 # 将翻译云服务应用到文件夹 {#applying-translation-cloud-services-to-folders}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager允许您使用所选翻译提供商提供的基于云的翻译服务，以确保根据您的要求对资产进行翻译。
 
@@ -28,7 +32,7 @@ Adobe Experience Manager允许您使用所选翻译提供商提供的基于云�
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. 导航到&#x200B;**[!UICONTROL 云服务]**&#x200B;选项卡。
-1. 从Cloud Service配置列表中，选择所需的翻译提供程序。 例如，如果要使用Microsoft的翻译服务，请选择&#x200B;**[!UICONTROL Microsoft Translator]**。
+1. 从Cloud Service配置列表中，选择所需的翻译提供程序。 例如，如果要从Microsoft获取翻译服务，请选择 **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -43,12 +47,12 @@ Adobe Experience Manager允许您使用所选翻译提供商提供的基于云�
 如果要为要在翻译工作流程中使用的翻译服务应用自定义连接器。要应用自定义连接器，请首先从“包管理器”安装连接器。然后，从云服务控制台配置连接器。配置连接器后，该连接器会显示在[应用翻译服务](transition-cloud-services.md#applying-the-translation-services)中所述的“云服务”选项卡的连接器列表中。应用自定义连接器并运行翻译工作流后，翻译项目的&#x200B;**[!UICONTROL 翻译摘要]**&#x200B;拼贴会在&#x200B;**[!UICONTROL 提供程序]**&#x200B;和&#x200B;**[!UICONTROL 方法]**&#x200B;标题下显示连接器详细信息。
 
 1. 从包管理器安装连接器。
-1. 单击/点按[!DNL Experience Manager]徽标，然后导航到&#x200B;**[!UICONTROL 工具>部署>Cloud Services]**。
+1. 单击/点按 [!DNL Experience Manager] 徽标，然后导航到 **[!UICONTROL 工具>部署>Cloud Services]**.
 1. 在&#x200B;**[!UICONTROL 云服务]**&#x200B;页面的&#x200B;**[!UICONTROL 第三方服务]**&#x200B;下找到安装的连接器。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 单击/点按&#x200B;**[!UICONTROL Configure now]**&#x200B;链接以打开&#x200B;**[!UICONTROL Create Configuration]**&#x200B;对话框。
+1. 单击/点按 **[!UICONTROL 立即配置]** 用于打开的链接 **[!UICONTROL 创建配置]** 对话框。
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 

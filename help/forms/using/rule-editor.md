@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 feature: Adaptive Forms
 exl-id: 7cd73bdf-6717-4923-91ca-e8b6d44429ca
-source-git-commit: 9cb2e3d361503e296b985c5d08bbafd5dd60e194
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '6328'
+source-wordcount: '6364'
 ht-degree: 0%
 
 ---
 
 # 自适应表单规则编辑器 {#adaptive-forms-rule-editor}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
@@ -96,7 +100,7 @@ Adobe Experience Manager Forms中的规则编辑器功能使表单业务用户�
 
 规则编辑器提供了一组可用于编写规则的预定义规则类型。 让我们详细查看每个规则类型。 有关在规则编辑器中编写规则的更多信息，请参阅 [写入规则](#write-rules).
 
-### 当 {#when}
+### 时间 {#when}
 
 的 **When** 规则类型如下 **condition-action-alternate操作** 规则的构造，有时只是 **condition-action** 构造。 在此规则类型中，您首先指定一个评估条件，然后指定一个满足该条件时要触发的操作( `True`)。 使用When规则类型时，您可以使用多个AND和OR运算符来创建 [嵌套表达式](#nestedexpressions).
 
@@ -334,7 +338,7 @@ AEM Forms会跟踪您上次用于写入规则的规则编辑器模式。 下次�
 1. 单击以编辑 **[!UICONTROL 自适应表单与交互式通信Web信道配置]**.
 1. 选择 **[!UICONTROL 可视编辑器]** 或 **[!UICONTROL 代码编辑器]** 从 **[!UICONTROL 规则编辑器的默认模式]** 下拉列表
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 单击“**[!UICONTROL 保存]**”。
 
 ### F.完成和取消按钮 {#f-done-and-cancel-buttons}
 
@@ -550,7 +554,7 @@ AEM Forms会跟踪您上次用于写入规则的规则编辑器模式。 下次�
    1. 字符串
    1. 数字
    1. 布尔型
-   1. date
+   1. 日期
    1. 阵列
 
    所有其他回访类型均按上述任一类型分类。 不支持“无”。 确保您选择以上类型之一。 返回类型不区分大小写。

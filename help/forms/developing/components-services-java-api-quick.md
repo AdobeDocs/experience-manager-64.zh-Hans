@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
 
 # 组件和服务Java API快速入门(SOAP) {#components-and-services-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 Java API快速入门(SOAP)适用于组件和服务。
 
@@ -42,15 +46,15 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 >[!NOTE]
 >
->“使用AEM表单进行编程”中的快速入门基于JBoss和Windows操作系统上部署的Forms服务器。 但是，如果您使用的是其他操作系统（如Unix），请将特定于Windows的路径替换为适用操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>“使用AEM表单进行编程”中的快速入门基于JBoss和Windows操作系统上部署的Forms服务器。 但是，如果您使用的是其他操作系统（如Unix），请将特定于Windows的路径替换为适用操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
->如果您有自定义组件，并且使用SOAP或EJB协议在同一本地服务器上调用DSC，并且这些调用在升级后停止工作，则使用VM内([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html))调用策略。 将VM内DSC调用方法与默认的ServiceClientFactory结合使用，而不要使用SOAP或EJB协议构建ServiceClientFactory。
+>如果您有自定义组件，并且使用SOAP或EJB协议在同一本地服务器上调用DSC，并且这些调用在升级后停止工作，则使用VM内([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html))调用策略。 将VM内DSC调用方法与默认ServiceClientFactory结合使用，而不要使用SOAP或EJB协议构建ServiceClientFactory。
 
 ## 快速入门（SOAP模式）：使用Java API部署组件 {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-以下Java示例部署了一个基于&#x200B;*adobe-emailSample-dsc.jar*&#x200B;的JAR文件的组件。
+以下Java示例部署了一个基于名为的JAR文件的组件 *adobe-emailSample-dsc.jar*.
 
 ```as3
  /* 
@@ -152,7 +156,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速入门（SOAP模式）：使用Java API设置服务的执行上下文 {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-以下Java代码示例将“运行方式调用程序”执行上下文设置为名为&#x200B;*EncryptDocument*&#x200B;的示例服务。
+以下Java代码示例将“运行为调用程序”执行上下文设置为名为的示例服务 *EncryptDocument*.
 
 ```as3
  /* 
@@ -357,7 +361,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，连接模式应设置�
 
 ## 快速入门（SOAP模式）：使用Java API启动服务 {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-以下Java代码示例启动名为&#x200B;*SendEmailService*&#x200B;的服务。
+以下Java代码示例启动名为 *SendEmailService*.
 
 ```as3
  package com.adobe.sample.servicemanager; 

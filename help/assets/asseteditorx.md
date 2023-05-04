@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Developer Tools
 role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '727'
 ht-degree: 13%
 
 ---
 
 # 扩展资产编辑器 {#extending-asset-editor}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 资产编辑器是在单击通过资产共享找到的资产后打开的页面，它允许用户编辑资产的元数据、缩略图、标题和标记等方面。
 
-[创建和配置资产编辑器页面](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)中介绍了使用预定义编辑组件配置编辑器的相关内容。
+有关使用预定义编辑组件配置编辑器的介绍，请参阅 [创建和配置资产编辑器页面](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
 除了使用预先存在的编辑器组件之外，Adobe Experience Manager开发人员还可以创建他们自己的组件。
 
@@ -24,35 +28,35 @@ ht-degree: 13%
 
 geometrixx中包含以下示例页面：
 
-* Geometrixx示例页面：`/content/geometrixx/en/press/asseteditor.html`
-* 示例模板：`/apps/geometrixx/templates/asseteditor`
-* 示例页面组件：`/apps/geometrixx/components/asseteditor`
+* Geometrixx示例页面： `/content/geometrixx/en/press/asseteditor.html`
+* 示例模板： `/apps/geometrixx/templates/asseteditor`
+* 示例页面组件： `/apps/geometrixx/components/asseteditor`
 
 ### 配置Clientlib {#configuring-clientlib}
 
-[!DNL Experience Manager Assets] 组件使用WCM edit clientlib的扩展。clientlib通常在`init.jsp`中加载。
+[!DNL Experience Manager Assets] 组件使用WCM edit clientlib的扩展。 clientlib通常加载到 `init.jsp`.
 
-与默认的clientlib加载（在核心的`init.jsp`中）相比，[!DNL Assets]模板必须具有以下内容：
+与默认clientlib加载相比(在核心的 `init.jsp`)、 [!DNL Assets] 模板必须具有以下内容：
 
-* 模板必须包含`cq.dam.edit` clientlib（而不是`cq.wcm.edit`）。
+* 模板必须包括 `cq.dam.edit` clientlib(而不是 `cq.wcm.edit`)。
 
 * clientlib 还必须包含在禁用的 WCM 模式中（例如，在&#x200B;**发布**&#x200B;时加载）才能渲染谓词、操作和镜头。
 
-在大多数情况下，复制现有示例`init.jsp`(`/apps/geometrixx/components/asseteditor/init.jsp`)应满足这些需求。
+在大多数情况下，复制现有示例 `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`)应满足这些需求。
 
 ### 配置JS操作 {#configuring-js-actions}
 
-某些[!DNL Assets]组件需要在`component.js`中定义的JS函数。 将此文件复制到组件目录并链接它。
+部分 [!DNL Assets] 组件需要在 `component.js`. 将此文件复制到组件目录并链接它。
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-此示例在`head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)中加载此JavaScript源。
+此示例将此JavaScript源加载到 `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)。
 
 ### 其他样式表 {#additional-style-sheets}
 
-某些[!DNL Assets]组件使用[!DNL Experience Manager]小组件库。 要在内容上下文中正确呈现，必须加载其他样式表。 标记操作组件需要再一个。
+部分 [!DNL Assets] 组件使用 [!DNL Experience Manager] 小组件库。 要在内容上下文中正确呈现，必须加载其他样式表。 标记操作组件需要再一个。
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -60,7 +64,7 @@ geometrixx中包含以下示例页面：
 
 ### Geometrixx样式表 {#geometrixx-style-sheet}
 
-示例页面组件要求所有选择器以`static.css`(`/etc/designs/geometrixx/static.css`)的`.asseteditor`开头。 最佳实践：将所有`.asseteditor`选择器复制到样式表，并根据需要调整规则。
+示例页面组件要求所有选择器均以开头 `.asseteditor` of `static.css` (`/etc/designs/geometrixx/static.css`)。 最佳实践：全部复制 `.asseteditor` 选择器，并根据需要调整规则。
 
 ### 表单选择器：最终加载的资源的调整 {#formchooser-adjustments-for-eventually-loaded-resources}
 
@@ -68,10 +72,10 @@ geometrixx中包含以下示例页面：
 
 例如：
 
-* 纯格式页面：[http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* 资产已加载到表单页面：[http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
+* 纯格式页面： [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
+* 资产已加载到表单页面： [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
-`head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)中的示例句柄执行以下操作：
+中的示例句柄 `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`)执行以下操作：
 
 * 它们会检测是否加载了资产，或是否必须显示纯格式。
 * 如果加载了资产，则它们将禁用WCM模式，因为Parsys只能在纯表单页面上编辑。
@@ -125,8 +129,8 @@ geometrixx中包含以下示例页面：
 
 此示例介绍如何构建可显示和显示已加载资产元数据的组件。
 
-1. 在项目目录中创建组件文件夹，例如`/apps/geometrixx/components/samplemeta`。
-1. 使用以下代码片段添加`content.xml`:
+1. 在项目目录中创建组件文件夹，例如， `/apps/geometrixx/components/samplemeta`.
+1. 添加 `content.xml` 以下代码片段：
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -138,7 +142,7 @@ geometrixx中包含以下示例页面：
        componentGroup="Asset Editor"/>
    ```
 
-1. 使用以下代码片段添加`samplemeta.jsp`:
+1. 添加 `samplemeta.jsp` 以下代码片段：
 
    ```javascript
    <%--
@@ -196,25 +200,25 @@ geometrixx中包含以下示例页面：
    </div>
    ```
 
-1. 为了使组件可用，您需要能够对其进行编辑。要使组件可编辑，请在CRXDE Lite中添加主类型`cq:EditConfig`的节点`cq:editConfig`。 为了删除段落，请添加带有单个值 `cq:actions` 的多值属性 `DELETE`。
+1. 为了使组件可用，您需要能够对其进行编辑。要使组件可编辑，请在CRXDE Lite中添加节点 `cq:editConfig` 主类型 `cq:EditConfig`. 为了删除段落，请添加带有单个值 `cq:actions` 的多值属性 `DELETE`。
 
-1. 导航到浏览器，然后在示例页面（例如`asseteditor.html`）上切换到设计模式，然后为段落系统启用新组件。
+1. 导航到浏览器，并在示例页面(例如， `asseteditor.html`)切换到设计模式，并为段落系统启用新组件。
 
 1. 在&#x200B;**编辑**&#x200B;模式中，新组件（例如，**示例元数据**）现在可在 Sidekick 中使用（位于&#x200B;**资产编辑器**&#x200B;组中）。插入组件。要能够存储元数据，必须将其添加到元数据表单中。
 
 ## 修改元数据选项 {#modifying-metadata-options}
 
-您可以修改[元数据表单](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)中可用的命名空间。
+您可以修改 [元数据表单](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
 
-`/libs/dam/options/metadata`中定义了当前可用的元数据：
+当前可用的元数据在 `/libs/dam/options/metadata`:
 
 * 此目录中的第一级包含命名空间。
 * 每个命名空间中的项目都表示一个元数据，例如导致出现本地部件项目。
 * 元数据内容包含有关类型和多值选项的信息。
 
-可以在`/apps/dam/options/metadata`中覆盖以下选项：
+选项可在 `/apps/dam/options/metadata`:
 
-1. 将目录从`/libs`复制到`/apps`。
+1. 从以下位置复制目录 `/libs` to `/apps`.
 
 1. 删除、修改或添加项目。
 

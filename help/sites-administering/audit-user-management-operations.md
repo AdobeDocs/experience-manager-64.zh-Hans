@@ -1,9 +1,9 @@
 ---
 title: 如何在AEM中审核用户管理操作
-seo-title: 如何在AEM中审核用户管理操作
+seo-title: How to Audit User Management Operations in AEM
 description: 了解如何在AEM中审核用户管理操作。
-feature: 运营
-seo-description: 了解如何在AEM中审核用户管理操作。
+feature: Operations
+seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,14 +11,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 1%
+source-wordcount: '338'
+ht-degree: 2%
 
 ---
 
-# 如何在AEM{#how-to-audit-user-management-operations-in-aem}中审核用户管理操作
+# 如何在AEM中审核用户管理操作{#how-to-audit-user-management-operations-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 简介 {#introduction}
 
@@ -30,24 +34,24 @@ AEM引入了记录权限更改的功能，以便稍后对其进行审核。
 * 添加到群组的用户
 * 现有用户或组的权限更改
 
-默认情况下，这些条目将写入`error.log`文件。 为了更便于监控，建议将它们重定向到单独的日志文件。 有关如何执行此操作的更多信息，请参阅以下段落。
+默认情况下，这些条目将写入 `error.log` 文件。 为了更便于监控，建议将它们重定向到单独的日志文件。 有关如何执行此操作的更多信息，请参阅以下段落。
 
-## 将输出重定向到单独的日志文件{#redirecting-the-output-to-a-separate-log-file}
+## 将输出重定向到单独的日志文件 {#redirecting-the-output-to-a-separate-log-file}
 
-要将日志记录输出重定向到单独的日志文件，您需要创建新的&#x200B;**Apache Sling日志记录器**&#x200B;配置。 在以下示例中，我们将使用`useraudit.log`作为单独文件的名称。
+要将日志输出重定向到单独的日志文件，您将需要创建新 **Apache Sling日志记录记录器** 配置。 我们会用 `useraudit.log` 作为以下示例中单独文件的名称。
 
-1. 通过浏览到`https://<serveraddress>:<serverport>/system/console/configMgr`，转到Web控制台
-1. 搜索&#x200B;**Apache Sling日志记录器配置**。 然后，按条目右侧的“+”以创建新工厂配置。
+1. 通过浏览到 `https://<serveraddress>:<serverport>/system/console/configMgr`
+1. 搜索 **Apache Sling日志记录器配置**. 然后，按条目右侧的“+”以创建新工厂配置。
 1. 创建以下配置：
 
    * **日志级别：** 信息
    * **日志文件：** logs/useraudit.log
    * **消息模式：** 级别默认值
-   * **日志记录器：** com.adobe.granite.security.user.internal.audit， com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+   * **记录器：** com.adobe.granite.security.user.internal.audit， com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   要在&#x200B;**Logger**&#x200B;字段中输入两个日志记录器，您需要输入第一个日志记录器的名称，然后按“+”按钮并输入第二个日志记录器的名称，以创建另一个字段。
+   要在 **记录器** 字段中，您需要输入第一个日志记录器的名称，然后按“+”按钮并输入第二个日志记录器的名称以创建另一个字段。
 
-## 示例输出{#example-output}
+## 示例输出 {#example-output}
 
 如果配置正确，输出应如下所示：
 

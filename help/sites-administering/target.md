@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 10c40e33-e62f-451f-b5d4-e34081f4340e
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 64%
+source-wordcount: '634'
+ht-degree: 63%
 
 ---
 
 # 与 Adobe Target 集成{#integrating-with-adobe-target}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 作为 Adobe Marketing Cloud 的一部分，[Adobe Target](http://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) 允许您通过在所有渠道中进行定位和衡量来提高内容相关性。营销人员使用 Adobe Target 来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。AEM已采用Adobe Target Standard中使用的定位工作流。 如果您使用Target，则会熟悉AEM中的定位编辑环境。
 
@@ -69,8 +73,8 @@ ht-degree: 64%
 将AEM与Adobe Target集成需要了解Adobe Target、AEM活动管理和AEM受众管理。 您应熟悉以下信息：
 
 * Adobe Target（请参阅 [Adobe Target 文档](https://experienceleague.adobe.com/docs/target/using/target-home.html)）。
-* AEM活动控制台(请参阅 [管理活动](/help/sites-authoring/activitylib.md))。
-* AEM受众(请参阅 [管理受众](/help/sites-authoring/managing-audiences.md))。
+* AEM 活动控制台（请参阅[管理活动](/help/sites-authoring/activitylib.md)）。
+* AEM 受众（请参阅[管理受众](/help/sites-authoring/managing-audiences.md)）。
 
 >[!NOTE]
 >

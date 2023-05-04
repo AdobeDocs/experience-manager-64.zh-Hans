@@ -6,31 +6,35 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 8c41dba4-bedc-4747-b67d-fd89d71c8b2c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 13%
+source-wordcount: '573'
+ht-degree: 8%
 
 ---
 
 # 最佳实践{#best-practices}
 
-最佳实践介绍如何以最有效、最有效的方式开发、管理或使用AEM。 这些主题涵盖 AEM 中的多个区域，此外还将不断增加新的主题。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-目前已经有针对以下区域的最佳实践文档：
+最佳实践介绍如何以最有效、最有效的方式开发、管理或使用AEM。 这个不断增长的主题列表包括AEM中的多个区域。
 
-* [资产](#assets)
-* [站点](#sites)
+以下区域提供了有关最佳实践的文档：
+
+* [Assets](#assets)
+* [Sites](#sites)
 
 有关创作、部署和维护或开发的最佳实践，请参阅以下内容之一：
 
 * [创作最佳实践](/help/sites-authoring/best-practices.md)
-* [开发最佳实践](/help/sites-developing/best-practices.md)
+* [制定最佳实践](/help/sites-developing/best-practices.md)
 * [部署最佳实践](/help/sites-deploying/best-practices.md)
 
-以下各表中介绍了具体的文档并提供了相应链接。
+下表中描述并链接了特定文档。
 
-## 资产 {#assets}
+## Assets {#assets}
 
 以下主题介绍了有关资产(包括Dynamic Media功能和Dynamic Media Classic集成)的最佳实践：
 
@@ -53,27 +57,27 @@ ht-degree: 13%
   </tr>
   <tr>
    <td>图像预设选项</td> 
-   <td>了解<a href="/help/assets/managing-image-presets.md#understanding-image-presets">图像预设</a>和<a href="/help/assets/managing-image-presets.md#image-preset-options">图像预设最佳实践</a></td> 
-   <td>在<a href="/help/assets/managing-image-presets.md">管理图像预设</a>的文档中，以下主题介绍了图像预设的含义以及有关选择图像预设选项的最佳实践。</td> 
+   <td>了解 <a href="/help/assets/managing-image-presets.md#understanding-image-presets">图像预设</a> 和 <a href="/help/assets/managing-image-presets.md#image-preset-options">图像预设最佳实践</a></td> 
+   <td>作为 <a href="/help/assets/managing-image-presets.md">管理图像预设</a>，以下主题将介绍图像预设的含义以及有关选择图像预设选项的最佳实践。</td> 
   </tr>
   <tr>
-   <td>Dynamic Media与与Dynamic Media Classic的直接集成</td> 
+   <td>Dynamic Media与Dynamic Media Classic的直接集成</td> 
    <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Dynamic Media Classic/AEM集成与Dynamic Media</a></td> 
    <td>描述何时最好使用Dynamic Media解决方案，何时将S7与AEM集成，或何时同时使用这两者。</td> 
   </tr>
  </tbody>
 </table>
 
-## 站点 {#sites}
+## Sites {#sites}
 
-在管理和创作网站内容方面具有一些最佳实践，如下所述：
+管理和创作网站内容有一些最佳实践，如下所述：
 
 <table> 
  <tbody>
   <tr>
    <td>GDPR合规</td> 
    <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites GDPR合规</a></td> 
-   <td>欧盟的《数据隐私权通用数据保护条例》已于2018年5月正式生效。 AEM Sites符合GDPR。 本页面将指导客户完成在AEM Sites中处理GDPR请求的过程。 它描述了存储的专用数据的位置，以及如何手动或使用代码删除这些数据。</td> 
+   <td>欧盟的《数据隐私权通用数据保护条例》已于2018年5月正式生效。 AEM Sites符合GDPR。 本页面将指导客户完成在AEM Sites中处理GDPR请求的过程。 它描述了私有数据的存储位置，以及如何手动或使用代码删除私有数据。</td> 
   </tr>
   <tr>
    <td>为实例定义默认UI。</td> 
@@ -82,7 +86,7 @@ ht-degree: 13%
   </tr>
   <tr>
    <td>多站点管理</td> 
-   <td><a href="/help/sites-administering/msm-best-practices.md">MSM最佳实践</a></td> 
+   <td><a href="/help/sites-administering/msm-best-practices.md">MSM 最佳实践</a></td> 
    <td>使用MSM自动部署内容的最佳实践。 </td> 
   </tr>
   <tr>

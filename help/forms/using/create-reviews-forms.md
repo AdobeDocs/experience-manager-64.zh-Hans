@@ -1,32 +1,36 @@
 ---
 title: 创建和管理表单中资产的审阅
-seo-title: 创建和管理表单中资产的审阅
-description: '审阅是一种机制，它允许一个或多个审阅人对表单中可用的资产发表评论。 '
-seo-description: '审阅是一种机制，它允许一个或多个审阅人对表单中可用的资产发表评论。 '
+seo-title: Creating and managing reviews for assets in forms
+description: 审阅是一种机制，它允许一个或多个审阅人对表单中可用的资产发表评论。
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 6b1aa54f-d03c-483a-a398-6522b285194c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
-feature: 自适应表单
+feature: Adaptive Forms
 exl-id: ff113288-a69a-4083-82a6-4c65c5062411
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 1%
+source-wordcount: '695'
+ht-degree: 0%
 
 ---
 
-# 在表单{#creating-and-managing-reviews-for-assets-in-forms}中创建和管理资产审阅
+# 创建和管理表单中资产的审阅 {#creating-and-managing-reviews-for-assets-in-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 审核 {#review}
 
 审阅是一种机制，它允许一个或多个审阅人对表单中可用的资产发表评论。
 
-## 设置审阅{#setting-up-a-review}
+## 设置审阅 {#setting-up-a-review}
 
 1. 导航到Forms选项卡并选择表单。
-1. 如果资产没有进行审核，操作栏中会显示开始审核![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)图标。 单击开始审阅![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)图标。
+1. 如果资产没有进行审核，则开始审核 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 图标。 单击Start Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 图标。
 1. 输入以下信息：
 
    * 审阅名称：必选项，可以包含字母数字字符、连字符或下划线。
@@ -36,7 +40,7 @@ ht-degree: 1%
 
 1. 填写所有剩余的详细信息，然后单击“开始”。
 
-### 设置{#actions-that-occur-when-a-review-is-set-up}审阅时发生的操作
+### 设置审阅时发生的操作 {#actions-that-occur-when-a-review-is-set-up}
 
 本节介绍在创建或设置审阅时所发生的情况。
 
@@ -48,7 +52,7 @@ ht-degree: 1%
 
 1. 资产的发起人和审阅人可以使用评论框。 其他人可以查看评论，但无法写评论。
 
-## 管理审阅{#managing-a-review}
+## 管理审阅 {#managing-a-review}
 
 >[!NOTE]
 >
@@ -56,9 +60,9 @@ ht-degree: 1%
 
 1. 导航到Forms选项卡并选择表单。
 
-1. 如果资产正在进行审核，并且您是审核的发起者，则操作栏中会显示“管理审核” ![aem6formsreview_chat_comment](assets/aem6forms_review_chat_comment.png)图标。 只有审核启动器才能管理（更新/结束）审核。
+1. 如果资产正在进行审核，并且您是审核的发起者，则会进行管理审核 ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) 图标。 只有审核启动器才能管理（更新/结束）审核。
 
-   单击管理审阅![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)图标。
+   单击Manage Review ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)图标。
 
    对于启动器以外的用户，“管理审阅”图标处于禁用状态。
 
@@ -66,8 +70,8 @@ ht-degree: 1%
 
    * **审阅名称**:无法编辑。
    * **查看描述**:可进行编辑。
-   * **审核截止时间**:可进行编辑。您可以将截止日期修改为超出当前日期和时间的任何日期和时间。
-   * **审阅人**:可进行编辑。可以添加或删除审阅人。 如果任务逾期，则只有在将截止日期延长到当前日期之后，才能添加审阅人。
+   * **审核截止时间**:可进行编辑。 您可以将截止日期修改为超出当前日期和时间的任何日期和时间。
+   * **审阅人**:可进行编辑。 可以添加或删除审阅人。 如果任务逾期，则只有在将截止日期延长到当前日期之后，才能添加审阅人。
 
 1. 编辑必需的字段，然后单击“更新”。
 
@@ -76,7 +80,7 @@ ht-degree: 1%
 
 1. 要结束审阅，请单击“结束”。
 
-### 修改审阅时发生的操作{#actions-that-occur-when-a-review-is-modified}
+### 修改审阅时发生的操作 {#actions-that-occur-when-a-review-is-modified}
 
 本节介绍审核结束/修改时发生的情况：
 
@@ -101,6 +105,6 @@ ht-degree: 1%
 
 1. 审核结束时：
 
-   1. **审阅人**:对于每个审阅人，与审阅相关的未完成任务将终止。该任务在审阅人的“通知”部分中不再显示为“待处理”。
-   1. **启动器**:分配给审核启动器的任务标记为完成。该任务将从审阅启动器的“通知”部分中删除。
-   1. **全部**:该审阅显示在“上一审阅”(Previous Reviews)部分中。无法添加进一步的评论。
+   1. **审阅人**:对于每个审阅人，与审阅相关的未完成任务将终止。 该任务在审阅人的“通知”部分中不再显示为“待处理”。
+   1. **发起者**:分配给审核启动器的任务标记为完成。 该任务将从审阅启动器的“通知”部分中删除。
+   1. **全部**:该审阅显示在“上一审阅”(Previous Reviews)部分中。 无法添加进一步的评论。

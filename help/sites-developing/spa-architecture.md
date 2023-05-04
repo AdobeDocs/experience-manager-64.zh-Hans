@@ -10,16 +10,20 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
 exl-id: 7b9f21eb-22f6-42f7-8dc7-770601ef51fc
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 2%
+source-wordcount: '2185'
+ht-degree: 5%
 
 ---
 
 # 为 AEM 开发 SPA{#developing-spas-for-aem}
 
-单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用SPA框架构建站点，而作者则希望在AEM中为使用此类框架构建的站点无缝编辑内容。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用 SPA 框架构建站点，而作者则希望能够在 AEM 中顺畅地为使用此类框架构建的站点编辑内容。
 
 本文介绍了在让前端开发人员开发SPA for AEM时应考虑的重要问题，并概述了AEM在AEM上部署SPA的架构。
 
@@ -31,16 +35,16 @@ ht-degree: 2%
 
 ## AEM 项目原型 {#aem-project-archetype}
 
-任何AEM项目都应利用 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用React或Angular的SPA项目并利用SPA SDK。
+任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ## SPA的AEM开发原则 {#spa-development-principles-for-aem}
 
-在AEM上开发单页应用程序时，假定前端开发人员在创建SPA时遵循标准的最佳实践。 如果您作为前端开发人员，遵循以下一般最佳实践以及一些特定于AEM的原则，则您的SPA将能够在 [AEM及其内容创作功能](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
+在 AEM 上开发单页应用程序时，假定前端开发人员在创建 SPA 时遵循标准最佳实践。如果您作为前端开发人员，遵循以下一般最佳实践以及一些特定于AEM的原则，则您的SPA将能够在 [AEM及其内容创作功能](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
 * **[便携性](/help/sites-developing/spa-architecture.md#portability) -** 与任何组件一样，组件应该构建为尽可能便携。 SPA应使用可移植且可重复使用的组件构建，以避免引用内容结构的静态路径。
 * **[AEM驱动器站点结构](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**  — 前端开发人员创建组件并拥有其内部结构，但依赖AEM来定义网站的内容结构。
 * **[动态渲染](/help/sites-developing/spa-architecture.md#dynamic-rendering) -** 所有渲染都应是动态的。
-* **[动态路由](#dynamic-routing) -** SPA负责路由，AEM会侦听该路由并基于该路由获取组件数据。 任何路由都应是动态的。
+* **[动态路由](#dynamic-routing) -** SPA负责路由，AEM会侦听该路由并基于该路由获取组件数据。 任何路由也应是动态的。
 
 在开发SPA时，如果您牢记这些原则，那么在启用所有受支持的AEM创作功能时，将尽可能灵活地进行未来验证。
 
@@ -159,7 +163,7 @@ SPA应仅依赖于内容的动态渲染。 这是AEM获取并呈现内容结构�
 
 1. **扩展提供的 `Container` 页面和容器的类**
 
-   页面和段落系统应扩展此类，以便委派给内部组件可以按预期工作。
+   页面和段落系统应扩展此类，以便委派到内部组件可以按预期工作。
 
 1. **实施使用HTML5的路由解决方案 `History` API。**
 

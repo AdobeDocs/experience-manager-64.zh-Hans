@@ -9,14 +9,18 @@ topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 exl-id: fa39a4e8-ae22-4356-8935-44fdf1f4f609
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2902'
 ht-degree: 2%
 
 ---
 
 # 基于OSGi的以Forms为中心的工作流 {#forms-centric-workflow-on-osgi}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ![](do-not-localize/header.png)
 
@@ -67,7 +71,7 @@ AEM提供了直观的用户界面，以使用提供的工作流步骤创建工�
 
 1. 打开“工作流模型”控制台。 默认URL为 `https://[Server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. 选择 **[!UICONTROL 创建]**，则 **[!UICONTROL 创建模型]**. 此时将出现“添加工作流模型”(Add Workflow Model)对话框。
-1. 输入 **[!UICONTROL 标题]** 和 **[!UICONTROL 名称]** （可选）。 例如，抵押申请。 点按&#x200B;**[!UICONTROL 完成]**。
+1. 输入 **[!UICONTROL 标题]** 和 **[!UICONTROL 名称]** （可选）。 例如，抵押申请。 点按 **[!UICONTROL 完成]**.
 1. 选择新创建的工作流模型并点按 **编辑。** 现在，您可以添加工作流步骤以构建业务逻辑。 首次创建工作流模型时，它包含：
 
    * 步骤：流量开始和流量结束。 这些步骤表示工作流的开始和结束。 这些步骤是必需的，无法编辑或删除。

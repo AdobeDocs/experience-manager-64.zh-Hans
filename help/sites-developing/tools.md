@@ -1,8 +1,8 @@
 ---
 title: 测试和跟踪工具
-seo-title: 测试和跟踪工具
+seo-title: Testing and Tracking Tools
 description: AEM提供了组件UI测试框架以及组件测试和调试机制
-seo-description: AEM提供了组件UI测试框架以及组件测试和调试机制
+seo-description: AEM provides a framework for testing component UI and a mechanism for testing and debugging components
 uuid: 29c43202-0a4e-41ba-9176-92fa77c627d5
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,21 +10,25 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
 exl-id: 9387cdb4-f8de-4229-90d1-59218ac17561
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 0%
+source-wordcount: '327'
+ht-degree: 2%
 
 ---
 
 # 测试和跟踪工具{#testing-and-tracking-tools}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 ## 测试 {#testing}
 
-AEM提供：
+AEM 提供：
 
-* [用于测试组件UI的框架](/help/sites-developing/hobbes.md)。
-* [用于测试和调试组件的机制](/help/sites-developing/developer-mode.md)。
+* [组件UI测试框架](/help/sites-developing/hobbes.md).
+* [组件测试和调试机制](/help/sites-developing/developer-mode.md).
 
 以下是两个开源测试工具：
 
@@ -32,13 +36,13 @@ AEM提供：
 
 Selenium用于在每个活动有一个用户的浏览器中进行功能测试。 它将测试步骤（点击）记录为HTML表或Java类。
 
-有关更多信息，请参阅[https://www.seleniumhq.org/](https://www.seleniumhq.org/)。
+有关详细信息，请参阅 [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
 JMeter用于跟踪请求，可用于功能、性能和压力测试。
 
-有关更多信息，请参阅[http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/)。
+有关详细信息，请参阅 [http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/).
 
 还有许多专有工具可用于自动化测试和管理测试计划。
 

@@ -1,8 +1,8 @@
 ---
 title: 同步应用程序
-seo-title: 同步应用程序
+seo-title: Synchronizing the app
 description: 将移动设备上的AEM Forms应用程序与AEM Forms服务器同步。
-seo-description: 将移动设备上的AEM Forms应用程序与AEM Forms服务器同步。
+seo-description: Synchronize the AEM Forms app on your mobile device with the AEM Forms server.
 uuid: 7e1526e1-13bd-498a-a265-cd4f2d05ccdd
 contentOwner: robhagat
 content-type: reference
@@ -10,16 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 exl-id: b5681fe5-69ba-4fc0-95e3-6ffdcdd95382
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 0%
+source-wordcount: '405'
+ht-degree: 1%
 
 ---
 
-# 同步应用程序{#synchronizing-the-app}
+# 同步应用程序 {#synchronizing-the-app}
 
-## 同步应用程序{#synchronizing-the-app-1}
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+## 同步应用程序 {#synchronizing-the-app-1}
 
 应用程序中的表单将从AEM Forms服务器下载。 表格将在“任务”和“Forms”选项卡下下载。 从表单创建的草稿将在“草稿”选项卡中下载，从任务创建的草稿将在“任务”选项卡中下载。 对于OSGi服务器上的独立表单，表单和草稿将分别下载到Forms和草稿选项卡中。
 
@@ -29,11 +33,11 @@ ht-degree: 0%
 
 **手动同步应用程序**
 
-点按主屏幕右下角的同步按钮![sync-app](assets/sync-app.png)。
+点按同步按钮 ![sync-app](assets/sync-app.png) 在主屏幕的右下角。
 
 **更改同步频率**
 
-1. 要转到“设置”屏幕，请点按主屏幕左上角的菜单按钮，然后点按&#x200B;**Settings**。
+1. 要转到设置屏幕，请点按主屏幕左上角的菜单按钮，然后点按 **设置**.
 1. 在设置屏幕中，点按常规选项卡。
 
    ![“常规设置”窗口中的同步频率设置](assets/gen-settings-1.png)
@@ -41,7 +45,7 @@ ht-degree: 0%
 1. 在同步频率选项中，点按同步频率右侧的值。
 1. 在下拉列表中，选择新的同步频率。
 
-### 技术规范{#technical-specifications}
+### 技术规范 {#technical-specifications}
 
 * 将离线应用程序数据提交到AEM Forms服务器的主要逻辑包含在runtime/offline/util/offline.js中。
 * 在.js中，对processOfflineSubmittedSavedTasks(...)函数的调用会将已保存/已提交的任务发送到服务器。 它还可处理同步过程中的任何错误或冲突。 如果提交任务失败，则应用程序上的任务将标记为失败。 此外，任务仍保留在发件箱中。

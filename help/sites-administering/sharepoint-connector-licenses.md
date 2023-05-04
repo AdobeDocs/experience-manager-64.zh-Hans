@@ -1,8 +1,8 @@
 ---
 title: SharePoint连接器许可证、版权声明和免责声明
-seo-title: SharePoint连接器许可证、版权声明和免责声明
+seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
 description: 了解SharePoint连接器许可证、版权声明和免责声明。
-seo-description: 了解SharePoint连接器许可证、版权声明和免责声明。
+seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,20 +10,24 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
 exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 10%
+source-wordcount: '398'
+ht-degree: 19%
 
 ---
 
 # SharePoint连接器许可证、版权声明和免责声明{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-本节列出了所有必须与Day JCR Connector for MS SharePoint相关的许可证、版权声明和免责声明。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-## 连接器第三方库概述{#overview-of-connector-rd-party-libraries}
+本节列出了所有必须与MS SharePoint的Day JCR Connector相关的许可证、版权声明和免责声明。
 
-下表列出了SharePoint Connector核心库内使用的第三方库，以及涵盖这些库的许可证、版权声明或免责声明：
+## Connector第三方库概述 {#overview-of-connector-rd-party-libraries}
+
+下表列出了在SharePoint Connector核心库中使用的第三方库，以及涵盖这些库的许可证、版权声明或免责声明：
 
 | 库 | 许可类型 |
 |---|---|
@@ -62,7 +66,7 @@ ht-degree: 10%
 | xml-api | [Apache](#apache) （包含公共域和W3C软件许可证涵盖的部分） |
 | XmlSchema | [Apache](#apache) |
 
-## CRX第三方库概述{#overview-of-crx-rd-party-libraries}
+## CRX第三方库概述 {#overview-of-crx-rd-party-libraries}
 
 下表列出了CRX中使用的第三方库，以及涵盖这些库的许可证、版权声明或免责声明：
 
@@ -154,7 +158,7 @@ ht-degree: 10%
  </tbody> 
 </table>
 
-## CQSE第三方库概述{#overview-of-cqse-rd-party-libraries}
+## CQSE第三方库概述 {#overview-of-cqse-rd-party-libraries}
 
 下表列出了公报Servlet引擎内使用的第三方库，以及涉及这些库的许可证、版权声明或免责声明：
 
@@ -166,7 +170,7 @@ ht-degree: 10%
  <tbody> 
   <tr> 
    <td>库</td> 
-   <td>License</td> 
+   <td>许可</td> 
   </tr> 
   <tr> 
    <td>ant-1.6.jar</td> 
@@ -566,7 +570,7 @@ ht-degree: 10%
      implementations, and test suites thereof.
 ```
 
-## 高超音速SQL组{#hypersonic-sql-group}
+## 高超音速SQL组 {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -1093,7 +1097,7 @@ ht-degree: 10%
      (LFI#95810/Form ID#011801)
 ```
 
-## W3C文档{#w-c-document}
+## W3C文档 {#w-c-document}
 
 ```xml
      This license came from: https://www.w3.org/Consortium/Legal/
@@ -1179,7 +1183,7 @@ ht-degree: 10%
      (last updated by reagle on 1999/04/99.)
 ```
 
-## W3C软件{#w-c-software}
+## W3C软件 {#w-c-software}
 
 ```xml
      This license came from: <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>

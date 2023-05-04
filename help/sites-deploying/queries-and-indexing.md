@@ -12,14 +12,18 @@ discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: 5f43de8d-9d26-456e-b695-3ffa71a4f3bf
-source-git-commit: 3101fab64f6b9fbe2fdeed5fe28d650b84bcdef5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2693'
 ht-degree: 2%
 
 ---
 
 # Oak查询和索引{#oak-queries-and-indexing}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -211,7 +215,7 @@ select * from [nt:base] where [alias] = '/admin'
 
    * **名称:** `class`
    * **类型:** `String`
-   * **值：** `org.apache.lucene.analysis.standard.StandardAnalyzer`
+   * **值:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
 
    该值是您希望使用的分析器类的名称。
 
@@ -219,7 +223,7 @@ select * from [nt:base] where [alias] = '/admin'
 
    * **名称:** `luceneMatchVersion`
    * **类型:** `String`
-   * **值：** `LUCENE_47`
+   * **值:** `LUCENE_47`
 
    如果 `luceneMatchVersion` 未提供，Oak将使用随附的Lucene版本。
 
@@ -248,7 +252,7 @@ select * from [nt:base] where [alias] = '/admin'
          * **属性名称:** `name`
 
             * **类型:** `String`
-            * **值：** `Standard`
+            * **值:** `Standard`
       * **名称:** `filters`
       * **类型:** `nt:unstructured`
 
@@ -258,7 +262,7 @@ select * from [nt:base] where [alias] = '/admin'
             * **属性名称:** `words`
 
                * **类型:** `String`
-               * **值：** `stop1.txt, stop2.txt`
+               * **值:** `stop1.txt, stop2.txt`
             * **名称:** `stop1.txt`
 
                * **类型:** `nt:file`

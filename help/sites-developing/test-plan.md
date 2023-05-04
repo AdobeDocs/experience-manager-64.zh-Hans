@@ -1,8 +1,8 @@
 ---
 title: 编译测试计划
-seo-title: 编译测试计划
+seo-title: Compiling your Test Plan
 description: 将各个测试用例合并到测试计划中
-seo-description: 将各个测试用例合并到测试计划中
+seo-description: The individual test cases are amalgamated into your Test Plan
 uuid: 99822b02-7b75-422d-ae21-16c4af742567
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 3a8302e8-bc61-402c-a9f2-5db3dfa6dd6d
 exl-id: 913e1fee-b071-4152-94c3-dd7b8900e5ed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 0%
+source-wordcount: '229'
+ht-degree: 2%
 
 ---
 
 # 编译测试计划{#compiling-your-test-plan}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 然后，各个测试案例将合并到您的测试计划中，该测试计划还将定义：
 

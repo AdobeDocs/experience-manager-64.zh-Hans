@@ -1,8 +1,8 @@
 ---
 title: 云配置
-seo-title: 云配置
+seo-title: Cloud Configuration
 description: 将按需应用程序与云配置关联后，Adobe Experience Manager(AEM)可以通过建立双向链接，直接与移动设备按需托管项目进行通信。 请阅读本页以了解更多信息。
-seo-description: 将按需应用程序与云配置关联后，Adobe Experience Manager(AEM)可以通过建立双向链接，直接与移动设备按需托管项目进行通信。 请阅读本页以了解更多信息。
+seo-description: Associating an On-Demand App to a Cloud Configuration allows Adobe Experience Manager (AEM) to communicate directly with a Mobile On-Demand hosted project by establishing a two way link. Follow this page to learn more.
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
 content-type: reference
@@ -10,61 +10,65 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 exl-id: eff852b0-99cd-4242-bac8-992ee10401e2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
 source-wordcount: '444'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # 云配置{#cloud-configuration}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
 
 将按需应用程序与云配置关联后，Adobe Experience Manager(AEM)可以通过建立双向链接，直接与移动设备按需托管项目进行通信。 通过将您的应用程序关联到Mobile On-Demand项目，您将能够在AEM中创建内容（如文章、横幅和收藏集），但也可以将该内容提供给Mobile On-Demand。
 
 从此处，可以发布、预览和管理内容。 您还可以将现有的Mobile On-Demand内容导入AEM并执行内容编辑。
 
-## 设置云配置{#setting-up-cloud-configuration}
+## 设置云配置 {#setting-up-cloud-configuration}
 
 >[!CAUTION]
 >
 >在开始为按需应用程序配置云配置之前，您必须熟悉AEM Mobile配置和配置AEM Mobile On-demand Services客户端。
 >
->有关详细信息，请参阅管理部分中的[设置AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) 。
+>有关详细信息，请参阅 [设置AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) 在管理部分。
 
-要配置Mobile On-DemandCloud Services，请单击应用程序功能板中&#x200B;**管理连接**&#x200B;图块右上角的顶齿轮。
+要配置Mobile On-DemandCloud Services，请单击 **管理连接** 图块。
 
-您应该熟悉应用程序功能板和可用图块。 有关更多详细信息，请参阅[AEM Mobile应用程序功能板](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
+您应该熟悉应用程序功能板和可用图块。 请参阅 [AEM Mobile应用程序功能板](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 以了解更多详细信息。
 
-### 设置指向云配置的链接{#setting-up-link-to-cloud-configuration}
+### 设置指向云配置的链接 {#setting-up-link-to-cloud-configuration}
 
 >[!CAUTION]
 >
 >确保您拥有现有的按需客户端和云配置。
 >
->有关详细信息，请参阅管理部分中的[设置AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) 。
+>有关详细信息，请参阅 [设置AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) 在管理部分。
 
 以下步骤描述如何设置云配置链接：
 
-1. 从&#x200B;**Mobile**&#x200B;中，选择&#x200B;**应用程序**，然后从目录中选择您的Mobile On-Demand应用程序。
-1. 单击&#x200B;**管理连接**&#x200B;拼贴上的齿轮图标。
+1. 从 **移动设备**，选择 **应用程序** 然后，从目录中访问您的Mobile On-Demand应用程序。
+1. 单击 **管理连接** 拼贴。
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. 输入现有配置或通过输入&#x200B;**配置标题**、**设备ID**&#x200B;和&#x200B;**设备令牌**&#x200B;来创建新配置。
+1. 输入现有配置，或通过输入 **配置标题**, **设备Id**&#x200B;和 **设备令牌**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. 验证&#x200B;**设备ID**&#x200B;和&#x200B;**设备令牌**&#x200B;后，从列表中选择您的按需项目。
+1. 一旦 **设备Id** 和 **设备令牌** 已验证，请从列表中选择您的按需项目。
 
-   单击&#x200B;**Submit**。
+   单击 **提交**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   **管理连接**&#x200B;拼贴显示了您的云配置。
+   的 **管理连接** 图块会显示您的云配置。
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 

@@ -2,14 +2,19 @@
 title: 使用具有客户端设备像素比的智能成像
 description: 了解如何在Adobe Experience Manager as a Cloud Service中结合使用客户端设备像素比率和智能成像，以及Dynamic Media。
 role: Admin,User
-source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
+exl-id: 3c19a02f-9d97-4ed4-92ea-0b5861267219
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 1%
 
 ---
 
 # 关于使用客户端设备像素比(DPR)进行智能成像 {#client-side-dpr}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 当前的智能成像解决方案使用用户代理字符串来确定正在使用的设备类型（台式机、平板电脑、移动设备等）。
 
@@ -69,3 +74,4 @@ Adobe还建议您在差异HTML标记下Bootstrap应用程序，而不是正文�
 >[!MORELIKETHIS]
 >
 >* [智能图像处理](/help/assets/imaging-faq.md)
+

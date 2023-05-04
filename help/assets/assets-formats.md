@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: cc47644419f7b7f4f1f00bb848050aa4a98efa09
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 23%
+source-wordcount: '1681'
+ht-degree: 11%
 
 ---
 
 # 支持的文件格式 [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 [!DNL Experience Manager Assets] 支持多种文件格式，每种功能都支持不同的MIME类型。
 
@@ -23,14 +27,14 @@ ht-degree: 23%
 | 支持级别 | 描述 |
 |:---:|---|
 | ✓ | 支持 |
-| &#42; | 受支持，但需要附加功能 |
+| &#42; | 附加功能支持 |
 | − | 不适用 |
 
 ## 光栅图像格式 {#supported-raster-image-formats}
 
 资产管理功能支持的栅格图像格式如下：
 
-| 格式 | 存储 | 元数据管理 | 元数据提取 | 缩略图生成 | 交互式编辑 | 元数据写回 | 分析 |
+| 格式 | 存储 | 元数据管理 | 元数据提取 | 缩略图生成 | 交互式编辑 | 元数据写回 | 见解 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
@@ -41,7 +45,7 @@ ht-degree: 23%
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **?** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -61,7 +65,7 @@ Dynamic Media功能支持的光栅图像格式如下：
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **?** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
@@ -70,7 +74,7 @@ Dynamic Media功能支持的光栅图像格式如下：
 
 除上述信息外，请考虑以下事项：
 
-* 对EPS文件的支持仅适用于光栅图像。 例如，默认不支持为 EPS 矢量图像生成缩略图。要添加支持， [配置ImageMagick](best-practices-for-imagemagick.md). 要集成第三方工具以启用其他功能，请参阅 [基于命令行的媒体处理程序](media-handlers.md#command-line-based-media-handler).
+* 对EPS文件的支持仅适用于光栅图像。 例如，默认不支持为EPS矢量图像生成缩略图。 要添加支持， [配置ImageMagick](best-practices-for-imagemagick.md). 要集成第三方工具以启用其他功能，请参阅 [基于命令行的媒体处理程序](media-handlers.md#command-line-based-media-handler).
 
 * 元数据写回在添加到 `NComm` 处理程序。
 
@@ -119,7 +123,7 @@ Adobe Camera Raw库支持 [!DNL Assets] 以摄取原始图像。 请参阅 [Came
 
 | 格式 | 存储 | 元数据<br> 管理 | 全文<br> 提取 | 元数据<br> 提取 | 缩略图<br> 生成 | 子资产<br> 提取 | 元数据<br> 写回 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
+| [人工智能](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
 | DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  |
 | ODT | ✓ | ✓ | ✓ |  |  |  |  |
@@ -136,14 +140,14 @@ Adobe Camera Raw库支持 [!DNL Assets] 以摄取原始图像。 请参阅 [Came
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
 | PS | ✓ | ✓ |  |  |  |  |  |
 | QXP | ✓ | ✓ |  |  |  |  |  |
-| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| ePub | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
 Dynamic Media功能支持的文档格式如下：
 
 | 格式 | 上传<br> （输入格式） | 创建<br> 图像<br> 预设<br> （输出格式） | 预览<br> 动态<br> 演绎版 | 交付<br> 动态<br> 演绎版 | 下载<br> 动态<br> 演绎版 |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [人工智能](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
-| 文档 |  |  |  |  |  |
+| DOC |  |  |  |  |  |
 | DOCX |  |  |  |  |  |
 | ODT |  |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) （请参阅下文的注释） | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -177,16 +181,16 @@ Dynamic Media功能支持的文档格式如下：
 
 | 格式 | 存储 | 元数据管理 | 元数据提取 | 缩略图生成 | FFMPEG转码 |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | &#42; |
-| MIDI | ✓ | ✓ |  | - | &#42; |
-| 3GP | ✓ | ✓ |  | - | &#42; |
-| MP3 | ✓ | ✓ | ✓ | - | &#42; |
-| MPG | ✓ | ✓ |  | - | &#42; |
-| OGA | ✓ | ✓ |  | - | &#42; |
-| OGG | ✓ | ✓ |  | - | &#42; |
-| RA | ✓ | ✓ |  | - | &#42; |
-| WAV | ✓ | ✓ |  | - | &#42; |
-| WMA | ✓ | ✓ |  | - | &#42; |
+| AAC | ✓ | ✓ |  | − | &#42; |
+| MIDI | ✓ | ✓ |  | − | &#42; |
+| 3GP | ✓ | ✓ |  | − | &#42; |
+| MP3 | ✓ | ✓ | ✓ | − | &#42; |
+| MPG | ✓ | ✓ |  | − | &#42; |
+| OGA | ✓ | ✓ |  | − | &#42; |
+| OGG | ✓ | ✓ |  | − | &#42; |
+| RA | ✓ | ✓ |  | − | &#42; |
+| WAV | ✓ | ✓ |  | − | &#42; |
+| WMA | ✓ | ✓ |  | − | &#42; |
 | DVI | ✓ | ✓ |  | &#42; | &#42; |
 | FLV | ✓ | ✓ |  | &#42; | &#42; |
 | M4V | ✓ | ✓ |  | &#42; | &#42; |
@@ -200,22 +204,22 @@ Dynamic Media功能支持的文档格式如下：
 
 | 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
 |---|---|---|---|
-| MP4 | MPEG-4 | H264/AVC（所有配置文件） |  |
-| MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple Intermediate、Apple Animation |
-| FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
-| WMV | Windows Media 9 | WMV3 (v9)、WMV2 (v8)、WMV1 (v7)、GoToMeeting（G2M2、G2M3、G2M4） | Microsoft Screen (MSS2)、Microsoft Photo Story (WVP2) |
+| MP4 | MPEG-4 | H264/AVC（所有用户档案） |  |
+| MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中级，Apple动画 |
+| FLV、F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
+| WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft屏幕(MSS2)、Microsoft照片文章(WVP2) |
 | MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 |  |
 | M4V | Apple iTunes | H264/AVC |  |
-| AVI | A/V Interleave | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V交织 | XVID、DIVX、HDV、MiniDV(DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3(IV30)、MJPEG、Microsoft Video 1(MS-CRAM) |
 | WebM | WebM | Google VP8 |  |
-| OGV、OGG | Ogg | Theora、VP3、Dirac |  |
+| OGV、OGG | Ogg | Theora， VP3, Dirac |  |
 | MXF | MXF | Sony XDCAM、MPEG-2、MPEG-4、Panasonic DVCPro |  |
 | MTS | AVCHD | H264/AVC |  |
-| MKV | Matroska | H264/AVC |  |
-| R3D、RM | Red Raw Video | MJPEG 2000 |  |
-| RAM、RM | RealVideo | 不支持 | Real G2 (RV20)、Real 8 (RV30)、Real 10 (RV40) |
-| FLAC | Native Flac | 自由无损音频编解码器 |  |
-| MJ2 | Motion JPEG2000 | 动画JPEG2000编解码器 |  |
+| MKV | 马特罗斯卡 | H264/AVC |  |
+| R3D、RM | 红色原始视频 | MJPEG 2000 |  |
+| RAM、RM | RealVideo | 不支持 | Real G2(RV20)、Real 8(RV30)、Real 10(RV40) |
+| FLAC | 原生Flac | 自由无损音频编解码器 |  |
+| MJ2 | 动画JPEG2000 | 动画JPEG2000编解码器 |  |
 
 ## 存档格式 {#supported-archive-formats}
 
@@ -259,12 +263,12 @@ Dynamic Media功能支持的文档格式如下：
 | 3GP | video/3gpp |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | AAC | audio/x-aac |  |  |
 | AFM | application/x-font-type1 |  |  |
-| AI | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li> [illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
+| 人工智能 | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li> [illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | AIFF | audio/x-aiff |  |  |
 | AVI | video/x-msvideo |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | BMP | image/bmp |  |  |
 | CSS | text/css |  |  |
-| 文档 | application/msword |  |  |
+| DOC | application/msword |  |  |
 | EPS | <ul><li>application/postscript</li><li>application/eps</li><li>application/x-eps</li><li>图像/eps</li><li>image/x-eps</li> |  |  |
 | F4V | video/x-f4v |  | ExcludeMasterVideoFromAVS |
 | FLA | application/x-shockwave-flash |  |  |

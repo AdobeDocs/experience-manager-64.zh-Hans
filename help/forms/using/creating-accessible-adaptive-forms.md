@@ -1,22 +1,26 @@
 ---
 title: 创建无障碍的自适应表单
-seo-title: 创建无障碍的自适应表单
+seo-title: Creating accessible adaptive forms
 description: AEM Forms为您提供了工具和用于创建无障碍自适应表单，并有助于遵守无障碍标准。
-seo-description: AEM Forms为您提供了工具和用于创建无障碍自适应表单，并有助于遵守无障碍标准。
+seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 uuid: eceb3282-0b90-4e0a-8b89-137d27029747
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
-feature: 自适应表单
+feature: Adaptive Forms
 exl-id: adad26fa-b27a-4bd7-806c-4ddfbaae7a37
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
 
-# 创建可访问的自适应表单{#creating-accessible-adaptive-forms}
+# 创建无障碍的自适应表单 {#creating-accessible-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 简介 {#introduction}
 
@@ -31,30 +35,30 @@ ht-degree: 0%
 * 提供足够的颜色对比度
 * 确保表单控件可通过键盘访问
 
-## 为表单控件{#provide-proper-labels-for-form-controls}提供适当的标签
+## 为表单控件提供适当的标签 {#provide-proper-labels-for-form-controls}
 
-组件的标签或标题可标识表单组件所代表的内容。 例如，文本“名字”告知用户，他们必须在文本字段中输入其名字。 为便于屏幕阅读器访问，标签采用编程方式与表单组件关联。 或者，表单控件配置了其他辅助功能信息。
+组件的标签或标题可标识表单组件所代表的内容。 例如，文本“名字”告知用户，他们必须在文本字段中输入自己的名字。 为便于屏幕阅读器访问，标签采用编程方式与表单组件关联。 或者，表单控件配置了其他辅助功能信息。
 
 屏幕阅读器感知到的标签不一定与可视标题相同。 在某些情况下，您可能希望更具体地介绍控制的目的。 对于表单中的每个字段对象，可使用辅助功能选项指定屏幕阅读器所朗读的内容，以标识特定的表单字段。
 
 要使用“辅助功能”选项，请执行以下步骤：
 
-1. 选择组件并点按![cmppr](assets/cmppr.png)。
-1. 单击侧栏中的&#x200B;**辅助功能**&#x200B;以选择所需的辅助功能选项。
+1. 选择组件并点按 ![cppr](assets/cmppr.png).
+1. 单击 **辅助功能** ，以选择所需的辅助功能选项。
 
-### 表单组件{#accessibility-options-in-form-components}中的辅助功能选项
+### 表单组件中的辅助功能选项 {#accessibility-options-in-form-components}
 
 ![表单组件中的辅助功能选项](assets/accessibility-options.png)
 
-**自定** 义TextForm作者在辅助功能选项自定义文本字段中提供内容。辅助型技术（如屏幕阅读器）使用此自定义文本。 在大多数情况下，使用标题设置是最佳选项。 仅当无法使用标题或简短描述时，请考虑创建自定义屏幕Reader文本。
+**自定义文本** 表单作者在辅助功能选项自定义文本字段中提供内容。 辅助型技术（如屏幕阅读器）使用此自定义文本。 在大多数情况下，使用标题设置是最佳选项。 仅当无法使用标题或简短描述时，请考虑创建自定义屏幕Reader文本。
 
-**简短** 描述对于大多数组件，当用户将指针悬停在组件上时，将在运行时显示简短描述。您可以在帮助内容选项下的简短描述字段中设置此选项。
+**简短描述** 对于大多数组件，当用户将指针悬停在组件上时，将在运行时显示简短描述。 您可以在帮助内容选项下的简短描述字段中设置此选项。
 
-**** 标题使用此选项可让AEM Forms使用与表单字段关联的可视标签作为屏幕阅读器文本。
+**标题** 使用此选项可让AEM Forms使用与表单字段关联的可视标签作为屏幕阅读器文本。
 
-**** 名称您可以在“绑定”选项卡的“名称”字段中指定一个值。名称不能包含任何空格。
+**名称** 您可以在“绑定”选项卡的“名称”字段中指定一个值。 名称不能包含任何空格。
 
-**** 无选择无会导致表单对象在已发布的表单中没有名称。对于表单控件，不建议设置“无”。
+**无** 选择“无”会导致表单对象在已发布的表单中没有名称。 对于表单控件，不建议设置“无”。
 
 >[!NOTE]
 >
@@ -64,17 +68,17 @@ ht-degree: 0%
 >
 >对于基于XFA的自适应表单，辅助功能选项继承自XDP中设置的辅助功能选项。 XDP中的工具提示会映射到“简短描述”，而“标题”会映射到“标题”。 其他选项可按原样运行。
 
-## 为图像{#provide-text-equivalents-for-images}提供对等文本
+## 为图像提供对等文本 {#provide-text-equivalents-for-images}
 
 图像有助于提高某些用户的理解能力。 但是，对于使用屏幕阅读器的用户，图像会降低表单的辅助功能。 如果选择使用图像，请为所有图像提供文本描述。
 
 确保文本在表单中描述对象及其用途。 屏幕阅读器在遇到图像时会读取此替换文本。 图像必须始终指定替换文本。
 
-选择图像组件，然后点按![cmppr](assets/cmppr.png)。 在侧栏中的属性下，为图像指定替代文本。
+选择图像组件并点按 ![cppr](assets/cmppr.png). 在侧栏中的属性下，为图像指定替代文本。
 
 ![图像的替换文本](assets/image-properties.png)
 
-## 提供足够的颜色对比度{#provide-sufficient-color-contrast}
+## 提供足够的颜色对比度 {#provide-sufficient-color-contrast}
 
 辅助功能设计涉及考虑有关颜色使用的其他准则。 表单作者可以通过突出显示各种表单组件，使用颜色来改善表单外观。 然而，不当使用颜色可能会使不同能力的人很难或无法阅读某种形式。
 
@@ -82,9 +86,9 @@ ht-degree: 0%
 
 建议您使用默认字体和背景颜色，即白色背景中黑色的内容。 如果更改默认颜色，请选择浅背景颜色上的深前景颜色，或者选择反之。
 
-请参阅[为自适应表单创建自定义主题](/help/forms/using/creating-custom-adaptive-form-themes.md)，以了解有关更改自适应表单的颜色对比度和主题的更多信息。
+请参阅 [为自适应表单创建自定义主题](/help/forms/using/creating-custom-adaptive-form-themes.md)，以了解有关更改自适应表单的颜色对比度和主题的更多信息。
 
-## 确保表单控件可通过键盘访问{#ensure-that-form-controls-are-keyboard-accessible}
+## 确保表单控件可通过键盘访问 {#ensure-that-form-controls-are-keyboard-accessible}
 
 只能使用键盘或等效的输入设备完全填写无障碍表单。 移动性降低或视力受损的用户可能别无选择，只能使用键盘，而许多能使用鼠标的用户更喜欢键盘输入。 通过允许使用各种输入方法，您不仅可以创建无障碍表单，还可以创建更适合所有用户偏好的表单。
 
@@ -92,7 +96,7 @@ ht-degree: 0%
 
 | 操作 | 键盘快捷键 |
 |---|---|
-| 通过表单向前移动光标 | 选项卡· |
+| 通过表单向前移动光标 | 制表符 |
 | 在窗体中向后移动光标 | Shift+Tab |
 | 移到下一个面板 | Alt+向右箭头键 |
 | 移到上一个面板 | Alt+向左箭头键 |

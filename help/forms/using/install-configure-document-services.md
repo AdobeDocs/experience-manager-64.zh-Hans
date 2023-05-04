@@ -8,14 +8,18 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4249'
+source-wordcount: '4285'
 ht-degree: 2%
 
 ---
 
 # 安装和配置文档服务 {#installing-and-configuring-document-services}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM Forms提供一组OSGi服务来完成不同的文档级操作，例如，创建、汇编、分发和归档PDF文档的服务，添加数字签名以限制对文档的访问，以及对条形码表单进行解码。 这些服务包含在AEM Forms附加组件包中。 这些服务统称为文档服务。 可用文档服务及其主要功能列表如下：
 
@@ -393,7 +397,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包包含AEM For
 1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)，并单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
 1. 选择包并单击 **[!UICONTROL 安装]**.
 
-   您还可以通过 [AEM Forms版本](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 文章。
+   您还可以通过 [AEM Forms版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 文章。
 
 1. 安装包后，系统会提示您重新启动AEM实例。 **不要立即停止服务器。** 在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止显示在 `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log文件和日志稳定。
 
@@ -603,7 +607,7 @@ DocAssurance服务可以将使用权限应用于PDF文档。 要对PDF文档应�
 
 1. 手动安装缺少的库。
 
-## 下面的步骤 {#next-steps}
+## 后续步骤 {#next-steps}
 
 您有一个可用的AEM Forms文档服务环境。 您可以通过以下方式使用文档服务：
 

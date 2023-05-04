@@ -2,7 +2,7 @@
 title: Mobile On-Demand
 seo-title: Mobile On-Demand
 description: 可查看本页以了解AEM Mobile On-Demand Services作者的角色和职责。
-seo-description: 可查看本页以了解AEM Mobile On-Demand Services作者的角色和职责。
+seo-description: Follow this page to learn about the roles and responsibilities for AEM mobile On-Demand services author.
 uuid: dd0184d8-1220-4f6a-96b2-acdb31caae17
 contentOwner: msm-service
 content-type: reference
@@ -10,51 +10,55 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 2ae7ea8d-fc58-4647-bc83-915d9f4b7dd8
 exl-id: 9a8a95c3-d39f-408b-9ec3-b722e9ab22c9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '307'
 ht-degree: 5%
 
 ---
 
 # Mobile On-Demand{#mobile-on-demand}
 
->[!NOTE]
+>[!CAUTION]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->如果您未使用Adobe Experience Manager(AEM)作为内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
+
+>[!NOTE]
+>
+>如果您未使用Adobe Experience Manager(AEM)作为内容管理源，请参阅 [AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
 >**先决条件:**
 >
->在使用AEM Mobile On-demand Services并执行本快速入门指南中的步骤之前，用户应该熟悉[AEM](/help/sites-deploying/deploy.md)。
+>在使用AEM Mobile On-demand Services并执行本快速入门指南中的步骤之前，用户应该熟悉 [AEM](/help/sites-deploying/deploy.md).
 
-## AEM Mobile作者{#aem-mobile-author}
+## AEM Mobile作者 {#aem-mobile-author}
 
-***AEM作者*（或&#x200B;*营销人员*）**使用自定义开发或现成可用的模板和组件来添加和编辑页面，拖放组件以及添加DAM中所有类型的媒体，包括图像、视频和文本片段（内容片段）。 然后，*AEM作者*使用AEM内置内容编辑器在应用程序中创建丰富且相关的体验，包括与Adobe Marketing Cloud其他部分的集成。
+安 ***AEM作者* (或 *营销人员*)**使用自定义开发或现成的模板和组件来添加和编辑页面、拖放组件以及从DAM添加所有类型的媒体，包括图像、视频和文本片段（内容片段）。 AEM内置内容编辑器随后由 *AEM作者* 以在应用程序中创建丰富且相关的体验，包括与Adobe Marketing Cloud其他部分的集成。
 
 使用AEM On Demand Services创建应用程序时，AEM Mobile作者负责执行以下任务。
 
-**为AEM Mobile On-demand Services应用程序创作AEM内** 容涉及以下操作：
+**为AEM Mobile On-demand Services应用程序创作AEM内容** 涉及以下操作：
 
 * [AEM Mobile应用程序功能板](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [应用程序创建和配置操作](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [云配置](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [管理内容](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-要了解有关&#x200B;**Content Services**&#x200B;的信息，请参阅[Content Services概述](/help/mobile/develop-content-as-a-service.md)以开始操作。
+了解 **内容服务**，请参阅 [内容服务概述](/help/mobile/develop-content-as-a-service.md) 以开始使用。
 
 >[!NOTE]
 >
 >要一般了解AEM中模板和组件的基础知识，请参阅以下资源：
 >
 >* [模板](/help/sites-developing/templates.md)
-* [组件](/help/sites-developing/components.md)
-
+>* [组件](/help/sites-developing/components.md)
+>
 
 
 ## 其他资源 {#additional-resources}

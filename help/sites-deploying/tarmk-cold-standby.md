@@ -11,14 +11,18 @@ topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
 feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: ce025f42bcd7105b83aa6a931e091aa21269a6f3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2760'
 ht-degree: 0%
 
 ---
 
 # 如何使用TarMK冷备用运行AEM{#how-to-run-aem-with-tarmk-cold-standby}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 简介 {#introduction}
 
@@ -65,7 +69,7 @@ Tar微内核的冷备用容量允许一个或多个备用AEM实例连接到主�
 
 数据流设计用于自动检测和处理连接和网络相关问题。 所有数据包都与校验和捆绑在一起，一旦连接或损坏数据包发生重试机制问题，就会立即触发。
 
-### 演出 {#performance}
+### 性能 {#performance}
 
 在主实例上启用TarMK冷备用对性能几乎没有可衡量的影响。 额外的CPU消耗非常低，额外的硬盘和网络IO不应产生和性能问题。
 
@@ -89,7 +93,6 @@ Tar微内核的冷备用容量允许一个或多个备用AEM实例连接到主�
 >
 >* 来自org.apache.jackrabbit.oak。**plugins**.segment.standby.store.StandbyStoreService到org.apache.jackrabbit.oak.segment.standby.StandbyStoreService
 >* 来自org.apache.jackrabbit.oak。**plugins**.segment.SegmentNodeStoreService到org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
-
 >
 >确保进行必要的配置调整以反映此更改。
 

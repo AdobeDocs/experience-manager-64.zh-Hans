@@ -8,14 +8,18 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: c63e6e5c-c4c9-45b8-8401-87ee37a30c97
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '956'
 ht-degree: 1%
 
 ---
 
 # 为以AEM Forms为中心的工作流步骤动态选择用户或组 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 了解如何在运行时为AEM Forms工作流选择用户或组。
 
@@ -43,7 +47,7 @@ ECMAScript是一种脚本语言。 它用于客户端脚本和服务器应用程
    1. 添加 `mix:title` 属性，然后单击 **确定**.
    1. 将以下属性添加到脚本的jcr:content节点：
 
-      | 名称 | 类型 | 值 |
+      | 名称 | 类型 | 价值 |
       |--- |--- |--- |
       | jcr:title | 字符串 | 指定脚本的名称。 例如，选择最接近的字段代理。 此名称显示在“分配任务”和“签署文档”步骤中。 |
 
@@ -118,7 +122,7 @@ function getAdobeSignRecipients() {
 
 您可以使用 [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java界面，用于动态选择用户或组以执行Acrobat Sign和分配任务步骤。 您可以创建使用 [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java界面并将其部署到AEM Forms服务器。 该选项可在AEM工作流的分配任务和Acrobat Sign组件中进行选择。
 
-您需要 [AEM Forms客户端SDK](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) 罐子 [花岗岩](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 文件来编译下面列出的代码示例。 将这些jar文件作为外部依赖项添加到OSGi包项目中。 可以使用任何Java IDE创建OSGi包。 以下过程提供了使用Eclipse创建OSGi包的步骤：
+您需要 [AEM Forms客户端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 罐子 [花岗岩](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) 文件来编译下面列出的代码示例。 将这些jar文件作为外部依赖项添加到OSGi包项目中。 可以使用任何Java IDE创建OSGi包。 以下过程提供了使用Eclipse创建OSGi包的步骤：
 
 1. 打开Eclipse IDE。 导航到 **[!UICONTROL 文件]**> **[!UICONTROL 新建项目]**.
 1. 在选择向导屏幕上，选择 **[!UICONTROL Maven项目]**，然后单击 **[!UICONTROL 下一个]**.

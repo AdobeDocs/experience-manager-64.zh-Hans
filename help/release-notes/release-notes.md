@@ -1,5 +1,5 @@
 ---
-title: Adobe Experience Manager 6.4 的一般发行说明
+title: Adobe Experience Manager 6.4常规发行说明
 seo-title: Release Notes
 description: Adobe Experience Manager 6.4发行说明，其中概述了发行信息、新增功能、安装方式和详细的更改列表。
 seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 30%
+source-wordcount: '2765'
+ht-degree: 9%
 
 ---
 
-# Adobe Experience Manager 6.4 的一般发行说明 {#general-release-notes-for-adobe-experience-manager}
+# Adobe Experience Manager 6.4常规发行说明 {#general-release-notes-for-adobe-experience-manager}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 版本信息 {#release-information}
 
@@ -25,14 +29,14 @@ ht-degree: 30%
 |---|---|
 | 版本 | 6.4 |
 | 类型 | 主要版本 |
-| 公开发行日期 | 2018 年 4 月 4 日 |
+| 正式发布日期 | 2018 年 4 月 4 日 |
 | 推荐更新 | 请参阅 [AEM版本和更新](https://helpx.adobe.com/cn/experience-manager/aem-releases-updates.html) |
 
-### 相关事项 {#trivia}
+### 特里维亚 {#trivia}
 
-此版本的Adobe Experience Manager的发布周期从2017年4月27日开始，经过22次质量保证和错误修复迭代，于2018年3月22日结束。 此版本中修复的客户相关问题（包括增强功能和新增功能）总数为 704。
+此版本的Adobe Experience Manager的发布周期从2017年4月27日开始，经过22次质量保证和错误修复迭代，于2018年3月22日结束。 此版本中修复的客户相关问题（包括增强功能和新增功能）总数为704。
 
-Adobe Experience Manager 6.4 自 2018 年 4 月 4 日起正式发行。
+Adobe Experience Manager 6.4自2018年4月4日起正式发布。
 
 >[!NOTE]
 >
@@ -44,17 +48,17 @@ Adobe Experience Manager 6.4 是 Adobe Experience Manager 6.3 代码库的升级
 
 下面的列表提供了概述 — 而后续页面则列出了完整的详细信息。
 
-### Experience Manager Foundation {#experience-manager-foundation}
+### Experience Manager基础 {#experience-manager-foundation}
 
-[AEM Foundation](wcm-platform.md) 中提供了完整的更改列表。
+中的更改的完整列表 [AEM Foundation](wcm-platform.md).
 
-Adobe Experience Manager 6.4 的平台建立在基于 OSGi 的框架（Apache Sling 和 Apache Felix）和 Java 内容存储库 (Apache Jackrabbit Oak 1.8.2) 的更新版本之上。
+Adobe Experience Manager 6.4平台基于基于OSGi的框架（Apache Sling和Apache Felix）和Java内容存储库的更新版本而构建：Apache Jackrabbit Oak 1.8.2。
 
-快速入门使用 Eclipse Jetty 9.3.22 作为 servlet 引擎。
+快速入门使用Eclipse Jetty 9.3.22作为servlet引擎。
 
 #### 用户界面 {#user-interface}
 
-对 UI 进行了各种增强，使其更高效，更易于使用。
+UI已进行了各种增强，使其工作效率更高、更易于使用。
 
 * [新建内容树边栏](/help/sites-authoring/basic-handling.md#content-tree) 快速导航层次结构。 与列表视图结合使用，可恢复经典UI交互模型。
 * 改善了大型文件夹的卡片视图和列表视图中的滚动体验。
@@ -67,7 +71,7 @@ Adobe Experience Manager 6.4 的平台建立在基于 OSGi 的框架（Apache Sl
 
 >[!CAUTION]
 >
->Adobe 不打算进一步增强经典 UI。AEM 6.4 包含经典 UI，从早期发行版升级的客户可以继续按原样使用它。请注意，经典 UI 在弃用期间仍完全受支持。[了解更多](/help/sites-deploying/ui-recommendations.md)。
+>Adobe不打算进一步增强经典UI。 AEM 6.4包含经典UI，从早期版本升级的客户可以继续按原样使用它。 请注意，经典UI在弃用时仍完全受支持。 [了解更多](/help/sites-deploying/ui-recommendations.md).
 
 #### 内容存储库 {#content-repository}
 
@@ -133,13 +137,13 @@ AEM 6.4完成对下一代组件模型的转换。 AEM 6.3中引入的核心组�
 
 建议的教程，用于了解如何充分利用新的组件模型： [AEM Sites入门 — WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
 
-#### Screens 加载项 {#screens-add-on}
+#### Screens附加组件 {#screens-add-on}
 
 AEM Screens代表的是在所有营销渠道（包括数字标牌和亭亭网络）中提供一致的信息。 AEM 6.4新增了对在Microsoft Windows和Google Chrome OS硬件上运行标牌播放器的支持。 此外，还增强了远程设备管理和计划（渠道组）。
 
 有关Screens更新的更多信息，请参阅 [AEM Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
-### Experience Manager Communities {#experience-manager-communities}
+### Experience Manager社区 {#experience-manager-communities}
 
 AEM 6.4为Communities添加了许多新增功能和增强功能。 有关更改的完整列表，请参阅 [AEM Communities](communities-release-notes.md). 此版本的亮点包括：
 
@@ -163,7 +167,7 @@ AEM 6.4为Communities添加了许多新增功能和增强功能。 有关更改�
 
 AEM 6.4 Communities公开 [开箱即用API](/help/communities/user-ugc-management-service.md) 样例 [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) 以使最终用户能够控制其数据。 这些API还允许数据处理和数据控制组织为欧盟GDPR合规请求提供服务。
 
-#### 站点和组管理增强功能 {#enhancements-to-site-and-group-management}
+#### 站点和群组管理的增强功能 {#enhancements-to-site-and-group-management}
 
 **通过单步创建多区域设置组**
 
@@ -173,7 +177,7 @@ AEM 6.4 Communities公开 [开箱即用API](/help/communities/user-ugc-managemen
 
 **[一键删除社区站点和群组](/help/communities/groups.md)**
 
-从全局导航中导航时，删除图标现在在相应的站点和组上可用。 使用此图标可删除与网站或群组关联的所有项目和内容，并删除所有用户关联。 要了解有关此功能的更多信息，请参阅 [管理社区站点](/help/communities/create-site.md#main-pars-text-fe17) 和 [管理社区组](/help/communities/groups.md#main-pars-text-5e8c).
+从全局导航中导航时，删除图标现在在相应的网站和群组上可用。 使用此图标可删除与网站或群组关联的所有项目和内容，并删除所有用户关联。 要了解有关此功能的更多信息，请参阅 [管理社区站点](/help/communities/create-site.md#main-pars-text-fe17) 和 [管理社区组](/help/communities/groups.md#main-pars-text-5e8c).
 
 #### 对启用的增强 {#enhancements-to-enablement}
 
@@ -193,7 +197,7 @@ AEM 6.4为资产引入了多项新功能和增强功能，包括经过改进的�
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
-**AEM 桌面应用程序**
+**AEM桌面应用程序**
 
 AEM桌面应用程序已更新到版本1.8，与AEM 6.4兼容。AEM桌面应用程序的完整更改列表在专用 [AEM桌面应用程序发行说明](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) 文档。
 
@@ -209,7 +213,7 @@ AEM桌面应用程序已更新到版本1.8，与AEM 6.4兼容。AEM桌面应用�
 
 各种增强功能包括能够同时导入和导出大量资产的元数据以及高级元数据结构，例如 [串联元数据](/help/assets/cascading-metadata.md).
 
-**报告**
+**报表**
 
 在AEM 6.4中，资产报表进行了大幅修改，新的报表框架、用户体验以及更多适用于客户用例的OOTB报表。 要了解如何生成各种报表，请参阅 [资产报表](/help/assets/asset-reports.md).
 
@@ -249,7 +253,7 @@ AEM 6.4包含许多Dynamic Media的新增功能和增强功能。 完整列表�
 
 ### Experience Manager Forms {#experience-manager-forms}
 
-AEM 6.4 Forms 中引入了一些新增功能和增强功能。主要功能包括：
+AEM 6.4 Forms引入了一些新增功能和增强功能。 主要功能包括：
 
 * 多渠道交互式通信
 * 从业务应用程序预填交互式通信
@@ -259,25 +263,25 @@ AEM 6.4 Forms 中引入了一些新增功能和增强功能。主要功能包括
 
 有关 [AEM Forms](forms.md) 发行说明页面。 另外，请参阅 [AEM 6.4 Forms中的新增功能和增强功能摘要](/help/forms/using/whats-new.md) 有关新增和改进功能及文档资源的信息。
 
-### Experience Manager Livefyre {#experience-manager-livefyre}
+### Experience ManagerLivefyre {#experience-manager-livefyre}
 
-您可以将 Livefyre 与 AEM 6.4 实例集成。有关如何将 Livefyre 与 AEM 集成的信息位于此处：
+您可以将Livefyre与AEM 6.4实例集成。 有关如何将Livefyre与AEM集成的信息，请访问此处：
 
 * [集成 Livefyre](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html)
 
 ### 利用以客户为中心的开发 {#leverage-customer-focused-development}
 
-Adobe 正在使用以客户为中心的开发模型，借助该模型，客户可以在规范、开发和测试期间对开发流程的所有阶段做出贡献。我们衷心感谢在这一流程中做出贡献的所有客户和合作伙伴。
+Adobe正在使用以客户为中心的开发模型，该模型允许客户在规范、开发和测试期间对开发过程的所有阶段做出贡献。 在此过程中，我们将向所有有贡献的客户和合作伙伴表示感谢。
 
-Adobe 实施了多种规程和流程来对以客户为中心的错误解决方案和增强请求开发进行收集、优先级排序和跟踪。的 [Adobe Marketing Cloud支持门户](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html) 与Adobe增强和缺陷跟踪系统集成。 在可能的情况下，客户关怀可以识别并解决客户问题。升级到 R&amp;D 时，将捕获所有客户信息，并将这些信息用于确定优先级和报告。在开发过程中，优先考虑付费支持和保修问题以及付费客户增强。
+Adobe已制定相应的程序和流程，以便收集、确定优先级并跟踪以客户为中心的错误解决方案和增强请求开发。 的 [Adobe Marketing Cloud支持门户](https://helpx.adobe.com/cn/contact/enterprise-support.ec.html) 与Adobe增强和缺陷跟踪系统集成。 客户问题会尽可能通过客户关怀团队来识别和解决。 当呈报至研发部门时，会捕获所有客户信息，并将其用于确定优先级和进行报告。 在开发过程中，优先考虑付费支持和被担保人问题以及付费客户增强功能。
 
-这一确定优先级的流程已经产生了 500 多个以客户为中心的更改，并已在 AEM 6.4 中进行了修复。
+这一确定优先顺序的过程产生了500多项以客户为中心的更改，这些更改已在AEM 6.4中修复。
 
-## 作为发布一部分的文件列表 {#list-of-files-that-are-part-of-the-release}
+## 版本中包含的文件列表 {#list-of-files-that-are-part-of-the-release}
 
 **Foundation**
 
-* 独立的快速入门：cq-quickstart-6.4.0.jar
+* 独立快速入门：cq-quickstart-6.4.0.jar
 * 应用程序服务器快速启动：cq-quickstart-6.4.0.war
 * 适用于各种Web服务器和平台的Dispatcher 4.3.1或更高版本。 请参阅 [下载链接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html).
 * 适用于Eclipse IDE的插件。 [了解更多并下载](/help/sites-developing/aem-eclipse.md).
@@ -287,11 +291,11 @@ Adobe 实施了多种规程和流程来对以客户为中心的错误解决方�
 
 **Sites**
 
-* 核心组件（[GitHub 项目](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)）
-* We.Retail 参考实施（[了解更多](/help/sites-developing/we-retail.md)）
+* 核心组件([GitHub项目](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components))
+* We.Retail参考实施([阅读更多](/help/sites-developing/we-retail.md))
 * 项目Blueprint原型([GitHub项目](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype))
-* 适用于各种不同平台的 AEM Screens 播放器（[下载](https://download.macromedia.com/screens/)）
-* 智能内容语言模型。已预先安装英语 - 可以下载更多语言
+* AEM Screens播放器（适用于各种目标平台）[下载](https://download.macromedia.com/screens/))
+* 智能内容语言模型。 已预安装英语 — 可下载更多语言
 
    * [德语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
    * [西班牙语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
@@ -306,11 +310,11 @@ Adobe 实施了多种规程和流程来对以客户为中心的错误解决方�
 
 * 用于添加增强的PDF光栅器([阅读更多](/help/assets/aem-pdf-rasterizer.md) 和 [下载](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
-* 用于添加扩展 RAW 图像支持的软件包（[了解更多](/help/assets/camera-raw.md)）
+* 用于添加扩展RAW图像支持的包([阅读更多](/help/assets/camera-raw.md))
 
-**表单**
+**Forms**
 
-* 用于 AEM Forms 功能的软件包:
+* AEM Forms功能包：
 
    * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
    * [adobe-aemfd-linux-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
@@ -320,7 +324,7 @@ Adobe 实施了多种规程和流程来对以客户为中心的错误解决方�
 
 ## 语言 {#languages}
 
-用户界面提供了下列语言版本：
+用户界面提供以下语言版本：
 
 * 英语
 * 德语
@@ -331,29 +335,29 @@ Adobe 实施了多种规程和流程来对以客户为中心的错误解决方�
 * 日语
 * 简体中文
 * 繁体中文（有限支持）
-* 韩语
+* 朝鲜语
 
-Experience Manager 6.4 已通过 GB18030-2005 CITS 认证，可使用中文编码标准。
+Experience Manager6.4已通过GB18030-2005 CITS认证，可使用中文编码标准。
 
 ## 安装和更新 {#install-update}
 
-有关安装要求，请参阅[安装说明](/help/sites-deploying/custom-standalone-install.md)。
+请参阅 [安装说明](/help/sites-deploying/custom-standalone-install.md) 以了解设置要求。
 
-有关详细说明，请参阅[升级文档](/help/sites-deploying/upgrade.md)。
+请参阅 [升级文档](/help/sites-deploying/upgrade.md) 以了解详细说明。
 
 ## 支持的平台 {#supported-platforms}
 
-请在 支持级别 [AEM 6.4技术要求](/help/sites-deploying/technical-requirements.md).
+请找到支持的平台的完整矩阵，包括 支持级别 [AEM 6.4技术要求](/help/sites-deploying/technical-requirements.md).
 
 >[!NOTE]
 >
->Oracle 已经转向 Oracle Java SE 产品的“长期支持”(LTS) 模型。Java 9和10是按Oracle划分的非LTS版本(请参阅 [OracleJava SE支持路线图](https://www.oracle.com/technetwork/java/eol-135779.html))。 Adobe 将只为 LTS 版本的 Java 提供支持，以便在生产环境中运行 AEM。因此，建议将 Java 8 与 AEM 6.4 一起使用。
+>Oracle已转向OracleJava SE产品的“长期支持”(LTS)模型。 Java 9和10是按Oracle划分的非LTS版本(请参阅 [OracleJava SE支持路线图](https://www.oracle.com/technetwork/java/eol-135779.html))。 Adobe将仅支持LTS版本的Java以在生产中运行AEM。 因此，建议使用Java 8版本来与AEM 6.4一起使用。
 
 ## 已弃用和已删除的功能 {#deprecated-and-removed-features}
 
-Adobe 不断评估产品中的功能，以便随着时间的推移，计划使用更强大的版本来替换这些功能，或是决定重新实现选定部分，以便为未来的预期或扩展做更充分的准备。
+Adobe会不断评估产品中的功能，并且随着时间的推移，计划使用更强大的版本替换这些功能，或者决定重新实施选定的部件，以便更好地满足未来的期望或扩展。
 
-对于 Adobe Experience Manager 6.4，请[阅读已弃用和已删除功能的列表](deprecated-removed-features.md)。该页面还包含2019年更改的预发布，以及面向从以前版本更新的客户的重要通知。
+对于Adobe Experience Manager 6.4, [阅读已弃用和已删除功能的列表](deprecated-removed-features.md). 该页面还包含2019年更改的预发布，以及面向从以前版本更新的客户的重要通知。
 
 ## 详细更改列表 {#detailed-changes-lists}
 
@@ -373,7 +377,7 @@ Adobe 不断评估产品中的功能，以便随着时间的推移，计划使�
 
 ### 产品下载和支持（受限网站） {#product-download-and-support-restricted-sites}
 
-这些网站仅适用于客户。如果您是客户并且需要访问，请联系您的 Adobe 客户经理。
+这些网站仅供客户使用。 如果您是Adobe，并且需要访问，请联系您的客户经理。
 
 * [产品下载：licensing.adobe.com](https://licensing.adobe.com/).
 * 产品更新、修补程序和软件包，以获取 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).

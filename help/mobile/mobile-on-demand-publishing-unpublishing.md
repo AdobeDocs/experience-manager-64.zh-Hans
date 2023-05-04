@@ -1,8 +1,8 @@
 ---
 title: 发布取消发布内容
-seo-title: 发布取消发布内容
+seo-title: Publish UnPublish Content
 description: 熟悉文章、横幅和收藏集上的内容管理操作后，请访问此页面以了解如何发布内容。 您还可以取消发布内容。
-seo-description: 熟悉文章、横幅和收藏集上的内容管理操作后，请访问此页面以了解如何发布内容。 您还可以取消发布内容。
+seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
@@ -10,26 +10,30 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: e9da73d6-7140-4fd6-b69c-2e76024d65e5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 1%
+source-wordcount: '304'
+ht-degree: 3%
 
 ---
 
 # 发布取消发布内容{#publish-unpublish-content}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
 
 熟悉文章、横幅和收藏集上的内容管理操作后，您便可以发布内容。 您还可以取消发布内容。
 
 >[!NOTE]
 >
->要了解有关AEM Mobile应用程序设计注意事项的更多信息，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)。
+>要了解有关AEM Mobile应用程序设计注意事项的更多信息，请参阅 [AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 中。
 
-## 发布/取消发布内容{#publishing-unpublishing-the-content}
+## 发布/取消发布内容 {#publishing-unpublishing-the-content}
 
 这与“AEM发布”有所不同。 我们不会将内容推送到AEM发布服务器实例，以使其可公开查看。 在此，我们将通知Mobile On-Demand，应在实时Mobile On-Demand应用程序中公布所选内容。
 

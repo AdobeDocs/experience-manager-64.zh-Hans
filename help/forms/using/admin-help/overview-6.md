@@ -1,8 +1,8 @@
 ---
 title: 配置SSL概述
-seo-title: 配置SSL概述
+seo-title: Overview of configuring SSL
 description: 了解如何通过配置SSL来增强通信的安全性。
-seo-description: 了解如何通过配置SSL来增强通信的安全性。
+seo-description: Learn about how to enhance security of communication by configuring SSL.
 uuid: 3e99d2bf-137b-45ba-8384-309624094623
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 exl-id: 5dc68401-f6bc-42cb-84db-1db805b045c5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 0%
+source-wordcount: '247'
+ht-degree: 2%
 
 ---
 
-# 配置SSL {#overview-of-configuring-ssl}概述
+# 配置SSL概述 {#overview-of-configuring-ssl}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 您可以创建安全套接字层(SSL)凭据，并在应用程序服务器上配置SSL以增强与应用程序服务器通信的安全性。
 
@@ -33,4 +37,4 @@ ht-degree: 0%
 >
 >创建SSL安全证书和凭据时，请使用与运行应用程序服务器时相同的用户帐户权限。 如果应用程序服务器是使用其他用户权限运行的，则当ContentRootURI指向https时，该表单可能无法正确呈现PDFForm呈现版本。
 
-如果您有启用SSL的LDAP服务器，请配置“用户管理”以使用该服务器。 （请参阅[为启用SSL的LDAP服务器配置用户管理](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)。）
+如果您有启用SSL的LDAP服务器，请配置“用户管理”以使用该服务器。 (请参阅 [为启用SSL的LDAP服务器配置用户管理](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)

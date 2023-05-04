@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 7317fd2f-9756-4231-b343-ea808ea159ec
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2617'
-ht-degree: 0%
+source-wordcount: '2653'
+ht-degree: 1%
 
 ---
 
 # 使用应用程序控制台创建和编辑应用程序{#creating-and-editing-apps-using-the-apps-console}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
 
 AEM移动应用程序开发过程认识到拥有不同专业知识的用户对移动应用程序的开发做出了贡献。 以下流程图说明了内容作者和应用程序开发人员执行任务的一般顺序。
 
@@ -343,7 +347,7 @@ Geometrixx Outdoors应用程序是一个示例PhoneGap应用程序，用于演�
 
 向应用程序内容添加富文本。
 
-### 存储位置 {#store-locations}
+### 商店位置 {#store-locations}
 
 “商店位置”组件为用户提供了查找营业网点的工具：
 

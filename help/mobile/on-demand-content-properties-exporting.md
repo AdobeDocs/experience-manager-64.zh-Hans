@@ -1,8 +1,8 @@
 ---
 title: 使用内容属性导出内容
-seo-title: 使用内容属性导出内容
+seo-title: Using Content Properties to Export Content
 description: 以下页面显示了应用程序属性和节点。
-seo-description: 以下页面显示了应用程序属性和节点。
+seo-description: The following page shows App Properties and Nodes.
 uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
 contentOwner: User
 content-type: reference
@@ -10,26 +10,30 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 exl-id: 27aa405d-2388-4f91-85d0-1a8709e0d5d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 4%
+source-wordcount: '366'
+ht-degree: 5%
 
 ---
 
 # 使用内容属性导出内容{#using-content-properties-to-export-content}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
 
-应用程序在AEM中以&#x200B;*cq:Pages*&#x200B;表示。
+应用程序表示为 *cq:Pages* 在AEM中。
 
-除了下面显示的表示集成支持属性的其他属性外，它们还共享在任何&#x200B;*cq:Page*&#x200B;中找到的相同公共属性。
+它们共享在任何 *cq:Page* 除了下面显示的其他支持集成的属性之外，
 
 ## 应用程序属性 {#app-properties}
 
-下表显示了&#x200B;**应用程序属性和节点**。
+下表显示 **应用程序属性和节点**.
 
 <table>
  <tbody>
@@ -81,12 +85,12 @@ ht-degree: 4%
   <tr>
    <td>sling:resourceType</td>
    <td>字符串：路径</td>
-   <td><p>cq:Component的路径：是或扩展<i>mobileapps/core/components/instance的组件。</i></p> <p>这可提供应用程序目录中的存在和渲染情况。</p> </td>
+   <td><p>cq的路径：已扩展或已扩展的组件 <i>mobileapps/core/components/instance。</i></p> <p>这可提供应用程序目录中的存在和渲染情况。</p> </td>
   </tr>
  </tbody>
 </table>
 
-您可以使用&#x200B;***内容属性***&#x200B;创建内容。 请参阅以下资源以创建和导出文章和共享资源：
+您可以使用 ***内容属性*** 创建内容。 请参阅以下资源以创建和导出文章和共享资源：
 
 * [内容属性](/help/mobile/content-properties.md)
 * [创建文章导出配置](/help/mobile/creating-article-export-configuration.md)

@@ -1,8 +1,8 @@
 ---
 title: 评论要点
-seo-title: 评论要点
+seo-title: Reviews Essentials
 description: 审阅和审阅摘要组件
-seo-description: 审阅和审阅摘要组件
+seo-description: Reviews and Review Summary components
 uuid: 540c106e-ee3b-4261-82b2-a909d254dbf7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,22 +10,26 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 exl-id: ddd2bd98-b375-4d1e-b9d1-5efc3dbca398
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 1%
+source-wordcount: '355'
+ht-degree: 3%
 
 ---
 
-# 评论要点{#reviews-essentials}
+# 评论要点 {#reviews-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 此功能包含两个可协同工作的组件：审阅和审阅摘要。
 
-评论是基于[评论系统](essentials-comments.md)的组合组件，该系统包含一个或多个[评分](rating-basics.md)（计数）组件。
+审阅是基于 [评论系统](essentials-comments.md) 包含一个或多个 [评级](rating-basics.md) （计数）组件。
 
 不支持匿名发布审阅。 网站访客必须注册并登录才能添加审阅。 已登录的访客（会员）可以随时更新其审阅。
 
-## 客户端{#essentials-for-client-side}的要点
+## 客户端要点 {#essentials-for-client-side}
 
 ### 审核 {#reviews}
 
@@ -37,7 +41,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>可包含</strong></a></td> 
-   <td>是 — 在<i>设计</i>模式下可编辑属性</td> 
+   <td>是 — 可在 <i>设计 </i>模式</td> 
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
@@ -53,7 +57,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>属性</strong></td> 
-   <td>请参阅<a href="reviews.md">使用Reviews</a></td> 
+   <td>请参阅 <a href="reviews.md">使用审阅</a></td> 
   </tr>
  </tbody>
 </table>
@@ -66,11 +70,11 @@ ht-degree: 1%
 | [**clientlibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
 | **模板** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
-| **属性** | 请参阅[使用Reviews](reviews.md) |
+| **属性** | 请参阅 [使用审阅](reviews.md) |
 
 * [客户端自定义](client-customize.md)
 
-## 服务器端{#essentials-for-server-side}的要点
+## 服务器端要点 {#essentials-for-server-side}
 
 * [审核API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
@@ -78,18 +82,18 @@ ht-degree: 1%
 
 * [服务器端自定义](server-customize.md)
 
-### 访问已发布的审阅(UGC){#accessing-posted-reviews-ugc}
+### 访问已发布的审阅(UGC) {#accessing-posted-reviews-ugc}
 
 UGC应使用其中一种标准审核方法进行审核。\
-请参阅[审核用户生成的内容](moderate-ugc.md)。
+请参阅 [审核用户生成的内容](moderate-ugc.md).
 
-自AEM 6.1 Communities起，使用[用于UGC的公共存储](working-with-srp.md)包括对UGC的编程访问，而不考虑所选的存储选项（如ASRP、MSRP或JSRP）。
+自AEM 6.1 Communities起，使用 [公用商店](working-with-srp.md) 对于UGC，包括以编程方式访问UGC，而不考虑选择的存储选项（如ASRP、MSRP或JSRP）。
 
-**UGC在存储库中的位置和格式可能会发生更改，但不会发出警告**。
+**UGC在存储库中的位置和格式可能会发生更改，但不会发出警告**.
 
 请参阅：
 
 * [存储资源提供程序概述](srp.md)  — 简介和存储库使用概述
-* [SRP和UGC Essentials](srp-and-ugc.md)  - SRP实用程序方法和示例
+* [SRP和UGC要点](srp-and-ugc.md) - SRP实用程序方法和示例
 * [使用SRP访问UGC](accessing-ugc-with-srp.md)  — 编码准则
 * [SocialUtils重构](socialutils.md)  — 将已弃用的实用程序方法映射到当前SRP实用程序方法

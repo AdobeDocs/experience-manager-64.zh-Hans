@@ -7,14 +7,18 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: AEM Docs
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4637'
+source-wordcount: '4673'
 ht-degree: 0%
 
 ---
 
 # 基于OSGi的以Forms为中心的工作流 — 步骤参考 {#forms-centric-workflow-on-osgi-step-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## Forms Workflow步骤 {#forms-workflow-steps}
 
@@ -144,7 +148,7 @@ Forms工作流步骤在AEM工作流中执行特定于AEM Forms的操作。 这�
  <tbody> 
   <tr> 
    <td>属性</td> 
-   <td>值<br /> </td> 
+   <td>价值<br /> </td> 
   </tr> 
   <tr> 
    <td>名字<br /> </td> 

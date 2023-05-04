@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: a2a299b5-a15a-47d9-a9d8-83f45917d080
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 16%
+source-wordcount: '498'
+ht-degree: 9%
 
 ---
 
 # 最佳实践{#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 开发人员最佳实践 — 快速入门 {#best-practices-for-developers-getting-started}
 
@@ -42,7 +46,7 @@ Adobe 工程和咨询团队开发了一组面向 AEM 开发人员的全面的最
 * [社区](/help/sites-developing/best-practices.md#communities)
 * [工具/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
-以下各表中介绍了具体的文档并提供了相应链接。
+下表中描述并链接了特定文档。
 
 有关管理、部署和维护或创作的最佳实践，请参阅以下内容之一：
 
@@ -50,9 +54,9 @@ Adobe 工程和咨询团队开发了一组面向 AEM 开发人员的全面的最
 * [创作最佳实践](/help/sites-authoring/best-practices.md)
 * [部署最佳实践](/help/sites-deploying/best-practices.md)
 
-## 站点 {#sites}
+## Sites {#sites}
 
-在管理和创作网站内容方面具有一些最佳实践，如下所述：
+管理和创作网站内容有一些最佳实践，如下所述：
 
 <table> 
  <tbody>

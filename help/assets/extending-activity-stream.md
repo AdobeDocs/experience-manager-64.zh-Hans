@@ -1,24 +1,28 @@
 ---
 title: 将资产与活动流集成
-description: 描述 [!DNL Experience Manager] and how to configure [!DNL Experience Manager] 用于记录特定事件的记录功能。
+description: 描述的录制功能 [!DNL Experience Manager] 以及如何配置 [!DNL Experience Manager] 以记录特定事件。
 contentOwner: AG
 feature: Asset Management
 role: Developer
 exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 0%
+source-wordcount: '308'
+ht-degree: 2%
 
 ---
 
 # 将资产与活动流集成 {#integrating-assets-with-activity-stream}
 
-Adobe Experience Manager Assets用户可执行多项操作，例如创建、上传和删除资产。 可以记录这些操作，以便提供用户所执行操作的历史记录。 本节介绍[!DNL Experience Manager]的记录功能以及如何配置[!DNL Experience Manager]以记录特定事件。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+Adobe Experience Manager Assets用户可执行多项操作，例如创建、上传和删除资产。 可以记录这些操作，以便提供用户所执行操作的历史记录。 本节介绍 [!DNL Experience Manager] 以及如何配置 [!DNL Experience Manager] 以记录特定事件。
 
 ## 性能注意事项和默认行为 {#performance-considerations-and-default-behavior}
 
-例如，此集成可能占用CPU和磁盘空间，而执行批量导入时则会占用这些空间。 由于这些原因，默认情况下会禁用[!DNL Experience Manager]资产与活动流的集成。
+例如，此集成可能占用CPU和磁盘空间，而执行批量导入时则会占用这些空间。 因此， [!DNL Experience Manager] 默认情况下，资产与活动流的集成处于禁用状态。
 
 ## 支持的操作事件 {#supported-action-events}
 
@@ -40,22 +44,22 @@ Adobe Experience Manager Assets用户可执行多项操作，例如创建、上�
 * 更新了子资产(SUBASSET_UPDATED)
 * 已删除子资产(SUBASSET_REMOVED)
 
-## 配置[!DNL Assets]事件记录 {#configuring-aem-assets-events-recording}
+## 配置 [!DNL Assets] 事件记录 {#configuring-aem-assets-events-recording}
 
-[Web控制台](/help/sites-deploying/configuring-osgi.md)提供对[!DNL Assets]事件记录器调整的访问。 要配置[!DNL Assets]事件记录器，请按照以下步骤继续操作：
+的 [Web控制台](/help/sites-deploying/configuring-osgi.md) 提供对 [!DNL Assets] 事件记录器调整。 配置 [!DNL Assets] 事件记录器，请按如下步骤继续：
 
-1. 导航到&#x200B;**[!UICONTROL Web控制台]**
+1. 导航到 **[!UICONTROL Web控制台]**
 
-1. 单击&#x200B;**[!UICONTROL Configuration]**。
+1. 单击 **[!UICONTROL 配置]**.
 
-1. 双击&#x200B;**[!UICONTROL Day CQ DAM事件记录器]**。
+1. 双击 **[!UICONTROL Day CQ DAM事件记录器]**.
 
-1. 选中&#x200B;**[!UICONTROL 启用此服务]**。
+1. 检查 **[!UICONTROL 启用此服务]**.
 
-1. 检查要在用户活动流中记录的&#x200B;**[!UICONTROL 事件类型]**。
+1. 检查 **[!UICONTROL 事件类型]** 您希望在用户活动流中记录。
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。
+1. 单击“**[!UICONTROL 保存]**”。
 
 ## 读取记录的事件 {#reading-recorded-events}
 
-记录的事件将存储为活动。 您可以使用[ActivityManager API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)以编程方式读取它们。
+记录的事件将存储为活动。 您可以使用 [ActivityManager API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

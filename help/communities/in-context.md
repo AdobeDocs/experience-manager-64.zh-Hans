@@ -1,8 +1,8 @@
 ---
 title: 上下文审核
-seo-title: 上下文审核
+seo-title: In-Context Moderation
 description: 如何执行审核者操作
-seo-description: 如何执行审核者操作
+seo-description: How to perform moderator actions
 uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,22 +11,26 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
 
 # 上下文审核 {#in-context-moderation}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 对于AEM Communities，审核可由管理员和受信任的社区成员直接在发布社区内容的页面上执行。
 
-使用[审核控制台](moderation.md)时，显示的内容信息包括指向已发布页面的链接，以便访问审核上下文关联时可用的其他审核操作。
+使用 [审核控制台](moderation.md)，则显示的内容信息包括一个指向已发布页面的链接，以便访问审核上下文关联时可用的其他审核操作。
 
 ## 审核操作 {#moderation-actions}
 
-有关[审核操作](moderate-ugc.md#moderation-actions)的说明，请访问审核概述。
+有关的描述，请访问审核概述 [审核操作](moderate-ugc.md#moderation-actions).
 
 ## 审核UI {#moderation-ui}
 
@@ -40,13 +44,13 @@ ht-degree: 1%
 
 ## 示例 {#example}
 
-使用[Geometrixx参与](http://localhost:4503/content/sites/engage/en.html)网站(当[AEM Communities快速入门](getting-started.md)时创建)，可以在论坛中快速设置一个线程，以便在发布环境中体验各种审核活动，如下所示。
+使用 [Geometrixx参与](http://localhost:4503/content/sites/engage/en.html) 网站创建时 [开始使用AEM Communities](getting-started.md)，则可以在论坛中快速设置一个线程，以便在发布环境中体验各种审核活动，如下所示。
 
 Aaron McDonald(aaron.mcdonald@mailinator.com)在创建网站时将他添加到社区参与审核者组，从而被确认为受信任的社区成员。
 
-Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](members.md)添加为社区参与成员组的成员。
+Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用 [“成员”控制台](members.md).
 
-有关社区用户组的更多信息，请访问[管理用户和用户组](users.md)。
+有关社区用户组的更多信息，请访问 [管理用户和用户组](users.md).
 
 ### 创建论坛帖子 {#create-the-forum-posts}
 
@@ -96,9 +100,9 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
 
 ### 新成员(#4) {#new-member}
 
-在创作时，以管理员身份登录，使用[成员控制台](members.md)将Boyd Larsen(boyd.larsen@dodgit.com)添加为community-engage-members组的新成员，然后注销。
+在创作时，以管理员身份登录，并使用 [“成员”控制台](members.md)，然后注销。
 
-在发布时，以Boyd Larsen身份登录，并通过选择`Forum`，然后选择`Read more`作为hummingbird帖子访问线程。
+在发布时，以Boyd Larsen身份登录，并通过选择 `Forum`，然后 `Read more` 蜂鸟的哨所。
 
 通知
 
@@ -123,7 +127,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
 
 ![社区管理论坛](assets/communityadmin-forum.png)
 
-选择“管理”菜单项，以从发布环境访问[审核控制台](moderation.md)。
+选择“管理”菜单项以访问 [审核控制台](moderation.md) 中。
 
 请注意，对于管理员，所有可审核的内容都可见，而不仅仅是Geometrixx参与社区站点中的内容。
 
@@ -146,7 +150,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
-选择“管理”菜单项，以从发布环境访问[审核控制台](moderation.md)。
+选择“管理”菜单项以访问 [审核控制台](moderation.md) 中。
 
 请注意，对于社区主持人，只能看到“Geometrixx参与”社区站点中的可审核内容。
 

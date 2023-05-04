@@ -1,8 +1,8 @@
 ---
 title: 特色内容要点
-seo-title: 特色内容要点
+seo-title: Featured Content Essentials
 description: 使用功能内容
-seo-description: 使用功能内容
+seo-description: Working with feature content
 uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,20 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 exl-id: 4805db0f-18d2-4bbc-a4d6-eaafa7a4c152
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 5%
+source-wordcount: '142'
+ht-degree: 7%
 
 ---
 
-# 特色内容要点{#featured-content-essentials}
+# 特色内容要点 {#featured-content-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本页提供了使用特色内容的基本信息。
 
 与将帖子固定到论坛顶部不同，此功能允许在社区站点的任何位置突出显示内容。
 
-## 客户端{#essentials-for-client-side}的要点
+## 客户端要点 {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -49,7 +53,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><strong> 属性</strong></td> 
-   <td>请参阅<a href="featured.md">特色内容</a></td> 
+   <td>请参阅 <a href="featured.md">特色内容</a></td> 
   </tr>
  </tbody>
 </table>
@@ -58,4 +62,4 @@ ht-degree: 5%
 
 ### 文件库功能 {#file-library-function}
 
-包含[特色内容函数](functions.md#featured-content-function)的社区站点结构，包括已配置的`featured content`组件。
+包含 [特色内容功能](functions.md#featured-content-function)，包括已配置的 `featured content` 组件。

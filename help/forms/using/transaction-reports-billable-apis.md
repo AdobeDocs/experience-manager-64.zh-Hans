@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 exl-id: 18b5c6e2-3b0c-4ec8-9e65-c4105b47be4e
-source-git-commit: eeaa70855980ca62574f89e280b46c02c0b65bdc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1895'
 ht-degree: 7%
 
 ---
 
 # 交易报表计费API {#transaction-reports-billable-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 作为交易入账的所有API的列表
 
@@ -304,7 +308,6 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
 >
 >* 汇编程序服务的调用API可以根据输入在内部调用另一个服务的计费API。 因此，调用API可以计为无、单个或多个事务。 计数的事务数取决于输入和调用的内部API。
 >* 使用汇编程序服务生成的单个PDF文档可以计为无、单个或多个事务。 计数的交易数取决于提供的DDX代码。
-
 >
 
 

@@ -9,14 +9,18 @@ exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Troubleshooting
 role: Admin,User
 mini-toc-levels: 3
-source-git-commit: 48e75239b9934ebe6c3c0d4f76b7990372646f23
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1431'
 ht-degree: 1%
 
 ---
 
 # Dynamic Media - Scene7模式故障诊断 {#troubleshooting-dynamic-media-scene-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 以下文档介绍了Dynamic Media运行的疑难解答 **dynamicmedia_scene7** 运行模式。
 
@@ -77,7 +81,7 @@ ht-degree: 1%
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>带有 OS 剪贴板</strong></td> 
+   <td><strong>问题</strong></td> 
    <td><strong>如何调试</strong></td> 
    <td><strong>解决方案</strong></td> 
   </tr> 
@@ -142,7 +146,7 @@ ht-degree: 1%
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>带有 OS 剪贴板</strong></td> 
+   <td><strong>问题</strong></td> 
    <td><strong>如何调试</strong></td> 
    <td><strong>解决方案</strong></td> 
   </tr> 

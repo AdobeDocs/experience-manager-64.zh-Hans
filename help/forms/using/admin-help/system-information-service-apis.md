@@ -1,8 +1,8 @@
 ---
 title: 系统信息服务API
-seo-title: 系统信息服务API
+seo-title: System information Service APIs
 description: 本文档提供了有关系统信息服务提供的API的详细信息。
-seo-description: 本文档提供了有关系统信息服务提供的API的详细信息。
+seo-description: This document provides detailed information about the APIs provided by the system information service.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 7eee8103-8d6c-4397-acaf-dd662cc09a56
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 1%
 
 ---
 
 # 系统信息服务API {#system-information-service-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 系统信息服务提供一组用于检索信息的REST API。 下表提供了有关API的详细信息：
 
@@ -33,7 +37,7 @@ ht-degree: 0%
   <tr>
    <td><p>SystemInfo.properties</p></td> 
    <td><p>https://[server]:[port]/rest/services/SystemInfo.properties</p></td> 
-   <td><p>此API是<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API的包装器。 它检索当前工作环境的配置。 </p></td> 
+   <td><p>此API是的包装器 <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API。 它检索当前工作环境的配置。 </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.envVar</p></td> 
@@ -106,7 +110,7 @@ ht-degree: 0%
   <tr>
    <td><p>SystemInfo.info</p></td> 
    <td><p>https://[server]:[port]/rest/services/ SystemInfo.info</p></td> 
-   <td><p>此API是所有系统信息服务API的包装器。 在内部，它运行所有系统信息API并以zip格式下载信息。 </p><p><i><strong>注意</strong>:SystemInfo.info不提供活动线程的计数和堆栈跟踪。 </i></p></td> 
+   <td><p>此API是所有系统信息服务API的包装器。 在内部，它运行所有系统信息API并以zip格式下载信息。 </p><p><i><strong>注释</strong>:SystemInfo.info不提供活动线程的计数和堆栈跟踪。 </i></p></td> 
   </tr> 
  </tbody> 
 </table>

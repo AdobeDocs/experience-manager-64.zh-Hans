@@ -1,8 +1,8 @@
 ---
 title: 使用API调用AEM Forms
-seo-title: 使用API调用AEM Forms
-description: 'Adobe Experience Manager Forms是基于J2EE的企业软件，它包含在共享基础架构中运行的服务。 了解如何使用客户端应用程序通过Java API、Web服务、远程处理和REST API以编程方式调用AEM Forms。 '
-seo-description: Adobe Experience Manager Forms是基于J2EE的企业软件，它包含在共享基础架构中运行的服务。 了解如何使用客户端应用程序通过Java API、Web服务、远程处理和REST API以编程方式调用AEM Forms。
+seo-title: Invoking AEM Forms using APIs
+description: Adobe Experience Manager Forms是基于J2EE的企业软件，它包含在共享基础架构中运行的服务。 了解如何使用客户端应用程序通过Java API、Web服务、远程处理和REST API以编程方式调用AEM Forms。
+seo-description: Adobe Experience Manager Forms is J2EE-based enterprise software that consists of services that operate within a shared infrastructure. Learn how to use client applications to invoke AEM Forms programmatically using a Java API, web services, Remoting, and REST API.
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,18 @@ topic-tags: development-tools, coding
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 role: Developer
 exl-id: 6b60209f-aced-4698-97f1-b1a7782eef46
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 1%
 
 ---
 
-# 使用API {#invoking-aem-forms-using-apis}调用AEM Forms
+# 使用API调用AEM Forms {#invoking-aem-forms-using-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager Forms是基于J2EE的企业软件，它包含在共享基础架构中运行的服务。 服务操作通常会消耗或生成文档。 通过使用AEM Forms，您可以将表单工作流与电子表单、文档安全和文档生成结合到一组集成且有凝聚力的服务中。 这些服务可以从防火墙内部和外部访问。
 

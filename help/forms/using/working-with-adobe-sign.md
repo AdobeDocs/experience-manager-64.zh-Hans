@@ -11,14 +11,18 @@ discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3562'
+source-wordcount: '3598'
 ht-degree: 0%
 
 ---
 
 # 在自适应表单中使用Acrobat Sign {#using-adobe-sign-in-an-adaptive-form}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 为自适应表单启用电子签名(Acrobat Sign)工作流，以自动执行签名工作流，简化单个和多签名流程，以及通过移动设备对表单进行电子签名。
 
@@ -89,7 +93,7 @@ Acrobat Sign与AEM Forms的集成支持：
    * 选择 **[!UICONTROL 将表单模板关联为记录文档模板]** 选项，然后选择记录文档模板。 如果您使用基于表单模板的自适应表单，则发送进行签名的文档将仅显示基于关联表单模板的字段。 它不会显示自适应表单的所有字段。
    * 选择 **[!UICONTROL 生成记录文档]** 选项。 如果使用启用了“记录文档”选项的自适应表单，则发送以供签名的文档将显示自适应表单的所有字段。
 
-1. 点按&#x200B;**[!UICONTROL 创建。]** 将创建启用符号的自适应表单，该表单可用于添加Acrobat Sign字段。
+1. 点按 **[!UICONTROL 创建。]** 将创建启用符号的自适应表单，该表单可用于添加Acrobat Sign字段。
 
 #### 编辑自适应表单以用于Acrobat Sign {#editafsign}
 

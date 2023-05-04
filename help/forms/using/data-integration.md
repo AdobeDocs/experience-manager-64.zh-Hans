@@ -1,23 +1,27 @@
 ---
 title: AEM Forms数据集成
-seo-title: AEM Forms数据集成
+seo-title: AEM Forms Data Integration
 description: 数据集成允许您将AEM Forms与不同的数据源集成，并创建表单数据模型以创建和使用自适应表单和交互式通信。
-seo-description: 数据集成允许您将AEM Forms与不同的数据源集成，并创建表单数据模型以创建和使用自适应表单和交互式通信。
+seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
 uuid: 58f65ae0-cf54-4249-92c7-64b557e30491
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
-feature: 表单数据模型
+feature: Form Data Model
 exl-id: 8cbd3fb0-3c87-433e-bfd7-0f93216a5de7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: '595'
+ht-degree: 1%
 
 ---
 
-# AEM Forms数据集成简介{#aem-forms-data-integration}
+# AEM Forms数据集成简介 {#aem-forms-data-integration}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 数据集成允许您将AEM Forms与不同的数据源集成，并创建表单数据模型以创建和使用自适应表单和交互式通信。
 
@@ -29,7 +33,7 @@ AEM Forms应用程序（如自适应表单和交互式通信）需要与数据�
 
 虽然分布式模块化系统有其自身的优势，但挑战在于集成和创建跨数据源的数据关联。 数据集成是功能高效的企业基础架构的关键，该基础架构具有与业务数据交换应用程序相连的不同数据源。
 
-## 数据集成概述{#data-integration-overview}
+## 数据集成概述 {#data-integration-overview}
 
 ![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
@@ -47,9 +51,9 @@ AEM Forms数据集成允许配置不同的数据源并将其与AEM Forms连接�
 * 使用自适应表单规则调用数据源服务/操作
 * 将提交的自适应表单数据写入数据源
 
-## 数据集成{#get-started-with-data-integration}快速入门
+## 数据集成入门 {#get-started-with-data-integration}
 
-实施数据集成的第一步是识别和配置数据源，这些数据源存储您要在自适应表单和交互式通信用例中利用的信息。 接下来，您需要从一个或多个数据源创建使用数据模型对象、属性和服务的表单数据模型。 您可以基于表单数据模型创建自适应表单和交互式通信，其中交互式通信中的自适应表单字段或占位符绑定到相应的数据源属性。
+实施数据集成的第一步是识别并配置数据源，这些数据源存储您要在自适应表单和交互式通信用例中使用的信息。 接下来，您需要从一个或多个数据源创建使用数据模型对象、属性和服务的表单数据模型。 您可以基于表单数据模型创建自适应表单和交互式通信，其中交互式通信中的自适应表单字段或占位符绑定到相应的数据源属性。
 
 AEM Forms还允许您创建与数据源无关的表单数据模型，并稍后将表单数据模型中的数据模型对象和属性与数据源关联或绑定。 它消除了您在处理表单数据模型时对数据源的任何依赖。
 

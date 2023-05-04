@@ -1,30 +1,34 @@
 ---
 title: AEM 6.4中的向后兼容性
-seo-title: AEM 6.4中的向后兼容性
+seo-title: Backward Compatibility in AEM 6.4
 description: 了解如何使您的应用程序和配置与AEM 6.4兼容
-seo-description: 了解如何使您的应用程序和配置与AEM 6.4兼容
+seo-description: Learn how to keep your apps and configurations compatible with AEM 6.4
 uuid: 2fa8525e-7f3b-4096-ac85-01c2c76bc9ac
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
-feature: 升级
+feature: Upgrading
 exl-id: 5798100a-e03a-43f8-9189-ae51c06e192b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '522'
 ht-degree: 1%
 
 ---
 
-# AEM 6.4{#backward-compatibility-in-aem}中的向后兼容性
+# AEM 6.4中的向后兼容性{#backward-compatibility-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
 >[!NOTE]
 >
->有关不在兼容包范围内的内容和配置更改列表，请参阅AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的[存储库重组。
+>有关不在兼容包范围内的内容和配置更改列表，请参阅 [AEM 6.4中的存储库重组](/help/sites-deploying/repository-restructuring.md).
 
 在AEM 6.4中，开发所有功能时都考虑到了向后兼容性。
 
@@ -40,7 +44,7 @@ ht-degree: 1%
 
 ![screen_shot_2018-04-05at43339pm](assets/screen_shot_2018-04-05at43339pm.png)
 
-兼容包有两种模式：**已启用路由**&#x200B;和&#x200B;**已禁用路由**。
+兼容包有两种模式： **已启用路由** 和 **路由已禁用**.
 
 这允许以三种模式运行AEM 6.4:
 
@@ -62,7 +66,7 @@ ht-degree: 1%
 
 ## 如何设置 {#how-to-set-up}
 
-AEM 6.3兼容包可以使用包管理器作为包进行安装。 您可以从Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63)站点下载[AEM 6.3兼容包。
+AEM 6.3兼容包可以使用包管理器作为包进行安装。 您可以下载 [Software Distribution中的AEM 6.3兼容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63) 网站。
 
 安装兼容包后，可以使用OSGI配置中的交换机启用或禁用路由，如下所示：
 

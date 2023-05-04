@@ -12,14 +12,18 @@ discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: 89b8e8a7-103b-472e-8c29-3b6e5b7273b1
-source-git-commit: 28bfeff17c8f753f4f0d3f23a0e3843f159060cc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3406'
+source-wordcount: '3442'
 ht-degree: 1%
 
 ---
 
 # 在AEM 6中配置节点存储和数据存储{#configuring-node-stores-and-data-stores-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 简介 {#introduction}
 
@@ -88,7 +92,7 @@ customBlobStore=B"true"
 
 文档节点存储是AEM MongoMK实施的基础。 它使用 `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService` **PID**. 以下配置选项可用：
 
-* `mongouri`:的 [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) 连接到Mongo数据库时需要。 默认为 `mongodb://localhost:27017`
+* `mongouri`:的 [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) 连接到Mongo数据库时需要。 默认值为 `mongodb://localhost:27017`
 
 * `db`:Mongo数据库的名称。 默认值为 **Oak** . 但是，新的AEM 6安装使用 **aem-author** 作为默认数据库名称。
 
@@ -318,7 +322,7 @@ java -jar aem6.4.jar -r crx3tar-nofds
 1. 在 `crx-quickstart` 文件夹：
 
    * *org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService*.*config*
-   * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*配置*
+   * *org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore*.*config*
 
    创建文件后，根据需要添加配置选项。
 
@@ -418,7 +422,7 @@ java -jar aem6.4.jar -r crx3tar-nofds
 
 除了上述设置外，还可以配置以下设置：
 
-* 路径：数据存储的路径。 默认为 `<aem-install>/repository/datastore.`
+* 路径：数据存储的路径。 默认值为 `<aem-install>/repository/datastore.`
 * RecordLength:应存储在数据存储中的对象的最小大小。 默认为16KB。
 * maxCachedBinarySize:大小小于或等于此大小的二进制文件将存储在内存缓存中。 大小以字节为单位。 默认为17408(17 KB)。
 * cacheSize:缓存的大小。 值以字节为单位指定。 默认为64 GB。

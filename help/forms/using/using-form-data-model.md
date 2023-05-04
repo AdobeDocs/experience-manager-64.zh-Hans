@@ -1,26 +1,30 @@
 ---
 title: 使用表单数据模型
-seo-title: 使用表单数据模型
+seo-title: Use form data model
 description: 了解如何使用表单数据模型创建和使用自适应表单和交互式通信。
-seo-description: 了解如何使用表单数据模型创建和使用自适应表单和交互式通信。
+seo-description: Learn how to use form data model to create and work with adaptive forms and interactive communications.
 uuid: 9a8bd44a-34a1-41ef-a57b-d5e3dd0a77ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 7a1bfd43-39b1-478b-a294-92c78eaebbf2
-feature: 表单数据模型
+feature: Form Data Model
 exl-id: 39408af6-439c-4ade-8062-155be9141dfa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
 
-# 使用表单数据模型{#use-form-data-model}
+# 使用表单数据模型 {#use-form-data-model}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ![](do-not-localize/data-integeration.png)
 
-AEM Forms数据集成允许您使用不同的后端数据源来创建表单数据模型，该模型可用作各种自适应表单和交互式通信工作流中的模式。 它需要配置数据源，并根据数据源中可用的数据模型对象和服务创建表单数据模型。 有关更多信息，请参阅下列主题：
+AEM Forms数据集成允许您使用不同的后端数据源来创建表单数据模型，该模型可用作各种自适应表单和交互式通信工作流中的模式。 它需要配置数据源，并根据数据源中可用的数据模型对象和服务创建表单数据模型。 有关更多信息，请参阅以下内容：
 
 * [AEM Forms数据集成](/help/forms/using/data-integration.md)
 * [配置数据源](/help/forms/using/configure-data-sources.md)
@@ -36,25 +40,25 @@ AEM Forms数据集成允许您使用不同的后端数据源来创建表单数�
 * [将提交的自适应表单数据写回数据源](#write-af)
 * [使用自适应表单规则调用服务](#invoke-services)
 
-## 创建自适应表单和片段{#create-af}
+## 创建自适应表单和片段 {#create-af}
 
-您可以根据表单数据模型创建[自适应表单](/help/forms/using/creating-adaptive-form.md)和[自适应表单片段](/help/forms/using/adaptive-form-fragments.md)。 在创建自适应表单或自适应表单片段时，请执行以下操作以使用表单数据模型：
+您可以创建 [自适应表单](/help/forms/using/creating-adaptive-form.md) 和 [自适应表单片段](/help/forms/using/adaptive-form-fragments.md) 基于表单数据模型。 在创建自适应表单或自适应表单片段时，请执行以下操作以使用表单数据模型：
 
-1. 在“添加属性”屏幕的“表单模型”选项卡中，选择&#x200B;**[!UICONTROL 从]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 表单数据模型]**。
+1. 在“添加属性”屏幕上的“表单模型”选项卡中，选择 **[!UICONTROL 表单数据模型]** 在 **[!UICONTROL 选择自]** 下拉列表。
 
    ![create-af-1](assets/create-af-1.png)
 
-1. 点按以展开&#x200B;**[!UICONTROL 选择表单数据模型]**。 将列出所有可用的表单数据模型。
+1. 点按以展开 **[!UICONTROL 选择表单数据模型]**. 将列出所有可用的表单数据模型。
 
    从数据模型中选择。
 
    ![create-af-2](assets/create-af-2.png)
 
-1. （**仅自适应表单片段**）您可以基于表单数据模型中的一个数据模型对象来创建自适应表单片段。 展开&#x200B;**[!UICONTROL 表单数据模型定义]**&#x200B;下拉列表。 它列出了指定表单数据模型中的所有数据模型对象。 从列表中选择数据模型对象。
+1. (**仅自适应表单片段**)您可以基于表单数据模型中只有一个数据模型对象来创建自适应表单片段。 展开 **[!UICONTROL 表单数据模型定义]** 下拉菜单。 它列出了指定表单数据模型中的所有数据模型对象。 从列表中选择数据模型对象。
 
    ![create-af-3](assets/create-af-3.png)
 
-创建基于表单数据模型的自适应表单或自适应表单片段后，表单数据模型对象会显示在内容浏览器的&#x200B;**[!UICONTROL 数据模型对象]**&#x200B;选项卡中的自适应表单编辑器中。
+创建基于表单数据模型的自适应表单或自适应表单片段后，表单数据模型对象会显示在 **[!UICONTROL 数据模型对象]** “内容”浏览器中的“自适应表单编辑器”选项卡。
 
 >[!NOTE]
 >
@@ -64,7 +68,7 @@ AEM Forms数据集成允许您使用不同的后端数据源来创建表单数�
 
 您可以将数据模型对象拖放到自适应表单或片段上以添加表单字段。 添加的表单字段将保留元数据属性并与数据模型对象属性绑定。 绑定可确保在表单提交时在相应数据源中更新字段值，并在表单呈现时预填。
 
-## 创建交互式通信{#create-ic}
+## 创建交互式通信 {#create-ic}
 
 您可以基于表单数据模型创建交互式通信，您可以使用该表单数据模型预填充来自已配置数据源的数据的交互式通信。 此外，交互式通信的构建基块（如文本、列表和条件文档片段）可以基于表单数据模型。
 
@@ -84,27 +88,27 @@ AEM Forms数据集成允许您使用不同的后端数据源来创建表单数�
 
 [列表片段](/help/forms/using/lists.md)
 
-## 使用示例数据{#preview-ic}预览
+## 使用示例数据预览 {#preview-ic}
 
-表单数据模型编辑器允许您为表单数据模型中的数据模型对象生成和编辑示例数据。 您可以使用此数据预览和测试交互式通信和自适应表单。 在预览之前，必须生成示例数据，如[使用表单数据模型](/help/forms/using/work-with-form-data-model.md#sample)中所述。
+表单数据模型编辑器允许您为表单数据模型中的数据模型对象生成和编辑示例数据。 您可以使用此数据预览和测试交互式通信和自适应表单。 在预览之前，必须生成示例数据，如 [使用表单数据模型](/help/forms/using/work-with-form-data-model.md#sample).
 
 要预览与示例表单数据模型数据的交互式通信，请执行以下操作：
 
-1. 在AEM创作实例上，导航到&#x200B;**[!UICONTROL Forms > Forms和文档]**。
-1. 选择交互式通信，然后点按工具栏中的&#x200B;**[!UICONTROL 预览]**&#x200B;以选择&#x200B;**[!UICONTROL Web渠道]**、**[!UICONTROL 打印渠道]**&#x200B;或&#x200B;**[!UICONTROL 两个渠道]**&#x200B;以预览交互式通信。
-1. 在预览&#x200B;[*渠道*]&#x200B;对话框中，确保选中&#x200B;**[!UICONTROL 测试表单数据模型]**&#x200B;的数据，然后点按&#x200B;**[!UICONTROL 预览]**。
+1. 在AEM创作实例上，导航到 **[!UICONTROL Forms > Forms与文档]**.
+1. 选择交互式通信并点按 **[!UICONTROL 预览]** 在工具栏中选择 **[!UICONTROL Web渠道]**, **[!UICONTROL 打印渠道]**&#x200B;或 **[!UICONTROL 两个渠道]** 以预览交互式通信。
+1. 在预览中 [*频道*] 对话，确保 **[!UICONTROL 表单数据模型的测试数据]** 已选中并点按 **[!UICONTROL 预览]**.
 
 打开交互式通信，其中包含预填充的示例数据。
 
 ![web预览](assets/web-preview.png)
 
-同样，要预览带有示例数据的自适应表单，请在创作模式下打开自适应表单，然后点按&#x200B;**[!UICONTROL 预览]**。
+同样，要预览带有示例数据的自适应表单，请在创作模式下打开自适应表单，然后点按 **[!UICONTROL 预览]**.
 
 ## 使用表单数据模型服务预填充 {#prefill}
 
-AEM Forms提供开箱即用的表单数据模型预填充服务，您可以启用该服务以便根据表单数据模型进行自适应表单和交互式通信。 预填充服务在自适应表单和交互式通信中查询数据模型对象的数据源，并相应地在呈现表单或通信时预填充数据。
+AEM Forms提供开箱即用的表单数据模型预填充服务，您可以启用该服务以便根据表单数据模型进行自适应表单和交互式通信。 预填充服务查询自适应表单和交互式通信中数据模型对象的数据源，并相应地在呈现表单或通信时预填充数据。
 
-要为自适应表单启用表单数据模型预填充服务，请打开自适应表单容器属性，然后从基本折叠面板的&#x200B;**[!UICONTROL 预填充服务]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 表单数据模型预填充服务]**。 然后，保存属性。
+要为自适应表单启用表单数据模型预填充服务，请打开自适应表单容器属性，然后选择 **[!UICONTROL 表单数据模型预填充服务]** 从 **[!UICONTROL 预填充服务]** 下拉菜单。 然后，保存属性。
 
 ![预填充服务](assets/prefill-service.png)
 
@@ -114,11 +118,11 @@ AEM Forms提供开箱即用的表单数据模型预填充服务，您可以启�
 
 用于交互式通信的编辑属性对话框
 
-## 将提交的自适应表单数据写入数据源{#write-af}
+## 将提交的自适应表单数据写入数据源 {#write-af}
 
-当用户根据表单数据模型提交表单时，您可以配置表单以将数据模型对象提交的数据写入其数据源。 为了实现此用例，AEM Forms提供了[表单数据模型提交操作](/help/forms/using/configuring-submit-actions.md)，该操作现成仅适用于基于表单数据模型的自适应表单。 它会在其数据源中写入数据模型对象的提交数据。
+当用户根据表单数据模型提交表单时，您可以配置表单以将数据模型对象提交的数据写入其数据源。 要实现此用例，AEM Forms提供 [表单数据模型提交操作](/help/forms/using/configuring-submit-actions.md)，现成可用，仅适用于基于表单数据模型的自适应表单。 它会在其数据源中写入数据模型对象的提交数据。
 
-要配置表单数据模型提交操作，请打开自适应表单容器属性，然后从提交折叠面板下的提交操作下拉列表中选择&#x200B;**[!UICONTROL 使用表单数据模型]**&#x200B;提交。 然后，从要提交的数据模型对象的&#x200B;**[!UICONTROL 名称下拉列表中浏览并选择一个数据模型对象。]**&#x200B;保存属性。
+要配置表单数据模型提交操作，请打开自适应表单容器属性，然后选择 **[!UICONTROL 使用表单数据模型提交]** 从提交折叠面板下的提交操作下拉列表中。 然后，浏览并选择 **[!UICONTROL 要提交的数据模型对象的名称]** 下拉菜单。 保存属性。
 
 在表单提交时，将配置数据模型对象的数据写入相应的数据源。
 
@@ -127,20 +131,20 @@ AEM Forms提供开箱即用的表单数据模型预填充服务，您可以启�
 您还可以使用二进制数据模型对象属性将表单附件提交到数据源。 执行以下操作以将附件提交到JDBC数据源：
 
 1. 将包含二进制属性的数据模型对象添加到表单数据模型。
-1. 在自适应表单中，将组件浏览器中的&#x200B;**[!UICONTROL 文件附件]**&#x200B;组件拖放到自适应表单上。
-1. 点按以选择添加的组件，然后点按![settings_icon](assets/settings_icon.png) ，以打开该组件的“属性”浏览器。
-1. 在“绑定引用”字段中，点按![foldersearch_18](assets/foldersearch_18.png) ，然后导航以选择您在表单数据模型中添加的二进制属性。 根据需要配置其他属性。
+1. 在自适应表单中，拖放 **[!UICONTROL 文件附件]** 组件从组件浏览器上传到自适应表单。
+1. 点按以选择添加的组件，然后点按 ![settings_icon](assets/settings_icon.png) 打开组件的属性浏览器。
+1. 在绑定引用字段中，点按 ![foldersearch_18](assets/foldersearch_18.png) 并导航到选择您在表单数据模型中添加的二进制属性。 根据需要配置其他属性。
 
-   点按![check-button](assets/check-button.png)以保存属性。 附件字段现在绑定到表单数据模型的二进制属性。
+   点按 ![check-button](assets/check-button.png) 以保存属性。 附件字段现在绑定到表单数据模型的二进制属性。
 
-1. 在自适应表单容器属性的“提交”部分中，启用&#x200B;**[!UICONTROL 提交表单附件]**。 表单提交时，它会将二进制属性字段中的附件提交到数据源。
+1. 在自适应表单容器属性的“提交”部分中，启用 **[!UICONTROL 提交表单附件]**. 表单提交时，它会将二进制属性字段中的附件提交到数据源。
 
-## 使用规则{#invoke-services}在自适应表单中调用服务
+## 使用规则在自适应表单中调用服务 {#invoke-services}
 
-在基于表单数据模型的自适应表单中，您可以[创建规则](/help/forms/using/rule-editor.md)以调用在表单数据模型中配置的服务。 规则中的&#x200B;**[!UICONTROL 调用服务]**&#x200B;操作列出了表单数据模型中的所有可用服务，并允许您选择服务的输入和输出字段。 您还可以使用&#x200B;**设置值**&#x200B;规则类型来调用表单数据模型服务，并将字段的值设置为服务返回的输出。
+在基于表单数据模型的自适应表单中，您可以 [创建规则](/help/forms/using/rule-editor.md) 调用在表单数据模型中配置的服务。 的 **[!UICONTROL 调用服务]** 规则中的操作列出了表单数据模型中所有可用的服务，并允许您选择服务的输入和输出字段。 您还可以使用 **设置值** 规则类型，以调用表单数据模型服务，并将字段值设置为服务返回的输出。
 
 例如，以下规则会调用以员工ID为输入的get服务，并且返回的值会填充在表单中相应的从属ID、姓氏、名字和性别字段中。
 
 ![调用服务](assets/invoke-service.png)
 
-此外，您还可以使用`guidelib.dataIntegrationUtils.executeOperation` API在规则编辑器的代码编辑器中编写JavaScript。 有关API详细信息，请参阅[API以调用表单数据模型服务](/help/forms/using/invoke-form-data-model-services.md)。
+此外，您还可以使用 `guidelib.dataIntegrationUtils.executeOperation` 用于在规则编辑器的代码编辑器中编写JavaScript的API。 有关API详细信息，请参阅 [用于调用表单数据模型服务的API](/help/forms/using/invoke-form-data-model-services.md).

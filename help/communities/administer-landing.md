@@ -1,8 +1,8 @@
 ---
 title: 社区站点
-seo-title: 社区站点
+seo-title: Communities Sites
 description: AEM Communities文档概述
-seo-description: AEM Communities文档概述
+seo-description: Overview of the AEM Communities documentation
 uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: b5d20819-3a3f-4b9e-99a3-e7ae5ae28baf
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '506'
 ht-degree: 5%
 
 ---
 
 # 社区站点 {#communities-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本节面向那些管理AEM Communities并熟悉AEM Communities功能的用户。
 
@@ -27,25 +31,25 @@ ht-degree: 5%
 有关概述和快速入门教程，请访问：
 
 * [AEM Communities概述](overview.md)
-* [AEM Communities 快速入门](getting-started.md)
+* [开始使用AEM Communities](getting-started.md)
 * [AEM Communities启用入门](getting-started-enablement.md)
 
 ## 管理和配置主题 {#administration-and-configuration-topics}
 
 ### 社区站点创建和管理 {#communities-site-creation-and-management}
 
-* 社区[控制台](consoles.md)
+* 社区 [控制台](consoles.md)
 
-   * [站点](sites-console.md)
+   * [Sites](sites-console.md)
 
       * [组（子社区）](groups.md)
    * [审核](moderation.md)
    * [成员和组管理](members.md)
    * [启用资源](resources.md)
-   * [报告](reports.md)
+   * [报表](reports.md)
 
 
-* 社区&#x200B;[*工具*](tools.md):
+* 社区 [*工具*](tools.md):
 
    * [站点模板](sites.md)
    * [组模板](tools-groups.md)
@@ -96,12 +100,12 @@ AEM Communities的一项主要功能是，通过登录网站访客（成员）�
 
 * [最新社区功能包](deploy-communities.md#latestfeaturepack)
 
-有关其他特定于Communities的信息，如[Upgrading](upgrade.md)、[Dispatcher](dispatcher.md)和[Replication](deploy-communities.md#replication-agents-on-author)的部署页面。
+有关其他特定于Communities的信息，请参阅部署页面，例如 [升级](upgrade.md), [Dispatcher](dispatcher.md) 和 [复制](deploy-communities.md#replication-agents-on-author).
 
 ## 相关社区文档 {#related-communities-documentation}
 
-* 访问[部署Communities](deploy-communities.md)以了解建议的部署。
+* 访问 [部署社区](deploy-communities.md) 以了解建议的部署。
 
-* 访问[开发社区](communities.md) ，了解社交组件框架(SCF)和自定义社区组件和功能。
+* 访问 [发展社区](communities.md) 了解社交组件框架(SCF)和自定义社区组件和功能。
 
-* 访问[创作社区组件](author-communities.md) ，了解如何使用和配置社区组件进行创作。
+* 访问 [创作社区组件](author-communities.md) 了解如何使用和配置社区组件进行创作。

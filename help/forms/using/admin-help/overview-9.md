@@ -1,8 +1,8 @@
 ---
 title: Forms工作流概述
-seo-title: Forms工作流概述
+seo-title: Overview of Forms workflow
 description: Forms工作流让用户能够设计、管理和优化以人为中心的流程。 使用表单工作流，用户还可以管理连接系统和人员的自动化业务流程应用程序。
-seo-description: Forms工作流让用户能够设计、管理和优化以人为中心的流程。 使用表单工作流，用户还可以管理连接系统和人员的自动化业务流程应用程序。
+seo-description: Forms workflow lets users design, manage, and optimize human-centric processes. Using forms workflow, users can also manage automated business-process applications that connect systems and people.
 uuid: b28ada7c-de75-416a-b2c8-f6494be5330c
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d2a9de8-13d1-4981-9ba2-9654127556b8
 exl-id: df534e6d-ec34-4851-bbd2-5b9b06d1da10
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 2%
+source-wordcount: '290'
+ht-degree: 3%
 
 ---
 
-# Forms工作流{#overview-of-forms-workflow}概述
+# Forms工作流概述 {#overview-of-forms-workflow}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 Forms工作流让用户能够设计、管理和优化以人为中心的流程。 使用表单工作流，用户还可以管理连接系统和人员的自动化业务流程应用程序。
 

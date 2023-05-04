@@ -1,8 +1,8 @@
 ---
 title: 审核凭据使用信息
-seo-title: 审核凭据使用信息
+seo-title: Review credential use information
 description: 了解如何查看凭据使用信息。
-seo-description: 了解如何查看凭据使用信息。
+seo-description: Learn how to review credential use information.
 uuid: 02af75f9-c235-470d-a98b-a2102aa31381
 contentOwner: admin
 content-type: reference
@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
 exl-id: abd62cca-edf0-4b44-94c3-7af3116b0c54
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 2%
 
 ---
 
-# 查看凭据使用信息{#review-credential-use-information}
+# 审核凭据使用信息 {#review-credential-use-information}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 凭据包含描述其预期用途的信息，这些用途可通过Acrobat Reader DC扩展最终用户Web应用程序访问。 您可以使用此信息来确定安装的凭据类型（评估或生产）及其有效日期。
 
 1. 打开Web浏览器并输入以下URL:
 
-   http://localhost:*[port]*/ReaderExtensions（其中&#x200B;*[port]*&#x200B;是您的应用程序服务器的端口号）
+   http://localhost网站：*[端口]*/ReaderExtensions(其中 *[端口]* 是您的应用程序服务器的端口号)
 
 1. 使用默认用户名和密码登录：
 

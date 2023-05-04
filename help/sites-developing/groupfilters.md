@@ -1,8 +1,8 @@
 ---
 title: 创建设备组过滤器
-seo-title: 创建设备组过滤器
+seo-title: Creating Device Group Filters
 description: 创建设备组筛选器以定义一组设备功能要求
-seo-description: 创建设备组筛选器以定义一组设备功能要求
+seo-description: Create a device group filter to define a set of device capability requirements
 uuid: 8db98b98-f26d-4924-930a-a682cd7df866
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,30 +11,34 @@ content-type: reference
 discoiquuid: 4c4a7bc4-3fb1-44c1-823f-d789790f5e06
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: abbbf606-aff2-44b4-b16e-ceb54997115f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 0%
+source-wordcount: '838'
+ht-degree: 1%
 
 ---
 
-# 创建设备组筛选器{#creating-device-group-filters}
+# 创建设备组过滤器{#creating-device-group-filters}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
 
 创建设备组筛选器以定义一组设备功能要求。 根据需要创建任意数量的过滤器，以定位所需的设备功能组。
 
 设计过滤器，以便您能够使用它们的组合来定义功能组。 通常，不同设备组的功能会重叠。 因此，您可以将一些过滤器与多个设备组定义结合使用。
 
-创建过滤器后，可以在[组配置中使用该过滤器。](/help/sites-developing/mobile.md#creating-a-device-group)
+创建过滤器后，可以在 [组配置。](/help/sites-developing/mobile.md#creating-a-device-group)
 
-## Java类筛选器{#the-filter-java-class}
+## 过滤器Java类 {#the-filter-java-class}
 
-设备组筛选器是一个OSGi组件，用于实现[com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html)接口。 部署后，实现类会提供可用于设备组配置的过滤器服务。
+设备组筛选器是实施 [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 界面。 部署后，实现类会提供可用于设备组配置的过滤器服务。
 
-本文中介绍的解决方案使用Apache Felix Maven SCR插件来促进组件和服务的开发。 因此，示例Java类使用`@Component`和`@Service`注释。 类具有以下结构：
+本文中介绍的解决方案使用Apache Felix Maven SCR插件来促进组件和服务的开发。 因此，示例Java类使用 `@Component`和 `@Service` 批注。 类具有以下结构：
 
 ```java
 package com.adobe.example.myapp;
@@ -72,9 +76,9 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 * getTitle:返回过滤器的名称。 为设备组选择过滤器时，会显示该名称。
 * 匹配：确定设备是否具备所需的功能。
 
-### 提供过滤器名称和描述{#providing-the-filter-name-and-description}
+### 提供过滤器名称和描述 {#providing-the-filter-name-and-description}
 
-`getTitle`和`getDescription`方法分别返回过滤器名称和描述。 以下代码说明了最简单的实施：
+的 `getTitle` 和 `getDescription` 方法将分别返回过滤器名称和描述。 以下代码说明了最简单的实施：
 
 ```java
 public String getDescription() {
@@ -88,15 +92,15 @@ public String getTitle() {
 
 对名称和描述文本进行硬编码就足以用于单语言创作环境。 请考虑将字符串外部化以用于多语言使用，或启用字符串更改而不重新编译源代码。
 
-### 根据筛选条件{#evaluating-against-filter-criteria}进行评估
+### 根据筛选条件进行评估 {#evaluating-against-filter-criteria}
 
-如果设备功能满足所有筛选条件，则`matches`函数会返回`true`。 评估方法参数中提供的信息以确定设备是否属于组。 以下值作为参数提供：
+的 `matches` 函数返回 `true` 如果设备功能满足所有筛选条件， 评估方法参数中提供的信息以确定设备是否属于组。 以下值作为参数提供：
 
 * DeviceGroup对象
 * 用户代理的名称
 * 包含设备功能的映射对象。 Map键是WURFL™功能名称，值是WURFL™数据库中的相应值。
 
-[com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html)接口包含静态字段中WURFL™功能名称的子集。 从设备功能映射中检索值时，请将这些字段常量用作键。
+的 [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 接口包含静态字段中WURFL™功能名称的子集。 从设备功能映射中检索值时，请将这些字段常量用作键。
 
 例如，以下代码示例确定设备是否支持CSS:
 
@@ -105,17 +109,17 @@ boolean cssSupport = true;
 cssSupport = NumberUtils.toInt(capabilities.get(DeviceSpecsConstants.DSPEC_XHTML_SUPPORT_LEVEL)) > 1;
 ```
 
-`org.apache.commons.lang.math`包提供`NumberUtils`类。
+的 `org.apache.commons.lang.math` 包提供 `NumberUtils` 类。
 
 >[!NOTE]
 >
->确保部署到AEM的WURFL™数据库包含用作筛选条件的功能。 （请参阅[设备检测](/help/sites-developing/mobile.md#server-side-device-detection)。）
+>确保部署到AEM的WURFL™数据库包含用作筛选条件的功能。 (请参阅 [设备检测](/help/sites-developing/mobile.md#server-side-device-detection).)
 
-### 屏幕大小{#example-filter-for-screen-size}的过滤器示例
+### 屏幕大小过滤器示例 {#example-filter-for-screen-size}
 
 下面的示例DeviceGroupFilter实施确定设备的物理大小是否符合最低要求。 此过滤器用于向触控设备组添加粒度。 无论物理屏幕大小如何，应用程序UI中按钮的大小都应相同。 其他项目（如文本）的大小可能会有所不同。 过滤器允许动态选择可控制UI元素大小的特定CSS。
 
-此过滤器将大小条件应用于`physical_screen_height`和`physical_screen_width` WURFL™属性名称。
+此过滤器将大小条件应用于 `physical_screen_height` 和 `physical_screen_width` WURFL™属性名称。
 
 ```java
 package com.adobe.example.myapp;
@@ -172,7 +176,7 @@ getTitle和getDescription方法返回的字符串值包含在设备组摘要页�
 
 ![过滤器描述](assets/filterdescription.png)
 
-### Maven POM文件{#the-maven-pom-file}
+### Maven POM文件 {#the-maven-pom-file}
 
 如果您使用Maven来构建应用程序，以下POM代码将非常有用。 POM会引用多个必需的插件和依赖项。
 
@@ -182,7 +186,7 @@ getTitle和getDescription方法返回的字符串值包含在设备组摘要页�
 * Apache Felix Maven捆绑包插件：创建包和清单
 * Apache Felix Maven SCR插件：创建组件描述符文件并配置服务组件清单标头。
 
-**依赖关系:**
+**依赖项:**
 
 * `cq-wcm-mobile-api-5.5.2.jar`:提供DeviceGroup和DeviceGroupFilter接口。
 
@@ -190,7 +194,7 @@ getTitle和getDescription方法返回的字符串值包含在设备组摘要页�
 
 DeviceGroup和DeviceGroupFilter接口包含在Day Commule 5 WCM移动API包中。 Felix批注包含在Apache Felix声明性服务包中。 您可以从公共Adobe存储库获取此JAR文件。
 
-创作时，5.5.2是最新版本的AEM中的WCM移动API包版本。 使用AdobeWeb控制台([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles))确保这是在您的环境中部署的包版本。
+创作时，5.5.2是最新版本的AEM中的WCM移动API包版本。 使用AdobeWeb控制台([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles))以确保这是在您的环境中部署的包版本。
 
 **POM:** （您的POM将使用不同的groupId和版本。）
 
@@ -257,4 +261,4 @@ DeviceGroup和DeviceGroupFilter接口包含在Day Commule 5 WCM移动API包中�
 </project>
 ```
 
-将[获取内容包Maven插件](/help/sites-developing/vlt-mavenplugin.md)部分提供的配置文件添加到您的Maven设置文件中，以使用公共Adobe存储库。
+添加 [获取内容包Maven插件](/help/sites-developing/vlt-mavenplugin.md) 部分会向maven设置文件提供以使用公共Adobe存储库。

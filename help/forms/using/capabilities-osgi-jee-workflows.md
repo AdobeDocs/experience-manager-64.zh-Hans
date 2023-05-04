@@ -8,14 +8,18 @@ contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 exl-id: 6172d936-9348-4f3f-a437-6465dd156f3b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 20%
+source-wordcount: '914'
+ht-degree: 19%
 
 ---
 
 # OSGi和AEM Forms JEE工作流中以表单为中心的AEM工作流的操作和功能  {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## AEM收件箱和HTML工作区 {#aem-inbox-and-html-workspace}
 
@@ -208,7 +212,7 @@ OSGi和AEM Forms JEE工作流(JEE流程管理上的AEM Forms)上以表单为中�
    <td>支持</td> 
   </tr>
   <tr>
-   <td>进程报告</td> 
+   <td>流程报告</td> 
    <td>不支持<br /> </td> 
    <td>支持<br /> </td> 
   </tr>
@@ -253,7 +257,7 @@ OSGi和AEM Forms JEE工作流(JEE流程管理上的AEM Forms)上以表单为中�
    <td>支持<br /> </td> 
   </tr>
   <tr>
-   <td>搜索数据集</td> 
+   <td>搜索模板</td> 
    <td>不支持</td> 
    <td>支持<br /> </td> 
   </tr>

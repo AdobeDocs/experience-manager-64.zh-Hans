@@ -1,29 +1,33 @@
 ---
 title: 将创建通信UI与自定义门户集成
-seo-title: 将创建通信UI与自定义门户集成
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: 了解如何将创建通信UI与自定义门户相集成
-seo-description: 了解如何将创建通信UI与自定义门户相集成
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 4ae9c5fb-bb9d-46d8-be84-455f386ab443
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
-feature: 通信管理
+feature: Correspondence Management
 exl-id: 8b1bbd85-66ba-4e96-917a-d768d84a417f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '514'
 ht-degree: 4%
 
 ---
 
-# 将创建通信UI与自定义门户{#integrating-create-correspondence-ui-with-your-custom-portal}集成
+# 将创建通信UI与自定义门户集成 {#integrating-create-correspondence-ui-with-your-custom-portal}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 概述 {#overview}
 
 本文详细介绍如何将“创建通信解决方案”与您的环境相集成。
 
-## 基于URL的调用{#url-based-invocation}
+## 基于URL的调用 {#url-based-invocation}
 
 从自定义门户调用“创建通信”应用程序的一种方法是使用以下请求参数准备URL:
 
@@ -44,11 +48,11 @@ ht-degree: 4%
 >
 >在调用创建通信应用程序之前，请保存并上传数据，以在给定的dataURL中调用创建通信UI。 这可以通过自定义门户本身或通过其他后端流程来完成。
 
-## 基于内联数据的调用{#inline-data-based-invocation}
+## 内联基于数据的调用 {#inline-data-based-invocation}
 
-调用创建通信应用程序的另一种（也是更安全的）方法是，只需点击`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`的URL，同时发送参数和数据以作为POST请求调用创建通信应用程序（向最终用户隐藏它们）。 这还意味着您现在可以在内联传递Create Correspondence应用程序的XML数据（作为同一请求的一部分，使用cmData参数），在以前的方法中，这是不可能的/理想的。
+调用创建通信应用程序的另一种（也是更安全的）方法是，只需点击 `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`时，将参数和数据作为POST请求发送以调用创建通信应用程序（向最终用户隐藏它们）。 这还意味着您现在可以在内联传递Create Correspondence应用程序的XML数据（作为同一请求的一部分，使用cmData参数），在以前的方法中，这是不可能的/理想的。
 
-### 用于指定字母{#parameters-for-specifying-letter}的参数
+### 用于指定信件的参数 {#parameters-for-specifying-letter}
 
 <table> 
  <tbody>
@@ -77,7 +81,7 @@ ht-degree: 4%
 
 表中的参数顺序指定用于加载信件的参数的首选项。
 
-### 用于指定XML数据源{#parameters-for-specifying-the-xml-data-source}的参数
+### 用于指定XML数据源的参数 {#parameters-for-specifying-the-xml-data-source}
 
 <table> 
  <tbody>
@@ -98,7 +102,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td>cmUseTestData</td> 
-   <td>布尔型</td> 
+   <td>布尔值</td> 
    <td>重复使用数据字典中附加的测试数据。</td> 
   </tr>
  </tbody>
@@ -106,7 +110,7 @@ ht-degree: 4%
 
 表中参数的顺序指定用于加载XML数据的参数的首选项。
 
-### 其他参数{#other-parameters}
+### 其他参数 {#other-parameters}
 
 <table> 
  <tbody>
@@ -117,8 +121,8 @@ ht-degree: 4%
   </tr>
   <tr>
    <td>cmPreview<br /> </td> 
-   <td>布尔型</td> 
-   <td>在预览模式下打开信件时为True<br /> </td> 
+   <td>布尔值</td> 
+   <td>如果在预览模式下打开信件，则为true<br /> </td> 
   </tr>
   <tr>
    <td>随机</td> 

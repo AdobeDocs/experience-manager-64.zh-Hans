@@ -1,25 +1,29 @@
 ---
 title: 引用自适应表单片段
 seo-title: Reference adaptive form fragments
-description: 'AEM Forms提供了自适应表单片段，您可以将其用作资产以快速创建表单。 '
+description: AEM Forms提供了自适应表单片段，您可以将其用作资产以快速创建表单。
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 1%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 # 引用自适应表单片段 {#reference-adaptive-form-fragments}
 
-[自适应](/help/forms/using/adaptive-form-fragments.md) 表单片段是一组字段，或包含可在创建表单时使用的一组字段的面板。它使您能够轻松、快速地创建表单。 您可以使用侧栏中的资产浏览器将自适应表单片段拖放到表单中，并在表单编辑器中对其进行编辑。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-对于自适应表单作者，[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)中提供了引用片段。 它包括以下片段：
+[自适应表单片段](/help/forms/using/adaptive-form-fragments.md) 是一组字段，或包含一组字段的面板，在创建表单时可使用这些字段。 它使您能够轻松、快速地创建表单。 您可以使用侧栏中的资产浏览器将自适应表单片段拖放到表单中，并在表单编辑器中对其进行编辑。
+
+对于自适应表单作者，在 [AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). 它包括以下片段：
 
 * 地址
 * 联系信息
@@ -32,7 +36,7 @@ ht-degree: 1%
 * 条款和条件
 * 使用Scribble的条款和条件
 
-安装包时，会在“Forms &amp;文档”下创建包含引用片段的引用片段文件夹。 有关安装包的信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。
+安装包时，会在“Forms &amp;文档”下创建包含引用片段的引用片段文件夹。 有关安装包的信息，请参阅 [如何使用包](/help/sites-administering/package-manager.md).
 
 ![列出了所有片段](assets/ootb-frags.png)
 

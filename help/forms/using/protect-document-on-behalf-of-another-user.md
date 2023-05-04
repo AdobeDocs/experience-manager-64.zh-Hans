@@ -1,39 +1,43 @@
 ---
 title: Protect代表其他用户创建文档
-seo-title: Protect代表其他用户创建文档
+seo-title: Protect a document on behalf of another user
 description: 了解如何使用API代表其他用户保护文档，而不获得编辑文档的权限。
-seo-description: 了解如何使用API代表其他用户保护文档，而不获得编辑文档的权限。
+seo-description: Learn how to use the APIs to protect a document on behalf of another user without attaining the permissions to edit the document.
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
-feature: 文档安全
+feature: Document Security
 exl-id: 76f25e65-1bc3-4801-998c-40ff533393e2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 0%
+source-wordcount: '419'
+ht-degree: 2%
 
 ---
 
-# Protect代表其他用户{#protect-a-document-on-behalf-of-another-user}创建文档
+# Protect代表其他用户创建文档 {#protect-a-document-on-behalf-of-another-user}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM Forms Document Security Java SDK提供了API，允许用户帐户代表其他用户保护文档，而不获取编辑文档的权限。 您可以在工作流流程中或以编程方式将API用作文档服务。 新的API包括：
 
-* **** protectDocumentUseProtectDocument API代表对文档应用策略
+* **protectDocumentUse** 用于代表对文档应用策略的ProtectDocument API
 
    另一个用户帐户。 用于应用策略的用户帐户的权限仍然仅限于保护文档。 它没有获得打开和查看文档的权限。 RMSecureDocumentResult protectDocument（Document inDoc， String documentName， String policySetName， String policyName， RMLocale区域设置，布尔值bExactMatchForNames）
 
-* **** createLicenseUse创建许可证API，以代表其他用户帐户为策略创建许可证。PublishLicenseDTO createLicense(String policyId， String documentName， boolean logSecureDocEvent)
-* **** protectDocumentWithCoverPageUseProtectDocumentWithCoverPage API来应用策略并代表其他用户向文档添加封面。用于应用策略的用户帐户的权限仍然仅限于保护文档。 它没有获得打开和查看文档的权限。 RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc， String documentName， String policySetName， String policyName， Document coverDoc， boolean bExactMatchForNames)
+* **createLicenseUse** 创建许可证API，以代表其他用户帐户为策略创建许可证。 PublishLicenseDTO createLicense(String policyId， String documentName， boolean logSecureDocEvent)
+* **protectDocumentWithCoverPageUse** 用于应用策略并代表其他用户向文档添加封面的ProtectDocumentWithCoverPage API。 用于应用策略的用户帐户的权限仍然仅限于保护文档。 它没有获得打开和查看文档的权限。 RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc， String documentName， String policySetName， String policyName， Document coverDoc， boolean bExactMatchForNames)
 
-## 使用API代表其他用户{#using-the-apis-to-protect-a-document-on-behalf-of-another-user}保护文档
+## 使用API代表其他用户保护文档 {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 
 执行以下步骤以代表其他用户保护文档，而不获得编辑文档的权限：
 
 1. 创建策略集。 例如，PolicySet1。
 1. 在新创建的策略集中创建策略。 例如，PolicySet1中的Policy1。
 1. 创建具有角色Rights Management最终用户的用户。 例如，User1。 为新创建的用户提供查看使用Policy1保护的文档的权限。
-1. 创建新角色。 例如，Role1。 为新创建的角色提供服务调用权限。 创建具有新创建角色的用户。 例如， User2.您可以使用User2或管理员创建SDK连接并调用protectDocument服务。
+1. 创建新角色. 例如，Role1。 为新创建的角色提供服务调用权限。 创建具有新创建角色的用户。 例如， User2.您可以使用User2或管理员创建SDK连接并调用protectDocument服务。
 
    现在，您可以运行以下示例代码以保护文档，而无需向保护文档的用户提供编辑文档的权限：
 

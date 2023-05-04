@@ -1,8 +1,8 @@
 ---
 title: 企业 DevOps
-seo-title: 企业 DevOps
+seo-title: Enterprise DevOps
 description: 了解轻松部署和简化协作所需的流程、方法和通信。
-seo-description: 了解轻松部署和简化协作所需的流程、方法和通信。
+seo-description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
 uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,14 +10,18 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
 exl-id: 7d1145e8-d7f7-4cc7-9dd9-ee8ce04e43d4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1005'
-ht-degree: 93%
+source-wordcount: '1025'
+ht-degree: 91%
 
 ---
 
 # 企业 DevOps{#enterprise-devops}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 DevOps 涵盖了执行以下操作所需的流程、方法和通信：
 
@@ -62,7 +66,7 @@ Adobe Experience Manager(AEM)部署通常包含多个环境，用于不同级别
 
 ### 质量保证 {#quality-assurance}
 
-质量保证团队使用此环境来全面[测试](/help/sites-developing/test-plan.md)您的新系统；设计和功能。 它应同时具有创作和发布环境（包含适当的内容），并提供所有必要的服务以启用完整的测试套件。
+质量保证团队使用此环境来全面 [测试](/help/sites-developing/test-plan.md) 新系统；设计和功能。 它应同时具有创作和发布环境（包含适当的内容），并提供所有必要的服务以启用完整的测试套件。
 
 ### 暂存 {#staging}
 
@@ -83,7 +87,7 @@ Adobe Experience Manager(AEM)部署通常包含多个环境，用于不同级别
 
 根据项目的规模，该环境通常包含多个作者和/或发布实例。在较低的级别上，存储库也可群集到多个实例。
 
-#### 作者 {#author}
+#### 创作 {#author}
 
 创作实例通常位于内部防火墙之后。这是您和您的同事将在其中执行创作任务的环境，例如：
 

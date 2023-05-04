@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 0aefe8c0-662e-4177-a369-feab174fa510
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 7%
+source-wordcount: '450'
+ht-degree: 5%
 
 ---
 
 # 配置页面以批量编辑页面属性 {#configuring-your-page-for-bulk-editing-of-page-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 [批量编辑页面属性](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) 允许您一次编辑多个页面的属性。
 
@@ -40,7 +44,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->批量编辑功能也可用于资产。 其操作大体相同，只有少数几点差别。有关完整的信息，请参阅[编辑多个资产的属性](/help/assets/managing-multiple-assets.md)。您可以使用 [架构编辑器](/help/assets/metadata-schemas.md).
+>批量编辑功能也可用于资产。 其操作大体相同，只有少数几点差别。请参阅 [编辑多个资产的属性](/help/assets/managing-multiple-assets.md) 以了解完整信息。 您可以使用 [架构编辑器](/help/assets/metadata-schemas.md).
 
 ## 启用字段 {#enabling-a-field}
 

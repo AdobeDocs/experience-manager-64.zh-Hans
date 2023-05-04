@@ -1,20 +1,24 @@
 ---
 title: 安装Workbench
-seo-title: 安装Workbench
+seo-title: Install workbench
 description: 安装Workbench。
 uuid: null
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: null
-source-git-commit: 19dcda357b34e7160792d43cb9335fc3be0dedbc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2779'
 ht-degree: 0%
 
 ---
 
 
 # 安装Workbench {#install-workbench}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本文档提供了有关安装和配置Workbench的说明。 安装程序还安装Designer。
 
@@ -64,9 +68,9 @@ ht-degree: 0%
 >
 >Flex工作区已弃用于AEM Forms。 它适用于AEM Forms版本。
 
-## 安装{#before-you-install}之前
+## 安装之前 {#before-you-install}
 
-### Workbench安装概述{#workbench-installation-overview}
+### Workbench安装概述 {#workbench-installation-overview}
 
 Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它来创建自动化的业务流程和表单。 它还用于管理流程和表单所使用的资源和服务。
 
@@ -78,14 +82,14 @@ Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它
 >
 >AEM Forms服务器需要单独的安装程序。 有关更多信息，请参阅JEE上的AEM Forms安装文档。
 
-## 系统先决条件{#system-prerequisites}
+## 系统先决条件 {#system-prerequisites}
 
 本节概述了硬件和软件要求以及支持的平台。
 
-### 最低硬件和软件要求{#minimum-hardware-software-requirements}
+### 最低硬件和软件要求 {#minimum-hardware-software-requirements}
 
-****
-工作台建议满足以下最低要求：安装的磁盘空间：
+**Workbench**
+建议满足以下最低要求：安装的磁盘空间：
 * 680 MB（仅适用于Workbench）。
 * 在单个驱动器上安装2.15 GB，以完整安装Workbench、Designer和示例组件。
 * 临时安装目录为400 MB — 用户\temp目录为200 MB，Windows临时目录为200 MB。
@@ -95,8 +99,8 @@ Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它
 >如果所有这些位置都位于单个驱动器上，则安装期间必须有1.5 GB的可用空间。 安装完成后，复制到临时目录的文件将被删除。
 
 * 硬件要求：英特尔®奔腾® 4或AMD等效处理器，1 GHz。
-* 下载并安装与Workbench集成的社区帮助客户端所需的最新版本的Adobe AIR(从<a href="http://www.adobe.com/">www.adobe.com</a>)。
-* Java™ Runtime Environment(JRE)6.0更新22或更高版本，更新至6.0 *10*&#x200B;的新版本。
+* 下载并安装最新版本的Adobe AIR(从 <a href="http://www.adobe.com/cn/">www.adobe.com</a>)与Workbench集成后，才需要提供社区帮助客户端。
+* Java™ Runtime Environment(JRE)6.0更新22或更高版本以更新至6.0 *10的新增功能*.
 * 最小1024 X 768像素或更高的显示器分辨率（16位颜色或更高）。
 * 到AEM Forms服务器的TCP/IPv4或TCP/IPv6网络连接。
 * 安装Visual C++ Redistributable Runtime Packages 2012 32位。
@@ -104,7 +108,7 @@ Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它
 
 >[!NOTE]
 >
->如果您的计算机上安装了Adobe® Acrobat® X，请确保在安装Workbench之前卸载它。 安装Workbench后，您可以重新安装Acrobat。
+>如果您的计算机上安装了Adobe® Acrobat® X，请确保在安装Workbench之前将其卸载。 安装Workbench后，您可以重新安装Acrobat。
 
 >[!NOTE]
 >
@@ -112,9 +116,9 @@ Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它
 
 ### 支持的平台 {#supported-platforms}
 
-请在[AEM Forms支持的平台](http://adobe.com/go/learn_aemforms_supportedplatforms_65)上查看Workbench支持的平台的完整列表。
+请参阅Workbench支持的平台的完整列表() [AEM Forms支持的平台](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
-## 设计器安装注意事项{#designer-installation-considerations}
+## Designer安装注意事项 {#designer-installation-considerations}
 
 默认情况下，Workbench安装包含相应的仅英文版Designer。 如果Workbench安装应用程序在您的计算机上检测到Designer的现有版本，则安装可能会终止，您需要先删除当前版本的Designer，然后才能继续。
 下表提供了安装Workbench时您可能遇到的Designer安装方案以及必须执行的任何操作的完整列表。
@@ -138,43 +142,43 @@ Designer的不同版本可以共存于同一系统，例如Designer 8.2.x和9.0.
  </tbody> 
 </table>
 
-### 卸载Designer（独立）{#uninstall-designer-standalone}
+### 卸载Designer（独立） {#uninstall-designer-standalone}
 
-1. 转到&#x200B;**控制面板>程序>程序和功能**
-1. 在“当前安装的程序”列表中，选择&#x200B;**Adobe设计器**。
-1. 单击&#x200B;**卸载**，然后单击&#x200B;**是**。
+1. 转到 **控制面板>程序>程序和功能**
+1. 在“Currently installed programs（当前安装的程序）”列表中，选择 **Adobe设计器**.
+1. 单击 **卸载** 然后单击 **是**.
 
-### 在Windows 10 {#uninstall-designer-standalone-windows10}上卸载Designer（独立）
+### 在Windows 10上卸载Designer（独立） {#uninstall-designer-standalone-windows10}
 
-1. 转到&#x200B;**控制面板>程序>程序和功能**
-1. 在“当前安装的程序”列表中，选择&#x200B;**Adobe设计器**。
-1. 单击&#x200B;**卸载**，然后单击&#x200B;**是**。
+1. 转到 **控制面板>程序>程序和功能**
+1. 在“Currently installed programs（当前安装的程序）”列表中，选择 **Adobe设计器**.
+1. 单击 **卸载** 然后单击 **是**.
 
-### 卸载Acrobat Pro或Acrobat Pro Extended {#uninstall-designer-included-with-acrobatpro-or-acrobatextended}中包含的Designer
+### 卸载Acrobat Pro或Acrobat Pro Extended中包含的Designer {#uninstall-designer-included-with-acrobatpro-or-acrobatextended}
 
-1. 转到&#x200B;**控制面板>程序>程序和功能**
-1. 在“当前安装的程序”列表中，选择&#x200B;**Adobe Acrobat Pro**&#x200B;或&#x200B;**Adobe Acrobat Pro Extended**。
-1. 单击&#x200B;**Change**，然后单击&#x200B;**Next**。
-1. 选择&#x200B;**修改**，然后单击&#x200B;**下一步**。
-1. 选择&#x200B;**Adobe设计器**，选择&#x200B;**此功能将不可用**，然后单击&#x200B;**下一步**
-1. 单击&#x200B;**Update**，然后单击&#x200B;**Finish**
+1. 转到 **控制面板>程序>程序和功能**
+1. 在“Currently installed programs（当前安装的程序）”列表中，选择 **Adobe Acrobat Pro** 或 **Adobe Acrobat Pro扩展**.
+1. 单击 **更改** 然后单击 **下一个**.
+1. 选择 **修改** 然后单击 **下一个**.
+1. 选择 **Adobe设计器**，选择 **此功能将不可用**，然后单击 **下一个**
+1. 单击 **更新** 然后单击 **完成**
 
-### 在Windows 10 {#uninstall-designer-included-with-acrobatpro-or-acrobatextended-windows10}上卸载Acrobat Pro或Acrobat Pro Extended附带的Designer
+### 在Windows 10上卸载Acrobat Pro或Acrobat Pro Extended附带的Designer {#uninstall-designer-included-with-acrobatpro-or-acrobatextended-windows10}
 
-1. 转到&#x200B;**控制面板>程序>程序和功能**
-1. 在“当前安装的程序”列表中，选择&#x200B;**Adobe Acrobat Pro**&#x200B;或&#x200B;**Adobe Acrobat Pro Extended**。
-1. 单击&#x200B;**Change**，然后单击&#x200B;**Next**。
-1. 选择&#x200B;**修改**，然后单击&#x200B;**下一步**。
-1. 选择&#x200B;**Adobe设计器**，选择&#x200B;**此功能将不可用**，然后单击&#x200B;**下一步**
-1. 单击&#x200B;**Update**，然后单击&#x200B;**Finish**
+1. 转到 **控制面板>程序>程序和功能**
+1. 在“Currently installed programs（当前安装的程序）”列表中，选择 **Adobe Acrobat Pro** 或 **Adobe Acrobat Pro扩展**.
+1. 单击 **更改** 然后单击 **下一个**.
+1. 选择 **修改** 然后单击 **下一个**.
+1. 选择 **Adobe设计器**，选择 **此功能将不可用**，然后单击 **下一个**
+1. 单击 **更新** 然后单击 **完成**
 
 ## 安装Workbench {#installing-workbench}
 
 本章介绍如何安装Workbench。
 
-### 安装并运行Workbench {#installing-and-running-workbench}
+### 安装和运行Workbench {#installing-and-running-workbench}
 
-在安装Workbench之前，必须确保您的环境包含运行Workbench所需的软件和硬件(请参阅章节：**安装之前)。**
+在安装Workbench之前，必须确保您的环境包含运行Workbench所需的软件和硬件(请参阅章节： **安装之前**)。
 
 **要安装并运行Workbench，请执行以下操作：**
 
@@ -198,7 +202,7 @@ Designer的不同版本可以共存于同一系统，例如Designer 8.2.x和9.0.
    >
    >通过取消选中此选项，您可以继续使用随Acrobat 10一起安装的Designer。
 
-1. 接受列出的缺省目录或   单击选择并导航到要安装Workbench的目录，然后单击下一步。
+1. 接受列出的默认目录，或单击“选择”并导航到要安装Workbench的目录，然后单击“下一步”。
 
    >[!NOTE]
    >
@@ -208,23 +212,22 @@ Designer的不同版本可以共存于同一系统，例如Designer 8.2.x和9.0.
 1. 查看安装摘要。 选择启动AEM Forms Workbench以启动Workbench，然后单击下一步。
 1. 查看发行说明，然后单击完成。
 1. 现在，您的计算机上安装了以下项目：
-   * **工作台**:要从“开始”菜单运行Workbench，请选择“所有程序”>“AEM Forms”>“Workbench”（如果您选择将快捷方式文件夹存储在此处）。有关信息，   请参阅使用Workbench文档。
-   * **设计器**:您可以从Workbench中访问Designer。有关信息，请参阅Designer帮助中的快速入门主题。
+   * **Workbench**:要从“开始”菜单运行Workbench，请选择“所有程序”>“AEM Forms”>“Workbench”（如果您选择将快捷方式文件夹存储在此处）。 有关信息，请参阅使用Workbench文档。
+   * **Designer**:您可以从Workbench中访问Designer。 有关信息，请参阅Designer帮助中的快速入门主题。
    * **Workbench插件**:按照第6页“安装Workbench Eclipse功能”中的说明操作。
-   * **AEM Forms SDK**:有关使用SDK的更多信息，请参阅 <a href="http://www.adobe.com/go/learn_lc_programming_10">使用AEM Forms编程</a>。
+   * **AEM Forms SDK**:有关使用SDK的更多信息，请参阅 <a href="http://www.adobe.com/go/learn_lc_programming_10">使用AEM Forms编程</a>.
 
-## 升级进程{#upgrading-processes}
+## 升级过程 {#upgrading-processes}
 
 AEM Forms Update 1和LiveCycleES2进程可以使用升级向导升级到AEM Forms应用程序。 有关更多信息，请参阅Workbench帮助中的升级旧工件文档。
 
-### 安装Workbench Eclipse功能{#installing-workbench-eclipse-feature}
+### 安装Workbench Eclipse功能 {#installing-workbench-eclipse-feature}
 
 您可以选择将Workbench功能添加到Eclipse。 安装Workbench后，可以添加Workbench。 例如，对于JBoss，以下位置包含文件：
 
-* Workbench_DVD/additional/eclipse
-从<a href="https://www.eclipse.org/downloads/">www.eclipse.org/downloads</a>下载并安装Eclipse 3.6。
+* Workbench_DVD/additional/eclipse从下载并安装Eclipse 3.6 <a href="https://www.eclipse.org/downloads/">www.eclipse.org/downloads</a>.
 
-### 为Workbench {#configuring-eclipse-update-feature-for-workbench}配置Eclipse更新功能
+### 为Workbench配置Eclipse更新功能 {#configuring-eclipse-update-feature-for-workbench}
 
 Workbench支持更新功能，以确保您使用的是最新的Eclipse版本。 但是，您必须确保每次下载时都包含某些其他模块：
 
@@ -238,11 +241,11 @@ Workbench支持更新功能，以确保您使用的是最新的Eclipse版本。 
    <td><p>Eclipse 3.6.x</p> </td> 
    <td><p>
 
-* 图形编辑框架GEF [org.eclipse.gef.feature.group]:此代码包含在“图形建模框架SDK” [org.eclipse.gmf.sdk.feature.group]中
+* 图形编辑框架 [org.eclipse.gef.feature.group]:此代码包含在“图形建模框架SDK”中 [org.eclipse.gmf.sdk.feature.group]
 
-* WST XML核心[org.eclipse.wst.xml_core.feature.group]:此代码包含在“Eclipse XML编辑器和工具” [org.eclipse.wst.xml_ui.feature.group]中
+* WST XML核心 [org.eclipse.wst.xml_core.feature.feature.group]:它包含在“Eclipse XML编辑器和工具”中 [org.eclipse.wst.xml_ui.feature.feature.group]
 
-* 插件&#39;org.apache.commons.lang_2.3.0&#39; [n/a]:此列表包含在“Mylyn任务列表（必需）” [org.eclipse.mylyn_feature.group]中
+* 插件&#39;org.apache.commons.lang_2.3.0&#39; [n/a]:此列表包含在“Mylyn任务列表（必需）”中 [org.eclipse.mylyn_feature.feature.group]
 
    </p> </td> 
   </tbody>
@@ -260,51 +263,51 @@ Workbench支持更新功能，以确保您使用的是最新的Eclipse版本。 
 
    >[!NOTE]
    >
-   >用于Flash Builder的AdobeAEM Forms Discovery插件允许您快速构建AdobeFlex和AIR应用程序，这些应用程序通过AEM Forms的远程端点调用属于其一部分的服务。 有关如何安装和更新此插件的信息，请访问Adobe网站&#x200B;**Link Required**。
+   >用于Flash Builder的AdobeAEM Forms Discovery插件使您能够快速构建AdobeFlex和AIR应用程序，这些应用程序通过其远程端点调用AEM Forms的一部分服务。 有关如何安装和更新此插件的信息，请访问Adobe网站，网址为 **需要链接**.
 
-### 配置并记录到服务器{#configuring-and-logging-server}
+### 配置并记录到服务器 {#configuring-and-logging-server}
 
 要使用Workbench，您必须运行一个AEM Forms实例，通常在单独的计算机上运行。 您必须具有登录AEM Forms的用户名和密码，以及有关服务器位置的详细信息。
 
 >[!NOTE]
 >
->如果您将AEM Forms配置为使用EMC Documentum或IBM FileNet存储库提供程序，并且您希望登录到除在AEM Forms管理控制台中配置为默认存储库的存储库之外的其他存储库，请提供用户名(username@Repository)。
+>如果您将AEM Forms配置为使用EMC Documentum或IBM FileNet存储库提供程序，并且您要登录到除在AEM Forms管理控制台中配置为默认存储库的存储库之外的其他存储库，请提供用户名(username@Repository)。
 
-### 配置超时设置{#configuring-timeout-settings}
+### 配置超时设置 {#configuring-timeout-settings}
 
 默认情况下，Workbench会在两小时后超时，而不考虑活动或不活动状态。 要编辑超时设置，请参阅管理控制台帮助中的“配置用户管理>配置高级系统属性”。
 
-### 配置Workbench以通过HTTPS连接{#configuring-workbench-to-connect-over-HTTPS}
+### 配置Workbench以通过HTTPS连接 {#configuring-workbench-to-connect-over-HTTPS}
 
-要通过HTTPS将Workbench连接到AEM Forms服务器，您必须确保颁发公共密钥的证书颁发机构(CA)被Workbench识别为受信任。 如果证书未被识别为来自可信来源，则必须更新位于[Workbench_HOME]/workbench/jre/lib/security目录中的cacert文件。
+要通过HTTPS将Workbench连接到AEM Forms服务器，您必须确保颁发公共密钥的证书颁发机构(CA)被Workbench识别为受信任。 如果证书未被识别为来自可信来源，则必须更新位于 [Workbench_HOME]/workbench/jre/lib/security目录。
 
 >[!NOTE]
 >
->[Workbench_] HOME表示安装Workbench的目录。默认位置为C:\Program Files (x86)\Adobe Experience Manager Forms Workbench。
+>[Workbench_HOME] 表示安装Workbench的目录。 默认位置为C:\Program Files (x86)\Adobe Experience Manager Forms Workbench。
 
 确保使用证书中指定的名称连接到HTTPS。 此名称通常是完全限定的主机名。
 
-**要更新缓存文件**:
+**更新缓存文件**:
 1. 确保您有安全套接字层(SSL)证书的副本。 请与配置SSL服务器的管理员联系，或使用Web浏览器导出证书。
 
    >[!NOTE]
    >
-   >要导出证书，请打开Web浏览器并登录到管理控制台，在浏览器中安装证书，然后将证书从浏览器导出到临时存储位置（或直接导出到[Workbench_HOME]/workbench/jre/lib/security目录）。
+   >要导出证书，请打开Web浏览器并登录到管理控制台，在浏览器中安装证书，然后将证书从浏览器导出到临时存储位置(或直接导出到 [Workbench_HOME]/workbench/jre/lib/security目录)。
 
-1. 将证书复制到[Workbench_HOME]/workbench/jre/lib/security目录。
+1. 将证书复制到 [Workbench_HOME]/workbench/jre/lib/security目录。
 
-1. 打开命令提示符窗口，导航到[Workbench_HOME]/workbench/jre/bin，然后键入以下命令：
+1. 打开命令提示符窗口，导航到 [Workbench_HOME]/workbench/jre/bin，然后键入以下命令：
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
 其中：
    * changeit是cacerts密钥库的默认密码。
    * certname是您在步骤1中选择的证书。
    * 示例是您为证书选择的别名。 此值可以更改
 
-1. 当系统提示您信任证书时，请键入Yes并按Enter键。 键工具继续将缓存文件导入[Workbench_HOME]/workbench/jre/lib/security目录。
+1. 当系统提示您信任证书时，请键入Yes并按Enter键。 键工具会继续将缓存文件导入到 [Workbench_HOME]/workbench/jre/lib/security目录。
 
 1. 关闭并重新启动Workbench以应用更改。
 
-### 为动态生成的模板{#configuring-cache-settings-for-dynamically-generated-templates}配置缓存设置
+### 为动态生成的模板配置缓存设置 {#configuring-cache-settings-for-dynamically-generated-templates}
 
 如果您的应用程序通过自动更新XFA内容来动态生成唯一的模板，则应考虑缓存操作的以下方面。 实际上，每个交易都使用一个唯一的新模板。
 
@@ -312,7 +315,7 @@ Workbench支持更新功能，以确保您使用的是最新的Eclipse版本。 
 
 * **模板文件名**:用作缓存表单的主要唯一标识符的模板的位置和文件名。
 * **时间戳**:模板文件包含用于确定表单上次更新时间的时间戳。
-* **模板UUID**:Designer在每个模板中为表单及其版本插入一个唯一标识符(UUID)。每次更新表单时，嵌入的UUID都会更新。 例如，XDP模板可能会显示以下内容：
+* **模板UUID**:Designer在每个模板中为表单及其版本插入一个唯一标识符(UUID)。 每次更新表单时，嵌入的UUID都会更新。 例如，XDP模板可能会显示以下内容：
 
    `<?xml version="1.0" encoding="UTF-8"?>`
    `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
@@ -321,8 +324,8 @@ Workbench支持更新功能，以确保您使用的是最新的Eclipse版本。 
 
 
 Forms服务通过引用文件名或存储库位置或作为内存中XML对象的值来接收模板。
-* **通过引用传递的模板**:使用内容根和表单名称。如果使用此方法在每个请求中传递具有不同文件名的唯一模板，则磁盘缓存将无休止地增长，永远不会重复使用。 为防止出现这种情况，应使用相同的文件名传递唯一模板，以确保为所有请求更新相同的缓存。
-* **传递值的模板**:使用使用theinDataDoc参数随数据一起传递的模板字节。如果使用此方法传递具有不同UUID的唯一模板，则磁盘缓存将会无限增长，并且永远不会重复使用。 为防止出现这种情况，应从所有模板中去除UUID属性，以确保不会为模板创建缓存。 或者，传递相同的非空UUID可以创建缓存对象，但可以确保使用每个请求更新相同的缓存。
+* **通过引用传递的模板**:使用内容根和表单名称。 如果使用此方法在每个请求中传递具有不同文件名的唯一模板，则磁盘缓存将无休止地增长，永远不会重复使用。 为防止出现这种情况，应使用相同的文件名传递唯一模板，以确保为所有请求更新相同的缓存。
+* **传递值的模板**:使用使用theinDataDoc参数随数据一起传递的模板字节。 如果使用此方法传递具有不同UUID的唯一模板，则磁盘缓存将会无限增长，并且永远不会重复使用。 为防止出现这种情况，应从所有模板中去除UUID属性，以确保不会为模板创建缓存。 或者，传递相同的非空UUID可以创建缓存对象，但可以确保使用每个请求更新相同的缓存。
 
 为防止缓存无休止地增长，请考虑以下因素来使用新的AEM Forms API渲染动态生成的模板（即renderHTMLForm2和renderPDFForm2的模板）。
 
@@ -343,17 +346,17 @@ Forms服务通过引用文件名或存储库位置或作为内存中XML对象的
 
 使用控制面板中的“添加或删除程序”功能启动卸载程序。 Workbench和Designer应用程序具有单独的卸载程序。
 
-## 配置AEM Forms XDC编辑器{#configuring-aem-forms-xdc-editor}
+## 配置AEM Forms XDC编辑器 {#configuring-aem-forms-xdc-editor}
 
 使用XDC编辑器，网络打印机管理员可以创建和修改XML Forms架构设备配置(XDC)文件。 XDC文件描述了打印机的功能，如打印机语言或纸张大小与纸盒位置之间的关联。
 
 在网络打印机管理员使用XDC编辑器之前，请重新定位示例XDC文件，并参阅使用XDC编辑器创建设备配置文件。
 
-**要获取示例XDC文件**:
-1. 在AEM Forms服务器上，在[AEM Forms根]\sdk\samples\Output\IVS中找到XDC文件夹。
+**获取示例XDC文件**:
+1. 在AEM Forms服务器上，在 [AEM Forms根]\sdk\samples\Output\IVS。
 1. 将此文件夹的内容复制到可从Workbench或Eclipse系统访问的目录中。
 
-**要获取XDC编辑器帮助**:
+**获取XDC编辑器帮助**:
 1. 转到AEM Forms文档网站。
 1. 单击开发选项卡，然后导航到使用XDC编辑器创建设备配置文件。 下载xdc_editor_help_web.zip文件，并按照自述文件中提供的说明安装帮助文件。
 

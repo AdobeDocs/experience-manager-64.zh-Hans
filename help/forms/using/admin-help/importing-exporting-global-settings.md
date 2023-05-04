@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: 9eabafbe-2193-4799-9bdd-c2be42ead0b9
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
 
 # 导入和导出全局设置 {#importing-and-exporting-global-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 您可以导入和导出工作区的搜索模板定义和全局设置。
 
@@ -27,7 +31,7 @@ ht-degree: 0%
 
 例如，您可以通过从一个环境导出搜索模板定义和全局设置，并将它们导入另一个环境，从开发环境移动到生产环境。
 
-导出全局设置文件后，可以在XML或文本编辑器中修改设置。 但是，您可能想要编辑的唯一设置是JChannelConnectionProperties、formViewOnly和specialRoutes设置。 有关更多信息，请参阅[工作区全局设置](importing-exporting-global-settings.md#workspace-global-settings)。
+导出全局设置文件后，可以在XML或文本编辑器中修改设置。 但是，您可能想要编辑的唯一设置是JChannelConnectionProperties、formViewOnly和specialRoutes设置。 有关更多信息，请参阅 [工作区全局设置](importing-exporting-global-settings.md#workspace-global-settings).
 
 >[!NOTE]
 >
@@ -72,27 +76,27 @@ ht-degree: 0%
 
 ### specialRoutes设置 {#specialroutes-settings}
 
-*specialRoutes*&#x200B;设置在工作区中指定特殊路由（批准和拒绝）的属性。 在某些情况下，这些路由的按钮会显示在工作区的任务卡上，用户无需打开表单即可选择它们。 您可以修改全局设置文件中的specialRoutes设置，以添加用于批准和拒绝的自定义名称，或创建其他路由。
+的 *specialRoutes* 设置在工作区中指定特殊路由（批准和拒绝）的属性。 在某些情况下，这些路由的按钮会显示在工作区的任务卡上，用户无需打开表单即可选择它们。 您可以修改全局设置文件中的specialRoutes设置，以添加用于批准和拒绝的自定义名称，或创建其他路由。
 
-**client_specialRoutes_approve_style:** 位于工作区主题中的样式名称，用于标识批准按钮图标。样式必须包含已启用图标和已禁用图标的值。 要为自定义按钮定义样式，必须使用以下模板：
-` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }`工作区CSS文件嵌入在workspace-theme.swf文件中，该文件位于adobe-workspace-client.ear > adobe-workspace-client.war文件中。 要更改工作区的外观，必须重新编译workspace-theme.swf文件。
+**client_specialRoutes_routes_approve_style:** 位于工作区主题中的样式名称，用于标识批准按钮图标。 样式必须包含已启用图标和已禁用图标的值。 要为自定义按钮定义样式，必须使用以下模板：
+` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` 工作区CSS文件嵌入在workspace-theme.swf文件中，该文件位于adobe-workspace-client.ear > adobe-workspace-client.war文件中。 要更改工作区的外观，必须重新编译workspace-theme.swf文件。
 
-**client_specialRoutes_routes_deny_names:** Workbench用户可用来解释为“deny”的字符串的各种类型。字符串区分大小写。 例如，默认值为deny。 如果Workbench用户在流程中使用“拒绝”一词，则无法识别该词。 必须在此设置中添加“拒绝”一词，才能自定义路由按钮并对其应用样式。
+**client_specialRoutes_routes_deny_names:** Workbench用户可用来解释为“deny”的各种字符串。 字符串区分大小写。 例如，默认值为deny。 如果Workbench用户在流程中使用“拒绝”一词，则无法识别该词。 必须在此设置中添加“拒绝”一词，才能自定义路由按钮并对其应用样式。
 
-**client_specialRoutes_routes_deny_style:** 位于工作区主题文件中的样式名称，用于标识拒绝按钮图标。样式必须包含已启用图标和已禁用图标的值。 要为自定义按钮定义样式，必须使用以下模板：
-`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_approve_names:** Workbench用户可用来解释为“approve”的字符串的各种类型。 字符串区分大小写。 例如，默认值为approve。 如果Workbench用户在流程中使用“批准”一词，则该词将不被识别。 必须在此设置中添加Approve一词，才能自定义路由按钮并对其应用样式。
+**client_specialRoutes_routes_deny_style:** 位于工作区主题文件中的样式名称，用于标识拒绝按钮图标。 样式必须包含已启用图标和已禁用图标的值。 要为自定义按钮定义样式，必须使用以下模板：
+`  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_approve_names:** Workbench用户可用来解释为“批准”的各种字符串。 字符串区分大小写。 例如，默认值为approve。 如果Workbench用户在流程中使用“批准”一词，则该词将不被识别。 必须在此设置中添加Approve一词，才能自定义路由按钮并对其应用样式。
 
-**client_specialRoutes_names:** 用于从资源文件中查找自定义字符串值的键。此设置中的每个条目都需要包含名称和样式的值。
+**client_specialRoutes_names:** 用于从资源文件中查找自定义字符串值的键。 此设置中的每个条目都需要包含名称和样式的值。
 
 ### JGroup设置 {#jgroup-settings}
 
 仅当您从AdobeLiveCycleES 2.5或更早版本升级了时，才会显示这些设置。
 
-**server_remoteevents_ClientTimeoutMillicess:** JGroup等待事件消息的最长时间。不应更改此设置。
+**server_remoteevents_ClientTimeoutMilliseconds:** JGroup等待事件消息的最长时间。 不应更改此设置。
 
-**server_remoteevents_ServerTimeoutMillicess:** 在服务器上接收JGroup消息的超时。此选项设置将消息从服务器发送到客户端的延迟。
+**server_remoteevents_ServerTimeoutMilliseconds:** 在服务器上接收JGroup消息的超时。 此选项设置将消息从服务器发送到客户端的延迟。
 
-**server_remoteevents_JChannelConnectionProperties:** JGroup的连接属性，用于在服务器（RemoteEvent服务在其上处理服务事件）和工作区的所有实例之间进行通信。
+**server_remoteevents_JChannelConnectionProperties:** JGroup的连接属性，用于在服务器（RemoteEvent服务在其上处理服务事件）与工作区的所有实例之间通信。
 
 您可能需要更改多播IP地址(mcast_addr)、多播IP端口(mcast_port)的UDP值，以及多播数据包(ip_ttl)的TTL。 默认情况下，组播IP地址和端口值是随机生成的，通常不需要更改这些值。 但是，如果贵公司有任何有关多播IP地址的特定多播范围的网络策略，则可能需要更改这些值。
 
@@ -102,17 +106,17 @@ ht-degree: 0%
 
 不应更改此设置中的其余属性。
 
-**server_remoteevents_JGroupName:** 用于远程事件通信的JGroup的名称。此值是随机生成的，以避免群集中的冲突。 不应更改此值。
+**server_remoteevents_JGroupName:** 用于远程事件通信的JGroup的名称。 此值是随机生成的，以避免群集中的冲突。 不应更改此值。
 
 ### formView设置 {#formview-settings}
 
-**client_formView_openFormInFullScreen:** 要在工作区中以全屏模式显示所有表单，请将此选项设置为true。默认情况下，此选项设置为false，并且表单不以全屏模式显示。 请注意，用户服务包含一个选项，用于以全屏模式打开与任务关联的文档。 这样，您就可以按流程控制显示。
+**client_formView_openFormInFullScreen:** 要在全屏模式下在工作区中显示所有表单，请将此选项设置为true。 默认情况下，此选项设置为false，并且表单不以全屏模式显示。 请注意，用户服务包含一个选项，用于以全屏模式打开与任务关联的文档。 这样，您就可以按流程控制显示。
 
-**client_routes_formViewOnly:** 当设置为True时，在工作区的卡片视图或列表视图中不会显示路由。默认值为False，表示路由在卡片视图和列表视图中显示。
+**client_routes_formViewOnly:** 当设置为True时，路由不会显示在工作区的卡片视图或列表视图中。 默认值为False，表示路由在卡片视图和列表视图中显示。
 
 ### 其他设置 {#other-settings}
 
-**client_mimeTypes_openOutsideBrowser:** 将在工作区浏览器实例外部打开的文档的MIME类型。如果贵组织的进程需要其他MIME类型，请在此处指定。 默认值为：
+**client_mimeTypes_openOutsideBrowser:** 将在Workspace浏览器实例外部打开的文档的MIME类型。 如果贵组织的进程需要其他MIME类型，请在此处指定。 默认值为：
 
 * `application/msword`
 * `application/msexcel`
@@ -122,7 +126,7 @@ ht-degree: 0%
 
 **server_debugLevel:** 请勿更改此设置。
 
-**client_pollingInterval:** 设置在(JEE上的AEM表单已弃用)Flex工作区上使用的轮询间隔（以秒为单位），以检测新任务和修改的任务。默认为3秒。 这不适用于AEM Forms Workspace。
+**client_pollingInterval:** 设置在(JEE上的AEM表单已弃用)Flex工作区上使用的轮询间隔（以秒为单位），以检测新任务和已修改任务。 默认为3秒。 这不适用于AEM Forms Workspace。
 
 **client_systemContext_name:** 为AEM Forms Workspace中任务的附件指定要在“添加者”字段（在“附件”选项卡中）中显示的自定义名称（例如，“公民”）。
 
@@ -132,4 +136,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->对于演示应用程序，默认显示名称为&#x200B;**Citizen**。 对于您创建的自定义应用程序，默认显示名称为&#x200B;**System Context Account**。
+>对于演示应用程序，默认显示名称为 **公民**. 对于您创建的自定义应用程序，默认显示名称为 **系统上下文帐户**.

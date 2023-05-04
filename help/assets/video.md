@@ -8,20 +8,24 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: f2b7ffa37bcb14e7be47c10ea9d3e39f89e1858d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10401'
-ht-degree: 24%
+source-wordcount: '10437'
+ht-degree: 4%
 
 ---
 
 # 视频 {#video}
 
-本节介绍如何在 Dynamic Media 中处理视频。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+本节介绍如何在Dynamic Media中处理视频。
 
 ## 快速入门：视频 {#quick-start-videos}
 
-以下工作流分步描述旨在帮助您在Dynamic Media中快速设置并运行自适应视频集。每个步骤之后都会交叉引用主题标题，您可以在其中找到更多信息。
+以下工作流分步描述旨在帮助您在Dynamic Media中快速设置并运行自适应视频集。 每个步骤之后都会交叉引用主题标题，您可以在其中找到更多信息。
 
 >[!NOTE]
 >
@@ -32,29 +36,29 @@ ht-degree: 24%
 >
 
 
-1. 通过执行以下操作，**上传 Dynamic Media 视频**：
+1. **上传Dynamic Media视频** 通过执行以下操作：
 
-   * 创建您自己的视频编码配置文件。或者，您也只需使用Dynamic Media附带的预定义“自适应视频编码”配置文件即可。
+   * 创建您自己的视频编码配置文件。 或者，您也只需使用Dynamic Media附带的预定义“自适应视频编码”配置文件即可。
 
       * [创建视频编码配置文件](video-profiles.md).
       * 详细了解 [视频编码最佳实践](#best-practices-for-encoding-videos).
    * 将视频处理配置文件关联到一个或多个文件夹，您要在其中上传主控视频。
 
       * [将视频配置文件应用到文件夹](video-profiles.md#applying-a-video-profile-to-folders).
-      * 了解有关[组织数字资产以使用处理配置文件的最佳实践](organize-assets.md#organize-using-folders)的更多信息。
-      * 了解有关[组织数字资产](organize-assets.md)的更多信息。
+      * 详细了解 [组织数字资产以使用处理配置文件的最佳实践](organize-assets.md#organize-using-folders).
+      * 详细了解 [组织数字资产](organize-assets.md).
    * 将主源视频上传到文件夹。 将视频添加到文件夹后，这些视频会根据您分配给文件夹的视频处理配置文件进行编码。
 
       * Dynamic Media主要支持长度最长为30分钟且最小分辨率大于25 x 25的短格式视频。
       * 您可以上传每个最大15 GB的视频文件。
-      * [上传视频](managing-video-assets.md#uploading-and-previewing-video-assets)。
-      * 了解有关[支持的输入文件格式](assets-formats.md#supported-multimedia-formats)的更多信息。
+      * [上传视频](managing-video-assets.md#uploading-and-previewing-video-assets).
+      * 详细了解 [支持的输入文件格式](assets-formats.md#supported-multimedia-formats).
    * 监控方式 [视频编码正在进行中](#monitoring-video-encoding-and-youtube-publishing-progress) 从资产或工作流视图。
 
 
 
 
-1. 通过执行以下任意操作，**管理 Dynamic Media 视频**：
+1. **管理Dynamic Media视频** 执行以下任一操作：
 
    * 组织、浏览和搜索视频资产
 
@@ -75,7 +79,7 @@ ht-degree: 24%
 
       * [管理查看器预设](managing-viewer-presets.md)
       * [发布资产](publishing-dynamicmedia-assets.md)
-   * 处理视频元数据
+   * 使用视频元数据
 
       * 查看编码视频呈现的属性，如帧速率、音频和视频比特率以及编解码器：
 
@@ -97,7 +101,7 @@ ht-degree: 24%
 
 
 
-1. 通过执行以下任一操作，**发布 Dynamic Media 视频**：
+1. **发布Dynamic Media视频** 执行下列操作之一：
 
    * 如果您将Adobe Experience Manager用作Web内容管理系统，则可以将视频直接添加到您的网页。
 
@@ -110,19 +114,19 @@ ht-degree: 24%
       * 使用网页上的嵌入代码集成视频：
 
          [在网页上嵌入视频查看器](embed-code.md).
-   * [将视频发布到 YouTube](#publishing-videos-to-youtube)。
-   * [生成视频报表](#viewing-video-reports)。
+   * [将视频发布到YouTube](#publishing-videos-to-youtube).
+   * [生成视频报表](#viewing-video-reports).
    * [在视频中添加字幕](#adding-captions-to-video).
 
 
 
 ## 在Dynamic Media中处理视频 {#working-with-video-in-dynamic-media}
 
-Dynamic Media中的视频是一个端到端解决方案，它可以轻松发布高质量自适应视频，以便在多个屏幕(包括台式机、iOS、Android、Blackberry和Windows移动设备)上进行流播放。 自适应视频集是同一个视频的一组版本，这些版本以不同的比特率和格式进行编码，例如 400 kbps、800 kbps 和 1000 kbps。台式计算机或移动设备会检测可用带宽。
+Dynamic Media中的视频是一个端到端解决方案，它可以轻松发布高质量自适应视频，以便在多个屏幕(包括台式机、iOS、Android、Blackberry和Windows移动设备)上进行流播放。 自适应视频集是同一视频的一组版本，这些版本以不同的比特率和格式进行编码，如400 kbps、800 kbps和1000 kbps。 台式计算机或移动设备会检测可用带宽。
 
-例如，在 iOS 移动设备上，设备检测到 3G、4G 或 Wi-Fi 等带宽。设备会随之自动从自适应视频集内的各种视频比特率中选择正确的编码视频。然后，视频会在桌面设备、移动设备或平板电脑上进行流播放。
+例如，在iOS移动设备上，它会检测到3G、4G或Wi-Fi等带宽。 然后，它会自动从自适应视频集中的各种视频比特率中选择正确的编码视频。 视频会流式传输到台式机、移动设备或平板电脑。
 
-此外，如果桌面或移动设备上的网络条件发生变化，设备会自动动态地切换视频质量。同时，如果客户在桌面上进入全屏模式，自适应视频集也会做出响应来使用较好的分辨率，从而改善客户的观看体验。对于在多个屏幕和设备上播放Dynamic Media视频的客户，使用自适应视频集可以为您提供最佳的播放方式。
+此外，如果桌面或移动设备上的网络条件发生更改，则会自动动态切换视频质量。 此外，如果客户在桌面上进入全屏模式，则自适应视频集将使用更好的分辨率做出响应，从而改善客户的观看体验。 对于在多个屏幕和设备上播放Dynamic Media视频的客户，使用自适应视频集可以为您提供最佳的播放方式。
 
 视频播放器在播放期间用于确定要播放或要选择的编码视频的逻辑，基于以下算法：
 
@@ -136,28 +140,28 @@ Dynamic Media中的视频是一个端到端解决方案，它可以轻松发布�
 
 要管理单个视频和自适应视频集，支持以下操作：
 
-* 用多种支持的视频格式和音频格式上传视频，并将视频编码为 MP4 H.264 格式，以供在多种屏幕上播放。您可以使用预定义的自适应视频预设或单个视频编码预设，或者自定义您自己的编码，来控制视频的质量和大小。
+* 从多种支持的视频格式和音频格式上传视频，并将视频编码为MP4 H.264格式，以便在多个屏幕中播放。 您可以使用预定义的自适应视频预设和单个视频编码预设，或自定义您自己的编码以控制视频的质量和大小。
 
-   * 在生成自适应视频集时，会包括 MP4 视频。
-   * **注意**：主/源视频不会添加到自适应视频集。
+   * 生成自适应视频集时，它将包含MP4视频。
+   * **注意**:主控/源视频未添加到自适应视频集。
 
 * 在所有HTML5视频查看器中设置视频字幕。
-* 组织、浏览和搜索具有全面元数据支持的视频，以实现高效的视频资产管理。
+* 使用完整的元数据支持组织、浏览和搜索视频，以有效管理视频资产。
 * 将自适应视频集交付到Web以及桌面和移动设备，包括iPhone、iPad、Android、Blackberry和Windows Phone。
 
-自适应视频流播放在多种 iOS 平台上受支持。请参阅 [Adobe查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+各种iOS平台都支持自适应视频流播放。 请参阅 [Adobe查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
-Dynamic Media支持为MP4 H.264视频播放移动设备视频。您可以在以下位置找到支持此视频格式的Blackberry设备： [Blackberry上支持的视频格式](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media支持为MP4 H.264视频播放移动设备视频。 您可以在以下位置找到支持此视频格式的Blackberry设备： [Blackberry上支持的视频格式](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-请参阅下面的文档，以了解支持此视频格式的 Windows 设备：[Windows Phone 上支持的视频格式](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)。
+您可以在以下位置找到支持此视频格式的Windows设备： [Windows Phone上支持的视频格式](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
-* 使用 Dynamic Media 视频查看器预设播放视频，包括以下查看器：
+* 使用Dynamic Media视频查看器预设播放视频，包括以下内容：
 
-   * 单一视频查看器。
-   * 将视频和图像内容组合在一起的混合媒体查看器。
+   * 单个视频查看器。
+   * 结合了视频和图像内容的混合媒体查看器。
 
 * 配置视频播放器以满足您的品牌需求。
-* 使用简单的 URL 或嵌入代码将视频集成到您的网站、移动站点或移动应用程序。
+* 使用简单的URL或嵌入代码将视频集成到您的网站、移动设备网站或移动设备应用程序。
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
@@ -165,15 +169,15 @@ Dynamic Media支持为MP4 H.264视频播放移动设备视频。您可以在以�
 
 ## 最佳实践：使用HTML5视频查看器 {#best-practice-using-the-html-video-viewer}
 
-Dynamic MediaHTML5视频查看器预设是强大的视频播放器。您可以使用它们来避免许多与HTML5视频播放相关的常见问题以及与移动设备相关的问题，例如缺少自适应流传输和桌面浏览器访问限制。
+Dynamic MediaHTML5视频查看器预设是强大的视频播放器。 您可以使用它们来避免许多与HTML5视频播放相关的常见问题以及与移动设备相关的问题，例如缺少自适应流传输和桌面浏览器访问限制。
 
-在播放器的设计方面，您可以使用标准的 Web 开发工具设计视频播放器的所有功能。例如，您可以使用 HTML5 和 CSS 设计按钮、控件和自定义标识图像背景，从而帮助您向客户展示自定义的外观。
+在播放器的设计方面，您可以使用标准Web开发工具来设计视频播放器的所有功能。 例如，您可以使用HTML5和CSS设计按钮、控件和自定义海报图像背景，以帮助您通过自定义外观联系客户。
 
-在查看器的播放方面，查看器可以自动检测浏览器的视频功能。然后，它使用HLS流（自适应视频流）来提供视频。 或者，如果这些传送方法不可用，则会改用 HTML5 渐进式流播放。
+在查看器的播放端，查看器会自动检测浏览器的视频功能。 然后，它使用HLS流（自适应视频流）来提供视频。 或者，如果这些投放方法不存在，则改用HTML5渐进式。
 
-通过将使用 HTML5 和 CSS 设计播放组件的功能、支持嵌入式播放的功能，以及根据浏览器的容量使用自适应和渐进式流播放的功能整合到单一播放器中，您可以扩大富媒体内容可以传送到的桌面和移动用户的范围，并确保简化视频体验。
+通过将使用HTML5和CSS设计播放组件、具有嵌入式播放功能以及根据浏览器功能使用自适应和渐进式流播放的功能整合到单个播放器中，可将富媒体内容的覆盖范围扩展到桌面用户和移动设备用户，并确保简化视频体验。
 
-另请参阅《 查看器参考指南》中的“[关于 HTML5 查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)”。
+另请参阅 [关于HTML5查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) (在《Adobe查看器参考指南》中)。
 
 ### 在台式计算机和移动设备上使用HTML5视频查看器播放视频 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -200,32 +204,32 @@ HLS（HTTP实时流）是自适应视频流播放的Apple标准，可根据网�
    <td><strong>视频播放模式</strong></td>
   </tr>
   <tr> 
-   <td>桌面设备</td>
+   <td>桌面</td>
    <td>Internate Explorer 9和10</td>
    <td>渐进式下载。</td>
   </tr>
   <tr> 
-   <td>桌面设备</td>
+   <td>桌面</td>
    <td>Internate Explorer 11+</td>
    <td>在Windows 8和Windows 10上 — 请求HLS时强制使用HTTPS。 已知限制：HLS上的HTTP在此浏览器/操作系统组合中不起作用<br /> <br /> 在Windows 7上 — 渐进式下载。 使用标准逻辑选择HTTP与HTTPS协议。</td>
   </tr>
   <tr> 
-   <td>桌面设备</td>
+   <td>桌面</td>
    <td>Firefox 23-44</td>
    <td>渐进式下载。</td>
   </tr>
   <tr> 
-   <td>桌面设备</td>
+   <td>桌面</td>
    <td>Firefox 45或更高版本</td>
    <td>HLS视频流。</td>
   </tr>
   <tr> 
-   <td>桌面设备</td>
+   <td>桌面</td>
    <td>铬黄</td>
    <td>HLS视频流。</td>
   </tr>
   <tr> 
-   <td>桌面设备</td>
+   <td>桌面</td>
    <td>Safari(Mac)</td>
    <td>HLS视频流。</td>
   </tr>
@@ -264,7 +268,7 @@ HLS（HTTP实时流）是自适应视频流播放的Apple标准，可根据网�
 
 ## Dynamic Media视频解决方案的架构 {#architecture-of-dynamic-media-video-solution}
 
-下图显示了视频创作的整个工作流，在此流程中，视频通过 DMGateway 上传并编码，然后进行发布以供公众观看。
+下图显示了视频的整体创作工作流程，这些工作流程通过DMGateway上传和编码，以供公众使用。
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -272,7 +276,7 @@ HLS（HTTP实时流）是自适应视频流播放的Apple标准，可根据网�
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
-## 视频编码的最佳实践 {#best-practices-for-encoding-videos}
+## 视频编码最佳实践 {#best-practices-for-encoding-videos}
 
 如果您已启用 Dynamic Media 并设置了视频云服务，则 **[!UICONTROL Dynamic Media 编码视频]**&#x200B;工作流会对视频进行编码。此工作流会捕获工作流进程历史记录和失败信息。请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。如果您已启用Dynamic Media并设置Video Cloud服务，则 **[!UICONTROL Dynamic Media编码视频]** 在您上传视频时，工作流会自动生效。 (如果您没有使用Dynamic Media，则 **[!UICONTROL DAM更新资产]** 工作流生效。)
 
@@ -285,51 +289,51 @@ For advice about video encoding, see the following:
 
 ### 主源视频文件 {#source-video-files}
 
-在对视频文件进行编码时，请尽可能使用最高质量的源视频文件。避免使用先前已编码的视频文件，因为这样的文件已经压缩，进一步编码会导致创建的视频质量不佳。
+在对视频文件进行编码时，请使用尽可能高质量的源视频文件。 避免使用之前编码的视频文件，因为这些文件已经压缩，而进一步编码会创建质量欠佳的视频。
 
 * Dynamic Media主要支持长度最长为30分钟且最小分辨率大于25 x 25的短格式视频。
 * 您可以上载每个最大15 GB的主源视频文件。
 
-下表说明了在编码之前，源视频文件应具有的建议大小、宽高比和最低比特率。
+下表描述了在对源视频文件进行编码之前，您应该具有的建议大小、宽高比和最小比特率：
 
-| 大小 | 宽高比 | 最低比特率 |
+| 大小 | 宽高比 | 最小比特率 |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 4500 kbps，适用于大部分视频。 |
-| 1280 X 720 | 16:9 | 3000 - 6000 kbps，具体取决于视频中的动作数量。 |
-| 1920 X 1080 | 16时9分 | 6000 - 8000 kbps，具体取决于视频中的动作数量。 |
+| 1024 X 768 | 4:3 | 4500 kbps，适用于大多数视频。 |
+| 1280 X 720 | 16:9 | 3000 - 6000 kbps，具体取决于视频中的运动量。 |
+| 1920 X 1080 | 16:9 | 6000 - 8000 kbps，具体取决于视频中的运动量。 |
 
 ### 获取文件的元数据 {#obtaining-a-file-s-metadata}
 
-获取文件元数据的方法如下：通过使用视频编辑工具查看文件的元数据，或者使用专门为获取元数据而设计的应用程序。下面说明了如何使用第三方应用程序 MediaInfo 获取视频文件的元数据：
+您可以通过以下方法获取文件的元数据：使用视频编辑工具查看文件的元数据，或使用为获取元数据而设计的应用程序。 以下是有关使用第三方应用程序MediaInfo获取视频文件元数据的说明：
 
 1. 转到此网页： [https://mediaarea.net/en/MediaInfo](https://mediaarea.net/en/MediaInfo).
 1. 选择并下载所使用的GUI版本的安装程序，然后按照安装说明操作。
-1. 安装后，右键单击视频文件（仅限Windows），然后选择 **[!UICONTROL MediaInfo]**，或打开 **[!UICONTROL MediaInfo]** 并将您的视频文件拖到应用程序中。您会看到与视频文件关联的所有元数据，包括其宽度、高度和fps。
+1. 安装后，右键单击视频文件（仅限Windows），然后选择 **[!UICONTROL MediaInfo]**，或打开 **[!UICONTROL MediaInfo]** 并将您的视频文件拖到应用程序中。 您会看到与视频文件关联的所有元数据，包括其宽度、高度和fps。
 
 ### 宽高比 {#aspect-ratio}
 
-在为主视频文件选择或创建视频编码预设时，请确保预设的宽高比与主视频文件的宽高比相同。宽高比是视频的宽度与高度的比率。
+在为主控视频文件选择或创建视频编码预设时，请确保预设的宽高比与主控视频文件的宽高比相同。 宽高比是视频宽度与高度的比率。
 
 要确定视频文件的宽高比，请获取文件的元数据并记下文件的宽度和高度（请参阅上面的获取文件的元数据）。 然后，使用下式确定宽高比：
 
-*宽度/高度 = 宽高比*
+*宽高=宽高比*
 
-下表说明了公式结果如何转换成常见的宽高比选项：
+下表描述了公式结果如何转换为常见的宽高比选项：
 
 | 公式结果 | 宽高比 |
 |--- |--- |
 | 1.33 | 4:3 |
 | 0.75 | 3:4 |
-| 1.78 | 16时9分 |
+| 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-例如，如果一个视频的宽度为 1440，高度为 1080，则其宽高比为 1440/1080，也就是 1.33。在这种情况下，要对该视频文件进行编码，您需要选择宽高比为 4:3 的视频编码预设。
+例如，宽度为1440 x 1080的视频的宽高比为1440/1080，即1.33。在这种情况下，请选择宽高比为4:3的视频编码预设来编码视频文件。
 
 ### 比特率 {#bitrate}
 
 比特率是经过编码，构成视频播放一秒的数据量。 比特率以千比特每秒(Kbps)为单位进行测量。
 
-由于所有编解码器都使用有损压缩，因此比特率是视频质量中最重要的因素。 使用有损压缩时，对视频文件的压缩程度越大，质量就降低得越多。因此，所有其他特性（分辨率、帧速率和编解码器）均相等，比特率越低，压缩文件的质量就越低。
+由于所有编解码器都使用有损压缩，因此比特率是视频质量中最重要的因素。 使用有损压缩时，对视频文件的压缩越多，质量就降低得越多。 因此，所有其他特性（分辨率、帧速率和编解码器）均相等，比特率越低，压缩文件的质量就越低。
 
 选择比特率编码时，可以选择以下两种类型：
 
@@ -344,92 +348,92 @@ For advice about video encoding, see the following:
 **何时应使用VBR与CRB?**
 在选择VBR与CBR时，几乎总是建议将VBR用于媒体文件。 VBR以具有竞争力的比特率提供更高质量的文件。 使用VBR时，请务必对两遍编码进行使用，并将最大比特率设置为目标视频比特率的1.5倍。
 
-在选择视频编码预设时，请考虑目标最终用户的连接速度。所选预设的数据率应该是目标最终用户连接速度的 80%。例如，如果目标最终用户的连接速度是 1000 Kbps，则最佳预设就是视频数据率为 800 Kbps 的预设。
+在选择视频编码预设时，请考虑目标最终用户的连接速度。 选择数据率为该速度80%的预设。 例如，如果目标最终用户的连接速度为1000 Kbps，则最佳预设是视频数据率为800 Kbps的预设。
 
-下表说明了典型连接速度的数据率。
+此表描述了典型连接速度的数据率。
 
-| 速度 (Kbps) | 连接类型 |
+| 速度(Kbps) | 连接类型 |
 |--- |--- |
 | 256 | 拨号连接。 |
-| 800 | 典型移动连接。对于此类连接，3G 体验的目标数据率范围为 400 至最高 800。 |
-| 2000 | 典型的宽带桌面连接。对于此连接，目标数据率范围为800-2000 Kbps，大多数目标数据率平均为1200-1500 Kbps。 |
-| 5000 | 典型高宽带连接。不建议在此较高范围下进行编码，因为大多数用户并不具备此速度的视频传送条件。 |
+| 800 | 典型的移动连接。 对于此连接，为3G体验定位数据率（范围为400到最大800）。 |
+| 2000 | 典型的宽带桌面连接。 对于此连接，目标数据率范围为800-2000 Kbps，大多数目标数据率平均为1200-1500 Kbps。 |
+| 5000 | 典型的高宽带连接。 不建议在此上限范围内进行编码，因为大多数用户无法以此速度进行视频交付。 |
 
 ### 解决方法 {#resolution}
 
-**分辨率**&#x200B;以像素为单位描述视频文件的高度和宽度。大多数源视频以高分辨率存储（例如，1920 x 1080）。出于流播放目的，源视频会压缩至较低分辨率（640 x 480 或更低）。
+**分辨率** 以像素为单位描述视频文件的高度和宽度。 大多数源视频以高分辨率存储（例如，1920 x 1080）。 出于流播放目的，源视频会压缩为较小的分辨率（640 x 480或更低）。
 
-分辨率和数据率是两个相互关联、密不可分的因素，它们决定着视频质量。为保持同等的视频质量，视频文件的像素数越高（分辨率越高），数据率就必须越高。例如，考虑分辨率分别为 320 x 240 和 640 x 480 的视频文件的每帧像素数：
+分辨率和数据率是决定视频质量的两个相互关联的因素。 要保持相同的视频质量，视频文件中的像素数越高（分辨率越高），数据率就必须越高。 例如，请考虑分辨率为320 x 240和分辨率为640 x 480的视频文件中每帧的像素数：
 
 | 解决方法 | 每帧像素数 |
 |--- |--- |
 | 320 x 240 | 76,800 |
 | 640 x 480 | 307,200 |
 
-对于分辨率为 640 x 480 的文件，其每帧像素数高出四倍。为使这两个示例分辨率的文件实现同等的数据率，您需要对分辨率为 640 x 480 的文件应用四倍的压缩，而这会降低视频的质量。因此，如果视频数据率为 250 Kbps，则在 320 x 240 分辨率下观看时质量会很高，但在 640 x 480 分辨率下观看时质量则不高。
+640 x 480文件的每帧像素数是原来的四倍。 为了使这两个示例分辨率的数据率保持相同，您需要对640 x 480文件应用四倍的压缩，这会降低视频质量。 因此，250 Kbps的视频数据率在320 x 240分辨率下，而在640 x 480分辨率下，会产生高质量的观看效果。
 
-总的来说，您使用的数据率越高，视频的画质就越好；您使用的分辨率越高，您保持画质所需的数据率就越高（与较低分辨率相比）。
+通常，您使用的数据率越高，视频外观越好，使用的分辨率越高，您保持观看质量所需的数据率就越高（与分辨率较低的数据相比）。
 
-由于分辨率与数据率相关联，在对视频进行编码时，有两种选择：
+由于分辨率和数据率是相关的，因此在对视频进行编码时有两个选项可供选择：
 
-* 选择一个数据率，然后使用在选定数据率下看起来效果不错的最高分辨率进行编码。
-* 选择一个分辨率，然后使用在选定分辨率下获得高质量视频所需的数据率进行编码。
+* 选择一个数据率，然后以在所选数据率中看起来不错的最高分辨率进行编码。
+* 选择一个分辨率，然后按所需的数据速率进行编码，以便以您选择的分辨率获得高质量视频。
 
-在为主视频文件选择（或创建）视频编码预设时，请使用此表来确定正确的分辨率：
+当您为主控视频文件选择（或创建）视频编码预设时，请使用此表来定位正确的分辨率：
 
-| 解决方法 | 高度（像素） | 屏幕大小 |
+| 解决方法 | 高度(像素) | 屏幕大小 |
 |--- |--- |--- |
-| 240p | 240 | 微型屏幕 |
-| 300p | 300 | 通常用于移动设备的小型屏幕 |
-| 360p | 360 | 小型屏幕 |
+| 240p | 240 | 小屏幕 |
+| 300p | 300 | 通常用于移动设备的小屏幕 |
+| 360p | 360 | 小屏幕 |
 | 480p | 480 | 中型屏幕 |
-| 720p | 720 | 大型屏幕 |
-| 1080p | 1080 | 高清晰度大型屏幕 |
+| 720p | 720 | 大屏幕 |
+| 1080p | 1080 | 高清大屏幕 |
 
 ### Fps（每秒帧数） {#fps-frames-per-second}
 
-在美国和日本，大多数视频以 29.97 帧/秒 (fps) 的速率拍摄；在欧洲，大多数视频以 25 fps 的速率拍摄。电影是以 24 fps 的速率拍摄。
+在美国和日本，大多数视频以29.97帧/秒(fps)的速度拍摄；在欧洲，大多数视频以25 fps的速率拍摄。 电影以24 fps的速率拍摄。
 
-选择的视频编码预设应与主视频文件的 fps 速率相匹配。例如，如果您的主视频采用 25 fps，则应选择 25 fps 的编码预设。默认情况下，所有自定义编码均采用主视频文件的 fps。鉴于这一原因，您在创建视频编码预设时不需要明确指定 fps 设置。
+选择与主控视频文件的fps速率匹配的视频编码预设。 例如，如果您的主控视频的帧数为25 fps，请选择25 fps的编码预设。 默认情况下，所有自定义编码都使用主控视频文件的fps。 因此，在创建视频编码预设时，您无需明确指定fps设置。
 
-### 视频编码尺寸 {#video-encoding-dimensions}
+### 视频编码维度 {#video-encoding-dimensions}
 
-为实现最佳效果，请选择相应编码尺寸，使源视频成为所有编码视频的整数倍数。
+为获得最佳结果，请选择编码维度，以便源视频是所有编码视频的整数倍。
 
-要计算此比率，请用源宽度除以编码宽度，得出宽度比。然后，用源高度除以编码高度，得出高度比。
+要计算此比率，请将源宽度除以编码宽度，得到宽度比。 然后，将源高度除以编码高度，得到高度比。
 
-如果计算得出的比率是整数，就意味着视频已得到最佳缩放。如果计算得出的比率不是整数，则会影响视频质量，使显示屏上出现残留像素伪影。当视频含有文本时，这种影响最为明显。
+如果生成的比率是整数，则表示视频已得到最佳缩放。 如果生成的比率不是整数，则会通过在显示器上留下残留像素伪影来影响视频质量。 当视频包含文本时，此效果最为明显。
 
-例如，假定源视频的分辨率为 1920 x 1080。在下表中，这三个编码视频提供了可使用的最佳编码设置。
+例如，假定源视频为1920 x 1080。 在下表中，三个编码视频提供了要使用的最佳编码设置。
 
 <table> 
  <tbody> 
   <tr> 
    <th><p>视频类型</p> </th> 
-   <th><p>宽度 x 高度</p> </th> 
-   <th><p>宽度比</p> </th> 
+   <th><p>宽x高</p> </th> 
+   <th><p>宽度比例</p> </th> 
    <th><p>高度比</p> </th> 
   </tr>
   <tr> 
-   <td><p>来源</p> </td> 
-   <td><p>1920 x 1080</p> </td> 
+   <td><p>源</p> </td> 
+   <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
    <td><p>1</p> </td> 
   </tr> 
   <tr> 
-   <td><p>编码</p> </td> 
+   <td><p>已编码</p> </td> 
    <td><p>960 x 540</p> </td> 
    <td><p>2</p> </td> 
    <td><p>2</p> </td> 
   </tr> 
   <tr> 
-   <td><p>编码</p> </td> 
+   <td><p>已编码</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
    <td><p>3</p> </td> 
   </tr> 
   <tr> 
-   <td><p>编码</p> </td> 
+   <td><p>已编码</p> </td> 
    <td><p>480 x 270</p> </td> 
    <td><p>4</p> </td> 
    <td><p>4</p> </td> 
@@ -439,9 +443,9 @@ For advice about video encoding, see the following:
 
 ### 编码视频文件格式 {#encoded-video-file-format}
 
-Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使用 H.264 视频编解码器，因此 MP4 可以提供高质量的视频，但需要压缩文件大小。
+Dynamic Media建议使用MP4 H.264视频编码预设。 由于MP4文件使用H.264视频编解码器，因此它提供高质量视频，但文件大小已压缩。
 
-## 将视频发布到 YouTube {#publishing-videos-to-youtube}
+## 将视频发布到YouTube {#publishing-videos-to-youtube}
 
 您可以将内部部署的AEM视频资产直接发布到之前创建的YouTube渠道。
 
@@ -461,7 +465,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 1. [（可选）验证已发布到YouTube上的视频](video.md#optional-verifying-the-published-video-on-youtube)
 1. [将YouTube URL关联到您的Web应用程序](#linking-youtube-urls-to-your-web-application)
 
-您还可以[取消发布视频以将其从 YouTube 中删除](#unpublishing-videos-to-remove-them-from-youtube)。
+您还可以 [取消发布视频以将其从YouTube中删除](#unpublishing-videos-to-remove-them-from-youtube).
 
 ### 配置Google Cloud设置 {#configuring-google-cloud-settings}
 
@@ -485,7 +489,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 1. 在 **[!UICONTROL 新建项目]** 对话框中，在项目名称中输入。
 
    请注意，您的项目ID基于您的项目名称。 因此，请仔细选择项目名称；创建后无法更改。 此外，当您稍后在Adobe Experience Manager中设置YouTube时，还需要再次输入相同的项目ID。 您可能需要记下项目的ID。
-1. 点按&#x200B;**[!UICONTROL 创建]**。
+1. 点按 **[!UICONTROL 创建]**.
 
 1. 在项目的 **[!UICONTROL 功能板]**，在 **[!UICONTROL 快速入门]** 卡片，点按 **[!UICONTROL 启用API并获取密钥等凭据]**.
 1. 在 **[!UICONTROL 功能板]** 页面，点按 **[!UICONTROL 启用API]**.
@@ -500,7 +504,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    `https://<servername.domain>:<port_number>`
 
-   例如, `https://1a2b3c.mycompany.com:4321`
+   例如，`https://1a2b3c.mycompany.com:4321`
 
    **注意**:上述路径示例仅供说明之用。
 
@@ -508,7 +512,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    `https://<servername.domain>:<port#>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   例如, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   例如，`https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    **注意**:上述路径示例仅供说明之用。
 
@@ -524,7 +528,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    稍后在Adobe Experience Manager中设置YouTube时，您将需要此下载的json文件。
 
-1. 点按&#x200B;**[!UICONTROL 完成]**。
+1. 点按 **[!UICONTROL 完成]**.
 
    现在，您将创建一个YouTube渠道。
 
@@ -571,7 +575,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 1. 点按AEM左上角的AEM徽标，然后点按左边栏中的 **[!UICONTROL 工具>部署>Cloud Services]**.
 1. 在 **[!UICONTROL 第三方服务]** 标题，在YouTube下，点按 **[!UICONTROL 立即配置]**.
 1. 在 **[!UICONTROL 创建配置]** 对话框中，在相应的字段中输入标题（必填）和名称（可选）。
-1. 点按&#x200B;**[!UICONTROL 创建]**。
+1. 点按 **[!UICONTROL 创建]**.
 1. 在 **[!UICONTROL YouTube帐户设置]** 对话框中 **[!UICONTROL 应用程序名称]** 字段，输入Google项目ID。
 
    您在之前最初配置Google Cloud设置时指定了项目ID。
@@ -678,7 +682,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
    * 点按 **[!UICONTROL 字段标签]** 来选择组件。
    * 在页面右侧的 **[!UICONTROL 设置]** 选项卡，粘贴 **[!UICONTROL YouTube发布]** 值(**[!UICONTROL 字段标签]** 值和 **[!UICONTROL 映射到属性]** 值)复制到表单中各自的字段中。 粘贴 **[!UICONTROL 选择]** 值 **[!UICONTROL 默认值]** 字段。
 
-1. 在页面的右上角附近，点按&#x200B;**[!UICONTROL 保存]**。
+1. 在页面的右上角附近，点按 **[!UICONTROL 保存]**.
 1. 将YouTube发布元数据配置文件应用到您要上传视频的文件夹。 您需要同时设置元数据配置文件和视频配置文件。
 
    请参阅 [元数据配置文件](metadata-profiles.md) 和视 [频配置文件](video-profiles.md)。
@@ -690,7 +694,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 要从YouTube发布内容，AEM会使用 **[!UICONTROL 发布到YouTube]** 工作流，可让您监视进度并查看任何故障信息。
 请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
-**要将视频发布到您的 YouTube 频道，请执行以下操作：**
+**要将视频发布到您的YouTube渠道，请执行以下操作：**
 
 1. 在AEM中，导航到要发布到YouTube渠道的视频资产。
 1. 选择视频资产。
@@ -702,7 +706,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 1. 在 **[!UICONTROL 选择标记]** ，导航到要使用的标记，然后选择一个或多个标记。
 1. 在页面的右上角，点按 **[!UICONTROL 确认]** 图标。
 1. 在视频属性页面的右上角，点按 **[!UICONTROL 保存]**.
-1. 在工具栏中，点按&#x200B;**[!UICONTROL 发布 > 发布]**。
+1. 在工具栏中，点按 **[!UICONTROL 发布>发布]**.
 
    您可以选择验证已在YouTube渠道上发布的视频。
 
@@ -712,24 +716,24 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
-发布视频所需的时间可能会因诸多因素而有很大不同，这些因素包括主视频的格式、文件大小和上传流量。发布过程所需的时间少则几分钟，多则几小时，这些情况都有可能出现。另请注意，分辨率较高的格式渲染起来会慢很多。例如，分辨率分别为 720p 和 1080p 的视频在渲染时所需的时间会比 480p 的视频显著更长。
+发布时间可能会因诸多因素而有很大不同，这些因素包括主控视频的格式、文件大小和上传流量。 发布过程可能需要几分钟到几小时不等的时间。 另外，请注意，分辨率较高的格式呈现速度要慢得多。 例如，720p和1080p的显示时间要比480p长得多。
 
-如果在八小时后，状态消息仍然显示&#x200B;**[!UICONTROL 已上传（正在处理，请稍候）]**，请尝试从我们的站点中删除视频，然后重新上传。
+八小时后，如果您仍看到一条状态消息，其中显示 **[!UICONTROL 已上传（正在处理，请稍候）]**，请尝试从我们的网站中删除视频，然后重新上传该视频。
 
 ### 将YouTube URL关联到您的Web应用程序 {#linking-youtube-urls-to-your-web-application}
 
-您可以获取由Dynamic Media在发布视频后生成的YouTube URL字符串。 在复制该 YouTube URL 时，它会进入“剪贴板”，以便您能够视需要将其粘贴到网站或应用程序中的页面。
+您可以获取由Dynamic Media在发布视频后生成的YouTube URL字符串。 复制YouTube URL时，它会登陆到剪贴板，以便您可以根据需要将其粘贴到网站或应用程序中的页面。
 
-只有在将视频资产发布到 YouTube 后，才可复制其 YouTube URL。
+在将视频资产发布到YouTube之前，无法复制YouTube URL。
 
-**要将 YouTube URL 关联到您的 Web 应用程序，请执行以下操作：**
+**要将YouTube URL关联到您的Web应用程序，请执行以下操作：**
 
 1. 导航到YouTube *发布* 要复制其URL的视频资产，然后将其选中。
 
    请记住，YouTube URL只能复制 *after* 您首先 *发布* 视频资产到YouTube。
 
 1. 在工具栏中，点按 **[!UICONTROL 属性]**.
-1. 点按&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。
+1. 点按 **[!UICONTROL 高级]** 选项卡。
 1. 在 **[!UICONTROL YouTube发布]** 标题 **[!UICONTROL YouTube URL]** 列出，选择URL文本并将其复制到Web浏览器，以预览资产或将其添加到您的Web内容页面。
 
 ### 取消发布视频以将其从YouTube中删除 {#unpublishing-videos-to-remove-them-from-youtube}
@@ -743,7 +747,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 要从YouTube中删除内容，AEM会使用 **[!UICONTROL 从YouTube取消发布]** 工作流，可让您监视进度并查看任何故障信息。
 请参阅[监视视频编码和 YouTube 发布进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
-**要取消发布视频以将其从 YouTube 中删除，请执行以下操作：**
+**要取消发布视频以将其从YouTube中删除，请执行以下操作：**
 
 1. 点按AEM左上角的AEM徽标，然后点按左边栏中的 **[!UICONTROL 工具]** > **[!UICONTROL 资产]**.
 1. 导航到要从YouTube渠道中取消发布的视频资产。
@@ -861,46 +865,45 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 运行Dynamic Media — 混合模式时，可以使用视频报表；运行Dynamic Media - Scene7模式时，报表不可用。
 
-视频报表显示指定时间段内的多个汇总量度，以帮助您监控*已发布*单个和汇总视频是否按预期执行。以下热门量度数据是针对整个网站中所有已发布视频的汇总数据：
+视频报表显示指定时间段内的多个汇总量度，以帮助您监控*已发布*单个和汇总视频是否按预期执行。 以下热门量度数据是针对整个网站中所有已发布视频的汇总数据：
 
 * 视频开始
 * 完成率
-* 视频花费的平均时间
-* 视频花费的总时间
-* 每次访问的视频数
+* 视频平均逗留时间
+* 视频播放总时间
+* 每次访问视频数
 
-报表中还会列出包含所有&#x200B;*已发布*&#x200B;视频的表格，以便您能够根据视频开始的总次数，跟踪您网站上最常观看的视频。
+全部表格 *发布* 视频也会列出，以便您可以根据视频开始总数跟踪网站上查看次数最多的视频。
 
-在您点按列表中的视频名称时，系统会以折线图向您显示该视频的受众保留（流失）报表。该图表显示了视频播放期间任意给定时刻的查看次数。当您播放视频时，垂直条与播放器中的时间指示器同步进行跟踪。折线图数据中的下降趋势表示受众因不感兴趣而停止观看。
+点按列表中的视频名称后，它会以折线图形式显示视频的受众保留（下拉）报表。 该图表显示视频播放期间任何给定时刻的查看次数。 播放视频时，垂直条会与播放器中的时间指示器同步跟踪。 折线图数据中的数据显示受众因不感兴趣而停止观看的位置。
 
-如果视频是在 Adobe Experience Manager Dynamic Media 外部编码的，就不会提供受众保留（流失）图表和表中的播放比例数据。
+如果视频是在Adobe Experience Manager Dynamic Media之外进行编码，则将不提供受众保留（流失）图表和表中的播放百分比数据。
 
 另请参阅 [配置Dynamic MediaCloud Services](/help/assets/config-dynamic.md).
 
 >[!NOTE]
 >
->只有在使用 Dynamic Media 自带的视频播放器及关联的视频播放器预设时，才可跟踪并报告数据。因此，对于通过其他视频播放器播放的视频，您无法进行跟踪和报告。
+>跟踪和报告数据完全基于使用Dynamic Media自己的视频播放器和关联的视频播放器预设。 因此，您无法跟踪和报告通过其他视频播放器播放的视频。
 
-默认情况下，在您首次进入视频报表时，报表会显示从当月的第一个开始到当月日期结束的视频数据。但是，您可以通过指定您自己的日期范围来覆盖默认日期范围。下次输入视频报表时，将使用您指定的日期范围。
+默认情况下，在您首次进入视频报表时，报表会显示从当月的第一个开始到当月日期结束的视频数据。 但是，您可以通过指定您自己的日期范围来覆盖默认日期范围。 下次输入视频报表时，将使用您指定的日期范围。
 
-为了使视频报表正常工作，在配置Dynamic MediaCloud Services时会自动创建报表包ID。同时，报表包ID会被推送到发布服务器，以便在预览资产时，该ID可用于复制URL功能。但是，这要求发布服务器已经设置。如果未设置发布服务器，您仍可以通过发布查看视频报表，但是，您将需要返回到Dynamic Media云配置并点按 **确定**.
+为了使视频报表正常工作，在配置Dynamic MediaCloud Services时会自动创建报表包ID。 同时，报表包ID会被推送到发布服务器，以便在预览资产时，该ID可用于复制URL功能。 但是，这要求发布服务器已经设置。 如果未设置发布服务器，您仍可以通过发布查看视频报表，但是，您将需要返回到Dynamic Media云配置并点按 **确定**.
 
 **要查看视频报表，请执行以下操作：**
 
 1. 点按AEM左上角的AEM徽标，然后点按左边栏中的 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 视频报表]**.
-1. 在“视频报表”页面中，执行以下任一操作：
+1. 在“视频报表”页面上，执行以下操作之一：
 
-   * 在右上角附近，点按&#x200B;**[!UICONTROL 刷新视频报表]**图标。
+   * 在右上角附近，点按 **[!UICONTROL 刷新视频报表]** 图标。
 
-
-      如果报表的结束日期是当日，您只需使用“刷新”。这可确保您查看自上次运行报表以来发生的视频跟踪。
+      如果报表的结束日期是当天，则只需使用“刷新”。 这可确保您查看自上次运行报表以来发生的视频跟踪。
 
    * 在右上角附近，点按 **[!UICONTROL 日期选取器]** 图标。
 
-      指定您要查看的视频数据的开始日期和结束日期范围，然后点按&#x200B;**[!UICONTROL 运行报表]**。
+      指定您希望视频数据的开始和结束日期范围，然后点按 **[!UICONTROL 运行报表]**.
    的 **[!UICONTROL 热门量度]** 组框标识所有 *发布* 视频。
 
-1. 在列出顶级已发布视频的表中，点按视频名称以播放视频，还可以查看该视频的受众保留（流失）报表。
+1. 在列出热门已发布视频的表中，点按视频名称以播放视频，并查看视频的受众保留（流失）报表。
 
 ### 查看基于您使用Dynamic Media HTML5查看器SDK创建的视频查看器的视频报表 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
@@ -910,10 +913,10 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
 要根据您使用Viewer5 Viewer SDK API创建的视频查看器查看视频报表，请执行以下操作：
 
-1. 导航到任意已发布的视频资产。
+1. 导航到任何已发布的视频资产。
 1. 在资产页面的左上角附近，从下拉列表中选择&#x200B;**[!UICONTROL 查看器]**。
-1. 选择任意视频查看器预设，并复制嵌入代码。
-1. 在嵌入代码中，找到包含以下内容的代码行：
+1. 选择任意视频查看器预设并复制嵌入代码。
+1. 在嵌入代码中，找到包含以下内容的行：
 
    `videoViewer.setParam("config2", "<value>");`
 
@@ -921,19 +924,19 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
    config2 参数的正确值可在&#x200B;**[!UICONTROL 嵌入代码]**&#x200B;和复制 **[!UICONTROL URL]** 函数中找到。在复制 **[!UICONTROL URL]** 命令的 URL 中，要查找的参数为 `&config2=<value>`。该值几乎总是 `companypreset`，但在某些情况下，也可以是 `companypreset-1`、`companypreset-2` 等。
 
-1. 在您的自定义视频查看器代码中，通过执行以下操作，将 AppMeasurementBridge.jsp 添加到查看器页面：
+1. 在自定义视频查看器代码中，通过执行以下操作，将AppMeasurementBridge .jsp添加到查看器页面：
 
    * 首先，确定您是否需要 `&preset` 参数。
 
       如果 `config2` 参数为 `companypreset`, *not* 需要 `&preset=parameter`.
 
-      如果 `config2` 是其他任何内容，请将预设参数设置为与 `config2` 参数相同。例如，如果 `config2=companypreset-2`，添加 `&param2=companypreset-2` 到AppMeasurementBridge.jsp URL。
+      如果 `config2` 为其他任何内容，请将预设参数设置为与 `config2` 参数。 例如，如果 `config2=companypreset-2`，添加 `&param2=companypreset-2` 到AppMeasurementBridge.jsp URL。
 
    * 然后，添加AppMeasurementBridge.jsp脚本：
 
       `<script language="javascript" type="text/javascript" src="https://s7d1.scene7.com/s7viewers/AppMeasurementBridge.jsp?company=robindallas&preset=companypreset-2"></script>`
 
-1. 通过执行以下操作，创建 TrackingManager 组件：
+1. 通过执行以下操作，创建TrackingManager组件：
 
    * 调用后 `s7sdk.Util.init();` 通过添加以下内容，创建一个TrackingManager实例以跟踪事件：
 
@@ -947,7 +950,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
 
       `trackingManager.attach(videoPlayer);`
 
-      将组件附加到trackingManager。 要在一个页面上跟踪多个查看器，可使用多个跟踪管理器组件。
+      将组件附加到trackingManager。 要跟踪页面上的多个查看器，请使用多个跟踪管理器组件。
 
    * 通过添加以下内容，创建AppMeasurementBridge对象：
 
@@ -961,7 +964,7 @@ Dynamic Media 建议使用 MP4 H.264 视频编码预设。由于 MP4 文件使�
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
-   appMeasurementBridge 对象具备内置的跟踪功能。但是，您可以提供自己的对象来支持多个跟踪系统或其他功能。
+   appMeasurementBridge对象具有内置的跟踪函数。 但是，您可以提供自己的，以支持多个跟踪系统或其他功能。
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1008,7 +1011,7 @@ Dynamic Media能够将题注文件转换为JSON（JavaScript对象表示法）�
 
    请注意，只有在首次&#x200B;*发布*&#x200B;资产&#x200B;*后*，才可复制 URL。
 
-   请参阅[发布资产](publishing-dynamicmedia-assets.md)。
+   请参阅 [发布资产。](publishing-dynamicmedia-assets.md)
 
 1. 执行下列操作之一：
 
@@ -1073,7 +1076,7 @@ Cost-efficient access to rapidly evolving technology.
    通常，您需要使用与视频文件相同的名称命名章节VTT文件，并在其后附加章节。 这样，您就可以使用现有的Web内容管理系统自动生成视频URL。
 1. 在AEM中，上传您的WebVTT章节文件。
 
-   请参阅[上传资产](managing-assets-touch-ui.md#uploading-assets)。
+   请参阅 [上传资产](managing-assets-touch-ui.md#uploading-assets).
 
 1. 执行下列操作之一：
 
@@ -1083,10 +1086,10 @@ Cost-efficient access to rapidly evolving technology.
        <td>用于弹出式视频查看器体验</td> 
        <td> 
        <ol> 
-       <li>导航到 <i>发布 </i>要与您上传的章节文件关联的视频资产。 请注意，只有在首次<i>发布</i>资产<i>后</i>，才可复制 URL。请参阅<a href="/help/assets/publishing-dynamicmedia-assets.md">发布资产</a>。</li> 
+       <li>导航到 <i>发布 </i>要与您上传的章节文件关联的视频资产。 请注意，只有在首次<i>发布</i>资产<i>后</i>，才可复制 URL。请参阅 <a href="/help/assets/publishing-dynamicmedia-assets.md">发布资产。</a></li> 
        <li>从下拉菜单中，点按 <strong>查看器</strong>.</li> 
        <li>在左边栏中，点按视频查看器预设名称。 视频的预览将在单独的页面中打开。</li> 
-       <li>在左边栏中，点按底部的 <strong>URL</strong>。</li> 
+       <li>在左边栏的底部，点按 <strong>URL</strong>.</li> 
        <li>在“URL”对话框中，选择URL并将其复制到剪贴板，然后将该URL传递到简单的文本编辑器中。</li> 
        <li>将复制的视频URL附加以下语法，以将其与复制的URL关联到您的章节文件：<br /> <br /> <code>&amp;navigation=&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;</code><br /> </li> 
       </ol> </td> 
@@ -1095,7 +1098,7 @@ Cost-efficient access to rapidly evolving technology.
        <td>对于嵌入式视频查看器体验<br /> </td> 
        <td> 
        <ol> 
-       <li>导航到 <i>发布 </i>要与您上传的章节文件关联的视频资产。 请注意，只有在首次<i>发布</i>资产<i>后</i>，才可复制 URL。请参阅<a href="/help/assets/publishing-dynamicmedia-assets.md">发布资产</a>。</li> 
+       <li>导航到 <i>发布 </i>要与您上传的章节文件关联的视频资产。 请注意，只有在首次<i>发布</i>资产<i>后</i>，才可复制 URL。请参阅 <a href="/help/assets/publishing-dynamicmedia-assets.md">发布资产。</a></li> 
        <li>从下拉菜单中，点按 <strong>查看器</strong>.</li> 
        <li>在左边栏中，点按视频查看器预设名称。 视频的预览将在单独的页面中打开。</li> 
        <li>在左边栏的底部，点按 <strong>嵌入</strong>.</li> 

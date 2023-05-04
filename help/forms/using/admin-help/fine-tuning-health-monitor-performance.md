@@ -1,8 +1,8 @@
 ---
 title: 微调运行状况监视器性能
-seo-title: 微调运行状况监视器性能
+seo-title: Fine-tuning Health Monitor performance
 description: 了解如何优化运行状况监视器性能
-seo-description: 了解如何优化运行状况监视器性能
+seo-description: Learn how to fine-tune Health Monitor performance
 uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: b2814b0d-e843-4aba-8c74-a3be0a96f726
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 1%
+source-wordcount: '443'
+ht-degree: 2%
 
 ---
 
 # 微调运行状况监视器性能{#fine-tuning-health-monitor-performance}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 收集填充运行状况监视器的系统统计信息会对AEM表单环境的性能产生一些影响。 可以通过在应用程序服务器中设置下面列出的Java选项来控制此影响。
 
@@ -66,20 +70,20 @@ ht-degree: 1%
 ## 将Java选项添加到JBoss {#add-java-options-to-jboss}
 
 1. 停止JBoss应用程序服务器。
-1. 在编辑器中打开&#x200B;*[appserver root]*/bin/run.bat(Windows)或run.sh（Linux或UNIX），并根据需要添加任何Java选项。
+1. 打开 *[appserver根]*/bin/run.bat(Windows)或在编辑器中运行.sh（Linux或UNIX），并根据需要添加任何Java选项。
 1. 重新启动服务器。
 
-## 向WebLogic {#add-java-options-to-weblogic}添加Java选项
+## 将Java选项添加到WebLogic {#add-java-options-to-weblogic}
 
-1. 在Web浏览器的URL行中键入https://[主机名]:[port]/console以启动WebLogic管理控制台。
+1. 通过键入https://以启动WebLogic管理控制台[主机名]:[端口]/console。
 1. 键入您为WebLogic Server域创建的用户名和密码，然后单击“更改中心”下的“日志”，然后单击“锁定并编辑”。
 1. 在“域结构”下，单击“环境”>“服务器”，然后在右窗格中，单击受控服务器名称。
 1. 在下一个屏幕上，单击“配置”选项卡>“服务器开始”选项卡。
-1. 在参数框中，将所需的参数附加到当前内容的末尾。 例如，添加 — `Dadobe.healthmonitor.enabled=false`会禁用运行状况监视器。
+1. 在参数框中，将所需的参数附加到当前内容的末尾。 例如，添加 —  `Dadobe.healthmonitor.enabled=false` 禁用运行状况监视器。
 1. 单击保存，然后单击激活更改。
 1. 重新启动WebLogic托管服务器。
 
-## 向WebSphere {#add-java-options-to-websphere}添加Java选项
+## 将Java选项添加到WebSphere {#add-java-options-to-websphere}
 
 1. 在WebSphere管理控制台导航树中，为应用程序服务器执行以下操作：
 

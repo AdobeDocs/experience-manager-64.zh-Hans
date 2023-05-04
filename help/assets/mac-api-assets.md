@@ -1,35 +1,39 @@
 ---
-title: ' [!DNL Adobe Experience Manager]中的资产HTTP API。'
-description: 使用 [!DNL Adobe Experience Manager Assets]中的HTTP API创建、读取、更新、删除和管理数字资产。
+title: 中的资产HTTP API [!DNL Adobe Experience Manager].
+description: 在 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-feature: API，资产HTTP API，开发人员工具
+feature: APIs,Assets HTTP API,Developer Tools
 role: Developer
 exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1588'
 ht-degree: 1%
 
 ---
 
-# 资产 HTTP API {#assets-http-api}
-
-资产HTTP API允许对数字资产（包括元数据、演绎版和注释）以及使用[!DNL Experience Manager]内容片段的结构化内容执行创建读取更新 — 删除(CRUD)操作。 它在`/api/assets`处公开，并作为REST API实施。
-
-要访问API，请执行以下操作：
-
-1. 在`https://[hostname]:[port]/api.json`处打开API服务文档。
-1. 按照Assets服务链接（指向`https://[hostname]:[server]/api/assets.json`）进行操作。
-
-API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代码。 JSON响应是可选的，可能不可用，例如PDF文件。 依赖响应代码进行进一步分析或操作。
-
-在[!UICONTROL 结束时间]之后，资产及其演绎版无法通过[!DNL Assets] Web界面和HTTP API使用。 如果[!UICONTROL 开启时间]将来或[!UICONTROL 结束时间]过去，则API会返回404错误消息。
+# Assets HTTP API {#assets-http-api}
 
 >[!CAUTION]
 >
->[HTTP API会更新命名空间](#update-asset-metadata) 中的元数据 `jcr` 属性。但是，Experience Manager用户界面会更新`dc`命名空间中的元数据属性。
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
-## 数据模型{#data-model}
+资产HTTP API允许对数字资产（包括对元数据、演绎版和注释）以及使用的结构化内容执行创建读取更新 — 删除(CRUD)操作 [!DNL Experience Manager] 内容片段。 在 `/api/assets` 和作为REST API实施。
+
+要访问API，请执行以下操作：
+
+1. 在以下位置打开API服务文档： `https://[hostname]:[port]/api.json`.
+1. 按照Assets服务链接，以 `https://[hostname]:[server]/api/assets.json`.
+
+API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代码。 JSON响应是可选的，并且可能不可用，例如PDF文件。 依赖响应代码进行进一步分析或操作。
+
+在 [!UICONTROL 关闭时间]，则资产及其演绎版无法通过 [!DNL Assets] web界面和通过HTTP API。 如果 [!UICONTROL 开始时间] 是未来的，或 [!UICONTROL 关闭时间] 是过去。
+
+>[!CAUTION]
+>
+>[HTTP API更新元数据属性](#update-asset-metadata) 在 `jcr` 命名空间。 但是，Experience Manager用户界面会更新 `dc` 命名空间。
+
+## 数据模型 {#data-model}
 
 资产HTTP API公开了两个主要元素：文件夹和资产（对于标准资产）。
 
@@ -41,20 +45,20 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 
 **属性**:
 
-* `name` 是文件夹的名称。这与URL路径中不带扩展名的最后一个区段相同。
+* `name` 是文件夹的名称。 这与URL路径中不带扩展名的最后一个区段相同。
 * `title` 是文件夹的可选标题，可以显示该标题而不是其名称。
 
 >[!NOTE]
 >
->文件夹或资产的某些属性会映射到其他前缀。 `jcr`前缀（`jcr:title`、`jcr:description`和`jcr:language`）替换为`dc`前缀。 因此，在返回的JSON中，`dc:title`和`dc:description`分别包含`jcr:title`和`jcr:description`的值。
+>文件夹或资产的某些属性会映射到其他前缀。 的 `jcr` 前缀 `jcr:title`, `jcr:description`和 `jcr:language` 替换为 `dc` 前缀。 因此，在返回的JSON中， `dc:title` 和 `dc:description` 包含的值为 `jcr:title` 和 `jcr:description`，分别为。
 
-**** LinksFolders公开三个链接：
+**链接** 文件夹会显示三个链接：
 
 * `self`:链接到自身。
 * `parent`:链接到父文件夹。
 * `thumbnail`:（可选）链接到文件夹缩略图图像。
 
-### 资产 {#assets}
+### Assets {#assets}
 
 在Experience Manager中，资产包含以下元素：
 
@@ -62,7 +66,7 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 多个演绎版，如原始演绎版（即最初上传的资产）、缩略图和各种其他演绎版。 其他演绎版可以是不同大小、不同视频编码的图像，或从PDF或Adobe InDesign文件中提取的页面。
 * 可选注释。
 
-在[!DNL Experience Manager]中，文件夹具有以下组件：
+在 [!DNL Experience Manager] 文件夹具有以下组件：
 
 * 实体：资产的子项是其演绎版。
 * 属性.
@@ -70,33 +74,33 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 
 资产HTTP API包括以下功能：
 
-* [检索文件夹列表](#retrieve-a-folder-listing)。
+* [检索文件夹列表](#retrieve-a-folder-listing).
 * [创建文件夹](#create-a-folder)。
-* [创建资产](#create-an-asset)。
-* [更新资产二进制文件](#update-asset-binary)。
-* [更新资产元数据](#update-asset-metadata)。
-* [创建资产演绎版](#create-an-asset-rendition)。
-* [更新资产演绎版](#update-an-asset-rendition)。
-* [创建资产评论](#create-an-asset-comment)。
-* [复制文件夹或资产](#copy-a-folder-or-asset)。
-* [移动文件夹或资产](#move-a-folder-or-asset)。
-* [删除文件夹、资产或演绎版](#delete-a-folder-asset-or-rendition)。
+* [创建资产](#create-an-asset).
+* [更新资产二进制文件](#update-asset-binary).
+* [更新资产元数据](#update-asset-metadata).
+* [创建资产演绎版](#create-an-asset-rendition).
+* [更新资产演绎版](#update-an-asset-rendition).
+* [创建资产评论](#create-an-asset-comment).
+* [复制文件夹或资产](#copy-a-folder-or-asset).
+* [移动文件夹或资产](#move-a-folder-or-asset).
+* [删除文件夹、资产或演绎版](#delete-a-folder-asset-or-rendition).
 
 >[!NOTE]
 >
->为方便阅读，以下示例省略了完整的cURL符号。 事实上，该符号与[Resty](https://github.com/micha/resty)相关，后者是`cURL`的脚本包装器。
+>为方便阅读，以下示例省略了完整的cURL符号。 事实上，符号与 [Resty](https://github.com/micha/resty) 是的脚本包装器 `cURL`.
 
 **前提条件**
 
 * 访问 `https://[aem_server]:[port]/system/console/configMgr`.
-* 导航至&#x200B;**[!UICONTROL AdobeGranite CSRF筛选器]**。
-* 确保属性&#x200B;**[!UICONTROL 筛选器方法]**&#x200B;包含：`POST`、`PUT`、`DELETE`。
+* 导航到 **[!UICONTROL AdobeGranite CSRF过滤器]**.
+* 确保资产 **[!UICONTROL 筛选方法]** 包括： `POST`, `PUT`, `DELETE`.
 
-## 检索列出{#retrieve-a-folder-listing}的文件夹
+## 检索文件夹列表 {#retrieve-a-folder-listing}
 
 检索现有文件夹及其子实体（子文件夹或资产）的警报器表示形式。
 
-**请求**:  `GET /api/assets/myFolder.json`
+**请求**: `GET /api/assets/myFolder.json`
 
 **响应代码**:响应代码为：
 
@@ -104,13 +108,13 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 404 — 未找到 — 文件夹不存在或无法访问。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-**响应**:返回的实体类别是资产或文件夹。包含实体的属性是每个实体的完整属性集的子集。 为了获得实体的完整表示形式，客户端应检索链接所指向的URL内容，该链接的`rel`为`self`。
+**响应**:返回的实体类别是资产或文件夹。 包含实体的属性是每个实体的完整属性集的子集。 为了获得实体的完整表示形式，客户端应检索链接所指向的URL的内容，该链接包含 `rel` of `self`.
 
-## 创建文件夹{#create-a-folder}
+## 创建文件夹 {#create-a-folder}
 
-创建新的`sling`:`OrderedFolder`。 如果提供了`*`而不是节点名称，则Servlet会使用参数名称作为节点名称。 被接受为请求数据是新文件夹或一组名称 — 值对的Siren表示形式，编码为`application/www-form-urlencoded`或`multipart`/ `form`- `data`，对于直接从HTML表单创建文件夹非常有用。 此外，文件夹的属性可以指定为URL查询参数。
+创建新 `sling`: `OrderedFolder` 在给定路径上。 如果 `*` 提供的不是节点名称，因此servlet使用参数名称作为节点名称。 被接受为请求数据是新文件夹的Siren表示形式或一组名称 — 值对，编码为 `application/www-form-urlencoded` 或 `multipart`/ `form`- `data`，用于直接从HTML表单创建文件夹。 此外，文件夹的属性可以指定为URL查询参数。
 
-如果提供路径的父节点不存在，则API调用会失败，并出现`500`响应代码。 如果文件夹已存在，则调用会返回响应代码`409`。
+API调用失败，错误为 `500` 响应代码。 调用会返回响应代码 `409` 文件夹已存在。
 
 **参数**: `name` 是文件夹名称。
 
@@ -126,11 +130,11 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 创建资产{#create-an-asset}
+## 创建资产 {#create-an-asset}
 
-将提供的文件放在提供的路径中，以在DAM存储库中创建资产。 如果提供了`*`而不是节点名称，则Servlet会使用参数名称或文件名作为节点名称。
+将提供的文件放置到提供的路径中，以在DAM存储库中创建资产。 如果 `*` 提供的不是节点名称，servlet使用参数名称或文件名作为节点名称。
 
-**参数**:参数用于 `name` 资产名称和文 `file` 件引用。
+**参数**:参数包括 `name` (对于资产名称和 `file` ，用于文件引用。
 
 **请求**
 
@@ -144,11 +148,11 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 更新资产二进制文件{#update-asset-binary}
+## 更新资产二进制文件 {#update-asset-binary}
 
 更新资产的二进制文件（原始名称的演绎版）。 更新会触发要执行的默认资产处理工作流（如果已配置）。
 
-**请求**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
+**请求**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
 **响应代码**:响应代码为：
 
@@ -157,11 +161,11 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 更新资产元数据{#update-asset-metadata}
+## 更新资产元数据 {#update-asset-metadata}
 
-更新资产元数据属性。 如果更新`dc:`命名空间中的任何属性，则API会更新`jcr`命名空间中的相同属性。 API不会同步两个命名空间下的属性。
+更新资产元数据属性。 如果您在 `dc:` 命名空间中，API会更新 `jcr` 命名空间。 API不会同步两个命名空间下的属性。
 
-**请求**:  `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
+**请求**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **响应代码**:响应代码为：
 
@@ -170,9 +174,9 @@ API响应是某些MIME类型的JSON文件，也是所有MIME类型的响应代�
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-### 在`dc`和`jcr`命名空间{#sync-metadata-between-namespaces}之间同步元数据更新
+### 在之间同步元数据更新 `dc` 和 `jcr` 命名空间 {#sync-metadata-between-namespaces}
 
-API方法会更新`jcr`命名空间中的元数据属性。 使用触屏UI进行的更新更改了`dc`命名空间中的元数据属性。 要在`dc`和`jcr`命名空间之间同步元数据值，您可以创建工作流并配置Experience Manager以在资产编辑时执行该工作流。 使用ECMA脚本来同步所需的元数据属性。 以下示例脚本在`dc:title`和`jcr:title`之间同步标题字符串。
+API方法会更新 `jcr` 命名空间。 使用触屏UI进行的更新更改了 `dc` 命名空间。 要在 `dc` 和 `jcr` 命名空间中，您可以创建工作流并配置Experience Manager，以在编辑资产时执行工作流。 使用ECMA脚本来同步所需的元数据属性。 以下示例脚本在 `dc:title` 和 `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -191,11 +195,11 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 }
 ```
 
-## 创建资产演绎版{#create-an-asset-rendition}
+## 创建资产演绎版 {#create-an-asset-rendition}
 
 为资产创建新的资产演绎版。 如果未提供请求参数名称，则文件名将用作格式副本名称。
 
-**参数**:这些参数用 `name` 于呈现版本的名称， `file` 并作为文件引用。
+**参数**:参数包括 `name` 的名称和 `file` 作为文件引用。
 
 **请求**
 
@@ -209,11 +213,11 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 更新资产演绎版{#update-an-asset-rendition}
+## 更新资产演绎版 {#update-an-asset-rendition}
 
 更新后，将分别使用新的二进制数据替换资产演绎版。
 
-**请求**:  `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
+**请求**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
 **响应代码**:响应代码为：
 
@@ -222,13 +226,13 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 在资产{#create-an-asset-comment}上添加注释
+## 在资产上添加评论 {#create-an-asset-comment}
 
 创建新的资产评论。
 
-**参数**:参数用 `message` 于注释的消息正文和JSON `annotationData` 格式的注释数据。
+**参数**:参数包括 `message` 的留言正文和 `annotationData` ，以获取JSON格式的注释数据。
 
-**请求**:  `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
+**请求**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
 **响应代码**:响应代码为：
 
@@ -237,17 +241,17 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 * 412 - PRECONTIME FAILED — 如果找不到或访问根集合，则失败。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 复制文件夹或资产{#copy-a-folder-or-asset}
+## 复制文件夹或资产 {#copy-a-folder-or-asset}
 
 将提供路径上可用的文件夹或资产复制到新目标。
 
 **请求标头**:参数包括：
 
 * `X-Destination` - API解决方案范围中用于将资源复制到的新目标URI。
-* `X-Depth` - `infinity` 或 `0`。使用`0`仅复制资源及其属性，而不复制其子项。
-* `X-Overwrite`  — 使用 `F` 防止覆盖现有目标处的资产。
+* `X-Depth` - `infinity` 或 `0`. 使用 `0` 仅复制资源及其属性，而不复制其子项。
+* `X-Overwrite`  — 使用 `F` 以防止覆盖现有目标处的资产。
 
-**请求**:  `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
+**请求**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
 **响应代码**:响应代码为：
 
@@ -256,17 +260,17 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 * 412 - PRECONDITATION失败 — 如果缺少请求标头。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 移动文件夹或资产{#move-a-folder-or-asset}
+## 移动文件夹或资产 {#move-a-folder-or-asset}
 
 将给定路径上的文件夹或资产移动到新目标。
 
 **请求标头**:参数包括：
 
 * `X-Destination` - API解决方案范围中用于将资源复制到的新目标URI。
-* `X-Depth` - `infinity` 或 `0`。使用`0`仅复制资源及其属性，而不复制其子项。
-* `X-Overwrite`  — 使用强制 `T` 删除现有资源，或 `F` 防止覆盖现有资源。
+* `X-Depth` - `infinity` 或 `0`. 使用 `0` 仅复制资源及其属性，而不复制其子项。
+* `X-Overwrite`  — 使用 `T` 强制删除现有资源或 `F` 以防止覆盖现有资源。
 
-**请求**:  `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+**请求**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
 **响应代码**:响应代码为：
 
@@ -275,7 +279,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 * 412 - PRECONDITATION失败 — 如果缺少请求标头。
 * 500 — 内部服务器错误 — 如果其他问题出现。
 
-## 删除文件夹、资产或演绎版{#delete-a-folder-asset-or-rendition}
+## 删除文件夹、资产或演绎版 {#delete-a-folder-asset-or-rendition}
 
 删除提供路径上的资源(-tree)。
 

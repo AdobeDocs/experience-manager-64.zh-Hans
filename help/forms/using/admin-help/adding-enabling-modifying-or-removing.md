@@ -1,8 +1,8 @@
 ---
 title: 添加、启用、修改或删除端点
-seo-title: 添加、启用、修改或删除端点
+seo-title: Adding, enabling, modifying, or removing endpoints
 description: 了解如何添加、启用、修改和删除端点。
-seo-description: 了解如何添加、启用、修改和删除端点。
+seo-description: Learn how to add, enable, modify and remove endpoints.
 uuid: c53f225b-3d55-42f6-8982-0cd7dde0c4f5
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: 8aed1439-aa39-4f75-909b-6a7ad7840a08
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 0%
+source-wordcount: '407'
+ht-degree: 1%
 
 ---
 
-# 添加、启用、修改或删除端点{#adding-enabling-modifying-or-removing-endpoints}
+# 添加、启用、修改或删除端点 {#adding-enabling-modifying-or-removing-endpoints}
 
-## 向服务{#add-an-endpoint-to-a-service}添加端点
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+## 向服务添加端点 {#add-an-endpoint-to-a-service}
 
 只能将端点添加到服务。 端点不能单独存在；必须与服务关联。
 
@@ -42,7 +46,7 @@ ht-degree: 0%
 
 1. 单击添加。
 
-## 启用或禁用终结点{#enable-or-disable-an-endpoint}
+## 启用或禁用端点 {#enable-or-disable-an-endpoint}
 
 默认情况下，会自动启用新端点。 但是，如果您禁用了某个端点，则需要启用该端点才能使其正常运行。
 
@@ -51,7 +55,7 @@ ht-degree: 0%
 1. 在管理控制台中，单击“服务”>“应用程序和服务”>“端点管理”。
 1. 在“端点管理”页上，选中要启用或禁用的端点的复选框，然后单击启用或禁用。
 
-## 修改端点{#modify-an-endpoint}
+## 修改端点 {#modify-an-endpoint}
 
 >[!NOTE]
 >
@@ -69,7 +73,7 @@ ht-degree: 0%
 
 您还可以从“服务管理”页面执行此任务，方法是选择服务，然后单击“端点”选项卡。
 
-## 删除端点{#remove-an-endpoint}
+## 删除端点 {#remove-an-endpoint}
 
 1. 在管理控制台中，单击“服务”>“应用程序和服务”>“端点管理”。
 1. 在“端点管理”页上，选中要删除的端点的复选框，然后单击删除。 不再显示端点。

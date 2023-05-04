@@ -10,14 +10,18 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: d561bb0a-352f-4be2-95ed-32dd1e2b4019
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3741'
-ht-degree: 1%
+source-wordcount: '3777'
+ht-degree: 2%
 
 ---
 
 # 核对清单 — 进一步参考{#the-checklist-further-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本页提供了进一步的详细信息，以详细说明和/或补充 [管理项目 — 最佳实践检查列表](/help/managing/best-practices.md).
 
@@ -34,7 +38,7 @@ ht-degree: 1%
 考虑您将使用的AEM的功能及其对设计的影响；例如：
 
 * [商务](/help/sites-administering/ecommerce.md)
-* [屏幕](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [标记](/help/sites-administering/tags.md)
 * [多站点管理和翻译](/help/sites-administering/msm-and-translation.md)
@@ -138,12 +142,12 @@ AEM可以与其他Adobe产品和/或第三方服务集成。 这些功能可以�
 
 这些指标可以是：
 
-* 企业:
+* 商务:
 
    * 用于衡量关键业务目标。
    * 选择适合您的业务/情景的KPI，并明确定义KPI是什么、如何衡量、如何使用和由谁使用，这一点很重要。
 
-* 演出:
+* 性能：
 
    * 定义如何测量系统的性能。
    * 一些示例包括页面加载时间、服务器响应时间和数据库查询性能。
@@ -218,7 +222,7 @@ AEM可以与其他Adobe产品和/或第三方服务集成。 这些功能可以�
 * 服务器数量
 * AEM实例数（创作和发布）
 
-### 演出 {#performance}
+### 性能 {#performance}
 
 可以评估以下几个性能因素：
 

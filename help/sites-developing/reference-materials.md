@@ -11,14 +11,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 exl-id: 0c80ee60-d2dd-49ad-a283-81fdb1fd201e
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 8%
+source-wordcount: '294'
+ht-degree: 10%
 
 ---
 
 # API指南{#api-guides}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM提供了多个用于开发应用程序的API。 以下列表提供了AEM支持的API文档：
 
@@ -28,9 +32,9 @@ AEM提供了多个用于开发应用程序的API。 以下列表提供了AEM支�
 
 * [Granite用户界面（触屏）API文档](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
-* [Coral UI 指南](https://helpx.adobe.com/cn/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+* [Coral用户界面指南](https://helpx.adobe.com/cn/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
-* [Widget API（经典 UI）文档](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
+* [Widget API（经典用户界面）文档](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
 
 * [用户界面测试框架Javascript API参考](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html)
 
@@ -48,8 +52,8 @@ AEM交付和内容管理API:
 * 核心组件(JSON)
 
    * [JSON导出程序](/help/sites-developing/json-exporter.md)
-   * [为组件启用JSON导出](/help/sites-developing/json-exporter-components.md)
-   * 有关更多信息，请参阅开发用户指南](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js)中的[组件部分
+   * [为组件启用 JSON 导出](/help/sites-developing/json-exporter-components.md)
+   * 请参阅 [Developing用户指南中的组件部分](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) 有关详细信息
 
 * [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 

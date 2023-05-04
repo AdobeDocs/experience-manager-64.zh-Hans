@@ -1,5 +1,5 @@
 ---
-title: '同步目录 '
+title: 同步目录
 seo-title: Synchronizing directories
 description: 了解如何使用手动或计划同步将用户管理数据库与源目录服务器的更改同步。
 seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
 
 # 同步目录 {#synchronizing-directories}
 
-要同步域，您可以选择手动或计划同步。 *手动同步*&#x200B;同步任何选定的域。 *计划同步*&#x200B;同步所有域。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+要同步域，您可以选择手动或计划同步。 A *手动同步* 同步任何选定的域。 A *计划同步* 同步所有域。
 
 目录同步用于将您在目录设置中指定的目录服务器的详细信息提取到用户管理数据库。 之后，如果目录服务器上发生更改或更新，您也可以进行手动同步。 例如，如果添加了用户和组或对用户帐户进行了更改，则可以执行手动同步。
 
@@ -35,7 +39,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe®LiveCycle® Content Services ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 内容服务（已弃用）支持将于12/31/2014终止。 请参阅[Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
+>Adobe®LiveCycle® Content Services ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 内容服务（已弃用）支持将于12/31/2014终止。 请参阅 [Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## 启用增量目录同步 {#enable-delta-directory-synchronization}
 
@@ -53,7 +57,7 @@ ht-degree: 0%
 
 1. 在管理控制台中，单击设置>用户管理>域管理。
 1. 在“增量同步”(Delta Synch)下，选中该复选框，然后单击“保存”(Save)。
-1. 编辑将使用增量目录同步功能的每个企业域的目录设置。 在“用户设置”和“组设置”页上，找到修改时间戳设置，然后输入`modify TimeStamp`作为值。 有关编辑企业域的详细信息，请参阅[编辑和转换现有域](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)。
+1. 编辑将使用增量目录同步功能的每个企业域的目录设置。 在“用户设置”和“群组设置”页面上，找到修改时间戳设置，然后输入 `modify TimeStamp` 作为值。 有关编辑企业域的详细信息，请参阅 [编辑和转换现有域](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## 在同步过程中启用或禁用详细日志记录 {#enable-or-disable-detailed-logging-during-synchronization}
 
@@ -91,7 +95,7 @@ cron表达式的使用基于Quartz开源作业调度系统1.4.0版。
 
 * 要关闭自动同步，请选择“发生”，然后从列表中选择“从不”。
 * （可选）要将用户和组信息推送到内容服务（已弃用），请选择选择此选项以将用户和组推送到注册的外部主体存储提供程序。 通过“用户和群组”页面添加新用户和组时，此选项也适用。
-* 单击保存。
+* 单击“保存”。
 
 ## 停止当前正在进行的所有目录同步 {#stop-all-directory-synchronizations-currently-in-progress}
 

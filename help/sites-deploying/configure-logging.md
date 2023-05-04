@@ -1,24 +1,28 @@
 ---
-title: 记录
-seo-title: 记录
+title: 日志记录
+seo-title: Logging
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
-seo-description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置或如何请求数据记录。
+seo-description: Learn how to configure global parameters for the central logging service, specific settings for the individual services or how to request data logging.
 uuid: 8c9e3628-2f2c-445d-9706-5c7725b85fe2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
-feature: 配置
+feature: Configuring
 exl-id: d94b776d-db06-4f46-ac7f-c3b8e4160b69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 0%
+source-wordcount: '700'
+ht-degree: 1%
 
 ---
 
-# 记录{#logging}
+# 日志记录{#logging}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM允许您配置：
 
@@ -26,15 +30,15 @@ AEM允许您配置：
 * 请求数据记录；请求信息的专用日志记录配置
 * 具体设置；例如，单个日志文件和日志消息的格式
 
-这些都是[OSGi配置](/help/sites-deploying/configuring-osgi.md)。
+这些都 [OSGi配置](/help/sites-deploying/configuring-osgi.md).
 
 >[!NOTE]
 >
->登录AEM基于Sling原则。 有关更多信息，请参阅[Sling日志记录](https://sling.apache.org/site/logging.html)。
+>登录AEM基于Sling原则。 请参阅 [Sling日志记录](https://sling.apache.org/site/logging.html) 以了解更多信息。
 
-## 全局日志记录{#global-logging}
+## 全局日志记录 {#global-logging}
 
-[Apache Sling日志记](/help/sites-deploying/osgi-configuration-settings.md) 录配置用于配置根日志记录器。这定义了登录AEM的全局设置：
+[Apache Sling日志记录配置](/help/sites-deploying/osgi-configuration-settings.md) 用于配置根日志记录器。 这定义了登录AEM的全局设置：
 
 * 日志记录级别
 * 中央日志文件的位置
@@ -44,9 +48,9 @@ AEM允许您配置：
 
 >[!NOTE]
 >
->此[知识库文章](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html)说明如何旋转request.log和access.log文件。
+>此 [知识库文章](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) 说明如何旋转request.log和access.log文件。
 
-## 个人服务的记录器和写入器{#loggers-and-writers-for-individual-services}
+## 个人服务的记者和作家 {#loggers-and-writers-for-individual-services}
 
 除了全局日志记录设置之外，AEM还允许您为单个服务配置特定设置：
 
@@ -61,9 +65,9 @@ AEM允许您配置：
 
 AEM使用以下方法将日志消息写入文件：
 
-1. **OSGi服务**（日志记录器）写入日志消息。
-1. **日志记录记录器**&#x200B;会获取此消息并根据您的规范对其进行格式化。
-1. **日志记录写入器**&#x200B;将所有这些消息写入您定义的物理文件。
+1. 安 **OSGi服务** （记录器）写入日志消息。
+1. A **日志记录器** 根据您的规范获取并设置此消息的格式。
+1. A **日志记录器** 将所有这些消息写入您定义的物理文件。
 
 这些元素通过相应元素的以下参数进行链接：
 
@@ -83,11 +87,11 @@ AEM使用以下方法将日志消息写入文件：
 
    此参数必须与日志记录写入器配置中的相同参数相同，否则将不进行匹配。 如果没有匹配项，则将使用默认配置（每日日志旋转）创建隐式写入器。
 
-### 标准记录器和写入器{#standard-loggers-and-writers}
+### 标准记事员和作家 {#standard-loggers-and-writers}
 
 标准AEM安装中包含某些记录器和写入器。
 
-第一个是特殊情况，因为它同时控制`request.log`和`access.log`文件：
+第一个是特殊情况，因为它控制了 `request.log` 和 `access.log` 文件：
 
 * 日志记录器：
 
@@ -95,7 +99,7 @@ AEM使用以下方法将日志消息写入文件：
 
       (org.apache.sling.engine.impl.log.RequestLoggerService)
 
-   * 将有关请求内容的消息写入`request.log`。
+   * 将有关请求内容的消息写入 `request.log`.
 
 * 链接到：
 
@@ -103,7 +107,7 @@ AEM使用以下方法将日志消息写入文件：
 
       (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * 将消息写入`request.log`或`access.log`。
+   * 将消息写入 `request.log` 或 `access.log`.
 
 虽然标准配置适用于大多数安装，但如有需要，也可以自定义这些配置。
 
@@ -115,7 +119,7 @@ AEM使用以下方法将日志消息写入文件：
 
       (org.apache.sling.commons.log.LogManager.factory.config)
 
-   * 将`Information`消息写入`logs/error.log`。
+   * 写入 `Information` 消息至 `logs/error.log`.
 
 * 指向Writer的链接：
 
@@ -125,28 +129,27 @@ AEM使用以下方法将日志消息写入文件：
 
 * 日志记录器：
 
-   * Apache Sling日志记录器配置
-(org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
+   * Apache Sling日志记录记录器配置(org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * 将`Warning`消息写入`../logs/error.log`服务`org.apache.pdfbox`。
+   * 写入 `Warning` 消息至 `../logs/error.log` 服务 `org.apache.pdfbox`.
 
 * 不链接到特定的编写器，因此将创建并使用默认配置（每日日志旋转）的隐式编写器。
 
-### 创建您自己的记录器和作者{#creating-your-own-loggers-and-writers}
+### 创建您自己的记事员和作家 {#creating-your-own-loggers-and-writers}
 
 您可以定义自己的日志记录器/写入器对：
 
-1. 创建工厂配置[Apache Sling日志记录器配置](/help/sites-deploying/osgi-configuration-settings.md)的新实例。
+1. 创建工厂配置的新实例 [Apache Sling日志记录器配置](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. 指定日志文件。
    1. 指定日志记录器。
    1. 根据需要配置其他参数。
 
-1. 创建工厂配置[Apache Sling日志记录编写器配置](/help/sites-deploying/osgi-configuration-settings.md)的新实例。
+1. 创建工厂配置的新实例 [Apache Sling日志记录编写器配置](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. 指定日志文件 — 此文件必须与为记录器指定的文件相匹配。
    1. 根据需要配置其他参数。
 
 >[!NOTE]
 >
->在某些情况下，您可能希望创建[自定义日志文件](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file)。
+>在某些情况下，您可能想要创建 [自定义日志文件](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).

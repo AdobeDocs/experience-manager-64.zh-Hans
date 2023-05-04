@@ -1,8 +1,8 @@
 ---
 title: 应用程序创建和配置操作
-seo-title: 应用程序创建和配置操作
+seo-title: Application Create and Configuration Actions
 description: 创建应用程序通常是创建和管理AEM Mobile On-Demand内容的第一步。 请阅读本页以了解更多信息。
-seo-description: 创建应用程序通常是创建和管理AEM Mobile On-Demand内容的第一步。 请阅读本页以了解更多信息。
+seo-description: Creating an app is often the first step towards creating and managing AEM Mobile On-Demand content. Follow this page to learn more.
 uuid: f6b41d9a-d896-479e-9f6c-e91a88f3e74d
 contentOwner: User
 content-type: reference
@@ -10,20 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: ccafd49a-5c8a-44eb-9b0c-37070560bb52
 exl-id: 42fa3026-ea37-40e7-8932-147fb3db2784
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '478'
 ht-degree: 1%
 
 ---
 
 # 应用程序创建和配置操作{#application-create-and-configuration-actions}
 
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解更多](/help/sites-developing/spa-overview.md)。
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
 
-## 创建按需应用程序{#creating-an-on-demand-application}
+## 创建按需应用程序 {#creating-an-on-demand-application}
 
 创建应用程序通常是创建和管理AEM Mobile On-Demand内容的第一步，通常在AEM管理员级别执行。 它表示内容外壳，可在移动设备上查看，可随时显示作者创建的内容，如文章、图像、收藏集等。
 
@@ -33,18 +37,18 @@ ht-degree: 1%
 >
 >功能板是一系列有用的图块，用于概述应用程序的内容、元数据和AEM Mobile按需连接状态。
 >
->有关详细信息，请参阅[AEM Mobile应用程序功能板](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
+>请参阅 [AEM Mobile应用程序功能板](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 以了解详细信息。
 
 **要创建按需应用程序，请执行以下操作：**
 
-1. 从侧边栏中选择&#x200B;**Mobile**。
-1. 从导航中选择&#x200B;**Apps**。
-1. 单击&#x200B;**创建**&#x200B;并从下拉列表中选择&#x200B;**应用程序**。
-1. 选择移动设备应用程序模板，然后单击&#x200B;**下一步**。
-1. 输入应用程序属性，如&#x200B;**标题**、**名称**、**描述**。
+1. 选择 **移动设备** 从侧边栏。
+1. 选择 **应用程序** 中。
+1. 单击 **创建** 选择 **应用程序** 从下拉菜单中。
+1. 选择移动设备应用程序模板，然后单击 **下一个**.
+1. 输入应用程序属性，例如 **标题**, **名称**, **描述**.
 1. 单击&#x200B;**下一步**。
-1. 如果已知，请输入云配置详细信息，否则，单击&#x200B;**创建**。
-1. 单击&#x200B;**完成**&#x200B;以在目录中查看新的AEM Mobile应用程序。
+1. 如果已知，请输入云配置详细信息，否则，单击 **创建**.
+1. 单击 **完成** 可在目录中查看新的AEM Mobile应用程序。
 
 ![chlimage_1](assets/chlimage_1.gif)
 
@@ -52,7 +56,7 @@ ht-degree: 1%
 >
 >此过程允许您在AEM中创建应用程序实例。
 
-## 使用应用程序模板{#using-app-templates}
+## 使用应用程序模板 {#using-app-templates}
 
 应用程序模板提供了一种轻松的方法来利用开发人员创建的现有设计，这些设计用于在AEM中创建新应用程序。
 
@@ -61,17 +65,17 @@ ht-degree: 1%
 
 您必须拥有现有的移动设备应用程序模板（或安装了应用程序模板的应用程序）才能使用此功能。
 
-### 下一步{#the-next-step}
+### 下一步 {#the-next-step}
 
 从应用程序功能板创建按需应用程序后，下一步是将您的应用程序关联到云配置。
 
-有关更多详细信息，请参阅[将您的应用程序关联到云配置](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)。
+请参阅 [将您的应用程序关联到云配置](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) 以了解更多详细信息。
 
-### 提前{#getting-ahead}
+### 抢滩 {#getting-ahead}
 
-熟悉如何创建按需应用程序并将该应用程序关联到云配置后，请参阅[内容管理操作](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)。
+在您熟悉如何创建按需应用程序并因此而将该应用程序关联到云配置后，请参阅 [内容管理操作](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**内容管** 理操作涉及创建和管理以下内容：
+**内容管理操作** 包括创建和管理以下内容：
 
 * [管理文章](/help/mobile/mobile-on-demand-managing-articles.md)
 * [管理横幅](/help/mobile/mobile-on-demand-managing-banners.md)

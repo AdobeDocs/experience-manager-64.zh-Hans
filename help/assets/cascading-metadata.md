@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1013'
 ht-degree: 12%
 
 ---
 
 # 串联元数据 {#cascading-metadata}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 本文介绍了如何为资产定义级联元数据。
 
@@ -33,7 +37,7 @@ ht-degree: 12%
 * 根据其他字段中指定的值更改特定字段显示的选项。
 * 根据其他字段中指定的值，在特定字段中设置默认元数据值。
 
-## 在[!DNL Experience Manager]中配置级联元数据 {#configure-cascading-metadata-in-aem}
+## 在中配置级联元数据 [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 假设您想要根据所选资产类型显示级联元数据。 一些示例
 
@@ -42,25 +46,25 @@ ht-degree: 12%
 
 无论选择何种资产类型，都会将版权信息显示为必填字段。
 
-1. 点按/单击[!DNL Experience Manager]徽标，然后转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 元数据架构]**。
+1. 点按/单击 [!DNL Experience Manager] 徽标，然后转到 **[!UICONTROL 工具]** > **[!UICONTROL 资产]** > **[!UICONTROL 元数据架构]**.
 1. 在&#x200B;**[!UICONTROL 架构表单]**&#x200B;页面中，选择一个架构表单，然后点按/单击工具栏中的&#x200B;**[!UICONTROL 编辑]**，以编辑架构。
 
    ![select_form](assets/select_form.png)
 
-1. （可选）在元数据架构编辑器中，创建要条件化的新字段。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中指定名称和属性路径。
+1. （可选）在元数据架构编辑器中，创建要条件化的新字段。 在 **[!UICONTROL 设置]** 选项卡。
 
-   要创建新选项卡，请点按/单击&#x200B;**[!UICONTROL +]**&#x200B;以添加选项卡，然后添加元数据字段。
+   要创建新选项卡，请点按/单击 **[!UICONTROL +]** 添加选项卡，然后添加元数据字段。
 
    ![add_tab](assets/add_tab.png)
 
-1. 为资产类型添加下拉字段。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中指定名称和属性路径。 添加可选描述。
+1. 为资产类型添加下拉字段。 在 **[!UICONTROL 设置]** 选项卡。 添加可选描述。
 
    ![asset_type_field](assets/asset_type_field.png)
 
 1. 键值对是提供给表单用户的选项。 您可以手动或从JSON文件提供键值对。
 
-   * 要手动指定值，请选择&#x200B;**[!UICONTROL 手动添加]**，然后点按/单击&#x200B;**[!UICONTROL 添加选择]**&#x200B;并指定选项文本和值。 例如，指定视频、PDF、Word和图像资产类型。
-   * 要动态获取JSON文件中的值，请选择&#x200B;**[!UICONTROL 通过JSON路径添加]**&#x200B;并提供JSON文件的路径。 [!DNL Experience Manager] 向用户显示表单时，会实时获取键值对。
+   * 要手动指定值，请选择 **[!UICONTROL 手动添加]**，然后点按/单击 **[!UICONTROL 添加选择]** 和指定选项文本和值。 例如，指定视频、PDF、Word和图像资产类型。
+   * 要从JSON文件动态获取值，请选择 **[!UICONTROL 通过JSON路径添加]** 和提供JSON文件的路径。 [!DNL Experience Manager] 向用户显示表单时，会实时获取键值对。
 
    两个选项是互斥的。 您无法从JSON文件导入选项并手动编辑。
 
@@ -76,15 +80,15 @@ ht-degree: 12%
 
 1. （可选）添加其他必填字段。 例如，资产类型视频的格式、编解码器和持续时间。
 
-   同样，为其他资产类型添加从属字段。 例如，为文档资产（如PDF和Word文件）添加字段页面计数和作者。
+   同样，为其他资产类型添加从属字段。 例如，为文档资产(如PDF和Word文件)添加字段页面计数和作者。
 
    ![video_dependent_fields](assets/video_dependent_fields.png)
 
-1. 要在资产类型字段和其他字段之间创建依赖关系，请选择相关字段，然后打开&#x200B;**[!UICONTROL Rules]**&#x200B;选项卡。
+1. 要在资产类型字段和其他字段之间创建依赖项，请选择相关字段，然后打开 **[!UICONTROL 规则]** 选项卡。
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 在&#x200B;**[!UICONTROL Requirement]**&#x200B;下，根据新规则&#x200B;]**选项选择**[!UICONTROL  Required。
+1. 在 **[!UICONTROL 要求]**，选择 **[!UICONTROL 必需，基于新规则]** 选项。
 1. 点按／单 **[!UICONTROL 击添加规则]** ，然后选择“资 **[!UICONTROL 产类型]** ”字段以创建依赖关系。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 点按／单击 **[!UICONTROL 完成]** ，以保存更改。
 
    ![define_rule](assets/define_rule.png)
@@ -108,8 +112,8 @@ ht-degree: 12%
    >您可以应用&#x200B;**[!UICONTROL 要求]**&#x200B;条件和&#x200B;**[!UICONTROL 可见性]**&#x200B;条件，二者相互独立。
 
 1. 同样，在资产类型字段中的值视频与其他字段（如编解码器和持续时间）之间创建依赖关系。
-1. 重复以下步骤，在&#x200B;**[!UICONTROL 资产类型]**&#x200B;字段和页面计数和作者等字段中，在文档资产（PDF和Word）之间创建依赖项。
-1. 单击&#x200B;**[!UICONTROL 保存]**。将元数据架构应用到文件夹。
+1. 重复以下步骤，以在文档资产(PDF和Word)之间创建依赖项 **[!UICONTROL 资产类型]** 字段和字段，如“页面计数”和“作者”。
+1. 单击“**[!UICONTROL 保存]**”。将元数据架构应用到文件夹。
 
 1. 导航到应用元数据架构的文件夹，然后打开资产的属性页面。 根据您在资产类型字段中的选择，将显示相关的级联元数据字段。
 

@@ -1,8 +1,8 @@
 ---
 title: 编辑页面时的键盘快捷键
-seo-title: 编辑页面时的键盘快捷键
+seo-title: Keyboard Shortcuts when Editing Pages
 description: 用户在整个 AEM 环境中都可以使用各种键盘快捷键，包括某些用于页面编辑的快捷键
-seo-description: 用户在整个 AEM 环境中都可以使用各种键盘快捷键，包括某些用于页面编辑的快捷键
+seo-description: Various keyboard shortcuts are available throughout AEM, including some for page editing
 uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: 15734120-16b2-4c51-a387-d3d4508eb0b7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 91%
+source-wordcount: '257'
+ht-degree: 71%
 
 ---
 
 # 编辑页面时的键盘快捷键{#keyboard-shortcuts-when-editing-pages}
 
-用户在整个 AEM 环境中都可以使用各种键盘快捷键。有些快捷键在编辑页面时适用，有些则[在控制台中适用](/help/sites-authoring/keyboard-shortcuts.md)。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+在整个 AEM 环境中都可以使用各种键盘快捷键。有些在编辑页面时适用，有些则适用于 [控制台的使用](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -43,7 +47,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->&amp;ast;用户开始在预览模式下与页面进行交互后，`Ctrl-Shift-m`快捷键便不再可用。 用户必须单击顶部编辑器栏或返回到“编辑”模式，才能使该快捷键再次变为可用。
+>&amp;ast;用户开始在预览模式下与页面进行交互后， `Ctrl-Shift-m` 快捷键不再可用。 用户必须单击顶部编辑器栏或返回到“编辑”模式，才能使该快捷键再次变为可用。
 
 在使用[控制台](/help/sites-authoring/keyboard-shortcuts.md)时，桌面用户也可以使用各种键盘快捷键。
 

@@ -1,8 +1,8 @@
 ---
 title: CRX2OAK迁移工具
-seo-title: CRX2OAK迁移工具
+seo-title: CRX2OAK Migration Tool
 description: 特定于Adobe Experience Manager 6.4 CRX2OAK迁移工具的发行说明。
-seo-description: 特定于Adobe Experience Manager 6.4 CRX2OAK迁移工具的发行说明。
+seo-description: Release notes specific to the Adobe Experience Manager 6.4 CRX2OAK Migration tool.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,16 +10,20 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 exl-id: 441c8ba0-f8b2-4c2c-b7be-cfdad9e1e498
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 0%
+source-wordcount: '288'
+ht-degree: 1%
 
 ---
 
-# CRX2OAK迁移工具{#crx-oak-migration-tool}
+# CRX2OAK迁移工具 {#crx-oak-migration-tool}
 
-## 更改和修复列表{#list-of-changes-and-fixes}
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+## 更改和修复列表 {#list-of-changes-and-fixes}
 
 ### 1.8.6（2018年6月） {#june}
 
@@ -37,27 +41,27 @@ ht-degree: 0%
 * GRANITE-17601在CRX2Oak中使用oak-blob-cloud嵌入oak — 升级
 * GRANITE-18553 crx2oak即使未迁移版本，也会保留节点上的版本属性
 
-### 1.6.8版（2017年3月）{#version-march}
+### 1.6.8版（2017年3月） {#version-march}
 
 * 已将Oak版本更新至1.6.1
 * CQ-61847将crx2oak-quickstart-extension与crx2oak合并（添加了迁移配置文件）
 * CQ-97488提升和删除AEM运行模式（通过重写sling.options.file）
 * GRANITE-12798/OAK-4260将从Oak区段到Oak区段焦油的级别并排
 
-### 1.4.2版（2016年3月）{#version-march-1}
+### 1.4.2版（2016年3月） {#version-march-1}
 
 * 将Oak版本升级到1.4.1
 * OAK-3846 / GRANITE-10748如果SNS节点违反节点类型约束，请重命名SNS节点
-* OAK-3910 / GRANITE-10730迁移节点从`mix:versionable`继承，但不包含版本历史记录
-* OAK-4128 / GRANITE-11757 `RepositorySidegrade`未复制根节点属性
+* OAK-3910 / GRANITE-10730迁移节点继承 `mix:versionable` 不包含版本历史记录
+* OAK-4128 / GRANITE-11757 `RepositorySidegrade` 不复制根节点属性
 
-### 版本1.3.4（2016年1月）{#version-january}
+### 1.3.4版（2016年1月） {#version-january}
 
 * 将Oak版本升级到1.3.16
 * OAK-3844 / GRANITE-10730更好地支持不具有版本历史的可转换节点
 * OAK-3846如果SNS节点违反节点类型约束，请重命名SNS节点
 
-### 版本1.3.2（2015年12月）{#version-december}
+### 1.3.2版（2015年12月） {#version-december}
 
 * 将Oak版本升级到1.3.12
 * 迁移后不应移动数据存储目录(GRANITE-10447)

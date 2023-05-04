@@ -4,14 +4,18 @@ seo-title: SPA Deep Dives
 description: AEM SPA Editor SDK在一系列AEM Gem会议中得到了介绍。 由Adobe工程师主持，此系列可作为一个极好的指南，在由Adobe工程师主持的较低级别更深入地了解AEM SPA Editor SDK。
 seo-description: The AEM SPA Editor SDK was featured in a series of AEM Gems sessions. Hosted by Adobe engineers, this series can serve as a great guide to gain a deeper understanding of the AEM SPA Editor SDK at a low level, hosted by Adobe engineers.
 exl-id: 4724e321-1c1b-4f2f-b867-5d9f7e8b2cfa
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 2%
+source-wordcount: '324'
+ht-degree: 3%
 
 ---
 
 # SPA 深入了解{#spa-deep-dives}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 AEM SPA Editor SDK在一系列AEM Gem会议中得到了介绍。 [Adobe Experience Manager Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) 是Adobe专家提供的一系列深入技术探讨。 此系列由Adobe工程师主持，可作为您在较低级别更深入地了解AEM SPA Editor SDK的一个极好指南。
 

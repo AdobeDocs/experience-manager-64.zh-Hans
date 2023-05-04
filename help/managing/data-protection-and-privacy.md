@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: grdp, introduction
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 exl-id: 46ad04b1-a660-4cdd-8649-5cdb00dbcae3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 58%
+source-wordcount: '959'
+ht-degree: 56%
 
 ---
 
 # Adobe Experience Manager数据保护和数据隐私法规已准备就绪 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 >[!WARNING]
 >
@@ -37,7 +41,7 @@ Adobe 向客户隐私管理员或 AEM 管理员提供文档和过程（在有 AP
 >
 >其他 Adobe 按需插件的服务以及任何相关隐私请求需要在该服务上采取操作。
 >
->有关更多信息，请参阅 [Adobe 隐私中心](https://www.adobe.com/privacy.html)。
+>有关更多信息，请参阅 [Adobe 隐私中心](https://www.adobe.com/cn/privacy.html)。
 
 ## 简介 {#introduction}
 

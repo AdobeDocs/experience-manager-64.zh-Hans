@@ -1,8 +1,8 @@
 ---
 title: 扩展注释组件
-seo-title: 扩展注释组件
+seo-title: Extend Comments Component
 description: 扩展“注释”组件，以更改其外观或行为以供特定用途使用
-seo-description: 扩展“注释”组件，以更改其外观或行为以供特定用途使用
+seo-description: Extend the Comments component to alter its appearance or behavior for specific uses
 uuid: 6f439097-b1d0-4e7d-afcf-01d8f43aa866
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,22 +10,26 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 exl-id: f6722953-ff71-4fba-b76e-1d566f71f6d5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 0%
+source-wordcount: '291'
+ht-degree: 2%
 
 ---
 
-# 扩展注释组件{#extend-comments-component}
+# 扩展注释组件 {#extend-comments-component}
 
-[扩展](client-customize.md#extensions)默认组件的意图是为特定用途更改组件的外观或行为。
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
+
+意图 [扩展](client-customize.md#extensions) 默认组件是为特定用途更改组件的外观或行为。
 
 组件的路径是唯一的，并将默认组件作为超级资源类型引用。 与组件叠加的全局范围相比，风险较小，因为范围有限。
 
 >[!NOTE]
 >
->不支持扩展[覆盖的](client-customize.md#overlays)组件。
+>扩展 [覆盖](client-customize.md#overlays) 组件不受支持。
 
 ## 示例 {#example}
 
@@ -33,7 +37,7 @@ ht-degree: 0%
 
 要实施此解决方案，请创建一个新组件，以扩展（覆盖）现有组件并修改Handlebars脚本。 使用新注释的网站区域可以使用扩展的注释，而使用默认外观的网站则不受影响。
 
-评论组件实际上是构成评论系统的两个组件之一。 因此，需要扩展两个组件：*注释*&#x200B;和&#x200B;*注释*。 要编辑的脚本位于*comment *component的`header.hbs`文件中，而父&#x200B;*comments*&#x200B;组件（注释系统）则是作者实际添加到页面中的内容。
+评论组件实际上是构成评论系统的两个组件之一。 因此，需要扩展两个组件： *评论* 和 *评论*. 要编辑的脚本位于*comment *组件的 `header.hbs` 文件，而父级 *评论* 组件（注释系统）是作者实际添加到页面的内容。
 
 要扩展评论，您需要：
 

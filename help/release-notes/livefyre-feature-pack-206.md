@@ -8,14 +8,18 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '679'
 ht-degree: 2%
 
 ---
 
 # Livefyre功能包2.0.6发行说明 {#livefyre-feature-pack-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4已结束扩展支持，本文档将不再更新。 有关更多详细信息，请参阅 [技术支助期](https://helpx.adobe.com/cn/support/programs/eol-matrix.html). 查找支持的版本 [此处](https://experienceleague.adobe.com/docs/).
 
 ## 版本信息 {#release-information}
 
@@ -23,7 +27,7 @@ ht-degree: 2%
 |--- |--- |
 | 版本 | 2.0.6 |
 | 类型 | 功能发布 |
-| 日期 | 2018年8月31日 |
+| 日期 | 2018 年 31 月 8 日 |
 | 下载 URL | 与管理员联系 |
 | 兼容性 (*) | AEM 6.4 SP1、6.4、6.3 GA和6.2 SP1 |
 | 描述 | 此包允许您将Livefyre业界领先的管理功能与您的AEM实例相集成，从而在几分钟内将社交网络中用户生成的有价值内容(UGC)发布到您的网站。 |

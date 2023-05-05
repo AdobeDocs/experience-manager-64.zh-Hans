@@ -194,7 +194,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 必须按照部分中的所述配置默认处理程序 [远程内容渲染器配置](#remote-content-renderer-configuration).
 
-###远程内容渲染器使用情况 {#usage}
+### 远程内容渲染器使用情况 {#usage}
 
 要让Servlet获取并返回一些可插入页面的内容，请执行以下操作：
 
